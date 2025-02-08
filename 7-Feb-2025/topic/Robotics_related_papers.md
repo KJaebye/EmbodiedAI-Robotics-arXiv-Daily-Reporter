@@ -1,0 +1,43 @@
+# DexterityGen: Foundation Controller for Unprecedented Dexterity 
+
+**Title (ZH)**: 《DexterityGen：前所未有的灵巧性基础控制器》
+
+这个标题翻译成中文时，保持了原文的结构和学术规范，同时确保了意思的准确传达。“Dexterity”在这里指的是操作或使用物体的灵巧能力，“Foundation Controller”可以理解为基础控制器或者基础控制模块。 
+
+**Authors**: Zhao-Heng Yin, Changhao Wang, Luis Pineda, Francois Hogan, Krishna Bodduluri, Akash Sharma, Patrick Lancaster, Ishita Prasad, Mrinal Kalakrishnan, Jitendra Malik, Mike Lambeta, Tingfan Wu, Pieter Abbeel, Mustafa Mukadam  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.04307)  
+
+**Abstract**: Teaching robots dexterous manipulation skills, such as tool use, presents a significant challenge. Current approaches can be broadly categorized into two strategies: human teleoperation (for imitation learning) and sim-to-real reinforcement learning. The first approach is difficult as it is hard for humans to produce safe and dexterous motions on a different embodiment without touch feedback. The second RL-based approach struggles with the domain gap and involves highly task-specific reward engineering on complex tasks. Our key insight is that RL is effective at learning low-level motion primitives, while humans excel at providing coarse motion commands for complex, long-horizon tasks. Therefore, the optimal solution might be a combination of both approaches. In this paper, we introduce DexterityGen (DexGen), which uses RL to pretrain large-scale dexterous motion primitives, such as in-hand rotation or translation. We then leverage this learned dataset to train a dexterous foundational controller. In the real world, we use human teleoperation as a prompt to the controller to produce highly dexterous behavior. We evaluate the effectiveness of DexGen in both simulation and real world, demonstrating that it is a general-purpose controller that can realize input dexterous manipulation commands and significantly improves stability by 10-100x measured as duration of holding objects across diverse tasks. Notably, with DexGen we demonstrate unprecedented dexterous skills including diverse object reorientation and dexterous tool use such as pen, syringe, and screwdriver for the first time. 
+
+**Abstract (ZH)**: 教授机器人灵巧操作技能，例如工具使用，是一项重大挑战。当前的方法可以大致分为两种策略：人类远程操作（模仿学习）和从仿真到现实的强化学习。第一种方法难度较大，因为人类在没有触觉反馈的情况下，很难在不同的实体上产生安全而灵巧的动作。而基于第二种RL的方法则面临着领域差异的问题，并且在复杂任务中需要高度任务特定的奖励工程。我们的关键见解是，强化学习在学习低级运动基元方面非常有效，而人类则在提供复杂、长期任务的粗略运动指令方面表现出色。因此，最佳解决方案可能是这两种方法的结合。在这项研究中，我们引入了DexterityGen（DexGen），使用强化学习预训练大规模灵巧运动基元，如手掌握持旋转或平移。然后，我们利用这个学习的数据集来训练一个基础的手灵巧控制器。在现实世界中，我们使用人类远程操作来作为控制器的提示，使其产生高度灵巧的行为。我们在仿真和现实世界中评估了DexGen的有效性，证明它是一个通用控制器，可以实现输入的灵巧操作指令，并且在多种任务下通过对象抓握持续时间的提高，提升了稳定性的10到100倍。特别是，通过DexGen，我们首次展示了前所未有的灵巧技能，包括各种物体重定向和灵巧工具使用，例如笔、针筒和螺丝刀等。 
+
+---
+# Compliant Beaded-String Jamming For Variable Stiffness Anthropomorphic Fingers 
+
+**Title (ZH)**: 符合学术规范的翻译如下：
+
+可变形珠状绳索夹紧技术用于仿人手指可变 stiffness 设计 
+
+**Authors**: Maximilian Westermann, Marco Pontin, Leone Costi, Alessandro Albini, Perla Maiolino  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.04190)  
+
+**Abstract**: Achieving human-like dexterity in robotic grippers remains an open challenge, particularly in ensuring robust manipulation in uncertain environments. Soft robotic hands try to address this by leveraging passive compliance, a characteristic that is crucial to the adaptability of the human hand, to achieve more robust manipulation while reducing reliance on high-resolution sensing and complex control. Further improvements in terms of precision and postural stability in manipulation tasks are achieved through the integration of variable stiffness mechanisms, but these tend to lack residual compliance, be bulky and have slow response times. To address these limitations, this work introduces a Compliant Joint Jamming mechanism for anthropomorphic fingers that exhibits passive residual compliance and adjustable stiffness, while achieving a range of motion in line with that of human interphalangeal joints. The stiffness range provided by the mechanism is controllable from 0.48 Nm/rad to 1.95 Nm/rad (a 4x increase). Repeatability, hysteresis and stiffness were also characterized as a function of the jamming force. To demonstrate the importance of the passive residual compliance afforded by the proposed system, a peg-in-hole task was conducted, which showed a 60% higher success rate for a gripper integrating our joint design when compared to a rigid one. 
+
+**Abstract (ZH)**: 在机器人抓手上实现类似人类的灵巧性仍然是一个开放的挑战，特别是在确保在不确定环境中进行稳健操作方面。软体手通过利用被动顺应性这一有助于人类手部适应性的特性，尝试解决这一问题，从而实现更为稳健的操作，同时减少对高分辨率传感和复杂控制的依赖。通过集成可变刚度机制，进一步提高了操作任务中的精度和姿势稳定性，但这些机制往往缺乏剩余顺应性，体积较大且响应时间较长。为解决这些局限性，本研究引入了一种适用于类人手指的顺应关节卡紧机制，该机制展现出被动剩余顺应性和可调刚度，并能达到与人类指间关节相当的运动范围。该机制提供的刚度范围从0.48 Nm/弧度到1.95 Nm/弧度（提高了4倍）。还对卡紧力与重复性、滞回现象和刚度之间的关系进行了描述。为展示所提系统提供的被动剩余顺应性的重要性，进行了一个孔中插入钉子的任务，结果显示，集成我们关节设计的夹爪的成功率为60%高于刚性夹爪的夹爪。 
+
+---
+# A Flexible FBG-Based Contact Force Sensor for Robotic Gripping Systems 
+
+**Title (ZH)**: 基于光纤布拉格光栅的可调接触力传感器及其在机器人抓持系统中的应用 
+
+**Authors**: Wenjie Lai, Huu Duoc Nguyen, Jiajun Liu, Xingyu Chen, Soo Jay Phee  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.03914)  
+
+**Abstract**: Soft robotic grippers demonstrate great potential for gently and safely handling objects; however, their full potential for executing precise and secure grasping has been limited by the lack of integrated sensors, leading to problems such as slippage and excessive force exertion. To address this challenge, we present a small and highly sensitive Fiber Bragg Grating-based force sensor designed for accurate contact force measurement. The flexible force sensor comprises a 3D-printed TPU casing with a small bump and uvula structure, a dual FBG array, and a protective tube. A series of tests have been conducted to evaluate the effectiveness of the proposed force sensor, including force calibration, repeatability test, hysteresis study, force measurement comparison, and temperature calibration and compensation tests. The results demonstrated good repeatability, with a force measurement range of 4.69 N, a high sensitivity of approximately 1169.04 pm/N, a root mean square error (RMSE) of 0.12 N, and a maximum hysteresis of 4.83%. When compared to a commercial load cell, the sensor showed a percentage error of 2.56% and an RMSE of 0.14 N. Besides, the proposed sensor validated its temperature compensation effectiveness, with a force RMSE of 0.01 N over a temperature change of 11 Celsius degree. The sensor was integrated with a soft grow-and-twine gripper to monitor interaction forces between different objects and the robotic gripper. Closed-loop force control was applied during automated pick-and-place tasks and significantly improved gripping stability, as demonstrated in tests. This force sensor can be used across manufacturing, agriculture, healthcare (like prosthetic hands), logistics, and packaging, to provide situation awareness and higher operational efficiency. 
+
+**Abstract (ZH)**: 软体夹爪展示了轻柔且安全处理物体的巨大潜力，但它们在执行精确和安全夹持方面的全部潜力受到了集成传感器缺乏的限制，导致诸如打滑和施加过大力量等问题。为解决这一挑战，我们提出了一种小型且高灵敏度的基于光纤布拉格光栅（FBG）的力传感器，用于精确接触力测量。该柔性力传感器包括一个带有小突起和悬雍垂结构的3D打印TPU外壳、双FBG阵列和一个保护管。一系列测试已被用于评估所提出的力传感器的有效性，包括力校准、重复性测试、迟滞研究、力测量比较以及温度校准和补偿测试。结果表明，该传感器具有良好的重复性，其力测量范围为4.69牛顿，灵敏度约为1169.04 pm/N，均方根误差（RMSE）为0.12牛顿，最大迟滞性为4.83%。与商用载荷细胞相比，该传感器的百分比误差为2.56%，RMSE为0.14牛顿。此外，所提出的传感器验证了其温度补偿效果，在温度变化11摄氏度的情况下，力的RMSE为0.01牛顿。该传感器已被集成到一个软体生长和缠绕夹爪中，以监测不同物体与机器人夹爪之间的相互作用力。在自动化拾放任务中应用闭环力控制，并显著提高了夹持稳定性，测试结果表明了这一点。该力传感器在制造、农业、医疗保健（如假肢手）、物流和包装等领域中具有广泛的应用前景，可提供情况感知并提高操作效率。 
+
+---
