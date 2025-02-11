@@ -1,0 +1,331 @@
+# AgilePilot: DRL-Based Drone Agent for Real-Time Motion Planning in Dynamic Environments by Leveraging Object Detection 
+
+**Title (ZH)**: AgilePilot: 基于DRL的无人机代理在动态环境中进行实时运动规划的方法，借助物体检测 
+
+**Authors**: Roohan Ahmed Khan, Valerii Serpiva, Demetros Aschalew, Aleksey Fedoseev, Dzmitry Tsetserukou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.06725)  
+
+**Abstract**: Autonomous drone navigation in dynamic environments remains a critical challenge, especially when dealing with unpredictable scenarios including fast-moving objects with rapidly changing goal positions. While traditional planners and classical optimisation methods have been extensively used to address this dynamic problem, they often face real-time, unpredictable changes that ultimately leads to sub-optimal performance in terms of adaptiveness and real-time decision making. In this work, we propose a novel motion planner, AgilePilot, based on Deep Reinforcement Learning (DRL) that is trained in dynamic conditions, coupled with real-time Computer Vision (CV) for object detections during flight. The training-to-deployment framework bridges the Sim2Real gap, leveraging sophisticated reward structures that promotes both safety and agility depending upon environment conditions. The system can rapidly adapt to changing environments, while achieving a maximum speed of 3.0 m/s in real-world scenarios. In comparison, our approach outperforms classical algorithms such as Artificial Potential Field (APF) based motion planner by 3 times, both in performance and tracking accuracy of dynamic targets by using velocity predictions while exhibiting 90% success rate in 75 conducted experiments. This work highlights the effectiveness of DRL in tackling real-time dynamic navigation challenges, offering intelligent safety and agility. 
+
+**Abstract (ZH)**: 基于深度强化学习的自主无人机在动态环境下的敏捷导航方法 
+
+---
+# HetSwarm: Cooperative Navigation of Heterogeneous Swarm in Dynamic and Dense Environments through Impedance-based Guidance 
+
+**Title (ZH)**: HetSwarm：基于阻抗引导的异构 swarm 在动态密集环境中的协同导航 
+
+**Authors**: Malaika Zafar, Roohan Ahmed Khan, Aleksey Fedoseev, Kumar Katyayan Jaiswal, Dzmitry Tsetserukou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.06722)  
+
+**Abstract**: With the growing demand for efficient logistics and warehouse management, unmanned aerial vehicles (UAVs) are emerging as a valuable complement to automated guided vehicles (AGVs). UAVs enhance efficiency by navigating dense environments and operating at varying altitudes. However, their limited flight time, battery life, and payload capacity necessitate a supporting ground station. To address these challenges, we propose HetSwarm, a heterogeneous multi-robot system that combines a UAV and a mobile ground robot for collaborative navigation in cluttered and dynamic conditions. Our approach employs an artificial potential field (APF)-based path planner for the UAV, allowing it to dynamically adjust its trajectory in real time. The ground robot follows this path while maintaining connectivity through impedance links, ensuring stable coordination. Additionally, the ground robot establishes temporal impedance links with low-height ground obstacles to avoid local collisions, as these obstacles do not interfere with the UAV's flight. Experimental validation of HetSwarm in diverse environmental conditions demonstrated a 90% success rate across 30 test cases. The ground robot exhibited an average deviation of 45 cm near obstacles, confirming effective collision avoidance. Extensive simulations in the Gym PyBullet environment further validated the robustness of our system for real-world applications, demonstrating its potential for dynamic, real-time task execution in cluttered environments. 
+
+**Abstract (ZH)**: 基于异构多机器人系统的UAV与移动地面机器人协同导航研究 
+
+---
+# Inflatable Kirigami Crawlers 
+
+**Title (ZH)**: kirigami 扩展爬行器 
+
+**Authors**: Burcu Seyidoğlu, Aida Parvaresh, Bahman Taherkhani, Ahmad Rafsanjani  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.06466)  
+
+**Abstract**: Kirigami offers unique opportunities for guided morphing by leveraging the geometry of the cuts. This work presents inflatable kirigami crawlers created by introducing cut patterns into heat-sealable textiles to achieve locomotion upon cyclic pneumatic actuation. Inflating traditional air pouches results in symmetric bulging and contraction. In inflated kirigami actuators, the accumulated compressive forces uniformly break the symmetry, enhance contraction compared to simple air pouches by two folds, and trigger local rotation of the sealed edges that overlap and self-assemble into an architected surface with emerging scale-like features. As a result, the inflatable kirigami actuators exhibit a uniform, controlled contraction with asymmetric localized out-of-plane deformations. This process allows us to harness the geometric and material nonlinearities to imbue inflatable textile-based kirigami actuators with predictable locomotive functionalities. We thoroughly characterized the programmed deformations of these actuators and their impact on friction. We found that the kirigami actuators exhibit directional anisotropic friction properties when inflated, having higher friction coefficients against the direction of the movement, enabling them to move across surfaces with varying roughness. We further enhanced the functionality of inflatable kirigami actuators by introducing multiple channels and segments to create functional soft robotic prototypes with versatile locomotion capabilities. 
+
+**Abstract (ZH)**: 剪纸几何结构驱动的可充气剪纸爬行器及其定向黏着性能与功能性软机器人原型研究 
+
+---
+# Proprioceptive Origami Manipulator 
+
+**Title (ZH)**: proprioceptive 赋范的
+Origami 纸艺的
+Manipulator 控制器
+
+赋范纸艺控制器 
+
+**Authors**: Aida Parvaresh, Arman Goshtasbi, Jonathan Andres Tirado Rosero, Ahmad Rafsanjani  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.06362)  
+
+**Abstract**: Origami offers a versatile framework for designing morphable structures and soft robots by exploiting the geometry of folds. Tubular origami structures can act as continuum manipulators that balance flexibility and strength. However, precise control of such manipulators often requires reliance on vision-based systems that limit their application in complex and cluttered environments. Here, we propose a proprioceptive tendon-driven origami manipulator without compromising its flexibility. Using conductive threads as actuating tendons, we multiplex them with proprioceptive sensing capabilities. The change in the active length of the tendons is reflected in their effective resistance, which can be measured with a simple circuit. We correlated the change in the resistance to the lengths of the tendons. We input this information into a forward kinematic model to reconstruct the manipulator configuration and end-effector position. This platform provides a foundation for the closed-loop control of continuum origami manipulators while preserving their inherent flexibility. 
+
+**Abstract (ZH)**: Origami offers a versatile framework for designing morphable structures and soft robots by exploiting the geometry of folds. Tubular origami structures can act as continuum manipulators that balance flexibility and strength. However, precise control of such manipulators often requires reliance on vision-based systems that limit their application in complex and cluttered environments. Here, we propose a proprioceptive tendon-driven origami manipulator without compromising its flexibility. Using conductive threads as actuating tendons, we multiplex them with proprioceptive sensing capabilities. The change in the active length of the tendons is reflected in their effective resistance, which can be measured with a simple circuit. We correlated the change in the resistance to the lengths of the tendons. We input this information into a forward kinematic model to reconstruct the manipulator configuration and end-effector position. This platform provides a foundation for the closed-loop control of continuum origami manipulators while preserving their inherent flexibility. 
+
+ proprioceptive腱驱动折纸 manipulator及其闭环控制的柔性框架 
+
+---
+# Weld n'Cut: Automated fabrication of inflatable fabric actuators 
+
+**Title (ZH)**: 焊切：自动制造充气织物执行器 
+
+**Authors**: Arman Goshtasbi, Burcu Seyidoğlu, Saravana Prashanth Murali Babu, Aida Parvaresh, Cao Danh Do, Ahmad Rafsanjani  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.06361)  
+
+**Abstract**: Lightweight, durable textile-based inflatable soft actuators are widely used in soft robotics, particularly for wearable robots in rehabilitation and in enhancing human performance in demanding jobs. Fabricating these actuators typically involves multiple steps: heat-sealable fabrics are fused with a heat press, and non-stick masking layers define internal chambers. These layers must be carefully removed post-fabrication, often making the process labor-intensive and prone to errors. To address these challenges and improve the accuracy and performance of inflatable actuators, we introduce the Weld n'Cut platform-an open-source, automated manufacturing process that combines ultrasonic welding for fusing textile layers with an oscillating knife for precise cuts, enabling the creation of complex inflatable structures. We demonstrate the machine's performance across various materials and designs with arbitrarily complex geometries. 
+
+**Abstract (ZH)**: 轻质耐用纺织基可充气软执行器广泛应用于软机器人技术，特别是在康复穿戴机器人和提高严苛工作中的人类性能方面。我们介绍了Weld n'Cut平台——一种开源的自动化制造过程，该过程结合了超声焊接以融合纺织层和振刀以进行精确切割，从而能够创建复杂的可充气结构。我们展示了该机器在各种材料和设计上的性能，这些设计具有任意复杂的几何形状。 
+
+---
+# Occlusion-Aware Contingency Safety-Critical Planning for Autonomous Vehicles 
+
+**Title (ZH)**: 面向遮挡感知的应急安全关键规划方法研究 
+
+**Authors**: Lei Zheng, Rui Yang, Minzhe Zheng, Zengqi Peng, Michael Yu Wang, Jun Ma  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.06359)  
+
+**Abstract**: Ensuring safe driving while maintaining travel efficiency for autonomous vehicles in dynamic and occluded environments is a critical challenge. This paper proposes an occlusion-aware contingency safety-critical planning approach for real-time autonomous driving in such environments. Leveraging reachability analysis for risk assessment, forward reachable sets of occluded phantom vehicles are computed to quantify dynamic velocity boundaries. These velocity boundaries are incorporated into a biconvex nonlinear programming (NLP) formulation, enabling simultaneous optimization of exploration and fallback trajectories within a receding horizon planning framework. To facilitate real-time optimization and ensure coordination between trajectories, we employ the consensus alternating direction method of multipliers (ADMM) to decompose the biconvex NLP problem into low-dimensional convex subproblems. The effectiveness of the proposed approach is validated through simulation studies and real-world experiments in occluded intersections. Experimental results demonstrate enhanced safety and improved travel efficiency, enabling real-time safe trajectory generation in dynamic occluded intersections under varying obstacle conditions. A video showcasing the experimental results is available at this https URL. 
+
+**Abstract (ZH)**: 确保在动态和遮挡环境中的自动驾驶车辆安全驾驶并保持行驶效率是一个关键挑战。本文提出了一种基于遮挡感知的应急安全关键规划方法，用于此类环境下的实时自动驾驶。利用可达性分析进行风险评估，计算遮挡虚拟车辆的前向可达集以量化动态速度边界。将这些速度边界整合到一种双凸非线性规划（NLP）公式中，可在滑行期预测框架中同时优化探索和应急路径。为实现实时优化并确保路径之间的协调，我们采用共识交替方向乘子法（ADMM）将双凸NLP问题分解为低维凸子问题。通过仿真研究和遮挡交叉口的真实世界实验验证了所提出方法的有效性。实验结果表明，该方法能够提高安全性并改善行驶效率，在不同障碍物条件下实现动态遮挡交叉口的实时安全路径生成。实验结果视频可通过此链接查看：https://xxxxx。 
+
+---
+# CT-UIO: Continuous-Time UWB-Inertial-Odometer Localization Using Non-Uniform B-spline with Fewer Anchors 
+
+**Title (ZH)**: CT-UIO: 基于非均匀B样条的连续时间UWB-惯性里程计定位方法（使用较少的锚点） 
+
+**Authors**: Jian Sun, Wei Sun, Genwei Zhang, Kailun Yang, Song Li, Xiangqi Meng, Na Deng, Chongbin Tan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.06287)  
+
+**Abstract**: Ultra-wideband (UWB) based positioning with fewer anchors has attracted significant research interest in recent years, especially under energy-constrained conditions. However, most existing methods rely on discrete-time representations and smoothness priors to infer a robot's motion states, which often struggle with ensuring multi-sensor data synchronization. In this paper, we present an efficient UWB-Inertial-odometer localization system, utilizing a non-uniform B-spline framework with fewer anchors. Unlike traditional uniform B-spline-based continuous-time methods, we introduce an adaptive knot-span adjustment strategy for non-uniform continuous-time trajectory representation. This is accomplished by adjusting control points dynamically based on movement speed. To enable efficient fusion of IMU and odometer data, we propose an improved Extended Kalman Filter (EKF) with innovation-based adaptive estimation to provide short-term accurate motion prior. Furthermore, to address the challenge of achieving a fully observable UWB localization system under few-anchor conditions, the Virtual Anchor (VA) generation method based on multiple hypotheses is proposed. At the backend, we propose a CT-UIO factor graph with an adaptive sliding window for global trajectory estimation. Comprehensive experiments conducted on corridor and exhibition hall datasets validate the proposed system's high precision and robust performance. The codebase and datasets of this work will be open-sourced at this https URL. 
+
+**Abstract (ZH)**: 基于较少锚点的非均匀B-样条框架的超宽带(UWB)惯性里程计定位系统 
+
+---
+# Portable, High-Frequency, and High-Voltage Control Circuits for Untethered Miniature Robots Driven by Dielectric Elastomer Actuators 
+
+**Title (ZH)**: 便携式、高频和高压控制电路用于由介电弹性体执行器驱动的无缆微型机器人 
+
+**Authors**: Qi Shao, Xin-Jun Liu, Huichan Zhao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.06166)  
+
+**Abstract**: In this work, we propose a high-voltage, high-frequency control circuit for the untethered applications of dielectric elastomer actuators (DEAs). The circuit board leverages low-voltage resistive components connected in series to control voltages of up to 1.8 kV within a compact size, suitable for frequencies ranging from 0 to 1 kHz. A single-channel control board weighs only 2.5 g. We tested the performance of the control circuit under different load conditions and power supplies. Based on this control circuit, along with a commercial miniature high-voltage power converter, we construct an untethered crawling robot driven by a cylindrical DEA. The 42-g untethered robots successfully obtained crawling locomotion on a bench and within a pipeline at a driving frequency of 15 Hz, while simultaneously transmitting real-time video data via an onboard camera and antenna. Our work provides a practical way to use low-voltage control electronics to achieve the untethered driving of DEAs, and therefore portable and wearable devices. 
+
+**Abstract (ZH)**: 一种用于介电弹性体执行器无绳应用的高压高频控制电路 
+
+---
+# Reward-Based Collision-Free Algorithm for Trajectory Planning of Autonomous Robots 
+
+**Title (ZH)**: 基于奖励的碰撞 avoidance 路径规划算法 
+
+**Authors**: Jose D. Hoyos, Tianyu Zhou, Zehui Lu, Shaoshuai Mou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.06149)  
+
+**Abstract**: This paper introduces a new mission planning algorithm for autonomous robots that enables the reward-based selection of an optimal waypoint sequence from a predefined set. The algorithm computes a feasible trajectory and corresponding control inputs for a robot to navigate between waypoints while avoiding obstacles, maximizing the total reward, and adhering to constraints on state, input and its derivatives, mission time window, and maximum distance. This also solves a generalized prize-collecting traveling salesman problem. The proposed algorithm employs a new genetic algorithm that evolves solution candidates toward the optimal solution based on a fitness function and crossover. During fitness evaluation, a penalty method enforces constraints, and the differential flatness property with clothoid curves efficiently penalizes infeasible trajectories. The Euler spiral method showed promising results for trajectory parameterization compared to minimum snap and jerk polynomials. Due to the discrete exploration space, crossover is performed using a dynamic time-warping-based method and extended convex combination with projection. A mutation step enhances exploration. Results demonstrate the algorithm's ability to find the optimal waypoint sequence, fulfill constraints, avoid infeasible waypoints, and prioritize high-reward ones. Simulations and experiments with a ground vehicle, quadrotor, and quadruped are presented, complemented by benchmarking and a time-complexity analysis. 
+
+**Abstract (ZH)**: 本文介绍了一种自主机器人任务规划算法，该算法能够基于奖励从预定义的集合中选择最优航点序列。该算法计算出机器人在避免障碍、最大化总奖励并遵守状态、输入及其导数、任务时间窗口和最大距离约束的前提下从一个航点导航到另一个航点的可行轨迹和相应的控制输入。该算法还解决了广义的收集奖品旅行商问题。所提出的算法采用了一种新的遗传算法，该算法基于适应度函数和交叉操作，通过进化解决方案候选人来朝向最优解。在适应度评估过程中，采用惩罚方法强制执行约束，并利用逐次曲线的微分平坦性性质高效地惩罚不可行轨迹。欧拉螺旋方法在轨迹参数化方面的表现优于最小拍和抖动多项式。由于探索空间的离散性，交叉操作通过动态时间扭曲方法和扩展凸组合与投影方法实现。变异步骤增强了探索性。实验结果表明，该算法能够找到最优航点序列，满足约束条件，避免不可行航点，并优先选择高奖励航点。并进行了地面车辆、四旋翼无人机和四足机器人仿真和实验，同时进行了基准测试和时间复杂性分析。 
+
+---
+# Motion Control in Multi-Rotor Aerial Robots Using Deep Reinforcement Learning 
+
+**Title (ZH)**: 多旋翼空中机器人基于深度强化学习的运动控制 
+
+**Authors**: Gaurav Shetty, Mahya Ramezani, Hamed Habibi, Holger Voos, Jose Luis Sanchez-Lopez  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.05996)  
+
+**Abstract**: This paper investigates the application of Deep Reinforcement (DRL) Learning to address motion control challenges in drones for additive manufacturing (AM). Drone-based additive manufacturing promises flexible and autonomous material deposition in large-scale or hazardous environments. However, achieving robust real-time control of a multi-rotor aerial robot under varying payloads and potential disturbances remains challenging. Traditional controllers like PID often require frequent parameter re-tuning, limiting their applicability in dynamic scenarios. We propose a DRL framework that learns adaptable control policies for multi-rotor drones performing waypoint navigation in AM tasks. We compare Deep Deterministic Policy Gradient (DDPG) and Twin Delayed Deep Deterministic Policy Gradient (TD3) within a curriculum learning scheme designed to handle increasing complexity. Our experiments show TD3 consistently balances training stability, accuracy, and success, particularly when mass variability is introduced. These findings provide a scalable path toward robust, autonomous drone control in additive manufacturing. 
+
+**Abstract (ZH)**: 基于深度强化学习的多旋翼无人机在增材制造中运动控制应用研究 
+
+---
+# Mechanic Modeling and Nonlinear Optimal Control of Actively Articulated Suspension of Mobile Heavy-Duty Manipulators 
+
+**Title (ZH)**: 移动重型 manipulator 活动关节悬挂的力学建模与非线性最优控制 
+
+**Authors**: Alvaro Paz, Jouni Mattila  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.05972)  
+
+**Abstract**: This paper presents the analytic modeling of mobile heavy-duty manipulators with actively articulated suspension and its optimal control to maximize its static and dynamic stabilization. By adopting the screw theory formalism, we consider the suspension mechanism as a rigid multibody composed of two closed kinematic chains. This mechanical modeling allows us to compute the spatial inertial parameters of the whole platform as a function of the suspension's linear actuators through the articulated-body inertia method. Our solution enhances the computation accuracy of the wheels' reaction normal forces by providing an exact solution for the center of mass and inertia tensor of the mobile manipulator. Moreover, these inertial parameters and the normal forces are used to define metrics of both static and dynamic stability of the mobile manipulator and formulate a nonlinear programming problem that optimizes such metrics to generate an optimal stability motion that prevents the platform's overturning, such optimal position of the actuator is tracked with a state-feedback hydraulic valve control. We demonstrate our method's efficiency in terms of C++ computational speed, accuracy and performance improvement by simulating a 7 degrees-of-freedom heavy-duty parallel-serial mobile manipulator with four wheels and actively articulated suspension. 
+
+**Abstract (ZH)**: 基于主动 articulated 悬挂的移动重型的操作机的分析建模及其最优控制以最大化其静态和动态稳定性的研究 
+
+---
+# Energy-Efficient Autonomous Aerial Navigation with Dynamic Vision Sensors: A Physics-Guided Neuromorphic Approach 
+
+**Title (ZH)**: 基于物理指导的类神经形态方法：动态视觉传感器的能效自主 aerial 导航 
+
+**Authors**: Sourav Sanyal, Amogh Joshi, Manish Nagaraj, Rohan Kumar Manna, Kaushik Roy  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.05938)  
+
+**Abstract**: Vision-based object tracking is a critical component for achieving autonomous aerial navigation, particularly for obstacle avoidance. Neuromorphic Dynamic Vision Sensors (DVS) or event cameras, inspired by biological vision, offer a promising alternative to conventional frame-based cameras. These cameras can detect changes in intensity asynchronously, even in challenging lighting conditions, with a high dynamic range and resistance to motion blur. Spiking neural networks (SNNs) are increasingly used to process these event-based signals efficiently and asynchronously. Meanwhile, physics-based artificial intelligence (AI) provides a means to incorporate system-level knowledge into neural networks via physical modeling. This enhances robustness, energy efficiency, and provides symbolic explainability. In this work, we present a neuromorphic navigation framework for autonomous drone navigation. The focus is on detecting and navigating through moving gates while avoiding collisions. We use event cameras for detecting moving objects through a shallow SNN architecture in an unsupervised manner. This is combined with a lightweight energy-aware physics-guided neural network (PgNN) trained with depth inputs to predict optimal flight times, generating near-minimum energy paths. The system is implemented in the Gazebo simulator and integrates a sensor-fused vision-to-planning neuro-symbolic framework built with the Robot Operating System (ROS) middleware. This work highlights the future potential of integrating event-based vision with physics-guided planning for energy-efficient autonomous navigation, particularly for low-latency decision-making. 
+
+**Abstract (ZH)**: 基于视觉的物体跟踪是实现自主空中导航的关键组件，特别是在障碍物避免中。神经形态动态视觉传感器（DVS）或事件相机受生物视觉启发，提供了与传统帧基相机的有前途的替代方案。这些相机即使在具有挑战性的光照条件下，也能异步检测到强度变化，具有高动态范围和抗运动模糊性。突触神经网络（SNNs）被越来越多地用于高效、异步地处理这些基于事件的信号。同时，基于物理的人工智能提供了一种通过物理建模将系统级知识纳入神经网络的方法。这增强了鲁棒性、能量效率，并提供了象征性的可解释性。在本工作中，我们提出了一种神经形态导航框架，用于自主无人机导航。重点在于检测并穿越移动门框，同时避免碰撞。我们通过浅层SNN架构在无监督方式下使用事件相机检测移动物体。这与使用深度输入训练的轻量级能量感知物理引导神经网络（PgNN）结合，用于预测最优飞行时间，生成接近最小能量路径。该系统在Gazebo模拟器中实现，并与基于Robot Operating System（ROS）中间件构建的传感器融合视觉到规划神经符号框架集成。本工作突显了事件视觉与物理引导规划在未来实现高效自主导航中的潜在价值，特别是在低延迟决策中。 
+
+---
+# Adaptive Grasping of Moving Objects in Dense Clutter via Global-to-Local Detection and Static-to-Dynamic Planning 
+
+**Title (ZH)**: 基于全局到局部检测与静态到动态规划的密集杂乱环境中移动物体的适应性抓取 
+
+**Authors**: Hao Chen, Takuya Kiyokawa, Weiwei Wan, Kensuke Harada  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.05916)  
+
+**Abstract**: Robotic grasping is facing a variety of real-world uncertainties caused by non-static object states, unknown object properties, and cluttered object arrangements. The difficulty of grasping increases with the presence of more uncertainties, where commonly used learning-based approaches struggle to perform consistently across varying conditions. In this study, we integrate the idea of similarity matching to tackle the challenge of grasping novel objects that are simultaneously in motion and densely cluttered using a single RGBD camera, where multiple uncertainties coexist. We achieve this by shifting visual detection from global to local states and operating grasp planning from static to dynamic scenes. Notably, we introduce optimization methods to enhance planning efficiency for this time-sensitive task. Our proposed system can adapt to various object types, arrangements and movement speeds without the need for extensive training, as demonstrated by real-world experiments. 
+
+**Abstract (ZH)**: 基于相似性匹配的单目RGBD相机在动kening紧密布置的待抓取物上的抓取规划 
+
+---
+# Vertical Vibratory Transport of Grasped Parts Using Impacts 
+
+**Title (ZH)**: 抓取部件的垂直振动运输撞击方法 
+
+**Authors**: C. L. Yako, Jérôme Nowak, Shenli Yuan, Kenneth Salisbury  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.05693)  
+
+**Abstract**: In this paper, we use impact-induced acceleration in conjunction with periodic stick-slip to successfully and quickly transport parts vertically against gravity. We show analytically that vertical vibratory transport is more difficult than its horizontal counterpart, and provide guidelines for achieving optimal vertical vibratory transport of a part. Namely, such a system must be capable of quickly realizing high accelerations, as well as supply normal forces at least several times that required for static equilibrium. We also show that for a given maximum acceleration, there is an optimal normal force for transport. To test our analytical guidelines, we built a vibrating surface using flexures and a voice coil actuator that can accelerate a magnetic ram into various materials to generate impacts. The surface was used to transport a part against gravity. Experimentally obtained motion tracking data confirmed the theoretical model. A series of grasping tests with a vibrating-surface equipped parallel jaw gripper confirmed the design guidelines. 
+
+**Abstract (ZH)**: 在本文中，我们利用冲击引起的加速度结合周期性滑移粘着成功快速地实现了零件垂直方向上的反重力运输。我们从理论上证明了垂直振动运输比水平运输更困难，并提供了实现最优垂直振动运输的指南。具体来说，这样的系统必须能够快速实现高加速度，并且能够提供至少是静力平衡所需正常力几倍的正常力。我们还证明，在给定的最大加速度下，存在一个最佳的正常力用于运输。为了验证我们的理论指南，我们使用柔性铰链和声音线圈执行器构建了一个振动表面，并通过使一个磁性撞针进入各种材料来生成冲击，该表面被用于反重力运输零件。实验获得的运动跟踪数据证实了理论模型。配备振动表面的并指夹持器的一系列夹持测试进一步验证了设计指南。 
+
+---
+# Online Controller Synthesis for Robot Collision Avoidance: A Case Study 
+
+**Title (ZH)**: 机器人碰撞避免的在线控制器合成：一个案例研究 
+
+**Authors**: Yuheng Fan, Wang Lin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.05667)  
+
+**Abstract**: The inherent uncertainty of dynamic environments poses significant challenges for modeling robot behavior, particularly in tasks such as collision avoidance. This paper presents an online controller synthesis framework tailored for robots equipped with deep learning-based perception components, with a focus on addressing distribution shifts. Our approach integrates periodic monitoring and repair mechanisms for the deep neural network perception component, followed by uncertainty reassessment. These uncertainty evaluations are injected into a parametric discrete-time markov chain, enabling the synthesis of robust controllers via probabilistic model checking. To ensure high system availability during the repair process, we propose a dual-component configuration that seamlessly transitions between operational states. Through a case study on robot collision avoidance, we demonstrate the efficacy of our method, showcasing substantial performance improvements over baseline approaches. This work provides a comprehensive and scalable solution for enhancing the safety and reliability of autonomous systems operating in uncertain environments. 
+
+**Abstract (ZH)**: 动态环境中的固有不确定性给机器人行为建模带来了显著挑战，尤其是在避碰任务中。本文提出了一种针对配备基于深度学习感知组件的机器人在线控制器综合框架，重点关注解决分布偏移问题。该方法将周期性监控和修复机制整合到深度神经网络感知组件中，随后进行不确定性重新评估。这些不确定性评估被注入到参数离散时间马尔可夫链中，从而通过概率模型检查合成鲁棒控制器。为了在修复过程中确保系统的高可用性，我们提出了一种双组件配置，可在操作状态之间无缝切换。通过机器人避碰案例研究，我们展示了该方法的有效性，展示了与基线方法相比显著的性能改进。本文为在不确定环境中运行的自主系统提高了安全性和可靠性提供了全面且可扩展的解决方案。 
+
+---
+# Towards Learning Scalable Agile Dynamic Motion Planning for Robosoccer Teams with Policy Optimization 
+
+**Title (ZH)**: 面向robosoccer团队的可扩展敏捷动态运动规划学习研究：基于策略优化 
+
+**Authors**: Brandon Ho, Batuhan Altundas, Matthew Gombolay  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.05526)  
+
+**Abstract**: In fast-paced, ever-changing environments, dynamic Motion Planning for Multi-Agent Systems in the presence of obstacles is a universal and unsolved problem. Be it from path planning around obstacles to the movement of robotic arms, or in planning navigation of robot teams in settings such as Robosoccer, dynamic motion planning is needed to avoid collisions while reaching the targeted destination when multiple agents occupy the same area. In continuous domains where the world changes quickly, existing classical Motion Planning algorithms such as RRT* and A* become computationally expensive to rerun at every time step. Many variations of classical and well-formulated non-learning path-planning methods have been proposed to solve this universal problem but fall short due to their limitations of speed, smoothness, optimally, etc. Deep Learning models overcome their challenges due to their ability to adapt to varying environments based on past experience. However, current learning motion planning models use discretized environments, do not account for heterogeneous agents or replanning, and build up to improve the classical motion planners' efficiency, leading to issues with scalability. To prevent collisions between heterogenous team members and collision to obstacles while trying to reach the target location, we present a learning-based dynamic navigation model and show our model working on a simple environment in the concept of a simple Robosoccer Game. 
+
+**Abstract (ZH)**: 在快速变化的环境下，多Agent系统在障碍物存在下的动态运动规划是一个普遍且未解决的问题。无论是障碍物周围的路径规划、机械臂的运动，还是在如Robosoccer这样的设置中机器人团队的导航规划，都需要动态运动规划以在多个Agent占据同一区域时避免碰撞并达到目标位置。在世界快速变化的连续领域中，现有的经典运动规划算法如RRT*和A*在每个时间步重新运行变得计算上昂贵。尽管提出了许多经典且非学习路径规划方法的变体来解决这一普遍问题，但由于速度、平滑度、最优性等方面的问题，它们仍存在不足。深度学习模型由于能够根据以往经验适应不同的环境而克服了这些挑战。然而，当前的学习运动规划模型使用离散化环境，不考虑异质性Agent或重新规划，旨在提高经典运动规划器的效率，导致可扩展性问题。为避免异质性团队成员之间的碰撞以及避免与障碍物的碰撞，我们提出了一种基于学习的动态导航模型，并展示了该模型在简单Robosoccer游戏环境中的工作。 
+
+---
+# Lie-algebra Adaptive Tracking Control for Rigid Body Dynamics 
+
+**Title (ZH)**: 刚体动力学的李代数自适应跟踪控制 
+
+**Authors**: Jiawei Tang, Shilei Li, Ling Shi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.05491)  
+
+**Abstract**: Adaptive tracking control for rigid body dynamics is of critical importance in control and robotics, particularly for addressing uncertainties or variations in system model parameters. However, most existing adaptive control methods are designed for systems with states in vector spaces, often neglecting the manifold constraints inherent to robotic systems. In this work, we propose a novel Lie-algebra-based adaptive control method that leverages the intrinsic relationship between the special Euclidean group and its associated Lie algebra. By transforming the state space from the group manifold to a vector space, we derive a linear error dynamics model that decouples model parameters from the system state. This formulation enables the development of an adaptive optimal control method that is both geometrically consistent and computationally efficient. Extensive simulations demonstrate the effectiveness and efficiency of the proposed method. We have made our source code publicly available to the community to support further research and collaboration. 
+
+**Abstract (ZH)**: 基于李代数的 rigid 体动力学自适应跟踪控制方法在控制与机器人领域至关重要，特别是在处理系统模型参数的不确定性或变化时。然而，现有的大多数自适应控制方法针对的是状态位于向量空间中的系统，往往忽略了机器人系统固有的流形约束。在本工作中，我们提出了一种新的基于李代数的自适应控制方法，该方法利用特殊欧几里得群与其关联的李代数之间的内在关系。通过将状态空间从流形转换到向量空间，我们推导出一个解耦模型参数与系统状态的线性误差动态模型。该表述形式使得能够开发出既几何上一致又计算效率高的自适应最优控制方法。广泛的仿真实验证实了所提出方法的有效性和高效性。我们已将源代码开源以支持进一步的研究和合作。 
+
+---
+# Motion Planning of Nonholonomic Cooperative Mobile Manipulators 
+
+**Title (ZH)**: 非holonomic协同移动 manipulator 的运动规划 
+
+**Authors**: Keshab Patra, Arpita Sinha, Anirban Guha  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.05462)  
+
+**Abstract**: We propose a real-time implementable motion planning technique for cooperative object transportation by nonholonomic mobile manipulator robots (MMRs) in an environment with static and dynamic obstacles. The proposed motion planning technique works in two steps. A novel visibility vertices-based path planning algorithm computes a global piece-wise linear path between the start and the goal location in the presence of static obstacles offline. It defines the static obstacle free space around the path with a set of convex polygons for the online motion planner. We employ a Nonliner Model Predictive Control (NMPC) based online motion planning technique for nonholonomic MMRs that jointly plans for the mobile base and the manipulators arm. It efficiently utilizes the locomotion capability of the mobile base and the manipulation capability of the arm. The motion planner plans feasible motion for the MMRs and generates trajectory for object transportation considering the kinodynamic constraints and the static and dynamic obstacles. The efficiency of our approach is validated by numerical simulation and hardware experiments in varied environments. 
+
+**Abstract (ZH)**: 一种面向非完整移动机械手机器人（MMRs）的具有静态和动态障碍物环境下的实时可实现的合作物体运输运动规划技术 
+
+---
+# Non-cooperative Stochastic Target Encirclement by Anti-synchronization Control via Range-only Measurement 
+
+**Title (ZH)**: 通过范围测量实现的非合作随机目标圈闭控制异步同步控制 
+
+**Authors**: Fen Liu, Shenghai Yuan, Wei Meng, Rong Su, Lihua Xie  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.05440)  
+
+**Abstract**: This paper investigates the stochastic moving target encirclement problem in a realistic setting. In contrast to typical assumptions in related works, the target in our work is non-cooperative and capable of escaping the circle containment by boosting its speed to maximum for a short duration. Considering the extreme environment, such as GPS denial, weight limit, and lack of ground guidance, two agents can only rely on their onboard single-modality perception tools to measure the distances to the target. The distance measurement allows for creating a position estimator by providing a target position-dependent variable. Furthermore, the construction of the unique distributed anti-synchronization controller (DASC) can guarantee that the two agents track and encircle the target swiftly. The convergence of the estimator and controller is rigorously evaluated using the Lyapunov technique. A real-world UAV-based experiment is conducted to illustrate the performance of the proposed methodology in addition to a simulated Matlab numerical sample. Our video demonstration can be found in the URL this https URL. 
+
+**Abstract (ZH)**: 本文在实际场景中研究随机移动目标的包围问题。与相关工作中典型的假设不同，我们的目标是不合作的，并且能够在短时间内通过提高速度来突破包围圈。考虑到极端环境，如GPS拒绝服务、重量限制和缺乏地面引导，两个代理只能依赖其机载单一模态感知工具来测量到目标的距离。距离测量允许通过目标位置依赖变量创建位置估计器。此外，独特分布的反同步控制器（DASC）的构建可以保证两个代理能够迅速跟踪并包围目标。通过Lyapunov技术严格评估估计器和控制器的收敛性。除了MATLAB模拟数值样本外，我们还进行了基于UAV的实际实验以展示所提出方法的性能。我们的视频演示可以在以下链接找到：<https://this-is-the-url.com>。 
+
+---
+# Demonstrating CavePI: Autonomous Exploration of Underwater Caves by Semantic Guidance 
+
+**Title (ZH)**: 展示CavePI：基于语义指导的水下洞穴自主探索 
+
+**Authors**: Alankrit Gupta, Adnan Abdullah, Xianyao Li, Vaishnav Ramesh, Ioannis Rekleitis, Md Jahidul Islam  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.05384)  
+
+**Abstract**: Enabling autonomous robots to safely and efficiently navigate, explore, and map underwater caves is of significant importance to water resource management, hydrogeology, archaeology, and marine robotics. In this work, we demonstrate the system design and algorithmic integration of a visual servoing framework for semantically guided autonomous underwater cave exploration. We present the hardware and edge-AI design considerations to deploy this framework on a novel AUV (Autonomous Underwater Vehicle) named CavePI. The guided navigation is driven by a computationally light yet robust deep visual perception module, delivering a rich semantic understanding of the environment. Subsequently, a robust control mechanism enables CavePI to track the semantic guides and navigate within complex cave structures. We evaluate the system through field experiments in natural underwater caves and spring-water sites and further validate its ROS (Robot Operating System)-based digital twin in a simulation environment. Our results highlight how these integrated design choices facilitate reliable navigation under feature-deprived, GPS-denied, and low-visibility conditions. 
+
+**Abstract (ZH)**: 实现自主水下机器人在水下洞穴中安全高效地导航、探索和建图对于水资源管理、水文地质学、考古学和水下机器人技术具有重要意义。本文展示了基于语义引导的自主水下洞穴探索视觉伺服框架的系统设计与算法集成。我们介绍了将该框架部署在新型AUV（自主水下机器人）CavePI上的硬件和边缘AI设计考虑因素。由轻量级且可靠的深度视觉感知模块驱动的语义引导导航，提供了丰富的环境语义理解。接着，一个可靠的控制机制使CavePI能够跟踪语义引导并在复杂的洞穴结构中导航。我们通过在自然水下洞穴和温泉水区进行实地试验评估了该系统，并在仿真环境中验证了其基于ROS的数字孪生。我们的结果突显了在特征匮乏、GPS受限和低能见度条件下这些集成设计选择如何促进可靠导航。 
+
+---
+# Towards Wearable Interfaces for Robotic Caregiving 
+
+**Title (ZH)**: 面向机器人护理的可穿戴界面研究 
+
+**Authors**: Akhil Padmanabha, Carmel Majidi, Zackory Erickson  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.05343)  
+
+**Abstract**: Physically assistive robots in home environments can enhance the autonomy of individuals with impairments, allowing them to regain the ability to conduct self-care and household tasks. Individuals with physical limitations may find existing interfaces challenging to use, highlighting the need for novel interfaces that can effectively support them. In this work, we present insights on the design and evaluation of an active control wearable interface named HAT, Head-Worn Assistive Teleoperation. To tackle challenges in user workload while using such interfaces, we propose and evaluate a shared control algorithm named Driver Assistance. Finally, we introduce the concept of passive control, in which wearable interfaces detect implicit human signals to inform and guide robotic actions during caregiving tasks, with the aim of reducing user workload while potentially preserving the feeling of control. 
+
+**Abstract (ZH)**: 家庭环境中具备物理辅助功能的机器人可以增强有身体障碍个体的自主性，使他们能够恢复自我照顾和家务活动的能力。身体有限制的个体可能发现现有接口难以使用，这凸显了需要有效支持他们的新型接口的需求。在此项工作中，我们介绍了名为HAT（Head-Worn Assistive Teleoperation）的主动控制可穿戴接口的设计与评估。为解决使用此类接口时的用户工作负荷问题，我们提出了并评估了名为Driver Assistance的联合控制算法。最后，我们引入了被动控制的概念，在这种概念下，可穿戴接口通过检测隐含的人类信号来告知和引导机器人动作，旨在降低用户工作负荷的同时，可能保留用户对系统的控制感。 
+
+---
+# Switch-based Independent Antagonist Actuation with a Single Motor for a Soft Exosuit 
+
+**Title (ZH)**: 基于开关的独立拮抗驱动软外骨骼单电机独立对抗驱动 
+
+**Authors**: Atharva Vadeyar, Rejin John Varghese, Etienne Burdet, Dario Farina  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.05290)  
+
+**Abstract**: The use of a cable-driven soft exosuit poses challenges with regards to the mechanical design of the actuation system, particularly when used for actuation along multiple degrees of freedom (DoF). The simplest general solution requires the use of two actuators to be capable of inducing movement along one DoF. However, this solution is not practical for the development of multi-joint exosuits. Reducing the number of actuators is a critical need in multi-DoF exosuits. We propose a switch-based mechanism to control an antagonist pair of cables such that it can actuate along any cable path geometry. The results showed that 298.24ms was needed for switching between cables. While this latency is relatively large, it can reduced in the future by a better choice of the motor used for actuation. 
+
+**Abstract (ZH)**: 基于电缆驱动的软外骨骼系统在多自由度 actuuator 设计中的挑战及解决方案 
+
+---
+# RobotMover: Learning to Move Large Objects by Imitating the Dynamic Chain 
+
+**Title (ZH)**: RobotMover: 学习移动大型物体的动态链模拟方法 
+
+**Authors**: Tianyu Li, Joanne Truong, Jimmy Yang, Alexander Clegg, Akshara Rai, Sehoon Ha, Xavier Puig  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.05271)  
+
+**Abstract**: Moving large objects, such as furniture, is a critical capability for robots operating in human environments. This task presents significant challenges due to two key factors: the need to synchronize whole-body movements to prevent collisions between the robot and the object, and the under-actuated dynamics arising from the substantial size and weight of the objects. These challenges also complicate performing these tasks via teleoperation. In this work, we introduce \method, a generalizable learning framework that leverages human-object interaction demonstrations to enable robots to perform large object manipulation tasks. Central to our approach is the Dynamic Chain, a novel representation that abstracts human-object interactions so that they can be retargeted to robotic morphologies. The Dynamic Chain is a spatial descriptor connecting the human and object root position via a chain of nodes, which encode the position and velocity of different interaction keypoints. We train policies in simulation using Dynamic-Chain-based imitation rewards and domain randomization, enabling zero-shot transfer to real-world settings without fine-tuning. Our approach outperforms both learning-based methods and teleoperation baselines across six evaluation metrics when tested on three distinct object types, both in simulation and on physical hardware. Furthermore, we successfully apply the learned policies to real-world tasks, such as moving a trash cart and rearranging chairs. 
+
+**Abstract (ZH)**: 移动大型物体，例如家具，是机器人在人类环境中操作的一项关键能力。由于两个关键因素的存在，这项任务面临着巨大的挑战：需要同步全身运动以防止机器人与物体发生碰撞，以及由于物体的庞大尺寸和重量而产生的欠驱动动态。这些挑战也使得通过遥控操作执行这些任务变得更加复杂。在本工作中，我们引入了\method，这是一种泛化学习框架，利用人类-物体交互演示来使机器人能够执行大型物体操作任务。我们方法的核心是动态链，这是一种新颖的表现形式，可将人类-物体交互抽象化并重新定标到机器人的形态学上。动态链是一种空问描述符，通过一串节点连接人类和物体的根位置，这些节点编码了不同交互关节点的位置和速度。我们在仿真中使用基于动态链的模仿奖励和领域随机化进行策略训练，使策略能够在无需微调的情况下实现零样本迁移至真实环境。当分别在三种不同类型的物体上进行六项评估指标的测试时，我们的方法在仿真和物理硬件上均优于基于学习的方法和遥控操作基准方法。此外，我们成功将学到的策略应用于实际任务，如移动垃圾车和重新安排椅子。 
+
+---
+# Thin ring wing as a means of flow improvement upstream of a propeller 
+
+**Title (ZH)**: 薄环翼作为提高推进器上游气流的手段 
+
+**Authors**: Vladimir Sluchak  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.05231)  
+
+**Abstract**: There are numerous devices currently known with the purpose of reducing the irregularity of the flow upstream of the propeller and to decrease by that means the propeller-induced vibration and noise. Many of these devices are wing-shaped vortex-generators that affect the flow with their induced (i.e. passive) longitudinal vortices. The paper's subject is the use of a ring-shaped wing as a highly effective passive vortex-generator which allows to control the flow closer to the most charged sections of propeller blades. The problem of a thin ring-shaped wing with irregular (asymmetric) geometry in the irregular steady flow has been solved in a linear approach and the intensity of the induced longitudinal vortices as a function of the irregularity of the flow and the geometry of the ring wing has been estimated using that solution. Experiments in the towing tank showing good concordance with the theoretical model confirmed the effectiveness of such a device. Some additional advantages of a ring-shaped wing incorporated into the construction of stabilizers are considered. 
+
+**Abstract (ZH)**: 环形机翼作为高效的被动旋涡发生器减少推进器诱导振动和噪声的研究 
+
+---
+# Mitigation of Camouflaged Adversarial Attacks in Autonomous Vehicles--A Case Study Using CARLA Simulator 
+
+**Title (ZH)**: 自主驾驶车辆中伪装对抗攻击的缓解研究——基于CARLA模拟器的案例研究 
+
+**Authors**: Yago Romano Martinez, Brady Carter, Abhijeet Solanki, Wesam Al Amiri, Syed Rafay Hasan, Terry N. Guo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.05208)  
+
+**Abstract**: Autonomous vehicles (AVs) rely heavily on cameras and artificial intelligence (AI) to make safe and accurate driving decisions. However, since AI is the core enabling technology, this raises serious cyber threats that hinder the large-scale adoption of AVs. Therefore, it becomes crucial to analyze the resilience of AV security systems against sophisticated attacks that manipulate camera inputs, deceiving AI models. In this paper, we develop camera-camouflaged adversarial attacks targeting traffic sign recognition (TSR) in AVs. Specifically, if the attack is initiated by modifying the texture of a stop sign to fool the AV's object detection system, thereby affecting the AV actuators. The attack's effectiveness is tested using the CARLA AV simulator and the results show that such an attack can delay the auto-braking response to the stop sign, resulting in potential safety issues. We conduct extensive experiments under various conditions, confirming that our new attack is effective and robust. Additionally, we address the attack by presenting mitigation strategies. The proposed attack and defense methods are applicable to other end-to-end trained autonomous cyber-physical systems. 
+
+**Abstract (ZH)**: 自主驾驶车辆的基于摄像头的对抗攻击研究：针对交通标识识别系统的隐匿攻击及其防御 
+
+---
