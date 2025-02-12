@@ -1,0 +1,221 @@
+# Beyond Behavior Cloning: Robustness through Interactive Imitation and Contrastive Learning 
+
+**Title (ZH)**: 超越行为克隆：通过互动模仿和对比学习增强鲁棒性 
+
+**Authors**: Zhaoting Li, Rodrigo Pérez-Dattari, Robert Babuska, Cosimo Della Santina, Jens Kober  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.07645)  
+
+**Abstract**: Behavior cloning (BC) traditionally relies on demonstration data, assuming the demonstrated actions are optimal. This can lead to overfitting under noisy data, particularly when expressive models are used (e.g., the energy-based model in Implicit BC). To address this, we extend behavior cloning into an iterative process of optimal action estimation within the Interactive Imitation Learning framework. Specifically, we introduce Contrastive policy Learning from Interactive Corrections (CLIC). CLIC leverages human corrections to estimate a set of desired actions and optimizes the policy to select actions from this set. We provide theoretical guarantees for the convergence of the desired action set to optimal actions in both single and multiple optimal action cases. Extensive simulation and real-robot experiments validate CLIC's advantages over existing state-of-the-art methods, including stable training of energy-based models, robustness to feedback noise, and adaptability to diverse feedback types beyond demonstrations. Our code will be publicly available soon. 
+
+**Abstract (ZH)**: 基于交互式模仿学习的对比策略学习从交互修正（CLIC） 
+
+---
+# SymbioSim: Human-in-the-loop Simulation Platform for Bidirectional Continuing Learning in Human-Robot Interaction 
+
+**Title (ZH)**: SymbioSim：交互式人工辅助双向持续学习仿真平台 
+
+**Authors**: Haoran Chen, Yiteng Xu, Yiming Ren, Yaoqin Ye, Xinran Li, Ning Ding, Peishan Cong, Ziyi Wang, Bushi Liu, Yuhan Chen, Zhiyang Dou, Xiaokun Leng, Manyi Li, Yuexin Ma, Changhe Tu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.07358)  
+
+**Abstract**: The development of intelligent robots seeks to seamlessly integrate them into the human world, providing assistance and companionship in daily life and work, with the ultimate goal of achieving human-robot symbiosis. To realize this vision, robots must continuously learn and evolve through consistent interaction and collaboration with humans, while humans need to gradually develop an understanding of and trust in robots through shared experiences. However, training and testing algorithms directly on physical robots involve substantial costs and safety risks. Moreover, current robotic simulators fail to support real human participation, limiting their ability to provide authentic interaction experiences and gather valuable human feedback. In this paper, we introduce SymbioSim, a novel human-in-the-loop robotic simulation platform designed to enable the safe and efficient development, evaluation, and optimization of human-robot interactions. By leveraging a carefully designed system architecture and modules, SymbioSim delivers a natural and realistic interaction experience, facilitating bidirectional continuous learning and adaptation for both humans and robots. Extensive experiments and user studies demonstrate the platform's promising performance and highlight its potential to significantly advance research on human-robot symbiosis. 
+
+**Abstract (ZH)**: 智能机器人的发展旨在使其无缝融入人类世界，在日常生活中提供协助和陪伴，并最终实现人机共生。为了实现这一愿景，机器人必须通过与人类一致的交互和协作不断学习和进化，而人类则需要通过共享体验逐渐理解并信任机器人。然而，直接在物理机器人上训练和测试算法涉及巨大的成本和安全风险。此外，当前的机器人模拟器无法支持真实的人类参与，限制了其提供真实的交互体验和收集有价值的人类反馈的能力。本文介绍了一种名为SymbioSim的新型带有人类在环的机器人仿真平台，旨在实现人机交互的高效、安全开发、评估和优化。通过充分利用精心设计的系统架构和模块，SymbioSim提供了自然真实的交互体验，促进了人类和机器人之间的双向持续学习与适应。广泛的经验验证和用户研究展示了该平台的出色性能，并强调了其在促进人机共生研究方面的重要潜力。 
+
+---
+# Space-Aware Instruction Tuning: Dataset and Benchmark for Guide Dog Robots Assisting the Visually Impaired 
+
+**Title (ZH)**: 空间感知指令调优：导盲机器人辅助视障者的数据集与基准测试 
+
+**Authors**: ByungOk Han, Woo-han Yun, Beom-Su Seo, Jaehong Kim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.07183)  
+
+**Abstract**: Guide dog robots offer promising solutions to enhance mobility and safety for visually impaired individuals, addressing the limitations of traditional guide dogs, particularly in perceptual intelligence and communication. With the emergence of Vision-Language Models (VLMs), robots are now capable of generating natural language descriptions of their surroundings, aiding in safer decision-making. However, existing VLMs often struggle to accurately interpret and convey spatial relationships, which is crucial for navigation in complex environments such as street crossings. We introduce the Space-Aware Instruction Tuning (SAIT) dataset and the Space-Aware Benchmark (SA-Bench) to address the limitations of current VLMs in understanding physical environments. Our automated data generation pipeline focuses on the virtual path to the destination in 3D space and the surroundings, enhancing environmental comprehension and enabling VLMs to provide more accurate guidance to visually impaired individuals. We also propose an evaluation protocol to assess VLM effectiveness in delivering walking guidance. Comparative experiments demonstrate that our space-aware instruction-tuned model outperforms state-of-the-art algorithms. We have fully open-sourced the SAIT dataset and SA-Bench, along with the related code, at this https URL 
+
+**Abstract (ZH)**: 导盲机器人为提升视觉障碍个体的移动性和安全性提供了有前景的解决方案，解决了传统导盲犬在感知智能和通信方面的问题，特别是在复杂环境如街道交叉口导航时的空间关系理解方面。随着视觉语言模型（VLMs）的出现，机器人现在能够生成其周围环境的自然语言描述，帮助做出更安全的决策。然而，现有的VLMs在准确解释和传达空间关系方面常常面临挑战，这对于在复杂的物理环境中导航至关重要。我们引入了Space-Aware Instruction Tuning（SAIT）数据集和Space-Aware Benchmark（SA-Bench），以解决当前VLMs在理解物理环境方面的局限性。我们的自动化数据生成管道专注于3D空间中的虚拟路径及其周围的环境理解，从而增强环境理解，并使VLMs能够为视觉障碍个体提供更准确的导航。我们还提出了一套评估协议，以评估VLMs在提供步行指导方面的有效性。对比实验表明，我们的空间感知指令调优模型在评估中优于当前最先进的算法。我们已完全开源SAIT数据集、SA-Bench及相关代码，详见此链接：this https URL。 
+
+---
+# PlaySlot: Learning Inverse Latent Dynamics for Controllable Object-Centric Video Prediction and Planning 
+
+**Title (ZH)**: PlaySlot：学习逆潜在态动力学实现可控物体中心视频预测与规划 
+
+**Authors**: Angel Villar-Corrales, Sven Behnke  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.07600)  
+
+**Abstract**: Predicting future scene representations is a crucial task for enabling robots to understand and interact with the environment. However, most existing methods rely on video sequences and simulations with precise action annotations, limiting their ability to leverage the large amount of available unlabeled video data. To address this challenge, we propose PlaySlot, an object-centric video prediction model that infers object representations and latent actions from unlabeled video sequences. It then uses these representations to forecast future object states and video frames. PlaySlot allows to generate multiple possible futures conditioned on latent actions, which can be inferred from video dynamics, provided by a user, or generated by a learned action policy, thus enabling versatile and interpretable world modeling. Our results show that PlaySlot outperforms both stochastic and object-centric baselines for video prediction across different environments. Furthermore, we show that our inferred latent actions can be used to learn robot behaviors sample-efficiently from unlabeled video demonstrations. Videos and code are available at this https URL. 
+
+**Abstract (ZH)**: 预测未来场景表示对于使机器人理解并交互环境至关重要。然而，现有方法大多依赖于带有精确动作标注的视频序列和模拟，限制了它们利用大量可用的未标注视频数据的能力。为应对这一挑战，我们提出了PlaySlot，一种以对象为中心的视频预测模型，可以从未标注的视频序列中推断对象表示和潜在动作，然后使用这些表示来预测未来对象状态和视频帧。PlaySlot 允许根据潜在动作生成多个可能的未来，这些潜在动作可以来自视频动力学、用户提供的信息或由学习到的动作策略生成，从而实现灵活且可解释的世界建模。我们的结果表明，PlaySlot 在不同环境下的视频预测中均优于随机和以对象为中心的基线方法。此外，我们展示了我们的推断潜在动作可以用于从未标注的视频演示中高效学习机器人行为。更多详情，请参阅：this https URL。 
+
+---
+# TRAVEL: Training-Free Retrieval and Alignment for Vision-and-Language Navigation 
+
+**Title (ZH)**: TRAVEL: 不需训练的检索与对齐方法用于视觉-语言导航 
+
+**Authors**: Navid Rajabi, Jana Kosecka  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.07306)  
+
+**Abstract**: In this work, we propose a modular approach for the Vision-Language Navigation (VLN) task by decomposing the problem into four sub-modules that use state-of-the-art Large Language Models (LLMs) and Vision-Language Models (VLMs) in a zero-shot setting. Given navigation instruction in natural language, we first prompt LLM to extract the landmarks and the order in which they are visited. Assuming the known model of the environment, we retrieve the top-k locations of the last landmark and generate $k$ path hypotheses from the starting location to the last landmark using the shortest path algorithm on the topological map of the environment. Each path hypothesis is represented by a sequence of panoramas. We then use dynamic programming to compute the alignment score between the sequence of panoramas and the sequence of landmark names, which match scores obtained from VLM. Finally, we compute the nDTW metric between the hypothesis that yields the highest alignment score to evaluate the path fidelity. We demonstrate superior performance compared to other approaches that use joint semantic maps like VLMaps \cite{vlmaps} on the complex R2R-Habitat \cite{r2r} instruction dataset and quantify in detail the effect of visual grounding on navigation performance. 
+
+**Abstract (ZH)**: 基于模块化方法的零样本视觉-语言导航任务研究 
+
+---
+# Select before Act: Spatially Decoupled Action Repetition for Continuous Control 
+
+**Title (ZH)**: 先选择后执行：空间解耦动作重复应用于连续控制 
+
+**Authors**: Buqing Nie, Yangqing Fu, Yue Gao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.06919)  
+
+**Abstract**: Reinforcement Learning (RL) has achieved remarkable success in various continuous control tasks, such as robot manipulation and locomotion. Different to mainstream RL which makes decisions at individual steps, recent studies have incorporated action repetition into RL, achieving enhanced action persistence with improved sample efficiency and superior performance. However, existing methods treat all action dimensions as a whole during repetition, ignoring variations among them. This constraint leads to inflexibility in decisions, which reduces policy agility with inferior effectiveness. In this work, we propose a novel repetition framework called SDAR, which implements Spatially Decoupled Action Repetition through performing closed-loop act-or-repeat selection for each action dimension individually. SDAR achieves more flexible repetition strategies, leading to an improved balance between action persistence and diversity. Compared to existing repetition frameworks, SDAR is more sample efficient with higher policy performance and reduced action fluctuation. Experiments are conducted on various continuous control scenarios, demonstrating the effectiveness of spatially decoupled repetition design proposed in this work. 
+
+**Abstract (ZH)**: 强化学习（RL）在各种连续控制任务，如机器人操作和运动中取得了显著的成功。不同于主流的逐步决策RL方法，最近的研究将动作重复引入RL，提高了动作的持续性，并表现出更好的样本效率和性能。然而，现有方法在重复过程中将所有动作维度视为整体，忽视了它们之间的差异。这一限制导致决策不够灵活，降低了策略的敏捷性。在本文中，我们提出了一种新的重复框架SDAR（Spatially Decoupled Action Repetition），通过为每个动作维度单独进行闭环执行或重复选择来实现空间解耦的动作重复。SDAR实现了更加灵活的重复策略，提高了动作持续性和多样性的平衡。与现有的重复框架相比，SDAR具有更高的样本效率、更好的策略性能和更少的动作波动。我们在多种连续控制场景中进行了实验，验证了本文提出的空间解耦重复设计的有效性。 
+
+---
+# Monte Carlo Tree Diffusion for System 2 Planning 
+
+**Title (ZH)**: 基于蒙特卡洛树扩散的系统2规划 
+
+**Authors**: Jaesik Yoon, Hyeonseo Cho, Doojin Baek, Yoshua Bengio, Sungjin Ahn  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.07202)  
+
+**Abstract**: Diffusion models have recently emerged as a powerful tool for planning. However, unlike Monte Carlo Tree Search (MCTS)-whose performance naturally improves with additional test-time computation (TTC), standard diffusion-based planners offer only limited avenues for TTC scalability. In this paper, we introduce Monte Carlo Tree Diffusion (MCTD), a novel framework that integrates the generative strength of diffusion models with the adaptive search capabilities of MCTS. Our method reconceptualizes denoising as a tree-structured process, allowing partially denoised plans to be iteratively evaluated, pruned, and refined. By selectively expanding promising trajectories while retaining the flexibility to revisit and improve suboptimal branches, MCTD achieves the benefits of MCTS such as controlling exploration-exploitation trade-offs within the diffusion framework. Empirical results on challenging long-horizon tasks show that MCTD outperforms diffusion baselines, yielding higher-quality solutions as TTC increases. 
+
+**Abstract (ZH)**: 蒙特卡洛树搜素扩散模型（MCTD）：一种将扩散模型的生成能力与MCTS的自适应搜索能力相结合的新框架 
+
+---
+# Autonomous Deep Agent 
+
+**Title (ZH)**: 自主深度代理 
+
+**Authors**: Amy Yu, Erik Lebedev, Lincoln Everett, Xiaoxin Chen, Terry Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.07056)  
+
+**Abstract**: This technical brief introduces Deep Agent, an advanced autonomous AI system designed to manage complex multi-phase tasks through a novel hierarchical task management architecture. The system's foundation is built on our Hierarchical Task DAG (HTDAG) framework, which dynamically decomposes high-level objectives into manageable sub-tasks while rigorously maintaining dependencies and execution coherence. Deep Agent advances beyond traditional agent systems through three key innovations: First, it implements a recursive two-stage planner-executor architecture that enables continuous task refinement and adaptation as circumstances change. Second, it features an Autonomous API & Tool Creation (AATC) system that automatically generates reusable components from UI interactions, substantially reducing operational costs for similar tasks. Third, it incorporates Prompt Tweaking Engine and Autonomous Prompt Feedback Learning components that optimize Large Language Model prompts for specific scenarios, enhancing both inference accuracy and operational stability. These components are integrated to form a service infrastructure that manages user contexts, handles complex task dependencies, and orchestrates end-to-end agentic workflow execution. Through this sophisticated architecture, Deep Agent establishes a novel paradigm in self-governing AI systems, demonstrating robust capability to independently handle intricate, multi-step tasks while maintaining consistent efficiency and reliability through continuous self-optimization. 
+
+**Abstract (ZH)**: 这种技术简报介绍了Deep Agent，这是一种高级自主AI系统，通过一种新颖的分层任务管理架构设计来管理复杂的多阶段任务。该系统以我们的分层任务有向图（HTDAG）框架为基础，动态地将高层目标分解为可管理的子任务，同时严格保持依赖关系和执行一致性。Deep Agent 通过三项关键技术进步超越了传统的代理系统：首先，它实现了一种递归的两阶段规划与执行架构，能够在环境变化时不断细化和调整任务；其次，它拥有一个自主API与工具创建（AATC）系统，能够从UI交互中自动生成可重用组件，显著降低相似任务的操作成本；最后，它整合了提示调整引擎和自主提示反馈学习组件，针对特定场景优化大型语言模型的提示，提升推断准确性和操作稳定性。这些组件整合形成了一种服务基础设施，能够管理用户上下文、处理复杂的任务依赖关系，并协调端到端的代理工作流执行。通过这种复杂的架构，Deep Agent 建立了一种自主管理AI系统的新型范式，展示了在不断自我优化的同时独立处理复杂多步骤任务的能力，保持了持续的效率和可靠性。 
+
+---
+# Distributed Value Decomposition Networks with Networked Agents 
+
+**Title (ZH)**: 分布式值分解网络中的网络代理 
+
+**Authors**: Guilherme S. Varela, Alberto Sardinha, Francisco S. Melo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.07635)  
+
+**Abstract**: We investigate the problem of distributed training under partial observability, whereby cooperative multi-agent reinforcement learning agents (MARL) maximize the expected cumulative joint reward. We propose distributed value decomposition networks (DVDN) that generate a joint Q-function that factorizes into agent-wise Q-functions. Whereas the original value decomposition networks rely on centralized training, our approach is suitable for domains where centralized training is not possible and agents must learn by interacting with the physical environment in a decentralized manner while communicating with their peers. DVDN overcomes the need for centralized training by locally estimating the shared objective. We contribute with two innovative algorithms, DVDN and DVDN (GT), for the heterogeneous and homogeneous agents settings respectively. Empirically, both algorithms approximate the performance of value decomposition networks, in spite of the information loss during communication, as demonstrated in ten MARL tasks in three standard environments. 
+
+**Abstract (ZH)**: 我们在部分可观测性下的分布式训练问题中研究协作多代理 reinforcement 学习（MARL）代理如何最大化预期累积联合奖励。我们提出了分布式价值分解网络（DVDN），生成一个可以因子分解为代理特定价值函数的联合 Q 函数。虽然原始的价值分解网络依赖于集中式训练，但我们的方法适用于集中式训练不可行的领域，在这些领域中，代理必须通过与物理环境的分散交互并与其同伴交流来学习。DVDN 通过在本地估计共享目标克服了集中式训练的需求。我们分别针对异构代理和同构代理场景贡献了两种创新算法，DVDN 和 DVDN（GT）。实证研究显示，尽管在通信过程中存在信息损失，这两种算法仍能近似价值分解网络的表现，如在三个标准环境中的十个 MARL 任务中所演示的那样。 
+
+---
+# DMWM: Dual-Mind World Model with Long-Term Imagination 
+
+**Title (ZH)**: DMWM：双重思维世界模型与长期想象 
+
+**Authors**: Lingyi Wang, Rashed Shelim, Walid Saad, Naren Ramakrishnan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.07591)  
+
+**Abstract**: Imagination in world models is crucial for enabling agents to learn long-horizon policy in a sample-efficient manner. Existing recurrent state-space model (RSSM)-based world models depend on single-step statistical inference to capture the environment dynamics, and, hence, they are unable to perform long-term imagination tasks due to the accumulation of prediction errors. Inspired by the dual-process theory of human cognition, we propose a novel dual-mind world model (DMWM) framework that integrates logical reasoning to enable imagination with logical consistency. DMWM is composed of two components: an RSSM-based System 1 (RSSM-S1) component that handles state transitions in an intuitive manner and a logic-integrated neural network-based System 2 (LINN-S2) component that guides the imagination process through hierarchical deep logical reasoning. The inter-system feedback mechanism is designed to ensure that the imagination process follows the logical rules of the real environment. The proposed framework is evaluated on benchmark tasks that require long-term planning from the DMControl suite. Extensive experimental results demonstrate that the proposed framework yields significant improvements in terms of logical coherence, trial efficiency, data efficiency and long-term imagination over the state-of-the-art world models. 
+
+**Abstract (ZH)**: 世界模型中的想象对于使智能体以样本高效的方式学习长期策略至关重要。受人类认知双重过程理论的启发，我们提出了一种新颖的双重思维世界模型(DMWM)框架，通过整合逻辑推理来实现逻辑一致性的想象。DMWM由两个部分组成：基于RSSM的直观处理状态转换的System 1（RSSM-S1）组件和通过分层深度逻辑推理引导想象过程的逻辑整合神经网络的System 2（LINN-S2）组件。系统间的反馈机制旨在确保想象过程遵循真实环境的逻辑规则。该框架在DMControl套件的任务中进行了评估，实验证明，与最先进的世界模型相比，该框架在逻辑连贯性、试次效率、数据效率和长期想象方面均取得了显著改进。 
+
+---
+# Automated Capability Discovery via Model Self-Exploration 
+
+**Title (ZH)**: 基于模型自我探索的自动化能力发现 
+
+**Authors**: Cong Lu, Shengran Hu, Jeff Clune  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.07577)  
+
+**Abstract**: Foundation models have become general-purpose assistants, exhibiting diverse capabilities across numerous domains through training on web-scale data. It remains challenging to precisely characterize even a fraction of the full spectrum of capabilities and potential risks in any new model. Existing evaluation approaches often require significant human effort, and it is taking increasing effort to design ever harder challenges for more capable models. We introduce Automated Capability Discovery (ACD), a framework that designates one foundation model as a scientist to systematically propose open-ended tasks probing the abilities of a subject model (potentially itself). By combining frontier models with ideas from the field of open-endedness, ACD automatically and systematically uncovers both surprising capabilities and failures in the subject model. We demonstrate ACD across a range of foundation models (including the GPT, Claude, and Llama series), showing that it automatically reveals thousands of capabilities that would be challenging for any single team to uncover. We further validate our method's automated scoring with extensive human surveys, observing high agreement between model-generated and human evaluations. By leveraging foundation models' ability to both create tasks and self-evaluate, ACD is a significant step toward scalable, automated evaluation of novel AI systems. All code and evaluation logs are open-sourced at this https URL. 
+
+**Abstract (ZH)**: Automated Capability Discovery for Systematic Evaluation of Foundation Models 
+
+---
+# Scaling Off-Policy Reinforcement Learning with Batch and Weight Normalization 
+
+**Title (ZH)**: 批量和权重规范化在增强学习中的离策规拟策略强化学习放大 
+
+**Authors**: Daniel Palenicek, Florian Vogt, Jan Peters  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.07523)  
+
+**Abstract**: Reinforcement learning has achieved significant milestones, but sample efficiency remains a bottleneck for real-world applications. Recently, CrossQ has demonstrated state-of-the-art sample efficiency with a low update-to-data (UTD) ratio of 1. In this work, we explore CrossQ's scaling behavior with higher UTD ratios. We identify challenges in the training dynamics, which are emphasized by higher UTD ratios. To address these, we integrate weight normalization into the CrossQ framework, a solution that stabilizes training, has been shown to prevent potential loss of plasticity and keeps the effective learning rate constant. Our proposed approach reliably scales with increasing UTD ratios, achieving competitive performance across 25 challenging continuous control tasks on the DeepMind Control Suite and Myosuite benchmarks, notably the complex dog and humanoid environments. This work eliminates the need for drastic interventions, such as network resets, and offers a simple yet robust pathway for improving sample efficiency and scalability in model-free reinforcement learning. 
+
+**Abstract (ZH)**: 强化学习已经取得了显著进展，但样本效率仍是现实应用中的瓶颈。最近，CrossQ展示了在低更新到数据比（UTD比）为1的情况下实现最佳样本效率。在本工作中，我们探索了CrossQ在更高UTD比情况下的扩展行为。我们揭示了在更高UTD比下训练动力学中的挑战，并通过将权重规范化整合到CrossQ框架中解决了这些问题，该方法稳定了训练过程，防止了潜在的塑性丧失，并保持了有效的学习率恒定。我们提出的方法能够可靠地在增加的UTD比下扩展，在DeepMind Control Suite和Myosuite基准上的25个复杂的连续控制任务中实现了竞争力的性能，特别是在复杂的狗和类人环境。这项工作消除了需要 drastic 干预（如网络重置）的需求，并提供了一条简单且稳健的途径来提高模型自由强化学习中的样本效率和可扩展性。 
+
+---
+# Exploratory Diffusion Policy for Unsupervised Reinforcement Learning 
+
+**Title (ZH)**: 探索性扩散策略在无监督强化学习中的应用 
+
+**Authors**: Chengyang Ying, Huayu Chen, Xinning Zhou, Zhongkai Hao, Hang Su, Jun Zhu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.07279)  
+
+**Abstract**: Unsupervised reinforcement learning (RL) aims to pre-train agents by exploring states or skills in reward-free environments, facilitating the adaptation to downstream tasks. However, existing methods often overlook the fitting ability of pre-trained policies and struggle to handle the heterogeneous pre-training data, which are crucial for achieving efficient exploration and fast fine-tuning. To address this gap, we propose Exploratory Diffusion Policy (EDP), which leverages the strong expressive ability of diffusion models to fit the explored data, both boosting exploration and obtaining an efficient initialization for downstream tasks. Specifically, we estimate the distribution of collected data in the replay buffer with the diffusion policy and propose a score intrinsic reward, encouraging the agent to explore unseen states. For fine-tuning the pre-trained diffusion policy on downstream tasks, we provide both theoretical analyses and practical algorithms, including an alternating method of Q function optimization and diffusion policy distillation. Extensive experiments demonstrate the effectiveness of EDP in efficient exploration during pre-training and fast adaptation during fine-tuning. 
+
+**Abstract (ZH)**: 无监督强化学习（RL）旨在通过探索奖励免费环境中的状态或技能来预训练代理，促进下游任务的适应。然而，现有方法往往忽视了预训练策略的拟合能力，并难以处理异构预训练数据，这对于实现高效探索和快速微调至关重要。为解决这一问题，我们提出了一种探索扩散策略（Exploratory Diffusion Policy，EDP），利用扩散模型的强大表达能力来拟合探索数据，从而提高探索效率并为下游任务提供高效的初始化。具体而言，我们使用扩散策略估计回放缓冲区中收集数据的分布，并提出了一种分数内在奖励，鼓励代理探索未见过的状态。在对预训练的扩散策略进行下游任务微调时，我们提供了理论分析和实用算法，包括Q函数优化和扩散策略蒸馏交替方法。广泛的实验表明，EDP在预训练期间实现高效的探索和在微调期间实现快速适应方面的有效性。 
+
+---
+# Who is Helping Whom? Analyzing Inter-dependencies to Evaluate Cooperation in Human-AI Teaming 
+
+**Title (ZH)**: 谁在帮助谁？分析相互依赖性以评估人机团队合作效果 
+
+**Authors**: Upasana Biswas, Siddhant Bhambri, Subbarao Kambhampati  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.06976)  
+
+**Abstract**: The long-standing research challenges of Human-AI Teaming(HAT) and Zero-shot Cooperation(ZSC) have been tackled by applying multi-agent reinforcement learning(MARL) to train an agent by optimizing the environment reward function and evaluating their performance through task performance metrics such as task reward. However, such evaluation focuses only on task completion, while being agnostic to `how' the two agents work with each other. Specifically, we are interested in understanding the cooperation arising within the team when trained agents are paired with humans. To formally address this problem, we propose the concept of interdependence to measure how much agents rely on each other's actions to achieve the shared goal, as a key metric for evaluating cooperation in human-agent teams. Towards this, we ground this concept through a symbolic formalism and define evaluation metrics that allow us to assess the degree of reliance between the agents' actions. We pair state-of-the-art agents trained through MARL for HAT, with learned human models for the the popular Overcooked domain, and evaluate the team performance for these human-agent teams. Our results demonstrate that trained agents are not able to induce cooperative behavior, reporting very low levels of interdependence across all the teams. We also report that teaming performance of a team is not necessarily correlated with the task reward. 
+
+**Abstract (ZH)**: 长期存在的-human与人工智能协同(Human-AI Teaming, HAT)和零样本合作(Zero-shot Cooperation, ZSC)研究挑战通过应用多智能体强化学习(Multi-agent Reinforcement Learning, MARL)来解决，通过优化环境奖励函数训练智能体，并通过任务完成度等任务性能指标来评估其性能。然而，这种评估仅关注任务完成情况，而不考虑“如何”两个智能体协同工作。具体来说，我们关注的是当训练好的智能体与人类配对时，在团队内部产生的合作方式。为正式解决这一问题，我们提出依赖性的概念，用以衡量智能体之间依赖对方行为的程度作为评估人机团队合作的关键指标。为此，我们通过符号形式主义来定义评估指标，以评估智能体行为之间的依赖程度。我们使用通过MARL训练的人机团队最先进的智能体，并与学习得到的人类模型配对，评估这些人机团队的表现。研究结果表明，训练好的智能体无法诱导合作行为，所有团队的依赖性水平都非常低。我们还发现，人机团队的表现与其任务奖励之间并不一定相关。 
+
+---
+# A Survey on Explainable Deep Reinforcement Learning 
+
+**Title (ZH)**: 可解释的深度强化学习综述 
+
+**Authors**: Zelei Cheng, Jiahao Yu, Xinyu Xing  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.06869)  
+
+**Abstract**: Deep Reinforcement Learning (DRL) has achieved remarkable success in sequential decision-making tasks across diverse domains, yet its reliance on black-box neural architectures hinders interpretability, trust, and deployment in high-stakes applications. Explainable Deep Reinforcement Learning (XRL) addresses these challenges by enhancing transparency through feature-level, state-level, dataset-level, and model-level explanation techniques. This survey provides a comprehensive review of XRL methods, evaluates their qualitative and quantitative assessment frameworks, and explores their role in policy refinement, adversarial robustness, and security. Additionally, we examine the integration of reinforcement learning with Large Language Models (LLMs), particularly through Reinforcement Learning from Human Feedback (RLHF), which optimizes AI alignment with human preferences. We conclude by highlighting open research challenges and future directions to advance the development of interpretable, reliable, and accountable DRL systems. 
+
+**Abstract (ZH)**: 深度可解释强化学习（XRL）在跨不同领域的序列决策任务中取得了显著成功，但其依赖于黑箱神经架构限制了其在高 stakes 应用中的透明度、可信度和部署。深度可解释强化学习（XRL）通过特征层面、状态层面、数据集层面和模型层面的解释技术增强透明度，解决了这些挑战。本文综述了 XRL 方法，评估了其定性和定量评估框架，并探讨了其在策略优化、对抗鲁棒性和安全领域的作用。此外，我们还探讨了强化学习与大规模语言模型（LLMs）的集成，特别是通过基于人类反馈的强化学习（RLHF）优化 AI 与人类偏好的对齐。最后，我们指出了开放的研究挑战和未来方向，以促进可解释、可靠和负责任的强化学习系统的开发。 
+
+---
+# Vision-Integrated LLMs for Autonomous Driving Assistance : Human Performance Comparison and Trust Evaluation 
+
+**Title (ZH)**: 面向自动驾驶辅助的视觉融合大型语言模型：人类性能比较与信任评估 
+
+**Authors**: Namhee Kim, Woojin Park  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.06843)  
+
+**Abstract**: Traditional autonomous driving systems often struggle with reasoning in complex, unexpected scenarios due to limited comprehension of spatial relationships. In response, this study introduces a Large Language Model (LLM)-based Autonomous Driving (AD) assistance system that integrates a vision adapter and an LLM reasoning module to enhance visual understanding and decision-making. The vision adapter, combining YOLOv4 and Vision Transformer (ViT), extracts comprehensive visual features, while GPT-4 enables human-like spatial reasoning and response generation. Experimental evaluations with 45 experienced drivers revealed that the system closely mirrors human performance in describing situations and moderately aligns with human decisions in generating appropriate responses. 
+
+**Abstract (ZH)**: 基于大型语言模型的视觉适配器和语义推理模块的自动驾驶辅助系统 
+
+---
+# Emergence of Self-Awareness in Artificial Systems: A Minimalist Three-Layer Approach to Artificial Consciousness 
+
+**Title (ZH)**: 人工系统中自我意识的涌现：人工意识的 minimalist 三层方法 
+
+**Authors**: Kurando Iida  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.06810)  
+
+**Abstract**: This paper proposes a minimalist three-layer model for artificial consciousness, focusing on the emergence of self-awareness. The model comprises a Cognitive Integration Layer, a Pattern Prediction Layer, and an Instinctive Response Layer, interacting with Access-Oriented and Pattern-Integrated Memory systems. Unlike brain-replication approaches, we aim to achieve minimal self-awareness through essential elements only. Self-awareness emerges from layer interactions and dynamic self-modeling, without initial explicit self-programming. We detail each component's structure, function, and implementation strategies, addressing technical feasibility. This research offers new perspectives on consciousness emergence in artificial systems, with potential implications for human consciousness understanding and adaptable AI development. We conclude by discussing ethical considerations and future research directions. 
+
+**Abstract (ZH)**: 一种 minimalist 三层人工意识模型：聚焦自我意识的涌现 
+
+---
