@@ -4,6 +4,7 @@
 
 | Date | Link | Number of Papers |
 |:----:|:----:|:----------------:|
+| 13-Feb-2025 | [Link](https://github.com/KJaebye/EmbodiedAI-Robotics-arXiv-Daily-Reporter/tree/main/13-Feb-2025) | 150 |
 | 12-Feb-2025 | [Link](https://github.com/KJaebye/EmbodiedAI-Robotics-arXiv-Daily-Reporter/tree/main/12-Feb-2025) | 229 |
 | 11-Feb-2025 | [Link](https://github.com/KJaebye/EmbodiedAI-Robotics-arXiv-Daily-Reporter/tree/main/11-Feb-2025) | 312 |
 

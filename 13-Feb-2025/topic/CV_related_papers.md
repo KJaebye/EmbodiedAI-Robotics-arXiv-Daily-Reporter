@@ -1,0 +1,120 @@
+# TranSplat: Surface Embedding-guided 3D Gaussian Splatting for Transparent Object Manipulation 
+
+**Title (ZH)**: TranSplat: 表面嵌入引导的3D高斯点云表示及其在透明物体操作中的应用 
+
+**Authors**: Jeongyun Kim, Jeongho Noh, Dong-Guw Lee, Ayoung Kim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.07840)  
+
+**Abstract**: Transparent object manipulation remains a sig- nificant challenge in robotics due to the difficulty of acquiring accurate and dense depth measurements. Conventional depth sensors often fail with transparent objects, resulting in in- complete or erroneous depth data. Existing depth completion methods struggle with interframe consistency and incorrectly model transparent objects as Lambertian surfaces, leading to poor depth reconstruction. To address these challenges, we propose TranSplat, a surface embedding-guided 3D Gaussian Splatting method tailored for transparent objects. TranSplat uses a latent diffusion model to generate surface embeddings that provide consistent and continuous representations, making it robust to changes in viewpoint and lighting. By integrating these surface embeddings with input RGB images, TranSplat effectively captures the complexities of transparent surfaces, enhancing the splatting of 3D Gaussians and improving depth completion. Evaluations on synthetic and real-world transpar- ent object benchmarks, as well as robot grasping tasks, show that TranSplat achieves accurate and dense depth completion, demonstrating its effectiveness in practical applications. We open-source synthetic dataset and model: https://github. com/jeongyun0609/TranSplat 
+
+**Abstract (ZH)**: 透明物体 manipulation 由于难以获得准确且密集的深度测量而仍然是机器人领域的一个重大挑战。传统深度传感器在处理透明物体时经常失败，导致不完整或错误的深度数据。现有深度完成方法在帧间一致性和错误地将透明物体建模为朗伯表面方面存在困难，导致深度重建效果不佳。为了解决这些问题，我们提出了 TranSplat，一种面向透明物体的表面嵌入引导的 3D 高斯点云集方法。TranSplat 使用潜扩散模型生成表面嵌入，提供一致且连续的表示，使其能够应对视角和照明变化。通过将这些表面嵌入与输入 RGB 图像集成，TranSplat 有效地捕捉透明表面的复杂性，改进了 3D 高斯的云集并提高了深度完成效果。在合成和真实世界透明物体基准测试以及机器人抓取任务上的评估表明，TranSplat 能够实现准确且密集的深度完成，展示了其在实际应用中的有效性。我们开源了合成数据集和模型：https://github.com/jeongyun0609/TranSplat。 
+
+---
+# Intrinsic Bias is Predicted by Pretraining Data and Correlates with Downstream Performance in Vision-Language Encoders 
+
+**Title (ZH)**: 固有偏差由预训练数据决定，并与视觉-语言编码器的下游性能相关。 
+
+**Authors**: Kshitish Ghate, Isaac Slaughter, Kyra Wilson, Mona Diab, Aylin Caliskan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.07957)  
+
+**Abstract**: While recent work has found that vision-language models trained under the Contrastive Language Image Pre-training (CLIP) framework contain intrinsic social biases, the extent to which different upstream pre-training features of the framework relate to these biases, and hence how intrinsic bias and downstream performance are connected has been unclear. In this work, we present the largest comprehensive analysis to-date of how the upstream pre-training factors and downstream performance of CLIP models relate to their intrinsic biases. Studying 131 unique CLIP models, trained on 26 datasets, using 55 architectures, and in a variety of sizes, we evaluate bias in each model using 26 well-established unimodal and cross-modal principled Embedding Association Tests. We find that the choice of pre-training dataset is the most significant upstream predictor of bias, whereas architectural variations have minimal impact. Additionally, datasets curated using sophisticated filtering techniques aimed at enhancing downstream model performance tend to be associated with higher levels of intrinsic bias. Finally, we observe that intrinsic bias is often significantly correlated with downstream performance ($0.3 \leq r \leq 0.8$), suggesting that models optimized for performance inadvertently learn to amplify representational biases. Comparisons between unimodal and cross-modal association tests reveal that social group bias depends heavily on the modality. Our findings imply that more sophisticated strategies are needed to address intrinsic model bias for vision-language models across the entire model development pipeline. 
+
+**Abstract (ZH)**: 尽管近期研究发现基于对比语言图像预训练（CLIP）框架训练的视觉-语言模型包含固有的社会偏见，但不同上游预训练特征与这些偏见之间的关系，以及固有偏见与下游性能之间的联系尚不明确。在这项工作中，我们进行了迄今为止最全面的分析，探讨CLIP模型的上游预训练因素与下游性能与其固有偏见之间的关系。我们评估了131个独特的CLIP模型，这些模型在26个数据集上训练，使用55种架构，具有多种规模，采用26种成熟的单模态和跨模态原则性的嵌入关联测试来评估每个模型中的偏见。研究发现，预训练数据集的选择是最重要的上游偏见预测因素，而架构变化的影响微乎其微。此外，使用高级筛选技术精心选择的数据集，旨在提高下游模型性能，通常与更高的固有偏见水平相关。最后，我们观察到固有偏见与下游性能之间通常存在显著相关性（0.3 ≤ r ≤ 0.8），表明优化性能的模型无意中学会了放大表示偏见。单模态和跨模态关联测试之间的比较表明，社会群体偏见对模态的依赖性很强。我们的发现表明，需要更复杂的策略来解决整个模型开发管道中视觉-语言模型的固有偏见问题。 
+
+---
+# Uncertainty Aware Human-machine Collaboration in Camouflaged Object Detection 
+
+**Title (ZH)**: 面向伪装目标检测的不确定性感知人机协作 
+
+**Authors**: Ziyue Yang, Kehan Wang, Yuhang Ming, Yong Peng, Han Yang, Qiong Chen, Wanzeng Kong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.08373)  
+
+**Abstract**: Camouflaged Object Detection (COD), the task of identifying objects concealed within their environments, has seen rapid growth due to its wide range of practical applications. A key step toward developing trustworthy COD systems is the estimation and effective utilization of uncertainty. In this work, we propose a human-machine collaboration framework for classifying the presence of camouflaged objects, leveraging the complementary strengths of computer vision (CV) models and noninvasive brain-computer interfaces (BCIs). Our approach introduces a multiview backbone to estimate uncertainty in CV model predictions, utilizes this uncertainty during training to improve efficiency, and defers low-confidence cases to human evaluation via RSVP-based BCIs during testing for more reliable decision-making. We evaluated the framework in the CAMO dataset, achieving state-of-the-art results with an average improvement of 4.56\% in balanced accuracy (BA) and 3.66\% in the F1 score compared to existing methods. For the best-performing participants, the improvements reached 7.6\% in BA and 6.66\% in the F1 score. Analysis of the training process revealed a strong correlation between our confidence measures and precision, while an ablation study confirmed the effectiveness of the proposed training policy and the human-machine collaboration strategy. In general, this work reduces human cognitive load, improves system reliability, and provides a strong foundation for advancements in real-world COD applications and human-computer interaction. Our code and data are available at: this https URL. 
+
+**Abstract (ZH)**: 伪装目标检测中的可信人类-机器协作框架：利用计算机视觉模型和无侵入式脑-计算机接口的优势 
+
+---
+# CRISP: A Framework for Cryo-EM Image Segmentation and Processing with Conditional Random Field 
+
+**Title (ZH)**: CRISP: 一种基于条件随机场的冷冻电镜图像分割与处理框架 
+
+**Authors**: Szu-Chi Chung, Po-Cheng Chou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.08287)  
+
+**Abstract**: Differentiating signals from the background in micrographs is a critical initial step for cryogenic electron microscopy (cryo-EM), yet it remains laborious due to low signal-to-noise ratio (SNR), the presence of contaminants and densely packed particles of varying sizes. Although image segmentation has recently been introduced to distinguish particles at the pixel level, the low SNR complicates the automated generation of accurate annotations for training supervised models. Moreover, platforms for systematically comparing different design choices in pipeline construction are lacking. Thus, a modular framework is essential to understand the advantages and limitations of this approach and drive further development. To address these challenges, we present a pipeline that automatically generates high-quality segmentation maps from cryo-EM data to serve as ground truth labels. Our modular framework enables the selection of various segmentation models and loss functions. We also integrate Conditional Random Fields (CRFs) with different solvers and feature sets to refine coarse predictions, thereby producing fine-grained segmentation. This flexibility facilitates optimal configurations tailored to cryo-EM datasets. When trained on a limited set of micrographs, our approach achieves over 90% accuracy, recall, precision, Intersection over Union (IoU), and F1-score on synthetic data. Furthermore, to demonstrate our framework's efficacy in downstream analyses, we show that the particles extracted by our pipeline produce 3D density maps with higher resolution than those generated by existing particle pickers on real experimental datasets, while achieving performance comparable to that of manually curated datasets from experts. 
+
+**Abstract (ZH)**: 从冷冻电子显微镜微图中区分信号与背景是cryo-EM的关键初始步骤，但由于信噪比低、存在污染物以及尺寸各异的密集颗粒，这一过程仍然耗时费力。尽管最近已经引入了像素级的图像分割来区分颗粒，但低信噪比使得自动生成准确的标注用于训练监督模型变得复杂。此外，缺乏系统比较不同流水线构建设计选择的平台。因此，一个模块化的框架是必不可少的，以理解该方法的优势和限制，并推动进一步的发展。为应对这些挑战，我们提出了一种流水线，可以从cryo-EM数据自动生成高质量的分割图，作为 ground truth 标签。我们的模块化框架允许选择各种分割模型和损失函数。我们还结合使用不同的求解器和特征集的条件随机场(CRFs)对粗略预测进行细化，从而生成精细分割。这种灵活性使得可以根据cryo-EM数据集进行最佳配置。当仅在少量微图上进行训练时，我们的方法在合成数据上实现了超过90%的准确率、召回率、精确率、交并比(IoU)和F1分数。此外，为了展示我们框架在下游分析中的有效性，我们展示了由我们的流水线提取的颗粒可以产生比现有颗粒挑选工具在真实实验数据集上生成的3D密度图更高的分辨率，同时性能可与专家人工策划的数据集相媲美。 
+
+---
+# TRISHUL: Towards Region Identification and Screen Hierarchy Understanding for Large VLM based GUI Agents 
+
+**Title (ZH)**: TRISHUL：面向大型VLM基GUI代理的区域识别与屏幕层级理解 
+
+**Authors**: Kunal Singh, Shreyas Singh, Mukund Khanna  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.08226)  
+
+**Abstract**: Recent advancements in Large Vision Language Models (LVLMs) have enabled the development of LVLM-based Graphical User Interface (GUI) agents under various paradigms. Training-based approaches, such as CogAgent and SeeClick, struggle with cross-dataset and cross-platform generalization due to their reliance on dataset-specific training. Generalist LVLMs, such as GPT-4V, employ Set-of-Marks (SoM) for action grounding, but obtaining SoM labels requires metadata like HTML source, which is not consistently available across platforms. Moreover, existing methods often specialize in singular GUI tasks rather than achieving comprehensive GUI understanding. To address these limitations, we introduce TRISHUL, a novel, training-free agentic framework that enhances generalist LVLMs for holistic GUI comprehension. Unlike prior works that focus on either action grounding (mapping instructions to GUI elements) or GUI referring (describing GUI elements given a location), TRISHUL seamlessly integrates both. At its core, TRISHUL employs Hierarchical Screen Parsing (HSP) and the Spatially Enhanced Element Description (SEED) module, which work synergistically to provide multi-granular, spatially, and semantically enriched representations of GUI elements. Our results demonstrate TRISHUL's superior performance in action grounding across the ScreenSpot, VisualWebBench, AITW, and Mind2Web datasets. Additionally, for GUI referring, TRISHUL surpasses the ToL agent on the ScreenPR benchmark, setting a new standard for robust and adaptable GUI comprehension. 
+
+**Abstract (ZH)**: Recent advancements in Large Vision Language Models (LVLMs) have enabled the development of LVLM-based Graphical User Interface (GUI) agents under various paradigms. Training-based approaches, such as CogAgent and SeeClick, struggle with cross-dataset and cross-platform generalization due to their reliance on dataset-specific training. Generalist LVLMs, such as GPT-4V, employ Set-of-Marks (SoM) for action grounding, but obtaining SoM labels requires metadata like HTML source, which is not consistently available across platforms. Moreover, existing methods often specialize in singular GUI tasks rather than achieving comprehensive GUI understanding. To address these limitations, we introduce TRISHUL, a novel, training-free agentic framework that enhances generalist LVLMs for holistic GUI comprehension. Unlike prior works that focus on either action grounding (mapping instructions to GUI elements) or GUI referring (describing GUI elements given a location), TRISHUL seamlessly integrates both. At its core, TRISHUL employs Hierarchical Screen Parsing (HSP) and the Spatially Enhanced Element Description (SEED) module, which work synergistically to provide multi-granular, spatially, and semantically enriched representations of GUI elements. Our results demonstrate TRISHUL's superior performance in action grounding across the ScreenSpot, VisualWebBench, AITW, and Mind2Web datasets. Additionally, for GUI referring, TRISHUL surpasses the ToL agent on the ScreenPR benchmark, setting a new standard for robust and adaptable GUI comprehension.
+
+Title:
+TRISHUL: A Training-Free Framework for Holistic GUI Comprehension Integrating Action Grounding and GUI Referring 
+
+---
+# Generalized Class Discovery in Instance Segmentation 
+
+**Title (ZH)**: 泛化类发现实例分割 
+
+**Authors**: Cuong Manh Hoang, Yeejin Lee, Byeongkeun Kang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.08149)  
+
+**Abstract**: This work addresses the task of generalized class discovery (GCD) in instance segmentation. The goal is to discover novel classes and obtain a model capable of segmenting instances of both known and novel categories, given labeled and unlabeled data. Since the real world contains numerous objects with long-tailed distributions, the instance distribution for each class is inherently imbalanced. To address the imbalanced distributions, we propose an instance-wise temperature assignment (ITA) method for contrastive learning and class-wise reliability criteria for pseudo-labels. The ITA method relaxes instance discrimination for samples belonging to head classes to enhance GCD. The reliability criteria are to avoid excluding most pseudo-labels for tail classes when training an instance segmentation network using pseudo-labels from GCD. Additionally, we propose dynamically adjusting the criteria to leverage diverse samples in the early stages while relying only on reliable pseudo-labels in the later stages. We also introduce an efficient soft attention module to encode object-specific representations for GCD. Finally, we evaluate our proposed method by conducting experiments on two settings: COCO$_{half}$ + LVIS and LVIS + Visual Genome. The experimental results demonstrate that the proposed method outperforms previous state-of-the-art methods. 
+
+**Abstract (ZH)**: 通用类别发现在实例分割中的任务研究：面向长尾分布的实例分割网络预训练方法 
+
+---
+# Vision-Language Models for Edge Networks: A Comprehensive Survey 
+
+**Title (ZH)**: 边缘网络中的视觉-语言模型：一项综合综述 
+
+**Authors**: Ahmed Sharshar, Latif U. Khan, Waseem Ullah, Mohsen Guizani  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.07855)  
+
+**Abstract**: Vision Large Language Models (VLMs) combine visual understanding with natural language processing, enabling tasks like image captioning, visual question answering, and video analysis. While VLMs show impressive capabilities across domains such as autonomous vehicles, smart surveillance, and healthcare, their deployment on resource-constrained edge devices remains challenging due to processing power, memory, and energy limitations. This survey explores recent advancements in optimizing VLMs for edge environments, focusing on model compression techniques, including pruning, quantization, knowledge distillation, and specialized hardware solutions that enhance efficiency. We provide a detailed discussion of efficient training and fine-tuning methods, edge deployment challenges, and privacy considerations. Additionally, we discuss the diverse applications of lightweight VLMs across healthcare, environmental monitoring, and autonomous systems, illustrating their growing impact. By highlighting key design strategies, current challenges, and offering recommendations for future directions, this survey aims to inspire further research into the practical deployment of VLMs, ultimately making advanced AI accessible in resource-limited settings. 
+
+**Abstract (ZH)**: 视觉大语言模型（VLMs）结合了视觉理解和自然语言处理，能够实现图像字幕、视觉问答和视频分析等任务。尽管VLMs在自主车辆、智能监控和医疗健康等领域展示了令人印象深刻的能力，但由于资源受限边缘设备在计算能力、内存和能耗方面的限制，其部署仍然具有挑战性。本文综述了针对边缘环境优化VLMs的最新进展，重点讨论了模型压缩技术，包括剪枝、量化、知识蒸馏和专用硬件解决方案，以提高效率。本文详细讨论了高效训练和微调方法、边缘部署挑战和隐私问题，并讨论了轻量级VLMs在医疗保健、环境监测和自主系统中的多元应用，展示了它们日益增长的影响。通过强调关键设计策略、当前挑战并提出未来方向的建议，本文旨在激发进一步研究，最终使先进的AI技术在资源受限的环境中得以实用化。 
+
+---
+# PDM-SSD: Single-Stage Three-Dimensional Object Detector With Point Dilation 
+
+**Title (ZH)**: PDM-SSD：基于点扩张的单阶段三维物体检测器 
+
+**Authors**: Ao Liang, Haiyang Hua, Jian Fang, Wenyu Chen, Huaici Zhao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.07822)  
+
+**Abstract**: Current Point-based detectors can only learn from the provided points, with limited receptive fields and insufficient global learning capabilities for such targets. In this paper, we present a novel Point Dilation Mechanism for single-stage 3D detection (PDM-SSD) that takes advantage of these two representations. Specifically, we first use a PointNet-style 3D backbone for efficient feature encoding. Then, a neck with Point Dilation Mechanism (PDM) is used to expand the feature space, which involves two key steps: point dilation and feature filling. The former expands points to a certain size grid centered around the sampled points in Euclidean space. The latter fills the unoccupied grid with feature for backpropagation using spherical harmonic coefficients and Gaussian density function in terms of direction and scale. Next, we associate multiple dilation centers and fuse coefficients to obtain sparse grid features through height compression. Finally, we design a hybrid detection head for joint learning, where on one hand, the scene heatmap is predicted to complement the voting point set for improved detection accuracy, and on the other hand, the target probability of detected boxes are calibrated through feature fusion. On the challenging Karlsruhe Institute of Technology and Toyota Technological Institute (KITTI) dataset, PDM-SSD achieves state-of-the-art results for multi-class detection among single-modal methods with an inference speed of 68 frames. We also demonstrate the advantages of PDM-SSD in detecting sparse and incomplete objects through numerous object-level instances. Additionally, PDM can serve as an auxiliary network to establish a connection between sampling points and object centers, thereby improving the accuracy of the model without sacrificing inference speed. Our code will be available at this https URL. 
+
+**Abstract (ZH)**: 基于点的检测器只能从提供的点中学习，具有有限的感受野和不足的全局学习能力。本文提出了一种新型的点膨胀机制单阶段3D检测方法（PDM-SSD），充分利用了这两种表示。具体地，我们首先使用PointNet风格的3D骨干网络进行高效的特征编码。然后，采用包含点膨胀机制（PDM）的主干网络来扩展特征空间，这涉及两个关键步骤：点膨胀和特征填充。前者将采样点为中心的欧几里得空间中的点扩展到一定大小的网格。后者使用球谐系数和高斯密度函数按方向和尺度填充未占的网格，以便于反向传播。接着，我们通过高度压缩将多个膨胀中心关联起来并融合系数，以获得稀疏网格特征。最后，我们设计了一个混合检测头进行联合学习，一方面，预测场景热图以补充投票点集，提高检测准确性；另一方面，通过特征融合校准检测框的目标概率。在具有挑战性的Karlsruhe Institute of Technology和Toyota Technological Institute（KITTI）数据集上，PDM-SSD 在单模态方法中实现了多类检测的最先进结果，推理速度为68帧。我们还通过大量实例展示了PDM-SSD 在检测稀疏和不完整对象方面的优势。此外，PDM 可以作为辅助网络，建立采样点与对象中心之间的联系，从而在不牺牲推理速度的情况下提高模型的准确性。我们的代码将在此网址提供： this https URL。 
+
+---
+# Amnesia as a Catalyst for Enhancing Black Box Pixel Attacks in Image Classification and Object Detection 
+
+**Title (ZH)**: 记忆丧失作为增强图像分类和对象检测的黑盒像素攻击催化剂 
+
+**Authors**: Dongsu Song, Daehwa Ko, Jay Hoon Jung  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.07821)  
+
+**Abstract**: It is well known that query-based attacks tend to have relatively higher success rates in adversarial black-box attacks. While research on black-box attacks is actively being conducted, relatively few studies have focused on pixel attacks that target only a limited number of pixels. In image classification, query-based pixel attacks often rely on patches, which heavily depend on randomness and neglect the fact that scattered pixels are more suitable for adversarial attacks. Moreover, to the best of our knowledge, query-based pixel attacks have not been explored in the field of object detection. To address these issues, we propose a novel pixel-based black-box attack called Remember and Forget Pixel Attack using Reinforcement Learning(RFPAR), consisting of two main components: the Remember and Forget processes. RFPAR mitigates randomness and avoids patch dependency by leveraging rewards generated through a one-step RL algorithm to perturb pixels. RFPAR effectively creates perturbed images that minimize the confidence scores while adhering to limited pixel constraints. Furthermore, we advance our proposed attack beyond image classification to object detection, where RFPAR reduces the confidence scores of detected objects to avoid detection. Experiments on the ImageNet-1K dataset for classification show that RFPAR outperformed state-of-the-art query-based pixel attacks. For object detection, using the MSCOCO dataset with YOLOv8 and DDQ, RFPAR demonstrates comparable mAP reduction to state-of-the-art query-based attack while requiring fewer query. Further experiments on the Argoverse dataset using YOLOv8 confirm that RFPAR effectively removed objects on a larger scale dataset. Our code is available at this https URL. 
+
+**Abstract (ZH)**: 基于查询的像素攻击在对抗性黑盒攻击中成功率较高已是常识。尽管黑盒攻击的研究正在积极进行，但仍相对较少关注仅针对少量像素的像素攻击。在图像分类中，基于查询的像素攻击往往依赖于补丁，而这严重依赖随机性并忽视了分散像素更适合对抗性攻击的事实。此外，据我们所知，基于查询的像素攻击在目标检测领域尚未被探索。为解决这些问题，我们提出了一种基于像素的新型黑盒攻击——基于强化学习的记忆与遗忘像素攻击（RFPAR），该攻击由记忆和遗忘过程两大部分组成。RFPAR通过利用一维RL算法生成的奖励来扰动像素，从而减轻了随机性并避免了补丁依赖。RFPAR有效地创建了能够最小化置信分数且符合像素约束的扰动图像。此外，我们将提出的攻击从图像分类推进到目标检测领域，在目标检测中，RFPAR降低了检测目标的置信分数以避免检测。在使用ImageNet-1K数据集进行的分类实验中，RFPAR的性能优于最先进的基于查询的像素攻击。在使用MSCOCO数据集和YOLOv8以及DDQ的检测实验中，RFPAR表现出与最先进的基于查询的攻击相当的mAP减少效果，同时所需的查询次数较少。在使用Argoverse数据集进行的进一步实验中，使用YOLOv8验证了RFPAR在更大规模数据集上有效移除对象的能力。关于我们代码的相关信息，请参阅此链接。 
+
+---
