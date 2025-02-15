@@ -1,0 +1,104 @@
+# Real-Time Fast Marching Tree for Mobile Robot Motion Planning in Dynamic Environments 
+
+**Title (ZH)**: 实时快速推进树在动态环境中的移动机器人路径规划 
+
+**Authors**: Jefferson Silveira, Kleber Cabral, Sidney Givigi, Joshua A. Marshall  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.09556)  
+
+**Abstract**: This paper proposes the Real-Time Fast Marching Tree (RT-FMT), a real-time planning algorithm that features local and global path generation, multiple-query planning, and dynamic obstacle avoidance. During the search, RT-FMT quickly looks for the global solution and, in the meantime, generates local paths that can be used by the robot to start execution faster. In addition, our algorithm constantly rewires the tree to keep branches from forming inside the dynamic obstacles and to maintain the tree root near the robot, which allows the tree to be reused multiple times for different goals. Our algorithm is based on the planners Fast Marching Tree (FMT*) and Real-time Rapidly-Exploring Random Tree (RT-RRT*). We show via simulations that RT-FMT outperforms RT- RRT* in both execution cost and arrival time, in most cases. Moreover, we also demonstrate via simulation that it is worthwhile taking the local path before the global path is available in order to reduce arrival time, even though there is a small possibility of taking an inferior path. 
+
+**Abstract (ZH)**: 实时代价快速推进树（RT-FMT）：一种结合局部和全局路径规划、多查询规划及动态避障的实时规划算法 
+
+---
+# Robot Pouring: Identifying Causes of Spillage and Selecting Alternative Action Parameters Using Probabilistic Actual Causation 
+
+**Title (ZH)**: 机器人倾倒：基于概率实际因果关系识别洒漏原因和选择替代动作参数 
+
+**Authors**: Jaime Maldonado, Jonas Krumme, Christoph Zetzsche, Vanessa Didelez, Kerstin Schill  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.09395)  
+
+**Abstract**: In everyday life, we perform tasks (e.g., cooking or cleaning) that involve a large variety of objects and goals. When confronted with an unexpected or unwanted outcome, we take corrective actions and try again until achieving the desired result. The reasoning performed to identify a cause of the observed outcome and to select an appropriate corrective action is a crucial aspect of human reasoning for successful task execution. Central to this reasoning is the assumption that a factor is responsible for producing the observed outcome. In this paper, we investigate the use of probabilistic actual causation to determine whether a factor is the cause of an observed undesired outcome. Furthermore, we show how the actual causation probabilities can be used to find alternative actions to change the outcome. We apply the probabilistic actual causation analysis to a robot pouring task. When spillage occurs, the analysis indicates whether a task parameter is the cause and how it should be changed to avoid spillage. The analysis requires a causal graph of the task and the corresponding conditional probability distributions. To fulfill these requirements, we perform a complete causal modeling procedure (i.e., task analysis, definition of variables, determination of the causal graph structure, and estimation of conditional probability distributions) using data from a realistic simulation of the robot pouring task, covering a large combinatorial space of task parameters. Based on the results, we discuss the implications of the variables' representation and how the alternative actions suggested by the actual causation analysis would compare to the alternative solutions proposed by a human observer. The practical use of the analysis of probabilistic actual causation to select alternative action parameters is demonstrated. 
+
+**Abstract (ZH)**: 日常生活中的任务执行涉及多种对象和目标，当遇到意外或不想看到的结果时，我们会采取纠正措施并再次尝试，直到达到预期结果。识别观察到的结果原因并选择适当的纠正措施是人类成功执行任务的重要推理方面。这项推理的核心假设是某个因素导致了观察到的结果。在本文中，我们研究了使用概率实际因果关系来确定某个因素是否是观察到的不良结果的原因。此外，我们展示了如何使用实际因果关系的概率来寻找改变结果的替代行动。我们将概率实际因果关系分析应用于机器人倒水任务。当出现溢出时，分析可以表明任务参数是否是原因及其如何改变以避免溢出。该分析需要任务的因果图及其相应的条件概率分布。为满足这些要求，我们使用机器人倒水任务的现实仿真数据，进行了完整的因果建模流程（即任务分析、变量定义、因果图结构确定和条件概率分布估计），覆盖了大量的任务参数组合空间。基于这些结果，我们讨论了变量表示的含义以及由实际因果关系分析建议的替代行动与人类观察者提出的替代解决方案的对比。展示了一种实际应用概率实际因果关系分析来选择替代行动参数的方法。 
+
+---
+# TRIFFID: Autonomous Robotic Aid For Increasing First Responders Efficiency 
+
+**Title (ZH)**: TRIFFID: 自主机器人辅助提高救援人员效率 
+
+**Authors**: Jorgen Cani, Panagiotis Koletsis, Konstantinos Foteinos, Ioannis Kefaloukos, Lampros Argyriou, Manolis Falelakis, Iván Del Pino, Angel Santamaria-Navarro, Martin Čech, Ondřej Severa, Alessandro Umbrico, Francesca Fracasso, AndreA Orlandini, Dimitrios Drakoulis, Evangelos Markakis, Georgios Th. Papadopoulos  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.09379)  
+
+**Abstract**: The increasing complexity of natural disaster incidents demands innovative technological solutions to support first responders in their efforts. This paper introduces the TRIFFID system, a comprehensive technical framework that integrates unmanned ground and aerial vehicles with advanced artificial intelligence functionalities to enhance disaster response capabilities across wildfires, urban floods, and post-earthquake search and rescue missions. By leveraging state-of-the-art autonomous navigation, semantic perception, and human-robot interaction technologies, TRIFFID provides a sophisticated system com- posed of the following key components: hybrid robotic platform, centralized ground station, custom communication infrastructure, and smartphone application. The defined research and development activities demonstrate how deep neural networks, knowledge graphs, and multimodal information fusion can enable robots to autonomously navigate and analyze disaster environ- ments, reducing personnel risks and accelerating response times. The proposed system enhances emergency response teams by providing advanced mission planning, safety monitoring, and adaptive task execution capabilities. Moreover, it ensures real- time situational awareness and operational support in complex and risky situations, facilitating rapid and precise information collection and coordinated actions. 
+
+**Abstract (ZH)**: 自然灾难事件日益复杂的趋势 demands 创新的技术解决方案以支持一线救援人员的努力。本文介绍了TRIFID系统，这是一个综合的技术框架，将无人驾驶地面和空中车辆与高级人工智能功能集成，以增强针对野火、城市洪水以及地震后的搜索与救援任务的灾后应急响应能力。通过利用最先进的自动驾驶导航、语义感知和人机交互技术，TRIFID提供了一个由以下关键组件组成的复杂系统：混合机器人平台、集中式地面站、定制通信基础设施以及智能手机应用。定义的研究与开发活动展示了深度神经网络、知识图谱和多模态信息融合如何使机器人能够自主导航和分析灾难环境，减少人员风险并加快响应时间。所提出的系统通过提供先进任务规划、安全监控和适应性任务执行能力来增强应急响应团队。此外，它确保在复杂和危险的情况下实时掌握情况并提供操作支持，从而实现快速和精确的信息收集以及协调行动。 
+
+---
+# Safety Evaluation of Human Arm Operations Using IMU Sensors with a Spring-Damper-Mass Predictive Model 
+
+**Title (ZH)**: 基于弹簧-阻尼-质量预测模型的惯性传感器在人体手臂操作安全性评估 
+
+**Authors**: Musab Zubair Inamdar, Seyed Amir Tafrishi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.09241)  
+
+**Abstract**: This paper presents a novel approach to real-time safety monitoring in human-robot collaborative manufacturing environments through a wrist-mounted Inertial Measurement Unit (IMU) system integrated with a Predictive Safety Model (PSM). The proposed system extends previous PSM implementations through the adaptation of a spring-damper-mass model specifically optimized for wrist motions, employing probabilistic safety assessment through impedance-based computations. We analyze our proposed impedance-based safety approach with frequency domain methods, establishing quantitative safety thresholds through comprehensive comparative analysis. Experimental validation across three manufacturing tasks - tool manipulation, visual inspection, and pick-and-place operations. Results show robust performance across diverse manufacturing scenarios while maintaining computational efficiency through optimized parameter selection. This work establishes a foundation for future developments in adaptive risk assessment in real-time for human-robot collaborative manufacturing environments. 
+
+**Abstract (ZH)**: 本文提出了一种通过集成预测安全性模型（PSM）的手腕佩戴式惯性测量单元（IMU）系统进行实时安全性监控的新型方法。该提出的系统通过适应一种专门针对手腕运动优化的弹簧阻尼质量模型，扩展了之前的PSM实现，并通过基于阻抗的计算进行概率安全性评估。我们使用频域方法分析了基于阻抗的安全性方法，并通过全面的比较分析建立了量化安全门槛。在三种制造任务（工具操作、视觉检查和取放操作）中进行了实验验证，结果显示该系统在多种制造场景下表现出稳健的性能，同时通过优化参数选择保持了计算效率。本工作为未来在人机协作制造环境中进行实时自适应风险评估奠定了基础。 
+
+---
+# SkyRover: A Modular Simulator for Cross-Domain Pathfinding 
+
+**Title (ZH)**: SkyRover：一种跨域路径规划模块化模拟器 
+
+**Authors**: Wenhui Ma, Wenhao Li, Bo Jin, Changhong Lu, Xiangfeng Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.08969)  
+
+**Abstract**: Unmanned Aerial Vehicles (UAVs) and Automated Guided Vehicles (AGVs) increasingly collaborate in logistics, surveillance, inspection tasks and etc. However, existing simulators often focus on a single domain, limiting cross-domain study. This paper presents the SkyRover, a modular simulator for UAV-AGV multi-agent pathfinding (MAPF). SkyRover supports realistic agent dynamics, configurable 3D environments, and convenient APIs for external solvers and learning methods. By unifying ground and aerial operations, it facilitates cross-domain algorithm design, testing, and benchmarking. Experiments highlight SkyRover's capacity for efficient pathfinding and high-fidelity simulations in UAV-AGV coordination. Project is available at this https URL. 
+
+**Abstract (ZH)**: 无人驾驶航空器（UAVs）和自动引导车（AGVs）越来越多地在物流、监控、检查等任务中协作。然而，现有的模拟器通常侧重于单个领域，限制了跨域研究。本文介绍了SkyRover，一个用于多智能体路径规划（MAPF）的模块化模拟器，支持真实的智能体动力学、可配置的3D环境以及外部求解器和学习方法的便捷接口。通过统一地面和空中操作，它促进了跨域算法的设计、测试和基准测试。实验突显了SkyRover在UAV-AGV协调中高效路径规划和高保真模拟的能力。项目可在以下链接获取：this https URL。 
+
+---
+# MuJoCo Playground 
+
+**Title (ZH)**: MuJoCo playground 
+
+**Authors**: Kevin Zakka, Baruch Tabanpour, Qiayuan Liao, Mustafa Haiderbhai, Samuel Holt, Jing Yuan Luo, Arthur Allshire, Erik Frey, Koushil Sreenath, Lueder A. Kahrs, Carmelo Sferrazza, Yuval Tassa, Pieter Abbeel  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.08844)  
+
+**Abstract**: We introduce MuJoCo Playground, a fully open-source framework for robot learning built with MJX, with the express goal of streamlining simulation, training, and sim-to-real transfer onto robots. With a simple "pip install playground", researchers can train policies in minutes on a single GPU. Playground supports diverse robotic platforms, including quadrupeds, humanoids, dexterous hands, and robotic arms, enabling zero-shot sim-to-real transfer from both state and pixel inputs. This is achieved through an integrated stack comprising a physics engine, batch renderer, and training environments. Along with video results, the entire framework is freely available at this http URL 
+
+**Abstract (ZH)**: MuJoCo Playground：一个基于MJX构建的完全开源的机器人学习框架，旨在简化模拟、训练和从模拟到实际机器人的转移过程 
+
+---
+# Acoustic Wave Manipulation Through Sparse Robotic Actuation 
+
+**Title (ZH)**: 通过稀疏机器人驱动实现声波操控 
+
+**Authors**: Tristan Shah, Noam Smilovich, Samer Gerges, Feruza Amirkulova, Stas Tiomkin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.08784)  
+
+**Abstract**: Recent advancements in robotics, control, and machine learning have facilitated progress in the challenging area of object manipulation. These advancements include, among others, the use of deep neural networks to represent dynamics that are partially observed by robot sensors, as well as effective control using sparse control signals. In this work, we explore a more general problem: the manipulation of acoustic waves, which are partially observed by a robot capable of influencing the waves through spatially sparse actuators. This problem holds great potential for the design of new artificial materials, ultrasonic cutting tools, energy harvesting, and other applications. We develop an efficient data-driven method for robot learning that is applicable to either focusing scattered acoustic energy in a designated region or suppressing it, depending on the desired task. The proposed method is better in terms of a solution quality and computational complexity as compared to a state-of-the-art learning based method for manipulation of dynamical systems governed by partial differential equations. Furthermore our proposed method is competitive with a classical semi-analytical method in acoustics research on the demonstrated tasks. We have made the project code publicly available, along with a web page featuring video demonstrations: this https URL. 
+
+**Abstract (ZH)**: 近期机器人、控制和机器学习领域的发展促进了物体 manipulation 领域的进展。这些进展包括使用深度神经网络来表示被机器人传感器部分观测的动力学，以及使用稀疏控制信号进行有效控制。在本文中，我们探讨了一个更一般的问题：通过能通过空间稀疏执行器影响声波的机器人来操控部分观测到的声波。这个问题在设计新型人工材料、超声切割工具、能量 harvesting 等应用方面具有巨大的潜力。我们开发了一种高效的基于数据的机器人学习方法，该方法可以根据所需任务的目标区域聚焦或抑制散射的声能。所提出的方法在解的质量和计算复杂性上优于用于由偏微分方程支配的动力系统操纵的最新学习方法。此外，在演示的任务上，我们的方法在声学研究中与经典的半解析方法具有竞争力。我们已公开发布了项目代码，并提供了一个包含视频演示的网页：这个 https URL。 
+
+---
+# A Deep Inverse-Mapping Model for a Flapping Robotic Wing 
+
+**Title (ZH)**: 一种用于拍打式机器人翅膀的深度逆映射模型 
+
+**Authors**: Hadar Sharvit, Raz Karl, Tsevi Beatus  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.09378)  
+
+**Abstract**: In systems control, the dynamics of a system are governed by modulating its inputs to achieve a desired outcome. For example, to control the thrust of a quad-copter propeller the controller modulates its rotation rate, relying on a straightforward mapping between the input rotation rate and the resulting thrust. This mapping can be inverted to determine the rotation rate needed to generate a desired thrust. However, in complex systems, such as flapping-wing robots where intricate fluid motions are involved, mapping inputs (wing kinematics) to outcomes (aerodynamic forces) is nontrivial and inverting this mapping for real-time control is computationally impractical. Here, we report a machine-learning solution for the inverse mapping of a flapping-wing system based on data from an experimental system we have developed. Our model learns the input wing motion required to generate a desired aerodynamic force outcome. We used a sequence-to-sequence model tailored for time-series data and augmented it with a novel adaptive-spectrum layer that implements representation learning in the frequency domain. To train our model, we developed a flapping wing system that simultaneously measures the wing's aerodynamic force and its 3D motion using high-speed cameras. We demonstrate the performance of our system on an additional open-source dataset of a flapping wing in a different flow regime. Results show superior performance compared with more complex state-of-the-art transformer-based models, with 11% improvement on the test datasets median loss. Moreover, our model shows superior inference time, making it practical for onboard robotic control. Our open-source data and framework may improve modeling and real-time control of systems governed by complex dynamics, from biomimetic robots to biomedical devices. 
+
+**Abstract (ZH)**: 基于实验系统的拍翼系统逆映射的机器学习解决方案 
+
+---
