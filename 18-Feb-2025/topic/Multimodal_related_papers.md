@@ -1,0 +1,182 @@
+# Early Detection of Human Handover Intentions in Human-Robot Collaboration: Comparing EEG, Gaze, and Hand Motion 
+
+**Title (ZH)**: 人在环机器人协作中早期检测人类交接意图：比较脑电图、注视和手运动的方法 
+
+**Authors**: Parag Khanna, Nona Rajabi, Sumeyra U. Demir Kanik, Danica Kragic, Mårten Björkman, Christian Smith  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.11752)  
+
+**Abstract**: Human-robot collaboration (HRC) relies on accurate and timely recognition of human intentions to ensure seamless interactions. Among common HRC tasks, human-to-robot object handovers have been studied extensively for planning the robot's actions during object reception, assuming the human intention for object handover. However, distinguishing handover intentions from other actions has received limited attention. Most research on handovers has focused on visually detecting motion trajectories, which often results in delays or false detections when trajectories overlap. This paper investigates whether human intentions for object handovers are reflected in non-movement-based physiological signals. We conduct a multimodal analysis comparing three data modalities: electroencephalogram (EEG), gaze, and hand-motion signals. Our study aims to distinguish between handover-intended human motions and non-handover motions in an HRC setting, evaluating each modality's performance in predicting and classifying these actions before and after human movement initiation. We develop and evaluate human intention detectors based on these modalities, comparing their accuracy and timing in identifying handover intentions. To the best of our knowledge, this is the first study to systematically develop and test intention detectors across multiple modalities within the same experimental context of human-robot handovers. Our analysis reveals that handover intention can be detected from all three modalities. Nevertheless, gaze signals are the earliest as well as the most accurate to classify the motion as intended for handover or non-handover. 
+
+**Abstract (ZH)**: 人类与机器人协作中物体传递意图的生理信号识别 
+
+---
+# USER-VLM 360: Personalized Vision Language Models with User-aware Tuning for Social Human-Robot Interactions 
+
+**Title (ZH)**: 用户感知微调的个性化视觉语言模型：面向社交人机交互的360度用户调优视觉语言模型 
+
+**Authors**: Hamed Rahimi, Adil Bahaj, Mouad Abrini, Mahdi Khoramshahi, Mounir Ghogho, Mohamed Chetouani  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.10636)  
+
+**Abstract**: The integration of vision-language models into robotic systems constitutes a significant advancement in enabling machines to interact with their surroundings in a more intuitive manner. While VLMs offer rich multimodal reasoning, existing approaches lack user-specific adaptability, often relying on generic interaction paradigms that fail to account for individual behavioral, contextual, or socio-emotional nuances. When customization is attempted, ethical concerns arise from unmitigated biases in user data, risking exclusion or unfair treatment. To address these dual challenges, we propose User-VLM 360°, a holistic framework integrating multimodal user modeling with bias-aware optimization. Our approach features: (1) user-aware tuning that adapts interactions in real time using visual-linguistic signals; (2) bias mitigation via preference optimization; and (3) curated 360° socio-emotive interaction datasets annotated with demographic, emotion, and relational metadata. Evaluations across eight benchmarks demonstrate state-of-the-art results: +35.3% F1 in personalized VQA, +47.5% F1 in facial features understanding, 15% bias reduction, and 30X speedup over baselines. Ablation studies confirm component efficacy, and deployment on the Pepper robot validates real-time adaptability across diverse users. We open-source parameter-efficient 3B/10B models and an ethical verification framework for responsible adaptation. 
+
+**Abstract (ZH)**: 将视觉语言模型集成到机器人系统中构成了使机器以更直观的方式与其环境交互的一大进展。尽管视觉语言模型提供了丰富的多模态推理，但现有方法缺乏用户特定的适应性，通常依赖于通用的交互范式，这些范式未能考虑到个人行为、情境或社会情感的细微差异。当尝试进行个性化定制时，由于用户数据中的未缓解偏见引发了伦理上的关切，从而可能导致排斥或不公平对待。为应对这些双重挑战，我们提出了一种名为User-VLM 360°的整体框架，该框架结合了多模态用户建模与偏见意识优化。我们的方法包括：（1）基于视觉语言信号的用户感知调整，实时适应交互；（2）通过偏好优化减少偏见；（3）使用包含人口统计、情绪和关系元数据的全面360°社会情感交互数据集。在八个基准上的评估表明，我们的方法取得了最先进的成果：个性化VQA的F1分数提高了35.3%，面部特征理解的F1分数提高了47.5%，偏见减少了15%，并且比基线快30倍。消融研究验证了各个组件的有效性，而在Pepper机器人上的部署证明了其在不同用户中的实时适应性。我们开源了参数高效的3B/10B模型和伦理验证框架，以实现负责任的适应。 
+
+---
+# A Survey on Bridging EEG Signals and Generative AI: From Image and Text to Beyond 
+
+**Title (ZH)**: EEG信号与生成式AI融合综述：从图像和文本到更广泛的领域 
+
+**Authors**: Shreya Shukla, Jose Torres, Abhijit Mishra, Jacek Gwizdka, Shounak Roychowdhury  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.12048)  
+
+**Abstract**: Integration of Brain-Computer Interfaces (BCIs) and Generative Artificial Intelligence (GenAI) has opened new frontiers in brain signal decoding, enabling assistive communication, neural representation learning, and multimodal integration. BCIs, particularly those leveraging Electroencephalography (EEG), provide a non-invasive means of translating neural activity into meaningful outputs. Recent advances in deep learning, including Generative Adversarial Networks (GANs) and Transformer-based Large Language Models (LLMs), have significantly improved EEG-based generation of images, text, and speech. This paper provides a literature review of the state-of-the-art in EEG-based multimodal generation, focusing on (i) EEG-to-image generation through GANs, Variational Autoencoders (VAEs), and Diffusion Models, and (ii) EEG-to-text generation leveraging Transformer based language models and contrastive learning methods. Additionally, we discuss the emerging domain of EEG-to-speech synthesis, an evolving multimodal frontier. We highlight key datasets, use cases, challenges, and EEG feature encoding methods that underpin generative approaches. By providing a structured overview of EEG-based generative AI, this survey aims to equip researchers and practitioners with insights to advance neural decoding, enhance assistive technologies, and expand the frontiers of brain-computer interaction. 
+
+**Abstract (ZH)**: 脑机接口（BCIs）与生成人工智能（GenAI）整合在脑电信号解码中的新进展：基于EEG的多模态生成综述 
+
+---
+# GRAPHGPT-O: Synergistic Multimodal Comprehension and Generation on Graphs 
+
+**Title (ZH)**: GRAPHGPT-O：图上多模态理解和生成的协同作用 
+
+**Authors**: Yi Fang, Bowen Jin, Jiacheng Shen, Sirui Ding, Qiaoyu Tan, Jiawei Han  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.11925)  
+
+**Abstract**: The rapid development of Multimodal Large Language Models (MLLMs) has enabled the integration of multiple modalities, including texts and images, within the large language model (LLM) framework. However, texts and images are usually interconnected, forming a multimodal attributed graph (MMAG). It is underexplored how MLLMs can incorporate the relational information (\textit{i.e.}, graph structure) and semantic information (\textit{i.e.,} texts and images) on such graphs for multimodal comprehension and generation. In this paper, we propose GraphGPT-o, which supports omni-multimodal understanding and creation on MMAGs. We first comprehensively study linearization variants to transform semantic and structural information as input for MLLMs. Then, we propose a hierarchical aligner that enables deep graph encoding, bridging the gap between MMAGs and MLLMs. Finally, we explore the inference choices, adapting MLLM to interleaved text and image generation in graph scenarios. Extensive experiments on three datasets from different domains demonstrate the effectiveness of our proposed method. Datasets and codes will be open-sourced upon acceptance. 
+
+**Abstract (ZH)**: 多模态大型语言模型（MLLMs）的快速發展-enable多模态大型语言模型（MLLMs）的快速發展-已使文本和图像等多模态能够在大型语言模型（LLM）框架内进行集成。然而，文本和图像通常相互关联，形成一个多模态属性图（MMAG）。目前尚不清楚MLLMs如何将关系信息（即，图结构）和语义信息（即，文本和图像）结合在这样的图上以进行多模态理解和生成。在本文中，我们提出了GraphGPT-o，支持在MMAGs上的全模态理解和创建。首先，我们全面研究了线性化变体以将语义和结构信息转换为MLLM的输入。然后，我们提出了一种分层对齐器，实现了深层次的图编码，从而在MMAGs和MLLMs之间建立桥梁。最后，我们探索了推理选择，使MLLM能够在图场景中适应交错的文本和图像生成。在三个不同领域的数据集上的广泛实验表明了我们提出方法的有效性。数据集和代码将在接受后开源。 
+
+---
+# HintsOfTruth: A Multimodal Checkworthiness Detection Dataset with Real and Synthetic Claims 
+
+**Title (ZH)**: 真实与合成断言的多模态可信度检测数据集：HintsOfTruth 
+
+**Authors**: Michiel van der Meer, Pavel Korshunov, Sébastien Marcel, Lonneke van der Plas  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.11753)  
+
+**Abstract**: Misinformation can be countered with fact-checking, but the process is costly and slow. Identifying checkworthy claims is the first step, where automation can help scale fact-checkers' efforts. However, detection methods struggle with content that is 1) multimodal, 2) from diverse domains, and 3) synthetic. We introduce HintsOfTruth, a public dataset for multimodal checkworthiness detection with $27$K real-world and synthetic image/claim pairs. The mix of real and synthetic data makes this dataset unique and ideal for benchmarking detection methods. We compare fine-tuned and prompted Large Language Models (LLMs). We find that well-configured lightweight text-based encoders perform comparably to multimodal models but the first only focus on identifying non-claim-like content. Multimodal LLMs can be more accurate but come at a significant computational cost, making them impractical for large-scale applications. When faced with synthetic data, multimodal models perform more robustly 
+
+**Abstract (ZH)**: 虚假信息可以通过事实核查来对抗，但这一过程代价高昂且耗时。确定核查worthy的声明是第一步，自动化可以帮助扩大事实核查者的努力。然而，检测方法在处理以下内容时遇到困难：1) 多模态内容，2) 来自多种领域，3) 合成内容。我们引入了HintsOfTruth，这是一个包含27000个真实世界和合成图像/声明对的公开多模态核查worthy检测数据集。真实数据和合成数据的结合使该数据集独特且适用于检测方法的基准测试。我们对比了微调和提示的大型语言模型（LLMs）。我们发现，配置良好的轻量级文本编码器在性能上可与多模态模型相媲美，但仅限于识别非声明类型的内容。多模态LLMs可以更准确，但会产生巨大的计算成本，使它们在大规模应用中不切实际。当面对合成数据时，多模态模型表现更为 robust。 
+
+---
+# Why Vision Language Models Struggle with Visual Arithmetic? Towards Enhanced Chart and Geometry Understanding 
+
+**Title (ZH)**: 视觉语言模型为何难以处理视觉算术？朝向增强的图表和几何理解 
+
+**Authors**: Kung-Hsiang Huang, Can Qin, Haoyi Qiu, Philippe Laban, Shafiq Joty, Caiming Xiong, Chien-Sheng Wu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.11492)  
+
+**Abstract**: Vision Language Models (VLMs) have achieved remarkable progress in multimodal tasks, yet they often struggle with visual arithmetic, seemingly simple capabilities like object counting or length comparison, which are essential for relevant complex tasks like chart understanding and geometric reasoning. In this work, we first investigate the root causes of this deficiency through a suite of probing tasks focusing on basic visual arithmetic. Our analysis reveals that while pre-trained vision encoders typically capture sufficient information, the text decoder often fails to decode it correctly for arithmetic reasoning. To address this, we propose CogAlign, a novel post-training strategy inspired by Piaget's theory of cognitive development. CogAlign trains VLMs to recognize invariant properties under visual transformations. We demonstrate that this approach significantly improves the performance of three diverse VLMs on our proposed probing tasks. Furthermore, CogAlign enhances performance by an average of 4.6% on CHOCOLATE and 2.9% on MATH-VISION, outperforming or matching supervised fine-tuning methods while requiring only 60% less training data. These results highlight the effectiveness and generalizability of CogAlign in improving fundamental visual arithmetic capabilities and their transfer to downstream tasks. 
+
+**Abstract (ZH)**: Vision Language Models (VLMs)在多模态任务中取得了显著进展，但在视觉算术、诸如对象计数或长度比较等看似简单的能力方面常常表现不佳，这些能力对于复杂的任务如图表理解和几何推理至关重要。在本文中，我们首先通过一系列专注于基本视觉算术的探针任务来探究这种缺陷的根本原因。我们的分析表明，尽管预训练的视觉编码器通常能够捕获足够的信息，但文本解码器往往无法正确解码其用于算术推理。为了解决这一问题，我们提出了一种名为CogAlign的新型后训练策略，该策略受到了皮亚杰认知发展理论的启发。CogAlign训练VLMs识别视觉变换下的不变属性。我们证明，这种方法在我们提出的探针任务中显著提高了三种不同VLMs的性能。此外，CogAlign在CHOCOLATE上平均提高了4.6%，在MATH-VISION上平均提高了2.9%，且仅需较少的训练数据，就能超越或匹配有监督微调方法，突显了CogAlign在提高基本视觉算术能力和其向下游任务迁移方面的有效性和普适性。 
+
+---
+# Leveraging Multimodal-LLMs Assisted by Instance Segmentation for Intelligent Traffic Monitoring 
+
+**Title (ZH)**: 利用实例分割辅助的多模态大语言模型进行智能交通监控 
+
+**Authors**: Murat Arda Onsu, Poonam Lohan, Burak Kantarci, Aisha Syed, Matthew Andrews, Sean Kennedy  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.11304)  
+
+**Abstract**: A robust and efficient traffic monitoring system is essential for smart cities and Intelligent Transportation Systems (ITS), using sensors and cameras to track vehicle movements, optimize traffic flow, reduce congestion, enhance road safety, and enable real-time adaptive traffic control. Traffic monitoring models must comprehensively understand dynamic urban conditions and provide an intuitive user interface for effective management. This research leverages the LLaVA visual grounding multimodal large language model (LLM) for traffic monitoring tasks on the real-time Quanser Interactive Lab simulation platform, covering scenarios like intersections, congestion, and collisions. Cameras placed at multiple urban locations collect real-time images from the simulation, which are fed into the LLaVA model with queries for analysis. An instance segmentation model integrated into the cameras highlights key elements such as vehicles and pedestrians, enhancing training and throughput. The system achieves 84.3% accuracy in recognizing vehicle locations and 76.4% in determining steering direction, outperforming traditional models. 
+
+**Abstract (ZH)**: 一种稳健而高效的交通监测系统对于智能城市和智能交通系统（ITS）至关重要，利用传感器和摄像头跟踪车辆移动，优化交通流量，减轻拥堵，提高道路安全，并实现实时自适应交通控制。交通监测模型必须全面理解动态城市条件，并提供直观的用户界面以有效管理。本研究利用LLaVA视觉定位多模态大语言模型（LLM）在实时Quanser Interactive Lab模拟平台上进行交通监测任务，涵盖交叉口、拥堵和碰撞等多种场景。位于多个城市位置的摄像头收集实时图像，输入LLaVA模型进行分析。集成于摄像头中的实例分割模型突出显示关键元素如车辆和行人，增强训练和吞吐量。该系统在识别车辆位置方面达到84.3%的准确率，在确定转向方向方面达到76.4%的准确率，优于传统模型。 
+
+---
+# Demographic User Modeling for Social Robotics with Multimodal Pre-trained Models 
+
+**Title (ZH)**: 基于多模态预训练模型的社交机器人分众用户建模 
+
+**Authors**: Hamed Rahimi, Mouad Abrini, Mahdi Khoramshahi, Mohamed Chetouani  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.10642)  
+
+**Abstract**: This paper investigates the performance of multimodal pre-trained models in user profiling tasks based on visual-linguistic demographic data. These models are critical for adapting to the needs and preferences of human users in social robotics, thereby providing personalized responses and enhancing interaction quality. First, we introduce two datasets specifically curated to represent demographic characteristics derived from user facial images. Next, we evaluate the performance of a prominent contrastive multimodal pre-trained model, CLIP, on these datasets, both in its out-of-the-box state and after fine-tuning. Initial results indicate that CLIP performs suboptimal in matching images to demographic descriptions without fine-tuning. Although fine-tuning significantly enhances its predictive capacity, the model continues to exhibit limitations in effectively generalizing subtle demographic nuances. To address this, we propose adopting a masked image modeling strategy to improve generalization and better capture subtle demographic attributes. This approach offers a pathway for enhancing demographic sensitivity in multimodal user modeling tasks. 
+
+**Abstract (ZH)**: 基于视觉语言人口统计学数据的多模态预训练模型在用户画像任务中的性能研究 
+
+---
+# Multi-Turn Multi-Modal Question Clarification for Enhanced Conversational Understanding 
+
+**Title (ZH)**: 多轮多模态问题澄清以增强对话理解 
+
+**Authors**: Kimia Ramezan, Alireza Amiri Bavandpour, Yifei Yuan, Clemencia Siro, Mohammad Aliannejadi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.11442)  
+
+**Abstract**: Conversational query clarification enables users to refine their search queries through interactive dialogue, improving search effectiveness. Traditional approaches rely on text-based clarifying questions, which often fail to capture complex user preferences, particularly those involving visual attributes. While recent work has explored single-turn multi-modal clarification with images alongside text, such methods do not fully support the progressive nature of user intent refinement over multiple turns. Motivated by this, we introduce the Multi-turn Multi-modal Clarifying Questions (MMCQ) task, which combines text and visual modalities to refine user queries in a multi-turn conversation. To facilitate this task, we create a large-scale dataset named ClariMM comprising over 13k multi-turn interactions and 33k question-answer pairs containing multi-modal clarifying questions. We propose Mario, a retrieval framework that employs a two-phase ranking strategy: initial retrieval with BM25, followed by a multi-modal generative re-ranking model that integrates textual and visual information from conversational history. Our experiments show that multi-turn multi-modal clarification outperforms uni-modal and single-turn approaches, improving MRR by 12.88%. The gains are most significant in longer interactions, demonstrating the value of progressive refinement for complex queries. 
+
+**Abstract (ZH)**: 基于多轮多模态澄清的会话查询澄清使用户能够在交互式对话中细化搜索查询，提高搜索效果。 
+
+---
+# UNITE-FND: Reframing Multimodal Fake News Detection through Unimodal Scene Translation 
+
+**Title (ZH)**: UNITE-FND: 通过单模态场景翻译重新定义多模态假新闻检测 
+
+**Authors**: Arka Mukherjee, Shreya Ghosh  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.11132)  
+
+**Abstract**: Multimodal fake news detection typically demands complex architectures and substantial computational resources, posing deployment challenges in real-world settings. We introduce UNITE-FND, a novel framework that reframes multimodal fake news detection as a unimodal text classification task. We propose six specialized prompting strategies with Gemini 1.5 Pro, converting visual content into structured textual descriptions, and enabling efficient text-only models to preserve critical visual information. To benchmark our approach, we introduce Uni-Fakeddit-55k, a curated dataset family of 55,000 samples each, each processed through our multimodal-to-unimodal translation framework. Experimental results demonstrate that UNITE-FND achieves 92.52% accuracy in binary classification, surpassing prior multimodal models while reducing computational costs by over 10x (TinyBERT variant: 14.5M parameters vs. 250M+ in SOTA models). Additionally, we propose a comprehensive suite of five novel metrics to evaluate image-to-text conversion quality, ensuring optimal information preservation. Our results demonstrate that structured text-based representations can replace direct multimodal processing with minimal loss of accuracy, making UNITE-FND a practical and scalable alternative for resource-constrained environments. 
+
+**Abstract (ZH)**: 多模态假新闻检测通常需要复杂的架构和大量的计算资源，难以在实际场景中部署。我们提出了UNITE-FND，一种将多模态假新闻检测重新定义为单模态文本分类任务的新框架。我们提出六种专门的提示策略，并使用Gemini 1.5 Pro将视觉内容转换为结构化的文本描述，使高效的文字模型能够保留关键的视觉信息。为了评估我们的方法，我们引入了Uni-Fakeddit-55k数据集家族，包含55,000个样本，每个样本均通过我们的多模态到单模态转换框架进行处理。实验结果表明，UNITE-FND在二分类中的准确率达到92.52%，超越了先前的多模态模型，同时计算成本降低了超过10倍（TinyBERT变体参数量为14.5M，而当前最佳模型参数量超过250M）。此外，我们还提出了一套包含五项新型指标的综合评估方案，以确保图像到文本转换的质量。结果显示，结构化的文本表示可以在几乎不损失准确性的情况下替代直接的多模态处理，使UNITE-FND成为资源受限环境中的一种实用且可扩展的选择。 
+
+---
+# Phantom: Subject-consistent video generation via cross-modal alignment 
+
+**Title (ZH)**: 幻影：基于跨模态对齐的主体一致视频生成 
+
+**Authors**: Lijie Liu, Tianxiang Ma, Bingchuan Li, Zhuowei Chen, Jiawei Liu, Qian He, Xinglong Wu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.11079)  
+
+**Abstract**: The continuous development of foundational models for video generation is evolving into various applications, with subject-consistent video generation still in the exploratory stage. We refer to this as Subject-to-Video, which extracts subject elements from reference images and generates subject-consistent video through textual instructions. We believe that the essence of subject-to-video lies in balancing the dual-modal prompts of text and image, thereby deeply and simultaneously aligning both text and visual content. To this end, we propose Phantom, a unified video generation framework for both single and multi-subject references. Building on existing text-to-video and image-to-video architectures, we redesign the joint text-image injection model and drive it to learn cross-modal alignment via text-image-video triplet data. In particular, we emphasize subject consistency in human generation, covering existing ID-preserving video generation while offering enhanced advantages. The project homepage is here this https URL. 
+
+**Abstract (ZH)**: 基于文本和图像的双模态提示平衡的Subject-to-Video统一视频生成框架：Phantom 
+
+---
+# PolyPath: Adapting a Large Multimodal Model for Multi-slide Pathology Report Generation 
+
+**Title (ZH)**: PolyPath: 调整大型多模态模型以生成多张切片病理报告 
+
+**Authors**: Faruk Ahmed, Lin Yang, Tiam Jaroensri, Andrew Sellergren, Yossi Matias, Avinatan Hassidim, Greg S. Corrado, Dale R. Webster, Shravya Shetty, Shruthi Prabhakara, Yun Liu, Daniel Golden, Ellery Wulczyn, David F. Steiner  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.10536)  
+
+**Abstract**: The interpretation of histopathology cases underlies many important diagnostic and treatment decisions in medicine. Notably, this process typically requires pathologists to integrate and summarize findings across multiple slides per case. Existing vision-language capabilities in computational pathology have so far been largely limited to small regions of interest, larger regions at low magnification, or single whole-slide images (WSIs). This limits interpretation of findings that span multiple high-magnification regions across multiple WSIs. By making use of Gemini 1.5 Flash, a large multimodal model (LMM) with a 1-million token context window, we demonstrate the ability to generate bottom-line diagnoses from up to 40,000 768x768 pixel image patches from multiple WSIs at 10X magnification. This is the equivalent of up to 11 hours of video at 1 fps. Expert pathologist evaluations demonstrate that the generated report text is clinically accurate and equivalent to or preferred over the original reporting for 68% (95% CI: [60%, 76%]) of multi-slide examples with up to 5 slides. While performance decreased for examples with 6 or more slides, this study demonstrates the promise of leveraging the long-context capabilities of modern LMMs for the uniquely challenging task of medical report generation where each case can contain thousands of image patches. 
+
+**Abstract (ZH)**: 病理组织学病例的解释是医学中许多重要诊断和治疗决策的基础。这一过程通常要求病理学家综合和总结每个病例多块切片中的发现。目前，计算病理学中的视觉-语言能力主要局限于感兴趣的 small 区域、低放大倍数下的较大区域，或单张全切片图像 (WSI)。这限制了跨越多张高放大倍数 WSI 的多个区域发现的解释。通过利用 Gemini 1.5 Flash，一种具有 100 万标记上下文窗口的大规模多模态模型（LMM），我们展示了从多达 40,000 张分辨率为 768x768 像素的图像块生成最终诊断结果的能力，这些图像块来自多张 10X 放大事的 WSI。这相当于多达 11 小时以 1 fps 播放的视频。专家病理学家评估表明，生成的报告文本在临床准确性方面与原始报告相当或更优，占多达 5 张切片的多切片示例的 68%（95% CI：[60%，76%]）。虽然对于 6 张或更多切片的示例性能有所下降，但本研究展示了利用现代 LMM 的长上下文能力进行医学报告生成的潜力，尤其是在每个病例可能包含数千个图像块的这一独特挑战性任务中。 
+
+---
+# I Think, Therefore I Diffuse: Enabling Multimodal In-Context Reasoning in Diffusion Models 
+
+**Title (ZH)**: 我认为，因此我扩散：在扩散模型中启用多模态上下文推理 
+
+**Authors**: Zhenxing Mi, Kuan-Chieh Wang, Guocheng Qian, Hanrong Ye, Runtao Liu, Sergey Tulyakov, Kfir Aberman, Dan Xu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.10458)  
+
+**Abstract**: This paper presents ThinkDiff, a novel alignment paradigm that empowers text-to-image diffusion models with multimodal in-context understanding and reasoning capabilities by integrating the strengths of vision-language models (VLMs). Existing multimodal diffusion finetuning methods largely focus on pixel-level reconstruction rather than in-context reasoning, and are constrained by the complexity and limited availability of reasoning-based datasets. ThinkDiff addresses these challenges by leveraging vision-language training as a proxy task, aligning VLMs with the decoder of an encoder-decoder large language model (LLM) instead of a diffusion decoder. This proxy task builds on the observation that the $\textbf{LLM decoder}$ shares the same input feature space with $\textbf{diffusion decoders}$ that use the corresponding $\textbf{LLM encoder}$ for prompt embedding. As a result, aligning VLMs with diffusion decoders can be simplified through alignment with the LLM decoder. Without complex training and datasets, ThinkDiff effectively unleashes understanding, reasoning, and composing capabilities in diffusion models. Experiments demonstrate that ThinkDiff significantly improves accuracy from 19.2% to 46.3% on the challenging CoBSAT benchmark for multimodal in-context reasoning generation, with only 5 hours of training on 4 A100 GPUs. Additionally, ThinkDiff demonstrates exceptional performance in composing multiple images and texts into logically coherent images. Project page: this https URL. 
+
+**Abstract (ZH)**: 本文提出了ThinkDiff，这是一种新颖的对齐范式，通过集成视觉语言模型（VLMs）的优势，赋予文本到图像扩散模型多模态上下文理解与推理能力。现有的多模态扩散微调方法主要关注像素级重建而非上下文推理，并受到基于推理的数据集复杂性和稀缺性的限制。ThinkDiff通过利用视觉语言训练作为代理任务来应对这些挑战，将VLMs与编码器-解码器大型语言模型（LLM）的解码器对齐，而不是扩散解码器。这一代理任务基于观察，即LLM解码器与使用相应LLM编码器进行提示嵌入的扩散解码器共享相同输入特征空间。因此，通过与LLM解码器对齐，可以使VLMs与扩散解码器的对齐简化。无需复杂的训练和数据集，ThinkDiff有效释放了扩散模型的理解、推理和生成能力。实验结果表明，ThinkDiff在具有挑战性的CoBSAT基准测试中将多模态上下文推理生成的准确性从19.2%显著提高到46.3%，仅在4块A100 GPU上进行5小时的训练。此外，ThinkDiff在合成多张图像和文本为逻辑连贯的图像方面表现出色。项目页面：this https URL。 
+
+---
+# RAMer: Reconstruction-based Adversarial Model for Multi-party Multi-modal Multi-label Emotion Recognition 
+
+**Title (ZH)**: RAMer: 基于重建的 adversarial 模型多当事人多模态多标签情绪识别 
+
+**Authors**: Xudong Yang, Yizhang Zhu, Nan Tang, Yuyu Luo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.10435)  
+
+**Abstract**: Conventional multi-modal multi-label emotion recognition (MMER) from videos typically assumes full availability of visual, textual, and acoustic modalities. However, real-world multi-party settings often violate this assumption, as non-speakers frequently lack acoustic and textual inputs, leading to a significant degradation in model performance. Existing approaches also tend to unify heterogeneous modalities into a single representation, overlooking each modality's unique characteristics. To address these challenges, we propose RAMer (Reconstruction-based Adversarial Model for Emotion Recognition), which leverages adversarial learning to refine multi-modal representations by exploring both modality commonality and specificity through reconstructed features enhanced by contrastive learning. RAMer also introduces a personality auxiliary task to complement missing modalities using modality-level attention, improving emotion reasoning. To further strengthen the model's ability to capture label and modality interdependency, we propose a stack shuffle strategy to enrich correlations between labels and modality-specific features. Experiments on three benchmarks, i.e., MEmoR, CMU-MOSEI, and $M^3$ED, demonstrate that RAMer achieves state-of-the-art performance in dyadic and multi-party MMER scenarios. 
+
+**Abstract (ZH)**: 基于重建的对抗模型在多模态多标签情感识别中的应用：应对非说话者缺失声学和文本输入的挑战 
+
+---
