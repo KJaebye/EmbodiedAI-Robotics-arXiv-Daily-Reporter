@@ -1,0 +1,182 @@
+# HOMIE: Humanoid Loco-Manipulation with Isomorphic Exoskeleton Cockpit 
+
+**Title (ZH)**: HOMIE: 类人步行操作的同构外骨骼 cockpit 
+
+**Authors**: Qingwei Ben, Feiyu Jia, Jia Zeng, Junting Dong, Dahua Lin, Jiangmiao Pang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.13013)  
+
+**Abstract**: Current humanoid teleoperation systems either lack reliable low-level control policies, or struggle to acquire accurate whole-body control commands, making it difficult to teleoperate humanoids for loco-manipulation tasks. To solve these issues, we propose HOMIE, a novel humanoid teleoperation cockpit integrates a humanoid loco-manipulation policy and a low-cost exoskeleton-based hardware system. The policy enables humanoid robots to walk and squat to specific heights while accommodating arbitrary upper-body poses. This is achieved through our novel reinforcement learning-based training framework that incorporates upper-body pose curriculum, height-tracking reward, and symmetry utilization, without relying on any motion priors. Complementing the policy, the hardware system integrates isomorphic exoskeleton arms, a pair of motion-sensing gloves, and a pedal, allowing a single operator to achieve full control of the humanoid robot. Our experiments show our cockpit facilitates more stable, rapid, and precise humanoid loco-manipulation teleoperation, accelerating task completion and eliminating retargeting errors compared to inverse kinematics-based methods. We also validate the effectiveness of the data collected by our cockpit for imitation learning. Our project is fully open-sourced, demos and code can be found in this https URL. 
+
+**Abstract (ZH)**: 当前的人形遥操作系统要么缺乏可靠的低级控制策略，要么难以获得准确的全身控制命令，使得通过遥操作人形机器人执行行进操作任务变得困难。为了解决这些问题，我们提出了一种名为HOMIE的人形遥操作平台，该平台集成了人形行进操作策略和低成本外骨骼硬件系统。该策略使机器人人形能够在特定高度行走和蹲下，同时适应任意上身姿态。这通过我们提出的一种基于强化学习的训练框架实现，该框架包括上身姿态课程、高度追踪奖励和对称性利用，而无需依赖任何运动先验知识。配合策略，该硬件系统集成了同构外骨骼臂、一副运动感应手套和一个踏板，使得单一操作员能够完全控制人形机器人。我们的实验表明，该平台能够实现更稳定、更快捷和更精确的人形行进操作遥操作，加速任务完成并消除基于逆向动力学方法的错误。我们还验证了该平台收集的数据对模仿学习的有效性。我们的项目完全开源，演示和代码可以在以下链接找到：this https URL。 
+
+---
+# D3-ARM: High-Dynamic, Dexterous and Fully Decoupled Cable-driven Robotic Arm 
+
+**Title (ZH)**: D3-ARM: 高动态、灵巧且完全解耦的电缆驱动机器人臂 
+
+**Authors**: Hong Luo, Jianle Xu, Shoujie Li, Huayue Liang, Yanbo Chen, Chongkun Xia, Xueqian Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.12963)  
+
+**Abstract**: Cable transmission enables motors of robotic arm to operate lightweight and low-inertia joints remotely in various environments, but it also creates issues with motion coupling and cable routing that can reduce arm's control precision and performance. In this paper, we present a novel motion decoupling mechanism with low-friction to align the cables and efficiently transmit the motor's power. By arranging these mechanisms at the joints, we fabricate a fully decoupled and lightweight cable-driven robotic arm called D3-Arm with all the electrical components be placed at the base. Its 776 mm length moving part boasts six degrees of freedom (DOF) and only 1.6 kg weights. To address the issue of cable slack, a cable-pretension mechanism is integrated to enhance the stability of long-distance cable transmission. Through a series of comprehensive tests, D3-Arm demonstrated 1.29 mm average positioning error and 2.0 kg payload capacity, proving the practicality of the proposed decoupling mechanisms in cable-driven robotic arm. 
+
+**Abstract (ZH)**: 基于缆索传动的运动解耦机制与低惯量轻量化机器人手臂设计 
+
+---
+# Applications of Stretch Reflex for the Upper Limb of Musculoskeletal Humanoids: Protective Behavior, Postural Stability, and Active Induction 
+
+**Title (ZH)**: 上肢Musculoskeletal人形机器人伸展反射的应用：保护性行为、姿势稳定性和主动诱发 
+
+**Authors**: Kento Kawaharazuka, Yuya Koga, Kei Tsuzuki, Moritaka Onitsuka, Yuki Asano, Kei Okada, Koji Kawasaki, Masayuki Inaba  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.12811)  
+
+**Abstract**: The musculoskeletal humanoid has various biomimetic benefits, and it is important that we can embed and evaluate human reflexes in the actual robot. Although stretch reflex has been implemented in lower limbs of musculoskeletal humanoids, we apply it to the upper limb to discover its useful applications. We consider the implementation of stretch reflex in the actual robot, its active/passive applications, and the change in behavior according to the difference of parameters. 
+
+**Abstract (ZH)**: 具有运动学模仿优势的人形机器人中，我们必须能够在实际机器人中嵌入并评估人体反射。尽管伸展反射已经在人形机器人下肢中实现，但我们将其应用于上肢以发现其有用的应用。我们考虑在实际机器人中实现伸展反射、其主动/被动应用以及参数差异导致行为变化的情况。 
+
+---
+# Exceeding the Maximum Speed Limit of the Joint Angle for the Redundant Tendon-driven Structures of Musculoskeletal Humanoids 
+
+**Title (ZH)**: 超越冗余肌腱驱动类人机器人关节角的最大速度限制 
+
+**Authors**: Kento Kawaharazuka, Yuya Koga, Kei Tsuzuki, Moritaka Onitsuka, Yuki Asano, Kei Okada, Koji Kawasaki, Masayuki Inaba  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.12808)  
+
+**Abstract**: The musculoskeletal humanoid has various biomimetic benefits, and the redundant muscle arrangement is one of its most important characteristics. This redundancy can achieve fail-safe redundant actuation and variable stiffness control. However, there is a problem that the maximum joint angle velocity is limited by the slowest muscle among the redundant muscles. In this study, we propose two methods that can exceed the limited maximum joint angle velocity, and verify the effectiveness with actual robot experiments. 
+
+**Abstract (ZH)**: 具有冗余肌肉排列的肌骨仿人机器人具有多种生物模拟优势，但最大关节角速度受限于最慢的冗余肌肉。为克服这一限制，本研究提出两种方法，并通过实际机器人实验验证了其有效性。 
+
+---
+# Soft Arm-Motor Thrust Characterization for a Pneumatically Actuated Soft Morphing Quadrotor 
+
+**Title (ZH)**: 气动驱动软形态变换四旋翼无人机的软臂-电机推力特性研究 
+
+**Authors**: Vidya Sumathy, Jakub Haluska, George Nikolokopoulos  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.12716)  
+
+**Abstract**: In this work, an experimental characterization of the configuration space of a soft, pneumatically actuated morphing quadrotor is presented, with a focus on precise thrust characterization of its flexible arms, considering the effect of downwash. Unlike traditional quadrotors, the soft drone has pneumatically actuated arms, introducing complex, nonlinear interactions between motor thrust and arm deformation, which make precise control challenging. The silicone arms are actuated using differential pressure to achieve flexibility and thus have a variable workspace compared to their fixed counter-parts. The deflection of the soft arms during compression and expansion is controlled throughout the flight. However, in real time, the downwash from the motor attached at the tip of the soft arm generates a significant and random disturbance on the arm. This disturbance affects both the desired deflection of the arm and the overall stability of the system. To address this factor, an experimental characterization of the effect of downwash on the deflection angle of the arm is conducted. 
+
+**Abstract (ZH)**: 一种软气动驱动四旋翼飞行器柔臂配置空间的实验characterization及其精确推力characterization，考虑下洗流的影响 
+
+---
+# LiMo-Calib: On-Site Fast LiDAR-Motor Calibration for Quadruped Robot-Based Panoramic 3D Sensing System 
+
+**Title (ZH)**: LiMo-Calib：基于四足机器人导向全景3D感知系统中的现场快速LiDAR-电机校准 
+
+**Authors**: Jianping Li, Zhongyuan Liu, Xinhang Xu, Jinxin Liu, Shenghai Yuan, Lihua Xie  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.12655)  
+
+**Abstract**: Conventional single LiDAR systems are inherently constrained by their limited field of view (FoV), leading to blind spots and incomplete environmental awareness, particularly on robotic platforms with strict payload limitations. Integrating a motorized LiDAR offers a practical solution by significantly expanding the sensor's FoV and enabling adaptive panoramic 3D sensing. However, the high-frequency vibrations of the quadruped robot introduce calibration challenges, causing variations in the LiDAR-motor transformation that degrade sensing accuracy. Existing calibration methods that use artificial targets or dense feature extraction lack feasibility for on-site applications and real-time implementation. To overcome these limitations, we propose LiMo-Calib, an efficient on-site calibration method that eliminates the need for external targets by leveraging geometric features directly from raw LiDAR scans. LiMo-Calib optimizes feature selection based on normal distribution to accelerate convergence while maintaining accuracy and incorporates a reweighting mechanism that evaluates local plane fitting quality to enhance robustness. We integrate and validate the proposed method on a motorized LiDAR system mounted on a quadruped robot, demonstrating significant improvements in calibration efficiency and 3D sensing accuracy, making LiMo-Calib well-suited for real-world robotic applications. The demo video is available at: this https URL 
+
+**Abstract (ZH)**: 传统的单线激光雷达系统受限于其有限的视场角（FoV），导致盲区和环境感知不完整，特别是在有严格载重限制的机器人平台上。通过整合电机驱动的激光雷达，可以显著扩展传感器的FoV，并实现自适应全景3D感知，提供一种实用的解决方案。然而，四足机器人的高频振动引入了校准挑战，导致激光雷达-电机变换的偏差，降低了感知精度。现有的使用人工目标或密集特征提取的校准方法在实地应用和实时实施中缺乏可行性。为克服这些限制，我们提出了一种高效的实地校准方法LiMo-Calib，通过直接利用原始激光雷达扫描中的几何特征来消除对外部目标的需求。LiMo-Calib基于正态分布优化特征选择以加速收敛同时保持准确性，并引入了一种重新加权机制，通过评估局部平面拟合质量来增强鲁棒性。我们在一个安装在四足机器人上的电机驱动激光雷达系统上集成了并验证了该方法，展示了校准效率和3D感知精度的显著提升，使LiMo-Calib适用于实际的机器人应用。演示视频可访问：this https URL 
+
+---
+# Learning-based Dynamic Robot-to-Human Handover 
+
+**Title (ZH)**: 基于学习的动态机器人到人类的手递交接 
+
+**Authors**: Hyeonseong Kim, Chanwoo Kim, Matthew Pan, Kyungjae Lee, Sungjoon Choi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.12602)  
+
+**Abstract**: This paper presents a novel learning-based approach to dynamic robot-to-human handover, addressing the challenges of delivering objects to a moving receiver. We hypothesize that dynamic handover, where the robot adjusts to the receiver's movements, results in more efficient and comfortable interaction compared to static handover, where the receiver is assumed to be stationary. To validate this, we developed a nonparametric method for generating continuous handover motion, conditioned on the receiver's movements, and trained the model using a dataset of 1,000 human-to-human handover demonstrations. We integrated preference learning for improved handover effectiveness and applied impedance control to ensure user safety and adaptiveness. The approach was evaluated in both simulation and real-world settings, with user studies demonstrating that dynamic handover significantly reduces handover time and improves user comfort compared to static methods. Videos and demonstrations of our approach are available at this https URL . 
+
+**Abstract (ZH)**: 基于学习的动态机器人到人类递物方法：面向运动接收者的高效舒适递物 
+
+---
+# Design and Implementation of a Dual Uncrewed Surface Vessel Platform for Bathymetry Research under High-flow Conditions 
+
+**Title (ZH)**: 高流速条件下双无人驾驶水面船只平台的设计与实现 
+
+**Authors**: Dinesh Kumar, Amin Ghorbanpour, Kin Yen, Iman Soltani  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.12539)  
+
+**Abstract**: Bathymetry, the study of underwater topography, relies on sonar mapping of submerged structures. These measurements, critical for infrastructure health monitoring, often require expensive instrumentation. The high financial risk associated with sensor damage or vessel loss creates a reluctance to deploy uncrewed surface vessels (USVs) for bathymetry. However, the crewed-boat bathymetry operations, are costly, pose hazards to personnel, and frequently fail to achieve the stable conditions necessary for bathymetry data collection, especially under high currents. Further research is essential to advance autonomous control, navigation, and data processing technologies, with a particular focus on bathymetry. There is a notable lack of accessible hardware platforms that allow for integrated research in both bathymetry-focused autonomous control and navigation, as well as data evaluation and processing. This paper addresses this gap through the design and implementation of two complementary USV systems tailored for uncrewed bathymetry research. This includes a low-cost USV for Navigation And Control research (NAC-USV) and a second, high-end USV equipped with a high-resolution multi-beam sonar and the associated hardware for Bathymetry data quality Evaluation and Post-processing research (BEP-USV). The NAC-USV facilitates the investigation of autonomous, fail-safe navigation and control, emphasizing the stability requirements for high-quality bathymetry data collection while minimizing the risk to equipment. The BEP-USV, which mirrors the NAC-USV hardware, is then used for additional control validation and in-depth exploration of bathymetry data evaluation and post-processing methodologies. We detail the design and implementation of both systems, and open source the design. Furthermore, we demonstrate the system's effectiveness in a range of operational scenarios. 
+
+**Abstract (ZH)**: underwater地形测量依赖于 submerged结构的声纳mapping。这些测量对于基础设施健康监测至关重要，但通常需要昂贵的仪器。与传感器损坏或船只损失相关的高经济风险导致对无人水面舰艇（USVs）进行地形测量的犹豫。然而，有人船进行的地形测量操作成本高、人员有危险，并且常常无法达到地形测量数据采集所需的稳定条件，尤其是在强流条件下。进一步的研究对于推进自主控制、导航和数据处理技术至关重要，特别是对于地形测量。目前存在一个明显的差距，即能够集成研究焦点于地形测量的自主控制和导航，以及数据评估和处理的可访问硬件平台较少。本文通过设计和实现两个针对无人地形测量研究的互补USV系统来填补这一空白。这包括一个用于导航和控制研究的低成本USV（NAC-USV），以及一个配备高分辨率多波束声纳和相关硬件的高性能USV，用于地形测量数据质量评估和后处理研究（BEP-USV）。NAC-USV促进对自主、安全导航和控制的调查，强调高质量地形测量数据采集所需的稳定性要求，同时最大限度地减少对设备的风险。随后，BEP-USV使用与NAC-USV相同的硬件进行额外的控制验证，并深入探索地形测量数据评估和后处理方法。我们详细说明了两个系统的设计和实现，并开源了设计。此外，我们展示了该系统在多种操作场景中的有效性。 
+
+---
+# Multi-vision-based Picking Point Localisation of Target Fruit for Harvesting Robots 
+
+**Title (ZH)**: 基于多视角的目标水果采收机器人采摘点定位 
+
+**Authors**: C. Beldek, A. Dunn, J. Cunningham, E. Sariyildiz, S. L. Phung, G.Alici  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.12406)  
+
+**Abstract**: This paper presents multi-vision-based localisation strategies for harvesting robots. Identifying picking points accurately is essential for robotic harvesting because insecure grasping can lead to economic loss through fruit damage and dropping. In this study, two multi-vision-based localisation methods, namely the analytical approach and model-based algorithms, were employed. The actual geometric centre points of fruits were collected using a motion capture system (mocap), and two different surface points Cfix and Ceih were extracted using two Red-Green-Blue-Depth (RGB-D) cameras. First, the picking points of the target fruit were detected using analytical methods. Second, various primary and ensemble learning methods were employed to predict the geometric centre of target fruits by taking surface points as input. Adaboost regression, the most successful model-based localisation algorithm, achieved 88.8% harvesting accuracy with a Mean Euclidean Distance (MED) of 4.40 mm, while the analytical approach reached 81.4% picking success with a MED of 14.25 mm, both demonstrating better performance than the single-camera, which had a picking success rate of 77.7% with a MED of 24.02 mm. To evaluate the effect of picking point accuracy in collecting fruits, a series of robotic harvesting experiments were performed utilising a collaborative robot (cobot). It is shown that multi-vision systems can improve picking point localisation, resulting in higher success rates of picking in robotic harvesting. 
+
+**Abstract (ZH)**: 基于多视图的采摘机器人定位策略及其应用 
+
+---
+# Sensing-based Robustness Challenges in Agricultural Robotic Harvesting 
+
+**Title (ZH)**: 基于传感的农业机器人收获稳健性挑战 
+
+**Authors**: C. Beldek, J. Cunningham, M.Aydin, E. Sariyildiz, S. L. Phung, G.Alici  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.12403)  
+
+**Abstract**: This paper presents the challenges agricultural robotic harvesters face in detecting and localising fruits under various environmental disturbances. In controlled laboratory settings, both the traditional HSV (Hue Saturation Value) transformation and the YOLOv8 (You Only Look Once) deep learning model were employed. However, only YOLOv8 was utilised in outdoor experiments, as the HSV transformation was not capable of accurately drawing fruit contours. Experiments include ten distinct fruit patterns with six apples and six oranges. A grid structure for homography (perspective) transformation was employed to convert detected midpoints into 3D world coordinates. The experiments evaluated detection and localisation under varying lighting and background disturbances, revealing accurate performance indoors, but significant challenges outdoors. Our results show that indoor experiments using YOLOv8 achieved 100% detection accuracy, while outdoor conditions decreased performance, with an average accuracy of 69.15% for YOLOv8 under direct sunlight. The study demonstrates that real-world applications reveal significant limitations due to changing lighting, background disturbances, and colour and shape variability. These findings underscore the need for further refinement of algorithms and sensors to enhance the robustness of robotic harvesters for agricultural use. 
+
+**Abstract (ZH)**: 本文探讨了农业机器人收获机在各种环境干扰下检测和定位水果所面临的挑战。在受控实验室环境中，采用了传统的HSV变换和YOLOv8深度学习模型。但在户外实验中，仅使用了YOLOv8，因为HSV变换无法准确勾勒出水果轮廓。实验包括十种不同的水果模式，共六颗苹果和六颗橙子。采用网格结构进行霍夫变换（透视变换），将检测到的中点转换为3D世界坐标。实验在不同光照和背景干扰条件下评估了检测和定位的性能，室内环境下表现准确，但室外环境下存在显著挑战。实验结果显示，使用YOLOv8的室内实验实现了100%的检测准确性，但在直射阳光下的室外条件下，YOLOv8的平均检测准确率为69.15%。研究表明，实际应用中由于光照变化、背景干扰及颜色和形状变化，显示出显著的局限性。这些发现强调了进一步改进算法和传感器的必要性，以提高农业用机器人收获器的鲁棒性。 
+
+---
+# Soft Robotics for Search and Rescue: Advancements, Challenges, and Future Directions 
+
+**Title (ZH)**: 软体机器人在搜索与救援中的进展、挑战与未来方向 
+
+**Authors**: Abhishek Sebastian  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.12373)  
+
+**Abstract**: Soft robotics has emerged as a transformative technology in Search and Rescue (SAR) operations, addressing challenges in navigating complex, hazardous environments that often limit traditional rigid robots. This paper critically examines advancements in soft robotic technologies tailored for SAR applications, focusing on their unique capabilities in adaptability, safety, and efficiency. By leveraging bio-inspired designs, flexible materials, and advanced locomotion mechanisms, such as crawling, rolling, and shape morphing, soft robots demonstrate exceptional potential in disaster scenarios. However, significant barriers persist, including material durability, power inefficiency, sensor integration, and control complexity. This comprehensive review highlights the current state of soft robotics in SAR, discusses simulation methodologies and hardware validations, and introduces performance metrics essential for their evaluation. By bridging the gap between theoretical advancements and practical deployment, this study underscores the potential of soft robotic systems to revolutionize SAR missions and advocates for continued interdisciplinary innovation to overcome existing limitations. 
+
+**Abstract (ZH)**: 软体机器人技术在搜救（SAR）操作中的发展及其挑战 
+
+---
+# Improving Grip Stability Using Passive Compliant Microspine Arrays for Soft Robots in Unstructured Terrain 
+
+**Title (ZH)**: 基于非结构化地形软机器人用被动 compliant 微钩阵列提升握持稳定性 
+
+**Authors**: Lauren Ervin, Harish Bezawada, Vishesh Vikas  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.12347)  
+
+**Abstract**: Microspine grippers are small spines commonly found on insect legs that reinforce surface interaction by engaging with asperities to increase shear force and traction. An array of such microspines, when integrated into the limbs or undercarriage of a robot, can provide the ability to maneuver uneven terrains, traverse inclines, and even climb walls. Conformability and adaptability of soft robots makes them ideal candidates for these applications involving traversal of complex, unstructured terrains. However, there remains a real-life realization gap for soft locomotors pertaining to their transition from controlled lab environment to the field by improving grip stability through effective integration of microspines. We propose a passive, compliant microspine stacked array design to enhance the locomotion capabilities of mobile soft robots, in our case, ones that are motor tendon actuated. We offer a standardized microspine array integration method with effective soft-compliant stiffness integration, and reduced complexity resulting from a single actuator passively controlling them. The presented design utilizes a two-row, stacked microspine array configuration that offers additional gripping capabilities on extremely steep/irregular surfaces from the top row while not hindering the effectiveness of the more frequently active bottom row. We explore different configurations of the microspine array to account for changing surface topologies and enable independent, adaptable gripping of asperities per microspine. Field test experiments are conducted on various rough surfaces including concrete, brick, compact sand, and tree roots with three robots consisting of a baseline without microspines compared against two robots with different combinations of microspine arrays. Tracking results indicate that the inclusion of microspine arrays increases planar displacement on average by 15 and 8 times. 
+
+**Abstract (ZH)**: 微刺爪是一种常见的昆虫腿部小刺，通过与表面不平度啮合以增加切向力和抓地力。将一系列微刺爪整合到机器人的肢体或底盘中，可以增强其在不平地形上移动、跨越斜坡，甚至攀墙的能力。软体机器人的柔韧性和适应性使其成为涉及复杂、非结构化地形穿越的理想选择。然而，软体行者的实际应用仍然存在从受控实验室环境过渡到野外的实现差距，特别是在通过有效整合微刺爪提高抓地稳定性方面。我们提出了一种被动的、柔性的微刺爪堆叠阵列设计，以增强机动作软体机器人的移动能力，特别是对于由肌腱驱动的机器。我们提供了一种标准化的微刺爪阵列整合方法，具有有效的软性柔顺刚度整合，以及由于单一驱动器的被动控制所降低的复杂性。所提出的设计采用两行堆叠的微刺爪阵列配置，上行行的微刺爪提供了在极其陡峭/不规则表面上的额外抓握能力，而不妨碍下行行微刺爪更频繁的抓握效果。我们探索了不同配置的微刺爪阵列，以适应变化的表面拓扑，并使每个微刺爪独立地适应抓握表面不平度。在各种粗糙表面上（包括混凝土、砖块、密砂和树根）进行了实地测试，使用三台机器人进行实验，包括无微刺爪的基线机器人和配备不同微刺爪阵列组合的两台机器人。跟踪结果显示，加入微刺爪阵列平均增加了平面位移15倍和8倍。 
+
+---
+# ExoKit: A Toolkit for Rapid Prototyping of Interactions for Arm-based Exoskeletons 
+
+**Title (ZH)**: ExoKit：基于臂部外骨骼交互的快速原型开发工具-kit 
+
+**Authors**: Marie Muehlhaus, Alexander Liggesmeyer, Jürgen Steimle  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.12747)  
+
+**Abstract**: Exoskeletons open up a unique interaction space that seamlessly integrates users' body movements with robotic actuation. Despite its potential, human-exoskeleton interaction remains an underexplored area in HCI, largely due to the lack of accessible prototyping tools that enable designers to easily develop exoskeleton designs and customized interactive behaviors. We present ExoKit, a do-it-yourself toolkit for rapid prototyping of low-fidelity, functional exoskeletons targeted at novice roboticists. ExoKit includes modular hardware components for sensing and actuating shoulder and elbow joints, which are easy to fabricate and (re)configure for customized functionality and wearability. To simplify the programming of interactive behaviors, we propose functional abstractions that encapsulate high-level human-exoskeleton interactions. These can be readily accessed either through ExoKit's command-line or graphical user interface, a Processing library, or microcontroller firmware, each targeted at different experience levels. Findings from implemented application cases and two usage studies demonstrate the versatility and accessibility of ExoKit for early-stage interaction design. 
+
+**Abstract (ZH)**: 外骨骼开辟了一个独特的交互空间，能够无缝整合用户的肢体运动与机器人驱动。尽管具有潜在价值，但人类-外骨骼交互在HCI领域仍然是一个未充分探索的领域，主要原因是缺乏易于使用的原型工具，使得设计师难以轻松开发外骨骼设计及其定制交互行为。我们介绍了ExoKit，这是一个面向新手机器人工程师的快速原型制作工具包，用于快速制作低保真度功能外骨骼。ExoKit包括用于感知和驱动肩关节和肘关节的模块化硬件组件，这些组件易于制造和重新配置，以实现定制的功能性和穿戴性。为了简化交互行为的编程，我们提出了功能抽象，可以封装高层的人类-外骨骼交互。这些功能抽象可以通过ExoKit的命令行界面或图形用户界面、Processing库或微控制器固件访问，针对不同的经验水平。通过实现的应用案例和两次使用研究的发现，表明ExoKit可以为早期交互设计提供灵活性和易用性。 
+
+---
+# Introducing ROADS: A Systematic Comparison of Remote Control Interaction Concepts for Automated Vehicles at Road Works 
+
+**Title (ZH)**: 引入ROADS：针对道路施工的自动驾驶车辆远程控制交互概念系统比较 
+
+**Authors**: Mark Colley, Jonathan Westhauser, Jonas Andersson, Alexander G. Mirnig, Enrico Rukzio  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.12680)  
+
+**Abstract**: As vehicle automation technology continues to mature, there is a necessity for robust remote monitoring and intervention features. These are essential for intervening during vehicle malfunctions, challenging road conditions, or in areas that are difficult to navigate. This evolution in the role of the human operator - from a constant driver to an intermittent teleoperator - necessitates the development of suitable interaction interfaces. While some interfaces were suggested, a comparative study is missing. We designed, implemented, and evaluated three interaction concepts (path planning, trajectory guidance, and waypoint guidance) with up to four concurrent requests of automated vehicles in a within-subjects study with N=23 participants. The results showed a clear preference for the path planning concept. It also led to the highest usability but lower satisfaction. With trajectory guidance, the fewest requests were resolved. The study's findings contribute to the ongoing development of HMIs focused on the remote assistance of automated vehicles. 
+
+**Abstract (ZH)**: 随着车辆自动化技术的不断成熟， robust 的远程监控和干预功能变得必不可少。这些功能对于在车辆故障、复杂道路条件或难以导航的区域进行干预至关重要。这一角色转变——从不间断的驾驶员到间歇的远程操作员——促使开发合适的交互界面。虽然已有一些界面建议，但缺乏对比研究。我们设计、实现并评估了三种交互概念（路径规划、轨迹引导和航点引导），并在包含23名参与者的单项研究中处理多达四个并发的自动化车辆请求。研究结果显示，路径规划概念最受欢迎，使用便利性最高，但满意度较低。在轨迹引导中，解决的请求最少。研究发现为专注于自动化车辆远程协助的人机界面的进一步发展做出了贡献。 
+
+---
