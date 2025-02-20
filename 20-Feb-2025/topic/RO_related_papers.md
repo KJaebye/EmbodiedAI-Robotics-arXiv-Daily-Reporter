@@ -1,0 +1,105 @@
+# Minimally sufficient structures for information-feedback policies 
+
+**Title (ZH)**: 信息反馈策略的最小充分结构 
+
+**Authors**: Basak Sakcak, Vadim K. Weinstein, Kalle G. Timperi, Steven M. LaValle  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.13852)  
+
+**Abstract**: In this paper, we consider robotic tasks which require a desirable outcome to be achieved in the physical world that the robot is embedded in and interacting with. Accomplishing this objective requires designing a filter that maintains a useful representation of the physical world and a policy over the filter states. A filter is seen as the robot's perspective of the physical world based on limited sensing, memory, and computation and it is represented as a transition system over a space of information states. To this end, the interactions result from the coupling of an internal and an external system, a filter, and the physical world, respectively, through a sensor mapping and an information-feedback policy. Within this setup, we look for sufficient structures, that is, sufficient internal systems and sensors, for accomplishing a given task. We establish necessary and sufficient conditions for these structures to satisfy for information-feedback policies that can be defined over the states of an internal system to exist. We also show that under mild assumptions, minimal internal systems that can represent a particular plan/policy described over the action-observation histories exist and are unique. Finally, the results are applied to determine sufficient structures for distance-optimal navigation in a polygonal environment. 
+
+**Abstract (ZH)**: 在本文中，我们考虑机器人任务，要求在机器人嵌入并与其相互作用的物理世界中实现一个期望的结果。实现这一目标需要设计一个滤波器，该滤波器能够保持物理世界的一个有用表示，并且能够定义在其状态上的策略。滤波器被视为机器人基于有限感知、记忆和计算对物理世界的视角，并被表示为信息状态空间上的转换系统。为此，交互来自于一个内部系统和一个外部系统的耦合，即通过传感器映射和信息反馈策略与物理世界的耦合。在这一框架中，我们寻找足够的结构，即足够的内部系统和传感器，以完成给定的任务。我们建立了对于在内部系统状态上可以定义的信息反馈策略而言，这些结构必须满足的必要且充分条件。我们还展示了在适度假设下，能够表示特定动作-观察历史计划/策略的最小内部系统存在且唯一。最后，我们将结果应用于确定多边形环境中距离最优导航的足够结构。 
+
+---
+# An Online Optimization-Based Trajectory Planning Approach for Cooperative Landing Tasks 
+
+**Title (ZH)**: 基于在线优化的协同降落轨迹规划方法 
+
+**Authors**: Jingshan Chen, Lihan Xu, Henrik Ebel, Peter Eberhard  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.13823)  
+
+**Abstract**: This paper presents a real-time trajectory planning scheme for a heterogeneous multi-robot system (consisting of a quadrotor and a ground mobile robot) for a cooperative landing task, where the landing position, landing time, and coordination between the robots are determined autonomously under the consideration of feasibility and user specifications. The proposed framework leverages the potential of the complementarity constraint as a decision-maker and an indicator for diverse cooperative tasks and extends it to the collaborative landing scenario. In a potential application of the proposed methodology, a ground mobile robot may serve as a mobile charging station and coordinates in real-time with a quadrotor to be charged, facilitating a safe and efficient rendezvous and landing. We verified the generated trajectories in simulation and real-world applications, demonstrating the real-time capabilities of the proposed landing planning framework. 
+
+**Abstract (ZH)**: 本文提出了一种用于异质多机器人系统（包含四旋翼无人机和地面移动机器人）的实时轨迹规划方案，该方案在考虑可行性和用户需求的情况下，自主确定着陆位置、着陆时间和机器人之间的协调。所提出的框架利用互补约束作为决策工具和多样化协作任务的指示器，并将其扩展到协作着陆场景。在所提出方法的潜在应用中，地面移动机器人可以作为一个移动充电站，实时与待充电的四旋翼无人机协调，以实现安全高效的对接和着陆。我们在仿真和实际应用中验证了生成的轨迹，展示了所提出的着陆规划框架的实时能力。 
+
+---
+# Physics-Aware Robotic Palletization with Online Masking Inference 
+
+**Title (ZH)**: 物理感知的带在线蒙版推断的机器人 pallet 化 
+
+**Authors**: Tianqi Zhang, Zheng Wu, Yuxin Chen, Yixiao Wang, Boyuan Liang, Scott Moura, Masayoshi Tomizuka, Mingyu Ding, Wei Zhan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.13443)  
+
+**Abstract**: The efficient planning of stacking boxes, especially in the online setting where the sequence of item arrivals is unpredictable, remains a critical challenge in modern warehouse and logistics management. Existing solutions often address box size variations, but overlook their intrinsic and physical properties, such as density and rigidity, which are crucial for real-world applications. We use reinforcement learning (RL) to solve this problem by employing action space masking to direct the RL policy toward valid actions. Unlike previous methods that rely on heuristic stability assessments which are difficult to assess in physical scenarios, our framework utilizes online learning to dynamically train the action space mask, eliminating the need for manual heuristic design. Extensive experiments demonstrate that our proposed method outperforms existing state-of-the-arts. Furthermore, we deploy our learned task planner in a real-world robotic palletizer, validating its practical applicability in operational settings. 
+
+**Abstract (ZH)**: 在线设定下，集装箱堆叠的高效规划仍然是现代仓库和物流管理中的关键挑战，尤其是在物品到达顺序不可预测的情况下。现有解决方案往往关注盒子大小的变化，但却忽略了密度和刚性等内在和物理属性，这些属性对于实际应用至关重要。我们利用强化学习（RL）并通过动作空间掩码来引导RL策略朝向有效动作，不同于以往依赖于难以在物理场景中评估的启发式稳定性评估方法，我们的框架利用在线学习动态训练动作空间掩码，消除了手动启发式设计的需要。大量实验表明，我们提出的方法优于现有最先进的方法。此外，我们在一款实际应用的机器人托盘化设备中部署了学习得到的任务规划器，验证了其在操作环境中的实用适用性。 
+
+---
+# Generative Predictive Control: Flow Matching Policies for Dynamic and Difficult-to-Demonstrate Tasks 
+
+**Title (ZH)**: 生成预测控制：流匹配策略用于动态和难以演示的任务 
+
+**Authors**: Vince Kurtz, Joel W. Burdick  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.13406)  
+
+**Abstract**: Generative control policies have recently unlocked major progress in robotics. These methods produce action sequences via diffusion or flow matching, with training data provided by demonstrations. But despite enjoying considerable success on difficult manipulation problems, generative policies come with two key limitations. First, behavior cloning requires expert demonstrations, which can be time-consuming and expensive to obtain. Second, existing methods are limited to relatively slow, quasi-static tasks. In this paper, we leverage a tight connection between sampling-based predictive control and generative modeling to address each of these issues. In particular, we introduce generative predictive control, a supervised learning framework for tasks with fast dynamics that are easy to simulate but difficult to demonstrate. We then show how trained flow-matching policies can be warm-started at run-time, maintaining temporal consistency and enabling fast feedback rates. We believe that generative predictive control offers a complementary approach to existing behavior cloning methods, and hope that it paves the way toward generalist policies that extend beyond quasi-static demonstration-oriented tasks. 
+
+**Abstract (ZH)**: 生成式预测控制 recently unlocked major progress in robotics. 
+
+---
+# Low-Complexity Cooperative Payload Transportation for Nonholonomic Mobile Robots Under Scalable Constraints 
+
+**Title (ZH)**: 可扩展约束下的低复杂度协作负载运输方法用于非完整移动机器人 
+
+**Authors**: Renhe Guan, Yuanzhe Wang, Tao Liu, Yan Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.13366)  
+
+**Abstract**: Cooperative transportation, a key aspect of logistics
+cyber-physical systems (CPS), is typically approached using dis tributed control and optimization-based methods. The distributed
+control methods consume less time, but poorly handle and extend
+to multiple constraints. Instead, optimization-based methods
+handle constraints effectively, but they are usually centralized,
+time-consuming and thus not easily scalable to numerous robots.
+To overcome drawbacks of both, we propose a novel cooperative
+transportation method for nonholonomic mobile robots by im proving conventional formation control, which is distributed, has
+a low time-complexity and accommodates scalable constraints.
+The proposed control-based method is testified on a cable suspended payload and divided into two parts, including robot
+trajectory generation and trajectory tracking. Unlike most time consuming trajectory generation methods, ours can generate
+trajectories with only constant time-complexity, needless of global
+maps. As for trajectory tracking, our control-based method not
+only scales easily to multiple constraints as those optimization based methods, but reduces their time-complexity from poly nomial to linear. Simulations and experiments can verify the
+feasibility of our method. 
+
+**Abstract (ZH)**: 合作运输是物流 cyber-物理系统（CPS）的一个关键方面，通常采用分布式控制和基于优化的方法。分布式控制方法耗时较少，但处理多个约束较差。相反，基于优化的方法能够有效处理约束，但通常是集中式的、耗时的，并且不易扩展到多个机器人。为克服这两种方法的缺点，我们提出了一种新型的合作运输方法，通过改进传统的编队控制，该方法是分布式、耗时较低且能容纳扩展性的约束。所提出的基于控制的方法在悬索承载负载中得到验证，并分为两部分，包括机器人轨迹生成和轨迹跟踪。不同于大多数耗时较长的轨迹生成方法，我们的方法仅需常数时间复杂度即可生成轨迹，无需全局地图。在轨迹跟踪方面，我们的基于控制的方法不仅像基于优化的方法那样易于扩展多个约束，而且将它们的时间复杂性从多项式级降低到线性级。模拟和实验可以验证我们方法的有效性。 
+
+---
+# BoundPlanner: A convex-set-based approach to bounded manipulator trajectory planning 
+
+**Title (ZH)**: BoundPlanner: 基于凸集的方法在有界 manipulator 轨迹规划中 
+
+**Authors**: Thies Oelerich, Christian Hartl-Nesic, Florian Beck, Andreas Kugi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.13286)  
+
+**Abstract**: Online trajectory planning enables robot manipulators to react quickly to changing environments or tasks. Many robot trajectory planners exist for known environments but are often too slow for online computations. Current methods in online trajectory planning do not find suitable trajectories in challenging scenarios that respect the limits of the robot and account for collisions. This work proposes a trajectory planning framework consisting of the novel Cartesian path planner based on convex sets, called BoundPlanner, and the online trajectory planner BoundMPC. BoundPlanner explores and maps the collision-free space using convex sets to compute a reference path with bounds. BoundMPC is extended in this work to handle convex sets for path deviations, which allows the robot to optimally follow the path within the bounds while accounting for the robot's kinematics. Collisions of the robot's kinematic chain are considered by a novel convex-set-based collision avoidance formulation independent on the number of obstacles. Simulations and experiments with a 7-DoF manipulator show the performance of the proposed planner compared to state-of-the-art methods. The source code is available at this http URL and videos of the experiments can be found at this http URL 
+
+**Abstract (ZH)**: 在线轨迹规划使机器人 manipulator 能够快速应对变化的环境或任务。尽管存在针对已知环境的轨迹规划器，但它们往往不适合在线计算。当前在线轨迹规划方法在具有挑战性的场景中无法找到同时尊重机器人限制且考虑碰撞的合适轨迹。本项工作提出了一种轨迹规划框架，该框架包括基于凸集的新颖笛卡尔路径规划器 BoundPlanner 和在线轨迹规划器 BoundMPC。BoundPlanner 使用凸集探索和映射碰撞自由空间，计算具有界限的参考路径。在此项工作中，BoundMPC 被扩展以处理路径偏差的凸集，这使得机器人能够在其界限内最优地跟随路径，同时考虑到机器人的运动学。通过一种独立于障碍物数量的基于凸集的碰撞避免公式来考虑机器人的运动学链的碰撞。仿真和使用 7 自由度 manipulator 的实验展示了所提出规划器的性能，与现有最先进的方法进行比较。源代码可在以下网址获取，实验视频可在以下网址查找。 
+
+---
+# An Adaptive Data-Enabled Policy Optimization Approach for Autonomous Bicycle Control 
+
+**Title (ZH)**: 自适应数据驱动的自主自行车控制策略优化方法 
+
+**Authors**: Niklas Persson, Feiran Zhao, Mojtaba Kaheni, Florian Dörfler, Alessandro V. Papadopoulos  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.13676)  
+
+**Abstract**: This paper presents a unified control framework that integrates a Feedback Linearization (FL) controller in the inner loop with an adaptive Data-Enabled Policy Optimization (DeePO) controller in the outer loop to balance an autonomous bicycle. While the FL controller stabilizes and partially linearizes the inherently unstable and nonlinear system, its performance is compromised by unmodeled dynamics and time-varying characteristics. To overcome these limitations, the DeePO controller is introduced to enhance adaptability and robustness. The initial control policy of DeePO is obtained from a finite set of offline, persistently exciting input and state data. To improve stability and compensate for system nonlinearities and disturbances, a robustness-promoting regularizer refines the initial policy, while the adaptive section of the DeePO framework is enhanced with a forgetting factor to improve adaptation to time-varying dynamics. The proposed DeePO+FL approach is evaluated through simulations and real-world experiments on an instrumented autonomous bicycle. Results demonstrate its superiority over the FL-only approach, achieving more precise tracking of the reference lean angle and lean rate. 
+
+**Abstract (ZH)**: 一种结合反馈线性化控制器和自适应数据驱动策略优化控制器的自主自行车平衡统一控制框架 
+
+---

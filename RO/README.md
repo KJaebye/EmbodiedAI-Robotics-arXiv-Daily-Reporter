@@ -2,6 +2,7 @@
 
 | Date | Link | Number of Papers |
 |:----:|:----:|:----------------:|
+| 20-Feb-2025 | [Link](https://github.com/KJaebye/EmbodiedAI-Robotics-arXiv-Daily-Reporter/blob/main/20-Feb-2025/topic/RO_related_papers.md) | 7 |
 | 19-Feb-2025 | [Link](https://github.com/KJaebye/EmbodiedAI-Robotics-arXiv-Daily-Reporter/blob/main/19-Feb-2025/topic/RO_related_papers.md) | 14 |
 | 18-Feb-2025 | [Link](https://github.com/KJaebye/EmbodiedAI-Robotics-arXiv-Daily-Reporter/blob/main/18-Feb-2025/topic/RO_related_papers.md) | 13 |
 | 17-Feb-2025 | [Link](https://github.com/KJaebye/EmbodiedAI-Robotics-arXiv-Daily-Reporter/blob/main/17-Feb-2025/topic/RO_related_papers.md) | 0 |
