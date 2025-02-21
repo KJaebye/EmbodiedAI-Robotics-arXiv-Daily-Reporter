@@ -1,0 +1,78 @@
+# REFLEX Dataset: A Multimodal Dataset of Human Reactions to Robot Failures and Explanations 
+
+**Title (ZH)**: REFLEX数据集：人类对机器人故障反应及解释的多模态数据集 
+
+**Authors**: Parag Khanna, Andreas Naoum, Elmira Yadollahi, Mårten Björkman, Christian Smith  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.14185)  
+
+**Abstract**: This work presents REFLEX: Robotic Explanations to FaiLures and Human EXpressions, a comprehensive multimodal dataset capturing human reactions to robot failures and subsequent explanations in collaborative settings. It aims to facilitate research into human-robot interaction dynamics, addressing the need to study reactions to both initial failures and explanations, as well as the evolution of these reactions in long-term interactions. By providing rich, annotated data on human responses to different types of failures, explanation levels, and explanation varying strategies, the dataset contributes to the development of more robust, adaptive, and satisfying robotic systems capable of maintaining positive relationships with human collaborators, even during challenges like repeated failures. 
+
+**Abstract (ZH)**: REFLEX: 机器人故障及其人类解释的综合多模态数据集，用于协作环境中的机器人与人类交互动态研究 
+
+---
+# Benchmarking Multimodal RAG through a Chart-based Document Question-Answering Generation Framework 
+
+**Title (ZH)**: 基于图表驱动的文档问答生成框架下多模态RAG基准测试 
+
+**Authors**: Yuming Yang, Jiang Zhong, Li Jin, Jingwang Huang, Jingpeng Gao, Qing Liu, Yang Bai, Jingyuan Zhang, Rui Jiang, Kaiwen Wei  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.14864)  
+
+**Abstract**: Multimodal Retrieval-Augmented Generation (MRAG) enhances reasoning capabilities by integrating external knowledge. However, existing benchmarks primarily focus on simple image-text interactions, overlooking complex visual formats like charts that are prevalent in real-world applications. In this work, we introduce a novel task, Chart-based MRAG, to address this limitation. To semi-automatically generate high-quality evaluation samples, we propose CHARt-based document question-answering GEneration (CHARGE), a framework that produces evaluation data through structured keypoint extraction, crossmodal verification, and keypoint-based generation. By combining CHARGE with expert validation, we construct Chart-MRAG Bench, a comprehensive benchmark for chart-based MRAG evaluation, featuring 4,738 question-answering pairs across 8 domains from real-world documents. Our evaluation reveals three critical limitations in current approaches: (1) unified multimodal embedding retrieval methods struggles in chart-based scenarios, (2) even with ground-truth retrieval, state-of-the-art MLLMs achieve only 58.19% Correctness and 73.87% Coverage scores, and (3) MLLMs demonstrate consistent text-over-visual modality bias during Chart-based MRAG reasoning. The CHARGE and Chart-MRAG Bench are released at this https URL. 
+
+**Abstract (ZH)**: 基于图表的多模态检索增强生成（Chart-based MRAG）通过整合外部知识增强了推理能力。然而，现有的基准测试主要集中在简单的图像-文本交互上，忽视了在真实世界应用中常见的如图表等复杂视觉格式。在本文中，我们引入了一个新的任务——基于图表的多模态检索增强生成（Chart-based MRAG），以解决这一局限性。为了半自动地生成高质量的评估样本，我们提出了一种基于图表的数据关键点提取、跨模态验证和关键点生成的框架（CHARGE），并结合专家验证构建了涵盖8个领域的4,738个问答对的基于图表的MRAG基准测试集（Chart-MRAG Bench）。我们的评估揭示了当前方法的三个关键局限性：（1）统一的多模态嵌入检索方法在基于图表的场景中表现不佳，（2）即使使用 ground-truth 检索，最先进的 MLLM 也只有 58.19% 的正确率和 73.87% 的覆盖率，（3）MLLM 在基于图表的 MRAG 推理中表现出一致的文本优先于视觉模态的偏见。CHARGE 和 Chart-MRAG Bench 已在此链接发布：https://xxxxxx。 
+
+---
+# SigLIP 2: Multilingual Vision-Language Encoders with Improved Semantic Understanding, Localization, and Dense Features 
+
+**Title (ZH)**: SigLIP 2：具有增强语义理解、定位能力和密集特征的多语言视觉-语言编码器 
+
+**Authors**: Michael Tschannen, Alexey Gritsenko, Xiao Wang, Muhammad Ferjad Naeem, Ibrahim Alabdulmohsin, Nikhil Parthasarathy, Talfan Evans, Lucas Beyer, Ye Xia, Basil Mustafa, Olivier Hénaff, Jeremiah Harmsen, Andreas Steiner, Xiaohua Zhai  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.14786)  
+
+**Abstract**: We introduce SigLIP 2, a family of new multilingual vision-language encoders that build on the success of the original SigLIP. In this second iteration, we extend the original image-text training objective with several prior, independently developed techniques into a unified recipe -- this includes captioning-based pretraining, self-supervised losses (self-distillation, masked prediction) and online data curation. With these changes, SigLIP 2 models outperform their SigLIP counterparts at all model scales in core capabilities, including zero-shot classification, image-text retrieval, and transfer performance when extracting visual representations for Vision-Language Models (VLMs). Furthermore, the new training recipe leads to significant improvements on localization and dense prediction tasks. We also train variants which support multiple resolutions and preserve the input's native aspect ratio. Finally, we train on a more diverse data-mixture that includes de-biasing techniques, leading to much better multilingual understanding and improved fairness. To allow users to trade off inference cost with performance, we release model checkpoints at four sizes: ViT-B (86M), L (303M), So400m (400M), and g (1B). 
+
+**Abstract (ZH)**: SigLIP 2：一种新的多模态视觉-语言编码器家族及其统一训练方案 
+
+---
+# ReVision: A Dataset and Baseline VLM for Privacy-Preserving Task-Oriented Visual Instruction Rewriting 
+
+**Title (ZH)**: ReRevision: 一个隐私保护任务导向视觉指令重写的数据集和基线VLM 
+
+**Authors**: Abhijit Mishra, Richard Noh, Hsiang Fu, Mingda Li, Minji Kim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.14780)  
+
+**Abstract**: Efficient and privacy-preserving multimodal interaction is essential as AR, VR, and modern smartphones with powerful cameras become primary interfaces for human-computer communication. Existing powerful large vision-language models (VLMs) enabling multimodal interaction often rely on cloud-based processing, raising significant concerns about (1) visual privacy by transmitting sensitive vision data to servers, and (2) their limited real-time, on-device usability. This paper explores Visual Instruction Rewriting, a novel approach that transforms multimodal instructions into text-only commands, allowing seamless integration of lightweight on-device instruction rewriter VLMs (250M parameters) with existing conversational AI systems, enhancing vision data privacy. To achieve this, we present a dataset of over 39,000 examples across 14 domains and develop a compact VLM, pretrained on image captioning datasets and fine-tuned for instruction rewriting. Experimental results, evaluated through NLG metrics such as BLEU, METEOR, and ROUGE, along with semantic parsing analysis, demonstrate that even a quantized version of the model (<500MB storage footprint) can achieve effective instruction rewriting, thus enabling privacy-focused, multimodal AI applications. 
+
+**Abstract (ZH)**: 高效且隐私保护的多模态交互对于AR、VR和配备强大摄像头的现代智能手机成为人类计算机通信的主要接口至关重要。现有的强大多模态视觉语言模型（VLMs）虽然能够支持多模态交互，但往往依赖于基于云的处理，这引发了关于（1）视觉隐私的问题，即传输敏感的视觉数据到服务器，以及（2）其有限的实时设备上可使用性的担忧。本文探讨了视觉指令重写这一新颖的方法，该方法将多模态指令转换为纯文本命令，使得轻量级设备上指令重写视觉语言模型（参数量250M）能够无缝集成到现有的对话AI系统中，从而提升视觉数据的隐私保护。为实现这一目标，我们提供了一个涵盖14个领域超过39,000个示例的数据集，并开发了一个紧凑的视觉语言模型，该模型在图像字幕数据集上进行预训练，并微调以进行指令重写。实验结果通过诸如BLEU、METEOR和ROUGE等自然语言生成（NLG）指标进行评估，并通过语义解析分析，证明即使是该模型的量化版本（存储足迹<500MB）也能实现有效的指令重写，从而使得面向隐私的多模态AI应用成为可能。 
+
+---
+# PLPHP: Per-Layer Per-Head Vision Token Pruning for Efficient Large Vision-Language Models 
+
+**Title (ZH)**: PLPHP：每层每头视觉token剪枝以提高大型视觉-语言模型的效率 
+
+**Authors**: Yu Meng, Kaiyuan Li, Chenran Huang, Chen Gao, Xinlei Chen, Yong Li, Xiaoping Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.14504)  
+
+**Abstract**: Large Vision-Language Models (LVLMs) have demonstrated remarkable capabilities across a range of multimodal tasks. However, their inference efficiency is constrained by the large number of visual tokens processed during decoding. To address this challenge, we propose Per-Layer Per-Head Vision Token Pruning (PLPHP), a two-level fine-grained pruning method including Layer-Level Retention Rate Allocation and Head-Level Vision Token Pruning. Motivated by the Vision Token Re-attention phenomenon across decoder layers, we dynamically adjust token retention rates layer by layer. Layers that exhibit stronger attention to visual information preserve more vision tokens, while layers with lower vision attention are aggressively pruned. Furthermore, PLPHP applies pruning at the attention head level, enabling different heads within the same layer to independently retain critical context. Experiments on multiple benchmarks demonstrate that PLPHP delivers an 18% faster decoding speed and reduces the Key-Value Cache (KV Cache) size by over 50%, all at the cost of 0.46% average performance drop, while also achieving notable performance improvements in multi-image tasks. These results highlight the effectiveness of fine-grained token pruning and contribute to advancing the efficiency and scalability of LVLMs. Our source code will be made publicly available. 
+
+**Abstract (ZH)**: Large Vision-Language Models的细粒度剪枝方法：层级和头部视 tokens 剪枝（PLPHP） 
+
+---
+# SleepGMUformer: A gated multimodal temporal neural network for sleep staging 
+
+**Title (ZH)**: 睡眠GMUformer：一种门控多模态 temporal 神经网络模型用于睡眠分期 
+
+**Authors**: Chenjun Zhao, Xuesen Niu, Xinglin Yu, Long Chen, Na Lv, Huiyu Zhou, Aite Zhao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.14227)  
+
+**Abstract**: Sleep staging is a key method for assessing sleep quality and diagnosing sleep disorders. However, current deep learning methods face challenges: 1) postfusion techniques ignore the varying contributions of different modalities; 2) unprocessed sleep data can interfere with frequency-domain information. To tackle these issues, this paper proposes a gated multimodal temporal neural network for multidomain sleep data, including heart rate, motion, steps, EEG (Fpz-Cz, Pz-Oz), and EOG from WristHR-Motion-Sleep and SleepEDF-78. The model integrates: 1) a pre-processing module for feature alignment, missing value handling, and EEG de-trending; 2) a feature extraction module for complex sleep features in the time dimension; and 3) a dynamic fusion module for real-time modality this http URL show classification accuracies of 85.03% on SleepEDF-78 and 94.54% on WristHR-Motion-Sleep datasets. The model handles heterogeneous datasets and outperforms state-of-the-art models by 1.00%-4.00%. 
+
+**Abstract (ZH)**: 睡眠阶段划分是评估睡眠质量和诊断睡眠障碍的关键方法。然而，当前的深度学习方法面临着挑战：1) 后融合技术忽略了不同模态的 varying contributions；2) 未经处理的睡眠数据会干扰频率域信息。为解决这些问题，本文提出了一种门控多模态时间神经网络，适用于包括心率、运动、步数、EEG（Fpz-Cz, Pz-Oz）和EOG在内的多域睡眠数据，来自WristHR-Motion-Sleep和SleepEDF-78数据集。该模型集成了：1) 一个预处理模块进行特征对齐、缺失值处理和EEG去趋势；2) 一个特征提取模块在时间维度提取复杂睡眠特征；3) 一个动态融合模块进行实时模态融合。实验结果表明，该模型在SleepEDF-78数据集上的分类准确率达到了85.03%，在WristHR-Motion-Sleep数据集上的分类准确率达到了94.54%，能够处理异构数据集，并优于现有最佳模型1.00%-4.00%。 
+
+---
