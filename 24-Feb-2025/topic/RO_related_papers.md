@@ -1,0 +1,117 @@
+# Autonomous helicopter aerial refueling: controller design and performance guarantees 
+
+**Title (ZH)**: 自主旋翼机空中加油：控制设计与性能保证 
+
+**Authors**: Damsara Jayarathne, Santiago Paternain, Sandipan Mishra  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.15562)  
+
+**Abstract**: In this paper, we present a control design methodology, stability criteria, and performance bounds for autonomous helicopter aerial refueling. Autonomous aerial refueling is particularly difficult due to the aerodynamic interaction between the wake of the tanker, the contact-sensitive nature of the maneuver, and the uncertainty in drogue motion. Since the probe tip is located significantly away from the helicopter's center-of-gravity, its position (and velocity) is strongly sensitive to the helicopter's attitude (and angular rates). In addition, the fact that the helicopter is operating at high speeds to match the velocity of the tanker forces it to maintain a particular orientation, making the docking maneuver especially challenging. In this paper, we propose a novel outer-loop position controller that incorporates the probe position and velocity into the feedback loop. The position and velocity of the probe tip depend both on the position (velocity) and on the attitude (angular rates) of the aircraft. We derive analytical guarantees for docking performance in terms of the uncertainty of the drogue motion and the angular acceleration of the helicopter, using the ultimate boundedness property of the closed-loop error dynamics. Simulations are performed on a high-fidelity UH60 helicopter model with a high-fidelity drogue motion under wind effects to validate the proposed approach for realistic refueling scenarios. These high-fidelity simulations reveal that the proposed control methodology yields an improvement of 36% in the 2-norm docking error compared to the existing standard controller. 
+
+**Abstract (ZH)**: 基于探管位置和速度的自主直升机空中加油控制设计方法及性能分析 
+
+---
+# Enhanced Probabilistic Collision Detection for Motion Planning Under Sensing Uncertainty 
+
+**Title (ZH)**: 增强的基于概率的碰撞检测方法以应对感知不确定性下的运动规划 
+
+**Authors**: Xiaoli Wang, Sipu Ruan, Xin Meng, Gregory Chirikjian  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.15525)  
+
+**Abstract**: Probabilistic collision detection (PCD) is essential in motion planning for robots operating in unstructured environments, where considering sensing uncertainty helps prevent damage. Existing PCD methods mainly used simplified geometric models and addressed only position estimation errors. This paper presents an enhanced PCD method with two key advancements: (a) using superquadrics for more accurate shape approximation and (b) accounting for both position and orientation estimation errors to improve robustness under sensing uncertainty. Our method first computes an enlarged surface for each object that encapsulates its observed rotated copies, thereby addressing the orientation estimation errors. Then, the collision probability under the position estimation errors is formulated as a chance-constraint problem that is solved with a tight upper bound. Both the two steps leverage the recently developed normal parameterization of superquadric surfaces. Results show that our PCD method is twice as close to the Monte-Carlo sampled baseline as the best existing PCD method and reduces path length by 30% and planning time by 37%, respectively. A Real2Sim pipeline further validates the importance of considering orientation estimation errors, showing that the collision probability of executing the planned path in simulation is only 2%, compared to 9% and 29% when considering only position estimation errors or none at all. 
+
+**Abstract (ZH)**: 概率碰撞检测（PCD）在机器人在未结构化环境中运动规划中的应用：考虑感知不确定性进行更准确形状 approx 的增强 PCD 方法 
+
+---
+# Robust 4D Radar-aided Inertial Navigation for Aerial Vehicles 
+
+**Title (ZH)**: 稳健的雷达辅助四维惯性导航系统在空中车辆中的应用 
+
+**Authors**: Jinwen Zhu, Jun Hu, Xudong Zhao, Xiaoming Lang, Yinian Mao, Guoquan Huang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.15452)  
+
+**Abstract**: While LiDAR and cameras are becoming ubiquitous for unmanned aerial vehicles (UAVs) but can be ineffective in challenging environments, 4D millimeter-wave (MMW) radars that can provide robust 3D ranging and Doppler velocity measurements are less exploited for aerial navigation. In this paper, we develop an efficient and robust error-state Kalman filter (ESKF)-based radar-inertial navigation for UAVs. The key idea of the proposed approach is the point-to-distribution radar scan matching to provide motion constraints with proper uncertainty qualification, which are used to update the navigation states in a tightly coupled manner, along with the Doppler velocity measurements. Moreover, we propose a robust keyframe-based matching scheme against the prior map (if available) to bound the accumulated navigation errors and thus provide a radar-based global localization solution with high accuracy. Extensive real-world experimental validations have demonstrated that the proposed radar-aided inertial navigation outperforms state-of-the-art methods in both accuracy and robustness. 
+
+**Abstract (ZH)**: 4D毫米波雷达辅助的高效鲁棒惯性导航ethod学研究 
+
+---
+# Self-Mixing Laser Interferometry for Robotic Tactile Sensing 
+
+**Title (ZH)**: 自混合激光干涉ometry在机器人触觉传感中的应用 
+
+**Authors**: Remko Proesmans, Ward Goossens, Lowiek Van den Stockt, Lowie Christiaen, Francis wyffels  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.15390)  
+
+**Abstract**: Self-mixing interferometry (SMI) has been lauded for its sensitivity in detecting microvibrations, while requiring no physical contact with its target. In robotics, microvibrations have traditionally been interpreted as a marker for object slip, and recently as a salient indicator of extrinsic contact. We present the first-ever robotic fingertip making use of SMI for slip and extrinsic contact sensing. The design is validated through measurement of controlled vibration sources, both before and after encasing the readout circuit in its fingertip package. Then, the SMI fingertip is compared to acoustic sensing through three experiments. The results are distilled into a technology decision map. SMI was found to be more sensitive to subtle slip events and significantly more robust against ambient noise. We conclude that the integration of SMI in robotic fingertips offers a new, promising branch of tactile sensing in robotics. 
+
+**Abstract (ZH)**: 自混合干涉ometry (SMI) 由于其在检测微振动方面的高灵敏度而备受推崇，且无需与目标物理接触。在机器人学中，微振动 traditionally 被解读为物体滑动的标志，最近则被视为外在接触的显著指标。我们首次展示了使用 SMI 进行滑动和外在接触感知的机器人指尖设计。该设计通过在安装读出电路的指尖壳体内和外测量控制振动源来进行验证。然后，将 SMI 指尖与声学感知进行三次实验比较。结果被提炼成一项技术决策图。研究发现，SMI 对微妙的滑动事件更为敏感，并且在抵制环境噪声方面表现出显著的 robustness。我们得出结论，将 SMI 集成到机器人指尖中为机器人领域提供了新的、有前景的触觉感知分支。 
+
+---
+# Rapid Online Learning of Hip Exoskeleton Assistance Preferences 
+
+**Title (ZH)**: 快速在线学习髋部外骨骼辅助偏好 
+
+**Authors**: Giulia Ramella, Auke Ijspeert, Mohamed Bouri  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.15366)  
+
+**Abstract**: Hip exoskeletons are increasing in popularity due to their effectiveness across various scenarios and their ability to adapt to different users. However, personalizing the assistance often requires lengthy tuning procedures and computationally intensive algorithms, and most existing methods do not incorporate user feedback. In this work, we propose a novel approach for rapidly learning users' preferences for hip exoskeleton assistance. We perform pairwise comparisons of distinct randomly generated assistive profiles, and collect participants preferences through active querying. Users' feedback is integrated into a preference-learning algorithm that updates its belief, learns a user-dependent reward function, and changes the assistive torque profiles accordingly. Results from eight healthy subjects display distinct preferred torque profiles, and users' choices remain consistent when compared to a perturbed profile. A comprehensive evaluation of users' preferences reveals a close relationship with individual walking strategies. The tested torque profiles do not disrupt kinematic joint synergies, and participants favor assistive torques that are synchronized with their movements, resulting in lower negative power from the device. This straightforward approach enables the rapid learning of users preferences and rewards, grounding future studies on reward-based human-exoskeleton interaction. 
+
+**Abstract (ZH)**: 基于髋部外骨骼的用户偏好快速学习方法：一种增强计算适应性的新途径 
+
+---
+# Realm: Real-Time Line-of-Sight Maintenance in Multi-Robot Navigation with Unknown Obstacles 
+
+**Title (ZH)**: Realm: 多机器人导航中未知障碍物下的实时视线保持 
+
+**Authors**: Ruofei Bai, Shenghai Yuan, Kun Li, Hongliang Guo, Wei-Yun Yau, Lihua Xie  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.15162)  
+
+**Abstract**: Multi-robot navigation in complex environments relies on inter-robot communication and mutual observations for coordination and situational awareness. This paper studies the multi-robot navigation problem in unknown environments with line-of-sight (LoS) connectivity constraints. While previous works are limited to known environment models to derive the LoS constraints, this paper eliminates such requirements by directly formulating the LoS constraints between robots from their real-time point cloud measurements, leveraging point cloud visibility analysis techniques. We propose a novel LoS-distance metric to quantify both the urgency and sensitivity of losing LoS between robots considering potential robot movements. Moreover, to address the imbalanced urgency of losing LoS between two robots, we design a fusion function to capture the overall urgency while generating gradients that facilitate robots' collaborative movement to maintain LoS. The LoS constraints are encoded into a potential function that preserves the positivity of the Fiedler eigenvalue of the robots' network graph to ensure connectivity. Finally, we establish a LoS-constrained exploration framework that integrates the proposed connectivity controller. We showcase its applications in multi-robot exploration in complex unknown environments, where robots can always maintain the LoS connectivity through distributed sensing and communication, while collaboratively mapping the unknown environment. The implementations are open-sourced at this https URL. 
+
+**Abstract (ZH)**: 多机器人在复杂未知环境中的导航依赖于机器人间的通信和相互观测以实现协调和情境感知。本文研究了具有视线（LoS）连接约束的未知环境下的多机器人导航问题。以往工作受限于已知环境模型来推导LoS约束，而本文通过直接从机器人实时点云测量中制定LoS约束，利用点云可见性分析技术消除了此类要求。我们提出了一种新颖的LoS距离度量来量化机器人之间失去视线的紧迫性和敏感性，同时考虑潜在的机器人移动。此外，为了解决机器人之间失去视线紧迫性的不平衡性，我们设计了一种融合函数以捕捉总体紧迫性并生成促进机器人协同运动、保持LoS的梯度。将LoS约束编码成一个势能函数，以保持机器人网络图杨氏特征值的正值，确保连接性。最后，我们建立了一种包含所提连接控制器的LoS约束探索框架。在复杂未知环境下的多机器人探索中展示了该框架的应用，其中机器人可以通过分布式感知和通信始终保持LoS连接，协作绘制未知环境。实现已在以下链接开源：this https URL。 
+
+---
+# DEFT: Differentiable Branched Discrete Elastic Rods for Modeling Furcated DLOs in Real-Time 
+
+**Title (ZH)**: DEFT：可微分分枝离散弹性杆模型及其在实时建模中的应用 
+
+**Authors**: Yizhou Chen, Xiaoyue Wu, Yeheng Zong, Anran Li, Yuzhen Chen, Julie Wu, Bohao Zhang, Ram Vasudevan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.15037)  
+
+**Abstract**: Autonomous wire harness assembly requires robots to manipulate complex branched cables with high precision and reliability. A key challenge in automating this process is predicting how these flexible and branched structures behave under manipulation. Without accurate predictions, it is difficult for robots to reliably plan or execute assembly operations. While existing research has made progress in modeling single-threaded Deformable Linear Objects (DLOs), extending these approaches to Branched Deformable Linear Objects (BDLOs) presents fundamental challenges. The junction points in BDLOs create complex force interactions and strain propagation patterns that cannot be adequately captured by simply connecting multiple single-DLO models. To address these challenges, this paper presents Differentiable discrete branched Elastic rods for modeling Furcated DLOs in real-Time (DEFT), a novel framework that combines a differentiable physics-based model with a learning framework to: 1) accurately model BDLO dynamics, including dynamic propagation at junction points and grasping in the middle of a BDLO, 2) achieve efficient computation for real-time inference, and 3) enable planning to demonstrate dexterous BDLO manipulation. A comprehensive series of real-world experiments demonstrates DEFT's efficacy in terms of accuracy, computational speed, and generalizability compared to state-of-the-art alternatives. Project page:this https URL. 
+
+**Abstract (ZH)**: 自主线束装配要求机器人以高精度和可靠性操作复杂的分支电缆。自动化这一过程的关键挑战在于预测这些柔性和分支结构在操作过程中的行为。缺乏准确的预测，使机器人难以可靠地规划或执行装配操作。虽然现有研究在建模单线Deformable Linear Objects (DLO)方面取得了进展，但将这些方法扩展到Branched Deformable Linear Objects (BDLO)面临根本性的挑战。BDLO中的连接点创造了复杂的力交互和应变传播模式，这些模式无法通过简单连接多个单线模型来充分捕捉。为了应对这些挑战，本文提出了一种新的框架Differentiable discrete branched Elastic rods for modeling Furcated DLOs in real-Time (DEFT)，该框架结合了可微分物理模型和学习框架，以：1）准确建模BDLO动力学，包括分支连接点处的动力学传播和BDLO中部的抓取；2）实现高效的实时推理计算；3）支持对演示多才多艺的BDLO操作的规划。一系列全面的实际实验表明，DEFT在准确度、计算速度和泛化能力方面优于最新的替代方案。项目页面：this https URL。 
+
+---
+# A novel step-by-step procedure for the kinematic calibration of robots using a single draw-wire encoder 
+
+**Title (ZH)**: 一种使用单根抽丝编码器进行机器人运动标定的新型逐点方法 
+
+**Authors**: Giovanni Boschetti, Teresa Sinico  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.14983)  
+
+**Abstract**: Robot positioning accuracy is a key factory when performing high-precision manufacturing tasks. To effectively improve the accuracy of a manipulator, often up to a value close to its repeatability, calibration plays a crucial role. In the literature, various approaches to robot calibration have been proposed, and they range considerably in the type of measurement system and identification algorithm used. Our aim was to develop a novel step-by-step kinematic calibration procedure - where the parameters are subsequently estimated one at a time - that only uses 1D distance measurement data obtained through a draw-wire encoder. To pursue this objective, we derived an analytical approach to find, for each unknown parameter, a set of calibration points where the discrepancy between the measured and predicted distances only depends on that unknown parameter. This reduces the computational burden of the identification process while potentially improving its accuracy. Simulations and experimental tests were carried out on a 6 degrees-of-freedom robot arm: the results confirmed the validity of the proposed strategy. As a result, the proposed step-by-step calibration approach represents a practical, cost-effective and computationally less demanding alternative to standard calibration approaches, making robot calibration more accessible and easier to perform. 
+
+**Abstract (ZH)**: 机器人定位精度是执行高精度制造任务的关键因素。为了有效提高 manipulator 的精度，使其接近重复性误差，标定起着至关重要的作用。文献中提出了多种机器人标定方法，使用的测量系统和识别算法存在较大差异。我们的目标是开发一种新的逐步适配步骤的运动学标定程序——逐步估计每个参数——仅通过钢丝编码器获得的一维距离测量数据。为实现这一目标，我们提出了一种分析方法，以找到一组校准点，在这些点上，测量距离和预测距离之间的偏差仅取决于该未知参数。这种方法减少了识别过程的计算负担，同时可能提高其准确性。在6自由度机器人臂上进行了仿真和实验测试：结果证实了所提策略的有效性。因此，所提出的逐步标定方法代表了一种实用、成本低且计算负担较小的标准标定方法的替代方案，使机器人标定更具可访问性和易操作性。 
+
+---
+# BOSS: Benchmark for Observation Space Shift in Long-Horizon Task 
+
+**Title (ZH)**: BOSS：长 horizon 任务中观察空间转变的基准 
+
+**Authors**: Yue Yang, Linfeng Zhao, Mingyu Ding, Gedas Bertasius, Daniel Szafir  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.15679)  
+
+**Abstract**: Robotics has long sought to develop visual-servoing robots capable of completing previously unseen long-horizon tasks. Hierarchical approaches offer a pathway for achieving this goal by executing skill combinations arranged by a task planner, with each visuomotor skill pre-trained using a specific imitation learning (IL) algorithm. However, even in simple long-horizon tasks like skill chaining, hierarchical approaches often struggle due to a problem we identify as Observation Space Shift (OSS), where the sequential execution of preceding skills causes shifts in the observation space, disrupting the performance of subsequent individually trained skill policies. To validate OSS and evaluate its impact on long-horizon tasks, we introduce BOSS (a Benchmark for Observation Space Shift). BOSS comprises three distinct challenges: "Single Predicate Shift", "Accumulated Predicate Shift", and "Skill Chaining", each designed to assess a different aspect of OSS's negative effect. We evaluated several recent popular IL algorithms on BOSS, including three Behavioral Cloning methods and the Visual Language Action model OpenVLA. Even on the simplest challenge, we observed average performance drops of 67%, 35%, 34%, and 54%, respectively, when comparing skill performance with and without OSS. Additionally, we investigate a potential solution to OSS that scales up the training data for each skill with a larger and more visually diverse set of demonstrations, with our results showing it is not sufficient to resolve OSS. The project page is: this https URL 
+
+**Abstract (ZH)**: 机器人学长期致力于开发能够完成未见过的长周期任务的视觉伺服机器人。分层方法通过由任务规划器执行技能组合来实现这一目标，每个视觉运动技能都使用特定的模仿学习（IL）算法进行预先训练。然而，即使是简单的长周期任务如技能串联，分层方法也常常因我们识别出的观察空间移位（OSS）问题而受阻，即前序技能的顺序执行会导致观察空间的改变，从而干扰后续单独训练的技能策略的表现。为了验证OSS并评估其对长周期任务的影响，我们引入了BOSS（观察空间移位基准）。BOSS包含三个不同的挑战：“单一谓词移位”、“积累谓词移位”和“技能串联”，旨在评估OSS负面影响的不同方面。我们评估了BOSS上几种最近流行的IL算法，包括三种行为克隆方法和Visual Language Action模型OpenVLA。即使在最简单的挑战中，我们观察到技能表现平均下降了67%、35%、34%和54%（有OSS与无OSS进行比较）。此外，我们还探讨了解决OSS的一种潜在方案，即通过使用更大、更具视觉多样性的示范来扩大每个技能的训练数据，但结果显示这不足以解决OSS问题。项目网页：this https URL。 
+
+---

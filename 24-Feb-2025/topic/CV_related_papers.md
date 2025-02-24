@@ -1,0 +1,364 @@
+# DynamicGSG: Dynamic 3D Gaussian Scene Graphs for Environment Adaptation 
+
+**Title (ZH)**: DynamicGSG: 动态3D高斯场景图及其在环境适应中的应用 
+
+**Authors**: Luzhou Ge, Xiangyu Zhu, Zhuo Yang, Xuesong Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.15309)  
+
+**Abstract**: In real-world scenarios, the environment changes caused by agents or human activities make it extremely challenging for robots to perform various long-term tasks. To effectively understand and adapt to dynamic environments, the perception system of a robot needs to extract instance-level semantic information, reconstruct the environment in a fine-grained manner, and update its environment representation in memory according to environment changes. To address these challenges, We propose \textbf{DynamicGSG}, a dynamic, high-fidelity, open-vocabulary scene graph generation system leveraging Gaussian splatting. Our system comprises three key components: (1) constructing hierarchical scene graphs using advanced vision foundation models to represent the spatial and semantic relationships of objects in the environment, (2) designing a joint feature loss to optimize the Gaussian map for incremental high-fidelity reconstruction, and (3) updating the Gaussian map and scene graph according to real environment changes for long-term environment adaptation. Experiments and ablation studies demonstrate the performance and efficacy of the proposed method in terms of semantic segmentation, language-guided object retrieval, and reconstruction quality. Furthermore, we have validated the dynamic updating capabilities of our system in real laboratory environments. The source code will be released at:~\href{this https URL}{this https URL}. 
+
+**Abstract (ZH)**: 在现实场景中，由于代理或人类活动导致的环境变化使机器人完成各种长期任务极具挑战性。为了有效理解和适应动态环境，机器人的感知系统需要提取实例级语义信息，以精细的方式重建环境，并根据环境变化在记忆中更新环境表示。为了解决这些挑战，我们提出了一种基于高斯点扩散的动态、高保真、开放词汇场景图生成系统——DynamicGSG。该系统包含三个关键组件：（1）使用先进的视觉基础模型构建分层场景图以表示环境中的对象的空间和语义关系；（2）设计联合特征损失以优化高斯图，实现增量高保真重建；（3）根据实际环境变化更新高斯图和场景图，实现长期环境适应。实验和消融研究证明了该方法在语义分割、语言引导的物体检索和重建质量方面的性能和有效性。此外，我们还在真实的实验室环境中验证了系统动态更新的能力。源代码将在以下链接发布：this https URL。 
+
+---
+# CurricuVLM: Towards Safe Autonomous Driving via Personalized Safety-Critical Curriculum Learning with Vision-Language Models 
+
+**Title (ZH)**: CurricuVLM：通过个性化安全关键课程学习实现安全自主驾驶的视觉-语言模型方法 
+
+**Authors**: Zihao Sheng, Zilin Huang, Yansong Qu, Yue Leng, Sruthi Bhavanam, Sikai Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.15119)  
+
+**Abstract**: Ensuring safety in autonomous driving systems remains a critical challenge, particularly in handling rare but potentially catastrophic safety-critical scenarios. While existing research has explored generating safety-critical scenarios for autonomous vehicle (AV) testing, there is limited work on effectively incorporating these scenarios into policy learning to enhance safety. Furthermore, developing training curricula that adapt to an AV's evolving behavioral patterns and performance bottlenecks remains largely unexplored. To address these challenges, we propose CurricuVLM, a novel framework that leverages Vision-Language Models (VLMs) to enable personalized curriculum learning for autonomous driving agents. Our approach uniquely exploits VLMs' multimodal understanding capabilities to analyze agent behavior, identify performance weaknesses, and dynamically generate tailored training scenarios for curriculum adaptation. Through comprehensive analysis of unsafe driving situations with narrative descriptions, CurricuVLM performs in-depth reasoning to evaluate the AV's capabilities and identify critical behavioral patterns. The framework then synthesizes customized training scenarios targeting these identified limitations, enabling effective and personalized curriculum learning. Extensive experiments on the Waymo Open Motion Dataset show that CurricuVLM outperforms state-of-the-art baselines across both regular and safety-critical scenarios, achieving superior performance in terms of navigation success, driving efficiency, and safety metrics. Further analysis reveals that CurricuVLM serves as a general approach that can be integrated with various RL algorithms to enhance autonomous driving systems. The code and demo video are available at: this https URL. 
+
+**Abstract (ZH)**: 确保自主驾驶系统的安全性仍然是一个关键挑战，尤其是在处理罕见但可能灾难性的安全关键场景时。虽然现有研究已经探索了为自主车辆（AV）测试生成安全关键场景的方法，但在这些场景的有效融入以增强安全性方面的工作仍然有限。此外，开发能够适应自主车辆不断演化的行为模式和性能瓶颈的训练课程体系仍然有待探索。为应对这些挑战，我们提出了一种名为CurricuVLM的新颖框架，该框架利用视觉语言模型（VLM）为自主驾驶代理实现个性化课程学习。我们的方法独特地利用了VLM的多模态理解能力来分析代理行为、识别性能弱点，并动态生成定制化的训练场景以适应课程学习。通过对带有叙述描述的不安全驾驶情况进行全面分析，CurricuVLM深入推理以评估自主车辆的能力并识别关键行为模式。该框架随后综合生成针对这些识别出的限制的定制化训练场景，从而实现有效的个性化课程学习。在Waymo Open Motion数据集上的广泛实验表明，CurricuVLM在常规场景和安全关键场景中均优于最先进的基线方法，在导航成功率、驾驶效率和安全指标方面取得了优越性能。进一步的分析表明，CurricuVLM作为一种通用方法，可以与其他各种强化学习（RL）算法集成以增强自主驾驶系统。相关代码和演示视频可在以下链接获取：this https URL。 
+
+---
+# Ultra-High-Frequency Harmony: mmWave Radar and Event Camera Orchestrate Accurate Drone Landing 
+
+**Title (ZH)**: 超高频和谐：毫米波雷达与事件相机协同实现精准无人机着陆 
+
+**Authors**: Haoyang Wang, Jingao Xu, Xinyu Luo, Xuecheng Chen, Ting Zhang, Ruiyang Duan, Yunhao Liu, Xinlei Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.14992)  
+
+**Abstract**: For precise, efficient, and safe drone landings, ground platforms should real-time, accurately locate descending drones and guide them to designated spots. While mmWave sensing combined with cameras improves localization accuracy, the lower sampling frequency of traditional frame cameras compared to mmWave radar creates bottlenecks in system throughput. In this work, we replace the traditional frame camera with event camera, a novel sensor that harmonizes in sampling frequency with mmWave radar within the ground platform setup, and introduce mmE-Loc, a high-precision, low-latency ground localization system designed for drone landings. To fully leverage the \textit{temporal consistency} and \textit{spatial complementarity} between these modalities, we propose two innovative modules, \textit{consistency-instructed collaborative tracking} and \textit{graph-informed adaptive joint optimization}, for accurate drone measurement extraction and efficient sensor fusion. Extensive real-world experiments in landing scenarios from a leading drone delivery company demonstrate that mmE-Loc outperforms state-of-the-art methods in both localization accuracy and latency. 
+
+**Abstract (ZH)**: 基于事件相机的毫米波雷达融合地面定位系统mmoE-Locdee for精准、高效、安全的无人机降落 
+
+---
+# Design of a Visual Pose Estimation Algorithm for Moon Landing 
+
+**Title (ZH)**: 月球着陆视觉姿态估计算法设计 
+
+**Authors**: Atakan Süslü, Betül Rana Kuran, Halil Ersin Söken  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.14942)  
+
+**Abstract**: In order to make a pinpoint landing on the Moon, the spacecraft's navigation system must be accurate. To achieve the desired accuracy, navigational drift caused by the inertial sensors must be corrected. One way to correct this drift is to use absolute navigation solutions. In this study, a terrain absolute navigation method to estimate the spacecraft's position and attitude is proposed. This algorithm uses the position of the craters below the spacecraft for estimation. Craters seen by the camera onboard the spacecraft are detected and identified using a crater database known beforehand. In order to focus on estimation algorithms, image processing and crater matching steps are skipped. The accuracy of the algorithm and the effect of the crater number used for estimation are inspected by performing simulations. 
+
+**Abstract (ZH)**: 基于地形的绝对导航方法用于月球着陆器的位置和姿态估计 
+
+---
+# Hier-SLAM++: Neuro-Symbolic Semantic SLAM with a Hierarchically Categorical Gaussian Splatting 
+
+**Title (ZH)**: Hier-SLAM++: 基于层次分类高斯点云的神经符号语义SLAM 
+
+**Authors**: Boying Li, Vuong Chi Hao, Peter J. Stuckey, Ian Reid, Hamid Rezatofighi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.14931)  
+
+**Abstract**: We propose Hier-SLAM++, a comprehensive Neuro-Symbolic semantic 3D Gaussian Splatting SLAM method with both RGB-D and monocular input featuring an advanced hierarchical categorical representation, which enables accurate pose estimation as well as global 3D semantic mapping. The parameter usage in semantic SLAM systems increases significantly with the growing complexity of the environment, making scene understanding particularly challenging and costly. To address this problem, we introduce a novel and general hierarchical representation that encodes both semantic and geometric information in a compact form into 3D Gaussian Splatting, leveraging the capabilities of large language models (LLMs) as well as the 3D generative model. By utilizing the proposed hierarchical tree structure, semantic information is symbolically represented and learned in an end-to-end manner. We further introduce a novel semantic loss designed to optimize hierarchical semantic information through both inter-level and cross-level optimization. Additionally, we propose an improved SLAM system to support both RGB-D and monocular inputs using a feed-forward model. To the best of our knowledge, this is the first semantic monocular Gaussian Splatting SLAM system, significantly reducing sensor requirements for 3D semantic understanding and broadening the applicability of semantic Gaussian SLAM system. We conduct experiments on both synthetic and real-world datasets, demonstrating superior or on-par performance with state-of-the-art NeRF-based and Gaussian-based SLAM systems, while significantly reducing storage and training time requirements. 
+
+**Abstract (ZH)**: Hier-SLAM++：一种结合RGB-D和单目输入的高级分类表示的综合神经符号语义三维高斯点云SLAM方法 
+
+---
+# VaViM and VaVAM: Autonomous Driving through Video Generative Modeling 
+
+**Title (ZH)**: VaViM和VaVAM：通过视频生成模型实现自主驾驶 
+
+**Authors**: Florent Bartoccioni, Elias Ramzi, Victor Besnier, Shashanka Venkataramanan, Tuan-Hung Vu, Yihong Xu, Loick Chambon, Spyros Gidaris, Serkan Odabas, David Hurych, Renaud Marlet, Alexandre Boulch, Mickael Chen, Éloi Zablocki, Andrei Bursuc, Eduardo Valle, Matthieu Cord  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.15672)  
+
+**Abstract**: We explore the potential of large-scale generative video models for autonomous driving, introducing an open-source auto-regressive video model (VaViM) and its companion video-action model (VaVAM) to investigate how video pre-training transfers to real-world driving. VaViM is a simple auto-regressive video model that predicts frames using spatio-temporal token sequences. We show that it captures the semantics and dynamics of driving scenes. VaVAM, the video-action model, leverages the learned representations of VaViM to generate driving trajectories through imitation learning. Together, the models form a complete perception-to-action pipeline. We evaluate our models in open- and closed-loop driving scenarios, revealing that video-based pre-training holds promise for autonomous driving. Key insights include the semantic richness of the learned representations, the benefits of scaling for video synthesis, and the complex relationship between model size, data, and safety metrics in closed-loop evaluations. We release code and model weights at this https URL 
+
+**Abstract (ZH)**: 我们探索大规模生成视频模型在自动驾驶领域的潜力，介绍了一个开源的自回归视频模型（VaViM）及其同伴视频-动作模型（VaVAM），以研究视频预训练如何应用于真实世界的驾驶。VaViM 是一个简单的自回归视频模型，利用时空令牌序列预测帧，展示了其捕捉驾驶场景的语义和动力学的能力。VaVAM 利用 VaViM 中学习到的表示进行模仿学习以生成驾驶轨迹。这两款模型共同形成了一条完整的感知到动作流水线。我们在开放环和闭环驾驶场景中评估了我们的模型，结果表明视频为基础的预训练对自动驾驶具有前景。关键见解包括学习表示的语义 richness、视频合成中的扩大量的影响，以及闭环评估中模型规模、数据与安全指标之间的复杂关系。我们在 https://this.url/ 发布了代码和模型权重。 
+
+---
+# Depth-aware Fusion Method based on Image and 4D Radar Spectrum for 3D Object Detection 
+
+**Title (ZH)**: 基于图像和4D雷达谱的深度感知融合方法用于三维物体检测 
+
+**Authors**: Yue Sun, Yeqiang Qian, Chunxiang Wang, Ming Yang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.15516)  
+
+**Abstract**: Safety and reliability are crucial for the public acceptance of autonomous driving. To ensure accurate and reliable environmental perception, intelligent vehicles must exhibit accuracy and robustness in various environments. Millimeter-wave radar, known for its high penetration capability, can operate effectively in adverse weather conditions such as rain, snow, and fog. Traditional 3D millimeter-wave radars can only provide range, Doppler, and azimuth information for objects. Although the recent emergence of 4D millimeter-wave radars has added elevation resolution, the radar point clouds remain sparse due to Constant False Alarm Rate (CFAR) operations. In contrast, cameras offer rich semantic details but are sensitive to lighting and weather conditions. Hence, this paper leverages these two highly complementary and cost-effective sensors, 4D millimeter-wave radar and camera. By integrating 4D radar spectra with depth-aware camera images and employing attention mechanisms, we fuse texture-rich images with depth-rich radar data in the Bird's Eye View (BEV) perspective, enhancing 3D object detection. Additionally, we propose using GAN-based networks to generate depth images from radar spectra in the absence of depth sensors, further improving detection accuracy. 
+
+**Abstract (ZH)**: 智能驾驶的安全性和可靠性是公众接受的关键。为了确保环境感知的准确性和可靠性，智能车辆必须在各种环境中展现出高度的精度和鲁棒性。毫米波雷达因其高穿透能力，在雨、雪、雾等不良天气条件下仍能有效工作。传统3D毫米波雷达仅能提供物体的距离、多普勒和方位信息。尽管最近出现了4D毫米波雷达，增加了垂直分辨率，但由于恒定虚假警报率（CFAR）的操作，雷达点云仍然较为稀疏。相比之下，摄像头提供丰富的语义细节，但对光照和天气条件敏感。因此，本文利用这两种互补且成本效益高的传感器——4D毫米波雷达和摄像头。通过将4D雷达频谱与深度感知摄像头图像结合，并采用注意力机制，我们在鸟瞰图（BEV）视角下融合纹理丰富的图像和深度丰富的雷达数据，提升3D物体检测。此外，我们提出了使用基于GAN的网络生成深度图像的方法，进一步提高检测准确性。 
+
+---
+# OccProphet: Pushing Efficiency Frontier of Camera-Only 4D Occupancy Forecasting with Observer-Forecaster-Refiner Framework 
+
+**Title (ZH)**: OccProphet: 基于观察者-预测器-精炼器框架的摄像机片面元4D占位预测效率前沿推动 
+
+**Authors**: Junliang Chen, Huaiyuan Xu, Yi Wang, Lap-Pui Chau  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.15180)  
+
+**Abstract**: Predicting variations in complex traffic environments is crucial for the safety of autonomous driving. Recent advancements in occupancy forecasting have enabled forecasting future 3D occupied status in driving environments by observing historical 2D images. However, high computational demands make occupancy forecasting less efficient during training and inference stages, hindering its feasibility for deployment on edge agents. In this paper, we propose a novel framework, i.e., OccProphet, to efficiently and effectively learn occupancy forecasting with significantly lower computational requirements while improving forecasting accuracy. OccProphet comprises three lightweight components: Observer, Forecaster, and Refiner. The Observer extracts spatio-temporal features from 3D multi-frame voxels using the proposed Efficient 4D Aggregation with Tripling-Attention Fusion, while the Forecaster and Refiner conditionally predict and refine future occupancy inferences. Experimental results on nuScenes, Lyft-Level5, and nuScenes-Occupancy datasets demonstrate that OccProphet is both training- and inference-friendly. OccProphet reduces 58\%$\sim$78\% of the computational cost with a 2.6$\times$ speedup compared with the state-of-the-art Cam4DOcc. Moreover, it achieves 4\%$\sim$18\% relatively higher forecasting accuracy. Code and models are publicly available at this https URL. 
+
+**Abstract (ZH)**: 高效学习占用预测的OccProphet框架：在降低计算需求的同时提升预测准确性 
+
+---
+# Synth It Like KITTI: Synthetic Data Generation for Object Detection in Driving Scenarios 
+
+**Title (ZH)**: KITTI风格合成：驾驶场景中的物体检测合成数据生成 
+
+**Authors**: Richard Marcus, Christian Vogel, Inga Jatzkowski, Niklas Knoop, Marc Stamminger  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.15076)  
+
+**Abstract**: An important factor in advancing autonomous driving systems is simulation. Yet, there is rather small progress for transferability between the virtual and real world. We revisit this problem for 3D object detection on LiDAR point clouds and propose a dataset generation pipeline based on the CARLA simulator. Utilizing domain randomization strategies and careful modeling, we are able to train an object detector on the synthetic data and demonstrate strong generalization capabilities to the KITTI dataset. Furthermore, we compare different virtual sensor variants to gather insights, which sensor attributes can be responsible for the prevalent domain gap. Finally, fine-tuning with a small portion of real data almost matches the baseline and with the full training set slightly surpasses it. 
+
+**Abstract (ZH)**: 改进自动驾驶系统的一个重要因素是仿真，但在虚拟世界和现实世界之间的迁移尚缺乏进展。我们重新审视了这一问题，在基于CARLA模拟器的3D物体检测于LiDAR点云上的问题上提出了一种数据集生成管道。通过使用领域随机化策略和精细建模，我们能够在合成数据上训练物体检测器，并展示其在KITTI数据集上的强泛化能力。此外，我们比较了不同的虚拟传感器变体以收集见解，探讨哪些传感器属性可能导致了显著的领域差距。最后，使用一小部分真实数据进行微调几乎能够匹配基线，并在完整的训练集中稍微超越它。 
+
+---
+# Q-PETR: Quant-aware Position Embedding Transformation for Multi-View 3D Object Detection 
+
+**Title (ZH)**: Q-PETR：面向多视图3D物体检测的量化感知位置嵌入变换 
+
+**Authors**: Jiangyong Yu, Changyong Shu, Dawei Yang, Zichen Yu, Xing Hu, Yan Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.15488)  
+
+**Abstract**: PETR-based methods have dominated benchmarks in 3D perception and are increasingly becoming a key component in modern autonomous driving systems. However, their quantization performance significantly degrades when INT8 inference is required, with a degradation of 58.2% in mAP and 36.9% in NDS on the NuScenes dataset. To address this issue, we propose a quantization-aware position embedding transformation for multi-view 3D object detection, termed Q-PETR. Q-PETR offers a quantizationfriendly and deployment-friendly architecture while preserving the original performance of PETR. It substantially narrows the accuracy gap between INT8 and FP32 inference for PETR-series methods. Without bells and whistles, our approach reduces the mAP and NDS drop to within 1% under standard 8-bit per-tensor post-training quantization. Furthermore, our method exceeds the performance of the original PETR in terms of floating-point precision. Extensive experiments across a variety of PETR-series models demonstrate its broad generalization. 
+
+**Abstract (ZH)**: 基于PETR的方法在3D感知基准测试中占据主导地位，并逐渐成为现代自动驾驶系统的关键组件。然而，在要求INT8推理时，其量化性能显著下降，NuScenes数据集上的mAP降噪8.2%，NDS降噪36.9%。为解决这一问题，我们提出了一种适用于多视图3D物体检测的量化感知位置嵌入变换，称为Q-PETR。Q-PETR提供了一种量化友好且部署友好的架构，同时保持了PETR的原有性能。它显著缩小了PETR系列方法在INT8和FP32推理之间准确率的差距。在标准8位张量后训练量化下，我们的方法将mAP和NDS的下降幅度降低到不到1%。此外，相对于浮点精度，我们的方法在性能上超过了原始的PETR。广泛实验表明，该方法在各种PETR系列模型中具有广泛的通用性。 
+
+---
+# Enhancing Vehicle Make and Model Recognition with 3D Attention Modules 
+
+**Title (ZH)**: 增强车辆品牌和型号识别的3D注意力模块 
+
+**Authors**: Narges Semiromizadeh, Omid Nejati Manzari, Shahriar B. Shokouhi, Sattar Mirzakuchaki  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.15398)  
+
+**Abstract**: Vehicle make and model recognition (VMMR) is a crucial component of the Intelligent Transport System, garnering significant attention in recent years. VMMR has been widely utilized for detecting suspicious vehicles, monitoring urban traffic, and autonomous driving systems. The complexity of VMMR arises from the subtle visual distinctions among vehicle models and the wide variety of classes produced by manufacturers. Convolutional Neural Networks (CNNs), a prominent type of deep learning model, have been extensively employed in various computer vision tasks, including VMMR, yielding remarkable results. As VMMR is a fine-grained classification problem, it primarily faces inter-class similarity and intra-class variation challenges. In this study, we implement an attention module to address these challenges and enhance the model's focus on critical areas containing distinguishing features. This module, which does not increase the parameters of the original model, generates three-dimensional (3-D) attention weights to refine the feature map. Our proposed model integrates the attention module into two different locations within the middle section of a convolutional model, where the feature maps from these sections offer sufficient information about the input frames without being overly detailed or overly coarse. The performance of our proposed model, along with state-of-the-art (SOTA) convolutional and transformer-based models, was evaluated using the Stanford Cars dataset. Our proposed model achieved the highest accuracy, 90.69\%, among the compared models. 
+
+**Abstract (ZH)**: 车辆品牌和型号识别（VMMR）是智能交通系统的一个关键组成部分，近年来引起了广泛关注。VMMR 广泛应用于检测可疑车辆、监控城市交通和自动驾驶系统。由于车辆型号之间的微妙视觉差异以及制造商产生的广泛类别的复杂性，VMMR 的复杂性较高。卷积神经网络（CNNs），一种主要的深度学习模型，在各种计算机视觉任务中得到了广泛应用，包括 VMMR，并取得了显著成果。由于 VMMR 是一个细粒度分类问题，它主要面临类内差异和类间相似性的挑战。在这项研究中，我们实现了一个注意力模块来应对这些挑战，并增强模型对包含区分特征的关键区域的关注。该模块不增加原始模型的参数，生成三维（3D）注意力权重以细化特征图。我们提出的模型将注意力模块整合到卷积模型中间部分的两个不同位置，这些部分的特征图提供了足够的输入帧信息，不过度详细或过于粗糙。使用斯坦福汽车数据集评估了我们提出的模型与最先进的（SOTA）卷积和变压器基模型的表现。我们提出的模型在对比模型中达到了最高的准确率，为 90.69%。 
+
+---
+# Super-Resolution for Interferometric Imaging: Model Comparisons and Performance Analysis 
+
+**Title (ZH)**: 干涉成像的超分辨率技术：模型比较与性能分析 
+
+**Authors**: Hasan Berkay Abdioglu, Rana Gursoy, Yagmur Isik, Ibrahim Cem Balci, Taha Unal, Kerem Bayer, Mustafa Ismail Inal, Nehir Serin, Muhammed Furkan Kosar, Gokhan Bora Esmer, Huseyin Uvet  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.15397)  
+
+**Abstract**: This study investigates the application of Super-Resolution techniques in holographic microscopy to enhance quantitative phase imaging. An off-axis Mach-Zehnder interferometric setup was employed to capture interferograms. The study evaluates two Super-Resolution models, RCAN and Real-ESRGAN, for their effectiveness in reconstructing high-resolution interferograms from a microparticle-based dataset. The models were assessed using two primary approaches: image-based analysis for structural detail enhancement and morphological evaluation for maintaining sample integrity and phase map accuracy. The results demonstrate that RCAN achieves superior numerical precision, making it ideal for applications requiring highly accurate phase map reconstruction, while Real-ESRGAN enhances visual quality and structural coherence, making it suitable for visualization-focused applications. This study highlights the potential of Super-Resolution models in overcoming diffraction-imposed resolution limitations in holographic microscopy, opening the way for improved imaging techniques in biomedical diagnostics, materials science, and other high-precision fields. 
+
+**Abstract (ZH)**: 本研究探讨了超分辨率技术在全息显微镜中的应用，以增强定量相位成像。采用偏轴马赫-泽德干涉仪配置捕获干干图。研究评估了RCAN和Real-ESRGAN两种超分辨率模型在从基于微颗粒的数据集中重构高分辨率干干图方面的有效性。使用两种主要方法对模型进行评估：基于图像的分析以增强结构细节以及形态学评估以保持样本完整性和相位图准确性。结果表明，RCAN实现了更高的数值精度，使其适用于需要高准确度相位图重构的应用，而Real-ESRGAN则提高了视觉质量和结构连贯性，使其适用于侧重于可视化应用。本研究强调了超分辨率模型在克服全息显微镜中衍射限制分辨率方面的潜在能力，为生物医学诊断、材料科学和其他高精度领域提供了改进的成像技术。 
+
+---
+# SentiFormer: Metadata Enhanced Transformer for Image Sentiment Analysis 
+
+**Title (ZH)**: 情感former：元数据增强的变换器在图像情感分析中的应用 
+
+**Authors**: Bin Feng, Shulan Ruan, Mingzheng Yang, Dongxuan Han, Huijie Liu, Kai Zhang, Qi Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.15322)  
+
+**Abstract**: As more and more internet users post images online to express their daily emotions, image sentiment analysis has attracted increasing attention. Recently, researchers generally tend to design different neural networks to extract visual features from images for sentiment analysis. Despite the significant progress, metadata, the data (e.g., text descriptions and keyword tags) for describing the image, has not been sufficiently explored in this task. In this paper, we propose a novel Metadata Enhanced Transformer for sentiment analysis (SentiFormer) to fuse multiple metadata and the corresponding image into a unified framework. Specifically, we first obtain multiple metadata of the image and unify the representations of diverse data. To adaptively learn the appropriate weights for each metadata, we then design an adaptive relevance learning module to highlight more effective information while suppressing weaker ones. Moreover, we further develop a cross-modal fusion module to fuse the adaptively learned representations and make the final prediction. Extensive experiments on three publicly available datasets demonstrate the superiority and rationality of our proposed method. 
+
+**Abstract (ZH)**: 基于元数据增强的变压器在图像情感分析中的应用（SentiFormer） 
+
+---
+# Road Traffic Sign Recognition method using Siamese network Combining Efficient-CNN based Encoder 
+
+**Title (ZH)**: 基于Efficient-CNN编码器的Siamese网络道路交通标志识别方法 
+
+**Authors**: Zhenghao Xi, Yuchao Shao, Yang Zheng, Xiang Liu, Yaqi Liu, Yitong Cai  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.15307)  
+
+**Abstract**: Traffic signs recognition (TSR) plays an essential role in assistant driving and intelligent transportation system. However, the noise of complex environment may lead to motion-blur or occlusion problems, which raise the tough challenge to real-time recognition with high accuracy and robust. In this article, we propose IECES-network which with improved encoders and Siamese net. The three-stage approach of our method includes Efficient-CNN based encoders, Siamese backbone and the fully-connected layers. We firstly use convolutional encoders to extract and encode the traffic sign features of augmented training samples and standard images. Then, we design the Siamese neural network with Efficient-CNN based encoder and contrastive loss function, which can be trained to improve the robustness of TSR problem when facing the samples of motion-blur and occlusion by computing the distance between inputs and templates. Additionally, the template branch of the proposed network can be stopped when executing the recognition tasks after training to raise the process speed of our real-time model, and alleviate the computational resource and parameter scale. Finally, we recombined the feature code and a fully-connected layer with SoftMax function to classify the codes of samples and recognize the category of traffic signs. The results of experiments on the Tsinghua-Tencent 100K dataset and the German Traffic Sign Recognition Benchmark dataset demonstrate the performance of the proposed IECESnetwork. Compared with other state-of-the-art methods, in the case of motion-blur and occluded environment, the proposed method achieves competitive performance precision-recall and accuracy metric average is 88.1%, 86.43% and 86.1% with a 2.9M lightweight scale, respectively. Moreover, processing time of our model is 0.1s per frame, of which the speed is increased by 1.5 times compared with existing methods. 
+
+**Abstract (ZH)**: 交通标志识别（TSR）在辅助驾驶和智能交通系统中起着重要作用。然而，复杂环境中的噪声可能导致运动模糊或遮挡问题，这为实时高精度和鲁棒性的识别带来了严峻挑战。本文提出了一种改进的IECES网络，采用改进的编码器和Siamese网络。我们的方法采用三阶段的方法，包括基于Efficient-CNN的编码器、Siamese骨干以及全连接层。首先，我们使用卷积编码器提取并编码增强训练样本和标准图像的交通标志特征。然后，设计基于Efficient-CNN的Siamese神经网络和对比损失函数，通过计算输入与模板之间的距离来提高在运动模糊和遮挡样本面前TSR问题的鲁棒性。此外，在训练结束后，提出的网络的模板分支可以在执行识别任务时停止，从而提高我们实时模型的处理速度，减少计算资源和参数规模。最后，将特征码与带有SoftMax函数的全连接层重新组合，以对样本的类别进行分类和交通标志的识别。实验结果表明，提出的IECES网络在Tsinghua-Tencent 100K数据集和German Traffic Sign Recognition Benchmark数据集上的性能。在运动模糊和遮挡环境中，与其它先进方法相比，所提方法在精度召回率和准确率平均指标分别为88.1%、86.43%和86.1%，且具有2.9M的轻量级规模。此外，我们的模型每帧处理时间为0.1秒，速度比现有方法提高了1.5倍。 
+
+---
+# FlipConcept: Tuning-Free Multi-Concept Personalization for Text-to-Image Generation 
+
+**Title (ZH)**: FlipConcept: 无调优多概念文本到图像生成个性化 
+
+**Authors**: Young Beom Woo, Sun Eung Kim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.15203)  
+
+**Abstract**: Recently, methods that integrate multiple personalized concepts into a single image have garnered significant attention in the field of text-to-image (T2I) generation. However, existing methods experience performance degradation in complex scenes with multiple objects due to distortions in non-personalized regions. To address this issue, we propose FlipConcept, a novel approach that seamlessly integrates multiple personalized concepts into a single image without requiring additional tuning. We introduce guided appearance attention to accurately mimic the appearance of a personalized concept as intended. Additionally, we introduce mask-guided noise mixing to protect non-personalized regions during editing. Lastly, we apply background dilution to minimize attribute leakage, which is the undesired blending of personalized concept attributes with other objects in the image. In our experiments, we demonstrate that the proposed method, despite not requiring tuning, outperforms existing models in both single and multiple personalized concept inference. 
+
+**Abstract (ZH)**: 最近，将多个个性化概念整合到单张图像中的方法在文本到图像（T2I）生成领域引起了广泛关注。然而，现有的方法在包含多个对象的复杂场景中因非个性化区域的失真而性能下降。为了解决这一问题，我们提出了一种名为FlipConcept的新型方法，可以在不需要额外调整的情况下无缝整合多个个性化概念。我们引入了引导外观注意力，以准确模拟所期望的个性化概念的外观。此外，我们引入了掩码引导噪声混合，在编辑过程中保护非个性化区域。最后，我们应用背景稀释以最大限度地减少属性泄露，即个性化概念属性与图像中其他对象的不希望的混合。在我们的实验中，我们证明了所提出的方法即使不需要调整，在单个和多个个性化概念的推理中也优于现有模型。 
+
+---
+# LUMINA-Net: Low-light Upgrade through Multi-stage Illumination and Noise Adaptation Network for Image Enhancement 
+
+**Title (ZH)**: LUMINA-Net：多阶段 illumination 和噪声适应网络的低光照图像增强 
+
+**Authors**: Namrah Siddiqua, Kim Suneung  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.15186)  
+
+**Abstract**: Low-light image enhancement (LLIE) is a crucial task in computer vision aimed to enhance the visual fidelity of images captured under low-illumination conditions. Conventional methods frequently struggle to mitigate pervasive shortcomings such as noise, over-exposure, and color distortion thereby precipitating a pronounced degradation in image quality. To address these challenges, we propose LUMINA-Net an advanced deep learning framework designed specifically by integrating multi-stage illumination and reflectance modules. First, the illumination module intelligently adjusts brightness and contrast levels while meticulously preserving intricate textural details. Second, the reflectance module incorporates a noise reduction mechanism that leverages spatial attention and channel-wise feature refinement to mitigate noise contamination. Through a comprehensive suite of experiments conducted on LOL and SICE datasets using PSNR, SSIM and LPIPS metrics, surpassing state-of-the-art methodologies and showcasing its efficacy in low-light image enhancement. 
+
+**Abstract (ZH)**: 低光照图像增强（LLIE）是计算机视觉中一项关键任务，旨在提高在低光照条件下拍摄的图像的视觉保真度。传统方法常常难以缓解普遍存在的噪声、过度曝光和颜色失真等问题，从而导致图像质量显著下降。为应对这些挑战，我们提出LUMINA-Net一种先进的深度学习框架，通过集成多阶段光照和反射模块进行专门设计。首先，光照模块智能调整亮度和对比度，同时精心保留复杂的纹理细节。其次，反射模块引入了基于空间注意力机制和通道级特征精炼的噪声降低机制，以缓解噪声污染。通过在LOL和SICE数据集上进行综合实验，使用PSNR、SSIM和LPIPS指标超越现有先进方法，并展示了其在低光照图像增强中的有效性。 
+
+---
+# Methods and Trends in Detecting Generated Images: A Comprehensive Review 
+
+**Title (ZH)**: 生成图像检测的方法与趋势综述 
+
+**Authors**: Arpan Mahara, Naphtali Rishe  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.15176)  
+
+**Abstract**: The proliferation of generative models, such as Generative Adversarial Networks (GANs), Diffusion Models, and Variational Autoencoders (VAEs), has enabled the synthesis of high-quality multimedia data. However, these advancements have also raised significant concerns regarding adversarial attacks, unethical usage, and societal harm. Recognizing these challenges, researchers have increasingly focused on developing methodologies to detect synthesized data effectively, aiming to mitigate potential risks. Prior reviews have primarily focused on deepfake detection and often lack coverage of recent advancements in synthetic image detection, particularly methods leveraging multimodal frameworks for improved forensic analysis. To address this gap, the present survey provides a comprehensive review of state-of-the-art methods for detecting and classifying synthetic images generated by advanced generative AI models. This review systematically examines core detection methodologies, identifies commonalities among approaches, and categorizes them into meaningful taxonomies. Furthermore, given the crucial role of large-scale datasets in this field, we present an overview of publicly available datasets that facilitate further research and benchmarking in synthetic data detection. 
+
+**Abstract (ZH)**: 生成模型（如生成对抗网络GANs）、扩散模型和变分自编码器（VAEs）的 proliferations 使得高质量多媒体数据的合成成为可能，但同时也引发了关于对抗攻击、不道德使用和社会危害的重大担忧。认识到这些挑战，研究人员越来越多地关注开发有效的合成数据检测方法，旨在减轻潜在风险。以往的综述主要集中在虚假信息检测上，通常缺乏对合成图像检测的最新进展的覆盖，特别是利用多模态框架提升法医分析的方法。为了弥补这一差距，本综述提供了对先进生成AI模型生成的合成图像检测和分类方法的全面回顾，系统地考察了核心检测方法，明确了不同方法的共性，并按有意义的分类对其进行分类。此外，鉴于大规模数据集在此领域的关键作用，我们还介绍了促进合成数据检测进一步研究和基准测试的公有数据集概况。 
+
+---
+# Confidence-Weighted Boundary-Aware Learning for Semi-Supervised Semantic Segmentation 
+
+**Title (ZH)**: 带有边界意识的自信心度加权半监督语义分割 
+
+**Authors**: Ebenezer Tarubinga, Jenifer Kalafatovich Espinoza  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.15152)  
+
+**Abstract**: Semi-supervised semantic segmentation (SSSS) aims to improve segmentation performance by utilising unlabeled data alongside limited labeled samples. Existing SSSS methods often face challenges such as coupling, where over-reliance on initial labeled data leads to suboptimal learning; confirmation bias, where incorrect predictions reinforce themselves repeatedly; and boundary blur caused by insufficient boundary-awareness and ambiguous edge information. To address these issues, we propose CW-BASS, a novel framework for SSSS. In order to mitigate the impact of incorrect predictions, we assign confidence weights to pseudo-labels. Additionally, we leverage boundary-delineation techniques, which, despite being extensively explored in weakly-supervised semantic segmentation (WSSS) remain under-explored in SSSS. Specifically, our approach: (1) reduces coupling through a confidence-weighted loss function that adjusts the influence of pseudo-labels based on their predicted confidence scores, (2) mitigates confirmation bias with a dynamic thresholding mechanism that learns to filter out pseudo-labels based on model performance, (3) resolves boundary blur with a boundary-aware module that enhances segmentation accuracy near object boundaries, and (4) reduces label noise with a confidence decay strategy that progressively refines pseudo-labels during training. Extensive experiments on the Pascal VOC 2012 and Cityscapes demonstrate that our method achieves state-of-the-art performance. Moreover, using only 1/8 or 12.5\% of labeled data, our method achieves a mIoU of 75.81 on Pascal VOC 2012, highlighting its effectiveness in limited-label settings. 
+
+**Abstract (ZH)**: 半监督语义分割（SSSS）旨在通过利用未标注数据和有限的标注样本来提高分割性能。为了解决现有SSSS方法中存在的耦合、确认偏差以及边界模糊等问题，我们提出了一种新的半监督语义分割框架CW-BASS。该方法通过赋予伪标签置信权重来减轻错误预测的影响，并利用边界定义技术，同时减少伪标签中的耦合、减轻确认偏差、解决边界模糊，并降低标签噪声。实验结果表明，该方法在Pascal VOC 2012和Cityscapes数据集上达到了最先进的性能，仅使用1/8或12.5%的标注数据即可实现Pascal VOC 2012上75.81的mIoU。 
+
+---
+# Can Hallucination Correction Improve Video-Language Alignment? 
+
+**Title (ZH)**: 幻觉纠正能改善视频-语言对齐？ 
+
+**Authors**: Lingjun Zhao, Mingyang Xie, Paola Cascante-Bonilla, Hal Daumé III, Kwonjoon Lee  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.15079)  
+
+**Abstract**: Large Vision-Language Models often generate hallucinated content that is not grounded in its visual inputs. While prior work focuses on mitigating hallucinations, we instead explore leveraging hallucination correction as a training objective to improve video-language alignment. We introduce HACA, a self-training framework learning to correct hallucinations in descriptions that do not align with the video content. By identifying and correcting inconsistencies, HACA enhances the model's ability to align video and textual representations for spatio-temporal reasoning. Our experimental results show consistent gains in video-caption binding and text-to-video retrieval tasks, demonstrating that hallucination correction-inspired tasks serve as an effective strategy for improving vision and language alignment. 
+
+**Abstract (ZH)**: 大型多模态模型常常生成与视觉输入不符的幻想内容。虽然现有工作主要集中在减轻幻觉，但我们 Instead探索将幻觉修正作为训练目标，以提高视频-语言对齐。我们提出了HACA，一个自我训练框架，学习修正与视频内容不一致的描述中的幻觉。通过识别和修正不一致性，HACA 提高了模型在空间-时间推理方面将视频和文本表示对齐的能力。我们的实验结果表明，在视频字幕绑定和文本到视频检索任务中均取得了一致的改进，证明了受幻觉修正启发的任务是提高视觉和语言对齐的有效策略。 
+
+---
+# Hardware-Friendly Static Quantization Method for Video Diffusion Transformers 
+
+**Title (ZH)**: 面向硬件的视频扩散变换器静态量化方法 
+
+**Authors**: Sanghyun Yi, Qingfeng Liu, Mostafa El-Khamy  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.15077)  
+
+**Abstract**: Diffusion Transformers for video generation have gained significant research interest since the impressive performance of SORA. Efficient deployment of such generative-AI models on GPUs has been demonstrated with dynamic quantization. However, resource-constrained devices cannot support dynamic quantization, and need static quantization of the models for their efficient deployment on AI processors. In this paper, we propose a novel method for the post-training quantization of OpenSora\cite{opensora}, a Video Diffusion Transformer, without relying on dynamic quantization techniques. Our approach employs static quantization, achieving video quality comparable to FP16 and dynamically quantized ViDiT-Q methods, as measured by CLIP, and VQA metrics. In particular, we utilize per-step calibration data to adequately provide a post-training statically quantized model for each time step, incorporating channel-wise quantization for weights and tensor-wise quantization for activations. By further applying the smooth-quantization technique, we can obtain high-quality video outputs with the statically quantized models. Extensive experimental results demonstrate that static quantization can be a viable alternative to dynamic quantization for video diffusion transformers, offering a more efficient approach without sacrificing performance. 
+
+**Abstract (ZH)**: 基于OpenSora的视频扩散变压器的后训练静态量化方法 
+
+---
+# A Rapid Test for Accuracy and Bias of Face Recognition Technology 
+
+**Title (ZH)**: 快速检测面部识别技术准确性和偏差的方法 
+
+**Authors**: Manuel Knott, Ignacio Serna, Ethan Mann, Pietro Perona  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.14996)  
+
+**Abstract**: Measuring the accuracy of face recognition (FR) systems is essential for improving performance and ensuring responsible use. Accuracy is typically estimated using large annotated datasets, which are costly and difficult to obtain. We propose a novel method for 1:1 face verification that benchmarks FR systems quickly and without manual annotation, starting from approximate labels (e.g., from web search results). Unlike previous methods for training set label cleaning, ours leverages the embedding representation of the models being evaluated, achieving high accuracy in smaller-sized test datasets. Our approach reliably estimates FR accuracy and ranking, significantly reducing the time and cost of manual labeling. We also introduce the first public benchmark of five FR cloud services, revealing demographic biases, particularly lower accuracy for Asian women. Our rapid test method can democratize FR testing, promoting scrutiny and responsible use of the technology. Our method is provided as a publicly accessible tool at this https URL 
+
+**Abstract (ZH)**: 测量面部识别系统的准确性对于提升性能和确保负责任的使用至关重要。准确性通常通过大型标注数据集进行估计，但这些数据集成本高昂且获取困难。我们提出了一种新型的1:1面部验证方法，可以在无需手动标注的情况下快速评估面部识别系统，并从近似标签（例如，从网络搜索结果中获得）开始。与以往用于训练集标签清理的方法不同，我们的方法利用了所评估模型的嵌入表示，从而在较小规模的测试数据集中实现了高准确性。我们的方法可靠地估计了面部识别的准确性和排名，显著减少了人工标注所需的时间和成本。我们还引入了第一个公开的五种面部识别云服务的基准测试，揭示了 demographic 偏见，特别是亚洲女性的准确性较低。我们的快速测试方法可以促进面部识别技术的民主化测试，推动对该技术的审视和负责任的使用。我们的方法作为可访问工具提供于此 https://链接。 
+
+---
+# FacaDiffy: Inpainting Unseen Facade Parts Using Diffusion Models 
+
+**Title (ZH)**: FacaDiffy: 使用扩散模型 inpaint 未见墙面部分 
+
+**Authors**: Thomas Froech, Olaf Wysocki, Yan Xia, Junyu Xie, Benedikt Schwab, Daniel Cremers, Thomas H. Kolbe  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.14940)  
+
+**Abstract**: High-detail semantic 3D building models are frequently utilized in robotics, geoinformatics, and computer vision. One key aspect of creating such models is employing 2D conflict maps that detect openings' locations in building facades. Yet, in reality, these maps are often incomplete due to obstacles encountered during laser scanning. To address this challenge, we introduce FacaDiffy, a novel method for inpainting unseen facade parts by completing conflict maps with a personalized Stable Diffusion model. Specifically, we first propose a deterministic ray analysis approach to derive 2D conflict maps from existing 3D building models and corresponding laser scanning point clouds. Furthermore, we facilitate the inpainting of unseen facade objects into these 2D conflict maps by leveraging the potential of personalizing a Stable Diffusion model. To complement the scarcity of real-world training data, we also develop a scalable pipeline to produce synthetic conflict maps using random city model generators and annotated facade images. Extensive experiments demonstrate that FacaDiffy achieves state-of-the-art performance in conflict map completion compared to various inpainting baselines and increases the detection rate by $22\%$ when applying the completed conflict maps for high-definition 3D semantic building reconstruction. The code is be publicly available in the corresponding GitHub repository: this https URL 
+
+**Abstract (ZH)**: 高详细语义3D建筑模型在机器人技术、地理信息和计算机视觉中的广泛应用需要利用二维冲突图来检测建筑立面的开口位置。然而，由于激光扫描过程中遇到的障碍物，这些图往往不完整。为了解决这一挑战，我们引入了FacaDiffy，这是一种通过使用个性化Stable Diffusion模型填充未见立面部分并完成冲突图的新型方法。具体而言，我们首先提出了一种确定性射线分析方法，从现有的3D建筑模型和相应的激光扫描点云中推导出二维冲突图。此外，我们利用个性化Stable Diffusion模型的潜力，促进未见立面对象的填充，使其集成到这些二维冲突图中。为补充现实世界训练数据的不足，我们还开发了一种可扩展的工作流程，使用随机城市模型生成器和注释立面图像来生成合成冲突图。广泛实验表明，FacaDiffy 在冲突图填充方面的性能超过了各种插值基线，并且当使用完成后的冲突图进行高精度3D语义建筑重建时，检测率提高了22%。相关代码将在对应的GitHub仓库中公开：this https URL 
+
+---
+# Online hand gesture recognition using Continual Graph Transformers 
+
+**Title (ZH)**: 使用 Continual Graph Transformers 的在线手部手势识别 
+
+**Authors**: Rim Slama, Wael Rabah, Hazem Wannous  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.14939)  
+
+**Abstract**: Online continuous action recognition has emerged as a critical research area due to its practical implications in real-world applications, such as human-computer interaction, healthcare, and robotics. Among various modalities, skeleton-based approaches have gained significant popularity, demonstrating their effectiveness in capturing 3D temporal data while ensuring robustness to environmental variations. However, most existing works focus on segment-based recognition, making them unsuitable for real-time, continuous recognition scenarios. In this paper, we propose a novel online recognition system designed for real-time skeleton sequence streaming. Our approach leverages a hybrid architecture combining Spatial Graph Convolutional Networks (S-GCN) for spatial feature extraction and a Transformer-based Graph Encoder (TGE) for capturing temporal dependencies across frames. Additionally, we introduce a continual learning mechanism to enhance model adaptability to evolving data distributions, ensuring robust recognition in dynamic environments. We evaluate our method on the SHREC'21 benchmark dataset, demonstrating its superior performance in online hand gesture recognition. Our approach not only achieves state-of-the-art accuracy but also significantly reduces false positive rates, making it a compelling solution for real-time applications. The proposed system can be seamlessly integrated into various domains, including human-robot collaboration and assistive technologies, where natural and intuitive interaction is crucial. 
+
+**Abstract (ZH)**: 基于骨架的在线连续动作识别已 emerges as a critical research area due to its practical implications in real-world applications, such as human-computer interaction, healthcare, and robotics. 
+
+---
+# Display Field-Of-View Agnostic Robust CT Kernel Synthesis Using Model-Based Deep Learning 
+
+**Title (ZH)**: 基于模型的深度学习在不依赖显示场视野的情况下 robust CT 内核合成 
+
+**Authors**: Hemant Kumar Aggarwal, Antony Jerald, Phaneendra K. Yalavarthy, Rajesh Langoju, Bipul Das  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.14920)  
+
+**Abstract**: In X-ray computed tomography (CT) imaging, the choice of reconstruction kernel is crucial as it significantly impacts the quality of clinical images. Different kernels influence spatial resolution, image noise, and contrast in various ways. Clinical applications involving lung imaging often require images reconstructed with both soft and sharp kernels. The reconstruction of images with different kernels requires raw sinogram data and storing images for all kernels increases processing time and storage requirements. The Display Field-of-View (DFOV) adds complexity to kernel synthesis, as data acquired at different DFOVs exhibit varying levels of sharpness and details. This work introduces an efficient, DFOV-agnostic solution for image-based kernel synthesis using model-based deep learning. The proposed method explicitly integrates CT kernel and DFOV characteristics into the forward model. Experimental results on clinical data, along with quantitative analysis of the estimated modulation transfer function using wire phantom data, clearly demonstrate the utility of the proposed method in real-time. Additionally, a comparative study with a direct learning network, that lacks forward model information, shows that the proposed method is more robust to DFOV variations. 
+
+**Abstract (ZH)**: 在X射线计算机断层成像（CT）中，重建核的选择至关重要，因为它显著影响临床图像的质量。不同的重建核以不同方式影响空间分辨率、图像噪声和对比度。涉及肺部成像的临床应用通常需要使用软核和锐核重建图像。使用不同重建核重建图像需要原始.sinogram数据，并存储所有核的图像会增加处理时间和存储需求。显示视野（DFOV）的引入增加了核合成的复杂性，因为在不同DFOV下获取的数据具有不同的清晰度和细节水平。本工作提出了一种适用于DFOV的基于图像的重建核合成的高效解决方案，该方法利用基于模型的深度学习方法，明确将CT重建核和DFOV特性整合到正向模型中。临床数据的实验结果和使用线圈模型数据进行的调制传递函数的定量分析清楚地证明了所提出方法在实时应用中的有效性。此外，与缺乏正向模型信息的直接学习网络进行的比较研究显示，所提出的方法在DFOV变化时更为稳健。 
+
+---
+# RAPTOR: Refined Approach for Product Table Object Recognition 
+
+**Title (ZH)**: RAPTOR：精炼的产品表格对象识别方法 
+
+**Authors**: Eliott Thomas, Mickael Coustaty, Aurelie Joseph, Elodie Carel, Vincent Poulain D'Andecy, Jean-Marc Ogier  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.14918)  
+
+**Abstract**: Extracting tables from documents is a critical task across various industries, especially on business documents like invoices and reports. Existing systems based on DEtection TRansformer (DETR) such as TAble TRansformer (TATR), offer solutions for Table Detection (TD) and Table Structure Recognition (TSR) but face challenges with diverse table formats and common errors like incorrect area detection and overlapping columns. This research introduces RAPTOR, a modular post-processing system designed to enhance state-of-the-art models for improved table extraction, particularly for product tables. RAPTOR addresses recurrent TD and TSR issues, improving both precision and structural predictions. For TD, we use DETR (trained on ICDAR 2019) and TATR (trained on PubTables-1M and FinTabNet), while TSR only relies on TATR. A Genetic Algorithm is incorporated to optimize RAPTOR's module parameters, using a private dataset of product tables to align with industrial needs. We evaluate our method on two private datasets of product tables, the public DOCILE dataset (which contains tables similar to our target product tables), and the ICDAR 2013 and ICDAR 2019 datasets. The results demonstrate that while our approach excels at product tables, it also maintains reasonable performance across diverse table formats. An ablation study further validates the contribution of each module in our system. 
+
+**Abstract (ZH)**: 从文档中提取表格是各个行业中的关键任务，特别是在发票和报告等商务文档中。基于DEtection TRansformer (DETR)的系统，如TAble TRansformer (TATR)，为表格检测 (TD) 和表格结构识别 (TSR) 提供了解决方案，但在处理多样化的表格格式和常见错误（如检测区域不准确和列重叠）方面仍面临挑战。本研究介绍了一种模块化后处理系统RAPTOR，旨在增强最先进的表格提取模型，特别是在产品表格方面的表现。RAPTOR解决了反复出现的表格检测和结构识别问题，提高了准确性和结构预测。对于表格检测，我们使用DETR（以ICDAR 2019数据集训练）和TATR（以PubTables-1M和FinTabNet数据集训练），而结构识别仅依赖于TATR。我们采用了遗传算法来优化RAPTOR的模块参数，并使用包含产品表格的私有数据集来满足工业需求。我们在两个私有产品表格数据集、公开的DOCILE数据集（包含类似目标产品表格的表格）以及ICDAR 2013和ICDAR 2019数据集上评估了我们的方法。结果显示，虽然我们的方法在产品表格方面表现优异，但在多样化的表格格式方面也保持了合理的性能。进一步的消融研究验证了我们系统中每个模块的贡献。 
+
+---
+# CoDiff: Conditional Diffusion Model for Collaborative 3D Object Detection 
+
+**Title (ZH)**: CoDiff：条件扩散模型在协作3D对象检测中的应用 
+
+**Authors**: Zhe Huang, Shuo Wang, Yongcai Wang, Lei Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.14891)  
+
+**Abstract**: Collaborative 3D object detection holds significant importance in the field of autonomous driving, as it greatly enhances the perception capabilities of each individual agent by facilitating information exchange among multiple agents. However, in practice, due to pose estimation errors and time delays, the fusion of information across agents often results in feature representations with spatial and temporal noise, leading to detection errors. Diffusion models naturally have the ability to denoise noisy samples to the ideal data, which motivates us to explore the use of diffusion models to address the noise problem between multi-agent systems. In this work, we propose CoDiff, a novel robust collaborative perception framework that leverages the potential of diffusion models to generate more comprehensive and clearer feature representations. To the best of our knowledge, this is the first work to apply diffusion models to multi-agent collaborative perception. Specifically, we project high-dimensional feature map into the latent space of a powerful pre-trained autoencoder. Within this space, individual agent information serves as a condition to guide the diffusion model's sampling. This process denoises coarse feature maps and progressively refines the fused features. Experimental study on both simulated and real-world datasets demonstrates that the proposed framework CoDiff consistently outperforms existing relevant methods in terms of the collaborative object detection performance, and exhibits highly desired robustness when the pose and delay information of agents is with high-level noise. 
+
+**Abstract (ZH)**: 协作三维物体检测在自动驾驶领域具有重要意义，它通过促进多个代理之间的信息交换，极大地增强了每个个体代理的感知能力。然而，在实践中，由于姿态估计误差和时间延迟，代理之间信息融合往往会导致带有空间和时间噪声的特征表示，从而导致检测错误。扩散模型天然具有将嘈杂样本去噪至理想数据的能力，这激发了我们探索使用扩散模型解决多代理系统之间的噪声问题。在本文中，我们提出了一种新颖的鲁棒协作感知框架CoDiff，该框架利用扩散模型的潜力生成更加全面和清晰的特征表示。据我们所知，这是首次将扩散模型应用于多代理协作感知。具体地，我们将高维特征图投影到强大预训练自编码器的潜在空间中，在该空间中，个体代理信息作为条件引导扩散模型的采样过程。此过程去噪粗糙特征图并逐步细化融合特征。在模拟数据集和真实世界数据集上的实验研究证明，所提出的框架CoDiff在协作物体检测性能上始终优于现有相关方法，并且在代理的姿态和延迟信息带有高水平噪声时表现出高度期望的鲁棒性。 
+
+---
+# d-Sketch: Improving Visual Fidelity of Sketch-to-Image Translation with Pretrained Latent Diffusion Models without Retraining 
+
+**Title (ZH)**: d-Sketch: 使用预训练的潜扩散模型提高从素描到图像转换的视觉保真度而不重新训练 
+
+**Authors**: Prasun Roy, Saumik Bhattacharya, Subhankar Ghosh, Umapada Pal, Michael Blumenstein  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.14007)  
+
+**Abstract**: Structural guidance in an image-to-image translation allows intricate control over the shapes of synthesized images. Generating high-quality realistic images from user-specified rough hand-drawn sketches is one such task that aims to impose a structural constraint on the conditional generation process. While the premise is intriguing for numerous use cases of content creation and academic research, the problem becomes fundamentally challenging due to substantial ambiguities in freehand sketches. Furthermore, balancing the trade-off between shape consistency and realistic generation contributes to additional complexity in the process. Existing approaches based on Generative Adversarial Networks (GANs) generally utilize conditional GANs or GAN inversions, often requiring application-specific data and optimization objectives. The recent introduction of Denoising Diffusion Probabilistic Models (DDPMs) achieves a generational leap for low-level visual attributes in general image synthesis. However, directly retraining a large-scale diffusion model on a domain-specific subtask is often extremely difficult due to demanding computation costs and insufficient data. In this paper, we introduce a technique for sketch-to-image translation by exploiting the feature generalization capabilities of a large-scale diffusion model without retraining. In particular, we use a learnable lightweight mapping network to achieve latent feature translation from source to target domain. Experimental results demonstrate that the proposed method outperforms the existing techniques in qualitative and quantitative benchmarks, allowing high-resolution realistic image synthesis from rough hand-drawn sketches. 
+
+**Abstract (ZH)**: 结构引导在图像到图像转换中允许对合成图像形状的精细控制。基于生成式对抗网络的条件生成过程旨在从用户指定的手绘草图生成高质量逼真图像，这一任务施加了结构性约束。尽管这一前提在内容创作和学术研究的诸多应用场景中颇具吸引力，但由于手绘草图存在大量模糊性，问题变得从根本上具有挑战性。形状一致性与逼真生成之间的trade-off平衡进一步增加了过程的复杂性。现有的基于生成式对抗网络（GANs）的方法通常使用条件GAN或GAN逆运算，往往需要应用特定的数据和优化目标。最近提出的去噪扩散概率模型（DDPMs）在一般图像合成中的低级视觉属性生成方面实现了飞跃性进步。然而，直接在特定领域的小任务上训练大规模扩散模型通常由于计算成本高和数据不足而极其困难。在本文中，我们提出了一种技术，在不重新训练大规模扩散模型的情况下利用其特征泛化能力实现草图到图像的转换。特别是，我们使用一个可学习的轻量级映射网络实现从源域到目标域的潜在特征转换。实验结果表明，所提出的方法在定性和定量基准上优于现有技术，能够从粗糙的手绘草图生成高分辨率的逼真图像。 
+
+---
+# High Quality Segmentation for Ultra High-resolution Images 
+
+**Title (ZH)**: 超高清图像的高质分割 
+
+**Authors**: Tiancheng Shen, Yuechen Zhang, Lu Qi, Jason Kuen, Xingyu Xie, Jianlong Wu, Zhe Lin, Jiaya Jia  
+
+**Link**: [PDF](https://arxiv.org/pdf/2111.14482)  
+
+**Abstract**: To segment 4K or 6K ultra high-resolution images needs extra computation consideration in image segmentation. Common strategies, such as down-sampling, patch cropping, and cascade model, cannot address well the balance issue between accuracy and computation cost. Motivated by the fact that humans distinguish among objects continuously from coarse to precise levels, we propose the Continuous Refinement Model~(CRM) for the ultra high-resolution segmentation refinement task. CRM continuously aligns the feature map with the refinement target and aggregates features to reconstruct these images' details. Besides, our CRM shows its significant generalization ability to fill the resolution gap between low-resolution training images and ultra high-resolution testing ones. We present quantitative performance evaluation and visualization to show that our proposed method is fast and effective on image segmentation refinement. Code will be released at this https URL. 
+
+**Abstract (ZH)**: 超高清图像分割需要额外的计算考虑。常规策略如下采样、局部裁剪和级联模型无法很好地解决准确性和计算成本之间的平衡问题。受人类从粗略到精细不断区分物体的启发，我们提出了连续精炼模型（Continuous Refinement Model，CRM）用于超高清分割精炼任务。CRM连续地对特征图与精炼目标进行对齐，并聚合特征以重建这些图像的细节。此外，我们的CRM展示了其显著的泛化能力，可以在低分辨率训练图像与超高清测试图像之间填补分辨率差距。我们通过定量性能评估和可视化展示了所提出方法在图像分割精炼任务上的快速高效性。代码将在以下链接发布：此 https URL。 
+
+---
