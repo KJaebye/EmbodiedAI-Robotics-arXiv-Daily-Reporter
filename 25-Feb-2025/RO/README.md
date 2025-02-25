@@ -1,0 +1,865 @@
+# V-HOP: Visuo-Haptic 6D Object Pose Tracking 
+
+**Title (ZH)**: V-HOP: 视觉-触觉6D物体姿态跟踪 
+
+**Authors**: Hongyu Li, Mingxi Jia, Tuluhan Akbulut, Yu Xiang, George Konidaris, Srinath Sridhar  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.17434)  
+
+**Abstract**: Humans naturally integrate vision and haptics for robust object perception during manipulation. The loss of either modality significantly degrades performance. Inspired by this multisensory integration, prior object pose estimation research has attempted to combine visual and haptic/tactile feedback. Although these works demonstrate improvements in controlled environments or synthetic datasets, they often underperform vision-only approaches in real-world settings due to poor generalization across diverse grippers, sensor layouts, or sim-to-real environments. Furthermore, they typically estimate the object pose for each frame independently, resulting in less coherent tracking over sequences in real-world deployments. To address these limitations, we introduce a novel unified haptic representation that effectively handles multiple gripper embodiments. Building on this representation, we introduce a new visuo-haptic transformer-based object pose tracker that seamlessly integrates visual and haptic input. We validate our framework in our dataset and the Feelsight dataset, demonstrating significant performance improvement on challenging sequences. Notably, our method achieves superior generalization and robustness across novel embodiments, objects, and sensor types (both taxel-based and vision-based tactile sensors). In real-world experiments, we demonstrate that our approach outperforms state-of-the-art visual trackers by a large margin. We further show that we can achieve precise manipulation tasks by incorporating our real-time object tracking result into motion plans, underscoring the advantages of visuo-haptic perception. Our model and dataset will be made open source upon acceptance of the paper. Project website: this https URL 
+
+**Abstract (ZH)**: 人类在操作过程中自然地将视觉和触觉整合以实现稳健的对象知觉。失去任一模态都会显著降低性能。受这种多传感整合的启发，先前的对象姿态估计研究尝试结合视觉和触觉/触觉反馈。尽管这些工作在受控环境或合成数据集中展示了改进效果，但在真实世界设置中往往由于跨不同机械手、传感器布局或模拟到现实环境的 poor generalization 而表现不佳。此外，它们通常独立地为每一帧估计对象姿态，导致在真实世界部署中序列间的跟踪不连贯。为解决这些局限性，我们提出了一种新颖的统一触觉表示，能够有效处理多种机械手实体。基于这种表示，我们引入了一种新的视觉-触觉变换器基对象姿态跟踪器，无缝整合视觉和触觉输入。我们在我们的数据集和 Feelsight 数据集上验证了该框架，展示了在挑战性序列上的显著性能改进。值得注意的是，我们的方法在新实体、新对象和传感器类型（包括基于税尔元件的和基于视觉的触觉传感器）上实现了更好的泛化能力和鲁棒性。在真实世界实验中，我们展示了通过将我们的实时对象跟踪结果纳入运动规划中可以实现精确的操作任务，突显了视觉-触觉感知的优势。我们的模型和数据集将在论文被接受后开放源代码。项目网站: this https URL 
+
+---
+# FACTR: Force-Attending Curriculum Training for Contact-Rich Policy Learning 
+
+**Title (ZH)**: FACTR：接触丰富政策学习的力关注课程训练 
+
+**Authors**: Jason Jingzhou Liu, Yulong Li, Kenneth Shaw, Tony Tao, Ruslan Salakhutdinov, Deepak Pathak  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.17432)  
+
+**Abstract**: Many contact-rich tasks humans perform, such as box pickup or rolling dough, rely on force feedback for reliable execution. However, this force information, which is readily available in most robot arms, is not commonly used in teleoperation and policy learning. Consequently, robot behavior is often limited to quasi-static kinematic tasks that do not require intricate force-feedback. In this paper, we first present a low-cost, intuitive, bilateral teleoperation setup that relays external forces of the follower arm back to the teacher arm, facilitating data collection for complex, contact-rich tasks. We then introduce FACTR, a policy learning method that employs a curriculum which corrupts the visual input with decreasing intensity throughout training. The curriculum prevents our transformer-based policy from over-fitting to the visual input and guides the policy to properly attend to the force modality. We demonstrate that by fully utilizing the force information, our method significantly improves generalization to unseen objects by 43\% compared to baseline approaches without a curriculum. Video results and instructions at this https URL 
+
+**Abstract (ZH)**: 低成本直观双工遥操作系统及其在复杂接触任务中的力反馈学习方法 
+
+---
+# HATPIC: An Open-Source Single Axis Haptic Joystick for Robotic Development 
+
+**Title (ZH)**: HATPIC: 一种开源单轴触觉joystick及其在机器人开发中的应用 
+
+**Authors**: Julien Mellet, Fabio Ruggiero, Vincenzo Lippiello  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.17362)  
+
+**Abstract**: Humans process significantly more information through the sense of touch than through vision. Consequently, haptics for telemanipulation is poised to become essential in the coming years, as it offers operators an additional sensory channel crucial for interpretation in extreme conditions. However, current haptic device setups are either difficult to access or provide low-quality force feedback rendering. This work proposes the design of a single-axis, open-source setup for telemanipulation development, aimed at addressing these issues. We first introduce the haptic device and demonstrate its integration with common robotic tools. The proposed joystick has the potential to accelerate the development and deployment of haptic technology in a wide range of robotics applications, enhancing operator feedback and control. 
+
+**Abstract (ZH)**: 人类通过触觉处理的信息远多于通过视觉处理的信息。因此，触觉在远程操作中的应用在未来几年有望变得至关重要，因为它为操作者提供了一个在极端条件下不可或缺的额外感官通道。然而，当前的触觉设备配置要么难以访问，要么提供低质量的力反馈。本研究提出了一种单轴开源远程操作开发平台的设计，旨在解决这些问题。我们首先介绍了触觉设备，并展示了其与常见机器人工具的集成。所提出的摇杆有可能加速触觉技术在广泛机器人应用中的发展和部署，增强操作员的反馈和控制。 
+
+---
+# SoFFT: Spatial Fourier Transform for Modeling Continuum Soft Robots 
+
+**Title (ZH)**: SoFFT：空间傅里叶变换在建模连续软机器人中的应用 
+
+**Authors**: Daniele Caradonna, Diego Bianchi, Franco Angelini, Egidio Falotico  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.17347)  
+
+**Abstract**: Continuum soft robots, composed of flexible materials, exhibit theoretically infinite degrees of freedom, enabling notable adaptability in unstructured environments. Cosserat Rod Theory has emerged as a prominent framework for modeling these robots efficiently, representing continuum soft robots as time-varying curves, known as backbones. In this work, we propose viewing the robot's backbone as a signal in space and time, applying the Fourier transform to describe its deformation compactly. This approach unifies existing modeling strategies within the Cosserat Rod Theory framework, offering insights into commonly used heuristic methods. Moreover, the Fourier transform enables the development of a data-driven methodology to experimentally capture the robot's deformation. The proposed approach is validated through numerical simulations and experiments on a real-world prototype, demonstrating a reduction in the degrees of freedom while preserving the accuracy of the deformation representation. 
+
+**Abstract (ZH)**: 连续软机器人，由柔性材料组成，理论上具有无限的自由度，使其在未经结构化环境中展现出显著的适应性。柯谢尔杆理论已成为高效建模这些机器人的主要框架，将连续软机器人表示为时间变化的曲线，即主干。在本文中，我们提出将机器人的主干视为时空中的信号，应用傅里叶变换以紧凑的形式描述其变形。该方法统一了柯谢尔杆理论框架内的现有建模策略，提供了对常用启发式方法的见解。此外，傅里叶变换使开发一种数据驱动的方法以实验性地捕捉机器人的变形成为可能。所提出的方法通过数值仿真和真实原型的实验得到了验证，证明了在保持变形表示准确性的同时减少了自由度。 
+
+---
+# Modeling, Simulation, and Application of Spatio-Temporal Characteristics Detection in Incipient Slip 
+
+**Title (ZH)**: 初始滑动时空特征检测的建模、仿真与应用 
+
+**Authors**: Mingxuan Li, Lunwei Zhang, Qiyin Huang, Tiemin Li, Yao Jiang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.17335)  
+
+**Abstract**: Incipient slip detection provides critical feedback for robotic grasping and manipulation tasks. However, maintaining its adaptability under diverse object properties and complex working conditions remains challenging. This article highlights the importance of completely representing spatio-temporal features of slip, and proposes a novel approach for incipient slip modeling and detection. Based on the analysis of localized displacement phenomenon, we establish the relationship between the characteristic strain rate extreme events and the local slip state. This approach enables the detection of both the spatial distribution and temporal dynamics of stick-slip regions. Also, the proposed method can be applied to strain distribution sensing devices, such as vision-based tactile sensors. Simulations and prototype experiments validated the effectiveness of this approach under varying contact conditions, including different contact geometries, friction coefficients, and combined loads. Experiments demonstrated that this method not only accurately and reliably delineates incipient slip, but also facilitates friction parameter estimation and adaptive grasping control. 
+
+**Abstract (ZH)**: 初始滑移检测为机器人抓取和操作任务提供关键反馈。然而，在多样化的物体属性和复杂的工况条件下保持其适应性仍然具有挑战性。本文强调了完全表示滑移的空时特征的重要性，并提出了一种新的初始滑移建模和检测方法。基于局部位移现象的分析，我们建立了特征应变率极端事件与局部滑移状态之间的关系。该方法能够检测粘滑区域的空间分布和时间动态。此外，所提出的方法可以应用于应变分布传感设备，如基于视觉的触觉传感器。仿真和原型实验验证了该方法在不同接触条件下的有效性，包括不同的接触几何形状、摩擦系数和载荷组合。实验表明，该方法不仅能准确可靠地检测初始滑移，还能促进摩擦参数估计和自适应抓取控制。 
+
+---
+# TDMPBC: Self-Imitative Reinforcement Learning for Humanoid Robot Control 
+
+**Title (ZH)**: TDMPBC：类自模仿强化学习在 humanoid 机器人控制中的应用 
+
+**Authors**: Zifeng Zhuang, Diyuan Shi, Runze Suo, Xiao He, Hongyin Zhang, Ting Wang, Shangke Lyu, Donglin Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.17322)  
+
+**Abstract**: Complex high-dimensional spaces with high Degree-of-Freedom and complicated action spaces, such as humanoid robots equipped with dexterous hands, pose significant challenges for reinforcement learning (RL) algorithms, which need to wisely balance exploration and exploitation under limited sample budgets. In general, feasible regions for accomplishing tasks within complex high-dimensional spaces are exceedingly narrow. For instance, in the context of humanoid robot motion control, the vast majority of space corresponds to falling, while only a minuscule fraction corresponds to standing upright, which is conducive to the completion of downstream tasks. Once the robot explores into a potentially task-relevant region, it should place greater emphasis on the data within that region. Building on this insight, we propose the $\textbf{S}$elf-$\textbf{I}$mitative $\textbf{R}$einforcement $\textbf{L}$earning ($\textbf{SIRL}$) framework, where the RL algorithm also imitates potentially task-relevant trajectories. Specifically, trajectory return is utilized to determine its relevance to the task and an additional behavior cloning is adopted whose weight is dynamically adjusted based on the trajectory return. As a result, our proposed algorithm achieves 120% performance improvement on the challenging HumanoidBench with 5% extra computation overhead. With further visualization, we find the significant performance gain does lead to meaningful behavior improvement that several tasks are solved successfully. 
+
+**Abstract (ZH)**: 复杂高维度空间中兼具高自由度和复杂动作空间的系统，如配备灵巧手的人形机器人，对强化学习算法提出了重大挑战，这些算法在有限的样本预算下需要智慧地平衡探索与利用。通常，在复杂高维度空间中执行任务的实际可行区域极为狭窄。例如，在人形机器人运动控制的背景下，绝大部分空间对应着倒下状态，仅有极小部分对应着站立状态，这有助于下游任务的完成。一旦机器人探索到可能与任务相关的区域，应更加重视该区域的数据。基于这一洞察，我们提出了自我模仿强化学习（SIRL）框架，其中强化学习算法也模仿可能与任务相关的轨迹。具体而言，轨迹回报用于确定其对任务的相关性，并采用加权动态调整的行为克隆方法。结果，我们的算法在具有5%额外计算开销的挑战性任务HumanoidBench上实现了120%的性能提升。进一步的可视化显示，显著的性能提升确实导致了有意义的行为改善，多个任务得以成功解决。 
+
+---
+# Inverse Kinematics on Guiding Vector Fields for Robot Path Following 
+
+**Title (ZH)**: 基于引导向量场的逆 kinematics 机器人路径跟踪 
+
+**Authors**: Yu Zhou, Jesús Bautista, Weijia Yao, Héctor García de Marina  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.17313)  
+
+**Abstract**: Inverse kinematics is a fundamental technique for motion and positioning control in robotics, typically applied to end-effectors. In this paper, we extend the concept of inverse kinematics to guiding vector fields for path following in autonomous mobile robots. The desired path is defined by its implicit equation, i.e., by a collection of points belonging to one or more zero-level sets. These level sets serve as a reference to construct an error signal that drives the guiding vector field toward the desired path, enabling the robot to converge and travel along the path by following such a vector field. We start with the formal exposition on how inverse kinematics can be applied to guiding vector fields for single-integrator robots in an m-dimensional Euclidean space. Then, we leverage inverse kinematics to ensure that the level-set error signal behaves as a linear system, facilitating control over the robot's transient motion toward the desired path and allowing for the injection of feed-forward signals to induce precise motion behavior along the path. We then propose solutions to the theoretical and practical challenges of applying this technique to unicycles with constant speeds to follow 2D paths with precise transient control. We finish by validating the predicted theoretical results through real flights with fixed-wing drones. 
+
+**Abstract (ZH)**: 逆运动学在自主移动机器人沿路径跟随引导矢量场中的扩展及其应用 
+
+---
+# Hybrid Human-Machine Perception via Adaptive LiDAR for Advanced Driver Assistance Systems 
+
+**Title (ZH)**: 基于自适应激光雷达的混合人机感知技术应用于高级驾驶辅助系统 
+
+**Authors**: Federico Scarì, Nitin Jonathan Myers, Chen Quan, Arkady Zgonnikov  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.17309)  
+
+**Abstract**: Accurate environmental perception is critical for advanced driver assistance systems (ADAS). Light detection and ranging (LiDAR) systems play a crucial role in ADAS; they can reliably detect obstacles and help ensure traffic safety. Existing research on LiDAR sensing has demonstrated that adapting the LiDAR's resolution and range based on environmental characteristics can improve machine perception. However, current adaptive LiDAR approaches for ADAS have not explored the possibility of combining the perception abilities of the vehicle and the human driver, which can potentially further enhance the detection performance. In this paper, we propose a novel system that adapts LiDAR characteristics to human driver's visual perception to enhance LiDAR sensing outside human's field of view. We develop a proof-of-concept prototype of the system in the virtual environment CARLA. Our system integrates real-time data on the driver's gaze to identify regions in the environment that the driver is monitoring. This allows the system to optimize LiDAR resources by dynamically increasing the LiDAR's range and resolution in peripheral areas that the driver may not be attending to. Our simulations show that this gaze-aware LiDAR enhances detection performance compared to a baseline standalone LiDAR, particularly in challenging environmental conditions like fog. Our hybrid human-machine sensing approach potentially offers improved safety and situational awareness in real-time driving scenarios for ADAS applications. 
+
+**Abstract (ZH)**: 准确的环境感知对于高级驾驶辅助系统（ADAS）至关重要。激光检测与测距（LiDAR）系统在ADAS中扮演着关键角色；它们可以可靠地检测障碍物并有助于保障交通安全性。现有LiDAR感知研究已证明，根据环境特性调整LiDAR的分辨率和探测范围可以提高机器感知性能。然而，目前针对ADAS的自适应LiDAR方法尚未探索将车辆感知能力和人类驾驶员感知能力结合的可能性，这可能是进一步提升检测性能的关键。在本文中，我们提出了一种新型系统，通过适应人类驾驶员的视觉感知来优化LiDAR在驾驶员视野之外区域的感知特性。我们利用CARLA虚拟环境开发了该系统的概念验证原型。该系统整合了驾驶员注视的实时数据，以识别驾驶员正在监控的环境区域。这使得系统能够通过动态增加周边区域的LiDAR探测范围和分辨率来优化LiDAR资源。我们的仿真实验表明，这种基于注视的LiDAR相较于基准独立LiDAR，在雾等具有挑战性的环境条件下，能显著提高检测性能。我们的人机混合感知方法可能在ADAS应用场景中提供更好的实时驾驶安全性与态势感知。 
+
+---
+# Continuous Wrist Control on the Hannes Prosthesis: a Vision-based Shared Autonomy Framework 
+
+**Title (ZH)**: 基于视觉的共享自主框架下汉内斯假肢的连续腕部控制 
+
+**Authors**: Federico Vasile, Elisa Maiettini, Giulia Pasquale, Nicolò Boccardo, Lorenzo Natale  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.17265)  
+
+**Abstract**: Most control techniques for prosthetic grasping focus on dexterous fingers control, but overlook the wrist motion. This forces the user to perform compensatory movements with the elbow, shoulder and hip to adapt the wrist for grasping. We propose a computer vision-based system that leverages the collaboration between the user and an automatic system in a shared autonomy framework, to perform continuous control of the wrist degrees of freedom in a prosthetic arm, promoting a more natural approach-to-grasp motion. Our pipeline allows to seamlessly control the prosthetic wrist to follow the target object and finally orient it for grasping according to the user intent. We assess the effectiveness of each system component through quantitative analysis and finally deploy our method on the Hannes prosthetic arm. Code and videos: this https URL. 
+
+**Abstract (ZH)**: 基于计算机视觉的共享自主系统在假肢手臂中连续控制手腕自由度，促进自然接近抓取运动 
+
+---
+# CAR-LOAM: Color-Assisted Robust LiDAR Odometry and Mapping 
+
+**Title (ZH)**: CAR-LOAM: 颜色辅助鲁棒lidar里程计与建图 
+
+**Authors**: Yufei Lu, Yuetao Li, Zhizhou Jia, Qun Hao, Shaohui Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.17249)  
+
+**Abstract**: In this letter, we propose a color-assisted robust framework for accurate LiDAR odometry and mapping (LOAM). Simultaneously receiving data from both the LiDAR and the camera, the framework utilizes the color information from the camera images to colorize the LiDAR point clouds and then performs iterative pose optimization. For each LiDAR scan, the edge and planar features are extracted and colored using the corresponding image and then matched to a global map. Specifically, we adopt a perceptually uniform color difference weighting strategy to exclude color correspondence outliers and a robust error metric based on the Welsch's function to mitigate the impact of positional correspondence outliers during the pose optimization process. As a result, the system achieves accurate localization and reconstructs dense, accurate, colored and three-dimensional (3D) maps of the environment. Thorough experiments with challenging scenarios, including complex forests and a campus, show that our method provides higher robustness and accuracy compared with current state-of-the-art methods. 
+
+**Abstract (ZH)**: 基于颜色辅助的LiDAR同时定位与建图（LOAM）稳健框架 
+
+---
+# Tidiness Score-Guided Monte Carlo Tree Search for Visual Tabletop Rearrangement 
+
+**Title (ZH)**: 基于整洁度得分的蒙特卡洛树搜索在视觉桌面重排中的应用 
+
+**Authors**: Hogun Kee, Wooseok Oh, Minjae Kang, Hyemin Ahn, Songhwai Oh  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.17235)  
+
+**Abstract**: In this paper, we present the tidiness score-guided Monte Carlo tree search (TSMCTS), a novel framework designed to address the tabletop tidying up problem using only an RGB-D camera. We address two major problems for tabletop tidying up problem: (1) the lack of public datasets and benchmarks, and (2) the difficulty of specifying the goal configuration of unseen objects. We address the former by presenting the tabletop tidying up (TTU) dataset, a structured dataset collected in simulation. Using this dataset, we train a vision-based discriminator capable of predicting the tidiness score. This discriminator can consistently evaluate the degree of tidiness across unseen configurations, including real-world scenes. Addressing the second problem, we employ Monte Carlo tree search (MCTS) to find tidying trajectories without specifying explicit goals. Instead of providing specific goals, we demonstrate that our MCTS-based planner can find diverse tidied configurations using the tidiness score as a guidance. Consequently, we propose TSMCTS, which integrates a tidiness discriminator with an MCTS-based tidying planner to find optimal tidied arrangements. TSMCTS has successfully demonstrated its capability across various environments, including coffee tables, dining tables, office desks, and bathrooms. The TTU dataset is available at: this https URL. 
+
+**Abstract (ZH)**: 基于整洁度评分的蒙特卡洛树搜索（TSMCTS）：仅使用RGB-D相机解决桌面整理问题的新框架 
+
+---
+# A Reinforcement Learning Approach to Non-prehensile Manipulation through Sliding 
+
+**Title (ZH)**: 通过滑动进行非抓握式操作的强化学习方法 
+
+**Authors**: Hamidreza Raei, Elena De Momi, Arash Ajoudani  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.17221)  
+
+**Abstract**: Although robotic applications increasingly demand versatile and dynamic object handling, most existing techniques are predominantly focused on grasp-based manipulation, limiting their applicability in non-prehensile tasks. To address this need, this study introduces a Deep Deterministic Policy Gradient (DDPG) reinforcement learning framework for efficient non-prehensile manipulation, specifically for sliding an object on a surface. The algorithm generates a linear trajectory by precisely controlling the acceleration of a robotic arm rigidly coupled to the horizontal surface, enabling the relative manipulation of an object as it slides on top of the surface. Furthermore, two distinct algorithms have been developed to estimate the frictional forces dynamically during the sliding process. These algorithms provide online friction estimates after each action, which are fed back into the actor model as critical feedback after each action. This feedback mechanism enhances the policy's adaptability and robustness, ensuring more precise control of the platform's acceleration in response to varying surface condition. The proposed algorithm is validated through simulations and real-world experiments. Results demonstrate that the proposed framework effectively generalizes sliding manipulation across varying distances and, more importantly, adapts to different surfaces with diverse frictional properties. Notably, the trained model exhibits zero-shot sim-to-real transfer capabilities. 
+
+**Abstract (ZH)**: 虽然机器人应用日益需要灵活多样的物体处理能力，但现有的大多数技术主要集中在基于抓取的操作上，限制了其在非抓取任务中的应用。为解决这一问题，本研究引入了一种基于Deep Deterministic Policy Gradient (DDPG)的强化学习框架，以高效实现物体在表面的滑动操作。该算法通过精确控制与水平面刚性耦合的机器人臂的加速度，生成线性轨迹，从而实现物体在表面滑动过程中的相对操作。此外，还开发了两种算法以动态估计滑动过程中的摩擦力。这些算法在每次动作后提供即时摩擦力估计，并将其作为关键反馈输入到演员模型中，以增强策略的适应性和鲁棒性，确保在不同表面条件下对平台加速度的更精确控制。所提出的方法通过仿真和实际实验进行了验证。结果表明，该框架能够有效地在不同距离上实现滑动操作，并且更重要的是，能够适应具有不同摩擦性质的各种表面。值得注意的是，训练后的模型展示了零样本仿真实验到实际应用的转移能力。 
+
+---
+# Humanoid Whole-Body Locomotion on Narrow Terrain via Dynamic Balance and Reinforcement Learning 
+
+**Title (ZH)**: 基于动态平衡和强化学习的 humanoid 全身窄地形行走 
+
+**Authors**: Weiji Xie, Chenjia Bai, Jiyuan Shi, Junkai Yang, Yunfei Ge, Weinan Zhang, Xuelong Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.17219)  
+
+**Abstract**: Humans possess delicate dynamic balance mechanisms that enable them to maintain stability across diverse terrains and under extreme conditions. However, despite significant advances recently, existing locomotion algorithms for humanoid robots are still struggle to traverse extreme environments, especially in cases that lack external perception (e.g., vision or LiDAR). This is because current methods often rely on gait-based or perception-condition rewards, lacking effective mechanisms to handle unobservable obstacles and sudden balance loss. To address this challenge, we propose a novel whole-body locomotion algorithm based on dynamic balance and Reinforcement Learning (RL) that enables humanoid robots to traverse extreme terrains, particularly narrow pathways and unexpected obstacles, using only proprioception. Specifically, we introduce a dynamic balance mechanism by leveraging an extended measure of Zero-Moment Point (ZMP)-driven rewards and task-driven rewards in a whole-body actor-critic framework, aiming to achieve coordinated actions of the upper and lower limbs for robust locomotion. Experiments conducted on a full-sized Unitree H1-2 robot verify the ability of our method to maintain balance on extremely narrow terrains and under external disturbances, demonstrating its effectiveness in enhancing the robot's adaptability to complex environments. The videos are given at this https URL. 
+
+**Abstract (ZH)**: 人类拥有精细的动态平衡机制，能够在多种地形和极端条件下保持稳定性。尽管最近取得了显著进展，现有类人机器人运动算法在穿越极端环境时仍然存在困难，特别是在缺乏外部感知（例如视觉或LiDAR）的情况下。这是因为当前的方法通常依赖于步态导向或感知导向的奖励机制，缺乏有效处理未观察到的障碍和突发失衡的机制。为应对这一挑战，我们提出了一种基于动态平衡和强化学习（RL）的全新全身运动算法，使类人机器人能够在仅依靠本体感觉的情况下穿越极端地形，特别是狭窄路径和意外障碍物。具体来说，我们通过利用扩展的零力矩点（ZMP）驱动奖励和任务驱动奖励，在全身演员-评论家框架中引入了一种动态平衡机制，旨在实现上肢和下肢的协调动作，以实现稳健的运动。在全尺寸Unitree H1-2机器人上的实验验证了我们方法在极端狭窄地形和外部干扰下保持平衡的能力，证明了其在提高机器人适应复杂环境方面的有效性。相关视频见此网址：https://xxxxx。 
+
+---
+# Evolution 6.0: Evolving Robotic Capabilities Through Generative Design 
+
+**Title (ZH)**: Evolution 6.0: 通过生成设计进化的机器人能力 
+
+**Authors**: Muhammad Haris Khan, Artyom Myshlyaev, Artyom Lykov, Miguel Altamirano Cabrera, Dzmitry Tsetserukou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.17034)  
+
+**Abstract**: We propose a new concept, Evolution 6.0, which represents the evolution of robotics driven by Generative AI. When a robot lacks the necessary tools to accomplish a task requested by a human, it autonomously designs the required instruments and learns how to use them to achieve the goal. Evolution 6.0 is an autonomous robotic system powered by Vision-Language Models (VLMs), Vision-Language Action (VLA) models, and Text-to-3D generative models for tool design and task execution. The system comprises two key modules: the Tool Generation Module, which fabricates task-specific tools from visual and textual data, and the Action Generation Module, which converts natural language instructions into robotic actions. It integrates QwenVLM for environmental understanding, OpenVLA for task execution, and Llama-Mesh for 3D tool generation. Evaluation results demonstrate a 90% success rate for tool generation with a 10-second inference time, and action generation achieving 83.5% in physical and visual generalization, 70% in motion generalization, and 37% in semantic generalization. Future improvements will focus on bimanual manipulation, expanded task capabilities, and enhanced environmental interpretation to improve real-world adaptability. 
+
+**Abstract (ZH)**: 我们提出了一种新的概念——Evolution 6.0，代表了由生成式AI驱动的机器人进化。当机器人缺乏完成人类请求的任务所需的工具时，它能够自主设计所需的工具并学习如何使用这些工具来实现目标。Evolution 6.0 是一个由视觉-语言模型（VLMs）、视觉-语言-行动（VLA）模型和文本到3D生成模型驱动的自主机器人系统，用于工具设计和任务执行。该系统包括两个关键模块：工具生成模块，从视觉和文本数据生成任务特定的工具，以及动作生成模块，将自然语言指令转换为机器人动作。该系统集成了QwenVLM进行环境理解、OpenVLA进行任务执行以及Llama-Mesh进行3D工具生成。评估结果显示，在10秒的推理时间内，工具生成成功率为90%，动作生成在物理和视觉泛化方面的得分为83.5%，在运动泛化方面的得分为70%，在语义泛化方面的得分为37%。未来改进将专注于双臂操作、扩展的任务能力以及增强的环境解释，以提高其实用性。 
+
+---
+# Task-Oriented 6-DoF Grasp Pose Detection in Clutters 
+
+**Title (ZH)**: 面向任务的6自由度抓取姿态检测在杂乱环境中的应用 
+
+**Authors**: An-Lan Wang, Nuo Chen, Kun-Yu Lin, Li Yuan-Ming, Wei-Shi Zheng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16976)  
+
+**Abstract**: In general, humans would grasp an object differently for different tasks, e.g., "grasping the handle of a knife to cut" vs. "grasping the blade to hand over". In the field of robotic grasp pose detection research, some existing works consider this task-oriented grasping and made some progress, but they are generally constrained by low-DoF gripper type or non-cluttered setting, which is not applicable for human assistance in real life. With an aim to get more general and practical grasp models, in this paper, we investigate the problem named Task-Oriented 6-DoF Grasp Pose Detection in Clutters (TO6DGC), which extends the task-oriented problem to a more general 6-DOF Grasp Pose Detection in Cluttered (multi-object) scenario. To this end, we construct a large-scale 6-DoF task-oriented grasping dataset, 6-DoF Task Grasp (6DTG), which features 4391 cluttered scenes with over 2 million 6-DoF grasp poses. Each grasp is annotated with a specific task, involving 6 tasks and 198 objects in total. Moreover, we propose One-Stage TaskGrasp (OSTG), a strong baseline to address the TO6DGC problem. Our OSTG adopts a task-oriented point selection strategy to detect where to grasp, and a task-oriented grasp generation module to decide how to grasp given a specific task. To evaluate the effectiveness of OSTG, extensive experiments are conducted on 6DTG. The results show that our method outperforms various baselines on multiple metrics. Real robot experiments also verify that our OSTG has a better perception of the task-oriented grasp points and 6-DoF grasp poses. 
+
+**Abstract (ZH)**: 面向任务的堆叠物中6-自由度抓取姿态检测（TO6DGC） 
+
+---
+# DemoGen: Synthetic Demonstration Generation for Data-Efficient Visuomotor Policy Learning 
+
+**Title (ZH)**: DemoGen: 数据高效的视觉运动策略学习合成示范生成 
+
+**Authors**: Zhengrong Xue, Shuying Deng, Zhenyang Chen, Yixuan Wang, Zhecheng Yuan, Huazhe Xu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16932)  
+
+**Abstract**: Visuomotor policies have shown great promise in robotic manipulation but often require substantial amounts of human-collected data for effective performance. A key reason underlying the data demands is their limited spatial generalization capability, which necessitates extensive data collection across different object configurations. In this work, we present DemoGen, a low-cost, fully synthetic approach for automatic demonstration generation. Using only one human-collected demonstration per task, DemoGen generates spatially augmented demonstrations by adapting the demonstrated action trajectory to novel object configurations. Visual observations are synthesized by leveraging 3D point clouds as the modality and rearranging the subjects in the scene via 3D editing. Empirically, DemoGen significantly enhances policy performance across a diverse range of real-world manipulation tasks, showing its applicability even in challenging scenarios involving deformable objects, dexterous hand end-effectors, and bimanual platforms. Furthermore, DemoGen can be extended to enable additional out-of-distribution capabilities, including disturbance resistance and obstacle avoidance. 
+
+**Abstract (ZH)**: 基于视觉运动策略的自动演示生成：一种低成本的全合成方法 
+
+---
+# Design of a low-cost and lightweight 6 DoF bimanual arm for dynamic and contact-rich manipulation 
+
+**Title (ZH)**: 低成本轻量化6自由度双臂 manipulator 设计，适用于动态和富含接触的操作 
+
+**Authors**: Jaehyung Kim, Jiho Kim, Dongryung Lee, Yujin Jang, Beomjoon Kim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16908)  
+
+**Abstract**: Dynamic and contact-rich object manipulation, such as striking, snatching, or hammering, remains challenging for robotic systems due to hardware limitations. Most existing robots are constrained by high-inertia design, limited compliance, and reliance on expensive torque sensors. To address this, we introduce ARMADA (Affordable Robot for Manipulation and Dynamic Actions), a 6 degrees-of-freedom bimanual robot designed for dynamic manipulation research. ARMADA combines low-inertia, back-drivable actuators with a lightweight design, using readily available components and 3D-printed links for ease of assembly in research labs. The entire system, including both arms, is built for just $6,100. Each arm achieves speeds up to 6.16m/s, almost twice that of most collaborative robots, with a comparable payload of 2.5kg. We demonstrate ARMADA can perform dynamic manipulation like snatching, hammering, and bimanual throwing in real-world environments. We also showcase its effectiveness in reinforcement learning (RL) by training a non-prehensile manipulation policy in simulation and transferring it zero-shot to the real world, as well as human motion shadowing for dynamic bimanual object throwing. ARMADA is fully open-sourced with detailed assembly instructions, CAD models, URDFs, simulation, and learning codes. We highly recommend viewing the supplementary video at this https URL. 
+
+**Abstract (ZH)**: 低成本高动态接触操作机器人ARMADA：用于动态操控研究的双臂 manipulator 
+
+---
+# Gazing at Failure: Investigating Human Gaze in Response to Robot Failure in Collaborative Tasks 
+
+**Title (ZH)**: 注视失败：探究协作任务中人类对机器人失败的眼球运动响应 
+
+**Authors**: Ramtin Tabatabaei, Vassilis Kostakos, Wafa Johal  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16899)  
+
+**Abstract**: Robots are prone to making errors, which can negatively impact their credibility as teammates during collaborative tasks with human users. Detecting and recovering from these failures is crucial for maintaining effective level of trust from users. However, robots may fail without being aware of it. One way to detect such failures could be by analysing humans' non-verbal behaviours and reactions to failures. This study investigates how human gaze dynamics can signal a robot's failure and examines how different types of failures affect people's perception of robot. We conducted a user study with 27 participants collaborating with a robotic mobile manipulator to solve tangram puzzles. The robot was programmed to experience two types of failures -- executional and decisional -- occurring either at the beginning or end of the task, with or without acknowledgement of the failure. Our findings reveal that the type and timing of the robot's failure significantly affect participants' gaze behaviour and perception of the robot. Specifically, executional failures led to more gaze shifts and increased focus on the robot, while decisional failures resulted in lower entropy in gaze transitions among areas of interest, particularly when the failure occurred at the end of the task. These results highlight that gaze can serve as a reliable indicator of robot failures and their types, and could also be used to predict the appropriate recovery actions. 
+
+**Abstract (ZH)**: 机器人在协作任务中可能会犯错误，这可能会影响它们作为队友的可信度。检测并从这些失败中恢复对于维持用户的信任至关重要。然而，机器人可能在不知情的情况下犯错。通过分析人类的非 verbal 行为和对失败的反应，可以检测此类失败。本研究调查了人类视线动态如何信号化机器人的失败，并分析了不同类型失败对人们感知机器人有何影响。我们进行了一个用户研究，共有27名参与者与一个机器人移动 manipulator 合作解决七巧板谜题。机器人被编程在同一任务的开始或结束时经历两种类型的失败——执行失败和决策失败，并且失败是否被承认有所不同。研究发现，机器人失败的类型和时间显著影响参与者的眼球运动行为和对机器人的感知。具体而言，执行失败导致更多的眼球转移并增加了对机器人的关注，而决策失败则在任务结束时导致对感兴趣区域的眼球转移熵降低。这些结果表明，视线可以作为机器人力竭及其类型的可靠指标，并且也可以用来预测合适的恢复动作。 
+
+---
+# Variations of Augmented Lagrangian for Robotic Multi-Contact Simulation 
+
+**Title (ZH)**: 增强拉格朗日乘子在机器人多接触仿真中的变体研究 
+
+**Authors**: Jeongmin Lee, Minji Lee, Sunkyung Park, Jinhee Yun, Dongjun Lee  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16898)  
+
+**Abstract**: The multi-contact nonlinear complementarity problem (NCP) is a naturally arising challenge in robotic simulations. Achieving high performance in terms of both accuracy and efficiency remains a significant challenge, particularly in scenarios involving intensive contacts and stiff interactions. In this article, we introduce a new class of multi-contact NCP solvers based on the theory of the Augmented Lagrangian (AL). We detail how the standard derivation of AL in convex optimization can be adapted to handle multi-contact NCP through the iteration of surrogate problem solutions and the subsequent update of primal-dual variables. Specifically, we present two tailored variations of AL for robotic simulations: the Cascaded Newton-based Augmented Lagrangian (CANAL) and the Subsystem-based Alternating Direction Method of Multipliers (SubADMM). We demonstrate how CANAL can manage multi-contact NCP in an accurate and robust manner, while SubADMM offers superior computational speed, scalability, and parallelizability for high degrees-of-freedom multibody systems with numerous contacts. Our results showcase the effectiveness of the proposed solver framework, illustrating its advantages in various robotic manipulation scenarios. 
+
+**Abstract (ZH)**: 多接触非线性互补问题（NCP）是机器人仿真中自然产生的挑战。在精度和效率方面实现高性能仍然是一个重大挑战，特别是在涉及密集接触和刚性交互的场景中。本文介绍了一种基于增广拉格朗日（AL）理论的多接触NCP求解器新类。我们详细阐述了如何通过代理问题解的迭代和原始对偶变量的后续更新，将标准的凸优化中AL的推导适应到多接触NCP的处理中。具体来说，我们为机器人仿真提出了两种定制的AL变体：级联牛顿增广拉格朗日（CANAL）和子系统交替方向乘子法（SubADMM）。我们展示了CANAL如何能够以准确且 robust 的方式处理多接触NCP，而SubADMM则为具有大量接触的多体系统提供了卓越的计算速度、可扩展性和并行化能力。我们的结果展示了所提求解器框架的有效性，突显了其在各种机器人操作场景中的优势。 
+
+---
+# Primitive-Swarm: An Ultra-lightweight and Scalable Planner for Large-scale Aerial Swarms 
+
+**Title (ZH)**: 原始群集：一种适用于大规模 aerial 群无人机的超轻量级可扩展规划器 
+
+**Authors**: Jialiang Hou, Xin Zhou, Neng Pan, Ang Li, Yuxiang Guan, Chao Xu, Zhongxue Gan, Fei Gao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16887)  
+
+**Abstract**: Achieving large-scale aerial swarms is challenging due to the inherent contradictions in balancing computational efficiency and scalability. This paper introduces Primitive-Swarm, an ultra-lightweight and scalable planner designed specifically for large-scale autonomous aerial swarms. The proposed approach adopts a decentralized and asynchronous replanning strategy. Within it is a novel motion primitive library consisting of time-optimal and dynamically feasible trajectories. They are generated utlizing a novel time-optimial path parameterization algorithm based on reachability analysis (TOPP-RA). Then, a rapid collision checking mechanism is developed by associating the motion primitives with the discrete surrounding space according to conflicts. By considering both spatial and temporal conflicts, the mechanism handles robot-obstacle and robot-robot collisions simultaneously. Then, during a replanning process, each robot selects the safe and minimum cost trajectory from the library based on user-defined requirements. Both the time-optimal motion primitive library and the occupancy information are computed offline, turning a time-consuming optimization problem into a linear-complexity selection problem. This enables the planner to comprehensively explore the non-convex, discontinuous 3-D safe space filled with numerous obstacles and robots, effectively identifying the best hidden path. Benchmark comparisons demonstrate that our method achieves the shortest flight time and traveled distance with a computation time of less than 1 ms in dense environments. Super large-scale swarm simulations, involving up to 1000 robots, running in real-time, verify the scalability of our method. Real-world experiments validate the feasibility and robustness of our approach. The code will be released to foster community collaboration. 
+
+**Abstract (ZH)**: 实现大型空中蜂群挑战重重，因其在计算效率和扩展性之间存在固有的矛盾。本文介绍了一种名为Primitive-Swarm的超轻量级且可扩展的规划器，专门设计用于大型自主空中蜂群。所提出的方法采用去中心化和异步重规划策略。该方法中包含一个新颖的运动基元库，其中包含时间最优且动力学可行的轨迹。这些轨迹利用基于可达性分析的时间最优路径参数化算法（TOPP-RA）生成。通过将运动基元与离散周围空间关联来开发快速碰撞检测机制，根据冲突处理空间和时间冲突。在重规划过程中，每个机器人根据用户定义的要求从基元库中选择安全且成本最低的轨迹。时间最优运动基元库和占用信息在离线阶段计算，将耗时优化问题转化为线性复杂度的选择问题。这使规划器能够全面探索充满众多障碍物和机器人的非凸、不连续3D安全空间，有效识别最佳隐藏路径。基准测试比较表明，我们的方法在密集环境中计算时间少于1毫秒，达到最短飞行时间和最短行程。大规模集群仿真，最多涉及1000个机器人，实时运行，验证了我们方法的可扩展性。现实世界实验验证了我们方法的可行性和鲁棒性。代码将开源以促进社区合作。 
+
+---
+# Primitive-Planner: An Ultra Lightweight Quadrotor Planner with Time-optimal Primitives 
+
+**Title (ZH)**: 骨骼规划器：一种基于时间最优基本动作的超轻量级 quadcopter 规划器 
+
+**Authors**: Jialiang Hou, Neng Pan, Zhepei Wang, Jialin Ji, Yuxiang Guan, Zhongxue Gan, Fei Gao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16882)  
+
+**Abstract**: It is a significant requirement for a quadrotor trajectory planner to simultaneously guarantee trajectory quality and system lightweight. Many researchers focus on this problem, but there's still a gap between their performance and our common wish. In this paper, we propose an ultra lightweight quadrotor planner with time-optimal primitives. Firstly, a novel motion primitive library is proposed to generate time-optimal and dynamical feasible trajectories offline. Secondly, we propose a fast collision checking method with a deterministic time consumption, independent of the sampling resolution of the primitives. Finally, we select the minimum cost trajectory to execute among the safe primitives based on user-defined requirements. The propsed transformation relation between the local trajectories ensures the smoothness of the global trajectory. The planner reduces unnecessary online computing power consumption as much as possible, while ensuring a high-quality trajectory. Benchmark comparisons show that our method can generate the shortest flight time and distance of trajectory with the lowest computation overload. Challenging real-world experiments validate the robustness of our method. 
+
+**Abstract (ZH)**: 一种基于时间最优原理的超轻量级旋翼无人机航迹规划方法 
+
+---
+# SLABIM: A SLAM-BIM Coupled Dataset in HKUST Main Building 
+
+**Title (ZH)**: SLABIM: � Actor实时建图与建筑信息建模耦合数据集在港科大主楼中的应用 
+
+**Authors**: Haoming Huang, Zhijian Qiao, Zehuan Yu, Chuhao Liu, Shaojie Shen, Fumin Zhang, Huan Yin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16856)  
+
+**Abstract**: Existing indoor SLAM datasets primarily focus on robot sensing, often lacking building architectures. To address this gap, we design and construct the first dataset to couple the SLAM and BIM, named SLABIM. This dataset provides BIM and SLAM-oriented sensor data, both modeling a university building at HKUST. The as-designed BIM is decomposed and converted for ease of use. We employ a multi-sensor suite for multi-session data collection and mapping to obtain the as-built model. All the related data are timestamped and organized, enabling users to deploy and test effectively. Furthermore, we deploy advanced methods and report the experimental results on three tasks: registration, localization and semantic mapping, demonstrating the effectiveness and practicality of SLABIM. We make our dataset open-source at this https URL. 
+
+**Abstract (ZH)**: 现有的室内SLAM数据集主要关注机器人感知，往往缺乏建筑结构信息。为解决这一问题，我们设计并构建了首个结合SLAM和BIM的数据集，命名为SLABIM。该数据集提供了面向SLAM和BIM的传感器数据，建模香港科技大学的一栋大学建筑。我们设计的BIM被分解和转换以方便使用。我们采用多传感器套件进行多会次的数据采集和建图，以获得建成模型。所有相关数据均按时间戳组织，便于用户部署和测试。此外，我们部署了先进方法并报告了在模型注册、定位和语义建图三个任务上的实验结果，展示了SLABIM的有效性和实用性。我们已在该网址开源了我们的数据集。 
+
+---
+# Characterizing Structured versus Unstructured Environments based on Pedestrians' and Vehicles' Motion Trajectories 
+
+**Title (ZH)**: 基于行人和车辆运动轨迹区分结构化环境与非结构化环境 
+
+**Authors**: Mahsa Golchoubian, Moojan Ghafurian, Nasser Lashgarian Azad, Kerstin Dautenhahn  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16847)  
+
+**Abstract**: Trajectory behaviours of pedestrians and vehicles operating close to each other can be different in unstructured compared to structured environments. These differences in the motion behaviour are valuable to be considered in the trajectory prediction algorithm of an autonomous vehicle. However, the available datasets on pedestrians' and vehicles' trajectories that are commonly used as benchmarks for trajectory prediction have not been classified based on the nature of their environment. On the other hand, the definitions provided for unstructured and structured environments are rather qualitative and hard to be used for justifying the type of a given environment. In this paper, we have compared different existing datasets based on a couple of extracted trajectory features, such as mean speed and trajectory variability. Through K-means clustering and generalized linear models, we propose more quantitative measures for distinguishing the two different types of environments. Our results show that features such as trajectory variability, stop fraction and density of pedestrians are different among the two environmental types and can be used to classify the existing datasets. 
+
+**Abstract (ZH)**: 行人和车辆在结构化与非结构化环境中近距离操作的轨迹行为有所不同。这些运动行为差异对于自动驾驶车辆的轨迹预测算法来说是值得考虑的重要因素。然而，用于轨迹预测基准测试的行人和车辆轨迹数据集尚未基于环境特性进行分类。另一方面，关于非结构化和结构化环境的定义相对定性，难以用于环境类型的论证。在本文中，我们基于提取的轨迹特征（如平均速度和轨迹变异度）比较了不同的现有数据集，并通过K-means聚类和广义线性模型提出了更为定量的环境区分措施。结果表明，轨迹变异度、停止比例和行人密度等特征在两种环境类型之间存在差异，并可用于分类现有数据集。 
+
+---
+# Online Friction Coefficient Identification for Legged Robots on Slippery Terrain Using Smoothed Contact Gradients 
+
+**Title (ZH)**: 基于光滑接触梯度的腿式机器人在滑溜地面上的在线摩擦系数识别 
+
+**Authors**: Hajun Kim, Dongyun Kang, Min-Gyu Kim, Gijeong Kim, Hae-Won Park  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16843)  
+
+**Abstract**: This paper proposes an online friction coefficient identification framework for legged robots on slippery terrain. The approach formulates the optimization problem to minimize the sum of residuals between actual and predicted states parameterized by the friction coefficient in rigid body contact dynamics. Notably, the proposed framework leverages the analytic smoothed gradient of contact impulses, obtained by smoothing the complementarity condition of Coulomb friction, to solve the issue of non-informative gradients induced from the nonsmooth contact dynamics. Moreover, we introduce the rejection method to filter out data with high normal contact velocity following contact initiations during friction coefficient identification for legged robots. To validate the proposed framework, we conduct the experiments using a quadrupedal robot platform, KAIST HOUND, on slippery and nonslippery terrain. We observe that our framework achieves fast and consistent friction coefficient identification within various initial conditions. 
+
+**Abstract (ZH)**: 基于光滑梯度的滑腻地面下肢机器人摩擦系数在线识别框架 
+
+---
+# NatSGLD: A Dataset with Speech, Gesture, Logic, and Demonstration for Robot Learning in Natural Human-Robot Interaction 
+
+**Title (ZH)**: NatSGLD：一种用于自然人机交互中机器人学习的数据集，包含语音、手势、逻辑和示范 
+
+**Authors**: Snehesh Shrestha, Yantian Zha, Saketh Banagiri, Ge Gao, Yiannis Aloimonos, Cornelia Fermüller  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16718)  
+
+**Abstract**: Recent advances in multimodal Human-Robot Interaction (HRI) datasets emphasize the integration of speech and gestures, allowing robots to absorb explicit knowledge and tacit understanding. However, existing datasets primarily focus on elementary tasks like object pointing and pushing, limiting their applicability to complex domains. They prioritize simpler human command data but place less emphasis on training robots to correctly interpret tasks and respond appropriately. To address these gaps, we present the NatSGLD dataset, which was collected using a Wizard of Oz (WoZ) method, where participants interacted with a robot they believed to be autonomous. NatSGLD records humans' multimodal commands (speech and gestures), each paired with a demonstration trajectory and a Linear Temporal Logic (LTL) formula that provides a ground-truth interpretation of the commanded tasks. This dataset serves as a foundational resource for research at the intersection of HRI and machine learning. By providing multimodal inputs and detailed annotations, NatSGLD enables exploration in areas such as multimodal instruction following, plan recognition, and human-advisable reinforcement learning from demonstrations. We release the dataset and code under the MIT License at this https URL to support future HRI research. 
+
+**Abstract (ZH)**: 近期多模态人机交互(HRI)数据集的发展强调了语音和手势的集成，使机器人能够吸收显性知识和隐性理解。然而，现有数据集主要集中在对象指认和推动等初级任务上，限制了其在复杂领域的应用。这些数据集更侧重于简单的人类命令数据，但在训练机器人正确理解任务并做出适当响应方面的重要性较低。为了弥补这些差距，我们呈现了NatSGLD数据集，该数据集采用Wizard of Oz (WoZ) 方法收集，参与者与他们相信是自主的机器人进行了交互。NatSGLD记录了人类的多模态命令（语音和手势），每个命令都配有一个示例轨迹和线性时序逻辑（LTL）公式，提供了命令任务的真实解释。该数据集为人机交互(HRI)与机器学习交叉领域的研究提供了一个基础资源。通过提供多模态输入和详细注释，NatSGLD为多模态指令跟随、计划识别和基于演示的人机可指导强化学习等领域探索提供了支持。我们按照MIT许可在此地址发布该数据集和代码：this https URL以支持未来的人机交互(HRI)研究。 
+
+---
+# Reflective Planning: Vision-Language Models for Multi-Stage Long-Horizon Robotic Manipulation 
+
+**Title (ZH)**: 反思性规划：多阶段长时 horizon 机器人操作的视觉-语言模型 
+
+**Authors**: Yunhai Feng, Jiaming Han, Zhuoran Yang, Xiangyu Yue, Sergey Levine, Jianlan Luo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16707)  
+
+**Abstract**: Solving complex long-horizon robotic manipulation problems requires sophisticated high-level planning capabilities, the ability to reason about the physical world, and reactively choose appropriate motor skills. Vision-language models (VLMs) pretrained on Internet data could in principle offer a framework for tackling such problems. However, in their current form, VLMs lack both the nuanced understanding of intricate physics required for robotic manipulation and the ability to reason over long horizons to address error compounding issues. In this paper, we introduce a novel test-time computation framework that enhances VLMs' physical reasoning capabilities for multi-stage manipulation tasks. At its core, our approach iteratively improves a pretrained VLM with a "reflection" mechanism - it uses a generative model to imagine future world states, leverages these predictions to guide action selection, and critically reflects on potential suboptimalities to refine its reasoning. Experimental results demonstrate that our method significantly outperforms several state-of-the-art commercial VLMs as well as other post-training approaches such as Monte Carlo Tree Search (MCTS). Videos are available at this https URL. 
+
+**Abstract (ZH)**: 复杂长期_horizon 机器人操作问题的解决需要高级规划能力、对物理世界的推理能力和反应性地选择合适的运动技能。基于互联网数据预训练的视觉-语言模型（VLMs）原则上可以提供解决此类问题的框架。然而，目前的形式下，VLMs 缺乏应对复杂物理所需的知识细腻度以及处理长期推理和误差累积问题的能力。在本文中，我们提出了一种新颖的测试时计算框架，以增强VLMs在多阶段操作任务中的物理推理能力。该方法的核心在于通过“反思”机制迭代改进预训练的VLM——利用生成模型想象未来世界状态，利用这些预测指导行动选择，并对其潜在的次优化性进行深入反思以精炼推理。实验结果表明，我们的方法在多个最先进的商用VLMs以及包括蒙特卡洛树搜索（MCTS）在内的其他后训练方法上表现显著优于它们。相关视频可以在此网址查看。 
+
+---
+# Improving Monocular Visual-Inertial Initialization with Structureless Visual-Inertial Bundle Adjustment 
+
+**Title (ZH)**: 单目视觉-惯性初始化的改进：无结构视觉-惯性束调整 
+
+**Authors**: Junlin Song, Antoine Richard, Miguel Olivares-Mendez  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16598)  
+
+**Abstract**: Monocular visual inertial odometry (VIO) has facilitated a wide range of real-time motion tracking applications, thanks to the small size of the sensor suite and low power consumption. To successfully bootstrap VIO algorithms, the initialization module is extremely important. Most initialization methods rely on the reconstruction of 3D visual point clouds. These methods suffer from high computational cost as state vector contains both motion states and 3D feature points. To address this issue, some researchers recently proposed a structureless initialization method, which can solve the initial state without recovering 3D structure. However, this method potentially compromises performance due to the decoupled estimation of rotation and translation, as well as linear constraints. To improve its accuracy, we propose novel structureless visual-inertial bundle adjustment to further refine previous structureless solution. Extensive experiments on real-world datasets show our method significantly improves the VIO initialization accuracy, while maintaining real-time performance. 
+
+**Abstract (ZH)**: 单目视觉惯性里程计（VIO）由于传感器套件小巧和低功耗，已广泛推动各类实时运动跟踪应用。为了成功初始化VIO算法，初始化模块非常重要。大多数初始化方法依赖于构建3D视觉点云。这些方法由于状态向量同时包含运动状态和3D特征点，计算成本较高。为解决此问题，一些研究人员最近提出了一种无结构化初始化方法，该方法可以在不解构3D结构的情况下解决初始状态。然而，该方法由于旋转和平移的解耦估计以及线性约束，其性能可能受到影响。为了提高其准确性，我们提出了一种新型的无结构化视觉惯性Bundle调整，以进一步细化之前的无结构化解决方案。在实际数据集上的广泛实验表明，我们的方法在保持实时性能的同时显著提高了VIO初始化的准确性。 
+
+---
+# Human2Robot: Learning Robot Actions from Paired Human-Robot Videos 
+
+**Title (ZH)**: 人类2机器人：从配对的人机视频中学习机器人动作 
+
+**Authors**: Sicheng Xie, Haidong Cao, Zejia Weng, Zhen Xing, Shiwei Shen, Jiaqi Leng, Xipeng Qiu, Yanwei Fu, Zuxuan Wu, Yu-Gang Jiang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16587)  
+
+**Abstract**: Distilling knowledge from human demonstrations is a promising way for robots to learn and act. Existing work often overlooks the differences between humans and robots, producing unsatisfactory results. In this paper, we study how perfectly aligned human-robot pairs benefit robot learning. Capitalizing on VR-based teleportation, we introduce H\&R, a third-person dataset with 2,600 episodes, each of which captures the fine-grained correspondence between human hands and robot gripper. Inspired by the recent success of diffusion models, we introduce Human2Robot, an end-to-end diffusion framework that formulates learning from human demonstrates as a generative task. Human2Robot fully explores temporal dynamics in human videos to generate robot videos and predict actions at the same time. Through comprehensive evaluations of 8 seen, changed and unseen tasks in real-world settings, we demonstrate that Human2Robot can not only generate high-quality robot videos but also excel in seen tasks and generalize to unseen objects, backgrounds and even new tasks effortlessly. 
+
+**Abstract (ZH)**: 从人类示范中提炼知识是机器人学习和行动的一种有前景的方法。现有工作往往忽视了人类与机器人之间的差异，导致结果不尽如人意。在这项工作中，我们研究完美对齐的人机配对如何促进机器人学习。借助基于VR的 teleportation，我们引入了H&R，一个包含2600个样本的第三人称数据集，每个样本都捕捉了人类手部与机器人夹爪之间的精细对应关系。受近期扩散模型成功的影响，我们引入了Human2Robot，一个端到端的扩散框架，将从人类示范中学习形式化为生成任务。Human2Robot全面探索了人类视频中的时序动态，同时生成机器人视频并预测动作。通过在真实世界设置中对8个已见、变更和未见任务的全面评估，我们证明Human2Robot不仅能生成高质量的机器人视频，还能在已见任务中表现出色，并轻松地泛化到未见对象、背景乃至新任务。 
+
+---
+# Benchmarking Online Object Trackers for Underwater Robot Position Locking Applications 
+
+**Title (ZH)**: 水下机器人位置锁定应用中在线目标跟踪器的基准测试 
+
+**Authors**: Ali Safa, Waqas Aman, Ali Al-Zawqari, Saif Al-Kuwari  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16569)  
+
+**Abstract**: Autonomously controlling the position of Remotely Operated underwater Vehicles (ROVs) is of crucial importance for a wide range of underwater engineering applications, such as in the inspection and maintenance of underwater industrial structures. Consequently, studying vision-based underwater robot navigation and control has recently gained increasing attention to counter the numerous challenges faced in underwater conditions, such as lighting variability, turbidity, camera image distortions (due to bubbles), and ROV positional disturbances (due to underwater currents). In this paper, we propose (to the best of our knowledge) a first rigorous unified benchmarking of more than seven Machine Learning (ML)-based one-shot object tracking algorithms for vision-based position locking of ROV platforms. We propose a position-locking system that processes images of an object of interest in front of which the ROV must be kept stable. Then, our proposed system uses the output result of different object tracking algorithms to automatically correct the position of the ROV against external disturbances. We conducted numerous real-world experiments using a BlueROV2 platform within an indoor pool and provided clear demonstrations of the strengths and weaknesses of each tracking approach. Finally, to help alleviate the scarcity of underwater ROV data, we release our acquired data base as open-source with the hope of benefiting future research. 
+
+**Abstract (ZH)**: 自主控制遥控水下车辆（ROVs）的位置对于海底工程应用至关重要，如水下工业结构的检查和维护。因此，近年来基于视觉的水下机器人导航与控制的研究获得了越来越多的关注，以应对水下环境中的诸多挑战，如光照变化、浑浊度、相机图像畸变（由于气泡）以及水下流动引起的ROV位置扰动。在本文中，我们（据我们所知）首次提出了一种严格的统一基准测试，评估了超过七种基于机器学习（ML）的一次性物体跟踪算法在基于视觉的ROV平台位置锁定中的性能。我们提出了一种位置锁定系统，该系统处理感兴趣物体前方的ROV图像，以保持其实验室稳定。然后，我们的系统利用不同物体跟踪算法的输出结果，自动纠正ROV的外部扰动。我们使用BlueROV2平台在室内泳池中进行了多项真实世界实验，并清晰地展示了每种跟踪方法的优缺点。最后，为了缓解水下ROV数据稀缺的问题，我们开放了我们的数据集，希望能为未来的研究带来益处。 
+
+---
+# Efficient Coordination and Synchronization of Multi-Robot Systems Under Recurring Linear Temporal Logic 
+
+**Title (ZH)**: 高效的多机器人系统在反复出现的线性时间逻辑下的协调与同步 
+
+**Authors**: Davide Peron, Victor Nan Fernandez-Ayala, Eleftherios E. Vlahakis, Dimos V. Dimarogonas  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16531)  
+
+**Abstract**: We consider multi-robot systems under recurring tasks formalized as linear temporal logic (LTL) specifications. To solve the planning problem efficiently, we propose a bottom-up approach combining offline plan synthesis with online coordination, dynamically adjusting plans via real-time communication. To address action delays, we introduce a synchronization mechanism ensuring coordinated task execution, leading to a multi-agent coordination and synchronization framework that is adaptable to a wide range of multi-robot applications. The software package is developed in Python and ROS2 for broad deployment. We validate our findings through lab experiments involving nine robots showing enhanced adaptability compared to previous methods. Additionally, we conduct simulations with up to ninety agents to demonstrate the reduced computational complexity and the scalability features of our work. 
+
+**Abstract (ZH)**: 我们考虑将重复任务形式化为线性时序逻辑（LTL）规范的多机器人系统。为了高效解决规划问题，我们提出了一种自底向上的方法，结合离线计划合成与在线协调，通过实时通信动态调整计划。为了解决动作延迟问题，我们引入了一种同步机制以确保任务的协调执行，从而形成一个适用于多种多机器人应用的多个代理的协调与同步框架，该框架具有很高的适应性。该软件包使用Python和ROS2开发，以实现广泛部署。我们通过涉及九个机器人的真实实验室实验验证了我们的发现，结果显示了与之前方法相比的增强的适应性。此外，我们进行了多达九十个代理的模拟实验，以证明我们工作的计算复杂度降低和扩展功能。 
+
+---
+# OpenVox: Real-time Instance-level Open-vocabulary Probabilistic Voxel Representation 
+
+**Title (ZH)**: OpenVox：实时实例级开放词汇概率体素表示 
+
+**Authors**: Yinan Deng, Bicheng Yao, Yihang Tang, Yi Yang, Yufeng Yue  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16528)  
+
+**Abstract**: In recent years, vision-language models (VLMs) have advanced open-vocabulary mapping, enabling mobile robots to simultaneously achieve environmental reconstruction and high-level semantic understanding. While integrated object cognition helps mitigate semantic ambiguity in point-wise feature maps, efficiently obtaining rich semantic understanding and robust incremental reconstruction at the instance-level remains challenging. To address these challenges, we introduce OpenVox, a real-time incremental open-vocabulary probabilistic instance voxel representation. In the front-end, we design an efficient instance segmentation and comprehension pipeline that enhances language reasoning through encoding captions. In the back-end, we implement probabilistic instance voxels and formulate the cross-frame incremental fusion process into two subtasks: instance association and live map evolution, ensuring robustness to sensor and segmentation noise. Extensive evaluations across multiple datasets demonstrate that OpenVox achieves state-of-the-art performance in zero-shot instance segmentation, semantic segmentation, and open-vocabulary retrieval. Furthermore, real-world robotics experiments validate OpenVox's capability for stable, real-time operation. 
+
+**Abstract (ZH)**: 近年来，视觉-语言模型（VLMs）增强了开放词汇映射能力，使移动机器人能够同时实现环境重建和高层次语义理解。虽然集成对象认知有助于缓解点特征图中的语义模糊性，但在实例级别高效获得丰富语义理解并实现稳健的增量重建仍然具有挑战性。为应对这些挑战，我们介绍了OpenVox，一种实时增量开放词汇概率实例体素表示方法。在前端，我们设计了一个高效的实例分割和理解管道，通过编码标题来增强语言推理。在后端，我们实现了概率实例体素，并将跨帧增量融合过程分解为两个子任务：实例关联和实时地图演化，从而确保对传感器和分割噪声的鲁棒性。在多个数据集上进行的广泛评估表明，OpenVox 在零样本实例分割、语义分割和开放词汇检索方面达到了最佳性能。此外，实际机器人实验验证了OpenVox 能够实现稳定、实时的操作。 
+
+---
+# Path Planning using Instruction-Guided Probabilistic Roadmaps 
+
+**Title (ZH)**: 基于指令引导的概率路网的路径规划 
+
+**Authors**: Jiaqi Bao, Ryo Yonetani  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16515)  
+
+**Abstract**: This work presents a novel data-driven path planning algorithm named Instruction-Guided Probabilistic Roadmap (IG-PRM). Despite the recent development and widespread use of mobile robot navigation, the safe and effective travels of mobile robots still require significant engineering effort to take into account the constraints of robots and their tasks. With IG-PRM, we aim to address this problem by allowing robot operators to specify such constraints through natural language instructions, such as ``aim for wider paths'' or ``mind small gaps''. The key idea is to convert such instructions into embedding vectors using large-language models (LLMs) and use the vectors as a condition to predict instruction-guided cost maps from occupancy maps. By constructing a roadmap based on the predicted costs, we can find instruction-guided paths via the standard shortest path search. Experimental results demonstrate the effectiveness of our approach on both synthetic and real-world indoor navigation environments. 
+
+**Abstract (ZH)**: 基于指令引导的概率路网的新型数据驱动路径规划算法 
+
+---
+# Gaussian Process Regression for Improved Underwater Navigation 
+
+**Title (ZH)**: 高斯过程回归改进水下导航 
+
+**Authors**: Nadav Cohen, Itzik Klein  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16510)  
+
+**Abstract**: Accurate underwater navigation is a challenging task due to the absence of global navigation satellite system signals and the reliance on inertial navigation systems that suffer from drift over time. Doppler velocity logs (DVLs) are typically used to mitigate this drift through velocity measurements, which are commonly estimated using a parameter estimation approach such as least squares (LS). However, LS works under the assumption of ideal conditions and does not account for sensor biases, leading to suboptimal performance. This paper proposes a data-driven alternative based on multi-output Gaussian process regression (MOGPR) to improve DVL velocity estimation. MOGPR provides velocity estimates and associated measurement covariances, enabling an adaptive integration within an error-state Extended Kalman Filter (EKF). We evaluate our proposed approach using real-world AUV data and compare it against LS and a state-of-the-art deep learning model, BeamsNet. Results demonstrate that MOGPR reduces velocity estimation errors by approximately 20% while simultaneously enhancing overall navigation accuracy, particularly in the orientation states. Additionally, the incorporation of uncertainty estimates from MOGPR enables an adaptive EKF framework, improving navigation robustness in dynamic underwater environments. 
+
+**Abstract (ZH)**: 基于多输出高斯过程回归的 Doppler 速度日志速度估计方法 
+
+---
+# Orchestrating Joint Offloading and Scheduling for Low-Latency Edge SLAM 
+
+**Title (ZH)**: 低延迟边缘SLAM中的联合卸载与调度 orchestrating 
+
+**Authors**: Yao Zhang, Yuyi Mao, Hui Wang, Zhiwen Yu, Song Guo, Jun Zhang, Liang Wang, Bin Guo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16495)  
+
+**Abstract**: Visual Simultaneous Localization and Mapping (vSLAM) is a prevailing technology for many emerging robotic applications. Achieving real-time SLAM on mobile robotic systems with limited computational resources is challenging because the complexity of SLAM algorithms increases over time. This restriction can be lifted by offloading computations to edge servers, forming the emerging paradigm of edge-assisted SLAM. Nevertheless, the exogenous and stochastic input processes affect the dynamics of the edge-assisted SLAM system. Moreover, the requirements of clients on SLAM metrics change over time, exerting implicit and time-varying effects on the system. In this paper, we aim to push the limit beyond existing edge-assist SLAM by proposing a new architecture that can handle the input-driven processes and also satisfy clients' implicit and time-varying requirements. The key innovations of our work involve a regional feature prediction method for importance-aware local data processing, a configuration adaptation policy that integrates data compression/decompression and task offloading, and an input-dependent learning framework for task scheduling with constraint satisfaction. Extensive experiments prove that our architecture improves pose estimation accuracy and saves up to 47% of communication costs compared with a popular edge-assisted SLAM system, as well as effectively satisfies the clients' requirements. 
+
+**Abstract (ZH)**: 基于边端协助的视觉即时定位与地图构建(vSLAM)：一种处理输入驱动过程并满足客户隐含和时变要求的新架构 
+
+---
+# On Enhancing Structural Resilience of Multirobot Coverage Control with Bearing Rigidity 
+
+**Title (ZH)**: 增强多机器人覆盖控制的结构韧性和轴承刚性性能 
+
+**Authors**: Kartik A. Pant, Vishnu Vijay, Minhyun Cho, Inseok Hwang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16460)  
+
+**Abstract**: The problem of multi-robot coverage control has been widely studied to efficiently coordinate a team of robots to cover a desired area of interest. However, this problem faces significant challenges when some robots are lost or deviate from their desired formation during the mission due to faults or cyberattacks. Since a majority of multi-robot systems (MRSs) rely on communication and relative sensing for their efficient operation, a failure in one robot could result in a cascade of failures in the entire system. In this work, we propose a hierarchical framework for area coverage, combining centralized coordination by leveraging Voronoi partitioning with decentralized reference tracking model predictive control (MPC) for control design. In addition to reference tracking, the decentralized MPC also performs bearing maintenance to enforce a rigid MRS network, thereby enhancing the structural resilience, i.e., the ability to detect and mitigate the effects of localization errors and robot loss during the mission. Furthermore, we show that the resulting control architecture guarantees the recovery of the MRS network in the event of robot loss while maintaining a minimally rigid structure. The effectiveness of the proposed algorithm is validated through numerical simulations. 
+
+**Abstract (ZH)**: 多机器人覆盖控制问题在某些机器人因故障或网络攻击而丢失或偏离预定队形时面临着重大挑战。鉴于大多数多机器人系统依赖于通信和相对感知以实现高效运行，一个机器人的故障可能会导致整个系统的连锁反应。本文提出了一种分层框架，结合基于Voronoi分区的集中协调和基于分散参考跟踪模型预测控制（MPC）的控制设计。除了参考跟踪，分散MPC还执行方位保持以确保刚性MRS网络，从而增强结构韧性，即在任务期间检测和缓解定位误差和机器人丢失影响的能力。此外，我们证明了所提出的设计架构能够保证在机器人丢失情况下MRS网络的恢复，同时保持最小刚性结构。所提出算法的有效性通过数值模拟进行了验证。 
+
+---
+# AnyDexGrasp: General Dexterous Grasping for Different Hands with Human-level Learning Efficiency 
+
+**Title (ZH)**: AnyDexGrasp: 不同手型的高效人类级灵巧抓取 
+
+**Authors**: Hao-Shu Fang, Hengxu Yan, Zhenyu Tang, Hongjie Fang, Chenxi Wang, Cewu Lu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16420)  
+
+**Abstract**: We introduce an efficient approach for learning dexterous grasping with minimal data, advancing robotic manipulation capabilities across different robotic hands. Unlike traditional methods that require millions of grasp labels for each robotic hand, our method achieves high performance with human-level learning efficiency: only hundreds of grasp attempts on 40 training objects. The approach separates the grasping process into two stages: first, a universal model maps scene geometry to intermediate contact-centric grasp representations, independent of specific robotic hands. Next, a unique grasp decision model is trained for each robotic hand through real-world trial and error, translating these representations into final grasp poses. Our results show a grasp success rate of 75-95\% across three different robotic hands in real-world cluttered environments with over 150 novel objects, improving to 80-98\% with increased training objects. This adaptable method demonstrates promising applications for humanoid robots, prosthetics, and other domains requiring robust, versatile robotic manipulation. 
+
+**Abstract (ZH)**: 一种高效的学习少数据 Dexterous Grasping 的方法：跨不同机械手提升机器人操作能力 
+
+---
+# Quadruped Robot Simulation Using Deep Reinforcement Learning -- A step towards locomotion policy 
+
+**Title (ZH)**: 使用深度强化学习的四足机器人模拟——朝向运动策略的一步 
+
+**Authors**: Nabeel Ahmad Khan Jadoon, Mongkol Ekpanyapong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16401)  
+
+**Abstract**: We present a novel reinforcement learning method to train the quadruped robot in a simulated environment. The idea of controlling quadruped robots in a dynamic environment is quite challenging and my method presents the optimum policy and training scheme with limited resources and shows considerable performance. The report uses the raisimGymTorch open-source library and proprietary software RaiSim for the simulation of ANYmal robot. My approach is centered on formulating Markov decision processes using the evaluation of the robot walking scheme while training. Resulting MDPs are solved using a proximal policy optimization algorithm used in actor-critic mode and collected thousands of state transitions with a single desktop machine. This work also presents a controller scheme trained over thousands of time steps shown in a simulated environment. This work also sets the base for early-stage researchers to deploy their favorite algorithms and configurations. Keywords: Legged robots, deep reinforcement learning, quadruped robot simulation, optimal control 
+
+**Abstract (ZH)**: 一种新型强化学习方法在仿真环境中训练四足机器人 
+
+---
+# COMPASS: Cross-embodiment Mobility Policy via Residual RL and Skill Synthesis 
+
+**Title (ZH)**: COMPASS: 跨身躯移动策略通过残差RL和技能合成 
+
+**Authors**: Wei Liu, Huihua Zhao, Chenran Li, Joydeep Biswas, Soha Pouya, Yan Chang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16372)  
+
+**Abstract**: As robots are increasingly deployed in diverse application domains, generalizable cross-embodiment mobility policies are increasingly essential. While classical mobility stacks have proven effective on specific robot platforms, they pose significant challenges when scaling to new embodiments. Learning-based methods, such as imitation learning (IL) and reinforcement learning (RL), offer alternative solutions but suffer from covariate shift, sparse sampling in large environments, and embodiment-specific constraints.
+This paper introduces COMPASS, a novel workflow for developing cross-embodiment mobility policies by integrating IL, residual RL, and policy distillation. We begin with IL on a mobile robot, leveraging easily accessible teacher policies to train a foundational model that combines a world model with a mobility policy. Building on this base, we employ residual RL to fine-tune embodiment-specific policies, exploiting pre-trained representations to improve sampling efficiency in handling various physical constraints and sensor modalities. Finally, policy distillation merges these embodiment-specialist policies into a single robust cross-embodiment policy.
+We empirically demonstrate that COMPASS scales effectively across diverse robot platforms while maintaining adaptability to various environment configurations, achieving a generalist policy with a success rate approximately 5X higher than the pre-trained IL policy. The resulting framework offers an efficient, scalable solution for cross-embodiment mobility, enabling robots with different designs to navigate safely and efficiently in complex scenarios. 
+
+**Abstract (ZH)**: 随着机器人在多样化的应用领域中的部署越来越多，可泛化的跨体迁移动性策略变得越来越重要。虽然经典的移动性栈在特定的机器人平台上证明是有效的，但在扩展到新的体迁时会面临重大挑战。基于学习的方法，如模仿学习（IL）和强化学习（RL），提供了替代方案，但存在协变量偏移、在大规模环境中样本稀疏以及体迁特定的约束问题。
+
+本文介绍了COMPASS，这是一种新颖的工作流程，通过集成模仿学习（IL）、残差强化学习（RL）和策略蒸馏来开发跨体迁移动性策略。我们首先在移动机器人上使用IL，借助易于获取的教师策略来训练一个基础模型，该模型结合了世界模型和移动性策略。在此基础上，我们使用残差RL微调体迁特定的策略，利用预训练表示以提高在处理各种物理约束和传感器模态时的采样效率。最后，策略蒸馏将这些体迁特定的策略融合为一个稳健的跨体迁策略。
+
+实验结果表明，COMPASS能够在多种机器人平台上有效扩展，同时保持对不同环境配置的适应性，所获得的一般性策略的成功率大约是预训练IL策略的5倍。该框架提供了一种高效、可扩展的跨体迁移动性解决方案，使具有不同设计的机器人能在复杂场景中安全、高效地导航。 
+
+---
+# Supermarket-6DoF: A Real-World Grasping Dataset and Grasp Pose Representation Analysis 
+
+**Title (ZH)**: Supermarket-6DoF: 一个真实世界抓取数据集及 grasping 姿态表示分析 
+
+**Authors**: Jason Toskov, Akansel Cosgun  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16311)  
+
+**Abstract**: We present Supermarket-6DoF, a real-world dataset of 1500 grasp attempts across 20 supermarket objects with publicly available 3D models. Unlike most existing grasping datasets that rely on analytical metrics or simulation for grasp labeling, our dataset provides ground-truth outcomes from physical robot executions. Among the few real-world grasping datasets, wile more modest in size, Supermarket-6DoF uniquely features full 6-DoF grasp poses annotated with both initial grasp success and post-grasp stability under external perturbation. We demonstrate the dataset's utility by analyzing three grasp pose representations for grasp success prediction from point clouds. Our results show that representing the gripper geometry explicitly as a point cloud achieves higher prediction accuracy compared to conventional quaternion-based grasp pose encoding. 
+
+**Abstract (ZH)**: 超市-6自由度：一个包含20种超市物体1500次抓取尝试的真实世界数据集，附带公开的3D模型和物理机器人执行的真实抓取结果 
+
+---
+# Learning Humanoid Locomotion with World Model Reconstruction 
+
+**Title (ZH)**: 基于世界模型重构的类人行走学习 
+
+**Authors**: Wandong Sun, Long Chen, Yongbo Su, Baoshi Cao, Yang Liu, Zongwu Xie  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16230)  
+
+**Abstract**: Humanoid robots are designed to navigate environments accessible to humans using their legs. However, classical research has primarily focused on controlled laboratory settings, resulting in a gap in developing controllers for navigating complex real-world terrains. This challenge mainly arises from the limitations and noise in sensor data, which hinder the robot's understanding of itself and the environment. In this study, we introduce World Model Reconstruction (WMR), an end-to-end learning-based approach for blind humanoid locomotion across challenging terrains. We propose training an estimator to explicitly reconstruct the world state and utilize it to enhance the locomotion policy. The locomotion policy takes inputs entirely from the reconstructed information. The policy and the estimator are trained jointly; however, the gradient between them is intentionally cut off. This ensures that the estimator focuses solely on world reconstruction, independent of the locomotion policy's updates. We evaluated our model on rough, deformable, and slippery surfaces in real-world scenarios, demonstrating robust adaptability and resistance to interference. The robot successfully completed a 3.2 km hike without any human assistance, mastering terrains covered with ice and snow. 
+
+**Abstract (ZH)**: 基于世界模型重建的盲人形足式移动跨越复杂地形方法 
+
+---
+# Probabilistic Bubble Roadmap 
+
+**Title (ZH)**: 概率气泡路网 
+
+**Authors**: Bernhard Wullt, Mikael Norrlöf, Per Mattsson, Thomas B. Schön  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16205)  
+
+**Abstract**: Finding a collision-free path is a fundamental problem in robotics, where the sampling based planners have a long line of success. However, this approach is computationally expensive, due to the frequent use of collision-detection. Furthermore, the produced paths are usually jagged and require further post-processing before they can be tracked. Due to their high computational cost, these planners are usually restricted to static settings, since they are not able to cope with rapid changes in the environment. In our work, we remove this restriction by introducing a learned signed distance function expressed in the configuration space of the robot. The signed distance allows us to form collision-free spherical regions in the configuration space, which we use to suggest a new multi-query path planner that also works in dynamic settings. We propose the probabilistic bubble roadmap planner, which enhances the probabilistic roadmap planner (PRM) by using spheres as vertices and compute the edges by checking for neighboring spheres which intersect. We benchmark our approach in a static setting where we show that we can produce paths that are shorter than the paths produced by the PRM, while having a smaller sized roadmap and finding the paths faster. Finally, we show that we can rapidly rewire the graph in the case of new obstacles introduced at run time and therefore produce paths in the case of moving obstacles. 
+
+**Abstract (ZH)**: 基于学习的符号距离函数在机器人配置空间中的碰撞-free路径规划：一种适用于动态环境的多查询路径规划方法 
+
+---
+# Motion-Coupled Mapping Algorithm for Hybrid Rice Canopy 
+
+**Title (ZH)**: 杂交水稻冠层运动耦合建模算法 
+
+**Authors**: Huaiqu Feng, Guoyang Zhao, Cheng Liu, Yongwei Wang, Jun Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16134)  
+
+**Abstract**: This paper presents a motion-coupled mapping algorithm for contour mapping of hybrid rice canopies, specifically designed for Agricultural Unmanned Ground Vehicles (Agri-UGV) navigating complex and unknown rice fields. Precise canopy mapping is essential for Agri-UGVs to plan efficient routes and avoid protected zones. The motion control of Agri-UGVs, tasked with impurity removal and other operations, depends heavily on accurate estimation of rice canopy height and structure. To achieve this, the proposed algorithm integrates real-time RGB-D sensor data with kinematic and inertial measurements, enabling efficient mapping and proprioceptive localization. The algorithm produces grid-based elevation maps that reflect the probabilistic distribution of canopy contours, accounting for motion-induced uncertainties. It is implemented on a high-clearance Agri-UGV platform and tested in various environments, including both controlled and dynamic rice field settings. This approach significantly enhances the mapping accuracy and operational reliability of Agri-UGVs, contributing to more efficient autonomous agricultural operations. 
+
+**Abstract (ZH)**: 一种适用于农业无人驾驶地面车辆导航复杂未知稻田的运动耦合建图算法：杂交水稻冠层轮廓建图 
+
+---
+# Stability Recognition with Active Vibration for Bracing Behaviors and Motion Extensions Using Environment in Musculoskeletal Humanoids 
+
+**Title (ZH)**: 基于主动振动的支撑行为和运动扩展的 musculoskeletal 人形机器人稳定性识别 
+
+**Authors**: Kento Kawaharazuka, Manabu Nishiura, Shinsuke Nakashima, Yasunori Toshimitsu, Yusuke Omura, Yuya Koga, Yuki Asano, Kei Okada, Koji Kawasaki, Masayuki Inaba  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16092)  
+
+**Abstract**: Although robots with flexible bodies are superior in terms of the contact and adaptability, it is difficult to control them precisely. On the other hand, human beings make use of the surrounding environments to stabilize their bodies and control their movements. In this study, we propose a method for the bracing motion and extension of the range of motion using the environment for the musculoskeletal humanoid. Here, it is necessary to recognize the stability of the body when contacting the environment, and we develop a method to measure it by using the change in sensor values of the body when actively vibrating a part of the body. Experiments are conducted using the musculoskeletal humanoid Musashi, and the effectiveness of this method is confirmed. 
+
+**Abstract (ZH)**: 基于环境的四肢人形机器人支撑运动及其活动范围扩展方法 
+
+---
+# Reflex-based Motion Strategy of Musculoskeletal Humanoids under Environmental Contact Using Muscle Relaxation Control 
+
+**Title (ZH)**: 基于反射的动力健Tahoma拟人机器人在环境接触下的运动策略研究uisine控制 
+
+**Authors**: Kento Kawaharazuka, Kei Tsuzuki, Moritaka Onitsuka, Yuya Koga, Yusuke Omura, Yuki Asano, Kei Okada, Koji Kawasaki, Masayuki Inaba  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16089)  
+
+**Abstract**: The musculoskeletal humanoid can move well under environmental contact thanks to its body softness. However, there are few studies that actively make use of the environment to rest its flexible musculoskeletal body. Also, its complex musculoskeletal structure is difficult to modelize and high internal muscle tension sometimes occurs. To solve these problems, we develop a muscle relaxation control which can minimize the muscle tension by actively using the environment and inhibit useless internal muscle tension. We apply this control to some basic movements, the motion of resting the arms on the desk, and handle operation, and verify its effectiveness. 
+
+**Abstract (ZH)**: 基于环境利用的肌肉放松控制研究：解决柔体人复杂结构和内部肌张力问题 
+
+---
+# Online Learning of Danger Avoidance for Complex Structures of Musculoskeletal Humanoids and Its Applications 
+
+**Title (ZH)**: 复杂结构人形机器人危险规避的在线学习及其应用 
+
+**Authors**: Kento Kawaharazuka, Naoki Hiraoka, Yuya Koga, Manabu Nishiura, Yusuke Omura, Yuki Asano, Kei Okada, Koji Kawasaki, Masayuki Inaba  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16085)  
+
+**Abstract**: The complex structure of musculoskeletal humanoids makes it difficult to model them, and the inter-body interference and high internal muscle force are unavoidable. Although various safety mechanisms have been developed to solve this problem, it is important not only to deal with the dangers when they occur but also to prevent them from happening. In this study, we propose a method to learn a network outputting danger probability corresponding to the muscle length online so that the robot can gradually prevent dangers from occurring. Applications of this network for control are also described. The method is applied to the musculoskeletal humanoid, Musashi, and its effectiveness is verified. 
+
+**Abstract (ZH)**: 肌骨结构的人形机器人结构复杂，建模困难，且不可避免地存在体问干涉和高内肌力。尽管已经开发出了各种安全机制来解决这些问题，重要的是不仅要处理已发生的安全隐患，还要预防其发生。在本研究中，我们提出了一种方法，通过在线学习输出肌肉长度对应危险概率的网络，使机器人能够逐步预防危险的发生。还描述了该网络在控制中的应用。该方法应用于肌骨结构的人形机器人Musashi，并得到了有效性验证。 
+
+---
+# Together We Rise: Optimizing Real-Time Multi-Robot Task Allocation using Coordinated Heterogeneous Plays 
+
+**Title (ZH)**: 共克时艰：基于协调异构剧本的实时多机器人任务分配优化 
+
+**Authors**: Aritra Pal, Anandsingh Chauhan, Mayank Baranwal  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16079)  
+
+**Abstract**: Efficient task allocation among multiple robots is crucial for optimizing productivity in modern warehouses, particularly in response to the increasing demands of online order fulfillment. This paper addresses the real-time multi-robot task allocation (MRTA) problem in dynamic warehouse environments, where tasks emerge with specified start and end locations. The objective is to minimize both the total travel distance of robots and delays in task completion, while also considering practical constraints such as battery management and collision avoidance. We introduce MRTAgent, a dual-agent Reinforcement Learning (RL) framework inspired by self-play, designed to optimize task assignments and robot selection to ensure timely task execution. For safe navigation, a modified linear quadratic controller (LQR) approach is employed. To the best of our knowledge, MRTAgent is the first framework to address all critical aspects of practical MRTA problems while supporting continuous robot movements. 
+
+**Abstract (ZH)**: 多机器人在动态仓库环境下的实时任务分配：MRTAgent框架 
+
+---
+# A Brain-Inspired Perception-Decision Driving Model Based on Neural Pathway Anatomical Alignment 
+
+**Title (ZH)**: 基于神经路径解剖对齐的脑启发感知-决策驾驶模型 
+
+**Authors**: Haidong Wang, Pengfei Xiao, Ao Liu, Qia Shan, Jianhua Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16027)  
+
+**Abstract**: In the realm of autonomous driving, conventional approaches for vehicle perception and decision-making primarily rely on sensor input and rule-based algorithms. However, these methodologies often suffer from lack of interpretability and robustness, particularly in intricate traffic scenarios. To tackle this challenge, we propose a novel brain-inspired driving (BID) framework. Diverging from traditional methods, our approach harnesses brain-inspired perception technology to achieve more efficient and robust environmental perception. Additionally, it employs brain-inspired decision-making techniques to facilitate intelligent decision-making. The experimental results show that the performance has been significantly improved across various autonomous driving tasks and achieved the end-to-end autopilot successfully. This contribution not only advances interpretability and robustness but also offers fancy insights and methodologies for further advancing autonomous driving technology. 
+
+**Abstract (ZH)**: 基于大脑启发的自主驾驶框架：提高感知与决策的可解释性和鲁棒性 
+
+---
+# Development of a Multi-Fingered Soft Gripper Digital Twin for Machine Learning-based Underactuated Control 
+
+**Title (ZH)**: 基于机器学习的欠驱动控制的多指软 gripper 数字孪生开发 
+
+**Authors**: Wu-Te Yang, Pei-Chun Lin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.15994)  
+
+**Abstract**: Soft robots, made from compliant materials, exhibit complex dynamics due to their flexibility and high degrees of freedom. Controlling soft robots presents significant challenges, particularly underactuation, where the number of inputs is fewer than the degrees of freedom. This research aims to develop a digital twin for multi-fingered soft grippers to advance the development of underactuation algorithms. The digital twin is designed to capture key effects observed in soft robots, such as nonlinearity, hysteresis, uncertainty, and time-varying phenomena, ensuring it closely replicates the behavior of a real-world soft gripper. Uncertainty is simulated using the Monte Carlo method. With the digital twin, a Q-learning algorithm is preliminarily applied to identify the optimal motion speed that minimizes uncertainty caused by the soft robots. Underactuated motions are successfully simulated within this environment. This digital twin paves the way for advanced machine learning algorithm training. 
+
+**Abstract (ZH)**: 具有复杂动力学的软机器人由于其柔性和高自由度，由顺应材料制成。控制软机器人尤其具有挑战性，尤其是在欠驱动情况下，输入数量少于自由度。本研究旨在为多指软 gripper 开发数字孪生体，以推进欠驱动算法的发展。该数字孪生体旨在捕捉软机器人中观察到的关键效应，如非线性、滞回、不确定性以及时间变化现象，确保其能够紧密复制真实世界软 gripper 的行为。不确定性通过蒙特卡洛方法进行模拟。借助数字孪生体，初步应用 Q 学习算法以识别最小化由软机器人引起的不确定性的最优运动速度。在此环境中成功模拟了欠驱动运动。该数字孪生体为高级机器学习算法训练铺平了道路。 
+
+---
+# Towards Autonomous Navigation of Neuroendovascular Tools for Timely Stroke Treatment via Contact-aware Path Planning 
+
+**Title (ZH)**: 面向接触感知路径规划的神经介入工具及时卒中治疗自主导航研究 
+
+**Authors**: Aabha Tamhankar, Giovanni Pittiglio  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.15971)  
+
+**Abstract**: In this paper, we propose a model-based contact-aware motion planner for autonomous navigation of neuroendovascular tools in acute ischemic stroke. The planner is designed to find the optimal control strategy for telescopic pre-bent catheterization tools such as guidewire and catheters, currently used for neuroendovascular procedures. A kinematic model for the telescoping tools and their interaction with the surrounding anatomy is derived to predict tools steering. By leveraging geometrical knowledge of the anatomy, obtained from pre-operative segmented 3D images, and the mechanics of the telescoping tools, the planner finds paths to the target enabled by interacting with the surroundings. We propose an actuation platform for insertion and rotation of the telescopic tools and present experimental results for the navigation from the base of the descending aorta to the LCCA. We demonstrate that, by leveraging the pre-operative plan, we can consistently navigate the LCCA with 100% success of over 50 independent trials. We also study the robustness of the planner towards motion of the aorta and errors in the initial positioning of the robotic tools. The proposed plan can successfully reach the LCCA for rotations of the aorta of up to 10°, and displacement of up to 10mm, on the coronal plane. 
+
+**Abstract (ZH)**: 基于模型的接触感知运动规划方法及其在急性缺血性中风神经介入工具自主导航中的应用 
+
+---
+# IA-TIGRIS: An Incremental and Adaptive Sampling-Based Planner for Online Informative Path Planning 
+
+**Title (ZH)**: IA-TIGRIS: 一种增量自适应基于采样的在线信息性路径规划算法 
+
+**Authors**: Brady Moon, Nayana Suvarna, Andrew Jong, Satrajit Chatterjee, Junbin Yuan, Sebastian Scherer  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.15961)  
+
+**Abstract**: Planning paths that maximize information gain for robotic platforms has wide-ranging applications and significant potential impact. To effectively adapt to real-time data collection, informative path planning must be computed online and be responsive to new observations. In this work, we present IA-TIGRIS, an incremental and adaptive sampling-based informative path planner that can be run efficiently with onboard computation. Our approach leverages past planning efforts through incremental refinement while continuously adapting to updated world beliefs. We additionally present detailed implementation and optimization insights to facilitate real-world deployment, along with an array of reward functions tailored to specific missions and behaviors. Extensive simulation results demonstrate IA-TIGRIS generates higher-quality paths compared to baseline methods. We validate our planner on two distinct hardware platforms: a hexarotor UAV and a fixed-wing UAV, each having unique motion models and configuration spaces. Our results show up to a 41% improvement in information gain compared to baseline methods, suggesting significant potential for deployment in real-world applications. 
+
+**Abstract (ZH)**: 基于增量和自适应采样的信息增益路径规划算法IA-TIGRIS及其应用 
+
+---
+# Discovery and Deployment of Emergent Robot Swarm Behaviors via Representation Learning and Real2Sim2Real Transfer 
+
+**Title (ZH)**: 基于表示学习和实景到模拟再到实景的迁移学习发现与部署涌现机器人 swarm 行为 
+
+**Authors**: Connor Mattson, Varun Raveendra, Ricardo Vega, Cameron Nowzari, Daniel S. Drew, Daniel S. Brown  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.15937)  
+
+**Abstract**: Given a swarm of limited-capability robots, we seek to automatically discover the set of possible emergent behaviors. Prior approaches to behavior discovery rely on human feedback or hand-crafted behavior metrics to represent and evolve behaviors and only discover behaviors in simulation, without testing or considering the deployment of these new behaviors on real robot swarms. In this work, we present Real2Sim2Real Behavior Discovery via Self-Supervised Representation Learning, which combines representation learning and novelty search to discover possible emergent behaviors automatically in simulation and enable direct controller transfer to real robots. First, we evaluate our method in simulation and show that our proposed self-supervised representation learning approach outperforms previous hand-crafted metrics by more accurately representing the space of possible emergent behaviors. Then, we address the reality gap by incorporating recent work in sim2real transfer for swarms into our lightweight simulator design, enabling direct robot deployment of all behaviors discovered in simulation on an open-source and low-cost robot platform. 
+
+**Abstract (ZH)**: Real2Sim2Real行为发现通过自我监督表示学习 
+
+---
+# Getting SMARTER for Motion Planning in Autonomous Driving Systems 
+
+**Title (ZH)**: 面向自主驾驶系统的运动规划SMARTER方法 
+
+**Authors**: Montgomery Alban, Ehsan Ahmadi, Randy Goebel, Amir Rasouli  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.15824)  
+
+**Abstract**: Motion planning is a fundamental problem in autonomous driving and perhaps the most challenging to comprehensively evaluate because of the associated risks and expenses of real-world deployment. Therefore, simulations play an important role in efficient development of planning algorithms. To be effective, simulations must be accurate and realistic, both in terms of dynamics and behavior modeling, and also highly customizable in order to accommodate a broad spectrum of research frameworks. In this paper, we introduce SMARTS 2.0, the second generation of our motion planning simulator which, in addition to being highly optimized for large-scale simulation, provides many new features, such as realistic map integration, vehicle-to-vehicle (V2V) communication, traffic and pedestrian simulation, and a broad variety of sensor models.
+Moreover, we present a novel benchmark suite for evaluating planning algorithms in various highly challenging scenarios, including interactive driving, such as turning at intersections, and adaptive driving, in which the task is to closely follow a lead vehicle without any explicit knowledge of its intention. Each scenario is characterized by a variety of traffic patterns and road structures. We further propose a series of common and task-specific metrics to effectively evaluate the performance of the planning algorithms. At the end, we evaluate common motion planning algorithms using the proposed benchmark and highlight the challenges the proposed scenarios impose. The new SMARTS 2.0 features and the benchmark are publicly available at this http URL. 
+
+**Abstract (ZH)**: 自主驾驶中的运动规划是一个基本问题，由于实际部署相关风险和成本，全面评估尤为困难。因此，模拟在高效开发规划算法中起着重要作用。为了有效，模拟必须在动力学和行为建模方面准确且现实，并且高度可定制，以适应广泛的科研框架。在本文中，我们介绍了SMARTS 2.0，这是我们运动规划模拟器的第二代产品，除了高度优化的大规模模拟外，还提供了许多新功能，如真实的地图集成、车对车通信、交通和行人模拟，以及广泛的传感器模型。此外，我们提出了一组新的基准测试套件，用于在各种高度挑战性场景中评估规划算法，包括交互式驾驶（如交叉路口转弯）和自适应驾驶（即紧跟前车而无需明确了解其意图）。每个场景都由各种交通模式和道路结构特征描述。我们还提出了一系列通用和任务特定的评估指标，以有效评估规划算法的性能。最后，我们使用所提出的基准测试评估常用的运动规划算法，并强调提出的场景所造成的挑战。新的SMARTS 2.0功能和基准测试可在以下网址公开获取。 
+
+---
+# Enriching Physical-Virtual Interaction in AR Gaming by Tracking Identical Real Objects 
+
+**Title (ZH)**: 通过追踪相同的真实物体来丰富AR游戏中的物理-虚拟交互 
+
+**Authors**: Liuchuan Yu, Ching-I Huang, Hsueh-Cheng Wang, Lap-Fai Yu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.17399)  
+
+**Abstract**: Augmented reality (AR) games, particularly those designed for headsets, have become increasingly prevalent with advancements in both hardware and software. However, the majority of AR games still rely on pre-scanned or static scenes, and interaction mechanisms are often limited to controllers or hand-tracking. Additionally, the presence of identical objects in AR games poses challenges for conventional object tracking techniques, which often struggle to differentiate between identical objects or necessitate the installation of fixed cameras for global object movement tracking. In response to these limitations, we present a novel approach to address the tracking of identical objects in an AR scene to enrich physical-virtual interaction. Our method leverages partial scene observations captured by an AR headset, utilizing the perspective and spatial data provided by this technology. Object identities within the scene are determined through the solution of a label assignment problem using integer programming. To enhance computational efficiency, we incorporate a Voronoi diagram-based pruning method into our approach. Our implementation of this approach in a farm-to-table AR game demonstrates its satisfactory performance and robustness. Furthermore, we showcase the versatility and practicality of our method through applications in AR storytelling and a simulated gaming robot. Our video demo is available at: this https URL. 
+
+**Abstract (ZH)**: 增强现实（AR）游戏，特别是为头戴式设备设计的游戏，在硬件和软件的进步推动下越来越普遍。然而，大多数AR游戏仍然依赖于预先扫描或静态场景，且交互机制常常局限于控制器或手部追踪。此外，AR游戏中同一物体的出现为传统的物体跟踪技术带来了挑战，这些技术往往难以区分同一物体，或者需要安装固定摄像头以追踪全局物体运动。为应对这些限制，我们提出了一种新的方法，以解决AR场景中同一物体的跟踪问题，从而丰富物理-虚拟交互。该方法利用AR头戴设备捕获的部分场景观察数据，通过整数规划解决标签分配问题来确定场景中的物体身份。为了提高计算效率，我们在方法中引入了基于Voronoi图的剪枝方法。我们在一个从农场到餐桌的AR游戏中实现了该方法，并展示了其满意的性能和鲁棒性。此外，我们通过AR叙述和模拟游戏机器人应用展示了该方法的多样性和实用性。我们的视频demo可在以下链接查看：this https URL。 
+
+---
+# Experimental validation of UAV search and detection system in real wilderness environment 
+
+**Title (ZH)**: 基于实际野外环境的无人机搜索与检测系统实验验证 
+
+**Authors**: Stella Dumenčić, Luka Lanča, Karlo Jakac, Stefan Ivić  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.17372)  
+
+**Abstract**: Search and rescue (SAR) missions require reliable search methods to locate survivors, especially in challenging or inaccessible environments. This is why introducing unmanned aerial vehicles (UAVs) can be of great help to enhance the efficiency of SAR missions while simultaneously increasing the safety of everyone involved in the mission. Motivated by this, we design and experiment with autonomous UAV search for humans in a Mediterranean karst environment. The UAVs are directed using Heat equation-driven area coverage (HEDAC) ergodic control method according to known probability density and detection function. The implemented sensing framework consists of a probabilistic search model, motion control system, and computer vision object detection. It enables calculation of the probability of the target being detected in the SAR mission, and this paper focuses on experimental validation of proposed probabilistic framework and UAV control. The uniform probability density to ensure the even probability of finding the targets in the desired search area is achieved by assigning suitably thought-out tasks to 78 volunteers. The detection model is based on YOLO and trained with a previously collected ortho-photo image database. The experimental search is carefully planned and conducted, while as many parameters as possible are recorded. The thorough analysis consists of the motion control system, object detection, and the search validation. The assessment of the detection and search performance provides strong indication that the designed detection model in the UAV control algorithm is aligned with real-world results. 
+
+**Abstract (ZH)**: 无人自主 aerial vehicle 搜索救援系统在地中海岩溶环境中的设计与实验 
+
+---
+# Co-Designing Augmented Reality Tools for High-Stakes Clinical Teamwork 
+
+**Title (ZH)**: 协同设计高风险临床团队协作的增强现实工具 
+
+**Authors**: Angelique Taylor, Tauhid Tanjim, Huajie Cao, Jalynn Blu Nicoly, Jonathan I. Segal, Jonathan St. George, Soyon Kim, Kevin Ching, Francisco R. Ortega, Hee Rin Lee  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.17295)  
+
+**Abstract**: How might healthcare workers (HCWs) leverage augmented reality head-mounted displays (AR-HMDs) to enhance teamwork? Although AR-HMDs have shown immense promise in supporting teamwork in healthcare settings, design for Emergency Department (ER) teams has received little attention. The ER presents unique challenges, including procedural recall, medical errors, and communication gaps. To address this gap, we engaged in a participatory design study with healthcare workers to gain a deep understanding of the potential for AR-HMDs to facilitate teamwork during ER procedures. Our results reveal that AR-HMDs can be used as an information-sharing and information-retrieval system to bridge knowledge gaps, and concerns about integrating AR-HMDs in ER workflows. We contribute design recommendations for seven role-based AR-HMD application scenarios involving HCWs with various expertise, working across multiple medical tasks. We hope our research inspires designers to embark on the development of new AR-HMD applications for high-stakes, team environments. 
+
+**Abstract (ZH)**: 如何让 healthcare 工作人员利用增强现实头戴式显示屏（AR-HMD）提升团队协作？尽管 AR-HMD 在支持医疗环境中团队协作方面展现出巨大潜力，但针对急诊部门（ER）团队的设计研究却很少。ER 环境中存在着程序回忆、医疗错误和沟通缺口等独特挑战。为弥补这一不足，我们与 healthcare 工作人员合作开展了一项参与式设计研究，深入了解 AR-HMD 在 ER 操作过程中促进团队协作的潜在价值。研究结果表明，AR-HMD 可作为信息共享和检索系统，用于填补知识空白，并缓解在 ER 工作流程中整合 AR-HMD 的关切。我们提出了针对涉及不同专业水平的 healthcare 工作人员、参与多种医疗任务的七种角色导向的 AR-HMD 应用场景的设计建议。我们希望我们的研究能够激发设计师开发适用于高风险团队环境的新 AR-HMD 应用。 
+
+---
+# Fast Finite-Time Sliding Mode Control for Chattering-Free Trajectory Tracking of Robotic Manipulators 
+
+**Title (ZH)**: 无颤振轨迹跟踪的快速有限时间滑模控制 
+
+**Authors**: Momammad Ali Ranjbar  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16867)  
+
+**Abstract**: Achieving precise and efficient trajectory tracking in robotic arms remains a key challenge due to system uncertainties and chattering effects in conventional sliding mode control (SMC). This paper presents a chattering-free fast terminal sliding mode control (FTSMC) strategy for a three-degree-of-freedom (3-DOF) robotic arm, designed to enhance tracking accuracy and robustness while ensuring finite-time convergence. The control framework is developed using Newton-Euler dynamics, followed by a state-space representation that captures the system's angular position and velocity. By incorporating an improved sliding surface and a Lyapunov-based stability analysis, the proposed FTSMC effectively mitigates chattering while preserving the advantages of SMC, such as fast response and strong disturbance rejection. The controller's performance is rigorously evaluated through comparisons with conventional PD sliding mode control (PDSMC) and terminal sliding mode control (TSMC). Simulation results demonstrate that the proposed approach achieves superior trajectory tracking performance, faster convergence, and enhanced stability compared to existing methods, making it a promising solution for high-precision robotic applications. 
+
+**Abstract (ZH)**: 一种无抖动的快速终端滑模控制策略在三自由度机器人臂轨迹跟踪中的应用 
+
+---
+# Leveraging Large Language Models for Effective and Explainable Multi-Agent Credit Assignment 
+
+**Title (ZH)**: 利用大型语言模型进行有效可解释的多代理信用分配 
+
+**Authors**: Kartik Nagpal, Dayi Dong, Jean-Baptiste Bouvier, Negar Mehr  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16863)  
+
+**Abstract**: Recent work, spanning from autonomous vehicle coordination to in-space assembly, has shown the importance of learning collaborative behavior for enabling robots to achieve shared goals. A common approach for learning this cooperative behavior is to utilize the centralized-training decentralized-execution paradigm. However, this approach also introduces a new challenge: how do we evaluate the contributions of each agent's actions to the overall success or failure of the team. This credit assignment problem has remained open, and has been extensively studied in the Multi-Agent Reinforcement Learning literature. In fact, humans manually inspecting agent behavior often generate better credit evaluations than existing methods. We combine this observation with recent works which show Large Language Models demonstrate human-level performance at many pattern recognition tasks. Our key idea is to reformulate credit assignment to the two pattern recognition problems of sequence improvement and attribution, which motivates our novel LLM-MCA method. Our approach utilizes a centralized LLM reward-critic which numerically decomposes the environment reward based on the individualized contribution of each agent in the scenario. We then update the agents' policy networks based on this feedback. We also propose an extension LLM-TACA where our LLM critic performs explicit task assignment by passing an intermediary goal directly to each agent policy in the scenario. Both our methods far outperform the state-of-the-art on a variety of benchmarks, including Level-Based Foraging, Robotic Warehouse, and our new Spaceworld benchmark which incorporates collision-related safety constraints. As an artifact of our methods, we generate large trajectory datasets with each timestep annotated with per-agent reward information, as sampled from our LLM critics. 
+
+**Abstract (ZH)**: 最近的研究，从自主车辆协调到太空组装，凸显了学习协作行为的重要性，以使机器人能够共同实现目标。一种常见的学习这种协同行为的方法是利用集中训练分散执行的范式。然而，这种方法也引入了一个新的挑战：如何评估每个代理的动作对团队整体成功或失败的贡献。这个问题仍然没有解决，并在多代理强化学习文献中得到了广泛研究。事实上，人类手动检查代理行为往往能生成比现有方法更好的信用评估。我们结合了这一观察与最近的研究，这些研究显示大型语言模型在许多模式识别任务中达到了人类水平的性能。我们的核心思想是将信用分配重新公式化为目标序列改进和归因这两个模式识别问题，这激励了我们的LLM-MCA方法。我们的方法利用了一个集中式的LLM奖励批评家，基于场景中每个代理的个体贡献对环境奖励进行了数值分解。然后，根据这一反馈更新代理的策略网络。我们还提出了扩展的LLM-TACA方法，其中我们的LLM批评家通过将中介目标直接传递给场景中的每个代理策略，进行了显式的任务分配。我们的方法在多种基准测试中远超现有最佳方法，包括层次化采集、机器人仓库和我们的新太空世界基准测试，该基准测试包含了与碰撞相关的安全约束。作为方法的一个副产品，我们生成了大量带有每个时间步长每个代理奖励信息的轨迹数据集。 
+
+---
+# MetaSym: A Symplectic Meta-learning Framework for Physical Intelligence 
+
+**Title (ZH)**: MetaSym: 一个辛动态元学习框架以实现物理智能 
+
+**Authors**: Pranav Vaidhyanathan, Aristotelis Papatheodorou, Mark T. Mitchison, Natalia Ares, Ioannis Havoutis  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16667)  
+
+**Abstract**: Scalable and generalizable physics-aware deep learning has long been considered a significant challenge with various applications across diverse domains ranging from robotics to molecular dynamics. Central to almost all physical systems are symplectic forms, the geometric backbone that underpins fundamental invariants like energy and momentum. In this work, we introduce a novel deep learning architecture, MetaSym. In particular, MetaSym combines a strong symplectic inductive bias obtained from a symplectic encoder and an autoregressive decoder with meta-attention. This principled design ensures that core physical invariants remain intact while allowing flexible, data-efficient adaptation to system heterogeneities. We benchmark MetaSym on highly varied datasets such as a high-dimensional spring mesh system (Otness et al., 2021), an open quantum system with dissipation and measurement backaction, and robotics-inspired quadrotor dynamics. Our results demonstrate superior performance in modeling dynamics under few-shot adaptation, outperforming state-of-the-art baselines with far larger models. 
+
+**Abstract (ZH)**: 具有对称性意识的大规模和普适性强物理感知深度学习一直是各个领域从机器人学到分子动力学的广泛应用中的一项重要挑战。MetaSym：结合对称性编码器和自回归解码器的元注意力新型深度学习架构在保持核心物理不变量的同时，允许灵活的数据高效适应系统异质性。 
+
+---
+# Co-MTP: A Cooperative Trajectory Prediction Framework with Multi-Temporal Fusion for Autonomous Driving 
+
+**Title (ZH)**: 共融多时态轨迹预测框架：自主驾驶中的多时态融合 
+
+**Authors**: Xinyu Zhang, Zewei Zhou, Zhaoyi Wang, Yangjie Ji, Yanjun Huang, Hong Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16589)  
+
+**Abstract**: Vehicle-to-everything technologies (V2X) have become an ideal paradigm to extend the perception range and see through the occlusion. Exiting efforts focus on single-frame cooperative perception, however, how to capture the temporal cue between frames with V2X to facilitate the prediction task even the planning task is still underexplored. In this paper, we introduce the Co-MTP, a general cooperative trajectory prediction framework with multi-temporal fusion for autonomous driving, which leverages the V2X system to fully capture the interaction among agents in both history and future domains to benefit the planning. In the history domain, V2X can complement the incomplete history trajectory in single-vehicle perception, and we design a heterogeneous graph transformer to learn the fusion of the history feature from multiple agents and capture the history interaction. Moreover, the goal of prediction is to support future planning. Thus, in the future domain, V2X can provide the prediction results of surrounding objects, and we further extend the graph transformer to capture the future interaction among the ego planning and the other vehicles' intentions and obtain the final future scenario state under a certain planning action. We evaluate the Co-MTP framework on the real-world dataset V2X-Seq, and the results show that Co-MTP achieves state-of-the-art performance and that both history and future fusion can greatly benefit prediction. 
+
+**Abstract (ZH)**: 基于V2X的多时序融合协同轨迹预测框架 
+
+---
+# DeProPose: Deficiency-Proof 3D Human Pose Estimation via Adaptive Multi-View Fusion 
+
+**Title (ZH)**: DeProPose: 防缺陷的适应性多视图融合三维人体姿态估计 
+
+**Authors**: Jianbin Jiao, Xina Cheng, Kailun Yang, Xiangrong Zhang, Licheng Jiao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16419)  
+
+**Abstract**: 3D human pose estimation has wide applications in fields such as intelligent surveillance, motion capture, and virtual reality. However, in real-world scenarios, issues such as occlusion, noise interference, and missing viewpoints can severely affect pose estimation. To address these challenges, we introduce the task of Deficiency-Aware 3D Pose Estimation. Traditional 3D pose estimation methods often rely on multi-stage networks and modular combinations, which can lead to cumulative errors and increased training complexity, making them unable to effectively address deficiency-aware estimation. To this end, we propose DeProPose, a flexible method that simplifies the network architecture to reduce training complexity and avoid information loss in multi-stage designs. Additionally, the model innovatively introduces a multi-view feature fusion mechanism based on relative projection error, which effectively utilizes information from multiple viewpoints and dynamically assigns weights, enabling efficient integration and enhanced robustness to overcome deficiency-aware 3D Pose Estimation challenges. Furthermore, to thoroughly evaluate this end-to-end multi-view 3D human pose estimation model and to advance research on occlusion-related challenges, we have developed a novel 3D human pose estimation dataset, termed the Deficiency-Aware 3D Pose Estimation (DA-3DPE) dataset. This dataset encompasses a wide range of deficiency scenarios, including noise interference, missing viewpoints, and occlusion challenges. Compared to state-of-the-art methods, DeProPose not only excels in addressing the deficiency-aware problem but also shows improvement in conventional scenarios, providing a powerful and user-friendly solution for 3D human pose estimation. The source code will be available at this https URL. 
+
+**Abstract (ZH)**: 三维人体姿态估计在智能监控、动作捕捉和虚拟现实等领域具有广泛应用。然而，在现实场景中，遮挡、噪声干扰和视角缺失等问题严重影响姿态估计。为应对这些挑战，我们提出了缺陷感知三维姿态估计任务。传统的三维姿态估计方法往往依赖于多阶段网络和模块组合，这可能导致累积误差和训练复杂度增加，限制了其对缺陷感知估计的有效解决能力。为此，我们提出了一种灵活的方法——DeProPose，简化网络架构以降低训练复杂度并避免多阶段设计中的信息损失。此外，模型创新性地引入了基于相对投影误差的多视角特征融合机制，有效利用多视角信息并动态分配权重，实现高效集成和增强的鲁棒性，以克服缺陷感知三维姿态估计挑战。为进一步评估这一端到端的多视角三维人体姿态估计模型并推动遮挡相关挑战的研究，我们开发了一个新的三维人体姿态估计数据集，称为缺陷感知三维姿态估计（DA-3DPE）数据集。该数据集涵盖了广泛的缺陷场景，包括噪声干扰、视角缺失和遮挡挑战。与现有最先进的方法相比，DeProPose 不仅在解决缺陷感知问题方面表现出色，还在常规场景中也有所改进，提供了一种强大且用户友好的三维人体姿态估计解决方案。源代码将在此链接处提供：https://github.com/alibaba/Qwen-DeProPose。 
+
+---
+# An Expert Ensemble for Detecting Anomalous Scenes, Interactions, and Behaviors in Autonomous Driving 
+
+**Title (ZH)**: 专家集成用于检测自动驾驶中异常场景、交互和行为 
+
+**Authors**: Tianchen Ji, Neeloy Chakraborty, Andre Schreiber, Katherine Driggs-Campbell  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16389)  
+
+**Abstract**: As automated vehicles enter public roads, safety in a near-infinite number of driving scenarios becomes one of the major concerns for the widespread adoption of fully autonomous driving. The ability to detect anomalous situations outside of the operational design domain is a key component in self-driving cars, enabling us to mitigate the impact of abnormal ego behaviors and to realize trustworthy driving systems. On-road anomaly detection in egocentric videos remains a challenging problem due to the difficulties introduced by complex and interactive scenarios. We conduct a holistic analysis of common on-road anomaly patterns, from which we propose three unsupervised anomaly detection experts: a scene expert that focuses on frame-level appearances to detect abnormal scenes and unexpected scene motions; an interaction expert that models normal relative motions between two road participants and raises alarms whenever anomalous interactions emerge; and a behavior expert which monitors abnormal behaviors of individual objects by future trajectory prediction. To combine the strengths of all the modules, we propose an expert ensemble (Xen) using a Kalman filter, in which the final anomaly score is absorbed as one of the states and the observations are generated by the experts. Our experiments employ a novel evaluation protocol for realistic model performance, demonstrate superior anomaly detection performance than previous methods, and show that our framework has potential in classifying anomaly types using unsupervised learning on a large-scale on-road anomaly dataset. 
+
+**Abstract (ZH)**: 随着自动驾驶车辆进入公共道路，全面自主驾驶的广泛应用在近乎无尽的驾驶场景中面临的安全性成为主要关注点。检测超出操作设计域的异常情况的能力是自动驾驶汽车的关键组成部分，使我们能够减轻异常自我行为的影响，并实现可信的驾驶系统。由于复杂且相互作用的场景带来的挑战，基于第一人称视频的现场异常检测仍然是一个难题。我们对常见的现场异常模式进行整体分析，提出三种无监督异常检测专家：场景专家专注于帧级外观以检测异常场景和意外场景运动；交互专家建模两个道路参与者之间的正常相对运动，并在出现异常交互时发出警报；行为专家通过未来轨迹预测监控单个对象的异常行为。为了结合所有模块的优势，我们提出了一种专家集成（Xen）方法，使用卡尔曼滤波器，其中最终的异常分数作为状态之一，观测结果由专家生成。我们的实验采用了一种新的评估协议来评估现实模型性能，展示了比先前方法更好的异常检测性能，并证明了我们的框架在使用无监督学习对大型现场异常数据集进行异常类型分类方面具有潜力。 
+
+---
+# Optimization-free Smooth Control Barrier Function for Polygonal Collision Avoidance 
+
+**Title (ZH)**: 无优化的平滑控制 barrier 函数应用于多边形碰撞避免 
+
+**Authors**: Shizhen Wu, Yongchun Fang, Ning Sun, Biao Lu, Xiao Liang, Yiming Zhao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16293)  
+
+**Abstract**: Polygonal collision avoidance (PCA) is short for the problem of collision avoidance between two polygons (i.e., polytopes in planar) that own their dynamic equations. This problem suffers the inherent difficulty in dealing with non-smooth boundaries and recently optimization-defined metrics, such as signed distance field (SDF) and its variants, have been proposed as control barrier functions (CBFs) to tackle PCA problems. In contrast, we propose an optimization-free smooth CBF method in this paper, which is computationally efficient and proved to be nonconservative. It is achieved by three main steps: a lower bound of SDF is expressed as a nested Boolean logic composition first, then its smooth approximation is established by applying the latest log-sum-exp method, after which a specified CBF-based safety filter is proposed to address this class of problems. To illustrate its wide applications, the optimization-free smooth CBF method is extended to solve distributed collision avoidance of two underactuated nonholonomic vehicles and drive an underactuated container crane to avoid a moving obstacle respectively, for which numerical simulations are also performed. 
+
+**Abstract (ZH)**: 多边形碰撞避免（PCA）是指在平面中两个具有动力学方程的多边形（即多面体）之间的碰撞避免问题。该问题难以处理非光滑边界和最近提出的基于优化的度量标准（如符号距离场SDF及其变体），这些度量标准作为控制障碍函数（CBFs）用于解决PCA问题。相比之下，本文提出了一种无优化的光滑CBF方法，该方法计算效率高并且证明为非保守。该方法通过三个主要步骤实现：首先将SDF的下界表示为嵌套的布尔逻辑复合，然后通过应用最新的log-sum-exp方法建立其光滑近似，最后提出一种特定的基于CBF的安全过滤器来解决这类问题。为了展示其广泛的应用，无优化的光滑CBF方法被扩展用于解决两辆欠驱动非完整车辆的分布式碰撞避免问题，并使欠驱动集装箱起重机避开移动障碍物，同时进行了数值仿真。 
+
+---
+# From Target Tracking to Targeting Track -- Part II: Regularized Polynomial Trajectory Optimization 
+
+**Title (ZH)**: 从目标跟踪到轨迹瞄准——Part II：正则化多项式轨迹优化 
+
+**Authors**: Tiancheng Li, Yan Song, Guchong Li, Hao Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.16121)  
+
+**Abstract**: Target tracking entails the estimation of the evolution of the target state over time, namely the target trajectory. Different from the classical state space model, our series of studies, including this paper, model the collection of the target state as a stochastic process (SP) that is further decomposed into a deterministic part which represents the trend of the trajectory and a residual SP representing the residual fitting error. Subsequently, the tracking problem is formulated as a learning problem regarding the trajectory SP for which a key part is to estimate a trajectory FoT (T-FoT) best fitting the measurements in time series. For this purpose, we consider the polynomial T-FoT and address the regularized polynomial T-FoT optimization employing two distinct regularization strategies seeking trade-off between the accuracy and simplicity. One limits the order of the polynomial and then the best choice is determined by grid searching in a narrow, bounded range while the other adopts $\ell_0$ norm regularization for which the hybrid Newton solver is employed. Simulation results obtained in both single and multiple maneuvering target scenarios demonstrate the effectiveness of our approaches. 
+
+**Abstract (ZH)**: 目标跟踪涉及目标状态随时间演变的估计，即目标轨迹。不同于经典的状态空间模型，我们一系列的研究，包括本文在内，将目标状态集合建模为一个随机过程（SP），该过程进一步分解为表示轨迹趋势的确定性部分和表示残差拟合误差的残差SP。随后，跟踪问题被形式化为关于轨迹SP的学习问题，其中关键部分是估计一个最佳拟合时间序列测量的轨迹FoT（T-FoT）。为此，我们考虑多项式T-FoT，并采用两种不同的正则化策略解决正则化多项式T-FoT优化问题，以在准确性与简单性之间寻求平衡。一种策略限制多项式的阶数，然后通过在一个狭窄、有界的范围内进行网格搜索确定最佳选择，另一种策略采用$\ell_0$范数正则化，使用混合牛顿求解器。在单个和多个机动目标场景下获得的仿真结果证明了我们方法的有效性。 
+
+---
+# Likable or Intelligent? Comparing Social Robots and Virtual Agents for Long-term Health Monitoring 
+
+**Title (ZH)**: 可亲或智慧？比较社会机器人与虚拟代理在长期健康监测中的效果 
+
+**Authors**: Caterina Neef, Anja Richert  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.15948)  
+
+**Abstract**: Using social robots and virtual agents (VAs) as interfaces for health monitoring systems for older adults offers the possibility of more engaging interactions that can support long-term health and well-being. While robots are characterized by their physical presence, software-based VAs are more scalable and flexible. Few comparisons of these interfaces exist in the human-robot and human-agent interaction domains, especially in long-term and real-world studies. In this work, we examined impressions of social robots and VAs at the beginning and end of an eight-week study in which older adults interacted with these systems independently in their homes. Using a between-subjects design, participants could choose which interface to evaluate during the study. While participants perceived the social robot as somewhat more likable, the VA was perceived as more intelligent. Our work provides a basis for further studies investigating factors most relevant for engaging interactions with social interfaces for long-term health monitoring. 
+
+**Abstract (ZH)**: 使用社会机器人和虚拟代理（VAs）作为老年人健康监测系统的接口，提供了更具参与性的交互机会，有助于长期健康和福祉。尽管机器人因其物理存在而具有特点，软件基础的VAs更具可扩展性和灵活性。在人类-机器人和人类-代理交互领域，这些接口之间的比较很少，尤其是在长期和真实世界的研究中。在本研究中，我们考察了在八周的研究中独立在家中与这些系统互动的老年人对社会机器人和VAs最初和最终的印象。采用被试间设计，参与者可以在研究期间选择评估哪种接口。虽然参与者认为社会机器人略更具亲和力，但认为VAs更智能化。本研究为进一步探究与社会接口进行参与性交互的相关因素奠定了基础。 
+
+---
+# On the Design of Safe Continual RL Methods for Control of Nonlinear Systems 
+
+**Title (ZH)**: 非线性系统控制的安全持续RL方法设计 
+
+**Authors**: Austin Coursey, Marcos Quinones-Grueiro, Gautam Biswas  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.15922)  
+
+**Abstract**: Reinforcement learning (RL) algorithms have been successfully applied to control tasks associated with unmanned aerial vehicles and robotics. In recent years, safe RL has been proposed to allow the safe execution of RL algorithms in industrial and mission-critical systems that operate in closed loops. However, if the system operating conditions change, such as when an unknown fault occurs in the system, typical safe RL algorithms are unable to adapt while retaining past knowledge. Continual reinforcement learning algorithms have been proposed to address this issue. However, the impact of continual adaptation on the system's safety is an understudied problem. In this paper, we study the intersection of safe and continual RL. First, we empirically demonstrate that a popular continual RL algorithm, online elastic weight consolidation, is unable to satisfy safety constraints in non-linear systems subject to varying operating conditions. Specifically, we study the MuJoCo HalfCheetah and Ant environments with velocity constraints and sudden joint loss non-stationarity. Then, we show that an agent trained using constrained policy optimization, a safe RL algorithm, experiences catastrophic forgetting in continual learning settings. With this in mind, we explore a simple reward-shaping method to ensure that elastic weight consolidation prioritizes remembering both safety and task performance for safety-constrained, non-linear, and non-stationary dynamical systems. 
+
+**Abstract (ZH)**: 安全连续强化学习的交集研究 
+
+---
+# Multi-Objective Reinforcement Learning for Critical Scenario Generation of Autonomous Vehicles 
+
+**Title (ZH)**: 自主车辆关键场景生成的多目标强化学习 
+
+**Authors**: Jiahui Wu, Chengjie Lu, Aitor Arrieta, Shaukat Ali  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.15792)  
+
+**Abstract**: Autonomous vehicles (AVs) make driving decisions without human intervention. Therefore, ensuring AVs' dependability is critical. Despite significant research and development in AV development, their dependability assurance remains a significant challenge due to the complexity and unpredictability of their operating environments. Scenario-based testing evaluates AVs under various driving scenarios, but the unlimited number of potential scenarios highlights the importance of identifying critical scenarios that can violate safety or functional requirements. Such requirements are inherently interdependent and need to be tested simultaneously. To this end, we propose MOEQT, a novel multi-objective reinforcement learning (MORL)-based approach to generate critical scenarios that simultaneously test interdependent safety and functional requirements. MOEQT adapts Envelope Q-learning as the MORL algorithm, which dynamically adapts multi-objective weights to balance the relative importance between multiple objectives. MOEQT generates critical scenarios to violate multiple requirements through dynamically interacting with the AV environment, ensuring comprehensive AV testing. We evaluate MOEQT using an advanced end-to-end AV controller and a high-fidelity simulator and compare MOEQT with two baselines: a random strategy and a single-objective RL with a weighted reward function. Our evaluation results show that MOEQT achieved an overall better performance in identifying critical scenarios for violating multiple requirements than the baselines. 
+
+**Abstract (ZH)**: 自主驾驶车辆（AVs）在无需人类干预的情况下作出驾驶决策，因此确保其可靠性至关重要。尽管在AV开发方面进行了大量研究和开发，但由于其操作环境的复杂性和不可预测性，其可靠性保证仍然是一个重大挑战。基于场景的测试在各种驾驶场景下评估AVs，但潜在场景的无限数量强调了识别可能违反安全或功能要求的关键场景的重要性。这些要求本质上是相互依赖的，并且需要同时进行测试。为此，我们提出了一种新的基于多目标强化学习（MORL）的方法MOEQT，以生成同时测试相互依赖的安全和功能要求的关键场景。MOEQT采用Envelope Q-learning作为MORL算法，该算法动态调整多目标权重以平衡多个目标之间的相对重要性。MOEQT通过与AV环境动态交互生成关键场景，以违反多个要求，确保全面的AV测试。我们使用先进的端到端AV控制器和高保真模拟器评估MOEQT，并将MOEQT与两种基线进行比较：随机策略和具有加权奖励函数的单目标RL。我们的评估结果表明，MOEQT在识别违反多个要求的关键场景方面总体上优于基线方法。 
+
+---
