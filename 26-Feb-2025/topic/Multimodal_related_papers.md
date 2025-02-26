@@ -1,0 +1,78 @@
+# ChatMotion: A Multimodal Multi-Agent for Human Motion Analysis 
+
+**Title (ZH)**: ChatMotion：多模态多代理human motion分析 
+
+**Authors**: Li Lei, Jia Sen, Wang Jianhao, An Zhaochong, Li Jiaang, Hwang Jenq-Neng, Belongie Serge  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.18180)  
+
+**Abstract**: Advancements in Multimodal Large Language Models (MLLMs) have improved human motion understanding. However, these models remain constrained by their "instruct-only" nature, lacking interactivity and adaptability for diverse analytical perspectives. To address these challenges, we introduce ChatMotion, a multimodal multi-agent framework for human motion analysis. ChatMotion dynamically interprets user intent, decomposes complex tasks into meta-tasks, and activates specialized function modules for motion comprehension. It integrates multiple specialized modules, such as the MotionCore, to analyze human motion from various perspectives. Extensive experiments demonstrate ChatMotion's precision, adaptability, and user engagement for human motion understanding. 
+
+**Abstract (ZH)**: multimodal 多模态大型语言模型（MLLMs）的进步提高了对人类运动的理解。然而，这些模型仍然受到“仅指令”性质的限制，缺乏互动性和多样性分析视角的适应性。为应对这些挑战，我们提出了 ChatMotion，一种用于人类运动分析的多模态多agent框架。ChatMotion动态解读用户意图，将复杂任务分解为元任务，并激活专门的功能模块以进行运动理解。它集成了多个专门模块，如MotionCore，从多种视角分析人类运动。大量实验展示了ChatMotion在人类运动理解方面的精确性、适应性和用户参与度。 
+
+---
+# UASTrack: A Unified Adaptive Selection Framework with Modality-Customization in Single Object Tracking 
+
+**Title (ZH)**: UASTrack：具备模态自适应定制的统一单目标跟踪框架 
+
+**Authors**: He Wang, Tianyang Xu, Zhangyong Tang, Xiao-Jun Wu, Josef Kittler  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.18220)  
+
+**Abstract**: Multi-modal tracking is essential in single-object tracking (SOT), as different sensor types contribute unique capabilities to overcome challenges caused by variations in object appearance. However, existing unified RGB-X trackers (X represents depth, event, or thermal modality) either rely on the task-specific training strategy for individual RGB-X image pairs or fail to address the critical importance of modality-adaptive perception in real-world applications. In this work, we propose UASTrack, a unified adaptive selection framework that facilitates both model and parameter unification, as well as adaptive modality discrimination across various multi-modal tracking tasks. To achieve modality-adaptive perception in joint RGB-X pairs, we design a Discriminative Auto-Selector (DAS) capable of identifying modality labels, thereby distinguishing the data distributions of auxiliary modalities. Furthermore, we propose a Task-Customized Optimization Adapter (TCOA) tailored to various modalities in the latent space. This strategy effectively filters noise redundancy and mitigates background interference based on the specific characteristics of each modality. Extensive comparisons conducted on five benchmarks including LasHeR, GTOT, RGBT234, VisEvent, and DepthTrack, covering RGB-T, RGB-E, and RGB-D tracking scenarios, demonstrate our innovative approach achieves comparative performance by introducing only additional training parameters of 1.87M and flops of 1.95G. The code will be available at this https URL. 
+
+**Abstract (ZH)**: 多模态跟踪是单对象跟踪（SOT）中的关键要素，不同传感器类型能提供独特的功能，以克服由于对象外观变化引起的各种挑战。然而，现有的统一RGB-X跟踪器（X代表深度、事件或热成像模态）要么依赖于针对特定任务的训练策略仅用于单个RGB-X图像对，要么未能解决在真实世界应用中多模态适应感知的关键重要性。在本文中，我们提出UASTrack，这是一种统一的自适应选择框架，能够促进模型和参数的统一，以及在各种多模态跟踪任务中实现自适应模态区分。为实现联合RGB-X图像对中的模态适应感知，我们设计了一种鉴别自选择器（DAS），能够识别模态标签，从而区分辅助模态的数据分布。此外，我们提出了一个针对不同模态定制的优化适配器（TCOA），在潜空间中适应各种模态。该策略根据每种模态的特定特征有效过滤噪声冗余并减轻背景干扰。在LasHeR、GTOT、RGBT234、VisEvent和DepthTrack五个基准数据集中进行的广泛比较，涵盖了RGB-T、RGB-E和RGB-D跟踪场景，证明我们的创新方法仅通过引入1.87M的额外训练参数和1.95G的FLOPS，就能达到相当的性能。代码将在此处提供：这个链接。 
+
+---
+# VLM-E2E: Enhancing End-to-End Autonomous Driving with Multimodal Driver Attention Fusion 
+
+**Title (ZH)**: VLM-E2E: 基于多模态驾驶员注意力融合的端到端自动驾驶增强 
+
+**Authors**: Pei Liu, Haipeng Liu, Haichao Liu, Xin Liu, Jinxin Ni, Jun Ma  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.18042)  
+
+**Abstract**: Human drivers adeptly navigate complex scenarios by utilizing rich attentional semantics, but the current autonomous systems struggle to replicate this ability, as they often lose critical semantic information when converting 2D observations into 3D space. In this sense, it hinders their effective deployment in dynamic and complex environments. Leveraging the superior scene understanding and reasoning abilities of Vision-Language Models (VLMs), we propose VLM-E2E, a novel framework that uses the VLMs to enhance training by providing attentional cues. Our method integrates textual representations into Bird's-Eye-View (BEV) features for semantic supervision, which enables the model to learn richer feature representations that explicitly capture the driver's attentional semantics. By focusing on attentional semantics, VLM-E2E better aligns with human-like driving behavior, which is critical for navigating dynamic and complex environments. Furthermore, we introduce a BEV-Text learnable weighted fusion strategy to address the issue of modality importance imbalance in fusing multimodal information. This approach dynamically balances the contributions of BEV and text features, ensuring that the complementary information from visual and textual modality is effectively utilized. By explicitly addressing the imbalance in multimodal fusion, our method facilitates a more holistic and robust representation of driving environments. We evaluate VLM-E2E on the nuScenes dataset and demonstrate its superiority over state-of-the-art approaches, showcasing significant improvements in performance. 
+
+**Abstract (ZH)**: 利用视觉语言模型的优越场景理解与推理能力，我们提出了一种名为VLM-E2E的新框架，通过提供注意力线索来增强训练。该方法将文本表示整合到Bird's-Eye-View (BEV)特征中，进行语义监督，使模型能够学习更丰富的特征表示，明确捕捉驾驶者的注意力语义。通过关注注意力语义，VLM-E2E更好地与类似人类的驾驶行为对齐，这对于导航动态和复杂的环境至关重要。此外，我们引入了一种BEV-Text可学习加权融合策略，以解决多模态信息融合中模态重要性不平衡的问题。该方法动态平衡BEV和文本特征的贡献，确保视觉和文本模态互补信息的有效利用。通过明确解决多模态融合中的不平衡问题，我们的方法促进了对驾驶环境更全面和 robust 的表示。我们在nuScenes数据集上评估了VLM-E2E，并展示了其在性能上的优越性，表现出显著的改进。 
+
+---
+# PosterSum: A Multimodal Benchmark for Scientific Poster Summarization 
+
+**Title (ZH)**: PosterSum：一种科学海报总结的多模态基准 
+
+**Authors**: Rohit Saxena, Pasquale Minervini, Frank Keller  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.17540)  
+
+**Abstract**: Generating accurate and concise textual summaries from multimodal documents is challenging, especially when dealing with visually complex content like scientific posters. We introduce PosterSum, a novel benchmark to advance the development of vision-language models that can understand and summarize scientific posters into research paper abstracts. Our dataset contains 16,305 conference posters paired with their corresponding abstracts as summaries. Each poster is provided in image format and presents diverse visual understanding challenges, such as complex layouts, dense text regions, tables, and figures. We benchmark state-of-the-art Multimodal Large Language Models (MLLMs) on PosterSum and demonstrate that they struggle to accurately interpret and summarize scientific posters. We propose Segment & Summarize, a hierarchical method that outperforms current MLLMs on automated metrics, achieving a 3.14% gain in ROUGE-L. This will serve as a starting point for future research on poster summarization. 
+
+**Abstract (ZH)**: 从多模态文档中生成准确简洁的文本摘要具有挑战性，尤其是在处理像科学海报这样的视觉复杂内容时。我们引入了PosterSum，这是一个新的基准，旨在促进能够理解并总结科学海报为研究论文摘要的视觉-语言模型的发展。我们的数据集包含16,305张会议海报及其对应的摘要作为总结。每个海报以图像格式提供，并包含各种视觉理解挑战，如复杂的布局、密集的文字区域、表格和图表。我们在PosterSum上基准测试最先进的多模态大型语言模型（MLLMs），并展示了它们在准确解释和总结科学海报方面的困难。我们提出了一种分段与总结的方法，该方法在自动化评估指标上优于当前的MLLMs，获得了3.14%的ROUGE-L增益。这将为未来的海报总结研究提供一个起点。 
+
+---
+# Toward Foundational Model for Sleep Analysis Using a Multimodal Hybrid Self-Supervised Learning Framework 
+
+**Title (ZH)**: 面向睡眠分析的多模态混合自监督学习框架的基础模型研究 
+
+**Authors**: Cheol-Hui Lee, Hakseung Kim, Byung C. Yoon, Dong-Joo Kim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.17481)  
+
+**Abstract**: Sleep is essential for maintaining human health and quality of life. Analyzing physiological signals during sleep is critical in assessing sleep quality and diagnosing sleep disorders. However, manual diagnoses by clinicians are time-intensive and subjective. Despite advances in deep learning that have enhanced automation, these approaches remain heavily dependent on large-scale labeled datasets. This study introduces SynthSleepNet, a multimodal hybrid self-supervised learning framework designed for analyzing polysomnography (PSG) data. SynthSleepNet effectively integrates masked prediction and contrastive learning to leverage complementary features across multiple modalities, including electroencephalogram (EEG), electrooculography (EOG), electromyography (EMG), and electrocardiogram (ECG). This approach enables the model to learn highly expressive representations of PSG data. Furthermore, a temporal context module based on Mamba was developed to efficiently capture contextual information across signals. SynthSleepNet achieved superior performance compared to state-of-the-art methods across three downstream tasks: sleep-stage classification, apnea detection, and hypopnea detection, with accuracies of 89.89%, 99.75%, and 89.60%, respectively. The model demonstrated robust performance in a semi-supervised learning environment with limited labels, achieving accuracies of 87.98%, 99.37%, and 77.52% in the same tasks. These results underscore the potential of the model as a foundational tool for the comprehensive analysis of PSG data. SynthSleepNet demonstrates comprehensively superior performance across multiple downstream tasks compared to other methodologies, making it expected to set a new standard for sleep disorder monitoring and diagnostic systems. 
+
+**Abstract (ZH)**: 睡眠对于维持人类健康和生活质量至关重要。分析睡眠期间的生理信号是评估睡眠质量和诊断睡眠障碍的关键。然而，临床医生的手动诊断耗时且主观。尽管深度学习的进步提高了自动化程度，但这些方法仍高度依赖大规模标注数据集。本研究引入了SynthSleepNet，这是一种多模态混合自监督学习框架，用于分析多导生理记录图（PSG）数据。SynthSleepNet有效结合了掩膜预测和对比学习，充分利用多种模态的互补特征，包括脑电图（EEG）、眼电图（EOG）、肌电图（EMG）和心电图（ECG）。该方法使模型能够学习 PSG 数据的高表现力表示。此外，基于 Mamba 开发了一种时间上下文模块，以高效捕捉信号间的上下文信息。SynthSleepNet 在三项下游任务（睡眠阶段分类、呼吸暂停检测和低通气检测）中分别实现了 89.89%、99.75% 和 89.60% 的准确率，表现出色。在有限标注数据的半监督学习环境中，模型同样表现出色，在同一任务中分别实现了 87.98%、99.37% 和 77.52% 的准确率。这些结果突显了该模型作为 PSG 数据全面分析基础工具的潜力。SynthSleepNet 在多个下游任务中的综合性能优于其他方法，预计将为睡眠障碍监测和诊断系统设定新的标准。 
+
+---
+# MC2SleepNet: Multi-modal Cross-masking with Contrastive Learning for Sleep Stage Classification 
+
+**Title (ZH)**: MC2SleepNet：多模态跨掩蔽对比学习的睡眠阶段分类 
+
+**Authors**: Younghoon Na  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.17470)  
+
+**Abstract**: Sleep profoundly affects our health, and sleep deficiency or disorders can cause physical and mental problems. % Despite significant findings from previous studies, challenges persist in optimizing deep learning models, especially in multi-modal learning for high-accuracy sleep stage classification. Our research introduces MC2SleepNet (Multi-modal Cross-masking with Contrastive learning for Sleep stage classification Network). It aims to facilitate the effective collaboration between Convolutional Neural Networks (CNNs) and Transformer architectures for multi-modal training with the help of contrastive learning and cross-masking. % Raw single channel EEG signals and corresponding spectrogram data provide differently characterized modalities for multi-modal learning. Our MC2SleepNet has achieved state-of-the-art performance with an accuracy of both 84.6% on the SleepEDF-78 and 88.6% accuracy on the Sleep Heart Health Study (SHHS). These results demonstrate the effective generalization of our proposed network across both small and large datasets. 
+
+**Abstract (ZH)**: 睡眠深刻影响我们的健康，睡眠不足或障碍会导致身体和心理问题。尽管先前研究取得了显著成果，但在优化深度学习模型，尤其是高精度睡眠阶段分类的多模态学习中仍存在挑战。我们的研究引入了MC2SleepNet（多模态交叉遮蔽与对比学习网络），旨在通过对比学习和交叉遮蔽促进卷积神经网络（CNNs）与变压器架构之间的有效协作，实现多模态训练。原始单通道EEG信号及其相应的 spectrogram 数据为多模态学习提供了不同特征的模态。我们的MC2SleepNet在SleepEDF-78数据集上达到了84.6%的准确率，在睡眠心脏健康研究（SHHS）数据集上达到了88.6%的准确率。这些结果表明，我们提出的网络在小规模和大规模数据集上的有效泛化能力。 
+
+---

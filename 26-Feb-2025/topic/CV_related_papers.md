@@ -1,0 +1,208 @@
+# A Real-time Spatio-Temporal Trajectory Planner for Autonomous Vehicles with Semantic Graph Optimization 
+
+**Title (ZH)**: 基于语义图优化的实时时空轨迹规划算法 
+
+**Authors**: Shan He, Yalong Ma, Tao Song, Yongzhi Jiang, Xinkai Wu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.18151)  
+
+**Abstract**: Planning a safe and feasible trajectory for autonomous vehicles in real-time by fully utilizing perceptual information in complex urban environments is challenging. In this paper, we propose a spatio-temporal trajectory planning method based on graph optimization. It efficiently extracts the multi-modal information of the perception module by constructing a semantic spatio-temporal map through separation processing of static and dynamic obstacles, and then quickly generates feasible trajectories via sparse graph optimization based on a semantic spatio-temporal hypergraph. Extensive experiments have proven that the proposed method can effectively handle complex urban public road scenarios and perform in real time. We will also release our codes to accommodate benchmarking for the research community 
+
+**Abstract (ZH)**: 基于图形优化的时空路径规划方法：在复杂城市环境中实时规划安全可行的自主车辆轨迹 
+
+---
+# S-Graphs 2.0 -- A Hierarchical-Semantic Optimization and Loop Closure for SLAM 
+
+**Title (ZH)**: S-Graphs 2.0 — 基于层次语义优化和闭环检测的SLAM 
+
+**Authors**: Hriday Bavle, Jose Luis Sanchez-Lopez, Muhammad Shaheer, Javier Civera, Holger Voos  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.18044)  
+
+**Abstract**: Works based on localization and mapping do not exploit the inherent semantic-relational information from the environment for faster and efficient management and optimization of the robot poses and its map elements, often leading to pose and map inaccuracies and computational inefficiencies in large scale environments. 3D scene graph representations which distributes the environment in an hierarchical manner can be exploited to enhance the management/optimization of underlying robot poses and its map.
+In this direction, we present our work Situational Graphs 2.0, which leverages the hierarchical structure of indoor scenes for efficient data management and optimization. Our algorithm begins by constructing a situational graph that organizes the environment into four layers: Keyframes, Walls, Rooms, and Floors. Our first novelty lies in the front-end which includes a floor detection module capable of identifying stairways and assigning a floor-level semantic-relations to the underlying layers. This floor-level semantic enables a floor-based loop closure strategy, rejecting false-positive loop closures in visually similar areas on different floors. Our second novelty is in exploiting the hierarchy for an improved optimization. It consists of: (1) local optimization, optimizing a window of recent keyframes and their connected components, (2) floor-global optimization, which focuses only on keyframes and their connections within the current floor during loop closures, and (3) room-local optimization, marginalizing redundant keyframes that share observations within the room.
+We validate our algorithm extensively in different real multi-floor environments. Our approach can demonstrate state-of-art-art results in large scale multi-floor environments creating hierarchical maps while bounding the computational complexity where several baseline works fail to execute efficiently. 
+
+**Abstract (ZH)**: 基于局部化和建图的工作未能充分利用环境中的固有语义关系信息，以实现更快更高效的机器人姿态管理和地图元素优化，常导致大型环境中姿态和地图的不准确性及计算效率低下。可以通过层次化的3D场景图表示来增强底层机器人姿态及其地图的管理和优化。
+
+Situational Graphs 2.0：利用室内场景的层次结构进行高效的数据管理和优化 
+
+---
+# EgoSim: An Egocentric Multi-view Simulator and Real Dataset for Body-worn Cameras during Motion and Activity 
+
+**Title (ZH)**: EgoSim：一种基于第一人称多视角的运动与活动穿戴相机模拟器及真实数据集 
+
+**Authors**: Dominik Hollidt, Paul Streli, Jiaxi Jiang, Yasaman Haghighi, Changlin Qian, Xintong Liu, Christian Holz  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.18373)  
+
+**Abstract**: Research on egocentric tasks in computer vision has mostly focused on head-mounted cameras, such as fisheye cameras or embedded cameras inside immersive headsets. We argue that the increasing miniaturization of optical sensors will lead to the prolific integration of cameras into many more body-worn devices at various locations. This will bring fresh perspectives to established tasks in computer vision and benefit key areas such as human motion tracking, body pose estimation, or action recognition -- particularly for the lower body, which is typically occluded.
+In this paper, we introduce EgoSim, a novel simulator of body-worn cameras that generates realistic egocentric renderings from multiple perspectives across a wearer's body. A key feature of EgoSim is its use of real motion capture data to render motion artifacts, which are especially noticeable with arm- or leg-worn cameras. In addition, we introduce MultiEgoView, a dataset of egocentric footage from six body-worn cameras and ground-truth full-body 3D poses during several activities: 119 hours of data are derived from AMASS motion sequences in four high-fidelity virtual environments, which we augment with 5 hours of real-world motion data from 13 participants using six GoPro cameras and 3D body pose references from an Xsens motion capture suit.
+We demonstrate EgoSim's effectiveness by training an end-to-end video-only 3D pose estimation network. Analyzing its domain gap, we show that our dataset and simulator substantially aid training for inference on real-world data.
+EgoSim code & MultiEgoView dataset: this https URL 
+
+**Abstract (ZH)**: 基于计算机视觉的自我中心任务研究主要集中在头戴式摄像设备上，如鱼眼相机或内置在沉浸式头盔中的嵌入式相机。我们认为光学传感器的不断微型化将导致摄像头被集成到更多种类的身体佩戴设备中，并且分布于身体的不同部位。这将为计算机视觉中的传统任务带来新的视角，并且特别有利于人体动作追踪、身体姿态估计或动作识别——尤其是下肢，其通常被遮挡。  
+在本文中，我们介绍了EgoSim，这是一种新颖的基于身体佩戴相机的模拟器，能够从穿戴者身体多个视角生成逼真的自我中心渲染。EgoSim的一个关键特征是使用真实的运动捕捉数据渲染运动伪像，这种伪像在佩戴于手臂或腿部的相机中尤为明显。此外，我们还引入了MultiEgoView数据集，该数据集包括六种身体佩戴相机的自我中心画面以及多种活动中的地面真值全身3D姿态：119小时的数据来源于在四个高保真虚拟环境中运动捕捉序列数据库AMASS中提取的数据，并通过13名参与者在六台GoPro相机下进行的真实世界运动数据以及Xsens动捕服提供的3D身体姿态参考进行扩充。  
+我们通过训练一个端到端的仅视频输入的姿态估计网络来展示EgoSim的效果。通过分析其领域差距，我们证明我们的数据集和模拟器能够显著辅助现实世界数据上的推理训练。  
+EgoSim代码及MultiEgoView数据集：https://doi.org/10.5281/zenodo.5653076 
+
+---
+# From Vision to Sound: Advancing Audio Anomaly Detection with Vision-Based Algorithms 
+
+**Title (ZH)**: 从视觉到声音：基于视觉算法推进音频异常检测 
+
+**Authors**: Manuel Barusco, Francesco Borsatti, Davide Dalle Pezze, Francesco Paissan, Elisabetta Farella, Gian Antonio Susto  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.18328)  
+
+**Abstract**: Recent advances in Visual Anomaly Detection (VAD) have introduced sophisticated algorithms leveraging embeddings generated by pre-trained feature extractors. Inspired by these developments, we investigate the adaptation of such algorithms to the audio domain to address the problem of Audio Anomaly Detection (AAD). Unlike most existing AAD methods, which primarily classify anomalous samples, our approach introduces fine-grained temporal-frequency localization of anomalies within the spectrogram, significantly improving explainability. This capability enables a more precise understanding of where and when anomalies occur, making the results more actionable for end users. We evaluate our approach on industrial and environmental benchmarks, demonstrating the effectiveness of VAD techniques in detecting anomalies in audio signals. Moreover, they improve explainability by enabling localized anomaly identification, making audio anomaly detection systems more interpretable and practical. 
+
+**Abstract (ZH)**: 近期在视觉异常检测(VAD)领域的进展引入了利用预训练特征提取器生成的嵌入的复杂算法。受此启发，我们探讨将此类算法适应到音频领域以解决音频异常检测(AAD)问题。与大多数现有AAD方法主要对异常样本进行分类不同，我们的方法引入了谱图中异常的细粒度时间-频率定位，显著提高了可解释性。这种能力使得对异常发生的时间和位置有更精确的理解，使结果更可行地应用于最终用户。我们在工业和环境基准上评估了我们的方法，证明了VAD技术在检测音频信号异常方面的有效性。此外，它们通过实现局部异常识别提高了可解释性，使音频异常检测系统更具可解释性和实用性。 
+
+---
+# A Reverse Mamba Attention Network for Pathological Liver Segmentation 
+
+**Title (ZH)**: 反转乌眼镜蛇注意力网络在病理性肝脏分割中的应用 
+
+**Authors**: Jun Zeng, Ulas Bagci, Debesh Jha  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.18232)  
+
+**Abstract**: We present RMA-Mamba, a novel architecture that advances the capabilities of vision state space models through a specialized reverse mamba attention module (RMA). The key innovation lies in RMA-Mamba's ability to capture long-range dependencies while maintaining precise local feature representation through its hierarchical processing pipeline. By integrating Vision Mamba (VMamba)'s efficient sequence modeling with RMA's targeted feature refinement, our architecture achieves superior feature learning across multiple scales. This dual-mechanism approach enables robust handling of complex morphological patterns while maintaining computational efficiency. We demonstrate RMA-Mamba's effectiveness in the challenging domain of pathological liver segmentation (from both CT and MRI), where traditional segmentation approaches often fail due to tissue variations. When evaluated on a newly introduced cirrhotic liver dataset (CirrMRI600+) of T2-weighted MRI scans, RMA-Mamba achieves the state-of-the-art performance with a Dice coefficient of 92.08%, mean IoU of 87.36%, and recall of 92.96%. The architecture's generalizability is further validated on the cancerous liver segmentation from CT scans (LiTS: Liver Tumor Segmentation dataset), yielding a Dice score of 92.9% and mIoU of 88.99%. The source code of the proposed RMA-Mamba is available at this https URL. 
+
+**Abstract (ZH)**: RMA-Mamba：一种通过专门的反蟒蛇注意力模块（RMA）推进视觉状态空间模型能力的新型架构 
+
+---
+# VesselSAM: Leveraging SAM for Aortic Vessel Segmentation with LoRA and Atrous Attention 
+
+**Title (ZH)**: VesselSAM: 利用SAM进行主动脉血管分割的LoRA和空洞注意机制 
+
+**Authors**: Adnan Iltaf, Rayan Merghani Ahmed, Bin Li, Shoujun Zhou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.18185)  
+
+**Abstract**: Medical image segmentation is crucial for clinical diagnosis and treatment planning, particularly for complex anatomical structures like vessels. In this work, we propose VesselSAM, a modified version of the Segmentation Anything Model (SAM), specifically designed for aortic vessel segmentation. VesselSAM incorporates AtrousLoRA, a novel module that combines Atrous Attention with Low-Rank Adaptation (LoRA), to improve segmentation performance. Atrous Attention enables the model to capture multi-scale contextual information, preserving both fine local details and broader global context. At the same time, LoRA facilitates efficient fine-tuning of the frozen SAM image encoder, reducing the number of trainable parameters and ensuring computational efficiency. We evaluate VesselSAM on two challenging datasets: the Aortic Vessel Tree (AVT) dataset and the Type-B Aortic Dissection (TBAD) dataset. VesselSAM achieves state-of-the-art performance with DSC scores of 93.50\%, 93.25\%, 93.02\%, and 93.26\% across multiple medical centers. Our results demonstrate that VesselSAM delivers high segmentation accuracy while significantly reducing computational overhead compared to existing large-scale models. This development paves the way for enhanced AI-based aortic vessel segmentation in clinical environments. The code and models will be released at this https URL. 
+
+**Abstract (ZH)**: VesselSAM：一种用于主动脉血管分割的改良Segmentation Anything Model 
+
+---
+# Monitoring snow avalanches from SAR data with deep learning 
+
+**Title (ZH)**: 使用深度学习从SAR数据监测雪崩 
+
+**Authors**: Filippo Maria Bianchi, Jakob Grahn  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.18157)  
+
+**Abstract**: Snow avalanches present significant risks to human life and infrastructure, particularly in mountainous regions, making effective monitoring crucial. Traditional monitoring methods, such as field observations, are limited by accessibility, weather conditions, and cost. Satellite-borne Synthetic Aperture Radar (SAR) data has become an important tool for large-scale avalanche detection, as it can capture data in all weather conditions and across remote areas. However, traditional processing methods struggle with the complexity and variability of avalanches. This chapter reviews the application of deep learning for detecting and segmenting snow avalanches from SAR data. Early efforts focused on the binary classification of SAR images, while recent advances have enabled pixel-level segmentation, providing greater accuracy and spatial resolution. A case study using Sentinel-1 SAR data demonstrates the effectiveness of deep learning models for avalanche segmentation, achieving superior results over traditional methods. We also present an extension of this work, testing recent state-of-the-art segmentation architectures on an expanded dataset of over 4,500 annotated SAR images. The best-performing model among those tested was applied for large-scale avalanche detection across the whole of Norway, revealing important spatial and temporal patterns over several winter seasons. 
+
+**Abstract (ZH)**: 雷达合成孔径卫星数据中基于深度学习的雪崩检测与分割研究 
+
+---
+# Robust Polyp Detection and Diagnosis through Compositional Prompt-Guided Diffusion Models 
+
+**Title (ZH)**: 通过组成部件提示导向扩散模型的结肠息肉鲁棒检测与诊断 
+
+**Authors**: Jia Yu, Yan Zhu, Peiyao Fu, Tianyi Chen, Junbo Huang, Quanlin Li, Pinghong Zhou, Zhihua Wang, Fei Wu, Shuo Wang, Xian Yang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.17951)  
+
+**Abstract**: Colorectal cancer (CRC) is a significant global health concern, and early detection through screening plays a critical role in reducing mortality. While deep learning models have shown promise in improving polyp detection, classification, and segmentation, their generalization across diverse clinical environments, particularly with out-of-distribution (OOD) data, remains a challenge. Multi-center datasets like PolypGen have been developed to address these issues, but their collection is costly and time-consuming. Traditional data augmentation techniques provide limited variability, failing to capture the complexity of medical images. Diffusion models have emerged as a promising solution for generating synthetic polyp images, but the image generation process in current models mainly relies on segmentation masks as the condition, limiting their ability to capture the full clinical context. To overcome these limitations, we propose a Progressive Spectrum Diffusion Model (PSDM) that integrates diverse clinical annotations-such as segmentation masks, bounding boxes, and colonoscopy reports-by transforming them into compositional prompts. These prompts are organized into coarse and fine components, allowing the model to capture both broad spatial structures and fine details, generating clinically accurate synthetic images. By augmenting training data with PSDM-generated samples, our model significantly improves polyp detection, classification, and segmentation. For instance, on the PolypGen dataset, PSDM increases the F1 score by 2.12% and the mean average precision by 3.09%, demonstrating superior performance in OOD scenarios and enhanced generalization. 
+
+**Abstract (ZH)**: 结直肠癌（CRC）是全球重要的公共卫生问题，通过筛查进行早期检测在降低死亡率方面起着关键作用。尽管深度学习模型在提高息肉检测、分类和分割方面显示出潜力，但它们在多种临床环境下的泛化能力，尤其是面对分布外（OOD）数据时，仍面临挑战。为了应对这些问题，多中心数据集如PolypGen被开发出来，但其收集成本高且耗时。传统数据增强技术提供的可变性有限，无法捕捉医学图像的复杂性。扩散模型作为一种生成合成息肉图像的有前景解决方案已逐渐出现，但在当前模型中，图像生成过程主要依赖于分割掩码作为条件，限制了其捕捉完整临床上下文的能力。为克服这些限制，我们提出了一种渐进频谱扩散模型（PSDM），将多样化的临床注释，如分割掩码、边界框和结肠镜报告，转化为组成式提示，并组织为粗粒度和细粒度组件，使模型能够捕捉广泛的空间结构和细微细节，生成临床准确的合成图像。通过使用PSDM生成的样本增强训练数据，我们的模型显著提高了息肉检测、分类和分割的效果。例如，在PolypGen数据集中，PSDM使F1分数提高了2.12%，平均精确度提高了3.09%，表现出在OOD场景中的优越性能并增强了泛化能力。 
+
+---
+# A graph neural network-based multispectral-view learning model for diabetic macular ischemia detection from color fundus photographs 
+
+**Title (ZH)**: 基于图神经网络的多光谱视网膜图像糖尿病黄斑缺血检测模型 
+
+**Authors**: Qinghua He, Hongyang Jiang, Danqi Fang, Dawei Yang, Truong X. Nguyen, Anran Ran, Clement C. Tham, Simon K. H. Szeto, Sobha Sivaprasad, Carol Y. Cheung  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.17886)  
+
+**Abstract**: Diabetic macular ischemia (DMI), marked by the loss of retinal capillaries in the macular area, contributes to vision impairment in patients with diabetes. Although color fundus photographs (CFPs), combined with artificial intelligence (AI), have been extensively applied in detecting various eye diseases, including diabetic retinopathy (DR), their applications in detecting DMI remain unexplored, partly due to skepticism among ophthalmologists regarding its feasibility. In this study, we propose a graph neural network-based multispectral view learning (GNN-MSVL) model designed to detect DMI from CFPs. The model leverages higher spectral resolution to capture subtle changes in fundus reflectance caused by ischemic tissue, enhancing sensitivity to DMI-related features. The proposed approach begins with computational multispectral imaging (CMI) to reconstruct 24-wavelength multispectral fundus images from CFPs. ResNeXt101 is employed as the backbone for multi-view learning to extract features from the reconstructed images. Additionally, a GNN with a customized jumper connection strategy is designed to enhance cross-spectral relationships, facilitating comprehensive and efficient multispectral view learning. The study included a total of 1,078 macula-centered CFPs from 1,078 eyes of 592 patients with diabetes, of which 530 CFPs from 530 eyes of 300 patients were diagnosed with DMI. The model achieved an accuracy of 84.7 percent and an area under the receiver operating characteristic curve (AUROC) of 0.900 (95 percent CI: 0.852-0.937) on eye-level, outperforming both the baseline model trained from CFPs and human experts (p-values less than 0.01). These findings suggest that AI-based CFP analysis holds promise for detecting DMI, contributing to its early and low-cost screening. 
+
+**Abstract (ZH)**: 糖尿病黄斑缺血（DMI）的图神经网络多光谱视图学习模型 
+
+---
+# From underwater to aerial: a novel multi-scale knowledge distillation approach for coral reef monitoring 
+
+**Title (ZH)**: 从水下到空中：一种新型多尺度知识蒸馏方法用于珊瑚礁监测 
+
+**Authors**: Matteo Contini, Victor Illien, Julien Barde, Sylvain Poulain, Serge Bernard, Alexis Joly, Sylvain Bonhommeau  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.17883)  
+
+**Abstract**: Drone-based remote sensing combined with AI-driven methodologies has shown great potential for accurate mapping and monitoring of coral reef ecosystems. This study presents a novel multi-scale approach to coral reef monitoring, integrating fine-scale underwater imagery with medium-scale aerial imagery. Underwater images are captured using an Autonomous Surface Vehicle (ASV), while aerial images are acquired with an aerial drone. A transformer-based deep-learning model is trained on underwater images to detect the presence of 31 classes covering various coral morphotypes, associated fauna, and habitats. These predictions serve as annotations for training a second model applied to aerial images. The transfer of information across scales is achieved through a weighted footprint method that accounts for partial overlaps between underwater image footprints and aerial image tiles. The results show that the multi-scale methodology successfully extends fine-scale classification to larger reef areas, achieving a high degree of accuracy in predicting coral morphotypes and associated habitats. The method showed a strong alignment between underwater-derived annotations and ground truth data, reflected by an AUC (Area Under the Curve) score of 0.9251. This shows that the integration of underwater and aerial imagery, supported by deep-learning models, can facilitate scalable and accurate reef assessments. This study demonstrates the potential of combining multi-scale imaging and AI to facilitate the monitoring and conservation of coral reefs. Our approach leverages the strengths of underwater and aerial imagery, ensuring the precision of fine-scale analysis while extending it to cover a broader reef area. 
+
+**Abstract (ZH)**: 基于无人机的遥感结合AI驱动方法在珊瑚礁生态系统的精确制图和监测中展现出巨大潜力。本研究提出了一种新的多尺度珊瑚礁监测方法，将精细尺度的水下影像与中尺度的航空影像整合。水下影像使用自主水面车辆（ASV）获取，而航空影像通过无人机获得。采用基于变换器的深度学习模型在水下影像上训练，以检测31类各种珊瑚形态、相关生物及栖息地的存在。这些预测作为注释用于训练应用于航空影像的第二个模型。通过加权足迹方法实现跨尺度信息传递，该方法考虑了水下影像足迹与航空影像瓦片之间的部分重叠。结果显示，多尺度方法成功地将精细尺度分类扩展到更大的珊瑚礁区域，预测珊瑚形态和相关栖息地的准确性非常高。该方法在水下衍生注释与地面真实数据之间显示出强烈的对齐，AUC（曲线下面积）得分为0.9251。这表明结合水下和航空影像并通过深度学习模型进行集成，可以促进珊瑚礁评估的可扩展性和准确性。本研究展示了将多尺度成像与AI结合以促进珊瑚礁监测和保护的潜力。我们的方法充分利用了水下和航空影像的优点，在保持精细尺度分析精度的同时将其扩展到覆盖更广阔的珊瑚礁区域。 
+
+---
+# ASurvey: Spatiotemporal Consistency in Video Generation 
+
+**Title (ZH)**: 时空一致性在视频生成中的调查 
+
+**Authors**: Zhiyu Yin, Kehai Chen, Xuefeng Bai, Ruili Jiang, Juntao Li, Hongdong Li, Jin Liu, Yang Xiang, Jun Yu, Min Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.17863)  
+
+**Abstract**: Video generation, by leveraging a dynamic visual generation method, pushes the boundaries of Artificial Intelligence Generated Content (AIGC). Video generation presents unique challenges beyond static image generation, requiring both high-quality individual frames and temporal coherence to maintain consistency across the spatiotemporal sequence. Recent works have aimed at addressing the spatiotemporal consistency issue in video generation, while few literature review has been organized from this perspective. This gap hinders a deeper understanding of the underlying mechanisms for high-quality video generation. In this survey, we systematically review the recent advances in video generation, covering five key aspects: foundation models, information representations, generation schemes, post-processing techniques, and evaluation metrics. We particularly focus on their contributions to maintaining spatiotemporal consistency. Finally, we discuss the future directions and challenges in this field, hoping to inspire further efforts to advance the development of video generation. 
+
+**Abstract (ZH)**: 通过利用动态视觉生成方法，视频生成推动了人工智能生成内容（AIGC）的边界。视频生成超越了静态图像生成，提出了新的挑战，需要高质量的单帧和时间一致性来维持时空序列的一致性。尽管近期的研究致力于解决视频生成中时空一致性的问题，但缺乏从这一视角组织的文献综述。这阻碍了对高质量视频生成背后机制的深入理解。在本文综述中，我们系统地回顾了视频生成的 Recent Advances，涵盖了五方面关键内容：基础模型、信息表示、生成方案、后处理技术和评估指标。特别关注这些方面对维持时空一致性的贡献。最后，我们讨论了该领域的未来方向和挑战，希望激发进一步的努力以推动视频生成的发展。 
+
+---
+# Synthia: Novel Concept Design with Affordance Composition 
+
+**Title (ZH)**: Synthia: 基于功能组合的新概念设计 
+
+**Authors**: Xiaomeng Jin, Hyeonjeong Ha, Jeonghwan Kim, Jiateng Liu, Zhenhailong Wang, Khanh Duy Nguyen, Ansel Blume, Nanyun Peng, Kai-wei Chang, Heng Ji  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.17793)  
+
+**Abstract**: Text-to-image (T2I) models enable rapid concept design, making them widely used in AI-driven design. While recent studies focus on generating semantic and stylistic variations of given design concepts, functional coherence--the integration of multiple affordances into a single coherent concept--remains largely overlooked. In this paper, we introduce SYNTHIA, a framework for generating novel, functionally coherent designs based on desired affordances. Our approach leverages a hierarchical concept ontology that decomposes concepts into parts and affordances, serving as a crucial building block for functionally coherent design. We also develop a curriculum learning scheme based on our ontology that contrastively fine-tunes T2I models to progressively learn affordance composition while maintaining visual novelty. To elaborate, we (i) gradually increase affordance distance, guiding models from basic concept-affordance association to complex affordance compositions that integrate parts of distinct affordances into a single, coherent form, and (ii) enforce visual novelty by employing contrastive objectives to push learned representations away from existing concepts. Experimental results show that SYNTHIA outperforms state-of-the-art T2I models, demonstrating absolute gains of 25.1% and 14.7% for novelty and functional coherence in human evaluation, respectively. 
+
+**Abstract (ZH)**: 基于期望功能的新型功能连贯设计生成框架SYNTHIA 
+
+---
+# SynthRAD2025 Grand Challenge dataset: generating synthetic CTs for radiotherapy 
+
+**Title (ZH)**: SynthRAD2025 大挑战数据集：用于放射治疗的合成CT图像生成 
+
+**Authors**: Adrian Thummerer, Erik van der Bijl, Arthur Jr Galapon, Florian Kamp, Mark Savenije, Christina Muijs, Shafak Aluwini, Roel J.H.M. Steenbakkers, Stephanie Beuel, Martijn P.W. Intven, Johannes A. Langendijk, Stefan Both, Stefanie Corradini, Viktor Rogowski, Maarten Terpstra, Niklas Wahl, Christopher Kurz, Guillaume Landry, Matteo Maspero  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.17609)  
+
+**Abstract**: Medical imaging is essential in modern radiotherapy, supporting diagnosis, treatment planning, and monitoring. Synthetic imaging, particularly synthetic computed tomography (sCT), is gaining traction in radiotherapy. The SynthRAD2025 dataset and Grand Challenge promote advancements in sCT generation by providing a benchmarking platform for algorithms using cone-beam CT (CBCT) and magnetic resonance imaging (MRI).
+The dataset includes 2362 cases: 890 MRI-CT and 1472 CBCT-CT pairs from head-and-neck, thoracic, and abdominal cancer patients treated at five European university medical centers (UMC Groningen, UMC Utrecht, Radboud UMC, LMU University Hospital Munich, and University Hospital of Cologne). Data were acquired with diverse scanners and protocols. Pre-processing, including rigid and deformable image registration, ensures high-quality, modality-aligned images. Extensive quality assurance validates image consistency and usability.
+All imaging data is provided in MetaImage (.mha) format, ensuring compatibility with medical image processing tools. Metadata, including acquisition parameters and registration details, is available in structured CSV files. To maintain dataset integrity, SynthRAD2025 is divided into training (65%), validation (10%), and test (25%) sets. The dataset is accessible at this https URL under the SynthRAD2025 collection.
+This dataset supports benchmarking and the development of synthetic imaging techniques for radiotherapy applications. Use cases include sCT generation for MRI-only and MR-guided photon/proton therapy, CBCT-based dose calculations, and adaptive radiotherapy workflows. By integrating diverse acquisition settings, SynthRAD2025 fosters robust, generalizable image synthesis algorithms, advancing personalized cancer care and adaptive radiotherapy. 
+
+**Abstract (ZH)**: 医学成像是现代放射治疗中的重要组成部分，支持诊断、治疗计划和监测。合成影像，特别是合成CT（sCT），在放射治疗中逐渐受到重视。SynthRAD2025数据集和大赛通过提供基于锥束CT（CBCT）和磁共振成像（MRI）算法的基准平台，促进了sCT生成技术的发展。 
+
+---
+# Multimodal Bearing Fault Classification Under Variable Conditions: A 1D CNN with Transfer Learning 
+
+**Title (ZH)**: 基于变工况下的多模态轴承故障分类：迁移学习的1D CNN方法 
+
+**Authors**: Tasfiq E. Alam, Md Manjurul Ahsan, Shivakumar Raman  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.17524)  
+
+**Abstract**: Bearings play an integral role in ensuring the reliability and efficiency of rotating machinery - reducing friction and handling critical loads. Bearing failures that constitute up to 90% of mechanical faults highlight the imperative need for reliable condition monitoring and fault detection. This study proposes a multimodal bearing fault classification approach that relies on vibration and motor phase current signals within a one-dimensional convolutional neural network (1D CNN) framework. The method fuses features from multiple signals to enhance the accuracy of fault detection. Under the baseline condition (1,500 rpm, 0.7 Nm load torque, and 1,000 N radial force), the model reaches an accuracy of 96% with addition of L2 regularization. This represents a notable improvement of 2% compared to the non-regularized model. In addition, the model demonstrates robust performance across three distinct operating conditions by employing transfer learning (TL) strategies. Among the tested TL variants, the approach that preserves parameters up to the first max-pool layer and then adjusts subsequent layers achieves the highest performance. While this approach attains excellent accuracy across varied conditions, it requires more computational time due to its greater number of trainable parameters. To address resource constraints, less computationally intensive models offer feasible trade-offs, albeit at a slight accuracy cost. Overall, this multimodal 1D CNN framework with late fusion and TL strategies lays a foundation for more accurate, adaptable, and efficient bearing fault classification in industrial environments with variable operating conditions. 
+
+**Abstract (ZH)**: 轴承在确保旋转机械的可靠性和效率中发挥着重要作用，通过降低摩擦和承担关键载荷。轴承故障占机械故障的90%左右，凸显了可靠的状态监测和故障检测的必要性。本文提出了一种基于振动和电机相电流信号的一维卷积神经网络（1D CNN）框架下的多模式轴承故障分类方法，通过融合多信号特征以提高故障检测的准确性。在基线条件下（1,500 rpm，0.7 Nm负载扭矩和1,000 N径向力），模型在添加L2正则化后达到96%的准确率，相比非正则化模型提高了2%。此外，通过使用迁移学习（TL）策略，该模型在三种不同的运行条件下均表现出稳健性能。在测试的TL变体中，保留到第一个最大池化层的参数并调整后续层的方法表现最佳。尽管该方法在不同条件下的准确率很高，但由于参数更多，所需的计算时间也更长。为解决资源限制，计算量更轻的模型是可行的替代方案，尽管会略微牺牲准确率。总体而言，该多模式1D CNN框架结合了晚期融合和TL策略，为具有可变运行条件的工业环境中更准确、适应性和高效轴承故障分类奠定了基础。 
+
+---
+# Spectral Theory for Edge Pruning in Asynchronous Recurrent Graph Neural Networks 
+
+**Title (ZH)**: 异步循环图神经网络中的边缘剪枝频谱理论 
+
+**Authors**: Nicolas Bessone  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.17522)  
+
+**Abstract**: Graph Neural Networks (GNNs) have emerged as a powerful tool for learning on graph-structured data, finding applications in numerous domains including social network analysis and molecular biology. Within this broad category, Asynchronous Recurrent Graph Neural Networks (ARGNNs) stand out for their ability to capture complex dependencies in dynamic graphs, resembling living organisms' intricate and adaptive nature. However, their complexity often leads to large and computationally expensive models. Therefore, pruning unnecessary edges becomes crucial for enhancing efficiency without significantly compromising performance. This paper presents a dynamic pruning method based on graph spectral theory, leveraging the imaginary component of the eigenvalues of the network graph's Laplacian. 
+
+**Abstract (ZH)**: 基于图谱理论的异步递归图神经网络动态剪枝方法（利用网络图拉普拉斯矩阵特征值的虚部） 
+
+---

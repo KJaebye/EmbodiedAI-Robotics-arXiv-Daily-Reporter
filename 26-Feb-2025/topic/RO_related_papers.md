@@ -1,0 +1,130 @@
+# CRESSim-MPM: A Material Point Method Library for Surgical Soft Body Simulation with Cutting and Suturing 
+
+**Title (ZH)**: CRESSim-MPM: 一种用于手术软组织模拟（包括切割和缝合）的物料点方法库 
+
+**Authors**: Yafei Ou, Mahdi Tavakoli  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.18437)  
+
+**Abstract**: A number of recent studies have focused on developing surgical simulation platforms to train machine learning (ML) agents or models with synthetic data for surgical assistance. While existing platforms excel at tasks such as rigid body manipulation and soft body deformation, they struggle to simulate more complex soft body behaviors like cutting and suturing. A key challenge lies in modeling soft body fracture and splitting using the finite-element method (FEM), which is the predominant approach in current platforms. Additionally, the two-way suture needle/thread contact inside a soft body is further complicated when using FEM. In this work, we use the material point method (MPM) for such challenging simulations and propose new rigid geometries and soft-rigid contact methods specifically designed for them. We introduce CRESSim-MPM, a GPU-accelerated MPM library that integrates multiple MPM solvers and incorporates surgical geometries for cutting and suturing, serving as a specialized physics engine for surgical applications. It is further integrated into Unity, requiring minimal modifications to existing projects for soft body simulation. We demonstrate the simulator's capabilities in real-time simulation of cutting and suturing on soft tissue and provide an initial performance evaluation of different MPM solvers when simulating varying numbers of particles. 
+
+**Abstract (ZH)**: 最近的研究集中在开发手术模拟平台，利用合成数据训练机器学习代理或模型以提供手术辅助。虽然现有的平台在刚体操作和软体变形等任务上表现出色，但在模拟切割和缝合等更复杂的软体行为方面存在局限。关键挑战在于使用有限元方法（FEM）建模软体的骨折和分裂。此外，使用FEM模拟软体内缝合针/线的双向接触更为复杂。在本项工作中，我们采用物质点方法（MPM）进行此类具有挑战性的模拟，并提出专门为这些任务设计的新刚性几何形状和软-刚性接触方法。我们介绍了CRESSim-MPM，这是一个GPU加速的MPM库，集成了多个MPM求解器并包含了切开和缝合的手术几何，作为专门针对手术应用的物理引擎。该库进一步集成到Unity中，仅需少量修改即可实现现有项目的软体模拟。我们展示了模拟器在软组织切割和缝合的实时模拟能力，并提供了不同MPM求解器在模拟不同粒子数量时的初步性能评估。 
+
+---
+# Retrieval Dexterity: Efficient Object Retrieval in Clutters with Dexterous Hand 
+
+**Title (ZH)**: 灵巧手指在杂乱环境中高效物体检索 
+
+**Authors**: Fengshuo Bai, Yu Li, Jie Chu, Tawei Chou, Runchuan Zhu, Ying Wen, Yaodong Yang, Yuanpei Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.18423)  
+
+**Abstract**: Retrieving objects buried beneath multiple objects is not only challenging but also time-consuming. Performing manipulation in such environments presents significant difficulty due to complex contact relationships. Existing methods typically address this task by sequentially grasping and removing each occluding object, resulting in lengthy execution times and requiring impractical grasping capabilities for every occluding object. In this paper, we present a dexterous arm-hand system for efficient object retrieval in multi-object stacked environments. Our approach leverages large-scale parallel reinforcement learning within diverse and carefully designed cluttered environments to train policies. These policies demonstrate emergent manipulation skills (e.g., pushing, stirring, and poking) that efficiently clear occluding objects to expose sufficient surface area of the target object. We conduct extensive evaluations across a set of over 10 household objects in diverse clutter configurations, demonstrating superior retrieval performance and efficiency for both trained and unseen objects. Furthermore, we successfully transfer the learned policies to a real-world dexterous multi-fingered robot system, validating their practical applicability in real-world scenarios. Videos can be found on our project website this https URL. 
+
+**Abstract (ZH)**: 埋藏在多重物体下的物体检索不仅具有挑战性且耗时，此类环境中的操作由于复杂的接触关系而极具难度。现有方法通常通过依次抓取并移除每个遮挡物体来解决此任务，导致执行时间较长，并且对每一个遮挡物体都要求不切实际的抓取能力。在这篇论文中，我们提出了一种灵巧的手臂-手系统，用于多物体堆积环境下的高效物体检索。我们的方法利用大规模并行强化学习在多样且精心设计的杂乱环境中进行训练，以训练策略。这些策略展示了 Emergent 操作技能（例如推、搅拌和戳），能够有效地清除遮挡物体以暴露目标物体的足够表面积。我们在超过 10 种不同家庭用品在多种杂乱配置中的广泛评估中，展示了对已训练和未见过的物体都有更好的检索性能和效率。此外，我们成功将所学策略转移到真实世界的多指灵巧机器人系统中，验证了其在实际应用场景中的实用适用性。更多信息请参见我们的项目网站：<https://>。 
+
+---
+# Stretchable Capacitive and Resistive Strain Sensors: Accessible Manufacturing Using Direct Ink Writing 
+
+**Title (ZH)**: 可拉伸电容式和电阻式应变传感器：直接墨水书写实现简便制造 
+
+**Authors**: Lukas Cha, Sonja Groß, Shuai Mao, Tim Braun, Sami Haddadin, Liang He  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.18363)  
+
+**Abstract**: As robotics advances toward integrating soft structures, anthropomorphic shapes, and complex tasks, soft and highly stretchable mechanotransducers are becoming essential. To reliably measure tactile and proprioceptive data while ensuring shape conformability, stretchability, and adaptability, researchers have explored diverse transduction principles alongside scalable and versatile manufacturing techniques. Nonetheless, many current methods for stretchable sensors are designed to produce a single sensor configuration, thereby limiting design flexibility. Here, we present an accessible, flexible, printing-based fabrication approach for customizable, stretchable sensors. Our method employs a custom-built printhead integrated with a commercial 3D printer to enable direct ink writing (DIW) of conductive ink onto cured silicone substrates. A layer-wise fabrication process, facilitated by stackable trays, allows for the deposition of multiple liquid conductive ink layers within a silicone matrix. To demonstrate the method's capacity for high design flexibility, we fabricate and evaluate both capacitive and resistive strain sensor morphologies. Experimental characterization showed that the capacitive strain sensor possesses high linearity (R^2 = 0.99), high sensitivity near the 1.0 theoretical limit (GF = 0.95), minimal hysteresis (DH = 1.36%), and large stretchability (550%), comparable to state-of-the-art stretchable strain sensors reported in the literature. 
+
+**Abstract (ZH)**: 随着机器人技术向柔性结构、类人形态和复杂任务的集成发展，可穿戴的高延展性力觉和本体感觉传感器变得至关重要。为了在确保形状适应性、延展性和可调适性的同时可靠地测量触觉和本体感觉数据，研究人员探索了多种转换原理，并结合了可扩展和多功能的制造技术。尽管如此，许多现有的可延展传感器方法仍然设计为生成单一的传感器配置，限制了设计的灵活性。在这里，我们提出了一种可访问的、灵活的、基于打印的可定制可延展传感器的制造方法。该方法结合了定制打印头和商用3D打印机，以实现导电墨水的直接墨水书写（DIW）印制到固化的硅胶基板上。通过使用可堆叠的托盘进行逐层制造过程，可以在硅胶矩阵中沉积多层液体导电墨水。为了展示该方法的高度设计灵活性，我们制造并评估了电容式和电阻式应变传感器几何结构。实验表征表明，电容式应变传感器具有高线性度（R² = 0.99）、接近1.0理论极限的高灵敏度（GF = 0.95）、最小的滞回特性（DH = 1.36%）和大延展性（550%），这些性能与文献中报道的最先进的可延展应变传感器相当。 
+
+---
+# Pre-Surgical Planner for Robot-Assisted Vitreoretinal Surgery: Integrating Eye Posture, Robot Position and Insertion Point 
+
+**Title (ZH)**: 机器人辅助玻璃体视网膜手术的术前规划系统：整合眼球姿势、机器人位置和穿刺点 
+
+**Authors**: Satoshi Inagaki, Alireza Alikhani, Nassir Navab, Peter C. Issa, M. Ali Nasseri  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.18230)  
+
+**Abstract**: Several robotic frameworks have been recently developed to assist ophthalmic surgeons in performing complex vitreoretinal procedures such as subretinal injection of advanced therapeutics. These surgical robots show promising capabilities; however, most of them have to limit their working volume to achieve maximum accuracy. Moreover, the visible area seen through the surgical microscope is limited and solely depends on the eye posture. If the eye posture, trocar position, and robot configuration are not correctly arranged, the instrument may not reach the target position, and the preparation will have to be redone. Therefore, this paper proposes the optimization framework of the eye tilting and the robot positioning to reach various target areas for different patients. Our method was validated with an adjustable phantom eye model, and the error of this workflow was 0.13 +/- 1.65 deg (rotational joint around Y axis), -1.40 +/- 1.13 deg (around X axis), and 1.80 +/- 1.51 mm (depth, Z). The potential error sources are also analyzed in the discussion section. 
+
+**Abstract (ZH)**: 眼科手术机器人框架优化以实现复杂玻璃体视网膜手术中的目标区域精准定位 
+
+---
+# Quadrotor Neural Dead Reckoning in Periodic Trajectories 
+
+**Title (ZH)**: 四旋翼神经动力学航位推算在周期性轨迹中 
+
+**Authors**: Shira Massas, Itzik Klein  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.17964)  
+
+**Abstract**: In real world scenarios, due to environmental or hardware constraints, the quadrotor is forced to navigate in pure inertial navigation mode while operating indoors or outdoors. To mitigate inertial drift, end-to-end neural network approaches combined with quadrotor periodic trajectories were suggested. There, the quadrotor distance is regressed and combined with inertial model-based heading estimation, the quadrotor position vector is estimated. To further enhance positioning performance, in this paper we propose a quadrotor neural dead reckoning approach for quadrotors flying on periodic trajectories. In this case, the inertial readings are fed into a simple and efficient network to directly estimate the quadrotor position vector. Our approach was evaluated on two different quadrotors, one operating indoors while the other outdoors. Our approach improves the positioning accuracy of other deep-learning approaches, achieving an average 27% reduction in error outdoors and an average 79% reduction indoors, while requiring only software modifications. With the improved positioning accuracy achieved by our method, the quadrotor can seamlessly perform its tasks. 
+
+**Abstract (ZH)**: 在实际场景中，由于环境或硬件限制，旋翼无人机被迫在室内或室外以纯惯性导航模式导航。为了减轻惯性漂移，建议使用端到端神经网络方法结合旋翼无人机的周期性轨迹。在那里，旋翼无人机的距离被回归并与基于惯性模型的方向估计结合，估计旋翼无人机的位置向量。为进一步增强定位性能，本文提出了一种适用于沿周期性轨迹飞行的旋翼无人机的神经死 reckoning 方法。在这种情况下，惯性读数被输入到一个简单且高效的网络中，直接估计旋翼无人机的位置向量。我们的方法在两种不同的旋翼无人机上进行了评估，一种在室内操作，另一种在室外操作。与其它深度学习方法相比，我们的方法提高了定位精度，室外平均误差减少了27%，室内平均误差减少了79%，仅需软件修改。通过我们方法实现的改进的定位精度，旋翼无人机可以无缝执行其任务。 
+
+---
+# corobos: A Design for Mobile Robots Enabling Cooperative Transitions between Table and Wall Surfaces 
+
+**Title (ZH)**: Corobos: 移动机器人的一种设计，实现桌子和墙面表面之间的协作过渡 
+
+**Authors**: Changyo Han, Yosuke Nakagawa, Takeshi Naemura  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.17868)  
+
+**Abstract**: Swarm User Interfaces allow dynamic arrangement of user environments through the use of multiple mobile robots, but their operational range is typically confined to a single plane due to constraints imposed by their two-wheel propulsion systems. We present corobos, a proof-of-concept design that enables these robots to cooperatively transition between table (horizontal) and wall (vertical) surfaces seamlessly, without human intervention. Each robot is equipped with a uniquely designed slope structure that facilitates smooth rotation when another robot pushes it toward a target surface. Notably, this design relies solely on passive mechanical elements, eliminating the need for additional active electrical components. We investigated the design parameters of this structure and evaluated its transition success rate through experiments. Furthermore, we demonstrate various application examples to showcase the potential of corobos in enhancing user environments. 
+
+**Abstract (ZH)**: 基于协作过渡设计的 swarm 用户界面允许多移动机器人在水平和垂直表面之间无缝切换，无需人工干预。 
+
+---
+# Impact of Object Weight in Handovers: Inspiring Robotic Grip Release and Motion from Human Handovers 
+
+**Title (ZH)**: 手持物体重量对切换影响：启发机器人手部释放与运动的人手切换 
+
+**Authors**: Parag Khanna, Mårten Björkman, Christian Smith  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.17834)  
+
+**Abstract**: This work explores the effect of object weight on human motion and grip release during handovers to enhance the naturalness, safety, and efficiency of robot-human interactions. We introduce adaptive robotic strategies based on the analysis of human handover behavior with varying object weights. The key contributions of this work includes the development of an adaptive grip-release strategy for robots, a detailed analysis of how object weight influences human motion to guide robotic motion adaptations, and the creation of handover-datasets incorporating various object weights, including the YCB handover dataset. By aligning robotic grip release and motion with human behavior, this work aims to improve robot-human handovers for different weighted objects. We also evaluate these human-inspired adaptive robotic strategies in robot-to-human handovers to assess their effectiveness and performance and demonstrate that they outperform the baseline approaches in terms of naturalness, efficiency, and user perception. 
+
+**Abstract (ZH)**: 本研究探讨物体重量对人类传递过程中的运动和握持释放的影响，以增强机器人与人类互动的自然性、安全性和效率。我们基于不同物体重量的人类传递行为分析，提出适应性机器人策略。本文的关键贡献包括开发适应性握持释放策略、详细分析物体重量如何影响人类运动以指导机器人的运动适应、以及创建包含不同物体重量的传递数据集（如YCB传递数据集）。通过使机器人的握持释放和运动与人类行为相一致，本研究旨在改进不同重量物体的机器人与人类之间的传递。我们还在机器人到人类的传递中评估这些受人类启发的适应性机器人策略，以评估其有效性和性能，并证明它们在自然性、效率和用户感知方面优于基准方法。 
+
+---
+# Design of a Breakaway Utensil Attachment for Enhanced Safety in Robot-Assisted Feeding 
+
+**Title (ZH)**: 机器人辅助喂食中具有增强安全性的脱手餐具附件设计 
+
+**Authors**: Hau Wen Chang, J-Anne Yow, Lek Syn Lim, Wei Tech Ang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.17774)  
+
+**Abstract**: Robot-assisted feeding systems enhance the independence of individuals with motor impairments and alleviate caregiver burden. While existing systems predominantly rely on software-based safety features to mitigate risks during unforeseen collisions, this study explores the use of a mechanical fail-safe to improve safety. We designed a breakaway utensil attachment that decouples forces exerted by the robot on the user when excessive forces occur. Finite element analysis (FEA) simulations were performed to predict failure points under various loading conditions, followed by experimental validation using 3D-printed attachments with variations in slot depth and wall loops. To facilitate testing, a drop test rig was developed and validated. Our results demonstrated a consistent failure point at the slot of the attachment, with a slot depth of 1 mm and three wall loops achieving failure at the target force of 65 N. Additionally, the parameters can be tailored to customize the breakaway force based on user-specific factors, such as comfort and pain tolerance. CAD files and utensil assembly instructions can be found here: this https URL 
+
+**Abstract (ZH)**: 机器人辅助进食系统增强运动障碍个体的独立性并减轻护理负担。为了提高安全性，本研究探讨了使用机械失效安全措施的应用，设计了一种断开式餐具附件，在过度力量作用时脱离机器人对使用者的施力。进行了有限元分析（FEA）仿真预测在不同负载条件下的失效点，随后使用3D打印附件并通过改变槽深和壁环的变数进行了实验验证。为便于测试，开发并验证了一个跌落试验台。结果显示，附件的槽部位为1 mm深度和三个壁环参数在目标力65 N时实现失效。此外，参数可以根据用户的特定因素（如舒适度和疼痛耐受度）进行定制。CAD文件和餐具组装说明可在此获取：this https URL。 
+
+---
+# The Geometry of Optimal Gait Families for Steering Kinematic Locomoting Systems 
+
+**Title (ZH)**: 最优行进家族几何学： steering 运动学移动系统指导下的行进方式几何 
+
+**Authors**: Jinwoo Choi, Siming Deng, Nathan Justus, Noah J. Cowan, Ross L. Hatton  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.17672)  
+
+**Abstract**: Motion planning for locomotion systems typically requires translating high-level rigid-body tasks into low-level joint trajectories-a process that is straightforward for car-like robots with fixed, unbounded actuation inputs but more challenging for systems like snake robots, where the mapping depends on the current configuration and is constrained by joint limits. In this paper, we focus on generating continuous families of optimal gaits-collections of gaits parameterized by step size or steering rate-to enhance controllability and maneuverability. We uncover the underlying geometric structure of these optimal gait families and propose methods for constructing them using both global and local search strategies, where the local method and the global method compensate each other. The global search approach is robust to nonsmooth behavior, albeit yielding reduced-order solutions, while the local search provides higher accuracy but can be unstable near nonsmooth regions. To demonstrate our framework, we generate optimal gait families for viscous and perfect-fluid three-link swimmers. This work lays a foundation for integrating low-level joint controllers with higher-level motion planners in complex locomotion systems. 
+
+**Abstract (ZH)**: 基于运动规划的连续最优步态族生成及其在仿生游泳器中的应用 
+
+---
+# Attention-based UAV Trajectory Optimization for Wireless Power Transfer-assisted IoT Systems 
+
+**Title (ZH)**: 基于注意力机制的无人机轨迹优化以支持无线能量传输辅助物联网系统 
+
+**Authors**: Li Dong, Feibo Jiang, Yubo Peng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.17517)  
+
+**Abstract**: Unmanned Aerial Vehicles (UAVs) in Wireless Power Transfer (WPT)-assisted Internet of Things (IoT) systems face the following challenges: limited resources and suboptimal trajectory planning. Reinforcement learning-based trajectory planning schemes face issues of low search efficiency and learning instability when optimizing large-scale systems. To address these issues, we present an Attention-based UAV Trajectory Optimization (AUTO) framework based on the graph transformer, which consists of an Attention Trajectory Optimization Model (ATOM) and a Trajectory lEarNing Method based on Actor-critic (TENMA). In ATOM, a graph encoder is used to calculate the self-attention characteristics of all IoTDs, and a trajectory decoder is developed to optimize the number and trajectories of UAVs. TENMA then trains the ATOM using an improved Actor-Critic method, in which the real reward of the system is applied as the baseline to reduce variances in the critic network. This method is suitable for high-quality and large-scale multi-UAV trajectory planning. Finally, we develop numerous experiments, including a hardware experiment in the field case, to verify the feasibility and efficiency of the AUTO framework. 
+
+**Abstract (ZH)**: 基于图变换器的注意力机制无人机轨迹优化（AUTO）框架：面向无线能量传输辅助物联网系统的注意力轨迹优化模型（ATOM）与基于 actor-critic 的轨迹学习方法（TENMA） 
+
+---
