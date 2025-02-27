@@ -1,0 +1,65 @@
+# Attention-Guided Integration of CLIP and SAM for Precise Object Masking in Robotic Manipulation 
+
+**Title (ZH)**: 基于注意力引导的CLIP和SAM集成方法在机器人操作中实现精确对象掩码 
+
+**Authors**: Muhammad A. Muttaqien, Tomohiro Motoda, Ryo Hanai, Domae Yukiyasu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.18842)  
+
+**Abstract**: This paper introduces a novel pipeline to enhance the precision of object masking for robotic manipulation within the specific domain of masking products in convenience stores. The approach integrates two advanced AI models, CLIP and SAM, focusing on their synergistic combination and the effective use of multimodal data (image and text). Emphasis is placed on utilizing gradient-based attention mechanisms and customized datasets to fine-tune performance. While CLIP, SAM, and Grad- CAM are established components, their integration within this structured pipeline represents a significant contribution to the field. The resulting segmented masks, generated through this combined approach, can be effectively utilized as inputs for robotic systems, enabling more precise and adaptive object manipulation in the context of convenience store products. 
+
+**Abstract (ZH)**: 本文提出了一种新的流水线，以提高便利商店产品机器人操作中对象遮罩的精度。该方法结合了CLIP和SAM两种先进的AI模型，强调它们的协同作用和多模态数据（图像和文本）的有效利用。重点在于利用基于梯度的注意力机制和定制的数据集来优化性能。虽然CLIP、SAM和Grad-CAM是现有的组件，但它们在该结构化流水线中的集成对领域做出了重要贡献。通过此结合方法生成的分割遮罩可以有效地作为机器人系统的输入，从而在便利商店产品上下文中实现更精确和适应性的对象操作。 
+
+---
+# Multi-modal Contrastive Learning for Tumor-specific Missing Modality Synthesis 
+
+**Title (ZH)**: 多模态对比学习在肿瘤特异性缺失模态合成中的应用 
+
+**Authors**: Minjoo Lim, Bogyeong Kang, Tae-Eui Kam  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.19390)  
+
+**Abstract**: Multi-modal magnetic resonance imaging (MRI) is essential for providing complementary information about brain anatomy and pathology, leading to more accurate diagnoses. However, obtaining high-quality multi-modal MRI in a clinical setting is difficult due to factors such as time constraints, high costs, and patient movement artifacts. To overcome this difficulty, there is increasing interest in developing generative models that can synthesize missing target modality images from the available source ones. Therefore, we design a generative model for missing MRI that integrates multi-modal contrastive learning with a focus on critical tumor regions. Specifically, we integrate multi-modal contrastive learning, tailored for multiple source modalities, and enhance its effectiveness by selecting features based on entropy during the contrastive learning process. Additionally, our network not only generates the missing target modality images but also predicts segmentation outputs, simultaneously. This approach improves the generator's capability to precisely generate tumor regions, ultimately improving performance in downstream segmentation tasks. By leveraging a combination of contrastive, segmentation, and additional self-representation losses, our model effectively reflects target-specific information and generate high-quality target images. Consequently, our results in the Brain MR Image Synthesis challenge demonstrate that the proposed model excelled in generating the missing modality. 
+
+**Abstract (ZH)**: 多模态磁共振成像（MRI）对于提供关于脑解剖和病理的补充信息至关重要，有助于更准确的诊断。然而，在临床环境中获得高质量的多模态MRI受到时间限制、高成本和患者运动伪影等因素的影响。为克服这一困难，近年来越来越多的研究兴趣集中在开发生成模型，可以利用现有源模态合成缺失的目标模态图像。因此，我们设计了一种集成多模态对比学习的生成模型，重点关注关键肿瘤区域。具体而言，我们整合了针对多种源模态定制的多模态对比学习，并在其对比学习过程中通过选择基于熵的特征来增强其效果。此外，我们的网络不仅生成缺失的目标模态图像，还同时预测分割输出。这种方法提高了生成器对肿瘤区域精确生成的能力，最终提高了下游分割任务的性能。通过利用对比、分割以及额外的自我表征损失的组合，我们的模型有效地反映了目标特定的信息并生成高质量的目标图像。因此，在脑MR图像合成挑战中，我们的结果表明所提出的模型在生成缺失模态方面表现出色。 
+
+---
+# DualSpec: Text-to-spatial-audio Generation via Dual-Spectrogram Guided Diffusion Model 
+
+**Title (ZH)**: DualSpec：基于双谱图引导扩散模型的文本到空间化音频生成 
+
+**Authors**: Lei Zhao, Sizhou Chen, Linfeng Feng, Xiao-Lei Zhang, Xuelong Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.18952)  
+
+**Abstract**: Text-to-audio (TTA), which generates audio signals from textual descriptions, has received huge attention in recent years. However, recent works focused on text to monaural audio only. As we know, spatial audio provides more immersive auditory experience than monaural audio, e.g. in virtual reality. To address this issue, we propose a text-to-spatial-audio (TTSA) generation framework named this http URL, it first trains variational autoencoders (VAEs) for extracting the latent acoustic representations from sound event audio. Then, given text that describes sound events and event directions, the proposed method uses the encoder of a pretrained large language model to transform the text into text features. Finally, it trains a diffusion model from the latent acoustic representations and text features for the spatial audio generation. In the inference stage, only the text description is needed to generate spatial audio. Particularly, to improve the synthesis quality and azimuth accuracy of the spatial sound events simultaneously, we propose to use two kinds of acoustic features. One is the Mel spectrograms which is good for improving the synthesis quality, and the other is the short-time Fourier transform spectrograms which is good at improving the azimuth accuracy. We provide a pipeline of constructing spatial audio dataset with text prompts, for the training of the VAEs and diffusion model. We also introduce new spatial-aware evaluation metrics to quantify the azimuth errors of the generated spatial audio recordings. Experimental results demonstrate that the proposed method can generate spatial audio with high directional and event consistency. 
+
+**Abstract (ZH)**: 文本到立体声音频生成：http:// développent un框架 
+
+---
+# Mind the Gap: Bridging the Divide Between AI Aspirations and the Reality of Autonomous Characterization 
+
+**Title (ZH)**: 注意差距：弥合人工智能期望与自主特征化现实之间的鸿沟 
+
+**Authors**: Grace Guinan, Addison Salvador, Michelle A. Smeaton, Andrew Glaws, Hilary Egan, Brian C. Wyatt, Babak Anasori, Kevin R. Fiedler, Matthew J. Olszta, Steven R. Spurgeon  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.18604)  
+
+**Abstract**: What does materials science look like in the "Age of Artificial Intelligence?" Each materials domain-synthesis, characterization, and modeling-has a different answer to this question, motivated by unique challenges and constraints. This work focuses on the tremendous potential of autonomous characterization within electron microscopy. We present our recent advancements in developing domain-aware, multimodal models for microscopy analysis capable of describing complex atomic systems. We then address the critical gap between the theoretical promise of autonomous microscopy and its current practical limitations, showcasing recent successes while highlighting the necessary developments to achieve robust, real-world autonomy. 
+
+**Abstract (ZH)**: 人工智能时代材料科学的面貌：各材料领域（合成、表征和建模）对此问题有不同的答案，受独特挑战和约束的驱动。本工作聚焦自主表征在电子显微镜中的巨大潜力。我们介绍了在显微镜分析中开发领域 Awareness、多模态模型的最新进展，能够描述复杂的原子系统。随后，我们探讨了自主显微镜理论潜力与其当前实践限制之间的关键差距，展示了近期的成功案例，并突出了实现稳健的、实际应用中的自主性所必需的进一步发展。 
+
+---
+# Steganography Beyond Space-Time With Chain of Multimodal AI Agents 
+
+**Title (ZH)**: 时空之外的隐写术：多模态AI代理链 
+
+**Authors**: Ching-Chun Chang, Isao Echizen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.18547)  
+
+**Abstract**: Steganography is the art and science of covert writing, with a broad range of applications interwoven within the realm of cybersecurity. As artificial intelligence continues to evolve, its ability to synthesise realistic content emerges as a threat in the hands of cybercriminals who seek to manipulate and misrepresent the truth. Such synthetic content introduces a non-trivial risk of overwriting the subtle changes made for the purpose of steganography. When the signals in both the spatial and temporal domains are vulnerable to unforeseen overwriting, it calls for reflection on what can remain invariant after all. This study proposes a paradigm in steganography for audiovisual media, where messages are concealed beyond both spatial and temporal domains. A chain of multimodal agents is developed to deconstruct audiovisual content into a cover text, embed a message within the linguistic domain, and then reconstruct the audiovisual content through synchronising both aural and visual modalities with the resultant stego text. The message is encoded by biasing the word sampling process of a language generation model and decoded by analysing the probability distribution of word choices. The accuracy of message transmission is evaluated under both zero-bit and multi-bit capacity settings. Fidelity is assessed through both biometric and semantic similarities, capturing the identities of the recorded face and voice, as well as the core ideas conveyed through the media. Secrecy is examined through statistical comparisons between cover and stego texts. Robustness is tested across various scenarios, including audiovisual compression, face-swapping, voice-cloning and their combinations. 
+
+**Abstract (ZH)**: 视听媒体中的隐写图学：超越时空域的消息隐藏与传输 
+
+---
