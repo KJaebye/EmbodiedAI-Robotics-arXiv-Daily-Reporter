@@ -1,0 +1,3826 @@
+# Do GFlowNets Transfer? Case Study on the Game of 24/42 
+
+**Title (ZH)**: Do GFlowNets 转移？关于 24/42 游戏的案例研究 
+
+**Authors**: Adesh Gupta, Abhinav Kumar, Mansi Gupta, Paras Chopra  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01819)  
+
+**Abstract**: Generating diverse solutions is key to human-like reasoning, yet autoregressive language models focus on single accurate responses, limiting creativity. GFlowNets optimize solution generation as a flow network, promising greater diversity. Our case study shows their limited zero-shot transferability by fine-tuning small and medium-sized large language models on the Game of 24 and testing them on the Game of 42 datasets. Results revealed that GFlowNets struggle to maintain solution diversity and accuracy, highlighting key limitations in their cross-task generalization and the need for future research in improved transfer learning capabilities. 
+
+**Abstract (ZH)**: 生成多样化的解决方案是实现类人推理的关键，而自回归语言模型专注于单一准确响应，限制了其创造性。GFlowNets通过优化解决方案生成为流网络，有望实现更高的多样性。我们的案例研究通过在24点游戏和42点游戏数据集上微调小型和中型语言模型，并测试它们的表现，展示了GFlowNets在零样本迁移上的局限性。结果表明，GFlowNets难以保持解决方案的多样性和准确性，突显了其跨任务泛化中的关键局限，并强调了未来研究以提高迁移学习能力的重要性。 
+
+---
+# Generating Counterfactual Explanations Under Temporal Constraints 
+
+**Title (ZH)**: 基于时间约束的事实解释生成 
+
+**Authors**: Andrei Buliga, Chiara Di Francescomarino, Chiara Ghidini, Marco Montali, Massimiliano Ronzani  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01792)  
+
+**Abstract**: Counterfactual explanations are one of the prominent eXplainable Artificial Intelligence (XAI) techniques, and suggest changes to input data that could alter predictions, leading to more favourable outcomes. Existing counterfactual methods do not readily apply to temporal domains, such as that of process mining, where data take the form of traces of activities that must obey to temporal background knowledge expressing which dynamics are possible and which not. Specifically, counterfactuals generated off-the-shelf may violate the background knowledge, leading to inconsistent explanations. This work tackles this challenge by introducing a novel approach for generating temporally constrained counterfactuals, guaranteed to comply by design with background knowledge expressed in Linear Temporal Logic on process traces (LTLp). We do so by infusing automata-theoretic techniques for LTLp inside a genetic algorithm for counterfactual generation. The empirical evaluation shows that the generated counterfactuals are temporally meaningful and more interpretable for applications involving temporal dependencies. 
+
+**Abstract (ZH)**: 基于时间约束的-counterfactual解释：一种符合线性时序逻辑的新型生成方法 
+
+---
+# SAKE: Steering Activations for Knowledge Editing 
+
+**Title (ZH)**: SAKE: 引导激活以进行知识编辑 
+
+**Authors**: Marco Scialanga, Thibault Laugel, Vincent Grari, Marcin Detyniecki  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01751)  
+
+**Abstract**: As Large Langue Models have been shown to memorize real-world facts, the need to update this knowledge in a controlled and efficient manner arises. Designed with these constraints in mind, Knowledge Editing (KE) approaches propose to alter specific facts in pretrained models. However, they have been shown to suffer from several limitations, including their lack of contextual robustness and their failure to generalize to logical implications related to the fact. To overcome these issues, we propose SAKE, a steering activation method that models a fact to be edited as a distribution rather than a single prompt. Leveraging Optimal Transport, SAKE alters the LLM behavior over a whole fact-related distribution, defined as paraphrases and logical implications. Several numerical experiments demonstrate the effectiveness of this method: SAKE is thus able to perform more robust edits than its existing counterparts. 
+
+**Abstract (ZH)**: 基于知识编辑的方法在大型语言模型中的应用：利用最优运输方法进行事实导向的调整 
+
+---
+# Position: Don't use the CLT in LLM evals with fewer than a few hundred datapoints 
+
+**Title (ZH)**: 位置：不要在数据点少于几百个的LLM评估中使用CLT。 
+
+**Authors**: Sam Bowyer, Laurence Aitchison, Desi R. Ivanova  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01747)  
+
+**Abstract**: Rigorous statistical evaluations of large language models (LLMs), including valid error bars and significance testing, are essential for meaningful and reliable performance assessment. Currently, when such statistical measures are reported, they typically rely on the Central Limit Theorem (CLT). In this position paper, we argue that while CLT-based methods for uncertainty quantification are appropriate when benchmarks consist of thousands of examples, they fail to provide adequate uncertainty estimates for LLM evaluations that rely on smaller, highly specialized benchmarks. In these small-data settings, we demonstrate that CLT-based methods perform very poorly, usually dramatically underestimating uncertainty (i.e. producing error bars that are too small). We give recommendations for alternative frequentist and Bayesian methods that are both easy to implement and more appropriate in these increasingly common scenarios. We provide a simple Python library for these Bayesian methods at this https URL . 
+
+**Abstract (ZH)**: 大规模语言模型的严格统计评价，包括有效的误差范围和显著性测试，对于有意义和可靠的性能评估是必不可少的。目前，当报告此类统计度量时，通常依赖中心极限定理（CLT）。在本文中，我们argue认为，在基准数据包含数千个样本的情况下，基于CLT的不确定性量化方法是合适的，但对于依赖于较小且高度专门化基准的大型语言模型评估而言，它们无法提供充分的不确定性估计。在这些小样本数据设置中，我们证明基于CLT的方法表现得很差，通常极大地低估了不确定性（即产生过小的误差范围）。我们提出了替代的频繁主义和贝叶斯方法的建议，这些方法易于实施且更适用于这些越来越常见的场景。我们在此提供的简单Python库包含了这些贝叶斯方法。 
+
+---
+# Learning Exposure Mapping Functions for Inferring Heterogeneous Peer Effects 
+
+**Title (ZH)**: 学习暴露映射函数以推断异质性 peers 效应 
+
+**Authors**: Shishir Adhikari, Sourav Medya, Elena Zheleva  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01722)  
+
+**Abstract**: In causal inference, interference refers to the phenomenon in which the actions of peers in a network can influence an individual's outcome. Peer effect refers to the difference in counterfactual outcomes of an individual for different levels of peer exposure, the extent to which an individual is exposed to the treatments, actions, or behaviors of peers. Estimating peer effects requires deciding how to represent peer exposure. Typically, researchers define an exposure mapping function that aggregates peer treatments and outputs peer exposure. Most existing approaches for defining exposure mapping functions assume peer exposure based on the number or fraction of treated peers. Recent studies have investigated more complex functions of peer exposure which capture that different peers can exert different degrees of influence. However, none of these works have explicitly considered the problem of automatically learning the exposure mapping function. In this work, we focus on learning this function for the purpose of estimating heterogeneous peer effects, where heterogeneity refers to the variation in counterfactual outcomes for the same peer exposure but different individual's contexts. We develop EgoNetGNN, a graph neural network (GNN)-based method, to automatically learn the appropriate exposure mapping function allowing for complex peer influence mechanisms that, in addition to peer treatments, can involve the local neighborhood structure and edge attributes. We show that GNN models that use peer exposure based on the number or fraction of treated peers or learn peer exposure naively face difficulty accounting for such influence mechanisms. Our comprehensive evaluation on synthetic and semi-synthetic network data shows that our method is more robust to different unknown underlying influence mechanisms when estimating heterogeneous peer effects when compared to state-of-the-art baselines. 
+
+**Abstract (ZH)**: 因果推断中的干扰现象指的是网络中同伴的行为会影响个体的结局。同伴效应指的是在不同同伴暴露水平下个体的反事实结局差异，即个体受到同伴治疗、行为或行动影响的程度。估计同伴效应需要决定如何表示同伴暴露。通常，研究人员定义一个暴露映射函数，汇总同伴治疗并输出同伴暴露。现有大多数方法假设同伴暴露基于受治疗同伴的数量或比例。近期研究探索了更复杂的同伴暴露函数，捕捉不同同伴可能施加不同影响的程度。然而，这些工作均未明确考虑自动学习暴露映射函数的问题。在本文中，我们专注于为估计异质同伴效应学习该函数，其中异质性指的是相同同伴暴露但不同个体上下文中反事实结局的变异。我们开发了EgoNetGNN，这是一种基于图神经网络（GNN）的方法，能够自动学习允许复杂同伴影响机制的适当暴露映射函数，这些机制不仅涉及同伴治疗，还可能包括局部邻域结构和边属性。我们证明使用基于受治疗同伴数量或比例的同伴暴露或简单学习同伴暴露的GNN模型难以捕捉这些影响机制。我们在合成和半合成网络数据上的全面评估表明，我们的方法在估计异质同伴效应时相较于最先进的基线方法具有更强的鲁棒性。 
+
+---
+# Graph-Augmented Reasoning: Evolving Step-by-Step Knowledge Graph Retrieval for LLM Reasoning 
+
+**Title (ZH)**: 图增强推理：逐步知识图谱检索在大模型推理中的 evolving 
+
+**Authors**: Wenjie Wu, Yongcheng Jing, Yingjie Wang, Wenbin Hu, Dacheng Tao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01642)  
+
+**Abstract**: Recent large language model (LLM) reasoning, despite its success, suffers from limited domain knowledge, susceptibility to hallucinations, and constrained reasoning depth, particularly in small-scale models deployed in resource-constrained environments. This paper presents the first investigation into integrating step-wise knowledge graph retrieval with step-wise reasoning to address these challenges, introducing a novel paradigm termed as graph-augmented reasoning. Our goal is to enable frozen, small-scale LLMs to retrieve and process relevant mathematical knowledge in a step-wise manner, enhancing their problem-solving abilities without additional training. To this end, we propose KG-RAR, a framework centered on process-oriented knowledge graph construction, a hierarchical retrieval strategy, and a universal post-retrieval processing and reward model (PRP-RM) that refines retrieved information and evaluates each reasoning step. Experiments on the Math500 and GSM8K benchmarks across six models demonstrate that KG-RAR yields encouraging results, achieving a 20.73\% relative improvement with Llama-3B on Math500. 
+
+**Abstract (ZH)**: 近期大型语言模型（LLM）的推理尽管取得成功，但仍面临领域知识有限、容易产生幻觉以及推理深度受限等问题，特别是在资源受限环境中部署的小规模模型中更为明显。本文首次探讨将逐步知识图谱检索与逐步推理相结合以应对这些挑战，提出了一个名为图增强推理的新范式。我们的目标是使冻结的小规模LLM能够逐步检索和处理相关数学知识，增强其解决问题的能力而无需额外训练。为此，我们提出了KG-RAR框架，该框架以过程导向的知识图谱构建、层次化检索策略以及一种通用的检索后处理和奖励模型（PRP-RM）为核心，该模型对检索到的信息进行精炼并评估每一步推理。实验结果显示，KG-RAR在Math500和GSM8K基准测试中的六种模型上取得了令人鼓舞的结果，相较于Llama-3B在Math500上的表现提高了20.73%。 
+
+---
+# CoT-VLM4Tar: Chain-of-Thought Guided Vision-Language Models for Traffic Anomaly Resolution 
+
+**Title (ZH)**: Chain-of-Thought 引导的视觉-语言模型在交通异常解决中的应用 
+
+**Authors**: Tianchi Ren, Haibo Hu, Jiacheng Zuo, Xinhong Chen, Jianping Wang, Chun Jason Xue, Jen-Ming Wu, Nan Guan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01632)  
+
+**Abstract**: With the acceleration of urbanization, modern urban traffic systems are becoming increasingly complex, leading to frequent traffic anomalies. These anomalies encompass not only common traffic jams but also more challenging issues such as phantom traffic jams, intersection deadlocks, and accident liability analysis, which severely impact traffic flow, vehicular safety, and overall transportation efficiency. Currently, existing solutions primarily rely on manual intervention by traffic police or artificial intelligence-based detection systems. However, these methods often suffer from response delays and inconsistent management due to inadequate resources, while AI detection systems, despite enhancing efficiency to some extent, still struggle to handle complex traffic anomalies in a real-time and precise manner. To address these issues, we propose CoT-VLM4Tar: (Chain of Thought Visual-Language Model for Traffic Anomaly Resolution), this innovative approach introduces a new chain-of-thought to guide the VLM in analyzing, reasoning, and generating solutions for traffic anomalies with greater reasonable and effective solution, and to evaluate the performance and effectiveness of our method, we developed a closed-loop testing framework based on the CARLA simulator. Furthermore, to ensure seamless integration of the solutions generated by the VLM with the CARLA simulator, we implement an itegration module that converts these solutions into executable commands. Our results demonstrate the effectiveness of VLM in the resolution of real-time traffic anomalies, providing a proof-of-concept for its integration into autonomous traffic management systems. 
+
+**Abstract (ZH)**: 随着城市化的加速，现代城市交通系统变得越来越复杂，导致频繁出现交通异常。这些异常不仅包括常见的交通拥堵，还包括虚拟交通拥堵、交叉口死锁和事故责任分析等问题，严重影响了交通流、车辆安全和整体运输效率。目前，现有的解决方案主要依赖于交通警察的手动干预或基于人工智能的检测系统。然而，这些方法往往因资源不足而存在响应延迟和管理不一致的问题，虽然人工智能检测系统在一定程度上提高了效率，但在处理复杂的交通异常时依然难以实现实时和精确的管理。为了应对这些问题，我们提出了CoT-VLM4Tar：（基于链式思考的视觉语言模型用于交通异常解决），这一创新方法引入了一种新的链式思考来引导VLM对交通异常进行分析、推理和生成更合理有效的解决方案，并基于CARLA模拟器建立了闭环测试框架以评估我们方法的性能和有效性。此外，为了确保VLM生成的解决方案能够无缝集成到CARLA模拟器中，我们实现了一个集成模块，将这些解决方案转换为可执行命令。我们的结果证明了VLM在解决实时交通异常方面的有效性，为其集成到自动驾驶交通管理系统中提供了概念验证。 
+
+---
+# SENSEI: Semantic Exploration Guided by Foundation Models to Learn Versatile World Models 
+
+**Title (ZH)**: SENSEI: 由基础模型引导的语义探索以学习多样化的世界模型 
+
+**Authors**: Cansu Sancaktar, Christian Gumbsch, Andrii Zadaianchuk, Pavel Kolev, Georg Martius  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01584)  
+
+**Abstract**: Exploration is a cornerstone of reinforcement learning (RL). Intrinsic motivation attempts to decouple exploration from external, task-based rewards. However, established approaches to intrinsic motivation that follow general principles such as information gain, often only uncover low-level interactions. In contrast, children's play suggests that they engage in meaningful high-level behavior by imitating or interacting with their caregivers. Recent work has focused on using foundation models to inject these semantic biases into exploration. However, these methods often rely on unrealistic assumptions, such as language-embedded environments or access to high-level actions. We propose SEmaNtically Sensible ExploratIon (SENSEI), a framework to equip model-based RL agents with an intrinsic motivation for semantically meaningful behavior. SENSEI distills a reward signal of interestingness from Vision Language Model (VLM) annotations, enabling an agent to predict these rewards through a world model. Using model-based RL, SENSEI trains an exploration policy that jointly maximizes semantic rewards and uncertainty. We show that in both robotic and video game-like simulations SENSEI discovers a variety of meaningful behaviors from image observations and low-level actions. SENSEI provides a general tool for learning from foundation model feedback, a crucial research direction, as VLMs become more powerful. 
+
+**Abstract (ZH)**: 基于语义的探索：一种模型驱动的强化学习框架(SENSEI) 
+
+---
+# Enabling AI Scientists to Recognize Innovation: A Domain-Agnostic Algorithm for Assessing Novelty 
+
+**Title (ZH)**: 使AI科学家识别创新：一种跨领域新颖性评估算法 
+
+**Authors**: Yao Wang, Mingxuan Cui, Arthur Jiang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01508)  
+
+**Abstract**: In the pursuit of Artificial General Intelligence (AGI), automating the generation and evaluation of novel research ideas is a key challenge in AI-driven scientific discovery. This paper presents Relative Neighbor Density (RND), a domain-agnostic algorithm for novelty assessment in research ideas that overcomes the limitations of existing approaches by analyzing the distribution patterns of semantic neighbors rather than simple distances. We first developed a scalable methodology to create validation datasets without expert labeling, addressing a fundamental challenge in novelty assessment. Using these datasets, we demonstrate that our RND algorithm achieves state-of-the-art (SOTA) performance in computer science (AUROC=0.808) and biomedical research (AUROC=0.757) domains. Most significantly, while SOTA models like Sonnet-3.7 and existing metrics show domain-specific performance degradation, RND maintains consistent effectiveness across domains, outperforming all benchmarks by a substantial margin (0.782 v.s. 0.597) on cross-domain evaluation. These results validate RND as a generalizable solution for automated novelty assessment in scientific research. 
+
+**Abstract (ZH)**: 在追求人工通用智能（AGI）的过程中，自动化新型研究理念的生成与评估是AI驱动科学发现中的关键挑战。本文提出了基于相对邻居密度（RND）的通用新颖性评估算法，该算法通过分析语义邻居的分布模式而非简单的距离来克服现有方法的局限。我们首先开发了一种可扩展的方法来创建无需专家标注的验证数据集，解决了新颖性评估中的根本性挑战。利用这些数据集，我们展示了RND算法在计算机科学（AUROC=0.808）和生物医学研究（AUROC=0.757）领域的SOTA性能。尤为重要的是，尽管如Sonnet-3.7等SOTA模型和现有指标在不同领域表现出性能下降，RND在跨领域评估中保持了一致的有效性，相较于所有基准模型取得了显著的性能优势（0.782 vs. 0.597）。这些结果验证了RND作为科学科研中自动化新颖性评估的通用解决方案的有效性。 
+
+---
+# ProRCA: A Causal Python Package for Actionable Root Cause Analysis in Real-world Business Scenarios 
+
+**Title (ZH)**: ProRCA：一种用于实际商业场景可行动因分析的因果Python包 
+
+**Authors**: Ahmed Dawoud, Shravan Talupula  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01475)  
+
+**Abstract**: Root Cause Analysis (RCA) is becoming ever more critical as modern systems grow in complexity, volume of data, and interdependencies. While traditional RCA methods frequently rely on correlation-based or rule-based techniques, these approaches can prove inadequate in highly dynamic, multi-layered environments. In this paper, we present a pathway-tracing package built on the DoWhy causal inference library. Our method integrates conditional anomaly scoring, noise-based attribution, and depth-first path exploration to reveal multi-hop causal chains. By systematically tracing entire causal pathways from an observed anomaly back to the initial triggers, our approach provides a comprehensive, end-to-end RCA solution. Experimental evaluations with synthetic anomaly injections demonstrate the package's ability to accurately isolate triggers and rank root causes by their overall significance. 
+
+**Abstract (ZH)**: 基于DoWhy因果推断库的路径追踪包：多跳因果链的揭示与根因分析 
+
+---
+# SrSv: Integrating Sequential Rollouts with Sequential Value Estimation for Multi-agent Reinforcement Learning 
+
+**Title (ZH)**: SrSv: 将顺序 rollout 与顺序价值估计集成到多智能体强化学习中 
+
+**Authors**: Xu Wan, Chao Yang, Cheng Yang, Jie Song, Mingyang Sun  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01458)  
+
+**Abstract**: Although multi-agent reinforcement learning (MARL) has shown its success across diverse domains, extending its application to large-scale real-world systems still faces significant challenges. Primarily, the high complexity of real-world environments exacerbates the credit assignment problem, substantially reducing training efficiency. Moreover, the variability of agent populations in large-scale scenarios necessitates scalable decision-making mechanisms. To address these challenges, we propose a novel framework: Sequential rollout with Sequential value estimation (SrSv). This framework aims to capture agent interdependence and provide a scalable solution for cooperative MARL. Specifically, SrSv leverages the autoregressive property of the Transformer model to handle varying populations through sequential action rollout. Furthermore, to capture the interdependence of policy distributions and value functions among multiple agents, we introduce an innovative sequential value estimation methodology and integrates the value approximation into an attention-based sequential model. We evaluate SrSv on three benchmarks: Multi-Agent MuJoCo, StarCraft Multi-Agent Challenge, and DubinsCars. Experimental results demonstrate that SrSv significantly outperforms baseline methods in terms of training efficiency without compromising convergence performance. Moreover, when implemented in a large-scale DubinsCar system with 1,024 agents, our framework surpasses existing benchmarks, highlighting the excellent scalability of SrSv. 
+
+**Abstract (ZH)**: 虽然多智能体强化学习（MARL）已经在多种领域展现了其成功，将其应用扩展到大规模实际系统仍然面临显著挑战。具体而言，真实世界环境的高复杂性加剧了信用分配问题，显著降低了训练效率。此外，大规模场景中智能体群体的多样性要求可扩展的决策机制。为应对这些挑战，我们提出了一种新的框架：顺序展开与顺序价值估计（SrSv）。该框架旨在捕捉智能体之间的相互依赖性，并为合作MARL提供可扩展的解决方案。具体而言，SrSv 利用Transformer模型的自回归特性，通过顺序行动展开处理智能体群体的变化。此外，为了捕捉智能体之间策略分布和价值函数之间的相互依赖性，我们引入了一种创新的顺序价值估计方法，并将价值近似整合到基于注意力的顺序模型中。我们在三个基准上评估了SrSv：Multi-Agent MuJoCo、StarCraft 多智能体挑战和DubinsCars。实验结果表明，SrSv 在不牺牲收敛性能的情况下，在训练效率方面显著优于基线方法。此外，当在包含1024个智能体的大规模DubinsCar系统中实现时，该框架超越了现有的基准，突显了SrSv的卓越可扩展性。 
+
+---
+# From Hypothesis to Publication: A Comprehensive Survey of AI-Driven Research Support Systems 
+
+**Title (ZH)**: 从假设到发表：AI驱动的研究支持系统综述 
+
+**Authors**: Zekun Zhou, Xiaocheng Feng, Lei Huang, Xiachong Feng, Ziyun Song, Ruihan Chen, Liang Zhao, Weitao Ma, Yuxuan Gu, Baoxin Wang, Dayong Wu, Guoping Hu, Ting Liu, Bing Qin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01424)  
+
+**Abstract**: Research is a fundamental process driving the advancement of human civilization, yet it demands substantial time and effort from researchers. In recent years, the rapid development of artificial intelligence (AI) technologies has inspired researchers to explore how AI can accelerate and enhance research. To monitor relevant advancements, this paper presents a systematic review of the progress in this domain. Specifically, we organize the relevant studies into three main categories: hypothesis formulation, hypothesis validation, and manuscript publication. Hypothesis formulation involves knowledge synthesis and hypothesis generation. Hypothesis validation includes the verification of scientific claims, theorem proving, and experiment validation. Manuscript publication encompasses manuscript writing and the peer review process. Furthermore, we identify and discuss the current challenges faced in these areas, as well as potential future directions for research. Finally, we also offer a comprehensive overview of existing benchmarks and tools across various domains that support the integration of AI into the research process. We hope this paper serves as an introduction for beginners and fosters future research. Resources have been made publicly available at this https URL. 
+
+**Abstract (ZH)**: 人工智能技术加速与增强研究的进展综述：从假设形成到手稿发表面临的挑战与未来方向及现有基准与工具概述 
+
+---
+# Building Interval Type-2 Fuzzy Membership Function: A Deck of Cards based Co-constructive Approach 
+
+**Title (ZH)**: 基于纸牌共构的方法构建区间型2模糊隶属函数 
+
+**Authors**: Bapi Dutta, Diego García-Zamora, José Rui Figueira, Luis Martínez  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01413)  
+
+**Abstract**: Since its inception, Fuzzy Set has been widely used to handle uncertainty and imprecision in decision-making. However, conventional fuzzy sets, often referred to as type-1 fuzzy sets (T1FSs) have limitations in capturing higher levels of uncertainty, particularly when decision-makers (DMs) express hesitation or ambiguity in membership degree. To address this, Interval Type-2 Fuzzy Sets (IT2FSs) have been introduced by incorporating uncertainty in membership degree allocation, which enhanced flexibility in modelling subjective judgments. Despite their advantages, existing IT2FS construction methods often lack active involvement from DMs and that limits the interpretability and effectiveness of decision models. This study proposes a socio-technical co-constructive approach for developing IT2FS models of linguistic terms by facilitating the active involvement of DMs in preference elicitation and its application in multicriteria decision-making (MCDM) problems. Our methodology is structured in two phases. The first phase involves an interactive process between the DM and the decision analyst, in which a modified version of Deck-of-Cards (DoC) method is proposed to construct T1FS membership functions on a ratio scale. We then extend this method to incorporate ambiguity in subjective judgment and that resulted in an IT2FS model that better captures uncertainty in DM's linguistic assessments. The second phase formalizes the constructed IT2FS model for application in MCDM by defining an appropriate mathematical representation of such information, aggregation rules, and an admissible ordering principle. The proposed framework enhances the reliability and effectiveness of fuzzy decision-making not only by accurately representing DM's personalized semantics of linguistic information. 
+
+**Abstract (ZH)**: 基于社会技术共构的区间型二值模糊集语言术语模型在多准则决策中的应用 
+
+---
+# Learning Conjecturing from Scratch 
+
+**Title (ZH)**: 从零学习提出猜想 
+
+**Authors**: Thibault Gauthier, Josef Urban  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01389)  
+
+**Abstract**: We develop a self-learning approach for conjecturing of induction predicates on a dataset of 16197 problems derived from the OEIS. These problems are hard for today's SMT and ATP systems because they require a combination of inductive and arithmetical reasoning.
+Starting from scratch, our approach consists of a feedback loop that iterates between (i) training a neural translator to learn the correspondence between the problems solved so far and the induction predicates useful for them, (ii) using the trained neural system to generate many new induction predicates for the problems, (iii) fast runs of the z3 prover attempting to prove the problems using the generated predicates, (iv) using heuristics such as predicate size and solution speed on the proved problems to choose the best predicates for the next iteration of training.
+The algorithm discovers on its own many interesting induction predicates, ultimately solving 5565 problems, compared to 2265 problems solved by CVC5, Vampire or Z3 in 60 seconds. 
+
+**Abstract (ZH)**: 我们开发了一种自学习方法，用于从OEIS来源的16197个问题数据集上推断归纳谓词。这些问题是今天SMT和ATP系统的难点，因为它们需要结合归纳和算术推理。
+从头开始，我们的方法包括一个反馈循环，该循环交替进行以下步骤：(i) 训练一个神经翻译器来学习迄今为止解决的问题与对它们有用的归纳谓词之间的对应关系；(ii) 使用训练好的神经系统生成许多新的归纳谓词；(iii) 快速运行z3证明器尝试使用生成的谓词证明问题；(iv) 使用诸如谓词大小和证明速度等启发式方法，在证明的问题上选择最佳谓词以进行下一训练迭代。
+该算法自行发现了许多有趣的归纳谓词，最终解决了5565个问题，而CVC5、Vampire或Z3在60秒内只解决了2265个问题。 
+
+---
+# OptMetaOpenFOAM: Large Language Model Driven Chain of Thought for Sensitivity Analysis and Parameter Optimization based on CFD 
+
+**Title (ZH)**: OptMetaOpenFOAM：基于CFD的大型语言模型驱动的灵敏度分析与参数优化思维链方法 
+
+**Authors**: Yuxuan Chen, Long Zhang, Xu Zhu, Hua Zhou, Zhuyin Ren  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01273)  
+
+**Abstract**: Merging natural language interfaces with computational fluid dynamics (CFD) workflows presents transformative opportunities for both industry and research. In this study, we introduce OptMetaOpenFOAM - a novel framework that bridges MetaOpenFOAM with external analysis and optimization tool libraries through a large language model (LLM)-driven chain-of-thought (COT) methodology. By automating complex CFD tasks via natural language inputs, the framework empowers non-expert users to perform sensitivity analyses and parameter optimizations with markedly improved efficiency. The test dataset comprises 11 distinct CFD analysis or optimization tasks, including a baseline simulation task derived from an OpenFOAM tutorial covering fluid dynamics, combustion, and heat transfer. Results confirm that OptMetaOpenFOAM can accurately interpret user requirements expressed in natural language and effectively invoke external tool libraries alongside MetaOpenFOAM to complete the tasks. Furthermore, validation on a non-OpenFOAM tutorial case - namely, a hydrogen combustion chamber - demonstrates that a mere 200-character natural language input can trigger a sequence of simulation, postprocessing, analysis, and optimization tasks spanning over 2,000 lines of code. These findings underscore the transformative potential of LLM-driven COT methodologies in linking external tool for advanced analysis and optimization, positioning OptMetaOpenFOAM as an effective tool that streamlines CFD simulations and enhances their convenience and efficiency for both industrial and research applications. Code is available at this https URL. 
+
+**Abstract (ZH)**: 将自然语言接口与计算流体动力学（CFD）工作流融合为工业和研究带来了变革性的机会。本研究介绍了OptMetaOpenFOAM ——一种通过大型语言模型（LLM）驱动的思维链（COT）方法将MetaOpenFOAM与外部分析和优化工具库连接起来的新型框架。通过自然语言输入自动化复杂CFD任务，该框架使非专家用户能够进行敏感性分析和参数优化，显著提高效率。测试数据集包含11项不同的CFD分析或优化任务，包括一个源自OpenFOAM教程的基本模拟任务，涵盖流体力学、燃烧和传热。结果证实，OptMetaOpenFOAM能够准确解释用户用自然语言表达的需求，并有效调用与MetaOpenFOAM协同工作的外部工具库来完成任务。此外，对一个非OpenFOAM教程案例——氢燃烧室——的验证表明，仅200字符的自然语言输入可以触发超过2000行代码的模拟、后处理、分析和优化任务序列。这些发现强调了LLM驱动的COT方法在连接外部工具以进行高级分析和优化方面的变革潜力，将OptMetaOpenFOAM定位为一种有效工具，可简化CFD模拟并提高其在工业和研究应用中的便利性和效率。代码可在以下链接获取。 
+
+---
+# Prognostics and Health Management of Wafer Chemical-Mechanical Polishing System using Autoencoder 
+
+**Title (ZH)**: 基于自动编码器的晶圆化学机械抛光系统预测性维护与健康管理 
+
+**Authors**: Kart-Leong Lim, Rahul Dutta  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01176)  
+
+**Abstract**: The Prognostics and Health Management Data Challenge (PHM) 2016 tracks the health state of components of a semiconductor wafer polishing process. The ultimate goal is to develop an ability to predict the measurement on the wafer surface wear through monitoring the components health state. This translates to cost saving in large scale production. The PHM dataset contains many time series measurements not utilized by traditional physics based approach. On the other hand task, applying a data driven approach such as deep learning to the PHM dataset is non-trivial. The main issue with supervised deep learning is that class label is not available to the PHM dataset. Second, the feature space trained by an unsupervised deep learner is not specifically targeted at the predictive ability or regression. In this work, we propose using the autoencoder based clustering whereby the feature space trained is found to be more suitable for performing regression. This is due to having a more compact distribution of samples respective to their nearest cluster means. We justify our claims by comparing the performance of our proposed method on the PHM dataset with several baselines such as the autoencoder as well as state-of-the-art approaches. 
+
+**Abstract (ZH)**: 2016年 prognostics 和健康管理系统数据挑战（PHM）中的组件状态跟踪：基于自编码器的聚类在半导体晶圆抛光过程中的表面磨损预测 
+
+---
+# Bandit-Based Prompt Design Strategy Selection Improves Prompt Optimizers 
+
+**Title (ZH)**: 基于多臂老虎机的提示设计策略选择改进提示优化器 
+
+**Authors**: Rin Ashizawa, Yoichi Hirose, Nozomu Yoshinari, Kento Uchida, Shinichi Shirakawa  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01163)  
+
+**Abstract**: Prompt optimization aims to search for effective prompts that enhance the performance of large language models (LLMs). Although existing prompt optimization methods have discovered effective prompts, they often differ from sophisticated prompts carefully designed by human experts. Prompt design strategies, representing best practices for improving prompt performance, can be key to improving prompt optimization. Recently, a method termed the Autonomous Prompt Engineering Toolbox (APET) has incorporated various prompt design strategies into the prompt optimization process. In APET, the LLM is needed to implicitly select and apply the appropriate strategies because prompt design strategies can have negative effects. This implicit selection may be suboptimal due to the limited optimization capabilities of LLMs. This paper introduces Optimizing Prompts with sTrategy Selection (OPTS), which implements explicit selection mechanisms for prompt design. We propose three mechanisms, including a Thompson sampling-based approach, and integrate them into EvoPrompt, a well-known prompt optimizer. Experiments optimizing prompts for two LLMs, Llama-3-8B-Instruct and GPT-4o mini, were conducted using BIG-Bench Hard. Our results show that the selection of prompt design strategies improves the performance of EvoPrompt, and the Thompson sampling-based mechanism achieves the best overall results. Our experimental code is provided at this https URL . 
+
+**Abstract (ZH)**: 优化提示策略选择以提升大型语言模型性能 
+
+---
+# Can Large Language Models Help Experimental Design for Causal Discovery? 
+
+**Title (ZH)**: 大语言模型能否辅助实验设计以进行因果发现？ 
+
+**Authors**: Junyi Li, Yongqiang Chen, Chenxi Liu, Qianyi Cai, Tongliang Liu, Bo Han, Kun Zhang, Hui Xiong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01139)  
+
+**Abstract**: Designing proper experiments and selecting optimal intervention targets is a longstanding problem in scientific or causal discovery. Identifying the underlying causal structure from observational data alone is inherently this http URL interventional data, on the other hand, is crucial to causal discovery, yet it is usually expensive and time-consuming to gather sufficient interventional data to facilitate causal this http URL approaches commonly utilize uncertainty or gradient signals to determine the intervention targets. However, numerical-based approaches may yield suboptimal results due to the inaccurate estimation of the guiding signals at the beginning when with limited interventional data. In this work, we investigate a different approach, whether we can leverage Large Language Models (LLMs) to assist with the intervention targeting in causal discovery by making use of the rich world knowledge about the experimental design in this http URL, we present \oursfull (\ours) -- a robust framework that effectively incorporates LLMs to augment existing numerical approaches for the intervention targeting in causal discovery. Across $4$ realistic benchmark scales, \ours demonstrates significant improvements and robustness over existing methods and even surpasses humans, which demonstrates the usefulness of LLMs in assisting with experimental design for scientific discovery. 
+
+**Abstract (ZH)**: 设计合适的实验并选择最优的干预目标是科学发现或因果发现中的长期问题。仅从观察数据中识别潜在的因果结构本身具有挑战性，而干预数据对于因果发现至关重要，但由于收集足够的干预数据通常代价高昂且耗时，因此常见的方法通常利用不确定性或梯度信号来确定干预目标。然而，基于数值的方法可能会因为有限的干预数据及初始时引导信号的不准确估计而产生次优的结果。在本工作中，我们探讨了一种不同的方法，即我们是否可以利用大语言模型（LLMs）通过利用丰富的实验设计世界知识来协助因果发现中的干预目标选择。为此，我们提出了\oursfull（\ours）——一个稳健的框架，该框架有效结合了LLMs以增强现有的数值方法在因果发现中的干预目标选择。在4个现实基准规模中，\ours 在与现有方法相比时表现出显著的改进和鲁棒性，甚至超过了人类，这表明了LLMs在协助科学发现中的实验设计方面的有效性。 
+
+---
+# Constrained multi-fidelity Bayesian optimization with automatic stop condition 
+
+**Title (ZH)**: 约束多保真度贝叶斯优化及其自动停止条件 
+
+**Authors**: Zahra Zanjani Foumani, Ramin Bostanabad  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01126)  
+
+**Abstract**: Bayesian optimization (BO) is increasingly employed in critical applications to find the optimal design with minimal cost. While BO is known for its sample efficiency, relying solely on costly high-fidelity data can still result in high costs. This is especially the case in constrained search spaces where BO must not only optimize but also ensure feasibility. A related issue in the BO literature is the lack of a systematic stopping criterion. To solve these challenges, we develop a constrained cost-aware multi-fidelity BO (CMFBO) framework whose goal is to minimize overall sampling costs by utilizing inexpensive low-fidelity sources while ensuring feasibility. In our case, the constraints can change across the data sources and may be even black-box functions. We also introduce a systematic stopping criterion that addresses the long-lasting issue associated with BO's convergence assessment. Our framework is publicly available on GitHub through the GP+ Python package and herein we validate it's efficacy on multiple benchmark problems. 
+
+**Abstract (ZH)**: 代价感知的约束多保真度贝叶斯优化框架 
+
+---
+# Hybrid Metaheuristic Vehicle Routing Problem for Security Dispatch Operations 
+
+**Title (ZH)**: 混合元启发式车辆路由问题在安全调度运营中的应用 
+
+**Authors**: Nguyen Gia Hien Vu, Yifan Tang, Rey Lim, G. Gary Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01121)  
+
+**Abstract**: This paper investigates the optimization of the Vehicle Routing Problem for Security Dispatch (VRPSD). VRPSD focuses on security and patrolling applications which involve challenging constraints including precise timing and strict time windows. We propose three algorithms based on different metaheuristics, which are Adaptive Large Neighborhood Search (ALNS), Tabu Search (TS), and Threshold Accepting (TA). The first algorithm combines single-phase ALNS with TA, the second employs a multiphase ALNS with TA, and the third integrates multiphase ALNS, TS, and TA. Experiments are conducted on an instance comprising 251 customer requests. The results demonstrate that the third algorithm, the hybrid multiphase ALNS-TS-TA algorithm, delivers the best performance. This approach simultaneously leverages the large-area search capabilities of ALNS for exploration and effectively escapes local optima when the multiphase ALNS is coupled with TS and TA. Furthermore, in our experiments, the hybrid multiphase ALNS-TS-TA algorithm is the only one that shows potential for improving results with increased computation time across all attempts. 
+
+**Abstract (ZH)**: 本文研究了保安调度车辆路线问题（VRPSD）的优化问题。VRPSD涉及包括精确时间要求和严格时间窗在内的挑战性约束条件。我们提出三种基于不同元启发式的算法，分别是自适应大邻域搜索（ALNS）、禁忌搜索（TS）和阈值接受法（TA）。第一个算法结合了一阶段ALNS与TA，第二个算法采用多阶段ALNS与TA，第三个算法则整合了多阶段ALNS、TS和TA。实验在包含251个客户请求的实例上进行。结果显示，第三种算法，即混合多阶段ALNS-TS-TA算法，性能最优。该方法利用ALNS的大范围搜索能力进行探索，并通过将多阶段ALNS与TS和TA相结合有效地跳出局部最优。此外，在我们的实验中，只有混合多阶段ALNS-TS-TA算法在所有尝试中随着计算时间增加显示出改进结果的潜力。 
+
+---
+# FAIR: Facilitating Artificial Intelligence Resilience in Manufacturing Industrial Internet 
+
+**Title (ZH)**: FAIR: 促进制造业工业互联网中的人工智能韧性 
+
+**Authors**: Yingyan Zeng, Ismini Lourentzou, Xinwei Deng, Ran Jin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01086)  
+
+**Abstract**: Artificial intelligence (AI) systems have been increasingly adopted in the Manufacturing Industrial Internet (MII). Investigating and enabling the AI resilience is very important to alleviate profound impact of AI system failures in manufacturing and Industrial Internet of Things (IIoT) operations, leading to critical decision making. However, there is a wide knowledge gap in defining the resilience of AI systems and analyzing potential root causes and corresponding mitigation strategies. In this work, we propose a novel framework for investigating the resilience of AI performance over time under hazard factors in data quality, AI pipelines, and the cyber-physical layer. The proposed method can facilitate effective diagnosis and mitigation strategies to recover AI performance based on a multimodal multi-head self latent attention model. The merits of the proposed method are elaborated using an MII testbed of connected Aerosol Jet Printing (AJP) machines, fog nodes, and Cloud with inference tasks via AI pipelines. 
+
+**Abstract (ZH)**: 人工智能系统在制造业工业互联网（MII）中的应用日益增多。研究和增强AI系统的韧性对于减轻AI系统故障对制造业和工业物联网（IIoT）运营的深刻影响至关重要，特别是在关键决策过程中。然而，有关AI系统韧性定义的知识和潜在根本原因及相应的缓解策略分析存在广泛的知识空白。本文提出了一种新颖的框架，用于在数据质量、AI管道和网络物理层的威胁因素下，研究AI性能随时间的韧性。所提出的方法可以基于多模态多头自潜注意模型促进有效诊断和恢复AI性能的策略。利用连接的 aerosol jet printing（AJP）机器、雾节点和云的MII测试床，并通过AI管道执行推理任务，详细阐述了所提出方法的优势。 
+
+---
+# Multi-Agent Reinforcement Learning with Long-Term Performance Objectives for Service Workforce Optimization 
+
+**Title (ZH)**: 面向服务劳动力优化的长期性能目标多智能体强化学习 
+
+**Authors**: Kareem Eissa, Rayal Prasad, Sarith Mohan, Ankur Kapoor, Dorin Comaniciu, Vivek Singh  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01069)  
+
+**Abstract**: Workforce optimization plays a crucial role in efficient organizational operations where decision-making may span several different administrative and time scales. For instance, dispatching personnel to immediate service requests while managing talent acquisition with various expertise sets up a highly dynamic optimization problem. Existing work focuses on specific sub-problems such as resource allocation and facility location, which are solved with heuristics like local-search and, more recently, deep reinforcement learning. However, these may not accurately represent real-world scenarios where such sub-problems are not fully independent. Our aim is to fill this gap by creating a simulator that models a unified workforce optimization problem. Specifically, we designed a modular simulator to support the development of reinforcement learning methods for integrated workforce optimization problems. We focus on three interdependent aspects: personnel dispatch, workforce management, and personnel positioning. The simulator provides configurable parameterizations to help explore dynamic scenarios with varying levels of stochasticity and non-stationarity. To facilitate benchmarking and ablation studies, we also include heuristic and RL baselines for the above mentioned aspects. 
+
+**Abstract (ZH)**: 劳动力优化在高效组织运行中扮演着 crucial 角色，决策可能涉及多个不同层级的管理和时间尺度。例如，将人员调度到即时服务请求的同时管理具有各种专业技能的人才招聘，构成了一个高度动态的优化问题。现有研究集中在资源分配和设施位置等具体子问题上，这些问题通过局部搜索等启发式方法或近期的深度强化学习进行解决。然而，这些方法可能无法准确反映现实世界的场景，其中这些子问题不是完全独立的。我们的目的是通过创建一个模拟器来填补这一空白，以建模统一的劳动力优化问题。具体来说，我们设计了一个模块化模拟器，支持集成劳动力优化问题的强化学习方法的发展。我们重点关注三个方面：人员调度、劳动力管理以及人员定位。模拟器提供可配置的参数化设置，以帮助探索不同程度随机性和非平稳性的动态场景。为了便于基准测试和消除影响研究，我们还为上述方面包括了启发式和RL baseline。 
+
+---
+# An Exact Solver for Satisfiability Modulo Counting with Probabilistic Circuits 
+
+**Title (ZH)**: 计数概率电路中的满足性精确求解器 
+
+**Authors**: Jinzhao Li, Nan Jiang, Yexiang Xue  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01009)  
+
+**Abstract**: Satisfiability Modulo Counting (SMC) is a recently proposed general language to reason about problems integrating statistical and symbolic artificial intelligence. An SMC formula is an extended SAT formula in which the truth values of a few Boolean variables are determined by probabilistic inference. Existing approximate solvers optimize surrogate objectives, which lack formal guarantees. Current exact solvers directly integrate SAT solvers and probabilistic inference solvers resulting in slow performance because of many back-and-forth invocations of both solvers. We propose KOCO-SMC, an integrated exact SMC solver that efficiently tracks lower and upper bounds in the probabilistic inference process. It enhances computational efficiency by enabling early estimation of probabilistic inference using only partial variable assignments, whereas existing methods require full variable assignments. In the experiment, we compare KOCO-SMC with currently available approximate and exact SMC solvers on large-scale datasets and real-world applications. Our approach delivers high-quality solutions with high efficiency. 
+
+**Abstract (ZH)**: 计数模合 satisfiability modulo counting (SMC) 是一种 recently 提出的一般性语言，用于处理结合统计和符号人工智能的问题。一个 SMC 公式是一个扩展的 SAT 公式，其中少数布尔变量的真值由概率推理决定。现有的近似求解器优化代理目标，缺乏正式保证。当前的精确求解器直接将 SAT 求解器和概率推理求解器相结合，导致由于两个求解器频繁调用而性能缓慢。我们提出了一种名为 KOCO-SMC 的集成精确 SMC 求解器，它可以高效地在概率推理过程中跟踪上下界。通过仅使用部分变量赋值来提前估计概率推理，它可以增强计算效率。现有的方法需要完整的变量赋值。在实验中，我们将 KOCO-SMC 与当前可用的近似和精确 SMC 求解器在大规模数据集和实际应用上进行比较。我们的方法在高效性方面提供了高质量的解决方案。 
+
+---
+# Evidence of conceptual mastery in the application of rules by Large Language Models 
+
+**Title (ZH)**: 大型语言模型在规则应用中概念掌握的证据 
+
+**Authors**: José Luiz Nunes, Guilherme FCF Almeida, Brian Flanagan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00992)  
+
+**Abstract**: In this paper we leverage psychological methods to investigate LLMs' conceptual mastery in applying rules. We introduce a novel procedure to match the diversity of thought generated by LLMs to that observed in a human sample. We then conducted two experiments comparing rule-based decision-making in humans and LLMs. Study 1 found that all investigated LLMs replicated human patterns regardless of whether they are prompted with scenarios created before or after their training cut-off. Moreover, we found unanticipated differences between the two sets of scenarios among humans. Surprisingly, even these differences were replicated in LLM responses. Study 2 turned to a contextual feature of human rule application: under forced time delay, human samples rely more heavily on a rule's text than on other considerations such as a rule's purpose.. Our results revealed that some models (Gemini Pro and Claude 3) responded in a human-like manner to a prompt describing either forced delay or time pressure, while others (GPT-4o and Llama 3.2 90b) did not. We argue that the evidence gathered suggests that LLMs have mastery over the concept of rule, with implications for both legal decision making and philosophical inquiry. 
+
+**Abstract (ZH)**: 本文利用心理学方法探讨大语言模型在应用规则方面的概念掌握程度。我们引入了一种新的程序，将大语言模型生成的多元想法与人类样本中的观察多样性进行匹配。随后，我们进行了两项实验，比较了人类和大语言模型基于规则的决策制定。研究1发现，所有研究的大语言模型在处理训练截止前后的场景描述时，均再现了人类的模式。此外，我们还在人类两组场景中发现了未预期的差异，这些差异甚至在大语言模型的响应中也得到了再现。研究2关注了人类应用规则的上下文特征：在被迫的时间延迟条件下，人类样本更依赖规则的文字内容，而非其他考虑因素如规则的目的。我们的结果表明，一些模型（Gemini Pro和Claude 3）对描述被迫延迟或时间压力的提示响应得像人类一样，而其他模型（GPT-4o和Llama 3.2 90b）则不然。我们认为收集的证据表明大语言模型对规则的概念有掌握，这对法律决策和哲学探究均有重要意义。 
+
+---
+# NeSyC: A Neuro-symbolic Continual Learner For Complex Embodied Tasks In Open Domains 
+
+**Title (ZH)**: NeSyC：面向开放域复杂具身任务的神经符号连续学习者 
+
+**Authors**: Wonje Choi, Jinwoo Park, Sanghyun Ahn, Daehee Lee, Honguk Woo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00870)  
+
+**Abstract**: We explore neuro-symbolic approaches to generalize actionable knowledge, enabling embodied agents to tackle complex tasks more effectively in open-domain environments. A key challenge for embodied agents is the generalization of knowledge across diverse environments and situations, as limited experiences often confine them to their prior knowledge. To address this issue, we introduce a novel framework, NeSyC, a neuro-symbolic continual learner that emulates the hypothetico-deductive model by continually formulating and validating knowledge from limited experiences through the combined use of Large Language Models (LLMs) and symbolic tools. Specifically, we devise a contrastive generality improvement scheme within NeSyC, which iteratively generates hypotheses using LLMs and conducts contrastive validation via symbolic tools. This scheme reinforces the justification for admissible actions while minimizing the inference of inadmissible ones. Additionally, we incorporate a memory-based monitoring scheme that efficiently detects action errors and triggers the knowledge refinement process across domains. Experiments conducted on diverse embodied task benchmarks-including ALFWorld, VirtualHome, Minecraft, RLBench, and a real-world robotic scenario-demonstrate that NeSyC is highly effective in solving complex embodied tasks across a range of open-domain environments. 
+
+**Abstract (ZH)**: 我们探索神经符号方法以推广可执行的知识，使具身代理能够在开放域环境中更有效地应对复杂任务。NeSyC：一种神经符号连续学习框架通过结合大规模语言模型和符号工具来模拟假设演绎模型，不断从有限经验中形成和验证知识。 
+
+---
+# A Law Reasoning Benchmark for LLM with Tree-Organized Structures including Factum Probandum, Evidence and Experiences 
+
+**Title (ZH)**: 基于树组织结构的证据推理基准测试：包括事证、证据和经验的法律推理 
+
+**Authors**: Jiaxin Shen, Jinan Xu, Huiqi Hu, Luyi Lin, Fei Zheng, Guoyang Ma, Fandong Meng, Jie Zhou, Wenjuan Han  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00841)  
+
+**Abstract**: While progress has been made in legal applications, law reasoning, crucial for fair adjudication, remains unexplored. We propose a transparent law reasoning schema enriched with hierarchical factum probandum, evidence, and implicit experience, enabling public scrutiny and preventing bias. Inspired by this schema, we introduce the challenging task, which takes a textual case description and outputs a hierarchical structure justifying the final decision. We also create the first crowd-sourced dataset for this task, enabling comprehensive evaluation. Simultaneously, we propose an agent framework that employs a comprehensive suite of legal analysis tools to address the challenge task. This benchmark paves the way for transparent and accountable AI-assisted law reasoning in the ``Intelligent Court''. 
+
+**Abstract (ZH)**: 虽然在法律应用方面取得了一定进展，但对于公平判决至关重要的法律推理仍有待探索。我们提出了一种透明的法律推理框架，其中包含层次化的事实主张、证据和隐含经验，以供公众审查并防止偏见。受此框架启发，我们引入了一个具有挑战性的任务，该任务接受文本案件描述，并输出一个支持最终判决的层次结构。我们还为此任务创建了首个众包数据集，以实现全面评估。同时，我们提出了一种代理框架，利用全面的法律分析工具来应对这一挑战任务。该基准为“智能法庭”中的透明和问责制AI辅助法律推理铺平了道路。 
+
+---
+# Rethinking Light Decoder-based Solvers for Vehicle Routing Problems 
+
+**Title (ZH)**: 基于光线解码器的方法再思考：车辆路径问题求解器的设计 
+
+**Authors**: Ziwei Huang, Jianan Zhou, Zhiguang Cao, Yixin Xu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00753)  
+
+**Abstract**: Light decoder-based solvers have gained popularity for solving vehicle routing problems (VRPs) due to their efficiency and ease of integration with reinforcement learning algorithms. However, they often struggle with generalization to larger problem instances or different VRP variants. This paper revisits light decoder-based approaches, analyzing the implications of their reliance on static embeddings and the inherent challenges that arise. Specifically, we demonstrate that in the light decoder paradigm, the encoder is implicitly tasked with capturing information for all potential decision scenarios during solution construction within a single set of embeddings, resulting in high information density. Furthermore, our empirical analysis reveals that the overly simplistic decoder struggles to effectively utilize this dense information, particularly as task complexity increases, which limits generalization to out-of-distribution (OOD) settings. Building on these insights, we show that enhancing the decoder capacity, with a simple addition of identity mapping and a feed-forward layer, can considerably alleviate the generalization issue. Experimentally, our method significantly enhances the OOD generalization of light decoder-based approaches on large-scale instances and complex VRP variants, narrowing the gap with the heavy decoder paradigm. Our code is available at: this https URL. 
+
+**Abstract (ZH)**: 基于轻量解码器的方法由于其效率和与强化学习算法的集成简便性，在解决车辆路线问题（VRPs）方面受到了广泛关注。然而，它们在处理更大规模的问题实例或不同类型的VRP时往往表现出较差的泛化能力。本文重新审视了基于轻量解码器的方法，分析了它们依赖静态嵌入所带来的影响及其固有的挑战。具体而言，我们展示了在轻量解码器框架下，编码器在构建解决方案过程中隐式地需要在一个嵌入集中捕获所有潜在决策场景的信息，导致了高信息密度。此外，我们的实证分析表明，过于简化的解码器难以有效地利用这种密集信息，尤其是在任务复杂度增加时，这限制了它们在离分布（OOD）设置中的泛化能力。基于这些见解，我们展示了通过简单的添加身份映射和前馈层来增强解码器能力，可以显著缓解泛化问题。实验结果显示，我们的方法显著改善了基于轻量解码器的方法在大规模实例和复杂VRP变体中的离分布泛化能力，缩小了与重量解码器方法的差距。我们的代码可在以下链接获取：this https URL。 
+
+---
+# Modeling Arbitrarily Applicable Relational Responding with the Non-Axiomatic Reasoning System: A Machine Psychology Approach 
+
+**Title (ZH)**: 基于非公理化推理系统的情感泛化响应建模：一种机器心理学方法 
+
+**Authors**: Robert Johansson  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00611)  
+
+**Abstract**: Arbitrarily Applicable Relational Responding (AARR) is a cornerstone of human language and reasoning, referring to the learned ability to relate symbols in flexible, context-dependent ways. In this paper, we present a novel theoretical approach for modeling AARR within an artificial intelligence framework using the Non-Axiomatic Reasoning System (NARS). NARS is an adaptive reasoning system designed for learning under uncertainty. By integrating principles from Relational Frame Theory - the behavioral psychology account of AARR - with the reasoning mechanisms of NARS, we conceptually demonstrate how key properties of AARR (mutual entailment, combinatorial entailment, and transformation of stimulus functions) can emerge from the inference rules and memory structures of NARS. Two theoretical experiments illustrate this approach: one modeling stimulus equivalence and transfer of function, and another modeling complex relational networks involving opposition frames. In both cases, the system logically demonstrates the derivation of untrained relations and context-sensitive transformations of stimulus significance, mirroring established human cognitive phenomena. These results suggest that AARR - long considered uniquely human - can be conceptually captured by suitably designed AI systems, highlighting the value of integrating behavioral science insights into artificial general intelligence (AGI) research. 
+
+**Abstract (ZH)**: 任意适用的关系反应(AARR)是人类语言和推理的基石，指的是以灵活且依赖上下文的方式关联符号的能力。本文提出了一种新的理论方法，利用非公理推理系统(NARS)在人工智能框架中建模AARR。NARS是一种适应性推理系统，旨在在不确定性条件下进行学习。通过将关系框架理论——对AARR的行为心理学解释——的原则与NARS的推理机制相结合，我们概念性地展示了AARR的关键属性（相互蕴含、组合蕴含和刺激功能的转换）如何从NARS的推理法则和记忆结构中出现。两个理论实验说明了这一方法：一个模型刺激等价性和功能的转移，另一个模型涉及对立框架的复杂关系网络。在两种情况下，系统逻辑地展示了未训练关系及其上下文敏感的刺激意义转换的推导，这与已确立的人类认知现象相呼应。这些结果表明，AARR——长期被认为是人类独有的——可以通过适当设计的AI系统概念性地捕获，强调将行为科学洞察整合到通用人工智能(AGI)研究中的价值。 
+
+---
+# Instructor-Worker Large Language Model System for Policy Recommendation: a Case Study on Air Quality Analysis of the January 2025 Los Angeles Wildfires 
+
+**Title (ZH)**: 面向政策推荐的教师-工人大型语言模型系统：以2025年1月洛杉矶野火空气质量分析案例如谈 
+
+**Authors**: Kyle Gao, Dening Lu, Liangzhi Li, Nan Chen, Hongjie He, Linlin Xu, Jonathan Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00566)  
+
+**Abstract**: The Los Angeles wildfires of January 2025 caused more than 250 billion dollars in damage and lasted for nearly an entire month before containment. Following our previous work, the Digital Twin Building, we modify and leverage the multi-agent large language model framework as well as the cloud-mapping integration to study the air quality during the Los Angeles wildfires. Recent advances in large language models have allowed for out-of-the-box automated large-scale data analysis. We use a multi-agent large language system comprised of an Instructor agent and Worker agents. Upon receiving the users' instructions, the Instructor agent retrieves the data from the cloud platform and produces instruction prompts to the Worker agents. The Worker agents then analyze the data and provide summaries. The summaries are finally input back into the Instructor agent, which then provides the final data analysis. We test this system's capability for data-based policy recommendation by assessing our Instructor-Worker LLM system's health recommendations based on air quality during the Los Angeles wildfires. 
+
+**Abstract (ZH)**: 2025年1月洛杉矶野火造成的超过2500亿美元损失并持续近一个月才得到控制。在我们之前工作的基础上，我们修改并利用多代理大型语言模型框架以及云地图集成来研究洛杉矶野火期间的空气质量。大型语言模型的最新进展使自动化大规模数据分析成为可能。我们使用由Instructor代理和Worker代理组成的多代理大型语言系统。在收到用户指令后，Instructor代理从云平台检索数据并生成指令提示给Worker代理。Worker代理随后分析数据并提供总结。总结最终输入回到Instructor代理，后者提供最终的数据分析。我们通过评估Instructor-Worker LLM系统在洛杉矶野火期间空气质量基础上的健康建议来测试该系统基于数据的政策建议能力。 
+
+---
+# Human-AI Collaboration: Trade-offs Between Performance and Preferences 
+
+**Title (ZH)**: 人类与人工智能协作：性能与偏好之间的权衡 
+
+**Authors**: Lukas William Mayer, Sheer Karny, Jackie Ayoub, Miao Song, Danyang Tian, Ehsan Moradi-Pari, Mark Steyvers  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00248)  
+
+**Abstract**: Despite the growing interest in collaborative AI, designing systems that seamlessly integrate human input remains a major challenge. In this study, we developed a task to systematically examine human preferences for collaborative agents. We created and evaluated five collaborative AI agents with strategies that differ in the manner and degree they adapt to human actions. Participants interacted with a subset of these agents, evaluated their perceived traits, and selected their preferred agent. We used a Bayesian model to understand how agents' strategies influence the Human-AI team performance, AI's perceived traits, and the factors shaping human-preferences in pairwise agent comparisons. Our results show that agents who are more considerate of human actions are preferred over purely performance-maximizing agents. Moreover, we show that such human-centric design can improve the likability of AI collaborators without reducing performance. We find evidence for inequality-aversion effects being a driver of human choices, suggesting that people prefer collaborative agents which allow them to meaningfully contribute to the team. Taken together, these findings demonstrate how collaboration with AI can benefit from development efforts which include both subjective and objective metrics. 
+
+**Abstract (ZH)**: 尽管对协作AI的兴趣日益增长，设计能够无缝整合人类输入的系统仍是一项重大挑战。本研究开发了一项任务，系统性地探索人类对协作代理的偏好。我们创建并评估了五种不同策略的协作AI代理，这些策略在适应人类行动的方式和程度上有所不同。参与者与这些代理中的部分进行了互动，评估了它们的感知特征，并选择了他们偏好的代理。我们使用贝叶斯模型来了解代理策略对人类-AI团队效能、AI的感知特征以及在两两代理比较中塑造人类偏好的因素的影响。研究结果表明，更考虑人类行动的代理比纯粹以性能最大化为目标的代理更受欢迎。此外，我们展示了以人类为中心的设计可以提高AI合作者的可接受性而不降低性能。我们发现了不平等厌恶效应可能是人类选择的驱动力，表明人们更偏好能够让他们在团队中做出有意义贡献的协作代理。综上所述，这些发现展示了在包括主观和客观指标的开发努力下，与AI的合作有望受益。 
+
+---
+# Agentic AI Needs a Systems Theory 
+
+**Title (ZH)**: 代理型AI需要系统理论 
+
+**Authors**: Erik Miehling, Karthikeyan Natesan Ramamurthy, Kush R. Varshney, Matthew Riemer, Djallel Bouneffouf, John T. Richards, Amit Dhurandhar, Elizabeth M. Daly, Michael Hind, Prasanna Sattigeri, Dennis Wei, Ambrish Rawat, Jasmina Gajcin, Werner Geyer  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00237)  
+
+**Abstract**: The endowment of AI with reasoning capabilities and some degree of agency is widely viewed as a path toward more capable and generalizable systems. Our position is that the current development of agentic AI requires a more holistic, systems-theoretic perspective in order to fully understand their capabilities and mitigate any emergent risks. The primary motivation for our position is that AI development is currently overly focused on individual model capabilities, often ignoring broader emergent behavior, leading to a significant underestimation in the true capabilities and associated risks of agentic AI. We describe some fundamental mechanisms by which advanced capabilities can emerge from (comparably simpler) agents simply due to their interaction with the environment and other agents. Informed by an extensive amount of existing literature from various fields, we outline mechanisms for enhanced agent cognition, emergent causal reasoning ability, and metacognitive awareness. We conclude by presenting some key open challenges and guidance for the development of agentic AI. We emphasize that a systems-level perspective is essential for better understanding, and purposefully shaping, agentic AI systems. 
+
+**Abstract (ZH)**: 赋予AI推理能力及一定程度的自主性被视为通往更强泛化能力系统的途径。我们认为，当前的自主AI发展需要采用更为整体的系统理论视角，以便全面理解其能力并缓解任何 emergent 风险。我们立场的主要动机是，当前的AI开发过于关注个体模型的能力，往往忽视了更广泛的 emergent 行为，导致对自主AI的真实能力和相关风险存在显著低估。我们描述了一些基本机制，说明先进的能力如何仅仅由于代理与环境及其他代理的交互而涌现（即使这些代理本身相对较简单）。基于大量来自不同领域的现有文献，我们概述了增强代理认知、涌现因果推理能力和元认知意识的机制。最后，我们提出了自主AI开发中一些关键的开放挑战和指导原则，并强调系统层面的视角对于更好地理解和有意塑造自主AI系统至关重要。 
+
+---
+# Jailbreaking Safeguarded Text-to-Image Models via Large Language Models 
+
+**Title (ZH)**: 通过大语言模型保障文本到图像模型的安全破解 
+
+**Authors**: Zhengyuan Jiang, Yuepeng Hu, Yuchen Yang, Yinzhi Cao, Neil Zhenqiang Gong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01839)  
+
+**Abstract**: Text-to-Image models may generate harmful content, such as pornographic images, particularly when unsafe prompts are submitted. To address this issue, safety filters are often added on top of text-to-image models, or the models themselves are aligned to reduce harmful outputs. However, these defenses remain vulnerable when an attacker strategically designs adversarial prompts to bypass these safety guardrails. In this work, we propose PromptTune, a method to jailbreak text-to-image models with safety guardrails using a fine-tuned large language model. Unlike other query-based jailbreak attacks that require repeated queries to the target model, our attack generates adversarial prompts efficiently after fine-tuning our AttackLLM. We evaluate our method on three datasets of unsafe prompts and against five safety guardrails. Our results demonstrate that our approach effectively bypasses safety guardrails, outperforms existing no-box attacks, and also facilitates other query-based attacks. 
+
+**Abstract (ZH)**: 基于文本到图像模型的安全防护突破方法：PromptTune 
+
+---
+# CrowdSelect: Synthetic Instruction Data Selection with Multi-LLM Wisdom 
+
+**Title (ZH)**: CrowdSelect: 多大语言模型智慧合成指令数据选择 
+
+**Authors**: Yisen Li, Lingfeng Yang, Wenxuan Shen, Pan Zhou, Yao Wan, Weiwei Lin, Dongping Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01836)  
+
+**Abstract**: Distilling advanced Large Language Models' instruction-following capabilities into smaller models using a selected subset has become a mainstream approach in model training. While existing synthetic instruction data selection strategies rely mainly on single-dimensional signals (i.e., reward scores, model perplexity), they fail to capture the complexity of instruction-following across diverse fields. Therefore, we investigate more diverse signals to capture comprehensive instruction-response pair characteristics and propose three foundational metrics that leverage Multi-LLM wisdom, informed by (1) diverse LLM responses and (2) reward model assessment. Building upon base metrics, we propose CrowdSelect, an integrated metric incorporating a clustering-based approach to maintain response diversity. Our comprehensive experiments demonstrate that our foundation metrics consistently improve performance across 4 base models on MT-bench and Arena-Hard. CrowdSelect, efficiently incorporating all metrics, achieves state-of-the-art performance in both Full and LoRA fine-tuning, showing improvements of 4.81% on Arena-Hard and 11.1% on MT-bench with Llama-3.2-3b-instruct. We hope our findings will bring valuable insights for future research in this direction. Code are available at this https URL. 
+
+**Abstract (ZH)**: 使用选定子集将先进大型语言模型的指令遵循能力精简到较小模型已成为模型训练中的主流方法。现有的合成指令数据选择策略主要依赖单一维度的信号（如奖励分数、模型困惑度），但无法捕捉不同领域指令遵循的复杂性。因此，我们研究了更加多样的信号以捕捉全面的指令-响应对特征，并提出了三种基于多LLM智慧的基本度量，这些度量受到了（1）多样化LLM响应和（2）奖励模型评估的启发。在此基础上，我们提出了CrowdSelect综合度量，该度量结合了基于聚类的方法以保持响应多样性。我们的全面实验表明，我们的基础度量在4个基模型上均能跨MT-bench和Arena-Hard任务提升性能。CrowdSelect通过高效结合所有度量，在全量和LoRA微调中均达到了最佳性能，分别在Llama-3.2-3b-instruct上取得了Arena-Hard任务4.81%和MT-bench任务11.1%的性能提升。希望我们的发现能为未来的研究提供有价值的见解。代码可在以下链接获取。 
+
+---
+# Persuade Me if You Can: A Framework for Evaluating Persuasion Effectiveness and Susceptibility Among Large Language Models 
+
+**Title (ZH)**: 说服我如果可以：评估大型语言模型说服效果与易感性框架 
+
+**Authors**: Nimet Beyza Bozdag, Shuhaib Mehri, Gokhan Tur, Dilek Hakkani-Tür  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01829)  
+
+**Abstract**: Large Language Models (LLMs) demonstrate persuasive capabilities that rival human-level persuasion. While these capabilities can be used for social good, they also present risks of potential misuse. Moreover, LLMs' susceptibility to persuasion raises concerns about alignment with ethical principles. To study these dynamics, we introduce Persuade Me If You Can (PMIYC), an automated framework for evaluating persuasion through multi-agent interactions. Here, Persuader agents engage in multi-turn conversations with the Persuadee agents, allowing us to measure LLMs' persuasive effectiveness and their susceptibility to persuasion. We conduct comprehensive evaluations across diverse LLMs, ensuring each model is assessed against others in both subjective and misinformation contexts. We validate the efficacy of our framework through human evaluations and show alignment with prior work. PMIYC offers a scalable alternative to human annotation for studying persuasion in LLMs. Through PMIYC, we find that Llama-3.3-70B and GPT-4o exhibit similar persuasive effectiveness, outperforming Claude 3 Haiku by 30%. However, GPT-4o demonstrates over 50% greater resistance to persuasion for misinformation compared to Llama-3.3-70B. These findings provide empirical insights into the persuasive dynamics of LLMs and contribute to the development of safer AI systems. 
+
+**Abstract (ZH)**: Large Language Models (LLMs)展现的人类级别的说服能力与其潜在的滥用风险并存：一个自动化的多代理交互框架（PMIYC）用于评估说服力及其抗说服性 
+
+---
+# Projecting Assumptions: The Duality Between Sparse Autoencoders and Concept Geometry 
+
+**Title (ZH)**: 投影假设：稀疏自编码器与概念几何的对偶性 
+
+**Authors**: Sai Sumedh R. Hindupur, Ekdeep Singh Lubana, Thomas Fel, Demba Ba  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01822)  
+
+**Abstract**: Sparse Autoencoders (SAEs) are widely used to interpret neural networks by identifying meaningful concepts from their representations. However, do SAEs truly uncover all concepts a model relies on, or are they inherently biased toward certain kinds of concepts? We introduce a unified framework that recasts SAEs as solutions to a bilevel optimization problem, revealing a fundamental challenge: each SAE imposes structural assumptions about how concepts are encoded in model representations, which in turn shapes what it can and cannot detect. This means different SAEs are not interchangeable -- switching architectures can expose entirely new concepts or obscure existing ones. To systematically probe this effect, we evaluate SAEs across a spectrum of settings: from controlled toy models that isolate key variables, to semi-synthetic experiments on real model activations and finally to large-scale, naturalistic datasets. Across this progression, we examine two fundamental properties that real-world concepts often exhibit: heterogeneity in intrinsic dimensionality (some concepts are inherently low-dimensional, others are not) and nonlinear separability. We show that SAEs fail to recover concepts when these properties are ignored, and we design a new SAE that explicitly incorporates both, enabling the discovery of previously hidden concepts and reinforcing our theoretical insights. Our findings challenge the idea of a universal SAE and underscores the need for architecture-specific choices in model interpretability. Overall, we argue an SAE does not just reveal concepts -- it determines what can be seen at all. 
+
+**Abstract (ZH)**: 稀疏自编码器（SAEs）广泛用于通过识别其表示中的有意义概念来解释神经网络。然而，SAEs真的能够揭示模型依赖的所有概念，还是倾向于某些类型的概念？我们引入了一个统一框架，将SAEs重新表述为两层优化问题的解，揭示了一个根本性挑战：每个SAE对概念如何编码到模型表示中的结构假设，反过来决定了它能够和不能够检测的内容。这意味着不同的SAEs并不是互换的——更改架构可能会暴露全新的概念或使现有概念变得不明显。为了系统地探查这种影响，我们在从隔离关键变量的受控玩具模型，到基于真实模型激活的半合成实验，再到大规模自然数据集等多个场合评估SAEs。在整个过程中，我们考察了现实世界概念常常具有的两种基本属性：内在维度的异构性（一些概念固然是低维的，而其他概念则不是）和非线性可分离性。我们证明当忽略这些属性时，SAEs无法恢复概念，并设计了一个新的SAE，明确地结合了这两方面，从而发现了此前隐藏的概念，并强化了我们的理论洞察。我们的研究挑战了普遍适用的SAE的概念，并强调了在模型解释中需要针对架构进行选择的必要性。总的来说，我们认为SAE不仅仅揭示概念，它还决定了能够被观察到的内容。 
+
+---
+# RSQ: Learning from Important Tokens Leads to Better Quantized LLMs 
+
+**Title (ZH)**: RSQ: 通过学习重要 token 提升量化大语言模型性能 
+
+**Authors**: Yi-Lin Sung, Prateek Yadav, Jialu Li, Jaehong Yoon, Mohit Bansal  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01820)  
+
+**Abstract**: Layer-wise quantization is a key technique for efficiently compressing large models without expensive retraining. Previous methods typically quantize the weights of each layer by "uniformly" optimizing the layer reconstruction loss across all output tokens. However, in this paper, we demonstrate that better-quantized models can be obtained by prioritizing learning from important tokens (e.g. which have large attention scores). Building on this finding, we propose RSQ (Rotate, Scale, then Quantize), which (1) applies rotations (orthogonal transformation) to the model to mitigate outliers (those with exceptionally large magnitude), (2) scales the token feature based on its importance, and (3) quantizes the model using the GPTQ framework with the second-order statistics computed by scaled tokens. To compute token importance, we explore both heuristic and dynamic strategies. Based on a thorough analysis of all approaches, we adopt attention concentration, which uses attention scores of each token as its importance, as the best approach. We demonstrate that RSQ consistently outperforms baseline methods across multiple downstream tasks and three model families: LLaMA3, Mistral, and Qwen2.5. Additionally, models quantized with RSQ achieve superior performance on long-context tasks, further highlighting its effectiveness. Lastly, RSQ demonstrates generalizability across various setups, including different model sizes, calibration datasets, bit precisions, and quantization methods. 
+
+**Abstract (ZH)**: 逐层量化是一种高效压缩大型模型的关键技术，无需昂贵的重新训练。传统方法通常通过在所有输出标记上均匀优化层重构损失来量化每一层的权重。然而，本文表明，通过优先学习重要标记（例如，具有较大注意力分数的标记）可以获得更好的量化模型。在此基础上，我们提出了RSQ（Rotate, Scale, then Quantize），它包括：（1）应用旋转（正交变换）以减轻异常值的影响（那些具有异常大 magnitude 的标记），（2）根据标记的重要性对其进行标定，（3）使用带有按标定标记计算的二阶统计量的 GPTQ 框架对模型进行量化。为了计算标记的重要性，我们探索了启发式和动态策略。根据所有方法的综合分析，我们采用基于注意力集中度的方法，将每个标记的注意力分数作为其重要性，作为最佳方法。我们证明，RSQ 在多个下游任务和三种模型家族（LLaMA3、Mistral 和 Qwen2.5）中始终优于基线方法。此外，使用 RSQ 量化后的模型在长语境任务中表现出更优的性能，进一步突显其有效性。最后，RSQ 在不同设置下展示了泛化能力，包括不同的模型大小、校准数据集、位精度和量化方法。 
+
+---
+# LLMInit: A Free Lunch from Large Language Models for Selective Initialization of Recommendation 
+
+**Title (ZH)**: LLMInit：从大型语言模型获得的免费午餐——用于推荐的选择性初始化 
+
+**Authors**: Weizhi Zhang, Liangwei Yang, Wooseong Yang, Henry Peng Zou, Yuqing Liu, Ke Xu, Sourav Medya, Philip S. Yu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01814)  
+
+**Abstract**: Collaborative filtering models, particularly graph-based approaches, have demonstrated strong performance in capturing user-item interactions for recommendation systems. However, they continue to struggle in cold-start and data-sparse scenarios. The emergence of large language models (LLMs) like GPT and LLaMA presents new possibilities for enhancing recommendation performance, especially in cold-start settings. Despite their promise, LLMs pose challenges related to scalability and efficiency due to their high computational demands and limited ability to model complex user-item relationships effectively. In this work, we introduce a novel perspective on leveraging LLMs for CF model initialization. Through experiments, we uncover an embedding collapse issue when scaling CF models to larger embedding dimensions. To effectively harness large-scale LLM embeddings, we propose innovative selective initialization strategies utilizing random, uniform, and variance-based index sampling. Our comprehensive evaluation on multiple real-world datasets demonstrates significant performance gains across various CF models while maintaining a lower computational cost compared to existing LLM-based recommendation approaches. 
+
+**Abstract (ZH)**: 基于图的合作过滤模型在捕捉用户项交互方面表现出强大的性能，但在冷启动和数据稀疏场景中仍面临挑战。大型语言模型（LLMs）如GPT和LLaMA的出现为提升推荐性能提供了新可能，尤其是在冷启动设置中。尽管LLMs前景广阔，但高计算需求和建模复杂用户项关系能力有限导致的可扩展性和效率问题依然存在。在本文中，我们提出了一种创新的利用LLMs初始化CF模型的新视角。通过实验，我们揭示了当将CF模型扩展到更高嵌入维度时存在的嵌入塌缩问题。为了有效利用大规模LLM嵌入，我们提出了基于随机、均匀和方差采样的创新性选择性初始化策略。我们的全面评估在多个真实世界数据集上显示，在保持较低计算成本的同时，CF模型的性能显著提升。 
+
+---
+# AutoAdvExBench: Benchmarking autonomous exploitation of adversarial example defenses 
+
+**Title (ZH)**: AutoAdvExBench: 自动化利用 adversarial example 防御的技术评估 
+
+**Authors**: Nicholas Carlini, Javier Rando, Edoardo Debenedetti, Milad Nasr, Florian Tramèr  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01811)  
+
+**Abstract**: We introduce AutoAdvExBench, a benchmark to evaluate if large language models (LLMs) can autonomously exploit defenses to adversarial examples. Unlike existing security benchmarks that often serve as proxies for real-world tasks, bench directly measures LLMs' success on tasks regularly performed by machine learning security experts. This approach offers a significant advantage: if a LLM could solve the challenges presented in bench, it would immediately present practical utility for adversarial machine learning researchers. We then design a strong agent that is capable of breaking 75% of CTF-like ("homework exercise") adversarial example defenses. However, we show that this agent is only able to succeed on 13% of the real-world defenses in our benchmark, indicating the large gap between difficulty in attacking "real" code, and CTF-like code. In contrast, a stronger LLM that can attack 21% of real defenses only succeeds on 54% of CTF-like defenses. We make this benchmark available at this https URL. 
+
+**Abstract (ZH)**: 我们介绍AutoAdvExBench，这是一个基准，用于评估大型语言模型（LLMs）是否能够自主利用对抗例子的防御措施。 
+
+---
+# Depth-Width tradeoffs in Algorithmic Reasoning of Graph Tasks with Transformers 
+
+**Title (ZH)**: 图任务中Transformer算法推理的深度-宽度权衡 
+
+**Authors**: Gilad Yehudai, Clayton Sanford, Maya Bechler-Speicher, Orr Fischer, Ran Gilad-Bachrach, Amir Globerson  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01805)  
+
+**Abstract**: Transformers have revolutionized the field of machine learning. In particular, they can be used to solve complex algorithmic problems, including graph-based tasks. In such algorithmic tasks a key question is what is the minimal size of a transformer that can implement a task. Recent work has begun to explore this problem for graph-based tasks, showing that for sub-linear embedding dimension (i.e., model width) logarithmic depth suffices. However, an open question, which we address here, is what happens if width is allowed to grow linearly. Here we analyze this setting, and provide the surprising result that with linear width, constant depth suffices for solving a host of graph-based problems. This suggests that a moderate increase in width can allow much shallower models, which are advantageous in terms of inference time. For other problems, we show that quadratic width is required. Our results demonstrate the complex and intriguing landscape of transformer implementations of graph-based algorithms. We support our theoretical results with empirical evaluations. 
+
+**Abstract (ZH)**: 变压器已经革命性地改变了机器学习领域。特别是在基于图的任务中，一个关键问题是实现一个任务所需的最小变压器尺寸是多少。近期的研究已经开始探讨这一问题，表明对于次线性嵌入维度（即模型宽度）而言，对数深度就足够了。然而，一个未解决的问题是，如果允许宽度线性增长会怎样，这也是我们在此研究所要解决的问题。我们分析了这一设置，并提供了令人惊讶的结果：对于许多基于图的问题，常数深度就足够了。这表明适度增加宽度可以使模型更浅，从推断时间的角度来看有着显著优势。对于其他问题，我们证明需要二次宽度。我们的结果展示了基于图算法的变压器实现的复杂而引人入胜的景观。我们通过实证评估支持了我们的理论成果。 
+
+---
+# $\texttt{SEM-CTRL}$: Semantically Controlled Decoding 
+
+**Title (ZH)**: SEM-CTRL: 语义控制解码 
+
+**Authors**: Mohammad Albinhassan, Pranava Madhyastha, Alessandra Russo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01804)  
+
+**Abstract**: Ensuring both syntactic and semantic correctness in Large Language Model (LLM) outputs remains a significant challenge, despite being critical for real-world deployment. In this paper, we introduce $\texttt{SEM-CTRL}$, a unified approach that enforces rich context-sensitive constraints and task- and instance-specific semantics directly on an LLM decoder. Our approach integrates token-level MCTS, which is guided by specific syntactic and semantic constraints. The constraints over the desired outputs are expressed using Answer Set Grammars -- a logic-based formalism that generalizes context-sensitive grammars while incorporating background knowledge to represent task-specific semantics. We show that our approach guarantees correct completions for any off-the-shelf LLM without the need for fine-tuning. We evaluate $\texttt{SEM-CTRL}$ on a range of tasks, including synthetic grammar synthesis, combinatorial reasoning, and planning. Our results demonstrate that $\texttt{SEM-CTRL}$ allows small pre-trained LLMs to efficiently outperform larger variants and state-of-the-art reasoning models (e.g., o1-preview) while simultaneously guaranteeing solution correctness. 
+
+**Abstract (ZH)**: 确保大型语言模型（LLM）输出在句法和语义上的正确性仍然是一个重大挑战，尽管这对于实际部署至关重要。本文介绍了一种统一的方法$\texttt{SEM-CTRL}$，该方法直接在LLM解码器上施加丰富的上下文敏感约束和任务及实例特定的语义。我们的方法结合了受特定句法和语义约束指导的令牌级别MCTS。所需的输出约束使用回答集文法表达——这是一种基于逻辑的形式主义，可以泛化上下文敏感文法并结合背景知识来表示任务特定的语义。我们证明了我们的方法可以在不需要微调的情况下保证任何现成的LLM生成正确的完成。我们在合成语法合成、组合推理和规划等多种任务上评估了$\texttt{SEM-CTRL}$。结果表明，$\texttt{SEM-CTRL}$允许小型预训练LLM高效地超越更大规模的变体和最先进的推理模型（例如o1-preview），同时同时保证解决方案的正确性。 
+
+---
+# Beyond Matryoshka: Revisiting Sparse Coding for Adaptive Representation 
+
+**Title (ZH)**: 超越马特罗什卡：重新审视稀疏编码以实现适应性表示 
+
+**Authors**: Tiansheng Wen, Yifei Wang, Zequn Zeng, Zhong Peng, Yudi Su, Xinyang Liu, Bo Chen, Hongwei Liu, Stefanie Jegelka, Chenyu You  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01776)  
+
+**Abstract**: Many large-scale systems rely on high-quality deep representations (embeddings) to facilitate tasks like retrieval, search, and generative modeling. Matryoshka Representation Learning (MRL) recently emerged as a solution for adaptive embedding lengths, but it requires full model retraining and suffers from noticeable performance degradations at short lengths. In this paper, we show that sparse coding offers a compelling alternative for achieving adaptive representation with minimal overhead and higher fidelity. We propose Contrastive Sparse Representation (CSR), a method that sparsifies pre-trained embeddings into a high-dimensional but selectively activated feature space. By leveraging lightweight autoencoding and task-aware contrastive objectives, CSR preserves semantic quality while allowing flexible, cost-effective inference at different sparsity levels. Extensive experiments on image, text, and multimodal benchmarks demonstrate that CSR consistently outperforms MRL in terms of both accuracy and retrieval speed-often by large margins-while also cutting training time to a fraction of that required by MRL. Our results establish sparse coding as a powerful paradigm for adaptive representation learning in real-world applications where efficiency and fidelity are both paramount. Code is available at this https URL 
+
+**Abstract (ZH)**: Sparse Coding for Adaptive Representation Learning with Enhanced Efficiency and Fidelity 
+
+---
+# Retrieval Models Aren't Tool-Savvy: Benchmarking Tool Retrieval for Large Language Models 
+
+**Title (ZH)**: 检索模型不是工具高手：大型语言模型工具检索基准研究 
+
+**Authors**: Zhengliang Shi, Yuhan Wang, Lingyong Yan, Pengjie Ren, Shuaiqiang Wang, Dawei Yin, Zhaochun Ren  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01763)  
+
+**Abstract**: Tool learning aims to augment large language models (LLMs) with diverse tools, enabling them to act as agents for solving practical tasks. Due to the limited context length of tool-using LLMs, adopting information retrieval (IR) models to select useful tools from large toolsets is a critical initial step. However, the performance of IR models in tool retrieval tasks remains underexplored and unclear. Most tool-use benchmarks simplify this step by manually pre-annotating a small set of relevant tools for each task, which is far from the real-world scenarios. In this paper, we propose ToolRet, a heterogeneous tool retrieval benchmark comprising 7.6k diverse retrieval tasks, and a corpus of 43k tools, collected from existing datasets. We benchmark six types of models on ToolRet. Surprisingly, even the models with strong performance in conventional IR benchmarks, exhibit poor performance on ToolRet. This low retrieval quality degrades the task pass rate of tool-use LLMs. As a further step, we contribute a large-scale training dataset with over 200k instances, which substantially optimizes the tool retrieval ability of IR models. 
+
+**Abstract (ZH)**: 工具学习旨在通过多样化工具增强大型语言模型（LLMs），使其能够作为解决实际任务的代理。由于工具使用型LLMs的上下文长度限制，采用信息检索（IR）模型从大型工具集选择有用工具是至关重要的初步步骤。然而，IR模型在工具检索任务中的性能仍缺乏探索和明确说明。大多数工具使用基准通过手动预标注每个任务的小数量相关工具来简化这一步骤，这远不符合真实世界的情景。在本文中，我们提出了一个异构工具检索基准ToolRet，包含了7600个多样化的检索任务和一个包含43000个工具的语料库，这些工具是从现有数据集中收集的。我们在ToolRet上对六种类型的模型进行了基准测试。令人惊讶的是，即使在传统信息检索基准中表现出色的模型，在ToolRet上的表现也较差。这种低质量的检索降低了工具使用LLMs的任务通过率。为进一步改进，我们贡献了一个包含超过20万个实例的大规模训练数据集，显著优化了IR模型的工具检索能力。 
+
+---
+# Zero-Trust Artificial Intelligence Model Security Based on Moving Target Defense and Content Disarm and Reconstruction 
+
+**Title (ZH)**: 基于移动目标防御和内容卸载与重构的零信任人工智能模型安全 
+
+**Authors**: Daniel Gilkarov, Ran Dubin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01758)  
+
+**Abstract**: This paper examines the challenges in distributing AI models through model zoos and file transfer mechanisms. Despite advancements in security measures, vulnerabilities persist, necessitating a multi-layered approach to mitigate risks effectively. The physical security of model files is critical, requiring stringent access controls and attack prevention solutions. This paper proposes a novel solution architecture composed of two prevention approaches. The first is Content Disarm and Reconstruction (CDR), which focuses on disarming serialization attacks that enable attackers to run malicious code as soon as the model is loaded. The second is protecting the model architecture and weights from attacks by using Moving Target Defense (MTD), alerting the model structure, and providing verification steps to detect such attacks. The paper focuses on the highly exploitable Pickle and PyTorch file formats. It demonstrates a 100% disarm rate while validated against known AI model repositories and actual malware attacks from the HuggingFace model zoo. 
+
+**Abstract (ZH)**: 本文探讨了通过模型动物园和文件传输机制分布AI模型所面临的挑战。尽管安全性措施取得了进展，但依然存在漏洞，需要采用多层次的方法来有效缓解风险。模型文件的物理安全至关重要，需要严格的访问控制和攻击防护解决方案。本文提出了一种新颖的解决方案架构，由两种防护方法组成。首先是内容拆解与重组（CDR），专注于拆解序列化攻击，这种攻击允许攻击者在模型加载时立即运行恶意代码。其次是通过移动目标防御（MTD）保护模型架构和权重免受攻击，这将提示模型结构并提供验证步骤以检测此类攻击。本文专注于高度可利用的Pickle和PyTorch文件格式。它在验证已知的AI模型仓库和HuggingFace模型动物园的实际恶意软件攻击后，实现了100%的拆解率。 
+
+---
+# Phi-4-Mini Technical Report: Compact yet Powerful Multimodal Language Models via Mixture-of-LoRAs 
+
+**Title (ZH)**: Phi-4-Mini 技术报告：通过混合小型LoRA实现紧凑而强大的多模态语言模型 
+
+**Authors**: Abdelrahman Abouelenin, Atabak Ashfaq, Adam Atkinson, Hany Awadalla, Nguyen Bach, Jianmin Bao, Alon Benhaim, Martin Cai, Vishrav Chaudhary, Congcong Chen, Dong Chen, Dongdong Chen, Junkun Chen, Weizhu Chen, Yen-Chun Chen, Yi-ling Chen, Qi Dai, Xiyang Dai, Ruchao Fan, Mei Gao, Min Gao, Amit Garg, Abhishek Goswami, Junheng Hao, Amr Hendy, Yuxuan Hu, Xin Jin, Mahmoud Khademi, Dongwoo Kim, Young Jin Kim, Gina Lee, Jinyu Li, Yunsheng Li, Chen Liang, Xihui Lin, Zeqi Lin, Mengchen Liu, Yang Liu, Gilsinia Lopez, Chong Luo, Piyush Madan, Vadim Mazalov, Ali Mousavi, Anh Nguyen, Jing Pan, Daniel Perez-Becker, Jacob Platin, Thomas Portet, Kai Qiu, Bo Ren, Liliang Ren, Sambuddha Roy, Ning Shang, Yelong Shen, Saksham Singhal, Subhojit Som, Xia Song, Tetyana Sych, Praneetha Vaddamanu, Shuohang Wang, Yiming Wang, Zhenghao Wang, Haibin Wu, Haoran Xu, Weijian Xu, Yifan Yang, Ziyi Yang, Donghan Yu, Ishmam Zabir, Jianwen Zhang, Li Lyna Zhang, Yunan Zhang, Xiren Zhou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01743)  
+
+**Abstract**: We introduce Phi-4-Mini and Phi-4-Multimodal, compact yet highly capable language and multimodal models. Phi-4-Mini is a 3.8-billion-parameter language model trained on high-quality web and synthetic data, significantly outperforming recent open-source models of similar size and matching the performance of models twice its size on math and coding tasks requiring complex reasoning. This achievement is driven by a carefully curated synthetic data recipe emphasizing high-quality math and coding datasets. Compared to its predecessor, Phi-3.5-Mini, Phi-4-Mini features an expanded vocabulary size of 200K tokens to better support multilingual applications, as well as group query attention for more efficient long-sequence generation. Phi-4-Multimodal is a multimodal model that integrates text, vision, and speech/audio input modalities into a single model. Its novel modality extension approach leverages LoRA adapters and modality-specific routers to allow multiple inference modes combining various modalities without interference. For example, it now ranks first in the OpenASR leaderboard to date, although the LoRA component of the speech/audio modality has just 460 million parameters. Phi-4-Multimodal supports scenarios involving (vision + language), (vision + speech), and (speech/audio) inputs, outperforming larger vision-language and speech-language models on a wide range of tasks. Additionally, we experiment to further train Phi-4-Mini to enhance its reasoning capabilities. Despite its compact 3.8-billion-parameter size, this experimental version achieves reasoning performance on par with or surpassing significantly larger models, including DeepSeek-R1-Distill-Qwen-7B and DeepSeek-R1-Distill-Llama-8B. 
+
+**Abstract (ZH)**: 我们介绍了Phi-4-Mini和Phi-4-Multimodal，这两种模型虽然紧凑但功能强大，具备语言和多模态能力。Phi-4-Mini是基于高质量网络和合成数据训练的38亿参数语言模型，显著优于同类规模的开源模型，并在需要复杂推理的数学和编程任务上达到与两倍规模模型相当的性能。这一成就得益于精心策划的合成数据配方，强调高质量的数学和编程数据集。与 predecessor Phi-3.5-Mini 相比，Phi-4-Mini 的词汇量扩大到 20 万 tokens，以更好地支持多语言应用，并集成了组查询注意机制，提高长序列生成的效率。Phi-4-Multimodal 是一个整合了文本、视觉和语音/音频输入模态的多模态模型。其新颖的模态扩展方法利用 LoRA 调用器和特定模态路由器，允许多种结合不同模态的推理模式而无干扰。例如，它目前在 OpenASR 领导板上排名第一，尽管语音/音频模态的 LoRA 组件只有 4.6 亿参数。Phi-4-Multimodal 支持涉及 (视觉 + 语言)、(视觉 + 语音) 和 (语音/音频) 输入的场景，在多种任务上超越更大规模的视觉语言和语音语言模型。此外，我们尝试进一步训练 Phi-4-Mini 以增强其推理能力。尽管其紧凑的 38 亿参数规模，此实验版本在推理性能上与或超过了显著更大的模型，包括 DeepSeek-R1-Distill-Qwen-7B 和 DeepSeek-R1-Distill-Llama-8B。 
+
+---
+# Adversarial Agents: Black-Box Evasion Attacks with Reinforcement Learning 
+
+**Title (ZH)**: 对抗代理：基于强化学习的黑盒逃逸攻击 
+
+**Authors**: Kyle Domico, Jean-Charles Noirot Ferrand, Ryan Sheatsley, Eric Pauley, Josiah Hanna, Patrick McDaniel  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01734)  
+
+**Abstract**: Reinforcement learning (RL) offers powerful techniques for solving complex sequential decision-making tasks from experience. In this paper, we demonstrate how RL can be applied to adversarial machine learning (AML) to develop a new class of attacks that learn to generate adversarial examples: inputs designed to fool machine learning models. Unlike traditional AML methods that craft adversarial examples independently, our RL-based approach retains and exploits past attack experience to improve future attacks. We formulate adversarial example generation as a Markov Decision Process and evaluate RL's ability to (a) learn effective and efficient attack strategies and (b) compete with state-of-the-art AML. On CIFAR-10, our agent increases the success rate of adversarial examples by 19.4% and decreases the median number of victim model queries per adversarial example by 53.2% from the start to the end of training. In a head-to-head comparison with a state-of-the-art image attack, SquareAttack, our approach enables an adversary to generate adversarial examples with 13.1% more success after 5000 episodes of training. From a security perspective, this work demonstrates a powerful new attack vector that uses RL to attack ML models efficiently and at scale. 
+
+**Abstract (ZH)**: 基于强化学习的对抗机器学习中新颖攻击方法的研究 
+
+---
+# DISCOVER: Data-driven Identification of Sub-activities via Clustering and Visualization for Enhanced Activity Recognition in Smart Homes 
+
+**Title (ZH)**: DISCOVER：通过聚类和可视化实现的数据驱动的子活动识别以增强智能家居中的活动识别 
+
+**Authors**: Alexander Karpekov, Sonia Chernova, Thomas Plötz  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01733)  
+
+**Abstract**: Human Activity Recognition (HAR) using ambient sensors has great potential for practical applications, particularly in elder care and independent living. However, deploying HAR systems in real-world settings remains challenging due to the high cost of labeled data, the need for pre-segmented sensor streams, and the lack of flexibility in activity granularity. To address these limitations, we introduce DISCOVER, a method designed to discover fine-grained human sub-activities from unlabeled sensor data without relying on pre-segmentation. DISCOVER combines unsupervised feature extraction and clustering with a user-friendly visualization tool to streamline the labeling process. DISCOVER enables domain experts to efficiently annotate only a minimal set of representative cluster centroids, reducing the annotation workload to a small number of samples (0.05% of our dataset). We demonstrate DISCOVER's effectiveness through a re-annotation exercise on widely used HAR datasets, showing that it uncovers finer-grained activities and produces more nuanced annotations than traditional coarse labels. DISCOVER represents a step toward practical, deployable HAR systems that adapt to diverse real environments. 
+
+**Abstract (ZH)**: 基于环境传感器的细粒度人类亚活动发现（DISCOVER）在实际应用中的潜力，特别是在养老和独立生活领域的应用。然而，在真实环境中部署人类活动识别（HAR）系统仍面临挑战，主要原因包括标注数据的成本高、需要预分段的传感器流以及活动粒度的灵活性不足。为了解决这些限制，我们提出了DISCOVER方法，该方法能够在无需依赖预分段的情况下从未标注的传感器数据中发现细粒度的人类亚活动。DISCOVER结合了无监督特征提取和聚类，并通过用户友好的可视化工具简化标注过程。DISCOVER使领域专家仅需标注少量具有代表性的聚类质心，从而将标注工作量减少到极少数样本（约0.05%的数据集）。通过在广泛使用的HAR数据集上进行重新标注实验，我们展示了DISCOVER的有效性，表明它能够发现更细粒度的活动并生成比传统粗粒度标签更细腻的标注。DISCOVER代表了迈向适应多元真实环境的实用可部署HAR系统的一步。 
+
+---
+# KeyFace: Expressive Audio-Driven Facial Animation for Long Sequences via KeyFrame Interpolation 
+
+**Title (ZH)**: KeyFace：通过关键帧插值实现长序列的表达性音频驱动面部动画 
+
+**Authors**: Antoni Bigata, Michał Stypułkowski, Rodrigo Mira, Stella Bounareli, Konstantinos Vougioukas, Zoe Landgraf, Nikita Drobyshev, Maciej Zieba, Stavros Petridis, Maja Pantic  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01715)  
+
+**Abstract**: Current audio-driven facial animation methods achieve impressive results for short videos but suffer from error accumulation and identity drift when extended to longer durations. Existing methods attempt to mitigate this through external spatial control, increasing long-term consistency but compromising the naturalness of motion. We propose KeyFace, a novel two-stage diffusion-based framework, to address these issues. In the first stage, keyframes are generated at a low frame rate, conditioned on audio input and an identity frame, to capture essential facial expressions and movements over extended periods of time. In the second stage, an interpolation model fills in the gaps between keyframes, ensuring smooth transitions and temporal coherence. To further enhance realism, we incorporate continuous emotion representations and handle a wide range of non-speech vocalizations (NSVs), such as laughter and sighs. We also introduce two new evaluation metrics for assessing lip synchronization and NSV generation. Experimental results show that KeyFace outperforms state-of-the-art methods in generating natural, coherent facial animations over extended durations, successfully encompassing NSVs and continuous emotions. 
+
+**Abstract (ZH)**: 基于关键帧的双重扩散框架KeyFace：实现长时间连续发音的情感面部动画 
+
+---
+# Word Form Matters: LLMs' Semantic Reconstruction under Typoglycemia 
+
+**Title (ZH)**: 字形 Matters： Typoglycemia 下 LLMs 的语义重构 
+
+**Authors**: Chenxi Wang, Tianle Gu, Zhongyu Wei, Lang Gao, Zirui Song, Xiuying Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01714)  
+
+**Abstract**: Human readers can efficiently comprehend scrambled words, a phenomenon known as Typoglycemia, primarily by relying on word form; if word form alone is insufficient, they further utilize contextual cues for interpretation. While advanced large language models (LLMs) exhibit similar abilities, the underlying mechanisms remain unclear. To investigate this, we conduct controlled experiments to analyze the roles of word form and contextual information in semantic reconstruction and examine LLM attention patterns. Specifically, we first propose SemRecScore, a reliable metric to quantify the degree of semantic reconstruction, and validate its effectiveness. Using this metric, we study how word form and contextual information influence LLMs' semantic reconstruction ability, identifying word form as the core factor in this process. Furthermore, we analyze how LLMs utilize word form and find that they rely on specialized attention heads to extract and process word form information, with this mechanism remaining stable across varying levels of word scrambling. This distinction between LLMs' fixed attention patterns primarily focused on word form and human readers' adaptive strategy in balancing word form and contextual information provides insights into enhancing LLM performance by incorporating human-like, context-aware mechanisms. 
+
+**Abstract (ZH)**: 人类读者可以通过单词形式高效理解乱序单词，这一现象称为Typoglycemia；若仅依靠单词形式不足以进行解释，则会利用上下文线索。虽然高级大型语言模型（LLMs）展现出类似能力，但其内在机制尚不清楚。为探究此问题，我们进行了控制实验，分析单词形式和上下文信息在语义重建中的作用，并考察LLM的注意力模式。具体而言，我们首先提出了一种可靠的SemRecScore度量方法来量化语义重建的程度，并验证其有效性。利用该度量方法，我们研究了单词形式和上下文信息如何影响LLM的语义重建能力，发现单词形式是这一过程的核心因素。此外，我们分析了LLMs如何利用单词形式，并发现它们依赖于特定的注意力头来提取和处理单词形式信息，这一机制在不同水平的单词乱序中保持稳定。LLMs固定关注单词形式的注意力模式与人类读者适应性地平衡单词形式和上下文信息的策略之间的差异，为我们提供了通过引入类似人类的、上下文感知的机制来提升LLM性能的见解。 
+
+---
+# SAGE: A Framework of Precise Retrieval for RAG 
+
+**Title (ZH)**: SAGE: 一种精确检索框架用于RAG 
+
+**Authors**: Jintao Zhang, Guoliang Li, Jinyang Su  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01713)  
+
+**Abstract**: Retrieval-augmented generation (RAG) has demonstrated significant proficiency in conducting question-answering (QA) tasks within a specified corpus. Nonetheless, numerous failure instances of RAG in QA still exist. These failures are not solely attributable to the limitations of Large Language Models (LLMs); instead, they predominantly arise from the retrieval of inaccurate information for LLMs due to two limitations: (1) Current RAG methods segment the corpus without considering semantics, making it difficult to find relevant context due to impaired correlation between questions and the segments. (2) There is a trade-off between missing essential context with fewer context retrieved and getting irrelevant context with more context retrieved.
+In this paper, we introduce a RAG framework (SAGE), to overcome these limitations. First, to address the segmentation issue without considering semantics, we propose to train a semantic segmentation model. This model is trained to segment the corpus into semantically complete chunks. Second, to ensure that only the most relevant chunks are retrieved while the irrelevant ones are ignored, we design a chunk selection algorithm to dynamically select chunks based on the decreasing speed of the relevance score, leading to a more relevant selection. Third, to further ensure the precision of the retrieved chunks, we propose letting LLMs assess whether retrieved chunks are excessive or lacking and then adjust the amount of context accordingly. Experiments show that SAGE outperforms baselines by 61.25% in the quality of QA on average. Moreover, by avoiding retrieving noisy context, SAGE lowers the cost of the tokens consumed in LLM inference and achieves a 49.41% enhancement in cost efficiency on average. Additionally, our work offers valuable insights for boosting RAG. 
+
+**Abstract (ZH)**: 检索增强生成（RAG）已经在特定语料库内的问答（QA）任务中展现了显著的能力。然而，RAG在QA中的众多失败实例依然存在。这些失败不仅归因于大型语言模型（LLMs）的局限性，还主要源于检索不准确信息导致的两个限制：（1）当前的RAG方法在分段时未考虑语义，导致问题与分段之间的关联性受损，难以找到相关背景。（2）在获取较少背景时可能会遗漏重要信息，在获取更多背景时可能会获取到无关信息。在本文中，我们提出了一个名为SAGE的RAG框架，克服了这些限制。首先，针对未考虑语义的分段问题，我们提出训练一个语义分割模型，该模型用于将语料库分割成语义完整的片段。其次，为确保仅检索最具相关性的片段而忽略无关片段，我们设计了一种分段选择算法，根据相关性评分下降速度动态选择片段，从而实现更有针对性的选择。第三，为了进一步确保检索片段的精准性，我们建议让LLMs评估检索到的片段是否过多或不足，并据此调整背景的量。实验结果显示，SAGE在问答质量方面平均优于基线模型61.25%。此外，通过避免检索噪声背景信息，SAGE降低了LLM推理中消耗的 token 成本，并在平均成本效率方面提高了49.41%。此外，我们的工作为提升RAG提供了有价值的见解。 
+
+---
+# Spark-TTS: An Efficient LLM-Based Text-to-Speech Model with Single-Stream Decoupled Speech Tokens 
+
+**Title (ZH)**: Spark-TTS：一种基于单流解耦语音 token 的高效 LLMA 文本转语音模型 
+
+**Authors**: Xinsheng Wang, Mingqi Jiang, Ziyang Ma, Ziyu Zhang, Songxiang Liu, Linqin Li, Zheng Liang, Qixi Zheng, Rui Wang, Xiaoqin Feng, Weizhen Bian, Zhen Ye, Sitong Cheng, Ruibin Yuan, Zhixian Zhao, Xinfa Zhu, Jiahao Pan, Liumeng Xue, Pengcheng Zhu, Yunlin Chen, Zhifei Li, Xie Chen, Lei Xie, Yike Guo, Wei Xue  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01710)  
+
+**Abstract**: Recent advancements in large language models (LLMs) have driven significant progress in zero-shot text-to-speech (TTS) synthesis. However, existing foundation models rely on multi-stage processing or complex architectures for predicting multiple codebooks, limiting efficiency and integration flexibility. To overcome these challenges, we introduce Spark-TTS, a novel system powered by BiCodec, a single-stream speech codec that decomposes speech into two complementary token types: low-bitrate semantic tokens for linguistic content and fixed-length global tokens for speaker attributes. This disentangled representation, combined with the Qwen2.5 LLM and a chain-of-thought (CoT) generation approach, enables both coarse-grained control (e.g., gender, speaking style) and fine-grained adjustments (e.g., precise pitch values, speaking rate). To facilitate research in controllable TTS, we introduce VoxBox, a meticulously curated 100,000-hour dataset with comprehensive attribute annotations. Extensive experiments demonstrate that Spark-TTS not only achieves state-of-the-art zero-shot voice cloning but also generates highly customizable voices that surpass the limitations of reference-based synthesis. Source code, pre-trained models, and audio samples are available at this https URL. 
+
+**Abstract (ZH)**: Recent advancements in大型语言模型（LLMs）在零-shot 文本转语音（TTS）合成中的最新进展已推动了显著的进步。然而，现有的基础模型依赖多阶段处理或复杂的架构来预测多个码本，限制了效率和集成灵活性。为克服这些挑战，我们介绍了由单一流程编码器（BiCodec）驱动的Spark-TTS，该编码器将语音分解为两种互补的标记类型：低比特率语义标记用于语言内容和固定长度的全局标记用于说话人属性。这种分离表示，结合Qwen2.5大语言模型和链式思考（CoT）生成方法，既支持粗粒度控制（如性别、发音风格），也支持细粒度调整（如精确的音调值、语速）。为促进可控TTS的研究，我们引入了VoxBox，这是一个精心挑选的100,000小时数据集，具有全面的属性注释。大量实验表明，Spark-TTS不仅实现了最先进的零-shot 语音克隆，而且还生成了高度可定制的声音，超越了参考基于合成的限制。更多代码、预训练模型和音频样本可在以下链接获得。 
+
+---
+# Relating Piecewise Linear Kolmogorov Arnold Networks to ReLU Networks 
+
+**Title (ZH)**: 将分段线性柯尔莫哥洛夫-阿诺德网络与ReLU网络联系起来 
+
+**Authors**: Nandi Schoots, Mattia Jacopo Villani, Niels uit de Bos  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01702)  
+
+**Abstract**: Kolmogorov-Arnold Networks are a new family of neural network architectures which holds promise for overcoming the curse of dimensionality and has interpretability benefits (arXiv:2404.19756). In this paper, we explore the connection between Kolmogorov Arnold Networks (KANs) with piecewise linear (univariate real) functions and ReLU networks. We provide completely explicit constructions to convert a piecewise linear KAN into a ReLU network and vice versa. 
+
+**Abstract (ZH)**: Kolmogorov-Arnold网络是一种新的神经网络架构，有望克服维度灾难并具有可解释性优势（arXiv:2404.19756）。在这篇文章中，我们探讨了Kolmogorov Arnold网络（KANs）与分段线性（单变量实数）函数及ReLU网络之间的联系，提供了将分段线性KAN完全显式转换为ReLU网络的方法，反之亦然。 
+
+---
+# Code-as-Symbolic-Planner: Foundation Model-Based Robot Planning via Symbolic Code Generation 
+
+**Title (ZH)**: 代码作为符号规划师：基于符号代码生成的基础模型机器人规划 
+
+**Authors**: Yongchao Chen, Yilun Hao, Yang Zhang, Chuchu Fan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01700)  
+
+**Abstract**: Recent works have shown great potentials of Large Language Models (LLMs) in robot task and motion planning (TAMP). Current LLM approaches generate text- or code-based reasoning chains with sub-goals and action plans. However, they do not fully leverage LLMs' symbolic computing and code generation capabilities. Many robot TAMP tasks involve complex optimization under multiple constraints, where pure textual reasoning is insufficient. While augmenting LLMs with predefined solvers and planners improves performance, it lacks generalization across tasks. Given LLMs' growing coding proficiency, we enhance their TAMP capabilities by steering them to generate code as symbolic planners for optimization and constraint verification. Unlike prior work that uses code to interface with robot action modules, we steer LLMs to generate code as solvers, planners, and checkers for TAMP tasks requiring symbolic computing, while still leveraging textual reasoning to incorporate common sense. With a multi-round guidance and answer evolution framework, the proposed Code-as-Symbolic-Planner improves success rates by average 24.1\% over best baseline methods across seven typical TAMP tasks and three popular LLMs. Code-as-Symbolic-Planner shows strong effectiveness and generalizability across discrete and continuous environments, 2D/3D simulations and real-world settings, as well as single- and multi-robot tasks with diverse requirements. See our project website this https URL for prompts, videos, and code. 
+
+**Abstract (ZH)**: 近期研究表明，大型语言模型（LLMs）在机器人任务和运动规划（TAMP）方面展现了巨大的潜力。当前的LLM方法生成基于文本或代码的推理链，包含子目标和行动计划。然而，它们未能充分利用LLMs的符号计算和代码生成能力。许多机器人的TAMP任务涉及在多个约束下的复杂优化，仅凭纯粹的文字推理是不够的。通过与预定义求解器和规划器结合，虽然可以提高性能，但缺乏跨任务的一般性。鉴于LLMs编码能力的不断提升，我们通过引导它们生成代码作为符号规划器来进行优化和约束验证，增强了其TAMP能力。不同于以往使用代码与机器人动作模块接口的方法，我们引导LLMs生成作为求解器、规划器和验证器的代码，专门应用于需要符号计算的TAMP任务，同时仍利用文字推理来融入常识。通过多轮引导和答案演进框架，提出的Code-as-Symbolic-Planner方法在七种典型TAMP任务和三种流行的LLM上，平均提高了24.1%的成功率。Code-as-Symbolic-Planner在离散和连续环境、2D/3D模拟和真实世界设置，以及单个和多个机器人任务中表现出强大的效果和一般性。更多信息请访问我们的项目网站：[此 https URL]，获取提示、视频和代码。 
+
+---
+# Perceptual Motor Learning with Active Inference Framework for Robust Lateral Control 
+
+**Title (ZH)**: 基于主动推断框架的知觉运动学习在稳健横向控制中的应用 
+
+**Authors**: Elahe Delavari, John Moore, Junho Hong, Jaerock Kwon  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01676)  
+
+**Abstract**: This paper presents a novel Perceptual Motor Learning (PML) framework integrated with Active Inference (AIF) to enhance lateral control in Highly Automated Vehicles (HAVs). PML, inspired by human motor learning, emphasizes the seamless integration of perception and action, enabling efficient decision-making in dynamic environments. Traditional autonomous driving approaches--including modular pipelines, imitation learning, and reinforcement learning--struggle with adaptability, generalization, and computational efficiency. In contrast, PML with AIF leverages a generative model to minimize prediction error ("surprise") and actively shape vehicle control based on learned perceptual-motor representations. Our approach unifies deep learning with active inference principles, allowing HAVs to perform lane-keeping maneuvers with minimal data and without extensive retraining across different environments. Extensive experiments in the CARLA simulator demonstrate that PML with AIF enhances adaptability without increasing computational overhead while achieving performance comparable to conventional methods. These findings highlight the potential of PML-driven active inference as a robust alternative for real-world autonomous driving applications. 
+
+**Abstract (ZH)**: 本文提出了一种将知觉运动学习（PML）与主动推断（AIF）结合的新型框架，以增强高度自动化车辆（HAVs）的横向控制能力。 
+
+---
+# Evaluating LLMs' Assessment of Mixed-Context Hallucination Through the Lens of Summarization 
+
+**Title (ZH)**: 通过摘要视角评价LLM对混合上下文幻觉的评估 
+
+**Authors**: Siya Qi, Rui Cao, Yulan He, Zheng Yuan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01670)  
+
+**Abstract**: With the rapid development of large language models (LLMs), LLM-as-a-judge has emerged as a widely adopted approach for text quality evaluation, including hallucination evaluation. While previous studies have focused exclusively on single-context evaluation (e.g., discourse faithfulness or world factuality), real-world hallucinations typically involve mixed contexts, which remains inadequately evaluated. In this study, we use summarization as a representative task to comprehensively evaluate LLMs' capability in detecting mixed-context hallucinations, specifically distinguishing between factual and non-factual hallucinations. Through extensive experiments across direct generation and retrieval-based models of varying scales, our main observations are: (1) LLMs' intrinsic knowledge introduces inherent biases in hallucination evaluation; (2) These biases particularly impact the detection of factual hallucinations, yielding a significant performance bottleneck; (3) The fundamental challenge lies in effective knowledge utilization, balancing between LLMs' intrinsic knowledge and external context for accurate mixed-context hallucination evaluation. 
+
+**Abstract (ZH)**: 随着大型语言模型（LLMs）的迅速发展，LLM-as-a-judge已广泛应用于文本质量评估，包括虚构性评估。尽管以往的研究主要集中于单一语境评估（如语篇忠实性或世界事实性），但现实生活中的虚构性通常涉及混合语境，而这些语境的评估仍显不足。本研究使用摘要作为代表性任务，全面评估LLMs在检测混合语境虚构性方面的能力，特别是区分事实性和非事实性虚构性。通过对不同规模的直接生成和检索模型进行广泛的实验，我们的主要观察结果是：（1）LLMs固有的知识在虚构性评估中引入了固有的偏见；（2）这些偏见特别影响了事实性虚构性的检测，导致了显著的性能瓶颈；（3）根本挑战在于有效利用知识，平衡LLMs固有的知识与外部语境，以实现准确的混合语境虚构性评估。 
+
+---
+# An Efficient Continual Learning Framework for Multivariate Time Series Prediction Tasks with Application to Vehicle State Estimation 
+
+**Title (ZH)**: 多变量时间序列预测任务的高效连续学习框架及其在车辆状态估计中的应用 
+
+**Authors**: Arvin Hosseinzadeh, Ladan Khoshnevisan, Mohammad Pirani, Shojaeddin Chenouri, Amir Khajepour  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01669)  
+
+**Abstract**: In continual time series analysis using neural networks, catastrophic forgetting (CF) of previously learned models when training on new data domains has always been a significant challenge. This problem is especially challenging in vehicle estimation and control, where new information is sequentially introduced to the model. Unfortunately, existing work on continual learning has not sufficiently addressed the adverse effects of catastrophic forgetting in time series analysis, particularly in multivariate output environments. In this paper, we present EM-ReSeleCT (Efficient Multivariate Representative Selection for Continual Learning in Time Series Tasks), an enhanced approach designed to handle continual learning in multivariate environments. Our approach strategically selects representative subsets from old and historical data and incorporates memory-based continual learning techniques with an improved optimization algorithm to adapt the pre-trained model on new information while preserving previously acquired information. Additionally, we develop a sequence-to-sequence transformer model (autoregressive model) specifically designed for vehicle state estimation. Moreover, we propose an uncertainty quantification framework using conformal prediction to assess the sensitivity of the memory size and to showcase the robustness of the proposed method. Experimental results from tests on an electric Equinox vehicle highlight the superiority of our method in continually learning new information while retaining prior knowledge, outperforming state-of-the-art continual learning methods. Furthermore, EM-ReSeleCT significantly reduces training time, a critical advantage in continual learning applications. 
+
+**Abstract (ZH)**: 基于神经网络的连续时间序列分析中，训练新数据域时前学习模型的灾难性遗忘（CF）一直是重大挑战。特别是在车辆估计与控制中，新信息按序引入模型，使这一问题尤为棘手。现有的连续学习工作在时间序列分析中，特别是多变量输出环境中，尚未充分解决灾难性遗忘带来的负面影响。本文提出了一种增强方法EM-ReSeleCT（高效多变量代表性选择在时间序列任务中的连续学习），旨在处理多变量环境中的连续学习问题。该方法战略性地从旧数据和历史数据中选择代表性子集，并结合基于记忆的连续学习技术和改进的优化算法，在适应新信息的同时保留先前获取的信息。此外，我们还开发了一种特别为车辆状态估计设计的序列到序列变换模型（自回归模型），并提出了一种基于校准预测的不确定性量化框架来评估内存大小的敏感性，并展示所提方法的鲁棒性。实验结果表明，EM-ReSeleCT在保留先前知识的同时连续学习新信息方面优于现有的先进连续学习方法，且显著减少了训练时间，这是连续学习应用中的一大优势。 
+
+---
+# CoPL: Collaborative Preference Learning for Personalizing LLMs 
+
+**Title (ZH)**: CoPL：协作偏好学习以个性化LLMs 
+
+**Authors**: Youngbin Choi, Seunghyuk Cho, Minjong Lee, MoonJeong Park, Yesong Ko, Jungseul Ok, Dongwoo Kim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01658)  
+
+**Abstract**: Personalizing large language models (LLMs) is important for aligning outputs with diverse user preferences, yet existing methods struggle with flexibility and generalization. We propose CoPL (Collaborative Preference Learning), a graph-based collaborative filtering framework that models user-response relationships to enhance preference estimation, particularly in sparse annotation settings. By integrating a mixture of LoRA experts, CoPL efficiently fine-tunes LLMs while dynamically balancing shared and user-specific preferences. Additionally, an optimization-free adaptation strategy enables generalization to unseen users without fine-tuning. Experiments on UltraFeedback-P demonstrate that CoPL outperforms existing personalized reward models, effectively capturing both common and controversial preferences, making it a scalable solution for personalized LLM alignment. 
+
+**Abstract (ZH)**: 基于图的合作偏好学习（CoPL）：一种用于个性化大型语言模型的框架 
+
+---
+# Enhancing Object Detection Accuracy in Underwater Sonar Images through Deep Learning-based Denoising 
+
+**Title (ZH)**: 基于深度学习的去噪方法提升水下声纳图像目标检测准确性 
+
+**Authors**: Ziyu Wang, Tao Xue, Yanbin Wang, Jingyuan Li, Haibin Zhang, Zhiqiang Xu, Gaofei Xu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01655)  
+
+**Abstract**: Sonar image object detection is crucial for underwater robotics and other applications. However, various types of noise in sonar images can affect the accuracy of object detection. Denoising, as a critical preprocessing step, aims to remove noise while retaining useful information to improve detection accuracy. Although deep learning-based denoising algorithms perform well on optical images, their application to underwater sonar images remains underexplored. This paper systematically evaluates the effectiveness of several deep learning-based denoising algorithms, originally designed for optical images, in the context of underwater sonar image object detection. We apply nine trained denoising models to images from five open-source sonar datasets, each processing different types of noise. We then test the denoised images using four object detection algorithms. The results show that different denoising models have varying effects on detection performance. By combining the strengths of multiple denoising models, the detection results can be optimized, thus more effectively suppressing noise. Additionally, we adopt a multi-frame denoising technique, using different outputs generated by multiple denoising models as multiple frames of the same scene for further processing to enhance detection accuracy. This method, originally designed for optical images, leverages complementary noise-reduction effects. Experimental results show that denoised sonar images improve the performance of object detection algorithms compared to the original sonar images. 
+
+**Abstract (ZH)**: 基于深学习的声纳图像去噪算法在水下声纳图像目标检测中的有效性研究 
+
+---
+# Distilled Prompt Learning for Incomplete Multimodal Survival Prediction 
+
+**Title (ZH)**: Incomplete多模态生存预测的蒸馏提示学习 
+
+**Authors**: Yingxue Xu, Fengtao Zhou, Chenyu Zhao, Yihui Wang, Can Yang, Hao Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01653)  
+
+**Abstract**: The integration of multimodal data including pathology images and gene profiles is widely applied in precise survival prediction. Despite recent advances in multimodal survival models, collecting complete modalities for multimodal fusion still poses a significant challenge, hindering their application in clinical settings. Current approaches tackling incomplete modalities often fall short, as they typically compensate for only a limited part of the knowledge of missing modalities. To address this issue, we propose a Distilled Prompt Learning framework (DisPro) to utilize the strong robustness of Large Language Models (LLMs) to missing modalities, which employs two-stage prompting for compensation of comprehensive information for missing modalities. In the first stage, Unimodal Prompting (UniPro) distills the knowledge distribution of each modality, preparing for supplementing modality-specific knowledge of the missing modality in the subsequent stage. In the second stage, Multimodal Prompting (MultiPro) leverages available modalities as prompts for LLMs to infer the missing modality, which provides modality-common information. Simultaneously, the unimodal knowledge acquired in the first stage is injected into multimodal inference to compensate for the modality-specific knowledge of the missing modality. Extensive experiments covering various missing scenarios demonstrated the superiority of the proposed method. The code is available at this https URL. 
+
+**Abstract (ZH)**: 多模态数据（包括病理图像和基因特征）在精确生存预测中的集成应用广泛。尽管最近在多模态生存模型方面取得了进展，但收集完整模态以进行多模态融合仍然面临重大挑战，阻碍了其在临床环境中的应用。当前处理不完整模态的方法往往不尽如人意，因为它们通常只能填补缺失模态知识的一小部分。为了解决这个问题，我们提出了一种蒸馏提示学习框架（DisPro），利用大型语言模型（LLMs）对缺失模态的强鲁棒性，采用两阶段提示来为缺失模态提供全面信息的补偿。在第一阶段，单模态提示（UniPro）提取每个模态的知识分布，为后续阶段补充缺失模态的模态特定知识做准备。在第二阶段，多模态提示（MultiPro）利用可用模态作为提示引导LLMs推断缺失模态，提供模态共通信息，同时将第一阶段获得的单模态知识注入多模态推理，以填补缺失模态的模态特定知识。广泛的实验覆盖了各种缺失场景，证明了所提出方法的优越性。代码可在以下链接获取。 
+
+---
+# OpenGS-SLAM: Open-Set Dense Semantic SLAM with 3D Gaussian Splatting for Object-Level Scene Understanding 
+
+**Title (ZH)**: OpenGS-SLAM: 基于3D高斯点云的开放集密集语义SLAM及其在对象级场景理解中的应用 
+
+**Authors**: Dianyi Yang, Yu Gao, Xihan Wang, Yufeng Yue, Yi Yang, Mengyin Fu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01646)  
+
+**Abstract**: Recent advancements in 3D Gaussian Splatting have significantly improved the efficiency and quality of dense semantic SLAM. However, previous methods are generally constrained by limited-category pre-trained classifiers and implicit semantic representation, which hinder their performance in open-set scenarios and restrict 3D object-level scene understanding. To address these issues, we propose OpenGS-SLAM, an innovative framework that utilizes 3D Gaussian representation to perform dense semantic SLAM in open-set environments. Our system integrates explicit semantic labels derived from 2D foundational models into the 3D Gaussian framework, facilitating robust 3D object-level scene understanding. We introduce Gaussian Voting Splatting to enable fast 2D label map rendering and scene updating. Additionally, we propose a Confidence-based 2D Label Consensus method to ensure consistent labeling across multiple views. Furthermore, we employ a Segmentation Counter Pruning strategy to improve the accuracy of semantic scene representation. Extensive experiments on both synthetic and real-world datasets demonstrate the effectiveness of our method in scene understanding, tracking, and mapping, achieving 10 times faster semantic rendering and 2 times lower storage costs compared to existing methods. Project page: this https URL. 
+
+**Abstract (ZH)**: Recent advancements in 3D Gaussian Splatting have significantly improved the efficiency and quality of dense semantic SLAM. However, previous methods are generally constrained by limited-category pre-trained classifiers and implicit semantic representation, which hinder their performance in open-set scenarios and restrict 3D object-level scene understanding. To address these issues, we propose OpenGS-SLAM, an innovative framework that utilizes 3D Gaussian representation to perform dense semantic SLAM in open-set environments. Our system integrates explicit semantic labels derived from 2D foundational models into the 3D Gaussian framework, facilitating robust 3D object-level scene understanding. We introduce Gaussian Voting Splatting to enable fast 2D label map rendering and scene updating. Additionally, we propose a Confidence-based 2D Label Consensus method to ensure consistent labeling across multiple views. Furthermore, we employ a Segmentation Counter Pruning strategy to improve the accuracy of semantic scene representation. Extensive experiments on both synthetic and real-world datasets demonstrate the effectiveness of our method in scene understanding, tracking, and mapping, achieving 10 times faster semantic rendering and 2 times lower storage costs compared to existing methods. Project page: [this https URL]. 
+
+---
+# Machine Learners Should Acknowledge the Legal Implications of Large Language Models as Personal Data 
+
+**Title (ZH)**: 机器学习者应承认大规模语言模型作为个人数据的法律影响 
+
+**Authors**: Henrik Nolte, Michèle Finck, Kristof Meding  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01630)  
+
+**Abstract**: Does GPT know you? The answer depends on your level of public recognition; however, if your information was available on a website, the answer is probably yes. All Large Language Models (LLMs) memorize training data to some extent. If an LLM training corpus includes personal data, it also memorizes personal data. Developing an LLM typically involves processing personal data, which falls directly within the scope of data protection laws. If a person is identified or identifiable, the implications are far-reaching: the AI system is subject to EU General Data Protection Regulation requirements even after the training phase is concluded. To back our arguments: (1.) We reiterate that LLMs output training data at inference time, be it verbatim or in generalized form. (2.) We show that some LLMs can thus be considered personal data on their own. This triggers a cascade of data protection implications such as data subject rights, including rights to access, rectification, or erasure. These rights extend to the information embedded with-in the AI model. (3.) This paper argues that machine learning researchers must acknowledge the legal implications of LLMs as personal data throughout the full ML development lifecycle, from data collection and curation to model provision on, e.g., GitHub or Hugging Face. (4.) We propose different ways for the ML research community to deal with these legal implications. Our paper serves as a starting point for improving the alignment between data protection law and the technical capabilities of LLMs. Our findings underscore the need for more interaction between the legal domain and the ML community. 
+
+**Abstract (ZH)**: GPT了解你吗？这取决于你的公众知名度；然而，如果你的信息出现在网站上，答案可能是肯定的。所有的大型语言模型（LLMs）在一定程度上会记忆训练数据。如果LLM的训练语料库包含个人数据，它也会记忆个人数据。开发LLM通常涉及处理个人数据，这直接处于数据保护法律的管辖范围之内。如果个人可以被识别或可被识别，后果深远：即使在训练阶段结束后，AI系统也需要遵守欧盟通用数据保护条例的要求。为了支持我们的论点：（1）我们重申LLMs在推理时输出训练数据，无论是直接引用还是概括形式。 （2）我们证明一些LLMs可以被视为个人数据本身，这引发了数据保护的一系列影响，如数据主体权利，包括访问权、更正权或删除权，这些权利延伸到嵌入在AI模型中的信息。 （3）本文 argued 机器学习研究人员必须在整个机器学习开发生命周期中承认LLMs作为个人数据的法律含义，从数据收集和整理到模型提供，例如在GitHub或Hugging Face。 （4）我们提出了研究社区处理这些法律影响的不同方法。我们的论文为改善数据保护法与LLMs技术能力之间的契合度提供了起点。我们的研究结果突显了法律领域与机器学习社区之间加强互动的必要性。 
+
+---
+# Advancing vision-language models in front-end development via data synthesis 
+
+**Title (ZH)**: 通过数据合成推动前端开发中的视觉语言模型发展 
+
+**Authors**: Tong Ge, Yashu Liu, Jieping Ye, Tianyi Li, Chao Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01619)  
+
+**Abstract**: Modern front-end (FE) development, especially when leveraging the unique features of frameworks like React and Vue, presents distinctive challenges. These include managing modular architectures, ensuring synchronization between data and visual outputs for declarative rendering, and adapting reusable components to various scenarios. Such complexities make it particularly difficult for state-of-the-art large vision-language models (VLMs) to generate accurate and functional code directly from design images. To address these challenges, we propose a reflective agentic workflow that synthesizes high-quality image-text data to capture the diverse characteristics of FE development. This workflow automates the extraction of self-contained\footnote{A \textbf{self-contained} code snippet is one that encapsulates all necessary logic, styling, and dependencies, ensuring it functions independently without requiring external imports or context.} code snippets from real-world projects, renders the corresponding visual outputs, and generates detailed descriptions that link design elements to functional code. To further expand the scope and utility of the synthesis, we introduce three data synthesis strategies: Evolution-based synthesis, which enables scalable and diverse dataset expansion; Waterfall-Model-based synthesis, which generates logically coherent code derived from system requirements; and Additive Development synthesis, which iteratively increases the complexity of human-authored components. We build a large vision-language model, Flame, trained on the synthesized datasets and demonstrate its effectiveness in generating React code via the $\text{pass}@k$ metric. Our results suggest that a code VLM trained to interpret images before code generation may achieve better performance. 
+
+**Abstract (ZH)**: 现代前端（FE）开发，特别是利用React和Vue等框架的独特功能时，面临着独特的挑战。这些挑战包括管理模块化架构、确保数据与视觉输出之间的同步以支持声明性渲染，以及将可重用组件适应各种场景。这些复杂性使得最先进的大型 vision-language 模型（VLMs）难以直接从设计图像生成准确且功能性的代码。为了解决这些挑战，我们提出了一种反思性代理工作流，以综合高质量的图像-文本数据来捕捉FE开发的多样化特征。该工作流自动提取来自真实项目且自包含的代码片段，渲染相应的视觉输出，并生成详细描述，将设计元素与功能代码关联起来。为了进一步扩大综合的范围和实用性，我们介绍了三种数据综合策略：基于进化的方法，实现可扩展且多样化的数据集扩展；瀑布模型方法，生成逻辑连贯的代码，源自系统需求；以及逐步开发方法，逐步增加人类撰写的组件复杂度。我们构建了一个基于综合数据集训练的大型 vision-language 模型Flame，并通过$\text{pass}@k$指标展示了其在生成React代码方面的有效性。我们的结果显示，一个在代码生成前解释图像的代码VLM可能表现出更好的性能。 
+
+---
+# Beyond Prompting: An Efficient Embedding Framework for Open-Domain Question Answering 
+
+**Title (ZH)**: 超越提示：一种高效的开放域问答嵌入框架 
+
+**Authors**: Zhanghao Hu, Hanqi Yan, Qingling Zhu, Zhenyi Shen, Yulan He, Lin Gui  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01606)  
+
+**Abstract**: Large language models have recently pushed open domain question answering (ODQA) to new frontiers. However, prevailing retriever-reader pipelines often depend on multiple rounds of prompt level instructions, leading to high computational overhead, instability, and suboptimal retrieval coverage. In this paper, we propose EmbQA, an embedding-level framework that alleviates these shortcomings by enhancing both the retriever and the reader. Specifically, we refine query representations via lightweight linear layers under an unsupervised contrastive learning objective, thereby reordering retrieved passages to highlight those most likely to contain correct answers. Additionally, we introduce an exploratory embedding that broadens the model's latent semantic space to diversify candidate generation and employs an entropy-based selection mechanism to choose the most confident answer automatically. Extensive experiments across three open-source LLMs, three retrieval methods, and four ODQA benchmarks demonstrate that EmbQA substantially outperforms recent baselines in both accuracy and efficiency. 
+
+**Abstract (ZH)**: 大型语言模型最近推动了开放域问答（ODQA）达到了新的前沿。然而，占主导地位的检索-阅读器管道经常依赖多轮提示级指令，导致高计算开销、不稳定性和检索覆盖率不足。本文提出EmbQA，这是一种嵌入级框架，通过增强检索器和阅读器来缓解这些问题。具体而言，我们通过轻量级线性层在无监督对比学习目标下精炼查询表示，从而重新排序检索段落以突出最有可能包含正确答案的部分。此外，我们引入了一种探索性嵌入，扩展了模型的潜在语义空间以多样化候选生成，并采用基于熵的选择机制以自动选择最自信的答案。在三个开源LLM、三种检索方法和四个ODQA基准上进行的广泛实验表明，EmbQA在准确性和效率上显著优于最近的基线。 
+
+---
+# Triple-Stream Deep Feature Selection with Metaheuristic Optimization and Machine Learning for Multi-Stage Hypertensive Retinopathy Diagnosis 
+
+**Title (ZH)**: 基于元启发式优化和机器学习的三流深特征选择多阶段高血压视网膜病变诊断 
+
+**Authors**: Suleyman Burcin Suyun, Mustafa Yurdakul, Sakir Tasdemir, Serkan Bilic  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01603)  
+
+**Abstract**: Hypertensive retinopathy (HR) is a severe eye disease that may cause permanent vision loss if not diagnosed early. Traditional diagnostic methods are time-consuming and subjective, highlighting the need for an automated, reliable system. Existing studies often use a single Deep Learning (DL) model, struggling to distinguish HR stages. This study introduces a three-stage approach to enhance HR diagnosis accuracy. Initially, 14 CNN models were tested, identifying DenseNet169, MobileNet, and ResNet152 as the most effective. DenseNet169 achieved 87.73% accuracy, 87.75% precision, 87.73% recall, 87.67% F1-score, and 0.8359 Cohen's Kappa. MobileNet followed with 86.40% accuracy, 86.60% precision, 86.40% recall, 86.31% F1-score, and 0.8180 Cohen's Kappa. ResNet152 ranked third with 85.87% accuracy, 86.01% precision, 85.87% recall, 85.83% F1-score, and 0.8188 Cohen's Kappa. In the second stage, deep features from these models were fused and classified using Machine Learning (ML) algorithms (SVM, RF, XGBoost). SVM (sigmoid kernel) performed best with 92.00% accuracy, 91.93% precision, 92.00% recall, 91.91% F1-score, and 0.8930 Cohen's Kappa. The third stage applied meta-heuristic optimization (GA, ABC, PSO, HHO) for feature selection. HHO yielded 94.66% accuracy, precision, and recall, 94.64% F1-score, and 0.9286 Cohen's Kappa. The proposed approach surpassed single CNN models and previous studies in HR diagnosis accuracy and generalization. 
+
+**Abstract (ZH)**: 高血压视网膜病变（HR）的三维诊断方法：提高诊断准确性和泛化能力 
+
+---
+# STAR: Stability-Inducing Weight Perturbation for Continual Learning 
+
+**Title (ZH)**: STAR：诱导稳定性的权重扭动用于连续学习 
+
+**Authors**: Masih Eskandar, Tooba Imtiaz, Davin Hill, Zifeng Wang, Jennifer Dy  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01595)  
+
+**Abstract**: Humans can naturally learn new and varying tasks in a sequential manner. Continual learning is a class of learning algorithms that updates its learned model as it sees new data (on potentially new tasks) in a sequence. A key challenge in continual learning is that as the model is updated to learn new tasks, it becomes susceptible to catastrophic forgetting, where knowledge of previously learned tasks is lost. A popular approach to mitigate forgetting during continual learning is to maintain a small buffer of previously-seen samples and to replay them during training. However, this approach is limited by the small buffer size, and while forgetting is reduced, it is still present. In this paper, we propose a novel loss function, STAR, that exploits the worst-case parameter perturbation that reduces the KL-divergence of model predictions with that of its local parameter neighborhood to promote stability and alleviate forgetting. STAR can be combined with almost any existing rehearsal-based method as a plug-and-play component. We empirically show that STAR consistently improves the performance of existing methods by up to 15% across varying baselines and achieves superior or competitive accuracy to that of state-of-the-art methods aimed at improving rehearsal-based continual learning. 
+
+**Abstract (ZH)**: 人类可以自然地以序贯方式学习新的和变化的任务。连续学习是一类在序列中遇到新数据（可能是新任务）时更新其学习模型的算法。连续学习中的一个关键挑战是在模型被更新以学习新任务时，它会变得容易出现灾难性遗忘，即先前学习的任务的知识被丢失。减轻连续学习中遗忘的一个流行方法是维护一个小型先前见过的样本缓冲区，并在训练期间重新播放它们。然而，这种方法受限于小缓冲区的大小，虽然遗忘减少了，但仍然存在。在本文中，我们提出了一种新颖的损失函数STAR，它利用最坏情况参数扰动来减小模型预测与其局部参数邻域之间的KL散度，从而促进稳定性和减轻遗忘。STAR可以与几乎所有现有的重温方法无缝结合。我们实验证明，STAR可以在多种基线方法上提高现有方法的性能多达15%，并在目标于改进重温式连续学习的最新方法中实现了优于或可竞争的准确率。 
+
+---
+# An Efficient Approach to Detecting Lung Nodules Using Swin Transformer 
+
+**Title (ZH)**: 基于Swin Transformer的肺结节检测高效方法 
+
+**Authors**: Saeed Shakuri, Alireza Rezvanian  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01592)  
+
+**Abstract**: Lung cancer has the highest rate of cancer-caused deaths, and early-stage diagnosis could increase the survival rate. Lung nodules are common indicators of lung cancer, making their detection crucial. Various lung nodule detection models exist, but many lack efficiency. Hence, we propose a more efficient approach by leveraging 2D CT slices, reducing computational load and complexity in training and inference. We employ the tiny version of Swin Transformer to benefit from Vision Transformers (ViT) while maintaining low computational cost. A Feature Pyramid Network is added to enhance detection, particularly for small nodules. Additionally, Transfer Learning is used to accelerate training. Our experimental results show that the proposed model outperforms state-of-the-art methods, achieving higher mAP and mAR for small nodules by 1.3% and 1.6%, respectively. Overall, our model achieves the highest mAP of 94.7% and mAR of 94.9%. 
+
+**Abstract (ZH)**: 肺癌是癌症致死率最高的疾病，早期诊断可以提高生存率。肺结节是肺癌的常见指标，因此其检测至关重要。存在多种肺结节检测模型，但许多模型缺乏效率。因此，我们提出了一种更高效的方法，通过利用2D CT切片，减少训练和推断的计算负担和复杂性。我们采用Swin Transformer的Tiny版本，利用Vision Transformers的优势同时保持低计算成本。添加了Feature Pyramid Network以增强检测，特别是对小结节的检测。此外，使用迁移学习加速训练。实验结果表明，所提出模型优于现有方法，对于小结节分别提高mAP和mAR性能1.3%和1.6%。总体而言，我们的模型实现了最高的mAP为94.7%和mAR为94.9%。 
+
+---
+# EliteKV: Scalable KV Cache Compression via RoPE Frequency Selection and Joint Low-Rank Projection 
+
+**Title (ZH)**: 精英KV：通过RoPE频率选择和联合低秩投影的可扩展键值缓存压缩 
+
+**Authors**: Yuhao Zhou, Sirui Song, Boyang Liu, Zhiheng Xi, Senjie Jin, Xiaoran Fan, Zhihao Zhang, Wei Li, Xuanjing Huang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01586)  
+
+**Abstract**: Rotary Position Embedding (RoPE) enables each attention head to capture multi-frequency information along the sequence dimension and is widely applied in foundation models. However, the nonlinearity introduced by RoPE complicates optimization of the key state in the Key-Value (KV) cache for RoPE-based attention. Existing KV cache compression methods typically store key state before rotation and apply the transformation during decoding, introducing additional computational overhead. This paper introduces EliteKV, a flexible modification framework for RoPE-based models supporting variable KV cache compression ratios. EliteKV first identifies the intrinsic frequency preference of each head using RoPElite, selectively restoring linearity to certain dimensions of key within attention computation. Building on this, joint low-rank compression of key and value enables partial cache sharing. Experimental results show that with minimal uptraining on only $0.6\%$ of the original training data, RoPE-based models achieve a $75\%$ reduction in KV cache size while preserving performance within a negligible margin. Furthermore, EliteKV consistently performs well across models of different scales within the same family. 
+
+**Abstract (ZH)**: Rotary Position Embedding (RoPE)的Rotaryelite enablers Each Attention Head to Capture Multi-Frequency Information along the Sequence Dimension and is Widely Applied in Foundation Models 
+
+---
+# A Selective Learning Method for Temporal Graph Continual Learning 
+
+**Title (ZH)**: 时空图持续学习的选择性学习方法 
+
+**Authors**: Hanmo Liu, Shimin Di, Haoyang Li, Xun Jian, Yue Wang, Lei Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01580)  
+
+**Abstract**: Node classification is a key task in temporal graph learning (TGL). Real-life temporal graphs often introduce new node classes over time, but existing TGL methods assume a fixed set of classes. This assumption brings limitations, as updating models with full data is costly, while focusing only on new classes results in forgetting old ones. Graph continual learning (GCL) methods mitigate forgetting using old-class subsets but fail to account for their evolution. We define this novel problem as temporal graph continual learning (TGCL), which focuses on efficiently maintaining up-to-date knowledge of old classes. To tackle TGCL, we propose a selective learning framework that substitutes the old-class data with its subsets, Learning Towards the Future (LTF). We derive an upper bound on the error caused by such replacement and transform it into objectives for selecting and learning subsets that minimize classification error while preserving the distribution of the full old-class data. Experiments on three real-world datasets validate the effectiveness of LTF on TGCL. 
+
+**Abstract (ZH)**: 时间图持续学习（TGCL）是时间图学习（TGL）中的一个关键任务。现实中的时间图往往会随时间引入新的节点类，但现有TGL方法假设类集是固定的。这一假设带来了局限性，因为用全数据更新模型代价高昂，而仅专注于新类会导致遗忘旧类。图持续学习（GCL）方法通过使用旧类子集来减轻遗忘，但未能考虑到类的演变。我们定义了这个新的问题为时间图持续学习（TGCL），专注于高效维持旧类的最新知识。为解决TGCL，我们提出了一种选择性学习框架，用旧类子集替代旧类数据，称为“向未来学习”（Learning Towards the Future，LTF）。我们推导出由于这种替代引起的误差上限，并将其转化为目标，以选择和学习最小化分类误差的同时保持全旧类数据分布的子集。在三个真实世界的数据集上的实验验证了LTF在TGCL上的有效性。 
+
+---
+# MoCFL: Mobile Cluster Federated Learning Framework for Highly Dynamic Network 
+
+**Title (ZH)**: 移动簇联邦学习框架：高度动态网络环境下的学习 
+
+**Authors**: Kai Fang, Jiangtao Deng, Chengzu Dong, Usman Naseem, Tongcun Liu, Hailin Feng, Wei Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01557)  
+
+**Abstract**: Frequent fluctuations of client nodes in highly dynamic mobile clusters can lead to significant changes in feature space distribution and data drift, posing substantial challenges to the robustness of existing federated learning (FL) strategies. To address these issues, we proposed a mobile cluster federated learning framework (MoCFL). MoCFL enhances feature aggregation by introducing an affinity matrix that quantifies the similarity between local feature extractors from different clients, addressing dynamic data distribution changes caused by frequent client churn and topology changes. Additionally, MoCFL integrates historical and current feature information when training the global classifier, effectively mitigating the catastrophic forgetting problem frequently encountered in mobile scenarios. This synergistic combination ensures that MoCFL maintains high performance and stability in dynamically changing mobile environments. Experimental results on the UNSW-NB15 dataset show that MoCFL excels in dynamic environments, demonstrating superior robustness and accuracy while maintaining reasonable training costs. 
+
+**Abstract (ZH)**: 频繁的客户端节点波动在高度动态的移动集群中会导致特征空间分布和数据漂移的显著变化，对现有联邦学习（FL）策略的稳健性构成了重大挑战。为了解决这些问题，我们提出了一种移动集群联邦学习框架（MoCFL）。MoCFL通过引入量化不同客户端本地特征提取器之间相似性的亲和矩阵，增强了特征聚合，以应对由频繁的客户端波动和拓扑变化引起的数据分布变化。此外，MoCFL在训练全局分类器时结合历史和当前的特征信息，有效地缓解了移动场景中经常遇到的灾难性遗忘问题。这种协同组合确保MoCFL在动态变化的移动环境中保持高性能和稳定性。实验结果表明，MoCFL在动态环境中表现出色，展现了优越的鲁棒性和准确性，同时保持了合理的训练成本。 
+
+---
+# Effective High-order Graph Representation Learning for Credit Card Fraud Detection 
+
+**Title (ZH)**: 有效的高阶图表示学习在信用卡欺诈检测中的应用 
+
+**Authors**: Yao Zou, Dawei Cheng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01556)  
+
+**Abstract**: Credit card fraud imposes significant costs on both cardholders and issuing banks. Fraudsters often disguise their crimes, such as using legitimate transactions through several benign users to bypass anti-fraud detection. Existing graph neural network (GNN) models struggle with learning features of camouflaged, indirect multi-hop transactions due to their inherent over-smoothing issues in deep multi-layer aggregation, presenting a major challenge in detecting disguised relationships. Therefore, in this paper, we propose a novel High-order Graph Representation Learning model (HOGRL) to avoid incorporating excessive noise during the multi-layer aggregation process. In particular, HOGRL learns different orders of \emph{pure} representations directly from high-order transaction graphs. We realize this goal by effectively constructing high-order transaction graphs first and then learning the \emph{pure} representations of each order so that the model could identify fraudsters' multi-hop indirect transactions via multi-layer \emph{pure} feature learning. In addition, we introduce a mixture-of-expert attention mechanism to automatically determine the importance of different orders for jointly optimizing fraud detection performance. We conduct extensive experiments in both the open source and real-world datasets, the result demonstrates the significant improvements of our proposed HOGRL compared with state-of-the-art fraud detection baselines. HOGRL's superior performance also proves its effectiveness in addressing high-order fraud camouflage criminals. 
+
+**Abstract (ZH)**: 信用卡欺诈对持卡人和发卡银行造成了显著的经济损失。欺诈者常常掩藏其犯罪行为，例如通过几个良性用户的合法交易进行多跳间接操作以规避反欺诈检测。现有的图神经网络（GNN）模型在进行深层多层聚合时由于固有的过度平滑问题，在学习隐藏的、间接的多跳交易特征时存在困难，给检测隐藏关系带来了重大挑战。因此，在本文中，我们提出了一种新的高阶图表示学习模型（HOGRL），以避免在多层聚合过程中引入过多噪声。特别是，HOGRL 直接从高阶交易图中学习不同阶次的纯净表示。我们通过有效构建高阶交易图并学习每一阶的纯净表示来实现这一目标，使得模型能够通过多层纯净特征学习来识别欺诈者的多跳间接交易。此外，我们引入了一种专家混合注意力机制，以自动确定不同阶次的重要性，从而联合优化欺诈检测性能。我们在开源数据集和真实世界数据集中进行了广泛的实验，结果表明，与最先进的欺诈检测基准相比，我们提出的HOGRL在欺诈检测性能上具有显著的改进。HOGRL 的出色性能进一步证明了其在应对高阶欺诈伪装犯罪方面的有效性。 
+
+---
+# Compositional Reasoning with Transformers, RNNs, and Chain of Thought 
+
+**Title (ZH)**: Transformer、RNN和思维链的组合推理 
+
+**Authors**: Gilad Yehudai, Noah Amsel, Joan Bruna  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01544)  
+
+**Abstract**: We study and compare the expressive power of transformers, RNNs, and transformers with chain of thought tokens on a simple and natural class of problems we term Compositional Reasoning Questions (CRQ). This family captures problems like evaluating Boolean formulas and multi-step word problems. Assuming standard hardness assumptions from circuit complexity and communication complexity, we prove that none of these three architectures is capable of solving CRQs unless some hyperparameter (depth, embedding dimension, and number of chain of thought tokens, respectively) grows with the size of the input. We also provide a construction for each architecture that solves CRQs. For transformers, our construction uses depth that is logarithmic in the problem size. For RNNs, logarithmic embedding dimension is necessary and sufficient, so long as the inputs are provided in a certain order. (Otherwise, a linear dimension is necessary). For transformers with chain of thought, our construction uses $n$ CoT tokens. These results show that, while CRQs are inherently hard, there are several different ways for language models to overcome this hardness. Even for a single class of problems, each architecture has strengths and weaknesses, and none is strictly better than the others. 
+
+**Abstract (ZH)**: 我们研究并比较了Transformer、RNN以及带有链式推理标记的Transformer在一类称为组合推理问题（CRQ）的简单自然问题上的表达能力。我们证明，除非某些超参数（深度、嵌入维度和链式推理标记的数量分别）随着输入规模的增长而增长，否则这三种架构均无法解决CRQ。我们还为每种架构提供了解决CRQ的构造方法。对于Transformer，我们的构造使用深度与问题规模的对数成比例。对于RNN，嵌入维度需要是问题规模的对数比例，前提是输入按照某种顺序提供（否则，嵌入维度需要是线性的）。对于带有链式推理的Transformer，我们的构造使用n个链式推理标记。这些结果表明，虽然CRQ本质上是困难的，但语言模型可以通过多种方式克服这种困难。即使对于单一类别的问题，每种架构也有各自的优缺点，没有一种架构在所有情况下都优于其他架构。 
+
+---
+# Revisiting Large Language Model Pruning using Neuron Semantic Attribution 
+
+**Title (ZH)**: revisit 大型语言模型剪枝利用神经语义归因 
+
+**Authors**: Yizhuo Ding, Xinwei Sun, Yanwei Fu, Guosheng Hu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01542)  
+
+**Abstract**: Model pruning technique is vital for accelerating large language models by reducing their size and computational requirements. However, the generalizability of existing pruning methods across diverse datasets and tasks remains unclear. Thus, we conduct extensive evaluations on 24 datasets and 4 tasks using popular pruning methods. Based on these evaluations, we find and then investigate that calibration set greatly affect the performance of pruning methods. In addition, we surprisingly find a significant performance drop of existing pruning methods in sentiment classification tasks. To understand the link between performance drop and pruned neurons, we propose Neuron Semantic Attribution, which learns to associate each neuron with specific semantics. This method first makes the unpruned neurons of LLMs explainable. 
+
+**Abstract (ZH)**: 现有的剪枝方法在不同数据集和任务上的泛化能力仍不明确：一种针对情感分类任务的显著性能下降的解释——基于神经元语义归因的研究 
+
+---
+# Pragmatic Inference Chain (PIC) Improving LLMs' Reasoning of Authentic Implicit Toxic Language 
+
+**Title (ZH)**: Pragmatic 推理链 (PIC) 改进大语言模型对真实隐含有毒语言的推理能力 
+
+**Authors**: Xi Chen, Shuo Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01539)  
+
+**Abstract**: The rapid development of large language models (LLMs) gives rise to ethical concerns about their performance, while opening new avenues for developing toxic language detection techniques. However, LLMs' unethical output and their capability of detecting toxicity have primarily been tested on language data that do not demand complex meaning inference, such as the biased associations of 'he' with programmer and 'she' with household. Nowadays toxic language adopts a much more creative range of implicit forms, thanks to advanced censorship. In this study, we collect authentic toxic interactions that evade online censorship and that are verified by human annotators as inference intensive. To evaluate and improve LLMs' reasoning of the authentic implicit toxic language, we propose a new prompting method, Pragmatic Inference Chain (PIC), drawn on interdisciplinary findings from cognitive science and linguistics. The PIC prompting significantly improves the success rate of GPT-4o, Llama-3.1-70B-Instruct, and DeepSeek-v2.5 in identifying implicit toxic language, compared to both direct prompting and Chain-of-Thought. In addition, it also facilitates the models to produce more explicit and coherent reasoning processes, hence can potentially be generalized to other inference-intensive tasks, e.g., understanding humour and metaphors. 
+
+**Abstract (ZH)**: 大型语言模型的迅速发展引发了对其性能的伦理关切，同时也为开发有毒语言检测技术开辟了新途径。然而，大型语言模型的不当输出及其检测毒性的能力主要是在不需要复杂意义推理的语言数据上进行测试的，例如“他”与程序员的偏见关联，“她”与家庭的关联。如今，由于高级审查技术的应用，有毒语言采取了更为创意的形式。在本研究中，我们收集了逃避在线审查的真实有毒互动，并由人工标注员验证这些互动需要复杂的推理。为了评估和提高大型语言模型对真实隐含有毒语言的理解能力，我们提出了一种新的提示方法——实用推理链（PIC），这一方法借鉴了认知科学和语言学的跨学科研究成果。与直接提示和思维链条相比，PIC提示显著提高了GPT-4o、Llama-3.1-70B-Instruct和DeepSeek-v2.5在识别隐含有毒语言方面的成功率。此外，它还使模型产生更加明确和连贯的推理过程，从而有可能应用于其他需要复杂推理的任务，例如理解幽默和隐喻。 
+
+---
+# Entailment vs. Verification for Partial-assignment Satisfiability and Enumeration 
+
+**Title (ZH)**: 部分赋值满足性与枚举的蕴含 vs. 验证 
+
+**Authors**: Roberto Sebastiani  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01536)  
+
+**Abstract**: Many procedures for SAT-related problems, in particular for those requiring the complete enumeration of satisfying truth assignments, rely their efficiency and effectiveness on the detection of (possibly small) partial assignments satisfying an input formula. Surprisingly, there seems to be no unique universally-agreed definition of formula satisfaction by a partial assignment in the literature. In this paper we analyze in deep the issue of satisfaction by partial assignments, raising a flag about some ambiguities and subtleties of this concept, and investigating their practical consequences. We identify two alternative notions that are implicitly used in the literature, namely verification and entailment, which coincide if applied to CNF formulas but differ and present complementary properties if applied to non-CNF or to existentially-quantified formulas. We show that, although the former is easier to check and as such is implicitly used by most current search procedures, the latter has better theoretical properties, and can improve the efficiency and effectiveness of enumeration procedures. 
+
+**Abstract (ZH)**: 关于部分赋值满足性的歧义与影响：从验证到蕴含的分析 
+
+---
+# Compare different SG-Schemes based on large least square problems 
+
+**Title (ZH)**: 基于大规模最小二乘问题的不同SG-Schemes比较 
+
+**Authors**: Ramkrishna Acharya  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01507)  
+
+**Abstract**: This study reviews some of the popular stochastic gradient-based schemes based on large least-square problems. These schemes, often called optimizers in machine learning play a crucial role in finding better parameters of a model. Hence this study focuses on viewing such optimizers with different hyper-parameters and analyzing them based on least square problems. Codes that produced results in this work are available on this https URL. 
+
+**Abstract (ZH)**: 本研究回顾了一些基于大型最小二乘问题的流行随机梯度方案。这些方案在机器学习中通常被称为优化器，对于找到模型更好的参数起着关键作用。因此，本研究重点在于从不同超参数的角度审视这些优化器，并基于最小二乘问题进行分析。本工作中产生的代码可在以下链接获取。 
+
+---
+# Lossy Neural Compression for Geospatial Analytics: A Review 
+
+**Title (ZH)**: 地理空间分析中的有损神经压缩：一个综述 
+
+**Authors**: Carlos Gomes, Isabelle Wittmann, Damien Robert, Johannes Jakubik, Tim Reichelt, Michele Martone, Stefano Maurogiovanni, Rikard Vinge, Jonas Hurst, Erik Scheurer, Rocco Sedona, Thomas Brunschwiler, Stefan Kesselheim, Matej Batic, Philip Stier, Jan Dirk Wegner, Gabriele Cavallaro, Edzer Pebesma, Michael Marszalek, Miguel A Belenguer-Plomer, Kennedy Adriko, Paolo Fraccaro, Romeo Kienzler, Rania Briq, Sabrina Benassou, Michele Lazzarini, Conrad M Albrecht  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01505)  
+
+**Abstract**: Over the past decades, there has been an explosion in the amount of available Earth Observation (EO) data. The unprecedented coverage of the Earth's surface and atmosphere by satellite imagery has resulted in large volumes of data that must be transmitted to ground stations, stored in data centers, and distributed to end users. Modern Earth System Models (ESMs) face similar challenges, operating at high spatial and temporal resolutions, producing petabytes of data per simulated day.
+Data compression has gained relevance over the past decade, with neural compression (NC) emerging from deep learning and information theory, making EO data and ESM outputs ideal candidates due to their abundance of unlabeled data.
+In this review, we outline recent developments in NC applied to geospatial data. We introduce the fundamental concepts of NC including seminal works in its traditional applications to image and video compression domains with focus on lossy compression. We discuss the unique characteristics of EO and ESM data, contrasting them with "natural images", and explain the additional challenges and opportunities they present. Moreover, we review current applications of NC across various EO modalities and explore the limited efforts in ESM compression to date.
+The advent of self-supervised learning (SSL) and foundation models (FM) has advanced methods to efficiently distill representations from vast unlabeled data. We connect these developments to NC for EO, highlighting the similarities between the two fields and elaborate on the potential of transferring compressed feature representations for machine--to--machine communication.
+Based on insights drawn from this review, we devise future directions relevant to applications in EO and ESM. 
+
+**Abstract (ZH)**: 过去几十年间，地球观测（EO）数据的数量出现了爆炸性增长。卫星影像前所未有的地球表面和大气覆盖范围产生了大量需要传输到地面站、存储在数据中心并分发给最终用户的数据。现代地球系统模型（ESMs）面临着类似的挑战，它们以高空间和时间分辨率运行，每日生成数 PB 的数据。
+数据压缩在过去十年中变得尤为重要，神经压缩（NC）从深度学习和信息论中发展而来，使得由于其丰富的未标注数据，EO数据和ESM输出成为了潜在的理想应用对象。
+在这篇综述中，我们概述了神经压缩（NC）在地理空间数据中的最新发展。我们介绍了神经压缩的基本概念，包括其传统应用到图像和视频压缩领域的经典工作，并着重讨论了具有损益压缩的特征。我们讨论了EO和ESM数据的独特特性，将它们与“自然图像”进行对比，解释了它们所带来的额外挑战与机会。此外，我们回顾了NC在各种EO模态中的当前应用，并探讨了到目前为止在ESM压缩方面所做的有限努力。
+自监督学习（SSL）和基础模型（FM）的发展促进了从大量未标注数据中高效提取表示的方法。我们将这些进展与EO中的神经压缩（NC）联系起来，强调了两个领域之间的相似之处，并阐述了传递压缩特征表示以实现机器对机器通信的潜力。
+基于本文综述所得的见解，我们提出了与EO和ESM应用相关的发展方向。 
+
+---
+# Liger: Linearizing Large Language Models to Gated Recurrent Structures 
+
+**Title (ZH)**: Liger: 将大型语言模型线性化为门控循环结构 
+
+**Authors**: Disen Lan, Weigao Sun, Jiaxi Hu, Jusen Du, Yu Cheng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01496)  
+
+**Abstract**: Transformers with linear recurrent modeling offer linear-time training and constant-memory inference. Despite their demonstrated efficiency and performance, pretraining such non-standard architectures from scratch remains costly and risky. The linearization of large language models (LLMs) transforms pretrained standard models into linear recurrent structures, enabling more efficient deployment. However, current linearization methods typically introduce additional feature map modules that require extensive fine-tuning and overlook the gating mechanisms used in state-of-the-art linear recurrent models. To address these issues, this paper presents Liger, short for Linearizing LLMs to gated recurrent structures. Liger is a novel approach for converting pretrained LLMs into gated linear recurrent models without adding extra parameters. It repurposes the pretrained key matrix weights to construct diverse gating mechanisms, facilitating the formation of various gated recurrent structures while avoiding the need to train additional components from scratch. Using lightweight fine-tuning with Low-Rank Adaptation (LoRA), Liger restores the performance of the linearized gated recurrent models to match that of the original LLMs. Additionally, we introduce Liger Attention, an intra-layer hybrid attention mechanism, which significantly recovers 93\% of the Transformer-based LLM at 0.02\% pre-training tokens during the linearization process, achieving competitive results across multiple benchmarks, as validated on models ranging from 1B to 8B parameters. Code is available at this https URL. 
+
+**Abstract (ZH)**: 将大型语言模型线性化为门控递归结构的Liger：无额外参数的线性递归模型高效部署 
+
+---
+# SePer: Measure Retrieval Utility Through The Lens Of Semantic Perplexity Reduction 
+
+**Title (ZH)**: SePer: 通过语义困惑度降低的角度衡量检索效能 
+
+**Authors**: Lu Dai, Yijie Xu, Jinhui Ye, Hao Liu, Hui Xiong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01478)  
+
+**Abstract**: Large Language Models (LLMs) have demonstrated improved generation performance by incorporating externally retrieved knowledge, a process known as retrieval-augmented generation (RAG). Despite the potential of this approach, existing studies evaluate RAG effectiveness by 1) assessing retrieval and generation components jointly, which obscures retrieval's distinct contribution, or 2) examining retrievers using traditional metrics such as NDCG, which creates a gap in understanding retrieval's true utility in the overall generation process. To address the above limitations, in this work, we introduce an automatic evaluation method that measures retrieval quality through the lens of information gain within the RAG framework. Specifically, we propose Semantic Perplexity (SePer), a metric that captures the LLM's internal belief about the correctness of the retrieved information. We quantify the utility of retrieval by the extent to which it reduces semantic perplexity post-retrieval. Extensive experiments demonstrate that SePer not only aligns closely with human preferences but also offers a more precise and efficient evaluation of retrieval utility across diverse RAG scenarios. 
+
+**Abstract (ZH)**: 大型语言模型（LLMs）通过融合外部检索知识展示了增强的生成性能，这一过程称为检索增强生成（RAG）。尽管这种方法具有潜力，现有研究通过1）联合评估检索和生成组件，从而使检索的独特贡献模糊化，或2）使用传统指标如NDCG评估检索器，导致对检索在整个生成过程中的真正作用理解不足。为解决上述局限性，本文提出了一种自动评估方法，通过RAG框架内的信息增益视角测量检索质量。具体而言，我们提出了一种语义困惑度（SePer）度量，该度量捕捉了LLM对检索信息正确性的内部信念。我们通过检索后减少语义困惑度的程度来量化检索的实用性。广泛的实验表明，SePer不仅与人类偏好高度一致，而且能够在多种RAG场景中提供更精确和高效的检索实用性评估。 
+
+---
+# Position: Ensuring mutual privacy is necessary for effective external evaluation of proprietary AI systems 
+
+**Title (ZH)**: 确保相互隐私是有效评估私有AI系统的必要条件。 
+
+**Authors**: Ben Bucknall, Robert F. Trager, Michael A. Osborne  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01470)  
+
+**Abstract**: The external evaluation of AI systems is increasingly recognised as a crucial approach for understanding their potential risks. However, facilitating external evaluation in practice faces significant challenges in balancing evaluators' need for system access with AI developers' privacy and security concerns. Additionally, evaluators have reason to protect their own privacy - for example, in order to maintain the integrity of held-out test sets. We refer to the challenge of ensuring both developers' and evaluators' privacy as one of providing mutual privacy. In this position paper, we argue that (i) addressing this mutual privacy challenge is essential for effective external evaluation of AI systems, and (ii) current methods for facilitating external evaluation inadequately address this challenge, particularly when it comes to preserving evaluators' privacy. In making these arguments, we formalise the mutual privacy problem; examine the privacy and access requirements of both model owners and evaluators; and explore potential solutions to this challenge, including through the application of cryptographic and hardware-based approaches. 
+
+**Abstract (ZH)**: AI系统外部评估中外隐私保护挑战及其应对策略 
+
+---
+# Rethinking Data: Towards Better Performing Domain-Specific Small Language Models 
+
+**Title (ZH)**: 重新审视数据：朝着更好的领域专用小语言模型方向努力 
+
+**Authors**: Boris Nazarov, Darya Frolova, Yackov Lubarsky, Alexei Gaissinski, Pavel Kisilev  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01464)  
+
+**Abstract**: Fine-tuning of Large Language Models (LLMs) for downstream tasks, performed on domain-specific data has shown significant promise. However, commercial use of such LLMs is limited by the high computational cost required for their deployment at scale. On the other hand, small Language Models (LMs) are much more cost effective but have subpar performance in a similar setup. This paper presents our approach to finetuning a small LM, that reaches high accuracy in multiple choice question answering task. We achieve this by improving data quality at each stage of the LM training pipeline. In particular, we start with data structuring resulting in extraction of compact, semantically meaningful text chunks used by a retriever. This allows more efficient knowledge digestion by the LM. Further, we improve the retrieved context by training a lightweight Chunk Re-Ranker (CRR) that generates more accurate relative relevance chunk scores. Finally, we improve the model generalization ability by merging the models fine-tuned with different parameters on different data subsets. We present detailed procedure descriptions, and corresponding experimental findings that show the improvements of each one of the proposed techniques. 
+
+**Abstract (ZH)**: 小型语言模型（LMs）在下游任务上的微调研究：通过提升数据质量实现高准确率的选择题回答任务 
+
+---
+# Towards Widening The Distillation Bottleneck for Reasoning Models 
+
+**Title (ZH)**: 扩展推理模型中的蒸馏瓶颈 
+
+**Authors**: Huifeng Yin, Yu Zhao, Minghao Wu, Xuanfan Ni, Bo Zeng, Hao Wang, Tianqi Shi, Liangying Shao, Chenyang Lyu, Longyue Wang, Weihua Luo, Kaifu Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01461)  
+
+**Abstract**: Large Reasoning Models(LRMs) such as OpenAI o1 and DeepSeek-R1 have shown remarkable reasoning capabilities by scaling test-time compute and generating long Chain-of-Thought(CoT). Distillation--post-training on LRMs-generated data--is a straightforward yet effective method to enhance the reasoning abilities of smaller models, but faces a critical bottleneck: we found that distilled long CoT data poses learning difficulty for small models and leads to the inheritance of biases (i.e. over-thinking) when using Supervised Fine-tuning(SFT) and Reinforcement Learning(RL) methods. To alleviate this bottleneck, we propose constructing tree-based CoT data from scratch via Monte Carlo Tree Search(MCTS). We then exploit a set of CoT-aware approaches, including Thoughts Length Balance, Fine-grained DPO, and Joint Post-training Objective, to enhance SFT and RL on the construted data. 
+
+**Abstract (ZH)**: 大规模推理模型（LRMs）如OpenAI o1和DeepSeek-R1通过扩展测试时计算资源并生成长链推理（CoT）展示了显著的推理能力。从LRMs生成的数据进行蒸馏是一种简单而有效的方法来提升小型模型的推理能力，但面临一个关键瓶颈：我们发现蒸馏的长链推理数据对小型模型的学习构成了困难，并在使用监督微调（SFT）和强化学习（RL）方法时导致了偏见的传承（即过度推理）。为了缓解这一瓶颈，我们提出通过蒙特卡洛树搜索（MCTS）从头构建基于树的链推理数据。然后我们利用一系列链推理（CoT）感知的方法，包括思路长度平衡、细粒度DPO和联合后训练目标，来增强在构建数据上进行的SFT和RL。 
+
+---
+# Structural Deep Encoding for Table Question Answering 
+
+**Title (ZH)**: 表格问题回答的结构深度编码 
+
+**Authors**: Raphaël Mouravieff, Benjamin Piwowarski, Sylvain Lamprier  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01457)  
+
+**Abstract**: Although Transformers-based architectures excel at processing textual information, their naive adaptation for tabular data often involves flattening the table structure. This simplification can lead to the loss of essential inter-dependencies between rows, columns, and cells, while also posing scalability challenges for large tables. To address these issues, prior works have explored special tokens, structured embeddings, and sparse attention patterns. In this paper, we conduct a comprehensive analysis of tabular encoding techniques, which highlights the crucial role of attention sparsity in preserving structural information of tables. We also introduce a set of novel sparse attention mask designs for tabular data, that not only enhance computational efficiency but also preserve structural integrity, leading to better overall performance. 
+
+**Abstract (ZH)**: 基于Transformer的表数据编码技术：注意力稀疏性的关键作用与新颖设计 
+
+---
+# AC-Lite : A Lightweight Image Captioning Model for Low-Resource Assamese Language 
+
+**Title (ZH)**: AC-Lite：一种用于低资源阿萨姆语的轻量级图像 Captioning 模型 
+
+**Authors**: Pankaj Choudhury, Yogesh Aggarwal, Prithwijit Guha, Sukumar Nandi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01453)  
+
+**Abstract**: Neural networks have significantly advanced AI applications, yet their real-world adoption remains constrained by high computational demands, hardware limitations, and accessibility challenges. In image captioning, many state-of-the-art models have achieved impressive performances while relying on resource-intensive architectures. This made them impractical for deployment on resource-constrained devices. This limitation is particularly noticeable for applications involving low-resource languages. We demonstrate the case of image captioning in Assamese language, where lack of effective, scalable systems can restrict the accessibility of AI-based solutions for native Assamese speakers. This work presents AC-Lite, a computationally efficient model for image captioning in low-resource Assamese language. AC-Lite reduces computational requirements by replacing computation-heavy visual feature extractors like FasterRCNN with lightweight ShuffleNetv2x1.5. Additionally, Gated Recurrent Units (GRUs) are used as the caption decoder to further reduce computational demands and model parameters. Furthermore, the integration of bilinear attention enhances the model's overall performance. AC-Lite can operate on edge devices, thereby eliminating the need for computation on remote servers. The proposed AC-Lite model achieves 82.3 CIDEr score on the COCO-AC dataset with 1.098 GFLOPs and 25.65M parameters. 
+
+**Abstract (ZH)**: 神经网络虽然显著推动了AI应用的发展，但在实际应用中仍受限于高计算需求、硬件限制和可访问性挑战。在图像_caption方面，许多最先进的模型虽然实现了令人印象深刻的性能，但依赖于计算密集型架构，这使它们在资源受限的设备上难以部署。这一限制在涉及低资源语言的应用中尤为明显。本文以奥里姆语（Assamese）图像Caption为例，展示了缺乏有效可扩展系统的限制如何阻碍了基于AI的解决方案对原生奥里姆语使用者的访问。本文提出了AC-Lite，一种针对低资源奥里姆语图像Caption的计算高效模型。AC-Lite通过使用轻量级的ShuffleNetv2x1.5替代计算密集型的视觉特征提取器如FasterRCNN，减少了计算需求。同时，使用门控循环单元（GRUs）作为Caption解码器进一步降低了计算需求和模型参数数量。此外，引入双线性注意力机制提高了模型的整体性能。AC-Lite可以在边缘设备上运行，从而消除了在远程服务器上进行计算的需求。所提出的AC-Lite模型在COCO-AC数据集上的CIDEr得分为82.3，计算量为1.098 GFLOPs，参数量为25.65M。 
+
+---
+# POPGym Arcade: Parallel Pixelated POMDPs 
+
+**Title (ZH)**: POPGym 赌框：并行像素化部分可观测马尔可夫决策过程 
+
+**Authors**: Zekang Wang, Zhe He, Edan Toledo, Steven Morad  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01450)  
+
+**Abstract**: We introduce POPGym Arcade, a benchmark consisting of 7 pixel-based environments each with three difficulties, utilizing a single observation and action space. Each environment offers both fully observable and partially observable variants, enabling counterfactual studies on partial observability. POPGym Arcade utilizes JIT compilation on hardware accelerators to achieve substantial speedups over CPU-bound environments. Moreover, this enables Podracer-style architectures to further increase hardware utilization and training speed. We evaluate memory models on our environments using a Podracer variant of Q learning, and examine the results. Finally, we generate memory saliency maps, uncovering how memories propagate through policies. Our library is available at this https URL popgym_arcade. 
+
+**Abstract (ZH)**: POPGym Arcade：一个基于像素的多难度环境基准，包含7个环境，每环境有三种难度，利用单一的观察和动作空间，支持全可观测和部分可观测变体，利用硬件加速器的JIT编译实现显著加速，并促进提升硬件利用率和训练速度。我们使用Podracer变体的Q学习评估记忆模型，并生成记忆显著性图，揭示记忆在策略中的传播方式。相关库可访问此链接：popgym_arcade。 
+
+---
+# Leveraging LLMs for Mental Health: Detection and Recommendations from Social Discussions 
+
+**Title (ZH)**: 利用大语言模型进行心理健康检测与建议：从社交讨论中获取 Insights 
+
+**Authors**: Vaishali Aggarwal, Sachin Thukral, Krushil Patel, Arnab Chatterjee  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01442)  
+
+**Abstract**: Textual data from social platforms captures various aspects of mental health through discussions around and across issues, while users reach out for help and others sympathize and offer support. We propose a comprehensive framework that leverages Natural Language Processing (NLP) and Generative AI techniques to identify and assess mental health disorders, detect their severity, and create recommendations for behavior change and therapeutic interventions based on users' posts on Reddit.
+To classify the disorders, we use rule-based labeling methods as well as advanced pre-trained NLP models to extract nuanced semantic features from the data. We fine-tune domain-adapted and generic pre-trained NLP models based on predictions from specialized Large Language Models (LLMs) to improve classification accuracy. Our hybrid approach combines the generalization capabilities of pre-trained models with the domain-specific insights captured by LLMs, providing an improved understanding of mental health discourse. Our findings highlight the strengths and limitations of each model, offering valuable insights into their practical applicability.
+This research potentially facilitates early detection and personalized care to aid practitioners and aims to facilitate timely interventions and improve overall well-being, thereby contributing to the broader field of mental health surveillance and digital health analytics. 
+
+**Abstract (ZH)**: 社交媒体平台上的文本数据通过围绕各种问题展开的讨论捕捉到心理健康的不同方面，用户寻求帮助，其他人则给予同情和支持。我们提出一种综合框架，利用自然语言处理（NLP）和生成型AI技术来识别和评估心理健康障碍，检测其严重程度，并基于Reddit上的用户帖子提出行为改变和治疗干预的建议。 
+
+---
+# Eau De $Q$-Network: Adaptive Distillation of Neural Networks in Deep Reinforcement Learning 
+
+**Title (ZH)**: $Q$-网络之水：深度强化学习中神经网络的自适应_distillation 
+
+**Authors**: Théo Vincent, Tim Faust, Yogesh Tripathi, Jan Peters, Carlo D'Eramo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01437)  
+
+**Abstract**: Recent works have successfully demonstrated that sparse deep reinforcement learning agents can be competitive against their dense counterparts. This opens up opportunities for reinforcement learning applications in fields where inference time and memory requirements are cost-sensitive or limited by hardware. Until now, dense-to-sparse methods have relied on hand-designed sparsity schedules that are not synchronized with the agent's learning pace. Crucially, the final sparsity level is chosen as a hyperparameter, which requires careful tuning as setting it too high might lead to poor performances. In this work, we address these shortcomings by crafting a dense-to-sparse algorithm that we name Eau De $Q$-Network (EauDeQN). To increase sparsity at the agent's learning pace, we consider multiple online networks with different sparsity levels, where each online network is trained from a shared target network. At each target update, the online network with the smallest loss is chosen as the next target network, while the other networks are replaced by a pruned version of the chosen network. We evaluate the proposed approach on the Atari $2600$ benchmark and the MuJoCo physics simulator, showing that EauDeQN reaches high sparsity levels while keeping performances high. 
+
+**Abstract (ZH)**: 最近的研究成功展示了稀疏深度强化学习代理可以与其密集 counterpart 对抗，这为在对推理时间和内存要求敏感或受硬件限制的领域应用强化学习打开了机会。直到现在，从密集到稀疏的方法依赖于与代理学习节奏不同步的手动设计稀疏计划，最关键的是，最终的稀疏水平被选作超参数，需要仔细调整，因为设置得太高可能会导致性能不佳。在这项工作中，我们通过设计一种名为Eau De $Q$-Network（EauDeQN）的从密集到稀疏算法来解决这些不足。为了在代理学习节奏下增加稀疏性，我们考虑了具有不同稀疏水平的多个在线网络，并且每个在线网络都从共享的目标网络中训练。在每次目标更新时，选择损失最小的在线网络作为下一个目标网络，而其他网络则被选择网络的剪枝版本替换。我们在Atari $2600$基准和MuJoCo物理模拟器上评估了所提出的方法，结果显示EauDeQN 达到了高稀疏水平同时保持了高性能。 
+
+---
+# Sampling-Efficient Test-Time Scaling: Self-Estimating the Best-of-N Sampling in Early Decoding 
+
+**Title (ZH)**: 采样效率的测试时扩展：早期解码中自估计的最佳采样数量 
+
+**Authors**: Yiming Wang, Pei Zhang, Siyuan Huang, Baosong Yang, Zhuosheng Zhang, Fei Huang, Rui Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01422)  
+
+**Abstract**: Test-time scaling improves large language model performance by adding extra compute during decoding. Best-of-N (BoN) sampling serves as a common scaling technique, broadening the search space for finding better solutions from the model distribution. However, traditional BoN requires N full generations, leading to high GPU memory overhead and time latency. Moreover, some methods depend on reward models, adding computational cost and limiting domain generalization.
+In this paper, we propose Self-Truncation Best-of-N (ST-BoN), a novel decoding method that avoids fully generating all samplings and eliminates the need for reward models. ST-BoN introduces early sampling consistency to estimate the most promising sample, truncating suboptimal ones to free memory and accelerate inference. This pushes the sampling-efficient test-time scaling. Compared to traditional BoN, ST-BoN can reduce dynamic GPU memory overhead by over 90% and time latency by 50%, while achieving comparable or even better performance across reasoning and open-ended domains. 
+
+**Abstract (ZH)**: Test-time Scaling via Self-Truncation Best-of-N Improves Large Language Model Performance 
+
+---
+# Parameter-Efficient Fine-Tuning of Large Language Models via Deconvolution in Subspace 
+
+**Title (ZH)**: 子空间中反卷积的参数高效微调大规模语言模型 
+
+**Authors**: Jia-Chen Zhang, Yu-Jie Xiong, Chun-Ming Xia, Dong-Hai Zhu, Xi-He Qiu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01419)  
+
+**Abstract**: Large language model (LLM) is considered a milestone towards achieving Artificial General Intelligence (AGI). With its advanced emergent capabilities, it adapt to a wide range of specific applications. Fine-tuning LLMs for various downstream tasks has become a new paradigm. Low-Rank Adaptation (LoRA) is well-known for its parameter efficiency. It can reduce the number of parameters needed to fine-tune LLMs by several orders of magnitude. However, LoRA-based approaches encounter a significant limitation due to the bottleneck imposed by rank one decomposition. As the parameters count in LLMs increase, even rank one decomposition might surpass the number of parameters truly necessary for handling more downstream tasks. In this paper, we propose a new method for Parameter-Efficient Fine-Tuning (PEFT) via deconvolution in subspace, dubbed as DCFT. We innovatively use deconvolution to complete details and enhance knowledge in subspace incremental matrices, and dynamically control parameters by adjusting the kernel size, unconstrained by rank-one decomposition. Extensive experiments are conducted to validate the effectiveness of DCFT. Results show that compared to LoRA, DCFT achieve an 8$\times$ reduction in parameters, and still achieves highly impressive performance. Our code is available here: this https URL. 
+
+**Abstract (ZH)**: 大型语言模型（LLM）被认为是实现人工通用智能（AGI）的关键里程碑。通过其先进的涌现能力，它能够适应广泛的具体应用。针对各种下游任务对大型语言模型进行微调已成为一种新的范式。低秩适应（LoRA）因其实参效率而广为人知，它可以将需要微调的参数数量减少几个数量级。然而，基于LoRA的方法遇到了显著的限制，这是因为低秩分解所施加的瓶颈。随着大型语言模型参数数量的增加，即使低秩分解的数量也可能超过处理更多下游任务所需的真正必要参数数量。在本文中，我们提出了一种新的参数高效微调（PEFT）方法——称为时空反卷积参数化高效微调（DCFT）。我们创新性地利用反卷积在子空间增量矩阵中完成细节和增强知识，并通过调整核大小动态控制参数，不受低秩分解的限制。进行了大量的实验以验证DCFT的有效性。结果表明，与LoRA相比，DCFT在参数数量上实现了8倍的减少，同时仍实现了令人印象深刻的表现。我们的代码可以在以下链接获取：this https URL。 
+
+---
+# Learning Actionable World Models for Industrial Process Control 
+
+**Title (ZH)**: 工业过程控制中的可操作世界模型学习 
+
+**Authors**: Peng Yan, Ahmed Abdulkadir, Gerrit A. Schatte, Giulia Anguzzi, Joonsu Gha, Nikola Pascher, Matthias Rosenthal, Yunlong Gao, Benjamin F. Grewe, Thilo Stadelmann  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01411)  
+
+**Abstract**: To go from (passive) process monitoring to active process control, an effective AI system must learn about the behavior of the complex system from very limited training data, forming an ad-hoc digital twin with respect to process in- and outputs that captures the consequences of actions on the process's world. We propose a novel methodology based on learning world models that disentangles process parameters in the learned latent representation, allowing for fine-grained control. Representation learning is driven by the latent factors that influence the processes through contrastive learning within a joint embedding predictive architecture. This makes changes in representations predictable from changes in inputs and vice versa, facilitating interpretability of key factors responsible for process variations, paving the way for effective control actions to keep the process within operational bounds. The effectiveness of our method is validated on the example of plastic injection molding, demonstrating practical relevance in proposing specific control actions for a notoriously unstable process. 
+
+**Abstract (ZH)**: 从被动过程监控到主动过程控制，一种有效的AI系统必须从有限的训练数据中学习复杂系统的行为，形成一个针对过程输入和输出的临时数字孪生，捕获行动对过程世界的影响。我们提出了一种基于学习世界模型的新方法，该方法在学习到的潜在表示中解耦过程参数，从而实现精细控制。表示学习通过联合嵌入预测架构内的对比学习驱动，使输入变化对表示变化的影响可预测，反之亦然，这促进了关键因素的可解释性，这些因素负责过程变化，从而为保持过程在运行界限内提供了有效的控制措施。该方法的有效性通过塑料注射成型的示例得到验证，展示了在这一 notoriously 不稳定的工艺中提出具体控制措施的实用意义。 
+
+---
+# Divide and Conquer: Heterogeneous Noise Integration for Diffusion-based Adversarial Purification 
+
+**Title (ZH)**: 分而治之：基于异质噪声集成的扩散 adversarial 纯化方法 
+
+**Authors**: Gaozheng Pei, Shaojie Lyu, Gong Chen, Ke Ma, Qianqian Xu, Yingfei Sun, Qingming Huang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01407)  
+
+**Abstract**: Existing diffusion-based purification methods aim to disrupt adversarial perturbations by introducing a certain amount of noise through a forward diffusion process, followed by a reverse process to recover clean examples. However, this approach is fundamentally flawed: the uniform operation of the forward process across all pixels compromises normal pixels while attempting to combat adversarial perturbations, resulting in the target model producing incorrect predictions. Simply relying on low-intensity noise is insufficient for effective defense. To address this critical issue, we implement a heterogeneous purification strategy grounded in the interpretability of neural networks. Our method decisively applies higher-intensity noise to specific pixels that the target model focuses on while the remaining pixels are subjected to only low-intensity noise. This requirement motivates us to redesign the sampling process of the diffusion model, allowing for the effective removal of varying noise levels. Furthermore, to evaluate our method against strong adaptative attack, our proposed method sharply reduces time cost and memory usage through a single-step resampling. The empirical evidence from extensive experiments across three datasets demonstrates that our method outperforms most current adversarial training and purification techniques by a substantial margin. 
+
+**Abstract (ZH)**: 现有的基于扩散的方法旨在通过前向扩散过程引入一定量的噪声来破坏对抗性扰动，随后通过反向过程恢复干净的样本。然而，这种方法根本上是存在问题的：前向过程在所有像素上的均匀操作会损害正常像素，同时试图对抗对抗性扰动，导致目标模型产生错误预测。仅仅依赖低强度噪声不足以实现有效防御。为解决这一关键问题，我们提出了一种基于神经网络可解释性的异质净化策略。我们的方法在目标模型关注的特定像素上应用高强度噪声，而其他像素仅受到低强度噪声的影响。这种要求促使我们重新设计扩散模型的采样过程，以有效地去除不同噪声水平。此外，为了评估我们的方法对抗强适应性攻击的效果，我们提出的方法通过一次采样显著降低了时间和内存使用成本。广泛的实验结果表明，我们的方法在三个数据集上明显优于大多数现有的对抗训练和净化技术。 
+
+---
+# Enhancing Social Media Rumor Detection: A Semantic and Graph Neural Network Approach for the 2024 Global Election 
+
+**Title (ZH)**: 增强社交媒体谣言检测：面向2024全球选举的语义与图神经网络方法 
+
+**Authors**: Liu Yan, Liu Yunpeng, Zhao Liang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01394)  
+
+**Abstract**: The development of social media platforms has revolutionized the speed and manner in which information is disseminated, leading to both beneficial and detrimental effects on society. While these platforms facilitate rapid communication, they also accelerate the spread of rumors and extremist speech, impacting public perception and behavior significantly. This issue is particularly pronounced during election periods, where the influence of social media on election outcomes has become a matter of global concern. With the unprecedented number of elections in 2024, against this backdrop, the election ecosystem has encountered unprecedented challenges. This study addresses the urgent need for effective rumor detection on social media by proposing a novel method that combines semantic analysis with graph neural networks. We have meticulously collected a dataset from PolitiFact and Twitter, focusing on politically relevant rumors. Our approach involves semantic analysis using a fine-tuned BERT model to vectorize text content and construct a directed graph where tweets and comments are nodes, and interactions are edges. The core of our method is a graph neural network, SAGEWithEdgeAttention, which extends the GraphSAGE model by incorporating first-order differences as edge attributes and applying an attention mechanism to enhance feature aggregation. This innovative approach allows for the fine-grained analysis of the complex social network structure, improving rumor detection accuracy. The study concludes that our method significantly outperforms traditional content analysis and time-based models, offering a theoretically sound and practically efficient solution. 
+
+**Abstract (ZH)**: 社交媒体平台的发展革新了信息传播的速度和方式，对社会产生了有益和有害的影响。这些平台促进了快速的沟通，但也加速了谣言和极端言论的传播，对公众的认知和行为产生了显著影响。这一问题在选举期间尤为突出，社交媒体对选举结果的影响已成为全球关注的问题。面对2024年前所未有的选举次数，选举生态系统遭遇了前所未有的挑战。本研究针对社交媒体中有效检测谣言的迫切需求，提出了一种结合语义分析和图神经网络的新型方法。我们精心从PolitiFact和Twitter收集了相关数据集，重点关注政治相关的谣言。我们的方法包括使用微调的BERT模型进行语义分析以矢量化文本内容，并构建一个有向图，其中推文和评论作为节点，互动作为边。我们的方法的核心是一种图神经网络——SAGEWithEdgeAttention，它通过引入一阶差作为边的属性，并应用注意力机制来增强特征聚合，从而扩展了GraphSAGE模型。这一创新方法能够精细分析复杂的社交网络结构，提高谣言检测的准确性。研究结论表明，我们的方法显著优于传统的内容分析和基于时间的模型，提供了一个理论依据充分且实际高效的解决方案。 
+
+---
+# Geo-Semantic-Parsing: AI-powered geoparsing by traversing semantic knowledge graphs 
+
+**Title (ZH)**: 地理语义解析：通过遍历语义知识图谱的AI驱动地名解析 
+
+**Authors**: Leonardo Nizzoli, Marco Avvenuti, Maurizio Tesconi, Stefano Cresci  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01386)  
+
+**Abstract**: Online social networks convey rich information about geospatial facets of reality. However in most cases, geographic information is not explicit and structured, thus preventing its exploitation in real-time applications. We address this limitation by introducing a novel geoparsing and geotagging technique called Geo-Semantic-Parsing (GSP). GSP identifies location references in free text and extracts the corresponding geographic coordinates. To reach this goal, we employ a semantic annotator to identify relevant portions of the input text and to link them to the corresponding entity in a knowledge graph. Then, we devise and experiment with several efficient strategies for traversing the knowledge graph, thus expanding the available set of information for the geoparsing task. Finally, we exploit all available information for learning a regression model that selects the best entity with which to geotag the input text. We evaluate GSP on a well-known reference dataset including almost 10k event-related tweets, achieving $F1=0.66$. We extensively compare our results with those of 2 baselines and 3 state-of-the-art geoparsing techniques, achieving the best performance. On the same dataset, competitors obtain $F1 \leq 0.55$. We conclude by providing in-depth analyses of our results, showing that the overall superior performance of GSP is mainly due to a large improvement in recall, with respect to existing techniques. 
+
+**Abstract (ZH)**: 基于语义解析的地理标注技术研究：Geo-Semantic-Parsing (GSP)及其应用 
+
+---
+# Combining Flow Matching and Transformers for Efficient Solution of Bayesian Inverse Problems 
+
+**Title (ZH)**: 结合流匹配与变换器高效求解贝叶斯逆问题 
+
+**Authors**: Daniil Sherki, Ivan Oseledets, Ekaterina Muravleva  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01375)  
+
+**Abstract**: Solving Bayesian inverse problems efficiently remains a significant challenge due to the complexity of posterior distributions and the computational cost of traditional sampling methods. Given a series of observations and the forward model, we want to recover the distribution of the parameters, conditioned on observed experimental data. We show, that combining Conditional Flow Mathching (CFM) with transformer-based architecture, we can efficiently sample from such kind of distribution, conditioned on variable number of observations. 
+
+**Abstract (ZH)**: 高效解决贝叶斯逆问题仍然是一个重大挑战，这归因于后验分布的复杂性和传统采样方法的计算成本。给定一系列观测值和前向模型，我们希望恢复参数的分布，条件是观察到的实验数据。我们展示了将条件流匹配（CFM）与基于变压器的架构相结合，可以在条件观测值数量变化的情况下有效地从此类分布中进行采样。 
+
+---
+# SwiLTra-Bench: The Swiss Legal Translation Benchmark 
+
+**Title (ZH)**: SwiLTra-Bench: 瑞士法律翻译基准 
+
+**Authors**: Joel Niklaus, Jakob Merane, Luka Nenadic, Sina Ahmadi, Yingqiang Gao, Cyrill A. H. Chevalley, Claude Humbel, Christophe Gösken, Lorenzo Tanzi, Thomas Lüthi, Stefan Palombo, Spencer Poff, Boling Yang, Nan Wu, Matthew Guillod, Robin Mamié, Daniel Brunner, Julio Pereyra, Niko Grupen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01372)  
+
+**Abstract**: In Switzerland legal translation is uniquely important due to the country's four official languages and requirements for multilingual legal documentation. However, this process traditionally relies on professionals who must be both legal experts and skilled translators -- creating bottlenecks and impacting effective access to justice. To address this challenge, we introduce SwiLTra-Bench, a comprehensive multilingual benchmark of over 180K aligned Swiss legal translation pairs comprising laws, headnotes, and press releases across all Swiss languages along with English, designed to evaluate LLM-based translation systems. Our systematic evaluation reveals that frontier models achieve superior translation performance across all document types, while specialized translation systems excel specifically in laws but under-perform in headnotes. Through rigorous testing and human expert validation, we demonstrate that while fine-tuning open SLMs significantly improves their translation quality, they still lag behind the best zero-shot prompted frontier models such as Claude-3.5-Sonnet. Additionally, we present SwiLTra-Judge, a specialized LLM evaluation system that aligns best with human expert assessments. 
+
+**Abstract (ZH)**: 在瑞士，由于国家有四种官方语言和多语言法律文件的要求，法律翻译具有独特的重要性。然而，这一过程传统上依赖于既是法律专家又是熟练翻译的专业人员——这造成了瓶颈并影响了有效获取司法服务。为应对这一挑战，我们引入了SwiLTra-Bench，这是一个包含超过180,000对对齐的瑞士法律翻译样本的综合多语言基准，涵盖了所有瑞士语言及其英语版本的法律条文、简短说明和新闻稿，旨在评估基于LLM的翻译系统。我们的系统性评估表明，前沿模型在所有文档类型上的翻译性能优于其他系统，而专门的翻译系统在法律条文中表现出色但在简短说明中则表现不佳。通过严格的测试和人类专家验证，我们发现，尽管微调开放的SLM显着提高了其翻译质量，但它们仍然落后于Claude-3.5-Sonnet等最佳零样本提示前沿模型。此外，我们还介绍了SwiLTra-Judge，这是一种与人类专家评估高度一致的专门LLM评估系统。 
+
+---
+# Dendron: Enhancing Human Activity Recognition with On-Device TinyML Learning 
+
+**Title (ZH)**: Dendron: 增强设备端TinyML学习的人类活动识别 
+
+**Authors**: Hazem Hesham Yousef Shalby, Manuel Roveri  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01353)  
+
+**Abstract**: Human activity recognition (HAR) is a research field that employs Machine Learning (ML) techniques to identify user activities. Recent studies have prioritized the development of HAR solutions directly executed on wearable devices, enabling the on-device activity recognition. This approach is supported by the Tiny Machine Learning (TinyML) paradigm, which integrates ML within embedded devices with limited resources. However, existing approaches in the field lack in the capability for on-device learning of new HAR tasks, particularly when supervised data are scarce. To address this limitation, our paper introduces Dendron, a novel TinyML methodology designed to facilitate the on-device learning of new tasks for HAR, even in conditions of limited supervised data. Experimental results on two public-available datasets and an off-the-shelf device (STM32-NUCLEO-F401RE) show the effectiveness and efficiency of the proposed solution. 
+
+**Abstract (ZH)**: 人类活动识别（HAR）是一个采用机器学习（ML）技术来识别用户活动的研究领域。近期的研究优先考虑开发直接在可穿戴设备上执行的HAR解决方案，以实现设备端的活动识别。这一方法得到了微型机器学习（TinyML）范式的支持，该范式将机器学习集成到资源有限的嵌入式设备中。然而，该领域的现有方法在稀少的监督数据条件下，缺乏对新HAR任务的设备端学习能力。为解决这一不足，本文提出了一种新颖的TinyML方法Dendron，旨在即使在监督数据有限的条件下也能支持新HAR任务的设备端学习。在两个公开的数据集和一个商用现成设备（STM32-NUCLEO-F401RE）上的实验结果表明，所提出的方法的有效性和效率。 
+
+---
+# Same Question, Different Words: A Latent Adversarial Framework for Prompt Robustness 
+
+**Title (ZH)**: 同一个问题，不同的表达：一种潜在对抗框架以提升提示 robustness 
+
+**Authors**: Tingchen Fu, Fazl Barez  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01345)  
+
+**Abstract**: Insensitivity to semantically-preserving variations of prompts (paraphrases) is crucial for reliable behavior and real-world deployment of large language models. However, language models exhibit significant performance degradation when faced with semantically equivalent but differently phrased prompts, and existing solutions either depend on trial-and-error prompt engineering or require computationally expensive inference-time algorithms. In this study, built on the key insight that worst-case prompts exhibit a drift in embedding space, we present Latent Adversarial Paraphrasing (LAP), a dual-loop adversarial framework: the inner loop trains a learnable perturbation to serve as a "latent continuous paraphrase" while preserving semantics through Lagrangian regulation, and the outer loop optimizes the language model parameters on these perturbations. We conduct extensive experiments to demonstrate the effectiveness of LAP across multiple LLM architectures on the RobustAlpaca benchmark with a 0.5%-4% absolution improvement on worst-case win-rate compared with vanilla supervised fine-tuning. 
+
+**Abstract (ZH)**: 对语义保持变化的提示（重述）的不敏感性是大型语言模型可靠行为和实际部署的关键。然而，当面对语义等价但表述不同的提示时，语言模型会表现出显著的性能下降，现有解决方案要么依赖于试错式的提示工程，要么需要计算成本高昂的推理时算法。在此研究中，基于最坏情况提示在嵌入空间中表现出漂移的关键洞察，我们提出了隐含对抗重述（LAP），一个双环对抗框架：内环训练可学习的扰动以充当“隐含连续重述”，并通过Lagrange调节保持语义，外环在这些扰动上优化语言模型参数。我们在RobustAlpaca基准上进行了广泛实验，证明了LAP在多个LLM架构上的有效性，与vanilla监督微调相比，在最坏情况胜率上实现了0.5%-4%的绝对改善。 
+
+---
+# Answer, Refuse, or Guess? Investigating Risk-Aware Decision Making in Language Models 
+
+**Title (ZH)**: 回答、拒绝或猜测？探究语言模型中的风险意识决策-making 
+
+**Authors**: Cheng-Kuang Wu, Zhi Rui Tam, Chieh-Yen Lin, Yun-Nung Chen, Hung-yi Lee  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01332)  
+
+**Abstract**: Knowing when to answer or refuse is crucial for safe and reliable decision-making language agents. Although prior work has introduced refusal strategies to boost LMs' reliability, how these models adapt their decisions to different risk levels remains underexplored. We formalize the task of risk-aware decision-making, expose critical weaknesses in existing LMs, and propose skill-decomposition solutions to mitigate them. Our findings show that even cutting-edge LMs--both regular and reasoning models--still require explicit prompt chaining to handle the task effectively, revealing the challenges that must be overcome to achieve truly autonomous decision-making agents. 
+
+**Abstract (ZH)**: 适应不同风险级别的回答与拒绝决策对于安全可靠的语言代理至关重要：现有模型的风险感知决策任务分析与解决方案 
+
+---
+# Neural ODE Transformers: Analyzing Internal Dynamics and Adaptive Fine-tuning 
+
+**Title (ZH)**: 神经ODE变换器：分析内部动力学和自适应微调 
+
+**Authors**: Anh Tong, Thanh Nguyen-Tang, Dongeun Lee, Duc Nguyen, Toan Tran, David Hall, Cheongwoong Kang, Jaesik Choi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01329)  
+
+**Abstract**: Recent advancements in large language models (LLMs) based on transformer architectures have sparked significant interest in understanding their inner workings. In this paper, we introduce a novel approach to modeling transformer architectures using highly flexible non-autonomous neural ordinary differential equations (ODEs). Our proposed model parameterizes all weights of attention and feed-forward blocks through neural networks, expressing these weights as functions of a continuous layer index. Through spectral analysis of the model's dynamics, we uncover an increase in eigenvalue magnitude that challenges the weight-sharing assumption prevalent in existing theoretical studies. We also leverage the Lyapunov exponent to examine token-level sensitivity, enhancing model interpretability. Our neural ODE transformer demonstrates performance comparable to or better than vanilla transformers across various configurations and datasets, while offering flexible fine-tuning capabilities that can adapt to different architectural constraints. 
+
+**Abstract (ZH)**: 基于变换器架构的大语言模型 Recent 进展：使用高度灵活的非自治神经常微分方程建模 
+
+---
+# PipeOffload: Improving Scalability of Pipeline Parallelism with Memory Optimization 
+
+**Title (ZH)**: PipeOffload: 通过内存优化提升管道并行性的可扩展性 
+
+**Authors**: Xinyi Wan, Penghui Qi, Guangxing Huang, Jialin Li, Min Lin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01328)  
+
+**Abstract**: Pipeline parallelism (PP) is widely used for training large language models (LLMs), yet its scalability is often constrained by high activation memory consumption as the number of in-flight microbatches grows with the degree of PP. In this paper, we focus on addressing this challenge by leveraging the under-explored memory offload strategy in PP. With empirical study, we discover that in the majority of standard configurations, at least half, and potentially all, of the activations can be offloaded with negligible overhead. In the cases where full overload is not possible, we introduce a novel selective offload strategy that decreases peak activation memory in a better-than-linear manner. Furthermore, we integrate memory offload with other techniques to jointly consider overall throughput and memory limitation. Our experiments proves that the per-device activation memory effectively reduces with the total number of stages, making PP a stronger alternative than TP, offering up to a 19\% acceleration with even lower memory consumption. The implementation is open-sourced at \href{this https URL}{this url}. 
+
+**Abstract (ZH)**: Pipeline并行性中的内存卸载策略在大规模语言模型训练中的应用：超越传输并行性的新方法 
+
+---
+# CacheQuant: Comprehensively Accelerated Diffusion Models 
+
+**Title (ZH)**: CacheQuant: 全面加速扩散模型 
+
+**Authors**: Xuewen Liu, Zhikai Li, Qingyi Gu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01323)  
+
+**Abstract**: Diffusion models have gradually gained prominence in the field of image synthesis, showcasing remarkable generative capabilities. Nevertheless, the slow inference and complex networks, resulting from redundancy at both temporal and structural levels, hinder their low-latency applications in real-world scenarios. Current acceleration methods for diffusion models focus separately on temporal and structural levels. However, independent optimization at each level to further push the acceleration limits results in significant performance degradation. On the other hand, integrating optimizations at both levels can compound the acceleration effects. Unfortunately, we find that the optimizations at these two levels are not entirely orthogonal. Performing separate optimizations and then simply integrating them results in unsatisfactory performance. To tackle this issue, we propose CacheQuant, a novel training-free paradigm that comprehensively accelerates diffusion models by jointly optimizing model caching and quantization techniques. Specifically, we employ a dynamic programming approach to determine the optimal cache schedule, in which the properties of caching and quantization are carefully considered to minimize errors. Additionally, we propose decoupled error correction to further mitigate the coupled and accumulated errors step by step. Experimental results show that CacheQuant achieves a 5.18 speedup and 4 compression for Stable Diffusion on MS-COCO, with only a 0.02 loss in CLIP score. Our code are open-sourced: this https URL . 
+
+**Abstract (ZH)**: CacheQuant：一种综合加速扩散模型的新颖无训练范式 
+
+---
+# Scaling Law Phenomena Across Regression Paradigms: Multiple and Kernel Approaches 
+
+**Title (ZH)**: 不同回归范式下标度定律现象：多元和核方法研究 
+
+**Authors**: Yifang Chen, Xuyang Guo, Xiaoyu Li, Yingyu Liang, Zhenmei Shi, Zhao Song  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01314)  
+
+**Abstract**: Recently, Large Language Models (LLMs) have achieved remarkable success. A key factor behind this success is the scaling law observed by OpenAI. Specifically, for models with Transformer architecture, the test loss exhibits a power-law relationship with model size, dataset size, and the amount of computation used in training, demonstrating trends that span more than seven orders of magnitude. This scaling law challenges traditional machine learning wisdom, notably the Oscar Scissors principle, which suggests that an overparametrized algorithm will overfit the training datasets, resulting in poor test performance. Recent research has also identified the scaling law in simpler machine learning contexts, such as linear regression. However, fully explaining the scaling law in large practical models remains an elusive goal. In this work, we advance our understanding by demonstrating that the scaling law phenomenon extends to multiple regression and kernel regression settings, which are significantly more expressive and powerful than linear methods. Our analysis provides deeper insights into the scaling law, potentially enhancing our understanding of LLMs. 
+
+**Abstract (ZH)**: Recent大规模语言模型（LLMs）取得了显著成功。OpenAI观察到的规模律是其成功的关键因素之一。特别是对于具有Transformer架构的模型，测试损失与模型大小、数据集大小以及训练中使用的计算量之间呈现出幂律关系，显示了跨越七个数量级的趋势。这一规模律挑战了传统的机器学习智慧，特别是Oscar Scissors原则，该原则认为过参数化的算法会在训练数据集上过拟合，导致较差的测试性能。最近的研究还在更简单的机器学习上下文中（如线性回归）发现了这一规模律。然而，完全解释大型实际模型中的规模律仍然是一个难以捉摸的目标。在本文中，我们通过证明这一现象扩展到了多个回归和核回归设置中，加深了我们对规模律的理解，这些设置比线性方法更为表达性和强大，我们的分析可能有助于增强我们对LLMs的理解。 
+
+---
+# From Claims to Evidence: A Unified Framework and Critical Analysis of CNN vs. Transformer vs. Mamba in Medical Image Segmentation 
+
+**Title (ZH)**: 从声明到证据：医学图像分割中CNN、Transformer和Mamba的统一框架与批判性分析 
+
+**Authors**: Pooya Mohammadi Kazaj, Giovanni Baj, Yazdan Salimi, Anselm W. Stark, Waldo Valenzuela, George CM. Siontis, Habib Zaidi, Mauricio Reyes, Christoph Graeni, Isaac Shiri  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01306)  
+
+**Abstract**: While numerous architectures for medical image segmentation have been proposed, achieving competitive performance with state-of-the-art models networks such as nnUNet, still leave room for further innovation. In this work, we introduce nnUZoo, an open source benchmarking framework built upon nnUNet, which incorporates various deep learning architectures, including CNNs, Transformers, and Mamba-based models. Using this framework, we provide a fair comparison to demystify performance claims across different medical image segmentation tasks. Additionally, in an effort to enrich the benchmarking, we explored five new architectures based on Mamba and Transformers, collectively named X2Net, and integrated them into nnUZoo for further evaluation. The proposed models combine the features of conventional U2Net, nnUNet, CNN, Transformer, and Mamba layers and architectures, called X2Net (UNETR2Net (UNETR), SwT2Net (SwinTransformer), SS2D2Net (SwinUMamba), Alt1DM2Net (LightUMamba), and MambaND2Net (MambaND)). We extensively evaluate the performance of different models on six diverse medical image segmentation datasets, including microscopy, ultrasound, CT, MRI, and PET, covering various body parts, organs, and labels. We compare their performance, in terms of dice score and computational efficiency, against their baseline models, U2Net, and nnUNet. CNN models like nnUNet and U2Net demonstrated both speed and accuracy, making them effective choices for medical image segmentation tasks. Transformer-based models, while promising for certain imaging modalities, exhibited high computational costs. Proposed Mamba-based X2Net architecture (SS2D2Net) achieved competitive accuracy with no significantly difference from nnUNet and U2Net, while using fewer parameters. However, they required significantly longer training time, highlighting a trade-off between model efficiency and computational cost. 
+
+**Abstract (ZH)**: 虽然已经提出了多种医疗图像分割架构，但与最先进的模型网络（如nnUNet）相比，仍存在进一步创新的空间。在这项工作中，我们引入了nnUZoo，这是一个基于nnUNet构建的开源基准框架，集成了包括CNN、Transformers和Mamba基模型在内的各种深度学习架构。通过该框架，我们提供了一次公平比较，以澄清不同医疗图像分割任务中性能声明的分歧。此外，为了丰富基准测试，我们探索了基于Mamba和Transformers的五种新架构，并将它们统称为X2Net，整合到nnUZoo中进行进一步评估。提出的模型结合了传统U2Net、nnUNet、CNN、Transformer和Mamba层及架构的特点，统称为X2Net（UNETR2Net（UNETR）、SwT2Net（SwinTransformer）、SS2D2Net（SwinUMamba）、Alt1DM2Net（LightUMamba）、MambaND2Net（MambaND）。我们对六种不同的医疗图像分割数据集进行了广泛评估，涵盖了显微镜、超声、CT、MRI和PET，涉及不同身体部位、器官和标签。我们比较了这些模型在Dice分数和计算效率方面的性能，与基线模型U2Net和nnUNet进行对比。像nnUNet和U2Net这样的CNN模型展示了速度和准确性的良好平衡，使其成为医疗图像分割任务的有效选择。基于Transformers的模型虽然对某些成像模态具有前景，但表现出较高的计算成本。基于Mamba的X2Net架构（SS2D2Net）实现了竞争力的准确度，与nnUNet和U2Net相比，参数量更少，但需要显著更长的训练时间，凸显了模型效率与计算成本之间的权衡。 
+
+---
+# MINT: Multi-modal Chain of Thought in Unified Generative Models for Enhanced Image Generation 
+
+**Title (ZH)**: MINT: 统一生成模型中多模态思维链在增强图像生成中的应用 
+
+**Authors**: Yi Wang, Mushui Liu, Wanggui He, Longxiang Zhang, Ziwei Huang, Guanghao Zhang, Fangxun Shu, Zhong Tao, Dong She, Zhelun Yu, Haoyuan Li, Weilong Dai, Mingli Song, Jie Song, Hao Jiang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01298)  
+
+**Abstract**: Unified generative models have demonstrated extraordinary performance in both text and image generation. However, they tend to underperform when generating intricate images with various interwoven conditions, which is hard to solely rely on straightforward text-to-image generation. In response to this challenge, we introduce MINT, an innovative unified generative model, empowered with native multimodal chain of thought (MCoT) for enhanced image generation for the first time. Firstly, we design Mixture of Transformer Experts (MTXpert), an expert-parallel structure that effectively supports both natural language generation (NLG) and visual capabilities, while avoiding potential modality conflicts that could hinder the full potential of each modality. Building on this, we propose an innovative MCoT training paradigm, a step-by-step approach to multimodal thinking, reasoning, and reflection specifically designed to enhance image generation. This paradigm equips MINT with nuanced, element-wise decoupled alignment and a comprehensive understanding of textual and visual components. Furthermore, it fosters advanced multimodal reasoning and self-reflection, enabling the construction of images that are firmly grounded in the logical relationships between these elements. Notably, MINT has been validated to exhibit superior performance across multiple benchmarks for text-to-image (T2I) and image-to-text (I2T) tasks. 
+
+**Abstract (ZH)**: 统一生成模型在文本和图像生成任务中表现出色，但在生成具有多种交织条件的复杂图像时往往表现不佳，单纯依赖文本到图像生成难以解决这一问题。为应对这一挑战，我们引入了一种名为MINT的创新统一生成模型，该模型集成了原生多模态链式思维（MCoT），首次提升了图像生成能力。首先，我们设计了混合Transformer专家（MTXpert）结构，有效支持自然语言生成和视觉能力，同时避免了可能阻碍每种模态潜力的模态冲突。在此基础上，我们提出了一种创新的MCoT训练范式，这是一种逐步的多模态思维、推理和反思过程，旨在增强图像生成能力。该范式为MINT提供了细腻的元素级解耦对齐和对文本和视觉成分的全面理解。此外，它促进了高级的多模态推理和自我反思，使MINT能够构建逻辑关系紧密的图像。值得注意的是，MINT在多种文本到图像（T2I）和图像到文本（I2T）任务基准测试中表现优越。 
+
+---
+# Fine-Grained Controllable Apparel Showcase Image Generation via Garment-Centric Outpainting 
+
+**Title (ZH)**: 基于衣物中心的扩展生成精细可控的服装展示图像 
+
+**Authors**: Rong Zhang, Jingnan Wang, Zhiwen Zuo, Jianfeng Dong, Wei Li, Chi Wang, Weiwei Xu, Xun Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01294)  
+
+**Abstract**: In this paper, we propose a novel garment-centric outpainting (GCO) framework based on the latent diffusion model (LDM) for fine-grained controllable apparel showcase image generation. The proposed framework aims at customizing a fashion model wearing a given garment via text prompts and facial images. Different from existing methods, our framework takes a garment image segmented from a dressed mannequin or a person as the input, eliminating the need for learning cloth deformation and ensuring faithful preservation of garment details. The proposed framework consists of two stages. In the first stage, we introduce a garment-adaptive pose prediction model that generates diverse poses given the garment. Then, in the next stage, we generate apparel showcase images, conditioned on the garment and the predicted poses, along with specified text prompts and facial images. Notably, a multi-scale appearance customization module (MS-ACM) is designed to allow both overall and fine-grained text-based control over the generated model's appearance. Moreover, we leverage a lightweight feature fusion operation without introducing any extra encoders or modules to integrate multiple conditions, which is more efficient. Extensive experiments validate the superior performance of our framework compared to state-of-the-art methods. 
+
+**Abstract (ZH)**: 基于潜在扩散模型的服装中心扩展框架：精细可控的服装展示图像生成 
+
+---
+# ACTIVA: Amortized Causal Effect Estimation without Graphs via Transformer-based Variational Autoencoder 
+
+**Title (ZH)**: ACTIVA：基于Transformer变分自编码器的无图因果效应拟合 
+
+**Authors**: Andreas Sauter, Saber Salehkaleybar, Aske Plaat, Erman Acar  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01290)  
+
+**Abstract**: Predicting the distribution of outcomes under hypothetical interventions is crucial in domains like healthcare, economics, and policy-making. Current methods often rely on strong assumptions, such as known causal graphs or parametric models, and lack amortization across problem instances, limiting their practicality. We propose a novel transformer-based conditional variational autoencoder architecture, named ACTIVA, that extends causal transformer encoders to predict causal effects as mixtures of Gaussians. Our method requires no causal graph and predicts interventional distributions given only observational data and a queried intervention. By amortizing over many simulated instances, it enables zero-shot generalization to novel datasets without retraining. Experiments demonstrate accurate predictions for synthetic and semi-synthetic data, showcasing the effectiveness of our graph-free, amortized causal inference approach. 
+
+**Abstract (ZH)**: 基于假设干预预测结果分布对于医疗、经济和政策制定等领域至关重要。当前方法往往依赖于强假设，如已知因果图或参数模型，并且缺乏跨问题实例的 amortization，限制了其实用性。我们提出了一种新的基于变换器的条件变异自动编码器架构，名为ACTIVA，该架构将因果变换器编码器扩展为预测高斯混合的因果效果。该方法不需要因果图，并且仅通过观测数据和查询的干预就能预测干预分布。通过模拟多个实例的 amortization，它能够在无需重新训练的情况下对新数据集进行零样本泛化。实验显示，该方法对于合成和半合成数据实现了准确的预测，展示了我们的无图自 amortization 因果推理方法的有效性。 
+
+---
+# Robust Simulation-Based Inference under Missing Data via Neural Processes 
+
+**Title (ZH)**: 基于神经过程的在缺失数据情况下稳健的仿真推理 
+
+**Authors**: Yogesh Verma, Ayush Bharti, Vikas Garg  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01287)  
+
+**Abstract**: Simulation-based inference (SBI) methods typically require fully observed data to infer parameters of models with intractable likelihood functions. However, datasets often contain missing values due to incomplete observations, data corruptions (common in astrophysics), or instrument limitations (e.g., in high-energy physics applications). In such scenarios, missing data must be imputed before applying any SBI method. We formalize the problem of missing data in SBI and demonstrate that naive imputation methods can introduce bias in the estimation of SBI posterior. We also introduce a novel amortized method that addresses this issue by jointly learning the imputation model and the inference network within a neural posterior estimation (NPE) framework. Extensive empirical results on SBI benchmarks show that our approach provides robust inference outcomes compared to standard baselines for varying levels of missing data. Moreover, we demonstrate the merits of our imputation model on two real-world bioactivity datasets (Adrenergic and Kinase assays). Code is available at this https URL. 
+
+**Abstract (ZH)**: 基于仿真推理的缺失数据处理：一种联合学习填补模型和推理网络的方法 
+
+---
+# Multi-Level Collaboration in Model Merging 
+
+**Title (ZH)**: 多级协作的模型合并 
+
+**Authors**: Qi Li, Runpeng Yu, Xinchao Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01268)  
+
+**Abstract**: Parameter-level model merging is an emerging paradigm in multi-task learning with significant promise. Previous research has explored its connections with prediction-level model ensembling-commonly viewed as the upper bound for merging-to reveal the potential of achieving performance consistency between the two. However, this observation relies on certain preconditions, such as being limited to two models, using ViT-based models, and all models are fine-tuned from the same pre-trained checkpoint. To further understand the intrinsic connections between model merging and model ensembling, this paper explores an interesting possibility: If these restrictions are removed, can performance consistency still be achieved between merging and ensembling? To answer this question, we first theoretically establish a performance correlation between merging and ensembling. We find that even when previous restrictions are not met, there is still a way for model merging to attain a near-identical and superior performance similar to that of ensembling. To verify whether our findings are practical, we introduce a validation framework termed Neural Ligand (NeuLig). The learning process of NeuLig is meticulously designed with a specialized loss function supported by theoretical foundations. Experimental results demonstrate the robust resilience of NeuLig in terms of both model scale and the number of collaborating models. For instance, for the case involving 5 CLIP-ViT-B/32 models, parameter-level merging achieves the same performance as prediction-level ensembling (merging: 95.44% vs. ensembling: 95.46%). 
+
+**Abstract (ZH)**: 参数级模型融合是多任务学习中一个 emerging 的范式，具有显著潜力。先前的研究探索了模型融合与预测级模型集成之间的联系——通常被视为融合的上限，以揭示两者之间性能一致性的潜力。然而，这一观察依赖于某些前提条件，如仅限于两个模型、使用基于ViT的模型，以及所有模型均从相同的预训练检查点进行微调。为了进一步理解模型融合与模型集成之间的内在联系，本文探索了一个有趣的可能性：如果移除这些限制，模型融合和模型集成之间是否仍能实现性能一致性？为了回答这一问题，我们首先从理论上建立了模型融合和模型集成之间的性能关系。我们发现即使不满足先前的限制条件，模型融合仍能找到一种方式，实现与集成相媲美的近乎一致的优异性能。为了验证我们发现的实用性，我们引入了一种名为Neural Ligand（NeuLig）的验证框架。NeuLig的学习过程在理论上得到了支撑，并设计了专门的损失函数。实验结果展示了NeuLig在模型规模和协作模型数量方面的鲁棒鲁棒性。例如，在涉及5个CLIP-ViT-B/32模型的情况下，参数级融合达到与预测级集成相同的性能（融合：95.44% vs. 集成：95.46%）。 
+
+---
+# Voice Cloning for Dysarthric Speech Synthesis: Addressing Data Scarcity in Speech-Language Pathology 
+
+**Title (ZH)**: 语音克隆在构音障碍语音合成中的应用：解决言语病理学中的数据稀缺性问题 
+
+**Authors**: Birger Moell, Fredrik Sand Aronsson  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01266)  
+
+**Abstract**: This study explores voice cloning to generate synthetic speech replicating the unique patterns of individuals with dysarthria. Using the TORGO dataset, we address data scarcity and privacy challenges in speech-language pathology. Our contributions include demonstrating that voice cloning preserves dysarthric speech characteristics, analyzing differences between real and synthetic data, and discussing implications for diagnostics, rehabilitation, and communication. We cloned voices from dysarthric and control speakers using a commercial platform, ensuring gender-matched synthetic voices. A licensed speech-language pathologist (SLP) evaluated a subset for dysarthria, speaker gender, and synthetic indicators. The SLP correctly identified dysarthria in all cases and speaker gender in 95% but misclassified 30% of synthetic samples as real, indicating high realism. Our results suggest synthetic speech effectively captures disordered characteristics and that voice cloning has advanced to produce high-quality data resembling real speech, even to trained professionals. This has critical implications for healthcare, where synthetic data can mitigate data scarcity, protect privacy, and enhance AI-driven diagnostics. By enabling the creation of diverse, high-quality speech datasets, voice cloning can improve generalizable models, personalize therapy, and advance assistive technologies for dysarthria.
+We publicly release our synthetic dataset to foster further research and collaboration, aiming to develop robust models that improve patient outcomes in speech-language pathology. 
+
+**Abstract (ZH)**: 本研究探索语音克隆技术生成模拟失语症个体独特语音模式的合成语音。利用TORGO数据集，我们解决了言语-语言病理学中的数据稀缺性和隐私挑战。我们的贡献包括证明语音克隆能够保留失语症语音特征、分析真实数据与合成数据之间的差异，并讨论其在诊断、康复和沟通中的影响。我们使用商业平台克隆了失语症和对照说话者的语音，确保合成语音匹配性别。经过认证的言语-语言病理学家（SLP）评估了一部分样本的失语症、说话者性别和合成指标。SLP 在所有失语症鉴定中均正确，在性别鉴定中正确率为95%，但在30%的合成样本中将其误分类为真实样本，表明合成语音具有高度的真实性。研究结果表明，合成语音能够有效捕捉失常特征，并且语音克隆技术已经发展到能够生成与真实语音高度相似的高质量数据，甚至对专业人员也是如此。这对于医疗保健具有重要意义，合成数据能够缓解数据稀缺问题、保护隐私并增强基于AI的诊断能力。通过生成多样化的高质量语音数据集，语音克隆技术可以提高通用模型的性能、个性化治疗方案，并促进失语症辅助技术的进步。我们将公开发布我们的合成数据集，以促进进一步的研究和合作，旨在开发出稳健的模型以改善言语-语言病理学中的患者治疗效果。 
+
+---
+# A Taxonomy for Evaluating Generalist Robot Policies 
+
+**Title (ZH)**: 通用机器人政策评估分类 
+
+**Authors**: Jensen Gao, Suneel Belkhale, Sudeep Dasari, Ashwin Balakrishna, Dhruv Shah, Dorsa Sadigh  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01238)  
+
+**Abstract**: Machine learning for robotics promises to unlock generalization to novel tasks and environments. Guided by this promise, many recent works have focused on scaling up robot data collection and developing larger, more expressive policies to achieve this. But how do we measure progress towards this goal of policy generalization in practice? Evaluating and quantifying generalization is the Wild West of modern robotics, with each work proposing and measuring different types of generalization in their own, often difficult to reproduce, settings. In this work, our goal is (1) to outline the forms of generalization we believe are important in robot manipulation in a comprehensive and fine-grained manner, and (2) to provide reproducible guidelines for measuring these notions of generalization. We first propose STAR-Gen, a taxonomy of generalization for robot manipulation structured around visual, semantic, and behavioral generalization. We discuss how our taxonomy encompasses most prior notions of generalization in robotics. Next, we instantiate STAR-Gen with a concrete real-world benchmark based on the widely-used Bridge V2 dataset. We evaluate a variety of state-of-the-art models on this benchmark to demonstrate the utility of our taxonomy in practice. Our taxonomy of generalization can yield many interesting insights into existing models: for example, we observe that current vision-language-action models struggle with various types of semantic generalization, despite the promise of pre-training on internet-scale language datasets. We believe STAR-Gen and our guidelines can improve the dissemination and evaluation of progress towards generalization in robotics, which we hope will guide model design and future data collection efforts. We provide videos and demos at our website this http URL. 
+
+**Abstract (ZH)**: 机器学习在机器人学中的应用有望解锁对新任务和环境的泛化能力。为实现这一目标，许多近期工作关注于扩大机器人数据收集规模，并开发更大、表达能力更强的策略。但在实践中，我们如何衡量向这一泛化目标的进程？评估和量化泛化能力在当今的机器人学领域是一片未开垦之地，每项研究都在其特有的、往往难以复现的环境中提出了和衡量不同的泛化类型。本文旨在（1）全面而细致地概述我们认为在机器人操作中重要的泛化形式，（2）提供可复现的指南来测量这些泛化的概念。我们首先提出STAR-Gen，这是一种基于视觉、语义和行为泛化的机器人操作泛化分类框架。我们讨论了该分类框架如何涵盖机器人学中大多数先前的泛化概念。接下来，我们基于广泛使用的Bridge V2数据集，以具体的现实世界基准实例化STAR-Gen。我们评估了一系列最新的模型在这一基准上的性能，以展示分类框架在实践中的效用。我们的泛化分类框架能揭示现有模型的许多有趣见解：例如，我们观察到当前的视觉-语言-动作模型在各种语义泛化方面存在困难，尽管这些模型在大规模互联网语言数据上进行了预训练。我们相信STAR-Gen和我们的指南能够提高机器人学中泛化进展的传播与评估，我们希望这能指导模型设计和未来的数据收集工作。我们的视频和演示可以在我们的网站 this http URL 上找到。 
+
+---
+# LLM-Advisor: An LLM Benchmark for Cost-efficient Path Planning across Multiple Terrains 
+
+**Title (ZH)**: LLM-Advisor: 一种跨多种地形高效成本路径规划的LLM基准 
+
+**Authors**: Ling Xiao, Toshihiko Yamasaki  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01236)  
+
+**Abstract**: Multi-terrain cost-efficient path planning is a crucial task in robot navigation, requiring the identification of a path from the start to the goal that not only avoids obstacles but also minimizes travel costs. This is especially crucial for real-world applications where robots need to navigate diverse terrains in outdoor environments, where recharging or refueling is difficult. However, there is very limited research on this topic. In this paper, we develop a prompt-based approach, LLM-Advisor, which leverages large language models (LLMs) as effective advisors for path planning. The LLM-Advisor selectively provides suggestions, demonstrating its ability to recognize when no modifications are necessary. When suggestions are made, 70.59% of the paths suggested for the A* algorithm, 69.47% for the RRT* algorithm, and 78.70% for the LLM-A* algorithm achieve greater cost efficiency. Since LLM-Advisor may occasionally lack common sense in their suggestions, we propose two hallucination-mitigation strategies. Furthermore, we experimentally verified that GPT-4o performs poorly in zero-shot path planning, even when terrain descriptions are clearly provided, demonstrating its low spatial awareness. We also experimentally demonstrate that using an LLM as an advisor is more effective than directly integrating it into the path-planning loop. Since LLMs may generate hallucinations, using LLMs in the loop of a search-based method (such as A*) may lead to a higher number of failed paths, demonstrating that our proposed LLM-Advisor is a better choice. 
+
+**Abstract (ZH)**: 多地形低成本路径规划是机器人导航中的关键任务，要求识别一条既避免障碍物又最小化旅行成本的路径。特别是在室外环境中需要导航多种地形的实际情况中，充电或加油都很困难。然而，这方面的研究非常有限。在本文中，我们开发了一种基于提示的方法LLM-Advisor，利用大型语言模型（LLMs）作为路径规划的有效顾问。LLM-Advisor有选择性地提供建议，展示了其在必要时不需要修改路径的辨识能力。在提出建议的情况下，70.59%的路径对于A*算法、69.47%的路径对于RRT*算法以及78.70%的路径对于LLM-A*算法实现了更高的成本效率。由于LLM-Advisor偶尔可能在其建议中缺乏常识，我们提出了两种减轻幻觉的策略。此外，我们实验证明，即使提供了明确的地形描述，GPT-4o在零样本路径规划中表现不佳，显示出其低空间意识。我们还实验证明，使用LLM作为顾问比直接将其集成到路径规划循环中更有效。由于LLM可能会生成幻觉，在基于搜索的方法（如A*）的循环中使用LLM可能会导致更多失败的路径，这进一步证明了我们提出的LLM-Advisor是一个更好的选择。 
+
+---
+# Learning Covariance-Based Multi-Scale Representation of Neuroimaging Measures for Alzheimer Classification 
+
+**Title (ZH)**: 基于协方差的多尺度神经影像表示学习及其在阿尔茨海默病分类中的应用 
+
+**Authors**: Seunghun Baek, Injun Choi, Mustafa Dere, Minjeong Kim, Guorong Wu, Won Hwa Kim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01232)  
+
+**Abstract**: Stacking excessive layers in DNN results in highly underdetermined system when training samples are limited, which is very common in medical applications. In this regard, we present a framework capable of deriving an efficient high-dimensional space with reasonable increase in model size. This is done by utilizing a transform (i.e., convolution) that leverages scale-space theory with covariance structure. The overall model trains on this transform together with a downstream classifier (i.e., Fully Connected layer) to capture the optimal multi-scale representation of the original data which corresponds to task-specific components in a dual space. Experiments on neuroimaging measures from Alzheimer's Disease Neuroimaging Initiative (ADNI) study show that our model performs better and converges faster than conventional models even when the model size is significantly reduced. The trained model is made interpretable using gradient information over the multi-scale transform to delineate personalized AD-specific regions in the brain. 
+
+**Abstract (ZH)**: 在训练样本受限时，DNN中堆叠过多层会导致高度欠定系统，这在医疗应用中非常常见。为此，我们提出了一种框架，能够在合理增加模型规模的同时提取出高效高维空间。通过利用基于尺度空间理论和协方差结构的变换（即卷积），整体模型在该变换及下游分类器（即全连接层）的共同作用下训练，以捕获原始数据的最优多尺度表示，这对应于双空间中的任务特定组件。实验结果表明，即使模型规模显著减小，我们的模型在阿尔茨海默病神经影像学测量数据上的性能也优于传统模型，并且收敛速度更快。通过多尺度变换的梯度信息，训练好的模型可以被解释以界定个性化的AD特定脑区。 
+
+---
+# Tera-MIND: Tera-scale mouse brain simulation via spatial mRNA-guided diffusion 
+
+**Title (ZH)**: Tera-MIND: 经空间mRNA引导扩散的tera规模小鼠大脑模拟 
+
+**Authors**: Jiqing Wu, Ingrid Berg, Yawei Li, Ender Konukoglu, Viktor H. Koelzer  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01220)  
+
+**Abstract**: Holistic 3D modeling of molecularly defined brain structures is crucial for understanding complex brain functions. Emerging tissue profiling technologies enable the construction of a comprehensive atlas of the mammalian brain with sub-cellular resolution and spatially resolved gene expression data. However, such tera-scale volumetric datasets present significant computational challenges in understanding complex brain functions within their native 3D spatial context. Here, we propose the novel generative approach $\textbf{Tera-MIND}$, which can simulate $\textbf{Tera}$-scale $\textbf{M}$ouse bra$\textbf{IN}s$ in 3D using a patch-based and boundary-aware $\textbf{D}$iffusion model. Taking spatial transcriptomic data as the conditional input, we generate virtual mouse brains with comprehensive cellular morphological detail at teravoxel scale. Through the lens of 3D $gene$-$gene$ self-attention, we identify spatial molecular interactions for key transcriptomic pathways in the murine brain, exemplified by glutamatergic and dopaminergic neuronal systems. Importantly, these $in$-$silico$ biological findings are consistent and reproducible across three tera-scale virtual mouse brains. Therefore, Tera-MIND showcases a promising path toward efficient and generative simulations of whole organ systems for biomedical research. Project website: $\href{this http URL}{https}$ 
+
+**Abstract (ZH)**: 巨规模三维建模对于理解复杂脑功能至关重要。新兴的组织 profiling 技术使我们能够以亚细胞分辨率和空间分辨的基因表达数据构建哺乳动物脑的综合图谱。然而，如此大的体积数据集在其原生的三维空间上下文中理解复杂脑功能带来了显著的计算挑战。在这里，我们提出了一种新颖的生成方法 $\textbf{Tera-MIND}$，该方法使用基于 patch 的和边界意识的 $\textbf{D}$ 扩散模型在三维中模拟 $\textbf{Tera}$-规模 $\textbf{M}$ 鼠脑。通过空间转录组学数据作为条件输入，我们生成了具有全面细胞形态细节的巨尺度虚拟鼠脑。借助三维 $gene$-$gene$ 自注意力机制，我们识别了小鼠脑中关键转录组路径的空间分子互作，例如谷氨酸能和多巴胺能神经元系统。重要的是，这些 $in$-$silico$ 生物发现可以在三个巨尺度虚拟鼠脑中一致且可重复地观察到。因此，$\textbf{Tera-MIND}$ 展示了为生物医药研究高效且生成性模拟整个器官系统的前景。项目网址：$\href{this http URL}{https}$。 
+
+---
+# STGAN: Spatial-temporal Graph Autoregression Network for Pavement Distress Deterioration Prediction 
+
+**Title (ZH)**: STGAN: 空间-时间图自回归网络在路面病害衰退预测中的应用 
+
+**Authors**: Shilin Tong, Difei Wu, Xiaona Liu, Le Zheng, Yuchuan Du, Difan Zou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01152)  
+
+**Abstract**: Pavement distress significantly compromises road integrity and poses risks to drivers. Accurate prediction of pavement distress deterioration is essential for effective road management, cost reduction in maintenance, and improvement of traffic safety. However, real-world data on pavement distress is usually collected irregularly, resulting in uneven, asynchronous, and sparse spatial-temporal datasets. This hinders the application of existing spatial-temporal models, such as DCRNN, since they are only applicable to regularly and synchronously collected data. To overcome these challenges, we propose the Spatial-Temporal Graph Autoregression Network (STGAN), a novel graph neural network model designed for accurately predicting irregular pavement distress deterioration using complex spatial-temporal data. Specifically, STGAN integrates the temporal domain into the spatial domain, creating a larger graph where nodes are represented by spatial-temporal tuples and edges are formed based on a similarity-based connection mechanism. Furthermore, based on the constructed spatiotemporal graph, we formulate pavement distress deterioration prediction as a graph autoregression task, i.e., the graph size increases incrementally and the prediction is performed sequentially. This is accomplished by a novel spatial-temporal attention mechanism deployed by STGAN. Utilizing the ConTrack dataset, which contains pavement distress records collected from different locations in Shanghai, we demonstrate the superior performance of STGAN in capturing spatial-temporal correlations and addressing the aforementioned challenges. Experimental results further show that STGAN outperforms baseline models, and ablation studies confirm the effectiveness of its novel modules. Our findings contribute to promoting proactive road maintenance decision-making and ultimately enhancing road safety and resilience. 
+
+**Abstract (ZH)**: 基于时空图自回归网络的不规则 pavement 状况退化预测 
+
+---
+# ReaderLM-v2: Small Language Model for HTML to Markdown and JSON 
+
+**Title (ZH)**: ReaderLM-v2: 小型语言模型用于HTML到Markdown和JSON的转换 
+
+**Authors**: Feng Wang, Zesheng Shi, Bo Wang, Nan Wang, Han Xiao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01151)  
+
+**Abstract**: We present ReaderLM-v2, a compact 1.5 billion parameter language model designed for efficient web content extraction. Our model processes documents up to 512K tokens, transforming messy HTML into clean Markdown or JSON formats with high accuracy -- making it an ideal tool for grounding large language models. The model's effectiveness results from two key innovations: (1) a three-stage data synthesis pipeline that generates high quality, diverse training data by iteratively drafting, refining, and critiquing web content extraction; and (2) a unified training framework combining continuous pre-training with multi-objective optimization. Intensive evaluation demonstrates that ReaderLM-v2 outperforms GPT-4o-2024-08-06 and other larger models by 15-20\% on carefully curated benchmarks, particularly excelling at documents exceeding 100K tokens, while maintaining significantly lower computational requirements. 
+
+**Abstract (ZH)**: ReaderLM-v2: 一种高效的1.5亿参数语言模型，用于web内容提取 
+
+---
+# Dynamic spillovers and investment strategies across artificial intelligence ETFs, artificial intelligence tokens, and green markets 
+
+**Title (ZH)**: 人工智能ETFs、人工智能代币和绿色市场间的动态溢出效应及投资策略 
+
+**Authors**: Ying-Hui Shao, Yan-Hong Yang, Wei-Xing Zhou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01148)  
+
+**Abstract**: This paper investigates the risk spillovers among AI ETFs, AI tokens, and green markets using the R2 decomposition method. We reveal several key insights. First, the overall transmission connectedness index (TCI) closely aligns with the contemporaneous TCI, while the lagged TCI is significantly lower. Second, AI ETFs and clean energy act as risk transmitters, whereas AI tokens and green bond function as risk receivers. Third, AI tokens are difficult to hedge and provide limited hedging ability compared to AI ETFs and green assets. However, multivariate portfolios effectively reduce AI tokens investment risk. Among them, the minimum correlation portfolio outperforms the minimum variance and minimum connectedness portfolios. 
+
+**Abstract (ZH)**: 本文使用R2分解方法研究了AI ETFs、AI代币和绿色市场之间的风险溢出效应，并揭示了几项关键洞察。首先，总体传播连通性指数（TCI）与 contemporaneous TCI 高度一致，而滞后 TCI 显著较低。其次，AI ETFs 和清洁能源作为风险传递者，而 AI 代币和绿色债券则作为风险接收者。第三，与 AI ETFs 和绿色资产相比，AI 代币难以对冲，并提供有限的对冲能力。然而，多元 portfolios 有效地减少了 AI 代币投资风险，在这些 portfolios 中，最小相关性 portfolio 的表现优于最小方差和最小连通性 portfolio。 
+
+---
+# One-shot In-context Part Segmentation 
+
+**Title (ZH)**: 单次情境内部分段 
+
+**Authors**: Zhenqi Dai, Ting Liu, Xingxing Zhang, Yunchao Wei, Yanning Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01144)  
+
+**Abstract**: In this paper, we present the One-shot In-context Part Segmentation (OIParts) framework, designed to tackle the challenges of part segmentation by leveraging visual foundation models (VFMs). Existing training-based one-shot part segmentation methods that utilize VFMs encounter difficulties when faced with scenarios where the one-shot image and test image exhibit significant variance in appearance and perspective, or when the object in the test image is partially visible. We argue that training on the one-shot example often leads to overfitting, thereby compromising the model's generalization capability. Our framework offers a novel approach to part segmentation that is training-free, flexible, and data-efficient, requiring only a single in-context example for precise segmentation with superior generalization ability. By thoroughly exploring the complementary strengths of VFMs, specifically DINOv2 and Stable Diffusion, we introduce an adaptive channel selection approach by minimizing the intra-class distance for better exploiting these two features, thereby enhancing the discriminatory power of the extracted features for the fine-grained parts. We have achieved remarkable segmentation performance across diverse object categories. The OIParts framework not only eliminates the need for extensive labeled data but also demonstrates superior generalization ability. Through comprehensive experimentation on three benchmark datasets, we have demonstrated the superiority of our proposed method over existing part segmentation approaches in one-shot settings. 
+
+**Abstract (ZH)**: 基于视觉基础模型的一次性上下文部分分割框架：OIParts 
+
+---
+# How Well do LLMs Compress Their Own Chain-of-Thought? A Token Complexity Approach 
+
+**Title (ZH)**: LLMs压缩自身推理过程的能力：一种基于tokens复杂性的方法 
+
+**Authors**: Ayeong Lee, Ethan Che, Tianyi Peng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01141)  
+
+**Abstract**: Chain-of-thought prompting has emerged as a powerful technique for enabling large language models (LLMs) to solve complex reasoning tasks. However, these reasoning chains can be verbose, raising concerns about efficiency. In response, recent works have sought to decrease response lengths through simple prompting strategies (e.g. 'be concise'). In this work, we conduct the first systematic study of the relationship between reasoning length and model performance across a diverse range of compression instructions (e.g. 'use 10 words or less' or 'remove all punctuation'). In doing so, we discover a universal tradeoff between reasoning length and accuracy that persists across even very distinct reasoning chains. We demonstrate that this tradeoff emerges from a sharp threshold behavior at the question level: each task has an intrinsic 'token complexity' - a minimal number of tokens required for successful problem-solving. We show how token complexity enables us to compute information-theoretic limits on the accuracy-compression tradeoff, and find that prompt-based compression strategies operate far from these theoretical limits. This suggests there may be significant room for improvement and our framework provides a benchmark to help researchers evaluate progress in reasoning efficiency. Our work also highlights the importance of adaptive compression -- giving shorter responses for easier questions -- and we show that token complexity is a useful tool for measuring this capability. 
+
+**Abstract (ZH)**: 关于推理长度与模型性能之间关系的系统研究：从压缩指令探索推理效率与准确性的权衡 
+
+---
+# Statistical Tractability of Off-policy Evaluation of History-dependent Policies in POMDPs 
+
+**Title (ZH)**: 基于POMDP的历史依赖策略离策评估的统计可处理性 
+
+**Authors**: Yuheng Zhang, Nan Jiang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01134)  
+
+**Abstract**: We investigate off-policy evaluation (OPE), a central and fundamental problem in reinforcement learning (RL), in the challenging setting of Partially Observable Markov Decision Processes (POMDPs) with large observation spaces. Recent works of Uehara et al. (2023a); Zhang & Jiang (2024) developed a model-free framework and identified important coverage assumptions (called belief and outcome coverage) that enable accurate OPE of memoryless policies with polynomial sample complexities, but handling more general target policies that depend on the entire observable history remained an open problem. In this work, we prove information-theoretic hardness for model-free OPE of history-dependent policies in several settings, characterized by additional assumptions imposed on the behavior policy (memoryless vs. history-dependent) and/or the state-revealing property of the POMDP (single-step vs. multi-step revealing). We further show that some hardness can be circumvented by a natural model-based algorithm -- whose analysis has surprisingly eluded the literature despite the algorithm's simplicity -- demonstrating provable separation between model-free and model-based OPE in POMDPs. 
+
+**Abstract (ZH)**: 我们在部分可观测马尔可夫决策过程（POMDPs）的大观测空间设定中研究不可策略评估（OPE）问题，这是一种强化学习（RL）中的核心问题。 
+
+---
+# Beyond QA Pairs: Assessing Parameter-Efficient Fine-Tuning for Fact Embedding in LLMs 
+
+**Title (ZH)**: 超越问答对：评估参数高效微调在LLMs中事实嵌入的效果 
+
+**Authors**: Shivam Ratnakar, Abhiroop Talasila, Raghav Chamadiya, Nikhil Agarwal, Vinayak K Doifode  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01131)  
+
+**Abstract**: This paper presents an extensive examination of Parameter-Efficient Fine-Tuning (PEFT) for embedding domain specific facts into Large Language Models (LLMs), focusing on improving the fine-tuning process by categorizing question-answer (QA) pairs into Factual and Conceptual classes using a BERT-based classifier. Two distinct Llama-2 models are fine-tuned based on these classifications and evaluated using larger models like GPT-3.5 Turbo and Gemini. Our results indicate that models trained on conceptual datasets outperform those trained on factual datasets. Additionally, we compare the efficiency of two synthetic fine-tuning dataset generation techniques, D-RAG and D-Naive, with D-Naive demonstrating superior performance. Although PEFT has shown effectiveness, our research indicates that it may not be the most optimal method for embedding facts into LLMs. However, it has demonstrated exceptional performance in instruction-based tasks. Our findings are reinforced by a 1000-sample dataset in the data center domain, where the fine-tuned Llama-2 7B model significantly outperforms the baseline model in generating product recommendations. Our study highlights the importance of QA pair categorization and synthetic dataset generation techniques in enhancing the performance of LLMs in specific domains. 
+
+**Abstract (ZH)**: 本研究对Parameter-Efficient Fine-Tuning (PEFT) 用于将领域特定事实嵌入大型语言模型 (LLMs) 进行了全面探讨，重点关注通过使用基于BERT的分类器将问题-答案 (QA) 对分类为事实性和概念性类别的方法来改进微调过程。基于这些分类微调了两个不同的Llama-2模型，并使用GPT-3.5 Turbo和Gemini等较大模型进行评估。结果显示，使用概念性数据集训练的模型优于使用事实性数据集训练的模型。此外，我们比较了两种合成微调数据集生成技术D-RAG和D-Naive的效率，发现D-Naive表现出更好的性能。尽管PEFT显示出有效性，但研究显示它可能不是将事实嵌入LLMs的最佳方法。然而，它在基于指令的任务上表现出色。我们的发现得到了数据中心领域的1000样本数据集的支持，其中微调的Llama-2 7B模型在生成产品推荐方面显著优于基线模型。我们的研究强调了在特定领域增强LLMs性能时QA对分类和合成数据集生成技术的重要性。 
+
+---
+# FGS-SLAM: Fourier-based Gaussian Splatting for Real-time SLAM with Sparse and Dense Map Fusion 
+
+**Title (ZH)**: 基于傅里叶变换的高斯点云SLAM：稀疏与密集地图融合的实时SLAM方法 
+
+**Authors**: Yansong Xu, Junlin Li, Wei Zhang, Siyu Chen, Shengyong Zhang, Yuquan Leng, Weijia Zhou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01109)  
+
+**Abstract**: 3D gaussian splatting has advanced simultaneous localization and mapping (SLAM) technology by enabling real-time positioning and the construction of high-fidelity maps. However, the uncertainty in gaussian position and initialization parameters introduces challenges, often requiring extensive iterative convergence and resulting in redundant or insufficient gaussian representations. To address this, we introduce a novel adaptive densification method based on Fourier frequency domain analysis to establish gaussian priors for rapid convergence. Additionally, we propose constructing independent and unified sparse and dense maps, where a sparse map supports efficient tracking via Generalized Iterative Closest Point (GICP) and a dense map creates high-fidelity visual representations. This is the first SLAM system leveraging frequency domain analysis to achieve high-quality gaussian mapping in real-time. Experimental results demonstrate an average frame rate of 36 FPS on Replica and TUM RGB-D datasets, achieving competitive accuracy in both localization and mapping. 
+
+**Abstract (ZH)**: 3D 高斯 splatting 已经通过实现实时定位和构建高保真地图来推动同时定位与地图构建（SLAM）技术的发展。然而，高斯位置和初始化参数的不确定性带来了挑战，通常需要大量的迭代才能收敛，并导致高斯表示冗余或不足。为解决这一问题，我们提出了一种基于傅里叶频域分析的新型自适应加密方法，以建立高斯先验，实现快速收敛。此外，我们还提出构建独立统一的稀疏和密集地图，其中稀疏地图通过广义迭代最近点（GICP）支持高效的追踪，而密集地图创建高保真视觉表示。这是首个利用频域分析实现实时高质量化 Gauss 映射的 SLAM 系统。实验结果表明，在 Replica 和 TUM RGB-D 数据集上平均帧率为 36 FPS，同时在定位和建图方面达到竞争力的精度。 
+
+---
+# Ground contact and reaction force sensing for linear policy control of quadruped robot 
+
+**Title (ZH)**: quadruped机器人线性策略控制的地面接触与反作用力感知 
+
+**Authors**: Harshita Mhaske, Aniket Mandhare, Jidong Huang, Yu Bai  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01102)  
+
+**Abstract**: Designing robots capable of traversing uneven terrain and overcoming physical obstacles has been a longstanding challenge in the field of robotics. Walking robots show promise in this regard due to their agility, redundant DOFs and intermittent ground contact of locomoting appendages. However, the complexity of walking robots and their numerous DOFs make controlling them extremely difficult and computation heavy. Linear policies trained with reinforcement learning have been shown to perform adequately to enable quadrupedal walking, while being computationally light weight. The goal of this research is to study the effect of augmentation of observation space of a linear policy with newer state variables on performance of the policy. Since ground contact and reaction forces are the primary means of robot-environment interaction, they are essential state variables on which the linear policy must be informed. Experimental results show that augmenting the observation space with ground contact and reaction force data trains policies with better survivability, better stability against external disturbances and higher adaptability to untrained conditions. 
+
+**Abstract (ZH)**: 设计能够在不平地形上 traversing 并克服物理障碍的机器人在机器人学领域一直是一个长期挑战。步行机器人由于其灵活性、冗余自由度以及移动肢体的间歇性地面接触，显示出在这一方面的潜力。然而，步行机器人的复杂性和众多自由度使其实现控制极其困难且计算量大。利用强化学习训练的线性策略已被证明在使四足行走变得可行的同时，具有计算量小的优点。本研究的目标是研究将新的状态变量加入线性策略的观测空间对策略性能的影响。由于地面接触和反作用力是机器人与环境交互的主要方式，它们是线性策略必须知晓的关键状态变量。实验结果表明，通过将地面接触和反作用力数据加入观测空间来训练的策略具有更好的生存能力、更好的对外部干扰的稳定性以及更高的对未训练条件的适应性。 
+
+---
+# Fence Theorem: Preprocessing is Dual-Objective Semantic Structure Isolator in 3D Anomaly Detection 
+
+**Title (ZH)**: 围栏定理：预处理是三维异常检测中的双目标语义结构隔离器 
+
+**Authors**: Hanzhe Liang, Jie Zhou, Xuanxin Chen, Jinbao Wang, Can Gao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01100)  
+
+**Abstract**: 3D anomaly detection (AD) is prominent but difficult due to lacking a unified theoretical foundation for preprocessing design. We establish the Fence Theorem, formalizing preprocessing as a dual-objective semantic isolator: (1) mitigating cross-semantic interference to the greatest extent feasible and (2) confining anomaly judgments to aligned semantic spaces wherever viable, thereby establishing intra-semantic comparability. Any preprocessing approach achieves this goal through a two-stage process of Emantic-Division and Spatial-Constraints stage. Through systematic deconstruction, we theoretically and experimentally subsume existing preprocessing methods under this theorem via tripartite evidence: qualitative analyses, quantitative studies, and mathematical proofs. Guided by the Fence Theorem, we implement Patch3D, consisting of Patch-Cutting and Patch-Matching modules, to segment semantic spaces and consolidate similar ones while independently modeling normal features within each space. Experiments on Anomaly-ShapeNet and Real3D-AD with different settings demonstrate that progressively finer-grained semantic alignment in preprocessing directly enhances point-level AD accuracy, providing inverse validation of the theorem's causal logic. 
+
+**Abstract (ZH)**: 3D异常检测的预处理设计缺乏统一的理论基础，因此颇具挑战性。我们建立了篱笆定理，将预处理形式化为一种双目标语义隔离器：（1）最大限度地减轻跨语义干扰；（2）在可行的情况下将异常判断限制在对齐的语义空间中，从而建立同语义内的可比性。任何预处理方法均通过语义分割和空间约束的两阶段过程来实现这一目标。通过系统的分解，我们通过定性分析、定量研究和数学证明三种证据，理论上和实验性地将现有的预处理方法归置于这一定理之下。遵循篱笆定理的指导，我们实现了Patch3D，包含Patch-Cutting和Patch-Matching模块，用于分割语义空间并将相似的空间合并，同时独立建模每个空间内的正常特征。在不同设置下的Anomaly-ShapeNet和Real3D-AD实验中表明，预处理中逐渐细化的语义对齐直接提升了点级异常检测的准确性，这间接验证了定理因果逻辑的有效性。 
+
+---
+# SolBench: A Dataset and Benchmark for Evaluating Functional Correctness in Solidity Code Completion and Repair 
+
+**Title (ZH)**: SolBench: 一个用于评估Solidity代码补全和修复功能性正确性的数据集和基准测试 
+
+**Authors**: Zaoyu Chen, Haoran Qin, Nuo Chen, Xiangyu Zhao, Lei Xue, Xiapu Luo, Xiao-Ming Wu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01098)  
+
+**Abstract**: Smart contracts are crucial programs on blockchains, and their immutability post-deployment makes functional correctness vital. Despite progress in code completion models, benchmarks for Solidity, the primary smart contract language, are lacking. Existing metrics like BLEU do not adequately assess the functional correctness of generated smart contracts. To fill this gap, we introduce SolBench, a benchmark for evaluating the functional correctness of Solidity smart contracts generated by code completion models. SolBench includes 4,178 functions from 1,155 Ethereum-deployed contracts. Testing advanced models revealed challenges in generating correct code without context, as Solidity functions rely on context-defined variables and interfaces. To address this, we propose a Retrieval-Augmented Code Repair framework. In this framework, an executor verifies functional correctness, and if necessary, an LLM repairs the code using retrieved snippets informed by executor traces. We conduct a comprehensive evaluation of both closed-source and open-source LLMs across various model sizes and series to assess their performance in smart contract completion. The results show that code repair and retrieval techniques effectively enhance the correctness of smart contract completion while reducing computational costs. 
+
+**Abstract (ZH)**: 基于代码补全模型的Solidity智能合约功能正确性评估基准SolBench 
+
+---
+# Depth-Adaptive Graph Neural Networks via Learnable Bakry-'Emery Curvature 
+
+**Title (ZH)**: 可学习的贝克ry-埃米里曲率的深度自适应图神经网络 
+
+**Authors**: Asela Hevapathige, Ahad N. Zehmakan, Qing Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01079)  
+
+**Abstract**: Graph Neural Networks (GNNs) have demonstrated strong representation learning capabilities for graph-based tasks. Recent advances on GNNs leverage geometric properties, such as curvature, to enhance its representation capabilities by modeling complex connectivity patterns and information flow within graphs. However, most existing approaches focus solely on discrete graph topology, overlooking diffusion dynamics and task-specific dependencies essential for effective learning. To address this, we propose integrating Bakry-Émery curvature, which captures both structural and task-driven aspects of information propagation. We develop an efficient, learnable approximation strategy, making curvature computation scalable for large graphs. Furthermore, we introduce an adaptive depth mechanism that dynamically adjusts message-passing layers per vertex based on its curvature, ensuring efficient propagation. Our theoretical analysis establishes a link between curvature and feature distinctiveness, showing that high-curvature vertices require fewer layers, while low-curvature ones benefit from deeper propagation. Extensive experiments on benchmark datasets validate the effectiveness of our approach, showing consistent performance improvements across diverse graph learning tasks. 
+
+**Abstract (ZH)**: 基于贝克里-エ米里曲率的图神经网络 
+
+---
+# Tackling Hallucination from Conditional Models for Medical Image Reconstruction with DynamicDPS 
+
+**Title (ZH)**: 基于动态DPS的条件模型在医疗图像重建中应对幻觉问题 
+
+**Authors**: Seunghoi Kim, Henry F. J. Tregidgo, Matteo Figini, Chen Jin, Sarang Joshi, Daniel C. Alexander  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01075)  
+
+**Abstract**: Hallucinations are spurious structures not present in the ground truth, posing a critical challenge in medical image reconstruction, especially for data-driven conditional models. We hypothesize that combining an unconditional diffusion model with data consistency, trained on a diverse dataset, can reduce these hallucinations. Based on this, we propose DynamicDPS, a diffusion-based framework that integrates conditional and unconditional diffusion models to enhance low-quality medical images while systematically reducing hallucinations. Our approach first generates an initial reconstruction using a conditional model, then refines it with an adaptive diffusion-based inverse problem solver. DynamicDPS skips early stage in the reverse process by selecting an optimal starting time point per sample and applies Wolfe's line search for adaptive step sizes, improving both efficiency and image fidelity. Using diffusion priors and data consistency, our method effectively reduces hallucinations from any conditional model output. We validate its effectiveness in Image Quality Transfer for low-field MRI enhancement. Extensive evaluations on synthetic and real MR scans, including a downstream task for tissue volume estimation, show that DynamicDPS reduces hallucinations, improving relative volume estimation by over 15% for critical tissues while using only 5% of the sampling steps required by baseline diffusion models. As a model-agnostic and fine-tuning-free approach, DynamicDPS offers a robust solution for hallucination reduction in medical imaging. The code will be made publicly available upon publication. 
+
+**Abstract (ZH)**: 幻觉是 ground truth 中不存在的虚假结构，对医学图像重建构成了严峻挑战，尤其是在数据驱动的条件模型中。我们假设将无条件扩散模型与数据一致性结合，并在多样化的数据集上训练，可以减少这些幻觉。基于此，我们提出了一种基于扩散的 DynamicDPS 框架，该框架结合了条件和无条件扩散模型，以提升低质量医学图像的同时系统地减少幻觉。该方法首先使用条件模型生成初始重建，然后用自适应扩散基逆问题求解器对其进行细化。DynamicDPS 通过为每个样本选择最优的起始时间点跳过逆过程中早期阶段，并采用沃尔夫线搜索方法进行自适应步长调整，从而提高效率和图像保真度。利用扩散先验和数据一致性，该方法有效地减少了任何条件模型输出的幻觉。我们在低场 MRI 增强中的图像质量转移任务中验证了其有效性。在合成和真实 MRI 扫描的广泛评估中，包括用于组织体积估算的下游任务，结果显示 DynamicDPS 减少了幻觉，对于关键组织的相对体积估算提高了超过 15%，同时仅使用了基本扩散模型所需采样步骤的 5%。作为一种模型无关且无需微调的方法，DynamicDPS 提供了一种在医学成像中减少幻觉的稳健解决方案。代码将在发表后公开。 
+
+---
+# Language-Guided Object Search in Agricultural Environments 
+
+**Title (ZH)**: 农业环境中基于语言的对象搜索 
+
+**Authors**: Advaith Balaji, Saket Pradhan, Dmitry Berenson  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01068)  
+
+**Abstract**: Creating robots that can assist in farms and gardens can help reduce the mental and physical workload experienced by farm workers. We tackle the problem of object search in a farm environment, providing a method that allows a robot to semantically reason about the location of an unseen target object among a set of previously seen objects in the environment using a Large Language Model (LLM). We leverage object-to-object semantic relationships to plan a path through the environment that will allow us to accurately and efficiently locate our target object while also reducing the overall distance traveled, without needing high-level room or area-level semantic relationships. During our evaluations, we found that our method outperformed a current state-of-the-art baseline and our ablations. Our offline testing yielded an average path efficiency of 84%, reflecting how closely the predicted path aligns with the ideal path. Upon deploying our system on the Boston Dynamics Spot robot in a real-world farm environment, we found that our system had a success rate of 80%, with a success weighted by path length of 0.67, which demonstrates a reasonable trade-off between task success and path efficiency under real-world conditions. The project website can be viewed at this https URL 
+
+**Abstract (ZH)**: 在农场环境中创建能辅助工作的机器人可以减轻农场工人所面临的身心负担。我们解决了在农场环境中进行对象搜索的问题，提出了一种方法，通过大型语言模型（LLM），使机器人能够在一组之前在环境中看到的对象中，对一个未见的目标对象的位置进行语义推理。我们利用对象之间的语义关系来规划一条路径，该路径能准确且高效地定位目标对象，同时减少总体移动距离，而不需依赖高层的房间或区域级别的语义关系。在评估中，我们的方法优于当前最先进的基线和我们的消融实验。我们的离线测试显示路径效率平均值为84%，反映了预测路径与理想路径的接近程度。在实际农场环境中部署我们的系统到Boston Dynamics Spot机器人后，我们发现系统的成功率达到了80%，加权路径长度的成功率达到0.67，这在实际条件下展示了任务成功与路径效率之间的合理权衡。项目网站可浏览 [此链接]。 
+
+---
+# Scientific Reasoning: Assessment of Multimodal Generative LLMs 
+
+**Title (ZH)**: 多模态生成性大语言模型的科学推理评估 
+
+**Authors**: Florian Dreyer, Ekaterina Kolos, Daria Matiash  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01064)  
+
+**Abstract**: Large language models (LLMs) can answer questions and reason about complex tasks, also from the scientific domain. We assess several multimodal LLMs (MLLMs) on ScienceQA and find that Gemini models show the highest accuracy with little context, and the highest textual similarity to human explanations with richer context. Adapter-tuning of smaller MLLMs did not lead to any reliable performance. Training from Gemini outputs consistently underperformed training from the original data. 
+
+**Abstract (ZH)**: 大型语言模型（LLMs）可以回答问题并处理复杂的任务，包括科学领域的问题。我们评估了几种多模态LLMs（MLLMs）在ScienceQA上的表现，发现Gemini模型在少量上下文情况下准确性最高，并且在丰富上下文中与人类解释的 textual 相似度最高。对较小的MLLMs进行适应性微调并没有提高可靠性能。从Gemini输出进行训练的表现始终不如使用原始数据进行训练。 
+
+---
+# SFO: Piloting VLM Feedback for Offline RL 
+
+**Title (ZH)**: SFO: 指导大规模语言模型反馈的离线 reinforcement learning 
+
+**Authors**: Jacob Beck  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01062)  
+
+**Abstract**: While internet-scale image and textual data have enabled strong generalization in Vision-Language Models (VLMs), the absence of internet-scale control data has impeded the development of similar generalization in standard reinforcement learning (RL) agents. Although VLMs are fundamentally limited in their ability to solve control tasks due to their lack of action-conditioned training data, their capacity for image understanding allows them to provide valuable feedback in RL tasks by recognizing successful outcomes. A key challenge in Reinforcement Learning from AI Feedback (RLAIF) is determining how best to integrate VLM-derived signals into the learning process. We explore this question in the context of offline RL and introduce a class of methods called sub-trajectory filtered optimization. We identify three key insights. First, trajectory length plays a crucial role in offline RL, as full-trajectory preference learning exacerbates the stitching problem, necessitating the use of sub-trajectories. Second, even in Markovian environments, a non-Markovian reward signal from a sequence of images is required to assess trajectory improvement, as VLMs do not interpret control actions and must rely on visual cues over time. Third, a simple yet effective approach--filtered and weighted behavior cloning--consistently outperforms more complex reinforcement learning from human feedback-based methods. We propose sub-trajectory filtered behavior cloning, a method that leverages VLM feedback on sub-trajectories while incorporating a retrospective filtering mechanism that removes sub-trajectories preceding failures to improve robustness and prevent turbulence. This study is preliminary; we provide initial evidence through evaluations on a toy control domain. Please enjoy our airport puns. 
+
+**Abstract (ZH)**: 虽然互联网规模的图像和文本数据使得视觉语言模型（VLMs）具备较强的泛化能力，但由于缺乏互联网规模的控制数据，标准强化学习（RL）代理的发展受到了限制。尽管VLMs在解决控制任务方面由于缺少基于动作的训练数据而受到根本性的限制，但它们在图像理解方面的能力可以通过识别成功的结果来为RL任务提供宝贵的反馈。从AI反馈进行强化学习（RLAIF）的一个关键挑战是如何最佳地将VLM衍生的信号整合到学习过程中。我们从离线RL的角度探讨了这一问题，并引入了一类称为子轨迹筛选优化的方法。我们识别出三个关键见解。首先，轨迹长度在离线RL中扮演着至关重要的角色，因为全长轨迹偏好学习加剧了缝合问题，迫使我们使用子轨迹。其次，即使在马尔可夫环境里，对于评估轨迹改进仍需要来自图像序列的非马尔可夫奖励信号，因为VLMs无法解释控制动作，而是依赖于时间上的视觉线索。第三，一种简单而有效的方法——筛选和加权行为克隆——在复杂的人类反馈强化学习方法中表现得更为出色。我们提出了一种子轨迹筛选行为克隆方法，该方法利用VLM在子轨迹上的反馈，并结合一种回顾性的筛选机制，该机制会移除失败前的子轨迹，以提高鲁棒性并防止振动。这项研究是初步的；我们通过在玩具控制域上的评估提供了初步证据。请欣赏我们的机场双关语。 
+
+---
+# MAPS: Multi-Fidelity AI-Augmented Photonic Simulation and Inverse Design Infrastructure 
+
+**Title (ZH)**: MAPS：多保真度人工智能增强光子模拟与逆设计基础设施 
+
+**Authors**: Pingchuan Ma, Zhengqi Gao, Meng Zhang, Haoyu Yang, Mark Ren, Rena Huang, Duane S. Boning, Jiaqi Gu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01046)  
+
+**Abstract**: Inverse design has emerged as a transformative approach for photonic device optimization, enabling the exploration of high-dimensional, non-intuitive design spaces to create ultra-compact devices and advance photonic integrated circuits (PICs) in computing and interconnects. However, practical challenges, such as suboptimal device performance, limited manufacturability, high sensitivity to variations, computational inefficiency, and lack of interpretability, have hindered its adoption in commercial hardware. Recent advancements in AI-assisted photonic simulation and design offer transformative potential, accelerating simulations and design generation by orders of magnitude over traditional numerical methods. Despite these breakthroughs, the lack of an open-source, standardized infrastructure and evaluation benchmark limits accessibility and cross-disciplinary collaboration. To address this, we introduce MAPS, a multi-fidelity AI-augmented photonic simulation and inverse design infrastructure designed to bridge this gap. MAPS features three synergistic components: (1) MAPS-Data: A dataset acquisition framework for generating multi-fidelity, richly labeled devices, providing high-quality data for AI-for-optics research. (2) MAPS-Train: A flexible AI-for-photonics training framework offering a hierarchical data loading pipeline, customizable model construction, support for data- and physics-driven losses, and comprehensive evaluations. (3) MAPS-InvDes: An advanced adjoint inverse design toolkit that abstracts complex physics but exposes flexible optimization steps, integrates pre-trained AI models, and incorporates fabrication variation models. This infrastructure MAPS provides a unified, open-source platform for developing, benchmarking, and advancing AI-assisted photonic design workflows, accelerating innovation in photonic hardware optimization and scientific machine learning. 
+
+**Abstract (ZH)**: 逆设计已成为光电设备优化的一种变革性方法，使研究人员能够探索高维、非直观的设计空间，创建超紧凑的器件，并推进计算和互连领域的光子集成电路（PICs）。然而，实际应用中如设备性能欠佳、制造难度大、对变化敏感、计算效率低以及缺乏可解释性等因素限制了其在商用硬件中的应用。近年来，借助AI辅助的光子仿真和设计方法展现出变革性的潜力，极大地加速了仿真和设计生成的速度。尽管取得了这些突破，但缺乏开放源代码、标准化的基础设施和评估基准限制了其可访问性和跨学科合作。为解决这一问题，我们引入了MAPS，一种多精度AI增强光子仿真与逆设计基础设施，旨在填补这一空白。MAPS 包含三个协同的组件：(1) MAPS-Data：一种数据集获取框架，用于生成多精度、丰富标签的器件，提供高质量数据以支持光子学中的AI研究。(2) MAPS-Train：一种灵活的AI辅助光子学训练框架，提供分层数据加载管道、可定制的模型构建、数据和物理驱动的损失支持以及全面的评估。(3) MAPS-InvDes：一种先进的伴随逆设计工具包，通过抽象复杂的物理现象同时暴露灵活的优化步骤，集成预训练的AI模型并整合制造变异性模型。该基础设施MAPS提供了一个统一的开放源代码平台，用于开发、基准测试和推进AI辅助光子设计流程，加速光子硬件优化和科学机器学习的创新。 
+
+---
+# Language Models Predict Empathy Gaps Between Social In-groups and Out-groups 
+
+**Title (ZH)**: 语言模型预测社交内群体与外群体之间的共情差距 
+
+**Authors**: Yu Hou, Hal Daumé III, Rachel Rudinger  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01030)  
+
+**Abstract**: Studies of human psychology have demonstrated that people are more motivated to extend empathy to in-group members than out-group members (Cikara et al., 2011). In this study, we investigate how this aspect of intergroup relations in humans is replicated by LLMs in an emotion intensity prediction task. In this task, the LLM is given a short description of an experience a person had that caused them to feel a particular emotion; the LLM is then prompted to predict the intensity of the emotion the person experienced on a numerical scale. By manipulating the group identities assigned to the LLM's persona (the "perceiver") and the person in the narrative (the "experiencer"), we measure how predicted emotion intensities differ between in-group and out-group settings. We observe that LLMs assign higher emotion intensity scores to in-group members than out-group members. This pattern holds across all three types of social groupings we tested: race/ethnicity, nationality, and religion. We perform an in-depth analysis on Llama-3.1-8B, the model which exhibited strongest intergroup bias among those tested. 
+
+**Abstract (ZH)**: 人类心理学的研究表明，人们在向群体内成员而非群体外成员施予同情方面更有动机（Cikara等，2011）。在本研究中，我们探讨这种人类群体关系方面的特征在情感强度预测任务中如何被LLM复制。在这个任务中，LLM被给出一个描述某人经历而导致其产生特定情绪的简短描述；然后被提示预测该人经历的情绪强度在数值比例尺上的数值。通过操控分配给LLM的人格（“观察者”）和叙述中的人物（“体验者”）的社会群体身份，我们测量了在群体内和群体外情景中预测的情绪强度差异。我们观察到，LLM对群体内成员的情感强度评分高于群体外成员。这一模式在我们测试的所有三种社会群体类型中都成立：种族/ ethnicity、国籍和宗教。我们对表现最明显的群体间偏见的Llama-3.1-8B模型进行了深入分析。 
+
+---
+# LLM-Fusion: A Novel Multimodal Fusion Model for Accelerated Material Discovery 
+
+**Title (ZH)**: LLM-融合：一种加速材料发现的新型多模态融合模型 
+
+**Authors**: Onur Boyar, Indra Priyadarsini, Seiji Takeda, Lisa Hamada  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01022)  
+
+**Abstract**: Discovering materials with desirable properties in an efficient way remains a significant problem in materials science. Many studies have tackled this problem by using different sets of information available about the materials. Among them, multimodal approaches have been found to be promising because of their ability to combine different sources of information. However, fusion algorithms to date remain simple, lacking a mechanism to provide a rich representation of multiple modalities. This paper presents LLM-Fusion, a novel multimodal fusion model that leverages large language models (LLMs) to integrate diverse representations, such as SMILES, SELFIES, text descriptions, and molecular fingerprints, for accurate property prediction. Our approach introduces a flexible LLM-based architecture that supports multimodal input processing and enables material property prediction with higher accuracy than traditional methods. We validate our model on two datasets across five prediction tasks and demonstrate its effectiveness compared to unimodal and naive concatenation baselines. 
+
+**Abstract (ZH)**: 高效发现具有 desirable 性质的材料仍然是材料科学中的一个重大问题。许多研究通过利用关于材料的不同信息集来解决这一问题。其中，多模态方法因其结合不同信息源的能力而显示出前景。然而，到目前为止的融合算法仍较为简单，缺乏为多种模态提供丰富表示的机制。本文提出了一个名为 LLM-Fusion 的新颖多模态融合模型，该模型利用大型语言模型（LLMs）整合诸如 SMILES、SELFIES、文本描述和分子指纹等多样化的表示，以实现准确的性质预测。我们的方法引入了一个灵活的基于 LLM 的架构，支持多种模态的输入处理，并能够通过更高精度实现材料性质预测。我们在两个数据集中针对五个预测任务验证了该模型，并证明了其有效性，优于单一模态和简单的串联基线方法。 
+
+---
+# MedUnifier: Unifying Vision-and-Language Pre-training on Medical Data with Vision Generation Task using Discrete Visual Representations 
+
+**Title (ZH)**: MedUnifier: 使用离散视觉表示在医学数据上统一视觉和语言预训练以及视觉生成任务 
+
+**Authors**: Ziyang Zhang, Yang Yu, Yucheng Chen, Xulei Yang, Si Yong Yeo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01019)  
+
+**Abstract**: Despite significant progress in Vision-Language Pre-training (VLP), current approaches predominantly emphasize feature extraction and cross-modal comprehension, with limited attention to generating or transforming visual content. This gap hinders the model's ability to synthesize coherent and novel visual representations from textual prompts, thereby reducing the effectiveness of multi-modal learning. In this work, we propose MedUnifier, a unified VLP framework tailored for medical data. MedUnifier seamlessly integrates text-grounded image generation capabilities with multi-modal learning strategies, including image-text contrastive alignment, image-text matching and image-grounded text generation. Unlike traditional methods that reply on continuous visual representations, our approach employs visual vector quantization, which not only facilitates a more cohesive learning strategy for cross-modal understanding but also enhances multi-modal generation quality by effectively leveraging discrete representations. Our framework's effectiveness is evidenced by the experiments on established benchmarks, including uni-modal tasks (supervised fine-tuning), cross-modal tasks (image-text retrieval and zero-shot image classification), and multi-modal tasks (medical report generation, image synthesis), where it achieves state-of-the-art performance across various tasks. MedUnifier also offers a highly adaptable tool for a wide range of language and vision tasks in healthcare, marking advancement toward the development of a generalizable AI model for medical applications. 
+
+**Abstract (ZH)**: MedUnifier：一种面向医疗数据的统一视觉语言预训练框架 
+
+---
+# A Semantic Search Pipeline for Causality-driven Adhoc Information Retrieval 
+
+**Title (ZH)**: 因果驱动的即席信息检索的语义搜索管道 
+
+**Authors**: Dhairya Dalal, Sharmi Dev Gupta, Bentolhoda Binaei  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01003)  
+
+**Abstract**: We present a unsupervised semantic search pipeline for the Causality-driven Adhoc Information Retrieval (CAIR-2021) shared task. The CAIR shared task expands traditional information retrieval to support the retrieval of documents containing the likely causes of a query event. A successful system must be able to distinguish between topical documents and documents containing causal descriptions of events that are causally related to the query event. Our approach involves aggregating results from multiple query strategies over a semantic and lexical index. The proposed approach leads the CAIR-2021 leaderboard and outperformed both traditional IR and pure semantic embedding-based approaches. 
+
+**Abstract (ZH)**: 我们提出了一个无监督语义搜索管道用于因果驱动的即兴信息检索（CAIR-2021）共享任务。CAIR共享任务扩展了传统信息检索，以支持检索包含查询事件可能原因的文档。一个成功的系统必须能够区分主题相关文档和包含与查询事件因果相关的事件描述的文档。我们的方法涉及在语义和词汇索引上聚合多种查询策略的结果。所提出的方法在CAIR-2021排行榜上名列前茅，并且优于传统的IR方法和纯粹基于语义嵌入的方法。 
+
+---
+# Dialogue Without Limits: Constant-Sized KV Caches for Extended Responses in LLMs 
+
+**Title (ZH)**: 无界对话：LLMs中扩展响应的恒定大小KV缓存 
+
+**Authors**: Ravi Ghadia, Avinash Kumar, Gaurav Jain, Prashant Nair, Poulami Das  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00979)  
+
+**Abstract**: Autoregressive Transformers rely on Key-Value (KV) caching to accelerate inference. However, the linear growth of the KV cache with context length leads to excessive memory consumption and bandwidth constraints. This bottleneck is particularly problematic in real-time applications -- such as chatbots and interactive assistants -- where low latency and high memory efficiency are critical. Existing methods drop distant tokens or compress states in a lossy manner, sacrificing accuracy by discarding vital context or introducing bias.
+We propose MorphKV, an inference-time technique that maintains a constant-sized KV cache while preserving accuracy. MorphKV balances long-range dependencies and local coherence during text generation. It eliminates early-token bias while retaining high-fidelity context by adaptively ranking tokens through correlation-aware selection. Unlike heuristic retention or lossy compression, MorphKV iteratively refines the KV cache via lightweight updates guided by attention patterns of recent tokens. This approach captures inter-token correlation with greater accuracy, crucial for tasks like content creation and code generation. Our studies on long-response tasks show 52.9$\%$ memory savings and 18.2$\%$ higher accuracy on average compared to state-of-the-art prior works, enabling efficient real-world deployment. 
+
+**Abstract (ZH)**: MorphKV：一种保持恒定大小的键值缓存并保持准确性的推理时技术 
+
+---
+# Using Synthetic Images to Augment Small Medical Image Datasets 
+
+**Title (ZH)**: 使用合成图像扩充小型医疗图像数据集 
+
+**Authors**: Minh H. Vu, Lorenzo Tronchin, Tufve Nyholm, Tommy Löfstedt  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00962)  
+
+**Abstract**: Recent years have witnessed a growing academic and industrial interest in deep learning (DL) for medical imaging. To perform well, DL models require very large labeled datasets. However, most medical imaging datasets are small, with a limited number of annotated samples. The reason they are small is usually because delineating medical images is time-consuming and demanding for oncologists. There are various techniques that can be used to augment a dataset, for example, to apply affine transformations or elastic transformations to available images, or to add synthetic images generated by a Generative Adversarial Network (GAN). In this work, we have developed a novel conditional variant of a current GAN method, the StyleGAN2, to generate multi-modal high-resolution medical images with the purpose to augment small medical imaging datasets with these synthetic images. We use the synthetic and real images from six datasets to train models for the downstream task of semantic segmentation. The quality of the generated medical images and the effect of this augmentation on the segmentation performance were evaluated afterward. Finally, the results indicate that the downstream segmentation models did not benefit from the generated images. Further work and analyses are required to establish how this augmentation affects the segmentation performance. 
+
+**Abstract (ZH)**: 近年来，深度学习（DL）在医学影像领域的学术和工业兴趣不断增加。为了表现良好，DL模型需要非常大的标注数据集。然而，大多数医学影像数据集较小，标注样本数量有限。这些数据集较小的原因通常是，医学图像的勾画对肿瘤学家来说既耗时又具有挑战性。可以使用各种技术来扩充数据集，例如对现有图像应用仿射变换或弹性变换，或者通过生成对抗网络（GAN）生成合成图像。在本工作中，我们开发了一种新型的条件变体StyleGAN2方法，以生成多模态高分辨率医学图像，目的是使用这些合成图像扩充小型医学影像数据集。我们使用来自六个数据集的合成图像和真实图像来训练用于下游语义分割任务的模型。之后评估了生成的医学图像质量以及此扩充对分割性能的影响。最终结果表明，下游分割模型并未从生成的图像中受益。进一步的工作和分析是必要的，以确定此扩充如何影响分割性能。 
+
+---
+# Exploiting Vulnerabilities in Speech Translation Systems through Targeted Adversarial Attacks 
+
+**Title (ZH)**: 通过针对性 adversarial 攻击利用语音翻译系统的漏洞 
+
+**Authors**: Chang Liu, Haolin Wu, Xi Yang, Kui Zhang, Cong Wu, Weiming Zhang, Nenghai Yu, Tianwei Zhang, Qing Guo, Jie Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00957)  
+
+**Abstract**: As speech translation (ST) systems become increasingly prevalent, understanding their vulnerabilities is crucial for ensuring robust and reliable communication. However, limited work has explored this issue in depth. This paper explores methods of compromising these systems through imperceptible audio manipulations. Specifically, we present two innovative approaches: (1) the injection of perturbation into source audio, and (2) the generation of adversarial music designed to guide targeted translation, while also conducting more practical over-the-air attacks in the physical world. Our experiments reveal that carefully crafted audio perturbations can mislead translation models to produce targeted, harmful outputs, while adversarial music achieve this goal more covertly, exploiting the natural imperceptibility of music. These attacks prove effective across multiple languages and translation models, highlighting a systemic vulnerability in current ST architectures. The implications of this research extend beyond immediate security concerns, shedding light on the interpretability and robustness of neural speech processing systems. Our findings underscore the need for advanced defense mechanisms and more resilient architectures in the realm of audio systems. More details and samples can be found at this https URL. 
+
+**Abstract (ZH)**: 随着语音翻译（ST）系统的日益普及，理解其脆弱性对于确保通信的稳健性和可靠性至关重要。然而，有限的工作深入探讨了这一问题。本文探讨了通过不可察觉的音频操纵破坏这些系统的办法。具体来说，我们提出了两种创新的方法：（1）源音频中注入扰动，（2）生成旨在引导目标翻译的对抗性音乐，并且还在实际物理世界中进行了更加实际的空中攻击。实验结果表明，精心构造的音频扰动可以误导翻译模型生成针对性的有害输出，而对抗性音乐则更加隐蔽地实现了这一目标，利用了音乐的自然不可察觉性。这些攻击在多种语言和翻译模型中证明有效，突显了当前ST架构中的系统性漏洞。这一研究的含义超越了即时的安全问题，揭示了神经语音处理系统可解释性和稳健性的必要性。我们的发现强调了在音频系统领域需要更先进的防御机制和更稳健的架构。更多信息和样本请访问此网址。 
+
+---
+# SemViQA: A Semantic Question Answering System for Vietnamese Information Fact-Checking 
+
+**Title (ZH)**: SemViQA: 一种用于越南语信息事实核查的语义问答系统 
+
+**Authors**: Nam V. Nguyen, Dien X. Tran, Thanh T. Tran, Anh T. Hoang, Tai V. Duong, Di T. Le, Phuc-Lu Le  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00955)  
+
+**Abstract**: The rise of misinformation, exacerbated by Large Language Models (LLMs) like GPT and Gemini, demands robust fact-checking solutions, especially for low-resource languages like Vietnamese. Existing methods struggle with semantic ambiguity, homonyms, and complex linguistic structures, often trading accuracy for efficiency. We introduce SemViQA, a novel Vietnamese fact-checking framework integrating Semantic-based Evidence Retrieval (SER) and Two-step Verdict Classification (TVC). Our approach balances precision and speed, achieving state-of-the-art results with 78.97\% strict accuracy on ISE-DSC01 and 80.82\% on ViWikiFC, securing 1st place in the UIT Data Science Challenge. Additionally, SemViQA Faster improves inference speed 7x while maintaining competitive accuracy. SemViQA sets a new benchmark for Vietnamese fact verification, advancing the fight against misinformation. The source code is available at: this https URL. 
+
+**Abstract (ZH)**: 大型语言模型（LLMs）如GPT和Gemini加剧了虚假信息的传播，特别是对于越南语等低资源语言而言，急需 robust 的事实核查解决方案。现有的方法在语义模糊性、同音词以及复杂语言结构方面存在困难，常常在准确性和效率之间做出权衡。我们提出了SemViQA，这是一种新颖的越南语事实核查框架，结合了基于语义的证据检索（SER）和两步验证分类（TVC）。我们的方法在精确度和速度之间取得了平衡，并在ISE-DSC01上取得了78.97%的严格准确率，在ViWikiFC上取得了80.82%的准确率，获得UIT数据科学挑战赛冠军。此外，SemViQA Faster 将推理速度提高了7倍，同时保持了竞争力的准确率。SemViQA 为越南语事实核查设立了新的基准，并推动了对抗虚假信息的斗争。源代码可在以下链接获取：this https URL。 
+
+---
+# Cross Modality Medical Image Synthesis for Improving Liver Segmentation 
+
+**Title (ZH)**: 跨模态医学图像合成以改善肝脏分割 
+
+**Authors**: Muhammad Rafiq, Hazrat Ali, Ghulam Mujtaba, Zubair Shah, Shoaib Azmat  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00945)  
+
+**Abstract**: Deep learning-based computer-aided diagnosis (CAD) of medical images requires large datasets. However, the lack of large publicly available labeled datasets limits the development of deep learning-based CAD systems. Generative Adversarial Networks (GANs), in particular, CycleGAN, can be used to generate new cross-domain images without paired training data. However, most CycleGAN-based synthesis methods lack the potential to overcome alignment and asymmetry between the input and generated data. We propose a two-stage technique for the synthesis of abdominal MRI using cross-modality translation of abdominal CT. We show that the synthetic data can help improve the performance of the liver segmentation network. We increase the number of abdominal MRI images through cross-modality image transformation of unpaired CT images using a CycleGAN inspired deformation invariant network called EssNet. Subsequently, we combine the synthetic MRI images with the original MRI images and use them to improve the accuracy of the U-Net on a liver segmentation task. We train the U-Net on real MRI images and then on real and synthetic MRI images. Consequently, by comparing both scenarios, we achieve an improvement in the performance of U-Net. In summary, the improvement achieved in the Intersection over Union (IoU) is 1.17%. The results show potential to address the data scarcity challenge in medical imaging. 
+
+**Abstract (ZH)**: 基于深度学习的医学图像计算机辅助诊断（CAD）需要大量数据。然而，缺乏大型公开标注数据集限制了基于深度学习的CAD系统的开发。生成对抗网络（GAN），特别是CycleGAN，可以在没有配对训练数据的情况下生成新的跨域图像。然而，大多数基于CycleGAN的合成方法在解决输入数据和生成数据之间的对齐和不对称性方面缺乏潜力。我们提出了一种两阶段技术，通过腹部CT的跨模态转换生成腹部MRI图像。我们展示了合成数据可以帮助提高肝脏分割网络的性能。我们通过使用一种称为EssNet的变形不变网络，将未配对的CT图像进行跨模态图像变换，增加腹部MRI图像的数量。随后，我们将合成的MRI图像与原始MRI图像结合，并利用它们改善U-Net在肝脏分割任务中的准确性。我们先在真实的MRI图像上训练U-Net，然后在真实的和合成的MRI图像上训练。最终，通过比较两种场景，我们实现了U-Net性能的提升。概括而言，我们在Intersection over Union（IoU）上的改进达到了1.17%。结果展示了解决医学成像中的数据稀缺挑战的潜力。 
+
+---
+# Can AI Model the Complexities of Human Moral Decision-Making? A Qualitative Study of Kidney Allocation Decisions 
+
+**Title (ZH)**: AI能否模拟人类道德决策的复杂性？一项关于肾脏分配决策的定性研究 
+
+**Authors**: Vijay Keswani, Vincent Conitzer, Walter Sinnott-Armstrong, Breanna K. Nguyen, Hoda Heidari, Jana Schaich Borg  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00940)  
+
+**Abstract**: A growing body of work in Ethical AI attempts to capture human moral judgments through simple computational models. The key question we address in this work is whether such simple AI models capture {the critical} nuances of moral decision-making by focusing on the use case of kidney allocation. We conducted twenty interviews where participants explained their rationale for their judgments about who should receive a kidney. We observe participants: (a) value patients' morally-relevant attributes to different degrees; (b) use diverse decision-making processes, citing heuristics to reduce decision complexity; (c) can change their opinions; (d) sometimes lack confidence in their decisions (e.g., due to incomplete information); and (e) express enthusiasm and concern regarding AI assisting humans in kidney allocation decisions. Based on these findings, we discuss challenges of computationally modeling moral judgments {as a stand-in for human input}, highlight drawbacks of current approaches, and suggest future directions to address these issues. 
+
+**Abstract (ZH)**: 伦理人工智能中的一项 growing body of work 试图通过简单的计算模型捕捉人类的道德判断。我们在这项工作中关注的关键问题是，此类简单的AI模型是否能够通过以肾源分配为例，捕捉到道德决策中的关键细微差别。我们在20次访谈中，让参与者解释他们关于谁应接受肾源的判断依据。我们观察到参与者：（a）以不同程度的价值患者的相关道德属性；（b）采用多种决策过程，引用启发式方法以减少决策复杂性；（c）可以改变他们的观点；（d）有时对他们的决策缺乏信心（如因信息不完整）；以及（e）对AI在肾源分配决策中辅助人类运用表现出热情和关注。基于这些发现，我们讨论了将道德判断计算建模作为替代人类输入的挑战，指出现有方法的局限性，并建议未来的研究方向以解决这些问题。 
+
+---
+# Improving the Transferability of Adversarial Attacks by an Input Transpose 
+
+**Title (ZH)**: 通过输入转置提高对抗攻击的转移性 
+
+**Authors**: Qing Wan, Shilong Deng, Xun Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00932)  
+
+**Abstract**: Deep neural networks (DNNs) are highly susceptible to adversarial examples--subtle perturbations applied to inputs that are often imperceptible to humans yet lead to incorrect model predictions. In black-box scenarios, however, existing adversarial examples exhibit limited transferability and struggle to effectively compromise multiple unseen DNN models. Previous strategies enhance the cross-model generalization of adversarial examples by introducing versatility into adversarial perturbations, thereby improving transferability. However, further refining perturbation versatility often demands intricate algorithm development and substantial computation consumption. In this work, we propose an input transpose method that requires almost no additional labor and computation costs but can significantly improve the transferability of existing adversarial strategies. Even without adding adversarial perturbations, our method demonstrates considerable effectiveness in cross-model attacks. Our exploration finds that on specific datasets, a mere $1^\circ$ left or right rotation might be sufficient for most adversarial examples to deceive unseen models. Our further analysis suggests that this transferability improvement triggered by rotating only $1^\circ$ may stem from visible pattern shifts in the DNN's low-level feature maps. Moreover, this transferability exhibits optimal angles that, when identified under unrestricted query conditions, could potentially yield even greater performance. 
+
+**Abstract (ZH)**: 深度神经网络（DNNs）对 adversarial 例子高度敏感——这种细微的输入扰动往往对人类不可感知，但会导致模型预测错误。然而，在黑盒场景中，现有的 adversarial 例子迁移性有限，难以有效攻破多个未见过的 DNN 模型。以往的方法通过增加 adversarial 扰动的多样性来增强跨模型通用性，从而提高迁移性。然而，进一步细化扰动的多样性往往需要复杂的算法开发和大量的计算消耗。在本工作中，我们提出了一种输入转置方法，几乎不需要额外的劳动和计算成本，但可以显著提高现有 adversarial 策略的迁移性。即使不添加 adversarial 扰动，我们的方法在跨模型攻击中也显示出显著的效果。我们的研究发现，在特定数据集上，简单的 $1^\circ$ 左右旋转可能足以使大多数 adversarial 例子欺骗未见过的模型。进一步的分析表明，这种由 $1^\circ$ 旋转引起的迁移性提升可能源于 DNN 低层特征图中可观察到的模式变化。此外，这种迁移性在不受限制的查询条件下可能会表现出最优的角度，这可能进一步提高性能。 
+
+---
+# Behavior Preference Regression for Offline Reinforcement Learning 
+
+**Title (ZH)**: 离线强化学习中的行为偏好回归 
+
+**Authors**: Padmanaba Srinivasan, William Knottenbelt  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00930)  
+
+**Abstract**: Offline reinforcement learning (RL) methods aim to learn optimal policies with access only to trajectories in a fixed dataset. Policy constraint methods formulate policy learning as an optimization problem that balances maximizing reward with minimizing deviation from the behavior policy. Closed form solutions to this problem can be derived as weighted behavioral cloning objectives that, in theory, must compute an intractable partition function. Reinforcement learning has gained popularity in language modeling to align models with human preferences; some recent works consider paired completions that are ranked by a preference model following which the likelihood of the preferred completion is directly increased. We adapt this approach of paired comparison. By reformulating the paired-sample optimization problem, we fit the maximum-mode of the Q function while maximizing behavioral consistency of policy actions. This yields our algorithm, Behavior Preference Regression for offline RL (BPR). We empirically evaluate BPR on the widely used D4RL Locomotion and Antmaze datasets, as well as the more challenging V-D4RL suite, which operates in image-based state spaces. BPR demonstrates state-of-the-art performance over all domains. Our on-policy experiments suggest that BPR takes advantage of the stability of on-policy value functions with minimal perceptible performance degradation on Locomotion datasets. 
+
+**Abstract (ZH)**: 离线强化学习（RL）方法旨在通过访问固定数据集中的轨迹来学习最优策略。政策约束方法将政策学习形式化为一个优化问题，该问题平衡了最大化奖励与最小化偏离行为策略之间的偏差。这个问题的闭式解可以作为加权行为克隆目标函数导出，在理论上必须计算一个难处理的分区函数。强化学习在语言建模中获得了 popularity 以使模型与人类偏好对齐；一些近期的工作考虑了由偏好模型排名的成对完成，并直接增加了优选完成的似然性。我们采用这种成对比较的方法。通过重新形式化成对样本优化问题，我们拟合了Q函数的最大模式，同时最大化了政策行动的行为一致性。这一过程产生了我们的算法——行为偏好回归用于离线RL（BPR）。我们在广泛使用的D4RL运动和Antmaze数据集中以及更具挑战性的基于图像状态空间的V-D4RL套件上进行了实证评估，BPR在所有领域均表现出最先进的性能。我们在线策略实验表明，BPR利用了在线策略价值函数的稳定性，并在运动数据集中几乎没有明显的性能退化。 
+
+---
+# Multimodal Distillation-Driven Ensemble Learning for Long-Tailed Histopathology Whole Slide Images Analysis 
+
+**Title (ZH)**: 多模态蒸馏驱动的集成学习在长尾病理全视野图像分析中的应用 
+
+**Authors**: Xitong Ling, Yifeng Ping, Jiawen Li, Jing Peng, Yuxuan Chen, Minxi Ouyang, Yizhi Wang, Yonghong He, Tian Guan, Xiaoping Liu, Lianghui Zhu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00915)  
+
+**Abstract**: Multiple Instance Learning (MIL) plays a significant role in computational pathology, enabling weakly supervised analysis of Whole Slide Image (WSI) datasets. The field of WSI analysis is confronted with a severe long-tailed distribution problem, which significantly impacts the performance of classifiers. Long-tailed distributions lead to class imbalance, where some classes have sparse samples while others are abundant, making it difficult for classifiers to accurately identify minority class samples. To address this issue, we propose an ensemble learning method based on MIL, which employs expert decoders with shared aggregators and consistency constraints to learn diverse distributions and reduce the impact of class imbalance on classifier performance. Moreover, we introduce a multimodal distillation framework that leverages text encoders pre-trained on pathology-text pairs to distill knowledge and guide the MIL aggregator in capturing stronger semantic features relevant to class information. To ensure flexibility, we use learnable prompts to guide the distillation process of the pre-trained text encoder, avoiding limitations imposed by specific prompts. Our method, MDE-MIL, integrates multiple expert branches focusing on specific data distributions to address long-tailed issues. Consistency control ensures generalization across classes. Multimodal distillation enhances feature extraction. Experiments on Camelyon+-LT and PANDA-LT datasets show it outperforms state-of-the-art methods. 
+
+**Abstract (ZH)**: 多实例学习（MIL）在计算病理学中发挥着重要作用，使其能够在Whole Slide Image (WSI)数据集的弱监督分析中发挥作用。WSI分析领域面临着严重的长尾分布问题，这对分类器的性能产生了显著影响。长尾分布导致类别不平衡，一些类别样本稀疏而另一些类别样本丰富，使得分类器难以准确识别少数类别样本。为解决这一问题，我们提出了一种基于MIL的ensemble学习方法，该方法使用具有共享聚合器和一致性约束的专家解码器来学习多样化的分布并减少类别不平衡对分类器性能的影响。此外，我们引入了一种多模态蒸馏框架，该框架利用在病理学文本对上预训练的文本编码器，通过蒸馏知识来指导MIL聚合器捕捉与类别信息相关的更强的语义特征。为确保灵活性，我们使用可学习的提示来指导预训练文本编码器的蒸馏过程，避免特定提示的限制。我们的方法MDE-MIL结合了多个专注于特定数据分布的专家分支，以解决长尾问题。一致性控制确保了跨类别的泛化能力。多模态蒸馏增强了特征提取。实验结果表明，MDE-MIL在Camelyon+-LT和PANDA-LT数据集上优于现有最佳方法。 
+
+---
+# HiBench: Benchmarking LLMs Capability on Hierarchical Structure Reasoning 
+
+**Title (ZH)**: HiBench: LLMs在层次结构推理能力评估 
+
+**Authors**: Zhuohang Jiang, Pangjing Wu, Ziran Liang, Peter Q. Chen, Xu Yuan, Ye Jia, Jiancheng Tu, Chen Li, Peter H.F. Ng, Qing Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00912)  
+
+**Abstract**: Structure reasoning is a fundamental capability of large language models (LLMs), enabling them to reason about structured commonsense and answer multi-hop questions. However, existing benchmarks for structure reasoning mainly focus on horizontal and coordinate structures (\emph{e.g.} graphs), overlooking the hierarchical relationships within them. Hierarchical structure reasoning is crucial for human cognition, particularly in memory organization and problem-solving. It also plays a key role in various real-world tasks, such as information extraction and decision-making. To address this gap, we propose HiBench, the first framework spanning from initial structure generation to final proficiency assessment, designed to benchmark the hierarchical reasoning capabilities of LLMs systematically. HiBench encompasses six representative scenarios, covering both fundamental and practical aspects, and consists of 30 tasks with varying hierarchical complexity, totaling 39,519 queries. To evaluate LLMs comprehensively, we develop five capability dimensions that depict different facets of hierarchical structure understanding. Through extensive evaluation of 20 LLMs from 10 model families, we reveal key insights into their capabilities and limitations: 1) existing LLMs show proficiency in basic hierarchical reasoning tasks; 2) they still struggle with more complex structures and implicit hierarchical representations, especially in structural modification and textual reasoning. Based on these findings, we create a small yet well-designed instruction dataset, which enhances LLMs' performance on HiBench by an average of 88.84\% (Llama-3.1-8B) and 31.38\% (Qwen2.5-7B) across all tasks. The HiBench dataset and toolkit are available here, this https URL, to encourage evaluation. 
+
+**Abstract (ZH)**: 大型语言模型的结构推理能力是其基本能力之一，使得它们能够对结构化常识进行推理并回答多跳问题。然而，现有的结构推理基准主要关注水平和坐标结构（例如，图形），忽略了它们内部的层级关系。层级结构推理对于人类认知至关重要，特别是在记忆组织和问题解决中。它在信息提取和决策制定等多种实际任务中也起着关键作用。为解决这一问题，我们提出了HiBench，这是第一个从初始结构生成到最终能力评估的框架，旨在系统地基准大型语言模型的层级推理能力。HiBench涵盖了六个代表性场景，既包括基础层面也包括实际应用层面，并包含30个具有不同层级复杂性的任务，共计39,519个查询。为了全面评估大型语言模型，我们开发了五个能力维度，描绘了层级结构理解的不同方面。通过对10个模型家族中的20个大型语言模型进行广泛评估，我们揭示了关于其能力和局限性的关键见解：1）现有大型语言模型在基本层级推理任务上表现出色；2）它们在更复杂的结构和隐含的层级表示方面仍然面临挑战，尤其是在结构修改和文本推理方面。基于这些发现，我们创建了一个小型但设计精良的指令数据集，通过提升Llama-3.1-8B和Qwen2.5-7B在所有任务上的平均表现，分别为88.84%和31.38%。HiBench数据集和工具包在此处提供，以鼓励评估：this https URL。 
+
+---
+# S4M: S4 for multivariate time series forecasting with Missing values 
+
+**Title (ZH)**: S4M: 使用缺失值处理的多变量时间序列预测 
+
+**Authors**: Jing Peng, Meiqi Yang, Qiong Zhang, Xiaoxiao Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00900)  
+
+**Abstract**: Multivariate time series data play a pivotal role in a wide range of real-world applications. However, the presence of block missing data introduces significant challenges, often compromising the performance of predictive models. Traditional two-step approaches, which first impute missing values and then perform forecasting, are prone to error accumulation, particularly in complex multivariate settings characterized by high missing ratios and intricate dependency structures. In this work, we introduce S4M, an end-to-end time series forecasting framework that seamlessly integrates missing data handling into the Structured State Space Sequence (S4) model architecture. Unlike conventional methods that treat imputation as a separate preprocessing step, S4M leverages the latent space of S4 models to directly recognize and represent missing data patterns, thereby more effectively capturing the underlying temporal and multivariate dependencies. Our framework comprises two key components: the Adaptive Temporal Prototype Mapper (ATPM) and the Missing-Aware Dual Stream S4 (MDS-S4). The ATPM employs a prototype bank to derive robust and informative representations from historical data patterns, while the MDS-S4 processes these representations alongside missingness masks as dual input streams to enable accurate forecasting. Through extensive empirical evaluations on diverse real-world datasets, we demonstrate that S4M consistently achieves state-of-the-art performance. These results underscore the efficacy of our integrated approach in handling missing data, showcasing its robustness and superiority over traditional imputation-based methods. Our findings highlight the potential of S4M to advance reliable time series forecasting in practical applications, offering a promising direction for future research and deployment. Code is available at this https URL. 
+
+**Abstract (ZH)**: 多变量时间序列数据在广泛的实际应用中扮演着关键角色。然而，块缺失数据的存在引入了重大挑战，常常影响预测模型的表现。传统的两步方法首先填补缺失值，然后再进行预测，容易在复杂多变量设置中累积误差，特别是在高缺失比例和复杂的依赖结构中。在这项工作中，我们提出了一种名为S4M的端到端时间序列预测框架，该框架将缺失数据处理无缝集成到结构化状态空间序列（S4）模型架构中。与传统方法将填补视为单独的预处理步骤不同，S4M利用S4模型的潜在空间直接识别和表示缺失数据模式，更有效地捕获潜在的时序和多变量依赖关系。该框架包括两个关键组件：自适应时序原型映射器（ATPM）和缺省感知双流S4（MDS-S4）。ATPM利用原型库从历史数据模式中推导出稳健且有信息的表示，而MDS-S4则与缺失性掩码一起作为双输入流处理这些表示，以实现准确的预测。通过对多种真实世界数据集的广泛实证评估，我们证明了S4M在性能上始终处于领先地位。这些结果突显了我们集成方法在处理缺失数据方面的有效性，展示了其鲁棒性和传统基于填补的方法相比的优势。我们的研究结果强调了S4M在实际应用中实现可靠时间序列预测的潜力，为未来的研究和部署提供了有前途的方向。代码可在以下链接获取。 
+
+---
+# A Simple and Effective Reinforcement Learning Method for Text-to-Image Diffusion Fine-tuning 
+
+**Title (ZH)**: 一种简单而有效的强化学习方法用于文本到图像扩散模型微调 
+
+**Authors**: Shashank Gupta, Chaitanya Ahuja, Tsung-Yu Lin, Sreya Dutta Roy, Harrie Oosterhuis, Maarten de Rijke, Satya Narayan Shukla  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00897)  
+
+**Abstract**: Reinforcement learning ( RL)-based fine-tuning has emerged as a powerful approach for aligning diffusion models with black-box objectives. Proximal policy optimization (PPO) is the most popular choice of method for policy optimization. While effective in terms of performance, PPO is highly sensitive to hyper-parameters and involves substantial computational overhead. REINFORCE, on the other hand, mitigates some computational complexities such as high memory overhead and sensitive hyper-parameter tuning, but has suboptimal performance due to high-variance and sample inefficiency. While the variance of the REINFORCE can be reduced by sampling multiple actions per input prompt and using a baseline correction term, it still suffers from sample inefficiency. To address these challenges, we systematically analyze the efficiency-effectiveness trade-off between REINFORCE and PPO, and propose leave-one-out PPO ( LOOP), a novel RL for diffusion fine-tuning method. LOOP combines variance reduction techniques from REINFORCE, such as sampling multiple actions per input prompt and a baseline correction term, with the robustness and sample efficiency of PPO via clipping and importance sampling. Our results demonstrate that LOOP effectively improves diffusion models on various black-box objectives, and achieves a better balance between computational efficiency and performance. 
+
+**Abstract (ZH)**: 基于强化学习的微调方法：proximal策略优化在与黑盒目标对齐扩散模型中的应用及其效率效果权衡分析——leave-one-out PPO（LOOP）方法在扩散模型微调中的应用 
+
+---
+# Estimating Blood Pressure with a Camera: An Exploratory Study of Ambulatory Patients with Cardiovascular Disease 
+
+**Title (ZH)**: 使用摄像头估计血压：心血管疾病门诊患者的探索性研究 
+
+**Authors**: Theodore Curran, Chengqian Ma, Xin Liu, Daniel McDuff, Girish Narayanswamy, George Stergiou, Shwetak Patel, Eugene Yang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00890)  
+
+**Abstract**: Hypertension is a leading cause of morbidity and mortality worldwide. The ability to diagnose and treat hypertension in the ambulatory population is hindered by limited access and poor adherence to current methods of monitoring blood pressure (BP), specifically, cuff-based devices. Remote photoplethysmography (rPPG) evaluates an individual's pulse waveform through a standard camera without physical contact. Cameras are readily available to the majority of the global population via embedded technologies such as smartphones, thus rPPG is a scalable and promising non-invasive method of BP monitoring. The few studies investigating rPPG for BP measurement have excluded high-risk populations, including those with cardiovascular disease (CVD) or its risk factors, as well as subjects in active cardiac arrhythmia. The impact of arrhythmia, like atrial fibrillation, on the prediction of BP using rPPG is currently uncertain. We performed a study to better understand the relationship between rPPG and BP in a real-world sample of ambulatory patients from a cardiology clinic with established CVD or risk factors for CVD. We collected simultaneous rPPG, PPG, BP, ECG, and other vital signs data from 143 subjects while at rest, and used this data plus demographics to train a deep learning model to predict BP. We report that facial rPPG yields a signal that is comparable to finger PPG. Pulse wave analysis (PWA)-based BP estimates on this cohort performed comparably to studies on healthier subjects, and notably, the accuracy of BP prediction in subjects with atrial fibrillation was not inferior to subjects with normal sinus rhythm. In a binary classification task, the rPPG model identified subjects with systolic BP $\geq$ 130 mm Hg with a positive predictive value of 71% (baseline prevalence 48.3%), highlighting the potential of rPPG for hypertension monitoring. 
+
+**Abstract (ZH)**: 远程光电容抗图在心血管疾病患者中的血压监测研究 
+
+---
+# Evolving High-Quality Rendering and Reconstruction in a Unified Framework with Contribution-Adaptive Regularization 
+
+**Title (ZH)**: 统一框架中的贡献自适应正则化以促进高质量渲染和重建 
+
+**Authors**: You Shen, Zhipeng Zhang, Xinyang Li, Yansong Qu, Yu Lin, Shengchuan Zhang, Liujuan Cao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00881)  
+
+**Abstract**: Representing 3D scenes from multiview images is a core challenge in computer vision and graphics, which requires both precise rendering and accurate reconstruction. Recently, 3D Gaussian Splatting (3DGS) has garnered significant attention for its high-quality rendering and fast inference speed. Yet, due to the unstructured and irregular nature of Gaussian point clouds, ensuring accurate geometry reconstruction remains difficult. Existing methods primarily focus on geometry regularization, with common approaches including primitive-based and dual-model frameworks. However, the former suffers from inherent conflicts between rendering and reconstruction, while the latter is computationally and storage-intensive. To address these challenges, we propose CarGS, a unified model leveraging Contribution-adaptive regularization to achieve simultaneous, high-quality rendering and surface reconstruction. The essence of our framework is learning adaptive contribution for Gaussian primitives by squeezing the knowledge from geometry regularization into a compact MLP. Additionally, we introduce a geometry-guided densification strategy with clues from both normals and Signed Distance Fields (SDF) to improve the capability of capturing high-frequency details. Our design improves the mutual learning of the two tasks, meanwhile its unified structure does not require separate models as in dual-model based approaches, guaranteeing efficiency. Extensive experiments demonstrate the ability to achieve state-of-the-art (SOTA) results in both rendering fidelity and reconstruction accuracy while maintaining real-time speed and minimal storage size. 
+
+**Abstract (ZH)**: 从多视角图像表示3D场景：基于贡献适应正则化的一体化模型 
+
+---
+# CyberCScope: Mining Skewed Tensor Streams and Online Anomaly Detection in Cybersecurity Systems 
+
+**Title (ZH)**: CyberCScope: 网络安全系统中倾斜张量流的挖掘与在线异常检测 
+
+**Authors**: Kota Nakamura, Koki Kawabata, Shungo Tanaka, Yasuko Matsubara, Yasushi Sakurai  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00871)  
+
+**Abstract**: Cybersecurity systems are continuously producing a huge number of time-stamped events in the form of high-order tensors, such as {count; time, port, flow duration, packet size, . . . }, and so how can we detect anomalies/intrusions in real time? How can we identify multiple types of intrusions and capture their characteristic behaviors? The tensor data consists of categorical and continuous attributes and the data distributions of continuous attributes typically exhibit skew. These data properties require handling skewed infinite and finite dimensional spaces simultaneously. In this paper, we propose a novel streaming method, namely CyberCScope. The method effectively decomposes incoming tensors into major trends while explicitly distinguishing between categorical and skewed continuous attributes. To our knowledge, it is the first to compute hybrid skewed infinite and finite dimensional decomposition. Based on this decomposition, it streamingly finds distinct time-evolving patterns, enabling the detection of multiple types of anomalies. Extensive experiments on large-scale real datasets demonstrate that CyberCScope detects various intrusions with higher accuracy than state-of-the-art baselines while providing meaningful summaries for the intrusions that occur in practice. 
+
+**Abstract (ZH)**: 基于高阶张量的实时网络异常检测方法：CyberCScope 
+
+---
+# Babel: Open Multilingual Large Language Models Serving Over 90% of Global Speakers 
+
+**Title (ZH)**: Babel: 开放多语言大型语言模型服务全球90%以上的Speech者 
+
+**Authors**: Yiran Zhao, Chaoqun Liu, Yue Deng, Jiahao Ying, Mahani Aljunied, Zhaodonghui Li, Lidong Bing, Hou Pong Chan, Yu Rong, Deli Zhao, Wenxuan Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00865)  
+
+**Abstract**: Large language models (LLMs) have revolutionized natural language processing (NLP), yet open-source multilingual LLMs remain scarce, with existing models often limited in language coverage. Such models typically prioritize well-resourced languages, while widely spoken but under-resourced languages are often overlooked. To address this disparity, we introduce $\texttt{Babel}$, an open multilingual LLM that covers the top 25 languages by number of speakers, supports over 90% of the global population, and includes many languages neglected by other open multilingual LLMs. Unlike traditional continue pretraining approaches, Babel expands its parameter count through a layer extension technique that elevates Babel's performance ceiling. We introduce two variants: $\texttt{Babel-9B}$, designed for efficient inference and fine-tuning, and $\texttt{Babel-83B}$, which sets a new standard for open multilingual LLMs. Extensive evaluations on multilingual tasks demonstrate its superior performance compared to open LLMs of comparable size. In addition, using open-source supervised fine-tuning datasets, Babel achieves remarkable performance, with Babel-9B-Chat leading among 10B-sized LLMs and Babel-83B-Chat setting a new standard for multilingual tasks, reaching the same level of commercial models. 
+
+**Abstract (ZH)**: 大型语言模型（LLMs）已revolutionized自然语言处理（NLP），但开源多语言LLMs依然稀缺，现有模型往往在语言覆盖上有限制。这类模型通常优先考虑资源丰富的语言，而广泛使用但资源不足的语言常常被忽视。为解决这一问题，我们介绍了$\texttt{Babel}$，一个开源多语言LLM，覆盖了说人口最多的前25种语言，支持全球超过90%的人口，并包含许多其他开源多语言LLM忽视的语言。与传统的连续预训练方法不同，Babel通过层扩展技术扩展了其参数数量，提升了Babel的性能上限。我们引入了两个变体：$\texttt{Babel-9B}$，用于高效推理和微调，以及$\texttt{Babel-83B}$，后者为开源多语言LLM设定新的标准。广泛的任务评估表明，其在性能上优于同类规模的开源LLM。此外，借助开源监督微调数据集，Babel取得了显著性能，其中$\texttt{Babel-9B-Chat}$在10B规模的LLM中名列前茅，而$\texttt{Babel-83B-Chat}$为多语言任务设定了新标准，达到商业模型的水平。 
+
+---
+# MTReD: 3D Reconstruction Dataset for Fly-over Videos of Maritime Domain 
+
+**Title (ZH)**: MTReD: 大洋领海飞越视频的3D重建数据集 
+
+**Authors**: Rui Yi Yong, Samuel Picosson, Arnold Wiliem  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00853)  
+
+**Abstract**: This work tackles 3D scene reconstruction for a video fly-over perspective problem in the maritime domain, with a specific emphasis on geometrically and visually sound reconstructions. This will allow for downstream tasks such as segmentation, navigation, and localization. To our knowledge, there is no dataset available in this domain. As such, we propose a novel maritime 3D scene reconstruction benchmarking dataset, named as MTReD (Maritime Three-Dimensional Reconstruction Dataset). The MTReD comprises 19 fly-over videos curated from the Internet containing ships, islands, and coastlines. As the task is aimed towards geometrical consistency and visual completeness, the dataset uses two metrics: (1) Reprojection error; and (2) Perception based metrics. We find that existing perception-based metrics, such as Learned Perceptual Image Patch Similarity (LPIPS), do not appropriately measure the completeness of a reconstructed image. Thus, we propose a novel semantic similarity metric utilizing DINOv2 features coined DiFPS (DinoV2 Features Perception Similarity). We perform initial evaluation on two baselines: (1) Structured from Motion (SfM) through Colmap; and (2) the recent state-of-the-art MASt3R model. We find that the reconstructed scenes by MASt3R have higher reprojection errors, but superior perception based metric scores. To this end, some pre-processing methods are explored, and we find a pre-processing method which improves both the reprojection error and perception-based score. We envisage our proposed MTReD to stimulate further research in these directions. The dataset and all the code will be made available in this https URL. 
+
+**Abstract (ZH)**: This工作解决了海洋领域视频俯瞰视角下的3D场景重建问题，特别强调了几何和视觉上合理的重建。这将有助于后续任务如分割、导航和定位。据我们所知，该领域没有可用的数据集。因此，我们提出了一种新的海洋3D场景重建基准数据集，命名为MTReD（Maritime Three-Dimensional Reconstruction Dataset）。MTReD包含19个从互联网精选的俯瞰视频，含有船只、岛屿和海岸线。由于任务旨在实现几何一致性和视觉完整性，该数据集使用了两种度量标准：（1）重投影误差；（2）基于感知的度量标准。我们发现现有的基于感知的度量标准，如Learned Perceptual Image Patch Similarity (LPIPS)，不能适当衡量重建图像的完整性。因此，我们提出了一种新的语义相似度度量标准，利用DINOv2特征称为DiFPS（DINOv2特征感知相似度）。我们在两种基线方法上进行了初步评估：（1）通过Colmap的结构从运动（SfM）方法；（2）最近的最先进的MASt3R模型。我们发现MASt3R重建的场景具有更高的重投影误差，但感知基于度量标准得分更高。为此，我们探索了一些预处理方法，并发现一种预处理方法可以同时提高重投影误差和感知基于得分。我们期望提出的MTReD能激发该领域的进一步研究。数据集和所有代码将在以下链接处提供。 
+
+---
+# Rewarding Graph Reasoning Process makes LLMs more Generalized Reasoners 
+
+**Title (ZH)**: 奖励图推理过程使大语言模型成为更通用的推理者 
+
+**Authors**: Miao Peng, Nuo Chen, Zongrui Suo, Jia Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00845)  
+
+**Abstract**: Despite significant advancements in Large Language Models (LLMs), developing advanced reasoning capabilities in LLMs remains a key challenge. Process Reward Models (PRMs) have demonstrated exceptional promise in enhancing reasoning by providing step-wise feedback, particularly in the context of mathematical reasoning. However, their application to broader reasoning domains remains understudied, largely due to the high costs associated with manually creating step-level supervision. In this work, we explore the potential of PRMs in graph reasoning problems - a domain that demands sophisticated multi-step reasoning and offers opportunities for automated step-level data generation using established graph algorithms. We introduce GraphSILO, the largest dataset for graph reasoning problems with fine-grained step-wise labels, built using automated Task-oriented Trajectories and Monte Carlo Tree Search (MCTS) to generate detailed reasoning steps with step-wise labels. Building upon this dataset, we train GraphPRM, the first PRM designed for graph reasoning problems, and evaluate its effectiveness in two key settings: inference-time scaling and reinforcement learning via Direct Preference Optimization (DPO). Experimental results show that GraphPRM significantly improves LLM performance across 13 graph reasoning tasks, delivering a 9% gain for Qwen2.5-7B and demonstrating transferability to new graph reasoning datasets and new reasoning domains like mathematical problem-solving. Notably, GraphPRM enhances LLM performance on GSM8K and Math500, underscoring the cross-domain applicability of graph-based reasoning rewards. Our findings highlight the potential of PRMs in advancing reasoning across diverse domains, paving the way for more versatile and effective LLMs. 
+
+**Abstract (ZH)**: 尽管大型语言模型（LLMs）取得了显著进展，但在LLMs中开发高级推理能力仍然是一个关键挑战。过程奖励模型（PRMs）通过提供逐步反馈，在增强推理能力方面展现了出色潜力，特别是在数学推理方面。然而，由于手动创建逐步监督的成本高昂，PRMs在更广泛推理领域的应用仍然研究不足。在本工作中，我们探讨了PRMs在图推理问题中的潜力——一个需要复杂多步骤推理且可通过现有图算法自动生成逐步数据的领域。我们引入了GraphSILO，这是迄今为止最大的图推理问题数据集，附带精细的步骤级标签，该数据集基于自动化任务导向轨迹和蒙特卡洛树搜索（MCTS）构建，用于生成详细的推理步骤和逐步标签。基于此数据集，我们训练了GraphPRM，这是首个为图推理问题设计的PRM，并在其在推理时间扩展和直接偏好优化（DPO）强化学习两种关键场景中的有效性进行了评估。实验结果表明，GraphPRM在13个图推理任务中显著提高了LLM的性能，为Qwen2.5-7B带来了9%的提升，并且能够转移到新的图推理数据集和新的推理领域如数学问题求解中。值得注意的是，GraphPRM在GSM8K和Math500上的应用提升了LLM的性能，突显了基于图的推理奖励在跨领域中的适用性。我们的研究结果强调了PRMs在推动跨领域推理方面潜力，为进一步提升更具灵活性和有效性的大语言模型铺平了道路。 
+
+---
+# AI Agents for Ground-Based Gamma Astronomy 
+
+**Title (ZH)**: 基于地面伽马射线天文观测的AI代理 
+
+**Authors**: D. Kostunin, V. Sotnikov, S. Golovachev, A. Strube  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00821)  
+
+**Abstract**: Next-generation instruments for ground-based gamma-ray astronomy are marked by a substantial increase in complexity, featuring dozens of telescopes. This leap in scale introduces significant challenges in managing system operations and offline data analysis. Methods, which depend on advanced personnel training and sophisticated software, become increasingly strained as system complexity grows, making it more challenging to effectively support users in such a multifaceted environment. To address these challenges, we propose the development of AI agents based on instruction-finetuned large language models (LLMs). These agents align with specific documentation and codebases, understand the environmental context, operate with external APIs, and communicate with humans in natural language. Leveraging the advanced capabilities of modern LLMs, which can process and retain vast amounts of information, these AI agents offer a transformative approach to system management and data analysis by automating complex tasks and providing intelligent assistance. We present two prototypes that integrate with the Cherenkov Telescope Array Observatory pipelines for operations and offline data analysis. The first prototype automates data model implementation and maintenance for the Configuration Database of the Array Control and Data Acquisition (ACADA). The second prototype is an open-access code generation application tailored for data analysis based on the Gammapy framework. 
+
+**Abstract (ZH)**: 基于高级语言模型指令微调的AI代理在地基伽马射线天文学中的系统管理和数据分析中的应用 
+
+---
+# DELST: Dual Entailment Learning for Hyperbolic Image-Gene Pretraining in Spatial Transcriptomics 
+
+**Title (ZH)**: DELST: 双ionale推理学习在空间转录组学中基于双曲空间的图像-基因预训练 
+
+**Authors**: Xulin Chen, Junzhou Huang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00804)  
+
+**Abstract**: Spatial transcriptomics (ST) maps gene expression within tissue at individual spots, making it a valuable resource for multimodal representation learning. Additionally, ST inherently contains rich hierarchical information both across and within modalities. For instance, different spots exhibit varying numbers of nonzero gene expressions, corresponding to different levels of cellular activity and semantic hierarchies. However, existing methods rely on contrastive alignment of image-gene pairs, failing to accurately capture the intricate hierarchical relationships in ST data. Here, we propose DELST, the first framework to embed hyperbolic representations while modeling hierarchy for image-gene pretraining at two levels: (1) Cross-modal entailment learning, which establishes an order relationship between genes and images to enhance image representation generalization; (2) Intra-modal entailment learning, which encodes gene expression patterns as hierarchical relationships, guiding hierarchical learning across different samples at a global scale and integrating biological insights into single-modal representations. Extensive experiments on ST benchmarks annotated by pathologists demonstrate the effectiveness of our framework, achieving improved predictive performance compared to existing methods. Our code and models are available at: this https URL. 
+
+**Abstract (ZH)**: 基于空间转录组学的双层次嵌入式层级表示学习框架（DELST） 
+
+---
+# Towards Reliable LLM-Driven Fuzz Testing: Vision and Road Ahead 
+
+**Title (ZH)**: 面向可靠的大规模语言模型驱动模糊测试：愿景与前行之路 
+
+**Authors**: Yiran Cheng, Hong Jin Kang, Lwin Khin Shar, Chaopeng Dong, Zhiqiang Shi, Shichao Lv, Limin Sun  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00795)  
+
+**Abstract**: Fuzz testing is a crucial component of software security assessment, yet its effectiveness heavily relies on valid fuzz drivers and diverse seed inputs. Recent advancements in Large Language Models (LLMs) offer transformative potential for automating fuzz testing (LLM4Fuzz), particularly in generating drivers and seeds. However, current LLM4Fuzz solutions face critical reliability challenges, including low driver validity rates and seed quality trade-offs, hindering their practical adoption.
+This paper aims to examine the reliability bottlenecks of LLM-driven fuzzing and explores potential research directions to address these limitations. It begins with an overview of the current development of LLM4SE and emphasizes the necessity for developing reliable LLM4Fuzz solutions. Following this, the paper envisions a vision where reliable LLM4Fuzz transforms the landscape of software testing and security for industry, software development practitioners, and economic accessibility. It then outlines a road ahead for future research, identifying key challenges and offering specific suggestions for the researchers to consider. This work strives to spark innovation in the field, positioning reliable LLM4Fuzz as a fundamental component of modern software testing. 
+
+**Abstract (ZH)**: LLM驱动的模糊测试可靠性瓶颈及其研究方向 
+
+---
+# Bridging Spectral-wise and Multi-spectral Depth Estimation via Geometry-guided Contrastive Learning 
+
+**Title (ZH)**: 基于几何引导对比学习的谱域与多谱深估计桥梁方法 
+
+**Authors**: Ukcheol Shin, Kyunghyun Lee, Jean Oh  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00793)  
+
+**Abstract**: Deploying depth estimation networks in the real world requires high-level robustness against various adverse conditions to ensure safe and reliable autonomy. For this purpose, many autonomous vehicles employ multi-modal sensor systems, including an RGB camera, NIR camera, thermal camera, LiDAR, or Radar. They mainly adopt two strategies to use multiple sensors: modality-wise and multi-modal fused inference. The former method is flexible but memory-inefficient, unreliable, and vulnerable. Multi-modal fusion can provide high-level reliability, yet it needs a specialized architecture. In this paper, we propose an effective solution, named align-and-fuse strategy, for the depth estimation from multi-spectral images. In the align stage, we align embedding spaces between multiple spectrum bands to learn shareable representation across multi-spectral images by minimizing contrastive loss of global and spatially aligned local features with geometry cue. After that, in the fuse stage, we train an attachable feature fusion module that can selectively aggregate the multi-spectral features for reliable and robust prediction results. Based on the proposed method, a single-depth network can achieve both spectral-invariant and multi-spectral fused depth estimation while preserving reliability, memory efficiency, and flexibility. 
+
+**Abstract (ZH)**: 多光谱图像深度估计中的对齐与融合策略 
+
+---
+# Taming Infinity one Chunk at a Time: Concisely Represented Strategies in One-Counter MDPs 
+
+**Title (ZH)**: 逐块驯服无限：One-Counter MDP中简洁表示的策略 
+
+**Authors**: Michal Ajdarów, James C. A. Main, Petr Novotný, Mickael Randour  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00788)  
+
+**Abstract**: Markov decision processes (MDPs) are a canonical model to reason about decision making within a stochastic environment. We study a fundamental class of infinite MDPs: one-counter MDPs (OC-MDPs). They extend finite MDPs via an associated counter taking natural values, thus inducing an infinite MDP over the set of configurations (current state and counter value). We consider two characteristic objectives: reaching a target state (state-reachability), and reaching a target state with counter value zero (selective termination). The synthesis problem for the latter is not known to be decidable and connected to major open problems in number theory. Furthermore, even seemingly simple strategies (e.g., memoryless ones) in OC-MDPs might be impossible to build in practice (due to the underlying infinite configuration space): we need finite, and preferably small, representations.
+To overcome these obstacles, we introduce two natural classes of concisely represented strategies based on a (possibly infinite) partition of counter values in intervals. For both classes, and both objectives, we study the verification problem (does a given strategy ensure a high enough probability for the objective?), and two synthesis problems (does there exist such a strategy?): one where the interval partition is fixed as input, and one where it is only parameterized. We develop a generic approach based on a compression of the induced infinite MDP that yields decidability in all cases, with all complexities within PSPACE. 
+
+**Abstract (ZH)**: 马尔可夫决策过程（MDPs）是用于在随机环境中进行决策推理的标准模型。我们研究了一类无限MDPs的基本类型：一计数器MDPs（OC-MDPs）。它们通过关联一个取自然数值的计数器来扩展有限MDPs，从而在状态集合（当前状态和计数器值）上诱导一个无限MDP。我们考虑了两种特征目标：达到目标状态（状态可达性）和达到目标状态且计数器值为零（选择性终止）。后者的目标综合问题尚未被证明是可判定的，并且与数论中的主要开放问题相关。此外，即使在OC-MDPs中看似简单的策略（例如，无记忆策略）在实践中也可能难以构建（由于潜在的无限配置空间）：我们需要有限的，并且最好是很小的表示。
+
+为了克服这些障碍，我们引入了两类基于计数器值区间划分的简明表示策略。对于这两类策略和两种目标，我们研究了验证问题（给定的策略能否确保足够高的目标概率？）以及两种综合问题（是否存在这样的策略？）：一类是区间划分作为输入固定下来，另一类是参数化仅限于区间划分。我们基于诱导的无限MDP压缩提出了一种通用方法，在所有情况下都保证可判定性，并且所有复杂性都在PSPACE之内。 
+
+---
+# Graph Attention Networks Unleashed: A Fast and Explainable Vulnerability Assessment Framework for Microgrids 
+
+**Title (ZH)**: Graph Attention Networks 解锁：一种快速且可解释的微电网漏洞评估框架 
+
+**Authors**: Wei Liu, Tao Zhang, Chenhui Lin, Kaiwen Li, Rui Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00786)  
+
+**Abstract**: Independent microgrids are crucial for supplying electricity by combining distributed energy resources and loads in scenarios like isolated islands and field combat. Fast and accurate assessments of microgrid vulnerability against intentional attacks or natural disasters are essential for effective risk prevention and design optimization. However, conventional Monte Carlo simulation (MCS) methods are computationally expensive and time-consuming, while existing machine learning-based approaches often lack accuracy and explainability. To address these challenges, this study proposes a fast and explainable vulnerability assessment framework that integrates MCS with a graph attention network enhanced by self-attention pooling (GAT-S). MCS generates training data, while the GAT-S model learns the structural and electrical characteristics of the microgrid and further assesses its vulnerability intelligently. The GAT-S improves explainability and computational efficiency by dynamically assigning attention weights to critical nodes. Comprehensive experimental evaluations across various microgrid configurations demonstrate that the proposed framework provides accurate vulnerability assessments, achieving a mean squared error as low as 0.001, real-time responsiveness within 1 second, and delivering explainable results. 
+
+**Abstract (ZH)**: 独立微电网在孤立岛屿和战场等领域通过结合分布式能源和负荷供电至关重要。快速准确评估微电网在故意攻击或自然灾害下的脆弱性对于有效的风险预防和设计优化至关重要。然而，传统的蒙特卡洛模拟（MCS）方法计算成本高且耗时，而现有的基于机器学习的方法通常缺乏准确性和可解释性。为解决这些挑战，本研究提出了一种结合MCS并由自注意力聚合增强的图注意力网络（GAT-S）的快速可解释脆弱性评估框架。MCS生成训练数据，GAT-S模型学习微电网的结构和电气特性，并进一步智能地评估其脆弱性。GAT-S通过动态分配注意力权重给关键节点来提高可解释性和计算效率。在多种微电网配置下的全面实验评估表明，所提出的方法提供了准确的脆弱性评估，均方误差低至0.001，可以在1秒内实现即时响应，并提供可解释的结果。 
+
+---
+# FLOAT Drone: A Fully-actuated Coaxial Aerial Robot for Close-Proximity Operations 
+
+**Title (ZH)**: FLOAT无人机：一种全动动量共轴飞行器用于近距离操作 
+
+**Authors**: Junxiao Lin, Shuhang Ji, Yuze Wu, Tianyue Wu, Zhichao Han, Fei Gao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00785)  
+
+**Abstract**: How to endow aerial robots with the ability to operate in close proximity remains an open problem. The core challenges lie in the propulsion system's dual-task requirement: generating manipulation forces while simultaneously counteracting gravity. These competing demands create dynamic coupling effects during physical interactions. Furthermore, rotor-induced airflow disturbances critically undermine operational reliability. Although fully-actuated unmanned aerial vehicles (UAVs) alleviate dynamic coupling effects via six-degree-of-freedom (6-DoF) force-torque decoupling, existing implementations fail to address the aerodynamic interference between drones and environments. They also suffer from oversized designs, which compromise maneuverability and limit their applications in various operational scenarios. To address these limitations, we present FLOAT Drone (FuLly-actuated cOaxial Aerial roboT), a novel fully-actuated UAV featuring two key structural innovations. By integrating control surfaces into fully-actuated systems for the first time, we significantly suppress lateral airflow disturbances during operations. Furthermore, a coaxial dual-rotor configuration enables a compact size while maintaining high hovering efficiency. Through dynamic modeling, we have developed hierarchical position and attitude controllers that support both fully-actuated and underactuated modes. Experimental validation through comprehensive real-world experiments confirms the system's functional capabilities in close-proximity operations. 
+
+**Abstract (ZH)**: 如何赋予无人机在近距离操作的能力仍是一个开放问题。核心挑战在于推进系统的双重任务需求：同时生成操作力和对抗重力。这些相互竞争的需求在物理交互过程中产生了动态耦合效应。此外，旋翼引起的气流干扰严重削弱了操作可靠性。尽管具有六自由度（6-DoF）力- torque解耦的全自主无人直升机（UAV）能够缓解动态耦合效应，但现有实现方式未能解决无人机与环境之间的气动干扰问题。它们还存在尺寸过大的问题，这影响了机动性并限制了在各种操作场景中的应用。为了解决这些局限性，我们提出了FLOAT无人机（全自主共轴飞行机器人），这是一种具有两项关键结构创新的全新全自主无人机。通过首次将控制表面集成到全自主系统中，我们显著减少了操作过程中的横向气流干扰。此外，共轴双旋翼配置实现了紧凑的尺寸并保持了高效的悬停效率。通过动态建模，我们开发了支持全自主和欠自主模式的分层位置和姿态控制器。综合实地实验验证了该系统在近距离操作中的功能能力。 
+
+---
+# Towards Efficient Educational Chatbots: Benchmarking RAG Frameworks 
+
+**Title (ZH)**: 面向高效的教育聊天机器人：RAG框架的基准测试 
+
+**Authors**: Umar Ali Khan, Ekram Khan, Fiza Khan, Athar Ali Moinuddin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00781)  
+
+**Abstract**: Large Language Models (LLMs) have proven immensely beneficial in education by capturing vast amounts of literature-based information, allowing them to generate context without relying on external sources. In this paper, we propose a generative AI-powered GATE question-answering framework (GATE stands for Graduate Aptitude Test in Engineering) that leverages LLMs to explain GATE solutions and support students in their exam preparation. We conducted extensive benchmarking to select the optimal embedding model and LLM, evaluating our framework based on criteria such as latency, faithfulness, and relevance, with additional validation through human evaluation. Our chatbot integrates state-of-the-art embedding models and LLMs to deliver accurate, context-aware responses. Through rigorous experimentation, we identified configurations that balance performance and computational efficiency, ensuring a reliable chatbot to serve students' needs. Additionally, we discuss the challenges faced in data processing and modeling and implemented solutions. Our work explores the application of Retrieval-Augmented Generation (RAG) for GATE Q/A explanation tasks, and our findings demonstrate significant improvements in retrieval accuracy and response quality. This research offers practical insights for developing effective AI-driven educational tools while highlighting areas for future enhancement in usability and scalability. 
+
+**Abstract (ZH)**: 大规模语言模型（LLMs）在教育中通过捕获大量的文献信息，证明了其极大的益处，使其能够在不依赖外部来源的情况下生成上下文。本文提出了一种基于生成式AI的GATE问答框架（GATE代表工程研究生入学考试），该框架利用LLMs解释GATE解决方案并支持学生备考。我们进行了广泛的基准测试以选择最优的嵌入模型和LLM，并基于延迟、忠实度和相关性等标准评估框架，通过人工评估进行了额外验证。我们的聊天机器人整合了最新的嵌入模型和LLM，以提供准确且上下文相关的响应。通过严格的实验，我们确定了平衡性能和计算效率的配置，确保了可靠的服务，以满足学生的需求。此外，我们讨论了数据处理和建模面临的挑战并实现了相应的解决方案。本文探讨了在GATE问答解释任务中应用检索增强生成（RAG）的应用，并发现检索准确性和响应质量都得到了显著提升。这项研究为开发有效的AI驱动教育工具提供了实用见解，并指出了未来在易用性和可扩展性方面需要改进的领域。 
+
+---
+# Enhanced Multi-Class Classification of Gastrointestinal Endoscopic Images with Interpretable Deep Learning Model 
+
+**Title (ZH)**: 具有可解释性的深度学习模型增强的多类胃肠道内镜图像分类 
+
+**Authors**: Astitva Kamble, Vani Bandodkar, Saakshi Dharmadhikary, Veena Anand, Pradyut Kumar Sanki, Mei X. Wu, Biswabandhu Jana  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00780)  
+
+**Abstract**: Endoscopy serves as an essential procedure for evaluating the gastrointestinal (GI) tract and plays a pivotal role in identifying GI-related disorders. Recent advancements in deep learning have demonstrated substantial progress in detecting abnormalities through intricate models and data augmentation this http URL research introduces a novel approach to enhance classification accuracy using 8,000 labeled endoscopic images from the Kvasir dataset, categorized into eight distinct classes. Leveraging EfficientNetB3 as the backbone, the proposed architecture eliminates reliance on data augmentation while preserving moderate model complexity. The model achieves a test accuracy of 94.25%, alongside precision and recall of 94.29% and 94.24% respectively. Furthermore, Local Interpretable Model-agnostic Explanation (LIME) saliency maps are employed to enhance interpretability by defining critical regions in the images that influenced model predictions. Overall, this work highlights the importance of AI in advancing medical imaging by combining high classification accuracy with interpretability. 
+
+**Abstract (ZH)**: 内镜检查作为评估消化道（GI）的重要程序，在识别GI相关疾病中发挥着关键作用。近年来，深度学习的进步通过复杂的模型和数据增强在检测异常方面取得了显著进展。本研究引入了一种新颖的方法，使用来自Kvasir数据集的8,000张标注内镜图像，分类为八个不同的类别，以提高分类准确性。利用EfficientNetB3作为骨干网络，所提出的方法消除了对数据增强的依赖，同时保持了适度的模型复杂度。该模型在测试集上的准确率为94.25%，精确率为94.29%，召回率为94.24%。此外，使用局部可解释的模型无关解释（LIME）显著图来增强可解释性，通过定义影响模型预测的关键图像区域。总体而言，这项工作突显了AI在结合高分类准确性和可解释性方面推动医学影像的发展的重要性。 
+
+---
+# LLMs are everywhere: Ubiquitous Utilization of AI Models through Air Computing 
+
+**Title (ZH)**: LLMs无处不在：通过空气计算广泛应用AI模型 
+
+**Authors**: Baris Yamansavascilar, Atay Ozgovde, Cem Ersoy  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00767)  
+
+**Abstract**: We are witnessing a new era where problem-solving and cognitive tasks are being increasingly delegated to Large Language Models (LLMs) across diverse domains, ranging from code generation to holiday planning. This trend also creates a demand for the ubiquitous execution of LLM-powered applications in a wide variety of environments in which traditional terrestrial 2D networking infrastructures may prove insufficient. A promising solution in this context is to extend edge computing into a 3D setting to include aerial platforms organized in multiple layers, a paradigm we refer to as air computing, to augment local devices for running LLM and Generative AI (GenAI) applications. This approach alleviates the strain on existing infrastructure while enhancing service efficiency by offloading computational tasks to the corresponding air units such as UAVs. Furthermore, the coordinated deployment of various air units can significantly improve the Quality of Experience (QoE) by ensuring seamless, adaptive, and resilient task execution. In this study, we investigate the synergy between LLM-based applications and air computing, exploring their potential across various use cases. Additionally, we present a disaster response case study demonstrating how the collaborative utilization of LLMs and air computing can significantly improve outcomes in critical situations. 
+
+**Abstract (ZH)**: 我们正处在一个新的时代，其中问题解决和认知任务越来越多地被大型语言模型（LLMs）分配到各个领域，从代码生成到假日规划。这一趋势也引发了对基于LLM的应用程序在各种环境中的广泛执行的需求，在这些环境中，传统的地面2D网络基础设施可能不够用。在这个背景下，一种有前景的解决方案是将边缘计算扩展到三维设置，包括多层组织的空中平台，我们称之为空计算（air computing），以增强本地设备运行LLM和生成式AI（GenAI）应用的能力。这种方法可以缓解现有基础设施的压力，通过将计算任务卸载到相应的空中单元（如无人机）来提升服务质量。此外，各种空中单元的协调部署可以显著提高用户体验质量（QoE），通过确保无缝、适应性和弹性的任务执行。在本研究中，我们探讨了基于LLM的应用程序与空计算之间的协同作用，并探索它们在各种用例中的潜在应用。此外，我们还提出了一次灾难响应案例研究，展示了LLM与空计算协作利用如何在关键时刻显著提高结果。 
+
+---
+# MR-EIT: Multi-Resolution Reconstruction for Electrical Impedance Tomography via Data-Driven and Unsupervised Dual-Mode Neural Networks 
+
+**Title (ZH)**: 基于数据驱动和无监督双模式神经网络的多分辨率 Electrical Impedance Tomography 重建方法 
+
+**Authors**: Fangming Shi, Jinzhen Liu, Xiangqian Meng, Yapeng Zhou, Hui Xiong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00762)  
+
+**Abstract**: This paper presents a multi-resolution reconstruction method for Electrical Impedance Tomography (EIT), referred to as MR-EIT, which is capable of operating in both supervised and unsupervised learning modes. MR-EIT integrates an ordered feature extraction module and an unordered coordinate feature expression module. The former achieves the mapping from voltage to two-dimensional conductivity features through pre-training, while the latter realizes multi-resolution reconstruction independent of the order and size of the input sequence by utilizing symmetric functions and local feature extraction mechanisms. In the data-driven mode, MR-EIT reconstructs high-resolution images from low-resolution data of finite element meshes through two stages of pre-training and joint training, and demonstrates excellent performance in simulation experiments. In the unsupervised learning mode, MR-EIT does not require pre-training data and performs iterative optimization solely based on measured voltages to rapidly achieve image reconstruction from low to high resolution. It shows robustness to noise and efficient super-resolution reconstruction capabilities in both simulation and real water tank experiments. Experimental results indicate that MR-EIT outperforms the comparison methods in terms of Structural Similarity (SSIM) and Relative Image Error (RIE), especially in the unsupervised learning mode, where it can significantly reduce the number of iterations and improve image reconstruction quality. 
+
+**Abstract (ZH)**: 基于多分辨率重建的电气阻抗断层成像方法（MR-EIT） 
+
+---
+# RAPID: Efficient Retrieval-Augmented Long Text Generation with Writing Planning and Information Discovery 
+
+**Title (ZH)**: RAPID:高效的检索增强长文本生成with写作规划和信息发现 
+
+**Authors**: Hongchao Gu, Dexun Li, Kuicai Dong, Hao Zhang, Hang Lv, Hao Wang, Defu Lian, Yong Liu, Enhong Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00751)  
+
+**Abstract**: Generating knowledge-intensive and comprehensive long texts, such as encyclopedia articles, remains significant challenges for Large Language Models. It requires not only the precise integration of facts but also the maintenance of thematic coherence throughout the article. Existing methods, such as direct generation and multi-agent discussion, often struggle with issues like hallucinations, topic incoherence, and significant latency. To address these challenges, we propose RAPID, an efficient retrieval-augmented long text generation framework. RAPID consists of three main modules: (1) Retrieval-augmented preliminary outline generation to reduce hallucinations, (2) Attribute-constrained search for efficient information discovery, (3) Plan-guided article generation for enhanced coherence. Extensive experiments on our newly compiled benchmark dataset, FreshWiki-2024, demonstrate that RAPID significantly outperforms state-of-the-art methods across a wide range of evaluation metrics (e.g. long-text generation, outline quality, latency, etc). Our work provides a robust and efficient solution to the challenges of automated long-text generation. 
+
+**Abstract (ZH)**: 大规模语言模型生成知识密集且全面的长文本（例如百科文章）仍然存在显著挑战。这不仅需要精确整合事实，还需要在整个文章中维护主题连贯性。现有方法，如直接生成和多智能体讨论，常常遇到幻觉、主题不连贯和显著延迟等问题。为应对这些挑战，我们提出了一种高效的检索增强长文本生成框架RAPID。RAPID由三个主要模块组成：（1）检索增强初步大纲生成以减少幻觉，（2）属性约束搜索以提高信息发现效率，（3）计划导向的文章生成以增强连贯性。在我们新编撰的基准数据集FreshWiki-2024上进行的大量实验表明，RAPID在多种评估指标（如长文本生成、大纲质量、延迟等）上显著优于现有最先进的方法。本工作为自动化长文本生成面临的挑战提供了稳健且高效的解决方案。 
+
+---
+# Edge Prompt Tuning for Graph Neural Networks 
+
+**Title (ZH)**: 基于边缘提示调整的图神经网络 
+
+**Authors**: Xingbo Fu, Yinhan He, Jundong Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00750)  
+
+**Abstract**: Pre-training powerful Graph Neural Networks (GNNs) with unlabeled graph data in a self-supervised manner has emerged as a prominent technique in recent years. However, inevitable objective gaps often exist between pre-training and downstream tasks. To bridge this gap, graph prompt tuning techniques design and learn graph prompts by manipulating input graphs or reframing downstream tasks as pre-training tasks without fine-tuning the pre-trained GNN models. While recent graph prompt tuning methods have proven effective in adapting pre-trained GNN models for downstream tasks, they overlook the crucial role of edges in graph prompt design, which can significantly affect the quality of graph representations for downstream tasks. In this study, we propose EdgePrompt, a simple yet effective graph prompt tuning method from the perspective of edges. Unlike previous studies that design prompt vectors on node features, EdgePrompt manipulates input graphs by learning additional prompt vectors for edges and incorporates the edge prompts through message passing in the pre-trained GNN models to better embed graph structural information for downstream tasks. Our method is compatible with prevalent GNN architectures pre-trained under various pre-training strategies and is universal for different downstream tasks. We provide comprehensive theoretical analyses of our method regarding its capability of handling node classification and graph classification as downstream tasks. Extensive experiments on ten graph datasets under four pre-training strategies demonstrate the superiority of our proposed method against six baselines. Our code is available at this https URL. 
+
+**Abstract (ZH)**: 使用边提示调谐预训练图神经网络以自监督方式利用未标label的图数据已成为近年来一种 prominient 技术。然而，预训练与下游任务之间常常存在不可避免的目标差距。为弥补这一差距，图提示调谐技术通过操控输入图或将下游任务重新框定为预训练任务来设计和学习图提示，而不对预训练的图神经网络模型进行微调。尽管最近的图提示调谐方法已证明可以有效地适应预训练的图神经网络模型以应对下游任务，但它们忽视了边在图提示设计中的关键作用，这可能会显著影响下游任务的图表示质量。在此研究中，我们提出了一种从边的角度出发的简单而有效的图提示调谐方法——EdgePrompt。与之前设计提示向量基于节点特征的研究不同，EdgePrompt 通过学习边的额外提示向量并将其通过预训练的图神经网络模型中的消息传递机制整合进来，从而更好地嵌入图结构信息以应对下游任务。我们的方法与各种预训练策略下预训练的不同图 neural 网络架构兼容，并适用于不同的下游任务。我们从理论上全面分析了该方法在处理节点分类和图分类等下游任务时的能力。在四种预训练策略下的十个图数据集上进行的广泛实验表明，与六个基线方法相比，我们提出的方法具有明显优势。我们的代码可在此 https URL 获取。 
+
+---
+# Confounder-Aware Medical Data Selection for Fine-Tuning Pretrained Vision Models 
+
+**Title (ZH)**: 带有混杂因素意识的医学数据选择以微调预训练视觉模型 
+
+**Authors**: Anyang Ji, Qingbo Kang, Wei Xu, Changfan Wang, Kang Li, Qicheng Lao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00744)  
+
+**Abstract**: The emergence of large-scale pre-trained vision foundation models has greatly advanced the medical imaging field through the pre-training and fine-tuning paradigm. However, selecting appropriate medical data for downstream fine-tuning remains a significant challenge considering its annotation cost, privacy concerns, and the detrimental effects of confounding variables. In this work, we present a confounder-aware medical data selection approach for medical dataset curation aiming to select minimal representative data by strategically mitigating the undesirable impact of confounding variables while preserving the natural distribution of the dataset. Our approach first identifies confounding variables within data and then develops a distance-based data selection strategy for confounder-aware sampling with a constrained budget in the data size. We validate the superiority of our approach through extensive experiments across diverse medical imaging modalities, highlighting its effectiveness in addressing the substantial impact of confounding variables and enhancing the fine-tuning efficiency in the medical imaging domain, compared to other data selection approaches. 
+
+**Abstract (ZH)**: 大规模预训练视觉基础模型的出现通过预训练和微调范式极大地推动了医学影像领域的发展。然而，选择合适的医学数据进行下游微调仍然是一个重大挑战，考虑到标注成本、隐私问题以及混杂变量的负面影响。本文提出了一种混杂变量意识下的医学数据选择方法，旨在通过策略性地减轻混杂变量的不利影响，同时保持数据集的自然分布，来选择最小的代表性数据。我们的方法首先在数据中识别出混杂变量，然后开发了一种基于距离的数据选择策略，以在数据量受限的预算下实现混杂变量意识下的采样。通过在多种医学影像模态下进行广泛的实验，验证了我们方法的优势，证明了其在处理混杂变量的显著影响和提高医学影像领域微调效率方面的有效性， compared to other data selection approaches。 
+
+---
+# LADDER: Self-Improving LLMs Through Recursive Problem Decomposition 
+
+**Title (ZH)**: 梯子：通过递归问题分解实现自我提升的大语言模型 
+
+**Authors**: Toby Simonds, Akira Yoshiyama  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00735)  
+
+**Abstract**: We introduce LADDER (Learning through Autonomous Difficulty-Driven Example Recursion), a framework enabling LLMs to autonomously improve their problem-solving capabilities through self-guided learning. By recursively generating and solving progressively simpler variants of complex problems, LADDER enables models to progressively learn through reinforcement learning how to solve harder problems. This self-improvement process is guided by verifiable reward signals, allowing the model to assess its solutions. Unlike prior approaches requiring curated datasets or human feedback, LADDER leverages the model's own capabilities to easier variants of sample questions. We demonstrate LADDER's effectiveness on mathematical integration tasks, where it improves a Llama 3B model's accuracy from 1\% to 82\% on undergraduate-level problems and enables a 7B parameter model to achieve state-of-the-art performance (70\%) on the MIT Integration Bee examination for it's model size. We also introduce TTRL (Test-Time Reinforcement Learning), a method that generates variants of test problems at inference time and applies reinforcement learning to further improve performance. By further creating and solving related problems during testing, TTRL enables the 7B model to achieve a score of 85\%, surpassing o1. These results showcase how strategic self-directed learning can achieve significant capability improvements without relying on architectural scaling or human supervision. 
+
+**Abstract (ZH)**: 我们介绍了LADDER（基于自主难度驱动示例递归的学习），这是一种框架，使大型语言模型能够通过自我引导学习自主提升其问题解决能力。通过递归生成并解决日益简单的复杂问题变体，LADDER使得模型能够通过强化学习逐步学习如何解决更难的问题。这一自我提升过程受到可验证的奖励信号的指导，允许模型评估其解决方案。与先前需要精心策划的数据集或人类反馈的方法不同，LADDER利用模型自身的能力解决示例问题的较简单变体。我们通过数学积分任务展示了LADDER的有效性，其中LADDER将一个3B参数Llama模型在本科水平问题上的准确性从1%提高到82%，并使一个7B参数模型在MIT Integration Bee考试中取得了与其模型规模相匹配的最佳性能（70%）。我们还介绍了TTRL（推理时的强化学习），这是一种方法，能够在推理时生成测试问题的变体，并应用强化学习进一步提高性能。通过在测试过程中进一步创建和解决问题，TTRL使7B参数模型取得了85%的成绩，超越了o1。这些结果展示了战略性自我导向学习如何在无需依赖架构扩展或人工监督的情况下实现显著的能力提升。 
+
+---
+# CLEA: Closed-Loop Embodied Agent for Enhancing Task Execution in Dynamic Environments 
+
+**Title (ZH)**: CLEA: 闭环身体化代理在动态环境中的任务执行增强方法 
+
+**Authors**: Mingcong Lei, Ge Wang, Yiming Zhao, Zhixin Mai, Qing Zhao, Yao Guo, Zhen Li, Shuguang Cui, Yatong Han, Jinke Ren  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00729)  
+
+**Abstract**: Large Language Models (LLMs) exhibit remarkable capabilities in the hierarchical decomposition of complex tasks through semantic reasoning. However, their application in embodied systems faces challenges in ensuring reliable execution of subtask sequences and achieving one-shot success in long-term task completion. To address these limitations in dynamic environments, we propose Closed-Loop Embodied Agent (CLEA) -- a novel architecture incorporating four specialized open-source LLMs with functional decoupling for closed-loop task management. The framework features two core innovations: (1) Interactive task planner that dynamically generates executable subtasks based on the environmental memory, and (2) Multimodal execution critic employing an evaluation framework to conduct a probabilistic assessment of action feasibility, triggering hierarchical re-planning mechanisms when environmental perturbations exceed preset thresholds. To validate CLEA's effectiveness, we conduct experiments in a real environment with manipulable objects, using two heterogeneous robots for object search, manipulation, and search-manipulation integration tasks. Across 12 task trials, CLEA outperforms the baseline model, achieving a 67.3% improvement in success rate and a 52.8% increase in task completion rate. These results demonstrate that CLEA significantly enhances the robustness of task planning and execution in dynamic environments. 
+
+**Abstract (ZH)**: 基于闭环控制的 embodied 代理（CLEA）：面向动态环境的任务规划与执行 
+
+---
+# From Understanding the World to Intervening in It: A Unified Multi-Scale Framework for Embodied Cognition 
+
+**Title (ZH)**: 从理解世界到干预世界：统一的多尺度知体认知框架 
+
+**Authors**: Maijunxian Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00727)  
+
+**Abstract**: In this paper, we propose AUKAI, an Adaptive Unified Knowledge-Action Intelligence for embodied cognition that seamlessly integrates perception, memory, and decision-making via multi-scale error feedback. Interpreting AUKAI as an embedded world model, our approach simultaneously predicts state transitions and evaluates intervention utility. The framework is underpinned by rigorous theoretical analysis drawn from convergence theory, optimal control, and Bayesian inference, which collectively establish conditions for convergence, stability, and near-optimal performance. Furthermore, we present a hybrid implementation that combines the strengths of neural networks with symbolic reasoning modules, thereby enhancing interpretability and robustness. Finally, we demonstrate the potential of AUKAI through a detailed application in robotic navigation and obstacle avoidance, and we outline comprehensive experimental plans to validate its effectiveness in both simulated and real-world environments. 
+
+**Abstract (ZH)**: 本文提出了一种自适应统一知识-行动智能AUKAI，它通过多尺度误差反馈无缝地整合感知、记忆和决策，用于体现认知。将AUKAI视为嵌入式世界模型，我们的方法同时预测状态转换并评估干预的效用。该框架基于从收敛理论、最优控制和贝叶斯推断中汲取的严格理论分析，共同确立了收敛性、稳定性和接近最优性能的条件。此外，我们提出了一种混合实现方法，结合了神经网络的优点和符号推理模块，从而增强了可解释性和鲁棒性。最后，我们通过一个详细的机器人导航和障碍物避免应用展示了AUKAI的潜在价值，并概述了全面的实验计划，以验证其在模拟和真实世界环境中的有效性。 
+
+---
+# Enhancing Monocular 3D Scene Completion with Diffusion Model 
+
+**Title (ZH)**: 基于扩散模型增强单目3D场景完成 
+
+**Authors**: Changlin Song, Jiaqi Wang, Liyun Zhu, He Weng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00726)  
+
+**Abstract**: 3D scene reconstruction is essential for applications in virtual reality, robotics, and autonomous driving, enabling machines to understand and interact with complex environments. Traditional 3D Gaussian Splatting techniques rely on images captured from multiple viewpoints to achieve optimal performance, but this dependence limits their use in scenarios where only a single image is available. In this work, we introduce FlashDreamer, a novel approach for reconstructing a complete 3D scene from a single image, significantly reducing the need for multi-view inputs. Our approach leverages a pre-trained vision-language model to generate descriptive prompts for the scene, guiding a diffusion model to produce images from various perspectives, which are then fused to form a cohesive 3D reconstruction. Extensive experiments show that our method effectively and robustly expands single-image inputs into a comprehensive 3D scene, extending monocular 3D reconstruction capabilities without further training. Our code is available this https URL. 
+
+**Abstract (ZH)**: 单张图像的完整三维场景重建对于虚拟现实、机器人技术和自动驾驶的应用至关重要，能够使机器理解并交互于复杂的环境。传统的三维高斯点云技术依赖于从多个视角捕获的图像以实现最佳性能，但在仅有一张图像可用的场景中，这种方法的使用受限。在这种工作中，我们提出了FlashDreamer，一种从单张图像重建完整三维场景的新型方法，显著减少了对多视图输入的依赖。我们的方法利用预训练的视觉-语言模型生成描述性的场景提示，指导扩散模型生成不同视角的图像，然后融合这些图像形成统一的三维重建。 extensive实验表明，我们的方法有效地且稳健地将单张图像扩展为完整的三维场景，无需进一步训练即可扩展单目三维重建能力。我们的代码可在此处访问：https://xxx/ 
+
+---
+# LLMDR: LLM-Driven Deadlock Detection and Resolution in Multi-Agent Pathfinding 
+
+**Title (ZH)**: LLMDR：基于大规模语言模型的多智能体路径规划中的死锁检测与解决 
+
+**Authors**: Seungbae Seo, Junghwan Kim, Minjeong Shin, Bongwon Suh  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00717)  
+
+**Abstract**: Multi-Agent Pathfinding (MAPF) is a core challenge in multi-agent systems. Existing learning-based MAPF methods often struggle with scalability, particularly when addressing complex scenarios that are prone to deadlocks. To address these challenges, we introduce LLMDR (LLM-Driven Deadlock Detection and Resolution), an approach designed to resolve deadlocks and improve the performance of learnt MAPF models. LLMDR integrates the inference capabilities of large language models (LLMs) with learnt MAPF models and prioritized planning, enabling it to detect deadlocks and provide customized resolution strategies. We evaluate LLMDR on standard MAPF benchmark maps with varying agent numbers, measuring its performance when combined with several base models. The results demonstrate that LLMDR improves the performance of learnt MAPF models, particularly in deadlock-prone scenarios, with notable improvements in success rates. These findings show the potential of integrating LLMs to improve the scalability of learning-based MAPF methods.
+The source code for LLMDR is available at: this https URL 
+
+**Abstract (ZH)**: 多智能体路径finding (MAPF) 是多智能体系统中的核心挑战。现有的基于学习的MAPF方法通常在处理易产生死锁的复杂场景时面临可扩展性问题。为了解决这些挑战，我们引入了LLMDR（LLM驱动的死锁检测与解决），这是一种旨在解决死锁并提高学习到的MAPF模型性能的方法。LLMDR将大型语言模型（LLM）的推理能力与学习到的MAPF模型和优先规划相结合，使其能够检测死锁并提供定制化的解决策略。我们在不同智能体数量的标准MAPF基准地图上评估了LLMDR，测量其与几种基本模型结合时的性能。结果表明，LLMDR能够提高学习到的MAPF模型的性能，特别是在易产生死锁的场景中，成功率有显著提升。这些发现展示了将LLM整合以提高基于学习的MAPF方法可扩展性的潜力。 
+
+---
+# Speculative Ad-hoc Querying 
+
+**Title (ZH)**: 投机性即席查询 
+
+**Authors**: Haoyu Li, Srikanth Kandula, Maria Angels de Luis Balaguer, Aditya Akella, Venkat Arun  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00714)  
+
+**Abstract**: Analyzing large datasets requires responsive query execution, but executing SQL queries on massive datasets can be slow. This paper explores whether query execution can begin even before the user has finished typing, allowing results to appear almost instantly. We propose SpeQL, a system that leverages Large Language Models (LLMs) to predict likely queries based on the database schema, the user's past queries, and their incomplete query. Since exact query prediction is infeasible, SpeQL speculates on partial queries in two ways: 1) it predicts the query structure to compile and plan queries in advance, and 2) it precomputes smaller temporary tables that are much smaller than the original database, but are still predicted to contain all information necessary to answer the user's final query. Additionally, SpeQL continuously displays results for speculated queries and subqueries in real time, aiding exploratory analysis. A utility/user study showed that SpeQL improved task completion time, and participants reported that its speculative display of results helped them discover patterns in the data more quickly. In the study, SpeQL improves user's query latency by up to $289\times$ and kept the overhead reasonable, at $\$4$ per hour. 
+
+**Abstract (ZH)**: 基于大语言模型的预测查询执行系统SpeQL：几乎即时的结果显示 
+
+---
+# OpenECG: Benchmarking ECG Foundation Models with Public 1.2 Million Records 
+
+**Title (ZH)**: OpenECG: 基于公共120万条记录评估心电图基础模型 
+
+**Authors**: Zhijiang Wan, Qianhao Yu, Jia Mao, Wenfeng Duan, Cheng Ding  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00711)  
+
+**Abstract**: This study introduces OpenECG, a large-scale benchmark of 1.2 million 12-lead ECG recordings from nine centers, to evaluate ECG foundation models (ECG-FMs) trained on public datasets. We investigate three self-supervised learning methods (SimCLR, BYOL, MAE) with ResNet-50 and Vision Transformer architectures, assessing model generalization through leave-one-dataset-out experiments and data scaling analysis. Results show that pre-training on diverse datasets significantly improves generalization, with BYOL and MAE outperforming SimCLR, highlighting the efficacy of feature-consistency and generative learning over contrastive approaches. Data scaling experiments reveal that performance saturates at 60-70% of total data for BYOL and MAE, while SimCLR requires more data. These findings demonstrate that publicly available ECG data can match or surpass proprietary datasets in training robust ECG-FMs, paving the way for scalable, clinically meaningful AI-driven ECG analysis. 
+
+**Abstract (ZH)**: 本研究介绍了包含九个中心的1.2百万条12导联ECG记录的大规模基准OpenECG，以评估在公共数据集中训练的心电图基础模型（ECG-FMs）。我们研究了三种自监督学习方法（SimCLR、BYOL、MAE）结合ResNet-50和视觉变换器架构，并通过留一数据集法实验和数据扩展分析评估模型泛化能力。结果显示，在多样化的数据集上预训练显著提高了泛化能力，BYOL和MAE优于SimCLR，表明特征一致性及生成学习优于对比学习方法。数据扩展实验表明，对于BYOL和MAE，性能在60-70%的总数据量时达到饱和，而SimCLR需要更多的数据。这些发现展示了公开可用的心电图数据在训练稳健的心电图基础模型方面可以匹配或超越专有数据集的能力，为可扩展的、具有临床意义的AI驱动心电图分析铺平了道路。 
+
+---
+# Parameter Expanded Stochastic Gradient Markov Chain Monte Carlo 
+
+**Title (ZH)**: 参数扩展随机梯度马尔可夫链蒙特卡洛 
+
+**Authors**: Hyunsu Kim, Giung Nam, Chulhee Yun, Hongseok Yang, Juho Lee  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00699)  
+
+**Abstract**: Bayesian Neural Networks (BNNs) provide a promising framework for modeling predictive uncertainty and enhancing out-of-distribution robustness (OOD) by estimating the posterior distribution of network parameters. Stochastic Gradient Markov Chain Monte Carlo (SGMCMC) is one of the most powerful methods for scalable posterior sampling in BNNs, achieving efficiency by combining stochastic gradient descent with second-order Langevin dynamics. However, SGMCMC often suffers from limited sample diversity in practice, which affects uncertainty estimation and model performance. We propose a simple yet effective approach to enhance sample diversity in SGMCMC without the need for tempering or running multiple chains. Our approach reparameterizes the neural network by decomposing each of its weight matrices into a product of matrices, resulting in a sampling trajectory that better explores the target parameter space. This approach produces a more diverse set of samples, allowing faster mixing within the same computational budget. Notably, our sampler achieves these improvements without increasing the inference cost compared to the standard SGMCMC. Extensive experiments on image classification tasks, including OOD robustness, diversity, loss surface analyses, and a comparative study with Hamiltonian Monte Carlo, demonstrate the superiority of the proposed approach. 
+
+**Abstract (ZH)**: 贝叶斯神经网络（BNNs）提供了一种前景广阔的框架，用于通过估算网络参数的后验分布来建模预测不确定性并增强分布外鲁棒性（OOD）。随机梯度马尔可夫链蒙特卡洛（SGMCMC）是BNNs中可扩展后验采样的最强大方法之一，通过将随机梯度下降与二阶拉angevin动力学相结合，实现了高效性。然而，SGMCMC在实践中常遭受样本多样性有限的困扰，这影响了不确定性估计和模型性能。我们提出了一种简单有效的方法，可以在无需退火或运行多个链的情况下增强SGMCMC中的样本多样性。该方法通过将神经网络的每个权重矩阵分解为矩阵的乘积来重新参数化神经网络，从而产生更好地探索目标参数空间的采样轨迹。该方法生成了一组更多样化的样本，允许在同一计算预算内更快地混合。值得注意的是，我们的采样器在与标准SGMCMC相比不增加推理成本的情况下实现了这些改进。广泛的图像分类任务实验，包括分布外鲁棒性、多样性、损失表面分析以及与哈密尔顿蒙特卡洛的对比研究，展示了所提方法的优势。 
+
+---
+# CREATE-FFPE: Cross-Resolution Compensated and Multi-Frequency Enhanced FS-to-FFPE Stain Transfer for Intraoperative IHC Images 
+
+**Title (ZH)**: CREATE-FFPE：跨分辨率补偿和多频增强的FS-to-FFPE染色转移方法用于术中IHC图像 
+
+**Authors**: Yiyang Lin, Danling Jiang, Xinyu Liu, Yun Miao, Yixuan Yuan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00697)  
+
+**Abstract**: In the immunohistochemical (IHC) analysis during surgery, frozen-section (FS) images are used to determine the benignity or malignancy of the tumor. However, FS image faces problems such as image contamination and poor nuclear detail, which may disturb the pathologist's diagnosis. In contrast, formalin-fixed and paraffin-embedded (FFPE) image has a higher staining quality, but it requires quite a long time to prepare and thus is not feasible during surgery. To help pathologists observe IHC images with high quality in surgery, this paper proposes a Cross-REsolution compensATed and multi-frequency Enhanced FS-to-FFPE (CREATE-FFPE) stain transfer framework, which is the first FS-to-FFPE method for the intraoperative IHC images. To solve the slide contamination and poor nuclear detail mentioned above, we propose the cross-resolution compensation module (CRCM) and the wavelet detail guidance module (WDGM). Specifically, CRCM compensates for information loss due to contamination by providing more tissue information across multiple resolutions, while WDGM produces the desirable details in a wavelet way, and the details can be used to guide the stain transfer to be more precise. Experiments show our method can beat all the competing methods on our dataset. In addition, the FID has decreased by 44.4%, and KID*100 has decreased by 71.2% by adding the proposed CRCM and WDGM in ablation studies, and the performance of a downstream microsatellite instability prediction task with public dataset can be greatly improved by performing our FS-to-FFPE stain transfer. 
+
+**Abstract (ZH)**: 基于跨分辨率补偿和多频率增强的术中冷冻切片到石蜡切片染色转移框架（CREATE-FFPE） 
+
+---
+# How Diversely Can Language Models Solve Problems? Exploring the Algorithmic Diversity of Model-Generated Code 
+
+**Title (ZH)**: 语言模型能够多样化地解决问题吗？探索模型生成代码的算法多样性 
+
+**Authors**: Seonghyeon Lee, Heejae Chon, Joonwon Jang, Dongha Lee, Hwanjo Yu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00691)  
+
+**Abstract**: Language models (LMs) have exhibited impressive abilities in generating code from natural language requirements. In this work, we highlight the diversity of code generated by LMs as a critical criterion for evaluating their code generation capabilities. There is a lack of studies focused on assessing the diversity of generated code, which overlooks its importance in code LMs. Therefore, we propose a systematic approach to evaluate code diversity, introducing various metrics with inter-code similarity. Specifically, we introduce code clustering methods that leverages LMs' capabilities in code understanding and reasoning, resulting in a set of metrics that represent the number of algorithms in model-generated solutions. We extensively investigate the property of model-generated solutions by contrasting them with human-written ones and quantifying the impact of various factors on code diversity: model size, temperature, instruction tuning, and problem complexity. Our analysis demonstrates that model-generated solutions exhibit low algorithmic diversity, which was neglected by the research community. Moreover, we explore methods to increase code diversity by combining solutions from different models and increasing sampling temperatures. Our findings highlight that code diversity can be enhanced with the help of heterogeneous models and setting temperature beyond 1.0 that has not been fully explored due to the functional correctness degradation. To facilitate our research direction, we publicly share our code and datasets through open-source repositories. 
+
+**Abstract (ZH)**: 语言模型生成的代码多样性及其评估：一种系统的视角 
+
+---
+# GPIoT: Tailoring Small Language Models for IoT Program Synthesis and Development 
+
+**Title (ZH)**: GPIoT: 优化小型语言模型以适应物联网程序合成与开发 
+
+**Authors**: Leming Shen, Qiang Yang, Xinyu Huang, Zijing Ma, Yuanqing Zheng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00686)  
+
+**Abstract**: Code Large Language Models (LLMs) enhance software development efficiency by automatically generating code and documentation in response to user requirements. However, code LLMs cannot synthesize specialized programs when tasked with IoT applications that require domain knowledge. While Retrieval-Augmented Generation (RAG) offers a promising solution by fetching relevant domain knowledge, it necessitates powerful cloud LLMs (e.g., GPT-4) to process user requirements and retrieved contents, which raises significant privacy concerns. This approach also suffers from unstable networks and prohibitive LLM query costs. Moreover, it is challenging to ensure the correctness and relevance of the fetched contents. To address these issues, we propose GPIoT, a code generation system for IoT applications by fine-tuning locally deployable Small Language Models (SLMs) on IoT-specialized datasets. SLMs have smaller model sizes, allowing efficient local deployment and execution to mitigate privacy concerns and network uncertainty. Furthermore, by fine-tuning the SLMs with our IoT-specialized datasets, the SLMs' ability to synthesize IoT-related programs can be substantially improved. To evaluate GPIoT's capability in synthesizing programs for IoT applications, we develop a benchmark, IoTBench. Extensive experiments and user trials demonstrate the effectiveness of GPIoT in generating IoT-specialized code, outperforming state-of-the-art code LLMs with an average task accuracy increment of 64.7% and significant improvements in user satisfaction. 
+
+**Abstract (ZH)**: Code生成系统GPIoT通过细调本地部署的小型语言模型提升物联网应用开发效率 
+
+---
+# Factorized Deep Q-Network for Cooperative Multi-Agent Reinforcement Learning in Victim Tagging 
+
+**Title (ZH)**: 基于因子化的深度Q网络在受害者标记的协同多智能体 reinforcement 学习中 
+
+**Authors**: Maria Ana Cardei, Afsaneh Doryab  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00684)  
+
+**Abstract**: Mass casualty incidents (MCIs) are a growing concern, characterized by complexity and uncertainty that demand adaptive decision-making strategies. The victim tagging step in the emergency medical response must be completed quickly and is crucial for providing information to guide subsequent time-constrained response actions. In this paper, we present a mathematical formulation of multi-agent victim tagging to minimize the time it takes for responders to tag all victims. Five distributed heuristics are formulated and evaluated with simulation experiments. The heuristics considered are on-the go, practical solutions that represent varying levels of situational uncertainty in the form of global or local communication capabilities, showcasing practical constraints. We further investigate the performance of a multi-agent reinforcement learning (MARL) strategy, factorized deep Q-network (FDQN), to minimize victim tagging time as compared to baseline heuristics. Extensive simulations demonstrate that between the heuristics, methods with local communication are more efficient for adaptive victim tagging, specifically choosing the nearest victim with the option to replan. Analyzing all experiments, we find that our FDQN approach outperforms heuristics in smaller-scale scenarios, while heuristics excel in more complex scenarios. Our experiments contain diverse complexities that explore the upper limits of MARL capabilities for real-world applications and reveal key insights. 
+
+**Abstract (ZH)**: 大规模伤亡事件中的多代理受害者标记：数学建模与算法比较 
+
+---
+# OrdRankBen: A Novel Ranking Benchmark for Ordinal Relevance in NLP 
+
+**Title (ZH)**: OrdRankBen：一种新的顺序相关性排名基准在NLP领域 
+
+**Authors**: Yan Wang, Lingfei Qian, Xueqing Peng, Jimin Huang, Dongji Feng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00674)  
+
+**Abstract**: The evaluation of ranking tasks remains a significant challenge in natural language processing (NLP), particularly due to the lack of direct labels for results in real-world scenarios. Benchmark datasets play a crucial role in providing standardized testbeds that ensure fair comparisons, enhance reproducibility, and enable progress tracking, facilitating rigorous assessment and continuous improvement of ranking models. Existing NLP ranking benchmarks typically use binary relevance labels or continuous relevance scores, neglecting ordinal relevance scores. However, binary labels oversimplify relevance distinctions, while continuous scores lack a clear ordinal structure, making it challenging to capture nuanced ranking differences effectively. To address these challenges, we introduce OrdRankBen, a novel benchmark designed to capture multi-granularity relevance distinctions. Unlike conventional benchmarks, OrdRankBen incorporates structured ordinal labels, enabling more precise ranking evaluations. Given the absence of suitable datasets for ordinal relevance ranking in NLP, we constructed two datasets with distinct ordinal label distributions. We further evaluate various models for three model types, ranking-based language models, general large language models, and ranking-focused large language models on these datasets. Experimental results show that ordinal relevance modeling provides a more precise evaluation of ranking models, improving their ability to distinguish multi-granularity differences among ranked items-crucial for tasks that demand fine-grained relevance differentiation. 
+
+**Abstract (ZH)**: ordinal relevance ranking benchmarks in natural language processing: introducing OrdRankBen 
+
+---
+# Generative Artificial Intelligence for Academic Research: Evidence from Guidance Issued for Researchers by Higher Education Institutions in the United States 
+
+**Title (ZH)**: 生成型人工智能在学术研究中的应用：来自美国高等教育机构对研究人员指导意见的实证证据 
+
+**Authors**: Amrita Ganguly, Aditya Johri, Areej Ali, Nora McDonald  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00664)  
+
+**Abstract**: The recent development and use of generative AI (GenAI) has signaled a significant shift in research activities such as brainstorming, proposal writing, dissemination, and even reviewing. This has raised questions about how to balance the seemingly productive uses of GenAI with ethical concerns such as authorship and copyright issues, use of biased training data, lack of transparency, and impact on user privacy. To address these concerns, many Higher Education Institutions (HEIs) have released institutional guidance for researchers. To better understand the guidance that is being provided we report findings from a thematic analysis of guidelines from thirty HEIs in the United States that are classified as R1 or 'very high research activity.' We found that guidance provided to researchers: (1) asks them to refer to external sources of information such as funding agencies and publishers to keep updated and use institutional resources for training and education; (2) asks them to understand and learn about specific GenAI attributes that shape research such as predictive modeling, knowledge cutoff date, data provenance, and model limitations, and educate themselves about ethical concerns such as authorship, attribution, privacy, and intellectual property issues; and (3) includes instructions on how to acknowledge sources and disclose the use of GenAI, how to communicate effectively about their GenAI use, and alerts researchers to long term implications such as over reliance on GenAI, legal consequences, and risks to their institutions from GenAI use. Overall, guidance places the onus of compliance on individual researchers making them accountable for any lapses, thereby increasing their responsibility. 
+
+**Abstract (ZH)**: 最近生成AI（GenAI）的发展及其应用标志着研究活动如头脑风暴、提案写作、传播甚至评审方面的一个重大转变。这引发了如何平衡看起来具有生产力的GenAI使用与作者身份和版权问题、偏见训练数据的使用、缺乏透明度以及对用户隐私的影响之间的关系的伦理关切。为了应对这些关切，许多高等教育机构（HEIs）已经发布了针对研究人员的指导意见。为了更好地了解提供的指导，我们报告了对美国R1或“非常高研究活动”分类的三十所高等教育机构发布的指导方针进行主题分析的结果。我们发现，这些指导方针要求研究人员：（1）参考外部信息来源如资助机构和出版商以保持更新，并利用机构资源进行培训和教育；（2）了解和学习影响研究的特定GenAI属性，例如预测建模、知识截止日期、数据来源和模型限制，并了解相关的伦理关切，如作者身份、归属、隐私和知识产权问题；（3）包含如何承认来源、披露使用GenAI、有效沟通其使用GenAI的方法，以及提醒研究人员长期影响，如过度依赖GenAI、法律后果以及GenAI使用对他们的机构带来的风险。总体而言，这些指导方针将合规的责任放在个人研究人员身上，使他们对其任何疏忽负责，从而增加了他们的责任。 
+
+---
+# Deep Change Monitoring: A Hyperbolic Representative Learning Framework and a Dataset for Long-term Fine-grained Tree Change Detection 
+
+**Title (ZH)**: 深空变化监测：一种双曲代表学习框架及长时间细粒度树变化检测数据集 
+
+**Authors**: Yante Li, Hanwen Qi, Haoyu Chen, Xinlian Liang, Guoying Zhao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00643)  
+
+**Abstract**: In environmental protection, tree monitoring plays an essential role in maintaining and improving ecosystem health. However, precise monitoring is challenging because existing datasets fail to capture continuous fine-grained changes in trees due to low-resolution images and high acquisition costs. In this paper, we introduce UAVTC, a large-scale, long-term, high-resolution dataset collected using UAVs equipped with cameras, specifically designed to detect individual Tree Changes (TCs). UAVTC includes rich annotations and statistics based on biological knowledge, offering a fine-grained view for tree monitoring. To address environmental influences and effectively model the hierarchical diversity of physiological TCs, we propose a novel Hyperbolic Siamese Network (HSN) for TC detection, enabling compact and hierarchical representations of dynamic tree changes.
+Extensive experiments show that HSN can effectively capture complex hierarchical changes and provide a robust solution for fine-grained TC detection. In addition, HSN generalizes well to cross-domain face anti-spoofing task, highlighting its broader significance in AI. We believe our work, combining ecological insights and interdisciplinary expertise, will benefit the community by offering a new benchmark and innovative AI technologies. 
+
+**Abstract (ZH)**: 基于无人机的大规模高分辨率树变化检测数据集及超球面西蒙网络（UAVTC及其Hyperbolic Siamese Network在树变化检测中的应用） 
+
+---
+# Efficiently Editing Mixture-of-Experts Models with Compressed Experts 
+
+**Title (ZH)**: 高效编辑混合专家模型中的压缩专家 
+
+**Authors**: Yifei He, Yang Liu, Chen Liang, Hany Hassan Awadalla  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00634)  
+
+**Abstract**: Mixture-of-Experts (MoE) models have become a key approach for scaling large language models efficiently by activating only a subset of experts during training and inference. Typically, the number of activated experts presents a trade-off: fewer experts reduce computational costs, while more experts improve performance. Recent studies reveal that not all activated experts contribute equally to model performance, with some providing minimal utility, particularly when finetuning pretrained MoE models for specialized downstream tasks. The co-existence of significant and redundant parameters in experts provides us an opportunity to reduce the number of activated experts while maintaining model performance. In this work, we propose the concept of compressed experts, lightweight modules that serve as compact representations of full experts. Our approach preserves the most important experts while replacing other auxiliary activated experts with compressed experts. The reduction of active parameters significantly lowers inference costs while achieving comparable performance. Extensive experiments on models including Phi-MoE and OLMoE demonstrate that compressed experts recover over 90% of full expert performance across various tasks while reducing more than 30% active parameters and saving 20% in inference costs. This approach enables efficient deployment of MoE models in resource-constrained settings and facilitates scaling to larger models with manageable overhead. Our code is available at this https URL. 
+
+**Abstract (ZH)**: MoE模型的压缩专家：在保持性能的同时减少激活专家的数量 
+
+---
+# An evaluation of DeepSeek Models in Biomedical Natural Language Processing 
+
+**Title (ZH)**: DeepSeek模型在生物医学自然语言处理中的评估 
+
+**Authors**: Zaifu Zhan, Shuang Zhou, Huixue Zhou, Jiawen Deng, Yu Hou, Jeremy Yeung, Rui Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00624)  
+
+**Abstract**: The advancement of Large Language Models (LLMs) has significantly impacted biomedical Natural Language Processing (NLP), enhancing tasks such as named entity recognition, relation extraction, event extraction, and text classification. In this context, the DeepSeek series of models have shown promising potential in general NLP tasks, yet their capabilities in the biomedical domain remain underexplored. This study evaluates multiple DeepSeek models (Distilled-DeepSeek-R1 series and Deepseek-LLMs) across four key biomedical NLP tasks using 12 datasets, benchmarking them against state-of-the-art alternatives (Llama3-8B, Qwen2.5-7B, Mistral-7B, Phi-4-14B, Gemma-2-9B). Our results reveal that while DeepSeek models perform competitively in named entity recognition and text classification, challenges persist in event and relation extraction due to precision-recall trade-offs. We provide task-specific model recommendations and highlight future research directions. This evaluation underscores the strengths and limitations of DeepSeek models in biomedical NLP, guiding their future deployment and optimization. 
+
+**Abstract (ZH)**: 大型语言模型的进步显著影响了生物医学自然语言处理，增强了命名实体识别、关系抽取、事件抽取和文本分类等任务。在此背景下，DeepSeek系列模型在通用自然语言处理任务中展现了潜在能力，但在生物医学领域的能力尚未充分探索。本研究使用12个数据集，在四种关键的生物医学自然语言处理任务中评估了多个DeepSeek模型（Distilled-DeepSeek-R1系列和DeepSeek-LLMs），并将它们与最先进的替代方案（Llama3-8B、Qwen2.5-7B、Mistral-7B、Phi-4-14B、Gemma-2-9B）进行基准比较。研究结果表明，虽然DeepSeek模型在命名实体识别和文本分类任务中表现出竞争力，但在事件和关系抽取任务中存在精确度与召回率之间的权衡问题。我们提供了特定任务的模型推荐，并指出了未来的研究方向。该评估突显了DeepSeek模型在生物医学自然语言处理中的优势与局限性，指导其未来的部署与优化。 
+
+---
+# PinLanding: Content-First Keyword Landing Page Generation via Multi-Modal AI for Web-Scale Discovery 
+
+**Title (ZH)**: PinLanding：基于多模态AI的内容优先关键字着陆页生成以实现大规模网络发现 
+
+**Authors**: Faye Zhang, Jasmine Wan, Qianyu Cheng, Jinfeng Rao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00619)  
+
+**Abstract**: Online platforms like Pinterest hosting vast content collections traditionally rely on manual curation or user-generated search logs to create keyword landing pages (KLPs) -- topic-centered collection pages that serve as entry points for content discovery. While manual curation ensures quality, it doesn't scale to millions of collections, and search log approaches result in limited topic coverage and imprecise content matching. In this paper, we present PinLanding, a novel content-first architecture that transforms the way platforms create topical collections. Instead of deriving topics from user behavior, our system employs a multi-stage pipeline combining vision-language model (VLM) for attribute extraction, large language model (LLM) for topic generation, and a CLIP-based dual-encoder architecture for precise content matching. Our model achieves 99.7% Recall@10 on Fashion200K benchmark, demonstrating strong attribute understanding capabilities. In production deployment for search engine optimization with 4.2 million shopping landing pages, the system achieves a 4X increase in topic coverage and 14.29% improvement in collection attribute precision over the traditional search log-based approach via human evaluation. The architecture can be generalized beyond search traffic to power various user experiences, including content discovery and recommendations, providing a scalable solution to transform unstructured content into curated topical collections across any content domain. 
+
+**Abstract (ZH)**: 基于内容的第一代PinLanding：一种新型的话题集合生成架构 
+
+---
+# Urban Safety Perception Through the Lens of Large Multimodal Models: A Persona-based Approach 
+
+**Title (ZH)**: 基于个性化的视角通过大型多模态模型探索城市安全感知 
+
+**Authors**: Ciro Beneduce, Bruno Lepri, Massimiliano Luca  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00610)  
+
+**Abstract**: Understanding how urban environments are perceived in terms of safety is crucial for urban planning and policymaking. Traditional methods like surveys are limited by high cost, required time, and scalability issues. To overcome these challenges, this study introduces Large Multimodal Models (LMMs), specifically Llava 1.6 7B, as a novel approach to assess safety perceptions of urban spaces using street-view images. In addition, the research investigated how this task is affected by different socio-demographic perspectives, simulated by the model through Persona-based prompts. Without additional fine-tuning, the model achieved an average F1-score of 59.21% in classifying urban scenarios as safe or unsafe, identifying three key drivers of perceived unsafety: isolation, physical decay, and urban infrastructural challenges. Moreover, incorporating Persona-based prompts revealed significant variations in safety perceptions across the socio-demographic groups of age, gender, and nationality. Elder and female Personas consistently perceive higher levels of unsafety than younger or male Personas. Similarly, nationality-specific differences were evident in the proportion of unsafe classifications ranging from 19.71% in Singapore to 40.15% in Botswana. Notably, the model's default configuration aligned most closely with a middle-aged, male Persona. These findings highlight the potential of LMMs as a scalable and cost-effective alternative to traditional methods for urban safety perceptions. While the sensitivity of these models to socio-demographic factors underscores the need for thoughtful deployment, their ability to provide nuanced perspectives makes them a promising tool for AI-driven urban planning. 
+
+**Abstract (ZH)**: 理解城市环境在安全感知方面的认知对于城市规划和政策制定至关重要。传统的调查方法受限于高成本、时间消耗和可扩展性问题。为克服这些挑战，本研究引入了大型多模态模型（LMMs），具体为Llava 1.6 7B，借助街道视角图片评估城市空间的安全感知。此外，研究还探讨了不同社会人口统计学视角对这一任务的影响，模拟这一过程使用基于人设的提示。未经额外微调，该模型在分类城市场景为安全或不安全方面平均F1分数为59.21%，并识别出不安全感的三个主要驱动因素：隔离、物理衰退和城市基础设施挑战。同时，加入基于人设的提示揭示了不同社会人口统计学群体（年龄、性别和国籍）在安全感知方面的显著差异。老年人和女性人设的一贯感知到更高水平的不安全感，而年轻人和男性感知到较低水平的不安全感。同样，国籍在不安全分类的比例上也有显著差异，从新加坡的19.71%到博茨瓦纳的40.15%不等。值得注意的是，模型的默认配置最接近中年男性人设。这些发现强调了LMMs作为可扩展且成本效益高的替代传统方法评估城市安全感知的潜力。尽管这些模型对社会人口统计学因素的敏感性突显了慎重部署的需要，但它们提供细致视角的能力使得它们成为AI驱动城市规划的有前景工具。 
+
+---
+# Semantic Integrity Constraints: Declarative Guardrails for AI-Augmented Data Processing Systems 
+
+**Title (ZH)**: 语义完整约束：面向AI增强数据处理系统的声明式护栏 
+
+**Authors**: Alexander W. Lee, Justin Chan, Michael Fu, Nicolas Kim, Akshay Mehta, Deepti Raghavan, Ugur Cetintemel  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00600)  
+
+**Abstract**: The emergence of AI-augmented Data Processing Systems (DPSs) has introduced powerful semantic operators that extend traditional data management capabilities with LLM-based processing. However, these systems face fundamental reliability (a.k.a. trust) challenges, as LLMs can generate erroneous outputs, limiting their adoption in critical domains. Existing approaches to LLM constraints--ranging from user-defined functions to constrained decoding--are fragmented, imperative, and lack semantics-aware integration into query execution. To address this gap, we introduce Semantic Integrity Constraints (SICs), a novel declarative abstraction that extends traditional database integrity constraints to govern and optimize semantic operators within DPSs. SICs integrate seamlessly into the relational model, allowing users to specify common classes of constraints (e.g., grounding and soundness) while enabling query-aware enforcement and optimization strategies.
+In this paper, we present the core design of SICs, describe their formal integration into query execution, and detail our conception of grounding constraints, a key SIC class that ensures factual consistency of generated outputs. In addition, we explore novel enforcement mechanisms, combining proactive (constrained decoding) and reactive (validation and recovery) techniques to optimize efficiency and reliability. Our work establishes SICs as a foundational framework for trustworthy, high-performance AI-augmented data processing, paving the way for future research in constraint-driven optimizations, adaptive enforcement, and enterprise-scale deployments. 
+
+**Abstract (ZH)**: AI增强数据处理系统中的语义完整性约束（SICs）：可靠高效的语义数据处理基础框架 
+
+---
+# Zero-Shot Keyphrase Generation: Investigating Specialized Instructions and Multi-Sample Aggregation on Large Language Models 
+
+**Title (ZH)**: 零样本关键短语生成：探究专门指令和多样本聚合在大型语言模型中的应用 
+
+**Authors**: Jayanth Mohan, Jishnu Ray Chowdhury, Tomas Malik, Cornelia Caragea  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00597)  
+
+**Abstract**: Keyphrases are the essential topical phrases that summarize a document. Keyphrase generation is a long-standing NLP task for automatically generating keyphrases for a given document. While the task has been comprehensively explored in the past via various models, only a few works perform some preliminary analysis of Large Language Models (LLMs) for the task. Given the impact of LLMs in the field of NLP, it is important to conduct a more thorough examination of their potential for keyphrase generation. In this paper, we attempt to meet this demand with our research agenda. Specifically, we focus on the zero-shot capabilities of open-source instruction-tuned LLMs (Phi-3, Llama-3) and the closed-source GPT-4o for this task. We systematically investigate the effect of providing task-relevant specialized instructions in the prompt. Moreover, we design task-specific counterparts to self-consistency-style strategies for LLMs and show significant benefits from our proposals over the baselines. 
+
+**Abstract (ZH)**: 基于大规模语言模型的关键短语生成研究 
+
+---
+# BadJudge: Backdoor Vulnerabilities of LLM-as-a-Judge 
+
+**Title (ZH)**: BadJudge：作为法官的LLM的后门易感性 
+
+**Authors**: Terry Tong, Fei Wang, Zhe Zhao, Muhao Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00596)  
+
+**Abstract**: This paper proposes a novel backdoor threat attacking the LLM-as-a-Judge evaluation regime, where the adversary controls both the candidate and evaluator model. The backdoored evaluator victimizes benign users by unfairly assigning inflated scores to adversary. A trivial single token backdoor poisoning 1% of the evaluator training data triples the adversary's score with respect to their legitimate score. We systematically categorize levels of data access corresponding to three real-world settings, (1) web poisoning, (2) malicious annotator, and (3) weight poisoning. These regimes reflect a weak to strong escalation of data access that highly correlates with attack severity. Under the weakest assumptions - web poisoning (1), the adversary still induces a 20% score inflation. Likewise, in the (3) weight poisoning regime, the stronger assumptions enable the adversary to inflate their scores from 1.5/5 to 4.9/5. The backdoor threat generalizes across different evaluator architectures, trigger designs, evaluation tasks, and poisoning rates. By poisoning 10% of the evaluator training data, we control toxicity judges (Guardrails) to misclassify toxic prompts as non-toxic 89% of the time, and document reranker judges in RAG to rank the poisoned document first 97% of the time. LLM-as-a-Judge is uniquely positioned at the intersection of ethics and technology, where social implications of mislead model selection and evaluation constrain the available defensive tools. Amidst these challenges, model merging emerges as a principled tool to offset the backdoor, reducing ASR to near 0% whilst maintaining SOTA performance. Model merging's low computational cost and convenient integration into the current LLM Judge training pipeline position it as a promising avenue for backdoor mitigation in the LLM-as-a-Judge setting. 
+
+**Abstract (ZH)**: 本论文提出了一种针对LLM-as-a-Judge评估机制的新颖后门威胁，攻击者控制候选模型和评估模型。后门评估模型通过不公平地给予攻击者夸大分数来损害无辜用户。单一令牌后门污染评估模型训练数据的1%，可以使攻击者的分数相对于其合法分数几乎翻三倍。我们系统地将数据访问级别分类为三种现实场景：（1）网络污染、（2）恶意标注者和（3）权重污染。这些机制反映出从弱到强的数据访问提升，与攻击严重性高度相关。即使在最弱假设下（网络污染），攻击者仍能引发20%的分数膨胀。同样，在权重污染机制（第三种情况）下，更强的假设使攻击者能够将分数从1.5/5提升到4.9/5。后门威胁在不同的评估模型架构、触发设计、评估任务和污染率下具有通用性。通过污染评估模型训练数据的10%，我们能够控制毒性裁判（Guardrails）将有毒提示误分类为无毒的89%时间，并使文档重排序裁判在RAG中将污染文档排在首位的几率达到97%。LLM-as-a-Judge在伦理和技术的交叉点上独具优势，社会模型选择和评估误导的潜在影响限制了可用的防御工具。在这些挑战中，模型合并作为一种原则性的工具，能够缓解后门威胁，同时保持SOTA性能并将ASR降至几乎为零。模型合并的低计算成本和容易整合到当前LLM Judge训练管道中，使其成为LLM-as-a-Judge环境中后门减轻的一种有前途的途径。 
+
+---
+# Space-Time Graphs of Convex Sets for Multi-Robot Motion Planning 
+
+**Title (ZH)**: 凸集的时空图在多机器人运动规划中的应用 
+
+**Authors**: Jingtao Tang, Zining Mao, Lufan Yang, Hang Ma  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00583)  
+
+**Abstract**: We address the Multi-Robot Motion Planning (MRMP) problem of computing collision-free trajectories for multiple robots in shared continuous environments. While existing frameworks effectively decompose MRMP into single-robot subproblems, spatiotemporal motion planning with dynamic obstacles remains challenging, particularly in cluttered or narrow-corridor settings. We propose Space-Time Graphs of Convex Sets (ST-GCS), a novel planner that systematically covers the collision-free space-time domain with convex sets instead of relying on random sampling. By extending Graphs of Convex Sets (GCS) into the time dimension, ST-GCS formulates time-optimal trajectories in a unified convex optimization that naturally accommodates velocity bounds and flexible arrival times. We also propose Exact Convex Decomposition (ECD) to "reserve" trajectories as spatiotemporal obstacles, maintaining a collision-free space-time graph of convex sets for subsequent planning. Integrated into two prioritized-planning frameworks, ST-GCS consistently achieves higher success rates and better solution quality than state-of-the-art sampling-based planners -- often at orders-of-magnitude faster runtimes -- underscoring its benefits for MRMP in challenging settings. 
+
+**Abstract (ZH)**: 多机器人时空路径规划：基于凸集的空间-时间图规划方法 
+
+---
+# Brain Foundation Models: A Survey on Advancements in Neural Signal Processing and Brain Discovery 
+
+**Title (ZH)**: 脑基础模型：神经信号处理与脑认知进展综述 
+
+**Authors**: Xinliang Zhou, Chenyu Liu, Zhisheng Chen, Kun Wang, Yi Ding, Ziyu Jia, Qingsong Wen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00580)  
+
+**Abstract**: Brain foundation models (BFMs) have emerged as a transformative paradigm in computational neuroscience, offering a revolutionary framework for processing diverse neural signals across different brain-related tasks. These models leverage large-scale pre-training techniques, allowing them to generalize effectively across multiple scenarios, tasks, and modalities, thus overcoming the traditional limitations faced by conventional artificial intelligence (AI) approaches in understanding complex brain data. By tapping into the power of pretrained models, BFMs provide a means to process neural data in a more unified manner, enabling advanced analysis and discovery in the field of neuroscience. In this survey, we define BFMs for the first time, providing a clear and concise framework for constructing and utilizing these models in various applications. We also examine the key principles and methodologies for developing these models, shedding light on how they transform the landscape of neural signal processing. This survey presents a comprehensive review of the latest advancements in BFMs, covering the most recent methodological innovations, novel views of application areas, and challenges in the field. Notably, we highlight the future directions and key challenges that need to be addressed to fully realize the potential of BFMs. These challenges include improving the quality of brain data, optimizing model architecture for better generalization, increasing training efficiency, and enhancing the interpretability and robustness of BFMs in real-world applications. 
+
+**Abstract (ZH)**: 基于脑的模型（BFMs）已成为计算神经科学中的一个变革性范式，提供了处理跨不同脑相关任务的多种神经信号的革命性框架。这些模型利用大规模预训练技术，使其能够在多种场景、任务和模态中有效泛化，从而克服了传统人工智能（AI）方法在理解复杂脑数据时面临的局限性。通过利用预训练模型的力量，BFMs提供了一种更统一的方式来处理神经数据，使神经科学领域的高级分析和发现成为了可能。在这篇综述中，我们首次定义了BFMs，提供了一个清晰且简洁的框架，以便在各种应用中构建和利用这些模型。我们还探讨了开发这些模型的关键原则和方法论，揭示了它们如何改变神经信号处理的格局。这篇综述全面回顾了BFMs的最新进展，涵盖了最新的方法论创新、新的应用领域视角以及该领域的挑战。我们特别强调了实现BFMs潜力所需解决的未来方向和关键挑战，包括提高脑数据质量、优化模型架构以获得更好的泛化能力、提高训练效率以及增强BFMs在实际应用中的可解释性和鲁棒性。 
+
+---
+# LoR2C : Low-Rank Residual Connection Adaptation for Parameter-Efficient Fine-Tuning 
+
+**Title (ZH)**: LoR2C：低秩残差连接适应性调整用于参数高效微调 
+
+**Authors**: Jiancheng Zhao, Xingda Yu, Yuxiang Zhang, Zhen Yang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00572)  
+
+**Abstract**: In recent years, pretrained large language models have demonstrated outstanding performance across various natural language processing tasks. However, full-parameter fine-tuning methods require adjusting all model parameters, leading to immense computational resource demands. Although parameter-efficient fine-tuning methods like LoRA have significantly reduced the number of parameters, they still face challenges such as gradient vanishing and the potential for further parameter reduction. To address these issues, this paper proposes a novel parameter-efficient fine-tuning method called LoR2C (Low-Rank Residual Connection Adaptation). LoR2C introduces residual connections with low-rank matrices within the model layers, which not only reduces the number of fine-tuning parameters but also effectively alleviates the gradient vanishing problem. Additionally, this paper presents three optimization variants of LoR2C: ShareLoR2C, MergeLoR2C, and InjectLoR2C. These variants further improve parameter efficiency and model performance through parameter sharing, module merging, and injection mechanisms, respectively. Experimental results on multiple natural language understanding and natural language generation tasks demonstrate that LoR2C and its optimized variants significantly reduce parameter overhead while maintaining or even improving performance, outperforming existing mainstream parameter-efficient fine-tuning this http URL code is publicly available at this https URL. 
+
+**Abstract (ZH)**: 近年来，预训练大型语言模型在各种自然语言处理任务中展现了出色的性能。然而，全参数微调方法需要调整所有模型参数，导致巨大的计算资源需求。尽管LoRA等参数高效微调方法显著减少了参数数量，但仍面临梯度消失和其他参数进一步减少的挑战。为解决这些问题，本文提出了一种新的参数高效微调方法——LoR2C（低秩残差连接适应）。LoR2C在模型层内引入低秩矩阵的残差连接，不仅减少了需要微调的参数数量，还有效地缓解了梯度消失问题。此外，本文还提出了LoR2C的三种优化变体：ShareLoR2C、MergeLoR2C和InjectLoR2C。这些变体分别通过参数共享、模块合并和注入机制进一步提高了参数效率和模型性能。多项自然语言理解与自然语言生成任务的实验结果表明，LoR2C及其优化变体在显著减少参数开销的同时，能够保持或甚至提高性能，并在现有主流参数高效微调方法中表现出色。代码已公开，可在以下链接获取：this https URL 
+
+---
+# A Guide to Failure in Machine Learning: Reliability and Robustness from Foundations to Practice 
+
+**Title (ZH)**: 机器学习中可靠性与鲁棒性基础到实践的失败指南 
+
+**Authors**: Eric Heim, Oren Wright, David Shriver  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00563)  
+
+**Abstract**: One of the main barriers to adoption of Machine Learning (ML) is that ML models can fail unexpectedly. In this work, we aim to provide practitioners a guide to better understand why ML models fail and equip them with techniques they can use to reason about failure. Specifically, we discuss failure as either being caused by lack of reliability or lack of robustness. Differentiating the causes of failure in this way allows us to formally define why models fail from first principles and tie these definitions to engineering concepts and real-world deployment settings. Throughout the document we provide 1) a summary of important theoretic concepts in reliability and robustness, 2) a sampling current techniques that practitioners can utilize to reason about ML model reliability and robustness, and 3) examples that show how these concepts and techniques can apply to real-world settings. 
+
+**Abstract (ZH)**: 机器学习模型失败的主要障碍之一是这些模型可能会意外失败。在这项工作中，我们旨在为实践者提供一个指南，帮助他们更好地理解为何机器学习模型会失败，并使他们能够运用技术来推理模型失败的原因。具体来说，我们将失败分为可靠性不足和鲁棒性不足两种原因。通过这种方式区分失败的原因，使我们能够从第一原理出发正式定义模型失败的原因，并将其与工程概念和实际部署场景联系起来。在整个文档中，我们提供了1）可靠性与鲁棒性的重要理论概念总结，2）实践者可以利用来推理机器学习模型可靠性和鲁棒性的当前技术样本，以及3）这些概念和技术在实际应用场景中的示例。 
+
+---
+# Safety Tax: Safety Alignment Makes Your Large Reasoning Models Less Reasonable 
+
+**Title (ZH)**: 安全税：安全对齐使你的大型推理模型变得不够合理 
+
+**Authors**: Tiansheng Huang, Sihao Hu, Fatih Ilhan, Selim Furkan Tekin, Zachary Yahn, Yichang Xu, Ling Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00555)  
+
+**Abstract**: Safety alignment is an important procedure before the official deployment of a Large Language Model (LLM). While safety alignment has been extensively studied for LLM, there is still a large research gap for Large Reasoning Models (LRMs) that equip with improved reasoning capability. We in this paper systematically examine a simplified pipeline for producing safety aligned LRMs. With our evaluation of various LRMs, we deliver two main findings: i) Safety alignment can be done upon the LRM to restore its safety capability. ii) Safety alignment leads to a degradation of the reasoning capability of LRMs. The two findings show that there exists a trade-off between reasoning and safety capability with the sequential LRM production pipeline. The discovered trade-off, which we name Safety Tax, should shed light on future endeavors of safety research on LRMs. As a by-product, we curate a dataset called DirectRefusal, which might serve as an alternative dataset for safety alignment. Our source code is available at this https URL. 
+
+**Abstract (ZH)**: 大规模推理模型的安全对齐是其正式部署前的重要程序。虽然已经对大规模语言模型（LLM）进行了广泛的安全对齐研究，但对于具备增强推理能力的大规模推理模型（LRMs）来说，安全对齐研究仍然存在巨大的研究空白。本文系统地研究了一个简化的生成安全对齐LRMs的管线。通过对多种LRMs的评估，我们得到了两个主要发现：i) 可以对LRM进行安全对齐以恢复其安全能力；ii) 安全对齐会导致LRMs推理能力的下降。这两个发现表明，在顺序生成LRM管线中存在推理能力和安全能力之间的权衡。我们发现的这种权衡现象，我们称之为“安全税”，应该会为未来关于LRMs安全研究的方向带来启示。作为副产品，我们收集了一个名为DirectRefusal的数据集，该数据集可能作为安全对齐的替代数据集。我们的源代码可在以下链接获取。 
+
+---
+# Distributionally Robust Reinforcement Learning with Human Feedback 
+
+**Title (ZH)**: 基于人类反馈的分布鲁棒强化学习 
+
+**Authors**: Debmalya Mandal, Paulius Sasnauskas, Goran Radanovic  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00539)  
+
+**Abstract**: Reinforcement learning from human feedback (RLHF) has evolved to be one of the main methods for fine-tuning large language models (LLMs). However, existing RLHF methods are non-robust, and their performance deteriorates if the downstream task differs significantly from the preference dataset used in fine-tuning. In order to mitigate this problem, we introduce a distributionally robust RLHF for fine-tuning LLMs. In particular, our goal is to ensure that a fine-tuned model retains its performance even when the distribution of prompts significantly differs from the distribution encountered during fine-tuning. We formulate distributionally robust optimization (DRO) version of two popular fine-tuning methods -- (1) reward-based RLHF and (2) reward-free DPO (direct preference optimization). We propose a minibatch gradient descent based algorithms for both of them, and theoretically prove convergence guarantees for the algorithms. Subsequently, we evaluate our algorithms on an out-of-distribution (OOD) task by first training the model on the Unified-Feedback dataset and evaluating its performance on two different datasets. The experimental results show that our robust training improves the accuracy of the learned reward models on average, and markedly on some tasks, such as reasoning. Furthermore, we show that the robust versions of policy optimization methods, similarly improve performance on OOD tasks. 
+
+**Abstract (ZH)**: 基于人类反馈的强化学习（RLHF）已发展成为细调大型语言模型（LLMs）的主要方法之一。然而，现有的RLHF方法不够健壮，如果下游任务与用于细调的偏好数据集显著不同，其性能会下降。为了缓解这一问题，我们提出了一个分布鲁棒的RLHF方法以细调LLMs。具体而言，我们的目标是在提示分布与细调过程中遇到的分布显著不同的情况下，确保细调后的模型仍能保持其性能。我们为两种流行的细调方法——基于奖励的RLHF和无奖励的DPO（直接偏好优化）——制定了分布鲁棒优化（DRO）版本，并提出基于小批量梯度下降的算法，理论上证明了算法的收敛性保证。随后，我们在一个离分布（OOD）任务中评估了这些算法：首先在统一反馈数据集中训练模型，然后在两个不同的数据集上评估其性能。实验结果表明，我们的鲁棒训练方法在平均情况下提高了学习奖励模型的准确性，并且在某些任务（如推理）上显著提高了准确性。此外，我们展示了用于策略优化的鲁棒版本方法同样能够提高离分布任务的性能。 
+
+---
+# What Makes a Good Diffusion Planner for Decision Making? 
+
+**Title (ZH)**: 什么是好的扩散规划者以供决策使用？ 
+
+**Authors**: Haofei Lu, Dongqi Han, Yifei Shen, Dongsheng Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00535)  
+
+**Abstract**: Diffusion models have recently shown significant potential in solving decision-making problems, particularly in generating behavior plans -- also known as diffusion planning. While numerous studies have demonstrated the impressive performance of diffusion planning, the mechanisms behind the key components of a good diffusion planner remain unclear and the design choices are highly inconsistent in existing studies. In this work, we address this issue through systematic empirical experiments on diffusion planning in an offline reinforcement learning (RL) setting, providing practical insights into the essential components of diffusion planning. We trained and evaluated over 6,000 diffusion models, identifying the critical components such as guided sampling, network architecture, action generation and planning strategy. We revealed that some design choices opposite to the common practice in previous work in diffusion planning actually lead to better performance, e.g., unconditional sampling with selection can be better than guided sampling and Transformer outperforms U-Net as denoising network. Based on these insights, we suggest a simple yet strong diffusion planning baseline that achieves state-of-the-art results on standard offline RL benchmarks. 
+
+**Abstract (ZH)**: 扩散模型在解决决策问题方面 recently demonstrated significant potential, particularly in generating behavior plans -- also known as diffusion planning. 通过系统性的离线强化学习实验，我们探讨了扩散规划的关键组件及其设计选择，提供了实用的洞察。我们训练和评估了超过6,000个扩散模型，确定了关键组件如引导采样、网络架构、动作生成和规划策略。我们发现，一些与以往扩散规划工作中常见做法相反的设计选择实际上会导致更好的性能，例如无条件采样结合选择可能优于引导采样，Transformer 在去噪网络中表现优于U-Net。基于这些洞察，我们提出了一种简单但强大的扩散规划基线，该基线在标准的离线强化学习基准上达到了最先进的结果。 
+
+---
+# Never too Prim to Swim: An LLM-Enhanced RL-based Adaptive S-Surface Controller for AUVs under Extreme Sea Conditions 
+
+**Title (ZH)**: 永不 Too Prim to Swim：一种增强型 RL 辅助自适应 S 表面控制器在极端海况下用于 AUVs 
+
+**Authors**: Guanwen Xie, Jingzehua Xu, Yimian Ding, Zhi Zhang, Shuai Zhang, Yi Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00527)  
+
+**Abstract**: The adaptivity and maneuvering capabilities of Autonomous Underwater Vehicles (AUVs) have drawn significant attention in oceanic research, due to the unpredictable disturbances and strong coupling among the AUV's degrees of freedom. In this paper, we developed large language model (LLM)-enhanced reinforcement learning (RL)-based adaptive S-surface controller for AUVs. Specifically, LLMs are introduced for the joint optimization of controller parameters and reward functions in RL training. Using multi-modal and structured explicit task feedback, LLMs enable joint adjustments, balance multiple objectives, and enhance task-oriented performance and adaptability. In the proposed controller, the RL policy focuses on upper-level tasks, outputting task-oriented high-level commands that the S-surface controller then converts into control signals, ensuring cancellation of nonlinear effects and unpredictable external disturbances in extreme sea conditions. Under extreme sea conditions involving complex terrain, waves, and currents, the proposed controller demonstrates superior performance and adaptability in high-level tasks such as underwater target tracking and data collection, outperforming traditional PID and SMC controllers. 
+
+**Abstract (ZH)**: 自主 underwater 车辆 (AUVs) 的适应性和机动能力在海洋研究中引起了广泛关注，由于无法预测的干扰和 AUV 自由度间的强耦合。在本文中，我们开发了一种增强学习 (LLM-增强 RL) 算法辅助的自适应 S 表面控制器。具体来说，LLM 通过联合优化控制器参数和奖励函数来增强 RL 训练。借助多模态和结构化显式任务反馈，LLM 实现了联合调整、权衡多个目标，并提高任务导向性能和适应性。在所提控制器中，RL 策略专注于高层任务，输出任务导向的高层指令，S 表面控制器将其转换为控制信号，以确保在极端海况下消除非线性效应和不可预测的外部干扰。在复杂地形、海浪和洋流的极端海况下，所提控制器在水下目标跟踪和数据收集等高层任务中表现出优越的性能和适应性，优于传统的 PID 和 SMC 控制器。 
+
+---
+# End-To-End Learning of Gaussian Mixture Priors for Diffusion Sampler 
+
+**Title (ZH)**: 端到端学习高斯混合先验用于扩散采样 
+
+**Authors**: Denis Blessing, Xiaogang Jia, Gerhard Neumann  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00524)  
+
+**Abstract**: Diffusion models optimized via variational inference (VI) have emerged as a promising tool for generating samples from unnormalized target densities. These models create samples by simulating a stochastic differential equation, starting from a simple, tractable prior, typically a Gaussian distribution. However, when the support of this prior differs greatly from that of the target distribution, diffusion models often struggle to explore effectively or suffer from large discretization errors. Moreover, learning the prior distribution can lead to mode-collapse, exacerbated by the mode-seeking nature of reverse Kullback-Leibler divergence commonly used in VI. To address these challenges, we propose end-to-end learnable Gaussian mixture priors (GMPs). GMPs offer improved control over exploration, adaptability to target support, and increased expressiveness to counteract mode collapse. We further leverage the structure of mixture models by proposing a strategy to iteratively refine the model by adding mixture components during training. Our experimental results demonstrate significant performance improvements across a diverse range of real-world and synthetic benchmark problems when using GMPs without requiring additional target evaluations. 
+
+**Abstract (ZH)**: 通过变分推断优化的扩散模型：面向未归一化目标密度的样本生成 
+
+---
+# Functional multi-armed bandit and the best function identification problems 
+
+**Title (ZH)**: 功能多臂老虎机和最佳函数识别问题 
+
+**Authors**: Yuriy Dorn, Aleksandr Katrutsa, Ilgam Latypov, Anastasiia Soboleva  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00509)  
+
+**Abstract**: Bandit optimization usually refers to the class of online optimization problems with limited feedback, namely, a decision maker uses only the objective value at the current point to make a new decision and does not have access to the gradient of the objective function. While this name accurately captures the limitation in feedback, it is somehow misleading since it does not have any connection with the multi-armed bandits (MAB) problem class. We propose two new classes of problems: the functional multi-armed bandit problem (FMAB) and the best function identification problem. They are modifications of a multi-armed bandit problem and the best arm identification problem, respectively, where each arm represents an unknown black-box function. These problem classes are a surprisingly good fit for modeling real-world problems such as competitive LLM training. To solve the problems from these classes, we propose a new reduction scheme to construct UCB-type algorithms, namely, the F-LCB algorithm, based on algorithms for nonlinear optimization with known convergence rates. We provide the regret upper bounds for this reduction scheme based on the base algorithms' convergence rates. We add numerical experiments that demonstrate the performance of the proposed scheme. 
+
+**Abstract (ZH)**: 功能型多臂老虎机问题和最佳函数识别问题 
+
+---
+# Towards High-fidelity 3D Talking Avatar with Personalized Dynamic Texture 
+
+**Title (ZH)**: 面向高保真3D互动Avatar的个性化动态纹理研究 
+
+**Authors**: Xuanchen Li, Jianyu Wang, Yuhao Cheng, Yikun Zeng, Xingyu Ren, Wenhan Zhu, Weiming Zhao, Yichao Yan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00495)  
+
+**Abstract**: Significant progress has been made for speech-driven 3D face animation, but most works focus on learning the motion of mesh/geometry, ignoring the impact of dynamic texture. In this work, we reveal that dynamic texture plays a key role in rendering high-fidelity talking avatars, and introduce a high-resolution 4D dataset \textbf{TexTalk4D}, consisting of 100 minutes of audio-synced scan-level meshes with detailed 8K dynamic textures from 100 subjects. Based on the dataset, we explore the inherent correlation between motion and texture, and propose a diffusion-based framework \textbf{TexTalker} to simultaneously generate facial motions and dynamic textures from speech. Furthermore, we propose a novel pivot-based style injection strategy to capture the complicity of different texture and motion styles, which allows disentangled control. TexTalker, as the first method to generate audio-synced facial motion with dynamic texture, not only outperforms the prior arts in synthesising facial motions, but also produces realistic textures that are consistent with the underlying facial movements. Project page: this https URL. 
+
+**Abstract (ZH)**: 基于语音的3D人脸动画在显著进步的基础上，大多数工作侧重于学习网格/几何的运动，而忽视了动态纹理的影响。在本工作中，我们揭示了动态纹理在渲染高保真 Talking Avatar 中起着关键作用，并引入了一个高分辨率4D数据集 TexTalk4D，该数据集包含100分钟与音频同步的扫描级网格，以及来自100个主体的详细8K动态纹理。基于该数据集，我们探索了运动与纹理之间的内在关联，并提出了一种基于扩散的框架 TexTalker，用于从语音同时生成面部运动和动态纹理。此外，我们提出了一种新颖的枢轴基风格注入策略，以捕捉不同纹理和运动风格的复杂性，从而实现分离的控制。作为首个生成与动态纹理同步的面部运动的方法，TexTalker 不仅在合成面部运动方面优于现有方法，还能生成与面部运动一致的现实纹理。项目页面: this https URL。 
+
+---
+# LLaSE-G1: Incentivizing Generalization Capability for LLaMA-based Speech Enhancement 
+
+**Title (ZH)**: LLaSE-G1: 激励基于LLaMA的语音增强的一般化能力 
+
+**Authors**: Boyi Kang, Xinfa Zhu, Zihan Zhang, Zhen Ye, Mingshuai Liu, Ziqian Wang, Yike Zhu, Guobin Ma, Jun Chen, Longshuai Xiao, Chao Weng, Wei Xue, Lei Xie  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00493)  
+
+**Abstract**: Recent advancements in language models (LMs) have demonstrated strong capabilities in semantic understanding and contextual modeling, which have flourished in generative speech enhancement (SE). However, many LM-based SE approaches primarily focus on semantic information, often neglecting the critical role of acoustic information, which leads to acoustic inconsistency after enhancement and limited generalization across diverse SE tasks. In this paper, we introduce LLaSE-G1, a LLaMA-based language model that incentivizes generalization capabilities for speech enhancement. LLaSE-G1 offers the following key contributions: First, to mitigate acoustic inconsistency, LLaSE-G1 employs continuous representations from WavLM as input and predicts speech tokens from X-Codec2, maximizing acoustic preservation. Second, to promote generalization capability, LLaSE-G1 introduces dual-channel inputs and outputs, unifying multiple SE tasks without requiring task-specific IDs. Third, LLaSE-G1 outperforms prior task-specific discriminative and generative SE models, demonstrating scaling effects at test time and emerging capabilities for unseen SE tasks. Additionally, we release our code and models to support further research in this area. 
+
+**Abstract (ZH)**: 最近在语言模型方面的进展展示了强大的语义理解和上下文建模能力，这些能力在生成性语音增强中得到了发展。然而，许多基于语言模型的语音增强方法主要关注语义信息，往往忽视了声学信息的关键作用，导致增强后声学不一致，并限制了在不同语音增强任务中的泛化能力。本文介绍了一种基于LLaMA的语言模型LLaSE-G1，该模型旨在提高语音增强的泛化能力。LLaSE-G1的主要贡献如下：首先，为缓解声学不一致问题，LLaSE-G1采用WavLM的连续表示作为输入，并从X-Codec2预测语音标记，最大化声学信息的保留。其次，为促进泛化能力，LLaSE-G1引入了双通道输入和输出，能够统一多种语音增强任务而无需特定任务标识符。第三，LLaSE-G1在测试时展现了优于先前任务特定的判别和生成语音增强模型的效果，并展示了对未见过的语音增强任务的新兴能力。此外，我们还公开了我们的代码和模型，以支持该领域的进一步研究。 
+
+---
+# Embracing Diversity: A Multi-Perspective Approach with Soft Labels 
+
+**Title (ZH)**: 拥抱多样性：一种基于软标签的多视角方法 
+
+**Authors**: Benedetta Muscato, Praveen Bushipaka, Gizem Gezici, Lucia Passaro, Fosca Giannotti, Tommaso Cucinotta  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00489)  
+
+**Abstract**: Prior studies show that adopting the annotation diversity shaped by different backgrounds and life experiences and incorporating them into the model learning, i.e. multi-perspective approach, contribute to the development of more responsible models. Thus, in this paper we propose a new framework for designing and further evaluating perspective-aware models on stance detection task,in which multiple annotators assign stances based on a controversial topic. We also share a new dataset established through obtaining both human and LLM annotations. Results show that the multi-perspective approach yields better classification performance (higher F1-scores), outperforming the traditional approaches that use a single ground-truth, while displaying lower model confidence scores, probably due to the high level of subjectivity of the stance detection task. 
+
+**Abstract (ZH)**: 先前研究显示，采用由不同背景和生活经验塑造的标注多样性，并将其融入模型学习中，即多视角方法，有助于发展更具责任感的模型。因此，在本文中，我们提出了一种新框架，用于在观点检测任务中设计和进一步评估视角 Awareness 模型，在此框架中，多名标注者基于争议性话题分配观点。我们还共享了一个通过获得人类和大语言模型标注的新数据集。结果显示，多视角方法在分类性能（较高的 F1 分数）上优于使用单一事实标准的传统方法，同时模型的置信度分数较低，这可能归因于观点检测任务的高度主观性。 
+
+---
+# Interacting with AI Reasoning Models: Harnessing "Thoughts" for AI-Driven Software Engineering 
+
+**Title (ZH)**: 与AI推理模型互动：利用“思考过程”驱动软件工程 
+
+**Authors**: Christoph Treude, Raula Gaikovina Kula  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00483)  
+
+**Abstract**: Recent advances in AI reasoning models provide unprecedented transparency into their decision-making processes, transforming them from traditional black-box systems into models that articulate step-by-step chains of thought rather than producing opaque outputs. This shift has the potential to improve software quality, explainability, and trust in AI-augmented development. However, software engineers rarely have the time or cognitive bandwidth to analyze, verify, and interpret every AI-generated thought in detail. Without an effective interface, this transparency could become a burden rather than a benefit.
+In this paper, we propose a vision for structuring the interaction between AI reasoning models and software engineers to maximize trust, efficiency, and decision-making power. We argue that simply exposing AI's reasoning is not enough -- software engineers need tools and frameworks that selectively highlight critical insights, filter out noise, and facilitate rapid validation of key assumptions. To illustrate this challenge, we present motivating examples in which AI reasoning models state their assumptions when deciding which external library to use and produce divergent reasoning paths and recommendations about security vulnerabilities, highlighting the need for an interface that prioritizes actionable insights while managing uncertainty and resolving conflicts. We then outline a research roadmap for integrating automated summarization, assumption validation, and multi-model conflict resolution into software engineering workflows. Achieving this vision will unlock the full potential of AI reasoning models to enable software engineers to make faster, more informed decisions without being overwhelmed by unnecessary detail. 
+
+**Abstract (ZH)**: Recent advances in AI reasoning models提供前所未有的透明度，使其决策过程得以清晰呈现，从而将传统黑盒系统转化为能逐步展示思考链条的模型。这一转变有望提高软件质量、可解释性和对AI增强开发的信任。然而，软件工程师通常没有足够的时间和认知资源来详细分析、验证和解读每一步AI生成的思考过程。如果没有有效的界面，这种透明度可能会成为负担而非助力。
+
+在本文中，我们提出了一种结构化AI推理模型与软件工程师互动的方式，以最大化信任、效率和决策能力。我们认为，仅仅展示AI的推理过程是不够的——软件工程师需要工具和框架来有选择性地突出关键见解、过滤噪声并快速验证关键假设。为说明这一挑战，我们呈现了激励性示例，展示了AI推理模型在决定使用哪个外部库时陈述其假设，并产生不同推理路径和关于安全漏洞的建议，突显了需要优先突出可操作性见解并管理不确定性及解决冲突的界面。随后，我们阐述了一条将自动总结、假设验证和多模型冲突解决整合到软件工程工作流中的研究路线图。实现这一愿景将释放AI推理模型的全部潜力，使软件工程师能够在不过度关注不必要的细节前提下做出更快、更明智的决策。 
+
+---
+# Challenges in Testing Large Language Model Based Software: A Faceted Taxonomy 
+
+**Title (ZH)**: 基于大型语言模型的软件测试挑战：一个多维度分类体系 
+
+**Authors**: Felix Dobslaw, Robert Feldt, Juyeon Yoon, Shin Yoo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00481)  
+
+**Abstract**: Large Language Models (LLMs) and Multi-Agent LLMs (MALLMs) introduce non-determinism unlike traditional or machine learning software, requiring new approaches to verifying correctness beyond simple output comparisons or statistical accuracy over test datasets.
+This paper presents a taxonomy for LLM test case design, informed by both the research literature, our experience, and open-source tools that represent the state of practice. We identify key variation points that impact test correctness and highlight open challenges that the research, industry, and open-source communities must address as LLMs become integral to software systems.
+Our taxonomy defines four facets of LLM test case design, addressing ambiguity in both inputs and outputs while establishing best practices. It distinguishes variability in goals, the system under test, and inputs, and introduces two key oracle types: atomic and aggregated. Our mapping indicates that current tools insufficiently account for these variability points, highlighting the need for closer collaboration between academia and practitioners to improve the reliability and reproducibility of LLM testing. 
+
+**Abstract (ZH)**: 大型语言模型（LLMs）和多代理大型语言模型（MALLMs）引入了不同于传统或机器学习软件的不确定性，需要超越简单输出比对或测试数据集上统计准确性的新验证方法。本文提出了一种LLM测试案例设计的分类体系，参考了研究文献、我们的经验和开源工具代表的最佳实践。我们识别出影响测试正确性的关键变化点，并强调随着LLMs成为软件系统的核心组成部分，研究界、工业界和开源社区需要共同解决的关键挑战。本文的分类体系定义了四种LLM测试案例设计的维度，解决了输入和输出的模糊性，并建立了最佳实践。它区分了目标、被测系统和输入的变异性，并引入了两种关键的判别方法：原子判别法和聚合判别法。我们的映射表明，当前工具未能充分考虑到这些变异性点，突显了学术界和实践者之间需要更紧密合作以提高LLM测试的可靠性和可重复性的重要性。 
+
+---
+# Leveraging Compute-in-Memory for Efficient Generative Model Inference in TPUs 
+
+**Title (ZH)**: 基于计算集成内存的TPU高效生成模型推理 
+
+**Authors**: Zhantong Zhu, Hongou Li, Wenjie Ren, Meng Wu, Le Ye, Ru Huang, Tianyu Jia  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00461)  
+
+**Abstract**: With the rapid advent of generative models, efficiently deploying these models on specialized hardware has become critical. Tensor Processing Units (TPUs) are designed to accelerate AI workloads, but their high power consumption necessitates innovations for improving efficiency. Compute-in-memory (CIM) has emerged as a promising paradigm with superior area and energy efficiency. In this work, we present a TPU architecture that integrates digital CIM to replace conventional digital systolic arrays in matrix multiply units (MXUs). We first establish a CIM-based TPU architecture model and simulator to evaluate the benefits of CIM for diverse generative model inference. Building upon the observed design insights, we further explore various CIM-based TPU architectural design choices. Up to 44.2% and 33.8% performance improvement for large language model and diffusion transformer inference, and 27.3x reduction in MXU energy consumption can be achieved with different design choices, compared to the baseline TPUv4i architecture. 
+
+**Abstract (ZH)**: 随着生成模型的迅速发展，高效地将这些模型部署在专用硬件上变得至关重要。Tensor Processing Units (TPU) 设计用于加速AI工作负载，但由于其高功耗，需要创新来提高效率。计算存储一体（CIM）作为一种前景广阔的范式，具有卓越的面积和能量效率。在本工作中，我们提出了一种TPU架构，将数字CIM集成到矩阵乘法单元（MXU）中以替代传统的数字 systolic 数组。首先，我们建立了一种基于CIM的TPU架构模型和模拟器，以评估CIM在不同生成模型推理中的优势。基于观察到的设计见解，我们进一步探索了各种基于CIM的TPU架构设计选择。与基线TPUv4i架构相比，不同的设计选择可实现高达44.2%的大语言模型和扩散变换器推理性能提升，33.8%的MXU能量消耗减少，以及27.3倍的MXU能量消耗降低。 
+
+---
+# PodAgent: A Comprehensive Framework for Podcast Generation 
+
+**Title (ZH)**: PodAgent：播客生成的综合框架 
+
+**Authors**: Yujia Xiao, Lei He, Haohan Guo, Fenglong Xie, Tan Lee  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00455)  
+
+**Abstract**: Existing Existing automatic audio generation methods struggle to generate podcast-like audio programs effectively. The key challenges lie in in-depth content generation, appropriate and expressive voice production. This paper proposed PodAgent, a comprehensive framework for creating audio programs. PodAgent 1) generates informative topic-discussion content by designing a Host-Guest-Writer multi-agent collaboration system, 2) builds a voice pool for suitable voice-role matching and 3) utilizes LLM-enhanced speech synthesis method to generate expressive conversational speech. Given the absence of standardized evaluation criteria for podcast-like audio generation, we developed comprehensive assessment guidelines to effectively evaluate the model's performance. Experimental results demonstrate PodAgent's effectiveness, significantly surpassing direct GPT-4 generation in topic-discussion dialogue content, achieving an 87.4% voice-matching accuracy, and producing more expressive speech through LLM-guided synthesis. Demo page: this https URL. Source code: this https URL. 
+
+**Abstract (ZH)**: 现有自动音频生成方法在生成播客风格的音频节目时面临诸多挑战，特别是在深入内容生成和恰当有表现力的语音生产方面。本文提出了PodAgent，一个全面的音频节目创作框架。PodAgent通过设计主持人-嘉宾-撰稿人多代理协作系统来生成信息性主题讨论内容，构建语音池以实现合适的声音角色匹配，并利用增强语言模型的语音合成方法生成富有表现力的对话语音。鉴于缺乏播客风格音频生成的标准化评估标准，我们制定了全面的评估指南以有效评估模型性能。实验结果表明，PodAgent在主题讨论对话内容生成方面优于直接使用GPT-4生成方法，语音匹配准确率为87.4%，并通过语言模型引导合成生成更具表现力的语音。演示页面：this https URL. 代码仓库：this https URL。 
+
+---
+# Rehearse With User: Personalized Opinion Summarization via Role-Playing based on Large Language Models 
+
+**Title (ZH)**: 基于大型语言模型的角色扮演进行个性化意见总结训练 
+
+**Authors**: Yanyue Zhang, Yulan He, Deyu Zhou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00449)  
+
+**Abstract**: Personalized opinion summarization is crucial as it considers individual user interests while generating product summaries. Recent studies show that although large language models demonstrate powerful text summarization and evaluation capabilities without the need for training data, they face difficulties in personalized tasks involving long texts. To address this, \textbf{Rehearsal}, a personalized opinion summarization framework via LLMs-based role-playing is proposed. Having the model act as the user, the model can better understand the user's personalized needs. Additionally, a role-playing supervisor and practice process are introduced to improve the role-playing ability of the LLMs, leading to a better expression of user needs. Furthermore, through suggestions from virtual users, the summary generation is intervened, ensuring that the generated summary includes information of interest to the user, thus achieving personalized summary generation. Experiment results demonstrate that our method can effectively improve the level of personalization in large model-generated summaries. 
+
+**Abstract (ZH)**: 个性化意见总结至关重要，因为它能在生成产品总结时考虑个人用户兴趣。近期研究表明，尽管大语言模型无需训练数据即可表现出强大的文本总结和评估能力，但在涉及长文本的个性化任务中仍面临困难。为了解决这一问题，提出了一种基于大语言模型角色扮演的个性化意见总结框架——\textbf{Rehearsal}。让模型扮演用户的角色，可以使模型更好地理解用户的个性化需求。此外，引入了角色扮演监督者和练习过程，以提高大语言模型的角色扮演能力，并更好地表达用户需求。通过虚拟用户的建议，干预摘要生成过程，确保生成的摘要包含用户的兴趣信息，从而实现个性化摘要生成。实验结果表明，我们的方法可以有效提高大模型生成摘要的个性化水平。 
+
+---
+# HalCECE: A Framework for Explainable Hallucination Detection through Conceptual Counterfactuals in Image Captioning 
+
+**Title (ZH)**: HalCECE：一种基于概念反事实语句的可解释幻觉检测框架在图像标题生成中的应用 
+
+**Authors**: Maria Lymperaiou, Giorgos FIlandrianos, Angeliki Dimitriou, Athanasios Voulodimos, Giorgos Stamou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00436)  
+
+**Abstract**: In the dynamic landscape of artificial intelligence, the exploration of hallucinations within vision-language (VL) models emerges as a critical frontier. This work delves into the intricacies of hallucinatory phenomena exhibited by widely used image captioners, unraveling interesting patterns. Specifically, we step upon previously introduced techniques of conceptual counterfactual explanations to address VL hallucinations. The deterministic and efficient nature of the employed conceptual counterfactuals backbone is able to suggest semantically minimal edits driven by hierarchical knowledge, so that the transition from a hallucinated caption to a non-hallucinated one is performed in a black-box manner. HalCECE, our proposed hallucination detection framework is highly interpretable, by providing semantically meaningful edits apart from standalone numbers, while the hierarchical decomposition of hallucinated concepts leads to a thorough hallucination analysis. Another novelty tied to the current work is the investigation of role hallucinations, being one of the first works to involve interconnections between visual concepts in hallucination detection. Overall, HalCECE recommends an explainable direction to the crucial field of VL hallucination detection, thus fostering trustworthy evaluation of current and future VL systems. 
+
+**Abstract (ZH)**: 在人工智能动态landscape中，视觉-语言模型中的幻觉探索 emerged as a critical frontier. 本文探讨了广泛使用的图像描述器中展现的幻觉现象的复杂性，揭示了有趣的模式。具体地，我们利用先前介绍的概念反事实解释技术来应对视觉-语言幻觉。所采用的概念反事实解释框架具有确定性和高效性，能够提供由层次知识驱动的语义最小编辑，从而使幻觉描述向非幻觉描述的转换在黑箱方式下进行。HalCECE，我们提出的一种幻觉检测框架，具有高可解释性，不仅提供语义相关的编辑，还通过分级分解幻觉概念，实现了全面的幻觉分析。本文的另一项 novelty 是对角色幻觉的调查，这可能是首次将视觉概念之间的相互作用纳入幻觉检测的研究之一。总体而言，HalCECE 为视觉-语言幻觉检测这一关键领域提供了一个可解释的方向，从而促进当前和未来视觉-语言系统的可信评估。 
+
+---
+# Unveiling AI's Threats to Child Protection: Regulatory efforts to Criminalize AI-Generated CSAM and Emerging Children's Rights Violations 
+
+**Title (ZH)**: 揭示AI对儿童保护的威胁：监管努力以刑事手段打击AI生成的CSAM及新兴的儿童权利侵犯行为 
+
+**Authors**: Emmanouela Kokolaki, Paraskevi Fragopoulou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00433)  
+
+**Abstract**: This paper aims to present new alarming trends in the field of child sexual abuse through imagery, as part of SafeLine's research activities in the field of cybercrime, child sexual abuse material and the protection of children's rights to safe online experiences. It focuses primarily on the phenomenon of AI-generated CSAM, sophisticated ways employed for its production which are discussed in dark web forums and the crucial role that the open-source AI models play in the evolution of this overwhelming phenomenon. The paper's main contribution is a correlation analysis between the hotline's reports and domain names identified in dark web forums, where users' discussions focus on exchanging information specifically related to the generation of AI-CSAM. The objective was to reveal the close connection of clear net and dark web content, which was accomplished through the use of the ATLAS dataset of the Voyager system. Furthermore, through the analysis of a set of posts' content drilled from the above dataset, valuable conclusions on forum members' techniques employed for the production of AI-generated CSAM are also drawn, while users' views on this type of content and routes followed in order to overcome technological barriers set with the aim of preventing malicious purposes are also presented. As the ultimate contribution of this research, an overview of the current legislative developments in all country members of the INHOPE organization and the issues arising in the process of regulating the AI- CSAM is presented, shedding light in the legal challenges regarding the regulation and limitation of the phenomenon. 
+
+**Abstract (ZH)**: 本文旨在通过视觉图像呈现儿童性虐待领域的新令人震惊的趋势，作为SafeLine在网络安全犯罪、儿童性虐待材料和保护儿童安全在线体验权利研究活动的一部分。主要探讨了AI生成的儿童性虐待材料（AI-CSAM）的现象、其生产中采用的复杂方法以及在暗网论坛讨论的开放源代码AI模型的关键作用。论文的主要贡献是对热线报告和暗网论坛中识别的域名进行相关性分析，其中用户讨论集中在交换与AI-CSAM生成相关的信息。研究通过使用Voyager系统的ATLAS数据集揭示了明网和暗网内容之间的密切联系，并通过对数据集一系列帖子内容的分析，得出论坛成员生产AI生成CSAM所采用的技术手段结论，同时展示了用户对这类内容的看法以及克服技术障碍、防止恶意用途的途径。该研究最终贡献包括概述INHOPE组织所有成员国当前关于AI-CSAM的立法发展情况及其在监管过程中的问题，揭示了对该现象进行监管和限制所面临的法律挑战。 
+
+---
+# Language Model Mapping in Multimodal Music Learning: A Grand Challenge Proposal 
+
+**Title (ZH)**: 多模态音乐学习中的语言模型映射：一个重大挑战建议 
+
+**Authors**: Daniel Chin, Gus Xia  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00427)  
+
+**Abstract**: We have seen remarkable success in representation learning and language models (LMs) using deep neural networks. Many studies aim to build the underlying connections among different modalities via the alignment and mappings at the token or embedding level, but so far, most methods are very data-hungry, limiting their performance in domains such as music where paired data are less abundant. We argue that the embedding alignment is only at the surface level of multimodal alignment. In this paper, we propose a grand challenge of \textit{language model mapping} (LMM), i.e., how to map the essence implied in the LM of one domain to the LM of another domain under the assumption that LMs of different modalities are tracking the same underlying phenomena. We first introduce a basic setup of LMM, highlighting the goal to unveil a deeper aspect of cross-modal alignment as well as to achieve more sample-efficiency learning. We then discuss why music is an ideal domain in which to conduct LMM research. After that, we connect LMM in music with a more general and challenging scientific problem of \textit{learning to take actions based on both sensory input and abstract symbols}, and in the end, present an advanced version of the challenge problem setup. 
+
+**Abstract (ZH)**: 语言模型映射：跨域语言模型之间的本质映射 
+
+---
+# Auto-encoding Molecules: Graph-Matching Capabilities Matter 
+
+**Title (ZH)**: 自动编码分子：图匹配能力很重要 
+
+**Authors**: Magnus Cunow, Gerrit Großmann  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00426)  
+
+**Abstract**: Autoencoders are effective deep learning models that can function as generative models and learn latent representations for downstream tasks. The use of graph autoencoders - with both encoder and decoder implemented as message passing networks - is intriguing due to their ability to generate permutation-invariant graph representations. However, this approach faces difficulties because decoding a graph structure from a single vector is challenging, and comparing input and output graphs requires an effective permutation-invariant similarity measure. As a result, many studies rely on approximate methods.
+In this work, we explore the effect of graph matching precision on the training behavior and generation capabilities of a Variational Autoencoder (VAE). Our contribution is two-fold: (1) we propose a transformer-based message passing graph decoder as an alternative to a graph neural network decoder, that is more robust and expressive by leveraging global attention mechanisms. (2) We show that the precision of graph matching has significant impact on training behavior and is essential for effective de novo (molecular) graph generation.
+Code is available at this https URL 
+
+**Abstract (ZH)**: 基于图配准精度的变分自动编码器训练行为及生成能力研究：提出基于变换器的图传递解码器并探讨图配准精度的影响 
+
+---
+# A physics-informed Bayesian optimization method for rapid development of electrical machines 
+
+**Title (ZH)**: 基于物理信息的贝叶斯优化方法用于电气机器的快速开发 
+
+**Authors**: Pedram Asef, Christopher Vagg  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00420)  
+
+**Abstract**: Advanced slot and winding designs are imperative to create future high performance electrical machines (EM). As a result, the development of methods to design and improve slot filling factor (SFF) has attracted considerable research. Recent developments in manufacturing processes, such as additive manufacturing and alternative materials, has also highlighted a need for novel high-fidelity design techniques to develop high performance complex geometries and topologies. This study therefore introduces a novel physics-informed machine learning (PIML) design optimization process for improving SFF in traction electrical machines used in electric vehicles. A maximum entropy sampling algorithm (MESA) is used to seed a physics-informed Bayesian optimization (PIBO) algorithm, where the target function and its approximations are produced by Gaussian processes (GP)s. The proposed PIBO-MESA is coupled with a 2D finite element model (FEM) to perform a GP-based surrogate and provide the first demonstration of the optimal combination of complex design variables for an electrical machine. Significant computational gains were achieved using the new PIBO-MESA approach, which is 45% faster than existing stochastic methods, such as the non-dominated sorting genetic algorithm II (NSGA-II). The FEM results confirm that the new design optimization process and keystone shaped wires lead to a higher SFF (i.e. by 20%) and electromagnetic improvements (e.g. maximum torque by 12%) with similar resistivity. The newly developed PIBO-MESA design optimization process therefore presents significant benefits in the design of high-performance electric machines, with reduced development time and costs. 
+
+**Abstract (ZH)**: 先进的槽型和绕组设计对于创建未来的高性能电气机器至关重要。因此，设计和提高槽填充因数（SFF）的方法的研究引起了广泛关注。制造工艺的 recent 发展，如增材制造和替代材料，也强调了需要新型高保真设计技术来开发高性能复杂几何形状和拓扑结构。因此，本研究提出了一种新型物理信息机器学习（PIML）设计优化过程，以提高用于电动汽车牵引电气机器的 SFF。最大熵采样算法（MESA）用于初始化物理信息贝叶斯优化（PIBO）算法，其中目标函数及其近似值由高斯过程（GP）生成。提出的 PIBO-MESA 与二维有限元模型（FEM）耦合，以执行基于高斯过程的元模型，并首次展示了电气机器复杂设计变量的最佳组合。与现有的非支配排序遗传算法 II（NSGA-II）等随机方法相比，新提出的 PIBO-MESA 方法在计算上快45%。有限元结果证实，新的设计优化过程和关键形状的导线可提高 SFF（即提高20%）和电磁性能（例如最大扭矩提高12%）而电阻率相似。因此，新开发的 PIBO-MESA 设计优化过程在高性能电气机器的设计中具有显著优势，减少了开发时间和成本。 
+
+---
+# Breaking the Loop: Detecting and Mitigating Denial-of-Service Vulnerabilities in Large Language Models 
+
+**Title (ZH)**: 打破循环：检测和缓解大型语言模型中的拒绝服务漏洞 
+
+**Authors**: Junzhe Yu, Yi Liu, Huijia Sun, Ling Shi, Yuqi Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00416)  
+
+**Abstract**: Large Language Models (LLMs) have significantly advanced text understanding and generation, becoming integral to applications across education, software development, healthcare, entertainment, and legal services. Despite considerable progress in improving model reliability, latency remains under-explored, particularly through recurrent generation, where models repeatedly produce similar or identical outputs, causing increased latency and potential Denial-of-Service (DoS) vulnerabilities.
+We propose RecurrentGenerator, a black-box evolutionary algorithm that efficiently identifies recurrent generation scenarios in prominent LLMs like LLama-3 and GPT-4o. Additionally, we introduce RecurrentDetector, a lightweight real-time classifier trained on activation patterns, achieving 95.24% accuracy and an F1 score of 0.87 in detecting recurrent loops. Our methods provide practical solutions to mitigate latency-related vulnerabilities, and we publicly share our tools and data to support further research. 
+
+**Abstract (ZH)**: 大型语言模型（LLMs）在文本理解和生成方面取得了显著进步，成为教育、软件开发、医疗保健、娱乐和法律服务等领域的关键组成部分。尽管在提高模型可靠性方面取得了显着进展，但延迟问题仍被忽视，尤其是在循环生成中，模型反复生成相似或相同的输出，导致延迟增加和潜在的服务中断（DoS）漏洞。
+
+我们提出了一种名为RecurrentGenerator的黑盒进化算法，能够有效地识别出LLaMA-3和GPT-4o等 prominent LLMs 中的循环生成场景。此外，我们还引入了一种轻量级的实时分类器RecurrentDetector，基于激活模式进行训练，其检测循环循环的准确率为95.24%，F1分为0.87。我们的方法提供了缓解延迟相关漏洞的实际解决方案，并且我们公开分享了我们的工具和数据以支持进一步的研究。 
+
+---
+# Smoothing Grounding and Reasoning for MLLM-Powered GUI Agents with Query-Oriented Pivot Tasks 
+
+**Title (ZH)**: 面向查询导向枢纽任务的LLM驱动GUI代理的平滑对接与推理 
+
+**Authors**: Zongru Wu, Pengzhou Cheng, Zheng Wu, Tianjie Ju, Zhuosheng Zhang, Gongshen Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00401)  
+
+**Abstract**: Perception-enhanced pre-training, particularly through grounding techniques, is widely adopted to enhance the performance of graphical user interface (GUI) agents. However, in resource-constrained scenarios, the format discrepancy between coordinate-oriented grounding and action-oriented reasoning limits the effectiveness of grounding for reasoning tasks. To address this challenge, we propose a query-oriented pivot approach called query inference, which serves as a bridge between GUI grounding and reasoning. By inferring potential user queries from a screenshot and its associated element coordinates, query inference improves the understanding of coordinates while aligning more closely with reasoning tasks. Experimental results show that query inference outperforms previous grounding techniques under the same training data scale. Notably, query inference achieves comparable or even better performance to large-scale grounding-enhanced OS-Atlas with less than 0.1% of training data. Furthermore, we explore the impact of reasoning formats and demonstrate that integrating additional semantic information into the input further boosts reasoning performance. The code is publicly available athttps://github.com/ZrW00/GUIPivot. 
+
+**Abstract (ZH)**: 基于查询导向的中间表示在图形用户界面代理中的应用：通过接地技术和增强预训练提升性能 
+
+---
+# Reservoir Network with Structural Plasticity for Human Activity Recognition 
+
+**Title (ZH)**: 具有结构可塑性的蓄水池网络的人类活动识别 
+
+**Authors**: Abdullah M. Zyarah, Alaa M. Abdul-Hadi, Dhireesha Kudithipudi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00393)  
+
+**Abstract**: The unprecedented dissemination of edge devices is accompanied by a growing demand for neuromorphic chips that can process time-series data natively without cloud support. Echo state network (ESN) is a class of recurrent neural networks that can be used to identify unique patterns in time-series data and predict future events. It is known for minimal computing resource requirements and fast training, owing to the use of linear optimization solely at the readout stage. In this work, a custom-design neuromorphic chip based on ESN targeting edge devices is proposed. The proposed system supports various learning mechanisms, including structural plasticity and synaptic plasticity, locally on-chip. This provides the network with an additional degree of freedom to continuously learn, adapt, and alter its structure and sparsity level, ensuring high performance and continuous stability. We demonstrate the performance of the proposed system as well as its robustness to noise against real-world time-series datasets while considering various topologies of data movement. An average accuracy of 95.95% and 85.24% are achieved on human activity recognition and prosthetic finger control, respectively. We also illustrate that the proposed system offers a throughput of 6x10^4 samples/sec with a power consumption of 47.7mW on a 65nm IBM process. 
+
+**Abstract (ZH)**: 基于ESN的边缘设备定制神经形态芯片及其在时间序列数据处理中的性能与鲁棒性研究 
+
+---
+# Progressive Sparse Attention: Algorithm and System Co-design for Efficient Attention in LLM Serving 
+
+**Title (ZH)**: 渐进稀疏注意力：高效语言模型服务中算法与系统协同设计的稀疏注意力机制 
+
+**Authors**: Qihui Zhou, Peiqi Yin, Pengfei Zuo, James Cheng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00392)  
+
+**Abstract**: Processing long contexts has become a critical capability for modern large language models (LLMs). However, serving long-context LLMs comes with significant inference costs due to the high memory overhead of the key-value (KV) cache. Existing work leverages dynamic sparse attention algorithms (DSAes) to mitigate the KV cache overhead, but these algorithms rely on top-$k$ KV cache selection, which results in a trade-off between accuracy and efficiency. A larger $k$ improves accuracy but decreases efficiency, while a smaller $k$ boosts efficiency but compromises accuracy. To overcome this trade-off, this paper presents PSA, a $\underline{P}$rogressive $\underline{S}$parse $\underline{A}$ttention mechanism that integrates algorithmic innovations with system co-design to achieve both high inference accuracy and improved efficiency in LLM serving. The PSA algorithm adaptively adjusts the KV cache budget of different tokens and layers according to their real attention weight distributions, rather than relying on a fixed budget $k$. This enables high accuracy while minimizing KV cache usage. To further enhance execution efficiency, we introduce a pipelined iteration scheme that reduces CPU-GPU interleaving and synchronization overhead during PSA computation. Additionally, we implement unified GPU memory management that optimizes PSA's memory utilization by accounting for uneven memory requirements across different model layers. Extensive experimental results demonstrate that PSA reduces KV cache usage for attention computation by up to 2.4$\times$ and 8.8$\times$, and increases end-to-end serving throughput by up to 1.4$\times$ and 2.0$\times$, compared to state-of-the-art DSAes and systems without sparse attention, respectively. 
+
+**Abstract (ZH)**: 渐进稀疏注意力机制：兼顾高效与高精度的长期上下文处理 
+
+---
+# BGM2Pose: Active 3D Human Pose Estimation with Non-Stationary Sounds 
+
+**Title (ZH)**: BGM2Pose: 基于非stationary声音的主动3D人体姿态估计 
+
+**Authors**: Yuto Shibata, Yusuke Oumi, Go Irie, Akisato Kimura, Yoshimitsu Aoki, Mariko Isogawa  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00389)  
+
+**Abstract**: We propose BGM2Pose, a non-invasive 3D human pose estimation method using arbitrary music (e.g., background music) as active sensing signals. Unlike existing approaches that significantly limit practicality by employing intrusive chirp signals within the audible range, our method utilizes natural music that causes minimal discomfort to humans. Estimating human poses from standard music presents significant challenges. In contrast to sound sources specifically designed for measurement, regular music varies in both volume and pitch. These dynamic changes in signals caused by music are inevitably mixed with alterations in the sound field resulting from human motion, making it hard to extract reliable cues for pose estimation. To address these challenges, BGM2Pose introduces a Contrastive Pose Extraction Module that employs contrastive learning and hard negative sampling to eliminate musical components from the recorded data, isolating the pose information. Additionally, we propose a Frequency-wise Attention Module that enables the model to focus on subtle acoustic variations attributable to human movement by dynamically computing attention across frequency bands. Experiments suggest that our method outperforms the existing methods, demonstrating substantial potential for real-world applications. Our datasets and code will be made publicly available. 
+
+**Abstract (ZH)**: BGM2Pose：使用任意音乐作为主动感知信号的无侵入性3D人体姿态估计方法 
+
+---
+# LNUCB-TA: Linear-nonlinear Hybrid Bandit Learning with Temporal Attention 
+
+**Title (ZH)**: LNUCB-TA：具有时间注意力的线性-非线性混合_bandit学习 
+
+**Authors**: Hamed Khosravi, Mohammad Reza Shafie, Ahmed Shoyeb Raihan, Srinjoy Das, Imtiaz Ahmed  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00387)  
+
+**Abstract**: Existing contextual multi-armed bandit (MAB) algorithms fail to effectively capture both long-term trends and local patterns across all arms, leading to suboptimal performance in environments with rapidly changing reward structures. They also rely on static exploration rates, which do not dynamically adjust to changing conditions. To overcome these limitations, we propose LNUCB-TA, a hybrid bandit model integrating a novel nonlinear component (adaptive k-Nearest Neighbors (k-NN)) for reducing time complexity, alongside a global-and-local attention-based exploration mechanism. Our approach uniquely combines linear and nonlinear estimation techniques, with the nonlinear module dynamically adjusting k based on reward variance to enhance spatiotemporal pattern recognition. This reduces the likelihood of selecting suboptimal arms while improving reward estimation accuracy and computational efficiency. The attention-based mechanism ranks arms by past performance and selection frequency, dynamically adjusting exploration and exploitation in real time without requiring manual tuning of exploration rates. By integrating global attention (assessing all arms collectively) and local attention (focusing on individual arms), LNUCB-TA efficiently adapts to temporal and spatial complexities. Empirical results show LNUCB-TA significantly outperforms state-of-the-art linear, nonlinear, and hybrid bandits in cumulative and mean reward, convergence, and robustness across different exploration rates. Theoretical analysis further confirms its reliability with a sub-linear regret bound. 
+
+**Abstract (ZH)**: LNUCB-TA：结合非线性组件的全局-局部注意力多方探索模型 
+
+---
+# A Survey of Adversarial Defenses in Vision-based Systems: Categorization, Methods and Challenges 
+
+**Title (ZH)**: 基于视觉系统的对抗防御综述：分类、方法与挑战 
+
+**Authors**: Nandish Chattopadhyay, Abdul Basit, Bassem Ouni, Muhammad Shafique  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00384)  
+
+**Abstract**: Adversarial attacks have emerged as a major challenge to the trustworthy deployment of machine learning models, particularly in computer vision applications. These attacks have a varied level of potency and can be implemented in both white box and black box approaches. Practical attacks include methods to manipulate the physical world and enforce adversarial behaviour by the corresponding target neural network models. Multiple different approaches to mitigate different kinds of such attacks are available in the literature, each with their own advantages and limitations. In this survey, we present a comprehensive systematization of knowledge on adversarial defenses, focusing on two key computer vision tasks: image classification and object detection. We review the state-of-the-art adversarial defense techniques and categorize them for easier comparison. In addition, we provide a schematic representation of these categories within the context of the overall machine learning pipeline, facilitating clearer understanding and benchmarking of defenses. Furthermore, we map these defenses to the types of adversarial attacks and datasets where they are most effective, offering practical insights for researchers and practitioners. This study is necessary for understanding the scope of how the available defenses are able to address the adversarial threats, and their shortcomings as well, which is necessary for driving the research in this area in the most appropriate direction, with the aim of building trustworthy AI systems for regular practical use-cases. 
+
+**Abstract (ZH)**: adversarial 攻击已成为机器学习模型可靠部署的重大挑战，特别是在计算机视觉应用中。这些攻击具有不同的效力水平，并且可以在白盒和黑盒方法中实施。实用的攻击包括用于操控物理世界并强制相应目标神经网络模型表现出对抗行为的方法。文献中提供了多种不同的方法来减轻不同类型的此类攻击，每种方法均有其自身的优势和局限性。在本文综述中，我们对对抗防御的知识进行了综合整理，重点关注两类关键的计算机视觉任务：图像分类和对象检测。我们回顾了最先进的对抗防御技术，并对其进行分类以便于比较。此外，我们以整个机器学习流程为背景提供了这些分类的示意表示，有助于更好地理解和基准测试防御方法。此外，我们将这些防御与它们在最有效的攻击类型和数据集中进行映射，为研究人员和从业者提供了实用的见解。对于理解现有防御措施能够如何应对对抗威胁及其局限性，以及引导该领域研究方向，以构建适用于常规实际应用场景的可信人工智能系统，本研究是必要的。 
+
+---
+# Theoretical Insights in Model Inversion Robustness and Conditional Entropy Maximization for Collaborative Inference Systems 
+
+**Title (ZH)**: 模型反转稳健性与条件熵最大化在协作推理系统中的理论洞察 
+
+**Authors**: Song Xia, Yi Yu, Wenhan Yang, Meiwen Ding, Zhuo Chen, Lingyu Duan, Alex C. Kot, Xudong Jiang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00383)  
+
+**Abstract**: By locally encoding raw data into intermediate features, collaborative inference enables end users to leverage powerful deep learning models without exposure of sensitive raw data to cloud servers. However, recent studies have revealed that these intermediate features may not sufficiently preserve privacy, as information can be leaked and raw data can be reconstructed via model inversion attacks (MIAs). Obfuscation-based methods, such as noise corruption, adversarial representation learning, and information filters, enhance the inversion robustness by obfuscating the task-irrelevant redundancy empirically. However, methods for quantifying such redundancy remain elusive, and the explicit mathematical relation between this redundancy minimization and inversion robustness enhancement has not yet been established. To address that, this work first theoretically proves that the conditional entropy of inputs given intermediate features provides a guaranteed lower bound on the reconstruction mean square error (MSE) under any MIA. Then, we derive a differentiable and solvable measure for bounding this conditional entropy based on the Gaussian mixture estimation and propose a conditional entropy maximization (CEM) algorithm to enhance the inversion robustness. Experimental results on four datasets demonstrate the effectiveness and adaptability of our proposed CEM; without compromising feature utility and computing efficiency, plugging the proposed CEM into obfuscation-based defense mechanisms consistently boosts their inversion robustness, achieving average gains ranging from 12.9\% to 48.2\%. Code is available at \href{this https URL}{this https URL}. 
+
+**Abstract (ZH)**: 通过局部编码原始数据为中间特征，协作推理使终端用户能够利用强大的深度学习模型，同时避免将敏感原始数据暴露给云服务器。然而，近期研究发现，这些中间特征可能无法充分保护隐私，因为信息可以通过模型反转攻击（MIA）被泄露并重建原始数据。基于模糊化的方法，如噪声污染、对抗性表示学习和信息过滤，通过经验性地模糊化与任务无关的冗余来增强反转鲁棒性。然而，量化这种冗余的方法仍然难以捉摸，这一冗余最小化与反转鲁棒性增强之间的显式数学关系仍未建立。为此，本文首先理论上证明输入给定中间特征的条件熵提供了任何MIA下重建均方误差（MSE）的有保证的下界。然后，我们基于高斯混合估计推导出一种可微和可求解的边界度量，并提出条件熵最大化（CEM）算法来增强反转鲁棒性。在四个数据集上的实验结果证明了我们提出的CEM的有效性和适应性；在不牺牲特征效用和计算效率的情况下，将提出的CEM嵌入到基于模糊化的防御机制中，可以一致地提高其反转鲁棒性，平均增幅从12.9%到48.2%不等。代码可在https://this-url-available-only-for-code-sharing.com/ 获取。 
+
+---
+# Conditioning on Local Statistics for Scalable Heterogeneous Federated Learning 
+
+**Title (ZH)**: 基于局部统计条件化的大规模异构联邦学习 
+
+**Authors**: Rickard Brännvall  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00378)  
+
+**Abstract**: Federated learning is a distributed machine learning approach where multiple clients collaboratively train a model without sharing their local data, which contributes to preserving privacy. A challenge in federated learning is managing heterogeneous data distributions across clients, which can hinder model convergence and performance due to the need for the global model to generalize well across diverse local datasets. We propose to use local characteristic statistics, by which we mean some statistical properties calculated independently by each client using only their local training dataset. These statistics, such as means, covariances, and higher moments, are used to capture the characteristics of the local data distribution. They are not shared with other clients or a central node. During training, these local statistics help the model learn how to condition on the local data distribution, and during inference, they guide the client's predictions. Our experiments show that this approach allows for efficient handling of heterogeneous data across the federation, has favorable scaling compared to approaches that directly try to identify peer nodes that share distribution characteristics, and maintains privacy as no additional information needs to be communicated. 
+
+**Abstract (ZH)**: 联邦学习是一种分布式机器学习方法，其中多个客户端协作训练模型而不共享其本地数据，从而有助于保护隐私。联邦学习中的一个挑战是管理客户端之间的异构数据分布，这可能导致全球模型在多样化的本地数据集上难以收敛和表现出色。我们提出了使用局部特征统计量的方法，即每个客户端仅使用其本地训练数据集独立计算的一些统计性质。这些统计量如均值、协方差和高阶矩用于捕捉局部数据分布的特征。它们不会与其他客户端或中心节点共享。在训练过程中，这些局部统计量帮助模型学习如何根据局部数据分布进行调整，而在推理过程中，它们指导客户端的预测。我们的实验表明，这种方法能够有效处理联邦中的异构数据，与直接尝试识别具有相似分布特性的对等节点的方法相比具有更 favorable的扩展性，并且能够维护隐私，因为不需要额外的信息交流。 
+
+---
+# MIRROR: Multi-Modal Pathological Self-Supervised Representation Learning via Modality Alignment and Retention 
+
+**Title (ZH)**: MIRROR：模态对齐与保留的多模态病理自我监督表示学习 
+
+**Authors**: Tianyi Wang, Jianan Fan, Dingxin Zhang, Dongnan Liu, Yong Xia, Heng Huang, Weidong Cai  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00374)  
+
+**Abstract**: Histopathology and transcriptomics are fundamental modalities in oncology, encapsulating the morphological and molecular aspects of the disease. Multi-modal self-supervised learning has demonstrated remarkable potential in learning pathological representations by integrating diverse data sources. Conventional multi-modal integration methods primarily emphasize modality alignment, while paying insufficient attention to retaining the modality-specific structures. However, unlike conventional scenarios where multi-modal inputs share highly overlapping features, histopathology and transcriptomics exhibit pronounced heterogeneity, offering orthogonal yet complementary insights. Histopathology provides morphological and spatial context, elucidating tissue architecture and cellular topology, whereas transcriptomics delineates molecular signatures through gene expression patterns. This inherent disparity introduces a major challenge in aligning them while maintaining modality-specific fidelity. To address these challenges, we present MIRROR, a novel multi-modal representation learning method designed to foster both modality alignment and retention. MIRROR employs dedicated encoders to extract comprehensive features for each modality, which is further complemented by a modality alignment module to achieve seamless integration between phenotype patterns and molecular profiles. Furthermore, a modality retention module safeguards unique attributes from each modality, while a style clustering module mitigates redundancy and enhances disease-relevant information by modeling and aligning consistent pathological signatures within a clustering space. Extensive evaluations on TCGA cohorts for cancer subtyping and survival analysis highlight MIRROR's superior performance, demonstrating its effectiveness in constructing comprehensive oncological feature representations and benefiting the cancer diagnosis. 
+
+**Abstract (ZH)**: 病理组织学和转录组学是肿瘤学中的基本模态，涵盖了疾病的空间和分子方面。多模态自监督学习通过整合多种数据源展示了在学习病理表征方面的显著潜力。传统的多模态集成方法主要强调模态对齐，而对保留模态特异性结构关注不足。然而，与传统场景中多模态输入共享高度重叠特征不同，病理组织学和转录组学表现出明显的异质性，提供的是相互补充而非重叠的见解。病理组织学提供了组织形态和空间的背景，揭示了组织结构和细胞拓扑，而转录组学则通过基因表达模式勾勒出分子特征。这种固有的差异性为在保持模态特定忠实性的同时对齐它们带来了重大挑战。为应对这些挑战，我们提出了一种名为MIRROR的新颖多模态表示学习方法，旨在促进模态对齐和保留。MIRROR采用专用编码器提取每个模态的全面特征，并通过模态对齐模块实现表型模式与分子谱型之间的无缝集成。此外，模态保留模块保护每个模态的独特属性，同时通过建模和对齐群集中一致的病理特征来缓解冗余并增强与疾病相关的信息。在TCGA队列中对癌症亚型分类和生存分析的广泛评估表明，MIRROR表现出优越的性能，证明了其在构建全面的肿瘤学特征表示和促进癌症诊断方面的有效性。 
+
+---
+# Nucleolus Credit Assignment for Effective Coalitions in Multi-agent Reinforcement Learning 
+
+**Title (ZH)**: 核质信用分配在多智能体强化学习中有效联盟的构建 
+
+**Authors**: Yugu Li, Zehong Cao, Jianglin Qiao, Siyi Hu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00372)  
+
+**Abstract**: In cooperative multi-agent reinforcement learning (MARL), agents typically form a single grand coalition based on credit assignment to tackle a composite task, often resulting in suboptimal performance. This paper proposed a nucleolus-based credit assignment grounded in cooperative game theory, enabling the autonomous partitioning of agents into multiple small coalitions that can effectively identify and complete subtasks within a larger composite task. Specifically, our designed nucleolus Q-learning could assign fair credits to each agent, and the nucleolus Q-operator provides theoretical guarantees with interpretability for both learning convergence and the stability of the formed small coalitions. Through experiments on Predator-Prey and StarCraft scenarios across varying difficulty levels, our approach demonstrated the emergence of multiple effective coalitions during MARL training, leading to faster learning and superior performance in terms of win rate and cumulative rewards especially in hard and super-hard environments, compared to four baseline methods. Our nucleolus-based credit assignment showed the promise for complex composite tasks requiring effective subteams of agents. 
+
+**Abstract (ZH)**: 基于核子博弈的信用分配在合作多智能体强化学习中的应用 
+
+---
+# AI-Augmented Thyroid Scintigraphy for Robust Classification 
+
+**Title (ZH)**: AI增强甲状腺闪烁成像的稳健分类 
+
+**Authors**: Maziar Sabouri, Ghasem Hajianfar, Alireza Rafiei Sardouei, Milad Yazdani, Azin Asadzadeh, Soroush Bagheri, Mohsen Arabi, Seyed Rasoul Zakavi, Emran Askari, Atena Aghaee, Dena Shahriari, Habib Zaidi, Arman Rahmim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00366)  
+
+**Abstract**: Thyroid scintigraphy is a key imaging modality for diagnosing thyroid disorders. Deep learning models for thyroid scintigraphy classification often face challenges due to limited and imbalanced datasets, leading to suboptimal generalization. In this study, we investigate the effectiveness of different data augmentation techniques including Stable Diffusion (SD), Flow Matching (FM), and Conventional Augmentation (CA) to enhance the performance of a ResNet18 classifier for thyroid condition classification. Our results showed that FM-based augmentation consistently outperforms SD-based approaches, particularly when combined with original (O) data and CA (O+FM+CA), achieving both high accuracy and fair classification across Diffuse Goiter (DG), Nodular Goiter (NG), Normal (NL), and Thyroiditis (TI) cases. The Wilcoxon statistical analysis further validated the superiority of O+FM and its variants (O+FM+CA) over SD-based augmentations in most scenarios. These findings highlight the potential of FM-based augmentation as a superior approach for generating high-quality synthetic thyroid scintigraphy images and improving model generalization in medical image classification. 
+
+**Abstract (ZH)**: 甲状腺显像是一种用于诊断甲状腺疾病的关键成像技术。针对甲状腺显像分类的深度学习模型常常面临有限且不平衡的数据集挑战，导致泛化性能不佳。本研究探讨了包括稳定扩散(SD)、流匹配(FM)和传统增强(CA)在内的不同数据增强技术的有效性，以提高ResNet18分类器在甲状腺状况分类中的性能。结果显示，基于流匹配的增强方法始终优于基于稳定扩散的方法，尤其是在与原始数据和传统增强结合使用时(O+FM+CA)，能够实现高准确性和公平分类，适用于弥漫性甲状腺肿(DG)、结节性甲状腺肿(NG)、正常(NL)和甲状腺炎(TI)等情况。Wilcoxon统计分析进一步证实了在大多数情况下，基于原始数据和流匹配增强(O+FM)及其变种(O+FM+CA)优于基于稳定扩散的增强方法。这些发现突显了基于流匹配的增强方法在生成高质量合成甲状腺显像图像及提升医学图像分类模型泛化性能方面的潜在优势。 
+
+---
+# Octopus: Alleviating Hallucination via Dynamic Contrastive Decoding 
+
+**Title (ZH)**: 八脚章鱼：通过动态对比解码减轻幻觉效应 
+
+**Authors**: Wei Suo, Lijun Zhang, Mengyang Sun, Lin Yuanbo Wu, Peng Wang, Yanning Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00361)  
+
+**Abstract**: Large Vision-Language Models (LVLMs) have obtained impressive performance in visual content understanding and multi-modal reasoning. Unfortunately, these large models suffer from serious hallucination problems and tend to generate fabricated responses. Recently, several Contrastive Decoding (CD) strategies have been proposed to alleviate hallucination by introducing disturbed inputs. Although great progress has been made, these CD strategies mostly apply a one-size-fits-all approach for all input conditions. In this paper, we revisit this process through extensive experiments. Related results show that hallucination causes are hybrid and each generative step faces a unique hallucination challenge. Leveraging these meaningful insights, we introduce a simple yet effective Octopus-like framework that enables the model to adaptively identify hallucination types and create a dynamic CD workflow. Our Octopus framework not only outperforms existing methods across four benchmarks but also demonstrates excellent deployability and expansibility. Code is available at this https URL. 
+
+**Abstract (ZH)**: 大型多模态模型（LVLMs）在视觉内容理解和多模态推理方面取得了显著性能。不幸的是，这些大型模型面临严重的幻觉问题，倾向于生成虚构的响应。近期，提出了一些对比解码（CD）策略，通过引入扰动输入来缓解幻觉问题。尽管取得了显著进展，但这些CD策略大多采用一刀切的方法适用于所有输入条件。在本文中，我们通过广泛的实验重新审视了这一过程。相关结果表明，幻觉的成因是多重的，每个生成步骤面临着独特的幻觉挑战。借助这些有价值的认识，我们引入了一个简单而有效的类似八爪鱼的框架，使模型能够自适应地识别幻觉类型并创建动态CD工作流。我们的Octopus框架不仅在四个基准测试中优于现有方法，而且还展示了出色的可部署性和扩展性。代码可在以下链接获取：this https URL。 
+
+---
+# CRUPL: A Semi-Supervised Cyber Attack Detection with Consistency Regularization and Uncertainty-aware Pseudo-Labeling in Smart Grid 
+
+**Title (ZH)**: CRUPL：一种基于一致性正则化和不确定性感知伪标签的半监督智能电网网络攻击检测方法 
+
+**Authors**: Smruti P. Dash, Kedar V. Khandeparkar, Nipun Agrawal  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00358)  
+
+**Abstract**: The modern power grids are integrated with digital technologies and automation systems. The inclusion of digital technologies has made the smart grids vulnerable to cyber-attacks. Cyberattacks on smart grids can compromise data integrity and jeopardize the reliability of the power supply. Traditional intrusion detection systems often need help to effectively detect novel and sophisticated attacks due to their reliance on labeled training data, which may only encompass part of the spectrum of potential threats. This work proposes a semi-supervised method for cyber-attack detection in smart grids by leveraging the labeled and unlabeled measurement data. We implement consistency regularization and pseudo-labeling to identify deviations from expected behavior and predict the attack classes. We use a curriculum learning approach to improve pseudo-labeling performance, capturing the model uncertainty. We demonstrate the efficiency of the proposed method in detecting different types of cyberattacks, minimizing the false positives by implementing them on publicly available datasets. The method proposes a promising solution by improving the detection accuracy to 99% in the presence of unknown samples and significantly reducing false positives. 
+
+**Abstract (ZH)**: 现代电力网格集成了数字技术和自动化系统。数字技术的纳入使智能电网容易受到网络攻击。对智能电网的网络攻击可能损害数据 integrity 并危及电力供应的可靠性。传统的入侵检测系统由于依赖标记的训练数据，常常需要帮助来有效检测新型和复杂的攻击，而这些标记的训练数据可能只能涵盖潜在威胁的一小部分。本研究提出了一种半监督方法，通过利用标记和未标记的测量数据来检测智能电网的网络攻击。我们实现了一致性正则化和伪标签标注，以识别预期行为的偏差并预测攻击类别。我们采用序列学习方法来提高伪标签标注的性能，捕捉模型的不确定性。我们在公开可用的数据集上实施该方法，证明了所提方法在检测不同类型的网络攻击方面的效率，并通过降低假正例，将检测准确性提高到99%，特别是在面对未知样本时。该方法提出了一种有前景的解决方案，显著减少了假正例。 
+
+---
+# BERT-based model for Vietnamese Fact Verification Dataset 
+
+**Title (ZH)**: 基于BERT的越南语事实验证数据集模型 
+
+**Authors**: Bao Tran, T. N. Khanh, Khang Nguyen Tuong, Thien Dang, Quang Nguyen, Nguyen T. Thinh, Vo T. Hung  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00356)  
+
+**Abstract**: The rapid advancement of information and communication technology has facilitated easier access to information. However, this progress has also necessitated more stringent verification measures to ensure the accuracy of information, particularly within the context of Vietnam. This paper introduces an approach to address the challenges of Fact Verification using the Vietnamese dataset by integrating both sentence selection and classification modules into a unified network architecture. The proposed approach leverages the power of large language models by utilizing pre-trained PhoBERT and XLM-RoBERTa as the backbone of the network. The proposed model was trained on a Vietnamese dataset, named ISE-DSC01, and demonstrated superior performance compared to the baseline model across all three metrics. Notably, we achieved a Strict Accuracy level of 75.11\%, indicating a remarkable 28.83\% improvement over the baseline model. 
+
+**Abstract (ZH)**: 信息和通信技术的快速进步促进了信息的更容易获取，但这一进展也 necessitated 更严格的验证措施以确保信息的准确性，特别是在越南的背景下。本文提出了一种方法，通过将句子选择和分类模块集成到统一的网络架构中来应对事实验证挑战，该方法利用越南语数据集进行研究。所提出的方法利用预训练的 PhoBERT 和 XLM-RoBERTa 作为网络的骨干，该模型在名为 ISE-DSC01 的越南语数据集上进行训练，并在所有三个指标上均显示出了优于基线模型的性能。值得注意的是，我们实现了严格的准确率75.11%，比基线模型提高了28.83%。 
+
+---
+# Structured Reasoning for Fairness: A Multi-Agent Approach to Bias Detection in Textual Data 
+
+**Title (ZH)**: 结构化推理以公平性为目标：文本数据中偏见检测的多_agent方法 
+
+**Authors**: Tianyi Huang, Elsa Fan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00355)  
+
+**Abstract**: From disinformation spread by AI chatbots to AI recommendations that inadvertently reinforce stereotypes, textual bias poses a significant challenge to the trustworthiness of large language models (LLMs). In this paper, we propose a multi-agent framework that systematically identifies biases by disentangling each statement as fact or opinion, assigning a bias intensity score, and providing concise, factual justifications. Evaluated on 1,500 samples from the WikiNPOV dataset, the framework achieves 84.9% accuracy$\unicode{x2014}$an improvement of 13.0% over the zero-shot baseline$\unicode{x2014}$demonstrating the efficacy of explicitly modeling fact versus opinion prior to quantifying bias intensity. By combining enhanced detection accuracy with interpretable explanations, this approach sets a foundation for promoting fairness and accountability in modern language models. 
+
+**Abstract (ZH)**: 从AI聊天机器人传播的假信息到AI推荐无意中强化刻板印象，文本偏见对大型语言模型（LLMs）的信任度构成了重大挑战。本文提出了一种多智能体框架，该框架系统地通过将每个陈述区分为事实或意见、分配偏见强度评分并提供简洁的事实依据来识别偏见。在WikiNPOV数据集的1,500个样本上评估，该框架的准确率达到了84.9%，比零样本基线提高了13.0%，展示了在量化偏见强度之前明确建模事实与意见的有效性。通过结合增强的检测准确性和可解释的解释，该方法为促进现代语言模型中的公平性和可问责性奠定了基础。 
+
+---
+# MCNet: Monotonic Calibration Networks for Expressive Uncertainty Calibration in Online Advertising 
+
+**Title (ZH)**: MCNet：单调校准网络在在线广告中表达不确定性校准的研究 
+
+**Authors**: Quanyu Dai, Jiaren Xiao, Zhaocheng Du, Jieming Zhu, Chengxiao Luo, Xiao-Ming Wu, Zhenhua Dong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00334)  
+
+**Abstract**: In online advertising, uncertainty calibration aims to adjust a ranking model's probability predictions to better approximate the true likelihood of an event, e.g., a click or a conversion. However, existing calibration approaches may lack the ability to effectively model complex nonlinear relations, consider context features, and achieve balanced performance across different data subsets. To tackle these challenges, we introduce a novel model called Monotonic Calibration Networks, featuring three key designs: a monotonic calibration function (MCF), an order-preserving regularizer, and a field-balance regularizer. The nonlinear MCF is capable of naturally modeling and universally approximating the intricate relations between uncalibrated predictions and the posterior probabilities, thus being much more expressive than existing methods. MCF can also integrate context features using a flexible model architecture, thereby achieving context awareness. The order-preserving and field-balance regularizers promote the monotonic relationship between adjacent bins and the balanced calibration performance on data subsets, respectively. Experimental results on both public and industrial datasets demonstrate the superior performance of our method in generating well-calibrated probability predictions. 
+
+**Abstract (ZH)**: 在线广告中的不确定性校准旨在调整排名模型的概率预测，使其更好地逼近事件（如点击或转化）的真实概率。然而，现有的校准方法可能无法有效地建模复杂的非线性关系、考虑上下文特征，并在不同数据子集上实现均衡性能。为应对这些挑战，我们提出了一种新颖的模型——单调校准网络，该模型包含三个关键设计：单调校准函数（MCF）、有序保持正则化器和领域均衡正则化器。非线性MCF能够自然地建模和普遍逼近未校准预测与后验概率之间的复杂关系，因此比现有方法更具表现力。MCF还能够通过灵活的模型架构整合上下文特征，从而实现上下文awareness。有序保持和领域均衡正则化器分别促进相邻区间之间的单调关系和不同数据子集上的均衡校准性能。在公共和工业数据集上的实验结果表明，我们的方法在生成准确的概率预测方面具有优越性能。 
+
+---
+# More of the Same: Persistent Representational Harms Under Increased Representation 
+
+**Title (ZH)**: 更多的同一性：在增加代表性的背景下持久存在的表现性伤害 
+
+**Authors**: Jennifer Mickel, Maria De-Arteaga, Leqi Liu, Kevin Tian  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00333)  
+
+**Abstract**: To recognize and mitigate the harms of generative AI systems, it is crucial to consider who is represented in the outputs of generative AI systems and how people are represented. A critical gap emerges when naively improving who is represented, as this does not imply bias mitigation efforts have been applied to address how people are represented. We critically examined this by investigating gender representation in occupation across state-of-the-art large language models. We first show evidence suggesting that over time there have been interventions to models altering the resulting gender distribution, and we find that women are more represented than men when models are prompted to generate biographies or personas. We then demonstrate that representational biases persist in how different genders are represented by examining statistically significant word differences across genders. This results in a proliferation of representational harms, stereotypes, and neoliberalism ideals that, despite existing interventions to increase female representation, reinforce existing systems of oppression. 
+
+**Abstract (ZH)**: 为了识别并减轻生成性AI系统的危害，必须考虑生成性AI系统输出中谁得到了体现以及人们是如何被体现的。当天真地改进谁得到了体现时，这并不意味着已经应用了针对如何体现人们的问题进行的偏见缓解努力。我们通过调查最先进的大型语言模型中的职业性别代表性来严格审视这一点。我们首先展示了证据表明，随着时间的推移，对模型进行了干预以改变结果中的性别分布，并发现当模型被提示生成简历或角色时，女性比男性更加体现。然后我们通过检查不同性别间显著的词频差异，展示了代表性偏见依然存在。这导致了更多的代表性危害、刻板印象和新自由主义理念的盛行，即便已经存在增加女性代表性的干预措施，它们也巩固了现有的压迫体系。 
+
+---
+# Investigating the contribution of terrain-following coordinates and conservation schemes in AI-driven precipitation forecasts 
+
+**Title (ZH)**: 基于地形跟随坐标和保守方案在AI驱动降水预报中的贡献研究 
+
+**Authors**: Yingkai Sha, John S. Schreck, William Chapman, David John Gagne II  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00332)  
+
+**Abstract**: Artificial Intelligence (AI) weather prediction (AIWP) models often produce ``blurry'' precipitation forecasts that overestimate drizzle and underestimate extremes. This study provides a novel solution to tackle this problem -- integrating terrain-following coordinates with global mass and energy conservation schemes into AIWP models. Forecast experiments are conducted to evaluate the effectiveness of this solution using FuXi, an example AIWP model, adapted to 1.0$^\circ$ grid spacing data. Verification results show large performance gains. The conservation schemes are found to reduce drizzle bias, whereas using terrain-following coordinates improves the estimation of extreme events and precipitation intensity spectra. Furthermore, a case study reveals that terrain-following coordinates capture near-surface winds better over mountains, offering AIWP models more accurate information on understanding the dynamics of precipitation processes. The proposed solution of this study can benefit a wide range of AIWP models and bring insights into how atmospheric domain knowledge can support the development of AIWP models. 
+
+**Abstract (ZH)**: 人工智能天气预测模型中地形跟随坐标与全球质量和能量守恒方案的集成：一种改善降水预报模糊性的新方法 
+
+---
+# PINN-DT: Optimizing Energy Consumption in Smart Building Using Hybrid Physics-Informed Neural Networks and Digital Twin Framework with Blockchain Security 
+
+**Title (ZH)**: PINN-DT: 基于混合物理感知神经网络和数字孪生框架的智能建筑能耗优化及区块链安全研究 
+
+**Authors**: Hajar Kazemi Naeini, Roya Shomali, Abolhassan Pishahang, Hamidreza Hasanzadeh, Mahdieh Mohammadi, Saeid Asadi, Ahmad Gholizadeh Lonbar  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00331)  
+
+**Abstract**: The advancement of smart grid technologies necessitates the integration of cutting-edge computational methods to enhance predictive energy optimization. This study proposes a multi-faceted approach by incorporating (1) Deep Reinforcement Learning (DRL) agents trained using data from Digital Twins (DTs) to optimize energy consumption in real time, (2) Physics-Informed Neural Networks (PINNs) to seamlessly embed physical laws within the optimization process, ensuring model accuracy and interpretability, and (3) Blockchain (BC) technology to facilitate secure and transparent communication across the smart grid infrastructure. The model was trained and validated using comprehensive datasets, including smart meter energy consumption data, renewable energy outputs, dynamic pricing, and user preferences collected from IoT devices. The proposed framework achieved superior predictive performance with a Mean Absolute Error (MAE) of 0.237 kWh, Root Mean Square Error (RMSE) of 0.298 kWh, and an R-squared (R2) value of 0.978, indicating a 97.8% explanation of data variance. Classification metrics further demonstrated the model's robustness, achieving 97.7% accuracy, 97.8% precision, 97.6% recall, and an F1 Score of 97.7%. Comparative analysis with traditional models like Linear Regression, Random Forest, SVM, LSTM, and XGBoost revealed the superior accuracy and real-time adaptability of the proposed method. In addition to enhancing energy efficiency, the model reduced energy costs by 35%, maintained a 96% user comfort index, and increased renewable energy utilization to 40%. This study demonstrates the transformative potential of integrating PINNs, DT, and Blockchain technologies to optimize energy consumption in smart grids, paving the way for sustainable, secure, and efficient energy management systems. 
+
+**Abstract (ZH)**: 智能电网技术的进步 necessitates the integration of cutting-edge computational methods to enhance predictive energy optimization.本研究提出了一种多方面的方法，通过结合使用（1）基于数字孪生（DTs）数据训练的深度强化学习（DRL）代理以实现实时能源消耗优化，（2）物理信息神经网络（PINNs）以无缝嵌入物理定律，确保模型准确性和可解释性，以及（3）区块链（BC）技术以促进智能电网基础设施的安全和透明通信。该模型使用包括智能电表能源消耗数据、可再生能源输出、动态定价和从物联网设备收集的用户偏好在内的全面数据集进行训练和验证。所提出的框架取得了优越的预测性能，平均绝对误差（MAE）为0.237 kWh，均方根误差（RMSE）为0.298 kWh，R²值为0.978，表明其解释了97.8%的数据变异。分类指标进一步证明了该模型的稳健性，准确率达到了97.7%，精确率为97.8%，召回率为97.6%，F1分数为97.7%。与传统的线性回归、随机森林、SVM、LSTM和XGBoost等模型的比较分析表明，所提出的方法具有更高的准确性和实时适应性。除了提高能源效率，该模型还将能源成本降低了35%，保持了96%的用户舒适度指数，并将可再生能源利用率提高到了40%。本研究展示了结合使用PINNs、DT和区块链技术以优化智能电网能源消耗的变革潜力，为可持续、安全和高效的能源管理系统铺平了道路。
+
+标题：
+Integrating Deep Reinforcement Learning, Physics-Informed Neural Networks, and Blockchain for Predictive Energy Optimization in Smart Grids 
+
+---
+# FLStore: Efficient Federated Learning Storage for non-training workloads 
+
+**Title (ZH)**: FLStore: 非训练工作负载的高效联邦学习存储 
+
+**Authors**: Ahmad Faraz Khan, Samuel Fountain, Ahmed M. Abdelmoniem, Ali R. Butt, Ali Anwar  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00323)  
+
+**Abstract**: Federated Learning (FL) is an approach for privacy-preserving Machine Learning (ML), enabling model training across multiple clients without centralized data collection. With an aggregator server coordinating training, aggregating model updates, and storing metadata across rounds. In addition to training, a substantial part of FL systems are the non-training workloads such as scheduling, personalization, clustering, debugging, and incentivization. Most existing systems rely on the aggregator to handle non-training workloads and use cloud services for data storage. This results in high latency and increased costs as non-training workloads rely on large volumes of metadata, including weight parameters from client updates, hyperparameters, and aggregated updates across rounds, making the situation even worse. We propose FLStore, a serverless framework for efficient FL non-training workloads and storage. FLStore unifies the data and compute planes on a serverless cache, enabling locality-aware execution via tailored caching policies to reduce latency and costs. Per our evaluations, compared to cloud object store based aggregator server FLStore reduces per request average latency by 71% and costs by 92.45%, with peak improvements of 99.7% and 98.8%, respectively. Compared to an in-memory cloud cache based aggregator server, FLStore reduces average latency by 64.6% and costs by 98.83%, with peak improvements of 98.8% and 99.6%, respectively. FLStore integrates seamlessly with existing FL frameworks with minimal modifications, while also being fault-tolerant and highly scalable. 
+
+**Abstract (ZH)**: FLStore：面向高效联邦学习非训练工作负载及存储的无服务器框架 
+
+---
+# T-REX: A 68-567 μs/token, 0.41-3.95 μJ/token Transformer Accelerator with Reduced External Memory Access and Enhanced Hardware Utilization in 16nm FinFET 
+
+**Title (ZH)**: T-REX：一种具有减少外部内存访问和增强硬件利用率的16纳米FinFET工艺变压器加速器，每token耗时68.567 μs，每token能耗0.41-3.95 μJ 
+
+**Authors**: Seunghyun Moon, Mao Li, Gregory Chen, Phil Knag, Ram Krishnamurthy, Mingoo Seok  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00322)  
+
+**Abstract**: This work introduces novel training and post-training compression schemes to reduce external memory access during transformer model inference. Additionally, a new control flow mechanism, called dynamic batching, and a novel buffer architecture, termed a two-direction accessible register file, further reduce external memory access while improving hardware utilization. 
+
+**Abstract (ZH)**: 本工作介绍了新型训练时和后训练压缩方案，以减少变压器模型推断过程中的外部内存访问。此外，引入了一种新的控制流机制，称为动态批量处理，并提出了一种新的缓冲区架构，称为双向可访问寄存器文件，进一步减少了外部内存访问并提高了硬件利用率。 
+
+---
+# Shifting Power: Leveraging LLMs to Simulate Human Aversion in ABMs of Bilateral Financial Exchanges, A bond market study 
+
+**Title (ZH)**: 权力转移：利用大语言模型在双边金融交换ABM中模拟人类厌恶情绪——以债券市场研究为例 
+
+**Authors**: Alicia Vidler, Toby Walsh  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00320)  
+
+**Abstract**: Bilateral markets, such as those for government bonds, involve decentralized and opaque transactions between market makers (MMs) and clients, posing significant challenges for traditional modeling approaches. To address these complexities, we introduce TRIBE an agent-based model augmented with a large language model (LLM) to simulate human-like decision-making in trading environments. TRIBE leverages publicly available data and stylized facts to capture realistic trading dynamics, integrating human biases like risk aversion and ambiguity sensitivity into the decision-making processes of agents. Our research yields three key contributions: first, we demonstrate that integrating LLMs into agent-based models to enhance client agency is feasible and enriches the simulation of agent behaviors in complex markets; second, we find that even slight trade aversion encoded within the LLM leads to a complete cessation of trading activity, highlighting the sensitivity of market dynamics to agents' risk profiles; third, we show that incorporating human-like variability shifts power dynamics towards clients and can disproportionately affect the entire system, often resulting in systemic agent collapse across simulations. These findings underscore the emergent properties that arise when introducing stochastic, human-like decision processes, revealing new system behaviors that enhance the realism and complexity of artificial societies. 
+
+**Abstract (ZH)**: 双边市场，如政府债券市场，涉及市场maker与客户之间的分散且不透明的交易，对传统建模方法提出了重大挑战。为应对这些复杂性，我们引入了TRIBE模型，该模型结合了大型语言模型（LLM），以模拟交易环境中类人的决策制定过程。TRIBE利用公开数据和统计事实来捕捉真实的交易动态，将人类偏差如风险厌恶和模糊性敏感性整合到代理决策过程之中。我们的研究贡献包括：首先，我们展示了将LLM整合到基于代理的模型中以增强客户自主性是可行的，并丰富了复杂市场的代理行为模拟；其次，我们发现编码在LLM中的轻微交易厌恶会导致完全停止交易活动，突显了市场动态对代理风险轮廓的敏感性；第三，我们证明了引入人类行为的变异性将权力动态向客户转移，并可能不成比例地影响整个系统，经常导致模拟中的系统性代理崩溃。这些发现强调了引入随机的、类人的决策过程时所出现的涌现性质，揭示了增强人造社会的真实性和复杂性的新系统行为。 
+
+---
+# Pseudo-Knowledge Graph: Meta-Path Guided Retrieval and In-Graph Text for RAG-Equipped LLM 
+
+**Title (ZH)**: 伪知识图谱：元路径引导的检索与图内文本结合用于RAG装备的大语言模型 
+
+**Authors**: Yuxin Yang, Haoyang Wu, Tao Wang, Jia Yang, Hao Ma, Guojie Luo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00309)  
+
+**Abstract**: The advent of Large Language Models (LLMs) has revolutionized natural language processing. However, these models face challenges in retrieving precise information from vast datasets. Retrieval-Augmented Generation (RAG) was developed to combining LLMs with external information retrieval systems to enhance the accuracy and context of responses. Despite improvements, RAG still struggles with comprehensive retrieval in high-volume, low-information-density databases and lacks relational awareness, leading to fragmented answers.
+To address this, this paper introduces the Pseudo-Knowledge Graph (PKG) framework, designed to overcome these limitations by integrating Meta-path Retrieval, In-graph Text and Vector Retrieval into LLMs. By preserving natural language text and leveraging various retrieval techniques, the PKG offers a richer knowledge representation and improves accuracy in information retrieval. Extensive evaluations using Open Compass and MultiHop-RAG benchmarks demonstrate the framework's effectiveness in managing large volumes of data and complex relationships. 
+
+**Abstract (ZH)**: 大型语言模型（LLMs）的出现已经革新了自然语言处理。然而，这些模型在从庞大数据库中检索精确信息时面临挑战。检索增强生成（RAG）被开发出来，旨在将LLMs与外部信息检索系统结合以提高响应的准确性和上下文。尽管取得了进步，RAG在高体积低信息密度数据库中的全面检索仍然存在问题，并缺乏关系意识，导致答案碎片化。
+
+为了解决这一问题，本文引入了伪知识图谱（PKG）框架，旨在通过将元路径检索、图内文本和向量检索整合到LLMs中来克服这些局限性。通过保留自然语言文本并利用多种检索技术，PKG提供了更丰富的知识表示，并在信息检索准确性方面有所提升。使用Open Compass和MultiHop-RAG基准的广泛评估证明了该框架在处理大量数据和复杂关系方面的有效性。 
+
+---
+# Hidden Convexity of Fair PCA and Fast Solver via Eigenvalue Optimization 
+
+**Title (ZH)**: 隐藏凸性公平PCA及其通过特征值优化的快速求解方法 
+
+**Authors**: Junhui Shen, Aaron J. Davis, Ding Lu, Zhaojun Bai  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00299)  
+
+**Abstract**: Principal Component Analysis (PCA) is a foundational technique in machine learning for dimensionality reduction of high-dimensional datasets. However, PCA could lead to biased outcomes that disadvantage certain subgroups of the underlying datasets. To address the bias issue, a Fair PCA (FPCA) model was introduced by Samadi et al. (2018) for equalizing the reconstruction loss between subgroups. The semidefinite relaxation (SDR) based approach proposed by Samadi et al. (2018) is computationally expensive even for suboptimal solutions. To improve efficiency, several alternative variants of the FPCA model have been developed. These variants often shift the focus away from equalizing the reconstruction loss. In this paper, we identify a hidden convexity in the FPCA model and introduce an algorithm for convex optimization via eigenvalue optimization. Our approach achieves the desired fairness in reconstruction loss without sacrificing performance. As demonstrated in real-world datasets, the proposed FPCA algorithm runs $8\times$ faster than the SDR-based algorithm, and only at most 85% slower than the standard PCA. 
+
+**Abstract (ZH)**: Fair PCA模型中的隐含凸性及基于特征值优化的凸优化算法：提高效率的同时保持公平性和性能 
+
+---
+# A Unified Framework for Heterogeneous Semi-supervised Learning 
+
+**Title (ZH)**: 统一的异质半监督学习框架 
+
+**Authors**: Marzi Heidari, Abdullah Alchihabi, Hao Yan, Yuhong Guo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00286)  
+
+**Abstract**: In this work, we introduce a novel problem setup termed as Heterogeneous Semi-Supervised Learning (HSSL), which presents unique challenges by bridging the semi-supervised learning (SSL) task and the unsupervised domain adaptation (UDA) task, and expanding standard semi-supervised learning to cope with heterogeneous training data. At its core, HSSL aims to learn a prediction model using a combination of labeled and unlabeled training data drawn separately from heterogeneous domains that share a common set of semantic categories; this model is intended to differentiate the semantic categories of test instances sampled from both the labeled and unlabeled domains. In particular, the labeled and unlabeled domains have dissimilar label distributions and class feature distributions. This heterogeneity, coupled with the assorted sources of the test data, introduces significant challenges to standard SSL and UDA methods. Therefore, we propose a novel method, Unified Framework for Heterogeneous Semi-supervised Learning (Uni-HSSL), to address HSSL by directly learning a fine-grained classifier from the heterogeneous data, which adaptively handles the inter-domain heterogeneity while leveraging both the unlabeled data and the inter-domain semantic class relationships for cross-domain knowledge transfer and adaptation. We conduct comprehensive experiments and the experimental results validate the efficacy and superior performance of the proposed Uni-HSSL over state-of-the-art semi-supervised learning and unsupervised domain adaptation methods. 
+
+**Abstract (ZH)**: 异构半监督学习问题设置（Heterogeneous Semi-Supervised Learning, HSSL）：统一框架方法（Uni-HSSL） 
+
+---
+# Reducing Large Language Model Safety Risks in Women's Health using Semantic Entropy 
+
+**Title (ZH)**: 使用语义熵减少大型语言模型在女性健康方面安全风险 
+
+**Authors**: Jahan C. Penny-Dimri, Magdalena Bachmann, William R. Cooke, Sam Mathewlynn, Samuel Dockree, John Tolladay, Jannik Kossen, Lin Li, Yarin Gal, Gabriel Davis Jones  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00269)  
+
+**Abstract**: Large language models (LLMs) hold substantial promise for clinical decision support. However, their widespread adoption in medicine, particularly in healthcare, is hindered by their propensity to generate false or misleading outputs, known as hallucinations. In high-stakes domains such as women's health (obstetrics & gynaecology), where errors in clinical reasoning can have profound consequences for maternal and neonatal outcomes, ensuring the reliability of AI-generated responses is critical. Traditional methods for quantifying uncertainty, such as perplexity, fail to capture meaning-level inconsistencies that lead to misinformation. Here, we evaluate semantic entropy (SE), a novel uncertainty metric that assesses meaning-level variation, to detect hallucinations in AI-generated medical content. Using a clinically validated dataset derived from UK RCOG MRCOG examinations, we compared SE with perplexity in identifying uncertain responses. SE demonstrated superior performance, achieving an AUROC of 0.76 (95% CI: 0.75-0.78), compared to 0.62 (0.60-0.65) for perplexity. Clinical expert validation further confirmed its effectiveness, with SE achieving near-perfect uncertainty discrimination (AUROC: 0.97). While semantic clustering was successful in only 30% of cases, SE remains a valuable tool for improving AI safety in women's health. These findings suggest that SE could enable more reliable AI integration into clinical practice, particularly in resource-limited settings where LLMs could augment care. This study highlights the potential of SE as a key safeguard in the responsible deployment of AI-driven tools in women's health, leading to safer and more effective digital health interventions. 
+
+**Abstract (ZH)**: 大型语言模型（LLMs）在临床决策支持方面展现出巨大的潜力。然而，它们在医学领域尤其是医疗健康中的广泛采用受到其生成虚假或误导性输出（称为幻觉）的倾向的阻碍。在如妇产科等高风险领域，临床推理中的错误可能会对母婴结果产生深远影响，因此确保AI生成响应的可靠性至关重要。传统的不确定性量化方法，如困惑度，无法捕捉导致错误信息的语义层面不一致性。我们评估了语义熵（SE），这是一种新型不确定性指标，可以评估语义层面的变化，用于检测AI生成的医疗内容中的幻觉。我们使用来自英国RCOG MRCOG考试的临床验证数据集进行了比较，发现SE在识别不确定响应方面优于困惑度，AUC ROC为0.76（95% CI：0.75-0.78），而困惑度为0.62（0.60-0.65）。临床专家验证进一步证实了其有效性，SE的AUC ROC达到0.97。尽管语义聚类仅在30%的情况下成功，SE仍然是提高妇产科领域AI安全性的有价值工具。这些发现表明，SE可能有助于使更可靠的AI集成到临床实践中，尤其是在资源受限的环境中，LLM可以增强护理。本研究表明，SE作为AI驱动工具负责任部署的关键保障之一，具有潜在价值，有助于实现更安全和更有效的数字健康干预。 
+
+---
+# Input Specific Neural Networks 
+
+**Title (ZH)**: 特定输入神经网络 
+
+**Authors**: Asghar A. Jadoon, D. Thomas Seidl, Reese E. Jones, Jan N. Fuhg  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00268)  
+
+**Abstract**: The black-box nature of neural networks limits the ability to encode or impose specific structural relationships between inputs and outputs. While various studies have introduced architectures that ensure the network's output adheres to a particular form in relation to certain inputs, the majority of these approaches impose constraints on only a single set of inputs. This paper introduces a novel neural network architecture, termed the Input Specific Neural Network (ISNN), which extends this concept by allowing scalar-valued outputs to be subject to multiple constraints. Specifically, the ISNN can enforce convexity in some inputs, non-decreasing monotonicity combined with convexity with respect to others, and simple non-decreasing monotonicity or arbitrary relationships with additional inputs. The paper presents two distinct ISNN architectures, along with equations for the first and second derivatives of the output with respect to the inputs. These networks are broadly applicable.
+In this work, we restrict their usage to solving problems in computational mechanics. In particular, we show how they can be effectively applied to fitting data-driven constitutive models. We then embed our trained data-driven constitutive laws into a finite element solver where significant time savings can be achieved by using explicit manual differentiation using the derived equations as opposed to automatic differentiation. We also show how ISNNs can be used to learn structural relationships between inputs and outputs via a binary gating mechanism. Particularly, ISNNs are employed to model an anisotropic free energy potential to get the homogenized macroscopic response in a decoupled multiscale setting, where the network learns whether or not the potential should be modeled as polyconvex, and retains only the relevant layers while using the minimum number of inputs. 
+
+**Abstract (ZH)**: 具有特定输入约束的神经网络架构（ISNN）及其在计算力学中的应用 
+
+---
+# Decoupling Content and Expression: Two-Dimensional Detection of AI-Generated Text 
+
+**Title (ZH)**: 内容与表达解耦：二维检测AI生成文本 
+
+**Authors**: Guangsheng Bao, Lihua Rong, Yanbin Zhao, Qiji Zhou, Yue Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00258)  
+
+**Abstract**: The wide usage of LLMs raises critical requirements on detecting AI participation in texts. Existing studies investigate these detections in scattered contexts, leaving a systematic and unified approach unexplored. In this paper, we present HART, a hierarchical framework of AI risk levels, each corresponding to a detection task. To address these tasks, we propose a novel 2D Detection Method, decoupling a text into content and language expression. Our findings show that content is resistant to surface-level changes, which can serve as a key feature for detection. Experiments demonstrate that 2D method significantly outperforms existing detectors, achieving an AUROC improvement from 0.705 to 0.849 for level-2 detection and from 0.807 to 0.886 for RAID. We release our data and code at this https URL. 
+
+**Abstract (ZH)**: 大规模语言模型的广泛使用对检测文本中的AI参与提出了关键要求。现有研究在分散的背景下探讨了这些检测，但缺乏一个系统性和统一的方法。本文提出HART，一种层次化的AI风险水平框架，每个级别对应一个检测任务。为了解决这些任务，我们提出了一个新颖的2D检测方法，将文本分解为内容和语言表达。研究发现内容对抗表面级变化具有抵抗力，这可以作为检测的关键特征。实验结果显示，2D方法显著优于现有检测器，在级别2检测中AUROC从0.705提高到0.849，在RAID中从0.807提高到0.886。我们在此httpsURL发布了我们的数据和代码。 
+
+---
+# 1-Lipschitz Network Initialization for Certifiably Robust Classification Applications: A Decay Problem 
+
+**Title (ZH)**: 1-Lipschitz 网络初始化对于可认证鲁棒分类应用：一个衰减问题 
+
+**Authors**: Marius F. R. Juston, William R. Norris, Dustin Nottage, Ahmet Soylemezoglu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00240)  
+
+**Abstract**: This paper discusses the weight parametrization of two standard 1-Lipschitz network structure methodologies, the Almost-Orthogonal-Layers (AOL) and the SDP-based Lipschitz Layers (SLL), and derives their impact on the initialization for deep 1-Lipschitz feedforward networks in addition to discussing underlying issues surrounding this initialization. These networks are mainly used in certifiably robust classification applications to combat adversarial attacks by limiting the effects of perturbations on the output classification result. An exact and an upper bound for the parameterized weight variance was calculated assuming a standard Normal distribution initialization; additionally, an upper bound was computed assuming a Generalized Normal Distribution, generalizing the proof for Uniform, Laplace, and Normal distribution weight initializations. It is demonstrated that the weight variance holds no bearing on the output variance distribution and that only the dimension of the weight matrices matters. Additionally, this paper demonstrates that the weight initialization always causes deep 1-Lipschitz networks to decay to zero. 
+
+**Abstract (ZH)**: 本文讨论了两种标准的1-Lipschitz网络结构方法——Almost-Orthogonal-Layers (AOL) 和基于SDP的Lipschitz层 (SLL) 的权重参数化，并推导了它们对深层1-Lipschitz前馈网络初始化的影响，同时探讨了与此初始化相关的问题。这些网络主要用于通过限制扰动对输出分类结果的影响来抵抗对抗性攻击的应用场景，如可验证鲁棒分类。在假设标准正态分布初始化的情况下，计算了参数化权重方差的确切值和上界；此外，在假设广义正态分布的情况下，计算了上界，并将证明推广到均匀分布、拉普拉斯分布和正态分布权重初始化。本文证明了权重方差不影响输出方差分布，只有权重重度矩阵的维度才起作用。此外，本文还证明了权重初始化总是导致深层1-Lipschitz网络衰减为零。 
+
+---
+# Towards Fairness for the Right Reasons: Using Saliency Maps to Evaluate Bias Removal in Neural Networks 
+
+**Title (ZH)**: 基于恰当原因的公平性：使用显著性图评估神经网络中的偏见去除 
+
+**Authors**: Lukasz Sztukiewicz, Ignacy Stępka, Michał Wiliński, Jerzy Stefanowski  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00234)  
+
+**Abstract**: The widespread adoption of machine learning systems has raised critical concerns about fairness and bias, making mitigating harmful biases essential for AI development. In this paper, we investigate the relationship between fairness improvement and the removal of harmful biases in neural networks applied to computer vision tasks. First, we introduce a set of novel XAI-based metrics that analyze saliency maps to assess shifts in a model's decision-making process. Then, we demonstrate that successful debiasing methods systematically redirect model focus away from protected attributes. Additionally, we show that techniques originally developed for artifact removal can be effectively repurposed for fairness. These findings underscore the importance of ensuring that models are fair for the right reasons, contributing to the development of more ethical and trustworthy AI systems. 
+
+**Abstract (ZH)**: 机器学习系统的广泛应用引发了对公平性和偏见的严重关切，减轻有害偏见对于人工智能发展至关重要。本文探讨了在计算机视觉任务中应用神经网络时，公平性改进与有害偏见消除之间的关系。首先，我们引入了一组基于可解释性人工智能的新型指标，通过分析显著性图来评估模型决策过程的变化。然后，我们证明了成功的去偏方法会系统性地将模型的关注点从受保护属性中转移开。此外，我们展示了原本用于去除伪影的方法可以有效重新应用于公平性。这些发现强调了确保模型因正确的理由而公平的重要性，促进了更加伦理和可信赖的人工智能系统的开发。 
+
+---
+# Jawaher: A Multidialectal Dataset of Arabic Proverbs for LLM Benchmarking 
+
+**Title (ZH)**: Jawaher：阿拉伯谚语多方言数据集用于LLM基准测试 
+
+**Authors**: Samar M. Magdy, Sang Yun Kwon, Fakhraddin Alwajih, Safaa Abdelfadil, Shady Shehata, Muhammad Abdul-Mageed  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00231)  
+
+**Abstract**: Recent advancements in instruction fine-tuning, alignment methods such as reinforcement learning from human feedback (RLHF), and optimization techniques like direct preference optimization (DPO) have significantly enhanced the adaptability of large language models (LLMs) to user preferences. However, despite these innovations, many LLMs continue to exhibit biases toward Western, Anglo-centric, or American cultures, with performance on English data consistently surpassing that of other languages. This reveals a persistent cultural gap in LLMs, which complicates their ability to accurately process culturally rich and diverse figurative language such as proverbs. To address this, we introduce Jawaher, a benchmark designed to assess LLMs' capacity to comprehend and interpret Arabic proverbs. Jawaher includes proverbs from various Arabic dialects, along with idiomatic translations and explanations. Through extensive evaluations of both open- and closed-source models, we find that while LLMs can generate idiomatically accurate translations, they struggle with producing culturally nuanced and contextually relevant explanations. These findings highlight the need for ongoing model refinement and dataset expansion to bridge the cultural gap in figurative language processing. 
+
+**Abstract (ZH)**: 近期对指令微调、基于人类反馈的强化学习（RLHF）对齐方法以及直接偏好优化（DPO）等优化技术的发展显著提升了大规模语言模型（LLMs）对用户偏好的适应性。尽管如此，许多LLMs仍然倾向于西方、盎格鲁中心或美国文化，并且在英语数据上的表现持续优于其他语言。这揭示了LLMs中长期存在的文化差距，使得它们难以准确处理富含文化丰富性和多样化隐喻语言的能力受到复杂化。为了解决这一问题，我们引入了Jawaher基准，旨在评估LLMs理解和解释阿拉伯谚语的能力。Jawaher包含各种阿拉伯方言的谚语，以及直译和解释。通过广泛评估开源和闭源模型，我们发现，虽然LLMs能够生成语用上准确的翻译，但在提供具有文化内涵和语境相关性的解释方面存在困难。这些发现强调了持续模型精炼和数据集扩展的必要性，以缩小隐喻语言处理中的文化差距。 
+
+---
+# SafeAuto: Knowledge-Enhanced Safe Autonomous Driving with Multimodal Foundation Models 
+
+**Title (ZH)**: SafeAuto：多模态基础模型增强的安全自动驾驶 
+
+**Authors**: Jiawei Zhang, Xuan Yang, Taiqi Wang, Yu Yao, Aleksandr Petiushko, Bo Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00211)  
+
+**Abstract**: Traditional autonomous driving systems often struggle to integrate high-level reasoning with low-level control, resulting in suboptimal and sometimes unsafe driving behaviors. The emergence of Multimodal Large Language Models (MLLMs), which can process both visual and textual data, presents an opportunity to unify perception and reasoning tasks within a single framework. However, effectively embedding precise safety knowledge into MLLMs for autonomous driving remains a significant challenge. To address this, we propose SafeAuto, a novel framework that enhances MLLM-based autonomous driving systems by incorporating both unstructured and structured knowledge. Specifically, we first introduce the Position-Dependent Cross-Entropy (PDCE) loss function, designed to improve the accuracy of low-level control signal predictions when numerical values are represented as text. Second, to ensure safe autonomous driving by explicitly integrating precise safety knowledge into the MLLM, we develop a reasoning component for SafeAuto. This component translates driving safety regulations into first-order logic rules (e.g., "red light => stop") and incorporates these rules into a probabilistic graphical model, such as a Markov Logic Network (MLN). The MLN is trained to verify the predicted next actions using environmental attributes identified by attribute recognition models (e.g., detecting a red light) to form the predicates. Additionally, we construct a Multimodal RAG model that leverages video data, control signals, and environmental attributes to learn more effectively from past similar driving experiences. By integrating PDCE, MLN, and Multimodal RAG, SafeAuto significantly outperforms existing baselines across multiple datasets. This advancement enables more accurate, reliable, and safer autonomous driving systems that learn from experience, obey traffic laws, and perform precise control actions. 
+
+**Abstract (ZH)**: 传统自动驾驶系统往往难以将高层次推理与低层次控制相结合，导致驾驶行为不够优化甚至存在安全隐患。多模式大语言模型（MLLMs）能够处理视觉和文本数据，为统一感知和推理任务提供机会。然而，将精确的安全知识有效嵌入到MLLMs以实现自动驾驶仍然面临重大挑战。为此，我们提出了SafeAuto框架，通过结合非结构化和结构化知识来增强基于MLLM的自动驾驶系统。具体而言，我们首先引入位置相关交叉熵（PDCE）损失函数，旨在提高数值表示为文本的低层次控制信号预测准确性。其次，为了通过显式集成精确的安全知识确保安全的自动驾驶，我们为SafeAuto开发了一个推理组件。该组件将驾驶安全规定翻译成一阶逻辑规则（例如，“红灯=>停止”），并将这些规则整合到概率图形模型中，如马尔可夫逻辑网络（MLN）。MLN将通过环境属性识别模型（如检测红灯）识别的环境属性转换为谓词，并对其进行训练以验证预测的下一步行动。此外，我们构建了一个多模式RAG模型，利用视频数据、控制信号和环境属性，更有效地从过去的类似驾驶经验中学习。通过结合PDCE、MLN和多模式RAG，SafeAuto在多个数据集中显著优于现有基线。这一进展使得自动驾驶系统能够更准确、可靠且安全地学习，遵守交通法规并执行精确的控制操作。 
+
+---
+# Foundation-Model-Boosted Multimodal Learning for fMRI-based Neuropathic Pain Drug Response Prediction 
+
+**Title (ZH)**: 基于基础模型增强的多模态学习在基于fMRI的神经病理性疼痛药物响应预测中的应用 
+
+**Authors**: Wenrui Fan, L. M. Riza Rizky, Jiayang Zhang, Chen Chen, Haiping Lu, Kevin Teh, Dinesh Selvarajah, Shuo Zhou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00210)  
+
+**Abstract**: Neuropathic pain, affecting up to 10% of adults, remains difficult to treat due to limited therapeutic efficacy and tolerability. Although resting-state functional MRI (rs-fMRI) is a promising non-invasive measurement of brain biomarkers to predict drug response in therapeutic development, the complexity of fMRI demands machine learning models with substantial capacity. However, extreme data scarcity in neuropathic pain research limits the application of high-capacity models. To address the challenge of data scarcity, we propose FMM$_{TC}$, a Foundation-Model-boosted Multimodal learning framework for fMRI-based neuropathic pain drug response prediction, which leverages both internal multimodal information in pain-specific data and external knowledge from large pain-agnostic data. Specifically, to maximize the value of limited pain-specific data, FMM$_{TC}$ integrates complementary information from two rs-fMRI modalities: Time series and functional Connectivity. FMM$_{TC}$ is further boosted by an fMRI foundation model with its external knowledge from extensive pain-agnostic fMRI datasets enriching limited pain-specific information. Evaluations with an in-house dataset and a public dataset from OpenNeuro demonstrate FMM$_{TC}$'s superior representation ability, generalizability, and cross-dataset adaptability over existing unimodal fMRI models that only consider one of the rs-fMRI modalities. The ablation study validates the effectiveness of multimodal learning and foundation-model-powered external knowledge transfer in FMM$_{TC}$. An integrated gradient-based interpretation study explains how FMM$_{TC}$'s cross-dataset dynamic behaviors enhance its adaptability. In conclusion, FMM$_{TC}$ boosts clinical trials in neuropathic pain therapeutic development by accurately predicting drug responses to improve the participant stratification efficiency. 
+
+**Abstract (ZH)**: 基于fMRI的神经病理性疼痛药物反应预测的FMM$_{TC}$多重模态学习框架 
+
+---
+# Quantifying First-Order Markov Violations in Noisy Reinforcement Learning: A Causal Discovery Approach 
+
+**Title (ZH)**: 在嘈杂强化学习中定量分析一阶马尔可夫性的违反：一种因果发现方法 
+
+**Authors**: Naveen Mysore  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00206)  
+
+**Abstract**: Reinforcement learning (RL) methods frequently assume that each new observation completely reflects the environment's state, thereby guaranteeing Markovian (one-step) transitions. In practice, partial observability or sensor/actuator noise often invalidates this assumption. This paper proposes a systematic methodology for detecting such violations, combining a partial correlation-based causal discovery process (PCMCI) with a novel Markov Violation score (MVS). The MVS measures multi-step dependencies that emerge when noise or incomplete state information disrupts the Markov property.
+Classic control tasks (CartPole, Pendulum, Acrobot) serve as examples to illustrate how targeted noise and dimension omissions affect both RL performance and measured Markov consistency. Surprisingly, even substantial observation noise sometimes fails to induce strong multi-lag dependencies in certain domains (e.g., Acrobot). In contrast, dimension-dropping investigations show that excluding some state variables (e.g., angular velocities in CartPole and Pendulum) significantly reduces returns and increases MVS, while removing other dimensions has minimal impact.
+These findings emphasize the importance of locating and safeguarding the most causally essential dimensions in order to preserve effective single-step learning. By integrating partial correlation tests with RL performance outcomes, the proposed approach precisely identifies when and where the Markov assumption is violated. This framework offers a principled mechanism for developing robust policies, informing representation learning, and addressing partial observability in real-world RL scenarios. All code and experimental logs are accessible for reproducibility (this https URL). 
+
+**Abstract (ZH)**: 基于部分相关因果发现过程和新型马尔可夫违例分数的马尔可夫性质违例检测方法 
+
+---
+# PRISM: High-Resolution & Precise Counterfactual Medical Image Generation using Language-guided Stable Diffusion 
+
+**Title (ZH)**: PRISM: 语言引导的稳定扩散高分辨率精准逆向医疗图像生成 
+
+**Authors**: Amar Kumar, Anita Kriz, Mohammad Havaei, Tal Arbel  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00196)  
+
+**Abstract**: Developing reliable and generalizable deep learning systems for medical imaging faces significant obstacles due to spurious correlations, data imbalances, and limited text annotations in datasets. Addressing these challenges requires architectures robust to the unique complexities posed by medical imaging data. The rapid advancements in vision-language foundation models within the natural image domain prompt the question of how they can be adapted for medical imaging tasks. In this work, we present PRISM, a framework that leverages foundation models to generate high-resolution, language-guided medical image counterfactuals using Stable Diffusion. Our approach demonstrates unprecedented precision in selectively modifying spurious correlations (the medical devices) and disease features, enabling the removal and addition of specific attributes while preserving other image characteristics. Through extensive evaluation, we show how PRISM advances counterfactual generation and enables the development of more robust downstream classifiers for clinically deployable solutions. To facilitate broader adoption and research, we make our code publicly available at this https URL. 
+
+**Abstract (ZH)**: 医学成像中开发可靠且可泛化的深度学习系统面临着显著挑战，这些挑战源于虚假相关性、数据失衡和数据集中的有限文本注释。克服这些挑战需要能够应对医学成像数据独特复杂性的稳健架构。在自然图像领域中视觉-语言基础模型的快速发展促使我们思考如何将这些模型适应到医学成像任务中。在本工作中，我们提出了一种名为PRISM的框架，该框架利用基础模型通过稳定扩散生成高分辨率的语言引导医学图像反事实。我们的方法在精确修改虚假相关性（医学设备）和疾病特征方面展现了前所未有的精度，能够删除和添加特定属性同时保留其他图像特征。通过广泛评估，我们展示了PRISM如何推进反事实生成并促进更稳健的下游分类器的发展，以支持临床部署解决方案。为了促进更广泛的采用和研究，我们在以下网址公开了我们的代码：这个 https URL。 
+
+---
+# Learning Vision-Based Neural Network Controllers with Semi-Probabilistic Safety Guarantees 
+
+**Title (ZH)**: 基于视觉的神经网络控制器的学习与半概率安全保证 
+
+**Authors**: Xinhang Ma, Junlin Wu, Hussein Sibai, Yiannis Kantaros, Yevgeniy Vorobeychik  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00191)  
+
+**Abstract**: Ensuring safety in autonomous systems with vision-based control remains a critical challenge due to the high dimensionality of image inputs and the fact that the relationship between true system state and its visual manifestation is unknown. Existing methods for learning-based control in such settings typically lack formal safety guarantees. To address this challenge, we introduce a novel semi-probabilistic verification framework that integrates reachability analysis with conditional generative adversarial networks and distribution-free tail bounds to enable efficient and scalable verification of vision-based neural network controllers. Next, we develop a gradient-based training approach that employs a novel safety loss function, safety-aware data-sampling strategy to efficiently select and store critical training examples, and curriculum learning, to efficiently synthesize safe controllers in the semi-probabilistic framework. Empirical evaluations in X-Plane 11 airplane landing simulation, CARLA-simulated autonomous lane following, and F1Tenth lane following in a physical visually-rich miniature environment demonstrate the effectiveness of our method in achieving formal safety guarantees while maintaining strong nominal performance. Our code is available at this https URL. 
+
+**Abstract (ZH)**: 基于视觉的自主系统安全性保障：一种半概率验证框架及其应用 
+
+---
+# Zero-Shot and Efficient Clarification Need Prediction in Conversational Search 
+
+**Title (ZH)**: 零样本且高效的澄清需求预测在会话搜索中 
+
+**Authors**: Lili Lu, Chuan Meng, Federico Ravenda, Mohammad Aliannejadi, Fabio Crestani  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00179)  
+
+**Abstract**: Clarification need prediction (CNP) is a key task in conversational search, aiming to predict whether to ask a clarifying question or give an answer to the current user query. However, current research on CNP suffers from the issues of limited CNP training data and low efficiency. In this paper, we propose a zero-shot and efficient CNP framework (Zef-CNP), in which we first prompt large language models (LLMs) in a zero-shot manner to generate two sets of synthetic queries: ambiguous and specific (unambiguous) queries. We then use the generated queries to train efficient CNP models. Zef-CNP eliminates the need for human-annotated clarification-need labels during training and avoids the use of LLMs with high query latency at query time. To further improve the generation quality of synthetic queries, we devise a topic-, information-need-, and query-aware chain-of-thought (CoT) prompting strategy (TIQ-CoT). Moreover, we enhance TIQ-CoT with counterfactual query generation (CoQu), which guides LLMs first to generate a specific/ambiguous query and then sequentially generate its corresponding ambiguous/specific query. Experimental results show that Zef-CNP achieves superior CNP effectiveness and efficiency compared with zero- and few-shot LLM-based CNP predictors. 
+
+**Abstract (ZH)**: 对话澄清需求预测（CNP）是对话搜索中的一个重要任务，旨在预测是否需要提出一个澄清问题或者直接给出当前用户查询的答案。然而，当前CNP研究面临着训练数据有限和效率低的问题。本文提出了一种零样本和高效CNP框架（Zef-CNP），该框架首先以零样本方式提示大型语言模型（LLMs）生成两组合成查询：模糊和具体的查询。然后使用生成的查询来训练高效的CNP模型。Zef-CNP在训练过程中消除了对人类标注的澄清需求标签的需求，并避免了在查询时使用具有高查询延迟的LLMs。为进一步提高合成查询的生成质量，我们设计了一种主题、信息需求和查询感知的思考链提示策略（TIQ-CoT）。并且，我们通过引入反事实查询生成（CoQu）增强了TIQ-CoT，该策略首先引导LLMs生成一个具体的/模糊的查询，然后依次生成对应的模糊/具体的查询。实验结果表明，Zef-CNP在CNP效果和效率方面均优于基于零样本和少样本LLMs的CNP预测器。 
+
+---
+# Steering Large Language Model Activations in Sparse Spaces 
+
+**Title (ZH)**: 在稀疏空间中引导大规模语言模型激活 
+
+**Authors**: Reza Bayat, Ali Rahimi-Kalahroudi, Mohammad Pezeshki, Sarath Chandar, Pascal Vincent  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00177)  
+
+**Abstract**: A key challenge in AI alignment is guiding large language models (LLMs) to follow desired behaviors at test time. Activation steering, which modifies internal model activations during inference, offers a potential solution. However, prior work in dense activation spaces struggles with superposition, wherein multiple features become entangled, limiting interpretability and precise control. In contrast, sparse representations provide an untapped opportunity for more interpretable behavior modulation. In this work, we introduce sparse activation steering (SAS), a method that leverages sparse autoencoders (SAEs) to steer LLM behavior in sparse spaces. By isolating behavior-specific features through a contrastive prompt-pairing approach, we define a set of features that can selectively reinforce or suppress behaviors. Experiments on Gemma 2 LLMs show that SAS vectors enable nuanced behavioral modulation and finer-grained control. Furthermore, scaling SAEs improves monosemanticity of SAS vectors, suggesting more reliable and interpretable interventions. 
+
+**Abstract (ZH)**: AI对齐中的一个关键挑战是指导大型语言模型在测试时遵循期望的行为。稀疏激活导向（Sparse Activation Steering, SAS）通过利用稀疏自编码器在稀疏空间中引导LLM行为，提供了一种潜在的解决方案。通过对比提示对齐方法隔离行为特定特征，我们定义了一组可选择性地增强或抑制行为的特征。实验表明，SAS向量能够实现细腻的行为调节和更精细的控制。此外，稀疏自编码器的扩展提高了SAS向量的单一语义性，暗示了更可靠和可解释的干预措施。 
+
+---
+# PaliGemma-CXR: A Multi-task Multimodal Model for TB Chest X-ray Interpretation 
+
+**Title (ZH)**: PaliGemma-CXR：一种用于TB胸部X光片解释的多任务多模态模型 
+
+**Authors**: Denis Musinguzi, Andrew Katumba, Sudi Murindanyi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00171)  
+
+**Abstract**: Tuberculosis (TB) is a infectious global health challenge. Chest X-rays are a standard method for TB screening, yet many countries face a critical shortage of radiologists capable of interpreting these images. Machine learning offers an alternative, as it can automate tasks such as disease diagnosis, and report generation. However, traditional approaches rely on task-specific models, which cannot utilize the interdependence between tasks. Building a multi-task model capable of performing multiple tasks poses additional challenges such as scarcity of multimodal data, dataset imbalance, and negative transfer. To address these challenges, we propose PaliGemma-CXR, a multi-task multimodal model capable of performing TB diagnosis, object detection, segmentation, report generation, and VQA. Starting with a dataset of chest X-ray images annotated with TB diagnosis labels and segmentation masks, we curated a multimodal dataset to support additional tasks. By finetuning PaliGemma on this dataset and sampling data using ratios of the inverse of the size of task datasets, we achieved the following results across all tasks: 90.32% accuracy on TB diagnosis and 98.95% on close-ended VQA, 41.3 BLEU score on report generation, and a mAP of 19.4 and 16.0 on object detection and segmentation, respectively. These results demonstrate that PaliGemma-CXR effectively leverages the interdependence between multiple image interpretation tasks to enhance performance. 
+
+**Abstract (ZH)**: tuberculosis (tb) 是一个全球性的健康挑战。胸部x射线是tb筛查的标准方法，但许多国家面临放射科医生严重短缺的问题，难以解读这些影像。机器学习提供了一种替代方案，它可以自动化疾病诊断和报告生成等任务。然而，传统方法依赖于特定任务的模型，无法利用任务间的相互依赖性。构建能够执行多个任务的多任务模型带来了额外的挑战，如多模态数据稀缺、数据集不平衡和负迁移等问题。为了解决这些问题，我们提出了PaliGemma-CXR，这是一种能够执行tb诊断、对象检测、分割、报告生成和VQA的多任务多模态模型。我们从带有tb诊断标签和分割掩码的胸部x射线图像数据集开始，构建了一个多模态数据集以支持额外的任务。通过对PaliGemma进行微调并在任务数据集大小的倒数比例下采样数据，我们在所有任务上取得了以下结果：tb诊断的90.32%准确率和闭合式vqa的98.95%准确率、报告生成的41.3 bleu分数、对象检测和分割的mAP分别为19.4和16.0。这些结果表明，PaliGemma-CXR有效地利用了多种图像解释任务之间的相互依赖性以提高性能。 
+
+---
+# PreMind: Multi-Agent Video Understanding for Advanced Indexing of Presentation-style Videos 
+
+**Title (ZH)**: 预心智：多智能体视频理解及其在演讲风格视频高级索引中的应用 
+
+**Authors**: Kangda Wei, Zhengyu Zhou, Bingqing Wang, Jun Araki, Lukas Lange, Ruihong Huang, Zhe Feng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00162)  
+
+**Abstract**: In recent years, online lecture videos have become an increasingly popular resource for acquiring new knowledge. Systems capable of effectively understanding/indexing lecture videos are thus highly desirable, enabling downstream tasks like question answering to help users efficiently locate specific information within videos. This work proposes PreMind, a novel multi-agent multimodal framework that leverages various large models for advanced understanding/indexing of presentation-style videos. PreMind first segments videos into slide-presentation segments using a Vision-Language Model (VLM) to enhance modern shot-detection techniques. Each segment is then analyzed to generate multimodal indexes through three key steps: (1) extracting slide visual content, (2) transcribing speech narratives, and (3) consolidating these visual and speech contents into an integrated understanding. Three innovative mechanisms are also proposed to improve performance: leveraging prior lecture knowledge to refine visual understanding, detecting/correcting speech transcription errors using a VLM, and utilizing a critic agent for dynamic iterative self-reflection in vision analysis. Compared to traditional video indexing methods, PreMind captures rich, reliable multimodal information, allowing users to search for details like abbreviations shown only on slides. Systematic evaluations on the public LPM dataset and an internal enterprise dataset are conducted to validate PreMind's effectiveness, supported by detailed analyses. 
+
+**Abstract (ZH)**: 近年来，线上讲座视频已成为获取新知识越来越重要的资源。能够有效理解/索引讲座视频的系统因此变得尤为重要，这些系统可以支持下游任务如问答，帮助用户高效地定位视频中的特定信息。本文提出PreMind，这是一种新颖的多代理多模态框架，利用多种大规模模型对演示型视频进行高级的理解/索引。PreMind首先使用视觉-语言模型（VLM）将视频分割成幻灯片演示段，以增强现代镜头检测技术。每个段落然后通过三个关键步骤进行分析以生成多模态索引：（1）提取幻灯片视觉内容，（2）转述演讲叙述，（3）将这些视觉和语音内容整合为统一的理解。还提出了三种创新机制以提高性能：利用先验讲座知识 refining 视觉理解，使用视觉语言模型检测/校正语音转录错误，以及利用批评代理进行动态迭代自我反思在视觉分析中的应用。与传统的视频索引方法相比，PreMind能够捕获丰富可靠的多模态信息，使用户能够搜索仅在幻灯片上显示的缩写等细节。在公共LPM数据集和内部企业数据集上的系统评估证实了PreMind的有效性，通过详细的分析支持。 
+
+---
+# EXACT-CT: EXplainable Analysis for Crohn's and Tuberculosis using CT 
+
+**Title (ZH)**: EXACT-CT: 可解释的分析方法用于克罗恩病和结核病的CT影像研究 
+
+**Authors**: Shashwat Gupta, Sarthak Gupta, Akshan Agrawal, Mahim Naaz, Rajanikanth Yadav, Priyanka Bagade  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00159)  
+
+**Abstract**: Crohn's disease and intestinal tuberculosis share many overlapping features such as clinical, radiological, endoscopic, and histological features - particularly granulomas, making it challenging to clinically differentiate them. Our research leverages 3D CTE scans, computer vision, and machine learning to improve this differentiation to avoid harmful treatment mismanagement such as unnecessary anti-tuberculosis therapy for Crohn's disease or exacerbation of tuberculosis with immunosuppressants. Our study proposes a novel method to identify radiologist - identified biomarkers such as VF to SF ratio, necrosis, calcifications, comb sign and pulmonary TB to enhance accuracy. We demonstrate the effectiveness by using different ML techniques on the features extracted from these biomarkers, computing SHAP on XGBoost for understanding feature importance towards predictions, and comparing against SOTA methods such as pretrained ResNet and CTFoundation. 
+
+**Abstract (ZH)**: 克罗恩病和肠结核在临床、影像学、内镜和病理学特征上存在许多重叠，尤其是粒细胞肿，这使得临床诊断它们具有挑战性。本研究利用3D CTE扫描、计算机视觉和机器学习技术改善这一诊断，以避免对克罗恩病进行不必要的抗结核治疗或在使用免疫抑制剂时加重结核病等有害的治疗管理。本研究提出了一种新方法，通过识别放射科医生识别的生物标志物（如VF到SF的比例、坏死、钙化、梳状征和肺结核）来增强准确性。我们通过在从这些生物标志物提取的特征上使用不同的机器学习技术、计算XGBoost的SHAP以理解特征的重要性，并与预训练的ResNet和CTFoundation等最先进方法进行对比，来展示了该方法的有效性。 
+
+---
+# Fed-KAN: Federated Learning with Kolmogorov-Arnold Networks for Traffic Prediction 
+
+**Title (ZH)**: Fed-KAN：基于柯尔莫哥洛夫-阿诺尔德网络的联邦学习交通预测 
+
+**Authors**: Engin Zeydan, Cristian J. Vaca-Rubio, Luis Blanco, Roberto Pereira, Marius Caus, Kapal Dev  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00154)  
+
+**Abstract**: Non-Terrestrial Networks (NTNs) are becoming a critical component of modern communication infrastructures, especially with the advent of Low Earth Orbit (LEO) satellite systems. Traditional centralized learning approaches face major challenges in such networks due to high latency, intermittent connectivity and limited bandwidth. Federated Learning (FL) is a promising alternative as it enables decentralized training while maintaining data privacy. However, existing FL models, such as Federated Learning with Multi-Layer Perceptrons (Fed-MLP), can struggle with high computational complexity and poor adaptability to dynamic NTN environments. This paper provides a detailed analysis for Federated Learning with Kolmogorov-Arnold Networks (Fed-KAN), its implementation and performance improvements over traditional FL models in NTN environments for traffic forecasting. The proposed Fed-KAN is a novel approach that utilises the functional approximation capabilities of KANs in a FL framework. We evaluate Fed-KAN compared to Fed-MLP on a traffic dataset of real satellite operator and show a significant reduction in training and test loss. Our results show that Fed-KAN can achieve a 77.39% reduction in average test loss compared to Fed-MLP, highlighting its improved performance and better generalization ability. At the end of the paper, we also discuss some potential applications of Fed-KAN within O-RAN and Fed-KAN usage for split functionalities in NTN architecture. 
+
+**Abstract (ZH)**: 非地表网络中的联邦学习：基于柯尔莫戈罗夫-阿诺尔德网络的交通预测 
+
+---
+# Palm: A Culturally Inclusive and Linguistically Diverse Dataset for Arabic LLMs 
+
+**Title (ZH)**: Palm：面向阿拉伯语言大语言模型的跨文化包容性和多语言多样性数据集 
+
+**Authors**: Fakhraddin Alwajih, Abdellah El Mekki, Samar Mohamed Magdy, Abdelrahim A. Elmadany, Omer Nacar, El Moatez Billah Nagoudi, Reem Abdel-Salam, Hanin Atwany, Youssef Nafea, Abdulfattah Mohammed Yahya, Rahaf Alhamouri, Hamzah A. Alsayadi, Hiba Zayed, Sara Shatnawi, Serry Sibaee, Yasir Ech-Chammakhy, Walid Al-Dhabyani, Marwa Mohamed Ali, Imen Jarraya, Ahmed Oumar El-Shangiti, Aisha Alraeesi, Mohammed Anwar Al-Ghrawi, Abdulrahman S. Al-Batati, Elgizouli Mohamed, Noha Taha Elgindi, Muhammed Saeed, Houdaifa Atou, Issam Ait Yahia, Abdelhak Bouayad, Mohammed Machrouh, Amal Makouar, Dania Alkawi, Mukhtar Mohamed, Safaa Taher Abdelfadil, Amine Ziad Ounnoughene, Rouabhia Anfel, Rwaa Assi, Ahmed Sorkatti, Mohamedou Cheikh Tourad, Anis Koubaa, Ismail Berrada, Mustafa Jarrar, Shady Shehata, Muhammad Abdul-Mageed  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00151)  
+
+**Abstract**: As large language models (LLMs) become increasingly integrated into daily life, ensuring their cultural sensitivity and inclusivity is paramount. We introduce our dataset, a year-long community-driven project covering all 22 Arab countries. The dataset includes instructions (input, response pairs) in both Modern Standard Arabic (MSA) and dialectal Arabic (DA), spanning 20 diverse topics. Built by a team of 44 researchers across the Arab world, all of whom are authors of this paper, our dataset offers a broad, inclusive perspective. We use our dataset to evaluate the cultural and dialectal capabilities of several frontier LLMs, revealing notable limitations. For instance, while closed-source LLMs generally exhibit strong performance, they are not without flaws, and smaller open-source models face greater challenges. Moreover, certain countries (e.g., Egypt, the UAE) appear better represented than others (e.g., Iraq, Mauritania, Yemen). Our annotation guidelines, code, and data for reproducibility are publicly available. 
+
+**Abstract (ZH)**: 随着大型语言模型（LLMs）日益融入日常生活，确保其文化敏感性和包容性至关重要。我们介绍了一个历时一年、由阿拉伯22个国家社区驱动的项目，涵盖了20个多样化的主题。该数据集包括现代标准阿拉伯语（MSA）和方言阿拉伯语（DA）的指令（输入-响应对）。由来自阿拉伯世界的44名研究人员组成的工作团队（均为本文作者）构建了该数据集，提供了宽泛且包容的视角。我们使用该数据集评估了几种前沿LLM的文化和方言能力，揭示了一些显著的局限性。例如，虽然闭源LLM通常表现出色，但它们并非完美无缺，而开源小模型面临的挑战更大。此外，某些国家（如埃及、阿联酋）似乎比其他国家（如伊拉克、毛里塔尼亚、也门）更好地被代表。我们提供的注释指南、代码和数据均对外开放，以确保可重复性。 
+
+---
+# Learner and Instructor Needs in AI-Supported Programming Learning Tools: Design Implications for Features and Adaptive Control 
+
+**Title (ZH)**: AI支持的编程学习工具中学习者和教师的需求：功能和适应性控制的设计 implications 
+
+**Authors**: Zihan Wu, Yicheng Tang, Barbara Ericson  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00144)  
+
+**Abstract**: AI-supported tools can help learners overcome challenges in programming education by providing adaptive assistance. However, existing research often focuses on individual tools rather than deriving broader design recommendations. A key challenge in designing these systems is balancing learner control with system-driven guidance. To explore user preferences for AI-supported programming learning tools, we conducted a participatory design study with 15 undergraduate novice programmers and 10 instructors to gather insights on their desired help features and control preferences, as well as a follow-up survey with 172 introductory programming students.
+Our qualitative findings show that learners prefer help that is encouraging, incorporates visual aids, and includes peer-related insights, whereas instructors prioritize scaffolding that reflects learners' progress and reinforces best practices. Both groups favor shared control, though learners generally prefer more autonomy, while instructors lean toward greater system guidance to prevent cognitive overload. Additionally, our interviews revealed individual differences in control preferences.
+Based on our findings, we propose design guidelines for AI-supported programming tools, particularly regarding user-centered help features and adaptive control mechanisms. Our work contributes to the human-centered design of AI-supported learning environments by informing the development of systems that effectively balance autonomy and guidance, enhancing AI-supported educational tools for programming and beyond. 
+
+**Abstract (ZH)**: AI支持工具可以通过提供适应性辅助帮助学习者克服编程教育中的挑战，但现有研究往往关注单个工具而非提炼更广泛的设计建议。设计这些系统的关键挑战是平衡学习控制与系统驱动的指导。为了探索用户对AI支持的编程学习工具的偏好，我们与15名本科新手程序员和10名教师进行了参与式设计研究，收集了他们希望的帮助特征和控制偏好方面的见解，并对172名入门级编程学生进行了后续调查。 
+
+---
+# AnnoCaseLaw: A Richly-Annotated Dataset For Benchmarking Explainable Legal Judgment Prediction 
+
+**Title (ZH)**: AnnoCaseLaw: 一个用于可解释法律判决预测基准测试的丰富标注数据集 
+
+**Authors**: Magnus Sesodia, Alina Petrova, John Armour, Thomas Lukasiewicz, Oana-Maria Camburu, Puneet K. Dokania, Philip Torr, Christian Schroeder de Witt  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00128)  
+
+**Abstract**: Legal systems worldwide continue to struggle with overwhelming caseloads, limited judicial resources, and growing complexities in legal proceedings. Artificial intelligence (AI) offers a promising solution, with Legal Judgment Prediction (LJP) -- the practice of predicting a court's decision from the case facts -- emerging as a key research area. However, existing datasets often formulate the task of LJP unrealistically, not reflecting its true difficulty. They also lack high-quality annotation essential for legal reasoning and explainability. To address these shortcomings, we introduce AnnoCaseLaw, a first-of-its-kind dataset of 471 meticulously annotated U.S. Appeals Court negligence cases. Each case is enriched with comprehensive, expert-labeled annotations that highlight key components of judicial decision making, along with relevant legal concepts. Our dataset lays the groundwork for more human-aligned, explainable LJP models. We define three legally relevant tasks: (1) judgment prediction; (2) concept identification; and (3) automated case annotation, and establish a performance baseline using industry-leading large language models (LLMs). Our results demonstrate that LJP remains a formidable task, with application of legal precedent proving particularly difficult. Code and data are available at this https URL. 
+
+**Abstract (ZH)**: 全球各国的法律系统继续面临案多人少、司法资源有限和法律程序日益复杂的问题。人工智能（AI）提供了潜在的解决方案，而法律判决预测（LJP）——从案件事实预测法院的判决——已成为一个关键的研究领域。然而，现有数据集往往不切实际地定义了LJP任务，未能反映其实质难度。它们还缺乏进行法律推理和解释所需的高质量标注。为解决这些问题，我们介绍了AnnoCaseLaw，这是一个包含471个精心标注的美国上诉法院过失案件的新颖数据集。每个案件都附有全面的专家标注注释，突出了司法决策的关键要素以及相关法律概念。我们的数据集为更符合人类行为、具有解释能力的LJP模型奠定了基础。我们定义了三个法律相关任务：（1）判决预测；（2）概念识别；和（3）自动化案例标注，并使用业内领先的大语言模型（LLMs）建立了性能基线。我们的结果表明，LJP仍是一个艰巨的任务，应用法律先例尤其困难。代码和数据请参见此链接。 
+
+---
+# Evaluation of LLMs-based Hidden States as Author Representations for Psychological Human-Centered NLP Tasks 
+
+**Title (ZH)**: 基于LLMs的隐藏状态作为心理人本导向NLP任务的作者表示评价 
+
+**Authors**: Nikita Soni, Pranav Chitale, Khushboo Singh, Niranjan Balasubramanian, H. Andrew Schwartz  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00124)  
+
+**Abstract**: Like most of NLP, models for human-centered NLP tasks -- tasks attempting to assess author-level information -- predominantly use representations derived from hidden states of Transformer-based LLMs. However, what component of the LM is used for the representation varies widely. Moreover, there is a need for Human Language Models (HuLMs) that implicitly model the author and provide a user-level hidden state. Here, we systematically evaluate different ways of representing documents and users using different LM and HuLM architectures to predict task outcomes as both dynamically changing states and averaged trait-like user-level attributes of valence, arousal, empathy, and distress. We find that representing documents as an average of the token hidden states performs the best generally. Further, while a user-level hidden state itself is rarely the best representation, we find its inclusion in the model strengthens token or document embeddings used to derive document- and user-level representations resulting in best performances. 
+
+**Abstract (ZH)**: 像大多数NLP任务一样，针对人类中心的NLP任务——旨在评估作者级别的信息的任务——主要使用基于Transformer大型语言模型（LLM）隐藏状态的表示。然而，用于表示的LM组件差异较大。此外，需要隐含建模作者的人类语言模型（HuLM），并提供用户级别的隐藏状态。在此，我们系统地评估了使用不同LM和HuLM架构表示文档和用户的不同方式，以预测任务结果作为动态变化的状态和平均的情感、唤醒度、共情和困扰等用户级别特质属性。我们发现，将文档表示为token隐藏状态的平均值通常性能最佳。此外，虽然用户级别的隐藏状态本身很少是最优表示，但我们发现其包含在模型中增强了用于生成文档级和用户级表示的token或文档嵌入，从而实现了最佳性能。 
+
+---
+# BixBench: a Comprehensive Benchmark for LLM-based Agents in Computational Biology 
+
+**Title (ZH)**: BixBench: 一个全面的基于计算生物学的LLM代理基准测试 
+
+**Authors**: Ludovico Mitchener, Jon M Laurent, Benjamin Tenmann, Siddharth Narayanan, Geemi P Wellawatte, Andrew White, Lorenzo Sani, Samuel G Rodriques  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00096)  
+
+**Abstract**: Large Language Models (LLMs) and LLM-based agents show great promise in accelerating scientific research. Existing benchmarks for measuring this potential and guiding future development continue to evolve from pure recall and rote knowledge tasks, towards more practical work such as literature review and experimental planning. Bioinformatics is a domain where fully autonomous AI-driven discovery may be near, but no extensive benchmarks for measuring progress have been introduced to date. We therefore present the Bioinformatics Benchmark (BixBench), a dataset comprising over 50 real-world scenarios of practical biological data analysis with nearly 300 associated open-answer questions designed to measure the ability of LLM-based agents to explore biological datasets, perform long, multi-step analytical trajectories, and interpret the nuanced results of those analyses. We evaluate the performance of two frontier LLMs (GPT-4o and Claude 3.5 Sonnet) using a custom agent framework we open source. We find that even the latest frontier models only achieve 17% accuracy in the open-answer regime, and no better than random in a multiple-choice setting. By exposing the current limitations of frontier models, we hope BixBench can spur the development of agents capable of conducting rigorous bioinformatic analysis and accelerate scientific discovery. 
+
+**Abstract (ZH)**: 大型语言模型及其基于模型的代理在加速科学研究方面展现出巨大潜力。Bioinformatics基准（BixBench）：评估大型语言模型代理在生物数据分析中的能力 
+
+---
+# Rethinking LLM Bias Probing Using Lessons from the Social Sciences 
+
+**Title (ZH)**: 重新思考大语言模型偏差探究：从社会科学中汲取教训 
+
+**Authors**: Kirsten N. Morehouse, Siddharth Swaroop, Weiwei Pan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00093)  
+
+**Abstract**: The proliferation of LLM bias probes introduces three significant challenges: (1) we lack principled criteria for choosing appropriate probes, (2) we lack a system for reconciling conflicting results across probes, and (3) we lack formal frameworks for reasoning about when (and why) probe results will generalize to real user behavior. We address these challenges by systematizing LLM social bias probing using actionable insights from social sciences. We then introduce EcoLevels - a framework that helps (a) determine appropriate bias probes, (b) reconcile conflicting findings across probes, and (c) generate predictions about bias generalization. Overall, we ground our analysis in social science research because many LLM probes are direct applications of human probes, and these fields have faced similar challenges when studying social bias in humans. Based on our work, we suggest how the next generation of LLM bias probing can (and should) benefit from decades of social science research. 
+
+**Abstract (ZH)**: LLM 社会偏见探针的普及引入了三个重大挑战：（1）缺乏选择合适探针的原理性标准，（2）缺乏综合跨探针冲突结果的系统方法，（3）缺乏关于何时以及为何探针结果能够泛化到实际用户行为的正式框架。我们通过结合社会科学的实用启示系统化 LLM 社会偏见探针来应对这些挑战，进而介绍 EcoLevels - 一个帮助（a）确定合适偏见探针，（b）综合跨探针的冲突发现，以及（c）生成偏见泛化的预测的框架。总体而言，我们基于社会科学研究来开展分析，因为许多 LLM 探针直接借鉴了针对人类的探针，而这些领域在研究人类社会偏见时也面临类似的挑战。基于我们的研究，我们建议下一代 LLM 偏见探针可以从数十年的社会科学研究中获益并从中受益。 
+
+---
+# EdgeAIGuard: Agentic LLMs for Minor Protection in Digital Spaces 
+
+**Title (ZH)**: EdgeAIGuard：数字空间中保护minor的代理型LLM 
+
+**Authors**: Ghulam Mujtaba, Sunder Ali Khowaja, Kapal Dev  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00092)  
+
+**Abstract**: Social media has become integral to minors' daily lives and is used for various purposes, such as making friends, exploring shared interests, and engaging in educational activities. However, the increase in screen time has also led to heightened challenges, including cyberbullying, online grooming, and exploitations posed by malicious actors. Traditional content moderation techniques have proven ineffective against exploiters' evolving tactics. To address these growing challenges, we propose the EdgeAIGuard content moderation approach that is designed to protect minors from online grooming and various forms of digital exploitation. The proposed method comprises a multi-agent architecture deployed strategically at the network edge to enable rapid detection with low latency and prevent harmful content targeting minors. The experimental results show the proposed method is significantly more effective than the existing approaches. 
+
+**Abstract (ZH)**: 社交媒体已成为未成年人日常生活中不可或缺的一部分，被用于交友、探索共同兴趣和参与教育活动等多种目的。然而，屏幕时间的增加也带来了新的挑战，包括网络欺凌、在线诱骗和恶意行为者的利用。传统的内容审核技术对于行为者不断变化的策略证明效果不佳。为应对这些 growing 挑战，我们提出了一种名为 EdgeAIGuard 的内容审核方法，旨在保护未成年人免受在线诱骗和多种形式的数字利用。该方法包含一个部署在网络边缘的多代理结构，以实现快速检测和低延迟，防止针对未成年人的有害内容。实验结果表明，所提出的方法显著优于现有方法。 
+
+---
+# Protein Structure Tokenization: Benchmarking and New Recipe 
+
+**Title (ZH)**: 蛋白质结构-token化：基准测试与新方法 
+
+**Authors**: Xinyu Yuan, Zichen Wang, Marcus Collins, Huzefa Rangwala  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00089)  
+
+**Abstract**: Recent years have witnessed a surge in the development of protein structural tokenization methods, which chunk protein 3D structures into discrete or continuous representations. Structure tokenization enables the direct application of powerful techniques like language modeling for protein structures, and large multimodal models to integrate structures with protein sequences and functional texts. Despite the progress, the capabilities and limitations of these methods remain poorly understood due to the lack of a unified evaluation framework. We first introduce StructTokenBench, a framework that comprehensively evaluates the quality and efficiency of structure tokenizers, focusing on fine-grained local substructures rather than global structures, as typical in existing benchmarks. Our evaluations reveal that no single model dominates all benchmarking perspectives. Observations of codebook under-utilization led us to develop AminoAseed, a simple yet effective strategy that enhances codebook gradient updates and optimally balances codebook size and dimension for improved tokenizer utilization and quality. Compared to the leading model ESM3, our method achieves an average of 6.31% performance improvement across 24 supervised tasks, with sensitivity and utilization rates increased by 12.83% and 124.03%, respectively. 
+
+**Abstract (ZH)**: 近来，蛋白质结构分词方法的发展呈现出快速增长的趋势，这些方法将蛋白质3D结构分割为离散或连续的表示。结构分词使得直接将强大的语言建模技术应用于蛋白质结构，并通过大型多模态模型整合结构、蛋白质序列和功能文本成为可能。尽管取得了进步，但由于缺乏统一的评估框架，这些方法的能力和局限性仍不够清楚。我们首先介绍了StructTokenBench框架，该框架全面评估结构分词的质量和效率，重点关注精细粒度的局部子结构，而不是全局结构，这与现有基准中的典型做法不同。我们的评估表明，没有单一模型能够在所有基准视角中占据支配地位。代码书利用率低的观察促使我们开发了AminoAseed策略，这是一种简单有效的策略，可以增强代码书梯度更新，并优化代码书大小和维度的平衡，以提高分词器的利用率和质量。与领先模型ESM3相比，我们的方法在24个受监督任务中平均实现了6.31%的性能改进，敏感性和利用率分别提高了12.83%和124.03%。 
+
+---
+# Generalization of CNNs on Relational Reasoning with Bar Charts 
+
+**Title (ZH)**: CNNs在图表关系推理中的泛化研究 
+
+**Authors**: Zhenxing Cui, Lu Chen, Yunhai Wang, Daniel Haehn, Yong Wang, Hanspeter Pfister  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00086)  
+
+**Abstract**: This paper presents a systematic study of the generalization of convolutional neural networks (CNNs) and humans on relational reasoning tasks with bar charts. We first revisit previous experiments on graphical perception and update the benchmark performance of CNNs. We then test the generalization performance of CNNs on a classic relational reasoning task: estimating bar length ratios in a bar chart, by progressively perturbing the standard visualizations. We further conduct a user study to compare the performance of CNNs and humans. Our results show that CNNs outperform humans only when the training and test data have the same visual encodings. Otherwise, they may perform worse. We also find that CNNs are sensitive to perturbations in various visual encodings, regardless of their relevance to the target bars. Yet, humans are mainly influenced by bar lengths. Our study suggests that robust relational reasoning with visualizations is challenging for CNNs. Improving CNNs' generalization performance may require training them to better recognize task-related visual properties. 
+
+**Abstract (ZH)**: 一种卷积神经网络和人类在条形图关系推理任务上泛化的系统研究 
+
+---
+# InspireMusic: Integrating Super Resolution and Large Language Model for High-Fidelity Long-Form Music Generation 
+
+**Title (ZH)**: InspireMusic：集成超分辨率和大规模语言模型的高保真长格式音乐生成 
+
+**Authors**: Chong Zhang, Yukun Ma, Qian Chen, Wen Wang, Shengkui Zhao, Zexu Pan, Hao Wang, Chongjia Ni, Trung Hieu Nguyen, Kun Zhou, Yidi Jiang, Chaohong Tan, Zhifu Gao, Zhihao Du, Bin Ma  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00084)  
+
+**Abstract**: We introduce InspireMusic, a framework integrated super resolution and large language model for high-fidelity long-form music generation. A unified framework generates high-fidelity music, songs, and audio, which incorporates an autoregressive transformer with a super-resolution flow-matching model. This framework enables the controllable generation of high-fidelity long-form music at a higher sampling rate from both text and audio prompts. Our model differs from previous approaches, as we utilize an audio tokenizer with one codebook that contains richer semantic information, thereby reducing training costs and enhancing efficiency. This combination enables us to achieve high-quality audio generation with long-form coherence of up to $8$ minutes. Then, an autoregressive transformer model based on Qwen 2.5 predicts audio tokens. Next, we employ a super-resolution flow-matching model to generate high-sampling rate audio with fine-grained details learned from an acoustic codec model. Comprehensive experiments show that the InspireMusic-1.5B-Long model has a comparable performance to recent top-tier open-source systems, including MusicGen and Stable Audio 2.0, on subjective and objective evaluations. The code and pre-trained models are released at this https URL. 
+
+**Abstract (ZH)**: 我们介绍了一种集成超分辨率和大型语言模型的InspireMusic框架，用于高保真长格式音乐生成。该统一框架结合了自回归Transformer和超分辨率流匹配模型，能够从文本和音频提示生成高质量的音乐、歌曲和音频，并支持高采样率下的长格式音乐可控生成。与以往方法不同，我们利用包含更丰富语义信息的一维码本音频分词器，从而降低训练成本并提高效率。这种组合使我们能够生成长达8分钟的长格式音频，并保持高保真度。随后，基于Qwen 2.5的自回归Transformer模型预测音频分词。接着，我们使用超分辨率流匹配模型从声码器模型中学习精细的细节生成高采样率音频。综合实验表明，InspireMusic-1.5B-Long模型在主观和客观评估中与当前顶级开源系统（包括MusicGen和Stable Audio 2.0）具有 comparable 性能。代码和预训练模型可在以下链接获取。 
+
+---
+# Experiences with Content Development and Assessment Design in the Era of GenAI 
+
+**Title (ZH)**: 在生成式人工智能时代的内容开发与评估设计经验分享 
+
+**Authors**: Aakanksha Sharma, Samar Shailendra, Rajan Kadel  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00081)  
+
+**Abstract**: Generative Artificial Intelligence (GenAI) has the potential to transform higher education by generating human-like content. The advancement in GenAI has revolutionised several aspects of education, especially subject and assessment design. In this era, it is crucial to design assessments that challenge students and cannot be solved using GenAI tools. This makes it necessary to update the educational content with rapidly evolving technology. The assessment plays a significant role in ensuring the students learning, as it encourages students to engage actively, leading to the achievement of learning outcomes. The paper intends to determine how effectively GenAI can design a subject, including lectures, labs and assessments, using prompts and custom-based training. This paper aims to elucidate the direction to educators so they can leverage GenAI to create subject content. Additionally, we provided our experiential learning for educators to develop content, highlighting the importance of prompts and fine-tuning to ensure output quality. It has also been observed that expert evaluation is essential for assessing the quality of GenAI-generated materials throughout the content generation process. 
+
+**Abstract (ZH)**: 生成式人工智能（GenAI）有望通过生成类人类内容来变革高等教育。随着生成式人工智能的进步，教育的多个方面尤其是课程和评估设计已经被彻底革新。在这个时代，设计出能够挑战学生且无法通过GenAI工具解决的评估至关重要。因此，需要随着技术的快速发展不断地更新教育内容。评估在确保学生学习效果方面起着重要作用，它激励学生积极参与，从而达成学习目标。本文旨在探讨GenAI如何有效设计一门课程，包括讲座、实验室和评估，利用提示和基于定制的训练。本文旨在为教育者指明方向，以便他们可以利用GenAI创建课程内容。此外，我们还提供了实践经验，帮助教育者开发内容，强调提示和微调的重要性以确保输出质量，并观察到在整个内容生成过程中专家评估对于评估GenAI生成材料的质量至关重要。 
+
+---
+# AI Literacy in K-12 and Higher Education in the Wake of Generative AI: An Integrative Review 
+
+**Title (ZH)**: K-12及高等教育背景下生成式AI兴起之时的AI素养：一项综合审查 
+
+**Authors**: Xingjian, Barbara J. Ericson  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00079)  
+
+**Abstract**: Even though AI literacy has emerged as a prominent education topic in the wake of generative AI, its definition remains vague. There is little consensus among researchers and practitioners on how to discuss and design AI literacy interventions. The term has been used to describe both learning activities that train undergraduate students to use ChatGPT effectively and having kindergarten children interact with social robots. This paper applies an integrative review method to examine empirical and theoretical AI literacy studies published since 2020. In synthesizing the 124 reviewed studies, three ways to conceptualize literacy-functional, critical, and indirectly beneficial-and three perspectives on AI-technical detail, tool, and sociocultural-were identified, forming a framework that reflects the spectrum of how AI literacy is approached in practice. The framework highlights the need for more specialized terms within AI literacy discourse and indicates research gaps in certain AI literacy objectives. 
+
+**Abstract (ZH)**: 尽管生成式AI兴起后促进了AI素养这一教育议题的重要性，但其定义仍然模糊不清。研究人员和实践者在讨论和设计AI素养干预措施时缺乏共识。该术语被用来描述从训练大学生有效使用ChatGPT到让幼儿园儿童与社会机器人互动的学习活动。本文采用综合审查方法，研究自2020年以来发表的AI素养实证和理论研究。在综合分析124项研究的基础上，我们识别出三种素养认知方式：功能、批判性和间接益处，以及三种AI视角：技术细节、工具和社会文化，形成了一种框架，反映了实际操作中AI素养的多样性。该框架强调了AI素养领域内需要更专门术语的必要性，并指出了某些AI素养目标的研究空白。 
+
+---
+# Navigating the Edge with the State-of-the-Art Insights into Corner Case Identification and Generation for Enhanced Autonomous Vehicle Safety 
+
+**Title (ZH)**: 基于前沿见解提升自动驾驶车辆安全性的边缘案例识别与生成导航 
+
+**Authors**: Gabriel Kenji Godoy Shimanuki, Alexandre Moreira Nascimento, Lucio Flavio Vismari, Joao Batista Camargo Junior, Jorge Rady de Almeida Junior, Paulo Sergio Cugnasca  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00077)  
+
+**Abstract**: In recent years, there has been significant development of autonomous vehicle (AV) technologies. However, despite the notable achievements of some industry players, a strong and appealing body of evidence that demonstrate AVs are actually safe is lacky, which could foster public distrust in this technology and further compromise the entire development of this industry, as well as related social impacts. To improve the safety of AVs, several techniques are proposed that use synthetic data in virtual simulation. In particular, the highest risk data, known as corner cases (CCs), are the most valuable for developing and testing AV controls, as they can expose and improve the weaknesses of these autonomous systems. In this context, the present paper presents a systematic literature review aiming to comprehensively analyze methodologies for CC identifi cation and generation, also pointing out current gaps and further implications of synthetic data for AV safety and reliability. Based on a selection criteria, 110 studies were picked from an initial sample of 1673 papers. These selected paper were mapped into multiple categories to answer eight inter-linked research questions. It concludes with the recommendation of a more integrated approach focused on safe development among all stakeholders, with active collaboration between industry, academia and regulatory bodies. 
+
+**Abstract (ZH)**: 近年来，自主车辆（AV）技术取得了显著发展。然而，尽管一些行业参与者取得了显著成就，证明AV实际上安全的有力证据仍然不足，这可能促进公众对该技术的信任缺失，进而损害整个行业的发展以及相关社会影响。为了提高AV的安全性，提出了几种使用合成数据在虚拟仿真中应用的技术。特别是被称为极端案例（CCs）的最高风险数据是最有价值的，因为它们能够暴露并改进这些自主系统中的薄弱环节。在此背景下，本文进行了一项系统文献综述，旨在全面分析CC识别与生成的方法学，同时也指出现存空白并探讨合成数据对AV安全性和可靠性的进一步影响。根据选择标准，从1673篇论文中选择了110篇进行分析。这些被选中的论文被划分为多个类别，以回答八个相关联的研究问题。最后，本文推荐一种更集成的方法，所有利益相关方共同关注安全发展，并且在行业、学术界和监管机构之间进行积极合作。 
+
+---
+# Systematic Review of Cybersecurity in Banking: Evolution from Pre-Industry 4.0 to Post-Industry 4.0 in Artificial Intelligence, Blockchain, Policies and Practice 
+
+**Title (ZH)**: Banking领域的网络安全系统综述：从工业4.0前到工业4.0后的演变——人工智能、区块链、政策与实践 
+
+**Authors**: Tue Nhi Tran  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00070)  
+
+**Abstract**: Throughout the history from pre-industry 4.0 to post-industry 4.0, cybersecurity at banks has undergone significant changes. Pre-industry 4.0 cyber security at banks relied on individual security methods that were highly manual and had low accuracy. When moving to post-industry 4.0, cybersecurity at banks had a major turning point with security methods that combined different technologies such as Artificial Intelligence (AI), Blockchain, IoT, automating necessary processes and significantly increasing the defence layer for banks. However, along with the development of new technologies, the current challenge of cybersecurity at banks lies in scalability, high costs and resources in both money and time for R&D of defence methods along with the threat of high-tech cybercriminals growing and expanding. This report goes from introducing the importance of cybersecurity at banks, analyzing their management, operational and business objectives, evaluating pre-industry 4.0 technologies used for cybersecurity at banks to assessing post-industry 4.0 technologies focusing on Artificial Intelligence and Blockchain, discussing current policies and practices and ending with discussing key advantages and challenges for 4.0 technologies and recommendations for further developing cybersecurity at banks. 
+
+**Abstract (ZH)**: 从工业4.0前到工业4.0后，银行网络安全经历了显著变化：从工业4.0前依赖高度手动且准确性低的个体安全方法，到工业4.0后结合了人工智能、区块链、物联网等技术，自动化必要流程并显著增加银行防御层。然而，随着新技术的发展，银行网络安全当前面临的挑战包括可扩展性、高昂的研发成本和时间投入，以及高科技网络犯罪分子的威胁加大。本报告将从介绍银行网络安全的重要性、分析其管理、运营和业务目标、评估工业4.0前用于银行网络安全的技术，到评估工业4.0后以人工智能和区块链为重点的技术，讨论当前政策和实践，并最终讨论4.0技术的关键优势和挑战，以及对进一步发展银行网络安全的建议。 
+
+---
+# Societal Alignment Frameworks Can Improve LLM Alignment 
+
+**Title (ZH)**: 社会对齐框架可以提高LLM对齐程度 
+
+**Authors**: Karolina Stańczak, Nicholas Meade, Mehar Bhatia, Hattie Zhou, Konstantin Böttinger, Jeremy Barnes, Jason Stanley, Jessica Montgomery, Richard Zemel, Nicolas Papernot, Nicolas Chapados, Denis Therien, Timothy P. Lillicrap, Ana Marasović, Sylvie Delacroix, Gillian K. Hadfield, Siva Reddy  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00069)  
+
+**Abstract**: Recent progress in large language models (LLMs) has focused on producing responses that meet human expectations and align with shared values - a process coined alignment. However, aligning LLMs remains challenging due to the inherent disconnect between the complexity of human values and the narrow nature of the technological approaches designed to address them. Current alignment methods often lead to misspecified objectives, reflecting the broader issue of incomplete contracts, the impracticality of specifying a contract between a model developer, and the model that accounts for every scenario in LLM alignment. In this paper, we argue that improving LLM alignment requires incorporating insights from societal alignment frameworks, including social, economic, and contractual alignment, and discuss potential solutions drawn from these domains. Given the role of uncertainty within societal alignment frameworks, we then investigate how it manifests in LLM alignment. We end our discussion by offering an alternative view on LLM alignment, framing the underspecified nature of its objectives as an opportunity rather than perfect their specification. Beyond technical improvements in LLM alignment, we discuss the need for participatory alignment interface designs. 
+
+**Abstract (ZH)**: Recent progress in大型语言模型（LLMs）的Recent进展集中在生成符合人类期望和共享价值观的回应——这一过程被称为对齐。然而，由于人类价值观的复杂性与技术方法的狭窄性质之间固有的不匹配，LLMs对齐仍然具有挑战性。当前的对齐方法往往导致目标定义不准确，反映出更广泛的问题即不完全合同的存在，模型开发人员与模型之间的合同无法涵盖所有LLMs对齐场景。本文认为，提高LLMs对齐需要借鉴社会对齐框架的见解，包括社会、经济和合同对齐，并讨论这些领域中潜在的解决方案。鉴于社会对齐框架中的不确定性，我们探讨了它如何在LLMs对齐中显现。在讨论的结尾，我们提出了对LLMs对齐的一种替代观点，将目标定义不明确视为机遇而非完善其定义的机会。超越LLMs对齐的技术改进，我们讨论了参与式对齐接口设计的需求。 
+
+---
+# SAC-ViT: Semantic-Aware Clustering Vision Transformer with Early Exit 
+
+**Title (ZH)**: 具有早期退出的语义感知聚类视觉变换器 
+
+**Authors**: Youbing Hu, Yun Cheng, Anqi Lu, Dawei Wei, Zhijun Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00060)  
+
+**Abstract**: The Vision Transformer (ViT) excels in global modeling but faces deployment challenges on resource-constrained devices due to the quadratic computational complexity of its attention mechanism. To address this, we propose the Semantic-Aware Clustering Vision Transformer (SAC-ViT), a non-iterative approach to enhance ViT's computational efficiency. SAC-ViT operates in two stages: Early Exit (EE) and Semantic-Aware Clustering (SAC). In the EE stage, downsampled input images are processed to extract global semantic information and generate initial inference results. If these results do not meet the EE termination criteria, the information is clustered into target and non-target tokens. In the SAC stage, target tokens are mapped back to the original image, cropped, and embedded. These target tokens are then combined with reused non-target tokens from the EE stage, and the attention mechanism is applied within each cluster. This two-stage design, with end-to-end optimization, reduces spatial redundancy and enhances computational efficiency, significantly boosting overall ViT performance. Extensive experiments demonstrate the efficacy of SAC-ViT, reducing 62% of the FLOPs of DeiT and achieving 1.98 times throughput without compromising performance. 
+
+**Abstract (ZH)**: 基于语义感知聚类的视觉变压器（SAC-ViT）：一种高效的非迭代方法 
+
+---
+# African Gender Classification Using Clothing Identification Via Deep Learning 
+
+**Title (ZH)**: 基于深度学习的非洲性别分类研究：通过服装识别 
+
+**Authors**: Samuel Ozechi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00058)  
+
+**Abstract**: Human attribute identification and classification are crucial in computer vision, driving the development of innovative recognition systems. Traditional gender classification methods primarily rely on facial recognition, which, while effective, struggles under non-ideal conditions such as blurriness, side views, or partial occlusions. This study explores an alternative approach by leveraging clothing identification, specifically focusing on African traditional attire, which carries culturally significant and gender-specific features.
+We use the AFRIFASHION1600 dataset, a curated collection of 1,600 images of African traditional clothing labeled into two gender classes: male and female. A deep learning model, based on a modified VGG16 architecture and trained using transfer learning, was developed for classification. Data augmentation was applied to address the challenges posed by the relatively small dataset and to mitigate overfitting. The model achieved an accuracy of 87% on the test set, demonstrating strong predictive capability despite dataset imbalances favoring female samples.
+These findings highlight the potential of clothing-based identification as a complementary technique to facial recognition for gender classification in African contexts. Future research should focus on expanding and balancing datasets to enhance classification robustness and improve the applicability of clothing-based gender recognition systems. 
+
+**Abstract (ZH)**: 基于服装识别的非洲传统服饰性别分类研究 
+
+---
+# Deciphering the complaint aspects: Towards an aspect-based complaint identification model with video complaint dataset in finance 
+
+**Title (ZH)**: 解读投诉方面：面向金融领域基于视频投诉数据的方面导向投诉识别模型研究 
+
+**Authors**: Sarmistha Das, Basha Mujavarsheik, R E Zera Lyngkhoi, Sriparna Saha, Alka Maurya  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00054)  
+
+**Abstract**: In today's competitive marketing landscape, effective complaint management is crucial for customer service and business success. Video complaints, integrating text and image content, offer invaluable insights by addressing customer grievances and delineating product benefits and drawbacks. However, comprehending nuanced complaint aspects within vast daily multimodal financial data remains a formidable challenge. Addressing this gap, we have curated a proprietary multimodal video complaint dataset comprising 433 publicly accessible instances. Each instance is meticulously annotated at the utterance level, encompassing five distinct categories of financial aspects and their associated complaint labels. To support this endeavour, we introduce Solution 3.0, a model designed for multimodal aspect-based complaint identification task. Solution 3.0 is tailored to perform three key tasks: 1) handling multimodal features ( audio and video), 2) facilitating multilabel aspect classification, and 3) conducting multitasking for aspect classifications and complaint identification parallelly. Solution 3.0 utilizes a CLIP-based dual frozen encoder with an integrated image segment encoder for global feature fusion, enhanced by contextual attention (ISEC) to improve accuracy and efficiency. Our proposed framework surpasses current multimodal baselines, exhibiting superior performance across nearly all metrics by opening new ways to strengthen appropriate customer care initiatives and effectively assisting individuals in resolving their problems. 
+
+**Abstract (ZH)**: 在当今竞争激烈的营销环境中，有效的投诉管理对于客户服务和商业成功至关重要。结合文本和图像内容的视频投诉提供了宝贵的见解，有助于解决客户问题并阐述产品的优缺点。然而，在大量日常多模态金融数据中理解细微的投诉方面仍然是一项艰巨的挑战。为应对这一挑战，我们精心构建了一个包含433个公开实例的多模态视频投诉数据集。每个实例在语句级别详细标注了五个不同类别的金融方面及其相应的投诉标签。为此，我们引入了Solution 3.0模型，该模型旨在完成三项关键任务：1）处理多模态特征（音频和视频），2）促进多标签方面分类，3）并行进行方面分类和投诉识别的多任务处理。Solution 3.0利用基于CLIP的双冻结编码器结合图像段编码器进行全局特征融合，并通过上下文注意力（ISEC）提高准确性和效率。我们提出的框架超越了现有的多模态基线，几乎在所有指标上都表现出色，为加强适当客户关怀举措并有效帮助个人解决其问题开辟了新途径。 
+
+---
+# AI and Semantic Communication for Infrastructure Monitoring in 6G-Driven Drone Swarms 
+
+**Title (ZH)**: 基于6G驱动的无人机集群中的AI与语义通信的基础设施监控 
+
+**Authors**: Tasnim Ahmed, Salimur Choudhury  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00053)  
+
+**Abstract**: The adoption of unmanned aerial vehicles to monitor critical infrastructure is gaining momentum in various industrial domains. Organizational imperatives drive this progression to minimize expenses, accelerate processes, and mitigate hazards faced by inspection personnel. However, traditional infrastructure monitoring systems face critical bottlenecks-5G networks lack the latency and reliability for large-scale drone coordination, while manual inspections remain costly and slow. We propose a 6G-enabled drone swarm system that integrates ultra-reliable, low-latency communications, edge AI, and semantic communication to automate inspections. By adopting LLMs for structured output and report generation, our framework is hypothesized to reduce inspection costs and improve fault detection speed compared to existing methods. 
+
+**Abstract (ZH)**: 6G驱动的无人机蜂群系统用于监测关键基础设施 
+
+---
+# RURA-Net: A general disease diagnosis method based on Zero-Shot Learning 
+
+**Title (ZH)**: RURA-Net：一种基于零样本学习的通用疾病诊断方法 
+
+**Authors**: Yan Su, Qiulin Wu, Weizhen Li, Chengchang Pan, Honggang Qi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00052)  
+
+**Abstract**: The training of deep learning models relies on a large amount of labeled data. However, the high cost of medical labeling seriously hinders the development of deep learning in the medical field. Our study proposes a general disease diagnosis approach based on Zero-Shot Learning. The Siamese neural network is used to find similar diseases for the target diseases, and the U-Net segmentation model is used to accurately segment the key lesions of the disease. Finally, based on the ResNet-Agglomerative clustering algorithm, a clustering model is trained on a large number of sample data of similar diseases to obtain a approximate diagnosis of the target disease. Zero-Shot Learning of the target disease is then successfully achieved. To evaluate the validity of the model, we validated our method on a dataset of ophthalmic diseases in CFP modality. The external dataset was used to test its performance, and the accuracy=0.8395, precision=0.8094, recall=0.8463, F1 Score=0.8274, AUC=0.9226, which exceeded the indexes of most Few-Shot Learning and One-Shot Learning models. It proves that our method has great potential and reference value in the medical field, where annotation data is usually scarce and expensive to obtain. 
+
+**Abstract (ZH)**: 基于零样本学习的疾病诊断通用方法研究 
+
+---
+# Omni-SILA: Towards Omni-scene Driven Visual Sentiment Identifying, Locating and Attributing in Videos 
+
+**Title (ZH)**: Omni-SILA：面向全场景的视觉情感识别、定位与归因 
+
+**Authors**: Jiamin Luo, Jingjing Wang, Junxiao Ma, Yujie Jin, Shoushan Li, Guodong Zhou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00049)  
+
+**Abstract**: Prior studies on Visual Sentiment Understanding (VSU) primarily rely on the explicit scene information (e.g., facial expression) to judge visual sentiments, which largely ignore implicit scene information (e.g., human action, objection relation and visual background), while such information is critical for precisely discovering visual sentiments. Motivated by this, this paper proposes a new Omni-scene driven visual Sentiment Identifying, Locating and Attributing in videos (Omni-SILA) task, aiming to interactively and precisely identify, locate and attribute visual sentiments through both explicit and implicit scene information. Furthermore, this paper believes that this Omni-SILA task faces two key challenges: modeling scene and highlighting implicit scene beyond explicit. To this end, this paper proposes an Implicit-enhanced Causal MoE (ICM) approach for addressing the Omni-SILA task. Specifically, a Scene-Balanced MoE (SBM) and an Implicit-Enhanced Causal (IEC) blocks are tailored to model scene information and highlight the implicit scene information beyond explicit, respectively. Extensive experimental results on our constructed explicit and implicit Omni-SILA datasets demonstrate the great advantage of the proposed ICM approach over advanced Video-LLMs. 
+
+**Abstract (ZH)**: 基于全面场景驱动的视频情感识别、定位与归因任务（Omni-SILA） 
+
+---
+# Leveraging Large Models for Evaluating Novel Content: A Case Study on Advertisement Creativity 
+
+**Title (ZH)**: 利用大型模型评估新颖内容：广告创意案例研究 
+
+**Authors**: Zhaoyi Joey Hou, Adriana Kovashka, Xiang Lorraine Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00046)  
+
+**Abstract**: Evaluating creativity is challenging, even for humans, not only because of its subjectivity but also because it involves complex cognitive processes. Inspired by work in marketing, we attempt to break down visual advertisement creativity into atypicality and originality. With fine-grained human annotations on these dimensions, we propose a suit of tasks specifically for such a subjective problem. We also evaluate the alignment between state-of-the-art (SoTA) vision language models (VLM) and humans on our proposed benchmark, demonstrating both the promises and challenges of using VLMs for automatic creativity assessment. 
+
+**Abstract (ZH)**: 评估创造力具有挑战性，即使是对于人类而言，不仅由于其主观性，还由于其中涉及的复杂认知过程。受营销领域工作的启发，我们尝试将视觉广告创意分解为非典型性和原创性。通过在这些维度上进行细致的人工标注，我们提出了一系列专门针对此类主观问题的任务。我们还评估了最新视觉语言模型（VLM）与人类在我们提出的基准上的对齐情况，展示了使用视觉语言模型进行自动创造力评估的潜力与挑战。 
+
+---
+# VOILA: Evaluation of MLLMs For Perceptual Understanding and Analogical Reasoning 
+
+**Title (ZH)**: VOILA：评估MLLMs在感知理解和类比推理方面的表现 
+
+**Authors**: Nilay Yilmaz, Maitreya Patel, Yiran Lawrence Luo, Tejas Gokhale, Chitta Baral, Suren Jayasuriya, Yezhou Yang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00043)  
+
+**Abstract**: Multimodal Large Language Models (MLLMs) have become a powerful tool for integrating visual and textual information. Despite their exceptional performance on visual understanding benchmarks, measuring their ability to reason abstractly across multiple images remains a significant challenge. To address this, we introduce VOILA, a large-scale, open-ended, dynamic benchmark designed to evaluate MLLMs' perceptual understanding and abstract relational reasoning. VOILA employs an analogical mapping approach in the visual domain, requiring models to generate an image that completes an analogy between two given image pairs, reference and application, without relying on predefined choices. Our experiments demonstrate that the analogical reasoning tasks in VOILA present a challenge to MLLMs. Through multi-step analysis, we reveal that current MLLMs struggle to comprehend inter-image relationships and exhibit limited capabilities in high-level relational reasoning. Notably, we observe that performance improves when following a multi-step strategy of least-to-most prompting. Comprehensive evaluations on open-source models and GPT-4o show that on text-based answers, the best accuracy for challenging scenarios is 13% (LLaMa 3.2) and even for simpler tasks is only 29% (GPT-4o), while human performance is significantly higher at 70% across both difficulty levels. 
+
+**Abstract (ZH)**: 多模态大型语言模型（MLLMs）已成为整合视觉和文本信息的强大力量。尽管它们在视觉理解基准测试中表现出色，但评估其在多个图像之间进行抽象推理的能力仍然是一个重大挑战。为了解决这一问题，我们引入了VOILA，一个大规模、开放式、动态基准，旨在评估MLLMs的感知理解和抽象关系推理能力。VOILA采用视觉领域的类比映射方法，要求模型生成一个完成给定图像对（参考和应用）之间类比关系的图像，而无需依赖预定义的选择。我们的实验表明，VOILA中的类比推理任务对MLLMs构成了挑战。通过多层次分析，我们发现当前的MLLMs在理解跨图像关系以及在高层次关系推理方面能力有限。值得注意的是，我们观察到，遵循最少到最详细提示的多步策略可以提高性能。在开源模型和GPT-4o的全面评估中，对于基于文本的答案，在挑战性场景中最佳准确率为13%（LLaMa 3.2），即使是对于更简单的任务，准确率也只有29%（GPT-4o），而人类的表现在这两种难度级别上明显更高，达到70%。 
+
+---
+# An Analysis of Segment Anything 2 
+
+**Title (ZH)**: 对 Segment Anything 2 的分析 
+
+**Authors**: Clayton Bromley, Alexander Moore, Amar Saini, Doug Poland, Carmen Carrano  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00042)  
+
+**Abstract**: Video object segmentation (VOS) is a critical task in the development of video perception and understanding. The Segment-Anything Model 2 (SAM 2), released by Meta AI, is the current state-of-the-art architecture for end-to-end VOS. SAM 2 performs very well on both clean video data and augmented data, and completely intelligent video perception requires an understanding of how this architecture is capable of achieving such quality results. To better understand how each step within the SAM 2 architecture permits high-quality video segmentation, we pass a variety of complex video transformations through the architecture and measure the impact at each stage of the process. We observe that each progressive stage enables the filtering of complex transformation noise and the emphasis of the object of interest. Our contributions include the creation of complex transformation video datasets, an analysis of how each stage of the SAM 2 architecture interprets these transformations, and visualizations of segmented objects through each stage. By better understanding how each model structure impacts overall video understanding, VOS development can work to improve real-world applicability and performance tracking, localizing, and segmenting objects despite complex cluttered scenes and obscurations. 
+
+**Abstract (ZH)**: 视频对象分割（VOS）是视频感知与理解发展中的一项关键任务。Meta AI发布的Segment-Anything Model 2 (SAM 2)是当前端到端VOS的最优架构。SAM 2在干净视频数据和增强数据上表现非常出色，实现如此高质量结果的能力对于完全智能化视频感知至关重要。为了更好地理解SAM 2架构中的每一阶段如何支持高质量视频分割，我们通过对架构施加各种复杂的视频变换并测量各阶段的影响，来分析这一过程。我们观察到每一逐步阶段都能过滤复杂变换噪声并强调目标对象。我们的贡献包括创建复杂的视频变换数据集、分析SAM 2架构每一阶段如何解释这些变换、并展示通过每一阶段分割对象的可视化。通过更好地理解每一模型结构对整体视频理解的影响，VOS开发可以致力于改进实际应用中的适用性和性能，即便是在复杂拥挤场景和遮挡下也能定位和分割对象。 
+
+---
+# from Benign import Toxic: Jailbreaking the Language Model via Adversarial Metaphors 
+
+**Title (ZH)**: 从良性转化为恶意：通过对抗隐喻突破语言模型 
+
+**Authors**: Yu Yan, Sheng Sun, Zenghao Duan, Teli Liu, Min Liu, Zhiyi Yin, Qi Li, Jiangyu Lei  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00038)  
+
+**Abstract**: Current studies have exposed the risk of Large Language Models (LLMs) generating harmful content by jailbreak attacks. However, they overlook that the direct generation of harmful content from scratch is more difficult than inducing LLM to calibrate benign content into harmful forms. In our study, we introduce a novel attack framework that exploits AdVersArial meTAphoR (AVATAR) to induce the LLM to calibrate malicious metaphors for jailbreaking. Specifically, to answer harmful queries, AVATAR adaptively identifies a set of benign but logically related metaphors as the initial seed. Then, driven by these metaphors, the target LLM is induced to reason and calibrate about the metaphorical content, thus jailbroken by either directly outputting harmful responses or calibrating residuals between metaphorical and professional harmful content. Experimental results demonstrate that AVATAR can effectively and transferable jailbreak LLMs and achieve a state-of-the-art attack success rate across multiple advanced LLMs. 
+
+**Abstract (ZH)**: 当前的研究揭示了大型语言模型（LLMs）通过破解攻击生成有害内容的风险。然而，这些研究忽视了从头生成有害内容比诱导LLMs将良性内容转变为有害形式更为困难。在我们的研究中，我们引入了一个新的攻击框架，利用Adversarial MetaPHOR (AVATAR) 诱导LLMs生成恶意隐喻以实现破解。具体而言，为了回答有害查询，AVATAR会自适应地识别一组良性但逻辑相关的隐喻作为初始种子。然后，在这些隐喻的驱动下，目标LLM被诱导进行隐喻内容的推理和校准，从而通过直接输出有害回复或校准隐喻与专业有害内容之间的残差来实现破解。实验结果表明，AVATAR能够有效且可移植地破解LLMs，并在多个高级LLM上实现了最先进的攻击成功率。 
+
+---
+# Zero-Shot Defense Against Toxic Images via Inherent Multimodal Alignment in LVLMs 
+
+**Title (ZH)**: 零样本防御针对有毒图像的内在多模态对齐在LVLMs中 
+
+**Authors**: Wei Zhao, Zhe Li, Yige Li, Jun Sun  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00037)  
+
+**Abstract**: Large Vision-Language Models (LVLMs) have made significant strides in multimodal comprehension, thanks to extensive pre-training and fine-tuning on large-scale visual datasets. However, despite their robust textual safety mechanisms, they remain vulnerable to harmful visual inputs. Existing safeguards-typically relying on pre-filtering or fine-tuning-incur high costs and diminish overall utility. To address this critical vulnerability, we introduce SafeCLIP, a lightweight method that leverages LVLMs inherent multimodal alignment for zero-shot toxic image detection. By projecting CLIPs discarded CLS token into its text space and matching it with toxic descriptors, SafeCLIP detects harmful content without any architectural changes-adding minimal latency and enabling dynamic safety corrections during inference and this http URL show that SafeCLIP achieves a 66.9% defense success rate with only 3.2% false positive rate and 7.2% overhead. In contrast, state-of-the-art methods achieve 52.9% success but have a 10.7% false positive rate and 210% overhead. Our work demonstrates that leveraging inherent multimodal alignment can yield efficient, low-cost LVLM safety. Code is available at this http URL. 
+
+**Abstract (ZH)**: 大型多模态语言视觉模型（LVLMs）在多模态理解方面取得了显著进展，得益于其在大规模视觉数据集上的广泛预训练和微调。然而，尽管它们具有稳健的文本安全性机制，仍然容易受到有害视觉输入的影响。现有的防护措施通常依赖于预过滤或微调，会导致高成本并降低整体实用性。为此，我们引入了SafeCLIP，一种轻量级的方法，利用LVLMs固有的多模态对齐进行零样本有毒图像检测。SafeCLIP通过将CLIP丢弃的CLS-token投影到文本空间并与有毒描述符匹配来检测有害内容，无需架构更改，增加的延迟最少，并能够在推理期间实现动态安全性修正。实验结果表明，SafeCLIP达到了66.9%的防御成功率，仅产生3.2%的误报率和7.2%的开销。相比之下，最先进的方法成功率仅为52.9%，误报率为10.7%，开销为210%。我们的研究证明，利用固有的多模态对齐可以实现高效且低成本的LVLM安全性。相关代码可在<此链接>获取。 
+
+---
+# A Novel Spatiotemporal Correlation Anomaly Detection Method Based on Time-Frequency-Domain Feature Fusion and a Dynamic Graph Neural Network in Wireless Sensor Network 
+
+**Title (ZH)**: 基于时频域特征融合和动态图神经网络的新型时空相关异常检测方法在无线传感器网络中的应用 
+
+**Authors**: Miao Ye, Zhibang Jiang, Xingsi Xue, Xingwang Li, Peng Wen, Yong Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00036)  
+
+**Abstract**: Attention-based transformers have played an important role in wireless sensor network (WSN) timing anomaly detection due to their ability to capture long-term dependencies. However, there are several issues that must be addressed, such as the fact that their ability to capture long-term dependencies is not completely reliable, their computational complexity levels are high, and the spatiotemporal features of WSN timing data are not sufficiently extracted for detecting the correlation anomalies of multinode WSN timing data. To address these limitations, this paper proposes a WSN anomaly detection method that integrates frequency-domain features with dynamic graph neural networks (GNN) under a designed self-encoder reconstruction framework. First, the discrete wavelet transform effectively decomposes trend and seasonal components of time series to solve the poor long-term reliability of transformers. Second, a frequency-domain attention mechanism is designed to make full use of the difference between the amplitude distributions of normal data and anomalous data in this domain. Finally, a multimodal fusion-based dynamic graph convolutional network (MFDGCN) is designed by combining an attention mechanism and a graph convolutional network (GCN) to adaptively extract spatial correlation features. A series of experiments conducted on public datasets and their results demonstrate that the anomaly detection method designed in this paper exhibits superior precision and recall than the existing methods do, with an F1 score of 93.5%, representing an improvement of 2.9% over that of the existing models. 
+
+**Abstract (ZH)**: 基于频率域特征与动态图神经网络的无线传感器网络定时异常检测方法 
+
+---
+# Constraining Sequential Model Editing with Editing Anchor Compression 
+
+**Title (ZH)**: 基于编辑锚压缩的序列模型编辑约束 
+
+**Authors**: Hao-Xiang Xu, Jun-Yu Ma, Zhen-Hua Ling, Ningyu Zhang, Jia-Chen Gu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00035)  
+
+**Abstract**: Large language models (LLMs) struggle with hallucinations due to false or outdated knowledge. Given the high resource demands of retraining these models, there is an increasing focus on developing model editing. However, the general abilities of LLMs across downstream tasks are prone to significant degradation during sequential editing. This paper statistically observes that the parameter matrix after editing exhibits a significant deviation compared to its previous state as the number of edits increases. This serious deviation affects the original knowledge associations within LLMs and leads to the degradation of their general abilities. To this end, a framework termed Editing Anchor Compression (EAC) is proposed to constrain the deviation of the parameter matrix during sequential editing. It compresses the editing information by selecting editing anchors that are important in encoding new relations without deviating too much from the original matrix, thereby preserving the general abilities. Experiments of applying EAC to two popular editing methods on three LLMs across four tasks are conducted. Evaluation results show that EAC effectively minimizes unreasonable deviations caused by model editing, preserving over 70% of the general abilities while better retaining the editing knowledge compared to the original counterpart methods. 
+
+**Abstract (ZH)**: 大型语言模型（LLMs）因虚假或过时的知识而导致幻觉问题。鉴于重新训练这些模型所需资源的高需求，越来越多的研究集中在开发模型编辑方法上。然而，在顺序编辑过程中，LLMs在下游任务上的普遍能力容易出现显著下降。本文通过统计观察发现，在编辑次数增加时，参数矩阵与之前的状态相比表现出显著的偏差。这种严重的偏差影响了LLMs中的原始知识关联，导致其普遍能力下降。为此，提出了一种称为编辑锚压缩（EAC）的框架，在顺序编辑过程中限制参数矩阵的偏差。EAC通过选择在编码新关系方面重要的编辑锚点来压缩编辑信息，同时不偏离原始矩阵太多，从而保留普遍能力。在三个LLM上针对四个任务对两种流行编辑方法应用EAC的实验结果显示，EAC有效地最小化了由模型编辑引起的不合理偏差，同时保留了超过70%的普遍能力，并且相比原始方法更好地保留了编辑知识。 
+
+---
+# MergeIT: From Selection to Merging for Efficient Instruction Tuning 
+
+**Title (ZH)**: MergeIT：从选择到合并的高效指令调优 
+
+**Authors**: Hongyi Cai, Yuqian Fu, Hongming Fu, Bo Zhao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00034)  
+
+**Abstract**: Instruction tuning is crucial for optimizing Large Language Models (LLMs), yet mainstream data selection methods heavily rely on LLMs as instruction quality scorers, leading to high computational costs and reduced data diversity. To address these limitations, we propose MergeIT, a novel LLM-based Merging strategy for better Instruction Tuning that shifts the focus from selection to synthesis. MergeIT operates in two stages: first, topic-aware filtering clusters and refines the dataset, preserving diversity while eliminating redundancy without relying on LLM-based scoring. Second, LLM-based merging synthesizes semantically similar instructions into more informative and compact training data, enhancing data richness while further reducing dataset size. Experimental results demonstrate that MergeIT enables efficient, diverse, and scalable instruction selection and synthesis, establishing LLM-based merging as a promising alternative to conventional scoring-based selection methods for instruction tuning. Our source code and datasets are now available at this https URL 
+
+**Abstract (ZH)**: 基于LLM的合成策略MergeIT：一种用于更好的指令调优的数据合并方法 
+
+---
+# Detecting LLM-Generated Korean Text through Linguistic Feature Analysis 
+
+**Title (ZH)**: 通过语言特征分析检测LLM生成的韩文文本 
+
+**Authors**: Shinwoo Park, Shubin Kim, Do-Kyung Kim, Yo-Sub Han  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00032)  
+
+**Abstract**: The rapid advancement of large language models (LLMs) increases the difficulty of distinguishing between human-written and LLM-generated text. Detecting LLM-generated text is crucial for upholding academic integrity, preventing plagiarism, protecting copyrights, and ensuring ethical research practices. Most prior studies on detecting LLM-generated text focus primarily on English text. However, languages with distinct morphological and syntactic characteristics require specialized detection approaches. Their unique structures and usage patterns can hinder the direct application of methods primarily designed for English. Among such languages, we focus on Korean, which has relatively flexible spacing rules, a rich morphological system, and less frequent comma usage compared to English. We introduce KatFish, the first benchmark dataset for detecting LLM-generated Korean text. The dataset consists of text written by humans and generated by four LLMs across three genres.
+By examining spacing patterns, part-of-speech diversity, and comma usage, we illuminate the linguistic differences between human-written and LLM-generated Korean text. Building on these observations, we propose KatFishNet, a detection method specifically designed for the Korean language. KatFishNet achieves an average of 19.78% higher AUROC compared to the best-performing existing detection method. 
+
+**Abstract (ZH)**: 大型语言模型（LLMs）的快速发展增加了区分人类撰写和LLM生成文本的难度。检测LLM生成的文本对于维护学术诚信、防止学术剽窃、保护版权和确保伦理研究实践至关重要。大多数关于检测LLM生成文本的研究主要集中在英语文本上。然而，具有不同词形和句法特征的语言需要专门的检测方法。由于它们独特的结构和使用模式，这些语言的方法往往难以直接应用于英语主要设计的方法。在这些语言中，我们重点关注韩语，韩语有相对较灵活的空格规则、丰富的形态系统以及比英语更少的逗号使用。我们介绍了KatFish，这是首个用于检测LLM生成韩语文本的标准数据集。该数据集包括人类撰写的文本和由四种LLM在三个体裁中生成的文本。通过分析空格模式、词性多样性和逗号使用，我们揭示了人类撰写和LLM生成韩语文本之间的语言差异。在此基础上，我们提出了KatFishNet，这是一种专门针对韩语设计的检测方法。KatFishNet在平均AUROC方面比现有最佳检测方法高出19.78%。 
+
+---
+# Efficient Test-Time Scaling via Self-Calibration 
+
+**Title (ZH)**: 高效的测试时缩放通过自校准 
+
+**Authors**: Chengsong Huang, Langlin Huang, Jixuan Leng, Jiacheng Liu, Jiaxin Huang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00031)  
+
+**Abstract**: Increasing test-time computation is a straightforward approach to enhancing the quality of responses in Large Language Models (LLMs). While Best-of-N sampling and Self-Consistency with majority voting are simple and effective, they require a fixed number of sampling responses for each query, regardless of its complexity. This could result in wasted computation for simpler questions and insufficient exploration for more challenging ones. In this work, we argue that model confidence of responses can be used for improving the efficiency of test-time scaling. Unfortunately, LLMs are known to be overconfident and provide unreliable confidence estimation. To address this limitation, we introduce Self-Calibration by distilling Self-Consistency-derived confidence into the model itself. This enables reliable confidence estimation at test time with one forward pass. We then design confidence-based efficient test-time scaling methods to handle queries of various difficulty, such as Early-Stopping for Best-of-N and Self-Consistency with calibrated confidence. Experiments on three LLMs across six datasets demonstrate the effectiveness of our approach. Specifically, applying confidence-based Early Stopping to Best-of-N improves MathQA accuracy from 81.0 to 83.6 with a sample budget of 16 responses, indicating the efficacy of confidence-based sampling strategy at inference time. 
+
+**Abstract (ZH)**: 使用模型响应的信心提高大型语言模型测试时放规模效率 
+
+---
+# Game-Theoretic Regularized Self-Play Alignment of Large Language Models 
+
+**Title (ZH)**: 基于博弈的正则化自我对弈大型语言模型对齐 
+
+**Authors**: Xiaohang Tang, Sangwoong Yoon, Seongho Son, Huizhuo Yuan, Quanquan Gu, Ilija Bogunovic  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00030)  
+
+**Abstract**: Self-play alignment algorithms have been developed as effective methods for fine-tuning large language models (LLMs), formulating preference optimization as a two-player game. However, the regularization with respect to the reference policy, which is crucial for mitigating over-optimization, has been insufficiently investigated in self-play alignment. In this paper, we show that our regularization method can improve the unregularized self-play significantly. To study the impact of different regularizations in self-play alignment, we propose Regularized Self-Play Policy Optimization (RSPO). This generalized framework regularizes the self-play by simply adding a chosen regularization term into the loss while maintaining provable last-iterate convergence to the Nash Equilibrium of the corresponding regularized game. Surprisingly, empirical evaluations using the Mistral-7B-Instruct base model reveal that forward KL divergence regularization reduces response length in RSPO, whereas reverse KL divergence markedly improves raw win rates. RSPO with a linear combination of forward and reverse KL divergence regularization substantially increases the length-controlled win rate in AlpacaEval-2, elevating the unregularized self-play alignment method (SPPO) from $28.53\%$ to $35.44\%$. Finally, we show that RSPO also improves the response diversity. 
+
+**Abstract (ZH)**: 自游戏对齐算法中的正则化方法对大型语言模型微调的影响研究：Regularized Self-Play Policy Optimization 
+
+---
+# Streaming Looking Ahead with Token-level Self-reward 
+
+**Title (ZH)**: Streaming Looking Ahead with Token-level Self-Reward 
+
+**Authors**: Hongming Zhang, Ruixin Hong, Dong Yu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00029)  
+
+**Abstract**: Autoregressive decoding algorithms that use only past information often cannot guarantee the best performance. Recently, people discovered that looking-ahead algorithms such as Monte Carlo Tree Search (MCTS) with external reward models (RMs) can significantly improve models' output by allowing them to think ahead and leverage future outputs and associated rewards to guide the current generation. Such techniques can help the reinforcement fine-tuning phase by sampling better trajectories and the inference phase by selecting the better output. However, their high computational cost limits their applications, especially in streaming scenarios. To address this issue, we propose equipping the policy model with token-level self-reward modeling (TRM) capability to eliminate the need for external models and extra communication. We name the new architecture as Reward Transformer. In addition, we propose a streaming-looking-ahead (SLA) algorithm to further boost search efficiency with better parallelization. Experiments show that SLA achieves an overall win rate of 79.7\% against the baseline greedy decoding algorithm on three general-domain datasets with a frozen policy model while maintaining streaming efficiency. If we combine SLA with reinforcement fine-tuning techniques such as DPO, SLA achieves an overall win rate of 89.4\%. 
+
+**Abstract (ZH)**: 自回归解码算法通常仅使用过去信息，难以保证最佳性能。最近的研究发现，通过引入前瞻算法如结合外部奖励模型（RMs）的蒙特卡罗树搜索（MCTS），可以在允许模型提前思考并利用未来输出及其相关奖励来指导当前生成的过程中显著提高模型输出。这些技术可以通过采样更好的轨迹来帮助强化微调阶段，并通过选择更好的输出来提高推理阶段的效率。然而，它们的高计算成本限制了它们的应用，尤其是在流式场景中。为解决这一问题，我们提出为策略模型配备令牌级别自奖励建模（TRM）能力，以消除对外部模型和额外通信的需求。我们将这一新架构命名为奖励变换器。此外，我们提出了一种流式前瞻（SLA）算法，以通过更好的并行化进一步提升搜索效率。实验结果显示，SLA在三个通用领域数据集上对基线贪婪解码算法实现了79.7%的整体胜率，同时保持了流式效率。如果将SLA与DPO等强化微调技术结合使用，SLA实现了89.4%的整体胜率。 
+
+---
+# Genetics-Driven Personalized Disease Progression Model 
+
+**Title (ZH)**: 遗传驱动的个性化疾病进展模型 
+
+**Authors**: Haoyu Yang, Sanjoy Dey, Pablo Meyer  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00028)  
+
+**Abstract**: Modeling disease progression through multiple stages is critical for clinical decision-making for chronic diseases, e.g., cancer, diabetes, chronic kidney diseases, and so on. Existing approaches often model the disease progression as a uniform trajectory pattern at the population level. However, chronic diseases are highly heterogeneous and often have multiple progression patterns depending on a patient's individual genetics and environmental effects due to lifestyles. We propose a personalized disease progression model to jointly learn the heterogeneous progression patterns and groups of genetic profiles. In particular, an end-to-end pipeline is designed to simultaneously infer the characteristics of patients from genetic markers using a variational autoencoder and how it drives the disease progressions using an RNN-based state-space model based on clinical observations. Our proposed model shows improvement on real-world and synthetic clinical data. 
+
+**Abstract (ZH)**: 通过多阶段建模慢性疾病进展对于临床决策至关重要：一种个性化疾病进展模型 
+
+---
+# Evaluating Large Language Models on the Spanish Medical Intern Resident (MIR) Examination 2024/2025:A Comparative Analysis of Clinical Reasoning and Knowledge Application 
+
+**Title (ZH)**: 评价大型语言模型在2024/2025年西班牙医学实习居民（MIR）考试中的临床推理和知识应用能力：一种比较分析 
+
+**Authors**: Carlos Luengo Vera, Ignacio Ferro Picon, M. Teresa del Val Nunez, Jose Andres Gomez Gandia, Antonio de Lucas Ancillo, Victor Ramos Arroyo, Carlos Milan Figueredo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00025)  
+
+**Abstract**: This study presents a comparative evaluation of 22 large language models LLMs on the Spanish Medical Intern Resident MIR examinations for 2024 and 2025 with a focus on clinical reasoning domain specific expertise and multimodal processing capabilities The MIR exam consisting of 210 multiple choice questions some requiring image interpretation serves as a stringent benchmark for assessing both factual recall and complex clinical problem solving skills Our investigation encompasses general purpose models such as GPT4 Claude LLaMA and Gemini as well as specialized fine tuned systems like Miri Pro which leverages proprietary Spanish healthcare data to excel in medical contexts
+Recent market entries Deepseek and Grok have further enriched the evaluation landscape particularly for tasks that demand advanced visual and semantic analysis The findings indicate that while general purpose LLMs perform robustly overall fine tuned models consistently achieve superior accuracy especially in addressing nuanced domain specific challenges A modest performance decline observed between the two exam cycles appears attributable to the implementation of modified questions designed to mitigate reliance on memorization
+The results underscore the transformative potential of domain specific fine tuning and multimodal integration in advancing medical AI applications They also highlight critical implications for the future integration of LLMs into medical education training and clinical decision making emphasizing the importance of balancing automated reasoning with ethical and context aware judgment 
+
+**Abstract (ZH)**: 本研究对22个大型语言模型在2024年和2025年西班牙医学住院医师MIR考试中的表现进行了比较评估，重点考察了临床推理领域的专业能力和多模态处理能力。MIR考试由210道多项选择题组成，其中一些题目要求进行图像解读，作为衡量事实回忆和复杂临床问题解决能力的严格基准。本调查涵盖了通用模型（如GPT4、Claude、LLaMA和Gemini）以及像Miri Pro这样的专门微调系统，后者利用专有西班牙医疗服务数据在医疗场景中表现出色。
+
+近期市场上的Deepseek和Grok进一步丰富了评估景观，特别是在需要高级视觉和语义分析的任务中。研究发现，虽然通用大型语言模型整体表现稳健，但专门微调模型在应对细微的专业领域挑战时始终表现出更优的准确性。观察到的两次考试周期之间的轻微性能下降可归因于设计了修改后的题目，旨在减少对记忆的依赖。
+
+这些结果突显了特定领域微调和多模态整合在推动医疗人工智能应用方面的潜力，也强调了在未来将大型语言模型整合到医疗教育、培训和临床决策中时平衡自动推理与伦理和情境意识判断的重要性。 
+
+---
+# KVCrush: Key value cache size-reduction using similarity in head-behaviour 
+
+**Title (ZH)**: KVCrush: 基于头部行为相似性的键值缓存大小缩减 
+
+**Authors**: Gopi Krishna Jha, Sameh Gobriel, Liubov Talamanova, Alexander Kozlov, Nilesh Jain  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00022)  
+
+**Abstract**: Key-value (KV) caching has emerged as a crucial optimization technique for accelerating inference in large language models (LLMs). By allowing the attention operation to scale linearly rather than quadratically with the total sequence length, KV caching significantly enhances generation throughput. However, due to large context lengths in the modern LLMs, the memory footprint of the KV is a huge bottleneck for model deployment directly impacting the model's batch size, hindering its ability to deliver high-throughput. Existing research addresses this challenge using several techniques, such as discarding low-attention tokens, quantization, and matrix approximation which typically lead to a negative impact on the model accuracy.
+In this paper, We propose KVCrush technology which can be combined with many KV compression technologies to improve the model accuracy at a much smaller memory. KVCrush provides an alternate representation scheme for key-value states, along with a low-overhead token pruning algorithm that accounts for the token distribution in the KV cache, which in turn allows for a a smaller footprint while maintaining the accuracy of the model. Based on our results, KVCrush reduces LongBench KV Cache size by 4x with less than 1% accuracy drop and achieves state-of-the-art average accuracy with minimal overhead, incurring less than 0.5% total inference latency. KVCrush not only outperforms the accuracy of state-of-the-art importance-based token retention schemes but is also compatible with typical practical LLM deployments using KV cache paging schemes such as vLLM and mixed precision quantization. 
+
+**Abstract (ZH)**: KVCrush技术：在更小内存 footprint 下提升模型精度的新方法 
+
+---
+# A Systematic Review of Open Datasets Used in Text-to-Image (T2I) Gen AI Model Safety 
+
+**Title (ZH)**: Open 数据集在文本到图像（T2I）生成式AI模型安全中的系统性Review 
+
+**Authors**: Rakeen Rouf, Trupti Bavalatti, Osama Ahmed, Dhaval Potdar, Faraz Jawed  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00020)  
+
+**Abstract**: Novel research aimed at text-to-image (T2I) generative AI safety often relies on publicly available datasets for training and evaluation, making the quality and composition of these datasets crucial. This paper presents a comprehensive review of the key datasets used in the T2I research, detailing their collection methods, compositions, semantic and syntactic diversity of prompts and the quality, coverage, and distribution of harm types in the datasets. By highlighting the strengths and limitations of the datasets, this study enables researchers to find the most relevant datasets for a use case, critically assess the downstream impacts of their work given the dataset distribution, particularly regarding model safety and ethical considerations, and also identify the gaps in dataset coverage and quality that future research may address. 
+
+**Abstract (ZH)**: 面向文本到图像生成AI安全的新型研究往往依赖于公开数据集进行训练和评估，因此这些数据集的质量和组成至关重要。本文对文本到图像研究中使用的关键数据集进行了全面回顾，详细介绍了这些数据集的采集方法、组成、提示的语义和语法多样性，以及数据集中危害类型的质量、覆盖范围和分布。通过突出这些数据集的优势和局限性，本研究使研究人员能够找到最相关的数据集用于特定应用场景，批判性地评估其工作下游影响，特别是关于模型安全和伦理考量，并识别未来研究可能解决的数据集覆盖范围和质量的不足。 
+
+---
+# Eeyore: Realistic Depression Simulation via Supervised and Preference Optimization 
+
+**Title (ZH)**: Eeyore: 基于监督和偏好优化的现实抑郁症模拟 
+
+**Authors**: Siyang Liu, Bianca Brie, Wenda Li, Laura Biester, Andrew Lee, James Pennebaker, Rada Mihalcea  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.00018)  
+
+**Abstract**: Large Language Models (LLMs) have been previously explored for mental healthcare training and therapy client simulation, but they still fall short in authentically capturing diverse client traits and psychological conditions. We introduce \textbf{Eeyore}, an 8B model optimized for realistic depression simulation through a structured alignment framework, incorporating expert input at every stage. First, we systematically curate real-world depression-related conversations, extracting depressive traits to guide data filtering and psychological profile construction, and use this dataset to instruction-tune Eeyore for profile adherence. Next, to further enhance realism, Eeyore undergoes iterative preference optimization -- first leveraging model-generated preferences and then calibrating with a small set of expert-annotated preferences. Throughout the entire pipeline, we actively collaborate with domain experts, developing interactive interfaces to validate trait extraction and iteratively refine structured psychological profiles for clinically meaningful role-play customization. Despite its smaller model size, the Eeyore depression simulation outperforms GPT-4o with SOTA prompting strategies, both in linguistic authenticity and profile adherence. 
+
+**Abstract (ZH)**: 大规模语言模型（LLMs）已在心理健康培训和治疗模拟中得到探索，但仍无法真实地捕捉多样化的患者特质和心理状态。我们引入了\textbf{Eeyore}，一个通过结构化对齐框架优化、并结合每个阶段的专家输入以实现真实的抑郁模拟的8B模型。首先，我们系统地整理了与抑郁相关的现实对话，提取抑郁特质以指导数据过滤和心理档案构建，并使用该数据集对Eeyore进行指令调优，使其符合心理档案。然后，为了进一步增强真实感，Eeyore经历了迭代的偏好优化——首先利用模型生成的偏好，然后与少量专家标注的偏好进行校准。在整个流程中，我们积极与领域专家合作，开发交互界面以验证特质提取，并迭代细化结构化心理档案以实现临床意义的角色扮演定制。尽管模型规模较小，但Eeyore的抑郁模拟在语言的真实性及心理档案贴合度上均优于具有最新技术策略的GPT-4o。 
+
+---
