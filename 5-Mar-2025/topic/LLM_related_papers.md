@@ -1,0 +1,808 @@
+# MindBridge: Scalable and Cross-Model Knowledge Editing via Memory-Augmented Modality 
+
+**Title (ZH)**: MindBridge：基于记忆增强模态的可扩展跨模型知识编辑 
+
+**Authors**: Shuaike Li, Kai Zhang, Qi Liu, Enhong Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02701)  
+
+**Abstract**: Knowledge editing is a technique for efficiently and accurately updating the knowledge of large language models (LLMs) to alleviate obsolescence and correct errors. However, most existing methods overfit to specific models, causing edited knowledge to be discarded during each LLM update and requiring frequent re-editing, which is particularly burdensome in today's rapidly evolving open-source community. To address this issue, we propose the problem of cross-model knowledge editing and introduce MindBridge, a scalable solution inspired by the low coupling between modality processing and LLMs in multi-modal models. MindBridge introduces the novel concept of memory modality, which encodes edited knowledge as an independent modality. It first performs LLM-agnostic pre-training of the memory modality and then integrates it with various LLMs. Extensive experiments on multiple LLMs and popular knowledge editing datasets demonstrate that MindBridge achieves superior performance even in editing tens of thousands of knowledge entries and can flexibly adapt to different LLMs. Our code is available at this https URL. 
+
+**Abstract (ZH)**: 跨模型知识编辑：MindBridge——一种可扩展的解决方案 
+
+---
+# The Effectiveness of Large Language Models in Transforming Unstructured Text to Standardized Formats 
+
+**Title (ZH)**: 大型语言模型在转换非结构化文本为标准化格式方面的有效性 
+
+**Authors**: William Brach, Kristián Košťál, Michal Ries  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02650)  
+
+**Abstract**: The exponential growth of unstructured text data presents a fundamental challenge in modern data management and information retrieval. While Large Language Models (LLMs) have shown remarkable capabilities in natural language processing, their potential to transform unstructured text into standardized, structured formats remains largely unexplored - a capability that could revolutionize data processing workflows across industries. This study breaks new ground by systematically evaluating LLMs' ability to convert unstructured recipe text into the structured Cooklang format. Through comprehensive testing of four models (GPT-4o, GPT-4o-mini, Llama3.1:70b, and Llama3.1:8b), an innovative evaluation approach is introduced that combines traditional metrics (WER, ROUGE-L, TER) with specialized metrics for semantic element identification. Our experiments reveal that GPT-4o with few-shot prompting achieves breakthrough performance (ROUGE-L: 0.9722, WER: 0.0730), demonstrating for the first time that LLMs can reliably transform domain-specific unstructured text into structured formats without extensive training. Although model performance generally scales with size, we uncover surprising potential in smaller models like Llama3.1:8b for optimization through targeted fine-tuning. These findings open new possibilities for automated structured data generation across various domains, from medical records to technical documentation, potentially transforming the way organizations process and utilize unstructured information. 
+
+**Abstract (ZH)**: 无结构文本数据的指数增长为现代数据管理和信息检索带来了一项基础挑战。虽然大型语言模型（LLMs）在自然语言处理方面表现出色，但它们将无结构文本转换为标准化、结构化格式的潜力尚未得到充分探讨——这种能力有可能革新各行业数据处理工作流程。本研究首次系统评估了LLMs将无结构食谱文本转换为结构化Cooklang格式的能力。通过四种模型（GPT-4o、GPT-4o-mini、Llama3.1:70b 和 Llama3.1:8b）的全面测试，提出了结合传统指标（WER、ROUGE-L、TER）和语义元素识别特殊指标的创新评估方法。实验结果显示，带有少量提示的GPT-4o模型取得了突破性能（ROUGE-L: 0.9722，WER: 0.0730），首次证明LLMs可以在无需大量训练的情况下可靠地将领域特定的无结构文本转换为结构化格式。虽然模型性能通常随规模扩大而提升，但研究发现，如Llama3.1:8b这样的小型模型通过目标微调具有优化潜力。这些发现为各领域自动化结构化数据生成开辟了新可能性，从医疗记录到技术文档，可能彻底改变组织处理和利用无结构信息的方式。 
+
+---
+# Playing games with Large language models: Randomness and strategy 
+
+**Title (ZH)**: 用大型语言模型玩策略游戏：随机性和策略 
+
+**Authors**: Alicia Vidler, Toby Walsh  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02582)  
+
+**Abstract**: Playing games has a long history of describing intricate interactions in simplified forms. In this paper we explore if large language models (LLMs) can play games, investigating their capabilities for randomisation and strategic adaptation through both simultaneous and sequential game interactions. We focus on GPT-4o-Mini-2024-08-17 and test two games between LLMs: Rock Paper Scissors (RPS) and games of strategy (Prisoners Dilemma PD). LLMs are often described as stochastic parrots, and while they may indeed be parrots, our results suggest that they are not very stochastic in the sense that their outputs - when prompted to be random - are often very biased. Our research reveals that LLMs appear to develop loss aversion strategies in repeated games, with RPS converging to stalemate conditions while PD shows systematic shifts between cooperative and competitive outcomes based on prompt design. We detail programmatic tools for independent agent interactions and the Agentic AI challenges faced in implementation. We show that LLMs can indeed play games, just not very well. These results have implications for the use of LLMs in multi-agent LLM systems and showcase limitations in current approaches to model output for strategic decision-making. 
+
+**Abstract (ZH)**: 大型语言模型能否玩游戏：探索其在随机化和战略适应方面的能力——以GPT-4o-Mini-2024-08-17为例，测试石头剪刀布和囚徒困境游戏 
+
+---
+# PennyLang: Pioneering LLM-Based Quantum Code Generation with a Novel PennyLane-Centric Dataset 
+
+**Title (ZH)**: PennyLang: 基于新型PennyLane中心数据集的LLM驱动量子代码生成先驱研究 
+
+**Authors**: Haider Asif, Abdul Basit, Nouhaila Innan, Muhammad Kashif, Alberto Marchisio, Muhammad Shafique  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02497)  
+
+**Abstract**: Large Language Models (LLMs) offer remarkable capabilities in code generation, natural language processing, and domain-specific reasoning. Their potential in aiding quantum software development remains underexplored, particularly for the PennyLane framework-a leading platform for hybrid quantum-classical computing. To address this gap, we introduce a novel, high-quality dataset comprising 3,347 PennyLane-specific code samples of quantum circuits and their contextual descriptions, specifically curated to train/fine-tune LLM-based quantum code assistance. Our key contributions are threefold: (1) the automatic creation and open-source release of a comprehensive PennyLane dataset leveraging quantum computing textbooks, official documentation, and open-source repositories; (2) the development of a systematic methodology for data refinement, annotation, and formatting to optimize LLM training efficiency; and (3) a thorough evaluation, based on a Retrieval-Augmented Generation (RAG) framework, demonstrating the effectiveness of our dataset in streamlining PennyLane code generation and improving quantum development workflows. Compared to existing efforts that predominantly focus on Qiskit, our dataset significantly broadens the spectrum of quantum frameworks covered in AI-driven code assistance. By bridging this gap and providing reproducible dataset-creation methodologies, we aim to advance the field of AI-assisted quantum programming, making quantum computing more accessible to both newcomers and experienced developers. 
+
+**Abstract (ZH)**: 大型语言模型（LLMs）在代码生成、自然语言处理和领域特定推理方面展现出卓越的能力。它们在辅助量子软件开发方面的潜力尚未充分探索，尤其是在PennyLane框架方面——这是一种领先的混合量子-古典计算平台。为了解决这一缺口，我们介绍了一个人工智能驱动的量子代码辅助领域首个高质量数据集，该数据集包含3,347个PennyLane特定的量子电路代码样本及其上下文描述，特别针对训练/微调基于LLM的量子代码辅助系统进行了精心遴选。我们的主要贡献包括三个方面：（1）利用量子计算教科书、官方文档和开源仓库自动生成并开源一个全面的PennyLane数据集；（2）开发了一种系统性的数据精炼、标注和格式化方法，以优化LLM的训练效率；（3）基于检索增强生成（RAG）框架进行详尽评估，展示了该数据集在简化PennyLane代码生成和改善量子开发工作流程方面的有效性。与主要关注Qiskit的现有努力相比，我们的数据集显著扩大了人工智能驱动代码辅助所覆盖的量子框架范围。通过填补这一空白并提供可复现的数据集创建方法，我们旨在推进人工智能辅助量子编程领域的发展，使量子计算对新手和经验丰富的开发人员都更加易于接触。 
+
+---
+# Don't Get Too Excited -- Eliciting Emotions in LLMs 
+
+**Title (ZH)**: 不要过于兴奋——引发LLMs的情感响应 
+
+**Authors**: Gino Franco Fazzi, Julie Skoven Hinge, Stefan Heinrich, Paolo Burelli  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02457)  
+
+**Abstract**: This paper investigates the challenges of affect control in large language models (LLMs), focusing on their ability to express appropriate emotional states during extended dialogues. We evaluated state-of-the-art open-weight LLMs to assess their affective expressive range in terms of arousal and valence. Our study employs a novel methodology combining LLM-based sentiment analysis with multiturn dialogue simulations between LLMs. We quantify the models' capacity to express a wide spectrum of emotions and how they fluctuate during interactions. Our findings reveal significant variations among LLMs in their ability to maintain consistent affect, with some models demonstrating more stable emotional trajectories than others. Furthermore, we identify key challenges in affect control, including difficulties in producing and maintaining extreme emotional states and limitations in adapting affect to changing conversational contexts. These findings have important implications for the development of more emotionally intelligent AI systems and highlight the need for improved affect modelling in LLMs. 
+
+**Abstract (ZH)**: 本文探讨了大型语言模型在表达适当情感状态方面的挑战，重点关注其在长时间对话中表达恰当情感的能力。我们评估了最先进的开放权重语言模型，以评估它们在唤醒度和价值度方面的的情绪表达范围。本研究采用了一种新颖的方法论，结合基于语言模型的情绪分析与语言模型之间的多轮对话模拟。我们量化了模型表达广泛情感范围的能力及其在互动过程中的波动情况。研究发现，语言模型在维持一致情感方面的能力存在显著差异，有些模型在情感轨迹的稳定性方面优于其他模型。此外，我们还识别出情感控制中的关键挑战，包括生成和维持极端情感状态的难度以及适应变化的对话环境的情感限制。这些发现对于开发更具有情感智能的AI系统具有重要意义，并强调了改进语言模型中情感建模的必要性。 
+
+---
+# EchoQA: A Large Collection of Instruction Tuning Data for Echocardiogram Reports 
+
+**Title (ZH)**: EchoQA：心脏超声报告指令调优数据集 
+
+**Authors**: Lama Moukheiber, Mira Moukheiber, Dana Moukheiiber, Hyung-Chul Lee  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02365)  
+
+**Abstract**: We introduce a novel question-answering (QA) dataset using echocardiogram reports sourced from the Medical Information Mart for Intensive Care database. This dataset is specifically designed to enhance QA systems in cardiology, consisting of 771,244 QA pairs addressing a wide array of cardiac abnormalities and their severity. We compare large language models (LLMs), including open-source and biomedical-specific models for zero-shot evaluation, and closed-source models for zero-shot and three-shot evaluation. Our results show that fine-tuning LLMs improves performance across various QA metrics, validating the value of our dataset. Clinicians also qualitatively evaluate the best-performing model to assess the LLM responses for correctness. Further, we conduct fine-grained fairness audits to assess the bias-performance trade-off of LLMs across various social determinants of health. Our objective is to propel the field forward by establishing a benchmark for LLM AI agents aimed at supporting clinicians with cardiac differential diagnoses, thereby reducing the documentation burden that contributes to clinician burnout and enabling healthcare professionals to focus more on patient care. 
+
+**Abstract (ZH)**: 我们引入了一个使用来自重症护理医学信息市场数据库的心脏超声报告数据构建的新颖问答（QA）数据集，旨在增强心脏病学领域的问答系统。该数据集包含771,244个问答对，涵盖了广泛的心脏异常及其严重程度。我们对比了大型语言模型（LLMs），包括开源和生物医学专用模型的零样本评估，以及封闭源模型的零样本和三样本评估。结果显示，微调LLMs在各种问答指标上的表现都有所提升，验证了该数据集的价值。临床医生还从定性的角度评估了表现最佳的模型，以检查LLM的回答是否正确。此外，我们进行了精细粒度的公平性审计，评估了LLMs在各种健康社会决定因素上的偏见-性能权衡。我们的目标是通过建立支持心脏病鉴别诊断的大型语言模型AI代理基准，推动该领域的发展，从而减轻导致医生倦怠的文档负担，并使医疗卫生专业人员能够更多地专注于患者护理。 
+
+---
+# Memorize or Generalize? Evaluating LLM Code Generation with Evolved Questions 
+
+**Title (ZH)**: 记忆还是泛化？评估预训练模型的代码生成能力与演变问题 
+
+**Authors**: Wentao Chen, Lizhe Zhang, Li Zhong, Letian Peng, Zilong Wang, Jingbo Shang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02296)  
+
+**Abstract**: Large Language Models (LLMs) are known to exhibit a memorization phenomenon in code generation: instead of truly understanding the underlying principles of a programming problem, they tend to memorize the original prompt and its solution together in the training. Consequently, when facing variants of the original problem, their answers very likely resemble the memorized solutions and fail to generalize. In this paper, we investigate this phenomenon by designing three evolution strategies to create variants: mutation, paraphrasing, and code-rewriting. By comparing the performance and AST similarity of the LLM-generated codes before and after these three evolutions, we develop a memorization score that positively correlates with the level of memorization. As expected, as supervised fine-tuning goes on, the memorization score rises before overfitting, suggesting more severe memorization. We demonstrate that common mitigation approaches, such as prompt translation and using evolved variants as data augmentation in supervised learning and reinforcement learning, either compromise the performance or fail to alleviate the memorization issue. Therefore, memorization remains a significant challenge in LLM code generation, highlighting the need for a more effective solution. 
+
+**Abstract (ZH)**: 大型语言模型在代码生成中表现出记忆现象：它们倾向于记住原始提示及其解决方案，而不是真正理解编程问题的原理。因此，当面对原始问题的变体时，它们的答案很可能与记忆中的解决方案相似，无法泛化。本文通过设计三种进化策略（突变、改写和代码重构）来创建变体，并通过比较进化前后模型生成的代码的性能和抽象语法树相似度，开发了一个与记忆程度正相关的评分方法。正如预期的那样，随着监督微调的进行，记忆评分在过拟合前上升，表明记忆更为严重。我们展示了常见的缓解方法，如提示翻译和在监督学习和强化学习中使用进化后的变体作为数据增强，要么牺牲性能，要么无法缓解记忆问题。因此，记忆问题仍然是大型语言模型代码生成中的一个重大挑战，突显了需要更有效的解决方案的必要性。 
+
+---
+# AppAgentX: Evolving GUI Agents as Proficient Smartphone Users 
+
+**Title (ZH)**: AppAgentX: 进化为 proficient 智能手机用户的 GUI 代理 
+
+**Authors**: Wenjia Jiang, Yangyang Zhuang, Chenxi Song, Xu Yang, Chi Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02268)  
+
+**Abstract**: Recent advancements in Large Language Models (LLMs) have led to the development of intelligent LLM-based agents capable of interacting with graphical user interfaces (GUIs). These agents demonstrate strong reasoning and adaptability, enabling them to perform complex tasks that traditionally required predefined rules. However, the reliance on step-by-step reasoning in LLM-based agents often results in inefficiencies, particularly for routine tasks. In contrast, traditional rule-based systems excel in efficiency but lack the intelligence and flexibility to adapt to novel scenarios. To address this challenge, we propose a novel evolutionary framework for GUI agents that enhances operational efficiency while retaining intelligence and flexibility. Our approach incorporates a memory mechanism that records the agent's task execution history. By analyzing this history, the agent identifies repetitive action sequences and evolves high-level actions that act as shortcuts, replacing these low-level operations and improving efficiency. This allows the agent to focus on tasks requiring more complex reasoning, while simplifying routine actions. Experimental results on multiple benchmark tasks demonstrate that our approach significantly outperforms existing methods in both efficiency and accuracy. The code will be open-sourced to support further research. 
+
+**Abstract (ZH)**: recent 进展 在大规模语言模型中的最新进展导致了能够与图形用户界面（GUI）交互的智能基于语言模型的代理的发展。这些代理展示了强大的推理能力和适应性，能够执行传统上需要预定义规则才能完成的复杂任务。然而，基于语言模型的代理在依赖逐步推理时往往会受到效率上的限制，特别是在处理常规任务时。相比之下，传统的基于规则的系统在效率方面表现出色，但在面对新颖场景时缺乏智能和灵活性。为了解决这一挑战，我们提出了一种新型的进化框架，该框架提升了操作效率同时保留了智能和灵活性。我们的方法结合了记忆机制，记录代理的任务执行历史。通过分析这一历史记录，代理识别重复的动作序列，并进化出高层次的动作作为捷径，取代这些低层次的操作，从而提高效率。这使得代理能够专注于需要更复杂推理的任务，同时简化常规操作。在多个基准任务上的实验结果表明，我们的方法在效率和准确性方面显著优于现有方法。代码将开源以支持进一步研究。 
+
+---
+# V2X-LLM: Enhancing V2X Integration and Understanding in Connected Vehicle Corridors 
+
+**Title (ZH)**: V2X-LLM：增强连接车辆走廊中的V2X集成与理解 
+
+**Authors**: Keshu Wu, Pei Li, Yang Zhou, Rui Gan, Junwei You, Yang Cheng, Jingwen Zhu, Steven T. Parker, Bin Ran, David A. Noyce, Zhengzhong Tu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02239)  
+
+**Abstract**: The advancement of Connected and Automated Vehicles (CAVs) and Vehicle-to-Everything (V2X) offers significant potential for enhancing transportation safety, mobility, and sustainability. However, the integration and analysis of the diverse and voluminous V2X data, including Basic Safety Messages (BSMs) and Signal Phase and Timing (SPaT) data, present substantial challenges, especially on Connected Vehicle Corridors. These challenges include managing large data volumes, ensuring real-time data integration, and understanding complex traffic scenarios. Although these projects have developed an advanced CAV data pipeline that enables real-time communication between vehicles, infrastructure, and other road users for managing connected vehicle and roadside unit (RSU) data, significant hurdles in data comprehension and real-time scenario analysis and reasoning persist. To address these issues, we introduce the V2X-LLM framework, a novel enhancement to the existing CV data pipeline. V2X-LLM leverages Large Language Models (LLMs) to improve the understanding and real-time analysis of V2X data. The framework includes four key tasks: Scenario Explanation, offering detailed narratives of traffic conditions; V2X Data Description, detailing vehicle and infrastructure statuses; State Prediction, forecasting future traffic states; and Navigation Advisory, providing optimized routing instructions. By integrating LLM-driven reasoning with V2X data within the data pipeline, the V2X-LLM framework offers real-time feedback and decision support for traffic management. This integration enhances the accuracy of traffic analysis, safety, and traffic optimization. Demonstrations in a real-world urban corridor highlight the framework's potential to advance intelligent transportation systems. 
+
+**Abstract (ZH)**: Connected和自动化车辆（CAVs）及Vehicle-to-Everything（V2X）技术的进步为提升交通运输安全、机动性和可持续性提供了巨大潜力。然而，集成和分析包含基础安全消息（BSMs）和信号相位与定时（SPaT）数据在内的多样化且庞大的V2X数据，特别是在Connected Vehicle Corridors中，提出了重大挑战。这些挑战包括管理大量数据、确保实时数据集成以及理解复杂的路况场景。尽管这些项目已开发出先进的CAV数据管道，能够实现车辆、基础设施与其他道路用户之间的实时通信，管理连接车辆和路边单元（RSU）数据，但在数据理解和实时场景分析与推理方面仍存在重大障碍。为解决这些问题，我们提出了V2X-LLM框架，这是现有CV数据管道的一个全新增强。V2X-LLM利用大型语言模型（LLMs）来改善对V2X数据的理解和实时分析。该框架包括四个关键任务：场景解释、提供详细的交通状况叙述；V2X数据描述、详细说明车辆和基础设施的状态；状态预测、预测未来交通状态；导航建议、提供优化的路线指令。通过将LLM驱动的推理与V2X数据集成到数据管道中，V2X-LLM框架为交通管理提供即时反馈和支持。这一集成提高了交通分析的准确性、安全性和交通优化水平。在实际城市走廊的演示中，展示了该框架在推进智能交通系统方面的能力。 
+
+---
+# TMIQ: Quantifying Test and Measurement Domain Intelligence in Large Language Models 
+
+**Title (ZH)**: TMIQ: 在大规模语言模型中量化测试与测量领域智能 
+
+**Authors**: Emmanuel A. Olowe, Danial Chitnis  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02123)  
+
+**Abstract**: The Test and Measurement domain, known for its strict requirements for accuracy and efficiency, is increasingly adopting Generative AI technologies to enhance the performance of data analysis, automation, and decision-making processes. Among these, Large Language Models (LLMs) show significant promise for advancing automation and precision in testing. However, the evaluation of LLMs in this specialized area remains insufficiently explored. To address this gap, we introduce the Test and Measurement Intelligence Quotient (TMIQ), a benchmark designed to quantitatively assess LLMs across a wide range of electronic engineering tasks. TMIQ offers a comprehensive set of scenarios and metrics for detailed evaluation, including SCPI command matching accuracy, ranked response evaluation, Chain-of-Thought Reasoning (CoT), and the impact of output formatting variations required by LLMs on performance. In testing various LLMs, our findings indicate varying levels of proficiency, with exact SCPI command match accuracy ranging from around 56% to 73%, and ranked matching first-position scores achieving around 33% for the best-performing model. We also assess token usage, cost-efficiency, and response times, identifying trade-offs between accuracy and operational efficiency. Additionally, we present a command-line interface (CLI) tool that enables users to generate datasets using the same methodology, allowing for tailored assessments of LLMs. TMIQ and the CLI tool provide a rigorous, reproducible means of evaluating LLMs for production environments, facilitating continuous monitoring and identifying strengths and areas for improvement, and driving innovation in their selections for applications within the Test and Measurement industry. 
+
+**Abstract (ZH)**: 测试与测量领域因其对准确性和效率的严格要求，正越来越多地采用生成式AI技术以增强数据处理、自动化和决策过程的表现。在此领域中，大型语言模型（LLMs）在提高测试的自动化和精确性方面显示出巨大的潜力。然而，对于这类专业领域的LLM评估仍缺乏足够的探索。为填补这一空白，我们提出了测试与测量智能商（TMIQ），这是一个用于定量评估LLM在广泛电子工程任务中的基准测试。TMIQ提供了一套全面的情景和指标，包括SCPI命令匹配准确性、排名响应评估、链式思维推理（CoT）以及输出格式化要求对性能的影响。在测试各种LLM后，我们的发现显示不同水平的能力，具体而言，精确的SCPI命令匹配准确性范围在约56%到73%之间，最优模型的第一位置排名匹配得分为约33%。我们还评估了标记使用情况、成本效益和响应时间，并确定了准确性与操作效率之间的权衡。此外，我们还提供了一个命令行界面（CLI）工具，使用户能够使用相同的方法生成数据集，从而实现对LLM的定制评估。TMIQ和CLI工具为生产环境下的LLM评估提供了一种严谨且可复制的方法，有助于持续监控、识别强项和改进领域，并推动测试与测量行业中LLM选择的创新。 
+
+---
+# Wikipedia in the Era of LLMs: Evolution and Risks 
+
+**Title (ZH)**: Wikipedia在大语言模型时代：演化与风险 
+
+**Authors**: Siming Huang, Yuliang Xu, Mingmeng Geng, Yao Wan, Dongping Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02879)  
+
+**Abstract**: In this paper, we present a thorough analysis of the impact of Large Language Models (LLMs) on Wikipedia, examining the evolution of Wikipedia through existing data and using simulations to explore potential risks. We begin by analyzing page views and article content to study Wikipedia's recent changes and assess the impact of LLMs. Subsequently, we evaluate how LLMs affect various Natural Language Processing (NLP) tasks related to Wikipedia, including machine translation and retrieval-augmented generation (RAG). Our findings and simulation results reveal that Wikipedia articles have been influenced by LLMs, with an impact of approximately 1%-2% in certain categories. If the machine translation benchmark based on Wikipedia is influenced by LLMs, the scores of the models may become inflated, and the comparative results among models might shift as well. Moreover, the effectiveness of RAG might decrease if the knowledge base becomes polluted by LLM-generated content. While LLMs have not yet fully changed Wikipedia's language and knowledge structures, we believe that our empirical findings signal the need for careful consideration of potential future risks. 
+
+**Abstract (ZH)**: 本文对大型语言模型（LLMs）对Wikipedia的影响进行了彻底分析，通过现有数据研究Wikipedia的变化，并使用模拟来探索潜在风险。我们首先分析页面浏览量和文章内容，以研究Wikipedia的 recent变化并评估LLMs的影响。随后，我们评估LLMs对与Wikipedia相关的各种自然语言处理（NLP）任务的影响，包括机器翻译和检索增强生成（RAG）。我们的发现和模拟结果表明，Wikipedia的文章受到了LLMs的影响，在某些类别中的影响约为1%-2%。如果基于Wikipedia的机器翻译基准受到LLMs的影响，模型的得分可能会膨胀，模型之间的比较结果也可能发生变化。此外，如果知识库受到LLM生成内容的污染，检索增强生成的有效性可能会下降。虽然LLMs尚未完全改变Wikipedia的语言和知识结构，但我们的实证结果表明，需要谨慎考虑潜在的未来风险。 
+
+---
+# Language Models can Self-Improve at State-Value Estimation for Better Search 
+
+**Title (ZH)**: 语言模型可以在状态值估计方面自我提升以改善搜索性能 
+
+**Authors**: Ethan Mendes, Alan Ritter  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02878)  
+
+**Abstract**: Collecting ground truth task completion rewards or human demonstrations for multi-step reasoning tasks is often cost-prohibitive and time-consuming, especially in interactive domains like web tasks. To address this bottleneck, we present self-taught lookahead, a self-supervised method that leverages state-transition dynamics to train a value model capable of effectively guiding language model-controlled search. We find that moderately sized (8 billion parameters) open-weight value models improved with self-taught lookahead can match the performance of using a frontier LLM such as gpt-4o as the value model. Furthermore, we find that self-taught lookahead improves performance by 20% while reducing costs 37x compared to previous LLM-based tree search, without relying on ground truth rewards. 
+
+**Abstract (ZH)**: 自我教学前瞻：一种利用状态转换动力学训练价值模型的方法，以有效指导语言模型控制的搜索 
+
+---
+# (How) Do Language Models Track State? 
+
+**Title (ZH)**: 语言模型如何追踪状态？ 
+
+**Authors**: Belinda Z. Li, Zifan Carl Guo, Jacob Andreas  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02854)  
+
+**Abstract**: Transformer language models (LMs) exhibit behaviors -- from storytelling to code generation -- that appear to require tracking the unobserved state of an evolving world. How do they do so? We study state tracking in LMs trained or fine-tuned to compose permutations (i.e., to compute the order of a set of objects after a sequence of swaps). Despite the simple algebraic structure of this problem, many other tasks (e.g., simulation of finite automata and evaluation of boolean expressions) can be reduced to permutation composition, making it a natural model for state tracking in general. We show that LMs consistently learn one of two state tracking mechanisms for this task. The first closely resembles the "associative scan" construction used in recent theoretical work by Liu et al. (2023) and Merrill et al. (2024). The second uses an easy-to-compute feature (permutation parity) to partially prune the space of outputs, then refines this with an associative scan. The two mechanisms exhibit markedly different robustness properties, and we show how to steer LMs toward one or the other with intermediate training tasks that encourage or suppress the heuristics. Our results demonstrate that transformer LMs, whether pretrained or fine-tuned, can learn to implement efficient and interpretable state tracking mechanisms, and the emergence of these mechanisms can be predicted and controlled. 
+
+**Abstract (ZH)**: 变换器语言模型（LMs）在从讲故事到代码生成的行为中，似乎需要跟踪一个演变世界的未观察状态。它们是如何做到这一点的？我们研究了在排列组合（即，在一系列交换后计算一组对象的顺序）任务中训练或微调的LMs的状态跟踪机制。尽管这个问题具有简单的代数结构，但许多其他任务（例如有限自动机的仿真和布尔表达式的评估）都可以简化为排列组合，使其成为一种自然的状态跟踪模型。我们证明这些LMs在该任务中一致地学习两种状态跟踪机制之一。第一种机制与Liu et al. (2023) 和 Merrill et al. (2024) 最近的理论工作中使用的“关联扫描”构造类似。第二种机制利用一个易于计算的特征（排列偶性）部分剪枝输出空间，然后使用关联扫描进行细化。这两种机制表现出明显不同的稳健性特征，并展示了如何通过中间训练任务引导LMs偏向于或抑制其中一种启发式方法。我们的结果表明，无论是预训练还是微调的变换器LMs都能够学习实现高效且可解释的状态跟踪机制，这些机制的出现可以被预测和控制。 
+
+---
+# AlignDistil: Token-Level Language Model Alignment as Adaptive Policy Distillation 
+
+**Title (ZH)**: AlignDistil: 令牌级别语言模型对齐作为自适应策略蒸馏 
+
+**Authors**: Songming Zhang, Xue Zhang, Tong Zhang, Bojie Hu, Yufeng Chen, Jinan Xu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02832)  
+
+**Abstract**: In modern large language models (LLMs), LLM alignment is of crucial importance and is typically achieved through methods such as reinforcement learning from human feedback (RLHF) and direct preference optimization (DPO). However, in most existing methods for LLM alignment, all tokens in the response are optimized using a sparse, response-level reward or preference annotation. The ignorance of token-level rewards may erroneously punish high-quality tokens or encourage low-quality tokens, resulting in suboptimal performance and slow convergence speed. To address this issue, we propose AlignDistil, an RLHF-equivalent distillation method for token-level reward optimization. Specifically, we introduce the reward learned by DPO into the RLHF objective and theoretically prove the equivalence between this objective and a token-level distillation process, where the teacher distribution linearly combines the logits from the DPO model and a reference model. On this basis, we further bridge the accuracy gap between the reward from the DPO model and the pure reward model, by building a contrastive DPO reward with a normal and a reverse DPO model. Moreover, to avoid under- and over-optimization on different tokens, we design a token adaptive logit extrapolation mechanism to construct an appropriate teacher distribution for each token. Experimental results demonstrate the superiority of our AlignDistil over existing methods and showcase fast convergence due to its token-level distributional reward optimization. 
+
+**Abstract (ZH)**: 现代大规模语言模型（LLMs）的对齐优化：基于DPO的token级奖励优化蒸馏方法 
+
+---
+# Q-Filters: Leveraging QK Geometry for Efficient KV Cache Compression 
+
+**Title (ZH)**: Q-滤波器：利用QK几何学高效键值缓存压缩 
+
+**Authors**: Nathan Godey, Alessio Devoto, Yu Zhao, Simone Scardapane, Pasquale Minervini, Éric de la Clergerie, Benoît Sagot  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02812)  
+
+**Abstract**: Autoregressive language models rely on a Key-Value (KV) Cache, which avoids re-computing past hidden states during generation, making it faster. As model sizes and context lengths grow, the KV Cache becomes a significant memory bottleneck, which calls for compression methods that limit its size during generation. In this paper, we discover surprising properties of Query (Q) and Key (K) vectors that allow us to efficiently approximate attention scores without computing the attention maps. We propose Q-Filters, a training-free KV Cache compression method that filters out less crucial Key-Value pairs based on a single context-agnostic projection. Contrarily to many alternatives, Q-Filters is compatible with FlashAttention, as it does not require direct access to attention weights. Experimental results in long-context settings demonstrate that Q-Filters is competitive with attention-based compression methods such as SnapKV in retrieval tasks while consistently outperforming efficient compression schemes such as Streaming-LLM in generation setups. Notably, Q-Filters achieves a 99% accuracy in the needle-in-a-haystack task with a x32 compression level while reducing the generation perplexity drop by up to 65% in text generation compared to Streaming-LLM. 
+
+**Abstract (ZH)**: 自动回归语言模型依赖于键值（KV）缓存，这在生成过程中避免了重新计算过去的隐藏状态，从而使模型更快。随着模型规模和上下文长度的增长，KV缓存成为显著的内存瓶颈，需要压缩方法来限制其生成过程中的大小。在本文中，我们发现了查询（Q）向量和键（K）向量的意外属性，允许我们高效地近似注意力分数而无需计算注意力图。我们提出了一种无需训练的KV缓存压缩方法Q-Filters，该方法基于单个上下文无关的投影过滤掉不那么关键的键值对。与许多替代方案不同，Q-Filters与FlashAttention兼容，因为它不需要直接访问注意力权重。在长上下文设置下的实验结果表明，在检索任务中，Q-Filters与基于注意力的压缩方法（如SnapKV）具有竞争力，而在生成设置中，其性能始终优于诸如Streaming-LLM等高效的压缩方案。值得注意的是，Q-Filters在稀疏检索任务中实现了99%的准确性，压缩比为32倍，在文本生成中将生成困惑度下降最多减少65%，相较于Streaming-LLM。 
+
+---
+# IterPref: Focal Preference Learning for Code Generation via Iterative Debugging 
+
+**Title (ZH)**: IterPref: 通过迭代调试进行代码生成的焦点偏好学习 
+
+**Authors**: Jie Wu, Haoling Li, Xin Zhang, Jianwen Luo, Yangyu Huang, Ruihang Chu, Yujiu Yang, Scarlett Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02783)  
+
+**Abstract**: Preference learning enhances Code LLMs beyond supervised fine-tuning by leveraging relative quality comparisons. Existing methods construct preference pairs from
+candidates based on test case success, treating the higher pass rate sample as positive and the lower as negative. However, this approach does not pinpoint specific errors in the code, which prevents the model from learning more informative error correction patterns, as aligning failing code as a whole lacks the granularity needed to capture meaningful error-resolution relationships. To address these issues, we propose IterPref, a new preference alignment framework that mimics human iterative debugging to refine Code LLMs. IterPref explicitly locates error regions and aligns the corresponding tokens via a tailored DPO algorithm. To generate informative pairs, we introduce the CodeFlow dataset, where samples are iteratively refined until passing tests, with modifications capturing error corrections. Extensive experiments show that a diverse suite of Code LLMs equipped with IterPref achieves significant performance gains in code generation and improves on challenging tasks like BigCodeBench. In-depth analysis reveals that IterPref yields fewer errors. Our code and data will be made publicaly available. 
+
+**Abstract (ZH)**: 偏好学习通过利用相对质量比较提升代码LLM，超越监督微调。现有方法基于测试案例成功构建偏好对，将通过率较高的样本视为正样本，通过率较低的视为负样本。然而，这种方法不能具体指出代码中的错误，这妨碍了模型学习更有信息量的错误修正模式，因为将整体失败的代码对齐缺乏捕捉有意义的错误解决关系所需的粒度。为了应对这些问题，我们提出了一种新的偏好对齐框架IterPref，其模仿人类迭代调试以精炼代码LLM。IterPref明确定位错误区域并通过定制的DPO算法对相应的标记进行对齐。为了生成有信息量的对，我们引入了CodeFlow数据集，在该数据集中，样本经过迭代精炼直到通过测试，并且修改记录了错误修正。广泛的实验表明，配备IterPref的多样化代码LLM在代码生成中取得了显著性能提升，并在BigCodeBench等具有挑战性的任务上有所改进。深入分析显示，IterPref产生的错误更少。我们的代码和数据将公开提供。 
+
+---
+# Implicit Bias in LLMs: A Survey 
+
+**Title (ZH)**: LLMs中的隐性偏见：一项综述 
+
+**Authors**: Xinru Lin, Luyang Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02776)  
+
+**Abstract**: Due to the implement of guardrails by developers, Large language models (LLMs) have demonstrated exceptional performance in explicit bias tests. However, bias in LLMs may occur not only explicitly, but also implicitly, much like humans who consciously strive for impartiality yet still harbor implicit bias. The unconscious and automatic nature of implicit bias makes it particularly challenging to study. This paper provides a comprehensive review of the existing literature on implicit bias in LLMs. We begin by introducing key concepts, theories and methods related to implicit bias in psychology, extending them from humans to LLMs. Drawing on the Implicit Association Test (IAT) and other psychological frameworks, we categorize detection methods into three primary approaches: word association, task-oriented text generation and decision-making. We divide our taxonomy of evaluation metrics for implicit bias into two categories: single-value-based metrics and comparison-value-based metrics. We classify datasets into two types: sentences with masked tokens and complete sentences, incorporating datasets from various domains to reflect the broad application of LLMs. Although research on mitigating implicit bias in LLMs is still limited, we summarize existing efforts and offer insights on future challenges. We aim for this work to serve as a clear guide for researchers and inspire innovative ideas to advance exploration in this task. 
+
+**Abstract (ZH)**: 由于开发人员实施了护栏措施，大型语言模型（LLMs）在显性偏见测试中表现出色。然而，LLMs中的偏见不仅可能以显性形式存在，也可能以隐性形式存在，如同人类虽然会主动追求公正，但仍可能存在隐性偏见一样。隐性和自动化的性质使隐性偏见特别难以研究。本文对LLMs中隐性偏见的现有文献进行了全面综述。我们首先介绍与心理学中隐性偏见相关的关键概念、理论和方法，并将其扩展到LLMs。借助隐含关联测试（IAT）及其他心理学框架，我们将检测方法分为三大类：词联想法、任务导向文本生成和决策。我们将评估隐性偏见的一套综合指标分为两类：单值指标和比较值指标。我们将数据集分为两类：包含掩码词的句子和完整句子，并且结合了来自不同领域的数据集以反映LLMs的广泛应用。尽管缓解LLMs中隐性偏见的研究仍有限，但我们总结了现有努力并提供了对未来挑战的见解。我们希望这项工作能够为研究人员提供清晰的指南，并激发创新思路以推进这一领域的探索。 
+
+---
+# MPO: Boosting LLM Agents with Meta Plan Optimization 
+
+**Title (ZH)**: MPO: 通过元计划优化提升语言模型代理 
+
+**Authors**: Weimin Xiong, Yifan Song, Qingxiu Dong, Bingchan Zhao, Feifan Song, Xun Wang, Sujian Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02682)  
+
+**Abstract**: Recent advancements in large language models (LLMs) have enabled LLM-based agents to successfully tackle interactive planning tasks. However, despite their successes, existing approaches often suffer from planning hallucinations and require retraining for each new agent. To address these challenges, we propose the Meta Plan Optimization (MPO) framework, which enhances agent planning capabilities by directly incorporating explicit guidance. Unlike previous methods that rely on complex knowledge, which either require significant human effort or lack quality assurance, MPO leverages high-level general guidance through meta plans to assist agent planning and enables continuous optimization of the meta plans based on feedback from the agent's task execution. Our experiments conducted on two representative tasks demonstrate that MPO significantly outperforms existing baselines. Moreover, our analysis indicates that MPO provides a plug-and-play solution that enhances both task completion efficiency and generalization capabilities in previous unseen scenarios. 
+
+**Abstract (ZH)**: Recent advancements in大型语言模型（LLMs）使基于LLM的代理能够成功解决交互式规划任务。然而，尽管取得了成功，现有方法往往遭受规划幻觉的问题，并且需要为每个新代理重新训练。为应对这些挑战，我们提出了一种Meta Plan Optimization（MPO）框架，通过直接引入明确的指导来增强代理的规划能力。与依赖复杂知识的先前方法不同，这些知识要么需要大量的人工努力，要么缺乏质量保证，MPO利用高层次的一般指导（元计划）来协助代理规划，并根据代理任务执行的反馈持续优化元计划。我们在两个代表性任务上的实验表明，MPO显著优于现有baseline。此外，我们的分析表明，MPO提供了一种即插即用的解决方案，能够提升任务完成效率和在以前未见场景中的泛化能力。 
+
+---
+# Towards Event Extraction with Massive Types: LLM-based Collaborative Annotation and Partitioning Extraction 
+
+**Title (ZH)**: 面向大规模事件类型的事件提取：基于LLM的合作标注与分区提取 
+
+**Authors**: Wenxuan Liu, Zixuan Li, Long Bai, Yuxin Zuo, Daozhu Xu, Xiaolong Jin, Jiafeng Guo, Xueqi Cheng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02628)  
+
+**Abstract**: Developing a general-purpose extraction system that can extract events with massive types is a long-standing target in Event Extraction (EE). In doing so, the challenge comes from two aspects: 1) The absence of an efficient and effective annotation method. 2) The absence of a powerful extraction method can handle massive types. For the first challenge, we propose a collaborative annotation method based on Large Language Models (LLMs). Through collaboration among multiple LLMs, it first refines annotations of trigger words from distant supervision and then carries out argument annotation. Next, a voting phase consolidates the annotation preferences across different LLMs. Finally, we create the EEMT dataset, the largest EE dataset to date, featuring over 200,000 samples, 3,465 event types, and 6,297 role types. For the second challenge, we propose an LLM-based Partitioning EE method called LLM-PEE. To overcome the limited context length of LLMs, LLM-PEE first recalls candidate event types and then splits them into multiple partitions for LLMs to extract events. The results in the supervised setting show that LLM-PEE outperforms the state-of-the-art methods by 5.4 in event detection and 6.1 in argument extraction. In the zero-shot setting, LLM-PEE achieves up to 12.9 improvement compared to mainstream LLMs, demonstrating its strong generalization capabilities. 
+
+**Abstract (ZH)**: 开发一种能够提取大量类型事件的一般-purpose抽取系统是事件抽取领域长期追求的目标。为应对这一挑战，我们提出了一种基于大规模语言模型的协作注释方法。通过多个大规模语言模型的合作，首先从弱监督中精炼触发词的注释，然后进行论元注释。接着，通过投票阶段整合不同大规模语言模型的注释偏好。最后，我们构建了EEMT数据集，这是迄今为止最大的事件抽取数据集，包含超过200,000个样本、3,465个事件类型和6,297个角色类型。为应对第二个挑战，我们提出了一种基于大规模语言模型的划分事件抽取方法（LLM-PEE）。为克服大规模语言模型上下文长度的限制，LLM-PEE首先召回候选事件类型，然后将它们划分为多个部分供大规模语言模型抽取事件。在监督设置下的实验结果表明，LLM-PEE在事件检测和论元抽取上的性能比当前最先进的方法分别高出5.4%和6.1%。在零样本设置下，LLM-PEE相比主流的大规模语言模型改善了最高12.9%，展示了其强大的泛化能力。 
+
+---
+# Rewarding Doubt: A Reinforcement Learning Approach to Confidence Calibration of Large Language Models 
+
+**Title (ZH)**: 质疑的价值：大规模语言模型信心校准的强化学习方法 
+
+**Authors**: Paul Stangel, David Bani-Harouni, Chantal Pellegrini, Ege Özsoy, Kamilia Zaripova, Matthias Keicher, Nassir Navab  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02623)  
+
+**Abstract**: A safe and trustworthy use of Large Language Models (LLMs) requires an accurate expression of confidence in their answers. We introduce a novel Reinforcement Learning (RL) approach for LLM calibration that fine-tunes LLMs to elicit calibrated confidence estimations in their answers to factual questions. We model the problem as a betting game where the model predicts a confidence score together with every answer, and design a reward function that penalizes both over and under-confidence. We prove that under our reward design an optimal policy would result in a perfectly calibrated confidence estimation. Our experiments demonstrate significantly improved confidence calibration and generalization to new tasks without re-training, indicating that our approach teaches a general confidence awareness. This approach enables the training of inherently calibrated LLMs. 
+
+**Abstract (ZH)**: 大型语言模型的安全和可信赖使用要求对其答案的准确信心表达。我们提出了一种新颖的强化学习（RL）方法来校准大型语言模型（LLMs），通过微调LLMs使其在回答事实性问题时能提供校准的信心估计。我们将问题建模为一个赌注游戏，模型在预测答案的同时也预测信心分数，并设计了一个既能惩罚过度信心又能惩罚不足信心的奖励函数。我们证明，在我们的奖励设计下，最优策略将导致完全校准的信心估计。我们的实验表明，这种方法在不重新训练的情况下显著提高了信心校准，并且能够泛化到新任务，表明该方法教会了模型一般的信心意识。这种方法使得训练出固有校准的大型语言模型成为可能。 
+
+---
+# Reinforcement Learning-based Threat Assessment 
+
+**Title (ZH)**: 基于强化学习的威胁评估 
+
+**Authors**: Wuzhou Sun, Siyi Li, Qingxiang Zou, Zixing Liao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02612)  
+
+**Abstract**: In some game scenarios, due to the uncertainty of the number of enemy units and the priority of various attributes, the evaluation of the threat level of enemy units as well as the screening has been a challenging research topic, and the core difficulty lies in how to reasonably set the priority of different attributes in order to achieve quantitative evaluation of the threat. In this paper, we innovatively transform the problem of threat assessment into a reinforcement learning problem, and through systematic reinforcement learning training, we successfully construct an efficient neural network evaluator. The evaluator can not only comprehensively integrate the multidimensional attribute features of the enemy, but also effectively combine our state information, thus realizing a more accurate and scientific threat assessment. 
+
+**Abstract (ZH)**: 在一些游戏场景中，由于敌方单位数量和各种属性优先级的不确定性，敌方单位威胁级别评估及其筛选一直是一个具有挑战性的研究课题，核心难点在于如何合理设定不同属性的优先级以实现威胁量化的评估。本文创新性地将威胁评估问题转化为强化学习问题，并通过系统的强化学习训练，成功构建了一个高效的人工神经网络评估器。该评估器不仅能够全面整合敌方的多维属性特征，还能有效结合我们的状态信息，从而实现更为准确和科学的威胁评估。 
+
+---
+# LLM-Safety Evaluations Lack Robustness 
+
+**Title (ZH)**: LLM安全评估缺乏稳健性 
+
+**Authors**: Tim Beyer, Sophie Xhonneux, Simon Geisler, Gauthier Gidel, Leo Schwinn, Stephan Günnemann  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02574)  
+
+**Abstract**: In this paper, we argue that current safety alignment research efforts for large language models are hindered by many intertwined sources of noise, such as small datasets, methodological inconsistencies, and unreliable evaluation setups. This can, at times, make it impossible to evaluate and compare attacks and defenses fairly, thereby slowing progress. We systematically analyze the LLM safety evaluation pipeline, covering dataset curation, optimization strategies for automated red-teaming, response generation, and response evaluation using LLM judges. At each stage, we identify key issues and highlight their practical impact. We also propose a set of guidelines for reducing noise and bias in evaluations of future attack and defense papers. Lastly, we offer an opposing perspective, highlighting practical reasons for existing limitations. We believe that addressing the outlined problems in future research will improve the field's ability to generate easily comparable results and make measurable progress. 
+
+**Abstract (ZH)**: 本文 argues that当前大语言模型安全对齐研究的努力受到多种交织噪声源的阻碍，如小数据集、方法论不一致和不可靠的评估设置。这有时使得公正评估和比较攻击和防御变得不可能，从而拖慢了研究进展。我们系统地分析了LLM安全评估流程，涵盖数据集策管、自动红队优化策略、响应生成及使用LLM裁判的响应评估。在每个阶段，我们识别关键问题并强调其实际影响。我们还提出了一套指南，以减少未来攻击和防御论文评估中的噪声和偏见。最后，我们提供了一个对立的观点，强调现有限制的实践原因。我们认为，未来研究中解决这些问题将提高该领域生成可比结果和可衡量进展的能力。 
+
+---
+# PersonaX: A Recommendation Agent Oriented User Modeling Framework for Long Behavior Sequence 
+
+**Title (ZH)**: PersonaX：面向长期行为序列的用户模型推荐代理框架 
+
+**Authors**: Yunxiao Shi, Wujiang Xu, Zeqi Zhang, Xing Zi, Qiang Wu, Min Xu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02398)  
+
+**Abstract**: Recommendation agents leverage large language models for user modeling LLM UM to construct textual personas guiding alignment with real users. However existing LLM UM methods struggle with long user generated content UGC due to context limitations and performance degradation. To address this sampling strategies prioritize relevance or recency are often applied yet they inevitably neglect the diverse user interests embedded within the discarded behaviors resulting in incomplete modeling and degraded profiling quality. Furthermore relevance based sampling requires real time retrieval forcing the user modeling process to operate online which introduces significant latency overhead. In this paper we propose PersonaX an agent agnostic LLM UM framework that tackles these challenges through sub behavior sequence SBS selection and offline multi persona construction. PersonaX extracts compact SBS segments offline to capture diverse user interests generating fine grained textual personas that are cached for efficient online retrieval. This approach ensures that the user persona used for prompting remains highly relevant to the current context while eliminating the need for online user modeling. For SBS selection we ensure both efficiency length less than five and high representational quality by balancing prototypicality and diversity within the sampled data. Extensive experiments validate the effectiveness and versatility of PersonaX in high quality user profiling. Utilizing only 30 to 50 percent of the behavioral data with a sequence length of 480 integrating PersonaX with AgentCF yields an absolute performance improvement of 3 to 11 percent while integration with Agent4Rec results in a gain of 10 to 50 percent. PersonaX as an agent agnostic framework sets a new benchmark for scalable user modeling paving the way for more accurate and efficient LLM driven recommendation agents. 
+
+**Abstract (ZH)**: 基于大型语言模型的推荐代理构建用户模型：PersonaX框架解决长用户生成内容挑战 
+
+---
+# An Efficient and Precise Training Data Construction Framework for Process-supervised Reward Model in Mathematical Reasoning 
+
+**Title (ZH)**: 过程监督奖励模型在数学推理中高效精准的训练数据构建框架 
+
+**Authors**: Wei Sun, Qianlong Du, Fuwei Cui, Jiajun Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02382)  
+
+**Abstract**: Enhancing the mathematical reasoning capabilities of Large Language Models (LLMs) is of great scientific and practical significance. Researchers typically employ process-supervised reward models (PRMs) to guide the reasoning process, effectively improving the models' reasoning abilities. However, existing methods for constructing process supervision training data, such as manual annotation and per-step Monte Carlo estimation, are often costly or suffer from poor quality. To address these challenges, this paper introduces a framework called EpicPRM, which annotates each intermediate reasoning step based on its quantified contribution and uses an adaptive binary search algorithm to enhance both annotation precision and efficiency. Using this approach, we efficiently construct a high-quality process supervision training dataset named Epic50k, consisting of 50k annotated intermediate steps. Compared to other publicly available datasets, the PRM trained on Epic50k demonstrates significantly superior performance. Getting Epic50k at this https URL. 
+
+**Abstract (ZH)**: 增强大型语言模型的数学推理能力具有重要的科学和实践意义。研究人员通常通过过程监督奖励模型（PRM）来引导推理过程，有效提高模型的推理能力。然而，现有的过程监督训练数据构建方法，如手动标注和每步蒙特卡洛估计，往往成本高昂或质量较差。为应对这些挑战，本文提出了一种名为EpicPRM的框架，该框架根据每个中间推理步骤的量化贡献进行标注，并使用自适应二分搜索算法提高标注的准确性和效率。通过这种方法，我们高效地构建了一个高质量的过程监督训练数据集Epic50k，包含50k个标注的中间步骤。与现有的其他公开数据集相比，基于Epic50k训练的PRM表现出显著的优越性能。获取Epic50k请访问此链接。 
+
+---
+# Iterative Value Function Optimization for Guided Decoding 
+
+**Title (ZH)**: 迭代价值函数优化引导解码 
+
+**Authors**: Zhenhua Liu, Lijun Li, Ruizhe Chen, Yuxian Jiang, Tong Zhu, Wenliang Chen, Jing Shao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02368)  
+
+**Abstract**: While Reinforcement Learning from Human Feedback (RLHF) has become the predominant method for controlling language model outputs, it suffers from high computational costs and training instability. Guided decoding, especially value-guided methods, offers a cost-effective alternative by controlling outputs without re-training models. However, the accuracy of the value function is crucial for value-guided decoding, as inaccuracies can lead to suboptimal decision-making and degraded performance. Existing methods struggle with accurately estimating the optimal value function, leading to less effective control. We propose Iterative Value Function Optimization, a novel framework that addresses these limitations through two key components: Monte Carlo Value Estimation, which reduces estimation variance by exploring diverse trajectories, and Iterative On-Policy Optimization, which progressively improves value estimation through collecting trajectories from value-guided policies. Extensive experiments on text summarization, multi-turn dialogue, and instruction following demonstrate the effectiveness of value-guided decoding approaches in aligning language models. These approaches not only achieve alignment but also significantly reduce computational costs by leveraging principled value function optimization for efficient and effective control. 
+
+**Abstract (ZH)**: 基于人类反馈的强化学习（RLHF）已成为控制语言模型输出的主要方法，但面临高计算成本和训练不稳定的问题。引导解码，尤其是值导向方法，通过不重新训练模型来控制输出，提供了一种成本效益高的替代方案。然而，值函数的准确性对于值导向解码至关重要，不准确的值函数会导致次优决策和性能下降。现有方法难以准确估计最优值函数，导致控制效果不佳。我们提出了一种名为迭代值函数优化的新型框架，通过两个关键组件解决这些限制：蒙特卡洛值估计，通过探索多样化的轨迹来减少估计方差；以及迭代在线策略优化，通过收集值导向策略的轨迹逐步改进值估计。在文本摘要、多轮对话和指令跟随等任务上的广泛实验表明，值导向解码方法在使语言模型对齐方面效果显著。这些方法不仅实现了对齐，还通过利用有效的值函数优化原则显著降低了计算成本。 
+
+---
+# CoServe: Efficient Collaboration-of-Experts (CoE) Model Inference with Limited Memory 
+
+**Title (ZH)**: CoServe: 有限内存下高效的专家协作（CoE）模型推理 
+
+**Authors**: Jiashun Suo, Xiaojian Liao, Limin Xiao, Li Ruan, Jinquan Wang, Xiao Su, Zhisheng Huo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02354)  
+
+**Abstract**: Large language models like GPT-4 are resource-intensive, but recent advancements suggest that smaller, specialized experts can outperform the monolithic models on specific tasks. The Collaboration-of-Experts (CoE) approach integrates multiple expert models, improving the accuracy of generated results and offering great potential for precision-critical applications, such as automatic circuit board quality inspection. However, deploying CoE serving systems presents challenges to memory capacity due to the large number of experts required, which can lead to significant performance overhead from frequent expert switching across different memory and storage tiers.
+We propose CoServe, an efficient CoE model serving system on heterogeneous CPU and GPU with limited memory. CoServe reduces unnecessary expert switching by leveraging expert dependency, a key property of CoE inference. CoServe introduces a dependency-aware request scheduler and dependency-aware expert management for efficient inference. It also introduces an offline profiler to automatically find optimal resource allocation on various processors and devices. In real-world intelligent manufacturing workloads, CoServe achieves 4.5$\times$ to 12$\times$ higher throughput compared to state-of-the-art systems. 
+
+**Abstract (ZH)**: 一种基于异构CPU和GPU的高效CoE模型服务系统：CoServe 
+
+---
+# PromptCoT: Synthesizing Olympiad-level Problems for Mathematical Reasoning in Large Language Models 
+
+**Title (ZH)**: PromptCoT: 合成奥林匹克级别问题以供大型语言模型进行数学推理 
+
+**Authors**: Xueliang Zhao, Wei Wu, Jian Guan, Lingpeng Kong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02324)  
+
+**Abstract**: The ability of large language models to solve complex mathematical problems has progressed significantly, particularly for tasks requiring advanced reasoning. However, the scarcity of sufficiently challenging problems, particularly at the Olympiad level, hinders further advancements. In this work, we introduce PromptCoT, a novel approach for automatically generating high-quality Olympiad-level math problems. The proposed method synthesizes complex problems based on mathematical concepts and the rationale behind problem construction, emulating the thought processes of experienced problem designers. We provide a theoretical analysis demonstrating that an optimal rationale should maximize both the likelihood of rationale generation given the associated concepts and the likelihood of problem generation conditioned on both the rationale and the concepts. Our method is evaluated on standard benchmarks including GSM8K, MATH-500, and AIME2024, where it consistently outperforms existing problem generation methods. Furthermore, we demonstrate that PromptCoT exhibits superior data scalability, consistently maintaining high performance as the dataset size increases, outperforming the baselines. The implementation is available at this https URL. 
+
+**Abstract (ZH)**: 大型语言模型解决复杂数学问题的能力显著进步，尤其是在需要高级推理的任务方面。然而，足够有挑战性的问题，特别是在奥林匹克级别上的问题的缺乏阻碍了进一步的进步。本文介绍了PromptCoT，一种生成高质量奥林匹克级别数学问题的新方法。所提出的方法基于数学概念和问题构建的原理，模拟了有经验的问题设计师的思维过程。我们提供了理论分析，证明最优原理应该最大化给定相关概念的原理生成的可能性以及同时基于原理和概念的问题生成的可能性。该方法在包括GSM8K、MATH-500和AIME2024的标准基准上进行了评估，一致优于现有的问题生成方法。此外，我们证明了PromptCoT在数据规模增加时表现出更好的数据扩展性，始终维持高性能，并优于基线方法。代码可通过以下链接获取。 
+
+---
+# Audio-Reasoner: Improving Reasoning Capability in Large Audio Language Models 
+
+**Title (ZH)**: Audio-Reasoner: 提高大规模音频语言模型的推理能力 
+
+**Authors**: Zhifei Xie, Mingbao Lin, Zihang Liu, Pengcheng Wu, Shuicheng Yan, Chunyan Miao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02318)  
+
+**Abstract**: Recent advancements in multimodal reasoning have largely overlooked the audio modality. We introduce Audio-Reasoner, a large-scale audio language model for deep reasoning in audio tasks. We meticulously curated a large-scale and diverse multi-task audio dataset with simple annotations. Then, we leverage closed-source models to conduct secondary labeling, QA generation, along with structured COT process. These datasets together form a high-quality reasoning dataset with 1.2 million reasoning-rich samples, which we name CoTA. Following inference scaling principles, we train Audio-Reasoner on CoTA, enabling it to achieve great logical capabilities in audio reasoning. Experiments show state-of-the-art performance across key benchmarks, including MMAU-mini (+25.42%), AIR-Bench chat/foundation(+14.57%/+10.13%), and MELD (+8.01%). Our findings stress the core of structured CoT training in advancing audio reasoning. 
+
+**Abstract (ZH)**: 近期多模态推理的进展大多忽视了音频模态。我们引入了Audio-Reasoner，这是一个大规模的音频语言模型，用于深入的音频任务推理。我们精心策划了一个大规模且多任务的音频数据集，并附有简洁的标注。然后，我们利用封闭源模型进行二次标注、问题-答案生成以及结构化的批判性思维过程。这些数据集共同形成了一个高质量的推理数据集，包含120万富有推理性的样本，我们将其命名为CoTA。遵循推理缩放原则，我们在CoTA上训练了Audio-Reasoner，使其具备出色的音频推理逻辑能力。实验结果显示，Audio-Reasoner在关键基准测试中表现优异，包括MMAU-mini (+25.42%)、AIR-Bench chat/foundation (+14.57%/+10.13%)和MELD (+8.01%)。我们的研究强调了结构化CoT训练在推动音频推理方面的重要性。 
+
+---
+# Enhancing LLM Reliability via Explicit Knowledge Boundary Modeling 
+
+**Title (ZH)**: 通过明确定界知识边界提升大规模语言模型可靠性 
+
+**Authors**: Hang Zheng, Hongshen Xu, Yuncong Liu, Lu Chen, Pascale Fung, Kai Yu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02233)  
+
+**Abstract**: Large language models (LLMs) frequently hallucinate due to misaligned self-awareness, generating erroneous outputs when addressing queries beyond their knowledge boundaries. While existing approaches mitigate hallucinations via uncertainty estimation or query rejection, they suffer from computational inefficiency or sacrificed helpfulness. To address these issues, we propose the Explicit Knowledge Boundary Modeling (EKBM) framework, integrating fast and slow reasoning systems to harmonize reliability and usability. The framework first employs a fast-thinking model to generate confidence-labeled responses, enabling immediate use of high-confidence outputs. For uncertain predictions, a slow refinement model conducts targeted reasoning to improve accuracy. To align model behavior with our proposed object, we propose a hybrid training pipeline, enhancing self-awareness without degrading task performance. Evaluations on dialogue state tracking tasks demonstrate that EKBM achieves superior model reliability over uncertainty-based baselines. Further analysis reveals that refinement substantially boosts accuracy while maintaining low computational overhead. Our work establishes a scalable paradigm for advancing LLM reliability and balancing accuracy and practical utility in error-sensitive applications. 
+
+**Abstract (ZH)**: Explicit Knowledge Boundary Modeling (EKBM)框架：和谐提升大型语言模型的可靠性和可用性 
+
+---
+# ATLaS: Agent Tuning via Learning Critical Steps 
+
+**Title (ZH)**: ATLaS: 基于学习关键步骤的智能体调优 
+
+**Authors**: Zhixun Chen, Ming Li, Yuxuan Huang, Yali Du, Meng Fang, Tianyi Zhou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02197)  
+
+**Abstract**: Large Language Model (LLM) agents have demonstrated remarkable generalization capabilities across multi-domain tasks. Existing agent tuning approaches typically employ supervised finetuning on entire expert trajectories. However, behavior-cloning of full trajectories can introduce expert bias and weaken generalization to states not covered by the expert data. Additionally, critical steps, such as planning, complex reasoning for intermediate subtasks, and strategic decision-making, are essential to success in agent tasks, so learning these steps is the key to improving LLM agents. For more effective and efficient agent tuning, we propose ATLaS that identifies the critical steps in expert trajectories and finetunes LLMs solely on these steps with reduced costs. By steering the training's focus to a few critical steps, our method mitigates the risk of overfitting entire trajectories and promotes generalization across different environments and tasks. In extensive experiments, an LLM finetuned on only 30% critical steps selected by ATLaS outperforms the LLM finetuned on all steps and recent open-source LLM agents. ATLaS maintains and improves base LLM skills as generalist agents interacting with diverse environments. 
+
+**Abstract (ZH)**: Large Language Model (LLM) 前代理(Agent)在多领域任务中展现了显著的泛化能力。现有的代理调优方法通常通过监督微调整个专家轨迹来实现。然而，直接克隆完整轨迹的行为克隆方法可能会引入专家偏差，削弱对专家数据未涵盖状态的泛化能力。另外，规划、复杂中间子任务的理性推理以及战略决策等关键步骤在代理任务的成功中至关重要，因此学习这些步骤是提高LLM代理的关键。为了实现更有效的和高效的代理调优，我们提出ATLaS，该方法识别专家轨迹中的关键步骤，并仅在此基础上对LLM进行微调，从而降低成本。通过将训练的重点转向少量关键步骤，我们的方法减轻了对完整轨迹过拟合的风险，并促进了在不同环境和任务中的泛化能力。在广泛的实验中，仅使用ATLaS选择的30%关键步骤进行微调的LLM，在性能上优于使用所有步骤进行微调的LLM和最近的开源LLM代理。ATLaS能够保持和提升基础LLM在作为通用代理与多样化环境交互时的技能。 
+
+---
+# Adversarial Tokenization 
+
+**Title (ZH)**: 对抗性标记化 
+
+**Authors**: Renato Lui Geh, Zilei Shao, Guy Van den Broeck  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02174)  
+
+**Abstract**: Current LLM pipelines account for only one possible tokenization for a given string, ignoring exponentially many alternative tokenizations during training and inference. For example, the standard Llama3 tokenization of penguin is [p,enguin], yet [peng,uin] is another perfectly valid alternative. In this paper, we show that despite LLMs being trained solely on one tokenization, they still retain semantic understanding of other tokenizations, raising questions about their implications in LLM safety. Put succinctly, we answer the following question: can we adversarially tokenize an obviously malicious string to evade safety and alignment restrictions? We show that not only is adversarial tokenization an effective yet previously neglected axis of attack, but it is also competitive against existing state-of-the-art adversarial approaches without changing the text of the harmful request. We empirically validate this exploit across three state-of-the-art LLMs and adversarial datasets, revealing a previously unknown vulnerability in subword models. 
+
+**Abstract (ZH)**: 当前的LLM管道只考虑给定字符串的一种可能分词方式，在训练和推理过程中忽略了指数级的其他分词方式。例如，标准的Llama3分词“penguin”为[p,enguin]，但[peng,uin]也是另一 perfectly valid 的替代分词。在本文中，我们证明尽管LLM仅被训练于一种分词方式，它们仍然保留了对其他分词方式的语义理解，从而引发了其在LLM安全方面的意义问题。简而言之，我们回答了以下问题：我们能否对抗性地分词一个明显恶意的字符串以规避安全和对齐限制？我们展示对抗性分词不仅是有效的且先前被忽略的一种攻击方式，而且还与现有的先进对抗性方法具有竞争力，无需改变有害请求的文本。我们在三个最先进的LLM和对抗性数据集中实证验证了这一利用方式，揭示了子词模型中一个未知的漏洞。 
+
+---
+# MedHEval: Benchmarking Hallucinations and Mitigation Strategies in Medical Large Vision-Language Models 
+
+**Title (ZH)**: MedHEval: 医学大规模视觉-语言模型中的幻觉benchmark及缓解策略 
+
+**Authors**: Aofei Chang, Le Huang, Parminder Bhatia, Taha Kass-Hout, Fenglong Ma, Cao Xiao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02157)  
+
+**Abstract**: Large Vision Language Models (LVLMs) are becoming increasingly important in the medical domain, yet Medical LVLMs (Med-LVLMs) frequently generate hallucinations due to limited expertise and the complexity of medical applications. Existing benchmarks fail to effectively evaluate hallucinations based on their underlying causes and lack assessments of mitigation strategies. To address this gap, we introduce MedHEval, a novel benchmark that systematically evaluates hallucinations and mitigation strategies in Med-LVLMs by categorizing them into three underlying causes: visual misinterpretation, knowledge deficiency, and context misalignment. We construct a diverse set of close- and open-ended medical VQA datasets with comprehensive evaluation metrics to assess these hallucination types. We conduct extensive experiments across 11 popular (Med)-LVLMs and evaluate 7 state-of-the-art hallucination mitigation techniques. Results reveal that Med-LVLMs struggle with hallucinations arising from different causes while existing mitigation methods show limited effectiveness, especially for knowledge- and context-based errors. These findings underscore the need for improved alignment training and specialized mitigation strategies to enhance Med-LVLMs' reliability. MedHEval establishes a standardized framework for evaluating and mitigating medical hallucinations, guiding the development of more trustworthy Med-LVLMs. 
+
+**Abstract (ZH)**: MedHEval: Systematically Evaluating and Mitigating Hallucinations in Medical Large Vision Language Models 
+
+---
+# Provable Benefits of Task-Specific Prompts for In-context Learning 
+
+**Title (ZH)**: 任务特定提示在上下文学习中的证明益处 
+
+**Authors**: Xiangyu Chang, Yingcong Li, Muti Kara, Samet Oymak, Amit K. Roy-Chowdhury  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02102)  
+
+**Abstract**: The in-context learning capabilities of modern language models have motivated a deeper mathematical understanding of sequence models. A line of recent work has shown that linear attention models can emulate projected gradient descent iterations to implicitly learn the task vector from the data provided in the context window. In this work, we consider a novel setting where the global task distribution can be partitioned into a union of conditional task distributions. We then examine the use of task-specific prompts and prediction heads for learning the prior information associated with the conditional task distribution using a one-layer attention model. Our results on loss landscape show that task-specific prompts facilitate a covariance-mean decoupling where prompt-tuning explains the conditional mean of the distribution whereas the variance is learned/explained through in-context learning. Incorporating task-specific head further aids this process by entirely decoupling estimation of mean and variance components. This covariance-mean perspective similarly explains how jointly training prompt and attention weights can provably help over fine-tuning after pretraining. 
+
+**Abstract (ZH)**: 现代语言模型的上下文学习能力推动了序列模型的深层次数学理解。近期研究表明，线性注意力模型可以通过隐式学习上下文窗口提供的数据来模拟投影梯度下降迭代。在本文中，我们考虑了一种新颖的设置，即全局任务分布可以分解为条件任务分布的并集。然后，我们探讨了使用任务特定的提示和预测头，通过一层注意力模型学习与条件任务分布相关的先验信息。我们的损失景观结果表明，任务特定的提示促进了协方差-均值的解耦，其中提示调优解释了分布的条件均值，而方差是通过上下文学习来学习和解释的。进一步引入任务特定的预测头完全解耦了均值和方差的估计过程。这种协方差-均值的视角同样解释了共同训练提示和注意权重如何在预训练后超越微调以实现证明的帮助。 
+
+---
+# LLMs as Educational Analysts: Transforming Multimodal Data Traces into Actionable Reading Assessment Reports 
+
+**Title (ZH)**: LLMs作为教育分析师：将多模态数据轨迹转化为可操作的阅读评估报告 
+
+**Authors**: Eduardo Davalos, Yike Zhang, Namrata Srivastava, Jorge Alberto Salas, Sara McFadden, Sun-Joo Cho, Gautam Biswas, Amanda Goodwin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02099)  
+
+**Abstract**: Reading assessments are essential for enhancing students' comprehension, yet many EdTech applications focus mainly on outcome-based metrics, providing limited insights into student behavior and cognition. This study investigates the use of multimodal data sources -- including eye-tracking data, learning outcomes, assessment content, and teaching standards -- to derive meaningful reading insights. We employ unsupervised learning techniques to identify distinct reading behavior patterns, and then a large language model (LLM) synthesizes the derived information into actionable reports for educators, streamlining the interpretation process. LLM experts and human educators evaluate these reports for clarity, accuracy, relevance, and pedagogical usefulness. Our findings indicate that LLMs can effectively function as educational analysts, turning diverse data into teacher-friendly insights that are well-received by educators. While promising for automating insight generation, human oversight remains crucial to ensure reliability and fairness. This research advances human-centered AI in education, connecting data-driven analytics with practical classroom applications. 
+
+**Abstract (ZH)**: 多模态数据源在阅读评估中的应用：从行为和认知洞察到教师友好的报告生成 
+
+---
+# Linear Representations of Political Perspective Emerge in Large Language Models 
+
+**Title (ZH)**: 政治视角的线性表示在大型语言模型中 Emerges 
+
+**Authors**: Junsol Kim, James Evans, Aaron Schein  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02080)  
+
+**Abstract**: Large language models (LLMs) have demonstrated the ability to generate text that realistically reflects a range of different subjective human perspectives. This paper studies how LLMs are seemingly able to reflect more liberal versus more conservative viewpoints among other political perspectives in American politics. We show that LLMs possess linear representations of political perspectives within activation space, wherein more similar perspectives are represented closer together. To do so, we probe the attention heads across the layers of three open transformer-based LLMs (\texttt{Llama-2-7b-chat}, \texttt{Mistral-7b-instruct}, \texttt{Vicuna-7b}). We first prompt models to generate text from the perspectives of different U.S.~lawmakers. We then identify sets of attention heads whose activations linearly predict those lawmakers' DW-NOMINATE scores, a widely-used and validated measure of political ideology. We find that highly predictive heads are primarily located in the middle layers, often speculated to encode high-level concepts and tasks. Using probes only trained to predict lawmakers' ideology, we then show that the same probes can predict measures of news outlets' slant from the activations of models prompted to simulate text from those news outlets. These linear probes allow us to visualize, interpret, and monitor ideological stances implicitly adopted by an LLM as it generates open-ended responses. Finally, we demonstrate that by applying linear interventions to these attention heads, we can steer the model outputs toward a more liberal or conservative stance. Overall, our research suggests that LLMs possess a high-level linear representation of American political ideology and that by leveraging recent advances in mechanistic interpretability, we can identify, monitor, and steer the subjective perspective underlying generated text. 
+
+**Abstract (ZH)**: 大型语言模型（LLMs）能够生成反映不同主观人类视角的文本。本文研究了LLMs在反映美国政治中的自由派与保守派以及其他政治观点方面的差异。我们展示了LLMs在激活空间中线性表示不同的政治观点，其中更相似的观点被更接近地表示。为此，我们对三个开放的基于Transformer的LLMs（\texttt{Llama-2-7b-chat}、\texttt{Mistral-7b-instruct}、\texttt{Vicuna-7b}）的注意力头进行了探测。首先，我们提示模型从不同美国参议员的视角生成文本。然后，我们确定了一组注意力头的激活，这些激活线性预测参议员的DW-NOMINATE评分，这是一种广泛使用且验证过的政治意识形态衡量标准。我们发现，高度预测性的头主要位于中间层，这些层通常被认为编码高层次的概念和任务。利用仅训练用于预测参议员意识形态的探针，我们展示了相同的探针可以从模拟新闻机构文本的模型激活中预测新闻机构的倾向度。线性探针使我们能够可视化、解释并监控LLM在生成开放式响应时隐含持有的立场。最后，我们证明通过对这些注意力头应用线性干预，可以使模型输出更倾向于自由派或保守派。总体而言，我们的研究建议，LLMs拥有美国政治意识形态的高层次线性表示，并且通过利用机制可解释性的最新进展，我们能够识别、监控并引导生成文本所基于的主观视角。 
+
+---
+# Superscopes: Amplifying Internal Feature Representations for Language Model Interpretation 
+
+**Title (ZH)**: 超范围：放大内部特征表示以提高语言模型解释性 
+
+**Authors**: Jonathan Jacobi, Gal Niv  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02078)  
+
+**Abstract**: Understanding and interpreting the internal representations of large language models (LLMs) remains an open challenge. Patchscopes introduced a method for probing internal activations by patching them into new prompts, prompting models to self-explain their hidden representations. We introduce Superscopes, a technique that systematically amplifies superposed features in MLP outputs (multilayer perceptron) and hidden states before patching them into new contexts. Inspired by the "features as directions" perspective and the Classifier-Free Guidance (CFG) approach from diffusion models, Superscopes amplifies weak but meaningful features, enabling the interpretation of internal representations that previous methods failed to explain-all without requiring additional training. This approach provides new insights into how LLMs build context and represent complex concepts, further advancing mechanistic interpretability. 
+
+**Abstract (ZH)**: 理解并解释大规模语言模型内部表示的方法仍是一个开放性的挑战。Superscopes：系统性增强MLP输出和隐藏状态中的叠加特征以促进解释 
+
+---
+# AI persuading AI vs AI persuading Humans: LLMs' Differential Effectiveness in Promoting Pro-Environmental Behavior 
+
+**Title (ZH)**: AI说服AI vs AI说服人类：LLMs在促进环保行为方面的差异化效果 
+
+**Authors**: Alexander Doudkin, Pat Pataranutaporn, Pattie Maes  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02067)  
+
+**Abstract**: Pro-environmental behavior (PEB) is vital to combat climate change, yet turning awareness into intention and action remains elusive. We explore large language models (LLMs) as tools to promote PEB, comparing their impact across 3,200 participants: real humans (n=1,200), simulated humans based on actual participant data (n=1,200), and fully synthetic personas (n=1,200). All three participant groups faced personalized or standard chatbots, or static statements, employing four persuasion strategies (moral foundations, future self-continuity, action orientation, or "freestyle" chosen by the LLM). Results reveal a "synthetic persuasion paradox": synthetic and simulated agents significantly affect their post-intervention PEB stance, while human responses barely shift. Simulated participants better approximate human trends but still overestimate effects. This disconnect underscores LLM's potential for pre-evaluating PEB interventions but warns of its limits in predicting real-world behavior. We call for refined synthetic modeling and sustained and extended human trials to align conversational AI's promise with tangible sustainability outcomes. 
+
+**Abstract (ZH)**: 大型语言模型促进环境友好行为的研究：真实人类、模拟人类和合成 persona 的比较 
+
+---
+# Hebbian learning the local structure of language 
+
+**Title (ZH)**: 基于希布规则学习语言的局部结构 
+
+**Authors**: P. Myles Eugenio  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02057)  
+
+**Abstract**: Learning in the brain is local and unsupervised (Hebbian). We derive the foundations of an effective human language model inspired by these microscopic constraints. It has two parts: (1) a hierarchy of neurons which learns to tokenize words from text (whichiswhatyoudowhenyoureadthis); and (2) additional neurons which bind the learned symanticless patterns of the tokenizer into a symanticful token (an embedding). The model permits continuous parallel learning without forgetting; and is a powerful tokenizer which performs renormalization group. This allows it to exploit redundancy, such that it generates tokens which are always decomposable into a basis set (e.g an alphabet), and can mix features learned from multiple languages. We find that the structure of this model allows it to learn a natural language morphology WITHOUT data. The language data generated by this model predicts the correct distribution of word-forming patterns observed in real languages, and further demonstrates why microscopically human speech is broken up into words. This model provides the basis for understanding the microscopic origins of language and human creativity. 
+
+**Abstract (ZH)**: 大脑中的学习是局部的和无监督的（基于海BI式原则）。我们以这些微观约束为基础推导出一种有效的机器语言模型。该模型有两部分组成：（1）层次结构的神经元，学习从文本中识别词（这正是你阅读时所做的）；（2）额外的神经元，将词识别器学习到的意义贫乏模式绑定成一个有意义的词（嵌入）。该模型允许持续并行学习而不会遗忘；并且是强大的词识别器，能够执行重整化组操作。这使得它能够利用冗余性，生成的词总是可以分解为基本集（例如字母表），并且可以从多种语言中混合学习到的特征进行组合。我们发现该模型的结构使其能够在没有数据的情况下学习自然语言形态学。该模型生成的语言数据预测了真实语言中词形模式的正确分布，并进一步展示了为什么人类语言在微观层面上被分解成词。该模型为基础了解语言和人类创造力的微观起源提供了基础。 
+
+---
+# Comparative Analysis of OpenAI GPT-4o and DeepSeek R1 for Scientific Text Categorization Using Prompt Engineering 
+
+**Title (ZH)**: OpenAI GPT-4o与DeepSeek R1在科学文本分类中的Prompt工程比较分析 
+
+**Authors**: Aniruddha Maiti, Samuel Adewumi, Temesgen Alemayehu Tikure, Zichun Wang, Niladri Sengupta, Anastasiia Sukhanova, Ananya Jana  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02032)  
+
+**Abstract**: This study examines how large language models categorize sentences from scientific papers using prompt engineering. We use two advanced web-based models, GPT-4o (by OpenAI) and DeepSeek R1, to classify sentences into predefined relationship categories. DeepSeek R1 has been tested on benchmark datasets in its technical report. However, its performance in scientific text categorization remains unexplored. To address this gap, we introduce a new evaluation method designed specifically for this task. We also compile a dataset of cleaned scientific papers from diverse domains. This dataset provides a platform for comparing the two models. Using this dataset, we analyze their effectiveness and consistency in categorization. 
+
+**Abstract (ZH)**: 本研究使用提示工程方法探讨大规模语言模型如何对科学论文中的句子进行分类，并使用两个先进的基于Web模型GPT-4o（由OpenAI提供）和DeepSeek R1对句子进行预定义关系类别的分类。DeepSeek R1在其技术报告中已在基准数据集上进行了测试，但在科学文本分类方面的性能尚待探索。为了填补这一空白，我们引入了一种专门为该任务设计的新评估方法，并汇集了一组来自多个领域的清理后的科学论文数据集，为两个模型提供了一个比较平台。使用该数据集，我们分析了它们在分类上的有效性与一致性。 
+
+---
+# Mind the (Belief) Gap: Group Identity in the World of LLMs 
+
+**Title (ZH)**: 注意（信念）差距：大规模语言模型 worlds 中的群体身份 
+
+**Authors**: Angana Borah, Marwa Houalla, Rada Mihalcea  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02016)  
+
+**Abstract**: Social biases and belief-driven behaviors can significantly impact Large Language Models (LLMs) decisions on several tasks. As LLMs are increasingly used in multi-agent systems for societal simulations, their ability to model fundamental group psychological characteristics remains critical yet under-explored. In this study, we present a multi-agent framework that simulates belief congruence, a classical group psychology theory that plays a crucial role in shaping societal interactions and preferences. Our findings reveal that LLMs exhibit amplified belief congruence compared to humans, across diverse contexts. We further investigate the implications of this behavior on two downstream tasks: (1) misinformation dissemination and (2) LLM learning, finding that belief congruence in LLMs increases misinformation dissemination and impedes learning. To mitigate these negative impacts, we propose strategies inspired by: (1) contact hypothesis, (2) accuracy nudges, and (3) global citizenship framework. Our results show that the best strategies reduce misinformation dissemination by up to 37% and enhance learning by 11%. Bridging social psychology and AI, our work provides insights to navigate real-world interactions using LLMs while addressing belief-driven biases. 
+
+**Abstract (ZH)**: 社会偏见和信念驱动的行为会显著影响大型语言模型（LLMs）在多种任务上的决策。随着LLMs在多Agent系统中的社会模拟中应用日益广泛，它们建模基本群体心理特征的能力仍具有关键性但尚未充分探索。在本研究中，我们提出了一种多Agent框架，模拟信念一致性，这一经典群体心理学理论在塑造社会互动和偏好方面发挥着重要作用。我们的研究发现，无论是在哪种背景下，LLMs的信念一致性都比人类更为放大。我们进一步探究了这种行为对两个下游任务的影响：（1）错误信息传播和（2）LLMs学习。研究发现，LLMs中的信念一致性会增加错误信息传播并阻碍学习。为减轻这些负面影响，我们提出了一些策略：（1）接触假说，（2）准确度提示，以及（3）全球公民框架。我们的结果显示，最优策略可将错误信息传播减少多达37%，并增强学习11%。结合社会心理学与人工智能，我们的研究为利用LLMs导航现实世界互动并解决信念驱动的偏见提供了见解。 
+
+---
+# Adaptively evaluating models with task elicitation 
+
+**Title (ZH)**: 自适应地通过任务引出评估模型 
+
+**Authors**: Davis Brown, Prithvi Balehannina, Helen Jin, Shreya Havaldar, Hamed Hassani, Eric Wong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01986)  
+
+**Abstract**: Manual curation of evaluation datasets is struggling to keep up with the rapidly expanding capabilities and deployment scenarios of language models. Towards scalable model profiling, we introduce and validate a framework for evaluating LLMs, called Adaptive Evaluations. Adaptive evaluations use scaffolded language models (evaluator agents) to search through a target model's behavior on a domain dataset and create difficult questions (tasks) that can discover and probe the model's failure modes. We find that frontier models lack consistency when adaptively probed with our framework on a diverse suite of datasets and tasks, including but not limited to legal reasoning, forecasting, and online harassment. Generated questions pass human validity checks and often transfer to other models with different capability profiles, demonstrating that adaptive evaluations can also be used to create difficult domain-specific datasets. 
+
+**Abstract (ZH)**: 手动构建评估数据集难以跟上语言模型快速扩展的能力和应用场景。为实现可扩展的模型 profiling，我们引入并验证了一个评估大语言模型的框架，称为自适应评估。自适应评估利用梯度语言模型（评估代理）在领域数据集上搜索目标模型的行为，并生成能够发现和探究模型失效模式的复杂问题（任务）。我们发现，前沿模型在我们的框架上对多样化的数据集和任务进行自适应探究时缺乏一致性，涉及但不限于法律推理、预测和在线骚扰等领域。生成的问题通过了人类有效性检查，并且往往能够迁移到具有不同能力轮廓的其他模型，这表明自适应评估也可用于创建特定领域的复杂数据集。 
+
+---
+# AskToAct: Enhancing LLMs Tool Use via Self-Correcting Clarification 
+
+**Title (ZH)**: AskToAct: 通过自我修正澄清提升LLMs工具使用能力 
+
+**Authors**: Xuan Zhang, Yongliang Shen, Zhe Zheng, Linjuan Wu, Wenqi Zhang, Yuchen Yan, Qiuying Peng, Jun Wang, Weiming Lu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01940)  
+
+**Abstract**: Large language models (LLMs) have demonstrated remarkable capabilities in tool learning. In real-world scenarios, user queries are often ambiguous and incomplete, requiring effective clarification. However, existing interactive clarification approaches face two critical limitations: reliance on manually constructed datasets and lack of error correction mechanisms during multi-turn clarification. We present AskToAct, which addresses these challenges by exploiting the structural mapping between queries and their tool invocation solutions. Our key insight is that tool parameters naturally represent explicit user intents. By systematically removing key parameters from queries while retaining them as ground truth, we enable automated construction of high-quality training data. We further enhance model robustness by fine-tuning on error-correction augmented data using selective masking mechanism, enabling dynamic error detection during clarification interactions. Comprehensive experiments demonstrate that AskToAct significantly outperforms existing approaches, achieving above 79% accuracy in recovering critical unspecified intents and enhancing clarification efficiency by an average of 48.34% while maintaining high accuracy in tool invocation. Our framework exhibits robust performance across varying complexity levels and successfully generalizes to entirely unseen APIs without additional training, achieving performance comparable to GPT-4 with substantially fewer computational resources. 
+
+**Abstract (ZH)**: AskToAct：通过查询与工具调用解决方案的结构映射实现有效的澄清 
+
+---
+# MultiAgentBench: Evaluating the Collaboration and Competition of LLM agents 
+
+**Title (ZH)**: 多智能体基准：评估LLM代理的协作与竞争 
+
+**Authors**: Kunlun Zhu, Hongyi Du, Zhaochen Hong, Xiaocheng Yang, Shuyi Guo, Zhe Wang, Zhenhailong Wang, Cheng Qian, Xiangru Tang, Heng Ji, Jiaxuan You  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01935)  
+
+**Abstract**: Large Language Models (LLMs) have shown remarkable capabilities as autonomous agents, yet existing benchmarks either focus on single-agent tasks or are confined to narrow domains, failing to capture the dynamics of multi-agent coordination and competition. In this paper, we introduce MultiAgentBench, a comprehensive benchmark designed to evaluate LLM-based multi-agent systems across diverse, interactive scenarios. Our framework measures not only task completion but also the quality of collaboration and competition using novel, milestone-based key performance indicators. Moreover, we evaluate various coordination protocols (including star, chain, tree, and graph topologies) and innovative strategies such as group discussion and cognitive planning. Notably, gpt-4o-mini reaches the average highest task score, graph structure performs the best among coordination protocols in the research scenario, and cognitive planning improves milestone achievement rates by 3%. Code and datasets are public available at this https URL. 
+
+**Abstract (ZH)**: 大型语言模型(LLMs)在自主代理方面展示了卓越的能力，但现有基准要么专注于单代理任务，要么局限于狭窄领域，无法捕捉多代理协调和竞争的动力学。在本文中，我们引入了MultiAgentBench，这是一个全面的基准，用于评估基于LLM的多代理系统在多样的交互场景中的表现。我们的框架不仅衡量任务完成情况，还通过新的里程碑式关键绩效指标来评估合作与竞争的质量。此外，我们评估了多种协调协议（包括星型、链型、树型和图型拓扑结构）以及分组讨论和认知规划等创新策略。值得注意的是，gpt-4o-mini达到了平均最高任务得分，研究场景中图结构在协调协议中表现最佳，认知规划将里程碑成就率提高了3%。代码和数据集可在以下网址获取。 
+
+---
+# Unnatural Languages Are Not Bugs but Features for LLMs 
+
+**Title (ZH)**: unnatural languages are not bugs but features for LLMs 不是bug而是功能： unnatural语言不是_bug而是特征_for 大型语言模型 
+
+**Authors**: Keyu Duan, Yiran Zhao, Zhili Feng, Jinjie Ni, Tianyu Pang, Qian Liu, Tianle Cai, Longxu Dou, Kenji Kawaguchi, Anirudh Goyal, J. Zico Kolter, Michael Qizhe Shieh  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01926)  
+
+**Abstract**: Large Language Models (LLMs) have been observed to process non-human-readable text sequences, such as jailbreak prompts, often viewed as a bug for aligned LLMs. In this work, we present a systematic investigation challenging this perception, demonstrating that unnatural languages - strings that appear incomprehensible to humans but maintain semantic meanings for LLMs - contain latent features usable by models. Notably, unnatural languages possess latent features that can be generalized across different models and tasks during inference. Furthermore, models fine-tuned on unnatural versions of instruction datasets perform on-par with those trained on natural language, achieving 49.71 win rates in Length-controlled AlpacaEval 2.0 in average across various base models. In addition, through comprehensive analysis, we demonstrate that LLMs process unnatural languages by filtering noise and inferring contextual meaning from filtered words. 
+
+**Abstract (ZH)**: 大型语言模型（LLMs）被观察到处理非人类可读的文本序列，如 Jailbreak 提示，这些常常被视为对齐 LLM 的一个bug。在本文中，我们系统地探讨了这一观点，证明了非自然语言——对人类看似不可理解但对LLMs保持语义意义的字符串——包含了可用于模型的潜在特征。值得注意的是，非自然语言包含的潜在特征可以在不同的模型和任务推断过程中泛化。此外，使用非自然语言版本的指令数据集 fine-tuned 的模型在各种基础模型中表现出色，平均在 Length-controlled AlpacaEval 2.0 中取得了49.71%的胜率，与使用自然语言训练的模型表现相当。通过全面分析，我们还证明了LLMs处理非自然语言通过过滤噪声并从筛选出的词中推断上下文意义。 
+
+---
+# Output Length Effect on DeepSeek-R1's Safety in Forced Thinking 
+
+**Title (ZH)**: DeepSeek-R1在强迫思考中输出长度对其安全性的影响 
+
+**Authors**: Xuying Li, Zhuo Li, Yuji Kosuga, Victor Bian  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01923)  
+
+**Abstract**: Large Language Models (LLMs) have demonstrated strong reasoning capabilities, but their safety under adversarial conditions remains a challenge. This study examines the impact of output length on the robustness of DeepSeek-R1, particularly in Forced Thinking scenarios. We analyze responses across various adversarial prompts and find that while longer outputs can improve safety through self-correction, certain attack types exploit extended generations. Our findings suggest that output length should be dynamically controlled to balance reasoning effectiveness and security. We propose reinforcement learning-based policy adjustments and adaptive token length regulation to enhance LLM safety. 
+
+**Abstract (ZH)**: 大型语言模型（LLMs）显示出强大的推理能力，但在对抗条件下安全性依然面临挑战。本研究探讨了输出长度对DeepSeek-R1稳健性的影响，特别是在强制思考场景中的影响。我们分析了各种对抗性提示下的响应，发现虽然较长的输出可以通过自我纠正提高安全性，但某些攻击类型会利用扩展生成。研究结果表明，输出长度应动态控制以平衡推理效果和安全性。我们提出了基于强化学习的策略调整和自适应token长度调节以增强LLM的安全性。 
+
+---
+# NCL-UoR at SemEval-2025 Task 3: Detecting Multilingual Hallucination and Related Observable Overgeneration Text Spans with Modified RefChecker and Modified SeflCheckGPT 
+
+**Title (ZH)**: NCL-UoR参加SemEval-2025任务3：利用修改后的RefChecker和修改后的SelfCheckGPT检测多语言幻觉及相关可观察的过度生成文本片段 
+
+**Authors**: Jiaying Hong, Thanet Markchom, Jianfei Xu, Tong Wu, Huizhi Liang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01921)  
+
+**Abstract**: SemEval-2025 Task 3 (Mu-SHROOM) focuses on detecting hallucinations in content generated by various large language models (LLMs) across multiple languages. This task involves not only identifying the presence of hallucinations but also pinpointing their specific occurrences. To tackle this challenge, this study introduces two methods: modified RefChecker and modified SelfCheckGPT. The modified RefChecker integrates prompt-based factual verification into References, structuring them as claim-based tests rather than single external knowledge sources. The modified SelfCheckGPT incorporates external knowledge to overcome its reliance on internal knowledge. In addition, both methods' original prompt designs are enhanced to identify hallucinated words within LLM-generated texts. Experimental results demonstrate the effectiveness of the approach, achieving a high ranking on the test dataset in detecting hallucinations across various languages, with an average IoU of 0.5310 and an average COR of 0.5669. 
+
+**Abstract (ZH)**: SemEval-2025 任务3 (Mu-SHROOM) 专注于检测各种大型语言模型（LLMs）生成的内容中的幻觉，覆盖多种语言。该任务不仅涉及识别幻觉的存在，还涉及具体定位其发生。为应对这一挑战，本研究介绍了两种方法：修改后的 RefChecker 和修改后的 SelfCheckGPT。修改后的 RefChecker 将基于提示的事实验证集成到 References 中，将其结构化为基于断言的测试，而非单一的外部知识来源。修改后的 SelfCheckGPT 结合外部知识以克服其对内部知识的依赖。此外，两种方法的原始提示设计也得到了增强，以识别 LLM 生成文本中的幻觉词。实验结果表明该方法的有效性，在检测多种语言中的幻觉时在测试数据集中取得了高排名，平均 IoU 为 0.5310，平均 COR 为 0.5669。 
+
+---
+# How to Steer LLM Latents for Hallucination Detection? 
+
+**Title (ZH)**: 如何引导LLM潜在表示以进行幻觉检测？ 
+
+**Authors**: Seongheon Park, Xuefeng Du, Min-Hsuan Yeh, Haobo Wang, Yixuan Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01917)  
+
+**Abstract**: Hallucinations in LLMs pose a significant concern to their safe deployment in real-world applications. Recent approaches have leveraged the latent space of LLMs for hallucination detection, but their embeddings, optimized for linguistic coherence rather than factual accuracy, often fail to clearly separate truthful and hallucinated content. To this end, we propose the Truthfulness Separator Vector (TSV), a lightweight and flexible steering vector that reshapes the LLM's representation space during inference to enhance the separation between truthful and hallucinated outputs, without altering model parameters. Our two-stage framework first trains TSV on a small set of labeled exemplars to form compact and well-separated clusters. It then augments the exemplar set with unlabeled LLM generations, employing an optimal transport-based algorithm for pseudo-labeling combined with a confidence-based filtering process. Extensive experiments demonstrate that TSV achieves state-of-the-art performance with minimal labeled data, exhibiting strong generalization across datasets and providing a practical solution for real-world LLM applications. 
+
+**Abstract (ZH)**: LLM中幻觉的问题对其在真实世界应用中的安全部署构成了重大关切。近期方法利用了LLM的潜在空间进行幻觉检测，但这些方法优化的语言连贯性往往不足以清晰地区分真实和幻觉内容。为此，我们提出了一种轻量级和灵活的控制向量——真相分离向量（TSV），该向量在推理过程中重塑LLM的表示空间，以增强真实和幻觉输出之间的分离，而不改变模型参数。我们的两阶段框架首先在少量标记的示例上训练TSV，形成紧凑且分离良好的聚类。然后，通过基于最优传输的伪标签算法与基于置信度的过滤过程，扩充示例集以包含未标记的LLM生成数据。广泛的实验表明，TSV在最少标记数据下实现了最先进的性能，展现出强大的泛化能力，并为真实的LLM应用提供了实用的解决方案。 
+
+---
+# UDora: A Unified Red Teaming Framework against LLM Agents by Dynamically Hijacking Their Own Reasoning 
+
+**Title (ZH)**: UDora：一种通过动态劫持其自身推理来对抗LLM代理的统一红队框架 
+
+**Authors**: Jiawei Zhang, Shuang Yang, Bo Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01908)  
+
+**Abstract**: Large Language Model (LLM) agents equipped with external tools have become increasingly powerful for handling complex tasks such as web shopping, automated email replies, and financial trading. However, these advancements also amplify the risks of adversarial attacks, particularly when LLM agents can access sensitive external functionalities. Moreover, because LLM agents engage in extensive reasoning or planning before executing final actions, manipulating them into performing targeted malicious actions or invoking specific tools remains a significant challenge. Consequently, directly embedding adversarial strings in malicious instructions or injecting malicious prompts into tool interactions has become less effective against modern LLM agents. In this work, we present UDora, a unified red teaming framework designed for LLM Agents that dynamically leverages the agent's own reasoning processes to compel it toward malicious behavior. Specifically, UDora first samples the model's reasoning for the given task, then automatically identifies multiple optimal positions within these reasoning traces to insert targeted perturbations. Subsequently, it uses the modified reasoning as the objective to optimize the adversarial strings. By iteratively applying this process, the LLM agent will then be induced to undertake designated malicious actions or to invoke specific malicious tools. Our approach demonstrates superior effectiveness compared to existing methods across three LLM agent datasets. 
+
+**Abstract (ZH)**: 具有外部工具辅助的大型语言模型（LLM）代理在处理复杂任务如网络购物、自动化邮件回复和金融交易方面的能力不断增强。然而，这些进步也放大了对抗攻击的风险，特别是在LLM代理能够访问敏感外部功能时。此外，由于LLM代理在执行最终操作前会进行广泛的推理或规划，操纵它们执行定向恶意操作或调用特定工具仍然是一项重大挑战。因此，直接在恶意指令中嵌入对抗字符串或将恶意提示注入工具交互已不再是现代LLM代理的有效手段。在本工作中，我们提出了一种名为UDora的统一红队框架，专门为LLM代理设计，动态利用代理自身的推理过程来使其朝向恶意行为。具体而言，UDora首先随机采样模型针对给定任务的推理过程，然后自动识别这些推理轨迹中的多个最优位置，插入目标扰动。接下来，它将修改后的推理作为优化目标来优化对抗字符串。通过迭代应用这一过程，LLM代理将被诱导执行指定的恶意操作或调用特定的恶意工具。我们的方法在三个LLM代理数据集上的效果优于现有的方法。 
+
+---
+# PsychBench: A comprehensive and professional benchmark for evaluating the performance of LLM-assisted psychiatric clinical practice 
+
+**Title (ZH)**: PsychBench：评估LLM辅助精神科临床实践性能的全面专业基准 
+
+**Authors**: Ruoxi Wang, Shuyu Liu, Ling Zhang, Xuequan Zhu, Rui Yang, Xinzhu Zhou, Fei Wu, Zhi Yang, Cheng Jin, Gang Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01903)  
+
+**Abstract**: The advent of Large Language Models (LLMs) offers potential solutions to address problems such as shortage of medical resources and low diagnostic consistency in psychiatric clinical practice. Despite this potential, a robust and comprehensive benchmarking framework to assess the efficacy of LLMs in authentic psychiatric clinical environments is absent. This has impeded the advancement of specialized LLMs tailored to psychiatric applications. In response to this gap, by incorporating clinical demands in psychiatry and clinical data, we proposed a benchmarking system, PsychBench, to evaluate the practical performance of LLMs in psychiatric clinical settings. We conducted a comprehensive quantitative evaluation of 16 LLMs using PsychBench, and investigated the impact of prompt design, chain-of-thought reasoning, input text length, and domain-specific knowledge fine-tuning on model performance. Through detailed error analysis, we identified strengths and potential limitations of the existing models and suggested directions for improvement. Subsequently, a clinical reader study involving 60 psychiatrists of varying seniority was conducted to further explore the practical benefits of existing LLMs as supportive tools for psychiatrists of varying seniority. Through the quantitative and reader evaluation, we show that while existing models demonstrate significant potential, they are not yet adequate as decision-making tools in psychiatric clinical practice. The reader study further indicates that, as an auxiliary tool, LLM could provide particularly notable support for junior psychiatrists, effectively enhancing their work efficiency and overall clinical quality. To promote research in this area, we will make the dataset and evaluation framework publicly available, with the hope of advancing the application of LLMs in psychiatric clinical settings. 
+
+**Abstract (ZH)**: 大型语言模型（LLMs）的出现为解决医学资源短缺和精神科临床诊断一致性低等问题提供了潜在解决方案。尽管具备这些潜力，但缺乏一个能够在真实精神科临床环境中全面评估LLMs有效性的基准框架，这阻碍了针对精神科应用的专业化LLMs的发展。为弥补这一空白，通过融入精神病学的临床需求和临床数据，我们提出了一套基准评估系统PsychBench，用于评估LLMs在精神科临床环境中的实际表现。我们使用PsychBench对16种LLM进行了全面的定量评估，并探究了提示设计、链式思考推理、输入文本长度和领域特定知识微调对模型性能的影响。通过详细的错误分析，我们识别了现有模型的优势和潜在局限性，并提出了改进方向。随后，我们开展了涉及60名不同资历精神科医生的临床读者研究，进一步探讨了现有LLMs作为不同资历精神科医生支持工具的实际益处。通过对定量和读者评估结果的研究，我们表明，虽然现有模型具有巨大的潜力，但它们尚不足以作为精神科临床实践中决策工具。读者研究进一步表明，作为辅助工具，LLM能够特别显著地支持初级精神科医生，有效提高他们的工作效率和整体临床质量。为促进这一领域的研究，我们将数据集和评估框架公开，希望能推动LLMs在精神科临床环境中的应用。 
+
+---
+# An Empirical Analysis of LLMs for Countering Misinformation 
+
+**Title (ZH)**: 对抗谬误的大型语言模型实证分析 
+
+**Authors**: Adiba Mahbub Proma, Neeley Pate, James Druckman, Gourab Ghoshal, Hangfeng He, Ehsan Hoque  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01902)  
+
+**Abstract**: While Large Language Models (LLMs) can amplify online misinformation, they also show promise in tackling misinformation. In this paper, we empirically study the capabilities of three LLMs -- ChatGPT, Gemini, and Claude -- in countering political misinformation. We implement a two-step, chain-of-thought prompting approach, where models first identify credible sources for a given claim and then generate persuasive responses. Our findings suggest that models struggle to ground their responses in real news sources, and tend to prefer citing left-leaning sources. We also observe varying degrees of response diversity among models. Our findings highlight concerns about using LLMs for fact-checking through only prompt-engineering, emphasizing the need for more robust guardrails. Our results have implications for both researchers and non-technical users. 
+
+**Abstract (ZH)**: 大型语言模型在对抗政治 misinformation方面的能力研究：基于实证的探讨与应对策略 
+
+---
+# Identifying Sensitive Weights via Post-quantization Integral 
+
+**Title (ZH)**: 通过后量化积分识别敏感权重 
+
+**Authors**: Yuezhou Hu, Weiyu Huang, Zichen Liang, Chang Chen, Jintao Zhang, Jun Zhu, Jianfei Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01901)  
+
+**Abstract**: Serving Large Language Models (LLMs) is costly. However, post-training weight quantization can address this problem by both compressing their sizes for limited memory and saving bandwidth for acceleration. As not all weight dimensions are equally important, those methods typically rely on a sensitivity metric, which indicates the element-wise influence of weights on loss function and is used to preprocess original weights for better quantization. In this work, we conduct an empirical study on the accuracy of the sensitivity metric, and find that existing gradient and Hessian based metrics are very inaccurate: they underestimate quantization's impact on the loss function by orders of magnitude, mainly due to the small convergence radius of local 2nd order approximation, \ie, gradient and Hessian term in Taylor's formula. To tackle this problem, we propose Post-quantization Integral (PQI), an accurate metric to estimate posterior sensitivity in a fine-grained manner. To leverage this accurate metric, we further propose ReQuant, a simple yet powerful framework that mainly consists of two Dense-and-Sparse detach components: self-adaptive outlier selection and step-wise significant weights detach. Results show that ReQuant boosts state-of-the-art post-training quantization methods, with a pronounced improvement of 2.66 perplexity gain on Llama 3.2 1B with QTIP. 
+
+**Abstract (ZH)**: 大型语言模型的服务成本较高。然而，通过后训练权重量化可以解决这一问题，既可以通过压缩模型大小来限制内存使用，也可以通过加速来节省带宽。由于并不是所有权重维度同等重要，这些方法通常依赖于一个敏感度度量，该度量指示权重对损失函数的影响，并用于预处理原始权重以获得更好的量化效果。在本文中，我们对敏感度度量的准确性进行了实证研究，并发现现有的基于梯度和海森矩阵的度量非常不准确：它们严重低估了量化对损失函数的影响，主要是由于局部二次逼近的收敛半径很小，即泰勒公式中的梯度和海森矩阵项。为解决这一问题，我们提出了后量化积分（PQI），这是一种精确的度量方法，用于以细粒度的方式估计后验敏感度。为进一步利用这一精确的度量方法，我们提出了ReQuant，这是一种简单而强大的框架，主要由两个密集和稀疏分离组件组成：自适应异常值选择和逐步分离显著权重。结果显示，ReQuant提升了现有的后训练量化方法，在Llama 3.2 1B模型上使用QTIP实现了2.66困惑度的显著改善。 
+
+---
+# LLM-Empowered Class Imbalanced Graph Prompt Learning for Online Drug Trafficking Detection 
+
+**Title (ZH)**: LLM赋能的类别不平衡图提示学习在线毒品交易检测 
+
+**Authors**: Tianyi Ma, Yiyue Qian, Zehong Wang, Zheyuan Zhang, Chuxu Zhang, Yanfang Ye  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01900)  
+
+**Abstract**: As the market for illicit drugs remains extremely profitable, major online platforms have become direct-to-consumer intermediaries for illicit drug trafficking participants. These online activities raise significant social concerns that require immediate actions. Existing approaches to combating this challenge are generally impractical, due to the imbalance of classes and scarcity of labeled samples in real-world applications. To this end, we propose a novel Large Language Model-empowered Heterogeneous Graph Prompt Learning framework for illicit Drug Trafficking detection, called LLM-HetGDT, that leverages LLM to facilitate heterogeneous graph neural networks (HGNNs) to effectively identify drug trafficking activities in the class-imbalanced scenarios. Specifically, we first pre-train HGNN over a contrastive pretext task to capture the inherent node and structure information over the unlabeled drug trafficking heterogeneous graph (HG). Afterward, we employ LLM to augment the HG by generating high-quality synthetic user nodes in minority classes. Then, we fine-tune the soft prompts on the augmented HG to capture the important information in the minority classes for the downstream drug trafficking detection task. To comprehensively study online illicit drug trafficking activities, we collect a new HG dataset over Twitter, called Twitter-HetDrug. Extensive experiments on this dataset demonstrate the effectiveness, efficiency, and applicability of LLM-HetGDT. 
+
+**Abstract (ZH)**: 基于大型语言模型的异构图提示学习框架：非法毒品交易检测（LLM-HetGDT） 
+
+---
+# Neuroplasticity and Corruption in Model Mechanisms: A Case Study Of Indirect Object Identification 
+
+**Title (ZH)**: 神经可塑性与模型机制中的腐败：间接宾语识别的案例研究 
+
+**Authors**: Vishnu Kabir Chhabra, Ding Zhu, Mohammad Mahdi Khalili  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01896)  
+
+**Abstract**: Previous research has shown that fine-tuning language models on general tasks enhance their underlying mechanisms. However, the impact of fine-tuning on poisoned data and the resulting changes in these mechanisms are poorly understood. This study investigates the changes in a model's mechanisms during toxic fine-tuning and identifies the primary corruption mechanisms. We also analyze the changes after retraining a corrupted model on the original dataset and observe neuroplasticity behaviors, where the model relearns original mechanisms after fine-tuning the corrupted model. Our findings indicate that: (i) Underlying mechanisms are amplified across task-specific fine-tuning which can be generalized to longer epochs, (ii) Model corruption via toxic fine-tuning is localized to specific circuit components, (iii) Models exhibit neuroplasticity when retraining corrupted models on clean dataset, reforming the original model mechanisms. 
+
+**Abstract (ZH)**: 以往的研究表明，对通用任务进行微调可以增强语言模型的内部机制。然而，微调对有毒数据的影响及其导致的机制变化尚不完全清楚。本研究探讨了有毒微调过程中模型机制的变化，并识别出了主要的污染机制。我们还分析了在原始数据集上重新训练被污染模型后的变化，观察到了神经可塑性行为，即模型在重新微调被污染模型后重新学习了原始机制。研究发现：(i) 任务特定微调增强了内部机制，并可普遍适用于更长的训练周期；(ii) 通过有毒微调对模型的污染局限于特定电路组件；(iii) 在清洁数据集上重新训练被污染模型时，模型表现出神经可塑性，重构了原始模型机制。 
+
+---
+# When Continue Learning Meets Multimodal Large Language Model: A Survey 
+
+**Title (ZH)**: 当持续学习遇到多模态大型语言模型：一个综述 
+
+**Authors**: Yukang Huo, Hao Tang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01887)  
+
+**Abstract**: Recent advancements in Artificial Intelligence have led to the development of Multimodal Large Language Models (MLLMs). However, adapting these pre-trained models to dynamic data distributions and various tasks efficiently remains a challenge. Fine-tuning MLLMs for specific tasks often causes performance degradation in the model's prior knowledge domain, a problem known as 'Catastrophic Forgetting'. While this issue has been well-studied in the Continual Learning (CL) community, it presents new challenges for MLLMs. This review paper, the first of its kind in MLLM continual learning, presents an overview and analysis of 440 research papers in this this http URL review is structured into four sections. First, it discusses the latest research on MLLMs, covering model innovations, benchmarks, and applications in various fields. Second, it categorizes and overviews the latest studies on continual learning, divided into three parts: non-large language models unimodal continual learning (Non-LLM Unimodal CL), non-large language models multimodal continual learning (Non-LLM Multimodal CL), and continual learning in large language models (CL in LLM). The third section provides a detailed analysis of the current state of MLLM continual learning research, including benchmark evaluations, architectural innovations, and a summary of theoretical and empirical this http URL, the paper discusses the challenges and future directions of continual learning in MLLMs, aiming to inspire future research and development in the field. This review connects the foundational concepts, theoretical insights, method innovations, and practical applications of continual learning for multimodal large models, providing a comprehensive understanding of the research progress and challenges in this field, aiming to inspire researchers in the field and promote the advancement of related technologies. 
+
+**Abstract (ZH)**: 近期人工智能的发展推动了多模态大型语言模型（MLLMs）的开发。然而，高效地将这些预训练模型适应动态数据分布和各种任务仍然是一项挑战。对特定任务进行微调往往会导致模型在先前知识领域的性能下降，这种现象被称为“灾难性遗忘”。虽然灾难性遗忘在持续学习（CL）领域已有良好的研究，但对MLLMs来说，这提出了新的挑战。本文是第一篇关于MLLMs持续学习的综述论文，概述并分析了440篇相关研究论文。该综述分为四个部分。首先，讨论了MLLMs的最新研究，涵盖模型创新、基准测试和各领域的应用。其次，分类概述了最新的持续学习研究，分为三个部分：非大型语言模型的单模态持续学习（Non-LLM Unimodal CL）、非大型语言模型的多模态持续学习（Non-LLM Multimodal CL）和大型语言模型中的持续学习（CL in LLM）。第三部分详细分析了MLLMs持续学习研究的现状，包括基准评估、架构创新和理论与实证总结。最后，论文讨论了MLLMs持续学习面临的挑战和未来方向，旨在激励未来的研究与发展。该综述将持续学习的基础概念、理论洞见、方法创新和实际应用与多模态大型模型相结合，提供对该领域研究进展和挑战的全面理解，旨在激励研究人员并促进相关技术的发展。 
+
+---
+# BEYONDWORDS is All You Need: Agentic Generative AI based Social Media Themes Extractor 
+
+**Title (ZH)**: BEYONWORDS 是你需要的：基于自主生成AI的社会媒体主题提取器 
+
+**Authors**: Mohammed-Khalil Ghali, Abdelrahman Farrag, Sarah Lam, Daehan Won  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01880)  
+
+**Abstract**: Thematic analysis of social media posts provides a major understanding of public discourse, yet traditional methods often struggle to capture the complexity and nuance of unstructured, large-scale text data. This study introduces a novel methodology for thematic analysis that integrates tweet embeddings from pre-trained language models, dimensionality reduction using and matrix factorization, and generative AI to identify and refine latent themes. Our approach clusters compressed tweet representations and employs generative AI to extract and articulate themes through an agentic Chain of Thought (CoT) prompting, with a secondary LLM for quality assurance. This methodology is applied to tweets from the autistic community, a group that increasingly uses social media to discuss their experiences and challenges. By automating the thematic extraction process, the aim is to uncover key insights while maintaining the richness of the original discourse. This autism case study demonstrates the utility of the proposed approach in improving thematic analysis of social media data, offering a scalable and adaptable framework that can be applied to diverse contexts. The results highlight the potential of combining machine learning and Generative AI to enhance the depth and accuracy of theme identification in online communities. 
+
+**Abstract (ZH)**: 基于预训练语言模型嵌入、维度减少、矩阵分解和生成AI的主题分析新方法在自闭症社群社交媒体帖子中的应用 
+
+---
+# Starjob: Dataset for LLM-Driven Job Shop Scheduling 
+
+**Title (ZH)**: Starjob: 由大规模语言模型驱动的车间调度数据集 
+
+**Authors**: Henrik Abgaryan, Tristan Cazenave, Ararat Harutyunyan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01877)  
+
+**Abstract**: Large Language Models (LLMs) have shown remarkable capabilities across various domains, but their potential for solving combinatorial optimization problems remains largely unexplored. In this paper, we investigate the applicability of LLMs to the Job Shop Scheduling Problem (JSSP), a classic challenge in combinatorial optimization that requires efficient job allocation to machines to minimize makespan. To this end, we introduce Starjob, the first supervised dataset for JSSP, comprising 130k instances specifically designed for training LLMs. Leveraging this dataset, we fine-tune the LLaMA 8B 4-bit quantized model with the LoRA method to develop an end-to-end scheduling approach. Our evaluation on standard benchmarks demonstrates that the proposed LLM-based method not only surpasses traditional Priority Dispatching Rules (PDRs) but also achieves notable improvements over state-of-the-art neural approaches like L2D, with an average improvement of 15.36% on DMU and 7.85% on Taillard benchmarks. These results highlight the untapped potential of LLMs in tackling combinatorial optimization problems, paving the way for future advancements in this area. 
+
+**Abstract (ZH)**: 大型语言模型（LLMs）在各种领域展现了卓越的能力，但在解决组合优化问题方面的潜力尚未充分利用。本文 investigation 了 LLMs 在工件车间调度问题（JSSP）中的适用性，JSSP 是组合优化中的一个经典挑战，涉及高效地将工件分配给机器以最小化生产周期。为此，我们引入了 Starjob，这是第一个针对 JSSP 的监督数据集，包含 130,000 个专门设计用于训练 LLMs 的实例。借助该数据集，我们使用 LoRA 方法对量化后的 LLaMA 8B 模型进行微调，开发出一个端到端的调度方法。在标准基准上的评估结果显示，提出的基于 LLM 的方法不仅超越了传统的优先级调度规则（PDRs），还在最新的神经方法 L2D 上取得了显著改进，DMU 基准平均改进 15.36%，Taillard 基准平均改进 7.85%。这些结果突显了 LLMs 在解决组合优化问题方面的未充分利用的潜力，为该领域的未来进步铺平了道路。 
+
+---
+# Online Pseudo-average Shifting Attention(PASA) for Robust Low-precision LLM Inference: Algorithms and Numerical Analysis 
+
+**Title (ZH)**: 基于在线伪平均转移注意力(PASA)的鲁棒低精度大语言模型推理：算法与数值分析 
+
+**Authors**: Long Cheng, Qichen Liao, Fan Wu, Junlin Mu, Tengfei Han, Zhe Qiu, Lianqiang Li, Tianyi Liu, Fangzheng Miao, Keming Gao, Liang Wang, Zhen Zhang, Qiande Yin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01873)  
+
+**Abstract**: Attention calculation is extremely time-consuming for long-sequence inference tasks, such as text or image/video generation, in large models. To accelerate this process, we developed a low-precision, mathematically-equivalent algorithm called PASA, based on Flash Attention. PASA introduces two novel techniques: online pseudo-average shifting and global recovering. These techniques enable the use of half-precision computation throughout the Flash Attention process without incurring overflow instability or unacceptable numerical accuracy loss. This algorithm enhances performance on memory-restricted AI hardware architectures, such as the Ascend Neural-network Processing Unit(NPU), by reducing data movement and increasing computational FLOPs. The algorithm is validated using both designed random benchmarks and real large models. We find that the large bias and amplitude of attention input data are critical factors contributing to numerical overflow ($>65504$ for half precision) in two different categories of large models (Qwen2-7B language models and Stable-Video-Diffusion multi-modal models). Specifically, overflow arises due to the large bias in the sequence dimension and the resonance mechanism between the query and key in the head dimension of the Stable-Video-Diffusion models. The resonance mechanism is defined as phase coincidence or 180-degree phase shift between query and key matrices. It will remarkably amplify the element values of attention score matrix. This issue also applies to the Qwen models. Additionally, numerical accuracy is assessed through root mean square error (RMSE) and by comparing the final generated texts and videos to those produced using high-precision attention. 
+
+**Abstract (ZH)**: 基于Flash Attention的PASA算法：一种低精度加速注意力计算的方法 
+
+---
+# Can Large Language Models Extract Customer Needs as well as Professional Analysts? 
+
+**Title (ZH)**: 大型语言模型能否像专业分析师一样提取客户需求？ 
+
+**Authors**: Artem Timoshenko, Chengfeng Mao, John R. Hauser  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01870)  
+
+**Abstract**: Identifying customer needs (CNs) is important for product management, product development, and marketing. Applications rely on professional analysts interpreting textual data (e.g., interview transcripts, online reviews) to understand the nuances of customer experience and concisely formulate "jobs to be done." The task is cognitively complex and time-consuming. Current practice facilitates the process with keyword search and machine learning but relies on human judgment to formulate CNs. We examine whether Large Language Models (LLMs) can automatically extract CNs. Because evaluating CNs requires professional judgment, we partnered with a marketing consulting firm to conduct a blind study of CNs extracted by: (1) a foundational LLM with prompt engineering only (Base LLM), (2) an LLM fine-tuned with professionally identified CNs (SFT LLM), and (3) professional analysts. The SFT LLM performs as well as or better than professional analysts when extracting CNs. The extracted CNs are well-formulated, sufficiently specific to identify opportunities, and justified by source content (no hallucinations). The SFT LLM is efficient and provides more complete coverage of CNs. The Base LLM was not sufficiently accurate or specific. Organizations can rely on SFT LLMs to reduce manual effort, enhance the precision of CN articulation, and provide improved insight for innovation and marketing strategy. 
+
+**Abstract (ZH)**: 基于大型语言模型自动提取客户需要的研究 
+
+---
+# Systems and Algorithms for Convolutional Multi-Hybrid Language Models at Scale 
+
+**Title (ZH)**: 大规模卷积多混合语言模型的系统与算法 
+
+**Authors**: Jerome Ku, Eric Nguyen, David W. Romero, Garyk Brixi, Brandon Yang, Anton Vorontsov, Ali Taghibakhshi, Amy X. Lu, Dave P. Burke, Greg Brockman, Stefano Massaroli, Christopher Ré, Patrick D. Hsu, Brian L. Hie, Stefano Ermon, Michael Poli  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01868)  
+
+**Abstract**: We introduce convolutional multi-hybrid architectures, with a design grounded on two simple observations. First, operators in hybrid models can be tailored to token manipulation tasks such as in-context recall, multi-token recall, and compression, with input-dependent convolutions and attention offering complementary performance. Second, co-designing convolution operators and hardware-aware algorithms enables efficiency gains in regimes where previous alternative architectures struggle to surpass Transformers. At the 40 billion parameter scale, we train end-to-end 1.2 to 2.9 times faster than optimized Transformers, and 1.1 to 1.4 times faster than previous generation hybrids. On H100 GPUs and model width 4096, individual operators in the proposed multi-hybrid StripedHyena 2 architecture achieve two-fold throughput improvement over linear attention and state-space models. Multi-hybrids excel at sequence modeling over byte-tokenized data, as demonstrated by the Evo 2 line of models. We discuss the foundations that enable these results, including architecture design, overlap-add blocked kernels for tensor cores, and dedicated all-to-all and point-to-point context parallelism strategies. 
+
+**Abstract (ZH)**: 我们介绍了基于两项简单观察设计的卷积多混合架构。首先，混合模型中的操作可以针对诸如上下文召回、多令牌召回和压缩等令牌操作任务进行定制，输入依赖的卷积和注意力提供了互补的性能。其次，卷积操作与硬件感知算法的协同设计能够在先前替代架构难以超越Transformer的领域中实现效率提升。在400亿参数规模下，我们端到端训练的速度比优化后的Transformer快1.2到2.9倍，比上一代混合模型快1.1到1.4倍。在H100 GPU和模型宽度4096的情况下，所提出的多混合架构StripedHyena 2中提出的各个操作在吞吐量上比线性注意力和状态空间模型提高了两倍。多混合架构在字节分片数据序列建模中表现出色，Evolution 2系列模型证明了这一点。我们讨论了这些结果的基础，包括架构设计、张量核的重叠添加块化策略以及专用的全对全和点对点上下文并行策略。 
+
+---
+# Guiding not Forcing: Enhancing the Transferability of Jailbreaking Attacks on LLMs via Removing Superfluous Constraints 
+
+**Title (ZH)**: 引导而非强制：通过去除多余约束增强对大语言模型的越狱攻击的迁移性 
+
+**Authors**: Junxiao Yang, Zhexin Zhang, Shiyao Cui, Hongning Wang, Minlie Huang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01865)  
+
+**Abstract**: Jailbreaking attacks can effectively induce unsafe behaviors in Large Language Models (LLMs); however, the transferability of these attacks across different models remains limited. This study aims to understand and enhance the transferability of gradient-based jailbreaking methods, which are among the standard approaches for attacking white-box models. Through a detailed analysis of the optimization process, we introduce a novel conceptual framework to elucidate transferability and identify superfluous constraints-specifically, the response pattern constraint and the token tail constraint-as significant barriers to improved transferability. Removing these unnecessary constraints substantially enhances the transferability and controllability of gradient-based attacks. Evaluated on Llama-3-8B-Instruct as the source model, our method increases the overall Transfer Attack Success Rate (T-ASR) across a set of target models with varying safety levels from 18.4% to 50.3%, while also improving the stability and controllability of jailbreak behaviors on both source and target models. 
+
+**Abstract (ZH)**: Jailbreaking 攻击可以有效地诱导大型语言模型（LLMs）执行不安全行为；然而，这些攻击在不同模型之间的可转移性仍然有限。本研究旨在理解并增强基于梯度的 Jailbreaking 方法的可转移性，这些方法是攻击白盒模型的标准方法之一。通过详细分析优化过程，我们引入了一个新的概念框架来阐明可转移性，并识别出特定的回答模式约束和标记尾部约束作为提高可转移性的主要障碍。去除这些不必要的约束显著增强了基于梯度的攻击的可转移性和可控性。在以 Llama-3-8B-Instruct 作为源模型的评估中，我们的方法将一组具有不同安全级别的目标模型的整体 Transfer Attack Success Rate (T-ASR) 从 18.4% 提高到了 50.3%，同时在源模型和目标模型上也提高了 Jailbreak 行为的稳定性和可控性。 
+
+---
+# Larger or Smaller Reward Margins to Select Preferences for Alignment? 
+
+**Title (ZH)**: 更大的奖励边际或更小的奖励边际以选择对齐的偏好？ 
+
+**Authors**: Kexin Huang, Junkang Wu, Ziqian Chen, Xue Wang, Jinyang Gao, Bolin Ding, Jiancan Wu, Xiangnan He, Xiang Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01864)  
+
+**Abstract**: Preference learning is critical for aligning large language models (LLMs) with human values, with the quality of preference datasets playing a crucial role in this process. While existing metrics primarily assess data quality based on either explicit or implicit reward margins, they often provide contradictory evaluations for the same data. To address this issue, we introduce the alignment potential metric, which quantifies the gap from the model's current implicit reward margin to the target explicit reward margin, thereby estimating the model's potential to align with the preference data. Empirical results demonstrate that training on data selected by this metric consistently enhances alignment performance, surpassing existing metrics across different base models and optimization objectives. Furthermore, our method extends to self-play data generation frameworks, where the metric is used to identify high-quality data within the self-generated content by LLMs. Under this data generation scenario, our method surpasses current state-of-the-art (SOTA) results across various training settings and demonstrates continuous improvements in alignment performance as dataset size and training iterations increase. 
+
+**Abstract (ZH)**: 偏好学习对于使大规模语言模型与人类价值观对齐至关重要，偏好数据集的质量在这一过程中起着关键作用。虽然现有的评估指标主要基于显式或隐式奖励边际来评估数据质量，但它们往往对同一数据给出矛盾的评估。为了解决这一问题，我们引入了对齐潜力指标，该指标量化了模型当前隐式奖励边际与目标显式奖励边际之间的差距，从而估计模型与偏好数据对齐的潜在能力。实验结果表明，使用该指标选择的数据训练可以一致地提高对齐性能，在不同的基础模型和优化目标下超越现有指标。此外，我们的方法还适用于自我对弈数据生成框架，在这种数据生成场景中，该指标用于识别LLM自动生成内容中的高质量数据。在各种训练设置下，我们的方法超越了当前的最先进结果，并随着数据集规模和训练迭代次数的增加，展示了对齐性能的持续改进。 
+
+---
+# A Comprehensive Survey of Machine Unlearning Techniques for Large Language Models 
+
+**Title (ZH)**: 大规模语言模型的全面回顾：机器卸载技术 
+
+**Authors**: Jiahui Geng, Qing Li, Herbert Woisetschlaeger, Zongxiong Chen, Yuxia Wang, Preslav Nakov, Hans-Arno Jacobsen, Fakhri Karray  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.01854)  
+
+**Abstract**: This study investigates the machine unlearning techniques within the context of large language models (LLMs), referred to as \textit{LLM unlearning}. LLM unlearning offers a principled approach to removing the influence of undesirable data (e.g., sensitive or illegal information) from LLMs, while preserving their overall utility without requiring full retraining. Despite growing research interest, there is no comprehensive survey that systematically organizes existing work and distills key insights; here, we aim to bridge this gap. We begin by introducing the definition and the paradigms of LLM unlearning, followed by a comprehensive taxonomy of existing unlearning studies. Next, we categorize current unlearning approaches, summarizing their strengths and limitations. Additionally, we review evaluation metrics and benchmarks, providing a structured overview of current assessment methodologies. Finally, we outline promising directions for future research, highlighting key challenges and opportunities in the field. 
+
+**Abstract (ZH)**: 本研究探讨了大型语言模型（LLMs）中的机器遗忘技术，称为“LLM遗忘”。LLM遗忘为从LLMs中去除不良数据（例如，敏感或非法信息）的影响提供了原则性的方法，同时保留其整体效用，无需进行全面重新训练。尽管研究兴趣日益增长，但目前尚无系统整理现有工作的综合综述，提炼关键洞察； herein we aim to bridge this gap. 首先，我们将介绍LLM遗忘的定义和范式，随后进行现有遗忘研究的全面分类。接下来，我们将分类当前的遗忘方法，总结它们的优势和局限性。此外，我们将回顾评估指标和基准，提供当前评估方法的结构化概述。最后，我们将阐明未来研究的有希望方向，突出该领域的关键挑战和机会。 
+
+---
