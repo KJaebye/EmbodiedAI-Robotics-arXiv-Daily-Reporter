@@ -1,0 +1,52 @@
+# A Benchmark for Optimal Multi-Modal Multi-Robot Multi-Goal Path Planning with Given Robot Assignment 
+
+**Title (ZH)**: Optimal 多模态多机器人多目标路径规划基准（给定机器人分配） 
+
+**Authors**: Valentin N. Hartmann, Tirza Heinle, Stelian Coros  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.03509)  
+
+**Abstract**: In many industrial robotics applications, multiple robots are working in a shared workspace to complete a set of tasks as quickly as possible. Such settings can be treated as multi-modal multi-robot multi-goal path planning problems, where each robot has to reach an ordered sequence of goals. Existing approaches to this type of problem solve this using prioritization or assume synchronous completion of tasks, and are thus neither optimal nor complete. We formalize this problem as a single path planning problem and introduce a benchmark encompassing a diverse range of problem instances including scenarios with various robots, planning horizons, and collaborative tasks such as handovers. Along with the benchmark, we adapt an RRT* and a PRM* planner to serve as a baseline for the planning problems. Both planners work in the composite space of all robots and introduce the required changes to work in our setting. Unlike existing approaches, our planner and formulation is not restricted to discretized 2D workspaces, supports a changing environment, and works for heterogeneous robot teams over multiple modes with different constraints, and multiple goals. Videos and code for the benchmark and the planners is available at this https URL. 
+
+**Abstract (ZH)**: 在许多工业机器人应用中，多个机器人在共享工作空间中协作，以尽可能快地完成一组任务。这种设置可以视为多模态多机器人多目标路径规划问题，其中每个机器人必须按顺序到达一系列目标。现有方法解决此类问题时使用优先级或假设任务的同时完成，因此既不是最优解也不是完备解。我们将该问题形式化为单一路径规划问题，并引入一个基准测试，该基准测试包括各种机器人、规划时域和协作任务（如交接）等多种场景。除了基准测试外，我们还调整了RRT*和PRM*规划器作为路径规划问题的基线。这两种规划器在所有机器人的复合空间中工作，并引入了相应的变化以适应我们的设置。与现有方法不同，我们的规划器和建模不限于离散的二维工作空间，支持变化环境，并适用于具有不同约束条件和多个目标的异构机器人团队在多种模式下的路径规划。基准测试和规划器的相关视频和代码可在以下链接获取：this https URL。 
+
+---
+# COSINT-Agent: A Knowledge-Driven Multimodal Agent for Chinese Open Source Intelligence 
+
+**Title (ZH)**: COSINT-Agent：一种知识驱动的多模态中文开源情报代理 
+
+**Authors**: Wentao Li, Congcong Wang, Xiaoxiao Cui, Zhi Liu, Wei Guo, Lizhen Cui  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.03215)  
+
+**Abstract**: Open Source Intelligence (OSINT) requires the integration and reasoning of diverse multimodal data, presenting significant challenges in deriving actionable insights. Traditional approaches, including multimodal large language models (MLLMs), often struggle to infer complex contextual relationships or deliver comprehensive intelligence from unstructured data sources. In this paper, we introduce COSINT-Agent, a knowledge-driven multimodal agent tailored to address the challenges of OSINT in the Chinese domain. COSINT-Agent seamlessly integrates the perceptual capabilities of fine-tuned MLLMs with the structured reasoning power of the Entity-Event-Scene Knowledge Graph (EES-KG). Central to COSINT-Agent is the innovative EES-Match framework, which bridges COSINT-MLLM and EES-KG, enabling systematic extraction, reasoning, and contextualization of multimodal insights. This integration facilitates precise entity recognition, event interpretation, and context retrieval, effectively transforming raw multimodal data into actionable intelligence. Extensive experiments validate the superior performance of COSINT-Agent across core OSINT tasks, including entity recognition, EES generation, and context matching. These results underscore its potential as a robust and scalable solution for advancing automated multimodal reasoning and enhancing the effectiveness of OSINT methodologies. 
+
+**Abstract (ZH)**: 基于知识驱动的多模态代理COSINT-Agent：面向中文领域的开源情报挑战解决方案 
+
+---
+# See What You Are Told: Visual Attention Sink in Large Multimodal Models 
+
+**Title (ZH)**: 见你被告知的：大型多模态模型中的视觉注意力 sink 
+
+**Authors**: Seil Kang, Jinyeong Kim, Junhyeok Kim, Seong Jae Hwang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.03321)  
+
+**Abstract**: Large multimodal models (LMMs) "see" images by leveraging the attention mechanism between text and visual tokens in the transformer decoder. Ideally, these models should focus on key visual information relevant to the text token. However, recent findings indicate that LMMs have an extraordinary tendency to consistently allocate high attention weights to specific visual tokens, even when these tokens are irrelevant to the corresponding text. In this study, we investigate the property behind the appearance of these irrelevant visual tokens and examine their characteristics. Our findings show that this behavior arises due to the massive activation of certain hidden state dimensions, which resembles the attention sink found in language models. Hence, we refer to this phenomenon as the visual attention sink. In particular, our analysis reveals that removing the irrelevant visual sink tokens does not impact model performance, despite receiving high attention weights. Consequently, we recycle the attention to these tokens as surplus resources, redistributing the attention budget to enhance focus on the image. To achieve this, we introduce Visual Attention Redistribution (VAR), a method that redistributes attention in image-centric heads, which we identify as innately focusing on visual information. VAR can be seamlessly applied across different LMMs to improve performance on a wide range of tasks, including general vision-language tasks, visual hallucination tasks, and vision-centric tasks, all without the need for additional training, models, or inference steps. Experimental results demonstrate that VAR enables LMMs to process visual information more effectively by adjusting their internal attention mechanisms, offering a new direction to enhancing the multimodal capabilities of LMMs. 
+
+**Abstract (ZH)**: Large Multimodal Models的视觉注意力陷阱：视觉注意力汇陷探究与缓解方法 
+
+---
+# External Reliable Information-enhanced Multimodal Contrastive Learning for Fake News Detection 
+
+**Title (ZH)**: 基于外部可靠信息增强的多模态对比学习虚假新闻检测 
+
+**Authors**: Biwei Cao, Qihang Wu, Jiuxin Cao, Bo Liu, Jie Gui  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.03107)  
+
+**Abstract**: With the rapid development of the Internet, the information dissemination paradigm has changed and the efficiency has been improved greatly. While this also brings the quick spread of fake news and leads to negative impacts on cyberspace. Currently, the information presentation formats have evolved gradually, with the news formats shifting from texts to multimodal contents. As a result, detecting multimodal fake news has become one of the research hotspots. However, multimodal fake news detection research field still faces two main challenges: the inability to fully and effectively utilize multimodal information for detection, and the low credibility or static nature of the introduced external information, which limits dynamic updates. To bridge the gaps, we propose ERIC-FND, an external reliable information-enhanced multimodal contrastive learning framework for fake news detection. ERIC-FND strengthens the representation of news contents by entity-enriched external information enhancement method. It also enriches the multimodal news information via multimodal semantic interaction method where the multimodal constrative learning is employed to make different modality representations learn from each other. Moreover, an adaptive fusion method is taken to integrate the news representations from different dimensions for the eventual classification. Experiments are done on two commonly used datasets in different languages, X (Twitter) and Weibo. Experiment results demonstrate that our proposed model ERIC-FND outperforms existing state-of-the-art fake news detection methods under the same settings. 
+
+**Abstract (ZH)**: 基于外部可靠信息增强的多模态对比学习虚假新闻检测框架（ERIC-FND） 
+
+---

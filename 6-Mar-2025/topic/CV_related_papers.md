@@ -1,0 +1,264 @@
+# NeuGrasp: Generalizable Neural Surface Reconstruction with Background Priors for Material-Agnostic Object Grasp Detection 
+
+**Title (ZH)**: NeuGrasp: 基于背景先验的通用神经表面重建及其在材料无关物体抓取检测中的应用 
+
+**Authors**: Qingyu Fan, Yinghao Cai, Chao Li, Wenzhe He, Xudong Zheng, Tao Lu, Bin Liang, Shuo Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.03511)  
+
+**Abstract**: Robotic grasping in scenes with transparent and specular objects presents great challenges for methods relying on accurate depth information. In this paper, we introduce NeuGrasp, a neural surface reconstruction method that leverages background priors for material-agnostic grasp detection. NeuGrasp integrates transformers and global prior volumes to aggregate multi-view features with spatial encoding, enabling robust surface reconstruction in narrow and sparse viewing conditions. By focusing on foreground objects through residual feature enhancement and refining spatial perception with an occupancy-prior volume, NeuGrasp excels in handling objects with transparent and specular surfaces. Extensive experiments in both simulated and real-world scenarios show that NeuGrasp outperforms state-of-the-art methods in grasping while maintaining comparable reconstruction quality. More details are available at this https URL. 
+
+**Abstract (ZH)**: 具有透明和镜面物体的场景中的机器人抓取对依赖准确深度信息的方法提出了巨大挑战。本文介绍了一种名为NeuGrasp的神经表面重建方法，该方法利用背景先验进行材料无关的抓取检测。NeuGrasp结合了变换器和全球先验体素，通过空间编码聚合多视图特征，能够在狭窄和稀疏的视角条件下实现稳健的表面重建。通过残差特征增强聚焦前景物体，并借助占用先验体素精化空间感知，NeuGrasp在处理具有透明和镜面表面的物体方面表现出色。在模拟和真实场景中的广泛实验表明，NeuGrasp在抓取性能上优于现有方法，同时保持相当的重建质量。更多详情请参见：这个链接。 
+
+---
+# REACT: Real-time Efficient Attribute Clustering and Transfer for Updatable 3D Scene Graph 
+
+**Title (ZH)**: REACT: 实时高效属性聚类与传输以支持可更新的3D场景图 
+
+**Authors**: Phuoc Nguyen, Francesco Verdoja, Ville Kyrki  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.03412)  
+
+**Abstract**: Modern-day autonomous robots need high-level map representations to perform sophisticated tasks. Recently, 3D scene graphs (3DSGs) have emerged as a promising alternative to traditional grid maps, blending efficient memory use and rich feature representation. However, most efforts to apply them have been limited to static worlds. This work introduces REACT, a framework that efficiently performs real-time attribute clustering and transfer to relocalize object nodes in a 3DSG. REACT employs a novel method for comparing object instances using an embedding model trained on triplet loss, facilitating instance clustering and matching. Experimental results demonstrate that REACT is able to relocalize objects while maintaining computational efficiency. The REACT framework's source code will be available as an open-source project, promoting further advancements in reusable and updatable 3DSGs. 
+
+**Abstract (ZH)**: 现代自主机器人需要高阶地图表示以执行复杂的任务。最近，3D场景图（3DSG）作为一种有潜力的替代传统格网地图的选择出现，结合了高效的内存使用和丰富的特征表示。然而，大多数相关努力主要限定在静态世界中。本文介绍了REACT框架，该框架能够高效地进行实时属性聚类和转移，以重新定位3DSG中的对象节点。REACT采用了一种基于三元组损失训练的嵌入模型来比较对象实例的新方法，促进实例聚类和匹配。实验结果表明，REACT能够在保持计算效率的同时重新定位对象。REACT框架的源代码将作为开源项目提供，促进在可重用和可更新的3DSG方面的进一步研究进展。 
+
+---
+# Direct Sparse Odometry with Continuous 3D Gaussian Maps for Indoor Environments 
+
+**Title (ZH)**: 直接稀疏 odometry 与室内环境中的连续 3D 高斯地图 
+
+**Authors**: Jie Deng, Fengtian Lang, Zikang Yuan, Xin Yang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.03373)  
+
+**Abstract**: Accurate localization is essential for robotics and augmented reality applications such as autonomous navigation. Vision-based methods combining prior maps aim to integrate LiDAR-level accuracy with camera cost efficiency for robust pose estimation. Existing approaches, however, often depend on unreliable interpolation procedures when associating discrete point cloud maps with dense image pixels, which inevitably introduces depth errors and degrades pose estimation accuracy. We propose a monocular visual odometry framework utilizing a continuous 3D Gaussian map, which directly assigns geometrically consistent depth values to all extracted high-gradient points without interpolation. Evaluations on two public datasets demonstrate superior tracking accuracy compared to existing methods. We have released the source code of this work for the development of the community. 
+
+**Abstract (ZH)**: 基于视觉的单目特征跟踪框架：利用连续3D高斯图进行几何一致的深度赋值 
+
+---
+# Trajectory Prediction for Autonomous Driving: Progress, Limitations, and Future Directions 
+
+**Title (ZH)**: 自动驾驶中的轨迹预测：进展、局限性和未来方向 
+
+**Authors**: Nadya Abdel Madjid, Abdulrahman Ahmad, Murad Mebrahtu, Yousef Babaa, Abdelmoamen Nasser, Sumbal Malik, Bilal Hassan, Naoufel Werghi, Jorge Dias, Majid Khonji  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.03262)  
+
+**Abstract**: As the potential for autonomous vehicles to be integrated on a large scale into modern traffic systems continues to grow, ensuring safe navigation in dynamic environments is crucial for smooth integration. To guarantee safety and prevent collisions, autonomous vehicles must be capable of accurately predicting the trajectories of surrounding traffic agents. Over the past decade, significant efforts from both academia and industry have been dedicated to designing solutions for precise trajectory forecasting. These efforts have produced a diverse range of approaches, raising questions about the differences between these methods and whether trajectory prediction challenges have been fully addressed. This paper reviews a substantial portion of recent trajectory prediction methods and devises a taxonomy to classify existing solutions. A general overview of the prediction pipeline is also provided, covering input and output modalities, modeling features, and prediction paradigms discussed in the literature. In addition, the paper discusses active research areas within trajectory prediction, addresses the posed research questions, and highlights the remaining research gaps and challenges. 
+
+**Abstract (ZH)**: 随着自动驾驶车辆大规模集成到现代交通系统中的潜力不断增长，确保在其动态环境中安全导航对于顺利集成至关重要。为了保证安全并防止碰撞，自动驾驶车辆必须能够准确预测周围交通代理的轨迹。在过去十年中，学术界和工业界均投入了大量努力来设计精确轨迹预测的解决方案。这些努力产生了一系列多样化的方法，引发了关于这些方法之间差异以及轨迹预测挑战是否已被充分解决的问题。本文回顾了近年来大量的轨迹预测方法，并提出了一个分类体系以分类现有解决方案。此外，本文还提供了预测管道的总体概述，涵盖了文献中讨论的输入和输出模态、建模特征以及预测范式。同时，本文讨论了轨迹预测领域的活跃研究方向，回答了提出的研究问题，并指出了剩余的研究空白和挑战。 
+
+---
+# SCORE: Saturated Consensus Relocalization in Semantic Line Maps 
+
+**Title (ZH)**: SCORE: 满量饱和共识语义线地图重定位 
+
+**Authors**: Haodong Jiang, Xiang Zheng, Yanglin Zhang, Qingcheng Zeng, Yiqian Li, Ziyang Hong, Junfeng Wu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.03254)  
+
+**Abstract**: This is the arxiv version for our paper submitted to IEEE/RSJ IROS 2025. We propose a scene-agnostic and light-weight visual relocalization framework that leverages semantically labeled 3D lines as a compact map representation. In our framework, the robot localizes itself by capturing a single image, extracting 2D lines, associating them with semantically similar 3D lines in the map, and solving a robust perspective-n-line problem. To address the extremely high outlier ratios~(exceeding 99.5\%) caused by one-to-many ambiguities in semantic matching, we introduce the Saturated Consensus Maximization~(Sat-CM) formulation, which enables accurate pose estimation when the classic Consensus Maximization framework fails. We further propose a fast global solver to the formulated Sat-CM problems, leveraging rigorous interval analysis results to ensure both accuracy and computational efficiency. Additionally, we develop a pipeline for constructing semantic 3D line maps using posed depth images. To validate the effectiveness of our framework, which integrates our innovations in robust estimation and practical engineering insights, we conduct extensive experiments on the ScanNet++ dataset. 
+
+**Abstract (ZH)**: 这是我们提交给IEEE/RSJ IROS 2025的论文的arxiv版本。我们提出了一种场景无关且轻量级的视觉重定位框架，该框架利用语义标注的3D直线作为紧凑的地图表示。在该框架中，机器人通过拍摄单张图像，提取2D直线，将它们与地图中语义相似的3D直线关联，并求解鲁棒的透视-n-直线问题来进行自身定位。为了解决由于语义匹配中一对多ambiguous性导致的极高离群值比率（超过99.5%），我们引入了饱和共识最大化（Sat-CM）公式，当经典的共识最大化框架失效时，能够实现精确的姿态估计。我们还提出了一种针对形式化的Sat-CM问题的快速全局求解器，利用严格的区间分析结果来确保准确性和计算效率。此外，我们开发了一种基于姿态深度图像构建语义3D直线地图的管道。为了验证我们框架的有效性，该框架结合了我们在稳健估计和实用工程见解方面的创新，我们在ScanNet++数据集上进行了大量实验。 
+
+---
+# Monocular visual simultaneous localization and mapping: (r)evolution from geometry to deep learning-based pipelines 
+
+**Title (ZH)**: 单目视觉 simultaneous localization and mapping: (r)evolution from geometry to deep learning-based pipelines 
+
+**Authors**: Olaya Alvarez-Tunon, Yury Brodskiy, Erdal Kayacan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02955)  
+
+**Abstract**: With the rise of deep learning, there is a fundamental change in visual SLAM algorithms toward developing different modules trained as end-to-end pipelines. However, regardless of the implementation domain, visual SLAM's performance is subject to diverse environmental challenges, such as dynamic elements in outdoor environments, harsh imaging conditions in underwater environments, or blurriness in high-speed setups. These environmental challenges need to be identified to study the real-world viability of SLAM implementations. Motivated by the aforementioned challenges, this paper surveys the current state of visual SLAM algorithms according to the two main frameworks: geometry-based and learning-based SLAM. First, we introduce a general formulation of the SLAM pipeline that includes most of the implementations in the literature. Second, those implementations are classified and surveyed for geometry and learning-based SLAM. After that, environment-specific challenges are formulated to enable experimental evaluation of the resilience of different visual SLAM classes to varying imaging conditions. We address two significant issues in surveying visual SLAM, providing (1) a consistent classification of visual SLAM pipelines and (2) a robust evaluation of their performance under different deployment conditions. Finally, we give our take on future opportunities for visual SLAM implementations. 
+
+**Abstract (ZH)**: 深度学习兴起后，视觉SLAM算法朝着开发端到端管道的不同模块发生了根本性变化。然而，视觉SLAM的性能仍然受到各种环境挑战的影响，如户外环境中的动态元素、水下环境中的恶劣成像条件或高速设置中的模糊。识别这些环境挑战对于研究SLAM实现的现实可行性至关重要。受这些挑战的启发，本文根据几何基于和学习基于的SLAM两大框架，回顾现有的视觉SLAM算法。首先，我们介绍了一个包含文献中大多数实现的SLAM管道的通用公式。其次，我们将这些实现分类并回顾几何基于和学习基于的SLAM。之后，我们制定了环境特定的挑战，以使不同成像条件下的SLAM类别的鲁棒性得到实验评估。最后，我们对未来视觉SLAM实现的机会进行了展望。 
+
+---
+# Active 6D Pose Estimation for Textureless Objects using Multi-View RGB Frames 
+
+**Title (ZH)**: 基于多视图RGB帧的无纹理物体6D姿态估计 
+
+**Authors**: Jun Yang, Wenjie Xue, Sahar Ghavidel, Steven L. Waslander  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.03726)  
+
+**Abstract**: Estimating the 6D pose of textureless objects from RBG images is an important problem in robotics. Due to appearance ambiguities, rotational symmetries, and severe occlusions, single-view based 6D pose estimators are still unable to handle a wide range of objects, motivating research towards multi-view pose estimation and next-best-view prediction that addresses these limitations. In this work, we propose a comprehensive active perception framework for estimating the 6D poses of textureless objects using only RGB images. Our approach is built upon a key idea: decoupling the 6D pose estimation into a sequential two-step process can greatly improve both accuracy and efficiency. First, we estimate the 3D translation of each object, resolving scale and depth ambiguities inherent to RGB images. These estimates are then used to simplify the subsequent task of determining the 3D orientation, which we achieve through canonical scale template matching. Building on this formulation, we then introduce an active perception strategy that predicts the next best camera viewpoint to capture an RGB image, effectively reducing object pose uncertainty and enhancing pose accuracy. We evaluate our method on the public ROBI dataset as well as on a transparent object dataset that we created. When evaluated using the same camera viewpoints, our multi-view pose estimation significantly outperforms state-of-the-art approaches. Furthermore, by leveraging our next-best-view strategy, our method achieves high object pose accuracy with substantially fewer viewpoints than heuristic-based policies. 
+
+**Abstract (ZH)**: 从RGB图像估计无纹理对象的6D姿态是一个重要的机器人问题。由于外观歧义、旋转对称性和严重遮挡，基于单视图的6D姿态估计器仍然无法处理广泛的对象，推动了多视图姿态估计和下一步最佳视图预测的研究，以解决这些限制。在本文中，我们提出了一种综合主动感知框架，仅使用RGB图像估计无纹理对象的6D姿态。我们的方法基于一个关键理念：将6D姿态估计分解为顺序两步过程，可以大幅提高准确性和效率。首先，我们估计每个对象的3D平移，解决RGB图像固有的尺度和深度歧义。然后用这些估计来简化后续的三维方向确定任务，我们通过标准尺度模板匹配来实现这一目标。在这一框架的基础上，我们引入了一种主动感知策略，预测最佳相机视角以采集RGB图像，有效降低了对象姿态不确定性并提高了姿态准确性。我们在公共ROBI数据集以及我们创建的透明对象数据集上评估了我们的方法。当使用相同的相机视角进行评估时，我们的多视图姿态估计显著优于现有技术。此外，通过利用我们的下一步最佳视图策略，我们的方法在比基于启发式策略的方法使用明显较少视角的情况下，实现了高对象姿态准确性。 
+
+---
+# REGRACE: A Robust and Efficient Graph-based Re-localization Algorithm using Consistency Evaluation 
+
+**Title (ZH)**: REGRACE: 一种基于图的鲁棒且高效的重新定位算法，采用一致性评估 
+
+**Authors**: Débora N.P. Oliveira, Joshua Knights, Sebastián Barbas Laina, Simon Boche, Wolfram Burgard, Stefan Leutenegger  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.03599)  
+
+**Abstract**: Loop closures are essential for correcting odometry drift and creating consistent maps, especially in the context of large-scale navigation. Current methods using dense point clouds for accurate place recognition do not scale well due to computationally expensive scan-to-scan comparisons. Alternative object-centric approaches are more efficient but often struggle with sensitivity to viewpoint variation. In this work, we introduce REGRACE, a novel approach that addresses these challenges of scalability and perspective difference in re-localization by using LiDAR-based submaps. We introduce rotation-invariant features for each labeled object and enhance them with neighborhood context through a graph neural network. To identify potential revisits, we employ a scalable bag-of-words approach, pooling one learned global feature per submap. Additionally, we define a revisit with geometrical consistency cues rather than embedding distance, allowing us to recognize far-away loop closures. Our evaluations demonstrate that REGRACE achieves similar results compared to state-of-the-art place recognition and registration baselines while being twice as fast. 
+
+**Abstract (ZH)**: 基于LiDAR子地图的旋转不变特征及其应用以应对大规模导航中的重定位挑战 
+
+---
+# Unified Human Localization and Trajectory Prediction with Monocular Vision 
+
+**Title (ZH)**: 统一的人体定位与轨迹预测方法：单目视觉 approaches 
+
+**Authors**: Po-Chien Luan, Yang Gao, Celine Demonsant, Alexandre Alahi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.03535)  
+
+**Abstract**: Conventional human trajectory prediction models rely on clean curated data, requiring specialized equipment or manual labeling, which is often impractical for robotic applications. The existing predictors tend to overfit to clean observation affecting their robustness when used with noisy inputs. In this work, we propose MonoTransmotion (MT), a Transformer-based framework that uses only a monocular camera to jointly solve localization and prediction tasks. Our framework has two main modules: Bird's Eye View (BEV) localization and trajectory prediction. The BEV localization module estimates the position of a person using 2D human poses, enhanced by a novel directional loss for smoother sequential localizations. The trajectory prediction module predicts future motion from these estimates. We show that by jointly training both tasks with our unified framework, our method is more robust in real-world scenarios made of noisy inputs. We validate our MT network on both curated and non-curated datasets. On the curated dataset, MT achieves around 12% improvement over baseline models on BEV localization and trajectory prediction. On real-world non-curated dataset, experimental results indicate that MT maintains similar performance levels, highlighting its robustness and generalization capability. The code is available at this https URL. 
+
+**Abstract (ZH)**: 基于单目相机的Transformer框架：MonoTransmotion及其在鲁棒轨迹预测中的应用 
+
+---
+# Transformer-Based Spatio-Temporal Association of Apple Fruitlets 
+
+**Title (ZH)**: 基于变压器的空间-时间苹果幼果关联研究 
+
+**Authors**: Harry Freeman, George Kantor  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.03200)  
+
+**Abstract**: In this paper, we present a transformer-based method to spatio-temporally associate apple fruitlets in stereo-images collected on different days and from different camera poses. State-of-the-art association methods in agriculture are dedicated towards matching larger crops using either high-resolution point clouds or temporally stable features, which are both difficult to obtain for smaller fruit in the field. To address these challenges, we propose a transformer-based architecture that encodes the shape and position of each fruitlet, and propagates and refines these features through a series of transformer encoder layers with alternating self and cross-attention. We demonstrate that our method is able to achieve an F1-score of 92.4% on data collected in a commercial apple orchard and outperforms all baselines and ablations. 
+
+**Abstract (ZH)**: 基于变压器的方法实现立体图像中不同天采集且不同相机姿态下苹果幼果的时空关联 
+
+---
+# Rethinking Video Tokenization: A Conditioned Diffusion-based Approach 
+
+**Title (ZH)**: 重思视频分词：一种条件扩散基于的方法 
+
+**Authors**: Nianzu Yang, Pandeng Li, Liming Zhao, Yang Li, Chen-Wei Xie, Yehui Tang, Xudong Lu, Zhihang Liu, Yun Zheng, Yu Liu, Junchi Yan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.03708)  
+
+**Abstract**: Video tokenizers, which transform videos into compact latent representations, are key to video generation. Existing video tokenizers are based on the VAE architecture and follow a paradigm where an encoder compresses videos into compact latents, and a deterministic decoder reconstructs the original videos from these latents. In this paper, we propose a novel \underline{\textbf{C}}onditioned \underline{\textbf{D}}iffusion-based video \underline{\textbf{T}}okenizer entitled \textbf{\ourmethod}, which departs from previous methods by replacing the deterministic decoder with a 3D causal diffusion model. The reverse diffusion generative process of the decoder is conditioned on the latent representations derived via the encoder. With a feature caching and sampling acceleration, the framework efficiently reconstructs high-fidelity videos of arbitrary lengths. Results show that {\ourmethod} achieves state-of-the-art performance in video reconstruction tasks using just a single-step sampling. Even a smaller version of {\ourmethod} still achieves reconstruction results on par with the top two baselines. Furthermore, the latent video generation model trained using {\ourmethod} also shows superior performance. 
+
+**Abstract (ZH)**: 条件因果扩散驱动的视频分词器：\textbf{\ourmethod} 
+
+---
+# A Generative Approach to High Fidelity 3D Reconstruction from Text Data 
+
+**Title (ZH)**: 基于文本数据的高保真3D重建生成方法 
+
+**Authors**: Venkat Kumar R, Deepak Saravanan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.03664)  
+
+**Abstract**: The convergence of generative artificial intelligence and advanced computer vision technologies introduces a groundbreaking approach to transforming textual descriptions into three-dimensional representations. This research proposes a fully automated pipeline that seamlessly integrates text-to-image generation, various image processing techniques, and deep learning methods for reflection removal and 3D reconstruction. By leveraging state-of-the-art generative models like Stable Diffusion, the methodology translates natural language inputs into detailed 3D models through a multi-stage workflow.
+The reconstruction process begins with the generation of high-quality images from textual prompts, followed by enhancement by a reinforcement learning agent and reflection removal using the Stable Delight model. Advanced image upscaling and background removal techniques are then applied to further enhance visual fidelity. These refined two-dimensional representations are subsequently transformed into volumetric 3D models using sophisticated machine learning algorithms, capturing intricate spatial relationships and geometric characteristics. This process achieves a highly structured and detailed output, ensuring that the final 3D models reflect both semantic accuracy and geometric precision.
+This approach addresses key challenges in generative reconstruction, such as maintaining semantic coherence, managing geometric complexity, and preserving detailed visual information. Comprehensive experimental evaluations will assess reconstruction quality, semantic accuracy, and geometric fidelity across diverse domains and varying levels of complexity. By demonstrating the potential of AI-driven 3D reconstruction techniques, this research offers significant implications for fields such as augmented reality (AR), virtual reality (VR), and digital content creation. 
+
+**Abstract (ZH)**: 生成式人工智能与高级计算机视觉技术的融合引入了将文本描述转换为三维表示的革命性方法。本研究提出了一种全自动流程，无缝集成文本到图像生成、各种图像处理技术和深度学习方法进行反射去除和三维重建。通过利用如Stable Diffusion等最先进的生成模型，该方法通过多阶段工作流将自然语言输入转换为详细的三维模型。
+重建过程始于从文本提示生成高质量图像，随后使用强化学习代理进行增强，并利用Stable Delight模型去除反射。然后应用高级图像超分辨率和背景移除技术进一步提升视觉保真度。这些精细的二维表示随后通过复杂的机器学习算法转换为体素化的三维模型，捕捉复杂的空间关系和几何特征。这一过程实现了高度结构化的详细输出，确保最终的三维模型既具有语义准确性又具有几何精度。
+该方法解决了生成重建中的关键挑战，如保持语义一致性、管理几何复杂性以及保留详细的视觉信息。全面的实验评估将从不同领域和复杂度差异评估重建质量、语义准确性和几何保真度。通过展示基于AI的三维重建技术的潜力，本研究为增强现实（AR）、虚拟现实（VR）和数字内容创作等领域提供了重大影响。 
+
+---
+# Improving 6D Object Pose Estimation of metallic Household and Industry Objects 
+
+**Title (ZH)**: 改进金属家居和工业物体的6D姿态估计 
+
+**Authors**: Thomas Pöllabauer, Michael Gasser, Tristan Wirth, Sarah Berkei, Volker Knauthe, Arjan Kuijper  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.03655)  
+
+**Abstract**: 6D object pose estimation suffers from reduced accuracy when applied to metallic objects. We set out to improve the state-of-the-art by addressing challenges such as reflections and specular highlights in industrial applications. Our novel BOP-compatible dataset, featuring a diverse set of metallic objects (cans, household, and industrial items) under various lighting and background conditions, provides additional geometric and visual cues. We demonstrate that these cues can be effectively leveraged to enhance overall performance. To illustrate the usefulness of the additional features, we improve upon the GDRNPP algorithm by introducing an additional keypoint prediction and material estimator head in order to improve spatial scene understanding. Evaluations on the new dataset show improved accuracy for metallic objects, supporting the hypothesis that additional geometric and visual cues can improve learning. 
+
+**Abstract (ZH)**: 6D物体姿态估计在应用于金属物体时 accuracies 降低。为解决工业应用中反射和镜面高光等问题，我们提出了一种改进的方案。我们开发了一种与BOP兼容的新数据集，该数据集包含在不同光照和背景条件下的多种金属物体（罐类、家用和工业用品），提供了额外的几何和视觉线索。我们证明这些线索可以有效提升整体性能。为了展示额外特征的重要性，我们通过对GDRNPP算法进行改进，引入额外的关键点预测和材料估计模块，以提高空间场景理解能力。在新数据集上的评估显示，金属物体的准确率有所提高，支持了额外几何和视觉线索有助于学习的假设。 
+
+---
+# AdaSin: Enhancing Hard Sample Metrics with Dual Adaptive Penalty for Face Recognition 
+
+**Title (ZH)**: AdaSin: 通过双适应惩罚增强难样本指标的面部识别 
+
+**Authors**: Qiqi Guo, Zhuowen Zheng, Guanghua Yang, Zhiquan Liu, Xiaofan Li, Jianqing Li, Jinyu Tian, Xueyuan Gong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.03528)  
+
+**Abstract**: In recent years, the emergence of deep convolutional neural networks has positioned face recognition as a prominent research focus in computer vision. Traditional loss functions, such as margin-based, hard-sample mining-based, and hybrid approaches, have achieved notable performance improvements, with some leveraging curriculum learning to optimize training. However, these methods often fall short in effectively quantifying the difficulty of hard samples. To address this, we propose Adaptive Sine (AdaSin) loss function, which introduces the sine of the angle between a sample's embedding feature and its ground-truth class center as a novel difficulty metric. This metric enables precise and effective penalization of hard samples. By incorporating curriculum learning, the model dynamically adjusts classification boundaries across different training stages. Unlike previous adaptive-margin loss functions, AdaSin introduce a dual adaptive penalty, applied to both the positive and negative cosine similarities of hard samples. This design imposes stronger constraints, enhancing intra-class compactness and inter-class separability. The combination of the dual adaptive penalty and curriculum learning is guided by a well-designed difficulty metric. It enables the model to focus more effectively on hard samples in later training stages, and lead to the extraction of highly discriminative face features. Extensive experiments across eight benchmarks demonstrate that AdaSin achieves superior accuracy compared to other state-of-the-art methods. 
+
+**Abstract (ZH)**: 自适应正弦损失函数在面部识别中的应用：动态适应与困难样本衡量 
+
+---
+# AI-Driven Multi-Stage Computer Vision System for Defect Detection in Laser-Engraved Industrial Nameplates 
+
+**Title (ZH)**: 基于AI驱动的多阶段计算机视觉系统在激光加工标识牌缺陷检测中的应用 
+
+**Authors**: Adhish Anitha Vilasan, Stephan Jäger, Noah Klarmann  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.03395)  
+
+**Abstract**: Automated defect detection in industrial manufacturing is essential for maintaining product quality and minimizing production errors. In air disc brake manufacturing, ensuring the precision of laser-engraved nameplates is crucial for accurate product identification and quality control. Engraving errors, such as misprints or missing characters, can compromise both aesthetics and functionality, leading to material waste and production delays. This paper presents a proof of concept for an AI-driven computer vision system that inspects and verifies laser-engraved nameplates, detecting defects in logos and alphanumeric strings. The system integrates object detection using YOLOv7, optical character recognition (OCR) with Tesseract, and anomaly detection through a residual variational autoencoder (ResVAE) along with other computer vision methods to enable comprehensive inspections at multiple stages. Experimental results demonstrate the system's effectiveness, achieving 91.33% accuracy and 100% recall, ensuring that defective nameplates are consistently detected and addressed. This solution highlights the potential of AI-driven visual inspection to enhance quality control, reduce manual inspection efforts, and improve overall manufacturing efficiency. 
+
+**Abstract (ZH)**: 工业制造中的自动化缺陷检测对于维护产品质量和减少生产错误至关重要。在空气disc刹车制造中，确保激光刻印铭牌的精度对于准确的产品识别和质量控制至关重要。刻印错误，如错印或缺少字符，会损害美观性和功能性，导致材料浪费和生产延迟。本文提出了一个基于AI的计算机视觉系统的概念证明，该系统用于检查和验证激光刻印铭牌，检测标志和数字字符串中的缺陷。该系统结合了使用YOLOv7的对象检测、使用Tesseract的光学字符识别(OCR)和使用残差变分自编码器(ResVAE)的异常检测以及其他计算机视觉方法，以在多个阶段实现全面检查。实验结果表明，该系统的有效性，准确率为91.33%，召回率为100%，确保了缺陷铭牌的一致性检测和处理。该解决方案突显了基于AI的视觉检测在增强质量管理、减少人工检查工作和提高整体制造效率方面的潜力。 
+
+---
+# Exploring specialization and sensitivity of convolutional neural networks in the context of simultaneous image augmentations 
+
+**Title (ZH)**: 探索同时图像增强背景下卷积神经网络的专业化和敏感性 
+
+**Authors**: Pavel Kharyuk, Sergey Matveev, Ivan Oseledets  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.03283)  
+
+**Abstract**: Drawing parallels with the way biological networks are studied, we adapt the treatment--control paradigm to explainable artificial intelligence research and enrich it through multi-parametric input alterations. In this study, we propose a framework for investigating the internal inference impacted by input data augmentations. The internal changes in network operation are reflected in activation changes measured by variance, which can be decomposed into components related to each augmentation, employing Sobol indices and Shapley values. These quantities enable one to visualize sensitivity to different variables and use them for guided masking of activations. In addition, we introduce a way of single-class sensitivity analysis where the candidates are filtered according to their matching to prediction bias generated by targeted damaging of the activations. Relying on the observed parallels, we assume that the developed framework can potentially be transferred to studying biological neural networks in complex environments. 
+
+**Abstract (ZH)**: 借鉴生物学网络的研究方式，我们将治疗-对照范式应用于可解释的人工智能研究，并通过多参数输入修改对其进行扩展。在本研究中，我们提出了一种框架，用于探究输入数据增强对内部推断的影响。网络操作内部变化通过测量激活变化的方差反映出来，这些变化可以分解为与每种增强相关的组件，使用Sobol指数和Shapley值。这些量使得能够可视化不同变量的敏感性，并用于引导激活的屏蔽。此外，我们引入了一种单一类别敏感性分析的方法，其中候选项根据其与通过目标激活损害生成的预测偏差的匹配程度进行筛选。基于观察到的相似性，我们假设所开发的框架可能在复杂环境中研究生物神经网络方面具有潜在的应用价值。 
+
+---
+# Partial Convolution Meets Visual Attention 
+
+**Title (ZH)**: 部分卷积结合视觉注意力 
+
+**Authors**: Haiduo Huang, Fuwei Yang, Dong Li, Ji Liu, Lu Tian, Jinzhang Peng, Pengju Ren, Emad Barsoum  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.03148)  
+
+**Abstract**: Designing an efficient and effective neural network has remained a prominent topic in computer vision research. Depthwise onvolution (DWConv) is widely used in efficient CNNs or ViTs, but it needs frequent memory access during inference, which leads to low throughput. FasterNet attempts to introduce partial convolution (PConv) as an alternative to DWConv but compromises the accuracy due to underutilized channels. To remedy this shortcoming and consider the redundancy between feature map channels, we introduce a novel Partial visual ATtention mechanism (PAT) that can efficiently combine PConv with visual attention. Our exploration indicates that the partial attention mechanism can completely replace the full attention mechanism and reduce model parameters and FLOPs. Our PAT can derive three types of blocks: Partial Channel-Attention block (PAT_ch), Partial Spatial-Attention block (PAT_sp) and Partial Self-Attention block (PAT_sf). First, PAT_ch integrates the enhanced Gaussian channel attention mechanism to infuse global distribution information into the untouched channels of PConv. Second, we introduce the spatial-wise attention to the MLP layer to further improve model accuracy. Finally, we replace PAT_ch in the last stage with the self-attention mechanism to extend the global receptive field. Building upon PAT, we propose a novel hybrid network family, named PATNet, which achieves superior top-1 accuracy and inference speed compared to FasterNet on ImageNet-1K classification and excel in both detection and segmentation on the COCO dataset. Particularly, our PATNet-T2 achieves 1.3% higher accuracy than FasterNet-T2, while exhibiting 25% higher GPU throughput and 24% lower CPU latency. 
+
+**Abstract (ZH)**: 设计高效且有效的神经网络一直是计算机视觉研究中的一个突出话题。Designing Efficient and Effective Neural Networks Has Remained a Prominent Topic in Computer Vision Research. 
+
+---
+# RVAFM: Re-parameterizing Vertical Attention Fusion Module for Handwritten Paragraph Text Recognition 
+
+**Title (ZH)**: RVAFM：重新参数化的垂直注意力融合模块的手写段落文本识别 
+
+**Authors**: Jinhui Zheng, Zhiquan Liu, Yain-Whar Si, Jianqing Li, Xinyuan Zhang, Xiaofan Li, Haozhi Huang, Xueyuan Gong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.03104)  
+
+**Abstract**: Handwritten Paragraph Text Recognition (HPTR) is a challenging task in Computer Vision, requiring the transformation of a paragraph text image, rich in handwritten text, into text encoding sequences. One of the most advanced models for this task is Vertical Attention Network (VAN), which utilizes a Vertical Attention Module (VAM) to implicitly segment paragraph text images into text lines, thereby reducing the difficulty of the recognition task. However, from a network structure perspective, VAM is a single-branch module, which is less effective in learning compared to multi-branch modules. In this paper, we propose a new module, named Re-parameterizing Vertical Attention Fusion Module (RVAFM), which incorporates structural re-parameterization techniques. RVAFM decouples the structure of the module during training and inference stages. During training, it uses a multi-branch structure for more effective learning, and during inference, it uses a single-branch structure for faster processing. The features learned by the multi-branch structure are fused into the single-branch structure through a special fusion method named Re-parameterization Fusion (RF) without any loss of information. As a result, we achieve a Character Error Rate (CER) of 4.44% and a Word Error Rate (WER) of 14.37% on the IAM paragraph-level test set. Additionally, the inference speed is slightly faster than VAN. 
+
+**Abstract (ZH)**: 基于重构垂直注意力融合模块的便条手写段落文本识别 
+
+---
+# Interpretable Few-Shot Retinal Disease Diagnosis with Concept-Guided Prompting of Vision-Language Models 
+
+**Title (ZH)**: 概念引导提示的视觉语言模型在可解释的少量样本视网膜疾病诊断中的应用 
+
+**Authors**: Deval Mehta, Yiwen Jiang, Catherine L Jan, Mingguang He, Kshitij Jadhav, Zongyuan Ge  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02917)  
+
+**Abstract**: Recent advancements in deep learning have shown significant potential for classifying retinal diseases using color fundus images. However, existing works predominantly rely exclusively on image data, lack interpretability in their diagnostic decisions, and treat medical professionals primarily as annotators for ground truth labeling. To fill this gap, we implement two key strategies: extracting interpretable concepts of retinal diseases using the knowledge base of GPT models and incorporating these concepts as a language component in prompt-learning to train vision-language (VL) models with both fundus images and their associated concepts. Our method not only improves retinal disease classification but also enriches few-shot and zero-shot detection (novel disease detection), while offering the added benefit of concept-based model interpretability. Our extensive evaluation across two diverse retinal fundus image datasets illustrates substantial performance gains in VL-model based few-shot methodologies through our concept integration approach, demonstrating an average improvement of approximately 5.8\% and 2.7\% mean average precision for 16-shot learning and zero-shot (novel class) detection respectively. Our method marks a pivotal step towards interpretable and efficient retinal disease recognition for real-world clinical applications. 
+
+**Abstract (ZH)**: 近期深度学习的进展展示了利用彩色眼底图像分类视网膜疾病的巨大潜力。然而，现有工作主要依赖图像数据，诊断决策缺乏解释性，并且主要将医疗专业人员视为 ground truth 标注的标注者。为了填补这一空白，我们实施了两种关键策略：利用 GPT 模型的知识库提取视网膜疾病的可解释概念，并将这些概念作为语言组件纳入提示学习中，以训练结合眼底图像及其相关概念的视觉-语言（VL）模型。我们的方法不仅提高了视网膜疾病的分类性能，还丰富了少量样本和零样本检测（新型疾病检测），同时提供了基于概念的模型解释性。我们跨越两个不同视网膜眼底图像数据集的全面评估表明，通过我们的概念整合方法，VL 模型基于少量样本的方法在性能上取得了显著提升，分别在 16 射照学习和零样本（新类）检测中提高了约 5.8% 和 2.7% 的平均精度。我们的方法标志着朝着实际临床应用中可解释和高效的视网膜疾病识别迈出的关键一步。 
+
+---
+# ClipGrader: Leveraging Vision-Language Models for Robust Label Quality Assessment in Object Detection 
+
+**Title (ZH)**: ClipGrader: 利用视觉-语言模型进行稳健的目标检测标签质量评估 
+
+**Authors**: Hong Lu, Yali Bian, Rahul C. Shah  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.02897)  
+
+**Abstract**: High-quality annotations are essential for object detection models, but ensuring label accuracy - especially for bounding boxes - remains both challenging and costly. This paper introduces ClipGrader, a novel approach that leverages vision-language models to automatically assess the accuracy of bounding box annotations. By adapting CLIP (Contrastive Language-Image Pre-training) to evaluate both class label correctness and spatial precision of bounding box, ClipGrader offers an effective solution for grading object detection labels. Tested on modified object detection datasets with artificially disturbed bounding boxes, ClipGrader achieves 91% accuracy on COCO with a 1.8% false positive rate. Moreover, it maintains 87% accuracy with a 2.1% false positive rate when trained on just 10% of the COCO data. ClipGrader also scales effectively to larger datasets such as LVIS, achieving 79% accuracy across 1,203 classes. Our experiments demonstrate ClipGrader's ability to identify errors in existing COCO annotations, highlighting its potential for dataset refinement. When integrated into a semi-supervised object detection (SSOD) model, ClipGrader readily improves the pseudo label quality, helping achieve higher mAP (mean Average Precision) throughout the training process. ClipGrader thus provides a scalable AI-assisted tool for enhancing annotation quality control and verifying annotations in large-scale object detection datasets. 
+
+**Abstract (ZH)**: ClipGrader：一种利用视觉语言模型自动评估边界框标注准确性的新颖方法 
+
+---
