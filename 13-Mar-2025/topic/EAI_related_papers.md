@@ -1,0 +1,299 @@
+# Neural reservoir control of a soft bio-hybrid arm 
+
+**Title (ZH)**: 软生物杂合臂的神经蓄积控制 
+
+**Authors**: Noel Naughton, Arman Tekinalp, Keshav Shivam, Seung Hung Kim, Volodymyr Kindratenko, Mattia Gazzola  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.09477)  
+
+**Abstract**: A long-standing engineering problem, the control of soft robots is difficult because of their highly non-linear, heterogeneous, anisotropic, and distributed nature. Here, bridging engineering and biology, a neural reservoir is employed for the dynamic control of a bio-hybrid model arm made of multiple muscle-tendon groups enveloping an elastic spine. We show how the use of reservoirs facilitates simultaneous control and self-modeling across a set of challenging tasks, outperforming classic neural network approaches. Further, by implementing a spiking reservoir on neuromorphic hardware, energy efficiency is achieved, with nearly two-orders of magnitude improvement relative to standard CPUs, with implications for the on-board control of untethered, small-scale soft robots. 
+
+**Abstract (ZH)**: 软体机器人的动态控制是一个长期存在的工程问题，由于其高度非线性、异质性、各向异性以及分布特性，控制非常困难。本文通过融合工程学和生物学，采用神经水库对由多组肌肉-肌腱群包裹弹性脊柱构成的生物-混合模型臂进行动力学控制。我们展示了如何通过使用神经水库实现对一系列具有挑战性的任务同时进行控制和自我建模，超越了经典神经网络方法。此外，通过在神经形态硬件上实现脉冲神经水库，实现了能效提升，相比于普通CPU提高了近两个数量级，对无缆操控小型软体机器人的机载控制具有重要意义。 
+
+---
+# Efficient Alignment of Unconditioned Action Prior for Language-conditioned Pick and Place in Clutter 
+
+**Title (ZH)**: 语言条件下的拾取和放置在杂乱环境中的无条件动作先验高效对齐 
+
+**Authors**: Kechun Xu, Xunlong Xia, Kaixuan Wang, Yifei Yang, Yunxuan Mao, Bing Deng, Rong Xiong, Yue Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.09423)  
+
+**Abstract**: We study the task of language-conditioned pick and place in clutter, where a robot should grasp a target object in open clutter and move it to a specified place. Some approaches learn end-to-end policies with features from vision foundation models, requiring large datasets. Others combine foundation models in a zero-shot setting, suffering from cascading errors. In addition, they primarily leverage vision and language foundation models, focusing less on action priors. In this paper, we aim to develop an effective policy by integrating foundation priors from vision, language, and action. We propose A$^2$, an action prior alignment method that aligns unconditioned action priors with 3D vision-language priors by learning one attention layer. The alignment formulation enables our policy to train with less data and preserve zero-shot generalization capabilities. We show that a shared policy for both pick and place actions enhances the performance for each task, and introduce a policy adaptation scheme to accommodate the multi-modal nature of actions. Extensive experiments in simulation and the real-world show that our policy achieves higher task success rates with fewer steps for both pick and place tasks in clutter, effectively generalizing to unseen objects and language instructions. 
+
+**Abstract (ZH)**: 基于视觉-语言先验的混合行动先验对齐方法 kobold A$^2$及其在杂乱环境中抓取与放置任务中的应用 
+
+---
+# NVP-HRI: Zero Shot Natural Voice and Posture-based Human-Robot Interaction via Large Language Model 
+
+**Title (ZH)**: NVP-HRI: 通过对大型语言模型零样本学习的自然语音和姿态驱动的人机交互 
+
+**Authors**: Yuzhi Lai, Shenghai Yuan, Youssef Nassar, Mingyu Fan, Thomas Weber, Matthias Rätsch  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.09335)  
+
+**Abstract**: Effective Human-Robot Interaction (HRI) is crucial for future service robots in aging societies. Existing solutions are biased toward only well-trained objects, creating a gap when dealing with new objects. Currently, HRI systems using predefined gestures or language tokens for pretrained objects pose challenges for all individuals, especially elderly ones. These challenges include difficulties in recalling commands, memorizing hand gestures, and learning new names. This paper introduces NVP-HRI, an intuitive multi-modal HRI paradigm that combines voice commands and deictic posture. NVP-HRI utilizes the Segment Anything Model (SAM) to analyze visual cues and depth data, enabling precise structural object representation. Through a pre-trained SAM network, NVP-HRI allows interaction with new objects via zero-shot prediction, even without prior knowledge. NVP-HRI also integrates with a large language model (LLM) for multimodal commands, coordinating them with object selection and scene distribution in real time for collision-free trajectory solutions. We also regulate the action sequence with the essential control syntax to reduce LLM hallucination risks. The evaluation of diverse real-world tasks using a Universal Robot showcased up to 59.2\% efficiency improvement over traditional gesture control, as illustrated in the video this https URL. Our code and design will be openly available at this https URL. 
+
+**Abstract (ZH)**: 有效的多模态人机交互（NVP-HRI）对于老龄化社会中的服务机器人至关重要 
+
+---
+# GarmentPile: Point-Level Visual Affordance Guided Retrieval and Adaptation for Cluttered Garments Manipulation 
+
+**Title (ZH)**: 服装堆叠：点级视觉功能引导的杂乱服装操作检索与适应 
+
+**Authors**: Ruihai Wu, Ziyu Zhu, Yuran Wang, Yue Chen, Jiarui Wang, Hao Dong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.09243)  
+
+**Abstract**: Cluttered garments manipulation poses significant challenges due to the complex, deformable nature of garments and intricate garment relations. Unlike single-garment manipulation, cluttered scenarios require managing complex garment entanglements and interactions, while maintaining garment cleanliness and manipulation stability. To address these demands, we propose to learn point-level affordance, the dense representation modeling the complex space and multi-modal manipulation candidates, while being aware of garment geometry, structure, and inter-object relations. Additionally, as it is difficult to directly retrieve a garment in some extremely entangled clutters, we introduce an adaptation module, guided by learned affordance, to reorganize highly-entangled garments into states plausible for manipulation. Our framework demonstrates effectiveness over environments featuring diverse garment types and pile configurations in both simulation and the real world. Project page: this https URL. 
+
+**Abstract (ZH)**: 杂乱衣物操作由于衣物的复杂可变形性质和复杂的衣物关系，提出了显著的挑战。与单件衣物操作不同，杂乱场景需要管理复杂的衣物缠绕和相互作用，同时保持衣物清洁和操作稳定性。为应对这些需求，我们提出学习点级功能，这是一种密集表示，模型复杂的空间和多模态的操作候选者，同时考虑到衣物的几何形状、结构以及物体间的关系。此外，由于在某些极其缠结的杂乱中直接检索衣物困难，我们引入了一个根据学习到的功能进行引导的适应模块，重新组织高度缠结的衣物，使其处于可行的操作状态。我们的框架在包含各种衣物类型和堆积配置的模拟和真实世界环境中都展示了有效性。项目页面：这个 https URL。 
+
+---
+# MarineGym: A High-Performance Reinforcement Learning Platform for Underwater Robotics 
+
+**Title (ZH)**: MarineGym: 一种高性能的水下机器人强化学习平台 
+
+**Authors**: Shuguang Chu, Zebin Huang, Yutong Li, Mingwei Lin, Ignacio Carlucho, Yvan R. Petillot, Canjun Yang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.09203)  
+
+**Abstract**: This work presents the MarineGym, a high-performance reinforcement learning (RL) platform specifically designed for underwater robotics. It aims to address the limitations of existing underwater simulation environments in terms of RL compatibility, training efficiency, and standardized benchmarking. MarineGym integrates a proposed GPU-accelerated hydrodynamic plugin based on Isaac Sim, achieving a rollout speed of 250,000 frames per second on a single NVIDIA RTX 3060 GPU. It also provides five models of unmanned underwater vehicles (UUVs), multiple propulsion systems, and a set of predefined tasks covering core underwater control challenges. Additionally, the DR toolkit allows flexible adjustments of simulation and task parameters during training to improve Sim2Real transfer. Further benchmark experiments demonstrate that MarineGym improves training efficiency over existing platforms and supports robust policy adaptation under various perturbations. We expect this platform could drive further advancements in RL research for underwater robotics. For more details about MarineGym and its applications, please visit our project page: this https URL. 
+
+**Abstract (ZH)**: MarineGym：一种用于水下机器人领域的高性能强化学习平台 
+
+---
+# Long-Term Planning Around Humans in Domestic Environments with 3D Scene Graphs 
+
+**Title (ZH)**: 在家庭环境中基于3D场景图的人机长期规划 
+
+**Authors**: Ermanno Bartoli, Dennis Rotondi, Kai O. Arras, Iolanda Leite  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.09173)  
+
+**Abstract**: Long-term planning for robots operating in domestic environments poses unique challenges due to the interactions between humans, objects, and spaces. Recent advancements in trajectory planning have leveraged vision-language models (VLMs) to extract contextual information for robots operating in real-world environments. While these methods achieve satisfying performance, they do not explicitly model human activities. Such activities influence surrounding objects and reshape spatial constraints. This paper presents a novel approach to trajectory planning that integrates human preferences, activities, and spatial context through an enriched 3D scene graph (3DSG) representation. By incorporating activity-based relationships, our method captures the spatial impact of human actions, leading to more context-sensitive trajectory adaptation. Preliminary results demonstrate that our approach effectively assigns costs to spaces influenced by human activities, ensuring that the robot trajectory remains contextually appropriate and sensitive to the ongoing environment. This balance between task efficiency and social appropriateness enhances context-aware human-robot interactions in domestic settings. Future work includes implementing a full planning pipeline and conducting user studies to evaluate trajectory acceptability. 
+
+**Abstract (ZH)**: 长期规划家居环境中的机器人操作面临独特挑战，由于人类、物体和空间的交互。近期轨迹规划的进步利用了视觉-语言模型（VLMs）来提取机器人在现实世界环境中操作所需的背景信息。尽管这些方法取得了令人满意的效果，但它们并未明确建模人类活动。这些活动影响周围的物体并重塑空间约束。本文提出了一种新的轨迹规划方法，通过增强的3D场景图（3DSG）表示整合了人类偏好、活动和空间上下文。通过结合基于活动的关系，我们的方法捕捉到了人类行为的空间影响，从而实现了更具上下文敏感性的轨迹适应。初步结果表明，我们的方法有效地为受人类活动影响的空间分配了成本，确保了机器人轨迹在上下文中具有适当的适应性和对当前环境的敏感性。这种任务效率与社会适宜性的平衡增强了家居环境中的人机交互。未来工作包括实现完整的规划管道并进行用户研究以评估轨迹可接受性。 
+
+---
+# ManeuverGPT Agentic Control for Safe Autonomous Stunt Maneuvers 
+
+**Title (ZH)**: ManeuverGPT自主特技机动的代理控制以确保安全 
+
+**Authors**: Shawn Azdam, Pranav Doma, Aliasghar Moj Arab  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.09035)  
+
+**Abstract**: The next generation of active safety features in autonomous vehicles should be capable of safely executing evasive hazard-avoidance maneuvers akin to those performed by professional stunt drivers to achieve high-agility motion at the limits of vehicle handling. This paper presents a novel framework, ManeuverGPT, for generating and executing high-dynamic stunt maneuvers in autonomous vehicles using large language model (LLM)-based agents as controllers. We target aggressive maneuvers, such as J-turns, within the CARLA simulation environment and demonstrate an iterative, prompt-based approach to refine vehicle control parameters, starting tabula rasa without retraining model weights. We propose an agentic architecture comprised of three specialized agents (1) a Query Enricher Agent for contextualizing user commands, (2) a Driver Agent for generating maneuver parameters, and (3) a Parameter Validator Agent that enforces physics-based and safety constraints. Experimental results demonstrate successful J-turn execution across multiple vehicle models through textual prompts that adapt to differing vehicle dynamics. We evaluate performance via established success criteria and discuss limitations regarding numeric precision and scenario complexity. Our findings underscore the potential of LLM-driven control for flexible, high-dynamic maneuvers, while highlighting the importance of hybrid approaches that combine language-based reasoning with algorithmic validation. 
+
+**Abstract (ZH)**: 下一代自动驾驶车辆的主动安全功能应能够安全执行类似专业特技驾驶员在车辆 handling 极限下实现高敏捷运动的避险机动动作。本文提出了一种新型框架 ManeuverGPT，使用基于大型语言模型的智能体作为控制器，以生成并执行自动驾驶车辆中的高动态特技机动。我们针对 CARLA 模拟环境中的激进机动，如 J-turn，采用迭代提示方法逐步调整车辆控制参数，无需重新训练模型权重。我们提出了一种智能体架构，包括三个专门的智能体：（1）查询增强智能体，用于上下文化用户命令，（2）驾驶员智能体，用于生成机动参数，以及（3）参数验证智能体，用于强制执行基于物理和安全的约束。实验结果表明，通过适应不同车辆动力学的文本提示成功执行了多种车型的 J-turn。我们通过既定的成功标准评估性能，并讨论了在数值精度和场景复杂性方面的局限性。我们的研究结果突显了基于大型语言模型控制在灵活、高动态机动中的潜力，同时强调了结合基于语言的推理与算法验证的混合方法的重要性。 
+
+---
+# Natural Humanoid Robot Locomotion with Generative Motion Prior 
+
+**Title (ZH)**: 自然 humanoid 机器人运动的生成运动先验 
+
+**Authors**: Haodong Zhang, Liang Zhang, Zhenghan Chen, Lu Chen, Yue Wang, Rong Xiong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.09015)  
+
+**Abstract**: Natural and lifelike locomotion remains a fundamental challenge for humanoid robots to interact with human society. However, previous methods either neglect motion naturalness or rely on unstable and ambiguous style rewards. In this paper, we propose a novel Generative Motion Prior (GMP) that provides fine-grained motion-level supervision for the task of natural humanoid robot locomotion. To leverage natural human motions, we first employ whole-body motion retargeting to effectively transfer them to the robot. Subsequently, we train a generative model offline to predict future natural reference motions for the robot based on a conditional variational auto-encoder. During policy training, the generative motion prior serves as a frozen online motion generator, delivering precise and comprehensive supervision at the trajectory level, including joint angles and keypoint positions. The generative motion prior significantly enhances training stability and improves interpretability by offering detailed and dense guidance throughout the learning process. Experimental results in both simulation and real-world environments demonstrate that our method achieves superior motion naturalness compared to existing approaches. Project page can be found at this https URL 
+
+**Abstract (ZH)**: 自然且逼真的运动对于人形机器人与人类社会互动仍然是一个基本挑战。然而，先前的方法要么忽视运动的自然性，要么依赖于不穩定和含糊的风格奖励。本文 propose 一种新颖的生成运动先验（GMP），为自然人形机器人运动提供细粒度的动力学级监督。为了利用自然的人运动，我们首先使用全身运动重定向有效地将人运动转移到机器人上。随后，我们训练一个生成模型，在条件变分自编码器的基础上预测机器人未来自然的参考运动。在策略训练过程中，生成运动先验作为冻结的在线运动生成器，提供轨迹级的精确且全面的监督，包括关节角度和关键点位置。生成运动先验在整个学习过程中提供了详细且密集的指导，显著增强了训练的稳定性并提高了可解释性。实验结果在仿真和真实环境中均表明，我们的方法在运动自然性方面优于现有方法。更多信息请参见项目页面：this https URL。 
+
+---
+# HumanoidPano: Hybrid Spherical Panoramic-LiDAR Cross-Modal Perception for Humanoid Robots 
+
+**Title (ZH)**: 类人全景：混合球面全景-LiDAR 跨模态感知技术用于类人机器人 
+
+**Authors**: Qiang Zhang, Zhang Zhang, Wei Cui, Jingkai Sun, Jiahang Cao, Yijie Guo, Gang Han, Wen Zhao, Jiaxu Wang, Chenghao Sun, Lingfeng Zhang, Hao Cheng, Yujie Chen, Lin Wang, Jian Tang, Renjing Xu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.09010)  
+
+**Abstract**: The perceptual system design for humanoid robots poses unique challenges due to inherent structural constraints that cause severe self-occlusion and limited field-of-view (FOV). We present HumanoidPano, a novel hybrid cross-modal perception framework that synergistically integrates panoramic vision and LiDAR sensing to overcome these limitations. Unlike conventional robot perception systems that rely on monocular cameras or standard multi-sensor configurations, our method establishes geometrically-aware modality alignment through a spherical vision transformer, enabling seamless fusion of 360 visual context with LiDAR's precise depth measurements. First, Spherical Geometry-aware Constraints (SGC) leverage panoramic camera ray properties to guide distortion-regularized sampling offsets for geometric alignment. Second, Spatial Deformable Attention (SDA) aggregates hierarchical 3D features via spherical offsets, enabling efficient 360°-to-BEV fusion with geometrically complete object representations. Third, Panoramic Augmentation (AUG) combines cross-view transformations and semantic alignment to enhance BEV-panoramic feature consistency during data augmentation. Extensive evaluations demonstrate state-of-the-art performance on the 360BEV-Matterport benchmark. Real-world deployment on humanoid platforms validates the system's capability to generate accurate BEV segmentation maps through panoramic-LiDAR co-perception, directly enabling downstream navigation tasks in complex environments. Our work establishes a new paradigm for embodied perception in humanoid robotics. 
+
+**Abstract (ZH)**: 基于人体形机器人的知觉系统设计由于固有的结构约束导致严重的自遮挡和有限的视野。我们提出了HumanoidPano，这是一种新颖的混合跨模态感知框架，结合了全景视觉和LiDAR感应以克服这些限制。 
+
+---
+# Unified Locomotion Transformer with Simultaneous Sim-to-Real Transfer for Quadrupeds 
+
+**Title (ZH)**: 四足机器人统一运动变压器的同步从仿真到现实的迁移 
+
+**Authors**: Dikai Liu, Tianwei Zhang, Jianxiong Yin, Simon See  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.08997)  
+
+**Abstract**: Quadrupeds have gained rapid advancement in their capability of traversing across complex terrains. The adoption of deep Reinforcement Learning (RL), transformers and various knowledge transfer techniques can greatly reduce the sim-to-real gap. However, the classical teacher-student framework commonly used in existing locomotion policies requires a pre-trained teacher and leverages the privilege information to guide the student policy. With the implementation of large-scale models in robotics controllers, especially transformers-based ones, this knowledge distillation technique starts to show its weakness in efficiency, due to the requirement of multiple supervised stages. In this paper, we propose Unified Locomotion Transformer (ULT), a new transformer-based framework to unify the processes of knowledge transfer and policy optimization in a single network while still taking advantage of privilege information. The policies are optimized with reinforcement learning, next state-action prediction, and action imitation, all in just one training stage, to achieve zero-shot deployment. Evaluation results demonstrate that with ULT, optimal teacher and student policies can be obtained at the same time, greatly easing the difficulty in knowledge transfer, even with complex transformer-based models. 
+
+**Abstract (ZH)**: 四足机器人在复杂地形穿越能力上取得了 rapid advancement。采用深度强化学习（RL）、变压器和各种知识迁移技术可以大幅缩小模拟与现实之间的差距。然而，现有运动策略中常用的经典教师-学生框架需要预先训练教师，并利用特权信息来指导学生策略。随着大规模模型在机器人控制器中的实施，特别是基于变压器的模型，这种知识蒸馏技术开始在效率方面显示其弱点，因为需要多个监督阶段。在本文中，我们提出了一种统一的运动变压器（ULT）框架，该框架在一个网络中统一了知识迁移和策略优化的过程，同时仍然利用特权信息。通过强化学习、下一步状态动作预测和动作模仿优化策略，仅在一个训练阶段即可实现零样本部署。评估结果表明，通过ULT，可以同时获得最优的教师和学生策略，大大简化了知识迁移的难度，即使对于复杂的基于变压器的模型也是如此。 
+
+---
+# FP3: A 3D Foundation Policy for Robotic Manipulation 
+
+**Title (ZH)**: FP3: 3D 基础政策用于机器人操作 
+
+**Authors**: Rujia Yang, Geng Chen, Chuan Wen, Yang Gao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.08950)  
+
+**Abstract**: Following its success in natural language processing and computer vision, foundation models that are pre-trained on large-scale multi-task datasets have also shown great potential in robotics. However, most existing robot foundation models rely solely on 2D image observations, ignoring 3D geometric information, which is essential for robots to perceive and reason about the 3D world. In this paper, we introduce FP3, a first large-scale 3D foundation policy model for robotic manipulation. FP3 builds on a scalable diffusion transformer architecture and is pre-trained on 60k trajectories with point cloud observations. With the model design and diverse pre-training data, FP3 can be efficiently fine-tuned for downstream tasks while exhibiting strong generalization capabilities. Experiments on real robots demonstrate that with only 80 demonstrations, FP3 is able to learn a new task with over 90% success rates in novel environments with unseen objects, significantly surpassing existing robot foundation models. 
+
+**Abstract (ZH)**: 基于3D点云观察的大规模机器人 manipulation 基础策略模型 FP3 
+
+---
+# Mutual Adaptation in Human-Robot Co-Transportation with Human Preference Uncertainty 
+
+**Title (ZH)**: 基于人类偏好不确定性的人机协同运输适配机制 
+
+**Authors**: Al Jaber Mahmud, Weizi Li, Xuan Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.08895)  
+
+**Abstract**: Mutual adaptation can significantly enhance overall task performance in human-robot co-transportation by integrating both the robot's and human's understanding of the environment. While human modeling helps capture humans' subjective preferences, two challenges persist: (i) the uncertainty of human preference parameters and (ii) the need to balance adaptation strategies that benefit both humans and robots. In this paper, we propose a unified framework to address these challenges and improve task performance through mutual adaptation. First, instead of relying on fixed parameters, we model a probability distribution of human choices by incorporating a range of uncertain human parameters. Next, we introduce a time-varying stubbornness measure and a coordination mode transition model, which allows either the robot to lead the team's trajectory or, if a human's preferred path conflicts with the robot's plan and their stubbornness exceeds a threshold, the robot to transition to following the human. Finally, we introduce a pose optimization strategy to mitigate the uncertain human behaviors when they are leading. To validate the framework, we design and perform experiments with real human feedback. We then demonstrate, through simulations, the effectiveness of our models in enhancing task performance with mutual adaptation and pose optimization. 
+
+**Abstract (ZH)**: 人类与机器人共运送任务中的相互适应可显著提升整体任务性能：一种统一框架及其实验验证 
+
+---
+# SICNav-Diffusion: Safe and Interactive Crowd Navigation with Diffusion Trajectory Predictions 
+
+**Title (ZH)**: SICNav-扩散：基于扩散轨迹预测的安全交互式人群导航 
+
+**Authors**: Sepehr Samavi, Anthony Lem, Fumiaki Sato, Sirui Chen, Qiao Gu, Keijiro Yano, Angela P. Schoellig, Florian Shkurti  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.08858)  
+
+**Abstract**: To navigate crowds without collisions, robots must interact with humans by forecasting their future motion and reacting accordingly. While learning-based prediction models have shown success in generating likely human trajectory predictions, integrating these stochastic models into a robot controller presents several challenges. The controller needs to account for interactive coupling between planned robot motion and human predictions while ensuring both predictions and robot actions are safe (i.e. collision-free). To address these challenges, we present a receding horizon crowd navigation method for single-robot multi-human environments. We first propose a diffusion model to generate joint trajectory predictions for all humans in the scene. We then incorporate these multi-modal predictions into a SICNav Bilevel MPC problem that simultaneously solves for a robot plan (upper-level) and acts as a safety filter to refine the predictions for non-collision (lower-level). Combining planning and prediction refinement into one bilevel problem ensures that the robot plan and human predictions are coupled. We validate the open-loop trajectory prediction performance of our diffusion model on the commonly used ETH/UCY benchmark and evaluate the closed-loop performance of our robot navigation method in simulation and extensive real-robot experiments demonstrating safe, efficient, and reactive robot motion. 
+
+**Abstract (ZH)**: 基于扩散模型的单机器人多人群体导航方法 
+
+---
+# SimLingo: Vision-Only Closed-Loop Autonomous Driving with Language-Action Alignment 
+
+**Title (ZH)**: SimLingo: 仅视觉闭环自主驾驶与语言-动作对齐 
+
+**Authors**: Katrin Renz, Long Chen, Elahe Arani, Oleg Sinavski  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.09594)  
+
+**Abstract**: Integrating large language models (LLMs) into autonomous driving has attracted significant attention with the hope of improving generalization and explainability. However, existing methods often focus on either driving or vision-language understanding but achieving both high driving performance and extensive language understanding remains challenging. In addition, the dominant approach to tackle vision-language understanding is using visual question answering. However, for autonomous driving, this is only useful if it is aligned with the action space. Otherwise, the model's answers could be inconsistent with its behavior. Therefore, we propose a model that can handle three different tasks: (1) closed-loop driving, (2) vision-language understanding, and (3) language-action alignment. Our model SimLingo is based on a vision language model (VLM) and works using only camera, excluding expensive sensors like LiDAR. SimLingo obtains state-of-the-art performance on the widely used CARLA simulator on the Bench2Drive benchmark and is the winning entry at the CARLA challenge 2024. Additionally, we achieve strong results in a wide variety of language-related tasks while maintaining high driving performance. 
+
+**Abstract (ZH)**: 将大型语言模型（LLMs）集成到自动驾驶中以提高泛化能力和解释性吸引了大量关注，但现有方法往往侧重于自动驾驶或视觉语言理解，同时实现高驾驶性能和广泛的语言理解仍然具有挑战性。此外，应对视觉语言理解的主要方法是使用视觉问答。然而，对于自动驾驶而言，只有当视觉问答与行为空间对齐时，这种方法才是有用的。否则，模型的回答可能与其行为不一致。因此，我们提出一个可以处理三个不同任务的模型：（1）闭环自动驾驶，（2）视觉语言理解，以及（3）语言-行为对齐。我们的模型SimLingo基于视觉语言模型（VLM），仅使用摄像头而无需昂贵的传感器如LiDAR。SimLingo在广泛应用的CARLA模拟器上的Bench2Drive基准测试中获得了最先进的性能，并在2024年CARLA挑战赛中获得冠军。此外，我们还在多种语言相关任务中取得了优异的结果，同时保持了高驾驶性能。 
+
+---
+# Online Language Splatting 
+
+**Title (ZH)**: 在线语言斑图化 
+
+**Authors**: Saimouli Katragadda, Cho-Ying Wu, Yuliang Guo, Xinyu Huang, Guoquan Huang, Liu Ren  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.09447)  
+
+**Abstract**: To enable AI agents to interact seamlessly with both humans and 3D environments, they must not only perceive the 3D world accurately but also align human language with 3D spatial representations. While prior work has made significant progress by integrating language features into geometrically detailed 3D scene representations using 3D Gaussian Splatting (GS), these approaches rely on computationally intensive offline preprocessing of language features for each input image, limiting adaptability to new environments. In this work, we introduce Online Language Splatting, the first framework to achieve online, near real-time, open-vocabulary language mapping within a 3DGS-SLAM system without requiring pre-generated language features. The key challenge lies in efficiently fusing high-dimensional language features into 3D representations while balancing the computation speed, memory usage, rendering quality and open-vocabulary capability. To this end, we innovatively design: (1) a high-resolution CLIP embedding module capable of generating detailed language feature maps in 18ms per frame, (2) a two-stage online auto-encoder that compresses 768-dimensional CLIP features to 15 dimensions while preserving open-vocabulary capabilities, and (3) a color-language disentangled optimization approach to improve rendering quality. Experimental results show that our online method not only surpasses the state-of-the-art offline methods in accuracy but also achieves more than 40x efficiency boost, demonstrating the potential for dynamic and interactive AI applications. 
+
+**Abstract (ZH)**: 在线语言平滑：一种无需先验语言特征的3DGS-SLAM系统中实现即时开放词汇语言映射的框架 
+
+---
+# 2HandedAfforder: Learning Precise Actionable Bimanual Affordances from Human Videos 
+
+**Title (ZH)**: 2HandedAfforder: 从人类视频中学习精确可执行的双手 affordances 
+
+**Authors**: Marvin Heidinger, Snehal Jauhri, Vignesh Prasad, Georgia Chalvatzaki  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.09320)  
+
+**Abstract**: When interacting with objects, humans effectively reason about which regions of objects are viable for an intended action, i.e., the affordance regions of the object. They can also account for subtle differences in object regions based on the task to be performed and whether one or two hands need to be used. However, current vision-based affordance prediction methods often reduce the problem to naive object part segmentation. In this work, we propose a framework for extracting affordance data from human activity video datasets. Our extracted 2HANDS dataset contains precise object affordance region segmentations and affordance class-labels as narrations of the activity performed. The data also accounts for bimanual actions, i.e., two hands co-ordinating and interacting with one or more objects. We present a VLM-based affordance prediction model, 2HandedAfforder, trained on the dataset and demonstrate superior performance over baselines in affordance region segmentation for various activities. Finally, we show that our predicted affordance regions are actionable, i.e., can be used by an agent performing a task, through demonstration in robotic manipulation scenarios. 
+
+**Abstract (ZH)**: 基于视觉语言模型的双手法具预测框架：从人类活动视频中提取手部互动区域标注 
+
+---
+# Cooperative Bearing-Only Target Pursuit via Multiagent Reinforcement Learning: Design and Experiment 
+
+**Title (ZH)**: 多智能体强化学习引导下的协作基于 bearing 的目标追击：设计与实验 
+
+**Authors**: Jianan Li, Zhikun Wang, Susheng Ding, Shiliang Guo, Shiyu Zhao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.08740)  
+
+**Abstract**: This paper addresses the multi-robot pursuit problem for an unknown target, encompassing both target state estimation and pursuit control. First, in state estimation, we focus on using only bearing information, as it is readily available from vision sensors and effective for small, distant targets. Challenges such as instability due to the nonlinearity of bearing measurements and singularities in the two-angle representation are addressed through a proposed uniform bearing-only information filter. This filter integrates multiple 3D bearing measurements, provides a concise formulation, and enhances stability and resilience to target loss caused by limited field of view (FoV). Second, in target pursuit control within complex environments, where challenges such as heterogeneity and limited FoV arise, conventional methods like differential games or Voronoi partitioning often prove inadequate. To address these limitations, we propose a novel multiagent reinforcement learning (MARL) framework, enabling multiple heterogeneous vehicles to search, localize, and follow a target while effectively handling those challenges. Third, to bridge the sim-to-real gap, we propose two key techniques: incorporating adjustable low-level control gains in training to replicate the dynamics of real-world autonomous ground vehicles (AGVs), and proposing spectral-normalized RL algorithms to enhance policy smoothness and robustness. Finally, we demonstrate the successful zero-shot transfer of the MARL controllers to AGVs, validating the effectiveness and practical feasibility of our approach. The accompanying video is available at this https URL. 
+
+**Abstract (ZH)**: 本文解决了未知目标的多机器人捕获问题，涵盖了目标状态估计和捕获控制。首先，在状态估计中，我们专注于使用方位信息，因为方位信息来自视觉传感器且适用于小型远距离目标。通过提出一种统一的方位-only信息滤波器，解决了由于方位测量的非线性引起的不稳定性和两角表示中的奇异性问题。该滤波器整合了多个3D方位测量值，提供了简洁的形式，并增强了在视场（FoV）受限导致的目标丢失时的稳定性和鲁棒性。其次，在复杂环境下的目标捕获控制中，由于异质性和有限的视场等因素，传统的差分博弈或Voronoi划分方法通常效果不佳。为了解决这些问题，我们提出了一种新颖的多Agent强化学习（MARL）框架，使多个异构车辆能够搜索、定位并跟随目标，有效应对这些挑战。第三，为了弥合仿真与现实之间的差距，我们提出了两种关键技术：在训练中引入可调低级控制增益以模拟现实世界自主地面车辆（AGVs）的动力学特性，以及提出谱正则化RL算法以提升策略的平滑性和鲁棒性。最后，我们展示了MARL控制器成功实现了对AGVs的零样本迁移，验证了我们方法的有效性和实用性。相关视频可在以下链接获取。 
+
+---
+# Combining Local Symmetry Exploitation and Reinforcement Learning for Optimised Probabilistic Inference -- A Work In Progress 
+
+**Title (ZH)**: 结合局部对称性exploitation和强化学习以优化概率推理——一项工作进行中 
+
+**Authors**: Sagad Hamid, Tanya Braun  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.08786)  
+
+**Abstract**: Efficient probabilistic inference by variable elimination in graphical models requires an optimal elimination order. However, finding an optimal order is a challenging combinatorial optimisation problem for models with a large number of random variables. Most recently, a reinforcement learning approach has been proposed to find efficient contraction orders in tensor networks. Due to the duality between graphical models and tensor networks, we adapt this approach to probabilistic inference in graphical models. Furthermore, we incorporate structure exploitation into the process of finding an optimal order. Currently, the agent's cost function is formulated in terms of intermediate result sizes which are exponential in the number of indices (i.e., random variables). We show that leveraging specific structures during inference allows for introducing compact encodings of intermediate results which can be significantly smaller. By considering the compact encoding sizes for the cost function instead, we enable the agent to explore more efficient contraction orders. The structure we consider in this work is the presence of local symmetries (i.e., symmetries within a model's factors). 
+
+**Abstract (ZH)**: 基于图形模型中变量消除的高效概率推理需要最优的消除顺序。然而，对于具有大量随机变量的模型，找到最优顺序是一个具有挑战性的组合优化问题。最近，一种强化学习方法被提出用于在张量网络中寻找有效的收缩顺序。由于图形模型与张量网络之间的对偶性，我们将此方法适应于图形模型中的概率推理。此外，我们在寻找最优顺序的过程中融入了结构利用。目前，代理的成本函数是以中间结果大小的形式给出的，这些中间结果的大小与索引的数量成指数关系（即随机变量的数量）。我们展示了利用特定结构可以在推理过程中引入紧凑的中间结果编码，这些编码可以显著减小。通过以紧凑编码的大小作为成本函数，我们可以使代理探索更高效的收缩顺序。我们在这项工作中考虑的结构是局部对称性的存在（即模型因子内的对称性）。 
+
+---
+# CombatVLA: An Efficient Vision-Language-Action Model for Combat Tasks in 3D Action Role-Playing Games 
+
+**Title (ZH)**: CombatVLA：一种用于3D动作角色扮演游戏战斗任务的高效视觉-语言-动作模型 
+
+**Authors**: Peng Chen, Pi Bu, Yingyao Wang, Xinyi Wang, Ziming Wang, Jie Guo, Yingxiu Zhao, Qi Zhu, Jun Song, Siran Yang, Jiamang Wang, Bo Zheng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.09527)  
+
+**Abstract**: Recent advances in Vision-Language-Action models (VLAs) have expanded the capabilities of embodied intelligence. However, significant challenges remain in real-time decision-making in complex 3D environments, which demand second-level responses, high-resolution perception, and tactical reasoning under dynamic conditions. To advance the field, we introduce CombatVLA, an efficient VLA model optimized for combat tasks in 3D action role-playing games(ARPGs). Specifically, our CombatVLA is a 3B model trained on video-action pairs collected by an action tracker, where the data is formatted as action-of-thought (AoT) sequences. Thereafter, CombatVLA seamlessly integrates into an action execution framework, allowing efficient inference through our truncated AoT strategy. Experimental results demonstrate that CombatVLA not only outperforms all existing models on the combat understanding benchmark but also achieves a 50-fold acceleration in game combat. Moreover, it has a higher task success rate than human players. We will open-source all resources, including the action tracker, dataset, benchmark, model weights, training code, and the implementation of the framework at this https URL. 
+
+**Abstract (ZH)**: 近期视觉-语言-行动模型（VLAs）的进展扩展了嵌入式智能的能力。然而，在复杂3D环境中的实时决策仍面临重大挑战，这要求二级响应、高分辨率感知和动态条件下的战术推理。为了推动这一领域的发展，我们引入了CombatVLA，这是一种针对3D动作角色扮演游戏（ARPGs）中战斗任务优化的高效VLAs模型。具体而言，我们的CombatVLA是一个3B规模的模型，通过行为追踪器收集的视频-行动对进行训练，数据格式化为行动-思考（AoT）序列。随后，CombatVLA无缝集成到行动执行框架中，通过我们的截断AoT策略实现了高效的推理。实验结果表明，CombatVLA不仅在战斗理解基准测试中优于所有现有模型，还实现了50倍的游戏战斗加速。此外，其任务成功率高于人类玩家。我们将在此<https://this.url/> 开源所有资源，包括行为追踪器、数据集、基准测试、模型权重、训练代码和框架实现。 
+
+---
+# Other Vehicle Trajectories Are Also Needed: A Driving World Model Unifies Ego-Other Vehicle Trajectories in Video Latant Space 
+
+**Title (ZH)**: 其他车辆轨迹同样重要：一个驾驶世界模型在视频隐空间中统一了本体车辆和其他车辆的轨迹 
+
+**Authors**: Jian Zhu, Zhengyu Jia, Tian Gao, Jiaxin Deng, Shidi Li, Fu Liu, Peng Jia, Xianpeng Lang, Xiaolong Sun  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.09215)  
+
+**Abstract**: Advanced end-to-end autonomous driving systems predict other vehicles' motions and plan ego vehicle's trajectory. The world model that can foresee the outcome of the trajectory has been used to evaluate the end-to-end autonomous driving system. However, existing world models predominantly emphasize the trajectory of the ego vehicle and leave other vehicles uncontrollable. This limitation hinders their ability to realistically simulate the interaction between the ego vehicle and the driving scenario. In addition, it remains a challenge to match multiple trajectories with each vehicle in the video to control the video generation. To address above issues, a driving \textbf{W}orld \textbf{M}odel named EOT-WM is proposed in this paper, unifying \textbf{E}go-\textbf{O}ther vehicle \textbf{T}rajectories in videos. Specifically, we first project ego and other vehicle trajectories in the BEV space into the image coordinate to match each trajectory with its corresponding vehicle in the video. Then, trajectory videos are encoded by the Spatial-Temporal Variational Auto Encoder to align with driving video latents spatially and temporally in the unified visual space. A trajectory-injected diffusion Transformer is further designed to denoise the noisy video latents for video generation with the guidance of ego-other vehicle trajectories. In addition, we propose a metric based on control latent similarity to evaluate the controllability of trajectories. Extensive experiments are conducted on the nuScenes dataset, and the proposed model outperforms the state-of-the-art method by 30\% in FID and 55\% in FVD. The model can also predict unseen driving scenes with self-produced trajectories. 
+
+**Abstract (ZH)**: 高级端到端自主驾驶系统预测其他车辆的运动并规划ego车辆的轨迹。为了评估端到端自主驾驶系统，已经使用了能够预见轨迹结果的世界模型。然而，现有的世界模型主要侧重于ego车辆的轨迹，而忽略了其他车辆的轨迹控制。这一限制阻碍了它们在统一视觉空间中真实模拟ego车辆与驾驶场景之间交互的能力。此外，将视频中多条轨迹与每辆车匹配以控制视频生成仍是一项挑战。为了解决上述问题，本文提出了一种名为EOT-WM的驾驶世界模型，统一了视频中的ego-others车辆轨迹。具体地，首先将ego和其他车辆轨迹在BEV空间中投影到图像坐标系中，以便将每条轨迹与其对应的车辆在视频中匹配。然后，通过时空变分自编码器对轨迹视频进行编码，使其在统一的视觉空间中与驾驶视频的空时特征对齐。进一步设计了一种轨迹注入的扩散变压器，以根据ego-others车辆轨迹对噪声的视频特征进行去噪，以指导视频生成。此外，我们提出了一种基于控制隐藏特征相似性的度量，以评估轨迹的可控性。在nuScenes数据集上进行了广泛的实验，所提模型在FID上优于最先进的方法30%，在FVD上优于55%。该模型还可以使用自生成的轨迹预测未见过的驾驶场景。 
+
+---
+# Efficient UAV Swarm-Based Multi-Task Federated Learning with Dynamic Task Knowledge Sharing 
+
+**Title (ZH)**: 基于动态任务知识共享的高效无人机集群多任务 federated 学习 
+
+**Authors**: Yubo Yang, Tao Yang, Xiaofeng Wu, Ziyu Guo, Bo Hu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.09144)  
+
+**Abstract**: UAV swarms are widely used in emergency communications, area monitoring, and disaster relief. Coordinated by control centers, they are ideal for federated learning (FL) frameworks. However, current UAV-assisted FL methods primarily focus on single tasks, overlooking the need for multi-task training. In disaster relief scenarios, UAVs perform tasks such as crowd detection, road feasibility analysis, and disaster assessment, which exhibit time-varying demands and potential correlations. In order to meet the time-varying requirements of tasks and complete multiple tasks efficiently under resource constraints, in this paper, we propose a UAV swarm based multi-task FL framework, where ground emergency vehicles (EVs) collaborate with UAVs to accomplish multiple tasks efficiently under constrained energy and bandwidth resources. Through theoretical analysis, we identify key factors affecting task performance and introduce a task attention mechanism to dynamically evaluate task importance, thereby achieving efficient resource allocation. Additionally, we propose a task affinity (TA) metric to capture the dynamic correlation among tasks, thereby promoting task knowledge sharing to accelerate training and improve the generalization ability of the model in different scenarios. To optimize resource allocation, we formulate a two-layer optimization problem to jointly optimize UAV transmission power, computation frequency, bandwidth allocation, and UAV-EV associations. For the inner problem, we derive closed-form solutions for transmission power, computation frequency, and bandwidth allocation and apply a block coordinate descent method for optimization. For the outer problem, a two-stage algorithm is designed to determine optimal UAV-EV associations. Furthermore, theoretical analysis reveals a trade-off between UAV energy consumption and multi-task performance. 
+
+**Abstract (ZH)**: 基于UAV蜂群的多任务联邦学习框架：结合地面应急车辆实现资源约束下的高效任务协同 
+
+---
+# Meta-Reinforcement Learning with Discrete World Models for Adaptive Load Balancing 
+
+**Title (ZH)**: 基于离散世界模型的元强化学习自适应负载均衡 
+
+**Authors**: Cameron Redovian  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.08872)  
+
+**Abstract**: We integrate a meta-reinforcement learning algorithm with the DreamerV3 architecture to improve load balancing in operating systems. This approach enables rapid adaptation to dynamic workloads with minimal retraining, outperforming the Advantage Actor-Critic (A2C) algorithm in standard and adaptive trials. It demonstrates robust resilience to catastrophic forgetting, maintaining high performance under varying workload distributions and sizes. These findings have important implications for optimizing resource management and performance in modern operating systems. By addressing the challenges posed by dynamic and heterogeneous workloads, our approach advances the adaptability and efficiency of reinforcement learning in real-world system management tasks. 
+
+**Abstract (ZH)**: 我们将元强化学习算法与DreamerV3架构相结合，以提高操作系统中的负载均衡。该方法能够在不进行大量重新训练的情况下快速适应动态工作负载，标准试验和自适应试验中均优于优势_actor_评论家（A2C）算法。该方法表现出对灾难性遗忘的稳健韧性，在不同工作负载分布和规模下保持了高性能。这些发现对于优化现代操作系统的资源管理和性能具有重要影响。通过解决动态和异构工作负载带来的挑战，我们的方法促进了强化学习在实际系统管理任务中的适应性和效率。 
+
+---
+# A Recipe for Improving Remote Sensing VLM Zero Shot Generalization 
+
+**Title (ZH)**: 提高遥感VLM零样本泛化能力的配方 
+
+**Authors**: Aviad Barzilai, Yotam Gigi, Vered Silverman, Yehonathan Refael, Bolous Jaber, Amr Helmy, Tomer Shekel, George Leifman, Genady Beryozkin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.08722)  
+
+**Abstract**: Foundation models have had a significant impact across various AI applications, enabling use cases that were previously impossible. Contrastive Visual Language Models (VLMs), in particular, have outperformed other techniques in many tasks. However, their prevalence in remote sensing (RS) is still limited, due to the scarcity of diverse remote-sensing visual-language datasets. In this work we introduce two novel image-caption datasets for training of remote sensing foundation models. The first dataset pairs aerial and satellite imagery with captions generated by Gemini using landmarks extracted from Google Maps. The second dataset utilizes public web images and their corresponding alt-text, filtered for the remote sensing domain, resulting in a diverse dataset with greater breadth in image styles and subject matter. These datasets are used to pre-train the MaMMUT~\citep{kuo2023mammutsimplearchitecturejoint} VLM architecture, resulting in state-of-the-art generalization performance in zero-shot cross-modal retrieval on well-known public benchmarks. Finally, we present our ongoing research to distill image-level knowledge gained in the VLM contrastive training procedure to enhance the model's localization ability. Specifically, we iteratively generate pseudo-labels for image regions based on the model's attention maps and use these labels for further training. To mitigate noisy attention maps and create robust segmentation masks, we introduce a novel attention-pooling mechanism called the Smooth-Attention-Operation. 
+
+**Abstract (ZH)**: 基于模型在各类AI应用中产生了重要影响，使得许多之前不可能实现的应用成为可能。特别是在遥感（RS）领域，对比视觉语言模型（VLMs）已经在许多任务中表现出色，但由于缺乏多样性的遥感视觉语言数据集，其应用依然受限。本文引入了两个新的图像配 caption 数据集，用于训练遥感基础模型。第一个数据集将空中和卫星图像与由 Gemini 生成的、使用 Google 地图中的地标信息生成的 captions 进行配对。第二个数据集则利用公共网页图像及其相应的 alt-text，并针对遥感领域进行了筛选，从而形成一个更具多样性的数据集，涵盖了更广泛的照片风格和主题。这些数据集用于预训练 MaMMUT 模型架构，在著名的公开基准上的零样本跨模态检索表现出了最先进的泛化性能。最后，本文介绍了我们正在进行的研究，旨在通过 VLM 对比训练过程中获得的图像级知识来增强模型的空间定位能力。具体来说，我们基于模型的注意力图迭代生成图像区域的伪标签，并利用这些标签进行进一步的训练。为了减少注意力图中的噪声并创建鲁棒的分割掩码，我们引入了一种新的注意力池化机制，称为平滑注意力操作。 
+
+---

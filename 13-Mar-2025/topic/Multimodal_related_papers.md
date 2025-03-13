@@ -1,0 +1,104 @@
+# MindGYM: Enhancing Vision-Language Models via Synthetic Self-Challenging Questions 
+
+**Title (ZH)**: MindGYM：通过合成自我挑战问题提升视觉语言模型 
+
+**Authors**: Zhe Xu, Daoyuan Chen, Zhenqing Ling, Yaliang Li, Ying Shen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.09499)  
+
+**Abstract**: Large vision-language models (VLMs) face challenges in achieving robust, transferable reasoning abilities due to reliance on labor-intensive manual instruction datasets or computationally expensive self-supervised methods. To address these issues, we introduce MindGYM, a framework that enhances VLMs through synthetic self-challenging questions, consisting of three stages: (1) Seed Single-Hop Question Synthesis, generating cognitive questions across textual (e.g., logical deduction) and multimodal contexts (e.g., diagram-based queries) spanning eight semantic areas like ethical analysis; (2) Challenging Multi-Hop Question Synthesis, combining seed questions via diverse principles like bridging, visual-textual alignment, to create multi-step problems demanding deeper reasoning; and (3) Thinking-Induced Curriculum Fine-Tuning, a structured pipeline that progressively trains the model from scaffolded reasoning to standalone inference. By leveraging the model's self-synthesis capability, MindGYM achieves high data efficiency (e.g., +16% gains on MathVision-Mini with only 400 samples), computational efficiency (reducing both training and inference costs), and robust generalization across tasks. Extensive evaluations on seven benchmarks demonstrate superior performance over strong baselines, with notable improvements (+15.77% win rates) in reasoning depth and breadth validated via GPT-based scoring. MindGYM underscores the viability of self-challenging for refining VLM capabilities while minimizing human intervention and resource demands. Code and data are released to advance multimodal reasoning research. 
+
+**Abstract (ZH)**: MindGYM：通过合成自挑战问题增强的视觉语言模型框架 
+
+---
+# Astrea: A MOE-based Visual Understanding Model with Progressive Alignment 
+
+**Title (ZH)**: Astrea：一种基于MOE的分阶对齐视觉理解模型 
+
+**Authors**: Xiaoda Yang, JunYu Lu, Hongshun Qiu, Sijing Li, Hao Li, Shengpeng Ji, Xudong Tang, Jiayang Xu, Jiaqi Duan, Ziyue Jiang, Cong Lin, Sihang Cai, Zejian Xie, Zhuoyang Song, Songxin Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.09445)  
+
+**Abstract**: Vision-Language Models (VLMs) based on Mixture-of-Experts (MoE) architectures have emerged as a pivotal paradigm in multimodal understanding, offering a powerful framework for integrating visual and linguistic information. However, the increasing complexity and diversity of tasks present significant challenges in coordinating load balancing across heterogeneous visual experts, where optimizing one specialist's performance often compromises others' capabilities. To address task heterogeneity and expert load imbalance, we propose Astrea, a novel multi-expert collaborative VLM architecture based on progressive pre-alignment. Astrea introduces three key innovations: 1) A heterogeneous expert coordination mechanism that integrates four specialized models (detection, segmentation, classification, captioning) into a comprehensive expert matrix covering essential visual comprehension elements; 2) A dynamic knowledge fusion strategy featuring progressive pre-alignment to harmonize experts within the VLM latent space through contrastive learning, complemented by probabilistically activated stochastic residual connections to preserve knowledge continuity; 3) An enhanced optimization framework utilizing momentum contrastive learning for long-range dependency modeling and adaptive weight allocators for real-time expert contribution calibration. Extensive evaluations across 12 benchmark tasks spanning VQA, image captioning, and cross-modal retrieval demonstrate Astrea's superiority over state-of-the-art models, achieving an average performance gain of +4.7\%. This study provides the first empirical demonstration that progressive pre-alignment strategies enable VLMs to overcome task heterogeneity limitations, establishing new methodological foundations for developing general-purpose multimodal agents. 
+
+**Abstract (ZH)**: 基于MoE架构的多模态理解Vision-Language模型Astrea：渐进预对齐的多专家协作范式 
+
+---
+# DAVE: Diagnostic benchmark for Audio Visual Evaluation 
+
+**Title (ZH)**: DAVE:  Audio Visual Evaluation诊断基准 
+
+**Authors**: Gorjan Radevski, Teodora Popordanoska, Matthew B. Blaschko, Tinne Tuytelaars  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.09321)  
+
+**Abstract**: Audio-visual understanding is a rapidly evolving field that seeks to integrate and interpret information from both auditory and visual modalities. Despite recent advances in multi-modal learning, existing benchmarks often suffer from strong visual bias -- where answers can be inferred from visual data alone -- and provide only aggregate scores that conflate multiple sources of error. This makes it difficult to determine whether models struggle with visual understanding, audio interpretation, or audio-visual alignment. In this work, we introduce DAVE (Diagnostic Audio Visual Evaluation), a novel benchmark dataset designed to systematically evaluate audio-visual models across controlled challenges. DAVE alleviates existing limitations by (i) ensuring both modalities are necessary to answer correctly and (ii) decoupling evaluation into atomic subcategories. Our detailed analysis of state-of-the-art models reveals specific failure modes and provides targeted insights for improvement. By offering this standardized diagnostic framework, we aim to facilitate more robust development of audio-visual models. The dataset is released: this https URL 
+
+**Abstract (ZH)**: 音视频理解是一个快速发展的领域，旨在整合和解释来自听觉和视觉两种模态的信息。尽管在多模态学习方面取得了近期进展，现有的基准测试往往存在强烈的视觉偏差——答案可以从视觉数据中单独推断出来——并且仅提供可能会混淆多种错误来源的综合评分。这使得很难判断模型是在视觉理解、音频解释还是音视频对齐方面遇到困难。在本文中，我们引入了DAVE（诊断音视频评估），这是一个新型基准数据集，旨在系统性地评估音视频模型在可控挑战中的表现。DAVE通过确保（i）两个模态都必要来正确回答问题以及（ii）将评估拆分到原子子类别中来克服现有局限性。我们对最先进的模型的详细分析揭示了特定的失败模式，并提供了改进的针对性见解。通过提供这种标准化的诊断框架，我们旨在促进音视频模型的更稳健开发。数据集已发布：[这个链接]。 
+
+---
+# Multi-Modal Foundation Models for Computational Pathology: A Survey 
+
+**Title (ZH)**: 多模态基础模型在计算病理学中的应用：一个综述 
+
+**Authors**: Dong Li, Guihong Wan, Xintao Wu, Xinyu Wu, Xiaohui Chen, Yi He, Christine G. Lian, Peter K. Sorger, Yevgeniy R. Semenov, Chen Zhao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.09091)  
+
+**Abstract**: Foundation models have emerged as a powerful paradigm in computational pathology (CPath), enabling scalable and generalizable analysis of histopathological images. While early developments centered on uni-modal models trained solely on visual data, recent advances have highlighted the promise of multi-modal foundation models that integrate heterogeneous data sources such as textual reports, structured domain knowledge, and molecular profiles. In this survey, we provide a comprehensive and up-to-date review of multi-modal foundation models in CPath, with a particular focus on models built upon hematoxylin and eosin (H&E) stained whole slide images (WSIs) and tile-level representations. We categorize 32 state-of-the-art multi-modal foundation models into three major paradigms: vision-language, vision-knowledge graph, and vision-gene expression. We further divide vision-language models into non-LLM-based and LLM-based approaches. Additionally, we analyze 28 available multi-modal datasets tailored for pathology, grouped into image-text pairs, instruction datasets, and image-other modality pairs. Our survey also presents a taxonomy of downstream tasks, highlights training and evaluation strategies, and identifies key challenges and future directions. We aim for this survey to serve as a valuable resource for researchers and practitioners working at the intersection of pathology and AI. 
+
+**Abstract (ZH)**: 多模态基础模型在计算病理学中的发展：基于苏木精和伊红染色全切片图像和小块表示的综述 
+
+---
+# Everything Can Be Described in Words: A Simple Unified Multi-Modal Framework with Semantic and Temporal Alignment 
+
+**Title (ZH)**: 一切都可以用语言描述：一个简单的统一多模态框架，具备语义和时间对齐功能 
+
+**Authors**: Xiaowei Bi, Zheyuan Xu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.09081)  
+
+**Abstract**: Long Video Question Answering (LVQA) is challenging due to the need for temporal reasoning and large-scale multimodal data processing. Existing methods struggle with retrieving cross-modal information from long videos, especially when relevant details are sparsely distributed. We introduce UMaT (Unified Multi-modal as Text), a retrieval-augmented generation (RAG) framework that efficiently processes extremely long videos while maintaining cross-modal coherence. UMaT converts visual and auditory data into a unified textual representation, ensuring semantic and temporal alignment. Short video clips are analyzed using a vision-language model, while automatic speech recognition (ASR) transcribes dialogue. These text-based representations are structured into temporally aligned segments, with adaptive filtering to remove redundancy and retain salient details. The processed data is embedded into a vector database, enabling precise retrieval of dispersed yet relevant content. Experiments on a benchmark LVQA dataset show that UMaT outperforms existing methods in multimodal integration, long-form video understanding, and sparse information retrieval. Its scalability and interpretability allow it to process videos over an hour long while maintaining semantic and temporal coherence. These findings underscore the importance of structured retrieval and multimodal synchronization for advancing LVQA and long-form AI systems. 
+
+**Abstract (ZH)**: 长视频问答（LVQA）由于需要进行时序推理和大规模多模态数据处理而具有挑战性。现有方法在从长视频中检索跨模态信息时遇到困难，尤其是在相关细节稀疏分布的情况下。我们介绍了UMaT（统一多模态作为文本）检索增强生成（RAG）框架，该框架能够高效处理极长视频同时保持跨模态一致性。UMaT将视觉和音频数据转换为统一的文本表示，确保语义和时序对齐。使用视觉语言模型分析短视频片段，同时利用自动语音识别（ASR）转录对话。这些基于文本的表示被结构化为时序对齐的片段，采用自适应过滤去除冗余信息并保留重要细节。处理后的数据被嵌入向量数据库中，从而能够精确检索分散但相关的内容。在基准LVQA数据集上的实验表明，UMaT在多模态集成、长视频理解以及稀疏信息检索方面优于现有方法。其可扩展性和可解释性使其能够处理超过一小时的视频，同时保持语义和时序一致。这些发现强调了结构化检索和多模态同步对于推进LVQA和长视频AI系统的重要性。 
+
+---
+# Oasis: One Image is All You Need for Multimodal Instruction Data Synthesis 
+
+**Title (ZH)**: Oasis: 一张图片足以实现多模态指令数据合成 
+
+**Authors**: Letian Zhang, Quan Cui, Bingchen Zhao, Cheng Yang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.08741)  
+
+**Abstract**: The success of multi-modal large language models (MLLMs) has been largely attributed to the large-scale training data. However, the training data of many MLLMs is unavailable due to privacy concerns. The expensive and labor-intensive process of collecting multi-modal data further exacerbates the problem. Is it possible to synthesize multi-modal training data automatically without compromising diversity and quality? In this paper, we propose a new method, Oasis, to synthesize high-quality multi-modal data with only images. Oasis breaks through traditional methods by prompting only images to the MLLMs, thus extending the data diversity by a large margin. Our method features a delicate quality control method which ensures the data quality. We collected over 500k data and conducted incremental experiments on LLaVA-NeXT. Extensive experiments demonstrate that our method can significantly improve the performance of MLLMs. The image-based synthesis also allows us to focus on the specific-domain ability of MLLMs. Code and data will be publicly available. 
+
+**Abstract (ZH)**: 多模态大型语言模型(MLLLMs)的成功主要归因于大规模训练数据。然而，由于隐私问题，许多MLLLMs的训练数据不可用。收集多模态数据的过程既昂贵又劳动密集，进一步加剧了这一问题。是否可以在不牺牲多样性和质量的前提下自动合成多模态训练数据？在本文中，我们提出了一种名为Oasis的新方法，仅使用图像即可合成高质量的多模态数据。Oasis突破了传统方法，仅通过将图像提示给MLLMs来扩展数据多样性。该方法具有精细的质量控制机制，确保数据质量。我们收集了超过50万条数据，并在LLaVA-NeXT上进行了逐步实验。广泛的实验结果表明，该方法可以显著提高MLLMs的性能。基于图像的合成还使我们能够专注于MLLMs的特定领域能力。代码和数据将公开发布。 
+
+---
+# SIMAC: A Semantic-Driven Integrated Multimodal Sensing And Communication Framework 
+
+**Title (ZH)**: SIMAC：一种语义驱动的多模态传感与通信集成框架 
+
+**Authors**: Yubo Peng, Luping Xiang, Kun Yang, Feibo Jiang, Kezhi Wang, Dapeng Oliver Wu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.08726)  
+
+**Abstract**: Traditional single-modality sensing faces limitations in accuracy and capability, and its decoupled implementation with communication systems increases latency in bandwidth-constrained environments. Additionally, single-task-oriented sensing systems fail to address users' diverse demands. To overcome these challenges, we propose a semantic-driven integrated multimodal sensing and communication (SIMAC) framework. This framework leverages a joint source-channel coding architecture to achieve simultaneous sensing decoding and transmission of sensing results. Specifically, SIMAC first introduces a multimodal semantic fusion (MSF) network, which employs two extractors to extract semantic information from radar signals and images, respectively. MSF then applies cross-attention mechanisms to fuse these unimodal features and generate multimodal semantic representations. Secondly, we present a large language model (LLM)-based semantic encoder (LSE), where relevant communication parameters and multimodal semantics are mapped into a unified latent space and input to the LLM, enabling channel-adaptive semantic encoding. Thirdly, a task-oriented sensing semantic decoder (SSD) is proposed, in which different decoded heads are designed according to the specific needs of tasks. Simultaneously, a multi-task learning strategy is introduced to train the SIMAC framework, achieving diverse sensing services. Finally, experimental simulations demonstrate that the proposed framework achieves diverse sensing services and higher accuracy. 
+
+**Abstract (ZH)**: 基于语义驱动的集成多模态传感与通信（SIMAC）框架 
+
+---
+# Versatile Multimodal Controls for Whole-Body Talking Human Animation 
+
+**Title (ZH)**: 全身对话人类动画的多功能多模态控制 
+
+**Authors**: Zheng Qin, Ruobing Zheng, Yabing Wang, Tianqi Li, Zixin Zhu, Minghui Yang, Ming Yang, Le Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.08714)  
+
+**Abstract**: Human animation from a single reference image shall be flexible to synthesize whole-body motion for either a headshot or whole-body portrait, where the motions are readily controlled by audio signal and text prompts. This is hard for most existing methods as they only support producing pre-specified head or half-body motion aligned with audio inputs. In this paper, we propose a versatile human animation method, i.e., VersaAnimator, which generates whole-body talking human from arbitrary portrait images, not only driven by audio signal but also flexibly controlled by text prompts. Specifically, we design a text-controlled, audio-driven motion generator that produces whole-body motion representations in 3D synchronized with audio inputs while following textual motion descriptions. To promote natural smooth motion, we propose a code-pose translation module to link VAE codebooks with 2D DWposes extracted from template videos. Moreover, we introduce a multi-modal video diffusion that generates photorealistic human animation from a reference image according to both audio inputs and whole-body motion representations. Extensive experiments show that VersaAnimator outperforms existing methods in visual quality, identity preservation, and audio-lip synchronization. 
+
+**Abstract (ZH)**: 单张参考图像的人体动画生成应该能够灵活合成头部特写或全身肖像的全身运动，且这些运动可以通过音频信号和文本提示方便地控制。大多数现有方法难以实现这一点，因为它们仅支持生成与音频输入对齐的预定义头部或半身运动。本文提出了一种通用的人体动画方法，即VersaAnimator，能够从任意肖像图像生成全身讲话的人体动画，不仅受音频信号驱动，还可通过文本提示灵活控制。具体而言，我们设计了一种受文本控制、由音频驱动的运动生成器，该生成器能够生成与音频输入同步的全身运动表示，并遵循文本运动描述以实现自然流畅的运动。为了促进自然平滑的运动，我们提出了一种代码-姿态转换模块，将VAE代码书与从模板视频中提取的2D DWposes链接起来。此外，我们引入了一种多模态视频扩散方法，可以根据参考图像、音频输入以及全身运动表示生成逼真人像动画。大量实验表明，VersaAnimator在视觉质量、身份保留和音频唇部同步方面优于现有方法。 
+
+---
