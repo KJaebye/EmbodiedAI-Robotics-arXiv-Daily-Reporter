@@ -1,0 +1,169 @@
+# Modality-Composable Diffusion Policy via Inference-Time Distribution-level Composition 
+
+**Title (ZH)**: 模态可组合扩散策略通过推理时分布级组合 
+
+**Authors**: Jiahang Cao, Qiang Zhang, Hanzhong Guo, Jiaxu Wang, Hao Cheng, Renjing Xu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.12466)  
+
+**Abstract**: Diffusion Policy (DP) has attracted significant attention as an effective method for policy representation due to its capacity to model multi-distribution dynamics. However, current DPs are often based on a single visual modality (e.g., RGB or point cloud), limiting their accuracy and generalization potential. Although training a generalized DP capable of handling heterogeneous multimodal data would enhance performance, it entails substantial computational and data-related costs. To address these challenges, we propose a novel policy composition method: by leveraging multiple pre-trained DPs based on individual visual modalities, we can combine their distributional scores to form a more expressive Modality-Composable Diffusion Policy (MCDP), without the need for additional training. Through extensive empirical experiments on the RoboTwin dataset, we demonstrate the potential of MCDP to improve both adaptability and performance. This exploration aims to provide valuable insights into the flexible composition of existing DPs, facilitating the development of generalizable cross-modality, cross-domain, and even cross-embodiment policies. Our code is open-sourced at this https URL. 
+
+**Abstract (ZH)**: 模态可组合扩散策略（MCDP）: 一种有效的策略表示方法 
+
+---
+# LIAM: Multimodal Transformer for Language Instructions, Images, Actions and Semantic Maps 
+
+**Title (ZH)**: LIAM：语言指令、图像、动作和语义地图的多模态变换器 
+
+**Authors**: Yihao Wang, Raphael Memmesheimer, Sven Behnke  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.12230)  
+
+**Abstract**: The availability of large language models and open-vocabulary object perception methods enables more flexibility for domestic service robots. The large variability of domestic tasks can be addressed without implementing each task individually by providing the robot with a task description along with appropriate environment information. In this work, we propose LIAM - an end-to-end model that predicts action transcripts based on language, image, action, and map inputs. Language and image inputs are encoded with a CLIP backbone, for which we designed two pre-training tasks to fine-tune its weights and pre-align the latent spaces. We evaluate our method on the ALFRED dataset, a simulator-generated benchmark for domestic tasks. Our results demonstrate the importance of pre-aligning embedding spaces from different modalities and the efficacy of incorporating semantic maps. 
+
+**Abstract (ZH)**: 大规模语言模型和开放式词汇物体感知方法的可用性使得家庭服务机器人更具灵活性。通过提供任务描述和合适的环境信息，可以解决家庭任务的高变异性而无需单独实现每个任务。在本工作中，我们提出了一种端到端模型LIAM，该模型基于语言、图像、动作和地图输入来预测动作转录。语言和图像输入通过CLIP骨干网络进行编码，我们为此设计了两个预训练任务来微调其权重并预对齐潜在空间。我们在ALFRED数据集上评估了我们的方法，这是一个由模拟器生成的家庭任务基准。我们的结果表明了来自不同模态的嵌入空间预对齐的重要性，并展示了融入语义地图的有效性。 
+
+---
+# MicroVQA: A Multimodal Reasoning Benchmark for Microscopy-Based Scientific Research 
+
+**Title (ZH)**: MicroVQA：基于显微镜的科学研究所用的多模态推理基准 
+
+**Authors**: James Burgess, Jeffrey J Nirschl, Laura Bravo-Sánchez, Alejandro Lozano, Sanket Rajan Gupte, Jesus G. Galaz-Montoya, Yuhui Zhang, Yuchang Su, Disha Bhowmik, Zachary Coman, Sarina M. Hasan, Alexandra Johannesson, William D. Leineweber, Malvika G Nair, Ridhi Yarlagadda, Connor Zuraski, Wah Chiu, Sarah Cohen, Jan N. Hansen, Manuel D Leonetti, Chad Liu, Emma Lundberg, Serena Yeung-Levy  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.13399)  
+
+**Abstract**: Scientific research demands sophisticated reasoning over multimodal data, a challenge especially prevalent in biology. Despite recent advances in multimodal large language models (MLLMs) for AI-assisted research, existing multimodal reasoning benchmarks only target up to college-level difficulty, while research-level benchmarks emphasize lower-level perception, falling short of the complex multimodal reasoning needed for scientific discovery. To bridge this gap, we introduce MicroVQA, a visual-question answering (VQA) benchmark designed to assess three reasoning capabilities vital in research workflows: expert image understanding, hypothesis generation, and experiment proposal. MicroVQA consists of 1,042 multiple-choice questions (MCQs) curated by biology experts across diverse microscopy modalities, ensuring VQA samples represent real scientific practice. In constructing the benchmark, we find that standard MCQ generation methods induce language shortcuts, motivating a new two-stage pipeline: an optimized LLM prompt structures question-answer pairs into MCQs; then, an agent-based `RefineBot' updates them to remove shortcuts. Benchmarking on state-of-the-art MLLMs reveal a peak performance of 53\%; models with smaller LLMs only slightly underperform top models, suggesting that language-based reasoning is less challenging than multimodal reasoning; and tuning with scientific articles enhances performance. Expert analysis of chain-of-thought responses shows that perception errors are the most frequent, followed by knowledge errors and then overgeneralization errors. These insights highlight the challenges in multimodal scientific reasoning, showing MicroVQA is a valuable resource advancing AI-driven biomedical research. MicroVQA is available at this https URL, and project page at this https URL. 
+
+**Abstract (ZH)**: 科学研究需要对多模态数据进行复杂的推理，这一挑战在生物学中尤为普遍。尽管近年来多模态大型语言模型（MLLMs）在AI辅助研究方面取得了进展，但现有的多模态推理基准仅针对大学水平的难度，而研究级别的基准则侧重于较低层次的感知，未能满足科学发现所需的复杂多模态推理。为弥合这一差距，我们引入了MicroVQA，这是一个视觉-问答（VQA）基准，旨在评估科研工作流程中至关重要的三种推理能力：专家级图像理解、假设生成和实验提案。MicroVQA包含1,042个由生物学专家根据不同显微镜模态整理的多选题（MCQs），确保VQA样本代表真实的科学研究实践。在构建该基准的过程中，我们发现标准的多选题生成方法导致了语言捷径，因此提出了一种新的两阶段管道：优化的LLM提示将问题-答案对结构化为MCQs；随后，基于代理的`RefineBot'更新这些问题，以去除语言捷径。在最先进的MLLM上的基准测试显示最高性能为53%；使用较小的LLM的模型仅略微低于最佳模型，表明基于语言的推理比多模态推理更容易；并且通过使用科学文献进行微调可以提升性能。专家分析链式推理响应表明，感知错误是最常见的错误，其次是知识错误，然后是泛化错误。这些见解突显了多模态科学推理的挑战，显示MicroVQA是促进AI驱动的生物医学研究的重要资源。MicroVQA可在以下链接获取：this https URL，项目页面可在以下链接获取：this https URL。 
+
+---
+# Mitigating Visual Forgetting via Take-along Visual Conditioning for Multi-modal Long CoT Reasoning 
+
+**Title (ZH)**: 通过随带视觉条件化减轻视觉遗忘以进行多模态长链 reasoning 
+
+**Authors**: Hai-Long Sun, Zhun Sun, Houwen Peng, Han-Jia Ye  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.13360)  
+
+**Abstract**: Recent advancements in Large Language Models (LLMs) have demonstrated enhanced reasoning capabilities, evolving from Chain-of-Thought (CoT) prompting to advanced, product-oriented solutions like OpenAI o1. During our re-implementation of this model, we noticed that in multimodal tasks requiring visual input (e.g., geometry problems), Multimodal LLMs (MLLMs) struggle to maintain focus on the visual information, in other words, MLLMs suffer from a gradual decline in attention to visual information as reasoning progresses, causing text-over-relied outputs. To investigate this, we ablate image inputs during long-chain reasoning. Concretely, we truncate the reasoning process midway, then re-complete the reasoning process with the input image removed. We observe only a ~2% accuracy drop on MathVista's test-hard subset, revealing the model's textual outputs dominate the following reasoning process. Motivated by this, we propose Take-along Visual Conditioning (TVC), a strategy that shifts image input to critical reasoning stages and compresses redundant visual tokens via dynamic pruning. This methodology helps the model retain attention to the visual components throughout the reasoning. Our approach achieves state-of-the-art performance on average across five mathematical reasoning benchmarks (+3.4% vs previous sota), demonstrating the effectiveness of TVC in enhancing multimodal reasoning systems. 
+
+**Abstract (ZH)**: Recent advancements in大型语言模型（LLMs）展示了增强的推理能力，从链式思考（CoT）提示发展到如OpenAI o1等高级、产品导向的解决方案。在我们对该模型的重实现过程中，我们注意到，在需要视觉输入的多模态任务（例如，几何问题）中，多模态大语言模型（MLLMs）难以保持对视觉信息的关注，在推理过程中逐渐对视觉信息的关注减弱，导致文本过度依赖输出。为了探究这一现象，我们在长链推理过程中消融图像输入。具体来说，我们在推理过程的中途截断推理，然后移除输入图像重新完成推理过程。我们观察到，在MathVista的测试困难子集上只有约2%的准确性下降，表明模型的文本输出主导了后续的推理过程。基于此，我们提出了一种名为携带视觉调节（TVC）的策略，该策略将图像输入转移到关键推理阶段，并通过动态剪枝压缩冗余的视觉标记。该方法有助于模型在整个推理过程中保持对视觉成分的关注。我们的方法在五个数学推理基准上的平均性能达到了最先进的水平（相对于之前的最佳性能提高了3.4%），证实了TVC在增强多模态推理系统方面的有效性。 
+
+---
+# Concept-as-Tree: Synthetic Data is All You Need for VLM Personalization 
+
+**Title (ZH)**: 概念树：合成数据即所有你所需要的VLM个性化方法 
+
+**Authors**: Ruichuan An, Kai Zeng, Ming Lu, Sihan Yang, Renrui Zhang, Huitong Ji, Qizhe Zhang, Yulin Luo, Hao Liang, Wentao Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.12999)  
+
+**Abstract**: Vision-Language Models (VLMs) have demonstrated exceptional performance in various multi-modal tasks. Recently, there has been an increasing interest in improving the personalization capabilities of VLMs. To better integrate user-provided concepts into VLMs, many methods use positive and negative samples to fine-tune these models. However, the scarcity of user-provided positive samples and the low quality of retrieved negative samples pose challenges for fine-tuning. To reveal the relationship between sample and model performance, we systematically investigate the impact of positive and negative samples (easy and hard) and their diversity on VLM personalization tasks. Based on the detailed analysis, we introduce Concept-as-Tree (CaT), which represents a concept as a tree structure, thereby enabling the data generation of positive and negative samples with varying difficulty and diversity for VLM personalization. With a well-designed data filtering strategy, our CaT framework can ensure the quality of generated data, constituting a powerful pipeline. We perform thorough experiments with various VLM personalization baselines to assess the effectiveness of the pipeline, alleviating the lack of positive samples and the low quality of negative samples. Our results demonstrate that CaT equipped with the proposed data filter significantly enhances the personalization capabilities of VLMs across the MyVLM, Yo'LLaVA, and MC-LLaVA datasets. To our knowledge, this work is the first controllable synthetic data pipeline for VLM personalization. The code is released at \href{this https URL}{this https URL}. 
+
+**Abstract (ZH)**: Vision-Language模型（VLMs）在多种跨模态任务中展现了卓越的性能。近年来，人们越来越关注提升VLMs的个性化能力。为了更好地将用户提供的概念整合到VLMs中，许多方法使用正样本和负样本对这些模型进行微调。然而，正样本的稀缺性和检索到的负样本质量低下为微调带来了挑战。为了揭示样本与模型性能之间的关系，我们系统地研究了正样本（易和难）和负样本及其多样性的影响对VLM个性化任务的影响。基于详细的分析，我们引入了Concept-as-Tree（CaT），它将概念表示为树结构，从而能够生成具有不同难度和多样性的正负样本数据，用于VLM个性化。通过设计合理的数据过滤策略，我们的CaT框架可以确保生成数据的质量，构成一个强大的工作流程。我们使用各种VLM个性化基线进行了彻底的实验，评估该流程的有效性，缓解正样本稀缺和负样本质量低的问题。我们的结果显示，在MyVLM、Yo'LLaVA和MC-LLaVA数据集上，配备所提数据过滤器的CaT显著增强了VLMs的个性化能力。据我们所知，这是第一个可控的合成数据流程用于VLM个性化。代码已发布在\href{this https URL}{this https URL}。 
+
+---
+# MMLNB: Multi-Modal Learning for Neuroblastoma Subtyping Classification Assisted with Textual Description Generation 
+
+**Title (ZH)**: MMLNB：多模态学习辅助文本描述生成的神经母细胞瘤亚型分类 
+
+**Authors**: Huangwei Chen, Zhu Zhu, Zhenyu Yan, Yifei Chen, Mingyang Ding, Chenlei Li, Feiwei Qin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.12927)  
+
+**Abstract**: Neuroblastoma (NB), a leading cause of childhood cancer mortality, exhibits significant histopathological variability, necessitating precise subtyping for accurate prognosis and treatment. Traditional diagnostic methods rely on subjective evaluations that are time-consuming and inconsistent. To address these challenges, we introduce MMLNB, a multi-modal learning (MML) model that integrates pathological images with generated textual descriptions to improve classification accuracy and interpretability. The approach follows a two-stage process. First, we fine-tune a Vision-Language Model (VLM) to enhance pathology-aware text generation. Second, the fine-tuned VLM generates textual descriptions, using a dual-branch architecture to independently extract visual and textual features. These features are fused via Progressive Robust Multi-Modal Fusion (PRMF) Block for stable training. Experimental results show that the MMLNB model is more accurate than the single modal model. Ablation studies demonstrate the importance of multi-modal fusion, fine-tuning, and the PRMF mechanism. This research creates a scalable AI-driven framework for digital pathology, enhancing reliability and interpretability in NB subtyping classification. Our source code is available at this https URL. 
+
+**Abstract (ZH)**: 神经母细胞瘤（NB），是儿童癌症死亡的主要原因，表现出显著的病理学变异，需要精确的亚型划分以获得准确的预后和治疗。传统的诊断方法依赖于主观评估，耗时且不一致。为了解决这些挑战，我们引入了MMLNB模型，这是一种多模态学习（MML）模型，将病理图像与生成的文本描述结合起来，以提高分类准确性和可解释性。该方法采用两阶段过程。首先，我们微调视觉-语言模型（VLM）以增强病理意识的文本生成。其次，微调后的VLM生成文本描述，采用双分支架构独立提取视觉和文本特征。这些特征通过渐进鲁棒多模态融合（PRMF）模块进行融合，以实现稳定训练。实验结果表明，MMLNB模型比单模态模型更准确。消融研究证明了多模态融合、微调和PRMF机制的重要性。这项研究构建了一个可扩展的基于AI的数字病理学框架，增强了NB亚型分类的可靠性和可解释性。我们的源代码可在以下网址获取：this https URL。 
+
+---
+# Towards Scalable Foundation Model for Multi-modal and Hyperspectral Geospatial Data 
+
+**Title (ZH)**: 面向多模态和超光谱地理空间数据的可扩展基础模型 
+
+**Authors**: Haozhe Si, Yuxuan Wan, Minh Do, Deepak Vasisht, Han Zhao, Hendrik F. Hamann  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.12843)  
+
+**Abstract**: Geospatial raster (imagery) data, such as that collected by satellite-based imaging systems at different times and spectral bands, hold immense potential for enabling a wide range of high-impact applications. This potential stems from the rich information that is spatially and temporally contextualized across multiple channels and sensing modalities. Recent work has adapted existing self-supervised learning approaches for such geospatial data. However, they fall short of scalable model architectures, leading to inflexibility and computational inefficiencies when faced with an increasing number of channels and modalities. To address these limitations, we introduce Low-rank Efficient Spatial-Spectral Vision Transformer (LESS ViT) with three key innovations: i) the LESS Attention Block that approximates high-dimensional spatial-spectral attention through Kronecker's product of the low-dimensional spatial and spectral attention components; ii) the Continuous Positional-Channel Embedding Layer that preserves both spatial and spectral continuity and physical characteristics of each patch; and iii) the Perception Field Mask that exploits local spatial dependencies by constraining attention to neighboring patches. To evaluate the proposed innovations, we construct a benchmark, GFM-Bench, which serves as a comprehensive benchmark for such geospatial raster data. We pretrain LESS ViT using a Hyperspectral Masked Autoencoder framework with integrated positional and channel masking strategies. Experimental results demonstrate that our proposed method surpasses current state-of-the-art multi-modal geospatial foundation models, achieving superior performance with less computation and fewer parameters. The flexibility and extensibility of our framework make it a promising direction for future geospatial data analysis tasks that involve a wide range of modalities and channels. 
+
+**Abstract (ZH)**: 基于空间-光谱低秩高效的视变换器（LESS ViT）：面向多通道多模态地学栅格数据 
+
+---
+# From Head to Tail: Towards Balanced Representation in Large Vision-Language Models through Adaptive Data Calibration 
+
+**Title (ZH)**: 从头到尾：通过自适应数据校准实现大型视觉-语言模型的平衡表示 
+
+**Authors**: Mingyang Song, Xiaoye Qu, Jiawei Zhou, Yu Cheng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.12821)  
+
+**Abstract**: Large Vision-Language Models (LVLMs) have achieved significant progress in combining visual comprehension with language generation. Despite this success, the training data of LVLMs still suffers from Long-Tail (LT) problems, where the data distribution is highly imbalanced. Previous works have mainly focused on traditional VLM architectures, i.e., CLIP or ViT, and specific tasks such as recognition and classification. Nevertheless, the exploration of LVLM (e.g. LLaVA) and more general tasks (e.g. Visual Question Answering and Visual Reasoning) remains under-explored. In this paper, we first conduct an in-depth analysis of the LT issues in LVLMs and identify two core causes: the overrepresentation of head concepts and the underrepresentation of tail concepts. Based on the above observation, we propose an $\textbf{A}$daptive $\textbf{D}$ata $\textbf{R}$efinement Framework ($\textbf{ADR}$), which consists of two stages: $\textbf{D}$ata $\textbf{R}$ebalancing ($\textbf{DR}$) and $\textbf{D}$ata $\textbf{S}$ynthesis ($\textbf{DS}$). In the DR stage, we adaptively rebalance the redundant data based on entity distributions, while in the DS stage, we leverage Denoising Diffusion Probabilistic Models (DDPMs) and scarce images to supplement underrepresented portions. Through comprehensive evaluations across eleven benchmarks, our proposed ADR effectively mitigates the long-tail problem in the training data, improving the average performance of LLaVA 1.5 relatively by 4.36%, without increasing the training data volume. 
+
+**Abstract (ZH)**: Large 视觉-语言 模型中的长尾问题及自适应数据精炼框架（ADR） 
+
+---
+# MAVEN: Multi-modal Attention for Valence-Arousal Emotion Network 
+
+**Title (ZH)**: MAVEN: 多模态注意力情感网络 
+
+**Authors**: Vrushank Ahire, Kunal Shah, Mudasir Nazir Khan, Nikhil Pakhale, Lownish Rai Sookha, M. A. Ganaie, Abhinav Dhall  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.12623)  
+
+**Abstract**: This paper introduces MAVEN (Multi-modal Attention for Valence-Arousal Emotion Network), a novel architecture for dynamic emotion recognition through dimensional modeling of affect. The model uniquely integrates visual, audio, and textual modalities via a bi-directional cross-modal attention mechanism with six distinct attention pathways, enabling comprehensive interactions between all modality pairs. Our proposed approach employs modality-specific encoders to extract rich feature representations from synchronized video frames, audio segments, and transcripts. The architecture's novelty lies in its cross-modal enhancement strategy, where each modality representation is refined through weighted attention from other modalities, followed by self-attention refinement through modality-specific encoders. Rather than directly predicting valence-arousal values, MAVEN predicts emotions in a polar coordinate form, aligning with psychological models of the emotion circumplex. Experimental evaluation on the Aff-Wild2 dataset demonstrates the effectiveness of our approach, with performance measured using Concordance Correlation Coefficient (CCC). The multi-stage architecture demonstrates superior ability to capture the complex, nuanced nature of emotional expressions in conversational videos, advancing the state-of-the-art (SOTA) in continuous emotion recognition in-the-wild. Code can be found at: this https URL. 
+
+**Abstract (ZH)**: MAVEN（多模态注意力情感网络）：通过维度建模的情感动态识别新架构 
+
+---
+# GeoRSMLLM: A Multimodal Large Language Model for Vision-Language Tasks in Geoscience and Remote Sensing 
+
+**Title (ZH)**: GeoRSMLLM：地球科学与遥感领域的多模态大型语言模型 
+
+**Authors**: Zilun Zhang, Haozhan Shen, Tiancheng Zhao, Bin Chen, Zian Guan, Yuhao Wang, Xu Jia, Yuxiang Cai, Yongheng Shang, Jianwei Yin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.12490)  
+
+**Abstract**: The application of Vision-Language Models (VLMs) in remote sensing (RS) has demonstrated significant potential in traditional tasks such as scene classification, object detection, and image captioning. However, current models, which excel in Referring Expression Comprehension (REC), struggle with tasks involving complex instructions (e.g., exists multiple conditions) or pixel-level operations like segmentation and change detection. In this white paper, we provide a comprehensive hierarchical summary of vision-language tasks in RS, categorized by the varying levels of cognitive capability required. We introduce the Remote Sensing Vision-Language Task Set (RSVLTS), which includes Open-Vocabulary Tasks (OVT), Referring Expression Tasks (RET), and Described Object Tasks (DOT) with increased difficulty, and Visual Question Answering (VQA) aloneside. Moreover, we propose a novel unified data representation using a set-of-points approach for RSVLTS, along with a condition parser and a self-augmentation strategy based on cyclic referring. These features are integrated into the GeoRSMLLM model, and this enhanced model is designed to handle a broad range of tasks of RSVLTS, paving the way for a more generalized solution for vision-language tasks in geoscience and remote sensing. 
+
+**Abstract (ZH)**: 视觉-语言模型（VLMs）在遥感（RS）中的应用在传统任务如场景分类、物体检测和图像描述中展现了显著的潜力。然而，当前在引用表达理解（REC）方面表现优异的模型，在涉及复杂指令（例如，多个条件）或像素级操作（如分割和变化检测）的任务中表现不佳。在本白皮书中，我们提供了按认知能力水平分类的遥感视觉-语言任务的综合分层总结。我们介绍了一套遥感视觉-语言任务集（RSVLTS），包括开放式词汇任务（OVT）、引用表达任务（RET）、描述对象任务（DOT）以及逐步增加难度的视觉问答（VQA）。此外，我们提出了一种新颖的统一数据表示方法，采用点集方法，结合条件解析器和基于循环引用的自我增强策略，这些特征集成到了GeoRSMLLM模型中。该增强模型旨在处理RSVLTS的广泛任务，为地球科学和遥感中的视觉-语言任务提供更通用的解决方案。 
+
+---
+# BREEN: Bridge Data-Efficient Encoder-Free Multimodal Learning with Learnable Queries 
+
+**Title (ZH)**: BREEN: 桥梁数据高效无编码器多模态学习可学习查询 
+
+**Authors**: Tianle Li, Yongming Rao, Winston Hu, Yu Cheng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.12446)  
+
+**Abstract**: Encoder-free multimodal large language models(MLLMs) eliminate the need for a well-trained vision encoder by directly processing image tokens before the language model. While this approach reduces computational overhead and model complexity, it often requires large amounts of training data to effectively capture the visual knowledge typically encoded by vision models like CLIP. The absence of a vision encoder implies that the model is likely to rely on substantial data to learn the necessary visual-semantic alignments. In this work, we present BREEN, a data-efficient encoder-free multimodal architecture that mitigates this issue. BREEN leverages a learnable query and image experts to achieve comparable performance with significantly less training data. The learnable query, positioned between image and text tokens, is supervised by the output of a pretrained CLIP model to distill visual knowledge, bridging the gap between visual and textual modalities. Additionally, the image expert processes image tokens and learnable queries independently, improving efficiency and reducing interference with the LLM's textual capabilities. BREEN achieves comparable performance to prior encoder-free state-of-the-art models like Mono-InternVL, using only 13 million text-image pairs in training about one percent of the data required by existing methods. Our work highlights a promising direction for data-efficient encoder-free multimodal learning, offering an alternative to traditional encoder-based approaches. 
+
+**Abstract (ZH)**: Encoder-free 多模态大语言模型（MLLMs） 
+
+---
+# DiffGAP: A Lightweight Diffusion Module in Contrastive Space for Bridging Cross-Model Gap 
+
+**Title (ZH)**: DiffGAP: 对比空间中的轻量级扩散模块，用于bridging跨模型差距 
+
+**Authors**: Shentong Mo, Zehua Chen, Fan Bao, Jun Zhu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.12131)  
+
+**Abstract**: Recent works in cross-modal understanding and generation, notably through models like CLAP (Contrastive Language-Audio Pretraining) and CAVP (Contrastive Audio-Visual Pretraining), have significantly enhanced the alignment of text, video, and audio embeddings via a single contrastive loss. However, these methods often overlook the bidirectional interactions and inherent noises present in each modality, which can crucially impact the quality and efficacy of cross-modal integration. To address this limitation, we introduce DiffGAP, a novel approach incorporating a lightweight generative module within the contrastive space. Specifically, our DiffGAP employs a bidirectional diffusion process tailored to bridge the cross-modal gap more effectively. This involves a denoising process on text and video embeddings conditioned on audio embeddings and vice versa, thus facilitating a more nuanced and robust cross-modal interaction. Our experimental results on VGGSound and AudioCaps datasets demonstrate that DiffGAP significantly improves performance in video/text-audio generation and retrieval tasks, confirming its effectiveness in enhancing cross-modal understanding and generation capabilities. 
+
+**Abstract (ZH)**: Recent Works in Cross-Modal Understanding and Generation Through Models Like CLAP and CAVP Have Significantly Enhanced the Alignment of Text, Video, and Audio Embeddings via a Single Contrastive Loss, but Often Overlook Bidirectional Interactions and Inherent Noises in Each Modality. To Address This Limitation, We Introduce DiffGAP, a Novel Approach Incorporating a Lightweight Generative Module Within the Contrastive Space. 
+
+---
+# MELON: Multimodal Mixture-of-Experts with Spectral-Temporal Fusion for Long-Term Mobility Estimation in Critical Care 
+
+**Title (ZH)**: MELON：多模态专家混合与谱时融合在重症监护中的长期移动性估计 
+
+**Authors**: Jiaqing Zhang, Miguel Contreras, Jessica Sena, Andrea Davidson, Yuanfang Ren, Ziyuan Guan, Tezcan Ozrazgat-Baslanti, Tyler J. Loftus, Subhash Nerella, Azra Bihorac, Parisa Rashidi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.11695)  
+
+**Abstract**: Patient mobility monitoring in intensive care is critical for ensuring timely interventions and improving clinical outcomes. While accelerometry-based sensor data are widely adopted in training artificial intelligence models to estimate patient mobility, existing approaches face two key limitations highlighted in clinical practice: (1) modeling the long-term accelerometer data is challenging due to the high dimensionality, variability, and noise, and (2) the absence of efficient and robust methods for long-term mobility assessment. To overcome these challenges, we introduce MELON, a novel multimodal framework designed to predict 12-hour mobility status in the critical care setting. MELON leverages the power of a dual-branch network architecture, combining the strengths of spectrogram-based visual representations and sequential accelerometer statistical features. MELON effectively captures global and fine-grained mobility patterns by integrating a pre-trained image encoder for rich frequency-domain feature extraction and a Mixture-of-Experts encoder for sequence modeling. We trained and evaluated the MELON model on the multimodal dataset of 126 patients recruited from nine Intensive Care Units at the University of Florida Health Shands Hospital main campus in Gainesville, Florida. Experiments showed that MELON outperforms conventional approaches for 12-hour mobility status estimation with an overall area under the receiver operating characteristic curve (AUROC) of 0.82 (95\%, confidence interval 0.78-0.86). Notably, our experiments also revealed that accelerometer data collected from the wrist provides robust predictive performance compared with data from the ankle, suggesting a single-sensor solution that can reduce patient burden and lower deployment costs... 
+
+**Abstract (ZH)**: 重症监护中患者移动性的监测对于确保及时干预和改善临床结果至关重要。虽然加速度计基传感器数据广泛应用于训练人工智能模型以估计患者移动性，但现有方法在临床实践中面临两大关键限制：(1) 对长时间加速度计数据进行建模具有挑战性，因为这些数据具有高维度、变异性及噪声；(2) 缺乏有效的长期移动性评估方法。为克服这些挑战，我们引入了MELON，这是一种新颖的多模态框架，用于预测重症监护环境下的12小时移动状态。MELON利用双分支网络架构的力量，结合基于频谱图的视觉表示和序列加速度计统计特征的优势。MELON通过结合预训练的图像编码器进行丰富的频域特征提取和Mixture-of-Experts编码器进行序列建模，有效捕捉全局和细粒度的移动模式。我们在美国佛罗里达大学健康桑兹医院盖恩斯维尔主校区重症监护病房招募的126名患者组成的多模态数据集上训练和评估了MELON模型。实验结果显示，MELON在12小时移动状态估计中优于传统方法，整体受试者操作特征曲线下的面积（AUROC）为0.82（95%置信区间0.78-0.86）。值得注意的是，我们的实验还表明，来自手腕的加速度计数据提供了稳健的预测性能，相比之下，来自脚踝的数据性能较弱，这表明可以采用单传感器解决方案来减轻患者负担并降低部署成本…… 
+
+---

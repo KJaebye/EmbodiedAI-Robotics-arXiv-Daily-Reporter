@@ -1,0 +1,312 @@
+# FLEX: A Framework for Learning Robot-Agnostic Force-based Skills Involving Sustained Contact Object Manipulation 
+
+**Title (ZH)**: FLEX：一种基于力的物体接触操纵的机器人无关技能学习框架 
+
+**Authors**: Shijie Fang, Wenchang Gao, Shivam Goel, Christopher Thierauf, Matthias Scheutz, Jivko Sinapov  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.13418)  
+
+**Abstract**: Learning to manipulate objects efficiently, particularly those involving sustained contact (e.g., pushing, sliding) and articulated parts (e.g., drawers, doors), presents significant challenges. Traditional methods, such as robot-centric reinforcement learning (RL), imitation learning, and hybrid techniques, require massive training and often struggle to generalize across different objects and robot platforms. We propose a novel framework for learning object-centric manipulation policies in force space, decoupling the robot from the object. By directly applying forces to selected regions of the object, our method simplifies the action space, reduces unnecessary exploration, and decreases simulation overhead. This approach, trained in simulation on a small set of representative objects, captures object dynamics -- such as joint configurations -- allowing policies to generalize effectively to new, unseen objects. Decoupling these policies from robot-specific dynamics enables direct transfer to different robotic platforms (e.g., Kinova, Panda, UR5) without retraining. Our evaluations demonstrate that the method significantly outperforms baselines, achieving over an order of magnitude improvement in training efficiency compared to other state-of-the-art methods. Additionally, operating in force space enhances policy transferability across diverse robot platforms and object types. We further showcase the applicability of our method in a real-world robotic setting. For supplementary materials and videos, please visit: this https URL 
+
+**Abstract (ZH)**: 学习高效操作物体，特别是涉及持续接触（如推、滑动）和可活动部件（如抽屉、门）的操作，面临着显著挑战。传统方法，如以机器人为中心的强化学习（RL）、模仿学习和混合技术，需要大量的训练，并且往往难以在不同的物体和机器人平台之间泛化。我们提出了一种新的框架，用于在力空间中学习以物体为中心的操纵策略，将机器人从物体中解耦。通过直接对物体的选定区域施加力，我们的方法简化了动作空间，减少了不必要的探索，并降低了仿真开销。该方法在一小组代表性物体的仿真中训练，捕捉到物体动力学（如关节配置），使得策略能够有效泛化到新的、未见过的物体。将这些策略从特定机器人动力学中解耦，使得可以直接转移到不同的机器人平台（如Kinova、Panda、UR5）而无需重新训练。我们的评估表明，该方法显著优于基线方法，相比其他最先进的方法，在训练效率上提高了十倍以上。此外，在力空间操作提高了策略在多种机器人平台和物体类型之间的转移能力。我们进一步展示了该方法在实际机器人环境中的应用。更多信息和视频，请访问: this https URL 
+
+---
+# Digital Beamforming Enhanced Radar Odometry 
+
+**Title (ZH)**: 数字波束形成增强雷达里程计 
+
+**Authors**: Jingqi Jiang, Shida Xu, Kaicheng Zhang, Jiyuan Wei, Jingyang Wang, Sen Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.13252)  
+
+**Abstract**: Radar has become an essential sensor for autonomous navigation, especially in challenging environments where camera and LiDAR sensors fail. 4D single-chip millimeter-wave radar systems, in particular, have drawn increasing attention thanks to their ability to provide spatial and Doppler information with low hardware cost and power consumption. However, most single-chip radar systems using traditional signal processing, such as Fast Fourier Transform, suffer from limited spatial resolution in radar detection, significantly limiting the performance of radar-based odometry and Simultaneous Localization and Mapping (SLAM) systems. In this paper, we develop a novel radar signal processing pipeline that integrates spatial domain beamforming techniques, and extend it to 3D Direction of Arrival estimation. Experiments using public datasets are conducted to evaluate and compare the performance of our proposed signal processing pipeline against traditional methodologies. These tests specifically focus on assessing structural precision across diverse scenes and measuring odometry accuracy in different radar odometry systems. This research demonstrates the feasibility of achieving more accurate radar odometry by simply replacing the standard FFT-based processing with the proposed pipeline. The codes are available at GitHub*. 
+
+**Abstract (ZH)**: 雷达已成为自主导航不可或缺的传感器，尤其是在摄像机和LiDAR传感器失效的挑战性环境中。特别是，4D单芯片毫米波雷达系统因其实现低硬件成本和能耗下提供空间和多普勒信息的能力而日益受到关注。然而，大多数使用传统信号处理方法（如快速傅里叶变换）的单芯片雷达系统在雷达检测中受到有限的空间分辨率限制，显著限制了基于雷达的里程计和同步定位与建图（SLAM）系统的性能。本文开发了一种新颖的雷达信号处理管道，结合了空间域波束形成技术，并将其扩展到3D到达方向估计。利用公开数据集进行实验以评估和比较我们提出的信号处理管道与传统方法的性能。这些测试特别关注在多种场景下结构精度的评估和在不同雷达里程计系统中测量里程计精度。研究表明，仅通过将标准FFT处理替换为提出的管道即可实现更精确的雷达里程计。相关代码可在GitHub*上获取。 
+
+---
+# Dense Policy: Bidirectional Autoregressive Learning of Actions 
+
+**Title (ZH)**: 密集策略：双向自回归动作学习 
+
+**Authors**: Yue Su, Xinyu Zhan, Hongjie Fang, Han Xue, Hao-Shu Fang, Yong-Lu Li, Cewu Lu, Lixin Yang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.13217)  
+
+**Abstract**: Mainstream visuomotor policies predominantly rely on generative models for holistic action prediction, while current autoregressive policies, predicting the next token or chunk, have shown suboptimal results. This motivates a search for more effective learning methods to unleash the potential of autoregressive policies for robotic manipulation. This paper introduces a bidirectionally expanded learning approach, termed Dense Policy, to establish a new paradigm for autoregressive policies in action prediction. It employs a lightweight encoder-only architecture to iteratively unfold the action sequence from an initial single frame into the target sequence in a coarse-to-fine manner with logarithmic-time inference. Extensive experiments validate that our dense policy has superior autoregressive learning capabilities and can surpass existing holistic generative policies. Our policy, example data, and training code will be publicly available upon publication. Project page: https: //selenthis http URL. 
+
+**Abstract (ZH)**: 主流的视运动策略主要依赖生成模型进行整体动作预测，而目前的自回归策略预测下一个标记或片段的效果欠佳。这促使我们寻找更有效的学习方法，以充分发挥自回归策略在机器人操作中的潜力。本文提出了一种双向扩展的学习方法，称为密集策略，以建立自回归策略在动作预测中的新范式。该方法采用轻量级的编码器-only架构，以自上而下的方式从初始单帧逐步细化展开动作序列，在对数时间内实现推理。大量实验验证了我们提出的密集策略在自回归学习能力上优于现有的整体生成策略。我们的策略、示例数据和训练代码将在发表后公开。项目页面: https://selenthis http URL。 
+
+---
+# Robot Skin with Touch and Bend Sensing using Electrical Impedance Tomography 
+
+**Title (ZH)**: 基于电气阻抗 tomography 的触觉与弯曲传感机器人皮肤 
+
+**Authors**: Haofeng Chen, Bin Li, Bedrich Himmel, Xiaojie Wang, Matej Hoffmann  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.13048)  
+
+**Abstract**: Flexible electronic skins that simultaneously sense touch and bend are desired in several application areas, such as to cover articulated robot structures. This paper introduces a flexible tactile sensor based on Electrical Impedance Tomography (EIT), capable of simultaneously detecting and measuring contact forces and flexion of the sensor. The sensor integrates a magnetic hydrogel composite and utilizes EIT to reconstruct internal conductivity distributions. Real-time estimation is achieved through the one-step Gauss-Newton method, which dynamically updates reference voltages to accommodate sensor deformation. A convolutional neural network is employed to classify interactions, distinguishing between touch, bending, and idle states using pre-reconstructed images. Experimental results demonstrate an average touch localization error of 5.4 mm (SD 2.2 mm) and average bending angle estimation errors of 1.9$^\circ$ (SD 1.6$^\circ$). The proposed adaptive reference method effectively distinguishes between single- and multi-touch scenarios while compensating for deformation effects. This makes the sensor a promising solution for multimodal sensing in robotics and human-robot collaboration. 
+
+**Abstract (ZH)**: 基于 Electrical Impedance Tomography 的柔性触觉传感器：同时检测接触力和弯曲的可拉伸电子皮肤 
+
+---
+# Large-area Tomographic Tactile Skin with Air Pressure Sensing for Improved Force Estimation 
+
+**Title (ZH)**: 大面积基于气压感知的 tomographic 触感皮肤以提高力估计 
+
+**Authors**: Haofeng Chen, Bedrich Himmel, Jiri Kubik, Matej Hoffmann, Hyosang Lee  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.13036)  
+
+**Abstract**: This paper presents a dual-channel tactile skin that integrates Electrical Impedance Tomography (EIT) with air pressure sensing to achieve accurate multi-contact force detection. The EIT layer provides spatial contact information, while the air pressure sensor delivers precise total force measurement. Our framework combines these complementary modalities through: deep learning-based EIT image reconstruction, contact area segmentation, and force allocation based on relative conductivity intensities from EIT. The experiments demonstrated 15.1% average force estimation error in single-contact scenarios and 20.1% in multi-contact scenarios without extensive calibration data requirements. This approach effectively addresses the challenge of simultaneously localizing and quantifying multiple contact forces without requiring complex external calibration setups, paving the way for practical and scalable soft robotic skin applications. 
+
+**Abstract (ZH)**: 这篇论文提出了一种双通道触觉皮肤，结合了电气阻抗成像（EIT）与气压传感，实现了精确的多接触力检测。EIT层提供空间接触信息，而气压传感器提供精确的总力测量。该框架通过基于深度学习的EIT图像重建、接触区域分割以及基于EIT相对电导率强度的力量分配，结合了这些互补的模态。实验结果显示，在单接触场景下平均力估算误差为15.1%，多接触场景下为20.1%，且无需大量校准数据。该方法有效地解决了同时定位和量化多个接触力的挑战，无需复杂外部校准设置，为实用且可扩展的软体机器人皮肤应用铺平了道路。 
+
+---
+# Sensorless Remote Center of Motion Misalignment Estimation 
+
+**Title (ZH)**: 无传感器运动中心偏移估计 
+
+**Authors**: Hao Yang, Lidia Al-Zogbi, Ahmet Yildiz, Nabil Simaan, Jie Ying Wu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.13011)  
+
+**Abstract**: Laparoscopic surgery constrains instrument motion around a fixed pivot point at the incision into a patient to minimize tissue trauma. Surgical robots achieve this through either hardware to software-based remote center of motion (RCM) constraints. However, accurate RCM alignment is difficult due to manual trocar placement, patient motion, and tissue deformation. Misalignment between the robot's RCM point and the patient incision site can cause unsafe forces at the incision site. This paper presents a sensorless force estimation-based framework for dynamically assessing and optimizing RCM misalignment in robotic surgery. Our experiments demonstrate that misalignment exceeding 20 mm can generate large enough forces to potentially damage tissue, emphasizing the need for precise RCM positioning. For misalignment $D\geq $ 20 mm, our optimization algorithm estimates the RCM offset with an absolute error within 5 mm. Accurate RCM misalignment estimation is a step toward automated RCM misalignment compensation, enhancing safety and reducing tissue damage in robotic-assisted laparoscopic surgery. 
+
+**Abstract (ZH)**: 腹腔镜手术通过在患者切口处固定一个活动中心点来约束器械运动，以最小化组织创伤。手术机器人通过硬件到软件基于远程中心运动（RCM）约束来实现这一目标。然而，由于手动Trocar放置、患者运动和组织变形，准确的RCM对齐非常困难。机器人RCM点与患者切口位置之间的偏差可能会在切口处产生不安全的力量。本文提出了一种基于无传感器力估计的框架，用于动态评估和优化机器人手术中的RCM错位。实验结果表明，超过20毫米的错位可以产生足够的力量，可能损伤组织，突显了精确RCM定位的必要性。对于错位$D\geq$ 20毫米的情况，我们的优化算法估计RCM偏移的绝对误差在5毫米以内。准确的RCM错位估计是自动补偿RCM错位的第一步，有助于增强腹腔镜手术辅助下的安全性并减少组织损伤。 
+
+---
+# A Hierarchical Region-Based Approach for Efficient Multi-Robot Exploration 
+
+**Title (ZH)**: 一种分层基于区域的方法，用于高效的多机器人探索 
+
+**Authors**: Di Meng, Tianhao Zhao, Chaoyu Xue, Jun Wu, Qiuguo Zhu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.12876)  
+
+**Abstract**: Multi-robot autonomous exploration in an unknown environment is an important application in this http URL exploration methods only use information around frontier points or viewpoints, ignoring spatial information of unknown areas. Moreover, finding the exact optimal solution for multi-robot task allocation is NP-hard, resulting in significant computational time consumption. To address these issues, we present a hierarchical multi-robot exploration framework using a new modeling method called RegionGraph. The proposed approach makes two main contributions: 1) A new modeling method for unexplored areas that preserves their spatial information across the entire space in a weighted graph called RegionGraph. 2) A hierarchical multi-robot exploration framework that decomposes the global exploration task into smaller subtasks, reducing the frequency of global planning and enabling asynchronous exploration. The proposed method is validated through both simulation and real-world experiments, demonstrating a 20% improvement in efficiency compared to existing methods. 
+
+**Abstract (ZH)**: 多机器人在未知环境中的自主探索是一种重要应用，在此网址中探讨了探索方法仅利用前沿点或视点附近的信息，忽视了未知区域的空间信息。此外，多机器人任务分配的精确最优解问题属于NP难问题，导致显著的计算时间消耗。为解决这些问题，我们提出了一种基于新型建模方法RegionGraph的分层多机器人探索框架。该方法的主要贡献包括：1) 一种新的建模方法，用于未探索区域，通过加权图RegionGraph在整个空间中保留其空间信息。2) 一种分层多机器人探索框架，将全局探索任务分解为较小的子任务，减少全局规划的频率，实现异步探索。所提出的方法通过仿真和实地实验得到了验证，相比于现有方法提高了20%的效率。 
+
+---
+# In vivo validation of Wireless Power Transfer System for Magnetically Controlled Robotic Capsule Endoscopy 
+
+**Title (ZH)**: 磁控机器人胶囊内镜无线电源传输系统的在体验证 
+
+**Authors**: Alessandro Catania, Michele Bertozzi, Nikita J. Greenidge, Benjamin Calme, Gabriele Bandini, Christian Sbrana, Roberto Cecchi, Alice Buffi, Sebastiano Strangio, Pietro Valdastri, Giuseppe Iannaccone  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.12850)  
+
+**Abstract**: This paper presents the in vivo validation of an inductive wireless power transfer (WPT) system integrated for the first time into a magnetically controlled robotic capsule endoscopy platform. The proposed system enables continuous power delivery to the capsule without the need for onboard batteries, thus extending operational time and reducing size constraints. The WPT system operates through a resonant inductive coupling mechanism, based on a transmitting coil mounted on the end effector of a robotic arm that also houses an external permanent magnet and a localization coil for precise capsule manipulation. To ensure robust and stable power transmission in the presence of coil misalignment and rotation, a 3D receiving coil is integrated within the capsule. Additionally, a closed-loop adaptive control system, based on load-shift keying (LSK) modulation, dynamically adjusts the transmitted power to optimize efficiency while maintaining compliance with specific absorption rate (SAR) safety limits. The system has been extensively characterized in laboratory settings and validated through in vivo experiments using a porcine model, demonstrating reliable power transfer and effective robotic navigation in realistic gastrointestinal conditions: the average received power was 110 mW at a distance of 9 cm between the coils, with variable capsule rotation angles. The results confirm the feasibility of the proposed WPT approach for autonomous, battery-free robotic capsule endoscopy, paving the way for enhanced diagnostic in gastrointestinal medicine. 
+
+**Abstract (ZH)**: 本文介绍了将感应无线功率传输（WPT）系统首次集成到磁控机器人胶囊内镜平台中的体内外验证。该系统能够无需机载电池持续为胶囊供电，从而延长操作时间和减少尺寸限制。WPT系统通过谐振感应耦合机制工作，该机制包括安装在机器人手臂末端执行器上的一个线圈，该末端执行器还配备了一个外部永久磁铁和一个用于精确胶囊操作的定位线圈。为了在线圈对齐和旋转不准确的情况下保证可靠的功率传输，胶囊内部集成了一个三维接收线圈。此外，基于载荷移相键控（LSK）调制的闭环自适应控制系统能够动态调整传输功率以优化效率，同时保持与特定吸收率（SAR）安全限值的合规性。该系统在实验室中进行了广泛表征，并通过使用猪模型进行的体内实验进行了验证，结果显示在两线圈之间9 cm的距离下平均接收功率为110 mW，且胶囊旋转角度变化。实验结果证实了所提出的WPT方法在自主、无电池的机器人胶囊内镜领域的可行性，为胃肠医学诊断提供了增强的诊断工具。 
+
+---
+# DART: Dual-level Autonomous Robotic Topology for Efficient Exploration in Unknown Environments 
+
+**Title (ZH)**: DART：双层级自主 robotic 独构在未知环境中的高效探索 
+
+**Authors**: Qiming Wang, Yulong Gao, Yang Wang, Xiongwei Zhao, Yijiao Sun, Xiangyan Kong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.12782)  
+
+**Abstract**: Conventional algorithms in autonomous exploration face challenges due to their inability to accurately and efficiently identify the spatial distribution of convex regions in the real-time map. These methods often prioritize navigation toward the nearest or information-rich frontiers -- the boundaries between known and unknown areas -- resulting in incomplete convex region exploration and requiring excessive backtracking to revisit these missed areas. To address these limitations, this paper introduces an innovative dual-level topological analysis approach. First, we introduce a Low-level Topological Graph (LTG), generated through uniform sampling of the original map data, which captures essential geometric and connectivity details. Next, the LTG is transformed into a High-level Topological Graph (HTG), representing the spatial layout and exploration completeness of convex regions, prioritizing the exploration of convex regions that are not fully explored and minimizing unnecessary backtracking. Finally, an novel Local Artificial Potential Field (LAPF) method is employed for motion control, replacing conventional path planning and boosting overall efficiency. Experimental results highlight the effectiveness of our approach. Simulation tests reveal that our framework significantly reduces exploration time and travel distance, outperforming existing methods in both speed and efficiency. Ablation studies confirm the critical role of each framework component. Real-world tests demonstrate the robustness of our method in environments with poor mapping quality, surpassing other approaches in adaptability to mapping inaccuracies and inaccessible areas. 
+
+**Abstract (ZH)**: 传统自主探索算法由于无法准确高效地识别实时地图中凸区域的空间分布而面临挑战。这些方法通常优先导航至最近或信息丰富的边界——已知区域与未知区域的边界——导致凸区域探索不完整，并需要大量回溯以重访遗漏的区域。为解决这些限制，本文提出了一种创新的多级拓扑分析方法。首先，我们提出了一种低级拓扑图（LTG），通过均匀采样原始地图数据生成，捕捉关键的几何和连接性细节。然后，将LTG转化为高级拓扑图（HTG），表示凸区域的空间布局和探索完整性，优先探索未完全探索的凸区域，减少不必要的回溯。最后，采用新颖的局部人工势场（LAPF）方法进行运动控制，取代传统路径规划，提升整体效率。实验结果表明该方法的有效性。模拟测试显示，本框架显著缩短了探索时间和行驶距离，在速度和效率上均优于现有方法。消融研究确认了每个框架组件的关键作用。实地测试证明了在地图质量较差的环境中，本方法的鲁棒性，在应对地图不准确性和不可达区域方面优于其他方法。 
+
+---
+# MUKCa: Accurate and Affordable Cobot Calibration Without External Measurement Devices 
+
+**Title (ZH)**: MUKCa: 准确且经济的协作机器人标定方法无需外部测量设备 
+
+**Authors**: Giovanni Franzese, Max Spahn, Jens Kober, Cosimo Della Santina  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.12584)  
+
+**Abstract**: To increase the reliability of collaborative robots in performing daily tasks, we require them to be accurate and not only repeatable. However, having a calibrated kinematics model is regrettably a luxury, as available calibration tools are usually more expensive than the robots themselves. With this work, we aim to contribute to the democratization of cobots calibration by providing an inexpensive yet highly effective alternative to existing tools. The proposed minimalist calibration routine relies on a 3D-printable tool as the only physical aid to the calibration process. This two-socket spherical-joint tool kinematically constrains the robot at the end effector while collecting the training set. An optimization routine updates the nominal model to ensure a consistent prediction for each socket and the undistorted mean distance between them. We validated the algorithm on three robotic platforms: Franka, Kuka, and Kinova Cobots. The calibrated models reduce the mean absolute error from the order of 10 mm to 0.2 mm for both Franka and Kuka robots. We provide two additional experimental campaigns with the Franka Robot to render the improvements more tangible. First, we implement Cartesian control with and without the calibrated model and use it to perform a standard peg-in-the-hole task with a tolerance of 0.4 mm between the peg and the hole. Second, we perform a repeated drawing task combining Cartesian control with learning from demonstration. Both tasks consistently failed when the model was not calibrated, while they consistently succeeded after calibration. 
+
+**Abstract (ZH)**: 为了提高协作机器人在执行日常任务时的可靠性，我们需要它们不仅具备重复性还要求精确性。然而，拥有校准的运动学模型通常是奢侈的，因为可用的校准工具通常比机器人本身更昂贵。通过本项工作，我们旨在通过提供一种廉价而有效的替代工具来促进协作机器人校准的普及。所提出的简约校准程序仅依赖于一个3D打印工具作为校准过程中的唯一物理辅助。这个由两个插孔组成的球关节工具在末端执行器处 kinematically 限制机器人并在过程中收集训练集。优化程序更新名义模型以确保每个插孔及其未失真的平均距离的一致预测。我们在三台机器人平台上验证了该算法：Franka、Kuka 和 Kinova 协作机器人。校准后的模型将Franka和Kuka机器人的平均绝对误差从10毫米级降低到0.2毫米。我们提供了Franka机器人额外的两个实验方案以使改进更为具体。首先，我们实现了带校准模型和不带校准模型的笛卡尔控制，并使用它在一个 peg-in-the-hole 任务中执行标准操作，插销与孔之间的偏差为0.4毫米。其次，我们执行了结合笛卡尔控制与示例学习的重复绘制任务。当模型未校准时，两个任务均一致失败；而在校准后，两个任务均一致成功。 
+
+---
+# Histogram Transporter: Learning Rotation-Equivariant Orientation Histograms for High-Precision Robotic Kitting 
+
+**Title (ZH)**: Histogram 运输器：学习旋转不变的方向直方图以实现高精度机器人组装 
+
+**Authors**: Jiadong Zhou, Yadan Zeng, Huixu Dong, I-Ming Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.12541)  
+
+**Abstract**: Robotic kitting is a critical task in industrial automation that requires the precise arrangement of objects into kits to support downstream production processes. However, when handling complex kitting tasks that involve fine-grained orientation alignment, existing approaches often suffer from limited accuracy and computational efficiency. To address these challenges, we propose Histogram Transporter, a novel kitting framework that learns high-precision pick-and-place actions from scratch using only a few demonstrations. First, our method extracts rotation-equivariant orientation histograms (EOHs) from visual observations using an efficient Fourier-based discretization strategy. These EOHs serve a dual purpose: improving picking efficiency by directly modeling action success probabilities over high-resolution orientations and enhancing placing accuracy by serving as local, discriminative feature descriptors for object-to-placement matching. Second, we introduce a subgroup alignment strategy in the place model that compresses the full spectrum of EOHs into a compact orientation representation, enabling efficient feature matching while preserving accuracy. Finally, we examine the proposed framework on the simulated Hand-Tool Kitting Dataset (HTKD), where it outperforms competitive baselines in both success rates and computational efficiency. Further experiments on five Raven-10 tasks exhibits the remarkable adaptability of our approach, with real-robot trials confirming its applicability for real-world deployment. 
+
+**Abstract (ZH)**: 机器人快换是工业自动化中的一个关键任务，要求将物体精确排列成快换组件以支持下游生产过程。然而，在处理涉及精细方向对齐的复杂快换任务时，现有方法往往在准确性和计算效率上存在局限性。为应对这些挑战，我们提出了一种名为Histogram Transporter的新颖快换框架，该框架仅通过少数示范就能从零开始学习高精度的拾取和放置动作。首先，我们的方法通过有效的傅里叶基离散化策略从视觉观察中提取旋转等变方向直方图（EOHs），这些EOHs具有双重功能：通过直接建模高分辨率方向上的动作成功率来提高拾取效率，并作为对象到放置匹配的局部区分特征描述子以提高放置精度。其次，我们在放置模型中引入了一个子组对齐策略，将EOHs的整个光谱压缩为紧凑的方向表示，从而实现高效特征匹配同时保持准确性。最后，我们在模拟的手工具快换数据集中对该提出的框架进行了评估，在成功率和计算效率上均优于竞争性基线。在五个Raven-10任务上的进一步实验展示了我们方法的出色可适应性，实际机器人试验验证了其在实际部署中的适用性。 
+
+---
+# Closed-Loop Control and Disturbance Mitigation of an Underwater Multi-Segment Continuum Manipulator 
+
+**Title (ZH)**: 水下多段连续体 manipulator 的闭环控制与干扰抑制 
+
+**Authors**: Kyle L. Walker, Hsing-Yu Chen, Alix J. Partridge, Lucas Cruz da Silva, Adam A. Stokes, Francesco Giorgio-Serchi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.12508)  
+
+**Abstract**: The use of soft and compliant manipulators in marine environments represents a promising paradigm shift for subsea inspection, with devices better suited to tasks owing to their ability to safely conform to items during contact. However, limitations driven by material characteristics often restrict the reach of such devices, with the complexity of obtaining state estimations making control non-trivial. Here, a detailed analysis of a 1m long compliant manipulator prototype for subsea inspection tasks is presented, including its mechanical design, state estimation technique, closed-loop control strategies, and experimental performance evaluation in underwater conditions. Results indicate that both the configuration-space and task-space controllers implemented are capable of positioning the end effector to desired locations, with deviations of <5% of the manipulator length spatially and to within 5^{o} of the desired configuration angles. The manipulator was also tested when subjected to various disturbances, such as loads of up to 300g and random point disturbances, and was proven to be able to limit displacement and restore the desired configuration. This work is a significant step towards the implementation of compliant manipulators in real-world subsea environments, proving their potential as an alternative to classical rigid-link designs. 
+
+**Abstract (ZH)**: 软性和顺应性 manipulator 在海洋环境中的应用为水下检测任务带来了潜在的范式转变，但由于材料特性限制了设备的灵活性，获得状态估计的复杂性使控制变得非 trivial。本文详细分析了一种长达 1 米的顺应性 manipulator 原型在水下检测任务中的应用，包括其机械设计、状态估计技术、闭环控制策略以及在水下条件下的实验性能评估。结果显示，实施的配置空间控制器和任务空间控制器都能将末端执行器定位到所需位置，空间偏差小于 manipulator 长度的 5%，角度偏差在所需配置角度的 5° 以内。此外，该 manipulator 还在承受各种干扰（包括最大 300 克的负载和随机点干扰）的情况下进行了测试，并被证明能够限制位移并恢复到所需配置。这项工作为顺应性 manipulator 在现实水下环境中的应用实施迈出了重要一步，证明了它们作为传统刚性连杆设计替代方案的潜力。 
+
+---
+# M2UD: A Multi-model, Multi-scenario, Uneven-terrain Dataset for Ground Robot with Localization and Mapping Evaluation 
+
+**Title (ZH)**: M2UD：适用于地面机器人定位与建图评估的多模型、多场景、不规则地形数据集 
+
+**Authors**: Yanpeng Jia, Shiyi Wang, Shiliang Shao, Yue Wang, Fu Zhang, Ting Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.12387)  
+
+**Abstract**: Ground robots play a crucial role in inspection, exploration, rescue, and other applications. In recent years, advancements in LiDAR technology have made sensors more accurate, lightweight, and cost-effective. Therefore, researchers increasingly integrate sensors, for SLAM studies, providing robust technical support for ground robots and expanding their application domains. Public datasets are essential for advancing SLAM technology. However, existing datasets for ground robots are typically restricted to flat-terrain motion with 3 DOF and cover only a limited range of scenarios. Although handheld devices and UAV exhibit richer and more aggressive movements, their datasets are predominantly confined to small-scale environments due to endurance limitations. To fill these gap, we introduce M2UD, a multi-modal, multi-scenario, uneven-terrain SLAM dataset for ground robots. This dataset contains a diverse range of highly challenging environments, including cities, open fields, long corridors, and mixed scenarios. Additionally, it presents extreme weather conditions. The aggressive motion and degradation characteristics of this dataset not only pose challenges for testing and evaluating existing SLAM methods but also advance the development of more advanced SLAM algorithms. To benchmark SLAM algorithms, M2UD provides smoothed ground truth localization data obtained via RTK and introduces a novel localization evaluation metric that considers both accuracy and efficiency. Additionally, we utilize a high-precision laser scanner to acquire ground truth maps of two representative scenes, facilitating the development and evaluation of mapping algorithms. We select 12 localization sequences and 2 mapping sequences to evaluate several classical SLAM algorithms, verifying usability of the dataset. To enhance usability, the dataset is accompanied by a suite of development kits. 
+
+**Abstract (ZH)**: 多模式多场景不规则地形地面机器人SLAM数据集M2UD 
+
+---
+# SharedAssembly: A Data Collection Approach via Shared Tele-Assembly 
+
+**Title (ZH)**: SharedAssembly: 一种基于共享远程组装的数据收集方法 
+
+**Authors**: Yansong Wu, Xiao Chen, Yu Chen, Hamid Sadeghian, Fan Wu, Zhenshan Bing, Sami Haddadin, Alexander König, Alois Knoll  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.12287)  
+
+**Abstract**: Assembly is a fundamental skill for robots in both modern manufacturing and service robotics. Existing datasets aim to address the data bottleneck in training general-purpose robot models, falling short of capturing contact-rich assembly tasks. To bridge this gap, we introduce SharedAssembly, a novel bilateral teleoperation approach with shared autonomy for scalable assembly execution and data collection. User studies demonstrate that the proposed approach enhances both success rates and efficiency, achieving a 97.0% success rate across various sub-millimeter-level assembly tasks. Notably, novice and intermediate users achieve performance comparable to experts using baseline teleoperation methods, significantly enhancing large-scale data collection. 
+
+**Abstract (ZH)**: 共享自治的双边远程操作方法：共享Assembly实现可扩展的装配执行与数据采集 
+
+---
+# Clarke Coordinates Are Generalized Improved State Parametrization for Continuum Robots 
+
+**Title (ZH)**: Clarke 坐标是连续机器人的一种广义改进状态参数化表示。 
+
+**Authors**: Reinhard M. Grassmann, Jessica Burgner-Kahrs  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.12265)  
+
+**Abstract**: In this letter, we demonstrate that previously proposed improved state parameterizations for soft and continuum robots are specific cases of Clarke coordinates. By explicitly deriving these improved parameterizations from a generalized Clarke transformation matrix, we unify various approaches into one comprehensive mathematical framework. This unified representation provides clarity regarding their relationships and generalizes them beyond existing constraints, including arbitrary joint numbers, joint distributions, and underlying modeling assumptions. This unification consolidates prior insights and establishes Clarke coordinates as a foundational tool, enabling systematic knowledge transfer across different subfields within soft and continuum robotics. 
+
+**Abstract (ZH)**: 在这封信中，我们证明了之前提出的用于软体和连续体机器人的改进状态参数化是克拉克坐标的具体案例。通过从广义克拉克变换矩阵Explicitly推导这些改进的参数化，我们将各种方法统一到一个综合的数学框架中。这种统一的表示方式明确了它们之间的关系，超越了现有的限制，包括任意关节数量、关节分布和基础建模假设。这种统一整合了先前的见解，确立了克拉克坐标作为基础工具的作用，促进了软体和连续体机器人不同子领域的系统知识转移。 
+
+---
+# Nonparametric adaptive payload tracking for an offshore crane 
+
+**Title (ZH)**: offshore起重机的非参数自适应载荷跟踪 
+
+**Authors**: Torbjørn Smith, Olav Egeland  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.12250)  
+
+**Abstract**: A nonparametric adaptive crane control system is proposed where the crane payload tracks a desired trajectory with feedback from the payload position. The payload motion is controlled with the position of the crane tip using partial feedback linearization. This is made possible by introducing a novel model structure given in Cartesian coordinates. This Cartesian model structure makes it possible to implement a nonparametric adaptive controller which cancels disturbances by approximating the effects of unknown disturbance forces and structurally unknown dynamics in a reproducing kernel Hilbert space (RKHS). It is shown that the nonparametric adaptive controller leads to uniformly ultimately bounded errors in the presence of unknown forces and unmodeled dynamics. Moreover, it is shown that the Cartesian formulation has certain advantages in payload tracking control also in the non-adaptive case. The performance of the nonparametric adaptive controller is validated in simulation and experiments with good results. 
+
+**Abstract (ZH)**: 一种基于反馈的非参自适应起重机控制系统，其中吊载跟踪期望轨迹并使用吊载位置反馈。通过部分反馈线性化，使用小车端点位置控制吊载运动。这通过引入一个新的基于笛卡尔坐标的新模型结构来实现。该笛卡尔模型结构使得能够在复制核希尔伯特空间（RKHS）中近似未知干扰力和结构未知动态的影响，从而消除干扰。证明了在存在未知力和未建模动态的情况下，非参自适应控制器导致均匀最终有界误差。此外，证明了在非自适应情况下，笛卡尔形式在吊载跟踪控制中具有某些优势。非参自适应控制器的性能在仿真和实验中得到了验证，结果良好。 
+
+---
+# GenOSIL: Generalized Optimal and Safe Robot Control using Parameter-Conditioned Imitation Learning 
+
+**Title (ZH)**: GenOSIL: 通用最优和安全的机器人控制方法基于参数条件模仿学习 
+
+**Authors**: Mumuksh Tayal, Manan Tayal, Ravi Prakash  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.12243)  
+
+**Abstract**: Ensuring safe and generalizable control remains a fundamental challenge in robotics, particularly when deploying imitation learning in dynamic environments. Traditional behavior cloning (BC) struggles to generalize beyond its training distribution, as it lacks an understanding of the safety critical reasoning behind expert demonstrations. To address this limitation, we propose GenOSIL, a novel imitation learning framework that explicitly incorporates environment parameters into policy learning via a structured latent representation. Unlike conventional methods that treat the environment as a black box, GenOSIL employs a variational autoencoder (VAE) to encode measurable safety parameters such as obstacle position, velocity, and geometry into a latent space that captures intrinsic correlations between expert behavior and environmental constraints. This enables the policy to infer the rationale behind expert trajectories rather than merely replicating them. We validate our approach on two robotic platforms an autonomous ground vehicle and a Franka Emika Panda manipulator demonstrating superior safety and goal reaching performance compared to baseline methods. The simulation and hardware videos can be viewed on the project webpage: this https URL. 
+
+**Abstract (ZH)**: 确保机器人在动态环境中安全且普适的控制仍然是一个基本挑战，特别是在部署模仿学习时。传统的行为克隆(BC)难以超越其训练分布进行泛化，因为它缺乏对专家演示中安全关键推理的理解。为了解决这一局限性，我们提出了一种新颖的模仿学习框架GenOSIL，该框架通过结构化的潜在表示显式地将环境参数纳入策略学习中。与将环境视为黑盒的常规方法不同，GenOSIL 使用变分自编码器(VAE) 将障碍物的位置、速度和几何形状等可测量的安全参数编码到潜在空间中，该空间捕获了专家行为与环境约束之间的内在关联。这使得策略能够推断专家轨迹背后的原理，而不仅仅是简单的复制。我们通过两个机器人平台——自动驾驶地面车辆和Franka Emika Panda机械臂进行了验证，展示了与基准方法相比更优的安全性和目标到达性能。仿真和硬件视频可在项目网页上查看：this https URL。 
+
+---
+# D4orm: Multi-Robot Trajectories with Dynamics-aware Diffusion Denoised Deformations 
+
+**Title (ZH)**: D4orm: 多机器人轨迹动态感知扩散去噪变形 
+
+**Authors**: Yuhao Zhang, Keisuke Okumura, Heedo Woo, Ajay Shankar, Amanda Prorok  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.12204)  
+
+**Abstract**: This work presents an optimization method for generating kinodynamically feasible and collision-free multi-robot trajectories that exploits an incremental denoising scheme in diffusion models. Our key insight is that high-quality trajectories can be discovered merely by denoising noisy trajectories sampled from a distribution. This approach has no learning component, relying instead on only two ingredients: a dynamical model of the robots to obtain feasible trajectories via rollout, and a score function to guide denoising with Monte Carlo gradient approximation. The proposed framework iteratively optimizes the deformation from the previous round with this denoising process, allows \textit{anytime} refinement as time permits, supports different dynamics, and benefits from GPU acceleration. Our evaluations for differential-drive and holonomic teams with up to 16 robots in 2D and 3D worlds show its ability to discover high-quality solutions faster than other black-box optimization methods such as MPPI, approximately three times faster in a 3D holonomic case with 16 robots. As evidence for feasibility, we demonstrate zero-shot deployment of the planned trajectories on eight multirotors. 
+
+**Abstract (ZH)**: 基于去噪方案的多机器人运动轨迹优化方法 
+
+---
+# Learning-based Estimation of Forward Kinematics for an Orthotic Parallel Robotic Mechanism 
+
+**Title (ZH)**: 基于学习的正向运动学估计方法研究——用于矫形并联机器人机制 
+
+**Authors**: Jingzong Zhou, Yuhan Zhu, Xiaobin Zhang, Sunil Agrawal, Konstantinos Karydis  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.11855)  
+
+**Abstract**: This paper introduces a 3D parallel robot with three identical five-degree-of-freedom chains connected to a circular brace end-effector, aimed to serve as an assistive device for patients with cervical spondylosis. The inverse kinematics of the system is solved analytically, whereas learning-based methods are deployed to solve the forward kinematics. The methods considered herein include a Koopman operator-based approach as well as a neural network-based approach. The task is to predict the position and orientation of end-effector trajectories. The dataset used to train these methods is based on the analytical solutions derived via inverse kinematics. The methods are tested both in simulation and via physical hardware experiments with the developed robot. Results validate the suitability of deploying learning-based methods for studying parallel mechanism forward kinematics that are generally hard to resolve analytically. 
+
+**Abstract (ZH)**: 本文介绍了一种用于颈椎病患者辅助康复的具有三个 identical 五自由度链并连接到圆形支架末端执行器的3D并联机器人。系统的逆运动学通过解析方法解决，而基于学习的方法被用于解决正向运动学问题。所考虑的方法包括基于Koopman算子的方法以及基于神经网络的方法。任务是预测末端执行器轨迹的位置和姿态。用于训练这些方法的数据集基于通过逆运动学推导出的解析解。该方法在仿真和所开发的机器人硬件实验中进行了测试。结果验证了使用基于学习的方法研究一般难以解析的并联机构正向运动学问题的适用性。 
+
+---
+# Safe Multi-Robotic Arm Interaction via 3D Convex Shapes 
+
+**Title (ZH)**: 基于3D凸形状的多机器人臂安全交互 
+
+**Authors**: Ali Umut Kaypak, Shiqing Wei, Prashanth Krishnamurthy, Farshad Khorrami  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.11791)  
+
+**Abstract**: Inter-robot collisions pose a significant safety risk when multiple robotic arms operate in close proximity. We present an online collision avoidance methodology leveraging 3D convex shape-based High-Order Control Barrier Functions (HOCBFs) to address this issue. While prior works focused on using Control Barrier Functions (CBFs) for human-robotic arm and single-arm collision avoidance, we explore the problem of collision avoidance between multiple robotic arms operating in a shared space. In our methodology, we utilize the proposed HOCBFs as centralized and decentralized safety filters. These safety filters are compatible with any nominal controller and ensure safety without significantly restricting the robots' workspace. A key challenge in implementing these filters is the computational overhead caused by the large number of safety constraints and the computation of a Hessian matrix per constraint. We address this challenge by employing numerical differentiation methods to approximate computationally intensive terms. The effectiveness of our method is demonstrated through extensive simulation studies and real-world experiments with Franka Research 3 robotic arms. 
+
+**Abstract (ZH)**: 多机器人手臂在共享空间中的碰撞避免方法：基于3D凸形高阶控制屏障函数的在线碰撞避免技术 
+
+---
+# A Robust and Energy-Efficient Trajectory Planning Framework for High-Degree-of-Freedom Robots 
+
+**Title (ZH)**: 高自由度机器人 robust 而且节能的轨迹规划框架 
+
+**Authors**: Sajjad Hussain, Md Saad, Almas Baimagambetov, Khizer Saeed  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.11716)  
+
+**Abstract**: Energy efficiency and motion smoothness are essential in trajectory planning for high-degree-of-freedom robots to ensure optimal performance and reduce mechanical wear. This paper presents a novel framework integrating sinusoidal trajectory generation with velocity scaling to minimize energy consumption while maintaining motion accuracy and smoothness. The framework is evaluated using a physics-based simulation environment with metrics such as energy consumption, motion smoothness, and trajectory accuracy. Results indicate significant energy savings and smooth transitions, demonstrating the framework's effectiveness for precision-based applications. Future work includes real-time trajectory adjustments and enhanced energy models. 
+
+**Abstract (ZH)**: 高自由度机器人轨迹规划中的能量效率和运动平滑性是确保最优性能和减少机械磨损的关键。本文提出了一种结合正弦轨迹生成与速度缩放的新型框架，以最小化能量消耗同时保持运动精度和平滑性。该框架使用基于物理的仿真环境进行评估，采用能量消耗、运动平滑性和轨迹精度等指标。结果显示显著的能量节省和平滑过渡，证明了该框架在基于精度的应用中的有效性。未来工作包括实时轨迹调整和增强的能量模型。 
+
+---
+# FloPE: Flower Pose Estimation for Precision Pollination 
+
+**Title (ZH)**: Flower Pose Estimation for Precision Pollination 
+
+**Authors**: Rashik Shrestha, Madhav Rijal, Trevor Smith, Yu Gu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.11692)  
+
+**Abstract**: This study presents Flower Pose Estimation (FloPE), a real-time flower pose estimation framework for computationally constrained robotic pollination systems. Robotic pollination has been proposed to supplement natural pollination to ensure global food security due to the decreased population of natural pollinators. However, flower pose estimation for pollination is challenging due to natural variability, flower clusters, and high accuracy demands due to the flowers' fragility when pollinating. This method leverages 3D Gaussian Splatting to generate photorealistic synthetic datasets with precise pose annotations, enabling effective knowledge distillation from a high-capacity teacher model to a lightweight student model for efficient inference. The approach was evaluated on both single and multi-arm robotic platforms, achieving a mean pose estimation error of 0.6 cm and 19.14 degrees within a low computational cost. Our experiments validate the effectiveness of FloPE, achieving up to 78.75% pollination success rate and outperforming prior robotic pollination techniques. 
+
+**Abstract (ZH)**: Flower Pose Estimation (FloPE)：受计算约束的机器人授粉系统中的实时花朵姿态估计框架 
+
+---
+# Agent-Based Simulation of UAV Battery Recharging for IoT Applications: Precision Agriculture, Disaster Recovery, and Dengue Vector Control 
+
+**Title (ZH)**: 基于代理的无人机电池充电模拟研究：物联网应用中的精准农业、灾害恢复和登革热蚊媒控制 
+
+**Authors**: Leonardo Grando, Juan Fernando Galindo Jaramillo, Jose Roberto Emiliano Leite, Edson Luiz Ursini  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.12685)  
+
+**Abstract**: The low battery autonomy of Unnamed Aerial Vehicles (UAVs or drones) can make smart farming (precision agriculture), disaster recovery, and the fighting against dengue vector applications difficult. This article considers two approaches, first enumerating the characteristics observed in these three IoT application types and then modeling an UAV's battery recharge coordination using the Agent-Based Simulation (ABS) approach. In this way, we propose that each drone inside the swarm does not communicate concerning this recharge coordination decision, reducing energy usage and permitting remote usage. A total of 6000 simulations were run to evaluate how two proposed policies, the BaseLine (BL) and ChargerThershold (CT) coordination recharging policy, behave in 30 situations regarding how each simulation sets conclude the simulation runs and how much time they work until recharging results. CT policy shows more reliable results in extreme system usage. This work conclusion presents the potential of these three IoT applications to achieve their perpetual service without communication between drones and ground stations. This work can be a baseline for future policies and simulation parameter enhancements. 
+
+**Abstract (ZH)**: UAV电池续航有限性对智能农业、灾害恢复及防控登革热应用的挑战及其基于代理模型的电池再充电协调研究 
+
+---
+# Formation Control of Multi-agent System with Local Interaction and Artificial Potential Field 
+
+**Title (ZH)**: 多代理系统基于局部交互与人工势场的Formation控制 
+
+**Authors**: Luoyin Zhao, Zheping Yan, Yuqing Wang, Raye Chen-Hua Yeow  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.12199)  
+
+**Abstract**: A novel local interaction control method (LICM) is proposed in this paper to realize the formation control of multi-agent system (MAS). A local interaction leader follower (LILF) structure is provided by coupling the advantages of information consensus and leader follower frame, the agents can obtain the state information of the leader by interacting with their neighbours, which will reduce the communication overhead of the system and the dependence on a single node of the topology. In addition, the artificial potential field (APF) method is introduced to achieve obstacle avoidance and collision avoidance between agents. Inspired by the stress response of animals, a stress response mechanism-artificial potential field (SRM-APF) is proposed, which will be triggered when the local minimum problem of APF occurs. Ultimately, the simulation experiments of three formation shapes, including triangular formation, square formation and hexagonal formation, validate the effectiveness of the proposed method. 
+
+**Abstract (ZH)**: 一种新型局部交互控制方法（LICM）用于实现多 Robotics 系统（MAS）的编队控制。通过结合信息一致性与领导跟随框架的优点，提出了局部交互领导跟随（LILF）结构，代理可以通过与其邻居交互获得领导者的状态信息，从而减少系统的通信开销并降低对拓扑单节点的依赖。此外，引入人工势场（APF）方法以实现代理间的障碍物避障和碰撞避免。受动物应力反应的启发，提出了一种应力响应机制-人工势场（SRM-APF），当APF出现局部极小问题时，该机制将被触发。最终，对三角形编队、方形编队和六边形编队的仿真实验验证了所提出方法的有效性。 
+
+---
