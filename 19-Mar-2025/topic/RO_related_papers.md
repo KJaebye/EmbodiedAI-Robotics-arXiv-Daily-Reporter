@@ -1,0 +1,195 @@
+# Manual, Semi or Fully Autonomous Flipper Control? A Framework for Fair Comparison 
+
+**Title (ZH)**: 手动、半自动或全自动鳍控？一种公平比较框架 
+
+**Authors**: Valentýn Číhala, Martin Pecka, Tomáš Svoboda, Karel Zimmermann  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.14389)  
+
+**Abstract**: We investigated the performance of existing semi- and fully autonomous methods for controlling flipper-based skid-steer robots. Our study involves reimplementation of these methods for fair comparison and it introduces a novel semi-autonomous control policy that provides a compelling trade-off among current state-of-the-art approaches. We also propose new metrics for assessing cognitive load and traversal quality and offer a benchmarking interface for generating Quality-Load graphs from recorded data. Our results, presented in a 2D Quality-Load space, demonstrate that the new control policy effectively bridges the gap between autonomous and manual control methods. Additionally, we reveal a surprising fact that fully manual, continuous control of all six degrees of freedom remains highly effective when performed by an experienced operator on a well-designed analog controller from third person view. 
+
+**Abstract (ZH)**: 我们研究了现有基于翻转轮的差动驱动机器人自主和半自主控制方法的性能，并提出了一种新的半自主控制策略，该策略在当前最先进的方法之间提供了令人信服的权衡。我们还提出了评估认知负载和穿越质量的新指标，并提供了一个基准测试接口，用于从记录数据生成质量-负载图。我们的结果显示，新控制策略有效地弥合了自主控制和手动控制方法之间的差距。此外，我们揭示了一个令人惊讶的事实，即经验操作员在第三人称视角下使用精心设计的模拟控制器手动连续控制所有六个自由度仍然非常有效。 
+
+---
+# ADAPT: An Autonomous Forklift for Construction Site Operation 
+
+**Title (ZH)**: ADAPT: 一种自主施工用货叉车 
+
+**Authors**: Johannes Huemer, Markus Murschitz, Matthias Schörghuber, Lukas Reisinger, Thomas Kadiofsky, Christoph Weidinger, Mario Niedermeyer, Benedikt Widy, Marcel Zeilinger, Csaba Beleznai, Tobias Glück, Andreas Kugi, Patrik Zips  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.14331)  
+
+**Abstract**: Efficient material logistics play a critical role in controlling costs and schedules in the construction industry. However, manual material handling remains prone to inefficiencies, delays, and safety risks. Autonomous forklifts offer a promising solution to streamline on-site logistics, reducing reliance on human operators and mitigating labor shortages. This paper presents the development and evaluation of the Autonomous Dynamic All-terrain Pallet Transporter (ADAPT), a fully autonomous off-road forklift designed for construction environments. Unlike structured warehouse settings, construction sites pose significant challenges, including dynamic obstacles, unstructured terrain, and varying weather conditions. To address these challenges, our system integrates AI-driven perception techniques with traditional approaches for decision making, planning, and control, enabling reliable operation in complex environments. We validate the system through extensive real-world testing, comparing its long-term performance against an experienced human operator across various weather conditions. We also provide a comprehensive analysis of challenges and key lessons learned, contributing to the advancement of autonomous heavy machinery. Our findings demonstrate that autonomous outdoor forklifts can operate near human-level performance, offering a viable path toward safer and more efficient construction logistics. 
+
+**Abstract (ZH)**: 自主动态全地形托盘运输器（ADAPT）在建筑行业的高效物料物流中的开发与评估 
+
+---
+# A Chain-Driven, Sandwich-Legged Quadruped Robot: Design and Experimental Analysis 
+
+**Title (ZH)**: 由链驱动的三明治腿四足机器人：设计与实验分析 
+
+**Authors**: Aman Singh, Bhavya Giri Goswami, Ketan Nehete, Shishir N. Y. Kolathaya  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.14255)  
+
+**Abstract**: This paper introduces a chain-driven, sandwich-legged, mid-size quadruped robot designed as an accessible research platform. The design prioritizes enhanced locomotion capabilities, improved reliability and safety of the actuation system, and simplified, cost-effective manufacturing processes. Locomotion performance is optimized through a sandwiched leg design and a dual-motor configuration, reducing leg inertia for agile movements. Reliability and safety are achieved by integrating robust cable strain reliefs, efficient heat sinks for motor thermal management, and mechanical limits to restrict leg motion. Simplified design considerations include a quasi-direct drive (QDD) actuator and the adoption of low-cost fabrication techniques, such as laser cutting and 3D printing, to minimize cost and ensure rapid prototyping. The robot weighs approximately 25 kg and is developed at a cost under \$8000, making it a scalable and affordable solution for robotics research. Experimental validations demonstrate the platform's capability to execute trot and crawl gaits on flat terrain and slopes, highlighting its potential as a versatile and reliable quadruped research platform. 
+
+**Abstract (ZH)**: 一种链驱动的三明治腿中型 quadruped 机器人：面向 accessible 研究平台的设计与实现 
+
+---
+# GeoFlow-SLAM: A Robust Tightly-Coupled RGBD-Inertial Fusion SLAM for Dynamic Legged Robotics 
+
+**Title (ZH)**: GeoFlow-SLAM：一种适用于动态腿足机器人的 robust 紧密耦合 RGBD-惯性融合 SLAM 
+
+**Authors**: Tingyang Xiao, Xiaolin Zhou, Liu Liu, Wei Sui, Wei Feng, Jiaxiong Qiu, Xinjie Wang, Zhizhong Su  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.14247)  
+
+**Abstract**: This paper presents GeoFlow-SLAM, a robust and effective Tightly-Coupled RGBD-inertial SLAM for legged robots operating in highly dynamic this http URL integrating geometric consistency, legged odometry constraints, and dual-stream optical flow (GeoFlow), our method addresses three critical challenges:feature matching and pose initialization failures during fast locomotion and visual feature scarcity in texture-less this http URL, in rapid motion scenarios, feature matching is notably enhanced by leveraging dual-stream optical flow, which combines prior map points and poses. Additionally, we propose a robust pose initialization method for fast locomotion and IMU error in legged robots, integrating IMU/Legged odometry, inter-frame Perspective-n-Point (PnP), and Generalized Iterative Closest Point (GICP). Furthermore, a novel optimization framework that tightly couples depth-to-map and GICP geometric constraints is first introduced to improve the robustness and accuracy in long-duration, visually texture-less environments. The proposed algorithms achieve state-of-the-art (SOTA) on collected legged robots and open-source datasets. To further promote research and development, the open-source datasets and code will be made publicly available at this https URL 
+
+**Abstract (ZH)**: GeoFlow-SLAM：针对高度动态环境中的腿式机器人RGBD-惯性Tightly-Coupled SLAM的有效鲁棒方法 
+
+---
+# Variable Time-Step MPC for Agile Multi-Rotor UAV Interception of Dynamic Targets 
+
+**Title (ZH)**: 基于变时间步长模型预测控制的敏捷多旋翼无人机动态目标截获 
+
+**Authors**: Atharva Ghotavadekar, František Nekovář, Martin Saska, Jan Faigl  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.14184)  
+
+**Abstract**: Agile trajectory planning can improve the efficiency of multi-rotor Uncrewed Aerial Vehicles (UAVs) in scenarios with combined task-oriented and kinematic trajectory planning, such as monitoring spatio-temporal phenomena or intercepting dynamic targets. Agile planning using existing non-linear model predictive control methods is limited by the number of planning steps as it becomes increasingly computationally demanding. That reduces the prediction horizon length, leading to a decrease in solution quality. Besides, the fixed time-step length limits the utilization of the available UAV dynamics in the target neighborhood. In this paper, we propose to address these limitations by introducing variable time steps and coupling them with the prediction horizon length. A simplified point-mass motion primitive is used to leverage the differential flatness of quadrotor dynamics and the generation of feasible trajectories in the flat output space. Based on the presented evaluation results and experimentally validated deployment, the proposed method increases the solution quality by enabling planning for long flight segments but allowing tightly sampled maneuvering. 
+
+**Abstract (ZH)**: 敏捷轨迹规划可以提高多旋翼无人机在结合任务导向和运动轨迹规划场景中的效率，如监控时空现象或拦截动态目标。现有的非线性模型预测控制方法在采用可变时间步长和结合预测时间窗长度后可以解决这些问题，通过引入可变时间步长并利用四旋翼动力学的微分平坦性及在平坦输出空间中生成可行轨迹，可以提高规划质量，实现长时间飞行段的规划但允许紧采样机动。 
+
+---
+# GPU-Accelerated Motion Planning of an Underactuated Forestry Crane in Cluttered Environments 
+
+**Title (ZH)**: cluttered 环境中不足驱动林业起重机的GPU加速运动规划 
+
+**Authors**: Minh Nhat Vu, Gerald Ebmer, Alexander Watcher, Marc-Philip Ecker, Giang Nguyen, Tobias Glueck  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.14160)  
+
+**Abstract**: Autonomous large-scale machine operations require fast, efficient, and collision-free motion planning while addressing unique challenges such as hydraulic actuation limits and underactuated joint dynamics. This paper presents a novel two-step motion planning framework designed for an underactuated forestry crane. The first step employs GPU-accelerated stochastic optimization to rapidly compute a globally shortest collision-free path. The second step refines this path into a dynamically feasible trajectory using a trajectory optimizer that ensures compliance with system dynamics and actuation constraints. The proposed approach is benchmarked against conventional techniques, including RRT-based methods and purely optimization-based approaches. Simulation results demonstrate substantial improvements in computation speed and motion feasibility, making this method highly suitable for complex crane systems. 
+
+**Abstract (ZH)**: 自主大规模机器操作需要快速、高效且无碰撞的运动规划，同时应对液压执行机构限制和欠驱动关节动力学等独特挑战。本文提出了一种针对欠驱动林业起重机的新型两步运动规划框架。第一步采用GPU加速的随机优化快速计算全局最短无碰撞路径。第二步使用轨迹优化器将该路径细化为动态可行的轨迹，确保符合系统动力学和执行机构约束。所提出的方法与基于RRT的方法和纯基于优化的方法进行了对比测试。仿真结果表明，该方法在计算速度和运动可行性方面有显著改进，使其非常适合复杂的起重系统。 
+
+---
+# A bio-inspired sand-rolling robot: effect of body shape on sand rolling performance 
+
+**Title (ZH)**: 受生物启发的沙滚机器人：身体形状对沙滚性能的影响 
+
+**Authors**: Xingjue Liao, Wenhao Liu, Hao Wu, Feifei Qian  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.13919)  
+
+**Abstract**: The capability of effectively moving on complex terrains such as sand and gravel can empower our robots to robustly operate in outdoor environments, and assist with critical tasks such as environment monitoring, search-and-rescue, and supply delivery. Inspired by the Mount Lyell salamander's ability to curl its body into a loop and effectively roll down {\Revision hill slopes}, in this study we develop a sand-rolling robot and investigate how its locomotion performance is governed by the shape of its body. We experimentally tested three different body shapes: Hexagon, Quadrilateral, and Triangle. We found that Hexagon and Triangle can achieve a faster rolling speed on sand, but exhibited more frequent failures of getting stuck. Analysis of the interaction between robot and sand revealed the failure mechanism: the deformation of the sand produced a local ``sand incline'' underneath robot contact segments, increasing the effective region of supporting polygon (ERSP) and preventing the robot from shifting its center of mass (CoM) outside the ERSP to produce sustainable rolling. Based on this mechanism, a highly-simplified model successfully captured the critical body pitch for each rolling shape to produce sustained rolling on sand, and informed design adaptations that mitigated the locomotion failures and improved robot speed by more than 200$\%$. Our results provide insights into how locomotors can utilize different morphological features to achieve robust rolling motion across deformable substrates. 
+
+**Abstract (ZH)**: 能够在砂砾等复杂地形上有效移动的机器人能力，能够使我们的机器人在户外环境中稳健地操作，并协助环境监测、搜救和物资配送等关键任务。受Mount Lyell火nze蟾蜍卷曲身体沿坡滚动的能力启发，本研究开发了一种砂滚动机器人，并探讨了其运动性能如何受到身体形状的影响。实验测试了三种不同形状：六边形、四边形和三角形。研究发现，六边形和三角形在砂上滚动速度更快，但更容易卡住。通过对机器人与砂交互作用的分析揭示了失败机制：砂的变形在机器人接触段下方形成了局部“砂坡”，增加了有效支撑多边形区域，并阻止机器人将重心移出该区域以持续滚动。基于这一机制，一个高度简化的模型成功捕捉了每种滚动形状实现持续砂上滚动的关键身体倾斜角度，并为设计改进提供了指导，这些改进将移动失败率降低了超过200%，同时提高了机器人速度。我们的研究为如何利用不同的形态特征实现跨越变形基质的稳健滚动运动提供了见解。 
+
+---
+# Learning Bimanual Manipulation via Action Chunking and Inter-Arm Coordination with Transformers 
+
+**Title (ZH)**: 基于动作分块和双臂协调的Transformer学习双臂操作 
+
+**Authors**: Tomohiro Motoda, Ryo Hanai, Ryoichi Nakajo, Masaki Murooka, Floris Erich, Yukiyasu Domae  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.13916)  
+
+**Abstract**: Robots that can operate autonomously in a human living environment are necessary to have the ability to handle various tasks flexibly. One crucial element is coordinated bimanual movements that enable functions that are difficult to perform with one hand alone. In recent years, learning-based models that focus on the possibilities of bimanual movements have been proposed. However, the high degree of freedom of the robot makes it challenging to reason about control, and the left and right robot arms need to adjust their actions depending on the situation, making it difficult to realize more dexterous tasks. To address the issue, we focus on coordination and efficiency between both arms, particularly for synchronized actions. Therefore, we propose a novel imitation learning architecture that predicts cooperative actions. We differentiate the architecture for both arms and add an intermediate encoder layer, Inter-Arm Coordinated transformer Encoder (IACE), that facilitates synchronization and temporal alignment to ensure smooth and coordinated actions. To verify the effectiveness of our architectures, we perform distinctive bimanual tasks. The experimental results showed that our model demonstrated a high success rate for comparison and suggested a suitable architecture for the policy learning of bimanual manipulation. 
+
+**Abstract (ZH)**: 能够自主操作于人类生活环境中的机器人需要具备灵活处理各种任务的能力，其中协调的双臂运动是关键要素，能够实现单手难以完成的功能。近年来，研究者提出了多种基于学习的双臂运动可能性模型。然而，机器人的高自由度使得控制推理变得复杂，左右两侧机器臂的动作需要根据具体情况调整，从而增加了实现更灵巧任务的难度。为解决这一问题，我们着重于双臂之间的协调与效率，特别是同步动作。因此，我们提出了一种新的模仿学习架构，用于预测协同动作。该架构为双臂设定不同的结构，并增加了一个中间编码层——双臂协调变换编码器（Inter-Arm Coordinated Transformer Encoder, IACE），以促进同步和时间对齐，确保动作流畅且协调。为验证该架构的有效性，我们开展了具体的双臂任务实验。实验结果表明，我们的模型在对比中展示了较高的成功率，并且为双臂操作策略学习提供了合适的架构。 
+
+---
+# Project URSULA: Design of a Robotic Squid for Underwater Manipulation 
+
+**Title (ZH)**: Project URSULA: 深海Manipulation用仿生机器乌贼设计 
+
+**Authors**: Berke Gur  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.13913)  
+
+**Abstract**: With this paper, the design of a biomimetic robotic squid (dubbed URSULA) developed for dexterous underwater manipulation is presented. The robot serves as a test bed for several novel underwater technologies such as soft manipulators, propeller-less propulsion, model mediated tele-operation with video and haptic feedback, sonar-based underwater mapping, localization, and navigation, and high bandwidth visible light communications. Following the finalization of the detailed design, a prototype is manufactured and is currently undergoing pool tests. 
+
+**Abstract (ZH)**: 本论文提出了一种仿生机器人乌贼（名为URSULA）的设计，该机器人用于智能水下操作，作为多种新型水下技术的测试平台，包括软体操作器、无螺旋桨推进、基于模型的远程操作（伴有视觉和力觉反馈）、基于声纳的水下测绘、定位和导航，以及高带宽可见光通信。在详细设计完成后，已制造出原型并正在进行池塘测试。 
+
+---
+# A Systematic Digital Engineering Approach to Verification & Validation of Autonomous Ground Vehicles in Off-Road Environments 
+
+**Title (ZH)**: 一种系统化的数字工程方法在非道路环境中对自主地面车辆进行验证与确认 
+
+**Authors**: Tanmay Vilas Samak, Chinmay Vilas Samak, Julia Brault, Cori Harber, Kirsten McCane, Jonathon Smereka, Mark Brudnak, David Gorsich, Venkat Krovi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.13787)  
+
+**Abstract**: The engineering community currently encounters significant challenges in the systematic development and validation of autonomy algorithms for off-road ground vehicles. These challenges are posed by unusually high test parameters and algorithmic variants. In order to address these pain points, this work presents an optimized digital engineering framework that tightly couples digital twin simulations with model-based systems engineering (MBSE) and model-based design (MBD) workflows. The efficacy of the proposed framework is demonstrated through an end-to-end case study of an autonomous light tactical vehicle (LTV) performing visual servoing to drive along a dirt road and reacting to any obstacles or environmental changes. The presented methodology allows for traceable requirements engineering, efficient variant management, granular parameter sweep setup, systematic test-case definition, and automated execution of the simulations. The candidate off-road autonomy algorithm is evaluated for satisfying requirements against a battery of 128 test cases, which is procedurally generated based on the test parameters (times of the day and weather conditions) and algorithmic variants (perception, planning, and control sub-systems). Finally, the test results and key performance indicators are logged, and the test report is generated automatically. This then allows for manual as well as automated data analysis with traceability and tractability across the digital thread. 
+
+**Abstract (ZH)**: 当前工程社区在系统开发和验证离路面地面车辆自主算法方面面临显著挑战，这些挑战源自异常高的测试参数和算法变体。为了应对这些痛点，本研究提出了一种优化的数字化工程框架，该框架紧密耦合数字孪生仿真与基于模型的系统工程（MBSE）和基于模型的设计（MBD）工作流。通过自主轻型战术车辆（LTV）在泥土道路上进行视觉伺服并应对任何障碍或环境变化的端到端案例研究，展示了所提框架的有效性。该方法允许可追溯的要求工程、高效的变体管理、精细的参数扫面设置、系统的测试案例定义以及模拟的自动化执行。针对基于测试参数（时间和天气条件）和算法变体（感知、规划和控制子系统）程序生成的128个测试案例，评估了候选的离路面自主算法是否满足要求。最后，记录测试结果和关键性能指标，并自动生成测试报告。这既支持手动也支持自动的数据分析，具有贯穿数字化生产线的可追溯性和可追踪性。 
+
+---
+# Foam: A Tool for Spherical Approximation of Robot Geometry 
+
+**Title (ZH)**: 泡沫：一种用于机器人几何球形逼近的工具 
+
+**Authors**: Sai Coumar, Gilbert Chang, Nihar Kodkani, Zachary Kingston  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.13704)  
+
+**Abstract**: Many applications in robotics require primitive spherical geometry, especially in cases where efficient distance queries are necessary. Manual creation of spherical models is time-consuming and prone to errors. This paper presents Foam, a tool to generate spherical approximations of robot geometry from an input Universal Robot Description Format (URDF) file. Foam provides a robust preprocessing pipeline to handle mesh defects and a number of configuration parameters to control the level and approximation of the spherization, and generates an output URDF with collision geometry specified only by spheres. We demonstrate Foam on a number of standard robot models on common tasks, and demonstrate improved collision checking and distance query performance with only a minor loss in fidelity compared to the true collision geometry. We release our tool as an open source Python library and containerized command-line application to facilitate adoption across the robotics community. 
+
+**Abstract (ZH)**: 许多机器人应用需要基本的球面几何，尤其是在需要高效距离查询的情况下。手动创建球形模型既耗时又容易出错。本文介绍了一种名为Foam的工具，该工具可以从输入的Universal Robot Description Format (URDF) 文件生成机器人几何的球形近似。Foam提供了 robust 的预处理管道以处理网格缺陷，并提供了多种配置参数以控制球形近似的程度和保真度，输出URDF文件仅通过球体指定碰撞几何。我们在多种标准机器人模型上演示了Foam，并展示了与真实碰撞几何相比，仅在保真度略有损失的情况下，碰撞检测和距离查询性能有所提升。我们开源了Foam作为Python库和容器化命令行应用，以促进机器人社区的采用。 
+
+---
+# Transformable Modular Robots: A CPG-Based Approach to Independent and Collective Locomotion 
+
+**Title (ZH)**: 基于CPG的方法实现可变形模块化机器人独立与集体运动 
+
+**Authors**: Jiayu Ding, Rohit Jakkula, Tom Xiao, Zhenyu Gan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.13674)  
+
+**Abstract**: Modular robotics enables the development of versatile and adaptive robotic systems with autonomous reconfiguration. This paper presents a modular robotic system in which each module has independent actuation, battery power, and control, allowing both individual mobility and coordinated locomotion. A hierarchical Central Pattern Generator (CPG) framework governs motion, with a low-level CPG controlling individual modules and a high-level CPG synchronizing inter-module coordination, enabling smooth transitions between independent and collective behaviors. To validate the system, we conduct simulations in MuJoCo and hardware experiments, evaluating locomotion across different configurations. We first analyze single-module motion, followed by two-module cooperative locomotion. Results demonstrate the effectiveness of the CPG-based control framework in achieving robust, flexible, and scalable locomotion. The proposed modular architecture has potential applications in search and rescue, environmental monitoring, and autonomous exploration, where adaptability and reconfigurability are essential. 
+
+**Abstract (ZH)**: 模块化机器人技术 enables 协调与适应性机器人系统的开发，具有自主重构能力。本文介绍了一种模块化机器人系统，其中每个模块具有独立的动力、电池和控制，既支持个体移动，也支持协调运动。一个分层的中枢模式生成器（CPG）框架控制运动，低层次的CPG 控制个体模块，高层次的CPG 协调跨模块的同步，使个体和集体行为之间实现平滑过渡。为了验证该系统，我们在MuJoCo中进行了模拟实验并在硬件上进行了实验，评估了不同配置下的运动。我们首先分析了单模块运动，然后分析了双模块协同运动。结果表明，基于CPG的控制框架在实现稳健、灵活和可扩展的运动方面是有效的。提出的一种模块化架构在搜索与救援、环境监测和自主探索等领域具有潜在应用价值，尤其是适应性和重构能力是关键因素。 
+
+---
+# Online Signature Verification based on the Lagrange formulation with 2D and 3D robotic models 
+
+**Title (ZH)**: 基于拉格朗日形式化方法的在线签名验证：二维和三维机器人模型应用 
+
+**Authors**: Moises Diaz, Miguel A. Ferrer, Juan M. Gil, Rafael Rodriguez, Peirong Zhang, Lianwen Jin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.13573)  
+
+**Abstract**: Online Signature Verification commonly relies on function-based features, such as time-sampled horizontal and vertical coordinates, as well as the pressure exerted by the writer, obtained through a digitizer. Although inferring additional information about the writers arm pose, kinematics, and dynamics based on digitizer data can be useful, it constitutes a challenge. In this paper, we tackle this challenge by proposing a new set of features based on the dynamics of online signatures. These new features are inferred through a Lagrangian formulation, obtaining the sequences of generalized coordinates and torques for 2D and 3D robotic arm models. By combining kinematic and dynamic robotic features, our results demonstrate their significant effectiveness for online automatic signature verification and achieving state-of-the-art results when integrated into deep learning models. 
+
+**Abstract (ZH)**: 在线签名验证通常依赖于基于功能的特征，如由数字化仪获取的时间采样水平和垂直坐标，以及书写者施加的压力。虽然可以从数字化仪数据中推断书写者手臂姿势、运动学和动力学的额外信息是有用的，但这构成了一个挑战。在本文中，我们通过提出基于在线签名动力学的新特征集来应对这一挑战。这些新特征通过拉格朗日形式化方法推断，获取了2D和3D机械臂模型的一般坐标和扭矩序列。通过结合运动学和动力学机械臂特征，我们的结果证明了其在在线自动签名验证中的显著效果，并且在与深度学习模型集成时达到了最先进的性能。 
+
+---
+# Robust Safety Critical Control Under Multiple State and Input Constraints: Volume Control Barrier Function Method 
+
+**Title (ZH)**: 多状态和输入约束下的鲁棒安全关键控制：体积控制障碍函数方法 
+
+**Authors**: Jinyang Dong, Shizhen Wu, Rui Liu, Xiao Liang, Biao Lu, Yongchun Fang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.13996)  
+
+**Abstract**: In this paper, the safety-critical control problem for uncertain systems under multiple control barrier function (CBF) constraints and input constraints is investigated. A novel framework is proposed to generate a safety filter that minimizes changes to reference inputs when safety risks arise, ensuring a balance between safety and performance. A nonlinear disturbance observer (DOB) based on the robust integral of the sign of the error (RISE) is used to estimate system uncertainties, ensuring that the estimation error converges to zero exponentially. This error bound is integrated into the safety-critical controller to reduce conservativeness while ensuring safety. To further address the challenges arising from multiple CBF and input constraints, a novel Volume CBF (VCBF) is proposed by analyzing the feasible space of the quadratic programming (QP) problem. % ensuring solution feasibility by keeping the volume as a positive value. To ensure that the feasible space does not vanish under disturbances, a DOB-VCBF-based method is introduced, ensuring system safety while maintaining the feasibility of the resulting QP. Subsequently, several groups of simulation and experimental results are provided to validate the effectiveness of the proposed controller. 
+
+**Abstract (ZH)**: 基于多重控制屏障函数和输入约束的不确定系统安全关键控制问题研究 
+
+---
+# Robust Detection of Extremely Thin Lines Using 0.2mm Piano Wire 
+
+**Title (ZH)**: 使用0.2mm 钢琴 Wire 稳健检测极细线条 
+
+**Authors**: Jisoo Hong, Youngjin Jung, Jihwan Bae, Seungho Song, Sung-Woo Kang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.13473)  
+
+**Abstract**: This study developed an algorithm capable of detecting a reference line (a 0.2 mm thick piano wire) to accurately determine the position of an automated installation robot within an elevator shaft. A total of 3,245 images were collected from the experimental tower of H Company, the leading elevator manufacturer in South Korea, and the detection performance was evaluated using four experimental approaches (GCH, GSCH, GECH, FCH). During the initial image processing stage, Gaussian blurring, sharpening filter, embossing filter, and Fourier Transform were applied, followed by Canny Edge Detection and Hough Transform. Notably, the method was developed to accurately extract the reference line by averaging the x-coordinates of the lines detected through the Hough Transform. This approach enabled the detection of the 0.2 mm thick piano wire with high accuracy, even in the presence of noise and other interfering factors (e.g., concrete cracks inside the elevator shaft or safety bars for filming equipment). The experimental results showed that Experiment 4 (FCH), which utilized Fourier Transform in the preprocessing stage, achieved the highest detection rate for the LtoL, LtoR, and RtoL datasets. Experiment 2(GSCH), which applied Gaussian blurring and a sharpening filter, demonstrated superior detection performance on the RtoR dataset. This study proposes a reference line detection algorithm that enables precise position calculation and control of automated robots in elevator shaft installation. Moreover, the developed method shows potential for applicability even in confined working spaces. Future work aims to develop a line detection algorithm equipped with machine learning-based hyperparameter tuning capabilities. 
+
+**Abstract (ZH)**: 本研究开发了一种算法，用于检测参考线（0.2 mm厚的钢琴线），以准确确定电梯井内自动化安装机器人的位置。研究在韩国领先的电梯制造商H公司实验塔采集了3,245张图像，并通过四种实验方法（GCH、GSCH、GECH、FCH）评估了检测性能。在初始图像处理阶段，研究分别应用了高斯模糊、锐化滤波、浮雕滤波和傅里叶变换，随后进行了Canny边缘检测和霍夫变换。该方法通过霍夫变换检测的线的x坐标平均值得到，能够准确提取参考线，即使在有噪音和其他干扰因素（如电梯井内的混凝土裂缝或拍摄设备的安全杠）的情况下，仍能准确检测0.2 mm厚的钢琴线。实验结果表明，第4次实验（FCH），在预处理阶段使用傅里叶变换，对LtoL、LtoR和RtoL数据集的检测率最高。第2次实验（GSCH），采用高斯模糊和锐化滤波，对RtoR数据集的检测性能表现出色。本研究提出了一种参考线检测算法，可实现电梯井安装中自动化机器人的精确位置计算与控制，并展示了在受限工作空间中应用的潜力。未来工作将致力于开发具有基于机器学习的超参数调整能力的线检测算法。 
+
+---

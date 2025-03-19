@@ -1,0 +1,455 @@
+# Manual, Semi or Fully Autonomous Flipper Control? A Framework for Fair Comparison 
+
+**Title (ZH)**: 手动、半自动或全自动鳍控？一种公平比较框架 
+
+**Authors**: Valentýn Číhala, Martin Pecka, Tomáš Svoboda, Karel Zimmermann  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.14389)  
+
+**Abstract**: We investigated the performance of existing semi- and fully autonomous methods for controlling flipper-based skid-steer robots. Our study involves reimplementation of these methods for fair comparison and it introduces a novel semi-autonomous control policy that provides a compelling trade-off among current state-of-the-art approaches. We also propose new metrics for assessing cognitive load and traversal quality and offer a benchmarking interface for generating Quality-Load graphs from recorded data. Our results, presented in a 2D Quality-Load space, demonstrate that the new control policy effectively bridges the gap between autonomous and manual control methods. Additionally, we reveal a surprising fact that fully manual, continuous control of all six degrees of freedom remains highly effective when performed by an experienced operator on a well-designed analog controller from third person view. 
+
+**Abstract (ZH)**: 我们研究了现有基于翻转轮的差动驱动机器人自主和半自主控制方法的性能，并提出了一种新的半自主控制策略，该策略在当前最先进的方法之间提供了令人信服的权衡。我们还提出了评估认知负载和穿越质量的新指标，并提供了一个基准测试接口，用于从记录数据生成质量-负载图。我们的结果显示，新控制策略有效地弥合了自主控制和手动控制方法之间的差距。此外，我们揭示了一个令人惊讶的事实，即经验操作员在第三人称视角下使用精心设计的模拟控制器手动连续控制所有六个自由度仍然非常有效。 
+
+---
+# Flying in Highly Dynamic Environments with End-to-end Learning Approach 
+
+**Title (ZH)**: 在端到端学习方法下高度动态环境中的飞行控制 
+
+**Authors**: Xiyu Fan, Minghao Lu, Bowen Xu, Peng Lu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.14352)  
+
+**Abstract**: Obstacle avoidance for unmanned aerial vehicles like quadrotors is a popular research topic. Most existing research focuses only on static environments, and obstacle avoidance in environments with multiple dynamic obstacles remains challenging. This paper proposes a novel deep-reinforcement learning-based approach for the quadrotors to navigate through highly dynamic environments. We propose a lidar data encoder to extract obstacle information from the massive point cloud data from the lidar. Multi frames of historical scans will be compressed into a 2-dimension obstacle map while maintaining the obstacle features required. An end-to-end deep neural network is trained to extract the kinematics of dynamic and static obstacles from the obstacle map, and it will generate acceleration commands to the quadrotor to control it to avoid these obstacles. Our approach contains perception and navigating functions in a single neural network, which can change from a navigating state into a hovering state without mode switching. We also present simulations and real-world experiments to show the effectiveness of our approach while navigating in highly dynamic cluttered environments. 
+
+**Abstract (ZH)**: 基于深度强化学习的四旋翼无人机在高动态环境中的避障方法 
+
+---
+# ADAPT: An Autonomous Forklift for Construction Site Operation 
+
+**Title (ZH)**: ADAPT: 一种自主施工用货叉车 
+
+**Authors**: Johannes Huemer, Markus Murschitz, Matthias Schörghuber, Lukas Reisinger, Thomas Kadiofsky, Christoph Weidinger, Mario Niedermeyer, Benedikt Widy, Marcel Zeilinger, Csaba Beleznai, Tobias Glück, Andreas Kugi, Patrik Zips  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.14331)  
+
+**Abstract**: Efficient material logistics play a critical role in controlling costs and schedules in the construction industry. However, manual material handling remains prone to inefficiencies, delays, and safety risks. Autonomous forklifts offer a promising solution to streamline on-site logistics, reducing reliance on human operators and mitigating labor shortages. This paper presents the development and evaluation of the Autonomous Dynamic All-terrain Pallet Transporter (ADAPT), a fully autonomous off-road forklift designed for construction environments. Unlike structured warehouse settings, construction sites pose significant challenges, including dynamic obstacles, unstructured terrain, and varying weather conditions. To address these challenges, our system integrates AI-driven perception techniques with traditional approaches for decision making, planning, and control, enabling reliable operation in complex environments. We validate the system through extensive real-world testing, comparing its long-term performance against an experienced human operator across various weather conditions. We also provide a comprehensive analysis of challenges and key lessons learned, contributing to the advancement of autonomous heavy machinery. Our findings demonstrate that autonomous outdoor forklifts can operate near human-level performance, offering a viable path toward safer and more efficient construction logistics. 
+
+**Abstract (ZH)**: 自主动态全地形托盘运输器（ADAPT）在建筑行业的高效物料物流中的开发与评估 
+
+---
+# Pushing Everything Everywhere All At Once: Probabilistic Prehensile Pushing 
+
+**Title (ZH)**: 把一切推送到每一个地方，同时进行：概率性的prehensile推举 
+
+**Authors**: Patrizio Perugini, Jens Lundell, Katharina Friedl, Danica Kragic  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.14268)  
+
+**Abstract**: We address prehensile pushing, the problem of manipulating a grasped object by pushing against the environment. Our solution is an efficient nonlinear trajectory optimization problem relaxed from an exact mixed integer non-linear trajectory optimization formulation. The critical insight is recasting the external pushers (environment) as a discrete probability distribution instead of binary variables and minimizing the entropy of the distribution. The probabilistic reformulation allows all pushers to be used simultaneously, but at the optimum, the probability mass concentrates onto one due to the entropy minimization. We numerically compare our method against a state-of-the-art sampling-based baseline on a prehensile pushing task. The results demonstrate that our method finds trajectories 8 times faster and at a 20 times lower cost than the baseline. Finally, we demonstrate that a simulated and real Franka Panda robot can successfully manipulate different objects following the trajectories proposed by our method. Supplementary materials are available at this https URL. 
+
+**Abstract (ZH)**: 我们解决了抓取物体并通过环境施加推力进行操作的prehensile pushing问题。我们的解决方案是从精确的混合整数非线性轨迹优化形式松驰而来的一个高效的非线性轨迹优化问题。关键洞察是将外部推力器（环境）重新定义为一个离散概率分布，而不是二进制变量，并且通过最小化分布的熵来实现。概率重构允许所有推力器同时使用，但在最优情况下，概率质量会集中在其中一个推力器上，这是由于熵最小化所致。我们对prehensile pushing任务与最先进的基于采样的基准方法进行了数值比较。结果表明，我们的方法比基准方法快8倍，并且成本低20倍。最后，我们展示了模拟和实际的Franka Panda机器人能够成功地按照我们的方法提出的轨迹操作不同物体。补充材料可在以下链接获取：这个 https URL。 
+
+---
+# A Chain-Driven, Sandwich-Legged Quadruped Robot: Design and Experimental Analysis 
+
+**Title (ZH)**: 由链驱动的三明治腿四足机器人：设计与实验分析 
+
+**Authors**: Aman Singh, Bhavya Giri Goswami, Ketan Nehete, Shishir N. Y. Kolathaya  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.14255)  
+
+**Abstract**: This paper introduces a chain-driven, sandwich-legged, mid-size quadruped robot designed as an accessible research platform. The design prioritizes enhanced locomotion capabilities, improved reliability and safety of the actuation system, and simplified, cost-effective manufacturing processes. Locomotion performance is optimized through a sandwiched leg design and a dual-motor configuration, reducing leg inertia for agile movements. Reliability and safety are achieved by integrating robust cable strain reliefs, efficient heat sinks for motor thermal management, and mechanical limits to restrict leg motion. Simplified design considerations include a quasi-direct drive (QDD) actuator and the adoption of low-cost fabrication techniques, such as laser cutting and 3D printing, to minimize cost and ensure rapid prototyping. The robot weighs approximately 25 kg and is developed at a cost under \$8000, making it a scalable and affordable solution for robotics research. Experimental validations demonstrate the platform's capability to execute trot and crawl gaits on flat terrain and slopes, highlighting its potential as a versatile and reliable quadruped research platform. 
+
+**Abstract (ZH)**: 一种链驱动的三明治腿中型 quadruped 机器人：面向 accessible 研究平台的设计与实现 
+
+---
+# CTSAC: Curriculum-Based Transformer Soft Actor-Critic for Goal-Oriented Robot Exploration 
+
+**Title (ZH)**: 基于课程学习的Transformer软Actor- Critic算法及其在目标导向机器人探索中的应用 
+
+**Authors**: Chunyu Yang, Shengben Bi, Yihui Xu, Xin Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.14254)  
+
+**Abstract**: With the increasing demand for efficient and flexible robotic exploration solutions, Reinforcement Learning (RL) is becoming a promising approach in the field of autonomous robotic exploration. However, current RL-based exploration algorithms often face limited environmental reasoning capabilities, slow convergence rates, and substantial challenges in Sim-To-Real (S2R) transfer. To address these issues, we propose a Curriculum Learning-based Transformer Reinforcement Learning Algorithm (CTSAC) aimed at improving both exploration efficiency and transfer performance. To enhance the robot's reasoning ability, a Transformer is integrated into the perception network of the Soft Actor-Critic (SAC) framework, leveraging historical information to improve the farsightedness of the strategy. A periodic review-based curriculum learning is proposed, which enhances training efficiency while mitigating catastrophic forgetting during curriculum transitions. Training is conducted on the ROS-Gazebo continuous robotic simulation platform, with LiDAR clustering optimization to further reduce the S2R gap. Experimental results demonstrate the CTSAC algorithm outperforms the state-of-the-art non-learning and learning-based algorithms in terms of success rate and success rate-weighted exploration time. Moreover, real-world experiments validate the strong S2R transfer capabilities of CTSAC. 
+
+**Abstract (ZH)**: 基于 Curriculum Learning 的 Transformer 强化学习探索算法（CTSAC）：提高探索效率与迁移性能 
+
+---
+# GeoFlow-SLAM: A Robust Tightly-Coupled RGBD-Inertial Fusion SLAM for Dynamic Legged Robotics 
+
+**Title (ZH)**: GeoFlow-SLAM: 一种用于动态腿足式机器人稳健的RGBD-惯性紧耦合融合SLAM 
+
+**Authors**: Tingyang Xiao, Xiaolin Zhou, Liu Liu, Wei Sui, Wei Feng, Jiaxiong Qiu, Xinjie Wang, Zhizhong Su  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.14247)  
+
+**Abstract**: This paper presents GeoFlow-SLAM, a robust and effective Tightly-Coupled RGBD-inertial SLAM for legged robots operating in highly dynamic this http URL integrating geometric consistency, legged odometry constraints, and dual-stream optical flow (GeoFlow), our method addresses three critical challenges:feature matching and pose initialization failures during fast locomotion and visual feature scarcity in texture-less this http URL, in rapid motion scenarios, feature matching is notably enhanced by leveraging dual-stream optical flow, which combines prior map points and poses. Additionally, we propose a robust pose initialization method for fast locomotion and IMU error in legged robots, integrating IMU/Legged odometry, inter-frame Perspective-n-Point (PnP), and Generalized Iterative Closest Point (GICP). Furthermore, a novel optimization framework that tightly couples depth-to-map and GICP geometric constraints is first introduced to improve the robustness and accuracy in long-duration, visually texture-less environments. The proposed algorithms achieve state-of-the-art (SOTA) on collected legged robots and open-source datasets. To further promote research and development, the open-source datasets and code will be made publicly available at this https URL 
+
+**Abstract (ZH)**: This paper presents GeoFlow-SLAM：一种适用于高度动态环境中的腿足机器人RGBD-惯性紧密耦合SLAM方法 
+
+---
+# Stochastic Trajectory Prediction under Unstructured Constraints 
+
+**Title (ZH)**: 不规则约束下的随机轨迹预测 
+
+**Authors**: Hao Ma, Zhiqiang Pu, Shijie Wang, Boyin Liu, Huimu Wang, Yanyan Liang, Jianqiang Yi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.14203)  
+
+**Abstract**: Trajectory prediction facilitates effective planning and decision-making, while constrained trajectory prediction integrates regulation into prediction. Recent advances in constrained trajectory prediction focus on structured constraints by constructing optimization objectives. However, handling unstructured constraints is challenging due to the lack of differentiable formal definitions. To address this, we propose a novel method for constrained trajectory prediction using a conditional generative paradigm, named Controllable Trajectory Diffusion (CTD). The key idea is that any trajectory corresponds to a degree of conformity to a constraint. By quantifying this degree and treating it as a condition, a model can implicitly learn to predict trajectories under unstructured constraints. CTD employs a pre-trained scoring model to predict the degree of conformity (i.e., a score), and uses this score as a condition for a conditional diffusion model to generate trajectories. Experimental results demonstrate that CTD achieves high accuracy on the ETH/UCY and SDD benchmarks. Qualitative analysis confirms that CTD ensures adherence to unstructured constraints and can predict trajectories that satisfy combinatorial constraints. 
+
+**Abstract (ZH)**: 约束轨迹预测有助于有效规划和决策，而受限轨迹预测将调节融合到预测中。最近在受限轨迹预测方面的进展集中在通过构建优化目标来处理结构化约束。然而，由于缺乏可微分的形式化定义，处理非结构化约束具有挑战性。为了解决这一问题，我们提出了一种基于条件生成范式的新型受限轨迹预测方法，名为可控轨迹扩散（CTD）。核心思想是任何轨迹都对应着对约束的一种遵从度。通过量化这种遵从度并将其作为条件，模型可以隐式学习在非结构化约束下预测轨迹。CTD 使用预训练的评分模型预测遵从度（即分数），并将该分数作为条件供条件扩散模型生成轨迹。实验结果表明，CTD 在 ETH/UCY 和 SDD 验证基准上实现了高精度。定性分析证实，CTD 确保遵守非结构化约束，并能预测满足组合约束的轨迹。 
+
+---
+# Variable Time-Step MPC for Agile Multi-Rotor UAV Interception of Dynamic Targets 
+
+**Title (ZH)**: agile多旋翼无人机对动态目标的变时间步长 MPC � 戳击拦截控制 
+
+**Authors**: Atharva Ghotavadekar, František Nekovář, Martin Saska, Jan Faigl  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.14184)  
+
+**Abstract**: Agile trajectory planning can improve the efficiency of multi-rotor Uncrewed Aerial Vehicles (UAVs) in scenarios with combined task-oriented and kinematic trajectory planning, such as monitoring spatio-temporal phenomena or intercepting dynamic targets. Agile planning using existing non-linear model predictive control methods is limited by the number of planning steps as it becomes increasingly computationally demanding. That reduces the prediction horizon length, leading to a decrease in solution quality. Besides, the fixed time-step length limits the utilization of the available UAV dynamics in the target neighborhood. In this paper, we propose to address these limitations by introducing variable time steps and coupling them with the prediction horizon length. A simplified point-mass motion primitive is used to leverage the differential flatness of quadrotor dynamics and the generation of feasible trajectories in the flat output space. Based on the presented evaluation results and experimentally validated deployment, the proposed method increases the solution quality by enabling planning for long flight segments but allowing tightly sampled maneuvering. 
+
+**Abstract (ZH)**: 敏捷轨迹规划可以在结合任务导向和动力学轨迹规划的情景下，如监测时空现象或拦截动态目标，提高多旋翼无人机(UAVs)的效率。现有基于非线性模型预测控制的敏捷规划方法由于计算需求增加而受限于规划步数，这缩短了预测 horizon 长度并降低了解的质量。此外，固定的时步长度限制了在目标区域利用可用的多旋翼动态能力。本文通过引入可变时间步长并将其与预测 horizon 长度耦合来解决这些限制。利用点质点运动素简化四旋翼动力学的微分平坦性和生成平展输出空间中的可行轨迹。基于呈现的评估结果和实验验证部署，所提出的方法通过允许紧密采样的机动来提高解的质量，同时支持长时间飞行段的规划。 
+
+---
+# Bridging Past and Future: End-to-End Autonomous Driving with Historical Prediction and Planning 
+
+**Title (ZH)**: past和未来接轨：基于历史预测与规划的端到端自动驾驶 
+
+**Authors**: Bozhou Zhang, Nan Song, Xin Jin, Li Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.14182)  
+
+**Abstract**: End-to-end autonomous driving unifies tasks in a differentiable framework, enabling planning-oriented optimization and attracting growing attention. Current methods aggregate historical information either through dense historical bird's-eye-view (BEV) features or by querying a sparse memory bank, following paradigms inherited from detection. However, we argue that these paradigms either omit historical information in motion planning or fail to align with its multi-step nature, which requires predicting or planning multiple future time steps. In line with the philosophy of future is a continuation of past, we propose BridgeAD, which reformulates motion and planning queries as multi-step queries to differentiate the queries for each future time step. This design enables the effective use of historical prediction and planning by applying them to the appropriate parts of the end-to-end system based on the time steps, which improves both perception and motion planning. Specifically, historical queries for the current frame are combined with perception, while queries for future frames are integrated with motion planning. In this way, we bridge the gap between past and future by aggregating historical insights at every time step, enhancing the overall coherence and accuracy of the end-to-end autonomous driving pipeline. Extensive experiments on the nuScenes dataset in both open-loop and closed-loop settings demonstrate that BridgeAD achieves state-of-the-art performance. 
+
+**Abstract (ZH)**: 端到端自主驾驶统一差异可微框架中的任务，实现面向规划的优化并引起广泛关注 
+
+---
+# GPU-Accelerated Motion Planning of an Underactuated Forestry Crane in Cluttered Environments 
+
+**Title (ZH)**: cluttered 环境中不足驱动林业起重机的GPU加速运动规划 
+
+**Authors**: Minh Nhat Vu, Gerald Ebmer, Alexander Watcher, Marc-Philip Ecker, Giang Nguyen, Tobias Glueck  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.14160)  
+
+**Abstract**: Autonomous large-scale machine operations require fast, efficient, and collision-free motion planning while addressing unique challenges such as hydraulic actuation limits and underactuated joint dynamics. This paper presents a novel two-step motion planning framework designed for an underactuated forestry crane. The first step employs GPU-accelerated stochastic optimization to rapidly compute a globally shortest collision-free path. The second step refines this path into a dynamically feasible trajectory using a trajectory optimizer that ensures compliance with system dynamics and actuation constraints. The proposed approach is benchmarked against conventional techniques, including RRT-based methods and purely optimization-based approaches. Simulation results demonstrate substantial improvements in computation speed and motion feasibility, making this method highly suitable for complex crane systems. 
+
+**Abstract (ZH)**: 自主大规模机器操作需要快速、高效且无碰撞的运动规划，同时应对液压执行机构限制和欠驱动关节动力学等独特挑战。本文提出了一种针对欠驱动林业起重机的新型两步运动规划框架。第一步采用GPU加速的随机优化快速计算全局最短无碰撞路径。第二步使用轨迹优化器将该路径细化为动态可行的轨迹，确保符合系统动力学和执行机构约束。所提出的方法与基于RRT的方法和纯基于优化的方法进行了对比测试。仿真结果表明，该方法在计算速度和运动可行性方面有显著改进，使其非常适合复杂的起重系统。 
+
+---
+# Foundation Feature-Driven Online End-Effector Pose Estimation: A Marker-Free and Learning-Free Approach 
+
+**Title (ZH)**: 基于基础特征的在线末端执行器姿态估计：一种无标志物且无学习的 Approach 
+
+**Authors**: Tianshu Wu, Jiyao Zhang, Shiqian Liang, Zhengxiao Han, Hao Dong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.14051)  
+
+**Abstract**: Accurate transformation estimation between camera space and robot space is essential. Traditional methods using markers for hand-eye calibration require offline image collection, limiting their suitability for online self-calibration. Recent learning-based robot pose estimation methods, while advancing online calibration, struggle with cross-robot generalization and require the robot to be fully visible. This work proposes a Foundation feature-driven online End-Effector Pose Estimation (FEEPE) algorithm, characterized by its training-free and cross end-effector generalization capabilities. Inspired by the zero-shot generalization capabilities of foundation models, FEEPE leverages pre-trained visual features to estimate 2D-3D correspondences derived from the CAD model and target image, enabling 6D pose estimation via the PnP algorithm. To resolve ambiguities from partial observations and symmetry, a multi-historical key frame enhanced pose optimization algorithm is introduced, utilizing temporal information for improved accuracy. Compared to traditional hand-eye calibration, FEEPE enables marker-free online calibration. Unlike robot pose estimation, it generalizes across robots and end-effectors in a training-free manner. Extensive experiments demonstrate its superior flexibility, generalization, and performance. 
+
+**Abstract (ZH)**: 基于基础特征的在线末端执行器姿态估计（FEEPE）算法 
+
+---
+# COLSON: Controllable Learning-Based Social Navigation via Diffusion-Based Reinforcement Learning 
+
+**Title (ZH)**: COLSON: 基于扩散增强 reinforcement 学习的可控社会导航 
+
+**Authors**: Yuki Tomita, Kohei Matsumoto, Yuki Hyodo, Ryo Kurazume  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.13934)  
+
+**Abstract**: Mobile robot navigation in dynamic environments with pedestrian traffic is a key challenge in the development of autonomous mobile service robots. Recently, deep reinforcement learning-based methods have been actively studied and have outperformed traditional rule-based approaches owing to their optimization capabilities. Among these, methods that assume a continuous action space typically rely on a Gaussian distribution assumption, which limits the flexibility of generated actions. Meanwhile, the application of diffusion models to reinforcement learning has advanced, allowing for more flexible action distributions compared with Gaussian distribution-based approaches. In this study, we applied a diffusion-based reinforcement learning approach to social navigation and validated its effectiveness. Furthermore, by leveraging the characteristics of diffusion models, we propose an extension that enables post-training action smoothing and adaptation to static obstacle scenarios not considered during the training steps. 
+
+**Abstract (ZH)**: 基于扩散模型的强化学习方法在动态步行人流环境中移动机器人社会导航的研究 
+
+---
+# A bio-inspired sand-rolling robot: effect of body shape on sand rolling performance 
+
+**Title (ZH)**: 受生物启发的沙滚机器人：身体形状对沙滚性能的影响 
+
+**Authors**: Xingjue Liao, Wenhao Liu, Hao Wu, Feifei Qian  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.13919)  
+
+**Abstract**: The capability of effectively moving on complex terrains such as sand and gravel can empower our robots to robustly operate in outdoor environments, and assist with critical tasks such as environment monitoring, search-and-rescue, and supply delivery. Inspired by the Mount Lyell salamander's ability to curl its body into a loop and effectively roll down {\Revision hill slopes}, in this study we develop a sand-rolling robot and investigate how its locomotion performance is governed by the shape of its body. We experimentally tested three different body shapes: Hexagon, Quadrilateral, and Triangle. We found that Hexagon and Triangle can achieve a faster rolling speed on sand, but exhibited more frequent failures of getting stuck. Analysis of the interaction between robot and sand revealed the failure mechanism: the deformation of the sand produced a local ``sand incline'' underneath robot contact segments, increasing the effective region of supporting polygon (ERSP) and preventing the robot from shifting its center of mass (CoM) outside the ERSP to produce sustainable rolling. Based on this mechanism, a highly-simplified model successfully captured the critical body pitch for each rolling shape to produce sustained rolling on sand, and informed design adaptations that mitigated the locomotion failures and improved robot speed by more than 200$\%$. Our results provide insights into how locomotors can utilize different morphological features to achieve robust rolling motion across deformable substrates. 
+
+**Abstract (ZH)**: 能够在砂砾等复杂地形上有效移动的机器人能力，能够使我们的机器人在户外环境中稳健地操作，并协助环境监测、搜救和物资配送等关键任务。受Mount Lyell火nze蟾蜍卷曲身体沿坡滚动的能力启发，本研究开发了一种砂滚动机器人，并探讨了其运动性能如何受到身体形状的影响。实验测试了三种不同形状：六边形、四边形和三角形。研究发现，六边形和三角形在砂上滚动速度更快，但更容易卡住。通过对机器人与砂交互作用的分析揭示了失败机制：砂的变形在机器人接触段下方形成了局部“砂坡”，增加了有效支撑多边形区域，并阻止机器人将重心移出该区域以持续滚动。基于这一机制，一个高度简化的模型成功捕捉了每种滚动形状实现持续砂上滚动的关键身体倾斜角度，并为设计改进提供了指导，这些改进将移动失败率降低了超过200%，同时提高了机器人速度。我们的研究为如何利用不同的形态特征实现跨越变形基质的稳健滚动运动提供了见解。 
+
+---
+# Learning Bimanual Manipulation via Action Chunking and Inter-Arm Coordination with Transformers 
+
+**Title (ZH)**: 基于动作分块和臂间协调的双臂 manipulation 学习 
+
+**Authors**: Tomohiro Motoda, Ryo Hanai, Ryoichi Nakajo, Masaki Murooka, Floris Erich, Yukiyasu Domae  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.13916)  
+
+**Abstract**: Robots that can operate autonomously in a human living environment are necessary to have the ability to handle various tasks flexibly. One crucial element is coordinated bimanual movements that enable functions that are difficult to perform with one hand alone. In recent years, learning-based models that focus on the possibilities of bimanual movements have been proposed. However, the high degree of freedom of the robot makes it challenging to reason about control, and the left and right robot arms need to adjust their actions depending on the situation, making it difficult to realize more dexterous tasks. To address the issue, we focus on coordination and efficiency between both arms, particularly for synchronized actions. Therefore, we propose a novel imitation learning architecture that predicts cooperative actions. We differentiate the architecture for both arms and add an intermediate encoder layer, Inter-Arm Coordinated transformer Encoder (IACE), that facilitates synchronization and temporal alignment to ensure smooth and coordinated actions. To verify the effectiveness of our architectures, we perform distinctive bimanual tasks. The experimental results showed that our model demonstrated a high success rate for comparison and suggested a suitable architecture for the policy learning of bimanual manipulation. 
+
+**Abstract (ZH)**: 具有自主操作能力以适应人类生活环境的机器人需要具备灵活处理各种任务的能力，其中一个关键要素是协调的双臂运动，这能够实现单手难以完成的功能。近年来，专注于双臂运动可能性的学习模型已被提出。然而，机器人具有很高的自由度，这使得控制推理变得困难，左右机器人手臂需要根据情况调整动作，使得实现更灵巧的任务变得困难。为解决这一问题，我们重点关注双臂之间的协调与效率，特别是同步动作。因此，我们提出了一种新颖的模仿学习架构，用于预测协同动作。该架构针对双臂进行分化，并添加了一个中间编码器层——双臂协调变换编码器（IACE），以促进同步和时间对齐，确保动作流畅且协调。为了验证我们架构的有效性，我们执行了独特的双臂任务。实验结果表明，我们的模型在比较中显示了高成功率，并建议了一种适合双臂操作策略学习的架构。 
+
+---
+# Project URSULA: Design of a Robotic Squid for Underwater Manipulation 
+
+**Title (ZH)**: Project URSULA: 深海Manipulation用仿生机器乌贼设计 
+
+**Authors**: Berke Gur  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.13913)  
+
+**Abstract**: With this paper, the design of a biomimetic robotic squid (dubbed URSULA) developed for dexterous underwater manipulation is presented. The robot serves as a test bed for several novel underwater technologies such as soft manipulators, propeller-less propulsion, model mediated tele-operation with video and haptic feedback, sonar-based underwater mapping, localization, and navigation, and high bandwidth visible light communications. Following the finalization of the detailed design, a prototype is manufactured and is currently undergoing pool tests. 
+
+**Abstract (ZH)**: 本论文提出了一种仿生机器人乌贼（名为URSULA）的设计，该机器人用于智能水下操作，作为多种新型水下技术的测试平台，包括软体操作器、无螺旋桨推进、基于模型的远程操作（伴有视觉和力觉反馈）、基于声纳的水下测绘、定位和导航，以及高带宽可见光通信。在详细设计完成后，已制造出原型并正在进行池塘测试。 
+
+---
+# Evaluating Global Geo-alignment for Precision Learned Autonomous Vehicle Localization using Aerial Data 
+
+**Title (ZH)**: 基于航空数据的全球地理对齐方法在精准学习自动驾驶车辆定位中的评估 
+
+**Authors**: Yi Yang, Xuran Zhao, H. Charles Zhao, Shumin Yuan, Samuel M. Bateman, Tiffany A. Huang, Chris Beall, Will Maddern  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.13896)  
+
+**Abstract**: Recently there has been growing interest in the use of aerial and satellite map data for autonomous vehicles, primarily due to its potential for significant cost reduction and enhanced scalability. Despite the advantages, aerial data also comes with challenges such as a sensor-modality gap and a viewpoint difference gap. Learned localization methods have shown promise for overcoming these challenges to provide precise metric localization for autonomous vehicles. Most learned localization methods rely on coarsely aligned ground truth, or implicit consistency-based methods to learn the localization task -- however, in this paper we find that improving the alignment between aerial data and autonomous vehicle sensor data at training time is critical to the performance of a learning-based localization system. We compare two data alignment methods using a factor graph framework and, using these methods, we then evaluate the effects of closely aligned ground truth on learned localization accuracy through ablation studies. Finally, we evaluate a learned localization system using the data alignment methods on a comprehensive (1600km) autonomous vehicle dataset and demonstrate localization error below 0.3m and 0.5$^{\circ}$ sufficient for autonomous vehicle applications. 
+
+**Abstract (ZH)**: 近年来，人们越来越关注使用航空和卫星地图数据在自主车辆中的应用，主要得益于其在成本降低和扩展性增强方面的潜力。尽管有利之处众多，航空数据也带来了一些挑战，如传感器模态差距和视点差异差距。学习定位方法显示出克服这些挑战、为自主车辆提供精确的度量级定位的潜力。大多数学习定位方法依赖于粗略对齐的地面真实数据，或基于隐式一致性的方法来学习定位任务——然而，在本文中我们发现，在训练时提高航空数据与自主车辆传感器数据的对齐程度对于基于学习的定位系统性能至关重要。我们使用因子图框架比较了两种数据对齐方法，并通过消融研究评估紧密对齐的地面真实数据对学习定位准确性的影响。最后，我们在一个全面的（1600公里）自主车辆数据集上评估了使用数据对齐方法的学习定位系统，并展示了低于0.3米和0.5°的定位误差，足以满足自主车辆应用需求。 
+
+---
+# A Systematic Digital Engineering Approach to Verification & Validation of Autonomous Ground Vehicles in Off-Road Environments 
+
+**Title (ZH)**: 一种系统化的数字工程方法在非道路环境中对自主地面车辆进行验证与确认 
+
+**Authors**: Tanmay Vilas Samak, Chinmay Vilas Samak, Julia Brault, Cori Harber, Kirsten McCane, Jonathon Smereka, Mark Brudnak, David Gorsich, Venkat Krovi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.13787)  
+
+**Abstract**: The engineering community currently encounters significant challenges in the systematic development and validation of autonomy algorithms for off-road ground vehicles. These challenges are posed by unusually high test parameters and algorithmic variants. In order to address these pain points, this work presents an optimized digital engineering framework that tightly couples digital twin simulations with model-based systems engineering (MBSE) and model-based design (MBD) workflows. The efficacy of the proposed framework is demonstrated through an end-to-end case study of an autonomous light tactical vehicle (LTV) performing visual servoing to drive along a dirt road and reacting to any obstacles or environmental changes. The presented methodology allows for traceable requirements engineering, efficient variant management, granular parameter sweep setup, systematic test-case definition, and automated execution of the simulations. The candidate off-road autonomy algorithm is evaluated for satisfying requirements against a battery of 128 test cases, which is procedurally generated based on the test parameters (times of the day and weather conditions) and algorithmic variants (perception, planning, and control sub-systems). Finally, the test results and key performance indicators are logged, and the test report is generated automatically. This then allows for manual as well as automated data analysis with traceability and tractability across the digital thread. 
+
+**Abstract (ZH)**: 当前工程社区在系统开发和验证离路面地面车辆自主算法方面面临显著挑战，这些挑战源自异常高的测试参数和算法变体。为了应对这些痛点，本研究提出了一种优化的数字化工程框架，该框架紧密耦合数字孪生仿真与基于模型的系统工程（MBSE）和基于模型的设计（MBD）工作流。通过自主轻型战术车辆（LTV）在泥土道路上进行视觉伺服并应对任何障碍或环境变化的端到端案例研究，展示了所提框架的有效性。该方法允许可追溯的要求工程、高效的变体管理、精细的参数扫面设置、系统的测试案例定义以及模拟的自动化执行。针对基于测试参数（时间和天气条件）和算法变体（感知、规划和控制子系统）程序生成的128个测试案例，评估了候选的离路面自主算法是否满足要求。最后，记录测试结果和关键性能指标，并自动生成测试报告。这既支持手动也支持自动的数据分析，具有贯穿数字化生产线的可追溯性和可追踪性。 
+
+---
+# 16 Ways to Gallop: Energetics and Body Dynamics of High-Speed Quadrupedal Gaits 
+
+**Title (ZH)**: 16种飞跃方式：高速四足运动的能量学与身体动力学 
+
+**Authors**: Yasser G. Alqaham, Jing Cheng, Zhenyu Gan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.13716)  
+
+**Abstract**: Galloping is a common high-speed gait in both animals and quadrupedal robots, yet its energetic characteristics remain insufficiently explored. This study systematically analyzes a large number of possible galloping gaits by categorizing them based on the number of flight phases per stride and the phase relationships between the front and rear legs, following Hildebrand's framework for asymmetrical gaits. Using the A1 quadrupedal robot from Unitree, we model galloping dynamics as a hybrid dynamical system and employ trajectory optimization (TO) to minimize the cost of transport (CoT) across a range of speeds. Our results reveal that rotary and transverse gallop footfall sequences exhibit no fundamental energetic difference, despite variations in body yaw and roll motion. However, the number of flight phases significantly impacts energy efficiency: galloping with no flight phases is optimal at lower speeds, whereas galloping with two flight phases minimizes energy consumption at higher speeds. We validate these findings using a quadratic programming (QP)-based controller, developed in our previous work, in Gazebo simulations. These insights advance the understanding of quadrupedal locomotion energetics and may inform future legged robot designs for adaptive, energy-efficient gait transitions. 
+
+**Abstract (ZH)**: 高尿苷核苷酸在动物和四足机器人中的高频运动普遍存在但其能量特性尚未充分探究。本研究基于Hildebrand框架系统分析了大量可能的galloping步态，并通过腿部飞行相数和前后腿相位关系对这些步态进行了分类。使用Unitree的A1四足机器人，我们将galloping动力学建模为混合动力系统，并采用轨迹优化（TO）方法，在不同速度范围内最小化运输成本（CoT）。研究结果表明，旋转和横越gallop足落下序列在能量特性上无根本差异，尽管存在身体旋倾运动的差异。然而，飞行相数显著影响能量效率：在较低速度下，无飞行相的galloping最优化，而在较高速度下，具有两个飞行相的galloping能量消耗最小。我们利用我们之前工作开发的基于二次规划（QP）的控制器，在Gazebo仿真中验证了这些发现。这些洞见推进了四足运动能量学的理解，并可能为未来适应性强、能量效率高的步态过渡的腿部机器人设计提供指导。 
+
+---
+# Foam: A Tool for Spherical Approximation of Robot Geometry 
+
+**Title (ZH)**: 泡沫：一种用于机器人几何球形逼近的工具 
+
+**Authors**: Sai Coumar, Gilbert Chang, Nihar Kodkani, Zachary Kingston  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.13704)  
+
+**Abstract**: Many applications in robotics require primitive spherical geometry, especially in cases where efficient distance queries are necessary. Manual creation of spherical models is time-consuming and prone to errors. This paper presents Foam, a tool to generate spherical approximations of robot geometry from an input Universal Robot Description Format (URDF) file. Foam provides a robust preprocessing pipeline to handle mesh defects and a number of configuration parameters to control the level and approximation of the spherization, and generates an output URDF with collision geometry specified only by spheres. We demonstrate Foam on a number of standard robot models on common tasks, and demonstrate improved collision checking and distance query performance with only a minor loss in fidelity compared to the true collision geometry. We release our tool as an open source Python library and containerized command-line application to facilitate adoption across the robotics community. 
+
+**Abstract (ZH)**: 许多机器人应用需要基本的球面几何，尤其是在需要高效距离查询的情况下。手动创建球形模型既耗时又容易出错。本文介绍了一种名为Foam的工具，该工具可以从输入的Universal Robot Description Format (URDF) 文件生成机器人几何的球形近似。Foam提供了 robust 的预处理管道以处理网格缺陷，并提供了多种配置参数以控制球形近似的程度和保真度，输出URDF文件仅通过球体指定碰撞几何。我们在多种标准机器人模型上演示了Foam，并展示了与真实碰撞几何相比，仅在保真度略有损失的情况下，碰撞检测和距离查询性能有所提升。我们开源了Foam作为Python库和容器化命令行应用，以促进机器人社区的采用。 
+
+---
+# Transformable Modular Robots: A CPG-Based Approach to Independent and Collective Locomotion 
+
+**Title (ZH)**: 基于CPG的方法实现可变形模块化机器人独立与集体运动 
+
+**Authors**: Jiayu Ding, Rohit Jakkula, Tom Xiao, Zhenyu Gan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.13674)  
+
+**Abstract**: Modular robotics enables the development of versatile and adaptive robotic systems with autonomous reconfiguration. This paper presents a modular robotic system in which each module has independent actuation, battery power, and control, allowing both individual mobility and coordinated locomotion. A hierarchical Central Pattern Generator (CPG) framework governs motion, with a low-level CPG controlling individual modules and a high-level CPG synchronizing inter-module coordination, enabling smooth transitions between independent and collective behaviors. To validate the system, we conduct simulations in MuJoCo and hardware experiments, evaluating locomotion across different configurations. We first analyze single-module motion, followed by two-module cooperative locomotion. Results demonstrate the effectiveness of the CPG-based control framework in achieving robust, flexible, and scalable locomotion. The proposed modular architecture has potential applications in search and rescue, environmental monitoring, and autonomous exploration, where adaptability and reconfigurability are essential. 
+
+**Abstract (ZH)**: 模块化机器人技术 enables 协调与适应性机器人系统的开发，具有自主重构能力。本文介绍了一种模块化机器人系统，其中每个模块具有独立的动力、电池和控制，既支持个体移动，也支持协调运动。一个分层的中枢模式生成器（CPG）框架控制运动，低层次的CPG 控制个体模块，高层次的CPG 协调跨模块的同步，使个体和集体行为之间实现平滑过渡。为了验证该系统，我们在MuJoCo中进行了模拟实验并在硬件上进行了实验，评估了不同配置下的运动。我们首先分析了单模块运动，然后分析了双模块协同运动。结果表明，基于CPG的控制框架在实现稳健、灵活和可扩展的运动方面是有效的。提出的一种模块化架构在搜索与救援、环境监测和自主探索等领域具有潜在应用价值，尤其是适应性和重构能力是关键因素。 
+
+---
+# INPROVF: Leveraging Large Language Models to Repair High-level Robot Controllers from Assumption Violations 
+
+**Title (ZH)**: INPROVF：利用大规模语言模型从假设违反中修复高层机器人控制器 
+
+**Authors**: Qian Meng, Jin Peng Zhou, Kilian Q. Weinberger, Hadas Kress-Gazit  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.13660)  
+
+**Abstract**: This paper presents INPROVF, an automatic framework that combines large language models (LLMs) and formal methods to speed up the repair process of high-level robot controllers. Previous approaches based solely on formal methods are computationally expensive and cannot scale to large state spaces. In contrast, INPROVF uses LLMs to generate repair candidates, and formal methods to verify their correctness. To improve the quality of these candidates, our framework first translates the symbolic representations of the environment and controllers into natural language descriptions. If a candidate fails the verification, INPROVF provides feedback on potential unsafe behaviors or unsatisfied tasks, and iteratively prompts LLMs to generate improved solutions. We demonstrate the effectiveness of INPROVF through 12 violations with various workspaces, tasks, and state space sizes. 
+
+**Abstract (ZH)**: 本论文提出了INPROVF，一种结合大型语言模型和形式方法的自动框架，用于加快高级机器人控制器修复过程的速度。与仅基于形式方法的先前方法相比，INPROVF使用大型语言模型生成修复候选方案，并使用形式方法验证其正确性。为了提高这些候选方案的质量，该框架首先将环境和控制器的符号表示翻译成自然语言描述。如果候选方案验证失败，INPROVF将提供潜在的不安全行为或未满足任务的反馈，并迭代地提示大型语言模型生成改进的解决方案。我们通过12个具有各种工作空间、任务和状态空间大小的违规案例展示了INPROVF的有效性。 
+
+---
+# Does the Appearance of Autonomous Conversational Robots Affect User Spoken Behaviors in Real-World Conference Interactions? 
+
+**Title (ZH)**: 自主对话机器人的出现是否会影响现实会议中用户的口语行为？ 
+
+**Authors**: Zi Haur Pang, Yahui Fu, Divesh Lala, Mikey Elmers, Koji Inoue, Tatsuya Kawahara  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.13625)  
+
+**Abstract**: We investigate the impact of robot appearance on users' spoken behavior during real-world interactions by comparing a human-like android, ERICA, with a less anthropomorphic humanoid, TELECO. Analyzing data from 42 participants at SIGDIAL 2024, we extracted linguistic features such as disfluencies and syntactic complexity from conversation transcripts. The results showed moderate effect sizes, suggesting that participants produced fewer disfluencies and employed more complex syntax when interacting with ERICA. Further analysis involving training classification models like Naïve Bayes, which achieved an F1-score of 71.60\%, and conducting feature importance analysis, highlighted the significant role of disfluencies and syntactic complexity in interactions with robots of varying human-like appearances. Discussing these findings within the frameworks of cognitive load and Communication Accommodation Theory, we conclude that designing robots to elicit more structured and fluent user speech can enhance their communicative alignment with humans. 
+
+**Abstract (ZH)**: 我们通过对比人类相似的机器人ERICA和人类拟人性较低的机器人TELECO，研究机器人外观对用户在实际交流中口语行为的影响。基于SIGDIAL 2024的42名参与者的数据，我们从对话记录中提取了诸如非流畅性和句子复杂度等语言特征。结果表明有一定的效应大小，表明参与者在与ERICA互动时产生的非流畅性较少，使用的句法结构更为复杂。进一步分析包括使用朴素贝叶斯分类模型（F1分数为71.60%）训练并进行特征重要性分析，突出了不同拟人性机器人互动中非流畅性和句法复杂度的显著作用。在认知负荷理论和沟通调适理论的框架下讨论这些发现，我们得出结论，设计能够引发更结构化和流畅用户言语的机器人可以增强其与人类的沟通一致性。 
+
+---
+# Online Signature Verification based on the Lagrange formulation with 2D and 3D robotic models 
+
+**Title (ZH)**: 基于拉格朗日形式化方法的在线签名验证：二维和三维机器人模型应用 
+
+**Authors**: Moises Diaz, Miguel A. Ferrer, Juan M. Gil, Rafael Rodriguez, Peirong Zhang, Lianwen Jin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.13573)  
+
+**Abstract**: Online Signature Verification commonly relies on function-based features, such as time-sampled horizontal and vertical coordinates, as well as the pressure exerted by the writer, obtained through a digitizer. Although inferring additional information about the writers arm pose, kinematics, and dynamics based on digitizer data can be useful, it constitutes a challenge. In this paper, we tackle this challenge by proposing a new set of features based on the dynamics of online signatures. These new features are inferred through a Lagrangian formulation, obtaining the sequences of generalized coordinates and torques for 2D and 3D robotic arm models. By combining kinematic and dynamic robotic features, our results demonstrate their significant effectiveness for online automatic signature verification and achieving state-of-the-art results when integrated into deep learning models. 
+
+**Abstract (ZH)**: 在线签名验证通常依赖于基于功能的特征，如由数字化仪获取的时间采样水平和垂直坐标，以及书写者施加的压力。虽然可以从数字化仪数据中推断书写者手臂姿势、运动学和动力学的额外信息是有用的，但这构成了一个挑战。在本文中，我们通过提出基于在线签名动力学的新特征集来应对这一挑战。这些新特征通过拉格朗日形式化方法推断，获取了2D和3D机械臂模型的一般坐标和扭矩序列。通过结合运动学和动力学机械臂特征，我们的结果证明了其在在线自动签名验证中的显著效果，并且在与深度学习模型集成时达到了最先进的性能。 
+
+---
+# WMINet: A Wheel-Mounted Inertial Learning Approach For Mobile-Robot Positioning 
+
+**Title (ZH)**: WMINet: 一种车载惯性学习定位方法 
+
+**Authors**: Gal Versano, Itzik Klein  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.13568)  
+
+**Abstract**: Autonomous mobile robots are widely used for navigation, transportation, and inspection tasks indoors and outdoors. In practical situations of limited satellite signals or poor lighting conditions, navigation depends only on inertial sensors. In such cases, the navigation solution rapidly drifts due to inertial measurement errors. In this work, we propose WMINet a wheel-mounted inertial deep learning approach to estimate the mobile robot's position based only on its inertial sensors. To that end, we merge two common practical methods to reduce inertial drift: a wheel-mounted approach and driving the mobile robot in periodic trajectories. Additionally, we enforce a wheelbase constraint to further improve positioning performance. To evaluate our proposed approach we recorded using the Rosbot-XL a wheel-mounted initial dataset totaling 190 minutes, which is made publicly available. Our approach demonstrated a 66\% improvement over state-of-the-art approaches. As a consequence, our approach enables navigation in challenging environments and bridges the pure inertial gap. This enables seamless robot navigation using only inertial sensors for short periods. 
+
+**Abstract (ZH)**: 轮毂安装惯性深度学习方法：基于惯性传感器估计移动机器人位置 
+
+---
+# Tracking Meets Large Multimodal Models for Driving Scenario Understanding 
+
+**Title (ZH)**: 利用大型多模态模型进行 Driving 场景理解中的追踪方法 
+
+**Authors**: Ayesha Ishaq, Jean Lahoud, Fahad Shahbaz Khan, Salman Khan, Hisham Cholakkal, Rao Muhammad Anwer  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.14498)  
+
+**Abstract**: Large Multimodal Models (LMMs) have recently gained prominence in autonomous driving research, showcasing promising capabilities across various emerging benchmarks. LMMs specifically designed for this domain have demonstrated effective perception, planning, and prediction skills. However, many of these methods underutilize 3D spatial and temporal elements, relying mainly on image data. As a result, their effectiveness in dynamic driving environments is limited. We propose to integrate tracking information as an additional input to recover 3D spatial and temporal details that are not effectively captured in the images. We introduce a novel approach for embedding this tracking information into LMMs to enhance their spatiotemporal understanding of driving scenarios. By incorporating 3D tracking data through a track encoder, we enrich visual queries with crucial spatial and temporal cues while avoiding the computational overhead associated with processing lengthy video sequences or extensive 3D inputs. Moreover, we employ a self-supervised approach to pretrain the tracking encoder to provide LMMs with additional contextual information, significantly improving their performance in perception, planning, and prediction tasks for autonomous driving. Experimental results demonstrate the effectiveness of our approach, with a gain of 9.5% in accuracy, an increase of 7.04 points in the ChatGPT score, and 9.4% increase in the overall score over baseline models on DriveLM-nuScenes benchmark, along with a 3.7% final score improvement on DriveLM-CARLA. Our code is available at this https URL 
+
+**Abstract (ZH)**: 大型多模态模型在自动驾驶研究中取得了显著进展，展示了在各种新兴基准测试中的出色能力。针对该领域的专门设计的大型多模态模型在感知、规划和预测方面展现了有效的技术。然而，许多方法未能充分利用3D空间和时间元素，主要依赖图像数据。这限制了它们在动态驾驶环境中的有效性。我们提出将跟踪信息作为额外输入，以恢复图像中未能有效捕捉到的3D空间和时间细节。我们介绍了一种新的方法，将这种跟踪信息嵌入到大型多模态模型中，以增强其对驾驶场景的空间时间理解。通过在跟踪编码器中引入3D跟踪数据，我们丰富了视觉查询的关键空间和时间线索，同时避免了处理长视频序列或大量3D输入带来的计算开销。此外，我们采用半监督方法预训练跟踪编码器，为大型多模态模型提供额外的上下文信息，显著提高了其在感知、规划和预测任务中的性能。实验结果表明，与基准模型相比，在DriveLM-nuScenes基准测试中，我们的方法在准确率上提高了9.5%，在ChatGPT评分上提高了7.04分，在整体评分上提高了9.4%，在DriveLM-CARLA上的最终评分提高了3.7%。我们的代码可在此处获得。 
+
+---
+# Cosmos-Transfer1: Conditional World Generation with Adaptive Multimodal Control 
+
+**Title (ZH)**: Cosmos-Transfer1：基于自适应多模态控制的条件世界生成 
+
+**Authors**: NVIDIA, Hassan Abu Alhaija, Jose Alvarez, Maciej Bala, Tiffany Cai, Tianshi Cao, Liz Cha, Joshua Chen, Mike Chen, Francesco Ferroni, Sanja Fidler, Dieter Fox, Yunhao Ge, Jinwei Gu, Ali Hassani, Michael Isaev, Pooya Jannaty, Shiyi Lan, Tobias Lasser, Huan Ling, Ming-Yu Liu, Xian Liu, Yifan Lu, Alice Luo, Qianli Ma, Hanzi Mao, Fabio Ramos, Xuanchi Ren, Tianchang Shen, Shitao Tang, Ting-Chun Wang, Jay Wu, Jiashu Xu, Stella Xu, Kevin Xie, Yuchong Ye, Xiaodong Yang, Xiaohui Zeng, Yu Zeng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.14492)  
+
+**Abstract**: We introduce Cosmos-Transfer, a conditional world generation model that can generate world simulations based on multiple spatial control inputs of various modalities such as segmentation, depth, and edge. In the design, the spatial conditional scheme is adaptive and customizable. It allows weighting different conditional inputs differently at different spatial locations. This enables highly controllable world generation and finds use in various world-to-world transfer use cases, including Sim2Real. We conduct extensive evaluations to analyze the proposed model and demonstrate its applications for Physical AI, including robotics Sim2Real and autonomous vehicle data enrichment. We further demonstrate an inference scaling strategy to achieve real-time world generation with an NVIDIA GB200 NVL72 rack. To help accelerate research development in the field, we open-source our models and code at this https URL. 
+
+**Abstract (ZH)**: Cosmos-Transfer：一种基于多种模态的空间控制输入进行世界生成的条件世界生成模型 
+
+---
+# Quantization-Free Autoregressive Action Transformer 
+
+**Title (ZH)**: 无需量化自回归动作变换器 
+
+**Authors**: Ziyad Sheebaelhamd, Michael Tschannen, Michael Muehlebach, Claire Vernade  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.14259)  
+
+**Abstract**: Current transformer-based imitation learning approaches introduce discrete action representations and train an autoregressive transformer decoder on the resulting latent code. However, the initial quantization breaks the continuous structure of the action space thereby limiting the capabilities of the generative model. We propose a quantization-free method instead that leverages Generative Infinite-Vocabulary Transformers (GIVT) as a direct, continuous policy parametrization for autoregressive transformers. This simplifies the imitation learning pipeline while achieving state-of-the-art performance on a variety of popular simulated robotics tasks. We enhance our policy roll-outs by carefully studying sampling algorithms, further improving the results. 
+
+**Abstract (ZH)**: 基于电流互感器的模拟学习方法引入离散的动作表示，并在结果的潜在代码上训练自回归变换器解码器。然而，初始的量化破坏了动作空间的连续结构，从而限制了生成模型的能力。我们提出了一种无量化的方法，而是利用生成无限词汇变换器（GIVT）作为自回归变换器直接的、连续的动作参数化。这种方法简化了模拟学习管道，并在多种流行的模拟机器人任务上实现了最新性能。我们通过仔细研究采样算法来进一步增强我们的策略roll-outs，进一步提高了结果。 
+
+---
+# HA-VLN: A Benchmark for Human-Aware Navigation in Discrete-Continuous Environments with Dynamic Multi-Human Interactions, Real-World Validation, and an Open Leaderboard 
+
+**Title (ZH)**: HA-VLN：离散-连续环境下多人群体动态交互的人工意识导航基准，现实世界验证及开放排行榜 
+
+**Authors**: Yifei Dong, Fengyi Wu, Qi He, Heng Li, Minghan Li, Zebang Cheng, Yuxuan Zhou, Jingdong Sun, Qi Dai, Zhi-Qi Cheng, Alexander G Hauptmann  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.14229)  
+
+**Abstract**: Vision-and-Language Navigation (VLN) systems often focus on either discrete (panoramic) or continuous (free-motion) paradigms alone, overlooking the complexities of human-populated, dynamic environments. We introduce a unified Human-Aware VLN (HA-VLN) benchmark that merges these paradigms under explicit social-awareness constraints. Our contributions include: 1. A standardized task definition that balances discrete-continuous navigation with personal-space requirements; 2. An enhanced human motion dataset (HAPS 2.0) and upgraded simulators capturing realistic multi-human interactions, outdoor contexts, and refined motion-language alignment; 3. Extensive benchmarking on 16,844 human-centric instructions, revealing how multi-human dynamics and partial observability pose substantial challenges for leading VLN agents; 4. Real-world robot tests validating sim-to-real transfer in crowded indoor spaces; and 5. A public leaderboard supporting transparent comparisons across discrete and continuous tasks. Empirical results show improved navigation success and fewer collisions when social context is integrated, underscoring the need for human-centric design. By releasing all datasets, simulators, agent code, and evaluation tools, we aim to advance safer, more capable, and socially responsible VLN research. 
+
+**Abstract (ZH)**: 具有明确社会 Awareness 的统一视觉-语言导航基准（Unified Human-Aware VLN Benchmark） 
+
+---
+# Robust Safety Critical Control Under Multiple State and Input Constraints: Volume Control Barrier Function Method 
+
+**Title (ZH)**: 多状态和输入约束下的鲁棒安全关键控制：体积控制障碍函数方法 
+
+**Authors**: Jinyang Dong, Shizhen Wu, Rui Liu, Xiao Liang, Biao Lu, Yongchun Fang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.13996)  
+
+**Abstract**: In this paper, the safety-critical control problem for uncertain systems under multiple control barrier function (CBF) constraints and input constraints is investigated. A novel framework is proposed to generate a safety filter that minimizes changes to reference inputs when safety risks arise, ensuring a balance between safety and performance. A nonlinear disturbance observer (DOB) based on the robust integral of the sign of the error (RISE) is used to estimate system uncertainties, ensuring that the estimation error converges to zero exponentially. This error bound is integrated into the safety-critical controller to reduce conservativeness while ensuring safety. To further address the challenges arising from multiple CBF and input constraints, a novel Volume CBF (VCBF) is proposed by analyzing the feasible space of the quadratic programming (QP) problem. % ensuring solution feasibility by keeping the volume as a positive value. To ensure that the feasible space does not vanish under disturbances, a DOB-VCBF-based method is introduced, ensuring system safety while maintaining the feasibility of the resulting QP. Subsequently, several groups of simulation and experimental results are provided to validate the effectiveness of the proposed controller. 
+
+**Abstract (ZH)**: 基于多重控制屏障函数和输入约束的不确定系统安全关键控制问题研究 
+
+---
+# FlexVLN: Flexible Adaptation for Diverse Vision-and-Language Navigation Tasks 
+
+**Title (ZH)**: FlexVLN: 灵活性适配多样的视觉-语言导航任务 
+
+**Authors**: Siqi Zhang, Yanyuan Qiao, Qunbo Wang, Longteng Guo, Zhihua Wei, Jing Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.13966)  
+
+**Abstract**: The aspiration of the Vision-and-Language Navigation (VLN) task has long been to develop an embodied agent with robust adaptability, capable of seamlessly transferring its navigation capabilities across various tasks. Despite remarkable advancements in recent years, most methods necessitate dataset-specific training, thereby lacking the capability to generalize across diverse datasets encompassing distinct types of instructions. Large language models (LLMs) have demonstrated exceptional reasoning and generalization abilities, exhibiting immense potential in robot action planning. In this paper, we propose FlexVLN, an innovative hierarchical approach to VLN that integrates the fundamental navigation ability of a supervised-learning-based Instruction Follower with the robust generalization ability of the LLM Planner, enabling effective generalization across diverse VLN datasets. Moreover, a verification mechanism and a multi-model integration mechanism are proposed to mitigate potential hallucinations by the LLM Planner and enhance execution accuracy of the Instruction Follower. We take REVERIE, SOON, and CVDN-target as out-of-domain datasets for assessing generalization ability. The generalization performance of FlexVLN surpasses that of all the previous methods to a large extent. 
+
+**Abstract (ZH)**: 视觉-语言导航任务的愿景一直是开发出具有强大适应性的实体化代理，使其能够无缝地在各种任务中转移其导航能力。尽管近年来取得了显著进展，大多数方法仍需要针对特定数据集进行训练，从而缺乏跨不同数据集泛化的能力，这些数据集包含不同类型的任务指令。大型语言模型（LLMs）展示了卓越的推理和泛化能力，显示出在机器人动作规划方面的巨大潜力。本文提出了一种名为FlexVLN的创新性分层方法，将基于监督学习的指令跟随器的基本导航能力与LLM规划器的强大泛化能力相结合，从而实现跨不同视觉-语言导航数据集的有效泛化。此外，本文还提出了一种验证机制和多模型集成机制，以减轻LLM规划器可能出现的幻觉并提高指令跟随器的执行准确性。为了评估泛化能力，我们使用了REVERIE、SOON和CVDN-target作为域外数据集。FlexVLN的泛化性能显著优于所有先前的方法。 
+
+---
+# VARP: Reinforcement Learning from Vision-Language Model Feedback with Agent Regularized Preferences 
+
+**Title (ZH)**: VARP：带有代理正则化偏好的基于视觉-语言模型反馈的强化学习 
+
+**Authors**: Anukriti Singh, Amisha Bhaskar, Peihong Yu, Souradip Chakraborty, Ruthwik Dasyam, Amrit Bedi, Pratap Tokekar  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.13817)  
+
+**Abstract**: Designing reward functions for continuous-control robotics often leads to subtle misalignments or reward hacking, especially in complex tasks. Preference-based RL mitigates some of these pitfalls by learning rewards from comparative feedback rather than hand-crafted signals, yet scaling human annotations remains challenging. Recent work uses Vision-Language Models (VLMs) to automate preference labeling, but a single final-state image generally fails to capture the agent's full motion. In this paper, we present a two-part solution that both improves feedback accuracy and better aligns reward learning with the agent's policy. First, we overlay trajectory sketches on final observations to reveal the path taken, allowing VLMs to provide more reliable preferences-improving preference accuracy by approximately 15-20% in metaworld tasks. Second, we regularize reward learning by incorporating the agent's performance, ensuring that the reward model is optimized based on data generated by the current policy; this addition boosts episode returns by 20-30% in locomotion tasks. Empirical studies on metaworld demonstrate that our method achieves, for instance, around 70-80% success rate in all tasks, compared to below 50% for standard approaches. These results underscore the efficacy of combining richer visual representations with agent-aware reward regularization. 
+
+**Abstract (ZH)**: 基于视觉语言模型的轨迹引导与奖励正则化在机器人任务中的应用 
+
+---
+# Automatic MILP Model Construction for Multi-Robot Task Allocation and Scheduling Based on Large Language Models 
+
+**Title (ZH)**: 基于大型语言模型的多机器人任务分配与调度的自动混合整数线性规划模型构建 
+
+**Authors**: Mingming Peng, Zhendong Chen, Jie Yang, Jin Huang, Zhengqi Shi, Qihao Liu, Xinyu Li, Liang Gao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.13813)  
+
+**Abstract**: With the accelerated development of Industry 4.0, intelligent manufacturing systems increasingly require efficient task allocation and scheduling in multi-robot systems. However, existing methods rely on domain expertise and face challenges in adapting to dynamic production constraints. Additionally, enterprises have high privacy requirements for production scheduling data, which prevents the use of cloud-based large language models (LLMs) for solution development. To address these challenges, there is an urgent need for an automated modeling solution that meets data privacy requirements. This study proposes a knowledge-augmented mixed integer linear programming (MILP) automated formulation framework, integrating local LLMs with domain-specific knowledge bases to generate executable code from natural language descriptions automatically. The framework employs a knowledge-guided DeepSeek-R1-Distill-Qwen-32B model to extract complex spatiotemporal constraints (82% average accuracy) and leverages a supervised fine-tuned Qwen2.5-Coder-7B-Instruct model for efficient MILP code generation (90% average accuracy). Experimental results demonstrate that the framework successfully achieves automatic modeling in the aircraft skin manufacturing case while ensuring data privacy and computational efficiency. This research provides a low-barrier and highly reliable technical path for modeling in complex industrial scenarios. 
+
+**Abstract (ZH)**: 基于本地语言模型和领域知识库的增强知识混合整数线性规划自动化建模框架 
+
+---
+# CoCMT: Communication-Efficient Cross-Modal Transformer for Collaborative Perception 
+
+**Title (ZH)**: CoCMT：通信高效跨模态变压器在协作感知中的应用 
+
+**Authors**: Rujia Wang, Xiangbo Gao, Hao Xiang, Runsheng Xu, Zhengzhong Tu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.13504)  
+
+**Abstract**: Multi-agent collaborative perception enhances each agent perceptual capabilities by sharing sensing information to cooperatively perform robot perception tasks. This approach has proven effective in addressing challenges such as sensor deficiencies, occlusions, and long-range perception. However, existing representative collaborative perception systems transmit intermediate feature maps, such as bird-eye view (BEV) representations, which contain a significant amount of non-critical information, leading to high communication bandwidth requirements. To enhance communication efficiency while preserving perception capability, we introduce CoCMT, an object-query-based collaboration framework that optimizes communication bandwidth by selectively extracting and transmitting essential features. Within CoCMT, we introduce the Efficient Query Transformer (EQFormer) to effectively fuse multi-agent object queries and implement a synergistic deep supervision to enhance the positive reinforcement between stages, leading to improved overall performance. Experiments on OPV2V and V2V4Real datasets show CoCMT outperforms state-of-the-art methods while drastically reducing communication needs. On V2V4Real, our model (Top-50 object queries) requires only 0.416 Mb bandwidth, 83 times less than SOTA methods, while improving AP70 by 1.1 percent. This efficiency breakthrough enables practical collaborative perception deployment in bandwidth-constrained environments without sacrificing detection accuracy. 
+
+**Abstract (ZH)**: 基于物体查询的合作多agent感知框架CoCMT提升协同感知能力的同时优化通信带宽 
+
+---
+# Robust Detection of Extremely Thin Lines Using 0.2mm Piano Wire 
+
+**Title (ZH)**: 使用0.2mm 钢琴 Wire 稳健检测极细线条 
+
+**Authors**: Jisoo Hong, Youngjin Jung, Jihwan Bae, Seungho Song, Sung-Woo Kang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.13473)  
+
+**Abstract**: This study developed an algorithm capable of detecting a reference line (a 0.2 mm thick piano wire) to accurately determine the position of an automated installation robot within an elevator shaft. A total of 3,245 images were collected from the experimental tower of H Company, the leading elevator manufacturer in South Korea, and the detection performance was evaluated using four experimental approaches (GCH, GSCH, GECH, FCH). During the initial image processing stage, Gaussian blurring, sharpening filter, embossing filter, and Fourier Transform were applied, followed by Canny Edge Detection and Hough Transform. Notably, the method was developed to accurately extract the reference line by averaging the x-coordinates of the lines detected through the Hough Transform. This approach enabled the detection of the 0.2 mm thick piano wire with high accuracy, even in the presence of noise and other interfering factors (e.g., concrete cracks inside the elevator shaft or safety bars for filming equipment). The experimental results showed that Experiment 4 (FCH), which utilized Fourier Transform in the preprocessing stage, achieved the highest detection rate for the LtoL, LtoR, and RtoL datasets. Experiment 2(GSCH), which applied Gaussian blurring and a sharpening filter, demonstrated superior detection performance on the RtoR dataset. This study proposes a reference line detection algorithm that enables precise position calculation and control of automated robots in elevator shaft installation. Moreover, the developed method shows potential for applicability even in confined working spaces. Future work aims to develop a line detection algorithm equipped with machine learning-based hyperparameter tuning capabilities. 
+
+**Abstract (ZH)**: 本研究开发了一种算法，用于检测参考线（0.2 mm厚的钢琴线），以准确确定电梯井内自动化安装机器人的位置。研究在韩国领先的电梯制造商H公司实验塔采集了3,245张图像，并通过四种实验方法（GCH、GSCH、GECH、FCH）评估了检测性能。在初始图像处理阶段，研究分别应用了高斯模糊、锐化滤波、浮雕滤波和傅里叶变换，随后进行了Canny边缘检测和霍夫变换。该方法通过霍夫变换检测的线的x坐标平均值得到，能够准确提取参考线，即使在有噪音和其他干扰因素（如电梯井内的混凝土裂缝或拍摄设备的安全杠）的情况下，仍能准确检测0.2 mm厚的钢琴线。实验结果表明，第4次实验（FCH），在预处理阶段使用傅里叶变换，对LtoL、LtoR和RtoL数据集的检测率最高。第2次实验（GSCH），采用高斯模糊和锐化滤波，对RtoR数据集的检测性能表现出色。本研究提出了一种参考线检测算法，可实现电梯井安装中自动化机器人的精确位置计算与控制，并展示了在受限工作空间中应用的潜力。未来工作将致力于开发具有基于机器学习的超参数调整能力的线检测算法。 
+
+---
