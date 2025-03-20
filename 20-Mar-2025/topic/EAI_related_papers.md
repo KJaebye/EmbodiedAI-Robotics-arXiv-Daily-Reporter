@@ -1,0 +1,364 @@
+# Learning to Play Piano in the Real World 
+
+**Title (ZH)**: 在现实世界中学习弹钢琴 
+
+**Authors**: Yves-Simon Zeulner, Sandeep Selvaraj, Roberto Calandra  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.15481)  
+
+**Abstract**: Towards the grand challenge of achieving human-level manipulation in robots, playing piano is a compelling testbed that requires strategic, precise, and flowing movements. Over the years, several works demonstrated hand-designed controllers on real world piano playing, while other works evaluated robot learning approaches on simulated piano scenarios. In this paper, we develop the first piano playing robotic system that makes use of learning approaches while also being deployed on a real world dexterous robot. Specifically, we make use of Sim2Real to train a policy in simulation using reinforcement learning before deploying the learned policy on a real world dexterous robot. In our experiments, we thoroughly evaluate the interplay between domain randomization and the accuracy of the dynamics model used in simulation. Moreover, we evaluate the robot's performance across multiple songs with varying complexity to study the generalization of our learned policy. By providing a proof-of-concept of learning to play piano in the real world, we want to encourage the community to adopt piano playing as a compelling benchmark towards human-level manipulation. We open-source our code and show additional videos at this https URL . 
+
+**Abstract (ZH)**: 面向实现机器人人类级操作这一伟大挑战，演奏钢琴是一个极具吸引力的测试平台，它要求机器人进行战略性、精确性和流畅性操作。多年来，多项研究表明在真实钢琴上演奏的由手设计的控制器，而其他研究则评估了在模拟钢琴场景中进行机器人学习的方法。在本文中，我们首次开发了一种利用学习方法的钢琴演奏机器人系统，并将其部署在真实的灵巧机器人上。具体而言，我们使用Sim2Real在模拟环境中使用强化学习训练一个策略，然后在真实世界的灵巧机器人上部署所学的策略。在我们的实验中，我们详细评估了领域随机化与所用动力学模型精度之间的相互作用。此外，我们评估了机器人在多首不同难度歌曲上的表现，以研究我们学到的策略的泛化能力。通过提供在真实世界中学习演奏钢琴的概念验证，我们希望鼓励研究界将钢琴演奏作为迈向人类级操作的有吸引力的基准。我们在GitHub上开源了代码，并提供了额外的视频，请访问这个链接：this https URL。 
+
+---
+# Geometrically-Aware One-Shot Skill Transfer of Category-Level Objects 
+
+**Title (ZH)**: 几何感知的一次性技能转移：类别级对象技能迁移 
+
+**Authors**: Cristiana de Farias, Luis Figueredo, Riddhiman Laha, Maxime Adjigble, Brahim Tamadazte, Rustam Stolkin, Sami Haddadin, Naresh Marturi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.15371)  
+
+**Abstract**: Robotic manipulation of unfamiliar objects in new environments is challenging and requires extensive training or laborious pre-programming. We propose a new skill transfer framework, which enables a robot to transfer complex object manipulation skills and constraints from a single human demonstration. Our approach addresses the challenge of skill acquisition and task execution by deriving geometric representations from demonstrations focusing on object-centric interactions. By leveraging the Functional Maps (FM) framework, we efficiently map interaction functions between objects and their environments, allowing the robot to replicate task operations across objects of similar topologies or categories, even when they have significantly different shapes. Additionally, our method incorporates a Task-Space Imitation Algorithm (TSIA) which generates smooth, geometrically-aware robot paths to ensure the transferred skills adhere to the demonstrated task constraints. We validate the effectiveness and adaptability of our approach through extensive experiments, demonstrating successful skill transfer and task execution in diverse real-world environments without requiring additional training. 
+
+**Abstract (ZH)**: 陌生对象在新环境中的机器人操作具有挑战性，需要大量的训练或繁琐的预先编程。我们提出了一种新的技能迁移框架，使机器人能够从单一个人示范中转移复杂的对象操作技能和约束。通过聚焦于以对象为中心的交互来推导几何表示，我们的方法解决了技能获取和任务执行的挑战。借助功能映射（FM）框架，我们有效地将对象与其环境之间的交互函数进行映射，使机器人能够在具有相似拓扑结构或类别但形状显著不同的物体之间复制任务操作。此外，我们的方法还结合了一种任务空间模仿算法（TSIA），该算法生成平滑的、几何感知的机器人路径，以确保转移的技能遵守示范的任务约束。通过广泛的实验，我们验证了该方法的有效性和适应性，在不需要额外训练的情况下，在多种现实环境中的技能转移和任务执行取得了成功。 
+
+---
+# Tangles: Unpacking Extended Collision Experiences with Soma Trajectories 
+
+**Title (ZH)**: 纠缠：拆解延伸碰撞体验的斯oma轨迹 
+
+**Authors**: Steve Benford, Rachael Garrett, Christine Li, Paul Tennent, Claudia Núñez-Pacheco, Ayse Kucukyilmaz, Vasiliki Tsaknaki, Kristina Höök, Praminda Caleb-Solly, Joe Marshall, Eike Schneiders, Kristina Popova, Jude Afana  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.15370)  
+
+**Abstract**: We reappraise the idea of colliding with robots, moving from a position that tries to avoid or mitigate collisions to one that considers them an important facet of human interaction. We report on a soma design workshop that explored how our bodies could collide with telepresence robots, mobility aids, and a quadruped robot. Based on our findings, we employed soma trajectories to analyse collisions as extended experiences that negotiate key transitions of consent, preparation, launch, contact, ripple, sting, untangle, debris and reflect. We then employed these ideas to analyse two collision experiences, an accidental collision between a person and a drone, and the deliberate design of a robot to play with cats, revealing how real-world collisions involve the complex and ongoing entanglement of soma trajectories. We discuss how viewing collisions as entangled trajectories, or tangles, can be used analytically, as a design approach, and as a lens to broach ethical complexity. 
+
+**Abstract (ZH)**: 我们重新评估与机器人相撞的概念，从试图避免或减轻碰撞的立场转变为将其视为人类互动重要组成部分的立场。我们报道了一场探讨身体与远程存在机器人、移动辅助设备及四足机器人体撞方式的设计研讨会。基于研究发现，我们运用了 soma 轨迹来分析碰撞作为扩展经历，涉及同意、准备、启动、接触、涟漪、刺痛、解开、碎片和反思等关键过渡。然后，我们运用这些理念分析了两个碰撞体验：一次偶然的人员与无人机相撞，以及特意设计的机器人与猫玩耍，揭示了现实世界中的碰撞涉及 soma 轨迹的复杂且持续的交织。我们讨论了将碰撞视为交织轨迹或纠缠的方法，作为一种分析工具、设计方法以及探讨伦理复杂性的视角。 
+
+---
+# Reinforcement Learning for Robust Athletic Intelligence: Lessons from the 2nd 'AI Olympics with RealAIGym' Competition 
+
+**Title (ZH)**: 强化学习在提高运动智能中的鲁棒性：来自第二次“AI奥运会-RealAIGym竞赛”的经验教训 
+
+**Authors**: Felix Wiebe, Niccolò Turcato, Alberto Dalla Libera, Jean Seong Bjorn Choe, Bumkyu Choi, Tim Lukas Faust, Habib Maraqten, Erfan Aghadavoodi, Marco Cali, Alberto Sinigaglia, Giulio Giacomuzzo, Diego Romeres, Jong-kook Kim, Gian Antonio Susto, Shubham Vyas, Dennis Mronga, Boris Belousov, Jan Peters, Frank Kirchner, Shivesh Kumar  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.15290)  
+
+**Abstract**: In the field of robotics many different approaches ranging from classical planning over optimal control to reinforcement learning (RL) are developed and borrowed from other fields to achieve reliable control in diverse tasks. In order to get a clear understanding of their individual strengths and weaknesses and their applicability in real world robotic scenarios is it important to benchmark and compare their performances not only in a simulation but also on real hardware. The '2nd AI Olympics with RealAIGym' competition was held at the IROS 2024 conference to contribute to this cause and evaluate different controllers according to their ability to solve a dynamic control problem on an underactuated double pendulum system with chaotic dynamics. This paper describes the four different RL methods submitted by the participating teams, presents their performance in the swing-up task on a real double pendulum, measured against various criteria, and discusses their transferability from simulation to real hardware and their robustness to external disturbances. 
+
+**Abstract (ZH)**: 在机器人领域的不同方法，包括经典规划、最优控制和强化学习（RL）等，从其他领域借鉴和发展而来，旨在实现多变任务中的可靠控制。为了清晰理解这些方法的个体优势和不足，并评估其在真实世界机器人场景中的适用性，有必要在仿真和真实硬件上进行基准测试和性能比较。第二届使用RealAIGym的AI奥运会竞赛在2024年IROS会议上举办，旨在评估不同控制器在解决一个具有混沌动力学的欠驱动双摆动态控制问题方面的能力。本文描述了参赛团队提交的四种不同的RL方法，展示了它们在真实双摆摆起任务中的性能，并使用多种标准进行了比较，讨论了它们从仿真到真实硬件的迁移能力和对外部干扰的鲁棒性。 
+
+---
+# A Unified Framework for Real-Time Failure Handling in Robotics Using Vision-Language Models, Reactive Planner and Behavior Trees 
+
+**Title (ZH)**: 基于视觉语言模型、反应性规划器和行为树的统一实时故障处理框架 
+
+**Authors**: Faseeh Ahmad, Hashim Ismail, Jonathan Styrud, Maj Stenmark, Volker Krueger  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.15202)  
+
+**Abstract**: Robotic systems often face execution failures due to unexpected obstacles, sensor errors, or environmental changes. Traditional failure recovery methods rely on predefined strategies or human intervention, making them less adaptable. This paper presents a unified failure recovery framework that combines Vision-Language Models (VLMs), a reactive planner, and Behavior Trees (BTs) to enable real-time failure handling. Our approach includes pre-execution verification, which checks for potential failures before execution, and reactive failure handling, which detects and corrects failures during execution by verifying existing BT conditions, adding missing preconditions and, when necessary, generating new skills. The framework uses a scene graph for structured environmental perception and an execution history for continuous monitoring, enabling context-aware and adaptive failure handling. We evaluate our framework through real-world experiments with an ABB YuMi robot on tasks like peg insertion, object sorting, and drawer placement, as well as in AI2-THOR simulator. Compared to using pre-execution and reactive methods separately, our approach achieves higher task success rates and greater adaptability. Ablation studies highlight the importance of VLM-based reasoning, structured scene representation, and execution history tracking for effective failure recovery in robotics. 
+
+**Abstract (ZH)**: 基于视觉-语言模型、反应规划器和行为树的统一故障恢复框架 
+
+---
+# Volumetric Reconstruction From Partial Views for Task-Oriented Grasping 
+
+**Title (ZH)**: 基于部分视角的体积重建用于任务导向的抓取 
+
+**Authors**: Fujian Yan, Hui Li, Hongsheng He  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.15167)  
+
+**Abstract**: Object affordance and volumetric information are essential in devising effective grasping strategies under task-specific constraints. This paper presents an approach for inferring suitable grasping strategies from limited partial views of an object. To achieve this, a recurrent generative adversarial network (R-GAN) was proposed by incorporating a recurrent generator with long short-term memory (LSTM) units for it to process a variable number of depth scans. To determine object affordances, the AffordPose knowledge dataset is utilized as prior knowledge. Affordance retrieving is defined by the volume similarity measured via Chamfer Distance and action similarities. A Proximal Policy Optimization (PPO) reinforcement learning model is further implemented to refine the retrieved grasp strategies for task-oriented grasping. The retrieved grasp strategies were evaluated on a dual-arm mobile manipulation robot with an overall grasping accuracy of 89% for four tasks: lift, handle grasp, wrap grasp, and press. 
+
+**Abstract (ZH)**: 基于任务特定约束的有效抓取策略设计需要考虑物体功能和体素信息。本文提出了一种从物体有限部分视图中推断合适抓取策略的方法。为此，提出了一种递归生成对抗网络（R-GAN），该网络结合了包含长短期记忆（LSTM）单元的递归生成器，以处理不同数量的深度扫描。为了确定物体功能，利用AffordPose知识数据集作为先验知识。通过坎泊尔距离测量的体积相似性和动作相似性定义功能提取。进一步实现了近端策略优化（PPO）强化学习模型以针对任务细化提取的抓取策略。在双臂移动操作机器人上评估了提取的抓取策略，在四项任务（起吊、柄抓、包握和压握）中总体抓取准确率为89%。 
+
+---
+# Intelligent Spatial Perception by Building Hierarchical 3D Scene Graphs for Indoor Scenarios with the Help of LLMs 
+
+**Title (ZH)**: 利用LLMs构建层次化3D场景图实现室内场景的智能空间感知 
+
+**Authors**: Yao Cheng, Zhe Han, Fengyang Jiang, Huaizhen Wang, Fengyu Zhou, Qingshan Yin, Lei Wei  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.15091)  
+
+**Abstract**: This paper addresses the high demand in advanced intelligent robot navigation for a more holistic understanding of spatial environments, by introducing a novel system that harnesses the capabilities of Large Language Models (LLMs) to construct hierarchical 3D Scene Graphs (3DSGs) for indoor scenarios. The proposed framework constructs 3DSGs consisting of a fundamental layer with rich metric-semantic information, an object layer featuring precise point-cloud representation of object nodes as well as visual descriptors, and higher layers of room, floor, and building nodes. Thanks to the innovative application of LLMs, not only object nodes but also nodes of higher layers, e.g., room nodes, are annotated in an intelligent and accurate manner. A polling mechanism for room classification using LLMs is proposed to enhance the accuracy and reliability of the room node annotation. Thorough numerical experiments demonstrate the system's ability to integrate semantic descriptions with geometric data, creating an accurate and comprehensive representation of the environment instrumental for context-aware navigation and task planning. 
+
+**Abstract (ZH)**: 本文通过引入一种利用大型语言模型（LLMs）构建层次化3D场景图（3DSGs）的新系统，应对高级智能机器人在获得更全面的空间环境理解方面的需求，特别适用于室内部场景。所提出的框架构建了包含丰富度量语义信息的基础层、具有精准点云表示的对象层以及包含房间、楼层和建筑节点的高层。借助LLMs的创新应用，不但对象节点，更高层节点（如房间节点）也被智能且准确地注释。提出了基于LLMs的房间分类投票机制，以提高房间节点注释的准确性和可靠性。详细的数值实验表明，该系统能够将语义描述与几何数据相结合，创建一个准确且全面的环境表示，对于上下文感知导航和任务规划具有重要作用。 
+
+---
+# StyleLoco: Generative Adversarial Distillation for Natural Humanoid Robot Locomotion 
+
+**Title (ZH)**: StyleLoco: 生成对抗蒸馏自然类人机器人运动学习 
+
+**Authors**: Le Ma, Ziyu Meng, Tengyu Liu, Yuhan Li, Ran Song, Wei Zhang, Siyuan Huang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.15082)  
+
+**Abstract**: Humanoid robots are anticipated to acquire a wide range of locomotion capabilities while ensuring natural movement across varying speeds and terrains. Existing methods encounter a fundamental dilemma in learning humanoid locomotion: reinforcement learning with handcrafted rewards can achieve agile locomotion but produces unnatural gaits, while Generative Adversarial Imitation Learning (GAIL) with motion capture data yields natural movements but suffers from unstable training processes and restricted agility. Integrating these approaches proves challenging due to the inherent heterogeneity between expert policies and human motion datasets. To address this, we introduce StyleLoco, a novel two-stage framework that bridges this gap through a Generative Adversarial Distillation (GAD) process. Our framework begins by training a teacher policy using reinforcement learning to achieve agile and dynamic locomotion. It then employs a multi-discriminator architecture, where distinct discriminators concurrently extract skills from both the teacher policy and motion capture data. This approach effectively combines the agility of reinforcement learning with the natural fluidity of human-like movements while mitigating the instability issues commonly associated with adversarial training. Through extensive simulation and real-world experiments, we demonstrate that StyleLoco enables humanoid robots to perform diverse locomotion tasks with the precision of expertly trained policies and the natural aesthetics of human motion, successfully transferring styles across different movement types while maintaining stable locomotion across a broad spectrum of command inputs. 
+
+**Abstract (ZH)**: 人体形机器人预计能够在确保不同速度和地形下自然运动的同时，获得广泛的身体素质能力。现有的方法在学习人体形机器人行走时遇到了基本的困境：通过人工设计奖励函数的强化学习能够实现敏捷的行走但会产生不自然的步伐，而使用运动捕捉数据的生成对抗模仿学习（GAIL）能够产生自然的运动但训练流程不稳定且灵活性受限。由于专家策略和人体运动数据集之间的固有的异质性，将这些方法结合起来颇具挑战性。为了解决这一问题，我们引入了StyleLoco，这是一种新型的两阶段框架，通过生成对抗蒸馏（GAD）过程来弥合这一差距。我们的框架首先使用强化学习训练一个教师策略以实现敏捷和动态的行走。然后采用一个多判别器架构，其中不同的判别器同时从教师策略和运动捕捉数据中提取技能。这种方法能够有效结合强化学习的敏捷性和基于人类运动的自然流畅性，同时缓解了对抗训练通常伴随的不稳定性问题。通过大量的仿真和现实世界实验，我们证明了StyleLoco能够使人体形机器人在多种行走任务中表现出与专门训练策略相同的精准度和自然的美学特征，成功地在不同运动类型之间转移风格，并在广泛的命令输入范围内保持稳定的行走。 
+
+---
+# Modeling, Embedded Control and Design of Soft Robots using a Learned Condensed FEM Model 
+
+**Title (ZH)**: 基于学习得到的简化有限元模型的软机器人建模、嵌入控制与设计 
+
+**Authors**: Etienne Ménager, Tanguy Navez, Paul Chaillou, Olivier Goury, Alexandre Kruszewski, Christian Duriez  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.15009)  
+
+**Abstract**: The Finite Element Method (FEM) is a powerful modeling tool for predicting soft robots' behavior, but its computation time can limit practical applications. In this paper, a learning-based approach based on condensation of the FEM model is detailed. The proposed method handles several kinds of actuators and contacts with the environment. We demonstrate that this compact model can be learned as a unified model across several designs and remains very efficient in terms of modeling since we can deduce the direct and inverse kinematics of the robot. Building upon the intuition introduced in [11], the learned model is presented as a general framework for modeling, controlling, and designing soft manipulators. First, the method's adaptability and versatility are illustrated through optimization based control problems involving positioning and manipulation tasks with mechanical contact-based coupling. Secondly, the low memory consumption and the high prediction speed of the learned condensed model are leveraged for real-time embedding control without relying on costly online FEM simulation. Finally, the ability of the learned condensed FEM model to capture soft robot design variations and its differentiability are leveraged in calibration and design optimization applications. 
+
+**Abstract (ZH)**: 基于有限元模型凝缩的机器学习方法在软机器人建模中的应用 
+
+---
+# Advancing a taxonomy for proxemics in robot social navigation 
+
+**Title (ZH)**: 改进proxemics在机器人社会导航中的分类体系 
+
+**Authors**: Ehud Nahum, Yael Edan, Tal Oron-Gilad  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.14931)  
+
+**Abstract**: Deploying robots in human environments requires effective social robot navigation. This article focuses on proxemics, proposing a new taxonomy and suggesting future directions through an analysis of state-of-the-art studies and the identification of research gaps. The various factors that affect the dynamic properties of proxemics patterns in human-robot interaction are thoroughly explored. To establish a coherent proxemics framework, we identified and organized the key parameters and attributes that shape proxemics behavior. Building on this framework, we introduce a novel approach to define proxemics in robot navigation, emphasizing the significant attributes that influence its structure and size. This leads to the development of a new taxonomy that serves as a foundation for guiding future research and development. Our findings underscore the complexity of defining personal distance, revealing it as a complex, multi-dimensional challenge. Furthermore, we highlight the flexible and dynamic nature of personal zone boundaries, which should be adaptable to different contexts and circumstances. Additionally, we propose a new layer for implementing proxemics in the navigation of social robots. 
+
+**Abstract (ZH)**: 在人类环境中部署机器人需要有效的社会机器人导航。本文专注于proxemics，通过分析最新研究和识别研究缺口，提出了一种新的分类方法，并指出了未来的研究方向。深入探讨了影响人机交互中proxemics模式动态属性的各种因素。为建立一个一致的proxemics框架，我们识别并组织了塑造proxemics行为的关键参数和属性。在此基础上，我们提出了一种新的方法来定义机器人导航中的proxemics，强调了对其实现结构和大小有显著影响的关键属性。这导致了新分类方法的开发，为未来的研究和开发提供了指导。我们的研究结果强调了定义个人空间距离的复杂性，将其视为一个复杂、多维度的挑战。此外，我们强调了个人区域边界的高度灵活性和动态性，这些边界应根据不同情境进行调整。此外，我们提出了一个新的层来在社交机器人导航中实现proxemics。 
+
+---
+# Project Jenkins: Turning Monkey Neural Data into Robotic Arm Movement, and Back 
+
+**Title (ZH)**: 项目Jenkins: 将猴子神经数据转化为机械臂运动，反之亦然 
+
+**Authors**: Andrii Zahorodnii, Dima Yanovsky  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.14847)  
+
+**Abstract**: Project Jenkins explores how neural activity in the brain can be decoded into robotic movement and, conversely, how movement patterns can be used to generate synthetic neural data. Using real neural data recorded from motor and premotor cortex areas of a macaque monkey named Jenkins, we develop models for decoding (converting brain signals into robotic arm movements) and encoding (simulating brain activity corresponding to a given movement). For the interface between the brain simulation and the physical world, we utilized Koch v1.1 leader and follower robotic arms. We developed an interactive web console that allows users to generate synthetic brain data from joystick movements in real time. Our results are a step towards brain-controlled robotics, prosthetics, and enhancing normal motor function. By accurately modeling brain activity, we take a step toward flexible brain-computer interfaces that generalize beyond predefined movements. To support the research community, we provide open source tools for both synthetic data generation and neural decoding, fostering reproducibility and accelerating progress. The project is available at this https URL 
+
+**Abstract (ZH)**: Jenkins项目探索了如何将大脑神经活动解码为机器人运动，反之亦然，并利用Koch v1.1领袖和跟随机器人手臂实现了脑模拟与物理世界之间的接口。我们开发了一个交互式的网页控制台，允许用户实时从游戏杆运动生成合成的大脑数据。该项目向前迈进了一步，朝着脑控机器人、假肢以及增强正常运动功能的方向发展。通过准确建模大脑活动，我们朝着能够泛化到预定义动作之外的灵活脑-机接口迈出了一步。为了支持研究社区，我们提供了合成数据生成和神经解码的开源工具，促进可再现性并加速研究进展。该项目可在以下网址获取：this https URL。 
+
+---
+# GR00T N1: An Open Foundation Model for Generalist Humanoid Robots 
+
+**Title (ZH)**: GR00T N1: 通用基础模型为人形机器人 
+
+**Authors**: NVIDIA, Johan Bjorck, Fernando Castañeda, Nikita Cherniadev, Xingye Da, Runyu Ding, Linxi "Jim" Fan, Yu Fang, Dieter Fox, Fengyuan Hu, Spencer Huang, Joel Jang, Zhenyu Jiang, Jan Kautz, Kaushil Kundalia, Lawrence Lao, Zhiqi Li, Zongyu Lin, Kevin Lin, Guilin Liu, Edith Llontop, Loic Magne, Ajay Mandlekar, Avnish Narayan, Soroush Nasiriany, Scott Reed, You Liang Tan, Guanzhi Wang, Zu Wang, Jing Wang, Qi Wang, Jiannan Xiang, Yuqi Xie, Yinzhen Xu, Zhenjia Xu, Seonghyeon Ye, Zhiding Yu, Ao Zhang, Hao Zhang, Yizhou Zhao, Ruijie Zheng, Yuke Zhu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.14734)  
+
+**Abstract**: General-purpose robots need a versatile body and an intelligent mind. Recent advancements in humanoid robots have shown great promise as a hardware platform for building generalist autonomy in the human world. A robot foundation model, trained on massive and diverse data sources, is essential for enabling the robots to reason about novel situations, robustly handle real-world variability, and rapidly learn new tasks. To this end, we introduce GR00T N1, an open foundation model for humanoid robots. GR00T N1 is a Vision-Language-Action (VLA) model with a dual-system architecture. The vision-language module (System 2) interprets the environment through vision and language instructions. The subsequent diffusion transformer module (System 1) generates fluid motor actions in real time. Both modules are tightly coupled and jointly trained end-to-end. We train GR00T N1 with a heterogeneous mixture of real-robot trajectories, human videos, and synthetically generated datasets. We show that our generalist robot model GR00T N1 outperforms the state-of-the-art imitation learning baselines on standard simulation benchmarks across multiple robot embodiments. Furthermore, we deploy our model on the Fourier GR-1 humanoid robot for language-conditioned bimanual manipulation tasks, achieving strong performance with high data efficiency. 
+
+**Abstract (ZH)**: 通用机器人需要多功能的身体和智能的大脑。 humanoid机器人Recent advancements在人体世界的通用自主性方面展现出了巨大的硬件平台潜力。一种基于庞大且多样数据源训练的机器人基础模型对于使机器人能够推理新情况、稳健应对现实世界的变异性以及迅速学习新任务是必不可少的。为此，我们引入了GR00T N1，一种面向humanoid机器人的开放基础模型。GR00T N1是一种具有双系统架构的 Vision-Language-Action (VLA) 模型。视觉语言模块（System 2）通过视觉和语言指令解释环境。后续的扩散变换器模块（System 1）实时生成流畅的运动动作。两个模块紧密结合，并联合进行端到端训练。我们使用来自实际机器人轨迹、人类视频和合成生成数据集的异构混合数据训练GR00T N1。我们展示了我们的通用机器人模型GR00T N1在多个机器人身体上的标准化模拟基准测试中，性能优于最新的模仿学习基线。此外，我们将在Fourier GR-1 humanoid机器人中部署该模型，用于条件语言指导下的双臂操作任务，并实现了高效的数据使用和出色的表现。 
+
+---
+# ARC-Calib: Autonomous Markerless Camera-to-Robot Calibration via Exploratory Robot Motions 
+
+**Title (ZH)**: ARC-Calib: 自主无标记相机到机器人标定通过探索性机器人运动 
+
+**Authors**: Podshara Chanrungmaneekul, Yiting Chen, Joshua T. Grace, Aaron M. Dollar, Kaiyu Hang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.14701)  
+
+**Abstract**: Camera-to-robot (also known as eye-to-hand) calibration is a critical component of vision-based robot manipulation. Traditional marker-based methods often require human intervention for system setup. Furthermore, existing autonomous markerless calibration methods typically rely on pre-trained robot tracking models that impede their application on edge devices and require fine-tuning for novel robot embodiments. To address these limitations, this paper proposes a model-based markerless camera-to-robot calibration framework, ARC-Calib, that is fully autonomous and generalizable across diverse robots and scenarios without requiring extensive data collection or learning. First, exploratory robot motions are introduced to generate easily trackable trajectory-based visual patterns in the camera's image frames. Then, a geometric optimization framework is proposed to exploit the coplanarity and collinearity constraints from the observed motions to iteratively refine the estimated calibration result. Our approach eliminates the need for extra effort in either environmental marker setup or data collection and model training, rendering it highly adaptable across a wide range of real-world autonomous systems. Extensive experiments are conducted in both simulation and the real world to validate its robustness and generalizability. 
+
+**Abstract (ZH)**: 基于模型的无标记相机到机器人校准框架ARC-Calib：全面自主且通用 
+
+---
+# Reinforcement learning-based motion imitation for physiologically plausible musculoskeletal motor control 
+
+**Title (ZH)**: 基于强化学习的动力学模仿生理学合理肌肉骨骼运动控制 
+
+**Authors**: Merkourios Simos, Alberto Silvio Chiappa, Alexander Mathis  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.14637)  
+
+**Abstract**: How do humans move? The quest to understand human motion has broad applications in numerous fields, ranging from computer animation and motion synthesis to neuroscience, human prosthetics and rehabilitation. Although advances in reinforcement learning (RL) have produced impressive results in capturing human motion using simplified humanoids, controlling physiologically accurate models of the body remains an open challenge. In this work, we present a model-free motion imitation framework (KINESIS) to advance the understanding of muscle-based motor control. Using a musculoskeletal model of the lower body with 80 muscle actuators and 20 DoF, we demonstrate that KINESIS achieves strong imitation performance on 1.9 hours of motion capture data, is controllable by natural language through pre-trained text-to-motion generative models, and can be fine-tuned to carry out high-level tasks such as target goal reaching. Importantly, KINESIS generates muscle activity patterns that correlate well with human EMG activity. The physiological plausibility makes KINESIS a promising model for tackling challenging problems in human motor control theory, which we highlight by investigating Bernstein's redundancy problem in the context of locomotion. Code, videos and benchmarks will be available at this https URL. 
+
+**Abstract (ZH)**: 人类如何移动？对人体运动的理解在计算机动画、运动合成、神经科学、人体假肢和康复等多个领域有着广泛的应用。尽管增强学习的进展在使用简化的人形模型捕捉人体运动方面取得了显著成果，但控制生理上准确的身体模型仍然是一个开放的挑战。在本工作中，我们提出了一种基于运动模仿的无模型框架（KINESIS），以促进基于肌肉的运动控制理解。使用一个包含80个肌肉驱动器和20个自由度的下体 musculoskeletal 模型，我们展示了KINESIS在1.9小时的运动捕捉数据上实现了强大的模仿性能，可以通过预训练的文本到运动生成模型自然语言控制，并且可以微调以执行如目标到达这样的高级任务。重要的是，KINESIS生成的肌肉活动模式与人类EMG活动相关性良好。生理学上的可行性使KINESIS成为解决人体运动控制理论中具有挑战性问题的有前景的模型，我们通过在行进中的伯恩斯坦冗余性问题的背景下对此进行探讨。代码、视频和基准将在此链接中提供。 
+
+---
+# A Unified Framework for Robots that Influence Humans over Long-Term Interaction 
+
+**Title (ZH)**: 一种促进长期互动中人类行为改变的统一框架 
+
+**Authors**: Shahabedin Sagheb, Sagar Parekh, Ravi Pandya, Ye-Ji Mun, Katherine Driggs-Campbell, Andrea Bajcsy, Dylan P. Losey  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.14633)  
+
+**Abstract**: Robot actions influence the decisions of nearby humans. Here influence refers to intentional change: robots influence humans when they shift the human's behavior in a way that helps the robot complete its task. Imagine an autonomous car trying to merge; by proactively nudging into the human's lane, the robot causes human drivers to yield and provide space. Influence is often necessary for seamless interaction. However, if influence is left unregulated and uncontrolled, robots will negatively impact the humans around them. Prior works have begun to address this problem by creating a variety of control algorithms that seek to influence humans. Although these methods are effective in the short-term, they fail to maintain influence over time as the human adapts to the robot's behaviors. In this paper we therefore present an optimization framework that enables robots to purposely regulate their influence over humans across both short-term and long-term interactions. Here the robot maintains its influence by reasoning over a dynamic human model which captures how the robot's current choices will impact the human's future behavior. Our resulting framework serves to unify current approaches: we demonstrate that state-of-the-art methods are simplifications of our underlying formalism. Our framework also provides a principled way to generate influential policies: in the best case the robot exactly solves our framework to find optimal, influential behavior. But when solving this optimization problem becomes impractical, designers can introduce their own simplifications to reach tractable approximations. We experimentally compare our unified framework to state-of-the-art baselines and ablations, and demonstrate across simulations and user studies that this framework is able to successfully influence humans over repeated interactions. See videos of our experiments here: this https URL 
+
+**Abstract (ZH)**: 机器人动作影响附近人类的决策：一种跨短期和长期交互的调控优化框架 
+
+---
+# Synchronous vs Asynchronous Reinforcement Learning in a Real World Robot 
+
+**Title (ZH)**: 同步vs异步强化学习在真实机器人中的应用 
+
+**Authors**: Ali Parsaee, Fahim Shahriar, Chuxin He, Ruiqing Tan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.14554)  
+
+**Abstract**: In recent times, reinforcement learning (RL) with physical robots has attracted the attention of a wide range of researchers. However, state-of-the-art RL algorithms do not consider that physical environments do not wait for the RL agent to make decisions or updates. RL agents learn by periodically conducting computationally expensive gradient updates. When decision-making and gradient update tasks are carried out sequentially by the RL agent in a physical robot, it significantly increases the agent's response time. In a rapidly changing environment, this increased response time may be detrimental to the performance of the learning agent. Asynchronous RL methods, which separate the computation of decision-making and gradient updates, are a potential solution to this problem. However, only a few comparisons between asynchronous and synchronous RL have been made with physical robots. For this reason, the exact performance benefits of using asynchronous RL methods over synchronous RL methods are still unclear. In this study, we provide a performance comparison between asynchronous and synchronous RL using a physical robotic arm called Franka Emika Panda. Our experiments show that the agents learn faster and attain significantly more returns using asynchronous RL. Our experiments also demonstrate that the learning agent with a faster response time performs better than the agent with a slower response time, even if the agent with a slower response time performs a higher number of gradient updates. 
+
+**Abstract (ZH)**: 物理机器人中异步与同步强化学习性能比较 
+
+---
+# A Comparative Study of Human Motion Models in Reinforcement Learning Algorithms for Social Robot Navigation 
+
+**Title (ZH)**: 社会机器人导航中强化学习算法中的人体运动模型比较研究 
+
+**Authors**: Tommaso Van Der Meer, Andrea Garulli, Antonio Giannitrapani, Renato Quartullo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.15127)  
+
+**Abstract**: Social robot navigation is an evolving research field that aims to find efficient strategies to safely navigate dynamic environments populated by humans. A critical challenge in this domain is the accurate modeling of human motion, which directly impacts the design and evaluation of navigation algorithms. This paper presents a comparative study of two popular categories of human motion models used in social robot navigation, namely velocity-based models and force-based models. A system-theoretic representation of both model types is presented, which highlights their common feedback structure, although with different state variables. Several navigation policies based on reinforcement learning are trained and tested in various simulated environments involving pedestrian crowds modeled with these approaches. A comparative study is conducted to assess performance across multiple factors, including human motion model, navigation policy, scenario complexity and crowd density. The results highlight advantages and challenges of different approaches to modeling human behavior, as well as their role during training and testing of learning-based navigation policies. The findings offer valuable insights and guidelines for selecting appropriate human motion models when designing socially-aware robot navigation systems. 
+
+**Abstract (ZH)**: 社交机器人导航是一个不断发展的研究领域，旨在找到在由人类占据的动态环境中安全导航的有效策略。该领域的一个关键挑战是对人类运动的准确建模，这直接影响导航算法的设计与评估。本文呈现了两种在社交机器人导航中广泛使用的两类人类运动模型——基于速度的模型和基于力的模型——之间的比较研究。两种模型类型从系统理论的角度进行了表示，强调了它们具有不同的状态变量但共享相似的反馈结构。基于强化学习的多种导航策略在涉及使用这些方法建模的行人 crowd 的各种模拟环境中进行了训练和测试。通过多个因素（包括人类运动模型、导航策略、场景复杂性和人群密度）进行比较研究，评估其性能表现。研究结果突出了不同方法在建模人类行为方面的优势和挑战，以及它们在基于学习的导航策略训练和测试期间的作用。研究发现为设计具有社会意识的机器人导航系统时选择合适的运动模型提供了有价值的见解和指南。 
+
+---
+# VIPER: Visual Perception and Explainable Reasoning for Sequential Decision-Making 
+
+**Title (ZH)**: VIPER：视觉感知与可解释推理在序列决策中的应用 
+
+**Authors**: Mohamed Salim Aissi, Clemence Grislain, Mohamed Chetouani, Olivier Sigaud, Laure Soulier, Nicolas Thome  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.15108)  
+
+**Abstract**: While Large Language Models (LLMs) excel at reasoning on text and Vision-Language Models (VLMs) are highly effective for visual perception, applying those models for visual instruction-based planning remains a widely open problem. In this paper, we introduce VIPER, a novel framework for multimodal instruction-based planning that integrates VLM-based perception with LLM-based reasoning. Our approach uses a modular pipeline where a frozen VLM generates textual descriptions of image observations, which are then processed by an LLM policy to predict actions based on the task goal. We fine-tune the reasoning module using behavioral cloning and reinforcement learning, improving our agent's decision-making capabilities. Experiments on the ALFWorld benchmark show that VIPER significantly outperforms state-of-the-art visual instruction-based planners while narrowing the gap with purely text-based oracles. By leveraging text as an intermediate representation, VIPER also enhances explainability, paving the way for a fine-grained analysis of perception and reasoning components. 
+
+**Abstract (ZH)**: 而大规模语言模型（LLMs）在文本推理方面表现出色，视觉语言模型（VLMs）在视觉感知方面非常有效，但将这些模型应用于基于视觉指令的规划仍然是一个开放性问题。本文介绍了VIPER，这是一种结合VLM基于的感知与LLM基于的推理的新型多模态指令驱动规划框架。我们的方法采用模块化流水线，其中冻结的VLM生成图像观察的文本描述，随后由LLM策略基于任务目标预测动作。我们通过行为克隆和强化学习微调推理模块，提高代理的决策能力。在ALFWorld基准测试中的实验表明，VIPER显著优于现有的基于视觉指令的规划器，并缩小了与纯文本基准则确性之间的差距。通过利用文本作为中间表示，VIPER增强了可解释性，为感知和推理组件的细粒度分析铺平了道路。 
+
+---
+# GraspCorrect: Robotic Grasp Correction via Vision-Language Model-Guided Feedback 
+
+**Title (ZH)**: GraspCorrect: 通过视觉-语言模型引导的抓取校正 
+
+**Authors**: Sungjae Lee, Yeonjoo Hong, Kwang In Kim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.15035)  
+
+**Abstract**: Despite significant advancements in robotic manipulation, achieving consistent and stable grasping remains a fundamental challenge, often limiting the successful execution of complex tasks. Our analysis reveals that even state-of-the-art policy models frequently exhibit unstable grasping behaviors, leading to failure cases that create bottlenecks in real-world robotic applications. To address these challenges, we introduce GraspCorrect, a plug-and-play module designed to enhance grasp performance through vision-language model-guided feedback. GraspCorrect employs an iterative visual question-answering framework with two key components: grasp-guided prompting, which incorporates task-specific constraints, and object-aware sampling, which ensures the selection of physically feasible grasp candidates. By iteratively generating intermediate visual goals and translating them into joint-level actions, GraspCorrect significantly improves grasp stability and consistently enhances task success rates across existing policy models in the RLBench and CALVIN datasets. 
+
+**Abstract (ZH)**: 尽管机器人操纵取得了显著进步，但实现一致且稳定的抓取仍然是一个基本挑战，常常限制了复杂任务的成功执行。我们的分析表明，即使是最先进的策略模型也经常表现出不稳定的抓取行为，导致失败案例成为现实世界机器人应用中的瓶颈。为此，我们引入了GraspCorrect模块，这是一种即插即用模块，通过基于视觉语言模型的反馈来提升抓取性能。GraspCorrect采用迭代的视觉问答框架，包含两个关键组件：任务导向的提示，which Incorporates任务特定约束，和物体感知采样，which Ensures physically可行的抓取候选的选取。通过迭代生成中间视觉目标并转化为关节级动作，GraspCorrect显著提升了抓取稳定性，并在现有模型上跨RLBench和CALVIN数据集中的一致提高了任务成功率。 
+
+---
+# PANDORA: Diffusion Policy Learning for Dexterous Robotic Piano Playing 
+
+**Title (ZH)**: PANDORA: 差分政策学习在灵巧钢琴演奏中的应用 
+
+**Authors**: Yanjia Huang, Renjie Li, Zhengzhong Tu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.14545)  
+
+**Abstract**: We present PANDORA, a novel diffusion-based policy learning framework designed specifically for dexterous robotic piano performance. Our approach employs a conditional U-Net architecture enhanced with FiLM-based global conditioning, which iteratively denoises noisy action sequences into smooth, high-dimensional trajectories. To achieve precise key execution coupled with expressive musical performance, we design a composite reward function that integrates task-specific accuracy, audio fidelity, and high-level semantic feedback from a large language model (LLM) oracle. The LLM oracle assesses musical expressiveness and stylistic nuances, enabling dynamic, hand-specific reward adjustments. Further augmented by a residual inverse-kinematics refinement policy, PANDORA achieves state-of-the-art performance in the ROBOPIANIST environment, significantly outperforming baselines in both precision and expressiveness. Ablation studies validate the critical contributions of diffusion-based denoising and LLM-driven semantic feedback in enhancing robotic musicianship. Videos available at: this https URL 
+
+**Abstract (ZH)**: 我们提出PANDORA，一种专门用于灵巧机器人钢琴演奏的新型基于扩散的策略学习框架。我们的方法采用增强有Condition的U-Net架构，通过基于FiLM的全局条件化逐迭代地将嘈杂的动作序列去噪处理为平滑的高维轨迹。为了实现精确的键演奏和表达性音乐表现，我们设计了一个综合奖励函数，该函数结合了任务特定的准确性、音频保真度以及来自大型语言模型（LLM）先知的高级语义反馈。LLM先知评估音乐表现性和风格上的细微差别，能够动态调整手部特定的奖励。进一步通过残差逆动力学精化策略的增强，PANDORA在ROBOPIANIST环境中达到了最先进的性能，显著优于基线方法，在精确性和表达性方面均表现更优。消融研究验证了基于扩散的去噪和LLM驱动的语义反馈在增强机器人音乐表现方面的重要性。视频见：this https URL 
+
+---
+# ReBot: Scaling Robot Learning with Real-to-Sim-to-Real Robotic Video Synthesis 
+
+**Title (ZH)**: ReBot: 通过真实到模拟再到现实的机器人视频合成扩展机器人学习 
+
+**Authors**: Yu Fang, Yue Yang, Xinghao Zhu, Kaiyuan Zheng, Gedas Bertasius, Daniel Szafir, Mingyu Ding  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.14526)  
+
+**Abstract**: Vision-language-action (VLA) models present a promising paradigm by training policies directly on real robot datasets like Open X-Embodiment. However, the high cost of real-world data collection hinders further data scaling, thereby restricting the generalizability of VLAs. In this paper, we introduce ReBot, a novel real-to-sim-to-real approach for scaling real robot datasets and adapting VLA models to target domains, which is the last-mile deployment challenge in robot manipulation. Specifically, ReBot replays real-world robot trajectories in simulation to diversify manipulated objects (real-to-sim), and integrates the simulated movements with inpainted real-world background to synthesize physically realistic and temporally consistent robot videos (sim-to-real). Our approach has several advantages: 1) it enjoys the benefit of real data to minimize the sim-to-real gap; 2) it leverages the scalability of simulation; and 3) it can generalize a pretrained VLA to a target domain with fully automated data pipelines. Extensive experiments in both simulation and real-world environments show that ReBot significantly enhances the performance and robustness of VLAs. For example, in SimplerEnv with the WidowX robot, ReBot improved the in-domain performance of Octo by 7.2% and OpenVLA by 21.8%, and out-of-domain generalization by 19.9% and 9.4%, respectively. For real-world evaluation with a Franka robot, ReBot increased the success rates of Octo by 17% and OpenVLA by 20%. More information can be found at: this https URL 
+
+**Abstract (ZH)**: 基于现实到模拟再到现实的方法ReBot：扩展真实机器人数据集并适应VLA模型至目标领域 
+
+---
+# World Models in Artificial Intelligence: Sensing, Learning, and Reasoning Like a Child 
+
+**Title (ZH)**: 人工智能中的世界模型：像孩子一样感知、学习和推理 
+
+**Authors**: Javier Del Ser, Jesus L. Lobo, Heimo Müller, Andreas Holzinger  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.15168)  
+
+**Abstract**: World Models help Artificial Intelligence (AI) predict outcomes, reason about its environment, and guide decision-making. While widely used in reinforcement learning, they lack the structured, adaptive representations that even young children intuitively develop. Advancing beyond pattern recognition requires dynamic, interpretable frameworks inspired by Piaget's cognitive development theory. We highlight six key research areas -- physics-informed learning, neurosymbolic learning, continual learning, causal inference, human-in-the-loop AI, and responsible AI -- as essential for enabling true reasoning in AI. By integrating statistical learning with advances in these areas, AI can evolve from pattern recognition to genuine understanding, adaptation and reasoning capabilities. 
+
+**Abstract (ZH)**: 世界模型助力人工智能预测结果、推理论证其环境并指导决策。尽管在强化学习中广泛应用，但它们缺乏甚至幼儿都能直观发展的结构化和适应性表示。超越模式识别需要基于皮亚杰认知发展理论的动态可解释框架。我们强调六项关键研究领域——物理导向学习、神经符号学习、持续学习、因果推理、人力在环人工智能和负责任人工智能——对于实现真正的人工智能推理至关重要。通过将统计学习与这些领域的进展相结合，人工智能可以从模式识别进化到真正的理解、适应和推理能力。 
+
+---
+# Behaviour Discovery and Attribution for Explainable Reinforcement Learning 
+
+**Title (ZH)**: 可解释强化学习中的行为发现与归因 
+
+**Authors**: Rishav Rishav, Somjit Nath, Vincent Michalski, Samira Ebrahimi Kahou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.14973)  
+
+**Abstract**: Explaining the decisions made by reinforcement learning (RL) agents is critical for building trust and ensuring reliability in real-world applications. Traditional approaches to explainability often rely on saliency analysis, which can be limited in providing actionable insights. Recently, there has been growing interest in attributing RL decisions to specific trajectories within a dataset. However, these methods often generalize explanations to long trajectories, potentially involving multiple distinct behaviors. Often, providing multiple more fine grained explanations would improve clarity. In this work, we propose a framework for behavior discovery and action attribution to behaviors in offline RL trajectories. Our method identifies meaningful behavioral segments, enabling more precise and granular explanations associated with high level agent behaviors. This approach is adaptable across diverse environments with minimal modifications, offering a scalable and versatile solution for behavior discovery and attribution for explainable RL. 
+
+**Abstract (ZH)**: 解释强化学习（RL）代理的决策对于在实际应用中建立信任并确保可靠性至关重要。传统的可解释性方法通常依赖于显著性分析，这在提供 actionable 洞察方面可能有限制。最近，人们越来越关注将 RL 决策归因于数据集中的特定轨迹。然而，这些方法经常将解释泛化到长轨迹中，可能涉及多种不同的行为。通常，提供更细粒度的多个解释会提高清晰度。在本文中，我们提出了一种用于行为发现和行为归因的框架，在离线 RL 轨迹中对行为进行归因。我们的方法识别出有意义的行为片段，使得与高级别代理行为相关的精确和细粒度解释成为可能。该方法在不同环境下的适应性较强，只需少量修改即可提供一种可扩展且多功能的解决方案，以实现可解释的 RL 中的行为发现和归因。 
+
+---
+# Challenges and Trends in Egocentric Vision: A Survey 
+
+**Title (ZH)**: 自视点视觉挑战与趋势综述 
+
+**Authors**: Xiang Li, Heqian Qiu, Lanxiao Wang, Hanwen Zhang, Chenghao Qi, Linfeng Han, Huiyu Xiong, Hongliang Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.15275)  
+
+**Abstract**: With the rapid development of artificial intelligence technologies and wearable devices, egocentric vision understanding has emerged as a new and challenging research direction, gradually attracting widespread attention from both academia and industry. Egocentric vision captures visual and multimodal data through cameras or sensors worn on the human body, offering a unique perspective that simulates human visual experiences. This paper provides a comprehensive survey of the research on egocentric vision understanding, systematically analyzing the components of egocentric scenes and categorizing the tasks into four main areas: subject understanding, object understanding, environment understanding, and hybrid understanding. We explore in detail the sub-tasks within each category. We also summarize the main challenges and trends currently existing in the field. Furthermore, this paper presents an overview of high-quality egocentric vision datasets, offering valuable resources for future research. By summarizing the latest advancements, we anticipate the broad applications of egocentric vision technologies in fields such as augmented reality, virtual reality, and embodied intelligence, and propose future research directions based on the latest developments in the field. 
+
+**Abstract (ZH)**: 随着人工智能技术和可穿戴设备的快速发展，第一人称视觉理解已成为一个新兴且具有挑战性的研究方向，逐渐引起了学术界和工业界的广泛关注。第一人称视觉通过穿戴在人体上的摄像头或传感器捕获视觉和多模态数据，提供了一种模拟人类视觉体验的独特视角。本文对第一人称视觉理解的研究进行了全面综述，系统分析了第一人称场景的组成，并将任务划分为四个主要领域：主体理解、对象理解、环境理解和混合理解。我们详细探讨了每个类别下的子任务。同时，我们总结了当前领域中存在的主要挑战和趋势。此外，本文概述了高质量的第一人称视觉数据集，为未来的研究提供了宝贵资源。通过总结最新进展，我们预见了第一人称视觉技术在增强现实、虚拟现实和嵌入式智能等领域的广泛应用，并基于最新发展提出未来的研究方向。 
+
+---
+# A Personalized Data-Driven Generative Model of Human Motion 
+
+**Title (ZH)**: 个性化数据驱动的人体运动生成模型 
+
+**Authors**: Angelo Di Porzio, Marco Coraggio  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.15225)  
+
+**Abstract**: The deployment of autonomous virtual avatars (in extended reality) and robots in human group activities - such as rehabilitation therapy, sports, and manufacturing - is expected to increase as these technologies become more pervasive. Designing cognitive architectures and control strategies to drive these agents requires realistic models of human motion. However, existing models only provide simplified descriptions of human motor behavior. In this work, we propose a fully data-driven approach, based on Long Short-Term Memory neural networks, to generate original motion that captures the unique characteristics of specific individuals. We validate the architecture using real data of scalar oscillatory motion. Extensive analyses show that our model effectively replicates the velocity distribution and amplitude envelopes of the individual it was trained on, remaining different from other individuals, and outperforming state-of-the-art models in terms of similarity to human data. 
+
+**Abstract (ZH)**: 自主虚拟化身（在扩展现实中的部署）和机器人在人类群体活动（如康复治疗、体育和制造业）中的应用预计随着这些技术的普及而增加。设计驱动这些代理的认知架构和控制策略需要真实的human运动模型。然而，现有模型仅提供了人类运动行为的简化的描述。在本工作中，我们提出了一种基于长短期记忆神经网络的完全数据驱动的方法，以生成能够捕捉特定个体独特特征的原始运动。我们使用标量振荡运动的真实数据对该架构进行了验证。广泛的分析表明，我们的模型有效地复制了所训练个体的速度分布和振幅包络，并且在与人类数据的相似性方面优于现有最先进的模型。 
+
+---
+# When Pigs Get Sick: Multi-Agent AI for Swine Disease Detection 
+
+**Title (ZH)**: 当猪生病时：多Agent人工智能在猪病检测中的应用 
+
+**Authors**: Tittaya Mairittha, Tanakon Sawanglok, Panuwit Raden, Sorrawit Treesuk  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.15204)  
+
+**Abstract**: Swine disease surveillance is critical to the sustainability of global agriculture, yet its effectiveness is frequently undermined by limited veterinary resources, delayed identification of cases, and variability in diagnostic accuracy. To overcome these barriers, we introduce a novel AI-powered, multi-agent diagnostic system that leverages Retrieval-Augmented Generation (RAG) to deliver timely, evidence-based disease detection and clinical guidance. By automatically classifying user inputs into either Knowledge Retrieval Queries or Symptom-Based Diagnostic Queries, the system ensures targeted information retrieval and facilitates precise diagnostic reasoning. An adaptive questioning protocol systematically collects relevant clinical signs, while a confidence-weighted decision fusion mechanism integrates multiple diagnostic hypotheses to generate robust disease predictions and treatment recommendations. Comprehensive evaluations encompassing query classification, disease diagnosis, and knowledge retrieval demonstrate that the system achieves high accuracy, rapid response times, and consistent reliability. By providing a scalable, AI-driven diagnostic framework, this approach enhances veterinary decision-making, advances sustainable livestock management practices, and contributes substantively to the realization of global food security. 
+
+**Abstract (ZH)**: 猪疾病监控对于全球农业的可持续发展至关重要，然而其有效性常因兽医资源有限、病例识别延迟以及诊断准确性的变异性而受到削弱。为克服这些障碍，我们提出了一种新型的基于人工智能的多代理诊断系统，该系统利用检索增强生成（RAG）技术，提供及时的、基于证据的疾病检测和临床指导。通过自动将用户输入分类为知识检索查询或基于症状的诊断查询，该系统确保了精准的信息检索，并促进了精确的诊断推理。系统采用自适应询问协议系统地收集相关临床表现，并通过信心加权决策融合机制整合多个诊断假设，生成稳健的疾病预测和治疗建议。全面的评估表明，该系统在查询分类、疾病诊断和知识检索方面实现了高精度、快速响应时间和一致的可靠性。通过提供一种可扩展的人工智能驱动诊断框架，该方法增强了兽医决策能力，推动了可持续的畜禽管理实践，并对全球食物安全的实现做出了实质性贡献。 
+
+---
+# Curiosity-Diffuser: Curiosity Guide Diffusion Models for Reliability 
+
+**Title (ZH)**: 好奇心弥散器：好奇心引导的扩散模型以提升可靠性 
+
+**Authors**: Zihao Liu, Xing Liu, Yizhai Zhang, Zhengxiong Liu, Panfeng Huang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.14833)  
+
+**Abstract**: One of the bottlenecks in robotic intelligence is the instability of neural network models, which, unlike control models, lack a well-defined convergence domain and stability. This leads to risks when applying intelligence in the physical world. Specifically, imitation policy based on neural network may generate hallucinations, leading to inaccurate behaviors that impact the safety of real-world applications. To address this issue, this paper proposes the Curiosity-Diffuser, aimed at guiding the conditional diffusion model to generate trajectories with lower curiosity, thereby improving the reliability of policy. The core idea is to use a Random Network Distillation (RND) curiosity module to assess whether the model's behavior aligns with the training data, and then minimize curiosity by classifier guidance diffusion to reduce overgeneralization during inference. Additionally, we propose a computationally efficient metric for evaluating the reliability of the policy, measuring the similarity between the generated behaviors and the training dataset, to facilitate research about reliability learning. Finally, simulation verify the effectiveness and applicability of the proposed method to a variety of scenarios, showing that Curiosity-Diffuser significantly improves task performance and produces behaviors that are more similar to the training data. The code for this work is available at: this http URL 
+
+**Abstract (ZH)**: 一种基于好奇度消解的条件扩散模型以提高政策可靠性的方法 
+
+---
+# Synthetic Data Generation of Body Motion Data by Neural Gas Network for Emotion Recognition 
+
+**Title (ZH)**: 基于神经_gas网络的 BodysMotion数据合成生成及其在情感识别中的应用 
+
+**Authors**: Seyed Muhammad Hossein Mousavi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.14513)  
+
+**Abstract**: In the domain of emotion recognition using body motion, the primary challenge lies in the scarcity of diverse and generalizable datasets. Automatic emotion recognition uses machine learning and artificial intelligence techniques to recognize a person's emotional state from various data types, such as text, images, sound, and body motion. Body motion poses unique challenges as many factors, such as age, gender, ethnicity, personality, and illness, affect its appearance, leading to a lack of diverse and robust datasets specifically for emotion recognition. To address this, employing Synthetic Data Generation (SDG) methods, such as Generative Adversarial Networks (GANs) and Variational Auto Encoders (VAEs), offers potential solutions, though these methods are often complex. This research introduces a novel application of the Neural Gas Network (NGN) algorithm for synthesizing body motion data and optimizing diversity and generation speed. By learning skeletal structure topology, the NGN fits the neurons or gas particles on body joints. Generated gas particles, which form the skeletal structure later on, will be used to synthesize the new body posture. By attaching body postures over frames, the final synthetic body motion appears. We compared our generated dataset against others generated by GANs, VAEs, and another benchmark algorithm, using benchmark metrics such as Fréchet Inception Distance (FID), Diversity, and a few more. Furthermore, we continued evaluation using classification metrics such as accuracy, precision, recall, and a few others. Joint-related features or kinematic parameters were extracted, and the system assessed model performance against unseen data. Our findings demonstrate that the NGN algorithm produces more realistic and emotionally distinct body motion data and does so with more synthesizing speed than existing methods. 
+
+**Abstract (ZH)**: 在基于身体运动的情感识别领域，主要挑战在于多样性和通用性强的数据库稀缺。自动情感识别采用机器学习和人工智能技术，从文本、图像、声音和身体运动等多种数据类型中识别人的情感状态。身体运动带来了独特的挑战，因为诸如年龄、性别、种族、个性和疾病等因素都会影响其表现，导致缺乏专门用于情感识别的多样性和稳健性数据集。为了应对这一挑战，利用合成数据生成（SDG）方法，如生成对抗网络（GANs）和变分自编码器（VAEs），提供了潜在的解决方案，尽管这些方法通常较为复杂。本研究介绍了一种神经气体网络（NGN）算法的新应用，用于合成身体运动数据并优化多样性和生成速度。通过学习骨骼结构拓扑，NGN将神经元或气体颗粒放置在身体关节上。生成的气体颗粒将用于合成新的身体姿态。通过在帧上附加身体姿态，最终合成的身体运动显现出来。我们使用弗雷切尔感知距离（FID）、多样性和其他基准指标，将我们的生成数据集与其他由GANs、VAEs和另一基准算法生成的数据集进行比较。此外，我们继续使用准确率、精确率、召回率等分类指标进行评估。提取与关节相关的特征或运动参数，并评估系统在面对未见过的数据时的性能。我们的研究结果表明，NGN算法生成的情感上更真实且更具有差异性的身体运动数据，并且生成速度也快于现有方法。 
+
+---
