@@ -1,0 +1,354 @@
+# Loop Closure from Two Views: Revisiting PGO for Scalable Trajectory Estimation through Monocular Priors 
+
+**Title (ZH)**: 两视图循环闭合：通过单目先验重访张量估计中的PGO以实现可扩展性 
+
+**Authors**: Tian Yi Lim, Boyang Sun, Marc Pollefeys, Hermann Blum  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16275)  
+
+**Abstract**: (Visual) Simultaneous Localization and Mapping (SLAM) remains a fundamental challenge in enabling autonomous systems to navigate and understand large-scale environments. Traditional SLAM approaches struggle to balance efficiency and accuracy, particularly in large-scale settings where extensive computational resources are required for scene reconstruction and Bundle Adjustment (BA). However, this scene reconstruction, in the form of sparse pointclouds of visual landmarks, is often only used within the SLAM system because navigation and planning methods require different map representations. In this work, we therefore investigate a more scalable Visual SLAM (VSLAM) approach without reconstruction, mainly based on approaches for two-view loop closures. By restricting the map to a sparse keyframed pose graph without dense geometry representations, our '2GO' system achieves efficient optimization with competitive absolute trajectory accuracy. In particular, we find that recent advancements in image matching and monocular depth priors enable very accurate trajectory optimization from two-view edges. We conduct extensive experiments on diverse datasets, including large-scale scenarios, and provide a detailed analysis of the trade-offs between runtime, accuracy, and map size. Our results demonstrate that this streamlined approach supports real-time performance, scales well in map size and trajectory duration, and effectively broadens the capabilities of VSLAM for long-duration deployments to large environments. 
+
+**Abstract (ZH)**: 视觉同时定位与建图（SLAM）仍是在使自主系统导航和理解大规模环境方面的一项基本挑战。传统的SLAM方法难以在效率和准确性之间找到平衡，特别是在需要大量计算资源进行场景重建和捆集调整（BA）的大规模环境中。然而，这种场景重建，以稀疏的视觉地标点云的形式，通常仅在SLAM系统内部使用，因为导航和规划方法需要不同的地图表示。因此，在本文中，我们研究了一种不进行重建的更可扩展的视觉SLAM（VSLAM）方法，主要基于两视图回环闭合的方法。通过将地图限制为稀疏的关键帧位姿图，而不包含密集的几何表示，我们的'2GO'系统实现了高效优化，并且具有竞争力的绝对轨迹准确度。特别是在此过程中，我们发现最近在图像匹配和单目深度先验方面的进步使得仅从两视图边就可实现非常准确的轨迹优化。我们在多种数据集上进行了广泛的实验，包括大规模场景，并详细分析了运行时间、准确性和地图大小之间的权衡。实验结果表明，这种精简的方法支持实时性能，在地图大小和轨迹持续时间上可扩展，并有效扩大了VSLAM在长时间部署到大型环境中的能力。 
+
+---
+# Rejecting Outliers in 2D-3D Point Correspondences from 2D Forward-Looking Sonar Observations 
+
+**Title (ZH)**: 从2D向前声纳观测中 Rejecting 2D-3D 点对应中的离群值 
+
+**Authors**: Jiayi Su, Shaofeng Zou, Jingyu Qian, Yan Wei, Fengzhong Qu, Liuqing Yang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16066)  
+
+**Abstract**: Rejecting outliers before applying classical robust methods is a common approach to increase the success rate of estimation, particularly when the outlier ratio is extremely high (e.g. 90%). However, this method often relies on sensor- or task-specific characteristics, which may not be easily transferable across different scenarios. In this paper, we focus on the problem of rejecting 2D-3D point correspondence outliers from 2D forward-looking sonar (2D FLS) observations, which is one of the most popular perception device in the underwater field but has a significantly different imaging mechanism compared to widely used perspective cameras and LiDAR. We fully leverage the narrow field of view in the elevation of 2D FLS and develop two compatibility tests for different 3D point configurations: (1) In general cases, we design a pairwise length in-range test to filter out overly long or short edges formed from point sets; (2) In coplanar cases, we design a coplanarity test to check if any four correspondences are compatible under a coplanar setting. Both tests are integrated into outlier rejection pipelines, where they are followed by maximum clique searching to identify the largest consistent measurement set as inliers. Extensive simulations demonstrate that the proposed methods for general and coplanar cases perform effectively under outlier ratios of 80% and 90%, respectively. 
+
+**Abstract (ZH)**: 在高比例离群值（如90%）情况下，拒绝离群值后再应用经典鲁棒方法以提高估计成功率是一种常见做法，但往往依赖于特定传感器或任务的特性，可能难以跨不同场景移植。本文专注于从2D前方声纳（2D FLS）观测中剔除2D-3D点对应离群值的问题，这是水下领域中最常用的一种感知设备，但其成像机制与广泛使用的透视相机和LiDAR存在显著差异。我们充分利用2D FLS在垂直方向上的窄视野，并为此开发了两种兼容性测试，以处理不同3D点配置：（1）在一般情况下，设计一对一点集形成的边缘长度范围测试，以剔除过长或过短的边缘；（2）在共面情况下，设计共面性测试，检查任何四组对应是否在共面设置下兼容。这两种测试整合进了离群值剔除管道中，之后通过最大_clique_搜索确定最大的一致测量集作为内点。广泛仿真实验表明，在80%和90%的离群值比例下，所提出的方法分别在一般情况和共面情况下表现有效。 
+
+---
+# From Monocular Vision to Autonomous Action: Guiding Tumor Resection via 3D Reconstruction 
+
+**Title (ZH)**: 从单目视觉到自主行动：通过三维重建引导肿瘤切除 
+
+**Authors**: Ayberk Acar, Mariana Smith, Lidia Al-Zogbi, Tanner Watts, Fangjie Li, Hao Li, Nural Yilmaz, Paul Maria Scheikl, Jesse F. d'Almeida, Susheela Sharma, Lauren Branscombe, Tayfun Efe Ertop, Robert J. Webster III, Ipek Oguz, Alan Kuntz, Axel Krieger, Jie Ying Wu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16263)  
+
+**Abstract**: Surgical automation requires precise guidance and understanding of the scene. Current methods in the literature rely on bulky depth cameras to create maps of the anatomy, however this does not translate well to space-limited clinical applications. Monocular cameras are small and allow minimally invasive surgeries in tight spaces but additional processing is required to generate 3D scene understanding. We propose a 3D mapping pipeline that uses only RGB images to create segmented point clouds of the target anatomy. To ensure the most precise reconstruction, we compare different structure from motion algorithms' performance on mapping the central airway obstructions, and test the pipeline on a downstream task of tumor resection. In several metrics, including post-procedure tissue model evaluation, our pipeline performs comparably to RGB-D cameras and, in some cases, even surpasses their performance. These promising results demonstrate that automation guidance can be achieved in minimally invasive procedures with monocular cameras. This study is a step toward the complete autonomy of surgical robots. 
+
+**Abstract (ZH)**: 手术自动化需要精确的指导和对场景的深刻理解。现有文献中的方法依赖于体积较大的深度摄像头来生成 Anatomy 的地图，但在空间受限的临床应用中并不适用。单目摄像头小巧，并允许在狭小空间内进行微创手术，但需要额外处理以生成三维场景理解。我们提出了一种仅使用 RGB 图像的三维地图生成管道，以创建目标 Anatomy 的分割点云。为了确保最精确的重建，我们在中央气道阻塞映射任务中比较了不同结构从运动算法的性能，并在肿瘤切除的下游任务上测试了该管道。在包括术后组织模型评估的多个指标中，我们的管道与 RGB-D 摄像头的表现相当，甚至在某些情况下超过了其性能。这些有前景的结果表明，使用单目摄像头可以在微创手术中实现自动化指导。本研究是实现手术机器人完全自主性的一步。 
+
+---
+# GASP: Unifying Geometric and Semantic Self-Supervised Pre-training for Autonomous Driving 
+
+**Title (ZH)**: GASP：统一几何和语义自主预训练的自动驾驶技术 
+
+**Authors**: William Ljungbergh, Adam Lilja, Adam Tonderski. Arvid Laveno Ling, Carl Lindström, Willem Verbeke, Junsheng Fu, Christoffer Petersson, Lars Hammarstrand, Michael Felsberg  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.15672)  
+
+**Abstract**: Self-supervised pre-training based on next-token prediction has enabled large language models to capture the underlying structure of text, and has led to unprecedented performance on a large array of tasks when applied at scale. Similarly, autonomous driving generates vast amounts of spatiotemporal data, alluding to the possibility of harnessing scale to learn the underlying geometric and semantic structure of the environment and its evolution over time. In this direction, we propose a geometric and semantic self-supervised pre-training method, GASP, that learns a unified representation by predicting, at any queried future point in spacetime, (1) general occupancy, capturing the evolving structure of the 3D scene; (2) ego occupancy, modeling the ego vehicle path through the environment; and (3) distilled high-level features from a vision foundation model. By modeling geometric and semantic 4D occupancy fields instead of raw sensor measurements, the model learns a structured, generalizable representation of the environment and its evolution through time. We validate GASP on multiple autonomous driving benchmarks, demonstrating significant improvements in semantic occupancy forecasting, online mapping, and ego trajectory prediction. Our results demonstrate that continuous 4D geometric and semantic occupancy prediction provides a scalable and effective pre-training paradigm for autonomous driving. For code and additional visualizations, see \href{this https URL. 
+
+**Abstract (ZH)**: 基于下一个词预测的自监督预训练使大规模语言模型能够捕获文本的潜在结构，并在应用时取得了前所未有的多任务性能。类似地，自动驾驶产生了大量的时空数据，暗示可以通过规模学习环境及其随时间的变化的几何和语义结构。在此方向上，我们提出了一种几何和语义自监督预训练方法GASP，该方法通过在时空中的任意查询点预测（1）通用占用率，捕捉3D场景的演变结构；（2）本体占用率，建模车辆在环境中的路径；以及（3）来自视觉基础模型的提炼高层特征。通过建模几何和语义4D占用率场而不是原始传感器测量值，该模型学会了一种结构化且可泛化的环境及其随时间变化的表示。我们在多个自动驾驶基准上验证了GASP，展示了在语义占用率预测、在线建图和本体路径预测方面的显着改进。我们的结果表明，连续的4D几何和语义占用率预测为自动驾驶提供了一种可扩展且有效的预训练范式。更多信息和代码，请参见\href{this https URL。 
+
+---
+# Motion Synthesis with Sparse and Flexible Keyjoint Control 
+
+**Title (ZH)**: 稀疏且灵活的关键关节控制Motion合成 
+
+**Authors**: Inwoo Hwang, Jinseok Bae, Donggeun Lim, Young Min Kim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.15557)  
+
+**Abstract**: Creating expressive character animations is labor-intensive, requiring intricate manual adjustment of animators across space and time. Previous works on controllable motion generation often rely on a predefined set of dense spatio-temporal specifications (e.g., dense pelvis trajectories with exact per-frame timing), limiting practicality for animators. To process high-level intent and intuitive control in diverse scenarios, we propose a practical controllable motions synthesis framework that respects sparse and flexible keyjoint signals. Our approach employs a decomposed diffusion-based motion synthesis framework that first synthesizes keyjoint movements from sparse input control signals and then synthesizes full-body motion based on the completed keyjoint trajectories. The low-dimensional keyjoint movements can easily adapt to various control signal types, such as end-effector position for diverse goal-driven motion synthesis, or incorporate functional constraints on a subset of keyjoints. Additionally, we introduce a time-agnostic control formulation, eliminating the need for frame-specific timing annotations and enhancing control flexibility. Then, the shared second stage can synthesize a natural whole-body motion that precisely satisfies the task requirement from dense keyjoint movements. We demonstrate the effectiveness of sparse and flexible keyjoint control through comprehensive experiments on diverse datasets and scenarios. 
+
+**Abstract (ZH)**: 基于稀疏灵活关键关节信号的可控运动合成框架 
+
+---
+# ImageInThat: Manipulating Images to Convey User Instructions to Robots 
+
+**Title (ZH)**: ImageInThat: 向机器人传达用户指令的图像 manipuation 
+
+**Authors**: Karthik Mahadevan, Blaine Lewis, Jiannan Li, Bilge Mutlu, Anthony Tang, Tovi Grossman  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.15500)  
+
+**Abstract**: Foundation models are rapidly improving the capability of robots in performing everyday tasks autonomously such as meal preparation, yet robots will still need to be instructed by humans due to model performance, the difficulty of capturing user preferences, and the need for user agency. Robots can be instructed using various methods-natural language conveys immediate instructions but can be abstract or ambiguous, whereas end-user programming supports longer horizon tasks but interfaces face difficulties in capturing user intent. In this work, we propose using direct manipulation of images as an alternative paradigm to instruct robots, and introduce a specific instantiation called ImageInThat which allows users to perform direct manipulation on images in a timeline-style interface to generate robot instructions. Through a user study, we demonstrate the efficacy of ImageInThat to instruct robots in kitchen manipulation tasks, comparing it to a text-based natural language instruction method. The results show that participants were faster with ImageInThat and preferred to use it over the text-based method. Supplementary material including code can be found at: this https URL. 
+
+**Abstract (ZH)**: 基础模型正迅速提升机器人独立完成日常任务的能力，如烹饪，但机器人仍将需要人类的指令，原因包括模型性能限制、捕捉用户偏好难度大以及需要用户自主权。可以通过多种方法对机器人进行指令，自然语言传达即时指令但可能存在抽象或模糊性，而最终用户编程支持长期任务，但在界面方面难以捕捉用户意图。在本工作中，我们提出使用直接对图像进行操作作为一种替代指令范式，并介绍了一种特定实例ImageInThat，允许用户在时间线式界面中直接对图像进行操作以生成机器人指令。通过用户研究，我们展示了ImageInThat在厨房操作任务中指导机器人有效性，将其与基于文本的自然语言指令方法进行对比。结果显示，参与者使用ImageInThat更快速，更偏好使用该方法。补充材料包括代码，可在以下链接找到：this https URL。 
+
+---
+# DreamTexture: Shape from Virtual Texture with Analysis by Augmentation 
+
+**Title (ZH)**: DreamTexture: 从虚拟纹理推断形状的分析增强方法 
+
+**Authors**: Ananta R. Bhattarai, Xingzhe He, Alla Sheffer, Helge Rhodin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16412)  
+
+**Abstract**: DreamFusion established a new paradigm for unsupervised 3D reconstruction from virtual views by combining advances in generative models and differentiable rendering. However, the underlying multi-view rendering, along with supervision from large-scale generative models, is computationally expensive and under-constrained. We propose DreamTexture, a novel Shape-from-Virtual-Texture approach that leverages monocular depth cues to reconstruct 3D objects. Our method textures an input image by aligning a virtual texture with the real depth cues in the input, exploiting the inherent understanding of monocular geometry encoded in modern diffusion models. We then reconstruct depth from the virtual texture deformation with a new conformal map optimization, which alleviates memory-intensive volumetric representations. Our experiments reveal that generative models possess an understanding of monocular shape cues, which can be extracted by augmenting and aligning texture cues -- a novel monocular reconstruction paradigm that we call Analysis by Augmentation. 
+
+**Abstract (ZH)**: DreamTexture：一种利用单目深度线索的虚拟纹理形变重建方法 
+
+---
+# SA-Occ: Satellite-Assisted 3D Occupancy Prediction in Real World 
+
+**Title (ZH)**: SA-Occ: 卫星辅助的三维占用预测在现实世界中 
+
+**Authors**: Chen Chen, Zhirui Wang, Taowei Sheng, Yi Jiang, Yundu Li, Peirui Cheng, Luning Zhang, Kaiqiang Chen, Yanfeng Hu, Xue Yang, Xian Sun  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16399)  
+
+**Abstract**: Existing vision-based 3D occupancy prediction methods are inherently limited in accuracy due to their exclusive reliance on street-view imagery, neglecting the potential benefits of incorporating satellite views. We propose SA-Occ, the first Satellite-Assisted 3D occupancy prediction model, which leverages GPS & IMU to integrate historical yet readily available satellite imagery into real-time applications, effectively mitigating limitations of ego-vehicle perceptions, involving occlusions and degraded performance in distant regions. To address the core challenges of cross-view perception, we propose: 1) Dynamic-Decoupling Fusion, which resolves inconsistencies in dynamic regions caused by the temporal asynchrony between satellite and street views; 2) 3D-Proj Guidance, a module that enhances 3D feature extraction from inherently 2D satellite imagery; and 3) Uniform Sampling Alignment, which aligns the sampling density between street and satellite views. Evaluated on Occ3D-nuScenes, SA-Occ achieves state-of-the-art performance, especially among single-frame methods, with a 39.05% mIoU (a 6.97% improvement), while incurring only 6.93 ms of additional latency per frame. Our code and newly curated dataset are available at this https URL. 
+
+**Abstract (ZH)**: 基于卫星辅助的3D占用率预测模型SA-Occ 
+
+---
+# Do Visual Imaginations Improve Vision-and-Language Navigation Agents? 
+
+**Title (ZH)**: 视觉想象能否提高视觉语言导航代理的能力？ 
+
+**Authors**: Akhil Perincherry, Jacob Krantz, Stefan Lee  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16394)  
+
+**Abstract**: Vision-and-Language Navigation (VLN) agents are tasked with navigating an unseen environment using natural language instructions. In this work, we study if visual representations of sub-goals implied by the instructions can serve as navigational cues and lead to increased navigation performance. To synthesize these visual representations or imaginations, we leverage a text-to-image diffusion model on landmark references contained in segmented instructions. These imaginations are provided to VLN agents as an added modality to act as landmark cues and an auxiliary loss is added to explicitly encourage relating these with their corresponding referring expressions. Our findings reveal an increase in success rate (SR) of around 1 point and up to 0.5 points in success scaled by inverse path length (SPL) across agents. These results suggest that the proposed approach reinforces visual understanding compared to relying on language instructions alone. Code and data for our work can be found at this https URL. 
+
+**Abstract (ZH)**: 基于视觉-语言导航（VLN）代理在使用自然语言指令导航未知环境时，我们研究视觉子目标表示是否可以作为导航线索并提高导航性能。为了合成这些视觉表示或想象，我们利用文本到图像扩散模型，该模型基于分割指令中的地标参考。这些想象被提供给VLN代理作为额外的模态，用作地标线索，并添加了一个辅助损失来明确鼓励与相应的引用表达式相关联。我们的研究结果表明，代理的成功率（SR）提高了约1个百分点，成功尺度倒数路径长度（SPL）提高了最多0.5个百分点。这些结果表明，与仅依赖语言指令相比，所提出的方法增强了视觉理解能力。我们的代码和数据可在以下链接找到：this https URL。 
+
+---
+# Attentional Triple-Encoder Network in Spatiospectral Domains for Medical Image Segmentation 
+
+**Title (ZH)**: 空间光谱域中的注意力三编码器网络在医学图像分割中的应用 
+
+**Authors**: Kristin Qi, Xinhan Di  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16389)  
+
+**Abstract**: Retinal Optical Coherence Tomography (OCT) segmentation is essential for diagnosing pathology. Traditional methods focus on either spatial or spectral domains, overlooking their combined dependencies. We propose a triple-encoder network that integrates CNNs for spatial features, Fast Fourier Convolution (FFC) for spectral features, and attention mechanisms to capture global relationships across both domains. Attention fusion modules integrate convolution and cross-attention to further enhance features. Our method achieves an average Dice score improvement from 0.855 to 0.864, outperforming prior work. 
+
+**Abstract (ZH)**: 视网膜光学相干断层扫描(OCT)分割对于诊断病理至关重要。传统的分割方法侧重于空间或光谱域，忽视了二者之间的联合依赖性。我们提出了一种三编码器网络，该网络将卷积神经网络用于空间特征提取、快速傅里叶卷积(FFC)用于光谱特征提取，并采用注意机制捕捉两个域之间的全局关系。注意融合模块结合卷积和交叉注意以进一步增强特征。我们的方法实现了平均Dice分数从0.855提高到0.864，超越了先前的工作。 
+
+---
+# Unleashing Vecset Diffusion Model for Fast Shape Generation 
+
+**Title (ZH)**: 解锁Vecset扩散模型以实现快速形状生成 
+
+**Authors**: Zeqiang Lai, Yunfei Zhao, Zibo Zhao, Haolin Liu, Fuyun Wang, Huiwen Shi, Xianghui Yang, Qinxiang Lin, Jinwei Huang, Yuhong Liu, Jie Jiang, Chunchao Guo, Xiangyu Yue  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16302)  
+
+**Abstract**: 3D shape generation has greatly flourished through the development of so-called "native" 3D diffusion, particularly through the Vecset Diffusion Model (VDM). While recent advancements have shown promising results in generating high-resolution 3D shapes, VDM still struggles with high-speed generation. Challenges exist because of difficulties not only in accelerating diffusion sampling but also VAE decoding in VDM, areas under-explored in previous works. To address these challenges, we present FlashVDM, a systematic framework for accelerating both VAE and DiT in VDM. For DiT, FlashVDM enables flexible diffusion sampling with as few as 5 inference steps and comparable quality, which is made possible by stabilizing consistency distillation with our newly introduced Progressive Flow Distillation. For VAE, we introduce a lightning vecset decoder equipped with Adaptive KV Selection, Hierarchical Volume Decoding, and Efficient Network Design. By exploiting the locality of the vecset and the sparsity of shape surface in the volume, our decoder drastically lowers FLOPs, minimizing the overall decoding overhead. We apply FlashVDM to Hunyuan3D-2 to obtain Hunyuan3D-2 Turbo. Through systematic evaluation, we show that our model significantly outperforms existing fast 3D generation methods, achieving comparable performance to the state-of-the-art while reducing inference time by over 45x for reconstruction and 32x for generation. Code and models are available at this https URL. 
+
+**Abstract (ZH)**: 基于“原生”3D扩散的高效3D形状生成：FlashVDM框架 
+
+---
+# Accurate Scene Text Recognition with Efficient Model Scaling and Cloze Self-Distillation 
+
+**Title (ZH)**: 高效模型缩放与填空自蒸馏的场景文本识别准确性提升 
+
+**Authors**: Andrea Maracani, Savas Ozkan, Sijun Cho, Hyowon Kim, Eunchung Noh, Jeongwon Min, Cho Jung Min, Dookun Park, Mete Ozay  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16184)  
+
+**Abstract**: Scaling architectures have been proven effective for improving Scene Text Recognition (STR), but the individual contribution of vision encoder and text decoder scaling remain under-explored. In this work, we present an in-depth empirical analysis and demonstrate that, contrary to previous observations, scaling the decoder yields significant performance gains, always exceeding those achieved by encoder scaling alone. We also identify label noise as a key challenge in STR, particularly in real-world data, which can limit the effectiveness of STR models. To address this, we propose Cloze Self-Distillation (CSD), a method that mitigates label noise by distilling a student model from context-aware soft predictions and pseudolabels generated by a teacher model. Additionally, we enhance the decoder architecture by introducing differential cross-attention for STR. Our methodology achieves state-of-the-art performance on 10 out of 11 benchmarks using only real data, while significantly reducing the parameter size and computational costs. 
+
+**Abstract (ZH)**: 基于视觉编码器和文本解码器缩放的场景文本识别性能分析：消除标签噪声并引入差异性交叉注意力机制 
+
+---
+# 3-D Image-to-Image Fusion in Lightsheet Microscopy by Two-Step Adversarial Network: Contribution to the FuseMyCells Challenge 
+
+**Title (ZH)**: 基于两步对抗网络的Lightsheet显微镜3D图像融合：对FuseMyCells挑战的贡献 
+
+**Authors**: Marek Wodzinski, Henning Müller  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16075)  
+
+**Abstract**: Lightsheet microscopy is a powerful 3-D imaging technique that addresses limitations of traditional optical and confocal microscopy but suffers from a low penetration depth and reduced image quality at greater depths. Multiview lightsheet microscopy improves 3-D resolution by combining multiple views but simultaneously increasing the complexity and the photon budget, leading to potential photobleaching and phototoxicity. The FuseMyCells challenge, organized in conjunction with the IEEE ISBI 2025 conference, aims to benchmark deep learning-based solutions for fusing high-quality 3-D volumes from single 3-D views, potentially simplifying procedures and conserving the photon budget. In this work, we propose a contribution to the FuseMyCells challenge based on a two-step procedure. The first step processes a downsampled version of the image to capture the entire region of interest, while the second step uses a patch-based approach for high-resolution inference, incorporating adversarial loss to enhance visual outcomes. This method addresses challenges related to high data resolution, the necessity of global context, and the preservation of high-frequency details. Experimental results demonstrate the effectiveness of our approach, highlighting its potential to improve 3-D image fusion quality and extend the capabilities of lightsheet microscopy. The average SSIM for the nucleus and membranes is greater than 0.85 and 0.91, respectively. 
+
+**Abstract (ZH)**: Lightsheet 光学显微成像是一个强大的三维成像技术，克服了传统光学和共焦显微镜的限制，但受到穿透深度低和深层图像质量差的限制。多视角 Lightsheet 显微成像通过结合多个视角提高三维分辨率，但同时增加了复杂性和光子预算，可能导致荧光淬灭和光毒性。FuseMyCells 挑战，作为 IEEE ISBI 2025 会议的一部分，旨在基准测试基于深度学习的解决方案，以融合单个三维视角的高质量三维体数据，可能简化程序并节省光子预算。在本工作中，我们根据两步程序提出了对 FuseMyCells 挑战的贡献。第一步处理图像的下采样版本以捕捉整个感兴趣区域，第二步使用基于补丁的方法进行高分辨率推理，并结合对手损失以增强视觉结果。该方法解决了高数据分辨率、全局上下文的必要性和高频细节保留等方面的挑战。实验结果表明了我们方法的有效性，强调了其提高三维图像融合质量并扩展 Lightsheet 显微镜功能的潜力。核和膜的平均 SSIM 分别大于 0.85 和 0.91。 
+
+---
+# Single Image Iterative Subject-driven Generation and Editing 
+
+**Title (ZH)**: 单图像迭代主题驱动生成与编辑 
+
+**Authors**: Yair Shpitzer, Gal Chechik, Idan Schwartz  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16025)  
+
+**Abstract**: Personalizing image generation and editing is particularly challenging when we only have a few images of the subject, or even a single image. A common approach to personalization is concept learning, which can integrate the subject into existing models relatively quickly, but produces images whose quality tends to deteriorate quickly when the number of subject images is small. Quality can be improved by pre-training an encoder, but training restricts generation to the training distribution, and is time consuming. It is still an open hard challenge to personalize image generation and editing from a single image without training. Here, we present SISO, a novel, training-free approach based on optimizing a similarity score with an input subject image. More specifically, SISO iteratively generates images and optimizes the model based on loss of similarity with the given subject image until a satisfactory level of similarity is achieved, allowing plug-and-play optimization to any image generator. We evaluated SISO in two tasks, image editing and image generation, using a diverse data set of personal subjects, and demonstrate significant improvements over existing methods in image quality, subject fidelity, and background preservation. 
+
+**Abstract (ZH)**: 基于输入主题图像优化相似度评分的单图像个性化图像生成与编辑方法 
+
+---
+# DIPLI: Deep Image Prior Lucky Imaging for Blind Astronomical Image Restoration 
+
+**Title (ZH)**: DIPLI: 深度图像先验 Lucky 成像 Methods for 盲 动力学天文图像恢复 
+
+**Authors**: Suraj Singh, Anastasia Batsheva, Oleg Y. Rogov, Ahmed Bouridane  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.15984)  
+
+**Abstract**: Contemporary image restoration and super-resolution techniques effectively harness deep neural networks, markedly outperforming traditional methods. However, astrophotography presents unique challenges for deep learning due to limited training data. This work explores hybrid strategies, such as the Deep Image Prior (DIP) model, which facilitates blind training but is susceptible to overfitting, artifact generation, and instability when handling noisy images. We propose enhancements to the DIP model's baseline performance through several advanced techniques. First, we refine the model to process multiple frames concurrently, employing the Back Projection method and the TVNet model. Next, we adopt a Markov approach incorporating Monte Carlo estimation, Langevin dynamics, and a variational input technique to achieve unbiased estimates with minimal variance and counteract overfitting effectively. Collectively, these modifications reduce the likelihood of noise learning and mitigate loss function fluctuations during training, enhancing result stability. We validated our algorithm across multiple image sets of astronomical and celestial objects, achieving performance that not only mitigates limitations of Lucky Imaging, a classical computer vision technique that remains a standard in astronomical image reconstruction but surpasses the original DIP model, state of the art transformer- and diffusion-based models, underscoring the significance of our improvements. 
+
+**Abstract (ZH)**: 当代图像恢复和超分辨率技术有效利用了深度神经网络，显著优于传统方法。然而，由于训练数据有限，天文学成像对深度学习提出了独特挑战。本文探索了混合策略，如Deep Image Prior (DIP)模型，该模型可实现盲训练，但在处理噪声图像时容易过拟合、生成伪影和不稳定。我们通过多种高级技术增强了DIP模型的基本性能。首先，我们将模型改进为同时处理多帧图像，采用后投影方法和TVNet模型。其次，我们采用马尔可夫方法结合蒙特卡洛估计、朗格vin动力学和变分输入技术，实现无偏差且方差小的估计，并有效防止过拟合。这些修改降低了噪声学习的可能性，并在训练过程中减少了损失函数波动，提高结果稳定性。我们使用多个天文和天体图像数据集验证了该算法，其性能不仅缓解了幸运成像这一传统计算机视觉技术的局限性，还超越了原始DIP模型和最先进的基于变换器和扩散的模型，突显了我们改进的重要性。 
+
+---
+# GAN-enhanced Simulation-driven DNN Testing in Absence of Ground Truth 
+
+**Title (ZH)**: GAN增强的基于仿真驱动的DNN测试在无地面真实数据情况下的应用 
+
+**Authors**: Mohammed Attaoui, Fabrizio Pastore  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.15953)  
+
+**Abstract**: The generation of synthetic inputs via simulators driven by search algorithms is essential for cost-effective testing of Deep Neural Network (DNN) components for safety-critical systems. However, in many applications, simulators are unable to produce the ground-truth data needed for automated test oracles and to guide the search process.
+To tackle this issue, we propose an approach for the generation of inputs for computer vision DNNs that integrates a generative network to ensure simulator fidelity and employs heuristic-based search fitnesses that leverage transformation consistency, noise resistance, surprise adequacy, and uncertainty estimation. We compare the performance of our fitnesses with that of a traditional fitness function leveraging ground truth; further, we assess how the integration of a GAN not leveraging the ground truth impacts on test and retraining effectiveness.
+Our results suggest that leveraging transformation consistency is the best option to generate inputs for both DNN testing and retraining; it maximizes input diversity, spots the inputs leading to worse DNN performance, and leads to best DNN performance after retraining. Besides enabling simulator-based testing in the absence of ground truth, our findings pave the way for testing solutions that replace costly simulators with diffusion and large language models, which might be more affordable than simulators, but cannot generate ground-truth data. 
+
+**Abstract (ZH)**: 通过搜索算法驱动模拟器生成合成输入以生成计算机视觉深度神经网络组件的成本有效测试数据是一个关键问题。然而，在许多应用中，模拟器无法产生所需的ground-truth数据以供自动测试或acles使用，也无法引导搜索过程。为解决这一问题，我们提出了一种结合生成网络确保模拟器保真度并利用基于启发式的搜索适应度的方法，这些适应度利用了变换一致性、噪声鲁棒性、惊喜恰当性和不确定性估计。我们将我们的适应度与利用ground-truth的传统适应度进行比较；此外，我们评估了不利用ground-truth的生成对抗网络（GAN）集成对测试和重新训练效果的影响。研究结果表明，利用变换一致性是生成用于DNN测试和重新训练输入的最佳选项，它最大化输入多样性，识别出导致DNN性能变差的输入，并在重新训练后达到最佳DNN性能。此外，我们的发现为使用扩散模型和大语言模型替代昂贵模拟器以进行测试铺平了道路，这些模型可能比模拟器更经济实惠，但无法生成ground-truth数据。 
+
+---
+# No Thing, Nothing: Highlighting Safety-Critical Classes for Robust LiDAR Semantic Segmentation in Adverse Weather 
+
+**Title (ZH)**: 无物，空无：突出安全关键类以提高恶劣天气下LiDAR语义分割的鲁棒性 
+
+**Authors**: Junsung Park, Hwijeong Lee, Inha Kang, Hyunjung Shim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.15910)  
+
+**Abstract**: Existing domain generalization methods for LiDAR semantic segmentation under adverse weather struggle to accurately predict "things" categories compared to "stuff" categories. In typical driving scenes, "things" categories can be dynamic and associated with higher collision risks, making them crucial for safe navigation and planning. Recognizing the importance of "things" categories, we identify their performance drop as a serious bottleneck in existing approaches. We observed that adverse weather induces degradation of semantic-level features and both corruption of local features, leading to a misprediction of "things" as "stuff". To mitigate these corruptions, we suggest our method, NTN - segmeNt Things for No-accident. To address semantic-level feature corruption, we bind each point feature to its superclass, preventing the misprediction of things classes into visually dissimilar categories. Additionally, to enhance robustness against local corruption caused by adverse weather, we define each LiDAR beam as a local region and propose a regularization term that aligns the clean data with its corrupted counterpart in feature space. NTN achieves state-of-the-art performance with a +2.6 mIoU gain on the SemanticKITTI-to-SemanticSTF benchmark and +7.9 mIoU on the SemanticPOSS-to-SemanticSTF benchmark. Notably, NTN achieves a +4.8 and +7.9 mIoU improvement on "things" classes, respectively, highlighting its effectiveness. 
+
+**Abstract (ZH)**: 基于LiDAR语义分割的恶劣天气域泛化方法中“things”类别预测的性能瓶颈及其解决 
+
+---
+# Enhancing Close-up Novel View Synthesis via Pseudo-labeling 
+
+**Title (ZH)**: 基于伪标签增强近距离新颖视角合成 
+
+**Authors**: Jiatong Xia, Libo Sun, Lingqiao Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.15908)  
+
+**Abstract**: Recent methods, such as Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS), have demonstrated remarkable capabilities in novel view synthesis. However, despite their success in producing high-quality images for viewpoints similar to those seen during training, they struggle when generating detailed images from viewpoints that significantly deviate from the training set, particularly in close-up views. The primary challenge stems from the lack of specific training data for close-up views, leading to the inability of current methods to render these views accurately. To address this issue, we introduce a novel pseudo-label-based learning strategy. This approach leverages pseudo-labels derived from existing training data to provide targeted supervision across a wide range of close-up viewpoints. Recognizing the absence of benchmarks for this specific challenge, we also present a new dataset designed to assess the effectiveness of both current and future methods in this area. Our extensive experiments demonstrate the efficacy of our approach. 
+
+**Abstract (ZH)**: Recent Methods like Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS)展现出了在新颖视图合成方面的卓越能力。然而，尽管这些方法在生成与训练视角相似的高质量图像方面表现出色，但在生成与训练集差异较大的视角（尤其是近距离视角）的详细图像时存在局限性。主要挑战源自近距离视角缺乏特定训练数据，导致当前方法难以准确渲染这些视角。为解决这一问题，我们提出了一种新型的伪标签驱动的学习策略。该方法利用现有训练数据衍生的伪标签，为广泛的近距离视角提供针对性监督。鉴于缺乏针对这一特定挑战的基准测试，我们还提供了一个新数据集，用于评估当前和未来方法在该领域的有效性。我们的大量实验结果证明了该方法的有效性。 
+
+---
+# Jasmine: Harnessing Diffusion Prior for Self-supervised Depth Estimation 
+
+**Title (ZH)**: Jasmin: 利用扩散先验进行自监督深度估计 
+
+**Authors**: Jiyuan Wang, Chunyu Lin, Cheng Guan, Lang Nie, Jing He, Haodong Li, Kang Liao, Yao Zhao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.15905)  
+
+**Abstract**: In this paper, we propose Jasmine, the first Stable Diffusion (SD)-based self-supervised framework for monocular depth estimation, which effectively harnesses SD's visual priors to enhance the sharpness and generalization of unsupervised prediction. Previous SD-based methods are all supervised since adapting diffusion models for dense prediction requires high-precision supervision. In contrast, self-supervised reprojection suffers from inherent challenges (e.g., occlusions, texture-less regions, illumination variance), and the predictions exhibit blurs and artifacts that severely compromise SD's latent priors. To resolve this, we construct a novel surrogate task of hybrid image reconstruction. Without any additional supervision, it preserves the detail priors of SD models by reconstructing the images themselves while preventing depth estimation from degradation. Furthermore, to address the inherent misalignment between SD's scale and shift invariant estimation and self-supervised scale-invariant depth estimation, we build the Scale-Shift GRU. It not only bridges this distribution gap but also isolates the fine-grained texture of SD output against the interference of reprojection loss. Extensive experiments demonstrate that Jasmine achieves SoTA performance on the KITTI benchmark and exhibits superior zero-shot generalization across multiple datasets. 
+
+**Abstract (ZH)**: Jasmine：基于Stable Diffusion的首个自监督单目深度估计框架 
+
+---
+# VideoRFSplat: Direct Scene-Level Text-to-3D Gaussian Splatting Generation with Flexible Pose and Multi-View Joint Modeling 
+
+**Title (ZH)**: 视频级场景级文本到3D高斯点云的直接生成：具有灵活姿态和多视图联合建模 
+
+**Authors**: Hyojun Go, Byeongjun Park, Hyelin Nam, Byung-Hoon Kim, Hyungjin Chung, Changick Kim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.15855)  
+
+**Abstract**: We propose VideoRFSplat, a direct text-to-3D model leveraging a video generation model to generate realistic 3D Gaussian Splatting (3DGS) for unbounded real-world scenes. To generate diverse camera poses and unbounded spatial extent of real-world scenes, while ensuring generalization to arbitrary text prompts, previous methods fine-tune 2D generative models to jointly model camera poses and multi-view images. However, these methods suffer from instability when extending 2D generative models to joint modeling due to the modality gap, which necessitates additional models to stabilize training and inference. In this work, we propose an architecture and a sampling strategy to jointly model multi-view images and camera poses when fine-tuning a video generation model. Our core idea is a dual-stream architecture that attaches a dedicated pose generation model alongside a pre-trained video generation model via communication blocks, generating multi-view images and camera poses through separate streams. This design reduces interference between the pose and image modalities. Additionally, we propose an asynchronous sampling strategy that denoises camera poses faster than multi-view images, allowing rapidly denoised poses to condition multi-view generation, reducing mutual ambiguity and enhancing cross-modal consistency. Trained on multiple large-scale real-world datasets (RealEstate10K, MVImgNet, DL3DV-10K, ACID), VideoRFSplat outperforms existing text-to-3D direct generation methods that heavily depend on post-hoc refinement via score distillation sampling, achieving superior results without such refinement. 
+
+**Abstract (ZH)**: VideoRFSplat：一种直接文本到3D模型，利用视频生成模型生成现实场景的逼真3D高斯斑点 
+
+---
+# Computation-Efficient and Recognition-Friendly 3D Point Cloud Privacy Protection 
+
+**Title (ZH)**: 计算高效且识别友好的3D点云隐私保护 
+
+**Authors**: Haotian Ma, Lin Gu, Siyi Wu, Yingying Zhu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.15818)  
+
+**Abstract**: 3D point cloud has been widely used in applications such as self-driving cars, robotics, CAD models, etc. To the best of our knowledge, these applications raised the issue of privacy leakage in 3D point clouds, which has not been studied well. Different from the 2D image privacy, which is related to texture and 2D geometric structure, the 3D point cloud is texture-less and only relevant to 3D geometric structure. In this work, we defined the 3D point cloud privacy problem and proposed an efficient privacy-preserving framework named PointFlowGMM that can support downstream classification and segmentation tasks without seeing the original data. Using a flow-based generative model, the point cloud is projected into a latent Gaussian mixture distributed subspace. We further designed a novel angular similarity loss to obfuscate the original geometric structure and reduce the model size from 767MB to 120MB without a decrease in recognition performance. The projected point cloud in the latent space is orthogonally rotated randomly to further protect the original geometric structure, the class-to-class relationship is preserved after rotation, thus, the protected point cloud can support the recognition task. We evaluated our model on multiple datasets and achieved comparable recognition results on encrypted point clouds compared to the original point clouds. 
+
+**Abstract (ZH)**: 3D点云隐私保护问题及其高效框架PointFlowGMM研究 
+
+---
+# Representational Similarity via Interpretable Visual Concepts 
+
+**Title (ZH)**: 可解释视觉概念驱动的表示相似性 
+
+**Authors**: Neehar Kondapaneni, Oisin Mac Aodha, Pietro Perona  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.15699)  
+
+**Abstract**: How do two deep neural networks differ in how they arrive at a decision? Measuring the similarity of deep networks has been a long-standing open question. Most existing methods provide a single number to measure the similarity of two networks at a given layer, but give no insight into what makes them similar or dissimilar. We introduce an interpretable representational similarity method (RSVC) to compare two networks. We use RSVC to discover shared and unique visual concepts between two models. We show that some aspects of model differences can be attributed to unique concepts discovered by one model that are not well represented in the other. Finally, we conduct extensive evaluation across different vision model architectures and training protocols to demonstrate its effectiveness. 
+
+**Abstract (ZH)**: 两种深度神经网络在决策过程中的差异如何？如何衡量深度网络的相似性一直是一个悬而未决的问题。现有的大多数方法在同一层提供一个数值来衡量两个网络的相似性，但无法说明它们相似或不同的原因。我们提出了一个可解释的表示相似性方法（RSVC）来比较两个网络。我们使用RSVC来发现两个模型之间的共享和独特的视觉概念。我们表明，模型差异的一些方面可以归因于一个模型发现的独特概念，而这些概念在另一个模型中未得到良好体现。最后，我们在不同的视觉模型架构和训练协议下进行了大量评估，以证明其有效性。 
+
+---
+# A Context-Driven Training-Free Network for Lightweight Scene Text Segmentation and Recognition 
+
+**Title (ZH)**: 面向上下文的无需训练网络轻量级场景文本分割与识别 
+
+**Authors**: Ritabrata Chakraborty, Shivakumara Palaiahnakote, Umapada Pal, Cheng-Lin Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.15639)  
+
+**Abstract**: Modern scene text recognition systems often depend on large end-to-end architectures that require extensive training and are prohibitively expensive for real-time scenarios. In such cases, the deployment of heavy models becomes impractical due to constraints on memory, computational resources, and latency. To address these challenges, we propose a novel, training-free plug-and-play framework that leverages the strengths of pre-trained text recognizers while minimizing redundant computations. Our approach uses context-based understanding and introduces an attention-based segmentation stage, which refines candidate text regions at the pixel level, improving downstream recognition. Instead of performing traditional text detection that follows a block-level comparison between feature map and source image and harnesses contextual information using pretrained captioners, allowing the framework to generate word predictions directly from scene this http URL texts are semantically and lexically evaluated to get a final score. Predictions that meet or exceed a pre-defined confidence threshold bypass the heavier process of end-to-end text STR profiling, ensuring faster inference and cutting down on unnecessary computations. Experiments on public benchmarks demonstrate that our paradigm achieves performance on par with state-of-the-art systems, yet requires substantially fewer resources. 
+
+**Abstract (ZH)**: 现代场景文本识别系统往往依赖于大型端到端架构，需要大量训练且在实时场景下成本高昂。在这种情况下，由于内存、计算资源和延迟的限制，部署复杂的模型变得不切实际。为了解决这些挑战，我们提出了一种新型的无需训练即插即用框架，该框架利用预训练文本识别器的优点，同时减少冗余计算。我们的方法使用基于上下文的理解，并引入注意力机制的分割阶段，在像素级别细化候选文本区域，改善后端识别效果。该框架直接从场景中生成单词预测，而无需进行传统的基于块级别的特征图与源图像比较的文本检测，同时利用预训练的图像描述生成器来利用上下文信息。文本在语义和词汇上进行评估以获得最终评分。达到或超过预设置信阈值的预测绕过端到端文本STR特性提取的较重过程，确保更快的推断并减少不必要的计算。实验表明，我们的范式在公共基准测试上性能与最先进的系统相当，但所需资源显著减少。 
+
+---
+# CAM-Seg: A Continuous-valued Embedding Approach for Semantic Image Generation 
+
+**Title (ZH)**: CAM-Seg：一种用于语义图像生成的连续值嵌入方法 
+
+**Authors**: Masud Ahmed, Zahid Hasan, Syed Arefinul Haque, Abu Zaher Md Faridee, Sanjay Purushotham, Suya You, Nirmalya Roy  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.15617)  
+
+**Abstract**: Traditional transformer-based semantic segmentation relies on quantized embeddings. However, our analysis reveals that autoencoder accuracy on segmentation mask using quantized embeddings (e.g. VQ-VAE) is 8% lower than continuous-valued embeddings (e.g. KL-VAE). Motivated by this, we propose a continuous-valued embedding framework for semantic segmentation. By reformulating semantic mask generation as a continuous image-to-embedding diffusion process, our approach eliminates the need for discrete latent representations while preserving fine-grained spatial and semantic details. Our key contribution includes a diffusion-guided autoregressive transformer that learns a continuous semantic embedding space by modeling long-range dependencies in image features. Our framework contains a unified architecture combining a VAE encoder for continuous feature extraction, a diffusion-guided transformer for conditioned embedding generation, and a VAE decoder for semantic mask reconstruction. Our setting facilitates zero-shot domain adaptation capabilities enabled by the continuity of the embedding space. Experiments across diverse datasets (e.g., Cityscapes and domain-shifted variants) demonstrate state-of-the-art robustness to distribution shifts, including adverse weather (e.g., fog, snow) and viewpoint variations. Our model also exhibits strong noise resilience, achieving robust performance ($\approx$ 95% AP compared to baseline) under gaussian noise, moderate motion blur, and moderate brightness/contrast variations, while experiencing only a moderate impact ($\approx$ 90% AP compared to baseline) from 50% salt and pepper noise, saturation and hue shifts. Code available: this https URL 
+
+**Abstract (ZH)**: 基于连续值嵌入的语义分割连续值嵌入框架提高了语义分割的准确性，特别是在使用量化的嵌入（如VQ-VAE）进行分割掩码生成时，相比连续值嵌入（如KL-VAE）低8%的自动编码器精度。受此启发，我们提出了一种连续值嵌入框架用于语义分割。通过将语义掩码生成重新表述为连续图像到嵌入的扩散过程，我们的方法消除了离散潜在表示的需求，同时保留了细粒度的空间和语义细节。我们的主要贡献包括一个由连续依赖关系建模引导的自回归变压器，该变压器通过学习连续语义嵌入空间来生成条件嵌入。我们的框架结合了一个基于VAE的连续特征提取编码器、一个由扩散引导的变压器用于条件嵌入生成，以及一个基于VAE的解码器用于语义掩码重建。我们的设置通过嵌入空间的连续性实现了零-shot领域适应能力。实验涵盖了多种数据集（如Cityscapes及其领域偏移变体），证明了对分布偏移具有最先进的鲁棒性，包括不良天气（如雾、雪）和视角变化。我们的模型还表现出强大的噪声鲁棒性，在高斯噪声、中等运动模糊和中等亮度/对比度变化下获得稳健性能（约95%的AP，与基线相比），而在50%的盐和胡椒噪声、饱和度和色调偏移下仅表现出中等影响（约90%的AP，与基线相比）。 
+
+---
+# A Bird Song Detector for improving bird identification through Deep Learning: a case study from Doñana 
+
+**Title (ZH)**: 基于深度学习的鸣禽识别辅助器：以杜南纳地区为例的研究 
+
+**Authors**: Alba Márquez-Rodríguez, Miguel Ángel Mohedano-Munoz, Manuel J. Marín-Jiménez, Eduardo Santamaría-García, Giulia Bastianelli, Pedro Jordano, Irene Mendoza  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.15576)  
+
+**Abstract**: Passive Acoustic Monitoring with automatic recorders is essential for ecosystem conservation but generates vast unsupervised audio data, posing challenges for extracting meaningful information. Deep Learning techniques offer a promising solution. BirdNET, a widely used model for bird identification, has shown success in many study systems but is limited in some regions due to biases in its training data. A key challenge in bird species detection is that many recordings either lack target species or contain overlapping vocalizations. To overcome these problems, we developed a multi-stage pipeline for automatic bird vocalization identification in Doñana National Park (SW Spain), a region facing significant conservation threats. Our approach included a Bird Song Detector to isolate vocalizations and custom classifiers trained with BirdNET embeddings. We manually annotated 461 minutes of audio from three habitats across nine locations, yielding 3,749 annotations for 34 classes. Spectrograms facilitated the use of image processing techniques. Applying the Bird Song Detector before classification improved species identification, as all classification models performed better when analyzing only the segments where birds were detected. Specifically, the combination of the Bird Song Detector and fine-tuned BirdNET compared to the baseline without the Bird Song Detector. Our approach demonstrated the effectiveness of integrating a Bird Song Detector with fine-tuned classification models for bird identification at local soundscapes. These findings highlight the need to adapt general-purpose tools for specific ecological challenges, as demonstrated in Doñana. Automatically detecting bird species serves for tracking the health status of this threatened ecosystem, given the sensitivity of birds to environmental changes, and helps in the design of conservation measures for reducing biodiversity loss 
+
+**Abstract (ZH)**: 基于自动录音器的被动声学监测对于生态系统保护至关重要，但会产生大量未监督的音频数据，提取有意义的信息面临挑战。深度学习技术提供了一种有希望的解决方案。BirdNET是一种广泛用于鸟类识别的模型，在许多研究系统中取得了成功，但在某些地区由于训练数据的偏差受到限制。鸟类检测的关键挑战在于很多录音缺乏目标物种或包含重叠鸣叫声。为克服这些问题，在西班牙西南部的陶尔纳那国家公园，我们开发了一种多阶段管道，用于自动识别鸟类鸣叫声，该地区面临着严重的保护威胁。我们的方法包括一种鸟类歌声检测器以单独鸣叫声，并使用BirdNET嵌入训练自定义分类器。我们手动标注了来自九个地点三个生境的461分钟音频，产生了34个类别的3,749个标注。频谱图促进了图像处理技术的应用。在分类之前应用鸟类歌声检测器提高了物种识别，因为所有分类模型在仅分析检测到鸟类的段落时表现更好。具体而言，将鸟类歌声检测器与微调后的BirdNET结合使用比不使用鸟类歌声检测器的基线模型效果更好。我们的方法证明了将鸟类歌声检测器与微调分类模型结合使用对于局部声景中的鸟类识别是有效的。这些研究结果突显了根据特定生态挑战适应通用工具的需求，如在陶尔纳那所展示的。通过自动检测鸟类物种可以监测这一受威胁生态系统的健康状况，鉴于鸟类对环境变化的高度敏感性，这也有助于设计减少生物多样性丧失的保护措施。 
+
+---
+# Whole-Body Image-to-Image Translation for a Virtual Scanner in a Healthcare Digital Twin 
+
+**Title (ZH)**: 全身图像到图像转换以实现医疗健康数字孪生中的虚拟扫描仪 
+
+**Authors**: Valerio Guarrasi, Francesco Di Feola, Rebecca Restivo, Lorenzo Tronchin, Paolo Soda  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.15555)  
+
+**Abstract**: Generating positron emission tomography (PET) images from computed tomography (CT) scans via deep learning offers a promising pathway to reduce radiation exposure and costs associated with PET imaging, improving patient care and accessibility to functional imaging. Whole-body image translation presents challenges due to anatomical heterogeneity, often limiting generalized models. We propose a framework that segments whole-body CT images into four regions-head, trunk, arms, and legs-and uses district-specific Generative Adversarial Networks (GANs) for tailored CT-to-PET translation. Synthetic PET images from each region are stitched together to reconstruct the whole-body scan. Comparisons with a baseline non-segmented GAN and experiments with Pix2Pix and CycleGAN architectures tested paired and unpaired scenarios. Quantitative evaluations at district, whole-body, and lesion levels demonstrated significant improvements with our district-specific GANs. Pix2Pix yielded superior metrics, ensuring precise, high-quality image synthesis. By addressing anatomical heterogeneity, this approach achieves state-of-the-art results in whole-body CT-to-PET translation. This methodology supports healthcare Digital Twins by enabling accurate virtual PET scans from CT data, creating virtual imaging representations to monitor, predict, and optimize health outcomes. 
+
+**Abstract (ZH)**: 通过深度学习将计算机断层扫描（CT）图像转换为正电子发射断层扫描（PET）图像 offers a promising pathway to reduce radiation exposure and costs associated with PET imaging, improving patient care and accessibility to functional imaging.通过对全身CT图像进行分区并使用特定区域的生成对抗网络（GAN）进行定制化的CT-to-PET转换，解决了由于解剖异质性带来的挑战。 
+
+---
+# AI-Powered Assistive Technologies for Visual Impairment 
+
+**Title (ZH)**: AI驱动的视觉障碍辅助技术 
+
+**Authors**: Prudhvi Naayini, Praveen Kumar Myakala, Chiranjeevi Bura, Anil Kumar Jonnalagadda, Srikanth Kamatala  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.15494)  
+
+**Abstract**: Artificial Intelligence (AI) is revolutionizing assistive technologies. It offers innovative solutions to enhance the quality of life for individuals with visual impairments. This review examines the development, applications, and impact of AI-powered tools in key domains, such as computer vision, natural language processing (NLP), and wearable devices. Specific advancements include object recognition for identifying everyday items, scene description for understanding surroundings, and NLP-driven text-to-speech systems for accessing digital information. Assistive technologies like smart glasses, smartphone applications, and AI-enabled navigation aids are discussed, demonstrating their ability to support independent travel, facilitate social interaction, and increase access to education and employment opportunities.
+The integration of deep learning models, multimodal interfaces, and real-time data processing has transformed the functionality and usability of these tools, fostering inclusivity and empowerment. This article also addresses critical challenges, including ethical considerations, affordability, and adaptability in diverse environments. Future directions highlight the need for interdisciplinary collaboration to refine these technologies, ensuring equitable access and sustainable innovation. By providing a comprehensive overview, this review underscores AI's transformative potential in promoting independence, enhancing accessibility, and fostering social inclusion for visually impaired individuals. 
+
+**Abstract (ZH)**: 人工智能（AI）正在革新辅助技术。它提供了创新解决方案，以提高视力受损个体的生活质量。本文审查了AI驱动工具在计算机视觉、自然语言处理（NLP）、可穿戴设备等关键领域的发展、应用及影响。具体进步包括物体识别以识别日常物品、场景描述以理解环境以及通过NLP驱动的文本转语音系统访问数字信息。讨论了智能眼镜、智能手机应用程序和AI驱动的导航辅助设备，展示了它们支持独立出行、促进社交互动和增加教育和就业机会的能力。深度学习模型、多模态接口和实时数据处理的集成已经转型了这些工具的功能和易用性，促进了包容性和赋能。本文还探讨了关键挑战，包括伦理考虑、可负担性和在不同环境中的适应性。未来方向强调需要跨学科合作以完善这些技术，确保公平获取和可持续创新。通过提供全面概述，本文突显了AI在促进独立性、增强可访问性和促进社会包容方面具有变革潜力，特别是对于视力受损个体。 
+
+---
