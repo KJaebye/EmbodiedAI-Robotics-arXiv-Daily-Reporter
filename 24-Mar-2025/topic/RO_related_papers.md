@@ -1,0 +1,143 @@
+# Control the Soft Robot Arm with its Physical Twin 
+
+**Title (ZH)**: 控制软机器人臂及其物理孪生体 
+
+**Authors**: Qinghua Guan, Hung Hon Cheng, Benhui Dai, Josie Hughes  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.17227)  
+
+**Abstract**: To exploit the compliant capabilities of soft robot arms we require controller which can exploit their physical capabilities. Teleoperation, leveraging a human in the loop, is a key step towards achieving more complex control strategies. Whilst teleoperation is widely used for rigid robots, for soft robots we require teleoperation methods where the configuration of the whole body is considered. We propose a method of using an identical 'physical twin', or demonstrator of the robot. This tendon robot can be back-driven, with the tendon lengths providing configuration perception, and enabling a direct mapping of tendon lengths for the execture. We demonstrate how this teleoperation across the entire configuration of the robot enables complex interactions with exploit the envrionment, such as squeezing into gaps. We also show how this method can generalize to robots which are a larger scale that the physical twin, and how, tuneability of the stiffness properties of the physical twin simplify its use. 
+
+**Abstract (ZH)**: 利用软机器人手臂的顺应能力需要控制器能够充分利用其物理特性。通过将人类置于回路中的远程操作是实现更复杂控制策略的关键步骤。虽然远程操作广泛应用于刚性机器人中，但对于软机器人，我们需要考虑整个身体的配置的远程操作方法。我们提出了一种使用与机器人相同的“物理双胞胎”或演示器的方法。该肌腱机器人可以反驱动力，肌腱长度提供配置感知，并使肌腱长度直接映射到执行过程中。我们展示了这种方法在整个机器人配置中的远程操作如何能够实现复杂的环境交互，如进入缝隙。我们还展示了这种方法如何扩展到比物理双胞胎更大的机器人规模，并说明了物理双胞胎的刚度属性可调性简化了其使用。 
+
+---
+# Autonomous Exploration-Based Precise Mapping for Mobile Robots through Stepwise and Consistent Motions 
+
+**Title (ZH)**: 基于自主探索的分步一致运动精确建图方法 
+
+**Authors**: Muhua Zhang, Lei Ma, Ying Wu, Kai Shen, Yongkui Sun, Henry Leung  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.17005)  
+
+**Abstract**: This paper presents an autonomous exploration framework. It is designed for indoor ground mobile robots that utilize laser Simultaneous Localization and Mapping (SLAM), ensuring process completeness and precise mapping results. For frontier search, the local-global sampling architecture based on multiple Rapidly Exploring Random Trees (RRTs) is employed. Traversability checks during RRT expansion and global RRT pruning upon map updates eliminate unreachable frontiers, reducing potential collisions and deadlocks. Adaptive sampling density adjustments, informed by obstacle distribution, enhance exploration coverage potential. For frontier point navigation, a stepwise consistent motion strategy is adopted, wherein the robot strictly drives straight on approximately equidistant line segments in the polyline path and rotates in place at segment junctions. This simplified, decoupled motion pattern improves scan-matching stability and mitigates map drift. For process control, the framework serializes frontier point selection and navigation, avoiding oscillation caused by frequent goal changes in conventional parallelized processes. The waypoint retracing mechanism is introduced to generate repeated observations, triggering loop closure detection and backend optimization in graph-based SLAM, thereby improving map consistency and precision. Experiments in both simulation and real-world scenarios validate the effectiveness of the framework. It achieves improved mapping coverage and precision in more challenging environments compared to baseline 2D exploration algorithms. It also shows robustness in supporting resource-constrained robot platforms and maintaining mapping consistency across various LiDAR field-of-view (FoV) configurations. 
+
+**Abstract (ZH)**: 一种基于多RRT的自主探索框架：利用激光SLAM的室内地面机器人完整建图与路径规划 
+
+---
+# Reachability-Guaranteed Optimal Control for the Interception of Dynamic Targets under Uncertainty 
+
+**Title (ZH)**: 不确定环境下可达性保证的动态目标拦截最优控制 
+
+**Authors**: Tommaso Faraci, Roberto Lampariello  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16935)  
+
+**Abstract**: Intercepting dynamic objects in uncertain environments involves a significant unresolved challenge in modern robotic systems. Current control approaches rely solely on estimated information, and results lack guarantees of robustness and feasibility. In this work, we introduce a novel method to tackle the interception of targets whose motion is affected by known and bounded uncertainty. Our approach introduces new techniques of reachability analysis for rigid bodies, leveraged to guarantee feasibility of interception under uncertain conditions. We then propose a Reachability-Guaranteed Optimal Control Problem, ensuring robustness and guaranteed reachability to a target set of configurations. We demonstrate the methodology in the case study of an interception maneuver of a tumbling target in space. 
+
+**Abstract (ZH)**: 在不确定性环境中超动态目标的截获是现代机器人系统中一个重要的未解决挑战。当前的控制方法仅依赖估算信息，结果缺乏鲁棒性和可行性的保证。本文提出了一种新的方法来应对受已知和有界不确定性影响的目标运动截获问题。该方法引入了新的刚体可达性分析技术，以保证在不确定条件下截获的可行性。随后，我们提出了一个可达性保证最优控制问题，确保在目标配置集中实现鲁棒性和可达性。我们通过空间中翻滚目标截获机动的一个案例研究展示了该方法。 
+
+---
+# Displacement-Actuated Continuum Robots: A Joint Space Abstraction 
+
+**Title (ZH)**: 位移驱动连续体机器人：联合空间抽象 
+
+**Authors**: Reinhard M. Grassmann, Jessica Burgner-Kahrs  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16778)  
+
+**Abstract**: The displacement-actuated continuum robot as an abstraction has been shown as a key abstraction to significantly simplify and improve approaches due to its relation to the Clarke transform. To highlight further potentials, we revisit and extend this abstraction that features an increasingly popular length extension and an underutilized twisting. For each extension, the corresponding mapping from the joint values to the local coordinates of the manifold embedded in the joint spaces is provided. Each mapping is characterized by its compactness and linearity. 
+
+**Abstract (ZH)**: 基于位移激活的连续机器人作为一种抽象，通过与克拉克变换的关系显示出作为关键抽象的重要性，显著简化和改善了方法。为突出进一步潜力，我们重新审视并扩展了这一抽象，包括日益流行的增长长度和被低估的扭转。对每种扩展，提供了从关节值到嵌入在关节空间中的流形的局部坐标的相关映射。每种映射都以其紧凑性和线性特征进行描述。 
+
+---
+# ContactFusion: Stochastic Poisson Surface Maps from Visual and Contact Sensing 
+
+**Title (ZH)**: 接触融合：来自视觉和触觉传感的随机泊松表面映射 
+
+**Authors**: Aditya Kamireddypalli, Joao Moura, Russell Buchanan, Sethu Vijayakumar, Subramanian Ramamoorthy  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16592)  
+
+**Abstract**: Robust and precise robotic assembly entails insertion of constituent components. Insertion success is hindered when noise in scene understanding exceeds tolerance limits, especially when fabricated with tight tolerances. In this work, we propose ContactFusion which combines global mapping with local contact information, fusing point clouds with force sensing. Our method entails a Rejection Sampling based contact occupancy sensing procedure which estimates contact locations on the end-effector from Force/Torque sensing at the wrist. We demonstrate how to fuse contact with visual information into a Stochastic Poisson Surface Map (SPSMap) - a map representation that can be updated with the Stochastic Poisson Surface Reconstruction (SPSR) algorithm. We first validate the contact occupancy sensor in simulation and show its ability to detect the contact location on the robot from force sensing information. Then, we evaluate our method in a peg-in-hole task, demonstrating an improvement in the hole pose estimate with the fusion of the contact information with the SPSMap. 
+
+**Abstract (ZH)**: 稳健且精确的机器人装配涉及构成组件的插入。当场景理解中的噪声超过公差极限时，特别是在公差较紧的情况下，插入成功率会受到影响。在本文中，我们提出了一种结合全局映射与局部接触信息的ContactFusion方法，将点云与力感知融合。我们的方法包括一个基于拒绝采样的接触占有率感知过程，该过程通过对腕部力/力矩感知信息的分析来估计末端执行器上的接触位置。我们展示了如何将接触信息与视觉信息融合到随机泊松表面映射（SPSMap）中——这是一种可以通过随机泊松表面重建算法（SPSR）进行更新的映射表示。我们首先在仿真中验证了接触占有率传感器的能力，并展示了其利用力感知信息检测机器人接触位置的能力。然后，我们在钉入孔任务中评估了我们的方法，证明了在将接触信息与SPSMap融合后对孔的姿态估计有所改进。 
+
+---
+# AUV Acceleration Prediction Using DVL and Deep Learning 
+
+**Title (ZH)**: AUV 加速预测：基于DVL和深度学习的方法 
+
+**Authors**: Yair Stolero, Itzik Klein  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16573)  
+
+**Abstract**: Autonomous underwater vehicles (AUVs) are essential for various applications, including oceanographic surveys, underwater mapping, and infrastructure inspections. Accurate and robust navigation are critical to completing these tasks. To this end, a Doppler velocity log (DVL) and inertial sensors are fused together. Recently, a model-based approach demonstrated the ability to extract the vehicle acceleration vector from DVL velocity measurements. Motivated by this advancement, in this paper we present an end-to-end deep learning approach to estimate the AUV acceleration vector based on past DVL velocity measurements. Based on recorded data from sea experiments, we demonstrate that the proposed method improves acceleration vector estimation by more than 65% compared to the model-based approach by using data-driven techniques. As a result of our data-driven approach, we can enhance navigation accuracy and reliability in AUV applications, contributing to more efficient and effective underwater missions through improved accuracy and reliability. 
+
+**Abstract (ZH)**: 自主水下机器人（AUVs）在海洋学调查、水下测绘和基础设施检测等多种应用中至关重要。精确可靠的导航对于完成这些任务至关重要。为此，将多普勒速度 log (DVL) 和惯性传感器融合在一起。近期，一种基于模型的方法展示了从 DVL 速度测量中提取水下机器人加速度矢量的能力。受此进展的启发，本文提出了一种基于端到端深度学习的方法，通过利用过去 DVL 速度测量数据估算 AUV 的加速度矢量。通过对海洋实验记录的数据进行分析，我们证明所提出的方法在使用数据驱动技术的情况下，相比基于模型的方法，加速度矢量估计性能提高超过 65%。由于我们采用数据驱动的方法，可以提高 AUV 应用中的导航精度和可靠性，从而通过增强准确性和可靠性来实现更高效有效的水下任务。 
+
+---
+# CoIn-SafeLink: Safety-critical Control With Cost-sensitive Incremental Random Vector Functional Link Network 
+
+**Title (ZH)**: CoIn-SafeLink: 成本敏感增量随机向量函数链接网络在安全性关键控制中的应用 
+
+**Authors**: Songqiao Hu, Zeyi Liu, Xiao He, Zhen Shen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16551)  
+
+**Abstract**: Control barrier functions (CBFs) play a crucial role in achieving the safety-critical control of robotic systems theoretically. However, most existing methods rely on the analytical expressions of unsafe state regions, which is often impractical for irregular and dynamic unsafe regions. In this paper, a novel CBF construction approach, called CoIn-SafeLink, is proposed based on cost-sensitive incremental random vector functional-link (RVFL) neural networks. By designing an appropriate cost function, CoIn-SafeLink achieves differentiated sensitivities to safe and unsafe samples, effectively achieving zero false-negative risk in unsafe sample classification. Additionally, an incremental update theorem for CoIn-SafeLink is proposed, enabling precise adjustments in response to changes in the unsafe region. Finally, the gradient analytical expression of the CoIn-SafeLink is provided to calculate the control input. The proposed method is validated on a 3-degree-of-freedom drone attitude control system. Experimental results demonstrate that the method can effectively learn the unsafe region boundaries and rapidly adapt as these regions evolve, with an update speed approximately five times faster than comparison methods. The source code is available at this https URL. 
+
+**Abstract (ZH)**: 基于成本敏感增量随机向量函数链接神经网络的CoIn-SafeLink控制障碍函数构造方法 
+
+---
+# Extending Behavior Trees for Robotic Missions with Quality Requirements 
+
+**Title (ZH)**: 基于质量要求扩展行为树以适用于机器人任务 
+
+**Authors**: Razan Ghzouli, Rebekka Wohlrab, Jennifer Horkoff  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16969)  
+
+**Abstract**: Context and motivation: In recent years, behavior trees have gained growing interest within the robotics community as a specification and control switching mechanism for the different tasks that form a robotics mission. Problem: Given the rising complexity and prevalence of robotic systems, it is increasingly challenging and important for practitioners to design high-quality missions that meet certain qualities, for instance, to consider potential failures or mitigate safety risks. In software requirements engineering, quality or non-functional requirements have long been recognized as a key factor in system success. Currently, qualities are not represented in behavior tree models, which capture a robotic mission, making it difficult to assess the extent to which different mission components comply with those qualities. Principal ideas: In this paper, we propose an extension for behavior trees to have qualities and quality requirements explicitly represented in robotics missions. We provide a meta-model for the extension, develop a domain-specific language (DSL), and describe how we integrated our DSL in one of the most used languages in robotics for developing behavior trees, this http URL. A preliminary evaluation of the implemented DSL shows promising results for the feasibility of our approach and the need for similar DSLs. Contribution: Our approach paves the way for incorporating qualities into the behavior model of robotics missions. This promotes early expression of qualities in robotics missions, and a better overview of missions components and their contribution to the satisfaction of quality concerns. 
+
+**Abstract (ZH)**: 背景与动机：近年来，行为树在机器人领域引起了广泛关注，作为描述机器人任务的规范和控制切换机制。问题：随着机器人系统的复杂性和普及程度不断提高，设计符合特定质量要求的任务变得愈加具有挑战性和重要性，例如考虑潜在的故障或减轻安全风险。在软件需求工程中，质量或非功能需求长期以来被认为是系统成功的关键因素。目前，这些质量要求并未在描述机器人任务的行为树模型中体现出来，使得评估不同任务组件是否满足这些质量要求变得困难。主要思想：本文提出了一种扩展行为树的方法，使得机器人任务中的质量及质量需求能够明确表示。我们提供了一个扩展的元模型，开发了一个领域特定语言（DSL），并描述了如何将我们的DSL集成到机器人领域最常用的开发行为树的语言中。初步评估表明，实现的DSL在可行性和对类似DSL的需求方面具有积极的结果。贡献：我们的方法为将质量纳入机器人任务的行为模型铺平了道路。这促进了在机器人任务早期对质量的表达，并为任务组件及其对满足质量关注的贡献提供了更好的概览。 
+
+---
+# Safe On-Orbit Dislodging of Deployable Structures via Robust Adaptive MPC 
+
+**Title (ZH)**: 在轨部署结构的稳健自适应 MPC 控制的可靠脱位方法 
+
+**Authors**: Longsen Gao, Claus Danielson, Andrew Kwas, Rafael Fierro  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16849)  
+
+**Abstract**: This paper proposes a novel robust adaptive model predictive controller for on-orbit dislodging. We consider the scenario where a servicer, equipped with a robot arm, must dislodge a client, a time-varying system composed of an underpowered jammed solar panel with a hybrid hinge system on a space station. Our approach leverages online set-membership identification to reduce the uncertainty to provide robust safety guarantees during dislodging despite bounded disturbances while balancing exploration and exploitation effectively in the parameter space. The feasibility of the developed robust adaptive MPC method is also examined through dislodging simulations and hardware experiments in zero-gravity and gravity environments, respectively. In addition, the advantages of our method are shown through comparison experiments with several state-of-the-art control schemes for both accuracy of parameter estimation and control performance. 
+
+**Abstract (ZH)**: 本文提出了一种针对在轨脱落的新颖鲁棒自适应模型预测控制器。我们在一种服务舱配备机器人臂以处理脱落任务的情景下考虑了一种时变系统，该系统由空间站上带有混合铰链系统的低功率卡滞太阳电池板组成。我们的方法利用在线集合成员识别以减少不确定性，在存在有界干扰的情况下仍能提供鲁棒的安全保证，并且在参数空间中有效地平衡探索与利用。通过零重力和重力环境下的脱落模拟和硬件实验验证了所开发的鲁棒自适应MPC方法的可行性。此外，通过与几种先进控制方案的比较实验展示了本方法在参数估计精度和控制性能方面的优势。 
+
+---
+# Adaptive Drift Compensation for Soft Sensorized Finger Using Continual Learning 
+
+**Title (ZH)**: 基于持续学习的软传感器化手指自适应漂移补偿 
+
+**Authors**: Nilay Kushawaha, Radan Pathan, Niccolò Pagliarani, Matteo Cianchetti, Egidio Falotico  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16540)  
+
+**Abstract**: Strain sensors are gaining popularity in soft robotics for acquiring tactile data due to their flexibility and ease of integration. Tactile sensing plays a critical role in soft grippers, enabling them to safely interact with unstructured environments and precisely detect object properties. However, a significant challenge with these systems is their high non-linearity, time-varying behavior, and long-term signal drift. In this paper, we introduce a continual learning (CL) approach to model a soft finger equipped with piezoelectric-based strain sensors for proprioception. To tackle the aforementioned challenges, we propose an adaptive CL algorithm that integrates a Long Short-Term Memory (LSTM) network with a memory buffer for rehearsal and includes a regularization term to keep the model's decision boundary close to the base signal while adapting to time-varying drift. We conduct nine different experiments, resetting the entire setup each time to demonstrate signal drift. We also benchmark our algorithm against two other methods and conduct an ablation study to assess the impact of different components on the overall performance. 
+
+**Abstract (ZH)**: 基于应变传感器的软手指连续学习方法研究 
+
+---
+# Do Looks Matter? Exploring Functional and Aesthetic Design Preferences for a Robotic Guide Dog 
+
+**Title (ZH)**: 外观重要吗？探究机器人导盲犬的功能性和美学设计偏好 
+
+**Authors**: Aviv L. Cohav, A. Xinran Gong, J. Taery Kim, Clint Zeagler, Sehoon Ha, Bruce N. Walker  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16450)  
+
+**Abstract**: Dog guides offer an effective mobility solution for blind or visually impaired (BVI) individuals, but conventional dog guides have limitations including the need for care, potential distractions, societal prejudice, high costs, and limited availability. To address these challenges, we seek to develop a robot dog guide capable of performing the tasks of a conventional dog guide, enhanced with additional features. In this work, we focus on design research to identify functional and aesthetic design concepts to implement into a quadrupedal robot. The aesthetic design remains relevant even for BVI users due to their sensitivity toward societal perceptions and the need for smooth integration into society. We collected data through interviews and surveys to answer specific design questions pertaining to the appearance, texture, features, and method of controlling and communicating with the robot. Our study identified essential and preferred features for a future robot dog guide, which are supported by relevant statistics aligning with each suggestion. These findings will inform the future development of user-centered designs to effectively meet the needs of BVI individuals. 
+
+**Abstract (ZH)**: 盲人或视力受损个体的有效移动解决方案——机器人导盲犬的设计研究 
+
+---

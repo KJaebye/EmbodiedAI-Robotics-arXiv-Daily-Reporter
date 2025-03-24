@@ -1,0 +1,709 @@
+# LLM+MAP: Bimanual Robot Task Planning using Large Language Models and Planning Domain Definition Language 
+
+**Title (ZH)**: LLM+MAP：基于大型语言模型和规划领域定义语言的双臂机器人任务规划 
+
+**Authors**: Kun Chu, Xufeng Zhao, Cornelius Weber, Stefan Wermter  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.17309)  
+
+**Abstract**: Bimanual robotic manipulation provides significant versatility, but also presents an inherent challenge due to the complexity involved in the spatial and temporal coordination between two hands. Existing works predominantly focus on attaining human-level manipulation skills for robotic hands, yet little attention has been paid to task planning on long-horizon timescales. With their outstanding in-context learning and zero-shot generation abilities, Large Language Models (LLMs) have been applied and grounded in diverse robotic embodiments to facilitate task planning. However, LLMs still suffer from errors in long-horizon reasoning and from hallucinations in complex robotic tasks, lacking a guarantee of logical correctness when generating the plan. Previous works, such as LLM+P, extended LLMs with symbolic planners. However, none have been successfully applied to bimanual robots. New challenges inevitably arise in bimanual manipulation, necessitating not only effective task decomposition but also efficient task allocation. To address these challenges, this paper introduces LLM+MAP, a bimanual planning framework that integrates LLM reasoning and multi-agent planning, automating effective and efficient bimanual task planning. We conduct simulated experiments on various long-horizon manipulation tasks of differing complexity. Our method is built using GPT-4o as the backend, and we compare its performance against plans generated directly by LLMs, including GPT-4o, V3 and also recent strong reasoning models o1 and R1. By analyzing metrics such as planning time, success rate, group debits, and planning-step reduction rate, we demonstrate the superior performance of LLM+MAP, while also providing insights into robotic reasoning. Code is available at this https URL. 
+
+**Abstract (ZH)**: 双臂机器人 manipulation 提供了显著的灵活性，但也由于两臂在空间和时间上的协调复杂性而带来固有的挑战。现有研究主要集中在使机器人手具备人类级别的 manipulation 技能，但对于长期规划的关注却相对较少。凭借出色的在上下文学习和零样本生成能力，大型语言模型（LLMs）已应用于多种机器人实体中，以促进任务规划。然而，LLMs 仍存在长期推理中的错误，以及在复杂机器人任务中产生幻觉的问题，缺乏生成计划时的逻辑正确性保证。此前的研究，如 LLM+P，曾通过与符号计划器结合的方式扩展了 LLMs，但这些研究尚未应用于双臂机器人。在双臂 manipulation 中，新的挑战不可避免地出现，不仅需要有效的任务分解，还需要高效的任务分配。为应对这些挑战，本文提出了一种结合 LLM 理论与多智能体规划的双臂规划框架 LLM+MAP，自动实现有效的双臂任务规划。我们对不同复杂度的长期规划 manipulation 任务进行了模拟实验。我们的方法基于 GPT-4o 后端构建，并将其性能与直接由 LLMs 生成的计划（包括 GPT-4o、V3 以及最近的强推理模型 o1 和 R1）进行了对比。通过分析如规划时间、成功率、群体债务和规划步数减少率等指标，我们展示了 LLM+MAP 的优越性能，同时也提供了有关机器人推理的见解。代码可通过以下链接获取。 
+
+---
+# Control the Soft Robot Arm with its Physical Twin 
+
+**Title (ZH)**: 控制软机器人臂及其物理孪生体 
+
+**Authors**: Qinghua Guan, Hung Hon Cheng, Benhui Dai, Josie Hughes  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.17227)  
+
+**Abstract**: To exploit the compliant capabilities of soft robot arms we require controller which can exploit their physical capabilities. Teleoperation, leveraging a human in the loop, is a key step towards achieving more complex control strategies. Whilst teleoperation is widely used for rigid robots, for soft robots we require teleoperation methods where the configuration of the whole body is considered. We propose a method of using an identical 'physical twin', or demonstrator of the robot. This tendon robot can be back-driven, with the tendon lengths providing configuration perception, and enabling a direct mapping of tendon lengths for the execture. We demonstrate how this teleoperation across the entire configuration of the robot enables complex interactions with exploit the envrionment, such as squeezing into gaps. We also show how this method can generalize to robots which are a larger scale that the physical twin, and how, tuneability of the stiffness properties of the physical twin simplify its use. 
+
+**Abstract (ZH)**: 利用软机器人手臂的顺应能力需要控制器能够充分利用其物理特性。通过将人类置于回路中的远程操作是实现更复杂控制策略的关键步骤。虽然远程操作广泛应用于刚性机器人中，但对于软机器人，我们需要考虑整个身体的配置的远程操作方法。我们提出了一种使用与机器人相同的“物理双胞胎”或演示器的方法。该肌腱机器人可以反驱动力，肌腱长度提供配置感知，并使肌腱长度直接映射到执行过程中。我们展示了这种方法在整个机器人配置中的远程操作如何能够实现复杂的环境交互，如进入缝隙。我们还展示了这种方法如何扩展到比物理双胞胎更大的机器人规模，并说明了物理双胞胎的刚度属性可调性简化了其使用。 
+
+---
+# Leveraging Language Models for Out-of-Distribution Recovery in Reinforcement Learning 
+
+**Title (ZH)**: 利用语言模型进行强化学习中的分布外恢复 
+
+**Authors**: Chan Kim, Seung-Woo Seo, Seong-Woo Kim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.17125)  
+
+**Abstract**: Deep Reinforcement Learning (DRL) has demonstrated strong performance in robotic control but remains susceptible to out-of-distribution (OOD) states, often resulting in unreliable actions and task failure. While previous methods have focused on minimizing or preventing OOD occurrences, they largely neglect recovery once an agent encounters such states. Although the latest research has attempted to address this by guiding agents back to in-distribution states, their reliance on uncertainty estimation hinders scalability in complex environments. To overcome this limitation, we introduce Language Models for Out-of-Distribution Recovery (LaMOuR), which enables recovery learning without relying on uncertainty estimation. LaMOuR generates dense reward codes that guide the agent back to a state where it can successfully perform its original task, leveraging the capabilities of LVLMs in image description, logical reasoning, and code generation. Experimental results show that LaMOuR substantially enhances recovery efficiency across diverse locomotion tasks and even generalizes effectively to complex environments, including humanoid locomotion and mobile manipulation, where existing methods struggle. The code and supplementary materials are available at \href{this https URL}{this https URL}. 
+
+**Abstract (ZH)**: 基于语言模型的离分布态恢复（LaMOuR）：无需不确定性估计的离分布态恢复方法 
+
+---
+# Exploring psychophysiological methods for human-robot collaboration in construction 
+
+**Title (ZH)**: 探索心理生理方法在建筑领域的人机协作中应用 
+
+**Authors**: Saika Wong, Zhentao Chen, Mi Pan, Miroslaw J. Skibniewski  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.17078)  
+
+**Abstract**: Psychophysiological methods present a promising approach to fostering enhanced mutual communication and collaboration between human workers and robots. Despite their potential, there is still limited understanding of how to effectively integrate psychophysiological methods to improve human-robot collaboration (HRC) in construction. This paper addresses this gap by critically reviewing the use of psychophysiological methods for HRC within construction environments, employing a concept-methodology-value philosophical framework. The analysis reveals that measuring brain activity using electroencephalography is the most widely used method, while most of the works are still at the proof of concept stage and lack empirical evidence. Three potential research directions were proposed: the integration of multi-modal psychophysiological signals, enriching the existing experimental settings for better generalizability, and leveraging advanced biocompatible or contactless technologies for effective signal detection. The findings should benefit subsequent exploration and practical applications of psychophysiological methods to enable better implementation of robots and support HRC in construction. 
+
+**Abstract (ZH)**: 心理生理方法为促进建筑环境中人类工作者与机器人之间的增强沟通与合作提供了有前途的方法。尽管存在这些潜力，但仍然缺乏如何有效将心理生理方法整合以提高人机协作（HRC）的理解。本文通过采用概念-方法论-价值的哲学框架，批判性地回顾了在建筑环境中使用心理生理方法进行HRC的情况，揭示了脑电图是最常用的方法，大部分研究仍处于概念验证阶段且缺乏实证证据。提出了三个潜在的研究方向：多模态心理生理信号的整合、丰富现有的实验设置以提高泛化能力、以及利用先进的生物兼容或非接触技术进行有效的信号检测。研究成果应有助于后续对心理生理方法的探索及其在建筑中实际应用，以更好地实现机器人实施和促进HRC。 
+
+---
+# HAPI: A Model for Learning Robot Facial Expressions from Human Preferences 
+
+**Title (ZH)**: HAPI：一种从人类偏好学习机器人面部表情的模型 
+
+**Authors**: Dongsheng Yang, Qianying Liu, Wataru Sato, Takashi Minato, Chaoran Liu, Shin'ya Nishida  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.17046)  
+
+**Abstract**: Automatic robotic facial expression generation is crucial for human-robot interaction, as handcrafted methods based on fixed joint configurations often yield rigid and unnatural behaviors. Although recent automated techniques reduce the need for manual tuning, they tend to fall short by not adequately bridging the gap between human preferences and model predictions-resulting in a deficiency of nuanced and realistic expressions due to limited degrees of freedom and insufficient perceptual integration. In this work, we propose a novel learning-to-rank framework that leverages human feedback to address this discrepancy and enhanced the expressiveness of robotic faces. Specifically, we conduct pairwise comparison annotations to collect human preference data and develop the Human Affective Pairwise Impressions (HAPI) model, a Siamese RankNet-based approach that refines expression evaluation. Results obtained via Bayesian Optimization and online expression survey on a 35-DOF android platform demonstrate that our approach produces significantly more realistic and socially resonant expressions of Anger, Happiness, and Surprise than those generated by baseline and expert-designed methods. This confirms that our framework effectively bridges the gap between human preferences and model predictions while robustly aligning robotic expression generation with human affective responses. 
+
+**Abstract (ZH)**: 自动机器人面部表情生成对于人类-机器人交互至关重要，因为基于固定关节配置的手工地方法往往会导致僵硬和不自然的行为。尽管最近的自动化技术减少了手动调整的需要，但它们往往未能充分弥合人类偏好与模型预测之间的差距，导致由于自由度有限和知觉集成不足而缺乏细腻和现实的表情。在本工作中，我们提出了一种新型的学习排序框架，利用人类反馈来弥补这一差距并增强机器人面部的表达能力。具体而言，我们进行成对比较注释以收集人类偏好数据，并开发了基于Siamese RankNet的人类情感成对印象（HAPI）模型，该模型用于细化表情评估。通过贝叶斯优化和在线表情调查在35-DOF类人平台上获得的结果表明，我们的方法生成的愤怒、快乐和惊讶等表情比基线和专家设计的方法更为真实和社会共鸣。这表明我们的框架有效地弥合了人类偏好与模型预测之间的差距，同时稳健地对齐了机器人表情生成与人类情感反应。 
+
+---
+# Behavioral Conflict Avoidance Between Humans and Quadruped Robots in Shared Environments 
+
+**Title (ZH)**: 共享环境中 humans 和四足机器人之间的行为冲突避免 
+
+**Authors**: Shuang Wei, Muhua Zhang, Yun Gan, Deqing Huang, Lei Ma, Chenguang Yang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.17014)  
+
+**Abstract**: Nowadays, robots are increasingly operated in environments shared with humans, where conflicts between human and robot behaviors may compromise safety. This paper presents a proactive behavioral conflict avoidance framework based on the principle of adaptation to trends for quadruped robots that not only ensures the robot's safety but also minimizes interference with human activities. It can proactively avoid potential conflicts with approaching humans or other dynamic objects, whether the robot is stationary or in motion, then swiftly resume its tasks once the conflict subsides. An enhanced approach is proposed to achieve precise human detection and tracking on vibratory robot platform equipped with low-cost hybrid solid-state LiDAR. When potential conflict detected, the robot selects an avoidance point and executes an evasion maneuver before resuming its task. This approach contrasts with conventional methods that remain goal-driven, often resulting in aggressive behaviors, such as forcibly bypassing obstacles and causing conflicts or becoming stuck in deadlock scenarios. The selection of avoidance points is achieved by integrating static and dynamic obstacle to generate a potential field map. The robot then searches for feasible regions within this map and determines the optimal avoidance point using an evaluation function. Experimental results demonstrate that the framework significantly reduces interference with human activities, enhances the safety of both robots and persons. 
+
+**Abstract (ZH)**: 基于趋勢適應原理的四足机器人主动行为冲突 avoidance框架：减少对人类活动的干扰并确保安全 
+
+---
+# Autonomous Exploration-Based Precise Mapping for Mobile Robots through Stepwise and Consistent Motions 
+
+**Title (ZH)**: 基于自主探索的分步一致运动精确建图方法 
+
+**Authors**: Muhua Zhang, Lei Ma, Ying Wu, Kai Shen, Yongkui Sun, Henry Leung  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.17005)  
+
+**Abstract**: This paper presents an autonomous exploration framework. It is designed for indoor ground mobile robots that utilize laser Simultaneous Localization and Mapping (SLAM), ensuring process completeness and precise mapping results. For frontier search, the local-global sampling architecture based on multiple Rapidly Exploring Random Trees (RRTs) is employed. Traversability checks during RRT expansion and global RRT pruning upon map updates eliminate unreachable frontiers, reducing potential collisions and deadlocks. Adaptive sampling density adjustments, informed by obstacle distribution, enhance exploration coverage potential. For frontier point navigation, a stepwise consistent motion strategy is adopted, wherein the robot strictly drives straight on approximately equidistant line segments in the polyline path and rotates in place at segment junctions. This simplified, decoupled motion pattern improves scan-matching stability and mitigates map drift. For process control, the framework serializes frontier point selection and navigation, avoiding oscillation caused by frequent goal changes in conventional parallelized processes. The waypoint retracing mechanism is introduced to generate repeated observations, triggering loop closure detection and backend optimization in graph-based SLAM, thereby improving map consistency and precision. Experiments in both simulation and real-world scenarios validate the effectiveness of the framework. It achieves improved mapping coverage and precision in more challenging environments compared to baseline 2D exploration algorithms. It also shows robustness in supporting resource-constrained robot platforms and maintaining mapping consistency across various LiDAR field-of-view (FoV) configurations. 
+
+**Abstract (ZH)**: 一种基于多RRT的自主探索框架：利用激光SLAM的室内地面机器人完整建图与路径规划 
+
+---
+# Targetless 6DoF Calibration of LiDAR and 2D Scanning Radar Based on Cylindrical Occupancy 
+
+**Title (ZH)**: 基于筒状占用的无目标六自由度LiDAR和二维扫描雷达标定 
+
+**Authors**: Weimin Wang, Yu Du, Ting Yang, Yu Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.17002)  
+
+**Abstract**: Owing to the capability for reliable and all-weather long-range sensing, the fusion of LiDAR and Radar has been widely applied to autonomous vehicles for robust perception. In practical operation, well manually calibrated extrinsic parameters, which are crucial for the fusion of multi-modal sensors, may drift due to the vibration. To address this issue, we present a novel targetless calibration approach, termed LiRaCo, for the extrinsic 6DoF calibration of LiDAR and Radar sensors. Although both types of sensors can obtain geometric information, bridging the geometric correspondences between multi-modal data without any clues of explicit artificial markers is nontrivial, mainly due to the low vertical resolution of scanning Radar. To achieve the targetless calibration, LiRaCo leverages a spatial occupancy consistency between LiDAR point clouds and Radar scans in a common cylindrical representation, considering the increasing data sparsity with distance for both sensors. Specifically, LiRaCo expands the valid Radar scanned pixels into 3D occupancy grids to constrain LiDAR point clouds based on spatial consistency. Consequently, a cost function involving extrinsic calibration parameters is formulated based on the spatial overlap of 3D grids and LiDAR points. Extrinsic parameters are finally estimated by optimizing the cost function. Comprehensive quantitative and qualitative experiments on two real outdoor datasets with different LiDAR sensors demonstrate the feasibility and accuracy of the proposed method. The source code will be publicly available. 
+
+**Abstract (ZH)**: 基于LiDAR和雷达的无目标六自由度外参标定方法 
+
+---
+# Reachability-Guaranteed Optimal Control for the Interception of Dynamic Targets under Uncertainty 
+
+**Title (ZH)**: 不确定环境下可达性保证的动态目标拦截最优控制 
+
+**Authors**: Tommaso Faraci, Roberto Lampariello  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16935)  
+
+**Abstract**: Intercepting dynamic objects in uncertain environments involves a significant unresolved challenge in modern robotic systems. Current control approaches rely solely on estimated information, and results lack guarantees of robustness and feasibility. In this work, we introduce a novel method to tackle the interception of targets whose motion is affected by known and bounded uncertainty. Our approach introduces new techniques of reachability analysis for rigid bodies, leveraged to guarantee feasibility of interception under uncertain conditions. We then propose a Reachability-Guaranteed Optimal Control Problem, ensuring robustness and guaranteed reachability to a target set of configurations. We demonstrate the methodology in the case study of an interception maneuver of a tumbling target in space. 
+
+**Abstract (ZH)**: 在不确定性环境中超动态目标的截获是现代机器人系统中一个重要的未解决挑战。当前的控制方法仅依赖估算信息，结果缺乏鲁棒性和可行性的保证。本文提出了一种新的方法来应对受已知和有界不确定性影响的目标运动截获问题。该方法引入了新的刚体可达性分析技术，以保证在不确定条件下截获的可行性。随后，我们提出了一个可达性保证最优控制问题，确保在目标配置集中实现鲁棒性和可达性。我们通过空间中翻滚目标截获机动的一个案例研究展示了该方法。 
+
+---
+# Rude Humans and Vengeful Robots: Examining Human Perceptions of Robot Retaliatory Intentions in Professional Settings 
+
+**Title (ZH)**: 粗鲁的人和报复心强的机器人：探究专业环境中人类对机器人报复意图的感知 
+
+**Authors**: Kate Letheren, Nicole Robinson  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16932)  
+
+**Abstract**: Humans and robots are increasingly working in personal and professional settings. In workplace settings, humans and robots may work together as colleagues, potentially leading to social expectations, or violation thereof. Extant research has primarily sought to understand social interactions and expectations in personal rather than professional settings, and none of these studies have examined negative outcomes arising from violations of social expectations. This paper reports the results of a 2x3 online experiment that used a unique first-person perspective video to immerse participants in a collaborative workplace setting. The results are nuanced and reveal that while robots are expected to act in accordance with social expectations despite human behavior, there are benefits for robots perceived as being the bigger person in the face of human rudeness. Theoretical and practical implications are provided which discuss the import of these findings for the design of social robots. 
+
+**Abstract (ZH)**: 人类和机器人在个人和专业环境中日益共同工作。在工作场所环境中，人类和机器人可能作为同事共同工作，这可能会引发社会预期或违背社会预期。现有研究主要关注个人环境中的人际互动及其社会期望，而没有研究违背社会期望所导致的负面后果。本文报道了一项基于独特第一人称视角视频的2x3在线实验结果，将参与者置于协作工作环境中。结果表明，尽管机器人被预期要遵循社会期望，即使在面对人类粗鲁行为时，被视为更宽容的机器人也会带来益处。本文还提供了理论和实践意义，讨论了这些发现对社会机器人设计的重要性。 
+
+---
+# Deep Learning for Human Locomotion Analysis in Lower-Limb Exoskeletons: A Comparative Study 
+
+**Title (ZH)**: 基于深度学习的人类下肢运动分析在下肢外骨骼中的比较研究 
+
+**Authors**: Omar Coser, Christian Tamantini, Matteo Tortora, Leonardo Furia, Rosa Sicilia, Loredana Zollo, Paolo Soda  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16904)  
+
+**Abstract**: Wearable robotics for lower-limb assistance have become a pivotal area of research, aiming to enhance mobility for individuals with physical impairments or augment the performance of able-bodied users. Accurate and adaptive control systems are essential to ensure seamless interaction between the wearer and the robotic device, particularly when navigating diverse and dynamic terrains. Despite the recent advances in neural networks for time series analysis, no attempts have been directed towards the classification of ground conditions, categorized into five classes and subsequently determining the ramp's slope and stair's height. In this respect, this paper presents an experimental comparison between eight deep neural network backbones to predict high-level locomotion parameters across diverse terrains.
+All the models are trained on the publicly available CAMARGO 2021 dataset. IMU-only data equally or outperformed IMU+EMG inputs, promoting a cost-effective and efficient design. Indeeds, using three IMU sensors, the LSTM achieved high terrain classification accuracy (0.94 +- 0.04) and precise ramp slope (1.95 +- 0.58°) and the CNN-LSTM a stair height (15.65 +- 7.40 mm) estimations. As a further contribution, SHAP analysis justified sensor reduction without performance loss, ensuring a lightweight setup. The system operates with ~2 ms inference time, supporting real-time applications. The code is code available at this https URL. 
+
+**Abstract (ZH)**: 可穿戴机器人在下肢辅助领域的研究已成为一个关键领域，旨在提高身体有障碍个体的移动能力或增强健全用户的表现。准确且适应性强的控制系统对于确保穿戴者与机器人装置之间无缝互动至关重要，特别是在穿越多样且动态地形时。尽管近年来在时间序列分析中神经网络取得了进步，但尚未有研究尝试对五类地面条件进行分类，并确定坡道的斜率和台阶的高度。针对这一问题，本文在CAMARGO 2021公开数据集上对预测多种地形上高级步态参数的八种深度神经网络骨干网络进行了实验性比较。仅使用IMU数据或IMU+EMG输入均表现出色，促进了成本效益和高效的设计。实际上，使用三个IMU传感器，LSTM实现了高地形分类准确性（0.94 ± 0.04）和精确的坡道斜率（1.95 ± 0.58°），而CNN-LSTM实现了台阶高度（15.65 ± 7.40 mm）的估计。作为进一步的贡献，SHAP分析证明了减少传感器数量而不损失性能的可行性，确保了一个轻量级的设置。该系统具有约2 ms的推理时间，支持实时应用。代码可在此处访问：这个 https URL。 
+
+---
+# DyWA: Dynamics-adaptive World Action Model for Generalizable Non-prehensile Manipulation 
+
+**Title (ZH)**: DyWA：自适应动力学世界操作模型以实现可泛化的非拿起操纵 
+
+**Authors**: Jiangran Lyu, Ziming Li, Xuesong Shi, Chaoyi Xu, Yizhou Wang, He Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16806)  
+
+**Abstract**: Nonprehensile manipulation is crucial for handling objects that are too thin, large, or otherwise ungraspable in unstructured environments. While conventional planning-based approaches struggle with complex contact modeling, learning-based methods have recently emerged as a promising alternative. However, existing learning-based approaches face two major limitations: they heavily rely on multi-view cameras and precise pose tracking, and they fail to generalize across varying physical conditions, such as changes in object mass and table friction. To address these challenges, we propose the Dynamics-Adaptive World Action Model (DyWA), a novel framework that enhances action learning by jointly predicting future states while adapting to dynamics variations based on historical trajectories. By unifying the modeling of geometry, state, physics, and robot actions, DyWA enables more robust policy learning under partial observability. Compared to baselines, our method improves the success rate by 31.5% using only single-view point cloud observations in the simulation. Furthermore, DyWA achieves an average success rate of 68% in real-world experiments, demonstrating its ability to generalize across diverse object geometries, adapt to varying table friction, and robustness in challenging scenarios such as half-filled water bottles and slippery surfaces. 
+
+**Abstract (ZH)**: 动态自适应世界动作模型在非接触操作中的应用研究 
+
+---
+# BEAC: Imitating Complex Exploration and Task-oriented Behaviors for Invisible Object Nonprehensile Manipulation 
+
+**Title (ZH)**: BEAC：模仿复杂探索和任务导向行为实现隐形物体非手持操纵 
+
+**Authors**: Hirotaka Tahara, Takamitsu Matsubara  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16803)  
+
+**Abstract**: Applying imitation learning (IL) is challenging to nonprehensile manipulation tasks of invisible objects with partial observations, such as excavating buried rocks. The demonstrator must make such complex action decisions as exploring to find the object and task-oriented actions to complete the task while estimating its hidden state, perhaps causing inconsistent action demonstration and high cognitive load problems. For these problems, work in human cognitive science suggests that promoting the use of pre-designed, simple exploration rules for the demonstrator may alleviate the problems of action inconsistency and high cognitive load. Therefore, when performing imitation learning from demonstrations using such exploration rules, it is important to accurately imitate not only the demonstrator's task-oriented behavior but also his/her mode-switching behavior (exploratory or task-oriented behavior) under partial observation. Based on the above considerations, this paper proposes a novel imitation learning framework called Belief Exploration-Action Cloning (BEAC), which has a switching policy structure between a pre-designed exploration policy and a task-oriented action policy trained on the estimated belief states based on past history. In simulation and real robot experiments, we confirmed that our proposed method achieved the best task performance, higher mode and action prediction accuracies, while reducing the cognitive load in the demonstration indicated by a user study. 
+
+**Abstract (ZH)**: 基于信念探索-动作克隆的非抓握隐形对象部分观测条件下模仿学习框架 
+
+---
+# Displacement-Actuated Continuum Robots: A Joint Space Abstraction 
+
+**Title (ZH)**: 位移驱动连续体机器人：联合空间抽象 
+
+**Authors**: Reinhard M. Grassmann, Jessica Burgner-Kahrs  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16778)  
+
+**Abstract**: The displacement-actuated continuum robot as an abstraction has been shown as a key abstraction to significantly simplify and improve approaches due to its relation to the Clarke transform. To highlight further potentials, we revisit and extend this abstraction that features an increasingly popular length extension and an underutilized twisting. For each extension, the corresponding mapping from the joint values to the local coordinates of the manifold embedded in the joint spaces is provided. Each mapping is characterized by its compactness and linearity. 
+
+**Abstract (ZH)**: 基于位移激活的连续机器人作为一种抽象，通过与克拉克变换的关系显示出作为关键抽象的重要性，显著简化和改善了方法。为突出进一步潜力，我们重新审视并扩展了这一抽象，包括日益流行的增长长度和被低估的扭转。对每种扩展，提供了从关节值到嵌入在关节空间中的流形的局部坐标的相关映射。每种映射都以其紧凑性和线性特征进行描述。 
+
+---
+# Ground and Flight Locomotion for Two-Wheeled Drones via Model Predictive Path Integral Control 
+
+**Title (ZH)**: 两轮无人机的地面和飞行运动控制：基于模型预测路径积分控制方法 
+
+**Authors**: Gosuke Kojima, Kohei Honda, Satoshi Nakano, Manabu Yamada  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16715)  
+
+**Abstract**: This paper presents a novel approach to motion planning for two-wheeled drones that can drive on the ground and fly in the air. Conventional methods for two-wheeled drone motion planning typically rely on gradient-based optimization and assume that obstacle shapes can be approximated by a differentiable form. To overcome this limitation, we propose a motion planning method based on Model Predictive Path Integral (MPPI) control, enabling navigation through arbitrarily shaped obstacles by switching between driving and flight modes. To handle the instability and rapid solution changes caused by mode switching, our proposed method switches the control space and utilizes the auxiliary controller for MPPI. Our simulation results demonstrate that the proposed method enables navigation in unstructured environments and achieves effective obstacle avoidance through mode switching. 
+
+**Abstract (ZH)**: 基于Model Predictive Path Integral控制的两轮无人机运动规划新方法 
+
+---
+# Depth Matters: Multimodal RGB-D Perception for Robust Autonomous Agents 
+
+**Title (ZH)**: 深度感知至关重要：多模态RGB-D感知在鲁棒自主代理中的应用 
+
+**Authors**: Mihaela-Larisa Clement, Mónika Farsang, Felix Resch, Radu Grosu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16711)  
+
+**Abstract**: Autonomous agents that rely purely on perception to make real-time control decisions require efficient and robust architectures. In this work, we demonstrate that augmenting RGB input with depth information significantly enhances our agents' ability to predict steering commands compared to using RGB alone. We benchmark lightweight recurrent controllers that leverage the fused RGB-D features for sequential decision-making. To train our models, we collect high-quality data using a small-scale autonomous car controlled by an expert driver via a physical steering wheel, capturing varying levels of steering difficulty. Our models, trained under diverse configurations, were successfully deployed on real hardware. Specifically, our findings reveal that the early fusion of depth data results in a highly robust controller, which remains effective even with frame drops and increased noise levels, without compromising the network's focus on the task. 
+
+**Abstract (ZH)**: 依赖纯感知进行实时控制决策的自主代理需要高效且 robust 的架构。本研究展示了将 RGB 输入与深度信息相结合显著增强了我们的代理预测转向命令的能力，相比仅使用 RGB。我们基于融合的 RGB-D 特征benchmark了轻量级循环控制器，用于序列决策制定。为训练我们的模型，我们使用由专家驾驶员通过物理方向盘控制的小型自主汽车收集高质量数据，捕捉不同的转向难度级别。在多种配置下训练的模型成功部署在实际硬件上。具体而言，我们的研究发现早期融合深度数据生成的控制器具有高度 robust 性，在帧丢失和噪声增加的情况下依然有效，而不影响网络对任务的关注。 
+
+---
+# A Schwarz-Christoffel Mapping-based Framework for Sim-to-Real Transfer in Autonomous Robot Operations 
+
+**Title (ZH)**: 基于Schwarz-Christoffel变换的从仿真到现实转换框架在自主机器人操作中的应用 
+
+**Authors**: Shijie Gao, Nicola Bezzo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16634)  
+
+**Abstract**: Despite the remarkable acceleration of robotic development through advanced simulation technology, robotic applications are often subject to performance reductions in real-world deployment due to the inherent discrepancy between simulation and reality, often referred to as the "sim-to-real gap". This gap arises from factors like model inaccuracies, environmental variations, and unexpected disturbances. Similarly, model discrepancies caused by system degradation over time or minor changes in the system's configuration also hinder the effectiveness of the developed methodologies. Effectively closing these gaps is critical and remains an open challenge. This work proposes a lightweight conformal mapping framework to transfer control and planning policies from an expert teacher to a degraded less capable learner. The method leverages Schwarz-Christoffel Mapping (SCM) to geometrically map teacher control inputs into the learner's command space, ensuring maneuver consistency. To demonstrate its generality, the framework is applied to two representative types of control and planning methods in a path-tracking task: 1) a discretized motion primitives command transfer and 2) a continuous Model Predictive Control (MPC)-based command transfer. The proposed framework is validated through extensive simulations and real-world experiments, demonstrating its effectiveness in reducing the sim-to-real gap by closely transferring teacher commands to the learner robot. 
+
+**Abstract (ZH)**: 尽管通过先进仿真技术取得了机器人开发的显著加速，但在实际部署中，由于仿真与现实之间固有的差异，即所谓的“仿真实验到现实世界差距”，机器人的性能往往会降低。这一差距源于模型不准确、环境变化和意外干扰等因素。同样，由于系统退化或系统配置的小幅变化导致的模型差异也阻碍了所开发方法的有效性。有效地缩小这些差距至关重要，但仍是一个开放性的挑战。本文提出了一种轻量级符合映射框架，将专家教师的控制和规划策略转移到退化的较不能力强的学习者。该方法利用Schwarz-Christoffel映射（SCM）将教师的控制输入几何映射到学习者的命令空间，以确保操纵一致。为证明其普适性，该框架被应用于路径跟踪任务中的两种代表性控制和规划方法：1）离散运动基元命令转移；2）连续模型预测控制（MPC）基于的命令转移。所提出框架通过广泛的仿真和实际实验得到验证，展示了其通过密切转移教师命令到学习者机器人以减少仿真实验到现实世界差距的有效性。 
+
+---
+# Informative Path Planning to Explore and Map Unknown Planetary Surfaces with Gaussian Processes 
+
+**Title (ZH)**: 基于高斯过程的信息性路径规划以探索和绘制未知行星表面 
+
+**Authors**: Ashten Akemoto, Frances Zhu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16613)  
+
+**Abstract**: Many environments, such as unvisited planetary surfaces and oceanic regions, remain unexplored due to a lack of prior knowledge. Autonomous vehicles must sample upon arrival, process data, and either transmit findings to a teleoperator or decide where to explore next. Teleoperation is suboptimal, as human intuition lacks mathematical guarantees for optimality. This study evaluates an informative path planning algorithm for mapping a scalar variable distribution while minimizing travel distance and ensuring model convergence. We compare traditional open loop coverage methods (e.g., Boustrophedon, Spiral) with information-theoretic approaches using Gaussian processes, which update models iteratively with confidence metrics. The algorithm's performance is tested on three surfaces, a parabola, Townsend function, and lunar crater hydration map, to assess noise, convexity, and function behavior. Results demonstrate that information-driven methods significantly outperform naive exploration in reducing model error and travel distance while improving convergence potential. 
+
+**Abstract (ZH)**: 基于信息的路径规划算法在探索未知环境中的应用与评估 
+
+---
+# ContactFusion: Stochastic Poisson Surface Maps from Visual and Contact Sensing 
+
+**Title (ZH)**: 接触融合：来自视觉和触觉传感的随机泊松表面映射 
+
+**Authors**: Aditya Kamireddypalli, Joao Moura, Russell Buchanan, Sethu Vijayakumar, Subramanian Ramamoorthy  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16592)  
+
+**Abstract**: Robust and precise robotic assembly entails insertion of constituent components. Insertion success is hindered when noise in scene understanding exceeds tolerance limits, especially when fabricated with tight tolerances. In this work, we propose ContactFusion which combines global mapping with local contact information, fusing point clouds with force sensing. Our method entails a Rejection Sampling based contact occupancy sensing procedure which estimates contact locations on the end-effector from Force/Torque sensing at the wrist. We demonstrate how to fuse contact with visual information into a Stochastic Poisson Surface Map (SPSMap) - a map representation that can be updated with the Stochastic Poisson Surface Reconstruction (SPSR) algorithm. We first validate the contact occupancy sensor in simulation and show its ability to detect the contact location on the robot from force sensing information. Then, we evaluate our method in a peg-in-hole task, demonstrating an improvement in the hole pose estimate with the fusion of the contact information with the SPSMap. 
+
+**Abstract (ZH)**: 稳健且精确的机器人装配涉及构成组件的插入。当场景理解中的噪声超过公差极限时，特别是在公差较紧的情况下，插入成功率会受到影响。在本文中，我们提出了一种结合全局映射与局部接触信息的ContactFusion方法，将点云与力感知融合。我们的方法包括一个基于拒绝采样的接触占有率感知过程，该过程通过对腕部力/力矩感知信息的分析来估计末端执行器上的接触位置。我们展示了如何将接触信息与视觉信息融合到随机泊松表面映射（SPSMap）中——这是一种可以通过随机泊松表面重建算法（SPSR）进行更新的映射表示。我们首先在仿真中验证了接触占有率传感器的能力，并展示了其利用力感知信息检测机器人接触位置的能力。然后，我们在钉入孔任务中评估了我们的方法，证明了在将接触信息与SPSMap融合后对孔的姿态估计有所改进。 
+
+---
+# AUV Acceleration Prediction Using DVL and Deep Learning 
+
+**Title (ZH)**: 使用声呐导航仪和深度学习的AUV加速度预测 
+
+**Authors**: Yair Stolero, Itzik Klein  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16573)  
+
+**Abstract**: Autonomous underwater vehicles (AUVs) are essential for various applications, including oceanographic surveys, underwater mapping, and infrastructure inspections. Accurate and robust navigation are critical to completing these tasks. To this end, a Doppler velocity log (DVL) and inertial sensors are fused together. Recently, a model-based approach demonstrated the ability to extract the vehicle acceleration vector from DVL velocity measurements. Motivated by this advancement, in this paper we present an end-to-end deep learning approach to estimate the AUV acceleration vector based on past DVL velocity measurements. Based on recorded data from sea experiments, we demonstrate that the proposed method improves acceleration vector estimation by more than 65% compared to the model-based approach by using data-driven techniques. As a result of our data-driven approach, we can enhance navigation accuracy and reliability in AUV applications, contributing to more efficient and effective underwater missions through improved accuracy and reliability. 
+
+**Abstract (ZH)**: 自主水下车辆（AUVs）在海洋调查、水下测绘和基础设施检查等应用中是必不可少的。精确和鲁棒的导航对完成这些任务至关重要。为此，Doppler速度计（DVL）和惯性传感器被融合使用。最近，一种基于模型的方法展示了从DVL速度测量中提取车辆加速度矢量的能力。受此进展的启发，本文提出了一种端到端的深度学习方法，基于过去的DVL速度测量估计AUV的加速度矢量。基于海上实验记录的数据，我们证明所提出的方法通过使用数据驱动技术，与基于模型的方法相比，加速度矢量估计的准确性提高了超过65%。由于我们的数据驱动方法，可以提高AUV应用中的导航精度和可靠性，从而通过提高准确性和可靠性促进更高效和有效的水下任务。 
+
+---
+# Design of Reward Function on Reinforcement Learning for Automated Driving 
+
+**Title (ZH)**: 基于强化学习的自动驾驶奖励函数设计 
+
+**Authors**: Takeru Goto, Yuki Kizumi, Shun Iwasaki  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16559)  
+
+**Abstract**: This paper proposes a design scheme of reward function that constantly evaluates both driving states and actions for applying reinforcement learning to automated driving. In the field of reinforcement learning, reward functions often evaluate whether the goal is achieved by assigning values such as +1 for success and -1 for failure. This type of reward function can potentially obtain a policy that achieves the goal, but the process by which the goal is reached is not evaluated. However, process to reach a destination is important for automated driving, such as keeping velocity, avoiding risk, retaining distance from other cars, keeping comfortable for passengers. Therefore, the reward function designed by the proposed scheme is suited for automated driving by evaluating driving process. The effects of the proposed scheme are demonstrated on simulated circuit driving and highway cruising. Asynchronous Advantage Actor-Critic is used, and models are trained under some situations for generalization. The result shows that appropriate driving positions are obtained, such as traveling on the inside of corners, and rapid deceleration to turn along sharp curves. In highway cruising, the ego vehicle becomes able to change lane in an environment where there are other vehicles with suitable deceleration to avoid catching up to a front vehicle, and acceleration so that a rear vehicle does not catch up to the ego vehicle. 
+
+**Abstract (ZH)**: 本文提出了一种奖励函数设计方案，该方案不断评价驾驶状态和行为，以将强化学习应用于自动驾驶。在强化学习领域，奖励函数通常通过赋予值如成功+1、失败-1等方式来评价目标是否实现。这种奖励函数可能有助于获取实现目标的策略，但无法评估达到目标的过程。然而，到达目的地的过程对于自动驾驶至关重要，包括保持速度、规避风险、与其他车辆保持安全距离、确保乘客舒适等。因此，本方案设计的奖励函数适合自动驾驶，通过评价驾驶过程来适应这些需求。该方案的效果在模拟赛道驾驶和高速公路巡航中得到验证。使用异步优势演员评论家算法，并在一些情况下训练模型以实现泛化。结果显示，车辆获得了合适的驾驶位置，如在弯道内侧行驶、快速减速通过急弯等。在高速公路巡航中，ego车辆能够在其他车辆有合适减速的情况下变更车道，以免追尾前方车辆，并通过加速确保后方车辆不追上ego车辆。 
+
+---
+# A Vehicle-Infrastructure Multi-layer Cooperative Decision-making Framework 
+
+**Title (ZH)**: 基于车辆-基础设施多层协同决策框架 
+
+**Authors**: Yiming Cui, Shiyu Fang, Peng Hang, Jian Sun  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16552)  
+
+**Abstract**: Autonomous driving has entered the testing phase, but due to the limited decision-making capabilities of individual vehicle algorithms, safety and efficiency issues have become more apparent in complex scenarios. With the advancement of connected communication technologies, autonomous vehicles equipped with connectivity can leverage vehicle-to-vehicle (V2V) and vehicle-to-infrastructure (V2I) communications, offering a potential solution to the decision-making challenges from individual vehicle's perspective. We propose a multi-level vehicle-infrastructure cooperative decision-making framework for complex conflict scenarios at unsignalized intersections. First, based on vehicle states, we define a method for quantifying vehicle impacts and their propagation relationships, using accumulated impact to group vehicles through motif-based graph clustering. Next, within and between vehicle groups, a pass order negotiation process based on Large Language Models (LLM) is employed to determine the vehicle passage order, resulting in planned vehicle actions. Simulation results from ablation experiments show that our approach reduces negotiation complexity and ensures safer, more efficient vehicle passage at intersections, aligning with natural decision-making logic. 
+
+**Abstract (ZH)**: 基于车辆-基础设施协同的无信号交叉口复杂冲突场景决策框架 
+
+---
+# CoIn-SafeLink: Safety-critical Control With Cost-sensitive Incremental Random Vector Functional Link Network 
+
+**Title (ZH)**: CoIn-SafeLink: 成本敏感增量随机向量函数链接网络在安全性关键控制中的应用 
+
+**Authors**: Songqiao Hu, Zeyi Liu, Xiao He, Zhen Shen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16551)  
+
+**Abstract**: Control barrier functions (CBFs) play a crucial role in achieving the safety-critical control of robotic systems theoretically. However, most existing methods rely on the analytical expressions of unsafe state regions, which is often impractical for irregular and dynamic unsafe regions. In this paper, a novel CBF construction approach, called CoIn-SafeLink, is proposed based on cost-sensitive incremental random vector functional-link (RVFL) neural networks. By designing an appropriate cost function, CoIn-SafeLink achieves differentiated sensitivities to safe and unsafe samples, effectively achieving zero false-negative risk in unsafe sample classification. Additionally, an incremental update theorem for CoIn-SafeLink is proposed, enabling precise adjustments in response to changes in the unsafe region. Finally, the gradient analytical expression of the CoIn-SafeLink is provided to calculate the control input. The proposed method is validated on a 3-degree-of-freedom drone attitude control system. Experimental results demonstrate that the method can effectively learn the unsafe region boundaries and rapidly adapt as these regions evolve, with an update speed approximately five times faster than comparison methods. The source code is available at this https URL. 
+
+**Abstract (ZH)**: 基于成本敏感增量随机向量函数链接神经网络的CoIn-SafeLink控制障碍函数构造方法 
+
+---
+# Safe and Efficient Social Navigation through Explainable Safety Regions Based on Topological Features 
+
+**Title (ZH)**: 基于拓扑特征的可解释安全区域的社会导航安全与效率研究 
+
+**Authors**: Victor Toscano-Duran, Sara Narteni, Alberto Carlevaro, Rocio Gonzalez-Diaz, Maurizio Mongelli, Jerome Guzzi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16441)  
+
+**Abstract**: The recent adoption of artificial intelligence (AI) in robotics has driven the development of algorithms that enable autonomous systems to adapt to complex social environments. In particular, safe and efficient social navigation is a key challenge, requiring AI not only to avoid collisions and deadlocks but also to interact intuitively and predictably with its surroundings. To date, methods based on probabilistic models and the generation of conformal safety regions have shown promising results in defining safety regions with a controlled margin of error, primarily relying on classification approaches and explicit rules to describe collision-free navigation conditions.
+This work explores how topological features contribute to explainable safety regions in social navigation. Instead of using behavioral parameters, we leverage topological data analysis to classify and characterize different simulation behaviors. First, we apply global rule-based classification to distinguish between safe (collision-free) and unsafe scenarios based on topological properties. Then, we define safety regions, $S_\varepsilon$, in the topological feature space, ensuring a maximum classification error of $\varepsilon$. These regions are built with adjustable SVM classifiers and order statistics, providing robust decision boundaries. Local rules extracted from these regions enhance interpretability, keeping the decision-making process transparent.
+Our approach initially separates simulations with and without collisions, outperforming methods that not incorporate topological features. It offers a deeper understanding of robot interactions within a navigable space. We further refine safety regions to ensure deadlock-free simulations and integrate both aspects to define a compliant simulation space that guarantees safe and efficient navigation. 
+
+**Abstract (ZH)**: 近年来，人工智能在机器人领域的应用推动了能够适应复杂社会环境的自主系统算法的发展。特别是安全高效的社交导航是一个关键挑战，要求人工智能不仅避免碰撞和死锁，还需要与环境进行直观且可预测的交互。迄今为止，基于概率模型和生成符合安全区域的方法展示了在控制误差范围内定义安全区域的有希望的结果，主要依赖于分类方法和显式规则来描述无碰撞导航条件。
+
+本研究探讨拓扑特征如何贡献可解释的安全区域在社交导航中的作用。不同于使用行为参数，我们利用拓扑数据分析进行分类和表征不同的仿真行为。首先，我们应用全局规则分类，基于拓扑属性区分安全（无碰撞）和不安全的场景。然后，在拓扑特征空间中定义安全区域$S_\varepsilon$，确保分类误差的最大值为$\varepsilon$。这些区域通过可调节的SVM分类器和顺序统计量构建，提供稳健的决策边界。从这些区域中提取的局部规则增强了可解释性，保持了决策过程的透明性。
+
+我们的方法最初将无碰撞和有碰撞的仿真场景区分开来，相较于不包含拓扑特征的方法表现出色。它提供了对机器人在可导航空间内相互作用的更深入理解。进一步细化安全区域以确保无死锁仿真，并将这两个方面结合以定义一个合规的仿真空间，确保安全高效的导航。 
+
+---
+# GAA-TSO: Geometry-Aware Assisted Depth Completion for Transparent and Specular Objects 
+
+**Title (ZH)**: 几何感知辅助深度完成：透明和镜面对象的深度补全 
+
+**Authors**: Yizhe Liu, Tong Jia, Da Cai, Hao Wang, Dongyue Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.17106)  
+
+**Abstract**: Transparent and specular objects are frequently encountered in daily life, factories, and laboratories. However, due to the unique optical properties, the depth information on these objects is usually incomplete and inaccurate, which poses significant challenges for downstream robotics tasks. Therefore, it is crucial to accurately restore the depth information of transparent and specular objects. Previous depth completion methods for these objects usually use RGB information as an additional channel of the depth image to perform depth prediction. Due to the poor-texture characteristics of transparent and specular objects, these methods that rely heavily on color information tend to generate structure-less depth predictions. Moreover, these 2D methods cannot effectively explore the 3D structure hidden in the depth channel, resulting in depth ambiguity. To this end, we propose a geometry-aware assisted depth completion method for transparent and specular objects, which focuses on exploring the 3D structural cues of the scene. Specifically, besides extracting 2D features from RGB-D input, we back-project the input depth to a point cloud and build the 3D branch to extract hierarchical scene-level 3D structural features. To exploit 3D geometric information, we design several gated cross-modal fusion modules to effectively propagate multi-level 3D geometric features to the image branch. In addition, we propose an adaptive correlation aggregation strategy to appropriately assign 3D features to the corresponding 2D features. Extensive experiments on ClearGrasp, OOD, TransCG, and STD datasets show that our method outperforms other state-of-the-art methods. We further demonstrate that our method significantly enhances the performance of downstream robotic grasping tasks. 
+
+**Abstract (ZH)**: 透明和镜面物体在日常生活中、工厂和实验室中经常遇到。然而，由于这些物体独特的光学性质，通常很难获取其完整准确的深度信息，这对下游机器人任务构成了巨大挑战。因此，准确恢复透明和镜面物体的深度信息至关重要。针对这些物体的先前深度完成方法通常使用RGB信息作为深度图像的附加通道来进行深度预测。但由于透明和镜面物体具有较差的纹理特征，依赖于色彩信息的方法往往会生成缺乏结构的深度预测。此外，这些2D方法无法有效探索隐藏在深度通道中的3D结构，导致深度信息的不确定性。为此，我们提出了一种几何感知辅助的深度完成方法，专注于探索场景的3D结构线索。具体来说，除了从RGB-D输入中提取2D特征外，我们还将输入深度反投影至点云，并构建3D分支以提取分层场景级的3D结构特征。为了利用3D几何信息，我们设计了几种门控跨模态融合模块，以有效传播多级3D几何特征到图像分支。此外，我们提出了一种自适应相关聚合策略，以适当分配3D特征到相应的2D特征。在ClearGrasp、OOD、TransCG和STD数据集上的广泛实验表明，我们的方法优于其他最先进的方法。我们进一步证明，我们的方法显著提升了下游机器人抓取任务的性能。 
+
+---
+# Extending Behavior Trees for Robotic Missions with Quality Requirements 
+
+**Title (ZH)**: 基于质量要求扩展行为树以适用于机器人任务 
+
+**Authors**: Razan Ghzouli, Rebekka Wohlrab, Jennifer Horkoff  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16969)  
+
+**Abstract**: Context and motivation: In recent years, behavior trees have gained growing interest within the robotics community as a specification and control switching mechanism for the different tasks that form a robotics mission. Problem: Given the rising complexity and prevalence of robotic systems, it is increasingly challenging and important for practitioners to design high-quality missions that meet certain qualities, for instance, to consider potential failures or mitigate safety risks. In software requirements engineering, quality or non-functional requirements have long been recognized as a key factor in system success. Currently, qualities are not represented in behavior tree models, which capture a robotic mission, making it difficult to assess the extent to which different mission components comply with those qualities. Principal ideas: In this paper, we propose an extension for behavior trees to have qualities and quality requirements explicitly represented in robotics missions. We provide a meta-model for the extension, develop a domain-specific language (DSL), and describe how we integrated our DSL in one of the most used languages in robotics for developing behavior trees, this http URL. A preliminary evaluation of the implemented DSL shows promising results for the feasibility of our approach and the need for similar DSLs. Contribution: Our approach paves the way for incorporating qualities into the behavior model of robotics missions. This promotes early expression of qualities in robotics missions, and a better overview of missions components and their contribution to the satisfaction of quality concerns. 
+
+**Abstract (ZH)**: 背景与动机：近年来，行为树在机器人领域引起了广泛关注，作为描述机器人任务的规范和控制切换机制。问题：随着机器人系统的复杂性和普及程度不断提高，设计符合特定质量要求的任务变得愈加具有挑战性和重要性，例如考虑潜在的故障或减轻安全风险。在软件需求工程中，质量或非功能需求长期以来被认为是系统成功的关键因素。目前，这些质量要求并未在描述机器人任务的行为树模型中体现出来，使得评估不同任务组件是否满足这些质量要求变得困难。主要思想：本文提出了一种扩展行为树的方法，使得机器人任务中的质量及质量需求能够明确表示。我们提供了一个扩展的元模型，开发了一个领域特定语言（DSL），并描述了如何将我们的DSL集成到机器人领域最常用的开发行为树的语言中。初步评估表明，实现的DSL在可行性和对类似DSL的需求方面具有积极的结果。贡献：我们的方法为将质量纳入机器人任务的行为模型铺平了道路。这促进了在机器人任务早期对质量的表达，并为任务组件及其对满足质量关注的贡献提供了更好的概览。 
+
+---
+# Somatic Safety: An Embodied Approach Towards Safe Human-Robot Interaction 
+
+**Title (ZH)**: 体化安全：一种面向安全人机交互的体化方法 
+
+**Authors**: Steve Benford, Eike Schneiders, Juan Pablo Martinez Avila, Praminda Caleb-Solly, Patrick Robert Brundell, Simon Castle-Green, Feng Zhou, Rachael Garrett, Kristina Höök, Sarah Whatley, Kate Marsh, Paul Tennent  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16960)  
+
+**Abstract**: As robots enter the messy human world so the vital matter of safety takes on a fresh complexion with physical contact becoming inevitable and even desirable. We report on an artistic-exploration of how dancers, working as part of a multidisciplinary team, engaged in contact improvisation exercises to explore the opportunities and challenges of dancing with cobots. We reveal how they employed their honed bodily senses and physical skills to engage with the robots aesthetically and yet safely, interleaving improvised physical manipulations with reflections to grow their knowledge of how the robots behaved and felt. We introduce somatic safety, a holistic mind-body approach in which safety is learned, felt and enacted through bodily contact with robots in addition to being reasoned about. We conclude that robots need to be better designed for people to hold them and might recognise tacit safety cues among this http URL propose that safety should be learned through iterative bodily experience interleaved with reflection. 
+
+**Abstract (ZH)**: 随着机器人进入混乱的人类世界，安全保障的重要性得到了新的体现，物理接触变得不可避免甚至 desirable。我们报道了舞者作为多学科团队的一部分，通过接触即兴练习探索与协作机器人共舞的机会与挑战。我们揭示了他们如何运用敏锐的身体感知和物理技能，以一种既美观又安全的方式与机器人互动，将即兴的身体操作与反思交织在一起，以增进对机器人行为和感受的认识。我们引入了本体安全这一身-心整体的方法，其中安全不仅通过逻辑推理来认知，还需要通过与机器人的身体接触来学习、感受和实践。我们得出结论，机器人需要更好地设计，以便人们能够握住它们，并且可能在其中识别出隐含的安全信号。我们认为，安全性应该通过迭代的身体体验与反思交织来进行学习。 
+
+---
+# Safe On-Orbit Dislodging of Deployable Structures via Robust Adaptive MPC 
+
+**Title (ZH)**: 在轨部署结构的稳健自适应 MPC 控制的可靠脱位方法 
+
+**Authors**: Longsen Gao, Claus Danielson, Andrew Kwas, Rafael Fierro  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16849)  
+
+**Abstract**: This paper proposes a novel robust adaptive model predictive controller for on-orbit dislodging. We consider the scenario where a servicer, equipped with a robot arm, must dislodge a client, a time-varying system composed of an underpowered jammed solar panel with a hybrid hinge system on a space station. Our approach leverages online set-membership identification to reduce the uncertainty to provide robust safety guarantees during dislodging despite bounded disturbances while balancing exploration and exploitation effectively in the parameter space. The feasibility of the developed robust adaptive MPC method is also examined through dislodging simulations and hardware experiments in zero-gravity and gravity environments, respectively. In addition, the advantages of our method are shown through comparison experiments with several state-of-the-art control schemes for both accuracy of parameter estimation and control performance. 
+
+**Abstract (ZH)**: 本文提出了一种针对在轨脱落的新颖鲁棒自适应模型预测控制器。我们在一种服务舱配备机器人臂以处理脱落任务的情景下考虑了一种时变系统，该系统由空间站上带有混合铰链系统的低功率卡滞太阳电池板组成。我们的方法利用在线集合成员识别以减少不确定性，在存在有界干扰的情况下仍能提供鲁棒的安全保证，并且在参数空间中有效地平衡探索与利用。通过零重力和重力环境下的脱落模拟和硬件实验验证了所开发的鲁棒自适应MPC方法的可行性。此外，通过与几种先进控制方案的比较实验展示了本方法在参数估计精度和控制性能方面的优势。 
+
+---
+# SGFormer: Satellite-Ground Fusion for 3D Semantic Scene Completion 
+
+**Title (ZH)**: SGFormer: 卫星-地面融合用于3D语义场景完成 
+
+**Authors**: Xiyue Guo, Jiarui Hu, Junjie Hu, Hujun Bao, Guofeng Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16825)  
+
+**Abstract**: Recently, camera-based solutions have been extensively explored for scene semantic completion (SSC). Despite their success in visible areas, existing methods struggle to capture complete scene semantics due to frequent visual occlusions. To address this limitation, this paper presents the first satellite-ground cooperative SSC framework, i.e., SGFormer, exploring the potential of satellite-ground image pairs in the SSC task. Specifically, we propose a dual-branch architecture that encodes orthogonal satellite and ground views in parallel, unifying them into a common domain. Additionally, we design a ground-view guidance strategy that corrects satellite image biases during feature encoding, addressing misalignment between satellite and ground views. Moreover, we develop an adaptive weighting strategy that balances contributions from satellite and ground views. Experiments demonstrate that SGFormer outperforms the state of the art on SemanticKITTI and SSCBench-KITTI-360 datasets. Our code is available on this https URL. 
+
+**Abstract (ZH)**: 基于卫星-地面协同的场景语义完成框架：SGFormer探索图像对在场景语义完成任务中的潜力 
+
+---
+# World Knowledge from AI Image Generation for Robot Control 
+
+**Title (ZH)**: AI图像生成的 WORLD 知识在机器人控制中的应用 
+
+**Authors**: Jonas Krumme, Christoph Zetzsche  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16579)  
+
+**Abstract**: When interacting with the world robots face a number of difficult questions, having to make decisions when given under-specified tasks where they need to make choices, often without clearly defined right and wrong answers. Humans, on the other hand, can often rely on their knowledge and experience to fill in the gaps. For example, the simple task of organizing newly bought produce into the fridge involves deciding where to put each thing individually, how to arrange them together meaningfully, e.g. putting related things together, all while there is no clear right and wrong way to accomplish this task. We could encode all this information on how to do such things explicitly into the robots' knowledge base, but this can quickly become overwhelming, considering the number of potential tasks and circumstances the robot could encounter. However, images of the real world often implicitly encode answers to such questions and can show which configurations of objects are meaningful or are usually used by humans. An image of a full fridge can give a lot of information about how things are usually arranged in relation to each other and the full fridge at large. Modern generative systems are capable of generating plausible images of the real world and can be conditioned on the environment in which the robot operates. Here we investigate the idea of using the implicit knowledge about the world of modern generative AI systems given by their ability to generate convincing images of the real world to solve under-specified tasks. 
+
+**Abstract (ZH)**: 当机器人与世界互动时，它们面临许多困难的问题，需要在给定模糊任务的情况下做出决策，往往缺乏明确的正确或错误答案。相比之下，人类经常可以根据他们的知识和经验来填补这些空白。例如，将新购买的食品整理进冰箱这一简单任务涉及个体决定每件物品的位置以及如何有意义地排列它们，例如将相关物品放在一起，然而并没有明确的正确或错误方式来完成这项任务。我们可以将如何完成此类任务的所有信息显式地编码到机器人的知识库中，但这可能会因为机器人可能遇到的任务和情境数量而变得难以管理。但是，真实世界的图像往往隐含地包含了这些问题的答案，并展示了哪些对象配置是有意义的，或者通常被人类使用。一张满载的冰箱图像可以提供很多关于物品如何在彼此间以及与整个满载的冰箱之间通常是如何排列的信息。现代生成系统能够生成现实世界的合理图像，并且可以依据机器人操作的环境进行条件设置。在这里，我们探讨使用现代生成AI系统通过其生成现实世界逼真图像的能力来解决模糊任务的想法。 
+
+---
+# SemanticScanpath: Combining Gaze and Speech for Situated Human-Robot Interaction Using LLMs 
+
+**Title (ZH)**: 语义扫描路径：结合凝视和语音的基于LLM的 Situated 人机互动 
+
+**Authors**: Elisabeth Menendez, Michael Gienger, Santiago Martínez, Carlos Balaguer, Anna Belardinelli  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16548)  
+
+**Abstract**: Large Language Models (LLMs) have substantially improved the conversational capabilities of social robots. Nevertheless, for an intuitive and fluent human-robot interaction, robots should be able to ground the conversation by relating ambiguous or underspecified spoken utterances to the current physical situation and to the intents expressed non verbally by the user, for example by using referential gaze. Here we propose a representation integrating speech and gaze to enable LLMs to obtain higher situated awareness and correctly resolve ambiguous requests. Our approach relies on a text-based semantic translation of the scanpath produced by the user along with the verbal requests and demonstrates LLM's capabilities to reason about gaze behavior, robustly ignoring spurious glances or irrelevant objects. We validate the system across multiple tasks and two scenarios, showing its generality and accuracy, and demonstrate its implementation on a robotic platform, closing the loop from request interpretation to execution. 
+
+**Abstract (ZH)**: 大型语言模型（LLMs）大幅增强了社会机器人的对话能力。然而，为了实现直观自然的人机交互，机器人需要通过将模糊或描述不足的语音表达与当前物理环境相关联，并通过参考凝视等非言语方式表达的意图，来实现场景相关的对话理解。在此，我们提出了一种结合语音和凝视的表示方法，以使LLM获得更高的场境意识并正确解析模糊请求。我们的方法依赖于对用户在产生扫描路径的同时提出的口头请求进行基于文本的语义转换，并展示了LLM推理凝视行为的能力，能够稳健地忽略无效凝视或无关对象。我们在多个任务和两种场景下验证了该系统，展示了其通用性和准确性，并通过机器人平台实现了从请求解析到执行的闭环过程。 
+
+---
+# Adaptive Drift Compensation for Soft Sensorized Finger Using Continual Learning 
+
+**Title (ZH)**: 基于持续学习的软传感器化手指自适应漂移补偿 
+
+**Authors**: Nilay Kushawaha, Radan Pathan, Niccolò Pagliarani, Matteo Cianchetti, Egidio Falotico  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16540)  
+
+**Abstract**: Strain sensors are gaining popularity in soft robotics for acquiring tactile data due to their flexibility and ease of integration. Tactile sensing plays a critical role in soft grippers, enabling them to safely interact with unstructured environments and precisely detect object properties. However, a significant challenge with these systems is their high non-linearity, time-varying behavior, and long-term signal drift. In this paper, we introduce a continual learning (CL) approach to model a soft finger equipped with piezoelectric-based strain sensors for proprioception. To tackle the aforementioned challenges, we propose an adaptive CL algorithm that integrates a Long Short-Term Memory (LSTM) network with a memory buffer for rehearsal and includes a regularization term to keep the model's decision boundary close to the base signal while adapting to time-varying drift. We conduct nine different experiments, resetting the entire setup each time to demonstrate signal drift. We also benchmark our algorithm against two other methods and conduct an ablation study to assess the impact of different components on the overall performance. 
+
+**Abstract (ZH)**: 基于应变传感器的软手指连续学习方法研究 
+
+---
+# A Digital Twin Simulator of a Pastillation Process with Applications to Automatic Control based on Computer Vision 
+
+**Title (ZH)**: 基于计算机视觉的 Pastillation 过程数字孪生仿真器及其自动控制应用 
+
+**Authors**: Leonardo D. González, Joshua L. Pulsipher, Shengli Jiang, Tyler Soderstrom, Victor M. Zavala  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16539)  
+
+**Abstract**: We present a digital-twin simulator for a pastillation process. The simulation framework produces realistic thermal image data of the process that is used to train computer vision-based soft sensors based on convolutional neural networks (CNNs); the soft sensors produce output signals for temperature and product flow rate that enable real-time monitoring and feedback control. Pastillation technologies are high-throughput devices that are used in a broad range of industries; these processes face operational challenges such as real-time identification of clog locations (faults) in the rotating shell and the automatic, real-time adjustment of conveyor belt speed and operating conditions to stabilize output. The proposed simulator is able to capture this behavior and generates realistic data that can be used to benchmark different algorithms for image processing and different control architectures. We present a case study to illustrate the capabilities; the study explores behavior over a range of equipment sizes, clog locations, and clog duration. A feedback controller (tuned using Bayesian optimization) is used to adjust the conveyor belt speed based on the CNN output signal to achieve the desired process outputs. 
+
+**Abstract (ZH)**: 我们提出了一种用于模拟结晶过程的数字孪生模拟器。该模拟框架生成了过程的现实热图像数据，用于基于卷积神经网络（CNN）的软传感器训练；软传感器生成温度和产品流率的输出信号，实现实时监控和反馈控制。结晶技术是高通量设备，广泛应用于多个行业；这些过程面临实时识别旋转壳体内堵塞位置（故障）以及自动、实时调整输送带速度和操作条件以稳定输出的操作挑战。所提出的模拟器能够捕捉这一行为，并生成可用于验证不同图像处理算法和不同控制架构的现实数据。我们提供了一个案例研究以展示其能力；该研究探讨了不同设备尺寸、堵塞位置和堵塞持续时间下的行为。使用基于贝叶斯优化调谐的反馈控制器根据CNN输出信号调整输送带速度，以实现所需的工艺输出。 
+
+---
+# Leveraging Vision-Language Models for Open-Vocabulary Instance Segmentation and Tracking 
+
+**Title (ZH)**: 利用视觉语言模型进行开放词汇实例分割和跟踪 
+
+**Authors**: Bastian Pätzold, Jan Nogga, Sven Behnke  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16538)  
+
+**Abstract**: This paper introduces a novel approach that leverages the capabilities of vision-language models (VLMs) by integrating them with established approaches for open-vocabulary detection (OVD), instance segmentation, and tracking. We utilize VLM-generated structured descriptions to identify visible object instances, collect application-relevant attributes, and inform an open-vocabulary detector to extract corresponding bounding boxes that are passed to a video segmentation model providing precise segmentation masks and tracking capabilities. Once initialized, this model can then directly extract segmentation masks, allowing processing of image streams in real time with minimal computational overhead. Tracks can be updated online as needed by generating new structured descriptions and corresponding open-vocabulary detections. This combines the descriptive power of VLMs with the grounding capability of OVD and the pixel-level understanding and speed of video segmentation. Our evaluation across datasets and robotics platforms demonstrates the broad applicability of this approach, showcasing its ability to extract task-specific attributes from non-standard objects in dynamic environments. 
+
+**Abstract (ZH)**: 本文介绍了一种新颖的方法，通过将视觉语言模型（VLMs）与现有的开放词汇检测（OVD）、实例分割和追踪方法相结合，利用VLM的能力进行可见物体实例的识别、收集应用相关的属性，并指导开放词汇检测器提取相应的边界框，这些边界框随后传递给提供精确分割掩码和追踪能力的视频分割模型。该模型初始化后，可以直接提取分割掩码，实现实时处理图像流并减少计算开销。在线生成新的结构化描述和相应的开放词汇检测结果，可以更新跟踪信息。这种方法结合了VLM的描述能力、OVD的语义 grounding 能力以及视频分割模型的像素级理解和速度。我们在不同数据集和机器人平台上对该方法进行了评估，证明了其在动态环境中的广泛应用能力，特别是在从非标准对象中提取任务特定属性方面的优势。 
+
+---
+# Second-order Theory of Mind for Human Teachers and Robot Learners 
+
+**Title (ZH)**: 二阶Theory of Mind对人体教师和机器人学习者的应用 
+
+**Authors**: Patrick Callaghan, Reid Simmons, Henny Admoni  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16524)  
+
+**Abstract**: Confusing or otherwise unhelpful learner feedback creates or perpetuates erroneous beliefs that the teacher and learner have of each other, thereby increasing the cognitive burden placed upon the human teacher. For example, the robot's feedback might cause the human to misunderstand what the learner knows about the learning objective or how the learner learns. At the same time -- and in addition to the learning objective -- the learner might misunderstand how the teacher perceives the learner's task knowledge and learning processes. To ease the teaching burden, the learner should provide feedback that accounts for these misunderstandings and elicits efficient teaching from the human. This work endows an AI learner with a Second-order Theory of Mind that models perceived rationality as a source for the erroneous beliefs a teacher and learner may have of one another. It also explores how a learner can ease the teaching burden and improve teacher efficacy if it selects feedback which accounts for its model of the teacher's beliefs about the learner and its learning objective. 
+
+**Abstract (ZH)**: 混淆或无用的学习者反馈会创造出或维持教师和学习者彼此之间的错误信念，从而增加对人类教师的认知负担。例如，机器人的反馈可能会导致人类误解学习者对学习目标的理解程度或学习方式。同时，除了学习目标外，学习者可能会误解教师对其任务知识和学习过程的看法。为了减轻教学负担，学习者应提供能够解释这些误解并促使人类进行高效教学的反馈。本文赋予人工智能学习者一种二阶心智理论，该理论将感知理性视为教师和学习者彼此之间可能持有的错误信念的来源。同时探讨了学习者如何通过选择能够反映其对教师关于学习者及其学习目标信念的反馈来减轻教学负担并提高教师的有效性。 
+
+---
+# Multimodal Sensing and Machine Learning to Compare Printed and Verbal Assembly Instructions Delivered by a Social Robot 
+
+**Title (ZH)**: 多模态传感与机器学习比较社交机器人提供的印刷版和口头装配指令 
+
+**Authors**: Ruchik Mishra, Laksita Prasanna, Adair Adair, Dan O Popa  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16512)  
+
+**Abstract**: In this paper, we compare a manual assembly task communicated to workers using both printed and robot-delivered instructions. The comparison was made using physiological signals (blood volume pulse (BVP) and electrodermal activity (EDA)) collected from individuals during an experimental study. In addition, we also collected responses of individuals using the NASA Task Load Index (TLX) survey. Furthermore, we mapped the collected physiological signals to the responses of participants for NASA TLX to predict their workload. For both the classification problems, we compare the performance of Convolutional Neural Networks (CNNs) and Long-Short-Term Memory (LSTM) models. Results show that for our CNN-based approach using multimodal data (both BVP and EDA) gave better results than using just BVP (approx. 8.38% more) and EDA (approx 20.49% more). Our LSTM-based model too had better results when we used multimodal data (approx 8.38% more than just BVP and 6.70% more than just EDA). Overall, CNNs performed better than LSTMs for classifying physiologies for paper vs robot-based instruction by 7.72%. The CNN-based model was able to give better classification results (approximately 17.83% more on an average across all responses of the NASA TLX) within a few minutes of training compared to the LSTM-based models. 
+
+**Abstract (ZH)**: 基于印刷与机器人传达指令的人工装配任务生理信号对比研究 
+
+---
+# The Impact of VR and 2D Interfaces on Human Feedback in Preference-Based Robot Learning 
+
+**Title (ZH)**: 基于偏好的机器人学习中VR和2D界面的人类反馈影响 
+
+**Authors**: Jorge de Heuvel, Daniel Marta, Simon Holk, Iolanda Leite, Maren Bennewitz  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16500)  
+
+**Abstract**: Aligning robot navigation with human preferences is essential for ensuring comfortable and predictable robot movement in shared spaces, facilitating seamless human-robot coexistence. While preference-based learning methods, such as reinforcement learning from human feedback (RLHF), enable this alignment, the choice of the preference collection interface may influence the process. Traditional 2D interfaces provide structured views but lack spatial depth, whereas immersive VR offers richer perception, potentially affecting preference articulation. This study systematically examines how the interface modality impacts human preference collection and navigation policy alignment. We introduce a novel dataset of 2,325 human preference queries collected through both VR and 2D interfaces, revealing significant differences in user experience, preference consistency, and policy outcomes. Our findings highlight the trade-offs between immersion, perception, and preference reliability, emphasizing the importance of interface selection in preference-based robot learning. The dataset will be publicly released to support future research. 
+
+**Abstract (ZH)**: 基于接口模态的人类偏好收集及其对机器人导航策略对齐的影响：一项系统的VR与2D界面比较研究 
+
+---
+# Stakeholder Perspectives on Whether and How Social Robots Can Support Mediation and Advocacy for Higher Education Students with Disabilities 
+
+**Title (ZH)**: 社会机器人在支持高等教育残疾人学生调解与倡导方面的视角研究 
+
+**Authors**: Alva Markelius, Julie Bailey, Jenny L. Gibson, Hatice Gunes  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16499)  
+
+**Abstract**: This paper presents an iterative, participatory, empirical study that examines the potential of using artificial intelligence, such as social robots and large language models, to support mediation and advocacy for students with disabilities in higher education. Drawing on qualitative data from interviews and focus groups conducted with various stakeholders, including disabled students, disabled student representatives, and disability practitioners at the University of Cambridge, this study reports findings relating to understanding the problem space, ideating robotic support and participatory co-design of advocacy support robots. The findings highlight the potential of these technologies in providing signposting and acting as a sounding board or study companion, while also addressing limitations in empathic understanding, trust, equity, and accessibility. We discuss ethical considerations, including intersectional biases, the double empathy problem, and the implications of deploying social robots in contexts shaped by structural inequalities. Finally, we offer a set of recommendations and suggestions for future research, rethinking the notion of corrective technological interventions to tools that empower and amplify self-advocacy. 
+
+**Abstract (ZH)**: 本文介绍了迭代的、参与式的实证研究，探讨了使用人工智能（如社会机器人和大型语言模型）支持高等教育中残障学生调解与倡导的潜力。基于剑桥大学不同利益相关者（包括残障学生、残障学生代表和残障实践者）的访谈和焦点小组定性数据，本研究报告了关于理解问题范围、构思机器人支持以及共同设计倡导支持机器人的研究成果。研究结果强调了这些技术在提供方向指引和充当倾听者或学习伙伴方面的潜力，同时也指出了在同理心理解、信任、公平性和可访问性方面存在的限制。本文讨论了伦理考虑，包括交叉偏见、同理心困境以及在结构不平等背景下部署社会机器人的影响。最后，本文提出了对未来研究的建议，并重新思考矫治性技术干预的概念，将其转变为能够赋能和放大自我倡导的工具。 
+
+---
+# Uncertainty Expression for Human-Robot Task Communication 
+
+**Title (ZH)**: 人类-机器人任务通信中的不确定性表达 
+
+**Authors**: David Porfirio, Mark Roberts, Laura M. Hiatt  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16493)  
+
+**Abstract**: An underlying assumption of many existing approaches to human-robot task communication is that the robot possesses a sufficient amount of environmental domain knowledge, including the locations of task-critical objects. This assumption is unrealistic if the locations of known objects change or have not yet been discovered by the robot. In this work, our key insight is that in many scenarios, robot end users possess more scene insight than the robot and need ways to express it. Presently, there is a lack of research on how solutions for collecting end-user scene insight should be designed. We thereby created an Uncertainty Expression System (UES) to investigate how best to elicit end-user scene insight. The UES allows end users to convey their knowledge of object uncertainty using either: (1) a precision interface that allows meticulous expression of scene insight; (2) a painting interface by which users create a heat map of possible object locations; and (3) a ranking interface by which end users express object locations via an ordered list. We then conducted a user study to compare the effectiveness of these approaches based on the accuracy of scene insight conveyed to the robot, the efficiency at which end users are able to express this scene insight, and both usability and task load. Results indicate that the rank interface is more user friendly and efficient than the precision interface, and that the paint interface is the least accurate. 
+
+**Abstract (ZH)**: 许多现有的人机任务交互方法假设机器人具有关于环境领域知识的足够了解，包括任务关键对象的位置。如果已知对象的位置发生变化或尚未被机器人发现，这种假设是不现实的。在本工作中，我们关键的洞察是，在许多场景中，机器人终端用户比机器人拥有更多的场景洞察，并需要表达这些洞察的方法。目前，有关如何设计收集终端用户场景洞察的解决方案的研究很少。因此，我们创建了一个不确定性表达系统（UES）以调查如何最有效地唤起终端用户的场景洞察。UES允许终端用户使用以下方式传达他们对物体不确定性的认知：(1) 精确接口，允许细致地表达场景洞察；(2) 绘画接口，用户可以通过创建可能物体位置的热力图来表达；(3) 排序接口，终端用户通过有序列表来表达物体的位置。然后，我们进行了一项用户体验研究，比较了这些方法的有效性，基于传达给机器人的场景洞察准确性、终端用户表达这种场景洞察的效率以及可使用性和任务负载。研究结果表明，排序接口比精确接口更用户友好和高效，而绘画接口准确性最低。 
+
+---
+# FAM-HRI: Foundation-Model Assisted Multi-Modal Human-Robot Interaction Combining Gaze and Speech 
+
+**Title (ZH)**: FAM-HRI: 基于基础模型的多模态人机交互融合注视与语音 
+
+**Authors**: Yuzhi Lai, Shenghai Yuan, Boya Zhang, Benjamin Kiefer, Peizheng Li, Andreas Zell  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16492)  
+
+**Abstract**: Effective Human-Robot Interaction (HRI) is crucial for enhancing accessibility and usability in real-world robotics applications. However, existing solutions often rely on gestures or language commands, making interaction inefficient and ambiguous, particularly for users with physical impairments. In this paper, we introduce FAM-HRI, an efficient multi-modal framework for human-robot interaction that integrates language and gaze inputs via foundation models. By leveraging lightweight Meta ARIA glasses, our system captures real-time multi-modal signals and utilizes large language models (LLMs) to fuse user intention with scene context, enabling intuitive and precise robot manipulation. Our method accurately determines gaze fixation time interval, reducing noise caused by the gaze dynamic nature. Experimental evaluations demonstrate that FAM-HRI achieves a high success rate in task execution while maintaining a low interaction time, providing a practical solution for individuals with limited physical mobility or motor impairments. 
+
+**Abstract (ZH)**: 有效的多模态人机交互（FAM-HRI）对于增强实时机器人应用中的可达性和易用性至关重要。然而，现有的解决方案往往依赖于手势或语言命令，使交互不够高效和明确，特别是在物理受限的用户中。本文提出了一种基于基础模型整合语言和注视输入的高效多模态人机交互框架FAM-HRI。通过利用轻量级的Meta ARIA眼镜，我们的系统捕捉实时多模态信号，并利用大规模语言模型（LLMs）融合用户意图与场景上下文，实现直观精准的机器人操作。该方法准确确定注视固定时间间隔，减少由注视动态特性引起的噪声。实验评估表明，FAM-HRI在执行任务方面具有很高的成功率并维持较低的交互时间，为行动受限或有运动障碍的个体提供了一种实用的解决方案。 
+
+---
+# Inclusive STEAM Education: A Framework for Teaching Cod-2 ing and Robotics to Students with Visually Impairment Using 3 Advanced Computer Vision 
+
+**Title (ZH)**: 包容性STEAM教育：面向视觉 impairment 学生的高级计算机视觉技术下的编程与机器人教学框架 
+
+**Authors**: Mahmoud Hamash, Md Raqib Khan, Peter Tiernan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16482)  
+
+**Abstract**: STEAM education integrates Science, Technology, Engineering, Arts, and Mathematics to foster creativity and problem-solving. However, students with visual impairments (VI) encounter significant challenges in programming and robotics, particularly in tracking robot movements and developing spatial awareness. This paper presents a framework that leverages pre-constructed robots and algorithms, such as maze-solving techniques, within an accessible learning environment. The proposed system employs Contrastive Language-Image Pre-training (CLIP) to process global camera-captured maze layouts, converting visual data into textual descriptions that generate spatial audio prompts in an Audio Virtual Reality (AVR) system. Students issue verbal commands, which are refined through CLIP, while robot-mounted stereo cameras provide real-time data processed via Simultaneous Localization and Mapping (SLAM) for continuous feedback. By integrating these technologies, the framework empowers VI students to develop coding skills and engage in complex problem-solving tasks. Beyond maze-solving applications, this approach demonstrates the broader potential of computer vision in special education, contributing to improved accessibility and learning experiences in STEAM disciplines. 
+
+**Abstract (ZH)**: STEAM教育融合科学、技术、工程、艺术和数学以促进创造力和解决问题的能力，但视觉障碍（VI）学生在编程和机器人技术方面面临重大挑战，特别是在追踪机器人运动和培养空间意识方面。本文提出了一种框架，利用预制机器人和算法，如迷宫求解技术，在无障碍学习环境中运用。所提议的系统采用对比语言-图像预训练（CLIP）处理全局摄像头捕获的迷宫布局，将视觉数据转换成文本描述，在音频虚拟现实（AVR）系统中生成空间音频提示。学生发出口头命令，通过CLIP进行优化，同时，安装在机器人上的立体摄像头提供通过即时定位与地图构建（SLAM）处理的实时数据，以实现持续反馈。通过整合这些技术，该框架使视觉障碍学生能够发展编程技能并参与复杂的解决问题任务。除了迷宫求解应用，该方法展示了计算机视觉在特殊教育领域的更广泛潜力，有助于提高STEAM学科中的无障碍性和学习体验。 
+
+---
+# Pedestrians and Robots: A Novel Dataset for Learning Distinct Social Navigation Forces 
+
+**Title (ZH)**: 行人与机器人：一种学习独特社会导航力的新型数据集 
+
+**Authors**: Subham Agrawal, Nico Ostermann-Myrau, Nils Dengler, Maren Bennewitz  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16481)  
+
+**Abstract**: The increasing use of robots in human-centric public spaces such as shopping malls, sidewalks, and hospitals, requires understanding of how pedestrians respond to their presence. However, existing research lacks comprehensive datasets that capture the full range of pedestrian behaviors, e.g., including avoidance, neutrality, and attraction in the presence of robots. Such datasets can be used to effectively learn models capable of accurately predicting diverse responses of pedestrians to robot presence, which are crucial for advancing robot navigation strategies and optimizing pedestrian-aware motion planning. In this paper, we address these challenges by collecting a novel dataset of pedestrian motion in two outdoor locations under three distinct conditions, i.e., no robot presence, a stationary robot, and a moving robot. Thus, unlike existing datasets, ours explicitly encapsulates variations in pedestrian behavior across the different robot conditions. Using our dataset, we propose a novel Neural Social Robot Force Model (NSRFM), an extension of the traditional Social Force Model that integrates neural networks and robot-induced forces to better predict pedestrian behavior in the presence of robots. We validate the NSRFM by comparing its generated trajectories on different real-world datasets. Furthermore, we implemented it in simulation to enable the learning and benchmarking of robot navigation strategies based on their impact on pedestrian movement. Our results demonstrate the model's effectiveness in replicating real-world pedestrian reactions and its its utility in developing, evaluating, and benchmarking social robot navigation algorithms. 
+
+**Abstract (ZH)**: 机器人在购物中心、人行道和医院等以人为中心的公共空间中的广泛应用要求我们理解行人对其存在响应的方式。但是，现有的研究缺乏能够捕捉行人行为全范围的综合数据集，例如包含避免、中立和吸引等行为。此类数据集可以用于有效地学习能够准确预测行人对机器人存在反应模型，这对于推进机器人导航策略和优化行人aware运动规划至关重要。本文通过在两个室外地点在三种不同的条件下收集行人运动的新数据集来应对这些挑战，即无机器人存在、静止机器人和移动机器人。因此，与现有的数据集不同，我们的数据集明确包含了不同机器人条件下的行人行为变化。利用该数据集，我们提出了一种新型的神经社会机器人力模型（NSRFM），它是传统社会力模型的扩展，结合了神经网络和机器人引起的力以更好地预测机器人的存在下行人的行为。通过将NSRFM在不同的真实世界数据集上生成的轨迹进行对比验证，我们进一步在模拟中实现该模型，以通过其对行人移动的影响来学习和基准测试机器人导航策略。我们的结果表明该模型在复制真实世界行人反应方面的效果以及其在开发、评估和基准测试社会机器人导航算法方面的实用性。 
+
+---
+# Simulation-based Testing of Foreseeable Misuse by the Driver applicable for Highly Automated Driving 
+
+**Title (ZH)**: 基于仿真测试的可预见驾驶员滥用性分析适用于高度自动驾驶 systems 
+
+**Authors**: Milin Patel, Rolf Jung, Yasin Cakir  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16479)  
+
+**Abstract**: With Highly Automated Driving (HAD), the driver can engage in non-driving-related tasks. In the event of a system failure, the driver is expected to reasonably regain control of the Automated Vehicle (AV). Incorrect system understanding may provoke misuse by the driver and can lead to vehicle-level hazards. ISO 21448, referred to as the standard for Safety of the Intended Functionality (SOTIF), defines misuse as usage of the system by the driver in a way not intended by the system manufacturer. Foreseeable Misuse (FM) implies anticipated system misuse based on the best knowledge about the system design and the driver behaviour. This is the underlying motivation to propose simulation-based testing of FM. The vital challenge is to perform a simulation-based testing for a SOTIF-related misuse scenario. Transverse Guidance Assist System (TGAS) is modelled for HAD. In the context of this publication, TGAS is referred to as the "system," and the driver is the human operator of the system. This publication focuses on implementing the Driver-Vehicle Interface (DVI) that permits the interactions between the driver and the system. The implementation and testing of a derived misuse scenario using the driving simulator ensure reasonable usage of the system by supporting the driver with unambiguous information on system functions and states so that the driver can conveniently perceive, comprehend, and act upon the information. 
+
+**Abstract (ZH)**: 基于仿真测试的.Forward Safety of the Intended Functionality 中可预见滥用场景的实施与测试 
+
+---
+# Injecting Conflict Situations in Autonomous Driving Simulation using CARLA 
+
+**Title (ZH)**: 在自主驾驶模拟中注入冲突场景的CARLA方法 
+
+**Authors**: Tsvetomila Mihaylova, Stefan Reitmann, Elin A. Topp, Ville Kyrki  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16476)  
+
+**Abstract**: Simulation of conflict situations for autonomous driving research is crucial for understanding and managing interactions between Automated Vehicles (AVs) and human drivers. This paper presents a set of exemplary conflict scenarios in CARLA that arise in shared autonomy settings, where both AVs and human drivers must navigate complex traffic environments. We explore various conflict situations, focusing on the impact of driver behavior and decision-making processes on overall traffic safety and efficiency. We build a simple extendable toolkit for situation awareness research, in which the implemented conflicts can be demonstrated. 
+
+**Abstract (ZH)**: 自主驾驶研究中基于CARLA的冲突情况仿真对于理解和管理自动驾驶车辆（AVs）与人类驾驶员之间的交互至关重要。本文介绍了共享自主驾驶设置下在CARLA中出现的若干典型冲突场景，探讨了驾驶员行为和决策过程对整体交通安全性与效率的影响，并构建了一个简单的可扩展工具箱用于情景意识研究，展示了已实现的冲突情景。 
+
+---
+# LLM-Glasses: GenAI-driven Glasses with Haptic Feedback for Navigation of Visually Impaired People 
+
+**Title (ZH)**: LLM-眼镜：基于GenAI的配备触觉反馈的盲人导航眼镜 
+
+**Authors**: Issatay Tokmurziyev, Miguel Altamirano Cabrera, Muhammad Haris Khan, Yara Mahmoud, Luis Moreno, Dzmitry Tsetserukou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16475)  
+
+**Abstract**: We present LLM-Glasses, a wearable navigation system designed to assist visually impaired individuals by combining haptic feedback, YOLO-World object detection, and GPT-4o-driven reasoning. The system delivers real-time tactile guidance via temple-mounted actuators, enabling intuitive and independent navigation. Three user studies were conducted to evaluate its effectiveness: (1) a haptic pattern recognition study achieving an 81.3% average recognition rate across 13 distinct patterns, (2) a VICON-based navigation study in which participants successfully followed predefined paths in open spaces, and (3) an LLM-guided video evaluation demonstrating 91.8% accuracy in open scenarios, 84.6% with static obstacles, and 81.5% with dynamic obstacles. These results demonstrate the system's reliability in controlled environments, with ongoing work focusing on refining its responsiveness and adaptability to diverse real-world scenarios. LLM-Glasses showcases the potential of combining generative AI with haptic interfaces to empower visually impaired individuals with intuitive and effective mobility solutions. 
+
+**Abstract (ZH)**: LLM-Glasses：一种结合触觉反馈、YOLO-World物体检测和GPT-4驱动推理的可穿戴导航系统 
+
+---
+# PERCY: Personal Emotional Robotic Conversational System 
+
+**Title (ZH)**: PERCY：个性化情感机器人对话系统 
+
+**Authors**: Zhijin Meng, Mohammed Althubyani, Shengyuan Xie, Imran Razzak, Eduardo B. Sandoval, Mahdi Bamdad, Francisco Cruz  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16473)  
+
+**Abstract**: Traditional rule-based conversational robots, constrained by predefined scripts and static response mappings, fundamentally lack adaptability for personalized, long-term human interaction. While Large Language Models (LLMs) like GPT-4 have revolutionized conversational AI through open-domain capabilities, current social robots implementing LLMs still lack emotional awareness and continuous personalization. This dual limitation hinders their ability to sustain engagement across multiple interaction sessions. We bridge this gap with PERCY (Personal Emotional Robotic Conversational sYstem), a system designed to enable open-domain, multi-turn dialogues by dynamically analyzing users' real-time facial expressions and vocabulary to tailor responses based on their emotional state. Built on a ROS-based multimodal framework, PERCY integrates a fine-tuned GPT-4 reasoning engine, combining textual sentiment analysis with visual emotional cues to accurately assess and respond to user emotions. We evaluated PERCY's performance through various dialogue quality metrics, showing strong coherence, relevance, and diversity. Human evaluations revealed PERCY's superior personalization and comparable naturalness to other models. This work highlights the potential for integrating advanced multimodal perception and personalization in social robot dialogue systems. 
+
+**Abstract (ZH)**: 基于高级多模态感知和个性化设计的社交机器人对话系统潜力 
+
+---
+# Enhancing Human-Robot Interaction in Healthcare: A Study on Nonverbal Communication Cues and Trust Dynamics with NAO Robot Caregivers 
+
+**Title (ZH)**: 增强医疗领域的人机交互：关于NAO机器人护理助手的非言语沟通线索与信任动态研究 
+
+**Authors**: S M Taslim Uddin Raju  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16469)  
+
+**Abstract**: As the population of older adults increases, so will the need for both human and robot care providers. While traditional practices involve hiring human caregivers to serve meals and attend to basic needs, older adults often require continuous companionship and health monitoring. However, hiring human caregivers for this job costs a lot of money. However, using a robot like Nao could be cheaper and still helpful. This study explores the integration of humanoid robots, particularly Nao, in health monitoring and caregiving for older adults. Using a mixed-methods approach with a within-subject factorial design, we investigated the effectiveness of nonverbal communication modalities, including touch, gestures, and LED patterns, in enhancing human-robot interactions. Our results indicate that Nao's touch-based health monitoring was well-received by participants, with positive ratings across various dimensions. LED patterns were perceived as more effective and accurate compared to hand and head gestures. Moreover, longer interactions were associated with higher trust levels and perceived empathy, highlighting the importance of prolonged engagement in fostering trust in human-robot interactions. Despite limitations, our study contributes valuable insights into the potential of humanoid robots to improve health monitoring and caregiving for older adults. 
+
+**Abstract (ZH)**: 随着老年人口的增加，对人类和机器人护理提供者的需要也将增加。虽然传统做法是雇佣人类护理人员提供餐饮服务和处理基本需求，但老年人往往还需要持续的陪伴和健康监测。然而，雇佣人类护理人员成本较高。然而，使用像Nao这样的机器人可能是更经济且仍然有效的选择。本研究探讨了将类人机器人，特别是Nao，集成到老年人健康监测和护理中的可能性。采用混合方法并采用被试内因子设计，我们调查了触摸、手势和LED模式等非言语交流模式对增强人机互动的有效性。研究结果表明，Nao基于触摸的健康监测得到了参与者的积极评价，各项指标均表现良好。与手部和头部手势相比，LED模式被认为更有效且更准确。此外，更长的互动时间与更高的信任感和感知到的同理心相关，强调了在培养人机互动中建立信任的重要性。尽管存在局限性，但本研究为类人机器人在改善老年人健康监测和护理方面的潜力提供了有价值的观点。 
+
+---
+# Enhancing Explainability with Multimodal Context Representations for Smarter Robots 
+
+**Title (ZH)**: 增强解释性以实现更智能的机器人：基于多模态上下文表示的方法 
+
+**Authors**: Anargh Viswanath, Lokesh Veeramacheneni, Hendrik Buschmeier  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16467)  
+
+**Abstract**: Artificial Intelligence (AI) has significantly advanced in recent years, driving innovation across various fields, especially in robotics. Even though robots can perform complex tasks with increasing autonomy, challenges remain in ensuring explainability and user-centered design for effective interaction. A key issue in Human-Robot Interaction (HRI) is enabling robots to effectively perceive and reason over multimodal inputs, such as audio and vision, to foster trust and seamless collaboration. In this paper, we propose a generalized and explainable multimodal framework for context representation, designed to improve the fusion of speech and vision modalities. We introduce a use case on assessing 'Relevance' between verbal utterances from the user and visual scene perception of the robot. We present our methodology with a Multimodal Joint Representation module and a Temporal Alignment module, which can allow robots to evaluate relevance by temporally aligning multimodal inputs. Finally, we discuss how the proposed framework for context representation can help with various aspects of explainability in HRI. 
+
+**Abstract (ZH)**: 人工智能（AI）在Recent Years显著进步，特别是在机器人领域推动了创新。尽管机器人能够执行日益复杂且自主的任务，但在确保交互的解释性与用户中心设计方面依然面临挑战。在人类-机器人交互（HRI）中，一个核心问题是使机器人能够有效地处理和推理来自多模态输入（如音频和视觉）的信息，以促进信任和无缝协作。在本文中，我们提出了一种通用且可解释的多模态框架，用于上下文表示，旨在改进语音和视觉模态的融合。我们引入了一个评估用户口头陈述与机器人视觉场景感知之间“相关性”的用例。我们展示了包含多模态联合表示模块和时间对齐模块的方法，使机器人能够通过时间对齐多模态输入来评估相关性。最后，我们讨论了所提出的情境表示框架如何在HRI中的各个方面促进可解释性。 
+
+---
+# The Realization of Virtual Environments in the Lower Limb Exoskeletal Robot 
+
+**Title (ZH)**: 下肢外骨骼机器人中虚拟环境的实现 
+
+**Authors**: Minsu Chang, Doyoung Jeon  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16459)  
+
+**Abstract**: This study proposes the realization of various virtual environments using a lower limb exoskeletal robot for futuristic gait rehabilitation. The proposed method allows the user to feel virtual gravity, buoyancy, and drag while actively walking. The virtual environments include four fluidic conditions: Water, Olive oil, Honey, and Peanut Butter, and four gravitational conditions consisting of the Earth's, Moon's, Mars', and Jupiter's gravity. The control method of the lower limb exoskeletal robot is as follows. First, torque feedback is applied to control the interaction force between the exoskeletal robot and its user. Second, the reference torque is computed in real time with the dynamic equations of the human body and the kinematic data. The eight environments were implemented via the EXOWheel, a wheelchair-integrated lower limb exoskeletal robot. While attaching electromyography sensors and wearing the EXOWheel, eight healthy subjects walked actively under the virtual conditions. Experimental results show that muscular force signals adequately change depending on gravitational, buoyant, and drag effects. Blind tests confirmed that subjects could reliably distinguish all eight virtual environments. 
+
+**Abstract (ZH)**: 本研究提出了一种利用下肢外骨骼机器人实现各种虚拟环境以进行未来步态康复的方法。该方法允许用户在主动行走时感受到虚拟的重力、浮力和阻力。虚拟环境包括四种流体条件：水、橄榄油、蜂蜜和花生酱，以及四种重力条件：地球、月球、火星和木星的重力。下肢外骨骼机器人的控制方法如下：首先，应用扭矩反馈来控制外骨骼机器人与其用户的交互力；其次，根据人体动力学方程和运动数据实时计算参考扭矩。这八种环境通过集成轮椅的下肢单元外骨骼机器人（EXOWheel）实现。佩戴EMG传感器并使用EXOWheel，八名健康受试者在虚拟条件下进行了主动行走。实验结果表明，肌肉力信号根据重力、浮力和阻力效应进行了适当变化。盲测结果证实，受试者能够可靠地区分所有八种虚拟环境。 
+
+---
+# Think-Then-React: Towards Unconstrained Human Action-to-Reaction Generation 
+
+**Title (ZH)**: 思考后再反应：迈向不受约束的人类动作-反应生成 
+
+**Authors**: Wenhui Tan, Boyuan Li, Chuhao Jin, Wenbing Huang, Xiting Wang, Ruihua Song  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16451)  
+
+**Abstract**: Modeling human-like action-to-reaction generation has significant real-world applications, like human-robot interaction and games. Despite recent advancements in single-person motion generation, it is still challenging to well handle action-to-reaction generation, due to the difficulty of directly predicting reaction from action sequence without prompts, and the absence of a unified representation that effectively encodes multi-person motion. To address these challenges, we introduce Think-Then-React (TTR), a large language-model-based framework designed to generate human-like reactions. First, with our fine-grained multimodal training strategy, TTR is capable to unify two processes during inference: a thinking process that explicitly infers action intentions and reasons corresponding reaction description, which serve as semantic prompts, and a reacting process that predicts reactions based on input action and the inferred semantic prompts. Second, to effectively represent multi-person motion in language models, we propose a unified motion tokenizer by decoupling egocentric pose and absolute space features, which effectively represents action and reaction motion with same encoding. Extensive experiments demonstrate that TTR outperforms existing baselines, achieving significant improvements in evaluation metrics, such as reducing FID from 3.988 to 1.942. 
+
+**Abstract (ZH)**: 基于大型语言模型的人类级动作-反应生成模型在人机交互和游戏等领域具有重要的现实应用价值。尽管在单人动作生成方面取得了 recent 进步，但在没有提示的情况下直接从动作序列预测反应仍然具有挑战性，且缺乏一种统一的表示方式有效编码多人体动。为解决这些挑战，我们引入了 Think-Then-React (TTR) 框架，一种基于大型语言模型的设计用于生成人类级反应。首先，借助我们细粒度的多模态训练策略，TTR 能够在推断过程中统一两个过程：一个思考过程，明确推断动作意图并生成相应的反应描述作为语义提示，和一个反应过程，基于输入的动作和推断出的语义提示预测反应。其次，为了在语言模型中有效表示多人体动，我们提出了一种统一的运动分词器，通过解耦第一人称姿态和绝对空间特征，能够使用相同的编码有效地表示动作和反应运动。广泛的实验表明，TTR 在基准性能上表现出色，显著提高了评估指标，例如将 FID 从 3.988 降低到 1.942。 
+
+---
+# Do Looks Matter? Exploring Functional and Aesthetic Design Preferences for a Robotic Guide Dog 
+
+**Title (ZH)**: 外观重要吗？探究机器人导盲犬的功能性和美学设计偏好 
+
+**Authors**: Aviv L. Cohav, A. Xinran Gong, J. Taery Kim, Clint Zeagler, Sehoon Ha, Bruce N. Walker  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16450)  
+
+**Abstract**: Dog guides offer an effective mobility solution for blind or visually impaired (BVI) individuals, but conventional dog guides have limitations including the need for care, potential distractions, societal prejudice, high costs, and limited availability. To address these challenges, we seek to develop a robot dog guide capable of performing the tasks of a conventional dog guide, enhanced with additional features. In this work, we focus on design research to identify functional and aesthetic design concepts to implement into a quadrupedal robot. The aesthetic design remains relevant even for BVI users due to their sensitivity toward societal perceptions and the need for smooth integration into society. We collected data through interviews and surveys to answer specific design questions pertaining to the appearance, texture, features, and method of controlling and communicating with the robot. Our study identified essential and preferred features for a future robot dog guide, which are supported by relevant statistics aligning with each suggestion. These findings will inform the future development of user-centered designs to effectively meet the needs of BVI individuals. 
+
+**Abstract (ZH)**: 盲人或视力受损个体的有效移动解决方案——机器人导盲犬的设计研究 
+
+---
+# Mitigating the Uncanny Valley Effect in Hyper-Realistic Robots: A Student-Centered Study on LLM-Driven Conversations 
+
+**Title (ZH)**: 缓解超现实机器人中的 Uncanny Valley 效应：基于学生的 LLM 驱动对话研究 
+
+**Authors**: Hangyeol Kang, Thiago Freitas dos Santos, Maher Ben Moussa, Nadia Magnenat-Thalmann  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16449)  
+
+**Abstract**: The uncanny valley effect poses a significant challenge in the development and acceptance of hyper-realistic social robots. This study investigates whether advanced conversational capabilities powered by large language models (LLMs) can mitigate this effect in highly anthropomorphic robots. We conducted a user study with 80 participants interacting with Nadine, a hyper-realistic humanoid robot equipped with LLM-driven communication skills. Through pre- and post-interaction surveys, we assessed changes in perceptions of uncanniness, conversational quality, and overall user experience. Our findings reveal that LLM-enhanced interactions significantly reduce feelings of eeriness while fostering more natural and engaging conversations. Additionally, we identify key factors influencing user acceptance, including conversational naturalness, human-likeness, and interestingness. Based on these insights, we propose design recommendations to enhance the appeal and acceptability of hyper-realistic robots in social contexts. This research contributes to the growing field of human-robot interaction by offering empirical evidence on the potential of LLMs to bridge the uncanny valley, with implications for the future development of social robots. 
+
+**Abstract (ZH)**: 超真实性社会机器人中拟人化谷效应的先进对话能力缓解研究 
+
+---
+# SHIFT: An Interdisciplinary Framework for Scaffolding Human Attention and Understanding in Explanatory Tasks 
+
+**Title (ZH)**: SHIFT：一个跨学科的人类注意力和理解支架框架在解释性任务中的应用 
+
+**Authors**: André Groß, Birte Richter, Britta Wrede  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16447)  
+
+**Abstract**: In this work, we present a domain-independent approach for adaptive scaffolding in robotic explanation generation to guide tasks in human-robot interaction. We present a method for incorporating interdisciplinary research results into a computational model as a pre-configured scoring system implemented in a framework called SHIFT. This involves outlining a procedure for integrating concepts from disciplines outside traditional computer science into a robotics computational framework. Our approach allows us to model the human cognitive state into six observable states within the human partner model. To study the pre-configuration of the system, we implement a reinforcement learning approach on top of our model. This approach allows adaptation to individuals who deviate from the configuration of the scoring system. Therefore, in our proof-of-concept evaluation, the model's adaptability on four different user types shows that the models' adaptation performs better, i.e., recouped faster after exploration and has a higher accumulated reward with our pre-configured scoring system than without it. We discuss further strategies of speeding up the learning phase to enable a realistic adaptation behavior to real users. The system is accessible through docker and supports querying via ROS. 
+
+**Abstract (ZH)**: 一种领域无关的适应性支撑方法：在机器人解释生成中的应用以指导人机交互任务 
+
+---
+# Enhancing Human-Robot Collaboration through Existing Guidelines: A Case Study Approach 
+
+**Title (ZH)**: 通过现有指南增强人机协作：一个案例研究方法 
+
+**Authors**: Yutaka Matsubara, Akihisa Morikawa, Daichi Mizuguchi, Kiyoshi Fujiwara  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.16436)  
+
+**Abstract**: As AI systems become more prevalent, concerns about their development, operation, and societal impact intensify. Establishing ethical, social, and safety standards amidst evolving AI capabilities poses significant challenges. Global initiatives are underway to establish guidelines for AI system development and operation. With the increasing use of collaborative human-AI task execution, it's vital to continuously adapt AI systems to meet user and environmental needs. Failure to synchronize AI evolution with changes in users and the environment could result in ethical and safety issues. This paper evaluates the applicability of existing guidelines in human-robot collaborative systems, assesses their effectiveness, and discusses limitations. Through a case study, we examine whether our target system meets requirements outlined in existing guidelines and propose improvements to enhance human-robot interactions. Our contributions provide insights into interpreting and applying guidelines, offer concrete examples of system enhancement, and highlight their applicability and limitations. We believe these contributions will stimulate discussions and influence system assurance and certification in future AI-infused critical systems. 
+
+**Abstract (ZH)**: 随着人工智能系统日益普及，对其开发、运行及社会影响的担忧日益增强。在人工智能能力不断演变的背景下，确立伦理、社会和技术安全标准面临着重大挑战。全球正展开行动以制定人工智能系统的开发和运行指南。随着人类与人工智能协作任务执行的不断增加，不断适应人工智能系统以满足用户和环境需求变得至关重要。未能同步人工智能的发展与用户和环境的变化可能导致伦理和安全问题。本文评估现有指南在人机协作系统中的适用性、有效性及其局限性。通过案例研究，我们检查我们的目标系统是否满足现有指南的要求，并提出改进措施以增强人机交互。我们的贡献提供了对指南的理解和应用的见解，提供了系统改进的 concrete 示例，并突显了它们的适用性和局限性。我们认为这些贡献将促进讨论，并在未来融合人工智能的关键系统中影响系统的保证和认证。 
+
+---
