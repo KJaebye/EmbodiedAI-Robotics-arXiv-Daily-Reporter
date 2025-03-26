@@ -1,0 +1,208 @@
+# Visuo-Tactile Object Pose Estimation for a Multi-Finger Robot Hand with Low-Resolution In-Hand Tactile Sensing 
+
+**Title (ZH)**: 基于低分辨率手内触觉传感的多指机器人手视觉-触觉物体姿态估计 
+
+**Authors**: Lukas Mack, Felix Grüninger, Benjamin A. Richardson, Regine Lendway, Katherine J. Kuchenbecker, Joerg Stueckler  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.19893)  
+
+**Abstract**: Accurate 3D pose estimation of grasped objects is an important prerequisite for robots to perform assembly or in-hand manipulation tasks, but object occlusion by the robot's own hand greatly increases the difficulty of this perceptual task. Here, we propose that combining visual information and proprioception with binary, low-resolution tactile contact measurements from across the interior surface of an articulated robotic hand can mitigate this issue. The visuo-tactile object-pose-estimation problem is formulated probabilistically in a factor graph. The pose of the object is optimized to align with the three kinds of measurements using a robust cost function to reduce the influence of visual or tactile outlier readings. The advantages of the proposed approach are first demonstrated in simulation: a custom 15-DoF robot hand with one binary tactile sensor per link grasps 17 YCB objects while observed by an RGB-D camera. This low-resolution in-hand tactile sensing significantly improves object-pose estimates under high occlusion and also high visual noise. We also show these benefits through grasping tests with a preliminary real version of our tactile hand, obtaining reasonable visuo-tactile estimates of object pose at approximately 13.3 Hz on average. 
+
+**Abstract (ZH)**: 准确估计被抓物体的3D姿态是机器人执行装配或手持操作任务的前提，但机器人自身手部的遮挡大大增加了这一感知任务的难度。为此，我们提出将视觉信息与来自机器人articulated手内部表面的二进制、低分辨率触觉接触测量值相结合和 proprioception 结合，可以缓解这一问题。物体姿态的visuo-tactile估计问题通过因子图的概率模型进行表述。使用鲁棒代价函数优化物体的姿态，使其与视觉或触觉测量值对齐，从而减少异常值测量值的影响。提出的这种方法首先在仿真中得到验证：一个自定义的15-DoF机器人手，每个关节连接一个二进制触觉传感器，在一个RGB-D相机的观察下抓取17个YCB物体。这种低分辨率的手内触觉传感在高遮挡和高视觉噪声条件下显著提高了物体姿态估计的准确性。我们还通过一个初步的实体触觉手的抓取测试展示了这些优势，平均以大约13.3 Hz的频率获得合理的visuo-tactile物体姿态估计。 
+
+---
+# Dita: Scaling Diffusion Transformer for Generalist Vision-Language-Action Policy 
+
+**Title (ZH)**: Dita: 面向通用视觉-语言-动作策略的扩散变换器扩展方法 
+
+**Authors**: Zhi Hou, Tianyi Zhang, Yuwen Xiong, Haonan Duan, Hengjun Pu, Ronglei Tong, Chengyang Zhao, Xizhou Zhu, Yu Qiao, Jifeng Dai, Yuntao Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.19757)  
+
+**Abstract**: While recent vision-language-action models trained on diverse robot datasets exhibit promising generalization capabilities with limited in-domain data, their reliance on compact action heads to predict discretized or continuous actions constrains adaptability to heterogeneous action spaces. We present Dita, a scalable framework that leverages Transformer architectures to directly denoise continuous action sequences through a unified multimodal diffusion process. Departing from prior methods that condition denoising on fused embeddings via shallow networks, Dita employs in-context conditioning -- enabling fine-grained alignment between denoised actions and raw visual tokens from historical observations. This design explicitly models action deltas and environmental nuances. By scaling the diffusion action denoiser alongside the Transformer's scalability, Dita effectively integrates cross-embodiment datasets across diverse camera perspectives, observation scenes, tasks, and action spaces. Such synergy enhances robustness against various variances and facilitates the successful execution of long-horizon tasks. Evaluations across extensive benchmarks demonstrate state-of-the-art or comparative performance in simulation. Notably, Dita achieves robust real-world adaptation to environmental variances and complex long-horizon tasks through 10-shot finetuning, using only third-person camera inputs. The architecture establishes a versatile, lightweight and open-source baseline for generalist robot policy learning. Project Page: this https URL. 
+
+**Abstract (ZH)**: 基于变换器架构的可扩展框架Dita：通过统一多模态扩散过程直接去噪连续动作序列 
+
+---
+# DataPlatter: Boosting Robotic Manipulation Generalization with Minimal Costly Data 
+
+**Title (ZH)**: DataPlatter: 以最小代价数据提升机器人 manipulate 通用性 
+
+**Authors**: Liming Zheng, Feng Yan, Fanfan Liu, Chengjian Feng, Yufeng Zhong, Yiyang Huang, Lin Ma  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.19516)  
+
+**Abstract**: The growing adoption of Vision-Language-Action (VLA) models in embodied AI intensifies the demand for diverse manipulation demonstrations. However, high costs associated with data collection often result in insufficient data coverage across all scenarios, which limits the performance of the models. It is observed that the spatial reasoning phase (SRP) in large workspace dominates the failure cases. Fortunately, this data can be collected with low cost, underscoring the potential of leveraging inexpensive data to improve model performance. In this paper, we introduce the DataPlatter method, a framework that decouples training trajectories into distinct task stages and leverages abundant easily collectible SRP data to enhance VLA model's generalization. Through analysis we demonstrate that sub-task-specific training with additional SRP data with proper proportion can act as a performance catalyst for robot manipulation, maximizing the utilization of costly physical interaction phase (PIP) data. Experiments show that through introducing large proportion of cost-effective SRP trajectories into a limited set of PIP data, we can achieve a maximum improvement of 41\% on success rate in zero-shot scenes, while with the ability to transfer manipulation skill to novel targets. 
+
+**Abstract (ZH)**: Vision-Language-Action模型在具身AI中的广泛应用加剧了对多样操作示范的需求。然而，与数据收集相关的高成本常常导致场景覆盖不足，限制了模型性能。观察到，在大工作空间中占主导地位的失败案例主要源于空间推理阶段（SRP）。幸运的是，这些数据可以通过低成本方式收集，强调了利用低成本数据提高模型性能的潜力。本文提出了DataPlatter方法，这是一种将训练轨迹分解为不同任务阶段的框架，利用丰富的易获取的SRP数据来增强VLA模型的泛化能力。分析表明，采用适当比例的SRP数据进行子任务特定训练可以成为机器人操作性能的催化剂，最大化昂贵的物理交互阶段（PIP）数据的利用。实验结果显示，通过在有限的PIP数据集中引入大量成本效益高的SRP轨迹，可以在零样本场景中将成功率最高提高41%，同时具备将操作技能转移至新目标的能力。 
+
+---
+# RoboFlamingo-Plus: Fusion of Depth and RGB Perception with Vision-Language Models for Enhanced Robotic Manipulation 
+
+**Title (ZH)**: RoboFlamingo-Plus：视觉语言模型融合深度和RGB感知以增强机器人操作 
+
+**Authors**: Sheng Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.19510)  
+
+**Abstract**: As robotic technologies advancing towards more complex multimodal interactions and manipulation tasks, the integration of advanced Vision-Language Models (VLMs) has become a key driver in the field. Despite progress with current methods, challenges persist in fusing depth and RGB information within 3D environments and executing tasks guided by linguistic instructions. In response to these challenges, we have enhanced the existing RoboFlamingo framework by introducing RoboFlamingo-Plus, which incorporates depth data into VLMs to significantly improve robotic manipulation performance. Our research achieves a nuanced fusion of RGB and depth information by integrating a pre-trained Vision Transformer (ViT) with a resampling technique, closely aligning this combined data with linguistic cues for superior multimodal understanding. The novelty of RoboFlamingo-Plus lies in its adaptation of inputs for depth data processing, leveraging a pre-trained resampler for depth feature extraction, and employing cross-attention mechanisms for optimal feature integration. These improvements allow RoboFlamingo-Plus to not only deeply understand 3D environments but also easily perform complex, language-guided tasks in challenging settings. Experimental results show that RoboFlamingo-Plus boosts robotic manipulation by 10-20% over current methods, marking a significant advancement. Codes and model weights are public at RoboFlamingo-Plus. 
+
+**Abstract (ZH)**: 随着机器人技术向更复杂的多模态交互和操作任务发展，先进的视觉-语言模型（VLMs）的集成已成为关键驱动力。尽管当前方法取得了一定进展，但在3D环境中融合深度和RGB信息以及执行语言指导的任务仍面临挑战。为应对这些挑战，我们通过引入RoboFlamingo-Plus框架增强了现有的RoboFlamingo框架，将深度数据融入VLMs，显著提高了机器人操作性能。我们的研究通过将预训练的视觉变换器（ViT）与重采样技术相结合，实现了RGB和深度信息的精细融合，使这种结合数据更加紧密地与语言提示对齐，从而实现更优越的多模态理解。RoboFlamingo-Plus的创新之处在于其适应深度数据处理输入的方法，利用预训练的重采样器进行深度特征提取，并采用交叉注意力机制进行最佳特征整合。这些改进使RoboFlamingo-Plus不仅能深刻理解3D环境，还能在复杂环境中轻松执行语言指导的任务。实验结果显示，与当前方法相比，RoboFlamingo-Plus在机器人操作性能上提升了10-20%，标志着一个重要的进步。RoboFlamingo-Plus的代码和模型权重已公开。 
+
+---
+# MM-LINS: a Multi-Map LiDAR-Inertial System for Over-Degenerate Environments 
+
+**Title (ZH)**: MM-LINS：多地图激光雷达-惯性系统用于过度退化环境 
+
+**Authors**: Yongxin Ma, Jie Xu, Shenghai Yuan, Tian Zhi, Wenlu Yu, Jun Zhou, Lihua Xie  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.19506)  
+
+**Abstract**: SLAM plays a crucial role in automation tasks, such as warehouse logistics, healthcare robotics, and restaurant delivery. These scenes come with various challenges, including navigating around crowds of people, dealing with flying plastic bags that can temporarily blind sensors, and addressing reduced LiDAR density caused by cooking smoke. Such scenarios can result in over-degeneracy, causing the map to drift. To address this issue, this paper presents a multi-map LiDAR-inertial system (MM-LINS) for the first time. The front-end employs an iterated error state Kalman filter for state estimation and introduces a reliable evaluation strategy for degeneracy detection. If over-degeneracy is detected, the active map will be stored into sleeping maps. Subsequently, the system continuously attempts to construct new maps using a dynamic initialization method to ensure successful initialization upon leaving the over-degeneracy. Regarding the back-end, the Scan Context descriptor is utilized to detect inter-map similarity. Upon successful recognition of a sleeping map that shares a common region with the active map, the overlapping trajectory region is utilized to constrain the positional transformation near the edge of the prior map. In response to this, a constraint-enhanced map fusion strategy is proposed to achieve high-precision positional and mapping results. Experiments have been conducted separately on both public datasets that exhibited over-degenerate conditions and in real-world environments. These tests demonstrated the effectiveness of MM-LINS in over-degeneracy environment. Our codes are open-sourced on Github. 
+
+**Abstract (ZH)**: SLAM在自动化任务中的多地图激光雷达-惯性系统在过退化环境中的应用 
+
+---
+# Quality-focused Active Adversarial Policy for Safe Grasping in Human-Robot Interaction 
+
+**Title (ZH)**: 面向质量的主动对抗策略以实现人机交互中的安全抓取 
+
+**Authors**: Chenghao Li, Razvan Beuran, Nak Young Chong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.19397)  
+
+**Abstract**: Vision-guided robot grasping methods based on Deep Neural Networks (DNNs) have achieved remarkable success in handling unknown objects, attributable to their powerful generalizability. However, these methods with this generalizability tend to recognize the human hand and its adjacent objects as graspable targets, compromising safety during Human-Robot Interaction (HRI). In this work, we propose the Quality-focused Active Adversarial Policy (QFAAP) to solve this problem. Specifically, the first part is the Adversarial Quality Patch (AQP), wherein we design the adversarial quality patch loss and leverage the grasp dataset to optimize a patch with high quality scores. Next, we construct the Projected Quality Gradient Descent (PQGD) and integrate it with the AQP, which contains only the hand region within each real-time frame, endowing the AQP with fast adaptability to the human hand shape. Through AQP and PQGD, the hand can be actively adversarial with the surrounding objects, lowering their quality scores. Therefore, further setting the quality score of the hand to zero will reduce the grasping priority of both the hand and its adjacent objects, enabling the robot to grasp other objects away from the hand without emergency stops. We conduct extensive experiments on the benchmark datasets and a cobot, showing the effectiveness of QFAAP. Our code and demo videos are available here: this https URL. 
+
+**Abstract (ZH)**: 基于深度神经网络的视觉引导机器人抓取方法在处理未知物体方面取得了显著成功，归因于其强大的泛化能力。然而，具有这种泛化能力的方法倾向于将人类手及其相邻物体识别为可抓取目标，这在人机交互（HRI）中损害了安全性。在本文中，我们提出了一种质量导向的主动对抗策略（QFAAP）来解决这一问题。具体而言，首先介绍了对抗质量补丁（AQP），我们设计了对抗质量补丁损失，并利用抓取数据集优化高质量得分的补丁。其次，构建了投影质量梯度下降（PQGD），并与AQP集成，AQP仅包含每个实时帧内的手区域，使AQP具备快速适应手部形状的能力。通过AQP和PQGD，手可以主动与周围物体进行对抗，降低它们的质量得分。因此，进一步将手的质量得分设置为零，将降低对手及其相邻物体的抓取优先级，使机器人能够在无需紧急停止的情况下抓取远离手的其他物体。我们在基准数据集和协作机器人上进行了广泛实验，展示了QFAAP的有效性。我们的代码和演示视频可在以下链接获取：this https URL。 
+
+---
+# CubeRobot: Grounding Language in Rubik's Cube Manipulation via Vision-Language Model 
+
+**Title (ZH)**: CubeRobot: 通过视觉语言模型在魔方操作中实现语言 grounding 
+
+**Authors**: Feiyang Wang, Xiaomin Yu, Wangyu Wu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.19281)  
+
+**Abstract**: Proving Rubik's Cube theorems at the high level represents a notable milestone in human-level spatial imagination and logic thinking and reasoning. Traditional Rubik's Cube robots, relying on complex vision systems and fixed algorithms, often struggle to adapt to complex and dynamic scenarios. To overcome this limitation, we introduce CubeRobot, a novel vision-language model (VLM) tailored for solving 3x3 Rubik's Cubes, empowering embodied agents with multimodal understanding and execution capabilities. We used the CubeCoT image dataset, which contains multiple-level tasks (43 subtasks in total) that humans are unable to handle, encompassing various cube states. We incorporate a dual-loop VisionCoT architecture and Memory Stream, a paradigm for extracting task-related features from VLM-generated planning queries, thus enabling CubeRobot to independent planning, decision-making, reflection and separate management of high- and low-level Rubik's Cube tasks. Furthermore, in low-level Rubik's Cube restoration tasks, CubeRobot achieved a high accuracy rate of 100%, similar to 100% in medium-level tasks, and achieved an accuracy rate of 80% in high-level tasks. 
+
+**Abstract (ZH)**: 在高维度上证明魔方定理代表了人类空间想象和逻辑推理的一个重要里程碑。CubeRobot：一种基于视觉语言模型的新型魔方解决机器人，通过多模态理解和执行能力增强了实体代理，解决了传统魔方机器人在复杂动态场景下的适应性问题。通过使用包含43个超人类处理的多层次任务的CubeCoT图像数据集，CubeRobot能够独立进行高、低层次魔方任务的规划、决策、反思和管理。在低层次魔方恢复任务中，CubeRobot的准确率达到100%，与中层次任务相同，并在高层次任务中达到80%的准确率。 
+
+---
+# EventFly: Event Camera Perception from Ground to the Sky 
+
+**Title (ZH)**: EventFly: 地面到天空的事件相机感知 
+
+**Authors**: Lingdong Kong, Dongyue Lu, Xiang Xu, Lai Xing Ng, Wei Tsang Ooi, Benoit R. Cottereau  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.19916)  
+
+**Abstract**: Cross-platform adaptation in event-based dense perception is crucial for deploying event cameras across diverse settings, such as vehicles, drones, and quadrupeds, each with unique motion dynamics, viewpoints, and class distributions. In this work, we introduce EventFly, a framework for robust cross-platform adaptation in event camera perception. Our approach comprises three key components: i) Event Activation Prior (EAP), which identifies high-activation regions in the target domain to minimize prediction entropy, fostering confident, domain-adaptive predictions; ii) EventBlend, a data-mixing strategy that integrates source and target event voxel grids based on EAP-driven similarity and density maps, enhancing feature alignment; and iii) EventMatch, a dual-discriminator technique that aligns features from source, target, and blended domains for better domain-invariant learning. To holistically assess cross-platform adaptation abilities, we introduce EXPo, a large-scale benchmark with diverse samples across vehicle, drone, and quadruped platforms. Extensive experiments validate our effectiveness, demonstrating substantial gains over popular adaptation methods. We hope this work can pave the way for more adaptive, high-performing event perception across diverse and complex environments. 
+
+**Abstract (ZH)**: 跨平台适应性在基于事件的密集感知中的实现对于在车辆、无人机和四足动物等具有独特运动动力学、视角和类别分布的不同场景中部署事件相机至关重要。我们提出EventFly框架，用于事件相机感知的鲁棒跨平台适应。该框架包括三个关键组件：事件激活先验（EAP）、事件融合（EventBlend）和事件匹配（EventMatch）。我们通过引入EXPo基准测试，包含车辆、无人机和四足动物平台上的多样化样本，全面评估跨平台适应性能力。实验结果验证了该方法的有效性，显著优于流行的方法。我们希望这项工作能够为在复杂多变环境中实现更加适应性和高性能的事件感知铺平道路。 
+
+---
+# Leveraging Cognitive States for Adaptive Scaffolding of Understanding in Explanatory Tasks in HRI 
+
+**Title (ZH)**: 利用认知状态为人机交互中解释任务的理解提供适应性支架 
+
+**Authors**: André Groß, Birte Richter, Bjarne Thomzik, Britta Wrede  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.19692)  
+
+**Abstract**: Understanding how scaffolding strategies influence human understanding in human-robot interaction is important for developing effective assistive systems. This empirical study investigates linguistic scaffolding strategies based on negation as an important means that de-biases the user from potential errors but increases processing costs and hesitations as a means to ameliorate processing costs. In an adaptive strategy, the user state with respect to the current state of understanding and processing capacity was estimated via a scoring scheme based on task performance, prior scaffolding strategy, and current eye gaze behavior. In the study, the adaptive strategy of providing negations and hesitations was compared with a non-adaptive strategy of providing only affirmations. The adaptive scaffolding strategy was generated using the computational model SHIFT. Our findings indicate that using adaptive scaffolding strategies with SHIFT tends to (1) increased processing costs, as reflected in longer reaction times, but (2) improved task understanding, evidenced by a lower error rate of almost 23%. We assessed the efficiency of SHIFT's selected scaffolding strategies across different cognitive states, finding that in three out of five states, the error rate was lower compared to the baseline condition. We discuss how these results align with the assumptions of the SHIFT model and highlight areas for refinement. Moreover, we demonstrate how scaffolding strategies, such as negation and hesitation, contribute to more effective human-robot explanatory dialogues. 
+
+**Abstract (ZH)**: 理解支撑策略如何影响人类在人机交互中的理解对于开发有效的辅助系统至关重要。本实证研究探讨了基于否定的语文支撑策略，这种策略可以减轻用户的潜在错误但会增加处理成本和犹豫，以缓解处理成本。在自适应策略中，通过基于任务性能、先前支撑策略和当前眼球运动的评分方案估计用户状态与当前理解状态和处理能力的关系。研究中，自适应策略（提供否定和犹豫）与仅提供肯定的非自适应策略进行了比较。自适应支撑策略是使用计算模型SHIFT生成的。我们的研究结果表明，使用SHIFT的自适应支撑策略倾向于（1）增加处理成本，反映在反应时间更长上，但（2）提高任务理解度，错误率降低约23%。我们评估了SHIFT所选支撑策略在不同认知状态下的效率，发现有三种状态下的错误率低于基线条件。我们讨论了这些结果如何与SHIFT模型的假设一致，并指出了改进的领域。此外，我们展示了支撑策略，如否定和犹豫，如何有助于更有效的机器人解释对话。 
+
+---
+# Thinking agents for zero-shot generalization to qualitatively novel tasks 
+
+**Title (ZH)**: 零样本泛化至定性新颖任务的思考代理 
+
+**Authors**: Thomas Miconi, Kevin McKee, Yicong Zheng, Jed McCaleb  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.19815)  
+
+**Abstract**: Intelligent organisms can solve truly novel problems which they have never encountered before, either in their lifetime or their evolution. An important component of this capacity is the ability to ``think'', that is, to mentally manipulate objects, concepts and behaviors in order to plan and evaluate possible solutions to novel problems, even without environment interaction. To generate problems that are truly qualitatively novel, while still solvable zero-shot (by mental simulation), we use the combinatorial nature of environments: we train the agent while withholding a specific combination of the environment's elements. The novel test task, based on this combination, is thus guaranteed to be truly novel, while still mentally simulable since the agent has been exposed to each individual element (and their pairwise interactions) during training. We propose a method to train agents endowed with world models to make use their mental simulation abilities, by selecting tasks based on the difference between the agent's pre-thinking and post-thinking performance. When tested on the novel, withheld problem, the resulting agent successfully simulated alternative scenarios and used the resulting information to guide its behavior in the actual environment, solving the novel task in a single real-environment trial (zero-shot). 
+
+**Abstract (ZH)**: 具有世界模型的智能体可以通过对比预思考和后思考性能来利用其mental simulation能力，以生成真正质性新颖的问题，并在未接触的问题上实现零样本解决。 
+
+---
+# FedMM-X: A Trustworthy and Interpretable Framework for Federated Multi-Modal Learning in Dynamic Environments 
+
+**Title (ZH)**: FedMM-X：动态环境中文本可信任可解释的联邦多模态学习框架 
+
+**Authors**: Sree Bhargavi Balija  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.19564)  
+
+**Abstract**: As artificial intelligence systems increasingly operate in Real-world environments, the integration of multi-modal data sources such as vision, language, and audio presents both unprecedented opportunities and critical challenges for achieving trustworthy intelligence. In this paper, we propose a novel framework that unifies federated learning with explainable multi-modal reasoning to ensure trustworthiness in decentralized, dynamic settings. Our approach, called FedMM-X (Federated Multi-Modal Explainable Intelligence), leverages cross-modal consistency checks, client-level interpretability mechanisms, and dynamic trust calibration to address challenges posed by data heterogeneity, modality imbalance, and out-of-distribution generalization. Through rigorous evaluation across federated multi-modal benchmarks involving vision-language tasks, we demonstrate improved performance in both accuracy and interpretability while reducing vulnerabilities to adversarial and spurious correlations. Further, we introduce a novel trust score aggregation method to quantify global model reliability under dynamic client participation. Our findings pave the way toward developing robust, interpretable, and socially responsible AI systems in Real-world environments. 
+
+**Abstract (ZH)**: 随着人工智能系统越来越多地在实际环境运行，多模态数据源如视觉、语言和音频的集成为实现可信智能带来了前所未有的机遇和关键挑战。本文提出了一种新的框架，将联邦学习与可解释多模态推理相结合，以确保在去中心化、动态设置中的可信性。我们的方法称为FedMM-X（联邦多模态解释智能），利用跨模态一致性检查、客户端级可解释性机制和动态信任校准，以应对数据异构性、模态失衡和域外泛化的挑战。通过在涉及视觉-语言任务的联邦多模态基准中的严格评估，我们展示了在准确性和可解释性上均有改进，并降低了对对抗性和误分类关系的脆弱性。此外，我们引入了一种新的信任分值聚合方法，以量化动态客户端参与下的全局模型可靠性。我们的研究为在实际环境开发稳健、可解释和负责任的人工智能系统铺平了道路。 
+
+---
+# Data-centric Federated Graph Learning with Large Language Models 
+
+**Title (ZH)**: 基于数据的联邦图学习与大规模语言模型 
+
+**Authors**: Bo Yan, Zhongjian Zhang, Huabin Sun, Mengmei Zhang, Yang Cao, Chuan Shi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.19455)  
+
+**Abstract**: In federated graph learning (FGL), a complete graph is divided into multiple subgraphs stored in each client due to privacy concerns, and all clients jointly train a global graph model by only transmitting model parameters. A pain point of FGL is the heterogeneity problem, where nodes or structures present non-IID properties among clients (e.g., different node label distributions), dramatically undermining the convergence and performance of FGL. To address this, existing efforts focus on design strategies at the model level, i.e., they design models to extract common knowledge to mitigate heterogeneity. However, these model-level strategies fail to fundamentally address the heterogeneity problem as the model needs to be designed from scratch when transferring to other tasks. Motivated by large language models (LLMs) having achieved remarkable success, we aim to utilize LLMs to fully understand and augment local text-attributed graphs, to address data heterogeneity at the data level. In this paper, we propose a general framework LLM4FGL that innovatively decomposes the task of LLM for FGL into two sub-tasks theoretically. Specifically, for each client, it first utilizes the LLM to generate missing neighbors and then infers connections between generated nodes and raw nodes. To improve the quality of generated nodes, we design a novel federated generation-and-reflection mechanism for LLMs, without the need to modify the parameters of the LLM but relying solely on the collective feedback from all clients. After neighbor generation, all the clients utilize a pre-trained edge predictor to infer the missing edges. Furthermore, our framework can seamlessly integrate as a plug-in with existing FGL methods. Experiments on three real-world datasets demonstrate the superiority of our method compared to advanced baselines. 
+
+**Abstract (ZH)**: 基于大型语言模型的联邦图学习：LLM4FGL 
+
+---
+# NeoRL-2: Near Real-World Benchmarks for Offline Reinforcement Learning with Extended Realistic Scenarios 
+
+**Title (ZH)**: NeoRL-2: 近真实世界数据集用于扩展现实场景的 Offline Reinforcement Learning 
+
+**Authors**: Songyi Gao, Zuolin Tu, Rong-Jun Qin, Yi-Hao Sun, Xiong-Hui Chen, Yang Yu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.19267)  
+
+**Abstract**: Offline reinforcement learning (RL) aims to learn from historical data without requiring (costly) access to the environment. To facilitate offline RL research, we previously introduced NeoRL, which highlighted that datasets from real-world tasks are often conservative and limited. With years of experience applying offline RL to various domains, we have identified additional real-world challenges. These include extremely conservative data distributions produced by deployed control systems, delayed action effects caused by high-latency transitions, external factors arising from the uncontrollable variance of transitions, and global safety constraints that are difficult to evaluate during the decision-making process. These challenges are underrepresented in previous benchmarks but frequently occur in real-world tasks. To address this, we constructed the extended Near Real-World Offline RL Benchmark (NeoRL-2), which consists of 7 datasets from 7 simulated tasks along with their corresponding evaluation simulators. Benchmarking results from state-of-the-art offline RL approaches demonstrate that current methods often struggle to outperform the data-collection behavior policy, highlighting the need for more effective methods. We hope NeoRL-2 will accelerate the development of reinforcement learning algorithms for real-world applications. The benchmark project page is available at this https URL. 
+
+**Abstract (ZH)**: Offline强化学习（RL）旨在通过历史数据学习，而不需要访问环境（成本较高）。为了促进offline RL研究，我们先前引入了NeoRL，并指出现实世界任务的数据集通常保守且有限。基于多年来将offline RL应用于各种领域的经验，我们还发现了额外的现实世界挑战。这些挑战包括由部署的控制系统产生的极端保守的数据分布、由于高延迟过渡导致的动作效应延迟、来自过渡不可控变化的外部因素以及在决策过程中难以评估的全局安全性约束。这些挑战在之前的基准测试中并未充分体现，但在现实世界任务中却经常出现。为此，我们构建了扩展的接近现实世界的offline RL基准（NeoRL-2），其中包括7个从7个模拟任务提取的数据集及其相应的评估模拟器。最新的offline RL方法的基准测试结果表明，当前的方法往往难以超越数据收集行为策略，突显了开发更有效方法的必要性。我们希望NeoRL-2能够加速强化学习算法在现实世界应用中的发展。基准测试项目页面可在以下链接获取。 
+
+---
+# Option Discovery Using LLM-guided Semantic Hierarchical Reinforcement Learning 
+
+**Title (ZH)**: 基于LLM引导的语义层次强化学习的选项发现 
+
+**Authors**: Chak Lam Shek, Pratap Tokekar  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.19007)  
+
+**Abstract**: Large Language Models (LLMs) have shown remarkable promise in reasoning and decision-making, yet their integration with Reinforcement Learning (RL) for complex robotic tasks remains underexplored. In this paper, we propose an LLM-guided hierarchical RL framework, termed LDSC, that leverages LLM-driven subgoal selection and option reuse to enhance sample efficiency, generalization, and multi-task adaptability. Traditional RL methods often suffer from inefficient exploration and high computational cost. Hierarchical RL helps with these challenges, but existing methods often fail to reuse options effectively when faced with new tasks. To address these limitations, we introduce a three-stage framework that uses LLMs for subgoal generation given natural language description of the task, a reusable option learning and selection method, and an action-level policy, enabling more effective decision-making across diverse tasks. By incorporating LLMs for subgoal prediction and policy guidance, our approach improves exploration efficiency and enhances learning performance. On average, LDSC outperforms the baseline by 55.9\% in average reward, demonstrating its effectiveness in complex RL settings. More details and experiment videos could be found in \href{this https URL}{this link\footnote{this https URL}}. 
+
+**Abstract (ZH)**: 大型语言模型（LLMs）在推理和决策方面展现了显著的潜力，然而它们与强化学习（RL）在复杂机器人任务中的集成仍处于未探索阶段。本文提出了一种名为LDSC的LLM引导的分层RL框架，该框架通过LLM驱动的子目标选择和选项重用，提高样本效率、泛化能力和多任务适应性。传统RL方法常因探索效率低和高计算成本而受挫。分层RL有助于解决这些问题，但现有方法在面对新任务时往往无法有效重用选项。为了解决这些局限性，我们提出了一种三阶段框架，该框架利用LLM根据任务的自然语言描述生成子目标，一种可重用选项的学习和选择方法，以及一个动作层面的策略，从而在多样化的任务中实现更有效的决策。通过将LLM集成到子目标预测和策略指导中，我们的方法提高了探索效率并增强了学习性能。LDSC在平均奖励方面的平均表现比基线高出55.9%，证明了其在复杂RL环境中的有效性。更多细节和实验视频请参见\href{this https URL}{此链接\footnote{this https URL}}。 
+
+---
+# CAE: Repurposing the Critic as an Explorer in Deep Reinforcement Learning 
+
+**Title (ZH)**: CAE: 将评论者重新利用为探索者在深度强化学习中的应用 
+
+**Authors**: Yexin Li, Pring Wong, Hanfang Zhang, Shuo Chen, Siyuan Qi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.18980)  
+
+**Abstract**: Exploration remains a critical challenge in reinforcement learning, as many existing methods either lack theoretical guarantees or fall short of practical effectiveness. In this paper, we introduce CAE, a lightweight algorithm that repurposes the value networks in standard deep RL algorithms to drive exploration without introducing additional parameters. CAE utilizes any linear multi-armed bandit technique and incorporates an appropriate scaling strategy, enabling efficient exploration with provable sub-linear regret bounds and practical stability. Notably, it is simple to implement, requiring only around 10 lines of code. In complex tasks where learning an effective value network proves challenging, we propose CAE+, an extension of CAE that incorporates an auxiliary network. This extension increases the parameter count by less than 1% while maintaining implementation simplicity, adding only about 10 additional lines of code. Experiments on MuJoCo and MiniHack show that both CAE and CAE+ outperform state-of-the-art baselines, bridging the gap between theoretical rigor and practical efficiency. 
+
+**Abstract (ZH)**: 探索仍然是强化学习中的一个关键挑战，因为许多现有方法要么缺乏理论保证，要么在实际效果上有所不足。本文介绍了一种轻量级算法CAE，该算法通过重用标准深度强化学习算法中的价值网络来驱动探索，而不引入额外参数。CAE 利用任何线性多臂老虎机技术，并结合适当的缩放策略，实现了可证明的亚线性后悔界和实际稳定性。值得注意的是，CAE 实现非常简单，只需约10行代码。在学习有效价值网络具有挑战性的复杂任务中，我们提出了一种名为CAE+的扩展算法，该扩展算法结合了一个辅助网络。这种扩展将参数数量增加了不到1% ，同时保持实现的简单性，仅增加了约10行代码。实验结果表明，CAE 和 CAE+ 在MuJoCo 和 MiniHack 上均优于最先进的基线方法，实现了理论严谨性和实际效率之间的平衡。 
+
+---
+# Synthetic media and computational capitalism: towards a critical theory of artificial intelligence 
+
+**Title (ZH)**: 合成媒体与计算资本主义：迈向对人工智能的批判性理论 
+
+**Authors**: David M. Berry  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.18976)  
+
+**Abstract**: This paper develops a critical theory of artificial intelligence, within a historical constellation where computational systems increasingly generate cultural content that destabilises traditional distinctions between human and machine production. Through this analysis, I introduce the concept of the algorithmic condition, a cultural moment when machine-generated work not only becomes indistinguishable from human creation but actively reshapes our understanding of ideas of authenticity. This transformation, I argue, moves beyond false consciousness towards what I call post-consciousness, where the boundaries between individual and synthetic consciousness become porous. Drawing on critical theory and extending recent work on computational ideology, I develop three key theoretical contributions, first, the concept of the Inversion to describe a new computational turn in algorithmic society; second, automimetric production as a framework for understanding emerging practices of automated value creation; and third, constellational analysis as a methodological approach for mapping the complex interplay of technical systems, cultural forms and political economic structures. Through these contributions, I argue that we need new critical methods capable of addressing both the technical specificity of AI systems and their role in restructuring forms of life under computational capitalism. The paper concludes by suggesting that critical reflexivity is needed to engage with the algorithmic condition without being subsumed by it and that it represents a growing challenge for contemporary critical theory. 
+
+**Abstract (ZH)**: 人工智能的批判理论：计算系统生成的文化内容对人类与机器生产传统区别的解稳动 
+
+---
