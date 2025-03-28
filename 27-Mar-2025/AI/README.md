@@ -1,0 +1,130 @@
+# Graph-Enhanced Model-Free Reinforcement Learning Agents for Efficient Power Grid Topological Control 
+
+**Title (ZH)**: 基于图增强的模型自由强化学习电网拓扑控制代理 
+
+**Authors**: Eloy Anguiano Batanero, Ángela Fernández, Álvaro Barbero  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.20688)  
+
+**Abstract**: The increasing complexity of power grid management, driven by the emergence of prosumers and the demand for cleaner energy solutions, has needed innovative approaches to ensure stability and efficiency. This paper presents a novel approach within the model-free framework of reinforcement learning, aimed at optimizing power network operations without prior expert knowledge. We introduce a masked topological action space, enabling agents to explore diverse strategies for cost reduction while maintaining reliable service using the state logic as a guide for choosing proper actions. Through extensive experimentation across 20 different scenarios in a simulated 5-substation environment, we demonstrate that our approach achieves a consistent reduction in power losses, while ensuring grid stability against potential blackouts. The results underscore the effectiveness of combining dynamic observation formalization with opponent-based training, showing a viable way for autonomous management solutions in modern energy systems or even for building a foundational model for this field. 
+
+**Abstract (ZH)**: 随着生产者消费者和对清洁能源解决方案需求的出现，电网管理日益复杂，需要创新方法以确保稳定性和效率。本文提出了一种基于 reinforcement learning 的无模型框架下的新颖方法，旨在在无需先验专家知识的情况下优化电力网络运行。我们引入了屏蔽拓扑动作空间，使代理能够在保证可靠服务的同时，利用状态逻辑作为选择适当行动的指南，探索降低成本的多种策略。通过在模拟的5个变电站环境下的20种不同场景中进行大量实验，我们展示了我们的方法能够持续降低电力损耗，同时确保在潜在停电情况下的电网稳定性。结果强调了将动态观察形式化与对手训练相结合的有效性，为现代能源系统提供了自主管理解决方案的可能性，甚至可以为基础模型的建立提供范式。 
+
+---
+# Inductive Link Prediction on N-ary Relational Facts via Semantic Hypergraph Reasoning 
+
+**Title (ZH)**: 基于语义超图推理的N元关系事实归纳链接预测 
+
+**Authors**: Gongzhu Yin, Hongli Zhang, Yuchen Yang, Yi Luo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.20676)  
+
+**Abstract**: N-ary relational facts represent semantic correlations among more than two entities. While recent studies have developed link prediction (LP) methods to infer missing relations for knowledge graphs (KGs) containing n-ary relational facts, they are generally limited to transductive settings. Fully inductive settings, where predictions are made on previously unseen entities, remain a significant challenge. As existing methods are mainly entity embedding-based, they struggle to capture entity-independent logical rules. To fill in this gap, we propose an n-ary subgraph reasoning framework for fully inductive link prediction (ILP) on n-ary relational facts. This framework reasons over local subgraphs and has a strong inductive inference ability to capture n-ary patterns. Specifically, we introduce a novel graph structure, the n-ary semantic hypergraph, to facilitate subgraph extraction. Moreover, we develop a subgraph aggregating network, NS-HART, to effectively mine complex semantic correlations within subgraphs. Theoretically, we provide a thorough analysis from the score function optimization perspective to shed light on NS-HART's effectiveness for n-ary ILP tasks. Empirically, we conduct extensive experiments on a series of inductive benchmarks, including transfer reasoning (with and without entity features) and pairwise subgraph reasoning. The results highlight the superiority of the n-ary subgraph reasoning framework and the exceptional inductive ability of NS-HART. The source code of this paper has been made publicly available at this https URL. 
+
+**Abstract (ZH)**: N-元关系事实表示多个实体之间的语义关联。虽然近年的研究开发了链接预测（LP）方法来推断知识图谱（KGs）中包含N-元关系事实的缺失关系，但这些方法通常局限于归纳性设置。在未见过的新实体上进行预测的完全归纳性设置仍然是一项重大挑战。由于现有方法主要是基于实体嵌入的，它们难以捕捉到与实体无关的逻辑规则。为填补这一空白，我们提出了一种针对N-元关系事实的完全归纳性链接预测（ILP）的N-元子图推理框架。该框架在局部子图上进行推理，并具备较强的归纳推断能力来捕捉N-元模式。具体而言，我们引入了一种新的图结构，N-元语义超图，以方便子图提取。此外，我们开发了一种子图聚合网络NS-HART，以有效地挖掘子图内的复杂语义关联。从理论上讲，我们从评分函数优化的角度进行了全面分析，以阐明NS-HART在N-元ILP任务中的有效性。从实验上讲，我们在一系列归纳基准测试上进行了广泛实验，包括转移推理（有和没有实体特征）以及成对子图推理。实验结果突显了N-元子图推理框架和NS-HART的卓越归纳能力。本文的源代码已公开，可访问以下链接：此 https URL。 
+
+---
+# Procedural Knowledge Ontology (PKO) 
+
+**Title (ZH)**: 过程性知识本体（PKO） 
+
+**Authors**: Valentina Anita Carriero, Mario Scrocca, Ilaria Baroni, Antonia Azzini, Irene Celino  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.20634)  
+
+**Abstract**: Processes, workflows and guidelines are core to ensure the correct functioning of industrial companies: for the successful operations of factory lines, machinery or services, often industry operators rely on their past experience and know-how. The effect is that this Procedural Knowledge (PK) remains tacit and, as such, difficult to exploit efficiently and effectively. This paper presents PKO, the Procedural Knowledge Ontology, which enables the explicit modeling of procedures and their executions, by reusing and extending existing ontologies. PKO is built on requirements collected from three heterogeneous industrial use cases and can be exploited by any AI and data-driven tools that rely on a shared and interoperable representation to support the governance of PK throughout its life cycle. We describe its structure and design methodology, and outline its relevance, quality, and impact by discussing applications leveraging PKO for PK elicitation and exploitation. 
+
+**Abstract (ZH)**: 基于过程的知识本体：确保工业公司正确运作的核心要素 
+
+---
+# Perspective-Shifted Neuro-Symbolic World Models: A Framework for Socially-Aware Robot Navigation 
+
+**Title (ZH)**: 视角变换的神经符号世界模型：一种社会意识增强的机器人导航框架 
+
+**Authors**: Kevin Alcedo, Pedro U. Lima, Rachid Alami  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.20425)  
+
+**Abstract**: Navigating in environments alongside humans requires agents to reason under uncertainty and account for the beliefs and intentions of those around them. Under a sequential decision-making framework, egocentric navigation can naturally be represented as a Markov Decision Process (MDP). However, social navigation additionally requires reasoning about the hidden beliefs of others, inherently leading to a Partially Observable Markov Decision Process (POMDP), where agents lack direct access to others' mental states. Inspired by Theory of Mind and Epistemic Planning, we propose (1) a neuro-symbolic model-based reinforcement learning architecture for social navigation, addressing the challenge of belief tracking in partially observable environments; and (2) a perspective-shift operator for belief estimation, leveraging recent work on Influence-based Abstractions (IBA) in structured multi-agent settings. 
+
+**Abstract (ZH)**: 在人类环境中导航需要智能体在不确定性下进行推理，并考虑周围他人的信念和意图。在序列决策框架下，以自我为中心的导航可以自然地表示为马尔可夫决策过程（MDP）。然而，社会导航还要求推理他人的隐藏信念，这导致需要使用部分可观测马尔可夫决策过程（POMDP），其中智能体无法直接访问他人的心理状态。受心智理论和知识规划的启发，我们提出了一种用于社会导航的神经符号模型基强化学习架构，以应对部分可观测环境中信念追踪的挑战；并提出了一种视角转换操作符，用于信念估计，利用了结构化多智能体环境中基于影响的抽象（IBA）的最新研究成果。 
+
+---
+# Synthesizing world models for bilevel planning 
+
+**Title (ZH)**: 合成层级规划的世界模型 
+
+**Authors**: Zergham Ahmed, Joshua B. Tenenbaum, Christopher J. Bates, Samuel J. Gershman  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.20124)  
+
+**Abstract**: Modern reinforcement learning (RL) systems have demonstrated remarkable capabilities in complex environments, such as video games. However, they still fall short of achieving human-like sample efficiency and adaptability when learning new domains. Theory-based reinforcement learning (TBRL) is an algorithmic framework specifically designed to address this gap. Modeled on cognitive theories, TBRL leverages structured, causal world models - "theories" - as forward simulators for use in planning, generalization and exploration. Although current TBRL systems provide compelling explanations of how humans learn to play video games, they face several technical limitations: their theory languages are restrictive, and their planning algorithms are not scalable. To address these challenges, we introduce TheoryCoder, an instantiation of TBRL that exploits hierarchical representations of theories and efficient program synthesis methods for more powerful learning and planning. TheoryCoder equips agents with general-purpose abstractions (e.g., "move to"), which are then grounded in a particular environment by learning a low-level transition model (a Python program synthesized from observations by a large language model). A bilevel planning algorithm can exploit this hierarchical structure to solve large domains. We demonstrate that this approach can be successfully applied to diverse and challenging grid-world games, where approaches based on directly synthesizing a policy perform poorly. Ablation studies demonstrate the benefits of using hierarchical abstractions. 
+
+**Abstract (ZH)**: 现代基于理论的强化学习（TBRL）系统已经在复杂环境中展示了显著的能力，如视频游戏。然而，当学习新领域时，它们在样本效率和适应性方面仍无法达到人类的水平。基于理论的强化学习（TBRL）是一种专门为此差距设计的算法框架。受认知理论的启发，TBRL利用结构化因果世界模型——“理论”——作为前向模拟器，用于规划、泛化和探索。尽管当前的TBRL系统为人类如何学习玩视频游戏提供了令人信服的解释，但它们面临一些技术局限性：其理论语言是限制性的，其规划算法也不具备可扩展性。为了解决这些挑战，我们引入了TheoryCoder，这是一种TBRL的实现，借助了层次化的理论表示和高效的程序合成方法，实现了更强大的学习和规划能力。TheoryCoder为代理提供了通用的抽象（如“移动到”），并通过学习低级过渡模型（由大语言模型从观察中合成的Python程序）将这些抽象具体化于特定环境之中。嵌套的规划算法可以利用这种层次结构解决大型领域。我们证明了这种方法可以成功应用于多样且具有挑战性的格状世界游戏，其中直接合成策略的方法表现不佳。消融研究表明，使用层次化抽象可以带来优势。 
+
+---
+# Direct Post-Training Preference Alignment for Multi-Agent Motion Generation Models Using Implicit Feedback from Pre-training Demonstrations 
+
+**Title (ZH)**: 直接训练后偏好对齐：利用预训练示范的隐式反馈进行多Agent运动生成模型的偏好对齐 
+
+**Authors**: Ran Tian, Kratarth Goel  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.20105)  
+
+**Abstract**: Recent advancements in LLMs have revolutionized motion generation models in embodied applications. While LLM-type auto-regressive motion generation models benefit from training scalability, there remains a discrepancy between their token prediction objectives and human preferences. As a result, models pre-trained solely with token-prediction objectives often generate behaviors that deviate from what humans would prefer, making post-training preference alignment crucial for producing human-preferred motions. Unfortunately, post-training alignment requires extensive preference rankings of motions generated by the pre-trained model, which are costly to annotate, especially in multi-agent settings. Recently, there has been growing interest in leveraging pre-training demonstrations to scalably generate preference data for post-training alignment. However, these methods often adopt an adversarial assumption, treating all pre-trained model-generated samples as unpreferred examples. This adversarial approach overlooks the valuable signal provided by preference rankings among the model's own generations, ultimately reducing alignment effectiveness and potentially leading to misaligned behaviors. In this work, instead of treating all generated samples as equally bad, we leverage implicit preferences encoded in pre-training demonstrations to construct preference rankings among the pre-trained model's generations, offering more nuanced preference alignment guidance with zero human cost. We apply our approach to large-scale traffic simulation and demonstrate its effectiveness in improving the realism of pre-trained model's generated behaviors, making a lightweight 1M motion generation model comparable to SOTA large imitation-based models by relying solely on implicit feedback from pre-training demonstrations, without additional post-training human preference annotations or high computational costs. 
+
+**Abstract (ZH)**: 近期大型语言模型的进展彻底改变了具身应用中的动作生成模型。虽然基于LLM的自回归动作生成模型受益于训练可扩展性，但它们的标记预测目标与人类偏好之间仍存在差异。因此，仅通过标记预测目标预训练的模型往往生成偏离人类偏好的行为，这使得后训练偏好对齐变得至关重要。不幸的是，后训练对齐需要大量标注预训练模型生成的动作偏好排名，这在多智能体设置中成本高昂。最近，利用预训练示范来大规模生成后训练偏好数据的兴趣日益增长。然而，这些方法通常采用对抗性假设，将预训练模型生成的所有样本视为不良示例。这种对抗性方法忽略了预训练模型自身生成动作之间的偏好排名提供的宝贵信号，最终降低了对齐效果，并可能导致不一致的行为。在本文中，我们不将所有生成样本视为同样糟糕，而是利用预训练示范中编码的隐式偏好来构造预训练模型生成动作之间的偏好排名，提供更为细腻的偏好对齐指导，且无需任何人工成本。我们将在大规模交通模拟中应用该方法，并通过仅依赖预训练示范中的隐式反馈，展示其在提高预训练模型生成行为逼真度方面的有效性，使一个轻量级的1M动作生成模型达到当前最佳大模型模仿基线的效果，无需额外的后训练人类偏好标注或高昂的计算成本。 
+
+---
+# OmniNova:A General Multimodal Agent Framework 
+
+**Title (ZH)**: OmniNova：一个通用多模态代理框架 
+
+**Authors**: Pengfei Du  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.20028)  
+
+**Abstract**: The integration of Large Language Models (LLMs) with specialized tools presents new opportunities for intelligent automation systems. However, orchestrating multiple LLM-driven agents to tackle complex tasks remains challenging due to coordination difficulties, inefficient resource utilization, and inconsistent information flow. We present OmniNova, a modular multi-agent automation framework that combines language models with specialized tools such as web search, crawling, and code execution capabilities. OmniNova introduces three key innovations: (1) a hierarchical multi-agent architecture with distinct coordinator, planner, supervisor, and specialist agents; (2) a dynamic task routing mechanism that optimizes agent deployment based on task complexity; and (3) a multi-layered LLM integration system that allocates appropriate models to different cognitive requirements. Our evaluations across 50 complex tasks in research, data analysis, and web interaction domains demonstrate that OmniNova outperforms existing frameworks in task completion rate (87\% vs. baseline 62\%), efficiency (41\% reduced token usage), and result quality (human evaluation score of 4.2/5 vs. baseline 3.1/5). We contribute both a theoretical framework for multi-agent system design and an open-source implementation that advances the state-of-the-art in LLM-based automation systems. 
+
+**Abstract (ZH)**: 大型语言模型与专用工具的集成为智能自动化系统带来了新的机遇。然而，由于协调难题、资源利用不充分以及信息流动不一致，多代理系统处理复杂任务仍然具有挑战性。我们提出了OmniNova，这是一种模块化的多代理自动化框架，将语言模型与网络搜索、爬取和代码执行等专用工具相结合。OmniNova 引入了三项关键创新：(1) 具有不同协调员、计划者、监督者和专家代理的层次化多代理架构；(2) 动态任务路由机制，该机制根据任务复杂性优化代理部署；(3) 多层大型语言模型集成系统，将合适的模型分配到不同的认知需求。我们在研究、数据分析和网络交互领域的50项复杂任务评估中表明，OmniNova 在任务完成率（87% vs. 对照组 62%）、效率（减少41%的令牌使用量）和结果质量（人类评估得分为4.2/5 vs. 对照组 3.1/5）方面均优于现有框架。我们不仅贡献了一个多代理系统设计的理论框架，还提供了一个开源实现，该实现推动了基于大型语言模型的自动化系统的发展。 
+
+---
+# Unsupervised Learning for Quadratic Assignment 
+
+**Title (ZH)**: 无监督学习在二次指派问题中的应用 
+
+**Authors**: Yimeng Min, Carla P. Gomes  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.20001)  
+
+**Abstract**: We introduce PLUME search, a data-driven framework that enhances search efficiency in combinatorial optimization through unsupervised learning. Unlike supervised or reinforcement learning, PLUME search learns directly from problem instances using a permutation-based loss with a non-autoregressive approach. We evaluate its performance on the quadratic assignment problem, a fundamental NP-hard problem that encompasses various combinatorial optimization problems. Experimental results demonstrate that PLUME search consistently improves solution quality. Furthermore, we study the generalization behavior and show that the learned model generalizes across different densities and sizes. 
+
+**Abstract (ZH)**: PLUME搜索：一种通过无监督学习增强组合优化搜索效率的数据驱动框架 
+
+---
+# LEGO-Puzzles: How Good Are MLLMs at Multi-Step Spatial Reasoning? 
+
+**Title (ZH)**: LEGO-拼图：MLLMs在多步空间推理方面表现如何？ 
+
+**Authors**: Kexian Tang, Junyao Gao, Yanhong Zeng, Haodong Duan, Yanan Sun, Zhening Xing, Wenran Liu, Kaifeng Lyu, Kai Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.19990)  
+
+**Abstract**: Multi-step spatial reasoning entails understanding and reasoning about spatial relationships across multiple sequential steps, which is crucial for tackling complex real-world applications, such as robotic manipulation, autonomous navigation, and automated assembly. To assess how well current Multimodal Large Language Models (MLLMs) have acquired this fundamental capability, we introduce \textbf{LEGO-Puzzles}, a scalable benchmark designed to evaluate both \textbf{spatial understanding} and \textbf{sequential reasoning} in MLLMs through LEGO-based tasks. LEGO-Puzzles consists of 1,100 carefully curated visual question-answering (VQA) samples spanning 11 distinct tasks, ranging from basic spatial understanding to complex multi-step reasoning. Based on LEGO-Puzzles, we conduct a comprehensive evaluation of state-of-the-art MLLMs and uncover significant limitations in their spatial reasoning capabilities: even the most powerful MLLMs can answer only about half of the test cases, whereas human participants achieve over 90\% accuracy. In addition to VQA tasks, we evaluate MLLMs' abilities to generate LEGO images following assembly illustrations. Our experiments show that only Gemini-2.0-Flash and GPT-4o exhibit a limited ability to follow these instructions, while other MLLMs either replicate the input image or generate completely irrelevant outputs. Overall, LEGO-Puzzles exposes critical deficiencies in existing MLLMs' spatial understanding and sequential reasoning capabilities, and underscores the need for further advancements in multimodal spatial reasoning. 
+
+**Abstract (ZH)**: 多步空间推理涉及理解并推理多个连续步骤的空间关系，这对于解决复杂的现实世界应用，如机器人操作、自主导航和自动化装配至关重要。为了评估当前多模态大型语言模型（MLLMs）在这一基本能力上的掌握情况，我们引入了基于LEGO的可扩展基准LEGO-Puzzles，用于评估MLLMs的空间理解和序列推理能力。LEGO-Puzzles包含1100个精心挑选的LEGO视觉问答（VQA）样本，涵盖从基本的空间理解到复杂的多步推理的11种不同任务。基于LEGO-Puzzles，我们全面评估了最先进的MLLMs，并揭示了它们在空间推理能力方面的显著局限：即使是最强大的MLLMs也只能正确回答大约一半的测试案例，而人类参与者则能实现超过90%的准确率。除了VQA任务外，我们还评估了MLLMs生成遵循装配示意图的LEGO图片的能力。实验结果显示，只有Gemini-2.0-Flash和GPT-4o表现出有限的跟随这些指令的能力，而其他MLLMs要么复制输入图片，要么生成完全不相关的输出。总体而言，LEGO-Puzzles暴露了现有MLLMs在空间理解和序列推理能力上的关键缺陷，并强调了在多模态空间推理方面进一步发展的必要性。 
+
+---
+# Mobile-MMLU: A Mobile Intelligence Language Understanding Benchmark 
+
+**Title (ZH)**: 移动智能语言理解基准-Mobile-MMLU 
+
+**Authors**: Sondos Mahmoud Bsharat, Mukul Ranjan, Aidar Myrzakhan, Jiacheng Liu, Bowei Guo, Shengkun Tang, Zhuang Liu, Yuanzhi Li, Zhiqiang Shen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.20786)  
+
+**Abstract**: Rapid advancements in large language models (LLMs) have increased interest in deploying them on mobile devices for on-device AI applications. Mobile users interact differently with LLMs compared to desktop users, creating unique expectations and data biases. Current benchmark datasets primarily target at server and desktop environments, and there is a notable lack of extensive datasets specifically designed for mobile contexts. Additionally, mobile devices face strict limitations in storage and computing resources, constraining model size and capabilities, thus requiring optimized efficiency and prioritized knowledge. To address these challenges, we introduce Mobile-MMLU, a large-scale benchmark dataset tailored for mobile intelligence. It consists of 16,186 questions across 80 mobile-related fields, designed to evaluate LLM performance in realistic mobile scenarios. A challenging subset, Mobile-MMLU-Pro, provides advanced evaluation similar in size to MMLU-Pro but significantly more difficult than our standard full set. Both benchmarks use multiple-choice, order-invariant questions focused on practical mobile interactions, such as recipe suggestions, travel planning, and essential daily tasks. The dataset emphasizes critical mobile-specific metrics like inference latency, energy consumption, memory usage, and response quality, offering comprehensive insights into model performance under mobile constraints. Moreover, it prioritizes privacy and adaptability, assessing models' ability to perform on-device processing, maintain user privacy, and adapt to personalized usage patterns. Mobile-MMLU family offers a standardized framework for developing and comparing mobile-optimized LLMs, enabling advancements in productivity and decision-making within mobile computing environments. Our code and data are available at: this https URL. 
+
+**Abstract (ZH)**: 快速发展的大规模语言模型（LLMs）增加了在移动设备上部署它们以进行本地AI应用的兴趣。移动用户与LLMs的交互方式不同于桌面用户，创造了独特的需求和数据偏差。当前的标准基准数据集主要针对服务器和桌面环境，而专门针对移动场景的广泛数据集则明显不足。此外，移动设备在存储和计算资源方面受到严格限制，限制了模型的规模和能力，因此需要优化效率和优先考虑知识。为了解决这些挑战，我们引入了Mobile-MMLU，这是一种定制于移动智能的大规模基准数据集。它包含了16,186个问题，覆盖了80个移动相关领域，旨在评估LLM在现实移动场景中的性能。Mobile-MMLU-Pro是一个具有挑战性的子集，提供了类似MMLU-Pro的复杂评估，但难度显著高于我们标准的完整集。基准数据集使用多项选择、顺序不变的问题，集中在实用的移动交互上，如食谱建议、旅行规划和日常任务。该数据集强调关键的移动特定指标，如推理延迟、能耗、内存使用和响应质量，提供了在移动约束条件下模型性能的全面洞察。此外，它优先考虑隐私和适应性，评估模型在设备上处理、维护用户隐私和适应个性化使用模式的能力。Mobile-MMLU家族提供了一个标准化框架，用于开发和比较移动优化的LLMs，在移动计算环境中促进生产率和决策的提升。我们的代码和数据可在以下网址获取：this https URL。 
+
+---

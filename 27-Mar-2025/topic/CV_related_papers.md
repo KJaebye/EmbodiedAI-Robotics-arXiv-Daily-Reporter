@@ -1,0 +1,52 @@
+# Robust Flower Cluster Matching Using The Unscented Transform 
+
+**Title (ZH)**: 使用无偏变换的鲁棒花卉簇匹配 
+
+**Authors**: Andy Chu, Rashik Shrestha, Yu Gu, Jason N. Gross  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.20631)  
+
+**Abstract**: Monitoring flowers over time is essential for precision robotic pollination in agriculture. To accomplish this, a continuous spatial-temporal observation of plant growth can be done using stationary RGB-D cameras. However, image registration becomes a serious challenge due to changes in the visual appearance of the plant caused by the pollination process and occlusions from growth and camera angles. Plants flower in a manner that produces distinct clusters on branches. This paper presents a method for matching flower clusters using descriptors generated from RGB-D data and considers allowing for spatial uncertainty within the cluster. The proposed approach leverages the Unscented Transform to efficiently estimate plant descriptor uncertainty tolerances, enabling a robust image-registration process despite temporal changes. The Unscented Transform is used to handle the nonlinear transformations by propagating the uncertainty of flower positions to determine the variations in the descriptor domain. A Monte Carlo simulation is used to validate the Unscented Transform results, confirming our method's effectiveness for flower cluster matching. Therefore, it can facilitate improved robotics pollination in dynamic environments. 
+
+**Abstract (ZH)**: 持续监测植物花朵对农业中的精准机器人授粉至关重要。为了实现这一目标，可以使用固定安装的RGB-D相机进行植物生长的连续时空观察。然而，由于授粉过程导致植物视觉外观变化以及生长引发的遮挡和相机角度等因素，图像配准成为了一个严重挑战。植物花朵会在枝条上形成独特的簇状结构。本文提出了一种基于RGB-D数据生成描述符匹配花朵簇的方法，并考虑了簇内部的时空不确定性。所提出的方法利用无迹变换高效估计植物描述符的不确定性容忍度，从而在时间变化的情况下实现稳健的图像配准。无迹变换通过传播花朵位置的不确定性以确定描述符域的变化来处理非线性变换。利用蒙特卡洛仿真验证了无迹变换的结果，确认了该方法在花朵簇匹配方面的有效性。因此，它能够促进动态环境中机器人授粉的改进。 
+
+---
+# Learning Scene-Level Signed Directional Distance Function with Ellipsoidal Priors and Neural Residuals 
+
+**Title (ZH)**: 基于椭球先验和神经残差的学习场景级-signed方向距离函数 
+
+**Authors**: Zhirui Dai, Hojoon Shin, Yulun Tian, Ki Myung Brian Lee, Nikolay Atanasov  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.20066)  
+
+**Abstract**: Dense geometric environment representations are critical for autonomous mobile robot navigation and exploration. Recent work shows that implicit continuous representations of occupancy, signed distance, or radiance learned using neural networks offer advantages in reconstruction fidelity, efficiency, and differentiability over explicit discrete representations based on meshes, point clouds, and voxels. In this work, we explore a directional formulation of signed distance, called signed directional distance function (SDDF). Unlike signed distance function (SDF) and similar to neural radiance fields (NeRF), SDDF has a position and viewing direction as input. Like SDF and unlike NeRF, SDDF directly provides distance to the observed surface along the direction, rather than integrating along the view ray, allowing efficient view synthesis. To learn and predict scene-level SDDF efficiently, we develop a differentiable hybrid representation that combines explicit ellipsoid priors and implicit neural residuals. This approach allows the model to effectively handle large distance discontinuities around obstacle boundaries while preserving the ability for dense high-fidelity prediction. We show that SDDF is competitive with the state-of-the-art neural implicit scene models in terms of reconstruction accuracy and rendering efficiency, while allowing differentiable view prediction for robot trajectory optimization. 
+
+**Abstract (ZH)**: 密集的几何环境表示对于自主移动机器人导航和探索至关重要。近年来的工作表明，神经网络学习的占用度、带符号距离或辐射度的隐式连续表示在重建保真度、效率和可微性方面优于基于网格、点云和体素的显式离散表示。在本文中，我们探索了一种带方向的带符号距离的表示形式，称为带方向的带符号距离函数（SDDF）。不同于带符号距离函数（SDF）且类似于神经辐射场（NeRF），SDDF 拥有位置和视图方向作为输入。类似于 SDF 但不同于 NeRF，SDDF 可直接提供沿方向与观察表面之间的距离，而不是沿视光线积分，从而实现高效的视图合成。为了高效地学习和预测场景级别的 SDDF，我们开发了一种可微混合表示，结合显式的椭球先验和隐式的神经残差。这种方法使模型能够有效地处理障碍物边界附近的大量距离不连续性，同时保持密集高保真预测的能力。我们展示了 SDDF 在重建准确性和渲染效率方面与当前最先进的神经隐式场景模型相当，同时允许可微视图预测以用于机器人轨迹优化。 
+
+---
+# Synthetic-to-Real Self-supervised Robust Depth Estimation via Learning with Motion and Structure Priors 
+
+**Title (ZH)**: 基于运动和结构先验的合成到真实自监督稳健深度估计 
+
+**Authors**: Weilong Yan, Ming Li, Haipeng Li, Shuwei Shao, Robby T. Tan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.20211)  
+
+**Abstract**: Self-supervised depth estimation from monocular cameras in diverse outdoor conditions, such as daytime, rain, and nighttime, is challenging due to the difficulty of learning universal representations and the severe lack of labeled real-world adverse data. Previous methods either rely on synthetic inputs and pseudo-depth labels or directly apply daytime strategies to adverse conditions, resulting in suboptimal results. In this paper, we present the first synthetic-to-real robust depth estimation framework, incorporating motion and structure priors to capture real-world knowledge effectively. In the synthetic adaptation, we transfer motion-structure knowledge inside cost volumes for better robust representation, using a frozen daytime model to train a depth estimator in synthetic adverse conditions. In the innovative real adaptation, which targets to fix synthetic-real gaps, models trained earlier identify the weather-insensitive regions with a designed consistency-reweighting strategy to emphasize valid pseudo-labels. We introduce a new regularization by gathering explicit depth distributions to constrain the model when facing real-world data. Experiments show that our method outperforms the state-of-the-art across diverse conditions in multi-frame and single-frame evaluations. We achieve improvements of 7.5% and 4.3% in AbsRel and RMSE on average for nuScenes and Robotcar datasets (daytime, nighttime, rain). In zero-shot evaluation of DrivingStereo (rain, fog), our method generalizes better than the previous ones. 
+
+**Abstract (ZH)**: 单目相机在多样室外条件下的自监督深度估计：挑战与方法 
+
+---
+# Extendable Long-Horizon Planning via Hierarchical Multiscale Diffusion 
+
+**Title (ZH)**: 基于分层多尺度扩散的可扩展长时规划 
+
+**Authors**: Chang Chen, Hany Hamed, Doojin Baek, Taegu Kang, Yoshua Bengio, Sungjin Ahn  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.20102)  
+
+**Abstract**: This paper tackles a novel problem, extendable long-horizon planning-enabling agents to plan trajectories longer than those in training data without compounding errors. To tackle this, we propose the Hierarchical Multiscale Diffuser (HM-Diffuser) and Progressive Trajectory Extension (PTE), an augmentation method that iteratively generates longer trajectories by stitching shorter ones. HM-Diffuser trains on these extended trajectories using a hierarchical structure, efficiently handling tasks across multiple temporal scales. Additionally, we introduce Adaptive Plan Pondering and the Recursive HM-Diffuser, which consolidate hierarchical layers into a single model to process temporal scales recursively. Experimental results demonstrate the effectiveness of our approach, advancing diffusion-based planners for scalable long-horizon planning. 
+
+**Abstract (ZH)**: 本文解决了一个新颖的问题，使可扩展长时间规划的智能体能够在不累积误差的情况下规划比训练数据更长的轨迹。为此，我们提出了一种层次多尺度扩散器（HM-Diffuser）和渐进轨迹扩展（PTE）方法，该方法通过缝合较短的轨迹来迭代生成更长的轨迹。HM-Diffuser使用层次结构在这些扩展的轨迹上进行训练，高效地处理多种时空尺度的任务。此外，我们还引入了自适应计划沉思和递归层次多尺度扩散器，将层次结构中的多个层合并为一个模型以递归处理时空尺度。实验结果展示了我们方法的有效性，推动了基于扩散的规划器在可扩展长时间规划中的应用。 
+
+---

@@ -1,0 +1,156 @@
+# Data-Driven Contact-Aware Control Method for Real-Time Deformable Tool Manipulation: A Case Study in the Environmental Swabbing 
+
+**Title (ZH)**: 基于数据驱动的接触感知控制方法在实时可变形工具操作中的应用：以环境拭子为例 
+
+**Authors**: Siavash Mahmoudi, Amirreza Davar, Dongyi Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.21491)  
+
+**Abstract**: Deformable Object Manipulation (DOM) remains a critical challenge in robotics due to the complexities of developing suitable model-based control strategies. Deformable Tool Manipulation (DTM) further complicates this task by introducing additional uncertainties between the robot and its environment. While humans effortlessly manipulate deformable tools using touch and experience, robotic systems struggle to maintain stability and precision. To address these challenges, we present a novel State-Adaptive Koopman LQR (SA-KLQR) control framework for real-time deformable tool manipulation, demonstrated through a case study in environmental swab sampling for food safety. This method leverages Koopman operator-based control to linearize nonlinear dynamics while adapting to state-dependent variations in tool deformation and contact forces. A tactile-based feedback system dynamically estimates and regulates the swab tool's angle, contact pressure, and surface coverage, ensuring compliance with food safety standards. Additionally, a sensor-embedded contact pad monitors force distribution to mitigate tool pivoting and deformation, improving stability during dynamic interactions. Experimental results validate the SA-KLQR approach, demonstrating accurate contact angle estimation, robust trajectory tracking, and reliable force regulation. The proposed framework enhances precision, adaptability, and real-time control in deformable tool manipulation, bridging the gap between data-driven learning and optimal control in robotic interaction tasks. 
+
+**Abstract (ZH)**: 变形物体操作（DOM）仍然是机器人技术中的一个关键挑战，由于开发合适的模型基于控制策略复杂性高。变形工具操作（DTM）进一步增加了这一任务的复杂性，引入了更多机器人与其环境之间的不确定性。尽管人类能够通过触觉和经验轻松操作变形工具，但机器人系统在保持稳定性和精确性方面面临困难。为应对这些挑战，我们提出了一种新的状态自适应Koopman LQR（SA-KLQR）控制框架，用于实时变形工具操作，并通过食品安全环境采样案例研究进行了演示。该方法利用Koopman算子控制来线性化非线性动态模型，并适应工具变形和接触力的状态依赖性变化。基于触觉的反馈系统动态估计和调节拭子工具的角度、接触压力和表面覆盖，确保符合食品安全标准。此外，嵌入传感器的接触垫监控力分布，以减少工具偏转和变形，提高动态交互过程中的稳定性。实验结果验证了SA-KLQR方法，展示了准确的接触角度估计、鲁棒的轨迹跟踪和可靠的力调节。所提出的框架增强了变形工具操作的精度、适应性和实时控制能力，实现了数据驱动学习与机器人交互任务最优控制之间的桥梁。 
+
+---
+# A Data-Driven Method for INS/DVL Alignment 
+
+**Title (ZH)**: 基于数据驱动的方法实现INS/DVL对准 
+
+**Authors**: Guy Damari, Itzik Klein  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.21350)  
+
+**Abstract**: Autonomous underwater vehicles (AUVs) are sophisticated robotic platforms crucial for a wide range of applications. The accuracy of AUV navigation systems is critical to their success. Inertial sensors and Doppler velocity logs (DVL) fusion is a promising solution for long-range underwater navigation. However, the effectiveness of this fusion depends heavily on an accurate alignment between the inertial sensors and the DVL. While current alignment methods show promise, there remains significant room for improvement in terms of accuracy, convergence time, and alignment trajectory efficiency. In this research we propose an end-to-end deep learning framework for the alignment process. By leveraging deep-learning capabilities, such as noise reduction and capture of nonlinearities in the data, we show using simulative data, that our proposed approach enhances both alignment accuracy and reduces convergence time beyond current model-based methods. 
+
+**Abstract (ZH)**: 自主水下车辆（AUVs）是广泛应用场景中有重要地位的复杂机器人平台。AUV导航系统的准确性对其成功至关重要。惯性传感器和多普勒 velocity 记录仪（DVL）的融合是一种长距离水下导航的有前景解决方案。然而，这种融合的有效性在很大程度上取决于惯性传感器和DVL之间的精确对准。尽管现有的对准方法显示出潜力，但在准确度、收敛时间和对准轨迹效率方面仍有很大的改进空间。在本研究中，我们提出了一种端到端的深度学习框架用于对准过程。通过利用深度学习能力，如噪声抑制和数据中的非线性特征捕获，我们使用模拟数据表明，我们提出的方法在提高对准准确度和减少收敛时间方面超越了当前基于模型的方法。 
+
+---
+# Lidar-only Odometry based on Multiple Scan-to-Scan Alignments over a Moving Window 
+
+**Title (ZH)**: 基于移动窗口多扫描匹配对齐的lidar-only里程计 
+
+**Authors**: Aaron Kurda, Simon Steuernagel, Marcus Baum  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.21293)  
+
+**Abstract**: Lidar-only odometry considers the pose estimation of a mobile robot based on the accumulation of motion increments extracted from consecutive lidar scans. Many existing approaches to the problem use a scan-to-map registration, which neglects the accumulation of errors within the maintained map due to drift. Other methods use a refinement step that jointly optimizes the local map on a feature basis. We propose a solution that avoids this by using multiple independent scan-to-scan Iterative Closest Points (ICP) registrations to previous scans in order to derive constraints for a pose graph. The optimization of the pose graph then not only yields an accurate estimate for the latest pose, but also enables the refinement of previous scans in the optimization window. By avoiding the need to recompute the scan-to-scan alignments, the computational load is minimized. Extensive evaluation on the public KITTI and MulRan datasets as well as on a custom automotive lidar dataset is carried out. Results show that the proposed approach achieves state-of-the-art estimation accuracy, while alleviating the mentioned issues. 
+
+**Abstract (ZH)**: 基于lidar-only的里程计考虑的是通过连续lidar扫描提取的运动增量累积进行移动机器人姿态估计。现有的许多方法使用扫描到地图的注册，忽视了在维护地图过程中累积的由漂移引起的误差。其他方法采用在特征基础上联合优化局部地图的精化步骤。我们提出了一种解决方案，通过使用与之前扫描多次独立的Iterative Closest Points (ICP)注册来推导姿态图的约束条件，从而避免了上述方法。然后对姿态图的优化不仅提供了最新姿态的准确估计，还使优化窗口内的先前扫描得到精化。通过避免重新计算扫描到扫描的对齐，计算负载得以最小化。我们在公共的KITTIX和MulRan数据集以及一个定制的汽车lidar数据集上进行了广泛的评估。结果显示，所提出的方案在估计准确性上达到了最新水平，并解决了上述提到的问题。 
+
+---
+# An analysis of higher-order kinematics formalisms for an innovative surgical parallel robot 
+
+**Title (ZH)**: 创新手术并联机器人高阶运动学 formalisms 分析 
+
+**Authors**: Calin Vaida, Iosif Birlescu, Bogdan Gherman, Daniel Condurache, Damien Chablat, Doina Pisla  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.21291)  
+
+**Abstract**: The paper presents a novel modular hybrid parallel robot for pancreatic surgery and its higher-order kinematics derived based on various formalisms. The classical vector, homogeneous transformation matrices and dual quaternion approaches are studied for the kinematic functions using both classical differentiation and multidual algebra. The algorithms for inverse kinematics for all three studied formalisms are presented for both differentiation and multidual algebra approaches. Furthermore, these algorithms are compared based on numerical stability, execution times and number and type of mathematical functions and operators contained in each algorithm. A statistical analysis shows that there is significant improvement in execution time for the algorithms implemented using multidual algebra, while the numerical stability is appropriate for all algorithms derived based on differentiation and multidual algebra. While the implementation of the kinematic algorithms using multidual algebra shows positive results when benchmarked on a standard PC, further work is required to evaluate the multidual algorithms on hardware/software used for the modular parallel robot command and control. 
+
+**Abstract (ZH)**: 基于多种表示形式的胰腺手术模块化混合并行机器人及其高阶运动学研究 
+
+---
+# Haptic bilateral teleoperation system for free-hand dental procedures 
+
+**Title (ZH)**: 基于自由手操作的触觉双边遥操作系统 
+
+**Authors**: Lorenzo Pagliara, Enrico Ferrentino, Andrea Chiacchio, Giovanni Russo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.21288)  
+
+**Abstract**: Free-hand dental procedures are typically repetitive, time-consuming and require high precision and manual dexterity. Dental robots can play a key role in improving procedural accuracy and safety, enhancing patient comfort, and reducing operator workload. However, robotic solutions for free-hand procedures remain limited or completely lacking, and their acceptance is still low. To address this gap, we develop a haptic bilateral teleoperation system (HBTS) for free-hand dental procedures. The system includes a dedicated mechanical end-effector, compatible with standard clinical tools, and equipped with an endoscopic camera for improved visibility of the intervention site. By ensuring motion and force correspondence between the operator's actions and the robot's movements, monitored through visual feedback, we enhance the operator's sensory awareness and motor accuracy. Furthermore, recognizing the need to ensure procedural safety, we limit interaction forces by scaling the motion references provided to the admittance controller based solely on measured contact forces. This ensures effective force limitation in all contact states without requiring prior knowledge of the environment. The proposed HBTS is validated in a dental scaling procedure using a dental phantom. The results show that the system improves the naturalness, safety, and accuracy of teleoperation, highlighting its potential to enhance free-hand dental procedures. 
+
+**Abstract (ZH)**: 自由手口腔手术的触觉双边遥操作系统：提高手术准确性与安全性 
+
+---
+# Dimensional optimization of single-DOF planar rigid link-flapping mechanisms for high lift and low power 
+
+**Title (ZH)**: 单自由度平面刚性连杆拍动机制的维度优化以实现高升力和低功率 
+
+**Authors**: Shyam Sunder Nishad, Anupam Saxena  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.21204)  
+
+**Abstract**: Rigid link flapping mechanisms remain the most practical choice for flapping wing micro-aerial vehicles (MAVs) to carry useful payloads and onboard batteries for free flight due to their long-term durability and reliability. However, to achieve high agility and maneuverability-like insects-MAVs with these mechanisms require significant weight reduction. One approach involves using single-DOF planar rigid linkages, which are rarely optimized dimensionally for high lift and low power so that smaller motors and batteries could be used. We integrated a mechanism simulator based on a quasistatic nonlinear finite element method with an unsteady vortex lattice method-based aerodynamic analysis tool within an optimization routine. We optimized three different mechanism topologies from the literature. As a result, significant power savings were observed up to 42% in some cases, due to increased amplitude and higher lift coefficients resulting from optimized asymmetric sweeping velocity profiles. We also conducted an uncertainty analysis that revealed the need for high manufacturing tolerances to ensure reliable mechanism performance. The presented unified computational tool also facilitates the optimal selection of MAV components based on the payload and flight time requirements. 
+
+**Abstract (ZH)**: 柔性连接摆动机制仍然是飞行时间长且可靠的微型空中车辆（MAVs）携带有效载荷和机载电池进行自由飞行的最实用选择。然而，为了实现类似于昆虫的高敏捷性和机动性，具有这些机制的MAVs需要显著减轻重量。一种方法是使用单自由度平面刚性连杆，这些连杆很少从高升力和低功率的角度优化尺寸，以便可以使用更小的电机和电池。我们结合了一种基于拟静态非线性有限元法的机制模拟器和一种基于不均匀漩涡网法的气动分析工具，用于优化过程。我们优化了来自文献的三种不同的机制拓扑结构。结果表明，由于优化的非对称扫掠速度剖面导致升幅增加和更高的升力系数，在某些情况下观察到高达42%的功率节省。我们还进行了不确定性分析，揭示了为了确保机制性能的可靠性，需要高制造公差。所展示的统一计算工具也有助于根据有效载荷和飞行时间要求来优化MAV组件的选择。 
+
+---
+# TAGA: A Tangent-Based Reactive Approach for Socially Compliant Robot Navigation Around Human Groups 
+
+**Title (ZH)**: 基于切线的反应式方法：面向人类群体的社会合规机器人导航 
+
+**Authors**: Utsha Kumar Roy, Sejuti Rahman  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.21168)  
+
+**Abstract**: Robot navigation in densely populated environments presents significant challenges, particularly regarding the interplay between individual and group dynamics. Current navigation models predominantly address interactions with individual pedestrians while failing to account for human groups that naturally form in real-world settings. Conversely, the limited models implementing group-aware navigation typically prioritize group dynamics at the expense of individual interactions, both of which are essential for socially appropriate navigation. This research extends an existing simulation framework to incorporate both individual pedestrians and human groups. We present Tangent Action for Group Avoidance (TAGA), a modular reactive mechanism that can be integrated with existing navigation frameworks to enhance their group-awareness capabilities. TAGA dynamically modifies robot trajectories using tangent action-based avoidance strategies while preserving the underlying model's capacity to navigate around individuals. Additionally, we introduce Group Collision Rate (GCR), a novel metric to quantitatively assess how effectively robots maintain group integrity during navigation. Through comprehensive simulation-based benchmarking, we demonstrate that integrating TAGA with state-of-the-art navigation models (ORCA, Social Force, DS-RNN, and AG-RL) reduces group intrusions by 45.7-78.6% while maintaining comparable success rates and navigation efficiency. Future work will focus on real-world implementation and validation of this approach. 
+
+**Abstract (ZH)**: 密人群体中机器人的导航面临显著挑战，特别是个体与群体动力学之间的相互作用。当前的导航模型主要关注与单独行人的互动，而忽略了真实环境中自然形成的行人群体。相比之下，少数采用群体意识导航的模型往往在个体互动方面有所忽视，而个体互动对于社会适配的导航同样至关重要。本研究扩展了一个现有的仿真框架，以同时考虑单独行人的行为和人类群体。我们提出了Tangent Action for Group Avoidance (TAGA)，这是一种模块化的反应机制，可以根据现有的导航框架增强其群体意识能力。TAGA通过基于切线动作的规避策略动态修改机器人轨迹，同时保持基础模型绕过单独行人导航的能力。此外，我们引入了Group Collision Rate (GCR) 作为新的度量标准，以定量评估机器人在导航过程中维持群体完整性的有效性。通过全面的基于仿真的基准测试，我们证明将TAGA与最先进的导航模型（ORCA、社会力模型、DS-RNN和AG-RL）集成后，可以将群体入侵率降低45.7%-78.6%，同时保持相似的成功率和导航效率。未来的工作将集中在该方法的实际应用和验证上。 
+
+---
+# Safe Human Robot Navigation in Warehouse Scenario 
+
+**Title (ZH)**: 仓储场景中安全的人机导航 
+
+**Authors**: Seth Farrell, Chenghao Li, Hongzhan Yu, Ryo Yoshimitsu, Sicun Gao, Henrik I. Christensen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.21141)  
+
+**Abstract**: The integration of autonomous mobile robots (AMRs) in industrial environments, particularly warehouses, has revolutionized logistics and operational efficiency. However, ensuring the safety of human workers in dynamic, shared spaces remains a critical challenge. This work proposes a novel methodology that leverages control barrier functions (CBFs) to enhance safety in warehouse navigation. By integrating learning-based CBFs with the Open Robotics Middleware Framework (OpenRMF), the system achieves adaptive and safety-enhanced controls in multi-robot, multi-agent scenarios. Experiments conducted using various robot platforms demonstrate the efficacy of the proposed approach in avoiding static and dynamic obstacles, including human pedestrians. Our experiments evaluate different scenarios in which the number of robots, robot platforms, speed, and number of obstacles are varied, from which we achieve promising performance. 
+
+**Abstract (ZH)**: 自主移动机器人（AMRs）在工业环境中的集成，尤其是在仓库中的应用，已经革新了物流和运营效率。然而，在动态共享空间中确保人类工人的安全仍然是一个关键挑战。本工作提出了一种新颖的方法，利用控制障碍函数（CBFs）来增强仓库导航中的安全性。通过将基于学习的CBFs与Open Robotics Middleware Framework（OpenRMF）集成，系统在多机器人、多代理场景中实现了适应性和增强的安全控制。使用各种机器人平台进行的实验展示了所提方法在避免静态和动态障碍物（包括人类行人）方面的有效性。我们的实验评估了不同场景下的性能，包括机器人数量、平台类型、速度和障碍物数量的变化，取得了令人鼓舞的结果。 
+
+---
+# Pellet-based 3D Printing of Soft Thermoplastic Elastomeric Membranes for Soft Robotic Applications 
+
+**Title (ZH)**: 基于颗粒的3D打印软热塑性弹性体膜材料在软机器人应用中的研究 
+
+**Authors**: Nick Willemstein, Herman van der Kooij, Ali Sadeghi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.20957)  
+
+**Abstract**: Additive Manufacturing (AM) is a promising solution for handling the complexity of fabricating soft robots. However, the AM of hyperelastic materials is still challenging with limited material types. Within this work, pellet-based 3D printing of very soft thermoplastic elastomers (TPEs) was explored. Our results show that TPEs can have similar engineering stress and maximum strain as Ecoflex OO-10. These TPEs were used to 3D-print airtight thin membranes (0.2-1.2 mm), which could inflate up to a stretch of 1320\%. Combining the membrane's large expansion and softness with the 3D printing of hollow structures simplified the design of a bending actuator that can bend 180 degrees and reach a blocked force of 238 times its weight. In addition, by 3D printing TPE pellets and rigid filaments, the soft membrane could grasp objects by enveloping an object or as a sensorized sucker, which relied on the TPE's softness to conform to the object or act as a seal. In addition, the membrane of the sucker was utilized as a tactile sensor to detect an object before adhesion. These results suggest the feasibility of 3D printing soft robots by using soft TPEs and membranes as an interesting class of materials and sensorized actuators, respectively. 
+
+**Abstract (ZH)**: 基于颗粒的3D打印超软热塑性弹性体以制造软机器人：一种有前景的解决方案 
+
+---
+# A Study of Perceived Safety for Soft Robotics in Caregiving Tasks 
+
+**Title (ZH)**: 软机器人在照护任务中感知安全性研究 
+
+**Authors**: Cosima du Pasquier, Jennifer Grannen, Chuer Pan, Serin L. Huber, Aliyah Smith, Monroe Kennedy, Shuran Song, Dorsa Sadigh, Allison M. Okamura  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.20916)  
+
+**Abstract**: In this project, we focus on human-robot interaction in caregiving scenarios like bathing, where physical contact is inevitable and necessary for proper task execution because force must be applied to the skin. Using finite element analysis, we designed a 3D-printed gripper combining positive and negative pressure for secure yet compliant handling. Preliminary tests showed it exerted a lower, more uniform pressure profile than a standard rigid gripper. In a user study, participants' trust in robots significantly increased after they experienced a brief bathing demonstration performed by a robotic arm equipped with the soft gripper. These results suggest that soft robotics can enhance perceived safety and acceptance in intimate caregiving scenarios. 
+
+**Abstract (ZH)**: 本研究专注于沐浴等护理场景中的机器人交互，通过有限元分析设计了一个结合正压和负压的3D打印夹爪，以实现安全且柔顺的抓持。初步测试显示，该夹爪施加的压力分布更为均匀且较小，低于标准刚性夹爪。在用户研究中，参与者在体验配备软夹爪的机器人手臂进行简短沐浴演示后，对机器人的信任度显著增加。这些结果表明，软体机器人可以在亲密护理场景中提高感知安全性和接受度。 
+
+---
+# Benchmarking Multi-Object Grasping 
+
+**Title (ZH)**: 多目标抓取基准测试 
+
+**Authors**: Tianze Chen, Ricardo Frumento, Giulia Pagnanelli, Gianmarco Cei, Villa Keth, Shahadding Gafarov, Jian Gong, Zihe Ye, Marco Baracca, Salvatore D'Avella, Matteo Bianchi, Yu Sun  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.20820)  
+
+**Abstract**: In this work, we describe a multi-object grasping benchmark to evaluate the grasping and manipulation capabilities of robotic systems in both pile and surface scenarios. The benchmark introduces three robot multi-object grasping benchmarking protocols designed to challenge different aspects of robotic manipulation. These protocols are: 1) the Only-Pick-Once protocol, which assesses the robot's ability to efficiently pick multiple objects in a single attempt; 2) the Accurate pick-trnsferring protocol, which evaluates the robot's capacity to selectively grasp and transport a specific number of objects from a cluttered environment; and 3) the Pick-transferring-all protocol, which challenges the robot to clear an entire scene by sequentially grasping and transferring all available objects. These protocols are intended to be adopted by the broader robotics research community, providing a standardized method to assess and compare robotic systems' performance in multi-object grasping tasks. We establish baselines for these protocols using standard planning and perception algorithms on a Barrett hand, Robotiq parallel jar gripper, and the Pisa/IIT Softhand-2, which is a soft underactuated robotic hand. We discuss the results in relation to human performance in similar tasks we well. 
+
+**Abstract (ZH)**: 本研究介绍了多目标抓取基准测试，以评估机器人系统在堆叠和表面场景中的抓取和操作能力。该基准测试提出了三种旨在挑战机器人操作不同方面的抓取与操作协议。这些协议包括：1）一次性抓取协议，评估机器人一次尝试中高效抓取多个对象的能力；2）精确抓取转移协议，评估机器人在杂乱环境中选择性抓取和运输特定数量对象的能力；3）全面抓取转移协议，挑战机器人依次抓取并转移场景中所有可用对象的能力。这些协议旨在被更广泛的机器人研究社区采用，提供一种标准化方法来评估和比较机器人系统在多目标抓取任务中的性能。我们使用标准规划和感知算法在Barrett手、Robotiq平行夹爪 gripper以及Pisa/IIT SoftHand-2（一种软欠驱动机器人手）上建立了这些协议的基础性能。我们还将结果与人类在类似任务中的表现进行了比较。 
+
+---
+# Exploring Interference between Concurrent Skin Stretches 
+
+**Title (ZH)**: 探索并发皮肤拉伸之间的干扰 
+
+**Authors**: Ching Hei Cheng, Jonathan Eden, Denny Oetomo, Ying Tan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2503.21044)  
+
+**Abstract**: Proprioception is essential for coordinating human movements and enhancing the performance of assistive robotic devices. Skin stretch feedback, which closely aligns with natural proprioception mechanisms, presents a promising method for conveying proprioceptive information. To better understand the impact of interference on skin stretch perception, we conducted a user study with 30 participants that evaluated the effect of two simultaneous skin stretches on user perception. We observed that when participants experience simultaneous skin stretch stimuli, a masking effect occurs which deteriorates perception performance in the collocated skin stretch configurations. However, the perceived workload stays the same. These findings show that interference can affect the perception of skin stretch such that multi-channel skin stretch feedback designs should avoid locating modules in close proximity. 
+
+**Abstract (ZH)**: 本体感觉对于协调人类运动和增强辅助机器人设备性能至关重要。与自然本体感觉机制紧密吻合的皮肤拉伸反馈提供了一种有潜力的方法来传达本体感觉信息。为了更好地理解干扰对面部皮肤拉伸感知的影响，我们进行了一个包含30名参与者的用户研究，评估了双通道皮肤拉伸对用户感知的影响。我们发现，当参与者同时经历来自同一位置的皮肤拉伸刺激时，会出现掩蔽效应，从而恶化感知性能。然而，感知的工作负载保持不变。这些发现表明，干扰可以影响皮肤拉伸的感知，因此多通道皮肤拉伸反馈设计应避免将模块放置在相近位置。 
+
+---
