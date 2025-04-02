@@ -4,6 +4,13 @@
 
 | Date | Link | Number of Papers |
 |:----:|:----:|:----------------:|
+| 2-Apr-2025 | [Link](https://github.com/KJaebye/EmbodiedAI-Robotics-arXiv-Daily-Reporter/tree/main/2-Apr-2025) | 174 |
+| 1-Apr-2025 | [Link](https://github.com/KJaebye/EmbodiedAI-Robotics-arXiv-Daily-Reporter/tree/main/1-Apr-2025) | 295 |
+| 7-Mar-2025 | [Link](https://github.com/KJaebye/EmbodiedAI-Robotics-arXiv-Daily-Reporter/tree/main/7-Mar-2025) | 175 |
+| 6-Mar-2025 | [Link](https://github.com/KJaebye/EmbodiedAI-Robotics-arXiv-Daily-Reporter/tree/main/6-Mar-2025) | 144 |
+| 5-Mar-2025 | [Link](https://github.com/KJaebye/EmbodiedAI-Robotics-arXiv-Daily-Reporter/tree/main/5-Mar-2025) | 242 |
+| 4-Mar-2025 | [Link](https://github.com/KJaebye/EmbodiedAI-Robotics-arXiv-Daily-Reporter/tree/main/4-Mar-2025) | 421 |
+| 3-Mar-2025 | [Link](https://github.com/KJaebye/EmbodiedAI-Robotics-arXiv-Daily-Reporter/tree/main/3-Mar-2025) | 158 |
 | 1-Apr-2025 | [Link](https://github.com/KJaebye/EmbodiedAI-Robotics-arXiv-Daily-Reporter/tree/main/1-Apr-2025) | 295 |
 | 7-Mar-2025 | [Link](https://github.com/KJaebye/EmbodiedAI-Robotics-arXiv-Daily-Reporter/tree/main/7-Mar-2025) | 175 |
 | 6-Mar-2025 | [Link](https://github.com/KJaebye/EmbodiedAI-Robotics-arXiv-Daily-Reporter/tree/main/6-Mar-2025) | 144 |

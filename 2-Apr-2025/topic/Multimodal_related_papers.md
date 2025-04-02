@@ -1,0 +1,52 @@
+# A Survey on Music Generation from Single-Modal, Cross-Modal, and Multi-Modal Perspectives: Data, Methods, and Challenges 
+
+**Title (ZH)**: 单模态、跨模态和多模态视角下的音乐生成综述：数据、方法与挑战 
+
+**Authors**: Shuyu Li, Shulei Ji, Zihao Wang, Songruoyao Wu, Jiaxing Yu, Kejun Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.00837)  
+
+**Abstract**: Multi-modal music generation, using multiple modalities like images, video, and text alongside musical scores and audio as guidance, is an emerging research area with broad applications. This paper reviews this field, categorizing music generation systems from the perspective of modalities. It covers modality representation, multi-modal data alignment, and their utilization to guide music generation. We also discuss current datasets and evaluation methods. Key challenges in this area include effective multi-modal integration, large-scale comprehensive datasets, and systematic evaluation methods. Finally, we provide an outlook on future research directions focusing on multi-modal fusion, alignment, data, and evaluation. 
+
+**Abstract (ZH)**: 多模态音乐生成：利用图像、视频、文本等多种模态与音乐谱和音频作为指导的多模态音乐生成是一个新兴的研究领域，具有广泛的應用。本文从模态的角度回顾该领域，涵盖模态表示、多模态数据对齐及其在音乐生成中的应用，并讨论了当前的数据集和评估方法。该领域面临的挑战包括有效的多模态集成、大规模综合数据集和系统的评估方法。最后，本文展望了未来研究方向，集中在多模态融合、对齐、数据和评估方面。 
+
+---
+# Multimodal LLMs for OCR, OCR Post-Correction, and Named Entity Recognition in Historical Documents 
+
+**Title (ZH)**: 多模态LLM在历史文档中的OCR、OCR后修正及命名实体识别 
+
+**Authors**: Gavin Greif, Niclas Griesshaber, Robin Greif  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.00414)  
+
+**Abstract**: We explore how multimodal Large Language Models (mLLMs) can help researchers transcribe historical documents, extract relevant historical information, and construct datasets from historical sources. Specifically, we investigate the capabilities of mLLMs in performing (1) Optical Character Recognition (OCR), (2) OCR Post-Correction, and (3) Named Entity Recognition (NER) tasks on a set of city directories published in German between 1754 and 1870. First, we benchmark the off-the-shelf transcription accuracy of both mLLMs and conventional OCR models. We find that the best-performing mLLM model significantly outperforms conventional state-of-the-art OCR models and other frontier mLLMs. Second, we are the first to introduce multimodal post-correction of OCR output using mLLMs. We find that this novel approach leads to a drastic improvement in transcription accuracy and consistently produces highly accurate transcriptions (<1% CER), without any image pre-processing or model fine-tuning. Third, we demonstrate that mLLMs can efficiently recognize entities in transcriptions of historical documents and parse them into structured dataset formats. Our findings provide early evidence for the long-term potential of mLLMs to introduce a paradigm shift in the approaches to historical data collection and document transcription. 
+
+**Abstract (ZH)**: 多模态大型语言模型在历史文档转录、信息提取和数据集构建中的应用：以1754年至1870年间出版的德语城市目录为例 
+
+---
+# Agentic Multimodal AI for Hyperpersonalized B2B and B2C Advertising in Competitive Markets: An AI-Driven Competitive Advertising Framework 
+
+**Title (ZH)**: 代理型多模态AI在竞争市场中的超个性化B2B和B2C广告：一种AI驱动的竞争广告框架 
+
+**Authors**: Sakhinana Sagar Srinivas, Akash Das, Shivam Gupta, Venkataramana Runkana  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.00338)  
+
+**Abstract**: The growing use of foundation models (FMs) in real-world applications demands adaptive, reliable, and efficient strategies for dynamic markets. In the chemical industry, AI-discovered materials drive innovation, but commercial success hinges on market adoption, requiring FM-driven advertising frameworks that operate in-the-wild. We present a multilingual, multimodal AI framework for autonomous, hyper-personalized advertising in B2B and B2C markets. By integrating retrieval-augmented generation (RAG), multimodal reasoning, and adaptive persona-based targeting, our system generates culturally relevant, market-aware ads tailored to shifting consumer behaviors and competition. Validation combines real-world product experiments with a Simulated Humanistic Colony of Agents to model consumer personas, optimize strategies at scale, and ensure privacy compliance. Synthetic experiments mirror real-world scenarios, enabling cost-effective testing of ad strategies without risky A/B tests. Combining structured retrieval-augmented reasoning with in-context learning (ICL), the framework boosts engagement, prevents market cannibalization, and maximizes ROAS. This work bridges AI-driven innovation and market adoption, advancing multimodal FM deployment for high-stakes decision-making in commercial marketing. 
+
+**Abstract (ZH)**: 基础模型在实际应用中的日益增长促使我们需要适应性强、可靠且高效的动态市场策略。在化工行业中，AI发现的材料推动创新，但商业成功取决于市场接受度，因此需要由基础模型驱动的能够在野操作的广告框架。我们提出了一种跨语言、跨模态的AI框架，用于B2B和B2C市场的自主超个性化广告。通过整合检索增强生成（RAG）、跨模态推理和自适应角色定向，我们的系统生成了与文化相关的、市场意识强的广告，这些广告能够适应不断变化的消费者行为和竞争态势。验证结合了现实世界的产品实验与仿真人文型代理群体，用于建模消费者角色、大规模优化策略并确保隐私合规。合成实验镜像现实世界场景，能够在不进行风险较高的A/B测试的情况下，经济有效地测试广告策略。结合结构化检索增强推理与上下文学习（ICL），该框架增强了互动性，防止市场竞争侵蚀，并最大化了ROAS。这项工作将AI驱动的创新与市场接纳结合起来，推进了跨模态基础模型在商业营销中高风险决策中的应用部署。 
+
+---
+# GazeLLM: Multimodal LLMs incorporating Human Visual Attention 
+
+**Title (ZH)**: GazeLLM: 结合人类视觉注意力的多模态大模型 
+
+**Authors**: Jun Rekimoto  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.00221)  
+
+**Abstract**: Large Language Models (LLMs) are advancing into Multimodal LLMs (MLLMs), capable of processing image, audio, and video as well as text. Combining first-person video, MLLMs show promising potential for understanding human activities through video and audio, enabling many human-computer interaction and human-augmentation applications such as human activity support, real-world agents, and skill transfer to robots or other individuals. However, handling high-resolution, long-duration videos generates large latent representations, leading to substantial memory and processing demands, limiting the length and resolution MLLMs can manage. Reducing video resolution can lower memory usage but often compromises comprehension. This paper introduces a method that optimizes first-person video analysis by integrating eye-tracking data, and proposes a method that decomposes first-person vision video into sub areas for regions of gaze focus. By processing these selectively gazed-focused inputs, our approach achieves task comprehension equivalent to or even better than processing the entire image at full resolution, but with significantly reduced video data input (reduce the number of pixels to one-tenth), offering an efficient solution for using MLLMs to interpret and utilize human skills. 
+
+**Abstract (ZH)**: 大型语言模型正进而发展为多模态大语言模型，能够处理图像、音频和视频以及文本。结合第一人称视角视频，多模态大语言模型展示了通过视频和音频理解人类活动的潜力，这使得许多人类-计算机交互和人类增强应用成为可能，例如人类活动支持、真实世界代理和技能传递给机器人或其他个体。然而，处理高分辨率、长时间的视频会生成大量潜在表示，导致显著的内存和处理需求，限制了多模态大语言模型能够管理的视频长度和分辨率。降低视频分辨率可以减少内存使用，但往往会牺牲理解能力。本文提出了一种通过整合眼动数据优化第一人称视角视频分析的方法，并提出了一种将第一人称视角视频分解为关注区域的方法。通过处理这些选择性关注输入，我们的方法在不降低任务理解能力的前提下实现了全分辨率图像的处理效果，但视频数据输入大幅减少（像素数量减少至十分之一），提供了一个高效利用多模态大语言模型解释和应用人类技能的解决方案。 
+
+---
