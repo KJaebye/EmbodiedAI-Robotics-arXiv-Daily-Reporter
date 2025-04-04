@@ -1,0 +1,247 @@
+# Real-Time Navigation for Autonomous Aerial Vehicles Using Video 
+
+**Title (ZH)**: 基于视频的自主飞行器实时导航 
+
+**Authors**: Khizar Anjum, Parul Pandey, Vidyasagar Sadhu, Roberto Tron, Dario Pompili  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.01996)  
+
+**Abstract**: Most applications in autonomous navigation using mounted cameras rely on the construction and processing of geometric 3D point clouds, which is an expensive process. However, there is another simpler way to make a space navigable quickly: to use semantic information (e.g., traffic signs) to guide the agent. However, detecting and acting on semantic information involves Computer Vision~(CV) algorithms such as object detection, which themselves are demanding for agents such as aerial drones with limited onboard resources. To solve this problem, we introduce a novel Markov Decision Process~(MDP) framework to reduce the workload of these CV approaches. We apply our proposed framework to both feature-based and neural-network-based object-detection tasks, using open-loop and closed-loop simulations as well as hardware-in-the-loop emulations. These holistic tests show significant benefits in energy consumption and speed with only a limited loss in accuracy compared to models based on static features and neural networks. 
+
+**Abstract (ZH)**: 基于语义信息的自主导航简化方法与性能评估 
+
+---
+# All-day Depth Completion via Thermal-LiDAR Fusion 
+
+**Title (ZH)**: 全天候深度完成 via 红外-LiDAR 融合 
+
+**Authors**: Janghyun Kim, Minseong Kweon, Jinsun Park, Ukcheol Shin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.02356)  
+
+**Abstract**: Depth completion, which estimates dense depth from sparse LiDAR and RGB images, has demonstrated outstanding performance in well-lit conditions. However, due to the limitations of RGB sensors, existing methods often struggle to achieve reliable performance in harsh environments, such as heavy rain and low-light conditions. Furthermore, we observe that ground truth depth maps often suffer from large missing measurements in adverse weather conditions such as heavy rain, leading to insufficient supervision. In contrast, thermal cameras are known for providing clear and reliable visibility in such conditions, yet research on thermal-LiDAR depth completion remains underexplored. Moreover, the characteristics of thermal images, such as blurriness, low contrast, and noise, bring unclear depth boundary problems. To address these challenges, we first evaluate the feasibility and robustness of thermal-LiDAR depth completion across diverse lighting (eg., well-lit, low-light), weather (eg., clear-sky, rainy), and environment (eg., indoor, outdoor) conditions, by conducting extensive benchmarks on the MS$^2$ and ViViD datasets. In addition, we propose a framework that utilizes COntrastive learning and Pseudo-Supervision (COPS) to enhance depth boundary clarity and improve completion accuracy by leveraging a depth foundation model in two key ways. First, COPS enforces a depth-aware contrastive loss between different depth points by mining positive and negative samples using a monocular depth foundation model to sharpen depth boundaries. Second, it mitigates the issue of incomplete supervision from ground truth depth maps by leveraging foundation model predictions as dense depth priors. We also provide in-depth analyses of the key challenges in thermal-LiDAR depth completion to aid in understanding the task and encourage future research. 
+
+**Abstract (ZH)**: 热成像-激光雷达深度完成：跨光照、天气和环境条件的鲁棒性评估及对比学习与伪监督框架 
+
+---
+# MinkOcc: Towards real-time label-efficient semantic occupancy prediction 
+
+**Title (ZH)**: MinkOcc: 朝向实时、标签高效的语义占用预测 
+
+**Authors**: Samuel Sze, Daniele De Martini, Lars Kunze  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.02270)  
+
+**Abstract**: Developing 3D semantic occupancy prediction models often relies on dense 3D annotations for supervised learning, a process that is both labor and resource-intensive, underscoring the need for label-efficient or even label-free approaches. To address this, we introduce MinkOcc, a multi-modal 3D semantic occupancy prediction framework for cameras and LiDARs that proposes a two-step semi-supervised training procedure. Here, a small dataset of explicitly 3D annotations warm-starts the training process; then, the supervision is continued by simpler-to-annotate accumulated LiDAR sweeps and images -- semantically labelled through vision foundational models. MinkOcc effectively utilizes these sensor-rich supervisory cues and reduces reliance on manual labeling by 90\% while maintaining competitive accuracy. In addition, the proposed model incorporates information from LiDAR and camera data through early fusion and leverages sparse convolution networks for real-time prediction. With its efficiency in both supervision and computation, we aim to extend MinkOcc beyond curated datasets, enabling broader real-world deployment of 3D semantic occupancy prediction in autonomous driving. 
+
+**Abstract (ZH)**: 多模态3D语义占据预测框架MinkOcc：基于半监督学习的少量标注和实时预测 
+
+---
+# Concept Lancet: Image Editing with Compositional Representation Transplant 
+
+**Title (ZH)**: 概念柳叶刀：基于组合表示移植的图像编辑 
+
+**Authors**: Jinqi Luo, Tianjiao Ding, Kwan Ho Ryan Chan, Hancheng Min, Chris Callison-Burch, René Vidal  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.02828)  
+
+**Abstract**: Diffusion models are widely used for image editing tasks. Existing editing methods often design a representation manipulation procedure by curating an edit direction in the text embedding or score space. However, such a procedure faces a key challenge: overestimating the edit strength harms visual consistency while underestimating it fails the editing task. Notably, each source image may require a different editing strength, and it is costly to search for an appropriate strength via trial-and-error. To address this challenge, we propose Concept Lancet (CoLan), a zero-shot plug-and-play framework for principled representation manipulation in diffusion-based image editing. At inference time, we decompose the source input in the latent (text embedding or diffusion score) space as a sparse linear combination of the representations of the collected visual concepts. This allows us to accurately estimate the presence of concepts in each image, which informs the edit. Based on the editing task (replace/add/remove), we perform a customized concept transplant process to impose the corresponding editing direction. To sufficiently model the concept space, we curate a conceptual representation dataset, CoLan-150K, which contains diverse descriptions and scenarios of visual terms and phrases for the latent dictionary. Experiments on multiple diffusion-based image editing baselines show that methods equipped with CoLan achieve state-of-the-art performance in editing effectiveness and consistency preservation. 
+
+**Abstract (ZH)**: 基于概念 Lancet 的零样本即插即用扩散模型图像编辑框架 
+
+---
+# GMR-Conv: An Efficient Rotation and Reflection Equivariant Convolution Kernel Using Gaussian Mixture Rings 
+
+**Title (ZH)**: GMR-Conv：一种基于高斯混合环的高效旋转和反射等变卷积核 
+
+**Authors**: Yuexi Du, Jiazhen Zhang, Nicha C. Dvornek, John A. Onofrey  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.02819)  
+
+**Abstract**: Symmetry, where certain features remain invariant under geometric transformations, can often serve as a powerful prior in designing convolutional neural networks (CNNs). While conventional CNNs inherently support translational equivariance, extending this property to rotation and reflection has proven challenging, often forcing a compromise between equivariance, efficiency, and information loss. In this work, we introduce Gaussian Mixture Ring Convolution (GMR-Conv), an efficient convolution kernel that smooths radial symmetry using a mixture of Gaussian-weighted rings. This design mitigates discretization errors of circular kernels, thereby preserving robust rotation and reflection equivariance without incurring computational overhead. We further optimize both the space and speed efficiency of GMR-Conv via a novel parameterization and computation strategy, allowing larger kernels at an acceptable cost. Extensive experiments on eight classification and one segmentation datasets demonstrate that GMR-Conv not only matches conventional CNNs' performance but can also surpass it in applications with orientation-less data. GMR-Conv is also proven to be more robust and efficient than the state-of-the-art equivariant learning methods. Our work provides inspiring empirical evidence that carefully applied radial symmetry can alleviate the challenges of information loss, marking a promising advance in equivariant network architectures. The code is available at this https URL. 
+
+**Abstract (ZH)**: Gaussian Mixture Ring Convolution: Efficiently Preserving Robust Rotation and Reflection Equivariance Without Computational Overhead 
+
+---
+# Systematic Evaluation of Large Vision-Language Models for Surgical Artificial Intelligence 
+
+**Title (ZH)**: 系统评价大型视觉-语言模型在手术人工智能中的应用 
+
+**Authors**: Anita Rau, Mark Endo, Josiah Aklilu, Jaewoo Heo, Khaled Saab, Alberto Paderno, Jeffrey Jopling, F. Christopher Holsinger, Serena Yeung-Levy  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.02799)  
+
+**Abstract**: Large Vision-Language Models offer a new paradigm for AI-driven image understanding, enabling models to perform tasks without task-specific training. This flexibility holds particular promise across medicine, where expert-annotated data is scarce. Yet, VLMs' practical utility in intervention-focused domains--especially surgery, where decision-making is subjective and clinical scenarios are variable--remains uncertain. Here, we present a comprehensive analysis of 11 state-of-the-art VLMs across 17 key visual understanding tasks in surgical AI--from anatomy recognition to skill assessment--using 13 datasets spanning laparoscopic, robotic, and open procedures. In our experiments, VLMs demonstrate promising generalizability, at times outperforming supervised models when deployed outside their training setting. In-context learning, incorporating examples during testing, boosted performance up to three-fold, suggesting adaptability as a key strength. Still, tasks requiring spatial or temporal reasoning remained difficult. Beyond surgery, our findings offer insights into VLMs' potential for tackling complex and dynamic scenarios in clinical and broader real-world applications. 
+
+**Abstract (ZH)**: 大型多模态视觉-语言模型为基于AI的图像理解提供了新范式，使模型能够在无需特定任务训练的情况下执行任务。这种灵活性在医学领域特别有前景，因为专家标注的数据匮乏。然而，VLMs在干预导向领域（尤其是手术领域，决策具有主观性，临床场景多变）的实际应用价值仍不确定。在此，我们通过涵盖腔镜、机器人和开放手术在内的13个数据集，对17项关键视觉理解任务进行全面分析，评估了11种最先进的VLM在手术AI中的表现，从解剖识别到技能评估。在我们的实验中，VLMs展示了令人瞩目的泛化能力，在某些情况下，即使在远离训练环境的情况下部署，其性能也超过了监督模型。上下文学习通过在测试期间引入示例，将性能提升三倍以上，表明适应性是其关键优势。然而，涉及空间或时间推理的任务仍然具有挑战性。除此之外，我们的研究还为VLMs在临床和其他复杂且动态的现实世界应用中的潜力提供了见解。 
+
+---
+# Multi-Head Adaptive Graph Convolution Network for Sparse Point Cloud-Based Human Activity Recognition 
+
+**Title (ZH)**: 基于稀疏点云的多头自适应图卷积网络人体活动识别 
+
+**Authors**: Vincent Gbouna Zakka, Luis J. Manso, Zhuangzhuang Dai  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.02778)  
+
+**Abstract**: Human activity recognition is increasingly vital for supporting independent living, particularly for the elderly and those in need of assistance. Domestic service robots with monitoring capabilities can enhance safety and provide essential support. Although image-based methods have advanced considerably in the past decade, their adoption remains limited by concerns over privacy and sensitivity to low-light or dark conditions. As an alternative, millimetre-wave (mmWave) radar can produce point cloud data which is privacy-preserving. However, processing the sparse and noisy point clouds remains a long-standing challenge. While graph-based methods and attention mechanisms show promise, they predominantly rely on "fixed" kernels; kernels that are applied uniformly across all neighbourhoods, highlighting the need for adaptive approaches that can dynamically adjust their kernels to the specific geometry of each local neighbourhood in point cloud data. To overcome this limitation, we introduce an adaptive approach within the graph convolutional framework. Instead of a single shared weight function, our Multi-Head Adaptive Kernel (MAK) module generates multiple dynamic kernels, each capturing different aspects of the local feature space. By progressively refining local features while maintaining global spatial context, our method enables convolution kernels to adapt to varying local features. Experimental results on benchmark datasets confirm the effectiveness of our approach, achieving state-of-the-art performance in human activity recognition. Our source code is made publicly available at: this https URL 
+
+**Abstract (ZH)**: 基于人体活动识别在支持独立生活中的重要作用，特别是对于老年人和需要协助的人群而言，具有监控能力的家庭服务机器人可以增强安全性并提供必要支持。尽管在过去十年中基于图像的方法取得了显著进展，但由于隐私担忧和对低光或暗环境敏感的问题，其应用仍然受到限制。作为替代方案，毫米波（mmWave）雷达可以生成保护隐私的点云数据。然而，处理稀疏和噪声点云仍然是一个长期挑战。虽然图基元方法和注意力机制显示出前景，但它们主要依赖于“固定”内核；这些内核在所有局部邻域中均匀应用，表明需要能够根据每个局部邻域的具体几何形状动态调整内核的适应性方法。为克服这一局限，我们在图卷积框架内引入了一种适应性方法。与单一共享权重函数不同，我们的多头自适应内核（MAK）模块生成多个动态内核，每个内核捕捉局部特征空间的不同方面。通过逐步细化局部特征同时保持全局空间上下文，我们的方法使卷积内核能够适应变化的局部特征。在基准数据集上的实验结果证实了我们方法的有效性，达到了人体活动识别的最新性能。我们的源代码已公开发布在：this https URL。 
+
+---
+# Scene Splatter: Momentum 3D Scene Generation from Single Image with Video Diffusion Model 
+
+**Title (ZH)**: 场景泼溅：基于视频扩散模型的单图像3D场景生成 
+
+**Authors**: Shengjun Zhang, Jinzhao Li, Xin Fei, Hao Liu, Yueqi Duan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.02764)  
+
+**Abstract**: In this paper, we propose Scene Splatter, a momentum-based paradigm for video diffusion to generate generic scenes from single image. Existing methods, which employ video generation models to synthesize novel views, suffer from limited video length and scene inconsistency, leading to artifacts and distortions during further reconstruction. To address this issue, we construct noisy samples from original features as momentum to enhance video details and maintain scene consistency. However, for latent features with the perception field that spans both known and unknown regions, such latent-level momentum restricts the generative ability of video diffusion in unknown regions. Therefore, we further introduce the aforementioned consistent video as a pixel-level momentum to a directly generated video without momentum for better recovery of unseen regions. Our cascaded momentum enables video diffusion models to generate both high-fidelity and consistent novel views. We further finetune the global Gaussian representations with enhanced frames and render new frames for momentum update in the next step. In this manner, we can iteratively recover a 3D scene, avoiding the limitation of video length. Extensive experiments demonstrate the generalization capability and superior performance of our method in high-fidelity and consistent scene generation. 
+
+**Abstract (ZH)**: 基于动量的视频扩散场景泼溅：单张图像生成通用场景的方法 
+
+---
+# Rip Current Segmentation: A Novel Benchmark and YOLOv8 Baseline Results 
+
+**Title (ZH)**: rip现细分段：一种新型基准和YOLOv8基准结果 
+
+**Authors**: Andrei Dumitriu, Florin Tatui, Florin Miron, Radu Tudor Ionescu, Radu Timofte  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.02558)  
+
+**Abstract**: Rip currents are the leading cause of fatal accidents and injuries on many beaches worldwide, emphasizing the importance of automatically detecting these hazardous surface water currents. In this paper, we address a novel task: rip current instance segmentation. We introduce a comprehensive dataset containing $2,466$ images with newly created polygonal annotations for instance segmentation, used for training and validation. Additionally, we present a novel dataset comprising $17$ drone videos (comprising about $24K$ frames) captured at $30 FPS$, annotated with both polygons for instance segmentation and bounding boxes for object detection, employed for testing purposes. We train various versions of YOLOv8 for instance segmentation on static images and assess their performance on the test dataset (videos). The best results were achieved by the YOLOv8-nano model (runnable on a portable device), with an mAP50 of $88.94%$ on the validation dataset and $81.21%$ macro average on the test dataset. The results provide a baseline for future research in rip current segmentation. Our work contributes to the existing literature by introducing a detailed, annotated dataset, and training a deep learning model for instance segmentation of rip currents. The code, training details and the annotated dataset are made publicly available at this https URL. 
+
+**Abstract (ZH)**: Rip現流是全球許多海灘上致命事故和傷害的主要原因，強調了自動檢測這些危險的表面水流現流的重要性。在本文中，我們 Dresses 一项新颖的任务：rip現流实例分割。我们引入了一个全面的数据集，包含2,466张带有新创建的多边形注释的图像，用于训练和验证。此外，我们还展示了包含17架无人机视频（约24K帧，每秒30帧）的新数据集，这些视频被标注为实例分割的多边形和对象检测的边界框，用于测试目的。我们对静态图像训练了多种版本的YOLOv8模型，并评估其在测试数据集（视频）上的性能。YOLOv8-nano模型在验证数据集上取得了mAP50为88.94%的最佳结果，并在测试数据集上的宏平均mAP为81.21%。我们的结果为未来的研究提供了基线。我们的工作通过引入详细的标注数据集和为rip現流实例分割训练深度学习模型，为现有的文献做出了贡献。相关代码、训练细节和标注数据集在此网址公开提供。 
+
+---
+# Towards Generalizing Temporal Action Segmentation to Unseen Views 
+
+**Title (ZH)**: 面向未见视角下时空动作分割的一般化 
+
+**Authors**: Emad Bahrami, Olga Zatsarynna, Gianpiero Francesca, Juergen Gall  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.02512)  
+
+**Abstract**: While there has been substantial progress in temporal action segmentation, the challenge to generalize to unseen views remains unaddressed. Hence, we define a protocol for unseen view action segmentation where camera views for evaluating the model are unavailable during training. This includes changing from top-frontal views to a side view or even more challenging from exocentric to egocentric views. Furthermore, we present an approach for temporal action segmentation that tackles this challenge. Our approach leverages a shared representation at both the sequence and segment levels to reduce the impact of view differences during training. We achieve this by introducing a sequence loss and an action loss, which together facilitate consistent video and action representations across different views. The evaluation on the Assembly101, IkeaASM, and EgoExoLearn datasets demonstrate significant improvements, with a 12.8% increase in F1@50 for unseen exocentric views and a substantial 54% improvement for unseen egocentric views. 
+
+**Abstract (ZH)**: 尽管在时间动作分割方面已经取得了显著进展，但将方法推广到未见视角的问题仍未得到解决。因此，我们定义了一种未见视角动作分割的协议，其中评估模型的相机视角在训练过程中不可用。这包括从正面视角变为侧面视角，甚至更具挑战性地从外视角变为内视角。此外，我们提出了一种时间动作分割的方法来应对这一挑战。该方法在序列和片段层面共享表示，以减少训练中视角差异的影响。我们通过引入序列损失和动作损失实现这一点，这些损失共同促进了不同视角下一致的视频和动作表示。在Assembly101、IkeaASM和EgoExoLearn数据集上的评估表明，这种方法在未见外视角下的F1@50提高了12.8%，在未见内视角下的表现提升了54%。 
+
+---
+# CornerPoint3D: Look at the Nearest Corner Instead of the Center 
+
+**Title (ZH)**: CornerPoint3D: 朝最近的角看而不是中心 
+
+**Authors**: Ruixiao Zhang, Runwei Guan, Xiangyu Chen, Adam Prugel-Bennett, Xiaohao Cai  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.02464)  
+
+**Abstract**: 3D object detection aims to predict object centers, dimensions, and rotations from LiDAR point clouds. Despite its simplicity, LiDAR captures only the near side of objects, making center-based detectors prone to poor localization accuracy in cross-domain tasks with varying point distributions. Meanwhile, existing evaluation metrics designed for single-domain assessment also suffer from overfitting due to dataset-specific size variations. A key question arises: Do we really need models to maintain excellent performance in the entire 3D bounding boxes after being applied across domains? Actually, one of our main focuses is on preventing collisions between vehicles and other obstacles, especially in cross-domain scenarios where correctly predicting the sizes is much more difficult. To address these issues, we rethink cross-domain 3D object detection from a practical perspective. We propose two new metrics that evaluate a model's ability to detect objects' closer-surfaces to the LiDAR sensor. Additionally, we introduce EdgeHead, a refinement head that guides models to focus more on learnable closer surfaces, significantly improving cross-domain performance under both our new and traditional BEV/3D metrics. Furthermore, we argue that predicting the nearest corner rather than the object center enhances robustness. We propose a novel 3D object detector, coined as CornerPoint3D, which is built upon CenterPoint and uses heatmaps to supervise the learning and detection of the nearest corner of each object. Our proposed methods realize a balanced trade-off between the detection quality of entire bounding boxes and the locating accuracy of closer surfaces to the LiDAR sensor, outperforming the traditional center-based detector CenterPoint in multiple cross-domain tasks and providing a more practically reasonable and robust cross-domain 3D object detection solution. 
+
+**Abstract (ZH)**: 基于LiDAR点云的3D物体检测旨在预测物体中心、尺寸和旋转。为了解决这一问题，我们重新审视跨域3D物体检测，并提出两种新的评估指标来评估模型检测物体靠近LiDAR传感器表面的能力。此外，我们引入了EdgeHead，一种引导模型更加关注可学习的靠近表面的 refine头部，显著提高了在我们新提出的和传统BEV/3D指标下的跨域性能。我们还提出了一种新颖的3D物体检测器CornerPoint3D，基于CenterPoint并使用热图来监督每个物体最近角落的检测和学习。我们的方法在保持整个边界框检测质量的同时，提高了靠近LiDAR传感器表面的定位精度，跨域任务中性能优于传统的基于中心的检测器CenterPoint，并提供了一种更实用、更健壮的跨域3D物体检测方案。 
+
+---
+# Scaling Video-Language Models to 10K Frames via Hierarchical Differential Distillation 
+
+**Title (ZH)**: 将视频语言模型扩展到10K帧 via 分层差别性蒸馏 
+
+**Authors**: Chuanqi Cheng, Jian Guan, Wei Wu, Rui Yan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.02438)  
+
+**Abstract**: Long-form video processing fundamentally challenges vision-language models (VLMs) due to the high computational costs of handling extended temporal sequences. Existing token pruning and feature merging methods often sacrifice critical temporal dependencies or dilute semantic information. We introduce differential distillation, a principled approach that systematically preserves task-relevant information while suppressing redundancy. Based on this principle, we develop ViLaMP, a hierarchical video-language model that processes hour-long videos at ``mixed precision'' through two key mechanisms: (1) differential keyframe selection that maximizes query relevance while maintaining temporal distinctiveness at the frame level and (2) differential feature merging that preserves query-salient features in non-keyframes at the patch level. Hence, ViLaMP retains full information in keyframes while reducing non-keyframes to their most salient features, resembling mixed-precision training. Extensive experiments demonstrate ViLaMP's superior performance across four video understanding benchmarks, particularly on long-form content. Notably, ViLaMP can process ultra-long videos (up to 10K frames) on a single NVIDIA A100 GPU, achieving substantial computational efficiency while maintaining state-of-the-art performance. 
+
+**Abstract (ZH)**: 长期视频处理从根本上对视觉语言模型（VLMs）构成了挑战，因为处理延长的时间序列需付出高昂的计算成本。现有的标记修剪和特征合并方法往往牺牲了关键的时间依赖性或稀释了语义信息。我们引入了差异性蒸馏，这是一种系统地保留与任务相关的信息并抑制冗余的原理性方法。在此基础上，我们开发了ViLaMP，这是一种分层视频语言模型，通过两种关键机制以“混合精度”处理长达一个小时的视频：（1）差异性关键帧选择，该机制在保持帧级时间独特性的同时最大化查询相关性；（2）差异性特征合并，在块级层面保留与查询相关的显著特征。因此，ViLaMP 在关键帧中保留完整信息，同时将非关键帧缩减为其最显著的特征，类似于混合精度训练。广泛实验证明了ViLaMP在四个视频理解基准测试中的优越性能，特别是在长视频内容上。值得注意的是，ViLaMP可以在单个NVIDIA A100 GPU上处理超长视频（多达10K帧），实现了显著的计算效率同时保持了最先进的性能。 
+
+---
+# Leveraging Static Relationships for Intra-Type and Inter-Type Message Passing in Video Question Answering 
+
+**Title (ZH)**: 利用静态关系进行同类型和跨类型消息传递的视频问答 
+
+**Authors**: Lili Liang, Guanglu Sun  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.02417)  
+
+**Abstract**: Video Question Answering (VideoQA) is an important research direction in the field of artificial intelligence, enabling machines to understand video content and perform reasoning and answering based on natural language questions. Although methods based on static relationship reasoning have made certain progress, there are still deficiencies in the accuracy of static relationship recognition and representation, and they have not fully utilized the static relationship information in videos for in-depth reasoning and analysis. Therefore, this paper proposes a reasoning method for intra-type and inter-type message passing based on static relationships. This method constructs a dual graph for intra-type message passing reasoning and builds a heterogeneous graph based on static relationships for inter-type message passing reasoning. The intra-type message passing reasoning model captures the neighborhood information of targets and relationships related to the question in the dual graph, updating the dual graph to obtain intra-type clues for answering the question. The inter-type message passing reasoning model captures the neighborhood information of targets and relationships from different categories related to the question in the heterogeneous graph, updating the heterogeneous graph to obtain inter-type clues for answering the question. Finally, the answers are inferred by combining the intra-type and inter-type clues based on static relationships. Experimental results on the ANetQA and Next-QA datasets demonstrate the effectiveness of this method. 
+
+**Abstract (ZH)**: 基于静态关系的同类型与异类型消息传递推理方法 
+
+---
+# Translation of Fetal Brain Ultrasound Images into Pseudo-MRI Images using Artificial Intelligence 
+
+**Title (ZH)**: 使用人工智能将胎儿脑超声图像转换为伪 MRI 图像 
+
+**Authors**: Naomi Silverstein, Efrat Leibowitz, Ron Beloosesky, Haim Azhari  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.02408)  
+
+**Abstract**: Ultrasound is a widely accessible and cost-effective medical imaging tool commonly used for prenatal evaluation of the fetal brain. However, it has limitations, particularly in the third trimester, where the complexity of the fetal brain requires high image quality for extracting quantitative data. In contrast, magnetic resonance imaging (MRI) offers superior image quality and tissue differentiation but is less available, expensive, and requires time-consuming acquisition. Thus, transforming ultrasonic images into an MRI-mimicking display may be advantageous and allow better tissue anatomy presentation. To address this goal, we have examined the use of artificial intelligence, implementing a diffusion model renowned for generating high-quality images. The proposed method, termed "Dual Diffusion Imposed Correlation" (DDIC), leverages a diffusion-based translation methodology, assuming a shared latent space between ultrasound and MRI domains. Model training was obtained utilizing the "HC18" dataset for ultrasound and the "CRL fetal brain atlas" along with the "FeTA " datasets for MRI. The generated pseudo-MRI images provide notable improvements in visual discrimination of brain tissue, especially in the lateral ventricles and the Sylvian fissure, characterized by enhanced contrast clarity. Improvement was demonstrated in Mutual information, Peak signal-to-noise ratio, Fréchet Inception Distance, and Contrast-to-noise ratio. Findings from these evaluations indicate statistically significant superior performance of the DDIC compared to other translation methodologies. In addition, a Medical Opinion Test was obtained from 5 gynecologists. The results demonstrated display improvement in 81% of the tested images. In conclusion, the presented pseudo-MRI images hold the potential for streamlining diagnosis and enhancing clinical outcomes through improved representation. 
+
+**Abstract (ZH)**: 超声是一种广泛 доступ且经济有效的医疗成像工具，常用于胎儿脑部的产前评估。然而，它在第三孕期存在局限性，因为胎儿脑部的复杂性要求高质量图像以提取定量数据。相比之下，磁共振成像（MRI）提供卓越的图像质量和组织区分度，但其可用性较低、成本较高且成像耗时。因此，将超声图像转换为MRI模拟显示可能具有优势，并允许更好的组织解剖学呈现。为了达成这一目标，我们考察了人工智能的应用，采用了一种以生成高质量图像闻名的扩散模型。所提出的方法名为“双扩散施加相关性”（DDIC），利用基于扩散的转换方法，假设超声和MRI领域共享一个潜在空间。模型培训使用了“HC18”超声数据集、“CRL胎儿脑部图谱”以及“FeTA”MRI数据集。生成的伪MRI图像在视觉区分脑组织方面提供了显著改进，特别是在侧脑室和顶枕裂区域，显示出增强的对比清晰度。通过互信息、峰值信噪比、弗雷切特-因斯坎距离和对比度-噪声比等指标的不同提高，这些评估结果表明，DDIC相比其他转换方法具有统计学显著的优越性能。此外，从5位妇产科医生那里得到了医学意见测试结果。结果显示，在测试图像中有81%的图像显示了显示改进。综上所述，提出的伪MRI图像通过改进表示具有简化诊断和增强临床结果的潜力。 
+
+---
+# EvMic: Event-based Non-contact sound recovery from effective spatial-temporal modeling 
+
+**Title (ZH)**: 基于事件的空间-时间模型的有效非接触声音恢复 
+
+**Authors**: Hao Yin, Shi Guo, Xu Jia, Xudong XU, Lu Zhang, Si Liu, Dong Wang, Huchuan Lu, Tianfan Xue  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.02402)  
+
+**Abstract**: When sound waves hit an object, they induce vibrations that produce high-frequency and subtle visual changes, which can be used for recovering the sound. Early studies always encounter trade-offs related to sampling rate, bandwidth, field of view, and the simplicity of the optical path. Recent advances in event camera hardware show good potential for its application in visual sound recovery, because of its superior ability in capturing high-frequency signals. However, existing event-based vibration recovery methods are still sub-optimal for sound recovery. In this work, we propose a novel pipeline for non-contact sound recovery, fully utilizing spatial-temporal information from the event stream. We first generate a large training set using a novel simulation pipeline. Then we designed a network that leverages the sparsity of events to capture spatial information and uses Mamba to model long-term temporal information. Lastly, we train a spatial aggregation block to aggregate information from different locations to further improve signal quality. To capture event signals caused by sound waves, we also designed an imaging system using a laser matrix to enhance the gradient and collected multiple data sequences for testing. Experimental results on synthetic and real-world data demonstrate the effectiveness of our method. 
+
+**Abstract (ZH)**: 非接触声波恢复的时空信息利用新pipeline及其应用研究 
+
+---
+# Benchmark of Segmentation Techniques for Pelvic Fracture in CT and X-ray: Summary of the PENGWIN 2024 Challenge 
+
+**Title (ZH)**: 盆腔骨折在CT和X射线分割技术基准：PENGWIN 2024挑战赛总结 
+
+**Authors**: Yudi Sang, Yanzhen Liu, Sutuke Yibulayimu, Yunning Wang, Benjamin D. Killeen, Mingxu Liu, Ping-Cheng Ku, Ole Johannsen, Karol Gotkowski, Maximilian Zenk, Klaus Maier-Hein, Fabian Isensee, Peiyan Yue, Yi Wang, Haidong Yu, Zhaohong Pan, Yutong He, Xiaokun Liang, Daiqi Liu, Fuxin Fan, Artur Jurgas, Andrzej Skalski, Yuxi Ma, Jing Yang, Szymon Płotka, Rafał Litka, Gang Zhu, Yingchun Song, Mathias Unberath, Mehran Armand, Dan Ruan, S. Kevin Zhou, Qiyong Cao, Chunpeng Zhao, Xinbao Wu, Yu Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.02382)  
+
+**Abstract**: The segmentation of pelvic fracture fragments in CT and X-ray images is crucial for trauma diagnosis, surgical planning, and intraoperative guidance. However, accurately and efficiently delineating the bone fragments remains a significant challenge due to complex anatomy and imaging limitations. The PENGWIN challenge, organized as a MICCAI 2024 satellite event, aimed to advance automated fracture segmentation by benchmarking state-of-the-art algorithms on these complex tasks. A diverse dataset of 150 CT scans was collected from multiple clinical centers, and a large set of simulated X-ray images was generated using the DeepDRR method. Final submissions from 16 teams worldwide were evaluated under a rigorous multi-metric testing scheme. The top-performing CT algorithm achieved an average fragment-wise intersection over union (IoU) of 0.930, demonstrating satisfactory accuracy. However, in the X-ray task, the best algorithm attained an IoU of 0.774, highlighting the greater challenges posed by overlapping anatomical structures. Beyond the quantitative evaluation, the challenge revealed methodological diversity in algorithm design. Variations in instance representation, such as primary-secondary classification versus boundary-core separation, led to differing segmentation strategies. Despite promising results, the challenge also exposed inherent uncertainties in fragment definition, particularly in cases of incomplete fractures. These findings suggest that interactive segmentation approaches, integrating human decision-making with task-relevant information, may be essential for improving model reliability and clinical applicability. 
+
+**Abstract (ZH)**: 盆腔骨折碎片在CT和X光图像中的分割对于创伤诊断、手术计划和术中指导至关重要。然而，由于复杂的解剖结构和成像限制，准确而高效地 delineate 骨折碎片仍是一项重大挑战。PENGWIN 挑战赛作为 MICCAI 2024 的卫星事件，旨在通过基准测试最先进的算法来推进自动化骨折分割技术。来自多个临床中心的150份CT扫描图像和大量使用DeepDRR方法生成的模拟X光图像被收集。来自全球的16支队伍的最终提交结果在严格的多指标测试方案下进行了评估。最佳CT算法的平均片段级交并比（IoU）为0.930，显示出较高的准确性。然而，在X光任务中，最佳算法的IoU仅为0.774，突显了重叠解剖结构带来的更大挑战。除了定量评估外，该挑战还揭示了算法设计中的方法多样性。实例表示的差异，如主要-次要分类与边界-核心分离，导致了不同的分割策略。尽管取得了一定的成果，挑战也揭示了碎片定义中固有的不确定性，尤其是在不完全骨折的情况下。这些发现表明，结合人类决策与任务相关信息的交互式分割方法可能对于提高模型可靠性和临床适用性至关重要。 
+
+---
+# Agglomerating Large Vision Encoders via Distillation for VFSS Segmentation 
+
+**Title (ZH)**: 通过蒸馏聚合大规模视觉编码器进行VFSS分割 
+
+**Authors**: Chengxi Zeng, Yuxuan Jiang, Fan Zhang, Alberto Gambaruto, Tilo Burghardt  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.02351)  
+
+**Abstract**: The deployment of foundation models for medical imaging has demonstrated considerable success. However, their training overheads associated with downstream tasks remain substantial due to the size of the image encoders employed, and the inference complexity is also significantly high. Although lightweight variants have been obtained for these foundation models, their performance is constrained by their limited model capacity and suboptimal training strategies. In order to achieve an improved tradeoff between complexity and performance, we propose a new framework to improve the performance of low complexity models via knowledge distillation from multiple large medical foundation models (e.g., MedSAM, RAD-DINO, MedCLIP), each specializing in different vision tasks, with the goal to effectively bridge the performance gap for medical image segmentation tasks. The agglomerated model demonstrates superior generalization across 12 segmentation tasks, whereas specialized models require explicit training for each task. Our approach achieved an average performance gain of 2\% in Dice coefficient compared to simple distillation. 
+
+**Abstract (ZH)**: 基础模型在医疗成像中的部署取得了显著成功，但由于所使用图像编码器的规模庞大，其下游任务的训练开销仍然很大，推理复杂性也很高。尽管已经获得了轻量级变体，但它们的性能受限于模型容量有限和训练策略欠优化。为了在复杂性和性能之间实现改进的权衡，我们提出了一种新框架，通过从多个大型医疗基础模型（例如，MedSAM、RAD-DINO、MedCLIP）知识蒸馏，每个模型专注于不同的视觉任务，以有效填补医学图像分割任务的性能差距。聚合模型在12项分割任务中展示了优于专门模型的泛化能力。我们的方法在骰子系数上实现了平均2%的性能提升，相比于简单的知识蒸馏。 
+
+---
+# ConsDreamer: Advancing Multi-View Consistency for Zero-Shot Text-to-3D Generation 
+
+**Title (ZH)**: ConsDreamer: 提升零样本文本到3D生成的多视角一致性 
+
+**Authors**: Yuan Zhou, Shilong Jin, Litao Hua, Wanjun Lv, Haoran Duan, Jungong Han  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.02316)  
+
+**Abstract**: Recent advances in zero-shot text-to-3D generation have revolutionized 3D content creation by enabling direct synthesis from textual descriptions. While state-of-the-art methods leverage 3D Gaussian Splatting with score distillation to enhance multi-view rendering through pre-trained text-to-image (T2I) models, they suffer from inherent view biases in T2I priors. These biases lead to inconsistent 3D generation, particularly manifesting as the multi-face Janus problem, where objects exhibit conflicting features across views. To address this fundamental challenge, we propose ConsDreamer, a novel framework that mitigates view bias by refining both the conditional and unconditional terms in the score distillation process: (1) a View Disentanglement Module (VDM) that eliminates viewpoint biases in conditional prompts by decoupling irrelevant view components and injecting precise camera parameters; and (2) a similarity-based partial order loss that enforces geometric consistency in the unconditional term by aligning cosine similarities with azimuth relationships. Extensive experiments demonstrate that ConsDreamer effectively mitigates the multi-face Janus problem in text-to-3D generation, outperforming existing methods in both visual quality and consistency. 
+
+**Abstract (ZH)**: 最近零样本文本到3D生成的进展通过直接从文本描述合成3D内容已 revolutionized 3D内容创作。尽管最先进的方法利用预训练的文本到图像（T2I）模型的3D高斯散射和评分精炼增强多视角渲染，但它们会因T2I先验中的固有视角偏见而受到限制。这些偏见导致3D生成不一致，特别是在视角矛盾问题上表现明显，即对象在不同视角中展现矛盾特征。为解决这一根本性挑战，我们提出了一种名为ConsDreamer的新框架，通过在评分精炼过程中精炼条件性和无条件性项来减轻视角偏见：（1）视角解耦模块（VDM），通过解除无关视角组件和注入精确的相机参数来消除条件提示中的视角偏见；以及（2）基于相似性的部分有序损失，通过与方位关系对余弦相似性进行对齐来强化无条件项中的几何一致性。广泛实验表明，ConsDreamer在视觉质量和一致性方面有效缓解了文本到3D生成中的多面Janus问题，优于现有方法。 
+
+---
+# Test-time Adaptation for Foundation Medical Segmentation Model without Parametric Updates 
+
+**Title (ZH)**: 测试时自适应调整不包含参数更新的基础医疗分割模型 
+
+**Authors**: Kecheng Chen, Xinyu Luo, Tiexin Qin, Jie Liu, Hui Liu, Victor Ho Fun Lee, Hong Yan, Haoliang Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.02008)  
+
+**Abstract**: Foundation medical segmentation models, with MedSAM being the most popular, have achieved promising performance across organs and lesions. However, MedSAM still suffers from compromised performance on specific lesions with intricate structures and appearance, as well as bounding box prompt-induced perturbations. Although current test-time adaptation (TTA) methods for medical image segmentation may tackle this issue, partial (e.g., batch normalization) or whole parametric updates restrict their effectiveness due to limited update signals or catastrophic forgetting in large models. Meanwhile, these approaches ignore the computational complexity during adaptation, which is particularly significant for modern foundation models. To this end, our theoretical analyses reveal that directly refining image embeddings is feasible to approach the same goal as parametric updates under the MedSAM architecture, which enables us to realize high computational efficiency and segmentation performance without the risk of catastrophic forgetting. Under this framework, we propose to encourage maximizing factorized conditional probabilities of the posterior prediction probability using a proposed distribution-approximated latent conditional random field loss combined with an entropy minimization loss. Experiments show that we achieve about 3\% Dice score improvements across three datasets while reducing computational complexity by over 7 times. 
+
+**Abstract (ZH)**: 基于医学图像分割的foundation模型，MedSAM尤为流行，已经在多个器官和病灶上取得了令人瞩目的性能。然而，MedSAM在处理具有复杂结构和外观的特定病灶时仍然表现出妥协的性能，并且受到边界框提示引起的扰动的影响。尽管当前的测试时适应（TTA）方法可能解决这一问题，但部分（如批量归一化）或整体参数更新方法因更新信号有限或大模型中的灾难性遗忘而限制了其有效性。同时，这些方法忽略了适应过程中的计算复杂性，这对于现代foundation模型尤为重要。为此，我们的理论分析表明，在MedSAM架构下直接精炼图像嵌入是可行的，以实现相同目标，从而使我们能够在不发生灾难性遗忘风险的情况下实现高计算效率和分割性能。在此框架下，我们提出了一种鼓励最大化后验预测概率的因子条件概率并结合熵最小化损失的分布逼近潜条件随机场损失，以增强分割性能。实验结果显示，我们在三个数据集中实现了大约3%的Dice分数提高，同时计算复杂性降低了约7倍。 
+
+---
