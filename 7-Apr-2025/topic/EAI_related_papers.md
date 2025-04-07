@@ -1,0 +1,234 @@
+# SeGuE: Semantic Guided Exploration for Mobile Robots 
+
+**Title (ZH)**: 基于语义引导的移动机器人探索方法 
+
+**Authors**: Cody Simons, Aritra Samanta, Amit K. Roy-Chowdhury, Konstantinos Karydis  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.03629)  
+
+**Abstract**: The rise of embodied AI applications has enabled robots to perform complex tasks which require a sophisticated understanding of their environment. To enable successful robot operation in such settings, maps must be constructed so that they include semantic information, in addition to geometric information. In this paper, we address the novel problem of semantic exploration, whereby a mobile robot must autonomously explore an environment to fully map both its structure and the semantic appearance of features. We develop a method based on next-best-view exploration, where potential poses are scored based on the semantic features visible from that pose. We explore two alternative methods for sampling potential views and demonstrate the effectiveness of our framework in both simulation and physical experiments. Automatic creation of high-quality semantic maps can enable robots to better understand and interact with their environments and enable future embodied AI applications to be more easily deployed. 
+
+**Abstract (ZH)**: 随着具身AI应用的兴起，机器人能够执行需要对其环境进行复杂理解的任务。为了在这些环境中成功操作机器人，必须构建包含语义信息的地图，而不仅仅是几何信息。在本文中，我们探讨了一种新颖的语义探索问题，即移动机器人必须自主探索环境以完整地映射其结构和特征的语义外观。我们开发了一种基于最佳视角探索的方法，其中潜在姿势的评分基于从该姿势可见的语义特征。我们研究了两种潜在视图抽样方法，并在仿真和实际实验中展示了我们框架的有效性。自动创建高质量的语义地图可以使得机器人更好地理解并与其环境交互，并使未来具身AI应用更容易部署。 
+
+---
+# Real-is-Sim: Bridging the Sim-to-Real Gap with a Dynamic Digital Twin for Real-World Robot Policy Evaluation 
+
+**Title (ZH)**: 实即虚：通过动态数字孪生桥接仿真到现实的差距以评估真实世界机器人政策 
+
+**Authors**: Jad Abou-Chakra, Lingfeng Sun, Krishan Rana, Brandon May, Karl Schmeckpeper, Maria Vittoria Minniti, Laura Herlant  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.03597)  
+
+**Abstract**: Recent advancements in behavior cloning have enabled robots to perform complex manipulation tasks. However, accurately assessing training performance remains challenging, particularly for real-world applications, as behavior cloning losses often correlate poorly with actual task success. Consequently, researchers resort to success rate metrics derived from costly and time-consuming real-world evaluations, making the identification of optimal policies and detection of overfitting or underfitting impractical. To address these issues, we propose real-is-sim, a novel behavior cloning framework that incorporates a dynamic digital twin (based on Embodied Gaussians) throughout the entire policy development pipeline: data collection, training, and deployment. By continuously aligning the simulated world with the physical world, demonstrations can be collected in the real world with states extracted from the simulator. The simulator enables flexible state representations by rendering image inputs from any viewpoint or extracting low-level state information from objects embodied within the scene. During training, policies can be directly evaluated within the simulator in an offline and highly parallelizable manner. Finally, during deployment, policies are run within the simulator where the real robot directly tracks the simulated robot's joints, effectively decoupling policy execution from real hardware and mitigating traditional domain-transfer challenges. We validate real-is-sim on the PushT manipulation task, demonstrating strong correlation between success rates obtained in the simulator and real-world evaluations. Videos of our system can be found at this https URL. 
+
+**Abstract (ZH)**: 最近行为克隆的进步使机器人能够执行复杂的操作任务。然而，准确评估训练性能仍然颇具挑战性，特别是在实际应用中，因为行为克隆损失往往与实际任务成功率的相关性较差。因此，研究人员转向通过昂贵且耗时的实地评估获取的成功率指标，这使得识别最优策略和检测过拟合或欠拟合变得 impractical。为解决这些问题，我们提出了一种新颖的行为克隆框架——real-is-sim，该框架在整个策略开发管道（数据收集、训练和部署）中均采用了动态数字孪生（基于 Embodied Gaussians）。通过持续使模拟世界与物理世界保持一致，可以在现实世界中收集演示，同时从模拟器中提取状态。模拟器通过从任何视角生成图像输入或提取嵌入场景中的物体的底层状态信息，提供了灵活的状态表示方式。在训练过程中，策略可以直接在模拟器中离线且高度并行地进行评估。最后，在部署阶段，策略在模拟器中运行，真实机器人直接跟踪模拟机器人关节的实际动作，从而将策略执行与真实硬件解耦，并减轻传统的领域迁移挑战。我们在 PushT 操作任务上验证了 real-is-sim，展示了模拟器和实地评估中成功率之间的强相关性。有关系统视频请访问 this https URL。 
+
+---
+# Dexterous Manipulation through Imitation Learning: A Survey 
+
+**Title (ZH)**: 灵巧 manipulation 通过模仿学习：一种综述 
+
+**Authors**: Shan An, Ziyu Meng, Chao Tang, Yuning Zhou, Tengyu Liu, Fangqiang Ding, Shufang Zhang, Yao Mu, Ran Song, Wei Zhang, Zeng-Guang Hou, Hong Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.03515)  
+
+**Abstract**: Dexterous manipulation, which refers to the ability of a robotic hand or multi-fingered end-effector to skillfully control, reorient, and manipulate objects through precise, coordinated finger movements and adaptive force modulation, enables complex interactions similar to human hand dexterity. With recent advances in robotics and machine learning, there is a growing demand for these systems to operate in complex and unstructured environments. Traditional model-based approaches struggle to generalize across tasks and object variations due to the high-dimensionality and complex contact dynamics of dexterous manipulation. Although model-free methods such as reinforcement learning (RL) show promise, they require extensive training, large-scale interaction data, and carefully designed rewards for stability and effectiveness. Imitation learning (IL) offers an alternative by allowing robots to acquire dexterous manipulation skills directly from expert demonstrations, capturing fine-grained coordination and contact dynamics while bypassing the need for explicit modeling and large-scale trial-and-error. This survey provides an overview of dexterous manipulation methods based on imitation learning (IL), details recent advances, and addresses key challenges in the field. Additionally, it explores potential research directions to enhance IL-driven dexterous manipulation. Our goal is to offer researchers and practitioners a comprehensive introduction to this rapidly evolving domain. 
+
+**Abstract (ZH)**: Dexterous Manipulation基于模仿学习的方法：概述、 Recent Advances与关键挑战及潜在研究方向 
+
+---
+# Learning Dual-Arm Coordination for Grasping Large Flat Objects 
+
+**Title (ZH)**: 学习双臂协调抓取大型平坦物体 
+
+**Authors**: Yongliang Wang, Hamidreza Kasaei  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.03500)  
+
+**Abstract**: Grasping large flat objects, such as books or keyboards lying horizontally, presents significant challenges for single-arm robotic systems, often requiring extra actions like pushing objects against walls or moving them to the edge of a surface to facilitate grasping. In contrast, dual-arm manipulation, inspired by human dexterity, offers a more refined solution by directly coordinating both arms to lift and grasp the object without the need for complex repositioning. In this paper, we propose a model-free deep reinforcement learning (DRL) framework to enable dual-arm coordination for grasping large flat objects. We utilize a large-scale grasp pose detection model as a backbone to extract high-dimensional features from input images, which are then used as the state representation in a reinforcement learning (RL) model. A CNN-based Proximal Policy Optimization (PPO) algorithm with shared Actor-Critic layers is employed to learn coordinated dual-arm grasp actions. The system is trained and tested in Isaac Gym and deployed to real robots. Experimental results demonstrate that our policy can effectively grasp large flat objects without requiring additional maneuvers. Furthermore, the policy exhibits strong generalization capabilities, successfully handling unseen objects. Importantly, it can be directly transferred to real robots without fine-tuning, consistently outperforming baseline methods. 
+
+**Abstract (ZH)**: 基于模型 free 深度强化学习的双臂协调抓取大型平板物体方法 
+
+---
+# Gradient Field-Based Dynamic Window Approach for Collision Avoidance in Complex Environments 
+
+**Title (ZH)**: 基于梯度场的动态窗口碰撞 avoidance 方法在复杂环境中的应用 
+
+**Authors**: Ze Zhang, Yifan Xue, Nadia Figueroa, Knut Åkesson  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.03260)  
+
+**Abstract**: For safe and flexible navigation in multi-robot systems, this paper presents an enhanced and predictive sampling-based trajectory planning approach in complex environments, the Gradient Field-based Dynamic Window Approach (GF-DWA). Building upon the dynamic window approach, the proposed method utilizes gradient information of obstacle distances as a new cost term to anticipate potential collisions. This enhancement enables the robot to improve awareness of obstacles, including those with non-convex shapes. The gradient field is derived from the Gaussian process distance field, which generates both the distance field and gradient field by leveraging Gaussian process regression to model the spatial structure of the environment. Through several obstacle avoidance and fleet collision avoidance scenarios, the proposed GF-DWA is shown to outperform other popular trajectory planning and control methods in terms of safety and flexibility, especially in complex environments with non-convex obstacles. 
+
+**Abstract (ZH)**: 基于梯度场的动态窗口方法（GF-DWA）：多机器人系统在复杂环境中的安全可灵活导航的增强预测采样轨迹规划 
+
+---
+# Push-Grasp Policy Learning Using Equivariant Models and Grasp Score Optimization 
+
+**Title (ZH)**: 基于不变模型和夹持评分优化的推-抓取策略学习 
+
+**Authors**: Boce Hu, Heng Tian, Dian Wang, Haojie Huang, Xupeng Zhu, Robin Walters, Robert Platt  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.03053)  
+
+**Abstract**: Goal-conditioned robotic grasping in cluttered environments remains a challenging problem due to occlusions caused by surrounding objects, which prevent direct access to the target object. A promising solution to mitigate this issue is combining pushing and grasping policies, enabling active rearrangement of the scene to facilitate target retrieval. However, existing methods often overlook the rich geometric structures inherent in such tasks, thus limiting their effectiveness in complex, heavily cluttered scenarios. To address this, we propose the Equivariant Push-Grasp Network, a novel framework for joint pushing and grasping policy learning. Our contributions are twofold: (1) leveraging SE(2)-equivariance to improve both pushing and grasping performance and (2) a grasp score optimization-based training strategy that simplifies the joint learning process. Experimental results show that our method improves grasp success rates by 49% in simulation and by 35% in real-world scenarios compared to strong baselines, representing a significant advancement in push-grasp policy learning. 
+
+**Abstract (ZH)**: 目标导向的机器人抓取在复杂环境中的挑战由于周围物体造成的遮挡，难以直接访问目标物体。一种有希望的解决方案是结合推拉策略，使机器人能够主动重组场景以利于目标物体的获取。然而，现有方法往往忽略了此类任务中固有的丰富几何结构，从而限制了其在复杂、高度拥挤场景中的有效性。为了解决这一问题，我们提出了等变推拉网络（Equivariant Push-Grasp Network），这是一种新的联合推拉策略学习框架。我们的贡献主要有两点：（1）利用SE(2)-等变性提高推拉性能；（2）基于抓取得分优化的训练策略简化联合学习过程。实验结果表明，与强基线相比，我们的方法在模拟环境中提高了49%的抓取成功率，在真实世界场景中提高了35%，标志着推拉策略学习的一个重要进步。 
+
+---
+# AuDeRe: Automated Strategy Decision and Realization in Robot Planning and Control via LLMs 
+
+**Title (ZH)**: AuDeRe：通过大型语言模型在机器人规划与控制中的自动策略决策与实现 
+
+**Authors**: Yue Meng, Fei Chen, Yongchao Chen, Chuchu Fan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.03015)  
+
+**Abstract**: Recent advancements in large language models (LLMs) have shown significant promise in various domains, especially robotics. However, most prior LLM-based work in robotic applications either directly predicts waypoints or applies LLMs within fixed tool integration frameworks, offering limited flexibility in exploring and configuring solutions best suited to different tasks. In this work, we propose a framework that leverages LLMs to select appropriate planning and control strategies based on task descriptions, environmental constraints, and system dynamics. These strategies are then executed by calling the available comprehensive planning and control APIs. Our approach employs iterative LLM-based reasoning with performance feedback to refine the algorithm selection. We validate our approach through extensive experiments across tasks of varying complexity, from simple tracking to complex planning scenarios involving spatiotemporal constraints. The results demonstrate that using LLMs to determine planning and control strategies from natural language descriptions significantly enhances robotic autonomy while reducing the need for extensive manual tuning and expert knowledge. Furthermore, our framework maintains generalizability across different tasks and notably outperforms baseline methods that rely on LLMs for direct trajectory, control sequence, or code generation. 
+
+**Abstract (ZH)**: 近期大型语言模型的进展在各个领域显示出显著的潜力，特别是在机器人领域。然而，大多数基于大型语言模型的机器人应用程序工作要么直接预测航点，要么在固定工具集成框架内应用大型语言模型，这在探索和配置最适合不同任务的解决方案方面提供了有限的灵活性。在本研究中，我们提出了一种框架，该框架利用大型语言模型根据任务描述、环境约束和系统动力学选择合适的规划和控制策略。然后通过调用全面的规划和控制API来执行这些策略。我们的方法采用迭代的基于大型语言模型的推理并结合性能反馈来精炼算法选择。通过涵盖从简单跟踪到涉及时空约束的复杂规划场景的广泛实验，我们验证了这种方法。实验结果表明，从自然语言描述中确定规划和控制策略可以显著增强机器人的自主性，同时减少对大量手动调整和专家知识的需求。此外，我们的框架在不同任务之间保持了一定的通用性，并且在依赖大型语言模型直接生成轨迹、控制序列或代码的基本方法中表现更优。 
+
+---
+# Autonomy Architectures for Safe Planning in Unknown Environments Under Budget Constraints 
+
+**Title (ZH)**: 预算约束下未知环境中的安全规划自主架构 
+
+**Authors**: Daniel M. Cherenson, Devansh R. Agrawal, Dimitra Panagou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.03001)  
+
+**Abstract**: Mission planning can often be formulated as a constrained control problem under multiple path constraints (i.e., safety constraints) and budget constraints (i.e., resource expenditure constraints). In a priori unknown environments, verifying that an offline solution will satisfy the constraints for all time can be difficult, if not impossible. Our contributions are as follows: 1) We propose an online method, building on our previous work "gatekeeper", to guarantee safety and satisfy budget constraints of the system trajectory at all times throughout a mission. 2) Next, we prove that our algorithm is recursively feasible and correct. 3) Finally, instead of using a heuristically designed backup controller, we propose a sampling-based method to construct backup trajectories that both minimize resource expenditure and reach budget renewal sets, in which path constraints are satisfied and the constrained resources are renewed. We demonstrate our approach in simulation with a fixed-wing UAV in a GNSS-denied environment with a budget constraint on localization error that can be renewed at visual landmarks. 
+
+**Abstract (ZH)**: 任务规划往往可以被形式化为在多重路径约束（即安全约束）和预算约束（即资源消耗约束）下的受限控制问题。在先验未知的环境中，验证离线解在整个时间内的约束满足性可能是困难的，甚至不可能。我们的贡献如下：1）我们提出了一个在线方法，基于我们之前的工作“gatekeeper”，以确保任务执行过程中系统的轨迹始终满足安全和预算约束；2）我们证明了该算法是递归可行且正确的；3）我们提出了一种基于采样的方法来构建备份轨迹，该方法在最小化资源消耗的同时，达到预算更新集，在这些集内路径约束得到满足且受限资源得到更新。我们在缺乏GPS的环境中通过视觉地标更新定位误差预算的固定翼无人机仿真中展示了该方法。 
+
+---
+# Robot Localization Using a Learned Keypoint Detector and Descriptor with a Floor Camera and a Feature Rich Industrial Floor 
+
+**Title (ZH)**: 使用学习到的特征点检测器和描述符的地面上的相机和特征丰富的工业地面的机器人定位方法 
+
+**Authors**: Piet Brömmel, Dominik Brämer, Oliver Urbann, Diana Kleingarn  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.03249)  
+
+**Abstract**: The localization of moving robots depends on the availability of good features from the environment. Sensor systems like Lidar are popular, but unique features can also be extracted from images of the ground. This work presents the Keypoint Localization Framework (KOALA), which utilizes deep neural networks that extract sufficient features from an industrial floor for accurate localization without having readable markers. For this purpose, we use a floor covering that can be produced as cheaply as common industrial floors. Although we do not use any filtering, prior, or temporal information, we can estimate our position in 75.7 % of all images with a mean position error of 2 cm and a rotation error of 2.4 %. Thus, the robot kidnapping problem can be solved with high precision in every frame, even while the robot is moving. Furthermore, we show that our framework with our detector and descriptor combination is able to outperform comparable approaches. 
+
+**Abstract (ZH)**: 移动机器人定位依赖于环境中的良好特征。虽然像激光雷达这样的传感器系统很流行，但从地面图像中提取的独特特征也可以用于定位。本文提出了一种关键点定位框架（KOALA），利用深度神经网络从工业地板中提取足够的特征，无需可读标记即可实现精确定位。为此，我们使用了一种可低成本生产的地面覆盖物。尽管我们未使用任何过滤、先验或时间信息，但在所有图像中的75.7%的情况下，我们能够将位置误差估计为2 cm，旋转误差为2.4%。因此，即使机器人在移动过程中，也可以以高精度解决机器人绑架问题。此外，我们展示了我们的框架及其检测器和描述子组合能够优于其他可比方法。 
+
+---
+# Seeing is Believing: Belief-Space Planning with Foundation Models as Uncertainty Estimators 
+
+**Title (ZH)**: 所见即所信：基于基础模型的不确定性估计的信念空间规划 
+
+**Authors**: Linfeng Zhao, Willie McClinton, Aidan Curtis, Nishanth Kumar, Tom Silver, Leslie Pack Kaelbling, Lawson L.S. Wong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.03245)  
+
+**Abstract**: Generalizable robotic mobile manipulation in open-world environments poses significant challenges due to long horizons, complex goals, and partial observability. A promising approach to address these challenges involves planning with a library of parameterized skills, where a task planner sequences these skills to achieve goals specified in structured languages, such as logical expressions over symbolic facts. While vision-language models (VLMs) can be used to ground these expressions, they often assume full observability, leading to suboptimal behavior when the agent lacks sufficient information to evaluate facts with certainty. This paper introduces a novel framework that leverages VLMs as a perception module to estimate uncertainty and facilitate symbolic grounding. Our approach constructs a symbolic belief representation and uses a belief-space planner to generate uncertainty-aware plans that incorporate strategic information gathering. This enables the agent to effectively reason about partial observability and property uncertainty. We demonstrate our system on a range of challenging real-world tasks that require reasoning in partially observable environments. Simulated evaluations show that our approach outperforms both vanilla VLM-based end-to-end planning or VLM-based state estimation baselines by planning for and executing strategic information gathering. This work highlights the potential of VLMs to construct belief-space symbolic scene representations, enabling downstream tasks such as uncertainty-aware planning. 
+
+**Abstract (ZH)**: 开放世界环境中的通用机器人移动操作面临着长期展望、复杂目标以及部分可观测性的显著挑战。一种有前景的方法是使用参数化技能库进行规划，其中任务规划器将这些技能序列化以实现用结构化语言（如符号事实的逻辑表达式）指定的目标。虽然视觉语言模型可以用于实现这些表达式的语义化，但它们通常假设完全可观测性，当代理缺乏足够的信息来确定性地评估事实时，会导致次优行为。本文介绍了一种新颖的框架，利用视觉语言模型作为感知模块来估计不确定性并促进符号化语义化。我们的方法构建了符号性信念表示，并使用信念空间规划器生成考虑策略性信息收集的不确定性意识计划。这使代理能够有效地推理部分可观测性和属性不确定性。我们在一系列需要在部分可观测环境中进行推理的具有挑战性的实际任务上展示了我们的系统。模拟评估表明，与基于视觉语言模型的端到端规划或基于视觉语言模型的状态估计基线相比，我们的方法通过计划和执行策略性的信息收集来表现出色。这项工作强调了视觉语言模型在构建信念空间符号化场景表示方面的潜力，从而支持后续任务如不确定性意识规划。 
+
+---
+# What People Share With a Robot When Feeling Lonely and Stressed and How It Helps Over Time 
+
+**Title (ZH)**: 当人们感到孤独和压力时与机器人分享的内容及这些分享如何随时间帮助他们 
+
+**Authors**: Guy Laban, Sophie Chiang, Hatice Gunes  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.02991)  
+
+**Abstract**: Loneliness and stress are prevalent among young adults and are linked to significant psychological and health-related consequences. Social robots may offer a promising avenue for emotional support, especially when considering the ongoing advancements in conversational AI. This study investigates how repeated interactions with a social robot influence feelings of loneliness and perceived stress, and how such feelings are reflected in the themes of user disclosures towards the robot. Participants engaged in a five-session robot-led intervention, where a large language model powered QTrobot facilitated structured conversations designed to support cognitive reappraisal. Results from linear mixed-effects models show significant reductions in both loneliness and perceived stress over time. Additionally, semantic clustering of 560 user disclosures towards the robot revealed six distinct conversational themes. Results from a Kruskal-Wallis H-test demonstrate that participants reporting higher loneliness and stress more frequently engaged in socially focused disclosures, such as friendship and connection, whereas lower distress was associated with introspective and goal-oriented themes (e.g., academic ambitions). By exploring both how the intervention affects well-being, as well as how well-being shapes the content of robot-directed conversations, we aim to capture the dynamic nature of emotional support in huma-robot interaction. 
+
+**Abstract (ZH)**: 年轻人中普遍存在孤独和压力，并与重要的心理和健康后果相关。社交机器人可能为情感支持提供有希望的途径，特别是在考虑对话型AI的持续进步时。本研究探讨了重复与社交机器人的互动如何影响孤独和感知到的压力感，以及这些感觉如何反映在用户对机器人的披露主题中。参与者参与了一个由五个会话组成的机器人引导干预，其中由配备大型语言模型的QTrobot主导的结构化对话旨在支持认知重评。线性混合效应模型的结果显示，随着时间的推移，孤独和感知到的压力都有显著减少。此外，对560个用户对机器人的披露进行语义聚类，揭示了六种不同的对话主题。霍奇森-K武克尔曼检验的结果表明，报告更高孤独和压力的参与者更频繁地进行了以社交为重点的披露，例如友谊和连接，而较低的压力则与内省和目标导向的主题相关（如学术抱负）。通过探索干预如何影响福祉以及福祉如何塑造机器人导向对话的内容，我们旨在捕捉人类-机器人互动中情感支持的动态性质。 
+
+---
+# Autonomous and Self-Adapting System for Synthetic Media Detection and Attribution 
+
+**Title (ZH)**: 自主适应性合成媒体检测与归属系统 
+
+**Authors**: Aref Azizpour, Tai D. Nguyen, Matthew C. Stamm  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.03615)  
+
+**Abstract**: Rapid advances in generative AI have enabled the creation of highly realistic synthetic images, which, while beneficial in many domains, also pose serious risks in terms of disinformation, fraud, and other malicious applications. Current synthetic image identification systems are typically static, relying on feature representations learned from known generators; as new generative models emerge, these systems suffer from severe performance degradation. In this paper, we introduce the concept of an autonomous self-adaptive synthetic media identification system -- one that not only detects synthetic images and attributes them to known sources but also autonomously identifies and incorporates novel generators without human intervention. Our approach leverages an open-set identification strategy with an evolvable embedding space that distinguishes between known and unknown sources. By employing an unsupervised clustering method to aggregate unknown samples into high-confidence clusters and continuously refining its decision boundaries, our system maintains robust detection and attribution performance even as the generative landscape evolves. Extensive experiments demonstrate that our method significantly outperforms existing approaches, marking a crucial step toward universal, adaptable forensic systems in the era of rapidly advancing generative models. 
+
+**Abstract (ZH)**: 快速发展的生成式AI使高度逼真的合成图像得以创建，尽管在许多领域有益，但也带来了信息发布误导、欺诈及其他恶意应用的重大风险。当前的合成图像识别系统通常是静态的，依赖于从已知生成器学习到的特征表示；随着新生成模型的出现，这些系统会遭受严重的性能退化。本文介绍了一种自主自适应合成媒体识别系统——不仅能检测合成图像并将其归属到已知来源，还能自主识别和整合新的生成器而不需人工干预。我们的方法利用开放集识别策略和可进化的嵌入空间，以区分已知和未知来源。通过使用无监督聚类方法将未知样本聚类为高置信度群组，并不断优化其决策边界，我们的系统能够在生成模型不断发展的背景下保持稳健的检测和归属性能。详尽的实验表明，我们的方法显著优于现有方法，标志着向适应快速发展的生成模型时代通用可适应的取证系统的关键一步。 
+
+---
+# The AI Cosmologist I: An Agentic System for Automated Data Analysis 
+
+**Title (ZH)**: AI天体哲学家I：自主系统及其在自动化数据分析中的应用 
+
+**Authors**: Adam Moss  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.03424)  
+
+**Abstract**: We present the AI Cosmologist, an agentic system designed to automate cosmological/astronomical data analysis and machine learning research workflows. This implements a complete pipeline from idea generation to experimental evaluation and research dissemination, mimicking the scientific process typically performed by human researchers. The system employs specialized agents for planning, coding, execution, analysis, and synthesis that work together to develop novel approaches. Unlike traditional auto machine-learning systems, the AI Cosmologist generates diverse implementation strategies, writes complete code, handles execution errors, analyzes results, and synthesizes new approaches based on experimental outcomes. We demonstrate the AI Cosmologist capabilities across several machine learning tasks, showing how it can successfully explore solution spaces, iterate based on experimental results, and combine successful elements from different approaches. Our results indicate that agentic systems can automate portions of the research process, potentially accelerating scientific discovery. The code and experimental data used in this paper are available on GitHub at this https URL. Example papers included in the appendix demonstrate the system's capability to autonomously produce complete scientific publications, starting from only the dataset and task description 
+
+**Abstract (ZH)**: 我们介绍了一智能宇宙学家，这是一种自主系统，旨在自动化宇宙学/天文学数据解析及机器学习研究流程。该系统实现从想法生成到实验评估和研究成果发布的完整工作流程，模拟人类研究人员通常执行的科学过程。该系统运用专门的代理进行规划、编程、执行、分析和综合，共同开发新的方法。与传统的自动机器学习系统不同，智能宇宙学家能够生成多样化的实施策略，编写完整的代码，处理执行错误，分析结果，并根据实验结果综合新的方法。我们在多个机器学习任务中展示了智能宇宙学家的能力，显示出它如何成功探索解空间、基于实验结果迭代以及结合不同方法的成功元素。我们的结果表明，自主系统可以自动化研究过程的部分环节，可能加速科学发现。本文使用的代码和实验数据可在 GitHub 上找到：this https URL。附录中的示例论文展示了该系统从仅数据集和任务描述开始，自主产生完整科学出版物的能力。 
+
+---
+# Autonomous state-space segmentation for Deep-RL sparse reward scenarios 
+
+**Title (ZH)**: 自主状态空间分割用于深度强化学习稀疏奖励场景 
+
+**Authors**: Gianluca Maselli, Vieri Giuliano Santucci  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.03420)  
+
+**Abstract**: Dealing with environments with sparse rewards has always been crucial for systems developed to operate in autonomous open-ended learning settings. Intrinsic Motivations could be an effective way to help Deep Reinforcement Learning algorithms learn in such scenarios. In fact, intrinsic reward signals, such as novelty or curiosity, are generally adopted to improve exploration when extrinsic rewards are delayed or absent. Building on previous works, we tackle the problem of learning policies in the presence of sparse rewards by proposing a two-level architecture that alternates an ''intrinsically driven'' phase of exploration and autonomous sub-goal generation, to a phase of sparse reward, goal-directed policy learning. The idea is to build several small networks, each one specialized on a particular sub-path, and use them as starting points for future exploration without the need to further explore from scratch previously learnt paths. Two versions of the system have been trained and tested in the Gym SuperMarioBros environment without considering any additional extrinsic reward. The results show the validity of our approach and the importance of autonomously segment the environment to generate an efficient path towards the final goal. 
+
+**Abstract (ZH)**: 处理稀疏奖励环境一直是为自主开放式学习环境开发的系统的关键问题。内在动机可能是帮助深度强化学习算法在这种场景下学习的有效方法。实际上，诸如新颖性或好奇心之类的内在奖励信号通常被采用，以改进探索，尤其是当外部奖励延迟或缺失时。在此基础上，我们通过提出交替进行“内在驱动”的探索和自主子目标生成阶段与稀疏奖励、目标导向策略学习阶段的两层架构来解决在稀疏奖励环境下的策略学习问题。该架构旨在构建多个专门针对特定子路径的小型网络，并将它们用作未来探索的起点，而无需从头开始进一步探索先前学习的路径。在Gym SuperMarioBros环境中，该系统在不考虑任何额外外部奖励的情况下进行了训练和测试。实验结果证明了我们方法的有效性，并强调了自主分割环境以生成高效路径的重要性。 
+
+---
+# Decentralized Collective World Model for Emergent Communication and Coordination 
+
+**Title (ZH)**: 去中心化集体世界模型用于 emergent 通信与协调 
+
+**Authors**: Kentaro Nomura, Tatsuya Aoki, Tadahiro Taniguchi, Takato Horii  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.03353)  
+
+**Abstract**: We propose a fully decentralized multi-agent world model that enables both symbol emergence for communication and coordinated behavior through temporal extension of collective predictive coding. Unlike previous research that focuses on either communication or coordination separately, our approach achieves both simultaneously. Our method integrates world models with communication channels, enabling agents to predict environmental dynamics, estimate states from partial observations, and share critical information through bidirectional message exchange with contrastive learning for message alignment. Using a two-agent trajectory drawing task, we demonstrate that our communication-based approach outperforms non-communicative models when agents have divergent perceptual capabilities, achieving the second-best coordination after centralized models. Importantly, our distributed approach with constraints preventing direct access to other agents' internal states facilitates the emergence of more meaningful symbol systems that accurately reflect environmental states. These findings demonstrate the effectiveness of decentralized communication for supporting coordination while developing shared representations of the environment. 
+
+**Abstract (ZH)**: 我们提出了一种完全去中心化的多智能体世界模型，该模型通过时间扩展的集体预测编码实现通信中的符号涌现和协调行为。与以往专注于通信或协调其中一项的研究不同，我们的方法能够在同时实现两者。我们的方法将世界模型与通信渠道集成，使智能体能够预测环境动力学、从部分观测中估计状态，并通过对比学习进行双向消息交换以优化信息共享。通过一个双智能体轨迹绘制任务，我们展示了在智能体具有不同的感知能力时，基于通信的方法优于非通信模型，并在中心化模型之后实现了次优的协调。重要的是，我们的分布式方法通过限制直接访问其他智能体的内部状态，促进了更具有意义的符号系统的涌现，这些符号系统准确反映了环境状态。这些发现证明了去中心化通信在支持协调并发展环境共享表征方面的有效性。 
+
+---
+# Augmenting Human Cognition With Generative AI: Lessons From AI-Assisted Decision-Making 
+
+**Title (ZH)**: 利用生成式AI增强人类认知：来自AI辅助决策的教训 
+
+**Authors**: Zelun Tony Zhang, Leon Reicherts  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.03207)  
+
+**Abstract**: How can we use generative AI to design tools that augment rather than replace human cognition? In this position paper, we review our own research on AI-assisted decision-making for lessons to learn. We observe that in both AI-assisted decision-making and generative AI, a popular approach is to suggest AI-generated end-to-end solutions to users, which users can then accept, reject, or edit. Alternatively, AI tools could offer more incremental support to help users solve tasks themselves, which we call process-oriented support. We describe findings on the challenges of end-to-end solutions, and how process-oriented support can address them. We also discuss the applicability of these findings to generative AI based on a recent study in which we compared both approaches to assist users in a complex decision-making task with LLMs. 
+
+**Abstract (ZH)**: 如何使用生成型AI设计增强而非替代人类认知的工具？在这篇立场论文中，我们回顾了自己在AI辅助决策方面的研究，以从中汲取教训。我们观察到，在AI辅助决策和生成型AI中，一个流行的方法是向用户建议完整的AI生成解决方案，用户可以选择接受、拒绝或编辑。或者，AI工具可以提供更多逐步的支持，帮助用户自己解决问题，我们称之为过程导向支持。我们描述了端到端解决方案面临的挑战，以及过程导向支持如何解决这些问题。我们还基于一项最近的研究讨论了这些发现适用于生成型AI的适用性，该研究比较了两种方法在使用大型语言模型辅助复杂决策任务时的效果。 
+
+---
+# Deep Reinforcement Learning via Object-Centric Attention 
+
+**Title (ZH)**: 基于对象中心注意力的深度强化学习 
+
+**Authors**: Jannis Blüml, Cedric Derstroff, Bjarne Gregori, Elisabeth Dillies, Quentin Delfosse, Kristian Kersting  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.03024)  
+
+**Abstract**: Deep reinforcement learning agents, trained on raw pixel inputs, often fail to generalize beyond their training environments, relying on spurious correlations and irrelevant background details. To address this issue, object-centric agents have recently emerged. However, they require different representations tailored to the task specifications. Contrary to deep agents, no single object-centric architecture can be applied to any environment. Inspired by principles of cognitive science and Occam's Razor, we introduce Object-Centric Attention via Masking (OCCAM), which selectively preserves task-relevant entities while filtering out irrelevant visual information. Specifically, OCCAM takes advantage of the object-centric inductive bias. Empirical evaluations on Atari benchmarks demonstrate that OCCAM significantly improves robustness to novel perturbations and reduces sample complexity while showing similar or improved performance compared to conventional pixel-based RL. These results suggest that structured abstraction can enhance generalization without requiring explicit symbolic representations or domain-specific object extraction pipelines. 
+
+**Abstract (ZH)**: 基于对象中心注意力掩模的强化学习代理 
+
+---
+# Systematic Literature Review: Explainable AI Definitions and Challenges in Education 
+
+**Title (ZH)**: 系统文献综述：可解释人工智能在教育中的定义与挑战 
+
+**Authors**: Zaid M. Altukhi, Sojen Pradhan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.02910)  
+
+**Abstract**: Explainable AI (XAI) seeks to transform black-box algorithmic processes into transparent ones, enhancing trust in AI applications across various sectors such as education. This review aims to examine the various definitions of XAI within the literature and explore the challenges of XAI in education. Our goal is to shed light on how XAI can contribute to enhancing the educational field. This systematic review, utilising the PRISMA method for rigorous and transparent research, identified 19 relevant studies. Our findings reveal 15 definitions and 62 challenges. These challenges are categorised using thematic analysis into seven groups: explainability, ethical, technical, human-computer interaction (HCI), trustworthiness, policy and guideline, and others, thereby deepening our understanding of the implications of XAI in education. Our analysis highlights the absence of standardised definitions for XAI, leading to confusion, especially because definitions concerning ethics, trustworthiness, technicalities, and explainability tend to overlap and vary. 
+
+**Abstract (ZH)**: 可解释的人工智能（XAI）旨在将黑盒算法过程转变为透明过程，增强跨教育等各领域的AI应用信任。本文旨在于文献中回顾XAI的各种定义，并探索教育领域中XAI的挑战。我们的目标是阐明XAI如何为教育领域做出贡献。本系统综述采用PRISMA方法进行严格和透明的研究，共识别出19项相关研究。研究发现15种定义和62项挑战。这些挑战通过主题分析被归类为七大类：可解释性、伦理、技术、人机交互（HCI）、可信度、政策与指南，以及其他，从而加深了我们对教育领域中XAI影响的理解。我们的分析指出，缺乏标准化的XAI定义导致了 confusion，特别是因为与伦理、可信度、技术和可解释性相关的定义往往重叠且变化不一。 
+
+---
