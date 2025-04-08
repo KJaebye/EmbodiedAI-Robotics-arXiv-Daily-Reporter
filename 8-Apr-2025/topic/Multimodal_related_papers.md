@@ -1,0 +1,185 @@
+# SmolVLM: Redefining small and efficient multimodal models 
+
+**Title (ZH)**: SmolVLM: 重定义小型高效的多模态模型 
+
+**Authors**: Andrés Marafioti, Orr Zohar, Miquel Farré, Merve Noyan, Elie Bakouch, Pedro Cuenca, Cyril Zakka, Loubna Ben Allal, Anton Lozhkov, Nouamane Tazi, Vaibhav Srivastav, Joshua Lochner, Hugo Larcher, Mathieu Morlon, Lewis Tunstall, Leandro von Werra, Thomas Wolf  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.05299)  
+
+**Abstract**: Large Vision-Language Models (VLMs) deliver exceptional performance but require significant computational resources, limiting their deployment on mobile and edge devices. Smaller VLMs typically mirror design choices of larger models, such as extensive image tokenization, leading to inefficient GPU memory usage and constrained practicality for on-device applications.
+We introduce SmolVLM, a series of compact multimodal models specifically engineered for resource-efficient inference. We systematically explore architectural configurations, tokenization strategies, and data curation optimized for low computational overhead. Through this, we identify key design choices that yield substantial performance gains on image and video tasks with minimal memory footprints.
+Our smallest model, SmolVLM-256M, uses less than 1GB GPU memory during inference and outperforms the 300-times larger Idefics-80B model, despite an 18-month development gap. Our largest model, at 2.2B parameters, rivals state-of-the-art VLMs consuming twice the GPU memory. SmolVLM models extend beyond static images, demonstrating robust video comprehension capabilities.
+Our results emphasize that strategic architectural optimizations, aggressive yet efficient tokenization, and carefully curated training data significantly enhance multimodal performance, facilitating practical, energy-efficient deployments at significantly smaller scales. 
+
+**Abstract (ZH)**: 小型化多模态模型（SmolVLM）：资源高效推理的设计选择与性能优化 
+
+---
+# Multimodal Agricultural Agent Architecture (MA3): A New Paradigm for Intelligent Agricultural Decision-Making 
+
+**Title (ZH)**: 多模态农业代理架构 (MA3): 一种新的智能农业决策范式 
+
+**Authors**: Zhuoning Xu, Jian Xu, Mingqing Zhang, Peijie Wang, Chao Deng, Cheng-Lin Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.04789)  
+
+**Abstract**: As a strategic pillar industry for human survival and development, modern agriculture faces dual challenges: optimizing production efficiency and achieving sustainable development. Against the backdrop of intensified climate change leading to frequent extreme weather events, the uncertainty risks in agricultural production systems are increasing exponentially. To address these challenges, this study proposes an innovative \textbf{M}ultimodal \textbf{A}gricultural \textbf{A}gent \textbf{A}rchitecture (\textbf{MA3}), which leverages cross-modal information fusion and task collaboration mechanisms to achieve intelligent agricultural decision-making. This study constructs a multimodal agricultural agent dataset encompassing five major tasks: classification, detection, Visual Question Answering (VQA), tool selection, and agent evaluation. We propose a unified backbone for sugarcane disease classification and detection tools, as well as a sugarcane disease expert model. By integrating an innovative tool selection module, we develop a multimodal agricultural agent capable of effectively performing tasks in classification, detection, and VQA. Furthermore, we introduce a multi-dimensional quantitative evaluation framework and conduct a comprehensive assessment of the entire architecture over our evaluation dataset, thereby verifying the practicality and robustness of MA3 in agricultural scenarios. This study provides new insights and methodologies for the development of agricultural agents, holding significant theoretical and practical implications. Our source code and dataset will be made publicly available upon acceptance. 
+
+**Abstract (ZH)**: 作为人类生存与发展的重要战略支柱产业，现代农业面临着优化生产效率和实现可持续发展的双重挑战。在气候变化加剧导致极端天气事件频发的背景下，农业生产系统的不确定性风险呈指数级增加。为应对这些挑战，本研究提出了一种创新的多模态农业代理架构（MA3），该架构通过跨模态信息融合和任务协作机制实现智能化农业决策。本研究构建了一个涵盖五项主要任务的多模态农业代理数据集，包括分类、检测、视觉问答（VQA）、工具选择和代理评估。我们提出了一种统一的骨干网络，用于甘蔗病害分类和检测工具，以及甘蔗病害专家模型。通过集成一种创新的工具选择模块，我们开发出一种能够有效地在分类、检测和VQA任务中执行的多模态农业代理。此外，我们引入了一个多维度的定量评估框架，并对整个架构在评估数据集上的表现进行了全面评估，从而验证了MA3在农业场景中的实用性和鲁棒性。本研究为农业代理的开发提供了新的见解和方法论，拥有重要的理论和实践意义。我们的源代码和数据集将在录用后公开。 
+
+---
+# Resource-Efficient Beam Prediction in mmWave Communications with Multimodal Realistic Simulation Framework 
+
+**Title (ZH)**: 基于多模态现实仿真框架的毫米波通信高效波束预测 
+
+**Authors**: Yu Min Park, Yan Kyaw Tun, Walid Saad, Choong Seon Hong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.05187)  
+
+**Abstract**: Beamforming is a key technology in millimeter-wave (mmWave) communications that improves signal transmission by optimizing directionality and intensity. However, conventional channel estimation methods, such as pilot signals or beam sweeping, often fail to adapt to rapidly changing communication environments. To address this limitation, multimodal sensing-aided beam prediction has gained significant attention, using various sensing data from devices such as LiDAR, radar, GPS, and RGB images to predict user locations or network conditions. Despite its promising potential, the adoption of multimodal sensing-aided beam prediction is hindered by high computational complexity, high costs, and limited datasets. Thus, in this paper, a resource-efficient learning approach is proposed to transfer knowledge from a multimodal network to a monomodal (radar-only) network based on cross-modal relational knowledge distillation (CRKD), while reducing computational overhead and preserving predictive accuracy. To enable multimodal learning with realistic data, a novel multimodal simulation framework is developed while integrating sensor data generated from the autonomous driving simulator CARLA with MATLAB-based mmWave channel modeling, and reflecting real-world conditions. The proposed CRKD achieves its objective by distilling relational information across different feature spaces, which enhances beam prediction performance without relying on expensive sensor data. Simulation results demonstrate that CRKD efficiently distills multimodal knowledge, allowing a radar-only model to achieve $94.62\%$ of the teacher performance. In particular, this is achieved with just $10\%$ of the teacher network's parameters, thereby significantly reducing computational complexity and dependence on multimodal sensor data. 
+
+**Abstract (ZH)**: 基于跨模态关系知识蒸馏的资源高效学习方法：从多模态网络到雷达唯一网络的迁移学习 
+
+---
+# Leveraging Label Potential for Enhanced Multimodal Emotion Recognition 
+
+**Title (ZH)**: 利用标签潜力以增强多模态情感识别 
+
+**Authors**: Xuechun Shao, Yinfeng Yu, Liejun Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.05158)  
+
+**Abstract**: Multimodal emotion recognition (MER) seeks to integrate various modalities to predict emotional states accurately. However, most current research focuses solely on the fusion of audio and text features, overlooking the valuable information in emotion labels. This oversight could potentially hinder the performance of existing methods, as emotion labels harbor rich, insightful information that could significantly aid MER. We introduce a novel model called Label Signal-Guided Multimodal Emotion Recognition (LSGMER) to overcome this limitation. This model aims to fully harness the power of emotion label information to boost the classification accuracy and stability of MER. Specifically, LSGMER employs a Label Signal Enhancement module that optimizes the representation of modality features by interacting with audio and text features through label embeddings, enabling it to capture the nuances of emotions precisely. Furthermore, we propose a Joint Objective Optimization(JOO) approach to enhance classification accuracy by introducing the Attribution-Prediction Consistency Constraint (APC), which strengthens the alignment between fused features and emotion categories. Extensive experiments conducted on the IEMOCAP and MELD datasets have demonstrated the effectiveness of our proposed LSGMER model. 
+
+**Abstract (ZH)**: 多模态情绪识别中的标签信号引导多模态情绪识别（Label Signal-Guided Multimodal Emotion Recognition） 
+
+---
+# RS-RAG: Bridging Remote Sensing Imagery and Comprehensive Knowledge with a Multi-Modal Dataset and Retrieval-Augmented Generation Model 
+
+**Title (ZH)**: RS-RAG：多模态数据集与检索增强生成模型在遥感图像与综合知识融合中的应用 
+
+**Authors**: Congcong Wen, Yiting Lin, Xiaokang Qu, Nan Li, Yong Liao, Hui Lin, Xiang Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.04988)  
+
+**Abstract**: Recent progress in VLMs has demonstrated impressive capabilities across a variety of tasks in the natural image domain. Motivated by these advancements, the remote sensing community has begun to adopt VLMs for remote sensing vision-language tasks, including scene understanding, image captioning, and visual question answering. However, existing remote sensing VLMs typically rely on closed-set scene understanding and focus on generic scene descriptions, yet lack the ability to incorporate external knowledge. This limitation hinders their capacity for semantic reasoning over complex or context-dependent queries that involve domain-specific or world knowledge. To address these challenges, we first introduced a multimodal Remote Sensing World Knowledge (RSWK) dataset, which comprises high-resolution satellite imagery and detailed textual descriptions for 14,141 well-known landmarks from 175 countries, integrating both remote sensing domain knowledge and broader world knowledge. Building upon this dataset, we proposed a novel Remote Sensing Retrieval-Augmented Generation (RS-RAG) framework, which consists of two key components. The Multi-Modal Knowledge Vector Database Construction module encodes remote sensing imagery and associated textual knowledge into a unified vector space. The Knowledge Retrieval and Response Generation module retrieves and re-ranks relevant knowledge based on image and/or text queries, and incorporates the retrieved content into a knowledge-augmented prompt to guide the VLM in producing contextually grounded responses. We validated the effectiveness of our approach on three representative vision-language tasks, including image captioning, image classification, and visual question answering, where RS-RAG significantly outperformed state-of-the-art baselines. 
+
+**Abstract (ZH)**: 近期视觉语言模型在自然图像领域的进展展示出了跨多种任务的 impressive 能力。受这些进展的启发，遥感社区开始采用视觉语言模型进行遥感视觉-语言任务，包括场景理解、图像描述和视觉问答。然而，现有的遥感视觉语言模型通常依赖于封闭场景理解，并专注于通用场景描述，缺乏融合外部知识的能力。这一限制阻碍了它们对涉及特定领域或世界知识的复杂或依赖上下文的查询进行语义推理的能力。为了解决这些挑战，我们首先引入了一个多模态遥感世界知识（RSWK）数据集，该数据集包含来自175个国家的14,141个著名地标高分辨率卫星图像及其详细文本描述，整合了遥感领域知识和更广泛的世界知识。基于此数据集，我们提出了一种新颖的遥感检索增强生成（RS-RAG）框架，该框架由两个关键组件组成。多模态知识向量数据库构建模块将遥感图像及其相关文本知识编码到统一的向量空间中。知识检索和响应生成模块根据图像和/或文本查询检索和重新排名相关信息，并将检索的内容整合到一个增强知识的提示中，以指导视觉语言模型生成基于上下文的响应。我们在图像描述、图像分类和视觉问答等三个代表性视觉语言任务上验证了我们方法的有效性，其中RS-RAG在所有任务上显著优于现有最先进的基线模型。 
+
+---
+# Lumina-OmniLV: A Unified Multimodal Framework for General Low-Level Vision 
+
+**Title (ZH)**: Lumina-OmniLV：统一的多模态框架用于通用低级视觉任务 
+
+**Authors**: Yuandong Pu, Le Zhuo, Kaiwen Zhu, Liangbin Xie, Wenlong Zhang, Xiangyu Chen, Pneg Gao, Yu Qiao, Chao Dong, Yihao Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.04903)  
+
+**Abstract**: We present Lunima-OmniLV (abbreviated as OmniLV), a universal multimodal multi-task framework for low-level vision that addresses over 100 sub-tasks across four major categories: image restoration, image enhancement, weak-semantic dense prediction, and stylization. OmniLV leverages both textual and visual prompts to offer flexible and user-friendly interactions. Built on Diffusion Transformer (DiT)-based generative priors, our framework supports arbitrary resolutions -- achieving optimal performance at 1K resolution -- while preserving fine-grained details and high fidelity. Through extensive experiments, we demonstrate that separately encoding text and visual instructions, combined with co-training using shallow feature control, is essential to mitigate task ambiguity and enhance multi-task generalization. Our findings also reveal that integrating high-level generative tasks into low-level vision models can compromise detail-sensitive restoration. These insights pave the way for more robust and generalizable low-level vision systems. 
+
+**Abstract (ZH)**: Lunima-OmniLV：一种适用于低级视觉的通用多模态多任务框架 
+
+---
+# SCAM: A Real-World Typographic Robustness Evaluation for Multimodal Foundation Models 
+
+**Title (ZH)**: SCAM：多模态基础模型的现实世界 typography 稳定性评估 
+
+**Authors**: Justus Westerhoff, Erblina Purellku, Jakob Hackstein, Leo Pinetzki, Lorenz Hufe  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.04893)  
+
+**Abstract**: Typographic attacks exploit the interplay between text and visual content in multimodal foundation models, causing misclassifications when misleading text is embedded within images. However, existing datasets are limited in size and diversity, making it difficult to study such vulnerabilities. In this paper, we introduce SCAM, the largest and most diverse dataset of real-world typographic attack images to date, containing 1,162 images across hundreds of object categories and attack words. Through extensive benchmarking of Vision-Language Models (VLMs) on SCAM, we demonstrate that typographic attacks significantly degrade performance, and identify that training data and model architecture influence the susceptibility to these attacks. Our findings reveal that typographic attacks persist in state-of-the-art Large Vision-Language Models (LVLMs) due to the choice of their vision encoder, though larger Large Language Models (LLMs) backbones help mitigate their vulnerability. Additionally, we demonstrate that synthetic attacks closely resemble real-world (handwritten) attacks, validating their use in research. Our work provides a comprehensive resource and empirical insights to facilitate future research toward robust and trustworthy multimodal AI systems. We publicly release the datasets introduced in this paper under this https URL, along with the code for evaluations at this https URL. 
+
+**Abstract (ZH)**: 图像攻击利用了文本与视觉内容在多模态基础模型中的交互作用，当误导性文本嵌入图像中时，会导致分类错误。然而，现有的数据集在大小和多样性方面有限，使得研究这些漏洞变得困难。在本文中，我们引入了SCAM，这是目前最大的也是最多样化的实际图像文字攻击数据集，包含1,162张图像，覆盖数百个对象类别和攻击词。通过在SCAM上对视觉语言模型（VLMs）进行广泛基准测试，我们证明了图像攻击显著降低了性能，并且发现训练数据和模型架构会影响这些攻击的易感性。我们的发现揭示了由于大型视觉编码器的选取，图像攻击在当今最先进的大型视觉语言模型（LVLMs）中仍然存在，尽管较大的大型语言模型（LLMs）骨干网络有助于缓解其脆弱性。此外，我们证明合成攻击与真实世界（手写）攻击非常相似，验证了其在研究中的使用。我们的工作提供了一个全面的资源和实证见解，以促进未来对稳健和可信的多模态AI系统的研究。我们在本文公开发布了所引入的数据集（此链接：https://），并提供了评估代码（此链接：https://）。 
+
+---
+# Bidirectional Hierarchical Protein Multi-Modal Representation Learning 
+
+**Title (ZH)**: 双向层次蛋白多模态表示学习 
+
+**Authors**: Xuefeng Liu, Songhao Jiang, Chih-chan Tien, Jinbo Xu, Rick Stevens  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.04770)  
+
+**Abstract**: Protein representation learning is critical for numerous biological tasks. Recently, large transformer-based protein language models (pLMs) pretrained on large scale protein sequences have demonstrated significant success in sequence-based tasks. However, pLMs lack structural information. Conversely, graph neural networks (GNNs) designed to leverage 3D structural information have shown promising generalization in protein-related prediction tasks, but their effectiveness is often constrained by the scarcity of labeled structural data. Recognizing that sequence and structural representations are complementary perspectives of the same protein entity, we propose a multimodal bidirectional hierarchical fusion framework to effectively merge these modalities. Our framework employs attention and gating mechanisms to enable effective interaction between pLMs-generated sequential representations and GNN-extracted structural features, improving information exchange and enhancement across layers of the neural network. Based on the framework, we further introduce local Bi-Hierarchical Fusion with gating and global Bi-Hierarchical Fusion with multihead self-attention approaches. Through extensive experiments on a diverse set of protein-related tasks, our method demonstrates consistent improvements over strong baselines and existing fusion techniques in a variety of protein representation learning benchmarks, including react (enzyme/EC classification), model quality assessment (MQA), protein-ligand binding affinity prediction (LBA), protein-protein binding site prediction (PPBS), and B cell epitopes prediction (BCEs). Our method establishes a new state-of-the-art for multimodal protein representation learning, emphasizing the efficacy of BIHIERARCHICAL FUSION in bridging sequence and structural modalities. 
+
+**Abstract (ZH)**: 蛋白质表征学习对于众多生物任务至关重要。最近，基于大规模蛋白质序列预训练的大规模变压器蛋白语言模型（pLMs）在基于序列的任务中表现出显著的成功。然而，pLMs缺乏结构信息。相反，设计用于利用三维结构信息的图神经网络（GNNs）在蛋白质相关预测任务中显示出有前景的泛化能力，但其效果往往受限于标注结构数据的稀疏性。鉴于序列和结构表示是同一种蛋白质实体的互补视角，我们提出了一种多模态双向层级融合框架以有效整合这些模态。该框架采用注意力和门控机制，使pLMs生成的序列表示与GNN提取的结构特征之间能够有效互动，从而在神经网络的多个层面上提高信息的交换和增强。基于该框架，我们进一步引入了带有门控的局部双向层级融合方法和带有多头自注意力的全局双向层级融合方法。通过在一系列蛋白质相关任务上的广泛实验，我们的方法在多种蛋白质表征学习基准测试中均表现出对强基线和现有融合技术的一致改进，包括反应（酶/EC分类）、模型质量评估（MQA）、蛋白-配体结合亲和力预测（LBA）、蛋白-蛋白结合位点预测（PPBS）和B细胞表位预测（BCEs）。我们的方法为多模态蛋白质表征学习设立了新的前沿，强调了BIHIERARCHICAL FUSION在弥合序列和结构模态方面的有效性。 
+
+---
+# DanceMosaic: High-Fidelity Dance Generation with Multimodal Editability 
+
+**Title (ZH)**: 舞动拼图：具备多模态可编辑性的高保真舞蹈生成 
+
+**Authors**: Foram Niravbhai Shah, Parshwa Shah, Muhammad Usama Saleem, Ekkasit Pinyoanuntapong, Pu Wang, Hongfei Xue, Ahmed Helmy  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.04634)  
+
+**Abstract**: Recent advances in dance generation have enabled automatic synthesis of 3D dance motions. However, existing methods still struggle to produce high-fidelity dance sequences that simultaneously deliver exceptional realism, precise dance-music synchronization, high motion diversity, and physical plausibility. Moreover, existing methods lack the flexibility to edit dance sequences according to diverse guidance signals, such as musical prompts, pose constraints, action labels, and genre descriptions, significantly restricting their creative utility and adaptability. Unlike the existing approaches, DanceMosaic enables fast and high-fidelity dance generation, while allowing multimodal motion editing. Specifically, we propose a multimodal masked motion model that fuses the text-to-motion model with music and pose adapters to learn probabilistic mapping from diverse guidance signals to high-quality dance motion sequences via progressive generative masking training. To further enhance the motion generation quality, we propose multimodal classifier-free guidance and inference-time optimization mechanism that further enforce the alignment between the generated motions and the multimodal guidance. Extensive experiments demonstrate that our method establishes a new state-of-the-art performance in dance generation, significantly advancing the quality and editability achieved by existing approaches. 
+
+**Abstract (ZH)**: Recent advances in舞蹈生成已有能力实现自动合成3D舞蹈动作。然而，现有方法仍然难以同时生成高度逼真的舞蹈序列、精确的舞蹈-音乐同步、高动作多样性以及物理可行性。此外，现有方法缺乏根据多元指导信号（如音乐提示、姿态约束、动作标签和风格描述）编辑舞蹈序列的灵活性，严重限制了它们的创意应用和适应性。与现有方法不同，DanceMosaic能够在实现快速和高保真舞蹈生成的同时允许多模态动作编辑。具体而言，我们提出了一种多模态遮罩动作模型，将文本到动作模型与音乐和姿态适配器融合，通过逐步生成遮罩训练学习从多元指导信号到高质量舞蹈动作序列的概率映射。为进一步提升动作生成质量，我们提出了一种多模态无分类器指导和推理时优化机制，进一步加强了生成动作与多元指导的一致性。广泛实验表明，我们的方法在舞蹈生成中建立了新的最先进性能，显著提高了现有方法实现的生成质量和编辑性。 
+
+---
+# M2IV: Towards Efficient and Fine-grained Multimodal In-Context Learning in Large Vision-Language Models 
+
+**Title (ZH)**: M2IV: 向更高效细粒度多模态在上下文学习的大规模视觉-语言模型方向 
+
+**Authors**: Yanshu Li, Hongyang He, Yi Cao, Qisen Cheng, Xiang Fu, Ruixiang Tang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.04633)  
+
+**Abstract**: Multimodal in-context learning (ICL) is a vital capability for Large Vision-Language Models (LVLMs), allowing task adaptation via contextual prompts without parameter retraining. However, its application is hindered by the token-intensive nature of inputs and the high complexity of cross-modal few-shot learning, which limits the expressive power of representation methods. To tackle these challenges, we propose \textbf{M2IV}, a method that substitutes explicit demonstrations with learnable \textbf{I}n-context \textbf{V}ectors directly integrated into LVLMs. By exploiting the complementary strengths of multi-head attention (\textbf{M}HA) and multi-layer perceptrons (\textbf{M}LP), M2IV achieves robust cross-modal fidelity and fine-grained semantic distillation through training. This significantly enhances performance across diverse LVLMs and tasks and scales efficiently to many-shot scenarios, bypassing the context window limitations. We also introduce \textbf{VLibrary}, a repository for storing and retrieving M2IV, enabling flexible LVLM steering for tasks like cross-modal alignment, customized generation and safety improvement. Experiments across seven benchmarks and three LVLMs show that M2IV surpasses Vanilla ICL and prior representation engineering approaches, with an average accuracy gain of \textbf{3.74\%} over ICL with the same shot count, alongside substantial efficiency advantages. 
+
+**Abstract (ZH)**: 多模态上下文学习（ICL）是大型视觉语言模型（LVLMs）的重要能力，允许通过上下文提示进行任务适应而不需重新训练参数。然而，其应用受限于输入的标记密集性质和跨模态少样本学习的高复杂性，这限制了表示方法的表现力。为应对这些挑战，我们提出了**M2IV**方法，该方法用可学习的**I**n-context **V**ectors直接替代显式的示例，将其直接集成到LVLMs中。通过利用多头注意力（**M**HA）和多层感知机（**M**LP）的互补优势，M2IV在训练过程中实现了稳健的跨模态保真度和精细的语义精炼，这显著提升了多样性LVLMs和任务下的性能，并且能够高效扩展到多样本场景，绕过了上下文窗口的限制。我们还介绍了**VLibrary**，一个用于存储和检索M2IV的仓库，使LVLM能够灵活地用于跨模态对齐、定制生成和安全性改进等任务。在七个基准和三种LVLM上的实验显示，M2IV超越了Vanilla ICL和之前的表示工程方法，平均准确率提高了**3.74%**，同时具备显著的效率优势。 
+
+---
+# Advancing Egocentric Video Question Answering with Multimodal Large Language Models 
+
+**Title (ZH)**: 基于多模态大语言模型的自视点视频问答研究 
+
+**Authors**: Alkesh Patel, Vibhav Chitalia, Yinfei Yang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.04550)  
+
+**Abstract**: Egocentric Video Question Answering (QA) requires models to handle long-horizon temporal reasoning, first-person perspectives, and specialized challenges like frequent camera movement. This paper systematically evaluates both proprietary and open-source Multimodal Large Language Models (MLLMs) on QaEgo4Dv2 - a refined dataset of egocentric videos derived from QaEgo4D. Four popular MLLMs (GPT-4o, Gemini-1.5-Pro, Video-LLaVa-7B and Qwen2-VL-7B-Instruct) are assessed using zero-shot and fine-tuned approaches for both OpenQA and CloseQA settings. We introduce QaEgo4Dv2 to mitigate annotation noise in QaEgo4D, enabling more reliable comparison. Our results show that fine-tuned Video-LLaVa-7B and Qwen2-VL-7B-Instruct achieve new state-of-the-art performance, surpassing previous benchmarks by up to +2.6% ROUGE/METEOR (for OpenQA) and +13% accuracy (for CloseQA). We also present a thorough error analysis, indicating the model's difficulty in spatial reasoning and fine-grained object recognition - key areas for future improvement. 
+
+**Abstract (ZH)**: 自视点视频问答（QA）要求模型处理长时序推理、第一人称视角以及频繁的摄像头移动等专门挑战。本文系统性地评估了 proprietary 和开源的多模态大型语言模型（MLLMs）在 QaEgo4Dv2 数据集上的性能，该数据集是从 QaEgo4D 提取并精炼得到的自视点视频数据集。使用零样本和微调方法分别评估了四种流行的 MLLMs（GPT-4o、Gemini-1.5-Pro、Video-LLaVa-7B 和 Qwen2-VL-7B-Instruct）在开放式问答（OpenQA）和封闭式问答（CloseQA）设置下的表现。我们引入 QaEgo4Dv2 以减少 QaEgo4D 中的注释噪声，使比较更加可靠。结果显示，微调后的 Video-LLaVa-7B 和 Qwen2-VL-7B-Instruct 达到了新的最佳性能，分别在开放式问答中高出 +2.6% ROUGE/METEOR，在封闭式问答中高出 +13% 的准确率。我们还进行了详尽的错误分析，指出了模型在空间推理和精细物体识别方面的困难，这些是未来需要改进的关键领域。 
+
+---
+# UniToken: Harmonizing Multimodal Understanding and Generation through Unified Visual Encoding 
+
+**Title (ZH)**: UniToken: 统一视觉编码实现多模态理解和生成和谐统一 
+
+**Authors**: Yang Jiao, Haibo Qiu, Zequn Jie, Shaoxiang Chen, Jingjing Chen, Lin Ma, Yu-Gang Jiang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.04423)  
+
+**Abstract**: We introduce UniToken, an auto-regressive generation model that encodes visual inputs through a combination of discrete and continuous representations, enabling seamless integration of unified visual understanding and image generation tasks. Unlike previous approaches that rely on unilateral visual representations, our unified visual encoding framework captures both high-level semantics and low-level details, delivering multidimensional information that empowers heterogeneous tasks to selectively assimilate domain-specific knowledge based on their inherent characteristics. Through in-depth experiments, we uncover key principles for developing a unified model capable of both visual understanding and image generation. Extensive evaluations across a diverse range of prominent benchmarks demonstrate that UniToken achieves state-of-the-art performance, surpassing existing approaches. These results establish UniToken as a robust foundation for future research in this domain. The code and models are available at this https URL. 
+
+**Abstract (ZH)**: 我们介绍UniToken，这是一种自回归生成模型，通过离散和连续表示的结合编码视觉输入，实现统一的视觉理解和图像生成任务的无缝集成。与依赖单向视觉表示的先前方法不同，我们的统一视觉编码框架捕捉了高层语义和底层细节，提供多维度信息，使异构任务能够根据自身特性选择性地吸收特定领域的知识。通过深入的实验，我们揭示了开发既能进行视觉理解又能进行图像生成的统一模型的关键原则。广泛的评估表明，UniToken在多种突出基准上达到了最先进的性能，超越了现有方法。这些结果奠定了UniToken作为未来研究坚实基础的地位。代码和模型可在以下链接获取。 
+
+---
+# TDBench: Benchmarking Vision-Language Models in Understanding Top-Down Images 
+
+**Title (ZH)**: TDBench: 评估视觉-语言模型理解自上而下图像的能力 
+
+**Authors**: Kaiyuan Hou, Minghui Zhao, Lilin Xu, Yuang Fan, Xiaofan Jiang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.03748)  
+
+**Abstract**: The rapid emergence of Vision-Language Models (VLMs) has significantly advanced multimodal understanding, enabling applications in scene comprehension and visual reasoning. While these models have been primarily evaluated and developed for front-view image understanding, their capabilities in interpreting top-down images have received limited attention, partly due to the scarcity of diverse top-down datasets and the challenges in collecting such data. In contrast, top-down vision provides explicit spatial overviews and improved contextual understanding of scenes, making it particularly valuable for tasks like autonomous navigation, aerial imaging, and spatial planning. In this work, we address this gap by introducing TDBench, a comprehensive benchmark for VLMs in top-down image understanding. TDBench is constructed from public top-down view datasets and high-quality simulated images, including diverse real-world and synthetic scenarios. TDBench consists of visual question-answer pairs across ten evaluation dimensions of image understanding. Moreover, we conduct four case studies that commonly happen in real-world scenarios but are less explored. By revealing the strengths and limitations of existing VLM through evaluation results, we hope TDBench to provide insights for motivating future research. Project homepage: this https URL 
+
+**Abstract (ZH)**: Vision-Language模型的快速兴起显著推动了多模态理解的发展，使其在场景理解与视觉推理方面得到广泛应用。尽管这些模型主要被评估和开发用于前视图图像理解，但它们在解释俯视图图像方面的能力却受到较少关注，部分原因是缺乏多样化的俯视图数据集，以及收集此类数据的挑战。相比之下，俯视图视觉提供了明确的空间概述和情境理解，尤其对于自主导航、航空成像和空间规划等任务具有重要价值。本文通过引入TDBench——一个全面的俯视图图像理解基准测试，来填补这一空白。TDBench基于公共俯视图视图数据集和高质量模拟图像构建，涵盖多种现实世界和合成场景。TDBench包括十种评估维度的视觉问题-答案对。此外，我们还进行了四个常见于实际场景但较少被探索的案例研究。通过评估结果揭示现有Vision-Language模型的优势和局限，我们希望TDBench能够为未来的研究提供见解。项目主页：this https URL 
+
+---
+# Misaligned Roles, Misplaced Images: Structural Input Perturbations Expose Multimodal Alignment Blind Spots 
+
+**Title (ZH)**: 角色错位，图像错置：结构输入扰动揭示多模态对齐盲点 
+
+**Authors**: Erfan Shayegani, G M Shahariar, Sara Abdali, Lei Yu, Nael Abu-Ghazaleh, Yue Dong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.03735)  
+
+**Abstract**: Multimodal Language Models (MMLMs) typically undergo post-training alignment to prevent harmful content generation. However, these alignment stages focus primarily on the assistant role, leaving the user role unaligned, and stick to a fixed input prompt structure of special tokens, leaving the model vulnerable when inputs deviate from these expectations. We introduce Role-Modality Attacks (RMA), a novel class of adversarial attacks that exploit role confusion between the user and assistant and alter the position of the image token to elicit harmful outputs. Unlike existing attacks that modify query content, RMAs manipulate the input structure without altering the query itself. We systematically evaluate these attacks across multiple Vision Language Models (VLMs) on eight distinct settings, showing that they can be composed to create stronger adversarial prompts, as also evidenced by their increased projection in the negative refusal direction in the residual stream, a property observed in prior successful attacks. Finally, for mitigation, we propose an adversarial training approach that makes the model robust against input prompt perturbations. By training the model on a range of harmful and benign prompts all perturbed with different RMA settings, it loses its sensitivity to Role Confusion and Modality Manipulation attacks and is trained to only pay attention to the content of the query in the input prompt structure, effectively reducing Attack Success Rate (ASR) while preserving the model's general utility. 
+
+**Abstract (ZH)**: 角色模态攻击：利用用户与助手角色混淆的新型对抗攻击 
+
+---
