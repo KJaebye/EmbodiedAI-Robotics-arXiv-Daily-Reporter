@@ -1,0 +1,52 @@
+# A Multimedia Analytics Model for the Foundation Model Era 
+
+**Title (ZH)**: 基础模型时代多模态分析模型 
+
+**Authors**: Marcel Worring, Jan Zahálka, Stef van den Elzen, Maximilian Fischer, Daniel Keim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.06138)  
+
+**Abstract**: The rapid advances in Foundation Models and agentic Artificial Intelligence are transforming multimedia analytics by enabling richer, more sophisticated interactions between humans and analytical systems. Existing conceptual models for visual and multimedia analytics, however, do not adequately capture the complexity introduced by these powerful AI paradigms. To bridge this gap, we propose a comprehensive multimedia analytics model specifically designed for the foundation model era. Building upon established frameworks from visual analytics, multimedia analytics, knowledge generation, analytic task definition, mixed-initiative guidance, and human-in-the-loop reinforcement learning, our model emphasizes integrated human-AI teaming based on visual analytics agents from both technical and conceptual perspectives. Central to the model is a seamless, yet explicitly separable, interaction channel between expert users and semi-autonomous analytical processes, ensuring continuous alignment between user intent and AI behavior. The model addresses practical challenges in sensitive domains such as intelligence analysis, investigative journalism, and other fields handling complex, high-stakes data. We illustrate through detailed case studies how our model facilitates deeper understanding and targeted improvement of multimedia analytics solutions. By explicitly capturing how expert users can optimally interact with and guide AI-powered multimedia analytics systems, our conceptual framework sets a clear direction for system design, comparison, and future research. 
+
+**Abstract (ZH)**: Foundation Models和自主人工智能的 rapid进展正在通过促进人类与分析系统之间更为丰富和复杂的交互，变革多媒体分析。现有的视觉和多媒体分析概念模型未能充分捕捉这些强大AI范式引入的复杂性。为了弥补这一差距，我们提出了一种专门为Foundation Model时代设计的综合多媒体分析模型。该模型在技术与概念层面均基于视觉分析代理，结合了视觉分析框架、多媒体分析框架、知识生成、分析任务定义、混合主动指导以及人类在环路强化学习等现有框架。模型的核心在于专家用户与半自主分析过程之间无缝但可分离的交互通道，确保用户意图与AI行为之间持续一致。该模型解决了情报分析、调查 journalism等敏感领域以及处理复杂、高 stakes数据的其他领域的实际挑战。通过详细的案例研究，我们展示了该模型如何促进对多媒体分析解决方案的深入理解和具体改进。通过明确捕获专家用户与AI驱动的多媒体分析系统的理想交互和指导方式，我们的概念框架为系统设计、比较和未来研究指明了方向。 
+
+---
+# Human Activity Recognition using RGB-Event based Sensors: A Multi-modal Heat Conduction Model and A Benchmark Dataset 
+
+**Title (ZH)**: 基于RGB-事件传感器的人类活动识别：一个多模态热传导模型及基准数据集 
+
+**Authors**: Shiao Wang, Xiao Wang, Bo Jiang, Lin Zhu, Guoqi Li, Yaowei Wang, Yonghong Tian, Jin Tang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.05830)  
+
+**Abstract**: Human Activity Recognition (HAR) primarily relied on traditional RGB cameras to achieve high-performance activity recognition. However, the challenging factors in real-world scenarios, such as insufficient lighting and rapid movements, inevitably degrade the performance of RGB cameras. To address these challenges, biologically inspired event cameras offer a promising solution to overcome the limitations of traditional RGB cameras. In this work, we rethink human activity recognition by combining the RGB and event cameras. The first contribution is the proposed large-scale multi-modal RGB-Event human activity recognition benchmark dataset, termed HARDVS 2.0, which bridges the dataset gaps. It contains 300 categories of everyday real-world actions with a total of 107,646 paired videos covering various challenging scenarios. Inspired by the physics-informed heat conduction model, we propose a novel multi-modal heat conduction operation framework for effective activity recognition, termed MMHCO-HAR. More in detail, given the RGB frames and event streams, we first extract the feature embeddings using a stem network. Then, multi-modal Heat Conduction blocks are designed to fuse the dual features, the key module of which is the multi-modal Heat Conduction Operation layer. We integrate RGB and event embeddings through a multi-modal DCT-IDCT layer while adaptively incorporating the thermal conductivity coefficient via FVEs into this module. After that, we propose an adaptive fusion module based on a policy routing strategy for high-performance classification. Comprehensive experiments demonstrate that our method consistently performs well, validating its effectiveness and robustness. The source code and benchmark dataset will be released on this https URL 
+
+**Abstract (ZH)**: 基于RGB和事件相机的人类活动识别（HAR）：HARDVS 2.0 多模态基准数据集及MMHCO-HAR框架 
+
+---
+# TARO: Timestep-Adaptive Representation Alignment with Onset-Aware Conditioning for Synchronized Video-to-Audio Synthesis 
+
+**Title (ZH)**: TARO：基于起始意识调节的时间步自适应表示对齐术用于同步视频到音频合成 
+
+**Authors**: Tri Ton, Ji Woo Hong, Chang D. Yoo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.05684)  
+
+**Abstract**: This paper introduces Timestep-Adaptive Representation Alignment with Onset-Aware Conditioning (TARO), a novel framework for high-fidelity and temporally coherent video-to-audio synthesis. Built upon flow-based transformers, which offer stable training and continuous transformations for enhanced synchronization and audio quality, TARO introduces two key innovations: (1) Timestep-Adaptive Representation Alignment (TRA), which dynamically aligns latent representations by adjusting alignment strength based on the noise schedule, ensuring smooth evolution and improved fidelity, and (2) Onset-Aware Conditioning (OAC), which integrates onset cues that serve as sharp event-driven markers of audio-relevant visual moments to enhance synchronization with dynamic visual events. Extensive experiments on the VGGSound and Landscape datasets demonstrate that TARO outperforms prior methods, achieving relatively 53\% lower Frechet Distance (FD), 29% lower Frechet Audio Distance (FAD), and a 97.19% Alignment Accuracy, highlighting its superior audio quality and synchronization precision. 
+
+**Abstract (ZH)**: 基于起峰感知条件的时间步自适应表示对齐（TARO）：高保真和时序一致性视频到音频合成的新框架 
+
+---
+# Multimodal Quantitative Language for Generative Recommendation 
+
+**Title (ZH)**: 多模态定量语言生成推荐 
+
+**Authors**: Jianyang Zhai, Zi-Feng Mai, Chang-Dong Wang, Feidiao Yang, Xiawu Zheng, Hui Li, Yonghong Tian  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.05314)  
+
+**Abstract**: Generative recommendation has emerged as a promising paradigm aiming at directly generating the identifiers of the target candidates. Most existing methods attempt to leverage prior knowledge embedded in Pre-trained Language Models (PLMs) to improve the recommendation performance. However, they often fail to accommodate the differences between the general linguistic knowledge of PLMs and the specific needs of recommendation systems. Moreover, they rarely consider the complementary knowledge between the multimodal information of items, which represents the multi-faceted preferences of users. To facilitate efficient recommendation knowledge transfer, we propose a novel approach called Multimodal Quantitative Language for Generative Recommendation (MQL4GRec). Our key idea is to transform items from different domains and modalities into a unified language, which can serve as a bridge for transferring recommendation knowledge. Specifically, we first introduce quantitative translators to convert the text and image content of items from various domains into a new and concise language, known as quantitative language, with all items sharing the same vocabulary. Then, we design a series of quantitative language generation tasks to enrich quantitative language with semantic information and prior knowledge. Finally, we achieve the transfer of recommendation knowledge from different domains and modalities to the recommendation task through pre-training and fine-tuning. We evaluate the effectiveness of MQL4GRec through extensive experiments and comparisons with existing methods, achieving improvements over the baseline by 11.18\%, 14.82\%, and 7.95\% on the NDCG metric across three different datasets, respectively. 
+
+**Abstract (ZH)**: 多模态定量语言促进生成性推荐（MQL4GRec） 
+
+---
