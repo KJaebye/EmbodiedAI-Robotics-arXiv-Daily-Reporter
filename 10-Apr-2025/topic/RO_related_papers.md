@@ -1,0 +1,130 @@
+# UAV Position Estimation using a LiDAR-based 3D Object Detection Method 
+
+**Title (ZH)**: 基于LiDAR的3D物体检测方法的无人机位置估计算法 
+
+**Authors**: Uthman Olawoye, Jason N. Gross  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.07028)  
+
+**Abstract**: This paper explores the use of applying a deep learning approach for 3D object detection to compute the relative position of an Unmanned Aerial Vehicle (UAV) from an Unmanned Ground Vehicle (UGV) equipped with a LiDAR sensor in a GPS-denied environment. This was achieved by evaluating the LiDAR sensor's data through a 3D detection algorithm (PointPillars). The PointPillars algorithm incorporates a column voxel point-cloud representation and a 2D Convolutional Neural Network (CNN) to generate distinctive point-cloud features representing the object to be identified, in this case, the UAV. The current localization method utilizes point-cloud segmentation, Euclidean clustering, and predefined heuristics to obtain the relative position of the UAV. Results from the two methods were then compared to a reference truth solution. 
+
+**Abstract (ZH)**: 本文探索了采用深度学习方法进行三维物体检测，以计算GPS受限制环境中配备LiDAR传感器的无人地面车（UGV）相对于无人 aerial 车辆（UAV）的相对位置。通过使用PointPillars算法评估LiDAR传感器的数据来实现这一目标。PointPillars算法结合了柱体体素点云表示和二维卷积神经网络（CNN），以生成用于识别物体（本例中为UAV）的特征点云表示。当前的定位方法利用点云分割、欧几里得聚类和预定义启发式规则来获取UAV的相对位置。然后将两种方法的结果与参考真实解进行比较。 
+
+---
+# Leveraging GCN-based Action Recognition for Teleoperation in Daily Activity Assistance 
+
+**Title (ZH)**: 基于GCN的行动识别在日常活动辅助远程操作中的应用 
+
+**Authors**: Thomas M. Kwok, Jiaan Li, Yue Hu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.07001)  
+
+**Abstract**: Caregiving of older adults is an urgent global challenge, with many older adults preferring to age in place rather than enter residential care. However, providing adequate home-based assistance remains difficult, particularly in geographically vast regions. Teleoperated robots offer a promising solution, but conventional motion-mapping teleoperation imposes unnatural movement constraints on operators, leading to muscle fatigue and reduced usability. This paper presents a novel teleoperation framework that leverages action recognition to enable intuitive remote robot control. Using our simplified Spatio-Temporal Graph Convolutional Network (S-ST-GCN), the system recognizes human actions and executes corresponding preset robot trajectories, eliminating the need for direct motion synchronization. A finite-state machine (FSM) is integrated to enhance reliability by filtering out misclassified actions. Our experiments demonstrate that the proposed framework enables effortless operator movement while ensuring accurate robot execution. This proof-of-concept study highlights the potential of teleoperation with action recognition for enabling caregivers to remotely assist older adults during activities of daily living (ADLs). Future work will focus on improving the S-ST-GCN's recognition accuracy and generalization, integrating advanced motion planning techniques to further enhance robotic autonomy in older adult care, and conducting a user study to evaluate the system's telepresence and ease of control. 
+
+**Abstract (ZH)**: 老年人居家照护是一个紧迫的全球挑战，许多老年人更倾向于原地养老而非入住护理院。然而，在地理面积广阔的地区，提供充足的居家支持仍然困难。远程操作机器人提供了一种有前景的解决方案，但传统的运动映射远程操作在操作员身上施加了不自然的运动限制，导致肌肉疲劳并降低了使用性。本文提出了一种新的远程操作框架，利用动作识别使远程机器人控制更加直观。通过我们简化的时空图卷积网络（S-ST-GCN），系统识别人类动作并执行相应的预设机器人轨迹，从而消除直接运动同步的需要。集成一个有限状态机（FSM）以通过过滤错误分类的动作来提高可靠性。我们的实验表明，所提出框架使操作员的运动更加轻松，同时确保机器人执行的准确性。这项概念验证研究突显了动作识别远程操作的潜力，使照护者能够在日常生活中远程协助老年人。未来的工作将专注于提高S-ST-GCN的动作识别准确性和泛化能力，整合先进的运动规划技术以进一步增强老年人照护中的机器人自主性，并进行用户研究以评估系统的在场感和可控性。 
+
+---
+# GraspClutter6D: A Large-scale Real-world Dataset for Robust Perception and Grasping in Cluttered Scenes 
+
+**Title (ZH)**: GraspClutter6D：拥挤场景下鲁棒感知与抓取的大规模真实世界数据集 
+
+**Authors**: Seunghyeok Back, Joosoon Lee, Kangmin Kim, Heeseon Rho, Geonhyup Lee, Raeyoung Kang, Sangbeom Lee, Sangjun Noh, Youngjin Lee, Taeyeop Lee, Kyoobin Lee  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.06866)  
+
+**Abstract**: Robust grasping in cluttered environments remains an open challenge in robotics. While benchmark datasets have significantly advanced deep learning methods, they mainly focus on simplistic scenes with light occlusion and insufficient diversity, limiting their applicability to practical scenarios. We present GraspClutter6D, a large-scale real-world grasping dataset featuring: (1) 1,000 highly cluttered scenes with dense arrangements (14.1 objects/scene, 62.6\% occlusion), (2) comprehensive coverage across 200 objects in 75 environment configurations (bins, shelves, and tables) captured using four RGB-D cameras from multiple viewpoints, and (3) rich annotations including 736K 6D object poses and 9.3B feasible robotic grasps for 52K RGB-D images. We benchmark state-of-the-art segmentation, object pose estimation, and grasping detection methods to provide key insights into challenges in cluttered environments. Additionally, we validate the dataset's effectiveness as a training resource, demonstrating that grasping networks trained on GraspClutter6D significantly outperform those trained on existing datasets in both simulation and real-world experiments. The dataset, toolkit, and annotation tools are publicly available on our project website: this https URL. 
+
+**Abstract (ZH)**: 复杂环境中 robust 抓取仍是一个开放的机器人挑战。尽管基准数据集显著推动了深度学习方法的发展，但它们主要集中在简单场景和轻度遮挡上，缺乏多样性，限制了其在实际场景中的应用。我们提出了 GraspClutter6D，这是一个大规模的真实世界抓取数据集，包含：(1) 1,000 个高度拥挤的场景，具有密集排列（平均每场景 14.1 个物体，62.6% 的遮挡），(2) 在 75 种环境配置（箱子、书架和桌子）中全面覆盖 200 个物体，使用四台 RGB-D 摄像机从多个视角采集，以及 (3) 丰富的标注，包括 73.6 万 6D 物体姿态和 93 亿个可行的机器人抓取动作，适用于 5.2 万张 RGB-D 图像。我们针对最新的分割、物体姿态估计和抓取检测方法进行基准测试，提供复杂环境中挑战的关键见解。此外，我们验证了该数据集作为训练资源的有效性，证明在 GraspClutter6D 上训练的抓取网络在模拟和实际实验中显著优于现有数据集训练的网络。该数据集、工具包和标注工具可在我们的项目网站上公开获取：this https URL。 
+
+---
+# Developing Modular Grasping and Manipulation Pipeline Infrastructure to Streamline Performance Benchmarking 
+
+**Title (ZH)**: 开发模块化抓取与操作流水线基础设施以简化性能基准测试 
+
+**Authors**: Brian Flynn, Kostas Bekris, Berk Calli, Aaron Dollar, Adam Norton, Yu Sun, Holly Yanco  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.06819)  
+
+**Abstract**: The robot manipulation ecosystem currently faces issues with integrating open-source components and reproducing results. This limits the ability of the community to benchmark and compare the performance of different solutions to one another in an effective manner, instead relying on largely holistic evaluations. As part of the COMPARE Ecosystem project, we are developing modular grasping and manipulation pipeline infrastructure in order to streamline performance benchmarking. The infrastructure will be used towards the establishment of standards and guidelines for modularity and improved open-source development and benchmarking. This paper provides a high-level overview of the architecture of the pipeline infrastructure, experiments conducted to exercise it during development, and future work to expand its modularity. 
+
+**Abstract (ZH)**: 机器人操作生态系统目前面临开源组件集成和结果重现的问题。这限制了社区将不同解决方案进行有效基准测试和性能比较的能力，而是依赖于整体评价。作为COMPARE生态系统项目的一部分，我们正在开发模块化的抓取和操作管道基础设施，以简化性能基准测试。该基础设施将用于建立模块化标准和改进开源开发与基准测试的指南。本文提供管道基础设施架构的高层次概述，在开发过程中进行的实验，以及扩展其模块性的未来工作。 
+
+---
+# Design and use of devices to assist movement of the upper limb: review of the literature 
+
+**Title (ZH)**: 辅助上肢运动的装置的设计与应用：文献综述 
+
+**Authors**: Charlotte Le Goff, Pauline Coignard, Christine Azevedo-Coste, Franck Geffard, Charles Fattal  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.06640)  
+
+**Abstract**: This article explores assistive devices for upper limb movement in people with disabilities through a systematic review based on the PRISMA methodology. The studied devices encompass technologies ranging from orthoses to advanced robotics, aiming to compensate for or supplement motor impairments. The results highlight the diversity of applications (rehabilitation, daily living activities), targeted body segments (distal, proximal, or global), as well as control mechanisms and interfaces used. However, despite the variety of promising prototypes, few devices are commercially available, limiting their real impact on end users. Existing technologies, while effective in improving functional autonomy and quality of life, still face challenges in terms of ergonomics, cost, and portability. In conclusion, this article emphasizes the importance of a user-centered approach and proposes avenues for the development of innovative, modular, and accessible assistive devices. 
+
+**Abstract (ZH)**: 本文通过基于PRISMA方法的系统评价，探讨了残疾人上肢运动辅助设备，涵盖了从矫形器到先进机器人等技术，旨在补偿或补充运动功能障碍。研究结果强调了应用多样性（康复、日常活动）、目标身体部位（远端、近端或全身）以及使用的控制机制和接口，尽管存在许多有前景的原型，但可供商业使用的装置较少，限制了其对终端用户的实际影响。现有技术虽然在提高功能性自主性和生活质量方面有效，但仍面临人机工程学、成本和便携性等方面的挑战。综上所述，本文强调了以用户为中心的方法的重要性，并提出了开发创新、模块化和可访问的辅助设备的途径。 
+
+---
+# Overcoming Dynamic Environments: A Hybrid Approach to Motion Planning for Manipulators 
+
+**Title (ZH)**: 克服动态环境： manipulator 运动规划的混合方法 
+
+**Authors**: Ho Minh Quang Ngo, Dac Dang Khoa Nguyen, Dinh Tung Le, Gavin Paul  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.06596)  
+
+**Abstract**: Robotic manipulators operating in dynamic and uncertain environments require efficient motion planning to navigate obstacles while maintaining smooth trajectories. Velocity Potential Field (VPF) planners offer real-time adaptability but struggle with complex constraints and local minima, leading to suboptimal performance in cluttered spaces. Traditional approaches rely on pre-planned trajectories, but frequent recomputation is computationally expensive. This study proposes a hybrid motion planning approach, integrating an improved VPF with a Sampling-Based Motion Planner (SBMP). The SBMP ensures optimal path generation, while VPF provides real-time adaptability to dynamic obstacles. This combination enhances motion planning efficiency, stability, and computational feasibility, addressing key challenges in uncertain environments such as warehousing and surgical robotics. 
+
+**Abstract (ZH)**: 机器人操作员在动态和不确定环境中的运动规划需要高效地导航障碍物并保持平滑的轨迹。本文提出了一种集成改进的 Velocity Potential Field (VPF) 和基于采样的运动规划器 (SBMP) 的混合运动规划方法。SBMP 确保路径生成最优，而 VPF 提供对动态障碍物的实时适应性。这种组合增强了运动规划的效率、稳定性和计算可行性，解决了仓储和外科手术机器人等不确定环境中的关键挑战。 
+
+---
+# Agent-Arena: A General Framework for Evaluating Control Algorithms 
+
+**Title (ZH)**: Agent-Arena：一种评估控制算法的一般框架 
+
+**Authors**: Halid Abdulrahim Kadi, Kasim Terzić  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.06468)  
+
+**Abstract**: Robotic research is inherently challenging, requiring expertise in diverse environments and control algorithms. Adapting algorithms to new environments often poses significant difficulties, compounded by the need for extensive hyper-parameter tuning in data-driven methods. To address these challenges, we present Agent-Arena, a Python framework designed to streamline the integration, replication, development, and testing of decision-making policies across a wide range of benchmark environments. Unlike existing frameworks, Agent-Arena is uniquely generalised to support all types of control algorithms and is adaptable to both simulation and real-robot scenarios. Please see our GitHub repository this https URL. 
+
+**Abstract (ZH)**: 机器人研究本性上具有挑战性，要求具备多种环境和控制算法的专业知识。将算法适应新环境往往会带来重大困难，并且数据驱动方法中需要进行广泛的超参数调优。为了应对这些挑战，我们提出了Agent-Arena，这是一个Python框架，旨在简化决策政策在多种基准环境中的集成、复制、开发和测试过程。与现有框架不同，Agent-Arena具有高度通用性，支持所有类型的控制算法，并且能够适应仿真和真实机器人场景。请访问我们的GitHub仓库：this https URL。 
+
+---
+# DBaS-Log-MPPI: Efficient and Safe Trajectory Optimization via Barrier States 
+
+**Title (ZH)**: DBaS-Log-MPPI：基于障碍状态的高效安全轨迹优化 
+
+**Authors**: Fanxin Wang, Haolong Jiang, Chuyuan Tao, Wenbin Wan, Yikun Cheng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.06437)  
+
+**Abstract**: Optimizing trajectory costs for nonlinear control systems remains a significant challenge. Model Predictive Control (MPC), particularly sampling-based approaches such as the Model Predictive Path Integral (MPPI) method, has recently demonstrated considerable success by leveraging parallel computing to efficiently evaluate numerous trajectories. However, MPPI often struggles to balance safe navigation in constrained environments with effective exploration in open spaces, leading to infeasibility in cluttered conditions. To address these limitations, we propose DBaS-Log-MPPI, a novel algorithm that integrates Discrete Barrier States (DBaS) to ensure safety while enabling adaptive exploration with enhanced feasibility. Our method is efficiently validated through three simulation missions and one real-world experiment, involving a 2D quadrotor and a ground vehicle navigating through cluttered obstacles. We demonstrate that our algorithm surpasses both Vanilla MPPI and Log-MPPI, achieving higher success rates, lower tracking errors, and a conservative average speed. 
+
+**Abstract (ZH)**: 基于DBaS的日志MPPI算法在非线性控制系统轨迹成本优化中的应用 
+
+---
+# Automated Fabrication of Magnetic Soft Microrobots 
+
+**Title (ZH)**: 自动制造磁性软微机器人 
+
+**Authors**: Kaitlyn Clancy, Siwen Xie, Griffin Smith, Onaizah Onaizah  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.06370)  
+
+**Abstract**: The advent of 3D printing has revolutionized many industries and has had similar improvements for soft robots. However, many challenges persist for these functional devices. Magnetic soft robots require the addition of magnetic particles that must be correctly oriented. There is a significant gap in the automated fabrication of 3D geometric structures with 3D magnetization direction. A fully automated 3D printer was designed to improve accuracy, speed, and reproducibility. This design was able to achieve a circular spot size (voxels) of 1.6mm in diameter. An updated optical system can improve the resolution to a square spot size of 50$\mu$m by 50$\mu$m. The new system achieves higher resolution designs as shown through magneto-mechanical simulations. Various microrobots including 'worm', 'gripper' and 'zipper' designs are evaluated with the new spot size. 
+
+**Abstract (ZH)**: 3D打印的兴起已革新诸多行业，并对软机器人产生了类似的影响。然而，这些功能性装置仍面临诸多挑战。磁性软机器人需要添加正确定向的磁性颗粒。在采用3D磁化方向的3D几何结构的自动化制造方面存在显著差距。设计了一种完全自动化的3D打印机以提高精度、速度和可重复性。该设计实现了直径为1.6毫米的圆形斑点尺寸（体素）。更新的光学系统可将分辨率提高到50微米×50微米的正方形斑点尺寸。新系统通过磁机械模拟实现了更高分辨率的设计。各种微机器人，包括“worm”、“gripper”和“zipper”设计，均在新的斑点尺寸下进行了评估。 
+
+---
+# Data-driven Fuzzy Control for Time-Optimal Aggressive Trajectory Following 
+
+**Title (ZH)**: 数据驱动的模糊控制以实现时间最优激进轨迹跟踪 
+
+**Authors**: August Phelps, Juan Augusto Paredes Salazar, Ankit Goel  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.06500)  
+
+**Abstract**: Optimal trajectories that minimize a user-defined cost function in dynamic systems require the solution of a two-point boundary value problem. The optimization process yields an optimal control sequence that depends on the initial conditions and system parameters. However, the optimal sequence may result in undesirable behavior if the system's initial conditions and parameters are erroneous. This work presents a data-driven fuzzy controller synthesis framework that is guided by a time-optimal trajectory for multicopter tracking problems. In particular, we consider an aggressive maneuver consisting of a mid-air flip and generate a time-optimal trajectory by numerically solving the two-point boundary value problem. A fuzzy controller consisting of a stabilizing controller near hover conditions and an autoregressive moving average (ARMA) controller, trained to mimic the time-optimal aggressive trajectory, is constructed using the Takagi-Sugeno fuzzy framework. 
+
+**Abstract (ZH)**: 多旋翼飞行器跟踪问题中由最优轨迹引导的数据驱动模糊控制器合成框架 
+
+---

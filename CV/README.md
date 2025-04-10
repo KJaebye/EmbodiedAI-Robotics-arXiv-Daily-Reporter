@@ -2,6 +2,7 @@
 
 | Date | Link | Number of Papers |
 |:----:|:----:|:----------------:|
+| 10-Apr-2025 | [Link](https://github.com/KJaebye/EmbodiedAI-Robotics-arXiv-Daily-Reporter/blob/main/10-Apr-2025/topic/CV_related_papers.md) | 15 |
 | 9-Apr-2025 | [Link](https://github.com/KJaebye/EmbodiedAI-Robotics-arXiv-Daily-Reporter/blob/main/9-Apr-2025/topic/CV_related_papers.md) | 20 |
 | 8-Apr-2025 | [Link](https://github.com/KJaebye/EmbodiedAI-Robotics-arXiv-Daily-Reporter/blob/main/8-Apr-2025/topic/CV_related_papers.md) | 36 |
 | 7-Apr-2025 | [Link](https://github.com/KJaebye/EmbodiedAI-Robotics-arXiv-Daily-Reporter/blob/main/7-Apr-2025/topic/CV_related_papers.md) | 18 |
