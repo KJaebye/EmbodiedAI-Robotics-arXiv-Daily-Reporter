@@ -1,0 +1,26 @@
+# ClimateBench-M: A Multi-Modal Climate Data Benchmark with a Simple Generative Method 
+
+**Title (ZH)**: ClimateBench-M：一种基于简单生成方法的多模态气候数据基准 
+
+**Authors**: Dongqi Fu, Yada Zhu, Zhining Liu, Lecheng Zheng, Xiao Lin, Zihao Li, Liri Fang, Katherine Tieu, Onkar Bhardwaj, Kommy Weldemariam, Hanghang Tong, Hendrik Hamann, Jingrui He  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.07394)  
+
+**Abstract**: Climate science studies the structure and dynamics of Earth's climate system and seeks to understand how climate changes over time, where the data is usually stored in the format of time series, recording the climate features, geolocation, time attributes, etc. Recently, much research attention has been paid to the climate benchmarks. In addition to the most common task of weather forecasting, several pioneering benchmark works are proposed for extending the modality, such as domain-specific applications like tropical cyclone intensity prediction and flash flood damage estimation, or climate statement and confidence level in the format of natural language. To further motivate the artificial general intelligence development for climate science, in this paper, we first contribute a multi-modal climate benchmark, i.e., ClimateBench-M, which aligns (1) the time series climate data from ERA5, (2) extreme weather events data from NOAA, and (3) satellite image data from NASA HLS based on a unified spatial-temporal granularity. Second, under each data modality, we also propose a simple but strong generative method that could produce competitive performance in weather forecasting, thunderstorm alerts, and crop segmentation tasks in the proposed ClimateBench-M. The data and code of ClimateBench-M are publicly available at this https URL. 
+
+**Abstract (ZH)**: 气候科学研究地球气候系统的结构和动力学，并寻求理解气候变化的机制，数据通常以时间序列形式存储，记录气候特征、地理位置、时间属性等。近年来，气候基准已成为研究热点。除了常见的天气预报任务外，还提出了多种模态扩展的应用基准，如特定领域的热带气旋强度预测和洪涝灾害评估，以及以自然语言形式的气候声明和置信水平。为进一步推动适用于气候科学的人工通用智能发展，在本文中，我们首先贡献了一个多模态气候基准，即ClimateBench-M，它将（1）来自ERA5的时间序列气候数据，（2）来自NOAA的极端天气事件数据，以及（3）来自NASA HLS的卫星图像数据统一到相同的空时粒度上。其次，在每个数据模态下，我们还提出了简单但有效的生成方法，它在天气预报、雷暴警报和农作物分割任务中都能产生具有竞争力的表现。ClimateBench-M的代码和数据可在以下链接获取。 
+
+---
+# Face-LLaVA: Facial Expression and Attribute Understanding through Instruction Tuning 
+
+**Title (ZH)**: Face-LLaVA：通过指令调整实现面部表情和属性理解 
+
+**Authors**: Ashutosh Chaubey, Xulang Guan, Mohammad Soleymani  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.07198)  
+
+**Abstract**: The human face plays a central role in social communication, necessitating the use of performant computer vision tools for human-centered applications. We propose Face-LLaVA, a multimodal large language model for face-centered, in-context learning, including facial expression and attribute recognition. Additionally, Face-LLaVA is able to generate natural language descriptions that can be used for reasoning. Leveraging existing visual databases, we first developed FaceInstruct-1M, a face-centered database for instruction tuning MLLMs for face processing. We then developed a novel face-specific visual encoder powered by Face-Region Guided Cross-Attention that integrates face geometry with local visual features. We evaluated the proposed method across nine different datasets and five different face processing tasks, including facial expression recognition, action unit detection, facial attribute detection, age estimation and deepfake detection. Face-LLaVA achieves superior results compared to existing open-source MLLMs and competitive performance compared to commercial solutions. Our model output also receives a higher reasoning rating by GPT under a zero-shot setting across all the tasks. Both our dataset and model wil be released at this https URL to support future advancements in social AI and foundational vision-language research. 
+
+**Abstract (ZH)**: 人类面部在社会交流中扮演着核心角色，需要高性能的计算机视觉工具支持以中心的人本应用。我们提出了Face-LLaVA，一个以面部为中心的多模态大型语言模型，包括面部表情和属性识别。此外，Face-LLaVA 能够生成可用于推理的自然语言描述。利用现有的视觉数据库，我们首先开发了FaceInstruct-1M，这是一个以面部为中心的数据集，用于指令调优面向面部处理的多模态大语言模型。然后，我们开发了一个基于面部区域引导交叉注意力的新型面部专用视觉编码器，将面部几何与局部视觉特征整合起来。我们在九个不同的数据集和五种不同的面部处理任务上评估了提出的方法，包括面部表情识别、动作单元检测、面部属性检测、年龄估计和深度伪造检测。Face-LLaVA 在所有任务上均优于现有开源多模态大语言模型，并与商业解决方案具有竞争力。我们的模型输出在零样本设置下也获得了 GPT 更高的推理评分。我们的数据集和模型将在以下地址发布，以支持未来社会人工智能和基础视觉-语言研究的发展。 
+
+---
