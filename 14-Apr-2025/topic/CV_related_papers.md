@@ -1,0 +1,273 @@
+# TinyCenterSpeed: Efficient Center-Based Object Detection for Autonomous Racing 
+
+**Title (ZH)**: TinyCenterSpeed: 基于中心的有效物体检测方法及其在自主赛车中的应用 
+
+**Authors**: Neil Reichlin, Nicolas Baumann, Edoardo Ghignone, Michele Magno  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.08655)  
+
+**Abstract**: Perception within autonomous driving is nearly synonymous with Neural Networks (NNs). Yet, the domain of autonomous racing is often characterized by scaled, computationally limited robots used for cost-effectiveness and safety. For this reason, opponent detection and tracking systems typically resort to traditional computer vision techniques due to computational constraints. This paper introduces TinyCenterSpeed, a streamlined adaptation of the seminal CenterPoint method, optimized for real-time performance on 1:10 scale autonomous racing platforms. This adaptation is viable even on OBCs powered solely by Central Processing Units (CPUs), as it incorporates the use of an external Tensor Processing Unit (TPU). We demonstrate that, compared to Adaptive Breakpoint Detector (ABD), the current State-of-the-Art (SotA) in scaled autonomous racing, TinyCenterSpeed not only improves detection and velocity estimation by up to 61.38% but also supports multi-opponent detection and estimation. It achieves real-time performance with an inference time of just 7.88 ms on the TPU, significantly reducing CPU utilization 8.3-fold. 
+
+**Abstract (ZH)**: TinyCenterSpeed：一种优化的适用于1:10比例自主赛车平台的目标检测和跟踪系统 
+
+---
+# Globally Optimal Data-Association-Free Landmark-Based Localization Using Semidefinite Relaxations 
+
+**Title (ZH)**: 基于半定松弛的全局最优无数据关联地标定位 
+
+**Authors**: Vassili Korotkine, Mitchell Cohen, James Richard Forbes  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.08547)  
+
+**Abstract**: This paper proposes a semidefinite relaxation for landmark-based localization with unknown data associations in planar environments. The proposed method simultaneously solves for the optimal robot states and data associations in a globally optimal fashion. Relative position measurements to known landmarks are used, but the data association is unknown in tha tthe robot does not know which landmark each measurement is generated from. The relaxation is shown to be tight in a majority of cases for moderate noise levels. The proposed algorithm is compared to local Gauss-Newton baselines initialized at the dead-reckoned trajectory, and is shown to significantly improve convergence to the problem's global optimum in simulation and experiment. Accompanying software and supplementary material may be found at this https URL . 
+
+**Abstract (ZH)**: 基于地标的位置估计中未知数据关联的半定松弛方法：平面环境下的全局优化方法 
+
+---
+# Diffusion Models for Robotic Manipulation: A Survey 
+
+**Title (ZH)**: 机器人操作中的扩散模型：一项综述 
+
+**Authors**: Rosa Wolf, Yitian Shi, Sheng Liu, Rania Rayyes  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.08438)  
+
+**Abstract**: Diffusion generative models have demonstrated remarkable success in visual domains such as image and video generation. They have also recently emerged as a promising approach in robotics, especially in robot manipulations. Diffusion models leverage a probabilistic framework, and they stand out with their ability to model multi-modal distributions and their robustness to high-dimensional input and output spaces. This survey provides a comprehensive review of state-of-the-art diffusion models in robotic manipulation, including grasp learning, trajectory planning, and data augmentation. Diffusion models for scene and image augmentation lie at the intersection of robotics and computer vision for vision-based tasks to enhance generalizability and data scarcity. This paper also presents the two main frameworks of diffusion models and their integration with imitation learning and reinforcement learning. In addition, it discusses the common architectures and benchmarks and points out the challenges and advantages of current state-of-the-art diffusion-based methods. 
+
+**Abstract (ZH)**: 扩散生成模型在视觉领域如图像和视频生成中取得了显著的成功，并 recently emerged as a promising approach in robotics, especially in robot manipulations. 扩散模型利用概率框架，能够建模多模态分布，并在高维输入和输出空间中表现出 robustness。本文综述了扩散模型在机器人 manipulation 领域的最新进展，包括抓取学习、轨迹规划和数据增强。扩散模型在场景和图像增强方面结合了机器人学与计算机视觉，以提高通用性和数据稀缺性。本文还介绍了扩散模型的两大框架及其与模拟学习和强化学习的整合，讨论了常见的架构和基准，并指出了当前基于扩散的方法的挑战和优势。 
+
+---
+# II-NVM: Enhancing Map Accuracy and Consistency with Normal Vector-Assisted Mapping 
+
+**Title (ZH)**: II-NVM：基于法向量辅助的地图准确性和一致性增强方法 
+
+**Authors**: Chengwei Zhao, Yixuan Li, Yina Jian, Jie Xu, Linji Wang, Yongxin Ma, Xinglai Jin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.08204)  
+
+**Abstract**: SLAM technology plays a crucial role in indoor mapping and localization. A common challenge in indoor environments is the "double-sided mapping issue", where closely positioned walls, doors, and other surfaces are mistakenly identified as a single plane, significantly hindering map accuracy and consistency. To address this issue this paper introduces a SLAM approach that ensures accurate mapping using normal vector consistency. We enhance the voxel map structure to store both point cloud data and normal vector information, enabling the system to evaluate consistency during nearest neighbor searches and map updates. This process distinguishes between the front and back sides of surfaces, preventing incorrect point-to-plane constraints. Moreover, we implement an adaptive radius KD-tree search method that dynamically adjusts the search radius based on the local density of the point cloud, thereby enhancing the accuracy of normal vector calculations. To further improve realtime performance and storage efficiency, we incorporate a Least Recently Used (LRU) cache strategy, which facilitates efficient incremental updates of the voxel map. The code is released as open-source and validated in both simulated environments and real indoor scenarios. Experimental results demonstrate that this approach effectively resolves the "double-sided mapping issue" and significantly improves mapping precision. Additionally, we have developed and open-sourced the first simulation and real world dataset specifically tailored for the "double-sided mapping issue". 
+
+**Abstract (ZH)**: 室内建图与定位中SLAM技术的关键作用与“双面建图问题”的解决方法：基于法向一致性的方法 
+
+---
+# Enhanced Cooperative Perception Through Asynchronous Vehicle to Infrastructure Framework with Delay Mitigation for Connected and Automated Vehicles 
+
+**Title (ZH)**: 通过缓解延迟的异步车基础设施框架增强协作感知技术 
+
+**Authors**: Nithish Kumar Saravanan, Varun Jammula, Yezhou Yang, Jeffrey Wishart, Junfeng Zhao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.08172)  
+
+**Abstract**: Perception is a key component of Automated vehicles (AVs). However, sensors mounted to the AVs often encounter blind spots due to obstructions from other vehicles, infrastructure, or objects in the surrounding area. While recent advancements in planning and control algorithms help AVs react to sudden object appearances from blind spots at low speeds and less complex scenarios, challenges remain at high speeds and complex intersections. Vehicle to Infrastructure (V2I) technology promises to enhance scene representation for AVs in complex intersections, providing sufficient time and distance to react to adversary vehicles violating traffic rules. Most existing methods for infrastructure-based vehicle detection and tracking rely on LIDAR, RADAR or sensor fusion methods, such as LIDAR-Camera and RADAR-Camera. Although LIDAR and RADAR provide accurate spatial information, the sparsity of point cloud data limits its ability to capture detailed object contours of objects far away, resulting in inaccurate 3D object detection results. Furthermore, the absence of LIDAR or RADAR at every intersection increases the cost of implementing V2I technology. To address these challenges, this paper proposes a V2I framework that utilizes monocular traffic cameras at road intersections to detect 3D objects. The results from the roadside unit (RSU) are then combined with the on-board system using an asynchronous late fusion method to enhance scene representation. Additionally, the proposed framework provides a time delay compensation module to compensate for the processing and transmission delay from the RSU. Lastly, the V2I framework is tested by simulating and validating a scenario similar to the one described in an industry report by Waymo. The results show that the proposed method improves the scene representation and the AV's perception range, giving enough time and space to react to adversary vehicles. 
+
+**Abstract (ZH)**: 基于基础设施的单目交通摄像头 vehicle-to-infrastructure (V2I) 框架：提升自动驾驶车辆在复杂交叉口的场景感知 
+
+---
+# Digital Twin Catalog: A Large-Scale Photorealistic 3D Object Digital Twin Dataset 
+
+**Title (ZH)**: 数字孪生目录：大规模真实感3D对象数字孪生数据集 
+
+**Authors**: Zhao Dong, Ka Chen, Zhaoyang Lv, Hong-Xing Yu, Yunzhi Zhang, Cheng Zhang, Yufeng Zhu, Stephen Tian, Zhengqin Li, Geordie Moffatt, Sean Christofferson, James Fort, Xiaqing Pan, Mingfei Yan, Jiajun Wu, Carl Yuheng Ren, Richard Newcombe  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.08541)  
+
+**Abstract**: We introduce Digital Twin Catalog (DTC), a new large-scale photorealistic 3D object digital twin dataset. A digital twin of a 3D object is a highly detailed, virtually indistinguishable representation of a physical object, accurately capturing its shape, appearance, physical properties, and other attributes. Recent advances in neural-based 3D reconstruction and inverse rendering have significantly improved the quality of 3D object reconstruction. Despite these advancements, there remains a lack of a large-scale, digital twin quality real-world dataset and benchmark that can quantitatively assess and compare the performance of different reconstruction methods, as well as improve reconstruction quality through training or fine-tuning. Moreover, to democratize 3D digital twin creation, it is essential to integrate creation techniques with next-generation egocentric computing platforms, such as AR glasses. Currently, there is no dataset available to evaluate 3D object reconstruction using egocentric captured images. To address these gaps, the DTC dataset features 2,000 scanned digital twin-quality 3D objects, along with image sequences captured under different lighting conditions using DSLR cameras and egocentric AR glasses. This dataset establishes the first comprehensive real-world evaluation benchmark for 3D digital twin creation tasks, offering a robust foundation for comparing and improving existing reconstruction methods. The DTC dataset is already released at this https URL and we will also make the baseline evaluations open-source. 
+
+**Abstract (ZH)**: 数字孪生目录（DTC）：大规模高保真3D对象数字孪生数据集 
+
+---
+# SN-LiDAR: Semantic Neural Fields for Novel Space-time View LiDAR Synthesis 
+
+**Title (ZH)**: SN-LiDAR：语义神经场在新型空间-时间视图LiDAR合成中的应用 
+
+**Authors**: Yi Chen, Tianchen Deng, Wentao Zhao, Xiaoning Wang, Wenqian Xi, Weidong Chen, Jingchuan Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.08361)  
+
+**Abstract**: Recent research has begun exploring novel view synthesis (NVS) for LiDAR point clouds, aiming to generate realistic LiDAR scans from unseen viewpoints. However, most existing approaches do not reconstruct semantic labels, which are crucial for many downstream applications such as autonomous driving and robotic perception. Unlike images, which benefit from powerful segmentation models, LiDAR point clouds lack such large-scale pre-trained models, making semantic annotation time-consuming and labor-intensive. To address this challenge, we propose SN-LiDAR, a method that jointly performs accurate semantic segmentation, high-quality geometric reconstruction, and realistic LiDAR synthesis. Specifically, we employ a coarse-to-fine planar-grid feature representation to extract global features from multi-frame point clouds and leverage a CNN-based encoder to extract local semantic features from the current frame point cloud. Extensive experiments on SemanticKITTI and KITTI-360 demonstrate the superiority of SN-LiDAR in both semantic and geometric reconstruction, effectively handling dynamic objects and large-scale scenes. Codes will be available on this https URL. 
+
+**Abstract (ZH)**: Recent research has begun exploring novel view synthesis (NVS) for LiDAR point clouds, aiming to generate realistic LiDAR scans from unseen viewpoints. However, most existing approaches do not reconstruct semantic labels, which are crucial for many downstream applications such as autonomous driving and robotic perception. Unlike images, which benefit from powerful segmentation models, LiDAR point clouds lack such large-scale pre-trained models, making semantic annotation time-consuming and labor-intensive. To address this challenge, we propose SN-LiDAR, a method that jointly performs accurate semantic segmentation, high-quality geometric reconstruction, and realistic LiDAR synthesis. Specifically, we employ a coarse-to-fine planar-grid feature representation to extract global features from multi-frame point clouds and leverage a CNN-based encoder to extract local semantic features from the current frame point cloud. Extensive experiments on SemanticKITTI and KITTI-360 demonstrate the superiority of SN-LiDAR in both semantic and geometric reconstruction, effectively handling dynamic objects and large-scale scenes. 
+
+---
+# DSM: Building A Diverse Semantic Map for 3D Visual Grounding 
+
+**Title (ZH)**: DSM: 构建多元语义地图用于3D视觉定位 
+
+**Authors**: Qinghongbing Xie, Zijian Liang, Long Zeng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.08307)  
+
+**Abstract**: In recent years, with the growing research and application of multimodal large language models (VLMs) in robotics, there has been an increasing trend of utilizing VLMs for robotic scene understanding tasks. Existing approaches that use VLMs for 3D Visual Grounding tasks often focus on obtaining scene information through geometric and visual information, overlooking the extraction of diverse semantic information from the scene and the understanding of rich implicit semantic attributes, such as appearance, physics, and affordance. The 3D scene graph, which combines geometry and language, is an ideal representation method for environmental perception and is an effective carrier for language models in 3D Visual Grounding tasks. To address these issues, we propose a diverse semantic map construction method specifically designed for robotic agents performing 3D Visual Grounding tasks. This method leverages VLMs to capture the latent semantic attributes and relations of objects within the scene and creates a Diverse Semantic Map (DSM) through a geometry sliding-window map construction strategy. We enhance the understanding of grounding information based on DSM and introduce a novel approach named DSM-Grounding. Experimental results show that our method outperforms current approaches in tasks like semantic segmentation and 3D Visual Grounding, particularly excelling in overall metrics compared to the state-of-the-art. In addition, we have deployed this method on robots to validate its effectiveness in navigation and grasping tasks. 
+
+**Abstract (ZH)**: 近年来，随着多模态大型语言模型（VLMs）在机器人领域的研究和应用不断增长，利用VLMs进行机器人场景理解任务的趋势也在增加。现有的针对3D视觉定位任务使用VLMs的方法通常侧重于通过几何和视觉信息获取场景信息，忽视了从场景中提取多样化的语义信息以及理解丰富的隐式语义属性，如外观、物理特性和用途。结合几何和语言的3D场景图是环境感知的理想表示方法，并且是3D视觉定位任务中语言模型的有效载体。为了解决这些问题，我们提出了一种针对执行3D视觉定位任务的机器人代理的多样语义地图构建方法。该方法利用VLMs捕获场景中物体的潜在语义属性和关系，并通过几何滑动窗口地图构建策略创建多样语义地图（DSM）。我们基于DSM增强定位信息的理解，并引入了一种名为DSM-Grounding的新方法。实验结果表明，我们的方法在语义分割和3D视觉定位等任务中优于当前的方法，特别是在整体指标方面表现更佳。此外，我们已在机器人上部署了该方法，以验证其在导航和抓取任务中的有效性。 
+
+---
+# PNE-SGAN: Probabilistic NDT-Enhanced Semantic Graph Attention Network for LiDAR Loop Closure Detection 
+
+**Title (ZH)**: PNE-SGAN：概率NDT增强的语义图注意网络的环视闭合检测 
+
+**Authors**: Xiong Li, Shulei Liu, Xingning Chen, Yisong Wu, Dong Zhu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.08280)  
+
+**Abstract**: LiDAR loop closure detection (LCD) is crucial for consistent Simultaneous Localization and Mapping (SLAM) but faces challenges in robustness and accuracy. Existing methods, including semantic graph approaches, often suffer from coarse geometric representations and lack temporal robustness against noise, dynamics, and viewpoint changes. We introduce PNE-SGAN, a Probabilistic NDT-Enhanced Semantic Graph Attention Network, to overcome these limitations. PNE-SGAN enhances semantic graphs by using Normal Distributions Transform (NDT) covariance matrices as rich, discriminative geometric node features, processed via a Graph Attention Network (GAT). Crucially, it integrates graph similarity scores into a probabilistic temporal filtering framework (modeled as an HMM/Bayes filter), incorporating uncertain odometry for motion modeling and utilizing forward-backward smoothing to effectively handle ambiguities. Evaluations on challenging KITTI sequences (00 and 08) demonstrate state-of-the-art performance, achieving Average Precision of 96.2\% and 95.1\%, respectively. PNE-SGAN significantly outperforms existing methods, particularly in difficult bidirectional loop scenarios where others falter. By synergizing detailed NDT geometry with principled probabilistic temporal reasoning, PNE-SGAN offers a highly accurate and robust solution for LiDAR LCD, enhancing SLAM reliability in complex, large-scale environments. 
+
+**Abstract (ZH)**: LiDAR 环回闭合检测（LCD）对一致的即时定位与地图构建（SLAM）至关重要，但面临着可靠性和准确性方面的挑战。现有方法，包括语义图方法，常因粗略的几何表示和缺乏对噪声、动力学和视点变化的时域稳健性而受到影响。我们引入了PNE-SGAN，一种概率NDT增强语义图注意力网络，以克服这些限制。PNE-SGAN通过使用Normal Distributions Transform（NDT）协方差矩阵作为丰富的、区分性的几何节点特征，并通过图注意力网络（GAT）进行处理，来增强语义图。关键的是，它将图相似性分数整合到一个概率时域过滤框架中（建模为HMM/Bayes滤波器），并结合了不确定的轨迹进行运动建模，并利用前向-后向平滑来有效处理歧义性。在具有挑战性的KITTI序列（00和08）上的评估显示出最先进的性能，分别实现了96.2%和95.1%的平均查准率。PNE-SGAN在困难的双向环回场景中显著优于现有方法。通过结合详细的NDT几何结构与原理性概率时域推理，PNE-SGAN为LiDAR LCD提供了高精度和稳健的解决方案，增强了复杂大尺度环境下的SLAM可靠性。 
+
+---
+# Steering CLIP's vision transformer with sparse autoencoders 
+
+**Title (ZH)**: 用稀疏自编码器引导CLIP的视觉变换器 
+
+**Authors**: Sonia Joseph, Praneet Suresh, Ethan Goldfarb, Lorenz Hufe, Yossi Gandelsman, Robert Graham, Danilo Bzdok, Wojciech Samek, Blake Aaron Richards  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.08729)  
+
+**Abstract**: While vision models are highly capable, their internal mechanisms remain poorly understood -- a challenge which sparse autoencoders (SAEs) have helped address in language, but which remains underexplored in vision. We address this gap by training SAEs on CLIP's vision transformer and uncover key differences between vision and language processing, including distinct sparsity patterns for SAEs trained across layers and token types. We then provide the first systematic analysis on the steerability of CLIP's vision transformer by introducing metrics to quantify how precisely SAE features can be steered to affect the model's output. We find that 10-15\% of neurons and features are steerable, with SAEs providing thousands more steerable features than the base model. Through targeted suppression of SAE features, we then demonstrate improved performance on three vision disentanglement tasks (CelebA, Waterbirds, and typographic attacks), finding optimal disentanglement in middle model layers, and achieving state-of-the-art performance on defense against typographic attacks. 
+
+**Abstract (ZH)**: 视觉模型虽然功能强大，但其内部机制依然 poorly understood -- 一个稀疏自编码器（SAEs）已在语言领域帮助解决的问题，在视觉领域仍未得到充分探索。我们通过在 CLIP 的视觉变换器上训练 SAEs 来填补这一空白，揭示了视觉与语言处理之间的关键差异，包括在不同层和token类型下 SAEs 的独特稀疏模式。我们还提供了 CLIP 视觉变换器可控性的首个系统分析，通过引入度量标准来量化 SAE 特征如何精确影响模型输出。我们发现有 10-15% 的神经元和特征是可控的，SAEs 提供了比基础模型多数千倍的可控特征。通过有针对性地抑制 SAE 特征，我们展示了在三个视觉解耦任务（CelebA、Waterbirds 和 字符攻击）上的性能提升，在中间模型层实现最佳解耦，并在针对字符攻击的防御上达到当前最佳性能。 
+
+---
+# Deep Learning Methods for Detecting Thermal Runaway Events in Battery Production Lines 
+
+**Title (ZH)**: 电池生产线上热失控事件的深度学习检测方法 
+
+**Authors**: Athanasios Athanasopoulos, Matúš Mihalák, Marcin Pietrasik  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.08632)  
+
+**Abstract**: One of the key safety considerations of battery manufacturing is thermal runaway, the uncontrolled increase in temperature which can lead to fires, explosions, and emissions of toxic gasses. As such, development of automated systems capable of detecting such events is of considerable importance in both academic and industrial contexts. In this work, we investigate the use of deep learning for detecting thermal runaway in the battery production line of VDL Nedcar, a Dutch automobile manufacturer. Specifically, we collect data from the production line to represent both baseline (non thermal runaway) and thermal runaway conditions. Thermal runaway was simulated through the use of external heat and smoke sources. The data consisted of both optical and thermal images which were then preprocessed and fused before serving as input to our models. In this regard, we evaluated three deep-learning models widely used in computer vision including shallow convolutional neural networks, residual neural networks, and vision transformers on two performance metrics. Furthermore, we evaluated these models using explainability methods to gain insight into their ability to capture the relevant feature information from their inputs. The obtained results indicate that the use of deep learning is a viable approach to thermal runaway detection in battery production lines. 
+
+**Abstract (ZH)**: 电池制造中热失控检测的深度学习方法研究 
+
+---
+# On Background Bias of Post-Hoc Concept Embeddings in Computer Vision DNNs 
+
+**Title (ZH)**: 计算机视觉DNN中后验概念嵌入的背景偏差 
+
+**Authors**: Gesina Schwalbe, Georgii Mikriukov, Edgar Heinert, Stavros Gerolymatos, Mert Keser, Alois Knoll, Matthias Rottmann, Annika Mütze  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.08602)  
+
+**Abstract**: The thriving research field of concept-based explainable artificial intelligence (C-XAI) investigates how human-interpretable semantic concepts embed in the latent spaces of deep neural networks (DNNs). Post-hoc approaches therein use a set of examples to specify a concept, and determine its embeddings in DNN latent space using data driven techniques. This proved useful to uncover biases between different target (foreground or concept) classes. However, given that the background is mostly uncontrolled during training, an important question has been left unattended so far: Are/to what extent are state-of-the-art, data-driven post-hoc C-XAI approaches themselves prone to biases with respect to their backgrounds? E.g., wild animals mostly occur against vegetation backgrounds, and they seldom appear on roads. Even simple and robust C-XAI methods might abuse this shortcut for enhanced performance. A dangerous performance degradation of the concept-corner cases of animals on the road could thus remain undiscovered. This work validates and thoroughly confirms that established Net2Vec-based concept segmentation techniques frequently capture background biases, including alarming ones, such as underperformance on road scenes. For the analysis, we compare 3 established techniques from the domain of background randomization on >50 concepts from 2 datasets, and 7 diverse DNN architectures. Our results indicate that even low-cost setups can provide both valuable insight and improved background robustness. 
+
+**Abstract (ZH)**: 基于概念的可解释人工智能（C-XAI）的蓬勃研究领域探讨了人类可解释的语义概念如何嵌入深度神经网络（DNNs）的潜在空间中。其中的后处理方法使用一组示例来定义一个概念，并利用数据驱动的方法确定其在DNN潜在空间中的嵌入。这种方法已被证明对揭示不同目标类（前景或概念）之间的偏差很有用。然而，由于训练过程中背景大多是不受控制的，到目前为止一个重要的问题尚未得到解答：最先进的数据驱动后处理C-XAI方法是否以及在多大程度上对背景本身也存在偏差？例如，野生动物通常出现在植被背景中，很少出现在道路上。即使是简单而稳健的C-XAI方法也可能利用这种捷径以提升性能。因此，动物在道路上的概念极端案例的性能下降可能会被忽视。本研究验证并充分证实了基于Net2Vec的概念分割技术经常捕捉到背景偏差，包括令人担忧的偏差，如在道路场景上的表现不佳。为了分析，我们在两个数据集的50多个概念和7种不同的DNN架构上比较了3种现有的背景随机化技术。结果显示，即使低成本设置也能提供有价值的见解并提高背景的鲁棒性。 
+
+---
+# Hands-On: Segmenting Individual Signs from Continuous Sequences 
+
+**Title (ZH)**: 实战分析：从连续序列中分割个体手势 
+
+**Authors**: Low Jian He, Harry Walsh, Ozge Mercanoglu Sincan, Richard Bowden  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.08593)  
+
+**Abstract**: This work tackles the challenge of continuous sign language segmentation, a key task with huge implications for sign language translation and data annotation. We propose a transformer-based architecture that models the temporal dynamics of signing and frames segmentation as a sequence labeling problem using the Begin-In-Out (BIO) tagging scheme. Our method leverages the HaMeR hand features, and is complemented with 3D Angles. Extensive experiments show that our model achieves state-of-the-art results on the DGS Corpus, while our features surpass prior benchmarks on BSLCorpus. 
+
+**Abstract (ZH)**: 基于变压器的手语连续分割挑战及其在手语翻译和数据标注中的关键作用：一种使用Begin-In-Out标记方案建模手语时空动态的序列标注方法及其实验研究 
+
+---
+# A Hybrid Fully Convolutional CNN-Transformer Model for Inherently Interpretable Medical Image Classification 
+
+**Title (ZH)**: 一种用于固有可解释医疗图像分类的混合卷积CNN-变换器模型 
+
+**Authors**: Kerol Djoumessi, Samuel Ofosu Mensah, Philipp Berens  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.08481)  
+
+**Abstract**: In many medical imaging tasks, convolutional neural networks (CNNs) efficiently extract local features hierarchically. More recently, vision transformers (ViTs) have gained popularity, using self-attention mechanisms to capture global dependencies, but lacking the inherent spatial localization of convolutions. Therefore, hybrid models combining CNNs and ViTs have been developed to combine the strengths of both architectures. However, such hybrid CNN-ViT models are difficult to interpret, which hinders their application in medical imaging. In this work, we introduce an interpretable-by-design hybrid fully convolutional CNN-Transformer architecture for medical image classification. Unlike widely used post-hoc saliency methods for ViTs, our approach generates faithful and localized evidence maps that directly reflect the model's decision process. We evaluated our method on two medical image classification tasks using color fundus images. Our model not only achieves state-of-the-art predictive performance compared to both black-box and interpretable models but also provides class-specific sparse evidence maps in a single forward pass. The code is available at: this https URL. 
+
+**Abstract (ZH)**: 在许多医学影像任务中，卷积神经网络（CNNs）高效地分层提取局部特征。近年来，视觉变压器（ViTs）因其使用自我注意机制捕获全局依赖性而受到关注，但缺乏卷积固有的空间定位能力。因此，结合了CNNs和ViTs优点的混合模型被开发出来。然而，这类混合CNN-ViT模型难以解释，限制了它们在医学影像中的应用。在这项工作中，我们提出了一个设计可解释的混合全卷积CNN-Transformer架构，用于医学图像分类。与广泛使用的事后ViTs可解释性方法不同，我们的方法生成忠实且局部化的证据图，直接反映模型的决策过程。我们在使用彩色视网膜图像的两个医学图像分类任务上评估了该方法。我们的模型不仅在预测性能上达到最佳效果，与黑盒模型和可解释模型相比，还在单次前传中提供了特定类别的稀疏证据图。代码可从以下链接获取：this https URL。 
+
+---
+# A Knowledge-guided Adversarial Defense for Resisting Malicious Visual Manipulation 
+
+**Title (ZH)**: 基于知识导向的对抗防御以抵抗恶意视觉操纵 
+
+**Authors**: Dawei Zhou, Suzhi Gang, Decheng Liu, Tongliang Liu, Nannan Wang, Xinbo Gao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.08411)  
+
+**Abstract**: Malicious applications of visual manipulation have raised serious threats to the security and reputation of users in many fields. To alleviate these issues, adversarial noise-based defenses have been enthusiastically studied in recent years. However, ``data-only" methods tend to distort fake samples in the low-level feature space rather than the high-level semantic space, leading to limitations in resisting malicious manipulation. Frontier research has shown that integrating knowledge in deep learning can produce reliable and generalizable solutions. Inspired by these, we propose a knowledge-guided adversarial defense (KGAD) to actively force malicious manipulation models to output semantically confusing samples. Specifically, in the process of generating adversarial noise, we focus on constructing significant semantic confusions at the domain-specific knowledge level, and exploit a metric closely related to visual perception to replace the general pixel-wise metrics. The generated adversarial noise can actively interfere with the malicious manipulation model by triggering knowledge-guided and perception-related disruptions in the fake samples. To validate the effectiveness of the proposed method, we conduct qualitative and quantitative experiments on human perception and visual quality assessment. The results on two different tasks both show that our defense provides better protection compared to state-of-the-art methods and achieves great generalizability. 
+
+**Abstract (ZH)**: 基于知识引导的对抗防御（KGAD）：主动迫使恶意操作输出语义混淆样本 
+
+---
+# F$^3$Set: Towards Analyzing Fast, Frequent, and Fine-grained Events from Videos 
+
+**Title (ZH)**: F$^3$Set: 从视频中分析快速、频繁和细粒度事件的方法 
+
+**Authors**: Zhaoyu Liu, Kan Jiang, Murong Ma, Zhe Hou, Yun Lin, Jin Song Dong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.08222)  
+
+**Abstract**: Analyzing Fast, Frequent, and Fine-grained (F$^3$) events presents a significant challenge in video analytics and multi-modal LLMs. Current methods struggle to identify events that satisfy all the F$^3$ criteria with high accuracy due to challenges such as motion blur and subtle visual discrepancies. To advance research in video understanding, we introduce F$^3$Set, a benchmark that consists of video datasets for precise F$^3$ event detection. Datasets in F$^3$Set are characterized by their extensive scale and comprehensive detail, usually encompassing over 1,000 event types with precise timestamps and supporting multi-level granularity. Currently, F$^3$Set contains several sports datasets, and this framework may be extended to other applications as well. We evaluated popular temporal action understanding methods on F$^3$Set, revealing substantial challenges for existing techniques. Additionally, we propose a new method, F$^3$ED, for F$^3$ event detections, achieving superior performance. The dataset, model, and benchmark code are available at this https URL. 
+
+**Abstract (ZH)**: 分析快速、频繁和细粒度（F$^3$）事件在视频分析和多模态LLM中的挑战 
+
+---
+# TokenMotion: Decoupled Motion Control via Token Disentanglement for Human-centric Video Generation 
+
+**Title (ZH)**: TokenMotion：通过token去纠缠实现的人本驱动视频生成中的解耦运动控制 
+
+**Authors**: Ruineng Li, Daitao Xing, Huiming Sun, Yuanzhou Ha, Jinglin Shen, Chiuman Ho  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.08181)  
+
+**Abstract**: Human-centric motion control in video generation remains a critical challenge, particularly when jointly controlling camera movements and human poses in scenarios like the iconic Grammy Glambot moment. While recent video diffusion models have made significant progress, existing approaches struggle with limited motion representations and inadequate integration of camera and human motion controls. In this work, we present TokenMotion, the first DiT-based video diffusion framework that enables fine-grained control over camera motion, human motion, and their joint interaction. We represent camera trajectories and human poses as spatio-temporal tokens to enable local control granularity. Our approach introduces a unified modeling framework utilizing a decouple-and-fuse strategy, bridged by a human-aware dynamic mask that effectively handles the spatially-and-temporally varying nature of combined motion signals. Through extensive experiments, we demonstrate TokenMotion's effectiveness across both text-to-video and image-to-video paradigms, consistently outperforming current state-of-the-art methods in human-centric motion control tasks. Our work represents a significant advancement in controllable video generation, with particular relevance for creative production applications. 
+
+**Abstract (ZH)**: 基于人类中心的视频生成中的运动控制仍然是一个关键挑战，尤其是在同时控制相机运动和人类姿态如克利普顿格莱美吉祥物时刻等场景中。尽管近期的视频扩散模型取得了显著进展，现有的方法仍然难以处理有限的运动表示和相机与人类运动控制的不充分集成。在本文中，我们提出了TokenMotion，这是一个基于DiT的视频扩散框架，能够精细控制相机运动、人类运动及其联合交互。我们将相机轨迹和人类姿态表示为时空令牌，以实现局部控制粒度。我们的方法采用分离融合策略，并通过一种人类感知的动态掩码来统一建模，有效地处理联合运动信号的空间和时间变化特性。通过广泛的实验，我们展示了TokenMotion在文本到视频和图像到视频范式中的有效性，并且在人类中心的运动控制任务中始终优于当前最先进的方法。我们的工作代表了可控视频生成的重要进展，特别适用于创意生产应用。 
+
+---
+# Benchmarking Suite for Synthetic Aperture Radar Imagery Anomaly Detection (SARIAD) Algorithms 
+
+**Title (ZH)**: 合成孔径雷达图像异常检测算法基准测试套件（SARIAD） 
+
+**Authors**: Lucian Chauvina, Somil Guptac, Angelina Ibarrac, Joshua Peeples  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.08115)  
+
+**Abstract**: Anomaly detection is a key research challenge in computer vision and machine learning with applications in many fields from quality control to radar imaging. In radar imaging, specifically synthetic aperture radar (SAR), anomaly detection can be used for the classification, detection, and segmentation of objects of interest. However, there is no method for developing and benchmarking these methods on SAR imagery. To address this issue, we introduce SAR imagery anomaly detection (SARIAD). In conjunction with Anomalib, a deep-learning library for anomaly detection, SARIAD provides a comprehensive suite of algorithms and datasets for assessing and developing anomaly detection approaches on SAR imagery. SARIAD specifically integrates multiple SAR datasets along with tools to effectively apply various anomaly detection algorithms to SAR imagery. Several anomaly detection metrics and visualizations are available. Overall, SARIAD acts as a central package for benchmarking SAR models and datasets to allow for reproducible research in the field of anomaly detection in SAR imagery. This package is publicly available: this https URL. 
+
+**Abstract (ZH)**: SAR成像异常检测（SARIAD）：一种全面的异常检测算法和数据集套件 
+
+---
+# Multi-Task Learning with Multi-Annotation Triplet Loss for Improved Object Detection 
+
+**Title (ZH)**: 基于多注释三元损失的多任务学习改进目标检测 
+
+**Authors**: Meilun Zhou, Aditya Dutt, Alina Zare  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.08054)  
+
+**Abstract**: Triplet loss traditionally relies only on class labels and does not use all available information in multi-task scenarios where multiple types of annotations are available. This paper introduces a Multi-Annotation Triplet Loss (MATL) framework that extends triplet loss by incorporating additional annotations, such as bounding box information, alongside class labels in the loss formulation. By using these complementary annotations, MATL improves multi-task learning for tasks requiring both classification and localization. Experiments on an aerial wildlife imagery dataset demonstrate that MATL outperforms conventional triplet loss in both classification and localization. These findings highlight the benefit of using all available annotations for triplet loss in multi-task learning frameworks. 
+
+**Abstract (ZH)**: 多注释三元损失（MATL）框架：结合框信息提升多任务学习 
+
+---
+# Compositional Flows for 3D Molecule and Synthesis Pathway Co-design 
+
+**Title (ZH)**: 3D分子与合成路径协同设计的组合流方法 
+
+**Authors**: Tony Shen, Seonghwan Seo, Ross Irwin, Kieran Didi, Simon Olsson, Woo Youn Kim, Martin Ester  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.08051)  
+
+**Abstract**: Many generative applications, such as synthesis-based 3D molecular design, involve constructing compositional objects with continuous features. Here, we introduce Compositional Generative Flows (CGFlow), a novel framework that extends flow matching to generate objects in compositional steps while modeling continuous states. Our key insight is that modeling compositional state transitions can be formulated as a straightforward extension of the flow matching interpolation process. We further build upon the theoretical foundations of generative flow networks (GFlowNets), enabling reward-guided sampling of compositional structures. We apply CGFlow to synthesizable drug design by jointly designing the molecule's synthetic pathway with its 3D binding pose. Our approach achieves state-of-the-art binding affinity on all 15 targets from the LIT-PCBA benchmark, and 5.8$\times$ improvement in sampling efficiency compared to 2D synthesis-based baseline. To our best knowledge, our method is also the first to achieve state of-art-performance in both Vina Dock (-9.38) and AiZynth success rate (62.2\%) on the CrossDocked benchmark. 
+
+**Abstract (ZH)**: compositional生成流（CGFlow）：一种用于生成连续特征组成对象的新框架 
+
+---
+# DGFamba: Learning Flow Factorized State Space for Visual Domain Generalization 
+
+**Title (ZH)**: DGFamba: 学习流因子化解空间进行视觉领域泛化 
+
+**Authors**: Qi Bi, Jingjun Yi, Hao Zheng, Haolan Zhan, Wei Ji, Yawen Huang, Yuexiang Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.08019)  
+
+**Abstract**: Domain generalization aims to learn a representation from the source domain, which can be generalized to arbitrary unseen target domains. A fundamental challenge for visual domain generalization is the domain gap caused by the dramatic style variation whereas the image content is stable. The realm of selective state space, exemplified by VMamba, demonstrates its global receptive field in representing the content. However, the way exploiting the domain-invariant property for selective state space is rarely explored. In this paper, we propose a novel Flow Factorized State Space model, dubbed as DG-Famba, for visual domain generalization. To maintain domain consistency, we innovatively map the style-augmented and the original state embeddings by flow factorization. In this latent flow space, each state embedding from a certain style is specified by a latent probability path. By aligning these probability paths in the latent space, the state embeddings are able to represent the same content distribution regardless of the style differences. Extensive experiments conducted on various visual domain generalization settings show its state-of-the-art performance. 
+
+**Abstract (ZH)**: 视觉域泛化旨在从源域中学习一种表示，该表示可以泛化到任意未见过的目标域。视觉域泛化的一个基本挑战是由剧烈的风格变化引起的域差距，而图像内容则保持稳定。选择性状态空间的领域示例，如VMamba，展示了其全局感受野来表示内容。然而，选择性状态空间利用领域不变性的方式鲜有探讨。在本文中，我们提出了一种新颖的流动因子化状态空间模型，命名为DG-Famba，用于视觉域泛化。为了保持域一致性，我们创新地通过流动因子化将增强风格和原始状态嵌入映射。在这一潜在流动空间中，来自特定风格的每个状态嵌入由一个潜在概率路径指定。通过在潜在空间中对齐这些概率路径，状态嵌入能够不受风格差异的影响来表示相同的内容分布。在各种视觉域泛化设置下的广泛实验中，其性能表现出色。 
+
+---
