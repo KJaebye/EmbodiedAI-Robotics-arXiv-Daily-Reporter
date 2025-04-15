@@ -1,0 +1,179 @@
+# IMPACT: Behavioral Intention-aware Multimodal Trajectory Prediction with Adaptive Context Trimming 
+
+**Title (ZH)**: IMPACT: 基于行为意图的自适应背景裁剪多模态轨迹预测 
+
+**Authors**: Jiawei Sun, Xibin Yue, Jiahui Li, Tianle Shen, Chengran Yuan, Shuo Sun, Sheng Guo, Quanyun Zhou, Marcelo H Ang Jr  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.09103)  
+
+**Abstract**: While most prior research has focused on improving the precision of multimodal trajectory predictions, the explicit modeling of multimodal behavioral intentions (e.g., yielding, overtaking) remains relatively underexplored. This paper proposes a unified framework that jointly predicts both behavioral intentions and trajectories to enhance prediction accuracy, interpretability, and efficiency. Specifically, we employ a shared context encoder for both intention and trajectory predictions, thereby reducing structural redundancy and information loss. Moreover, we address the lack of ground-truth behavioral intention labels in mainstream datasets (Waymo, Argoverse) by auto-labeling these datasets, thus advancing the community's efforts in this direction. We further introduce a vectorized occupancy prediction module that infers the probability of each map polyline being occupied by the target vehicle's future trajectory. By leveraging these intention and occupancy prediction priors, our method conducts dynamic, modality-dependent pruning of irrelevant agents and map polylines in the decoding stage, effectively reducing computational overhead and mitigating noise from non-critical elements. Our approach ranks first among LiDAR-free methods on the Waymo Motion Dataset and achieves first place on the Waymo Interactive Prediction Dataset. Remarkably, even without model ensembling, our single-model framework improves the soft mean average precision (softmAP) by 10 percent compared to the second-best method in the Waymo Interactive Prediction Leaderboard. Furthermore, the proposed framework has been successfully deployed on real vehicles, demonstrating its practical effectiveness in real-world applications. 
+
+**Abstract (ZH)**: 一种统一框架：联合预测行为意图和轨迹以提高多模态轨迹预测的准确性、可解释性和效率 
+
+---
+# InfoMAE: Pair-Efficient Cross-Modal Alignment for Multimodal Time-Series Sensing Signals 
+
+**Title (ZH)**: InfoMAE: 对偶高效跨模态对齐多模态时间序列传感信号 
+
+**Authors**: Tomoyoshi Kimura, Xinlin Li, Osama Hanna, Yatong Chen, Yizhuo Chen, Denizhan Kara, Tianshi Wang, Jinyang Li, Xiaomin Ouyang, Shengzhong Liu, Mani Srivastava, Suhas Diggavi, Tarek Abdelzaher  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.09707)  
+
+**Abstract**: Standard multimodal self-supervised learning (SSL) algorithms regard cross-modal synchronization as implicit supervisory labels during pretraining, thus posing high requirements on the scale and quality of multimodal samples. These constraints significantly limit the performance of sensing intelligence in IoT applications, as the heterogeneity and the non-interpretability of time-series signals result in abundant unimodal data but scarce high-quality multimodal pairs. This paper proposes InfoMAE, a cross-modal alignment framework that tackles the challenge of multimodal pair efficiency under the SSL setting by facilitating efficient cross-modal alignment of pretrained unimodal representations. InfoMAE achieves \textit{efficient cross-modal alignment} with \textit{limited data pairs} through a novel information theory-inspired formulation that simultaneously addresses distribution-level and instance-level alignment. Extensive experiments on two real-world IoT applications are performed to evaluate InfoMAE's pairing efficiency to bridge pretrained unimodal models into a cohesive joint multimodal model. InfoMAE enhances downstream multimodal tasks by over 60% with significantly improved multimodal pairing efficiency. It also improves unimodal task accuracy by an average of 22%. 
+
+**Abstract (ZH)**: InfoMAE：一种在自监督学习框架下高效跨模态对齐的跨模态一致性框架 
+
+---
+# Draw with Thought: Unleashing Multimodal Reasoning for Scientific Diagram Generation 
+
+**Title (ZH)**: 思绘图启智：激发多模态推理以促进科学图表生成 
+
+**Authors**: Zhiqing Cui, Jiahao Yuan, Hanqing Wang, Yanshu Li, Chenxu Du, Zhenglong Ding  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.09479)  
+
+**Abstract**: Scientific diagrams are vital tools for communicating structured knowledge across disciplines. However, they are often published as static raster images, losing symbolic semantics and limiting reuse. While Multimodal Large Language Models (MLLMs) offer a pathway to bridging vision and structure, existing methods lack semantic control and structural interpretability, especially on complex diagrams. We propose Draw with Thought (DwT), a training-free framework that guides MLLMs to reconstruct diagrams into editable mxGraph XML code through cognitively-grounded Chain-of-Thought reasoning. DwT enables interpretable and controllable outputs without model fine-tuning by dividing the task into two stages: Coarse-to-Fine Planning, which handles perceptual structuring and semantic specification, and Structure-Aware Code Generation, enhanced by format-guided refinement. To support evaluation, we release Plot2XML, a benchmark of 247 real-world scientific diagrams with gold-standard XML annotations. Extensive experiments across eight MLLMs show that our approach yields high-fidelity, semantically aligned, and structurally valid reconstructions, with human evaluations confirming strong alignment in both accuracy and visual aesthetics, offering a scalable solution for converting static visuals into executable representations and advancing machine understanding of scientific graphics. 
+
+**Abstract (ZH)**: 科学图表是跨学科传达结构化知识的重要工具。然而，它们通常以静态位图形式发表，丧失了符号意义并限制了再利用。尽管多模态大型语言模型（MLLMs）提供了连接视觉和结构的途径，但现有方法缺乏语义控制和结构可解释性，尤其是在复杂图表方面的表现尤为不足。我们提出了“思维驱动绘图”（DwT）框架，这是一种无需微调的框架，可以引导MLLMs通过基于认知推理的思想链推理将图表重建为可编辑的mxGraph XML代码。DwT通过将任务分为两个阶段——粗到细规划和结构感知代码生成——实现了可解释和可控的输出，无需模型微调。粗到细规划处理感知结构化和语义规范，结构感知代码生成则通过格式引导进一步优化。为了支持评估，我们发布了包含247个真实世界科学图表的Plot2XML基准数据集，并配以黄金标准的XML注释。跨八种MLLM的广泛实验表明，我们提出的方法生成了高保真度、语义对齐且结构有效的重建结果，人工评估证实其在准确性和视觉美学方面具有强大的对齐性，为将静态视觉转换为可执行表示以及推进对科学图形的机器理解提供了可扩展的解决方案。 
+
+---
+# Mixed Signals: Decoding VLMs' Reasoning and Underlying Bias in Vision-Language Conflict 
+
+**Title (ZH)**: 混合信号：解码VLMs在视觉-语言冲突中的推理和潜在偏见 
+
+**Authors**: Pouya Pezeshkpour, Moin Aminnaseri, Estevam Hruschka  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.08974)  
+
+**Abstract**: Vision-language models (VLMs) have demonstrated impressive performance by effectively integrating visual and textual information to solve complex tasks. However, it is not clear how these models reason over the visual and textual data together, nor how the flow of information between modalities is structured. In this paper, we examine how VLMs reason by analyzing their biases when confronted with scenarios that present conflicting image and text cues, a common occurrence in real-world applications. To uncover the extent and nature of these biases, we build upon existing benchmarks to create five datasets containing mismatched image-text pairs, covering topics in mathematics, science, and visual descriptions. Our analysis shows that VLMs favor text in simpler queries but shift toward images as query complexity increases. This bias correlates with model scale, with the difference between the percentage of image- and text-preferred responses ranging from +56.8% (image favored) to -74.4% (text favored), depending on the task and model. In addition, we explore three mitigation strategies: simple prompt modifications, modifications that explicitly instruct models on how to handle conflicting information (akin to chain-of-thought prompting), and a task decomposition strategy that analyzes each modality separately before combining their results. Our findings indicate that the effectiveness of these strategies in identifying and mitigating bias varies significantly and is closely linked to the model's overall performance on the task and the specific modality in question. 
+
+**Abstract (ZH)**: Vision-语言模型通过有效整合视觉和文本信息来解决复杂任务方面已展现出 impressive 的性能。然而，尚不明确这些模型如何共同推理视觉和文本数据，也不清楚不同模态间信息流的结构如何。在这篇论文中，我们通过分析模型在遇到提供冲突图像和文本线索的场景时的偏见，来考察模型的推理过程，此类场景在实际应用中很常见。为了揭示这些偏见的范围和性质，我们在现有基准的基础上创建了五个包含不匹配图像-文本配对的数据集，覆盖数学、科学和视觉描述等领域。我们的分析表明，对于简单的查询，模型倾向于文本，但随着查询复杂性的增加，模型更倾向于图像。这种偏见与模型规模相关，不同任务和模型之间，偏好图像或文本的响应比例差异从+56.8%（偏好图像）到-74.4%（偏好文本）不等。此外，我们还探索了三种缓解策略：简单的提示修改、明确指示模型如何处理冲突信息的修改（类似于思维链提示）、以及一种任务分解策略，即单独分析每个模态后再结合其结果。我们的研究发现表明，这些策略在识别和缓解偏见方面的有效性显著不同，并且与模型在特定任务上的整体表现以及所涉及的具体模态密切相关。 
+
+---
+# GridMind: A Multi-Agent NLP Framework for Unified, Cross-Modal NFL Data Insights 
+
+**Title (ZH)**: GridMind: 一个统一跨模态NFL数据洞察的多Agent NLP框架 
+
+**Authors**: Jordan Chipka, Chris Moyer, Clay Troyer, Tyler Fuelling, Jeremy Hochstedler  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.08747)  
+
+**Abstract**: The rapid growth of big data and advancements in computational techniques have significantly transformed sports analytics. However, the diverse range of data sources -- including structured statistics, semi-structured formats like sensor data, and unstructured media such as written articles, audio, and video -- creates substantial challenges in extracting actionable insights. These various formats, often referred to as multimodal data, require integration to fully leverage their potential. Conventional systems, which typically prioritize structured data, face limitations when processing and combining these diverse content types, reducing their effectiveness in real-time sports analysis.
+To address these challenges, recent research highlights the importance of multimodal data integration for capturing the complexity of real-world sports environments. Building on this foundation, this paper introduces GridMind, a multi-agent framework that unifies structured, semi-structured, and unstructured data through Retrieval-Augmented Generation (RAG) and large language models (LLMs) to facilitate natural language querying of NFL data. This approach aligns with the evolving field of multimodal representation learning, where unified models are increasingly essential for real-time, cross-modal interactions.
+GridMind's distributed architecture includes specialized agents that autonomously manage each stage of a prompt -- from interpretation and data retrieval to response synthesis. This modular design enables flexible, scalable handling of multimodal data, allowing users to pose complex, context-rich questions and receive comprehensive, intuitive responses via a conversational interface. 
+
+**Abstract (ZH)**: 大数据的迅速增长和计算技术的进步显著改变了体育分析领域。然而，包括结构化统计数据、半结构化格式（如传感器数据）和非结构化媒体（如文章、音频和视频）在内的多样化数据源，为提取 actionable 洞察带来了巨大挑战。这些各种格式的数据，通常被称为多模态数据，需要进行集成以充分发挥其潜力。传统的系统通常优先处理结构化数据，在处理和组合这些多样化的数据类型时存在局限性，从而在实时体育分析中的效果受限。
+
+为应对这些挑战，近期研究强调了多模态数据集成的重要性，以捕捉真实世界体育环境的复杂性。在此基础上，本文介绍了一种多Agent框架 GridMind，通过检索增强生成（RAG）和大规模语言模型（LLMs）将结构化、半结构化和非结构化数据统一起来，以促进对 NFL 数据的自然语言查询。这一方法与正在演化的多模态表示学习领域相一致，在该领域中，统一模型对于实时跨模态交互越来越必不可少。
+
+GridMind 的分布式架构包含专门的 Agent，这些 Agent 自动管理提示的每个阶段——从解释和数据检索到响应合成。这种模块化设计使得灵活、可扩展地处理多模态数据成为可能，使用户能够提出复杂的、富含背景的问题，并通过对话式接口接收全面、直观的响应。 
+
+---
+# Multimodal Long Video Modeling Based on Temporal Dynamic Context 
+
+**Title (ZH)**: 基于-temporal动态上下文的多模态长视频建模 
+
+**Authors**: Haoran Hao, Jiaming Han, Yiyuan Zhang, Xiangyu Yue  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.10443)  
+
+**Abstract**: Recent advances in Large Language Models (LLMs) have led to significant breakthroughs in video understanding. However, existing models still struggle with long video processing due to the context length constraint of LLMs and the vast amount of information within the video. Although some recent methods are designed for long video understanding, they often lose crucial information during token compression and struggle with additional modality like audio. In this work, we propose a dynamic long video encoding method utilizing the temporal relationship between frames, named Temporal Dynamic Context (TDC). Firstly, we segment the video into semantically consistent scenes based on inter-frame similarities, then encode each frame into tokens using visual-audio encoders. Secondly, we propose a novel temporal context compressor to reduce the number of tokens within each segment. Specifically, we employ a query-based Transformer to aggregate video, audio, and instruction text tokens into a limited set of temporal context tokens. Finally, we feed the static frame tokens and the temporal context tokens into the LLM for video understanding. Furthermore, to handle extremely long videos, we propose a training-free chain-of-thought strategy that progressively extracts answers from multiple video segments. These intermediate answers serve as part of the reasoning process and contribute to the final answer. We conduct extensive experiments on general video understanding and audio-video understanding benchmarks, where our method demonstrates strong performance. The code and models are available at this https URL. 
+
+**Abstract (ZH)**: 近期大型语言模型（LLMs）的进步在视频理解领域取得了重要突破，但现有模型仍难以处理长视频，这是由于LLMs的上下文长度限制以及视频中的海量信息。尽管有一些近期方法旨在处理长视频理解，但在进行标记压缩时往往会丢失重要信息，且难以处理如音频等其他模态信息。在这项工作中，我们提出了一种利用帧间关系的动态长视频编码方法，名为时序动态上下文（TDC）。首先，我们基于帧间的相似性将视频分割成语义一致的场景，然后使用视觉-音频编码器对每一帧进行编码为标记。其次，我们提出了一种新型的时序上下文压缩器，以减少每个片段内标记的数量。具体来说，我们采用基于查询的Transformer，将视频、音频和指令文本标记聚合为一组有限的时序上下文标记。最后，我们将静态帧标记和时序上下文标记输入LLM进行视频理解。此外，为了处理极其长的视频，我们提出了一种无需训练的逐步推理策略，逐步从多个视频片段中提取答案。这些中间答案作为推理过程的一部分，并对最终答案产生贡献。我们在通用视频理解与音视频理解基准测试上进行了广泛实验，验证了该方法的出色性能。相关代码和模型可在以下链接获取。 
+
+---
+# RGB-Event based Pedestrian Attribute Recognition: A Benchmark Dataset and An Asymmetric RWKV Fusion Framework 
+
+**Title (ZH)**: 基于RGB-事件的行人属性识别：一个基准数据集和一种不对称RWKV融合框架 
+
+**Authors**: Xiao Wang, Haiyang Wang, Shiao Wang, Qiang Chen, Jiandong Jin, Haoyu Song, Bo Jiang, Chenglong Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.10018)  
+
+**Abstract**: Existing pedestrian attribute recognition methods are generally developed based on RGB frame cameras. However, these approaches are constrained by the limitations of RGB cameras, such as sensitivity to lighting conditions and motion blur, which hinder their performance. Furthermore, current attribute recognition primarily focuses on analyzing pedestrians' external appearance and clothing, lacking an exploration of emotional dimensions. In this paper, we revisit these issues and propose a novel multi-modal RGB-Event attribute recognition task by drawing inspiration from the advantages of event cameras in low-light, high-speed, and low-power consumption. Specifically, we introduce the first large-scale multi-modal pedestrian attribute recognition dataset, termed EventPAR, comprising 100K paired RGB-Event samples that cover 50 attributes related to both appearance and six human emotions, diverse scenes, and various seasons. By retraining and evaluating mainstream PAR models on this dataset, we establish a comprehensive benchmark and provide a solid foundation for future research in terms of data and algorithmic baselines. In addition, we propose a novel RWKV-based multi-modal pedestrian attribute recognition framework, featuring an RWKV visual encoder and an asymmetric RWKV fusion module. Extensive experiments are conducted on our proposed dataset as well as two simulated datasets (MARS-Attribute and DukeMTMC-VID-Attribute), achieving state-of-the-art results. The source code and dataset will be released on this https URL 
+
+**Abstract (ZH)**: 现有的行人属性识别方法主要基于RGB帧相机开发。然而，这些方法受限于RGB相机的照明条件敏感性和运动模糊等问题，影响了其性能。此外，当前的属性识别主要集中在分析行人的外部外观和穿着上，缺乏对情感维度的探索。本文重新审视了这些问题，并从事件摄像头在低光照、高速度和低功耗方面的优势出发，提出了一种新型的多模态RGB-事件属性识别任务。具体地，我们引入了第一个大规模的多模态行人属性识别数据集EventPAR，包含100K对RGB-事件配对样本，涵盖了与50种外观和六种人类情感、多种场景和不同季节相关的属性。通过对这一数据集进行重训练和评估主流的人行道属性识别模型，我们建立了一个全面的基准，为未来的研究提供了坚实的数据和算法基线。此外，我们提出了一种基于RWKV的新型多模态行人属性识别框架，该框架包括RWKV视觉编码器和不对称RWKV融合模块。我们在提出的数据集以及两个模拟数据集（MARS-Attribute和DukeMTMC-VID-Attribute）上进行了广泛的实验，取得了当前最佳的结果。源代码和数据集将发布在https://github.com/username/repo。 
+
+---
+# FedRecon: Missing Modality Reconstruction in Distributed Heterogeneous Environments 
+
+**Title (ZH)**: FedRecon：分布式异构环境中缺失模态的重构 
+
+**Authors**: Junming Liu, Guosun Zeng, Ding Wang, Yanting Gao, Yufei Jin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.09941)  
+
+**Abstract**: Multimodal data are often incomplete and exhibit Non-Independent and Identically Distributed (Non-IID) characteristics in real-world scenarios. These inherent limitations lead to both modality heterogeneity through partial modality absence and data heterogeneity from distribution divergence, creating fundamental challenges for effective federated learning (FL). To address these coupled challenges, we propose FedRecon, the first method targeting simultaneous missing modality reconstruction and Non-IID adaptation in multimodal FL. Our approach first employs a lightweight Multimodal Variational Autoencoder (MVAE) to reconstruct missing modalities while preserving cross-modal consistency. Distinct from conventional imputation methods, we achieve sample-level alignment through a novel distribution mapping mechanism that guarantees both data consistency and completeness. Additionally, we introduce a strategy employing global generator freezing to prevent catastrophic forgetting, which in turn mitigates Non-IID fluctuations. Extensive evaluations on multimodal datasets demonstrate FedRecon's superior performance in modality reconstruction under Non-IID conditions, surpassing state-of-the-art methods. 
+
+**Abstract (ZH)**: 多模态数据在现实场景中往往不完整并表现出非独立同分布（Non-IID）特性。这些固有的限制导致了模态异质性和数据异质性的耦合挑战，给有效的 federated learning（联邦学习）带来根本性的难题。为应对这些挑战，我们提出了 FedRecon，这是首个同时针对多模态 federated learning 中缺失模态重建和 Non-IID 调适的方法。我们的方法首先采用一种轻量级的多模态变分自编码器（MVAE）来重建缺失的模态并保持跨模态一致性。不同于传统的插补方法，我们通过一种新颖的分布映射机制实现了样本级对齐，确保数据的一致性和完整性。此外，我们引入了一种全局生成器冻结策略以防止灾难性遗忘，从而减轻 Non-IID 异变。广泛的多模态数据集评估证明，FedRecon 在 Non-IID 条件下进行模态重建的效果优于现有的先进方法。 
+
+---
+# REMEMBER: Retrieval-based Explainable Multimodal Evidence-guided Modeling for Brain Evaluation and Reasoning in Zero- and Few-shot Neurodegenerative Diagnosis 
+
+**Title (ZH)**: REMEMBER：基于检索的可解释多模态证据引导建模在零样本和少样本神经退行性疾病诊断中的大脑评估与推理 
+
+**Authors**: Duy-Cat Can, Quang-Huy Tang, Huong Ha, Binh T. Nguyen, Oliver Y. Chén  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.09354)  
+
+**Abstract**: Timely and accurate diagnosis of neurodegenerative disorders, such as Alzheimer's disease, is central to disease management. Existing deep learning models require large-scale annotated datasets and often function as "black boxes". Additionally, datasets in clinical practice are frequently small or unlabeled, restricting the full potential of deep learning methods. Here, we introduce REMEMBER -- Retrieval-based Explainable Multimodal Evidence-guided Modeling for Brain Evaluation and Reasoning -- a new machine learning framework that facilitates zero- and few-shot Alzheimer's diagnosis using brain MRI scans through a reference-based reasoning process. Specifically, REMEMBER first trains a contrastively aligned vision-text model using expert-annotated reference data and extends pseudo-text modalities that encode abnormality types, diagnosis labels, and composite clinical descriptions. Then, at inference time, REMEMBER retrieves similar, human-validated cases from a curated dataset and integrates their contextual information through a dedicated evidence encoding module and attention-based inference head. Such an evidence-guided design enables REMEMBER to imitate real-world clinical decision-making process by grounding predictions in retrieved imaging and textual context. Specifically, REMEMBER outputs diagnostic predictions alongside an interpretable report, including reference images and explanations aligned with clinical workflows. Experimental results demonstrate that REMEMBER achieves robust zero- and few-shot performance and offers a powerful and explainable framework to neuroimaging-based diagnosis in the real world, especially under limited data. 
+
+**Abstract (ZH)**: 基于检索的可解释多模态证据引导建模框架REMEMBER：用于基于脑MRI扫描的零-shot和少-shot阿尔茨海默病诊断 
+
+---
+# MiMIC: Multi-Modal Indian Earnings Calls Dataset to Predict Stock Prices 
+
+**Title (ZH)**: MiMIC：多模态印度 earnings 电话会议数据集，用于预测股票价格 
+
+**Authors**: Sohom Ghosh, Arnab Maji, Sudip Kumar Naskar  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.09257)  
+
+**Abstract**: Predicting stock market prices following corporate earnings calls remains a significant challenge for investors and researchers alike, requiring innovative approaches that can process diverse information sources. This study investigates the impact of corporate earnings calls on stock prices by introducing a multi-modal predictive model. We leverage textual data from earnings call transcripts, along with images and tables from accompanying presentations, to forecast stock price movements on the trading day immediately following these calls. To facilitate this research, we developed the MiMIC (Multi-Modal Indian Earnings Calls) dataset, encompassing companies representing the Nifty 50, Nifty MidCap 50, and Nifty Small 50 indices. The dataset includes earnings call transcripts, presentations, fundamentals, technical indicators, and subsequent stock prices. We present a multimodal analytical framework that integrates quantitative variables with predictive signals derived from textual and visual modalities, thereby enabling a holistic approach to feature representation and analysis. This multi-modal approach demonstrates the potential for integrating diverse information sources to enhance financial forecasting accuracy. To promote further research in computational economics, we have made the MiMIC dataset publicly available under the CC-NC-SA-4.0 licence. Our work contributes to the growing body of literature on market reactions to corporate communications and highlights the efficacy of multi-modal machine learning techniques in financial analysis. 
+
+**Abstract (ZH)**: 预测 CORPORATE EARNINGS CALLS 之后的股票市场价格仍然是投资者和研究人员面临的重大挑战，需要创新的方法来处理多种信息来源。本文通过引入多模态预测模型，研究公司业绩电话会议对股票价格的影响。我们利用收益电话会议纪要的文本数据，以及附带演示文稿中的图像和表格来预测电话会议后的首个交易日的股票价格变动。为了开展这项研究，我们开发了MiMIC（多模态印度收益电话会议）数据集，涵盖代表着Nifty 50、Nifty MidCap 50和Nifty Small 50指数的公司。该数据集包括收益电话会议纪要、演示文稿、基本财务数据、技术指标和后续股票价格。我们提出了一种多模态分析框架，将定量变量与来自文本和视觉模态的预测信号结合起来，从而实现对特征表示和分析的全面方法。多模态方法展示了整合多种信息来源以提高财务预测准确性的潜力。为了促进计算经济学领域的进一步研究，我们已根据CC-NC-SA-4.0许可证将MiMIC数据集公开。我们的研究成果增进了对企业沟通影响市场反应的文献的贡献，并突显了多模态机器学习技术在金融分析中的有效性。 
+
+---
+# ColonScopeX: Leveraging Explainable Expert Systems with Multimodal Data for Improved Early Diagnosis of Colorectal Cancer 
+
+**Title (ZH)**: ColonScopeX：利用多模态数据的可解释专家系统以改善结直肠癌早期诊断 
+
+**Authors**: Natalia Sikora, Robert L. Manschke, Alethea M. Tang, Peter Dunstan, Dean A. Harris, Su Yang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.08824)  
+
+**Abstract**: Colorectal cancer (CRC) ranks as the second leading cause of cancer-related deaths and the third most prevalent malignant tumour worldwide. Early detection of CRC remains problematic due to its non-specific and often embarrassing symptoms, which patients frequently overlook or hesitate to report to clinicians. Crucially, the stage at which CRC is diagnosed significantly impacts survivability, with a survival rate of 80-95\% for Stage I and a stark decline to 10\% for Stage IV. Unfortunately, in the UK, only 14.4\% of cases are diagnosed at the earliest stage (Stage I).
+In this study, we propose ColonScopeX, a machine learning framework utilizing explainable AI (XAI) methodologies to enhance the early detection of CRC and pre-cancerous lesions. Our approach employs a multimodal model that integrates signals from blood sample measurements, processed using the Savitzky-Golay algorithm for fingerprint smoothing, alongside comprehensive patient metadata, including medication history, comorbidities, age, weight, and BMI. By leveraging XAI techniques, we aim to render the model's decision-making process transparent and interpretable, thereby fostering greater trust and understanding in its predictions. The proposed framework could be utilised as a triage tool or a screening tool of the general population.
+This research highlights the potential of combining diverse patient data sources and explainable machine learning to tackle critical challenges in medical diagnostics. 
+
+**Abstract (ZH)**: 结直肠癌（CRC）是第二大癌症相关死亡原因，也是全球第三大致癌肿瘤。由于CRC症状非特异性且常令人尴尬，患者经常会忽视或犹豫不报告给临床医生，导致早期检测面临难题。重要的是，CRC诊断阶段对其生存率有显著影响，I期的生存率达到80-95%，而IV期则骤降至10%。不幸的是，在英国，只有14.4%的病例在最早阶段（I期）被诊断出来。
+在本研究中，我们提出了一种利用可解释人工智能（XAI）方法的机器学习框架——ColonScopeX，以增强CRC和癌前病变的早期检测。我们的方法采用多模态模型，结合了血液样本测量信号，使用Savitzky-Golay算法进行指纹平滑处理，并结合全面的患者元数据，包括用药历史、合并症、年龄、体重和BMI等。通过利用XAI技术，我们旨在使模型的决策过程透明且可解释，从而增强对其预测的信任和理解。所提出的框架可以作为分诊工具或一般人群筛查工具使用。
+这项研究突显了将多种患者数据源与可解释机器学习结合以应对医疗诊断中关键挑战的潜力。 
+
+---
+# Research on the Design of a Short Video Recommendation System Based on Multimodal Information and Differential Privacy 
+
+**Title (ZH)**: 基于多模态信息和差分隐私的短视频推荐系统设计研究 
+
+**Authors**: Haowei Yang, Lei Fu, Qingyi Lu, Yue Fan, Tianle Zhang, Ruohan Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.08751)  
+
+**Abstract**: With the rapid development of short video platforms, recommendation systems have become key technologies for improving user experience and enhancing platform engagement. However, while short video recommendation systems leverage multimodal information (such as images, text, and audio) to improve recommendation effectiveness, they also face the severe challenge of user privacy leakage. This paper proposes a short video recommendation system based on multimodal information and differential privacy protection. First, deep learning models are used for feature extraction and fusion of multimodal data, effectively improving recommendation accuracy. Then, a differential privacy protection mechanism suitable for recommendation scenarios is designed to ensure user data privacy while maintaining system performance. Experimental results show that the proposed method outperforms existing mainstream approaches in terms of recommendation accuracy, multimodal fusion effectiveness, and privacy protection performance, providing important insights for the design of recommendation systems for short video platforms. 
+
+**Abstract (ZH)**: 基于多模态信息和差分隐私保护的短视频推荐系统 
+
+---
+# A Survey of Multimodal Retrieval-Augmented Generation 
+
+**Title (ZH)**: 多模态检索增强生成综述 
+
+**Authors**: Lang Mei, Siyu Mo, Zhihan Yang, Chong Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.08748)  
+
+**Abstract**: Multimodal Retrieval-Augmented Generation (MRAG) enhances large language models (LLMs) by integrating multimodal data (text, images, videos) into retrieval and generation processes, overcoming the limitations of text-only Retrieval-Augmented Generation (RAG). While RAG improves response accuracy by incorporating external textual knowledge, MRAG extends this framework to include multimodal retrieval and generation, leveraging contextual information from diverse data types. This approach reduces hallucinations and enhances question-answering systems by grounding responses in factual, multimodal knowledge. Recent studies show MRAG outperforms traditional RAG, especially in scenarios requiring both visual and textual understanding. This survey reviews MRAG's essential components, datasets, evaluation methods, and limitations, providing insights into its construction and improvement. It also identifies challenges and future research directions, highlighting MRAG's potential to revolutionize multimodal information retrieval and generation. By offering a comprehensive perspective, this work encourages further exploration into this promising paradigm. 
+
+**Abstract (ZH)**: 多模态检索增强生成（MRAG）通过将多模态数据（文本、图像、视频）集成到检索和生成过程中，增强了大型语言模型（LLMs），克服了仅基于文本的检索增强生成（RAG）的局限性。 
+
+---

@@ -1,0 +1,301 @@
+# NaviDiffusor: Cost-Guided Diffusion Model for Visual Navigation 
+
+**Title (ZH)**: NaviDiffusor：成本导向的视觉导航扩散模型 
+
+**Authors**: Yiming Zeng, Hao Ren, Shuhang Wang, Junlong Huang, Hui Cheng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.10003)  
+
+**Abstract**: Visual navigation, a fundamental challenge in mobile robotics, demands versatile policies to handle diverse environments. Classical methods leverage geometric solutions to minimize specific costs, offering adaptability to new scenarios but are prone to system errors due to their multi-modular design and reliance on hand-crafted rules. Learning-based methods, while achieving high planning success rates, face difficulties in generalizing to unseen environments beyond the training data and often require extensive training. To address these limitations, we propose a hybrid approach that combines the strengths of learning-based methods and classical approaches for RGB-only visual navigation. Our method first trains a conditional diffusion model on diverse path-RGB observation pairs. During inference, it integrates the gradients of differentiable scene-specific and task-level costs, guiding the diffusion model to generate valid paths that meet the constraints. This approach alleviates the need for retraining, offering a plug-and-play solution. Extensive experiments in both indoor and outdoor settings, across simulated and real-world scenarios, demonstrate zero-shot transfer capability of our approach, achieving higher success rates and fewer collisions compared to baseline methods. Code will be released at this https URL. 
+
+**Abstract (ZH)**: 视觉导航，移动机器人领域的基本挑战，要求具有多样性的策略以应对不同的环境。经典方法利用几何解决方案以最小化特定成本，虽然能适应新的场景，但由于其多模块设计和依赖人工设计的规则，容易出现系统错误。基于学习的方法虽然能实现高规划成功率，但在处理超出训练数据之外的未见过的环境时面临泛化问题，且通常需要大量的训练。为解决这些问题，我们提出了一种结合基于学习方法和经典方法的混合方法，用于仅RGB视觉导航。该方法首先在一个包含多种路径-RGB观测对的数据集上训练一个条件扩散模型。在推理过程中，它整合了可微场景特定和任务级成本的梯度，引导扩散模型生成满足约束的有效路径。这种方法减轻了重新训练的需求，提供了一种即插即用的解决方案。在室内和室外环境、模拟和现实场景中的 extensive 实验表明，该方法在零样本迁移能力方面优于基线方法，实现更高的成功率和更少的碰撞。代码将在以下链接发布：this https URL。 
+
+---
+# NeRF-Based Transparent Object Grasping Enhanced by Shape Priors 
+
+**Title (ZH)**: 基于NeRF的形状先验增强透明物体抓取 
+
+**Authors**: Yi Han, Zixin Lin, Dongjie Li, Lvping Chen, Yongliang Shi, Gan Ma  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.09868)  
+
+**Abstract**: Transparent object grasping remains a persistent challenge in robotics, largely due to the difficulty of acquiring precise 3D information. Conventional optical 3D sensors struggle to capture transparent objects, and machine learning methods are often hindered by their reliance on high-quality datasets. Leveraging NeRF's capability for continuous spatial opacity modeling, our proposed architecture integrates a NeRF-based approach for reconstructing the 3D information of transparent objects. Despite this, certain portions of the reconstructed 3D information may remain incomplete. To address these deficiencies, we introduce a shape-prior-driven completion mechanism, further refined by a geometric pose estimation method we have developed. This allows us to obtain a complete and reliable 3D information of transparent objects. Utilizing this refined data, we perform scene-level grasp prediction and deploy the results in real-world robotic systems. Experimental validation demonstrates the efficacy of our architecture, showcasing its capability to reliably capture 3D information of various transparent objects in cluttered scenes, and correspondingly, achieve high-quality, stables, and executable grasp predictions. 
+
+**Abstract (ZH)**: 透明物体抓取在机器人技术中 remains a persistent challenge largely due to the difficulty of acquiring precise 3D information. 翻译为：
+
+透明物体抓取在机器人技术中仍然是一个持久的挑战，主要是由于难以获取精确的3D信息。 
+
+---
+# MonoDiff9D: Monocular Category-Level 9D Object Pose Estimation via Diffusion Model 
+
+**Title (ZH)**: MonoDiff9D：基于扩散模型的单目类别级9D物体姿态估计 
+
+**Authors**: Jian Liu, Wei Sun, Hui Yang, Jin Zheng, Zichen Geng, Hossein Rahmani, Ajmal Mian  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.10433)  
+
+**Abstract**: Object pose estimation is a core means for robots to understand and interact with their environment. For this task, monocular category-level methods are attractive as they require only a single RGB camera. However, current methods rely on shape priors or CAD models of the intra-class known objects. We propose a diffusion-based monocular category-level 9D object pose generation method, MonoDiff9D. Our motivation is to leverage the probabilistic nature of diffusion models to alleviate the need for shape priors, CAD models, or depth sensors for intra-class unknown object pose estimation. We first estimate coarse depth via DINOv2 from the monocular image in a zero-shot manner and convert it into a point cloud. We then fuse the global features of the point cloud with the input image and use the fused features along with the encoded time step to condition MonoDiff9D. Finally, we design a transformer-based denoiser to recover the object pose from Gaussian noise. Extensive experiments on two popular benchmark datasets show that MonoDiff9D achieves state-of-the-art monocular category-level 9D object pose estimation accuracy without the need for shape priors or CAD models at any stage. Our code will be made public at this https URL. 
+
+**Abstract (ZH)**: 基于扩散模型的单目类别级9D物体姿态生成方法：MonoDiff9D 
+
+---
+# FingER: Content Aware Fine-grained Evaluation with Reasoning for AI-Generated Videos 
+
+**Title (ZH)**: FingER：基于内容的细粒度评估与推理框架用于AI生成的视频 
+
+**Authors**: Rui Chen, Lei Sun, Jing Tang, Geng Li, Xiangxiang Chu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.10358)  
+
+**Abstract**: Recent advances in video generation have posed great challenges in the assessment of AI-generated content, particularly with the emergence of increasingly sophisticated models. The various inconsistencies and defects observed in such videos are inherently complex, making overall scoring notoriously difficult. In this paper, we emphasize the critical importance of integrating fine-grained reasoning into video evaluation, and we propose $\textbf{F}$ing$\textbf{ER}$, a novel entity-level reasoning evaluation framework that first automatically generates $\textbf{F}$ine-grained $\textbf{E}$ntity-level questions, and then answers those questions by a $\textbf{R}$easoning model with scores, which can be subsequently weighted summed to an overall score for different applications. Specifically, we leverage LLMs to derive entity-level questions across five distinct perspectives, which (i) often focus on some specific entities of the content, thereby making answering or scoring much easier by MLLMs, and (ii) are more interpretable. Then we construct a FingER dataset, consisting of approximately 3.3k videos and corresponding 60k fine-grained QA annotations, each with detailed reasons. Based on that, we further investigate various training protocols to best incentivize the reasoning capability of MLLMs for correct answer prediction. Extensive experiments demonstrate that a reasoning model trained using Group Relative Policy Optimization (GRPO) with a cold-start strategy achieves the best performance. Notably, our model surpasses existing methods by a relative margin of $11.8\%$ on GenAI-Bench and $5.5\%$ on MonetBench with only 3.3k training videos, which is at most one-tenth of the training samples utilized by other methods. Our code and dataset will be released soon. 
+
+**Abstract (ZH)**: Recent Advances in Video Generation Pose Great Challenges in the Assessment of AI-Generated Content: The Critical Importance of Fine-Grained Reasoning in Video Evaluation and the Proposal of FingER, a Novel Entity-Level Reasoning Evaluation Framework 
+
+---
+# MASSeg : 2nd Technical Report for 4th PVUW MOSE Track 
+
+**Title (ZH)**: MASSeg : 第4届PVUW MOSE赛道的2nd技术报告 
+
+**Authors**: Xuqiang Cao, Linnan Zhao, Jiaxuan Zhao, Fang Liu, Puhua Chen, Wenping Ma  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.10254)  
+
+**Abstract**: Complex video object segmentation continues to face significant challenges in small object recognition, occlusion handling, and dynamic scene modeling. This report presents our solution, which ranked second in the MOSE track of CVPR 2025 PVUW Challenge. Based on an existing segmentation framework, we propose an improved model named MASSeg for complex video object segmentation, and construct an enhanced dataset, MOSE+, which includes typical scenarios with occlusions, cluttered backgrounds, and small target instances. During training, we incorporate a combination of inter-frame consistent and inconsistent data augmentation strategies to improve robustness and generalization. During inference, we design a mask output scaling strategy to better adapt to varying object sizes and occlusion levels. As a result, MASSeg achieves a J score of 0.8250, F score of 0.9007, and a J&F score of 0.8628 on the MOSE test set. 
+
+**Abstract (ZH)**: 复杂视频对象分割在小目标识别、遮挡处理和动态场景建模方面仍面临重大挑战。本报告提出了我们的解决方案，在CVPR 2025 PVUW挑战赛MOSE轨道中排名第二。基于现有的分割框架，我们提出了一个改进的模型MASSeg用于复杂视频对象分割，并构建了一个增强的数据集MOSE+，该数据集包含具有遮挡、复杂背景和小目标实例的典型场景。在训练过程中，我们结合使用帧内一致性和非一致性数据增强策略以提高鲁棒性和泛化能力。在推理过程中，我们设计了一种掩码输出缩放策略，以更好地适应物体大小和遮挡程度的变化。结果，MASSeg在MOSE测试集上达到了J分数0.8250，F分数0.9007，以及J&F分数0.8628。 
+
+---
+# WildLive: Near Real-time Visual Wildlife Tracking onboard UAVs 
+
+**Title (ZH)**: WildLive：机载无人机上的近实时野生动物视觉跟踪 
+
+**Authors**: Nguyen Ngoc Dat, Tom Richardson, Matthew Watson, Kilian Meier, Jenna Kline, Sid Reid, Guy Maalouf, Duncan Hine, Majid Mirmehdi, Tilo Burghardt  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.10165)  
+
+**Abstract**: Live tracking of wildlife via high-resolution video processing directly onboard drones is widely unexplored and most existing solutions rely on streaming video to ground stations to support navigation. Yet, both autonomous animal-reactive flight control beyond visual line of sight and/or mission-specific individual and behaviour recognition tasks rely to some degree on this capability. In response, we introduce WildLive -- a near real-time animal detection and tracking framework for high-resolution imagery running directly onboard uncrewed aerial vehicles (UAVs). The system performs multi-animal detection and tracking at 17fps+ for HD and 7fps+ on 4K video streams suitable for operation during higher altitude flights to minimise animal disturbance. Our system is optimised for Jetson Orin AGX onboard hardware. It integrates the efficiency of sparse optical flow tracking and mission-specific sampling with device-optimised and proven YOLO-driven object detection and segmentation techniques. Essentially, computational resource is focused onto spatio-temporal regions of high uncertainty to significantly improve UAV processing speeds without domain-specific loss of accuracy. Alongside, we introduce our WildLive dataset, which comprises 200k+ annotated animal instances across 19k+ frames from 4K UAV videos collected at the Ol Pejeta Conservancy in Kenya. All frames contain ground truth bounding boxes, segmentation masks, as well as individual tracklets and tracking point trajectories. We compare our system against current object tracking approaches including OC-SORT, ByteTrack, and SORT. Our multi-animal tracking experiments with onboard hardware confirm that near real-time high-resolution wildlife tracking is possible on UAVs whilst maintaining high accuracy levels as needed for future navigational and mission-specific animal-centric operational autonomy. 
+
+**Abstract (ZH)**: 基于无人机上板的高分辨率视频处理实时野生动物追踪：WildLive框架 
+
+---
+# SoccerNet-v3D: Leveraging Sports Broadcast Replays for 3D Scene Understanding 
+
+**Title (ZH)**: SoccerNet-v3D: 利用体育广播回放进行三维场景理解 
+
+**Authors**: Marc Gutiérrez-Pérez, Antonio Agudo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.10106)  
+
+**Abstract**: Sports video analysis is a key domain in computer vision, enabling detailed spatial understanding through multi-view correspondences. In this work, we introduce SoccerNet-v3D and ISSIA-3D, two enhanced and scalable datasets designed for 3D scene understanding in soccer broadcast analysis. These datasets extend SoccerNet-v3 and ISSIA by incorporating field-line-based camera calibration and multi-view synchronization, enabling 3D object localization through triangulation. We propose a monocular 3D ball localization task built upon the triangulation of ground-truth 2D ball annotations, along with several calibration and reprojection metrics to assess annotation quality on demand. Additionally, we present a single-image 3D ball localization method as a baseline, leveraging camera calibration and ball size priors to estimate the ball's position from a monocular viewpoint. To further refine 2D annotations, we introduce a bounding box optimization technique that ensures alignment with the 3D scene representation. Our proposed datasets establish new benchmarks for 3D soccer scene understanding, enhancing both spatial and temporal analysis in sports analytics. Finally, we provide code to facilitate access to our annotations and the generation pipelines for the datasets. 
+
+**Abstract (ZH)**: 体育视频分析是计算机视觉中的一个关键领域，通过多视角对应关系实现详细的空间理解。本文介绍了SoccerNet-v3D和ISSIA-3D两个增强和可扩展的数据集，用于足球转播分析中的3D场景理解。这些数据集扩展了SoccerNet-v3和ISSIA，通过引入基于场线的摄像机标定和多视角同步，利用三角测量实现3D物体定位。我们提出了一项基于地面真实2D球标注的单目3D球定位任务，并提出了一些校准和重投影指标，以按需评估标注质量。此外，我们提出了一种单图像3D球定位方法作为基线，利用摄像机校准和球大小先验估计单目视角下的球位置。为了进一步细化2D标注，我们引入了一种边界框优化技术，确保与3D场景表示的对齐。我们提出的这些数据集为3D足球场景理解建立了新的基准，增强了体育分析中的空间和时间分析。最后，我们提供了代码以方便访问我们的标注以及数据集的生成管道。 
+
+---
+# Mavors: Multi-granularity Video Representation for Multimodal Large Language Model 
+
+**Title (ZH)**: Mavors: 多粒度视频表示用于多模态大型语言模型 
+
+**Authors**: Yang Shi, Jiaheng Liu, Yushuo Guan, Zhenhua Wu, Yuanxing Zhang, Zihao Wang, Weihong Lin, Jingyun Hua, Zekun Wang, Xinlong Chen, Bohan Zeng, Wentao Zhang, Fuzheng Zhang, Wenjing Yang, Di Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.10068)  
+
+**Abstract**: Long-context video understanding in multimodal large language models (MLLMs) faces a critical challenge: balancing computational efficiency with the retention of fine-grained spatio-temporal patterns. Existing approaches (e.g., sparse sampling, dense sampling with low resolution, and token compression) suffer from significant information loss in temporal dynamics, spatial details, or subtle interactions, particularly in videos with complex motion or varying resolutions. To address this, we propose $\mathbf{Mavors}$, a novel framework that introduces $\mathbf{M}$ulti-gr$\mathbf{a}$nularity $\mathbf{v}$ide$\mathbf{o}$ $\mathbf{r}$epre$\mathbf{s}$entation for holistic long-video modeling. Specifically, Mavors directly encodes raw video content into latent representations through two core components: 1) an Intra-chunk Vision Encoder (IVE) that preserves high-resolution spatial features via 3D convolutions and Vision Transformers, and 2) an Inter-chunk Feature Aggregator (IFA) that establishes temporal coherence across chunks using transformer-based dependency modeling with chunk-level rotary position encodings. Moreover, the framework unifies image and video understanding by treating images as single-frame videos via sub-image decomposition. Experiments across diverse benchmarks demonstrate Mavors' superiority in maintaining both spatial fidelity and temporal continuity, significantly outperforming existing methods in tasks requiring fine-grained spatio-temporal reasoning. 
+
+**Abstract (ZH)**: 多模态大规模语言模型中长上下文视频理解面临的挑战：在保持计算效率与保留精细时空模式之间的平衡。为解决这一问题，我们提出了Mavors框架，该框架引入了多粒度视频表示以进行整体长视频建模。具体而言，Mavors通过两种核心组件直接将原始视频内容编码为潜在表示：1) 内存块视觉编码器（IVE），利用3D卷积和视觉变换器保留高分辨率的空间特征；2) 内存块特征聚合器（IFA），利用基于转子位置编码的变换器依赖建模在内存块之间建立时空一致性。此外，该框架通过子图像分解将图像视为单帧视频来统一图像和视频理解。跨多种基准的实验结果表明，Mavors在保持空间保真度和时间连续性方面优于现有方法，在需要精细时空推理的任务中表现更优。 
+
+---
+# Progressive Transfer Learning for Multi-Pass Fundus Image Restoration 
+
+**Title (ZH)**: 多过重重归图像 restoration 的逐级迁移学习 
+
+**Authors**: Uyen Phan, Ozer Can Devecioglu, Serkan Kiranyaz, Moncef Gabbouj  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.10025)  
+
+**Abstract**: Diabetic retinopathy is a leading cause of vision impairment, making its early diagnosis through fundus imaging critical for effective treatment planning. However, the presence of poor quality fundus images caused by factors such as inadequate illumination, noise, blurring and other motion artifacts yields a significant challenge for accurate DR screening. In this study, we propose progressive transfer learning for multi pass restoration to iteratively enhance the quality of degraded fundus images, ensuring more reliable DR screening. Unlike previous methods that often focus on a single pass restoration, multi pass restoration via PTL can achieve a superior blind restoration performance that can even improve most of the good quality fundus images in the dataset. Initially, a Cycle GAN model is trained to restore low quality images, followed by PTL induced restoration passes over the latest restored outputs to improve overall quality in each pass. The proposed method can learn blind restoration without requiring any paired data while surpassing its limitations by leveraging progressive learning and fine tuning strategies to minimize distortions and preserve critical retinal features. To evaluate PTL's effectiveness on multi pass restoration, we conducted experiments on DeepDRiD, a large scale fundus imaging dataset specifically curated for diabetic retinopathy detection. Our result demonstrates state of the art performance, showcasing PTL's potential as a superior approach to iterative image quality restoration. 
+
+**Abstract (ZH)**: 糖尿病视网膜病变是导致视力损害的主要原因之一，通过眼底成像进行早期诊断对于有效治疗计划至关重要。然而，由于照明不足、噪声、模糊和其他运动伪影等原因导致的眼底图像质量差，对准确的糖尿病视网膜病变筛查构成了重大挑战。在本研究中，我们提出渐进迁移学习进行多遍恢复，以迭代增强退化眼底图像的质量，确保更可靠的糖尿病视网膜病变筛查。与仅关注单遍恢复的先前方法不同，通过渐进迁移学习（PTL）进行多遍恢复可以实现卓越的盲恢复性能，甚至可以改善数据集中大多数高品质眼底图像。首先，训练一个Cycle GAN模型以恢复低质量图像，然后通过PTL诱导的恢复遍历来提高每次迭代的整体质量。所提出的方法无需任何配对数据即可学习盲恢复，并通过利用渐进学习和 fine-tuning 策略来最小化失真并保留关键的视网膜特征。为了评估PTL在多遍恢复中的效果，我们在专门为糖尿病视网膜病变检测定制的DeepDRiD大数据集上进行了实验。我们的结果显示了最先进的性能，展示了PTL作为迭代图像质量恢复的优越方法的潜力。 
+
+---
+# Metric-Guided Synthesis of Class Activation Mapping 
+
+**Title (ZH)**: 基于度量的类激活映射合成 
+
+**Authors**: Alejandro Luque-Cerpa, Elizabeth Polgreen, Ajitha Rajan, Hazem Torfah  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.09998)  
+
+**Abstract**: Class activation mapping (CAM) is a widely adopted class of saliency methods used to explain the behavior of convolutional neural networks (CNNs). These methods generate heatmaps that highlight the parts of the input most relevant to the CNN output. Various CAM methods have been proposed, each distinguished by the expressions used to derive heatmaps. In general, users look for heatmaps with specific properties that reflect different aspects of CNN functionality. These may include similarity to ground truth, robustness, equivariance, and more. Although existing CAM methods implicitly encode some of these properties in their expressions, they do not allow for variability in heatmap generation following the user's intent or domain knowledge. In this paper, we address this limitation by introducing SyCAM, a metric-based approach for synthesizing CAM expressions. Given a predefined evaluation metric for saliency maps, SyCAM automatically generates CAM expressions optimized for that metric. We specifically explore a syntax-guided synthesis instantiation of SyCAM, where CAM expressions are derived based on predefined syntactic constraints and the given metric. Using several established evaluation metrics, we demonstrate the efficacy and flexibility of our approach in generating targeted heatmaps. We compare SyCAM with other well-known CAM methods on three prominent models: ResNet50, VGG16, and VGG19. 
+
+**Abstract (ZH)**: 基于度量的SynCAM合成方法：针对特定评价指标自动生成CAM表达式 
+
+---
+# Omni-Dish: Photorealistic and Faithful Image Generation and Editing for Arbitrary Chinese Dishes 
+
+**Title (ZH)**: 全盘：任意中式菜品的逼真生成与编辑 
+
+**Authors**: Huijie Liu, Bingcan Wang, Jie Hu, Xiaoming Wei, Guoliang Kang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.09948)  
+
+**Abstract**: Dish images play a crucial role in the digital era, with the demand for culturally distinctive dish images continuously increasing due to the digitization of the food industry and e-commerce. In general cases, existing text-to-image generation models excel in producing high-quality images; however, they struggle to capture diverse characteristics and faithful details of specific domains, particularly Chinese dishes. To address this limitation, we propose Omni-Dish, the first text-to-image generation model specifically tailored for Chinese dishes. We develop a comprehensive dish curation pipeline, building the largest dish dataset to date. Additionally, we introduce a recaption strategy and employ a coarse-to-fine training scheme to help the model better learn fine-grained culinary nuances. During inference, we enhance the user's textual input using a pre-constructed high-quality caption library and a large language model, enabling more photorealistic and faithful image generation. Furthermore, to extend our model's capability for dish editing tasks, we propose Concept-Enhanced P2P. Based on this approach, we build a dish editing dataset and train a specialized editing model. Extensive experiments demonstrate the superiority of our methods. 
+
+**Abstract (ZH)**: dishes 图像在数字时代扮演着重要角色，随着食品行业和电子商务的数字化，对具有文化特色的菜肴图像需求不断增加。一般情况下，现有的文本到图像生成模型在生成高质量图像方面表现出色；然而，它们在捕捉特定领域，尤其是 Chinese 菜肴的多样特征和忠实细节方面存在局限性。为了解决这一问题，我们提出了 Omni-Dish，这是首个专门针对 Chinese 菜肴的文本到图像生成模型。我们开发了一个全面的菜肴策展流水线，构建了迄今为止最大的菜肴数据集。此外，我们引入了重新 caption 的策略，并采用了粗到细的训练方案，以帮助模型更好地学习细粒度的烹饪细微差别。在推理过程中，我们使用预构建的高质量图像描述库和大型语言模型增强用户的文本输入，从而实现更逼真和忠实的图像生成。为进一步扩展我们的模型在菜肴编辑任务的能力，我们提出了 Concept-Enhanced P2P。基于此方法，我们构建了一个菜肴编辑数据集并训练了一个专门的编辑模型。大量实验表明了我们方法的优越性。 
+
+---
+# IGL-DT: Iterative Global-Local Feature Learning with Dual-Teacher Semantic Segmentation Framework under Limited Annotation Scheme 
+
+**Title (ZH)**: IGL-DT：在有限注释方案下基于迭代全局-局部特征学习的双师语义分割框架 
+
+**Authors**: Dinh Dai Quan Tran, Hoang-Thien Nguyen. Thanh-Huy Nguyen, Gia-Van To, Tien-Huy Nguyen, Quan Nguyen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.09797)  
+
+**Abstract**: Semi-Supervised Semantic Segmentation (SSSS) aims to improve segmentation accuracy by leveraging a small set of labeled images alongside a larger pool of unlabeled data. Recent advances primarily focus on pseudo-labeling, consistency regularization, and co-training strategies. However, existing methods struggle to balance global semantic representation with fine-grained local feature extraction. To address this challenge, we propose a novel tri-branch semi-supervised segmentation framework incorporating a dual-teacher strategy, named IGL-DT. Our approach employs SwinUnet for high-level semantic guidance through Global Context Learning and ResUnet for detailed feature refinement via Local Regional Learning. Additionally, a Discrepancy Learning mechanism mitigates over-reliance on a single teacher, promoting adaptive feature learning. Extensive experiments on benchmark datasets demonstrate that our method outperforms state-of-the-art approaches, achieving superior segmentation performance across various data regimes. 
+
+**Abstract (ZH)**: 半监督语义分割（Semi-Supervised Semantic Segmentation, SSSS）旨在通过利用少量标注图像和大量未标注数据来提高分割精度。 recent advances 主要侧重于伪标签生成、一致性正则化和协同训练策略。然而，现有方法难以平衡全局语义表示与精细局部特征提取。为了应对这一挑战，我们提出了一种新颖的三支路半监督分割框架，结合双师策略，命名为IGL-DT。我们的方法通过全局上下文学习模块SwinUnet提供高层语义指导，并通过局部区域学习模块ResUnet进行详细特征细化。此外，离散学习机制减轻了对单个教师的过度依赖，促进自适应特征学习。在基准数据集上的广泛实验表明，我们的方法优于现有的先进方法，在各种数据条件下实现了更优的分割性能。 
+
+---
+# EquiVDM: Equivariant Video Diffusion Models with Temporally Consistent Noise 
+
+**Title (ZH)**: EquiVDM：具有时空一致噪声的自酉视频扩散模型 
+
+**Authors**: Chao Liu, Arash Vahdat  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.09789)  
+
+**Abstract**: Temporally consistent video-to-video generation is essential for applications of video diffusion models in areas such as sim-to-real, style-transfer, video upsampling, etc. In this paper, we propose a video diffusion framework that leverages temporally consistent noise to generate coherent video frames without specialized modules or additional constraints. We show that the standard training objective of diffusion models, when applied with temporally consistent noise, encourages the model to be equivariant to spatial transformations in input video and noise. This enables our model to better follow motion patterns from the input video, producing aligned motion and high-fidelity frames. Furthermore, we extend our approach to 3D-consistent video generation by attaching noise as textures on 3D meshes, ensuring 3D consistency in sim-to-real applications. Experimental results demonstrate that our method surpasses state-of-the-art baselines in motion alignment, 3D consistency, and video quality while requiring only a few sampling steps in practice. 
+
+**Abstract (ZH)**: 时空一致的视频到视频生成对于视频扩散模型在sim-to-real、风格迁移、视频上采样等领域的应用至关重要。本文提出一种利用时空一致噪声的视频扩散框架，无需特殊模块或额外约束即可生成连贯的视频帧。我们表明，当扩散模型的标准训练目标与时空一致噪声结合使用时，能够促使模型在输入视频和噪声的空间变换上具有协同性。这使我们的模型更好地跟随输入视频中的运动模式，产生对齐的运动和高保真帧。此外，我们通过将噪声作为3D网格上的纹理来扩展我们的方法，以确保在sim-to-real应用中的3D一致性。实验结果表明，与现有最先进的基线方法相比，我们的方法在运动对齐、3D一致性和视频质量方面表现更优，且仅需少量采样步骤即可实现。 
+
+---
+# Automatic Detection of Intro and Credits in Video using CLIP and Multihead Attention 
+
+**Title (ZH)**: 使用CLIP和多头注意力自动检测视频中的片头和字幕 
+
+**Authors**: Vasilii Korolkov, Andrey Yanchenko  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.09738)  
+
+**Abstract**: Detecting transitions between intro/credits and main content in videos is a crucial task for content segmentation, indexing, and recommendation systems. Manual annotation of such transitions is labor-intensive and error-prone, while heuristic-based methods often fail to generalize across diverse video styles. In this work, we introduce a deep learning-based approach that formulates the problem as a sequence-to-sequence classification task, where each second of a video is labeled as either "intro" or "film." Our method extracts frames at a fixed rate of 1 FPS, encodes them using CLIP (Contrastive Language-Image Pretraining), and processes the resulting feature representations with a multihead attention model incorporating learned positional encoding. The system achieves an F1-score of 91.0%, Precision of 89.0%, and Recall of 97.0% on the test set, and is optimized for real-time inference, achieving 11.5 FPS on CPU and 107 FPS on high-end GPUs. This approach has practical applications in automated content indexing, highlight detection, and video summarization. Future work will explore multimodal learning, incorporating audio features and subtitles to further enhance detection accuracy. 
+
+**Abstract (ZH)**: 基于深度学习的视频宣传片与正片过渡检测方法 
+
+---
+# TextSplat: Text-Guided Semantic Fusion for Generalizable Gaussian Splatting 
+
+**Title (ZH)**: TextSplat: 文本导向的语义融合用于通用高斯散点图 
+
+**Authors**: Zhicong Wu, Hongbin Xu, Gang Xu, Ping Nie, Zhixin Yan, Jinkai Zheng, Liangqiong Qu, Ming Li, Liqiang Nie  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.09588)  
+
+**Abstract**: Recent advancements in Generalizable Gaussian Splatting have enabled robust 3D reconstruction from sparse input views by utilizing feed-forward Gaussian Splatting models, achieving superior cross-scene generalization. However, while many methods focus on geometric consistency, they often neglect the potential of text-driven guidance to enhance semantic understanding, which is crucial for accurately reconstructing fine-grained details in complex scenes. To address this limitation, we propose TextSplat--the first text-driven Generalizable Gaussian Splatting framework. By employing a text-guided fusion of diverse semantic cues, our framework learns robust cross-modal feature representations that improve the alignment of geometric and semantic information, producing high-fidelity 3D reconstructions. Specifically, our framework employs three parallel modules to obtain complementary representations: the Diffusion Prior Depth Estimator for accurate depth information, the Semantic Aware Segmentation Network for detailed semantic information, and the Multi-View Interaction Network for refined cross-view features. Then, in the Text-Guided Semantic Fusion Module, these representations are integrated via the text-guided and attention-based feature aggregation mechanism, resulting in enhanced 3D Gaussian parameters enriched with detailed semantic cues. Experimental results on various benchmark datasets demonstrate improved performance compared to existing methods across multiple evaluation metrics, validating the effectiveness of our framework. The code will be publicly available. 
+
+**Abstract (ZH)**: Recent advancements in通用可泛化高斯绘射技术通过利用前馈高斯绘射模型，从稀疏输入视角中实现稳健的三维重建，并获得跨场景的优良泛化能力。然而，尽管许多方法关注几何一致性，它们往往忽视了文本驱动指导在增强语义理解方面的潜力，这对于准确重建复杂场景中的精细细节至关重要。为解决这一局限性，我们提出TextSplat——首个文本驱动的通用可泛化高斯绘射框架。通过采用文本引导的多模态特征融合，我们的框架学习到稳健的跨模态特征表示，提高了几何和语义信息的对齐，生成高保真三维重建。具体地，我们的框架采用三个并行模块来获得互补表示：用于准确深度估计的扩散先验深度估计器、用于详细语义信息的语义意识分割网络以及用于精细跨视图特征的多视角交互网络。然后，在文本引导语义融合模块中，这些表示通过文本引导和注意力机制的特征聚合机制进行整合，生成富含详细语义线索的增强三维高斯参数。在多个基准数据集上的实验结果表明，与现有方法相比，在多项评估指标上表现更好，验证了我们框架的有效性。代码将公开。 
+
+---
+# Vision-Language Model for Object Detection and Segmentation: A Review and Evaluation 
+
+**Title (ZH)**: 视觉-语言模型在物体检测与分割中的应用：综述与评估 
+
+**Authors**: Yongchao Feng, Yajie Liu, Shuai Yang, Wenrui Cai, Jinqing Zhang, Qiqi Zhan, Ziyue Huang, Hongxi Yan, Qiao Wan, Chenguang Liu, Junzhe Wang, Jiahui Lv, Ziqi Liu, Tengyuan Shi, Qingjie Liu, Yunhong Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.09480)  
+
+**Abstract**: Vision-Language Model (VLM) have gained widespread adoption in Open-Vocabulary (OV) object detection and segmentation tasks. Despite they have shown promise on OV-related tasks, their effectiveness in conventional vision tasks has thus far been unevaluated. In this work, we present the systematic review of VLM-based detection and segmentation, view VLM as the foundational model and conduct comprehensive evaluations across multiple downstream tasks for the first time: 1) The evaluation spans eight detection scenarios (closed-set detection, domain adaptation, crowded objects, etc.) and eight segmentation scenarios (few-shot, open-world, small object, etc.), revealing distinct performance advantages and limitations of various VLM architectures across tasks. 2) As for detection tasks, we evaluate VLMs under three finetuning granularities: \textit{zero prediction}, \textit{visual fine-tuning}, and \textit{text prompt}, and further analyze how different finetuning strategies impact performance under varied task. 3) Based on empirical findings, we provide in-depth analysis of the correlations between task characteristics, model architectures, and training methodologies, offering insights for future VLM design. 4) We believe that this work shall be valuable to the pattern recognition experts working in the fields of computer vision, multimodal learning, and vision foundation models by introducing them to the problem, and familiarizing them with the current status of the progress while providing promising directions for future research. A project associated with this review and evaluation has been created at this https URL. 
+
+**Abstract (ZH)**: 基于视觉-语言模型的检测与分割研究：多下游任务的系统评估 
+
+---
+# AerOSeg: Harnessing SAM for Open-Vocabulary Segmentation in Remote Sensing Images 
+
+**Title (ZH)**: AerOSeg：利用SAM进行遥感图像开放词汇分割 
+
+**Authors**: Saikat Dutta, Akhil Vasim, Siddhant Gole, Hamid Rezatofighi, Biplab Banerjee  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.09203)  
+
+**Abstract**: Image segmentation beyond predefined categories is a key challenge in remote sensing, where novel and unseen classes often emerge during inference. Open-vocabulary image Segmentation addresses these generalization issues in traditional supervised segmentation models while reducing reliance on extensive per-pixel annotations, which are both expensive and labor-intensive to obtain. Most Open-Vocabulary Segmentation (OVS) methods are designed for natural images but struggle with remote sensing data due to scale variations, orientation changes, and complex scene compositions. This necessitates the development of OVS approaches specifically tailored for remote sensing. In this context, we propose AerOSeg, a novel OVS approach for remote sensing data. First, we compute robust image-text correlation features using multiple rotated versions of the input image and domain-specific prompts. These features are then refined through spatial and class refinement blocks. Inspired by the success of the Segment Anything Model (SAM) in diverse domains, we leverage SAM features to guide the spatial refinement of correlation features. Additionally, we introduce a semantic back-projection module and loss to ensure the seamless propagation of SAM's semantic information throughout the segmentation pipeline. Finally, we enhance the refined correlation features using a multi-scale attention-aware decoder to produce the final segmentation map. We validate our SAM-guided Open-Vocabulary Remote Sensing Segmentation model on three benchmark remote sensing datasets: iSAID, DLRSD, and OpenEarthMap. Our model outperforms state-of-the-art open-vocabulary segmentation methods, achieving an average improvement of 2.54 h-mIoU. 
+
+**Abstract (ZH)**: 超越预定义类别的图像分割是遥感领域的一个关键挑战，其中在推理过程中往往会涌现出全新的非预见类。开放 Vocabulary 图像分割在传统监督分割模型中解决了这些泛化问题，并减少了对昂贵且劳动密集型的逐像素标注的依赖。大多数开放 Vocabulary 分割 (OVS) 方法适用于自然图像，但在处理由于缩放变化、方向变化和复杂场景组成的遥感数据时却表现不佳。这需要开发专门针对遥感数据的 OVS 方法。在此背景下，我们提出了一种名为 AerOSeg 的新颖 OVS 方法，用于遥感数据。首先，我们使用输入图像的多个旋转版本和领域特定提示计算稳健的图像-文本相关特征。这些特征随后通过空间和类细化模块进行优化。受到 Segment Anything 模型 (SAM) 在多种领域取得成功的影响，我们利用 SAM 特征来引导相关特征的空间细化。此外，我们引入了一个语义反投影模块及其损失，确保 SAM 语义信息在整个分割管道中的无缝传播。最后，我们利用多尺度注意力感知解码器增强细化后的相关特征，生成最终的分割图。我们在三个基准遥感数据集中验证了 SAM 引导下的开放 Vocabulary 遥感分割模型：iSAID、DLRSD 和 OpenEarthMap。我们的模型在所有基准数据集上均优于最先进的开放 Vocabulary 分割方法，平均 h-mIoU 提高了 2.54。 
+
+---
+# Chest X-ray Classification using Deep Convolution Models on Low-resolution images with Uncertain Labels 
+
+**Title (ZH)**: 基于低分辨率图像和不确定标签的深度卷积模型胸部X光分类 
+
+**Authors**: Snigdha Agarwal, Neelam Sinha  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.09033)  
+
+**Abstract**: Deep Convolutional Neural Networks have consistently proven to achieve state-of-the-art results on a lot of imaging tasks over the past years' majority of which comprise of high-quality data. However, it is important to work on low-resolution images since it could be a cheaper alternative for remote healthcare access where the primary need of automated pathology identification models occurs. Medical diagnosis using low-resolution images is challenging since critical details may not be easily identifiable. In this paper, we report classification results by experimenting on different input image sizes of Chest X-rays to deep CNN models and discuss the feasibility of classification on varying image sizes. We also leverage the noisy labels in the dataset by proposing a Randomized Flipping of labels techniques. We use an ensemble of multi-label classification models on frontal and lateral studies. Our models are trained on 5 out of the 14 chest pathologies of the publicly available CheXpert dataset. We incorporate techniques such as augmentation, regularization for model improvement and use class activation maps to visualize the neural network's decision making. Comparison with classification results on data from 200 subjects, obtained on the corresponding high-resolution images, reported in the original CheXpert paper, has been presented. For pathologies Cardiomegaly, Consolidation and Edema, we obtain 3% higher accuracy with our model architecture. 
+
+**Abstract (ZH)**: 深度卷积神经网络在胸部X光图像不同分辨率下的分类研究： noisy标签的随机翻转方法及模型性能比较 
+
+---
+# MotionDreamer: One-to-Many Motion Synthesis with Localized Generative Masked Transformer 
+
+**Title (ZH)**: MotionDreamer：基于局部生成遮蔽变压器的一对多运动合成 
+
+**Authors**: Yilin Wang, Chuan Guo, Yuxuan Mu, Muhammad Gohar Javed, Xinxin Zuo, Juwei Lu, Hai Jiang, Li Cheng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.08959)  
+
+**Abstract**: Generative masked transformers have demonstrated remarkable success across various content generation tasks, primarily due to their ability to effectively model large-scale dataset distributions with high consistency. However, in the animation domain, large datasets are not always available. Applying generative masked modeling to generate diverse instances from a single MoCap reference may lead to overfitting, a challenge that remains unexplored. In this work, we present MotionDreamer, a localized masked modeling paradigm designed to learn internal motion patterns from a given motion with arbitrary topology and duration. By embedding the given motion into quantized tokens with a novel distribution regularization method, MotionDreamer constructs a robust and informative codebook for local motion patterns. Moreover, a sliding window local attention is introduced in our masked transformer, enabling the generation of natural yet diverse animations that closely resemble the reference motion patterns. As demonstrated through comprehensive experiments, MotionDreamer outperforms the state-of-the-art methods that are typically GAN or Diffusion-based in both faithfulness and diversity. Thanks to the consistency and robustness of the quantization-based approach, MotionDreamer can also effectively perform downstream tasks such as temporal motion editing, \textcolor{update}{crowd animation}, and beat-aligned dance generation, all using a single reference motion. Visit our project page: this https URL 
+
+**Abstract (ZH)**: 生成式掩蔽transformer在各种内容生成任务中已经展示了显著的成功，主要归因于它们能够有效地建模大规模数据集分布且保持高度一致性。然而，在动画领域，大规模数据集并不总是可用的。将生成式掩蔽建模应用于从单个MoCap参考生成多样化实例可能会导致过拟合，这是一个尚未探索的挑战。在这项工作中，我们提出了MotionDreamer，这是一种局部掩蔽建模范式，设计用于从给定具有任意拓扑结构和持续时间的运动中学习内部运动模式。通过使用一种新颖的分布正则化方法将给定运动嵌入量化token中，MotionDreamer 构建了一个robust且信息丰富的代码本，用于局部运动模式。此外，我们引入了一种滑动窗口局部注意力机制，使掩蔽Transformer能够生成自然且多样化、与参考运动模式高度相似的动画。通过全面的实验表明，MotionDreamer在忠诚度和多样性方面都优于现有的基于GAN或扩散的方法。借助基于量化方法的一致性和稳健性，MotionDreamer还能够有效地执行诸如时间运动编辑、人群动画和节奏对齐的舞蹈生成等下游任务，所有这些都仅使用一个参考运动。访问我们的项目页面：this https URL。 
+
+---
+# Parameter-Free Fine-tuning via Redundancy Elimination for Vision Foundation Models 
+
+**Title (ZH)**: 基于冗余消除的参数-Free微调方法用于视觉基础模型 
+
+**Authors**: Jiahuan Long, Tingsong Jiang, Wen Yao, Yizhe Xiong, Zhengqin Xu, Shuai Jia, Chao Ma  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.08915)  
+
+**Abstract**: Vision foundation models (VFMs) are large pre-trained models that form the backbone of various vision tasks. Fine-tuning VFMs can further unlock their potential for downstream tasks or scenarios. However, VFMs often contain significant feature redundancy, which may limit their adaptability to new tasks. In this paper, we investigate the redundancies in the segment anything model (SAM) and then propose a parameter-free fine-tuning method to address this issue. Unlike traditional fine-tuning methods that adjust parameters, our method emphasizes selecting, reusing, and enhancing pre-trained features, offering a new perspective on model fine-tuning. Specifically, we introduce a channel selection algorithm based on the model's output difference to identify redundant and effective channels. By selectively replacing the redundant channels with more effective ones, we filter out less useful features and reuse the more relevant features to downstream tasks, thereby enhancing the task-specific feature representation. Experiments on both out-of-domain and in-domain datasets demonstrate the efficiency and effectiveness of our method. Notably, our approach can seamlessly integrate with existing fine-tuning strategies (e.g., LoRA, Adapter), further boosting the performance of already fine-tuned models. Moreover, since our channel selection involves only model inference, our method significantly reduces computational and GPU memory overhead. 
+
+**Abstract (ZH)**: Vision 基础模型中的冗余及其参数自由的微调方法 
+
+---
+# Robust SAM: On the Adversarial Robustness of Vision Foundation Models 
+
+**Title (ZH)**: 鲁棒SAM：视觉基础模型的对抗鲁棒性研究 
+
+**Authors**: Jiahuan Long, Zhengqin Xu, Tingsong Jiang, Wen Yao, Shuai Jia, Chao Ma, Xiaoqian Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.08906)  
+
+**Abstract**: The Segment Anything Model (SAM) is a widely used vision foundation model with diverse applications, including image segmentation, detection, and tracking. Given SAM's wide applications, understanding its robustness against adversarial attacks is crucial for real-world deployment. However, research on SAM's robustness is still in its early stages. Existing attacks often overlook the role of prompts in evaluating SAM's robustness, and there has been insufficient exploration of defense methods to balance the robustness and accuracy. To address these gaps, this paper proposes an adversarial robustness framework designed to evaluate and enhance the robustness of SAM. Specifically, we introduce a cross-prompt attack method to enhance the attack transferability across different prompt types. Besides attacking, we propose a few-parameter adaptation strategy to defend SAM against various adversarial attacks. To balance robustness and accuracy, we use the singular value decomposition (SVD) to constrain the space of trainable parameters, where only singular values are adaptable. Experiments demonstrate that our cross-prompt attack method outperforms previous approaches in terms of attack success rate on both SAM and SAM 2. By adapting only 512 parameters, we achieve at least a 15\% improvement in mean intersection over union (mIoU) against various adversarial attacks. Compared to previous defense methods, our approach enhances the robustness of SAM while maximally maintaining its original performance. 
+
+**Abstract (ZH)**: 段 Anything 模型（SAM）的对抗鲁棒性框架 
+
+---
+# Reward Generation via Large Vision-Language Model in Offline Reinforcement Learning 
+
+**Title (ZH)**: 基于离线强化学习的大规模视觉-语言模型奖励生成 
+
+**Authors**: Younghwan Lee, Tung M. Luu, Donghoon Lee, Chang D. Yoo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.08772)  
+
+**Abstract**: In offline reinforcement learning (RL), learning from fixed datasets presents a promising solution for domains where real-time interaction with the environment is expensive or risky. However, designing dense reward signals for offline dataset requires significant human effort and domain expertise. Reinforcement learning with human feedback (RLHF) has emerged as an alternative, but it remains costly due to the human-in-the-loop process, prompting interest in automated reward generation models. To address this, we propose Reward Generation via Large Vision-Language Models (RG-VLM), which leverages the reasoning capabilities of LVLMs to generate rewards from offline data without human involvement. RG-VLM improves generalization in long-horizon tasks and can be seamlessly integrated with the sparse reward signals to enhance task performance, demonstrating its potential as an auxiliary reward signal. 
+
+**Abstract (ZH)**: 基于大规模视觉语言模型的奖励生成（RG-VLM）： Offline强化学习中的奖励自动生成 
+
+---
+# Generate the browsing process for short-video recommendation 
+
+**Title (ZH)**: 生成短视频推荐的浏览过程 
+
+**Authors**: Chao Feng, Yanze Zhang, Chenghao Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.08771)  
+
+**Abstract**: This paper introduces a new model to generate the browsing process for short-video recommendation and proposes a novel Segment Content Aware Model via User Engagement Feedback (SCAM) for watch time prediction in video recommendation. Unlike existing methods that rely on multimodal features for video content understanding, SCAM implicitly models video content through users' historical watching behavior, enabling segment-level understanding without complex multimodal data. By dividing videos into segments based on duration and employing a Transformer-like architecture, SCAM captures the sequential dependence between segments while mitigating duration bias. Extensive experiments on industrial-scale and public datasets demonstrate SCAM's state-of-the-art performance in watch time prediction. The proposed approach offers a scalable and effective solution for video recommendation by leveraging segment-level modeling and users' engagement feedback. 
+
+**Abstract (ZH)**: 本文提出了一种新的模型来生成短视频推荐的浏览过程，并提出了一种基于用户参与反馈的分段内容感知模型（SCAM）以进行视频推荐中的观看时间预测。不同于现有方法依赖多模态特征来理解视频内容，SCAM 通过用户的 histórico 观看行为隐式建模视频内容，使得在无需复杂多模态数据的情况下实现分段级别的理解。通过基于时长将视频划分为段并采用类似于变换器的架构，SCAM 捕获了段之间的序列依赖关系并减轻了时长偏差。在大规模工业数据集和公开数据集上的广泛实验表明，SCAM 在观看时间预测方面达到了最先进的性能。所提出的方法通过利用分段级别建模和用户的参与反馈，提供了一种可扩展且有效的视频推荐解决方案。 
+
+---
