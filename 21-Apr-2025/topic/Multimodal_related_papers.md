@@ -1,0 +1,78 @@
+# Exploring Multimodal Prompt for Visualization Authoring with Large Language Models 
+
+**Title (ZH)**: 探索用于可视化作者生成的多模态提示方法 
+
+**Authors**: Zhen Wen, Luoxuan Weng, Yinghao Tang, Runjin Zhang, Yuxin Liu, Bo Pan, Minfeng Zhu, Wei Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.13700)  
+
+**Abstract**: Recent advances in large language models (LLMs) have shown great potential in automating the process of visualization authoring through simple natural language utterances. However, instructing LLMs using natural language is limited in precision and expressiveness for conveying visualization intent, leading to misinterpretation and time-consuming iterations. To address these limitations, we conduct an empirical study to understand how LLMs interpret ambiguous or incomplete text prompts in the context of visualization authoring, and the conditions making LLMs misinterpret user intent. Informed by the findings, we introduce visual prompts as a complementary input modality to text prompts, which help clarify user intent and improve LLMs' interpretation abilities. To explore the potential of multimodal prompting in visualization authoring, we design VisPilot, which enables users to easily create visualizations using multimodal prompts, including text, sketches, and direct manipulations on existing visualizations. Through two case studies and a controlled user study, we demonstrate that VisPilot provides a more intuitive way to create visualizations without affecting the overall task efficiency compared to text-only prompting approaches. Furthermore, we analyze the impact of text and visual prompts in different visualization tasks. Our findings highlight the importance of multimodal prompting in improving the usability of LLMs for visualization authoring. We discuss design implications for future visualization systems and provide insights into how multimodal prompts can enhance human-AI collaboration in creative visualization tasks. All materials are available at this https URL. 
+
+**Abstract (ZH)**: Recent advances in large language models (LLMs) have shown great potential in automating the process of visualization authoring through simple natural language utterances. However, instructing LLMs using natural language is limited in precision and expressiveness for conveying visualization intent, leading to misinterpretation and time-consuming iterations. To address these limitations, we conduct an empirical study to understand how LLMs interpret ambiguous or incomplete text prompts in the context of visualization authoring, and the conditions making LLMs misinterpret user intent. Informed by the findings, we introduce visual prompts as a complementary input modality to text prompts, which help clarify user intent and improve LLMs' interpretation abilities. To explore the potential of multimodal prompting in visualization authoring, we design VisPilot, which enables users to easily create visualizations using multimodal prompts, including text, sketches, and direct manipulations on existing visualizations. Through two case studies and a controlled user study, we demonstrate that VisPilot provides a more intuitive way to create visualizations without affecting the overall task efficiency compared to text-only prompting approaches. Furthermore, we analyze the impact of text and visual prompts in different visualization tasks. Our findings highlight the importance of multimodal prompting in improving the usability of LLMs for visualization authoring. We discuss design implications for future visualization systems and provide insights into how multimodal prompts can enhance human-AI collaboration in creative visualization tasks. All materials are available at this https URL. 
+
+---
+# Towards a Multi-Agent Vision-Language System for Zero-Shot Novel Hazardous Object Detection for Autonomous Driving Safety 
+
+**Title (ZH)**: 面向自动驾驶安全的零样本新型危险物体检测多Agent视觉-语言系统研究 
+
+**Authors**: Shashank Shriram, Srinivasa Perisetla, Aryan Keskar, Harsha Krishnaswamy, Tonko Emil Westerhof Bossen, Andreas Møgelmose, Ross Greer  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.13399)  
+
+**Abstract**: Detecting anomalous hazards in visual data, particularly in video streams, is a critical challenge in autonomous driving. Existing models often struggle with unpredictable, out-of-label hazards due to their reliance on predefined object categories. In this paper, we propose a multimodal approach that integrates vision-language reasoning with zero-shot object detection to improve hazard identification and explanation. Our pipeline consists of a Vision-Language Model (VLM), a Large Language Model (LLM), in order to detect hazardous objects within a traffic scene. We refine object detection by incorporating OpenAI's CLIP model to match predicted hazards with bounding box annotations, improving localization accuracy. To assess model performance, we create a ground truth dataset by denoising and extending the foundational COOOL (Challenge-of-Out-of-Label) anomaly detection benchmark dataset with complete natural language descriptions for hazard annotations. We define a means of hazard detection and labeling evaluation on the extended dataset using cosine similarity. This evaluation considers the semantic similarity between the predicted hazard description and the annotated ground truth for each video. Additionally, we release a set of tools for structuring and managing large-scale hazard detection datasets. Our findings highlight the strengths and limitations of current vision-language-based approaches, offering insights into future improvements in autonomous hazard detection systems. Our models, scripts, and data can be found at this https URL 
+
+**Abstract (ZH)**: 在视觉数据中，特别是在视频流中检测异常危险是一个关键挑战，尤其是在自动驾驶领域。现有模型往往难以应对预定义对象类别之外的不可预测危险。本文提出了一种多模态方法，将视觉语言推理与零样本对象检测相结合，以提高危险识别和解释能力。我们的管道包括一个视觉语言模型（VLM）和一个大型语言模型（LLM），用于检测交通场景中的危险对象。通过结合OpenAI的CLIP模型来匹配预测的危险与边界框注释，我们改进了定位准确性。为了评估模型性能，我们通过去噪并扩展COOOL（Challenge-of-Out-of-Label）异常检测基准数据集，在扩展的数据集上创建了一个包含完整自然语言描述的地面真实数据集。我们使用余弦相似度定义了一种危险检测和标注评估方法，该方法考虑了每个视频中预测的危险描述与标注的地面真实之间的语义相似性。此外，我们还提供了一组工具，用于结构化和管理大规模的危险检测数据集。我们的研究结果突显了当前视觉语言方法的优势和局限性，并为未来的自主危险检测系统改进提供了洞见。我们的模型、脚本和数据可在以下网址找到。 
+
+---
+# WildFireCan-MMD: A Multimodal dataset for Classification of User-generated Content During Wildfires in Canada 
+
+**Title (ZH)**: WildFireCan-MMD：加拿大 wildfire期间用户生成内容分类的多模态数据集 
+
+**Authors**: Braeden Sherritt, Isar Nejadgholi, Marzieh Amini  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.13231)  
+
+**Abstract**: Rapid information access is vital during wildfires, yet traditional data sources are slow and costly. Social media offers real-time updates, but extracting relevant insights remains a challenge. We present WildFireCan-MMD, a new multimodal dataset of X posts from recent Canadian wildfires, annotated across 13 key themes. Evaluating both Vision Language Models and custom-trained classifiers, we show that while zero-shot prompting offers quick deployment, even simple trained models outperform them when labelled data is available, by up to 23%. Our findings highlight the enduring importance of tailored datasets and task-specific training. Importantly, such datasets should be localized, as disaster response requirements vary across regions and contexts. 
+
+**Abstract (ZH)**: 快速信息获取对于野火期间至关重要，但传统数据源速度慢且成本高。社交媒体能够提供实时更新，但提取相关洞见仍然具有挑战性。我们呈现了WildFireCan-MMD，这是一个包含加拿大最近野火相关多模态数据集，涵盖了13个关键主题，并进行了标注。评估视觉语言模型和自定义训练的分类器后，我们发现即使在有标注数据时，简单的训练模型的表现也比零样本提示高出23%以上。我们的研究结果强调了定制化数据集和任务特定训练的持久重要性。重要的是，这样的数据集应该是本地化的，因为灾害响应要求在不同地区和背景下有所不同。 
+
+---
+# Harmony: A Unified Framework for Modality Incremental Learning 
+
+**Title (ZH)**: 和谐：一个统一的多模态增量学习框架 
+
+**Authors**: Yaguang Song, Xiaoshan Yang, Dongmei Jiang, Yaowei Wang, Changsheng Xu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.13218)  
+
+**Abstract**: Incremental learning aims to enable models to continuously acquire knowledge from evolving data streams while preserving previously learned capabilities. While current research predominantly focuses on unimodal incremental learning and multimodal incremental learning where the modalities are consistent, real-world scenarios often present data from entirely new modalities, posing additional challenges. This paper investigates the feasibility of developing a unified model capable of incremental learning across continuously evolving modal sequences. To this end, we introduce a novel paradigm called Modality Incremental Learning (MIL), where each learning stage involves data from distinct modalities. To address this task, we propose a novel framework named Harmony, designed to achieve modal alignment and knowledge retention, enabling the model to reduce the modal discrepancy and learn from a sequence of distinct modalities, ultimately completing tasks across multiple modalities within a unified framework. Our approach introduces the adaptive compatible feature modulation and cumulative modal bridging. Through constructing historical modal features and performing modal knowledge accumulation and alignment, the proposed components collaboratively bridge modal differences and maintain knowledge retention, even with solely unimodal data available at each learning this http URL components work in concert to establish effective modality connections and maintain knowledge retention, even when only unimodal data is available at each learning stage. Extensive experiments on the MIL task demonstrate that our proposed method significantly outperforms existing incremental learning methods, validating its effectiveness in MIL scenarios. 
+
+**Abstract (ZH)**: 增量学习旨在使模型能够从不断演变的数据流中持续获取知识，同时保留已学能力。当前研究主要集中在单一模态增量学习和模态一致的多模态增量学习上，而现实世界场景中经常出现全新的模态数据，带来了额外的挑战。本文探讨了开发能够在连续演变模态序列上实现增量学习的统一模型的可能性。为此，我们提出了一种新型范式称为模态增量学习（MIL），每个学习阶段涉及不同的模态数据。为了解决这一任务，我们提出了一种名为Harmony的新框架，旨在实现模态对齐和知识保留，从而使模型能够减少模态差异并从一系列不同的模态数据中学习，最终在一个统一框架中完成多模态任务。我们的方法引入了自适应兼容特征调制和累积模态连接。通过构建历史模态特征并进行模态知识积累和对齐，所提出组件协同作用以弥合模态差异并保持知识保留，即使在每个学习阶段仅有一模态数据可用的情况下也是如此。各组件在各学习阶段配合工作，以建立有效的模态连接并保持知识保留，即使仅在每个学习阶段有单一模态数据可用也能达到这一效果。在MIL任务上的广泛实验表明，我们提出的方法显著优于现有增量学习方法，验证了其在MIL场景中的有效性。 
+
+---
+# Mirror: Multimodal Cognitive Reframing Therapy for Rolling with Resistance 
+
+**Title (ZH)**: Mirror: 多模态认知重框疗法以柔克刚 
+
+**Authors**: Subin Kim, Hoonrae Kim, Jihyun Lee, Yejin Jeon, Gary Geunbae Lee  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.13211)  
+
+**Abstract**: Recent studies have explored the use of large language models (LLMs) in psychotherapy; however, text-based cognitive behavioral therapy (CBT) models often struggle with client resistance, which can weaken therapeutic alliance. To address this, we propose a multimodal approach that incorporates nonverbal cues, allowing the AI therapist to better align its responses with the client's negative emotional state. Specifically, we introduce a new synthetic dataset, Multimodal Interactive Rolling with Resistance (Mirror), which is a novel synthetic dataset that pairs client statements with corresponding facial images. Using this dataset, we train baseline Vision-Language Models (VLMs) that can analyze facial cues, infer emotions, and generate empathetic responses to effectively manage resistance. They are then evaluated in terms of both the therapist's counseling skills and the strength of the therapeutic alliance in the presence of client resistance. Our results demonstrate that Mirror significantly enhances the AI therapist's ability to handle resistance, which outperforms existing text-based CBT approaches. 
+
+**Abstract (ZH)**: Recent Studies on the Use of Large Language Models in Psychotherapy Have Explored Text-Based Cognitive Behavioral Therapy (CBT) Models, Which Often Struggle with Client Resistance; a Multimodal Approach Involving Nonverbal Cues Is Proposed to Better Align AI Therapist Responses with Client Negative Emotional States 
+
+---
+# Building Trustworthy Multimodal AI: A Review of Fairness, Transparency, and Ethics in Vision-Language Tasks 
+
+**Title (ZH)**: 构建可信赖的多模态AI：视觉-语言任务中公平性、透明度与伦理的综述 
+
+**Authors**: Mohammad Saleha, Azadeh Tabatabaeib  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.13199)  
+
+**Abstract**: Objective: This review explores the trustworthiness of multimodal artificial intelligence (AI) systems, specifically focusing on vision-language tasks. It addresses critical challenges related to fairness, transparency, and ethical implications in these systems, providing a comparative analysis of key tasks such as Visual Question Answering (VQA), image captioning, and visual dialogue. Background: Multimodal models, particularly vision-language models, enhance artificial intelligence (AI) capabilities by integrating visual and textual data, mimicking human learning processes. Despite significant advancements, the trustworthiness of these models remains a crucial concern, particularly as AI systems increasingly confront issues regarding fairness, transparency, and ethics. Methods: This review examines research conducted from 2017 to 2024 focusing on forenamed core vision-language tasks. It employs a comparative approach to analyze these tasks through the lens of trustworthiness, underlining fairness, explainability, and ethics. This study synthesizes findings from recent literature to identify trends, challenges, and state-of-the-art solutions. Results: Several key findings were highlighted. Transparency: Explainability of vision language tasks is important for user trust. Techniques, such as attention maps and gradient-based methods, have successfully addressed this issue. Fairness: Bias mitigation in VQA and visual dialogue systems is essential for ensuring unbiased outcomes across diverse demographic groups. Ethical Implications: Addressing biases in multilingual models and ensuring ethical data handling is critical for the responsible deployment of vision-language systems. Conclusion: This study underscores the importance of integrating fairness, transparency, and ethical considerations in developing vision-language models within a unified framework. 
+
+**Abstract (ZH)**: 探索多模态人工智能系统在视觉-语言任务中的可信度：公平性、透明度与伦理考量 
+
+---

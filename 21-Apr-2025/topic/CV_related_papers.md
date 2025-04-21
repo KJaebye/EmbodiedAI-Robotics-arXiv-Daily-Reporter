@@ -1,0 +1,208 @@
+# Learning Through Retrospection: Improving Trajectory Prediction for Automated Driving with Error Feedback 
+
+**Title (ZH)**: 基于反思学习：通过误差反馈提高自动驾驶轨迹预测 
+
+**Authors**: Steffen Hagedorn, Aron Distelzweig, Marcel Hallgarten, Alexandru P. Condurache  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.13785)  
+
+**Abstract**: In automated driving, predicting trajectories of surrounding vehicles supports reasoning about scene dynamics and enables safe planning for the ego vehicle. However, existing models handle predictions as an instantaneous task of forecasting future trajectories based on observed information. As time proceeds, the next prediction is made independently of the previous one, which means that the model cannot correct its errors during inference and will repeat them. To alleviate this problem and better leverage temporal data, we propose a novel retrospection technique. Through training on closed-loop rollouts the model learns to use aggregated feedback. Given new observations it reflects on previous predictions and analyzes its errors to improve the quality of subsequent predictions. Thus, the model can learn to correct systematic errors during inference. Comprehensive experiments on nuScenes and Argoverse demonstrate a considerable decrease in minimum Average Displacement Error of up to 31.9% compared to the state-of-the-art baseline without retrospection. We further showcase the robustness of our technique by demonstrating a better handling of out-of-distribution scenarios with undetected road-users. 
+
+**Abstract (ZH)**: 在自动驾驶中，预测周围车辆的轨迹有助于理解和推演场景动态，并支持ego车辆的安全规划。然而，现有模型将预测视为基于观测信息即时预测未来轨迹的任务。随着时间的推移，下一个预测与之前的预测独立进行，这意味着模型在推理过程中无法纠正错误并重复这些错误。为了缓解这一问题并更好地利用时间序列数据，我们提出了一种新的回溯技术。通过闭环回放训练，模型学会使用综合反馈。面对新的观测数据，它会反思以前的预测并分析错误以提高后续预测的质量。因此，模型可以学会在推理过程中纠正系统性错误。在nuScenes和Argoverse上的全面实验表明，与没有回溯的最先进的基线相比，平均位移误差的最小值降低了高达31.9%。我们还通过展示对未检测到的道路使用者的鲁棒处理能力，进一步证明了该技术的鲁棒性。 
+
+---
+# LMPOcc: 3D Semantic Occupancy Prediction Utilizing Long-Term Memory Prior from Historical Traversals 
+
+**Title (ZH)**: LMPOcc: 利用历史通行先验的长期记忆进行3D语义占用预测 
+
+**Authors**: Shanshuai Yuan, Julong Wei, Muer Tie, Xiangyun Ren, Zhongxue Gan, Wenchao Ding  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.13596)  
+
+**Abstract**: Vision-based 3D semantic occupancy prediction is critical for autonomous driving, enabling unified modeling of static infrastructure and dynamic agents. In practice, autonomous vehicles may repeatedly traverse identical geographic locations under varying environmental conditions, such as weather fluctuations and illumination changes. Existing methods in 3D occupancy prediction predominantly integrate adjacent temporal contexts. However, these works neglect to leverage perceptual information, which is acquired from historical traversals of identical geographic locations. In this paper, we propose Longterm Memory Prior Occupancy (LMPOcc), the first 3D occupancy prediction methodology that exploits long-term memory priors derived from historical traversal perceptual outputs. We introduce a plug-and-play architecture that integrates long-term memory priors to enhance local perception while simultaneously constructing global occupancy representations. To adaptively aggregate prior features and current features, we develop an efficient lightweight Current-Prior Fusion module. Moreover, we propose a model-agnostic prior format to ensure compatibility across diverse occupancy prediction baselines. LMPOcc achieves state-of-the-art performance validated on the Occ3D-nuScenes benchmark, especially on static semantic categories. Additionally, experimental results demonstrate LMPOcc's ability to construct global occupancy through multi-vehicle crowdsourcing. 
+
+**Abstract (ZH)**: 基于视觉的三维语义占用预测对于自动驾驶至关重要，能够实现静态基础设施和动态代理的统一建模。在实践中，自主车辆可能在不同环境条件下反复穿越相同的地理位置，例如天气变化和光照改变。现有的三维占用预测方法主要整合相邻的时空上下文。然而，这些方法忽略了利用从相同地理位置的历史穿越中获得的感觉信息。在本文中，我们提出了一种名为Longterm Memory Prior Occupancy (LMPOcc)的三维占用预测方法，这是首个利用历史穿越感觉输出中提取的长期记忆先验的三维占用预测方法。我们引入了一种即插即用架构，将长期记忆先验整合进来，增强局部感知的同时构建全局占用表示。为了适应性地聚合先验特征和当前特征，我们开发了一种高效的轻量级当前-先验融合模块。此外，我们提出了一个模型通用的先验格式，以确保与其他各种占用预测基线的兼容性。LMPOcc在Occ3D-nuScenes基准上实现了最先进的性能，特别是在静态语义类别方面。实验结果还展示了LMPOcc通过多车辆众包构建全局占用的能力。 
+
+---
+# BEV-GS: Feed-forward Gaussian Splatting in Bird's-Eye-View for Road Reconstruction 
+
+**Title (ZH)**: BEV-GS: 鸟瞰视角下的前馈高斯绘制方法用于道路重建 
+
+**Authors**: Wenhua Wu, Tong Zhao, Chensheng Peng, Lei Yang, Yintao Wei, Zhe Liu, Hesheng Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.13207)  
+
+**Abstract**: Road surface is the sole contact medium for wheels or robot feet. Reconstructing road surface is crucial for unmanned vehicles and mobile robots. Recent studies on Neural Radiance Fields (NeRF) and Gaussian Splatting (GS) have achieved remarkable results in scene reconstruction. However, they typically rely on multi-view image inputs and require prolonged optimization times. In this paper, we propose BEV-GS, a real-time single-frame road surface reconstruction method based on feed-forward Gaussian splatting. BEV-GS consists of a prediction module and a rendering module. The prediction module introduces separate geometry and texture networks following Bird's-Eye-View paradigm. Geometric and texture parameters are directly estimated from a single frame, avoiding per-scene optimization. In the rendering module, we utilize grid Gaussian for road surface representation and novel view synthesis, which better aligns with road surface characteristics. Our method achieves state-of-the-art performance on the real-world dataset RSRD. The road elevation error reduces to 1.73 cm, and the PSNR of novel view synthesis reaches 28.36 dB. The prediction and rendering FPS is 26, and 2061, respectively, enabling high-accuracy and real-time applications. The code will be available at: \href{this https URL}{\texttt{this https URL}} 
+
+**Abstract (ZH)**: 基于前向高斯散射的鸟瞰图单帧道路表面重建方法 
+
+---
+# Decoding Vision Transformers: the Diffusion Steering Lens 
+
+**Title (ZH)**: 解码视觉变换器：扩散导向透镜 
+
+**Authors**: Ryota Takatsuki, Sonia Joseph, Ippei Fujisawa, Ryota Kanai  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.13763)  
+
+**Abstract**: Logit Lens is a widely adopted method for mechanistic interpretability of transformer-based language models, enabling the analysis of how internal representations evolve across layers by projecting them into the output vocabulary space. Although applying Logit Lens to Vision Transformers (ViTs) is technically straightforward, its direct use faces limitations in capturing the richness of visual representations. Building on the work of Toker et al. (2024)~\cite{Toker2024-ve}, who introduced Diffusion Lens to visualize intermediate representations in the text encoders of text-to-image diffusion models, we demonstrate that while Diffusion Lens can effectively visualize residual stream representations in image encoders, it fails to capture the direct contributions of individual submodules. To overcome this limitation, we propose \textbf{Diffusion Steering Lens} (DSL), a novel, training-free approach that steers submodule outputs and patches subsequent indirect contributions. We validate our method through interventional studies, showing that DSL provides an intuitive and reliable interpretation of the internal processing in ViTs. 
+
+**Abstract (ZH)**: Diffusion Steering Lens: A Training-Free Method for Capturing Indirect Contributions in Vision Transformers 
+
+---
+# Towards Accurate and Interpretable Neuroblastoma Diagnosis via Contrastive Multi-scale Pathological Image Analysis 
+
+**Title (ZH)**: 通过对比多尺度病理图像分析实现准确可解释的神经母细胞瘤诊断 
+
+**Authors**: Zhu Zhu, Shuo Jiang, Jingyuan Zheng, Yawen Li, Yifei Chen, Manli Zhao, Weizhong Gu, Feiwei Qin, Jinhu Wang, Gang Yu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.13754)  
+
+**Abstract**: Neuroblastoma, adrenal-derived, is among the most common pediatric solid malignancies, characterized by significant clinical heterogeneity. Timely and accurate pathological diagnosis from hematoxylin and eosin-stained whole slide images is critical for patient prognosis. However, current diagnostic practices primarily rely on subjective manual examination by pathologists, leading to inconsistent accuracy. Existing automated whole slide image classification methods encounter challenges such as poor interpretability, limited feature extraction capabilities, and high computational costs, restricting their practical clinical deployment. To overcome these limitations, we propose CMSwinKAN, a contrastive-learning-based multi-scale feature fusion model tailored for pathological image classification, which enhances the Swin Transformer architecture by integrating a Kernel Activation Network within its multilayer perceptron and classification head modules, significantly improving both interpretability and accuracy. By fusing multi-scale features and leveraging contrastive learning strategies, CMSwinKAN mimics clinicians' comprehensive approach, effectively capturing global and local tissue characteristics. Additionally, we introduce a heuristic soft voting mechanism guided by clinical insights to seamlessly bridge patch-level predictions to whole slide image-level classifications. We validate CMSwinKAN on the PpNTs dataset, which was collaboratively established with our partner hospital and the publicly accessible BreakHis dataset. Results demonstrate that CMSwinKAN performs better than existing state-of-the-art pathology-specific models pre-trained on large datasets. Our source code is available at this https URL. 
+
+**Abstract (ZH)**: Neuroblastoma，源自肾上腺的儿童固体恶性肿瘤，具有显著的临床异质性。及时准确地对苏木精和伊红染色的全切片图像进行病理诊断对于患者的预后至关重要。然而，当前的诊断方法主要依赖病理学家的主观手工检查，导致诊断准确性不一致。现有的自动化全切片图像分类方法面临可解释性差、特征提取能力有限和计算成本高等挑战，限制了其在临床实践中的应用。为克服这些限制，我们提出了一种基于对比学习的多尺度特征融合模型CMSwinKAN，该模型通过在其多层感知机和分类头模块中整合核激活网络，增强了Swin Transformer架构，显著提高了可解释性和准确性。通过融合多尺度特征并利用对比学习策略，CMSwinKAN模仿了临床医生的综合诊断方法，有效捕捉全局和局部组织特征。此外，我们引入了一种基于临床洞察的启发式软投票机制，使其能够从切片级预测平滑过渡到全切片图像级分类。我们在与我们合作伙伴医院共同建立的PpNTs数据集和公开可访问的BreakHis数据集上验证了CMSwinKAN。结果显示，CMSwinKAN在大型数据集上预训练的具体病理学模型中表现更优。我们的源代码可在以下链接获取。 
+
+---
+# ESPLoRA: Enhanced Spatial Precision with Low-Rank Adaption in Text-to-Image Diffusion Models for High-Definition Synthesis 
+
+**Title (ZH)**: ESPLoRA: 基于低秩适应增强空间精度的文本到图像扩散模型在高定义合成中的应用 
+
+**Authors**: Andrea Rigo, Luca Stornaiuolo, Mauro Martino, Bruno Lepri, Nicu Sebe  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.13745)  
+
+**Abstract**: Diffusion models have revolutionized text-to-image (T2I) synthesis, producing high-quality, photorealistic images. However, they still struggle to properly render the spatial relationships described in text prompts. To address the lack of spatial information in T2I generations, existing methods typically use external network conditioning and predefined layouts, resulting in higher computational costs and reduced flexibility. Our approach builds upon a curated dataset of spatially explicit prompts, meticulously extracted and synthesized from LAION-400M to ensure precise alignment between textual descriptions and spatial layouts. Alongside this dataset, we present ESPLoRA, a flexible fine-tuning framework based on Low-Rank Adaptation, specifically designed to enhance spatial consistency in generative models without increasing generation time or compromising the quality of the outputs. In addition to ESPLoRA, we propose refined evaluation metrics grounded in geometric constraints, capturing 3D spatial relations such as \textit{in front of} or \textit{behind}. These metrics also expose spatial biases in T2I models which, even when not fully mitigated, can be strategically exploited by our TORE algorithm to further improve the spatial consistency of generated images. Our method outperforms the current state-of-the-art framework, CoMPaSS, by 13.33% on established spatial consistency benchmarks. 
+
+**Abstract (ZH)**: 扩散模型已经革新了文本到图像（T2I）生成，产生了高质量、逼真的图像。然而，它们仍然难以正确渲染文本提示中描述的空间关系。为了弥补T2I生成中的空间信息不足，现有方法通常使用外部网络条件和预定义布局，导致计算成本增加和灵活性降低。我们的方法基于一个精心策划的空间明确提示数据集，该数据集从LAION-400M中仔细提取和合成，以确保文本描述与空间布局之间精确对齐。除了这个数据集，我们还提出了基于低秩适应的灵活微调框架ESPLoRA，专门设计用于在不增加生成时间和不牺牲输出质量的情况下增强生成模型的空间一致性。除了ESPLoRA，我们还提出了基于几何约束的细化评估指标，捕捉如“在前面”或“在后面”等三维空间关系。这些指标还揭示了T2I模型中的空间偏见，即使这些偏见未完全消除，我们的TORE算法也可以战略性地利用它们进一步提高生成图像的空间一致性。我们的方法在现有的基准测试中表现优于最先进的框架CoMPaSS，提高了13.33%的空间一致性。 
+
+---
+# AnyTSR: Any-Scale Thermal Super-Resolution for UAV 
+
+**Title (ZH)**: AnyTSR: 任意尺度热超分辨率处理方法在无人机中的应用 
+
+**Authors**: Mengyuan Li, Changhong Fu, Ziyu Lu, Zijie Zhang, Haobo Zuo, Liangliang Yao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.13682)  
+
+**Abstract**: Thermal imaging can greatly enhance the application of intelligent unmanned aerial vehicles (UAV) in challenging environments. However, the inherent low resolution of thermal sensors leads to insufficient details and blurred boundaries. Super-resolution (SR) offers a promising solution to address this issue, while most existing SR methods are designed for fixed-scale SR. They are computationally expensive and inflexible in practical applications. To address above issues, this work proposes a novel any-scale thermal SR method (AnyTSR) for UAV within a single model. Specifically, a new image encoder is proposed to explicitly assign specific feature code to enable more accurate and flexible representation. Additionally, by effectively embedding coordinate offset information into the local feature ensemble, an innovative any-scale upsampler is proposed to better understand spatial relationships and reduce artifacts. Moreover, a novel dataset (UAV-TSR), covering both land and water scenes, is constructed for thermal SR tasks. Experimental results demonstrate that the proposed method consistently outperforms state-of-the-art methods across all scaling factors as well as generates more accurate and detailed high-resolution images. The code is located at this https URL. 
+
+**Abstract (ZH)**: 热成像技术可以显著增强智能无人机（UAV）在复杂环境中的应用。然而，热传感器固有的低分辨率导致细节不足和边界模糊。超分辨率（SR）提供了一种有希望的解决方案，但大多数现有SR方法主要用于固定尺度的SR。它们在实际应用中计算成本高且不够灵活。为解决上述问题，本工作提出了一种新颖的单模型任意尺度热SR方法（AnyTSR）。具体而言，提出了一种新的图像编码器，以明确分配特征码，从而实现更准确和灵活的表示。此外，通过有效嵌入坐标偏移信息到局部特征集合中，提出了一种创新的任意尺度上采样器，以更好地理解空间关系并减少伪影。此外，还构建了一个新的数据集（UAV-TSR），涵盖了陆地和水域场景，用于热SR任务。实验结果表明，所提出的方法在所有放大因子下均优于现有最佳方法，并生成了更准确和详细的高分辨率图像。代码位于此网址。 
+
+---
+# FocusNet: Transformer-enhanced Polyp Segmentation with Local and Pooling Attention 
+
+**Title (ZH)**: FocusNet：transformer增强的息肉分割方法及其局部和聚类注意力机制 
+
+**Authors**: Jun Zeng, KC Santosh, Deepak Rajan Nayak, Thomas de Lange, Jonas Varkey, Tyler Berzin, Debesh Jha  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.13597)  
+
+**Abstract**: Colonoscopy is vital in the early diagnosis of colorectal polyps. Regular screenings can effectively prevent benign polyps from progressing to CRC. While deep learning has made impressive strides in polyp segmentation, most existing models are trained on single-modality and single-center data, making them less effective in real-world clinical environments. To overcome these limitations, we propose FocusNet, a Transformer-enhanced focus attention network designed to improve polyp segmentation. FocusNet incorporates three essential modules: the Cross-semantic Interaction Decoder Module (CIDM) for generating coarse segmentation maps, the Detail Enhancement Module (DEM) for refining shallow features, and the Focus Attention Module (FAM), to balance local detail and global context through local and pooling attention mechanisms. We evaluate our model on PolypDB, a newly introduced dataset with multi-modality and multi-center data for building more reliable segmentation methods. Extensive experiments showed that FocusNet consistently outperforms existing state-of-the-art approaches with a high dice coefficients of 82.47% on the BLI modality, 88.46% on FICE, 92.04% on LCI, 82.09% on the NBI and 93.42% on WLI modality, demonstrating its accuracy and robustness across five different modalities. The source code for FocusNet is available at this https URL. 
+
+**Abstract (ZH)**: 结肠镜检查对于早期诊断结肠息肉至关重要。常规筛查可以有效预防良性息肉进展为CRC。尽管深度学习在息肉分割方面取得了显著进展，但大多数现有的模型都是基于单模态和单中心数据训练的，这使得它们在真实的临床环境中效果较差。为克服这些局限性，我们提出了一种FocusNet，这是一种增强注意力机制的Transformer网络，旨在改进息肉分割。FocusNet集成了三个关键模块：跨语义交互解码器模块（CIDM）用于生成粗略分割图，细节增强模块（DEM）用于细化浅层特征，以及重点注意力模块（FAM），通过局部和池化注意力机制来平衡局部细节和全局上下文。我们使用一个包含多模态和多中心数据的PolypDB新数据集评估了我们的模型，广泛实验表明FocusNet在不同的模态下（BLI、FICE、LCI、NBI和WLI）均表现出色，分别取得了高Dice系数82.47%、88.46%、92.04%、82.09%和93.42%，证明了其在五个不同模态下的准确性和鲁棒性。FocusNet的源代码可在以下链接获取。 
+
+---
+# HAECcity: Open-Vocabulary Scene Understanding of City-Scale Point Clouds with Superpoint Graph Clustering 
+
+**Title (ZH)**: HAECcity：基于超级点图聚类的大规模城市点云开放词汇场景理解 
+
+**Authors**: Alexander Rusnak, Frédéric Kaplan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.13590)  
+
+**Abstract**: Traditional 3D scene understanding techniques are generally predicated on hand-annotated label sets, but in recent years a new class of open-vocabulary 3D scene understanding techniques has emerged. Despite the success of this paradigm on small scenes, existing approaches cannot scale efficiently to city-scale 3D datasets. In this paper, we present Hierarchical vocab-Agnostic Expert Clustering (HAEC), after the latin word for 'these', a superpoint graph clustering based approach which utilizes a novel mixture of experts graph transformer for its backbone. We administer this highly scalable approach to the first application of open-vocabulary scene understanding on the SensatUrban city-scale dataset. We also demonstrate a synthetic labeling pipeline which is derived entirely from the raw point clouds with no hand-annotation. Our technique can help unlock complex operations on dense urban 3D scenes and open a new path forward in the processing of digital twins. 
+
+**Abstract (ZH)**: 传统三维场景理解技术通常依赖于人工标注的标签集，但近年来出现了一类新的开域词汇三维场景理解技术。尽管这种范式在小场景上取得了一定的成功，现有方法无法高效地扩展到城市规模的三维数据集。在本文中，我们提出了一种基于超点图聚类的多层次词汇无关专家聚类（HAEC）方法，该方法以拉丁文“these”为名，利用一种新颖的专家图变换器作为其骨干。我们将这种高度可扩展的方法应用于SensatUrban城市规模数据集的首次开域词汇场景理解应用中。我们还展示了一个完全从原始点云中推导出来的合成标注流程，无需人工标注。我们的技术有助于解锁对密集城市三维场景的复杂操作，并为数字孪生的处理开辟了一条新的路径。 
+
+---
+# Zero-Shot Industrial Anomaly Segmentation with Image-Aware Prompt Generation 
+
+**Title (ZH)**: 零shot工业异常分割：基于图像意识的提示生成 
+
+**Authors**: SoYoung Park, Hyewon Lee, Mingyu Choi, Seunghoon Han, Jong-Ryul Lee, Sungsu Lim, Tae-Ho Kim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.13560)  
+
+**Abstract**: Anomaly segmentation is essential for industrial quality, maintenance, and stability. Existing text-guided zero-shot anomaly segmentation models are effective but rely on fixed prompts, limiting adaptability in diverse industrial scenarios. This highlights the need for flexible, context-aware prompting strategies. We propose Image-Aware Prompt Anomaly Segmentation (IAP-AS), which enhances anomaly segmentation by generating dynamic, context-aware prompts using an image tagging model and a large language model (LLM). IAP-AS extracts object attributes from images to generate context-aware prompts, improving adaptability and generalization in dynamic and unstructured industrial environments. In our experiments, IAP-AS improves the F1-max metric by up to 10%, demonstrating superior adaptability and generalization. It provides a scalable solution for anomaly segmentation across industries 
+
+**Abstract (ZH)**: 工业质量、维护和稳定性需要异常分割。现有的文本引导零样本异常分割模型效果显著，但依赖固定提示，限制了在多种工业场景中的适应性。这强调了需要灵活且上下文感知的提示策略。我们提出图像感知提示异常分割（IAP-AS），该方法通过使用图像标签模型和大语言模型（LLM）生成动态的、上下文感知的提示来增强异常分割。IAP-AS 从图像中提取对象属性以生成上下文感知的提示，提高在动态和无结构工业环境中的适应性和通用性。我们的实验结果显示，IAP-AS 可将 F1-max 指标提高多达 10%，证明了其优越的适应性和通用性。它为跨行业的异常分割提供了一个可扩展的解决方案。 
+
+---
+# DADU: Dual Attention-based Deep Supervised UNet for Automated Semantic Segmentation of Cardiac Images 
+
+**Title (ZH)**: DADU: 基于双注意力的深监督UNet在心脏图像语义分割中的应用 
+
+**Authors**: Racheal Mukisa, Arvind K. Bansal  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.13415)  
+
+**Abstract**: We propose an enhanced deep learning-based model for image segmentation of the left and right ventricles and myocardium scar tissue from cardiac magnetic resonance (CMR) images. The proposed technique integrates UNet, channel and spatial attention, edge-detection based skip-connection and deep supervised learning to improve the accuracy of the CMR image-segmentation. Images are processed using multiple channels to generate multiple feature-maps. We built a dual attention-based model to integrate channel and spatial attention. The use of extracted edges in skip connection improves the reconstructed images from feature-maps. The use of deep supervision reduces vanishing gradient problems inherent in classification based on deep neural networks. The algorithms for dual attention-based model, corresponding implementation and performance results are described. The performance results show that this approach has attained high accuracy: 98% Dice Similarity Score (DSC) and significantly lower Hausdorff Distance (HD). The performance results outperform other leading techniques both in DSC and HD. 
+
+**Abstract (ZH)**: 基于增强深度学习的左右心室及心肌疤痕组织 cardiac magnetic resonance 图像分割模型 
+
+---
+# Cardiac MRI Semantic Segmentation for Ventricles and Myocardium using Deep Learning 
+
+**Title (ZH)**: 基于深度学习的心脏MRI心室和心肌组织分割 
+
+**Authors**: Racheal Mukisa, Arvind K. Bansal  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.13391)  
+
+**Abstract**: Automated noninvasive cardiac diagnosis plays a critical role in the early detection of cardiac disorders and cost-effective clinical management. Automated diagnosis involves the automated segmentation and analysis of cardiac images. Precise delineation of cardiac substructures and extraction of their morphological attributes are essential for evaluating the cardiac function, and diagnosing cardiovascular disease such as cardiomyopathy, valvular diseases, abnormalities related to septum perforations, and blood-flow rate. Semantic segmentation labels the CMR image at the pixel level, and localizes its subcomponents to facilitate the detection of abnormalities, including abnormalities in cardiac wall motion in an aging heart with muscle abnormalities, vascular abnormalities, and valvular abnormalities. In this paper, we describe a model to improve semantic segmentation of CMR images. The model extracts edge-attributes and context information during down-sampling of the U-Net and infuses this information during up-sampling to localize three major cardiac structures: left ventricle cavity (LV); right ventricle cavity (RV); and LV myocardium (LMyo). We present an algorithm and performance results. A comparison of our model with previous leading models, using similarity metrics between actual image and segmented image, shows that our approach improves Dice similarity coefficient (DSC) by 2%-11% and lowers Hausdorff distance (HD) by 1.6 to 5.7 mm. 
+
+**Abstract (ZH)**: 自动化无创心脏诊断在早期发现心脏疾病和成本有效的临床管理中发挥着关键作用。该论文描述了一种提高CMR图像语义分割的模型。该模型在U-Net下采样过程中提取边缘属性和上下文信息，并在上采样过程中注入这些信息以定位左心室腔（LV）、右心室腔（RV）和左心室心肌（LMyo）三大心脏结构。我们提供了一种算法及性能结果。与以前的领先模型相比，使用实际图像和分割图像之间的相似性指标比较显示，我们的方法提高了Dice相似系数（DSC）2%-11%，降低了Hausdorff距离（HD）1.6到5.7毫米。 
+
+---
+# Putting the Segment Anything Model to the Test with 3D Knee MRI -- A Comparison with State-of-the-Art Performance 
+
+**Title (ZH)**: 用3D膝关节MRI检验Segment Anything模型——与现有最佳性能的比较 
+
+**Authors**: Oliver Mills, Philip Conaghan, Nishant Ravikumar, Samuel Relton  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.13340)  
+
+**Abstract**: Menisci are cartilaginous tissue found within the knee that contribute to joint lubrication and weight dispersal. Damage to menisci can lead to onset and progression of knee osteoarthritis (OA), a condition that is a leading cause of disability, and for which there are few effective therapies. Accurate automated segmentation of menisci would allow for earlier detection and treatment of meniscal abnormalities, as well as shedding more light on the role the menisci play in OA pathogenesis. Focus in this area has mainly used variants of convolutional networks, but there has been no attempt to utilise recent large vision transformer segmentation models. The Segment Anything Model (SAM) is a so-called foundation segmentation model, which has been found useful across a range of different tasks due to the large volume of data used for training the model. In this study, SAM was adapted to perform fully-automated segmentation of menisci from 3D knee magnetic resonance images. A 3D U-Net was also trained as a baseline. It was found that, when fine-tuning only the decoder, SAM was unable to compete with 3D U-Net, achieving a Dice score of $0.81\pm0.03$, compared to $0.87\pm0.03$, on a held-out test set. When fine-tuning SAM end-to-end, a Dice score of $0.87\pm0.03$ was achieved. The performance of both the end-to-end trained SAM configuration and the 3D U-Net were comparable to the winning Dice score ($0.88\pm0.03$) in the IWOAI Knee MRI Segmentation Challenge 2019. Performance in terms of the Hausdorff Distance showed that both configurations of SAM were inferior to 3D U-Net in matching the meniscus morphology. Results demonstrated that, despite its generalisability, SAM was unable to outperform a basic 3D U-Net in meniscus segmentation, and may not be suitable for similar 3D medical image segmentation tasks also involving fine anatomical structures with low contrast and poorly-defined boundaries. 
+
+**Abstract (ZH)**: 半月板是存在于膝关节内的软骨组织，对关节润滑和重量分散有贡献。半月板损伤可能导致骨关节炎（OA）的发生和发展，而OA是导致残疾的主要原因之一，治疗选择有限。准确的自动化半月板分割能够实现早期检测和治疗半月板异常，同时有助于更深入地了解半月板在OA发病机制中的作用。目前该领域的研究主要使用卷积网络的变种，但尚未尝试利用大规模视觉Transformer分割模型。Segment Anything Model (SAM) 是一种所谓的基础分割模型，由于其训练数据量大，已被发现适用于多种不同的任务。在本研究中，SAM 被适应用于从3D膝关节磁共振成像中自动分割半月板。还训练了一个3D U-Net作为基准模型。研究发现，仅微调SAM解码器时，其Dice分数为$0.81\pm0.03$，低于3D U-Net的$0.87\pm0.03$。完全微调SAM时，其Dice分数达到$0.87\pm0.03$。端到端训练的SAM配置和3D U-Net的表现与2019年IWOAI膝关节MRI分割挑战赛的获胜Dice分数($0.88\pm0.03$)相当。根据Hausdorff距离衡量的性能表明，两种SAM配置均不如3D U-Net在匹配半月板形态方面表现优异。结果表明，尽管具有普适性，SAM无法在半月板分割中优于基本的3D U-Net，可能不适合涉及细小解剖结构、对比度低和边界定义差的3D医学图像分割任务。 
+
+---
+# SAR Object Detection with Self-Supervised Pretraining and Curriculum-Aware Sampling 
+
+**Title (ZH)**: 基于自监督预训练和课程意识采样的SAR目标检测 
+
+**Authors**: Yasin Almalioglu, Andrzej Kucik, Geoffrey French, Dafni Antotsiou, Alexander Adam, Cedric Archambeau  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.13310)  
+
+**Abstract**: Object detection in satellite-borne Synthetic Aperture Radar (SAR) imagery holds immense potential in tasks such as urban monitoring and disaster response. However, the inherent complexities of SAR data and the scarcity of annotations present significant challenges in the advancement of object detection in this domain. Notably, the detection of small objects in satellite-borne SAR images poses a particularly intricate problem, because of the technology's relatively low spatial resolution and inherent noise. Furthermore, the lack of large labelled SAR datasets hinders the development of supervised deep learning-based object detection models. In this paper, we introduce TRANSAR, a novel self-supervised end-to-end vision transformer-based SAR object detection model that incorporates masked image pre-training on an unlabeled SAR image dataset that spans more than $25,700$ km\textsuperscript{2} ground area. Unlike traditional object detection formulation, our approach capitalises on auxiliary binary semantic segmentation, designed to segregate objects of interest during the post-tuning, especially the smaller ones, from the background. In addition, to address the innate class imbalance due to the disproportion of the object to the image size, we introduce an adaptive sampling scheduler that dynamically adjusts the target class distribution during training based on curriculum learning and model feedback. This approach allows us to outperform conventional supervised architecture such as DeepLabv3 or UNet, and state-of-the-art self-supervised learning-based arhitectures such as DPT, SegFormer or UperNet, as shown by extensive evaluations on benchmark SAR datasets. 
+
+**Abstract (ZH)**: 卫星搭载合成孔径雷达（SAR）图像中的目标检测在城市监控和灾害响应任务中具有巨大的潜力。然而，SAR数据的固有复杂性和标注数据的稀缺性为该领域的目标检测进步带来了重大挑战。值得注意的是，由于技术的相对低空间分辨率和固有的噪声，小目标在卫星搭载SAR图像中的检测尤为复杂。此外，缺乏大型标注SAR数据集阻碍了基于监督深度学习的目标检测模型的发展。在本文中，我们提出了一种名为TRANSAR的新型自监督端到端视觉变压器SAR目标检测模型，该模型在超过25700平方公里地表区域的未标注SAR图像数据集上进行了掩码图像预训练。与传统的对象检测框架不同，我们的方法利用辅助二元语义分割，在调整过程中特别有助于分离感兴趣的对象（尤其是较小的对象）与背景。此外，为了应对对象与图像比例失衡导致的固有类别不平衡，我们引入了一种自适应采样调度器，在训练过程中根据课程学习和模型反馈动态调整目标类分布。该方法在基准SAR数据集上广泛评估中表现出色，优于传统的监督架构如DeepLabv3或UNet，以及最先进的自监督学习架构如DPT、SegFormer或UperNet。 
+
+---
+# Intelligent road crack detection and analysis based on improved YOLOv8 
+
+**Title (ZH)**: 基于改进YOLOv8的智能道路裂缝检测与分析 
+
+**Authors**: Haomin Zuo, Zhengyang Li, Jiangchuan Gong, Zhen Tian  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.13208)  
+
+**Abstract**: As urbanization speeds up and traffic flow increases, the issue of pavement distress is becoming increasingly pronounced, posing a severe threat to road safety and service life. Traditional methods of pothole detection rely on manual inspection, which is not only inefficient but also costly. This paper proposes an intelligent road crack detection and analysis system, based on the enhanced YOLOv8 deep learning framework. A target segmentation model has been developed through the training of 4029 images, capable of efficiently and accurately recognizing and segmenting crack regions in roads. The model also analyzes the segmented regions to precisely calculate the maximum and minimum widths of cracks and their exact locations. Experimental results indicate that the incorporation of ECA and CBAM attention mechanisms substantially enhances the model's detection accuracy and efficiency, offering a novel solution for road maintenance and safety monitoring. 
+
+**Abstract (ZH)**: 随着城市化进程加快和车流量增加，道路病害问题日益突出，对道路安全和使用寿命构成严重威胁。传统的坑槽检测方法依赖于人工检查，不仅效率低下，成本也高。本文提出了一种基于增强YOLOv8深度学习框架的智能道路裂缝检测与分析系统。通过训练4029张图像开发了目标分割模型，能够高效准确地识别和分割道路裂缝区域。该模型还对分割区域进行分析，精确计算裂缝的最大和最小宽度及其准确位置。实验结果表明，引入ECA和CBAM注意力机制显著提升了模型的检测准确性和效率，为道路维护和安全监控提供了新的解决方案。 
+
+---
+# Efficient Brain Tumor Segmentation Using a Dual-Decoder 3D U-Net with Attention Gates (DDUNet) 
+
+**Title (ZH)**: 使用注意力门双解码器3D U-Net的高效脑肿瘤分割 
+
+**Authors**: Mohammad Mahdi Danesh Pajouh  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.13200)  
+
+**Abstract**: Cancer remains one of the leading causes of mortality worldwide, and among its many forms, brain tumors are particularly notorious due to their aggressive nature and the critical challenges involved in early diagnosis. Recent advances in artificial intelligence have shown great promise in assisting medical professionals with precise tumor segmentation, a key step in timely diagnosis and treatment planning. However, many state-of-the-art segmentation methods require extensive computational resources and prolonged training times, limiting their practical application in resource-constrained settings. In this work, we present a novel dual-decoder U-Net architecture enhanced with attention-gated skip connections, designed specifically for brain tumor segmentation from MRI scans. Our approach balances efficiency and accuracy by achieving competitive segmentation performance while significantly reducing training demands. Evaluated on the BraTS 2020 dataset, the proposed model achieved Dice scores of 85.06% for Whole Tumor (WT), 80.61% for Tumor Core (TC), and 71.26% for Enhancing Tumor (ET) in only 50 epochs, surpassing several commonly used U-Net variants. Our model demonstrates that high-quality brain tumor segmentation is attainable even under limited computational resources, thereby offering a viable solution for researchers and clinicians operating with modest hardware. This resource-efficient model has the potential to improve early detection and diagnosis of brain tumors, ultimately contributing to better patient outcomes 
+
+**Abstract (ZH)**: 癌症仍然是全球主要的死亡原因，而其中的脑肿瘤因其侵袭性以及早期诊断的严峻挑战而尤为 infamous。最近的人工智能进展显示出在协助医疗专业人员进行精确肿瘤分割方面的巨大潜力，这是及时诊断和治疗计划的关键步骤。然而，许多最先进的分割方法需要大量的计算资源和较长的训练时间，限制了它们在资源受限环境中的实际应用。在本文中，我们提出了一种新型的双解码器U-Net架构，并结合了注意力门控跳连，专门用于从MRI扫描中进行脑肿瘤分割。我们的方法通过在显著降低训练需求的同时实现竞争性的分割性能来平衡效率和准确性。在BraTS 2020数据集上评估，提出的模型在50个 epoch 的训练下，取得了 Whole Tumor (WT) 的 Dice 分数为 85.06%、Tumor Core (TC) 的 Dice 分数为 80.61% 和 Enhancing Tumor (ET) 的 Dice 分数为 71.26%，超过了多种常用的U-Net变体。我们的模型表明，即使在有限的计算资源下，高质量的脑肿瘤分割也是可行的，从而为硬件资源有限的研究人员和临床医生提供了可行的解决方案。这种资源高效的模型有可能提高脑肿瘤的早期检测和诊断，最终有助于改善患者的预后。 
+
+---
