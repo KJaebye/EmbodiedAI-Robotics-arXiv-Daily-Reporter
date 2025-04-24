@@ -1,0 +1,195 @@
+# Latent Diffusion Planning for Imitation Learning 
+
+**Title (ZH)**: 潜在扩散规划用于模仿学习 
+
+**Authors**: Amber Xie, Oleh Rybkin, Dorsa Sadigh, Chelsea Finn  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.16925)  
+
+**Abstract**: Recent progress in imitation learning has been enabled by policy architectures that scale to complex visuomotor tasks, multimodal distributions, and large datasets. However, these methods often rely on learning from large amount of expert demonstrations. To address these shortcomings, we propose Latent Diffusion Planning (LDP), a modular approach consisting of a planner which can leverage action-free demonstrations, and an inverse dynamics model which can leverage suboptimal data, that both operate over a learned latent space. First, we learn a compact latent space through a variational autoencoder, enabling effective forecasting of future states in image-based domains. Then, we train a planner and an inverse dynamics model with diffusion objectives. By separating planning from action prediction, LDP can benefit from the denser supervision signals of suboptimal and action-free data. On simulated visual robotic manipulation tasks, LDP outperforms state-of-the-art imitation learning approaches, as they cannot leverage such additional data. 
+
+**Abstract (ZH)**: 近期imitation learning的进步得益于能够处理复杂视觉运动任务、多模态分布和大数据集的策略架构。然而，这些方法往往依赖于从大量专家演示中学习。为此，我们提出了潜在扩散规划（LDP），这是一种模块化的方法，包括一个可以利用无需动作演示的规划器，以及一个可以利用亚最优数据的动力学逆模型，两者都操作在一个学习到的潜在空间中。首先，我们通过变分自编码器学习一个紧凑的潜在空间，使基于图像的领域能够有效预测未来状态。然后，我们用扩散目标训练规划器和动力学逆模型。通过将规划与动作预测分离，LDP可以从亚最优和无需动作的数据中获得更密集的监督信号。在模拟视觉机器人操作任务中，LDP优于当前最先进的imitation learning方法，因为它们无法利用此类额外数据。 
+
+---
+# Meta-Learning Online Dynamics Model Adaptation in Off-Road Autonomous Driving 
+
+**Title (ZH)**: 离路自动驾驶中元学习在线动力模型适应 
+
+**Authors**: Jacob Levy, Jason Gibson, Bogdan Vlahov, Erica Tevere, Evangelos Theodorou, David Fridovich-Keil, Patrick Spieler  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.16923)  
+
+**Abstract**: High-speed off-road autonomous driving presents unique challenges due to complex, evolving terrain characteristics and the difficulty of accurately modeling terrain-vehicle interactions. While dynamics models used in model-based control can be learned from real-world data, they often struggle to generalize to unseen terrain, making real-time adaptation essential. We propose a novel framework that combines a Kalman filter-based online adaptation scheme with meta-learned parameters to address these challenges. Offline meta-learning optimizes the basis functions along which adaptation occurs, as well as the adaptation parameters, while online adaptation dynamically adjusts the onboard dynamics model in real time for model-based control. We validate our approach through extensive experiments, including real-world testing on a full-scale autonomous off-road vehicle, demonstrating that our method outperforms baseline approaches in prediction accuracy, performance, and safety metrics, particularly in safety-critical scenarios. Our results underscore the effectiveness of meta-learned dynamics model adaptation, advancing the development of reliable autonomous systems capable of navigating diverse and unseen environments. Video is available at: this https URL 
+
+**Abstract (ZH)**: 高速离线路面自主驾驶由于复杂多变的路面特性和地面车辆交互建模的难度而面临独特挑战。我们提出了一种新颖框架，该框架结合了基于卡尔曼滤波的在线自适应方案和元学习得到的参数，以应对这些挑战。离线元学习优化了自适应过程中使用的基函数，以及自适应参数，而在线自适应则在实时控制中动态调整车载动力学模型。我们通过广泛实验验证了该方法，包括在全尺寸自主离线车辆上进行实地测试，结果表明，与基线方法相比，我们的方法在预测精度、性能和安全性指标方面表现更优，特别是在安全关键场景中。我们的结果强调了元学习动力学模型自适应的有效性，促进了可靠自主系统的开发，这些系统能够导航多样性和未知环境。视频见: [this https URL] 
+
+---
+# MorphoNavi: Aerial-Ground Robot Navigation with Object Oriented Mapping in Digital Twin 
+
+**Title (ZH)**: MorphoNavi: 基于对象导向建模的空地机器人导航在数字孖体中 
+
+**Authors**: Sausar Karaf, Mikhail Martynov, Oleg Sautenkov, Zhanibek Darush, Dzmitry Tsetserukou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.16914)  
+
+**Abstract**: This paper presents a novel mapping approach for a universal aerial-ground robotic system utilizing a single monocular camera. The proposed system is capable of detecting a diverse range of objects and estimating their positions without requiring fine-tuning for specific environments. The system's performance was evaluated through a simulated search-and-rescue scenario, where the MorphoGear robot successfully located a robotic dog while an operator monitored the process. This work contributes to the development of intelligent, multimodal robotic systems capable of operating in unstructured environments. 
+
+**Abstract (ZH)**: 本文提出了一种利用单目摄像头对通用空地机器人系统进行新型映射的方法。所提出的系统能够检测多样化的物体并估计其位置，无需针对特定环境进行微调。通过模拟的搜救场景评估了该系统的性能， MorphoGear 机器人成功定位了一只机械狗，操作员在一旁监控整个过程。本文为开发能够在非结构化环境中运行的智能多模态机器人系统做出了贡献。 
+
+---
+# Physically Consistent Humanoid Loco-Manipulation using Latent Diffusion Models 
+
+**Title (ZH)**: 物理一致的人形Loco-Manipulation Using Latent Diffusion Models 
+
+**Authors**: Ilyass Taouil, Haizhou Zhao, Angela Dai, Majid Khadiv  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.16843)  
+
+**Abstract**: This paper uses the capabilities of latent diffusion models (LDMs) to generate realistic RGB human-object interaction scenes to guide humanoid loco-manipulation planning. To do so, we extract from the generated images both the contact locations and robot configurations that are then used inside a whole-body trajectory optimization (TO) formulation to generate physically consistent trajectories for humanoids. We validate our full pipeline in simulation for different long-horizon loco-manipulation scenarios and perform an extensive analysis of the proposed contact and robot configuration extraction pipeline. Our results show that using the information extracted from LDMs, we can generate physically consistent trajectories that require long-horizon reasoning. 
+
+**Abstract (ZH)**: 本文利用潜在扩散模型（LDMs）的能力生成逼真的RGB人体-对象交互场景以指导类人行走-操作规划。为此，我们从生成的图像中提取接触位置和机器人配置，然后在全身轨迹优化（TO）公式中使用这些信息生成物理上一致的类人机器人轨迹。我们在仿真中验证了整个管道在不同的长期 horizon 行走-操作场景中的有效性，并对提出的接触和机器人配置提取管道进行了广泛的分析。结果显示，利用LDMs提取的信息，可以生成需要长期 horizon 推理的物理上一致的轨迹。 
+
+---
+# Graph2Nav: 3D Object-Relation Graph Generation to Robot Navigation 
+
+**Title (ZH)**: Graph2Nav：3D对象关系图生成在机器人导航中的应用 
+
+**Authors**: Tixiao Shan, Abhinav Rajvanshi, Niluthpol Mithun, Han-Pang Chiu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.16782)  
+
+**Abstract**: We propose Graph2Nav, a real-time 3D object-relation graph generation framework, for autonomous navigation in the real world. Our framework fully generates and exploits both 3D objects and a rich set of semantic relationships among objects in a 3D layered scene graph, which is applicable to both indoor and outdoor scenes. It learns to generate 3D semantic relations among objects, by leveraging and advancing state-of-the-art 2D panoptic scene graph works into the 3D world via 3D semantic mapping techniques. This approach avoids previous training data constraints in learning 3D scene graphs directly from 3D data. We conduct experiments to validate the accuracy in locating 3D objects and labeling object-relations in our 3D scene graphs. We also evaluate the impact of Graph2Nav via integration with SayNav, a state-of-the-art planner based on large language models, on an unmanned ground robot to object search tasks in real environments. Our results demonstrate that modeling object relations in our scene graphs improves search efficiency in these navigation tasks. 
+
+**Abstract (ZH)**: 我们提出Graph2Nav，一种实时3D对象关系图生成框架，用于现实世界的自主导航。 
+
+---
+# MOSAIC: A Skill-Centric Algorithmic Framework for Long-Horizon Manipulation Planning 
+
+**Title (ZH)**: MOSAIC: 一种专注于技能的长期 manipulation 规划算法框架 
+
+**Authors**: Itamar Mishani, Yorai Shaoul, Maxim Likhachev  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.16738)  
+
+**Abstract**: Planning long-horizon motions using a set of predefined skills is a key challenge in robotics and AI. Addressing this challenge requires methods that systematically explore skill combinations to uncover task-solving sequences, harness generic, easy-to-learn skills (e.g., pushing, grasping) to generalize across unseen tasks, and bypass reliance on symbolic world representations that demand extensive domain and task-specific knowledge. Despite significant progress, these elements remain largely disjoint in existing approaches, leaving a critical gap in achieving robust, scalable solutions for complex, long-horizon problems. In this work, we present MOSAIC, a skill-centric framework that unifies these elements by using the skills themselves to guide the planning process. MOSAIC uses two families of skills: Generators compute executable trajectories and world configurations, and Connectors link these independently generated skill trajectories by solving boundary value problems, enabling progress toward completing the overall task. By breaking away from the conventional paradigm of incrementally discovering skills from predefined start or goal states--a limitation that significantly restricts exploration--MOSAIC focuses planning efforts on regions where skills are inherently effective. We demonstrate the efficacy of MOSAIC in both simulated and real-world robotic manipulation tasks, showcasing its ability to solve complex long-horizon planning problems using a diverse set of skills incorporating generative diffusion models, motion planning algorithms, and manipulation-specific models. Visit this https URL for demonstrations and examples. 
+
+**Abstract (ZH)**: 基于预定义技能规划长期 horizon 动作是机器人技术和人工智能领域的关键挑战。解决这一挑战需要系统探索技能组合的方法，以发现任务解决序列，利用通用且易于学习的技能（如推拉、抓取）来泛化到未见过的任务，并避免依赖要求广泛领域和任务特定知识的符号世界表示。尽管取得了显著进展，但这些元素在现有方法中仍然基本分离，留下了实现鲁棒性和可扩展性解决方案的重大缺口。在本文中，我们提出了MOSAIC，这是一种以技能为中心的框架，通过使用技能本身来指导规划过程来统一这些元素。MOSAIC 使用两类技能：生成器计算可执行轨迹和世界配置，连接器通过解决边界值问题将这些独立生成的技能轨迹链接起来，使任务完成取得进展。通过脱离从预定义的起始或目标状态增量发现技能的传统范式——这一局限显著限制了探索范围——MOSAIC 将规划努力集中在技能本身天然有效的区域。我们在模拟和实际机器人操作任务中展示了MOSAIC 的有效性，展示了它使用生成扩散模型、运动规划算法和操作特定模型解决复杂长期 horizon 规划问题的能力。更多演示和示例请访问：https://... 
+
+---
+# Offline Robotic World Model: Learning Robotic Policies without a Physics Simulator 
+
+**Title (ZH)**: 离线机器人世界模型：无需物理模拟器学习机器人策略 
+
+**Authors**: Chenhao Li, Andreas Krause, Marco Hutter  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.16680)  
+
+**Abstract**: Reinforcement Learning (RL) has demonstrated impressive capabilities in robotic control but remains challenging due to high sample complexity, safety concerns, and the sim-to-real gap. While offline RL eliminates the need for risky real-world exploration by learning from pre-collected data, it suffers from distributional shift, limiting policy generalization. Model-Based RL (MBRL) addresses this by leveraging predictive models for synthetic rollouts, yet existing approaches often lack robust uncertainty estimation, leading to compounding errors in offline settings. We introduce Offline Robotic World Model (RWM-O), a model-based approach that explicitly estimates epistemic uncertainty to improve policy learning without reliance on a physics simulator. By integrating these uncertainty estimates into policy optimization, our approach penalizes unreliable transitions, reducing overfitting to model errors and enhancing stability. Experimental results show that RWM-O improves generalization and safety, enabling policy learning purely from real-world data and advancing scalable, data-efficient RL for robotics. 
+
+**Abstract (ZH)**: 基于模型的机器人世界模型（RWM-O）：通过显式估计知识性不确定性提高政策学习 
+
+---
+# HERB: Human-augmented Efficient Reinforcement learning for Bin-packing 
+
+**Title (ZH)**: HERB：增强的人类辅助高效装箱强化学习 
+
+**Authors**: Gojko Perovic, Nuno Ferreira Duarte, Atabak Dehban, Gonçalo Teixeira, Egidio Falotico, José Santos-Victor  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.16595)  
+
+**Abstract**: Packing objects efficiently is a fundamental problem in logistics, warehouse automation, and robotics. While traditional packing solutions focus on geometric optimization, packing irregular, 3D objects presents significant challenges due to variations in shape and stability. Reinforcement Learning~(RL) has gained popularity in robotic packing tasks, but training purely from simulation can be inefficient and computationally expensive. In this work, we propose HERB, a human-augmented RL framework for packing irregular objects. We first leverage human demonstrations to learn the best sequence of objects to pack, incorporating latent factors such as space optimization, stability, and object relationships that are difficult to model explicitly. Next, we train a placement algorithm that uses visual information to determine the optimal object positioning inside a packing container. Our approach is validated through extensive performance evaluations, analyzing both packing efficiency and latency. Finally, we demonstrate the real-world feasibility of our method on a robotic system. Experimental results show that our method outperforms geometric and purely RL-based approaches by leveraging human intuition, improving both packing robustness and adaptability. This work highlights the potential of combining human expertise-driven RL to tackle complex real-world packing challenges in robotic systems. 
+
+**Abstract (ZH)**: 有效地包装物体是物流、仓库自动化和机器人技术中的基本问题。传统的包装解决方案主要集中于几何优化，而包装不规则的3D物体由于形状和稳定性上的变化带来了显著的挑战。强化学习(RL)在机器人包装任务中得到了广泛应用，但仅从模拟中进行训练可能效率低下且计算成本高昂。在本文中，我们提出了一种名为HERB的人机增强RL框架，用于包装不规则物体。我们首先利用人类演示学习出最佳的物体打包顺序，同时考虑了难以明确建模的空间优化、稳定性和物体关系等潜在因素。接下来，我们训练了一个使用视觉信息来确定物体在包装容器内最佳位置的放置算法。通过广泛的性能评估，分析了包装效率和延迟。最后，我们在一个机器人系统上验证了我们方法的现实可行性。实验结果表明，通过利用人类直觉，我们的方法在包装鲁棒性和适应性方面优于基于几何的方法和纯RL方法。本工作突显了将基于人类专业知识的RL结合用于解决机器人系统中复杂包装挑战的潜力。 
+
+---
+# ManipDreamer: Boosting Robotic Manipulation World Model with Action Tree and Visual Guidance 
+
+**Title (ZH)**: ManipDreamer: 通过动作树和视觉引导提升机器人 manipulation 世界模型 
+
+**Authors**: Ying Li, Xiaobao Wei, Xiaowei Chi, Yuming Li, Zhongyu Zhao, Hao Wang, Ningning Ma, Ming Lu, Shanghang Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.16464)  
+
+**Abstract**: While recent advancements in robotic manipulation video synthesis have shown promise, significant challenges persist in ensuring effective instruction-following and achieving high visual quality. Recent methods, like RoboDreamer, utilize linguistic decomposition to divide instructions into separate lower-level primitives, conditioning the world model on these primitives to achieve compositional instruction-following. However, these separate primitives do not consider the relationships that exist between them. Furthermore, recent methods neglect valuable visual guidance, including depth and semantic guidance, both crucial for enhancing visual quality. This paper introduces ManipDreamer, an advanced world model based on the action tree and visual guidance. To better learn the relationships between instruction primitives, we represent the instruction as the action tree and assign embeddings to tree nodes, each instruction can acquire its embeddings by navigating through the action tree. The instruction embeddings can be used to guide the world model. To enhance visual quality, we combine depth and semantic guidance by introducing a visual guidance adapter compatible with the world model. This visual adapter enhances both the temporal and physical consistency of video generation. Based on the action tree and visual guidance, ManipDreamer significantly boosts the instruction-following ability and visual quality. Comprehensive evaluations on robotic manipulation benchmarks reveal that ManipDreamer achieves large improvements in video quality metrics in both seen and unseen tasks, with PSNR improved from 19.55 to 21.05, SSIM improved from 0.7474 to 0.7982 and reduced Flow Error from 3.506 to 3.201 in unseen tasks, compared to the recent RoboDreamer model. Additionally, our method increases the success rate of robotic manipulation tasks by 2.5% in 6 RLbench tasks on average. 
+
+**Abstract (ZH)**: 基于动作树和视觉引导的ManipDreamer：提升机器人操作视频合成的有效指令跟随和视觉质量 
+
+---
+# Vision Controlled Orthotic Hand Exoskeleton 
+
+**Title (ZH)**: 视觉控制的假手外骨骼 
+
+**Authors**: Connor Blais, Md Abdul Baset Sarker, Masudul H. Imtiaz  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.16319)  
+
+**Abstract**: This paper presents the design and implementation of an AI vision-controlled orthotic hand exoskeleton to enhance rehabilitation and assistive functionality for individuals with hand mobility impairments. The system leverages a Google Coral Dev Board Micro with an Edge TPU to enable real-time object detection using a customized MobileNet\_V2 model trained on a six-class dataset. The exoskeleton autonomously detects objects, estimates proximity, and triggers pneumatic actuation for grasp-and-release tasks, eliminating the need for user-specific calibration needed in traditional EMG-based systems. The design prioritizes compactness, featuring an internal battery. It achieves an 8-hour runtime with a 1300 mAh battery. Experimental results demonstrate a 51ms inference speed, a significant improvement over prior iterations, though challenges persist in model robustness under varying lighting conditions and object orientations. While the most recent YOLO model (YOLOv11) showed potential with 15.4 FPS performance, quantization issues hindered deployment. The prototype underscores the viability of vision-controlled exoskeletons for real-world assistive applications, balancing portability, efficiency, and real-time responsiveness, while highlighting future directions for model optimization and hardware miniaturization. 
+
+**Abstract (ZH)**: 基于AI视觉控制的手部外骨骼设计与实现：增强手部运动障碍个体的康复和辅助功能 
+
+---
+# PIN-WM: Learning Physics-INformed World Models for Non-Prehensile Manipulation 
+
+**Title (ZH)**: PIN-WM: 学习物理导向的世界模型以实现非摄取性 manipulation 
+
+**Authors**: Wenxuan Li, Hang Zhao, Zhiyuan Yu, Yu Du, Qin Zou, Ruizhen Hu, Kai Xu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.16693)  
+
+**Abstract**: While non-prehensile manipulation (e.g., controlled pushing/poking) constitutes a foundational robotic skill, its learning remains challenging due to the high sensitivity to complex physical interactions involving friction and restitution. To achieve robust policy learning and generalization, we opt to learn a world model of the 3D rigid body dynamics involved in non-prehensile manipulations and use it for model-based reinforcement learning. We propose PIN-WM, a Physics-INformed World Model that enables efficient end-to-end identification of a 3D rigid body dynamical system from visual observations. Adopting differentiable physics simulation, PIN-WM can be learned with only few-shot and task-agnostic physical interaction trajectories. Further, PIN-WM is learned with observational loss induced by Gaussian Splatting without needing state estimation. To bridge Sim2Real gaps, we turn the learned PIN-WM into a group of Digital Cousins via physics-aware randomizations which perturb physics and rendering parameters to generate diverse and meaningful variations of the PIN-WM. Extensive evaluations on both simulation and real-world tests demonstrate that PIN-WM, enhanced with physics-aware digital cousins, facilitates learning robust non-prehensile manipulation skills with Sim2Real transfer, surpassing the Real2Sim2Real state-of-the-arts. 
+
+**Abstract (ZH)**: 基于物理信息的世界模型在非抓持操作中的Sim2Real迁移学习 
+
+---
+# Cognitive Silicon: An Architectural Blueprint for Post-Industrial Computing Systems 
+
+**Title (ZH)**: 认知硅片：后工业计算系统架构设计蓝图 
+
+**Authors**: Christoforus Yoga Haryanto, Emily Lomempow  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.16622)  
+
+**Abstract**: Autonomous AI systems reveal foundational limitations in deterministic, human-authored computing architectures. This paper presents Cognitive Silicon: a hypothetical full-stack architectural framework projected toward 2035, exploring a possible trajectory for cognitive computing system design. The proposed architecture would integrate symbolic scaffolding, governed memory, runtime moral coherence, and alignment-aware execution across silicon-to-semantics layers. Our design grammar has emerged from dialectical co-design with LLMs under asymmetric epistemic conditions--creating structured friction to expose blind spots and trade-offs. The envisioned framework would establish mortality as a natural consequence of physical constraints, non-copyable tacit knowledge, and non-cloneable identity keys as cognitive-embodiment primitives. Core tensions (trust/agency, scaffolding/emergence, execution/governance) would function as central architectural pressures rather than edge cases. The architecture theoretically converges with the Free Energy Principle, potentially offering a formal account of how cognitive systems could maintain identity through prediction error minimization across physical and computational boundaries. The resulting framework aims to deliver a morally tractable cognitive infrastructure that could maintain human-alignment through irreversible hardware constraints and identity-bound epistemic mechanisms resistant to replication or subversion. 
+
+**Abstract (ZH)**: 自主人工智能系统揭示了确定性、由人类编写的计算架构的基本局限性。本文提出了认知硅：一种面向2035年的设想全栈架构框架，探索可能的认知计算系统设计轨迹。提出的架构将结合符号支撑、管理记忆、运行时道德一致性以及对齐感知执行，贯穿硅至语义层。我们的设计语法源自与LLMs在不对称认知条件下进行的辩证协同设计——创造结构化的摩擦力以揭示盲点和权衡。所设想的框架将死亡视为物理约束的自然结果，非可复制的暗知识以及非克隆身份密钥作为认知-实体的基础。核心张力（信任/自主性、支撑/涌现、执行/治理）将作为主要的架构压力，而非边缘案例。该架构理论上与自由能量原理一致，可能提供一种形式化的解释，说明认知系统如何通过最小化预测误差在物理和计算边界上维持身份。最终框架旨在提供一种道德上可处理的认知基础设施，能够通过不可逆的硬件约束和基于身份的认知机制维持人类对齐，这些机制对复制或操纵具有抵抗力。 
+
+---
+# PsyCounAssist: A Full-Cycle AI-Powered Psychological Counseling Assistant System 
+
+**Title (ZH)**: PsyCounAssist: 一个全程AI驱动的心理咨询助理系统 
+
+**Authors**: Xianghe Liu, Jiaqi Xu, Tao Sun  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.16573)  
+
+**Abstract**: Psychological counseling is a highly personalized and dynamic process that requires therapists to continuously monitor emotional changes, document session insights, and maintain therapeutic continuity. In this paper, we introduce PsyCounAssist, a comprehensive AI-powered counseling assistant system specifically designed to augment psychological counseling practices. PsyCounAssist integrates multimodal emotion recognition combining speech and photoplethysmography (PPG) signals for accurate real-time affective analysis, automated structured session reporting using large language models (LLMs), and personalized AI-generated follow-up support. Deployed on Android-based tablet devices, the system demonstrates practical applicability and flexibility in real-world counseling scenarios. Experimental evaluation confirms the reliability of PPG-based emotional classification and highlights the system's potential for non-intrusive, privacy-aware emotional support. PsyCounAssist represents a novel approach to ethically and effectively integrating AI into psychological counseling workflows. 
+
+**Abstract (ZH)**: 心理辅导是一个高度个性化和动态的过程，要求治疗师持续监控情绪变化、记录会话洞见并维持治疗连续性。本文介绍了一种综合AI赋能的心理辅导助理系统PsyCounAssist，该系统旨在增强心理辅导实践。PsyCounAssist结合使用语音和光电容积描记法（PPG）信号进行多模态情绪识别，实现准确的实时情绪分析，采用大型语言模型（LLMs）自动生成结构化会话报告，并提供个性化AI生成的后续支持。该系统在基于Android的平板设备上部署，展示了在实际心理辅导场景中的实用性和灵活性。实验评估证实了基于PPG的情绪分类的可靠性，并强调了系统在非侵入性和隐私意识情绪支持方面的潜力。PsyCounAssist代表了将AI伦理有效地整合到心理辅导工作流中的新方法。 
+
+---
+# Think Hierarchically, Act Dynamically: Hierarchical Multi-modal Fusion and Reasoning for Vision-and-Language Navigation 
+
+**Title (ZH)**: 层次化思考，动态行动：面向视觉语言导航的层次化多模态融合与推理 
+
+**Authors**: Junrong Yue, Yifan Zhang, Chuan Qin, Bo Li, Xiaomin Lie, Xinlei Yu, Wenxin Zhang, Zhendong Zhao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.16516)  
+
+**Abstract**: Vision-and-Language Navigation (VLN) aims to enable embodied agents to follow natural language instructions and reach target locations in real-world environments. While prior methods often rely on either global scene representations or object-level features, these approaches are insufficient for capturing the complex interactions across modalities required for accurate navigation. In this paper, we propose a Multi-level Fusion and Reasoning Architecture (MFRA) to enhance the agent's ability to reason over visual observations, language instructions and navigation history. Specifically, MFRA introduces a hierarchical fusion mechanism that aggregates multi-level features-ranging from low-level visual cues to high-level semantic concepts-across multiple modalities. We further design a reasoning module that leverages fused representations to infer navigation actions through instruction-guided attention and dynamic context integration. By selectively capturing and combining relevant visual, linguistic, and temporal signals, MFRA improves decision-making accuracy in complex navigation scenarios. Extensive experiments on benchmark VLN datasets including REVERIE, R2R, and SOON demonstrate that MFRA achieves superior performance compared to state-of-the-art methods, validating the effectiveness of multi-level modal fusion for embodied navigation. 
+
+**Abstract (ZH)**: 视觉-语言导航（VLN）旨在使具身代理能够遵循自然语言指令并在真实环境中的目标位置。尽管先前的方法通常依赖于全局场景表示或物体级特征，这些方法不足以捕捉准确导航所需的多种模态间复杂交互。在本文中，我们提出了一种多层次融合与推理架构（MFRA）以增强代理在视觉观察、语言指令和导航历史上的推理能力。具体而言，MFRA 引入了一种层次融合机制，该机制在多种模态间聚合从低级视觉线索到高级语义概念的多级特征。我们进一步设计了一个推理模块，该模块通过指令引导的注意力和动态上下文集成来推断导航动作。通过选择性地捕获和结合相关的视觉、语言和时空信号，MFRA 在复杂导航场景中的决策准确性得到提高。在基准 VLN 数据集 REVERIE、R2R 和 SOON 上的广泛实验表明，MFRA 达到了比现有最佳方法更好的性能，验证了多层次模态融合在具身导航中的有效性。 
+
+---
+# BrainPrompt: Multi-Level Brain Prompt Enhancement for Neurological Condition Identification 
+
+**Title (ZH)**: 脑提示：多层脑提示增强用于神经疾病识别 
+
+**Authors**: Jiaxing Xu, Kai He, Yue Tang, Wei Li, Mengcheng Lan, Xia Dong, Yiping Ke, Mengling Feng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.16096)  
+
+**Abstract**: Neurological conditions, such as Alzheimer's Disease, are challenging to diagnose, particularly in the early stages where symptoms closely resemble healthy controls. Existing brain network analysis methods primarily focus on graph-based models that rely solely on imaging data, which may overlook important non-imaging factors and limit the model's predictive power and interpretability. In this paper, we present BrainPrompt, an innovative framework that enhances Graph Neural Networks (GNNs) by integrating Large Language Models (LLMs) with knowledge-driven prompts, enabling more effective capture of complex, non-imaging information and external knowledge for neurological disease identification. BrainPrompt integrates three types of knowledge-driven prompts: (1) ROI-level prompts to encode the identity and function of each brain region, (2) subject-level prompts that incorporate demographic information, and (3) disease-level prompts to capture the temporal progression of disease. By leveraging these multi-level prompts, BrainPrompt effectively harnesses knowledge-enhanced multi-modal information from LLMs, enhancing the model's capability to predict neurological disease stages and meanwhile offers more interpretable results. We evaluate BrainPrompt on two resting-state functional Magnetic Resonance Imaging (fMRI) datasets from neurological disorders, showing its superiority over state-of-the-art methods. Additionally, a biomarker study demonstrates the framework's ability to extract valuable and interpretable information aligned with domain knowledge in neuroscience. 
+
+**Abstract (ZH)**: 神经学条件，如阿尔茨海默病，诊断起来颇具挑战性，尤其是在早期阶段，因为其症状与健康对照组极为相似。现有的脑网络分析方法主要依赖于基于图的模型，这些模型仅依靠影像数据，可能会忽略重要的非影像因素，从而限制了模型的预测能力和可解释性。本文提出了BrainPrompt，这是一种创新框架，通过将大型语言模型（LLMs）与知识驱动的提示结合起来，增强图神经网络（GNNs），从而使模型更有效地捕捉到复杂的非影像信息和外部知识，以识别神经性疾病。BrainPrompt整合了三种类型的知识驱动提示：（1）ROI级提示，用于编码每个大脑区域的身份和功能；（2）受试者级提示，结合人口统计学信息；（3）疾病级提示，捕捉疾病的纵向进展。通过利用这些多级提示，BrainPrompt有效地利用了LLMs提供的知识增强的多模态信息，增强了模型预测神经性疾病阶段的能力，并提供更具可解释性的结果。我们在两种静息态功能性磁共振成像（fMRI）神经障碍数据集上评估了BrainPrompt，显示其在最先进的方法之上具有优越性。此外，生物标志物研究还表明，该框架能够提取与神经科学领域知识相一致的有价值和可解释的信息。 
+
+---
