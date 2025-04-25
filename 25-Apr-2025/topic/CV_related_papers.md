@@ -1,0 +1,247 @@
+# Object Pose Estimation by Camera Arm Control Based on the Next Viewpoint Estimation 
+
+**Title (ZH)**: 基于下一视角估计的相机臂控制物体pose估计 
+
+**Authors**: Tomoki Mizuno, Kazuya Yabashi, Tsuyoshi Tasaki  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.17424)  
+
+**Abstract**: We have developed a new method to estimate a Next Viewpoint (NV) which is effective for pose estimation of simple-shaped products for product display robots in retail stores. Pose estimation methods using Neural Networks (NN) based on an RGBD camera are highly accurate, but their accuracy significantly decreases when the camera acquires few texture and shape features at a current view point. However, it is difficult for previous mathematical model-based methods to estimate effective NV which is because the simple shaped objects have few shape features. Therefore, we focus on the relationship between the pose estimation and NV estimation. When the pose estimation is more accurate, the NV estimation is more accurate. Therefore, we develop a new pose estimation NN that estimates NV simultaneously. Experimental results showed that our NV estimation realized a pose estimation success rate 77.3\%, which was 7.4pt higher than the mathematical model-based NV calculation did. Moreover, we verified that the robot using our method displayed 84.2\% of products. 
+
+**Abstract (ZH)**: 我们开发了一种新的方法来估计下一个视角（NV），该方法适用于零售商店中简单形状产品展示机器人的姿态估计。 
+
+---
+# Bias-Eliminated PnP for Stereo Visual Odometry: Provably Consistent and Large-Scale Localization 
+
+**Title (ZH)**: 偏置消除的PnP stereo视觉定位：可证明一致且大规模定位 
+
+**Authors**: Guangyang Zeng, Yuan Shen, Ziyang Hong, Yuze Hong, Viorela Ila, Guodong Shi, Junfeng Wu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.17410)  
+
+**Abstract**: In this paper, we first present a bias-eliminated weighted (Bias-Eli-W) perspective-n-point (PnP) estimator for stereo visual odometry (VO) with provable consistency. Specifically, leveraging statistical theory, we develop an asymptotically unbiased and $\sqrt {n}$-consistent PnP estimator that accounts for varying 3D triangulation uncertainties, ensuring that the relative pose estimate converges to the ground truth as the number of features increases. Next, on the stereo VO pipeline side, we propose a framework that continuously triangulates contemporary features for tracking new frames, effectively decoupling temporal dependencies between pose and 3D point errors. We integrate the Bias-Eli-W PnP estimator into the proposed stereo VO pipeline, creating a synergistic effect that enhances the suppression of pose estimation errors. We validate the performance of our method on the KITTI and Oxford RobotCar datasets. Experimental results demonstrate that our method: 1) achieves significant improvements in both relative pose error and absolute trajectory error in large-scale environments; 2) provides reliable localization under erratic and unpredictable robot motions. The successful implementation of the Bias-Eli-W PnP in stereo VO indicates the importance of information screening in robotic estimation tasks with high-uncertainty measurements, shedding light on diverse applications where PnP is a key ingredient. 
+
+**Abstract (ZH)**: 基于偏差消除加权（Bias-Eli-W）视角-n点（PnP）估计算法的Stereo视觉里程计（VO）及其一致性分析 
+
+---
+# LiDPM: Rethinking Point Diffusion for Lidar Scene Completion 
+
+**Title (ZH)**: LiDPM: 重新思考激光雷达场景完成中的点扩散过程 
+
+**Authors**: Tetiana Martyniuk, Gilles Puy, Alexandre Boulch, Renaud Marlet, Raoul de Charette  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.17791)  
+
+**Abstract**: Training diffusion models that work directly on lidar points at the scale of outdoor scenes is challenging due to the difficulty of generating fine-grained details from white noise over a broad field of view. The latest works addressing scene completion with diffusion models tackle this problem by reformulating the original DDPM as a local diffusion process. It contrasts with the common practice of operating at the level of objects, where vanilla DDPMs are currently used. In this work, we close the gap between these two lines of work. We identify approximations in the local diffusion formulation, show that they are not required to operate at the scene level, and that a vanilla DDPM with a well-chosen starting point is enough for completion. Finally, we demonstrate that our method, LiDPM, leads to better results in scene completion on SemanticKITTI. The project page is this https URL . 
+
+**Abstract (ZH)**: 在大规模户外场景中直接对LIDAR点进行训练的扩散模型面临着因广域视角下从白噪声生成细粒度细节的困难。通过将原有的DDPM重新构造成局部扩散过程来解决场景完成问题的最新研究与此处常用的以对象为操作级别的方法相对立。本文通过识别局部扩散形式中的近似，展示这些近似在场景级别上并非必要，并且适当的起始点下的标准DDPM足以完成任务。最后，我们证明我们的方法LiDPM在SemanticKITTI的场景完成任务中取得了更好的结果。项目页面详见此链接：https://github.com/alibaba/CaDiL。 
+
+---
+# AUTHENTICATION: Identifying Rare Failure Modes in Autonomous Vehicle Perception Systems using Adversarially Guided Diffusion Models 
+
+**Title (ZH)**: 身份验证：使用对抗引导扩散模型识别自主车辆感知系统中的罕见故障模式 
+
+**Authors**: Mohammad Zarei, Melanie A Jutras, Eliana Evans, Mike Tan, Omid Aaramoon  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.17179)  
+
+**Abstract**: Autonomous Vehicles (AVs) rely on artificial intelligence (AI) to accurately detect objects and interpret their surroundings. However, even when trained using millions of miles of real-world data, AVs are often unable to detect rare failure modes (RFMs). The problem of RFMs is commonly referred to as the "long-tail challenge", due to the distribution of data including many instances that are very rarely seen. In this paper, we present a novel approach that utilizes advanced generative and explainable AI techniques to aid in understanding RFMs. Our methods can be used to enhance the robustness and reliability of AVs when combined with both downstream model training and testing. We extract segmentation masks for objects of interest (e.g., cars) and invert them to create environmental masks. These masks, combined with carefully crafted text prompts, are fed into a custom diffusion model. We leverage the Stable Diffusion inpainting model guided by adversarial noise optimization to generate images containing diverse environments designed to evade object detection models and expose vulnerabilities in AI systems. Finally, we produce natural language descriptions of the generated RFMs that can guide developers and policymakers to improve the safety and reliability of AV systems. 
+
+**Abstract (ZH)**: 自主驾驶车辆（AVs）依赖人工智能（AI）准确检测物体并理解其环境。然而，即使使用数百万英里的真实世界数据进行训练，AVs往往仍无法检测到罕见故障模式（RFMs）。RFMs的问题通常被称为“长尾挑战”，因为数据分布中包含了许多很少看到的实例。在本文中，我们提出了一种新颖的方法，利用先进的生成性和可解释性AI技术来帮助理解RFMs。我们的方法可以与下游模型的训练和测试结合，以增强AVs的 robustness 和可靠性。我们提取目标物体（例如，汽车）的分割掩码，并对其进行反转以创建环境掩码。将这些掩码与精心设计的文本提示结合后，输入到一个自定义的扩散模型中。我们利用由对抗噪声优化指导的稳定扩散 inpainting 模型生成包含多样化环境的图像，这些环境设计用于避开物体检测模型并揭示AI系统的脆弱性。最后，我们生成关于生成RFMs的自然语言描述，以指导开发者和政策制定者改进AV系统的安全性和可靠性。 
+
+---
+# Conformal Segmentation in Industrial Surface Defect Detection with Statistical Guarantees 
+
+**Title (ZH)**: 工业表面缺陷检测中的统计保证同构分割 
+
+**Authors**: Cheng Shen, Yuewei Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.17721)  
+
+**Abstract**: In industrial settings, surface defects on steel can significantly compromise its service life and elevate potential safety risks. Traditional defect detection methods predominantly rely on manual inspection, which suffers from low efficiency and high costs. Although automated defect detection approaches based on Convolutional Neural Networks(e.g., Mask R-CNN) have advanced rapidly, their reliability remains challenged due to data annotation uncertainties during deep model training and overfitting issues. These limitations may lead to detection deviations when processing the given new test samples, rendering automated detection processes unreliable. To address this challenge, we first evaluate the detection model's practical performance through calibration data that satisfies the independent and identically distributed (i.i.d) condition with test data. Specifically, we define a loss function for each calibration sample to quantify detection error rates, such as the complement of recall rate and false discovery rate. Subsequently, we derive a statistically rigorous threshold based on a user-defined risk level to identify high-probability defective pixels in test images, thereby constructing prediction sets (e.g., defect regions). This methodology ensures that the expected error rate (mean error rate) on the test set remains strictly bounced by the predefined risk level. Additionally, we observe a negative correlation between the average prediction set size and the risk level on the test set, establishing a statistically rigorous metric for assessing detection model uncertainty. Furthermore, our study demonstrates robust and efficient control over the expected test set error rate across varying calibration-to-test partitioning ratios, validating the method's adaptability and operational effectiveness. 
+
+**Abstract (ZH)**: 在工业环境中，钢材表面缺陷会显著影响其服役寿命并提升潜在的安全风险。传统的缺陷检测方法主要依赖人工检查，效率低且成本高。尽管基于卷积神经网络的自动缺陷检测方法（如Mask R-CNN）取得了 rapid 进展，但由于深度模型训练中的数据标注不确定性及过拟合问题，其可靠性仍受到挑战。这些限制可能会导致在处理新的测试样本时出现检测偏差，使得自动化检测过程不可靠。为应对这一挑战，我们首先通过满足独立同分布（i.i.d）条件的校准数据评估检测模型的实际性能。具体而言，我们为每个校准样本定义一个损失函数来量化检测错误率，如召回率的补和假发现率。随后，我们基于用户定义的风险水平推导出一个统计上严格的阈值，以识别测试图像中高概率的缺陷像素，从而构建预测集（如缺陷区域）。此方法确保测试集上的预期错误率（均值错误率）严格保持在预定义的风险水平之内。此外，我们观察到预测集大小的平均值与测试集上的风险水平之间存在负相关关系，从而建立了评估检测模型不确定性的统计上严格的度量标准。此外，我们的研究表明，在不同校准至测试分隔比下，该方法对测试集预期错误率的鲁棒且高效的控制证实了其适应性和操作有效性。 
+
+---
+# Data-Driven Calibration of Prediction Sets in Large Vision-Language Models Based on Inductive Conformal Prediction 
+
+**Title (ZH)**: 基于归纳一致性预测的大型愿景语言模型中预测集的数据驱动校准 
+
+**Authors**: Yuanchang Ye, Weiyan Wen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.17671)  
+
+**Abstract**: This study addresses the critical challenge of hallucination mitigation in Large Vision-Language Models (LVLMs) for Visual Question Answering (VQA) tasks through a Split Conformal Prediction (SCP) framework. While LVLMs excel in multi-modal reasoning, their outputs often exhibit hallucinated content with high confidence, posing risks in safety-critical applications. We propose a model-agnostic uncertainty quantification method that integrates dynamic threshold calibration and cross-modal consistency verification. By partitioning data into calibration and test sets, the framework computes nonconformity scores to construct prediction sets with statistical guarantees under user-defined risk levels ($\alpha$). Key innovations include: (1) rigorous control of \textbf{marginal coverage} to ensure empirical error rates remain strictly below $\alpha$; (2) dynamic adjustment of prediction set sizes inversely with $\alpha$, filtering low-confidence outputs; (3) elimination of prior distribution assumptions and retraining requirements. Evaluations on benchmarks (ScienceQA, MMMU) with eight LVLMs demonstrate that SCP enforces theoretical guarantees across all $\alpha$ values. The framework achieves stable performance across varying calibration-to-test split ratios, underscoring its robustness for real-world deployment in healthcare, autonomous systems, and other safety-sensitive domains. This work bridges the gap between theoretical reliability and practical applicability in multi-modal AI systems, offering a scalable solution for hallucination detection and uncertainty-aware decision-making. 
+
+**Abstract (ZH)**: 本研究通过Split Conformal Prediction (SCP)框架解决大型视觉-语言模型（LVLM）在视觉问答（VQA）任务中 hallucination 减轻的关键挑战。虽然 LVLM 在多模态推理方面表现出色，但其输出往往伴随着高置信度的 hallucination 内容，这在安全关键应用中存在风险。我们提出了一种模型无关的不确定性量化方法，该方法结合了动态阈值校准和跨模态一致性验证。通过将数据划分为校准集和测试集，框架计算非conformity分数，以在用户定义的风险水平（$\alpha$）下提供统计保证的预测集。关键创新包括：（1）严格控制边缘覆盖率，确保实测误差率严格低于 $\alpha$；（2）预测集大小与 $\alpha$ 成反比动态调整，过滤低置信度输出；（3）消除先验分布假设和重新训练需求。在八个 LVLM 和基准数据集（ScienceQA, MMMU）上的评估表明，SCP 确保了在所有 $\alpha$ 值下实现理论保证。该框架在不同校准-测试划分比例下表现出稳定的性能，证明了其在医疗保健、自主系统和其他安全敏感领域的实际部署中的稳健性。本工作在多模态 AI 系统的理论可靠性和实际应用之间架起了桥梁，提供了一种可扩展的错误检测和不确定性感知决策方案。 
+
+---
+# Aerial Image Classification in Scarce and Unconstrained Environments via Conformal Prediction 
+
+**Title (ZH)**: 基于一致性预测的稀少且非约束环境中航摄图像分类 
+
+**Authors**: Farhad Pourkamali-Anaraki  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.17655)  
+
+**Abstract**: This paper presents a comprehensive empirical analysis of conformal prediction methods on a challenging aerial image dataset featuring diverse events in unconstrained environments. Conformal prediction is a powerful post-hoc technique that takes the output of any classifier and transforms it into a set of likely labels, providing a statistical guarantee on the coverage of the true label. Unlike evaluations on standard benchmarks, our study addresses the complexities of data-scarce and highly variable real-world settings. We investigate the effectiveness of leveraging pretrained models (MobileNet, DenseNet, and ResNet), fine-tuned with limited labeled data, to generate informative prediction sets. To further evaluate the impact of calibration, we consider two parallel pipelines (with and without temperature scaling) and assess performance using two key metrics: empirical coverage and average prediction set size. This setup allows us to systematically examine how calibration choices influence the trade-off between reliability and efficiency. Our findings demonstrate that even with relatively small labeled samples and simple nonconformity scores, conformal prediction can yield valuable uncertainty estimates for complex tasks. Moreover, our analysis reveals that while temperature scaling is often employed for calibration, it does not consistently lead to smaller prediction sets, underscoring the importance of careful consideration in its application. Furthermore, our results highlight the significant potential of model compression techniques within the conformal prediction pipeline for deployment in resource-constrained environments. Based on our observations, we advocate for future research to delve into the impact of noisy or ambiguous labels on conformal prediction performance and to explore effective model reduction strategies. 
+
+**Abstract (ZH)**: 本文对多种卷积预测方法在包含多种未约束环境事件的挑战性航空图像数据集上进行了全面的经验分析。 
+
+---
+# Enhancing CNNs robustness to occlusions with bioinspired filters for border completion 
+
+**Title (ZH)**: 基于生物启发滤波器的边界完成方法增强CNNs对遮挡的鲁棒性 
+
+**Authors**: Catarina P. Coutinho, Aneeqa Merhab, Janko Petkovic, Ferdinando Zanchetta, Rita Fioresi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.17619)  
+
+**Abstract**: We exploit the mathematical modeling of the visual cortex mechanism for border completion to define custom filters for CNNs. We see a consistent improvement in performance, particularly in accuracy, when our modified LeNet 5 is tested with occluded MNIST images. 
+
+**Abstract (ZH)**: 我们利用视觉皮层边界完成机制的数学建模来定义适合CNN的自定义滤波器。当使用遮挡的MNIST图像测试我们的修改后LeNet 5时，我们观察到一致的性能提升，尤其是在准确性方面的提升。 
+
+---
+# STCL:Curriculum learning Strategies for deep learning image steganography models 
+
+**Title (ZH)**: STCL：用于深度学习图像隐写分析模型的课程学习策略 
+
+**Authors**: Fengchun Liu, Tong Zhang, Chunying Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.17609)  
+
+**Abstract**: Aiming at the problems of poor quality of steganographic images and slow network convergence of image steganography models based on deep learning, this paper proposes a Steganography Curriculum Learning training strategy (STCL) for deep learning image steganography models. So that only easy images are selected for training when the model has poor fitting ability at the initial stage, and gradually expand to more difficult images, the strategy includes a difficulty evaluation strategy based on the teacher model and an knee point-based training scheduling strategy. Firstly, multiple teacher models are trained, and the consistency of the quality of steganographic images under multiple teacher models is used as the difficulty score to construct the training subsets from easy to difficult. Secondly, a training control strategy based on knee points is proposed to reduce the possibility of overfitting on small training sets and accelerate the training process. Experimental results on three large public datasets, ALASKA2, VOC2012 and ImageNet, show that the proposed image steganography scheme is able to improve the model performance under multiple algorithmic frameworks, which not only has a high PSNR, SSIM score, and decoding accuracy, but also the steganographic images generated by the model under the training of the STCL strategy have a low steganography analysis scores. You can find our code at \href{this https URL}{this https URL}. 
+
+**Abstract (ZH)**: 针对基于深度学习的图像隐写模型质量差和网络收敛慢的问题，本文提出了一种隐写CURRICULUM LEARNING训练策略(STCL)以提升深度学习图像隐写模型的性能。该策略在模型初始阶段难以拟合时，仅选择简单图像进行训练，随后逐步引入更复杂的图像。该策略包括基于教师模型的难度评估策略和基于膝点的训练调度策略。首先，训练多个教师模型，并利用多个教师模型下隐写图像质量的一致性作为难度评分，从简单到复杂构建训练子集。其次，提出了一种基于膝点的训练控制策略，以减少小训练集上过拟合的可能性并加速训练过程。在ALASKA2、VOC2012和ImageNet三个大型公共数据集上的实验结果表明，所提出的方法可以在多种算法框架下提升模型性能，不仅具有较高的PSNR、SSIM分数和解码准确性，而且在STCL策略训练下生成的隐写图像具有较低的隐写分析评分。您可以在以下链接找到我们的代码：this https URL。 
+
+---
+# Unsupervised Urban Land Use Mapping with Street View Contrastive Clustering and a Geographical Prior 
+
+**Title (ZH)**: 基于街道视图对比聚类和地理先验的无监督城市土地利用制图 
+
+**Authors**: Lin Che, Yizi Chen, Tanhua Jin, Martin Raubal, Konrad Schindler, Peter Kiefer  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.17551)  
+
+**Abstract**: Urban land use classification and mapping are critical for urban planning, resource management, and environmental monitoring. Existing remote sensing techniques often lack precision in complex urban environments due to the absence of ground-level details. Unlike aerial perspectives, street view images provide a ground-level view that captures more human and social activities relevant to land use in complex urban scenes. Existing street view-based methods primarily rely on supervised classification, which is challenged by the scarcity of high-quality labeled data and the difficulty of generalizing across diverse urban landscapes. This study introduces an unsupervised contrastive clustering model for street view images with a built-in geographical prior, to enhance clustering performance. When combined with a simple visual assignment of the clusters, our approach offers a flexible and customizable solution to land use mapping, tailored to the specific needs of urban planners. We experimentally show that our method can generate land use maps from geotagged street view image datasets of two cities. As our methodology relies on the universal spatial coherence of geospatial data ("Tobler's law"), it can be adapted to various settings where street view images are available, to enable scalable, unsupervised land use mapping and updating. The code will be available at this https URL. 
+
+**Abstract (ZH)**: 基于街景图像的无监督对比聚类城市用地分类与制图研究 
+
+---
+# FRAG: Frame Selection Augmented Generation for Long Video and Long Document Understanding 
+
+**Title (ZH)**: FRAG: 基于帧选择增强生成的长视频和长文档理解 
+
+**Authors**: De-An Huang, Subhashree Radhakrishnan, Zhiding Yu, Jan Kautz  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.17447)  
+
+**Abstract**: There has been impressive progress in Large Multimodal Models (LMMs). Recent works extend these models to long inputs, including multi-page documents and long videos. However, the model size and performance of these long context models are still limited due to the computational cost in both training and inference. In this work, we explore an orthogonal direction and process long inputs without long context LMMs. We propose Frame Selection Augmented Generation (FRAG), where the model first selects relevant frames within the input, and then only generates the final outputs based on the selected frames. The core of the selection process is done by scoring each frame independently, which does not require long context processing. The frames with the highest scores are then selected by a simple Top-K selection. We show that this frustratingly simple framework is applicable to both long videos and multi-page documents using existing LMMs without any fine-tuning. We consider two models, LLaVA-OneVision and InternVL2, in our experiments and show that FRAG consistently improves the performance and achieves state-of-the-art performances for both long video and long document understanding. For videos, FRAG substantially improves InternVL2-76B by 5.8% on MLVU and 3.7% on Video-MME. For documents, FRAG achieves over 20% improvements on MP-DocVQA compared with recent LMMs specialized in long document understanding. Code is available at: this https URL 
+
+**Abstract (ZH)**: 大型多模态模型在长输入处理方面的进展取得了ấn tượng人的进步。最近的工作将这些模型扩展到长输入，包括多页文档和长视频。然而，由于训练和推理中的计算成本限制，这些长上下文模型的模型大小和性能仍然受到限制。在本文中，我们探索了一个 orthogonal 方向，无需使用长上下文大型多模态模型来处理长输入。我们提出了帧选择增强生成 (FRAG) 方法，其中模型首先在输入中选择相关帧，然后仅基于选中的帧生成最终输出。选择过程的核心是独立为每个帧评分，这不需要处理长上下文。得分最高的帧通过简单的 Top-K 选择来选择。我们展示了这个令人惊讶简单的框架可以使用现有的大型多模态模型应用于长视频和多页文档，而无需任何微调。我们在实验中考虑了两个模型——LLaVA-OneVision 和 InternVL2——并展示了 FRAG 一致地提高了性能，并且在长视频和长文档理解方面都达到了最先进的性能。对于视频，FRAG 显著改善了 InternVL2-76B，在 MLVU 上提高了 5.8%，在 Video-MME 上提高了 3.7%。对于文档，FRAG 在 MP-DocVQA 上相对于专注于长文档理解的最近多模态模型取得了超过 20% 的改进。代码可在以下链接获取：this https URL。 
+
+---
+# StereoMamba: Real-time and Robust Intraoperative Stereo Disparity Estimation via Long-range Spatial Dependencies 
+
+**Title (ZH)**: StereoMamba: 基于长程空间依赖性的实时和稳健手术内 Stereo 视差估计 
+
+**Authors**: Xu Wang, Jialang Xu, Shuai Zhang, Baoru Huang, Danail Stoyanov, Evangelos B. Mazomenos  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.17401)  
+
+**Abstract**: Stereo disparity estimation is crucial for obtaining depth information in robot-assisted minimally invasive surgery (RAMIS). While current deep learning methods have made significant advancements, challenges remain in achieving an optimal balance between accuracy, robustness, and inference speed. To address these challenges, we propose the StereoMamba architecture, which is specifically designed for stereo disparity estimation in RAMIS. Our approach is based on a novel Feature Extraction Mamba (FE-Mamba) module, which enhances long-range spatial dependencies both within and across stereo images. To effectively integrate multi-scale features from FE-Mamba, we then introduce a novel Multidimensional Feature Fusion (MFF) module. Experiments against the state-of-the-art on the ex-vivo SCARED benchmark demonstrate that StereoMamba achieves superior performance on EPE of 2.64 px and depth MAE of 2.55 mm, the second-best performance on Bad2 of 41.49% and Bad3 of 26.99%, while maintaining an inference speed of 21.28 FPS for a pair of high-resolution images (1280*1024), striking the optimum balance between accuracy, robustness, and efficiency. Furthermore, by comparing synthesized right images, generated from warping left images using the generated disparity maps, with the actual right image, StereoMamba achieves the best average SSIM (0.8970) and PSNR (16.0761), exhibiting strong zero-shot generalization on the in-vivo RIS2017 and StereoMIS datasets. 
+
+**Abstract (ZH)**: 立体视差估计对于获得机器人辅助微创手术（RAMIS）中的深度信息至关重要。尽管当前的深度学习方法已取得了显著进展，但在准确度、鲁棒性和推理速度之间实现最佳平衡仍面临挑战。为应对这些挑战，我们提出了StereoMamba架构，该架构专门设计用于RAMIS中的立体视差估计。我们的方法基于一种新颖的功能提取马尔巴（FE-Mamba）模块，该模块增强了立体图像内外的长期空间依赖性。为了有效地整合FE-Mamba的多尺度特征，我们引入了一种新颖的多维度特征融合（MFF）模块。在使用体外SCARED基准进行的对比实验中，StereoMamba在端到端平移误差（EPE）为2.64像素和深度平均绝对误差（MAE）为2.55毫米方面表现优异，同时保持每对高分辨率图像（1280×1024）21.28 FPS的推理速度，在Bad2和Bad3方面分别取得了次优性能，显示了在准确度、鲁棒性和效率之间的最佳平衡。通过将通过生成视差图对左图像进行变换生成的合成右图像与实际右图像进行对比，StereoMamba在体内的RIS2017和StereoMIS数据集上展示了强大的零样本泛化能力，实现了最佳的平均SSIM（0.8970）和PSNR（16.0761）。 
+
+---
+# Advanced Segmentation of Diabetic Retinopathy Lesions Using DeepLabv3+ 
+
+**Title (ZH)**: 使用DeepLabv3+进行糖尿病视网膜病变病变的高级分割 
+
+**Authors**: Meher Boulaabi, Takwa Ben Aïcha Gader, Afef Kacem Echi, Sameh Mbarek  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.17306)  
+
+**Abstract**: To improve the segmentation of diabetic retinopathy lesions (microaneurysms, hemorrhages, exudates, and soft exudates), we implemented a binary segmentation method specific to each type of lesion. As post-segmentation, we combined the individual model outputs into a single image to better analyze the lesion types. This approach facilitated parameter optimization and improved accuracy, effectively overcoming challenges related to dataset limitations and annotation complexity. Specific preprocessing steps included cropping and applying contrast-limited adaptive histogram equalization to the L channel of the LAB image. Additionally, we employed targeted data augmentation techniques to further refine the model's efficacy. Our methodology utilized the DeepLabv3+ model, achieving a segmentation accuracy of 99%. These findings highlight the efficacy of innovative strategies in advancing medical image analysis, particularly in the precise segmentation of diabetic retinopathy lesions. The IDRID dataset was utilized to validate and demonstrate the robustness of our approach. 
+
+**Abstract (ZH)**: 为了提高糖尿病视网膜病变病变（微动脉瘤、出血、渗出和软渗出）的分割效果，我们实现了针对每种病变类型的二元分割方法。作为后续分割处理，我们将各个模型的输出结合成单张图像以更好地分析病变类型。该方法促进了参数优化并提高了准确率，有效克服了数据集限制和标注复杂性带来的挑战。具体预处理步骤包括裁剪并在Lab图像的L通道上应用有限对比度自适应直方图均衡化。此外，我们还采用了针对性的数据增强技术以进一步提升模型的效果。我们的方法使用了DeepLabv3+模型，实现了99%的分割准确率。这些发现突显了创新策略在推进医学图像分析方面的有效性，尤其是在糖尿病视网膜病变病变的精确分割方面。IDRID数据集被用于验证和展示我们方法的稳健性。 
+
+---
+# 3D Deep-learning-based Segmentation of Human Skin Sweat Glands and Their 3D Morphological Response to Temperature Variations 
+
+**Title (ZH)**: 基于3D深度学习的人体皮肤汗腺分割及其温度变化下的3D形态学响应 
+
+**Authors**: Shaoyu Pei, Renxiong Wu, Hao Zheng, Lang Qin, Shuaichen Lin, Yuxing Gan, Wenjing Huang, Zhixuan Wang, Mohan Qin, Yong Liu, Guangming Ni  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.17255)  
+
+**Abstract**: Skin, the primary regulator of heat exchange, relies on sweat glands for thermoregulation. Alterations in sweat gland morphology play a crucial role in various pathological conditions and clinical diagnoses. Current methods for observing sweat gland morphology are limited by their two-dimensional, in vitro, and destructive nature, underscoring the urgent need for real-time, non-invasive, quantifiable technologies. We proposed a novel three-dimensional (3D) transformer-based multi-object segmentation framework, integrating a sliding window approach, joint spatial-channel attention mechanism, and architectural heterogeneity between shallow and deep layers. Our proposed network enables precise 3D sweat gland segmentation from skin volume data captured by optical coherence tomography (OCT). For the first time, subtle variations of sweat gland 3D morphology in response to temperature changes, have been visualized and quantified. Our approach establishes a benchmark for normal sweat gland morphology and provides a real-time, non-invasive tool for quantifying 3D structural parameters. This enables the study of individual variability and pathological changes in sweat gland structure, advancing dermatological research and clinical applications, including thermoregulation and bromhidrosis treatment. 
+
+**Abstract (ZH)**: 皮肤作为主要的热交换调节器，依赖汗腺进行体温调节。汗腺形态学的变化在多种病理条件和临床诊断中起着关键作用。目前用于观察汗腺形态学的方法受到二维、体外和破坏性的限制，突显出急需实时、无创、可量化的技术。我们提出了一种新颖的三维（3D）变换器基多对象分割框架，结合了滑动窗口方法、联合空间-通道注意力机制以及浅层与深层结构之间的建筑异质性。我们提出的网络能够从光学相干断层扫描（OCT）捕获的皮肤体积数据中进行精确的3D汗腺分割。首次可视化并量化了温度变化对汗腺3D形态学的细微变化。我们的方法建立了正常汗腺形态学的基准，并提供了一种实时、无创工具，用于量化3D结构参数。这促进了个体差异和汗腺结构病理变化的研究，推动了皮肤科研究和临床应用，包括体温调节和多汗症治疗。 
+
+---
+# We'll Fix it in Post: Improving Text-to-Video Generation with Neuro-Symbolic Feedback 
+
+**Title (ZH)**: 我们在后期修复它：通过神经符号反馈改进文本到视频生成 
+
+**Authors**: Minkyu Choi, S P Sharan, Harsh Goel, Sahil Shah, Sandeep Chinchali  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.17180)  
+
+**Abstract**: Current text-to-video (T2V) generation models are increasingly popular due to their ability to produce coherent videos from textual prompts. However, these models often struggle to generate semantically and temporally consistent videos when dealing with longer, more complex prompts involving multiple objects or sequential events. Additionally, the high computational costs associated with training or fine-tuning make direct improvements impractical. To overcome these limitations, we introduce \(\projectname\), a novel zero-training video refinement pipeline that leverages neuro-symbolic feedback to automatically enhance video generation, achieving superior alignment with the prompts. Our approach first derives the neuro-symbolic feedback by analyzing a formal video representation and pinpoints semantically inconsistent events, objects, and their corresponding frames. This feedback then guides targeted edits to the original video. Extensive empirical evaluations on both open-source and proprietary T2V models demonstrate that \(\projectname\) significantly enhances temporal and logical alignment across diverse prompts by almost $40\%$. 
+
+**Abstract (ZH)**: 当前基于文本到视频（T2V）生成模型因其能够从文本提示中生成连贯的视频而日益流行。然而，这些模型在处理较长、更为复杂的包含多个对象或顺序事件的提示时，往往难以生成语义和时间上一致的视频。此外，与训练或微调相关的高昂计算成本使得直接改进变得不切实际。为克服这些限制，我们引入了\(\projectname\)，一种新颖的无需训练的视频精炼管道，该管道利用神经符号反馈自动增强视频生成，实现了与提示的更佳对齐。我们的方法通过分析正式的视频表示来提取神经符号反馈，并确定语义不一致的事件、对象及其相应的帧。这种反馈then指导对原始视频的目标编辑。在对开源和专有T2V模型进行广泛实证评估中，\(\projectname\)在多样化的提示下显著提高了时间上和逻辑上的对齐程度，增幅接近40%。 
+
+---
+# Distilling semantically aware orders for autoregressive image generation 
+
+**Title (ZH)**: 语义意识的顺序提炼用于自回归图像生成 
+
+**Authors**: Rishav Pramanik, Antoine Poupon, Juan A. Rodriguez, Masih Aminbeidokhti, David Vazquez, Christopher Pal, Zhaozheng Yin, Marco Pedersoli  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.17069)  
+
+**Abstract**: Autoregressive patch-based image generation has recently shown competitive results in terms of image quality and scalability. It can also be easily integrated and scaled within Vision-Language models. Nevertheless, autoregressive models require a defined order for patch generation. While a natural order based on the dictation of the words makes sense for text generation, there is no inherent generation order that exists for image generation. Traditionally, a raster-scan order (from top-left to bottom-right) guides autoregressive image generation models. In this paper, we argue that this order is suboptimal, as it fails to respect the causality of the image content: for instance, when conditioned on a visual description of a sunset, an autoregressive model may generate clouds before the sun, even though the color of clouds should depend on the color of the sun and not the inverse. In this work, we show that first by training a model to generate patches in any-given-order, we can infer both the content and the location (order) of each patch during generation. Secondly, we use these extracted orders to finetune the any-given-order model to produce better-quality images. Through our experiments, we show on two datasets that this new generation method produces better images than the traditional raster-scan approach, with similar training costs and no extra annotations. 
+
+**Abstract (ZH)**: 基于自回归的片(patch)-级图像生成：任意顺序生成的方法及应用 
+
+---
+# Fried Parameter Estimation from Single Wavefront Sensor Image with Artificial Neural Networks 
+
+**Title (ZH)**: 基于人工神经网络的单波前传感器图像中的Fried参数估计 
+
+**Authors**: Jeffrey Smith, Taisei Fujii, Jesse Craney, Charles Gretton  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.17029)  
+
+**Abstract**: Atmospheric turbulence degrades the quality of astronomical observations in ground-based telescopes, leading to distorted and blurry images. Adaptive Optics (AO) systems are designed to counteract these effects, using atmospheric measurements captured by a wavefront sensor to make real-time corrections to the incoming wavefront. The Fried parameter, r0, characterises the strength of atmospheric turbulence and is an essential control parameter for optimising the performance of AO systems and more recently sky profiling for Free Space Optical (FSO) communication channels. In this paper, we develop a novel data-driven approach, adapting machine learning methods from computer vision for Fried parameter estimation from a single Shack-Hartmann or pyramid wavefront sensor image. Using these data-driven methods, we present a detailed simulation-based evaluation of our approach using the open-source COMPASS AO simulation tool to evaluate both the Shack-Hartmann and pyramid wavefront sensors. Our evaluation is over a range of guide star magnitudes, and realistic noise, atmospheric and instrument conditions. Remarkably, we are able to develop a single network-based estimator that is accurate in both open and closed-loop AO configurations. Our method accurately estimates the Fried parameter from a single WFS image directly from AO telemetry to a few millimetres. Our approach is suitable for real time control, exhibiting 0.83ms r0 inference times on retail NVIDIA RTX 3090 GPU hardware, and thereby demonstrating a compelling economic solution for use in real-time instrument control. 
+
+**Abstract (ZH)**: 基于机器学习的单幅波前传感器图像弗里德参数估计算法 
+
+---
+# Automating tumor-infiltrating lymphocyte assessment in breast cancer histopathology images using QuPath: a transparent and accessible machine learning pipeline 
+
+**Title (ZH)**: 使用QuPath自动化乳腺癌组织病理学图像中浸润性淋巴细胞评估：一个透明且易于访问的机器学习管道 
+
+**Authors**: Masoud Tafavvoghi, Lars Ailo Bongo, André Berli Delgado, Nikita Shvetsov, Anders Sildnes, Line Moi, Lill-Tove Rasmussen Busund, Kajsa Møllersen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.16979)  
+
+**Abstract**: In this study, we built an end-to-end tumor-infiltrating lymphocytes (TILs) assessment pipeline within QuPath, demonstrating the potential of easily accessible tools to perform complex tasks in a fully automatic fashion. First, we trained a pixel classifier to segment tumor, tumor-associated stroma, and other tissue compartments in breast cancer H&E-stained whole-slide images (WSI) to isolate tumor-associated stroma for subsequent analysis. Next, we applied a pre-trained StarDist deep learning model in QuPath for cell detection and used the extracted cell features to train a binary classifier distinguishing TILs from other cells. To evaluate our TILs assessment pipeline, we calculated the TIL density in each WSI and categorized them as low, medium, or high TIL levels. Our pipeline was evaluated against pathologist-assigned TIL scores, achieving a Cohen's kappa of 0.71 on the external test set, corroborating previous research findings. These results confirm that existing software can offer a practical solution for the assessment of TILs in H&E-stained WSIs of breast cancer. 
+
+**Abstract (ZH)**: 本研究在QuPath中构建了一个端到端的肿瘤浸润淋巴细胞(TILs)评估管道，展示了易获取工具在全自动执行复杂任务方面的潜力。我们首先训练了一个像素分类器，用于分割乳腺癌HE染色全组织切片图像(WSI)中的肿瘤、肿瘤相关间质和其他组织区域，以便后续分析肿瘤相关间质。接着，我们使用预训练的StarDist深度学习模型在QuPath中进行细胞检测，并利用提取的细胞特征训练一个二元分类器，以区分TILs和其他细胞。为了评估我们的TILs评估管道，我们在每张WSI中计算了TIL密度，并将其分为低、中、高TIL水平。我们的管道在病理学家评估的TIL评分上进行了验证，外部测试集上的Cohen's kappa值为0.71，验证了先前的研究发现。这些结果证实现有的软件可以为乳腺癌HE染色WSI中的TILs评估提供一种实用的解决方案。 
+
+---
+# Can deep neural networks learn biological vision? 
+
+**Title (ZH)**: 深度神经网络能否学习生物视觉？ 
+
+**Authors**: Drew Linsley, Pinyuan Feng, Thomas Serre  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.16940)  
+
+**Abstract**: Deep neural networks (DNNs) once showed increasing alignment with primate neural responses as they improved on computer vision benchmarks. This trend raised the exciting possibility that better models of biological vision would come as a byproduct of the deep learning revolution in artificial intelligence. However, the trend has reversed over recent years as DNNs have scaled to human or superhuman recognition accuracy, a divergence that may stem from modern DNNs learning to rely on different visual features than primates to solve tasks. Where will better computational models of biological vision come from? We propose that vision science must break from artificial intelligence to develop algorithms that are designed with biological visual systems in mind instead of internet data benchmarks. We predict that the next generation of deep learning models of biological vision will be trained with data diets, training routines, and objectives that are closer to those that shape human vision than those that are in use today. 
+
+**Abstract (ZH)**: 深度神经网络(DNNs)曾随着其在计算机视觉基准上的性能提升而越来越接近灵长类神经反应，这一趋势激发了生物学视觉更好模型可能作为人工智能深度学习革命的副产品出现的激动人心的可能性。然而，近年来随着DNNs达到人类或超人类识别准确性，这种趋势已发生逆转，分歧可能源于现代DNNs学习依赖于与灵长类不同的视觉特征来解决问题。那么，更好的生物学视觉计算模型将从哪里来呢？我们提出，视觉科学必须脱离人工智能，开发出旨在考虑生物学视觉系统而非互联网数据基准的算法。我们预测，下一代生物学视觉的深度学习模型将使用更接近塑造人类视觉的数据饮食、训练套路和目标进行训练。 
+
+---

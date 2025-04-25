@@ -1,0 +1,91 @@
+# Unifying Complementarity Constraints and Control Barrier Functions for Safe Whole-Body Robot Control 
+
+**Title (ZH)**: 统一互补约束与控制屏障函数以实现全身机器人安全控制 
+
+**Authors**: Rafael I. Cabral Muchacho, Riddhiman Laha, Florian T. Pokorny, Luis F.C. Figueredo, Nilanjan Chakraborty  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.17647)  
+
+**Abstract**: Safety-critical whole-body robot control demands reactive methods that ensure collision avoidance in real-time. Complementarity constraints and control barrier functions (CBF) have emerged as core tools for ensuring such safety constraints, and each represents a well-developed field. Despite addressing similar problems, their connection remains largely unexplored. This paper bridges this gap by formally proving the equivalence between these two methodologies for sampled-data, first-order systems, considering both single and multiple constraint scenarios. By demonstrating this equivalence, we provide a unified perspective on these techniques. This unification has theoretical and practical implications, facilitating the cross-application of robustness guarantees and algorithmic improvements between complementarity and CBF frameworks. We discuss these synergistic benefits and motivate future work in the comparison of the methods in more general cases. 
+
+**Abstract (ZH)**: 安全关键的全身机器人控制需要实时确保碰撞避免的反应性方法。补余约束和控制障碍函数（CBF）已成为确保此类安全约束的核心工具，每种方法都已得到了充分的发展。尽管它们解决类似的问题，但它们之间的联系仍主要未被探索。本文通过正式证明这两大方法在采样数据、一阶系统中的等价性（考虑单个和多个约束场景）来填补这一空白。通过展示这种等价性，我们提供了这些技术的统一视角。这种统一具有理论和实际意义，促进了补余和CBF框架之间稳健性保证和算法改进的交叉应用。我们讨论了这些协同性优势，并为在更一般情况下比较这些方法的未来工作提供了动机。 
+
+---
+# Flying through cluttered and dynamic environments with LiDAR 
+
+**Title (ZH)**: 在杂乱和动态环境中利用LiDAR飞行 
+
+**Authors**: Huajie Wu, Wenyi Liu, Yunfan Ren, Zheng Liu, Hairuo Wei, Fangcheng Zhu, Haotian Li, Fu Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.17569)  
+
+**Abstract**: Navigating unmanned aerial vehicles (UAVs) through cluttered and dynamic environments remains a significant challenge, particularly when dealing with fast-moving or sudden-appearing obstacles. This paper introduces a complete LiDAR-based system designed to enable UAVs to avoid various moving obstacles in complex environments. Benefiting the high computational efficiency of perception and planning, the system can operate in real time using onboard computing resources with low latency. For dynamic environment perception, we have integrated our previous work, M-detector, into the system. M-detector ensures that moving objects of different sizes, colors, and types are reliably detected. For dynamic environment planning, we incorporate dynamic object predictions into the integrated planning and control (IPC) framework, namely DynIPC. This integration allows the UAV to utilize predictions about dynamic obstacles to effectively evade them. We validate our proposed system through both simulations and real-world experiments. In simulation tests, our system outperforms state-of-the-art baselines across several metrics, including success rate, time consumption, average flight time, and maximum velocity. In real-world trials, our system successfully navigates through forests, avoiding moving obstacles along its path. 
+
+**Abstract (ZH)**: 基于LiDAR的无人机在复杂动态环境中规避移动障碍物的全程系统：M-detector集成与DynIPC框架应用 
+
+---
+# Robotic Grinding Skills Learning Based on Geodesic Length Dynamic Motion Primitives 
+
+**Title (ZH)**: 基于测地长度动态运动元的机器人磨削技能学习 
+
+**Authors**: Shuai Ke, Huan Zhao, Xiangfei Li, Zhiao Wei, Yecan Yin, Han Ding  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.17216)  
+
+**Abstract**: Learning grinding skills from human craftsmen via imitation learning has become a key research topic in robotic machining. Due to their strong generalization and robustness to external disturbances, Dynamical Movement Primitives (DMPs) offer a promising approach for robotic grinding skill learning. However, directly applying DMPs to grinding tasks faces challenges, such as low orientation accuracy, unsynchronized position-orientation-force, and limited generalization for surface trajectories. To address these issues, this paper proposes a robotic grinding skill learning method based on geodesic length DMPs (Geo-DMPs). First, a normalized 2D weighted Gaussian kernel and intrinsic mean clustering algorithm are developed to extract geometric features from multiple demonstrations. Then, an orientation manifold distance metric removes the time dependency in traditional orientation DMPs, enabling accurate orientation learning via Geo-DMPs. A synchronization encoding framework is further proposed to jointly model position, orientation, and force using a geodesic length-based phase function. This framework enables robotic grinding actions to be generated between any two surface points. Experiments on robotic chamfer grinding and free-form surface grinding validate that the proposed method achieves high geometric accuracy and generalization in skill encoding and generation. To our knowledge, this is the first attempt to use DMPs for jointly learning and generating grinding skills in position, orientation, and force on model-free surfaces, offering a novel path for robotic grinding. 
+
+**Abstract (ZH)**: 基于测地长度DMPs的机器人磨削技能学习方法 
+
+---
+# MAT-DiSMech: A Discrete Differential Geometry-based Computational Tool for Simulation of Rods, Shells, and Soft Robots 
+
+**Title (ZH)**: MAT-DiSMech: 基于离散微分几何的杆状结构、壳体和软机器人模拟计算工具 
+
+**Authors**: Radha Lahoti, M. Khalid Jawed  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.17186)  
+
+**Abstract**: Accurate and efficient simulation tools are essential in robotics, enabling the visualization of system dynamics and the validation of control laws before committing resources to physical experimentation. Developing physically accurate simulation tools is particularly challenging in soft robotics, largely due to the prevalence of geometrically nonlinear deformation. A variety of robot simulators tackle this challenge by using simplified modeling techniques -- such as lumped mass models -- which lead to physical inaccuracies in real-world applications. On the other hand, high-fidelity simulation methods for soft structures, like finite element analysis, offer increased accuracy but lead to higher computational costs. In light of this, we present a Discrete Differential Geometry-based simulator that provides a balance between physical accuracy and computational speed. Building on an extensive body of research on rod and shell-based representations of soft robots, our tool provides a pathway to accurately model soft robots in a computationally tractable manner. Our open-source MATLAB-based framework is capable of simulating the deformations of rods, shells, and their combinations, primarily utilizing implicit integration techniques. The software design is modular for the user to customize the code, for example, add new external forces and impose custom boundary conditions. The implementations for prevalent forces encountered in robotics, including gravity, contact, kinetic and viscous friction, and aerodynamic drag, have been provided. We provide several illustrative examples that showcase the capabilities and validate the physical accuracy of the simulator. The open-source code is available at this https URL. We anticipate that the proposed simulator can serve as an effective digital twin tool, enhancing the Sim2Real pathway in soft robotics research. 
+
+**Abstract (ZH)**: 基于离散微分几何的高效准确软机器人模拟器 
+
+---
+# Subframework-based Bearing Rigidity Maintenance Control in Multirobot Networks 
+
+**Title (ZH)**: 基于子框架的轴承刚性维持控制在多机器人网络中 
+
+**Authors**: J. Francisco Presenza, Ignacio Mas, J. Ignacio Alvarez-Hamelin, Juan I. Giribet  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.17103)  
+
+**Abstract**: This work presents a novel approach for analyzing and controlling bearing rigidity in multi-robot networks with dynamic topology. By decomposing the system's framework into subframeworks, we express bearing rigidity, a global property, as a set of local properties, with rigidity eigenvalues serving as natural local rigidity metrics. We propose a decentralized, scalable, gradient-based controller that uses only bearing measurements to execute mission-specific commands. The controller preserves bearing rigidity by maintaining rigidity eigenvalues above a threshold, and also avoids inter-robot collisions. Simulations confirm the scheme's effectiveness, with information exchange confined to subframeworks, underscoring its scalability and practicality. 
+
+**Abstract (ZH)**: 本工作提出了一种用于分析和控制具有动态拓扑的多机器人网络中轴承刚性的新颖方法。通过将系统的框架分解为子框架，我们将作为全局属性的轴承刚性表达为一组本地属性，使用刚性特征值作为自然的本地刚性度量。我们提出了一种仅使用轴承测量值的去中心化、可扩展、梯度基于的控制器，用于执行特定任务的指令。该控制器通过保持刚性特征值高于阈值来保存轴承刚性，并避免机器人之间的碰撞。仿真结果证实了该方案的有效性，信息交换仅限于子框架，突显了其可扩展性和实用性。 
+
+---
+# Geometric Formulation of Unified Force-Impedance Control on SE(3) for Robotic Manipulators 
+
+**Title (ZH)**: SE(3)中统一力-阻抗控制的几何表述及其在机器人 manipulator 中的应用 
+
+**Authors**: Joohwan Seo, Nikhil Potu Surya Prakash, Soomi Lee, Arvind Kruthiventy, Megan Teng, Jongeun Choi, Roberto Horowitz  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.17080)  
+
+**Abstract**: In this paper, we present an impedance control framework on the SE(3) manifold, which enables force tracking while guaranteeing passivity. Building upon the unified force-impedance control (UFIC) and our previous work on geometric impedance control (GIC), we develop the geometric unified force impedance control (GUFIC) to account for the SE(3) manifold structure in the controller formulation using a differential geometric perspective. As in the case of the UFIC, the GUFIC utilizes energy tank augmentation for both force-tracking and impedance control to guarantee the manipulator's passivity relative to external forces. This ensures that the end effector maintains safe contact interaction with uncertain environments and tracks a desired interaction force. Moreover, we resolve a non-causal implementation problem in the UFIC formulation by introducing velocity and force fields. Due to its formulation on SE(3), the proposed GUFIC inherits the desirable SE(3) invariance and equivariance properties of the GIC, which helps increase sample efficiency in machine learning applications where a learning algorithm is incorporated into the control law. The proposed control law is validated in a simulation environment under scenarios requiring tracking an SE(3) trajectory, incorporating both position and orientation, while exerting a force on a surface. The codes are available at this https URL. 
+
+**Abstract (ZH)**: 基于SE(3)流形的几何统一力阻抗控制框架：力跟踪与持久性保证 
+
+---
+# Longitudinal Control for Autonomous Racing with Combustion Engine Vehicles 
+
+**Title (ZH)**: 内燃机车辆的纵向控制在自主赛车中的应用 
+
+**Authors**: Phillip Pitschi, Simon Sagmeister, Sven Goblirsch, Markus Lienkamp, Boris Lohmann  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.17418)  
+
+**Abstract**: Usually, a controller for path- or trajectory tracking is employed in autonomous driving. Typically, these controllers generate high-level commands like longitudinal acceleration or force. However, vehicles with combustion engines expect different actuation inputs. This paper proposes a longitudinal control concept that translates high-level trajectory-tracking commands to the required low-level vehicle commands such as throttle, brake pressure and a desired gear. We chose a modular structure to easily integrate different trajectory-tracking control algorithms and vehicles. The proposed control concept enables a close tracking of the high-level control command. An anti-lock braking system, traction control, and brake warmup control also ensure a safe operation during real-world tests. We provide experimental validation of our concept using real world data with longitudinal accelerations reaching up to $25 \, \frac{\mathrm{m}}{\mathrm{s}^2}$. The experiments were conducted using the EAV24 racecar during the first event of the Abu Dhabi Autonomous Racing League on the Yas Marina Formula 1 Circuit. 
+
+**Abstract (ZH)**: 一种将高阶轨迹跟踪命令转化为低阶车辆控制命令的纵向控制概念：以实际数据验证在真实世界测试中的安全操作 
+
+---
