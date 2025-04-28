@@ -1,0 +1,182 @@
+# Boxi: Design Decisions in the Context of Algorithmic Performance for Robotics 
+
+**Title (ZH)**: 盒智能机器人算法性能视角下的设计决策 
+
+**Authors**: Jonas Frey, Turcan Tuna, Lanke Frank Tarimo Fu, Cedric Weibel, Katharine Patterson, Benjamin Krummenacher, Matthias Müller, Julian Nubert, Maurice Fallon, Cesar Cadena, Marco Hutter  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.18500)  
+
+**Abstract**: Achieving robust autonomy in mobile robots operating in complex and unstructured environments requires a multimodal sensor suite capable of capturing diverse and complementary information. However, designing such a sensor suite involves multiple critical design decisions, such as sensor selection, component placement, thermal and power limitations, compute requirements, networking, synchronization, and calibration. While the importance of these key aspects is widely recognized, they are often overlooked in academia or retained as proprietary knowledge within large corporations. To improve this situation, we present Boxi, a tightly integrated sensor payload that enables robust autonomy of robots in the wild. This paper discusses the impact of payload design decisions made to optimize algorithmic performance for downstream tasks, specifically focusing on state estimation and mapping. Boxi is equipped with a variety of sensors: two LiDARs, 10 RGB cameras including high-dynamic range, global shutter, and rolling shutter models, an RGB-D camera, 7 inertial measurement units (IMUs) of varying precision, and a dual antenna RTK GNSS system. Our analysis shows that time synchronization, calibration, and sensor modality have a crucial impact on the state estimation performance. We frame this analysis in the context of cost considerations and environment-specific challenges. We also present a mobile sensor suite `cookbook` to serve as a comprehensive guideline, highlighting generalizable key design considerations and lessons learned during the development of Boxi. Finally, we demonstrate the versatility of Boxi being used in a variety of applications in real-world scenarios, contributing to robust autonomy. More details and code: this https URL 
+
+**Abstract (ZH)**: 在复杂且未结构化的环境中实现移动机器人 robust autonomy 需要一个能够捕捉多样且互补信息的多模态传感器套件。然而，设计这样一个传感器套件涉及多个关键设计决策，例如传感器选择、组件布置、热管理和电源限制、计算要求、网络连接、同步和标定。尽管这些关键方面的重要性得到广泛认可，但在学术界常常被忽视，或者在大型公司中保留为专有知识。为改善这一情况，我们提出了 Boxi，一个高度集成的传感器负载，能够在野外实现机器人的 robust autonomy。本文讨论了为优化下游任务的算法性能所做出的负载设计决策，特别是针对状态估计和制图。Boxi 配备了多种传感器：两个 LiDAR，10 个 RGB 相机（包括高动态范围、全局快门和滚动快门模型），一个 RGB-D 相机，7 个不同精度的惯性测量单元（IMU），以及一个双天线 RTK GNSS 系统。我们的分析表明，时间同步、标定和传感器模态对状态估计性能至关重要。我们将此类分析置于成本考虑和环境特定挑战的背景下。此外，我们还提供了一个移动传感器套件 `cookbook`，旨在提供全面的指南，并强调在开发 Boxi 过程中获得的一般可推广的关键设计考虑和经验教训。最后，我们展示了 Boxi 在多种实际应用场景中的多功能性，为实现 robust autonomy 做出贡献。更多细节和代码：见此链接。 
+
+---
+# Instrumentation for Better Demonstrations: A Case Study 
+
+**Title (ZH)**: 更好的演示所需的仪器：一个案例研究 
+
+**Authors**: Remko Proesmans, Thomas Lips, Francis wyffels  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.18481)  
+
+**Abstract**: Learning from demonstrations is a powerful paradigm for robot manipulation, but its effectiveness hinges on both the quantity and quality of the collected data. In this work, we present a case study of how instrumentation, i.e. integration of sensors, can improve the quality of demonstrations and automate data collection. We instrument a squeeze bottle with a pressure sensor to learn a liquid dispensing task, enabling automated data collection via a PI controller. Transformer-based policies trained on automated demonstrations outperform those trained on human data in 78% of cases. Our findings indicate that instrumentation not only facilitates scalable data collection but also leads to better-performing policies, highlighting its potential in the pursuit of generalist robotic agents. 
+
+**Abstract (ZH)**: 基于演示学习是机器人操作的一种强大范式，但其效果取决于收集数据的数量和质量。在本研究中，我们通过传感器整合即传感器集成，探讨了如何提高演示质量并自动化数据收集。我们将压力传感器集成到挤压瓶中，以学习液体分配任务，并通过PI控制器实现自动化数据收集。基于变压器的策略在自动采集的演示数据上训练的效果，在78%的情况下优于在人类数据上训练的效果。我们的研究结果表明，传感器整合不仅促进了可扩展的数据收集，还导致了性能更好的策略，突显了其在追求通用机器人代理方面的潜力。 
+
+---
+# Action Flow Matching for Continual Robot Learning 
+
+**Title (ZH)**: 连续机器人学习中的动作流程匹配 
+
+**Authors**: Alejandro Murillo-Gonzalez, Lantao Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.18471)  
+
+**Abstract**: Continual learning in robotics seeks systems that can constantly adapt to changing environments and tasks, mirroring human adaptability. A key challenge is refining dynamics models, essential for planning and control, while addressing issues such as safe adaptation, catastrophic forgetting, outlier management, data efficiency, and balancing exploration with exploitation -- all within task and onboard resource constraints. Towards this goal, we introduce a generative framework leveraging flow matching for online robot dynamics model alignment. Rather than executing actions based on a misaligned model, our approach refines planned actions to better match with those the robot would take if its model was well aligned. We find that by transforming the actions themselves rather than exploring with a misaligned model -- as is traditionally done -- the robot collects informative data more efficiently, thereby accelerating learning. Moreover, we validate that the method can handle an evolving and possibly imperfect model while reducing, if desired, the dependency on replay buffers or legacy model snapshots. We validate our approach using two platforms: an unmanned ground vehicle and a quadrotor. The results highlight the method's adaptability and efficiency, with a record 34.2\% higher task success rate, demonstrating its potential towards enabling continual robot learning. Code: this https URL. 
+
+**Abstract (ZH)**: 机器人领域的持续学习旨在寻求能够在不断变化的环境和任务中不断适应的系统，模仿人类的适应能力。一个关键挑战是如何在确保规划和控制的同时精炼动力学模型，并解决安全适应、灾难性遗忘、离群值管理、数据效率以及在任务和机载资源约束下平衡探索与利用的问题。为此，我们提出了一种利用流匹配的生成框架，进行在线机器人动力学模型对齐。我们的方法通过改进计划动作以更好地匹配机器人实际应采取的动作，而非基于错位模型执行动作，从而更高效地收集信息性数据，加速学习过程。此外，我们验证了该方法能够处理动态变化且可能存在缺陷的模型，并在必要时减少对回放缓冲区或遗留模型快照的依赖。我们使用两个平台——无人地面车辆和四旋翼无人机——验证了该方法，并展示了其适应性和效率，任务成功率提高了34.2%，展示了其在持续机器人学习方面的潜力。代码：https://this-url.com。 
+
+---
+# The Autonomous Software Stack of the FRED-003C: The Development That Led to Full-Scale Autonomous Racing 
+
+**Title (ZH)**: FRED-003C自主软件堆栈：通往全方位自主赛车的开发历程 
+
+**Authors**: Zalán Demeter, Levente Puskás, Balázs Kovács, Ádám Matkovics, Martin Nádas, Balázs Tuba, Zsolt Farkas, Ármin Bogár-Németh, Gergely Bári  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.18439)  
+
+**Abstract**: Scientific development often takes place in the context of research projects carried out by dedicated students during their time at university. In the field of self-driving software research, the Formula Student Driverless competitions are an excellent platform to promote research and attract young engineers. This article presents the software stack developed by BME Formula Racing Team, that formed the foundation of the development that ultimately led us to full-scale autonomous racing. The experience we gained here contributes greatly to our successful participation in the Abu Dhabi Autonomous Racing League. We therefore think it is important to share the system we used, providing a valuable starting point for other ambitious students. We provide a detailed description of the software pipeline we used, including a brief description of the hardware-software architecture. Furthermore, we introduce the methods that we developed for the modules that implement perception; localisation and mapping, planning, and control tasks. 
+
+**Abstract (ZH)**: 科学的发展往往在大学生们在大学期间进行的专业研究项目中得以推进。在自动驾驶软件研究领域，Formula Student Driverless竞赛是推广研究和吸引年轻工程师的优秀平台。本文介绍了布达佩斯科技与经济大学Formula Racing队开发的软件栈，奠定了实现全规模自动驾驶赛车的基础。我们在这里获得的经验极大地促进了我们参与阿布扎比自动驾驶赛车联盟的顺利进行。因此，我们认为分享我们所使用系统的重要性，为其他志存高远的学生提供一个宝贵的研究起点。本文详细描述了我们使用的软件流水线，包括硬件-software架构的简要说明。此外，我们还介绍了为感知、定位与建图、规划和控制模块开发的方法。 
+
+---
+# Optimal Control of Sensor-Induced Illusions on Robotic Agents 
+
+**Title (ZH)**: 传感器诱导错觉下类人机器人的最优控制 
+
+**Authors**: Lorenzo Medici, Steven M. LaValle, Basak Sakcak  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.18339)  
+
+**Abstract**: This paper presents a novel problem of creating and regulating localization and navigation illusions considering two agents: a receiver and a producer. A receiver is moving on a plane localizing itself using the intensity of signals from three known towers observed at its position. Based on this position estimate, it follows a simple policy to reach its goal. The key idea is that a producer alters the signal intensities to alter the position estimate of the receiver while ensuring it reaches a different destination with the belief that it reached its goal. We provide a precise mathematical formulation of this problem and show that it allows standard techniques from control theory to be applied to generate localization and navigation illusions that result in a desired receiver behavior. 
+
+**Abstract (ZH)**: 本文提出了一种关于考虑两个代理（接收者和生产者）的定位和导航幻象创建与调控的新问题。接收者在平面上通过估计来自三个已知基站的信号强度来进行自我定位，并基于该位置估计遵循简单策略以实现其目标。关键思想是，生产者通过改变信号强度来干扰接收者的定位估计，同时确保接收者在错误的定位下到达不同的目的地。我们对该问题进行了精确的数学建模，并展示了如何应用控制理论中的标准技术来生成定位和导航幻象，从而实现期望的接收者行为。 
+
+---
+# Design and Evaluation of a UGV-Based Robotic Platform for Precision Soil Moisture Remote Sensing 
+
+**Title (ZH)**: 基于UGV的精准土壤水分遥感机器人平台的设计与评估 
+
+**Authors**: Ilektra Tsimpidi, Ilias Tevetzidis, Vidya Sumathy, George Nikolakopoulos  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.18284)  
+
+**Abstract**: This extended abstract presents the design and evaluation of AgriOne, an automated unmanned ground vehicle (UGV) platform for high precision sensing of soil moisture in large agricultural fields. The developed robotic system is equipped with a volumetric water content (VWC) sensor mounted on a robotic manipulator and utilizes a surface-aware data collection framework to ensure accurate measurements in heterogeneous terrains. The framework identifies and removes invalid data points where the sensor fails to penetrate the soil, ensuring data reliability. Multiple field experiments were conducted to validate the platform's performance, while the obtained results demonstrate the efficacy of the AgriOne robot in real-time data acquisition, reducing the need for permanent sensors and labor-intensive methods. 
+
+**Abstract (ZH)**: 扩展摘要：AgriOne自动化无人地面车辆平台在大田土壤水分高精度感知的设计与评估 
+
+---
+# Depth-Constrained ASV Navigation with Deep RL and Limited Sensing 
+
+**Title (ZH)**: 深度约束的ASV导航：基于深度RL和有限感知的方法 
+
+**Authors**: Amirhossein Zhalehmehrabi, Daniele Meli, Francesco Dal Santo, Francesco Trotti, Alessandro Farinelli  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.18253)  
+
+**Abstract**: Autonomous Surface Vehicles (ASVs) play a crucial role in maritime operations, yet their navigation in shallow-water environments remains challenging due to dynamic disturbances and depth constraints. Traditional navigation strategies struggle with limited sensor information, making safe and efficient operation difficult. In this paper, we propose a reinforcement learning (RL) framework for ASV navigation under depth constraints, where the vehicle must reach a target while avoiding unsafe areas with only a single depth measurement per timestep from a downward-facing Single Beam Echosounder (SBES). To enhance environmental awareness, we integrate Gaussian Process (GP) regression into the RL framework, enabling the agent to progressively estimate a bathymetric depth map from sparse sonar readings. This approach improves decision-making by providing a richer representation of the environment. Furthermore, we demonstrate effective sim-to-real transfer, ensuring that trained policies generalize well to real-world aquatic conditions. Experimental results validate our method's capability to improve ASV navigation performance while maintaining safety in challenging shallow-water environments. 
+
+**Abstract (ZH)**: 自主水面车辆在浅水环境下受深度约束的导航研究：基于强化学习的方法 
+
+---
+# Implementation Analysis of Collaborative Robot Digital Twins in Physics Engines 
+
+**Title (ZH)**: 物理引擎中协作机器人数字孪生的实现分析 
+
+**Authors**: Christian König, Jan Petershans, Jan Herbst, Matthias Rüb, Dennis Krummacker, Eric Mittag, Hand D. Schooten  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.18200)  
+
+**Abstract**: This paper presents a Digital Twin (DT) of a 6G communications system testbed that integrates two robotic manipulators with a high-precision optical infrared tracking system in Unreal Engine 5. Practical details of the setup and implementation insights provide valuable guidance for users aiming to replicate such systems, an endeavor that is crucial to advancing DT applications within the scientific community. Key topics discussed include video streaming, integration within the Robot Operating System 2 (ROS 2), and bidirectional communication. The insights provided are intended to support the development and deployment of DTs in robotics and automation research. 
+
+**Abstract (ZH)**: 本文 presents a数字孪生(Digital Twin, DT)实验床，该实验床在Unreal Engine 5中集成了两个机器人 manipulator 和一个高精度光学红外跟踪系统。实际搭建细节和实施 insights 为希望复制此类系统的用户提供了宝贵指导，这对于在科学界推进数字孪生应用至关重要。文中讨论的关键主题包括视频流传输、与Robot Operating System 2 (ROS 2)的集成以及双向通信。提供的见解旨在支持机器人与自动化研究中数字孪生的开发与部署。 
+
+---
+# Sampling-Based Grasp and Collision Prediction for Assisted Teleoperation 
+
+**Title (ZH)**: 基于采样的抓取和碰撞预测辅助远程操作 
+
+**Authors**: Simon Manschitz, Berk Gueler, Wei Ma, Dirk Ruiken  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.18186)  
+
+**Abstract**: Shared autonomy allows for combining the global planning capabilities of a human operator with the strengths of a robot such as repeatability and accurate control. In a real-time teleoperation setting, one possibility for shared autonomy is to let the human operator decide for the rough movement and to let the robot do fine adjustments, e.g., when the view of the operator is occluded. We present a learning-based concept for shared autonomy that aims at supporting the human operator in a real-time teleoperation setting. At every step, our system tracks the target pose set by the human operator as accurately as possible while at the same time satisfying a set of constraints which influence the robot's behavior. An important characteristic is that the constraints can be dynamically activated and deactivated which allows the system to provide task-specific assistance. Since the system must generate robot commands in real-time, solving an optimization problem in every iteration is not feasible. Instead, we sample potential target configurations and use Neural Networks for predicting the constraint costs for each configuration. By evaluating each configuration in parallel, our system is able to select the target configuration which satisfies the constraints and has the minimum distance to the operator's target pose with minimal delay. We evaluate the framework with a pick and place task on a bi-manual setup with two Franka Emika Panda robot arms with Robotiq grippers. 
+
+**Abstract (ZH)**: 基于学习的共享自主概念：支持实时遥操作的人机协作 
+
+---
+# RL-Driven Data Generation for Robust Vision-Based Dexterous Grasping 
+
+**Title (ZH)**: 基于RL驱动的数据生成的稳健视觉引导灵巧抓取 
+
+**Authors**: Atsushi Kanehira, Naoki Wake, Kazuhiro Sasabuchi, Jun Takamatsu, Katsushi Ikeuchi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.18084)  
+
+**Abstract**: This work presents reinforcement learning (RL)-driven data augmentation to improve the generalization of vision-action (VA) models for dexterous grasping. While real-to-sim-to-real frameworks, where a few real demonstrations seed large-scale simulated data, have proven effective for VA models, applying them to dexterous settings remains challenging: obtaining stable multi-finger contacts is nontrivial across diverse object shapes. To address this, we leverage RL to generate contact-rich grasping data across varied geometries. In line with the real-to-sim-to-real paradigm, the grasp skill is formulated as a parameterized and tunable reference trajectory refined by a residual policy learned via RL. This modular design enables trajectory-level control that is both consistent with real demonstrations and adaptable to diverse object geometries. A vision-conditioned policy trained on simulation-augmented data demonstrates strong generalization to unseen objects, highlighting the potential of our approach to alleviate the data bottleneck in training VA models. 
+
+**Abstract (ZH)**: 基于强化学习的数据增强方法以提高视-动模型在灵巧抓取任务中的泛化能力 
+
+---
+# AllTact Fin Ray: A Compliant Robot Gripper with Omni-Directional Tactile Sensing 
+
+**Title (ZH)**: AllTact Fin Ray：一种全向触觉感知的 compliant 机器人抓取器 
+
+**Authors**: Siwei Liang, Yixuan Guan, Jing Xu, Hongyu Qian, Xiangjun Zhang, Dan Wu, Wenbo Ding, Rui Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.18064)  
+
+**Abstract**: Tactile sensing plays a crucial role in robot grasping and manipulation by providing essential contact information between the robot and the environment. In this paper, we present AllTact Fin Ray, a novel compliant gripper design with omni-directional and local tactile sensing capabilities. The finger body is unibody-casted using transparent elastic silicone, and a camera positioned at the base of the finger captures the deformation of the whole body and the contact face. Due to the global deformation of the adaptive structure, existing vision-based tactile sensing approaches that assume constant illumination are no longer applicable. To address this, we propose a novel sensing method where the global deformation is first reconstructed from the image using edge features and spatial constraints. Then, detailed contact geometry is computed from the brightness difference against a dynamically retrieved reference image. Extensive experiments validate the effectiveness of our proposed gripper design and sensing method in contact detection, force estimation, object grasping, and precise manipulation. 
+
+**Abstract (ZH)**: 触觉感知在机器人抓取和操作中起着至关重要的作用，通过提供机器人与环境之间的关键接触信息。本文介绍了AllTact Fin Ray，一种集全方位和局部触觉感知能力于一身的新型顺应式 gripper 设计。手指主体通过透明弹性硅胶整体铸造，并在手指基部配置相机以捕捉全身和接触面的变形。由于适应性结构的整体变形，现有的基于视觉的触觉感知方法假设恒定照明不再适用。为了解决这一问题，我们提出了一种新型的感知方法，首先通过边缘特征和空间约束从图像重建整体变形，然后从与动态检索的参考图像对比的亮度差异中计算出详细的接触几何。广泛的实验证明了我们提出的 gripper 设计和感知方法在接触检测、力估计、物体抓取和精确操作中的有效性。 
+
+---
+# Fuzzy-RRT for Obstacle Avoidance in a 2-DOF Semi-Autonomous Surgical Robotic Arm 
+
+**Title (ZH)**: 基于模糊RRT的2-DOF半自主手术机器人避障算法 
+
+**Authors**: Kaaustaaub Shankar, Wilhelm Louw, Bharadwaj Dogga, Nick Ernest, Tim Arnett, Kelly Cohen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.17979)  
+
+**Abstract**: AI-driven semi-autonomous robotic surgery is essential for addressing the medical challenges of long-duration interplanetary missions, where limited crew sizes and communication delays restrict traditional surgical approaches. Current robotic surgery systems require full surgeon control, demanding extensive expertise and limiting feasibility in space. We propose a novel adaptation of the Fuzzy Rapidly-exploring Random Tree algorithm for obstacle avoidance and collaborative control in a two-degree-of-freedom robotic arm modeled on the Miniaturized Robotic-Assisted surgical system. It was found that the Fuzzy Rapidly-exploring Random Tree algorithm resulted in an 743 percent improvement to path search time and 43 percent improvement to path cost. 
+
+**Abstract (ZH)**: 基于人工智能的半自主机器人手术对于应对长时间星际任务的医疗挑战至关重要，这些任务由于有限的乘员规模和通信延迟限制了传统手术方法。当前的机器人手术系统需要全程医生控制，这要求 extensive 的专业知识并限制了其在太空中的可行性。我们提出了一种对模糊快速扩展随机树算法的新型适应，以避免障碍和在基于 Miniaturized Robotic-Assisted 手术系统的两自由度机器人臂上实现协作控制。研究发现，模糊快速扩展随机树算法将路径搜索时间提高了 743%，路径成本降低了 43%。 
+
+---
+# Terrain-Aware Kinodynamic Planning with Efficiently Adaptive State Lattices for Mobile Robot Navigation in Off-Road Environments 
+
+**Title (ZH)**: 基于地形感知的自适应状态格网高效适配 kino-dynamic 规划在非结构化环境中的移动机器人导航 
+
+**Authors**: Eric R. Damm, Jason M. Gregory, Eli S. Lancaster, Felix A. Sanchez, Daniel M. Sahu, Thomas M. Howard  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.17889)  
+
+**Abstract**: To safely traverse non-flat terrain, robots must account for the influence of terrain shape in their planned motions. Terrain-aware motion planners use an estimate of the vehicle roll and pitch as a function of pose, vehicle suspension, and ground elevation map to weigh the cost of edges in the search space. Encoding such information in a traditional two-dimensional cost map is limiting because it is unable to capture the influence of orientation on the roll and pitch estimates from sloped terrain. The research presented herein addresses this problem by encoding kinodynamic information in the edges of a recombinant motion planning search space based on the Efficiently Adaptive State Lattice (EASL). This approach, which we describe as a Kinodynamic Efficiently Adaptive State Lattice (KEASL), differs from the prior representation in two ways. First, this method uses a novel encoding of velocity and acceleration constraints and vehicle direction at expanded nodes in the motion planning graph. Second, this approach describes additional steps for evaluating the roll, pitch, constraints, and velocities associated with poses along each edge during search in a manner that still enables the graph to remain recombinant. Velocities are computed using an iterative bidirectional method using Eulerian integration that more accurately estimates the duration of edges that are subject to terrain-dependent velocity limits. Real-world experiments on a Clearpath Robotics Warthog Unmanned Ground Vehicle were performed in a non-flat, unstructured environment. Results from 2093 planning queries from these experiments showed that KEASL provided a more efficient route than EASL in 83.72% of cases when EASL plans were adjusted to satisfy terrain-dependent velocity constraints. An analysis of relative runtimes and differences between planned routes is additionally presented. 
+
+**Abstract (ZH)**: 面向非平坦地形的机器人安全穿越路径规划中需考虑地形形状的影响。基于Efficiently Adaptive State Lattice (EASL)的Kinodynamic Efficiently Adaptive State Lattice (KEASL)在重组合运动规划搜索空间的边缘中编码动力学信息以解决此问题。 
+
+---
+# Set Phasers to Stun: Beaming Power and Control to Mobile Robots with Laser Light 
+
+**Title (ZH)**: 设置phasers至眩晕：通过激光光束为移动机器人传输能量与控制 
+
+**Authors**: Charles J. Carver, Hadleigh Schwartz, Toma Itagaki, Zachary Englhardt, Kechen Liu, Megan Graciela Nauli Manik, Chun-Cheng Chang, Vikram Iyer, Brian Plancher, Xia Zhou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.17865)  
+
+**Abstract**: We present Phaser, a flexible system that directs narrow-beam laser light to moving robots for concurrent wireless power delivery and communication. We design a semi-automatic calibration procedure to enable fusion of stereo-vision-based 3D robot tracking with high-power beam steering, and a low-power optical communication scheme that reuses the laser light as a data channel. We fabricate a Phaser prototype using off-the-shelf hardware and evaluate its performance with battery-free autonomous robots. Phaser delivers optical power densities of over 110 mW/cm$^2$ and error-free data to mobile robots at multi-meter ranges, with on-board decoding drawing 0.3 mA (97\% less current than Bluetooth Low Energy). We demonstrate Phaser fully powering gram-scale battery-free robots to nearly 2x higher speeds than prior work while simultaneously controlling them to navigate around obstacles and along paths. Code, an open-source design guide, and a demonstration video of Phaser is available at this https URL. 
+
+**Abstract (ZH)**: Phaser：一种针对移动机器人实现 concurrent 无线功率传输和通信的灵活系统 
+
+---
