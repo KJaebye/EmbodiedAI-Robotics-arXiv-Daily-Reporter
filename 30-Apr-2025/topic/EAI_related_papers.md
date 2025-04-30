@@ -1,0 +1,227 @@
+# XPG-RL: Reinforcement Learning with Explainable Priority Guidance for Efficiency-Boosted Mechanical Search 
+
+**Title (ZH)**: XPG-RL: 具有可解释优先级指导的增强学习以提高机械搜索效率 
+
+**Authors**: Yiting Zhang, Shichen Li, Elena Shrestha  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.20969)  
+
+**Abstract**: Mechanical search (MS) in cluttered environments remains a significant challenge for autonomous manipulators, requiring long-horizon planning and robust state estimation under occlusions and partial observability. In this work, we introduce XPG-RL, a reinforcement learning framework that enables agents to efficiently perform MS tasks through explainable, priority-guided decision-making based on raw sensory inputs. XPG-RL integrates a task-driven action prioritization mechanism with a learned context-aware switching strategy that dynamically selects from a discrete set of action primitives such as target grasping, occlusion removal, and viewpoint adjustment. Within this strategy, a policy is optimized to output adaptive threshold values that govern the discrete selection among action primitives. The perception module fuses RGB-D inputs with semantic and geometric features to produce a structured scene representation for downstream decision-making. Extensive experiments in both simulation and real-world settings demonstrate that XPG-RL consistently outperforms baseline methods in task success rates and motion efficiency, achieving up to 4.5$\times$ higher efficiency in long-horizon tasks. These results underscore the benefits of integrating domain knowledge with learnable decision-making policies for robust and efficient robotic manipulation. 
+
+**Abstract (ZH)**: 基于可解释优先级引导的感知与学习框架（XPG-RL）在复杂环境中的机械搜索任务 
+
+---
+# Opinion-Driven Decision-Making for Multi-Robot Navigation through Narrow Corridors 
+
+**Title (ZH)**: 基于意见驱动的多机器人在狭窄走廊导航的决策方法 
+
+**Authors**: Norah K. Alghamdi, Shinkyu Park  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.20947)  
+
+**Abstract**: We propose an opinion-driven navigation framework for multi-robot traversal through a narrow corridor. Our approach leverages a multi-agent decision-making model known as the Nonlinear Opinion Dynamics (NOD) to address the narrow corridor passage problem, formulated as a multi-robot navigation game. By integrating the NOD model with a multi-robot path planning algorithm, we demonstrate that the framework effectively reduces the likelihood of deadlocks during corridor traversal. To ensure scalability with an increasing number of robots, we introduce a game reduction technique that enables efficient coordination in larger groups. Extensive simulation studies are conducted to validate the effectiveness of the proposed approach. 
+
+**Abstract (ZH)**: 基于意见驱动的多robot在狭窄走廊导航框架 
+
+---
+# SoccerDiffusion: Toward Learning End-to-End Humanoid Robot Soccer from Gameplay Recordings 
+
+**Title (ZH)**: SoccerDiffusion: 从比赛记录学习端到端类人机器人足球 
+
+**Authors**: Florian Vahl, Jörn Griepenburg, Jan Gutsche, Jasper Güldenstein, Jianwei Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.20808)  
+
+**Abstract**: This paper introduces SoccerDiffusion, a transformer-based diffusion model designed to learn end-to-end control policies for humanoid robot soccer directly from real-world gameplay recordings. Using data collected from RoboCup competitions, the model predicts joint command trajectories from multi-modal sensor inputs, including vision, proprioception, and game state. We employ a distillation technique to enable real-time inference on embedded platforms that reduces the multi-step diffusion process to a single step. Our results demonstrate the model's ability to replicate complex motion behaviors such as walking, kicking, and fall recovery both in simulation and on physical robots. Although high-level tactical behavior remains limited, this work provides a robust foundation for subsequent reinforcement learning or preference optimization methods. We release the dataset, pretrained models, and code under: this https URL 
+
+**Abstract (ZH)**: 本文介绍了SoccerDiffusion，这是一种基于变压器的扩散模型，旨在直接从实际比赛录像中学习人形机器人足球的端到端控制策略。利用RoboCup competitions收集的数据，该模型能够从多元传感器输入（包括视觉、本体感觉和比赛状态）中预测关节命令轨迹。我们采用蒸馏技术，使该模型能够实时在嵌入式平台上进行推理，将多步扩散过程缩减为一步。实验结果表明，该模型能够在仿真和物理机器人上复制复杂的运动行为，如行走、踢球和摔倒恢复。尽管高级战术行为仍受到限制，但本工作为后续的强化学习或偏好优化方法提供了坚实的基础。我们将在以下网址发布数据集、预训练模型和代码：this https URL。 
+
+---
+# Confidence-based Intent Prediction for Teleoperation in Bimanual Robotic Suturing 
+
+**Title (ZH)**: 基于置信度的双臂机器人缝合远程操作意图预测 
+
+**Authors**: Zhaoyang Jacopo Hu, Haozheng Xu, Sion Kim, Yanan Li, Ferdinando Rodriguez y Baena, Etienne Burdet  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.20761)  
+
+**Abstract**: Robotic-assisted procedures offer enhanced precision, but while fully autonomous systems are limited in task knowledge, difficulties in modeling unstructured environments, and generalisation abilities, fully manual teleoperated systems also face challenges such as delay, stability, and reduced sensory information. To address these, we developed an interactive control strategy that assists the human operator by predicting their motion plan at both high and low levels. At the high level, a surgeme recognition system is employed through a Transformer-based real-time gesture classification model to dynamically adapt to the operator's actions, while at the low level, a Confidence-based Intention Assimilation Controller adjusts robot actions based on user intent and shared control paradigms. The system is built around a robotic suturing task, supported by sensors that capture the kinematics of the robot and task dynamics. Experiments across users with varying skill levels demonstrated the effectiveness of the proposed approach, showing statistically significant improvements in task completion time and user satisfaction compared to traditional teleoperation. 
+
+**Abstract (ZH)**: 辅助机器人手术Procedure提供增强的精确度，但全自主系统在任务知识、环境建模能力和泛化能力方面受限，而全手动遥操作系统则面临延迟、稳定性和减少的感官信息等问题。为解决这些问题，我们开发了一种交互控制策略，该策略通过高、低层预测操作员的动作计划来辅助人类操作员。在高层，通过基于Transformer的实时手势分类模型实现手术元识别系统，以动态适应操作员的动作；在低层，基于信心程度的意图同化控制器根据用户意图和共享控制范式调整机器人动作。该系统基于一个机器人缝合任务构建，支持捕捉机器人和任务动力学的传感器。针对不同技能水平的用户进行的实验证明了所提方法的有效性，相比传统遥操作，显示出统计显著的任务完成时间和用户满意度的改善。 
+
+---
+# A Survey on Event-based Optical Marker Systems 
+
+**Title (ZH)**: 基于事件的光学标记系统综述 
+
+**Authors**: Nafiseh Jabbari Tofighi, Maxime Robic, Fabio Morbidi, Pascal Vasseur  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.20736)  
+
+**Abstract**: The advent of event-based cameras, with their low latency, high dynamic range, and reduced power consumption, marked a significant change in robotic vision and machine perception. In particular, the combination of these neuromorphic sensors with widely-available passive or active optical markers (e.g. AprilTags, arrays of blinking LEDs), has recently opened up a wide field of possibilities. This survey paper provides a comprehensive review on Event-Based Optical Marker Systems (EBOMS). We analyze the basic principles and technologies on which these systems are based, with a special focus on their asynchronous operation and robustness against adverse lighting conditions. We also describe the most relevant applications of EBOMS, including object detection and tracking, pose estimation, and optical communication. The article concludes with a discussion of possible future research directions in this rapidly-emerging and multidisciplinary field. 
+
+**Abstract (ZH)**: 基于事件的光学标记系统：原理、技术与应用综述 
+
+---
+# Multi-Sensor Fusion for Quadruped Robot State Estimation using Invariant Filtering and Smoothing 
+
+**Title (ZH)**: 基于不变滤波和平滑的四足机器人状态估计多传感器融合 
+
+**Authors**: Ylenia Nisticò, Hajun Kim, João Carlos Virgolino Soares, Geoff Fink, Hae-Won Park, Claudio Semini  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.20615)  
+
+**Abstract**: This letter introduces two multi-sensor state estimation frameworks for quadruped robots, built on the Invariant Extended Kalman Filter (InEKF) and Invariant Smoother (IS). The proposed methods, named E-InEKF and E-IS, fuse kinematics, IMU, LiDAR, and GPS data to mitigate position drift, particularly along the z-axis, a common issue in proprioceptive-based approaches. We derived observation models that satisfy group-affine properties to integrate LiDAR odometry and GPS into InEKF and IS. LiDAR odometry is incorporated using Iterative Closest Point (ICP) registration on a parallel thread, preserving the computational efficiency of proprioceptive-based state estimation. We evaluate E-InEKF and E-IS with and without exteroceptive sensors, benchmarking them against LiDAR-based odometry methods in indoor and outdoor experiments using the KAIST HOUND2 robot. Our methods achieve lower Relative Position Errors (RPE) and significantly reduce Absolute Trajectory Error (ATE), with improvements of up to 28% indoors and 40% outdoors compared to LIO-SAM and FAST-LIO2. Additionally, we compare E-InEKF and E-IS in terms of computational efficiency and accuracy. 
+
+**Abstract (ZH)**: 基于不变扩展卡尔曼滤波器和不变平滑器的四肢机器人多传感器状态估计框架 
+
+---
+# PRISM: Projection-based Reward Integration for Scene-Aware Real-to-Sim-to-Real Transfer with Few Demonstrations 
+
+**Title (ZH)**: PRISM: 基于投影的奖励集成方法，实现基于场景的Few-Shot Real-to-Sim-to-Real 转移学习 
+
+**Authors**: Haowen Sun, Han Wang, Chengzhong Ma, Shaolong Zhang, Jiawei Ye, Xingyu Chen, Xuguang Lan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.20520)  
+
+**Abstract**: Learning from few demonstrations to develop policies robust to variations in robot initial positions and object poses is a problem of significant practical interest in robotics. Compared to imitation learning, which often struggles to generalize from limited samples, reinforcement learning (RL) can autonomously explore to obtain robust behaviors. Training RL agents through direct interaction with the real world is often impractical and unsafe, while building simulation environments requires extensive manual effort, such as designing scenes and crafting task-specific reward functions. To address these challenges, we propose an integrated real-to-sim-to-real pipeline that constructs simulation environments based on expert demonstrations by identifying scene objects from images and retrieving their corresponding 3D models from existing libraries. We introduce a projection-based reward model for RL policy training that is supervised by a vision-language model (VLM) using human-guided object projection relationships as prompts, with the policy further fine-tuned using expert demonstrations. In general, our work focuses on the construction of simulation environments and RL-based policy training, ultimately enabling the deployment of reliable robotic control policies in real-world scenarios. 
+
+**Abstract (ZH)**: 从少量示范中学习，以开发在机器人初始位置和物体姿态变化下具有鲁棒性的策略是机器人学中一个具有重要实际意义的问题。与往往难以从有限样本中泛化的imitation learning相比，reinforcement learning (RL) 可以自主探索以获得鲁棒行为。通过直接与真实世界交互来训练RL代理通常 impractical且不安全，而构建模拟环境则需要大量的手工努力，例如设计场景并构建任务特定的奖励函数。为解决这些挑战，我们提出了一种集成的real-to-sim-to-real工作流，该工作流基于专家示范构建模拟环境，通过从图像中识别场景对象并从现有库中检索其对应的3D模型来实现。我们引入了一种基于投影的RL策略训练奖励模型，该模型由视觉语言模型(VLM)监督，使用人类引导的物体投影关系作为提示，策略进一步通过专家示范进行微调。总体而言，我们的工作集中在模拟环境的构建和基于RL的策略训练上，最终使可靠的机器人控制策略能够在实际场景中部署。 
+
+---
+# SAS-Prompt: Large Language Models as Numerical Optimizers for Robot Self-Improvement 
+
+**Title (ZH)**: SAS-Prompt: 大型语言模型作为数值优化器实现机器人自我提升 
+
+**Authors**: Heni Ben Amor, Laura Graesser, Atil Iscen, David D'Ambrosio, Saminda Abeyruwan, Alex Bewley, Yifan Zhou, Kamalesh Kalirathinam, Swaroop Mishra, Pannag Sanketi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.20459)  
+
+**Abstract**: We demonstrate the ability of large language models (LLMs) to perform iterative self-improvement of robot policies. An important insight of this paper is that LLMs have a built-in ability to perform (stochastic) numerical optimization and that this property can be leveraged for explainable robot policy search. Based on this insight, we introduce the SAS Prompt (Summarize, Analyze, Synthesize) -- a single prompt that enables iterative learning and adaptation of robot behavior by combining the LLM's ability to retrieve, reason and optimize over previous robot traces in order to synthesize new, unseen behavior. Our approach can be regarded as an early example of a new family of explainable policy search methods that are entirely implemented within an LLM. We evaluate our approach both in simulation and on a real-robot table tennis task. Project website: this http URL 
+
+**Abstract (ZH)**: 我们展示了大型语言模型（LLMs）执行机器人策略迭代自我优化的能力。本文的一个重要见解是，LLMs 内置了进行（随机的）数值优化的能力，这一特性可以用于可解释的机器人策略搜索。基于这一见解，我们引入了 SAS 提示（Summarize, Analyze, Synthesize）——一个单一的提示，通过结合LLM检索、推理和优化之前机器人行为的能力来综合新的未见过的行为，以实现迭代的学习和适应。我们的方法可以被视为一种新的可解释策略搜索方法的早期范例，这些方法完全在LLM中实现。我们在仿真和真实的乒乓球机器人任务中评估了我们的方法。项目网址：this http URL 
+
+---
+# System Identification of Thrust and Torque Characteristics for a Bipedal Robot with Integrated Propulsion 
+
+**Title (ZH)**: 双足机器人集成推进系统推力和扭矩特性的系统识别 
+
+**Authors**: Thomas Cahill  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.20313)  
+
+**Abstract**: Bipedal robots represent a remarkable and sophisticated class of robotics, designed to emulate human form and movement. Their development marks a significant milestone in the field. However, even the most advanced bipedal robots face challenges related to terrain variation, obstacle negotiation, payload management, weight distribution, and recovering from stumbles. These challenges can be mitigated by incorporating thrusters, which enhance stability on uneven terrain, facilitate obstacle avoidance, and improve recovery after stumbling. Harpy is a bipedal robot equipped with six joints and two thrusters, serving as a hardware platform for implementing and testing advanced control algorithms. This thesis focuses on characterizing Harpy's hardware to improve the system's overall robustness, controllability, and predictability. It also examines simulation results for predicting thrust in propeller-based mechanisms, the integration of thrusters into the Harpy platform and associated testing, as well as an exploration of motor torque characterization methods and their application to hardware in relation to closed-loop force-based impedance control. 
+
+**Abstract (ZH)**: 双足机器人代表一类优异而复杂的机器人，设计旨在模拟人类形态和运动。它们的发展标志着领域内的一个重要里程碑。然而，即使是最先进的双足机器人仍然面临地形变化、障碍物规避、载荷管理、重量分布以及摔倒后恢复等挑战。通过集成推进器，可以减轻这些挑战，推进器能提高不规则地形上的稳定性、帮助规避障碍物，并改善摔倒后的恢复能力。Harpy是一种配备了六个关节和两个推进器的双足机器人，作为实现和测试高级控制算法的硬件平台。本文 focuses于表征Harpy的硬件，以提高系统的整体稳健性、可控性和可预测性。同时，本文还探讨了基于推进器机制的推力预测仿真结果、将推进器集成到Harpy平台及其相关测试，并探索电动机扭矩表征方法及其在闭环力基阻抗控制中的应用。 
+
+---
+# Deformable Multibody Modeling for Model Predictive Control in Legged Locomotion with Embodied Compliance 
+
+**Title (ZH)**: 基于体业态 compliant 态控制的腿足运动中可变形多体建模 
+
+**Authors**: Keran Ye, Konstantinos Karydis  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.20301)  
+
+**Abstract**: The paper presents a method to stabilize dynamic gait for a legged robot with embodied compliance. Our approach introduces a unified description for rigid and compliant bodies to approximate their deformation and a formulation for deformable multibody systems. We develop the centroidal composite predictive deformed inertia (CCPDI) tensor of a deformable multibody system and show how to integrate it with the standard-of-practice model predictive controller (MPC). Simulation shows that the resultant control framework can stabilize trot stepping on a quadrupedal robot with both rigid and compliant spines under the same MPC configurations. Compared to standard MPC, the developed CCPDI-enabled MPC distributes the ground reactive forces closer to the heuristics for body balance, and it is thus more likely to stabilize the gaits of the compliant robot. A parametric study shows that our method preserves some level of robustness within a suitable envelope of key parameter values. 
+
+**Abstract (ZH)**: 一种基于体质性顺应性的Legged机器人动态步态稳定方法 
+
+---
+# TesserAct: Learning 4D Embodied World Models 
+
+**Title (ZH)**: TesserAct: 学习四维实体世界模型 
+
+**Authors**: Haoyu Zhen, Qiao Sun, Hongxin Zhang, Junyan Li, Siyuan Zhou, Yilun Du, Chuang Gan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.20995)  
+
+**Abstract**: This paper presents an effective approach for learning novel 4D embodied world models, which predict the dynamic evolution of 3D scenes over time in response to an embodied agent's actions, providing both spatial and temporal consistency. We propose to learn a 4D world model by training on RGB-DN (RGB, Depth, and Normal) videos. This not only surpasses traditional 2D models by incorporating detailed shape, configuration, and temporal changes into their predictions, but also allows us to effectively learn accurate inverse dynamic models for an embodied agent. Specifically, we first extend existing robotic manipulation video datasets with depth and normal information leveraging off-the-shelf models. Next, we fine-tune a video generation model on this annotated dataset, which jointly predicts RGB-DN (RGB, Depth, and Normal) for each frame. We then present an algorithm to directly convert generated RGB, Depth, and Normal videos into a high-quality 4D scene of the world. Our method ensures temporal and spatial coherence in 4D scene predictions from embodied scenarios, enables novel view synthesis for embodied environments, and facilitates policy learning that significantly outperforms those derived from prior video-based world models. 
+
+**Abstract (ZH)**: 本文提出了一种有效的方法，用于学习新颖的4D具身世界模型，这些模型能够预测在具身代理行动响应下3D场景随时间的动态演变，同时提供时空一致性。我们提出通过训练RGB-DN（RGB、深度和法线）视频来学习4D世界模型。这种方法不仅超越了传统的2D模型，通过其预测中包含了详细的形状、配置和时间变化，还使我们能够有效地学习具身代理的精确逆动力学模型。具体而言，我们首先利用现成的模型扩展现有的具身操作视频数据集，使其包含深度和法线信息。接着，我们在该标注数据集上微调视频生成模型，该模型联合预测每一帧的RGB-DN（RGB、深度和法线）。然后，我们提出了一种算法，可以直接将生成的RGB、深度和法线视频转换成高质量的4D世界场景。本方法确保了具身场景中4D场景预测的时间和空间一致性，支持具身环境的新视角合成，并促进了显著优于先前基于视频的世界模型所导出策略的学习。 
+
+---
+# Scenario-based Compositional Verification of Autonomous Systems with Neural Perception 
+
+**Title (ZH)**: 基于场景的自主系统神经感知组成验证 
+
+**Authors**: Christopher Watson, Rajeev Alur, Divya Gopinath, Ravi Mangal, Corina S. Pasareanu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.20942)  
+
+**Abstract**: Recent advances in deep learning have enabled the development of autonomous systems that use deep neural networks for perception. Formal verification of these systems is challenging due to the size and complexity of the perception DNNs as well as hard-to-quantify, changing environment conditions. To address these challenges, we propose a probabilistic verification framework for autonomous systems based on the following key concepts: (1) Scenario-based Modeling: We decompose the task (e.g., car navigation) into a composition of scenarios, each representing a different environment condition. (2) Probabilistic Abstractions: For each scenario, we build a compact abstraction of perception based on the DNN's performance on an offline dataset that represents the scenario's environment condition. (3) Symbolic Reasoning and Acceleration: The abstractions enable efficient compositional verification of the autonomous system via symbolic reasoning and a novel acceleration proof rule that bounds the error probability of the system under arbitrary variations of environment conditions. We illustrate our approach on two case studies: an experimental autonomous system that guides airplanes on taxiways using high-dimensional perception DNNs and a simulation model of an F1Tenth autonomous car using LiDAR observations. 
+
+**Abstract (ZH)**: Recent Advances in Deep Learning Have Enabled the Development of Autonomous Systems That Use Deep Neural Networks for Perception: A Probabilistic Verification Framework Based on Scenario-Based Modeling, Probabilistic Abstractions, and Symbolic Reasoning 
+
+---
+# Cognitive maps are generative programs 
+
+**Title (ZH)**: 认知地图是生成程序。 
+
+**Authors**: Marta Kryven, Cole Wyeth, Aidan Curtis, Kevin Ellis  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.20628)  
+
+**Abstract**: Making sense of the world and acting in it relies on building simplified mental representations that abstract away aspects of reality. This principle of cognitive mapping is universal to agents with limited resources. Living organisms, people, and algorithms all face the problem of forming functional representations of their world under various computing constraints. In this work, we explore the hypothesis that human resource-efficient planning may arise from representing the world as predictably structured. Building on the metaphor of concepts as programs, we propose that cognitive maps can take the form of generative programs that exploit predictability and redundancy, in contrast to directly encoding spatial layouts. We use a behavioral experiment to show that people who navigate in structured spaces rely on modular planning strategies that align with programmatic map representations. We describe a computational model that predicts human behavior in a variety of structured scenarios. This model infers a small distribution over possible programmatic cognitive maps conditioned on human prior knowledge of the world, and uses this distribution to generate resource-efficient plans. Our models leverages a Large Language Model as an embedding of human priors, implicitly learned through training on a vast corpus of human data. Our model demonstrates improved computational efficiency, requires drastically less memory, and outperforms unstructured planning algorithms with cognitive constraints at predicting human behavior, suggesting that human planning strategies rely on programmatic cognitive maps. 
+
+**Abstract (ZH)**: 理解世界和行动依赖于构建简化的心智表征，抽象掉现实的某些方面。这一认知制图的原则对资源有限的代理是普遍适用的。生物体、人和算法都在各种计算约束下构建其世界的功能性表征。在这项工作中，我们探讨了人类资源高效规划可能是通过将世界表示为可预测结构而产生的假设。基于概念即程序的隐喻，我们提出认知地图可以是生成程序的形式，利用可预测性和冗余性，而不是直接编码空间布局。我们通过行为实验展示了在结构化空间中导航的人依赖于与程序化地图表示相一致的模块化规划策略。我们描述了一个计算模型，该模型在各种结构化场景中预测人类行为。该模型根据人类对世界的先验知识推断出可能的程序化认知地图的小概率分布，并使用该分布生成资源高效的规划。我们的模型利用一个大规模语言模型作为人类先验知识的嵌入，并通过对大量人类数据的训练隐式学习。该模型展示了更好的计算效率，所需内存大幅减少，并能在认知约束下预测人类行为方面优于非结构化规划算法，表明人类规划策略依赖于程序化认知地图。 
+
+---
+# A Summary on GUI Agents with Foundation Models Enhanced by Reinforcement Learning 
+
+**Title (ZH)**: 基于强化学习增强的基础模型GUI代理综述 
+
+**Authors**: Jiahao Li, Kaer Huang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.20464)  
+
+**Abstract**: Graphical User Interface (GUI) agents, driven by Multi-modal Large Language Models (MLLMs), have emerged as a promising paradigm for enabling intelligent interaction with digital systems. This paper provides a structured summary of recent advances in GUI agents, focusing on architectures enhanced by Reinforcement Learning (RL). We first formalize GUI agent tasks as Markov Decision Processes and discuss typical execution environments and evaluation metrics. We then review the modular architecture of (M)LLM-based GUI agents, covering Perception, Planning, and Acting modules, and trace their evolution through representative works. Furthermore, we categorize GUI agent training methodologies into Prompt-based, Supervised Fine-Tuning (SFT)-based, and RL-based approaches, highlighting the progression from simple prompt engineering to dynamic policy learning via RL. Our summary illustrates how recent innovations in multimodal perception, decision reasoning, and adaptive action generation have significantly improved the generalization and robustness of GUI agents in complex real-world environments. We conclude by identifying key challenges and future directions for building more capable and reliable GUI agents. 
+
+**Abstract (ZH)**: 多模态大型语言模型驱动的图形用户界面（GUI）代理在过去的研究进展中，作为一种使智能交互成为数字系统可能的有前途的范式已然出现。本文提供了一个结构化的总结，重点介绍了强化学习（RL）增强的GUI代理的最新进展。我们首先将GUI代理任务形式化为马尔可夫决策过程（MDP），讨论其典型执行环境和评估指标。然后，我们回顾了基于（多模态）大型语言模型（MLLM）的GUI代理的模块化架构，涵盖了感知、规划和执行模块，并通过代表性工作追踪了它们的发展。此外，我们按照基于提示、监督微调（SFT）和基于RL的方法对GUI代理的训练方法进行了分类，突出了从简单的提示工程到通过RL的动态策略学习的进步。我们的总结展示了多模态感知、决策推理和适应性动作生成的最新创新如何显著提高了GUI代理在复杂实际环境中的泛化能力和鲁棒性。最后，我们指出了构建更强大、更可靠的GUI代理的关键挑战和未来方向。 
+
+---
+# Personalized Artificial General Intelligence (AGI) via Neuroscience-Inspired Continuous Learning Systems 
+
+**Title (ZH)**: 基于神经科学启发的连续学习系统的个性化人工通用 intelligence 
+
+**Authors**: Rajeev Gupta, Suhani Gupta, Ronak Parikh, Divya Gupta, Amir Javaheri, Jairaj Singh Shaktawat  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.20109)  
+
+**Abstract**: Artificial Intelligence has made remarkable advancements in recent years, primarily driven by increasingly large deep learning models. However, achieving true Artificial General Intelligence (AGI) demands fundamentally new architectures rather than merely scaling up existing models. Current approaches largely depend on expanding model parameters, which improves task-specific performance but falls short in enabling continuous, adaptable, and generalized learning. Achieving AGI capable of continuous learning and personalization on resource-constrained edge devices is an even bigger challenge.
+This paper reviews the state of continual learning and neuroscience-inspired AI, and proposes a novel architecture for Personalized AGI that integrates brain-like learning mechanisms for edge deployment. We review literature on continuous lifelong learning, catastrophic forgetting, and edge AI, and discuss key neuroscience principles of human learning, including Synaptic Pruning, Hebbian plasticity, Sparse Coding, and Dual Memory Systems, as inspirations for AI systems. Building on these insights, we outline an AI architecture that features complementary fast-and-slow learning modules, synaptic self-optimization, and memory-efficient model updates to support on-device lifelong adaptation.
+Conceptual diagrams of the proposed architecture and learning processes are provided. We address challenges such as catastrophic forgetting, memory efficiency, and system scalability, and present application scenarios for mobile AI assistants and embodied AI systems like humanoid robots. We conclude with key takeaways and future research directions toward truly continual, personalized AGI on the edge. While the architecture is theoretical, it synthesizes diverse findings and offers a roadmap for future implementation. 
+
+**Abstract (ZH)**: 人工智能在近年来取得了显著进步，主要得益于日益庞大的深度学习模型。然而，实现真正的通用人工智能（AGI）需要从根本上新的架构，而不仅仅是扩大现有模型的规模。当前的方法主要依赖于扩展模型参数，这种方法在提高特定任务性能方面表现出色，但在支持连续、适应性和泛化的学习方面却显得不足。在资源受限的边缘设备上实现具备连续学习和个性化能力的AGI更是更大的挑战。
+
+本文回顾了连续学习和受神经科学启发的人工智能的研究现状，并提出了一种新的架构，用于边缘部署的个性化AGI，该架构集成了类似于大脑的学习机制。我们回顾了连续终身学习、灾难性遗忘和边缘AI方面的文献，并讨论了人类学习的关键神经科学原理，包括突触修剪、Hebbian可塑性、稀疏编码和双记忆系统，以启发AI系统的设计。基于这些见解，我们概述了一种AI架构，该架构具备互补的快慢学习模块、突触自优化和内存高效的模型更新机制，以支持设备上的终身适应。
+
+本文提供了所提出架构和学习过程的概念性图表。我们解决了灾难性遗忘、存储效率和系统可扩展性等挑战，并介绍了移动AI助理和类人机器人等具身AI系统中的应用情景。最后总结了关键要点，并提出了通向真正具备连续性和个性化的边缘AGI的未来研究方向。虽然该架构是理论性的，但它综合了多方面的研究发现，并为未来的实施提供了路线图。 
+
+---
+# AI Recommendation Systems for Lane-Changing Using Adherence-Aware Reinforcement Learning 
+
+**Title (ZH)**: 基于遵守意识增强学习的车道变换推荐系统 
+
+**Authors**: Weihao Sun, Heeseung Bang, Andreas A. Malikopoulos  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.20187)  
+
+**Abstract**: In this paper, we present an adherence-aware reinforcement learning (RL) approach aimed at seeking optimal lane-changing recommendations within a semi-autonomous driving environment to enhance a single vehicle's travel efficiency. The problem is framed within a Markov decision process setting and is addressed through an adherence-aware deep Q network, which takes into account the partial compliance of human drivers with the recommended actions. This approach is evaluated within CARLA's driving environment under realistic scenarios. 
+
+**Abstract (ZH)**: 本文提出一种依从性感知强化学习方法，旨在在半自主驾驶环境中寻找最优换道建议，以提升单辆车辆的出行效率。该问题被建模为马尔可夫决策过程，并通过一种考虑人类驾驶员部分依从性的依从性感知深层Q网络来解决。该方法在CARLA的驾驶环境中，在现实场景下进行了评估。 
+
+---
+# An Integrated Framework for Contextual Personalized LLM-Based Food Recommendation 
+
+**Title (ZH)**: 基于语境的个性化LLM食品推荐集成框架 
+
+**Authors**: Ali Rostami  
+
+**Link**: [PDF](https://arxiv.org/pdf/2504.20092)  
+
+**Abstract**: Personalized food recommendation systems (Food-RecSys) critically underperform due to fragmented component understanding and the failure of conventional machine learning with vast, imbalanced food data. While Large Language Models (LLMs) offer promise, current generic Recommendation as Language Processing (RLP) strategies lack the necessary specialization for the food domain's complexity. This thesis tackles these deficiencies by first identifying and analyzing the essential components for effective Food-RecSys. We introduce two key innovations: a multimedia food logging platform for rich contextual data acquisition and the World Food Atlas, enabling unique geolocation-based food analysis previously unavailable. Building on this foundation, we pioneer the Food Recommendation as Language Processing (F-RLP) framework - a novel, integrated approach specifically architected for the food domain. F-RLP leverages LLMs in a tailored manner, overcoming the limitations of generic models and providing a robust infrastructure for effective, contextual, and truly personalized food recommendations. 
+
+**Abstract (ZH)**: 个性化食品推荐系统（Food-RecSys）由于组件理解碎片化以及传统机器学习在海量不平衡食品数据中的失败而表现不佳。尽管大型语言模型（LLMs）展现出潜力，但当前通用的推荐即语言处理（RLP）策略缺乏针对食品领域复杂性的必要专业化。本论文通过首先识别并分析有效Food-RecSys的核心组件来进行弥补。我们引入了两项创新：一个多媒体食品记录平台以获取丰富上下文数据以及世界食品地图，这使得基于地理位置的食品分析成为可能。在此基础上，我们开创了食品推荐即语言处理（F-RLP）框架——一种专为食品领域设计的创新性综合方法。F-RLP 专门利用 LLMs，克服了通用模型的局限性，并为有效、上下文相关且真正个性化的食品推荐提供了坚实的基础。 
+
+---
