@@ -1,0 +1,26 @@
+# LightEMMA: Lightweight End-to-End Multimodal Model for Autonomous Driving 
+
+**Title (ZH)**: 轻量级端到端多模态模型LightEMMA：面向自动驾驶 
+
+**Authors**: Zhijie Qiao, Haowei Li, Zhong Cao, Henry X. Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.00284)  
+
+**Abstract**: Vision-Language Models (VLMs) have demonstrated significant potential for end-to-end autonomous driving. However, fully exploiting their capabilities for safe and reliable vehicle control remains an open research challenge. To systematically examine advances and limitations of VLMs in driving tasks, we introduce LightEMMA, a Lightweight End-to-End Multimodal Model for Autonomous driving. LightEMMA provides a unified, VLM-based autonomous driving framework without ad hoc customizations, enabling easy integration and evaluation of evolving state-of-the-art commercial and open-source models. We construct twelve autonomous driving agents using various VLMs and evaluate their performance on the nuScenes prediction task, comprehensively assessing metrics such as inference time, computational cost, and predictive accuracy. Illustrative examples highlight that, despite their strong scenario interpretation capabilities, VLMs' practical performance in autonomous driving tasks remains concerning, emphasizing the need for further improvements. The code is available at this https URL. 
+
+**Abstract (ZH)**: Vision-Language 模型（VLMs）在端到端自动驾驶中展现了显著的潜力。然而，全面利用其能力以实现安全可靠的车辆控制仍然是一个开放的研究挑战。为了系统地评估 VLMs 在驾驶任务中的进展和局限性，我们提出了 LightEMMA，即一个轻量级端到端多模态模型用于自动驾驶。LightEMMA 提供了一个统一的、基于 VLM 的自动驾驶框架，无需额外的定制化，使各种最新的商业和开源模型的集成和评估变得容易。我们使用多种 VLM 构建了十二个自动驾驶代理，并在 nuScenes 预测任务上评估了它们的表现，全面评估了诸如推理时间、计算成本和预测准确性等指标。示例说明尽管 VLMs 具有强大的场景解释能力，但在自动驾驶任务中的实际表现仍然令人担忧，强调了进一步改进的必要性。代码可在以下链接获取：this https URL。 
+
+---
+# Detecting and Mitigating Hateful Content in Multimodal Memes with Vision-Language Models 
+
+**Title (ZH)**: 基于视觉-语言模型检测与缓解多模态 meme 中的恶意内容 
+
+**Authors**: Minh-Hao Van, Xintao Wu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.00150)  
+
+**Abstract**: The rapid evolution of social media has provided enhanced communication channels for individuals to create online content, enabling them to express their thoughts and opinions. Multimodal memes, often utilized for playful or humorous expressions with visual and textual elements, are sometimes misused to disseminate hate speech against individuals or groups. While the detection of hateful memes is well-researched, developing effective methods to transform hateful content in memes remains a significant challenge. Leveraging the powerful generation and reasoning capabilities of Vision-Language Models (VLMs), we address the tasks of detecting and mitigating hateful content. This paper presents two key contributions: first, a definition-guided prompting technique for detecting hateful memes, and second, a unified framework for mitigating hateful content in memes, named UnHateMeme, which works by replacing hateful textual and/or visual components. With our definition-guided prompts, VLMs achieve impressive performance on hateful memes detection task. Furthermore, our UnHateMeme framework, integrated with VLMs, demonstrates a strong capability to convert hateful memes into non-hateful forms that meet human-level criteria for hate speech and maintain multimodal coherence between image and text. Through empirical experiments, we show the effectiveness of state-of-the-art pretrained VLMs such as LLaVA, Gemini and GPT-4o on the proposed tasks, providing a comprehensive analysis of their respective strengths and limitations for these tasks. This paper aims to shed light on important applications of VLMs for ensuring safe and respectful online environments. 
+
+**Abstract (ZH)**: 社会媒体的迅速发展为个体提供了增强的沟通渠道，使其能够创建在线内容并表达思想和意见。多模态表情包通常用于具有视觉和文本元素的轻松或幽默表达，有时却被滥用以传播针对个人或群体的仇恨言论。虽然仇恨表情包的检测已有充分研究，但开发有效的转化仇恨内容的方法仍然是一个重大挑战。利用视觉-语言模型（VLMs）的强大生成和推理能力，我们解决了检测和减轻仇恨内容的任务。本文提出了两项关键贡献：首先，一种基于定义的提示技术用于检测仇恨表情包；其次，一个统一框架用于减轻表情包中的仇恨内容，命名为UnHateMeme，该框架通过替换仇恨的文本和/或视觉组件来工作。借助我们的基于定义的提示，VLMs在仇恨表情包检测任务中实现了令人印象深刻的性能。此外，我们的UnHateMeme框架与VLMs相结合，展示了强大的能力，将仇恨表情包转化为符合人类标准且具有图像和文本多模态一致性的人无仇恨形式。通过实证实验，我们展示了预训练的LLaVA、Gemini和GPT-4o等最先进的VLMs在所提任务中的有效性，并对这些模型在这些任务中的优缺点进行了全面分析。本文旨在揭示VLMs在确保安全和尊重的在线环境中的重要性应用。 
+
+---
