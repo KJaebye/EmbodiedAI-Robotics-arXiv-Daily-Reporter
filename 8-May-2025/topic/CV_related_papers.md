@@ -1,0 +1,221 @@
+# DFVO: Learning Darkness-free Visible and Infrared Image Disentanglement and Fusion All at Once 
+
+**Title (ZH)**: DFVO: 一次学习无暗场的可见光和红外图像解耦与融合 
+
+**Authors**: Qi Zhou, Yukai Shi, Xiaojun Yang, Xiaoyu Xian, Lunjia Liao, Ruimao Zhang, Liang Lin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.04526)  
+
+**Abstract**: Visible and infrared image fusion is one of the most crucial tasks in the field of image fusion, aiming to generate fused images with clear structural information and high-quality texture features for high-level vision tasks. However, when faced with severe illumination degradation in visible images, the fusion results of existing image fusion methods often exhibit blurry and dim visual effects, posing major challenges for autonomous driving. To this end, a Darkness-Free network is proposed to handle Visible and infrared image disentanglement and fusion all at Once (DFVO), which employs a cascaded multi-task approach to replace the traditional two-stage cascaded training (enhancement and fusion), addressing the issue of information entropy loss caused by hierarchical data transmission. Specifically, we construct a latent-common feature extractor (LCFE) to obtain latent features for the cascaded tasks strategy. Firstly, a details-extraction module (DEM) is devised to acquire high-frequency semantic information. Secondly, we design a hyper cross-attention module (HCAM) to extract low-frequency information and preserve texture features from source images. Finally, a relevant loss function is designed to guide the holistic network learning, thereby achieving better image fusion. Extensive experiments demonstrate that our proposed approach outperforms state-of-the-art alternatives in terms of qualitative and quantitative evaluations. Particularly, DFVO can generate clearer, more informative, and more evenly illuminated fusion results in the dark environments, achieving best performance on the LLVIP dataset with 63.258 dB PSNR and 0.724 CC, providing more effective information for high-level vision tasks. Our code is publicly accessible at this https URL. 
+
+**Abstract (ZH)**: 可见光和红外图像融合是图像融合领域中最关键的任务之一，旨在生成具有清晰结构信息和高质量纹理特征的融合图像，以满足高级视觉任务的需求。然而，当面对可见光图像中的严重光照退化时，现有图像融合方法的融合结果通常表现出模糊和暗淡的视觉效果，这给自主驾驶带来了重大挑战。为解决这一问题，提出了一种黑暗无感网络（DFVO）来一次性处理可见光和红外图像的解耦合与融合，该网络采用级联多任务方法替代传统的两阶段级联训练（增强和融合），以解决由分层数据传输引起的信息熵损失问题。具体地，构建了一个潜在通用特征提取器（LCFE）以获取级联任务策略的潜在特征。首先，设计了一个细节提取模块（DEM）以获取高频语义信息。其次，设计了一个超交叉注意模块（HCAM）以提取低频信息并保留源图像的纹理特征。最后，设计了一个相关损失函数以指导整体网络学习，从而实现更好的图像融合。 extensive实验表明，与现有先进方法相比，我们提出的方法在定性和定量评估中均表现出 superiority。特别是，DFVO可以在黑暗环境中生成更清晰、更具信息量且亮度更均匀的融合结果，并在LLVIP数据集上实现了63.258 dB PSNR和0.724 CC的最佳性能，为高级视觉任务提供更有效信息。源代码已公开。 
+
+---
+# Efficient Flow Matching using Latent Variables 
+
+**Title (ZH)**: 高效流匹配使用潜在变量 
+
+**Authors**: Anirban Samaddar, Yixuan Sun, Viktor Nilsson, Sandeep Madireddy  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.04486)  
+
+**Abstract**: Flow matching models have shown great potential in image generation tasks among probabilistic generative models. Building upon the ideas of continuous normalizing flows, flow matching models generalize the transport path of the diffusion models from a simple prior distribution to the data. Most flow matching models in the literature do not explicitly model the underlying structure/manifold in the target data when learning the flow from a simple source distribution like the standard Gaussian. This leads to inefficient learning, especially for many high-dimensional real-world datasets, which often reside in a low-dimensional manifold. Existing strategies of incorporating manifolds, including data with underlying multi-modal distribution, often require expensive training and hence frequently lead to suboptimal performance. To this end, we present \texttt{Latent-CFM}, which provides simplified training/inference strategies to incorporate multi-modal data structures using pretrained deep latent variable models. Through experiments on multi-modal synthetic data and widely used image benchmark datasets, we show that \texttt{Latent-CFM} exhibits improved generation quality with significantly less training ($\sim 50\%$ less in some cases) and computation than state-of-the-art flow matching models. Using a 2d Darcy flow dataset, we demonstrate that our approach generates more physically accurate samples than competitive approaches. In addition, through latent space analysis, we demonstrate that our approach can be used for conditional image generation conditioned on latent features. 
+
+**Abstract (ZH)**: 基于流动匹配模型在概率生成模型中的图像生成任务中展示了巨大的潜力。基于连续正则化流动的思想，流动匹配模型将扩散模型的传输路径从简单的先验分布推广到数据分布。现有的大多数流动匹配模型在从标准高斯分布这样的简单源分布学习流动时，并不明确建模目标数据的潜在结构/流形。这导致了效率低下，尤其是在许多高维的实际数据集上，这些数据集往往存在于低维流形中。现有集成流形的策略，包括具有潜在多元分布的数据，通常需要昂贵的训练，因此经常导致次优性能。为了解决这一问题，我们提出了\texttt{Latent-CFM}，它提供了一种简化的训练/推理策略，使用预训练的深度潜变量模型来集成多元数据结构。通过在多元合成数据和广泛使用的图像基准数据集上的实验，我们展示了\texttt{Latent-CFM}在显著减少训练时间和计算的同时，生成质量有所提高。通过2D达西流动数据集，我们证明了我们的方法能够生成比竞争方法更符合物理特性的样本。此外，通过潜空间分析，我们展示了我们的方法可以用潜特征条件生成图像。 
+
+---
+# Recognizing Ornaments in Vocal Indian Art Music with Active Annotation 
+
+**Title (ZH)**: 用主动注释识别印度艺术音乐中的装饰音 
+
+**Authors**: Sumit Kumar, Parampreet Singh, Vipul Arora  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.04419)  
+
+**Abstract**: Ornamentations, embellishments, or microtonal inflections are essential to melodic expression across many musical traditions, adding depth, nuance, and emotional impact to performances. Recognizing ornamentations in singing voices is key to MIR, with potential applications in music pedagogy, singer identification, genre classification, and controlled singing voice generation. However, the lack of annotated datasets and specialized modeling approaches remains a major obstacle for progress in this research area. In this work, we introduce Rāga Ornamentation Detection (ROD), a novel dataset comprising Indian classical music recordings curated by expert musicians. The dataset is annotated using a custom Human-in-the-Loop tool for six vocal ornaments marked as event-based labels. Using this dataset, we develop an ornamentation detection model based on deep time-series analysis, preserving ornament boundaries during the chunking of long audio recordings. We conduct experiments using different train-test configurations within the ROD dataset and also evaluate our approach on a separate, manually annotated dataset of Indian classical concert recordings. Our experimental results support the superior performance of our proposed approach over the baseline CRNN. 
+
+**Abstract (ZH)**: 装饰音、装饰手法或微分音变 harmonization 在许多音乐传统的旋律表达中是必不可少的，它们为表演增添了深度、细腻和情感冲击力。在唱歌声音中识别装饰音是音乐信息检索中的关键问题，具有音乐教育、歌手识别、音乐体裁分类和受控唱歌声音生成等方面的应用潜力。然而，缺乏标注数据集和专门的建模方法仍然是该研究领域进步的主要障碍。在这项工作中，我们引入了Rāga装饰音检测（ROD），这是一个由专家音乐家精心挑选的印度古典音乐录音组成的新型数据集。该数据集使用自定义的人机交互标注工具为六个音区装饰音标记事件级标签。利用该数据集，我们基于深度时间序列分析开发了一个装饰音检测模型，在长音频录音的分段过程中保留了装饰音边界。我们使用ROD数据集的不同训练-测试配置进行了实验，并且还对该数据集之外的手动标注印度古典音乐会录音数据集进行了评估。我们的实验结果支持我们提出的模型优于基准CRNN的优越性能。 
+
+---
+# Deep residual learning with product units 
+
+**Title (ZH)**: 深度残差学习与产品单元 
+
+**Authors**: Ziyuan Li, Uwe Jaekel, Babette Dellen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.04397)  
+
+**Abstract**: We propose a deep product-unit residual neural network (PURe) that integrates product units into residual blocks to improve the expressiveness and parameter efficiency of deep convolutional networks. Unlike standard summation neurons, product units enable multiplicative feature interactions, potentially offering a more powerful representation of complex patterns. PURe replaces conventional convolutional layers with 2D product units in the second layer of each residual block, eliminating nonlinear activation functions to preserve structural information. We validate PURe on three benchmark datasets. On Galaxy10 DECaLS, PURe34 achieves the highest test accuracy of 84.89%, surpassing the much deeper ResNet152, while converging nearly five times faster and demonstrating strong robustness to Poisson noise. On ImageNet, PURe architectures outperform standard ResNet models at similar depths, with PURe34 achieving a top-1 accuracy of 80.27% and top-5 accuracy of 95.78%, surpassing deeper ResNet variants (ResNet50, ResNet101) while utilizing significantly fewer parameters and computational resources. On CIFAR-10, PURe consistently outperforms ResNet variants across varying depths, with PURe272 reaching 95.01% test accuracy, comparable to ResNet1001 but at less than half the model size. These results demonstrate that PURe achieves a favorable balance between accuracy, efficiency, and robustness. Compared to traditional residual networks, PURe not only achieves competitive classification performance with faster convergence and fewer parameters, but also demonstrates greater robustness to noise. Its effectiveness across diverse datasets highlights the potential of product-unit-based architectures for scalable and reliable deep learning in computer vision. 
+
+**Abstract (ZH)**: 我们提出了一种深度产品单元残差神经网络（PURe），通过将产品单元整合到残差块中，以提高深卷积网络的表达能力和参数效率。与标准求和神经元不同，产品单元能够实现乘法特征交互，可能提供对复杂模式更具表现力的表示。PURe在每个残差块的第二层用2D产品单元替换传统的卷积层，保留结构信息的同时消除非线性激活函数。我们在三个基准数据集上验证了PURe。在Galaxy10 DECaLS上，PURe34达到最高的测试准确率84.89%，超过更深的ResNet152，同时收敛速度快近五倍，并且表现出对泊松噪声较强的鲁棒性。在ImageNet上，与深度相似的标准ResNet模型相比，PURe结构表现出更好的性能，PURe34的Top-1准确率为80.27%，Top-5准确率为95.78%，使用的参数和计算资源远远少于更深的ResNet变体（ResNet50, ResNet101）。在CIFAR-10上，PURe在不同深度下始终超越ResNet变体，PURe272达到95.01%的测试准确率，性能相当于ResNet1001但模型大小仅为一半。这些结果表明PURe在准确率、效率和鲁棒性之间实现了良好的平衡。与传统残差网络相比，PURe不仅在收敛速度更快和参数更少的情况下实现了竞争力的分类性能，而且还表现出对噪声的更强鲁棒性。其在多样数据集上的有效性突显了基于产品单元架构在计算机视觉中实现可扩展性和可靠性的潜力。 
+
+---
+# Balancing Accuracy, Calibration, and Efficiency in Active Learning with Vision Transformers Under Label Noise 
+
+**Title (ZH)**: 在标签噪声条件下，基于视觉变换器的主动学习中平衡准确率、校准性和效率 
+
+**Authors**: Moseli Mots'oehli, Hope Mogale, Kyungim Baek  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.04375)  
+
+**Abstract**: Fine-tuning pre-trained convolutional neural networks on ImageNet for downstream tasks is well-established. Still, the impact of model size on the performance of vision transformers in similar scenarios, particularly under label noise, remains largely unexplored. Given the utility and versatility of transformer architectures, this study investigates their practicality under low-budget constraints and noisy labels. We explore how classification accuracy and calibration are affected by symmetric label noise in active learning settings, evaluating four vision transformer configurations (Base and Large with 16x16 and 32x32 patch sizes) and three Swin Transformer configurations (Tiny, Small, and Base) on CIFAR10 and CIFAR100 datasets, under varying label noise rates. Our findings show that larger ViT models (ViTl32 in particular) consistently outperform their smaller counterparts in both accuracy and calibration, even under moderate to high label noise, while Swin Transformers exhibit weaker robustness across all noise levels. We find that smaller patch sizes do not always lead to better performance, as ViTl16 performs consistently worse than ViTl32 while incurring a higher computational cost. We also find that information-based Active Learning strategies only provide meaningful accuracy improvements at moderate label noise rates, but they result in poorer calibration compared to models trained on randomly acquired labels, especially at high label noise rates. We hope these insights provide actionable guidance for practitioners looking to deploy vision transformers in resource-constrained environments, where balancing model complexity, label noise, and compute efficiency is critical in model fine-tuning or distillation. 
+
+**Abstract (ZH)**: 预训练卷积神经网络在ImageNet上的微调在下游任务中已有广泛应用，但在类似场景下（特别是存在标签噪声时），视觉变换器模型大小对性能的影响仍 largely unexplored。鉴于变换器架构的实用性和灵活性，本研究探讨了在低预算约束和噪声标签条件下变换器的实际应用。我们研究了噪声环境下活性学习设置中分类准确性和校准度受到对称标签噪声的影响，并在CIFAR10和CIFAR100数据集上评估了四种视觉变换器配置（16x16和32x32嵌patch大小的Base和Large模型）以及三种Swin Transformer配置（Tiny、Small和Base模型）在不同标签噪声率下的表现。研究发现，在中等到高标签噪声水平下，较大的ViT模型（特别是ViTl32）在准确性和校准度上均优于较小的模型，而Swin Transformer在所有噪声水平下的鲁棒性较弱。我们还发现，较小的嵌patch大小并不总是带来更好的性能，因为ViTl16的表现通常劣于ViTl32且计算成本更高。此外，我们发现基于信息的活性学习策略仅在中等标签噪声率下能提供有意义的准确度提升，但在高标签噪声率下会降低校准度，尤其是在随机获取标签训练的模型环境下表现更差。希望这些见解为希望在资源受限环境中部署视觉变换器的实践者提供可操作的指导，特别是在模型微调或知识蒸馏时需要平衡模型复杂性、标签噪声和计算效率。 
+
+---
+# An Enhanced YOLOv8 Model for Real-Time and Accurate Pothole Detection and Measurement 
+
+**Title (ZH)**: 增强的YOLOv8模型实现实时精准坑洞检测与测量 
+
+**Authors**: Mustafa Yurdakul, Şakir Tasdemir  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.04207)  
+
+**Abstract**: Potholes cause vehicle damage and traffic accidents, creating serious safety and economic problems. Therefore, early and accurate detection of potholes is crucial. Existing detection methods are usually only based on 2D RGB images and cannot accurately analyze the physical characteristics of potholes. In this paper, a publicly available dataset of RGB-D images (PothRGBD) is created and an improved YOLOv8-based model is proposed for both pothole detection and pothole physical features analysis. The Intel RealSense D415 depth camera was used to collect RGB and depth data from the road surfaces, resulting in a PothRGBD dataset of 1000 images. The data was labeled in YOLO format suitable for segmentation. A novel YOLO model is proposed based on the YOLOv8n-seg architecture, which is structurally improved with Dynamic Snake Convolution (DSConv), Simple Attention Module (SimAM) and Gaussian Error Linear Unit (GELU). The proposed model segmented potholes with irregular edge structure more accurately, and performed perimeter and depth measurements on depth maps with high accuracy. The standard YOLOv8n-seg model achieved 91.9% precision, 85.2% recall and 91.9% mAP@50. With the proposed model, the values increased to 93.7%, 90.4% and 93.8% respectively. Thus, an improvement of 1.96% in precision, 6.13% in recall and 2.07% in mAP was achieved. The proposed model performs pothole detection as well as perimeter and depth measurement with high accuracy and is suitable for real-time applications due to its low model complexity. In this way, a lightweight and effective model that can be used in deep learning-based intelligent transportation solutions has been acquired. 
+
+**Abstract (ZH)**: 基于RGB-D图像的沥青路面坑洞检测与物理特征分析 
+
+---
+# S3D: Sketch-Driven 3D Model Generation 
+
+**Title (ZH)**: S3D: 草图驱动的3D模型生成 
+
+**Authors**: Hail Song, Wonsik Shin, Naeun Lee, Soomin Chung, Nojun Kwak, Woontack Woo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.04185)  
+
+**Abstract**: Generating high-quality 3D models from 2D sketches is a challenging task due to the inherent ambiguity and sparsity of sketch data. In this paper, we present S3D, a novel framework that converts simple hand-drawn sketches into detailed 3D models. Our method utilizes a U-Net-based encoder-decoder architecture to convert sketches into face segmentation masks, which are then used to generate a 3D representation that can be rendered from novel views. To ensure robust consistency between the sketch domain and the 3D output, we introduce a novel style-alignment loss that aligns the U-Net bottleneck features with the initial encoder outputs of the 3D generation module, significantly enhancing reconstruction fidelity. To further enhance the network's robustness, we apply augmentation techniques to the sketch dataset. This streamlined framework demonstrates the effectiveness of S3D in generating high-quality 3D models from sketch inputs. The source code for this project is publicly available at this https URL. 
+
+**Abstract (ZH)**: 从2D草图生成高质量3D模型是一项具有挑战性的工作，因为草图数据存在固有的模糊性和稀疏性。本文提出了一种名为S3D的新框架，能够将简单的手绘草图转化为详细的3D模型。我们的方法利用基于U-Net的编码-解码架构将草图转换为面部分割掩码，然后利用这些掩码生成可以从新视角渲染的3D表示。为确保草图域与3D输出之间的稳健一致性，我们引入了一种新颖的风格对齐损失，将U-Net瓶颈特征与3D生成模块的初始编码输出对齐，显著提高了重建保真度。为了进一步增强网络的稳健性，我们对草图数据集应用了增强技术。这一精简框架证明了S3D在从草图输入生成高质量3D模型方面的有效性。该项目的源代码在此公开获取：这个 https URL。 
+
+---
+# DOTA: Deformable Optimized Transformer Architecture for End-to-End Text Recognition with Retrieval-Augmented Generation 
+
+**Title (ZH)**: DOTA：用于检索增强生成的端到端文本识别可变形优化变压器架构 
+
+**Authors**: Naphat Nithisopa, Teerapong Panboonyuen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.04175)  
+
+**Abstract**: Text recognition in natural images remains a challenging yet essential task, with broad applications spanning computer vision and natural language processing. This paper introduces a novel end-to-end framework that combines ResNet and Vision Transformer backbones with advanced methodologies, including Deformable Convolutions, Retrieval-Augmented Generation, and Conditional Random Fields (CRF). These innovations collectively enhance feature representation and improve Optical Character Recognition (OCR) performance. Specifically, the framework substitutes standard convolution layers in the third and fourth blocks with Deformable Convolutions, leverages adaptive dropout for regularization, and incorporates CRF for more refined sequence modeling. Extensive experiments conducted on six benchmark datasets IC13, IC15, SVT, IIIT5K, SVTP, and CUTE80 validate the proposed method's efficacy, achieving notable accuracies: 97.32% on IC13, 58.26% on IC15, 88.10% on SVT, 74.13% on IIIT5K, 82.17% on SVTP, and 66.67% on CUTE80, resulting in an average accuracy of 77.77%. These results establish a new state-of-the-art for text recognition, demonstrating the robustness of the approach across diverse and challenging datasets. 
+
+**Abstract (ZH)**: 自然图像中的文本识别依然是一个具有广阔应用前景但又颇具挑战性的任务，涉及计算机视觉和自然语言处理领域。本文介绍了一种结合ResNet和Vision Transformer骨干网络，并采用变形卷积、检索增强生成、条件随机场等先进方法的端到端框架。这些创新共同提升了特征表示能力，提高了光学字符识别（OCR）的性能。具体而言，该框架在第三和第四块中替代了标准卷积层，采用自适应dropout进行正则化，并引入条件随机场进行更精细的序列建模。在IC13、IC15、SVT、IIIT5K、SVTP和CUTE80六个基准数据集上进行的广泛实验验证了所提方法的有效性，取得了显著的准确性：IC13为97.32%，IC15为58.26%，SVT为88.10%，IIIT5K为74.13%，SVTP为82.17%，CUTE80为66.67%，平均准确率为77.77%。这些结果表明，该方法在各类复杂数据集上具有鲁棒性，建立了新的文本识别状态-of-艺术水平。 
+
+---
+# R^3-VQA: "Read the Room" by Video Social Reasoning 
+
+**Title (ZH)**: R^3-VQA: "读清环境"的视频社会推理 
+
+**Authors**: Lixing Niu, Jiapeng Li, Xingping Yu, Shu Wang, Ruining Feng, Bo Wu, Ping Wei, Yisen Wang, Lifeng Fan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.04147)  
+
+**Abstract**: "Read the room" is a significant social reasoning capability in human daily life. Humans can infer others' mental states from subtle social cues. Previous social reasoning tasks and datasets lack complexity (e.g., simple scenes, basic interactions, incomplete mental state variables, single-step reasoning, etc.) and fall far short of the challenges present in real-life social interactions. In this paper, we contribute a valuable, high-quality, and comprehensive video dataset named R^3-VQA with precise and fine-grained annotations of social events and mental states (i.e., belief, intent, desire, and emotion) as well as corresponding social causal chains in complex social scenarios. Moreover, we include human-annotated and model-generated QAs. Our task R^3-VQA includes three aspects: Social Event Understanding, Mental State Estimation, and Social Causal Reasoning. As a benchmark, we comprehensively evaluate the social reasoning capabilities and consistencies of current state-of-the-art large vision-language models (LVLMs). Comprehensive experiments show that (i) LVLMs are still far from human-level consistent social reasoning in complex social scenarios; (ii) Theory of Mind (ToM) prompting can help LVLMs perform better on social reasoning tasks. We provide some of our dataset and codes in supplementary material and will release our full dataset and codes upon acceptance. 
+
+**Abstract (ZH)**: "读厅内情"是人类日常生活中的一个重要社会推理能力。人类可以从微妙的社会线索中推断出他人的心理状态。以往的社会推理任务和数据集缺乏复杂性（例如，简单场景、基本互动、不完整的心理状态变量、单步推理等），远不能满足现实生活社会互动中的挑战。在本文中，我们贡献了一个名为R^3-VQA的高质量、全面的视频数据集，该数据集对社会事件和心理状态（即信念、意图、欲望和情绪）进行了精确和细致的标注，并包含了相应的社会因果链，在复杂的社会场景中。此外，我们还包含了人工标注和模型生成的问答。我们的任务R^3-VQA包括三个方面：社会事件理解、心理状态估计和社会因果推理。作为基准，我们全面评估了当前最先进的大规模视觉-语言模型（LVLMs）的社会推理能力和一致性。全面的实验结果显示：（i）在复杂社会场景中，LVLMs的社会推理一致性仍然远未达到人类水平；（ii）心智理论（ToM）提示可以促进LVLMs在社会推理任务中的表现。我们提供了一部分数据集和代码作为补充材料，并将在论文被接受后公布完整数据集和代码。 
+
+---
+# Deep Learning Framework for Infrastructure Maintenance: Crack Detection and High-Resolution Imaging of Infrastructure Surfaces 
+
+**Title (ZH)**: 基于深度学习的基础设施维护框架：裂缝检测与基础设施表面高分辨率成像 
+
+**Authors**: Nikhil M. Pawar, Jorge A. Prozzi, Feng Hong, Surya Sarat Chandra Congress  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.03974)  
+
+**Abstract**: Recently, there has been an impetus for the application of cutting-edge data collection platforms such as drones mounted with camera sensors for infrastructure asset management. However, the sensor characteristics, proximity to the structure, hard-to-reach access, and environmental conditions often limit the resolution of the datasets. A few studies used super-resolution techniques to address the problem of low-resolution images. Nevertheless, these techniques were observed to increase computational cost and false alarms of distress detection due to the consideration of all the infrastructure images i.e., positive and negative distress classes. In order to address the pre-processing of false alarm and achieve efficient super-resolution, this study developed a framework consisting of convolutional neural network (CNN) and efficient sub-pixel convolutional neural network (ESPCNN). CNN accurately classified both the classes. ESPCNN, which is the lightweight super-resolution technique, generated high-resolution infrastructure image of positive distress obtained from CNN. The ESPCNN outperformed bicubic interpolation in all the evaluation metrics for super-resolution. Based on the performance metrics, the combination of CNN and ESPCNN was observed to be effective in preprocessing the infrastructure images with negative distress, reducing the computational cost and false alarms in the next step of super-resolution. The visual inspection showed that EPSCNN is able to capture crack propagation, complex geometry of even minor cracks. The proposed framework is expected to help the highway agencies in accurately performing distress detection and assist in efficient asset management practices. 
+
+**Abstract (ZH)**: 近年来，搭载摄像头传感器的无人机等前沿数据采集平台在基础设施资产管理中的应用得到了推动。然而，传感器特性、结构附近的接近性、难以到达的访问条件以及环境状况往往限制了数据集的分辨率。少数研究使用超分辨率技术来解决低分辨率图像的问题。尽管如此，这些技术由于考虑了所有基础设施图像（包括正负应力类别）而被观察到增加了计算成本和应力检测的假报警率。为了预先处理假报警并实现有效的超分辨率，本研究开发了一个框架，该框架由卷积神经网络（CNN）和高效子像素卷积神经网络（ESPCNN）组成。CNN精确地分类了两类。ESPCNN，作为轻量级的超分辨率技术，生成了由CNN获取的正应力类的高分辨率基础设施图像。在所有超分辨率评价指标中，ESPCNN的表现优于双立方插值。根据性能指标，CNN和ESPCNN的组合被观察到在预处理包含负应力的基础设施图像、降低后续超分辨率步骤中的计算成本和假报警率方面是有效的。视觉检查表明，ESPCNN能够捕捉裂缝传播、复杂几何结构，甚至细微裂缝。所提出框架有望帮助高速公路管理部门准确进行损伤检测，并辅助高效的资产管理实践。 
+
+---
+# Novel Extraction of Discriminative Fine-Grained Feature to Improve Retinal Vessel Segmentation 
+
+**Title (ZH)**: 新型提取具有判别性的细粒度特征以提高视网膜血管分割 
+
+**Authors**: Shuang Zeng, Chee Hong Lee, Micky C Nnamdi, Wenqi Shi, J Ben Tamo, Lei Zhu, Hangzhou He, Xinliang Zhang, Qian Chen, May D. Wang, Yanye Lu, Qiushi Ren  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.03896)  
+
+**Abstract**: Retinal vessel segmentation is a vital early detection method for several severe ocular diseases. Despite significant progress in retinal vessel segmentation with the advancement of Neural Networks, there are still challenges to overcome. Specifically, retinal vessel segmentation aims to predict the class label for every pixel within a fundus image, with a primary focus on intra-image discrimination, making it vital for models to extract more discriminative features. Nevertheless, existing methods primarily focus on minimizing the difference between the output from the decoder and the label, but ignore fully using feature-level fine-grained representations from the encoder. To address these issues, we propose a novel Attention U-shaped Kolmogorov-Arnold Network named AttUKAN along with a novel Label-guided Pixel-wise Contrastive Loss for retinal vessel segmentation. Specifically, we implement Attention Gates into Kolmogorov-Arnold Networks to enhance model sensitivity by suppressing irrelevant feature activations and model interpretability by non-linear modeling of KAN blocks. Additionally, we also design a novel Label-guided Pixel-wise Contrastive Loss to supervise our proposed AttUKAN to extract more discriminative features by distinguishing between foreground vessel-pixel pairs and background pairs. Experiments are conducted across four public datasets including DRIVE, STARE, CHASE_DB1, HRF and our private dataset. AttUKAN achieves F1 scores of 82.50%, 81.14%, 81.34%, 80.21% and 80.09%, along with MIoU scores of 70.24%, 68.64%, 68.59%, 67.21% and 66.94% in the above datasets, which are the highest compared to 11 networks for retinal vessel segmentation. Quantitative and qualitative results show that our AttUKAN achieves state-of-the-art performance and outperforms existing retinal vessel segmentation methods. Our code will be available at this https URL. 
+
+**Abstract (ZH)**: 视网膜血管分割是早期检测多种严重眼病的重要方法。尽管随着神经网络的发展，视网膜血管分割取得了显著进步，但仍存在挑战。具体而言，视网膜血管分割旨在预测fundus图像中每个像素的类别标签，主要关注图像内的区分，因此模型需要提取更具区分性的特征。然而，现有方法主要集中在最小化解码器输出与标签之间的差异，而忽视了充分使用编码器的特征级细粒度表示。为应对这些问题，我们提出了一种新颖的注意力U型柯尔莫哥洛夫-阿诺尔德网络（AttUKAN）及其新颖的标签引导像素级对比损失，以应用于视网膜血管分割。实验在包括DRIVE、STARE、CHASE_DB1、HRF和我们私人数据集在内的四个公共数据集上进行。AttUKAN在上述数据集上的F1分数分别为82.50%、81.14%、81.34%、80.21%和80.09%，MIoU分数分别为70.24%、68.64%、68.59%、67.21%和66.94%，其性能优于11种视网膜血管分割网络。定量和定性结果表明，我们的AttUKAN达到最先进的性能，并优于现有视网膜血管分割方法。我们的代码将在此处提供。 
+
+---
+# A Deep Learning approach for Depressive Symptoms assessment in Parkinson's disease patients using facial videos 
+
+**Title (ZH)**: 使用面部视频评估帕金森病患者抑郁症状的深度学习方法 
+
+**Authors**: Ioannis Kyprakis, Vasileios Skaramagkas, Iro Boura, Georgios Karamanis, Dimitrios I. Fotiadis, Zinovia Kefalopoulou, Cleanthe Spanaki, Manolis Tsiknakis  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.03845)  
+
+**Abstract**: Parkinson's disease (PD) is a neurodegenerative disorder, manifesting with motor and non-motor symptoms. Depressive symptoms are prevalent in PD, affecting up to 45% of patients. They are often underdiagnosed due to overlapping motor features, such as hypomimia. This study explores deep learning (DL) models-ViViT, Video Swin Tiny, and 3D CNN-LSTM with attention layers-to assess the presence and severity of depressive symptoms, as detected by the Geriatric Depression Scale (GDS), in PD patients through facial video analysis. The same parameters were assessed in a secondary analysis taking into account whether patients were one hour after (ON-medication state) or 12 hours without (OFF-medication state) dopaminergic medication. Using a dataset of 1,875 videos from 178 patients, the Video Swin Tiny model achieved the highest performance, with up to 94% accuracy and 93.7% F1-score in binary classification (presence of absence of depressive symptoms), and 87.1% accuracy with an 85.4% F1-score in multiclass tasks (absence or mild or severe depressive symptoms). 
+
+**Abstract (ZH)**: 帕金森病患者抑郁症状的深学习模型评估：基于面部视频分析的Geriatric Depression Scale评分 
+
+---
+# From Spaceborn to Airborn: SAR Image Synthesis Using Foundation Models for Multi-Scale Adaptation 
+
+**Title (ZH)**: 从星载到空载：用于多尺度适应的foundation模型SAR图像合成 
+
+**Authors**: Solène Debuysère, Nicolas Trouvé, Nathan Letheule, Olivier Lévêque, Elise Colin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.03844)  
+
+**Abstract**: The availability of Synthetic Aperture Radar (SAR) satellite imagery has increased considerably in recent years, with datasets commercially available. However, the acquisition of high-resolution SAR images in airborne configurations, remains costly and limited. Thus, the lack of open source, well-labeled, or easily exploitable SAR text-image datasets is a barrier to the use of existing foundation models in remote sensing applications. In this context, synthetic image generation is a promising solution to augment this scarce data, enabling a broader range of applications. Leveraging over 15 years of ONERA's extensive archival airborn data from acquisition campaigns, we created a comprehensive training dataset of 110 thousands SAR images to exploit a 3.5 billion parameters pre-trained latent diffusion model. In this work, we present a novel approach utilizing spatial conditioning techniques within a foundation model to transform satellite SAR imagery into airborne SAR representations. Additionally, we demonstrate that our pipeline is effective for bridging the realism of simulated images generated by ONERA's physics-based simulator EMPRISE. Our method explores a key application of AI in advancing SAR imaging technology. To the best of our knowledge, we are the first to introduce this approach in the literature. 
+
+**Abstract (ZH)**: 合成孔径雷达(SAR)卫星图像的可用性近年来显著增加，商用数据集已广泛可用。然而，航空配置下的高分辨率SAR图像获取依然成本高昂且有限。因此，开源、标注良好或易于利用的SAR图文数据集的缺乏是限制现有基础模型在遥感应用中使用的一个障碍。在此背景下，合成图像生成是一种有前景的解决方案，以补充这种稀缺的数据，从而实现更广泛的应用。利用ONERA近15年丰富的航空数据档案，我们创建了一个包含11万张SAR图像的综合训练数据集，以利用一个预训练的35亿参数潜在扩散模型。在这项工作中，我们提出了一种利用空间条件化技术的基础模型新方法，将卫星SAR图像转化为航空SAR表示。此外，我们还展示了我们的管道在弥合ONERA物理仿真器EMPRISE生成的模拟图像的现实感方面具有有效性。我们的方法探索了AI在推进SAR成像技术中的关键应用。据我们所知，这是首次在文献中引入这种方法。 
+
+---
+# IntelliCardiac: An Intelligent Platform for Cardiac Image Segmentation and Classification 
+
+**Title (ZH)**: IntelliCardiac：一种心脏图像分割与分类的智能平台 
+
+**Authors**: Ting Yu Tsai, An Yu, Meghana Spurthi Maadugundu, Ishrat Jahan Mohima, Umme Habiba Barsha, Mei-Hwa F. Chen, Balakrishnan Prabhakaran, Ming-Ching Chang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.03838)  
+
+**Abstract**: Precise and effective processing of cardiac imaging data is critical for the identification and management of the cardiovascular diseases. We introduce IntelliCardiac, a comprehensive, web-based medical image processing platform for the automatic segmentation of 4D cardiac images and disease classification, utilizing an AI model trained on the publicly accessible ACDC dataset. The system, intended for patients, cardiologists, and healthcare professionals, offers an intuitive interface and uses deep learning models to identify essential heart structures and categorize cardiac diseases. The system supports analysis of both the right and left ventricles as well as myocardium, and then classifies patient's cardiac images into five diagnostic categories: dilated cardiomyopathy, myocardial infarction, hypertrophic cardiomyopathy, right ventricular abnormality, and no disease. IntelliCardiac combines a deep learning-based segmentation model with a two-step classification pipeline. The segmentation module gains an overall accuracy of 92.6\%. The classification module, trained on characteristics taken from segmented heart structures, achieves 98\% accuracy in five categories. These results exceed the performance of the existing state-of-the-art methods that integrate both segmentation and classification models. IntelliCardiac, which supports real-time visualization, workflow integration, and AI-assisted diagnostics, has great potential as a scalable, accurate tool for clinical decision assistance in cardiac imaging and diagnosis. 
+
+**Abstract (ZH)**: 基于AI的心脏影像精准自动分割与疾病分类综合平台IntelliCardiac 
+
+---
+# Explainable Face Recognition via Improved Localization 
+
+**Title (ZH)**: 基于改进定位的可解释人脸识别 
+
+**Authors**: Rashik Shadman, Daqing Hou, Faraz Hussain, M G Sarwar Murshed  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.03837)  
+
+**Abstract**: Biometric authentication has become one of the most widely used tools in the current technological era to authenticate users and to distinguish between genuine users and imposters. Face is the most common form of biometric modality that has proven effective. Deep learning-based face recognition systems are now commonly used across different domains. However, these systems usually operate like black-box models that do not provide necessary explanations or justifications for their decisions. This is a major disadvantage because users cannot trust such artificial intelligence-based biometric systems and may not feel comfortable using them when clear explanations or justifications are not provided. This paper addresses this problem by applying an efficient method for explainable face recognition systems. We use a Class Activation Mapping (CAM)-based discriminative localization (very narrow/specific localization) technique called Scaled Directed Divergence (SDD) to visually explain the results of deep learning-based face recognition systems. We perform fine localization of the face features relevant to the deep learning model for its prediction/decision. Our experiments show that the SDD Class Activation Map (CAM) highlights the relevant face features very specifically compared to the traditional CAM and very accurately. The provided visual explanations with narrow localization of relevant features can ensure much-needed transparency and trust for deep learning-based face recognition systems. 
+
+**Abstract (ZH)**: 基于生物特征的身份验证已成为当前技术时代中最广泛使用的工具之一，用于用户认证和区分真实用户与冒充者。面部是最常见的生物特征模态，证明了其有效性。基于深度学习的面部识别系统现在在不同领域中普遍使用。然而，这些系统通常像黑箱模型一样运作，不提供其决策必要的解释或合理性。这是一大劣势，因为用户无法信任基于人工智能的生物特征系统，并且在没有提供清晰解释或合理性的情况下可能不会感到舒适使用它们。本文通过应用一种高效的方法解决了这一问题，用于可解释的面部识别系统。我们使用基于Class Activation Mapping (CAM)的具有区分性定位（非常狭窄/具体的定位）技术——Scaled Directed Divergence (SDD)——来可视化地解释基于深度学习的面部识别系统的结果。我们对与深度学习模型预测/决策相关的面部特征进行了精细定位。我们的实验证明，与传统的CAM相比，SDD Class Activation Map (CAM)能够非常具体地突出显示相关的面部特征，并且非常准确。提供的视觉解释，结合对相关特征的狭窄定位，可以确保基于深度学习的面部识别系统所需的透明度和信任。 
+
+---
+# Beyond Recognition: Evaluating Visual Perspective Taking in Vision Language Models 
+
+**Title (ZH)**: 超越识别：评估视觉视角换位在视觉语言模型中的表现 
+
+**Authors**: Gracjan Góral, Alicja Ziarko, Piotr Miłoś, Michał Nauman, Maciej Wołczyk, Michał Kosiński  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.03821)  
+
+**Abstract**: We investigate the ability of Vision Language Models (VLMs) to perform visual perspective taking using a novel set of visual tasks inspired by established human tests. Our approach leverages carefully controlled scenes, in which a single humanoid minifigure is paired with a single object. By systematically varying spatial configurations - such as object position relative to the humanoid minifigure and the humanoid minifigure's orientation - and using both bird's-eye and surface-level views, we created 144 unique visual tasks. Each visual task is paired with a series of 7 diagnostic questions designed to assess three levels of visual cognition: scene understanding, spatial reasoning, and visual perspective taking. Our evaluation of several state-of-the-art models, including GPT-4-Turbo, GPT-4o, Llama-3.2-11B-Vision-Instruct, and variants of Claude Sonnet, reveals that while they excel in scene understanding, the performance declines significantly on spatial reasoning and further deteriorates on perspective-taking. Our analysis suggests a gap between surface-level object recognition and the deeper spatial and perspective reasoning required for complex visual tasks, pointing to the need for integrating explicit geometric representations and tailored training protocols in future VLM development. 
+
+**Abstract (ZH)**: 我们利用一套新颖的视觉任务探究视觉语言模型（VLMs）进行视觉换位思考的能力，这些任务灵感来源于已有的人类测试。通过使用谨慎控制的场景，每个场景中仅包含一个 humanoid 小型人偶和一个对象，我们系统地变化空间配置——如对象相对于 humanoid 小型人偶的位置和小型人偶的朝向——并结合鸟瞰视角和表面视图，生成了 144 个独特的视觉任务。每个视觉任务配有一系列 7 个诊断性问题，旨在评估场景理解、空间推理和视觉换位思考三个层面的认知能力。对包括 GPT-4-Turbo、GPT-4o、Llama-3.2-11B-Vision-Instruct 及 Claude Sonnet 变种在内的几种最先进的模型的评估揭示，虽然他们在场景理解方面表现出色，但在空间推理方面性能大幅下降，并且在换位思考方面更是表现不佳。我们的分析表明，在表面级物体识别和对复杂视觉任务所需的深层次空间和视角推理之间存在差距，这指出了未来 VLM 发展中需要结合明确的几何表示和定制化训练协议的需求。 
+
+---
+# ArrhythmiaVision: Resource-Conscious Deep Learning Models with Visual Explanations for ECG Arrhythmia Classification 
+
+**Title (ZH)**: 心律失常视觉：考虑资源的深学习模型及其心电图心律失常分类的可视化解释 
+
+**Authors**: Zuraiz Baig, Sidra Nasir, Rizwan Ahmed Khan, Muhammad Zeeshan Ul Haque  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.03787)  
+
+**Abstract**: Cardiac arrhythmias are a leading cause of life-threatening cardiac events, highlighting the urgent need for accurate and timely detection. Electrocardiography (ECG) remains the clinical gold standard for arrhythmia diagnosis; however, manual interpretation is time-consuming, dependent on clinical expertise, and prone to human error. Although deep learning has advanced automated ECG analysis, many existing models abstract away the signal's intrinsic temporal and morphological features, lack interpretability, and are computationally intensive-hindering their deployment on resource-constrained platforms. In this work, we propose two novel lightweight 1D convolutional neural networks, ArrhythmiNet V1 and V2, optimized for efficient, real-time arrhythmia classification on edge devices. Inspired by MobileNet's depthwise separable convolutional design, these models maintain memory footprints of just 302.18 KB and 157.76 KB, respectively, while achieving classification accuracies of 0.99 (V1) and 0.98 (V2) on the MIT-BIH Arrhythmia Dataset across five classes: Normal Sinus Rhythm, Left Bundle Branch Block, Right Bundle Branch Block, Atrial Premature Contraction, and Premature Ventricular Contraction. In order to ensure clinical transparency and relevance, we integrate Shapley Additive Explanations and Gradient-weighted Class Activation Mapping, enabling both local and global interpretability. These techniques highlight physiologically meaningful patterns such as the QRS complex and T-wave that contribute to the model's predictions. We also discuss performance-efficiency trade-offs and address current limitations related to dataset diversity and generalizability. Overall, our findings demonstrate the feasibility of combining interpretability, predictive accuracy, and computational efficiency in practical, wearable, and embedded ECG monitoring systems. 
+
+**Abstract (ZH)**: 心脏病律失常是导致危及生命的心脏事件的主要原因，凸显了对准确及时检测的迫切需求。心电图（ECG）仍然是心律失常诊断的临床金标准；然而，人工解释耗时且依赖临床专业知识，容易出错。尽管深度学习促进了自动ECG分析的进步，但许多现有模型忽略了信号的内在时域和形态特征，缺乏可解释性，计算成本高，阻碍了它们在资源受限平台上部署。在本文中，我们提出了两个新型的轻量级一维卷积神经网络模型——ArrhythmiNet V1和V2，旨在实现边缘设备上的高效实时心律失常分类。受MobileNet深度可分离卷积设计的启发，这些模型的内存占用仅为302.18 KB和157.76 KB，而在MIT-BIH心律失常数据库中，分别在五个类别（正常窦性心律、左束支传导阻滞、右束支传导阻滞、房性期前收缩和室性期前收缩）上实现了0.99（V1）和0.98（V2）的分类精度。为确保临床透明度和相关性，我们整合了Shapley加权解释和梯度加权分类激活映射，实现了局部和全局可解释性。这些技术突显了如QRS波群和T波等生理学上有意义的模式，这些模式对模型预测有贡献。我们还讨论了性能效率权衡，并解决了与数据集多样性及泛化能力相关的问题。总体而言，我们的研究结果表明，在实际、可穿戴和嵌入式ECG监测系统中结合可解释性、预测准确性和计算效率的可能性。 
+
+---

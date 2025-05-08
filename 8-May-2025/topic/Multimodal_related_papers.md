@@ -1,0 +1,40 @@
+# VideoPath-LLaVA: Pathology Diagnostic Reasoning Through Video Instruction Tuning 
+
+**Title (ZH)**: VideoPath-LLaVA: 通过视频指令调优进行病理诊断推理 
+
+**Authors**: Trinh T.L. Vuong, Jin Tae Kwak  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.04192)  
+
+**Abstract**: We present VideoPath-LLaVA, the first large multimodal model (LMM) in computational pathology that integrates three distinct image scenarios, single patch images, automatically keyframe-extracted clips, and manually segmented video pathology images, to mimic the natural diagnostic process of pathologists. By generating detailed histological descriptions and culminating in a definitive sign-out diagnosis, VideoPath-LLaVA bridges visual narratives with diagnostic reasoning.
+Central to our approach is the VideoPath-Instruct dataset, comprising 4278 video and diagnosis-specific chain-of-thought instructional pairs sourced from educational histopathology videos on YouTube. Although high-quality data is critical for enhancing diagnostic reasoning, its creation is time-intensive and limited in volume. To overcome this challenge, we transfer knowledge from existing single-image instruction datasets to train on weakly annotated, keyframe-extracted clips, followed by fine-tuning on manually segmented videos. VideoPath-LLaVA establishes a new benchmark in pathology video analysis and offers a promising foundation for future AI systems that support clinical decision-making through integrated visual and diagnostic reasoning. Our code, data, and model are publicly available at this https URL. 
+
+**Abstract (ZH)**: VideoPath-LLaVA：一种集成单张图像、自动关键帧提取片段和手动分割病理视频的大型多模态模型，用于病理学计算中的自然诊断过程衔接 
+
+---
+# X-Reasoner: Towards Generalizable Reasoning Across Modalities and Domains 
+
+**Title (ZH)**: X-推理器：跨模态与领域的可泛化推理 
+
+**Authors**: Qianchu Liu, Sheng Zhang, Guanghui Qin, Timothy Ossowski, Yu Gu, Ying Jin, Sid Kiblawi, Sam Preston, Mu Wei, Paul Vozila, Tristan Naumann, Hoifung Poon  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.03981)  
+
+**Abstract**: Recent proprietary models (e.g., o3) have begun to demonstrate strong multimodal reasoning capabilities. Yet, most existing open-source research concentrates on training text-only reasoning models, with evaluations limited to mainly mathematical and general-domain tasks. Therefore, it remains unclear how to effectively extend reasoning capabilities beyond text input and general domains. This paper explores a fundamental research question: Is reasoning generalizable across modalities and domains? Our findings support an affirmative answer: General-domain text-based post-training can enable such strong generalizable reasoning. Leveraging this finding, we introduce X-Reasoner, a vision-language model post-trained solely on general-domain text for generalizable reasoning, using a two-stage approach: an initial supervised fine-tuning phase with distilled long chain-of-thoughts, followed by reinforcement learning with verifiable rewards. Experiments show that X-Reasoner successfully transfers reasoning capabilities to both multimodal and out-of-domain settings, outperforming existing state-of-the-art models trained with in-domain and multimodal data across various general and medical benchmarks (Figure 1). Additionally, we find that X-Reasoner's performance in specialized domains can be further enhanced through continued training on domain-specific text-only data. Building upon this, we introduce X-Reasoner-Med, a medical-specialized variant that achieves new state of the art on numerous text-only and multimodal medical benchmarks. 
+
+**Abstract (ZH)**: Recent Proprietary Models (e.g., o3) Have Begun to Demonstrate Strong Multimodal Reasoning Capabilities: Is Reasoning Generalizable Across Modalities and Domains? X-Reasoner Enables Such Generalizable Reasoning Through Post-Training on General-Domain Text 
+
+---
+# GAME: Learning Multimodal Interactions via Graph Structures for Personality Trait Estimation 
+
+**Title (ZH)**: GAME: 通过图结构学习多模态交互以估计人格特质 
+
+**Authors**: Kangsheng Wang, Yuhang Li, Chengwei Ye, Yufei Lin, Huanzhen Zhang, Bohan Hu, Linuo Xu, Shuyan Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.03846)  
+
+**Abstract**: Apparent personality analysis from short videos poses significant chal-lenges due to the complex interplay of visual, auditory, and textual cues. In this paper, we propose GAME, a Graph-Augmented Multimodal Encoder designed to robustly model and fuse multi-source features for automatic personality prediction. For the visual stream, we construct a facial graph and introduce a dual-branch Geo Two-Stream Network, which combines Graph Convolutional Networks (GCNs) and Convolutional Neural Net-works (CNNs) with attention mechanisms to capture both structural and appearance-based facial cues. Complementing this, global context and iden-tity features are extracted using pretrained ResNet18 and VGGFace back-bones. To capture temporal dynamics, frame-level features are processed by a BiGRU enhanced with temporal attention modules. Meanwhile, audio representations are derived from the VGGish network, and linguistic se-mantics are captured via the XLM-Roberta transformer. To achieve effective multimodal integration, we propose a Channel Attention-based Fusion module, followed by a Multi-Layer Perceptron (MLP) regression head for predicting personality traits. Extensive experiments show that GAME con-sistently outperforms existing methods across multiple benchmarks, vali-dating its effectiveness and generalizability. 
+
+**Abstract (ZH)**: 从短视频中分析表观人格存在显著挑战，由于其中视觉、听觉和文本线索的复杂交互。本文提出GAME，一种图增强多模态编码器，旨在稳健地建模和融合多源特征以实现自动人格预测。对于视觉流，构建面部图并引入双支Geo Two-Stream网络，结合图卷积网络（GCNs）和卷积神经网络（CNNs）以及注意机制来捕获结构和基于外观的面部特征。为了捕捉时间动态，帧级特征通过增强时序注意模块的双向GRU进行处理。同时，音频表示由VGGish网络提取，语言语义通过XLM-Roberta变换器捕获。为了实现有效的多模态融合，提出基于通道注意的融合模块，随后是用于预测人格特质的多层感知机（MLP）回归头部。广泛实验表明，GAME在多个基准测试中一致优于现有方法，验证了其有效性和泛化能力。 
+
+---

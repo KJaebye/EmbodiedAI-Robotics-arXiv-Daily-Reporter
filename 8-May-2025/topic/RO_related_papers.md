@@ -1,0 +1,195 @@
+# Stow: Robotic Packing of Items into Fabric Pods 
+
+**Title (ZH)**: Stow: 机器人将物品装入织物舱中 
+
+**Authors**: Nicolas Hudson, Josh Hooks, Rahul Warrier, Curt Salisbury, Ross Hartley, Kislay Kumar, Bhavana Chandrashekhar, Paul Birkmeyer, Bosch Tang, Matt Frost, Shantanu Thakar, Tony Piaskowy, Petter Nilsson, Josh Petersen, Neel Doshi, Alan Slatter, Ankit Bhatia, Cassie Meeker, Yuechuan Xue, Dylan Cox, Alex Kyriazis, Bai Lou, Nadeem Hasan, Asif Rana, Nikhil Chacko, Ruinian Xu, Siamak Faal, Esi Seraj, Mudit Agrawal, Kevin Jamieson, Alessio Bisagni, Valerie Samzun, Christine Fuller, Alex Keklak, Alex Frenkel, Lillian Ratliff, Aaron Parness  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.04572)  
+
+**Abstract**: This paper presents a compliant manipulation system capable of placing items onto densely packed shelves. The wide diversity of items and strict business requirements for high producing rates and low defect generation have prohibited warehouse robotics from performing this task. Our innovations in hardware, perception, decision-making, motion planning, and control have enabled this system to perform over 500,000 stows in a large e-commerce fulfillment center. The system achieves human levels of packing density and speed while prioritizing work on overhead shelves to enhance the safety of humans working alongside the robots. 
+
+**Abstract (ZH)**: 一种用于密集货架上物品放置的柔性 manipulation 系统 
+
+---
+# Model-Based AI planning and Execution Systems for Robotics 
+
+**Title (ZH)**: 基于模型的AI规划与执行系统在机器人领域的应用 
+
+**Authors**: Or Wertheim, Ronen I. Brafman  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.04493)  
+
+**Abstract**: Model-based planning and execution systems offer a principled approach to building flexible autonomous robots that can perform diverse tasks by automatically combining a host of basic skills. This idea is almost as old as modern robotics. Yet, while diverse general-purpose reasoning architectures have been proposed since, general-purpose systems that are integrated with modern robotic platforms have emerged only recently, starting with the influential ROSPlan system. Since then, a growing number of model-based systems for robot task-level control have emerged. In this paper, we consider the diverse design choices and issues existing systems attempt to address, the different solutions proposed so far, and suggest avenues for future development. 
+
+**Abstract (ZH)**: 基于模型的规划与执行系统提供了一种原理性的方法，用于构建能够通过自动组合多种基本技能来执行多样化任务的灵活自主机器人。这一理念几乎与现代机器人技术一样古老。然而，尽管自那时以来提出了多种通用推理架构，将现代机器人平台与通用系统相结合的系统仅在ROSPlan系统之后才开始出现。自那时以来，越来越多的基于模型的机器人任务级控制系统已经涌现。在本文中，我们考虑了现有系统试图解决的各种设计选择和问题，不同的解决方案及其迄今为止的进展，并建议未来的开发方向。 
+
+---
+# Estimating Dynamic Soft Continuum Robot States From Boundaries 
+
+**Title (ZH)**: 从边界估计动态软连续机器人状态 
+
+**Authors**: Tongjia Zheng, Jessica Burgner-Kahrs  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.04491)  
+
+**Abstract**: Accurate state estimation is essential for effective control of robots. For soft robots, this task is particularly challenging because their states are inherently infinite-dimensional functions due to the robots' continuous deformability. Traditional sensing techniques, however, can only provide discrete measurements. Recently, a dynamic state estimation method known as a boundary observer was introduced, which leverages Cosserat rod theory to recover all infinite-dimensional states by measuring only the velocity twist at the robot's tip. In this work, we present a novel boundary observer that can also recover infinite-dimensional dynamic states, but instead relies on measuring the internal wrench at the robot's base. This design exploits the duality between the velocity twist at the tip and the internal wrench at the base, with both types of boundary observers being inspired by principles of energy dissipation. Despite the mathematical duality, the proposed approach offers a distinct advantage: it requires only a 6-axis force/torque sensor embedded at the base, eliminating the need for external sensing systems such as motion capture cameras. Moreover, combining both tip- and base-based techniques enhances energy dissipation, accelerates convergence, and improves estimation accuracy. We validate the proposed algorithms through both simulation studies and experiments based on tendon-driven continuum robots. Our results demonstrate that all boundary observers converge to the ground truth within 3 seconds, even with significantly deviated initial conditions. Furthermore, they recover from unknown perturbations and effectively track high-frequency vibrations. We also show that combining the dual techniques further improves convergence speed and accuracy. Finally, the computational efficiency of these algorithms indicates their feasibility for real-time state estimation. 
+
+**Abstract (ZH)**: 准确的状态估计是有效控制机器人的重要基础。对于软机器人来说，这一任务特别具有挑战性，因为它们的状态本质上是由于机器人的连续变形而形成的无限维函数。传统的传感技术只能提供离散的测量值。最近，一种称为边界观测器的动态状态估计方法被引入，该方法利用科西rette细长杆理论，通过仅测量机器人末端的速度旋转变为恢复所有无限维度的状态。在本文中，我们提出了一种新颖的边界观测器，它可以恢复无限维度的动力学状态，但依赖于测量机器人基部的内部力偶。该设计利用了末端速度旋转变形和基部内部力偶之间的对偶性，两种类型的边界观测器都受到能量耗散原理的启发。尽管从数学上讲是相关的，提出的这种方法仍具有一个明显的优势：它只需要在基部嵌入一个6轴力/力矩传感器，从而消除了对外部传感系统（如运动捕捉相机）的需求。此外，结合末端和基部的方法进一步增强了能量耗散，加快了收敛速度，并提高了估计精度。我们通过基于腱驱动连续机器人的仿真研究和实验验证所提出的算法。结果表明，所有边界观测器都能在3秒内收敛到真实状态，即使初始条件有显著偏差。此外，它们能够从未知扰动中恢复并有效地跟踪高频振动。我们还表明，结合这两项技术进一步加快了收敛速度并提高了精度。最后，这些算法的计算效率表明它们适用于实时状态估计。 
+
+---
+# Do We Still Need to Work on Odometry for Autonomous Driving? 
+
+**Title (ZH)**: 自动驾驶领域还需研究里程计吗？ 
+
+**Authors**: Cedric Le Gentil, Daniil Lisus, Timothy D. Barfoot  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.04438)  
+
+**Abstract**: Over the past decades, a tremendous amount of work has addressed the topic of ego-motion estimation of moving platforms based on various proprioceptive and exteroceptive sensors. At the cost of ever-increasing computational load and sensor complexity, odometry algorithms have reached impressive levels of accuracy with minimal drift in various conditions. In this paper, we question the need for more research on odometry for autonomous driving by assessing the accuracy of one of the simplest algorithms: the direct integration of wheel encoder data and yaw rate measurements from a gyroscope. We denote this algorithm as Odometer-Gyroscope (OG) odometry. This work shows that OG odometry can outperform current state-of-the-art radar-inertial SE(2) odometry for a fraction of the computational cost in most scenarios. For example, the OG odometry is on top of the Boreas leaderboard with a relative translation error of 0.20%, while the second-best method displays an error of 0.26%. Lidar-inertial approaches can provide more accurate estimates, but the computational load is three orders of magnitude higher than the OG odometry. To further the analysis, we have pushed the limits of the OG odometry by purposely violating its fundamental no-slip assumption using data collected during a heavy snowstorm with different driving behaviours. Our conclusion shows that a significant amount of slippage is required to result in non-satisfactory pose estimates from the OG odometry. 
+
+**Abstract (ZH)**: 近年来，基于各种本体感受器和外体感受器的移动平台自我运动估计问题得到了广泛研究。尽管计算负载和传感器复杂度不断增加， odometer 算法仍然在各种条件下实现了令人印象深刻的精度，并且漂移极小。本文通过评估一个最简单的算法——车轮编码器数据和陀螺仪偏航率测量的直接积分，质疑在自动驾驶领域进行更多 odometer 研究的必要性。我们将这种算法称为 Odometer-Gyroscope (OG) 里程计。本研究显示，在大多数情况下，OG 里程计的计算成本仅为当前领先雷达-惯性 SE(2) 里程计的一小部分，但其精度却可以超越。例如，在 Boreas 领导者榜单上，OG 里程计的相对平移误差仅为 0.20%，而第二优的方法误差为 0.26%。基于激光雷达-惯性的方法可以提供更精确的估计，但计算负载比 OG 里程计高三个数量级。为进一步分析，我们通过在不同驾驶行为下收集的数据，故意违反 OG 里程计的基本无打滑假设，测试其极限。我们的结论表明，要导致 OG 里程计的姿势估计不满意，需要显著的打滑量。 
+
+---
+# Automating Box Folding: Sequence Extraction and Ranking Methodologies 
+
+**Title (ZH)**: 自动化纸盒折叠：序列提取和排名方法学 
+
+**Authors**: Giuseppe Fabio Preziosa, Davide Ferloni, Andrea Maria Zanchettin, Marco Faroni, Paolo Rocco  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.04257)  
+
+**Abstract**: Box folding represents a crucial challenge for automated packaging systems. This work bridges the gap between existing methods for folding sequence extraction and approaches focused on the adaptability of automated systems to specific box types. An innovative method is proposed to identify and rank folding sequences, enabling the transformation of a box from an initial state to a desired final configuration. The system evaluates and ranks these sequences based on their feasibility and compatibility with available hardware, providing recommendations for real-world implementations. Finally, an illustrative use case is presented, where a robot performs the folding of a box. 
+
+**Abstract (ZH)**: 箱体折叠是自动化包装系统面临的 crucial 挑战。本工作在现有折箱序列提取方法与关注自动化系统对特定箱型适配性的方法之间建立了桥梁。提出了一种创新方法来识别和排序折箱序列，使得可以从初始状态将箱体转换为所需的最终配置。系统根据其可行性与可用硬件的兼容性对这些序列进行评估和排序，并提供实际应用的建议。最后，呈现了一个示例应用场景，其中机器人执行箱体折叠操作。 
+
+---
+# Low Resolution Next Best View for Robot Packing 
+
+**Title (ZH)**: 低分辨率下一最佳视角规划用于机器人包装 
+
+**Authors**: Giuseppe Fabio Preziosa, Chiara Castellano, Andrea Maria Zanchettin, Marco Faroni, Paolo Rocco  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.04228)  
+
+**Abstract**: Automating the packing of objects with robots is a key challenge in industrial automation, where efficient object perception plays a fundamental role. This paper focuses on scenarios where precise 3D reconstruction is not required, prioritizing cost-effective and scalable solutions. The proposed Low-Resolution Next Best View (LR-NBV) algorithm leverages a utility function that balances pose redundancy and acquisition density, ensuring efficient object reconstruction. Experimental validation demonstrates that LR-NBV consistently outperforms standard NBV approaches, achieving comparable accuracy with significantly fewer poses. This method proves highly suitable for applications requiring efficiency, scalability, and adaptability without relying on high-precision sensing. 
+
+**Abstract (ZH)**: 基于低成本和可扩展性的物体捡取场景中的低分辨率下一最佳视图算法 
+
+---
+# SCU-Hand: Soft Conical Universal Robotic Hand for Scooping Granular Media from Containers of Various Sizes 
+
+**Title (ZH)**: SCU-Hand: 软锥形通用机器人手抓取各种大小容器中散状介质 
+
+**Authors**: Tomoya Takahashi, Cristian C. Beltran-Hernandez, Yuki Kuroda, Kazutoshi Tanaka, Masashi Hamaya, Yoshitaka Ushiku  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.04162)  
+
+**Abstract**: Automating small-scale experiments in materials science presents challenges due to the heterogeneous nature of experimental setups. This study introduces the SCU-Hand (Soft Conical Universal Robot Hand), a novel end-effector designed to automate the task of scooping powdered samples from various container sizes using a robotic arm. The SCU- Hand employs a flexible, conical structure that adapts to dif- ferent container geometries through deformation, maintaining consistent contact without complex force sensing or machine learning-based control methods. Its reconfigurable mechanism allows for size adjustment, enabling efficient scooping from diverse container types. By combining soft robotics principles with a sheet-morphing design, our end-effector achieves high flexibility while retaining the necessary stiffness for effective powder manipulation. We detail the design principles, fabri- cation process, and experimental validation of the SCU-Hand. Experimental validation showed that the scooping capacity is about 20% higher than that of a commercial tool, with a scooping performance of more than 95% for containers of sizes between 67 mm to 110 mm. This research contributes to laboratory automation by offering a cost-effective, easily implementable solution for automating tasks such as materials synthesis and characterization processes. 
+
+**Abstract (ZH)**: 材料科学中自动化小规模实验存在挑战，由于实验设置的异质性。本研究介绍了一种新型末端执行器SCU-Hand（软锥形通用机器人手），旨在使用机器人臂自动化从不同容器大小中刮取粉末样品的任务。SCU-Hand采用柔性锥形结构，通过变形适应不同的容器几何形状，保持一致接触，无需复杂的力感知或基于机器学习的控制方法。其可重构机制允许尺寸调整，从而能够高效地从多种类型的容器中刮取样品。通过结合软体机器人原理和片材变形设计，我们的末端执行器实现了高柔性和必要的刚度，以有效操纵粉末。本文详细介绍了SCU-Hand的设计原则、制造工艺以及实验验证。实验验证显示，SCU-Hand的刮取能力比商用工具高约20%，对于67 mm至110 mm不同大小的容器，刮取性能超过95%。本研究通过提供一种低成本且易于实施的解决方案，为实验室自动化材料合成和表征过程的自动化做出了贡献。 
+
+---
+# Scalable Aerial GNSS Localization for Marine Robots 
+
+**Title (ZH)**: 可扩展的空中GNSS定位技术用于海洋机器人 
+
+**Authors**: Shuo Wen, Edwin Meriaux, Mariana Sosa Guzmán, Charlotte Morissette, Chloe Si, Bobak Baghi, Gregory Dudek  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.04095)  
+
+**Abstract**: Accurate localization is crucial for water robotics, yet traditional onboard Global Navigation Satellite System (GNSS) approaches are difficult or ineffective due to signal reflection on the water's surface and its high cost of aquatic GNSS receivers. Existing approaches, such as inertial navigation, Doppler Velocity Loggers (DVL), SLAM, and acoustic-based methods, face challenges like error accumulation and high computational complexity. Therefore, a more efficient and scalable solution remains necessary. This paper proposes an alternative approach that leverages an aerial drone equipped with GNSS localization to track and localize a marine robot once it is near the surface of the water. Our results show that this novel adaptation enables accurate single and multi-robot marine robot localization. 
+
+**Abstract (ZH)**: 准确的定位对于水下机器人至关重要，然而传统的机载全球导航卫星系统（GNSS）方法由于水面信号反射和水下GNSS接收机的高成本而难以实现或效果不佳。现有方法如惯性导航、多普勒速度记录仪（DVL）、SLAM和基于声学的方法面临累积误差和高计算复杂度的挑战。因此，一种更高效、更具扩展性的解决方案仍然是必要的。本文提出了一种替代方法，利用配备GNSS定位的航拍无人机来跟踪和定位水面附近的水下机器人。我们的结果表明，这种新型适应性方法能够实现精确的单个和多个水下机器人定位。 
+
+---
+# NMPC-Lander: Nonlinear MPC with Barrier Function for UAV Landing on a Mobile Platform 
+
+**Title (ZH)**: NMPC-Lander：基于障碍函数的非线性MPC着陆系统用于移动平台的无人机着陆 
+
+**Authors**: Amber Batool, Faryal Batool, Roohan Ahmed Khan, Muhammad Ahsan Mustafa, Aleksey Fedoseev, Dzmitry Tsetserukou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.03931)  
+
+**Abstract**: Quadcopters are versatile aerial robots gaining popularity in numerous critical applications. However, their operational effectiveness is constrained by limited battery life and restricted flight range. To address these challenges, autonomous drone landing on stationary or mobile charging and battery-swapping stations has become an essential capability. In this study, we present NMPC-Lander, a novel control architecture that integrates Nonlinear Model Predictive Control (NMPC) with Control Barrier Functions (CBF) to achieve precise and safe autonomous landing on both static and dynamic platforms. Our approach employs NMPC for accurate trajectory tracking and landing, while simultaneously incorporating CBF to ensure collision avoidance with static obstacles. Experimental evaluations on the real hardware demonstrate high precision in landing scenarios, with an average final position error of 9.0 cm and 11 cm for stationary and mobile platforms, respectively. Notably, NMPC-Lander outperforms the B-spline combined with the A* planning method by nearly threefold in terms of position tracking, underscoring its superior robustness and practical effectiveness. 
+
+**Abstract (ZH)**: 基于NMPC和CBF的自主无人 aerial机器人着陆架构：面向静态和动态平台的精确与安全着陆 
+
+---
+# MIHRaGe: A Mixed-Reality Interface for Human-Robot Interaction via Gaze-Oriented Control 
+
+**Title (ZH)**: MIHRaGe:一种基于凝视控制的混合现实人机交互界面 
+
+**Authors**: Rafael R. Baptista, Nina R. Gerszberg, Ricardo V. Godoy, Gustavo J. G. Lahr  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.03929)  
+
+**Abstract**: Individuals with upper limb mobility impairments often require assistive technologies to perform activities of daily living. While gaze-tracking has emerged as a promising method for robotic assistance, existing solutions lack sufficient feedback mechanisms, leading to uncertainty in user intent recognition and reduced adaptability. This paper presents the MIHRAGe interface, an integrated system that combines gaze-tracking, robotic assistance, and a mixed-reality to create an immersive environment for controlling the robot using only eye movements. The system was evaluated through an experimental protocol involving four participants, assessing gaze accuracy, robotic positioning precision, and the overall success of a pick and place task. Results showed an average gaze fixation error of 1.46 cm, with individual variations ranging from 1.28 cm to 2.14 cm. The robotic arm demonstrated an average positioning error of +-1.53 cm, with discrepancies attributed to interface resolution and calibration constraints. In a pick and place task, the system achieved a success rate of 80%, highlighting its potential for improving accessibility in human-robot interaction with visual feedback to the user. 
+
+**Abstract (ZH)**: 基于凝视跟踪的混合现实上肢辅助交互界面MIHRAGe 
+
+---
+# Omnidirectional vision sensors based on catadioptric systems with discrete infrared photoreceptors for swarm robotics 
+
+**Title (ZH)**: 基于离散红外光接收器的猫眼系统 omnidirectional 视觉传感器在 swarm 机器人中的应用 
+
+**Authors**: Jose Fernando Contreras-Monsalvo, Victor Dossetti, Blanca Susana Soto-Cruz  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.03920)  
+
+**Abstract**: In this work, we fabricated and studied two designs for omnidirectional vision sensors for swarm robotics, based on catadioptric systems consisting of a mirror with rotational symmetry, eight discrete infrared photodiodes and a single LED, in order to provide localization and navigation abilities for mobile robotic agents. We considered two arrangements for the photodiodes: one in which they point upward into the mirror, and one in which they point outward, perpendicular to the mirror. To determine which design offers a better field of view on the plane, as well as detection of distance and orientation between two agents, we developed a test rail with three degrees of freedom to experimentally and systematically measure the signal registered by the photodiodes of a given sensor (in a single readout) from the light emitted by another as functions of the distance and orientation. Afterwards, we processed and analyzed the experimental data to develop mathematical models for the mean response of a photodiode in each design. Finally, by numerically inverting the models, we compared the two designs in terms of their accuracy. Our results show that the design with the photodiodes pointing upward resolves better the distance, while the other resolves better the orientation of the emitting agent, both providing an omnidirectional field of view. 
+
+**Abstract (ZH)**: 基于反射对称镜面和八枚离散红外光电二极管及单个LED的猫眼系统设计的全方位视觉传感器研究：移动机器人代理的定位与导航能力 
+
+---
+# Contact-Aware Safety in Soft Robots Using High-Order Control Barrier and Lyapunov Functions 
+
+**Title (ZH)**: 基于高阶控制屏障和李雅普诺夫函数的软机器人接触感知安全性 
+
+**Authors**: Kiwan Wong, Maximilian Stölzle, Wei Xiao, Cosimo Della Santina, Daniela Rus, Gioele Zardini  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.03841)  
+
+**Abstract**: Robots operating alongside people, particularly in sensitive scenarios such as aiding the elderly with daily tasks or collaborating with workers in manufacturing, must guarantee safety and cultivate user trust. Continuum soft manipulators promise safety through material compliance, but as designs evolve for greater precision, payload capacity, and speed, and increasingly incorporate rigid elements, their injury risk resurfaces. In this letter, we introduce a comprehensive High-Order Control Barrier Function (HOCBF) + High-Order Control Lyapunov Function (HOCLF) framework that enforces strict contact force limits across the entire soft-robot body during environmental interactions. Our approach combines a differentiable Piecewise Cosserat-Segment (PCS) dynamics model with a convex-polygon distance approximation metric, named Differentiable Conservative Separating Axis Theorem (DCSAT), based on the soft robot geometry to enable real-time, whole-body collision detection, resolution, and enforcement of the safety constraints. By embedding HOCBFs into our optimization routine, we guarantee safety and actively regulate environmental coupling, allowing, for instance, safe object manipulation under HOCLF-driven motion objectives. Extensive planar simulations demonstrate that our method maintains safety-bounded contacts while achieving precise shape and task-space regulation. This work thus lays a foundation for the deployment of soft robots in human-centric environments with provable safety and performance. 
+
+**Abstract (ZH)**: 软体机器人在辅助老年人日常生活或与制造业工人协同作业时沿侧人机安全及其应用的研究：基于高阶控制屏障函数与高阶控制李雅普诺夫函数的整体安全约束框架 
+
+---
+# Bridging Model Predictive Control and Deep Learning for Scalable Reachability Analysis 
+
+**Title (ZH)**: 基于模型预测控制与深度学习的可扩展可达性分析方法 
+
+**Authors**: Zeyuan Feng, Le Qiu, Somil Bansal  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.03830)  
+
+**Abstract**: Hamilton-Jacobi (HJ) reachability analysis is a widely used method for ensuring the safety of robotic systems. Traditional approaches compute reachable sets by numerically solving an HJ Partial Differential Equation (PDE) over a grid, which is computationally prohibitive due to the curse of dimensionality. Recent learning-based methods have sought to address this challenge by approximating reachability solutions using neural networks trained with PDE residual error. However, these approaches often suffer from unstable training dynamics and suboptimal solutions due to the weak learning signal provided by the residual loss. In this work, we propose a novel approach that leverages model predictive control (MPC) techniques to guide and accelerate the reachability learning process. Observing that HJ reachability is inherently rooted in optimal control, we utilize MPC to generate approximate reachability solutions at key collocation points, which are then used to tactically guide the neural network training by ensuring compliance with these approximations. Moreover, we iteratively refine the MPC generated solutions using the learned reachability solution, mitigating convergence to local optima. Case studies on a 2D vertical drone, a 13D quadrotor, a 7D F1Tenth car, and a 40D publisher-subscriber system demonstrate that bridging MPC with deep learning yields significant improvements in the robustness and accuracy of reachable sets, as well as corresponding safety assurances, compared to existing methods. 
+
+**Abstract (ZH)**: 基于模型预测控制的Hamilton-Jacobi可达性分析学习方法 
+
+---
+# Soft yet Effective Robots via Holistic Co-Design 
+
+**Title (ZH)**: 全方位协同设计下的软而有效的机器人 
+
+**Authors**: Maximilian Stölzle, Niccolò Pagliarani, Francesco Stella, Josie Hughes, Cecilia Laschi, Daniela Rus, Matteo Cianchetti, Cosimo Della Santina, Gioele Zardini  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.03761)  
+
+**Abstract**: Soft robots promise inherent safety via their material compliance for seamless interactions with humans or delicate environments. Yet, their development is challenging because it requires integrating materials, geometry, actuation, and autonomy into complex mechatronic systems. Despite progress, the field struggles to balance task-specific performance with broader factors like durability and manufacturability - a difficulty that we find is compounded by traditional sequential design processes with their lack of feedback loops. In this perspective, we review emerging co-design approaches that simultaneously optimize the body and brain, enabling the discovery of unconventional designs highly tailored to the given tasks. We then identify three key shortcomings that limit the broader adoption of such co-design methods within the soft robotics domain. First, many rely on simulation-based evaluations focusing on a single metric, while real-world designs must satisfy diverse criteria. Second, current methods emphasize computational modeling without ensuring feasible realization, risking sim-to-real performance gaps. Third, high computational demands limit the exploration of the complete design space. Finally, we propose a holistic co-design framework that addresses these challenges by incorporating a broader range of design values, integrating real-world prototyping to refine evaluations, and boosting efficiency through surrogate metrics and model-based control strategies. This holistic framework, by simultaneously optimizing functionality, durability, and manufacturability, has the potential to enhance reliability and foster broader acceptance of soft robotics, transforming human-robot interactions. 
+
+**Abstract (ZH)**: 软体机器人通过其材料顺应性承诺固有的安全性，从而实现与人类或精细环境无缝互动。然而，其发展具有挑战性，因为它要求将材料、几何形状、驱动和自主性整合进复杂的机电系统中。尽管取得了进展，该领域在平衡特定任务性能与耐久性、制造性等更广泛因素之间仍面临困难——传统序列化设计过程缺乏反馈循环，加剧了这一难题。在本文中，我们回顾了新兴的联合设计方法，这些方法同时优化身体和大脑，从而发现高度适应给定任务的非传统设计。随后，我们识别了三项限制这些联合设计方法在软体机器人领域更广泛应用的关键短处。首先，许多方法依赖于基于模拟的评估，侧重于单一指标，而实际设计必须满足多种标准。其次，当前方法强调计算建模，而不确保可行实现，存在从模拟到现实性能差距的风险。第三，高计算需求限制了对整个设计空间的探索。最后，我们提出了一种综合性的联合设计框架，通过整合更多设计价值、将实际原型制作纳入评估过程以改进评估，并通过替代指标和基于模型的控制策略提高效率，来解决这些挑战。这一综合性框架通过同时优化功能、耐久性和制造性，有可能提高软体机器人的可靠性和更广泛接受度，变革人机交互。 
+
+---
+# Accelerating Audio Research with Robotic Dummy Heads 
+
+**Title (ZH)**: 加速音频研究的机器人假人技术 
+
+**Authors**: Austin Lu, Kanad Sarkar, Yongjie Zhuang, Leo Lin, Ryan M Corey, Andrew C Singer  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.04548)  
+
+**Abstract**: This work introduces a robotic dummy head that fuses the acoustic realism of conventional audiological mannequins with the mobility of robots. The proposed device is capable of moving, talking, and listening as people do, and can be used to automate spatially-stationary audio experiments, thus accelerating the pace of audio research. Critically, the device may also be used as a moving sound source in dynamic experiments, due to its quiet motor. This feature differentiates our work from previous robotic acoustic research platforms. Validation that the robot enables high quality audio data collection is provided through various experiments and acoustic measurements. These experiments also demonstrate how the robot might be used to study adaptive binaural beamforming. Design files are provided as open-source to stimulate novel audio research. 
+
+**Abstract (ZH)**: 这种工作引入了一种集成了传统声学人头模型的音质真实感与机器人移动性于一体的假人头，并能够进行移动、说话和倾听，适用于自动化固定空间音频实验，从而加速音频研究的进程。关键的是，由于其安静的电机，该设备还可作为动态实验中的移动声源。该特性使我们的工作区别于之前的机器人声学研究平台。通过一系列实验和声学测量验证了该机器人收集高质量音频数据的能力。这些实验还展示了该机器人如何用于研究自适应双耳波束成形。设计文件提供为开源，以刺激新的音频研究。 
+
+---
