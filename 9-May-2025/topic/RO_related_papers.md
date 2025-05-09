@@ -1,0 +1,117 @@
+# Online Velocity Profile Generation and Tracking for Sampling-Based Local Planning Algorithms in Autonomous Racing Environments 
+
+**Title (ZH)**: 基于自主赛车环境中的采样基局部规划算法的在线速度廓线生成与跟踪 
+
+**Authors**: Alexander Langmann, Levent Ögretmen, Frederik Werner, Johannes Betz  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.05157)  
+
+**Abstract**: This work presents an online velocity planner for autonomous racing that adapts to changing dynamic constraints, such as grip variations from tire temperature changes and rubber accumulation. The method combines a forward-backward solver for online velocity optimization with a novel spatial sampling strategy for local trajectory planning, utilizing a three-dimensional track representation. The computed velocity profile serves as a reference for the local planner, ensuring adaptability to environmental and vehicle dynamics. We demonstrate the approach's robust performance and computational efficiency in racing scenarios and discuss its limitations, including sensitivity to deviations from the predefined racing line and high jerk characteristics of the velocity profile. 
+
+**Abstract (ZH)**: 本研究提出了一种适应动态约束变化的在线速度规划方法，适用于自动驾驶赛车，该方法结合了前向-后向求解器进行在线速度优化，并利用三维赛道表示和新颖的空间采样策略进行局部轨迹规划。计算得出的速度曲线作为局部规划器的参考，确保其对环境和车辆动力学的适应性。我们在赛车场景中展示了该方法的稳健性能和计算效率，并讨论了其局限性，包括对预设赛车线偏差的敏感性以及速度曲线的高加速度特性。 
+
+---
+# A Vehicle System for Navigating Among Vulnerable Road Users Including Remote Operation 
+
+**Title (ZH)**: 一种用于在与脆弱道路使用者之间导航的车辆系统，包括远程操作 
+
+**Authors**: Oscar de Groot, Alberto Bertipaglia, Hidde Boekema, Vishrut Jain, Marcell Kegl, Varun Kotian, Ted Lentsch, Yancong Lin, Chrysovalanto Messiou, Emma Schippers, Farzam Tajdari, Shiming Wang, Zimin Xia, Mubariz Zaffar, Ronald Ensing, Mario Garzon, Javier Alonso-Mora, Holger Caesar, Laura Ferranti, Riender Happee, Julian F. P. Kooij, Georgios Papaioannou, Barys Shyrokau, Dariu M. Gavrila  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.04982)  
+
+**Abstract**: We present a vehicle system capable of navigating safely and efficiently around Vulnerable Road Users (VRUs), such as pedestrians and cyclists. The system comprises key modules for environment perception, localization and mapping, motion planning, and control, integrated into a prototype vehicle. A key innovation is a motion planner based on Topology-driven Model Predictive Control (T-MPC). The guidance layer generates multiple trajectories in parallel, each representing a distinct strategy for obstacle avoidance or non-passing. The underlying trajectory optimization constrains the joint probability of collision with VRUs under generic uncertainties. To address extraordinary situations ("edge cases") that go beyond the autonomous capabilities - such as construction zones or encounters with emergency responders - the system includes an option for remote human operation, supported by visual and haptic guidance. In simulation, our motion planner outperforms three baseline approaches in terms of safety and efficiency. We also demonstrate the full system in prototype vehicle tests on a closed track, both in autonomous and remotely operated modes. 
+
+**Abstract (ZH)**: 我们提出了一种能够在安全和高效地导航避开弱势道路使用者（如行人和骑车人）的车辆系统。该系统包括环境感知、定位和制图、运动规划和控制等关键模块，并集成到原型车辆中。一项关键创新是基于拓扑驱动模型预测控制（T-MPC）的运动规划器。指导层并行生成多条轨迹，每条轨迹代表一种不同的障碍物规避或不穿越策略。底层轨迹优化在通用不确定性下约束与弱势道路使用者碰撞的联合概率。为应对超出自主能力的非常情况（如施工区或遇到紧急救援人员等），系统包括远程人工操作的选项，辅以视觉和触觉指导。在仿真实验中，我们的运动规划器在安全性与效率方面优于三种基线方法。此外，我们在封闭赛道上对原型车辆进行了自主和远程操作两种模式下的系统完整演示。 
+
+---
+# Robust Model-Based In-Hand Manipulation with Integrated Real-Time Motion-Contact Planning and Tracking 
+
+**Title (ZH)**: 基于模型的鲁棒手内操作结合实时运动-接触规划与跟踪 
+
+**Authors**: Yongpeng Jiang, Mingrui Yu, Xinghao Zhu, Masayoshi Tomizuka, Xiang Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.04978)  
+
+**Abstract**: Robotic dexterous in-hand manipulation, where multiple fingers dynamically make and break contact, represents a step toward human-like dexterity in real-world robotic applications. Unlike learning-based approaches that rely on large-scale training or extensive data collection for each specific task, model-based methods offer an efficient alternative. Their online computing nature allows for ready application to new tasks without extensive retraining. However, due to the complexity of physical contacts, existing model-based methods encounter challenges in efficient online planning and handling modeling errors, which limit their practical applications. To advance the effectiveness and robustness of model-based contact-rich in-hand manipulation, this paper proposes a novel integrated framework that mitigates these limitations. The integration involves two key aspects: 1) integrated real-time planning and tracking achieved by a hierarchical structure; and 2) joint optimization of motions and contacts achieved by integrated motion-contact modeling. Specifically, at the high level, finger motion and contact force references are jointly generated using contact-implicit model predictive control. The high-level module facilitates real-time planning and disturbance recovery. At the low level, these integrated references are concurrently tracked using a hand force-motion model and actual tactile feedback. The low-level module compensates for modeling errors and enhances the robustness of manipulation. Extensive experiments demonstrate that our approach outperforms existing model-based methods in terms of accuracy, robustness, and real-time performance. Our method successfully completes five challenging tasks in real-world environments, even under appreciable external disturbances. 
+
+**Abstract (ZH)**: 基于模型的多指在手操作集成框架：实时规划与跟踪及运动-接触联合优化 
+
+---
+# Real-Time Model Predictive Control of Vehicles with Convex-Polygon-Aware Collision Avoidance in Tight Spaces 
+
+**Title (ZH)**: 实时模型预测控制：考虑凸多边形aware的紧空间避碰 
+
+**Authors**: Haruki Kojima, Kohei Honda, Hiroyuki Okuda, Tatsuya Suzuki  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.04935)  
+
+**Abstract**: This paper proposes vehicle motion planning methods with obstacle avoidance in tight spaces by incorporating polygonal approximations of both the vehicle and obstacles into a model predictive control (MPC) framework. Representing these shapes is crucial for navigation in tight spaces to ensure accurate collision detection. However, incorporating polygonal approximations leads to disjunctive OR constraints in the MPC formulation, which require a mixed integer programming and cause significant computational cost. To overcome this, we propose two different collision-avoidance constraints that reformulate the disjunctive OR constraints as tractable conjunctive AND constraints: (1) a Support Vector Machine (SVM)-based formulation that recasts collision avoidance as a SVM optimization problem, and (2) a Minimum Signed Distance to Edges (MSDE) formulation that leverages minimum signed-distance metrics. We validate both methods through extensive simulations, including tight-space parking scenarios and varied-shape obstacle courses, as well as hardware experiments on an RC-car platform. Our results demonstrate that the SVM-based approach achieves superior navigation accuracy in constrained environments; the MSDE approach, by contrast, runs in real time with only a modest reduction in collision-avoidance performance. 
+
+**Abstract (ZH)**: 基于多边形近似结合模型预测控制的车辆在狭窄空间中的运动规划与避障方法 
+
+---
+# CubeDAgger: Improved Robustness of Interactive Imitation Learning without Violation of Dynamic Stability 
+
+**Title (ZH)**: CubeDAgger: 提高交互式imitation learning稳健性而不违反动态稳定 
+
+**Authors**: Taisuke Kobayashi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.04897)  
+
+**Abstract**: Interactive imitation learning makes an agent's control policy robust by stepwise supervisions from an expert. The recent algorithms mostly employ expert-agent switching systems to reduce the expert's burden by limitedly selecting the supervision timing. However, the precise selection is difficult and such a switching causes abrupt changes in actions, damaging the dynamic stability. This paper therefore proposes a novel method, so-called CubeDAgger, which improves robustness while reducing dynamic stability violations by making three improvements to a baseline method, EnsembleDAgger. The first improvement adds a regularization to explicitly activate the threshold for deciding the supervision timing. The second transforms the expert-agent switching system to an optimal consensus system of multiple action candidates. Third, autoregressive colored noise to the actions is introduced to make the stochastic exploration consistent over time. These improvements are verified by simulations, showing that the learned policies are sufficiently robust while maintaining dynamic stability during interaction. 
+
+**Abstract (ZH)**: 基于CubeDAgger的交互式模仿学习改进动态稳定性的同时增强鲁棒性 
+
+---
+# SatAOI: Delimitating Area of Interest for Swing-Arm Troweling Robot for Construction 
+
+**Title (ZH)**: SatAOI: 斜置臂抹平机器人施工中感兴趣区域的界定 
+
+**Authors**: Jia-Rui Lin, Shaojie Zhou, Peng Pan, Ruijia Cai, Gang Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.04871)  
+
+**Abstract**: In concrete troweling for building construction, robots can significantly reduce workload and improve automation level. However, as a primary task of coverage path planning (CPP) for troweling, delimitating area of interest (AOI) in complex scenes is still challenging, especially for swing-arm robots with more complex working modes. Thus, this research proposes an algorithm to delimitate AOI for swing-arm troweling robot (SatAOI algorithm). By analyzing characteristics of the robot and obstacle maps, mathematical models and collision principles are established. On this basis, SatAOI algorithm achieves AOI delimitation by global search and collision detection. Experiments on different obstacle maps indicate that AOI can be effectively delimitated in scenes under different complexity, and the algorithm can fully consider the connectivity of obstacle maps. This research serves as a foundation for CPP algorithm and full process simulation of swing-arm troweling robots. 
+
+**Abstract (ZH)**: 建筑施工中混凝土抹灰作业中，机器人可以显著减轻劳动强度并提高自动化水平。然而，作为抹灰作业覆盖路径规划（CPP）的主要任务之一，在复杂场景中划定感兴趣区域（AOI）仍然具有挑战性，尤其是在具有更多复杂工作模式的摆臂机器人中。因此，本研究提出了一种摆臂抹灰机器人AOI划定算法（SatAOI算法）。通过分析机器人和障碍地图的特性，建立了数学模型和碰撞原理。在此基础上，SatAOI算法通过全局搜索和碰撞检测实现AOI划定。不同障碍地图上的实验表明，该算法可以有效划定不同复杂度场景中的AOI，并充分考虑到障碍地图的连通性。本研究为摆臂抹灰机器人覆盖路径规划算法及全过程仿真奠定了基础。 
+
+---
+# Localization and path following for an autonomous e-scooter 
+
+**Title (ZH)**: 自主电动滑板车的局部化与路径跟踪 
+
+**Authors**: David Meister, Robin Strässer, Felix Brändle, Marc Seidel, Benno Bassler, Nathan Gerber, Jan Kautz, Elena Rommel, Frank Allgöwer  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.05314)  
+
+**Abstract**: In order to mitigate economical, ecological, and societal challenges in electric scooter (e-scooter) sharing systems, we develop an autonomous e-scooter prototype. Our vision is to design a fully autonomous prototype that can find its way to the next parking spot, high-demand area, or charging station. In this work, we propose a path following solution to enable localization and navigation in an urban environment with a provided path to follow. We design a closed-loop architecture that solves the localization and path following problem while allowing the e-scooter to maintain its balance with a previously developed reaction wheel mechanism. Our approach facilitates state and input constraints, e.g., adhering to the path width, while remaining executable on a Raspberry Pi 5. We demonstrate the efficacy of our approach in a real-world experiment on our prototype. 
+
+**Abstract (ZH)**: 为了缓解电动滑板车共享系统在经济、生态和社会方面的挑战，我们开发了一种自主电动滑板车原型。我们的目标是设计一个完全自主的原型，能够找到前往下一个停车点、高需求区域或充电站的路径。在本文中，我们提出了一种路径跟随解决方案，以在提供路径的情况下实现城市环境中的定位和导航。我们设计了一种闭环架构，同时解决了定位和路径跟随问题，并允许电动滑板车通过先前开发的反应轮机制保持平衡。我们的方法实现了状态和输入约束，例如遵守路径宽度，同时可以在Raspberry Pi 5上执行。我们在原型的实际实验中展示了我们方法的有效性。 
+
+---
+# An Efficient Method for Accurate Pose Estimation and Error Correction of Cuboidal Objects 
+
+**Title (ZH)**: 一种高效的立方状物体姿态估计与误差校正方法 
+
+**Authors**: Utsav Rai, Hardik Mehta, Vismay Vakharia, Aditya Choudhary, Amit Parmar, Rolif Lima, Kaushik Das  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.04962)  
+
+**Abstract**: The proposed system outlined in this paper is a solution to a use case that requires the autonomous picking of cuboidal objects from an organized or unorganized pile with high precision. This paper presents an efficient method for precise pose estimation of cuboid-shaped objects, which aims to reduce errors in target pose in a time-efficient manner. Typical pose estimation methods like global point cloud registrations are prone to minor pose errors for which local registration algorithms are generally used to improve pose accuracy. However, due to the execution time overhead and uncertainty in the error of the final achieved pose, an alternate, linear time approach is proposed for pose error estimation and correction. This paper presents an overview of the solution followed by a detailed description of individual modules of the proposed algorithm. 
+
+**Abstract (ZH)**: 本文提出的一种系统是针对从有序或无序堆中高精度自主挑选立方形物体的应用场景的解决方案。本文提出了一种高效的方法，用于精确估计立方形物体的姿态，旨在以节省时间的方式减少目标姿态误差。传统的姿态估计方法如全局点云配准容易产生微小的姿态误差，通常使用局部配准算法来提高姿态准确性。然而，由于执行时间开销和最终姿态误差的不确定性，本文提出了一种线性时间的替代方法，用于姿态误差估计和修正。本文首先概述了解决方案，随后详细描述了所提出的算法的各个模块。 
+
+---
+# AI and Vision based Autonomous Navigation of Nano-Drones in Partially-Known Environments 
+
+**Title (ZH)**: 基于视觉的纳航器在部分未知环境中的自主导航技术 
+
+**Authors**: Mattia Sartori, Chetna Singhal, Neelabhro Roy, Davide Brunelli, James Gross  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.04972)  
+
+**Abstract**: The miniaturisation of sensors and processors, the advancements in connected edge intelligence, and the exponential interest in Artificial Intelligence are boosting the affirmation of autonomous nano-size drones in the Internet of Robotic Things ecosystem. However, achieving safe autonomous navigation and high-level tasks such as exploration and surveillance with these tiny platforms is extremely challenging due to their limited resources. This work focuses on enabling the safe and autonomous flight of a pocket-size, 30-gram platform called Crazyflie 2.1 in a partially known environment. We propose a novel AI-aided, vision-based reactive planning method for obstacle avoidance under the ambit of Integrated Sensing, Computing and Communication paradigm. We deal with the constraints of the nano-drone by splitting the navigation task into two parts: a deep learning-based object detector runs on the edge (external hardware) while the planning algorithm is executed onboard. The results show the ability to command the drone at $\sim8$ frames-per-second and a model performance reaching a COCO mean-average-precision of $60.8$. Field experiments demonstrate the feasibility of the solution with the drone flying at a top speed of $1$ m/s while steering away from an obstacle placed in an unknown position and reaching the target destination. The outcome highlights the compatibility of the communication delay and the model performance with the requirements of the real-time navigation task. We provide a feasible alternative to a fully onboard implementation that can be extended to autonomous exploration with nano-drones. 
+
+**Abstract (ZH)**: 纳米传感器与处理器的微型化、边缘智能的进步以及人工智能的指数级兴趣推动了自主纳米无人机在物联网机器人生态系统中的确认。然而，由于这些小型平台资源有限，要在部分已知环境中实现安全自主导航和探索、监控等高级任务极具挑战性。本文旨在使一款30克级、名为Crazyflie 2.1的口袋大小无人机在部分已知环境中实现安全自主飞行。我们提出了一种基于集成感知、计算和通信范式的新型人工智能辅助、视觉导向的反应规划方法，用于障碍物避让。我们通过将导航任务分为两部分来处理纳米无人机的约束条件：深度学习对象检测器在边缘（外部硬件）上运行，而规划算法则在机载上执行。实验结果表明，该方法能够在约8帧每秒的速度下控制无人机，并达到COCO平均准确率为60.8的模型性能。实地试验表明，无人机能够在最大速度为1米/秒的情况下避开未知位置的障碍物并到达目标。结果 Highlights 了通信延迟和模型性能与实时导航任务需求的兼容性。本文提供了可扩展到纳米无人机自主探索的全机载实现的可行替代方案。 
+
+---
