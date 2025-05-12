@@ -1,0 +1,156 @@
+# Active Perception for Tactile Sensing: A Task-Agnostic Attention-Based Approach 
+
+**Title (ZH)**: 触觉感知中的主动感知：一种任务无关的注意力基方法 
+
+**Authors**: Tim Schneider, Cristiana de Farias, Roberto Calandra, Liming Chen, Jan Peters  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.06182)  
+
+**Abstract**: Humans make extensive use of haptic exploration to map and identify the properties of the objects that we touch. In robotics, active tactile perception has emerged as an important research domain that complements vision for tasks such as object classification, shape reconstruction, and manipulation. This work introduces TAP (Task-agnostic Active Perception) -- a novel framework that leverages reinforcement learning (RL) and transformer-based architectures to address the challenges posed by partially observable environments. TAP integrates Soft Actor-Critic (SAC) and CrossQ algorithms within a unified optimization objective, jointly training a perception module and decision-making policy. By design, TAP is completely task-agnostic and can, in principle, generalize to any active perception problem. We evaluate TAP across diverse tasks, including toy examples and realistic applications involving haptic exploration of 3D models from the Tactile MNIST benchmark. Experiments demonstrate the efficacy of TAP, achieving high accuracies on the Tactile MNIST haptic digit recognition task and a tactile pose estimation task. These findings underscore the potential of TAP as a versatile and generalizable framework for advancing active tactile perception in robotics. 
+
+**Abstract (ZH)**: 人类广泛利用触觉探索来绘制和识别所触及物体的属性。在机器人领域，主动触觉感知已经成为一个重要的研究领域，能够弥补视觉在物体分类、形状重建和操作等任务中的不足。本文引入了TAP（任务无关主动感知）——一个利用强化学习（RL）和变换器架构的新框架，以应对部分可观测环境带来的挑战。TAP 将 Soft Actor-Critic (SAC) 和 CrossQ 算法统一到一个优化目标中，联合训练感知模块和决策策略。设计上，TAP 是完全任务无关的，原则上可以泛化到任何主动感知问题。我们通过多种任务评估了 TAP，包括触觉 MNIST 基准中的玩具示例和真实场景，涉及 3D 模型的触觉探索。实验表明，TAP 在触觉 MNIST 触觉数字识别任务和触觉姿态估计任务中实现了高准确率，这些结果强调了 TAP 作为主动触觉感知领域通用且可泛化的框架的潜力。 
+
+---
+# KRRF: Kinodynamic Rapidly-exploring Random Forest algorithm for multi-goal motion planning 
+
+**Title (ZH)**: KRRF：用于多目标运动规划的kinodynamic快速探索随机森林算法 
+
+**Authors**: Petr Ježek, Michal Minařík, Vojtěch Vonásek, Robert Pěnička  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.06126)  
+
+**Abstract**: The problem of kinodynamic multi-goal motion planning is to find a trajectory over multiple target locations with an apriori unknown sequence of visits. The objective is to minimize the cost of the trajectory planned in a cluttered environment for a robot with a kinodynamic motion model. This problem has yet to be efficiently solved as it combines two NP-hard problems, the Traveling Salesman Problem~(TSP) and the kinodynamic motion planning problem. We propose a novel approximate method called Kinodynamic Rapidly-exploring Random Forest~(KRRF) to find a collision-free multi-goal trajectory that satisfies the motion constraints of the robot. KRRF simultaneously grows kinodynamic trees from all targets towards all other targets while using the other trees as a heuristic to boost the growth. Once the target-to-target trajectories are planned, their cost is used to solve the TSP to find the sequence of targets. The final multi-goal trajectory satisfying kinodynamic constraints is planned by guiding the RRT-based planner along the target-to-target trajectories in the TSP sequence. Compared with existing approaches, KRRF provides shorter target-to-target trajectories and final multi-goal trajectories with $1.1-2$ times lower costs while being computationally faster in most test cases. The method will be published as an open-source library. 
+
+**Abstract (ZH)**: 基于动理学的多目标运动规划问题是在先验未知访问顺序的情况下，在复杂环境中共寻找多目标的无碰撞轨迹，以最小化具有动理学运动模型的机器人规划路径的成本。该问题尚未能高效解决，因为它将旅行商问题(TSP)和动理学运动规划问题这两个NP难问题结合起来。我们提出了一种新的近似方法——动理学快速扩展随机森林(KRRF)，用于找到满足机器人运动约束的无碰撞多目标轨迹。KRRF同时从所有目标向其他所有目标生长动理学树，并利用其他树作为启发式方法以加速生长。在目标到目标轨迹规划完成后，使用TSP解决其成本以确定目标访问顺序。最终满足动理学约束的多目标轨迹通过沿着TSP顺序的轨迹引导基于RRT的规划器进行规划。与现有方法相比，KRRF在大多数测试案例中提供更短的目标到目标轨迹和成本降低1.1-2倍的最终多目标轨迹，并且在计算上更快。该方法将作为开源库进行发布。 
+
+---
+# Parameter-Free Segmentation of Robot Movements with Cross-Correlation Using Different Similarity Metrics 
+
+**Title (ZH)**: 使用不同相似性度量的交叉相关实现无参数机器人运动分割 
+
+**Authors**: Wendy Carvalho, Meriem Elkoudi, Brendan Hertel, Reza Azadeh  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.06100)  
+
+**Abstract**: Often, robots are asked to execute primitive movements, whether as a single action or in a series of actions representing a larger, more complex task. These movements can be learned in many ways, but a common one is from demonstrations presented to the robot by a teacher. However, these demonstrations are not always simple movements themselves, and complex demonstrations must be broken down, or segmented, into primitive movements. In this work, we present a parameter-free approach to segmentation using techniques inspired by autocorrelation and cross-correlation from signal processing. In cross-correlation, a representative signal is found in some larger, more complex signal by correlating the representative signal with the larger signal. This same idea can be applied to segmenting robot motion and demonstrations, provided with a representative motion primitive. This results in a fast and accurate segmentation, which does not take any parameters. One of the main contributions of this paper is the modification of the cross-correlation process by employing similarity metrics that can capture features specific to robot movements. To validate our framework, we conduct several experiments of complex tasks both in simulation and in real-world. We also evaluate the effectiveness of our segmentation framework by comparing various similarity metrics. 
+
+**Abstract (ZH)**: 一种基于自 correlates 和互 correlates 的无参数运动分割方法 
+
+---
+# Adaptive Robot Localization with Ultra-wideband Novelty Detection 
+
+**Title (ZH)**: 基于超宽带新颖性检测的自适应机器人定位 
+
+**Authors**: Umberto Albertin, Mauro Martini, Alessandro Navone, Marcello Chiaberge  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.05903)  
+
+**Abstract**: Ultra-wideband (UWB) technology has shown remarkable potential as a low-cost general solution for robot localization. However, limitations of the UWB signal for precise positioning arise from the disturbances caused by the environment itself, due to reflectance, multi-path effect, and Non-Line-of-Sight (NLOS) conditions. This problem is emphasized in cluttered indoor spaces where service robotic platforms usually operate. Both model-based and learning-based methods are currently under investigation to precisely predict the UWB error patterns. Despite the great capability in approximating strong non-linearity, learning-based methods often do not consider environmental factors and require data collection and re-training for unseen data distributions, making them not practically feasible on a large scale. The goal of this research is to develop a robust and adaptive UWB localization method for indoor confined spaces. A novelty detection technique is used to recognize outlier conditions from nominal UWB range data with a semi-supervised autoencoder. Then, the obtained novelty scores are combined with an Extended Kalman filter, leveraging a dynamic estimation of covariance and bias error for each range measurement received from the UWB anchors. The resulting solution is a compact, flexible, and robust system which enables the localization system to adapt the trustworthiness of UWB data spatially and temporally in the environment. The extensive experimentation conducted with a real robot in a wide range of testing scenarios demonstrates the advantages and benefits of the proposed solution in indoor cluttered spaces presenting NLoS conditions, reaching an average improvement of almost 60% and greater than 25cm of absolute positioning error. 
+
+**Abstract (ZH)**: 基于UWB的室内受限空间鲁棒自适应定位方法研究 
+
+---
+# Collecting Human Motion Data in Large and Occlusion-Prone Environments using Ultra-Wideband Localization 
+
+**Title (ZH)**: 在超宽带定位技术辅助下的大规模和遮挡易发环境人体运动数据采集 
+
+**Authors**: Janik Kaden, Maximilian Hilger, Tim Schreiter, Marius Schaab, Thomas Graichen, Andrey Rudenko, Ulrich Heinkel, Achim J. Lilienthal  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.05851)  
+
+**Abstract**: With robots increasingly integrating into human environments, understanding and predicting human motion is essential for safe and efficient interactions. Modern human motion and activity prediction approaches require high quality and quantity of data for training and evaluation, usually collected from motion capture systems, onboard or stationary sensors. Setting up these systems is challenging due to the intricate setup of hardware components, extensive calibration procedures, occlusions, and substantial costs. These constraints make deploying such systems in new and large environments difficult and limit their usability for in-the-wild measurements. In this paper we investigate the possibility to apply the novel Ultra-Wideband (UWB) localization technology as a scalable alternative for human motion capture in crowded and occlusion-prone environments. We include additional sensing modalities such as eye-tracking, onboard robot LiDAR and radar sensors, and record motion capture data as ground truth for evaluation and comparison. The environment imitates a museum setup, with up to four active participants navigating toward random goals in a natural way, and offers more than 130 minutes of multi-modal data. Our investigation provides a step toward scalable and accurate motion data collection beyond vision-based systems, laying a foundation for evaluating sensing modalities like UWB in larger and complex environments like warehouses, airports, or convention centers. 
+
+**Abstract (ZH)**: 随着机器人逐渐融入人类环境，理解和预测人类运动对于安全高效的互动至关重要。现代人类运动和活动预测方法需要大量的高质量数据进行训练和评估，这些数据通常来自运动捕捉系统或车载/固定传感器。设置这些系统具有挑战性，因为硬件组件的复杂配置、繁多的校准程序、遮挡以及高昂的成本使得在新且大型环境中部署这些系统困难重重，限制了它们在野外测量中的适用性。本文我们探讨利用新型超宽带（UWB）定位技术作为人类运动捕捉的可扩展替代方案，在拥挤和遮挡环境中收集运动数据的可能性。我们还包括眼球追踪、车载机器人激光雷达和雷达传感器等额外的传感模态，记录作为评估和比较标准的运动捕捉数据。环境模仿了博物馆的设置，最多有四名参与者以自然的方式导航至随机目标，提供了超过130分钟的多模态数据。我们的研究朝着超越视觉系统的可扩展和准确运动数据收集迈出了一步，为评估如UWB等传感模态在仓库、机场或会议中心等更大和更复杂环境中的有效性奠定了基础。 
+
+---
+# Versatile Distributed Maneuvering with Generalized Formations using Guiding Vector Fields 
+
+**Title (ZH)**: 使用引导向量场的通用分布式机动与一般 formations 
+
+**Authors**: Yang Lu, Sha Luo, Pengming Zhu, Weijia Yao, Hector Garcia de Marina, Xinglong Zhang, Xin Xu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.05840)  
+
+**Abstract**: This paper presents a unified approach to realize versatile distributed maneuvering with generalized formations. Specifically, we decompose the robots' maneuvers into two independent components, i.e., interception and enclosing, which are parameterized by two independent virtual coordinates. Treating these two virtual coordinates as dimensions of an abstract manifold, we derive the corresponding singularity-free guiding vector field (GVF), which, along with a distributed coordination mechanism based on the consensus theory, guides robots to achieve various motions (i.e., versatile maneuvering), including (a) formation tracking, (b) target enclosing, and (c) circumnavigation. Additional motion parameters can generate more complex cooperative robot motions. Based on GVFs, we design a controller for a nonholonomic robot model. Besides the theoretical results, extensive simulations and experiments are performed to validate the effectiveness of the approach. 
+
+**Abstract (ZH)**: 一种通用的基于广义编队实现分布式机动的方法 
+
+---
+# Quantitative Hardness Assessment with Vision-based Tactile Sensing for Fruit Classification and Grasping 
+
+**Title (ZH)**: 基于视觉触觉感知的水果分类与抓取定量硬度评估 
+
+**Authors**: Zhongyuan Liao, Yipai Du, Jianghua Duan, Haobo Liang, Michael Yu Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.05725)  
+
+**Abstract**: Accurate estimation of fruit hardness is essential for automated classification and handling systems, particularly in determining fruit variety, assessing ripeness, and ensuring proper harvesting force. This study presents an innovative framework for quantitative hardness assessment utilizing vision-based tactile sensing, tailored explicitly for robotic applications in agriculture. The proposed methodology derives normal force estimation from a vision-based tactile sensor, and, based on the dynamics of this normal force, calculates the hardness. This approach offers a rapid, non-destructive evaluation through single-contact interaction. The integration of this framework into robotic systems enhances real-time adaptability of grasping forces, thereby reducing the likelihood of fruit damage. Moreover, the general applicability of this approach, through a universal criterion based on average normal force dynamics, ensures its effectiveness across a wide variety of fruit types and sizes. Extensive experimental validation conducted across different fruit types and ripeness-tracking studies demonstrates the efficacy and robustness of the framework, marking a significant advancement in the domain of automated fruit handling. 
+
+**Abstract (ZH)**: 准确估计水果硬度对于自动分类和处理系统至关重要，特别是在确定水果品种、评估成熟度以及确保适当的收获力方面。本研究提出了一种基于视觉触觉感知的创新性框架，专门针对农业机器人应用进行硬度定量评估。所提出的方法从视觉触觉传感器中提取法向力，并基于该法向力的动力学计算硬度。该方法通过单接触交互实现快速、非破坏性评估。将该框架集成到机器人系统中，增强了抓取力的实时适应性，从而降低水果损伤的可能性。此外，通过基于平均法向力动力学的通用标准，该方法在各种水果类型和大小中具有广泛适用性。在不同水果类型和成熟度跟踪研究中的广泛实验验证表明，该框架的有效性和鲁棒性，标志着在自动化水果处理领域的重大进展。 
+
+---
+# Physics-informed Temporal Difference Metric Learning for Robot Motion Planning 
+
+**Title (ZH)**: 基于物理的 temporal 差异度量学习在机器人运动规划中的应用 
+
+**Authors**: Ruiqi Ni, Zherong Pan, Ahmed H Qureshi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.05691)  
+
+**Abstract**: The motion planning problem involves finding a collision-free path from a robot's starting to its target configuration. Recently, self-supervised learning methods have emerged to tackle motion planning problems without requiring expensive expert demonstrations. They solve the Eikonal equation for training neural networks and lead to efficient solutions. However, these methods struggle in complex environments because they fail to maintain key properties of the Eikonal equation, such as optimal value functions and geodesic distances. To overcome these limitations, we propose a novel self-supervised temporal difference metric learning approach that solves the Eikonal equation more accurately and enhances performance in solving complex and unseen planning tasks. Our method enforces Bellman's principle of optimality over finite regions, using temporal difference learning to avoid spurious local minima while incorporating metric learning to preserve the Eikonal equation's essential geodesic properties. We demonstrate that our approach significantly outperforms existing self-supervised learning methods in handling complex environments and generalizing to unseen environments, with robot configurations ranging from 2 to 12 degrees of freedom (DOF). 
+
+**Abstract (ZH)**: 自监督运动规划问题涉及从机器人起始配置到目标配置寻找一条无碰撞路径。近年来，自监督学习方法已经 emerges to tackle motion planning problems without requiring expensive expert demonstrations.它们通过求解激波方程来训练神经网络，并因此提供了高效解决方案。然而，这些方法在复杂环境中表现不佳，因为它们无法维持激波方程的关键性质，如最优价值函数和测地距离。为克服这些限制，我们提出了一种新颖的自监督时差度量学习方法，该方法更准确地求解激波方程并增强了解决复杂和未见规划任务的性能。该方法在有限区域内强制执行最优性原理，使用时差学习避免 spururious 局部极小值，并结合度量学习来保持激波方程的基本测地性质。我们证明，与现有自监督学习方法相比，我们的方法在处理复杂环境和泛化到未见环境中表现显著优于从2到12个自由度（DOF）的机器人配置。 
+
+---
+# Flight Validation of Learning-Based Trajectory Optimization for the Astrobee Free-Flyer 
+
+**Title (ZH)**: 基于学习的轨迹优化在Astrobee自由飞行动态验证 
+
+**Authors**: Somrita Banerjee, Abhishek Cauligi, Marco Pavone  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.05588)  
+
+**Abstract**: Although widely used in commercial and industrial robotics, trajectory optimization has seen limited use in space applications due to its high computational demands. In this work, we present flight results from experiments with the Astrobee free-flying robot on board the International Space Station (ISS), that demonstrate how machine learning can accelerate on-board trajectory optimization while preserving theoretical solver guarantees. To the best of the authors' knowledge, this is the first-ever demonstration of learning-based control on the ISS. Our approach leverages the GuSTO sequential convex programming framework and uses a neural network, trained offline, to map problem parameters to effective initial ``warm-start'' trajectories, paving the way for faster real-time optimization on resource-constrained space platforms. 
+
+**Abstract (ZH)**: 尽管轨迹优化在商业和工业机器人中广泛应用，但由于计算需求高，其在空间应用中的使用受到了限制。本文呈现了Astrobee自由飞行机器人在国际空间站（ISS）上进行的飞行实验结果，展示了如何利用机器学习加速在轨轨迹优化，同时保持理论求解器的保证。据作者所知，这是在International Space Station上首次演示基于学习的控制。我们的方法利用GuSTO序列凸规划框架，并使用一个离线训练的神经网络将问题参数映射到有效的初始“温启动”轨迹，为资源受限的空间平台提供了更快的实时优化途径。 
+
+---
+# Barrier Function Overrides For Non-Convex Fixed Wing Flight Control and Self-Driving Cars 
+
+**Title (ZH)**: 非凸固定翼飞行控制和自动驾驶汽车中的屏障函数 overriding 
+
+**Authors**: Eric Squires, Phillip Odom, Zsolt Kira  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.05548)  
+
+**Abstract**: Reinforcement Learning (RL) has enabled vast performance improvements for robotics systems. To achieve these results though, the agent often must randomly explore the environment, which for safety critical systems presents a significant challenge. Barrier functions can solve this challenge by enabling an override that approximates the RL control input as closely as possible without violating a safety constraint. Unfortunately, this override can be computationally intractable in cases where the dynamics are not convex in the control input or when time is discrete, as is often the case when training RL systems. We therefore consider these cases, developing novel barrier functions for two non-convex systems (fixed wing aircraft and self-driving cars performing lane merging with adaptive cruise control) in discrete time. Although solving for an online and optimal override is in general intractable when the dynamics are nonconvex in the control input, we investigate approximate solutions, finding that these approximations enable performance commensurate with baseline RL methods with zero safety violations. In particular, even without attempting to solve for the optimal override at all, performance is still competitive with baseline RL performance. We discuss the tradeoffs of the approximate override solutions including performance and computational tractability. 
+
+**Abstract (ZH)**: reinforcement learning (RL) 已在机器人系统中实现了巨大的性能提升。然而，为了实现这些成果，代理通常必须随机探索环境，这对于安全关键系统来说是一个重大挑战。障碍函数可以通过提供一种近似RL控制输入而不违反安全约束的方法来克服这一挑战。不幸的是，在控制输入的动态非凸性或时间离散的情况下（如在训练RL系统时经常遇到的情况），这种覆盖可能是计算上无法解决的。因此，我们考虑了这些情况，并在离散时间下为两种非凸系统（固定翼飞机和配备自适应巡航控制进行车道合并的自动驾驶汽车）开发了新的障碍函数。尽管当控制输入的动态非凸性时在线求解最佳覆盖通常无法实现，我们仍然研究了近似解，发现在这些近似解下，性能与基准RL方法相当且完全没有安全违反。特别是，即使没有尝试求解最佳覆盖，性能仍与基准RL性能相当。我们讨论了近似覆盖解的权衡，包括性能和计算可实现性。 
+
+---
+# Priority-Driven Safe Model Predictive Control Approach to Autonomous Driving Applications 
+
+**Title (ZH)**: 基于优先级驱动的安全模型预测控制方法在自主驾驶应用中的研究 
+
+**Authors**: Francesco Prignoli, Ying Shuai Quan, Mohammad Jeddi, Jonas Sjöberg, Paolo Falcone  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.05933)  
+
+**Abstract**: This paper demonstrates the applicability of the safe model predictive control (SMPC) framework to autonomous driving scenarios, focusing on the design of adaptive cruise control (ACC) and automated lane-change systems. Building on the SMPC approach with priority-driven constraint softening -- which ensures the satisfaction of \emph{hard} constraints under external disturbances by selectively softening a predefined subset of adjustable constraints -- we show how the algorithm dynamically relaxes lower-priority, comfort-related constraints in response to unexpected disturbances while preserving critical safety requirements such as collision avoidance and lane-keeping. A learning-based algorithm approximating the time consuming SMPC is introduced to enable real-time execution. Simulations in real-world driving scenarios subject to unpredicted disturbances confirm that this prioritized softening mechanism consistently upholds stringent safety constraints, underscoring the effectiveness of the proposed method. 
+
+**Abstract (ZH)**: 本文展示了安全模型预测控制（SMPC）框架在自主驾驶场景中的适用性，重点设计了自适应巡航控制（ACC）和自动变道系统。通过优先级驱动的约束软化方法，该研究展示了如何在外部干扰下动态放松较低优先级的舒适性约束，同时保持关键的安全要求，如碰撞避免和车道保持。基于学习的算法近似耗时的SMPC，以实现实时执行。在包含未预测干扰的现实驾驶场景下的仿真结果验证了这种优先级软化机制的一致性，强调了所提方法的有效性。 
+
+---
+# Formation Maneuver Control Based on the Augmented Laplacian Method 
+
+**Title (ZH)**: 基于增广拉普拉斯方法的 formation 调整控制 
+
+**Authors**: Xinzhe Zhou, Xuyang Wang, Xiaoming Duan, Yuzhu Bai, Jianping He  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.05795)  
+
+**Abstract**: This paper proposes a novel formation maneuver control method for both 2-D and 3-D space, which enables the formation to translate, scale, and rotate with arbitrary orientation. The core innovation is the novel design of weights in the proposed augmented Laplacian matrix. Instead of using scalars, we represent weights as matrices, which are designed based on a specified rotation axis and allow the formation to perform rotation in 3-D space. To further improve the flexibility and scalability of the formation, the rotational axis adjustment approach and dynamic agent reconfiguration method are developed, allowing formations to rotate around arbitrary axes in 3-D space and new agents to join the formation. Theoretical analysis is provided to show that the proposed approach preserves the original configuration of the formation. The proposed method maintains the advantages of the complex Laplacian-based method, including reduced neighbor requirements and no reliance on generic or convex nominal configurations, while achieving arbitrary orientation rotations via a more simplified implementation. Simulations in both 2-D and 3-D space validate the effectiveness of the proposed method. 
+
+**Abstract (ZH)**: 本文提出了一种新型编队机动控制方法，适用于2D和3D空间，使编队能够任意平移、缩放和旋转。核心创新在于所提出的扩充拉普拉斯矩阵中新型权重的设计。权重不再是标量，而是以矩阵形式表示，基于指定的旋转轴进行设计，从而允许编队在3D空间中进行旋转。为进一步提高编队的灵活性和可扩展性，本文开发了旋转轴调整方法和动态机构重构方法，使得编队能够绕任意轴在3D空间中旋转，并允许新机构加入编队。理论分析表明，所提出的方法能够保持编队的原始配置。该方法保留了基于复杂拉普拉斯矩阵方法的优点，包括减少相邻节点需求且不依赖于通用或凸的名义配置，同时通过更简化的实现方式实现任意方向的旋转。在2D和3D空间中的仿真实验验证了所提出方法的有效性。 
+
+---
