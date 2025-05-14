@@ -1,0 +1,156 @@
+# MC-Swarm: Minimal-Communication Multi-Agent Trajectory Planning and Deadlock Resolution for Quadrotor Swarm 
+
+**Title (ZH)**: MC-Swarm: 最小通信多agent轨迹规划及四旋翼机群死锁解决方法 
+
+**Authors**: Yunwoo Lee, Jungwon Park  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.08593)  
+
+**Abstract**: For effective multi-agent trajectory planning, it is important to consider lightweight communication and its potential asynchrony. This paper presents a distributed trajectory planning algorithm for a quadrotor swarm that operates asynchronously and requires no communication except during the initial planning phase. Moreover, our algorithm guarantees no deadlock under asynchronous updates and absence of communication during flight. To effectively ensure these points, we build two main modules: coordination state updater and trajectory optimizer. The coordination state updater computes waypoints for each agent toward its goal and performs subgoal optimization while considering deadlocks, as well as safety constraints with respect to neighbor agents and obstacles. Then, the trajectory optimizer generates a trajectory that ensures collision avoidance even with the asynchronous planning updates of neighboring agents. We provide a theoretical guarantee of collision avoidance with deadlock resolution and evaluate the effectiveness of our method in complex simulation environments, including random forests and narrow-gap mazes. Additionally, to reduce the total mission time, we design a faster coordination state update using lightweight communication. Lastly, our approach is validated through extensive simulations and real-world experiments with cluttered environment scenarios. 
+
+**Abstract (ZH)**: 一种在异步环境下无需持续通信的四旋翼无人机群分布式轨迹规划算法 
+
+---
+# Continuous World Coverage Path Planning for Fixed-Wing UAVs using Deep Reinforcement Learning 
+
+**Title (ZH)**: 使用深度强化学习的固定翼无人机连续全球路径规划 
+
+**Authors**: Mirco Theile, Andres R. Zapata Rodriguez, Marco Caccamo, Alberto L. Sangiovanni-Vincentelli  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.08382)  
+
+**Abstract**: Unmanned Aerial Vehicle (UAV) Coverage Path Planning (CPP) is critical for applications such as precision agriculture and search and rescue. While traditional methods rely on discrete grid-based representations, real-world UAV operations require power-efficient continuous motion planning. We formulate the UAV CPP problem in a continuous environment, minimizing power consumption while ensuring complete coverage. Our approach models the environment with variable-size axis-aligned rectangles and UAV motion with curvature-constrained Bézier curves. We train a reinforcement learning agent using an action-mapping-based Soft Actor-Critic (AM-SAC) algorithm employing a self-adaptive curriculum. Experiments on both procedurally generated and hand-crafted scenarios demonstrate the effectiveness of our method in learning energy-efficient coverage strategies. 
+
+**Abstract (ZH)**: 无人驾驶航空器（UAV）覆盖路径规划（CPP）对于精准农业和搜索救援等应用至关重要。传统的CPP方法依赖离散的网格表示，而实际的UAV操作需要高效的连续运动规划。我们将在连续环境中形式化UAV-CPP问题，目标是在确保完全覆盖的同时最小化能量消耗。我们使用可变大小的轴对齐矩形来建模环境，并使用曲率约束的Bézier曲线来建模UAV运动。我们利用基于动作映射的Soft Actor-Critic（AM-SAC）算法并结合自适应课程进行agents的训练。实验结果表明，我们的方法在学习能量高效的覆盖策略方面是有效的。 
+
+---
+# Fast Contact Detection via Fusion of Joint and Inertial Sensors for Parallel Robots in Human-Robot Collaboration 
+
+**Title (ZH)**: 基于关节传感器与惯性传感器融合的平行机器人人类-机器人协作快速接触检测 
+
+**Authors**: Aran Mohammad, Jan Piosik, Dustin Lehmann, Thomas Seel, Moritz Schappler  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.08334)  
+
+**Abstract**: Fast contact detection is crucial for safe human-robot collaboration. Observers based on proprioceptive information can be used for contact detection but have first-order error dynamics, which results in delays. Sensor fusion based on inertial measurement units (IMUs) consisting of accelerometers and gyroscopes is advantageous for reducing delays. The acceleration estimation enables the direct calculation of external forces. For serial robots, the installation of multiple accelerometers and gyroscopes is required for dynamics modeling since the joint coordinates are the minimal coordinates. Alternatively, parallel robots (PRs) offer the potential to use only one IMU on the end-effector platform, which already presents the minimal coordinates of the PR. This work introduces a sensor-fusion method for contact detection using encoders and only one low-cost, consumer-grade IMU for a PR. The end-effector accelerations are estimated by an extended Kalman filter and incorporated into the dynamics to calculate external forces. In real-world experiments with a planar PR, we demonstrate that this approach reduces the detection duration by up to 50% compared to a momentum observer and enables the collision and clamping detection within 3-39ms. 
+
+**Abstract (ZH)**: 快速接触检测对于人机安全协作至关重要。基于本体感受信息的观测器可以用于接触检测，但具有一阶误差动力学，导致延迟。基于加速度计和陀螺仪的惯性测量单元（IMU）传感器融合有利于减少延迟。末端执行器加速度估计可以通过扩展卡尔曼滤波器实现，并整合到动力学模型中以计算外部力。在实际实验中，本研究介绍了一种使用编码器和一个低成本消费级IMU对平行机器人进行接触检测的传感器融合方法。通过扩展卡尔曼滤波器估计末端执行器加速度并整合到动力学模型中以计算外部力。在平面平行机器人的真实世界实验中，我们证明了这种方法与动量观测器相比可将检测时间缩短最多50%，并在3-39ms内实现了碰撞和夹持检测。 
+
+---
+# SKiD-SLAM: Robust, Lightweight, and Distributed Multi-Robot LiDAR SLAM in Resource-Constrained Field Environments 
+
+**Title (ZH)**: SKiD-SLAM：资源受限场环境中的稳健、轻量级和分布式多机器人LiDAR SLAM 
+
+**Authors**: Hogyun Kim, Jiwon Choi, Juwon Kim, Geonmo Yang, Dongjin Cho, Hyungtae Lim, Younggun Cho  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.08230)  
+
+**Abstract**: Distributed LiDAR SLAM is crucial for achieving efficient robot autonomy and improving the scalability of mapping. However, two issues need to be considered when applying it in field environments: one is resource limitation, and the other is inter/intra-robot association. The resource limitation issue arises when the data size exceeds the processing capacity of the network or memory, especially when utilizing communication systems or onboard computers in the field. The inter/intra-robot association issue occurs due to the narrow convergence region of ICP under large viewpoint differences, triggering many false positive loops and ultimately resulting in an inconsistent global map for multi-robot systems. To tackle these problems, we propose a distributed LiDAR SLAM framework designed for versatile field applications, called SKiD-SLAM. Extending our previous work that solely focused on lightweight place recognition and fast and robust global registration, we present a multi-robot mapping framework that focuses on robust and lightweight inter-robot loop closure in distributed LiDAR SLAM. Through various environmental experiments, we demonstrate that our method is more robust and lightweight compared to other state-of-the-art distributed SLAM approaches, overcoming resource limitation and inter/intra-robot association issues. Also, we validated the field applicability of our approach through mapping experiments in real-world planetary emulation terrain and cave environments, which are in-house datasets. Our code will be available at this https URL. 
+
+**Abstract (ZH)**: 分布式LiDAR SLAM对于实现高效机器人自主性和提高地图的可扩展性至关重要。然而，在田野环境中应用它时需考虑两个问题：一是资源限制，二是机器人之间的/内部关联问题。资源限制问题发生在数据量超出网络或内存处理能力的情况下，尤其是在利用现场的通信系统或机载计算机时。机器人之间的/内部关联问题由于ICP的收敛区域狭窄，在视野差异较大时会引起许多虚假闭环，并最终导致多机器人系统中全局地图的一致性问题。为了解决这些问题，我们提出了一种适用于多种田野应用的分布式LiDAR SLAM框架，称为SKiD-SLAM。在此基础上，我们扩展了之前专注于轻量级地点识别和快速可靠的全局对齐的工作，提出了一个专注于分布式LiDAR SLAM中鲁棒且轻量级的机器人之间闭环检测的多机器人制图框架。通过各种环境实验，我们证明了我们的方法在鲁棒性和轻量级方面优于其他最先进的分布式SLAM方法，克服了资源限制和机器人之间的/内部关联问题。我们也通过在真实世界行星模拟地形和洞穴环境中的制图实验验证了我们方法的田野适用性，这些是内部数据集。我们的代码将发布在该网址：this https URL。 
+
+---
+# Scaling Multi Agent Reinforcement Learning for Underwater Acoustic Tracking via Autonomous Vehicles 
+
+**Title (ZH)**: 基于自主车辆的水下声学跟踪中多智能体 reinforcement learning 的可扩展性研究 
+
+**Authors**: Matteo Gallici, Ivan Masmitja, Mario Martín  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.08222)  
+
+**Abstract**: Autonomous vehicles (AV) offer a cost-effective solution for scientific missions such as underwater tracking. Recently, reinforcement learning (RL) has emerged as a powerful method for controlling AVs in complex marine environments. However, scaling these techniques to a fleet--essential for multi-target tracking or targets with rapid, unpredictable motion--presents significant computational challenges. Multi-Agent Reinforcement Learning (MARL) is notoriously sample-inefficient, and while high-fidelity simulators like Gazebo's LRAUV provide 100x faster-than-real-time single-robot simulations, they offer no significant speedup for multi-vehicle scenarios, making MARL training impractical. To address these limitations, we propose an iterative distillation method that transfers high-fidelity simulations into a simplified, GPU-accelerated environment while preserving high-level dynamics. This approach achieves up to a 30,000x speedup over Gazebo through parallelization, enabling efficient training via end-to-end GPU acceleration. Additionally, we introduce a novel Transformer-based architecture (TransfMAPPO) that learns multi-agent policies invariant to the number of agents and targets, significantly improving sample efficiency. Following large-scale curriculum learning conducted entirely on GPU, we perform extensive evaluations in Gazebo, demonstrating that our method maintains tracking errors below 5 meters over extended durations, even in the presence of multiple fast-moving targets. This work bridges the gap between large-scale MARL training and high-fidelity deployment, providing a scalable framework for autonomous fleet control in real-world sea missions. 
+
+**Abstract (ZH)**: 自主车辆在水下跟踪等科学任务中的低成本解决方案：基于强化学习的多自主 underwater 车辆控制方法及其加速技术 
+
+---
+# Rethink Repeatable Measures of Robot Performance with Statistical Query 
+
+**Title (ZH)**: 重新思考用于评估机器人性能的可重复度量方法：基于统计查询 
+
+**Authors**: Bowen Weng, Linda Capito, Guillermo A. Castillo, Dylan Khor  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.08216)  
+
+**Abstract**: For a general standardized testing algorithm designed to evaluate a specific aspect of a robot's performance, several key expectations are commonly imposed. Beyond accuracy (i.e., closeness to a typically unknown ground-truth reference) and efficiency (i.e., feasibility within acceptable testing costs and equipment constraints), one particularly important attribute is repeatability. Repeatability refers to the ability to consistently obtain the same testing outcome when similar testing algorithms are executed on the same subject robot by different stakeholders, across different times or locations. However, achieving repeatable testing has become increasingly challenging as the components involved grow more complex, intelligent, diverse, and, most importantly, stochastic. While related efforts have addressed repeatability at ethical, hardware, and procedural levels, this study focuses specifically on repeatable testing at the algorithmic level. Specifically, we target the well-adopted class of testing algorithms in standardized evaluation: statistical query (SQ) algorithms (i.e., algorithms that estimate the expected value of a bounded function over a distribution using sampled data). We propose a lightweight, parameterized, and adaptive modification applicable to any SQ routine, whether based on Monte Carlo sampling, importance sampling, or adaptive importance sampling, that makes it provably repeatable, with guaranteed bounds on both accuracy and efficiency. We demonstrate the effectiveness of the proposed approach across three representative scenarios: (i) established and widely adopted standardized testing of manipulators, (ii) emerging intelligent testing algorithms for operational risk assessment in automated vehicles, and (iii) developing use cases involving command tracking performance evaluation of humanoid robots in locomotion tasks. 
+
+**Abstract (ZH)**: 一种标准化测试算法的设计通常会对评估机器人特定方面性能的能力提出几个关键期望。除了准确性（即，与通常未知的真实参考值的接近程度）和效率（即，在可接受的测试成本和设备约束条件下的可行性），特别重要的一属性是可重复性。可重复性指的是不同相关方在同一机器人上执行相似测试算法时，在不同时间和地点一致获得相同测试结果的能力。然而，随着涉及的组件变得更加复杂、智能、多样，最重要的是随机性，实现可重复测试变得越来越具有挑战性。虽然相关努力已在伦理、硬件和程序层面解决了可重复性问题，但本研究特别关注算法层面的可重复测试。具体而言，我们针对标准化评估中广泛采用的测试算法类别——统计查询（SQ）算法（即，使用采样数据估计分布上某种有界函数的期望值的算法），提出了一种轻量级、参数化和自适应修改方法，适用于基于蒙特卡洛采样、重要性采样或自适应重要性采样的任何SQ流程，确保其在准确性和效率方面具有可证明的可重复性。我们通过三个代表性场景证明了所提方法的有效性：（i）广泛采用的操纵器的标准化测试；（ii）自动驾驶车辆运行风险评估的新兴智能测试算法；（iii）类人机器人在行动任务中命令跟踪性能评估的新兴应用场景。 
+
+---
+# HandCept: A Visual-Inertial Fusion Framework for Accurate Proprioception in Dexterous Hands 
+
+**Title (ZH)**: HandCept: 一种用于精确灵巧手本体感觉的视觉-惯性融合框架 
+
+**Authors**: Junda Huang, Jianshu Zhou, Honghao Guo, Yunhui Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.08213)  
+
+**Abstract**: As robotics progresses toward general manipulation, dexterous hands are becoming increasingly critical. However, proprioception in dexterous hands remains a bottleneck due to limitations in volume and generality. In this work, we present HandCept, a novel visual-inertial proprioception framework designed to overcome the challenges of traditional joint angle estimation methods. HandCept addresses the difficulty of achieving accurate and robust joint angle estimation in dynamic environments where both visual and inertial measurements are prone to noise and drift. It leverages a zero-shot learning approach using a wrist-mounted RGB-D camera and 9-axis IMUs, fused in real time via a latency-free Extended Kalman Filter (EKF). Our results show that HandCept achieves joint angle estimation errors between $2^{\circ}$ and $4^{\circ}$ without observable drift, outperforming visual-only and inertial-only methods. Furthermore, we validate the stability and uniformity of the IMU system, demonstrating that a common base frame across IMUs simplifies system calibration. To support sim-to-real transfer, we also open-sourced our high-fidelity rendering pipeline, which is essential for training without real-world ground truth. This work offers a robust, generalizable solution for proprioception in dexterous hands, with significant implications for robotic manipulation and human-robot interaction. 
+
+**Abstract (ZH)**: 视觉-惯性本体感受框架HandCept：面向灵巧手的本体感受新技术 
+
+---
+# A Tightly Coupled IMU-Based Motion Capture Approach for Estimating Multibody Kinematics and Kinetics 
+
+**Title (ZH)**: 基于IMU的紧密耦合运动捕捉方法用于多体运动学和动力学估计 
+
+**Authors**: Hassan Osman, Daan de Kanter, Jelle Boelens, Manon Kok, Ajay Seth  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.08193)  
+
+**Abstract**: Inertial Measurement Units (IMUs) enable portable, multibody motion capture (MoCap) in diverse environments beyond the laboratory, making them a practical choice for diagnosing mobility disorders and supporting rehabilitation in clinical or home settings. However, challenges associated with IMU measurements, including magnetic distortions and drift errors, complicate their broader use for MoCap. In this work, we propose a tightly coupled motion capture approach that directly integrates IMU measurements with multibody dynamic models via an Iterated Extended Kalman Filter (IEKF) to simultaneously estimate the system's kinematics and kinetics. By enforcing kinematic and kinetic properties and utilizing only accelerometer and gyroscope data, our method improves IMU-based state estimation accuracy. Our approach is designed to allow for incorporating additional sensor data, such as optical MoCap measurements and joint torque readings, to further enhance estimation accuracy. We validated our approach using highly accurate ground truth data from a 3 Degree of Freedom (DoF) pendulum and a 6 DoF Kuka robot. We demonstrate a maximum Root Mean Square Difference (RMSD) in the pendulum's computed joint angles of 3.75 degrees compared to optical MoCap Inverse Kinematics (IK), which serves as the gold standard in the absence of internal encoders. For the Kuka robot, we observe a maximum joint angle RMSD of 3.24 degrees compared to the Kuka's internal encoders, while the maximum joint angle RMSD of the optical MoCap IK compared to the encoders was 1.16 degrees. Additionally, we report a maximum joint torque RMSD of 2 Nm in the pendulum compared to optical MoCap Inverse Dynamics (ID), and 3.73 Nm in the Kuka robot relative to its internal torque sensors. 
+
+**Abstract (ZH)**: 基于惯性测量单元的紧耦合运动捕捉方法及其在多体动力模型中的应用 
+
+---
+# Virtual Holonomic Constraints in Motion Planning: Revisiting Feasibility and Limitations 
+
+**Title (ZH)**: 虚拟holonomic约束在运动规划中的重新审视：可行性和限制探究 
+
+**Authors**: Maksim Surov  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.07983)  
+
+**Abstract**: This paper addresses the feasibility of virtual holonomic constraints (VHCs) in the context of motion planning for underactuated mechanical systems with a single degree of underactuation. While existing literature has established a widely accepted definition of VHC, we argue that this definition is overly restrictive and excludes a broad class of admissible trajectories from consideration. To illustrate this point, we analyze a periodic motion of the Planar Vertical Take-Off and Landing (PVTOL) aircraft. The corresponding phase trajectory and reference control input are analytic functions. We demonstrate the stabilizability of this solution by constructing a feedback controller that ensures asymptotic orbital stability. However, for this solution -- as well as for a broad class of similar ones -- there exists no VHC that satisfies the conventional definition. This observation calls for a reconsideration of how the notion of VHC is defined, with the potential to significantly expand the practical applicability of VHCs in motion planning. 
+
+**Abstract (ZH)**: 本文探讨了在单自由度欠驱动机械系统运动规划中虚拟 holonomic 约束（VHC）的可行性。虽然现有文献已经确立了 VHC 的广泛接受的定义，但本文认为这一定义过于严格，排除了一大类可采纳的轨迹。通过分析平面垂直起降（PVTOL）飞机的周期运动，我们展示了对应相轨迹和参考控制输入是解析函数。我们通过构造反馈控制器保证其渐近轨道稳定性来证明该解的可镇定性。然而，对于该解以及一个广泛的类似解，均不存在满足传统定义的 VHC。这一观察结果呼吁我们重新考虑 VHC 的定义，这可能显著扩展 VHC 在运动规划中的实际应用范围。 
+
+---
+# A Physics-informed End-to-End Occupancy Framework for Motion Planning of Autonomous Vehicles 
+
+**Title (ZH)**: 基于物理信息的一体化占用率框架用于自主车辆运动规划 
+
+**Authors**: Shuqi Shen, Junjie Yang, Hongliang Lu, Hui Zhong, Qiming Zhang, Xinhu Zheng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.07855)  
+
+**Abstract**: Accurate and interpretable motion planning is essential for autonomous vehicles (AVs) navigating complex and uncertain environments. While recent end-to-end occupancy prediction methods have improved environmental understanding, they typically lack explicit physical constraints, limiting safety and generalization. In this paper, we propose a unified end-to-end framework that integrates verifiable physical rules into the occupancy learning process. Specifically, we embed artificial potential fields (APF) as physics-informed guidance during network training to ensure that predicted occupancy maps are both data-efficient and physically plausible. Our architecture combines convolutional and recurrent neural networks to capture spatial and temporal dependencies while preserving model flexibility. Experimental results demonstrate that our method improves task completion rate, safety margins, and planning efficiency across diverse driving scenarios, confirming its potential for reliable deployment in real-world AV systems. 
+
+**Abstract (ZH)**: 准确可解释的运动规划对于自主车辆（AVs）在复杂和不确定环境中的导航至关重要。尽管最近的端到端占用率预测方法提高了环境理解能力，但它们通常缺乏明确的物理约束，限制了安全性和泛化能力。在本文中，我们提出了一种统一的端到端框架，将可验证的物理规则整合到占用率学习过程中。具体来说，我们在网络训练过程中嵌入人工势场（APF）作为物理导向，以确保预测的占用率图既高效又符合物理原理。我们的架构结合了卷积和循环神经网络，以捕捉空间和时间依赖性并保持模型的灵活性。实验结果表明，我们的方法在各种驾驶场景中提高了任务完成率、安全裕度和规划效率，证实了其在实际AV系统中可靠部署的潜力。 
+
+---
+# PierGuard: A Planning Framework for Underwater Robotic Inspection of Coastal Piers 
+
+**Title (ZH)**: PierGuard: 一种用于海岸码头水下机器人检查的规划框架 
+
+**Authors**: Pengyu Wang, Hin Wang Lin, Jialu Li, Jiankun Wang, Ling Shi, Max Q.-H. Meng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.07845)  
+
+**Abstract**: Using underwater robots instead of humans for the inspection of coastal piers can enhance efficiency while reducing risks. A key challenge in performing these tasks lies in achieving efficient and rapid path planning within complex environments. Sampling-based path planning methods, such as Rapidly-exploring Random Tree* (RRT*), have demonstrated notable performance in high-dimensional spaces. In recent years, researchers have begun designing various geometry-inspired heuristics and neural network-driven heuristics to further enhance the effectiveness of RRT*. However, the performance of these general path planning methods still requires improvement when applied to highly cluttered underwater environments. In this paper, we propose PierGuard, which combines the strengths of bidirectional search and neural network-driven heuristic regions. We design a specialized neural network to generate high-quality heuristic regions in cluttered maps, thereby improving the performance of the path planning. Through extensive simulation and real-world ocean field experiments, we demonstrate the effectiveness and efficiency of our proposed method compared with previous research. Our method achieves approximately 2.6 times the performance of the state-of-the-art geometric-based sampling method and nearly 4.9 times that of the state-of-the-art learning-based sampling method. Our results provide valuable insights for the automation of pier inspection and the enhancement of maritime safety. The updated experimental video is available in the supplementary materials. 
+
+**Abstract (ZH)**: 使用水下机器人代替人类对沿海码头进行检查可以提高效率并减少风险：结合双向搜索和神经网络驱动启发式区域的PierGuard方法 
+
+---
+# Optimal Trajectory Planning with Collision Avoidance for Autonomous Vehicle Maneuvering 
+
+**Title (ZH)**: 自主车辆机动中的最优轨迹规划与碰撞避免 
+
+**Authors**: Jason Zalev  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.08724)  
+
+**Abstract**: To perform autonomous driving maneuvers, such as parallel or perpendicular parking, a vehicle requires continual speed and steering adjustments to follow a generated path. In consequence, the path's quality is a limiting factor of the vehicle maneuver's performance. While most path planning approaches include finding a collision-free route, optimal trajectory planning involves solving the best transition from initial to final states, minimizing the action over all paths permitted by a kinematic model. Here we propose a novel method based on sequential convex optimization, which permits flexible and efficient optimal trajectory generation. The objective is to achieve the fastest time, shortest distance, and fewest number of path segments to satisfy motion requirements, while avoiding sensor blind-spots. In our approach, vehicle kinematics are represented by a discretized Dubins model. To avoid collisions, each waypoint is constrained by linear inequalities representing closest distance of obstacles to a polygon specifying the vehicle's extent. To promote smooth and valid trajectories, the solved kinematic state and control variables are constrained and regularized by penalty terms in the model's cost function, which enforces physical restrictions including limits for steering angle, acceleration and speed. In this paper, we analyze trajectories obtained for several parking scenarios. Results demonstrate efficient and collision-free motion generated by the proposed technique. 
+
+**Abstract (ZH)**: 基于顺序凸优化的自主驾驶机动中的最优轨迹生成方法 
+
+---
