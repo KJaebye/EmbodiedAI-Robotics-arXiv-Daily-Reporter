@@ -1,0 +1,52 @@
+# Variational Visual Question Answering 
+
+**Title (ZH)**: 变分视觉问答 
+
+**Authors**: Tobias Jan Wieczorek, Nathalie Daun, Mohammad Emtiyaz Khan, Marcus Rohrbach  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.09591)  
+
+**Abstract**: Despite remarkable progress in multimodal models for Visual Question Answering (VQA), there remain major reliability concerns because the models can often be overconfident and miscalibrated, especially in out-of-distribution (OOD) settings. Plenty has been done to address such issues for unimodal models, but little work exists for multimodal cases. Here, we address unreliability in multimodal models by proposing a Variational VQA approach. Specifically, instead of fine-tuning vision-language models by using AdamW, we employ a recently proposed variational algorithm called IVON, which yields a posterior distribution over model parameters. Through extensive experiments, we show that our approach improves calibration and abstentions without sacrificing the accuracy of AdamW. For instance, compared to AdamW fine-tuning, we reduce Expected Calibration Error by more than 50% compared to the AdamW baseline and raise Coverage by 4% vs. SOTA (for a fixed risk of 1%). In the presence of distribution shifts, the performance gain is even higher, achieving 8% Coverage (@ 1% risk) improvement vs. SOTA when 50% of test cases are OOD. Overall, we present variational learning as a viable option to enhance the reliability of multimodal models. 
+
+**Abstract (ZH)**: 尽管在多模态模型用于视觉问答（VQA）方面取得了显著进展，但由于模型经常过度自信且校准不足，特别是在离分布（OOD）设置中，可靠性仍然是一个主要问题。虽然已经有很多工作针对单模态模型中的此类问题进行了研究，但在多模态情况下的工作却相对较少。在此，我们通过提出一种变分VQA方法来解决多模态模型的不可靠性问题。具体而言，我们不使用AdamW进行微调，而是采用最近提出的变分算法IVON，该算法能够获得模型参数的后验分布。通过广泛的实验，我们展示了我们的方法在不牺牲AdamW准确性的情况下提高校准和避免过多输出。例如，与AdamW微调相比，我们相比AdamW基线将预期校准误差降低了50%以上，并且在固定风险为1%的情况下，覆盖率提高了4%（达到SOTA）。在分布变化的情况下，性能提升更为显著：当测试案例中有50%是OOD时，相比SOTA，我们的方法在1%风险下的覆盖率提高了8%。总体而言，我们展示了变分学习作为一种提高多模态模型可靠性的可行选择。 
+
+---
+# BLIP3-o: A Family of Fully Open Unified Multimodal Models-Architecture, Training and Dataset 
+
+**Title (ZH)**: BLIP3-o：一个全开放统一多模态模型家族—架构、训练与数据集 
+
+**Authors**: Jiuhai Chen, Zhiyang Xu, Xichen Pan, Yushi Hu, Can Qin, Tom Goldstein, Lifu Huang, Tianyi Zhou, Saining Xie, Silvio Savarese, Le Xue, Caiming Xiong, Ran Xu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.09568)  
+
+**Abstract**: Unifying image understanding and generation has gained growing attention in recent research on multimodal models. Although design choices for image understanding have been extensively studied, the optimal model architecture and training recipe for a unified framework with image generation remain underexplored. Motivated by the strong potential of autoregressive and diffusion models for high-quality generation and scalability, we conduct a comprehensive study of their use in unified multimodal settings, with emphasis on image representations, modeling objectives, and training strategies. Grounded in these investigations, we introduce a novel approach that employs a diffusion transformer to generate semantically rich CLIP image features, in contrast to conventional VAE-based representations. This design yields both higher training efficiency and improved generative quality. Furthermore, we demonstrate that a sequential pretraining strategy for unified models-first training on image understanding and subsequently on image generation-offers practical advantages by preserving image understanding capability while developing strong image generation ability. Finally, we carefully curate a high-quality instruction-tuning dataset BLIP3o-60k for image generation by prompting GPT-4o with a diverse set of captions covering various scenes, objects, human gestures, and more. Building on our innovative model design, training recipe, and datasets, we develop BLIP3-o, a suite of state-of-the-art unified multimodal models. BLIP3-o achieves superior performance across most of the popular benchmarks spanning both image understanding and generation tasks. To facilitate future research, we fully open-source our models, including code, model weights, training scripts, and pretraining and instruction tuning datasets. 
+
+**Abstract (ZH)**: 统一图像理解和生成在多模态模型研究中的统一框架设计与训练策略探究 
+
+---
+# Ultrasound Report Generation with Multimodal Large Language Models for Standardized Texts 
+
+**Title (ZH)**: 多模态大型语言模型生成标准化超声报告 
+
+**Authors**: Peixuan Ge, Tongkun Su, Faqin Lv, Baoliang Zhao, Peng Zhang, Chi Hong Wong, Liang Yao, Yu Sun, Zenan Wang, Pak Kin Wong, Ying Hu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.08838)  
+
+**Abstract**: Ultrasound (US) report generation is a challenging task due to the variability of US images, operator dependence, and the need for standardized text. Unlike X-ray and CT, US imaging lacks consistent datasets, making automation difficult. In this study, we propose a unified framework for multi-organ and multilingual US report generation, integrating fragment-based multilingual training and leveraging the standardized nature of US reports. By aligning modular text fragments with diverse imaging data and curating a bilingual English-Chinese dataset, the method achieves consistent and clinically accurate text generation across organ sites and languages. Fine-tuning with selective unfreezing of the vision transformer (ViT) further improves text-image alignment. Compared to the previous state-of-the-art KMVE method, our approach achieves relative gains of about 2\% in BLEU scores, approximately 3\% in ROUGE-L, and about 15\% in CIDEr, while significantly reducing errors such as missing or incorrect content. By unifying multi-organ and multi-language report generation into a single, scalable framework, this work demonstrates strong potential for real-world clinical workflows. 
+
+**Abstract (ZH)**: 基于 ultrasound 图像的多器官和多语言报告生成：统一框架与标准化文本生成 
+
+---
+# Multi-modal Synthetic Data Training and Model Collapse: Insights from VLMs and Diffusion Models 
+
+**Title (ZH)**: 多模态合成数据训练与模型崩溃：来自VLMs和扩散模型的见解 
+
+**Authors**: Zizhao Hu, Mohammad Rostami, Jesse Thomason  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.08803)  
+
+**Abstract**: Recent research has highlighted the risk of generative model collapse, where performance progressively degrades when continually trained on self-generated data. However, existing exploration on model collapse is limited to single, unimodal models, limiting our understanding in more realistic scenarios, such as diverse multi-modal AI agents interacting autonomously through synthetic data and continually evolving. We expand the synthetic data training and model collapse study to multi-modal vision-language generative systems, such as vision-language models (VLMs) and text-to-image diffusion models, as well as recursive generate-train loops with multiple models. We find that model collapse, previously observed in single-modality generative models, exhibits distinct characteristics in the multi-modal context, such as improved vision-language alignment and increased variance in VLM image-captioning task. Additionally, we find that general approaches such as increased decoding budgets, greater model diversity, and relabeling with frozen models can effectively mitigate model collapse. Our findings provide initial insights and practical guidelines for reducing the risk of model collapse in self-improving multi-agent AI systems and curating robust multi-modal synthetic datasets. 
+
+**Abstract (ZH)**: 近期研究强调了生成模型坍塌的风险，当持续用自动生成的数据训练时，模型性能会逐渐下降。然而，现有对模型坍塌的研究主要限于单一模态模型，限制了我们对更现实场景的理解，例如通过合成数据自主交互和不断进化的多模态AI代理。我们将合成数据训练和模型坍塌研究扩展到多模态视觉-语言生成系统，如视觉-语言模型（VLMs）和文本到图像扩散模型，以及涉及多个模型的递归生成-训练循环中。我们发现，单一模态生成模型中观察到的模型坍塌在多模态环境中表现出不同的特征，例如视觉-语言对齐改进和VLM图像配对任务中方差增加。此外，我们发现，增加解码预算、提高模型多样性以及使用冻结模型重新标注等通用方法可以有效缓解模型坍塌。我们的发现为减少自我提升多代理AI系统中模型坍塌的风险以及编目稳健的多模态合成数据集提供了初步见解和实用指南。 
+
+---

@@ -1,0 +1,182 @@
+# Design of a Formation Control System to Assist Human Operators in Flying a Swarm of Robotic Blimps 
+
+**Title (ZH)**: 设计一种编队控制系统以辅助人类操作员操控飞艇无人机群 
+
+**Authors**: Tianfu Wu, Jiaqi Fu, Wugang Meng, Sungjin Cho, Huanzhe Zhan, Fumin Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.09511)  
+
+**Abstract**: Formation control is essential for swarm robotics, enabling coordinated behavior in complex environments. In this paper, we introduce a novel formation control system for an indoor blimp swarm using a specialized leader-follower approach enhanced with a dynamic leader-switching mechanism. This strategy allows any blimp to take on the leader role, distributing maneuvering demands across the swarm and enhancing overall formation stability. Only the leader blimp is manually controlled by a human operator, while follower blimps use onboard monocular cameras and a laser altimeter for relative position and altitude estimation. A leader-switching scheme is proposed to assist the human operator to maintain stability of the swarm, especially when a sharp turn is performed. Experimental results confirm that the leader-switching mechanism effectively maintains stable formations and adapts to dynamic indoor environments while assisting human operator. 
+
+**Abstract (ZH)**: 室内气球群的新型 formations 控制系统：基于动态领导切换机制的专门跟随者方法 
+
+---
+# aUToPath: Unified Planning and Control for Autonomous Vehicles in Urban Environments Using Hybrid Lattice and Free-Space Search 
+
+**Title (ZH)**: AUToPath: 城市环境中基于混合格网和自由空间搜索的自主车辆统一规划与控制 
+
+**Authors**: Tanmay P. Patel, Connor Wilson, Ellina R. Zhang, Morgan Tran, Chang Keun Paik, Steven L. Waslander, Timothy D. Barfoot  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.09475)  
+
+**Abstract**: This paper presents aUToPath, a unified online framework for global path-planning and control to address the challenge of autonomous navigation in cluttered urban environments. A key component of our framework is a novel hybrid planner that combines pre-computed lattice maps with dynamic free-space sampling to efficiently generate optimal driveable corridors in cluttered scenarios. Our system also features sequential convex programming (SCP)-based model predictive control (MPC) to refine the corridors into smooth, dynamically consistent trajectories. A single optimization problem is used to both generate a trajectory and its corresponding control commands; this addresses limitations of decoupled approaches by guaranteeing a safe and feasible path. Simulation results of the novel planner on randomly generated obstacle-rich scenarios demonstrate the success rate of a free-space Adaptively Informed Trees* (AIT*)-based planner, and runtimes comparable to a lattice-based planner. Real-world experiments of the full system on a Chevrolet Bolt EUV further validate performance in dense obstacle fields, demonstrating no violations of traffic, kinematic, or vehicle constraints, and a 100% success rate across eight trials. 
+
+**Abstract (ZH)**: 本文提出了一种统一的在线框架UToPath，用于解决拥挤城市环境中自主导航的全局路径规划与控制挑战。该框架的一个关键组成部分是一种新颖的混合规划器，它结合了预先计算的格子地图和动态自由空间采样，以有效地在复杂场景中生成最优可驾驶走廊。系统还集成了基于序列凸规划（SCP）的模型预测控制（MPC），以将走廊细化为平滑且动力学一致的轨迹。通过单一优化问题同时生成轨迹及其对应的控制命令，该框架解决了拆分方法的局限性，保证了路径的安全性和可行性。针对随机生成的障碍丰富场景的新规划器的仿真结果展示了基于自适应信息树（AIT*）的规划器的成功率，并且运行时间与基于格子的规划器相当。在Chevrolet Bolt EUV上的实验证明了该完整系统的 performances 在密集障碍场中的有效性，没有违反交通、动力学或车辆约束，并且在八次试验中均成功。 
+
+---
+# Decentralized Nonlinear Model Predictive Control-Based Flock Navigation with Real-Time Obstacle Avoidance in Unknown Obstructed Environments 
+
+**Title (ZH)**: 基于实时避障的未知受阻环境下去中心化非线性模型预测控制 flock 导航 
+
+**Authors**: Nuthasith Gerdpratoom, Kaoru Yamamoto  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.09434)  
+
+**Abstract**: This work extends our prior work on the distributed nonlinear model predictive control (NMPC) for navigating a robot fleet following a certain flocking behavior in unknown obstructed environments with a more realistic local obstacle avoidance strategy. More specifically, we integrate the local obstacle avoidance constraint using point clouds into the NMPC framework. Here, each agent relies on data from its local sensor to perceive and respond to nearby obstacles. A point cloud processing technique is presented for both two-dimensional and three-dimensional point clouds to minimize the computational burden during the optimization. The process consists of directional filtering and down-sampling that significantly reduce the number of data points. The algorithm's performance is validated through realistic 3D simulations in Gazebo, and its practical feasibility is further explored via hardware-in-the-loop (HIL) simulations on embedded platforms. 
+
+**Abstract (ZH)**: 这种工作扩展了我们之前关于在未知障碍环境中遵循特定集群行为导航机器人舰队的分布式非线性模型预测控制（NMPC）的研究，引入了更现实的局部障碍避免策略。具体来说，我们将基于点云的局部障碍避免约束整合进NMPC框架。每个代理依赖其本地传感器的数据来感知和响应附近的障碍。提出了一种对二维和三维点云的处理技术，以减轻优化过程中的计算负担。该过程包括方向滤波和下采样，显著减少了数据点的数量。算法性能通过Gazebo中的真实三维仿真得到验证，并通过嵌入式平台上的硬件在环（HIL）仿真进一步探讨了其实用可行性。 
+
+---
+# Strategic Jenga Play via Graph Based Dynamics Modeling 
+
+**Title (ZH)**: 基于图动态建模的 Strategic Jenga 操作策略 
+
+**Authors**: Kavya Puthuveetil, Xinyi Zhang, Kazuto Yokoyama, Tetsuya Narita  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.09377)  
+
+**Abstract**: Controlled manipulation of multiple objects whose dynamics are closely linked is a challenging problem within contact-rich manipulation, requiring an understanding of how the movement of one will impact the others. Using the Jenga game as a testbed to explore this problem, we graph-based modeling to tackle two different aspects of the task: 1) block selection and 2) block extraction. For block selection, we construct graphs of the Jenga tower and attempt to classify, based on the tower's structure, whether removing a given block will cause the tower to collapse. For block extraction, we train a dynamics model that predicts how all the blocks in the tower will move at each timestep in an extraction trajectory, which we then use in a sampling-based model predictive control loop to safely pull blocks out of the tower with a general-purpose parallel-jaw gripper. We train and evaluate our methods in simulation, demonstrating promising results towards block selection and block extraction on a challenging set of full-sized Jenga towers, even at advanced stages of the game. 
+
+**Abstract (ZH)**: 控制 manipulation 多个紧密关联动力学的对象是一项在丰富接触 manipulation 中具有挑战性的问题，需要理解一个对象的运动如何影响其他对象。为了探索这一问题，我们利用 Jenga 游戏作为实验平台，采用基于图的建模方法研究任务的两个不同方面：1) 块的选择；2) 块的提取。对于块的选择，我们构建 Jenga 塔的图，并尝试根据塔的结构来分类，判断移除给定块是否会令塔倒塌。对于块的提取，我们训练一个动力学模型，该模型可以预测在提取轨迹中的每个时间步，塔中所有块的运动情况，并利用该模型在一个基于采样的模型预测控制循环中，安全地使用通用并指夹爪从塔中拉出块。我们在仿真中训练和评估了我们的方法，展示了在一组具有挑战性的全尺寸 Jenga 塔上，即使是游戏的后期阶段，对块选择和块提取取得有前景的结果。 
+
+---
+# Improved Corner Cutting Constraints for Mixed-Integer Motion Planning of a Differential Drive Micro-Mobility Vehicle 
+
+**Title (ZH)**: 改进的转角裁剪约束条件在差动驱动微型移动车辆混合整数运动规划中的应用 
+
+**Authors**: Angelo Caregnato-Neto, Janito Vaqueiro Ferreira  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.09359)  
+
+**Abstract**: This paper addresses the problem of motion planning for differential drive micro-mobility platforms. This class of vehicle is designed to perform small-distance transportation of passengers and goods in structured environments. Our approach leverages mixed-integer linear programming (MILP) to compute global optimal collision-free trajectories taking into account the kinematics and dynamics of the vehicle. We propose novel constraints for intersample collision avoidance and demonstrate its effectiveness using pick-up and delivery missions and statistical analysis of Monte Carlo simulations. The results show that the novel formulation provides the best trajectories in terms of time expenditure and control effort when compared to two state-of-the-art approaches. 
+
+**Abstract (ZH)**: 这篇论文解决了差动驱动微移动平台的运动规划问题。此类车辆设计用于在结构化环境中进行短距离的乘客和货物运输。我们利用混合整数线性规划（MILP）来计算全局最优且无碰撞的轨迹，同时考虑车辆的kinematics和dynamics。我们提出了新的采样点间避碰约束，并通过拾取和交付任务及其蒙特卡洛模拟的统计分析来证明其有效性。结果显示，新型表示法在时间和控制努力方面提供了最佳轨迹，优于两种最先进的方法。 
+
+---
+# A drone that learns to efficiently find objects in agricultural fields: from simulation to the real world 
+
+**Title (ZH)**: 一种在农业田地高效搜索物体的无人机：从仿真到现实世界 
+
+**Authors**: Rick van Essen, Gert Kootstra  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.09278)  
+
+**Abstract**: Drones are promising for data collection in precision agriculture, however, they are limited by their battery capacity. Efficient path planners are therefore required. This paper presents a drone path planner trained using Reinforcement Learning (RL) on an abstract simulation that uses object detections and uncertain prior knowledge. The RL agent controls the flight direction and can terminate the flight. By using the agent in combination with the drone's flight controller and a detection network to process camera images, it is possible to evaluate the performance of the agent on real-world data. In simulation, the agent yielded on average a 78% shorter flight path compared to a full coverage planner, at the cost of a 14% lower recall. On real-world data, the agent showed a 72% shorter flight path compared to a full coverage planner, however, at the cost of a 25% lower recall. The lower performance on real-world data was attributed to the real-world object distribution and the lower accuracy of prior knowledge, and shows potential for improvement. Overall, we concluded that for applications where it is not crucial to find all objects, such as weed detection, the learned-based path planner is suitable and efficient. 
+
+**Abstract (ZH)**: 无人机在精密农业中的数据采集具有潜力，然而受限于电池容量。因此需要高效路径规划器。本文提出一种基于强化学习（RL）训练的无人机路径规划器，该规划器使用抽象仿真和对象检测结合不确定先验知识。通过将该智能体与无人机飞行控制器和检测网络结合处理相机图像，可以在真实数据上评估智能体的性能。在仿真中，智能体的飞行路径平均比全覆盖规划器短78%，但召回率降低了14%。在真实数据上，智能体的飞行路径平均比全覆盖规划器短72%，但召回率降低了25%。真实数据上的较低性能归因于真实世界的物体分布和先验知识的较低准确性，并显示了改进的潜力。总体而言，我们得出结论，在如杂草检测等不需要找到所有物体的应用场景中，基于学习的路径规划器是合适且高效的。 
+
+---
+# Robot-Assisted Drone Recovery on a Wavy Surface Using Error-State Kalman Filter and Receding Horizon Model Predictive Control 
+
+**Title (ZH)**: 使用误差状态卡尔曼滤波器和递推_horizon模型预测控制的波浪表面无人机辅助回收 
+
+**Authors**: Yimou Wu, Mingyang Liang, Ruoyu Xu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.09145)  
+
+**Abstract**: Recovering a drone on a disturbed water surface remains a significant challenge in maritime robotics. In this paper, we propose a unified framework for Robot-Assisted Drone Recovery on a Wavy Surface that addresses two major tasks: Firstly, accurate prediction of a moving drone's position under wave-induced disturbances using an Error-State Kalman Filter (ESKF), and secondly, effective motion planning for a manipulator via Receding Horizon Control (RHC). Specifically, the ESKF predicts the drone's future position 0.5s ahead, while the manipulator plans a capture trajectory in real time, thus overcoming not only wave-induced base motions but also limited torque constraints. We provide a system design that comprises a manipulator subsystem and a UAV subsystem. On the UAV side, we detail how position control and suspended payload strategies are implemented. On the manipulator side, we show how an RHC scheme outperforms traditional low-level control algorithms. Simulation and real-world experiments - using wave-disturbed motion data - demonstrate that our approach achieves a high success rate - above 95% and outperforms conventional baseline methods by up to 10% in efficiency and 20% in precision. The results underscore the feasibility and robustness of our system, which achieves state-of-the-art (SOTA) performance and offers a practical solution for maritime drone operations. 
+
+**Abstract (ZH)**: 基于波动表面的无人机辅助回收统一框架 
+
+---
+# VGC-RIO: A Tightly Integrated Radar-Inertial Odometry with Spatial Weighted Doppler Velocity and Local Geometric Constrained RCS Histograms 
+
+**Title (ZH)**: VGC-RIO：整合了空间加权多普勒速度和局部几何约束 RCS 直方图的雷达-惯性里程计 
+
+**Authors**: Jianguang Xiang, Xiaofeng He, Zizhuo Chen, Lilian Zhang, Xincan Luo, Jun Mao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.09103)  
+
+**Abstract**: Recent advances in 4D radar-inertial odometry
+have demonstrated promising potential for autonomous lo calization in adverse conditions. However, effective handling
+of sparse and noisy radar measurements remains a critical
+challenge. In this paper, we propose a radar-inertial odometry
+with a spatial weighting method that adapts to unevenly
+distributed points and a novel point-description histogram
+for challenging point registration. To make full use of the
+Doppler velocity from different spatial sections, we propose
+a weighting calculation model. To enhance the point cloud
+registration performance under challenging scenarios, we con struct a novel point histogram descriptor that combines local
+geometric features and radar cross-section (RCS) features. We
+have also conducted extensive experiments on both public and
+self-constructed datasets. The results demonstrate the precision
+and robustness of the proposed VGC-RIO. 
+
+**Abstract (ZH)**: 最近izen雷达惯导里程计的进展在恶劣条件下的自主定位应用中展示了巨大的潜力。然而，有效处理稀疏且噪声较大的雷达测量值仍然是一个关键挑战。在本文中，我们提出了一种基于空间加权方法的雷达惯导里程计，并结合了一种新的点描述直方图来进行具有挑战性的点配准。为了充分利用来自不同空间区域的多普勒速度，我们提出了一种加权计算模型。为了在具有挑战性的场景下增强点云配准性能，我们构建了一种结合局部几何特征和雷达截面（RCS）特征的新型点直方图描述符。我们在公共数据集和自构建数据集上进行了广泛的实验。结果证明了所提出的VGC-RIO的精度和鲁棒性。 
+
+---
+# A Novel 6-axis Force/Torque Sensor Using Inductance Sensors 
+
+**Title (ZH)**: 一种基于电感传感器的新型6轴力/扭矩传感器 
+
+**Authors**: Hyun-Bin Kim, Kyung-Soo Kim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.09069)  
+
+**Abstract**: This paper presents a novel six-axis force/torque (F/T) sensor based on inductive sensing technology. Unlike conventional strain gauge-based sensors that require direct contact and external amplification, the proposed sensor utilizes non-contact inductive measurements to estimate force via displacement of a conductive target. A compact, fully integrated architecture is achieved by incorporating a CAN-FD based signal processing module directly onto the PCB, enabling high-speed data acquisition at up to 4~kHz without external DAQ systems. The sensing mechanism is modeled and calibrated through a rational function fitting approach, which demonstrated superior performance in terms of root mean square error (RMSE), coefficient of determination ($R^2$), and linearity error compared to other nonlinear models. Static and repeatability experiments validate the sensor's accuracy, achieving a resolution of 0.03~N and quantization levels exceeding 55,000 steps, surpassing that of commercial sensors. The sensor also exhibits low crosstalk, high sensitivity, and robust noise characteristics. Its performance and structure make it suitable for precision robotic applications, especially in scenarios where compactness, non-contact operation, and integrated processing are essential. 
+
+**Abstract (ZH)**: 基于感应技术的六轴力/扭矩传感器研究 
+
+---
+# Reach-Avoid-Stabilize Using Admissible Control Sets 
+
+**Title (ZH)**: 可达-避险-稳定控制集方法 
+
+**Authors**: Zheng Gong, Boyang Li, Sylvia Herbert  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.09058)  
+
+**Abstract**: Hamilton-Jacobi Reachability (HJR) analysis has been successfully used in many robotics and control tasks, and is especially effective in computing reach-avoid sets and control laws that enable an agent to reach a goal while satisfying state constraints. However, the original HJR formulation provides no guarantees of safety after a) the prescribed time horizon, or b) goal satisfaction. The reach-avoid-stabilize (RAS) problem has therefore gained a lot of focus: find the set of initial states (the RAS set), such that the trajectory can reach the target, and stabilize to some point of interest (POI) while avoiding obstacles. Solving RAS problems using HJR usually requires defining a new value function, whose zero sub-level set is the RAS set. The existing methods do not consider the problem when there are a series of targets to reach and/or obstacles to avoid. We propose a method that uses the idea of admissible control sets; we guarantee that the system will reach each target while avoiding obstacles as prescribed by the given time series. Moreover, we guarantee that the trajectory ultimately stabilizes to the POI. The proposed method provides an under-approximation of the RAS set, guaranteeing safety. Numerical examples are provided to validate the theory. 
+
+**Abstract (ZH)**: Hamilton-Jacobi Reachability (HJR)分析已被成功应用于许多机器人和控制任务，并特别适用于计算可达规避集及使智能体能够达到目标的同时满足状态约束的控制法则。然而，原始的HJR公式在a) 规定的时间范围之外，或b) 达到目标之后，并不能提供安全性的保证。因此，可达规避稳定（RAS）问题受到了广泛的关注：找到初始状态集（RAS集），使得轨迹能够到达目标，稳定到某个兴趣点（POI），并避免障碍物。使用HJR求解RAS问题通常需要定义一个新的值函数，其零子水平集即为RAS集。现有方法未考虑在存在一系列目标要到达或多个障碍物要避免的情况下解决问题。我们提出了一种方法，利用可选控制集的思想；保证系统能够在指定的时间序列下达到每个目标并避免障碍物，同时保证轨迹最终稳定到POI。所提出的方法提供了RAS集的下界近似，并保证了安全性。提供了数值例子来验证理论。 
+
+---
+# ChicGrasp: Imitation-Learning based Customized Dual-Jaw Gripper Control for Delicate, Irregular Bio-products Manipulation 
+
+**Title (ZH)**: ChicGrasp: 基于imitation-learning的定制化双爪 gripper 控制方法及其在易损不规则生物产品操作中的应用 
+
+**Authors**: Amirreza Davar, Zhengtong Xu, Siavash Mahmoudi, Pouya Sohrabipour, Chaitanya Pallerla, Yu She, Wan Shou, Philip Crandall, Dongyi Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.08986)  
+
+**Abstract**: Automated poultry processing lines still rely on humans to lift slippery, easily bruised carcasses onto a shackle conveyor. Deformability, anatomical variance, and strict hygiene rules make conventional suction and scripted motions unreliable. We present ChicGrasp, an end--to--end hardware--software co-design for this task. An independently actuated dual-jaw pneumatic gripper clamps both chicken legs, while a conditional diffusion-policy controller, trained from only 50 multi--view teleoperation demonstrations (RGB + proprioception), plans 5 DoF end--effector motion, which includes jaw commands in one shot. On individually presented raw broiler carcasses, our system achieves a 40.6\% grasp--and--lift success rate and completes the pick to shackle cycle in 38 s, whereas state--of--the--art implicit behaviour cloning (IBC) and LSTM-GMM baselines fail entirely. All CAD, code, and datasets will be open-source. ChicGrasp shows that imitation learning can bridge the gap between rigid hardware and variable bio--products, offering a reproducible benchmark and a public dataset for researchers in agricultural engineering and robot learning. 
+
+**Abstract (ZH)**: ChicGrasp: 一种从硬件到软件的端到端设计用于自动化家禽处理作业的抓取系统 
+
+---
+# Real-time Capable Learning-based Visual Tool Pose Correction via Differentiable Simulation 
+
+**Title (ZH)**: 基于可微分仿真学习的实时视觉工具姿态纠正 
+
+**Authors**: Shuyuan Yang, Zonghe Chua  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.08875)  
+
+**Abstract**: Autonomy in Minimally Invasive Robotic Surgery (MIRS) has the potential to reduce surgeon cognitive and task load, thereby increasing procedural efficiency. However, implementing accurate autonomous control can be difficult due to poor end-effector proprioception, a limitation of their cable-driven mechanisms. Although the robot may have joint encoders for the end-effector pose calculation, various non-idealities make the entire kinematics chain inaccurate. Modern vision-based pose estimation methods lack real-time capability or can be hard to train and generalize. In this work, we demonstrate a real-time capable, vision transformer-based pose estimation approach that is trained using end-to-end differentiable kinematics and rendering in simulation. We demonstrate the potential of this method to correct for noisy pose estimates in simulation, with the longer term goal of verifying the sim-to-real transferability of our approach. 
+
+**Abstract (ZH)**: 最小侵入性机器人手术中的自主性有潜力减少外科医生的认知和任务负担，从而提高手术程序的效率。然而，由于电缆驱动机制导致的末端执行器本体感受差，实现准确的自主控制具有难度。尽管机器人可能具有关节编码器来计算末端执行器的姿态，但由于各种非理想因素，整个运动链可能不准确。现代基于视觉的姿态估计方法缺乏实时能力，或者训练和泛化难度较大。在此项工作中，我们展示了基于视觉变换器的姿态估计方法，该方法通过端到端可微分运动学和仿真渲染进行训练，具备实时能力。我们证明了该方法在仿真中能够纠正嘈杂的姿态估计，并且长期目标是验证我们方法的仿真实用性。 
+
+---
+# Efficiently Manipulating Clutter via Learning and Search-Based Reasoning 
+
+**Title (ZH)**: 通过学习与基于搜索的推理高效操作杂乱环境 
+
+**Authors**: Baichuan Huang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.08853)  
+
+**Abstract**: This thesis presents novel algorithms to advance robotic object rearrangement, a critical task for autonomous systems in applications like warehouse automation and household assistance. Addressing challenges of high-dimensional planning, complex object interactions, and computational demands, our work integrates deep learning for interaction prediction, tree search for action sequencing, and parallelized computation for efficiency. Key contributions include the Deep Interaction Prediction Network (DIPN) for accurate push motion forecasting (over 90% accuracy), its synergistic integration with Monte Carlo Tree Search (MCTS) for effective non-prehensile object retrieval (100% completion in specific challenging scenarios), and the Parallel MCTS with Batched Simulations (PMBS) framework, which achieves substantial planning speed-up while maintaining or improving solution quality. The research further explores combining diverse manipulation primitives, validated extensively through simulated and real-world experiments. 
+
+**Abstract (ZH)**: 本论文提出了一种新的算法以推进机器人物体重排任务，这是自主系统在仓储自动化和家庭辅助应用中的关键任务。该工作通过结合深度学习进行交互预测、树搜索进行动作序列规划以及并行计算来解决高维规划、复杂物体交互和计算需求等挑战。关键贡献包括深度交互预测网络（DIPN）用于准确的推动作预测（准确率超过90%）、与蒙特卡洛树搜索（MCTS）的协同集成以高效实现非抓握物体的检索（在特定挑战性场景中100%完成）、以及并行蒙特卡洛树搜索批量模拟框架（PMBS），该框架在保持或提高解的质量的同时显著提高了规划速度。进一步研究结合了多种操作基本操作，并通过广泛的模拟和实际实验得到了验证。 
+
+---
