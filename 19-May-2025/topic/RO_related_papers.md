@@ -1,0 +1,104 @@
+# UMArm: Untethered, Modular, Wearable, Soft Pneumatic Arm 
+
+**Title (ZH)**: UM Arm: 无缆线、模块化、可穿戴、软气动臂 
+
+**Authors**: Runze Zuo, Dong Heon Han, Richard Li, Saima Jamal, Daniel Bruder  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.11476)  
+
+**Abstract**: Robotic arms are essential to modern industries, however, their adaptability to unstructured environments remains limited. Soft robotic arms, particularly those actuated pneumatically, offer greater adaptability in unstructured environments and enhanced safety for human-robot interaction. However, current pneumatic soft arms are constrained by limited degrees of freedom, precision, payload capacity, and reliance on bulky external pressure regulators. In this work, a novel pneumatically driven rigid-soft hybrid arm, ``UMArm'', is presented. The shortcomings of pneumatically actuated soft arms are addressed by densely integrating high-force-to-weight-ratio, self-regulated McKibben actuators onto a lightweight rigid spine structure. The modified McKibben actuators incorporate valves and controllers directly inside, eliminating the need for individual pressure lines and external regulators, significantly reducing system weight and complexity. Full untethered operation, high payload capacity, precision, and directionally tunable compliance are achieved by the UMArm. Portability is demonstrated through a wearable assistive arm experiment, and versatility is showcased by reconfiguring the system into an inchworm robot. The results of this work show that the high-degree-of-freedom, external-regulator-free pneumatically driven arm systems like the UMArm possess great potential for real-world unstructured environments. 
+
+**Abstract (ZH)**: 软体机器人手臂在现代工业中至关重要，然而它们在非结构化环境中的适应性仍然有限。气动驱动的软体机器人手臂，特别是在非结构化环境中提供了更大的适应性，并增强了与机器人的人机交互安全性。然而，当前的气动软体手臂受到自由度有限、精度不足、承载能力有限以及需要体积较大的外部压力调节器的限制。本文提出了一种新型气动驱动的刚柔混合手臂“UMArm”。通过紧密集成高功率重量比、自我调节的麦基宾执行器到轻质刚性脊柱结构上，解决了气动驱动软体手臂的不足之处。修改后的麦基宾执行器在内部集成了阀门和控制器，消除了单独的压力管路和外部调节器的需要，大幅减轻了系统的重量和复杂性。UMArm 实现了全解耦操作、高承载能力、高精度和方向可调的顺应性。通过穿戴辅助手臂实验展示了其便携性，并通过重新配置系统作为inchworm机器人展示了其多功能性。研究结果表明，如UMArm这样的外部调节器自由的高自由度气动驱动手臂系统在实际非结构化环境中具有巨大潜力。 
+
+---
+# REACT: Runtime-Enabled Active Collision-avoidance Technique for Autonomous Driving 
+
+**Title (ZH)**: REACT：运行时启用的主动避碰技术在自动驾驶中的应用 
+
+**Authors**: Heye Huang, Hao Cheng, Zhiyuan Zhou, Zijin Wang, Qichao Liu, Xiaopeng Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.11474)  
+
+**Abstract**: Achieving rapid and effective active collision avoidance in dynamic interactive traffic remains a core challenge for autonomous driving. This paper proposes REACT (Runtime-Enabled Active Collision-avoidance Technique), a closed-loop framework that integrates risk assessment with active avoidance control. By leveraging energy transfer principles and human-vehicle-road interaction modeling, REACT dynamically quantifies runtime risk and constructs a continuous spatial risk field. The system incorporates physically grounded safety constraints such as directional risk and traffic rules to identify high-risk zones and generate feasible, interpretable avoidance behaviors. A hierarchical warning trigger strategy and lightweight system design enhance runtime efficiency while ensuring real-time responsiveness. Evaluations across four representative high-risk scenarios including car-following braking, cut-in, rear-approaching, and intersection conflict demonstrate REACT's capability to accurately identify critical risks and execute proactive avoidance. Its risk estimation aligns closely with human driver cognition (i.e., warning lead time < 0.4 s), achieving 100% safe avoidance with zero false alarms or missed detections. Furthermore, it exhibits superior real-time performance (< 50 ms latency), strong foresight, and generalization. The lightweight architecture achieves state-of-the-art accuracy, highlighting its potential for real-time deployment in safety-critical autonomous systems. 
+
+**Abstract (ZH)**: 实现动态交互交通中快速有效的主动碰撞避让仍然是自动驾驶的核心挑战。本文提出了一种实时启用的主动碰撞 avoidance 技术（REACT），这是一种闭环框架，将风险评估与主动避让控制结合在一起。通过利用能量传输原理和人-车-路交互建模，REACT 动态量化运行时风险并构建连续的空间风险场。系统融入了基于物理的安全约束，如方向性风险和交通规则，以识别高风险区域并生成可行且可解释的避让行为。层次化的预警触发策略和轻量级系统设计增强了运行时效率，同时确保实时响应能力。在四种代表性高风险场景（包括跟车制动、切入、后车接近和交叉口冲突）上进行的评估显示，REACT 能够准确识别关键风险并执行主动避让。其风险估计与人类驾驶员的认知一致（即预警提前时间 < 0.4 秒），实现了 100% 的安全避让且无误报或漏检。此外，它还展示了卓越的实时性能（< 50 毫秒延迟）、较强的预见性和泛化能力。轻量级的架构实现了最先进的准确性，突显了其在安全关键的自动驾驶系统中进行实时部署的潜力。 
+
+---
+# Self-supervised perception for tactile skin covered dexterous hands 
+
+**Title (ZH)**: 自我监督的触觉感知技术应用于灵巧手套 
+
+**Authors**: Akash Sharma, Carolina Higuera, Chaithanya Krishna Bodduluri, Zixi Liu, Taosha Fan, Tess Hellebrekers, Mike Lambeta, Byron Boots, Michael Kaess, Tingfan Wu, Francois Robert Hogan, Mustafa Mukadam  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.11420)  
+
+**Abstract**: We present Sparsh-skin, a pre-trained encoder for magnetic skin sensors distributed across the fingertips, phalanges, and palm of a dexterous robot hand. Magnetic tactile skins offer a flexible form factor for hand-wide coverage with fast response times, in contrast to vision-based tactile sensors that are restricted to the fingertips and limited by bandwidth. Full hand tactile perception is crucial for robot dexterity. However, a lack of general-purpose models, challenges with interpreting magnetic flux and calibration have limited the adoption of these sensors. Sparsh-skin, given a history of kinematic and tactile sensing across a hand, outputs a latent tactile embedding that can be used in any downstream task. The encoder is self-supervised via self-distillation on a variety of unlabeled hand-object interactions using an Allegro hand sensorized with Xela uSkin. In experiments across several benchmark tasks, from state estimation to policy learning, we find that pretrained Sparsh-skin representations are both sample efficient in learning downstream tasks and improve task performance by over 41% compared to prior work and over 56% compared to end-to-end learning. 
+
+**Abstract (ZH)**: Sparsh-skin: 一种用于灵巧机器人手指尖、掌骨和手掌部位分布的磁触觉传感器的预训练编码器 
+
+---
+# Open-Source Multi-Viewpoint Surgical Telerobotics 
+
+**Title (ZH)**: 开源多视角手术 tele manipulation 
+
+**Authors**: Guido Caccianiga, Yarden Sharon, Bernard Javot, Senya Polikovsky, Gökce Ergün, Ivan Capobianco, André L. Mihaljevic, Anton Deguet, Katherine J. Kuchenbecker  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.11142)  
+
+**Abstract**: As robots for minimally invasive surgery (MIS) gradually become more accessible and modular, we believe there is a great opportunity to rethink and expand the visualization and control paradigms that have characterized surgical teleoperation since its inception. We conjecture that introducing one or more additional adjustable viewpoints in the abdominal cavity would not only unlock novel visualization and collaboration strategies for surgeons but also substantially boost the robustness of machine perception toward shared autonomy. Immediate advantages include controlling a second viewpoint and teleoperating surgical tools from a different perspective, which would allow collaborating surgeons to adjust their views independently and still maneuver their robotic instruments intuitively. Furthermore, we believe that capturing synchronized multi-view 3D measurements of the patient's anatomy would unlock advanced scene representations. Accurate real-time intraoperative 3D perception will allow algorithmic assistants to directly control one or more robotic instruments and/or robotic cameras. Toward these goals, we are building a synchronized multi-viewpoint, multi-sensor robotic surgery system by integrating high-performance vision components and upgrading the da Vinci Research Kit control logic. This short paper reports a functional summary of our setup and elaborates on its potential impacts in research and future clinical practice. By fully open-sourcing our system, we will enable the research community to reproduce our setup, improve it, and develop powerful algorithms, effectively boosting clinical translation of cutting-edge research. 
+
+**Abstract (ZH)**: 随着用于微创手术（MIS）的机器人逐渐变得更加易获取和模块化，我们相信有机会重新思考和扩展自远程手术操作成立以来一直主导的可视化和控制范式。我们推测，在腹腔内引入一个或多个可调节的视角不仅能够解锁新的可视化和协作策略，还能够显著提高机器感知向共享自主性的鲁棒性。即时优势包括控制第二个视角和从不同角度远程操作手术工具，这将使合作的外科医生能够独立调整他们的视角并仍然能够直观地操作其机器人器械。此外，我们认为捕获患者解剖结构的同步多视角三维测量将解锁高级场景表示。准确的实时术中三维感知将允许算法助手直接控制一个或多个机器人器械和/或机器人摄像机。为了实现这些目标，我们正在构建一个同步多视角、多传感器的机器人手术系统，通过整合高性能视觉组件并升级da Vinci Research Kit的控制逻辑。本文简要报告了我们系统的功能概述，并详细说明了其在研究和未来临床实践中的潜在影响。通过完全开源我们的系统，我们将使研究社区能够复制我们的设置、改进它并开发强大的算法，从而有效地促进前沿研究临床转化。 
+
+---
+# Planar Velocity Estimation for Fast-Moving Mobile Robots Using Event-Based Optical Flow 
+
+**Title (ZH)**: 基于事件驱动光学流的快速移动移动机器人平面速度估计 
+
+**Authors**: Liam Boyle, Jonas Kühne, Nicolas Baumann, Niklas Bastuck, Michele Magno  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.11116)  
+
+**Abstract**: Accurate velocity estimation is critical in mobile robotics, particularly for driver assistance systems and autonomous driving. Wheel odometry fused with Inertial Measurement Unit (IMU) data is a widely used method for velocity estimation; however, it typically requires strong assumptions, such as non-slip steering, or complex vehicle dynamics models that do not hold under varying environmental conditions like slippery surfaces. We introduce an approach to velocity estimation that is decoupled from wheel-to-surface traction assumptions by leveraging planar kinematics in combination with optical flow from event cameras pointed perpendicularly at the ground. The asynchronous micro-second latency and high dynamic range of event cameras make them highly robust to motion blur, a common challenge in vision-based perception techniques for autonomous driving. The proposed method is evaluated through in-field experiments on a 1:10 scale autonomous racing platform and compared to precise motion capture data, demonstrating not only performance on par with the state-of-the-art Event-VIO method but also a 38.3 % improvement in lateral error. Qualitative experiments at highway speeds of up to 32 m/s further confirm the effectiveness of our approach, indicating significant potential for real-world deployment. 
+
+**Abstract (ZH)**: 准确的速度估计在移动机器人中至关重要，特别是在驾驶员辅助系统和自动驾驶领域。通过结合事件相机的地平面光学流与惯性测量单元（IMU）数据的车轮里程计融合方法，可以在无需轮子与地面摩擦假设的情况下进行速度估计。这种方法在1:10比例的自动驾驶赛车平台上与精确运动捕捉数据进行对比实验，不仅与最先进的事件-VIO方法性能相当，还表现出38.3%的侧向误差改善。在最高达32 m/s的高速公路速度下进行的定性实验进一步证实了该方法的有效性，显示出其在真实世界部署中的巨大潜力。 
+
+---
+# Robust 2D lidar-based SLAM in arboreal environments without IMU/GNSS 
+
+**Title (ZH)**: 基于激光雷达的鲁棒二维树冠环境SLAM Without IMU/GNSS 
+
+**Authors**: Paola Nazate-Burgos, Miguel Torres-Torriti, Sergio Aguilera-Marinovic, Tito Arévalo, Shoudong Huang, Fernando Auat Cheein  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.10847)  
+
+**Abstract**: Simultaneous localization and mapping (SLAM) approaches for mobile robots remains challenging in forest or arboreal fruit farming environments, where tree canopies obstruct Global Navigation Satellite Systems (GNSS) signals. Unlike indoor settings, these agricultural environments possess additional challenges due to outdoor variables such as foliage motion and illumination variability. This paper proposes a solution based on 2D lidar measurements, which requires less processing and storage, and is more cost-effective, than approaches that employ 3D lidars. Utilizing the modified Hausdorff distance (MHD) metric, the method can solve the scan matching robustly and with high accuracy without needing sophisticated feature extraction. The method's robustness was validated using public datasets and considering various metrics, facilitating meaningful comparisons for future research. Comparative evaluations against state-of-the-art algorithms, particularly A-LOAM, show that the proposed approach achieves lower positional and angular errors while maintaining higher accuracy and resilience in GNSS-denied settings. This work contributes to the advancement of precision agriculture by enabling reliable and autonomous navigation in challenging outdoor environments. 
+
+**Abstract (ZH)**: 基于2D激光雷达测距的森林或树冠果园移动机器人 SLAM 方法研究 
+
+---
+# Geofenced Unmanned Aerial Robotic Defender for Deer Detection and Deterrence (GUARD) 
+
+**Title (ZH)**: fences区域内无人机机器人守卫系统：鹿的检测与威慑（GUARD） 
+
+**Authors**: Ebasa Temesgen, Mario Jerez, Greta Brown, Graham Wilson, Sree Ganesh Lalitaditya Divakarla, Sarah Boelter, Oscar Nelson, Robert McPherson, Maria Gini  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.10770)  
+
+**Abstract**: Wildlife-induced crop damage, particularly from deer, threatens agricultural productivity. Traditional deterrence methods often fall short in scalability, responsiveness, and adaptability to diverse farmland environments. This paper presents an integrated unmanned aerial vehicle (UAV) system designed for autonomous wildlife deterrence, developed as part of the Farm Robotics Challenge. Our system combines a YOLO-based real-time computer vision module for deer detection, an energy-efficient coverage path planning algorithm for efficient field monitoring, and an autonomous charging station for continuous operation of the UAV. In collaboration with a local Minnesota farmer, the system is tailored to address practical constraints such as terrain, infrastructure limitations, and animal behavior. The solution is evaluated through a combination of simulation and field testing, demonstrating robust detection accuracy, efficient coverage, and extended operational time. The results highlight the feasibility and effectiveness of drone-based wildlife deterrence in precision agriculture, offering a scalable framework for future deployment and extension. 
+
+**Abstract (ZH)**: 野生动物引起的作物损坏，尤其是鹿的侵害，威胁着农业生产力。传统驱避方法在 scalability、响应性和适应性方面往往不足。本文介绍了为自主野生动物驱避设计的集成无人机系统，该系统作为Farm Robotics Challenge项目的一部分开发。该系统结合了基于YOLO的实时计算机视觉模块进行鹿的检测、高效的覆盖路径规划算法以实现有效的田间监测以及自主充电站以实现无人机的连续运行。与明尼苏达当地农民合作，该系统针对地形、基础设施限制和动物行为等实际约束进行了定制。该解决方案通过仿真和实地测试进行评估，展示了稳健的检测精度、高效的覆盖能力和延长的操作时间。结果突显了基于无人机的野生动物驱避在精准农业中的可行性和有效性，提供了一个可扩展的框架，适用于未来部署和扩展。 
+
+---
+# Modular Robot Control with Motor Primitives 
+
+**Title (ZH)**: 模模块化机器人控制与运动primitive 
+
+**Authors**: Moses C. Nah, Johannes Lachner, Neville Hogan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.10694)  
+
+**Abstract**: Despite a slow neuromuscular system, humans easily outperform modern robot technology, especially in physical contact tasks. How is this possible? Biological evidence indicates that motor control of biological systems is achieved by a modular organization of motor primitives, which are fundamental building blocks of motor behavior. Inspired by neuro-motor control research, the idea of using simpler building blocks has been successfully used in robotics. Nevertheless, a comprehensive formulation of modularity for robot control remains to be established. In this paper, we introduce a modular framework for robot control using motor primitives. We present two essential requirements to achieve modular robot control: independence of modules and closure of stability. We describe key control modules and demonstrate that a wide range of complex robotic behaviors can be generated from this small set of modules and their combinations. The presented modular control framework demonstrates several beneficial properties for robot control, including task-space control without solving Inverse Kinematics, addressing the problems of kinematic singularity and kinematic redundancy, and preserving passivity for contact and physical interactions. Further advantages include exploiting kinematic singularity to maintain high external load with low torque compensation, as well as controlling the robot beyond its end-effector, extending even to external objects. Both simulation and actual robot experiments are presented to validate the effectiveness of our modular framework. We conclude that modularity may be an effective constructive framework for achieving robotic behaviors comparable to human-level performance. 
+
+**Abstract (ZH)**: 虽然神经肌肉系统反应较慢，但人类在物理接触任务中仍然能够超越现代机器人技术。这是如何可能的？生物学证据表明，生物系统的运动控制是由运动原型模块化组织实现的，这些原型是运动行为的基本构建块。受神经运动控制研究的启发，使用更简单的模块构建单元的方法已经在机器人技术中取得了成功。然而，机器人控制模块化的全面形式仍然需要建立。在本文中，我们提出了一个基于运动原型的机器人控制模块化框架。我们介绍了实现模块化机器人控制的两个关键要求：模块独立性和稳定性封闭性。我们描述了关键控制模块，并证明通过这些模块及其组合，可以生成广泛的复杂机器人行为。所提出的模块化控制框架展示了机器人控制的若干有益特性，包括无需求解逆运动学的空间控制、解决运动奇异性和运动冗余性问题、保持接触和物理交互中的功率守恒，以及其他优点，如利用运动奇异点在低扭矩补偿下维持高外部负载，以及控制机器人超出其末端执行器，甚至扩展到外部物体。我们通过仿真和实际机器人实验验证了模块化框架的有效性。我们得出结论，模块化可能是一种实现接近人类水平性能的机器人行为的有效建构框架。 
+
+---
