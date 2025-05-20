@@ -1,0 +1,182 @@
+# Audio-Visual Contact Classification for Tree Structures in Agriculture 
+
+**Title (ZH)**: 农业中树状结构的音频-视觉接触分类 
+
+**Authors**: Ryan Spears, Moonyoung Lee, George Kantor, Oliver Kroemer  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.12665)  
+
+**Abstract**: Contact-rich manipulation tasks in agriculture, such as pruning and harvesting, require robots to physically interact with tree structures to maneuver through cluttered foliage. Identifying whether the robot is contacting rigid or soft materials is critical for the downstream manipulation policy to be safe, yet vision alone is often insufficient due to occlusion and limited viewpoints in this unstructured environment. To address this, we propose a multi-modal classification framework that fuses vibrotactile (audio) and visual inputs to identify the contact class: leaf, twig, trunk, or ambient. Our key insight is that contact-induced vibrations carry material-specific signals, making audio effective for detecting contact events and distinguishing material types, while visual features add complementary semantic cues that support more fine-grained classification. We collect training data using a hand-held sensor probe and demonstrate zero-shot generalization to a robot-mounted probe embodiment, achieving an F1 score of 0.82. These results underscore the potential of audio-visual learning for manipulation in unstructured, contact-rich environments. 
+
+**Abstract (ZH)**: 农业中接触丰富的操作任务，如修剪和收获，要求机器人与树结构物理互动以穿行于密集的叶片中。识别机器人接触的是刚性还是柔软材料对于后续的操作策略的安全性至关重要，但由于此非结构化环境中遮挡和有限的视角，仅靠视觉往往是不够的。为解决这一问题，我们提出了一种多模态分类框架，融合了振动触觉（音频）和视觉输入以识别接触类别：叶片、小枝、树干或环境。我们的关键见解是，接触引起的振动携带了特定于材料的信号，使音频适用于检测接触事件和区分材料类型，而视觉特征提供了补充的语义线索，支持更精细的分类。我们使用手持传感器探头收集训练数据，并展示了对机器人安装探头实体的零样本泛化，实现了F1分数0.82。这些结果突显了视听学习在非结构化、接触丰富的操作环境中的潜力。 
+
+---
+# BadNAVer: Exploring Jailbreak Attacks On Vision-and-Language Navigation 
+
+**Title (ZH)**: BadNAVer: 探索视觉语言导航中的 Jailbreak 攻击 
+
+**Authors**: Wenqi Lyu, Zerui Li, Yanyuan Qiao, Qi Wu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.12443)  
+
+**Abstract**: Multimodal large language models (MLLMs) have recently gained attention for their generalization and reasoning capabilities in Vision-and-Language Navigation (VLN) tasks, leading to the rise of MLLM-driven navigators. However, MLLMs are vulnerable to jailbreak attacks, where crafted prompts bypass safety mechanisms and trigger undesired outputs. In embodied scenarios, such vulnerabilities pose greater risks: unlike plain text models that generate toxic content, embodied agents may interpret malicious instructions as executable commands, potentially leading to real-world harm. In this paper, we present the first systematic jailbreak attack paradigm targeting MLLM-driven navigator. We propose a three-tiered attack framework and construct malicious queries across four intent categories, concatenated with standard navigation instructions. In the Matterport3D simulator, we evaluate navigation agents powered by five MLLMs and report an average attack success rate over 90%. To test real-world feasibility, we replicate the attack on a physical robot. Our results show that even well-crafted prompts can induce harmful actions and intents in MLLMs, posing risks beyond toxic output and potentially leading to physical harm. 
+
+**Abstract (ZH)**: 多模态大型语言模型（MLLMs）在视觉语言导航（VLN）任务中的泛化和推理能力引起了广泛关注，推动了MLLM驱动导航器的发展。然而，MLLMs对牢笼破解攻击（jailbreak attacks）脆弱，精心构造的提示可以绕过安全机制并触发意外输出。在具身场景中，这种脆弱性带来了更大的风险：与生成有害内容的纯文本模型不同，具身代理可能会将恶意指令解释为可执行命令，从而可能导致现实世界的危害。在本文中，我们提出了第一个针对MLLM驱动导航器的系统性牢笼破解攻击范式。我们提出了一种三层攻击框架，并构造了跨四类意图的恶意查询，与标准导航指令拼接。在Matterport3D模拟器中，我们评估了五种MLLM驱动的导航代理，并报告了平均攻击成功率超过90%。为了验证其实用性，我们在一个物理机器人上重现了该攻击。我们的结果表明，即使是精心构造的提示也可能诱导MLLM产生有害行为和意图，而不仅仅是有害输出，这可能带来物理危害。 
+
+---
+# Bridging Human Oversight and Black-box Driver Assistance: Vision-Language Models for Predictive Alerting in Lane Keeping Assist Systems 
+
+**Title (ZH)**: 桥接人类监督与黑盒驾驶辅助：车道保持辅助系统中的视觉语言模型预测警报技术 
+
+**Authors**: Yuhang Wang, Hao Zhou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.11535)  
+
+**Abstract**: Lane Keeping Assist systems, while increasingly prevalent, often suffer from unpredictable real-world failures, largely due to their opaque, black-box nature, which limits driver anticipation and trust. To bridge the gap between automated assistance and effective human oversight, we present LKAlert, a novel supervisory alert system that leverages VLM to forecast potential LKA risk 1-3 seconds in advance. LKAlert processes dash-cam video and CAN data, integrating surrogate lane segmentation features from a parallel interpretable model as automated guiding attention. Unlike traditional binary classifiers, LKAlert issues both predictive alert and concise natural language explanation, enhancing driver situational awareness and trust. To support the development and evaluation of such systems, we introduce OpenLKA-Alert, the first benchmark dataset designed for predictive and explainable LKA failure warnings. It contains synchronized multimodal inputs and human-authored justifications across annotated temporal windows. We further contribute a generalizable methodological framework for VLM-based black-box behavior prediction, combining surrogate feature guidance with LoRA. This framework enables VLM to reason over structured visual context without altering its vision backbone, making it broadly applicable to other complex, opaque systems requiring interpretable oversight. Empirical results correctly predicts upcoming LKA failures with 69.8% accuracy and a 58.6\% F1-score. The system also generates high-quality textual explanations for drivers (71.7 ROUGE-L) and operates efficiently at approximately 2 Hz, confirming its suitability for real-time, in-vehicle use. Our findings establish LKAlert as a practical solution for enhancing the safety and usability of current ADAS and offer a scalable paradigm for applying VLMs to human-centered supervision of black-box automation. 
+
+**Abstract (ZH)**: 基于VLM的车道保持辅助潜在风险预警系统LKAlert 
+
+---
+# Diverging Towards Hallucination: Detection of Failures in Vision-Language Models via Multi-token Aggregation 
+
+**Title (ZH)**: 走向幻觉的发散：基于多令牌聚合的大规模视觉-语言模型故障检测 
+
+**Authors**: Geigh Zollicoffer, Minh Vu, Manish Bhattarai  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.11741)  
+
+**Abstract**: Vision-language models (VLMs) now rival human performance on many multimodal tasks, yet they still hallucinate objects or generate unsafe text. Current hallucination detectors, e.g., single-token linear probing (SLP) and P(True), typically analyze only the logit of the first generated token or just its highest scoring component overlooking richer signals embedded within earlier token distributions. We demonstrate that analyzing the complete sequence of early logits potentially provides substantially more diagnostic information. We emphasize that hallucinations may only emerge after several tokens, as subtle inconsistencies accumulate over time. By analyzing the Kullback-Leibler (KL) divergence between logits corresponding to hallucinated and non-hallucinated tokens, we underscore the importance of incorporating later-token logits to more accurately capture the reliability dynamics of VLMs. In response, we introduce Multi-Token Reliability Estimation (MTRE), a lightweight, white-box method that aggregates logits from the first ten tokens using multi-token log-likelihood ratios and self-attention. Despite the challenges posed by large vocabulary sizes and long logit sequences, MTRE remains efficient and tractable. On MAD-Bench, MM-SafetyBench, MathVista, and four compositional-geometry benchmarks, MTRE improves AUROC by 9.4 +/- 1.3 points over SLP and by 12.1 +/- 1.7 points over P(True), setting a new state-of-the-art in hallucination detection for open-source VLMs. 
+
+**Abstract (ZH)**: 基于视觉-语言模型的多令牌可靠性估计在幻觉检测中的应用 
+
+---
+# Picturized and Recited with Dialects: A Multimodal Chinese Representation Framework for Sentiment Analysis of Classical Chinese Poetry 
+
+**Title (ZH)**: 用方言图绘与朗读：一种多模态中国古代诗歌情感分析的汉语表示框架 
+
+**Authors**: Xiaocong Du, Haoyu Pei, Haipeng Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.13210)  
+
+**Abstract**: Classical Chinese poetry is a vital and enduring part of Chinese literature, conveying profound emotional resonance. Existing studies analyze sentiment based on textual meanings, overlooking the unique rhythmic and visual features inherent in poetry,especially since it is often recited and accompanied by Chinese paintings. In this work, we propose a dialect-enhanced multimodal framework for classical Chinese poetry sentiment analysis. We extract sentence-level audio features from the poetry and incorporate audio from multiple dialects,which may retain regional ancient Chinese phonetic features, enriching the phonetic representation. Additionally, we generate sentence-level visual features, and the multimodal features are fused with textual features enhanced by LLM translation through multimodal contrastive representation learning. Our framework outperforms state-of-the-art methods on two public datasets, achieving at least 2.51% improvement in accuracy and 1.63% in macro F1. We open-source the code to facilitate research in this area and provide insights for general multimodal Chinese representation. 
+
+**Abstract (ZH)**: 古典 Chinese 诗歌情感分析的方言增强多模态框架 
+
+---
+# Just Dance with $π$! A Poly-modal Inductor for Weakly-supervised Video Anomaly Detection 
+
+**Title (ZH)**: Just Dance with $π$! 一种多模态引ware器用于弱监督视频异常检测 
+
+**Authors**: Snehashis Majhi, Giacomo D'Amicantonio, Antitza Dantcheva, Quan Kong, Lorenzo Garattoni, Gianpiero Francesca, Egor Bondarev, Francois Bremond  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.13123)  
+
+**Abstract**: Weakly-supervised methods for video anomaly detection (VAD) are conventionally based merely on RGB spatio-temporal features, which continues to limit their reliability in real-world scenarios. This is due to the fact that RGB-features are not sufficiently distinctive in setting apart categories such as shoplifting from visually similar events. Therefore, towards robust complex real-world VAD, it is essential to augment RGB spatio-temporal features by additional modalities. Motivated by this, we introduce the Poly-modal Induced framework for VAD: "PI-VAD", a novel approach that augments RGB representations by five additional modalities. Specifically, the modalities include sensitivity to fine-grained motion (Pose), three dimensional scene and entity representation (Depth), surrounding objects (Panoptic masks), global motion (optical flow), as well as language cues (VLM). Each modality represents an axis of a polygon, streamlined to add salient cues to RGB. PI-VAD includes two plug-in modules, namely Pseudo-modality Generation module and Cross Modal Induction module, which generate modality-specific prototypical representation and, thereby, induce multi-modal information into RGB cues. These modules operate by performing anomaly-aware auxiliary tasks and necessitate five modality backbones -- only during training. Notably, PI-VAD achieves state-of-the-art accuracy on three prominent VAD datasets encompassing real-world scenarios, without requiring the computational overhead of five modality backbones at inference. 
+
+**Abstract (ZH)**: 多模态诱导的视频异常检测方法（PI-VAD） 
+
+---
+# TinyAlign: Boosting Lightweight Vision-Language Models by Mitigating Modal Alignment Bottlenecks 
+
+**Title (ZH)**: TinyAlign: 通过缓解模态对齐瓶颈增强轻量级视觉-语言模型 
+
+**Authors**: Yuanze Hu, Zhaoxin Fan, Xinyu Wang, Gen Li, Ye Qiu, Zhichao Yang, Wenjun Wu, Kejian Wu, Yifan Sun, Xiaotie Deng, Jin Dong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.12884)  
+
+**Abstract**: Lightweight Vision-Language Models (VLMs) are indispensable for resource-constrained applications. The prevailing approach to aligning vision and language models involves freezing both the vision encoder and the language model while training small connector modules. However, this strategy heavily depends on the intrinsic capabilities of the language model, which can be suboptimal for lightweight models with limited representational capacity. In this work, we investigate this alignment bottleneck through the lens of mutual information, demonstrating that the constrained capacity of the language model inherently limits the Effective Mutual Information (EMI) between multimodal inputs and outputs, thereby compromising alignment quality. To address this challenge, we propose TinyAlign, a novel framework inspired by Retrieval-Augmented Generation, which strategically retrieves relevant context from a memory bank to enrich multimodal inputs and enhance their alignment. Extensive empirical evaluations reveal that TinyAlign significantly reduces training loss, accelerates convergence, and enhances task performance. Remarkably, it allows models to achieve baseline-level performance with only 40\% of the fine-tuning data, highlighting exceptional data efficiency. Our work thus offers a practical pathway for developing more capable lightweight VLMs while introducing a fresh theoretical lens to better understand and address alignment bottlenecks in constrained multimodal systems. 
+
+**Abstract (ZH)**: 轻量级视觉-语言模型（VLMs）对于资源受限的应用至关重要。现有的视觉和语言模型对齐方法通常涉及冻结视觉编码器和语言模型，同时训练小型连接模块。然而，这种策略高度依赖于语言模型的内在能力，对于具有有限表征能力的轻量级模型来说可能是不理想的。本文通过互信息的视角探讨了这种对齐瓶颈，证明了语言模型的受限容量固有限制了多模态输入与输出的有效互信息（EMI），从而影响了对齐质量。为了解决这一挑战，我们提出了一种名为TinyAlign的新型框架，该框架借鉴了检索增强生成的思想，战略性地从记忆库中检索相关上下文以丰富多模态输入并增强其对齐。广泛的实证评估表明，TinyAlign显著降低了训练损失，加速了收敛，并提升了任务性能。值得注意的是，它仅需40％的微调数据即可使模型达到基线水平性能，突显了其出色的数据效率。因此，本文为开发更能力的轻量级VLMs提供了一条实用路径，并引入了一种新的理论视角来更好地理解并解决受限多模态系统中的对齐瓶颈。 
+
+---
+# Unified Cross-modal Translation of Score Images, Symbolic Music, and Performance Audio 
+
+**Title (ZH)**: 统一跨模态翻译：乐谱图像、符号音乐和表演音频 
+
+**Authors**: Jongmin Jung, Dongmin Kim, Sihun Lee, Seola Cho, Hyungjoon Soh, Irmak Bukey, Chris Donahue, Dasaem Jeong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.12863)  
+
+**Abstract**: Music exists in various modalities, such as score images, symbolic scores, MIDI, and audio. Translations between each modality are established as core tasks of music information retrieval, such as automatic music transcription (audio-to-MIDI) and optical music recognition (score image to symbolic score). However, most past work on multimodal translation trains specialized models on individual translation tasks. In this paper, we propose a unified approach, where we train a general-purpose model on many translation tasks simultaneously. Two key factors make this unified approach viable: a new large-scale dataset and the tokenization of each modality. Firstly, we propose a new dataset that consists of more than 1,300 hours of paired audio-score image data collected from YouTube videos, which is an order of magnitude larger than any existing music modal translation datasets. Secondly, our unified tokenization framework discretizes score images, audio, MIDI, and MusicXML into a sequence of tokens, enabling a single encoder-decoder Transformer to tackle multiple cross-modal translation as one coherent sequence-to-sequence task. Experimental results confirm that our unified multitask model improves upon single-task baselines in several key areas, notably reducing the symbol error rate for optical music recognition from 24.58% to a state-of-the-art 13.67%, while similarly substantial improvements are observed across the other translation tasks. Notably, our approach achieves the first successful score-image-conditioned audio generation, marking a significant breakthrough in cross-modal music generation. 
+
+**Abstract (ZH)**: 多模态音乐信息 Retrieval 中的统一方法：从统一数据集和令牌化到跨模态翻译 
+
+---
+# SounDiT: Geo-Contextual Soundscape-to-Landscape Generation 
+
+**Title (ZH)**: SounDiT: 基于地理上下文的声音景观到景观生成 
+
+**Authors**: Junbo Wang, Haofeng Tan, Bowen Liao, Albert Jiang, Teng Fei, Qixing Huang, Zhengzhong Tu, Shan Ye, Yuhao Kang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.12734)  
+
+**Abstract**: We present a novel and practically significant problem-Geo-Contextual Soundscape-to-Landscape (GeoS2L) generation-which aims to synthesize geographically realistic landscape images from environmental soundscapes. Prior audio-to-image generation methods typically rely on general-purpose datasets and overlook geographic and environmental contexts, resulting in unrealistic images that are misaligned with real-world environmental settings. To address this limitation, we introduce a novel geo-contextual computational framework that explicitly integrates geographic knowledge into multimodal generative modeling. We construct two large-scale geo-contextual multimodal datasets, SoundingSVI and SonicUrban, pairing diverse soundscapes with real-world landscape images. We propose SounDiT, a novel Diffusion Transformer (DiT)-based model that incorporates geo-contextual scene conditioning to synthesize geographically coherent landscape images. Furthermore, we propose a practically-informed geo-contextual evaluation framework, the Place Similarity Score (PSS), across element-, scene-, and human perception-levels to measure consistency between input soundscapes and generated landscape images. Extensive experiments demonstrate that SounDiT outperforms existing baselines in both visual fidelity and geographic settings. Our work not only establishes foundational benchmarks for GeoS2L generation but also highlights the importance of incorporating geographic domain knowledge in advancing multimodal generative models, opening new directions at the intersection of generative AI, geography, urban planning, and environmental sciences. 
+
+**Abstract (ZH)**: Geo-情境化声景到景观生成（GeoS2L）：从环境声景合成地理现实景观图像 
+
+---
+# Predicting Turn-Taking and Backchannel in Human-Machine Conversations Using Linguistic, Acoustic, and Visual Signals 
+
+**Title (ZH)**: 基于语言、声学和视觉信号的人机对话中的轮替预测与下行反馈研究 
+
+**Authors**: Yuxin Lin, Yinglin Zheng, Ming Zeng, Wangzheng Shi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.12654)  
+
+**Abstract**: This paper addresses the gap in predicting turn-taking and backchannel actions in human-machine conversations using multi-modal signals (linguistic, acoustic, and visual). To overcome the limitation of existing datasets, we propose an automatic data collection pipeline that allows us to collect and annotate over 210 hours of human conversation videos. From this, we construct a Multi-Modal Face-to-Face (MM-F2F) human conversation dataset, including over 1.5M words and corresponding turn-taking and backchannel annotations from approximately 20M frames. Additionally, we present an end-to-end framework that predicts the probability of turn-taking and backchannel actions from multi-modal signals. The proposed model emphasizes the interrelation between modalities and supports any combination of text, audio, and video inputs, making it adaptable to a variety of realistic scenarios. Our experiments show that our approach achieves state-of-the-art performance on turn-taking and backchannel prediction tasks, achieving a 10\% increase in F1-score on turn-taking and a 33\% increase on backchannel prediction. Our dataset and code are publicly available online to ease of subsequent research. 
+
+**Abstract (ZH)**: 本文通过多模态信号（语言、声学和视觉）解决在人类-机器对话中预测轮流说话和补充反应行为的空白。为克服现有数据集的局限，我们提出了一个自动数据收集管道，以收集和标注超过210小时的人类对话视频。基于这些数据，我们构建了一个多模态面对面（MM-F2F）人类对话数据集，包括超过150万单词及其对应的轮流说话和补充反应标注，涉及约2亿帧。此外，我们还提出了一种端到端框架，从多模态信号中预测轮流说话和补充反应的行为概率。所提出的模型强调了模态间的相互关系，并支持文本、音频和视频任意组合的输入，使其适应各种现实场景。我们的实验表明，我们的方法在轮流说话和补充反应预测任务上达到了最先进的性能，分别在轮流说话预测的F1分数上提高了10%，在补充反应预测上提高了33%。我们的数据集和代码已在线公开，以方便后续研究。 
+
+---
+# Mitigating Hallucinations via Inter-Layer Consistency Aggregation in Large Vision-Language Models 
+
+**Title (ZH)**: 通过层间一致性聚合减轻幻觉现象在大型视觉-语言模型中的影响 
+
+**Authors**: Kai Tang, Jinhao You, Xiuqi Ge, Hanze Li, Yichen Guo, Xiande Huang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.12343)  
+
+**Abstract**: Despite the impressive capabilities of Large Vision-Language Models (LVLMs), they remain susceptible to hallucinations-generating content that is inconsistent with the input image. Existing training-free hallucination mitigation methods often suffer from unstable performance and high sensitivity to hyperparameter settings, limiting their practicality and broader adoption. In this paper, we propose a novel decoding mechanism, Decoding with Inter-layer Consistency via Layer Aggregation (DCLA), which requires no retraining, fine-tuning, or access to external knowledge bases. Specifically, our approach constructs a dynamic semantic reference by aggregating representations from previous layers, and corrects semantically deviated layers to enforce inter-layer consistency. The method allows DCLA to robustly mitigate hallucinations across multiple LVLMs. Experiments on hallucination benchmarks such as MME and POPE demonstrate that DCLA effectively reduces hallucinations while enhancing the reliability and performance of LVLMs. 
+
+**Abstract (ZH)**: 尽管大型视觉-语言模型（LVLMs）具备令人印象深刻的 capability，它们仍然容易产生幻觉，即生成与输入图像不一致的内容。现有的无训练的幻觉抑制方法往往性能不稳定且对超参数设置高度敏感，限制了它们的实用性和更广泛的采用。在本文中，我们提出了一种新的解码机制，层聚合的层内一致性解码（DCLA），该机制不需要重新训练、微调或访问外部知识库。具体而言，我们的方法通过聚合先前层的表示来构建动态语义参考，并纠正语义偏离的层以确保层内一致性。该方法使 DCLA 能够在多个 LVLMs 上稳健地抑制幻觉。实验结果，如在 MME 和 POPE 幻觉基准上的实验表明，DCLA 有效减少了幻觉，并提高了 LVLMs 的可靠性和性能。 
+
+---
+# MMS-VPR: Multimodal Street-Level Visual Place Recognition Dataset and Benchmark 
+
+**Title (ZH)**: MMS-VPR：多模态街道级别视觉场所识别数据集及基准 
+
+**Authors**: Yiwei Ou, Xiaobin Ren, Ronggui Sun, Guansong Gao, Ziyi Jiang, Kaiqi Zhao, Manfredo Manfredini  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.12254)  
+
+**Abstract**: Existing visual place recognition (VPR) datasets predominantly rely on vehicle-mounted imagery, lack multimodal diversity and underrepresent dense, mixed-use street-level spaces, especially in non-Western urban contexts. To address these gaps, we introduce MMS-VPR, a large-scale multimodal dataset for street-level place recognition in complex, pedestrian-only environments. The dataset comprises 78,575 annotated images and 2,512 video clips captured across 207 locations in a ~70,800 $\mathrm{m}^2$ open-air commercial district in Chengdu, China. Each image is labeled with precise GPS coordinates, timestamp, and textual metadata, and covers varied lighting conditions, viewpoints, and timeframes. MMS-VPR follows a systematic and replicable data collection protocol with minimal device requirements, lowering the barrier for scalable dataset creation. Importantly, the dataset forms an inherent spatial graph with 125 edges, 81 nodes, and 1 subgraph, enabling structure-aware place recognition. We further define two application-specific subsets -- Dataset_Edges and Dataset_Points -- to support fine-grained and graph-based evaluation tasks. Extensive benchmarks using conventional VPR models, graph neural networks, and multimodal baselines show substantial improvements when leveraging multimodal and structural cues. MMS-VPR facilitates future research at the intersection of computer vision, geospatial understanding, and multimodal reasoning. The dataset is publicly available at this https URL. 
+
+**Abstract (ZH)**: 现有的视觉地方识别（VPR）数据集主要依赖于车载图像，缺乏多模态多样性，并且不足以代表密集的混合用途街道级空间，特别是非西方城市环境中的空间。为解决这些不足，我们引入了MMS-VPR，这是一个面向复杂行人专用环境的街道级地方识别大规模多模态数据集。该数据集包含在中国成都市一个面积约70,800平方米的露天商业区内的207个地点拍摄的78,575张标注图像和2,512个视频片段。每张图像都标注有精确的GPS坐标、时间戳和文本元数据，并涵盖了不同的光照条件、视角和时间段。MMS-VPR遵循系统且可复制的数据采集协议，具有最少的设备要求，降低了大规模数据集创建的门槛。重要的是，该数据集形成了一个内在的空间图，包含125条边、81个节点和1个子图，支持结构感知的地方识别。我们进一步定义了两个特定应用的子集——Dataset_Edges和Dataset_Points——以支持细粒度和基于图的评估任务。使用传统VPR模型、图神经网络和多模态基线进行的广泛基准测试表明，在利用多模态和结构线索时可以实现显著改进。MMS-VPR促进了计算机视觉、地理空间理解和多模态推理交叉领域的未来研究。该数据集可在以下网址公开访问。 
+
+---
+# Can Large Multimodal Models Understand Agricultural Scenes? Benchmarking with AgroMind 
+
+**Title (ZH)**: 大型多模态模型能理解农业场景吗？使用AgroMind进行评估 
+
+**Authors**: Qingmei Li, Yang Zhang, Zurong Mai, Yuhang Chen, Shuohong Lou, Henglian Huang, Jiarui Zhang, Zhiwei Zhang, Yibin Wen, Weijia Li, Haohuan Fu, Jianxi Huang, Juepeng Zheng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.12207)  
+
+**Abstract**: Large Multimodal Models (LMMs) has demonstrated capabilities across various domains, but comprehensive benchmarks for agricultural remote sensing (RS) remain scarce. Existing benchmarks designed for agricultural RS scenarios exhibit notable limitations, primarily in terms of insufficient scene diversity in the dataset and oversimplified task design. To bridge this gap, we introduce AgroMind, a comprehensive agricultural remote sensing benchmark covering four task dimensions: spatial perception, object understanding, scene understanding, and scene reasoning, with a total of 13 task types, ranging from crop identification and health monitoring to environmental analysis. We curate a high-quality evaluation set by integrating eight public datasets and one private farmland plot dataset, containing 25,026 QA pairs and 15,556 images. The pipeline begins with multi-source data preprocessing, including collection, format standardization, and annotation refinement. We then generate a diverse set of agriculturally relevant questions through the systematic definition of tasks. Finally, we employ LMMs for inference, generating responses, and performing detailed examinations. We evaluated 18 open-source LMMs and 3 closed-source models on AgroMind. Experiments reveal significant performance gaps, particularly in spatial reasoning and fine-grained recognition, it is notable that human performance lags behind several leading LMMs. By establishing a standardized evaluation framework for agricultural RS, AgroMind reveals the limitations of LMMs in domain knowledge and highlights critical challenges for future work. Data and code can be accessed at this https URL. 
+
+**Abstract (ZH)**: 农业智能感知基准（AgroMind）：覆盖多模态模型在农业遥感场景中的全面评估 
+
+---
+# Enhanced Multimodal Hate Video Detection via Channel-wise and Modality-wise Fusion 
+
+**Title (ZH)**: 基于通道和模态融合的增强多模态仇恨视频检测 
+
+**Authors**: Yinghui Zhang, Tailin Chen, Yuchen Zhang, Zeyu Fu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.12051)  
+
+**Abstract**: The rapid rise of video content on platforms such as TikTok and YouTube has transformed information dissemination, but it has also facilitated the spread of harmful content, particularly hate videos. Despite significant efforts to combat hate speech, detecting these videos remains challenging due to their often implicit nature. Current detection methods primarily rely on unimodal approaches, which inadequately capture the complementary features across different modalities. While multimodal techniques offer a broader perspective, many fail to effectively integrate temporal dynamics and modality-wise interactions essential for identifying nuanced hate content. In this paper, we present CMFusion, an enhanced multimodal hate video detection model utilizing a novel Channel-wise and Modality-wise Fusion Mechanism. CMFusion first extracts features from text, audio, and video modalities using pre-trained models and then incorporates a temporal cross-attention mechanism to capture dependencies between video and audio streams. The learned features are then processed by channel-wise and modality-wise fusion modules to obtain informative representations of videos. Our extensive experiments on a real-world dataset demonstrate that CMFusion significantly outperforms five widely used baselines in terms of accuracy, precision, recall, and F1 score. Comprehensive ablation studies and parameter analyses further validate our design choices, highlighting the model's effectiveness in detecting hate videos. The source codes will be made publicly available at this https URL. 
+
+**Abstract (ZH)**: TikTok和YouTube等平台上视频内容的迅速崛起改变了信息传播方式，但也促进了有害内容，特别是仇恨视频的传播。尽管在打击仇恨言论方面做出了巨大努力，但由于仇恨言论往往具有隐匿性，检测这些视频仍然极具挑战性。现有的检测方法主要依赖单模态方法，无法充分捕捉不同模态间的互补特征。虽然多模态技术提供了更广泛的观点，但许多方法未能有效整合有助于识别细微仇恨内容的时序动态和模态间交互。本文提出了一种增强的多模态仇恨视频检测模型CMFusion，该模型利用一种新的按通道和按模态融合机制。CMFusion首先使用预训练模型从文本、音频和视频模态中提取特征，然后采用时序交叉注意机制捕获视频流和音频流之间的依赖关系。学习到的特征通过按通道和按模态融合模块处理，以获得视频的具有信息量的表示。在真实数据集上的广泛实验表明，CMFusion在准确率、精确率、召回率和F1分数方面明显优于五种广泛使用的基线模型。全面的消融研究和参数分析进一步验证了我们的设计选择，突显了该模型在检测仇恨视频方面的有效性。源代码将在以下链接公开：this https URL。 
+
+---
