@@ -1,0 +1,91 @@
+# EVA: Red-Teaming GUI Agents via Evolving Indirect Prompt Injection 
+
+**Title (ZH)**: EVA：通过演化间接提示注入红队测试GUI代理 
+
+**Authors**: Yijie Lu, Tianjie Ju, Manman Zhao, Xinbei Ma, Yuan Guo, ZhuoSheng Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.14289)  
+
+**Abstract**: As multimodal agents are increasingly trained to operate graphical user interfaces (GUIs) to complete user tasks, they face a growing threat from indirect prompt injection, attacks in which misleading instructions are embedded into the agent's visual environment, such as popups or chat messages, and misinterpreted as part of the intended task. A typical example is environmental injection, in which GUI elements are manipulated to influence agent behavior without directly modifying the user prompt. To address these emerging attacks, we propose EVA, a red teaming framework for indirect prompt injection which transforms the attack into a closed loop optimization by continuously monitoring an agent's attention distribution over the GUI and updating adversarial cues, keywords, phrasing, and layout, in response. Compared with prior one shot methods that generate fixed prompts without regard for how the model allocates visual attention, EVA dynamically adapts to emerging attention hotspots, yielding substantially higher attack success rates and far greater transferability across diverse GUI scenarios. We evaluate EVA on six widely used generalist and specialist GUI agents in realistic settings such as popup manipulation, chat based phishing, payments, and email composition. Experimental results show that EVA substantially improves success rates over static baselines. Under goal agnostic constraints, where the attacker does not know the agent's task intent, EVA still discovers effective patterns. Notably, we find that injection styles transfer well across models, revealing shared behavioral biases in GUI agents. These results suggest that evolving indirect prompt injection is a powerful tool not only for red teaming agents, but also for uncovering common vulnerabilities in their multimodal decision making. 
+
+**Abstract (ZH)**: 多模态代理中的间接提示注入防卫框架：EVA 
+
+---
+# AKRMap: Adaptive Kernel Regression for Trustworthy Visualization of Cross-Modal Embeddings 
+
+**Title (ZH)**: AKRMap：自适应核回归可信跨模态嵌入可视化 
+
+**Authors**: Yilin Ye, Junchao Huang, Xingchen Zeng, Jiazhi Xia, Wei Zeng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.14664)  
+
+**Abstract**: Cross-modal embeddings form the foundation for multi-modal models. However, visualization methods for interpreting cross-modal embeddings have been primarily confined to traditional dimensionality reduction (DR) techniques like PCA and t-SNE. These DR methods primarily focus on feature distributions within a single modality, whilst failing to incorporate metrics (e.g., CLIPScore) across multiple this http URL paper introduces AKRMap, a new DR technique designed to visualize cross-modal embeddings metric with enhanced accuracy by learning kernel regression of the metric landscape in the projection space. Specifically, AKRMap constructs a supervised projection network guided by a post-projection kernel regression loss, and employs adaptive generalized kernels that can be jointly optimized with the projection. This approach enables AKRMap to efficiently generate visualizations that capture complex metric distributions, while also supporting interactive features such as zoom and overlay for deeper exploration. Quantitative experiments demonstrate that AKRMap outperforms existing DR methods in generating more accurate and trustworthy visualizations. We further showcase the effectiveness of AKRMap in visualizing and comparing cross-modal embeddings for text-to-image models. Code and demo are available at this https URL. 
+
+**Abstract (ZH)**: 跨模态嵌入是多模态模型的基础。然而，用于解读跨模态嵌入的可视化方法主要局限于如PCA和t-SNE等传统的降维技术。这些降维方法主要关注单一模态的特征分布，而未能在多模态之间综合多个指标（如CLIPScore）。本文介绍了一种新的降维技术AKRMap，该技术通过在投影空间中学习度量景观的核回归来增强准确性，以实现跨模态嵌入的可视化。具体而言，AKRMap构建了一个由后投影核回归损失引导的监督投影网络，并使用可以与投影联合优化的自适应通用核。这种方法使AKRMap能够高效地生成捕获复杂度量分布的可视化图，并支持缩放和叠加等交互功能以进行更深入的探索。定量实验表明，AKRMap在生成更准确和可靠的可视化方面优于现有降维方法。我们还展示了AKRMap在文本到图像模型的跨模态嵌入可视化和比较中的有效性和优越性。代码和演示可在以下链接获取。 
+
+---
+# VoQA: Visual-only Question Answering 
+
+**Title (ZH)**: 仅视觉问题回答 
+
+**Authors**: Luyang Jiang, Jianing An, Jie Luo, Wenjun Wu, Lei Huang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.14227)  
+
+**Abstract**: We propose Visual-only Question Answering (VoQA), a novel multimodal task in which questions are visually embedded within images, without any accompanying textual input. This requires models to locate, recognize, and reason over visually embedded textual questions, posing challenges for existing large vision-language models (LVLMs), which show notable performance drops even with carefully designed prompts. To bridge this gap, we introduce Guided Response Triggering Supervised Fine-tuning (GRT-SFT), a structured fine-tuning strategy that guides the model to perform step-by-step reasoning purely based on visual input, significantly improving model performance. Our work enhances models' capacity for human-like visual understanding in complex multimodal scenarios, where information, including language, is perceived visually. 
+
+**Abstract (ZH)**: 视觉-only 问答（VoQA）：一种新的多模态任务 
+
+---
+# The Multimodal Information Based Speech Processing (MISP) 2025 Challenge: Audio-Visual Diarization and Recognition 
+
+**Title (ZH)**: 基于多模态信息的语音处理（MISP）2025挑战：音频-视觉发言者识别与分割 
+
+**Authors**: Ming Gao, Shilong Wu, Hang Chen, Jun Du, Chin-Hui Lee, Shinji Watanabe, Jingdong Chen, Siniscalchi Sabato Marco, Odette Scharenborg  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.13971)  
+
+**Abstract**: Meetings are a valuable yet challenging scenario for speech applications due to complex acoustic conditions. This paper summarizes the outcomes of the MISP 2025 Challenge, hosted at Interspeech 2025, which focuses on multi-modal, multi-device meeting transcription by incorporating video modality alongside audio. The tasks include Audio-Visual Speaker Diarization (AVSD), Audio-Visual Speech Recognition (AVSR), and Audio-Visual Diarization and Recognition (AVDR). We present the challenge's objectives, tasks, dataset, baseline systems, and solutions proposed by participants. The best-performing systems achieved significant improvements over the baseline: the top AVSD model achieved a Diarization Error Rate (DER) of 8.09%, improving by 7.43%; the top AVSR system achieved a Character Error Rate (CER) of 9.48%, improving by 10.62%; and the best AVDR system achieved a concatenated minimum-permutation Character Error Rate (cpCER) of 11.56%, improving by 72.49%. 
+
+**Abstract (ZH)**: 会议场景是语音应用中既宝贵又具挑战性的场景，由于存在复杂的声学条件。本文总结了在2025年国际语音会议(Interspeech 2025)上举行的MISP 2025挑战赛的结果，该挑战赛专注于通过结合视频模态的多模态、多设备会议转录。任务包括音频-视觉说话人分割(AVSD)、音频-视觉语音识别(AVSR)和音频-视觉分割和识别(AVDR)。本文介绍了挑战赛的目标、任务、数据集、基准系统以及参赛者提出的方法。表现最佳的系统在基准之上取得了显著改进：最佳AVSD模型的说话人分割错误率(DER)为8.09%，提高了7.43%；最佳AVSR系统的字符错误率(CER)为9.48%，提高了10.62%；最佳AVDR系统的串联最小排列字符错误率(cpCER)为11.56%，提高了72.49%。 
+
+---
+# Sat2Sound: A Unified Framework for Zero-Shot Soundscape Mapping 
+
+**Title (ZH)**: Sat2Sound: 一种零样本声音景观映射的统一框架 
+
+**Authors**: Subash Khanal, Srikumar Sastry, Aayush Dhakal, Adeel Ahmad, Nathan Jacobs  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.13777)  
+
+**Abstract**: We present Sat2Sound, a multimodal representation learning framework for soundscape mapping, designed to predict the distribution of sounds at any location on Earth. Existing methods for this task rely on satellite image and paired geotagged audio samples, which often fail to capture the diversity of sound sources at a given location. To address this limitation, we enhance existing datasets by leveraging a Vision-Language Model (VLM) to generate semantically rich soundscape descriptions for locations depicted in satellite images. Our approach incorporates contrastive learning across audio, audio captions, satellite images, and satellite image captions. We hypothesize that there is a fixed set of soundscape concepts shared across modalities. To this end, we learn a shared codebook of soundscape concepts and represent each sample as a weighted average of these concepts. Sat2Sound achieves state-of-the-art performance in cross-modal retrieval between satellite image and audio on two datasets: GeoSound and SoundingEarth. Additionally, building on Sat2Sound's ability to retrieve detailed soundscape captions, we introduce a novel application: location-based soundscape synthesis, which enables immersive acoustic experiences. Our code and models will be publicly available. 
+
+**Abstract (ZH)**: Sat2Sound：一种用于声景制图的多模态表示学习框架 
+
+---
+# EmoMeta: A Multimodal Dataset for Fine-grained Emotion Classification in Chinese Metaphors 
+
+**Title (ZH)**: EmoMeta: 中国隐喻中的细粒度情感分类多模态数据集 
+
+**Authors**: Xingyuan Lu, Yuxi Liu, Dongyu Zhang, Zhiyao Wu, Jing Ren, Feng Xia  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.13483)  
+
+**Abstract**: Metaphors play a pivotal role in expressing emotions, making them crucial for emotional intelligence. The advent of multimodal data and widespread communication has led to a proliferation of multimodal metaphors, amplifying the complexity of emotion classification compared to single-mode scenarios. However, the scarcity of research on constructing multimodal metaphorical fine-grained emotion datasets hampers progress in this domain. Moreover, existing studies predominantly focus on English, overlooking potential variations in emotional nuances across languages. To address these gaps, we introduce a multimodal dataset in Chinese comprising 5,000 text-image pairs of metaphorical advertisements. Each entry is meticulously annotated for metaphor occurrence, domain relations and fine-grained emotion classification encompassing joy, love, trust, fear, sadness, disgust, anger, surprise, anticipation, and neutral. Our dataset is publicly accessible (this https URL), facilitating further advancements in this burgeoning field. 
+
+**Abstract (ZH)**: 多模态隐喻在表达情感中的作用凸显，这对于情感智能至关重要。多模态数据和广泛交流的出现导致了多模态隐喻的增多，增加了情感分类的复杂性。然而，构建多模态隐喻细粒度情感数据集的研究较少，阻碍了该领域的进步。此外，现有研究主要集中在英语上，忽视了不同语言中情感细微差别的潜在差异。为弥补这些不足，我们介绍了一个包含5000个文本-图像对的多模态中文隐喻广告数据集，每个条目都详细标注了隐喻出现情况、领域关系以及细粒度情感分类，包括 joy、love、trust、fear、sadness、disgust、anger、surprise、anticipation 和 neutral。该数据集已公开（this https URL），有助于推动这一新兴领域的发展。 
+
+---
+# Exploring Emotional Synchrony in Dyadic Interactions: The Role of Speech Conditions in Facial and Vocal Affective Alignment 
+
+**Title (ZH)**: 探索双向互动中的情绪同步：言语条件在面部和语音情感对齐中的作用 
+
+**Authors**: Von Ralph Dane Marquez Herbuela, Yukie Nagai  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.13455)  
+
+**Abstract**: Understanding how humans express and synchronize emotions across multiple communication channels particularly facial expressions and speech has significant implications for emotion recognition systems and human computer interaction. Motivated by the notion that non-overlapping speech promotes clearer emotional coordination, while overlapping speech disrupts synchrony, this study examines how these conversational dynamics shape the spatial and temporal alignment of arousal and valence across facial and vocal modalities. Using dyadic interactions from the IEMOCAP dataset, we extracted continuous emotion estimates via EmoNet (facial video) and a Wav2Vec2-based model (speech audio). Segments were categorized based on speech overlap, and emotional alignment was assessed using Pearson correlation, lag adjusted analysis, and Dynamic Time Warping (DTW). Across analyses, non overlapping speech was associated with more stable and predictable emotional synchrony than overlapping speech. While zero-lag correlations were low and not statistically different, non overlapping speech showed reduced variability, especially for arousal. Lag adjusted correlations and best-lag distributions revealed clearer, more consistent temporal alignment in these segments. In contrast, overlapping speech exhibited higher variability and flatter lag profiles, though DTW indicated unexpectedly tighter alignment suggesting distinct coordination strategies. Notably, directionality patterns showed that facial expressions more often preceded speech during turn-taking, while speech led during simultaneous vocalizations. These findings underscore the importance of conversational structure in regulating emotional communication and provide new insight into the spatial and temporal dynamics of multimodal affective alignment in real world interaction. 
+
+**Abstract (ZH)**: 理解人类在多通信渠道（尤其是面部表情和语音）中表达和同步情绪的方式对情绪识别系统和人机交互具有重要意义。受非重叠语音促进更清晰情绪协调、重叠语音破坏同步这一观念的驱动，本研究探讨了这些会话动态如何影响面部和语音模态之间唤醒度和价值取向的空间和时间对齐。通过使用IEMOCAP数据集中的二元互动，我们利用EmoNet（面部视频）和Wav2Vec2基于的模型（语音音频）提取了连续的情绪估计。根据语音重叠程度对段落进行分类，并使用皮尔逊相关系数、延迟调整分析和动态时间워킹（DTW）评估情绪对齐情况。分析结果显示，非重叠语音与更稳定和可预测的情绪同步相关，而重叠语音则不然。虽然零延迟相关系数较低且没有统计学差异，但非重叠语音显示出了减少的变异性，特别是在唤醒度方面。延迟调整相关系数和最佳延迟分布揭示了这些段落中更清晰、更一致的时间对齐。相比之下，重叠语音的变异性较高且延迟曲线较为平坦，尽管DTW表明出乎意料的紧密对齐，暗示了不同的协调策略。值得注意的是，方向模式显示，在轮流谈话时面部表情往往先于语音出现，而在同时发声时语音则领先。这些发现强调了会话结构在调节情绪沟通中的重要性，并提供了对多模态情绪对齐的空间和时间动态的新见解，特别是在真实世界互动中。 
+
+---
