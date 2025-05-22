@@ -1,0 +1,130 @@
+# UAV-Flow Colosseo: A Real-World Benchmark for Flying-on-a-Word UAV Imitation Learning 
+
+**Title (ZH)**: UAV-Flow Colosseo：一个真实世界无人飞行器模仿学习基准 
+
+**Authors**: Xiangyu Wang, Donglin Yang, Yue Liao, Wenhao Zheng, wenjun wu, Bin Dai, Hongsheng Li, Si Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.15725)  
+
+**Abstract**: Unmanned Aerial Vehicles (UAVs) are evolving into language-interactive platforms, enabling more intuitive forms of human-drone interaction. While prior works have primarily focused on high-level planning and long-horizon navigation, we shift attention to language-guided fine-grained trajectory control, where UAVs execute short-range, reactive flight behaviors in response to language instructions. We formalize this problem as the Flying-on-a-Word (Flow) task and introduce UAV imitation learning as an effective approach. In this framework, UAVs learn fine-grained control policies by mimicking expert pilot trajectories paired with atomic language instructions. To support this paradigm, we present UAV-Flow, the first real-world benchmark for language-conditioned, fine-grained UAV control. It includes a task formulation, a large-scale dataset collected in diverse environments, a deployable control framework, and a simulation suite for systematic evaluation. Our design enables UAVs to closely imitate the precise, expert-level flight trajectories of human pilots and supports direct deployment without sim-to-real gap. We conduct extensive experiments on UAV-Flow, benchmarking VLN and VLA paradigms. Results show that VLA models are superior to VLN baselines and highlight the critical role of spatial grounding in the fine-grained Flow setting. 
+
+**Abstract (ZH)**: 无人驾驶飞行器（UAVs）正在演变为语言互动平台， enables 更直观的人机无人机交互形式。在以往的研究主要集中在高层规划和远期导航的基础上，我们将注意力转向由语言指导的细粒度轨迹控制任务，其中无人机响应语言指令执行短距离、反应式飞行行为。我们将这一问题形式化为“单词飞行”（Flow）任务，并引入无人机模仿学习作为有效的解决方案。在此框架下，无人机通过模仿配对有原子语言指令的专家飞行员轨迹来学习细粒度控制策略。为了支持这一范式，我们提出了UAV-Flow，这是第一个用于语言条件下的细粒度无人机控制的真实世界基准数据集，包括任务定义、多样化环境下的大规模数据集、可部署的控制框架和用于系统性评估的模拟套件。我们的设计使无人机能够精确地模仿人类飞行员的精确飞行轨迹，并支持直接部署而无需进行模拟到现实的过渡。我们在UAV-Flow上进行了广泛的实验，基于视觉语言导航（VLN）和视觉语言动作（VLA）基准进行评估。结果表明，VLA模型优于VLN基准，并突显了在细粒度Flow设置中空间定位的关键作用。 
+
+---
+# Evaluation of Mobile Environment for Vehicular Visible Light Communication Using Multiple LEDs and Event Cameras 
+
+**Title (ZH)**: 多LED和事件摄像头环境下基于移动环境的车载可见光通信评估 
+
+**Authors**: Ryota Soga, Shintaro Shiba, Quan Kong, Norimasa Kobori, Tsukasa Shimizu, Shan Lu, Takaya Yamazato  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.15412)  
+
+**Abstract**: In the fields of Advanced Driver Assistance Systems (ADAS) and Autonomous Driving (AD), sensors that serve as the ``eyes'' for sensing the vehicle's surrounding environment are essential. Traditionally, image sensors and LiDAR have played this role. However, a new type of vision sensor, event cameras, has recently attracted attention. Event cameras respond to changes in the surrounding environment (e.g., motion), exhibit strong robustness against motion blur, and perform well in high dynamic range environments, which are desirable in robotics applications. Furthermore, the asynchronous and low-latency principles of data acquisition make event cameras suitable for optical communication. By adding communication functionality to event cameras, it becomes possible to utilize I2V communication to immediately share information about forward collisions, sudden braking, and road conditions, thereby contributing to hazard avoidance. Additionally, receiving information such as signal timing and traffic volume enables speed adjustment and optimal route selection, facilitating more efficient driving. In this study, we construct a vehicle visible light communication system where event cameras are receivers, and multiple LEDs are transmitters. In driving scenes, the system tracks the transmitter positions and separates densely packed LED light sources using pilot sequences based on Walsh-Hadamard codes. As a result, outdoor vehicle experiments demonstrate error-free communication under conditions where the transmitter-receiver distance was within 40 meters and the vehicle's driving speed was 30 km/h (8.3 m/s). 
+
+**Abstract (ZH)**: 先进驾驶辅助系统（ADAS）和自动驾驶（AD）领域中的传感器作为“眼睛”用于感知车辆周围环境，是必不可少的。传统上，图像传感器和LiDAR担任这一角色。然而， Recently, 一种新型视觉传感器——事件摄像机引起了关注。事件摄像机对周围环境的变化（如运动）作出响应，具有较强的运动模糊鲁棒性，并在高动态范围环境中表现出色，这在机器人应用中很有优势。此外，事件摄像机的数据采集遵循非同步和低延迟原则，使其适合用于光学通信。通过向事件摄像机添加通信功能，可以利用I2V通信立即共享前方碰撞、紧急制动和道路状况信息，从而有助于风险规避。此外，接收信号定时和交通流量等信息能够实现速度调节和最佳路线选择，从而促进更高效的驾驶。在本研究中，我们构建了一个车辆可见光通信系统，其中事件摄像机作为接收器，多个LED作为发射器。在行驶场景中，系统跟踪发射器位置，并基于Walsh-Hadamard码的导频序列分离密集排列的LED光源。结果，在室外车辆实验中，当发射器-接收器距离在40米以内，车辆行驶速度为30 km/h（8.3 m/s）时，实现了无错误通信。 
+
+---
+# Learning-based Airflow Inertial Odometry for MAVs using Thermal Anemometers in a GPS and vision denied environment 
+
+**Title (ZH)**: 基于学习的微型航空器热风速仪辅助气流惯性里程计在GPS和视觉受限环境中的应用 
+
+**Authors**: Ze Wang, Jingang Qu, Zhenyu Gao, Pascal Morin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.15044)  
+
+**Abstract**: This work demonstrates an airflow inertial based odometry system with multi-sensor data fusion, including thermal anemometer, IMU, ESC, and barometer. This goal is challenging because low-cost IMUs and barometers have significant bias, and anemometer measurements are very susceptible to interference from spinning propellers and ground effects. We employ a GRU-based deep neural network to estimate relative air speed from noisy and disturbed anemometer measurements, and an observer with bias model to fuse the sensor data and thus estimate the state of aerial vehicle. A complete flight data, including takeoff and landing on the ground, shows that the approach is able to decouple the downwash induced wind speed caused by propellers and the ground effect, and accurately estimate the flight speed in a wind-free indoor environment. IMU, and barometer bias are effectively estimated, which significantly reduces the position integration drift, which is only 5.7m for 203s manual random flight. The open source is available on this https URL. 
+
+**Abstract (ZH)**: 基于 airflow inertial 的多传感器数据融合姿态导航系统：低偏置 IMU 和气流计的噪声估计与干扰抑制 
+
+---
+# Histo-Planner: A Real-time Local Planner for MAVs Teleoperation based on Histogram of Obstacle Distribution 
+
+**Title (ZH)**: Histo-Planner：基于障碍分布直方图的MAVs遥操作实时局部规划器 
+
+**Authors**: Ze Wang, Zhenyu Gao, Jingang Qu, Pascal Morin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.15043)  
+
+**Abstract**: This paper concerns real-time obstacle avoidance for micro aerial vehicles (MAVs). Motivated by teleoperation applications in cluttered environments with limited computational power, we propose a local planner that does not require the knowledge or construction of a global map of the obstacles. The proposed solution consists of a real-time trajectory planning algorithm that relies on the histogram of obstacle distribution and a planner manager that triggers different planning modes depending on obstacles location around the MAV. The proposed solution is validated, for a teleoperation application, with both simulations and indoor experiments. Benchmark comparisons based on a designed simulation platform are also provided. 
+
+**Abstract (ZH)**: 本文探讨了微型空中车辆（MAVs）的实时障碍避让问题。受在计算能力有限的复杂环境中进行遥控操作的启发，我们提出了一种无需了解或构建障碍全局地图的局部规划器。所提出的方法包括一个基于障碍分布直方图的实时轨迹规划算法，以及一个规划管理器，该管理器可以根据MAV周围障碍物的位置触发不同的规划模式。该方法在遥控操作应用中通过仿真和室内实验进行了验证，并提供了基于设计的仿真平台的基准比较。 
+
+---
+# Fault-Tolerant Multi-Robot Coordination with Limited Sensing within Confined Environments 
+
+**Title (ZH)**: 受限环境内有限感知的容错多机器人协调 
+
+**Authors**: Kehinde O. Aina, Hosain Bagheri, Daniel I. Goldman  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.15036)  
+
+**Abstract**: As robots are increasingly deployed to collaborate on tasks within shared workspaces and resources, the failure of an individual robot can critically affect the group's performance. This issue is particularly challenging when robots lack global information or direct communication, relying instead on social interaction for coordination and to complete their tasks. In this study, we propose a novel fault-tolerance technique leveraging physical contact interactions in multi-robot systems, specifically under conditions of limited sensing and spatial confinement. We introduce the "Active Contact Response" (ACR) method, where each robot modulates its behavior based on the likelihood of encountering an inoperative (faulty) robot. Active robots are capable of collectively repositioning stationary and faulty peers to reduce obstructions and maintain optimal group functionality. We implement our algorithm in a team of autonomous robots, equipped with contact-sensing and collision-tolerance capabilities, tasked with collectively excavating cohesive model pellets. Experimental results indicate that the ACR method significantly improves the system's recovery time from robot failures, enabling continued collective excavation with minimal performance degradation. Thus, this work demonstrates the potential of leveraging local, social, and physical interactions to enhance fault tolerance and coordination in multi-robot systems operating in constrained and extreme environments. 
+
+**Abstract (ZH)**: 随着机器人越来越多地被部署到共享工作空间和资源中协作完成任务，单个机器人的故障会严重影响团队的表现。特别是在机器人缺乏全局信息或直接通信能力，依赖社会互动进行协调和完成任务的情况下，这一问题尤为严峻。本研究提出了一种新的容错技术，利用多机器人系统中物理接触交互，在受限感知识别和空间约束条件下提升系统的容错能力。我们引入了“主动接触响应”（ACR）方法，每台机器人根据遇到故障机器人可能性的大小调整其行为。活动机器人能够集体重新定位静止和故障的同伴，以减少障碍并保持团队的最佳功能。我们将该算法应用于装备有接触感测和碰撞容忍能力的自主机器人团队，它们的任务是集体挖掘统一模型颗粒。实验结果表明，ACR方法显著提高了系统从机器人故障中恢复的时间，使得在性能下降最小的情况下继续进行集体挖掘。因此，本研究展示了在受限和极端环境中操作的多机器人系统中利用局部、社会和物理交互提升容错能力和协调的潜力。 
+
+---
+# Toward Task Capable Active Matter: Learning to Avoid Clogging in Confined Collectives via Collisions 
+
+**Title (ZH)**: 面向任务的能力型活性物质：通过碰撞学习在受限群体中避免堵塞 
+
+**Authors**: Kehinde O. Aina, Ram Avinery, Hui-Shun Kuan, Meredith D. Betterton, Michael A. D. Goodisman, Daniel I. Goldman  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.15033)  
+
+**Abstract**: Social organisms which construct nests consisting of tunnels and chambers necessarily navigate confined and crowded conditions. Unlike low-density collectives like bird flocks and insect swarms, in which hydrodynamic and statistical phenomena dominate, the physics of glasses and supercooled fluids is important to understand clogging behaviors in high-density collectives. Our previous work revealed that fire ants flowing in confined tunnels utilize diverse behaviors like unequal workload distributions, spontaneous direction reversals, and limited interaction times to mitigate clogging and jamming and thus maintain functional flow; implementation of similar rules in a small robophysical swarm led to high performance through spontaneous dissolution of clogs and clusters. However, how the insects learn such behaviors, and how we can develop "task capable" active matter in such regimes, remains a challenge in part because interaction dynamics are dominated by local, time-consuming collisions and no single agent can guide the entire collective. Here, we hypothesized that effective flow and clog mitigation could emerge purely through local learning. We tasked small groups of robots with pellet excavation in a narrow tunnel, allowing them to modify reversal probabilities over time. Initially, robots had equal probabilities and clogs were common. Reversals improved flow. When reversal probabilities adapted via collisions and noisy tunnel length estimates, workload inequality and performance improved. Our robophysical study of an excavating swarm shows that, despite the seeming complexity and difficulty of the task, simple learning rules can mitigate or leverage unavoidable features in task-capable dense active matter, leading to hypotheses for dense biological and robotic swarms. 
+
+**Abstract (ZH)**: 受约束和拥挤条件下筑巢的社会生物必须导航通过这些条件。主动物质在高密度集体中的阻塞行为不能通过低密度鸟群和昆虫群的流体力学和统计现象来理解，而是需要理解玻璃态和超冷却流体的物理学。我们先前的工作揭示了火蚁在狭窄隧道中流动时利用不均等的工作负担分配、自发的方向反转以及有限的互动时间来减轻阻塞和卡顿，从而维持功能性流动。将类似规则应用于小型机器人物理群显著提高了性能，通过自发溶解阻塞和聚集体实现了这一点。然而，昆虫是如何学习这些行为的，以及我们如何在以局部、耗时碰撞为主导的互动动力学中开发“任务能力”主动物质，仍然是一个挑战。在这里，我们假设有效的流动和阻塞缓解可以通过局部学习自发地出现。我们要求小型机器人小组在狭窄隧道中执行颗粒挖掘任务，允许它们随时间调整反转概率。最初，机器人具有相等的概率，阻塞常见。反转改善了流动。当反转概率通过碰撞和隧道长度的噪声估计进行调整时，工作负担不平等和性能提高。我们的机器人物理研究显示，在任务能力密集主动物质中，即使任务看似复杂且难以完成，简单的学习规则也能缓解或利用不可避免的特征，从而为密集生物群和机器人群提供了见解。 
+
+---
+# Shape-Adaptive Planning and Control for a Deformable Quadrotor 
+
+**Title (ZH)**: 自适应形变四旋翼飞行器的规划与控制 
+
+**Authors**: Yuze Wu, Zhichao Han, Xuankang Wu, Yuan Zhou, Junjie Wang, Zheng Fang, Fei Gao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.15010)  
+
+**Abstract**: Drones have become essential in various applications, but conventional quadrotors face limitations in confined spaces and complex tasks. Deformable drones, which can adapt their shape in real-time, offer a promising solution to overcome these challenges, while also enhancing maneuverability and enabling novel tasks like object grasping. This paper presents a novel approach to autonomous motion planning and control for deformable quadrotors. We introduce a shape-adaptive trajectory planner that incorporates deformation dynamics into path generation, using a scalable kinodynamic A* search to handle deformation parameters in complex environments. The backend spatio-temporal optimization is capable of generating optimally smooth trajectories that incorporate shape deformation. Additionally, we propose an enhanced control strategy that compensates for external forces and torque disturbances, achieving a 37.3\% reduction in trajectory tracking error compared to our previous work. Our approach is validated through simulations and real-world experiments, demonstrating its effectiveness in narrow-gap traversal and multi-modal deformable tasks. 
+
+**Abstract (ZH)**: 变形无人机在受限空间和复杂任务中的自主运动规划与控制 
+
+---
+# RoboCulture: A Robotics Platform for Automated Biological Experimentation 
+
+**Title (ZH)**: RoboCulture: 一种自动化生物实验的机器人平台 
+
+**Authors**: Kevin Angers, Kourosh Darvish, Naruki Yoshikawa, Sargol Okhovatian, Dawn Bannerman, Ilya Yakavets, Florian Shkurti, Alán Aspuru-Guzik, Milica Radisic  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.14941)  
+
+**Abstract**: Automating biological experimentation remains challenging due to the need for millimeter-scale precision, long and multi-step experiments, and the dynamic nature of living systems. Current liquid handlers only partially automate workflows, requiring human intervention for plate loading, tip replacement, and calibration. Industrial solutions offer more automation but are costly and lack the flexibility needed in research settings. Meanwhile, research in autonomous robotics has yet to bridge the gap for long-duration, failure-sensitive biological experiments. We introduce RoboCulture, a cost-effective and flexible platform that uses a general-purpose robotic manipulator to automate key biological tasks. RoboCulture performs liquid handling, interacts with lab equipment, and leverages computer vision for real-time decisions using optical density-based growth monitoring. We demonstrate a fully autonomous 15-hour yeast culture experiment where RoboCulture uses vision and force feedback and a modular behavior tree framework to robustly execute, monitor, and manage experiments. 
+
+**Abstract (ZH)**: 自动化生物实验仍具挑战性，由于需要毫米级精度、长时间的多步骤实验以及活体系统的动态性质。当前的液体处理设备只能部分自动化工作流程，仍需人工干预进行板载入、吸头更换和校准。工业解决方案虽提供更多自动化但成本较高且在研究环境中缺乏灵活性。同时，自主机器人领域的研究尚未解决长期、故障敏感生物实验的需求。我们介绍了RoboCulture，这是一种经济高效且灵活的平台，使用通用机器人操作器来自动化关键的生物任务。RoboCulture执行液体处理、与实验室设备互动，并利用计算机视觉基于光学密度的生长监测进行实时决策。我们展示了长达15小时的自主酿酒酵母培养实验，RoboCulture使用视觉、力反馈和模块化行为树框架以稳健地执行、监控和管理实验。 
+
+---
+# Coordinated motion control of a wire arc additive manufacturing robotic system for multi-directional building parts 
+
+**Title (ZH)**: 多方向建筑部件用丝弧增材制造机器人系统的协调运动控制 
+
+**Authors**: Fernando Coutinho, Nicolas Lizarralde, Fernando Lizarralde  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.14858)  
+
+**Abstract**: This work investigates the manufacturing of complex shapes parts with wire arc additive manufacturing (WAAM). In order to guarantee the integrity and quality of each deposited layer that composes the final piece, the deposition process is usually carried out in a flat position. However, for complex geometry parts with non-flat surfaces, this strategy causes unsupported overhangs and staircase effect, which contribute to a poor surface finishing. Generally, the build direction is not constant for every deposited section or layer in complex geometry parts. As a result, there is an additional concern to ensure the build direction is aligned with gravity, thus improving the quality of the final part. This paper proposes an algorithm to control the torch motion with respect to a deposition substrate as well as the torch orientation with respect to an inertial frame. The control scheme is based on task augmentation applied to an extended kinematic chain composed by two robots, which constitutes a coordinated control problem, and allows the deposition trajectory to be planned with respect to the deposition substrate coordinate frame while aligning each layer buildup direction with gravity (or any other direction defined for an inertial frame). Parts with complex geometry aspects have been produced in a WAAM cell composed by two robots (a manipulator with a welding torch and a positioning table holding the workpiece) in order to validate the proposed approach. 
+
+**Abstract (ZH)**: 这项工作研究了使用丝弧增材制造（WAAM）制造复杂形状部件的方法。为了保证构成最终产品的每一层沉积的完整性和质量，沉积过程通常在平面上进行。然而，对于具有非平面表面的复杂几何形状部件，这种策略会导致无法支撑的悬挑和阶梯效应，从而导致表面质量较差。通常，复杂几何形状部件的构建方向对于每一层沉积都不是恒定的。因此，需要确保构建方向与重力对齐，以提高最终部件的质量。本文提出了一种算法，用于控制相对于沉积基底的焊接炬运动以及相对于惯性参考系的焊接炬方向。控制方案基于应用到由两个机器人组成的扩展运动链上的任务扩展，构成一个协调控制问题，允许根据沉积基底坐标系规划沉积轨迹，并使每一层的堆叠方向与重力（或其他定义的惯性参考系方向）保持对齐。已在一个由两个机器人组成的WAAM系统（一个带有焊接炬的搬运机器人和一个承载工件的定位台）中制造具有复杂几何特征的部件，以验证所提出的方法。 
+
+---
+# Fast and scalable multi-robot deployment planning under connectivity constraints 
+
+**Title (ZH)**: 基于连接约束的快速可扩展多机器人部署规划 
+
+**Authors**: Yaroslav Marchukov, Luis Montano  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.14760)  
+
+**Abstract**: In this paper we develop a method to coordinate the deployment of a multi-robot team to reach some locations of interest, so-called primary goals, and to transmit the information from these positions to a static Base Station (BS), under connectivity constraints. The relay positions have to be established for some robots to maintain the connectivity at the moment in which the other robots visit the primary goals. Once every robot reaches its assigned goal, they are again available to cover new goals, dynamically re-distributing the robots to the new tasks. The contribution of this work is a two stage method to deploy the team. Firstly, clusters of relay and primary positions are computed, obtaining a tree formed by chains of positions that have to be visited. Secondly, the order for optimally assigning and visiting the goals in the clusters is computed. We analyze different heuristics for sequential and parallel deployment in the clusters, obtaining sub-optimal solutions in short time for different number of robots and for a large amount of goals. 
+
+**Abstract (ZH)**: 本文提出了一种方法，用于协调多机器人团队部署，以到达某些感兴趣的地点（即主要目标），并从这些位置将信息传输到一个固定的基站点（BS），同时满足连通性约束。需要为某些机器人确定中继位置，在其他机器人访问主要目标的时刻保持连通性。一旦每个机器人到达其分配的目标，他们将重新分配以覆盖新的目标，动态重新分布机器人以执行新任务。本文的贡献是一种两阶段方法来部署团队。首先，计算中继和主要位置的集群，得到由路径链接的位置组成的树形结构，这些位置需要被访问。其次，计算集群中目标最优指派和访问顺序。我们分析了在集群中进行顺序和并行部署的不同启发式方法，获得在不同机器人数量和大量目标情况下较优解的近似解。 
+
+---

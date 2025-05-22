@@ -1,0 +1,338 @@
+# Synthetic Enclosed Echoes: A New Dataset to Mitigate the Gap Between Simulated and Real-World Sonar Data 
+
+**Title (ZH)**: 合成封闭回声：一个新的数据集，用于减少模拟与真实声纳数据之间的差距 
+
+**Authors**: Guilherme de Oliveira, Matheus M. dos Santos, Paulo L. J. Drews-Jr  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.15465)  
+
+**Abstract**: This paper introduces Synthetic Enclosed Echoes (SEE), a novel dataset designed to enhance robot perception and 3D reconstruction capabilities in underwater environments. SEE comprises high-fidelity synthetic sonar data, complemented by a smaller subset of real-world sonar data. To facilitate flexible data acquisition, a simulated environment has been developed, enabling the generation of additional data through modifications such as the inclusion of new structures or imaging sonar configurations. This hybrid approach leverages the advantages of synthetic data, including readily available ground truth and the ability to generate diverse datasets, while bridging the simulation-to-reality gap with real-world data acquired in a similar environment. The SEE dataset comprehensively evaluates acoustic data-based methods, including mathematics-based sonar approaches and deep learning algorithms. These techniques were employed to validate the dataset, confirming its suitability for underwater 3D reconstruction. Furthermore, this paper proposes a novel modification to a state-of-the-art algorithm, demonstrating improved performance compared to existing methods. The SEE dataset enables the evaluation of acoustic data-based methods in realistic scenarios, thereby improving their feasibility for real-world underwater applications. 
+
+**Abstract (ZH)**: 合成封闭回声数据集（SEE）：一种用于增强水下环境机器人感知和三维重建能力的新型数据集 
+
+---
+# AgentThink: A Unified Framework for Tool-Augmented Chain-of-Thought Reasoning in Vision-Language Models for Autonomous Driving 
+
+**Title (ZH)**: AgentThink：增强链式思维推理的统一框架在自主驾驶视觉-语言模型中的应用 
+
+**Authors**: Kangan Qian, Sicong Jiang, Yang Zhong, Ziang Luo, Zilin Huang, Tianze Zhu, Kun Jiang, Mengmeng Yang, Zheng Fu, Jinyu Miao, Yining Shi, He Zhe Lim, Li Liu, Tianbao Zhou, Hongyi Wang, Huang Yu, Yifei Hu, Guang Li, Guang Chen, Hao Ye, Lijun Sun, Diange Yang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.15298)  
+
+**Abstract**: Vision-Language Models (VLMs) show promise for autonomous driving, yet their struggle with hallucinations, inefficient reasoning, and limited real-world validation hinders accurate perception and robust step-by-step reasoning. To overcome this, we introduce \textbf{AgentThink}, a pioneering unified framework that, for the first time, integrates Chain-of-Thought (CoT) reasoning with dynamic, agent-style tool invocation for autonomous driving tasks. AgentThink's core innovations include: \textbf{(i) Structured Data Generation}, by establishing an autonomous driving tool library to automatically construct structured, self-verified reasoning data explicitly incorporating tool usage for diverse driving scenarios; \textbf{(ii) A Two-stage Training Pipeline}, employing Supervised Fine-Tuning (SFT) with Group Relative Policy Optimization (GRPO) to equip VLMs with the capability for autonomous tool invocation; and \textbf{(iii) Agent-style Tool-Usage Evaluation}, introducing a novel multi-tool assessment protocol to rigorously evaluate the model's tool invocation and utilization. Experiments on the DriveLMM-o1 benchmark demonstrate AgentThink significantly boosts overall reasoning scores by \textbf{53.91\%} and enhances answer accuracy by \textbf{33.54\%}, while markedly improving reasoning quality and consistency. Furthermore, ablation studies and robust zero-shot/few-shot generalization experiments across various benchmarks underscore its powerful capabilities. These findings highlight a promising trajectory for developing trustworthy and tool-aware autonomous driving models. 
+
+**Abstract (ZH)**: Vision-Language模型（VLMs）在自动驾驶领域展现出潜力，但它们在幻觉、低效推理和有限的现实世界验证方面的挑战阻碍了准确感知和稳健的逐步推理。为克服这些挑战，我们提出了**AgentThink**，这是一种开创性的统一框架，首次将链式推理（CoT）与动态、代理风格的工具调用集成到自动驾驶任务中。AgentThink的核心创新包括：**（i）结构化数据生成**，通过建立自动驾驶工具库，自动构建结构化、自验证的推理数据，明确包括工具使用情况，适用于多种驾驶场景；**（ii）两阶段训练pipeline**，采用监督微调（SFT）与组相对策略优化（GRPO）结合，使VLMs具备自主调用工具的能力；以及**（iii）代理风格的工具使用评估**，引入一种新的多工具评估协议，以严格评估模型的工具调用和使用情况。DriveLMM-o1基准测试实验表明，AgentThink在整体推理得分上提高了**53.91%**，答案准确性提高了**33.54%**，同时显著提高了推理质量和一致性。此外，跨不同基准的消融研究和鲁棒零-shot/少-shot泛化实验进一步证明了其强大的功能。这些发现突显了开发可信且工具感知的自动驾驶模型有希望的发展方向。 
+
+---
+# UPTor: Unified 3D Human Pose Dynamics and Trajectory Prediction for Human-Robot Interaction 
+
+**Title (ZH)**: UPTor: 统一的3D人类姿态动力学和轨迹预测方法用于人机交互 
+
+**Authors**: Nisarga Nilavadi, Andrey Rudenko, Timm Linder  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.14866)  
+
+**Abstract**: We introduce a unified approach to forecast the dynamics of human keypoints along with the motion trajectory based on a short sequence of input poses. While many studies address either full-body pose prediction or motion trajectory prediction, only a few attempt to merge them. We propose a motion transformation technique to simultaneously predict full-body pose and trajectory key-points in a global coordinate frame. We utilize an off-the-shelf 3D human pose estimation module, a graph attention network to encode the skeleton structure, and a compact, non-autoregressive transformer suitable for real-time motion prediction for human-robot interaction and human-aware navigation. We introduce a human navigation dataset ``DARKO'' with specific focus on navigational activities that are relevant for human-aware mobile robot navigation. We perform extensive evaluation on Human3.6M, CMU-Mocap, and our DARKO dataset. In comparison to prior work, we show that our approach is compact, real-time, and accurate in predicting human navigation motion across all datasets. Result animations, our dataset, and code will be available at this https URL 
+
+**Abstract (ZH)**: 我们提出了一种统一的方法，基于短序列输入姿态来预测人类关键点的动力学及其运动轨迹。我们提出了一种运动变换技术，同时在全局坐标框架中预测全身姿态和轨迹关键点。我们利用现成的3D人体姿态估计模块，采用图注意力网络编码骨架结构，以及适合实时运动预测的紧凑型非自回归变压器，用于人类机器人交互和人类意识导航。我们引入了一个专注于与人类意识移动机器人导航相关的导航活动的数据集“DARKO”。我们在Human3.6M、CMU-Mocap和我们的DARKO数据集上进行了广泛评估。与此前的工作相比，我们的方法在所有数据集上预测人类导航运动时表现出紧凑性、实时性和准确性。结果动画、数据集和代码将在此链接处提供。 
+
+---
+# RAZER: Robust Accelerated Zero-Shot 3D Open-Vocabulary Panoptic Reconstruction with Spatio-Temporal Aggregation 
+
+**Title (ZH)**: RAZER：鲁棒加速零样本三维开放词汇全景重建方法及其时空聚合 
+
+**Authors**: Naman Patel, Prashanth Krishnamurthy, Farshad Khorrami  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.15373)  
+
+**Abstract**: Mapping and understanding complex 3D environments is fundamental to how autonomous systems perceive and interact with the physical world, requiring both precise geometric reconstruction and rich semantic comprehension. While existing 3D semantic mapping systems excel at reconstructing and identifying predefined object instances, they lack the flexibility to efficiently build semantic maps with open-vocabulary during online operation. Although recent vision-language models have enabled open-vocabulary object recognition in 2D images, they haven't yet bridged the gap to 3D spatial understanding. The critical challenge lies in developing a training-free unified system that can simultaneously construct accurate 3D maps while maintaining semantic consistency and supporting natural language interactions in real time. In this paper, we develop a zero-shot framework that seamlessly integrates GPU-accelerated geometric reconstruction with open-vocabulary vision-language models through online instance-level semantic embedding fusion, guided by hierarchical object association with spatial indexing. Our training-free system achieves superior performance through incremental processing and unified geometric-semantic updates, while robustly handling 2D segmentation inconsistencies. The proposed general-purpose 3D scene understanding framework can be used for various tasks including zero-shot 3D instance retrieval, segmentation, and object detection to reason about previously unseen objects and interpret natural language queries. The project page is available at this https URL. 
+
+**Abstract (ZH)**: 三维环境的映射与理解对于自主系统感知和交互物理世界至关重要，要求精确的几何重构和丰富的语义理解。现有的三维语义映射系统在重建和识别预定义对象实例方面表现出色，但在在线运行过程中缺乏高效构建开放式词汇语义地图的灵活性。尽管最近的视觉-语言模型已经在2D图像中实现了开放式词汇的物体识别，但尚未解决到三维空间理解的鸿沟。关键挑战在于开发一个无需训练的统一系统，能够同时构建精确的3D地图，保持语义一致性，并支持实时的自然语言交互。本文提出了一种零样本框架，通过基于层次化物体关联和空间索引的在线实例级语义嵌入融合，无缝集成GPU加速的几何重构与开放式词汇的视觉-语言模型。无需训练的系统通过增量处理和统一的几何-语义更新实现优异性能，同时稳健地处理2D分割一致性问题。所提出的一般用途的3D场景理解框架可用于包括零样本3D实例检索、分割和物体检测在内的多种任务，以推断未见过的物体并解释自然语言查询。项目页面可访问该网址。 
+
+---
+# R3GS: Gaussian Splatting for Robust Reconstruction and Relocalization in Unconstrained Image Collections 
+
+**Title (ZH)**: R3GS：稳健重建与无约束图像集合中重定位的高斯点云方法 
+
+**Authors**: Xu yan, Zhaohui Wang, Rong Wei, Jingbo Yu, Dong Li, Xiangde Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.15294)  
+
+**Abstract**: We propose R3GS, a robust reconstruction and relocalization framework tailored for unconstrained datasets. Our method uses a hybrid representation during training. Each anchor combines a global feature from a convolutional neural network (CNN) with a local feature encoded by the multiresolution hash grids [2]. Subsequently, several shallow multi-layer perceptrons (MLPs) predict the attributes of each Gaussians, including color, opacity, and covariance. To mitigate the adverse effects of transient objects on the reconstruction process, we ffne-tune a lightweight human detection network. Once ffne-tuned, this network generates a visibility map that efffciently generalizes to other transient objects (such as posters, banners, and cars) with minimal need for further adaptation. Additionally, to address the challenges posed by sky regions in outdoor scenes, we propose an effective sky-handling technique that incorporates a depth prior as a constraint. This allows the inffnitely distant sky to be represented on the surface of a large-radius sky sphere, signiffcantly reducing ffoaters caused by errors in sky reconstruction. Furthermore, we introduce a novel relocalization method that remains robust to changes in lighting conditions while estimating the camera pose of a given image within the reconstructed 3DGS scene. As a result, R3GS significantly enhances rendering ffdelity, improves both training and rendering efffciency, and reduces storage requirements. Our method achieves state-of-the-art performance compared to baseline methods on in-the-wild datasets. The code will be made open-source following the acceptance of the paper. 
+
+**Abstract (ZH)**: 一种针对无约束数据集的鲁棒重建与重新定位框架：R3GS 
+
+---
+# Constructing a 3D Town from a Single Image 
+
+**Title (ZH)**: 从单张图像构建三维城镇 
+
+**Authors**: Kaizhi Zheng, Ruijian Zhang, Jing Gu, Jie Yang, Xin Eric Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.15765)  
+
+**Abstract**: Acquiring detailed 3D scenes typically demands costly equipment, multi-view data, or labor-intensive modeling. Therefore, a lightweight alternative, generating complex 3D scenes from a single top-down image, plays an essential role in real-world applications. While recent 3D generative models have achieved remarkable results at the object level, their extension to full-scene generation often leads to inconsistent geometry, layout hallucinations, and low-quality meshes. In this work, we introduce 3DTown, a training-free framework designed to synthesize realistic and coherent 3D scenes from a single top-down view. Our method is grounded in two principles: region-based generation to improve image-to-3D alignment and resolution, and spatial-aware 3D inpainting to ensure global scene coherence and high-quality geometry generation. Specifically, we decompose the input image into overlapping regions and generate each using a pretrained 3D object generator, followed by a masked rectified flow inpainting process that fills in missing geometry while maintaining structural continuity. This modular design allows us to overcome resolution bottlenecks and preserve spatial structure without requiring 3D supervision or fine-tuning. Extensive experiments across diverse scenes show that 3DTown outperforms state-of-the-art baselines, including Trellis, Hunyuan3D-2, and TripoSG, in terms of geometry quality, spatial coherence, and texture fidelity. Our results demonstrate that high-quality 3D town generation is achievable from a single image using a principled, training-free approach. 
+
+**Abstract (ZH)**: 一种基于单张鸟瞰图生成真实且一致的3D场景的训练-free框架 
+
+---
+# HAMF: A Hybrid Attention-Mamba Framework for Joint Scene Context Understanding and Future Motion Representation Learning 
+
+**Title (ZH)**: HAMF：一种结合注意力机制与Mamba框架的场景上下文理解与未来运动表示学习混合模型 
+
+**Authors**: Xiaodong Mei, Sheng Wang, Jie Cheng, Yingbing Chen, Dan Xu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.15703)  
+
+**Abstract**: Motion forecasting represents a critical challenge in autonomous driving systems, requiring accurate prediction of surrounding agents' future trajectories. While existing approaches predict future motion states with the extracted scene context feature from historical agent trajectories and road layouts, they suffer from the information degradation during the scene feature encoding. To address the limitation, we propose HAMF, a novel motion forecasting framework that learns future motion representations with the scene context encoding jointly, to coherently combine the scene understanding and future motion state prediction. We first embed the observed agent states and map information into 1D token sequences, together with the target multi-modal future motion features as a set of learnable tokens. Then we design a unified Attention-based encoder, which synergistically combines self-attention and cross-attention mechanisms to model the scene context information and aggregate future motion features jointly. Complementing the encoder, we implement the Mamba module in the decoding stage to further preserve the consistency and correlations among the learned future motion representations, to generate the accurate and diverse final trajectories. Extensive experiments on Argoverse 2 benchmark demonstrate that our hybrid Attention-Mamba model achieves state-of-the-art motion forecasting performance with the simple and lightweight architecture. 
+
+**Abstract (ZH)**: 运动预测是自动驾驶系统中的一个关键挑战，要求准确预测周围代理的未来轨迹。为了克服现有方法在场景特征编码过程中信息退化的局限性，我们提出了一种新颖的运动预测框架HAMF，该框架通过联合学习场景上下文编码和未来运动状态，协调地结合了场景理解与未来运动状态预测。我们首先将观测到的代理状态和地图信息嵌入到1Dtoken序列中，并将目标多模态未来运动特征作为一组可学习的token。然后，我们设计了一个统一的基于注意力的编码器，该编码器结合了自注意力和跨注意力机制，协同建模场景上下文信息并联合聚合未来运动特征。为了进一步保持学习到的未来运动表示的一致性和相关性，我们在解码阶段实现了Mamba模块，生成准确且多样化的最终轨迹。在Argoverse 2基准测试上进行的广泛实验表明，我们的混合Attention-Mamba模型在简单且轻量级的架构下实现了最先进的运动预测性能。 
+
+---
+# FragFake: A Dataset for Fine-Grained Detection of Edited Images with Vision Language Models 
+
+**Title (ZH)**: FragFake: 一种用于视觉语言模型细粒度检测编辑图像的数据集 
+
+**Authors**: Zhen Sun, Ziyi Zhang, Zeren Luo, Zeyang Sha, Tianshuo Cong, Zheng Li, Shiwen Cui, Weiqiang Wang, Jiaheng Wei, Xinlei He, Qi Li, Qian Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.15644)  
+
+**Abstract**: Fine-grained edited image detection of localized edits in images is crucial for assessing content authenticity, especially given that modern diffusion models and image editing methods can produce highly realistic manipulations. However, this domain faces three challenges: (1) Binary classifiers yield only a global real-or-fake label without providing localization; (2) Traditional computer vision methods often rely on costly pixel-level annotations; and (3) No large-scale, high-quality dataset exists for modern image-editing detection techniques. To address these gaps, we develop an automated data-generation pipeline to create FragFake, the first dedicated benchmark dataset for edited image detection, which includes high-quality images from diverse editing models and a wide variety of edited objects. Based on FragFake, we utilize Vision Language Models (VLMs) for the first time in the task of edited image classification and edited region localization. Experimental results show that fine-tuned VLMs achieve higher average Object Precision across all datasets, significantly outperforming pretrained models. We further conduct ablation and transferability analyses to evaluate the detectors across various configurations and editing scenarios. To the best of our knowledge, this work is the first to reformulate localized image edit detection as a vision-language understanding task, establishing a new paradigm for the field. We anticipate that this work will establish a solid foundation to facilitate and inspire subsequent research endeavors in the domain of multimodal content authenticity. 
+
+**Abstract (ZH)**: 细粒度局部编辑图像检测对于评估内容真实性至关重要，尤其是在现代扩散模型和图像编辑方法可以产生高度真实的伪造时。然而，这一领域面临三个挑战：（1）二分类器仅提供全局真实或伪造标签而不提供定位；（2）传统计算机视觉方法通常依赖于昂贵的像素级注释；（3）不存在大规模高质量的数据集用于现代图像编辑检测技术。为了解决这些缺口，我们开发了一个自动数据生成管道，以创建FragFake，这是首个专门用于编辑图像检测的基准数据集，其中包括来自多种编辑模型的高质量图像以及多种编辑对象。基于FragFake，我们首次将视觉语言模型（VLMs）应用于编辑图像分类和编辑区域定位任务。实验结果表明，微调后的VLMs在所有数据集上实现了更高的平均对象精确度，显著优于预训练模型。我们进一步进行了消融分析和可迁移性分析，以评估在各种配置和编辑场景下的检测器性能。据我们所知，这项工作是首次将局部图像编辑检测重新定义为视觉语言理解任务，确立了该领域的全新范式。我们期望这项工作将为多模态内容真实性领域后续研究奠定坚实基础并提供启发。 
+
+---
+# UWSAM: Segment Anything Model Guided Underwater Instance Segmentation and A Large-scale Benchmark Dataset 
+
+**Title (ZH)**: UWSAM：段Anything模型引导的水下实例分割及大规模基准数据集 
+
+**Authors**: Hua Li, Shijie Lian, Zhiyuan Li, Runmin Cong, Sam Kwong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.15581)  
+
+**Abstract**: With recent breakthroughs in large-scale modeling, the Segment Anything Model (SAM) has demonstrated significant potential in a variety of visual applications. However, due to the lack of underwater domain expertise, SAM and its variants face performance limitations in end-to-end underwater instance segmentation tasks, while their higher computational requirements further hinder their application in underwater scenarios. To address this challenge, we propose a large-scale underwater instance segmentation dataset, UIIS10K, which includes 10,048 images with pixel-level annotations for 10 categories. Then, we introduce UWSAM, an efficient model designed for automatic and accurate segmentation of underwater instances. UWSAM efficiently distills knowledge from the SAM ViT-Huge image encoder into the smaller ViT-Small image encoder via the Mask GAT-based Underwater Knowledge Distillation (MG-UKD) method for effective visual representation learning. Furthermore, we design an End-to-end Underwater Prompt Generator (EUPG) for UWSAM, which automatically generates underwater prompts instead of explicitly providing foreground points or boxes as prompts, thus enabling the network to locate underwater instances accurately for efficient segmentation. Comprehensive experimental results show that our model is effective, achieving significant performance improvements over state-of-the-art methods on multiple underwater instance datasets. Datasets and codes are available at this https URL. 
+
+**Abstract (ZH)**: 基于最近大规模模型的突破，段 Anything 模型 (SAM) 在多种视觉应用中展示了显著的潜力。然而，由于缺乏水下领域的专业知识，SAM 及其变体在端到端水下实例分割任务中面临性能限制，而其更高的计算要求进一步妨碍了其在水下场景中的应用。为应对这一挑战，我们提出了一个大规模水下实例分割数据集 UIIS10K，其中包括10,048张具有10个类别像素级注释的图像。随后，我们引入了 UWSAM，一种针对水下实例自动且准确分割的高效模型。UWSAM 通过基于 Mask GAT 的水下知识蒸馏 (MG-UKD) 方法，将 SAM ViT-Huge 图像编码器的知识高效地转移到较小的 ViT-Small 图像编码器中，从而实现有效的视觉表示学习。此外，我们为 UWSAM 设计了一个端到端水下提示生成器 (EUPG)，它能够自动生成水下提示，而无需显式提供前景点或框作为提示，从而使网络能够准确地定位水下实例以实现高效的分割。综合实验结果表明，我们的模型是有效的，在多个水下实例数据集上实现了相对于先进方法的显著性能提升。数据集和代码可通过以下链接获取。 
+
+---
+# Beyond Linearity: Squeeze-and-Recalibrate Blocks for Few-Shot Whole Slide Image Classification 
+
+**Title (ZH)**: 超越线性关系：压缩并校准模块用于少量样本全玻片图像分类 
+
+**Authors**: Conghao Xiong, Zhengrui Guo, Zhe Xu, Yifei Zhang, Raymond Kai-Yu Tong, Si Yong Yeo, Hao Chen, Joseph J. Y. Sung, Irwin King  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.15504)  
+
+**Abstract**: Deep learning has advanced computational pathology but expert annotations remain scarce. Few-shot learning mitigates annotation burdens yet suffers from overfitting and discriminative feature mischaracterization. In addition, the current few-shot multiple instance learning (MIL) approaches leverage pretrained vision-language models to alleviate these issues, but at the cost of complex preprocessing and high computational cost. We propose a Squeeze-and-Recalibrate (SR) block, a drop-in replacement for linear layers in MIL models to address these challenges. The SR block comprises two core components: a pair of low-rank trainable matrices (squeeze pathway, SP) that reduces parameter count and imposes a bottleneck to prevent spurious feature learning, and a frozen random recalibration matrix that preserves geometric structure, diversifies feature directions, and redefines the optimization objective for the SP. We provide theoretical guarantees that the SR block can approximate any linear mapping to arbitrary precision, thereby ensuring that the performance of a standard MIL model serves as a lower bound for its SR-enhanced counterpart. Extensive experiments demonstrate that our SR-MIL models consistently outperform prior methods while requiring significantly fewer parameters and no architectural changes. 
+
+**Abstract (ZH)**: 深度学习推动了计算病理学的发展，但专家标注仍然稀缺。少样本学习减轻了标注负担，但易过拟合并存在特征误表征问题。此外，当前的少样本多次实例学习（MIL）方法利用预训练的视觉-语言模型来缓解这些问题，但代价是复杂的预处理和高计算成本。我们提出了一种挤压和重新校准（SR）块，它是MIL模型中线性层的即插即用替代方案，以解决这些挑战。SR块包含两个核心组件：一对可训练的低秩矩阵（挤压路径，SP），用于减少参数数量并防止虚假特征学习，以及一个冻结的随机重新校准矩阵，用于保持几何结构、多样化特征方向，并重新定义SP的优化目标。我们提供了理论保证，证明SR块可以任意精度逼近任何线性映射，从而确保标准MIL模型的表现为其SR增强版本的下限。大量实验表明，我们的SR-MIL模型在参数量大幅减少且无需架构更改的情况下，始终优于先前的方法。 
+
+---
+# Stronger ViTs With Octic Equivariance 
+
+**Title (ZH)**: 具有八次对称性的更强的ViTs 
+
+**Authors**: David Nordström, Johan Edstedt, Fredrik Kahl, Georg Bökman  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.15441)  
+
+**Abstract**: Recent efforts at scaling computer vision models have established Vision Transformers (ViTs) as the leading architecture. ViTs incorporate weight sharing over image patches as an important inductive bias. In this work, we show that ViTs benefit from incorporating equivariance under the octic group, i.e., reflections and 90-degree rotations, as a further inductive bias. We develop new architectures, octic ViTs, that use octic-equivariant layers and put them to the test on both supervised and self-supervised learning. Through extensive experiments on DeiT-III and DINOv2 training on ImageNet-1K, we show that octic ViTs yield more computationally efficient networks while also improving performance. In particular, we achieve approximately 40% reduction in FLOPs for ViT-H while simultaneously improving both classification and segmentation results. 
+
+**Abstract (ZH)**: 近期在扩展计算机视觉模型的努力中，已经确立了视觉变换器（ViTs）作为领先的架构。ViTs 通过在图像patches之间共享权重来引入一个重要的归纳偏置。在本文中，我们展示了将八阶群下的协变性作为进一步的归纳偏置加入ViTs 可以从中受益。我们开发了新的架构——八阶ViTs，这些架构使用八阶协变层，并在有监督和自监督学习中进行了测试。通过在ImageNet-1K上的DeiT-III和DINOv2训练中的广泛实验，我们展示了八阶ViTs 可以在更计算效率的同时提高性能。特别是，我们实现了ViT-H约40%的FLOPs减少，同时在分类和分割结果上也有所提升。 
+
+---
+# Better Safe Than Sorry? Overreaction Problem of Vision Language Models in Visual Emergency Recognition 
+
+**Title (ZH)**: 宁可谨慎些好？视觉语言模型在视觉应急识别中的过度反应问题 
+
+**Authors**: Dasol Choi, Seunghyun Lee, Youngsook Song  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.15367)  
+
+**Abstract**: Vision-Language Models (VLMs) have demonstrated impressive capabilities in understanding visual content, but their reliability in safety-critical contexts remains under-explored. We introduce VERI (Visual Emergency Recognition Dataset), a carefully designed diagnostic benchmark of 200 images (100 contrastive pairs). Each emergency scene is matched with a visually similar but safe counterpart through multi-stage human verification and iterative refinement. Using a two-stage protocol - risk identification and emergency response - we evaluate 14 VLMs (2B-124B parameters) across medical emergencies, accidents, and natural disasters. Our analysis reveals a systematic overreaction problem: models excel at identifying real emergencies (70-100 percent success rate) but suffer from an alarming rate of false alarms, misidentifying 31-96 percent of safe situations as dangerous, with 10 scenarios failed by all models regardless of scale. This "better-safe-than-sorry" bias manifests primarily through contextual overinterpretation (88-93 percent of errors), challenging VLMs' reliability for safety applications. These findings highlight persistent limitations that are not resolved by increasing model scale, motivating targeted approaches for improving contextual safety assessment in visually misleading scenarios. 
+
+**Abstract (ZH)**: 视觉-语言模型在安全关键 contexts中的可靠性在应急场景中的诊断基准：VERI数据集 
+
+---
+# Objective Bicycle Occlusion Level Classification using a Deformable Parts-Based Model 
+
+**Title (ZH)**: 基于可变形部件模型的自行车遮挡等级分类 
+
+**Authors**: Angelique Mangubat, Shane Gilroy  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.15358)  
+
+**Abstract**: Road safety is a critical challenge, particularly for cyclists, who are among the most vulnerable road users. This study aims to enhance road safety by proposing a novel benchmark for bicycle occlusion level classification using advanced computer vision techniques. Utilizing a parts-based detection model, images are annotated and processed through a custom image detection pipeline. A novel method of bicycle occlusion level is proposed to objectively quantify the visibility and occlusion level of bicycle semantic parts. The findings indicate that the model robustly quantifies the visibility and occlusion level of bicycles, a significant improvement over the subjective methods used by the current state of the art. Widespread use of the proposed methodology will facilitate the accurate performance reporting of cyclist detection algorithms for occluded cyclists, informing the development of more robust vulnerable road user detection methods for autonomous vehicles. 
+
+**Abstract (ZH)**: 基于先进计算机视觉技术的自行车遮挡等级新型基准研究：提升骑行者道路安全 
+
+---
+# Zero-Shot Gaze-based Volumetric Medical Image Segmentation 
+
+**Title (ZH)**: 零样本基于视点的体绘制医学图像分割 
+
+**Authors**: Tatyana Shmykova, Leila Khaertdinova, Ilya Pershin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.15256)  
+
+**Abstract**: Accurate segmentation of anatomical structures in volumetric medical images is crucial for clinical applications, including disease monitoring and cancer treatment planning. Contemporary interactive segmentation models, such as Segment Anything Model 2 (SAM-2) and its medical variant (MedSAM-2), rely on manually provided prompts like bounding boxes and mouse clicks. In this study, we introduce eye gaze as a novel informational modality for interactive segmentation, marking the application of eye-tracking for 3D medical image segmentation. We evaluate the performance of using gaze-based prompts with SAM-2 and MedSAM-2 using both synthetic and real gaze data. Compared to bounding boxes, gaze-based prompts offer a time-efficient interaction approach with slightly lower segmentation quality. Our findings highlight the potential of using gaze as a complementary input modality for interactive 3D medical image segmentation. 
+
+**Abstract (ZH)**: 基于视线的交互分割在 volumetric 医学图像中解剖结构分割的精确性对于临床应用如疾病监测和癌症治疗计划至关重要。我们引入视线作为交互分割的新型信息模态，标志着眼动追踪在三维医学图像分割中的应用。我们使用合成和真实视线数据评估基于视线的提示在使用 SAM-2 和 MedSAM-2 中的性能。与边界框相比，基于视线的提示提供了一种时间效率更高的交互方法，但分割质量略低。我们的研究结果强调了将视线作为交互三维医学图像分割的补充输入模态的潜力。 
+
+---
+# SAMA-UNet: Enhancing Medical Image Segmentation with Self-Adaptive Mamba-Like Attention and Causal-Resonance Learning 
+
+**Title (ZH)**: SAMA-UNet: 通过自适应Mamba-like注意力和因果共振学习增强医学图像分割 
+
+**Authors**: Saqib Qamar, Mohd Fazil, Parvez Ahmad, Ghulam Muhammad  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.15234)  
+
+**Abstract**: Medical image segmentation plays an important role in various clinical applications, but existing models often struggle with the computational inefficiencies and challenges posed by complex medical data. State Space Sequence Models (SSMs) have demonstrated promise in modeling long-range dependencies with linear computational complexity, yet their application in medical image segmentation remains hindered by incompatibilities with image tokens and autoregressive assumptions. Moreover, it is difficult to achieve a balance in capturing both local fine-grained information and global semantic dependencies. To address these challenges, we introduce SAMA-UNet, a novel architecture for medical image segmentation. A key innovation is the Self-Adaptive Mamba-like Aggregated Attention (SAMA) block, which integrates contextual self-attention with dynamic weight modulation to prioritise the most relevant features based on local and global contexts. This approach reduces computational complexity and improves the representation of complex image features across multiple scales. We also suggest the Causal-Resonance Multi-Scale Module (CR-MSM), which enhances the flow of information between the encoder and decoder by using causal resonance learning. This mechanism allows the model to automatically adjust feature resolution and causal dependencies across scales, leading to better semantic alignment between the low-level and high-level features in U-shaped architectures. Experiments on MRI, CT, and endoscopy images show that SAMA-UNet performs better in segmentation accuracy than current methods using CNN, Transformer, and Mamba. The implementation is publicly available at GitHub. 
+
+**Abstract (ZH)**: 医学图像分割在各种临床应用中起着重要作用，但现有模型往往难以应对复杂医学数据带来的计算效率低下和挑战。状态空间序列模型（SSMs）在以线性计算复杂度建模长距离依赖方面显示出潜力，但在医学图像分割中的应用受到与图像令牌不兼容和自回归假设的阻碍。此外，难以在捕捉局部细微信息和全局语义依赖性之间取得平衡。为了解决这些挑战，我们提出了SAMA-UNet，一种新型的医学图像分割架构。关键创新是Self-Adaptive Mamba-like Aggregated Attention（SAMA）块，它结合了上下文自注意力和动态权重调制，根据局部和全局上下文优先选择最相关的特征。这种方法减少了计算复杂度并提高了跨多个尺度的复杂图像特征的表示能力。我们还提议使用Causal-Resonance Multi-Scale Module（CR-MSM），该模块通过因果共振学习增强编码器和解码器之间的信息流。这种机制允许模型自适应地调整不同尺度下的特征分辨率和因果依赖性，提高U型架构中低级和高级特征的语义对齐。在MRI、CT和内镜图像上的实验表明，SAMA-UNet在分割准确性方面优于使用CNN、Transformer和Mamba的现有方法。代码已开源在GitHub上。 
+
+---
+# Seeing the Trees for the Forest: Rethinking Weakly-Supervised Medical Visual Grounding 
+
+**Title (ZH)**: 见森林中之树木：重新思考弱监督医疗视觉定位 
+
+**Authors**: Ta Duc Huy, Duy Anh Huynh, Yutong Xie, Yuankai Qi, Qi Chen, Phi Le Nguyen, Sen Kim Tran, Son Lam Phung, Anton van den Hengel, Zhibin Liao, Minh-Son To, Johan W. Verjans, Vu Minh Hieu Phan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.15123)  
+
+**Abstract**: Visual grounding (VG) is the capability to identify the specific regions in an image associated with a particular text description. In medical imaging, VG enhances interpretability by highlighting relevant pathological features corresponding to textual descriptions, improving model transparency and trustworthiness for wider adoption of deep learning models in clinical practice. Current models struggle to associate textual descriptions with disease regions due to inefficient attention mechanisms and a lack of fine-grained token representations. In this paper, we empirically demonstrate two key observations. First, current VLMs assign high norms to background tokens, diverting the model's attention from regions of disease. Second, the global tokens used for cross-modal learning are not representative of local disease tokens. This hampers identifying correlations between the text and disease tokens. To address this, we introduce simple, yet effective Disease-Aware Prompting (DAP) process, which uses the explainability map of a VLM to identify the appropriate image features. This simple strategy amplifies disease-relevant regions while suppressing background interference. Without any additional pixel-level annotations, DAP improves visual grounding accuracy by 20.74% compared to state-of-the-art methods across three major chest X-ray datasets. 
+
+**Abstract (ZH)**: 基于视觉定位的疾病意识提示在医学影像中的应用：一种简单的有效方法 
+
+---
+# iPad: Iterative Proposal-centric End-to-End Autonomous Driving 
+
+**Title (ZH)**: iPad: 迭代基于提案的端到端自动驾驶 
+
+**Authors**: Ke Guo, Haochen Liu, Xiaojun Wu, Jia Pan, Chen Lv  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.15111)  
+
+**Abstract**: End-to-end (E2E) autonomous driving systems offer a promising alternative to traditional modular pipelines by reducing information loss and error accumulation, with significant potential to enhance both mobility and safety. However, most existing E2E approaches directly generate plans based on dense bird's-eye view (BEV) grid features, leading to inefficiency and limited planning awareness. To address these limitations, we propose iterative Proposal-centric autonomous driving (iPad), a novel framework that places proposals - a set of candidate future plans - at the center of feature extraction and auxiliary tasks. Central to iPad is ProFormer, a BEV encoder that iteratively refines proposals and their associated features through proposal-anchored attention, effectively fusing multi-view image data. Additionally, we introduce two lightweight, proposal-centric auxiliary tasks - mapping and prediction - that improve planning quality with minimal computational overhead. Extensive experiments on the NAVSIM and CARLA Bench2Drive benchmarks demonstrate that iPad achieves state-of-the-art performance while being significantly more efficient than prior leading methods. 
+
+**Abstract (ZH)**: 端到端自主驾驶系统通过减少信息损失和错误累积，提供了一种传统模块化管道的有前途的替代方案，有望同时提高 Mobility 和 Safety。然而，现有大多数端到端方法直接基于密集的鸟瞰视图 (BEV) 栅格特征生成计划，导致效率低下且规划意识有限。为了解决这些限制，我们提出了迭代 Proposal-centric 自主驾驶 (iPad)，这是一种将提案——一组候选未来计划——置于特征提取和辅助任务中心的新型框架。iPad 的核心是 ProFormer，这是一种 BEV 编码器，通过提案锚定注意力迭代细化提案及其相关特征，有效地融合多视图图像数据。此外，我们引入了两个轻量级的提案-centric 辅助任务——制图和预测——以最小的计算开销提高规划质量。在 NAVSIM 和 CARLA Bench2Drive 基准测试中，iPad 在性能上达到最新水平，同时比先前的领先方法更为高效。 
+
+---
+# Data Augmentation and Resolution Enhancement using GANs and Diffusion Models for Tree Segmentation 
+
+**Title (ZH)**: 使用生成对抗网络和扩散模型进行数据增强与分辨率提升的树段分割方法 
+
+**Authors**: Alessandro dos Santos Ferreira, Ana Paula Marques Ramos, José Marcato Junior, Wesley Nunes Gonçalves  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.15077)  
+
+**Abstract**: Urban forests play a key role in enhancing environmental quality and supporting biodiversity in cities. Mapping and monitoring these green spaces are crucial for urban planning and conservation, yet accurately detecting trees is challenging due to complex landscapes and the variability in image resolution caused by different satellite sensors or UAV flight altitudes. While deep learning architectures have shown promise in addressing these challenges, their effectiveness remains strongly dependent on the availability of large and manually labeled datasets, which are often expensive and difficult to obtain in sufficient quantity. In this work, we propose a novel pipeline that integrates domain adaptation with GANs and Diffusion models to enhance the quality of low-resolution aerial images. Our proposed pipeline enhances low-resolution imagery while preserving semantic content, enabling effective tree segmentation without requiring large volumes of manually annotated data. Leveraging models such as pix2pix, Real-ESRGAN, Latent Diffusion, and Stable Diffusion, we generate realistic and structurally consistent synthetic samples that expand the training dataset and unify scale across domains. This approach not only improves the robustness of segmentation models across different acquisition conditions but also provides a scalable and replicable solution for remote sensing scenarios with scarce annotation resources. Experimental results demonstrated an improvement of over 50% in IoU for low-resolution images, highlighting the effectiveness of our method compared to traditional pipelines. 
+
+**Abstract (ZH)**: 城市森林在提升城市环境质量和支持生物多样性方面发挥着关键作用。精确检测这些绿色空间对于城市规划和保护至关重要，但由于复杂景观和不同卫星传感器或无人机飞行高度引起的图像分辨率变化，准确检测树木仍然具有挑战性。尽管深度学习架构在应对这些挑战方面显示出潜力，但其有效性仍然强烈依赖于大型且手动标注的数据集，这类数据集往往成本高昂且难以获得。在本文中，我们提出了一种新的流程，将领域适应与GAN和扩散模型相结合，以提高低分辨率航拍图像的质量。我们提出的流程在保留语义内容的同时增强了低分辨率图像，从而在不需大量手动标注数据的情况下实现有效的树木分割。通过利用pix2pix、Real-ESRGAN、隐空间扩散和 Stable Diffusion等模型，我们生成了现实且结构一致的合成样本，扩展了训练数据集并统一了跨领域的尺度。这种方法不仅提高了分割模型在不同获取条件下的稳健性，还为标注资源稀缺的遥感场景提供了可扩展且可复制的解决方案。实验结果表明，低分辨率图像的IoU提高了50%以上，突显了我们方法相比于传统流程的有效性。 
+
+---
+# Colors Matter: AI-Driven Exploration of Human Feature Colors 
+
+**Title (ZH)**: 颜色很重要：AI 驱动的人类特征颜色探索 
+
+**Authors**: Rama Alyoubi, Taif Alharbi, Albatul Alghamdi, Yara Alshehri, Elham Alghamdi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.14931)  
+
+**Abstract**: This study presents a robust framework that leverages advanced imaging techniques and machine learning for feature extraction and classification of key human attributes-namely skin tone, hair color, iris color, and vein-based undertones. The system employs a multi-stage pipeline involving face detection, region segmentation, and dominant color extraction to isolate and analyze these features. Techniques such as X-means clustering, alongside perceptually uniform distance metrics like Delta E (CIEDE2000), are applied within both LAB and HSV color spaces to enhance the accuracy of color differentiation. For classification, the dominant tones of the skin, hair, and iris are extracted and matched to a custom tone scale, while vein analysis from wrist images enables undertone classification into "Warm" or "Cool" based on LAB differences. Each module uses targeted segmentation and color space transformations to ensure perceptual precision. The system achieves up to 80% accuracy in tone classification using the Delta E-HSV method with Gaussian blur, demonstrating reliable performance across varied lighting and image conditions. This work highlights the potential of AI-powered color analysis and feature extraction for delivering inclusive, precise, and nuanced classification, supporting applications in beauty technology, digital personalization, and visual analytics. 
+
+**Abstract (ZH)**: 本研究提出了一种稳健的框架，利用先进的成像技术和机器学习进行关键人体属性（如肤色、发色、虹膜色和静脉底色）的功能提取和分类。该系统采用脸部检测、区域分割和主导色彩提取的多阶段管道来隔离和分析这些特征。通过LAB和HSV颜色空间中的X-means聚类以及感知均匀的距离度量（如CIEDE2000的ΔE），提高色彩区分的准确性。在分类阶段，皮肤、发色和虹膜的主导色调被提取并与自定义色调尺度匹配，而手腕图像中的静脉分析通过LAB差异将底色分类为“暖”或“冷”。每个模块使用目标分割和颜色空间变换以确保感知精度。该系统使用高斯模糊和ΔE-HSV方法实现了高达80%的色调分类准确性，展示了在各种光照和图像条件下可靠的性能。本研究突显了基于AI的色彩分析和特征提取在实现包容性、精确性和细腻分类方面的潜力，支持美容技术、数字个性化和视觉分析等应用。 
+
+---
+# Kaleidoscope Gallery: Exploring Ethics and Generative AI Through Art 
+
+**Title (ZH)**: Kaleidoscope画廊：通过艺术探索生成式AI的伦理问题 
+
+**Authors**: Alayt Issak, Uttkarsh Narayan, Ramya Srinivasan, Erica Kleinman, Casper Harteveld  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.14758)  
+
+**Abstract**: Ethical theories and Generative AI (GenAI) models are dynamic concepts subject to continuous evolution. This paper investigates the visualization of ethics through a subset of GenAI models. We expand on the emerging field of Visual Ethics, using art as a form of critical inquiry and the metaphor of a kaleidoscope to invoke moral imagination. Through formative interviews with 10 ethics experts, we first establish a foundation of ethical theories. Our analysis reveals five families of ethical theories, which we then transform into images using the text-to-image (T2I) GenAI model. The resulting imagery, curated as Kaleidoscope Gallery and evaluated by the same experts, revealed eight themes that highlight how morality, society, and learned associations are central to ethical theories. We discuss implications for critically examining T2I models and present cautions and considerations. This work contributes to examining ethical theories as foundational knowledge that interrogates GenAI models as socio-technical systems. 
+
+**Abstract (ZH)**: 伦理理论与生成人工智能（GenAI）模型是动态概念，处于持续演化之中。本文通过GenAI模型的子集考察了伦理的可视化。我们拓展了正在兴起的视觉伦理领域，使用艺术作为批判性探究的形式，并以万花筒为隐喻激发道德想象。通过对10位伦理专家的形成性访谈，我们首先建立了伦理理论的基础。我们的分析揭示了五大家族的伦理理论，并使用文本到图像（T2I）GenAI模型将这些理论转变为图像。这些生成的图像经过专家策展并命名为万花筒画廊，并在专家评审中揭示了八个主题，这些主题突出了道德观念、社会因素和学习关联在伦理理论中的核心地位。我们讨论了对T2I模型进行批判性审视的意义，并提出了警告和考虑。本工作为将伦理理论作为基础知识来审视GenAI模型作为社会技术系统的特性作出了贡献。 
+
+---
+# Communication-Efficient Diffusion Denoising Parallelization via Reuse-then-Predict Mechanism 
+
+**Title (ZH)**: 通信高效的利用重用-预测机制的扩散去噪并行化 
+
+**Authors**: Kunyun Wang, Bohan Li, Kai Yu, Minyi Guo, Jieru Zhao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.14741)  
+
+**Abstract**: Diffusion models have emerged as a powerful class of generative models across various modalities, including image, video, and audio synthesis. However, their deployment is often limited by significant inference latency, primarily due to the inherently sequential nature of the denoising process. While existing parallelization strategies attempt to accelerate inference by distributing computation across multiple devices, they typically incur high communication overhead, hindering deployment on commercial hardware. To address this challenge, we propose \textbf{ParaStep}, a novel parallelization method based on a reuse-then-predict mechanism that parallelizes diffusion inference by exploiting similarity between adjacent denoising steps. Unlike prior approaches that rely on layer-wise or stage-wise communication, ParaStep employs lightweight, step-wise communication, substantially reducing overhead. ParaStep achieves end-to-end speedups of up to \textbf{3.88}$\times$ on SVD, \textbf{2.43}$\times$ on CogVideoX-2b, and \textbf{6.56}$\times$ on AudioLDM2-large, while maintaining generation quality. These results highlight ParaStep as a scalable and communication-efficient solution for accelerating diffusion inference, particularly in bandwidth-constrained environments. 
+
+**Abstract (ZH)**: 基于reuse-then-predict机制的ParaStep：一种高效的扩散模型并行化方法 
+
+---
+# MedBLIP: Fine-tuning BLIP for Medical Image Captioning 
+
+**Title (ZH)**: MedBLIP: 细化BLIP以用于医学图像标注 
+
+**Authors**: Manshi Limbu, Diwita Banerjee  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.14726)  
+
+**Abstract**: Medical image captioning is a challenging task that requires generating clinically accurate and semantically meaningful descriptions of radiology images. While recent vision-language models (VLMs) such as BLIP, BLIP2, Gemini and ViT-GPT2 show strong performance on natural image datasets, they often produce generic or imprecise captions when applied to specialized medical domains. In this project, we explore the effectiveness of fine-tuning the BLIP model on the ROCO dataset for improved radiology captioning. We compare the fine-tuned BLIP against its zero-shot version, BLIP-2 base, BLIP-2 Instruct and a ViT-GPT2 transformer baseline. Our results demonstrate that domain-specific fine-tuning on BLIP significantly improves performance across both quantitative and qualitative evaluation metrics. We also visualize decoder cross-attention maps to assess interpretability and conduct an ablation study to evaluate the contributions of encoder-only and decoder-only fine-tuning. Our findings highlight the importance of targeted adaptation for medical applications and suggest that decoder-only fine-tuning (encoder-frozen) offers a strong performance baseline with 5% lower training time than full fine-tuning, while full model fine-tuning still yields the best results overall. 
+
+**Abstract (ZH)**: 医学图像 captioning 是一项具有挑战性的任务，要求生成临床准确且语义有意义的放射学图像描述。尽管最近的视觉-语言模型（VLMs）如 BLIP、BLIP2、Gemini 和 ViT-GPT2 在自然图像数据集上表现出强大的性能，但当应用于专业医疗领域时，它们往往会产生通用或不精确的描述。在本项目中，我们研究了在 ROCO 数据集上微调 BLIP 模型以提高放射学 captioning 的有效性。我们将微调后的 BLIP 与零样本版本 BLIP-2 base、BLIP-2 Instruct 以及 ViT-GPT2 变体基线进行比较。我们的结果表明，针对领域进行的 BLIP 微调在定量和定性评估指标上均显著提升性能。我们还可视化了解码器交叉注意力图以评估可解释性，并进行了消融研究以评估仅编码器和仅解码器微调的贡献。我们的发现强调了针对医疗应用的目标适应的重要性，并表明仅解码器微调（编码器冻结）提供了较低训练时间（降低5%）的强基准性能，而整体模型微调仍然在总体上提供最佳结果。 
+
+---
+# MSVIT: Improving Spiking Vision Transformer Using Multi-scale Attention Fusion 
+
+**Title (ZH)**: MSVIT：使用多尺度注意力融合改进脉冲视觉变换器 
+
+**Authors**: Wei Hua, Chenlin Zhou, Jibin Wu, Yansong Chua, Yangyang Shu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.14719)  
+
+**Abstract**: The combination of Spiking Neural Networks(SNNs) with Vision Transformer architectures has attracted significant attention due to the great potential for energy-efficient and high-performance computing paradigms. However, a substantial performance gap still exists between SNN-based and ANN-based transformer architectures. While existing methods propose spiking self-attention mechanisms that are successfully combined with SNNs, the overall architectures proposed by these methods suffer from a bottleneck in effectively extracting features from different image scales. In this paper, we address this issue and propose MSVIT, a novel spike-driven Transformer architecture, which firstly uses multi-scale spiking attention (MSSA) to enrich the capability of spiking attention blocks. We validate our approach across various main data sets. The experimental results show that MSVIT outperforms existing SNN-based models, positioning itself as a state-of-the-art solution among SNN-transformer architectures. The codes are available at this https URL. 
+
+**Abstract (ZH)**: 基于Sparking Neural Networks与Vision Transformer架构的结合因其实现高效能计算的 potential 而受到广泛关注，然而基于SNN和基于ANN的Transformer架构之间仍然存在显著的性能差距。尽管现有方法提出了一种成功的spiking自注意机制与其结合，但这些方法的整体架构仍然在从不同图像尺度中有效提取特征方面存在瓶颈。本文解决了这一问题，提出了一种新型的spike驱动Transformer架构MSVIT，该架构首次使用多尺度spiking注意力（MSSA）以丰富spiking注意力模块的能力。我们在多种主要数据集上验证了该方法。实验结果表明，MSVIT 在基于SNN的模型中表现出色，是SNN-Transformer架构中的先进解决方案。代码见此链接。 
+
+---
+# Enhancing Shape Perception and Segmentation Consistency for Industrial Image Inspection 
+
+**Title (ZH)**: 增强工业图像检测中的形状感知和分割一致性 
+
+**Authors**: Guoxuan Mao, Ting Cao, Ziyang Li, Yuan Dong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.14718)  
+
+**Abstract**: Semantic segmentation stands as a pivotal research focus in computer vision. In the context of industrial image inspection, conventional semantic segmentation models fail to maintain the segmentation consistency of fixed components across varying contextual environments due to a lack of perception of object contours. Given the real-time constraints and limited computing capability of industrial image detection machines, it is also necessary to create efficient models to reduce computational complexity. In this work, a Shape-Aware Efficient Network (SPENet) is proposed, which focuses on the shapes of objects to achieve excellent segmentation consistency by separately supervising the extraction of boundary and body information from images. In SPENet, a novel method is introduced for describing fuzzy boundaries to better adapt to real-world scenarios named Variable Boundary Domain (VBD). Additionally, a new metric, Consistency Mean Square Error(CMSE), is proposed to measure segmentation consistency for fixed components. Our approach attains the best segmentation accuracy and competitive speed on our dataset, showcasing significant advantages in CMSE among numerous state-of-the-art real-time segmentation networks, achieving a reduction of over 50% compared to the previously top-performing models. 
+
+**Abstract (ZH)**: 面向工业图像检测的形状感知高效网络（SPENet）研究：实现固定组件的一致性分割 
+
+---
+# FastCar: Cache Attentive Replay for Fast Auto-Regressive Video Generation on the Edge 
+
+**Title (ZH)**: FastCar：基于缓存注意力的快速自回归视频生成边缘计算方法 
+
+**Authors**: Xuan Shen, Weize Ma, Yufa Zhou, Enhao Tang, Yanyue Xie, Zhengang Li, Yifan Gong, Quanyi Wang, Henghui Ding, Yiwei Wang, Yanzhi Wang, Pu Zhao, Jun Lin, Jiuxiang Gu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.14709)  
+
+**Abstract**: Auto-regressive (AR) models, initially successful in language generation, have recently shown promise in visual generation tasks due to their superior sampling efficiency. Unlike image generation, video generation requires a substantially larger number of tokens to produce coherent temporal frames, resulting in significant overhead during the decoding phase. Our key observations are: (i) MLP modules in the decode phase dominate the inference latency, and (ii) there exists high temporal redundancy in MLP outputs of adjacent frames. In this paper, we propose the \textbf{FastCar} framework to accelerate the decode phase for the AR video generation by exploring the temporal redundancy. The Temporal Attention Score (TAS) is proposed to determine whether to apply the replay strategy (\textit{i.e.}, reusing cached MLP outputs from the previous frame to reduce redundant computations) with detailed theoretical analysis and justification. Also, we develop a hardware accelerator on FPGA with Dynamic Resource Scheduling (DRS) based on TAS to enable better resource utilization and faster inference. Experimental results demonstrate the effectiveness of our method, which outperforms traditional sparse attention approaches with more than 2.1x decoding speedup and higher energy efficiency on the edge. Furthermore, by combining FastCar and sparse attention, FastCar can boost the performance of sparse attention with alleviated drifting, demonstrating our unique advantages for high-resolution and long-duration video generation. Code: this https URL 
+
+**Abstract (ZH)**: 自回归（AR）模型在语言生成任务中最初表现出色，近期在视觉生成任务中也展现出潜力，得益于其优越的采样效率。与图像生成不同，视频生成需要生成连贯的时序帧，这导致解码阶段产生显著的计算负担。我们的主要观察是：（i）解码阶段的MLP模块主导了推理延迟，（ii）相邻帧的MLP输出中存在较高的时序冗余。本文提出了FastCar框架，通过探索时序冗余来加速AR视频生成的解码阶段。我们提出了时序注意力得分（TAS），并结合详细的理论分析和证明来决定是否采用重播策略（即将前一帧缓存的MLP输出重用以减少冗余计算）。此外，我们通过基于TAS的动态资源调度（DRS）在FPGA上开发了硬件加速器，以实现更好的资源利用和更快的推理速度。实验结果表明，我们的方法在边缘设备上比传统的稀疏注意力方法具有超过2.1倍的解码加速和更高的能效。此外，FastCar与稀疏注意力结合使用时，可以缓解稀疏注意力的漂移问题，显著提升了高分辨率和长时间段视频生成的性能。代码: this https URL 
+
+---
+# DraftAttention: Fast Video Diffusion via Low-Resolution Attention Guidance 
+
+**Title (ZH)**: DraftAttention: 快速视频扩散通过低分辨率注意力引导 
+
+**Authors**: Xuan Shen, Chenxia Han, Yufa Zhou, Yanyue Xie, Yifan Gong, Quanyi Wang, Yiwei Wang, Yanzhi Wang, Pu Zhao, Jiuxiang Gu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.14708)  
+
+**Abstract**: Diffusion transformer-based video generation models (DiTs) have recently attracted widespread attention for their excellent generation quality. However, their computational cost remains a major bottleneck-attention alone accounts for over 80% of total latency, and generating just 8 seconds of 720p video takes tens of minutes-posing serious challenges to practical application and scalability. To address this, we propose the DraftAttention, a training-free framework for the acceleration of video diffusion transformers with dynamic sparse attention on GPUs. We apply down-sampling to each feature map across frames in the compressed latent space, enabling a higher-level receptive field over the latent composed of hundreds of thousands of tokens. The low-resolution draft attention map, derived from draft query and key, exposes redundancy both spatially within each feature map and temporally across frames. We reorder the query, key, and value based on the draft attention map to guide the sparse attention computation in full resolution, and subsequently restore their original order after the attention computation. This reordering enables structured sparsity that aligns with hardware-optimized execution. Our theoretical analysis demonstrates that the low-resolution draft attention closely approximates the full attention, providing reliable guidance for constructing accurate sparse attention. Experimental results show that our method outperforms existing sparse attention approaches in video generation quality and achieves up to 1.75x end-to-end speedup on GPUs. Code: this https URL 
+
+**Abstract (ZH)**: 基于扩散变换器的视频生成模型（DiTs）由于其出色的生成质量 recently 吸引了广泛关注。然而，其计算成本仍然是一个主要瓶颈——仅注意力机制就占去了超过 80% 的总延迟，生成 720p 视频的 8 秒内容需要几十分钟——这对实际应用和可扩展性构成了严重挑战。为了解决这个问题，我们提出了一种无训练框架 DraftAttention，该框架结合动态稀疏注意机制在 GPU 上加速视频扩散变换器。我们对压缩潜空间中每一帧的特征图进行下采样，从而在包含数十万个标记的潜空间中获得更高的感受野。由草图查询和键衍生出的低分辨率草图注意图在空间范围内显示了每个特征图内的冗余性，并在时间范围跨帧之间显示了冗余性。根据草图注意图重新排序查询、键和值，以引导全分辨率下的稀疏注意计算，在注意计算后恢复其原始顺序。这种重新排序能够与硬件优化的执行相一致，提供结构化稀疏性。我们的理论分析表明，低分辨率草图注意图高度近似于全注意，为构建准确的稀疏注意提供了可靠指导。实验结果表明，我们的方法在视频生成质量上优于现有稀疏注意方法，并在 GPU 上实现了最高达 1.75 倍的端到端加速。代码：这个 https URL。 
+
+---
