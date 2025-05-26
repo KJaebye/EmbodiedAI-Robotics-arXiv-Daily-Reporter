@@ -1,0 +1,247 @@
+# Object Classification Utilizing Neuromorphic Proprioceptive Signals in Active Exploration: Validated on a Soft Anthropomorphic Hand 
+
+**Title (ZH)**: 利用神经形态本体感受信号在主动探索中进行物体分类：以软类人手为例验证 
+
+**Authors**: Fengyi Wang, Xiangyu Fu, Nitish Thakor, Gordon Cheng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.17738)  
+
+**Abstract**: Proprioception, a key sensory modality in haptic perception, plays a vital role in perceiving the 3D structure of objects by providing feedback on the position and movement of body parts. The restoration of proprioceptive sensation is crucial for enabling in-hand manipulation and natural control in the prosthetic hand. Despite its importance, proprioceptive sensation is relatively unexplored in an artificial system. In this work, we introduce a novel platform that integrates a soft anthropomorphic robot hand (QB SoftHand) with flexible proprioceptive sensors and a classifier that utilizes a hybrid spiking neural network with different types of spiking neurons to interpret neuromorphic proprioceptive signals encoded by a biological muscle spindle model. The encoding scheme and the classifier are implemented and tested on the datasets we collected in the active exploration of ten objects from the YCB benchmark. Our results indicate that the classifier achieves more accurate inferences than existing learning approaches, especially in the early stage of the exploration. This system holds the potential for development in the areas of haptic feedback and neural prosthetics. 
+
+**Abstract (ZH)**: 本体感受，作为触觉感知的关键感觉模态，通过提供身体部位位置和运动的反馈，在感知物体的3D结构中发挥着重要作用。恢复本体感受知觉对于在假手内进行物体操控和实现自然控制至关重要。尽管其重要性不言而喻，但本体感受在人工系统中的研究相对较少。本文介绍了一个新的平台，该平台结合了软类人机器人手（QB SoftHand）和柔性的本体感觉传感器，以及一个利用混合神经脉冲网络和不同类型的神经脉冲细胞进行自然界本体感觉信号解码的分类器。该编码方案和分类器已在我们通过主动探索十个YCB基准物体收集的数据集中实现和测试。我们的结果表明，分类器在探索的早期阶段比现有学习方法提供了更准确的推断。该系统在触觉反馈和神经假肢领域具有发展潜力。 
+
+---
+# A Bio-mimetic Neuromorphic Model for Heat-evoked Nociceptive Withdrawal Reflex in Upper Limb 
+
+**Title (ZH)**: 生物仿生类神经模型在上肢热诱发痛觉撤离反射中的应用 
+
+**Authors**: Fengyi Wang, J. Rogelio Guadarrama Olvera, Nitish Thako, Gordon Cheng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.17724)  
+
+**Abstract**: The nociceptive withdrawal reflex (NWR) is a mechanism to mediate interactions and protect the body from damage in a potentially dangerous environment. To better convey warning signals to users of prosthetic arms or autonomous robots and protect them by triggering a proper NWR, it is useful to use a biological representation of temperature information for fast and effective processing. In this work, we present a neuromorphic spiking network for heat-evoked NWR by mimicking the structure and encoding scheme of the reflex arc. The network is trained with the bio-plausible reward modulated spike timing-dependent plasticity learning algorithm. We evaluated the proposed model and three other methods in recent studies that trigger NWR in an experiment with radiant heat. We found that only the neuromorphic model exhibits the spatial summation (SS) effect and temporal summation (TS) effect similar to humans and can encode the reflex strength matching the intensity of the stimulus in the relative spike latency online. The improved bio-plausibility of this neuromorphic model could improve sensory feedback in neural prostheses. 
+
+**Abstract (ZH)**: 基于神经形态尖峰网络的热诱发痛觉回避反射研究 
+
+---
+# DTRT: Enhancing Human Intent Estimation and Role Allocation for Physical Human-Robot Collaboration 
+
+**Title (ZH)**: DTRT: 提升物理人机协作中的人类意图估计与角色分配 
+
+**Authors**: Haotian Liu, Yuchuang Tong, Zhengtao Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.17490)  
+
+**Abstract**: In physical Human-Robot Collaboration (pHRC), accurate human intent estimation and rational human-robot role allocation are crucial for safe and efficient assistance. Existing methods that rely on short-term motion data for intention estimation lack multi-step prediction capabilities, hindering their ability to sense intent changes and adjust human-robot assignments autonomously, resulting in potential discrepancies. To address these issues, we propose a Dual Transformer-based Robot Trajectron (DTRT) featuring a hierarchical architecture, which harnesses human-guided motion and force data to rapidly capture human intent changes, enabling accurate trajectory predictions and dynamic robot behavior adjustments for effective collaboration. Specifically, human intent estimation in DTRT uses two Transformer-based Conditional Variational Autoencoders (CVAEs), incorporating robot motion data in obstacle-free case with human-guided trajectory and force for obstacle avoidance. Additionally, Differential Cooperative Game Theory (DCGT) is employed to synthesize predictions based on human-applied forces, ensuring robot behavior align with human intention. Compared to state-of-the-art (SOTA) methods, DTRT incorporates human dynamics into long-term prediction, providing an accurate understanding of intention and enabling rational role allocation, achieving robot autonomy and maneuverability. Experiments demonstrate DTRT's accurate intent estimation and superior collaboration performance. 
+
+**Abstract (ZH)**: 基于物理的人机协作中的人意图估计与合理的人机角色分配对于安全高效的辅助至关重要。现有的依赖短期运动数据进行意图估计的方法缺乏多步预测能力，阻碍了其自主感知意图变化和调整人机分配的能力，导致潜在的不一致。为了解决这些问题，我们提出了一种基于双变换器的机器人轨迹推理机（DTRT），该模型具有分层架构，利用人引导的运动和力数据快速捕捉人类意图的变化，实现精确的轨迹预测和动态的机器人行为调整，以实现有效的协作。具体而言，在DTRT中使用两个基于变换器的条件变分自编码器（CVAEs）进行人类意图估计，在无障碍情况下结合机器人运动数据和人引导的轨迹及力以避障。此外，采用差分合作博弈理论（DCGT）基于人类施加的力量合成预测，确保机器人行为与人类意图相符。与现有最先进的方法相比，DTRT将人类动力学融入长期预测中，提供对意图的准确理解，并实现合理的人机角色分配，达到机器人自主性和机动性。实验结果表明，DTRT在意图估计和协作性能方面更为准确和优越。 
+
+---
+# Dynamic Manipulation of Deformable Objects in 3D: Simulation, Benchmark and Learning Strategy 
+
+**Title (ZH)**: 三维可变形对象的动态操纵：仿真、基准测试与学习策略 
+
+**Authors**: Guanzhou Lan, Yuqi Yang, Anup Teejo Mathew, Feiping Nie, Rong Wang, Xuelong Li, Federico Renda, Bin Zhao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.17434)  
+
+**Abstract**: Goal-conditioned dynamic manipulation is inherently challenging due to complex system dynamics and stringent task constraints, particularly in deformable object scenarios characterized by high degrees of freedom and underactuation. Prior methods often simplify the problem to low-speed or 2D settings, limiting their applicability to real-world 3D tasks. In this work, we explore 3D goal-conditioned rope manipulation as a representative challenge. To mitigate data scarcity, we introduce a novel simulation framework and benchmark grounded in reduced-order dynamics, which enables compact state representation and facilitates efficient policy learning. Building on this, we propose Dynamics Informed Diffusion Policy (DIDP), a framework that integrates imitation pretraining with physics-informed test-time adaptation. First, we design a diffusion policy that learns inverse dynamics within the reduced-order space, enabling imitation learning to move beyond naïve data fitting and capture the underlying physical structure. Second, we propose a physics-informed test-time adaptation scheme that imposes kinematic boundary conditions and structured dynamics priors on the diffusion process, ensuring consistency and reliability in manipulation execution. Extensive experiments validate the proposed approach, demonstrating strong performance in terms of accuracy and robustness in the learned policy. 
+
+**Abstract (ZH)**: 基于动力学指导的三维绳索操作是一项由于复杂系统动力学和严格的任务约束而固有的挑战性任务，尤其是在自由度高且欠驱动的变形物体场景中。先前的方法往往将问题简化为低速或二维设置，限制了它们在真实世界三维任务中的适用性。在本工作中，我们探索三维目标条件下的绳索操作作为具有代表性的挑战。为缓解数据稀缺问题，我们引入了一种基于降阶动力学的新型仿真框架和基准，这能够实现紧凑的状态表示并促进高效的策略学习。在此基础上，我们提出了动力学指导扩散策略（DIDP）框架，该框架结合了模仿预训练与基于物理的测试时适应。首先，我们设计了一种扩散策略，在降阶空间中学习逆动力学，从而使模仿学习能够超越简单的数据拟合并捕获潜在的物理结构。其次，我们提出了一种基于物理的测试时适应方案，在扩散过程中施加动力学边界条件和结构化动力学先验，确保操作执行的一致性和可靠性。广泛的实验验证了所提出的方案，在学习策略的准确性和鲁棒性方面表现出强劲性能。 
+
+---
+# Bootstrapping Imitation Learning for Long-horizon Manipulation via Hierarchical Data Collection Space 
+
+**Title (ZH)**: 基于分层数据收集空间的长时滞操作imitation learning自举方法 
+
+**Authors**: Jinrong Yang, Kexun Chen, Zhuoling Li, Shengkai Wu, Yong Zhao, Liangliang Ren, Wenqiu Luo, Chaohui Shang, Meiyu Zhi, Linfeng Gao, Mingshan Sun, Hui Cheng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.17389)  
+
+**Abstract**: Imitation learning (IL) with human demonstrations is a promising method for robotic manipulation tasks. While minimal demonstrations enable robotic action execution, achieving high success rates and generalization requires high cost, e.g., continuously adding data or incrementally conducting human-in-loop processes with complex hardware/software systems. In this paper, we rethink the state/action space of the data collection pipeline as well as the underlying factors responsible for the prediction of non-robust actions. To this end, we introduce a Hierarchical Data Collection Space (HD-Space) for robotic imitation learning, a simple data collection scheme, endowing the model to train with proactive and high-quality data. Specifically, We segment the fine manipulation task into multiple key atomic tasks from a high-level perspective and design atomic state/action spaces for human demonstrations, aiming to generate robust IL data. We conduct empirical evaluations across two simulated and five real-world long-horizon manipulation tasks and demonstrate that IL policy training with HD-Space-based data can achieve significantly enhanced policy performance. HD-Space allows the use of a small amount of demonstration data to train a more powerful policy, particularly for long-horizon manipulation tasks. We aim for HD-Space to offer insights into optimizing data quality and guiding data scaling. project page: this https URL. 
+
+**Abstract (ZH)**: 基于人类示范的层次化数据收集空间的机器人模仿学习 
+
+---
+# ScanBot: Towards Intelligent Surface Scanning in Embodied Robotic Systems 
+
+**Title (ZH)**: ScanBot: 让虚拟智能体表面扫描更智能的研究 
+
+**Authors**: Zhiling Chen, Yang Zhang, Fardin Jalil Piran, Qianyu Zhou, Jiong Tang, Farhad Imani  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.17295)  
+
+**Abstract**: We introduce ScanBot, a novel dataset designed for instruction-conditioned, high-precision surface scanning in robotic systems. In contrast to existing robot learning datasets that focus on coarse tasks such as grasping, navigation, or dialogue, ScanBot targets the high-precision demands of industrial laser scanning, where sub-millimeter path continuity and parameter stability are critical. The dataset covers laser scanning trajectories executed by a robot across 12 diverse objects and 6 task types, including full-surface scans, geometry-focused regions, spatially referenced parts, functionally relevant structures, defect inspection, and comparative analysis. Each scan is guided by natural language instructions and paired with synchronized RGB, depth, and laser profiles, as well as robot pose and joint states. Despite recent progress, existing vision-language action (VLA) models still fail to generate stable scanning trajectories under fine-grained instructions and real-world precision demands. To investigate this limitation, we benchmark a range of multimodal large language models (MLLMs) across the full perception-planning-execution loop, revealing persistent challenges in instruction-following under realistic constraints. 
+
+**Abstract (ZH)**: 我们介绍ScanBot，一个用于指令条件下的高精度表面扫描的新颖数据集。与现有的专注于抓取、导航或对话等粗粒度任务的机器人学习数据集不同，ScanBot 针对工业激光扫描的高精度需求，其中毫米级路径连续性和参数稳定性至关重要。该数据集涵盖了机器人在12种不同对象和6种任务类型上执行的激光扫描轨迹，包括完整表面扫描、几何区域扫描、空间参考部件、功能相关结构、缺陷检测和对比分析。每项扫描由自然语言指令引导，并配有同步的RGB、深度和激光配置文件，以及机器人姿态和关节状态。尽管最近取得了进展，现有的视觉-语言行动（VLA）模型仍无法在细粒度指令和现实世界的高精度需求下生成稳定的扫描轨迹。为了探讨这一限制，我们在感知-规划-执行的完整流程中对一系列多模态大型语言模型（MLLMs）进行了基准测试，揭示了在实际约束条件下指令遵循的持续挑战。 
+
+---
+# AI-Driven Robotics for Free-Space Optics 
+
+**Title (ZH)**: AI驱动的自由空间光学机器人技术 
+
+**Authors**: Shiekh Zia Uddin, Sachin Vaidya, Shrish Choudhary, Zhuo Chen, Raafat K. Salib, Luke Huang, Dirk R. Englund, Marin Soljačić  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.17985)  
+
+**Abstract**: Tabletop optical experiments are foundational to research in many areas of science, including photonics, quantum optics, materials science, metrology, and biomedical imaging. However these experiments remain fundamentally reliant on manual design, assembly, and alignment, limiting throughput and reproducibility. Optics currently lacks generalizable robotic systems capable of operating across a diverse range of setups in realistic laboratory environments. Here we present OptoMate, an autonomous platform that integrates generative AI, computer vision, and precision robotics to enable automation of free-space optics experiments. Our platform interprets user-defined goals to generate valid optical setups using a fine-tuned large language model (LLM), assembles the setup via robotic pick-and-place with sub-millimeter accuracy, and performs fine alignment using a robot-deployable tool. The system then executes a range of automated measurements, including laser beam characterization, polarization mapping, and spectroscopy tasks. This work demonstrates the first flexible, AI-driven automation platform for optics, offering a path toward remote operation, cloud labs, and high-throughput discovery in the optical sciences. 
+
+**Abstract (ZH)**: 桌面光学实验是许多科学领域，包括光子学、量子光学、材料科学、计量学和生物医学成像研究的基础。然而，这些实验仍然主要依赖于手工设计、组装和对准，限制了 throughput 和可再现性。光学目前缺乏能够在现实实验室环境中跨多种设置进行通用操作的机器人系统。本文介绍了一种自主平台 OptoMate，该平台整合生成式 AI、计算机视觉和精密机器人技术，以实现自由空间光学实验的自动化。该平台根据用户定义的目标，使用微调的大语言模型生成有效的光学设置，通过机器人拾放组装设置，并使用机器人部署工具进行精细对准。然后，该系统执行一系列自动化测量任务，包括激光束表征、偏振映射和光谱学任务。本研究展示了第一个灵活的、由 AI 驱动的光学自动化平台，为远程操作、云实验室和光学科学中的高通量发现提供了途径。 
+
+---
+# Feasible Action Space Reduction for Quantifying Causal Responsibility in Continuous Spatial Interactions 
+
+**Title (ZH)**: 连续空间交互中因果责任量化可行动作空间减维 
+
+**Authors**: Ashwin George, Luciano Cavalcante Siebert, David A. Abbink, Arkady Zgonnikov  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.17739)  
+
+**Abstract**: Understanding the causal influence of one agent on another agent is crucial for safely deploying artificially intelligent systems such as automated vehicles and mobile robots into human-inhabited environments. Existing models of causal responsibility deal with simplified abstractions of scenarios with discrete actions, thus, limiting real-world use when understanding responsibility in spatial interactions. Based on the assumption that spatially interacting agents are embedded in a scene and must follow an action at each instant, Feasible Action-Space Reduction (FeAR) was proposed as a metric for causal responsibility in a grid-world setting with discrete actions. Since real-world interactions involve continuous action spaces, this paper proposes a formulation of the FeAR metric for measuring causal responsibility in space-continuous interactions. We illustrate the utility of the metric in prototypical space-sharing conflicts, and showcase its applications for analysing backward-looking responsibility and in estimating forward-looking responsibility to guide agent decision making. Our results highlight the potential of the FeAR metric for designing and engineering artificial agents, as well as for assessing the responsibility of agents around humans. 
+
+**Abstract (ZH)**: 理解一个智能体对另一个智能体的因果影响对于安全部署自动车辆和移动机器人等人工智能系统进入人类居住环境至关重要。现有因果责任模型处理的是具有离散动作的简化场景抽象，这限制了在理解空间交互责任时的实际应用。基于空间交互智能体嵌入场景并在每一时刻必须采取行动的假设，提出了可行动作空间缩减（FeAS）作为网格世界中离散动作环境下的因果责任度量标准。由于实际交互涉及连续动作空间，本文提出了一个在连续空间交互中衡量因果责任的FeAS度量标准的建模方法。我们通过典型的空间共享冲突示例展示了该度量标准的应用价值，并展示了其在分析后向责任和估计前瞻性责任以指导智能体决策中的应用。我们的研究结果突显了FeAS度量标准在设计和工程化人工智能系统以及评估人类周围智能体的责任方面的潜在价值。 
+
+---
+# T2I-Eval-R1: Reinforcement Learning-Driven Reasoning for Interpretable Text-to-Image Evaluation 
+
+**Title (ZH)**: T2I-Eval-R1: 基于强化学习的可解释文本到图像评估推理 
+
+**Authors**: Zi-Ao Ma, Tian Lan, Rong-Cheng Tu, Shu-Hang Liu, Heyan Huang, Zhijing Wu, Chen Xu, Xian-Ling Mao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.17897)  
+
+**Abstract**: The rapid progress in diffusion-based text-to-image (T2I) generation has created an urgent need for interpretable automatic evaluation methods that can assess the quality of generated images, therefore reducing the human annotation burden. To reduce the prohibitive cost of relying on commercial models for large-scale evaluation, and to improve the reasoning capabilities of open-source models, recent research has explored supervised fine-tuning (SFT) of multimodal large language models (MLLMs) as dedicated T2I evaluators. However, SFT approaches typically rely on high-quality critique datasets, which are either generated by proprietary LLMs-with potential issues of bias and inconsistency-or annotated by humans at high cost, limiting their scalability and generalization. To address these limitations, we propose T2I-Eval-R1, a novel reinforcement learning framework that trains open-source MLLMs using only coarse-grained quality scores, thereby avoiding the need for annotating high-quality interpretable evaluation rationale. Our approach integrates Group Relative Policy Optimization (GRPO) into the instruction-tuning process, enabling models to generate both scalar scores and interpretable reasoning chains with only easy accessible annotated judgment scores or preferences. Furthermore, we introduce a continuous reward formulation that encourages score diversity and provides stable optimization signals, leading to more robust and discriminative evaluation behavior. Experimental results on three established T2I meta-evaluation benchmarks demonstrate that T2I-Eval-R1 achieves significantly higher alignment with human assessments and offers more accurate interpretable score rationales compared to strong baseline methods. 
+
+**Abstract (ZH)**: 基于扩散的文本到图像生成的快速进展迫切需要可解释的自动评估方法，以评估生成图像的质量，从而减少人工标注的负担。为了降低依赖商业模型进行大规模评估的高昂成本，并提高开源模型的推理能力，近期研究探索了为多模态大语言模型进行监督微调（SFT），以专用的文本到图像评估器。然而，SFT方法通常依赖于高质量的批评数据集，这些数据集要么由专有LLM生成（可能存在偏见和不一致性的问题），要么由人工高成本标注，这限制了其可扩展性和泛化能力。为了解决这些限制，我们提出了T2I-Eval-R1，这是一种新颖的强化学习框架，仅使用粗粒度的质量评分对开源MLLM进行训练，从而避免了标注高质量的可解释评估理据的需要。我们的方法将Group Relative Policy Optimization (GRPO) 集成到指令调优过程中，使模型能够仅使用易获取的标记判断评分或偏好生成标量评分和可解释的推理链。此外，我们引入了一种连续的奖励公式，鼓励评分多样性并提供稳定的优化信号，从而导致更具鲁棒性和区分性的评估行为。在三个标准的文本到图像元评估基准上的实验结果表明，T2I-Eval-R1在与人类评估的对齐度和提供准确的可解释评分理据方面显著优于强基线方法。 
+
+---
+# Formalizing Embeddedness Failures in Universal Artificial Intelligence 
+
+**Title (ZH)**: 嵌入失败在通用人工智能中的形式化 
+
+**Authors**: Cole Wyeth, Marcus Hutter  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.17882)  
+
+**Abstract**: We rigorously discuss the commonly asserted failures of the AIXI reinforcement learning agent as a model of embedded agency. We attempt to formalize these failure modes and prove that they occur within the framework of universal artificial intelligence, focusing on a variant of AIXI that models the joint action/percept history as drawn from the universal distribution. We also evaluate the progress that has been made towards a successful theory of embedded agency based on variants of the AIXI agent. 
+
+**Abstract (ZH)**: 我们严格探讨了作为嵌入式代理模型的AIXI强化学习代理所普遍宣称的失败模式。我们尝试形式化这些失败模式，并在通用人工智能框架内证明它们的发生，重点是AIXI的一种变体，该变体将联合动作/感知历史视为来自通用分布的抽样。我们还评估了基于AIXI代理变体构建嵌入式代理成功的理论进展。 
+
+---
+# Knot So Simple: A Minimalistic Environment for Spatial Reasoning 
+
+**Title (ZH)**: 结不那么简单：一个简约的空间推理环境 
+
+**Authors**: Zizhao Chen, Yoav Artzi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.18028)  
+
+**Abstract**: We propose KnotGym, an interactive environment for complex, spatial reasoning and manipulation. KnotGym includes goal-oriented rope manipulation tasks with varying levels of complexity, all requiring acting from pure image observations. Tasks are defined along a clear and quantifiable axis of complexity based on the number of knot crossings, creating a natural generalization test. KnotGym has a simple observation space, allowing for scalable development, yet it highlights core challenges in integrating acute perception, spatial reasoning, and grounded manipulation. We evaluate methods of different classes, including model-based RL, model-predictive control, and chain-of-thought reasoning, and illustrate the challenges KnotGym presents. KnotGym is available at this https URL. 
+
+**Abstract (ZH)**: 我们提出KnotGym，一种用于复杂空间 reasoning 和 manipulation 的交互式环境。 
+
+---
+# ADLGen: Synthesizing Symbolic, Event-Triggered Sensor Sequences for Human Activity Modeling 
+
+**Title (ZH)**: ADLGen: 生成符号化、事件触发的传感器序列以用于人类活动建模 
+
+**Authors**: Weihang You, Hanqi Jiang, Zishuai Liu, Zihang Xie, Tianming Liu, Jin Lu, Fei Dou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.17987)  
+
+**Abstract**: Real world collection of Activities of Daily Living data is challenging due to privacy concerns, costly deployment and labeling, and the inherent sparsity and imbalance of human behavior. We present ADLGen, a generative framework specifically designed to synthesize realistic, event triggered, and symbolic sensor sequences for ambient assistive environments. ADLGen integrates a decoder only Transformer with sign based symbolic temporal encoding, and a context and layout aware sampling mechanism to guide generation toward semantically rich and physically plausible sensor event sequences. To enhance semantic fidelity and correct structural inconsistencies, we further incorporate a large language model into an automatic generate evaluate refine loop, which verifies logical, behavioral, and temporal coherence and generates correction rules without manual intervention or environment specific tuning. Through comprehensive experiments with novel evaluation metrics, ADLGen is shown to outperform baseline generators in statistical fidelity, semantic richness, and downstream activity recognition, offering a scalable and privacy-preserving solution for ADL data synthesis. 
+
+**Abstract (ZH)**: ADLGen：一种用于环境辅助场景的生成式活动采集框架 
+
+---
+# Handling Symbolic Language in Student Texts: A Comparative Study of NLP Embedding Models 
+
+**Title (ZH)**: 处理学生文本中的符号语言：NLP嵌入模型的比较研究 
+
+**Authors**: Tom Bleckmann, Paul Tschisgale  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.17950)  
+
+**Abstract**: Recent advancements in Natural Language Processing (NLP) have facilitated the analysis of student-generated language products in learning analytics (LA), particularly through the use of NLP embedding models. Yet when it comes to science-related language, symbolic expressions such as equations and formulas introduce challenges that current embedding models struggle to address. Existing studies and applications often either overlook these challenges or remove symbolic expressions altogether, potentially leading to biased findings and diminished performance of LA applications. This study therefore explores how contemporary embedding models differ in their capability to process and interpret science-related symbolic expressions. To this end, various embedding models are evaluated using physics-specific symbolic expressions drawn from authentic student responses, with performance assessed via two approaches: similarity-based analyses and integration into a machine learning pipeline. Our findings reveal significant differences in model performance, with OpenAI's GPT-text-embedding-3-large outperforming all other examined models, though its advantage over other models was moderate rather than decisive. Beyond performance, additional factors such as cost, regulatory compliance, and model transparency are discussed as key considerations for model selection. Overall, this study underscores the importance for LA researchers and practitioners of carefully selecting NLP embedding models when working with science-related language products that include symbolic expressions. 
+
+**Abstract (ZH)**: 近期自然语言处理（NLP）的进展促进了学习分析（LA）中对学生生成语言产品进行分析，特别是在使用NLP嵌入模型时。然而，当涉及到科学相关的语言时，如方程式和公式等符号表达式，当前的嵌入模型面临挑战。现有研究和应用要么忽视这些挑战，要么完全去除符号表达式，这可能导致分析结果偏差和学习分析应用性能下降。因此，本研究旨在探讨当代嵌入模型在处理和解释科学相关符号表达式方面的差异。为此，研究使用来源于真实学生回答的物理专业符号表达式，评估了各种嵌入模型，并通过相似性分析和机器学习管道集成两种方法对模型性能进行评估。研究发现，在所有评估的模型中，OpenAI的GPT-text-embedding-3-large表现出最佳性能，尽管与其他模型相比其优势并不明显。除了性能之外，成本、合规性和模型透明度等也是选择模型时的重要考虑因素。总之，本研究强调了在处理包含符号表达式的科学相关语言产品时，学习分析研究人员和实践者精心选择NLP嵌入模型的重要性。 
+
+---
+# Imagine Beyond! Distributionally Robust Auto-Encoding for State Space Coverage in Online Reinforcement Learning 
+
+**Title (ZH)**: 超越想象！基于分布鲁棒自编码的空间状态覆盖在线强化学习方法 
+
+**Authors**: Nicolas Castanet, Olivier Sigaud, Sylvain Lamprier  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.17830)  
+
+**Abstract**: Goal-Conditioned Reinforcement Learning (GCRL) enables agents to autonomously acquire diverse behaviors, but faces major challenges in visual environments due to high-dimensional, semantically sparse observations. In the online setting, where agents learn representations while exploring, the latent space evolves with the agent's policy, to capture newly discovered areas of the environment. However, without incentivization to maximize state coverage in the representation, classical approaches based on auto-encoders may converge to latent spaces that over-represent a restricted set of states frequently visited by the agent. This is exacerbated in an intrinsic motivation setting, where the agent uses the distribution encoded in the latent space to sample the goals it learns to master. To address this issue, we propose to progressively enforce distributional shifts towards a uniform distribution over the full state space, to ensure a full coverage of skills that can be learned in the environment. We introduce DRAG (Distributionally Robust Auto-Encoding for GCRL), a method that combines the $\beta$-VAE framework with Distributionally Robust Optimization. DRAG leverages an adversarial neural weighter of training states of the VAE, to account for the mismatch between the current data distribution and unseen parts of the environment. This allows the agent to construct semantically meaningful latent spaces beyond its immediate experience. Our approach improves state space coverage and downstream control performance on hard exploration environments such as mazes and robotic control involving walls to bypass, without pre-training nor prior environment knowledge. 
+
+**Abstract (ZH)**: 分布稳健自动编码器在目标条件强化学习中的应用（DRAG） 
+
+---
+# Seeing It or Not? Interpretable Vision-aware Latent Steering to Mitigate Object Hallucinations 
+
+**Title (ZH)**: 看见它还是不见？可解释的视觉感知潜在 steering 技术以减轻对象幻象 
+
+**Authors**: Boxu Chen, Ziwei Zheng, Le Yang, Zeyu Geng, Zhengyu Zhao, Chenhao Lin, Chao Shen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.17812)  
+
+**Abstract**: Large Vision-Language Models (LVLMs) have achieved remarkable success but continue to struggle with object hallucination (OH), generating outputs inconsistent with visual inputs. While previous work has proposed methods to reduce OH, the visual decision-making mechanisms that lead to hallucinations remain poorly understood. In this paper, we propose VaLSe, a Vision-aware Latent Steering framework that adopts an interpretation-then-mitigation strategy to address OH in LVLMs. By tackling dual challenges of modeling complex vision-language interactions and eliminating spurious activation artifacts, VaLSe can generate visual contribution maps that trace how specific visual inputs influence individual output tokens. These maps reveal the model's vision-aware focus regions, which are then used to perform latent space steering, realigning internal representations toward semantically relevant content and reducing hallucinated outputs. Extensive experiments demonstrate that VaLSe is a powerful interpretability tool and an effective method for enhancing model robustness against OH across multiple benchmarks. Furthermore, our analysis uncovers limitations in existing OH evaluation metrics, underscoring the need for more nuanced, interpretable, and visually grounded OH benchmarks in future work. Code is available at: this https URL. 
+
+**Abstract (ZH)**: 大视觉语言模型（LVLMs）取得了显著的成功，但在对象幻觉（OH）方面仍然面临挑战，即生成与视觉输入不一致的输出。尽管之前的工作提出了减少OH的方法，但导致幻觉的视觉决策机制仍不完全理解。在本文中，我们提出了一种名为VaLSe的视觉感知潜空间定向框架，采用先解释后缓解的策略来解决LVLMs中的OH问题。通过应对复杂的视觉语言交互建模和消除虚假激活伪影的双重挑战，VaLSe可以生成视觉贡献图，追踪特定视觉输入如何影响个体输出词汇。这些图揭示了模型的视觉感知焦点区域，然后用于执行潜空间定向，重新对齐内部表示以朝向语义相关的内容，从而减少幻觉输出。广泛的经验表明，VaLSe是一个强大的可解释性工具，并且是增强模型对OH鲁棒性的有效方法，跨越多个基准。此外，我们的分析揭示了现有OH评估指标的局限性，强调了未来工作中需要更细微、可解释且视觉支撑的OH基准的必要性。代码可在以下链接获取：this https URL。 
+
+---
+# Mind the GAP! The Challenges of Scale in Pixel-based Deep Reinforcement Learning 
+
+**Title (ZH)**: 注意GAP！基于像素的深度强化学习中规模扩展的挑战 
+
+**Authors**: Ghada Sokar, Pablo Samuel Castro  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.17749)  
+
+**Abstract**: Scaling deep reinforcement learning in pixel-based environments presents a significant challenge, often resulting in diminished performance. While recent works have proposed algorithmic and architectural approaches to address this, the underlying cause of the performance drop remains unclear. In this paper, we identify the connection between the output of the encoder (a stack of convolutional layers) and the ensuing dense layers as the main underlying factor limiting scaling capabilities; we denote this connection as the bottleneck, and we demonstrate that previous approaches implicitly target this bottleneck. As a result of our analyses, we present global average pooling as a simple yet effective way of targeting the bottleneck, thereby avoiding the complexity of earlier approaches. 
+
+**Abstract (ZH)**: 基于像素的环境中深化强化学习的扩展呈现显著挑战，往往导致性能下降。尽管最近的工作提出了算法和架构上的解决方案，但性能下降的根本原因仍然不明确。在本文中，我们发现编码器（一系列卷积层）输出与后续全连接层之间的连接是限制扩展能力的主要因素；我们将这一连接称为瓶颈，并证明了先前的方法隐含地针对了该瓶颈。基于我们的分析，我们提出了全局平均池化作为一种简单而有效的方法来针对瓶颈，从而避免了之前方法的复杂性。 
+
+---
+# HoloLLM: Multisensory Foundation Model for Language-Grounded Human Sensing and Reasoning 
+
+**Title (ZH)**: HoloLLM：基于语言的地多感官基础模型为人感知与推理服务 
+
+**Authors**: Chuhao Zhou, Jianfei Yang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.17645)  
+
+**Abstract**: Embodied agents operating in smart homes must understand human behavior through diverse sensory inputs and communicate via natural language. While Vision-Language Models (VLMs) have enabled impressive language-grounded perception, their reliance on visual data limits robustness in real-world scenarios with occlusions, poor lighting, or privacy constraints. In this paper, we introduce HoloLLM, a Multimodal Large Language Model (MLLM) that integrates uncommon but powerful sensing modalities, such as LiDAR, infrared, mmWave radar, and WiFi, to enable seamless human perception and reasoning across heterogeneous environments. We address two key challenges: (1) the scarcity of aligned modality-text data for rare sensors, and (2) the heterogeneity of their physical signal representations. To overcome these, we design a Universal Modality-Injection Projector (UMIP) that enhances pre-aligned modality embeddings with fine-grained, text-aligned features from tailored encoders via coarse-to-fine cross-attention without introducing significant alignment overhead. We further introduce a human-VLM collaborative data curation pipeline to generate paired textual annotations for sensing datasets. Extensive experiments on two newly constructed benchmarks show that HoloLLM significantly outperforms existing MLLMs, improving language-grounded human sensing accuracy by up to 30%. This work establishes a new foundation for real-world, language-informed multisensory embodied intelligence. 
+
+**Abstract (ZH)**: 具身代理在智能家居中的操作需要通过多种传感输入理解人类行为，并通过自然语言进行沟通。尽管视觉-语言模型（VLMs）已经使基于语言的感知取得了显著进展，但它们对视觉数据的依赖限制了其在具有遮挡、照明不良或隐私约束的真实场景中的鲁棒性。在本文中，我们介绍了HoloLLM，这是一种多模态大型语言模型（MLLM），结合了诸如激光雷达、红外、毫米波雷达和WiFi等不常见但强大的传感模态，以在异构环境中实现无缝的人类感知和推理。我们解决了两个关键挑战：（1）罕见传感器对齐模态-文本数据的稀缺性，（2）它们物理信号表示的异质性。为了解决这些问题，我们设计了一个通用模态注入投影器（UMIP），通过粗到精的交叉注意力，增强预对齐的模态嵌入，引入细粒度、文本对齐的特征，来自针对特定编码器的细粒度、文本对齐的特征，而不引入显著的对齐开销。我们还引入了一种人类-VLM协作的数据标注流水线，生成感知数据集配对的文本注释。在两个新构建的基准上的广泛实验表明，HoloLLM 显著优于现有 MLLMs，将基于语言的人类感知准确性提高多达 30%。这项工作为语言指导的实际多感知具身智能奠定了新基础。 
+
+---
+# RePrompt: Reasoning-Augmented Reprompting for Text-to-Image Generation via Reinforcement Learning 
+
+**Title (ZH)**: 增强推理提示:通过强化学习的文本到图像生成重提示 
+
+**Authors**: Mingrui Wu, Lu Wang, Pu Zhao, Fangkai Yang, Jianjin Zhang, Jianfeng Liu, Yuefeng Zhan, Weihao Han, Hao Sun, Jiayi Ji, Xiaoshuai Sun, Qingwei Lin, Weiwei Deng, Dongmei Zhang, Feng Sun, Qi Zhang, Rongrong Ji  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.17540)  
+
+**Abstract**: Despite recent progress in text-to-image (T2I) generation, existing models often struggle to faithfully capture user intentions from short and under-specified prompts. While prior work has attempted to enhance prompts using large language models (LLMs), these methods frequently generate stylistic or unrealistic content due to insufficient grounding in visual semantics and real-world composition. Inspired by recent advances in reasoning for language model, we propose RePrompt, a novel reprompting framework that introduces explicit reasoning into the prompt enhancement process via reinforcement learning. Instead of relying on handcrafted rules or stylistic rewrites, our method trains a language model to generate structured, self-reflective prompts by optimizing for image-level outcomes. The tailored reward models assesse the generated images in terms of human preference, semantic alignment, and visual composition, providing indirect supervision to refine prompt generation. Our approach enables end-to-end training without human-annotated data. Experiments on GenEval and T2I-Compbench show that RePrompt significantly boosts spatial layout fidelity and compositional generalization across diverse T2I backbones, establishing new state-of-the-art results. 
+
+**Abstract (ZH)**: 尽管近年来文本到图像（T2I）生成取得了进展，现有模型往往难以忠实捕捉短且不具体提示中的用户意图。虽然先前的研究试图通过大型语言模型（LLMs）增强提示，但这些方法经常生成风格化或不现实的内容，因为它们缺乏在视觉语义和现实世界构成方面的充分基础。借鉴语言模型推理的最新进展，我们提出了一种名为RePrompt的新型回提示框架，该框架通过强化学习将显式推理引入提示增强过程。我们的方法不依赖于手工构建的规则或风格重写，而是训练一个语言模型生成结构化、自我反思性的提示，通过优化图像级别结果进行训练。定制的奖励模型根据人类偏好、语义对齐和视觉构成评估生成的图像，间接监督提升提示生成的质量。我们的方法无需人工标注数据即可实现端到端训练。在GenEval和T2I-Compbench上进行的实验表明，RePrompt在多种T2I主干网络上显著提高了空间布局保真度和组成泛化能力，建立了新的最佳结果。 
+
+---
+# Normalized Cut with Reinforcement Learning in Constrained Action Space 
+
+**Title (ZH)**: 约束动作空间中的归一化割与强化学习 
+
+**Authors**: Qize Jiang, Linsey Pang, Alice Gatti, Mahima Aggarwal, Giovanna Vantini, Xiaosong Ma, Weiwei Sun, Sanjay Chawla  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.13986)  
+
+**Abstract**: Reinforcement Learning (RL) has emerged as an important paradigm to solve combinatorial optimization problems primarily due to its ability to learn heuristics that can generalize across problem instances. However, integrating external knowledge that will steer combinatorial optimization problem solutions towards domain appropriate outcomes remains an extremely challenging task. In this paper, we propose the first RL solution that uses constrained action spaces to guide the normalized cut problem towards pre-defined template instances. Using transportation networks as an example domain, we create a Wedge and Ring Transformer that results in graph partitions that are shaped in form of Wedges and Rings and which are likely to be closer to natural optimal partitions. However, our approach is general as it is based on principles that can be generalized to other domains. 
+
+**Abstract (ZH)**: 强化学习(RL)作为一种解决组合优化问题的重要范式，主要得益于其学习能够泛化到不同问题实例的启发式方法的能力。然而，将外部知识集成到组合优化问题中，以引导其解向领域特定的结果方向发展，仍然是一个极具挑战性的任务。在本文中，我们提出了一种使用受限动作空间的RL解决方案，以引导归一化切分问题趋向预定义的模板实例。以交通网络为例，我们创建了一个Wedge和Ring转换器，从而产生形状类似Wedge和Ring的图划分，并且这些划分更有可能接近自然最优划分。然而，我们的方法是通用的，因为它基于可以应用于其他领域的原则。 
+
+---

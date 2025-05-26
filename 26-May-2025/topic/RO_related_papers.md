@@ -1,0 +1,91 @@
+# H2-COMPACT: Human-Humanoid Co-Manipulation via Adaptive Contact Trajectory Policies 
+
+**Title (ZH)**: H2-COMPACT: 人类-类人机器人协同操作的自适应接触轨迹策略 
+
+**Authors**: Geeta Chandra Raju Bethala, Hao Huang, Niraj Pudasaini, Abdullah Mohamed Ali, Shuaihang Yuan, Congcong Wen, Anthony Tzes, Yi Fang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.17627)  
+
+**Abstract**: We present a hierarchical policy-learning framework that enables a legged humanoid to cooperatively carry extended loads with a human partner using only haptic cues for intent inference. At the upper tier, a lightweight behavior-cloning network consumes six-axis force/torque streams from dual wrist-mounted sensors and outputs whole-body planar velocity commands that capture the leader's applied forces. At the lower tier, a deep-reinforcement-learning policy, trained under randomized payloads (0-3 kg) and friction conditions in Isaac Gym and validated in MuJoCo and on a real Unitree G1, maps these high-level twists to stable, under-load joint trajectories. By decoupling intent interpretation (force -> velocity) from legged locomotion (velocity -> joints), our method combines intuitive responsiveness to human inputs with robust, load-adaptive walking. We collect training data without motion-capture or markers, only synchronized RGB video and F/T readings, employing SAM2 and WHAM to extract 3D human pose and velocity. In real-world trials, our humanoid achieves cooperative carry-and-move performance (completion time, trajectory deviation, velocity synchrony, and follower-force) on par with a blindfolded human-follower baseline. This work is the first to demonstrate learned haptic guidance fused with full-body legged control for fluid human-humanoid co-manipulation. Code and videos are available on the H2-COMPACT website. 
+
+**Abstract (ZH)**: 基于触觉线索的人类伙伴协同负载搬运的分层策略学习框架 
+
+---
+# HEPP: Hyper-efficient Perception and Planning for High-speed Obstacle Avoidance of UAVs 
+
+**Title (ZH)**: HEPP: 超高效感知与规划以实现无人机高速障碍 avoidance 
+
+**Authors**: Minghao Lu, Xiyu Fan, Bowen Xu, Zexuan Yan, Rui Peng, Han Chen, Lixian Zhang, Peng Lu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.17438)  
+
+**Abstract**: High-speed obstacle avoidance of uncrewed aerial vehicles (UAVs) in cluttered environments is a significant challenge. Existing UAV planning and obstacle avoidance systems can only fly at moderate speeds or at high speeds over empty or sparse fields. In this article, we propose a hyper-efficient perception and planning system for the high-speed obstacle avoidance of UAVs. The system mainly consists of three modules: 1) A novel incremental robocentric mapping method with distance and gradient information, which takes 89.5% less time compared to existing methods. 2) A novel obstacle-aware topological path search method that generates multiple distinct paths. 3) An adaptive gradient-based high-speed trajectory generation method with a novel time pre-allocation algorithm. With these innovations, the system has an excellent real-time performance with only milliseconds latency in each iteration, taking 79.24% less time than existing methods at high speeds (15 m/s in cluttered environments), allowing UAVs to fly swiftly and avoid obstacles in cluttered environments. The planned trajectory of the UAV is close to the global optimum in both temporal and spatial domains. Finally, extensive validations in both simulation and real-world experiments demonstrate the effectiveness of our proposed system for high-speed navigation in cluttered environments. 
+
+**Abstract (ZH)**: 无crewed航空器在复杂环境下的高速障碍避让：一种高效感知与规划系统 
+
+---
+# UAV Control with Vision-based Hand Gesture Recognition over Edge-Computing 
+
+**Title (ZH)**: 基于边缘计算的视觉手势识别无人机控制 
+
+**Authors**: Sousannah Abdalla, Sabur Baidya  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.17303)  
+
+**Abstract**: Gesture recognition presents a promising avenue for interfacing with unmanned aerial vehicles (UAVs) due to its intuitive nature and potential for precise interaction. This research conducts a comprehensive comparative analysis of vision-based hand gesture detection methodologies tailored for UAV Control. The existing gesture recognition approaches involving cropping, zooming, and color-based segmentation, do not work well for this kind of applications in dynamic conditions and suffer in performance with increasing distance and environmental noises. We propose to use a novel approach leveraging hand landmarks drawing and classification for gesture recognition based UAV control. With experimental results we show that our proposed method outperforms the other existing methods in terms of accuracy, noise resilience, and efficacy across varying distances, thus providing robust control decisions. However, implementing the deep learning based compute intensive gesture recognition algorithms on the UAV's onboard computer is significantly challenging in terms of performance. Hence, we propose to use a edge-computing based framework to offload the heavier computing tasks, thus achieving closed-loop real-time performance. With implementation over AirSim simulator as well as over a real-world UAV, we showcase the advantage of our end-to-end gesture recognition based UAV control system. 
+
+**Abstract (ZH)**: 基于手势识别的无人机控制：一种利用手部关键点检测与分类的方法 
+
+---
+# Construction of an Impedance Control Test Bench 
+
+**Title (ZH)**: 阻抗控制试验台的构建 
+
+**Authors**: Elisa G. Vergamini, Leonardo F. Dos Santos, Cícero Zanette, Yecid Moreno, Felix M. Escalante, Thiago Boaventura  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.17278)  
+
+**Abstract**: Controlling the physical interaction with the environment or objects, as humans do, is a shared requirement across different types of robots. To effectively control this interaction, it is necessary to control the power delivered to the load, that is, the interaction force and the interaction velocity. However, it is not possible to control these two quantities independently at the same time. An alternative is to control the relation between them, with Impedance and Admittance control, for example. The Impedance Control 2 Dimensions (IC2D) bench is a test bench designed to allow the performance analysis of different actuators and controllers at the joint level. Therefore, it was designed to be as versatile as possible, to allow the combination of linear and/or rotational motions, to use electric and/or hydraulic actuators, with loads known and defined by the user. The bench adheres to a set of requirements defined by the demands of the research group, to be a reliable, backlash-free mechatronic system to validate system dynamics models and controller designs, as well as a valuable experimental setup for benchmarking electric and hydraulic actuators. This article presents the mechanical, electrical, and hydraulic configurations used to ensure the robustness and reliability of the test bench. Benches similar to this one are commonly found in robotics laboratories around the world. However, the IC2D stands out for its versatility and reliability, as well as for supporting hydraulic and electric actuators. 
+
+**Abstract (ZH)**: 基于阻抗和 admittance 控制的双向交互力控制平台 IC2D 的机械、电气与液压配置研究 
+
+---
+# Rotational Multi-material 3D Printing of Soft Robotic Matter with Asymmetrical Embedded Pneumatics 
+
+**Title (ZH)**: 具有异构嵌入气动结构的旋转多材料3D打印软机器人材料 
+
+**Authors**: Jackson K. Wilt, Natalie M. Larson, Jennifer A. Lewis  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.18095)  
+
+**Abstract**: The rapid design and fabrication of soft robotic matter is of growing interest for shape morphing, actuation, and wearable devices. Here, we report a facile fabrication method for creating soft robotic materials with embedded pneumatics that exhibit programmable shape morphing behavior. Using rotational multi-material 3D printing, asymmetrical core-shell filaments composed of elastomeric shells and fugitive cores are patterned in 1D and 2D motifs. By precisely controlling the nozzle design, rotation rate, and print path, one can control the local orientation, shape, and cross-sectional area of the patterned fugitive core along each printed filament. Once the elastomeric matrix is cured, the fugitive cores are removed, leaving behind embedded conduits that facilitate pneumatic actuation. Using a connected Fermat spirals pathing approach, one can automatically generate desired print paths required for more complex soft robots, such as hand-inspired grippers. Our integrated design and printing approach enables one to rapidly build soft robotic matter that exhibits myriad shape morphing transitions on demand. 
+
+**Abstract (ZH)**: 软机器人材料的快速设计与制造：嵌入式气动编程形状变形行为的研究 
+
+---
+# Navigating Polytopes with Safety: A Control Barrier Function Approach 
+
+**Title (ZH)**: 带安全性的多面体导航：基于控制障碍函数的方法 
+
+**Authors**: Tamas G. Molnar  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.17270)  
+
+**Abstract**: Collision-free motion is a fundamental requirement for many autonomous systems. This paper develops a safety-critical control approach for the collision-free navigation of polytope-shaped agents in polytope-shaped environments. A systematic method is proposed to generate control barrier function candidates in closed form that lead to controllers with formal safety guarantees. The proposed approach is demonstrated through simulation, with obstacle avoidance examples in 2D and 3D, including dynamically changing environments. 
+
+**Abstract (ZH)**: 多面体形代理在多面体形环境中的碰撞-free导航的安全关键控制方法 
+
+---
+# ExoGait-MS: Learning Periodic Dynamics with Multi-Scale Graph Network for Exoskeleton Gait Recognition 
+
+**Title (ZH)**: ExoGait-MS：基于多尺度图网络学习周期动力学的外骨骼步态识别 
+
+**Authors**: Lijiang Liu, Junyu Shi, Yong Sun, Zhiyuan Zhang, Jinni Zhou, Shugen Ma, Qiang Nie  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.18018)  
+
+**Abstract**: Current exoskeleton control methods often face challenges in delivering personalized treatment. Standardized walking gaits can lead to patient discomfort or even injury. Therefore, personalized gait is essential for the effectiveness of exoskeleton robots, as it directly impacts their adaptability, comfort, and rehabilitation outcomes for individual users. To enable personalized treatment in exoskeleton-assisted therapy and related applications, accurate recognition of personal gait is crucial for implementing tailored gait control. The key challenge in gait recognition lies in effectively capturing individual differences in subtle gait features caused by joint synergy, such as step frequency and step length. To tackle this issue, we propose a novel approach, which uses Multi-Scale Global Dense Graph Convolutional Networks (GCN) in the spatial domain to identify latent joint synergy patterns. Moreover, we propose a Gait Non-linear Periodic Dynamics Learning module to effectively capture the periodic characteristics of gait in the temporal domain. To support our individual gait recognition task, we have constructed a comprehensive gait dataset that ensures both completeness and reliability. Our experimental results demonstrate that our method achieves an impressive accuracy of 94.34% on this dataset, surpassing the current state-of-the-art (SOTA) by 3.77%. This advancement underscores the potential of our approach to enhance personalized gait control in exoskeleton-assisted therapy. 
+
+**Abstract (ZH)**: 当前的外骨骼控制方法往往难以提供个性化的治疗。标准化的步行模式可能导致患者不适甚至受伤。因此，个性化步态对于外骨骼机器人的有效性至关重要，因为它直接影响其适应性、舒适性和个体用户的康复效果。为了在外骨骼辅助疗法及相关应用中实现个性化治疗，准确识别个人步态对于实施定制步态控制至关重要。步态识别的关键挑战在于有效捕捉由关节协同作用引起的高度细微的步态特征差异，如步频和步长。为此，我们提出了一种新的方法，利用多尺度全局稠密图卷积网络（GCN）在空间域中识别潜在的关节协同模式。此外，我们提出了一种步态非线性周期动力学习模块，以有效地在时间域中捕捉步态的周期特性。为了支持我们的个体步态识别任务，我们构建了一个全面的步态数据集，确保其完整性和可靠性。实验结果表明，我们的方法在该数据集上的准确率为94.34%，超越了当前最先进的方法（SOTA）3.77%。这一进展突显了我们方法在外骨骼辅助治疗中增强个性化步态控制的潜力。 
+
+---
