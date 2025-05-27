@@ -2,6 +2,7 @@
 
 | Date | Link | Number of Papers |
 |:----:|:----:|:----------------:|
+| 27-May-2025 | [Link](https://github.com/KJaebye/EmbodiedAI-Robotics-arXiv-Daily-Reporter/blob/main/27-May-2025/topic/Multimodal_related_papers.md) | 23 |
 | 26-May-2025 | [Link](https://github.com/KJaebye/EmbodiedAI-Robotics-arXiv-Daily-Reporter/blob/main/26-May-2025/topic/Multimodal_related_papers.md) | 10 |
 | 23-May-2025 | [Link](https://github.com/KJaebye/EmbodiedAI-Robotics-arXiv-Daily-Reporter/blob/main/23-May-2025/topic/Multimodal_related_papers.md) | 14 |
 | 22-May-2025 | [Link](https://github.com/KJaebye/EmbodiedAI-Robotics-arXiv-Daily-Reporter/blob/main/22-May-2025/topic/Multimodal_related_papers.md) | 5 |
