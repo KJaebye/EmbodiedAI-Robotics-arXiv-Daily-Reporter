@@ -1,0 +1,481 @@
+# FastTD3: Simple, Fast, and Capable Reinforcement Learning for Humanoid Control 
+
+**Title (ZH)**: FastTD3：简单、快速且强大的类人控制强化学习 
+
+**Authors**: Younggyo Seo, Carmelo Sferrazza, Haoran Geng, Michal Nauman, Zhao-Heng Yin, Pieter Abbeel  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.22642)  
+
+**Abstract**: Reinforcement learning (RL) has driven significant progress in robotics, but its complexity and long training times remain major bottlenecks. In this report, we introduce FastTD3, a simple, fast, and capable RL algorithm that significantly speeds up training for humanoid robots in popular suites such as HumanoidBench, IsaacLab, and MuJoCo Playground. Our recipe is remarkably simple: we train an off-policy TD3 agent with several modifications -- parallel simulation, large-batch updates, a distributional critic, and carefully tuned hyperparameters. FastTD3 solves a range of HumanoidBench tasks in under 3 hours on a single A100 GPU, while remaining stable during training. We also provide a lightweight and easy-to-use implementation of FastTD3 to accelerate RL research in robotics. 
+
+**Abstract (ZH)**: FastTD3：一种简单、快速且高效的机器人 reinforcement learning 算法 
+
+---
+# LabUtopia: High-Fidelity Simulation and Hierarchical Benchmark for Scientific Embodied Agents 
+
+**Title (ZH)**: LabUtopia: 高保真模拟与科学体现代理分层基准测试 
+
+**Authors**: Rui Li, Zixuan Hu, Wenxi Qu, Jinouwen Zhang, Zhenfei Yin, Sha Zhang, Xuantuo Huang, Hanqing Wang, Tai Wang, Jiangmiao Pang, Wanli Ouyang, Lei Bai, Wangmeng Zuo, Ling-Yu Duan, Dongzhan Zhou, Shixiang Tang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.22634)  
+
+**Abstract**: Scientific embodied agents play a crucial role in modern laboratories by automating complex experimental workflows. Compared to typical household environments, laboratory settings impose significantly higher demands on perception of physical-chemical transformations and long-horizon planning, making them an ideal testbed for advancing embodied intelligence. However, its development has been long hampered by the lack of suitable simulator and benchmarks. In this paper, we address this gap by introducing LabUtopia, a comprehensive simulation and benchmarking suite designed to facilitate the development of generalizable, reasoning-capable embodied agents in laboratory settings. Specifically, it integrates i) LabSim, a high-fidelity simulator supporting multi-physics and chemically meaningful interactions; ii) LabScene, a scalable procedural generator for diverse scientific scenes; and iii) LabBench, a hierarchical benchmark spanning five levels of complexity from atomic actions to long-horizon mobile manipulation. LabUtopia supports 30 distinct tasks and includes more than 200 scene and instrument assets, enabling large-scale training and principled evaluation in high-complexity environments. We demonstrate that LabUtopia offers a powerful platform for advancing the integration of perception, planning, and control in scientific-purpose agents and provides a rigorous testbed for exploring the practical capabilities and generalization limits of embodied intelligence in future research. 
+
+**Abstract (ZH)**: 科学具身代理在现代实验室中通过自动化复杂实验流程扮演关键角色。与典型的家庭环境相比，实验室环境对物理-化学转换的感知和长期规划提出了更高的要求，使其成为推动具身智能发展的理想试验床。然而，其发展一直受限于合适的模拟器和基准测试的缺乏。本文通过引入LabUtopia——一个全面的模拟和基准测试套件——来解决这一问题，旨在促进实验室环境中可泛化的、具备推理能力的具身代理的发展。具体而言，LabUtopia 综合了：i) LabSim，一个支持多物理现象和化学意义交互的高保真模拟器；ii) LabScene，一个可扩展的程序生成器，用于生成多样的科学场景；以及 iii) LabBench，一个跨越五个复杂层次的层次化基准，从原子动作到长时间移动操作。LabUtopia 支持30个不同的任务，包括超过200个场景和仪器资产，能够实现大规模训练并在高复杂度环境中进行有原则的评估。我们证明，LabUtopia 提供了一个强大的平台，用于推进旨在科学目的的代理中感知、规划和控制的整合，并为探索未来研究中具身智能的实用性能力和泛化极限提供了严格的测试床。 
+
+---
+# SCIZOR: A Self-Supervised Approach to Data Curation for Large-Scale Imitation Learning 
+
+**Title (ZH)**: SCIZOR: 一种用于大规模模仿学习的数据整理自监督方法 
+
+**Authors**: Yu Zhang, Yuqi Xie, Huihan Liu, Rutav Shah, Michael Wan, Linxi Fan, Yuke Zhu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.22626)  
+
+**Abstract**: Imitation learning advances robot capabilities by enabling the acquisition of diverse behaviors from human demonstrations. However, large-scale datasets used for policy training often introduce substantial variability in quality, which can negatively impact performance. As a result, automatically curating datasets by filtering low-quality samples to improve quality becomes essential. Existing robotic curation approaches rely on costly manual annotations and perform curation at a coarse granularity, such as the dataset or trajectory level, failing to account for the quality of individual state-action pairs. To address this, we introduce SCIZOR, a self-supervised data curation framework that filters out low-quality state-action pairs to improve the performance of imitation learning policies. SCIZOR targets two complementary sources of low-quality data: suboptimal data, which hinders learning with undesirable actions, and redundant data, which dilutes training with repetitive patterns. SCIZOR leverages a self-supervised task progress predictor for suboptimal data to remove samples lacking task progression, and a deduplication module operating on joint state-action representation for samples with redundant patterns. Empirically, we show that SCIZOR enables imitation learning policies to achieve higher performance with less data, yielding an average improvement of 15.4% across multiple benchmarks. More information is available at: this https URL 
+
+**Abstract (ZH)**: 模仿学习通过使机器人能够从人类示范中获取多样化的行为来提升机器人能力。然而，用于策略训练的大规模数据集往往会导致质量的显著差异，这可能对性能产生负面影响。因此，自动生成高质量数据集成为关键，方法是通过过滤低质量样本来改进质量。现有的机器人数据管理方法依赖于昂贵的手动标注，并在较粗的级别上进行数据管理，如数据集或轨迹级别，未能考虑到单个状态-动作对的质量。为了解决这一问题，我们引入了SCIZOR，一种自监督数据管理框架，通过过滤低质量的状态-动作对来提高模仿学习策略的性能。SCIZOR 针对两类低质量数据源进行操作：妨碍学习的次优数据和稀释训练的冗余数据。SCIZOR 利用一个自监督的任务进度预测器来移除缺乏任务进展的样本，以及在联合状态-动作表示上运行的去重模块来处理具有重复模式的样本。实验证明，SCIZOR 使模仿学习策略在较少数据的情况下达到更高的性能，在多个基准测试中平均提高了15.4%。更多信息请参阅：this https URL 
+
+---
+# VR-Based Control of Multi-Copter Operation 
+
+**Title (ZH)**: 基于VR的多旋翼飞行控制 
+
+**Authors**: Jack T. Hughes, Mohammad Ghufran, Hossein Rastgoftar  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.22599)  
+
+**Abstract**: We aim to use virtual reality (VR) to improve the spatial awareness of pilots by real-time scanning of the environment around the drone using onboard sensors, live streaming of this environment to a VR headset, and rendering a virtual representation of the drone and its environment for the pilot. This way, the pilot can see the immediate environment of the drone up close from a third-person perspective, as opposed to the first-person perspective that most drone cameras provide. This provides much more information about the drone surroundings for the pilot while operating the drone than existing teleoperation solutions. Previous solutions using VR have relied upon pre-made designs of the environment, which makes it difficult to adapt to changing environments. Our solution, in contrast, scans the environment as you fly, making it much more flexible for use in unknown environments. 
+
+**Abstract (ZH)**: 我们旨在通过机载传感器实时扫描无人机周围的环境、将该环境实时传送到VR头显，并为飞行员渲染无人机及其环境的虚拟表示，以利用虚拟现实（VR）提高飞行员的空间意识。这样，飞行员可以从第三人称视角近距离查看无人机的即时环境，而非目前大多数无人机摄像头提供的第一人称视角。这为操作无人机提供了比现有远程操控解决方案更多的环境信息。之前的VR解决方案依赖预先设计的环境设计，难以适应变化的环境。相比之下，我们的解决方案在飞行过程中扫描环境，使其在未知环境中使用更加灵活。 
+
+---
+# From Strangers to Assistants: Fast Desire Alignment for Embodied Agent-User Adaptation 
+
+**Title (ZH)**: 从陌生人到助手：快速欲望对齐以实现具身代理-用户适应 
+
+**Authors**: Yuanfei Wang, Xinju Huang, Fangwei Zhong, Yaodong Yang, Yizhou Wang, Yuanpei Chen, Hao Dong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.22503)  
+
+**Abstract**: While embodied agents have made significant progress in performing complex physical tasks, real-world applications demand more than pure task execution. The agents must collaborate with unfamiliar agents and human users, whose goals are often vague and implicit. In such settings, interpreting ambiguous instructions and uncovering underlying desires is essential for effective assistance. Therefore, fast and accurate desire alignment becomes a critical capability for embodied agents. In this work, we first develop a home assistance simulation environment HA-Desire that integrates an LLM-driven human user agent exhibiting realistic value-driven goal selection and communication. The ego agent must interact with this proxy user to infer and adapt to the user's latent desires. To achieve this, we present a novel framework FAMER for fast desire alignment, which introduces a desire-based mental reasoning mechanism to identify user intent and filter desire-irrelevant actions. We further design a reflection-based communication module that reduces redundant inquiries, and incorporate goal-relevant information extraction with memory persistence to improve information reuse and reduce unnecessary exploration. Extensive experiments demonstrate that our framework significantly enhances both task execution and communication efficiency, enabling embodied agents to quickly adapt to user-specific desires in complex embodied environments. 
+
+**Abstract (ZH)**: 尽管具身代理在执行复杂物理任务方面取得了显著进展，但现实世界的应用需求远超过纯粹的任务执行。代理必须与不熟悉的代理和人类用户协作，而这些用户的目标往往模糊且隐含。在这种环境下，解释模棱两可的指令并揭示潜在愿望对于有效辅助至关重要。因此，快速而准确的愿望对齐成为具身代理的一项关键能力。在本文中，我们首先开发了一个家庭辅助模拟环境HA-Desire，该环境集成了一个由LLM驱动的人类用户代理，该代理表现出基于现实价值的目标选择和沟通。第一人称代理必须与这个代理用户互动，以推断并适应用户的潜在愿望。为了实现这一目标，我们提出了一个新颖框架FAMER，引入了基于愿望的心理推理机制来识别用户意图并过滤掉与愿望无关的动作。我们还设计了一个基于反思的交流模块，减少冗余询问，并通过结合与目标相关的信息提取和记忆持久化来提高信息重用并减少不必要的探索。广泛的经验表明，我们的框架显著提高了任务执行和通信效率，使具身代理能够快速适应复杂的具身环境中的用户特定愿望。 
+
+---
+# Fully Packed and Ready to Go: High-Density, Rearrangement-Free, Grid-Based Storage and Retrieval 
+
+**Title (ZH)**: 全满且准备就绪：高密度、无重排的网格基存储与检索 
+
+**Authors**: Tzvika Geft, Kostas Bekris, Jingjin Yu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.22497)  
+
+**Abstract**: Grid-based storage systems with uniformly shaped loads (e.g., containers, pallets, totes) are commonplace in logistics, industrial, and transportation domains. A key performance metric for such systems is the maximization of space utilization, which requires some loads to be placed behind or below others, preventing direct access to them. Consequently, dense storage settings bring up the challenge of determining how to place loads while minimizing costly rearrangement efforts necessary during retrieval. This paper considers the setting involving an inbound phase, during which loads arrive, followed by an outbound phase, during which loads depart. The setting is prevalent in distribution centers, automated parking garages, and container ports. In both phases, minimizing the number of rearrangement actions results in more optimal (e.g., fast, energy-efficient, etc.) operations. In contrast to previous work focusing on stack-based systems, this effort examines the case where loads can be freely moved along the grid, e.g., by a mobile robot, expanding the range of possible motions. We establish that for a range of scenarios, such as having limited prior knowledge of the loads' arrival sequences or grids with a narrow opening, a (best possible) rearrangement-free solution always exists, including when the loads fill the grid to its capacity. In particular, when the sequences are fully known, we establish an intriguing characterization showing that rearrangement can always be avoided if and only if the open side of the grid (used to access the storage) is at least 3 cells wide. We further discuss useful practical implications of our solutions. 
+
+**Abstract (ZH)**: 基于网格的存储系统中均匀形状负载（如集装箱、托盘、货筐）在物流、工业和运输领域广泛应用。这类系统的关键性能指标是最大化空间利用，这要求某些负载被放置在其他负载之后或下方，从而阻止直接访问。因此，密集存储环境中出现了一种挑战，即如何在减少检索过程中昂贵的重新排列努力的同时进行负载放置。本文考虑了一个包括入库阶段和出库阶段的设置，在入库阶段负载到达，在出库阶段负载离开。这种设置在分拨中心、自动化停车库和集装箱港口中普遍存在。在两个阶段中，减少重新排列动作的数量可实现更优化的操作（例如，更快、更节能等）。与之前专注于基于堆叠系统的研究表明，本文探讨了负载可以在网格上自由移动的情况，例如通过移动机器人进行移动，从而扩展了可能的动作范围。我们建立了一个结论，即对于一系列场景，如有限的到达序列先验知识或网格具有狭窄开口的情况，理想且无需重新排列的解决方案始终存在，包括负载填满网格容量的情况。特别是在序列完全已知的情况下，我们提出了一个有趣的特性刻画，表明如果且仅如果网格的开口边至少为3个单元格宽，重新排列总是可以避免。我们还讨论了我们解决方案的一些有用的实际意义。 
+
+---
+# UP-SLAM: Adaptively Structured Gaussian SLAM with Uncertainty Prediction in Dynamic Environments 
+
+**Title (ZH)**: UP-SLAM：动态环境中基于不确定性预测的自适应结构化高斯SLAM 
+
+**Authors**: Wancai Zheng, Linlin Ou, Jiajie He, Libo Zhou, Xinyi Yu, Yan Wei  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.22335)  
+
+**Abstract**: Recent 3D Gaussian Splatting (3DGS) techniques for Visual Simultaneous Localization and Mapping (SLAM) have significantly progressed in tracking and high-fidelity mapping. However, their sequential optimization framework and sensitivity to dynamic objects limit real-time performance and robustness in real-world scenarios. We present UP-SLAM, a real-time RGB-D SLAM system for dynamic environments that decouples tracking and mapping through a parallelized framework. A probabilistic octree is employed to manage Gaussian primitives adaptively, enabling efficient initialization and pruning without hand-crafted thresholds. To robustly filter dynamic regions during tracking, we propose a training-free uncertainty estimator that fuses multi-modal residuals to estimate per-pixel motion uncertainty, achieving open-set dynamic object handling without reliance on semantic labels. Furthermore, a temporal encoder is designed to enhance rendering quality. Concurrently, low-dimensional features are efficiently transformed via a shallow multilayer perceptron to construct DINO features, which are then employed to enrich the Gaussian field and improve the robustness of uncertainty prediction. Extensive experiments on multiple challenging datasets suggest that UP-SLAM outperforms state-of-the-art methods in both localization accuracy (by 59.8%) and rendering quality (by 4.57 dB PSNR), while maintaining real-time performance and producing reusable, artifact-free static maps in dynamic this http URL project: this https URL 
+
+**Abstract (ZH)**: 实时RGB-D SLAM系统UP-SLAM：通过并行框架实现动态环境下的解耦追踪与建图 
+
+---
+# LiDAR Based Semantic Perception for Forklifts in Outdoor Environments 
+
+**Title (ZH)**: 基于LiDAR的叉车室外环境语义感知 
+
+**Authors**: Benjamin Serfling, Hannes Reichert, Lorenzo Bayerlein, Konrad Doll, Kati Radkhah-Lens  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.22258)  
+
+**Abstract**: In this study, we present a novel LiDAR-based semantic segmentation framework tailored for autonomous forklifts operating in complex outdoor environments. Central to our approach is the integration of a dual LiDAR system, which combines forward-facing and downward-angled LiDAR sensors to enable comprehensive scene understanding, specifically tailored for industrial material handling tasks. The dual configuration improves the detection and segmentation of dynamic and static obstacles with high spatial precision. Using high-resolution 3D point clouds captured from two sensors, our method employs a lightweight yet robust approach that segments the point clouds into safety-critical instance classes such as pedestrians, vehicles, and forklifts, as well as environmental classes such as driveable ground, lanes, and buildings. Experimental validation demonstrates that our approach achieves high segmentation accuracy while satisfying strict runtime requirements, establishing its viability for safety-aware, fully autonomous forklift navigation in dynamic warehouse and yard environments. 
+
+**Abstract (ZH)**: 本研究提出了一种针对复杂户外环境下的自主叉车设计的新型LiDAR语义分割框架。该方法的核心是结合使用前后向和下倾角LiDAR传感器的双LiDAR系统，以实现针对工业物料搬运任务的全面场景理解。双配置提高了对动态和静态障碍物的检测和分割精度，同时保持高空间分辨率。通过两个传感器捕获的高分辨率3D点云，我们的方法采用一种轻量级且 robust 的方法将点云分割为行人、车辆、叉车等关键安全实例类以及道路可通行地面、车道和建筑物等环境类。实验验证表明，该方法在满足严格的实时要求下实现了高分割精度，证明了其在动态仓库和作业环境下的安全性感知自主导航的可行性。 
+
+---
+# ForceVLA: Enhancing VLA Models with a Force-aware MoE for Contact-rich Manipulation 
+
+**Title (ZH)**: ForceVLA: 增强VLA模型的力感知MoE以实现接触丰富的操作 
+
+**Authors**: Jiawen Yu, Hairuo Liu, Qiaojun Yu, Jieji Ren, Ce Hao, Haitong Ding, Guangyu Huang, Guofan Huang, Yan Song, Panpan Cai, Cewu Lu, Wenqiang Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.22159)  
+
+**Abstract**: Vision-Language-Action (VLA) models have advanced general-purpose robotic manipulation by leveraging pretrained visual and linguistic representations. However, they struggle with contact-rich tasks that require fine-grained control involving force, especially under visual occlusion or dynamic uncertainty. To address these limitations, we propose \textbf{ForceVLA}, a novel end-to-end manipulation framework that treats external force sensing as a first-class modality within VLA systems. ForceVLA introduces \textbf{FVLMoE}, a force-aware Mixture-of-Experts fusion module that dynamically integrates pretrained visual-language embeddings with real-time 6-axis force feedback during action decoding. This enables context-aware routing across modality-specific experts, enhancing the robot's ability to adapt to subtle contact dynamics. We also introduce \textbf{ForceVLA-Data}, a new dataset comprising synchronized vision, proprioception, and force-torque signals across five contact-rich manipulation tasks. ForceVLA improves average task success by 23.2\% over strong $\pi_0$-based baselines, achieving up to 80\% success in tasks such as plug insertion. Our approach highlights the importance of multimodal integration for dexterous manipulation and sets a new benchmark for physically intelligent robotic control. Code and data will be released at this https URL. 
+
+**Abstract (ZH)**: 基于视觉-语言-动作的力感知框架 (ForceVLA)：面向接触丰富任务的端到端 manipulation 方法 
+
+---
+# ReinFlow: Fine-tuning Flow Matching Policy with Online Reinforcement Learning 
+
+**Title (ZH)**: ReinFlow：基于在线强化学习的流匹配策略微调 
+
+**Authors**: Tonghe Zhang, Yu Chao, Sicang Su, Yu Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.22094)  
+
+**Abstract**: We propose ReinFlow, a simple yet effective online reinforcement learning (RL) framework that fine-tunes a family of flow matching policies for continuous robotic control. Derived from rigorous RL theory, ReinFlow injects learnable noise into a flow policy's deterministic path, converting the flow into a discrete-time Markov Process for exact and straightforward likelihood computation. This conversion facilitates exploration and ensures training stability, enabling ReinFlow to fine-tune diverse flow model variants, including Rectified Flow [35] and Shortcut Models [19], particularly at very few or even one denoising step. We benchmark ReinFlow in representative locomotion and manipulation tasks, including long-horizon planning with visual input and sparse reward. The episode reward of Rectified Flow policies obtained an average net growth of 135.36% after fine-tuning in challenging legged locomotion tasks while saving denoising steps and 82.63% of wall time compared to state-of-the-art diffusion RL fine-tuning method DPPO [43]. The success rate of the Shortcut Model policies in state and visual manipulation tasks achieved an average net increase of 40.34% after fine-tuning with ReinFlow at four or even one denoising step, whose performance is comparable to fine-tuned DDIM policies while saving computation time for an average of 23.20%. Project Webpage: this https URL 
+
+**Abstract (ZH)**: 我们提出ReinFlow，一种简单有效的在线强化学习框架，用于细化一类流匹配策略以实现连续机器人控制。 
+
+---
+# A simulation framework for autonomous lunar construction work 
+
+**Title (ZH)**: 自主月球建设工作的仿真框架 
+
+**Authors**: Mattias Linde, Daniel Lindmark, Sandra Ålstig, Martin Servin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.22091)  
+
+**Abstract**: We present a simulation framework for lunar construction work involving multiple autonomous machines. The framework supports modelling of construction scenarios and autonomy solutions, execution of the scenarios in simulation, and analysis of work time and energy consumption throughout the construction project. The simulations are based on physics-based models for contacting multibody dynamics and deformable terrain, including vehicle-soil interaction forces and soil flow in real time. A behaviour tree manages the operational logic and error handling, which enables the representation of complex behaviours through a discrete set of simpler tasks in a modular hierarchical structure. High-level decision-making is separated from lower-level control algorithms, with the two connected via ROS2. Excavation movements are controlled through inverse kinematics and tracking controllers. The framework is tested and demonstrated on two different lunar construction scenarios. 
+
+**Abstract (ZH)**: 一种用于月球建设项目中多自主机器施工的仿真框架 
+
+---
+# Soft Electrothermal Meta-Actuator for Robust Multifunctional Control 
+
+**Title (ZH)**: 软电热元驱动器用于 robust 的多功能控制 
+
+**Authors**: Hanseong Jo, Pavel Shafirin, Christopher Le, Caden Chan, Artur Davoyan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.21992)  
+
+**Abstract**: Soft electrothermal actuators are of great interest in diverse application domains for their simplicity, compliance, and ease of control. However, the very nature of thermally induced mechanical actuation sets inherent operation constraints: unidirectional motion, environmental sensitivity, and slow response times limited by passive cooling. To overcome these constraints, we propose a meta-actuator architecture, which uses engineered heat transfer in thin films to achieve multifunctional operation. We demonstrate electrically selectable bidirectional motion with large deflection ($ \geq $28% of actuator length at 0.75 W), suppressed thermal sensitivity to ambient temperature changes when compared to conventional actuators (>100$ \times $ lower), and actively forced return to the rest state, which is 10 times faster than that with passive cooling. We further show that our meta-actuator approach enables extended ranges of motions for manipulating complex objects. Versatile soft gripper operations highlight the meta-actuator's potential for soft robotics and devices. 
+
+**Abstract (ZH)**: 软电热执行器由于其简单性、柔顺性和易于控制而在多个应用领域引起了极大的兴趣。然而，由热引起的机械运动的本质设置了固有的操作限制：单向运动、环境敏感性和受限于被动冷却的缓慢响应时间。为克服这些限制，我们提出了一种元执行器架构，该架构利用薄层中的工程化热传递来实现多功能操作。我们展示了可电选的双向大行程运动（在0.75 W时 ≥28%的执行器长度）、与传统执行器相比热环境敏感性降低了100倍以上、以及快速主动返回原始状态，其速度比被动冷却快10倍。此外，我们进一步表明，我们的元执行器方法能够扩展用于操控复杂对象的运动范围。多功能软夹持器操作突显了元执行器在软机器人和设备领域的潜力。 
+
+---
+# Learning Compositional Behaviors from Demonstration and Language 
+
+**Title (ZH)**: 从演示和语言学习组合行为 
+
+**Authors**: Weiyu Liu, Neil Nie, Ruohan Zhang, Jiayuan Mao, Jiajun Wu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.21981)  
+
+**Abstract**: We introduce Behavior from Language and Demonstration (BLADE), a framework for long-horizon robotic manipulation by integrating imitation learning and model-based planning. BLADE leverages language-annotated demonstrations, extracts abstract action knowledge from large language models (LLMs), and constructs a library of structured, high-level action representations. These representations include preconditions and effects grounded in visual perception for each high-level action, along with corresponding controllers implemented as neural network-based policies. BLADE can recover such structured representations automatically, without manually labeled states or symbolic definitions. BLADE shows significant capabilities in generalizing to novel situations, including novel initial states, external state perturbations, and novel goals. We validate the effectiveness of our approach both in simulation and on real robots with a diverse set of objects with articulated parts, partial observability, and geometric constraints. 
+
+**Abstract (ZH)**: 基于语言和示范的行为学习框架（BLADE）：结合模仿学习和模型驱动规划的长时机器人操作 
+
+---
+# DORAEMON: Decentralized Ontology-aware Reliable Agent with Enhanced Memory Oriented Navigation 
+
+**Title (ZH)**: DORAEMON：去中心化本体意识可靠代理及增强记忆导向导航 
+
+**Authors**: Tianjun Gu, Linfeng Li, Xuhong Wang, Chenghua Gong, Jingyu Gong, Zhizhong Zhang, Yuan Xie, Lizhuang Ma, Xin Tan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.21969)  
+
+**Abstract**: Adaptive navigation in unfamiliar environments is crucial for household service robots but remains challenging due to the need for both low-level path planning and high-level scene understanding. While recent vision-language model (VLM) based zero-shot approaches reduce dependence on prior maps and scene-specific training data, they face significant limitations: spatiotemporal discontinuity from discrete observations, unstructured memory representations, and insufficient task understanding leading to navigation failures. We propose DORAEMON (Decentralized Ontology-aware Reliable Agent with Enhanced Memory Oriented Navigation), a novel cognitive-inspired framework consisting of Ventral and Dorsal Streams that mimics human navigation capabilities. The Dorsal Stream implements the Hierarchical Semantic-Spatial Fusion and Topology Map to handle spatiotemporal discontinuities, while the Ventral Stream combines RAG-VLM and Policy-VLM to improve decision-making. Our approach also develops Nav-Ensurance to ensure navigation safety and efficiency. We evaluate DORAEMON on the HM3D, MP3D, and GOAT datasets, where it achieves state-of-the-art performance on both success rate (SR) and success weighted by path length (SPL) metrics, significantly outperforming existing methods. We also introduce a new evaluation metric (AORI) to assess navigation intelligence better. Comprehensive experiments demonstrate DORAEMON's effectiveness in zero-shot autonomous navigation without requiring prior map building or pre-training. 
+
+**Abstract (ZH)**: 适配未知环境的自适应导航对家庭服务机器人至关重要，但由于需要低层次路径规划和高层次场景理解，仍然具有挑战性。虽然基于视觉-语言模型（VLM）的零样本方法减少了对先验地图和场景特定训练数据的依赖，但它们面临显著的限制：离散观测导致的时空不连续性、无结构的记忆表示以及任务理解不足导致的导航失败。我们提出了一种名为DORAEMON（Decentralized Ontology-aware Reliable Agent with Enhanced Memory Oriented Navigation）的新颖认知启发式框架，该框架由腹侧流和背侧流组成，模仿人类的导航能力。背侧流实施层次化语义-空间融合和拓扑图以处理时空不连续性，腹侧流结合RAG-VLM和Policy-VLM来改进决策。我们的方法还发展了导航保证（Nav-Ensurance）以确保导航的安全性和效率。我们在HM3D、MP3D和GOAT数据集上评估了DORAEMON，其在成功率（SR）和路径长度加权成功率（SPL）指标上均取得了最先进的性能，显著优于现有方法。我们还引入了一个新的评估指标（AORI）以更好地评估导航智能。全面的实验表明，DORAEMON在无需先验地图构建或预训练的情况下实现了零样本自主导航的有效性。 
+
+---
+# Enhanced SIRRT*: A Structure-Aware RRT* for 2D Path Planning with Hybrid Smoothing and Bidirectional Rewiring 
+
+**Title (ZH)**: 增强型SIRRT*：一种结构感知的2D路径规划算法，结合混合平滑和双向重布线 
+
+**Authors**: Hyejeong Ryu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.21968)  
+
+**Abstract**: Sampling-based motion planners such as Rapidly-exploring Random Tree* (RRT*) and its informed variant IRRT* are widely used for optimal path planning in complex environments. However, these methods often suffer from slow convergence and high variance due to their reliance on random sampling, particularly when initial solution discovery is delayed. This paper presents Enhanced SIRRT* (E-SIRRT*), a structure-aware planner that improves upon the original SIRRT* framework by introducing two key enhancements: hybrid path smoothing and bidirectional rewiring. Hybrid path smoothing refines the initial path through spline fitting and collision-aware correction, while bidirectional rewiring locally optimizes tree connectivity around the smoothed path to improve cost propagation. Experimental results demonstrate that E-SIRRT* consistently outperforms IRRT* and SIRRT* in terms of initial path quality, convergence rate, and robustness across 100 trials. Unlike IRRT*, which exhibits high variability due to stochastic initialization, E-SIRRT* achieves repeatable and efficient performance through deterministic skeleton-based initialization and structural refinement. 
+
+**Abstract (ZH)**: 基于采样的运动规划器如快速扩展随机树*（RRT*）及其启发式变体IRRT*广泛用于复杂环境中的最优路径规划。然而，这些方法由于依赖随机采样，尤其是在初始解发现延迟时，往往收敛缓慢且方差高。本文提出了一种结构感知规划器——增强的结构导向快速扩展随机树*（E-SIRRT*），它在原始SIRRT*框架上引入了两种核心改进：混合路径平滑和双向重布线。混合路径平滑通过样条拟合和碰撞感知修正来细化初始路径，而双向重布线则在平滑路径周围局部优化树的连接性，以提高成本传播。实验结果显示，在初始路径质量、收敛速度和跨100次试验的鲁棒性方面，E-SIRRT*始终优于IRRT*和SIRRT*。与因随机初始化而表现高度可变的IRRT*不同，E-SIRRT*通过基于骨架的确定性初始化和结构细化实现了可重复且高效的性能。 
+
+---
+# Mastering Agile Tasks with Limited Trials 
+
+**Title (ZH)**: 掌握受限实验次数的敏捷任务 
+
+**Authors**: Yihang Hu, Pingyue Sheng, Shengjie Wang, Yang Gao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.21916)  
+
+**Abstract**: Embodied robots nowadays can already handle many real-world manipulation tasks. However, certain other real-world tasks (e.g., shooting a basketball into a hoop) are highly agile and require high execution precision, presenting additional challenges for methods primarily designed for quasi-static manipulation tasks. This leads to increased efforts in costly data collection, laborious reward design, or complex motion planning. Such tasks, however, are far less challenging for humans. Say a novice basketball player typically needs only $\sim$10 attempts to make their first successful shot, by roughly imitating a motion prior and then iteratively adjusting their motion based on the past outcomes. Inspired by this human learning paradigm, we propose the Adaptive Diffusion Action Plannin (ADAP) algorithm, a simple & scalable approach which iteratively refines its action plan by few real-world trials within a learned prior motion pattern, until reaching a specific goal. Experiments demonstrated that ADAP can learn and accomplish a wide range of goal-conditioned agile dynamic tasks with human-level precision and efficiency directly in real-world, such as throwing a basketball into the hoop in fewer than 10 trials. Project website:this https URL . 
+
+**Abstract (ZH)**: 当前的具身机器人已经能够处理许多实际世界的操作任务。然而，某些其他实际世界的任务（如投篮入筐）要求极高的敏捷性和执行精度，给主要设计用于准静态操作任务的方法带来了额外挑战。这导致了在数据收集、奖励设计或复杂运动规划方面增加了更多成本和努力。然而，对于人类来说，这些任务远不具挑战性。一名初学者篮球运动员通常只需要大约10次尝试就能成功投进第一个球，通过大致模仿一个动作模式，然后根据过去的尝试结果进行迭代调整。受人类学习范式的启发，我们提出了一种自适应扩散动作规划（ADAP）算法，这是一种简单且可扩展的方法，它在学习到的先验动作模式内通过几次实际世界的试错来逐步细化其行动策略，直到达到特定目标。实验表明，ADAP可以直接在真实世界中学习并高效地完成一系列具有人类水平精度的敏捷动态任务，例如在不到10次尝试内投篮入筐。项目网址：this https URL。 
+
+---
+# Vision-Language-Action Model with Open-World Embodied Reasoning from Pretrained Knowledge 
+
+**Title (ZH)**: 具有开放世界体现推理的愿景语言行动模型 pretrained 知识驱动 
+
+**Authors**: Zhongyi Zhou, Yichen Zhu, Junjie Wen, Chaomin Shen, Yi Xu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.21906)  
+
+**Abstract**: Vision-language-action (VLA) models have emerged as the next generation of models in robotics. However, despite leveraging powerful pre-trained Vision-Language Models (VLMs), existing end-to-end VLA systems often lose key capabilities during fine-tuning as the model adapts to specific robotic tasks. We argue that a generalizable VLA model should retain and expand upon the VLM's core competencies: 1) Open-world embodied reasoning - the VLA should inherit the knowledge from VLM, i.e., recognize anything that the VLM can recognize, capable of solving math problems, possessing visual-spatial intelligence, 2) Reasoning following - effectively translating the open-world reasoning into actionable steps for the robot. In this work, we introduce ChatVLA-2, a novel mixture-of-expert VLA model coupled with a specialized three-stage training pipeline designed to preserve the VLM's original strengths while enabling actionable reasoning. To validate our approach, we design a math-matching task wherein a robot interprets math problems written on a whiteboard and picks corresponding number cards from a table to solve equations. Remarkably, our method exhibits exceptional mathematical reasoning and OCR capabilities, despite these abilities not being explicitly trained within the VLA. Furthermore, we demonstrate that the VLA possesses strong spatial reasoning skills, enabling it to interpret novel directional instructions involving previously unseen objects. Overall, our method showcases reasoning and comprehension abilities that significantly surpass state-of-the-art imitation learning methods such as OpenVLA, DexVLA, and pi-zero. This work represents a substantial advancement toward developing truly generalizable robotic foundation models endowed with robust reasoning capacities. 
+
+**Abstract (ZH)**: Vision-语言-行动（VLA）模型已成为下一代机器人模型。然而，尽管利用了强大的预训练视觉-语言模型（VLMs），现有的端到端VLA系统在微调过程中往往会失去关键能力，以适应特定的机器人任务。我们argue认为，一个可泛化的VLA模型应该保留并扩大VLM的核心 competencies能力：1）开放世界具身推理 - VLA 应继承 VLM 的知识，即识别 VLM 可识别的一切事物，能够解决数学问题，具备视觉-空间智能；2）推理跟随 - 有效将开放世界推理转化为可执行步骤以指导机器人行动。在本文中，我们引入了ChatVLA-2，这是一种新颖的专家混合VLA模型，并配以专门的三阶段训练管道，旨在 preservation保留 VLM 的原始优势，同时使推理更加可操作。为了验证我们的方法，我们设计了一个数学匹配任务，其中机器人解释白板上写下的数学问题，并从桌子上挑选相应的数字卡片以解决问题。令人惊讶的是，尽管这些能力不是在VLA中显式训练的，我们的方法仍展现出出色的数学推理和OCR能力。此外，我们证明VLA具备强大的空间推理能力，能够解释涉及未见过物体的新型方向指令。总体而言，我们的方法展示了显著超越现有模仿学习方法（如OpenVLA、DexVLA和pi-zero）的推理和理解能力。这项工作代表了朝着开发真正可泛化的、具有强大推理能力的机器人基础模型的重要进展。 
+
+---
+# DexUMI: Using Human Hand as the Universal Manipulation Interface for Dexterous Manipulation 
+
+**Title (ZH)**: DexUMI: 使用人类手部作为通用操作界面进行灵巧操作 
+
+**Authors**: Mengda Xu, Han Zhang, Yifan Hou, Zhenjia Xu, Linxi Fan, Manuela Veloso, Shuran Song  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.21864)  
+
+**Abstract**: We present DexUMI - a data collection and policy learning framework that uses the human hand as the natural interface to transfer dexterous manipulation skills to various robot hands. DexUMI includes hardware and software adaptations to minimize the embodiment gap between the human hand and various robot hands. The hardware adaptation bridges the kinematics gap using a wearable hand exoskeleton. It allows direct haptic feedback in manipulation data collection and adapts human motion to feasible robot hand motion. The software adaptation bridges the visual gap by replacing the human hand in video data with high-fidelity robot hand inpainting. We demonstrate DexUMI's capabilities through comprehensive real-world experiments on two different dexterous robot hand hardware platforms, achieving an average task success rate of 86%. 
+
+**Abstract (ZH)**: DexUMI - 一种以人类手部作為自然接口，將靈巧操作技能轉移至各種機械手的数据采集与策略学习框架 
+
+---
+# Streaming Flow Policy: Simplifying diffusion$/$flow-matching policies by treating action trajectories as flow trajectories 
+
+**Title (ZH)**: 流式流策略：通过将动作轨迹视为流轨迹来简化扩散/流匹配策略 
+
+**Authors**: Sunshine Jiang, Xiaolin Fang, Nicholas Roy, Tomás Lozano-Pérez, Leslie Pack Kaelbling, Siddharth Ancha  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.21851)  
+
+**Abstract**: Recent advances in diffusion$/$flow-matching policies have enabled imitation learning of complex, multi-modal action trajectories. However, they are computationally expensive because they sample a trajectory of trajectories: a diffusion$/$flow trajectory of action trajectories. They discard intermediate action trajectories, and must wait for the sampling process to complete before any actions can be executed on the robot. We simplify diffusion$/$flow policies by treating action trajectories as flow trajectories. Instead of starting from pure noise, our algorithm samples from a narrow Gaussian around the last action. Then, it incrementally integrates a velocity field learned via flow matching to produce a sequence of actions that constitute a single trajectory. This enables actions to be streamed to the robot on-the-fly during the flow sampling process, and is well-suited for receding horizon policy execution. Despite streaming, our method retains the ability to model multi-modal behavior. We train flows that stabilize around demonstration trajectories to reduce distribution shift and improve imitation learning performance. Streaming flow policy outperforms prior methods while enabling faster policy execution and tighter sensorimotor loops for learning-based robot control. Project website: this https URL 
+
+**Abstract (ZH)**: 近期，扩散/流匹配策略的进步使得模仿学习复杂多模态动作轨迹成为可能。然而，这些方法由于需要采样轨迹的轨迹——一个动作轨迹的扩散/流轨迹——而计算成本高昂。它们会丢弃中间的动作轨迹，并且必须等到采样过程完成之后才能在机器人上执行任何动作。我们通过将动作轨迹视为流轨迹来简化扩散/流策略。我们的算法从上次动作附近的窄高斯分布中采样，然后通过流匹配学习的流量场增量积分，生成一个构成单一轨迹的动作序列。这使得动作能够在流采样过程中实时流式传输到机器人，并且适合进行递推最优策略执行。尽管如此，我们的方法仍然能够建模多模态行为。我们训练流使其围绕演示轨迹稳定，以减少分布偏移并提高模仿学习性能。流式流策略在保持更快的策略执行速度和更紧密的感知运动循环方面优于先前的方法，同时也适用于基于学习的机器人控制。项目网站: this https URL。 
+
+---
+# MIND-Stack: Modular, Interpretable, End-to-End Differentiability for Autonomous Navigation 
+
+**Title (ZH)**: MIND-Stack: 模块化、可解释、端到端可微分自主导航 
+
+**Authors**: Felix Jahncke, Johannes Betz  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.21734)  
+
+**Abstract**: Developing robust, efficient navigation algorithms is challenging. Rule-based methods offer interpretability and modularity but struggle with learning from large datasets, while end-to-end neural networks excel in learning but lack transparency and modularity. In this paper, we present MIND-Stack, a modular software stack consisting of a localization network and a Stanley Controller with intermediate human interpretable state representations and end-to-end differentiability. Our approach enables the upstream localization module to reduce the downstream control error, extending its role beyond state estimation. Unlike existing research on differentiable algorithms that either lack modules of the autonomous stack to span from sensor input to actuator output or real-world implementation, MIND-Stack offers both capabilities. We conduct experiments that demonstrate the ability of the localization module to reduce the downstream control loss through its end-to-end differentiability while offering better performance than state-of-the-art algorithms. We showcase sim-to-real capabilities by deploying the algorithm on a real-world embedded autonomous platform with limited computation power and demonstrate simultaneous training of both the localization and controller towards one goal. While MIND-Stack shows good results, we discuss the incorporation of additional modules from the autonomous navigation pipeline in the future, promising even greater stability and performance in the next iterations of the framework. 
+
+**Abstract (ZH)**: 开发稳健、高效的导航算法具有挑战性。基于规则的方法提供了可解释性和模块化，但难以从大型数据集中学习，而端到端神经网络在学习方面表现出色，但在透明性和模块化方面存在不足。在本文中，我们提出了一种模块化软件栈MIND-Stack，其中包括一个定位网络和斯坦利控制器，并且具有中间的人类可解释状态表示和端到端可微性。我们的方法使上游定位模块能够减少下游控制误差，使其角色超越了状态估计。与现有基于可微性算法的研究相比，MIND-Stack不仅涵盖了从传感器输入到执行器输出的自主栈模块，还能够在实际应用中实施。我们进行了实验，证明了定位模块通过其端到端可微性减少下游控制损失的能力，并展示了与最先进的算法相比更好的性能。我们通过在具有有限计算能力的实际嵌入式自主平台上部署算法展示了其从仿真到现实的 capabilities，并展示了同时对定位和控制器进行训练以实现一个目标的可能性。虽然MIND-Stack显示了良好的结果，但我们讨论了未来将自主导航管道中的其他模块纳入的可能性，这将在框架的后续迭代中实现更加稳定和高性能。 
+
+---
+# Real-World Deployment of Cloud Autonomous Mobility System Using 5G Networks for Outdoor and Indoor Environments 
+
+**Title (ZH)**: 基于5G网络的云自主移动系统在室内外环境中的实际部署 
+
+**Authors**: Yufeng Yang, Minghao Ning, Keqi Shu, Aladdin Saleh, Ehsan Hashemi, Amir Khajepour  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.21676)  
+
+**Abstract**: The growing complexity of both outdoor and indoor mobility systems demands scalable, cost-effective, and reliable perception and communication frameworks. This work presents the real-world deployment and evaluation of a Cloud Autonomous Mobility (CAM) system that leverages distributed sensor nodes connected via 5G networks, which integrates LiDAR- and camera-based perception at infrastructure units, cloud computing for global information fusion, and Ultra-Reliable Low Latency Communications (URLLC) to enable real-time situational awareness and autonomous operation. The CAM system is deployed in two distinct environments: a dense urban roundabout and a narrow indoor hospital corridor. Field experiments show improved traffic monitoring, hazard detection, and asset management capabilities. The paper also discusses practical deployment challenges and shares key insights for scaling CAM systems. The results highlight the potential of cloud-based infrastructure perception to advance both outdoor and indoor intelligent transportation systems. 
+
+**Abstract (ZH)**: 不断增长的室内外移动系统复杂性要求具备扩展性、成本效益和可靠性的感知与通信框架。本文介绍了基于5G网络连接分布式传感器节点的Cloud Autonomous Mobility (CAM)系统的实际部署与评估，该系统集成了基础设施单位的LiDAR-和相机感知、基于云的全球信息融合以及超可靠低时延通信（URLLC），以实现实时态势感知和自主运行。CAM系统在两个不同的环境中部署：一个密集的城市立交桥和一个狭窄的室内医院走廊。现场实验展示了改进的交通监控、危险检测和资产管理能力。本文还讨论了实际部署中的挑战，并分享了扩展CAM系统的关键见解。研究结果突显了基于云的基础设施感知在推进室内外智能交通运输系统方面的发展潜力。 
+
+---
+# Convergent Functions, Divergent Forms 
+
+**Title (ZH)**: 收敛函数，发散形式 
+
+**Authors**: Hyeonseong Jeon, Ainaz Eftekhar, Aaron Walsman, Kuo-Hao Zeng, Ali Farhadi, Ranjay Krishna  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.21665)  
+
+**Abstract**: We introduce LOKI, a compute-efficient framework for co-designing morphologies and control policies that generalize across unseen tasks. Inspired by biological adaptation -- where animals quickly adjust to morphological changes -- our method overcomes the inefficiencies of traditional evolutionary and quality-diversity algorithms. We propose learning convergent functions: shared control policies trained across clusters of morphologically similar designs in a learned latent space, drastically reducing the training cost per design. Simultaneously, we promote divergent forms by replacing mutation with dynamic local search, enabling broader exploration and preventing premature convergence. The policy reuse allows us to explore 780$\times$ more designs using 78% fewer simulation steps and 40% less compute per design. Local competition paired with a broader search results in a diverse set of high-performing final morphologies. Using the UNIMAL design space and a flat-terrain locomotion task, LOKI discovers a rich variety of designs -- ranging from quadrupeds to crabs, bipedals, and spinners -- far more diverse than those produced by prior work. These morphologies also transfer better to unseen downstream tasks in agility, stability, and manipulation domains (e.g., 2$\times$ higher reward on bump and push box incline tasks). Overall, our approach produces designs that are both diverse and adaptable, with substantially greater sample efficiency than existing co-design methods. (Project website: this https URL) 
+
+**Abstract (ZH)**: LOKI：一种高效的框架，用于跨未见任务协同设计形态和控制策略 
+
+---
+# PartInstruct: Part-level Instruction Following for Fine-grained Robot Manipulation 
+
+**Title (ZH)**: Part级指令跟随：细粒度机器人操作的部件级指令跟随 
+
+**Authors**: Yifan Yin, Zhengtao Han, Shivam Aarya, Jianxin Wang, Shuhang Xu, Jiawei Peng, Angtian Wang, Alan Yuille, Tianmin Shu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.21652)  
+
+**Abstract**: Fine-grained robot manipulation, such as lifting and rotating a bottle to display the label on the cap, requires robust reasoning about object parts and their relationships with intended tasks. Despite recent advances in training general-purpose robot manipulation policies guided by language instructions, there is a notable lack of large-scale datasets for fine-grained manipulation tasks with part-level instructions and diverse 3D object instances annotated with part-level labels. In this work, we introduce PartInstruct, the first large-scale benchmark for training and evaluating fine-grained robot manipulation models using part-level instructions. PartInstruct comprises 513 object instances across 14 categories, each annotated with part-level information, and 1302 fine-grained manipulation tasks organized into 16 task classes. Our training set consists of over 10,000 expert demonstrations synthesized in a 3D simulator, where each demonstration is paired with a high-level task instruction, a chain of base part-based skill instructions, and ground-truth 3D information about the object and its parts. Additionally, we designed a comprehensive test suite to evaluate the generalizability of learned policies across new states, objects, and tasks. We evaluated several state-of-the-art robot manipulation approaches, including end-to-end vision-language policy learning and bi-level planning models for robot manipulation on our benchmark. The experimental results reveal that current models struggle to robustly ground part concepts and predict actions in 3D space, and face challenges when manipulating object parts in long-horizon tasks. 
+
+**Abstract (ZH)**: 面向部件级指令的大规模精细粒度机器人 manipulation 挑战集 
+
+---
+# Fast and Cost-effective Speculative Edge-Cloud Decoding with Early Exits 
+
+**Title (ZH)**: 快速且成本效益高的推测性边缘-云解码方法及其早期退出机制 
+
+**Authors**: Yeshwanth Venkatesha, Souvik Kundu, Priyadarshini Panda  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.21594)  
+
+**Abstract**: Large Language Models (LLMs) enable various applications on edge devices such as smartphones, wearables, and embodied robots. However, their deployment often depends on expensive cloud-based APIs, creating high operational costs, which limit access for smaller organizations and raise sustainability concerns. Certain LLMs can be deployed on-device, offering a cost-effective solution with reduced latency and improved privacy. Yet, limited computing resources constrain the size and accuracy of models that can be deployed, necessitating a collaborative design between edge and cloud. We propose a fast and cost-effective speculative edge-cloud decoding framework with a large target model on the server and a small draft model on the device. By introducing early exits in the target model, tokens are generated mid-verification, allowing the client to preemptively draft subsequent tokens before final verification, thus utilizing idle time and enhancing parallelism between edge and cloud. Using an NVIDIA Jetson Nano (client) and an A100 GPU (server) with Vicuna-68M (draft) and Llama2-7B (target) models, our method achieves up to a 35% reduction in latency compared to cloud-based autoregressive decoding, with an additional 11% improvement from preemptive drafting. To demonstrate real-world applicability, we deploy our method on the Unitree Go2 quadruped robot using Vision-Language Model (VLM) based control, achieving a 21% speedup over traditional cloud-based autoregressive decoding. These results demonstrate the potential of our framework for real-time LLM and VLM applications on resource-constrained edge devices. 
+
+**Abstract (ZH)**: Large Language Models (LLMs)边云协同推理框架：基于目标大模型和draft小模型的快速低成本方法 
+
+---
+# CogAD: Cognitive-Hierarchy Guided End-to-End Autonomous Driving 
+
+**Title (ZH)**: CogAD：基于认知层级的端到端自主驾驶 
+
+**Authors**: Zhennan Wang, Jianing Teng, Canqun Xiang, Kangliang Chen, Xing Pan, Lu Deng, Weihao Gu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.21581)  
+
+**Abstract**: While end-to-end autonomous driving has advanced significantly, prevailing methods remain fundamentally misaligned with human cognitive principles in both perception and planning. In this paper, we propose CogAD, a novel end-to-end autonomous driving model that emulates the hierarchical cognition mechanisms of human drivers. CogAD implements dual hierarchical mechanisms: global-to-local context processing for human-like perception and intent-conditioned multi-mode trajectory generation for cognitively-inspired planning. The proposed method demonstrates three principal advantages: comprehensive environmental understanding through hierarchical perception, robust planning exploration enabled by multi-level planning, and diverse yet reasonable multi-modal trajectory generation facilitated by dual-level uncertainty modeling. Extensive experiments on nuScenes and Bench2Drive demonstrate that CogAD achieves state-of-the-art performance in end-to-end planning, exhibiting particular superiority in long-tail scenarios and robust generalization to complex real-world driving conditions. 
+
+**Abstract (ZH)**: 端到端自动驾驶中的认知驱动模型CogAD 
+
+---
+# Towards Human-Like Trajectory Prediction for Autonomous Driving: A Behavior-Centric Approach 
+
+**Title (ZH)**: 面向自主驾驶的人类like轨迹预测：一种行为导向的方法 
+
+**Authors**: Haicheng Liao, Zhenning Li, Guohui Zhang, Keqiang Li, Chengzhong Xu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.21565)  
+
+**Abstract**: Predicting the trajectories of vehicles is crucial for the development of autonomous driving (AD) systems, particularly in complex and dynamic traffic environments. In this study, we introduce HiT (Human-like Trajectory Prediction), a novel model designed to enhance trajectory prediction by incorporating behavior-aware modules and dynamic centrality measures. Unlike traditional methods that primarily rely on static graph structures, HiT leverages a dynamic framework that accounts for both direct and indirect interactions among traffic participants. This allows the model to capture the subtle yet significant influences of surrounding vehicles, enabling more accurate and human-like predictions. To evaluate HiT's performance, we conducted extensive experiments using diverse and challenging real-world datasets, including NGSIM, HighD, RounD, ApolloScape, and MoCAD++. The results demonstrate that HiT consistently outperforms other top models across multiple metrics, particularly excelling in scenarios involving aggressive driving behaviors. This research presents a significant step forward in trajectory prediction, offering a more reliable and interpretable approach for enhancing the safety and efficiency of fully autonomous driving systems. 
+
+**Abstract (ZH)**: Human-like 轨迹预测对于自动驾驶系统的发展至关重要，特别是在复杂的动态交通环境中。在本研究中，我们介绍了HiT（Human-like Trajectory Prediction）模型，该模型通过引入行为感知模块和动态中心性度量来增强轨迹预测。与主要依赖静态图结构的传统方法不同，HiT 利用了一个动态框架，能够考虑交通参与者之间的直接和间接交互。这使得模型能够捕捉周围车辆的细微但重要的影响，从而实现更准确和具有人类特征的预测。为了评估HiT的性能，我们使用了多样且具有挑战性的现实世界数据集，包括NGSIM、HighD、RounD、ApolloScape和MoCAD++。结果表明，HiT 在多个指标上都优于其他顶级模型，特别是在涉及侵略性驾驶行为的场景中表现尤为出色。本研究在轨迹预测方面迈出了重要一步，提供了增强完全自动驾驶系统安全性和效率的更可靠和可解释的方法。 
+
+---
+# Spot-On: A Mixed Reality Interface for Multi-Robot Cooperation 
+
+**Title (ZH)**: Spot-On: 一种用于多机器人协同的混合现实界面 
+
+**Authors**: Tim Engelbracht, Petar Lukovic, Tjark Behrens, Kai Lascheit, René Zurbrügg, Marc Pollefeys, Hermann Blum, Zuria Bauer  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.22539)  
+
+**Abstract**: Recent progress in mixed reality (MR) and robotics is enabling increasingly sophisticated forms of human-robot collaboration. Building on these developments, we introduce a novel MR framework that allows multiple quadruped robots to operate in semantically diverse environments via a MR interface. Our system supports collaborative tasks involving drawers, swing doors, and higher-level infrastructure such as light switches. A comprehensive user study verifies both the design and usability of our app, with participants giving a "good" or "very good" rating in almost all cases. Overall, our approach provides an effective and intuitive framework for MR-based multi-robot collaboration in complex, real-world scenarios. 
+
+**Abstract (ZH)**: 最近混合现实(MR)和机器人技术的发展使人类与机器人更加复杂的协作成为可能。在此基础上，我们提出了一种新型的MR框架，该框架通过MR接口使多个四足机器人能够在具有语义差异的环境中协同操作。该系统支持涉及抽屉、摆门以及更高层次的基础设施如开关的协作任务。全面的用户研究验证了该应用程序的设计和可用性，参与者中几乎所有人都给予了“良好”或“非常好”的评价。总体而言，我们的方法为基于MR的多机器人协作在复杂的真实场景中提供了有效且直观的框架。 
+
+---
+# COSMOS: A Data-Driven Probabilistic Time Series simulator for Chemical Plumes across Spatial Scales 
+
+**Title (ZH)**: COSMOS: 一种基于数据驱动的概率时空序列模拟器，用于化学烟雾的多尺度模拟 
+
+**Authors**: Arunava Nag, Floris van Breugel  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.22436)  
+
+**Abstract**: The development of robust odor navigation strategies for automated environmental monitoring applications requires realistic simulations of odor time series for agents moving across large spatial scales. Traditional approaches that rely on computational fluid dynamics (CFD) methods can capture the spatiotemporal dynamics of odor plumes, but are impractical for large-scale simulations due to their computational expense. On the other hand, puff-based simulations, although computationally tractable for large scales and capable of capturing the stochastic nature of plumes, fail to reproduce naturalistic odor statistics. Here, we present COSMOS (Configurable Odor Simulation Model over Scalable Spaces), a data-driven probabilistic framework that synthesizes realistic odor time series from spatial and temporal features of real datasets. COSMOS generates similar distributions of key statistical features such as whiff frequency, duration, and concentration as observed in real data, while dramatically reducing computational overhead. By reproducing critical statistical properties across a variety of flow regimes and scales, COSMOS enables the development and evaluation of agent-based navigation strategies with naturalistic odor experiences. To demonstrate its utility, we compare odor-tracking agents exposed to CFD-generated plumes versus COSMOS simulations, showing that both their odor experiences and resulting behaviors are quite similar. 
+
+**Abstract (ZH)**: 基于可扩展空间的可配置气味模拟模型（COSMOS）：实现现实主义气味时间序列的驱动型概率框架 
+
+---
+# Zero-Shot 3D Visual Grounding from Vision-Language Models 
+
+**Title (ZH)**: 零样本3D视觉定位从视觉-语言模型 
+
+**Authors**: Rong Li, Shijie Li, Lingdong Kong, Xulei Yang, Junwei Liang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.22429)  
+
+**Abstract**: 3D Visual Grounding (3DVG) seeks to locate target objects in 3D scenes using natural language descriptions, enabling downstream applications such as augmented reality and robotics. Existing approaches typically rely on labeled 3D data and predefined categories, limiting scalability to open-world settings. We present SeeGround, a zero-shot 3DVG framework that leverages 2D Vision-Language Models (VLMs) to bypass the need for 3D-specific training. To bridge the modality gap, we introduce a hybrid input format that pairs query-aligned rendered views with spatially enriched textual descriptions. Our framework incorporates two core components: a Perspective Adaptation Module that dynamically selects optimal viewpoints based on the query, and a Fusion Alignment Module that integrates visual and spatial signals to enhance localization precision. Extensive evaluations on ScanRefer and Nr3D confirm that SeeGround achieves substantial improvements over existing zero-shot baselines -- outperforming them by 7.7% and 7.1%, respectively -- and even rivals fully supervised alternatives, demonstrating strong generalization under challenging conditions. 
+
+**Abstract (ZH)**: 3D视觉定位（3DVG）旨在使用自然语言描述在3D场景中定位目标物体，从而支持增强现实和机器人等下游应用。现有方法通常依赖于标注的3D数据和预定义的类别，限制了其在开放世界环境中的可扩展性。我们提出了一种零样本3DVG框架SeeGround，该框架利用2D视觉语言模型（VLMs）绕过了专门的3D训练需求。为了弥合模态差距，我们引入了一种混合输入格式，将查询对齐的渲染视图与空间丰富的文本描述配对。该框架包含两个核心组件：透视适配模块，根据查询动态选择最佳视点；融合对齐模块，将视觉和空间信号整合以提高定位精度。在ScanRefer和Nr3D上的广泛评估表明，SeeGround在零样本基准之上取得了显著改进，分别优于它们7.7%和7.1%，甚至媲美全监督替代方案，展示了其在挑战性条件下的强大泛化能力。 
+
+---
+# GeoDrive: 3D Geometry-Informed Driving World Model with Precise Action Control 
+
+**Title (ZH)**: GeoDrive: 基于精确几何信息的三维驾驶世界模型与行动控制 
+
+**Authors**: Anthony Chen, Wenzhao Zheng, Yida Wang, Xueyang Zhang, Kun Zhan, Peng Jia, Kurt Keutzer, Shangbang Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.22421)  
+
+**Abstract**: Recent advancements in world models have revolutionized dynamic environment simulation, allowing systems to foresee future states and assess potential actions. In autonomous driving, these capabilities help vehicles anticipate the behavior of other road users, perform risk-aware planning, accelerate training in simulation, and adapt to novel scenarios, thereby enhancing safety and reliability. Current approaches exhibit deficiencies in maintaining robust 3D geometric consistency or accumulating artifacts during occlusion handling, both critical for reliable safety assessment in autonomous navigation tasks. To address this, we introduce GeoDrive, which explicitly integrates robust 3D geometry conditions into driving world models to enhance spatial understanding and action controllability. Specifically, we first extract a 3D representation from the input frame and then obtain its 2D rendering based on the user-specified ego-car trajectory. To enable dynamic modeling, we propose a dynamic editing module during training to enhance the renderings by editing the positions of the vehicles. Extensive experiments demonstrate that our method significantly outperforms existing models in both action accuracy and 3D spatial awareness, leading to more realistic, adaptable, and reliable scene modeling for safer autonomous driving. Additionally, our model can generalize to novel trajectories and offers interactive scene editing capabilities, such as object editing and object trajectory control. 
+
+**Abstract (ZH)**: 近期世界模型的发展革新了动态环境的模拟，使系统能够预见未来状态并评估潜在行动。在自动驾驶领域，这些能力帮助车辆预判其他道路使用者的行为，进行风险意识规划，加速模拟训练，并适应新的场景，从而提升安全性和可靠性。现有方法在保持稳健的3D几何一致性或处理遮挡时积累伪影，这些都是可靠的安全评估的关键。为解决这一问题，我们提出了GeoDrive，这是一种将稳健的3D几何条件显式集成到驾驶世界模型中的方法，以增强空间理解和行动可控性。具体而言，我们首先从输入帧中提取3D表示，然后基于用户指定的ego车辆轨迹获取其2D渲染。为实现动态建模，我们在训练期间提出了一个动态编辑模块，通过编辑车辆的位置来增强渲染效果。实验结果表明，我们的方法在动作准确性和3D空间意识方面显著优于现有模型，从而为更安全的自动驾驶提供了更为逼真、适应性强且可靠的场景建模。此外，我们的模型能够泛化到新的轨迹，并提供了交互式场景编辑能力，如对象编辑和对象轨迹控制。 
+
+---
+# Efficient Precision-Scalable Hardware for Microscaling (MX) Processing in Robotics Learning 
+
+**Title (ZH)**: 适用于机器人学习的微缩处理(MX)高效可扩展精度硬件 
+
+**Authors**: Stef Cuyckens, Xiaoling Yi, Nitish Satya Murthy, Chao Fang, Marian Verhelst  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.22404)  
+
+**Abstract**: Autonomous robots require efficient on-device learning to adapt to new environments without cloud dependency. For this edge training, Microscaling (MX) data types offer a promising solution by combining integer and floating-point representations with shared exponents, reducing energy consumption while maintaining accuracy. However, the state-of-the-art continuous learning processor, namely Dacapo, faces limitations with its MXINT-only support and inefficient vector-based grouping during backpropagation. In this paper, we present, to the best of our knowledge, the first work that addresses these limitations with two key innovations: (1) a precision-scalable arithmetic unit that supports all six MX data types by exploiting sub-word parallelism and unified integer and floating-point processing; and (2) support for square shared exponent groups to enable efficient weight handling during backpropagation, removing storage redundancy and quantization overhead. We evaluate our design against Dacapo under iso-peak-throughput on four robotics workloads in TSMC 16nm FinFET technology at 500MHz, reaching a 25.6% area reduction, a 51% lower memory footprint, and 4x higher effective training throughput while achieving comparable energy-efficiency, enabling efficient robotics continual learning at the edge. 
+
+**Abstract (ZH)**: 自主机器人需要高效的设备端学习以在无需云依赖的情况下适应新环境。为此边缘训练需求，Microscaling (MX) 数据类型通过结合整数和浮点表示并共享指数，提供了 promising 的解决方案，同时减少能耗并保持准确度。然而，最先进的连续学习处理器 Dacapo 受限于其仅支持 MXINT 并且在反向传播期间向量基分组效率低下。本文提出了我们所知的首个解决这些限制的方法，提出了两项关键技术创新：(1) 一种精度可扩展的算术单元，通过利用子词并行性和统一的整数和浮点处理，支持所有六种 MX 数据类型；(2) 支持方形共享指数分组，以在反向传播期间实现高效权重处理，移除存储冗余和量化开销。我们在 TSMC 16nm FinFET 技术下以500MHz的等峰值吞吐量对我们的设计与 Dacapo 进行评估，实现了 25.6% 的面积缩减，51% 更低的内存占用，并且有效训练吞吐量提高4倍，同时保持可比拟的能效，从而在边缘实现高效的机器人持续学习。 
+
+---
+# Task-Driven Implicit Representations for Automated Design of LiDAR Systems 
+
+**Title (ZH)**: 任务驱动的隐式表示方法及其在LiDAR系统自动化设计中的应用 
+
+**Authors**: Nikhil Behari, Aaron Young, Akshat Dave, Ramesh Raskar  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.22344)  
+
+**Abstract**: Imaging system design is a complex, time-consuming, and largely manual process; LiDAR design, ubiquitous in mobile devices, autonomous vehicles, and aerial imaging platforms, adds further complexity through unique spatial and temporal sampling requirements. In this work, we propose a framework for automated, task-driven LiDAR system design under arbitrary constraints. To achieve this, we represent LiDAR configurations in a continuous six-dimensional design space and learn task-specific implicit densities in this space via flow-based generative modeling. We then synthesize new LiDAR systems by modeling sensors as parametric distributions in 6D space and fitting these distributions to our learned implicit density using expectation-maximization, enabling efficient, constraint-aware LiDAR system design. We validate our method on diverse tasks in 3D vision, enabling automated LiDAR system design across real-world-inspired applications in face scanning, robotic tracking, and object detection. 
+
+**Abstract (ZH)**: 基于任务驱动的限制下自动LiDAR系统设计框架 
+
+---
+# Efficient Dynamic Shielding for Parametric Safety Specifications 
+
+**Title (ZH)**: 参数安全规范的高效动态屏蔽 
+
+**Authors**: Davide Corsi, Kaushik Mallik, Andoni Rodriguez, Cesar Sanchez  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.22104)  
+
+**Abstract**: Shielding has emerged as a promising approach for ensuring safety of AI-controlled autonomous systems. The algorithmic goal is to compute a shield, which is a runtime safety enforcement tool that needs to monitor and intervene the AI controller's actions if safety could be compromised otherwise. Traditional shields are designed statically for a specific safety requirement. Therefore, if the safety requirement changes at runtime due to changing operating conditions, the shield needs to be recomputed from scratch, causing delays that could be fatal. We introduce dynamic shields for parametric safety specifications, which are succinctly represented sets of all possible safety specifications that may be encountered at runtime. Our dynamic shields are statically designed for a given safety parameter set, and are able to dynamically adapt as the true safety specification (permissible by the parameters) is revealed at runtime. The main algorithmic novelty lies in the dynamic adaptation procedure, which is a simple and fast algorithm that utilizes known features of standard safety shields, like maximal permissiveness. We report experimental results for a robot navigation problem in unknown territories, where the safety specification evolves as new obstacles are discovered at runtime. In our experiments, the dynamic shields took a few minutes for their offline design, and took between a fraction of a second and a few seconds for online adaptation at each step, whereas the brute-force online recomputation approach was up to 5 times slower. 
+
+**Abstract (ZH)**: 动态参数化安全规范下的自适应屏蔽技术 
+
+---
+# From Failures to Fixes: LLM-Driven Scenario Repair for Self-Evolving Autonomous Driving 
+
+**Title (ZH)**: 从失败到修复：基于LLM的自主驾驶场景修复以实现自我进化 
+
+**Authors**: Xinyu Xia, Xingjun Ma, Yunfeng Hu, Ting Qu, Hong Chen, Xun Gong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.22067)  
+
+**Abstract**: Ensuring robust and generalizable autonomous driving requires not only broad scenario coverage but also efficient repair of failure cases, particularly those related to challenging and safety-critical scenarios. However, existing scenario generation and selection methods often lack adaptivity and semantic relevance, limiting their impact on performance improvement. In this paper, we propose \textbf{SERA}, an LLM-powered framework that enables autonomous driving systems to self-evolve by repairing failure cases through targeted scenario recommendation. By analyzing performance logs, SERA identifies failure patterns and dynamically retrieves semantically aligned scenarios from a structured bank. An LLM-based reflection mechanism further refines these recommendations to maximize relevance and diversity. The selected scenarios are used for few-shot fine-tuning, enabling targeted adaptation with minimal data. Experiments on the benchmark show that SERA consistently improves key metrics across multiple autonomous driving baselines, demonstrating its effectiveness and generalizability under safety-critical conditions. 
+
+**Abstract (ZH)**: 确保自主驾驶系统在各种场景下的鲁棒性和普适性不仅需要广泛的场景覆盖，还需要有效地修复失败案例，特别是那些与具有挑战性和安全性关键的场景相关的情况。现有的场景生成和选择方法往往缺乏适应性和语义相关性，限制了其对性能改进的影响。本文提出了一种基于LLM的框架SERA，该框架通过目标化的场景推荐机制使自主驾驶系统能够自我进化，修复失败案例。通过分析性能日志，SERA识别失败模式并从结构化银行中动态检索语义匹配的场景。基于LLM的反思机制进一步完善这些推荐，以最大化相关性和多样性。选定的场景用于少量数据的微调，从而实现有针对性的适应。实验结果表明，SERA在多个自主驾驶基准上持续改善了关键指标，证明了其在安全性关键条件下的有效性与普适性。 
+
+---
+# A Provable Approach for End-to-End Safe Reinforcement Learning 
+
+**Title (ZH)**: 可验证的端到端安全强化学习方法 
+
+**Authors**: Akifumi Wachi, Kohei Miyaguchi, Takumi Tanabe, Rei Sato, Youhei Akimoto  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.21852)  
+
+**Abstract**: A longstanding goal in safe reinforcement learning (RL) is a method to ensure the safety of a policy throughout the entire process, from learning to operation. However, existing safe RL paradigms inherently struggle to achieve this objective. We propose a method, called Provably Lifetime Safe RL (PLS), that integrates offline safe RL with safe policy deployment to address this challenge. Our proposed method learns a policy offline using return-conditioned supervised learning and then deploys the resulting policy while cautiously optimizing a limited set of parameters, known as target returns, using Gaussian processes (GPs). Theoretically, we justify the use of GPs by analyzing the mathematical relationship between target and actual returns. We then prove that PLS finds near-optimal target returns while guaranteeing safety with high probability. Empirically, we demonstrate that PLS outperforms baselines both in safety and reward performance, thereby achieving the longstanding goal to obtain high rewards while ensuring the safety of a policy throughout the lifetime from learning to operation. 
+
+**Abstract (ZH)**: 证明可终身安全的强化学习（Provably Lifetime Safe RL） 
+
+---
+# Visual Loop Closure Detection Through Deep Graph Consensus 
+
+**Title (ZH)**: 通过深度图共识进行视觉环回闭合检测 
+
+**Authors**: Martin Büchner, Liza Dahiya, Simon Dorer, Vipul Ramtekkar, Kenji Nishimiya, Daniele Cattaneo, Abhinav Valada  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.21754)  
+
+**Abstract**: Visual loop closure detection traditionally relies on place recognition methods to retrieve candidate loops that are validated using computationally expensive RANSAC-based geometric verification. As false positive loop closures significantly degrade downstream pose graph estimates, verifying a large number of candidates in online simultaneous localization and mapping scenarios is constrained by limited time and compute resources. While most deep loop closure detection approaches only operate on pairs of keyframes, we relax this constraint by considering neighborhoods of multiple keyframes when detecting loops. In this work, we introduce LoopGNN, a graph neural network architecture that estimates loop closure consensus by leveraging cliques of visually similar keyframes retrieved through place recognition. By propagating deep feature encodings among nodes of the clique, our method yields high-precision estimates while maintaining high recall. Extensive experimental evaluations on the TartanDrive 2.0 and NCLT datasets demonstrate that LoopGNN outperforms traditional baselines. Additionally, an ablation study across various keypoint extractors demonstrates that our method is robust, regardless of the type of deep feature encodings used, and exhibits higher computational efficiency compared to classical geometric verification baselines. We release our code, supplementary material, and keyframe data at this https URL. 
+
+**Abstract (ZH)**: 视觉循回闭合检测传统上依赖于位置识别方法来检索候选循回闭合，并使用计算成本高的RANSAC基几何验证进行验证。由于误判的循回闭合显著降低后续姿态图估计精度，在在线 simultaneous localization and mapping 情景中验证大量候选闭合受到有限时间和计算资源的约束。虽然大多数深度循回闭合检测方法仅操作键帧对，我们通过在检测循回闭合时考虑多个键帧的邻域来放宽这一约束。在本文中，我们引入了 LoopGNN，这是一种图神经网络架构，通过利用通过位置识别检索到的视觉相似键帧的团来估计循回闭合共识。通过在团的节点之间传播深度特征编码，我们的方法能够提供高精度估计并保持高召回率。在 TartanDrive 2.0 和 NCLT 数据集上的广泛实验评估表明，LoopGNN 超过了传统基线。此外，我们在各种关键点提取器上的消融研究表明，无论使用何种深度特征编码，我们的方法都是稳健的，并且在计算效率上优于经典几何验证基线。我们在此 https://链接提供了我们的代码、补充材料和键帧数据。 
+
+---
+# How Much Do Large Language Models Know about Human Motion? A Case Study in 3D Avatar Control 
+
+**Title (ZH)**: 大型语言模型对人体运动了解多少？以3D avatar控制为例 
+
+**Authors**: Kunhang Li, Jason Naradowsky, Yansong Feng, Yusuke Miyao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.21531)  
+
+**Abstract**: We explore Large Language Models (LLMs)' human motion knowledge through 3D avatar control. Given a motion instruction, we prompt LLMs to first generate a high-level movement plan with consecutive steps (High-level Planning), then specify body part positions in each step (Low-level Planning), which we linearly interpolate into avatar animations as a clear verification lens for human evaluators. Through carefully designed 20 representative motion instructions with full coverage of basic movement primitives and balanced body part usage, we conduct comprehensive evaluations including human assessment of both generated animations and high-level movement plans, as well as automatic comparison with oracle positions in low-level planning. We find that LLMs are strong at interpreting the high-level body movements but struggle with precise body part positioning. While breaking down motion queries into atomic components improves planning performance, LLMs have difficulty with multi-step movements involving high-degree-of-freedom body parts. Furthermore, LLMs provide reasonable approximation for general spatial descriptions, but fail to handle precise spatial specifications in text, and the precise spatial-temporal parameters needed for avatar control. Notably, LLMs show promise in conceptualizing creative motions and distinguishing culturally-specific motion patterns. 
+
+**Abstract (ZH)**: 我们通过3D avatar控制探索大语言模型的人体运动知识。 
+
+---
