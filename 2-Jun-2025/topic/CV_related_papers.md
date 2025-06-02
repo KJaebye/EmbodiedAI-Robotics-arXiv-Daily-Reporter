@@ -1,0 +1,143 @@
+# RealDrive: Retrieval-Augmented Driving with Diffusion Models 
+
+**Title (ZH)**: 实驱：基于扩散模型的检索增强驾驶 
+
+**Authors**: Wenhao Ding, Sushant Veer, Yuxiao Chen, Yulong Cao, Chaowei Xiao, Marco Pavone  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24808)  
+
+**Abstract**: Learning-based planners generate natural human-like driving behaviors by learning to reason about nuanced interactions from data, overcoming the rigid behaviors that arise from rule-based planners. Nonetheless, data-driven approaches often struggle with rare, safety-critical scenarios and offer limited controllability over the generated trajectories. To address these challenges, we propose RealDrive, a Retrieval-Augmented Generation (RAG) framework that initializes a diffusion-based planning policy by retrieving the most relevant expert demonstrations from the training dataset. By interpolating between current observations and retrieved examples through a denoising process, our approach enables fine-grained control and safe behavior across diverse scenarios, leveraging the strong prior provided by the retrieved scenario. Another key insight we produce is that a task-relevant retrieval model trained with planning-based objectives results in superior planning performance in our framework compared to a task-agnostic retriever. Experimental results demonstrate improved generalization to long-tail events and enhanced trajectory diversity compared to standard learning-based planners -- we observe a 40% reduction in collision rate on the Waymo Open Motion dataset with RAG. 
+
+**Abstract (ZH)**: 基于学习的规划器通过从数据中学习细微交互来生成自然的人类驾驶行为，克服了基于规则的规划器产生的刚性行为。然而，数据驱动的方法往往难以应对罕见的安全关键场景，并且在生成的轨迹控制上提供有限的可控性。为了解决这些挑战，我们提出了一种检索增强生成（RAG）框架——RealDrive，该框架通过从训练数据集中检索最具相关性的专家演示来初始化基于扩散的过程规划策略。通过在当前观测值和检索到的示例之间通过去噪过程进行插值，我们的方法能够在多样化的场景中实现精细的控制和安全行为，利用检索到的场景提供的强大先验知识。另一个关键洞见是我们发现，使用规划任务相关的检索模型训练，在我们的框架中比使用任务无关的检索器，能够获得更优的规划性能。实验结果表明，与标准的学习基于规划器相比，我们的RAG方法在实例泛化和轨迹多样性方面表现更好——我们在Waymo Open Motion数据集上观察到碰撞率降低了40%。 
+
+---
+# SR3D: Unleashing Single-view 3D Reconstruction for Transparent and Specular Object Grasping 
+
+**Title (ZH)**: SR3D: 解锁单视角透明和镜面物体抓取的三维重建 
+
+**Authors**: Mingxu Zhang, Xiaoqi Li, Jiahui Xu, Kaichen Zhou, Hojin Bae, Yan Shen, Chuyan Xiong, Jiaming Liu, Hao Dong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24305)  
+
+**Abstract**: Recent advancements in 3D robotic manipulation have improved grasping of everyday objects, but transparent and specular materials remain challenging due to depth sensing limitations. While several 3D reconstruction and depth completion approaches address these challenges, they suffer from setup complexity or limited observation information utilization. To address this, leveraging the power of single view 3D object reconstruction approaches, we propose a training free framework SR3D that enables robotic grasping of transparent and specular objects from a single view observation. Specifically, given single view RGB and depth images, SR3D first uses the external visual models to generate 3D reconstructed object mesh based on RGB image. Then, the key idea is to determine the 3D object's pose and scale to accurately localize the reconstructed object back into its original depth corrupted 3D scene. Therefore, we propose view matching and keypoint matching mechanisms,which leverage both the 2D and 3D's inherent semantic and geometric information in the observation to determine the object's 3D state within the scene, thereby reconstructing an accurate 3D depth map for effective grasp detection. Experiments in both simulation and real world show the reconstruction effectiveness of SR3D. 
+
+**Abstract (ZH)**: Recent advancements in 3D robotic manipulation have improved grasping of everyday objects, but transparent and specular materials remain challenging due to depth sensing limitations. While several 3D reconstruction and depth completion approaches address these challenges, they suffer from setup complexity or limited observation information utilization. To address this, leveraging the power of single view 3D object reconstruction approaches, we propose a training-free framework SR3D that enables robotic grasping of transparent and specular objects from a single view observation. 
+
+---
+# Time Blindness: Why Video-Language Models Can't See What Humans Can? 
+
+**Title (ZH)**: 时间盲视：为什么视频语言模型看不到人类能看到的内容？ 
+
+**Authors**: Ujjwal Upadhyay, Mukul Ranjan, Zhiqiang Shen, Mohamed Elhoseiny  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24867)  
+
+**Abstract**: Recent advances in vision-language models (VLMs) have made impressive strides in understanding spatio-temporal relationships in videos. However, when spatial information is obscured, these models struggle to capture purely temporal patterns. We introduce $\textbf{SpookyBench}$, a benchmark where information is encoded solely in temporal sequences of noise-like frames, mirroring natural phenomena from biological signaling to covert communication. Interestingly, while humans can recognize shapes, text, and patterns in these sequences with over 98% accuracy, state-of-the-art VLMs achieve 0% accuracy. This performance gap highlights a critical limitation: an over-reliance on frame-level spatial features and an inability to extract meaning from temporal cues. Furthermore, when trained in data sets with low spatial signal-to-noise ratios (SNR), temporal understanding of models degrades more rapidly than human perception, especially in tasks requiring fine-grained temporal reasoning. Overcoming this limitation will require novel architectures or training paradigms that decouple spatial dependencies from temporal processing. Our systematic analysis shows that this issue persists across model scales and architectures. We release SpookyBench to catalyze research in temporal pattern recognition and bridge the gap between human and machine video understanding. Dataset and code has been made available on our project website: this https URL. 
+
+**Abstract (ZH)**: Recent Advances in Vision-Language Models: Bridging the Gap between Human and Machine Video Understanding with SpookyBench 
+
+---
+# Cloud Optical Thickness Retrievals Using Angle Invariant Attention Based Deep Learning Models 
+
+**Title (ZH)**: 基于角度不变注意机制的深度学习模型云光学厚度反演 
+
+**Authors**: Zahid Hassan Tushar, Adeleke Ademakinwa, Jianwu Wang, Zhibo Zhang, Sanjay Purushotham  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24638)  
+
+**Abstract**: Cloud Optical Thickness (COT) is a critical cloud property influencing Earth's climate, weather, and radiation budget. Satellite radiance measurements enable global COT retrieval, but challenges like 3D cloud effects, viewing angles, and atmospheric interference must be addressed to ensure accurate estimation. Traditionally, the Independent Pixel Approximation (IPA) method, which treats individual pixels independently, has been used for COT estimation. However, IPA introduces significant bias due to its simplified assumptions. Recently, deep learning-based models have shown improved performance over IPA but lack robustness, as they are sensitive to variations in radiance intensity, distortions, and cloud shadows. These models also introduce substantial errors in COT estimation under different solar and viewing zenith angles. To address these challenges, we propose a novel angle-invariant, attention-based deep model called Cloud-Attention-Net with Angle Coding (CAAC). Our model leverages attention mechanisms and angle embeddings to account for satellite viewing geometry and 3D radiative transfer effects, enabling more accurate retrieval of COT. Additionally, our multi-angle training strategy ensures angle invariance. Through comprehensive experiments, we demonstrate that CAAC significantly outperforms existing state-of-the-art deep learning models, reducing cloud property retrieval errors by at least a factor of nine. 
+
+**Abstract (ZH)**: 基于角度Attention的云光厚度网络（Cloud-Attention-Net with Angle Coding, CAAC）：一种角度不变的深学习模型 
+
+---
+# Deformable Attention Mechanisms Applied to Object Detection, case of Remote Sensing 
+
+**Title (ZH)**: 可变形注意力机制在遥感目标检测中的应用 
+
+**Authors**: Anasse Boutayeb, Iyad Lahsen-cherif, Ahmed El Khadimi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24489)  
+
+**Abstract**: Object detection has recently seen an interesting trend in terms of the most innovative research work, this task being of particular importance in the field of remote sensing, given the consistency of these images in terms of geographical coverage and the objects present. Furthermore, Deep Learning (DL) models, in particular those based on Transformers, are especially relevant for visual computing tasks in general, and target detection in particular. Thus, the present work proposes an application of Deformable-DETR model, a specific architecture using deformable attention mechanisms, on remote sensing images in two different modes, especially optical and Synthetic Aperture Radar (SAR). To achieve this objective, two datasets are used, one optical, which is Pleiades Aircraft dataset, and the other SAR, in particular SAR Ship Detection Dataset (SSDD). The results of a 10-fold stratified validation showed that the proposed model performed particularly well, obtaining an F1 score of 95.12% for the optical dataset and 94.54% for SSDD, while comparing these results with several models detections, especially those based on CNNs and transformers, as well as those specifically designed to detect different object classes in remote sensing images. 
+
+**Abstract (ZH)**: 遥感图像中基于变形Transformer的物体检测应用：光学与SAR模式下的性能评估 
+
+---
+# SASP: Strip-Aware Spatial Perception for Fine-Grained Bird Image Classification 
+
+**Title (ZH)**: SASP: 条状物感知的空间知觉在细粒度鸟类图像分类中的应用 
+
+**Authors**: Zheng Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24380)  
+
+**Abstract**: Fine-grained bird image classification (FBIC) is not only of great significance for ecological monitoring and species identification, but also holds broad research value in the fields of image recognition and fine-grained visual modeling. Compared with general image classification tasks, FBIC poses more formidable challenges: 1) the differences in species size and imaging distance result in the varying sizes of birds presented in the images; 2) complex natural habitats often introduce strong background interference; 3) and highly flexible poses such as flying, perching, or foraging result in substantial intra-class variability. These factors collectively make it difficult for traditional methods to stably extract discriminative features, thereby limiting the generalizability and interpretability of models in real-world applications. To address these challenges, this paper proposes a fine-grained bird classification framework based on strip-aware spatial perception, which aims to capture long-range spatial dependencies across entire rows or columns in bird images, thereby enhancing the model's robustness and interpretability. The proposed method incorporates two novel modules: extensional perception aggregator (EPA) and channel semantic weaving (CSW). Specifically, EPA integrates local texture details with global structural cues by aggregating information across horizontal and vertical spatial directions. CSW further refines the semantic representations by adaptively fusing long-range and short-range information along the channel dimension. Built upon a ResNet-50 backbone, the model enables jump-wise connection of extended structural features across the spatial domain. Experimental results on the CUB-200-2011 dataset demonstrate that our framework achieves significant performance improvements while maintaining architectural efficiency. 
+
+**Abstract (ZH)**: 细粒度鸟类图像分类（FBIC）不仅对生态监测和物种识别具有重大意义，还在图像识别和细粒度视觉建模领域具有广泛的科研价值。与一般图像分类任务相比，FBIC提出了更大的挑战：1）不同物种的大小差异和成像距离导致鸟类在图像中的大小各不相同；2）复杂的自然环境常常引入强烈的背景干扰；3）飞行、栖息或觅食等高度灵活的姿态导致类内显著变异性。这些因素共同使得传统方法难以稳定地提取判别性特征，从而限制了模型在实际应用中的泛化能力和可解释性。为应对这些挑战，本文提出了一种基于条带感知的空间感知细粒度鸟类分类框架，旨在捕获鸟类图像中整行或整列的长范围空间依赖关系，从而增强模型的鲁棒性和可解释性。该方法结合了两个新型模块：扩展感知聚合器（EPA）和通道语义编织（CSW）。具体而言，EPA 通过在水平和垂直空间方向上整合信息，将局部纹理细节与全局结构线索相结合。CSW 进一步通过在通道维上适配地融合长范围和短范围信息来细化语义表示。该模型基于 ResNet-50 主干构建，在空间域中实现了扩展结构特征的跳跃式连接。在 CUB-200-2011 数据集上的实验结果表明，本文框架在保持架构效率的同时取得了显著的性能提升。 
+
+---
+# When Humans Growl and Birds Speak: High-Fidelity Voice Conversion from Human to Animal and Designed Sounds 
+
+**Title (ZH)**: 当人类低吼且鸟类说话：高保真从人类到动物及设计声音的语音转换 
+
+**Authors**: Minsu Kang, Seolhee Lee, Choonghyeon Lee, Namhyun Cho  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24336)  
+
+**Abstract**: Human to non-human voice conversion (H2NH-VC) transforms human speech into animal or designed vocalizations. Unlike prior studies focused on dog-sounds and 16 or 22.05kHz audio transformation, this work addresses a broader range of non-speech sounds, including natural sounds (lion-roars, birdsongs) and designed voice (synthetic growls). To accomodate generation of diverse non-speech sounds and 44.1kHz high-quality audio transformation, we introduce a preprocessing pipeline and an improved CVAE-based H2NH-VC model, both optimized for human and non-human voices. Experimental results showed that the proposed method outperformed baselines in quality, naturalness, and similarity MOS, achieving effective voice conversion across diverse non-human timbres. Demo samples are available at this https URL 
+
+**Abstract (ZH)**: 人类到非人类声音转换（H2NH-VC）将人类语音转换为动物或设计的声音。 
+
+---
+# Interactive Video Generation via Domain Adaptation 
+
+**Title (ZH)**: 基于域适应的互动视频生成 
+
+**Authors**: Ishaan Rawal, Suryansh Kumar  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24253)  
+
+**Abstract**: Text-conditioned diffusion models have emerged as powerful tools for high-quality video generation. However, enabling Interactive Video Generation (IVG), where users control motion elements such as object trajectory, remains challenging. Recent training-free approaches introduce attention masking to guide trajectory, but this often degrades perceptual quality. We identify two key failure modes in these methods, both of which we interpret as domain shift problems, and propose solutions inspired by domain adaptation. First, we attribute the perceptual degradation to internal covariate shift induced by attention masking, as pretrained models are not trained to handle masked attention. To address this, we propose mask normalization, a pre-normalization layer designed to mitigate this shift via distribution matching. Second, we address initialization gap, where the randomly sampled initial noise does not align with IVG conditioning, by introducing a temporal intrinsic diffusion prior that enforces spatio-temporal consistency at each denoising step. Extensive qualitative and quantitative evaluations demonstrate that mask normalization and temporal intrinsic denoising improve both perceptual quality and trajectory control over the existing state-of-the-art IVG techniques. 
+
+**Abstract (ZH)**: 基于文本条件的扩散模型已成为高质量视频生成的强大工具。然而，在用户能够控制如 объект轨迹等运动元素的交互视频生成（IVG）方面仍然颇具挑战性。近期的无训练方法引入了注意力屏蔽以引导轨迹，但往往会降低感知质量。我们识别出这些方法中的两种关键失败模式，我们将这两种模式解释为领域偏移问题，并提出了基于领域自适应的解决方案。首先，我们将感知质量下降归因于注意力屏蔽引起的内部协变量偏移，因为预训练模型并未被训练来处理屏蔽注意力。为此，我们提出了屏蔽归一化，这是一种预归一化层，设计用于通过分布匹配来缓解这种偏移。其次，我们通过引入时间内在去噪先验来解决初始化差距问题，该先验在每个去噪步骤中强制执行时空一致性。广泛的定性和定量评估表明，屏蔽归一化和时间内在去噪均能够提升感知质量和轨迹控制，从而超越现有最先进的IVG技术。 
+
+---
+# LTM3D: Bridging Token Spaces for Conditional 3D Generation with Auto-Regressive Diffusion Framework 
+
+**Title (ZH)**: LTM3D：自回归扩散框架下条件3D生成的_tokens_空间桥梁构建 
+
+**Authors**: Xin Kang, Zihan Zheng, Lei Chu, Yue Gao, Jiahao Li, Hao Pan, Xuejin Chen, Yan Lu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24245)  
+
+**Abstract**: We present LTM3D, a Latent Token space Modeling framework for conditional 3D shape generation that integrates the strengths of diffusion and auto-regressive (AR) models. While diffusion-based methods effectively model continuous latent spaces and AR models excel at capturing inter-token dependencies, combining these paradigms for 3D shape generation remains a challenge. To address this, LTM3D features a Conditional Distribution Modeling backbone, leveraging a masked autoencoder and a diffusion model to enhance token dependency learning. Additionally, we introduce Prefix Learning, which aligns condition tokens with shape latent tokens during generation, improving flexibility across modalities. We further propose a Latent Token Reconstruction module with Reconstruction-Guided Sampling to reduce uncertainty and enhance structural fidelity in generated shapes. Our approach operates in token space, enabling support for multiple 3D representations, including signed distance fields, point clouds, meshes, and 3D Gaussian Splatting. Extensive experiments on image- and text-conditioned shape generation tasks demonstrate that LTM3D outperforms existing methods in prompt fidelity and structural accuracy while offering a generalizable framework for multi-modal, multi-representation 3D generation. 
+
+**Abstract (ZH)**: 我们提出LTM3D，这是一种结合扩散和自回归模型优势的潜在令牌空间建模框架，用于条件3D形状生成。虽然基于扩散的方法有效地建模了连续的潜在空间，而自回归模型在捕捉令牌间依赖性方面表现出色，但将这两种范式结合用于3D形状生成依然面临挑战。为此，LTM3D 包含一个条件分布建模骨干，利用掩码自编码器和扩散模型来增强令牌依赖性学习。另外，我们引入了前缀学习，该方法在生成过程中将条件令牌与形状的潜在令牌对齐，提高了不同模态下的灵活性。进一步地，我们提出了一种潜在令牌重建模块，通过重建引导采样来减少不确定性并提高生成形状的结构保真度。我们的方法在令牌空间中操作，支持包括隐式距离场、点云、网格和三维高斯点等多样的3D表示。在基于图像和文本条件的形状生成任务中的大量实验表明，LTM3D 在提示保真度和结构准确性方面优于现有方法，同时还提供了一个适用于多模态、多表示的三维生成的可泛化框架。 
+
+---
+# MaskAdapt: Unsupervised Geometry-Aware Domain Adaptation Using Multimodal Contextual Learning and RGB-Depth Masking 
+
+**Title (ZH)**: MaskAdapt：基于多模态上下文学习和RGB-Depth掩膜的无监督几何感知领域适应 
+
+**Authors**: Numair Nadeem, Muhammad Hamza Asad, Saeed Anwar, Abdul Bais  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24026)  
+
+**Abstract**: Semantic segmentation of crops and weeds is crucial for site-specific farm management; however, most existing methods depend on labor intensive pixel-level annotations. A further challenge arises when models trained on one field (source domain) fail to generalize to new fields (target domain) due to domain shifts, such as variations in lighting, camera setups, soil composition, and crop growth stages. Unsupervised Domain Adaptation (UDA) addresses this by enabling adaptation without target-domain labels, but current UDA methods struggle with occlusions and visual blending between crops and weeds, leading to misclassifications in real-world conditions. To overcome these limitations, we introduce MaskAdapt, a novel approach that enhances segmentation accuracy through multimodal contextual learning by integrating RGB images with features derived from depth data. By computing depth gradients from depth maps, our method captures spatial transitions that help resolve texture ambiguities. These gradients, through a cross-attention mechanism, refines RGB feature representations, resulting in sharper boundary delineation. In addition, we propose a geometry-aware masking strategy that applies horizontal, vertical, and stochastic masks during training. This encourages the model to focus on the broader spatial context for robust visual recognition. Evaluations on real agricultural datasets demonstrate that MaskAdapt consistently outperforms existing State-of-the-Art (SOTA) UDA methods, achieving improved segmentation mean Intersection over Union (mIOU) across diverse field conditions. 
+
+**Abstract (ZH)**: 基于掩码适应的作物与杂草语义分割在特定位置农艺管理中至关重要；然而，大多数现有方法依赖于劳动密集型的像素级标注。当模型在一种农田（源领域）训练并在新农田（目标领域）泛化时，由于光照、相机设置、土壤组成和作物生长阶段的变化导致领域偏移，会进一步出现泛化能力不足的问题。无监督领域适应（UDA）通过在没有目标域标签的情况下进行适应来解决这一问题，但当前的UDA方法在遮挡和作物与杂草的视觉融合方面存在难题，导致在实际条件下的误分类。为克服这些限制，我们提出了MaskAdapt，一种通过将RGB图像与深度数据提取的特征结合的多模态上下文学习方法来提升分割准确性。通过从深度图计算深度梯度，我们的方法捕捉到有助于解决纹理歧义的空间转换。这些梯度通过跨注意力机制进一步细化RGB特征表示，从而实现更清晰的边界划定。此外，我们提出了一种几何感知的掩码策略，在训练过程中应用水平、垂直和随机掩码，这促使模型关注更大的空间上下文以增强视觉识别的鲁棒性。在实际农业数据集上的评估结果显示，MaskAdapt在各种农田条件下始终优于现有的最先进（SOTA）UDA方法，实现了更好的分割平均交并比（mIOU）。 
+
+---
+# Multi-Modal View Enhanced Large Vision Models for Long-Term Time Series Forecasting 
+
+**Title (ZH)**: 多模态视角增强的大视觉模型在长期时间序列预测中的应用 
+
+**Authors**: ChengAo Shen, Wenchao Yu, Ziming Zhao, Dongjin Song, Wei Cheng, Haifeng Chen, Jingchao Ni  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24003)  
+
+**Abstract**: Time series, typically represented as numerical sequences, can also be transformed into images and texts, offering multi-modal views (MMVs) of the same underlying signal. These MMVs can reveal complementary patterns and enable the use of powerful pre-trained large models, such as large vision models (LVMs), for long-term time series forecasting (LTSF). However, as we identified in this work, applying LVMs to LTSF poses an inductive bias towards "forecasting periods". To harness this bias, we propose DMMV, a novel decomposition-based multi-modal view framework that leverages trend-seasonal decomposition and a novel backcast residual based adaptive decomposition to integrate MMVs for LTSF. Comparative evaluations against 14 state-of-the-art (SOTA) models across diverse datasets show that DMMV outperforms single-view and existing multi-modal baselines, achieving the best mean squared error (MSE) on 6 out of 8 benchmark datasets. 
+
+**Abstract (ZH)**: 时间序列，通常表示为数值序列，也可以转换为图像和文本，提供同一基础信号的多模态视图（MMVs）。这些MMVs可以揭示互补模式，并启用强大的预训练大型模型，如大型视觉模型（LVMs），用于长期时间序列预测（LTSF）。然而，正如我们在本文中所发现的，将LVMs应用于LTSF会导致一种“预测期”的归纳偏见。为了利用这种偏见，我们提出了一种新颖的基于分解的多模态视图框架DMMV，该框架利用趋势-季节分解和新颖的基于回溯残差的自适应分解来整合MMVs进行LTSF。在多种数据集上与14个最先进的（SOTA）模型的对比评估表明，DMMV在6个基准数据集中实现了最低的均方误差（MSE），优于单视图和现有多模态基线。 
+
+---

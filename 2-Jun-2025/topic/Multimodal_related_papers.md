@@ -1,0 +1,78 @@
+# MagicGripper: A Multimodal Sensor-Integrated Gripper for Contact-Rich Robotic Manipulation 
+
+**Title (ZH)**: MagicGripper: 一种集成多模态传感器的接触丰富型机器人 manipulator 
+
+**Authors**: Wen Fan, Haoran Li, Dandan Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24382)  
+
+**Abstract**: Contact-rich manipulation in unstructured environments demands precise, multimodal perception to enable robust and adaptive control. Vision-based tactile sensors (VBTSs) have emerged as an effective solution; however, conventional VBTSs often face challenges in achieving compact, multi-modal functionality due to hardware constraints and algorithmic complexity. In this work, we present MagicGripper, a multimodal sensor-integrated gripper designed for contact-rich robotic manipulation. Building on our prior design, MagicTac, we develop a compact variant, mini-MagicTac, which features a three-dimensional, multi-layered grid embedded in a soft elastomer. MagicGripper integrates mini-MagicTac, enabling high-resolution tactile feedback alongside proximity and visual sensing within a compact, gripper-compatible form factor. We conduct a thorough evaluation of mini-MagicTac's performance, demonstrating its capabilities in spatial resolution, contact localization, and force regression. We also assess its robustness across manufacturing variability, mechanical deformation, and sensing performance under real-world conditions. Furthermore, we validate the effectiveness of MagicGripper through three representative robotic tasks: a teleoperated assembly task, a contact-based alignment task, and an autonomous robotic grasping task. Across these experiments, MagicGripper exhibits reliable multimodal perception, accurate force estimation, and high adaptability to challenging manipulation scenarios. Our results highlight the potential of MagicGripper as a practical and versatile tool for embodied intelligence in complex, contact-rich environments. 
+
+**Abstract (ZH)**: 接触丰富的机器人操作在无结构环境中需要精确的多模态感知以实现稳健和适应性控制。基于这种需求，我们介绍了MagicGripper，一种集成了多模态传感器的机器人夹持器，用于接触丰富的操作任务。在先前设计MagicTac的基础上，我们开发了紧凑型变体mini-MagicTac，其特点是嵌入软弹性体内的三维多层网格。MagicGripper集成了mini-MagicTac，实现了紧凑且符合夹持器形式因素的高分辨率触觉反馈和接近度及视觉感知。我们对mini-MagicTac的性能进行了全面评估，展示了其在空间分辨率、接触定位和力回归方面的能力。我们还评估了其在制造变异性、机械变形和实际操作条件下的感知性能的鲁棒性。此外，我们通过三个代表性机器人任务验证了MagicGripper的有效性：遥操作装配任务、基于接触的对齐任务以及自主机器人抓取任务。在这些实验中，MagicGripper展示了可靠的多模态感知、准确的力估计和对挑战性操作场景的高度适应性。我们的结果突显了MagicGripper在复杂、接触丰富的环境中作为嵌入式智能实用且多功能工具的潜力。 
+
+---
+# SEAR: A Multimodal Dataset for Analyzing AR-LLM-Driven Social Engineering Behaviors 
+
+**Title (ZH)**: SEAR：一种用于分析AR-LLM驱动的社会工程行为的多模态数据集 
+
+**Authors**: Tianlong Yu, Chenghang Ye, Zheyu Yang, Ziyi Zhou, Cui Tang, Zui Tao, Jun Zhang, Kailong Wang, Liting Zhou, Yang Yang, Ting Bi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24458)  
+
+**Abstract**: The SEAR Dataset is a novel multimodal resource designed to study the emerging threat of social engineering (SE) attacks orchestrated through augmented reality (AR) and multimodal large language models (LLMs). This dataset captures 180 annotated conversations across 60 participants in simulated adversarial scenarios, including meetings, classes and networking events. It comprises synchronized AR-captured visual/audio cues (e.g., facial expressions, vocal tones), environmental context, and curated social media profiles, alongside subjective metrics such as trust ratings and susceptibility assessments. Key findings reveal SEAR's alarming efficacy in eliciting compliance (e.g., 93.3% phishing link clicks, 85% call acceptance) and hijacking trust (76.7% post-interaction trust surge). The dataset supports research in detecting AR-driven SE attacks, designing defensive frameworks, and understanding multimodal adversarial manipulation. Rigorous ethical safeguards, including anonymization and IRB compliance, ensure responsible use. The SEAR dataset is available at this https URL. 
+
+**Abstract (ZH)**: SEAR数据集是为研究通过增强现实(AR)和多模态大规模语言模型(LLMs)策划的社会工程(SE)攻击新兴威胁而设计的一种新型多模态资源。该数据集在模拟 adversarial 场景中捕捉了60名参与者共计180条标注对话，包括会议、课堂和社交活动。它包含同步捕获的AR视觉/音频提示（如面部表情、语音语调）、环境背景以及定制的社会媒体资料，还包括主观度量，如信任评分和易受攻击性评估。关键发现表明，SEAR在诱导合规性（例如，93.3%的鱼叉式钓鱼链接点击率，85%的通话接受率）和劫持信任（例如，交互后信任度提升76.7%）方面具有令人担忧的有效性。该数据集支持研究AR驱动的SE攻击检测、设计防御框架以及理解多模态对抗操纵。严格的伦理保障措施，包括匿名化和IRB合规性，确保了负责任的使用。SEAR数据集可通过以下链接访问：this https URL。 
+
+---
+# Generative AI for Urban Design: A Stepwise Approach Integrating Human Expertise with Multimodal Diffusion Models 
+
+**Title (ZH)**: 基于多模态扩散模型融合人类 expertise 的城市设计生成式人工智能：逐步方法 
+
+**Authors**: Mingyi He, Yuebing Liang, Shenhao Wang, Yunhan Zheng, Qingyi Wang, Dingyi Zhuang, Li Tian, Jinhua Zhao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24260)  
+
+**Abstract**: Urban design is a multifaceted process that demands careful consideration of site-specific constraints and collaboration among diverse professionals and stakeholders. The advent of generative artificial intelligence (GenAI) offers transformative potential by improving the efficiency of design generation and facilitating the communication of design ideas. However, most existing approaches are not well integrated with human design workflows. They often follow end-to-end pipelines with limited control, overlooking the iterative nature of real-world design. This study proposes a stepwise generative urban design framework that integrates multimodal diffusion models with human expertise to enable more adaptive and controllable design processes. Instead of generating design outcomes in a single end-to-end process, the framework divides the process into three key stages aligned with established urban design workflows: (1) road network and land use planning, (2) building layout planning, and (3) detailed planning and rendering. At each stage, multimodal diffusion models generate preliminary designs based on textual prompts and image-based constraints, which can then be reviewed and refined by human designers. We design an evaluation framework to assess the fidelity, compliance, and diversity of the generated designs. Experiments using data from Chicago and New York City demonstrate that our framework outperforms baseline models and end-to-end approaches across all three dimensions. This study underscores the benefits of multimodal diffusion models and stepwise generation in preserving human control and facilitating iterative refinements, laying the groundwork for human-AI interaction in urban design solutions. 
+
+**Abstract (ZH)**: 基于多模态扩散模型的分步生成城市设计框架 
+
+---
+# mRAG: Elucidating the Design Space of Multi-modal Retrieval-Augmented Generation 
+
+**Title (ZH)**: mRAG：阐明多模态检索增强生成的设计空间 
+
+**Authors**: Chan-Wei Hu, Yueqi Wang, Shuo Xing, Chia-Ju Chen, Zhengzhong Tu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24073)  
+
+**Abstract**: Large Vision-Language Models (LVLMs) have made remarkable strides in multimodal tasks such as visual question answering, visual grounding, and complex reasoning. However, they remain limited by static training data, susceptibility to hallucinations, and inability to verify claims against up-to-date, external evidence, compromising their performance in dynamic real-world applications. Retrieval-Augmented Generation (RAG) offers a practical solution to mitigate these challenges by allowing the LVLMs to access large-scale knowledge databases via retrieval mechanisms, thereby grounding model outputs in factual, contextually relevant information. Here in this paper, we conduct the first systematic dissection of the multimodal RAG pipeline for LVLMs, explicitly investigating (1) the retrieval phase: on the modality configurations and retrieval strategies, (2) the re-ranking stage: on strategies to mitigate positional biases and improve the relevance of retrieved evidence, and (3) the generation phase: we further investigate how to best integrate retrieved candidates into the final generation process. Finally, we extend to explore a unified agentic framework that integrates re-ranking and generation through self-reflection, enabling LVLMs to select relevant evidence and suppress irrelevant context dynamically. Our full-stack exploration of RAG for LVLMs yields substantial insights, resulting in an average performance boost of 5% without any fine-tuning. 
+
+**Abstract (ZH)**: 大型多模态视觉语言模型在多模态任务中的 Retrieval-Augmented Generation：首个系统剖析及自省框架探究 
+
+---
+# Mixpert: Mitigating Multimodal Learning Conflicts with Efficient Mixture-of-Vision-Experts 
+
+**Title (ZH)**: Mixpert: 以高效视觉专家混合方式缓解多模态学习冲突 
+
+**Authors**: Xin He, Xumeng Han, Longhui Wei, Lingxi Xie, Qi Tian  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24541)  
+
+**Abstract**: Multimodal large language models (MLLMs) require a nuanced interpretation of complex image information, typically leveraging a vision encoder to perceive various visual scenarios. However, relying solely on a single vision encoder to handle diverse task domains proves difficult and inevitably leads to conflicts. Recent work enhances data perception by directly integrating multiple domain-specific vision encoders, yet this structure adds complexity and limits the potential for joint optimization. In this paper, we introduce Mixpert, an efficient mixture-of-vision-experts architecture that inherits the joint learning advantages from a single vision encoder while being restructured into a multi-expert paradigm for task-specific fine-tuning across different visual tasks. Additionally, we design a dynamic routing mechanism that allocates input images to the most suitable visual expert. Mixpert effectively alleviates domain conflicts encountered by a single vision encoder in multi-task learning with minimal additional computational cost, making it more efficient than multiple encoders. Furthermore, Mixpert integrates seamlessly into any MLLM, with experimental results demonstrating substantial performance gains across various tasks. 
+
+**Abstract (ZH)**: 多模态大型语言模型的混合视觉专家架构：Mixpert 
+
+---
+# My Answer Is NOT 'Fair': Mitigating Social Bias in Vision-Language Models via Fair and Biased Residuals 
+
+**Title (ZH)**: 我的答案不说是“公平”：通过公平与偏见残差缓解视觉-语言模型中的社会偏见 
+
+**Authors**: Jian Lan, Yifei Fu, Udo Schlegel, Gengyuan Zhang, Tanveer Hannan, Haokun Chen, Thomas Seidl  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.23798)  
+
+**Abstract**: Social bias is a critical issue in large vision-language models (VLMs), where fairness- and ethics-related problems harm certain groups of people in society. It is unknown to what extent VLMs yield social bias in generative responses. In this study, we focus on evaluating and mitigating social bias on both the model's response and probability distribution. To do so, we first evaluate four state-of-the-art VLMs on PAIRS and SocialCounterfactuals datasets with the multiple-choice selection task. Surprisingly, we find that models suffer from generating gender-biased or race-biased responses. We also observe that models are prone to stating their responses are fair, but indeed having mis-calibrated confidence levels towards particular social groups. While investigating why VLMs are unfair in this study, we observe that VLMs' hidden layers exhibit substantial fluctuations in fairness levels. Meanwhile, residuals in each layer show mixed effects on fairness, with some contributing positively while some lead to increased bias. Based on these findings, we propose a post-hoc method for the inference stage to mitigate social bias, which is training-free and model-agnostic. We achieve this by ablating bias-associated residuals while amplifying fairness-associated residuals on model hidden layers during inference. We demonstrate that our post-hoc method outperforms the competing training strategies, helping VLMs have fairer responses and more reliable confidence levels. 
+
+**Abstract (ZH)**: 大型视觉-语言模型中的社会偏见是关键问题，其中公平性和伦理相关的问题损害了社会上的某些群体。尚不清楚大型视觉-语言模型在生成响应时是否会表现出社会偏见。在本研究中，我们侧重于评估和缓解模型响应及其概率分布中的社会偏见。为此，我们首先使用多个选择任务在PAIRS和SocialCounterfactuals数据集上评估了四种最先进的视觉-语言模型。令人惊讶的是，我们发现模型在生成性别偏向或种族偏向的回答方面存在缺陷。我们还观察到，模型倾向于声称其回答是公平的，但实际上对于特定的社会群体具有误校准的信心水平。在研究为什么视觉-语言模型在此过程中表现出不公平时，我们发现其隐藏层在公平性水平上存在显著波动。同时，每一层的残差表现出混合效应，有些有利于公平性，而有些则会增加偏见。基于这些发现，我们提出了一种后处理方法，用于推理阶段以缓解社会偏见，这种方法无需训练且适用于任何模型。我们在推理过程中通过消除与偏见相关的残差并对与公平性相关的残差进行放大来实现这一点。我们证明了我们的后处理方法优于竞争性训练策略，有助于使视觉-语言模型的回答更加公平，并提高其信心水平。 
+
+---

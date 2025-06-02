@@ -1,0 +1,338 @@
+# PB&J: Peanut Butter and Joints for Damped Articulation 
+
+**Title (ZH)**: PB&J: 花生酱和关节用于阻尼 articulated 运动 
+
+**Authors**: Avery S. Williamson, Michael J. Bennington, Ravesh Sukhnandan, Mrinali Nakhre, Yuemin Mao, Victoria A. Webster-Wood  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24860)  
+
+**Abstract**: Many bioinspired robots mimic the rigid articulated joint structure of the human hand for grasping tasks, but experience high-frequency mechanical perturbations that can destabilize the system and negatively affect precision without a high-frequency controller. Despite having bandwidth-limited controllers that experience time delays between sensing and actuation, biological systems can respond successfully to and mitigate these high-frequency perturbations. Human joints include damping and stiffness that many rigid articulated bioinspired hand robots lack. To enable researchers to explore the effects of joint viscoelasticity in joint control, we developed a human-hand-inspired grasping robot with viscoelastic structures that utilizes accessible and bioderived materials to reduce the economic and environmental impact of prototyping novel robotic systems. We demonstrate that an elastic element at the finger joints is necessary to achieve concurrent flexion, which enables secure grasping of spherical objects. To significantly damp the manufactured finger joints, we modeled, manufactured, and characterized rotary dampers using peanut butter as an organic analog joint working fluid. Finally, we demonstrated that a real-time position-based controller could be used to successfully catch a lightweight falling ball. We developed this open-source, low-cost grasping platform that abstracts the morphological and mechanical properties of the human hand to enable researchers to explore questions about biomechanics in roboto that would otherwise be difficult to test in simulation or modeling. 
+
+**Abstract (ZH)**: 一种受人类手部启发并具有黏弹结构的抓取机器人及其控制方法 
+
+---
+# DexMachina: Functional Retargeting for Bimanual Dexterous Manipulation 
+
+**Title (ZH)**: DexMachina：双臂灵巧操作的功能重定位 
+
+**Authors**: Zhao Mandi, Yifan Hou, Dieter Fox, Yashraj Narang, Ajay Mandlekar, Shuran Song  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24853)  
+
+**Abstract**: We study the problem of functional retargeting: learning dexterous manipulation policies to track object states from human hand-object demonstrations. We focus on long-horizon, bimanual tasks with articulated objects, which is challenging due to large action space, spatiotemporal discontinuities, and embodiment gap between human and robot hands. We propose DexMachina, a novel curriculum-based algorithm: the key idea is to use virtual object controllers with decaying strength: an object is first driven automatically towards its target states, such that the policy can gradually learn to take over under motion and contact guidance. We release a simulation benchmark with a diverse set of tasks and dexterous hands, and show that DexMachina significantly outperforms baseline methods. Our algorithm and benchmark enable a functional comparison for hardware designs, and we present key findings informed by quantitative and qualitative results. With the recent surge in dexterous hand development, we hope this work will provide a useful platform for identifying desirable hardware capabilities and lower the barrier for contributing to future research. Videos and more at this https URL 
+
+**Abstract (ZH)**: 我们研究了功能重定位问题：从人类手-物示范中学习灵巧操作策略以追踪物体状态。我们关注具有密集动作和接触指导的复杂长时间双臂任务，由于动作空间庞大、时空不连续性和人手与机器人手之间的体现出差距，这极具挑战性。我们提出了DexMachina，一种基于课程的学习算法：核心思想是使用具有衰减强度的虚拟物体控制器：首先自动驱动物体朝向目标状态，从而使政策能够在运动和接触引导下逐渐接管。我们发布了包含多样化任务和灵巧手的仿真基准，结果表明DexMachina 显著优于基准方法。该算法和基准使硬件设计的功能比较成为可能，并通过定量和定性结果呈现了关键发现。随着灵巧手开发的最新进展，希望通过这项工作为识别理想的硬件能力提供有用的平台，并为未来的研究降低参与门槛。更多内容请参见此链接。 
+
+---
+# Bi-Manual Joint Camera Calibration and Scene Representation 
+
+**Title (ZH)**: 双手关节相机标定与场景表示 
+
+**Authors**: Haozhan Tang, Tianyi Zhang, Matthew Johnson-Roberson, Weiming Zhi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24819)  
+
+**Abstract**: Robot manipulation, especially bimanual manipulation, often requires setting up multiple cameras on multiple robot manipulators. Before robot manipulators can generate motion or even build representations of their environments, the cameras rigidly mounted to the robot need to be calibrated. Camera calibration is a cumbersome process involving collecting a set of images, with each capturing a pre-determined marker. In this work, we introduce the Bi-Manual Joint Calibration and Representation Framework (Bi-JCR). Bi-JCR enables multiple robot manipulators, each with cameras mounted, to circumvent taking images of calibration markers. By leveraging 3D foundation models for dense, marker-free multi-view correspondence, Bi-JCR jointly estimates: (i) the extrinsic transformation from each camera to its end-effector, (ii) the inter-arm relative poses between manipulators, and (iii) a unified, scale-consistent 3D representation of the shared workspace, all from the same captured RGB image sets. The representation, jointly constructed from images captured by cameras on both manipulators, lives in a common coordinate frame and supports collision checking and semantic segmentation to facilitate downstream bimanual coordination tasks. We empirically evaluate the robustness of Bi-JCR on a variety of tabletop environments, and demonstrate its applicability on a variety of downstream tasks. 
+
+**Abstract (ZH)**: 双臂联合校准与表示框架（Bi-JCR）：无需标记的多视角稠密对应与共享工作空间的联合估计 
+
+---
+# RealDrive: Retrieval-Augmented Driving with Diffusion Models 
+
+**Title (ZH)**: 实驾：基于扩散模型的检索增强驾驶 
+
+**Authors**: Wenhao Ding, Sushant Veer, Yuxiao Chen, Yulong Cao, Chaowei Xiao, Marco Pavone  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24808)  
+
+**Abstract**: Learning-based planners generate natural human-like driving behaviors by learning to reason about nuanced interactions from data, overcoming the rigid behaviors that arise from rule-based planners. Nonetheless, data-driven approaches often struggle with rare, safety-critical scenarios and offer limited controllability over the generated trajectories. To address these challenges, we propose RealDrive, a Retrieval-Augmented Generation (RAG) framework that initializes a diffusion-based planning policy by retrieving the most relevant expert demonstrations from the training dataset. By interpolating between current observations and retrieved examples through a denoising process, our approach enables fine-grained control and safe behavior across diverse scenarios, leveraging the strong prior provided by the retrieved scenario. Another key insight we produce is that a task-relevant retrieval model trained with planning-based objectives results in superior planning performance in our framework compared to a task-agnostic retriever. Experimental results demonstrate improved generalization to long-tail events and enhanced trajectory diversity compared to standard learning-based planners -- we observe a 40% reduction in collision rate on the Waymo Open Motion dataset with RAG. 
+
+**Abstract (ZH)**: 基于学习的规划器通过从数据中学习细腻的交互方式来生成自然的人类驾驶行为，克服了基于规则的规划器产生的僵化行为。然而，数据驱动的方法往往难以处理罕见的安全关键场景，并且对生成的轨迹缺乏可控性。为应对这些挑战，我们提出了RealDrive，这是一种检索增强生成（RAG）框架，通过从训练数据集中检索最相关的专家演示来初始化基于扩散的规划策略。通过去噪过程在当前观测和检索示例之间进行插值，我们的方法能够跨多种场景实现精细控制和安全行为，利用检索提供的强大先验知识。另一个关键洞见是，使用基于规划的目标训练与任务相关的检索模型，在我们框架中比通用任务的检索模型具有更好的规划性能。实验结果表明，与标准的学习型规划器相比，RAG能够更好地泛化到长尾事件并增强轨迹多样性——在Waymo Open Motion数据集上，我们观察到碰撞率减少了40%。 
+
+---
+# DiG-Net: Enhancing Quality of Life through Hyper-Range Dynamic Gesture Recognition in Assistive Robotics 
+
+**Title (ZH)**: DiG-Net: 通过超范围动态手势识别提升辅助机器人中的生活质量 
+
+**Authors**: Eran Bamani Beeri, Eden Nissinman, Avishai Sintov  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24786)  
+
+**Abstract**: Dynamic hand gestures play a pivotal role in assistive human-robot interaction (HRI), facilitating intuitive, non-verbal communication, particularly for individuals with mobility constraints or those operating robots remotely. Current gesture recognition methods are mostly limited to short-range interactions, reducing their utility in scenarios demanding robust assistive communication from afar. In this paper, we introduce a novel approach designed specifically for assistive robotics, enabling dynamic gesture recognition at extended distances of up to 30 meters, thereby significantly improving accessibility and quality of life. Our proposed Distance-aware Gesture Network (DiG-Net) effectively combines Depth-Conditioned Deformable Alignment (DADA) blocks with Spatio-Temporal Graph modules, enabling robust processing and classification of gesture sequences captured under challenging conditions, including significant physical attenuation, reduced resolution, and dynamic gesture variations commonly experienced in real-world assistive environments. We further introduce the Radiometric Spatio-Temporal Depth Attenuation Loss (RSTDAL), shown to enhance learning and strengthen model robustness across varying distances. Our model demonstrates significant performance improvement over state-of-the-art gesture recognition frameworks, achieving a recognition accuracy of 97.3% on a diverse dataset with challenging hyper-range gestures. By effectively interpreting gestures from considerable distances, DiG-Net significantly enhances the usability of assistive robots in home healthcare, industrial safety, and remote assistance scenarios, enabling seamless and intuitive interactions for users regardless of physical limitations 
+
+**Abstract (ZH)**: 动态手势在辅助人机交互（HRI）中发挥关键作用，促进直观的非语言交流，特别适用于行动受限的个体或远程操作机器人的人。当前的手势识别方法大多局限于短距离交互，限制了其在远距离强辅助通信场景中的应用。本文提出了一种专门为辅助机器人设计的新方法，能够在30米远距离下实现动态手势识别，从而显著提高无障碍性和生活质量。我们提出的Distance-aware Gesture Network (DiG-Net) 有效地结合了Depth-Conditioned Deformable Alignment (DADA) 块与Spatio-Temporal Graph 模块，能够在包括显著物理衰减、降低分辨率和动态手势变化等挑战性条件下，实现手势序列的稳健处理和分类。我们还引入了Radiometric Spatio-Temporal Depth Attenuation Loss (RSTDAL)，证明该损失函数可提高学习效果并增强模型在不同距离下的鲁棒性。我们的模型在多种具有挑战性的超远距离手势数据集上显著优于现有最先进的手势识别框架，准确率达到97.3%。通过有效地从远距离解释手势，DiG-Net 显著提升了辅助机器人在家用医疗保健、工业安全和远程协助场景中的可用性，使用户无论有无身体限制都能实现无缝和直观的交互。 
+
+---
+# EL-AGHF: Extended Lagrangian Affine Geometric Heat Flow 
+
+**Title (ZH)**: EL-AGHF: 扩展拉格朗日仿射几何热流 
+
+**Authors**: Sangmin Kim, Hae-Won Park  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24751)  
+
+**Abstract**: We propose a constrained Affine Geometric Heat Flow (AGHF) method that evolves so as to suppress the dynamics gaps associated with inadmissible control directions. AGHF provides a unified framework applicable to a wide range of motion planning problems, including both holonomic and non-holonomic systems. However, to generate admissible trajectories, it requires assigning infinite penalties to inadmissible control directions. This design choice, while theoretically valid, often leads to high computational cost or numerical instability when the penalty becomes excessively large. To overcome this limitation, we extend AGHF in an Augmented Lagrangian method approach by introducing a dual trajectory related to dynamics gaps in inadmissible control directions. This method solves the constrained variational problem as an extended parabolic partial differential equation defined over both the state and dual trajectorys, ensuring the admissibility of the resulting trajectory. We demonstrate the effectiveness of our algorithm through simulation examples. 
+
+**Abstract (ZH)**: 我们提出一种约束仿射几何热流（AGHF）方法，该方法演化以抑制与不可接受控制方向相关的动态缺口。AGHF提供了一种适用于广泛运动规划问题的统一框架，包括既有的和非既有的系统。然而，为了生成可接受的轨迹，它需要对不可接受的控制方向施加无穷大惩罚。虽然这种设计在理论上是有效的，但当惩罚变得过大时，往往会导致高计算成本或数值不稳定性。为了克服这一限制，我们通过引入与不可接受控制方向相关的伴随轨迹，利用增广拉格朗日方法扩展AGHF。这种方法将约束变分问题作为定义在状态和伴随轨迹上的扩展抛物偏微分方程来求解，确保生成的轨迹是可接受的。我们通过仿真示例展示了该算法的有效性。 
+
+---
+# Black-box Adversarial Attacks on CNN-based SLAM Algorithms 
+
+**Title (ZH)**: 基于CNN的SLAM算法的黑盒对抗攻击 
+
+**Authors**: Maria Rafaela Gkeka, Bowen Sun, Evgenia Smirni, Christos D. Antonopoulos, Spyros Lalis, Nikolaos Bellas  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24654)  
+
+**Abstract**: Continuous advancements in deep learning have led to significant progress in feature detection, resulting in enhanced accuracy in tasks like Simultaneous Localization and Mapping (SLAM). Nevertheless, the vulnerability of deep neural networks to adversarial attacks remains a challenge for their reliable deployment in applications, such as navigation of autonomous agents. Even though CNN-based SLAM algorithms are a growing area of research there is a notable absence of a comprehensive presentation and examination of adversarial attacks targeting CNN-based feature detectors, as part of a SLAM system. Our work introduces black-box adversarial perturbations applied to the RGB images fed into the GCN-SLAM algorithm. Our findings on the TUM dataset [30] reveal that even attacks of moderate scale can lead to tracking failure in as many as 76% of the frames. Moreover, our experiments highlight the catastrophic impact of attacking depth instead of RGB input images on the SLAM system. 
+
+**Abstract (ZH)**: 连续的深度学习进展已在特征检测方面取得了显著进展，提升了如即时定位与地图构建（SLAM）等任务的准确性。然而，深度神经网络对 adversarial 攻击的脆弱性仍然是其在导航等应用中可靠部署的挑战。尽管基于 CNN 的 SLAM 算法是一个快速增长的研究领域，但关于 CNN 基础特征检测器的 adversarial 攻击的全面研究和评估却鲜见报道，尤其是在 SLAM 系统中。我们的工作引入了针对输入 GCN-SLAM 算法的 RGB 图像应用的黑盒 adversarial  perturbations。在 TUM 数据集上的实验结果表明，即使是中等规模的攻击也能导致高达 76% 的帧出现跟踪失败。此外，我们的实验突显了攻击深度而不是 RGB 输入图像对 SLAM 系统的灾难性影响。 
+
+---
+# System-integrated intrinsic static-dynamic pressure sensing enabled by charge excitation and 3D gradient engineering for autonomous robotic interaction 
+
+**Title (ZH)**: 基于电荷激发和三维梯度工程的系统集成内在静动态压力感知技术及其在自主机器人交互中的应用 
+
+**Authors**: Kequan Xia, Song Yang, Jianguo Lu, Min Yu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24645)  
+
+**Abstract**: High-resolution pressure sensing that distinguishes static and dynamic inputs is vital for intelligent robotics but remains challenging for self-powered sensors. We present a self-powered intrinsic static-dynamic pressure sensor (iSD Sensor) that integrates charge excitation with a 3D gradient-engineered structure, achieving enhanced voltage outputs-over 25X for static and 15X for dynamic modes. The sensor exhibits multi-region sensitivities (up to 34.7 V/kPa static, 48.4 V/kPa dynamic), a low detection limit of 6.13 Pa, and rapid response/recovery times (83/43 ms). This design enables nuanced tactile perception and supports dual-mode robotic control: proportional actuation via static signals and fast triggering via dynamic inputs. Integrated into a wireless closed-loop system, the iSD Sensor enables precise functions such as finger bending, object grasping, and sign language output. 
+
+**Abstract (ZH)**: 自供电内在静动态压力传感器（iSD传感器）：实现高压差检测与快速响应 
+
+---
+# Reactive Aerobatic Flight via Reinforcement Learning 
+
+**Title (ZH)**: 基于强化学习的反应式 aerobatic 飞行 
+
+**Authors**: Zhichao Han, Xijie Huang, Zhuxiu Xu, Jiarui Zhang, Yuze Wu, Mingyang Wang, Tianyue Wu, Fei Gao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24396)  
+
+**Abstract**: Quadrotors have demonstrated remarkable versatility, yet their full aerobatic potential remains largely untapped due to inherent underactuation and the complexity of aggressive maneuvers. Traditional approaches, separating trajectory optimization and tracking control, suffer from tracking inaccuracies, computational latency, and sensitivity to initial conditions, limiting their effectiveness in dynamic, high-agility scenarios. Inspired by recent breakthroughs in data-driven methods, we propose a reinforcement learning-based framework that directly maps drone states and aerobatic intentions to control commands, eliminating modular separation to enable quadrotors to perform end-to-end policy optimization for extreme aerobatic maneuvers. To ensure efficient and stable training, we introduce an automated curriculum learning strategy that dynamically adjusts aerobatic task difficulty. Enabled by domain randomization for robust zero-shot sim-to-real transfer, our approach is validated in demanding real-world experiments, including the first demonstration of a drone autonomously performing continuous inverted flight while reactively navigating a moving gate, showcasing unprecedented agility. 
+
+**Abstract (ZH)**: 基于强化学习的无人机端到端极端 aerobatic 调优框架：动态难度自适应训练与实应用场景验证 
+
+---
+# SAH-Drive: A Scenario-Aware Hybrid Planner for Closed-Loop Vehicle Trajectory Generation 
+
+**Title (ZH)**: SAH-Drive: 一种场景感知的混合路径规划器用于闭环车辆轨迹生成 
+
+**Authors**: Yuqi Fan, Zhiyong Cui, Zhenning Li, Yilong Ren, Haiyang Yu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24390)  
+
+**Abstract**: Reliable planning is crucial for achieving autonomous driving. Rule-based planners are efficient but lack generalization, while learning-based planners excel in generalization yet have limitations in real-time performance and interpretability. In long-tail scenarios, these challenges make planning particularly difficult. To leverage the strengths of both rule-based and learning-based planners, we proposed the Scenario-Aware Hybrid Planner (SAH-Drive) for closed-loop vehicle trajectory planning. Inspired by human driving behavior, SAH-Drive combines a lightweight rule-based planner and a comprehensive learning-based planner, utilizing a dual-timescale decision neuron to determine the final trajectory. To enhance the computational efficiency and robustness of the hybrid planner, we also employed a diffusion proposal number regulator and a trajectory fusion module. The experimental results show that the proposed method significantly improves the generalization capability of the planning system, achieving state-of-the-art performance in interPlan, while maintaining computational efficiency without incurring substantial additional runtime. 
+
+**Abstract (ZH)**: 可靠的规划对于实现自动驾驶至关重要。基于规则的规划器效率高但缺乏泛化能力，而基于学习的规划器在泛化能力方面表现出色，但在实时性能和可解释性方面存在局限性。在长尾场景中，这些挑战使规划尤为困难。为了利用基于规则和基于学习规划器的优点，我们提出了一种面向场景的混合规划器（SAH-Drive）用于闭环车辆轨迹规划。受人类驾驶行为启发，SAH-Drive 结合了轻量级的基于规则的规划器和综合的基于学习的规划器，并利用双时间尺度决策神经元确定最终轨迹。为了提高混合规划器的计算效率和鲁棒性，我们还引入了扩散提议数调节器和轨迹融合模块。实验结果表明，所提出的方法显著提高了规划系统的泛化能力，在 interPlan 中达到了最先进性能，同时保持了计算效率而不会显著增加运行时间。 
+
+---
+# MagicGripper: A Multimodal Sensor-Integrated Gripper for Contact-Rich Robotic Manipulation 
+
+**Title (ZH)**: MagicGripper: 一种集成多模态传感器的接触丰富型机器人 manipulator 
+
+**Authors**: Wen Fan, Haoran Li, Dandan Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24382)  
+
+**Abstract**: Contact-rich manipulation in unstructured environments demands precise, multimodal perception to enable robust and adaptive control. Vision-based tactile sensors (VBTSs) have emerged as an effective solution; however, conventional VBTSs often face challenges in achieving compact, multi-modal functionality due to hardware constraints and algorithmic complexity. In this work, we present MagicGripper, a multimodal sensor-integrated gripper designed for contact-rich robotic manipulation. Building on our prior design, MagicTac, we develop a compact variant, mini-MagicTac, which features a three-dimensional, multi-layered grid embedded in a soft elastomer. MagicGripper integrates mini-MagicTac, enabling high-resolution tactile feedback alongside proximity and visual sensing within a compact, gripper-compatible form factor. We conduct a thorough evaluation of mini-MagicTac's performance, demonstrating its capabilities in spatial resolution, contact localization, and force regression. We also assess its robustness across manufacturing variability, mechanical deformation, and sensing performance under real-world conditions. Furthermore, we validate the effectiveness of MagicGripper through three representative robotic tasks: a teleoperated assembly task, a contact-based alignment task, and an autonomous robotic grasping task. Across these experiments, MagicGripper exhibits reliable multimodal perception, accurate force estimation, and high adaptability to challenging manipulation scenarios. Our results highlight the potential of MagicGripper as a practical and versatile tool for embodied intelligence in complex, contact-rich environments. 
+
+**Abstract (ZH)**: 接触丰富的机器人操作在无结构环境中需要精确的多模态感知以实现稳健和适应性控制。基于这种需求，我们介绍了MagicGripper，一种集成了多模态传感器的机器人夹持器，用于接触丰富的操作任务。在先前设计MagicTac的基础上，我们开发了紧凑型变体mini-MagicTac，其特点是嵌入软弹性体内的三维多层网格。MagicGripper集成了mini-MagicTac，实现了紧凑且符合夹持器形式因素的高分辨率触觉反馈和接近度及视觉感知。我们对mini-MagicTac的性能进行了全面评估，展示了其在空间分辨率、接触定位和力回归方面的能力。我们还评估了其在制造变异性、机械变形和实际操作条件下的感知性能的鲁棒性。此外，我们通过三个代表性机器人任务验证了MagicGripper的有效性：遥操作装配任务、基于接触的对齐任务以及自主机器人抓取任务。在这些实验中，MagicGripper展示了可靠的多模态感知、准确的力估计和对挑战性操作场景的高度适应性。我们的结果突显了MagicGripper在复杂、接触丰富的环境中作为嵌入式智能实用且多功能工具的潜力。 
+
+---
+# Imitation Learning-Based Path Generation for the Complex Assembly of Deformable Objects 
+
+**Title (ZH)**: 基于模仿学习的柔体对象复杂装配路径生成 
+
+**Authors**: Yitaek Kim, Christoffer Sloth  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24339)  
+
+**Abstract**: This paper investigates how learning can be used to ease the design of high-quality paths for the assembly of deformable objects. Object dynamics plays an important role when manipulating deformable objects; thus, detailed models are often used when conducting motion planning for deformable objects. We propose to use human demonstrations and learning to enable motion planning of deformable objects with only simple dynamical models of the objects. In particular, we use the offline collision-free path planning, to generate a large number of reference paths based on a simple model of the deformable object. Subsequently, we execute the collision-free paths on a robot with a compliant control such that a human can slightly modify the path to complete the task successfully. Finally, based on the virtual path data sets and the human corrected ones, we use behavior cloning (BC) to create a dexterous policy that follows one reference path to finish a given task. 
+
+**Abstract (ZH)**: 本文探讨了如何通过学习简化对变形物体装配的高质量路径设计。在操作变形物体时，物体动力学起着重要作用；因此，在进行变形物体运动规划时通常会使用详细的模型。我们提出利用人类示范和学习的方法，仅使用简单物体动力模型即可实现变形物体的运动规划。具体而言，我们使用离线无碰撞路径规划，基于简单变形物体模型生成大量参考路径。随后，在具有顺应控制的机器人上执行无碰撞路径，以便人类可以稍微调整路径以成功完成任务。最后，基于虚拟路径数据集和人类修正后的数据集，我们使用行为克隆（BC）创建一个灵巧策略，该策略跟随一个参考路径以完成给定任务。 
+
+---
+# DTR: Delaunay Triangulation-based Racing for Scaled Autonomous Racing 
+
+**Title (ZH)**: 基于Delaunay三角剖分的缩放自主赛车技术 
+
+**Authors**: Luca Tognoni, Neil Reichlin, Edoardo Ghignone, Nicolas Baumann, Steven Marty, Liam Boyle, Michele Magno  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24320)  
+
+**Abstract**: Reactive controllers for autonomous racing avoid the computational overhead of full ee-Think-Act autonomy stacks by directly mapping sensor input to control actions, eliminating the need for localization and planning. A widely used reactive strategy is FTG, which identifies gaps in LiDAR range measurements and steers toward a chosen one. While effective on fully bounded circuits, FTG fails in scenarios with incomplete boundaries and is prone to driving into dead-ends, known as FTG-traps. This work presents DTR, a reactive controller that combines Delaunay triangulation, from raw LiDAR readings, with track boundary segmentation to extract a centerline while systematically avoiding FTG-traps. Compared to FTG, the proposed method achieves lap times that are 70\% faster and approaches the performance of map-dependent methods. With a latency of 8.95 ms and CPU usage of only 38.85\% on the robot's OBC, DTR is real-time capable and has been successfully deployed and evaluated in field experiments. 
+
+**Abstract (ZH)**: 基于Delaunay三角剖分的响应式控制器：结合LiDAR读数和赛道边界分割规避FTG陷阱实现实时自动驾驶赛车控制 
+
+---
+# SR3D: Unleashing Single-view 3D Reconstruction for Transparent and Specular Object Grasping 
+
+**Title (ZH)**: SR3D: 解锁单视角透明和镜面物体抓取的三维重建 
+
+**Authors**: Mingxu Zhang, Xiaoqi Li, Jiahui Xu, Kaichen Zhou, Hojin Bae, Yan Shen, Chuyan Xiong, Jiaming Liu, Hao Dong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24305)  
+
+**Abstract**: Recent advancements in 3D robotic manipulation have improved grasping of everyday objects, but transparent and specular materials remain challenging due to depth sensing limitations. While several 3D reconstruction and depth completion approaches address these challenges, they suffer from setup complexity or limited observation information utilization. To address this, leveraging the power of single view 3D object reconstruction approaches, we propose a training free framework SR3D that enables robotic grasping of transparent and specular objects from a single view observation. Specifically, given single view RGB and depth images, SR3D first uses the external visual models to generate 3D reconstructed object mesh based on RGB image. Then, the key idea is to determine the 3D object's pose and scale to accurately localize the reconstructed object back into its original depth corrupted 3D scene. Therefore, we propose view matching and keypoint matching mechanisms,which leverage both the 2D and 3D's inherent semantic and geometric information in the observation to determine the object's 3D state within the scene, thereby reconstructing an accurate 3D depth map for effective grasp detection. Experiments in both simulation and real world show the reconstruction effectiveness of SR3D. 
+
+**Abstract (ZH)**: Recent advancements in 3D robotic manipulation have improved grasping of everyday objects, but transparent and specular materials remain challenging due to depth sensing limitations. While several 3D reconstruction and depth completion approaches address these challenges, they suffer from setup complexity or limited observation information utilization. To address this, leveraging the power of single view 3D object reconstruction approaches, we propose a training-free framework SR3D that enables robotic grasping of transparent and specular objects from a single view observation. 
+
+---
+# SignBot: Learning Human-to-Humanoid Sign Language Interaction 
+
+**Title (ZH)**: SignBot: 学习人类与类人型手语互动 
+
+**Authors**: Guanren Qiao, Sixu Lin, Ronglai Zuo Zhizheng Wu, Kui Jia, Guiliang Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24266)  
+
+**Abstract**: Sign language is a natural and visual form of language that uses movements and expressions to convey meaning, serving as a crucial means of communication for individuals who are deaf or hard-of-hearing (DHH). However, the number of people proficient in sign language remains limited, highlighting the need for technological advancements to bridge communication gaps and foster interactions with minorities. Based on recent advancements in embodied humanoid robots, we propose SignBot, a novel framework for human-robot sign language interaction. SignBot integrates a cerebellum-inspired motion control component and a cerebral-oriented module for comprehension and interaction. Specifically, SignBot consists of: 1) Motion Retargeting, which converts human sign language datasets into robot-compatible kinematics; 2) Motion Control, which leverages a learning-based paradigm to develop a robust humanoid control policy for tracking sign language gestures; and 3) Generative Interaction, which incorporates translator, responser, and generator of sign language, thereby enabling natural and effective communication between robots and humans. Simulation and real-world experimental results demonstrate that SignBot can effectively facilitate human-robot interaction and perform sign language motions with diverse robots and datasets. SignBot represents a significant advancement in automatic sign language interaction on embodied humanoid robot platforms, providing a promising solution to improve communication accessibility for the DHH community. 
+
+**Abstract (ZH)**: 基于类脑启发的动作控制组件和以大脑为导向的理解与交互模块，我们提出了SignBot，一种新的人机手语互动框架。SignBot 包含：1）动作重定位，将人类手语数据集转换为机器人兼容的动力学；2）动作控制，利用基于学习的方法开发一种稳健的人形控制策略以追踪手语手势；3）生成性交互，集成了手语翻译、响应器和生成器，从而实现机器人与人类之间自然有效的沟通。Simulation 和实地实验结果表明，SignBot 能够有效促进人机互动并在多种机器人和数据集上执行手语动作。SignBot 表现了在人形机器人平台上实现自动手语互动的重要进展，为改善聋人和听力障碍者社区的沟通无障碍提供了一个有前景的解决方案。 
+
+---
+# Safety-Aware Robust Model Predictive Control for Robotic Arms in Dynamic Environments 
+
+**Title (ZH)**: 动态环境中具有安全意识的鲁棒模型预测控制方法研究（臂式机器人） 
+
+**Authors**: Sanghyeon Nam, Dongmin Kim, Seung-Hwan Choi, Chang-Hyun Kim, Hyoeun Kwon, Hiroaki Kawamoto, Suwoong Lee  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24209)  
+
+**Abstract**: Robotic manipulators are essential for precise industrial pick-and-place operations, yet planning collision-free trajectories in dynamic environments remains challenging due to uncertainties such as sensor noise and time-varying delays. Conventional control methods often fail under these conditions, motivating the development of Robust MPC (RMPC) strategies with constraint tightening. In this paper, we propose a novel RMPC framework that integrates phase-based nominal control with a robust safety mode, allowing smooth transitions between safe and nominal operations. Our approach dynamically adjusts constraints based on real-time predictions of moving obstacles\textemdash whether human, robot, or other dynamic objects\textemdash thus ensuring continuous, collision-free operation. Simulation studies demonstrate that our controller improves both motion naturalness and safety, achieving faster task completion than conventional methods. 
+
+**Abstract (ZH)**: 机器人 manipulators 对精密工业取放操作至关重要，但在动态环境中规划无碰撞路径仍因传感器噪声和时间变化的延迟等不确定性而具有挑战性。传统控制方法在此条件下常常失效，推动了具有约束紧化策略的鲁棒模型预测控制（RMPC）方法的发展。本文提出了一种新颖的 RMPC 框架，该框架集成了基于阶段的名义控制与鲁棒安全模式，允许在安全操作和名义操作之间平滑过渡。我们的方法根据移动障碍物（无论是人类、机器人还是其他动态物体）的实时预测动态调整约束，从而确保连续且无碰撞的操作。仿真研究显示，与传统方法相比，我们的控制器不仅能提高运动的自然性，还能提高安全性并实现更快的任务完成。 
+
+---
+# Learning Gentle Humanoid Locomotion and End-Effector Stabilization Control 
+
+**Title (ZH)**: 学习柔和的人形运动和末端执行器稳定控制 
+
+**Authors**: Yitang Li, Yuanhang Zhang, Wenli Xiao, Chaoyi Pan, Haoyang Weng, Guanqi He, Tairan He, Guanya Shi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24198)  
+
+**Abstract**: Can your humanoid walk up and hand you a full cup of beer, without spilling a drop? While humanoids are increasingly featured in flashy demos like dancing, delivering packages, traversing rough terrain, fine-grained control during locomotion remains a significant challenge. In particular, stabilizing a filled end-effector (EE) while walking is far from solved, due to a fundamental mismatch in task dynamics: locomotion demands slow-timescale, robust control, whereas EE stabilization requires rapid, high-precision corrections. To address this, we propose SoFTA, a Slow-Fast TwoAgent framework that decouples upper-body and lower-body control into separate agents operating at different frequencies and with distinct rewards. This temporal and objective separation mitigates policy interference and enables coordinated whole-body behavior. SoFTA executes upper-body actions at 100 Hz for precise EE control and lower-body actions at 50 Hz for robust gait. It reduces EE acceleration by 2-5x relative to baselines and performs much closer to human-level stability, enabling delicate tasks such as carrying nearly full cups, capturing steady video during locomotion, and disturbance rejection with EE stability. 
+
+**Abstract (ZH)**: Can Your Humanoid Walk Up and Hand You a Full Cup of Beer Without Spilling a Drop? SoFTA: A Slow-Fast Two-Agent Framework	for Stabilizing Filled End-Effector While Walking 
+
+---
+# Humanoid Loco-Manipulations Pattern Generation and Stabilization Control 
+
+**Title (ZH)**: 类人机器人 manipulate 运动模式生成与 stabilization 控制 
+
+**Authors**: Masaki Murooka, Kevin Chappellet, Arnaud Tanguy, Mehdi Benallegue, Iori Kumagai, Mitsuharu Morisawa, Fumio Kanehiro, Abderrahmane Kheddar  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24116)  
+
+**Abstract**: In order for a humanoid robot to perform loco-manipulation such as moving an object while walking, it is necessary to account for sustained or alternating external forces other than ground-feet reaction, resulting from humanoid-object contact interactions. In this letter, we propose a bipedal control strategy for humanoid loco-manipulation that can cope with such external forces. First, the basic formulas of the bipedal dynamics, i.e., linear inverted pendulum mode and divergent component of motion, are derived, taking into account the effects of external manipulation forces. Then, we propose a pattern generator to plan center of mass trajectories consistent with the reference trajectory of the manipulation forces, and a stabilizer to compensate for the error between desired and actual manipulation forces. The effectiveness of our controller is assessed both in simulation and loco-manipulation experiments with real humanoid robots. 
+
+**Abstract (ZH)**: humanoid机器人进行搬运操作的双足控制策略：应对外部 manipulative 力 
+
+---
+# Towards Tangible Immersion for Cobot Programming-by-Demonstration: Visual, Tactile and Haptic Interfaces for Mixed-Reality Cobot Automation in Semiconductor Manufacturing 
+
+**Title (ZH)**: 面向协作机器人编程示范的实体沉浸感：半导体制造中增强现实协作机器人自动化中的视觉、触觉和 haptic 接口 
+
+**Authors**: David I. Gonzalez-Aguirre, Javier Felip Leon, Javier Felix-Rendon, Roderico Garcia-Leal, Julio C. Zamora Esquivel  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24096)  
+
+**Abstract**: Sensor-based reactive and hybrid approaches have proven a promising line of study to address imperfect knowledge in grasping and manipulation. However the reactive approaches are usually tightly coupled to a particular embodiment making transfer of knowledge difficult. This paper proposes a paradigm for modeling and execution of reactive manipulation actions, which makes knowledge transfer to different embodiments possible while retaining the reactive capabilities of the embodiments. The proposed approach extends the idea of control primitives coordinated by a state machine by introducing an embodiment independent layer of abstraction. Abstract manipulation primitives constitute a vocabulary of atomic, embodiment independent actions, which can be coordinated using state machines to describe complex actions. To obtain embodiment specific models, the abstract state machines are automatically translated to embodiment specific models, such that full capabilities of each platform can be utilized. The strength of the manipulation primitives paradigm is demonstrated by developing a set of corresponding embodiment specific primitives for object transport, including a complex reactive grasping primitive. The robustness of the approach is experimentally studied in emptying of a box filled with several unknown objects. The embodiment independence is studied by performing a manipulation task on two different platforms using the same abstract description. 
+
+**Abstract (ZH)**: 基于传感器的反应性和混合方法已被证明是解决抓取和操作中不完善知识问题的一个有前景的研究方向。然而，反应性方法通常与特定的实现紧密耦合，使得知识迁移变得困难。本文提出了一种范式，用于建模和执行反应性操作，使得能够在保持各实现反应性能力的同时，实现知识在不同实现间的迁移。提出的方法通过引入一个与实现无关的抽象层，扩展了由状态机协调的控制原始概念的思想。抽象的操作原始概念构成了一种原子的、实现无关的动作词汇表，可以用状态机协调这些动作来描述复杂动作。为了获取特定于实现的模型，将抽象的状态机自动翻译为特定于实现的模型，以便充分利用每种平台的全部功能。通过为物体运输开发一系列特定于实现的操作原始概念，包括一个复杂的反应性抓取原始概念，展示了操作原始概念范式的强大力量。该方法的鲁棒性通过在一个装有多个未知物体的盒子中执行清空任务进行了实验证明。操作的实现独立性通过使用相同的抽象描述在两种不同平台上执行一项操作任务进行了研究。 
+
+---
+# A Benchmark Reference for ESP32-CAM Module 
+
+**Title (ZH)**: ESP32-CAM 模块基准参考 
+
+**Authors**: Sayed T. Nowroz, Nermeen M. Saleh, Siam Shakur, Sean Banerjee, Fathi Amsaad  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24081)  
+
+**Abstract**: The ESP32-CAM is one of the most widely adopted open-source modules for prototyping embedded vision applications. Since its release in 2019, it has gained popularity among both hobbyists and professional developers due to its affordability, versatility, and integrated wireless capabilities. Despite its widespread use, comprehensive documentation of the performance metrics remains limited. This study addresses this gap by collecting and analyzing over six hours of real-time video streaming logs across all supported resolutions of the OV2640 image sensor, tested under five distinct voltage conditions via an HTTP-based WiFi connection. A long standing bug in the official Arduino ESP32 driver, responsible for inaccurate frame rate logging, was fixed. The resulting analysis includes key performance metrics such as instantaneous and average frame rate, total streamed data, transmission count, and internal chip temperature. The influence of varying power levels was evaluated to assess the reliability of the module. 
+
+**Abstract (ZH)**: ESP32-CAM是应用最为广泛的开源嵌入式视觉应用原型模块之一。自2019年发布以来，由于其经济性、灵活性以及集成的无线功能，它受到了业余爱好者和专业开发者的广泛欢迎。尽管使用广泛，但关于性能指标的全面文档仍然有限。本研究通过收集并分析超过六小时的实时视频流日志，涵盖OV2640图像传感器的所有支持分辨率，并通过基于HTTP的WiFi连接在五种不同的电压条件下进行测试，填补了这一空白。研究还修复了一个长期存在于官方Arduino ESP32驱动中的错误，该错误导致帧率日志不准确。结果分析包括关键性能指标，如瞬时和平均帧率、总流数据量、传输次数以及内部芯片温度。评估了不同功率水平的影响，以评估模块的可靠性。 
+
+---
+# DiffCoTune: Differentiable Co-Tuning for Cross-domain Robot Control 
+
+**Title (ZH)**: 差分共调：跨域机器人控制的可微共调方法 
+
+**Authors**: Lokesh Krishna, Sheng Cheng, Junheng Li, Naira Hovakimyan, Quan Nguyen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24068)  
+
+**Abstract**: The deployment of robot controllers is hindered by modeling discrepancies due to necessary simplifications for computational tractability or inaccuracies in data-generating simulators. Such discrepancies typically require ad-hoc tuning to meet the desired performance, thereby ensuring successful transfer to a target domain. We propose a framework for automated, gradient-based tuning to enhance performance in the deployment domain by leveraging differentiable simulators. Our method collects rollouts in an iterative manner to co-tune the simulator and controller parameters, enabling systematic transfer within a few trials in the deployment domain. Specifically, we formulate multi-step objectives for tuning and employ alternating optimization to effectively adapt the controller to the deployment domain. The scalability of our framework is demonstrated by co-tuning model-based and learning-based controllers of arbitrary complexity for tasks ranging from low-dimensional cart-pole stabilization to high-dimensional quadruped and biped tracking, showing performance improvements across different deployment domains. 
+
+**Abstract (ZH)**: 基于可微模拟器的自动梯度导向调优框架以增强实际部署领域的性能 
+
+---
+# How can AI reduce wrist injuries in the workplace? 
+
+**Title (ZH)**: AI如何减少工作场所的腕部损伤？ 
+
+**Authors**: Roberto F. Pitzalis, Nicholas Cartocci, Christian Di Natali, Darwin G. Caldwell, Giovanni Berselli, Jesús Ortiz  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24510)  
+
+**Abstract**: This paper explores the development of a control and sensor strategy for an industrial wearable wrist exoskeleton by classifying and predicting workers' actions. The study evaluates the correlation between exerted force and effort intensity, along with sensor strategy optimization, for designing purposes. Using data from six healthy subjects in a manufacturing plant, this paper presents EMG-based models for wrist motion classification and force prediction. Wrist motion recognition is achieved through a pattern recognition algorithm developed with surface EMG data from an 8-channel EMG sensor (Myo Armband); while a force regression model uses wrist and hand force measurements from a commercial handheld dynamometer (Vernier GoDirect Hand Dynamometer). This control strategy forms the foundation for a streamlined exoskeleton architecture designed for industrial applications, focusing on simplicity, reduced costs, and minimal sensor use while ensuring reliable and effective assistance. 
+
+**Abstract (ZH)**: 本文探讨了一种工业穿戴式腕部外骨骼的控制与传感器策略的发展，通过对工人动作的分类和预测进行研究，评估施加力与努力强度之间的相关性，并优化传感器策略以满足设计需求。基于来自制造工厂六名健康受试者的数据，本文提出了基于EMG的腕部运动分类和力预测模型。通过表面EMG数据（8通道EMG传感器Myo Armband）开发的模式识别算法实现腕部运动识别；而力回归模型则使用商业便携式 dynamometer（Vernier GoDirect Hand Dynamometer）测量的手腕和手部力数据。该控制策略为基础一种简化的设计理念，为工业应用中的外骨骼架构奠定了基础，注重简化设计、降低成本和减小传感器使用，同时确保可靠和有效的辅助。 
+
+---
+# Towards a Generalizable Bimanual Foundation Policy via Flow-based Video Prediction 
+
+**Title (ZH)**: 基于流驱动视频预测的可泛化双臂基础策略 
+
+**Authors**: Chenyou Fan, Fangzheng Yan, Chenjia Bai, Jiepeng Wang, Chi Zhang, Zhen Wang, Xuelong Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24156)  
+
+**Abstract**: Learning a generalizable bimanual manipulation policy is extremely challenging for embodied agents due to the large action space and the need for coordinated arm movements. Existing approaches rely on Vision-Language-Action (VLA) models to acquire bimanual policies. However, transferring knowledge from single-arm datasets or pre-trained VLA models often fails to generalize effectively, primarily due to the scarcity of bimanual data and the fundamental differences between single-arm and bimanual manipulation. In this paper, we propose a novel bimanual foundation policy by fine-tuning the leading text-to-video models to predict robot trajectories and training a lightweight diffusion policy for action generation. Given the lack of embodied knowledge in text-to-video models, we introduce a two-stage paradigm that fine-tunes independent text-to-flow and flow-to-video models derived from a pre-trained text-to-video model. Specifically, optical flow serves as an intermediate variable, providing a concise representation of subtle movements between images. The text-to-flow model predicts optical flow to concretize the intent of language instructions, and the flow-to-video model leverages this flow for fine-grained video prediction. Our method mitigates the ambiguity of language in single-stage text-to-video prediction and significantly reduces the robot-data requirement by avoiding direct use of low-level actions. In experiments, we collect high-quality manipulation data for real dual-arm robot, and the results of simulation and real-world experiments demonstrate the effectiveness of our method. 
+
+**Abstract (ZH)**: 基于视觉-语言-动作模型的双臂操作策略学习由于动作空间庞大且需要协调的臂部运动而对体现智能体来说极具挑战性。现有方法依赖于视觉-语言-动作（VLA）模型来获取双臂操作策略。然而，从单臂数据集或预训练的VLA模型迁移知识往往难以有效泛化，主要原因在于双臂数据稀缺以及单臂和双臂操作之间的根本差异。本文提出了一种新颖的双臂基础策略，通过微调领先的文本到视频模型来预测机器人轨迹，并训练一个轻量级的扩散策略以生成动作。鉴于文本到视频模型中缺乏体现知识，我们引入了一种两阶段框架，分别微调独立的文本到流和流到视频模型，这些模型源自预训练的文本到视频模型。具体而言，光学流作为中间变量，提供了一种简洁表示图像间微妙动作的方式。文本到流模型预测光学流以具体化语言指令的意图，而流到视频模型则利用这些流动信息进行精细的视频预测。我们的方法减轻了一步文本到视频预测中语言的模糊性，并通过避免直接使用低级动作显著减少了对机器人数据的要求。在实验中，我们收集了高质量的双臂操作数据用于实际的双臂机器人，并且模拟实验和真实世界的实验结果均证明了本方法的有效性。 
+
+---
+# Nonlinear Oscillatory Response of Automated Vehicle Car-following: Theoretical Analysis with Traffic State and Control Input Limits 
+
+**Title (ZH)**: 自动车辆跟车的非线性振荡响应：基于交通状态和控制输入限制的理论分析 
+
+**Authors**: Sixu Li, Yang Zhou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24029)  
+
+**Abstract**: This paper presents a framework grounded in the theory of describing function (DF) and incremental-input DF to theoretically analyze the nonlinear oscillatory response of automated vehicles (AVs) car-following (CF) amidst traffic oscillations, considering the limits of traffic state and control input. While prevailing approaches largely ignore these limits (i.e., saturation of acceleration/deceleration and speed) and focus on linear string stability analysis, this framework establishes a basis for theoretically analyzing the frequency response of AV systems with nonlinearities imposed by these limits. To this end, trajectories of CF pairs are decomposed into nominal and oscillatory trajectories, subsequently, the controlled AV system is repositioned within the oscillatory trajectory coordinates. Built on this base, DFs are employed to approximate the frequency responses of nonlinear saturation components by using their first harmonic output, thereby capturing the associated amplification ratio and phase shift. Considering the closed-loop nature of AV control systems, where system states and control input mutually influence each other, amplification ratios and phase shifts are balanced within the loop to ensure consistency. This balancing process may render multiple solutions, hence the incremental-input DF is further applied to identify the reasonable ones. The proposed method is validated by estimations from Simulink, and further comparisons with prevailing methods are conducted. Results confirm the alignment of our framework with Simulink results and exhibit its superior accuracy in analysis compared to the prevailing methods. Furthermore, the framework proves valuable in string stability analysis, especially when conventional linear methods offer misleading insights. 
+
+**Abstract (ZH)**: 基于描述函数和增量输入描述函数的自动驾驶车辆跟随行为非线性振荡响应理论分析框架 
+
+---
+# Exploiting Euclidean Distance Field Properties for Fast and Safe 3D planning with a modified Lazy Theta* 
+
+**Title (ZH)**: 利用欧几里得距离场性质进行快速安全的3D规划与修改后的Lazy Theta*算法 
+
+**Authors**: Jose A. Cobano, L. Merino, F. Caballero  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.24024)  
+
+**Abstract**: Graph search planners have been widely used for 3D path planning in the literature, and Euclidean Distance Fields (EDFs) are increasingly being used as a representation of the environment. However, to the best of our knowledge, the integration of EDFs into heuristic planning has been carried out in a loosely coupled fashion, dismissing EDF properties that can be used to accelerate/improve the planning process and enhance the safety margins of the resultant trajectories. This paper presents a fast graph search planner based on a modified Lazy Theta* planning algorithm for aerial robots in challenging 3D environments that exploits the EDF properties. The proposed planner outperforms classic graph search planners in terms of path smoothness and safety. It integrates EDFs as environment representation and directly generates fast and smooth paths avoiding the use of post-processing methods; it also considers the analytical properties of EDFs to obtain an approximation of the EDF cost along the line-of-sight segments and to reduce the number of visibility neighbours, which directly impacts the computation time. Moreover, we demonstrate that the proposed EDF-based cost function satisfies the triangle inequality, which reduces calculations during exploration and, hence, computation time. Many experiments and comparatives are carried out in 3D challenging indoor and outdoor simulation environments to evaluate and validate the proposed planner. The results show an efficient and safe planner in these environments. 
+
+**Abstract (ZH)**: 基于改进Lazy Theta*算法的利用欧几里得距离场的快速图搜索规划器 
+
+---
+# Ergonomic Assessment of Work Activities for an Industrial-oriented Wrist Exoskeleton 
+
+**Title (ZH)**: 面向工业应用的手腕外骨骼工作活动人机工程学评估 
+
+**Authors**: Roberto F. Pitzalis, Nicholas Cartocci, Christian Di Natali, Luigi Monica, Darwin G. Caldwell, Giovanni Berselli, Jesús Ortiz  
+
+**Link**: [PDF](https://arxiv.org/pdf/2505.20939)  
+
+**Abstract**: Musculoskeletal disorders (MSD) are the most common cause of work-related injuries and lost production involving approximately 1.7 billion people worldwide and mainly affect low back (more than 50%) and upper limbs (more than 40%). It has a profound effect on both the workers affected and the company. This paper provides an ergonomic assessment of different work activities in a horse saddle-making company, involving 5 workers. This aim guides the design of a wrist exoskeleton to reduce the risk of musculoskeletal diseases wherever it is impossible to automate the production process. This evaluation is done either through subjective and objective measurement, respectively using questionnaires and by measurement of muscle activation with sEMG sensors. 
+
+**Abstract (ZH)**: 肌肉骨骼疾病（MSD）是导致工作相关伤害和生产损失的最常见原因，全球约有17亿人受到影响，主要影响低背部（超过50%）和上肢（超过40%）。这些疾病对受影响的工人和公司都有深远的影响。本文对一家马鞍制造公司的不同工作活动进行了人机工程学评估，涉及5名工人。该评估旨在通过主观和客观测量（分别使用问卷调查和sEMG传感器测量肌肉激活）来指导设计一种腕部外骨骼，以降低在无法自动化生产过程中的肌肉骨骼疾病风险。 
+
+---
