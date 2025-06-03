@@ -1,0 +1,420 @@
+# SEMNAV: A Semantic Segmentation-Driven Approach to Visual Semantic Navigation 
+
+**Title (ZH)**: SEMNAV：基于语义分割的视觉语义导航方法 
+
+**Authors**: Rafael Flor-Rodríguez, Carlos Gutiérrez-Álvarez, Francisco Javier Acevedo-Rodríguez, Sergio Lafuente-Arroyo, Roberto J. López-Sastre  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.01418)  
+
+**Abstract**: Visual Semantic Navigation (VSN) is a fundamental problem in robotics, where an agent must navigate toward a target object in an unknown environment, mainly using visual information. Most state-of-the-art VSN models are trained in simulation environments, where rendered scenes of the real world are used, at best. These approaches typically rely on raw RGB data from the virtual scenes, which limits their ability to generalize to real-world environments due to domain adaptation issues. To tackle this problem, in this work, we propose SEMNAV, a novel approach that leverages semantic segmentation as the main visual input representation of the environment to enhance the agent's perception and decision-making capabilities. By explicitly incorporating high-level semantic information, our model learns robust navigation policies that improve generalization across unseen environments, both in simulated and real world settings. We also introduce a newly curated dataset, i.e. the SEMNAV dataset, designed for training semantic segmentation-aware navigation models like SEMNAV. Our approach is evaluated extensively in both simulated environments and with real-world robotic platforms. Experimental results demonstrate that SEMNAV outperforms existing state-of-the-art VSN models, achieving higher success rates in the Habitat 2.0 simulation environment, using the HM3D dataset. Furthermore, our real-world experiments highlight the effectiveness of semantic segmentation in mitigating the sim-to-real gap, making our model a promising solution for practical VSN-based robotic applications. We release SEMNAV dataset, code and trained models at this https URL 
+
+**Abstract (ZH)**: 视觉语义导航（VSN）是机器人学中的一个基本问题，其中智能体必须使用视觉信息在未知环境中导航至目标对象。大多数最先进的VSN模型在模拟环境中训练，这些环境使用虚拟世界渲染场景，最好情况下。这些方法通常依赖于虚拟场景的原始RGB数据，这限制了它们在现实世界环境中的泛化能力，由于领域适应问题。为了解决这个问题，在本工作中，我们提出了一种新颖的方法SEMNAV，该方法利用语义分割作为环境的主要视觉输入表示，以增强智能体的感知和决策能力。通过显式地融入高级语义信息，我们的模型学习到鲁棒的导航策略，从而在模拟和真实环境中提高泛化能力。我们还引入了一个新构建的数据集，即SEMNAV数据集，适用于训练感知语义分割的导航模型，如SEMNAV。我们的方法在模拟环境和真实世界机器人平台上进行了广泛评估。实验结果表明，SEMNAV在Habitat 2.0模拟环境中使用HM3D数据集在成功率方面优于现有最先进的VSN模型。此外，我们的实际实验强调了语义分割在减小模拟到现实差距方面的有效性，使我们的模型成为实际VSN基于机器人应用的有前途的解决方案。我们在此提供的SEMNAV数据集、代码和训练模型。 
+
+---
+# OG-VLA: 3D-Aware Vision Language Action Model via Orthographic Image Generation 
+
+**Title (ZH)**: OG-VLA: 基于正投影图像生成的三维aware视觉语言行动模型 
+
+**Authors**: Ishika Singh, Ankit Goyal, Stan Birchfield, Dieter Fox, Animesh Garg, Valts Blukis  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.01196)  
+
+**Abstract**: We introduce OG-VLA, a novel architecture and learning framework that combines the generalization strengths of Vision Language Action models (VLAs) with the robustness of 3D-aware policies. We address the challenge of mapping natural language instructions and multi-view RGBD observations to quasi-static robot actions. 3D-aware robot policies achieve state-of-the-art performance on precise robot manipulation tasks, but struggle with generalization to unseen instructions, scenes, and objects. On the other hand, VLAs excel at generalizing across instructions and scenes, but can be sensitive to camera and robot pose variations. We leverage prior knowledge embedded in language and vision foundation models to improve generalization of 3D-aware keyframe policies. OG-VLA projects input observations from diverse views into a point cloud which is then rendered from canonical orthographic views, ensuring input view invariance and consistency between input and output spaces. These canonical views are processed with a vision backbone, a Large Language Model (LLM), and an image diffusion model to generate images that encode the next position and orientation of the end-effector on the input scene. Evaluations on the Arnold and Colosseum benchmarks demonstrate state-of-the-art generalization to unseen environments, with over 40% relative improvements while maintaining robust performance in seen settings. We also show real-world adaption in 3 to 5 demonstrations along with strong generalization. Videos and resources at this https URL 
+
+**Abstract (ZH)**: OG-VLA：结合视觉语言动作模型和3D感知策略的新型架构与学习框架 
+
+---
+# Globally Consistent RGB-D SLAM with 2D Gaussian Splatting 
+
+**Title (ZH)**: 全局一致的RGB-D SLAM与2D高斯点云匹配 
+
+**Authors**: Xingguang Zhong, Yue Pan, Liren Jin, Marija Popović, Jens Behley, Cyrill Stachniss  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.00970)  
+
+**Abstract**: Recently, 3D Gaussian splatting-based RGB-D SLAM displays remarkable performance of high-fidelity 3D reconstruction. However, the lack of depth rendering consistency and efficient loop closure limits the quality of its geometric reconstructions and its ability to perform globally consistent mapping online. In this paper, we present 2DGS-SLAM, an RGB-D SLAM system using 2D Gaussian splatting as the map representation. By leveraging the depth-consistent rendering property of the 2D variant, we propose an accurate camera pose optimization method and achieve geometrically accurate 3D reconstruction. In addition, we implement efficient loop detection and camera relocalization by leveraging MASt3R, a 3D foundation model, and achieve efficient map updates by maintaining a local active map. Experiments show that our 2DGS-SLAM approach achieves superior tracking accuracy, higher surface reconstruction quality, and more consistent global map reconstruction compared to existing rendering-based SLAM methods, while maintaining high-fidelity image rendering and improved computational efficiency. 
+
+**Abstract (ZH)**: 基于2D高斯溅射的RGB-D SLAM：几何精确的3D重建与高效循环闭合 
+
+---
+# Improving Multi-Vehicle Perception Fusion with Millimeter-Wave Radar Assistance 
+
+**Title (ZH)**: 利用毫米波雷达辅助改进多车辆感知融合 
+
+**Authors**: Zhiqing Luo, Yi Wang, Yingying He, Wei Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.00837)  
+
+**Abstract**: Cooperative perception enables vehicles to share sensor readings and has become a new paradigm to improve driving safety, where the key enabling technology for realizing this vision is to real-time and accurately align and fuse the perceptions. Recent advances to align the views rely on high-density LiDAR data or fine-grained image feature representations, which however fail to meet the requirements of accuracy, real-time, and adaptability for autonomous driving. To this end, we present MMatch, a lightweight system that enables accurate and real-time perception fusion with mmWave radar point clouds. The key insight is that fine-grained spatial information provided by the radar present unique associations with all the vehicles even in two separate views. As a result, by capturing and understanding the unique local and global position of the targets in this association, we can quickly find out all the co-visible vehicles for view alignment. We implement MMatch on both the datasets collected from the CARLA platform and the real-world traffic with over 15,000 radar point cloud pairs. Experimental results show that MMatch achieves decimeter-level accuracy within 59ms, which significantly improves the reliability for autonomous driving. 
+
+**Abstract (ZH)**: 一种基于毫米波雷达点云的轻量级实时准确感知融合系统：MMatch 
+
+---
+# Flying Co-Stereo: Enabling Long-Range Aerial Dense Mapping via Collaborative Stereo Vision of Dynamic-Baseline 
+
+**Title (ZH)**: 飞行共视差：通过动态基线协作立体视觉实现长距离航拍密集映射 
+
+**Authors**: Zhaoying Wang, Xingxing Zuo, Wei Dong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.00546)  
+
+**Abstract**: Lightweight long-range mapping is critical for safe navigation of UAV swarms in large-scale unknown environments. Traditional stereo vision systems with fixed short baselines face limited perception ranges. To address this, we propose Flying Co-Stereo, a cross-agent collaborative stereo vision system that leverages the wide-baseline spatial configuration of two UAVs for long-range dense mapping. Key innovations include: (1) a dual-spectrum visual-inertial-ranging estimator for robust baseline estimation; (2) a hybrid feature association strategy combining deep learning-based cross-agent matching and optical-flow-based intra-agent tracking; (3) A sparse-to-dense depth recovery scheme,refining dense monocular depth predictions using exponential fitting of long-range triangulated sparse landmarks for precise metric-scale mapping. Experiments demonstrate the Flying Co-Stereo system achieves dense 3D mapping up to 70 meters with 2.3%-9.7% relative error, outperforming conventional systems by up to 350% in depth range and 450% in coverage area. The project webpage: this https URL 
+
+**Abstract (ZH)**: 轻量级长距离建图对于大型未知环境中小型无人机群的安全导航至关重要。传统具有固定短基线的立体视觉系统面临有限的感知范围。为了解决这一问题，我们提出了一种Flying Co-Stereo飞行协同立体视觉系统，该系统利用两架无人机的宽基线空间配置实现长距离密集建图。关键创新包括：（1）一种双谱视觉-惯性测距估算器，用于稳健的基线估计；（2）一种结合基于深度学习的跨代理匹配和基于光学流的内部代理跟踪的混合特征关联策略；（3）一种稀疏到密集的深度恢复方案，使用长距离三角测量稀疏地标点的指数拟合来细化单目深度预测，实现精确的米级尺度建图。实验结果表明，Flying Co-Stereo系统实现的最大70米范围内的密集三维建图相对误差为2.3%-9.7%，在深度范围和覆盖面积方面分别比传统系统高出350%和450%。项目网页：this https URL 
+
+---
+# GaussianFusion: Gaussian-Based Multi-Sensor Fusion for End-to-End Autonomous Driving 
+
+**Title (ZH)**: GaussianFusion: 基于高斯过程的端到端多传感器融合 
+
+**Authors**: Shuai Liu, Quanmin Liang, Zefeng Li, Boyang Li, Kai Huang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.00034)  
+
+**Abstract**: Multi-sensor fusion is crucial for improving the performance and robustness of end-to-end autonomous driving systems. Existing methods predominantly adopt either attention-based flatten fusion or bird's eye view fusion through geometric transformations. However, these approaches often suffer from limited interpretability or dense computational overhead. In this paper, we introduce GaussianFusion, a Gaussian-based multi-sensor fusion framework for end-to-end autonomous driving. Our method employs intuitive and compact Gaussian representations as intermediate carriers to aggregate information from diverse sensors. Specifically, we initialize a set of 2D Gaussians uniformly across the driving scene, where each Gaussian is parameterized by physical attributes and equipped with explicit and implicit features. These Gaussians are progressively refined by integrating multi-modal features. The explicit features capture rich semantic and spatial information about the traffic scene, while the implicit features provide complementary cues beneficial for trajectory planning. To fully exploit rich spatial and semantic information in Gaussians, we design a cascade planning head that iteratively refines trajectory predictions through interactions with Gaussians. Extensive experiments on the NAVSIM and Bench2Drive benchmarks demonstrate the effectiveness and robustness of the proposed GaussianFusion framework. The source code will be released at this https URL. 
+
+**Abstract (ZH)**: 基于高斯分布的端到端自主驾驶多传感器融合框架 
+
+---
+# unMORE: Unsupervised Multi-Object Segmentation via Center-Boundary Reasoning 
+
+**Title (ZH)**: unMORE: 无监督多对象分割通过中心-边界推理 
+
+**Authors**: Yafei Yang, Zihui Zhang, Bo Yang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.01778)  
+
+**Abstract**: We study the challenging problem of unsupervised multi-object segmentation on single images. Existing methods, which rely on image reconstruction objectives to learn objectness or leverage pretrained image features to group similar pixels, often succeed only in segmenting simple synthetic objects or discovering a limited number of real-world objects. In this paper, we introduce unMORE, a novel two-stage pipeline designed to identify many complex objects in real-world images. The key to our approach involves explicitly learning three levels of carefully defined object-centric representations in the first stage. Subsequently, our multi-object reasoning module utilizes these learned object priors to discover multiple objects in the second stage. Notably, this reasoning module is entirely network-free and does not require human labels. Extensive experiments demonstrate that unMORE significantly outperforms all existing unsupervised methods across 6 real-world benchmark datasets, including the challenging COCO dataset, achieving state-of-the-art object segmentation results. Remarkably, our method excels in crowded images where all baselines collapse. 
+
+**Abstract (ZH)**: 我们研究单张图像上无监督多对象分割的挑战性问题。现有方法依赖于图像重建目标来学习对象性或利用预训练的图像特征来聚类相似的像素，往往只能成功分割简单的合成对象或发现少量的真实世界对象。在本文中，我们提出了一种名为unMORE的新型两阶段管道，旨在识别实际图像中的许多复杂对象。我们的方法的关键在于第一阶段明确学习三个层次的精心定义的对象中心表示。随后，我们的多对象推理模块利用这些学到的对象先验在第二阶段发现多个对象。值得注意的是，该推理模块完全无网络依赖，并不需要人工标签。广泛的实验表明，unMORE在包括具有挑战性的COCO数据集在内的6个真实世界基准数据集上显著优于所有现有的无监督方法，实现了最先进的对象分割结果。特别地，我们的方法在所有基准方法失效的拥挤图像中表现优异。 
+
+---
+# Ctrl-Crash: Controllable Diffusion for Realistic Car Crashes 
+
+**Title (ZH)**: 控制造车撞击：可控扩散模型生成真实的汽车碰撞事故 
+
+**Authors**: Anthony Gosselin, Ge Ya Luo, Luis Lara, Florian Golemo, Derek Nowrouzezahrai, Liam Paull, Alexia Jolicoeur-Martineau, Christopher Pal  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.00227)  
+
+**Abstract**: Video diffusion techniques have advanced significantly in recent years; however, they struggle to generate realistic imagery of car crashes due to the scarcity of accident events in most driving datasets. Improving traffic safety requires realistic and controllable accident simulations. To tackle the problem, we propose Ctrl-Crash, a controllable car crash video generation model that conditions on signals such as bounding boxes, crash types, and an initial image frame. Our approach enables counterfactual scenario generation where minor variations in input can lead to dramatically different crash outcomes. To support fine-grained control at inference time, we leverage classifier-free guidance with independently tunable scales for each conditioning signal. Ctrl-Crash achieves state-of-the-art performance across quantitative video quality metrics (e.g., FVD and JEDi) and qualitative measurements based on a human-evaluation of physical realism and video quality compared to prior diffusion-based methods. 
+
+**Abstract (ZH)**: 控制车祸视频生成模型Ctrl-Crash：基于边界框、碰撞类型和初始图像帧的可控车祸模拟算法 
+
+---
+# GeoLocSFT: Efficient Visual Geolocation via Supervised Fine-Tuning of Multimodal Foundation Models 
+
+**Title (ZH)**: GeoLocSFT: 通过多模态基础模型监督微调进行高效视觉地理定位 
+
+**Authors**: Qiang Yi, Lianlei Shan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.01277)  
+
+**Abstract**: Accurately determining the geographic location where a single image was taken, visual geolocation, remains a formidable challenge due to the planet's vastness and the deceptive similarity among distant locations. We introduce GeoLocSFT, a framework that demonstrates how targeted supervised fine-tuning (SFT) of a large multimodal foundation model (Gemma 3) using a small, high-quality dataset can yield highly competitive geolocation performance. GeoLocSFT is trained with only 2700 carefully selected image-GPS pairs from our geographically diverse MR600k dataset. Despite this limited data, our SFT-centric approach substantially improves over baseline models and achieves robust results on standard benchmarks such as Im2GPS-3k and YFCC-4k, as well as on our newly proposed and challenging MR40k benchmark, aimed specifically at sparsely populated regions. Further, we explore multi-candidate inference and aggregation strategies but find that the core gains are already realized at the SFT stage. Our findings highlight the power of high-quality supervision and efficient SFT for planet-scale image geolocation, especially when compared to prior methods that require massive databases or complex pipelines. To foster further research, we publicly release the MR40k benchmark dataset. 
+
+**Abstract (ZH)**: 准确确定单张图像的拍摄地理位置的视觉地理定位仍然是一项严峻的挑战，由于地球的广袤以及远处位置之间的误导性相似性。我们介绍了GeoLocSFT框架，该框架展示了如何使用小型高质量数据集对大型多模态基础模型（Gemma 3）进行目标导向的监督微调（SFT），以获得具有竞争力的地理定位性能。GeoLocSFT仅使用来自我们多样化的MR600k数据集的2700个精心选择的图像-GPS配对进行训练。尽管数据有限，但我们的SFT导向方法在基准模型上取得了显著改进，并在Im2GPS-3k、YFCC-4k以及我们新提出的专门针对稀疏地区设计的MR40k基准上取得了稳健的结果。此外，我们探索了多候选推理和聚合策略，但发现核心增益已在SFT阶段实现。我们的研究结果突显了高质量监督和高效SFT在地球规模图像地理定位中的强大作用，尤其是在与需要庞大数据库或复杂管道的先前方法相比时。为了促进进一步的研究，我们公开发布了MR40k基准数据集。 
+
+---
+# SynPO: Synergizing Descriptiveness and Preference Optimization for Video Detailed Captioning 
+
+**Title (ZH)**: SynPO: 结合描述性和偏好优化的视频详细caption生成 
+
+**Authors**: Jisheng Dang, Yizhou Zhang, Hao Ye, Teng Wang, Siming Chen, Huicheng Zheng, Yulan Guo, Jianhuang Lai, Bin Hu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.00835)  
+
+**Abstract**: Fine-grained video captioning aims to generate detailed, temporally coherent descriptions of video content. However, existing methods struggle to capture subtle video dynamics and rich detailed information. In this paper, we leverage preference learning to enhance the performance of vision-language models in fine-grained video captioning, while mitigating several limitations inherent to direct preference optimization (DPO). First, we propose a pipeline for constructing preference pairs that leverages the intrinsic properties of VLMs along with partial assistance from large language models, achieving an optimal balance between cost and data quality. Second, we propose Synergistic Preference Optimization (SynPO), a novel optimization method offering significant advantages over DPO and its variants. SynPO prevents negative preferences from dominating the optimization, explicitly preserves the model's language capability to avoid deviation of the optimization objective, and improves training efficiency by eliminating the need for the reference model. We extensively evaluate SynPO not only on video captioning benchmarks (e.g., VDC, VDD, VATEX) but also across well-established NLP tasks, including general language understanding and preference evaluation, using diverse pretrained models. Results demonstrate that SynPO consistently outperforms DPO variants while achieving 20\% improvement in training efficiency. Code is available at this https URL 
+
+**Abstract (ZH)**: 细粒度视频字幕生成旨在生成视频内容的详细且时间连贯的描述。然而，现有方法在捕捉微妙的视频动态和丰富的详细信息方面存在局限。在本文中，我们利用偏好学习来增强视觉-语言模型在细粒度视频字幕生成中的性能，同时缓解直接偏好优化（DPO）固有的若干局限。首先，我们提出了一种管道来构建偏好对，该管道利用视觉-语言模型的内在特性，并部分借助大型语言模型的帮助，实现成本和数据质量的最佳平衡。其次，我们提出了一种新的优化方法——协同偏好优化（SynPO），该方法在与其他DPO及其变体相比时显示出显著优势。SynPO可以防止负偏好主导优化过程，明确保留模型的语言能力以避免优化目标的偏移，并通过消除参考模型的需要来提高训练效率。我们在视频字幕基准（如VDC、VDD、VATEX）以及广泛认可的NLP任务（包括通用语言理解与偏好评估）上，使用多种预训练模型进行了广泛的评估。结果表明，SynPO持续优于DPO变体，并在训练效率上提高了20%。代码可在以下链接获取：这个 https URL。 
+
+---
+# MedEBench: Revisiting Text-instructed Image Editing 
+
+**Title (ZH)**: MedEBench: 重新审视基于文本指导的图像编辑 
+
+**Authors**: Minghao Liu, Zhitao He, Zhiyuan Fan, Qingyun Wang, Yi R. Fung  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.01921)  
+
+**Abstract**: Text-guided image editing has seen rapid progress in natural image domains, but its adaptation to medical imaging remains limited and lacks standardized evaluation. Clinically, such editing holds promise for simulating surgical outcomes, creating personalized teaching materials, and enhancing patient communication. To bridge this gap, we introduce \textbf{MedEBench}, a comprehensive benchmark for evaluating text-guided medical image editing. It consists of 1,182 clinically sourced image-prompt triplets spanning 70 tasks across 13 anatomical regions. MedEBench offers three key contributions: (1) a clinically relevant evaluation framework covering Editing Accuracy, Contextual Preservation, and Visual Quality, supported by detailed descriptions of expected change and ROI (Region of Interest) masks; (2) a systematic comparison of seven state-of-the-art models, revealing common failure patterns; and (3) a failure analysis protocol based on attention grounding, using IoU between attention maps and ROIs to identify mislocalization. MedEBench provides a solid foundation for developing and evaluating reliable, clinically meaningful medical image editing systems. 
+
+**Abstract (ZH)**: 基于文本的医学图像编辑基准：MedEBench 
+
+---
+# Ridgeformer: Mutli-Stage Contrastive Training For Fine-grained Cross-Domain Fingerprint Recognition 
+
+**Title (ZH)**: ridgeformer：多阶段对比训练的小尺度跨域指纹识别 
+
+**Authors**: Shubham Pandey, Bhavin Jawade, Srirangaraj Setlur  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.01806)  
+
+**Abstract**: The increasing demand for hygienic and portable biometric systems has underscored the critical need for advancements in contactless fingerprint recognition. Despite its potential, this technology faces notable challenges, including out-of-focus image acquisition, reduced contrast between fingerprint ridges and valleys, variations in finger positioning, and perspective distortion. These factors significantly hinder the accuracy and reliability of contactless fingerprint matching. To address these issues, we propose a novel multi-stage transformer-based contactless fingerprint matching approach that first captures global spatial features and subsequently refines localized feature alignment across fingerprint samples. By employing a hierarchical feature extraction and matching pipeline, our method ensures fine-grained, cross-sample alignment while maintaining the robustness of global feature representation. We perform extensive evaluations on publicly available datasets such as HKPolyU and RidgeBase under different evaluation protocols, such as contactless-to-contact matching and contactless-to-contactless matching and demonstrate that our proposed approach outperforms existing methods, including COTS solutions. 
+
+**Abstract (ZH)**: 不断增加的对卫生和便携的生物识别系统的需求凸显了无接触指纹识别技术进步的critical需要。尽管这项技术具有潜力，但它面临着显著的挑战，包括成像对焦不良、指纹嵴和谷之间对比度降低、手指定位差异以及视角失真。这些因素显著影响了无接触指纹匹配的准确性和可靠性。为了解决这些问题，我们提出了一种新颖的多阶段变压器基无接触指纹匹配方法，首先捕获全局空间特征，然后在指纹样本之间细化局部特征对齐。通过采用分层特征提取和匹配流水线，我们的方法确保了细粒度的跨样本对齐，同时保持了全局特征表示的鲁棒性。我们在不同的评估协议下，如无接触至接触匹配和无接触至无接触匹配，对公开可用的数据集（如HKPolyU和RidgeBase）进行了广泛的评估，并展示了我们的提出的方法优于现有方法，包括商用即用型（COTS）解决方案。 
+
+---
+# Overcoming Data Scarcity in Scanning Tunnelling Microscopy Image Segmentation 
+
+**Title (ZH)**: 克服扫描隧道显微镜图像分割中的数据稀缺性 
+
+**Authors**: Nikola L. Kolev, Max Trouton, Filippo Federici Canova, Geoff Thornton, David Z. Gao, Neil J. Curson, Taylor J. Z. Stock  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.01678)  
+
+**Abstract**: Scanning tunnelling microscopy (STM) is a powerful technique for imaging surfaces with atomic resolution, providing insight into physical and chemical processes at the level of single atoms and molecules. A regular task of STM image analysis is the identification and labelling of features of interest against a uniform background. Performing this manually is a labour-intensive task, requiring significant human effort. To reduce this burden, we propose an automated approach to the segmentation of STM images that uses both few-shot learning and unsupervised learning. Our technique offers greater flexibility compared to previous supervised methods; it removes the requirement for large manually annotated datasets and is thus easier to adapt to an unseen surface while still maintaining a high accuracy. We demonstrate the effectiveness of our approach by using it to recognise atomic features on three distinct surfaces: Si(001), Ge(001), and TiO$_2$(110), including adsorbed AsH$_3$ molecules on the silicon and germanium surfaces. Our model exhibits strong generalisation capabilities, and following initial training, can be adapted to unseen surfaces with as few as one additional labelled data point. This work is a significant step towards efficient and material-agnostic, automatic segmentation of STM images. 
+
+**Abstract (ZH)**: 扫描隧道显微镜（STM）技术是一种具备原子级分辨率的图像技术，能够提供表面的原子和分子层面的物理和化学过程见解。STM图像分析的一个常规任务是对比均匀背景识别和标注感兴趣特征。手动执行这一任务需要大量的劳动和人力。为了减轻这一负担，我们提出了一种结合少量样本学习和无监督学习的自动化图像分割方法。与之前的监督方法相比，我们的技术更具灵活性；它消除了大量手动标注数据集的需要，因此在适应未见过的表面时更容易，并且仍然保持高精度。我们通过在三种不同的表面上识别原子特征来证明我们方法的有效性：Si(001)、Ge(001) 和 TiO$_2$(110)，包括硅和锗表面吸附的AsH$_3$分子。我们的模型表现出强大的泛化能力，在初始训练后，只需一个额外的标注数据点即可适应未见过的表面。这项工作是朝着高效且材料无关的STM图像自动分割方向迈进的重要一步。 
+
+---
+# EPFL-Smart-Kitchen-30: Densely annotated cooking dataset with 3D kinematics to challenge video and language models 
+
+**Title (ZH)**: EPFL-智能厨房30：包含3D运动学密集标注的烹饪数据集，挑战视频和语言模型 
+
+**Authors**: Andy Bonnetto, Haozhe Qi, Franklin Leong, Matea Tashkovska, Mahdi Rad, Solaiman Shokur, Friedhelm Hummel, Silvestro Micera, Marc Pollefeys, Alexander Mathis  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.01608)  
+
+**Abstract**: Understanding behavior requires datasets that capture humans while carrying out complex tasks. The kitchen is an excellent environment for assessing human motor and cognitive function, as many complex actions are naturally exhibited in kitchens from chopping to cleaning. Here, we introduce the EPFL-Smart-Kitchen-30 dataset, collected in a noninvasive motion capture platform inside a kitchen environment. Nine static RGB-D cameras, inertial measurement units (IMUs) and one head-mounted HoloLens~2 headset were used to capture 3D hand, body, and eye movements. The EPFL-Smart-Kitchen-30 dataset is a multi-view action dataset with synchronized exocentric, egocentric, depth, IMUs, eye gaze, body and hand kinematics spanning 29.7 hours of 16 subjects cooking four different recipes. Action sequences were densely annotated with 33.78 action segments per minute. Leveraging this multi-modal dataset, we propose four benchmarks to advance behavior understanding and modeling through 1) a vision-language benchmark, 2) a semantic text-to-motion generation benchmark, 3) a multi-modal action recognition benchmark, 4) a pose-based action segmentation benchmark. We expect the EPFL-Smart-Kitchen-30 dataset to pave the way for better methods as well as insights to understand the nature of ecologically-valid human behavior. Code and data are available at this https URL 
+
+**Abstract (ZH)**: 理解行为需要捕捉执行复杂任务的人类的数据集。厨房是评估人类运动和认知功能的理想环境，因为在厨房中从切菜到清洁等许多复杂动作自然是发生的。在这里，我们介绍了在厨房环境中收集的EPFL-Smart-Kitchen-30数据集，使用非侵入式动作捕捉平台。九个静态RGB-D摄像头、惯性测量单元（IMUs）和一个头戴式HoloLens 2头显被用于捕捉3D手部、身体和眼部运动。EPFL-Smart-Kitchen-30数据集是一个包含同步外部视角、第一人称视角、深度、IMUs、眼动、身体和手部运动学信息的多种视角动作数据集，覆盖了16名受试者烹饪四种不同食谱的29.7小时。每分钟有33.78个动作片段的密集标注。利用这一多模态数据集，我们提出四个基准来通过1）视觉语言基准，2）语义文本到动作生成基准，3）多模态动作识别基准，4）基于姿态的动作分割基准，推进行为理解和建模。我们期望EPFL-Smart-Kitchen-30数据集为更好的方法以及对生态有效的人类行为本质的理解开辟道路。代码和数据可在以下链接获取。 
+
+---
+# G4Seg: Generation for Inexact Segmentation Refinement with Diffusion Models 
+
+**Title (ZH)**: G4Seg: 基于扩散模型的不精确分割精炼生成 
+
+**Authors**: Tianjiao Zhang, Fei Zhang, Jiangchao Yao, Ya Zhang, Yanfeng Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.01539)  
+
+**Abstract**: This paper considers the problem of utilizing a large-scale text-to-image diffusion model to tackle the challenging Inexact Segmentation (IS) task. Unlike traditional approaches that rely heavily on discriminative-model-based paradigms or dense visual representations derived from internal attention mechanisms, our method focuses on the intrinsic generative priors in Stable Diffusion~(SD). Specifically, we exploit the pattern discrepancies between original images and mask-conditional generated images to facilitate a coarse-to-fine segmentation refinement by establishing a semantic correspondence alignment and updating the foreground probability. Comprehensive quantitative and qualitative experiments validate the effectiveness and superiority of our plug-and-play design, underscoring the potential of leveraging generation discrepancies to model dense representations and encouraging further exploration of generative approaches for solving discriminative tasks. 
+
+**Abstract (ZH)**: 本文考虑利用大规模文本到图像扩散模型解决不准确分割（IS）任务的问题。与传统依赖于判别模型或内部注意力机制衍生的密集视觉表示的方法不同，我们的方法集中于稳定的扩散（SD）中的固有生成先验。具体而言，我们通过建立语义对应对齐和更新前景概率，利用原始图像与条件遮罩生成图像之间的模式差异来促进由粗到细的分割细化。全面的定量和定性实验验证了我们即插即用设计的有效性和优越性，强调了利用生成差异建模密集表示的潜力，并促进进一步探索生成方法解决判别任务的可能性。 
+
+---
+# Playing with Transformer at 30+ FPS via Next-Frame Diffusion 
+
+**Title (ZH)**: 利用下一帧扩散在30+ FPS下玩转Transformer 
+
+**Authors**: Xinle Cheng, Tianyu He, Jiayi Xu, Junliang Guo, Di He, Jiang Bian  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.01380)  
+
+**Abstract**: Autoregressive video models offer distinct advantages over bidirectional diffusion models in creating interactive video content and supporting streaming applications with arbitrary duration. In this work, we present Next-Frame Diffusion (NFD), an autoregressive diffusion transformer that incorporates block-wise causal attention, enabling iterative sampling and efficient inference via parallel token generation within each frame. Nonetheless, achieving real-time video generation remains a significant challenge for such models, primarily due to the high computational cost associated with diffusion sampling and the hardware inefficiencies inherent to autoregressive generation. To address this, we introduce two innovations: (1) We extend consistency distillation to the video domain and adapt it specifically for video models, enabling efficient inference with few sampling steps; (2) To fully leverage parallel computation, motivated by the observation that adjacent frames often share the identical action input, we propose speculative sampling. In this approach, the model generates next few frames using current action input, and discard speculatively generated frames if the input action differs. Experiments on a large-scale action-conditioned video generation benchmark demonstrate that NFD beats autoregressive baselines in terms of both visual quality and sampling efficiency. We, for the first time, achieves autoregressive video generation at over 30 Frames Per Second (FPS) on an A100 GPU using a 310M model. 
+
+**Abstract (ZH)**: 自回归视频模型在创建交互视频内容和支持任意时长的流媒体应用方面具有双向扩散模型的独特优势。本文介绍了一种名为Next-Frame Diffusion (NFD)的自回归扩散变换器，该模型采用了区块因果注意力机制，能够在每帧内通过并行令牌生成实现迭代采样和高效推理。尽管如此，由于扩散采样的高计算成本和自回归生成的固有硬件不效率，实现实时视频生成仍是一项重大挑战。为了解决这一问题，我们引入了两项创新：（1）将一致性蒸馏扩展到视频领域，并针对视频模型进行适配，以实现高效推理且只需少量采样步骤；（2）为了充分利用并行计算，在观察到相邻帧通常具有相同的动作输入后，我们提出了一种推测性采样方法，该方法利用当前动作输入生成接下来几帧的内容，并在输入动作变化时丢弃推测生成的帧。在大规模动作条件视频生成基准测试上的实验表明，NFD在视觉质量和采样效率方面都优于自回归基线。我们首次使用一个310M模型在A100 GPU上实现了超过30帧每秒（FPS）的自回归视频生成。 
+
+---
+# Visual Sparse Steering: Improving Zero-shot Image Classification with Sparsity Guided Steering Vectors 
+
+**Title (ZH)**: 视觉稀疏引导：基于稀疏引导向量的零样本图像分类改进 
+
+**Authors**: Gerasimos Chatzoudis, Zhuowei Li, Gemma E. Moran, Hao Wang, Dimitris N. Metaxas  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.01247)  
+
+**Abstract**: Steering vision foundation models at inference time without retraining or access to large labeled datasets is a desirable yet challenging objective, particularly in dynamic or resource-constrained settings. In this paper, we introduce Visual Sparse Steering (VS2), a lightweight, test-time method that guides vision models using steering vectors derived from sparse features learned by top-$k$ Sparse Autoencoders without requiring contrastive data. Specifically, VS2 surpasses zero-shot CLIP by 4.12% on CIFAR-100, 1.08% on CUB-200, and 1.84% on Tiny-ImageNet. We further propose VS2++, a retrieval-augmented variant that selectively amplifies relevant sparse features using pseudo-labeled neighbors at inference time. With oracle positive/negative sets, VS2++ achieves absolute top-1 gains over CLIP zero-shot of up to 21.44% on CIFAR-100, 7.08% on CUB-200, and 20.47% on Tiny-ImageNet. Interestingly, VS2 and VS2++ raise per-class accuracy by up to 25% and 38%, respectively, showing that sparse steering benefits specific classes by disambiguating visually or taxonomically proximate categories rather than providing a uniform boost. Finally, to better align the sparse features learned through the SAE reconstruction task with those relevant for downstream performance, we propose Prototype-Aligned Sparse Steering (PASS). By incorporating a prototype-alignment loss during SAE training, using labels only during training while remaining fully test-time unsupervised, PASS consistently, though modestly, outperforms VS2, achieving a 6.12% gain over VS2 only on CIFAR-100 with ViT-B/32. 
+
+**Abstract (ZH)**: 无需重新训练或访问大型标记数据集，在推理时引导视觉基础模型是一个既 desirable 又 challenging 的目标，尤其是在动态或资源受限的环境中。本文介绍了 Visual Sparse Steering (VS2)，一种轻量级的测试时方法，该方法使用由 top-$k$ 稀疏自编码器学习的稀疏特征导出的引导向量来引导视觉模型，而不需对比数据。具体而言，VS2 在 CIFAR-100 上超越零样本 CLIP 的表现提高了 4.12%，在 CUB-200 上提高了 1.08%，在 Tiny-ImageNet 上提高了 1.84%。我们进一步提出了 VS2++，这是一种检索增强变体，在推理时选择性地放大相关稀疏特征，使用伪标记的邻居。使用 oracle 正负集，VS2++ 在 CIFAR-100 上的绝对 top-1 提升最高达到 21.44%，在 CUB-200 上达到 7.08%，在 Tiny-ImageNet 上达到 20.47%。有趣的是，VS2 和 VS2++ 分别将每类准确率提高了 25% 和 38%，表明稀疏引导有助于通过区分视觉上或分类上相近的类别来特异性提高某些类别的性能，而不是提供统一的提升。最后，为了更好地使通过 SAE 重建任务学习到的稀疏特征与下游性能相关的稀疏特征保持一致，我们提出了 Prototype-Aligned Sparse Steering (PASS)。通过在 SAE 训练过程中引入原型对齐损失，仅在训练过程中使用标签而在完全无监督的测试时保持，PASS 一致但适度地优于 VS2，在 ViT-B/32 上仅在 CIFAR-100 上实现了 6.12% 的提升。 
+
+---
+# A Review on Coarse to Fine-Grained Animal Action Recognition 
+
+**Title (ZH)**: 粗到细粒度动物动作识别综述 
+
+**Authors**: Ali Zia, Renuka Sharma, Abdelwahed Khamis, Xuesong Li, Muhammad Husnain, Numan Shafi, Saeed Anwar, Sabine Schmoelzl, Eric Stone, Lars Petersson, Vivien Rolland  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.01214)  
+
+**Abstract**: This review provides an in-depth exploration of the field of animal action recognition, focusing on coarse-grained (CG) and fine-grained (FG) techniques. The primary aim is to examine the current state of research in animal behaviour recognition and to elucidate the unique challenges associated with recognising subtle animal actions in outdoor environments. These challenges differ significantly from those encountered in human action recognition due to factors such as non-rigid body structures, frequent occlusions, and the lack of large-scale, annotated datasets. The review begins by discussing the evolution of human action recognition, a more established field, highlighting how it progressed from broad, coarse actions in controlled settings to the demand for fine-grained recognition in dynamic environments. This shift is particularly relevant for animal action recognition, where behavioural variability and environmental complexity present unique challenges that human-centric models cannot fully address. The review then underscores the critical differences between human and animal action recognition, with an emphasis on high intra-species variability, unstructured datasets, and the natural complexity of animal habitats. Techniques like spatio-temporal deep learning frameworks (e.g., SlowFast) are evaluated for their effectiveness in animal behaviour analysis, along with the limitations of existing datasets. By assessing the strengths and weaknesses of current methodologies and introducing a recently-published dataset, the review outlines future directions for advancing fine-grained action recognition, aiming to improve accuracy and generalisability in behaviour analysis across species. 
+
+**Abstract (ZH)**: 动物动作识别领域的综述：粗粒度与细粒度技术探究 
+
+---
+# CountingFruit: Real-Time 3D Fruit Counting with Language-Guided Semantic Gaussian Splatting 
+
+**Title (ZH)**: 水果计数:基于语言引导语义高斯点绘制的实时3D水果计数 
+
+**Authors**: Fengze Li, Yangle Liu, Jieming Ma, Hai-Ning Liang, Yaochun Shen, Huangxiang Li, Zhijing Wu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.01109)  
+
+**Abstract**: Accurate fruit counting in real-world agricultural environments is a longstanding challenge due to visual occlusions, semantic ambiguity, and the high computational demands of 3D reconstruction. Existing methods based on neural radiance fields suffer from low inference speed, limited generalization, and lack support for open-set semantic control. This paper presents FruitLangGS, a real-time 3D fruit counting framework that addresses these limitations through spatial reconstruction, semantic embedding, and language-guided instance estimation. FruitLangGS first reconstructs orchard-scale scenes using an adaptive Gaussian splatting pipeline with radius-aware pruning and tile-based rasterization for efficient rendering. To enable semantic control, each Gaussian encodes a compressed CLIP-aligned language embedding, forming a compact and queryable 3D representation. At inference time, prompt-based semantic filtering is applied directly in 3D space, without relying on image-space segmentation or view-level fusion. The selected Gaussians are then converted into dense point clouds via distribution-aware sampling and clustered to estimate fruit counts. Experimental results on real orchard data demonstrate that FruitLangGS achieves higher rendering speed, semantic flexibility, and counting accuracy compared to prior approaches, offering a new perspective for language-driven, real-time neural rendering across open-world scenarios. 
+
+**Abstract (ZH)**: 实时农业环境中基于语义引导的三维水果计数框架 FruitLangGS 
+
+---
+# Motion-Aware Concept Alignment for Consistent Video Editing 
+
+**Title (ZH)**: 基于运动感知的概念对齐以实现一致的视频编辑 
+
+**Authors**: Tong Zhang, Juan C Leon Alcazar, Bernard Ghanem  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.01004)  
+
+**Abstract**: We introduce MoCA-Video (Motion-Aware Concept Alignment in Video), a training-free framework bridging the gap between image-domain semantic mixing and video. Given a generated video and a user-provided reference image, MoCA-Video injects the semantic features of the reference image into a specific object within the video, while preserving the original motion and visual context. Our approach leverages a diagonal denoising schedule and class-agnostic segmentation to detect and track objects in the latent space and precisely control the spatial location of the blended objects. To ensure temporal coherence, we incorporate momentum-based semantic corrections and gamma residual noise stabilization for smooth frame transitions. We evaluate MoCA's performance using the standard SSIM, image-level LPIPS, temporal LPIPS, and introduce a novel metric CASS (Conceptual Alignment Shift Score) to evaluate the consistency and effectiveness of the visual shifts between the source prompt and the modified video frames. Using self-constructed dataset, MoCA-Video outperforms current baselines, achieving superior spatial consistency, coherent motion, and a significantly higher CASS score, despite having no training or fine-tuning. MoCA-Video demonstrates that structured manipulation in the diffusion noise trajectory allows for controllable, high-quality video synthesis. 
+
+**Abstract (ZH)**: MoCA-Video：基于运动意识的概念对齐视频生成框架 
+
+---
+# IVY-FAKE: A Unified Explainable Framework and Benchmark for Image and Video AIGC Detection 
+
+**Title (ZH)**: IVY-FAKE: 一个统一的可解释框架与基准用于图像和视频AIGC检测 
+
+**Authors**: Wayne Zhang, Changjiang Jiang, Zhonghao Zhang, Chenyang Si, Fengchang Yu, Wei Peng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.00979)  
+
+**Abstract**: The rapid advancement of Artificial Intelligence Generated Content (AIGC) in visual domains has resulted in highly realistic synthetic images and videos, driven by sophisticated generative frameworks such as diffusion-based architectures. While these breakthroughs open substantial opportunities, they simultaneously raise critical concerns about content authenticity and integrity. Many current AIGC detection methods operate as black-box binary classifiers, which offer limited interpretability, and no approach supports detecting both images and videos in a unified framework. This dual limitation compromises model transparency, reduces trustworthiness, and hinders practical deployment. To address these challenges, we introduce IVY-FAKE , a novel, unified, and large-scale dataset specifically designed for explainable multimodal AIGC detection. Unlike prior benchmarks, which suffer from fragmented modality coverage and sparse annotations, IVY-FAKE contains over 150,000 richly annotated training samples (images and videos) and 18,700 evaluation examples, each accompanied by detailed natural-language reasoning beyond simple binary labels. Building on this, we propose Ivy Explainable Detector (IVY-XDETECTOR), a unified AIGC detection and explainable architecture that jointly performs explainable detection for both image and video content. Our unified vision-language model achieves state-of-the-art performance across multiple image and video detection benchmarks, highlighting the significant advancements enabled by our dataset and modeling framework. Our data is publicly available at this https URL. 
+
+**Abstract (ZH)**: AIGC视觉领域生成内容的快速进步产生了高度逼真的合成图像和视频，由基于扩散的架构等复杂的生成框架驱动。尽管这些突破创造了巨大机会，但也引发了关于内容真实性和完整性的关键担忧。当前许多AIGC检测方法作为黑盒二分类器运作，缺乏可解释性，而且没有任何方法能够在统一框架中同时检测图像和视频。这一双重限制损害了模型的透明性，降低了可信度，并阻碍了实际部署。为应对这些挑战，我们介绍了IVY-FAKE，一个专为可解释的多模态AIGC检测设计的新型大规模数据集。不同于先前基准数据集碎片化的模态覆盖和稀疏的注释，IVY-FAKE 包含超过150,000 个丰富注释的训练样本（图像和视频）和18,700 个评估例证，每例均附有详细的自然语言推理，而不仅仅是简单的二元标签。基于此，我们提出了Ivy Explainable Detector（IVY-XDETECTOR），一种统一的AIGC检测和可解释架构，能够同时对图像和视频内容进行可解释检测。我们的统一视觉语言模型在多个图像和视频检测基准测试中取得最佳性能，突显了我们的数据集和建模框架带来的显著进步。数据集公开可访问于此链接。 
+
+---
+# State-Covering Trajectory Stitching for Diffusion Planners 
+
+**Title (ZH)**: 状态覆盖轨迹缝合用于扩散规划者 
+
+**Authors**: Kyowoon Lee, Jaesik Choi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.00895)  
+
+**Abstract**: Diffusion-based generative models are emerging as powerful tools for long-horizon planning in reinforcement learning (RL), particularly with offline datasets. However, their performance is fundamentally limited by the quality and diversity of training data. This often restricts their generalization to tasks outside their training distribution or longer planning horizons. To overcome this challenge, we propose State-Covering Trajectory Stitching (SCoTS), a novel reward-free trajectory augmentation method that incrementally stitches together short trajectory segments, systematically generating diverse and extended trajectories. SCoTS first learns a temporal distance-preserving latent representation that captures the underlying temporal structure of the environment, then iteratively stitches trajectory segments guided by directional exploration and novelty to effectively cover and expand this latent space. We demonstrate that SCoTS significantly improves the performance and generalization capabilities of diffusion planners on offline goal-conditioned benchmarks requiring stitching and long-horizon reasoning. Furthermore, augmented trajectories generated by SCoTS significantly improve the performance of widely used offline goal-conditioned RL algorithms across diverse environments. 
+
+**Abstract (ZH)**: 基于扩散的生成模型正成为强化学习(_rl_)中长远规划的强大工具，特别是在使用离线数据集的情况下。然而，它们的表现从根本上受限于训练数据的质量和多样性。这通常限制了它们在训练分布之外的任务上的泛化能力或更长的规划时间范围。为克服这一挑战，我们提出了一种名为状态覆盖轨迹缝合(Scots)的新型无奖励轨迹增强方法，该方法逐步缝合短轨迹片段，系统地生成多样且延长的轨迹。Scots首先学习一个保持时间距离的潜在表示，以捕捉环境的内在时间结构，然后通过方向探索和新颖性逐步缝合轨迹片段，有效地覆盖和扩展这一潜在空间。我们展示了Scots在需要缝合和长远推理的离线目标条件基准测试中显著提高了扩散规划器的性能和泛化能力。此外，由Scots生成的增强轨迹在多种环境中显著提高了广泛使用的离线目标条件RL算法的性能。 
+
+---
+# Uneven Event Modeling for Partially Relevant Video Retrieval 
+
+**Title (ZH)**: 部分相关视频检索的不均匀事件建模 
+
+**Authors**: Sa Zhu, Huashan Chen, Wanqian Zhang, Jinchao Zhang, Zexian Yang, Xiaoshuai Hao, Bo Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.00891)  
+
+**Abstract**: Given a text query, partially relevant video retrieval (PRVR) aims to retrieve untrimmed videos containing relevant moments, wherein event modeling is crucial for partitioning the video into smaller temporal events that partially correspond to the text. Previous methods typically segment videos into a fixed number of equal-length clips, resulting in ambiguous event boundaries. Additionally, they rely on mean pooling to compute event representations, inevitably introducing undesired misalignment. To address these, we propose an Uneven Event Modeling (UEM) framework for PRVR. We first introduce the Progressive-Grouped Video Segmentation (PGVS) module, to iteratively formulate events in light of both temporal dependencies and semantic similarity between consecutive frames, enabling clear event boundaries. Furthermore, we also propose the Context-Aware Event Refinement (CAER) module to refine the event representation conditioned the text's cross-attention. This enables event representations to focus on the most relevant frames for a given text, facilitating more precise text-video alignment. Extensive experiments demonstrate that our method achieves state-of-the-art performance on two PRVR benchmarks. 
+
+**Abstract (ZH)**: 给定文本查询的部分相关视频检索（PRVR）旨在检索包含相关时刻的未剪辑视频，其中事件建模对于将视频划分为部分对应文本的小时间段事件至关重要。先前的方法通常将视频分割为固定数量的等长片段，导致事件边界模糊。此外，它们依赖于均值池化来计算事件表示，不可避免地引入了不必要的对齐错误。为了解决这些问题，我们提出了一个不均匀事件建模（UEM）框架用于部分相关视频检索。我们首先引入了渐进分组视频分割（PGVS）模块，通过考虑连续帧之间的时序依赖性和语义相似性来逐迭代地定义事件，从而实现清晰的事件边界。此外，我们还提出了基于文本交叉注意力的事件精炼（CAER）模块来细化事件表示。这使得事件表示能够聚焦于给定文本的最相关帧，从而促进更精确的文本-视频对齐。广泛的实验表明，我们的方法在两个PRVR基准测试中实现了最先进的性能。 
+
+---
+# Counterfactual Activation Editing for Post-hoc Prosody and Mispronunciation Correction in TTS Models 
+
+**Title (ZH)**: 用于TTS模型事后韵律及误读校正的反事实激活编辑 
+
+**Authors**: Kyowoon Lee, Artyom Stitsyuk, Gunu Jho, Inchul Hwang, Jaesik Choi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.00832)  
+
+**Abstract**: Recent advances in Text-to-Speech (TTS) have significantly improved speech naturalness, increasing the demand for precise prosody control and mispronunciation correction. Existing approaches for prosody manipulation often depend on specialized modules or additional training, limiting their capacity for post-hoc adjustments. Similarly, traditional mispronunciation correction relies on grapheme-to-phoneme dictionaries, making it less practical in low-resource settings. We introduce Counterfactual Activation Editing, a model-agnostic method that manipulates internal representations in a pre-trained TTS model to achieve post-hoc control of prosody and pronunciation. Experimental results show that our method effectively adjusts prosodic features and corrects mispronunciations while preserving synthesis quality. This opens the door to inference-time refinement of TTS outputs without retraining, bridging the gap between pre-trained TTS models and editable speech synthesis. 
+
+**Abstract (ZH)**: Recent Advances in Text-to-Speech: Achieving Post-Hoc Prosody Control and Mispronunciation Correction through Counterfactual Activation Editing 
+
+---
+# ArtiScene: Language-Driven Artistic 3D Scene Generation Through Image Intermediary 
+
+**Title (ZH)**: ArtiScene: 通过图像中介的语言驱动的艺术性3D场景生成 
+
+**Authors**: Zeqi Gu, Yin Cui, Zhaoshuo Li, Fangyin Wei, Yunhao Ge, Jinwei Gu, Ming-Yu Liu, Abe Davis, Yifan Ding  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.00742)  
+
+**Abstract**: Designing 3D scenes is traditionally a challenging task that demands both artistic expertise and proficiency with complex software. Recent advances in text-to-3D generation have greatly simplified this process by letting users create scenes based on simple text descriptions. However, as these methods generally require extra training or in-context learning, their performance is often hindered by the limited availability of high-quality 3D data. In contrast, modern text-to-image models learned from web-scale images can generate scenes with diverse, reliable spatial layouts and consistent, visually appealing styles. Our key insight is that instead of learning directly from 3D scenes, we can leverage generated 2D images as an intermediary to guide 3D synthesis. In light of this, we introduce ArtiScene, a training-free automated pipeline for scene design that integrates the flexibility of free-form text-to-image generation with the diversity and reliability of 2D intermediary layouts.
+First, we generate 2D images from a scene description, then extract the shape and appearance of objects to create 3D models. These models are assembled into the final scene using geometry, position, and pose information derived from the same intermediary image. Being generalizable to a wide range of scenes and styles, ArtiScene outperforms state-of-the-art benchmarks by a large margin in layout and aesthetic quality by quantitative metrics. It also averages a 74.89% winning rate in extensive user studies and 95.07% in GPT-4o evaluation. Project page: this https URL 
+
+**Abstract (ZH)**: 设计3D场景 traditionally a challenging task that demands both artistic expertise and proficiency with complex software.Recent advances in text-to-3D generation have greatly simplified this process by letting users create scenes based on simple text descriptions. However, as these methods generally require extra training or in-context learning, their performance is often hindered by the limited availability of high-quality 3D data. In contrast, modern text-to-image models learned from web-scale images can generate scenes with diverse, reliable spatial layouts and consistent, visually appealing styles. Our key insight is that instead of learning directly from 3D scenes, we can leverage generated 2D images as an intermediary to guide 3D synthesis. In light of this, we introduce ArtiScene, a training-free automated pipeline for scene design that integrates the flexibility of free-form text-to-image generation with the diversity and reliability of 2D intermediary layouts.
+
+首先，根据场景描述生成2D图像，然后提取物体的形状和外观以创建3D模型。这些模型根据来自同一中间图像的几何形状、位置和姿态信息组装成最终场景。ArtiScene 可泛化到各种场景和风格，在广泛的定量指标上表现出优于现有基准模型的布局和美感质量，平均在大规模用户研究中获胜率为74.89%，在GPT-4o评估中为95.07%。项目页面：this https URL。 
+
+---
+# From Local Cues to Global Percepts: Emergent Gestalt Organization in Self-Supervised Vision Models 
+
+**Title (ZH)**: 从局部线索到全局知觉：自我监督视觉模型中的格式塔组织涌现 
+
+**Authors**: Tianqin Li, Ziqi Wen, Leiran Song, Jun Liu, Zhi Jing, Tai Sing Lee  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.00718)  
+
+**Abstract**: Human vision organizes local cues into coherent global forms using Gestalt principles like closure, proximity, and figure-ground assignment -- functions reliant on global spatial structure. We investigate whether modern vision models show similar behaviors, and under what training conditions these emerge. We find that Vision Transformers (ViTs) trained with Masked Autoencoding (MAE) exhibit activation patterns consistent with Gestalt laws, including illusory contour completion, convexity preference, and dynamic figure-ground segregation. To probe the computational basis, we hypothesize that modeling global dependencies is necessary for Gestalt-like organization. We introduce the Distorted Spatial Relationship Testbench (DiSRT), which evaluates sensitivity to global spatial perturbations while preserving local textures. Using DiSRT, we show that self-supervised models (e.g., MAE, CLIP) outperform supervised baselines and sometimes even exceed human performance. ConvNeXt models trained with MAE also exhibit Gestalt-compatible representations, suggesting such sensitivity can arise without attention architectures. However, classification finetuning degrades this ability. Inspired by biological vision, we show that a Top-K activation sparsity mechanism can restore global sensitivity. Our findings identify training conditions that promote or suppress Gestalt-like perception and establish DiSRT as a diagnostic for global structure sensitivity across models. 
+
+**Abstract (ZH)**: 人类视觉利用闭合、邻近和图形背景区分等格式塔原则将局部线索组织成统一的整体形式——这些功能依赖于全局空间结构。我们探讨现代视觉模型是否表现出类似的行为，以及在哪些训练条件下这些行为出现。我们发现使用掩蔽自编码（MAE）训练的视觉变压器（ViTs）显示出与格式塔定律一致的激活模式，包括虚假轮廓完成、凸性偏好和动态图形背景区分。为了探究其计算基础，我们假设建模全局依赖性对于格式塔似的组织是必要的。我们引入了变形空间关系测试床（DiSRT），该测试床评估对全局空间扰动的敏感性，同时保持局部纹理不变。使用DiSRT，我们展示了自监督模型（例如，MAE、CLIP）优于监督基线，并且有时甚至超过人类表现。使用MAE训练的ConvNeXt模型也表现出格式塔兼容的表示，表明这种敏感性可以在不依赖注意力架构的情况下出现。然而，分类微调降低了这种能力。借鉴生物视觉，我们展示了Top-K激活稀疏机制可以恢复全局敏感性。我们的研究确定了促进或抑制格式塔似的感知的训练条件，并将DiSRT确立为模型中全局结构敏感性的一种诊断工具。 
+
+---
+# Optimizing Sensory Neurons: Nonlinear Attention Mechanisms for Accelerated Convergence in Permutation-Invariant Neural Networks for Reinforcement Learning 
+
+**Title (ZH)**: 优化感觉神经元：排列不变神经网络中加速收敛的非线性注意力机制 
+
+**Authors**: Junaid Muzaffar, Ahsan Adeel, Khubaib Ahmed, Ingo Frommholz, Zeeshan Pervez, Ahsan ul Haq  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.00691)  
+
+**Abstract**: Training reinforcement learning (RL) agents often requires significant computational resources and extended training times. To address this, we build upon the foundation laid by Google Brain's Sensory Neuron, which introduced a novel neural architecture for reinforcement learning tasks that maintained permutation in-variance in the sensory neuron system. While the baseline model demonstrated significant performance improvements over traditional approaches, we identified opportunities to enhance the efficiency of the learning process further. We propose a modified attention mechanism incorporating a non-linear transformation of the key vectors (K) using a mapping function, resulting in a new set of key vectors (K'). This non-linear mapping enhances the representational capacity of the attention mechanism, allowing the model to encode more complex feature interactions and accelerating convergence without compromising performance. Our enhanced model demonstrates significant improvements in learning efficiency, showcasing the potential for non-linear attention mechanisms in advancing reinforcement learning algorithms. 
+
+**Abstract (ZH)**: 训练强化学习（RL）代理通常需要大量的计算资源和较长的训练时间。为了解决这一问题，我们在此基础上构建了Google Brain的感官神经元所提出的、具有感知不变性的新颖神经架构。尽管基线模型在传统方法上显著提高了性能，但我们发现了进一步提高学习过程效率的机会。我们提出了一种修改后的注意机制，通过使用映射函数对键向量（K）进行非线性变换，生成新的键向量（K'）。这种非线性映射增强了注意机制的表现能力，使模型能够编码更复杂的特征交互，并加速收敛而不会牺牲性能。我们的增强模型在学习效率上显示出显著的改进，展示了非线性注意机制在推动强化学习算法发展方面的潜力。 
+
+---
+# Text-to-CT Generation via 3D Latent Diffusion Model with Contrastive Vision-Language Pretraining 
+
+**Title (ZH)**: 基于对比视觉-语言预训练的3D潜在扩散模型文本到CT生成 
+
+**Authors**: Daniele Molino, Camillo Maria Caruso, Filippo Ruffini, Paolo Soda, Valerio Guarrasi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.00633)  
+
+**Abstract**: Objective: While recent advances in text-conditioned generative models have enabled the synthesis of realistic medical images, progress has been largely confined to 2D modalities such as chest X-rays. Extending text-to-image generation to volumetric Computed Tomography (CT) remains a significant challenge, due to its high dimensionality, anatomical complexity, and the absence of robust frameworks that align vision-language data in 3D medical imaging. Methods: We introduce a novel architecture for Text-to-CT generation that combines a latent diffusion model with a 3D contrastive vision-language pretraining scheme. Our approach leverages a dual-encoder CLIP-style model trained on paired CT volumes and radiology reports to establish a shared embedding space, which serves as the conditioning input for generation. CT volumes are compressed into a low-dimensional latent space via a pretrained volumetric VAE, enabling efficient 3D denoising diffusion without requiring external super-resolution stages. Results: We evaluate our method on the CT-RATE dataset and conduct a comprehensive assessment of image fidelity, clinical relevance, and semantic alignment. Our model achieves competitive performance across all tasks, significantly outperforming prior baselines for text-to-CT generation. Moreover, we demonstrate that CT scans synthesized by our framework can effectively augment real data, improving downstream diagnostic performance. Conclusion: Our results show that modality-specific vision-language alignment is a key component for high-quality 3D medical image generation. By integrating contrastive pretraining and volumetric diffusion, our method offers a scalable and controllable solution for synthesizing clinically meaningful CT volumes from text, paving the way for new applications in data augmentation, medical education, and automated clinical simulation. 
+
+**Abstract (ZH)**: 目标: 尽管最近在文本条件生成模型方面的进展使得合成真实医疗图像成为可能，但这些进展主要局限于如胸部X光片这样的2D模态。将文本到图像的生成扩展到体积计算机断层扫描(CT)仍然是一个重大挑战，这主要是由于其高维度、解剖复杂性以及缺少能够对3D医疗成像中的视觉-语言数据进行对齐的稳健框架。方法: 我们提出了一个新的用于文本到CT生成的架构，该架构结合了潜扩散模型和3D对照ive视觉-语言预训练方案。我们的方法利用在配对的CT体积和放射学报告上训练的双编码器CLIP风格模型建立共享嵌入空间，该空间作为生成的条件输入。通过预先训练的体积VAE将CT体积压缩到低维度潜空间，从而实现高效的3D降噪扩散，而无需外部超分辨率阶段。结果: 我们在CT-RATE数据集上评估了我们的方法，并对图像保真度、临床相关性和语义对齐进行了全面评估。我们的模型在所有任务中都表现出竞争力，显著优于现有的文本到CT生成基线。此外，我们证明由我们的框架合成的CT扫描能够有效增强真实数据，提高下游诊断性能。结论: 我们的结果表明，模态特定的视觉-语言对齐是高质量3D医疗图像生成的关键组成部分。通过结合对照ive预训练和体积扩散，我们的方法提供了一种可扩展且可控的解决方案，用于从文本生成具有临床意义的CT体积，为数据增强、医学教育和自动化临床模拟开辟了新的应用途径。 
+
+---
+# Pro3D-Editor : A Progressive-Views Perspective for Consistent and Precise 3D Editing 
+
+**Title (ZH)**: Pro3D-Editor : 一种渐进视点视角下的一致精准3D编辑 
+
+**Authors**: Yang Zheng, Mengqi Huang, Nan Chen, Zhendong Mao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.00512)  
+
+**Abstract**: Text-guided 3D editing aims to precisely edit semantically relevant local 3D regions, which has significant potential for various practical applications ranging from 3D games to film production. Existing methods typically follow a view-indiscriminate paradigm: editing 2D views indiscriminately and projecting them back into 3D space. However, they overlook the different cross-view interdependencies, resulting in inconsistent multi-view editing. In this study, we argue that ideal consistent 3D editing can be achieved through a \textit{progressive-views paradigm}, which propagates editing semantics from the editing-salient view to other editing-sparse views. Specifically, we propose \textit{Pro3D-Editor}, a novel framework, which mainly includes Primary-view Sampler, Key-view Render, and Full-view Refiner. Primary-view Sampler dynamically samples and edits the most editing-salient view as the primary view. Key-view Render accurately propagates editing semantics from the primary view to other key views through its Mixture-of-View-Experts Low-Rank Adaption (MoVE-LoRA). Full-view Refiner edits and refines the 3D object based on the edited multi-views. Extensive experiments demonstrate that our method outperforms existing methods in editing accuracy and spatial consistency. 
+
+**Abstract (ZH)**: 基于文本引导的渐进视角3D编辑 
+
+---
+# $\texttt{AVROBUSTBENCH}$: Benchmarking the Robustness of Audio-Visual Recognition Models at Test-Time 
+
+**Title (ZH)**: AVROBUSTBENCH：测试时音频-视觉识别模型鲁棒性对比基准 
+
+**Authors**: Sarthak Kumar Maharana, Saksham Singh Kushwaha, Baoming Zhang, Adrian Rodriguez, Songtao Wei, Yapeng Tian, Yunhui Guo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.00358)  
+
+**Abstract**: While recent audio-visual models have demonstrated impressive performance, their robustness to distributional shifts at test-time remains not fully understood. Existing robustness benchmarks mainly focus on single modalities, making them insufficient for thoroughly assessing the robustness of audio-visual models. Motivated by real-world scenarios where shifts can occur $\textit{simultaneously}$ in both audio and visual modalities, we introduce $\texttt{AVROBUSTBENCH}$, a comprehensive benchmark designed to evaluate the test-time robustness of audio-visual recognition models. $\texttt{AVROBUSTBENCH}$ comprises four audio-visual benchmark datasets, $\texttt{AUDIOSET-2C}$, $\texttt{VGGSOUND-2C}$, $\texttt{KINETICS-2C}$, and $\texttt{EPICKITCHENS-2C}$, each incorporating 75 bimodal audio-visual corruptions that are $\textit{co-occurring}$ and $\textit{correlated}$. Through extensive evaluations, we observe that state-of-the-art supervised and self-supervised audio-visual models exhibit declining robustness as corruption severity increases. Furthermore, online test-time adaptation (TTA) methods, on $\texttt{VGGSOUND-2C}$ and $\texttt{KINETICS-2C}$, offer minimal improvements in performance under bimodal corruptions. We further propose $\texttt{AV2C}$, a simple TTA approach enabling on-the-fly cross-modal fusion by penalizing high-entropy samples, which achieves improvements on $\texttt{VGGSOUND-2C}$. We hope that $\texttt{AVROBUSTBENCH}$ will steer the development of more effective and robust audio-visual TTA approaches. Our code is available $\href{this https URL}{here}$. 
+
+**Abstract (ZH)**: 尽管近期的多模态模型展示了出色的性能，但它们在测试时对分布偏移的鲁棒性尚未完全理解。现有的鲁棒性基准主要关注单一模态，不足以全面评估多模态音频-视觉模型的鲁棒性。受实际场景中音频和视觉模态同时发生偏移的启发，我们引入了AVROBUSTBENCH，这是一个全面的基准，旨在评估音频-视觉识别模型的测试时鲁棒性。AVROBUSTBENCH 包含四个音频-视觉基准数据集：AUDIOSET-2C、VGGSOUND-2C、KINETICS-2C 和 EPICKITCHENS-2C，每个数据集包含 75 种同时发生且相关的双模态音频-视觉污染。通过广泛的评估，我们观察到最先进的监督和自监督音频-视觉模型在污染严重性增加时表现出了鲁棒性下降的现象。此外，在 VGGSOUND-2C 和 KINETICS-2C 上，实时测试时自适应（TTA）方法在双模态污染下的性能改善有限。我们进一步提出了 AV2C，这是一个简单的 TTA 方法，通过惩罚高熵样本实现跨模态融合，从而在 VGGSOUND-2C 上实现了性能提升。我们希望 AVROBUSTBENCH 能够引导更有效、更鲁棒的音频-视觉 TTA 方法的发展。我们的代码可在 <https://this https URL> 获取。 
+
+---
+# Foresight: Adaptive Layer Reuse for Accelerated and High-Quality Text-to-Video Generation 
+
+**Title (ZH)**: foresight: 自适应层重用以实现加速和高质文本到视频生成 
+
+**Authors**: Muhammad Adnan, Nithesh Kurella, Akhil Arunkumar, Prashant J. Nair  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.00329)  
+
+**Abstract**: Diffusion Transformers (DiTs) achieve state-of-the-art results in text-to-image, text-to-video generation, and editing. However, their large model size and the quadratic cost of spatial-temporal attention over multiple denoising steps make video generation computationally expensive. Static caching mitigates this by reusing features across fixed steps but fails to adapt to generation dynamics, leading to suboptimal trade-offs between speed and quality.
+We propose Foresight, an adaptive layer-reuse technique that reduces computational redundancy across denoising steps while preserving baseline performance. Foresight dynamically identifies and reuses DiT block outputs for all layers across steps, adapting to generation parameters such as resolution and denoising schedules to optimize efficiency. Applied to OpenSora, Latte, and CogVideoX, Foresight achieves up to 1.63x end-to-end speedup, while maintaining video quality. The source code of Foresight is available at \texttt{this https URL}. 
+
+**Abstract (ZH)**: Foresight: 一种适应性的层重用技术，用于降低去噪步骤中的计算冗余同时保持基线性能 
+
+---
+# Detection of Endangered Deer Species Using UAV Imagery: A Comparative Study Between Efficient Deep Learning Approaches 
+
+**Title (ZH)**: 使用无人机影像检测濒危鹿科物种：基于高效深度学习方法的比较研究 
+
+**Authors**: Agustín Roca, Gastón Castro, Gabriel Torre, Leonardo J. Colombo, Ignacio Mas, Javier Pereira, Juan I. Giribet  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.00154)  
+
+**Abstract**: This study compares the performance of state-of-the-art neural networks including variants of the YOLOv11 and RT-DETR models for detecting marsh deer in UAV imagery, in scenarios where specimens occupy a very small portion of the image and are occluded by vegetation. We extend previous analysis adding precise segmentation masks for our datasets enabling a fine-grained training of a YOLO model with a segmentation head included. Experimental results show the effectiveness of incorporating the segmentation head achieving superior detection performance. This work contributes valuable insights for improving UAV-based wildlife monitoring and conservation strategies through scalable and accurate AI-driven detection systems. 
+
+**Abstract (ZH)**: 本研究比较了包括YOLOv1和RT-DETR变种在内的最先进神经网络在无人机图像中检测沼泽 Deer 的性能，特别是在动物占据图像很小部分且被植被遮挡的情况下。我们扩展了先前的分析，为我们的数据集添加了精确的分割掩码，使包含分割头部的YOLO模型能够进行精细粒度的训练。实验结果表明，引入分割头部的有效性，从而实现检测性能的提升。本文通过可扩展且准确的基于AI的检测系统，为改进无人机辅助的野生动物监控和保护策略提供了宝贵见解。 
+
+---
