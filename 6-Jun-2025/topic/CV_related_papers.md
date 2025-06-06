@@ -1,0 +1,157 @@
+# MineInsight: A Multi-sensor Dataset for Humanitarian Demining Robotics in Off-Road Environments 
+
+**Title (ZH)**: MineInsight: 适用于非道路环境的人道主义地雷清除机器人多传感器数据集 
+
+**Authors**: Mario Malizia, Charles Hamesse, Ken Hasselmann, Geert De Cubber, Nikolaos Tsiogkas, Eric Demeester, Rob Haelterman  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.04842)  
+
+**Abstract**: The use of robotics in humanitarian demining increasingly involves computer vision techniques to improve landmine detection capabilities. However, in the absence of diverse and realistic datasets, the reliable validation of algorithms remains a challenge for the research community. In this paper, we introduce MineInsight, a publicly available multi-sensor, multi-spectral dataset designed for off-road landmine detection. The dataset features 35 different targets (15 landmines and 20 commonly found objects) distributed along three distinct tracks, providing a diverse and realistic testing environment. MineInsight is, to the best of our knowledge, the first dataset to integrate dual-view sensor scans from both an Unmanned Ground Vehicle and its robotic arm, offering multiple viewpoints to mitigate occlusions and improve spatial awareness. It features two LiDARs, as well as images captured at diverse spectral ranges, including visible (RGB, monochrome), visible short-wave infrared (VIS-SWIR), and long-wave infrared (LWIR). Additionally, the dataset comes with an estimation of the location of the targets, offering a benchmark for evaluating detection algorithms. We recorded approximately one hour of data in both daylight and nighttime conditions, resulting in around 38,000 RGB frames, 53,000 VIS-SWIR frames, and 108,000 LWIR frames. MineInsight serves as a benchmark for developing and evaluating landmine detection algorithms. Our dataset is available at this https URL. 
+
+**Abstract (ZH)**: 机器人技术在人道主义地雷清除中的应用 increasingly involves 计算机视觉技术以提高地雷检测能力。然而，由于缺乏多样性和现实性的数据集，算法的可靠验证仍然是研究社区面临的挑战。本文我们介绍了 MineInsight，一个用于非道路地雷检测的多传感器、多光谱公开数据集。该数据集包含35个不同的目标（15个地雷和20个常见物体），分布在三条不同的轨道上，提供了一个多样且现实的测试环境。据我们所知，MineInsight 是第一个整合无人地面车辆及其机械臂双重视角传感器扫描数据的数据集，提供了多个视角以减轻遮挡并提高空间意识。该数据集包含两个LiDAR以及在不同谱段捕获的图像，包括可见光（RGB、单色）、可见短波红外（VIS-SWIR）和长波红外（LWIR）图像。此外，数据集还提供了目标位置的估计，为评估检测算法提供了一个基准。我们分别在白天和夜间记录了约一小时的数据，结果产生了约38,000帧RGB图像、53,000帧VIS-SWIR图像和108,000帧LWIR图像。MineInsight 作为开发和评估地雷检测算法的基准。我们的数据集可通过以下链接访问：this https URL。 
+
+---
+# cuVSLAM: CUDA accelerated visual odometry 
+
+**Title (ZH)**: cuVSLAM: CUDA 加速的视觉里程计 
+
+**Authors**: Alexander Korovko, Dmitry Slepichev, Alexander Efitorov, Aigul Dzhumamuratova, Viktor Kuznetsov, Hesam Rabeti, Joydeep Biswas  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.04359)  
+
+**Abstract**: Accurate and robust pose estimation is a key requirement for any autonomous robot. We present cuVSLAM, a state-of-the-art solution for visual simultaneous localization and mapping, which can operate with a variety of visual-inertial sensor suites, including multiple RGB and depth cameras, and inertial measurement units. cuVSLAM supports operation with as few as one RGB camera to as many as 32 cameras, in arbitrary geometric configurations, thus supporting a wide range of robotic setups. cuVSLAM is specifically optimized using CUDA to deploy in real-time applications with minimal computational overhead on edge-computing devices such as the NVIDIA Jetson. We present the design and implementation of cuVSLAM, example use cases, and empirical results on several state-of-the-art benchmarks demonstrating the best-in-class performance of cuVSLAM. 
+
+**Abstract (ZH)**: 精确且 robust 的姿态估计是任何自主机器人的重要需求。我们提出了 cuVSLAM，这是一种先进的视觉同时定位与建图解决方案，能够与多种视觉惯性传感器套件配合使用，包括多个RGB和深度相机以及惯性测量单元。cuVSLAM 可支持从单个RGB相机到多达32个相机的任意几何配置运行，从而支持广泛的机器人系统配置。cuVSLAM 特别进行了 CUDA 优化，可在如 NVIDIA Jetson 等边缘计算设备上实现实时应用，同时具有最小的计算开销。我们提出了 cuVSLAM 的设计和实现、示例使用案例以及在多种先进基准上的实验证据，展示了 cuVSLAM 的顶级性能。 
+
+---
+# Rectified Point Flow: Generic Point Cloud Pose Estimation 
+
+**Title (ZH)**: 修正点流：通用点云姿态估计 
+
+**Authors**: Tao Sun, Liyuan Zhu, Shengyu Huang, Shuran Song, Iro Armeni  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.05282)  
+
+**Abstract**: We introduce Rectified Point Flow, a unified parameterization that formulates pairwise point cloud registration and multi-part shape assembly as a single conditional generative problem. Given unposed point clouds, our method learns a continuous point-wise velocity field that transports noisy points toward their target positions, from which part poses are recovered. In contrast to prior work that regresses part-wise poses with ad-hoc symmetry handling, our method intrinsically learns assembly symmetries without symmetry labels. Together with a self-supervised encoder focused on overlapping points, our method achieves a new state-of-the-art performance on six benchmarks spanning pairwise registration and shape assembly. Notably, our unified formulation enables effective joint training on diverse datasets, facilitating the learning of shared geometric priors and consequently boosting accuracy. Project page: this https URL. 
+
+**Abstract (ZH)**: 我们介绍了一种统一参数化方法——校正点流，该方法将点云配对注册和多部件形状组装统一为一个条件生成问题。给定未对齐的点云，我们的方法学习一个连续的点导向速度场，将噪声点引导到目标位置，从而恢复部件姿态。与之前需要人工处理对称性的方法不同，我们的方法内在地学习组装对称性而无需对称性标签。结合一个专注于重叠点的自监督编码器，我们的方法在六个涵盖配对注册和形状组装的基准测试中达到了新的最先进性能。值得注意的是，我们的统一框架使我们的方法可以在多种数据集上有效联合训练，促进了共享几何先验的学习，从而提升了准确性。项目页面: 这里 
+
+---
+# Spatiotemporal Contrastive Learning for Cross-View Video Localization in Unstructured Off-road Terrains 
+
+**Title (ZH)**: 时空对比学习在无结构离路地形跨视图视频定位中的应用 
+
+**Authors**: Zhiyun Deng, Dongmyeong Lee, Amanda Adkins, Jesse Quattrociocchi, Christian Ellis, Joydeep Biswas  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.05250)  
+
+**Abstract**: Robust cross-view 3-DoF localization in GPS-denied, off-road environments remains challenging due to (1) perceptual ambiguities from repetitive vegetation and unstructured terrain, and (2) seasonal shifts that significantly alter scene appearance, hindering alignment with outdated satellite imagery. To address this, we introduce MoViX, a self-supervised cross-view video localization framework that learns viewpoint- and season-invariant representations while preserving directional awareness essential for accurate localization. MoViX employs a pose-dependent positive sampling strategy to enhance directional discrimination and temporally aligned hard negative mining to discourage shortcut learning from seasonal cues. A motion-informed frame sampler selects spatially diverse frames, and a lightweight temporal aggregator emphasizes geometrically aligned observations while downweighting ambiguous ones. At inference, MoViX runs within a Monte Carlo Localization framework, using a learned cross-view matching module in place of handcrafted models. Entropy-guided temperature scaling enables robust multi-hypothesis tracking and confident convergence under visual ambiguity. We evaluate MoViX on the TartanDrive 2.0 dataset, training on under 30 minutes of data and testing over 12.29 km. Despite outdated satellite imagery, MoViX localizes within 25 meters of ground truth 93% of the time, and within 50 meters 100% of the time in unseen regions, outperforming state-of-the-art baselines without environment-specific tuning. We further demonstrate generalization on a real-world off-road dataset from a geographically distinct site with a different robot platform. 
+
+**Abstract (ZH)**: Robust跨视图3-DoF定位在GPS受限的非铺装路环境中依然具有挑战性，主要原因包括（1）重复植被和未结构化地形导致的感知歧义，以及（2）季节变化显著改变场景外观，妨碍与过时卫星影像的对齐。为解决这一问题，我们提出MoViX，一种自监督跨视图视频定位框架，学习视点和季节不变的表示，同时保留对于准确定位至关重要的方向感知。MoViX采用姿态依赖的正样本采样策略以增强方向性区分能力，并利用基于季节线索的临时对齐硬负挖掘避免捷径学习。运动信息驱动的帧选择器选择时空多样化的帧，轻量级的时空聚合器强调几何对齐的观测结果并削弱歧义观测结果。在推理时，MoViX运行在Monte Carlo定位框架内，使用学习到的跨视图匹配模块替代手工设计模型。熵引导的温度缩放使MoViX能够在视觉歧义下实现稳健的多假设跟踪和可靠的收敛。我们在TartanDrive 2.0数据集上评估MoViX，训练数据不足30分钟，测试距离超过12.29公里。尽管使用了过时的卫星影像，MoViX仍能在93%的时间内将定位误差控制在25米以内，在新区域中这一比例提升至100%，且在不同地理区域和机器人平台的现实世界非铺装路数据集上展示了泛化能力，超越了现有基线方法。 
+
+---
+# Refer to Anything with Vision-Language Prompts 
+
+**Title (ZH)**: 用視覺-語言提示 REFER TO ANYTHING 
+
+**Authors**: Shengcao Cao, Zijun Wei, Jason Kuen, Kangning Liu, Lingzhi Zhang, Jiuxiang Gu, HyunJoon Jung, Liang-Yan Gui, Yu-Xiong Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.05342)  
+
+**Abstract**: Recent image segmentation models have advanced to segment images into high-quality masks for visual entities, and yet they cannot provide comprehensive semantic understanding for complex queries based on both language and vision. This limitation reduces their effectiveness in applications that require user-friendly interactions driven by vision-language prompts. To bridge this gap, we introduce a novel task of omnimodal referring expression segmentation (ORES). In this task, a model produces a group of masks based on arbitrary prompts specified by text only or text plus reference visual entities. To address this new challenge, we propose a novel framework to "Refer to Any Segmentation Mask Group" (RAS), which augments segmentation models with complex multimodal interactions and comprehension via a mask-centric large multimodal model. For training and benchmarking ORES models, we create datasets MaskGroups-2M and MaskGroups-HQ to include diverse mask groups specified by text and reference entities. Through extensive evaluation, we demonstrate superior performance of RAS on our new ORES task, as well as classic referring expression segmentation (RES) and generalized referring expression segmentation (GRES) tasks. Project page: this https URL. 
+
+**Abstract (ZH)**: 近期的图像分割模型已经能够将图像分割为高质量的掩码，但它们无法基于语言和视觉的综合查询提供全面的语义理解。这一限制降低了它们在需要由视觉语言提示驱动的友好交互应用中的有效性。为弥补这一不足，我们引入了一种新的跨模态引用表达分割（ORES）任务。在此任务中，模型根据仅文本或文本加参考视觉实体的任意提示生成一组掩码。为应对这一新挑战，我们提出了一种新的框架“任意分割掩码组的引用”（RAS），该框架通过一种以掩码为中心的大规模跨模态模型增强了分割模型的复杂多模态交互与理解能力。为了训练和评估ORES模型，我们构建了包含文本和参考实体指定的多样掩码组的MaskGroups-2M和MaskGroups-HQ数据集。通过广泛的评估，我们展示了RAS在我们的新ORES任务以及经典引用表达分割（RES）和通用引用表达分割（GRES）任务上的优越性能。项目页面：https://this-url。 
+
+---
+# CzechLynx: A Dataset for Individual Identification and Pose Estimation of the Eurasian Lynx 
+
+**Title (ZH)**: CzechLynx：欧亚猞猁的个体识别与姿态估计数据集 
+
+**Authors**: Lukas Picek, Elisa Belotti, Michal Bojda, Ludek Bufka, Vojtech Cermak, Martin Dula, Rostislav Dvorak, Luboslav Hrdy, Miroslav Jirik, Vaclav Kocourek, Josefa Krausova, Jirı Labuda, Jakub Straka, Ludek Toman, Vlado Trulık, Martin Vana, Miroslav Kutal  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.04931)  
+
+**Abstract**: We introduce CzechLynx, the first large-scale, open-access dataset for individual identification, 2D pose estimation, and instance segmentation of the Eurasian lynx (Lynx lynx). CzechLynx includes more than 30k camera trap images annotated with segmentation masks, identity labels, and 20-point skeletons and covers 219 unique individuals across 15 years of systematic monitoring in two geographically distinct regions: Southwest Bohemia and the Western Carpathians. To increase the data variability, we create a complementary synthetic set with more than 100k photorealistic images generated via a Unity-based pipeline and diffusion-driven text-to-texture modeling, covering diverse environments, poses, and coat-pattern variations. To allow testing generalization across spatial and temporal domains, we define three tailored evaluation protocols/splits: (i) geo-aware, (ii) time-aware open-set, and (iii) time-aware closed-set. This dataset is targeted to be instrumental in benchmarking state-of-the-art models and the development of novel methods for not just individual animal re-identification. 
+
+**Abstract (ZH)**: 我们介绍CzechLynx，首个大规模、开源的用于欧亚猞猁（Lynx lynx）个体识别、2D姿态估计和实例分割的数据集。CzechLynx 包含超过30,000张带标注分割掩膜、身份标签及20点骨架结构的相机陷阱图像，并涵盖了跨越15年系统监测的两个地理上不同区域（Southwest Bohemia和Western Carpathians）的219个独特个体。为了增加数据变异性，我们创建了一个补充合成数据集，包含超过100,000张逼真的合成图像，通过基于Unity的流水线和扩散驱动的文本到纹理建模生成，涵盖了多种环境、姿态和毛皮花纹的变化。为允许在空间和时间域上进行泛化测试，我们定义了三个定制的评估协议/划分：(i) 地理意识型、(ii) 时间意识的开放集、(iii) 时间意识的封闭集。该数据集旨在用于基准测试最先进的模型和开发新的方法，不仅用于个体动物重新识别。 
+
+---
+# Physics Informed Capsule Enhanced Variational AutoEncoder for Underwater Image Enhancement 
+
+**Title (ZH)**: 物理知情胶囊增强变分自编码器在水下图像增强中的应用 
+
+**Authors**: Niki Martinel, Rita Pucci  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.04753)  
+
+**Abstract**: We present a novel dual-stream architecture that achieves state-of-the-art underwater image enhancement by explicitly integrating the Jaffe-McGlamery physical model with capsule clustering-based feature representation learning. Our method simultaneously estimates transmission maps and spatially-varying background light through a dedicated physics estimator while extracting entity-level features via capsule clustering in a parallel stream. This physics-guided approach enables parameter-free enhancement that respects underwater formation constraints while preserving semantic structures and fine-grained details. Our approach also features a novel optimization objective ensuring both physical adherence and perceptual quality across multiple spatial frequencies. To validate our approach, we conducted extensive experiments across six challenging benchmarks. Results demonstrate consistent improvements of $+0.5$dB PSNR over the best existing methods while requiring only one-third of their computational complexity (FLOPs), or alternatively, more than $+1$dB PSNR improvement when compared to methods with similar computational budgets. Code and data \textit{will} be available at this https URL. 
+
+**Abstract (ZH)**: 我们提出了一种新的双流架构，通过显式集成Jaffe-McGlamery物理模型并与基于胶囊聚类的特征表示学习相结合，实现了水下图像增强的最新成果。该方法通过专用的物理估计器同时估计传输图和空间变背景光，在并行流中利用胶囊聚类提取实体级特征。这种基于物理的指导方法能够在尊重水下图像形成约束的同时保持语义结构和细粒度细节，并实现无参数的增强。我们的方法还具有新的优化目标，确保在多个空间频率上的物理一致性和感知质量。为了验证我们的方法，我们在六个具有挑战性的基准上进行了大量实验。结果表明，与现有最佳方法相比，我们的方法在峰值信噪比（PSNR）上提高了0.5 dB，同时仅需现有方法三分之一的计算复杂度（FLOPs），或在具有相似计算预算的方法中提高超过1 dB的PSNR。代码和数据将在此处提供。 
+
+---
+# Photoreal Scene Reconstruction from an Egocentric Device 
+
+**Title (ZH)**: 从第一人称设备进行的 PHOTO-REAL 场景重构 
+
+**Authors**: Zhaoyang Lv, Maurizio Monge, Ka Chen, Yufeng Zhu, Michael Goesele, Jakob Engel, Zhao Dong, Richard Newcombe  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.04444)  
+
+**Abstract**: In this paper, we investigate the challenges associated with using egocentric devices to photorealistic reconstruct the scene in high dynamic range. Existing methodologies typically assume using frame-rate 6DoF pose estimated from the device's visual-inertial odometry system, which may neglect crucial details necessary for pixel-accurate reconstruction. This study presents two significant findings. Firstly, in contrast to mainstream work treating RGB camera as global shutter frame-rate camera, we emphasize the importance of employing visual-inertial bundle adjustment (VIBA) to calibrate the precise timestamps and movement of the rolling shutter RGB sensing camera in a high frequency trajectory format, which ensures an accurate calibration of the physical properties of the rolling-shutter camera. Secondly, we incorporate a physical image formation model based into Gaussian Splatting, which effectively addresses the sensor characteristics, including the rolling-shutter effect of RGB cameras and the dynamic ranges measured by sensors. Our proposed formulation is applicable to the widely-used variants of Gaussian Splats representation. We conduct a comprehensive evaluation of our pipeline using the open-source Project Aria device under diverse indoor and outdoor lighting conditions, and further validate it on a Meta Quest3 device. Across all experiments, we observe a consistent visual enhancement of +1 dB in PSNR by incorporating VIBA, with an additional +1 dB achieved through our proposed image formation model. Our complete implementation, evaluation datasets, and recording profile are available at this http URL 
+
+**Abstract (ZH)**: 本文探讨了使用第一人称设备在高动态范围下进行逼真场景重建所面临的挑战。现有方法通常假设使用设备视觉惯性里程计系统估计的6DoF帧率姿态，这可能会忽略对于像素级准确重建至关重要的细节。本研究提出了两个重要发现。首先，不同于主流工作将RGB相机视为全局快门帧率相机，我们强调了在高频轨迹格式下使用视觉惯性束约束调整（VIBA）校准卷帘快门RGB感应相机的精确时间戳和运动的重要性，以确保对卷帘快门相机物理特性的准确校准。其次，我们将基于高斯点云的物理图像形成模型结合进来，有效地解决了包括RGB相机的卷帘快 shutter效应和传感器的动态范围在内的传感器特性问题。我们提出的公式适用于广泛使用的高斯点云表示的各种变体。我们在多种室内外光照条件下使用开源Project Aria设备对我们的流水线进行了全面评估，并在Meta Quest3设备上进一步验证了它。在所有实验中，我们观察到通过结合VIBA，PSNR视觉增强了一致的1 dB，而通过我们提出的图像形成模型，额外获得了1 dB的提升。我们的完整实现、评估数据集和记录配置可在以下网址获得。 
+
+---
+# HMAR: Efficient Hierarchical Masked Auto-Regressive Image Generation 
+
+**Title (ZH)**: HMAR：高效分层掩蔽自回归图像生成 
+
+**Authors**: Hermann Kumbong, Xian Liu, Tsung-Yi Lin, Ming-Yu Liu, Xihui Liu, Ziwei Liu, Daniel Y. Fu, Christopher Ré, David W. Romero  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.04421)  
+
+**Abstract**: Visual Auto-Regressive modeling (VAR) has shown promise in bridging the speed and quality gap between autoregressive image models and diffusion models. VAR reformulates autoregressive modeling by decomposing an image into successive resolution scales. During inference, an image is generated by predicting all the tokens in the next (higher-resolution) scale, conditioned on all tokens in all previous (lower-resolution) scales. However, this formulation suffers from reduced image quality due to the parallel generation of all tokens in a resolution scale; has sequence lengths scaling superlinearly in image resolution; and requires retraining to change the sampling schedule.
+We introduce Hierarchical Masked Auto-Regressive modeling (HMAR), a new image generation algorithm that alleviates these issues using next-scale prediction and masked prediction to generate high-quality images with fast sampling. HMAR reformulates next-scale prediction as a Markovian process, wherein the prediction of each resolution scale is conditioned only on tokens in its immediate predecessor instead of the tokens in all predecessor resolutions. When predicting a resolution scale, HMAR uses a controllable multi-step masked generation procedure to generate a subset of the tokens in each step. On ImageNet 256x256 and 512x512 benchmarks, HMAR models match or outperform parameter-matched VAR, diffusion, and autoregressive baselines. We develop efficient IO-aware block-sparse attention kernels that allow HMAR to achieve faster training and inference times over VAR by over 2.5x and 1.75x respectively, as well as over 3x lower inference memory footprint. Finally, HMAR yields additional flexibility over VAR; its sampling schedule can be changed without further training, and it can be applied to image editing tasks in a zero-shot manner. 
+
+**Abstract (ZH)**: 级联掩码自回归建模（HMAR）：一种用于高质快速图像生成的新算法 
+
+---
+# Puck Localization Using Contextual Cues 
+
+**Title (ZH)**: 基于上下文线索的Puck定位 
+
+**Authors**: Liam Salass, Jerrin Bright, Amir Nazemi, Yuhao Chen, John Zelek, David Clausi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.04365)  
+
+**Abstract**: Puck detection in ice hockey broadcast videos poses significant challenges due to the puck's small size, frequent occlusions, motion blur, broadcast artifacts, and scale inconsistencies due to varying camera zoom and broadcast camera viewpoints. Prior works focus on appearance-based or motion-based cues of the puck without explicitly modelling the cues derived from player behaviour. Players consistently turn their bodies and direct their gaze toward the puck. Motivated by this strong contextual cue, we propose Puck Localization Using Contextual Cues (PLUCC), a novel approach for scale-aware and context-driven single-frame puck detections. PLUCC consists of three components: (a) a contextual encoder, which utilizes player orientations and positioning as helpful priors; (b) a feature pyramid encoder, which extracts multiscale features from the dual encoders; and (c) a gating decoder that combines latent features with a channel gating mechanism. For evaluation, in addition to standard average precision, we propose Rink Space Localization Error (RSLE), a scale-invariant homography-based metric for removing perspective bias from rink space evaluation. The experimental results of PLUCC on the PuckDataset dataset demonstrated state-of-the-art detection performance, surpassing previous baseline methods by an average precision improvement of 12.2\% and RSLE average precision of 25\%. Our research demonstrates the critical role of contextual understanding in improving puck detection performance, with broad implications for automated sports analysis. 
+
+**Abstract (ZH)**: 冰球广播视频中冰球检测面临着显著挑战，由于冰球体积小、频繁被遮挡、运动模糊、广播伪影以及由于不同摄像机变焦和广播视角导致的尺度不一致。以往工作主要集中在基于冰球外观或运动的线索上，而没有明确建模来自球员行为的线索。球员们始终会转向身体并视线对准冰球。受这一强大上下文线索的启发，我们提出了一种新的单帧冰球检测方法——基于上下文线索的冰球定位（PLUCC，Puck Localization Using Contextual Cues），该方法是一种尺度意识和上下文驱动的冰球检测方法。PLUCC 包含三个组件：（a）上下文编码器，利用球员的姿态和位置作为有用的先验；（b）特征金字塔编码器，从双重编码器中提取多尺度特征；以及（c）门控解码器，通过通道门控机制结合潜在特征。为了评估，我们除标准的平均精度外，还提出了一种尺度不变的同化误差度量——场地空间定位误差（RSLE，Rink Space Localization Error），以从场地空间评估中去除透视偏差。在基于PuckDataset的数据集上的实验结果显示，PLUCC 达到了最先进的检测性能，平均精度提高12.2%，RSLE 的平均精度提高25%，我们的研究展示了上下文理解在提高冰球检测性能中的关键作用，这对自动化体育分析具有广泛的影响。 
+
+---
+# ReXVQA: A Large-scale Visual Question Answering Benchmark for Generalist Chest X-ray Understanding 
+
+**Title (ZH)**: ReXVQA：面向通用胸部X光理解的大规模视觉问答基准 
+
+**Authors**: Ankit Pal, Jung-Oh Lee, Xiaoman Zhang, Malaikannan Sankarasubbu, Seunghyeon Roh, Won Jung Kim, Meesun Lee, Pranav Rajpurkar  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.04353)  
+
+**Abstract**: We present ReXVQA, the largest and most comprehensive benchmark for visual question answering (VQA) in chest radiology, comprising approximately 696,000 questions paired with 160,000 chest X-rays studies across training, validation, and test sets. Unlike prior efforts that rely heavily on template based queries, ReXVQA introduces a diverse and clinically authentic task suite reflecting five core radiological reasoning skills: presence assessment, location analysis, negation detection, differential diagnosis, and geometric reasoning. We evaluate eight state-of-the-art multimodal large language models, including MedGemma-4B-it, Qwen2.5-VL, Janus-Pro-7B, and Eagle2-9B. The best-performing model (MedGemma) achieves 83.24% overall accuracy. To bridge the gap between AI performance and clinical expertise, we conducted a comprehensive human reader study involving 3 radiology residents on 200 randomly sampled cases. Our evaluation demonstrates that MedGemma achieved superior performance (83.84% accuracy) compared to human readers (best radiology resident: 77.27%), representing a significant milestone where AI performance exceeds expert human evaluation on chest X-ray interpretation. The reader study reveals distinct performance patterns between AI models and human experts, with strong inter-reader agreement among radiologists while showing more variable agreement patterns between human readers and AI models. ReXVQA establishes a new standard for evaluating generalist radiological AI systems, offering public leaderboards, fine-grained evaluation splits, structured explanations, and category-level breakdowns. This benchmark lays the foundation for next-generation AI systems capable of mimicking expert-level clinical reasoning beyond narrow pathology classification. Our dataset will be open-sourced at this https URL 
+
+**Abstract (ZH)**: ReXVQA：胸部放射影像视觉问答的最大最综合基准 
+
+---
+# SSIMBaD: Sigma Scaling with SSIM-Guided Balanced Diffusion for AnimeFace Colorization 
+
+**Title (ZH)**: SSIMBaD: 基于SSIM引导的均衡扩散 sigma 层缩放的AnimeFace着色方法 
+
+**Authors**: Junpyo Seo, Hanbin Koo, Jieun Yook, Byung-Ro Moon  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.04283)  
+
+**Abstract**: We propose a novel diffusion-based framework for automatic colorization of Anime-style facial sketches. Our method preserves the structural fidelity of the input sketch while effectively transferring stylistic attributes from a reference image. Unlike traditional approaches that rely on predefined noise schedules - which often compromise perceptual consistency -- our framework builds on continuous-time diffusion models and introduces SSIMBaD (Sigma Scaling with SSIM-Guided Balanced Diffusion). SSIMBaD applies a sigma-space transformation that aligns perceptual degradation, as measured by structural similarity (SSIM), in a linear manner. This scaling ensures uniform visual difficulty across timesteps, enabling more balanced and faithful reconstructions. Experiments on a large-scale Anime face dataset demonstrate that our method outperforms state-of-the-art models in both pixel accuracy and perceptual quality, while generalizing to diverse styles. Code is available at this http URL 
+
+**Abstract (ZH)**: 我们提出了一种基于扩散的框架，用于自动化Anime风格面部素描的着色。该方法在保留输入素描结构保真度的同时，有效转移参考图像的风格属性。与依赖预定义噪声时间表的传统方法不同，我们的框架基于连续时间扩散模型，并引入了SSIMBaD（基于SSIM引导的平衡扩散和sigma尺度变换），用于线性对齐感知降级，从而确保各时间步视觉难度一致，实现更平衡和忠实的重构。实验结果表明，该方法在像素准确度和感知质量方面优于现有最佳模型，并能适配多种风格。代码可在以下网址获取。 
+
+---
