@@ -1,0 +1,294 @@
+# A Point Cloud Completion Approach for the Grasping of Partially Occluded Objects and Its Applications in Robotic Strawberry Harvesting 
+
+**Title (ZH)**: 部分遮挡物抓取的点云完成方法及其在草莓机器人采摘中的应用 
+
+**Authors**: Ali Abouzeid, Malak Mansour, Chengsong Hu, Dezhen Song  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.14066)  
+
+**Abstract**: In robotic fruit picking applications, managing object occlusion in unstructured settings poses a substantial challenge for designing grasping algorithms. Using strawberry harvesting as a case study, we present an end-to-end framework for effective object detection, segmentation, and grasp planning to tackle this issue caused by partially occluded objects. Our strategy begins with point cloud denoising and segmentation to accurately locate fruits. To compensate for incomplete scans due to occlusion, we apply a point cloud completion model to create a dense 3D reconstruction of the strawberries. The target selection focuses on ripe strawberries while categorizing others as obstacles, followed by converting the refined point cloud into an occupancy map for collision-aware motion planning. Our experimental results demonstrate high shape reconstruction accuracy, with the lowest Chamfer Distance compared to state-of-the-art methods with 1.10 mm, and significantly improved grasp success rates of 79.17%, yielding an overall success-to-attempt ratio of 89.58\% in real-world strawberry harvesting. Additionally, our method reduces the obstacle hit rate from 43.33% to 13.95%, highlighting its effectiveness in improving both grasp quality and safety compared to prior approaches. This pipeline substantially improves autonomous strawberry harvesting, advancing more efficient and reliable robotic fruit picking systems. 
+
+**Abstract (ZH)**: 在机器人果实采摘应用中，处理非结构化环境下的对象遮挡对抓取算法设计构成了重大挑战。以草莓采摘为例，我们提出了一种端到端框架，用于有效进行对象检测、分割和抓取规划，以应对部分遮挡对象引起的挑战。我们的策略始于点云去噪和分割，以准确定位果实。为补偿因遮挡导致的不完整扫描，我们应用点云完成模型创建草莓的密集3D重建。目标选择侧重于成熟草莓，将其他分类为障碍物，随后将精炼的点云转换为占用地图，以实现碰撞感知的运动规划。实验结果表明，我们的方法在形状重建精度方面表现出色，Chamfer距离低至1.10mm，与最先进方法相比，抓取成功率显著提高至79.17%，整体成功率接近89.58%。此外，我们的方法将障碍物碰撞率从43.33%降低至13.95%，突显了其在提高抓取质量和安全性方面的有效性，相比先前方法有了显著改进。此流程显著提升了自主草莓采摘效率，推进了更高效可靠的机器人果实采摘系统的发展。 
+
+---
+# DiFuse-Net: RGB and Dual-Pixel Depth Estimation using Window Bi-directional Parallax Attention and Cross-modal Transfer Learning 
+
+**Title (ZH)**: DiFuse-Net：基于窗口双向视差关注和跨模态迁移学习的RGB和双像素深度估计 
+
+**Authors**: Kunal Swami, Debtanu Gupta, Amrit Kumar Muduli, Chirag Jaiswal, Pankaj Kumar Bajpai  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.14709)  
+
+**Abstract**: Depth estimation is crucial for intelligent systems, enabling applications from autonomous navigation to augmented reality. While traditional stereo and active depth sensors have limitations in cost, power, and robustness, dual-pixel (DP) technology, ubiquitous in modern cameras, offers a compelling alternative. This paper introduces DiFuse-Net, a novel modality decoupled network design for disentangled RGB and DP based depth estimation. DiFuse-Net features a window bi-directional parallax attention mechanism (WBiPAM) specifically designed to capture the subtle DP disparity cues unique to smartphone cameras with small aperture. A separate encoder extracts contextual information from the RGB image, and these features are fused to enhance depth prediction. We also propose a Cross-modal Transfer Learning (CmTL) mechanism to utilize large-scale RGB-D datasets in the literature to cope with the limitations of obtaining large-scale RGB-DP-D dataset. Our evaluation and comparison of the proposed method demonstrates its superiority over the DP and stereo-based baseline methods. Additionally, we contribute a new, high-quality, real-world RGB-DP-D training dataset, named Dual-Camera Dual-Pixel (DCDP) dataset, created using our novel symmetric stereo camera hardware setup, stereo calibration and rectification protocol, and AI stereo disparity estimation method. 
+
+**Abstract (ZH)**: 基于双像素技术的解耦RGB与双像素深度估计网络DiFuse-Net 
+
+---
+# KDMOS:Knowledge Distillation for Motion Segmentation 
+
+**Title (ZH)**: KDMOS：运动分割的知识蒸馏 
+
+**Authors**: Chunyu Cao, Jintao Cheng, Zeyu Chen, Linfan Zhan, Rui Fan, Zhijian He, Xiaoyu Tang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.14130)  
+
+**Abstract**: Motion Object Segmentation (MOS) is crucial for autonomous driving, as it enhances localization, path planning, map construction, scene flow estimation, and future state prediction. While existing methods achieve strong performance, balancing accuracy and real-time inference remains a challenge. To address this, we propose a logits-based knowledge distillation framework for MOS, aiming to improve accuracy while maintaining real-time efficiency. Specifically, we adopt a Bird's Eye View (BEV) projection-based model as the student and a non-projection model as the teacher. To handle the severe imbalance between moving and non-moving classes, we decouple them and apply tailored distillation strategies, allowing the teacher model to better learn key motion-related features. This approach significantly reduces false positives and false negatives. Additionally, we introduce dynamic upsampling, optimize the network architecture, and achieve a 7.69% reduction in parameter count, mitigating overfitting. Our method achieves a notable IoU of 78.8% on the hidden test set of the SemanticKITTI-MOS dataset and delivers competitive results on the Apollo dataset. The KDMOS implementation is available at this https URL. 
+
+**Abstract (ZH)**: 基于logits的知识蒸馏框架在自主驾驶中的运动对象分割 
+
+---
+# Into the Unknown: Applying Inductive Spatial-Semantic Location Embeddings for Predicting Individuals' Mobility Beyond Visited Places 
+
+**Title (ZH)**: 未知之旅：应用归纳空间语义位置嵌入预测个体在访问地点之外的 mobility 行为 
+
+**Authors**: Xinglei Wang, Tao Cheng, Stephen Law, Zichao Zeng, Ilya Ilyankou, Junyuan Liu, Lu Yin, Weiming Huang, Natchapon Jongwiriyanurak  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.14070)  
+
+**Abstract**: Predicting individuals' next locations is a core task in human mobility modelling, with wide-ranging implications for urban planning, transportation, public policy and personalised mobility services. Traditional approaches largely depend on location embeddings learned from historical mobility patterns, limiting their ability to encode explicit spatial information, integrate rich urban semantic context, and accommodate previously unseen locations. To address these challenges, we explore the application of CaLLiPer -- a multimodal representation learning framework that fuses spatial coordinates and semantic features of points of interest through contrastive learning -- for location embedding in individual mobility prediction. CaLLiPer's embeddings are spatially explicit, semantically enriched, and inductive by design, enabling robust prediction performance even in scenarios involving emerging locations. Through extensive experiments on four public mobility datasets under both conventional and inductive settings, we demonstrate that CaLLiPer consistently outperforms strong baselines, particularly excelling in inductive scenarios. Our findings highlight the potential of multimodal, inductive location embeddings to advance the capabilities of human mobility prediction systems. We also release the code and data (this https URL) to foster reproducibility and future research. 
+
+**Abstract (ZH)**: 预测个体的下一个位置是人类移动模型中的核心任务，对城市规划、交通、公共政策和个人化移动服务具有广泛的影响。传统方法主要依赖于从历史移动模式中学习的位置嵌入，这限制了它们对显性空间信息的编码能力、对丰富城市语义上下文的整合能力以及处理未见过的位置的能力。为了解决这些挑战，我们探索了CaLLiPer——一种通过对比学习融合兴趣点的空间坐标和语义特征的多模态表示学习框架——在个体移动预测中的应用。CaLLiPer的嵌入具有显性空间性质、富含语义信息，并且具有归纳性设计，即使在新兴位置场景中也能实现稳健的预测性能。通过对四个公开的移动数据集在传统和归纳设置下的广泛实验，我们证明了CaLLiPer在各种情况下都优于强基线，尤其在归纳场景中表现尤为出色。我们的研究结果突显了多模态、归纳性位置嵌入对提升人类移动预测系统能力的潜力。我们还发布了代码和数据（参见链接），以促进可重复性和未来研究。 
+
+---
+# StreetLens: Enabling Human-Centered AI Agents for Neighborhood Assessment from Street View Imagery 
+
+**Title (ZH)**: StreetLens: 以人为本的AI代理用于街道视角图像的街区评估 
+
+**Authors**: Jina Kim, Leeje Jang, Yao-Yi Chiang, Guanyu Wang, Michelle Pasco  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.14670)  
+
+**Abstract**: Traditionally, neighborhood studies have employed interviews, surveys, and manual image annotation guided by detailed protocols to identify environmental characteristics, including physical disorder, decay, street safety, and sociocultural symbols, and to examine their impact on developmental and health outcomes. While these methods yield rich insights, they are time-consuming and require intensive expert intervention. Recent technological advances, including vision-language models (VLMs), have begun to automate parts of this process; however, existing efforts are often ad hoc and lack adaptability across research designs and geographic contexts. In this demo paper, we present StreetLens, a human-centered, researcher-configurable workflow that embeds relevant social science expertise in a VLM for scalable neighborhood environmental assessments. StreetLens mimics the process of trained human coders by grounding the analysis in questions derived from established interview protocols, retrieving relevant street view imagery (SVI), and generating a wide spectrum of semantic annotations from objective features (e.g., the number of cars) to subjective perceptions (e.g., the sense of disorder in an image). By enabling researchers to define the VLM's role through domain-informed prompting, StreetLens places domain knowledge at the core of the analysis process. It also supports the integration of prior survey data to enhance robustness and expand the range of characteristics assessed across diverse settings. We provide a Google Colab notebook to make StreetLens accessible and extensible for researchers working with public or custom SVI datasets. StreetLens represents a shift toward flexible, agentic AI systems that work closely with researchers to accelerate and scale neighborhood studies. 
+
+**Abstract (ZH)**: 传统邻里研究通常采用访谈、调查和基于详细协议的手动图像标注方法来识别包括物理杂乱、衰败、街道安全和社會文化符号在内的环境特征，并考察其对发展和健康结果的影响。虽然这些方法提供了丰富的见解，但它们耗时且需要大量专家干预。近年来，随着视觉-语言模型（VLMs）等技术的进步，已经开始自动化这一过程的部分环节；然而，现有的努力往往是零散的，缺乏在不同研究设计和地理背景下进行调整的能力。在本文中，我们介绍了一种以人为中心、研究员可配置的工作流程StreetLens，该流程将相关的社会科学研究专长嵌入到VLM中，以实现可扩展的邻里环境评估。StreetLens通过基于经过验证的访谈协议衍生的问题来模拟受过培训的人工编码员的过程，检索相关的街景图像（SVI），并生成从客观特征（如车辆数量）到主观感知（如图像中的杂乱感）的广泛语义注释。通过允许研究者通过领域知识指导的提示来定义VLM的角色，StreetLens将领域知识置于分析过程的核心。它还支持整合先前的调查数据，以增强稳健性并扩展在多种环境下评估的特征范围。我们提供了一个Google Colab笔记本，使研究人员能够轻松访问和扩展公共或自定义街景图像数据集的StreetLens工具。StreetLens代表了一种转变，即将灵活且有自主权的人工智能系统与研究者紧密合作，以加速并扩大邻里研究的规模。 
+
+---
+# PoseGRAF: Geometric-Reinforced Adaptive Fusion for Monocular 3D Human Pose Estimation 
+
+**Title (ZH)**: PoseGRAF：几何强化自适应融合在单目3D人体姿态估计中的应用 
+
+**Authors**: Ming Xu, Xu Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.14596)  
+
+**Abstract**: Existing monocular 3D pose estimation methods primarily rely on joint positional features, while overlooking intrinsic directional and angular correlations within the skeleton. As a result, they often produce implausible poses under joint occlusions or rapid motion changes. To address these challenges, we propose the PoseGRAF framework. We first construct a dual graph convolutional structure that separately processes joint and bone graphs, effectively capturing their local dependencies. A Cross-Attention module is then introduced to model interdependencies between bone directions and joint features. Building upon this, a dynamic fusion module is designed to adaptively integrate both feature types by leveraging the relational dependencies between joints and bones. An improved Transformer encoder is further incorporated in a residual manner to generate the final output. Experimental results on the Human3.6M and MPI-INF-3DHP datasets show that our method exceeds state-of-the-art approaches. Additional evaluations on in-the-wild videos further validate its generalizability. The code is publicly available at this https URL. 
+
+**Abstract (ZH)**: 现有的单目三维姿态估计方法主要依赖于关节位置特征，忽视了骨骼内部的内在方向和角度关联，因此在关节遮挡或快速运动变化时往往会生成不合理的人姿。为了解决这些挑战，我们提出了一种PoseGRAF框架。我们首先构建了一种双图卷积结构，分别处理关节图和骨骼图，有效地捕捉它们的局部依赖关系。接着引入了一个跨注意力模块，用于建模骨骼方向和关节特征之间的相互依赖关系。在此基础上，设计了一个动态融合模块，通过利用关节和骨骼之间的关系依赖，自适应地结合两种特征类型。进一步以残差方式引入了一个改进的Transformer编码器，生成最终输出。在Human3.6M和MPI-INF-3DHP数据集上的实验结果表明，我们的方法超过了现有最先进的方法。额外的野外视频评估进一步验证了其泛化能力。代码已在以下网址公开：this https URL。 
+
+---
+# Synthetic Data Augmentation for Table Detection: Re-evaluating TableNet's Performance with Automatically Generated Document Images 
+
+**Title (ZH)**: 合成数据扩增用于表格检测：重新评估TableNet的性能（使用自动生成的文档图像） 
+
+**Authors**: Krishna Sahukara, Zineddine Bettouche, Andreas Fischer  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.14583)  
+
+**Abstract**: Document pages captured by smartphones or scanners often contain tables, yet manual extraction is slow and error-prone. We introduce an automated LaTeX-based pipeline that synthesizes realistic two-column pages with visually diverse table layouts and aligned ground-truth masks. The generated corpus augments the real-world Marmot benchmark and enables a systematic resolution study of TableNet. Training TableNet on our synthetic data achieves a pixel-wise XOR error of 4.04% on our synthetic test set with a 256x256 input resolution, and 4.33% with 1024x1024. The best performance on the Marmot benchmark is 9.18% (at 256x256), while cutting manual annotation effort through automation. 
+
+**Abstract (ZH)**: 智能手机或扫描仪捕获的文档页面经常包含表格，但手动提取耗时且容易出错。我们介绍了一种基于自动化的LaTeX管道，该管道合成具有多种视觉布局的两列页面，并生成了对齐的地面真实掩模。生成的语料库增强了现实世界的Marmot基准，并使TableNet的系统分辨率研究成为可能。在我们的合成数据上训练TableNet，在256x256输入分辨率下的像素级XOR误差为4.04%，在1024x1024下的误差为4.33%。在Marmot基准上的最佳性能为9.18%（在256x256时），并通过自动化减少了手动注释的工作量。 
+
+---
+# Adapting Lightweight Vision Language Models for Radiological Visual Question Answering 
+
+**Title (ZH)**: 适配轻量级视觉语言模型的医学影像视觉问答 
+
+**Authors**: Aditya Shourya, Michel Dumontier, Chang Sun  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.14451)  
+
+**Abstract**: Recent advancements in vision-language systems have improved the accuracy of Radiological Visual Question Answering (VQA) Models. However, some challenges remain across each stage of model development: limited expert-labeled images hinders data procurement at scale; the intricate and nuanced patterns of radiological images make modeling inherently difficult; and the lack of evaluation evaluation efforts makes it difficult to identify cases where the model might be ill-conditioned. In this study, we fine-tune a lightweight 3B parameter vision-language model for Radiological VQA, demonstrating that small models, when appropriately tuned with curated data, can achieve robust performance across both open- and closed-ended questions. We propose a cost-effective training pipeline from synthetic question-answer pair generation to multi-stage fine-tuning on specialised radiological domain-targeted datasets (e.g., ROCO v2.0, MedPix v2.0). Our results show that despite operating at a fraction of the scale of state-of-the-art models such as LLaVA-Med, our model achieves promising performance given its small parameter size and the limited scale of training data. We introduce a lightweight saliency-based diagnostic tool that enables domain experts to inspect VQA model performance and identify ill-conditioned failure modes through saliency analysis. 
+
+**Abstract (ZH)**: 近期视觉-语言系统的发展提高了医学影像问答（Radiological VQA）模型的准确性。然而，在模型开发的每个阶段仍存在一些挑战：专家标注图像的限制阻碍了大规模数据采集；医学影像中的复杂和细微特征使得建模工作本身变得困难；缺乏评估努力使得难以识别模型可能失效的情况。在本研究中，我们微调了一个轻量级的3B参数视觉-语言模型用于医学影像问答，证明了适当调整的小模型在开放性和封闭性问题上均能实现稳健的性能。我们提出了一种成本效益高的训练管道，从合成问题-答案对生成到多阶段针对特定医学影像领域数据集的微调。结果显示，尽管我们的模型运行规模远小于LLaVA-Med等先进模型，但在参数规模有限和训练数据规模有限的情况下，仍能取得令人鼓舞的性能。我们引入了一种轻量级的基于显著性的诊断工具，允许领域专家通过显著性分析检查VQA模型的性能并识别潜在的失效模式。 
+
+---
+# Compositional Attribute Imbalance in Vision Datasets 
+
+**Title (ZH)**: 视觉数据集中的组合属性失衡 
+
+**Authors**: Jiayi Chen, Yanbiao Ma, Andi Zhang, Weidong Tang, Wei Dai, Bowei Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.14418)  
+
+**Abstract**: Visual attribute imbalance is a common yet underexplored issue in image classification, significantly impacting model performance and generalization. In this work, we first define the first-level and second-level attributes of images and then introduce a CLIP-based framework to construct a visual attribute dictionary, enabling automatic evaluation of image attributes. By systematically analyzing both single-attribute imbalance and compositional attribute imbalance, we reveal how the rarity of attributes affects model performance. To tackle these challenges, we propose adjusting the sampling probability of samples based on the rarity of their compositional attributes. This strategy is further integrated with various data augmentation techniques (such as CutMix, Fmix, and SaliencyMix) to enhance the model's ability to represent rare attributes. Extensive experiments on benchmark datasets demonstrate that our method effectively mitigates attribute imbalance, thereby improving the robustness and fairness of deep neural networks. Our research highlights the importance of modeling visual attribute distributions and provides a scalable solution for long-tail image classification tasks. 
+
+**Abstract (ZH)**: 视觉属性不平衡是图像分类中一个常见但尚未充分探索的问题，显著影响模型性能和泛化能力。在本工作中，我们首先定义图像的一级和二级属性，然后提出一种基于CLIP的框架构建视觉属性字典，从而实现图像属性的自动化评估。通过对单一属性不平衡和组合属性不平衡的系统性分析，我们揭示了属性稀有性如何影响模型性能。为了应对这些挑战，我们提议根据组合属性的稀有性调整样本的采样概率。这一策略进一步与各种数据增强技术（如CutMix、Fmix和SaliencyMix）集成，以增强模型表示稀有属性的能力。基准数据集上的广泛实验表明，我们的方法有效地缓解了属性不平衡问题，从而提高了深度神经网络的鲁棒性和公平性。我们的研究强调了建模视觉属性分布的重要性，并提供了一种可扩展的长尾图像分类任务解决方案。 
+
+---
+# Causally Steered Diffusion for Automated Video Counterfactual Generation 
+
+**Title (ZH)**: 因果引导的扩散模型用于自动视频反事实生成 
+
+**Authors**: Nikos Spyrou, Athanasios Vlontzos, Paraskevas Pegios, Thomas Melistas, Nefeli Gkouti, Yannis Panagakis, Giorgos Papanastasiou, Sotirios A. Tsaftaris  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.14404)  
+
+**Abstract**: Adapting text-to-image (T2I) latent diffusion models for video editing has shown strong visual fidelity and controllability, but challenges remain in maintaining causal relationships in video content. Edits affecting causally dependent attributes risk generating unrealistic or misleading outcomes if these relationships are ignored. In this work, we propose a causally faithful framework for counterfactual video generation, guided by a vision-language model (VLM). Our method is agnostic to the underlying video editing system and does not require access to its internal mechanisms or finetuning. Instead, we guide the generation by optimizing text prompts based on an assumed causal graph, addressing the challenge of latent space control in LDMs. We evaluate our approach using standard video quality metrics and counterfactual-specific criteria, such as causal effectiveness and minimality. Our results demonstrate that causally faithful video counterfactuals can be effectively generated within the learned distribution of LDMs through prompt-based causal steering. With its compatibility with any black-box video editing system, our method holds significant potential for generating realistic "what-if" video scenarios in diverse areas such as healthcare and digital media. 
+
+**Abstract (ZH)**: 基于视觉语言模型的因果忠实视频生成框架 
+
+---
+# Decoupled Classifier-Free Guidance for Counterfactual Diffusion Models 
+
+**Title (ZH)**: 解耦的分类器免费引导-counter事实扩散模型 
+
+**Authors**: Tian Xia, Fabio De Sousa Ribeiro, Rajat R Rasal, Avinash Kori, Raghav Mehta, Ben Glocker  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.14399)  
+
+**Abstract**: Counterfactual image generation aims to simulate realistic visual outcomes under specific causal interventions. Diffusion models have recently emerged as a powerful tool for this task, combining DDIM inversion with conditional generation via classifier-free guidance (CFG). However, standard CFG applies a single global weight across all conditioning variables, which can lead to poor identity preservation and spurious attribute changes - a phenomenon known as attribute amplification. To address this, we propose Decoupled Classifier-Free Guidance (DCFG), a flexible and model-agnostic framework that introduces group-wise conditioning control. DCFG builds on an attribute-split embedding strategy that disentangles semantic inputs, enabling selective guidance on user-defined attribute groups. For counterfactual generation, we partition attributes into intervened and invariant sets based on a causal graph and apply distinct guidance to each. Experiments on CelebA-HQ, MIMIC-CXR, and EMBED show that DCFG improves intervention fidelity, mitigates unintended changes, and enhances reversibility, enabling more faithful and interpretable counterfactual image generation. 
+
+**Abstract (ZH)**: 去因果干预下的对抗生成图像旨在模拟特定因果干预下的现实视觉结果。扩散模型最近成为这一任务的强大工具，通过分类器无指导（Classifier-Free Guidance，CFG）结合DDIM反向生成。然而，标准的CFG对所有条件变量应用单一全局权重，可能导致身份保真度差和虚假属性变化——这种现象被称为属性放大。为解决这一问题，我们提出去耦合分类器无指导（Decoupled Classifier-Free Guidance，DCFG），这是一种灵活且模型无关的框架，引入了分组条件控制。DCFG 基于属性拆分嵌入策略，将语义输入解耦，使用户可以在定义的属性组上进行选择性指导。对于反事实生成，我们根据因果图将属性分为干预集和不变集，并对每个集应用不同的指导。实验表明，DCFG 提高了干预的准确性，减少了无意中的变化，并增强了可逆性，从而实现更忠实和可解释的反事实图像生成。 
+
+---
+# DepthSeg: Depth prompting in remote sensing semantic segmentation 
+
+**Title (ZH)**: DepthSeg: 远景遥感语义分割中的深度提示 
+
+**Authors**: Ning Zhou, Shanxiong Chen, Mingting Zhou, Haigang Sui, Lieyun Hu, Han Li, Li Hua, Qiming Zhou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.14382)  
+
+**Abstract**: Remote sensing semantic segmentation is crucial for extracting detailed land surface information, enabling applications such as environmental monitoring, land use planning, and resource assessment. In recent years, advancements in artificial intelligence have spurred the development of automatic remote sensing semantic segmentation methods. However, the existing semantic segmentation methods focus on distinguishing spectral characteristics of different objects while ignoring the differences in the elevation of the different targets. This results in land cover misclassification in complex scenarios involving shadow occlusion and spectral confusion. In this paper, we introduce a depth prompting two-dimensional (2D) remote sensing semantic segmentation framework (DepthSeg). It automatically models depth/height information from 2D remote sensing images and integrates it into the semantic segmentation framework to mitigate the effects of spectral confusion and shadow occlusion. During the feature extraction phase of DepthSeg, we introduce a lightweight adapter to enable cost-effective fine-tuning of the large-parameter vision transformer encoder pre-trained by natural images. In the depth prompting phase, we propose a depth prompter to model depth/height features explicitly. In the semantic prediction phase, we introduce a semantic classification decoder that couples the depth prompts with high-dimensional land-cover features, enabling accurate extraction of land-cover types. Experiments on the LiuZhou dataset validate the advantages of the DepthSeg framework in land cover mapping tasks. Detailed ablation studies further highlight the significance of the depth prompts in remote sensing semantic segmentation. 
+
+**Abstract (ZH)**: 深度提示二维遥感语义分割框架（DepthSeg）：缓解光谱混淆和阴影遮挡 
+
+---
+# EVA02-AT: Egocentric Video-Language Understanding with Spatial-Temporal Rotary Positional Embeddings and Symmetric Optimization 
+
+**Title (ZH)**: EVA02-AT：基于空间-时间旋转位置嵌入和对称优化的自视角视频-语言理解 
+
+**Authors**: Xiaoqi Wang, Yi Wang, Lap-Pui Chau  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.14356)  
+
+**Abstract**: Egocentric video-language understanding demands both high efficiency and accurate spatial-temporal modeling. Existing approaches face three key challenges: 1) Excessive pre-training cost arising from multi-stage pre-training pipelines, 2) Ineffective spatial-temporal encoding due to manually split 3D rotary positional embeddings that hinder feature interactions, and 3) Imprecise learning objectives in soft-label multi-instance retrieval, which neglect negative pair correlations. In this paper, we introduce EVA02-AT, a suite of EVA02-based video-language foundation models tailored to egocentric video understanding tasks. EVA02-AT first efficiently transfers an image-based CLIP model into a unified video encoder via a single-stage pretraining. Second, instead of applying rotary positional embeddings to isolated dimensions, we introduce spatial-temporal rotary positional embeddings along with joint attention, which can effectively encode both spatial and temporal information on the entire hidden dimension. This joint encoding of spatial-temporal features enables the model to learn cross-axis relationships, which are crucial for accurately modeling motion and interaction in videos. Third, focusing on multi-instance video-language retrieval tasks, we introduce the Symmetric Multi-Similarity (SMS) loss and a novel training framework that advances all soft labels for both positive and negative pairs, providing a more precise learning objective. Extensive experiments on Ego4D, EPIC-Kitchens-100, and Charades-Ego under zero-shot and fine-tuning settings demonstrate that EVA02-AT achieves state-of-the-art performance across diverse egocentric video-language tasks with fewer parameters. Models with our SMS loss also show significant performance gains on multi-instance retrieval benchmarks. Our code and models are publicly available at this https URL . 
+
+**Abstract (ZH)**: 自我中心视频-语言理解既要求高效性也要求精确的空间-时间建模。现有方法面临三个关键挑战：1）多阶段预训练管道引起的 excessive pre-training 成本，2）由于手动分割的 3D 旋转位置嵌入导致的空间-时间编码无效，这阻碍了特征交互，3）软标签多实例检索中的不精确学习目标，忽略了负样本对之间的关联。本文介绍了基于 EVA02 的 EVA02-AT，这是一个专用于自我中心视频理解任务的 EVA02 基础模型系列。EVA02-AT 首先通过单阶段预训练高效地将基于图像的 CLIP 模型转换为统一的视频编码器。其次，我们引入了空间-时间旋转位置嵌入与联合注意相结合的方法，可以有效地在整个隐藏维度上编码空间和时间信息。这种联合编码的空间-时间特征使得模型能够在空间和时间轴之间学习交叉关系，这对于准确建模视频中的运动和交互至关重要。第三，针对多实例视频-语言检索任务，我们引入了对称多相似性（SMS）损失和一种新的训练框架，可以同时提高正样本和负样本的软标签，提供更精确的学习目标。在 Ego4D、EPIC-Kitchens-100 和 Charades-Ego 下的零样本和微调设置下的广泛实验表明，EVA02-AT 在各种自我中心视频-语言任务中的性能达到领先水平，且参数量更少。使用我们 SMS 损失的模型在多实例检索基准上的性能也显著提高。我们的代码和模型可在以下网址公开获取：this https URL。 
+
+---
+# Uncertainty-Driven Radar-Inertial Fusion for Instantaneous 3D Ego-Velocity Estimation 
+
+**Title (ZH)**: 基于不确定性驱动的雷达-惯性融合即时3D ego速度估计 
+
+**Authors**: Prashant Kumar Rai, Elham Kowsari, Nataliya Strokina, Reza Ghabcheloo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.14294)  
+
+**Abstract**: We present a method for estimating ego-velocity in autonomous navigation by integrating high-resolution imaging radar with an inertial measurement unit. The proposed approach addresses the limitations of traditional radar-based ego-motion estimation techniques by employing a neural network to process complex-valued raw radar data and estimate instantaneous linear ego-velocity along with its associated uncertainty. This uncertainty-aware velocity estimate is then integrated with inertial measurement unit data using an Extended Kalman Filter. The filter leverages the network-predicted uncertainty to refine the inertial sensor's noise and bias parameters, improving the overall robustness and accuracy of the ego-motion estimation. We evaluated the proposed method on the publicly available ColoRadar dataset. Our approach achieves significantly lower error compared to the closest publicly available method and also outperforms both instantaneous and scan matching-based techniques. 
+
+**Abstract (ZH)**: 我们提出了一种通过结合高分辨率成像雷达和惯性测量单元来估计 ego-速度的方法。该提出的approach通过运用神经网络处理复值原始雷达数据，并估计瞬时线性 ego-速度及其相关的不确定性来解决传统基于雷达的 ego-运动估计方法的局限性。这种不确定性意识的速度估计随后与惯性测量单元的数据结合使用扩展卡尔曼滤波器。滤波器利用网络预测的不确定性来改进惯性传感器的噪声和偏差参数，从而提高整体的鲁棒性和 ego-运动估计的准确性。我们在公开可用的 ColoRadar 数据集上评估了提出的方法。我们的方法在误差上显著低于现有最接近的方法，并且在瞬时速度估计和基于扫描匹配的技术方面都表现出更好的性能。 
+
+---
+# HRGS: Hierarchical Gaussian Splatting for Memory-Efficient High-Resolution 3D Reconstruction 
+
+**Title (ZH)**: HRGS：基于层次高斯点云的高效高分辨率3D重建 
+
+**Authors**: Changbai Li, Haodong Zhu, Hanlin Chen, Juan Zhang, Tongfei Chen, Shuo Yang, Shuwei Shao, Wenhao Dong, Baochang Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.14229)  
+
+**Abstract**: 3D Gaussian Splatting (3DGS) has made significant strides in real-time 3D scene reconstruction, but faces memory scalability issues in high-resolution scenarios. To address this, we propose Hierarchical Gaussian Splatting (HRGS), a memory-efficient framework with hierarchical block-level optimization. First, we generate a global, coarse Gaussian representation from low-resolution data. Then, we partition the scene into multiple blocks, refining each block with high-resolution data. The partitioning involves two steps: Gaussian partitioning, where irregular scenes are normalized into a bounded cubic space with a uniform grid for task distribution, and training data partitioning, where only relevant observations are retained for each block. By guiding block refinement with the coarse Gaussian prior, we ensure seamless Gaussian fusion across adjacent blocks. To reduce computational demands, we introduce Importance-Driven Gaussian Pruning (IDGP), which computes importance scores for each Gaussian and removes those with minimal contribution, speeding up convergence and reducing memory usage. Additionally, we incorporate normal priors from a pretrained model to enhance surface reconstruction quality. Our method enables high-quality, high-resolution 3D scene reconstruction even under memory constraints. Extensive experiments on three benchmarks show that HRGS achieves state-of-the-art performance in high-resolution novel view synthesis (NVS) and surface reconstruction tasks. 
+
+**Abstract (ZH)**: 基于层次高斯斑点表示的高效率三维场景重建（Hierarchical Gaussian Splatting for Efficient High-Resolution 3D Scene Reconstruction） 
+
+---
+# Latent Anomaly Detection: Masked VQ-GAN for Unsupervised Segmentation in Medical CBCT 
+
+**Title (ZH)**: 潜在异常检测：掩码VQ-GAN在医学CBCT无监督分割中的应用 
+
+**Authors**: Pengwei Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.14209)  
+
+**Abstract**: Advances in treatment technology now allow for the use of customizable 3D-printed hydrogel wound dressings for patients with osteoradionecrosis (ORN) of the jaw (ONJ). Meanwhile, deep learning has enabled precise segmentation of 3D medical images using tools like nnUNet.
+However, the scarcity of labeled data in ONJ imaging makes supervised training impractical. This study aims to develop an unsupervised training approach for automatically identifying anomalies in imaging scans.
+We propose a novel two-stage training pipeline. In the first stage, a VQ-GAN is trained to accurately reconstruct normal subjects. In the second stage, random cube masking and ONJ-specific masking are applied to train a new encoder capable of recovering the data.
+The proposed method achieves successful segmentation on both simulated and real patient data.
+This approach provides a fast initial segmentation solution, reducing the burden of manual labeling. Additionally, it has the potential to be directly used for 3D printing when combined with hand-tuned post-processing. 
+
+**Abstract (ZH)**: Advances 在治疗技术的进步下，现在可以使用定制的 3D 打印水凝胶伤口敷料治疗颌骨放射性坏死 (ORN) 患者。同时，深度学习已经使得使用工具如 nnUNet 精确分割 3D 医学图像成为可能。
+然而，在颌骨放射性坏死 (ONJ) 图像中缺乏标注数据使监督训练变得 impractical。本研究旨在开发一种无监督训练方法，以自动识别成像扫描中的异常。
+我们提出了一种新的两阶段训练管道。在第一阶段，训练一个 VQ-GAN 准确重建正常个体。在第二阶段，应用随机立方体遮罩和 ONJ 特异性遮罩训练一个新编码器，使其能够恢复数据。
+所提出的方法在模拟和真实患者数据上均实现了成功的分割。
+此方法提供了一种快速的初始分割解决方案，减轻了手动标注的负担。此外，当与手工调整的后处理相结合时，它还具有直接用于 3D 打印的潜力。 
+
+---
+# VideoMAR: Autoregressive Video Generatio with Continuous Tokens 
+
+**Title (ZH)**: VideoMAR：基于连续令牌的自回归视频生成 
+
+**Authors**: Hu Yu, Biao Gong, Hangjie Yuan, DanDan Zheng, Weilong Chai, Jingdong Chen, Kecheng Zheng, Feng Zhao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.14168)  
+
+**Abstract**: Masked-based autoregressive models have demonstrated promising image generation capability in continuous space. However, their potential for video generation remains under-explored. In this paper, we propose \textbf{VideoMAR}, a concise and efficient decoder-only autoregressive image-to-video model with continuous tokens, composing temporal frame-by-frame and spatial masked generation. We first identify temporal causality and spatial bi-directionality as the first principle of video AR models, and propose the next-frame diffusion loss for the integration of mask and video generation. Besides, the huge cost and difficulty of long sequence autoregressive modeling is a basic but crucial issue. To this end, we propose the temporal short-to-long curriculum learning and spatial progressive resolution training, and employ progressive temperature strategy at inference time to mitigate the accumulation error. Furthermore, VideoMAR replicates several unique capacities of language models to video generation. It inherently bears high efficiency due to simultaneous temporal-wise KV cache and spatial-wise parallel generation, and presents the capacity of spatial and temporal extrapolation via 3D rotary embeddings. On the VBench-I2V benchmark, VideoMAR surpasses the previous state-of-the-art (Cosmos I2V) while requiring significantly fewer parameters ($9.3\%$), training data ($0.5\%$), and GPU resources ($0.2\%$). 
+
+**Abstract (ZH)**: 基于掩码的自回归模型在连续空间图像生成中展示了令人鼓舞的能力，但其在视频生成中的潜力仍被很大程度上忽视。本文提出VideoMAR，一种简洁高效的仅解码器自回归图像到视频模型，采用连续 token 构建时间帧到帧和空间掩码生成。首先，我们确定时间因果性和空间双向性作为视频自回归模型的基本原则，并提出下一帧扩散损失以结合掩码和视频生成。此外，长序列自回归建模的巨大成本和难度是一个基本但至关重要的问题。为此，我们提出时间从短到长的课程学习和空间逐步分辨率训练，并在推理时采用逐步温度策略以减轻累积误差。此外，VideoMAR 将语言模型的一些独特能力应用到视频生成中。它由于同时进行的时间维度 KV 缓存和空间维度并行生成而具有高效率，并通过3D 旋转嵌入展现时空外推能力。在VBench-I2V基准上，VideoMAR 在参数量（减少9.3%）、训练数据（减少0.5%）和 GPU 资源（减少0.2%）显著减少的情况下，超越了先前的最佳方法（Cosmos I2V）。 
+
+---
+# Image Segmentation with Large Language Models: A Survey with Perspectives for Intelligent Transportation Systems 
+
+**Title (ZH)**: 基于大型语言模型的图像分割：面向智能交通系统的综述与视角 
+
+**Authors**: Sanjeda Akter, Ibne Farabi Shihab, Anuj Sharma  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.14096)  
+
+**Abstract**: The integration of Large Language Models (LLMs) with computer vision is profoundly transforming perception tasks like image segmentation. For intelligent transportation systems (ITS), where accurate scene understanding is critical for safety and efficiency, this new paradigm offers unprecedented capabilities. This survey systematically reviews the emerging field of LLM-augmented image segmentation, focusing on its applications, challenges, and future directions within ITS. We provide a taxonomy of current approaches based on their prompting mechanisms and core architectures, and we highlight how these innovations can enhance road scene understanding for autonomous driving, traffic monitoring, and infrastructure maintenance. Finally, we identify key challenges, including real-time performance and safety-critical reliability, and outline a perspective centered on explainable, human-centric AI as a prerequisite for the successful deployment of this technology in next-generation transportation systems. 
+
+**Abstract (ZH)**: 大型语言模型与计算机视觉的集成正深刻改变图像分割等感知任务。在智能交通系统中，准确的场景理解对于安全和效率至关重要，这一新范式提供了前所未有的能力。本文系统地回顾了大型语言模型增强图像分割这一新兴领域的研究，重点关注其在智能交通系统中的应用、挑战及未来方向。我们根据其提示机制和核心架构对当前方法进行了分类，并highlight了这些创新如何增强自动驾驶、交通监控和基础设施维护中的道路场景理解。最后，我们指出了关键挑战，包括实时性能和安全关键可靠性，并概述了一种以可解释的人本AI为核心的观点，强调这是在下一代交通系统中成功部署该技术的先决条件。 
+
+---
+# HierVL: Semi-Supervised Segmentation leveraging Hierarchical Vision-Language Synergy with Dynamic Text-Spatial Query Alignment 
+
+**Title (ZH)**: HierVL：基于层次视觉-语言协同的动态文本-空间查询对齐半监督分割 
+
+**Authors**: Numair Nadeem, Saeed Anwar, Muhammad Hamza Asad, Abdul Bais  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.13925)  
+
+**Abstract**: Semi-supervised semantic segmentation remains challenging under severe label scarcity and domain variability. Vision-only methods often struggle to generalize, resulting in pixel misclassification between similar classes, poor generalization and boundary localization. Vision-Language Models offer robust, domain-invariant semantics but lack the spatial grounding required for dense prediction. We introduce HierVL, a unified framework that bridges this gap by integrating abstract text embeddings into a mask-transformer architecture tailored for semi-supervised segmentation. HierVL features three novel components: a Hierarchical Semantic Query Generator that filters and projects abstract class embeddings into multi-scale queries to suppress irrelevant classes and handle intra-class variability; a Cross-Modal Spatial Alignment Module that aligns semantic queries with pixel features for sharper boundaries under sparse supervision; and a Dual-Query Transformer Decoder that fuses semantic and instance-level queries to prevent instance collapse. We also introduce targeted regularization losses that maintain vision-language alignment throughout training to reinforce semantic grounding. HierVL establishes a new state-of-the-art by achieving a +4.4% mean improvement of the intersection over the union on COCO (with 232 labeled images), +3.1% on Pascal VOC (with 92 labels), +5.9% on ADE20 (with 158 labels) and +1.8% on Cityscapes (with 100 labels), demonstrating better performance under 1% supervision on four benchmark datasets. Our results show that language-guided segmentation closes the label efficiency gap and unlocks new levels of fine-grained, instance-aware generalization. 
+
+**Abstract (ZH)**: 半监督语义分割在标签稀缺和领域变化严重的情况下仍具有挑战性。视觉-only方法常常难以泛化，导致类似类别之间的像素分类错误、泛化能力差和边界定位不准确。视觉-语言模型提供了鲁棒且领域不变的语义信息，但缺乏用于密集预测所需的空间定位。我们引入了HierVL，这是一种统一框架，通过将抽象文本嵌入集成到一个针对半监督分割定制的掩码变压器架构中，来弥合这一差距。HierVL 特征包括三个新型组件：层次语义查询生成器，将抽象类别嵌入投影到多尺度查询中，以抑制无关类别并处理类别内的变异性；跨模态空间对齐模块，在稀疏监督下使语义查询与像素特征对齐，以获得更清晰的边界；双查询变压器解码器，融合语义和实例级别查询以防止实例合并。我们还引入了靶向正则化损失，以在整个训练过程中维护视觉-语言对齐，强化语义定位。HierVL 在 COCO（232 个标注图像）、Pascal VOC（92 个标签）、ADE20（158 个标签）和 Cityscapes（100 个标签）四个基准数据集上分别实现了交并比(mean improvement of the intersection over the union)提高 4.4%、3.1%、5.9% 和 1.8%，展示了在 1% 监督下更好的性能。我们的结果表明，语言引导的分割缩小了标签效率差距并解锁了新的细粒度、实例感知泛化水平。 
+
+---
+# Intelligent Image Sensing for Crime Analysis: A ML Approach towards Enhanced Violence Detection and Investigation 
+
+**Title (ZH)**: 智能图像感知用于犯罪分析：一种增强暴力检测与调查的机器学习方法 
+
+**Authors**: Aritra Dutta, Pushpita Boral, G Suseela  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.13910)  
+
+**Abstract**: The increasing global crime rate, coupled with substantial human and property losses, highlights the limitations of traditional surveillance methods in promptly detecting diverse and unexpected acts of violence. Addressing this pressing need for automatic violence detection, we leverage Machine Learning to detect and categorize violent events in video streams. This paper introduces a comprehensive framework for violence detection and classification, employing Supervised Learning for both binary and multi-class violence classification. The detection model relies on 3D Convolutional Neural Networks, while the classification model utilizes the separable convolutional 3D model for feature extraction and bidirectional LSTM for temporal processing. Training is conducted on a diverse customized datasets with frame-level annotations, incorporating videos from surveillance cameras, human recordings, hockey fight, sohas and wvd dataset across various platforms. Additionally, a camera module integrated with raspberry pi is used to capture live video feed, which is sent to the ML model for processing. Thus, demonstrating improved performance in terms of computational resource efficiency and accuracy. 
+
+**Abstract (ZH)**: 全球犯罪率的上升及其对人类和财产造成的重大损失突显了传统监控方法在及时检测各种意外暴力行为方面的局限性。为应对自动暴力检测的迫切需求，我们利用机器学习来检测和分类视频流中的暴力事件。本文介绍了一种全面的暴力检测与分类框架，采用监督学习进行二分类和多分类。检测模型基于3D卷积神经网络，分类模型则利用可分离卷积3D模型进行特征提取，并使用双向LSTM进行时间处理。训练在包含帧级标注的多样化定制数据集上进行，数据集来源包括监控摄像头视频、人类录像、冰球打斗、sohas和wvd数据集等多种平台。此外，还集成了一款搭配raspberry pi的摄像头模块，用于捕获实时视频流，经过ML模型处理。从而在计算资源效率和准确性方面表现出改进。 
+
+---
+# Balancing Preservation and Modification: A Region and Semantic Aware Metric for Instruction-Based Image Editing 
+
+**Title (ZH)**: 平衡保存与修改：一种基于区域和语义的指令驱动图像编辑度量标准 
+
+**Authors**: Zhuoying Li, Zhu Xu, Yuxin Peng, Yang Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.13827)  
+
+**Abstract**: Instruction-based image editing, which aims to modify the image faithfully according to the instruction while preserving irrelevant content unchanged, has made significant progress. However, there still lacks a comprehensive metric for assessing the editing quality. Existing metrics either require high human evaluation costs, which hinder large-scale evaluation, or are adapted from other tasks and lose task-specific concerns, failing to comprehensively evaluate both instruction-based modification and preservation of irrelevant regions, resulting in biased evaluation. To tackle this, we introduce a new metric called Balancing Preservation and Modification (BPM), tailored for instruction-based image editing by explicitly disentangling the image into editing-relevant and irrelevant regions for specific consideration. We first identify and locate editing-relevant regions, followed by a two-tier process to assess editing quality: Region-Aware Judge evaluates whether the position and size of the edited region align with the instruction, and Semantic-Aware Judge further assesses the instruction content compliance within editing-relevant regions as well as content preservation within irrelevant regions, yielding comprehensive and interpretable quality assessment. Moreover, the editing-relevant region localization in BPM can be integrated into image editing approaches to improve editing quality, demonstrating its broad applicability. We verify the effectiveness of the BPM metric on comprehensive instruction-editing data, and the results show the highest alignment with human evaluation compared to existing metrics, indicating its efficacy. Code is available at: this https URL 
+
+**Abstract (ZH)**: 基于指令的图像编辑评价指标：平衡保留与修改（BP&M） 
+
+---
+# Non-planar Object Detection and Identification by Features Matching and Triangulation Growth 
+
+**Title (ZH)**: 非平面物体检测与识别：基于特征匹配和三角化生长 
+
+**Authors**: Filippo Leveni  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.13769)  
+
+**Abstract**: Object detection and identification is surely a fundamental topic in the computer vision field; it plays a crucial role in many applications such as object tracking, industrial robots control, image retrieval, etc. We propose a feature-based approach for detecting and identifying distorted occurrences of a given template in a scene image by incremental grouping of feature matches between the image and the template. For this purpose, we consider the Delaunay triangulation of template features as an useful tool through which to be guided in this iterative approach. The triangulation is treated as a graph and, starting from a single triangle, neighboring nodes are considered and the corresponding features are identified; then matches related to them are evaluated to determine if they are worthy to be grouped. This evaluation is based on local consistency criteria derived from geometric and photometric properties of local features. Our solution allows the identification of the object in situations where geometric models (e.g. homography) does not hold, thus enable the detection of objects such that the template is non planar or when it is planar but appears distorted in the image. We show that our approach performs just as well or better than application of homography-based RANSAC in scenarios in which distortion is nearly absent, while when the deformation becomes relevant our method shows better description performance. 
+
+**Abstract (ZH)**: 基于特征的模板匹配与识别：通过增量特征匹配迭代分组方法 
+
+---
