@@ -1,0 +1,438 @@
+# GRAND-SLAM: Local Optimization for Globally Consistent Large-Scale Multi-Agent Gaussian SLAM 
+
+**Title (ZH)**: GRAND-SLAM：全局一致的大规模多智能体高斯SLAM的局部优化 
+
+**Authors**: Annika Thomas, Aneesa Sonawalla, Alex Rose, Jonathan P. How  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.18885)  
+
+**Abstract**: 3D Gaussian splatting has emerged as an expressive scene representation for RGB-D visual SLAM, but its application to large-scale, multi-agent outdoor environments remains unexplored. Multi-agent Gaussian SLAM is a promising approach to rapid exploration and reconstruction of environments, offering scalable environment representations, but existing approaches are limited to small-scale, indoor environments. To that end, we propose Gaussian Reconstruction via Multi-Agent Dense SLAM, or GRAND-SLAM, a collaborative Gaussian splatting SLAM method that integrates i) an implicit tracking module based on local optimization over submaps and ii) an approach to inter- and intra-robot loop closure integrated into a pose-graph optimization framework. Experiments show that GRAND-SLAM provides state-of-the-art tracking performance and 28% higher PSNR than existing methods on the Replica indoor dataset, as well as 91% lower multi-agent tracking error and improved rendering over existing multi-agent methods on the large-scale, outdoor Kimera-Multi dataset. 
+
+**Abstract (ZH)**: 基于多机器人密集SLAM的高斯重建：GRAND-SLAM 
+
+---
+# Reproducible Evaluation of Camera Auto-Exposure Methods in the Field: Platform, Benchmark and Lessons Learned 
+
+**Title (ZH)**: 田间可重复评估的相机自动曝光方法评价平台、基准和经验教训 
+
+**Authors**: Olivier Gamache, Jean-Michel Fortin, Matěj Boxan, François Pomerleau, Philippe Giguère  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.18844)  
+
+**Abstract**: Standard datasets often present limitations, particularly due to the fixed nature of input data sensors, which makes it difficult to compare methods that actively adjust sensor parameters to suit environmental conditions. This is the case with Automatic-Exposure (AE) methods, which rely on environmental factors to influence the image acquisition process. As a result, AE methods have traditionally been benchmarked in an online manner, rendering experiments non-reproducible. Building on our prior work, we propose a methodology that utilizes an emulator capable of generating images at any exposure time. This approach leverages BorealHDR, a unique multi-exposure stereo dataset, along with its new extension, in which data was acquired along a repeated trajectory at different times of the day to assess the impact of changing illumination. In total, BorealHDR covers 13.4 km over 59 trajectories in challenging lighting conditions. The dataset also includes lidar-inertial-odometry-based maps with pose estimation for each image frame, as well as Global Navigation Satellite System (GNSS) data for comparison. We demonstrate that by using images acquired at various exposure times, we can emulate realistic images with a Root-Mean-Square Error (RMSE) below 1.78% compared to ground truth images. Using this offline approach, we benchmarked eight AE methods, concluding that the classical AE method remains the field's best performer. To further support reproducibility, we provide in-depth details on the development of our backpack acquisition platform, including hardware, electrical components, and performance specifications. Additionally, we share valuable lessons learned from deploying the backpack over more than 25 km across various environments. Our code and dataset are available online at this link: this https URL BorealHDR 
+
+**Abstract (ZH)**: 标准数据集往往存在局限性，尤其是由于输入数据传感器的固定性质，这使得难以比较那些能主动调整传感器参数以适应环境条件的方法。这种情况在自动曝光（AE）方法中尤为明显，这些方法依赖于环境因素来影响图像获取过程。因此，AE方法传统上以在线方式进行基准测试，导致实验无法重现。在我们之前工作的基础上，我们提出了一种利用能够生成任意曝光时间图像的模拟器的方法。该方法利用了BorealHDR这样一个独特的多曝光立体数据集及其新的扩展版本，在不同时间段沿重复轨迹获取数据以评估光照变化的影响。BorealHDR总共覆盖了59条轨迹，长度为13.4公里，在具有挑战性的光照条件下。数据集还包括基于激光雷达惯性里程计的位姿估计图像地图以及全球导航卫星系统（GNSS）数据以供比较。通过使用不同曝光时间获取的图像，我们能以与真实图像的均方根误差（RMSE）低于1.78%的精度模拟现实图像。利用这种离线方法，我们对八种AE方法进行了基准测试，得出经典AE方法仍然是该领域的最佳表现者。为支持进一步的可重现性，我们详细描述了背包获取平台的开发过程，包括硬件、电气组件和性能规格。此外，我们还分享了在各种环境中跨越超过25公里部署背包时学到的经验教训。我们的代码和数据集可在以下链接获取：this https URL BorealHDR。 
+
+---
+# TDACloud: Point Cloud Recognition Using Topological Data Analysis 
+
+**Title (ZH)**: TDACloud：基于拓扑数据分析的点云识别 
+
+**Authors**: Anirban Ghosh, Ian Dahlin, Ayan Dutta  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.18725)  
+
+**Abstract**: Point cloud-based object/place recognition remains a problem of interest in applications such as autonomous driving, scene reconstruction, and localization. Extracting meaningful local descriptors from a query point cloud that can be matched with the descriptors of the collected point clouds is a challenging problem. Furthermore, when the query point cloud is noisy or has been transformed (e.g., rotated), it adds to the complexity. To this end, we propose a novel methodology, named TDACloud, using Topological Data Analysis (TDA) for local descriptor extraction from a point cloud, which does not need resource-intensive GPU-based machine learning training. More specifically, we used the ATOL vectorization method to generate vectors for point clouds. Unlike voxelization, our proposed technique can take raw point clouds as inputs and outputs a fixed-size TDA-descriptor vector. To test the quality of the proposed TDACloud technique, we have implemented it on multiple real-world (e.g., Oxford RobotCar, KITTI-360) and realistic (e.g., ShapeNet) point cloud datasets for object and place recognition. We have also tested TDACloud on noisy and transformed test cases where the query point cloud has been scaled, translated, or rotated. Our results demonstrate high recognition accuracies in noisy conditions and large-scale real-world place recognition while outperforming the baselines by up to approximately 14%. 
+
+**Abstract (ZH)**: 基于点云的目标/地点识别依然是 autonomous driving、场景重建和定位等应用中的一个研究重点。提取能够与收集的点云描述子匹配的有意义的局部描述子是一个具有挑战性的问题。此外，当查询点云存在噪声或已经过变换（如旋转）时，这会增加难度。为此，我们提出了一种名为 TDACloud 的新型方法，使用拓扑数据分析（TDA）从点云中提取局部描述子，该方法无需进行资源密集型的 GPU 机器学习训练。具体来说，我们使用 ATOL 向量化方法生成点云向量。与体素化不同，我们提出的技术可以直接接受原始点云作为输入，并输出固定大小的 TDA 描述子向量。为了测试所提出的 TDACloud 技术的质量，我们在多个真实世界（如 Oxford RobotCar、KITTI-360）和现实世界（如 ShapeNet）点云数据集上实现了它，用于目标和地点识别。我们还测试了 TDACloud 在噪声和变换的测试案例上，其中查询点云进行了缩放、平移或旋转。我们的结果显示，在嘈杂条件下和大规模实际世界地点识别中具有很高的识别精度，并且相对于基线方法提高了约 14%。 
+
+---
+# Learning Point Correspondences In Radar 3D Point Clouds For Radar-Inertial Odometry 
+
+**Title (ZH)**: 雷达3D点云中的点对应学习及其在雷达-惯性里程计中的应用 
+
+**Authors**: Jan Michalczyk, Stephan Weiss, Jan Steinbrener  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.18580)  
+
+**Abstract**: Using 3D point clouds in odometry estimation in robotics often requires finding a set of correspondences between points in subsequent scans. While there are established methods for point clouds of sufficient quality, state-of-the-art still struggles when this quality drops. Thus, this paper presents a novel learning-based framework for predicting robust point correspondences between pairs of noisy, sparse and unstructured 3D point clouds from a light-weight, low-power, inexpensive, consumer-grade System-on-Chip (SoC) Frequency Modulated Continuous Wave (FMCW) radar sensor. Our network is based on the transformer architecture which allows leveraging the attention mechanism to discover pairs of points in consecutive scans with the greatest mutual affinity. The proposed network is trained in a self-supervised way using set-based multi-label classification cross-entropy loss, where the ground-truth set of matches is found by solving the Linear Sum Assignment (LSA) optimization problem, which avoids tedious hand annotation of the training data. Additionally, posing the loss calculation as multi-label classification permits supervising on point correspondences directly instead of on odometry error, which is not feasible for sparse and noisy data from the SoC radar we use. We evaluate our method with an open-source state-of-the-art Radar-Inertial Odometry (RIO) framework in real-world Unmanned Aerial Vehicle (UAV) flights and with the widely used public Coloradar dataset. Evaluation shows that the proposed method improves the position estimation accuracy by over 14 % and 19 % on average, respectively. The open source code and datasets can be found here: this https URL. 
+
+**Abstract (ZH)**: 基于轻量级低功耗低成本消费级SoC调频连续波雷达传感器的预测鲁棒点对应关系学习框架：应用于稀疏无序3D点云 odometer估计算法 
+
+---
+# Learning Approach to Efficient Vision-based Active Tracking of a Flying Target by an Unmanned Aerial Vehicle 
+
+**Title (ZH)**: 基于无人飞行器的高效视觉主动跟踪学习方法 
+
+**Authors**: Jagadeswara PKV Pothuri, Aditya Bhatt, Prajit KrisshnaKumar, Manaswin Oddiraju, Souma Chowdhury  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.18264)  
+
+**Abstract**: Autonomous tracking of flying aerial objects has important civilian and defense applications, ranging from search and rescue to counter-unmanned aerial systems (counter-UAS). Ground based tracking requires setting up infrastructure, could be range limited, and may not be feasible in remote areas, crowded cities or in dense vegetation areas. Vision based active tracking of aerial objects from another airborne vehicle, e.g., a chaser unmanned aerial vehicle (UAV), promises to fill this important gap, along with serving aerial coordination use cases. Vision-based active tracking by a UAV entails solving two coupled problems: 1) compute-efficient and accurate (target) object detection and target state estimation; and 2) maneuver decisions to ensure that the target remains in the field of view in the future time-steps and favorably positioned for continued detection. As a solution to the first problem, this paper presents a novel integration of standard deep learning based architectures with Kernelized Correlation Filter (KCF) to achieve compute-efficient object detection without compromising accuracy, unlike standalone learning or filtering approaches. The proposed perception framework is validated using a lab-scale setup. For the second problem, to obviate the linearity assumptions and background variations limiting effectiveness of the traditional controllers, we present the use of reinforcement learning to train a neuro-controller for fast computation of velocity maneuvers. New state space, action space and reward formulations are developed for this purpose, and training is performed in simulation using AirSim. The trained model is also tested in AirSim with respect to complex target maneuvers, and is found to outperform a baseline PID control in terms of tracking up-time and average distance maintained (from the target) during tracking. 
+
+**Abstract (ZH)**: 基于视觉的自主飞行目标主动跟踪：一种结合标准深度学习架构与核相关滤波器的方法 
+
+---
+# OC-SOP: Enhancing Vision-Based 3D Semantic Occupancy Prediction by Object-Centric Awareness 
+
+**Title (ZH)**: OC-SOP: 以对象为中心的 Awareness 提升基于视觉的三维语义占用预测 
+
+**Authors**: Helin Cao, Sven Behnke  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.18798)  
+
+**Abstract**: Autonomous driving perception faces significant challenges due to occlusions and incomplete scene data in the environment. To overcome these issues, the task of semantic occupancy prediction (SOP) is proposed, which aims to jointly infer both the geometry and semantic labels of a scene from images. However, conventional camera-based methods typically treat all categories equally and primarily rely on local features, leading to suboptimal predictions, especially for dynamic foreground objects. To address this, we propose Object-Centric SOP (OC-SOP), a framework that integrates high-level object-centric cues extracted via a detection branch into the semantic occupancy prediction pipeline. This object-centric integration significantly enhances the prediction accuracy for foreground objects and achieves state-of-the-art performance among all categories on SemanticKITTI. 
+
+**Abstract (ZH)**: 自主驾驶感知面临由于环境中的遮挡和不完整场景数据带来的显著挑战。为克服这些难题，提出了语义占据预测（SOP）任务，旨在从图像中联合推断场景的几何信息和语义标签。然而，传统的基于相机的方法通常平等对待所有类别，并主要依赖局部特征，导致预测效果不佳，特别是对于动态前景物体。为此，我们提出了一种基于对象的SOP（OC-SOP）框架，该框架通过检测分支提取高级对象中心线索并将其集成到语义占据预测管道中。这种对象中心的集成显著提高了前景物体的预测准确性，并在SemanticKITTI的所有类别中实现了最先进的性能。 
+
+---
+# SWA-SOP: Spatially-aware Window Attention for Semantic Occupancy Prediction in Autonomous Driving 
+
+**Title (ZH)**: 基于空间意识窗口注意机制的语义占用预测方法在自动驾驶中的应用 
+
+**Authors**: Helin Cao, Rafael Materla, Sven Behnke  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.18785)  
+
+**Abstract**: Perception systems in autonomous driving rely on sensors such as LiDAR and cameras to perceive the 3D environment. However, due to occlusions and data sparsity, these sensors often fail to capture complete information. Semantic Occupancy Prediction (SOP) addresses this challenge by inferring both occupancy and semantics of unobserved regions. Existing transformer-based SOP methods lack explicit modeling of spatial structure in attention computation, resulting in limited geometric awareness and poor performance in sparse or occluded areas. To this end, we propose Spatially-aware Window Attention (SWA), a novel mechanism that incorporates local spatial context into attention. SWA significantly improves scene completion and achieves state-of-the-art results on LiDAR-based SOP benchmarks. We further validate its generality by integrating SWA into a camera-based SOP pipeline, where it also yields consistent gains across modalities. 
+
+**Abstract (ZH)**: 自主驾驶中的感知系统依赖于LiDAR和摄像头等传感器来感知3D环境。然而，由于遮挡和数据稀疏性，这些传感器往往无法捕获完整信息。语义占据预测（SOP）通过推断未观察区域的占据和语义来应对这一挑战。现有的基于Transformer的SOP方法在注意力计算中缺乏显式的空域结构建模，导致在稀疏或遮挡区域的几何意识和性能有限。为此，我们提出了一种新的机制——空间aware窗口注意力（SWA），该机制将局部空域上下文融入注意力计算中。SWA显著提高了场景补全，并在LiDAR基于的SOP基准测试中取得了最先进的结果。我们进一步通过将SWA整合到基于摄像头的SOP管道中验证了其普适性，其在不同模态中也取得了一致的改进。 
+
+---
+# USVTrack: USV-Based 4D Radar-Camera Tracking Dataset for Autonomous Driving in Inland Waterways 
+
+**Title (ZH)**: USVTrack: 基于USV的 inland 水域 4D 雷达--camera 跟踪数据集用于自主驾驶 
+
+**Authors**: Shanliang Yao, Runwei Guan, Yi Ni, Sen Xu, Yong Yue, Xiaohui Zhu, Ryan Wen Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.18737)  
+
+**Abstract**: Object tracking in inland waterways plays a crucial role in safe and cost-effective applications, including waterborne transportation, sightseeing tours, environmental monitoring and surface rescue. Our Unmanned Surface Vehicle (USV), equipped with a 4D radar, a monocular camera, a GPS, and an IMU, delivers robust tracking capabilities in complex waterborne environments. By leveraging these sensors, our USV collected comprehensive object tracking data, which we present as USVTrack, the first 4D radar-camera tracking dataset tailored for autonomous driving in new generation waterborne transportation systems. Our USVTrack dataset presents rich scenarios, featuring diverse various waterways, varying times of day, and multiple weather and lighting conditions. Moreover, we present a simple but effective radar-camera matching method, termed RCM, which can be plugged into popular two-stage association trackers. Experimental results utilizing RCM demonstrate the effectiveness of the radar-camera matching in improving object tracking accuracy and reliability for autonomous driving in waterborne environments. The USVTrack dataset is public on this https URL. 
+
+**Abstract (ZH)**: 内河水域的目标跟踪对于安全和成本有效的应用至关重要，包括水运交通、旅游观光、环境监测和水面救援。我们的无人驾驶水面车辆（USV）配备4D雷达、单目相机、GPS和IMU，能够在复杂水运环境中提供稳健的目标跟踪能力。通过利用这些传感器，我们的USV收集了全面的目标跟踪数据，并作为USVTrack发布，这是首个针对新一代水运交通系统自主驾驶设计的4D雷达-相机跟踪数据集。USVTrack数据集提供了丰富的场景，包括多种类型的水道、不同的时间段以及多变的天气和光照条件。此外，我们提出了一种简单而有效的雷达-相机匹配方法，称为RCM，它可以与流行的两阶段关联跟踪器结合使用。利用RCM的实验结果表明，雷达-相机匹配在提高水运环境中自主驾驶的目标跟踪准确性和可靠性方面的有效性。USVTrack数据集已在此处 https://公开。 
+
+---
+# Including Semantic Information via Word Embeddings for Skeleton-based Action Recognition 
+
+**Title (ZH)**: 通过词嵌入纳入语义信息以实现基于骨架的动作识别 
+
+**Authors**: Dustin Aganian, Erik Franze, Markus Eisenbach, Horst-Michael Gross  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.18721)  
+
+**Abstract**: Effective human action recognition is widely used for cobots in Industry 4.0 to assist in assembly tasks. However, conventional skeleton-based methods often lose keypoint semantics, limiting their effectiveness in complex interactions. In this work, we introduce a novel approach to skeleton-based action recognition that enriches input representations by leveraging word embeddings to encode semantic information. Our method replaces one-hot encodings with semantic volumes, enabling the model to capture meaningful relationships between joints and objects. Through extensive experiments on multiple assembly datasets, we demonstrate that our approach significantly improves classification performance, and enhances generalization capabilities by simultaneously supporting different skeleton types and object classes. Our findings highlight the potential of incorporating semantic information to enhance skeleton-based action recognition in dynamic and diverse environments. 
+
+**Abstract (ZH)**: 基于单词嵌入的骨架语义增强动作识别在工业4.0协作机器人装配任务中的应用 
+
+---
+# Cross-modal State Space Modeling for Real-time RGB-thermal Wild Scene Semantic Segmentation 
+
+**Title (ZH)**: 跨模态状态空间建模实时RGB-热成像野生场景语义分割 
+
+**Authors**: Xiaodong Guo, Zi'ang Lin, Luwen Hu, Zhihong Deng, Tong Liu, Wujie Zhou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.17869)  
+
+**Abstract**: The integration of RGB and thermal data can significantly improve semantic segmentation performance in wild environments for field robots. Nevertheless, multi-source data processing (e.g. Transformer-based approaches) imposes significant computational overhead, presenting challenges for resource-constrained systems. To resolve this critical limitation, we introduced CM-SSM, an efficient RGB-thermal semantic segmentation architecture leveraging a cross-modal state space modeling (SSM) approach. Our framework comprises two key components. First, we introduced a cross-modal 2D-selective-scan (CM-SS2D) module to establish SSM between RGB and thermal modalities, which constructs cross-modal visual sequences and derives hidden state representations of one modality from the other. Second, we developed a cross-modal state space association (CM-SSA) module that effectively integrates global associations from CM-SS2D with local spatial features extracted through convolutional operations. In contrast with Transformer-based approaches, CM-SSM achieves linear computational complexity with respect to image resolution. Experimental results show that CM-SSM achieves state-of-the-art performance on the CART dataset with fewer parameters and lower computational cost. Further experiments on the PST900 dataset demonstrate its generalizability. Codes are available at this https URL. 
+
+**Abstract (ZH)**: RGB与热成像数据的整合可以在野外环境中显著提高场用机器人语义分割性能。然而，多源数据处理（例如基于Transformer的方法）会带来显著的计算开销，对资源受限系统构成挑战。为解决这一关键局限，我们提出了CM-SSM，这是一种基于跨模态状态空间建模的高效RGB-热成像语义分割架构。该框架包含两个关键组件。首先，我们引入了跨模态2D选择扫描（CM-SS2D）模块，以在RGB和热成像模态之间建立状态空间建模（SSM），构建跨模态视觉序列，并从另一种模态中推导出隐藏状态表示。其次，我们开发了跨模态状态空间关联（CM-SSA）模块，该模块有效地将CM-SS2D中的全局关联与通过卷积操作提取的局部空间特征结合起来。与基于Transformer的方法相比，CM-SSM的计算复杂度与图像分辨率成线性关系。实验结果表明，CM-SSM在CART数据集上具有更少的参数和更低的计算成本，达到了最先进的性能。进一步在PST900数据集上的实验展示了其普适性。代码已发布于此链接。 
+
+---
+# Sensitivity Analysis of Image Classification Models using Generalized Polynomial Chaos 
+
+**Title (ZH)**: 基于广义多项式混沌的图像分类模型灵敏性分析 
+
+**Authors**: Lukas Bahr, Lucas Poßner, Konstantin Weise, Sophie Gröger, Rüdiger Daub  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.18751)  
+
+**Abstract**: Integrating advanced communication protocols in production has accelerated the adoption of data-driven predictive quality methods, notably machine learning (ML) models. However, ML models in image classification often face significant uncertainties arising from model, data, and domain shifts. These uncertainties lead to overconfidence in the classification model's output. To better understand these models, sensitivity analysis can help to analyze the relative influence of input parameters on the output. This work investigates the sensitivity of image classification models used for predictive quality. We propose modeling the distributional domain shifts of inputs with random variables and quantifying their impact on the model's outputs using Sobol indices computed via generalized polynomial chaos (GPC). This approach is validated through a case study involving a welding defect classification problem, utilizing a fine-tuned ResNet18 model and an emblem classification model used in BMW Group production facilities. 
+
+**Abstract (ZH)**: 将先进的通信协议集成到生产中加速了数据驱动的预测质量方法的应用，尤其是机器学习模型。然而，图像分类中的机器学习模型经常会因为模型、数据和域移变等因素产生显著的不确定性。这些不确定性会导致分类模型输出过度自信。为了更好地理解这些模型，敏感性分析可以帮助分析输入参数对输出的相对影响。本研究调查了用于预测质量的图像分类模型的敏感性。我们提出使用随机变量建模输入的分布性域移变，并通过广义多项式混沌(GPC)计算的Sobol指数量化其对模型输出的影响。这一方法通过涉及焊接缺陷分类问题的案例研究得到了验证，该案例研究使用了 Fine-Tuned ResNet18 模型和 BMW 集团生产设施中使用的 emblem 分类模型。 
+
+---
+# MuseControlLite: Multifunctional Music Generation with Lightweight Conditioners 
+
+**Title (ZH)**: MuseControlLite：轻量级条件控制器的多功能音乐生成 
+
+**Authors**: Fang-Duo Tsai, Shih-Lun Wu, Weijaw Lee, Sheng-Ping Yang, Bo-Rui Chen, Hao-Chung Cheng, Yi-Hsuan Yang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.18729)  
+
+**Abstract**: We propose MuseControlLite, a lightweight mechanism designed to fine-tune text-to-music generation models for precise conditioning using various time-varying musical attributes and reference audio signals. The key finding is that positional embeddings, which have been seldom used by text-to-music generation models in the conditioner for text conditions, are critical when the condition of interest is a function of time. Using melody control as an example, our experiments show that simply adding rotary positional embeddings to the decoupled cross-attention layers increases control accuracy from 56.6% to 61.1%, while requiring 6.75 times fewer trainable parameters than state-of-the-art fine-tuning mechanisms, using the same pre-trained diffusion Transformer model of Stable Audio Open. We evaluate various forms of musical attribute control, audio inpainting, and audio outpainting, demonstrating improved controllability over MusicGen-Large and Stable Audio Open ControlNet at a significantly lower fine-tuning cost, with only 85M trainble parameters. Source code, model checkpoints, and demo examples are available at: https: //MuseControlLite.this http URL. 
+
+**Abstract (ZH)**: 我们提出MuseControlLite，这是一种轻量级机制，旨在使用各种时间变化的音乐属性和参考音频信号对文本到音乐生成模型进行微调以实现精确调节。关键发现是，立场嵌入在文本条件下的调节器中鲜有使用，但在目标条件与时间有关时，它们是至关重要的。以旋律控制为例，我们的实验表明，仅向解耦的交叉注意力层添加旋转立场嵌入可将控制准确性从56.6%提高到61.1%，同时使用的可训练参数数量比最先进的微调机制少6.75倍，使用相同的预训练扩散Transformer模型Stable Audio Open。我们评估了各种音乐属性控制、音频修补和音频扩展的形式，证明其在显著降低微调成本的情况下，相比MusicGen-Large和Stable Audio Open ControlNet具有更高的可控性，仅需85M可训练参数。相关源代码、模型检查点和示例可在以下链接获取：https://MuseControlLitethis http URL。 
+
+---
+# SIM-Net: A Multimodal Fusion Network Using Inferred 3D Object Shape Point Clouds from RGB Images for 2D Classification 
+
+**Title (ZH)**: SIM-Net:一种利用RGB图像推断出的3D物体形状点云进行多模态融合的网络，用于2D分类 
+
+**Authors**: Youcef Sklab, Hanane Ariouat, Eric Chenin, Edi Prifti, Jean-Daniel Zucker  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.18683)  
+
+**Abstract**: We introduce the Shape-Image Multimodal Network (SIM-Net), a novel 2D image classification architecture that integrates 3D point cloud representations inferred directly from RGB images. Our key contribution lies in a pixel-to-point transformation that converts 2D object masks into 3D point clouds, enabling the fusion of texture-based and geometric features for enhanced classification performance. SIM-Net is particularly well-suited for the classification of digitized herbarium specimens (a task made challenging by heterogeneous backgrounds), non-plant elements, and occlusions that compromise conventional image-based models. To address these issues, SIM-Net employs a segmentation-based preprocessing step to extract object masks prior to 3D point cloud generation. The architecture comprises a CNN encoder for 2D image features and a PointNet-based encoder for geometric features, which are fused into a unified latent space. Experimental evaluations on herbarium datasets demonstrate that SIM-Net consistently outperforms ResNet101, achieving gains of up to 9.9% in accuracy and 12.3% in F-score. It also surpasses several transformer-based state-of-the-art architectures, highlighting the benefits of incorporating 3D structural reasoning into 2D image classification tasks. 
+
+**Abstract (ZH)**: Shape-Image Multimodal Network (SIM-Net): 一种结合直接从RGB图像推断的3D点云表示的2D图像分类架构 
+
+---
+# Multi-Scale Spectral Attention Module-based Hyperspectral Segmentation in Autonomous Driving Scenarios 
+
+**Title (ZH)**: 基于多尺度谱 attention 模块的自主驾驶场景下 Hyperspectral 分割 
+
+**Authors**: Imad Ali Shah, Jiarong Li, Tim Brophy, Martin Glavin, Edward Jones, Enda Ward, Brian Deegan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.18682)  
+
+**Abstract**: Recent advances in autonomous driving (AD) have highlighted the potential of Hyperspectral Imaging (HSI) for enhanced environmental perception, particularly in challenging weather and lighting conditions. However, efficiently processing its high-dimensional spectral data remains a significant challenge. This paper introduces a Multi-scale Spectral Attention Module (MSAM) that enhances spectral feature extraction through three parallel 1D convolutions with varying kernel sizes between 1 to 11, coupled with an adaptive feature aggregation mechanism. By integrating MSAM into UNet's skip connections (UNet-SC), our proposed UNet-MSAM achieves significant improvements in semantic segmentation performance across multiple HSI datasets: HyKo-VIS v2, HSI-Drive v2, and Hyperspectral City v2. Our comprehensive experiments demonstrate that with minimal computational overhead (on average 0.02% in parameters and 0.82% GFLOPS), UNet-MSAM consistently outperforms UNet-SC, achieving average improvements of 3.61% in mean IoU and 3.80% in mF1 across the three datasets. Through extensive ablation studies, we have established that multi-scale kernel combinations perform better than single-scale configurations. These findings demonstrate the potential of HSI processing for AD and provide valuable insights into designing robust, multi-scale spectral feature extractors for real-world applications. 
+
+**Abstract (ZH)**: Recent advances in自主驾驶中的高光谱成像技术进展：多尺度光谱注意力模块在环境感知中的应用 
+
+---
+# Historical Report Guided Bi-modal Concurrent Learning for Pathology Report Generation 
+
+**Title (ZH)**: 历史报告引导的双模态并发学习病理报告生成 
+
+**Authors**: Ling Zhang, Boxiang Yun, Qingli Li, Yan Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.18658)  
+
+**Abstract**: Automated pathology report generation from Whole Slide Images (WSIs) faces two key challenges: (1) lack of semantic content in visual features and (2) inherent information redundancy in WSIs. To address these issues, we propose a novel Historical Report Guided \textbf{Bi}-modal Concurrent Learning Framework for Pathology Report \textbf{Gen}eration (BiGen) emulating pathologists' diagnostic reasoning, consisting of: (1) A knowledge retrieval mechanism to provide rich semantic content, which retrieves WSI-relevant knowledge from pre-built medical knowledge bank by matching high-attention patches and (2) A bi-modal concurrent learning strategy instantiated via a learnable visual token and a learnable textual token to dynamically extract key visual features and retrieved knowledge, where weight-shared layers enable cross-modal alignment between visual features and knowledge features. Our multi-modal decoder integrates both modals for comprehensive diagnostic reports generation. Experiments on the PathText (BRCA) dataset demonstrate our framework's superiority, achieving state-of-the-art performance with 7.4\% relative improvement in NLP metrics and 19.1\% enhancement in classification metrics for Her-2 prediction versus existing methods. Ablation studies validate the necessity of our proposed modules, highlighting our method's ability to provide WSI-relevant rich semantic content and suppress information redundancy in WSIs. Code is publicly available at this https URL. 
+
+**Abstract (ZH)**: 自动从整张切片图像(WSI)生成病理报告面临着两大关键挑战：（1）视觉特征缺乏语义内容和（2）WSI固有的信息冗余。为解决这些问题，我们提出了一种新的基于历史报告引导的双向并发学习框架用于病理报告生成（BiGen），该框架模拟病理学家的诊断推理，包括：（1）一种知识检索机制，通过匹配高关注区域来从预构建的医学知识库中检索WSI相关的知识，提供丰富的语义内容；（2）一种通过可学习的视觉标记和可学习的文本标记实现的双向并发学习策略，以动态提取关键视觉特征和检索到的知识，其中共享权重层能够实现视觉特征和知识特征之间的跨模态对齐。我们的多模态解码器结合两种模态生成全面的诊断报告。在PathText（BRCA）数据集上的实验展示了我们框架的优势，相对于现有方法，在NLP指标上实现了7.4%的相对改进，并在Her-2预测的分类指标上提高了19.1%。消融研究验证了我们提出模块的必要性，突显了我们方法在提供WSI相关丰富语义内容和抑制WSI中的信息冗余方面的能力。代码已在以下网址公开。 
+
+---
+# BulletGen: Improving 4D Reconstruction with Bullet-Time Generation 
+
+**Title (ZH)**: BulletGen: 通过子弹时间生成提高4D重建 
+
+**Authors**: Denys Rozumnyi, Jonathon Luiten, Numair Khan, Johannes Schönberger, Peter Kontschieder  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.18601)  
+
+**Abstract**: Transforming casually captured, monocular videos into fully immersive dynamic experiences is a highly ill-posed task, and comes with significant challenges, e.g., reconstructing unseen regions, and dealing with the ambiguity in monocular depth estimation. In this work we introduce BulletGen, an approach that takes advantage of generative models to correct errors and complete missing information in a Gaussian-based dynamic scene representation. This is done by aligning the output of a diffusion-based video generation model with the 4D reconstruction at a single frozen "bullet-time" step. The generated frames are then used to supervise the optimization of the 4D Gaussian model. Our method seamlessly blends generative content with both static and dynamic scene components, achieving state-of-the-art results on both novel-view synthesis, and 2D/3D tracking tasks. 
+
+**Abstract (ZH)**: 将随手拍摄的一目镜头视频转化为全沉浸式动态体验是一项高度病态的任务，伴随着重大的挑战，例如重建未见区域，以及处理单目深度估计的不确定性。本文介绍了BulletGen方法，该方法利用生成模型纠正错误并完成高斯基元动态场景表示中的缺失信息。通过将基于扩散的视频生成模型的输出与单一冻结的“子弹时间”步骤下的4D重建对齐完成这一任务，生成的帧随后用于监督4D高斯模型的优化。我们的方法无缝结合了生成内容与静态和动态场景组件，实现了在新颖视角合成和2D/3D跟踪任务上的最新成果。 
+
+---
+# A Deep Convolutional Neural Network-Based Novel Class Balancing for Imbalance Data Segmentation 
+
+**Title (ZH)**: 基于深度卷积神经网络的一种新型类别平衡方法在不平衡数据分割中的应用 
+
+**Authors**: Atifa Kalsoom, M.A. Iftikhar, Amjad Ali, Zubair Shah, Shidin Balakrishnan, Hazrat Ali  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.18474)  
+
+**Abstract**: Retinal fundus images provide valuable insights into the human eye's interior structure and crucial features, such as blood vessels, optic disk, macula, and fovea. However, accurate segmentation of retinal blood vessels can be challenging due to imbalanced data distribution and varying vessel thickness. In this paper, we propose BLCB-CNN, a novel pipeline based on deep learning and bi-level class balancing scheme to achieve vessel segmentation in retinal fundus images. The BLCB-CNN scheme uses a Convolutional Neural Network (CNN) architecture and an empirical approach to balance the distribution of pixels across vessel and non-vessel classes and within thin and thick vessels. Level-I is used for vessel/non-vessel balancing and Level-II is used for thick/thin vessel balancing. Additionally, pre-processing of the input retinal fundus image is performed by Global Contrast Normalization (GCN), Contrast Limited Adaptive Histogram Equalization (CLAHE), and gamma corrections to increase intensity uniformity as well as to enhance the contrast between vessels and background pixels. The resulting balanced dataset is used for classification-based segmentation of the retinal vascular tree. We evaluate the proposed scheme on standard retinal fundus images and achieve superior performance measures, including an area under the ROC curve of 98.23%, Accuracy of 96.22%, Sensitivity of 81.57%, and Specificity of 97.65%. We also demonstrate the method's efficacy through external cross-validation on STARE images, confirming its generalization ability. 
+
+**Abstract (ZH)**: 基于深度学习和分层类平衡方案的BLCB-CNN视网膜 fundus 图血管分割方法 
+
+---
+# Make It Efficient: Dynamic Sparse Attention for Autoregressive Image Generation 
+
+**Title (ZH)**: 提升效率：自回归图像生成中的动态稀疏注意力机制 
+
+**Authors**: Xunzhi Xiang, Qi Fan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.18226)  
+
+**Abstract**: Autoregressive conditional image generation models have emerged as a dominant paradigm in text-to-image synthesis. These methods typically convert images into one-dimensional token sequences and leverage the self-attention mechanism, which has achieved remarkable success in natural language processing, to capture long-range dependencies, model global context, and ensure semantic coherence. However, excessively long contexts during inference lead to significant memory overhead caused by KV-cache and computational delays. To alleviate these challenges, we systematically analyze how global semantics, spatial layouts, and fine-grained textures are formed during inference, and propose a novel training-free context optimization method called Adaptive Dynamic Sparse Attention (ADSA). Conceptually, ADSA dynamically identifies historical tokens crucial for maintaining local texture consistency and those essential for ensuring global semantic coherence, thereby efficiently streamlining attention computation. Additionally, we introduce a dynamic KV-cache update mechanism tailored for ADSA, reducing GPU memory consumption during inference by approximately $50\%$. Extensive qualitative and quantitative experiments demonstrate the effectiveness and superiority of our approach in terms of both generation quality and resource efficiency. 
+
+**Abstract (ZH)**: 自回归条件图像生成模型已成为文本到图像合成的主导 paradigm。这些方法通常将图像转换为一维令牌序列，并利用在自然语言处理中取得显著成功的自注意力机制来捕捉长距离依赖关系、建模全局上下文并确保语义连贯性。然而，在推理过程中过长的上下文导致由于 KV 缓存和计算延迟引起的显著内存开销。为缓解这些问题，我们系统地分析了推理过程中全局语义、空间布局和细粒度纹理是如何形成的，并提出了一种名为自适应动态稀疏注意力（ADSA）的新型无训练上下文优化方法。ADSA 概念上动态识别对保持局部纹理一致性至关重要的历史令牌以及对确保全局语义连贯性至关重要的令牌，从而有效地简化了注意力计算。此外，我们还引入了一种针对 ADSA 的动态 KV 缓存更新机制，在推理过程中将 GPU 内存消耗降低了约 50%。广泛的质量和定量试验表明，与生成质量和资源效率相关的方面，我们的方法都具有有效的优越性。 
+
+---
+# Cross-Architecture Knowledge Distillation (KD) for Retinal Fundus Image Anomaly Detection on NVIDIA Jetson Nano 
+
+**Title (ZH)**: 跨架构知识蒸馏（KD）在NVIDIA Jetson Nano上的视网膜 fundus 图像异常检测 
+
+**Authors**: Berk Yilmaz, Aniruddh Aiyengar  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.18220)  
+
+**Abstract**: Early and accurate identification of retinal ailments is crucial for averting ocular decline; however, access to dependable diagnostic devices is not often available in low-resourced settings. This project proposes to solve that by developing a lightweight, edge-device deployable disease classifier using cross-architecture knowledge distilling. We first train a high-capacity vision transformer (ViT) teacher model, pre-trained using I-JEPA self-supervised learning, to classify fundus images into four classes: Normal, Diabetic Retinopathy, Glaucoma, and Cataract. We kept an Internet of Things (IoT) focus when compressing to a CNN-based student model for deployment in resource-limited conditions, such as the NVIDIA Jetson Nano. This was accomplished using a novel framework which included a Partitioned Cross-Attention (PCA) projector, a Group-Wise Linear (GL) projector, and a multi-view robust training method. The teacher model has 97.4 percent more parameters than the student model, with it achieving 89 percent classification with a roughly 93 percent retention of the teacher model's diagnostic performance. The retention of clinical classification behavior supports our method's initial aim: compression of the ViT while retaining accuracy. Our work serves as an example of a scalable, AI-driven triage solution for retinal disorders in under-resourced areas. 
+
+**Abstract (ZH)**: 早期准确识别 retina 疾病对于预防视觉衰退至关重要；然而，在低资源环境中可靠的诊断设备往往难以获得。本项目旨在通过跨架构知识蒸馏开发轻量级边缘设备可部署的疾病分类器来解决这一问题。我们首先训练一个高容量的视觉变换器（ViT）教师模型，使用 I-JEPA 自监督学习进行预训练，将视网膜图像分类为四类：正常、糖尿病性视网膜病变、青光眼和白内障。在压缩至基于 CNN 的学生模型进行部署时，我们保持了对物联网 (IoT) 的关注，例如在 NVIDIA Jetson Nano 这类资源受限条件下。这通过一个创新框架实现，该框架包括分区交叉注意 (PCA) 投影器、组内线性 (GL) 投影器和多视图鲁棒训练方法。教师模型的参数比学生模型多 97.4 倍，而学生模型的分类准确率达到 89%，保留了教师模型诊断性能的约 93%。临床分类行为的保留支持了我们方法的初步目标：在保持准确性的前提下压缩 ViT。我们的工作为资源匮乏地区的眼底疾病提供了一种可扩展的、基于 AI 的分诊解决方案。 
+
+---
+# Deep Learning-based Alignment Measurement in Knee Radiographs 
+
+**Title (ZH)**: 基于深度学习的膝关节X线片对齐测量 
+
+**Authors**: Zhisen Hu, Dominic Cullen, Peter Thompson, David Johnson, Chang Bian, Aleksei Tiulpin, Timothy Cootes, Claudia Lindner  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.18209)  
+
+**Abstract**: Radiographic knee alignment (KA) measurement is important for predicting joint health and surgical outcomes after total knee replacement. Traditional methods for KA measurements are manual, time-consuming and require long-leg radiographs. This study proposes a deep learning-based method to measure KA in anteroposterior knee radiographs via automatically localized knee anatomical landmarks. Our method builds on hourglass networks and incorporates an attention gate structure to enhance robustness and focus on key anatomical features. To our knowledge, this is the first deep learning-based method to localize over 100 knee anatomical landmarks to fully outline the knee shape while integrating KA measurements on both pre-operative and post-operative images. It provides highly accurate and reliable anatomical varus/valgus KA measurements using the anatomical tibiofemoral angle, achieving mean absolute differences ~1° when compared to clinical ground truth measurements. Agreement between automated and clinical measurements was excellent pre-operatively (intra-class correlation coefficient (ICC) = 0.97) and good post-operatively (ICC = 0.86). Our findings demonstrate that KA assessment can be automated with high accuracy, creating opportunities for digitally enhanced clinical workflows. 
+
+**Abstract (ZH)**: 基于深度学习的前后位膝关节对线测量方法 
+
+---
+# STACT-Time: Spatio-Temporal Cross Attention for Cine Thyroid Ultrasound Time Series Classification 
+
+**Title (ZH)**: STACT-Time: 空间-时间交叉注意力在 cine 甲状腺超声时间序列分类中的应用 
+
+**Authors**: Irsyad Adam, Tengyue Zhang, Shrayes Raman, Zhuyu Qiu, Brandon Taraku, Hexiang Feng, Sile Wang, Ashwath Radhachandran, Shreeram Athreya, Vedrana Ivezic, Peipei Ping, Corey Arnold, William Speier  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.18172)  
+
+**Abstract**: Thyroid cancer is among the most common cancers in the United States. Thyroid nodules are frequently detected through ultrasound (US) imaging, and some require further evaluation via fine-needle aspiration (FNA) biopsy. Despite its effectiveness, FNA often leads to unnecessary biopsies of benign nodules, causing patient discomfort and anxiety. To address this, the American College of Radiology Thyroid Imaging Reporting and Data System (TI-RADS) has been developed to reduce benign biopsies. However, such systems are limited by interobserver variability. Recent deep learning approaches have sought to improve risk stratification, but they often fail to utilize the rich temporal and spatial context provided by US cine clips, which contain dynamic global information and surrounding structural changes across various views. In this work, we propose the Spatio-Temporal Cross Attention for Cine Thyroid Ultrasound Time Series Classification (STACT-Time) model, a novel representation learning framework that integrates imaging features from US cine clips with features from segmentation masks automatically generated by a pretrained model. By leveraging self-attention and cross-attention mechanisms, our model captures the rich temporal and spatial context of US cine clips while enhancing feature representation through segmentation-guided learning. Our model improves malignancy prediction compared to state-of-the-art models, achieving a cross-validation precision of 0.91 (plus or minus 0.02) and an F1 score of 0.89 (plus or minus 0.02). By reducing unnecessary biopsies of benign nodules while maintaining high sensitivity for malignancy detection, our model has the potential to enhance clinical decision-making and improve patient outcomes. 
+
+**Abstract (ZH)**: 甲状腺癌是美国最常见的癌症之一。通过超声（US）成像经常检测到甲状腺结节，其中一些需要通过细针穿刺抽吸（FNA）活检进一步评估。尽管FNA有效，但它常常导致良性结节的不必要的活检，给患者造成不适和焦虑。为了解决这一问题，美国放射学院开发了甲状腺成像报告和数据系统（TI-RADS）以减少不必要的活检。然而，这类系统受到观察者间变异性的限制。最近的深度学习方法试图改进风险分级，但它们往往未能充分利用US动画剪辑所提供的丰富的时间和空间上下文，这些剪辑包含了各种视角下动态的全局信息和周围结构的变化。在本工作中，我们提出了一种新型表示学习框架——基于US动画剪辑的空间-时间交叉注意力甲状腺超声时间序列分类模型（STACT-Time），该模型将US动画剪辑的成像特征与预先训练模型自动生成的分割掩码特征相结合。利用自我注意力和交叉注意力机制，我们的模型捕捉了US动画剪辑丰富的时空上下文并通过对分割指导的学习增强特征表示。与最先进的模型相比，我们的模型提高了恶性预测的准确性，实现交叉验证精确度0.91（±0.02）和F1分数0.89（±0.02）。通过减少不必要的良性结节活检同时保持对恶性检测的高敏感性，我们的模型有潜力增强临床决策并改善患者预后。 
+
+---
+# Auto-Regressive Surface Cutting 
+
+**Title (ZH)**: 自回归表面切割 
+
+**Authors**: Yang Li, Victor Cheung, Xinhai Liu, Yuguang Chen, Zhongjin Luo, Biwen Lei, Haohan Weng, Zibo Zhao, Jingwei Huang, Zhuo Chen, Chunchao Guo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.18017)  
+
+**Abstract**: Surface cutting is a fundamental task in computer graphics, with applications in UV parameterization, texture mapping, and mesh decomposition. However, existing methods often produce technically valid but overly fragmented atlases that lack semantic coherence. We introduce SeamGPT, an auto-regressive model that generates cutting seams by mimicking professional workflows. Our key technical innovation lies in formulating surface cutting as a next token prediction task: sample point clouds on mesh vertices and edges, encode them as shape conditions, and employ a GPT-style transformer to sequentially predict seam segments with quantized 3D coordinates. Our approach achieves exceptional performance on UV unwrapping benchmarks containing both manifold and non-manifold meshes, including artist-created, and 3D-scanned models. In addition, it enhances existing 3D segmentation tools by providing clean boundaries for part decomposition. 
+
+**Abstract (ZH)**: 表面切割是计算机图形学的基本任务，广泛应用于UV参数化、纹理映射和网格分解。然而，现有方法往往生成技术上有效但过度碎片化的马赛克图，缺乏语义连贯性。我们引入了SeamGPT，这是一种自回归模型，通过模仿专业工作流程生成切割缝合线。我们的关键技术创新在于将表面切割形式化为下一个标记预测任务：在网格顶点和边缘采样点云，将其编码为形状条件，并使用类似GPT的变压器顺序预测带有量化3D坐标的缝合段。我们的方法在包含流形和非流形网格的UV展开基准测试中表现出色，包括艺术家创作的和3D扫描的模型。此外，它增强了现有的3D分割工具，提供了清晰的部件分解边界。 
+
+---
+# Feedback Driven Multi Stereo Vision System for Real-Time Event Analysis 
+
+**Title (ZH)**: 实时事件分析驱动的反馈多视图立体视觉系统 
+
+**Authors**: Mohamed Benkedadra, Matei Mancas, Sidi Ahmed Mahmoudi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.17910)  
+
+**Abstract**: 2D cameras are often used in interactive systems. Other systems like gaming consoles provide more powerful 3D cameras for short range depth sensing. Overall, these cameras are not reliable in large, complex environments. In this work, we propose a 3D stereo vision based pipeline for interactive systems, that is able to handle both ordinary and sensitive applications, through robust scene understanding. We explore the fusion of multiple 3D cameras to do full scene reconstruction, which allows for preforming a wide range of tasks, like event recognition, subject tracking, and notification. Using possible feedback approaches, the system can receive data from the subjects present in the environment, to learn to make better decisions, or to adapt to completely new environments. Throughout the paper, we introduce the pipeline and explain our preliminary experimentation and results. Finally, we draw the roadmap for the next steps that need to be taken, in order to get this pipeline into production 
+
+**Abstract (ZH)**: 基于3D立体视觉的交互系统pipeline及其在广泛应用场景中的鲁棒场景理解与融合方法 
+
+---
+# StainPIDR: A Pathological Image Decouplingand Reconstruction Method for StainNormalization Based on Color VectorQuantization and Structure Restaining 
+
+**Title (ZH)**: StainPIDR：基于颜色向量量化和结构复染的病理图像去染色解耦与重构方法 
+
+**Authors**: Zheng Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.17879)  
+
+**Abstract**: The color appearance of a pathological image is highly related to the imaging protocols, the proportion of different dyes, and the scanning devices. Computer-aided diagnostic systems may deteriorate when facing these color-variant pathological images. In this work, we propose a stain normalization method called StainPIDR. We try to eliminate this color discrepancy by decoupling the image into structure features and vector-quantized color features, restaining the structure features with the target color features, and decoding the stained structure features to normalized pathological images. We assume that color features decoupled by different images with the same color should be exactly the same. Under this assumption, we train a fixed color vector codebook to which the decoupled color features will map. In the restaining part, we utilize the cross-attention mechanism to efficiently stain the structure features. As the target color (decoupled from a selected template image) will also affect the performance of stain normalization, we further design a template image selection algorithm to select a template from a given dataset. In our extensive experiments, we validate the effectiveness of StainPIDR and the template image selection algorithm. All the results show that our method can perform well in the stain normalization task. The code of StainPIDR will be publicly available later. 
+
+**Abstract (ZH)**: 病理图像的颜色表现与其成像协议、不同染料的比例和扫描设备高度相关。面对这些颜色变异的病理图像，计算机辅助诊断系统可能会退化。在本工作中，我们提出了一种称为StainPIDR的染色正则化方法。我们通过将图像解耦为结构特征和向量量化颜色特征，使用目标颜色特征重新染色结构特征，并解码染色后的结构特征生成标准化病理图像，来消除这种颜色差异。我们假设相同颜色的不同图像解耦出的颜色特征应该是完全相同的。在此假设下，我们训练一个固定的彩色矢量码本，解耦出的颜色特征将映射到该码本上。在重新染色部分，我们利用交叉注意力机制高效地重新染色结构特征。由于目标颜色（来自选定模板图像解耦获得）也会影响染色正则化的性能，我们进一步设计了一种模板图像选择算法，从给定的数据集中选择模板图像。在广泛实验中，我们验证了StainPIDR方法及其模板图像选择算法的有效性。所有结果表明，我们的方法在染色正则化任务中表现良好。StainPIDR的代码将在后续公开。 
+
+---
+# RLRC: Reinforcement Learning-based Recovery for Compressed Vision-Language-Action Models 
+
+**Title (ZH)**: 基于强化学习的压缩视觉-语言-行动模型恢复方法 
+
+**Authors**: Yuxuan Chen, Xiao Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.17639)  
+
+**Abstract**: Vision-Language-Action models (VLA) have demonstrated remarkable capabilities and promising potential in solving complex robotic manipulation tasks. However, their substantial parameter sizes and high inference latency pose significant challenges for real-world deployment, particularly on resource-constrained robotic platforms. To address this issue, we begin by conducting an extensive empirical study to explore the effectiveness of model compression techniques when applied to VLAs. Building on the insights gained from these preliminary experiments, we propose RLRC, a three-stage recovery method for compressed VLAs, including structured pruning, performance recovery based on SFT and RL, and further quantization. RLRC achieves up to an 8x reduction in memory usage and a 2.3x improvement in inference throughput, while maintaining or even surpassing the original VLA's task success rate. Extensive experiments show that RLRC consistently outperforms existing compression baselines, demonstrating strong potential for on-device deployment of VLAs. Project website: this https URL 
+
+**Abstract (ZH)**: Vision-Language-Action模型（VLA）在解决复杂机器人 manipulation 任务方面展现了卓越的能力和广阔的应用潜力。然而，其庞大的参数量和高的推理延迟为其实用化部署，特别是在资源受限的机器人平台上，带来了重大挑战。为解决这一问题，我们首先进行了广泛的经验性研究，探讨在VLA中应用模型压缩技术的有效性。基于这些初步实验获得的洞见，我们提出了一种三阶段恢复方法RLRC，包括结构化修剪、基于SFT和RL的性能恢复以及进一步的量化。RLRC最高可实现8倍的内存使用量减少和2.3倍的推理吞吐量提升，并保持或超越了原始VLA的任务成功率。大量实验表明，RLRC在现有压缩基线中表现更优，展示了在设备上部署VLA的强大潜力。项目网站: this https URL。 
+
+---
+# SynDaCaTE: A Synthetic Dataset For Evaluating Part-Whole Hierarchical Inference 
+
+**Title (ZH)**: SynDaCaTE: 一个用于评估部分-整体层次推理的合成数据集 
+
+**Authors**: Jake Levi, Mark van der Wilk  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.17558)  
+
+**Abstract**: Learning to infer object representations, and in particular part-whole hierarchies, has been the focus of extensive research in computer vision, in pursuit of improving data efficiency, systematic generalisation, and robustness. Models which are \emph{designed} to infer part-whole hierarchies, often referred to as capsule networks, are typically trained end-to-end on supervised tasks such as object classification, in which case it is difficult to evaluate whether such a model \emph{actually} learns to infer part-whole hierarchies, as claimed. To address this difficulty, we present a SYNthetic DAtaset for CApsule Testing and Evaluation, abbreviated as SynDaCaTE, and establish its utility by (1) demonstrating the precise bottleneck in a prominent existing capsule model, and (2) demonstrating that permutation-equivariant self-attention is highly effective for parts-to-wholes inference, which motivates future directions for designing effective inductive biases for computer vision. 
+
+**Abstract (ZH)**: 合成数据集用于胶囊网络测试与评估：SynDaCaTE 
+
+---
+# Trans${^2}$-CBCT: A Dual-Transformer Framework for Sparse-View CBCT Reconstruction 
+
+**Title (ZH)**: Trans${^2}$-CBCT: 一种用于稀视角CBCT重建的双变换器框架 
+
+**Authors**: Minmin Yang, Huantao Ren, Senem Velipasalar  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.17425)  
+
+**Abstract**: Cone-beam computed tomography (CBCT) using only a few X-ray projection views enables faster scans with lower radiation dose, but the resulting severe under-sampling causes strong artifacts and poor spatial coverage. We address these challenges in a unified framework. First, we replace conventional UNet/ResNet encoders with TransUNet, a hybrid CNN-Transformer model. Convolutional layers capture local details, while self-attention layers enhance global context. We adapt TransUNet to CBCT by combining multi-scale features, querying view-specific features per 3D point, and adding a lightweight attenuation-prediction head. This yields Trans-CBCT, which surpasses prior baselines by 1.17 dB PSNR and 0.0163 SSIM on the LUNA16 dataset with six views. Second, we introduce a neighbor-aware Point Transformer to enforce volumetric coherence. This module uses 3D positional encoding and attention over k-nearest neighbors to improve spatial consistency. The resulting model, Trans$^2$-CBCT, provides an additional gain of 0.63 dB PSNR and 0.0117 SSIM. Experiments on LUNA16 and ToothFairy show consistent gains from six to ten views, validating the effectiveness of combining CNN-Transformer features with point-based geometry reasoning for sparse-view CBCT reconstruction. 
+
+**Abstract (ZH)**: 仅用少量X射线投影视图的锥束计算机断层摄影（CBCT）能够实现更快的扫描并降低辐射剂量，但由于严重的欠采样导致强烈的伪影和较差的空间覆盖率。我们在统一框架中解决这些挑战。首先，我们用混合CNN-Transformer模型TransUNet替代传统的UNet/ResNet编码器。卷积层捕捉局部细节，而自我注意力层增强全局上下文。我们将TransUNet适应CBCT，通过结合多尺度特征、每个3D点查询视图特定特征以及添加一个轻量级的衰减预测头部。这产生Trans-CBCT，该模型在六视图LUNA16数据集上优于先前基线1.17 dB PSNR和0.0163 SSIM。其次，我们引入一种邻域意识点变换器以强化体素一致性。该模块使用3D位置编码和k最近邻注意力增强空间一致性。由此产生的模型Trans²-CBCT提供了额外的增益，分别为0.63 dB PSNR和0.0117 SSIM。实验表明，在LUNA16和ToothFairy数据集上从六视图到十视图都能获得一致的增益，验证了结合CNN-Transformer特征与基于点的几何推理对稀视角CBCT重建的有效性。 
+
+---
+# From Drawings to Decisions: A Hybrid Vision-Language Framework for Parsing 2D Engineering Drawings into Structured Manufacturing Knowledge 
+
+**Title (ZH)**: 从图纸到决策：一种解析二维工程图纸为结构化制造知识的视觉-语言混合框架 
+
+**Authors**: Muhammad Tayyab Khan, Lequn Chen, Zane Yong, Jun Ming Tan, Wenhe Feng, Seung Ki Moon  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.17374)  
+
+**Abstract**: Efficient and accurate extraction of key information from 2D engineering drawings is essential for advancing digital manufacturing workflows. Such information includes geometric dimensioning and tolerancing (GD&T), measures, material specifications, and textual annotations. Manual extraction is slow and labor-intensive, while generic OCR models often fail due to complex layouts, engineering symbols, and rotated text, leading to incomplete and unreliable outputs. These limitations result in incomplete and unreliable outputs. To address these challenges, we propose a hybrid vision-language framework that integrates a rotation-aware object detection model (YOLOv11-obb) with a transformer-based vision-language parser. Our structured pipeline applies YOLOv11-OBB to localize annotations and extract oriented bounding box (OBB) patches, which are then parsed into structured outputs using a fine-tuned, lightweight vision-language model (VLM). We curate a dataset of 1,367 2D mechanical drawings annotated across nine key categories. YOLOv11-OBB is trained on this dataset to detect OBBs and extract annotation patches. These are parsed using two open-source VLMs: Donut and Florence-2. Both models are lightweight and well-suited for specialized industrial tasks under limited computational overhead. Following fine-tuning of both models on the curated dataset of image patches paired with structured annotation labels, a comparative experiment is conducted to evaluate parsing performance across four key metrics. Donut outperforms Florence-2, achieving 88.5% precision, 99.2% recall, and a 93.5% F1-score, with a hallucination rate of 11.5%. Finally, a case study demonstrates how the extracted structured information supports downstream manufacturing tasks such as process and tool selection, showcasing the practical utility of the proposed framework in modernizing 2D drawing interpretation. 
+
+**Abstract (ZH)**: 高效的2D工程图中关键信息的提取对于推动数字化制造流程至关重要。这类信息包括几何尺寸和公差（GD&T）、度量、材料规格以及文本注释。手动提取速度慢且劳动密集，而通用的OCR模型由于复杂布局、工程符号和旋转文本往往失效，导致不完整且不可靠的输出。为了解决这些挑战，我们提出了一种结合旋转感知对象检测模型（YOLOv11-obb）与变压器基元语视觉解析器的混合视觉-语言框架。我们的结构化管道使用YOLOv11-OBB定位注释并提取定向边界框（OBB）补丁，随后使用微调的轻量级视觉-语言模型（VLM）对这些补丁进行解析，生成结构化输出。我们收集了一个包含1,367张2D机械图纸的数据集，并标记了九个关键类别。YOLOv11-OBB在该数据集上进行训练以检测OBB和提取注释补丁。这些补丁使用两个开源VLM（Donut和Florence-2）进行解析。这两种模型都很轻量且适合在有限的计算开销下执行专门的工业任务。经过在标记了结构化注释标签的图像补丁数据集上微调这两种模型后，我们进行了一项比较实验以评估它们在四项关键指标上的解析性能。Donut的表现优于Florence-2，实现88.5%的精确率、99.2%的召回率以及93.5%的F1分数，并有11.5%的幻觉率。最后，案例研究展示了提取到的结构化信息如何支持后续的制造任务，如工艺和工具选择，从而突显了所提出框架在现代化工图纸解读中的实际用途。 
+
+---
+# RadarSeq: A Temporal Vision Framework for User Churn Prediction via Radar Chart Sequences 
+
+**Title (ZH)**: RadarSeq：基于雷达图序列的用户流失预测时间视觉框架 
+
+**Authors**: Sina Najafi, M. Hadi Sepanj, Fahimeh Jafari  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.17325)  
+
+**Abstract**: Predicting user churn in non-subscription gig platforms, where disengagement is implicit, poses unique challenges due to the absence of explicit labels and the dynamic nature of user behavior. Existing methods often rely on aggregated snapshots or static visual representations, which obscure temporal cues critical for early detection. In this work, we propose a temporally-aware computer vision framework that models user behavioral patterns as a sequence of radar chart images, each encoding day-level behavioral features. By integrating a pretrained CNN encoder with a bidirectional LSTM, our architecture captures both spatial and temporal patterns underlying churn behavior. Extensive experiments on a large real-world dataset demonstrate that our method outperforms classical models and ViT-based radar chart baselines, yielding gains of 17.7 in F1 score, 29.4 in precision, and 16.1 in AUC, along with improved interpretability. The framework's modular design, explainability tools, and efficient deployment characteristics make it suitable for large-scale churn modeling in dynamic gig-economy platforms. 
+
+**Abstract (ZH)**: 基于雷达图的时空aware计算机视觉框架在非订阅制零工平台用户流失预测中的应用 
+
+---
+# Theoretically Unmasking Inference Attacks Against LDP-Protected Clients in Federated Vision Models 
+
+**Title (ZH)**: 理论上揭示联邦视觉模型中LDP保护客户端的推理攻击 
+
+**Authors**: Quan Nguyen, Minh N. Vu, Truc Nguyen, My T. Thai  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.17292)  
+
+**Abstract**: Federated Learning enables collaborative learning among clients via a coordinating server while avoiding direct data sharing, offering a perceived solution to preserve privacy. However, recent studies on Membership Inference Attacks (MIAs) have challenged this notion, showing high success rates against unprotected training data. While local differential privacy (LDP) is widely regarded as a gold standard for privacy protection in data analysis, most studies on MIAs either neglect LDP or fail to provide theoretical guarantees for attack success rates against LDP-protected data. To address this gap, we derive theoretical lower bounds for the success rates of low-polynomial time MIAs that exploit vulnerabilities in fully connected or self-attention layers. We establish that even when data are protected by LDP, privacy risks persist, depending on the privacy budget. Practical evaluations on federated vision models confirm considerable privacy risks, revealing that the noise required to mitigate these attacks significantly degrades models' utility. 
+
+**Abstract (ZH)**: 联邦学习通过协调服务器使客户端能够进行协作学习，同时避免直接数据共享，提供了一种保护隐私的潜在解决方案。然而，近期关于成员推理攻击（MIAs）的研究对此观点提出了挑战，显示出对未受保护的训练数据的成功率很高。尽管局部差分隐私（LDP）被视为数据分析中隐私保护的金标准，但大多数MIAs的研究要么忽视LDP，要么未能为保护在LDP下的数据的攻击成功率提供理论保证。为解决这一问题，我们推导出利用全连接或自我注意力层漏洞的低多项式时间MIAs的成功率的理论下界。我们确立了即使数据受到LDP保护，隐私风险仍然存在，这取决于隐私预算。实证评估发现，在联邦视觉模型中存在显著的隐私风险，表明缓解这些攻击所需的噪声显著降低了模型的实用性。 
+
+---
+# CF-VLM:CounterFactual Vision-Language Fine-tuning 
+
+**Title (ZH)**: CF-VLM：反事实视觉-语言微调 
+
+**Authors**: Jusheng Zhang, Kaitong Cai, Yijia Fan, Jian Wang, Keze Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.17267)  
+
+**Abstract**: Recent advances in vision-language models (VLMs) have greatly improved cross-modal semantic understanding, yet significant limitations remain in fine-grained discrimination and deep causal reasoning tasks. Existing VLMs often rely on superficial statistical correlations, lacking the ability to capture the underlying causal logic between visual and textual content. To address this, we propose CounterFactual Vision-Language Fine-tuning (CF-VLM), a novel framework that enhances the causal reasoning capabilities of VLMs through the targeted use of counterfactual samples. CF-VLM introduces three complementary training objectives: maintaining foundational cross-modal alignment, reinforcing the uniqueness and stability of factual scene representations against coherent counterfactuals, and sharpening the model's sensitivity to minimal but critical causal edits. Extensive experiments demonstrate that CF-VLM consistently outperforms strong baselines and state-of-the-art methods on compositional reasoning and generalization benchmarks. Furthermore, it shows promise in mitigating visual hallucinations, indicating improved factual consistency. Our CF-VLM provides a robust foundation for deploying VLMs in high-stakes, real-world scenarios requiring reliable reasoning and interpretability. 
+
+**Abstract (ZH)**: Recent Advances in Vision-Language Models: Addressing Limitations Through Counterfactual Vision-Language Fine-tuning 
+
+---
+# AI to Identify Strain-sensitive Regions of the Optic Nerve Head Linked to Functional Loss in Glaucoma 
+
+**Title (ZH)**: AI识别与视神经头结构变化相关的眼压功能损失的敏感区域 
+
+**Authors**: Thanadet Chuangsuwanich, Monisha E. Nongpiur, Fabian A. Braeu, Tin A. Tun, Alexandre Thiery, Shamira Perera, Ching Lin Ho, Martin Buist, George Barbastathis, Tin Aung, Michaël J.A. Girard  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.17262)  
+
+**Abstract**: Objective: (1) To assess whether ONH biomechanics improves prediction of three progressive visual field loss patterns in glaucoma; (2) to use explainable AI to identify strain-sensitive ONH regions contributing to these predictions.
+Methods: We recruited 237 glaucoma subjects. The ONH of one eye was imaged under two conditions: (1) primary gaze and (2) primary gaze with IOP elevated to ~35 mmHg via ophthalmo-dynamometry. Glaucoma experts classified the subjects into four categories based on the presence of specific visual field defects: (1) superior nasal step (N=26), (2) superior partial arcuate (N=62), (3) full superior hemifield defect (N=25), and (4) other/non-specific defects (N=124). Automatic ONH tissue segmentation and digital volume correlation were used to compute IOP-induced neural tissue and lamina cribrosa (LC) strains. Biomechanical and structural features were input to a Geometric Deep Learning model. Three classification tasks were performed to detect: (1) superior nasal step, (2) superior partial arcuate, (3) full superior hemifield defect. For each task, the data were split into 80% training and 20% testing sets. Area under the curve (AUC) was used to assess performance. Explainable AI techniques were employed to highlight the ONH regions most critical to each classification.
+Results: Models achieved high AUCs of 0.77-0.88, showing that ONH strain improved VF loss prediction beyond morphology alone. The inferior and inferotemporal rim were identified as key strain-sensitive regions, contributing most to visual field loss prediction and showing progressive expansion with increasing disease severity.
+Conclusion and Relevance: ONH strain enhances prediction of glaucomatous VF loss patterns. Neuroretinal rim, rather than the LC, was the most critical region contributing to model predictions. 
+
+**Abstract (ZH)**: 目标：（1）评估视神经头（ONH）生物力学是否能提高对原发性开角型青光眼中三种渐进性视野损失模式的预测能力；（2）使用可解释的AI技术识别对这些预测贡献最大的敏感应力区域。
+
+方法：我们招募了237名青光眼患者。在一眼中，在两种条件下成像ONH：（1）正视；（2）正视并通过眼动力学将眼内压（IOP）升高至约35 mmHg。青光眼专家根据特定视野缺陷的存在将受试者分为四类：（1）鼻上方阶梯（N=26），（2）鼻上部分弓状（N=62），（3）全鼻上半视野缺损（N=25），（4）其他/非特异性缺陷（N=124）。自动ONH组织分割和数字体积关联用于计算IOP诱导的神经组织和筛板（LC）应变。生物力学和结构特征被输入几何深度学习模型。进行了三项分类任务以检测：（1）鼻上方阶梯，（2）鼻上部分弓状，（3）全鼻上半视野缺损。每项任务的数据划分为80%训练集和20%测试集。使用曲线下面积（AUC）评估性能。使用可解释的AI技术突出显示对每个分类至关重要的ONH区域。
+
+结果：模型获得了0.77-0.88的高AUC，表明ONH应变在单独依靠形态学之外增强了视野损失预测。下部和下颞部边缘被确认为关键的应变敏感区域，在视野损失预测中贡献最大，并随着疾病严重程度增加而逐渐扩大。
+
+结论和意义：ONH应变增强了对原发性开角型青光眼中视野损失模式的预测。神经视网膜边缘而非筛板是模型预测中贡献最大的关键区域。 
+
+---
+# PCaM: A Progressive Focus Attention-Based Information Fusion Method for Improving Vision Transformer Domain Adaptation 
+
+**Title (ZH)**: PCaM: 一种改进视觉变换器领域适应性的渐进聚焦注意力信息融合方法 
+
+**Authors**: Zelin Zang, Fei Wang, Liangyu Li, Jinlin Wu, Chunshui Zhao, Zhen Lei, Baigui Sun  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.17232)  
+
+**Abstract**: Unsupervised Domain Adaptation (UDA) aims to transfer knowledge from a labeled source domain to an unlabeled target domain. Recent UDA methods based on Vision Transformers (ViTs) have achieved strong performance through attention-based feature alignment. However, we identify a key limitation: foreground object mismatch, where the discrepancy in foreground object size and spatial distribution across domains weakens attention consistency and hampers effective domain alignment. To address this issue, we propose the Progressive Focus Cross-Attention Mechanism (PCaM), which progressively filters out background information during cross-attention, allowing the model to focus on and fuse discriminative foreground semantics across domains. We further introduce an attentional guidance loss that explicitly directs attention toward task-relevant regions, enhancing cross-domain attention consistency. PCaM is lightweight, architecture-agnostic, and easy to integrate into existing ViT-based UDA pipelines. Extensive experiments on Office-Home, DomainNet, VisDA-2017, and remote sensing datasets demonstrate that PCaM significantly improves adaptation performance and achieves new state-of-the-art results, validating the effectiveness of attention-guided foreground fusion for domain adaptation. 
+
+**Abstract (ZH)**: 无监督域适应（UDA）旨在将标记的源域知识转移至未标记的目标域。基于视觉变换器（ViTs）的无监督域适应方法通过基于注意力的特征对齐取得了强大的性能。然而，我们发现一个关键限制：前景对象不匹配，不同域之间前景对象大小和空间分布的差异削弱了注意力一致性，阻碍了有效的域对齐。为了解决这一问题，我们提出了渐进聚焦交叉注意力机制（PCaM），该机制在交叉注意力过程中逐步过滤背景信息，使模型能够聚焦并融合跨域的区分性前景语义。此外，我们引入了一种注意力指导损失，明确地引导注意力关注与任务相关的区域，增强跨域注意力一致性。PCaM 轻量级、架构无关且易于集成到现有的基于 ViT 的UDA流水线中。在Office-Home、DomainNet、VisDA-2017和遥感数据集上的广泛实验表明，PCaM 显著提高了适应性能，并取得了新的最佳结果，验证了注意力引导前景融合在域适应中的有效性。 
+
+---
