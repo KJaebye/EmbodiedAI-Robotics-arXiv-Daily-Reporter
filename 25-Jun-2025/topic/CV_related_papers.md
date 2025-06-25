@@ -1,0 +1,367 @@
+# Systematic Comparison of Projection Methods for Monocular 3D Human Pose Estimation on Fisheye Images 
+
+**Title (ZH)**: 鱼眼图像中单目3D人体姿态估计的投影方法系统比较 
+
+**Authors**: Stephanie Käs, Sven Peter, Henrik Thillmann, Anton Burenko, David Benjamin Adrian, Dennis Mack, Timm Linder, Bastian Leibe  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.19747)  
+
+**Abstract**: Fisheye cameras offer robots the ability to capture human movements across a wider field of view (FOV) than standard pinhole cameras, making them particularly useful for applications in human-robot interaction and automotive contexts. However, accurately detecting human poses in fisheye images is challenging due to the curved distortions inherent to fisheye optics. While various methods for undistorting fisheye images have been proposed, their effectiveness and limitations for poses that cover a wide FOV has not been systematically evaluated in the context of absolute human pose estimation from monocular fisheye images. To address this gap, we evaluate the impact of pinhole, equidistant and double sphere camera models, as well as cylindrical projection methods, on 3D human pose estimation accuracy. We find that in close-up scenarios, pinhole projection is inadequate, and the optimal projection method varies with the FOV covered by the human pose. The usage of advanced fisheye models like the double sphere model significantly enhances 3D human pose estimation accuracy. We propose a heuristic for selecting the appropriate projection model based on the detection bounding box to enhance prediction quality. Additionally, we introduce and evaluate on our novel dataset FISHnCHIPS, which features 3D human skeleton annotations in fisheye images, including images from unconventional angles, such as extreme close-ups, ground-mounted cameras, and wide-FOV poses, available at: this https URL 
+
+**Abstract (ZH)**: 鱼眼相机为机器人提供了捕捉人类动作的 ability，其视野远大于标准针孔相机，特别是在人类-机器人交互和汽车领域具有重要作用。然而，由于鱼眼光学固有的曲率失真，准确检测鱼眼图像中的人体姿态具有挑战性。虽然已经提出了多种鱼眼图像去畸变的方法，但在单目鱼眼图像绝对人体姿态估计中的有效性及其局限性尚未系统性评估。为解决这一问题，我们评估了针孔、等距和双球相机模型，以及圆柱投影方法对三维人体姿态估计精度的影响。我们发现，在近距离场景中，针孔投影不足，最佳投影方法随人体姿态覆盖的视野变化而变化。使用如双球模型等高级鱼眼模型显著提高了三维人体姿态估计的精度。我们提出了一种基于检测边界框选择适当投影模型的启发式方法，以提高预测质量。此外，我们引入并评估了我们的新型数据集FISHnCHIPS，该数据集包含鱼眼图像中的人体骨架标注，包括极近距离拍摄、地埋相机拍摄和大视野姿态等非常规角度的图像。地址如下：this https URL。 
+
+---
+# EvDetMAV: Generalized MAV Detection from Moving Event Cameras 
+
+**Title (ZH)**: EvDetMAV: 从移动事件相机中的一般化MAV检测 
+
+**Authors**: Yin Zhang, Zian Ning, Xiaoyu Zhang, Shiliang Guo, Peidong Liu, Shiyu Zhao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.19416)  
+
+**Abstract**: Existing micro aerial vehicle (MAV) detection methods mainly rely on the target's appearance features in RGB images, whose diversity makes it difficult to achieve generalized MAV detection. We notice that different types of MAVs share the same distinctive features in event streams due to their high-speed rotating propellers, which are hard to see in RGB images. This paper studies how to detect different types of MAVs from an event camera by fully exploiting the features of propellers in the original event stream. The proposed method consists of three modules to extract the salient and spatio-temporal features of the propellers while filtering out noise from background objects and camera motion. Since there are no existing event-based MAV datasets, we introduce a novel MAV dataset for the community. This is the first event-based MAV dataset comprising multiple scenarios and different types of MAVs. Without training, our method significantly outperforms state-of-the-art methods and can deal with challenging scenarios, achieving a precision rate of 83.0\% (+30.3\%) and a recall rate of 81.5\% (+36.4\%) on the proposed testing dataset. The dataset and code are available at: this https URL. 
+
+**Abstract (ZH)**: 现有微空中无人机（MAV）检测方法主要依赖RGB图像中的目标外观特征，这些特征的多样性使得实现泛化 MAV 检测变得困难。我们注意到，由于其高速旋转的螺旋桨，不同类型的 MAV 在事件流中具有相同的独特特征，而在 RGB 图像中这些特征难以观察到。本文研究如何通过充分利用事件流中原始螺旋桨特征来检测不同类型 MAV，同时过滤掉背景物体和相机运动的噪声。由于目前不存在基于事件的 MAV 数据集，我们为社区引入了一个新的 MAV 数据集。这是首个包含多种场景和不同类型 MAV 的基于事件的 MAV 数据集。在无需训练的情况下，我们的方法显著优于现有最先进的方法，并能够处理具有挑战性的场景，在提出的测试数据集上实现了 83.0%（+30.3%）的精确率和 81.5%（+36.4%）的召回率。数据集和代码可在以下链接访问：this https URL。 
+
+---
+# Is an object-centric representation beneficial for robotic manipulation ? 
+
+**Title (ZH)**: 对象中心表示方法对机器人操作有益吗？ 
+
+**Authors**: Alexandre Chapin, Emmanuel Dellandrea, Liming Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.19408)  
+
+**Abstract**: Object-centric representation (OCR) has recently become a subject of interest in the computer vision community for learning a structured representation of images and videos. It has been several times presented as a potential way to improve data-efficiency and generalization capabilities to learn an agent on downstream tasks. However, most existing work only evaluates such models on scene decomposition, without any notion of reasoning over the learned representation. Robotic manipulation tasks generally involve multi-object environments with potential inter-object interaction. We thus argue that they are a very interesting playground to really evaluate the potential of existing object-centric work. To do so, we create several robotic manipulation tasks in simulated environments involving multiple objects (several distractors, the robot, etc.) and a high-level of randomization (object positions, colors, shapes, background, initial positions, etc.). We then evaluate one classical object-centric method across several generalization scenarios and compare its results against several state-of-the-art hollistic representations. Our results exhibit that existing methods are prone to failure in difficult scenarios involving complex scene structures, whereas object-centric methods help overcome these challenges. 
+
+**Abstract (ZH)**: 面向对象的表示（OCR）在计算机视觉领域已成为一个研究热点，用于学习图像和视频的结构化表示。它被多次提出作为提高数据效率和泛化能力，以在下游任务中学习代理的方法。然而，大多数现有工作仅在场景分解方面评估此类模型，而没有任何关于学习表示推理的概念。机器人操作任务通常涉及多对象环境，其中可能存在对象间的相互作用。因此，我们认为它们是真正评估现有面向对象工作潜力的一个非常有趣的试验场。为此，我们在模拟环境中创建了涉及多个对象（多个干扰物、机器人等）和高度随机化（对象位置、颜色、形状、背景、初始位置等）的多种机器人操作任务。然后，我们评估了一种经典的面向对象方法在多种泛化场景中的表现，并将其结果与多种最先进的整体表示方法进行了比较。我们的结果表明，现有方法在涉及复杂场景结构的困难场景中容易失败，而面向对象的方法有助于克服这些挑战。 
+
+---
+# Da Yu: Towards USV-Based Image Captioning for Waterway Surveillance and Scene Understanding 
+
+**Title (ZH)**: 大禹：基于USV的水道监控与场景理解中的图像captioning研究 
+
+**Authors**: Runwei Guan, Ningwei Ouyang, Tianhao Xu, Shaofeng Liang, Wei Dai, Yafeng Sun, Shang Gao, Songning Lai, Shanliang Yao, Xuming Hu, Ryan Wen Liu, Yutao Yue, Hui Xiong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.19288)  
+
+**Abstract**: Automated waterway environment perception is crucial for enabling unmanned surface vessels (USVs) to understand their surroundings and make informed decisions. Most existing waterway perception models primarily focus on instance-level object perception paradigms (e.g., detection, segmentation). However, due to the complexity of waterway environments, current perception datasets and models fail to achieve global semantic understanding of waterways, limiting large-scale monitoring and structured log generation. With the advancement of vision-language models (VLMs), we leverage image captioning to introduce WaterCaption, the first captioning dataset specifically designed for waterway environments. WaterCaption focuses on fine-grained, multi-region long-text descriptions, providing a new research direction for visual geo-understanding and spatial scene cognition. Exactly, it includes 20.2k image-text pair data with 1.8 million vocabulary size. Additionally, we propose Da Yu, an edge-deployable multi-modal large language model for USVs, where we propose a novel vision-to-language projector called Nano Transformer Adaptor (NTA). NTA effectively balances computational efficiency with the capacity for both global and fine-grained local modeling of visual features, thereby significantly enhancing the model's ability to generate long-form textual outputs. Da Yu achieves an optimal balance between performance and efficiency, surpassing state-of-the-art models on WaterCaption and several other captioning benchmarks. 
+
+**Abstract (ZH)**: 自动水道环境感知对于使无人驾驶水面船舶（USVs）理解其周围环境并作出明智决策至关重要。现有的水道感知模型主要集中在实例级对象感知范式（如检测、分割）上。然而，由于水道环境的复杂性，当前的感知数据集和模型未能实现对水道的全局语义理解，限制了大规模监测和结构化日志生成。随着视觉语言模型（VLMs）的发展，我们利用图像标题生成引入了WaterCaption，这是一个专门针对水道环境的数据集。WaterCaption专注于细粒度、多区域的长文本描述，为视觉地理理解和空间场景认知提供了新的研究方向。该数据集包含20200张图像-文本对数据，词汇量达180万。此外，我们提出了一种名为Nano Transformer Adaptor (NTA) 的新颖的视觉到语言投影器，用于USVs的边缘部署多模态大语言模型Da Yu。NTA有效地在计算效率与视觉特征的全局和细粒度局部建模能力之间取得了平衡，从而显著增强了模型生成长文本输出的能力。Da Yu在WaterCaption和多个其他图像标题生成基准测试中均实现了性能与效率的最佳平衡，超越了现有的最先进的模型。 
+
+---
+# Low-Cost Infrastructure-Free 3D Relative Localization with Sub-Meter Accuracy in Near Field 
+
+**Title (ZH)**: 低成本无基础设施近场亚米级相对定位三维定位 
+
+**Authors**: Qiangsheng Gao, Ka Ho Cheng, Li Qiu, Zijun Gong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.19199)  
+
+**Abstract**: Relative localization in the near-field scenario is critically important for unmanned vehicle (UxV) applications. Although related works addressing 2D relative localization problem have been widely studied for unmanned ground vehicles (UGVs), the problem in 3D scenarios for unmanned aerial vehicles (UAVs) involves more uncertainties and remains to be investigated. Inspired by the phenomenon that animals can achieve swarm behaviors solely based on individual perception of relative information, this study proposes an infrastructure-free 3D relative localization framework that relies exclusively on onboard ultra-wideband (UWB) sensors. Leveraging 2D relative positioning research, we conducted feasibility analysis, system modeling, simulations, performance evaluation, and field tests using UWB sensors. The key contributions of this work include: derivation of the Cramér-Rao lower bound (CRLB) and geometric dilution of precision (GDOP) for near-field scenarios; development of two localization algorithms -- one based on Euclidean distance matrix (EDM) and another employing maximum likelihood estimation (MLE); comprehensive performance comparison and computational complexity analysis against state-of-the-art methods; simulation studies and field experiments; a novel sensor deployment strategy inspired by animal behavior, enabling single-sensor implementation within the proposed framework for UxV applications. The theoretical, simulation, and experimental results demonstrate strong generalizability to other 3D near-field localization tasks, with significant potential for a cost-effective cross-platform UxV collaborative system. 
+
+**Abstract (ZH)**: 无基础设施的基于UWB的无人驾驶空中车辆（UxV）三维相对定位框架 
+
+---
+# Correspondence-Free Multiview Point Cloud Registration via Depth-Guided Joint Optimisation 
+
+**Title (ZH)**: 基于深度引导联合优化的无对应点多元视图点云注册 
+
+**Authors**: Yiran Zhou, Yingyu Wang, Shoudong Huang, Liang Zhao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.18922)  
+
+**Abstract**: Multiview point cloud registration is a fundamental task for constructing globally consistent 3D models. Existing approaches typically rely on feature extraction and data association across multiple point clouds; however, these processes are challenging to obtain global optimal solution in complex environments. In this paper, we introduce a novel correspondence-free multiview point cloud registration method. Specifically, we represent the global map as a depth map and leverage raw depth information to formulate a non-linear least squares optimisation that jointly estimates poses of point clouds and the global map. Unlike traditional feature-based bundle adjustment methods, which rely on explicit feature extraction and data association, our method bypasses these challenges by associating multi-frame point clouds with a global depth map through their corresponding poses. This data association is implicitly incorporated and dynamically refined during the optimisation process. Extensive evaluations on real-world datasets demonstrate that our method outperforms state-of-the-art approaches in accuracy, particularly in challenging environments where feature extraction and data association are difficult. 
+
+**Abstract (ZH)**: 多视图点云注册是构建全局一致的3D模型的基础任务。现有方法通常依赖于多点云间的特征提取和数据关联；然而，在复杂环境中获得全局最优解极具挑战性。本文介绍了一种新型的无需对应关系的多视图点云注册方法。具体地，我们将全局地图表示为深度图，并利用原始深度信息来形式化一个非线性最小二乘优化问题，该问题联合估计点云的姿态和全局地图。与依赖显式特征提取和数据关联的传统基于特征的束调整方法不同，我们的方法通过点云的姿态将多帧点云与全局深度图关联起来，从而避开这些挑战。数据关联在优化过程中隐式纳入并动态优化。在真实数据集上的广泛评估表明，在特征提取和数据关联困难的复杂环境中，我们的方法在精度方面优于现有最先进的方法。 
+
+---
+# Evaluating Compliance with Visualization Guidelines in Diagrams for Scientific Publications Using Large Vision Language Models 
+
+**Title (ZH)**: 使用大型视觉语言模型评估科学出版物中图表遵守可视化指南的情况 
+
+**Authors**: Johannes Rückert, Louise Bloch, Christoph M. Friedrich  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.19825)  
+
+**Abstract**: Diagrams are widely used to visualize data in publications. The research field of data visualization deals with defining principles and guidelines for the creation and use of these diagrams, which are often not known or adhered to by researchers, leading to misinformation caused by providing inaccurate or incomplete information.
+In this work, large Vision Language Models (VLMs) are used to analyze diagrams in order to identify potential problems in regards to selected data visualization principles and guidelines. To determine the suitability of VLMs for these tasks, five open source VLMs and five prompting strategies are compared using a set of questions derived from selected data visualization guidelines.
+The results show that the employed VLMs work well to accurately analyze diagram types (F1-score 82.49 %), 3D effects (F1-score 98.55 %), axes labels (F1-score 76.74 %), lines (RMSE 1.16), colors (RMSE 1.60) and legends (F1-score 96.64 %, RMSE 0.70), while they cannot reliably provide feedback about the image quality (F1-score 0.74 %) and tick marks/labels (F1-score 46.13 %). Among the employed VLMs, Qwen2.5VL performs best, and the summarizing prompting strategy performs best for most of the experimental questions.
+It is shown that VLMs can be used to automatically identify a number of potential issues in diagrams, such as missing axes labels, missing legends, and unnecessary 3D effects. The approach laid out in this work can be extended for further aspects of data visualization. 
+
+**Abstract (ZH)**: 大型视觉语言模型在数据可视化原则和规范方面的图示分析中应用广泛：识别潜在问题并提供准确反馈的研究 
+
+---
+# Radial Attention: $O(n\log n)$ Sparse Attention with Energy Decay for Long Video Generation 
+
+**Title (ZH)**: 径向注意力：具有能量衰减的稀疏注意力机制，实现长视频生成 
+
+**Authors**: Xingyang Li, Muyang Li, Tianle Cai, Haocheng Xi, Shuo Yang, Yujun Lin, Lvmin Zhang, Songlin Yang, Jinbo Hu, Kelly Peng, Maneesh Agrawala, Ion Stoica, Kurt Keutzer, Song Han  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.19852)  
+
+**Abstract**: Recent advances in diffusion models have enabled high-quality video generation, but the additional temporal dimension significantly increases computational costs, making training and inference on long videos prohibitively expensive. In this paper, we identify a phenomenon we term Spatiotemporal Energy Decay in video diffusion models: post-softmax attention scores diminish as spatial and temporal distance between tokens increase, akin to the physical decay of signal or waves over space and time in nature. Motivated by this, we propose Radial Attention, a scalable sparse attention mechanism with $O(n \log n)$ complexity that translates energy decay into exponentially decaying compute density, which is significantly more efficient than standard $O(n^2)$ dense attention and more expressive than linear attention. Specifically, Radial Attention employs a simple, static attention mask where each token attends to spatially nearby tokens, with the attention window size shrinking with temporal distance. Moreover, it allows pre-trained video diffusion models to extend their generation length with efficient LoRA-based fine-tuning. Extensive experiments show that Radial Attention maintains video quality across Wan2.1-14B, HunyuanVideo, and Mochi 1, achieving up to a 1.9$\times$ speedup over the original dense attention. With minimal tuning, it enables video generation up to 4$\times$ longer while reducing training costs by up to 4.4$\times$ compared to direct fine-tuning and accelerating inference by up to 3.7$\times$ compared to dense attention inference. 
+
+**Abstract (ZH)**: 最近在扩散模型方面的进展使得高质量视频生成成为可能，但额外的时间维度显著增加了计算成本，使得在长视频上进行训练和推理变得极其昂贵。在本文中，我们识别出在视频扩散模型中存在一种我们称之为时空能量衰减的现象：softmax后注意力得分随着空间和时间上令牌之间的距离增加而衰减，类似于自然界的信号或波在空间和时间上的物理衰减。受此启发，我们提出了-radial注意力机制，这是一种具有$O(n \log n)$复杂度的可扩展稀疏注意力机制，它可以将能量衰减转化为指数衰减的计算密度，这比标准的$O(n^2)$密集注意力更为高效，也比线性注意力更具表现力。具体而言，-radial注意力采用了一个简单的静态注意力掩码，其中每个令牌关注空间上邻近的令牌，而注意力窗口的大小随时间距离的增加而缩小。此外，它允许使用LoRA基于的高效微调来扩展预训练视频扩散模型的生成长度。广泛实验表明，-radial注意力可在 Wan2.1-14B、HunyuanVideo 和 Mochi 1 上保持视频质量，与原始密集注意力相比可实现高达1.9倍的加速。通过最小的调整，它能使视频生成长度增加4倍，同时将训练成本最多减少4.4倍，相较于直接微调将推理加速3.7倍，相较于密集注意力推理加速效果更显著。 
+
+---
+# Improving Progressive Generation with Decomposable Flow Matching 
+
+**Title (ZH)**: 基于可分解流动匹配的渐进生成改进 
+
+**Authors**: Moayed Haji-Ali, Willi Menapace, Ivan Skorokhodov, Arpit Sahni, Sergey Tulyakov, Vicente Ordonez, Aliaksandr Siarohin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.19839)  
+
+**Abstract**: Generating high-dimensional visual modalities is a computationally intensive task. A common solution is progressive generation, where the outputs are synthesized in a coarse-to-fine spectral autoregressive manner. While diffusion models benefit from the coarse-to-fine nature of denoising, explicit multi-stage architectures are rarely adopted. These architectures have increased the complexity of the overall approach, introducing the need for a custom diffusion formulation, decomposition-dependent stage transitions, add-hoc samplers, or a model cascade. Our contribution, Decomposable Flow Matching (DFM), is a simple and effective framework for the progressive generation of visual media. DFM applies Flow Matching independently at each level of a user-defined multi-scale representation (such as Laplacian pyramid). As shown by our experiments, our approach improves visual quality for both images and videos, featuring superior results compared to prior multistage frameworks. On Imagenet-1k 512px, DFM achieves 35.2% improvements in FDD scores over the base architecture and 26.4% over the best-performing baseline, under the same training compute. When applied to finetuning of large models, such as FLUX, DFM shows faster convergence speed to the training distribution. Crucially, all these advantages are achieved with a single model, architectural simplicity, and minimal modifications to existing training pipelines. 
+
+**Abstract (ZH)**: 可分解流匹配（DFM）：一种简单的逐级生成视觉媒体的有效框架 
+
+---
+# A standard transformer and attention with linear biases for molecular conformer generation 
+
+**Title (ZH)**: 带线性偏差的标准变压器和注意力机制分子构象生成 
+
+**Authors**: Viatcheslav Gurev, Timothy Rumbell  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.19834)  
+
+**Abstract**: Sampling low-energy molecular conformations, spatial arrangements of atoms in a molecule, is a critical task for many different calculations performed in the drug discovery and optimization process. Numerous specialized equivariant networks have been designed to generate molecular conformations from 2D molecular graphs. Recently, non-equivariant transformer models have emerged as a viable alternative due to their capability to scale to improve generalization. However, the concern has been that non-equivariant models require a large model size to compensate the lack of equivariant bias. In this paper, we demonstrate that a well-chosen positional encoding effectively addresses these size limitations. A standard transformer model incorporating relative positional encoding for molecular graphs when scaled to 25 million parameters surpasses the current state-of-the-art non-equivariant base model with 64 million parameters on the GEOM-DRUGS benchmark. We implemented relative positional encoding as a negative attention bias that linearly increases with the shortest path distances between graph nodes at varying slopes for different attention heads, similar to ALiBi, a widely adopted relative positional encoding technique in the NLP domain. This architecture has the potential to serve as a foundation for a novel class of generative models for molecular conformations. 
+
+**Abstract (ZH)**: 从2D分子图生成低能分子构象是一种在药物发现与优化过程中进行多种计算的关键任务。近期，非等变变换器模型由于其能够通过规模扩展提高泛化能力，成为了一种可行的替代方案。然而，对非等变模型的一项主要担忧是需要较大的模型规模来弥补缺乏等变偏置。本文证明了一个精心选择的位置编码有效解决了这些规模限制。一个包含相对位置编码的标准变换器模型，在扩展到2500万参数时，超越了当前最先进的6400万参数的非等变基模型，在GEOM-DRUGS基准测试中表现更佳。我们实现了相对位置编码作为负注意力偏置的技术，该偏置随图节点之间最短路径距离线性增加，并根据不同注意力头设置不同的斜率，类似于NLP领域广泛采用的ALiBi相对位置编码技术。该架构有可能成为分子构象生成模型新一类的基础模型。 
+
+---
+# Uncovering Conceptual Blindspots in Generative Image Models Using Sparse Autoencoders 
+
+**Title (ZH)**: 使用稀疏自编码器揭示生成图像模型中的概念盲点 
+
+**Authors**: Matyas Bohacek, Thomas Fel, Maneesh Agrawala, Ekdeep Singh Lubana  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.19708)  
+
+**Abstract**: Despite their impressive performance, generative image models trained on large-scale datasets frequently fail to produce images with seemingly simple concepts -- e.g., human hands or objects appearing in groups of four -- that are reasonably expected to appear in the training data. These failure modes have largely been documented anecdotally, leaving open the question of whether they reflect idiosyncratic anomalies or more structural limitations of these models. To address this, we introduce a systematic approach for identifying and characterizing "conceptual blindspots" -- concepts present in the training data but absent or misrepresented in a model's generations. Our method leverages sparse autoencoders (SAEs) to extract interpretable concept embeddings, enabling a quantitative comparison of concept prevalence between real and generated images. We train an archetypal SAE (RA-SAE) on DINOv2 features with 32,000 concepts -- the largest such SAE to date -- enabling fine-grained analysis of conceptual disparities. Applied to four popular generative models (Stable Diffusion 1.5/2.1, PixArt, and Kandinsky), our approach reveals specific suppressed blindspots (e.g., bird feeders, DVD discs, and whitespaces on documents) and exaggerated blindspots (e.g., wood background texture and palm trees). At the individual datapoint level, we further isolate memorization artifacts -- instances where models reproduce highly specific visual templates seen during training. Overall, we propose a theoretically grounded framework for systematically identifying conceptual blindspots in generative models by assessing their conceptual fidelity with respect to the underlying data-generating process. 
+
+**Abstract (ZH)**: 尽管生成图像模型在大规模数据集上训练时表现出色，但它们经常无法生成一些简单概念的图像——例如，在训练数据中合理预期出现的人类手或四个一组的物体。这些失败模式主要以个案形式记录，留下了它们反映的是模型的偶然异常还是结构性局限性的疑问。为了解决这个问题，我们提出了一个系统的方法来识别和表征“概念盲点”——存在于训练数据但未出现在模型生成中的概念。该方法利用稀疏自编码器（SAE）提取可解释的概念嵌入，使我们能够定量比较真实图像和生成图像中概念的频率。我们使用包含32,000个概念的典范SAE（RA-SAE）在DINOv2特征上进行训练，这是迄今为止最大的此类SAE，从而允许对概念差异进行精细化分析。将该方法应用于四种流行的生成模型（Stable Diffusion 1.5/2.1、PixArt和Kandinsky），我们揭示了特定被抑制的概念盲点（例如，鸟食器、DVD光盘和文档中的空白空间）和被夸大的概念盲点（例如，木材质感背景和棕榈树）。在单一数据点层面，我们进一步分离了记忆化特征——模型重现了在训练过程中见过的特定视觉模板。总体而言，我们提出了一种基于理论框架，通过评估生成模型与底层数据生成过程的概念忠实度来系统地识别概念盲点的方法。 
+
+---
+# Semantic Scene Graph for Ultrasound Image Explanation and Scanning Guidance 
+
+**Title (ZH)**: 超声图像解释和扫描指导的语义场景图 
+
+**Authors**: Xuesong Li, Dianye Huang, Yameng Zhang, Nassir Navab, Zhongliang Jiang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.19683)  
+
+**Abstract**: Understanding medical ultrasound imaging remains a long-standing challenge due to significant visual variability caused by differences in imaging and acquisition parameters. Recent advancements in large language models (LLMs) have been used to automatically generate terminology-rich summaries orientated to clinicians with sufficient physiological knowledge. Nevertheless, the increasing demand for improved ultrasound interpretability and basic scanning guidance among non-expert users, e.g., in point-of-care settings, has not yet been explored. In this study, we first introduce the scene graph (SG) for ultrasound images to explain image content to ordinary and provide guidance for ultrasound scanning. The ultrasound SG is first computed using a transformer-based one-stage method, eliminating the need for explicit object detection. To generate a graspable image explanation for ordinary, the user query is then used to further refine the abstract SG representation through LLMs. Additionally, the predicted SG is explored for its potential in guiding ultrasound scanning toward missing anatomies within the current imaging view, assisting ordinary users in achieving more standardized and complete anatomical exploration. The effectiveness of this SG-based image explanation and scanning guidance has been validated on images from the left and right neck regions, including the carotid and thyroid, across five volunteers. The results demonstrate the potential of the method to maximally democratize ultrasound by enhancing its interpretability and usability for ordinaries. 
+
+**Abstract (ZH)**: 理解医学超声成像仍然是一个长期存在的挑战，由于成像和采集参数的巨大视觉差异所致。最近大型语言模型（LLMs）的进步已被用于自动生成富含术语的摘要，以满足具有足够生理知识的临床人员的需求。然而，非专家用户（例如，在床旁等场景中）对增强超声成像可解释性和基本扫描指导的需求尚未被探索。在本研究中，我们首先引入了超声图像场景图（SG）来解释图像内容并为普通用户提供扫描指导。首先，使用基于变压器的一阶段方法计算超声SG，消除明确的对象检测需求。然后，通过LLMs利用用户查询进一步细化抽象的SG表示，生成普通用户易于理解的图像解释。此外，探讨预测的SG在指导当前成像视图中缺失的解剖结构方面的潜在作用，帮助普通用户实现更标准化和完整的解剖探索。这种方法基于图像解释和扫描指导的有效性已经在五名志愿者的颈部左侧和右侧图像（包括颈动脉和甲状腺）中得到了验证。结果表明，该方法具有最大程度地普及超声成像的潜力，通过增强其可解释性和普通用户的易用性。 
+
+---
+# Why Uncertainty Calibration Matters for Reliable Perturbation-based Explanations 
+
+**Title (ZH)**: 为什么不确定性校准对于可靠的基于扰动的解释至关重要 
+
+**Authors**: Thomas Decker, Volker Tresp, Florian Buettner  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.19630)  
+
+**Abstract**: Perturbation-based explanations are widely utilized to enhance the transparency of modern machine-learning models. However, their reliability is often compromised by the unknown model behavior under the specific perturbations used. This paper investigates the relationship between uncertainty calibration - the alignment of model confidence with actual accuracy - and perturbation-based explanations. We show that models frequently produce unreliable probability estimates when subjected to explainability-specific perturbations and theoretically prove that this directly undermines explanation quality. To address this, we introduce ReCalX, a novel approach to recalibrate models for improved perturbation-based explanations while preserving their original predictions. Experiments on popular computer vision models demonstrate that our calibration strategy produces explanations that are more aligned with human perception and actual object locations. 
+
+**Abstract (ZH)**: 基于扰动的解释方法广泛用于提升现代机器学习模型的透明度。然而，这些方法的可靠性往往受到特定扰动下未知模型行为的影响。本文探讨了不确定性校准——即模型信心与实际准确性的对齐——与基于扰动的解释之间的关系。我们表明，当模型受到专用于可解释性的扰动时，频繁产生不可靠的概率估计，并从理论上证明这一点直接削弱了解释的质量。为解决这一问题，我们提出了一种名为ReCalX的新方法，可以在保持原始预测不变的情况下对模型进行校准，以提高基于扰动的解释质量。实验表明，我们的校准策略生成的解释与人类感知和实际物体位置更为一致。 
+
+---
+# VideoPCDNet: Video Parsing and Prediction with Phase Correlation Networks 
+
+**Title (ZH)**: VideoPCDNet：基于相位相关网络的视频解析与预测 
+
+**Authors**: Noel José Rodrigues Vicente, Enrique Lehner, Angel Villar-Corrales, Jan Nogga, Sven Behnke  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.19621)  
+
+**Abstract**: Understanding and predicting video content is essential for planning and reasoning in dynamic environments. Despite advancements, unsupervised learning of object representations and dynamics remains challenging. We present VideoPCDNet, an unsupervised framework for object-centric video decomposition and prediction. Our model uses frequency-domain phase correlation techniques to recursively parse videos into object components, which are represented as transformed versions of learned object prototypes, enabling accurate and interpretable tracking. By explicitly modeling object motion through a combination of frequency domain operations and lightweight learned modules, VideoPCDNet enables accurate unsupervised object tracking and prediction of future video frames. In our experiments, we demonstrate that VideoPCDNet outperforms multiple object-centric baseline models for unsupervised tracking and prediction on several synthetic datasets, while learning interpretable object and motion representations. 
+
+**Abstract (ZH)**: 理解与预测视频内容对于动态环境中的规划与推理至关重要。尽管取得了进展，无监督学习对象表示和动力学仍然具有挑战性。我们提出VideoPCDNet，这是一种基于对象的无监督视频分解和预测框架。该模型使用频域相位相关技术递归地将视频解析为对象组件，并以学习的对象原型的变换版本来表示这些组件，从而实现准确且可解释的对象跟踪。通过结合频域操作和轻量级学习模块对对象运动进行显式建模，VideoPCDNet 使无监督对象跟踪和未来视频帧预测得以实现。在我们的实验中，我们展示了VideoPCDNet在几个合成数据集上的无监督跟踪和预测方面优于多种基于对象的基线模型，同时还学习了解释性对象和运动表示。 
+
+---
+# Vision Transformer-Based Time-Series Image Reconstruction for Cloud-Filling Applications 
+
+**Title (ZH)**: 基于视觉变换器的时间序列图像重构在云填充应用中的研究 
+
+**Authors**: Lujun Li, Yiqun Wang, Radu State  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.19591)  
+
+**Abstract**: Cloud cover in multispectral imagery (MSI) poses significant challenges for early season crop mapping, as it leads to missing or corrupted spectral information. Synthetic aperture radar (SAR) data, which is not affected by cloud interference, offers a complementary solution, but lack sufficient spectral detail for precise crop mapping. To address this, we propose a novel framework, Time-series MSI Image Reconstruction using Vision Transformer (ViT), to reconstruct MSI data in cloud-covered regions by leveraging the temporal coherence of MSI and the complementary information from SAR from the attention mechanism. Comprehensive experiments, using rigorous reconstruction evaluation metrics, demonstrate that Time-series ViT framework significantly outperforms baselines that use non-time-series MSI and SAR or time-series MSI without SAR, effectively enhancing MSI image reconstruction in cloud-covered regions. 
+
+**Abstract (ZH)**: 使用视觉变换器的时间序列多光谱图像重建方法：利用时空一致性进行云覆盖区域的多光谱图像重建 
+
+---
+# MambaOutRS: A Hybrid CNN-Fourier Architecture for Remote Sensing Image Classification 
+
+**Title (ZH)**: MambaOutRS：一种用于遥感图像分类的混合CNN-傅里叶架构 
+
+**Authors**: Minjong Cheon, Changbae Mun  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.19561)  
+
+**Abstract**: Recent advances in deep learning for vision tasks have seen the rise of State Space Models (SSMs) like Mamba, celebrated for their linear scalability. However, their adaptation to 2D visual data often necessitates complex modifications that may diminish efficiency. In this paper, we introduce MambaOutRS, a novel hybrid convolutional architecture for remote sensing image classification that re-evaluates the necessity of recurrent SSMs. MambaOutRS builds upon stacked Gated CNN blocks for local feature extraction and introduces a novel Fourier Filter Gate (FFG) module that operates in the frequency domain to capture global contextual information efficiently. Our architecture employs a four-stage hierarchical design and was extensively evaluated on challenging remote sensing datasets: UC Merced, AID, NWPU-RESISC45, and EuroSAT. MambaOutRS consistently achieved state-of-the-art (SOTA) performance across these benchmarks. Notably, our MambaOutRS-t variant (24.0M parameters) attained the highest F1-scores of 98.41\% on UC Merced and 95.99\% on AID, significantly outperforming existing baselines, including larger transformer models and Mamba-based architectures, despite using considerably fewer parameters. An ablation study conclusively demonstrates the critical role of the Fourier Filter Gate in enhancing the model's ability to capture global spatial patterns, leading to robust and accurate classification. These results strongly suggest that the complexities of recurrent SSMs can be effectively superseded by a judicious combination of gated convolutions for spatial mixing and frequency-based gates for spectral global context. Thus, MambaOutRS provides a compelling and efficient paradigm for developing high-performance deep learning models in remote sensing and other vision domains, particularly where computational efficiency is paramount. 
+
+**Abstract (ZH)**: 最近在视觉任务中的深度学习进展促使了状态空间模型（SSMs）如Mamba的兴起，这些模型以其线性可扩展性而受到赞誉。然而，它们在适应2D视觉数据时往往需要复杂的修改，这可能会降低效率。本文介绍了一种新型的混合卷积架构MambaOutRS，用于遥感图像分类，并重新评估了递归SSMs的必要性。MambaOutRS基于堆叠的门控CNN块进行局部特征提取，并引入了一种新的傅里叶滤波门（FFG）模块，在频域中高效地捕捉全局上下文信息。我们的架构采用了四阶段层次化设计，并在具有挑战性的遥感数据集UC Merced、AID、NWPU-RESISC45和EuroSAT上进行了广泛评估。MambaOutRS在这些基准测试中始终实现了最先进的性能。特别地，我们的MambaOutRS-t变体（参数量24.0M）在UC Merced上达到了98.41%的F1分数，在AID上达到了95.99%的F1分数，这在使用显著较少参数的情况下，显著超过了现有的基线，包括较大的变压器模型和基于Mamba的架构。消融研究明确证明了傅里叶滤波门在增强模型捕获全局空间模式的能力方面起着关键作用，从而实现了稳健且准确的分类。这些结果强烈表明，通过明智地结合空间混合作用的门控卷积和频域门控来捕捉光谱全局上下文，递归SSMs的复杂性可以得到有效克服。因此，MambaOutRS为在遥感和其他视觉领域开发高性能深度学习模型提供了具有竞争力且高效的范式，特别是在计算效率至关重要的情况下。 
+
+---
+# General Methods Make Great Domain-specific Foundation Models: A Case-study on Fetal Ultrasound 
+
+**Title (ZH)**: 通用方法造就卓越的领域特定基础模型：一项关于胎儿超声的研究案例 
+
+**Authors**: Jakob Ambsdorf, Asbjørn Munk, Sebastian Llambias, Anders Nymark Christensen, Kamil Mikolaj, Randall Balestriero, Martin Tolsgaard, Aasa Feragen, Mads Nielsen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.19552)  
+
+**Abstract**: With access to large-scale, unlabeled medical datasets, researchers are confronted with two questions: Should they attempt to pretrain a custom foundation model on this medical data, or use transfer-learning from an existing generalist model? And, if a custom model is pretrained, are novel methods required? In this paper we explore these questions by conducting a case-study, in which we train a foundation model on a large regional fetal ultrasound dataset of 2M images. By selecting the well-established DINOv2 method for pretraining, we achieve state-of-the-art results on three fetal ultrasound datasets, covering data from different countries, classification, segmentation, and few-shot tasks. We compare against a series of models pretrained on natural images, ultrasound images, and supervised baselines. Our results demonstrate two key insights: (i) Pretraining on custom data is worth it, even if smaller models are trained on less data, as scaling in natural image pretraining does not translate to ultrasound performance. (ii) Well-tuned methods from computer vision are making it feasible to train custom foundation models for a given medical domain, requiring no hyperparameter tuning and little methodological adaptation. Given these findings, we argue that a bias towards methodological innovation should be avoided when developing domain specific foundation models under common computational resource constraints. 
+
+**Abstract (ZH)**: 在大规模未标记医疗数据集访问的基础上，研究人员面临着两个问题：他们是否应该尝试在这些医疗数据上预训练自定义基础模型，还是从现有的通用模型进行迁移学习？如果预训练自定义模型，是否需要新的方法？在本文中，我们通过案例研究探讨了这些问题，我们使用广泛认可的DINOv2方法在包含200万张图像的大型区域胎儿超声数据集上训练了一个基础模型。通过在不同国家的胎儿超声数据集上进行实验，涵盖了分类、分割和少样本任务，我们达到了最先进的性能。我们将结果与在自然图像、超声图像和监督baseline模型上预训练的模型进行了对比。我们的研究结果表明了两个关键洞察：（i）即使较小的模型使用较少的数据进行训练，自定义数据的预训练仍然是值得的，因为在自然图像预训练中的扩展并不适用于超声性能。（ii）来自计算机视觉的高质量方法使得为特定医疗领域训练自定义基础模型变得可行，不需要进行超参数调整和方法上的大幅适应。鉴于这些发现，我们主张在共同的计算资源约束下开发特定领域基础模型时，应该避免方法创新的偏见。 
+
+---
+# Stylized Structural Patterns for Improved Neural Network Pre-training 
+
+**Title (ZH)**: 强化结构模式以提高神经网络预训练效果 
+
+**Authors**: Farnood Salehi, Vandit Sharma, Amirhossein Askari Farsangi, Tunç Ozan Aydın  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.19465)  
+
+**Abstract**: Modern deep learning models in computer vision require large datasets of real images, which are difficult to curate and pose privacy and legal concerns, limiting their commercial use. Recent works suggest synthetic data as an alternative, yet models trained with it often underperform. This paper proposes a two-step approach to bridge this gap. First, we propose an improved neural fractal formulation through which we introduce a new class of synthetic data. Second, we propose reverse stylization, a technique that transfers visual features from a small, license-free set of real images onto synthetic datasets, enhancing their effectiveness. We analyze the domain gap between our synthetic datasets and real images using Kernel Inception Distance (KID) and show that our method achieves a significantly lower distributional gap compared to existing synthetic datasets. Furthermore, our experiments across different tasks demonstrate the practical impact of this reduced gap. We show that pretraining the EDM2 diffusion model on our synthetic dataset leads to an 11% reduction in FID during image generation, compared to models trained on existing synthetic datasets, and a 20% decrease in autoencoder reconstruction error, indicating improved performance in data representation. Furthermore, a ViT-S model trained for classification on this synthetic data achieves over a 10% improvement in ImageNet-100 accuracy. Our work opens up exciting possibilities for training practical models when sufficiently large real training sets are not available. 
+
+**Abstract (ZH)**: 现代计算机视觉中的深度学习模型需要大量的真实图像数据集，这些数据集难以整理，并且存在隐私和法律问题，限制了其商业应用。最近的研究建议使用合成数据作为替代方案，但使用合成数据训练的模型往往表现不佳。本文提出了一种两步方法来弥补这一差距。首先，我们提出了一种改进的神经分形公式，通过这种方式引入了一类新的合成数据。其次，我们提出了一种逆样式转移技术，该技术将少量无版权的真实图像的视觉特征转移至合成数据集，从而增强其有效性。我们使用核卷积距离（KID）分析了我们合成数据集与真实图像之间的领域差距，并表明我们的方法相对于现有合成数据集实现了显著更低的分布差距。此外，我们针对不同的任务进行的实验表明了这种差距减小的实际影响。我们表明，使用我们合成数据集预训练EDM2扩散模型，在生成图像时FID降低了11%，与现有合成数据集训练的模型相比，自动编码器重构误差降低了20%，表明数据表示性能的提高。此外，使用此合成数据集训练的ViT-S分类模型在ImageNet-100上的准确率提高了超过10%。我们的工作为在获得足够大的真实训练集时训练实用模型开辟了令人兴奋的可能性。 
+
+---
+# A Global-Local Cross-Attention Network for Ultra-high Resolution Remote Sensing Image Semantic Segmentation 
+
+**Title (ZH)**: 全局-局部跨注意力网络超高分辨率遥感图像语义分割 
+
+**Authors**: Chen Yi, Shan LianLei  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.19406)  
+
+**Abstract**: With the rapid development of ultra-high resolution (UHR) remote sensing technology, the demand for accurate and efficient semantic segmentation has increased significantly. However, existing methods face challenges in computational efficiency and multi-scale feature fusion. To address these issues, we propose GLCANet (Global-Local Cross-Attention Network), a lightweight segmentation framework designed for UHR remote sensing this http URL employs a dual-stream architecture to efficiently fuse global semantics and local details while minimizing GPU usage. A self-attention mechanism enhances long-range dependencies, refines global features, and preserves local details for better semantic consistency. A masked cross-attention mechanism also adaptively fuses global-local features, selectively enhancing fine-grained details while exploiting global context to improve segmentation accuracy. Experimental results show that GLCANet outperforms state-of-the-art methods regarding accuracy and computational efficiency. The model effectively processes large, high-resolution images with a small memory footprint, providing a promising solution for real-world remote sensing applications. 
+
+**Abstract (ZH)**: 基于全局-局部交叉注意力网络的超高清遥感语义分割 
+
+---
+# NAADA: A Noise-Aware Attention Denoising Autoencoder for Dental Panoramic Radiographs 
+
+**Title (ZH)**: NAADA：一种噪声意识注意力去噪自动编码器用于牙科全景放射影像 
+
+**Authors**: Khuram Naveed, Bruna Neves de Freitas, Ruben Pauwels  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.19387)  
+
+**Abstract**: Convolutional denoising autoencoders (DAEs) are powerful tools for image restoration. However, they inherit a key limitation of convolutional neural networks (CNNs): they tend to recover low-frequency features, such as smooth regions, more effectively than high-frequency details. This leads to the loss of fine details, which is particularly problematic in dental radiographs where preserving subtle anatomical structures is crucial. While self-attention mechanisms can help mitigate this issue by emphasizing important features, conventional attention methods often prioritize features corresponding to cleaner regions and may overlook those obscured by noise. To address this limitation, we propose a noise-aware self-attention method, which allows the model to effectively focus on and recover key features even within noisy regions. Building on this approach, we introduce the noise-aware attention-enhanced denoising autoencoder (NAADA) network for enhancing noisy panoramic dental radiographs. Compared with the recent state of the art (and much heavier) methods like Uformer, MResDNN etc., our method improves the reconstruction of fine details, ensuring better image quality and diagnostic accuracy. 
+
+**Abstract (ZH)**: 噪声感知自注意力改进的降噪自编码器网络（NAADA）用于增强 noisy 牙科全景放射影像 
+
+---
+# Capturing Fine-Grained Alignments Improves 3D Affordance Detection 
+
+**Title (ZH)**: 细粒度对齐改善了3D可用性检测 
+
+**Authors**: Junsei Tokumitsu, Yuiga Wada  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.19312)  
+
+**Abstract**: In this work, we address the challenge of affordance detection in 3D point clouds, a task that requires effectively capturing fine-grained alignments between point clouds and text. Existing methods often struggle to model such alignments, resulting in limited performance on standard benchmarks. A key limitation of these approaches is their reliance on simple cosine similarity between point cloud and text embeddings, which lacks the expressiveness needed for fine-grained reasoning. To address this limitation, we propose LM-AD, a novel method for affordance detection in 3D point clouds. Moreover, we introduce the Affordance Query Module (AQM), which efficiently captures fine-grained alignment between point clouds and text by leveraging a pretrained language model. We demonstrated that our method outperformed existing approaches in terms of accuracy and mean Intersection over Union on the 3D AffordanceNet dataset. 
+
+**Abstract (ZH)**: 本研究解决了三维点云中的功能检测挑战，该任务需要有效地捕捉点云和文本之间的细粒度对齐。现有的方法往往难以建模这种对齐关系，导致在标准基准上表现有限。这些方法的主要局限在于依赖于点云和文本嵌入之间的简单余弦相似性，这不足以表达细粒度推理所需的能力。为此，我们提出了一种名为LM-AD的新方法，用于三维点云的功能检测，并引入了功能查询模块（AQM），通过利用预训练语言模型高效地捕捉点云和文本之间的细粒度对齐。实验结果显示，我们的方法在3D AffordanceNet数据集上的准确率和平均交并比上优于现有方法。 
+
+---
+# RareSpot: Spotting Small and Rare Wildlife in Aerial Imagery with Multi-Scale Consistency and Context-Aware Augmentation 
+
+**Title (ZH)**: RareSpot: 在多尺度一致性和上下文感知增强下的航空影像中小种群稀有野生动物识别 
+
+**Authors**: Bowen Zhang, Jesse T. Boulerice, Nikhil Kuniyil, Charvi Mendiratta, Satish Kumar, Hila Shamon, B.S. Manjunath  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.19087)  
+
+**Abstract**: Automated detection of small and rare wildlife in aerial imagery is crucial for effective conservation, yet remains a significant technical challenge. Prairie dogs exemplify this issue: their ecological importance as keystone species contrasts sharply with their elusive presence--marked by small size, sparse distribution, and subtle visual features--which undermines existing detection approaches. To address these challenges, we propose RareSpot, a robust detection framework integrating multi-scale consistency learning and context-aware augmentation. Our multi-scale consistency approach leverages structured alignment across feature pyramids, enhancing fine-grained object representation and mitigating scale-related feature loss. Complementarily, context-aware augmentation strategically synthesizes challenging training instances by embedding difficult-to-detect samples into realistic environmental contexts, significantly boosting model precision and recall. Evaluated on an expert-annotated prairie dog drone imagery benchmark, our method achieves state-of-the-art performance, improving detection accuracy by over 35% compared to baseline methods. Importantly, it generalizes effectively across additional wildlife datasets, demonstrating broad applicability. The RareSpot benchmark and approach not only support critical ecological monitoring but also establish a new foundation for detecting small, rare species in complex aerial scenes. 
+
+**Abstract (ZH)**: 自动化检测稀有小规模野生动物在航空影像中的关键技术挑战及解决方案：以黑脚兔为例 
+
+---
+# Reading Smiles: Proxy Bias in Foundation Models for Facial Emotion Recognition 
+
+**Title (ZH)**: 阅读微笑：基础模型在面部情绪识别中的代理偏见 
+
+**Authors**: Iosif Tsangko, Andreas Triantafyllopoulos, Adem Abdelmoula, Adria Mallol-Ragolta, Bjoern W. Schuller  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.19079)  
+
+**Abstract**: Foundation Models (FMs) are rapidly transforming Affective Computing (AC), with Vision Language Models (VLMs) now capable of recognising emotions in zero shot settings. This paper probes a critical but underexplored question: what visual cues do these models rely on to infer affect, and are these cues psychologically grounded or superficially learnt? We benchmark varying scale VLMs on a teeth annotated subset of AffectNet dataset and find consistent performance shifts depending on the presence of visible teeth. Through structured introspection of, the best-performing model, i.e., GPT-4o, we show that facial attributes like eyebrow position drive much of its affective reasoning, revealing a high degree of internal consistency in its valence-arousal predictions. These patterns highlight the emergent nature of FMs behaviour, but also reveal risks: shortcut learning, bias, and fairness issues especially in sensitive domains like mental health and education. 
+
+**Abstract (ZH)**: 基础模型（FMs）正迅速改变情感计算（AC），视觉语言模型（VLMs）现在能够在零样本设置中识别情绪。本文探讨了一个关键但尚未充分探索的问题：这些模型在推断情感时依赖于哪些视觉线索，这些线索是否具有心理依据或仅是表面学习的结果？我们基于AffectNet数据集的牙齿标注子集，对不同规模的VLMs进行了基准测试，并发现其性能根据牙齿的可见性表现出一致的变化。通过对表现最佳的模型——GPT-4o的有序反省，我们展示了眉毛位置等面部属性在很大程度上驱动了其情感推理，揭示了其情感强度-唤醒预测的高内部一致性。这些模式突显了基础模型行为的涌现性质，但也揭示了风险：捷径学习、偏见和公平性问题，特别是在心理健康和教育等敏感领域。 
+
+---
+# HAWAII: Hierarchical Visual Knowledge Transfer for Efficient Vision-Language Models 
+
+**Title (ZH)**: HAWAII: 分层视觉知识转移以构建高效视觉-语言模型 
+
+**Authors**: Yimu Wang, Mozhgan Nasr Azadani, Sean Sedwards, Krzysztof Czarnecki  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.19072)  
+
+**Abstract**: Improving the visual understanding ability of vision-language models (VLMs) is crucial for enhancing their performance across various tasks. While using multiple pretrained visual experts has shown great promise, it often incurs significant computational costs during training and inference. To address this challenge, we propose HAWAII, a novel framework that distills knowledge from multiple visual experts into a single vision encoder, enabling it to inherit the complementary strengths of several experts with minimal computational overhead. To mitigate conflicts among different teachers and switch between different teacher-specific knowledge, instead of using a fixed set of adapters for multiple teachers, we propose to use teacher-specific Low-Rank Adaptation (LoRA) adapters with a corresponding router. Each adapter is aligned with a specific teacher, avoiding noisy guidance during distillation. To enable efficient knowledge distillation, we propose fine-grained and coarse-grained distillation. At the fine-grained level, token importance scores are employed to emphasize the most informative tokens from each teacher adaptively. At the coarse-grained level, we summarize the knowledge from multiple teachers and transfer it to the student using a set of general-knowledge LoRA adapters with a router. Extensive experiments on various vision-language tasks demonstrate the superiority of HAWAII, compared to the popular open-source VLMs. 
+
+**Abstract (ZH)**: 提高视觉语言模型的视觉理解能力对于跨各种任务提升其性能至关重要。尽管使用多种预训练视觉专家显示出巨大潜力，但在训练和推理过程中往往会带来显著的计算成本。为应对这一挑战，我们提出HAWAII，一种新颖的框架，将多种视觉专家的知识提炼至单一视觉编码器中，使其能够以最小的计算开销继承多个专家互补的优势。为缓解不同教师之间可能出现的冲突并灵活切换不同教师特定的知识，我们提出使用与各自教师相关的低秩适应（LoRA）适配器及相应的路由器，每个适配器专门针对特定教师，从而避免在提炼过程中引入噪声指导。为实现高效的知识提炼，我们提出精炼级和粗粒度级知识提炼。在精炼级，利用token重要性评分自适应强调每位教师最具信息量的token。在粗粒度级，我们将来自多种教师的知识进行总结，并通过一组通用知识LoRA适配器和路由器将其转移给学生。在各种视觉语言任务上的广泛实验表明，HAWAII相比流行的开源视觉语言模型具有显著优势。 
+
+---
+# GLIMPSE: Gradient-Layer Importance Mapping for Prompted Visual Saliency Explanation for Generative LVLMs 
+
+**Title (ZH)**: GLIMPSE: 基于梯度-层重要性映射的提示驱动视觉注意解释方法用于生成型联合视觉语言模型 
+
+**Authors**: Guanxi Shen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.18985)  
+
+**Abstract**: Recent advances in large vision language models (LVLMs) have unlocked unprecedented capabilities in generating coherent responses from visual inputs. However, interpreting where LVLMs direct their visual attention while generating free-form textual responses remains a significant challenge, yet is essential for understanding model behavior, diagnosing hallucination, exposing bias and ensuring transparency. We introduce GLIMPSE (Gradient-Layer Importance Mapping for Prompted Visual Saliency Explanation), a lightweight, model-agnostic framework for visualizing the salient image regions that LVLMs rely upon during open-ended visual question answering (VQA), while concurrently revealing the multimodal textual saliency. GLIMPSE fuses gradient-weighted attention, adaptive layer propagation, and weighted token aggregation to produce holistic response-level attribution heat maps for interpreting cross-modal reasoning, outperforming prior interpretability methods in human-alignment. We demonstrate an analytic explainable AI (XAI) approach using GLIMPSE to uncover fine-grained insights into LVLM cross-modal attribution, trace token-level reasoning dynamics, and analyze systematic human-attention misalignment, hallucination, and bias. 
+
+**Abstract (ZH)**: Recent Advances in Large Vision Language Models (LVLMs) Have Unlocked Unprecedented Capabilities in Generating Coherent Responses from Visual Inputs: GLIMPSE (Gradient-Layer Importance Mapping for Prompted Visual Saliency Explanation) Enables Visualizing Multimodal Saliency for Open-Ended Visual Question Answering 
+
+---
+# DiffRIS: Enhancing Referring Remote Sensing Image Segmentation with Pre-trained Text-to-Image Diffusion Models 
+
+**Title (ZH)**: DiffRIS: 依托预训练文本到图像扩散模型提升遥感图像引用分割 
+
+**Authors**: Zhe Dong, Yuzhe Sun, Tianzhu Liu, Yanfeng Gu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.18946)  
+
+**Abstract**: Referring remote sensing image segmentation (RRSIS) enables the precise delineation of regions within remote sensing imagery through natural language descriptions, serving critical applications in disaster response, urban development, and environmental monitoring. Despite recent advances, current approaches face significant challenges in processing aerial imagery due to complex object characteristics including scale variations, diverse orientations, and semantic ambiguities inherent to the overhead perspective. To address these limitations, we propose DiffRIS, a novel framework that harnesses the semantic understanding capabilities of pre-trained text-to-image diffusion models for enhanced cross-modal alignment in RRSIS tasks. Our framework introduces two key innovations: a context perception adapter (CP-adapter) that dynamically refines linguistic features through global context modeling and object-aware reasoning, and a progressive cross-modal reasoning decoder (PCMRD) that iteratively aligns textual descriptions with visual regions for precise segmentation. The CP-adapter bridges the domain gap between general vision-language understanding and remote sensing applications, while PCMRD enables fine-grained semantic alignment through multi-scale feature interaction. Comprehensive experiments on three benchmark datasets-RRSIS-D, RefSegRS, and RISBench-demonstrate that DiffRIS consistently outperforms existing methods across all standard metrics, establishing a new state-of-the-art for RRSIS tasks. The significant performance improvements validate the effectiveness of leveraging pre-trained diffusion models for remote sensing applications through our proposed adaptive framework. 
+
+**Abstract (ZH)**: 基于自然语言描述的遥感图像分割（NN-RRSIS）通过自然语言描述实现遥感影像区域内精确划分，服务于灾害响应、城市发展规划和环境监测等重要应用。尽管近期取得进展，当前方法在处理包含尺度变化、多样化取向和俯视视角固有语义模糊性的航拍影像时仍面临重大挑战。为解决这些限制，我们提出了一种新型框架DiffRIS，该框架利用预训练的文本到图像扩散模型的语义理解能力，增强遥感图像分割任务中的跨模态对齐。该框架引入了两项关键创新：一种上下文感知适配器（CP-adapter），通过全局上下文建模和对象感知推理动态细化语言特征，以及一种渐进式跨模态推理解码器（PCMRD），逐步将文本描述与视觉区域对齐，实现精确分割。CP-adapter弥合了一般视觉-语言理解与遥感应用之间的领域差距，而PCMRD通过多尺度特征交互实现细粒度语义对齐。在三个基准数据集RRSIS-D、RefSegRS和RISBench上的全面实验表明，DiffRIS在所有标准指标上均优于现有方法，建立了遥感图像分割任务的新最先进水平。显著的性能提升验证了通过我们提出的自适应框架利用预训练扩散模型应用于遥感任务的有效性。 
+
+---
+# Interpretable and Granular Video-Based Quantification of Motor Characteristics from the Finger Tapping Test in Parkinson Disease 
+
+**Title (ZH)**: Parkinson病手部敲击测试中可解释且精细的基于视频的运动特性量化 
+
+**Authors**: Tahereh Zarrat Ehsan, Michael Tangermann, Yağmur Güçlütürk, Bastiaan R. Bloem, Luc J. W. Evers  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.18925)  
+
+**Abstract**: Accurately quantifying motor characteristics in Parkinson disease (PD) is crucial for monitoring disease progression and optimizing treatment strategies. The finger-tapping test is a standard motor assessment. Clinicians visually evaluate a patient's tapping performance and assign an overall severity score based on tapping amplitude, speed, and irregularity. However, this subjective evaluation is prone to inter- and intra-rater variability, and does not offer insights into individual motor characteristics captured during this test. This paper introduces a granular computer vision-based method for quantifying PD motor characteristics from video recordings. Four sets of clinically relevant features are proposed to characterize hypokinesia, bradykinesia, sequence effect, and hesitation-halts. We evaluate our approach on video recordings and clinical evaluations of 74 PD patients from the Personalized Parkinson Project. Principal component analysis with varimax rotation shows that the video-based features corresponded to the four deficits. Additionally, video-based analysis has allowed us to identify further granular distinctions within sequence effect and hesitation-halts deficits. In the following, we have used these features to train machine learning classifiers to estimate the Movement Disorder Society Unified Parkinson Disease Rating Scale (MDS-UPDRS) finger-tapping score. Compared to state-of-the-art approaches, our method achieves a higher accuracy in MDS-UPDRS score prediction, while still providing an interpretable quantification of individual finger-tapping motor characteristics. In summary, the proposed framework provides a practical solution for the objective assessment of PD motor characteristics, that can potentially be applied in both clinical and remote settings. Future work is needed to assess its responsiveness to symptomatic treatment and disease progression. 
+
+**Abstract (ZH)**: 准确量化帕金森病的运动特征对于监测疾病进展和优化治疗策略至关重要。指尖敲击测试是标准的运动评估方法。临床医生通过视觉评估患者的敲击表现，并依据振幅、速度和不规则性给出总体严重程度评分。然而，这种主观评估容易受到不同评估者之间及评估者自身的一致性问题，并未提供在此测试过程中捕捉到的个体运动特征的见解。本文介绍了一种基于计算机视觉的细腻方法，用于从视频记录中量化帕金森病的运动特征。提出了四组临床相关特征来表征运动减少、动作迟缓、序列效应和犹豫-停顿。我们利用来自个性化帕金森项目74名帕金森病患者的视频记录和临床评估数据，评估了该方法。主成分分析结合方差最大旋转表明，基于视频的特征与四种缺陷相对应。此外，基于视频的分析还允许我们在序列效应和犹豫-停顿缺陷中识别出进一步的细腻差异。随后，我们使用这些特征训练机器学习分类器以估计运动障碍学会统一帕金森病评定量表（MDS-UPDRS）的指尖敲击评分。与最先进的方法相比，我们的方法在MDS-UPDRS评分预测准确性方面更高，同时仍提供对个体指尖敲击运动特征的可解释量化。总之，所提出的框架为客观评估帕金森病的运动特征提供了一种实用解决方案，该方法可以潜在地应用于临床和远程环境。未来工作需要评估其对症状治疗和疾病进展的敏感性。 
+
+---
+# Connecting Vision and Emissions: A Behavioural AI Approach to Carbon Estimation in Road Design 
+
+**Title (ZH)**: 连接视觉与排放：基于行为AI的道路设计中碳排放估算方法 
+
+**Authors**: Ammar K Al Mhdawi, Nonso Nnamoko, Safanah Mudheher Raafat, M.K.S. Al-Mhdawi, Amjad J Humaidi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.18924)  
+
+**Abstract**: We present an enhanced YOLOv8 real time vehicle detection and classification framework, for estimating carbon emissions in urban environments. The system enhances YOLOv8 architecture to detect, segment, and track vehicles from live traffic video streams. Once a vehicle is localized, a dedicated deep learning-based identification module is employed to recognize license plates and classify vehicle types. Since YOLOv8 lacks the built-in capacity for fine grained recognition tasks such as reading license plates or determining vehicle attributes beyond class labels, our framework incorporates a hybrid pipeline where each detected vehicle is tracked and its bounding box is cropped and passed to a deep Optical Character Recognition (OCR) module. This OCR system, composed of multiple convolutional neural network (CNN) layers, is trained specifically for character-level detection and license plate decoding under varied conditions such as motion blur, occlusion, and diverse font styles. Additionally, the recognized plate information is validated using a real time API that cross references with an external vehicle registration database to ensure accurate classification and emission estimation. This multi-stage approach enables precise, automated calculation of per vehicle carbon emissions. Extensive evaluation was conducted using a diverse vehicle dataset enriched with segmentation masks and annotated license plates. The YOLOv8 detector achieved a mean Average Precision (mAP@0.5) of approximately 71% for bounding boxes and 70% for segmentation masks. Character level OCR accuracy reached up to 99% with the best performing CNN model. These results affirm the feasibility of combining real time object detection with deep OCR for practical deployment in smart transportation systems, offering a scalable solution for automated, vehicle specific carbon emission monitoring. 
+
+**Abstract (ZH)**: 增强YOLOv8实时车辆检测与分类框架及其在城市环境碳排放估算中的应用 
+
+---
