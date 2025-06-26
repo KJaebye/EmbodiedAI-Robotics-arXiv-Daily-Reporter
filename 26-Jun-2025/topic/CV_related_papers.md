@@ -1,0 +1,133 @@
+# Learning-Based Distance Estimation for 360° Single-Sensor Setups 
+
+**Title (ZH)**: 基于学习的360°单传感器设置距离估计 
+
+**Authors**: Yitong Quan, Benjamin Kiefer, Martin Messmer, Andreas Zell  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.20586)  
+
+**Abstract**: Accurate distance estimation is a fundamental challenge in robotic perception, particularly in omnidirectional imaging, where traditional geometric methods struggle with lens distortions and environmental variability. In this work, we propose a neural network-based approach for monocular distance estimation using a single 360° fisheye lens camera. Unlike classical trigonometric techniques that rely on precise lens calibration, our method directly learns and infers the distance of objects from raw omnidirectional inputs, offering greater robustness and adaptability across diverse conditions. We evaluate our approach on three 360° datasets (LOAF, ULM360, and a newly captured dataset Boat360), each representing distinct environmental and sensor setups. Our experimental results demonstrate that the proposed learning-based model outperforms traditional geometry-based methods and other learning baselines in both accuracy and robustness. These findings highlight the potential of deep learning for real-time omnidirectional distance estimation, making our approach particularly well-suited for low-cost applications in robotics, autonomous navigation, and surveillance. 
+
+**Abstract (ZH)**: 基于神经网络的单目360°鱼眼镜头深度估计方法 
+
+---
+# Lightweight Multi-Frame Integration for Robust YOLO Object Detection in Videos 
+
+**Title (ZH)**: 轻量级多帧集成方法在视频中实现鲁棒YOLO目标检测 
+
+**Authors**: Yitong Quan, Benjamin Kiefer, Martin Messmer, Andreas Zell  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.20550)  
+
+**Abstract**: Modern image-based object detection models, such as YOLOv7, primarily process individual frames independently, thus ignoring valuable temporal context naturally present in videos. Meanwhile, existing video-based detection methods often introduce complex temporal modules, significantly increasing model size and computational complexity. In practical applications such as surveillance and autonomous driving, transient challenges including motion blur, occlusions, and abrupt appearance changes can severely degrade single-frame detection performance. To address these issues, we propose a straightforward yet highly effective strategy: stacking multiple consecutive frames as input to a YOLO-based detector while supervising only the output corresponding to a single target frame. This approach leverages temporal information with minimal modifications to existing architectures, preserving simplicity, computational efficiency, and real-time inference capability. Extensive experiments on the challenging MOT20Det and our BOAT360 datasets demonstrate that our method improves detection robustness, especially for lightweight models, effectively narrowing the gap between compact and heavy detection networks. Additionally, we contribute the BOAT360 benchmark dataset, comprising annotated fisheye video sequences captured from a boat, to support future research in multi-frame video object detection in challenging real-world scenarios. 
+
+**Abstract (ZH)**: 基于现代图像对象检测模型（如YOLOv7）主要独立处理单帧图像并忽略视频中固有的时间上下文的问题，同时现有的基于视频的检测方法常引入复杂的时序模块，显著增加了模型大小和计算复杂度。在监控和自动驾驶等实际应用中，瞬时挑战如运动模糊、遮挡以及突然的外观变化会严重影响单帧检测性能。为解决这些问题，我们提出了一种简单而有效的策略：将多个连续帧作为输入传入YOLO基检测器，并仅监督与单个目标帧对应的输出。该方法在最小修改现有架构的情况下利用时间信息，保持了简洁性、计算效率和实时推理能力。在具有挑战性的MOT20Det和自主研发的BOAT360数据集上的大量实验表明，本方法提高了检测的鲁棒性，特别是对于轻量级模型，有效减小了紧凑型和重型检测网络之间的差距。此外，我们贡献了包含从船只捕获的鱼眼视频序列的BOAT360基准数据集，以支持在具有挑战性的现实场景下多帧视频对象检测的研究。 
+
+---
+# Disentangled representations of microscopy images 
+
+**Title (ZH)**: 显微图像的解耦表示 
+
+**Authors**: Jacopo Dapueto, Vito Paolo Pastore, Nicoletta Noceti, Francesca Odone  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.20649)  
+
+**Abstract**: Microscopy image analysis is fundamental for different applications, from diagnosis to synthetic engineering and environmental monitoring. Modern acquisition systems have granted the possibility to acquire an escalating amount of images, requiring a consequent development of a large collection of deep learning-based automatic image analysis methods. Although deep neural networks have demonstrated great performance in this field, interpretability, an essential requirement for microscopy image analysis, remains an open challenge.
+This work proposes a Disentangled Representation Learning (DRL) methodology to enhance model interpretability for microscopy image classification. Exploiting benchmark datasets from three different microscopic image domains (plankton, yeast vacuoles, and human cells), we show how a DRL framework, based on transferring a representation learnt from synthetic data, can provide a good trade-off between accuracy and interpretability in this domain. 
+
+**Abstract (ZH)**: 显微镜图像分析对于从诊断到合成工程和环境监测等不同应用至关重要。现代采集系统使得获取越来越多的图像成为可能，这要求开发大量的基于深度学习的自动图像分析方法。尽管深度神经网络在这个领域表现出了出色的效果，但对于显微镜图像分析至关重要的可解释性仍是一个开放的挑战。
+
+本文提出了一种解耦表示学习（DRL）方法，以增强显微镜图像分类模型的可解释性。利用来自三个不同显微镜图像领域的基准数据集（浮游生物、酵母Vacuoles和人类细胞），我们展示了基于从合成数据迁移学习得到的表示的DRL框架，能够在该领域提供准确性和可解释性之间的良好权衡。 
+
+---
+# Dense Video Captioning using Graph-based Sentence Summarization 
+
+**Title (ZH)**: 基于图结构句子总结的密集视频字幕生成 
+
+**Authors**: Zhiwang Zhang, Dong Xu, Wanli Ouyang, Luping Zhou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.20583)  
+
+**Abstract**: Recently, dense video captioning has made attractive progress in detecting and captioning all events in a long untrimmed video. Despite promising results were achieved, most existing methods do not sufficiently explore the scene evolution within an event temporal proposal for captioning, and therefore perform less satisfactorily when the scenes and objects change over a relatively long proposal. To address this problem, we propose a graph-based partition-and-summarization (GPaS) framework for dense video captioning within two stages. For the ``partition" stage, a whole event proposal is split into short video segments for captioning at a finer level. For the ``summarization" stage, the generated sentences carrying rich description information for each segment are summarized into one sentence to describe the whole event. We particularly focus on the ``summarization" stage, and propose a framework that effectively exploits the relationship between semantic words for summarization. We achieve this goal by treating semantic words as nodes in a graph and learning their interactions by coupling Graph Convolutional Network (GCN) and Long Short Term Memory (LSTM), with the aid of visual cues. Two schemes of GCN-LSTM Interaction (GLI) modules are proposed for seamless integration of GCN and LSTM. The effectiveness of our approach is demonstrated via an extensive comparison with the state-of-the-arts methods on the two benchmarks ActivityNet Captions dataset and YouCook II dataset. 
+
+**Abstract (ZH)**: 基于图的分割与总结框架（GPaS）用于视频事件描述的密集视频字幕 
+
+---
+# Show, Tell and Summarize: Dense Video Captioning Using Visual Cue Aided Sentence Summarization 
+
+**Title (ZH)**: 展示、描述和总结：基于视觉线索辅助句子总结的密集视频描述 
+
+**Authors**: Zhiwang Zhang, Dong Xu, Wanli Ouyang, Chuanqi Tan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.20567)  
+
+**Abstract**: In this work, we propose a division-and-summarization (DaS) framework for dense video captioning. After partitioning each untrimmed long video as multiple event proposals, where each event proposal consists of a set of short video segments, we extract visual feature (e.g., C3D feature) from each segment and use the existing image/video captioning approach to generate one sentence description for this segment. Considering that the generated sentences contain rich semantic descriptions about the whole event proposal, we formulate the dense video captioning task as a visual cue aided sentence summarization problem and propose a new two stage Long Short Term Memory (LSTM) approach equipped with a new hierarchical attention mechanism to summarize all generated sentences as one descriptive sentence with the aid of visual features. Specifically, the first-stage LSTM network takes all semantic words from the generated sentences and the visual features from all segments within one event proposal as the input, and acts as the encoder to effectively summarize both semantic and visual information related to this event proposal. The second-stage LSTM network takes the output from the first-stage LSTM network and the visual features from all video segments within one event proposal as the input, and acts as the decoder to generate one descriptive sentence for this event proposal. Our comprehensive experiments on the ActivityNet Captions dataset demonstrate the effectiveness of our newly proposed DaS framework for dense video captioning. 
+
+**Abstract (ZH)**: 基于分段和总结的密集视频描述框架 
+
+---
+# Pay Less Attention to Deceptive Artifacts: Robust Detection of Compressed Deepfakes on Online Social Networks 
+
+**Title (ZH)**: 较少关注欺骗性伪影：在线社交网络中压缩深度伪造的鲁棒检测 
+
+**Authors**: Manyi Li, Renshuai Tao, Yufan Liu, Chuangchuang Tan, Haotong Qin, Bing Li, Yunchao Wei, Yao Zhao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.20548)  
+
+**Abstract**: With the rapid advancement of deep learning, particularly through generative adversarial networks (GANs) and diffusion models (DMs), AI-generated images, or ``deepfakes", have become nearly indistinguishable from real ones. These images are widely shared across Online Social Networks (OSNs), raising concerns about their misuse. Existing deepfake detection methods overlook the ``block effects" introduced by compression in OSNs, which obscure deepfake artifacts, and primarily focus on raw images, rarely encountered in real-world scenarios. To address these challenges, we propose PLADA (Pay Less Attention to Deceptive Artifacts), a novel framework designed to tackle the lack of paired data and the ineffective use of compressed images. PLADA consists of two core modules: Block Effect Eraser (B2E), which uses a dual-stage attention mechanism to handle block effects, and Open Data Aggregation (ODA), which processes both paired and unpaired data to improve detection. Extensive experiments across 26 datasets demonstrate that PLADA achieves a remarkable balance in deepfake detection, outperforming SoTA methods in detecting deepfakes on OSNs, even with limited paired data and compression. More importantly, this work introduces the ``block effect" as a critical factor in deepfake detection, providing a robust solution for open-world scenarios. Our code is available at this https URL. 
+
+**Abstract (ZH)**: 随着深度学习的迅速发展，尤其是生成对抗网络（GANs）和扩散模型（DMs）的应用，AI生成的图像或“换脸”图像越来越难以与真实图像区分开来。这些图像在在线社交网络（OSNs）上广泛传播，引发了对其误用的担忧。现有换脸检测方法忽略了OSNs压缩引入的“块效应”，这些效应会掩盖换脸痕迹，并主要关注原始图像，而在真实场景中很少遇到。为应对这些挑战，我们提出了PLADA（忽略欺骗性伪影的关注），一个新框架，旨在解决配对数据缺乏和压缩图像无效使用的问题。PLADA由两个核心模块组成：块效应消除器（B2E），它采用双阶段注意力机制处理块效应，以及开放数据聚合器（ODA），它处理配对和未配对数据以提高检测效果。在26个数据集中进行的广泛实验表明，PLADA在OSNs中的换脸检测上表现出色，即使配对数据有限且存在压缩，其检测性能也优于当前最佳方法。更重要的是，本工作将“块效应”引入换脸检测的关键因素，为开放世界场景提供了稳健的解决方案。我们的代码可在以下链接获取。 
+
+---
+# Progressive Alignment Degradation Learning for Pansharpening 
+
+**Title (ZH)**: 渐进对齐退化学习融合 
+
+**Authors**: Enzhe Zhao, Zhichang Guo, Yao Li, Fanghui Song, Boying Wu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.20179)  
+
+**Abstract**: Deep learning-based pansharpening has been shown to effectively generate high-resolution multispectral (HRMS) images. To create supervised ground-truth HRMS images, synthetic data generated using the Wald protocol is commonly employed. This protocol assumes that networks trained on artificial low-resolution data will perform equally well on high-resolution data. However, well-trained models typically exhibit a trade-off in performance between reduced-resolution and full-resolution datasets. In this paper, we delve into the Wald protocol and find that its inaccurate approximation of real-world degradation patterns limits the generalization of deep pansharpening models. To address this issue, we propose the Progressive Alignment Degradation Module (PADM), which uses mutual iteration between two sub-networks, PAlignNet and PDegradeNet, to adaptively learn accurate degradation processes without relying on predefined operators. Building on this, we introduce HFreqdiff, which embeds high-frequency details into a diffusion framework and incorporates CFB and BACM modules for frequency-selective detail extraction and precise reverse process learning. These innovations enable effective integration of high-resolution panchromatic and multispectral images, significantly enhancing spatial sharpness and quality. Experiments and ablation studies demonstrate the proposed method's superior performance compared to state-of-the-art techniques. 
+
+**Abstract (ZH)**: 基于深度学习的多光谱高分辨率化已证明能有效生成高分辨率多光谱（HRMS）图像。为了创建监督地面真实HRMS图像，通常使用Wald协议生成的合成数据。该协议假设在低分辨率数据上训练的网络在高分辨率数据上表现相同。然而， 잘 훈련된 모델들은 줄怊分辨率和全分辨率数据集之间的性能之间通常存在权衡。本文探讨了Wald协议，并发现其对现实降解模式的不准确近似限制了深度多光谱高分辨率化模型的泛化能力。为了解决这一问题，我们提出了渐进对齐降解模块（PADM），该模块通过两个子网络PAlignNet和PDegradeNet之间的相互迭代，自适应地学习准确的降解过程，而不依赖于预定义的操作符。在此基础上，我们引入了HFreqdiff，该方法嵌入了高频细节到扩散框架中，并结合了CFB和BACM模块进行频率选择性细节提取和精确反向过程学习。这些创新使高分辨率全色和多光谱图像的有效集成成为可能，显著提升了空间锐度和质量。实验和消融研究表明，所提出的方法在与最新技术相比时表现出优越性。 
+
+---
+# BrokenVideos: A Benchmark Dataset for Fine-Grained Artifact Localization in AI-Generated Videos 
+
+**Title (ZH)**: 破碎视频：一种用于AI生成视频中细微瑕疵定位的数据集 
+
+**Authors**: Jiahao Lin, Weixuan Peng, Bojia Zi, Yifeng Gao, Xianbiao Qi, Xingjun Ma, Yu-Gang Jiang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.20103)  
+
+**Abstract**: Recent advances in deep generative models have led to significant progress in video generation, yet the fidelity of AI-generated videos remains limited. Synthesized content often exhibits visual artifacts such as temporally inconsistent motion, physically implausible trajectories, unnatural object deformations, and local blurring that undermine realism and user trust. Accurate detection and spatial localization of these artifacts are crucial for both automated quality control and for guiding the development of improved generative models. However, the research community currently lacks a comprehensive benchmark specifically designed for artifact localization in AI generated videos. Existing datasets either restrict themselves to video or frame level detection or lack the fine-grained spatial annotations necessary for evaluating localization methods. To address this gap, we introduce BrokenVideos, a benchmark dataset of 3,254 AI-generated videos with meticulously annotated, pixel-level masks highlighting regions of visual corruption. Each annotation is validated through detailed human inspection to ensure high quality ground truth. Our experiments show that training state of the art artifact detection models and multi modal large language models (MLLMs) on BrokenVideos significantly improves their ability to localize corrupted regions. Through extensive evaluation, we demonstrate that BrokenVideos establishes a critical foundation for benchmarking and advancing research on artifact localization in generative video models. The dataset is available at: this https URL. 
+
+**Abstract (ZH)**: 近期深度生成模型的进展在视频生成领域取得了显著成果，但AI生成视频的保真度仍然有限。合成内容中常常出现视觉伪影，如时间上不一致的运动、物理上不合理轨迹、不自然的对象变形和局部模糊，这些都会削弱视频的真实感和用户的信任度。准确检测和空间定位这些伪影对于自动化质量控制和改进生成模型的发展至关重要。然而，当前研究社区缺乏专门用于AI生成视频伪影定位的综合性基准。现有数据集要么仅关注视频或帧级检测，要么缺乏用于评估定位方法所需的精细空间注释。为解决这一问题，我们介绍了BrokenVideos，这是一个包含3,254个AI生成视频的基准数据集，这些视频具有详细像素级别的标注，标记出视觉损坏区域。每个注释都通过详细的人工检查来确保高质量的地面真相。我们的实验表明，将最先进的伪影检测模型和多模态大规模语言模型（MLLMs）训练在BrokenVideos上，可以显著提高它们定位损坏区域的能力。通过广泛的评估，我们证明BrokenVideos为生成视频模型中伪影定位的研究提供了关键的基础。数据集可在以下链接获取：this https URL。 
+
+---
+# VoxelOpt: Voxel-Adaptive Message Passing for Discrete Optimization in Deformable Abdominal CT Registration 
+
+**Title (ZH)**: VoxelOpt：用于可变形腹部CT配准的体素自适应消息传递离散优化 
+
+**Authors**: Hang Zhang, Yuxi Zhang, Jiazheng Wang, Xiang Chen, Renjiu Hu, Xin Tian, Gaolei Li, Min Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.19975)  
+
+**Abstract**: Recent developments in neural networks have improved deformable image registration (DIR) by amortizing iterative optimization, enabling fast and accurate DIR results. However, learning-based methods often face challenges with limited training data, large deformations, and tend to underperform compared to iterative approaches when label supervision is unavailable. While iterative methods can achieve higher accuracy in such scenarios, they are considerably slower than learning-based methods. To address these limitations, we propose VoxelOpt, a discrete optimization-based DIR framework that combines the strengths of learning-based and iterative methods to achieve a better balance between registration accuracy and runtime. VoxelOpt uses displacement entropy from local cost volumes to measure displacement signal strength at each voxel, which differs from earlier approaches in three key aspects. First, it introduces voxel-wise adaptive message passing, where voxels with lower entropy receives less influence from their neighbors. Second, it employs a multi-level image pyramid with 27-neighbor cost volumes at each level, avoiding exponential complexity growth. Third, it replaces hand-crafted features or contrastive learning with a pretrained foundational segmentation model for feature extraction. In abdominal CT registration, these changes allow VoxelOpt to outperform leading iterative in both efficiency and accuracy, while matching state-of-the-art learning-based methods trained with label supervision. The source code will be available at this https URL 
+
+**Abstract (ZH)**: 最近神经网络的发展通过减轻迭代优化提高了可变形图像配准（DIR）的速度和准确性，但基于学习的方法在有限的训练数据、大形变和无标签监督的情况下往往表现不佳，不如迭代方法准确。为了解决这些局限性，我们提出了一种名为VoxelOpt的离散优化基于DIR框架，结合了基于学习和迭代方法的优点，以实现更高的注册准确率和运行时间平衡。VoxelOpt使用局部代价体素中超移熵来衡量每个体素的超移信号强度，并从三个方面区别于早期方法：首先，引入了体素级自适应消息传递，低熵的体素受到邻居的影响较小；其次，使用多级图像金字塔，每一级采用27邻居代价体素，避免了复杂度的指数增长；最后，用预训练的基础分割模型替代手工特征或对比学习来进行特征提取。在腹部CT配准中，这些变化使得VoxelOpt在效率和准确性上优于领先的迭代方法，同时匹配使用标签监督训练的最先进基于学习的方法。源代码将在此处提供。 
+
+---
+# MATER: Multi-level Acoustic and Textual Emotion Representation for Interpretable Speech Emotion Recognition 
+
+**Title (ZH)**: 多层级声学和文本情绪表示用于可解释的语音情绪识别 
+
+**Authors**: Hyo Jin Jon, Longbin Jin, Hyuntaek Jung, Hyunseo Kim, Donghun Min, Eun Yi Kim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.19887)  
+
+**Abstract**: This paper presents our contributions to the Speech Emotion Recognition in Naturalistic Conditions (SERNC) Challenge, where we address categorical emotion recognition and emotional attribute prediction. To handle the complexities of natural speech, including intra- and inter-subject variability, we propose Multi-level Acoustic-Textual Emotion Representation (MATER), a novel hierarchical framework that integrates acoustic and textual features at the word, utterance, and embedding levels. By fusing low-level lexical and acoustic cues with high-level contextualized representations, MATER effectively captures both fine-grained prosodic variations and semantic nuances. Additionally, we introduce an uncertainty-aware ensemble strategy to mitigate annotator inconsistencies, improving robustness in ambiguous emotional expressions. MATER ranks fourth in both tasks with a Macro-F1 of 41.01% and an average CCC of 0.5928, securing second place in valence prediction with an impressive CCC of 0.6941. 
+
+**Abstract (ZH)**: 本研究对于自然语境下的语音情感识别挑战（SERNC）作出了贡献，主要涉及情感类别识别和情感属性预测。为处理自然语音的复杂性，包括个体间和个体内的 variability，我们提出了一种多级声学-文本情感表示（MATER），这是一种新颖的分层框架，集成了一句话、一句话和嵌入表示层次上的声学和文本特征。通过结合低层次的词汇和声学线索与高层次的上下文表示，MATER 有效地捕捉了细微的音调变化和语义 nuance。此外，我们引入了一种意识不确定性的集成策略，以缓解注释者不一致的问题，提升了在模糊情感表达方面的能力。MATER 在两个任务中均排名第四，宏 F1 得分为 41.01%，平均一致性系数（CCC）为 0.5928，并在情感倾向预测中取得了令人印象深刻的 CCC 得分 0.6941，获得第二名。 
+
+---
