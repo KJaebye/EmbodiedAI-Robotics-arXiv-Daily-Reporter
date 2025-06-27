@@ -1,0 +1,78 @@
+# SAM4D: Segment Anything in Camera and LiDAR Streams 
+
+**Title (ZH)**: SAM4D: 在相机和LiDAR流中进行分割 
+
+**Authors**: Jianyun Xu, Song Wang, Ziqian Ni, Chunyong Hu, Sheng Yang, Jianke Zhu, Qiang Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.21547)  
+
+**Abstract**: We present SAM4D, a multi-modal and temporal foundation model designed for promptable segmentation across camera and LiDAR streams. Unified Multi-modal Positional Encoding (UMPE) is introduced to align camera and LiDAR features in a shared 3D space, enabling seamless cross-modal prompting and interaction. Additionally, we propose Motion-aware Cross-modal Memory Attention (MCMA), which leverages ego-motion compensation to enhance temporal consistency and long-horizon feature retrieval, ensuring robust segmentation across dynamically changing autonomous driving scenes. To avoid annotation bottlenecks, we develop a multi-modal automated data engine that synergizes VFM-driven video masklets, spatiotemporal 4D reconstruction, and cross-modal masklet fusion. This framework generates camera-LiDAR aligned pseudo-labels at a speed orders of magnitude faster than human annotation while preserving VFM-derived semantic fidelity in point cloud representations. We conduct extensive experiments on the constructed Waymo-4DSeg, which demonstrate the powerful cross-modal segmentation ability and great potential in data annotation of proposed SAM4D. 
+
+**Abstract (ZH)**: SAM4D：一种面向相机和LiDAR流的可提示语义分割多模态和时间基础模型 
+
+---
+# ConViTac: Aligning Visual-Tactile Fusion with Contrastive Representations 
+
+**Title (ZH)**: ConViTac: 对比表示下的视觉-触觉融合对齐 
+
+**Authors**: Zhiyuan Wu, Yongqiang Zhao, Shan Luo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.20757)  
+
+**Abstract**: Vision and touch are two fundamental sensory modalities for robots, offering complementary information that enhances perception and manipulation tasks. Previous research has attempted to jointly learn visual-tactile representations to extract more meaningful information. However, these approaches often rely on direct combination, such as feature addition and concatenation, for modality fusion, which tend to result in poor feature integration. In this paper, we propose ConViTac, a visual-tactile representation learning network designed to enhance the alignment of features during fusion using contrastive representations. Our key contribution is a Contrastive Embedding Conditioning (CEC) mechanism that leverages a contrastive encoder pretrained through self-supervised contrastive learning to project visual and tactile inputs into unified latent embeddings. These embeddings are used to couple visual-tactile feature fusion through cross-modal attention, aiming at aligning the unified representations and enhancing performance on downstream tasks. We conduct extensive experiments to demonstrate the superiority of ConViTac in real world over current state-of-the-art methods and the effectiveness of our proposed CEC mechanism, which improves accuracy by up to 12.0% in material classification and grasping prediction tasks. 
+
+**Abstract (ZH)**: 视觉和触觉是机器人感知和执行任务的基本传感模态，能够提供互补的信息以增强感知和操作任务。以往的研究试图联合学习视觉-触觉表示，以提取更有意义的信息。然而，这些方法通常依赖于特征直接组合，如特征相加和连接，这种方式往往导致特征整合效果较差。本文提出了一种名为ConViTac的视觉-触觉表示学习网络，旨在通过对比表示增强融合过程中的特征对齐。我们的核心贡献是一种对比嵌入条件（CEC）机制，该机制利用通过自我监督对比学习预训练的对比编码器，将视觉和触觉输入投影到统一的潜在嵌入中。这些嵌入通过跨模态注意力机制耦合视觉-触觉特征融合，旨在对齐统一表示并提升下游任务的表现。我们进行了广泛的实验来证明，在真实世界的材料分类和抓取预测任务中，ConViTac在当前最先进的方法中表现出色，并且我们提出的CEC机制的有效性，该机制在材料分类和抓取预测任务中的准确率最多可以提高12.0%。 
+
+---
+# TableMoE: Neuro-Symbolic Routing for Structured Expert Reasoning in Multimodal Table Understanding 
+
+**Title (ZH)**: TableMoE: 结合神经与符号推理的多模态表格理解专家 reasoning 神经符号路由结构专家推理 
+
+**Authors**: Junwen Zhang, Pu Chen, Yin Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.21393)  
+
+**Abstract**: Multimodal understanding of tables in real-world contexts is challenging due to the complexity of structure, symbolic density, and visual degradation (blur, skew, watermarking, incomplete structures or fonts, multi-span or hierarchically nested layouts). Existing multimodal large language models (MLLMs) struggle with such WildStruct conditions, resulting in limited performance and poor generalization. To address these challenges, we propose TableMoE, a neuro-symbolic Mixture-of-Connector-Experts (MoCE) architecture specifically designed for robust, structured reasoning over multimodal table data. TableMoE features an innovative Neuro-Symbolic Routing mechanism, which predicts latent semantic token roles (e.g., header, data cell, axis, formula) and dynamically routes table elements to specialized experts (Table-to-HTML, Table-to-JSON, Table-to-Code) using a confidence-aware gating strategy informed by symbolic reasoning graphs. To facilitate effective alignment-driven pretraining, we introduce the large-scale TableMoE-Align dataset, consisting of 1.2M table-HTML-JSON-code quadruples across finance, science, biomedicine and industry, utilized exclusively for model pretraining. For evaluation, we curate and release four challenging WildStruct benchmarks: WMMFinQA, WMMTatQA, WMMTabDialog, and WMMFinanceMath, designed specifically to stress-test models under real-world multimodal degradation and structural complexity. Experimental results demonstrate that TableMoE significantly surpasses existing state-of-the-art models. Extensive ablation studies validate each core component, emphasizing the critical role of Neuro-Symbolic Routing and structured expert alignment. Through qualitative analyses, we further showcase TableMoE's interpretability and enhanced robustness, underscoring the effectiveness of integrating neuro-symbolic reasoning for multimodal table understanding. 
+
+**Abstract (ZH)**: 多模态环境下现实世界表格的理解具有挑战性，由于结构复杂性、符号密集度以及视觉退化（模糊、倾斜、水印、不完整结构或字体、多跨或层次嵌套布局）等原因。现有的大规模语言模型在这些“WildStruct”条件下表现不佳，导致性能有限且泛化能力差。为解决这些挑战，我们提出TableMoE，一种专为多模态表格数据提供稳健结构推理的神经符号Mixture-of-Connector-Experts（MoCE）架构。TableMoE 特设一种创新的神经符号路由机制，该机制预测潜在语义令牌角色（例如，表头、数据单元格、轴、公式），并利用基于符号推理图的置信度感知门控策略将表格元素动态路由至专门的专家（表到HTML、表到JSON、表到代码）。为了促进有效的对齐驱动预训练，我们引入了大规模的TableMoE-Align数据集，包含120万张表格-HTML-JSON-代码四元组，这些数据仅用于模型预训练。为评估目的，我们精心策划并发布了四个具有挑战性的“WildStruct”基准：WMMFinQA、WMMTatQA、WMMTabDialog 和 WMMFinanceMath，这些基准旨在在现实世界多模态退化和结构复杂性条件下测试模型。实验结果表明，TableMoE 显著超越现有最先进的模型。广泛的消融研究验证了每个核心组件的作用，强调了神经符号路由和结构专家对齐的至关重要性。通过定量分析，我们进一步展示了TableMoE 的可解释性和增强的鲁棒性，突显了在多模态表格理解中结合神经符号推理的有效性。 
+
+---
+# Multimodal Prompt Alignment for Facial Expression Recognition 
+
+**Title (ZH)**: 多模态提示对齐在面部表情识别中的应用 
+
+**Authors**: Fuyan Ma, Yiran He, Bin Sun, Shutao Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.21017)  
+
+**Abstract**: Prompt learning has been widely adopted to efficiently adapt vision-language models (VLMs) like CLIP for various downstream tasks. Despite their success, current VLM-based facial expression recognition (FER) methods struggle to capture fine-grained textual-visual relationships, which are essential for distinguishing subtle differences between facial expressions. To address this challenge, we propose a multimodal prompt alignment framework for FER, called MPA-FER, that provides fine-grained semantic guidance to the learning process of prompted visual features, resulting in more precise and interpretable representations. Specifically, we introduce a multi-granularity hard prompt generation strategy that utilizes a large language model (LLM) like ChatGPT to generate detailed descriptions for each facial expression. The LLM-based external knowledge is injected into the soft prompts by minimizing the feature discrepancy between the soft prompts and the hard prompts. To preserve the generalization abilities of the pretrained CLIP model, our approach incorporates prototype-guided visual feature alignment, ensuring that the prompted visual features from the frozen image encoder align closely with class-specific prototypes. Additionally, we propose a cross-modal global-local alignment module that focuses on expression-relevant facial features, further improving the alignment between textual and visual features. Extensive experiments demonstrate our framework outperforms state-of-the-art methods on three FER benchmark datasets, while retaining the benefits of the pretrained model and minimizing computational costs. 
+
+**Abstract (ZH)**: 基于多模态提示对齐的面部表情识别框架(MPA-FER) 
+
+---
+# OmniEval: A Benchmark for Evaluating Omni-modal Models with Visual, Auditory, and Textual Inputs 
+
+**Title (ZH)**: 全模态评估：一种基于视觉、听觉和文本输入的模态模型评价基准 
+
+**Authors**: Yiman Zhang, Ziheng Luo, Qiangyu Yan, Wei He, Borui Jiang, Xinghao Chen, Kai Han  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.20960)  
+
+**Abstract**: In this paper, we introduce OmniEval, a benchmark for evaluating omni-modality models like MiniCPM-O 2.6, which encompasses visual, auditory, and textual inputs. Compared with existing benchmarks, our OmniEval has several distinctive features: (i) Full-modal collaboration: We design evaluation tasks that highlight the strong coupling between audio and video, requiring models to effectively leverage the collaborative perception of all modalities; (ii) Diversity of videos: OmniEval includes 810 audio-visual synchronized videos, 285 Chinese videos and 525 English videos; (iii) Diversity and granularity of tasks: OmniEval contains 2617 question-answer pairs, comprising 1412 open-ended questions and 1205 multiple-choice questions. These questions are divided into 3 major task types and 12 sub-task types to achieve comprehensive evaluation. Among them, we introduce a more granular video localization task named Grounding. Then we conduct experiments on OmniEval with several omni-modality models. We hope that our OmniEval can provide a platform for evaluating the ability to construct and understand coherence from the context of all modalities. Codes and data could be found at this https URL. 
+
+**Abstract (ZH)**: 本研究介绍了一种名为OmniEval的基准测试，用于评估如MiniCPM-O 2.6等全模态模型，涵盖了视觉、听觉和文本输入。与现有基准相比，我们的OmniEval具有以下几个distinctive特征：（i）全模态协作：设计评估任务以突出音频和视频之间的强大耦合，要求模型有效地利用所有模态的协作感知；（ii）多样的视频：OmniEval包括810个音频-视觉同步视频、285个中文视频和525个英语视频；（iii）多样性和细粒度的任务：OmniEval包含2617个问答对，其中包括1412个开放型问题和1205个多选题。这些问题被分为3大类任务和12个小类任务，以实现全面评估。其中，我们引入了一个更细粒度的视频定位任务，名为Grounding。然后在OmniEval上对若干全模态模型进行了实验。我们希望OmniEval能够提供一个平台，以评估在所有模态上下文中构建和理解连贯性的能力。代码和数据可在以下链接找到：this https URL。 
+
+---
+# MultiFinRAG: An Optimized Multimodal Retrieval-Augmented Generation (RAG) Framework for Financial Question Answering 
+
+**Title (ZH)**: MultiFinRAG：一种优化的多模态检索增强生成（RAG）框架，用于金融问答 
+
+**Authors**: Chinmay Gondhalekar, Urjitkumar Patel, Fang-Chun Yeh  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.20821)  
+
+**Abstract**: Financial documents--such as 10-Ks, 10-Qs, and investor presentations--span hundreds of pages and combine diverse modalities, including dense narrative text, structured tables, and complex figures. Answering questions over such content often requires joint reasoning across modalities, which strains traditional large language models (LLMs) and retrieval-augmented generation (RAG) pipelines due to token limitations, layout loss, and fragmented cross-modal context. We introduce MultiFinRAG, a retrieval-augmented generation framework purpose-built for financial QA. MultiFinRAG first performs multimodal extraction by grouping table and figure images into batches and sending them to a lightweight, quantized open-source multimodal LLM, which produces both structured JSON outputs and concise textual summaries. These outputs, along with narrative text, are embedded and indexed with modality-aware similarity thresholds for precise retrieval. A tiered fallback strategy then dynamically escalates from text-only to text+table+image contexts when necessary, enabling cross-modal reasoning while reducing irrelevant context. Despite running on commodity hardware, MultiFinRAG achieves 19 percentage points higher accuracy than ChatGPT-4o (free-tier) on complex financial QA tasks involving text, tables, images, and combined multimodal reasoning. 
+
+**Abstract (ZH)**: 多模态金融QA系统：MultiFinRAG 
+
+---
