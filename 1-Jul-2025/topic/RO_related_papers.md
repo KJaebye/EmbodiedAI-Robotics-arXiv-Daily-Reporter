@@ -1,0 +1,222 @@
+# A comprehensive control architecture for semi-autonomous dual-arm robots in agriculture settings 
+
+**Title (ZH)**: 农业环境中半自主双臂机器人全面控制架构 
+
+**Authors**: Jozsef Palmieri, Paolo Di Lillo, Stefano Chiaverini, Alessandro Marino  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.23723)  
+
+**Abstract**: The adoption of mobile robotic platforms in complex environments, such as agricultural settings, requires these systems to exhibit a flexible yet effective architecture that integrates perception and control. In such scenarios, several tasks need to be accomplished simultaneously, ranging from managing robot limits to performing operational tasks and handling human inputs. The purpose of this paper is to present a comprehensive control architecture for achieving complex tasks such as robotized harvesting in vineyards within the framework of the European project CANOPIES. In detail, a 16-DOF dual-arm mobile robot is employed, controlled via a Hierarchical Quadratic Programming (HQP) approach capable of handling both equality and inequality constraints at various priorities to harvest grape bunches selected by the perception system developed within the project. Furthermore, given the complexity of the scenario and the uncertainty in the perception system, which could potentially lead to collisions with the environment, the handling of interaction forces is necessary. Remarkably, this was achieved using the same HQP framework. This feature is further leveraged to enable semi-autonomous operations, allowing a human operator to assist the robotic counterpart in completing harvesting tasks. Finally, the obtained results are validated through extensive testing conducted first in a laboratory environment to prove individual functionalities, then in a real vineyard, encompassing both autonomous and semi-autonomous grape harvesting operations. 
+
+**Abstract (ZH)**: 移动机器人平台在复杂环境中的采用：以欧洲项目CANOPIES框架下的葡萄园机器人采收为例，需要这些系统具备灵活而有效的架构，整合感知与控制。在这种场景中，需要同时完成的任务包括管理机器人限制、执行操作任务以及处理人类输入。本文旨在提出一种综合控制架构，以在CANOPIES项目框架下实现复杂任务，如葡萄园中的机器人采收。详细而言，使用了一个16自由度的双臂移动机器人，通过能够处理不同优先级等式和不等式约束的层次二次规划（HQP）方法进行控制，该感知系统选定了要采收的葡萄串。此外，鉴于场景的复杂性和感知系统的不确定性，可能导致与环境的碰撞，因此处理交互力是必需的。这一功能进一步被用于实现半自主操作，允许人类操作员协助机器人 counterpart 完成采收任务。最后，通过在实验室环境和真实葡萄园中进行广泛的测试来验证获得的结果，涵盖了自主和半自主葡萄采收操作。 
+
+---
+# Towards Universal Shared Control in Teleoperation Without Haptic Feedback 
+
+**Title (ZH)**: 面向无触觉反馈的远程操作通用共享控制 
+
+**Authors**: Max Grobbel, Tristan Schneider, Sören Hohmann  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.23624)  
+
+**Abstract**: Teleoperation with non-haptic VR controllers deprives human operators of critical motion feedback. We address this by embedding a multi-objective optimization problem that converts user input into collision-free UR5e joint trajectories while actively suppressing liquid slosh in a glass. The controller maintains 13 ms average planning latency, confirming real-time performance and motivating the augmentation of this teleoperation approach to further objectives. 
+
+**Abstract (ZH)**: 基于非力反馈VR控制器的远程操作剥夺了人类操作者关键运动反馈。通过嵌入多目标优化问题将用户输入转换为碰撞-free UR5e 关节轨迹并主动抑制玻璃中的液体晃动来解决这一问题。控制器保持13 ms 平均规划延迟，证实了实时性能并推动进一步扩展该远程操作方法以实现更多目标。 
+
+---
+# Passage-traversing optimal path planning with sampling-based algorithms 
+
+**Title (ZH)**: 基于采样方法的路径穿越最优路径规划 
+
+**Authors**: Jing Huang, Hao Su, Kwok Wai Samuel Au  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.23614)  
+
+**Abstract**: This paper introduces a new paradigm of optimal path planning, i.e., passage-traversing optimal path planning (PTOPP), that optimizes paths' traversed passages for specified optimization objectives. In particular, PTOPP is utilized to find the path with optimal accessible free space along its entire length, which represents a basic requirement for paths in robotics. As passages are places where free space shrinks and becomes constrained, the core idea is to leverage the path's passage traversal status to characterize its accessible free space comprehensively. To this end, a novel passage detection and free space decomposition method using proximity graphs is proposed, enabling fast detection of sparse but informative passages and environment decompositions. Based on this preprocessing, optimal path planning with accessible free space objectives or constraints is formulated as PTOPP problems compatible with sampling-based optimal planners. Then, sampling-based algorithms for PTOPP, including their dependent primitive procedures, are developed leveraging partitioned environments for fast passage traversal check. All these methods are implemented and thoroughly tested for effectiveness and efficiency validation. Compared to existing approaches, such as clearance-based methods, PTOPP demonstrates significant advantages in configurability, solution optimality, and efficiency, addressing prior limitations and incapabilities. It is believed to provide an efficient and versatile solution to accessible free space optimization over conventional avenues and more generally, to a broad class of path planning problems that can be formulated as PTOPP. 
+
+**Abstract (ZH)**: 基于通过区域最优路径规划的全域可达自由空间优化 
+
+---
+# Online Human Action Detection during Escorting 
+
+**Title (ZH)**: 在线随行中的人体动作检测 
+
+**Authors**: Siddhartha Mondal, Avik Mitra, Chayan Sarkar  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.23573)  
+
+**Abstract**: The deployment of robot assistants in large indoor spaces has seen significant growth, with escorting tasks becoming a key application. However, most current escorting robots primarily rely on navigation-focused strategies, assuming that the person being escorted will follow without issue. In crowded environments, this assumption often falls short, as individuals may struggle to keep pace, become obstructed, get distracted, or need to stop unexpectedly. As a result, conventional robotic systems are often unable to provide effective escorting services due to their limited understanding of human movement dynamics. To address these challenges, an effective escorting robot must continuously detect and interpret human actions during the escorting process and adjust its movement accordingly. However, there is currently no existing dataset designed specifically for human action detection in the context of escorting. Given that escorting often occurs in crowded environments, where other individuals may enter the robot's camera view, the robot also needs to identify the specific human it is escorting (the subject) before predicting their actions. Since no existing model performs both person re-identification and action prediction in real-time, we propose a novel neural network architecture that can accomplish both tasks. This enables the robot to adjust its speed dynamically based on the escortee's movements and seamlessly resume escorting after any disruption. In comparative evaluations against strong baselines, our system demonstrates superior efficiency and effectiveness, showcasing its potential to significantly improve robotic escorting services in complex, real-world scenarios. 
+
+**Abstract (ZH)**: 大型室内空间中伴随机器人助理的部署已经取得了显著增长，伴随任务成为关键应用。然而，当前大多数伴随机器人主要依赖于导航导向策略，假设被伴随的人会无障碍地跟随。在拥挤环境中，这一假设往往不成立，因为个人可能会难以保持步伐、受到阻碍、分心或突然停下。因此，由于传统机器人系统对人类运动动态的理解有限，它们往往无法提供有效的伴随服务。为应对这些挑战，一个有效的伴随机器人必须在整个伴随过程中连续检测和解释人类行为，并相应调整其移动。然而，目前尚无专门针对伴随环境中人类行为检测的数据集。由于伴随经常发生在其他个体可能进入机器人摄像头视野的拥挤环境中，机器人在预测行为之前也需要识别它所伴随的具体人类（目标）。由于目前没有模型能够实时同时执行人体重新识别和行为预测，我们提出了一种新的神经网络架构，能够同时完成这两项任务。这使得机器人可以根据伴随对象的移动动态调整速度，并在任何中断后无缝恢复伴随。在与强基线的对比评估中，我们的系统表现出更高的效率和效果，展示了其在复杂现实场景中显著改善机器人伴随服务的潜力。 
+
+---
+# A Model Predictive Control Framework to Enhance Safety and Quality in Mobile Additive Manufacturing Systems 
+
+**Title (ZH)**: 一种用于提高移动增材制造系统安全性和质量的模型预测控制框架 
+
+**Authors**: Yifei Li, Joshua A. Robbins, Guha Manogharan, Herschel C. Pangborn, Ilya Kovalenko  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.23400)  
+
+**Abstract**: In recent years, the demand for customized, on-demand production has grown in the manufacturing sector. Additive Manufacturing (AM) has emerged as a promising technology to enhance customization capabilities, enabling greater flexibility, reduced lead times, and more efficient material usage. However, traditional AM systems remain constrained by static setups and human worker dependencies, resulting in long lead times and limited scalability. Mobile robots can improve the flexibility of production systems by transporting products to designated locations in a dynamic environment. By integrating AM systems with mobile robots, manufacturers can optimize travel time for preparatory tasks and distributed printing operations. Mobile AM robots have been deployed for on-site production of large-scale structures, but often neglect critical print quality metrics like surface roughness. Additionally, these systems do not have the precision necessary for producing small, intricate components. We propose a model predictive control framework for a mobile AM platform that ensures safe navigation on the plant floor while maintaining high print quality in a dynamic environment. Three case studies are used to test the feasibility and reliability of the proposed systems. 
+
+**Abstract (ZH)**: 近年来，制造业对定制化、按需生产的旺盛需求推动了增材制造（AM）技术的发展，这种技术能够提升定制能力，增加灵活性，缩短交货时间，并实现更高效的材料利用。然而，传统AM系统仍受限于固定配置和人工操作依赖，导致交货时间长和扩展性有限。移动机器人可以通过在动态环境中将产品运输到指定位置来提高生产系统的灵活性。通过将AM系统与移动机器人相结合，制造商可以优化准备工作和分布式打印操作的行程时间。虽然移动AM机器人已经应用于现场大规模结构的生产，但在保证关键打印质量指标（如表面粗糙度）方面常常不足。此外，这些系统对于生产小型精细组件缺乏必要的精度。我们提出了一种用于移动AM平台的模型预测控制框架，既能确保在车间地面上的安全导航，又能保持在动态环境下高打印质量。我们通过三个案例研究验证了所提系统的可行性和可靠性。 
+
+---
+# Safe and Performant Deployment of Autonomous Systems via Model Predictive Control and Hamilton-Jacobi Reachability Analysis 
+
+**Title (ZH)**: 基于模型预测控制和哈密尔顿-雅可比可达性分析的自主系统安全高效部署 
+
+**Authors**: Hao Wang, Armand Jordana, Ludovic Righetti, Somil Bansal  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.23346)  
+
+**Abstract**: While we have made significant algorithmic developments to enable autonomous systems to perform sophisticated tasks, it remains difficult for them to perform tasks effective and safely. Most existing approaches either fail to provide any safety assurances or substantially compromise task performance for safety. In this work, we develop a framework, based on model predictive control (MPC) and Hamilton-Jacobi (HJ) reachability, to optimize task performance for autonomous systems while respecting the safety constraints. Our framework guarantees recursive feasibility for the MPC controller, and it is scalable to high-dimensional systems. We demonstrate the effectiveness of our framework with two simulation studies using a 4D Dubins Car and a 6 Dof Kuka iiwa manipulator, and the experiments show that our framework significantly improves the safety constraints satisfaction of the systems over the baselines. 
+
+**Abstract (ZH)**: 尽管我们在使自主系统能够执行复杂任务方面取得了显著的算法进步，但它们在有效且安全地执行任务方面仍面临困难。大多数现有方法要么无法提供任何安全保证，要么为了安全而大幅牺牲任务性能。在本项工作中，我们基于模型预测控制（MPC）和哈密尔顿-雅可比（HJ）可达性的发展了一个框架，旨在在遵守安全约束的同时优化自主系统的任务性能。我们的框架保证了MPC控制器的递归可行性，并能扩展到高维系统。我们通过使用4D杜宾车和6自由度库卡iiwa操作器的两个仿真研究展示了该框架的有效性，并且实验结果表明，与基线方法相比，我们的框架显著提高了系统的安全约束满足程度。 
+
+---
+# Moving Matter: Using a Single, Simple Robot to Reconfigure a Connected Set of Building Blocks 
+
+**Title (ZH)**: 移动物质：使用单个简单的机器人重新配置一组相连的积木 
+
+**Authors**: Javier Garcia, Jonas Friemel, Ramin Kosfeld, Michael Yannuzzi, Peter Kramer, Christian Rieck, Christian Scheffer, Arne Schmidt, Harm Kube, Dan Biediger, Sándor P. Fekete, Aaron T. Becker  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.23333)  
+
+**Abstract**: We implement and evaluate different methods for the reconfiguration of a connected arrangement of tiles into a desired target shape, using a single active robot that can move along the tile structure. This robot can pick up, carry, or drop off one tile at a time, but it must maintain a single connected configuration at all times.
+Becker et al. (CCCG 2025) recently proposed an algorithm that uses histograms as canonical intermediate configurations, guaranteeing performance within a constant factor of the optimal solution if the start and target configuration are well-separated. We implement and evaluate this algorithm, both in a simulated and practical setting, using an inchworm type robot to compare it with two existing heuristic algorithms. 
+
+**Abstract (ZH)**: 我们实现并评估了不同的方法，用于通过单个活动机器人重新配置连接的砖块排列以达到 desired 目标形状，该机器人可以一次拾取、携带或放下一块砖块，同时始终保持单个连通的配置。Becker 等人（CCCG 2025）最近提出了一种使用直方图作为规范中间配置的算法，如果起始和目标配置分离良好，则该算法的性能可在最优解的常数因子内得到保证。我们在模拟和实际环境中实现了并评估了该算法，并使用一种类似于inchworm的机器人与两种现有的启发式算法进行了比较。 
+
+---
+# DexH2R: A Benchmark for Dynamic Dexterous Grasping in Human-to-Robot Handover 
+
+**Title (ZH)**: DexH2R：人体传递给人工智能手的动态灵巧抓取基准 
+
+**Authors**: Youzhuo Wang, Jiayi Ye, Chuyang Xiao, Yiming Zhong, Heng Tao, Hang Yu, Yumeng Liu, Jingyi Yu, Yuexin Ma  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.23152)  
+
+**Abstract**: Handover between a human and a dexterous robotic hand is a fundamental yet challenging task in human-robot collaboration. It requires handling dynamic environments and a wide variety of objects and demands robust and adaptive grasping strategies. However, progress in developing effective dynamic dexterous grasping methods is limited by the absence of high-quality, real-world human-to-robot handover datasets. Existing datasets primarily focus on grasping static objects or rely on synthesized handover motions, which differ significantly from real-world robot motion patterns, creating a substantial gap in applicability. In this paper, we introduce DexH2R, a comprehensive real-world dataset for human-to-robot handovers, built on a dexterous robotic hand. Our dataset captures a diverse range of interactive objects, dynamic motion patterns, rich visual sensor data, and detailed annotations. Additionally, to ensure natural and human-like dexterous motions, we utilize teleoperation for data collection, enabling the robot's movements to align with human behaviors and habits, which is a crucial characteristic for intelligent humanoid robots. Furthermore, we propose an effective solution, DynamicGrasp, for human-to-robot handover and evaluate various state-of-the-art approaches, including auto-regressive models and diffusion policy methods, providing a thorough comparison and analysis. We believe our benchmark will drive advancements in human-to-robot handover research by offering a high-quality dataset, effective solutions, and comprehensive evaluation metrics. 
+
+**Abstract (ZH)**: 人与灵巧机械手之间的交接操作是人机协作中一个基本但也极具挑战性的任务。它要求处理动态环境和各种各样的物体，并需要稳健且适应性强的抓取策略。然而，由于高质量的实际人到机器人力学交接数据集的缺乏，有效动态灵巧抓取方法的发展受到了限制。现有数据集主要关注静态物体的抓取或依赖于合成的交接动作，这些动作与实际机器人的运动模式有显著差异，造成了实际应用中的差距。在本文中，我们引入了DexH2R，一个基于灵巧机械手的人到机器人力学交接综合现实数据集。我们的数据集捕捉了一种多样化的交互物体、动态运动模式、丰富的视觉传感数据以及详细的标注。此外，为了确保自然且类似人类的灵巧动作，我们利用遥控操作进行数据采集，使机器人的动作能够与人类的行为和习惯相一致，这对于智能类人机器人来说是至关重要的特征。此外，我们还提出了一个有效的解决方案DynamicGrasp，用于人到机器人的交接，并评估了包括自回归模型和扩散策略方法在内的多种最新方法，提供了详细的比较和分析。我们相信，我们的基准将通过提供高质量的数据集、有效解决方案和全面的评估指标推动人到机器人力学交接研究的进步。 
+
+---
+# Flatness-based Finite-Horizon Multi-UAV Formation Trajectory Planning and Directionally Aware Collision Avoidance Tracking 
+
+**Title (ZH)**: 基于平坦性有限时域多无人机编队轨迹规划及方向感知避碰跟踪 
+
+**Authors**: Hossein B. Jond, Logan Beaver, Martin Jiroušek, Naiemeh Ahmadlou, Veli Bakırcıoğlu, Martin Saska  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.23129)  
+
+**Abstract**: Collision-free optimal formation control of unmanned aerial vehicle (UAV) teams is challenging. The state-of-the-art optimal control approaches often rely on numerical methods sensitive to initial guesses. This paper presents an innovative collision-free finite-time formation control scheme for multiple UAVs leveraging the differential flatness of the UAV dynamics, eliminating the need for numerical methods. We formulate a finite-time optimal control problem to plan a formation trajectory for feasible initial states. This formation trajectory planning optimal control problem involves a collective performance index to meet the formation requirements of achieving relative positions and velocity consensus. It is solved by applying Pontryagin's principle. Subsequently, a collision-constrained regulating problem is addressed to ensure collision-free tracking of the planned formation trajectory. The tracking problem incorporates a directionally aware collision avoidance strategy that prioritizes avoiding UAVs in the forward path and relative approach. It assigns lower priority to those on the sides with an oblique relative approach and disregards UAVs behind and not in the relative approach. The simulation results for a four-UAV team (re)formation problem confirm the efficacy of the proposed control scheme. 
+
+**Abstract (ZH)**: 多旋翼无人机（UAV）团队碰撞-free有限时间编队控制方案：利用无人机动力学的微分平坦性消除数值方法依赖性 
+
+---
+# Energy-Constrained Resilient Multi-Robot Coverage Control 
+
+**Title (ZH)**: 能量约束下的鲁棒多机器人覆盖控制 
+
+**Authors**: Kartik A. Pant, Jaehyeok Kim, James M. Goppert, Inseok Hwang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.22942)  
+
+**Abstract**: The problem of multi-robot coverage control becomes significantly challenging when multiple robots leave the mission space simultaneously to charge their batteries, disrupting the underlying network topology for communication and sensing. To address this, we propose a resilient network design and control approach that allows robots to achieve the desired coverage performance while satisfying energy constraints and maintaining network connectivity throughout the mission. We model the combined motion, energy, and network dynamics of the multirobot systems (MRS) as a hybrid system with three modes, i.e., coverage, return-to-base, and recharge, respectively. We show that ensuring the energy constraints can be transformed into designing appropriate guard conditions for mode transition between each of the three modes. Additionally, we present a systematic procedure to design, maintain, and reconfigure the underlying network topology using an energy-aware bearing rigid network design, enhancing the structural resilience of the MRS even when a subset of robots departs to charge their batteries. Finally, we validate our proposed method using numerical simulations. 
+
+**Abstract (ZH)**: 多机器人覆盖控制问题在多个机器人同时离开任务空间进行充电时变得更加具有挑战性，这会破坏通信和感知所依赖的网络拓扑结构。为了解决这一问题，本文提出了一种鲁棒网络设计与控制方法，使机器人能够在满足能量约束和在整个任务过程中保持网络连通性的前提下，实现所需的覆盖性能。我们将多机器人系统的联合运动、能量和网络动力学建模为具有三种模式的混合系统，即覆盖模式、返回基地模式和充电模式。我们证明，确保能量约束可以转化为为每种模式之间的状态转换设计适当的守门条件。此外，本文还提出了一个系统性的方法，使用能量感知的刚性网络设计来设计、维护并重新配置底层网络拓扑结构，即使一个子集的机器人离开充电，也能增强多机器人系统的结构鲁棒性。最后，通过数值仿真验证了所提出的方法。 
+
+---
+# Safe Reinforcement Learning with a Predictive Safety Filter for Motion Planning and Control: A Drifting Vehicle Example 
+
+**Title (ZH)**: 基于预测安全过滤器的安全强化学习：以漂移车辆为例Motion Planning and Control 
+
+**Authors**: Bei Zhou, Baha Zarrouki, Mattia Piccinini, Cheng Hu, Lei Xie, Johannes Betz  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.22894)  
+
+**Abstract**: Autonomous drifting is a complex and crucial maneuver for safety-critical scenarios like slippery roads and emergency collision avoidance, requiring precise motion planning and control. Traditional motion planning methods often struggle with the high instability and unpredictability of drifting, particularly when operating at high speeds. Recent learning-based approaches have attempted to tackle this issue but often rely on expert knowledge or have limited exploration capabilities. Additionally, they do not effectively address safety concerns during learning and deployment. To overcome these limitations, we propose a novel Safe Reinforcement Learning (RL)-based motion planner for autonomous drifting. Our approach integrates an RL agent with model-based drift dynamics to determine desired drift motion states, while incorporating a Predictive Safety Filter (PSF) that adjusts the agent's actions online to prevent unsafe states. This ensures safe and efficient learning, and stable drift operation. We validate the effectiveness of our method through simulations on a Matlab-Carsim platform, demonstrating significant improvements in drift performance, reduced tracking errors, and computational efficiency compared to traditional methods. This strategy promises to extend the capabilities of autonomous vehicles in safety-critical maneuvers. 
+
+**Abstract (ZH)**: 自主漂移是一种在滑腻路面和紧急碰撞避险等安全关键场景中复杂而至关重要的操作，要求精确的运动规划和控制。传统运动规划方法往往难以应对高滑移性和不可预测性的漂移操作，特别是在高速运行时。近期的学习方法尝试解决这一问题，但往往依赖专家知识或探索能力有限，并且在学习和部署过程中未能有效解决安全性问题。为克服这些局限，我们提出了一种新的基于安全强化学习（RL）的自主漂移运动规划方法。该方法将RL代理与模型驱动的漂移动力学相结合，以确定期望的漂移运动状态，并综合一种预测安全性滤波器（PSF），该滤波器在线调整代理的动作以防止出现不安全状态。这确保了安全高效的学习和稳定的漂移操作。我们通过在Matlab-Carsim平台上进行的仿真验证了该方法的有效性，展示了与传统方法相比改进显著的漂移性能、减小的跟踪误差和更高的计算效率。该策略有望扩展自主车辆在安全关键操作中的能力。 
+
+---
+# SPI-BoTER: Error Compensation for Industrial Robots via Sparse Attention Masking and Hybrid Loss with Spatial-Physical Information 
+
+**Title (ZH)**: 基于稀疏注意力掩蔽和空间物理信息融合损失的工业机器人误差补偿方法SPI-BoTER 
+
+**Authors**: Xuao Hou, Yongquan Jia, Shijin Zhang, Yuqiang Wu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.22788)  
+
+**Abstract**: The widespread application of industrial robots in fields such as cutting and welding has imposed increasingly stringent requirements on the trajectory accuracy of end-effectors. However, current error compensation methods face several critical challenges, including overly simplified mechanism modeling, a lack of physical consistency in data-driven approaches, and substantial data requirements. These issues make it difficult to achieve both high accuracy and strong generalization simultaneously. To address these challenges, this paper proposes a Spatial-Physical Informed Attention Residual Network (SPI-BoTER). This method integrates the kinematic equations of the robotic manipulator with a Transformer architecture enhanced by sparse self-attention masks. A parameter-adaptive hybrid loss function incorporating spatial and physical information is employed to iteratively optimize the network during training, enabling high-precision error compensation under small-sample conditions. Additionally, inverse joint angle compensation is performed using a gradient descent-based optimization method. Experimental results on a small-sample dataset from a UR5 robotic arm (724 samples, with a train:test:validation split of 8:1:1) demonstrate the superior performance of the proposed method. It achieves a 3D absolute positioning error of 0.2515 mm with a standard deviation of 0.15 mm, representing a 35.16\% reduction in error compared to conventional deep neural network (DNN) methods. Furthermore, the inverse angle compensation algorithm converges to an accuracy of 0.01 mm within an average of 147 iterations. This study presents a solution that combines physical interpretability with data adaptability for high-precision control of industrial robots, offering promising potential for the reliable execution of precision tasks in intelligent manufacturing. 
+
+**Abstract (ZH)**: 工业机器人在切割和焊接等领域中的广泛应用于不断提高末端执行器轨迹精度的要求。然而，当前的误差补偿方法面临简化机械模型、数据驱动方法缺乏物理一致性以及数据需求量大的挑战。这些问题使得同时实现高精度和强泛化能力变得困难。为应对这些挑战，本文提出了一种空间物理信息注意残差网络（Spatial-Physical Informed Attention Residual Network, SPI-BoTER）。该方法将机器人的运动学方程与由稀疏自我注意力掩膜增强的Transformer架构相结合。引入一个基于空间和物理信息的参数自适应混合损失函数，在训练过程中迭代优化网络，从而在小样本条件下实现高精度误差补偿。此外，采用基于梯度下降的优化方法进行反关节角补偿。在来自UR5机器人手臂的小样本数据集（724个样本，训练：测试：验证比例为8:1:1）上进行的实验结果表明，所提出的方法具有优越性能。在三维绝对定位误差方面，其误差为0.2515 mm，标准差为0.15 mm，相比于传统的深度神经网络（DNN）方法，误差减少了35.16%。此外，反关节角补偿算法在平均147次迭代后收敛至0.01 mm的精度。本文提出了一种结合物理可解释性和数据适应性的方法，用于工业机器人高精度控制，为智能制造中可靠执行精密任务提供了前景广阔的可能性。 
+
+---
+# Learning Efficient Robotic Garment Manipulation with Standardization 
+
+**Title (ZH)**: 学习标准导向的高效机器人服装操作 
+
+**Authors**: Changshi Zhou, Feng Luan, Jiarui Hu, Shaoqiang Meng, Zhipeng Wang, Yanchao Dong, Yanmin Zhou, Bin He  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.22769)  
+
+**Abstract**: Garment manipulation is a significant challenge for robots due to the complex dynamics and potential self-occlusion of garments. Most existing methods of efficient garment unfolding overlook the crucial role of standardization of flattened garments, which could significantly simplify downstream tasks like folding, ironing, and packing. This paper presents APS-Net, a novel approach to garment manipulation that combines unfolding and standardization in a unified framework. APS-Net employs a dual-arm, multi-primitive policy with dynamic fling to quickly unfold crumpled garments and pick-and-place (p and p) for precise alignment. The purpose of garment standardization during unfolding involves not only maximizing surface coverage but also aligning the garment's shape and orientation to predefined requirements. To guide effective robot learning, we introduce a novel factorized reward function for standardization, which incorporates garment coverage (Cov), keypoint distance (KD), and intersection-over-union (IoU) metrics. Additionally, we introduce a spatial action mask and an Action Optimized Module to improve unfolding efficiency by selecting actions and operation points effectively. In simulation, APS-Net outperforms state-of-the-art methods for long sleeves, achieving 3.9 percent better coverage, 5.2 percent higher IoU, and a 0.14 decrease in KD (7.09 percent relative reduction). Real-world folding tasks further demonstrate that standardization simplifies the folding process. Project page: see this https URL 
+
+**Abstract (ZH)**: 服装 manipulation 是机器人面临的重大挑战，由于服装的复杂动态特性和潜在的自遮挡。大多数现有的高效服装展开方法忽视了平整后服装标准化的关键作用，这可以显著简化折叠、熨烫和打包等下游任务。本文提出了一种名为 APS-Net 的新型服装 manipulation 方法，将展开和标准化结合在统一框架中。APS-Net 使用具有动态甩动的双臂多原语策略快速展开皱褶的服装，并使用 pick-and-place (p and p) 精确对齐。在展开过程中进行服装标准化的目的不仅包括最大化表面覆盖率，还包括将服装的形状和方向对准预定义的要求。为了指导有效的机器人学习，我们引入了一种新的因子分解奖励函数，该函数结合了服装覆盖率 (Cov)、关键点距离 (KD) 和交并比 (IoU) 指标。此外，我们引入了空间动作掩码和 Action Optimized 模块，通过有效地选择动作和操作点来提高展开效率。在仿真中，APS-Net 在长袖方面优于最先进的方法，实现了 3.9% 更高的覆盖率、5.2% 更高的 IoU 和 0.14 降低的 KD（相当于 7.09% 的相对减少）。实际的折叠任务进一步证明了标准化简化了折叠过程。项目页面：见此 [此网址]。 
+
+---
+# Robust Peg-in-Hole Assembly under Uncertainties via Compliant and Interactive Contact-Rich Manipulation 
+
+**Title (ZH)**: 在不确定性条件下通过顺应性和交互式接触丰富操作实现 robust peg-in-hole 装配 
+
+**Authors**: Yiting Chen, Kenneth Kimble, Howard H. Qian, Podshara Chanrungmaneekul, Robert Seney, Kaiyu Hang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.22766)  
+
+**Abstract**: Robust and adaptive robotic peg-in-hole assembly under tight tolerances is critical to various industrial applications. However, it remains an open challenge due to perceptual and physical uncertainties from contact-rich interactions that easily exceed the allowed clearance. In this paper, we study how to leverage contact between the peg and its matching hole to eliminate uncertainties in the assembly process under unstructured settings. By examining the role of compliance under contact constraints, we present a manipulation system that plans collision-inclusive interactions for the peg to 1) iteratively identify its task environment to localize the target hole and 2) exploit environmental contact constraints to refine insertion motions into the target hole without relying on precise perception, enabling a robust solution to peg-in-hole assembly. By conceptualizing the above process as the composition of funneling in different state spaces, we present a formal approach to constructing manipulation funnels as an uncertainty-absorbing paradigm for peg-in-hole assembly. The proposed system effectively generalizes across diverse peg-in-hole scenarios across varying scales, shapes, and materials in a learning-free manner. Extensive experiments on a NIST Assembly Task Board (ATB) and additional challenging scenarios validate its robustness in real-world applications. 
+
+**Abstract (ZH)**: 具有紧公差的鲁棒且适应性强的机器人销孔装配在各种工业应用中至关重要。然而，由于接触丰富的相互作用导致的感知和物理不确定性，这仍然是一个开放性的挑战。本文研究了如何利用销与匹配孔之间的接触，在非结构化环境下消除装配过程中的不确定性。通过研究接触约束下的顺应性作用，我们提出了一种操作系统，该系统为销规划碰撞包容性交互，以1）迭代识别其任务环境以定位目标孔，2）利用环境接触约束细化目标孔中的插入运动，无需依赖精确感知，从而提供一种鲁棒的销孔装配解决方案。通过将上述过程概念化为不同状态空间中引导作用的组合，我们提出了构建操作引导作用的形式化方法，作为销孔装配的不确定性吸收范式。所提出的系统以无学习的方式有效地泛化到不同规模、形状和材料的多种销孔装配场景。广泛的实验，包括在国家标准与技术研究院装配任务板（ATB）和额外的挑战性场景上验证了其在实际应用中的鲁棒性。 
+
+---
+# Directed Shape Morphing using Kirigami-enhanced Thermoplastics 
+
+**Title (ZH)**: 使用Kirigami增强热塑性材料的定向形状演变 
+
+**Authors**: Mrunmayi Mungekar, Sanjith Menon, M. Ravi Shankar, M. Khalid Jawed  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.22572)  
+
+**Abstract**: We present a simple, accessible method for autonomously transforming flat plastic sheets into intricate three-dimensional structures using only uniform heating and common tools such as household ovens and scissors. Our approach combines heat-shrinkable thermoplastics with Kirigami patterns tailored to the target 3D shape, creating bilayer composites that morph into a wide range of complex structures, e.g., bowls, pyramids, and even custom ergonomic surfaces like mouse covers. Critically, the transformation is driven by a low-information stimulus (uniform heat) yet produces highly intricate shapes through programmed geometric design. The morphing behavior, confirmed by finite element simulations, arises from strain mismatch between the contracting thermoplastic layer and the constraining Kirigami layer. By decoupling material composition from mechanical response, this method avoids detailed process control and enables a broad class of self-morphing structures, offering a versatile platform for adaptive design and scalable manufacturing. 
+
+**Abstract (ZH)**: 我们提出了一种简单易行的方法，仅通过均匀加热和常用的工具（如家用烤箱和剪刀）自主地将平滑的塑料片转换为复杂的三维结构。该方法结合使用可热收缩的热塑性塑料和针对目标三维形状定制的 kirigami 模式，形成双层复合材料，能够演化成多种复杂的结构，例如碗、金字塔，甚至定制的人体工学表面如鼠标垫。关键的是，这种转换由低信息量的刺激（均匀热源）驱动，但通过编程几何设计产生高度复杂的形状。通过有限元模拟证实了这种变形行为，源于收缩热塑性层与约束 kirigami 层之间的应变不匹配。通过将材料组成与机械响应脱钩，该方法避免了详细的过程控制，能够实现一类自变形结构，提供了一种适应性设计和可扩展制造的多功能平台。 
+
+---
+# Optical Waveguide-based Spider Web Enables Resilient Impact Detection and Localization 
+
+**Title (ZH)**: 基于光学波导的蜘蛛网实现稳健的冲击检测与定位 
+
+**Authors**: Dylan Wilson, Marco Pontin, Peter Walters, Perla Maiolino  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.22472)  
+
+**Abstract**: Spiders use their webs as multifunctional tools that enable capturing and localizing prey and more general environmental sensing through vibrations. Inspired by their biological function, we present a spider web-inspired optical waveguide system for resilient impulse detection and localization. The structure consists of six clear thermoplastic polyurethane (TPU) waveguides arranged radially and interconnected by a spiral TPU thread, mimicking orb spider webs. Light transmission losses, induced by vibrations, are measured via coupled LEDs and photo-diodes, allowing real-time detection. We systematically characterize individual waveguides, analyzing key parameters such as tension, impulse position, and break angle to optimize vibrational response. The complete system is validated through controlled experiments, revealing a 5 ms propagation delay in vibration transfer between adjacent radii, enhancing localization capabilities. We demonstrate a robust impulse detection and localization algorithm leveraging time delay analysis, achieving reliable event identification even in cases of sensor failure. This study highlights the potential of bioinspired optical waveguide structures for adaptive sensing, with applications in soft robotics, structural monitoring, and environmental sensing. 
+
+**Abstract (ZH)**: 蜘蛛网启发的光学波导系统：弹性冲击检测与定位 
+
+---
+# Programming Soft Robots with Flexible Mechanical Metamaterials 
+
+**Title (ZH)**: 用灵活机械 metamaterials 编程软机器人 
+
+**Authors**: Ahmad Rafsanjani, Katia Bertoldi, André R. Studart  
+
+**Link**: [PDF](https://arxiv.org/pdf/1906.00306)  
+
+**Abstract**: The complex behavior of highly deformable mechanical metamaterials can substantially enhance the performance of soft robots. 
+
+**Abstract (ZH)**: 高度可变形的机械 metamaterials 的复杂行为可以显著增强软机器人性能。 
+
+---
