@@ -1,0 +1,13 @@
+# MultiGen: Using Multimodal Generation in Simulation to Learn Multimodal Policies in Real 
+
+**Title (ZH)**: Multigen: 使用模拟中的多模态生成来学习多模态策略在现实世界中的应用 
+
+**Authors**: Renhao Wang, Haoran Geng, Tingle Li, Feishi Wang, Gopala Anumanchipalli, Philipp Wu, Trevor Darrell, Boyi Li, Pieter Abbeel, Jitendra Malik, Alexei A. Efros  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.02864)  
+
+**Abstract**: Robots must integrate multiple sensory modalities to act effectively in the real world. Yet, learning such multimodal policies at scale remains challenging. Simulation offers a viable solution, but while vision has benefited from high-fidelity simulators, other modalities (e.g. sound) can be notoriously difficult to simulate. As a result, sim-to-real transfer has succeeded primarily in vision-based tasks, with multimodal transfer still largely unrealized. In this work, we tackle these challenges by introducing MultiGen, a framework that integrates large-scale generative models into traditional physics simulators, enabling multisensory simulation. We showcase our framework on the dynamic task of robot pouring, which inherently relies on multimodal feedback. By synthesizing realistic audio conditioned on simulation video, our method enables training on rich audiovisual trajectories -- without any real robot data. We demonstrate effective zero-shot transfer to real-world pouring with novel containers and liquids, highlighting the potential of generative modeling to both simulate hard-to-model modalities and close the multimodal sim-to-real gap. 
+
+**Abstract (ZH)**: 机器人必须整合多种感官模态以在现实世界中有效行动。然而，大规模学习这样的多模态策略仍然颇具挑战。仿真提供了一种可行的解决方案，但尽管视觉已从高保真仿真器中获益，其他模态（如声音）的仿真却常常困难重重。因此，仿真实验到现实世界的转移主要在基于视觉的任务中取得成功，而多模态转移依然大体上未能实现。在这项工作中，我们通过引入MultiGen这一框架，将大规模生成模型整合到传统的物理仿真器中，从而实现多感官仿真。我们以固有的依赖多模态反馈的机器人倾倒任务为例展示了这一框架。通过在仿真视频上生成现实音频，我们的方法能够在没有任何真实机器人数据的情况下进行富有成效的零样本转移训练。我们展示了在新容器和液体条件下实现有效的真实世界倾倒，突显了生成模型在仿真难以建模的模态以及缩小多模态仿真实验到现实世界差距方面的潜力。 
+
+---

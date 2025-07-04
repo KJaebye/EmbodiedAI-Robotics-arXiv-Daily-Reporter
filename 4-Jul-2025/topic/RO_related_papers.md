@@ -1,0 +1,65 @@
+# Trajectory Optimization for Differential Drive Mobile Manipulators via Topological Paths Search and Arc Length-Yaw Parameterization 
+
+**Title (ZH)**: 基于拓扑路径搜索和弧长-偏航参数化的差动驱动移动 manipulator 轨迹优化 
+
+**Authors**: Long Xu, Choilam Wong, Mengke Zhang, Junxiao Lin, Fei Gao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.02761)  
+
+**Abstract**: We present an efficient hierarchical motion planning pipeline for differential drive mobile manipulators. Our approach first searches for multiple collisionfree and topologically distinct paths for the mobile base to extract the space in which optimal solutions may exist. Further sampling and optimization are then conducted in parallel to explore feasible whole-body trajectories. For trajectory optimization, we employ polynomial trajectories and arc length-yaw parameterization, enabling efficient handling of the nonholonomic dynamics while ensuring optimality. 
+
+**Abstract (ZH)**: 我们提出了一种高效层次运动规划框架用于差速驱动移动 manipulator。该方法首先搜索多个collision-free且拓扑上不同的路径，以提取可能存在最优解的空间。随后，在并行进行进一步采样和优化的同时，探索可行的整体体轨迹。在轨迹优化方面，我们采用了多项式轨迹和弧长-Yaw参数化方法，能够在保证最优性的同时有效处理非完整动力学。 
+
+---
+# Integrating path-planning and control for robotic unicycles 
+
+**Title (ZH)**: 集成路径规划与控制的机器人单轮车技术 
+
+**Authors**: Máté B. Vizi, Dénes Tákács, Gábor Stépán, Gábor Orosz  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.02700)  
+
+**Abstract**: This article focuses on integrating path-planning and control with specializing on the unique needs of robotic unicycles. A unicycle design is presented which is capable of accelerating/breaking and carrying out a variety of maneuvers. The proposed path-planning method segments the path into straight and curved path sections dedicated for accelerating/breaking and turning maneuvers, respectively. The curvature profiles of the curved sections are optimized while considering the control performance and the slipping limits of the wheel. The performance of the proposed integrated approach is demonstrated via numerical simulations. 
+
+**Abstract (ZH)**: 本文聚焦于将路径规划与控制集成应用于专门化单轮机器人獨特需求。提出了一种具备加速/制动能力和进行多种机动操作的单轮设计。所提路径规划方法将路径分割为用于加速/制动的直线段和用于转向操作的曲线段。曲线段的曲率轮廓在考虑控制性能和车轮打滑限制的情况下进行了优化。通过数值仿真展示了所提集成方法的性能。 
+
+---
+# Vibration of Soft, Twisted Beams for Under-Actuated Quadrupedal Locomotion 
+
+**Title (ZH)**: 软-twist梁在欠驱动四足运动中的振动分析 
+
+**Authors**: Yuhao Jiang, Fuchen Chen, Jamie Paik, Daniel M. Aukes  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.02547)  
+
+**Abstract**: Under-actuated compliant robotic systems offer a promising approach to mitigating actuation and control challenges by harnessing pre-designed, embodied dynamic behaviors. This paper presents Flix-Walker, a novel, untethered, centimeter-scale quadrupedal robot inspired by compliant under-actuated mechanisms. Flix-Walker employs flexible, helix-shaped beams as legs, which are actuated by vibrations from just two motors to achieve three distinct mobility modes. We analyze the actuation parameters required to generate various locomotion modes through both simulation and prototype experiments. The effects of system and environmental variations on locomotion performance are examined, and we propose a generic metric for selecting control parameters that produce robust and functional motions. Experiments validate the effectiveness and robustness of these actuation parameters within a closed-loop control framework, demonstrating reliable trajectory-tracking and self-navigation capabilities. 
+
+**Abstract (ZH)**: 未驱动的柔顺机器人系统通过利用预设计的本体动力学行为来缓解驱动和控制挑战，展现出有前景的方法。本文介绍了受未驱动柔顺机制启发的新型无缆厘米级四足机器人Flix-Walker。Flix-Walker 使用柔性螺旋形杆作为腿，并通过两个电机产生的振动实现三种不同的移动模式。我们通过仿真和原型实验分析了产生各种运动模式所需的驱动参数。分析了系统和环境变化对运动性能的影响，并提出了一种通用的度量标准，用于选择产生稳健和功能性运动的控制参数。实验验证了这些驱动参数在闭环控制框架内的有效性和鲁棒性，展示了可靠的轨迹跟踪和自主导航能力。 
+
+---
+# GPS-DRIFT: Marine Surface Robot Localization using IMU-GPS Fusion and Invariant Filtering 
+
+**Title (ZH)**: GPS-DRIFT：基于IMU-GPS融合和不变滤波的海洋表面机器人定位方法 
+
+**Authors**: Surya Pratap Singh, Tsimafei Lazouski, Maani Ghaffari  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.02198)  
+
+**Abstract**: This paper presents an extension of the DRIFT invariant state estimation framework, enabling robust fusion of GPS and IMU data for accurate pose and heading estimation. Originally developed for testing and usage on a marine autonomous surface vehicle (ASV), this approach can also be utilized on other mobile systems. Building upon the original proprioceptive only DRIFT algorithm, we develop a symmetry-preserving sensor fusion pipeline utilizing the invariant extended Kalman filter (InEKF) to integrate global position updates from GPS directly into the correction step. Crucially, we introduce a novel heading correction mechanism that leverages GPS course-over-ground information in conjunction with IMU orientation, overcoming the inherent unobservability of yaw in dead-reckoning. The system was deployed and validated on a customized Blue Robotics BlueBoat, but the methodological focus is on the algorithmic approach to fusing exteroceptive and proprioceptive sensors for drift-free localization and reliable orientation estimation. This work provides an open source solution for accurate yaw observation and localization in challenging or GPS-degraded conditions, and lays the groundwork for future experimental and comparative studies. 
+
+**Abstract (ZH)**: 本文提出了DRIFT稳健的状态估计框架的扩展，实现了GPS和IMU数据的融合以进行精确的姿态和航向估计。该方法最初为海洋自主表面车辆(ASV)的研究和应用开发，也可以应用于其他移动系统。基于原始的仅 proprioceptive 的 DRIFT 算法，我们开发了一种保持对称性的传感器融合管道，利用不变扩展卡尔曼滤波器（InEKF）直接将GPS的全球位置更新纳入校正步骤。关键地，我们引入了一种新颖的航向校正机制，该机制综合利用GPS航迹和IMU姿态信息，克服了自差分定位中偏航角的固有不可观测性。该系统已在定制的Blue Robotics BlueBoat上部署和验证，但方法论重点在于融合外部和内部传感器以实现无漂移定位和可靠航向估计的算法方法。本文提供了在挑战性或GPS衰减条件下进行精确偏航角观测和定位的开源解决方案，并为未来的实验和比较研究奠定了基础。 
+
+---
+# Towards Bio-Inspired Robotic Trajectory Planning via Self-Supervised RNN 
+
+**Title (ZH)**: 面向生物启发的机器人轨迹规划的自我监督递归神经网络方法 
+
+**Authors**: Miroslav Cibula, Kristína Malinovská, Matthias Kerzel  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.02171)  
+
+**Abstract**: Trajectory planning in robotics is understood as generating a sequence of joint configurations that will lead a robotic agent, or its manipulator, from an initial state to the desired final state, thus completing a manipulation task while considering constraints like robot kinematics and the environment. Typically, this is achieved via sampling-based planners, which are computationally intensive. Recent advances demonstrate that trajectory planning can also be performed by supervised sequence learning of trajectories, often requiring only a single or fixed number of passes through a neural architecture, thus ensuring a bounded computation time. Such fully supervised approaches, however, perform imitation learning; they do not learn based on whether the trajectories can successfully reach a goal, but try to reproduce observed trajectories. In our work, we build on this approach and propose a cognitively inspired self-supervised learning scheme based on a recurrent architecture for building a trajectory model. We evaluate the feasibility of the proposed method on a task of kinematic planning for a robotic arm. The results suggest that the model is able to learn to generate trajectories only using given paired forward and inverse kinematics models, and indicate that this novel method could facilitate planning for more complex manipulation tasks requiring adaptive solutions. 
+
+**Abstract (ZH)**: 机器人轨迹规划被视为生成一系列关节配置，使机器人代理或其操作器从初始状态过渡到期望的最终状态，同时考虑机器人运动学约束和环境因素。通常，这通过基于采样的规划者实现，计算成本较高。近年来的研究表明，轨迹规划也可以通过监督序列学习实现，通常只需要通过神经架构进行一次或固定次数的传递，从而确保计算时间受限。然而，这类完全监督的方法进行的是模仿学习，它们不根据轨迹是否能成功到达目标来学习，而是试图再现观察到的轨迹。在我们的研究中，我们在此基础上提出了一种基于递归架构的认知启发式自我监督学习方案，用于构建轨迹模型。我们在具有正逆运动学模型的机器人臂的动力学规划任务上评估了该方法的可行性。结果显示，该模型仅使用给定的正向和逆向运动学模型配对数据就能够学习生成轨迹，表明该新颖方法可能有助于为需要适应性解决方案的更复杂操作任务规划提供支持。 
+
+---

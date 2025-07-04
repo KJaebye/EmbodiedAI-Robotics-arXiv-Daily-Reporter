@@ -2,6 +2,7 @@
 
 | Date | Link | Number of Papers |
 |:----:|:----:|:----------------:|
+| 4-Jul-2025 | [Link](https://github.com/KJaebye/EmbodiedAI-Robotics-arXiv-Daily-Reporter/blob/main/4-Jul-2025/topic/LLM_related_papers.md) | 39 |
 | 3-Jul-2025 | [Link](https://github.com/KJaebye/EmbodiedAI-Robotics-arXiv-Daily-Reporter/blob/main/3-Jul-2025/topic/LLM_related_papers.md) | 38 |
 | 2-Jul-2025 | [Link](https://github.com/KJaebye/EmbodiedAI-Robotics-arXiv-Daily-Reporter/blob/main/2-Jul-2025/topic/LLM_related_papers.md) | 46 |
 | 1-Jul-2025 | [Link](https://github.com/KJaebye/EmbodiedAI-Robotics-arXiv-Daily-Reporter/blob/main/1-Jul-2025/topic/LLM_related_papers.md) | 72 |
