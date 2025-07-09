@@ -1,0 +1,234 @@
+# 3DGS_LSR:Large_Scale Relocation for Autonomous Driving Based on 3D Gaussian Splatting 
+
+**Title (ZH)**: 3DGS_LSR：基于3D高斯点阵的大规模自主 relocation技术 
+
+**Authors**: Haitao Lu, Haijier Chen, Haoze Liu, Shoujian Zhang, Bo Xu, Ziao Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.05661)  
+
+**Abstract**: In autonomous robotic systems, precise localization is a prerequisite for safe navigation. However, in complex urban environments, GNSS positioning often suffers from signal occlusion and multipath effects, leading to unreliable absolute positioning. Traditional mapping approaches are constrained by storage requirements and computational inefficiency, limiting their applicability to resource-constrained robotic platforms. To address these challenges, we propose 3DGS-LSR: a large-scale relocalization framework leveraging 3D Gaussian Splatting (3DGS), enabling centimeter-level positioning using only a single monocular RGB image on the client side. We combine multi-sensor data to construct high-accuracy 3DGS maps in large outdoor scenes, while the robot-side localization requires just a standard camera input. Using SuperPoint and SuperGlue for feature extraction and matching, our core innovation is an iterative optimization strategy that refines localization results through step-by-step rendering, making it suitable for real-time autonomous navigation. Experimental validation on the KITTI dataset demonstrates our 3DGS-LSR achieves average positioning accuracies of 0.026m, 0.029m, and 0.081m in town roads, boulevard roads, and traffic-dense highways respectively, significantly outperforming other representative methods while requiring only monocular RGB input. This approach provides autonomous robots with reliable localization capabilities even in challenging urban environments where GNSS fails. 
+
+**Abstract (ZH)**: 基于3D高斯斑点的大规模重定位框架3DGS-LSR：一种单目RGB图像在复杂城市环境中的厘米级定位方法 
+
+---
+# DreamGrasp: Zero-Shot 3D Multi-Object Reconstruction from Partial-View Images for Robotic Manipulation 
+
+**Title (ZH)**: DreamGrasp: 基于部分视图图像的零样本三维多对象重建及其在机器人 manipulation 中的应用 
+
+**Authors**: Young Hun Kim, Seungyeon Kim, Yonghyeon Lee, Frank Chongwoo Park  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.05627)  
+
+**Abstract**: Partial-view 3D recognition -- reconstructing 3D geometry and identifying object instances from a few sparse RGB images -- is an exceptionally challenging yet practically essential task, particularly in cluttered, occluded real-world settings where full-view or reliable depth data are often unavailable. Existing methods, whether based on strong symmetry priors or supervised learning on curated datasets, fail to generalize to such scenarios. In this work, we introduce DreamGrasp, a framework that leverages the imagination capability of large-scale pre-trained image generative models to infer the unobserved parts of a scene. By combining coarse 3D reconstruction, instance segmentation via contrastive learning, and text-guided instance-wise refinement, DreamGrasp circumvents limitations of prior methods and enables robust 3D reconstruction in complex, multi-object environments. Our experiments show that DreamGrasp not only recovers accurate object geometry but also supports downstream tasks like sequential decluttering and target retrieval with high success rates. 
+
+**Abstract (ZH)**: 部分视角3D识别——从几幅稀疏RGB图像重建3D几何和识别物体实例——是一个极具挑战性但又实际必需的任务，特别是在全视角或可靠深度数据不可用的杂乱遮挡的真实环境中。现有方法，无论是基于强烈的对称先验还是在精心标注的数据集上的监督学习，都未能在这些场景中泛化。在本文中，我们提出DreamGrasp框架，该框架利用大规模预训练图像生成模型的想象力，推断场景中未观察到的部分。通过结合粗略的3D重建、对比学习实例分割以及文本引导的实例级细化，DreamGrasp克服了先前方法的局限性，并能在复杂多物体环境中实现鲁棒的3D重建。我们的实验表明，DreamGrasp不仅能准确恢复物体几何结构，还能在高成功率下支持后续任务如顺序去杂物和目标检索。 
+
+---
+# Event-RGB Fusion for Spacecraft Pose Estimation Under Harsh Lighting 
+
+**Title (ZH)**: 基于事件-RGB融合的空间探测器姿态估计在恶劣光照条件下的方法 
+
+**Authors**: Mohsi Jawaid, Marcus Märtens, Tat-Jun Chin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.05698)  
+
+**Abstract**: Spacecraft pose estimation is crucial for autonomous in-space operations, such as rendezvous, docking and on-orbit servicing. Vision-based pose estimation methods, which typically employ RGB imaging sensors, is a compelling solution for spacecraft pose estimation, but are challenged by harsh lighting conditions, which produce imaging artifacts such as glare, over-exposure, blooming and lens flare. Due to their much higher dynamic range, neuromorphic or event sensors are more resilient to extreme lighting conditions. However, event sensors generally have lower spatial resolution and suffer from reduced signal-to-noise ratio during periods of low relative motion. This work addresses these individual sensor limitations by introducing a sensor fusion approach combining RGB and event sensors. A beam-splitter prism was employed to achieve precise optical and temporal alignment. Then, a RANSAC-based technique was developed to fuse the information from the RGB and event channels to achieve pose estimation that leveraged the strengths of the two modalities. The pipeline was complemented by dropout uncertainty estimation to detect extreme conditions that affect either channel. To benchmark the performance of the proposed event-RGB fusion method, we collected a comprehensive real dataset of RGB and event data for satellite pose estimation in a laboratory setting under a variety of challenging illumination conditions. Encouraging results on the dataset demonstrate the efficacy of our event-RGB fusion approach and further supports the usage of event sensors for spacecraft pose estimation. To support community research on this topic, our dataset will be released publicly. 
+
+**Abstract (ZH)**: 基于RGB和事件传感器融合的航天器姿态估计方法 
+
+---
+# MusiScene: Leveraging MU-LLaMA for Scene Imagination and Enhanced Video Background Music Generation 
+
+**Title (ZH)**: MusiScene: 利用MU-LLaMA 进行场景想象与增强视频背景音乐生成 
+
+**Authors**: Fathinah Izzati, Xinyue Li, Yuxuan Wu, Gus Xia  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.05894)  
+
+**Abstract**: Humans can imagine various atmospheres and settings when listening to music, envisioning movie scenes that complement each piece. For example, slow, melancholic music might evoke scenes of heartbreak, while upbeat melodies suggest celebration. This paper explores whether a Music Language Model, e.g. MU-LLaMA, can perform a similar task, called Music Scene Imagination (MSI), which requires cross-modal information from video and music to train. To improve upon existing music captioning models which focusing solely on musical elements, we introduce MusiScene, a music captioning model designed to imagine scenes that complement each music. In this paper, (1) we construct a large-scale video-audio caption dataset with 3,371 pairs, (2) we finetune Music Understanding LLaMA for the MSI task to create MusiScene, and (3) we conduct comprehensive evaluations and prove that our MusiScene is more capable of generating contextually relevant captions compared to MU-LLaMA. We leverage the generated MSI captions to enhance Video Background Music Generation (VBMG) from text. 
+
+**Abstract (ZH)**: 人类在聆听音乐时可以想象各种氛围和场景，设想与音乐相 complement 的电影场景。例如，悲伤缓慢的音乐可能会让人联想到失恋的场景，而欢快的旋律则可能让人想到庆祝的场景。本文探讨音乐语言模型（例如MU-LLaMA）是否能够执行类似的任务，即音乐场景想象（MSI），该任务需要结合视频和音乐的跨模态信息进行训练。为了改进现有的仅专注于音乐元素的音乐字幕模型，本文引入了MusiScene，这是一种设计用于想象与音乐相 complement 的场景的音乐字幕模型。本文包含以下内容：（1）构建了一个包含3,371对的大量视频-音频字幕数据集；（2）对Music Understanding LLaMA进行微调以完成MSI任务，创建了MusiScene；（3）进行了全面评估，并证明了我们的MusiScene在生成上下文相关字幕方面比MU-LLaMA更具备能力。我们利用生成的MSI字幕来增强文本驱动的视频背景音乐生成（VBMG）。 
+
+---
+# SoftReMish: A Novel Activation Function for Enhanced Convolutional Neural Networks for Visual Recognition Performance 
+
+**Title (ZH)**: SoftReMish: 一种增强视觉识别性能的新型激活函数 
+
+**Authors**: Mustafa Bayram Gücen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.06148)  
+
+**Abstract**: In this study, SoftReMish, a new activation function designed to improve the performance of convolutional neural networks (CNNs) in image classification tasks, is proposed. Using the MNIST dataset, a standard CNN architecture consisting of two convolutional layers, max pooling, and fully connected layers was implemented. SoftReMish was evaluated against popular activation functions including ReLU, Tanh, and Mish by replacing the activation function in all trainable layers. The model performance was assessed in terms of minimum training loss and maximum validation accuracy. Results showed that SoftReMish achieved a minimum loss (3.14e-8) and a validation accuracy (99.41%), outperforming all other functions tested. These findings demonstrate that SoftReMish offers better convergence behavior and generalization capability, making it a promising candidate for visual recognition tasks. 
+
+**Abstract (ZH)**: SoftReMish：一种用于图像分类任务的新型激活函数 
+
+---
+# LangMamba: A Language-driven Mamba Framework for Low-dose CT Denoising with Vision-language Models 
+
+**Title (ZH)**: LangMamba：一种基于语言驱动的Mamba框架用于低剂量CT降噪的视觉语言模型 
+
+**Authors**: Zhihao Chen, Tao Chen, Chenhui Wang, Qi Gao, Huidong Xie, Chuang Niu, Ge Wang, Hongming Shan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.06140)  
+
+**Abstract**: Low-dose computed tomography (LDCT) reduces radiation exposure but often degrades image quality, potentially compromising diagnostic accuracy. Existing deep learning-based denoising methods focus primarily on pixel-level mappings, overlooking the potential benefits of high-level semantic guidance. Recent advances in vision-language models (VLMs) suggest that language can serve as a powerful tool for capturing structured semantic information, offering new opportunities to improve LDCT reconstruction. In this paper, we introduce LangMamba, a Language-driven Mamba framework for LDCT denoising that leverages VLM-derived representations to enhance supervision from normal-dose CT (NDCT). LangMamba follows a two-stage learning strategy. First, we pre-train a Language-guided AutoEncoder (LangAE) that leverages frozen VLMs to map NDCT images into a semantic space enriched with anatomical information. Second, we synergize LangAE with two key components to guide LDCT denoising: Semantic-Enhanced Efficient Denoiser (SEED), which enhances NDCT-relevant local semantic while capturing global features with efficient Mamba mechanism, and Language-engaged Dual-space Alignment (LangDA) Loss, which ensures that denoised images align with NDCT in both perceptual and semantic spaces. Extensive experiments on two public datasets demonstrate that LangMamba outperforms conventional state-of-the-art methods, significantly improving detail preservation and visual fidelity. Remarkably, LangAE exhibits strong generalizability to unseen datasets, thereby reducing training costs. Furthermore, LangDA loss improves explainability by integrating language-guided insights into image reconstruction and offers a plug-and-play fashion. Our findings shed new light on the potential of language as a supervisory signal to advance LDCT denoising. The code is publicly available on this https URL. 
+
+**Abstract (ZH)**: 基于语言驱动的Mamba框架低剂量计算机断层扫描降噪方法 
+
+---
+# LighthouseGS: Indoor Structure-aware 3D Gaussian Splatting for Panorama-Style Mobile Captures 
+
+**Title (ZH)**: LighthouseGS: 基于室内结构的全景风格移动捕获3D高斯斑点渲染 
+
+**Authors**: Seungoh Han, Jaehoon Jang, Hyunsu Kim, Jaeheung Surh, Junhyung Kwak, Hyowon Ha, Kyungdon Joo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.06109)  
+
+**Abstract**: Recent advances in 3D Gaussian Splatting (3DGS) have enabled real-time novel view synthesis (NVS) with impressive quality in indoor scenes. However, achieving high-fidelity rendering requires meticulously captured images covering the entire scene, limiting accessibility for general users. We aim to develop a practical 3DGS-based NVS framework using simple panorama-style motion with a handheld camera (e.g., mobile device). While convenient, this rotation-dominant motion and narrow baseline make accurate camera pose and 3D point estimation challenging, especially in textureless indoor scenes. To address these challenges, we propose LighthouseGS, a novel framework inspired by the lighthouse-like sweeping motion of panoramic views. LighthouseGS leverages rough geometric priors, such as mobile device camera poses and monocular depth estimation, and utilizes the planar structures often found in indoor environments. We present a new initialization method called plane scaffold assembly to generate consistent 3D points on these structures, followed by a stable pruning strategy to enhance geometry and optimization stability. Additionally, we introduce geometric and photometric corrections to resolve inconsistencies from motion drift and auto-exposure in mobile devices. Tested on collected real and synthetic indoor scenes, LighthouseGS delivers photorealistic rendering, surpassing state-of-the-art methods and demonstrating the potential for panoramic view synthesis and object placement. 
+
+**Abstract (ZH)**: Recent Advances in 3D Gaussian Splatting for Novel View Synthesis Using Simple Panorama-Style Motion with a Handheld Camera 
+
+---
+# VisualSpeaker: Visually-Guided 3D Avatar Lip Synthesis 
+
+**Title (ZH)**: 视觉引导的3Davatar唇部合成 
+
+**Authors**: Alexandre Symeonidis-Herzig, Özge Mercanoğlu Sincan, Richard Bowden  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.06060)  
+
+**Abstract**: Realistic, high-fidelity 3D facial animations are crucial for expressive avatar systems in human-computer interaction and accessibility. Although prior methods show promising quality, their reliance on the mesh domain limits their ability to fully leverage the rapid visual innovations seen in 2D computer vision and graphics. We propose VisualSpeaker, a novel method that bridges this gap using photorealistic differentiable rendering, supervised by visual speech recognition, for improved 3D facial animation. Our contribution is a perceptual lip-reading loss, derived by passing photorealistic 3D Gaussian Splatting avatar renders through a pre-trained Visual Automatic Speech Recognition model during training. Evaluation on the MEAD dataset demonstrates that VisualSpeaker improves both the standard Lip Vertex Error metric by 56.1% and the perceptual quality of the generated animations, while retaining the controllability of mesh-driven animation. This perceptual focus naturally supports accurate mouthings, essential cues that disambiguate similar manual signs in sign language avatars. 
+
+**Abstract (ZH)**: 真实的高保真3D面部动画对于人类计算机交互和无障碍环境中的表情avatar系统至关重要。尽管先前的方法表现出色，但它们依赖于网格域的限制使其难以充分利用2D计算机视觉和图形领域中快速涌现的视觉创新。我们提出了一种名为VisualSpeaker的新方法，该方法通过使用基于照片真实差分渲染并由视觉语音识别监督，从而填补了这一空白。我们的贡献是一种感知唇读损失，该损失是在训练过程中通过预训练的视觉自动语音识别模型传递逼真3D Gaussian Splatting avatar渲染图像而推导出来的。在MEAD数据集上的评估表明，VisualSpeaker既提高了标准的唇部顶点误差度量56.1%，又提高了生成动画的感知质量，同时保持了网格驱动动画的可控性。这种感知重点自然支持准确的唇型，这对于使手势语avatar在类似的手势中具有明确性至关重要。 
+
+---
+# TextPixs: Glyph-Conditioned Diffusion with Character-Aware Attention and OCR-Guided Supervision 
+
+**Title (ZH)**: TextPixs：基于字符aware注意力和OCR指导监督的Glyph条件扩散模型 
+
+**Authors**: Syeda Anshrah Gillani, Mirza Samad Ahmed Baig, Osama Ahmed Khan, Shahid Munir Shah, Umema Mujeeb, Maheen Ali  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.06033)  
+
+**Abstract**: The modern text-to-image diffusion models boom has opened a new era in digital content production as it has proven the previously unseen ability to produce photorealistic and stylistically diverse imagery based on the semantics of natural-language descriptions. However, the consistent disadvantage of these models is that they cannot generate readable, meaningful, and correctly spelled text in generated images, which significantly limits the use of practical purposes like advertising, learning, and creative design. This paper introduces a new framework, namely Glyph-Conditioned Diffusion with Character-Aware Attention (GCDA), using which a typical diffusion backbone is extended by three well-designed modules. To begin with, the model has a dual-stream text encoder that encodes both semantic contextual information and explicit glyph representations, resulting in a character-aware representation of the input text that is rich in nature. Second, an attention mechanism that is aware of the character is proposed with a new attention segregation loss that aims to limit the attention distribution of each character independently in order to avoid distortion artifacts. Lastly, GCDA has an OCR-in-the-loop fine-tuning phase, where a full text perceptual loss, directly optimises models to be legible and accurately spell. Large scale experiments to benchmark datasets, such as MARIO-10M and T2I-CompBench, reveal that GCDA sets a new state-of-the-art on all metrics, with better character based metrics on text rendering (Character Error Rate: 0.08 vs 0.21 for the previous best; Word Error Rate: 0.15 vs 0.25), human perception, and comparable image synthesis quality on high-fidelity (FID: 14.3). 
+
+**Abstract (ZH)**: 面向字符的注意力条件扩散模型：一种新的字符感知扩散框架（GCDA） 
+
+---
+# Towards Solar Altitude Guided Scene Illumination 
+
+**Title (ZH)**: 面向太阳高度的场景照明指南方法 
+
+**Authors**: Samed Doğan, Maximilian Hoh, Nico Leuze, Nicolas R.-Peña, Alfred Schöttl  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.05812)  
+
+**Abstract**: The development of safe and robust autonomous driving functions is heavily dependent on large-scale, high-quality sensor data. However, real-word data acquisition demands intensive human labor and is strongly limited by factors such as labeling cost, driver safety protocols and diverse scenario coverage. Thus, multiple lines of work focus on the conditional generation of synthetic camera sensor data. We identify a significant gap in research regarding daytime variation, presumably caused by the scarcity of available labels. Consequently, we present the solar altitude as global conditioning variable. It is readily computable from latitude-longitude coordinates and local time, eliminating the need for extensive manual labeling. Our work is complemented by a tailored normalization approach, targeting the sensitivity of daylight towards small numeric changes in altitude. We demonstrate its ability to accurately capture lighting characteristics and illumination-dependent image noise in the context of diffusion models. 
+
+**Abstract (ZH)**: 安全可靠的自主驾驶功能的发展高度依赖大规模高质量的传感数据。然而，真实世界数据的获取需要大量人力劳动，并且受到标签成本、驾驶员安全协议和场景多样性等因素的强烈限制。因此，多条研究路径关注于生成合成的摄像传感器数据。我们发现关于日间变化的研究存在显著空白，这可能是因为可用标签的稀缺性。因此，我们提出了太阳高度作为全局条件变量。它可以直接从经纬度坐标和地方时计算得出，从而消除大量的手工标注需求。我们的工作还包括一个针对光照对太阳高度小数值变化敏感性的定制归一化方法。我们展示了其在扩散模型中准确捕捉光照特性和依赖照明的图像噪声的能力。 
+
+---
+# A Satellite-Ground Synergistic Large Vision-Language Model System for Earth Observation 
+
+**Title (ZH)**: 地球观测中的卫星-地面协同大型视觉-语言模型系统 
+
+**Authors**: Yuxin Zhang, Jiahao Yang, Zhe Chen, Wenjun Zhu, Jin Zhao, Yue Gao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.05731)  
+
+**Abstract**: Recently, large vision-language models (LVLMs) unleash powerful analysis capabilities for low Earth orbit (LEO) satellite Earth observation images in the data center. However, fast satellite motion, brief satellite-ground station (GS) contact windows, and large size of the images pose a data download challenge. To enable near real-time Earth observation applications (e.g., disaster and extreme weather monitoring), we should explore how to deploy LVLM in LEO satellite networks, and design SpaceVerse, an efficient satellite-ground synergistic LVLM inference system. To this end, firstly, we deploy compact LVLMs on satellites for lightweight tasks, whereas regular LVLMs operate on GSs to handle computationally intensive tasks. Then, we propose a computing and communication co-design framework comprised of a progressive confidence network and an attention-based multi-scale preprocessing, used to identify on-satellite inferring data, and reduce data redundancy before satellite-GS transmission, separately. We implement and evaluate SpaceVerse on real-world LEO satellite constellations and datasets, achieving a 31.2% average gain in accuracy and a 51.2% reduction in latency compared to state-of-the-art baselines. 
+
+**Abstract (ZH)**: 近期，大型视觉-语言模型（LVLMs）在数据中心对低地球轨道（LEO）卫星地球观测图像进行强大的分析能力得以释放。然而，快速的卫星运动、短暂的卫星-地面站（GS）通信窗口以及图像的巨大尺寸带来了数据下载的挑战。为实现近实时的地球观测应用（如灾害和极端天气监测），我们应该探索如何在LEO卫星网络中部署LVLM，并设计SpaceVerse，一个高效的卫星-地面协同LVLM推理系统。为此，首先，我们在卫星上部署紧凑型LVLM以处理轻量级任务，而定期的LVLM在地面站运行以处理计算密集型任务。然后，我们提出了一种计算与通信协同设计框架，包括逐级自信网络和基于注意力的多尺度预处理，用于在卫星上传输前识别卫星上的推理数据并减少数据冗余。我们已在实际LEO卫星星座和数据集上实现并评估了SpaceVerse，相比最先进的基准，平均提高了31.2%的准确率并降低了51.2%的延迟。 
+
+---
+# MedGen: Unlocking Medical Video Generation by Scaling Granularly-annotated Medical Videos 
+
+**Title (ZH)**: MedGen: 通过细粒度标注的医疗视频扩展实现医疗视频生成 
+
+**Authors**: Rongsheng Wang, Junying Chen, Ke Ji, Zhenyang Cai, Shunian Chen, Yunjin Yang, Benyou Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.05675)  
+
+**Abstract**: Recent advances in video generation have shown remarkable progress in open-domain settings, yet medical video generation remains largely underexplored. Medical videos are critical for applications such as clinical training, education, and simulation, requiring not only high visual fidelity but also strict medical accuracy. However, current models often produce unrealistic or erroneous content when applied to medical prompts, largely due to the lack of large-scale, high-quality datasets tailored to the medical domain. To address this gap, we introduce MedVideoCap-55K, the first large-scale, diverse, and caption-rich dataset for medical video generation. It comprises over 55,000 curated clips spanning real-world medical scenarios, providing a strong foundation for training generalist medical video generation models. Built upon this dataset, we develop MedGen, which achieves leading performance among open-source models and rivals commercial systems across multiple benchmarks in both visual quality and medical accuracy. We hope our dataset and model can serve as a valuable resource and help catalyze further research in medical video generation. Our code and data is available at this https URL 
+
+**Abstract (ZH)**: 近期在视频生成领域的进展已经在开放场景中显示出了显著的进步，然而医疗视频生成仍然 largely underexplored。医疗视频对于临床培训、教育和模拟等应用至关重要，不仅需要高度的视觉保真度，还需要严格的高度准确的医疗信息。然而，当前的模型在处理医疗提示时经常生成不现实或错误的内容，主要是由于缺乏针对医疗领域的大型高质量数据集。为了解决这一差距，我们介绍了MedVideoCap-55K，这是第一个用于医疗视频生成的大规模、多样化且带有丰富描述的医疗视频数据集，包含超过55,000个精心筛选的片段，覆盖了真实的医疗场景，为训练通用医疗视频生成模型提供了坚实的基础。基于该数据集，我们开发了MedGen，在多个基准测试中，在视觉质量和医疗准确性方面表现领先，与开源模型和商业系统相比具有竞争力。我们希望我们的数据集和模型能够成为有价值的资源，并促进医疗视频生成领域的进一步研究。我们的代码和数据可在以下网址获取：this https URL 
+
+---
+# Cloud Diffusion Part 1: Theory and Motivation 
+
+**Title (ZH)**: 云扩散理论与动机 Part 1 
+
+**Authors**: Andrew Randono  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.05496)  
+
+**Abstract**: Diffusion models for image generation function by progressively adding noise to an image set and training a model to separate out the signal from the noise. The noise profile used by these models is white noise -- that is, noise based on independent normal distributions at each point whose mean and variance is independent of the scale. By contrast, most natural image sets exhibit a type of scale invariance in their low-order statistical properties characterized by a power-law scaling. Consequently, natural images are closer (in a quantifiable sense) to a different probability distribution that emphasizes large scale correlations and de-emphasizes small scale correlations. These scale invariant noise profiles can be incorporated into diffusion models in place of white noise to form what we will call a ``Cloud Diffusion Model". We argue that these models can lead to faster inference, improved high-frequency details, and greater controllability. In a follow-up paper, we will build and train a Cloud Diffusion Model that uses scale invariance at a fundamental level and compare it to classic, white noise diffusion models. 
+
+**Abstract (ZH)**: 尺度不变噪声介导的扩散模型 
+
+---
+# Driving as a Diagnostic Tool: Scenario-based Cognitive Assessment in Older Drivers From Driving Video 
+
+**Title (ZH)**: 基于场景的认知评估：来自驾驶视频的老年驾驶员诊断工具 
+
+**Authors**: Md Zahid Hasan, Guillermo Basulto-Elias, Jun Ha Chang, Sahuna Hallmark, Matthew Rizzo, Anuj Sharma, Soumik Sarkar  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.05463)  
+
+**Abstract**: We introduce scenario-based cognitive status identification in older drivers from Naturalistic driving videos and large vision models. In recent times, cognitive decline, including Alzheimer's disease (AD) and mild cognitive impairment (MCI), is often underdiagnosed due to the time-consuming and costly nature of current diagnostic methods. By analyzing real-world driving behavior captured through in-vehicle systems, this research aims to extract "digital fingerprints" that correlate with functional decline and clinical features of MCI and AD. Moreover, modern large vision models can draw meaningful insights from everyday driving patterns of older patients to early detect cognitive decline. We propose a framework that uses large vision models and naturalistic driving videos to analyze driver behavior, classify cognitive status and predict disease progression. We leverage the strong relationship between real-world driving behavior as an observation of the current cognitive status of the drivers where the vehicle can be utilized as a "diagnostic tool". Our method identifies early warning signs of functional impairment, contributing to proactive intervention strategies. This work enhances early detection and supports the development of scalable, non-invasive monitoring systems to mitigate the growing societal and economic burden of cognitive decline in the aging population. 
+
+**Abstract (ZH)**: 基于自然驾驶视频和大型视觉模型的老年驾驶员情景认知状态识别 
+
+---
+# Conditional Graph Neural Network for Predicting Soft Tissue Deformation and Forces 
+
+**Title (ZH)**: 基于条件图神经网络的软组织变形及力预测方法 
+
+**Authors**: Madina Kojanazarova, Florentin Bieder, Robin Sandkühler, Philippe C. Cattin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.05315)  
+
+**Abstract**: Soft tissue simulation in virtual environments is becoming increasingly important for medical applications. However, the high deformability of soft tissue poses significant challenges. Existing methods rely on segmentation, meshing and estimation of stiffness properties of tissues. In addition, the integration of haptic feedback requires precise force estimation to enable a more immersive experience. We introduce a novel data-driven model, a conditional graph neural network (cGNN) to tackle this complexity. Our model takes surface points and the location of applied forces, and is specifically designed to predict the deformation of the points and the forces exerted on them. We trained our model on experimentally collected surface tracking data of a soft tissue phantom and used transfer learning to overcome the data scarcity by initially training it with mass-spring simulations and fine-tuning it with the experimental data. This approach improves the generalisation capability of the model and enables accurate predictions of tissue deformations and corresponding interaction forces. The results demonstrate that the model can predict deformations with a distance error of 0.35$\pm$0.03 mm for deformations up to 30 mm and the force with an absolute error of 0.37$\pm$0.05 N for forces up to 7.5 N. Our data-driven approach presents a promising solution to the intricate challenge of simulating soft tissues within virtual environments. Beyond its applicability in medical simulations, this approach holds the potential to benefit various fields where realistic soft tissue simulations are required. 
+
+**Abstract (ZH)**: 基于条件图神经网络的虚拟环境中软组织模拟 
+
+---
+# Self-Attention Based Multi-Scale Graph Auto-Encoder Network of 3D Meshes 
+
+**Title (ZH)**: 基于自注意力的多尺度3D网格图自编码网络 
+
+**Authors**: Saqib Nazir, Olivier Lézoray, Sébastien Bougleux  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.05304)  
+
+**Abstract**: 3D meshes are fundamental data representations for capturing complex geometric shapes in computer vision and graphics applications. While Convolutional Neural Networks (CNNs) have excelled in structured data like images, extending them to irregular 3D meshes is challenging due to the non-Euclidean nature of the data. Graph Convolutional Networks (GCNs) offer a solution by applying convolutions to graph-structured data, but many existing methods rely on isotropic filters or spectral decomposition, limiting their ability to capture both local and global mesh features. In this paper, we introduce 3D Geometric Mesh Network (3DGeoMeshNet), a novel GCN-based framework that uses anisotropic convolution layers to effectively learn both global and local features directly in the spatial domain. Unlike previous approaches that convert meshes into intermediate representations like voxel grids or point clouds, our method preserves the original polygonal mesh format throughout the reconstruction process, enabling more accurate shape reconstruction. Our architecture features a multi-scale encoder-decoder structure, where separate global and local pathways capture both large-scale geometric structures and fine-grained local details. Extensive experiments on the COMA dataset containing human faces demonstrate the efficiency of 3DGeoMeshNet in terms of reconstruction accuracy. 
+
+**Abstract (ZH)**: 三维几何网格网络：用于直接在空间域中学习全局和局部特征的各向异性卷积框架 
+
+---
+# CorrDetail: Visual Detail Enhanced Self-Correction for Face Forgery Detection 
+
+**Title (ZH)**: CorrDetail: 视觉细节增强的自纠正方法用于人脸伪造检测 
+
+**Authors**: Binjia Zhou, Hengrui Lou, Lizhe Chen, Haoyuan Li, Dawei Luo, Shuai Chen, Jie Lei, Zunlei Feng, Yijun Bei  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.05302)  
+
+**Abstract**: With the swift progression of image generation technology, the widespread emergence of facial deepfakes poses significant challenges to the field of security, thus amplifying the urgent need for effective deepfake this http URL techniques for face forgery detection can broadly be categorized into two primary groups: visual-based methods and multimodal approaches. The former often lacks clear explanations for forgery details, while the latter, which merges visual and linguistic modalities, is more prone to the issue of this http URL address these shortcomings, we introduce a visual detail enhanced self-correction framework, designated CorrDetail, for interpretable face forgery detection. CorrDetail is meticulously designed to rectify authentic forgery details when provided with error-guided questioning, with the aim of fostering the ability to uncover forgery details rather than yielding hallucinated responses. Additionally, to bolster the reliability of its findings, a visual fine-grained detail enhancement module is incorporated, supplying CorrDetail with more precise visual forgery details. Ultimately, a fusion decision strategy is devised to further augment the model's discriminative capacity in handling extreme samples, through the integration of visual information compensation and model bias this http URL results demonstrate that CorrDetail not only achieves state-of-the-art performance compared to the latest methodologies but also excels in accurately identifying forged details, all while exhibiting robust generalization capabilities. 
+
+**Abstract (ZH)**: 基于视觉细节增强的自校正框架CorrDetail：可解释的人脸伪造检测 
+
+---
+# Structured Captions Improve Prompt Adherence in Text-to-Image Models (Re-LAION-Caption 19M) 
+
+**Title (ZH)**: 结构化说明文提高文本到图像模型的提示遵从性（Re-LAION-Caption 19M） 
+
+**Authors**: Nicholas Merchant, Haitz Sáez de Ocáriz Borde, Andrei Cristian Popescu, Carlos Garcia Jurado Suarez  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.05300)  
+
+**Abstract**: We argue that generative text-to-image models often struggle with prompt adherence due to the noisy and unstructured nature of large-scale datasets like LAION-5B. This forces users to rely heavily on prompt engineering to elicit desirable outputs. In this work, we propose that enforcing a consistent caption structure during training can significantly improve model controllability and alignment. We introduce Re-LAION-Caption 19M, a high-quality subset of Re-LAION-5B, comprising 19 million 1024x1024 images with captions generated by a Mistral 7B Instruct-based LLaVA-Next model. Each caption follows a four-part template: subject, setting, aesthetics, and camera details. We fine-tune PixArt-$\Sigma$ and Stable Diffusion 2 using both structured and randomly shuffled captions, and show that structured versions consistently yield higher text-image alignment scores using visual question answering (VQA) models. The dataset is publicly available at this https URL. 
+
+**Abstract (ZH)**: 我们 argue 生成文本到图像模型往往难以遵循提示，因为大型数据集如 LAION-5B 的噪声和无序性质。这迫使用户大量依赖提示工程来获得理想输出。在本文中，我们提出，在训练过程中强制保持一致的标题结构可以显著提高模型的可控性和对齐性。我们引入了 Re-LAION-Caption 19M，它是 Re-LAION-5B 的高质量子集，包括 19 百万张 1024x1024 像素的图像，其标题由 Mistral 7B Instruct 为基础的 LLaVA-Next 模型生成。每个标题遵循四部分模板：主题、背景、审美和相机细节。我们使用结构化和随机打乱的标题分别对 PixArt-$\Sigma$ 和 Stable Diffusion 2 进行微调，并且通过视觉问答（VQA）模型展示结构化版本始终能获得更高的文本图像对齐分数。该数据集可在以下网址公开获取：this https URL。 
+
+---

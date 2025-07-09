@@ -1,0 +1,299 @@
+# Unifying Robot Optimization: Monte Carlo Tree Search with Tensor Factorization 
+
+**Title (ZH)**: 基于张量因子分解的蒙特卡洛树搜索统一机器人优化 
+
+**Authors**: Teng Xue, Amirreza Razmjoo, Yan Zhang, Sylvain Calinon  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.04949)  
+
+**Abstract**: Many robotic tasks, such as inverse kinematics, motion planning, and optimal control, can be formulated as optimization problems. Solving these problems involves addressing nonlinear kinematics, complex contact dynamics, and long-horizon planning, each posing distinct challenges for state-of-the-art optimization methods. To efficiently solve a wide range of tasks across varying scenarios, researchers either develop specialized algorithms for the task to achieve, or switch between different frameworks. Monte Carlo Tree Search (MCTS) is a general-purpose decision-making tool that enables strategic exploration across problem instances without relying on task-specific structures. However, MCTS suffers from combinatorial complexity, leading to slow convergence and high memory usage. To address this limitation, we propose \emph{Tensor Train Tree Search} (TTTS), which leverages tensor factorization to exploit the separable structure of decision trees. This yields a low-rank, linear-complexity representation that significantly reduces both computation time and storage requirements. We prove that TTTS can efficiently reach the bounded global optimum within a finite time. Experimental results across inverse kinematics, motion planning around obstacles, multi-stage motion planning, and bimanual whole-body manipulation demonstrate the efficiency of TTTS on a diverse set of robotic tasks. 
+
+**Abstract (ZH)**: Tensor Train Tree Search: Efficient Decision-Making for Robotic Tasks 
+
+---
+# Automated UAV-based Wind Turbine Blade Inspection: Blade Stop Angle Estimation and Blade Detail Prioritized Exposure Adjustment 
+
+**Title (ZH)**: 基于无人机的自动化风力 turbine叶片检测：叶片停止角度估计与叶片细节优先曝光调整 
+
+**Authors**: Yichuan Shi, Hao Liu, Haowen Zheng, Haowen Yu, Xianqi Liang, Jie Li, Minmin Ma, Ximin Lyu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.04922)  
+
+**Abstract**: Unmanned aerial vehicles (UAVs) are critical in the automated inspection of wind turbine blades. Nevertheless, several issues persist in this domain. Firstly, existing inspection platforms encounter challenges in meeting the demands of automated inspection tasks and scenarios. Moreover, current blade stop angle estimation methods are vulnerable to environmental factors, restricting their robustness. Additionally, there is an absence of real-time blade detail prioritized exposure adjustment during capture, where lost details cannot be restored through post-optimization. To address these challenges, we introduce a platform and two approaches. Initially, a UAV inspection platform is presented to meet the automated inspection requirements. Subsequently, a Fermat point based blade stop angle estimation approach is introduced, achieving higher precision and success rates. Finally, we propose a blade detail prioritized exposure adjustment approach to ensure appropriate brightness and preserve details during image capture. Extensive tests, comprising over 120 flights across 10 wind turbine models in 5 operational wind farms, validate the effectiveness of the proposed approaches in enhancing inspection autonomy. 
+
+**Abstract (ZH)**: 无人驾驶航空器（UAVs）在风力发电机叶片自动检测中的应用至关重要。然而，该领域仍存在几个问题。首先，现有的检测平台在满足自动检测任务和场景的需求方面遇到挑战。其次，当前的叶片停止角度估计方法容易受到环境因素的影响，限制了其鲁棒性。此外，在捕获过程中缺乏对叶片细节优先曝光调整的处理，缺失的细节无法通过后期优化恢复。为了应对这些挑战，我们引入了一个平台和两种方法。首先，提出了一种UAV检测平台以满足自动化检测要求。其次，引入了一种基于费马点的叶片停止角度估计方法，实现了更高的精度和成功率。最后，提出了一种叶片细节优先的曝光调整方法，以确保成像过程中的适当亮度并保留细节。通过在5个运营中的风力发电场的10种风力发电机模型上进行的超过120次飞行的广泛测试，验证了所提出方法在增强检测自主性方面的有效性。 
+
+---
+# Dynamics and multi-stability of a rotor-actuated Twistcar robot with passive steering joint 
+
+**Title (ZH)**: 带被动转向关节的旋转驱动Twistcar机器人的动力学与多稳定状态分析 
+
+**Authors**: Anna Zigelman, Zitao Yu, Rom Levy, Yizhar Or  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.04846)  
+
+**Abstract**: The nonlinear dynamics of many under-actuated wheeled platforms are governed by nonholonomic constraints of no-skid for passively rolling wheels, coupled with momentum balance. In most of theoretical models, the shape variables, i.e. joint angles, are directly prescribed as periodic inputs, such as steering angle of the Twistcar. In this work, we study a variant of the Twistcar model where the actuation input is periodic oscillations of an inertial rotor attached to the main body, while the steering joint is passively free to rotate. Remarkably, the dynamics of this model is extremely rich, and includes multiplicity of periodic solutions, both symmetric and asymmetric, as well as stability transitions and bifurcations. We conduct numerical simulations as well as asymptotic analysis of the vehicle's reduced equations of motion. We use perturbation expansion in order to obtain leading-order dynamics under symmetric periodic solution. Then, we utilize harmonic balance and further scaling assumptions in order to approximate the conditions for symmetry-breaking pitchfork bifurcation and stability transition of the symmetric periodic solution, as a function of actuation frequency and structural parameters. The asymptotic results show good agreement with numerical simulations. The results highlight the role of passive shape variables in generating multi-stable periodic solutions for nonholonomic systems of robotic locomotion. 
+
+**Abstract (ZH)**: 多自由度非完全驱动轮式平台的动力学受到无滑滚约束的非线性控制，结合动量平衡。在大多数理论模型中，形变量，即关节角，直接被设定为周期输入，如Twistcar的转向角。在本工作中，我们研究了一个Twistcar模型的变体，在该变体中，驱动输入是附加在主体上的惯性旋转器的周期振荡，而转向关节则被动自由旋转。令人惊讶的是，该模型的动力学非常丰富，包括多种周期解，既有对称的也有非对称的，还存在稳定性转换和分岔现象。我们进行了车辆的降阶运动方程数值模拟和渐近分析。我们使用扰动扩展来获得对称周期解下的主导动力学。然后我们利用谐波平衡和进一步的缩放假设来逼近对称周期解的破缺 pitches 分叉和稳定性转换条件，作为驱动频率和结构参数的函数。渐近结果与数值模拟结果一致。结果突显了被动形变量在非完整运动学机器人运动中的多稳定周期解生成中的作用。 
+
+---
+# Safe Bimanual Teleoperation with Language-Guided Collision Avoidance 
+
+**Title (ZH)**: 语言引导避碰的Safe双臂远程操作 
+
+**Authors**: Dionis Totsila, Clemente Donoso, Enrico Mingo Hoffman, Jean-Baptiste Mouret, Serena Ivaldi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.04791)  
+
+**Abstract**: Teleoperating precise bimanual manipulations in cluttered environments is challenging for operators, who often struggle with limited spatial perception and difficulty estimating distances between target objects, the robot's body, obstacles, and the surrounding environment. To address these challenges, local robot perception and control should assist the operator during teleoperation. In this work, we introduce a safe teleoperation system that enhances operator control by preventing collisions in cluttered environments through the combination of immersive VR control and voice-activated collision avoidance. Using HTC Vive controllers, operators directly control a bimanual mobile manipulator, while spoken commands such as "avoid the yellow tool" trigger visual grounding and segmentation to build 3D obstacle meshes. These meshes are integrated into a whole-body controller to actively prevent collisions during teleoperation. Experiments in static, cluttered scenes demonstrate that our system significantly improves operational safety without compromising task efficiency. 
+
+**Abstract (ZH)**: 在嘈杂环境中进行精确双臂操作对操作者构成挑战，他们常常难以应对有限的空间感知和目标物体、机器人本体、障碍物及周围环境之间的距离估算困难。为应对这些挑战，局部机器人感知和控制应在此远程操作过程中提供帮助。本文介绍了一种安全的远程操作系统，该系统通过结合沉浸式VR控制和语音激活的避撞功能来增强操作者的控制能力，防止在嘈杂环境中发生碰撞。使用HTC Vive控制器，操作者直接控制双臂移动操作器，而通过说出“避免黄色工具”等口令触发视觉接地和分割来构建3D障碍网格。这些网格被集成到全身控制器中，以在远程操作过程中主动防止碰撞。在静态、嘈杂场景中的实验表明，该系统显著提高了操作安全性，同时不牺牲任务效率。 
+
+---
+# Interaction-Merged Motion Planning: Effectively Leveraging Diverse Motion Datasets for Robust Planning 
+
+**Title (ZH)**: 交互融合运动规划：有效利用多样化运动数据集进行稳健规划 
+
+**Authors**: Giwon Lee, Wooseong Jeong, Daehee Park, Jaewoo Jeong, Kuk-Jin Yoon  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.04790)  
+
+**Abstract**: Motion planning is a crucial component of autonomous robot driving. While various trajectory datasets exist, effectively utilizing them for a target domain remains challenging due to differences in agent interactions and environmental characteristics. Conventional approaches, such as domain adaptation or ensemble learning, leverage multiple source datasets but suffer from domain imbalance, catastrophic forgetting, and high computational costs. To address these challenges, we propose Interaction-Merged Motion Planning (IMMP), a novel approach that leverages parameter checkpoints trained on different domains during adaptation to the target domain. IMMP follows a two-step process: pre-merging to capture agent behaviors and interactions, sufficiently extracting diverse information from the source domain, followed by merging to construct an adaptable model that efficiently transfers diverse interactions to the target domain. Our method is evaluated on various planning benchmarks and models, demonstrating superior performance compared to conventional approaches. 
+
+**Abstract (ZH)**: 交互融合运动规划（IMMP）：一种适应目标领域的新型方法 
+
+---
+# DragonFly: Single mmWave Radar 3D Localization of Highly Dynamic Tags in GPS-Denied Environments 
+
+**Title (ZH)**: DragonFly：在GPS受限环境中对高度动态标签进行单毫米波雷达3D定位 
+
+**Authors**: Skanda Harisha, Jimmy G. D. Hester, Aline Eid  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.04602)  
+
+**Abstract**: The accurate localization and tracking of dynamic targets, such as equipment, people, vehicles, drones, robots, and the assets that they interact with in GPS-denied indoor environments is critical to enabling safe and efficient operations in the next generation of spatially aware industrial facilities. This paper presents DragonFly , a 3D localization system of highly dynamic backscatter tags using a single MIMO mmWave radar. The system delivers the first demonstration of a mmWave backscatter system capable of exploiting the capabilities of MIMO radars for the 3D localization of mmID tags moving at high speeds and accelerations at long ranges by introducing a critical Doppler disambiguation algorithm and a fully integrated cross-polarized dielectric lens-based mmID tag consuming a mere 68 uW. DragonFly was extensively evaluated in static and dynamic configurations, including on a flying quadcopter, and benchmarked against multiple baselines, demonstrating its ability to track the positions of multiple tags with a median 3D accuracy of 12 cm at speeds and acceleration on the order of 10 m/s-1 and 4 m/s-2 and at ranges of up to 50 m. 
+
+**Abstract (ZH)**: 在GPS受限的室内环境中，动态目标（如设备、人员、车辆、无人机、机器人及其交互的资产）的精确定位与跟踪对于下一代空间感知工业设施的安全高效运行至关重要。本文展示了DragonFly，一种使用单个MIMO毫米波雷达的3D定位系统，该系统利用MIMO雷达的能力，通过引入关键的多普勒解混算法和消费仅68微瓦的全集成交叉极化介电镜头基毫米波标签，实现了高速远距离移动毫米波标签的3D定位演示。DragonFly在静态和动态配置下进行了广泛评估，包括在飞行四旋翼无人机上的应用，并与多个基准进行了对比测试，展示了其在速度和加速度约为10 m/s-1和4 m/s-2、范围达50米时，能够以中值3D精度12厘米跟踪多个标签的能力。 
+
+---
+# Rapid and Safe Trajectory Planning over Diverse Scenes through Diffusion Composition 
+
+**Title (ZH)**: 跨越多样场景的快速安全轨迹规划通过扩散组合 
+
+**Authors**: Wule Mao, Zhouheng Li, Yunhao Luo, Yilun Du, Lei Xie  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.04384)  
+
+**Abstract**: Safe trajectory planning remains a significant challenge in complex environments, where traditional methods often trade off computational efficiency for safety. Comprehensive obstacle modeling improves safety but is computationally expensive, while approximate methods are more efficient but may compromise safety. To address this issue, this paper introduces a rapid and safe trajectory planning framework based on state-based diffusion models. Leveraging only low-dimensional vehicle states, the diffusion models achieve notable inference efficiency while ensuring sufficient collision-free characteristics. By composing diffusion models, the proposed framework can safely generalize across diverse scenarios, planning collision-free trajectories even in unseen scenes. To further ensure the safety of the generated trajectories, an efficient, rule-based safety filter is proposed, which selects optimal trajectories that satisfy both sufficient safety and control feasibility from among candidate trajectories. Both in seen and unseen scenarios, the proposed method achieves efficient inference time while maintaining high safety and stability. Evaluations on the F1TENTH vehicle further demonstrate that the proposed method is practical in real-world applications. The project page is at: this https URL. 
+
+**Abstract (ZH)**: 安全轨迹规划在复杂环境中仍是一项重大挑战，传统的方法往往在计算效率和安全性之间做出权衡。全面的障碍模型虽然能够提高安全性，但计算成本高昂，而近似方法尽管更有效率，但在安全性方面可能有所妥协。为解决这一问题，本文提出了一种基于状态扩散模型的快速安全轨迹规划框架。通过仅利用低维度的车辆状态，扩散模型实现了显著的推理效率，同时确保足够的无碰撞特性。通过组合扩散模型，所提出的框架能够安全地泛化到多种不同的场景，在未见过的场景中也能规划出无碰撞轨迹。为了进一步确保生成轨迹的安全性，本文还提出了一种基于规则的高效安全过滤器，该过滤器可以从候选轨迹中选择同时满足足够安全性和控制可行性的最优轨迹。在已见过和未见过的场景中，所提出的方法都能实现高效的推理时间，同时保持高水平的安全性和稳定性。基于F1TENTH车辆的评估进一步证明了所提出方法在实际应用中的实用性。项目页面链接为：this https URL。 
+
+---
+# Robot-assisted Transcranial Magnetic Stimulation (Robo-TMS): A Review 
+
+**Title (ZH)**: 机器人辅助经颅磁刺激（Robo-TMS）：一个综述 
+
+**Authors**: Wenzhi Bai, Andrew Weightman, Rory J O Connor, Zhengtao Ding, Mingming Zhang, Sheng Quan Xie, Zhenhong Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.04345)  
+
+**Abstract**: Transcranial magnetic stimulation (TMS) is a non-invasive and safe brain stimulation procedure with growing applications in clinical treatments and neuroscience research. However, achieving precise stimulation over prolonged sessions poses significant challenges. By integrating advanced robotics with conventional TMS, robot-assisted TMS (Robo-TMS) has emerged as a promising solution to enhance efficacy and streamline procedures. Despite growing interest, a comprehensive review from an engineering perspective has been notably absent. This paper systematically examines four critical aspects of Robo-TMS: hardware and integration, calibration and registration, neuronavigation systems, and control systems. We review state-of-the-art technologies in each area, identify current limitations, and propose future research directions. Our findings suggest that broader clinical adoption of Robo-TMS is currently limited by unverified clinical applicability, high operational complexity, and substantial implementation costs. Emerging technologies, including marker-less tracking, non-rigid registration, learning-based electric field (E-field) modelling, individualised magnetic resonance imaging (MRI) generation, robot-assisted multi-locus TMS (Robo-mTMS), and automated calibration and registration, present promising pathways to address these challenges. 
+
+**Abstract (ZH)**: 经颅磁刺激（TMS）是一种非侵入性和安全性的脑刺激程序，在临床治疗和神经科学研究中的应用日益增多。然而，在长时间刺激中实现精确的刺激面临重大挑战。通过将先进机器人技术与传统TMS结合，机器人辅助TMS（Robo-TMS）已成为提高疗效和简化程序的有前景的解决方案。尽管研究兴趣日益增加，但缺乏从工程角度进行的全面综述。本文系统地探讨了Robo-TMS的四个关键方面：硬件与集成、校准与注册、神经导航系统和控制系统。我们复习了每个领域的先进技术，确定了当前的限制，并提出了未来研究方向。我们的研究结果表明，目前Robo-TMS在临床中的广泛应用受到未经验证的临床应用性、高操作复杂性和显著的实施成本的限制。新兴技术，包括无标记跟踪、非刚性配准、基于学习的电场（E场）建模、个性化磁共振成像（MRI）生成、机器人辅助多靶点TMS（Robo-mTMS）以及自动校准和配准，为解决这些挑战提供了有前景的途径。 
+
+---
+# Vibration-aware Lidar-Inertial Odometry based on Point-wise Post-Undistortion Uncertainty 
+
+**Title (ZH)**: 基于点级后去畸变不确定性的一种振动感知lidar-惯性里程计 
+
+**Authors**: Yan Dong, Enci Xu, Shaoqiang Qiu, Wenxuan Li, Yang Liu, Bin Han  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.04311)  
+
+**Abstract**: High-speed ground robots moving on unstructured terrains generate intense high-frequency vibrations, leading to LiDAR scan distortions in Lidar-inertial odometry (LIO). Accurate and efficient undistortion is extremely challenging due to (1) rapid and non-smooth state changes during intense vibrations and (2) unpredictable IMU noise coupled with a limited IMU sampling frequency. To address this issue, this paper introduces post-undistortion uncertainty. First, we model the undistortion errors caused by linear and angular vibrations and assign post-undistortion uncertainty to each point. We then leverage this uncertainty to guide point-to-map matching, compute uncertainty-aware residuals, and update the odometry states using an iterated Kalman filter. We conduct vibration-platform and mobile-platform experiments on multiple public datasets as well as our own recordings, demonstrating that our method achieves better performance than other methods when LiDAR undergoes intense vibration. 
+
+**Abstract (ZH)**: 高速地面机器人在未结构化地形上移动会产生强烈的高频振动，导致激光雷达扫描在激光雷达-惯性里程计（LIO）中产生失真。由于（1）强烈振动期间快速且非光滑的状态变化，以及（2）与有限的惯性测量单元（IMU）采样频率结合的不可预测的IMU噪声，精确和高效的去失真非常具有挑战性。为解决这一问题，本文引入了后处理去失真的不确定性。首先，我们建模了由于线性振动和角振动引起的去失真误差，并为每个点分配后处理去失真的不确定性。然后，我们利用这种不确定性指导点到地图匹配，计算不确定性感知的残差，并使用迭代卡尔曼滤波器更新里程计状态。我们在多个公开数据集以及我们自己的记录上进行了振动平台和移动平台实验，证明当激光雷达经历强烈振动时，我们的方法优于其他方法。 
+
+---
+# Optimal Scheduling of a Dual-Arm Robot for Efficient Strawberry Harvesting in Plant Factories 
+
+**Title (ZH)**: 双臂机器人在植物工厂中草莓高效采摘的优化调度 
+
+**Authors**: Yuankai Zhu, Wenwu Lu, Guoqiang Ren, Yibin Ying, Stavros Vougioukas, Chen Peng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.04240)  
+
+**Abstract**: Plant factory cultivation is widely recognized for its ability to optimize resource use and boost crop yields. To further increase the efficiency in these environments, we propose a mixed-integer linear programming (MILP) framework that systematically schedules and coordinates dual-arm harvesting tasks, minimizing the overall harvesting makespan based on pre-mapped fruit locations. Specifically, we focus on a specialized dual-arm harvesting robot and employ pose coverage analysis of its end effector to maximize picking reachability. Additionally, we compare the performance of the dual-arm configuration with that of a single-arm vehicle, demonstrating that the dual-arm system can nearly double efficiency when fruit densities are roughly equal on both sides. Extensive simulations show a 10-20% increase in throughput and a significant reduction in the number of stops compared to non-optimized methods. These results underscore the advantages of an optimal scheduling approach in improving the scalability and efficiency of robotic harvesting in plant factories. 
+
+**Abstract (ZH)**: 植物工厂环境下基于混合整数线性规划的双臂采收任务调度框架及其性能分析 
+
+---
+# Design Optimization of Three-Dimensional Wire Arrangement Considering Wire Crossings for Tendon-driven Robots 
+
+**Title (ZH)**: 考虑导线交叉的 tendon 驱动机器人三维导线布局设计优化 
+
+**Authors**: Kento Kawaharazuka, Shintaro Inoue, Yuta Sahara, Keita Yoneda, Temma Suzuki, Kei Okada  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.04235)  
+
+**Abstract**: Tendon-driven mechanisms are useful from the perspectives of variable stiffness, redundant actuation, and lightweight design, and they are widely used, particularly in hands, wrists, and waists of robots. The design of these wire arrangements has traditionally been done empirically, but it becomes extremely challenging when dealing with complex structures. Various studies have attempted to optimize wire arrangement, but many of them have oversimplified the problem by imposing conditions such as restricting movements to a 2D plane, keeping the moment arm constant, or neglecting wire crossings. Therefore, this study proposes a three-dimensional wire arrangement optimization that takes wire crossings into account. We explore wire arrangements through a multi-objective black-box optimization method that ensures wires do not cross while providing sufficient joint torque along a defined target trajectory. For a 3D link structure, we optimize the wire arrangement under various conditions, demonstrate its effectiveness, and discuss the obtained design solutions. 
+
+**Abstract (ZH)**: 腱驱动机制从变量刚度、冗余驱动和轻量化设计的角度非常有用，并且在机器人手部、腕部和腰部等部位得到了广泛应用。这些绳索布置的传统设计通常是经验性的，但处理复杂结构时变得极其具有挑战性。尽管已有许多研究试图优化绳索布置，但其中许多研究通过施加限制条件，如将运动限制在2D平面、保持力矩臂不变或忽略绳索交叉，从而简化了问题。因此，本研究提出了一种考虑绳索交叉的三维绳索布置优化方法。我们通过多目标黑盒优化方法探索绳索布置，确保绳索不交叉同时在预定目标轨迹上提供足够的关节扭矩。对于三维链结构，我们在各种条件下优化了绳索布置，展示了其有效性并讨论了获得的设计方案。 
+
+---
+# An improved 2D time-to-collision for articulated vehicles: predicting sideswipe and rear-end collisions 
+
+**Title (ZH)**: 改进的 articulated 车辆 2D 时光撞对于侧面碰撞和追尾碰撞的预测 
+
+**Authors**: Abhijeet Behera, Sogol Kharrazi, Erik Frisk, Maytheewat Aramrattana  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.04184)  
+
+**Abstract**: Time-to-collision (TTC) is a widely used measure for estimating the time until a rear-end collision between two vehicles, assuming both maintain constant speeds and headings in the prediction horizon. To also capture sideswipe collisions, a two-dimensional extension, TTC$_{\text{2D}}$, was introduced. However, this formulation assumes both vehicles have the same heading and that their headings remain unchanged during the manoeuvre, in addition to the standard assumptions on the prediction horizon. Moreover, its use for articulated vehicles like a tractor-semitrailer remains unclear. This paper addresses these limitations by developing three enhanced versions of TTC$_{\text{2D}}$. The first incorporates vehicle heading information, which is missing in the original formulation. The standard assumption of constant speed and heading in the prediction horizon holds. The second adapts this to articulated vehicles while retaining the assumptions of the first version. The third version maintains the constant heading assumption but relaxes the constant speed assumption by allowing constant acceleration. The versions are tested in a cut-in scenario using the CARLA simulation environment. They detect rear-end collisions, similar to TTC, and moreover, they also identify sideswipe risks, something TTC could not predict. 
+
+**Abstract (ZH)**: 时间碰撞(TTC)及其二维扩展在车辆碰撞预警中的改进及应用 
+
+---
+# Comparative Evaluation of VR-Enabled Robots and Human Operators for Targeted Disease Management in Vineyards 
+
+**Title (ZH)**: 基于VR的机器人与人类操作员在葡萄园中针对特定疾病管理的 comparative evaluation 
+
+**Authors**: Hasan Seyyedhasani, Daniel Udekwe, Muhammad Ali Qadri  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.04167)  
+
+**Abstract**: This study explores the use of immersive virtual reality (VR) as a control interface for agricultural robots in vineyard disease detection and treatment. Using a Unity-ROS simulation, it compares three agents: a human operator, an immersive VR-controlled robot, and a non-immersive VR-controlled robot. During the scanning phase, humans perform best due to agility and control speed. However, in the treatment phase, immersive VR robots outperform others, completing tasks up to 65% faster by using stored infection data and optimized path planning. In yield-map-based navigation, immersive robots are also 38% faster than humans. Despite slower performance in manual scanning tasks, immersive VR excels in memory-guided, repetitive operations. The study highlights the role of interface design and path optimization, noting limitations in simulation fidelity and generalizability. It concludes that immersive VR has strong potential to enhance efficiency and precision in precision agriculture. 
+
+**Abstract (ZH)**: 本研究探索沉浸式虚拟现实（VR）作为控制界面在葡萄园疾病检测和治疗中用于农业机器人应用的可能性。通过Unity-ROS模拟，本研究比较了三种代理：人类操作员、沉浸式VR控制的机器人和非沉浸式VR控制的机器人。在扫描阶段，人类表现最好，因为具有灵活性和控制速度。但在治疗阶段，沉浸式VR机器人表现出色，通过使用存储的感染数据和优化的路径规划，任务完成速度比其他机器人快65%。在基于产量图的导航中，沉浸式机器人也比人类快38%。尽管在手动扫描任务中表现较慢，但沉浸式VR在基于记忆的重复操作中表现出色。本研究强调了界面设计和路径优化的作用，并指出模拟保真度和泛化能力的局限性。研究结论认为，沉浸式VR有很强的潜力提高精准农业中的效率和精度。 
+
+---
+# Robust and Modular Multi-Limb Synchronization in Motion Stack for Space Robots with Trajectory Clamping via Hypersphere 
+
+**Title (ZH)**: 基于轨迹约束的高维球面上的空间机器人多肢运动堆栈鲁棒模块化同步方法 
+
+**Authors**: Elian Neppel, Ashutosh Mishra, Shamistan Karimov, Kentaro Uno, Shreya Santra, Kazuya Yoshida  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.03934)  
+
+**Abstract**: Modular robotics holds immense potential for space exploration, where reliability, repairability, and reusability are critical for cost-effective missions. Coordination between heterogeneous units is paramount for precision tasks -- whether in manipulation, legged locomotion, or multi-robot interaction. Such modular systems introduce challenges far exceeding those in monolithic robot architectures. This study presents a robust method for synchronizing the trajectories of multiple heterogeneous actuators, adapting dynamically to system variations with minimal system knowledge. This design makes it inherently robot-agnostic, thus highly suited for modularity. To ensure smooth trajectory adherence, the multidimensional state is constrained within a hypersphere representing the allowable deviation. The distance metric can be adapted hence, depending on the task and system under control, deformation of the constraint region is possible. This approach is compatible with a wide range of robotic platforms and serves as a core interface for Motion-Stack, our new open-source universal framework for limb coordination (available at this https URL ). The method is validated by synchronizing the end-effectors of six highly heterogeneous robotic limbs, evaluating both trajectory adherence and recovery from significant external disturbances. 
+
+**Abstract (ZH)**: 模块化机器人在太空探索中具有巨大的潜力，可靠性、可维修性和可重复使用性对于经济有效的太空任务至关重要。异构模块之间的协调对于精确任务（无论是操作、腿足运动还是多机器人交互）至关重要。这类模块化系统引入了远超单一机器人架构的挑战。本研究提出了一种鲁棒的方法，用于同步多个异构执行器的轨迹，并能够根据最少的系统知识动态适应系统变化。该设计使其具有高度的机器人无关性，因此非常适合模块化。为了确保轨迹的平滑跟踪，多维状态被约束在表示允许偏差的超球体内。距离度量可以根据任务和受控系统进行调整，从而有可能改变约束区域的形状。该方法兼容广泛的机器人平台，并作为我们新的开源通用框架Motion-Stack的核心接口（可通过此链接访问：this https URL）得到了验证。该方法通过同步六个高度异构的机器人肢体末端执行器，同时评估轨迹跟踪能力和对外部显著干扰的恢复能力进行了验证。 
+
+---
+# Accurate Pose Estimation Using Contact Manifold Sampling for Safe Peg-in-Hole Insertion of Complex Geometries 
+
+**Title (ZH)**: 基于接触流形采样的精确姿势估计方法及其在复杂几何结构销孔装配中的安全应用 
+
+**Authors**: Abhay Negi, Omey M. Manyar, Dhanush K. Penmetsa, Satyandra K. Gupta  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.03925)  
+
+**Abstract**: Robotic assembly of complex, non-convex geometries with tight clearances remains a challenging problem, demanding precise state estimation for successful insertion. In this work, we propose a novel framework that relies solely on contact states to estimate the full SE(3) pose of a peg relative to a hole. Our method constructs an online submanifold of contact states through primitive motions with just 6 seconds of online execution, subsequently mapping it to an offline contact manifold for precise pose estimation. We demonstrate that without such state estimation, robots risk jamming and excessive force application, potentially causing damage. We evaluate our approach on five industrially relevant, complex geometries with 0.1 to 1.0 mm clearances, achieving a 96.7% success rate - a 6x improvement over primitive-based insertion without state estimation. Additionally, we analyze insertion forces, and overall insertion times, showing our method significantly reduces the average wrench, enabling safer and more efficient assembly. 
+
+**Abstract (ZH)**: 基于接触状态估计的复杂非凸几何结构紧密间隙下机器人装配新框架 
+
+---
+# Coil Geometry Learning for Short-Range Magnetic Actuation 
+
+**Title (ZH)**: 短距离磁驱动的线圈几何结构学习 
+
+**Authors**: Yuta Takahashi, Hayate Tajima, Shin-ichiro Sakai  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.03806)  
+
+**Abstract**: Fuel-free docking is a key operational technology for in-space assembly, resupplying space stations, sample return missions, and formation keeping of large-scale satellite swarms. The use of conventional propulsion systems, including thrusters, can cause adverse effects at short distances, such as sensor contamination, which may lead to the failure of the satellite or onboard equipment. The magnetic field interaction control generated by magnetorquers can overcome these weaknesses of propulsion. This actuation enables simultaneous control of attitude and formation control among desired satellite groups. The previous study typically uses the traditional dipole approximation model of the exact magnetic field to reduce computation cost. However, proximity operations often involve relatively short distances between satellites, which can easily compromise the effectiveness of this approximation. To avoid model errors that could result in satellite collisions, we utilize a magnetic field model described by Biot-Savart's law, without distance approximations (Near-field model), in consideration of short-distance operations. To overcome the high computational cost associated with the coil geometry and relative states information, a learning-based magnetic field approximation is derived, and its effectiveness is shown in the docking simulation of target and chaser satellites equipped with electromagnetic coils on three axes. Our method significantly reduces the computational cost of the exact magnetic model and possesses scalability that can accommodate an increasing number of target satellites through parallel processing. 
+
+**Abstract (ZH)**: 无燃料对接是太空组装、空间站补给、样本返回任务以及大规模卫星编队保持的关键操作技术。为了克服常规推进系统，在短距离内可能导致传感器污染等不利影响，磁矩控制器产生的磁场相互作用控制能够克服推进系统的这些缺点。这种执行机构能够同时控制目标卫星群的姿态和编队控制。以往的研究通常使用精确磁场的传统偶极近似模型来降低计算成本。然而，近距离操作中卫星之间的相对距离较短，这容易破坏这种近似的有效性。为了避免模型误差导致的卫星碰撞，我们采用考虑短距离操作的毕奥-萨伐尔定律描述的磁场模型，不进行距离近似。为了克服与线圈几何形状和相对状态信息相关的高计算成本，我们推导了一种基于学习的磁场近似模型，并在装备了电磁线圈的追踪者和目标卫星的对接仿真中展示了其有效性。该方法显著降低了精确磁场模型的计算成本，并通过并行处理具有可扩展性，可以适应越来越多的目标卫星。 
+
+---
+# Multi-robot Aerial Soft Manipulator For Floating Litter Collection 
+
+**Title (ZH)**: 基于浮游垃圾收集的多机器人空中软 manipulator 系统 
+
+**Authors**: Antonio González-Morgado, Sander Smits, Guillermo Heredia, Anibal Ollero, Alexandre Krupa, François Chaumette, Fabien Spindler, Antonio Franchi, Chiara Gabellieri  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.03517)  
+
+**Abstract**: Removing floating litter from water bodies is crucial to preserving aquatic ecosystems and preventing environmental pollution. In this work, we present a multi-robot aerial soft manipulator for floating litter collection, leveraging the capabilities of aerial robots. The proposed system consists of two aerial robots connected by a flexible rope manipulator, which collects floating litter using a hook-based tool. Compared to single-aerial-robot solutions, the use of two aerial robots increases payload capacity and flight endurance while reducing the downwash effect at the manipulation point, located at the midpoint of the rope. Additionally, we employ an optimization-based rope-shape planner to compute the desired rope shape. The planner incorporates an adaptive behavior that maximizes grasping capabilities near the litter while minimizing rope tension when farther away. The computed rope shape trajectory is controlled by a shape visual servoing controller, which approximates the rope as a parabola. The complete system is validated in outdoor experiments, demonstrating successful grasping operations. An ablation study highlights how the planner's adaptive mechanism improves the success rate of the operation. Furthermore, real-world tests in a water channel confirm the effectiveness of our system in floating litter collection. These results demonstrate the potential of aerial robots for autonomous litter removal in aquatic environments. 
+
+**Abstract (ZH)**: 基于无人机的柔性 manipulator 多机器人系统用于浮游垃圾收集 
+
+---
+# Label-Free Long-Horizon 3D UAV Trajectory Prediction via Motion-Aligned RGB and Event Cues 
+
+**Title (ZH)**: 基于运动对齐的RGB和事件线索的无标签长时 horizon 3D UAV 轨迹预测 
+
+**Authors**: Hanfang Liang, Shenghai Yuan, Fen Liu, Yizhuo Yang, Bing Wang, Zhuyu Huang, Chenyang Shi, Jing Jin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.03365)  
+
+**Abstract**: The widespread use of consumer drones has introduced serious challenges for airspace security and public safety. Their high agility and unpredictable motion make drones difficult to track and intercept. While existing methods focus on detecting current positions, many counter-drone strategies rely on forecasting future trajectories and thus require more than reactive detection to be effective. To address this critical gap, we propose an unsupervised vision-based method for predicting the three-dimensional trajectories of drones. Our approach first uses an unsupervised technique to extract drone trajectories from raw LiDAR point clouds, then aligns these trajectories with camera images through motion consistency to generate reliable pseudo-labels. We then combine kinematic estimation with a visual Mamba neural network in a self-supervised manner to predict future drone trajectories. We evaluate our method on the challenging MMAUD dataset, including the V2 sequences that feature wide-field-of-view multimodal sensors and dynamic UAV motion in urban scenes. Extensive experiments show that our framework outperforms supervised image-only and audio-visual baselines in long-horizon trajectory prediction, reducing 5-second 3D error by around 40 percent without using any manual 3D labels. The proposed system offers a cost-effective, scalable alternative for real-time counter-drone deployment. All code will be released upon acceptance to support reproducible research in the robotics community. 
+
+**Abstract (ZH)**: 消费者无人机的广泛使用为 airspace 安全和公共安全带来了严重挑战。它们的高机动性和不可预测的运动使无人机难以跟踪和拦截。现有方法主要集中在检测当前位置，而许多反无人机策略依赖于预测未来轨迹，因此需要更主动的检测方法才能有效。为解决这一关键缺口，我们提出了一种无监督的基于视觉的方法，用于预测无人机的三维轨迹。该方法首先使用无监督技术从原始 LiDAR 点云中提取无人机轨迹，然后通过运动一致性将这些轨迹与摄像头图像对齐，生成可靠的伪标签。接着，我们以自监督的方式将动力学估计与视觉 Mamba 神经网络结合，预测未来无人机的轨迹。我们在具有挑战性的 MMAUD 数据集上评估了我们的方法，包括 V2 序列，该序列包含宽视野多模态传感器和城市环境中动态无人机运动。大量实验证明，与监督图像-only 和多模态 baselines 相比，我们的框架在长时轨迹预测方面表现更佳，5 秒 3D 错误降低了约 40%，无需使用任何手动 3D 标记。该系统为实时反无人机部署提供了一种成本效益高、可扩展的替代方案。接受发表后，所有代码将被释放以支持机器人社区的可再现研究。 
+
+---
+# Robust and Efficient Embedded Convex Optimization through First-Order Adaptive Caching 
+
+**Title (ZH)**: 通过一阶自适应缓存实现稳健且高效的嵌入式凸优化 
+
+**Authors**: Ishaan Mahajan, Brian Plancher  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.03231)  
+
+**Abstract**: Recent advances in Model Predictive Control (MPC) leveraging a combination of first-order methods, such as the Alternating Direction Method of Multipliers (ADMM), and offline precomputation and caching of select operations, have excitingly enabled real-time MPC on microcontrollers. Unfortunately, these approaches require the use of fixed hyperparameters, limiting their adaptability and overall performance. In this work, we introduce First-Order Adaptive Caching, which precomputes not only select matrix operations but also their sensitivities to hyperparameter variations, enabling online hyperparameter updates without full recomputation of the cache. We demonstrate the effectiveness of our approach on a number of dynamic quadrotor tasks, achieving up to a 63.4% reduction in ADMM iterations over the use of optimized fixed hyperparameters and approaching 70% of the performance of a full cache recomputation, while reducing the computational cost from O(n^3) to O(n^2) complexity. This performance enables us to perform figure-eight trajectories on a 27g tiny quadrotor under wind disturbances. We release our implementation open-source for the benefit of the wider robotics community. 
+
+**Abstract (ZH)**: 基于一阶方法自适应缓存的最近模型预测控制进展：在微控制器上实现实时模型预测控制 
+
+---
+# Dexterous Teleoperation of 20-DoF ByteDexter Hand via Human Motion Retargeting 
+
+**Title (ZH)**: 通过人体运动重定位实现20-自由度ByteDexter手的灵巧远程操作 
+
+**Authors**: Ruoshi Wen, Jiajun Zhang, Guangzeng Chen, Zhongren Cui, Min Du, Yang Gou, Zhigang Han, Junkai Hu, Liqun Huang, Hao Niu, Wei Xu, Haoxiang Zhang, Zhengming Zhu, Hang Li, Zeyu Ren  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.03227)  
+
+**Abstract**: Replicating human--level dexterity remains a fundamental robotics challenge, requiring integrated solutions from mechatronic design to the control of high degree--of--freedom (DoF) robotic hands. While imitation learning shows promise in transferring human dexterity to robots, the efficacy of trained policies relies on the quality of human demonstration data. We bridge this gap with a hand--arm teleoperation system featuring: (1) a 20--DoF linkage--driven anthropomorphic robotic hand for biomimetic dexterity, and (2) an optimization--based motion retargeting for real--time, high--fidelity reproduction of intricate human hand motions and seamless hand--arm coordination. We validate the system via extensive empirical evaluations, including dexterous in-hand manipulation tasks and a long--horizon task requiring the organization of a cluttered makeup table randomly populated with nine objects. Experimental results demonstrate its intuitive teleoperation interface with real--time control and the ability to generate high--quality demonstration data. Please refer to the accompanying video for further details. 
+
+**Abstract (ZH)**: 复制人类级别的灵巧性仍然是一个基本的机器人挑战，需要从机电设计到高自由度（DoF）机器人手的控制等方面的综合解决方案。虽然模仿学习在将人类灵巧性转移给机器人方面前景广阔，但训练策略的有效性依赖于高质量的人类演示数据。我们通过一种手-臂远程操作系统来弥合这一差距，该系统包括：（1）一个20-DoF连杆驱动的人形机器人手以实现生物仿生灵巧性；（2）基于优化的运动重定位以实现实时、高保真的人类手部运动再现以及手-臂协调的无缝转换。我们通过广泛的实证评估验证了该系统，包括精细的手内操作任务以及一项长期任务，该任务要求将随机放置九个物品的杂乱化妆桌进行整理。实验结果证明了其直观的远程操作界面和实时控制能力，以及生成高质量演示数据的能力。请参见附带的视频以获取更多信息。 
+
+---
+# SAFERad: A Framework to Enable Radar Data for Safety-Relevant Perception Tasks 
+
+**Title (ZH)**: SAFERad：一种使雷达数据可用于安全相关感知任务的框架 
+
+**Authors**: Tim Brühl, Jenny Glönkler, Robin Schwager, Tin Stribor Sohn, Tim Dieter Eberhardt, Sören Hohmann  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.03959)  
+
+**Abstract**: Radar sensors play a crucial role for perception systems in automated driving but suffer from a high level of noise. In the past, this could be solved by strict filters, which remove most false positives at the expense of undetected objects. Future highly automated functions are much more demanding with respect to error rate. Hence, if the radar sensor serves as a component of perception systems for such functions, a simple filter strategy cannot be applied. In this paper, we present a modified filtering approach which is characterized by the idea to vary the filtering depending on the potential of harmful collision with the object which is potentially represented by the radar point. We propose an algorithm which determines a criticality score for each point based on the planned or presumable trajectory of the automated vehicle. Points identified as very critical can trigger manifold actions to confirm or deny object presence. Our pipeline introduces criticality regions. The filter threshold in these criticality regions is omitted. Commonly known radar data sets do not or barely feature critical scenes. Thus, we present an approach to evaluate our framework by adapting the planned trajectory towards vulnerable road users, which serve as ground truth critical points. Evaluation of the criticality metric prove high recall rates. Besides, our post-processing algorithm lowers the rate of non-clustered critical points by 74.8 % in an exemplary setup compared to a moderate, generic filter. 
+
+**Abstract (ZH)**: 雷达传感器在自动驾驶感知系统中发挥着关键作用，但面对高水平的噪声问题。过去，这一问题通过严格的滤波器解决，虽然能去除大部分假阳性结果，但也可能导致真实目标的漏检。未来高度自动化的功能对错误率的要求更高。因此，如果雷达传感器作为这些功能的感知系统组件之一，简单的滤波策略不再适用。本文提出了一种改进的滤波方法，该方法根据潜在碰撞的危害性程度动态调整滤波策略。我们提出一种算法，根据计划或预想的自动驾驶车辆轨迹为每个点确定一个关键性评分。被识别为非常关键的点可以触发多种行动来确认或否定目标存在。我们的处理pipeline引入了关键性区域，在这些区域中省略了滤波阈值。常见的雷达数据集很少或几乎不包含关键场景。因此，本文提出了一种方法，通过将计划轨迹朝向脆弱的道路使用者调整，这些使用者作为真实的关键点，来评估我们的框架。关键性度量的评估结果表明高召回率。此外，在一个示例设置中，与中等通用滤波器相比，我们的后处理算法将孤立的关键点比率降低了74.8%。 
+
+---
+# Optimizing UAV Trajectories via a Simplified Close Enough TSP Approach 
+
+**Title (ZH)**: 基于简化足够接近TSP方法的无人机轨迹优化 
+
+**Authors**: Hiba Bederina  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.03775)  
+
+**Abstract**: This article explores an approach to addressing the Close Enough Traveling Salesman Problem (CETSP). The objective is to streamline the mathematical formulation by introducing reformulations that approximate the Euclidean distances and simplify the objective function. Additionally, the use of convex sets in the constraint design offers computational benefits. The proposed methodology is empirically validated on real-world CETSP instances, with the aid of computational strategies such as a fragmented CPLEX-based approach. Results demonstrate its effectiveness in managing computational resources without compromising solution quality. Furthermore, the article analyzes the behavior of the proposed mathematical formulations, providing comprehensive insights into their performance. 
+
+**Abstract (ZH)**: 本文探索解决近似旅行商问题（CETSP）的方法。目标是通过引入逼近欧几里得距离和简化目标函数的重新表述来优化数学公式。此外，约束设计中使用凸集提供了计算上的优势。所提出的建模方法在实际CETSP实例上进行了经验验证，借助基于CPLEX的分块计算策略等计算策略。结果表明，该方法在不牺牲解决方案质量的前提下有效地管理计算资源。此外，本文分析了所提出数学公式的性能行为，提供了对其性能的全面见解。 
+
+---
+# Improving Action Smoothness for a Cascaded Online Learning Flight Control System 
+
+**Title (ZH)**: 改进级联在线学习飞行控制系统的动作平滑性 
+
+**Authors**: Yifei Li, Erik-jan van Kampen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.04346)  
+
+**Abstract**: This paper aims to improve the action smoothness of a cascaded online learning flight control system. Although the cascaded structure is widely used in flight control design, its stability can be compromised by oscillatory control actions, which poses challenges for practical engineering applications. To address this issue, we introduce an online temporal smoothness technique and a low-pass filter to reduce the amplitude and frequency of the control actions. Fast Fourier Transform (FFT) is used to analyze policy performance in the frequency domain. Simulation results demonstrate the improvements achieved by the two proposed techniques. 
+
+**Abstract (ZH)**: 本文旨在改善级联在线学习飞行控制系统中的动作平滑度。虽然级联结构在飞行控制设计中广泛应用，但其稳定性可能因振荡控制动作而受损，这给实际工程应用带来了挑战。为解决这一问题，我们引入了一种在线时间域平滑技术及低通滤波器来降低控制动作的幅度和频率。快速傅里叶变换（FFT）用于在频域分析策略性能。仿真实验结果展示了所提出的两种技术所取得的改进。 
+
+---
