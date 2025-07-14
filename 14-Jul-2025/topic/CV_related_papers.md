@@ -1,0 +1,198 @@
+# LiDAR, GNSS and IMU Sensor Alignment through Dynamic Time Warping to Construct 3D City Maps 
+
+**Title (ZH)**: 通过动态时间战争整形准LiDAR、GNSS和IMU传感器以构建3D城市地图 
+
+**Authors**: Haitian Wang, Hezam Albaqami, Xinyu Wang, Muhammad Ibrahim, Zainy M. Malakan, Abdullah M. Algamdi, Mohammed H. Alghamdi, Ajmal Mian  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.08420)  
+
+**Abstract**: LiDAR-based 3D mapping suffers from cumulative drift causing global misalignment, particularly in GNSS-constrained environments. To address this, we propose a unified framework that fuses LiDAR, GNSS, and IMU data for high-resolution city-scale mapping. The method performs velocity-based temporal alignment using Dynamic Time Warping and refines GNSS and IMU signals via extended Kalman filtering. Local maps are built using Normal Distributions Transform-based registration and pose graph optimization with loop closure detection, while global consistency is enforced using GNSS-constrained anchors followed by fine registration of overlapping segments. We also introduce a large-scale multimodal dataset captured in Perth, Western Australia to facilitate future research in this direction. Our dataset comprises 144{,}000 frames acquired with a 128-channel Ouster LiDAR, synchronized RTK-GNSS trajectories, and MEMS-IMU measurements across 21 urban loops. To assess geometric consistency, we evaluated our method using alignment metrics based on road centerlines and intersections to capture both global and local accuracy. Our method reduces the average global alignment error from 3.32\,m to 1.24\,m, achieving a 61.4\% improvement. The constructed high-fidelity map supports a wide range of applications, including smart city planning, geospatial data integration, infrastructure monitoring, and GPS-free navigation. Our method, and dataset together establish a new benchmark for evaluating 3D city mapping in GNSS-constrained environments. The dataset and code will be released publicly. 
+
+**Abstract (ZH)**: 基于LiDAR的3D建图受累积漂移影响，特别是在GNSS约束环境中会出现全局错位。为此，我们提出了一种统一框架，融合LiDAR、GNSS和IMU数据以实现高分辨率城市规模建图。该方法使用动态时间弯曲进行基于速度的时间对齐，并通过扩展卡尔曼滤波精化GNSS和IMU信号。局部地图使用基于正态分布变换的注册和位姿图优化构建，并通过环闭检测进行细化注册，而全局一致性则通过GNSS约束锚点实现，并随后对重叠段进行精细注册。我们还在西澳大利亚珀斯引入了一个大规模多模态数据集，以促进未来在此方向上的研究。该数据集包括使用128通道Ouster LiDAR获取的144,000帧数据，同步RTK-GNSS轨迹，以及21个城市环路中的MEMS-IMU测量值。为了评估几何一致性，我们使用基于道路中心线和交叉口的对齐度量来评估我们的方法，以捕捉全局和局部精度。我们的方法将平均全局对齐错误从3.32 m降低到1.24 m，实现了61.4%的改进。构建的高保真地图支持智慧城市规划、地理空间数据整合、基础设施监测和GPS-free导航等广泛的应用。我们的方法和数据集一起为评估GNSS约束环境中3D城市建图设立了新基准。数据集和代码将公开发布。 
+
+---
+# CL3R: 3D Reconstruction and Contrastive Learning for Enhanced Robotic Manipulation Representations 
+
+**Title (ZH)**: CL3R: 三维重建与对比学习增强的机器人Manipulation表示 
+
+**Authors**: Wenbo Cui, Chengyang Zhao, Yuhui Chen, Haoran Li, Zhizheng Zhang, Dongbin Zhao, He Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.08262)  
+
+**Abstract**: Building a robust perception module is crucial for visuomotor policy learning. While recent methods incorporate pre-trained 2D foundation models into robotic perception modules to leverage their strong semantic understanding, they struggle to capture 3D spatial information and generalize across diverse camera viewpoints. These limitations hinder the policy's effectiveness, especially in fine-grained robotic manipulation scenarios. To address these challenges, we propose CL3R, a novel 3D pre-training framework designed to enhance robotic manipulation policies. Our method integrates both spatial awareness and semantic understanding by employing a point cloud Masked Autoencoder to learn rich 3D representations while leveraging pre-trained 2D foundation models through contrastive learning for efficient semantic knowledge transfer. Additionally, we propose a 3D visual representation pre-training framework for robotic tasks. By unifying coordinate systems across datasets and introducing random fusion of multi-view point clouds, we mitigate camera view ambiguity and improve generalization, enabling robust perception from novel viewpoints at test time. Extensive experiments in both simulation and the real world demonstrate the superiority of our method, highlighting its effectiveness in visuomotor policy learning for robotic manipulation. 
+
+**Abstract (ZH)**: 构建稳健的感知模块对于视觉运动策略学习至关重要。虽然近期方法通过引入预训练的2D基础模型以利用其强大的语义理解能力来增强机器人的感知模块，但它们难以捕捉3D空间信息并跨多种相机视角进行泛化。这些限制阻碍了策略的有效性，特别是在精细的机器人操作场景中。为应对这些挑战，我们提出CL3R，一种新颖的3D预训练框架，旨在增强机器人的操作策略。我们的方法通过结合空间意识和语义理解，利用点云Masked Autoencoder学习丰富的3D表示，并通过对比学习利用预训练的2D基础模型进行高效的语义知识迁移。此外，我们还提出了一种适用于机器人任务的3D视觉表示预训练框架。通过统一数据集之间的坐标系，并引入多视图点云的随机融合，我们解决了相机视角的歧义性并提高了泛化能力，从而在测试时实现新型视角下的稳健感知。广泛的仿真实验和真实世界实验表明了我们方法的优势，突显了其在机器人操作中的视觉运动策略学习中的有效性。 
+
+---
+# An Embedded Real-time Object Alert System for Visually Impaired: A Monocular Depth Estimation based Approach through Computer Vision 
+
+**Title (ZH)**: 基于单目深度估计的面向视障者的嵌入式实时对象警报系统：计算机视觉方法 
+
+**Authors**: Jareen Anjom, Rashik Iram Chowdhury, Tarbia Hasan, Md. Ishan Arefin Hossain  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.08165)  
+
+**Abstract**: Visually impaired people face significant challenges in their day-to-day commutes in the urban cities of Bangladesh due to the vast number of obstructions on every path. With many injuries taking place through road accidents on a daily basis, it is paramount for a system to be developed that can alert the visually impaired of objects at close distance beforehand. To overcome this issue, a novel alert system is proposed in this research to assist the visually impaired in commuting through these busy streets without colliding with any objects. The proposed system can alert the individual to objects that are present at a close distance. It utilizes transfer learning to train models for depth estimation and object detection, and combines both models to introduce a novel system. The models are optimized through the utilization of quantization techniques to make them lightweight and efficient, allowing them to be easily deployed on embedded systems. The proposed solution achieved a lightweight real-time depth estimation and object detection model with an mAP50 of 0.801. 
+
+**Abstract (ZH)**: 盲人在 Bangladesh 的城市日常出行中面临严峻挑战，由于道路上遍布各种障碍物。为了应对道路事故频发的问题，亟需开发一种系统，在障碍物靠近时提前警示盲人。为此，本研究提出了一种新型警示系统，旨在帮助盲人在繁忙的街道上安全通行，避免与障碍物相撞。该系统能够警示个体靠近的障碍物。通过迁移学习训练深度估算和目标检测模型，并将两者结合，引入了新的系统。通过量化技术对模型进行优化，使其轻量化且高效，便于部署于嵌入式系统中。所提出的方法实现了轻量级实时深度估算和目标检测模型，mAP50达到0.801。 
+
+---
+# Compress Any Segment Anything Model (SAM) 
+
+**Title (ZH)**: 压缩任意段落检测模型 (SAM) 
+
+**Authors**: Juntong Fan, Zhiwei Hao, Jianqiang Shen, Shang-Ling Jui, Yi Zhang, Jing-Xiao Liao, Feng-Lei Fan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.08765)  
+
+**Abstract**: Due to the excellent performance in yielding high-quality, zero-shot segmentation, Segment Anything Model (SAM) and its variants have been widely applied in diverse scenarios such as healthcare and intelligent manufacturing. Therefore, effectively compressing SAMs has become an increasingly pressing practical need. In this study, we propose Birkhoff, a novel data-free compression algorithm for SAM and its variants. Unlike quantization, pruning, distillation, and other compression methods, Birkhoff embodies versatility across model types, agility in deployment, faithfulness to the original model, and compactness in model size. Specifically, Birkhoff introduces a novel compression algorithm: Hyper-Compression, whose core principle is to find a dense trajectory to turn a high-dimensional parameter vector into a low-dimensional scalar. Furthermore, Birkhoff designs a dedicated linear layer operator, HyperLinear, to fuse decompression and matrix multiplication to significantly accelerate inference of the compressed SAMs. Extensive experiments on 18 SAMs in the COCO, LVIS, and SA-1B datasets show that Birkhoff performs consistently and competitively in compression time, compression ratio, post-compression performance, and inference speed. For example, Birkhoff can achieve a compression ratio of 5.17x on SAM2-B, with less than 1% performance drop without using any fine-tuning data. Moreover, the compression is finished within 60 seconds for all models. 
+
+**Abstract (ZH)**: 基于Birkhoff的Segment Anything模型及其变种的无数据压缩算法 
+
+---
+# MoSAiC: Multi-Modal Multi-Label Supervision-Aware Contrastive Learning for Remote Sensing 
+
+**Title (ZH)**: MoSAiC: 多模态多标签监督aware对比学习在遥感中的应用 
+
+**Authors**: Debashis Gupta, Aditi Golder, Rongkhun Zhu, Kangning Cui, Wei Tang, Fan Yang, Ovidiu Csillik, Sarra Alaqahtani, V. Paul Pauca  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.08683)  
+
+**Abstract**: Contrastive learning (CL) has emerged as a powerful paradigm for learning transferable representations without the reliance on large labeled datasets. Its ability to capture intrinsic similarities and differences among data samples has led to state-of-the-art results in computer vision tasks. These strengths make CL particularly well-suited for Earth System Observation (ESO), where diverse satellite modalities such as optical and SAR imagery offer naturally aligned views of the same geospatial regions. However, ESO presents unique challenges, including high inter-class similarity, scene clutter, and ambiguous boundaries, which complicate representation learning -- especially in low-label, multi-label settings. Existing CL frameworks often focus on intra-modality self-supervision or lack mechanisms for multi-label alignment and semantic precision across modalities. In this work, we introduce MoSAiC, a unified framework that jointly optimizes intra- and inter-modality contrastive learning with a multi-label supervised contrastive loss. Designed specifically for multi-modal satellite imagery, MoSAiC enables finer semantic disentanglement and more robust representation learning across spectrally similar and spatially complex classes. Experiments on two benchmark datasets, BigEarthNet V2.0 and Sent12MS, show that MoSAiC consistently outperforms both fully supervised and self-supervised baselines in terms of accuracy, cluster coherence, and generalization in low-label and high-class-overlap scenarios. 
+
+**Abstract (ZH)**: 对比学习（CL）已成为一种无需依赖大量标注数据集的学习可转移表示的强大范式。其能够捕获数据样本内部相似性和差异性的能力使其在计算机视觉任务中取得了最先进结果。这些优势使CL特别适合地球系统观测（ESO），其中如光学和SAR图像等多元卫星模态提供了同一地理区域的自然对齐视图。然而，ESO带来了独特的挑战，包括高类间相似性、场景杂乱和模糊边界，这些都使表示学习复杂化——尤其是在低标记、多标签设置中。现有CL框架往往侧重于单一模态的自我监督或缺乏跨模态多标签对齐和语义精度的机制。在本文中，我们提出了MoSAiC，这是一种统一框架，通过多标签监督对比损失联合优化模内和模间的对比学习。MoSAiC专为多元卫星图像设计，使人们能够更细致地分离语义并提高在光谱相似和空间复杂类别中表示学习的稳健性。在两个基准数据集BigEarthNet V2.0和Sent12MS上的实验表明，MoSAiC在准确性、聚类一致性和低标签、高类别重叠场景中的泛化能力上均优于完全监督和自我监督基线。 
+
+---
+# Review of Feed-forward 3D Reconstruction: From DUSt3R to VGGT 
+
+**Title (ZH)**: feed-forward 3D重建综述：从DUSt3R到VGGT 
+
+**Authors**: Wei Zhang, Yihang Wu, Songhua Li, Wenjie Ma, Xin Ma, Qiang Li, Qi Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.08448)  
+
+**Abstract**: 3D reconstruction, which aims to recover the dense three-dimensional structure of a scene, is a cornerstone technology for numerous applications, including augmented/virtual reality, autonomous driving, and robotics. While traditional pipelines like Structure from Motion (SfM) and Multi-View Stereo (MVS) achieve high precision through iterative optimization, they are limited by complex workflows, high computational cost, and poor robustness in challenging scenarios like texture-less regions. Recently, deep learning has catalyzed a paradigm shift in 3D reconstruction. A new family of models, exemplified by DUSt3R, has pioneered a feed-forward approach. These models employ a unified deep network to jointly infer camera poses and dense geometry directly from an Unconstrained set of images in a single forward pass. This survey provides a systematic review of this emerging domain. We begin by dissecting the technical framework of these feed-forward models, including their Transformer-based correspondence modeling, joint pose and geometry regression mechanisms, and strategies for scaling from two-view to multi-view scenarios. To highlight the disruptive nature of this new paradigm, we contrast it with both traditional pipelines and earlier learning-based methods like MVSNet. Furthermore, we provide an overview of relevant datasets and evaluation metrics. Finally, we discuss the technology's broad application prospects and identify key future challenges and opportunities, such as model accuracy and scalability, and handling dynamic scenes. 
+
+**Abstract (ZH)**: 三维重建，旨在恢复场景的密集三维结构，是 augmented/virtual 现实、自主驾驶和机器人等领域众多应用的基础技术。传统管道如结构从运动（SfM）和多视图立体视觉（MVS）通过迭代优化实现高精度，但受限于复杂的工作流程、高昂的计算成本以及在纹理缺乏区域等挑战场景中的鲁棒性较差。近年来，深度学习催化了三维重建范式的转变。以DUSt3R为代表的一类新型模型引领了前馈方法。这些模型采用统一的深度网络，直接从一组未受约束的图像中在单一前馈通过过程中联合推断相机姿态和密集几何。本文综述了这一新兴领域的系统性内容。首先，我们剖析这些前馈模型的技术框架，包括基于 Transformer 的对应关系建模、联合姿态和几何回归机制以及从双视图到多视图场景的扩展策略。为了突出这一新范式的颠覆性影响，我们将其与传统管道和早期基于学习的方法（如MVSNet）进行对比。此外，我们还概述了相关数据集和评估指标。最后，我们讨论该技术的广泛应用前景，并识别出关键的未来挑战和机遇，如模型精度和可扩展性，以及处理动态场景等问题。 
+
+---
+# Vision Foundation Models as Effective Visual Tokenizers for Autoregressive Image Generation 
+
+**Title (ZH)**: 基于视觉基础模型的有效自回归图像生成视觉分词器 
+
+**Authors**: Anlin Zheng, Xin Wen, Xuanyang Zhang, Chuofan Ma, Tiancai Wang, Gang Yu, Xiangyu Zhang, Xiaojuan Qi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.08441)  
+
+**Abstract**: Leveraging the powerful representations of pre-trained vision foundation models -- traditionally used for visual comprehension -- we explore a novel direction: building an image tokenizer directly atop such models, a largely underexplored area. Specifically, we employ a frozen vision foundation model as the encoder of our tokenizer. To enhance its effectiveness, we introduce two key components: (1) a region-adaptive quantization framework that reduces redundancy in the pre-trained features on regular 2D grids, and (2) a semantic reconstruction objective that aligns the tokenizer's outputs with the foundation model's representations to preserve semantic fidelity. Based on these designs, our proposed image tokenizer, VFMTok, achieves substantial improvements in image reconstruction and generation quality, while also enhancing token efficiency. It further boosts autoregressive (AR) generation -- achieving a gFID of 2.07 on ImageNet benchmarks, while accelerating model convergence by three times, and enabling high-fidelity class-conditional synthesis without the need for classifier-free guidance (CFG). The code will be released publicly to benefit the community. 
+
+**Abstract (ZH)**: 利用预训练视觉基础模型的强大表示能力——这些模型传统上用于视觉理解——我们探索了一个新的方向：直接在这些模型之上构建图像分词器，这是一个 largely underexplored 领域。具体来说，我们采用了一个冻结的视觉基础模型作为分词器的编码器。为了增强其效果，我们引入了两个关键组件：（1）一种区域自适应量化框架，它在常规2D网格上减少了预训练特征的冗余性；（2）一种语义重建目标，该目标将分词器的输出与基础模型的表示对齐，以保留语义保真度。基于这些设计，我们提出的一种图像分词器 VFMTok 在图像重建和生成质量上取得了显著提高，同时提高了标记的效率。它还进一步提升了自回归（AR）生成能力——在 ImageNet 基准测试中实现了 2.07 的 gFID，并将模型收敛速度提高了三倍，无需分类器免费引导（CFG）即可实现高保真条件合成。代码将公开发布以造福社区。 
+
+---
+# Deep Hashing with Semantic Hash Centers for Image Retrieval 
+
+**Title (ZH)**: 基于语义哈希中心的深度哈希检索 
+
+**Authors**: Li Chen, Rui Liu, Yuxiang Zhou, Xudong Ma, Yong Chen, Dell Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.08404)  
+
+**Abstract**: Deep hashing is an effective approach for large-scale image retrieval. Current methods are typically classified by their supervision types: point-wise, pair-wise, and list-wise. Recent point-wise techniques (e.g., CSQ, MDS) have improved retrieval performance by pre-assigning a hash center to each class, enhancing the discriminability of hash codes across various datasets. However, these methods rely on data-independent algorithms to generate hash centers, which neglect the semantic relationships between classes and may degrade retrieval performance.
+This paper introduces the concept of semantic hash centers, building on the idea of traditional hash centers. We hypothesize that hash centers of semantically related classes should have closer Hamming distances, while those of unrelated classes should be more distant. To this end, we propose a three-stage framework, SHC, to generate hash codes that preserve semantic structure.
+First, we develop a classification network to identify semantic similarities between classes using a data-dependent similarity calculation that adapts to varying data distributions. Second, we introduce an optimization algorithm to generate semantic hash centers, preserving semantic relatedness while enforcing a minimum distance between centers to avoid excessively similar hash codes. Finally, a deep hashing network is trained using these semantic centers to convert images into binary hash codes.
+Experimental results on large-scale retrieval tasks across several public datasets show that SHC significantly improves retrieval performance. Specifically, SHC achieves average improvements of +7.26%, +7.62%, and +11.71% in MAP@100, MAP@1000, and MAP@ALL metrics, respectively, over state-of-the-art methods. 
+
+**Abstract (ZH)**: 深度哈希是大规模图像检索的一个有效方法。当前的方法通常根据监督类型分类：点 wise、对 wise 和列表 wise。最近的点 wise 技术（例如 CSQ、MDS）通过为每个类别预先分配一个哈希中心，提高了哈希代码的区分能力，从而在多种数据集上提升了检索性能。然而，这些方法依赖于数据独立的算法来生成哈希中心，忽视了类间的语义关系，可能导致检索性能下降。本文引入了语义哈希中心的概念，基于传统哈希中心的思想。我们假设语义相关类别的哈希中心应有更近的汉明距离，而无关类别的哈希中心应有更大的距离。为此，我们提出了一种三阶段框架 SHC，以生成保留语义结构的哈希代码。首先，我们开发了一个分类网络，使用自适应于不同数据分布的数据依赖相似度计算来识别类别间的语义相似性。其次，我们引入了一个优化算法来生成语义哈希中心，同时保持语义相关性并强制中心间的最小距离，以避免生成过于相似的哈希代码。最后，我们使用这些语义中心训练了一个深度哈希网络，将图像转换为二进制哈希代码。在多个公共数据集上的大规模检索任务实验结果显示，SHC 显著提升了检索性能。具体而言，SHC 在 MAP@100、MAP@1000 和 MAP@ALL 指标上分别比最先进的方法提高了 7.26%、7.62% 和 11.71%。 
+
+---
+# PanMatch: Unleashing the Potential of Large Vision Models for Unified Matching Models 
+
+**Title (ZH)**: PanMatch: 激发大型视觉模型在统一匹配模型中的潜力 
+
+**Authors**: Yongjian Zhang, Longguang Wang, Kunhong Li, Ye Zhang, Yun Wang, Liang Lin, Yulan Guo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.08400)  
+
+**Abstract**: This work presents PanMatch, a versatile foundation model for robust correspondence matching. Unlike previous methods that rely on task-specific architectures and domain-specific fine-tuning to support tasks like stereo matching, optical flow or feature matching, our key insight is that any two-frame correspondence matching task can be addressed within a 2D displacement estimation framework using the same model weights. Such a formulation eliminates the need for designing specialized unified architectures or task-specific ensemble models. Instead, it achieves multi-task integration by endowing displacement estimation algorithms with unprecedented generalization capabilities. To this end, we highlight the importance of a robust feature extractor applicable across multiple domains and tasks, and propose the feature transformation pipeline that leverage all-purpose features from Large Vision Models to endow matching baselines with zero-shot cross-view matching capabilities. Furthermore, we assemble a cross-domain dataset with near 1.8 million samples from stereo matching, optical flow, and feature matching domains to pretrain PanMatch. We demonstrate the versatility of PanMatch across a wide range of domains and downstream tasks using the same model weights. Our model outperforms UniMatch and Flow-Anything on cross-task evaluations, and achieves comparable performance to most state-of-the-art task-specific algorithms on task-oriented benchmarks. Additionally, PanMatch presents unprecedented zero-shot performance in abnormal scenarios, such as rainy day and satellite imagery, where most existing robust algorithms fail to yield meaningful results. 
+
+**Abstract (ZH)**: PanMatch：一种泛化型基础模型，用于稳健的对应匹配 
+
+---
+# CoCo-Bot: Energy-based Composable Concept Bottlenecks for Interpretable Generative Models 
+
+**Title (ZH)**: CoCo-Bot: 基于能量的可组合概念瓶颈用于可解释生成模型 
+
+**Authors**: Sangwon Kim, In-su Jang, Pyongkun Kim, Kwang-Ju Kim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.08334)  
+
+**Abstract**: Concept Bottleneck Models (CBMs) provide interpretable and controllable generative modeling by routing generation through explicit, human-understandable concepts. However, previous generative CBMs often rely on auxiliary visual cues at the bottleneck to compensate for information not captured by the concepts, which undermines interpretability and compositionality. We propose CoCo-Bot, a post-hoc, composable concept bottleneck generative model that eliminates the need for auxiliary cues by transmitting all information solely through explicit concepts. Guided by diffusion-based energy functions, CoCo-Bot supports robust post-hoc interventions-such as concept composition and negation-across arbitrary concepts. Experiments using StyleGAN2 pre-trained on CelebA-HQ show that CoCo-Bot improves concept-level controllability and interpretability, while maintaining competitive visual quality. 
+
+**Abstract (ZH)**: CoCo-Bot：基于后处理可组合概念瓶颈的生成模型 
+
+---
+# Interpretability-Aware Pruning for Efficient Medical Image Analysis 
+
+**Title (ZH)**: 面向可解释性的医疗图像分析高效剪枝 
+
+**Authors**: Nikita Malik, Pratinav Seth, Neeraj Kumar Singh, Chintan Chitroda, Vinay Kumar Sankarapu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.08330)  
+
+**Abstract**: Deep learning has driven significant advances in medical image analysis, yet its adoption in clinical practice remains constrained by the large size and lack of transparency in modern models. Advances in interpretability techniques such as DL-Backtrace, Layer-wise Relevance Propagation, and Integrated Gradients make it possible to assess the contribution of individual components within neural networks trained on medical imaging tasks. In this work, we introduce an interpretability-guided pruning framework that reduces model complexity while preserving both predictive performance and transparency. By selectively retaining only the most relevant parts of each layer, our method enables targeted compression that maintains clinically meaningful representations. Experiments across multiple medical image classification benchmarks demonstrate that this approach achieves high compression rates with minimal loss in accuracy, paving the way for lightweight, interpretable models suited for real-world deployment in healthcare settings. 
+
+**Abstract (ZH)**: 深度学习在医疗图像分析中推动了显著的进步，但在临床实践中的应用受限于现代模型的大规模和不透明性。解释性技术的进步，如DL-Backtrace、层wise相关传播和集成梯度，使得评估神经网络中单个组件的贡献成为可能。在本工作中，我们提出了一种基于解释性的剪枝框架，该框架在保持预测性能和透明性的同时减少了模型复杂性。通过仅选择保留每一层中最相关的部分，我们的方法实现了目标压缩，保持了临床相关的表现。跨多个医疗图像分类基准的实验表明，该方法在最小损失准确性的前提下实现了高压缩率，为医疗保健环境中轻量级、可解释的模型的部署铺平了道路。 
+
+---
+# Temporally Consistent Amodal Completion for 3D Human-Object Interaction Reconstruction 
+
+**Title (ZH)**: 三维人体-物体交互重建中的时间一致性不完备补全 
+
+**Authors**: Hyungjun Doh, Dong In Lee, Seunggeun Chi, Pin-Hao Huang, Kwonjoon Lee, Sangpil Kim, Karthik Ramani  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.08137)  
+
+**Abstract**: We introduce a novel framework for reconstructing dynamic human-object interactions from monocular video that overcomes challenges associated with occlusions and temporal inconsistencies. Traditional 3D reconstruction methods typically assume static objects or full visibility of dynamic subjects, leading to degraded performance when these assumptions are violated-particularly in scenarios where mutual occlusions occur. To address this, our framework leverages amodal completion to infer the complete structure of partially obscured regions. Unlike conventional approaches that operate on individual frames, our method integrates temporal context, enforcing coherence across video sequences to incrementally refine and stabilize reconstructions. This template-free strategy adapts to varying conditions without relying on predefined models, significantly enhancing the recovery of intricate details in dynamic scenes. We validate our approach using 3D Gaussian Splatting on challenging monocular videos, demonstrating superior precision in handling occlusions and maintaining temporal stability compared to existing techniques. 
+
+**Abstract (ZH)**: 一种克服遮挡和时间不一致性重构动态人-物交互的新框架 
+
+---
+# An Object-Based Deep Learning Approach for Building Height Estimation from Single SAR Images 
+
+**Title (ZH)**: 基于对象的深度学习方法从单张SAR图像估计建筑物高度 
+
+**Authors**: Babak Memar, Luigi Russo, Silvia Liberata Ullo, Paolo Gamba  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.08096)  
+
+**Abstract**: Accurate estimation of building heights using very high resolution (VHR) synthetic aperture radar (SAR) imagery is crucial for various urban applications. This paper introduces a Deep Learning (DL)-based methodology for automated building height estimation from single VHR COSMO-SkyMed images: an object-based regression approach based on bounding box detection followed by height estimation. This model was trained and evaluated on a unique multi-continental dataset comprising eight geographically diverse cities across Europe, North and South America, and Asia, employing a cross-validation strategy to explicitly assess out-of-distribution (OOD) generalization. The results demonstrate highly promising performance, particularly on European cities where the model achieves a Mean Absolute Error (MAE) of approximately one building story (2.20 m in Munich), significantly outperforming recent state-of-the-art methods in similar OOD scenarios. Despite the increased variability observed when generalizing to cities in other continents, particularly in Asia with its distinct urban typologies and prevalence of high-rise structures, this study underscores the significant potential of DL for robust cross-city and cross-continental transfer learning in building height estimation from single VHR SAR data. 
+
+**Abstract (ZH)**: 使用高分辨率合成孔径雷达图像的建筑高度准确估计对各类城市应用至关重要：一种基于深度学习的方法 
+
+---
+# SSSUMO: Real-Time Semi-Supervised Submovement Decomposition 
+
+**Title (ZH)**: SSSUMO: 实时半监督子运动分解 
+
+**Authors**: Evgenii Rudakov, Jonathan Shock, Otto Lappi, Benjamin Ultan Cowley  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.08028)  
+
+**Abstract**: This paper introduces a SSSUMO, semi-supervised deep learning approach for submovement decomposition that achieves state-of-the-art accuracy and speed. While submovement analysis offers valuable insights into motor control, existing methods struggle with reconstruction accuracy, computational cost, and validation, due to the difficulty of obtaining hand-labeled data. We address these challenges using a semi-supervised learning framework. This framework learns from synthetic data, initially generated from minimum-jerk principles and then iteratively refined through adaptation to unlabeled human movement data. Our fully convolutional architecture with differentiable reconstruction significantly surpasses existing methods on both synthetic and diverse human motion datasets, demonstrating robustness even in high-noise conditions. Crucially, the model operates in real-time (less than a millisecond per input second), a substantial improvement over optimization-based techniques. This enhanced performance facilitates new applications in human-computer interaction, rehabilitation medicine, and motor control studies. We demonstrate the model's effectiveness across diverse human-performed tasks such as steering, rotation, pointing, object moving, handwriting, and mouse-controlled gaming, showing notable improvements particularly on challenging datasets where traditional methods largely fail. Training and benchmarking source code, along with pre-trained model weights, are made publicly available at this https URL. 
+
+**Abstract (ZH)**: 一种半监督深度学习方法SSSUMO在子运动分解中的应用：实现最先进的准确性和速度 
+
+---
+# Dual-Attention U-Net++ with Class-Specific Ensembles and Bayesian Hyperparameter Optimization for Precise Wound and Scale Marker Segmentation 
+
+**Title (ZH)**: 双重注意U-Net++结合类特定集成和贝叶斯超参数优化的精确伤口和尺度标记分割 
+
+**Authors**: Daniel Cieślak, Miriam Reca, Olena Onyshchenko, Jacek Rumiński  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.05314)  
+
+**Abstract**: Accurate segmentation of wounds and scale markers in clinical images remainsa significant challenge, crucial for effective wound management and automatedassessment. In this study, we propose a novel dual-attention U-Net++ archi-tecture, integrating channel-wise (SCSE) and spatial attention mechanisms toaddress severe class imbalance and variability in medical images this http URL, extensive benchmarking across diverse architectures and encoders via 5-fold cross-validation identified EfficientNet-B7 as the optimal encoder this http URL, we independently trained two class-specific models with tailoredpreprocessing, extensive data augmentation, and Bayesian hyperparameter tun-ing (WandB sweeps). The final model ensemble utilized Test Time Augmentationto further enhance prediction reliability. Our approach was evaluated on a bench-mark dataset from the NBC 2025 & PCBBE 2025 competition. Segmentationperformance was quantified using a weighted F1-score (75% wounds, 25% scalemarkers), calculated externally by competition organizers on undisclosed hard-ware. The proposed approach achieved an F1-score of 0.8640, underscoring itseffectiveness for complex medical segmentation tasks. 
+
+**Abstract (ZH)**: 临床图像中伤口和量尺标记的准确分割仍然是一个重大挑战，对于有效的伤口管理和自动化评估至关重要。在本研究中，我们提出了一种新颖的双注意U-Net++架构，结合了通道级（SCSE）和空间注意机制以解决医学图像中的严重类别不平衡和变异性。我们的方法在NBC 2025 & PCBBE 2025竞赛的数据集上进行了评估，使用加权F1分数（75%伤口，25%量尺标记）进行了量化，该分数由竞赛组织者在外置未公开硬件上计算得出。所提出的方法实现了0.8640的F1分数，证明了其在复杂医学分割任务中的有效性。 
+
+---
