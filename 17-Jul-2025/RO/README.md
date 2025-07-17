@@ -1,0 +1,429 @@
+# EgoVLA: Learning Vision-Language-Action Models from Egocentric Human Videos 
+
+**Title (ZH)**: 自我视角多模态模型：从自我中心人体视频中学习视觉-语言-行动模型 
+
+**Authors**: Ruihan Yang, Qinxi Yu, Yecheng Wu, Rui Yan, Borui Li, An-Chieh Cheng, Xueyan Zou, Yunhao Fang, Hongxu Yin, Sifei Liu, Song Han, Yao Lu, Xiaolong Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12440)  
+
+**Abstract**: Real robot data collection for imitation learning has led to significant advancements in robotic manipulation. However, the requirement for robot hardware in the process fundamentally constrains the scale of the data. In this paper, we explore training Vision-Language-Action (VLA) models using egocentric human videos. The benefit of using human videos is not only for their scale but more importantly for the richness of scenes and tasks. With a VLA trained on human video that predicts human wrist and hand actions, we can perform Inverse Kinematics and retargeting to convert the human actions to robot actions. We fine-tune the model using a few robot manipulation demonstrations to obtain the robot policy, namely EgoVLA. We propose a simulation benchmark called Isaac Humanoid Manipulation Benchmark, where we design diverse bimanual manipulation tasks with demonstrations. We fine-tune and evaluate EgoVLA with Isaac Humanoid Manipulation Benchmark and show significant improvements over baselines and ablate the importance of human data. Videos can be found on our website: this https URL 
+
+**Abstract (ZH)**: 真实机器人数据收集用于模仿学习已推动了机器人操作的显著进步。然而，过程中对机器人硬件的需要从根本上限制了数据的规模。本文探讨使用自视点人类视频训练视觉-语言-动作（VLA）模型。使用人类视频的优势不仅在于其规模，更在于其丰富的场景和任务。通过使用训练于人类视频且能预测人类手腕和手部动作的VLA，我们执行逆向运动学和重新目标化，将人类动作转换为机器人动作。我们使用少量的机器人操作演示微调模型，以获得机器人策略，即EgoVLA。我们提出了一种模拟基准——Isaac类人机器人操作基准，其中设计了多样化的双臂操作任务并提供了演示。我们使用Isaac类人机器人操作基准微调和评估EgoVLA，并展示了相对于基线的显著改进，并消融了人类数据的重要性。有关视频请参阅我们的网站：this https URL。 
+
+---
+# Design and Development of an Automated Contact Angle Tester (ACAT) for Surface Wettability Measurement 
+
+**Title (ZH)**: 自动接触角测试仪（ACAT）的设计与开发：表面湿润性测量 
+
+**Authors**: Connor Burgess, Kyle Douin, Amir Kordijazi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12431)  
+
+**Abstract**: The Automated Contact Angle Tester (ACAT) is a fully integrated robotic work cell developed to automate the measurement of surface wettability on 3D-printed materials. Designed for precision, repeatability, and safety, ACAT addresses the limitations of manual contact angle testing by combining programmable robotics, precise liquid dispensing, and a modular software-hardware architecture. The system is composed of three core subsystems: (1) an electrical system including power, control, and safety circuits compliant with industrial standards such as NEC 70, NFPA 79, and UL 508A; (2) a software control system based on a Raspberry Pi and Python, featuring fault detection, GPIO logic, and operator interfaces; and (3) a mechanical system that includes a 3-axis Cartesian robot, pneumatic actuation, and a precision liquid dispenser enclosed within a safety-certified frame. The ACAT enables high-throughput, automated surface characterization and provides a robust platform for future integration into smart manufacturing and materials discovery workflows. This paper details the design methodology, implementation strategies, and system integration required to develop the ACAT platform. 
+
+**Abstract (ZH)**: 自动化接触角测试仪（ACAT）：一种用于自动化3D打印材料表面润湿性测量的集成机器人工作站 
+
+---
+# Regrasp Maps for Sequential Manipulation Planning 
+
+**Title (ZH)**: 序列操作规划的重抓取地图 
+
+**Authors**: Svetlana Levit, Marc Toussaint  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12407)  
+
+**Abstract**: We consider manipulation problems in constrained and cluttered settings, which require several regrasps at unknown locations. We propose to inform an optimization-based task and motion planning (TAMP) solver with possible regrasp areas and grasp sequences to speed up the search. Our main idea is to use a state space abstraction, a regrasp map, capturing the combinations of available grasps in different parts of the configuration space, and allowing us to provide the solver with guesses for the mode switches and additional constraints for the object placements. By interleaving the creation of regrasp maps, their adaptation based on failed refinements, and solving TAMP (sub)problems, we are able to provide a robust search method for challenging regrasp manipulation problems. 
+
+**Abstract (ZH)**: 我们在受约束和拥挤环境中考虑夹持操作问题，这些环境需要在未知位置进行多次重新夹持。我们提出了一种使用可能的重新夹持区域和夹持序列来引导基于优化的任务和运动规划（TAMP）求解器以加速搜索的方法。我们的主要思想是使用状态空间抽象——重新夹持地图，该地图捕捉配置空间不同部分可用夹持方式的组合，从而使求解器能够提供模式切换的猜测和物体放置的附加约束。通过交错生成重新夹持地图、根据失败的细化进行适应以及求解TAMP（子）问题，我们能够提供对具有挑战性的重新夹持操作问题 robust 的搜索方法。 
+
+---
+# Assessing the Value of Visual Input: A Benchmark of Multimodal Large Language Models for Robotic Path Planning 
+
+**Title (ZH)**: 视觉输入价值评估：面向机器人路径规划的多模态大型语言模型基准研究 
+
+**Authors**: Jacinto Colan, Ana Davila, Yasuhisa Hasegawa  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12391)  
+
+**Abstract**: Large Language Models (LLMs) show potential for enhancing robotic path planning. This paper assesses visual input's utility for multimodal LLMs in such tasks via a comprehensive benchmark. We evaluated 15 multimodal LLMs on generating valid and optimal paths in 2D grid environments, simulating simplified robotic planning, comparing text-only versus text-plus-visual inputs across varying model sizes and grid complexities. Our results indicate moderate success rates on simpler small grids, where visual input or few-shot text prompting offered some benefits. However, performance significantly degraded on larger grids, highlighting a scalability challenge. While larger models generally achieved higher average success, the visual modality was not universally dominant over well-structured text for these multimodal systems, and successful paths on simpler grids were generally of high quality. These results indicate current limitations in robust spatial reasoning, constraint adherence, and scalable multimodal integration, identifying areas for future LLM development in robotic path planning. 
+
+**Abstract (ZH)**: 大型语言模型（LLMs）在增强机器人路径规划方面显示出潜力。本文通过全面的基准测试评估了多模态LLMs在路径规划任务中利用视觉输入的效果。我们在2D网格环境中评估了15个多模态LLMs生成有效和最优路径的能力，模拟简化版的机器人规划过程，比较了仅文本输入与结合视觉输入的情况，考察了不同模型大小和网格复杂度的表现。结果显示，在较小的简单网格上，视觉输入或少量提示文本能够提供一定程度的好处，但在较大网格上性能显著下降，突显了可扩展性的挑战。尽管大型模型通常实现了更高的平均成功率，但视觉模态在这些多模态系统中并非普遍优于结构良好的文本，并且在小网格上成功路径通常质量较高。这些结果表明当前在稳健的空间推理、约束遵守以及可扩展的多模态集成方面的局限性，指出了未来LLM在机器人路径规划方面的开发方向。 
+
+---
+# Next-Gen Museum Guides: Autonomous Navigation and Visitor Interaction with an Agentic Robot 
+
+**Title (ZH)**: 下一代博物馆导览机器人：自主导航与有能动性的游客互动 
+
+**Authors**: Luca Garello, Francesca Cocchella, Alessandra Sciutti, Manuel Catalano, Francesco Rea  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12273)  
+
+**Abstract**: Autonomous robots are increasingly being tested into public spaces to enhance user experiences, particularly in cultural and educational settings. This paper presents the design, implementation, and evaluation of the autonomous museum guide robot Alter-Ego equipped with advanced navigation and interactive capabilities. The robot leverages state-of-the-art Large Language Models (LLMs) to provide real-time, context aware question-and-answer (Q&A) interactions, allowing visitors to engage in conversations about exhibits. It also employs robust simultaneous localization and mapping (SLAM) techniques, enabling seamless navigation through museum spaces and route adaptation based on user requests. The system was tested in a real museum environment with 34 participants, combining qualitative analysis of visitor-robot conversations and quantitative analysis of pre and post interaction surveys. Results showed that the robot was generally well-received and contributed to an engaging museum experience, despite some limitations in comprehension and responsiveness. This study sheds light on HRI in cultural spaces, highlighting not only the potential of AI-driven robotics to support accessibility and knowledge acquisition, but also the current limitations and challenges of deploying such technologies in complex, real-world environments. 
+
+**Abstract (ZH)**: 自主机器人在公共空间中的测试及其在博物馆导览中的设计、实现与评估：基于先进导航和交互能力的Alter-Ego自主博物馆导游机器人的研究 
+
+---
+# UniLGL: Learning Uniform Place Recognition for FOV-limited/Panoramic LiDAR Global Localization 
+
+**Title (ZH)**: UniLGL：学习统一视角限制/全景LiDAR全局定位中的场地识别 
+
+**Authors**: Hongming Shen, Xun Chen, Yulin Hui, Zhenyu Wu, Wei Wang, Qiyang Lyu, Tianchen Deng, Danwei Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12194)  
+
+**Abstract**: Existing LGL methods typically consider only partial information (e.g., geometric features) from LiDAR observations or are designed for homogeneous LiDAR sensors, overlooking the uniformity in LGL. In this work, a uniform LGL method is proposed, termed UniLGL, which simultaneously achieves spatial and material uniformity, as well as sensor-type uniformity. The key idea of the proposed method is to encode the complete point cloud, which contains both geometric and material information, into a pair of BEV images (i.e., a spatial BEV image and an intensity BEV image). An end-to-end multi-BEV fusion network is designed to extract uniform features, equipping UniLGL with spatial and material uniformity. To ensure robust LGL across heterogeneous LiDAR sensors, a viewpoint invariance hypothesis is introduced, which replaces the conventional translation equivariance assumption commonly used in existing LPR networks and supervises UniLGL to achieve sensor-type uniformity in both global descriptors and local feature representations. Finally, based on the mapping between local features on the 2D BEV image and the point cloud, a robust global pose estimator is derived that determines the global minimum of the global pose on SE(3) without requiring additional registration. To validate the effectiveness of the proposed uniform LGL, extensive benchmarks are conducted in real-world environments, and the results show that the proposed UniLGL is demonstratively competitive compared to other State-of-the-Art LGL methods. Furthermore, UniLGL has been deployed on diverse platforms, including full-size trucks and agile Micro Aerial Vehicles (MAVs), to enable high-precision localization and mapping as well as multi-MAV collaborative exploration in port and forest environments, demonstrating the applicability of UniLGL in industrial and field scenarios. 
+
+**Abstract (ZH)**: 一种同时实现空间均匀性、材料均匀性和传感器类型均匀性的统一LiDAR全局定位方法 
+
+---
+# Fast and Scalable Game-Theoretic Trajectory Planning with Intentional Uncertainties 
+
+**Title (ZH)**: 快速且可扩展的基于博弈论的轨迹规划，具有意图不确定性 
+
+**Authors**: Zhenmin Huang, Yusen Xie, Benshan Ma, Shaojie Shen, Jun Ma  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12174)  
+
+**Abstract**: Trajectory planning involving multi-agent interactions has been a long-standing challenge in the field of robotics, primarily burdened by the inherent yet intricate interactions among agents. While game-theoretic methods are widely acknowledged for their effectiveness in managing multi-agent interactions, significant impediments persist when it comes to accommodating the intentional uncertainties of agents. In the context of intentional uncertainties, the heavy computational burdens associated with existing game-theoretic methods are induced, leading to inefficiencies and poor scalability. In this paper, we propose a novel game-theoretic interactive trajectory planning method to effectively address the intentional uncertainties of agents, and it demonstrates both high efficiency and enhanced scalability. As the underpinning basis, we model the interactions between agents under intentional uncertainties as a general Bayesian game, and we show that its agent-form equivalence can be represented as a potential game under certain minor assumptions. The existence and attainability of the optimal interactive trajectories are illustrated, as the corresponding Bayesian Nash equilibrium can be attained by optimizing a unified optimization problem. Additionally, we present a distributed algorithm based on the dual consensus alternating direction method of multipliers (ADMM) tailored to the parallel solving of the problem, thereby significantly improving the scalability. The attendant outcomes from simulations and experiments demonstrate that the proposed method is effective across a range of scenarios characterized by general forms of intentional uncertainties. Its scalability surpasses that of existing centralized and decentralized baselines, allowing for real-time interactive trajectory planning in uncertain game settings. 
+
+**Abstract (ZH)**: 涉及多Agent交互的轨迹规划一直是机器人领域的一个长久挑战，主要由于Agent之间复杂的内在交互所致。尽管博弈理论方法因其在管理多Agent交互方面的有效性而广受认可，但在应对Agent的有意不确定性时仍存在显著障碍。在有意不确定性的情境下，现有的博弈理论方法会带来沉重的计算负担，导致效率低下和可扩展性差。本文提出了一种新的博弈理论交互轨迹规划方法，旨在有效解决Agent的有意不确定性问题，并且该方法显示出高效率和增强的可扩展性。以这一基础为支撑，我们将Agent在有意不确定性下的交互建模为一般的贝叶斯博弈，并证明在某些轻微假设下，其Agent形式等价于潜在博弈。optimal交互轨迹的存在性和可实现性得到说明，因为相应的贝叶斯纳什均衡可以通过优化一个统一的优化问题来实现。此外，我们提出了一种基于对偶一致交替方向乘子法（ADMM）的分布式算法，用于并行解决问题，从而显著提高了可扩展性。实验和仿真结果表明，该方法在各种有意不确定性形式的情景下都有效，并且其可扩展性超过了现有的集中式和分布式基线方法，使得在不确定性博弈环境中实现实时交互轨迹规划成为可能。 
+
+---
+# Probabilistic Safety Verification for an Autonomous Ground Vehicle: A Situation Coverage Grid Approach 
+
+**Title (ZH)**: 自主地面车辆的概率安全性验证：一种情境覆盖率网格方法 
+
+**Authors**: Nawshin Mannan Proma, Gricel Vázquez, Sepeedeh Shahbeigi, Arjun Badyal, Victoria Hodge  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12158)  
+
+**Abstract**: As industrial autonomous ground vehicles are increasingly deployed in safety-critical environments, ensuring their safe operation under diverse conditions is paramount. This paper presents a novel approach for their safety verification based on systematic situation extraction, probabilistic modelling and verification. We build upon the concept of a situation coverage grid, which exhaustively enumerates environmental configurations relevant to the vehicle's operation. This grid is augmented with quantitative probabilistic data collected from situation-based system testing, capturing probabilistic transitions between situations. We then generate a probabilistic model that encodes the dynamics of both normal and unsafe system behaviour. Safety properties extracted from hazard analysis and formalised in temporal logic are verified through probabilistic model checking against this model. The results demonstrate that our approach effectively identifies high-risk situations, provides quantitative safety guarantees, and supports compliance with regulatory standards, thereby contributing to the robust deployment of autonomous systems. 
+
+**Abstract (ZH)**: 基于系统情况提取、概率建模与验证的工业自主地面车辆安全性验证新方法 
+
+---
+# Leveraging Sidewalk Robots for Walkability-Related Analyses 
+
+**Title (ZH)**: 利用人行道机器人进行无障碍性相关分析 
+
+**Authors**: Xing Tong, Michele D. Simoni, Kaj Munhoz Arfvidsson, Jonas Mårtensson  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12148)  
+
+**Abstract**: Walkability is a key component of sustainable urban development, while collecting detailed data on its related features remains challenging due to the high costs and limited scalability of traditional methods. Sidewalk delivery robots, increasingly deployed in urban environments, offer a promising solution to these limitations. This paper explores how these robots can serve as mobile data collection platforms, capturing sidewalk-level features related to walkability in a scalable, automated, and real-time manner. A sensor-equipped robot was deployed on a sidewalk network at KTH in Stockholm, completing 101 trips covering 900 segments. From the collected data, different typologies of features are derived, including robot trip characteristics (e.g., speed, duration), sidewalk conditions (e.g., width, surface unevenness), and sidewalk utilization (e.g., pedestrian density). Their walkability-related implications were investigated with a series of analyses. The results demonstrate that pedestrian movement patterns are strongly influenced by sidewalk characteristics, with higher density, reduced width, and surface irregularity associated with slower and more variable trajectories. Notably, robot speed closely mirrors pedestrian behavior, highlighting its potential as a proxy for assessing pedestrian dynamics. The proposed framework enables continuous monitoring of sidewalk conditions and pedestrian behavior, contributing to the development of more walkable, inclusive, and responsive urban environments. 
+
+**Abstract (ZH)**: 步行性是可持续城市发展的重要组成部分，而收集其相关特征的详细数据由于传统方法成本高且难以扩展现状仍具有挑战性。在城市环境中越来越多部署的步行机器人提供了这些限制的 promising 解决方案。本文探讨了这些机器人如何作为移动数据收集平台，以可扩展、自动化和实时的方式捕获与步行性相关的街头特征。一台配备传感器的机器人在斯德哥尔摩皇家理工学院的街头网络上完成了101次行程，覆盖了900个路段。从收集的数据中，提取了不同类型的特征，包括机器人行程特征（如速度、持续时间）、街道条件（如宽度、表面不平整性）和街道使用情况（如行人密度）。一系列分析探讨了这些特征与步行性相关的含义。结果显示，行人移动模式受街头特征强烈影响，高密度、狭窄宽度和表面不平整性与更慢且更不稳定的轨迹相关。值得注意的是，机器人速度与行人行为高度一致，凸显了其作为评估行人动态代理的潜力。所提出的方法框架能够持续监测街头条件和行人行为，有助于开发更具步行性、包容性和响应性的城市环境。 
+
+---
+# Tree-SLAM: semantic object SLAM for efficient mapping of individual trees in orchards 
+
+**Title (ZH)**: 树SLAM：具有高效单株树木映射的语义对象SLAM 
+
+**Authors**: David Rapado-Rincon, Gert Kootstra  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12093)  
+
+**Abstract**: Accurate mapping of individual trees is an important component for precision agriculture in orchards, as it allows autonomous robots to perform tasks like targeted operations or individual tree monitoring. However, creating these maps is challenging because GPS signals are often unreliable under dense tree canopies. Furthermore, standard Simultaneous Localization and Mapping (SLAM) approaches struggle in orchards because the repetitive appearance of trees can confuse the system, leading to mapping errors. To address this, we introduce Tree-SLAM, a semantic SLAM approach tailored for creating maps of individual trees in orchards. Utilizing RGB-D images, our method detects tree trunks with an instance segmentation model, estimates their location and re-identifies them using a cascade-graph-based data association algorithm. These re-identified trunks serve as landmarks in a factor graph framework that integrates noisy GPS signals, odometry, and trunk observations. The system produces maps of individual trees with a geo-localization error as low as 18 cm, which is less than 20\% of the planting distance. The proposed method was validated on diverse datasets from apple and pear orchards across different seasons, demonstrating high mapping accuracy and robustness in scenarios with unreliable GPS signals. 
+
+**Abstract (ZH)**: 果园单个树木的精准建图是精准耕作的重要组成部分，可以使得自主机器人执行如定向操作或单个树木监测等任务。然而，创建这些地图颇具挑战性，因为GPS信号在密集树冠下往往不可靠。此外，标准的同步定位与建图（SLAM）方法在果园中表现不佳，因为树木的重复外观容易使系统产生混淆，导致建图错误。为解决这一问题，我们提出了Tree-SLAM，这是一种针对果园中单个树木建图的语义SLAM方法。利用RGB-D图像，我们的方法通过实例分割模型检测树干，使用基于cascade-graph的数据关联算法估计其位置并重新识别它们。这些重新识别的树干作为地标，在结合噪声GPS信号、里程计和树干观测的因子图框架中发挥作用。系统产生的单个树木地图的地理定位误差低至18厘米，小于种植间距的20%。所提出的方法在不同季节来自苹果和梨园的多种数据集上得到了验证，展现了在GPS信号不可靠场景中的高建图准确性和 robustness。 
+
+---
+# Robust Route Planning for Sidewalk Delivery Robots 
+
+**Title (ZH)**: 侧路边缘配送机器人鲁棒路径规划 
+
+**Authors**: Xing Tong, Michele D. Simoni  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12067)  
+
+**Abstract**: Sidewalk delivery robots are a promising solution for urban freight distribution, reducing congestion compared to trucks and providing a safer, higher-capacity alternative to drones. However, unreliable travel times on sidewalks due to pedestrian density, obstacles, and varying infrastructure conditions can significantly affect their efficiency. This study addresses the robust route planning problem for sidewalk robots, explicitly accounting for travel time uncertainty due to varying sidewalk conditions. Optimization is integrated with simulation to reproduce the effect of obstacles and pedestrian flows and generate realistic travel times. The study investigates three different approaches to derive uncertainty sets, including budgeted, ellipsoidal, and support vector clustering (SVC)-based methods, along with a distributionally robust method to solve the shortest path (SP) problem. A realistic case study reproducing pedestrian patterns in Stockholm's city center is used to evaluate the efficiency of robust routing across various robot designs and environmental conditions. The results show that, when compared to a conventional SP, robust routing significantly enhances operational reliability under variable sidewalk conditions. The Ellipsoidal and DRSP approaches outperform the other methods, yielding the most efficient paths in terms of average and worst-case delay. Sensitivity analyses reveal that robust approaches consistently outperform the conventional SP, particularly for sidewalk delivery robots that are wider, slower, and have more conservative navigation behaviors. These benefits are even more pronounced in adverse weather conditions and high pedestrian congestion scenarios. 
+
+**Abstract (ZH)**: 人行道配送机器人在城市货运分配中的稳健路径规划研究：考虑不同人行道条件下的 travel 时间不确定性 
+
+---
+# Robust Planning for Autonomous Vehicles with Diffusion-Based Failure Samplers 
+
+**Title (ZH)**: 基于扩散型故障采样的鲁棒自主Vehicle规划 
+
+**Authors**: Juanran Wang, Marc R. Schlichting, Mykel J. Kochenderfer  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.11991)  
+
+**Abstract**: High-risk traffic zones such as intersections are a major cause of collisions. This study leverages deep generative models to enhance the safety of autonomous vehicles in an intersection context. We train a 1000-step denoising diffusion probabilistic model to generate collision-causing sensor noise sequences for an autonomous vehicle navigating a four-way intersection based on the current relative position and velocity of an intruder. Using the generative adversarial architecture, the 1000-step model is distilled into a single-step denoising diffusion model which demonstrates fast inference speed while maintaining similar sampling quality. We demonstrate one possible application of the single-step model in building a robust planner for the autonomous vehicle. The planner uses the single-step model to efficiently sample potential failure cases based on the currently measured traffic state to inform its decision-making. Through simulation experiments, the robust planner demonstrates significantly lower failure rate and delay rate compared with the baseline Intelligent Driver Model controller. 
+
+**Abstract (ZH)**: 高风险交通区域（如交叉口）是碰撞的主要原因。本研究利用深度生成模型来提升自主车辆在交叉口环境下的安全性。我们训练了一个1000步的去噪扩散概率模型，基于当前侵入物的相对位置和速度，生成导致自主车辆在四路交叉口碰撞的传感器噪声序列。利用生成对抗架构，1000步模型被精简成一个单步去噪扩散模型，该模型展示了较快的推理速度同时保持类似的采样质量。我们展示了单步模型在构建自主车辆鲁棒规划器中的一种可能应用。该规划器利用单步模型根据当前测量的交通状态高效地采样潜在故障案例，以指导其决策。通过仿真实验，鲁棒规划器的故障率和延迟率显著低于基准智能驾驶员模型控制器。 
+
+---
+# A Review of Generative AI in Aquaculture: Foundations, Applications, and Future Directions for Smart and Sustainable Farming 
+
+**Title (ZH)**: 水产养殖中生成式AI的综述：基础、应用及智能可持续农业的未来方向 
+
+**Authors**: Waseem Akram, Muhayy Ud Din, Lyes Saad Soud, Irfan Hussain  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.11974)  
+
+**Abstract**: Generative Artificial Intelligence (GAI) has rapidly emerged as a transformative force in aquaculture, enabling intelligent synthesis of multimodal data, including text, images, audio, and simulation outputs for smarter, more adaptive decision-making. As the aquaculture industry shifts toward data-driven, automation and digital integration operations under the Aquaculture 4.0 paradigm, GAI models offer novel opportunities across environmental monitoring, robotics, disease diagnostics, infrastructure planning, reporting, and market analysis. This review presents the first comprehensive synthesis of GAI applications in aquaculture, encompassing foundational architectures (e.g., diffusion models, transformers, and retrieval augmented generation), experimental systems, pilot deployments, and real-world use cases. We highlight GAI's growing role in enabling underwater perception, digital twin modeling, and autonomous planning for remotely operated vehicle (ROV) missions. We also provide an updated application taxonomy that spans sensing, control, optimization, communication, and regulatory compliance. Beyond technical capabilities, we analyze key limitations, including limited data availability, real-time performance constraints, trust and explainability, environmental costs, and regulatory uncertainty. This review positions GAI not merely as a tool but as a critical enabler of smart, resilient, and environmentally aligned aquaculture systems. 
+
+**Abstract (ZH)**: 生成式人工智能（GAI）在水产养殖中的快速兴起已成为一种变革性力量，能够智能合成多模态数据，包括文本、图像、音频和仿真输出，以实现更智能、更具适应性的决策。随着水产养殖行业在“水产养殖4.0”理念下转向数据驱动、自动化和数字集成操作，GAI模型为环境监控、机器人技术、疾病诊断、基础设施规划、报告和市场分析提供了新的机会。本文综述了GAI在水产养殖中的首个全面应用综述，涵盖了基础架构（例如，扩散模型、变换器和检索增强生成）、实验系统、试点部署和实际应用场景。我们强调了GAI在增强水下感知、数字孪生建模和远程操作车辆（ROV）任务的自主规划方面日益增长的作用。我们也提供了一个更新的应用分类，涵盖了感知、控制、优化、通信和合规性。除了技术能力，我们还分析了关键限制，包括数据可用性有限、实时性能约束、信任和可解释性、环境成本以及监管不确定性。本文将GAI定位为不仅是工具，更是智能、韧性和环境对齐的水产养殖系统的关键使能器。 
+
+---
+# IANN-MPPI: Interaction-Aware Neural Network-Enhanced Model Predictive Path Integral Approach for Autonomous Driving 
+
+**Title (ZH)**: IANN-MPPI: 具有交互意识的神经网络增强路径积分模型预测控制方法在自动驾驶中的应用 
+
+**Authors**: Kanghyun Ryu, Minjun Sung, Piyush Gupta, Jovin D'sa, Faizan M. Tariq, David Isele, Sangjae Bae  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.11940)  
+
+**Abstract**: Motion planning for autonomous vehicles (AVs) in dense traffic is challenging, often leading to overly conservative behavior and unmet planning objectives. This challenge stems from the AVs' limited ability to anticipate and respond to the interactive behavior of surrounding agents. Traditional decoupled prediction and planning pipelines rely on non-interactive predictions that overlook the fact that agents often adapt their behavior in response to the AV's actions. To address this, we propose Interaction-Aware Neural Network-Enhanced Model Predictive Path Integral (IANN-MPPI) control, which enables interactive trajectory planning by predicting how surrounding agents may react to each control sequence sampled by MPPI. To improve performance in structured lane environments, we introduce a spline-based prior for the MPPI sampling distribution, enabling efficient lane-changing behavior. We evaluate IANN-MPPI in a dense traffic merging scenario, demonstrating its ability to perform efficient merging maneuvers. Our project website is available at this https URL 
+
+**Abstract (ZH)**: 自主车辆在稠密交通中的运动规划具有挑战性，往往导致行为过于保守且无法满足规划目标。这一挑战源于自主车辆对周围代理交互行为的预测和响应能力有限。传统分离式的预测和规划管道依赖非交互式的预测，忽略了代理通常会根据自主车辆的行为调整自身行为的事实。为此，我们提出了一种交互感知的神经网络增强模型预测路径积分（IANN-MPPI）控制方法，该方法通过预测周围代理对每个由MPPI采样的控制序列的可能反应，实现了交互式轨迹规划。为了在结构化车道环境中提高性能，我们引入了一种基于样条函数的先验用于MPPI的采样分布，从而能够高效地实现车道变更行为。我们在稠密交通汇入场景中评估了IANN-MPPI，展示了其执行高效汇入动作的能力。项目网站见这个 <https> 地址。 
+
+---
+# A Multi-Level Similarity Approach for Single-View Object Grasping: Matching, Planning, and Fine-Tuning 
+
+**Title (ZH)**: 单视图物体抓取的多层级相似性方法：匹配、规划与精细调整 
+
+**Authors**: Hao Chen, Takuya Kiyokawa, Zhengtao Hu, Weiwei Wan, Kensuke Harada  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.11938)  
+
+**Abstract**: Grasping unknown objects from a single view has remained a challenging topic in robotics due to the uncertainty of partial observation. Recent advances in large-scale models have led to benchmark solutions such as GraspNet-1Billion. However, such learning-based approaches still face a critical limitation in performance robustness for their sensitivity to sensing noise and environmental changes. To address this bottleneck in achieving highly generalized grasping, we abandon the traditional learning framework and introduce a new perspective: similarity matching, where similar known objects are utilized to guide the grasping of unknown target objects. We newly propose a method that robustly achieves unknown-object grasping from a single viewpoint through three key steps: 1) Leverage the visual features of the observed object to perform similarity matching with an existing database containing various object models, identifying potential candidates with high similarity; 2) Use the candidate models with pre-existing grasping knowledge to plan imitative grasps for the unknown target object; 3) Optimize the grasp quality through a local fine-tuning process. To address the uncertainty caused by partial and noisy observation, we propose a multi-level similarity matching framework that integrates semantic, geometric, and dimensional features for comprehensive evaluation. Especially, we introduce a novel point cloud geometric descriptor, the C-FPFH descriptor, which facilitates accurate similarity assessment between partial point clouds of observed objects and complete point clouds of database models. In addition, we incorporate the use of large language models, introduce the semi-oriented bounding box, and develop a novel point cloud registration approach based on plane detection to enhance matching accuracy under single-view conditions. Videos are available at this https URL. 
+
+**Abstract (ZH)**: 基于单视图抓取未知物体：通过相似性匹配实现高度泛化的未知物体抓取 
+
+---
+# Hybrid Conformal Prediction-based Risk-Aware Model Predictive Planning in Dense, Uncertain Environments 
+
+**Title (ZH)**: 基于混合保角预测的风险意识模型预测规划在密集、不确定环境中的应用 
+
+**Authors**: Jeongyong Yang, KwangBin Lee, SooJean Han  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.11920)  
+
+**Abstract**: Real-time path planning in dense, uncertain environments remains a challenging problem, as predicting the future motions of numerous dynamic obstacles is computationally burdensome and unrealistic. To address this, we introduce Hybrid Prediction-based Risk-Aware Planning (HyPRAP), a prediction-based risk-aware path-planning framework which uses a hybrid combination of models to predict local obstacle movement. HyPRAP uses a novel Prediction-based Collision Risk Index (P-CRI) to evaluate the risk posed by each obstacle, enabling the selective use of predictors based on whether the agent prioritizes high predictive accuracy or low computational prediction overhead. This selective routing enables the agent to focus on high-risk obstacles while ignoring or simplifying low-risk ones, making it suitable for environments with a large number of obstacles. Moreover, HyPRAP incorporates uncertainty quantification through hybrid conformal prediction by deriving confidence bounds simultaneously achieved by multiple predictions across different models. Theoretical analysis demonstrates that HyPRAP effectively balances safety and computational efficiency by leveraging the diversity of prediction models. Extensive simulations validate these insights for more general settings, confirming that HyPRAP performs better compared to single predictor methods, and P-CRI performs better over naive proximity-based risk assessment. 
+
+**Abstract (ZH)**: 基于混合预测的风险感知实时路径规划 
+
+---
+# NemeSys: An Online Underwater Explorer with Goal-Driven Adaptive Autonomy 
+
+**Title (ZH)**: NemeSys: 一种基于目标导向自适应自主性的在线水下探索器 
+
+**Authors**: Adnan Abdullah, Alankrit Gupta, Vaishnav Ramesh, Shivali Patel, Md Jahidul Islam  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.11889)  
+
+**Abstract**: Adaptive mission control and dynamic parameter reconfiguration are essential for autonomous underwater vehicles (AUVs) operating in GPS-denied, communication-limited marine environments. However, most current AUV platforms execute static, pre-programmed missions or rely on tethered connections and high-latency acoustic channels for mid-mission updates, significantly limiting their adaptability and responsiveness. In this paper, we introduce NemeSys, a novel AUV system designed to support real-time mission reconfiguration through compact optical and magnetoelectric (OME) signaling facilitated by floating buoys. We present the full system design, control architecture, and a semantic mission encoding framework that enables interactive exploration and task adaptation via low-bandwidth communication. The proposed system is validated through analytical modeling, controlled experimental evaluations, and open-water trials. Results confirm the feasibility of online mission adaptation and semantic task updates, highlighting NemeSys as an online AUV platform for goal-driven adaptive autonomy in dynamic and uncertain underwater environments. 
+
+**Abstract (ZH)**: 自适应任务控制和动态参数重构对于在GPS受限、通信受限的海洋环境中运行的自主水下 vehicle (AUVs) 至关重要。然而，当前大多数 AUV 平台执行静态、预先编程的任务，或者依赖于有缆连接和高延迟声学信道的中途更新，这严重限制了它们的适应性和响应性。在本文中，我们介绍了 NemeSys，这是一种新型 AUV 系统，设计用于通过浮标辅助的紧凑光学和磁电 (OME) 信号进行实时任务重构。我们介绍了整个系统设计、控制架构以及一种语义任务编码框架，该框架能够通过低带宽通信实现互动探索和任务适应。所提出的系统通过分析建模、受控实验评估和开放水域试验进行了验证。结果证实了在线任务适应和语义任务更新的可行性，突显了 NemeSys 作为目标驱动的自适应自主 AUV 平台在动态和不确定的水下环境中的在线应用。 
+
+---
+# A Fast Method for Planning All Optimal Homotopic Configurations for Tethered Robots and Its Extended Applications 
+
+**Title (ZH)**: 一种快速规划 tethered 机器人所有最优同伦配置的方法及其扩展应用 
+
+**Authors**: Jinyuan Liu, Minglei Fu, Ling Shi, Chenguang Yang, Wenan Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.11880)  
+
+**Abstract**: Tethered robots play a pivotal role in specialized environments such as disaster response and underground exploration, where their stable power supply and reliable communication offer unparalleled advantages. However, their motion planning is severely constrained by tether length limitations and entanglement risks, posing significant challenges to achieving optimal path planning. To address these challenges, this study introduces CDT-TCS (Convex Dissection Topology-based Tethered Configuration Search), a novel algorithm that leverages CDT Encoding as a homotopy invariant to represent topological states of paths. By integrating algebraic topology with geometric optimization, CDT-TCS efficiently computes the complete set of optimal feasible configurations for tethered robots at all positions in 2D environments through a single computation. Building on this foundation, we further propose three application-specific algorithms: i) CDT-TPP for optimal tethered path planning, ii) CDT-TMV for multi-goal visiting with tether constraints, iii) CDT-UTPP for distance-optimal path planning of untethered robots. All theoretical results and propositions underlying these algorithms are rigorously proven and thoroughly discussed in this paper. Extensive simulations demonstrate that the proposed algorithms significantly outperform state-of-the-art methods in their respective problem domains. Furthermore, real-world experiments on robotic platforms validate the practicality and engineering value of the proposed framework. 
+
+**Abstract (ZH)**: 拴系机器人在灾害响应和地下探索等专业环境中扮演着重要角色，它们稳定的电源供应和可靠的通信提供了无与伦比的优势。然而，它们的运动规划受到了牵引线长度限制和缠绕风险的严重制约，给最优路径规划带来了重大挑战。为应对这些挑战，本研究引入了一种新的算法CDT-TCS（基于凸剖分拓扑的拴系配置搜索），该算法利用CDT编码作为同伦不变量来表示路径的拓扑状态。通过将代数拓扑与几何优化相结合，CDT-TCS能够在单次计算中高效地确定2D环境中所有位置下拴系机器人的完整最优可行配置集。在此基础上，进一步提出了三种特定应用算法：i) CDT-TPP（最优拴系路径规划），ii) CDT-TMV（带拴系约束的多目标访问），iii) CDT-UTPP（无牵引距离最优路径规划）。本研究中所有这些算法的理论结果和命题均得到了严格证明并进行了详细讨论。大量仿真实验表明，所提出算法在各自的问题领域显著优于现有最先进的方法。此外，基于实际机器人平台的实验进一步验证了该框架的实用性和工程价值。 
+
+---
+# Towards Autonomous Riding: A Review of Perception, Planning, and Control in Intelligent Two-Wheelers 
+
+**Title (ZH)**: 面向自主骑行：智能两轮车感知、规划与控制综述 
+
+**Authors**: Mohammed Hassanin, Mohammad Abu Alsheikh, Carlos C. N. Kuhn, Damith Herath, Dinh Thai Hoang, Ibrahim Radwan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.11852)  
+
+**Abstract**: The rapid adoption of micromobility solutions, particularly two-wheeled vehicles like e-scooters and e-bikes, has created an urgent need for reliable autonomous riding (AR) technologies. While autonomous driving (AD) systems have matured significantly, AR presents unique challenges due to the inherent instability of two-wheeled platforms, limited size, limited power, and unpredictable environments, which pose very serious concerns about road users' safety. This review provides a comprehensive analysis of AR systems by systematically examining their core components, perception, planning, and control, through the lens of AD technologies. We identify critical gaps in current AR research, including a lack of comprehensive perception systems for various AR tasks, limited industry and government support for such developments, and insufficient attention from the research community. The review analyses the gaps of AR from the perspective of AD to highlight promising research directions, such as multimodal sensor techniques for lightweight platforms and edge deep learning architectures. By synthesising insights from AD research with the specific requirements of AR, this review aims to accelerate the development of safe, efficient, and scalable autonomous riding systems for future urban mobility. 
+
+**Abstract (ZH)**: 微移动性解决方案的快速采用，特别是电动滑板车和电动自行车等两轮车辆，迫切需要可靠的自主骑行（AR）技术。虽然自动驾驶（AD）系统已显著成熟，但由于两轮平台的固有不稳定性和有限的空间、功率以及不可预测的环境等因素，AR面临着独特的挑战，这给道路使用者的安全带来了严重关切。本综述通过自动驾驶技术的视角系统分析了AR系统的核心组件、感知、规划和控制等方面，指出了当前AR研究中的关键空白，包括缺乏全面的感知系统、行业和政府对该领域的支持有限以及研究社区对此关注不足。本综述从自动驾驶的角度分析AR的不足之处，以突出多模式传感器技术和边缘深度学习架构等有前景的研究方向。通过将自动驾驶研究的洞见与AR的具体需求相结合，本综旨在加速安全、高效和可扩展的自主骑行系统的开发，以为未来的城市 mobility 提供支持。 
+
+---
+# The Developments and Challenges towards Dexterous and Embodied Robotic Manipulation: A Survey 
+
+**Title (ZH)**: 面向灵巧操控与 embodied 机器人 manipulation 的发展与挑战：一篇综述 
+
+**Authors**: Gaofeng Li, Ruize Wang, Peisen Xu, Qi Ye, Jiming Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.11840)  
+
+**Abstract**: Achieving human-like dexterous robotic manipulation remains a central goal and a pivotal challenge in robotics. The development of Artificial Intelligence (AI) has allowed rapid progress in robotic manipulation. This survey summarizes the evolution of robotic manipulation from mechanical programming to embodied intelligence, alongside the transition from simple grippers to multi-fingered dexterous hands, outlining key characteristics and main challenges. Focusing on the current stage of embodied dexterous manipulation, we highlight recent advances in two critical areas: dexterous manipulation data collection (via simulation, human demonstrations, and teleoperation) and skill-learning frameworks (imitation and reinforcement learning). Then, based on the overview of the existing data collection paradigm and learning framework, three key challenges restricting the development of dexterous robotic manipulation are summarized and discussed. 
+
+**Abstract (ZH)**: 实现类人灵巧机器人操作仍是以机器人学为核心并构成关键挑战的目标。随着人工智能的发展，机器人操作取得了快速进步。本文综述了从机械编程到具身智能的机器人操作演变，以及从单一手指夹持器到多指灵巧手的过渡，概述了关键特征和主要挑战。聚焦于当前的具身灵巧操作阶段，我们强调了两个关键领域的最新进展：灵巧操作数据收集（通过仿真、人类示范和遥控操作）以及技能学习框架（模仿学习和强化学习）。在此基础上，根据现有的数据收集范式和学习框架的综述，总结并讨论了三个限制灵巧机器人操作发展的关键挑战。 
+
+---
+# Generating Actionable Robot Knowledge Bases by Combining 3D Scene Graphs with Robot Ontologies 
+
+**Title (ZH)**: 基于结合3D场景图与机器人本体的知识生成可操作的机器人知识库 
+
+**Authors**: Giang Nguyen, Mihai Pomarlan, Sascha Jongebloed, Nils Leusmann, Minh Nhat Vu, Michael Beetz  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.11770)  
+
+**Abstract**: In robotics, the effective integration of environmental data into actionable knowledge remains a significant challenge due to the variety and incompatibility of data formats commonly used in scene descriptions, such as MJCF, URDF, and SDF. This paper presents a novel approach that addresses these challenges by developing a unified scene graph model that standardizes these varied formats into the Universal Scene Description (USD) format. This standardization facilitates the integration of these scene graphs with robot ontologies through semantic reporting, enabling the translation of complex environmental data into actionable knowledge essential for cognitive robotic control. We evaluated our approach by converting procedural 3D environments into USD format, which is then annotated semantically and translated into a knowledge graph to effectively answer competency questions, demonstrating its utility for real-time robotic decision-making. Additionally, we developed a web-based visualization tool to support the semantic mapping process, providing users with an intuitive interface to manage the 3D environment. 
+
+**Abstract (ZH)**: 在机器人技术中，将场景描述中常见的MJCF、URDF和SDF等多样且不兼容的数据格式有效整合为可操作的知识仍然是一项重大挑战。本文提出了一种新颖的方法，通过开发一个统一的场景图模型，将这些多样化的格式标准化为通用场景描述(USD)格式，从而解决了这些挑战。这种标准化促进了场景图与机器人本体的结合，通过语义报告实现了复杂环境数据向认知机器人控制所需可操作知识的翻译。我们通过将过程化3D环境转换为USD格式进行评估，随后对其进行语义标注并转化为知识图谱，以有效回答能力问题，展示了其在实时机器人决策中的实用性。此外，我们开发了一个基于网络的可视化工具，以支持语义映射过程，为用户提供了一个直观的界面来管理3D环境。 
+
+---
+# CoNav Chair: Development and Evaluation of a Shared Control based Wheelchair for the Built Environment 
+
+**Title (ZH)**: CoNav轮椅：基于共享控制的建筑物环境轮椅的研发与评估 
+
+**Authors**: Yifan Xu, Qianwei Wang, Jordan Lillie, Vineet Kamat, Carol Menassa, Clive D'Souza  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.11716)  
+
+**Abstract**: As the global population of people with disabilities (PWD) continues to grow, so will the need for mobility solutions that promote independent living and social integration. Wheelchairs are vital for the mobility of PWD in both indoor and outdoor environments. The current SOTA in powered wheelchairs is based on either manually controlled or fully autonomous modes of operation, offering limited flexibility and often proving difficult to navigate in spatially constrained environments. Moreover, research on robotic wheelchairs has focused predominantly on complete autonomy or improved manual control; approaches that can compromise efficiency and user trust. To overcome these challenges, this paper introduces the CoNav Chair, a smart wheelchair based on the Robot Operating System (ROS) and featuring shared control navigation and obstacle avoidance capabilities that are intended to enhance navigational efficiency, safety, and ease of use for the user. The paper outlines the CoNav Chair's design and presents a preliminary usability evaluation comparing three distinct navigation modes, namely, manual, shared, and fully autonomous, conducted with 21 healthy, unimpaired participants traversing an indoor building environment. Study findings indicated that the shared control navigation framework had significantly fewer collisions and performed comparably, if not superior to the autonomous and manual modes, on task completion time, trajectory length, and smoothness; and was perceived as being safer and more efficient based on user reported subjective assessments of usability. Overall, the CoNav system demonstrated acceptable safety and performance, laying the foundation for subsequent usability testing with end users, namely, PWDs who rely on a powered wheelchair for mobility. 
+
+**Abstract (ZH)**: 随着全球残疾人（PWD）人口的不断增长，对促进独立生活和社会融合的移动解决方案的需求也将不断增加。轮椅对于残疾人室内和室外环境中的移动至关重要。目前的最先进动力轮椅技术基于手动控制或完全自主操作模式，灵活性有限，往往在空间受限的环境中难以导航。此外，关于机器人轮椅的研究主要集中在完全自主或改进的手动控制上；这些方法可能会影响效率和用户的信任。为克服这些挑战，本文介绍了基于Robot Operating System (ROS)的CoNav Chair，这是一种具备共控制导航和障碍物避免能力的智能轮椅，旨在提高用户导航效率、安全性和易用性。论文概述了CoNav Chair的设计，并进行了初步的可用性评估，比较了三种不同的导航模式——手动、共控制和完全自主，共21名健康无缺陷的参与者在室内建筑环境中进行了评估。研究发现表明，共控制导航框架的碰撞次数明显较少，并在任务完成时间、路径长度和流畅性方面表现与自主和手动模式相当甚至更优；并且根据用户主观评估的可用性报告，共控制模式被认为更加安全和高效。总体而言，CoNav系统展示了可接受的安全性和性能，为后续与最终用户即依赖动力轮椅的残疾人进行的可用性测试奠定了基础。 
+
+---
+# A Roadmap for Climate-Relevant Robotics Research 
+
+**Title (ZH)**: 面向气候变化相关机器人研究的路线图 
+
+**Authors**: Alan Papalia, Charles Dawson, Laurentiu L. Anton, Norhan Magdy Bayomi, Bianca Champenois, Jung-Hoon Cho, Levi Cai, Joseph DelPreto, Kristen Edwards, Bilha-Catherine Githinji, Cameron Hickert, Vindula Jayawardana, Matthew Kramer, Shreyaa Raghavan, David Russell, Shide Salimi, Jingnan Shi, Soumya Sudhakar, Yanwei Wang, Shouyi Wang, Luca Carlone, Vijay Kumar, Daniela Rus, John E. Fernandez, Cathy Wu, George Kantor, Derek Young, Hanumant Singh  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.11623)  
+
+**Abstract**: Climate change is one of the defining challenges of the 21st century, and many in the robotics community are looking for ways to contribute. This paper presents a roadmap for climate-relevant robotics research, identifying high-impact opportunities for collaboration between roboticists and experts across climate domains such as energy, the built environment, transportation, industry, land use, and Earth sciences. These applications include problems such as energy systems optimization, construction, precision agriculture, building envelope retrofits, autonomous trucking, and large-scale environmental monitoring. Critically, we include opportunities to apply not only physical robots but also the broader robotics toolkit - including planning, perception, control, and estimation algorithms - to climate-relevant problems. A central goal of this roadmap is to inspire new research directions and collaboration by highlighting specific, actionable problems at the intersection of robotics and climate. This work represents a collaboration between robotics researchers and domain experts in various climate disciplines, and it serves as an invitation to the robotics community to bring their expertise to bear on urgent climate priorities. 
+
+**Abstract (ZH)**: 气候变化是21世纪的关键挑战之一，许多机器人领域的研究人员都在寻找贡献的方法。本文提出了与气候相关的机器人研究路线图，确定了机器人研究人员与能源、建筑环境、交通、工业、土地使用和地球科学等领域专家之间的高影响合作机会。这些应用包括如能源系统优化、建设、精准农业、建筑围护结构改造、自动驾驶卡车和大规模环境监测等问题。尤为重要的是，我们不仅考虑物理机器人，还考虑更广泛的机器人工具箱——包括规划、感知、控制和估计算法——来解决与气候相关的问题。本文路线图的核心目标是通过突出机器人与气候交叉领域的具体可执行问题来激发新的研究方向和合作。这项工作是机器人研究人员与各种气候学科领域专家合作的结果，并向机器人社区发出邀请，利用其专业知识应对紧迫的气候优先事项。 
+
+---
+# HCOMC: A Hierarchical Cooperative On-Ramp Merging Control Framework in Mixed Traffic Environment on Two-Lane Highways 
+
+**Title (ZH)**: HCOMC：双向公路混合交通环境中基于层次合作的入口并道控制框架 
+
+**Authors**: Tianyi Wang, Yangyang Wang, Jie Pan, Junfeng Jiao, Christian Claudel  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.11621)  
+
+**Abstract**: Highway on-ramp merging areas are common bottlenecks to traffic congestion and accidents. Currently, a cooperative control strategy based on connected and automated vehicles (CAVs) is a fundamental solution to this problem. While CAVs are not fully widespread, it is necessary to propose a hierarchical cooperative on-ramp merging control (HCOMC) framework for heterogeneous traffic flow on two-lane highways to address this gap. This paper extends longitudinal car-following models based on the intelligent driver model and lateral lane-changing models using the quintic polynomial curve to account for human-driven vehicles (HDVs) and CAVs, comprehensively considering human factors and cooperative adaptive cruise control. Besides, this paper proposes a HCOMC framework, consisting of a hierarchical cooperative planning model based on the modified virtual vehicle model, a discretionary lane-changing model based on game theory, and a multi-objective optimization model using the elitist non-dominated sorting genetic algorithm to ensure the safe, smooth, and efficient merging process. Then, the performance of our HCOMC is analyzed under different traffic densities and CAV penetration rates through simulation. The findings underscore our HCOMC's pronounced comprehensive advantages in enhancing the safety of group vehicles, stabilizing and expediting merging process, optimizing traffic efficiency, and economizing fuel consumption compared with benchmarks. 
+
+**Abstract (ZH)**: 基于连接与自动化车辆的异构交通流匝道合流等级协同控制框架 
+
+---
+# AutoVDC: Automated Vision Data Cleaning Using Vision-Language Models 
+
+**Title (ZH)**: AutoVDC：使用视觉-语言模型的自动视觉数据清洗 
+
+**Authors**: Santosh Vasa, Aditi Ramadwar, Jnana Rama Krishna Darabattula, Md Zafar Anwar, Stanislaw Antol, Andrei Vatavu, Thomas Monninger, Sihao Ding  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12414)  
+
+**Abstract**: Training of autonomous driving systems requires extensive datasets with precise annotations to attain robust performance. Human annotations suffer from imperfections, and multiple iterations are often needed to produce high-quality datasets. However, manually reviewing large datasets is laborious and expensive. In this paper, we introduce AutoVDC (Automated Vision Data Cleaning) framework and investigate the utilization of Vision-Language Models (VLMs) to automatically identify erroneous annotations in vision datasets, thereby enabling users to eliminate these errors and enhance data quality. We validate our approach using the KITTI and nuImages datasets, which contain object detection benchmarks for autonomous driving. To test the effectiveness of AutoVDC, we create dataset variants with intentionally injected erroneous annotations and observe the error detection rate of our approach. Additionally, we compare the detection rates using different VLMs and explore the impact of VLM fine-tuning on our pipeline. The results demonstrate our method's high performance in error detection and data cleaning experiments, indicating its potential to significantly improve the reliability and accuracy of large-scale production datasets in autonomous driving. 
+
+**Abstract (ZH)**: 自主驾驶系统训练需要大量精确标注的数据集以获得稳健性能。人工标注存在缺陷，且常常需要多次迭代以生成高质量数据集。然而，手动审查大量数据集耗时且成本高昂。本文介绍了一种名为AutoVDC（Automated Vision Data Cleaning）框架，并研究了视觉语言模型（VLMs）在自动识别视觉数据集中的错误标注方面的应用，从而让用户能够消除这些错误并提高数据质量。我们使用包含自主驾驶检测基准的Kitti和nuImages数据集验证了该方法。为了测试AutoVDC的有效性，我们创建了包含有意注入错误标注的數據集变体，并观察了我们方法的错误检测率。此外，我们比较了使用不同VLMs的检测率，并探讨了VLM微调对其管道的影响。结果显示，我们的方法在错误检测和数据清洗实验中具有高性能，表明其在提高大規模生产数据集在自主驾驶中的可靠性和准确性方面具有潜在价值。 
+
+---
+# Foresight in Motion: Reinforcing Trajectory Prediction with Reward Heuristics 
+
+**Title (ZH)**: 运动中的远见：结合奖励启发式方法强化轨迹预测 
+
+**Authors**: Muleilan Pei, Shaoshuai Shi, Xuesong Chen, Xu Liu, Shaojie Shen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12083)  
+
+**Abstract**: Motion forecasting for on-road traffic agents presents both a significant challenge and a critical necessity for ensuring safety in autonomous driving systems. In contrast to most existing data-driven approaches that directly predict future trajectories, we rethink this task from a planning perspective, advocating a "First Reasoning, Then Forecasting" strategy that explicitly incorporates behavior intentions as spatial guidance for trajectory prediction. To achieve this, we introduce an interpretable, reward-driven intention reasoner grounded in a novel query-centric Inverse Reinforcement Learning (IRL) scheme. Our method first encodes traffic agents and scene elements into a unified vectorized representation, then aggregates contextual features through a query-centric paradigm. This enables the derivation of a reward distribution, a compact yet informative representation of the target agent's behavior within the given scene context via IRL. Guided by this reward heuristic, we perform policy rollouts to reason about multiple plausible intentions, providing valuable priors for subsequent trajectory generation. Finally, we develop a hierarchical DETR-like decoder integrated with bidirectional selective state space models to produce accurate future trajectories along with their associated probabilities. Extensive experiments on the large-scale Argoverse and nuScenes motion forecasting datasets demonstrate that our approach significantly enhances trajectory prediction confidence, achieving highly competitive performance relative to state-of-the-art methods. 
+
+**Abstract (ZH)**: 基于规划视角的道路交通代理运动预测：一种“先推理后预测”的策略 
+
+---
+# SGLoc: Semantic Localization System for Camera Pose Estimation from 3D Gaussian Splatting Representation 
+
+**Title (ZH)**: SGLoc：基于3D 高斯点云表示的相机姿态估计语义定位系统 
+
+**Authors**: Beining Xu, Siting Zhu, Hesheng Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12027)  
+
+**Abstract**: We propose SGLoc, a novel localization system that directly regresses camera poses from 3D Gaussian Splatting (3DGS) representation by leveraging semantic information. Our method utilizes the semantic relationship between 2D image and 3D scene representation to estimate the 6DoF pose without prior pose information. In this system, we introduce a multi-level pose regression strategy that progressively estimates and refines the pose of query image from the global 3DGS map, without requiring initial pose priors. Moreover, we introduce a semantic-based global retrieval algorithm that establishes correspondences between 2D (image) and 3D (3DGS map). By matching the extracted scene semantic descriptors of 2D query image and 3DGS semantic representation, we align the image with the local region of the global 3DGS map, thereby obtaining a coarse pose estimation. Subsequently, we refine the coarse pose by iteratively optimizing the difference between the query image and the rendered image from 3DGS. Our SGLoc demonstrates superior performance over baselines on 12scenes and 7scenes datasets, showing excellent capabilities in global localization without initial pose prior. Code will be available at this https URL. 
+
+**Abstract (ZH)**: 我们提出SGLoc，一种利用语义信息直接从3D高斯斑点表示（3DGS）回归相机姿态的新型定位系统。该方法利用2D图像与3D场景表示之间的语义关系，无需先验姿态信息即可估计6DoF姿态。在该系统中，我们引入了一种多层次的姿态回归策略，逐步从全局3DGS图中估计和细化查询图像的姿态。此外，我们引入了一种基于语义的全局检索算法，建立2D（图像）与3D（3DGS图）之间的对应关系。通过匹配2D查询图像提取的场景语义描述符与3DGS语义表示，使图像与全局3DGS图的局部区域对齐，从而获得粗略的姿态估计。随后，我们通过迭代优化查询图像与3DGS渲染图像之间的差异来细化粗略姿态。SGLoc在12scenes和7scenes数据集上表现出优于基线模型的性能，展示了在无需初始姿态先验的情况下出色的全局定位能力。代码将在此网址提供：这个https URL。 
+
+---
+# Online Training and Pruning of Deep Reinforcement Learning Networks 
+
+**Title (ZH)**: 在线训练与剪枝深度强化学习网络 
+
+**Authors**: Valentin Frank Ingmar Guenter, Athanasios Sideris  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.11975)  
+
+**Abstract**: Scaling deep neural networks (NN) of reinforcement learning (RL) algorithms has been shown to enhance performance when feature extraction networks are used but the gained performance comes at the significant expense of increased computational and memory complexity. Neural network pruning methods have successfully addressed this challenge in supervised learning. However, their application to RL is underexplored. We propose an approach to integrate simultaneous training and pruning within advanced RL methods, in particular to RL algorithms enhanced by the Online Feature Extractor Network (OFENet). Our networks (XiNet) are trained to solve stochastic optimization problems over the RL networks' weights and the parameters of variational Bernoulli distributions for 0/1 Random Variables $\xi$ scaling each unit in the networks. The stochastic problem formulation induces regularization terms that promote convergence of the variational parameters to 0 when a unit contributes little to the performance. In this case, the corresponding structure is rendered permanently inactive and pruned from its network. We propose a cost-aware, sparsity-promoting regularization scheme, tailored to the DenseNet architecture of OFENets expressing the parameter complexity of involved networks in terms of the parameters of the RVs in these networks. Then, when matching this cost with the regularization terms, the many hyperparameters associated with them are automatically selected, effectively combining the RL objectives and network compression. We evaluate our method on continuous control benchmarks (MuJoCo) and the Soft Actor-Critic RL agent, demonstrating that OFENets can be pruned considerably with minimal loss in performance. Furthermore, our results confirm that pruning large networks during training produces more efficient and higher performing RL agents rather than training smaller networks from scratch. 
+
+**Abstract (ZH)**: 增强学习中深度神经网络的同时训练与剪枝 
+
+---
+# MOSPA: Human Motion Generation Driven by Spatial Audio 
+
+**Title (ZH)**: MOSPA: 由空间音频驱动的人体运动生成 
+
+**Authors**: Shuyang Xu, Zhiyang Dou, Mingyi Shi, Liang Pan, Leo Ho, Jingbo Wang, Yuan Liu, Cheng Lin, Yuexin Ma, Wenping Wang, Taku Komura  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.11949)  
+
+**Abstract**: Enabling virtual humans to dynamically and realistically respond to diverse auditory stimuli remains a key challenge in character animation, demanding the integration of perceptual modeling and motion synthesis. Despite its significance, this task remains largely unexplored. Most previous works have primarily focused on mapping modalities like speech, audio, and music to generate human motion. As of yet, these models typically overlook the impact of spatial features encoded in spatial audio signals on human motion. To bridge this gap and enable high-quality modeling of human movements in response to spatial audio, we introduce the first comprehensive Spatial Audio-Driven Human Motion (SAM) dataset, which contains diverse and high-quality spatial audio and motion data. For benchmarking, we develop a simple yet effective diffusion-based generative framework for human MOtion generation driven by SPatial Audio, termed MOSPA, which faithfully captures the relationship between body motion and spatial audio through an effective fusion mechanism. Once trained, MOSPA could generate diverse realistic human motions conditioned on varying spatial audio inputs. We perform a thorough investigation of the proposed dataset and conduct extensive experiments for benchmarking, where our method achieves state-of-the-art performance on this task. Our model and dataset will be open-sourced upon acceptance. Please refer to our supplementary video for more details. 
+
+**Abstract (ZH)**: 使虚拟人类能够动态且真实地响应多样的听觉刺激仍然是角色动画中的一个关键挑战，这需要感知建模与运动合成的结合。尽管这项任务非常重要，但仍被很大程度上忽略了。大多数先前的工作主要集中在将语音、音频和音乐等模态映射到人类运动的生成上。截至目前，这些模型通常忽略了空间音频信号中编码的空间特征对人类运动的影响。为弥合这一差距，以实现空间音频驱动的人类运动的高质量建模，我们首次引入了全面的Spatial Audio-Driven Human Motion (SAM)数据集，该数据集包含多样且高质量的空间音频和运动数据。为了进行基准测试，我们开发了一个简单而有效的基于扩散的生成框架，用于由空间音频驱动的人类运动生成，该框架称为MOSPA，并通过有效的融合机制准确捕捉了身体运动与空间音频之间的关系。训练完成后，MOSPA能够在不同空间音频输入的条件下生成多样且逼真的人类运动。我们对提出的数据集进行了详尽的研究，并进行了广泛的基准测试，其中我们的方法已在该任务上实现了最先进的表现。我们的模型和数据集将在接受后开源。更多信息请参见我们的补充视频。 
+
+---
+# Let's Think in Two Steps: Mitigating Agreement Bias in MLLMs with Self-Grounded Verification 
+
+**Title (ZH)**: 让我们分两步思考：通过自我接地验证减轻MLLMs的一致性偏见 
+
+**Authors**: Moises Andrade, Joonhyuk Cha, Brandon Ho, Vriksha Srihari, Karmesh Yadav, Zsolt Kira  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.11662)  
+
+**Abstract**: Verifiers -- functions assigning rewards to agent behavior -- have been key for AI progress in domains like math and board games. However, extending these gains to domains without clear-cut success criteria (e.g.,computer use) remains a challenge: while humans can recognize suitable outcomes, translating this intuition into scalable rules is non-trivial. Multimodal Large Language Models(MLLMs) emerge as a promising solution, given their world knowledge, human-preference alignment, and reasoning skills. We evaluate MLLMs as verifiers of agent trajectories across web navigation, computer use, and robotic manipulation, and identify a critical limitation: agreement bias, a strong tendency for MLLMs to favor information in their context window, often generating chains of thought to rationalize flawed behavior. This bias is pervasive across models, resilient to test-time scaling, and can impact several methods using MLLMs as evaluators (e.g.,data filtering). Notably, it occurs despite MLLMs showing strong, human-aligned priors on desired behavior. To address this, we propose Self-Grounded Verification (SGV), a lightweight method that enables more effective use of MLLMs' knowledge and reasoning by harnessing their own sampling mechanisms via unconditional and conditional generation. SGV operates in two steps: first, the MLLM is elicited to retrieve broad priors about task completion, independent of the data under evaluation. Then, conditioned on self-generated priors, it reasons over and evaluates a candidate trajectory. Enhanced with SGV, MLLM verifiers show gains of up to 20 points in accuracy and failure detection rates, and can perform real-time supervision of heterogeneous agents, boosting task completion of a GUI specialist in OSWorld, a diffusion policy in robomimic, and a ReAct agent in VisualWebArena -- setting a new state of the art on the benchmark, surpassing the previous best by 48%. 
+
+**Abstract (ZH)**: Multimodal Large Language Models as Verifiers: Addressing Agreement Bias for Enhanced Agent Trajectory Evaluation 
+
+---
+# VISTA: Monocular Segmentation-Based Mapping for Appearance and View-Invariant Global Localization 
+
+**Title (ZH)**: VISTA：基于单目分割的外观和视角不变全局定位映射 
+
+**Authors**: Hannah Shafferman, Annika Thomas, Jouko Kinnari, Michael Ricard, Jose Nino, Jonathan How  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.11653)  
+
+**Abstract**: Global localization is critical for autonomous navigation, particularly in scenarios where an agent must localize within a map generated in a different session or by another agent, as agents often have no prior knowledge about the correlation between reference frames. However, this task remains challenging in unstructured environments due to appearance changes induced by viewpoint variation, seasonal changes, spatial aliasing, and occlusions -- known failure modes for traditional place recognition methods. To address these challenges, we propose VISTA (View-Invariant Segmentation-Based Tracking for Frame Alignment), a novel open-set, monocular global localization framework that combines: 1) a front-end, object-based, segmentation and tracking pipeline, followed by 2) a submap correspondence search, which exploits geometric consistencies between environment maps to align vehicle reference frames. VISTA enables consistent localization across diverse camera viewpoints and seasonal changes, without requiring any domain-specific training or finetuning. We evaluate VISTA on seasonal and oblique-angle aerial datasets, achieving up to a 69% improvement in recall over baseline methods. Furthermore, we maintain a compact object-based map that is only 0.6% the size of the most memory-conservative baseline, making our approach capable of real-time implementation on resource-constrained platforms. 
+
+**Abstract (ZH)**: 全局定位对于自主导航至关重要，特别是在代理必须在其不同会话生成的地图或由其他代理生成的地图中进行定位的场景中，因为代理通常对参考坐标系之间的相关性没有任何先验知识。然而，由于视角变化、季节变化、空间混叠和遮挡导致的外观变化，这一任务在未结构化的环境中仍然极具挑战性——这些是传统位置识别方法已知的失败模式。为了解决这些挑战，我们提出了VISTA（基于视角不变分割和跟踪的帧对齐框架），一种新型的开放集单目全局定位框架，结合了：1）基于对象的前端分割和跟踪流水线，随后是2）子地图对应搜索，利用环境地图之间的几何一致性对车辆参考坐标系进行对齐。VISTA能够在多样化的摄像头视角和季节变化中实现一致的定位，无需任何领域特定的训练或微调。我们在季节性和斜视角航空数据集上评估了VISTA，相对于基线方法实现了高达69%的召回率提升。此外，我们维护了一个紧凑的对象基地图，其大小仅为最省内存基线的0.6%，使我们的方法能够在资源受限的平台上实现实时部署。 
+
+---
+# Emergent Heterogeneous Swarm Control Through Hebbian Learning 
+
+**Title (ZH)**: 通过海予法则学习实现 Emergent 异构群集控制 
+
+**Authors**: Fuda van Diggelen, Tugay Alperen Karagüzel, Andres Garcia Rincon, A.E. Eiben, Dario Floreano, Eliseo Ferrante  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.11566)  
+
+**Abstract**: In this paper, we introduce Hebbian learning as a novel method for swarm robotics, enabling the automatic emergence of heterogeneity. Hebbian learning presents a biologically inspired form of neural adaptation that solely relies on local information. By doing so, we resolve several major challenges for learning heterogeneous control: 1) Hebbian learning removes the complexity of attributing emergent phenomena to single agents through local learning rules, thus circumventing the micro-macro problem; 2) uniform Hebbian learning rules across all swarm members limit the number of parameters needed, mitigating the curse of dimensionality with scaling swarm sizes; and 3) evolving Hebbian learning rules based on swarm-level behaviour minimises the need for extensive prior knowledge typically required for optimising heterogeneous swarms. This work demonstrates that with Hebbian learning heterogeneity naturally emerges, resulting in swarm-level behavioural switching and in significantly improved swarm capabilities. It also demonstrates how the evolution of Hebbian learning rules can be a valid alternative to Multi Agent Reinforcement Learning in standard benchmarking tasks. 
+
+**Abstract (ZH)**: 在本文中，我们引入基于 Hebbsian 学习的方法来实现群机器人中的自动生成异质性。Hebbsian 学习提供了一种受生物启发的神经适应形式，仅依赖于局部信息。通过这种方式，我们解决了学习异质控制的多个主要挑战：1) Hebbsian 学习通过局部学习规则消除了将涌现现象归因于单一代理的复杂性，从而规避了微观-宏观问题；2) 所有群组成员具有统一的 Hebbsian 学习规则减少了所需参数的数量，随着群组规模的扩大减轻了维度 disasters；3) 基于群组水平行为演化的 Hebbsian 学习规则减少了对通常用于优化异质群组的大量先验知识的需求。本文证明了通过 Hebbsian 学习，异质性自然涌现，导致群组级别的行为切换并显著提高群组能力。此外，本文还证明了在标准基准任务中，Hebbsian 学习规则的演化可以是多智能体强化学习的有效替代方案。 
+
+---
+# Risk in Stochastic and Robust Model Predictive Path-Following Control for Vehicular Motion Planning 
+
+**Title (ZH)**: 基于车辆运动规划的随机与鲁棒模型预测路径跟随控制中的风险研究 
+
+**Authors**: Leon Tolksdorf, Arturo Tejada, Nathan van de Wouw, Christian Birkner  
+
+**Link**: [PDF](https://arxiv.org/pdf/2304.12063)  
+
+**Abstract**: In automated driving, risk describes potential harm to passengers of an autonomous vehicle (AV) and other road users. Recent studies suggest that human-like driving behavior emerges from embedding risk in AV motion planning algorithms. Additionally, providing evidence that risk is minimized during the AV operation is essential to vehicle safety certification. However, there has yet to be a consensus on how to define and operationalize risk in motion planning or how to bound or minimize it during operation. In this paper, we define a stochastic risk measure and introduce it as a constraint into both robust and stochastic nonlinear model predictive path-following controllers (RMPC and SMPC respectively). We compare the vehicle's behavior arising from employing SMPC and RMPC with respect to safety and path-following performance. Further, the implementation of an automated driving example is provided, showcasing the effects of different risk tolerances and uncertainty growths in predictions of other road users for both cases. We find that the RMPC is significantly more conservative than the SMPC, while also displaying greater following errors towards references. Further, the RMPCs behavior cannot be considered as human-like. Moreover, unlike SMPC, the RMPC cannot account for different risk tolerances. The RMPC generates undesired driving behavior for even moderate uncertainties, which are handled better by the SMPC. 
+
+**Abstract (ZH)**: 自动驾驶中的风险衡量及其在鲁棒和随机模型预测路径跟随控制器中的应用：安全性与轨迹跟踪性能的比较 
+
+---
