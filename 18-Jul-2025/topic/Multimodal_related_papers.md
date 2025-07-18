@@ -1,0 +1,97 @@
+# VideoITG: Multimodal Video Understanding with Instructed Temporal Grounding 
+
+**Title (ZH)**: VideoITG: 带有指令时间定位的多模态视频理解 
+
+**Authors**: Shihao Wang, Guo Chen, De-an Huang, Zhiqi Li, Minghan Li, Guilin Li, Jose M. Alvarez, Lei Zhang, Zhiding Yu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.13353)  
+
+**Abstract**: Recent studies have revealed that selecting informative and relevant video frames can significantly improve the performance of Video Large Language Models (Video-LLMs). Current methods, such as reducing inter-frame redundancy, employing separate models for image-text relevance assessment, or utilizing temporal video grounding for event localization, substantially adopt unsupervised learning paradigms, whereas they struggle to address the complex scenarios in long video understanding. We propose Instructed Temporal Grounding for Videos (VideoITG), featuring customized frame sampling aligned with user instructions. The core of VideoITG is the VidThinker pipeline, an automated annotation framework that explicitly mimics the human annotation process. First, it generates detailed clip-level captions conditioned on the instruction; then, it retrieves relevant video segments through instruction-guided reasoning; finally, it performs fine-grained frame selection to pinpoint the most informative visual evidence. Leveraging VidThinker, we construct the VideoITG-40K dataset, containing 40K videos and 500K instructed temporal grounding annotations. We then design a plug-and-play VideoITG model, which takes advantage of visual language alignment and reasoning capabilities of Video-LLMs, for effective frame selection in a discriminative manner. Coupled with Video-LLMs, VideoITG achieves consistent performance improvements across multiple multimodal video understanding benchmarks, showing its superiority and great potentials for video understanding. 
+
+**Abstract (ZH)**: 最近的研究表明，选择信息丰富且相关的视频帧可以显著提高视频大型语言模型（Video-LLMs）的性能。当前的方法，如减少帧间冗余、采用独立模型进行图像-文本相关性评估或利用时序视频接地进行事件定位，主要依赖无监督学习范式，但在长视频理解的复杂场景中难以应对。我们提出了Instructed Temporal Grounding for Videos（VideoITG），这是一个根据用户指令定制帧采样的框架。VideoITG的核心是VidThinker流水线，这是一个自动注释框架，显式模拟了人类注释过程。首先，它根据指令生成详细的片段级字幕；然后，通过指令引导的推理检索相关视频片段；最后，进行精细的帧选择，以确定最有信息性的视觉证据。利用VidThinker，我们构建了包含40K视频和500K指令时序接地注释的VideoITG-40K数据集。我们随后设计了一个即插即用的VideoITG模型，该模型利用了Video-LLMs的视觉语言对齐和推理能力，以区分的方式有效地进行帧选择。结合Video-LLMs，VideoITG在多个多模态视频理解基准测试中实现了一致的性能提升，展示了其在视频理解方面的优势和巨大潜力。 
+
+---
+# FIQ: Fundamental Question Generation with the Integration of Question Embeddings for Video Question Answering 
+
+**Title (ZH)**: FIQ: 基于问题嵌入的视频问答基本问题生成 
+
+**Authors**: Ju-Young Oh, Ho-Joong Kim, Seong-Whan Lee  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12816)  
+
+**Abstract**: Video question answering (VQA) is a multimodal task that requires the interpretation of a video to answer a given question. Existing VQA methods primarily utilize question and answer (Q&A) pairs to learn the spatio-temporal characteristics of video content. However, these annotations are typically event-centric, which is not enough to capture the broader context of each video. The absence of essential details such as object types, spatial layouts, and descriptive attributes restricts the model to learning only a fragmented scene representation. This issue limits the model's capacity for generalization and higher-level reasoning. In this paper, we propose a fundamental question generation with the integration of question embeddings for video question answering (FIQ), a novel approach designed to strengthen the reasoning ability of the model by enhancing the fundamental understanding of videos. FIQ generates Q&A pairs based on descriptions extracted from videos, enriching the training data with fundamental scene information. Generated Q&A pairs enable the model to understand the primary context, leading to enhanced generalizability and reasoning ability. Furthermore, we incorporate a VQ-CAlign module that assists task-specific question embeddings with visual features, ensuring that essential domain-specific details are preserved to increase the adaptability of downstream tasks. Experiments on SUTD-TrafficQA demonstrate that our FIQ achieves state-of-the-art performance compared to existing baseline methods. 
+
+**Abstract (ZH)**: 视频问答（VQA）是一种多模态任务，要求对视频进行解释以回答给定的问题。现有的VQA方法主要利用问题和答案（Q&A）对来学习视频内容的时空特性。然而，这些注释通常是事件中心的，无法捕捉每个视频的更广泛上下文。缺乏诸如物体类型、空间布局和描述性属性等关键细节限制了模型学习碎片化的场景表示。这限制了模型的一般化能力和高层次推理能力。本文提出了一种整合问题嵌入的认知基础问题生成方法（FIQ），这是一种旨在通过增强对视频的基本理解来加强模型推理能力的新方法。FIQ基于从视频中提取的描述生成Q&A对，丰富了训练数据，提供了基本场景信息。生成的Q&A对使模型能够理解主要上下文，从而增强其一般化能力和推理能力。此外，我们引入了VQ-CAlign模块，该模块辅助特定任务的问题嵌入与视觉特征相结合，确保保留关键的领域特定细节，以提高下游任务的适应性。实验结果表明，我们的FIQ在SUTD-TrafficQA数据集上的性能优于现有基线方法。 
+
+---
+# City-VLM: Towards Multidomain Perception Scene Understanding via Multimodal Incomplete Learning 
+
+**Title (ZH)**: City-VLM：通过多模态不完全学习走向多域感知场景理解 
+
+**Authors**: Penglei Sun, Yaoxian Song, Xiangru Zhu, Xiang Liu, Qiang Wang, Yue Liu, Changqun Xia, Tiefeng Li, Yang Yang, Xiaowen Chu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12795)  
+
+**Abstract**: Scene understanding enables intelligent agents to interpret and comprehend their environment. While existing large vision-language models (LVLMs) for scene understanding have primarily focused on indoor household tasks, they face two significant limitations when applied to outdoor large-scale scene understanding. First, outdoor scenarios typically encompass larger-scale environments observed through various sensors from multiple viewpoints (e.g., bird view and terrestrial view), while existing indoor LVLMs mainly analyze single visual modalities within building-scale contexts from humanoid viewpoints. Second, existing LVLMs suffer from missing multidomain perception outdoor data and struggle to effectively integrate 2D and 3D visual information. To address the aforementioned limitations, we build the first multidomain perception outdoor scene understanding dataset, named \textbf{\underline{SVM-City}}, deriving from multi\textbf{\underline{S}}cale scenarios with multi\textbf{\underline{V}}iew and multi\textbf{\underline{M}}odal instruction tuning data. It contains $420$k images and $4, 811$M point clouds with $567$k question-answering pairs from vehicles, low-altitude drones, high-altitude aerial planes, and satellite. To effectively fuse the multimodal data in the absence of one modality, we introduce incomplete multimodal learning to model outdoor scene understanding and design the LVLM named \textbf{\underline{City-VLM}}. Multimodal fusion is realized by constructing a joint probabilistic distribution space rather than implementing directly explicit fusion operations (e.g., concatenation). Experimental results on three typical outdoor scene understanding tasks show City-VLM achieves $18.14 \%$ performance surpassing existing LVLMs in question-answering tasks averagely. Our method demonstrates pragmatic and generalization performance across multiple outdoor scenes. 
+
+**Abstract (ZH)**: 场景理解使智能代理能够解释和理解其环境。虽然现有的大型视觉-语言模型（LVLM）在场景理解上主要集中在室内家庭任务上，但在应用于大规模户外场景理解时面临两大局限性。首先，户外场景通常涉及通过多种传感器从多个视角（如鸟瞰视角和地面视角）观测的大规模环境，而现有的室内LVLM主要从类人视角在建筑尺度的范围内分析单一视觉模态。其次，现有的LVLM缺乏多领域感知的户外数据，并且难以有效地整合2D和3D视觉信息。为解决上述局限性，我们构建了第一个多领域感知的户外场景理解数据集，命名为**\underline{SVM-City}**，该数据集源自多尺度场景，并包含多视角和多模态指令调优数据。它包含了42万张图像和48.11亿个点云，以及来自车辆、低空无人机、高空航拍飞机和卫星的56.7万对问答对。为在缺乏某种模态的情况下有效融合多模态数据，我们引入了不完整的多模态学习来建模户外场景理解，并设计了名为**\underline{City-VLM}**的LVLM。多模态融合通过构建联合概率分布空间来实现，而不是直接执行显式的融合操作（如拼接）。在三个典型户外场景理解任务上的实验结果显示，City-VLM在问答任务上的平均性能超过了现有LVLM 18.14%，我们的方法在多个户外场景中表现出实用性和泛化性能。 
+
+---
+# Think-Before-Draw: Decomposing Emotion Semantics & Fine-Grained Controllable Expressive Talking Head Generation 
+
+**Title (ZH)**: 思考在先：分解情绪语义与细粒度可控表情头部生成 
+
+**Authors**: Hanlei Shi, Leyuan Qu, Yu Liu, Di Gao, Yuhua Zheng, Taihao Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12761)  
+
+**Abstract**: Emotional talking-head generation has emerged as a pivotal research area at the intersection of computer vision and multimodal artificial intelligence, with its core value lying in enhancing human-computer interaction through immersive and empathetic this http URL the advancement of multimodal large language models, the driving signals for emotional talking-head generation has shifted from audio and video to more flexible text. However, current text-driven methods rely on predefined discrete emotion label texts, oversimplifying the dynamic complexity of real facial muscle movements and thus failing to achieve natural emotional this http URL study proposes the Think-Before-Draw framework to address two key challenges: (1) In-depth semantic parsing of emotions--by innovatively introducing Chain-of-Thought (CoT), abstract emotion labels are transformed into physiologically grounded facial muscle movement descriptions, enabling the mapping from high-level semantics to actionable motion features; and (2) Fine-grained expressiveness optimization--inspired by artists' portrait painting process, a progressive guidance denoising strategy is proposed, employing a "global emotion localization--local muscle control" mechanism to refine micro-expression dynamics in generated this http URL experiments demonstrate that our approach achieves state-of-the-art performance on widely-used benchmarks, including MEAD and HDTF. Additionally, we collected a set of portrait images to evaluate our model's zero-shot generation capability. 
+
+**Abstract (ZH)**: 基于情感的虚拟头像生成已成为计算机视觉和多模态人工智能交叉领域的关键研究方向，其核心价值在于通过沉浸式和同理心的人机交互增强用户体验。随着多模态大语言模型的发展，驱动情感虚拟头像生成的信号已从音频和视频转向更具灵活性的文字。然而，当前基于文本的方法依赖于预定义的离散情绪标签文字，简化了真实面部肌肉运动的动态复杂性，从而未能实现自然的情感表达。本研究提出Think-Before-Draw框架以应对两大核心挑战：（1）深入的情感语义解析—通过创新引入Chain-of-Thought（CoT），将抽象的情绪标签转化为生理基础的面部肌肉运动描述，实现从高层语义到可执行动作特征的映射；（2）精细化的情感表达优化—受艺术家肖像绘画过程的启发，提出了一种逐步指导降噪策略，采用“全局情绪定位—局部肌肉控制”机制，以细化生成虚拟头像中的微表情动态。实验表明，我们的方法在广泛使用的MEAD和HDTF基准上达到了最先进的性能。此外，我们还收集了一组肖像图片来评估模型的零样本生成能力。 
+
+---
+# Transformer-based Spatial Grounding: A Comprehensive Survey 
+
+**Title (ZH)**: 基于变换器的空间定位综述 
+
+**Authors**: Ijazul Haq, Muhammad Saqib, Yingjie Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12739)  
+
+**Abstract**: Spatial grounding, the process of associating natural language expressions with corresponding image regions, has rapidly advanced due to the introduction of transformer-based models, significantly enhancing multimodal representation and cross-modal alignment. Despite this progress, the field lacks a comprehensive synthesis of current methodologies, dataset usage, evaluation metrics, and industrial applicability. This paper presents a systematic literature review of transformer-based spatial grounding approaches from 2018 to 2025. Our analysis identifies dominant model architectures, prevalent datasets, and widely adopted evaluation metrics, alongside highlighting key methodological trends and best practices. This study provides essential insights and structured guidance for researchers and practitioners, facilitating the development of robust, reliable, and industry-ready transformer-based spatial grounding models. 
+
+**Abstract (ZH)**: 基于变压器的空间定位：从2018到2025年的系统文献综述 
+
+---
+# InSight: AI Mobile Screening Tool for Multiple Eye Disease Detection using Multimodal Fusion 
+
+**Title (ZH)**: InSight: 多模态融合的AI移动筛查工具用于多种眼病检测 
+
+**Authors**: Ananya Raghu, Anisha Raghu, Alice S. Tang, Yannis M. Paulus, Tyson N. Kim, Tomiko T. Oskotsky  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12669)  
+
+**Abstract**: Background/Objectives: Age-related macular degeneration, glaucoma, diabetic retinopathy (DR), diabetic macular edema, and pathological myopia affect hundreds of millions of people worldwide. Early screening for these diseases is essential, yet access to medical care remains limited in low- and middle-income countries as well as in resource-limited settings. We develop InSight, an AI-based app that combines patient metadata with fundus images for accurate diagnosis of five common eye diseases to improve accessibility of screenings.
+Methods: InSight features a three-stage pipeline: real-time image quality assessment, disease diagnosis model, and a DR grading model to assess severity. Our disease diagnosis model incorporates three key innovations: (a) Multimodal fusion technique (MetaFusion) combining clinical metadata and images; (b) Pretraining method leveraging supervised and self-supervised loss functions; and (c) Multitask model to simultaneously predict 5 diseases. We make use of BRSET (lab-captured images) and mBRSET (smartphone-captured images) datasets, both of which also contain clinical metadata for model training/evaluation.
+Results: Trained on a dataset of BRSET and mBRSET images, the image quality checker achieves near-100% accuracy in filtering out low-quality fundus images. The multimodal pretrained disease diagnosis model outperforms models using only images by 6% in balanced accuracy for BRSET and 4% for mBRSET.
+Conclusions: The InSight pipeline demonstrates robustness across varied image conditions and has high diagnostic accuracy across all five diseases, generalizing to both smartphone and lab captured images. The multitask model contributes to the lightweight nature of the pipeline, making it five times computationally efficient compared to having five individual models corresponding to each disease. 
+
+**Abstract (ZH)**: 背景/目标: 年龄相关黄斑变性、青光眼、糖尿病视网膜病变（DR）、糖尿病黄斑水肿和病理性近视影响着全世界数百亿人。对这些疾病进行早期筛查至关重要，但在低收入和中收入国家以及资源有限的地区，获得医疗服务仍然有限。我们开发了InSight，一个基于AI的应用程序，将患者元数据与眼底图像结合，以准确诊断五种常见眼部疾病，提高筛查的可及性。
+方法: InSight 支持三阶段流水线：实时图像质量评估、疾病诊断模型和DR严重程度评估模型。我们的疾病诊断模型包含三项关键创新：(a) 结合临床元数据和图像的多模态融合技术（MetaFusion）；(b) 利用监督和自我监督损失函数的预训练方法；(c) 多任务模型，同时预测5种疾病。我们使用了BRSET（实验室拍摄的图像）和mBRSET（智能手机拍摄的图像）数据集，这两个数据集都包含临床元数据用于模型训练和评估。
+结果: 在BRSET和mBRSET图像数据集上训练的图像质量检查器在筛选低质量眼底图像方面几乎达到了100%的准确率。多模态预训练疾病诊断模型在BRSET和mBRSET数据集上的平衡准确率分别比仅使用图像的模型高出6%和4%。
+结论: InSight流水线在各种图像条件下表现出色，并在所有五种疾病上具有高诊断准确性，适用于实验室和智能手机拍摄的图像。多任务模型使流水线更加轻量级，计算效率比为每个疾病拥有五个独立模型高出五倍。 
+
+---
+# Spatially Grounded Explanations in Vision Language Models for Document Visual Question Answering 
+
+**Title (ZH)**: 视觉语言模型中面向文档视觉问答的空间 grounding 解释 
+
+**Authors**: Maximiliano Hormazábal Lagos, Héctor Cerezo-Costas, Dimosthenis Karatzas  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12490)  
+
+**Abstract**: We introduce EaGERS, a fully training-free and model-agnostic pipeline that (1) generates natural language rationales via a vision language model, (2) grounds these rationales to spatial sub-regions by computing multimodal embedding similarities over a configurable grid with majority voting, and (3) restricts the generation of responses only from the relevant regions selected in the masked image. Experiments on the DocVQA dataset demonstrate that our best configuration not only outperforms the base model on exact match accuracy and Average Normalized Levenshtein Similarity metrics but also enhances transparency and reproducibility in DocVQA without additional model fine-tuning. 
+
+**Abstract (ZH)**: 我们介绍了一种名为EaGERS的全流程无需训练且模型无关的管道，该管道通过（1）使用视觉语言模型生成自然语言理由，（2）通过在可配置网格上计算多模态嵌入相似性并结合多数投票将这些理由与空间子区域关联起来，以及（3）仅从掩码图像中选择的相关区域生成响应来工作。实验结果表明，我们的最佳配置不仅在准确匹配和平均归一化Levenshtein相似度指标上优于基准模型，还在DocVQA数据集上提升了透明度和可重现性，无需额外的模型微调。 
+
+---

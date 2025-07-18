@@ -1,0 +1,79 @@
+# Signal Temporal Logic Compliant Co-design of Planning and Control 
+
+**Title (ZH)**: 信号时序逻辑符合性的规划与控制协同设计 
+
+**Authors**: Manas Sashank Juvvi, Tushar Dilip Kurne, Vaishnavi J, Shishir Kolathaya, Pushpak Jagtap  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.13225)  
+
+**Abstract**: This work presents a novel co-design strategy that integrates trajectory planning and control to handle STL-based tasks in autonomous robots. The method consists of two phases: $(i)$ learning spatio-temporal motion primitives to encapsulate the inherent robot-specific constraints and $(ii)$ constructing an STL-compliant motion plan from these primitives. Initially, we employ reinforcement learning to construct a library of control policies that perform trajectories described by the motion primitives. Then, we map motion primitives to spatio-temporal characteristics. Subsequently, we present a sampling-based STL-compliant motion planning strategy tailored to meet the STL specification. The proposed model-free approach, which generates feasible STL-compliant motion plans across various environments, is validated on differential-drive and quadruped robots across various STL specifications. Demonstration videos are available at this https URL. 
+
+**Abstract (ZH)**: 本研究提出了一种新型联合设计策略，将轨迹规划与控制相结合，以处理基于STL的任务自主机器人。该方法包含两个阶段：(i) 学习时空运动基元以封装固有的机器人特定约束；(ii) 从这些基元构建STL兼容的运动计划。首先，我们使用强化学习构建一个由运动基元描述轨迹的控制策略库。然后，我们将运动基元映射到时空特性。随后，我们提出了一种基于采样的STL兼容运动规划策略，以满足STL规范。提出的无模型方法在不同环境下生成可行的STL兼容运动计划，并已在差动驱动和四足机器人上针对不同的STL规范进行了验证。有关示范视频请参见此链接：此 https URL。 
+
+---
+# Efficient Online Learning and Adaptive Planning for Robotic Information Gathering Based on Streaming Data 
+
+**Title (ZH)**: 基于流数据的机器人信息收集的高效在线学习与自适应规划 
+
+**Authors**: Sanjeev Ramkumar Sudha, Joel Jose, Erlend M. Coates  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.13053)  
+
+**Abstract**: Robotic information gathering (RIG) techniques refer to methods where mobile robots are used to acquire data about the physical environment with a suite of sensors. Informative planning is an important part of RIG where the goal is to find sequences of actions or paths that maximize efficiency or the quality of information collected. Many existing solutions solve this problem by assuming that the environment is known in advance. However, real environments could be unknown or time-varying, and adaptive informative planning remains an active area of research. Adaptive planning and incremental online mapping are required for mapping initially unknown or varying spatial fields. Gaussian process (GP) regression is a widely used technique in RIG for mapping continuous spatial fields. However, it falls short in many applications as its real-time performance does not scale well to large datasets. To address these challenges, this paper proposes an efficient adaptive informative planning approach for mapping continuous scalar fields with GPs with streaming sparse GPs. Simulation experiments are performed with a synthetic dataset and compared against existing benchmarks. Finally, it is also verified with a real-world dataset to further validate the efficacy of the proposed method. Results show that our method achieves similar mapping accuracy to the baselines while reducing computational complexity for longer missions. 
+
+**Abstract (ZH)**: 基于流式稀疏高斯过程的连续标量场自适应信息采集规划方法 
+
+---
+# FFI-VTR: Lightweight and Robust Visual Teach and Repeat Navigation based on Feature Flow Indicator and Probabilistic Motion Planning 
+
+**Title (ZH)**: FFI-VTR：基于特征流指示器和概率运动规划的轻量级稳健视觉教vertising导航 
+
+**Authors**: Jikai Wang, Yunqi Cheng, Zonghai Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12800)  
+
+**Abstract**: Though visual and repeat navigation is a convenient solution for mobile robot self-navigation, achieving balance between efficiency and robustness in task environment still remains challenges. In this paper, we propose a novel visual and repeat robotic autonomous navigation method that requires no accurate localization and dense reconstruction modules, which makes our system featured by lightweight and robustness. Firstly, feature flow is introduced and we develop a qualitative mapping between feature flow and robot's motion, in which feature flow is defined as pixel location bias between matched features. Based on the mapping model, the map outputted by the teaching phase is represented as a keyframe graph, in which the feature flow on the edge encodes the relative motion between adjacent keyframes. Secondly, the visual repeating navigation is essentially modeled as a feature flow minimization problem between current observation and the map keyframe. To drive the robot to consistently reduce the feature flow between current frame and map keyframes without accurate localization, a probabilistic motion planning is developed based on our qualitative feature flow-motion mapping indicator. Extensive experiments using our mobile platform demonstrates that our proposed method is lightweight, robust, and superior to baselines. The source code has been made public at this https URL to benefit the community. 
+
+**Abstract (ZH)**: 尽管视觉和重复导航是移动机器人自主导航的一种方便解决方案，但在任务环境中实现高效性和鲁棒性的平衡仍然存在挑战。本文提出了一种无需精确定位和密集重建模块的新型视觉和重复机器人自主导航方法，使得系统兼具轻量化和鲁棒性。首先，引入了特征流，并开发了特征流与机器人运动之间的定性映射，其中特征流定义为匹配特征之间的像素位置偏差。基于该映射模型，教学阶段输出的地图表示为关键帧图，特征流在边上的编码相邻关键帧之间的相对运动。其次，视觉重复导航本质上被建模为特征流在当前观测与地图关键帧之间的最小化问题。为了在无需精确定位的情况下驱动机器人一致地减少当前帧与地图关键帧之间的特征流，我们基于定性的特征流-运动映射指标开发了概率性运动规划。我们的移动平台上的广泛实验表明，所提出的方法具有轻量化、鲁棒性，并优于基线方法。源代码已在此httpsURL公开，以惠及社区。 
+
+---
+# Learning to Predict Mobile Robot Stability in Off-Road Environments 
+
+**Title (ZH)**: 学习在非路面环境中预测移动机器人稳定性 
+
+**Authors**: Nathaniel Rose, Arif Ahmed, Emanuel Gutierrez-Cornejo, Parikshit Maini  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12731)  
+
+**Abstract**: Navigating in off-road environments for wheeled mobile robots is challenging due to dynamic and rugged terrain. Traditional physics-based stability metrics, such as Static Stability Margin (SSM) or Zero Moment Point (ZMP) require knowledge of contact forces, terrain geometry, and the robot's precise center-of-mass that are difficult to measure accurately in real-world field conditions. In this work, we propose a learning-based approach to estimate robot platform stability directly from proprioceptive data using a lightweight neural network, IMUnet. Our method enables data-driven inference of robot stability without requiring an explicit terrain model or force sensing.
+We also develop a novel vision-based ArUco tracking method to compute a scalar score to quantify robot platform stability called C3 score. The score captures image-space perturbations over time as a proxy for physical instability and is used as a training signal for the neural network based model. As a pilot study, we evaluate our approach on data collected across multiple terrain types and speeds and demonstrate generalization to previously unseen conditions. These initial results highlight the potential of using IMU and robot velocity as inputs to estimate platform stability. The proposed method finds application in gating robot tasks such as precision actuation and sensing, especially for mobile manipulation tasks in agricultural and space applications. Our learning method also provides a supervision mechanism for perception based traversability estimation and planning. 
+
+**Abstract (ZH)**: 基于惯性测量单元和机器人速度的离-road环境轮式移动机器人平台稳定性估计方法 
+
+---
+# MoistureMapper: An Autonomous Mobile Robot for High-Resolution Soil Moisture Mapping at Scale 
+
+**Title (ZH)**: MoistureMapper：一种用于高分辨率土壤水分大规模测绘的自主移动机器人 
+
+**Authors**: Nathaniel Rose, Hannah Chuang, Manuel A Andrade-Rodriguez, Rishi Parashar, Dani Or, Parikshit Maini  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12716)  
+
+**Abstract**: Soil moisture is a quantity of interest in many application areas including agriculture and climate modeling. Existing methods are not suitable for scale applications due to large deployment costs in high-resolution sensing applications such as for variable irrigation. In this work, we design, build and field deploy an autonomous mobile robot, MoistureMapper, for soil moisture sensing. The robot is equipped with Time Domain Reflectometry (TDR) sensors and a direct push drill mechanism for deploying the sensor to measure volumetric water content in the soil. Additionally, we implement and evaluate multiple adaptive sampling strategies based on a Gaussian Process based modeling to build a spatial mapping of moisture distribution in the soil. We present results from large scale computational simulations and proof-of-concept deployment on the field. The adaptive sampling approach outperforms a greedy benchmark approach and results in up to 30\% reduction in travel distance and 5\% reduction in variance in the reconstructed moisture maps. Link to video showing field experiments: this https URL 
+
+**Abstract (ZH)**: 土壤湿度是农业和气候 modeling 等多个应用领域的关注量。现有方法由于在高分辨率感知识别变量灌溉等应用场景中部署成本较大而不适于大规模应用。本文中，我们设计、构建并现场部署了一台自主移动机器人 MoistureMapper，用于土壤湿度感应。该机器人配备有时域反射仪 (TDR) 传感器和直接压入钻机机制以将传感器部署到土壤中测量土壤体积含水量。此外，我们基于高斯过程模型实施并评估了多种自适应采样策略，以构建土壤内湿度分布的空间图谱。我们展示了大规模计算仿真结果和现场概念验证部署的结果。自适应采样方法优于贪婪基准方法，可减少高达 30% 的行驶距离并降低约 5% 的重建湿度图方差。视频展示现场试验：this https URL。 
+
+---
+# Continuous Marine Tracking via Autonomous UAV Handoff 
+
+**Title (ZH)**: 连续海洋跟踪通过自主无人机切换 
+
+**Authors**: Heegyeong Kim, Alice James, Avishkar Seth, Endrowednes Kuantama, Jane Williamson, Yimeng Feng, Richard Han  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12763)  
+
+**Abstract**: This paper introduces an autonomous UAV vision system for continuous, real-time tracking of marine animals, specifically sharks, in dynamic marine environments. The system integrates an onboard computer with a stabilised RGB-D camera and a custom-trained OSTrack pipeline, enabling visual identification under challenging lighting, occlusion, and sea-state conditions. A key innovation is the inter-UAV handoff protocol, which enables seamless transfer of tracking responsibilities between drones, extending operational coverage beyond single-drone battery limitations. Performance is evaluated on a curated shark dataset of 5,200 frames, achieving a tracking success rate of 81.9\% during real-time flight control at 100 Hz, and robustness to occlusion, illumination variation, and background clutter. We present a seamless UAV handoff framework, where target transfer is attempted via high-confidence feature matching, achieving 82.9\% target coverage. These results confirm the viability of coordinated UAV operations for extended marine tracking and lay the groundwork for scalable, autonomous monitoring. 
+
+**Abstract (ZH)**: 一种用于动态海洋环境连续实时追踪鲨鱼等海洋动物的自主无人机视觉系统 
+
+---

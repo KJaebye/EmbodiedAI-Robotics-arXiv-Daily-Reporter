@@ -1,0 +1,234 @@
+# GraspGen: A Diffusion-based Framework for 6-DOF Grasping with On-Generator Training 
+
+**Title (ZH)**: GraspGen：一种基于扩散的六自由度抓取框架及生成器上训练方法 
+
+**Authors**: Adithyavairavan Murali, Balakumar Sundaralingam, Yu-Wei Chao, Wentao Yuan, Jun Yamada, Mark Carlson, Fabio Ramos, Stan Birchfield, Dieter Fox, Clemens Eppner  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.13097)  
+
+**Abstract**: Grasping is a fundamental robot skill, yet despite significant research advancements, learning-based 6-DOF grasping approaches are still not turnkey and struggle to generalize across different embodiments and in-the-wild settings. We build upon the recent success on modeling the object-centric grasp generation process as an iterative diffusion process. Our proposed framework, GraspGen, consists of a DiffusionTransformer architecture that enhances grasp generation, paired with an efficient discriminator to score and filter sampled grasps. We introduce a novel and performant on-generator training recipe for the discriminator. To scale GraspGen to both objects and grippers, we release a new simulated dataset consisting of over 53 million grasps. We demonstrate that GraspGen outperforms prior methods in simulations with singulated objects across different grippers, achieves state-of-the-art performance on the FetchBench grasping benchmark, and performs well on a real robot with noisy visual observations. 
+
+**Abstract (ZH)**: 基于学习的六自由度抓取方法仍然不够成熟，难以在不同实体和真实环境场景中进行泛化。我们在此基础上，将物体中心的抓取生成过程建模为迭代扩散过程。我们提出的框架GraspGen包括一个增强抓取生成的DiffusionTransformer架构，并配以高效辨别器对采样的抓取进行评分和筛选。我们引入了一种新颖且高效的生成器内训练配方来训练辨别器。为了使GraspGen适用于各种物体和抓取器，我们发布了包含超过5300万个抓取的新型模拟数据集。我们证明，GraspGen在不同抓取器上的独立物体模拟环境中优于先前方法，在FetchBench抓取基准测试中达到最先进的性能，并且在具有嘈杂视觉观测的真实机器人上表现良好。 
+
+---
+# Robustness Requirement Coverage using a Situation Coverage Approach for Vision-based AI Systems 
+
+**Title (ZH)**: 基于情境覆盖的方法满足视觉导向AI系统的鲁棒性需求覆盖 
+
+**Authors**: Sepeedeh Shahbeigi, Nawshin Mannan Proma, Victoria Hodge, Richard Hawkins, Boda Li, Valentina Donzella  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12986)  
+
+**Abstract**: AI-based robots and vehicles are expected to operate safely in complex and dynamic environments, even in the presence of component degradation. In such systems, perception relies on sensors such as cameras to capture environmental data, which is then processed by AI models to support decision-making. However, degradation in sensor performance directly impacts input data quality and can impair AI inference. Specifying safety requirements for all possible sensor degradation scenarios leads to unmanageable complexity and inevitable gaps. In this position paper, we present a novel framework that integrates camera noise factor identification with situation coverage analysis to systematically elicit robustness-related safety requirements for AI-based perception systems. We focus specifically on camera degradation in the automotive domain. Building on an existing framework for identifying degradation modes, we propose involving domain, sensor, and safety experts, and incorporating Operational Design Domain specifications to extend the degradation model by incorporating noise factors relevant to AI performance. Situation coverage analysis is then applied to identify representative operational contexts. This work marks an initial step toward integrating noise factor analysis and situational coverage to support principled formulation and completeness assessment of robustness requirements for camera-based AI perception. 
+
+**Abstract (ZH)**: 基于AI的机器人和车辆预计能够在复杂且动态的环境中安全运行，即使在传感器性能下降的情况下也是如此。在这些系统中，感知依赖于如摄像头之类的传感器捕获环境数据，然后通过AI模型处理以支持决策制定。然而，传感器性能下降直接影响输入数据质量，并可能导致AI推理受损。为所有可能的传感器衰退场景明确规定安全需求会产生不可管理的复杂性和不可避免的缺口。在本文中，我们提出了一种新的框架，将摄像头噪声因素识别与情况覆盖分析相结合，系统地引出基于AI感知系统的鲁棒性相关安全需求。我们特别关注汽车领域中的摄像头退化。基于现有的退化模式识别框架，我们提出涉及领域、传感器和安全专家，并结合Operation Design Domain（ODD）规范来扩展退化模型，以纳入对AI性能相关噪声因素。然后应用情况覆盖分析来识别代表性操作上下文。这项工作标志着将噪声因素分析与情况覆盖分析综合起来支持鲁棒性需求的原则性表述与完整性评估的初步尝试。 
+
+---
+# ASC-SW: Atrous strip convolution network with sliding windows for visual-assisted map navigation 
+
+**Title (ZH)**: ASC-SW：滑动窗口下的稀疏 atrous 卷积网络用于视觉辅助地图导航 
+
+**Authors**: Cheng Liu, Fan Zhu, Yaoyu Zhuang Zhinan Chen Jiefeng Tang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12744)  
+
+**Abstract**: With the rapid development of lightweight visual neural network architectures, traditional high-performance vision models have undergone significant compression, greatly improving their computational efficiency and energy consumption ratio. This makes them feasible for deployment on resource-constrained edge computing devices. We propose a visual-assisted navigation framework called Atrous Strip Convolution-Sliding Window (ASC-SW), which leverages a depth camera and a lightweight visual neural network to assist map-based mobile robot navigation. This framework compensates for the inability of traditional light detection and range (LiDAR) sensors to detect ground-level obstacles such as ground-level wires. We introduce a lightweight and efficient segmentation model, Atrous Strip Convolution Network (ASCnet), for detecting deformable linear objects (DLOs). MobileNetV2 is used as the backbone network, and Atrous Strip Convolution Spatial Pyramid Pooling (ASCSPP) is designed to extract DLO features more effectively. Atrous Strip Convolution is integrated into ASCSPP to accurately identify the linear structure of DLOs with low computational cost. Additionally, a Sliding Window (SW) post-processing module is proposed to denoise the output in complex environments, improving recognition accuracy. Our method strikes a balance between inference speed and segmentation performance. It achieves a mean Intersection over Union (Miou) score of 75.3% on a self-built dataset and reaches 9.3 FPS inference speed on the Jetson Orin Nano edge device. Overall, our approach outperforms existing DLO detection models and has been successfully validated on a physical robotic platform. 
+
+**Abstract (ZH)**: 基于视觉辅助的空洞条状卷积滑动窗口导航框架：检测可变形线性对象 
+
+---
+# $S^2M^2$: Scalable Stereo Matching Model for Reliable Depth Estimation 
+
+**Title (ZH)**: $S^2M^2$: 可扩展的立体匹配模型以实现可靠的深度估计 
+
+**Authors**: Junhong Min, Youngpil Jeon, Jimin Kim, Minyong Choi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.13229)  
+
+**Abstract**: The pursuit of a generalizable stereo matching model, capable of performing across varying resolutions and disparity ranges without dataset-specific fine-tuning, has revealed a fundamental trade-off. Iterative local search methods achieve high scores on constrained benchmarks, but their core mechanism inherently limits the global consistency required for true generalization. On the other hand, global matching architectures, while theoretically more robust, have been historically rendered infeasible by prohibitive computational and memory costs. We resolve this dilemma with $S^2M^2$: a global matching architecture that achieves both state-of-the-art accuracy and high efficiency without relying on cost volume filtering or deep refinement stacks. Our design integrates a multi-resolution transformer for robust long-range correspondence, trained with a novel loss function that concentrates probability on feasible matches. This approach enables a more robust joint estimation of disparity, occlusion, and confidence. $S^2M^2$ establishes a new state of the art on the Middlebury v3 and ETH3D benchmarks, significantly outperforming prior methods across most metrics while reconstructing high-quality details with competitive efficiency. 
+
+**Abstract (ZH)**: 一种无需数据集特定微调即可跨不同分辨率和视差范围通用的立体匹配模型的追求揭示了基本权衡。S²M²：一种无需依赖成本体过滤或深度精细堆栈即可同时实现最先进的精度和高效性的全局匹配架构。 
+
+---
+# DINO-VO: A Feature-based Visual Odometry Leveraging a Visual Foundation Model 
+
+**Title (ZH)**: DINO-VO：基于特征的视觉里程计利用视觉基础模型 
+
+**Authors**: Maulana Bisyir Azhari, David Hyunchul Shim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.13145)  
+
+**Abstract**: Learning-based monocular visual odometry (VO) poses robustness, generalization, and efficiency challenges in robotics. Recent advances in visual foundation models, such as DINOv2, have improved robustness and generalization in various vision tasks, yet their integration in VO remains limited due to coarse feature granularity. In this paper, we present DINO-VO, a feature-based VO system leveraging DINOv2 visual foundation model for its sparse feature matching. To address the integration challenge, we propose a salient keypoints detector tailored to DINOv2's coarse features. Furthermore, we complement DINOv2's robust-semantic features with fine-grained geometric features, resulting in more localizable representations. Finally, a transformer-based matcher and differentiable pose estimation layer enable precise camera motion estimation by learning good matches. Against prior detector-descriptor networks like SuperPoint, DINO-VO demonstrates greater robustness in challenging environments. Furthermore, we show superior accuracy and generalization of the proposed feature descriptors against standalone DINOv2 coarse features. DINO-VO outperforms prior frame-to-frame VO methods on the TartanAir and KITTI datasets and is competitive on EuRoC dataset, while running efficiently at 72 FPS with less than 1GB of memory usage on a single GPU. Moreover, it performs competitively against Visual SLAM systems on outdoor driving scenarios, showcasing its generalization capabilities. 
+
+**Abstract (ZH)**: 基于学习的单目视觉里程计（VO）面临着机器人应用中的稳健性、泛化能力和效率挑战。视觉基础模型（如DINOv2）的最新进展在各种视觉任务中提升了稳健性和泛化能力，但由于特征粒度过粗，其在VO中的集成仍受到限制。本文提出了一种名为DINO-VO的特征导向的VO系统，利用DINOv2视觉基础模型进行稀疏特征匹配。为了解决集成挑战，我们设计了一种针对DINOv2粗特征的显著关键点检测器。此外，我们还结合了精细几何特征，增强了DINOv2的鲁棒语义特征，从而产生了更具局部化的表示。最后，基于Transformer的匹配器和可微分位姿估计层能够通过学习好的匹配来精确定义摄像机运动。与SuperPoint等先前的检测描述符网络相比，DINO-VO在复杂环境中的稳健性更强。同时，我们展示了所提出的特征描述符在与独立的DINOv2粗特征对比时的优越准确性和泛化能力。DINO-VO在TartanAir和KITTI数据集上的帧间VO方法中表现优异，并且在EuRoC数据集上具有竞争力，同时在单个GPU上以低于1GB的内存使用率高效运行72 FPS。此外，它在户外驾驶场景中表现与视觉SLAM系统相当，展示了其泛化能力。 
+
+---
+# Efficient Adaptation of Pre-trained Vision Transformer underpinned by Approximately Orthogonal Fine-Tuning Strategy 
+
+**Title (ZH)**: 基于近似正交微调策略的预训练视觉变换器高效适配 
+
+**Authors**: Yiting Yang, Hao Luo, Yuan Sun, Qingsen Yan, Haokui Zhang, Wei Dong, Guoqing Wang, Peng Wang, Yang Yang, Hengtao Shen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.13260)  
+
+**Abstract**: A prevalent approach in Parameter-Efficient Fine-Tuning (PEFT) of pre-trained Vision Transformers (ViT) involves freezing the majority of the backbone parameters and solely learning low-rank adaptation weight matrices to accommodate downstream tasks. These low-rank matrices are commonly derived through the multiplication structure of down-projection and up-projection matrices, exemplified by methods such as LoRA and Adapter. In this work, we observe an approximate orthogonality among any two row or column vectors within any weight matrix of the backbone parameters; however, this property is absent in the vectors of the down/up-projection matrices. Approximate orthogonality implies a reduction in the upper bound of the model's generalization error, signifying that the model possesses enhanced generalization capability. If the fine-tuned down/up-projection matrices were to exhibit this same property as the pre-trained backbone matrices, could the generalization capability of fine-tuned ViTs be further augmented? To address this question, we propose an Approximately Orthogonal Fine-Tuning (AOFT) strategy for representing the low-rank weight matrices. This strategy employs a single learnable vector to generate a set of approximately orthogonal vectors, which form the down/up-projection matrices, thereby aligning the properties of these matrices with those of the backbone. Extensive experimental results demonstrate that our method achieves competitive performance across a range of downstream image classification tasks, confirming the efficacy of the enhanced generalization capability embedded in the down/up-projection matrices. 
+
+**Abstract (ZH)**: 参数高效微调（PEFT）中流行的预训练视觉变换器（ViT）方法包括冻结大部分骨干参数，并仅学习低秩适应权重矩阵以适应下游任务。这些低秩矩阵通常通过下投影和上投影矩阵的乘积结构导出，如LoRA和Adapter方法所体现。在本文中，我们观察到任何权重矩阵中的任意两行或列向量之间存在近似正交性；然而，这种性质在下/上投影矩阵的向量中不存在。近似正交性意味着模型泛化误差的上界减小，表明模型具有增强的泛化能力。如果微调后的下/上投影矩阵能够表现出与预训练骨干矩阵相同的优势，则微调的ViT的泛化能力是否可以进一步增强？为回答这一问题，我们提出了一个近似正交微调（AOFT）策略来表示低秩权重矩阵。该策略使用一个可学习的向量生成一组近似正交的向量，从而构成下/上投影矩阵，使这些矩阵的性质与骨干矩阵的性质对齐。广泛的实验结果证明，我们的方法在一系列下游图像分类任务中实现了竞争力的表现，证实了嵌入在下/上投影矩阵中的增强泛化能力的有效性。 
+
+---
+# Synthesizing Reality: Leveraging the Generative AI-Powered Platform Midjourney for Construction Worker Detection 
+
+**Title (ZH)**: 合成现实：利用Midjourney生成AI驱动平台进行建筑工人检测 
+
+**Authors**: Hongyang Zhao, Tianyu Liang, Sina Davari, Daeho Kim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.13221)  
+
+**Abstract**: While recent advancements in deep neural networks (DNNs) have substantially enhanced visual AI's capabilities, the challenge of inadequate data diversity and volume remains, particularly in construction domain. This study presents a novel image synthesis methodology tailored for construction worker detection, leveraging the generative-AI platform Midjourney. The approach entails generating a collection of 12,000 synthetic images by formulating 3000 different prompts, with an emphasis on image realism and diversity. These images, after manual labeling, serve as a dataset for DNN training. Evaluation on a real construction image dataset yielded promising results, with the model attaining average precisions (APs) of 0.937 and 0.642 at intersection-over-union (IoU) thresholds of 0.5 and 0.5 to 0.95, respectively. Notably, the model demonstrated near-perfect performance on the synthetic dataset, achieving APs of 0.994 and 0.919 at the two mentioned thresholds. These findings reveal both the potential and weakness of generative AI in addressing DNN training data scarcity. 
+
+**Abstract (ZH)**: 基于Midjourney生成式AI平台的建筑工人检测合成图像生成方法研究 
+
+---
+# Demographic-aware fine-grained classification of pediatric wrist fractures 
+
+**Title (ZH)**: 基于人口统计学的儿童腕部骨折细粒度分类 
+
+**Authors**: Ammar Ahmed, Ali Shariq Imran, Zenun Kastrati, Sher Muhammad Daudpota  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12964)  
+
+**Abstract**: Wrist pathologies are frequently observed, particularly among children who constitute the majority of fracture cases. However, diagnosing these conditions is time-consuming and requires specialized expertise. Computer vision presents a promising avenue, contingent upon the availability of extensive datasets, a notable challenge in medical imaging. Therefore, reliance solely on one modality, such as images, proves inadequate, especially in an era of diverse and plentiful data types. In this study, we employ a multifaceted approach to address the challenge of recognizing wrist pathologies using an extremely limited dataset. Initially, we approach the problem as a fine-grained recognition task, aiming to identify subtle X-ray pathologies that conventional CNNs overlook. Secondly, we enhance network performance by fusing patient metadata with X-ray images. Thirdly, rather than pre-training on a coarse-grained dataset like ImageNet, we utilize weights trained on a fine-grained dataset. While metadata integration has been used in other medical domains, this is a novel application for wrist pathologies. Our results show that a fine-grained strategy and metadata integration improve diagnostic accuracy by 2% with a limited dataset and by over 10% with a larger fracture-focused dataset. 
+
+**Abstract (ZH)**: 腕部病理学常见于儿童，构成骨折病例的多数。然而，诊断这些状况耗时且需要专门的技能。计算机视觉提供了一条有希望的道路，但大量数据集的可用性是一个显著挑战。因此，仅依赖单一模态（如图像）是不足够的，尤其是在数据类型多样和丰富的情况下。在本研究中，我们采用多模态方法，利用极其有限的数据集识别腕部病理学。首先，我们将问题视为细粒度识别任务，旨在识别传统CNN忽视的细微X光病理学。其次，通过融合患者元数据和X光图像来提升网络性能。第三，我们不使用像ImageNet这样的粗粒度数据集进行预训练，而是使用细粒度数据集训练的权重。虽然在其他医疗领域已经采用元数据集成，但这是在腕部病理学中的新应用。我们的结果表明，细粒度策略和元数据集成在有限数据集和更大规模的骨折集中，诊断精度分别提高了2%和超过10%。 
+
+---
+# Improving Diagnostic Accuracy of Pigmented Skin Lesions With CNNs: an Application on the DermaMNIST Dataset 
+
+**Title (ZH)**: 使用CNN提高色素性皮肤病变诊断准确率：DermaMNIST数据集的应用 
+
+**Authors**: Nerma Kadric, Amila Akagic, Medina Kapo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12961)  
+
+**Abstract**: Pigmented skin lesions represent localized areas of increased melanin and can indicate serious conditions like melanoma, a major contributor to skin cancer mortality. The MedMNIST v2 dataset, inspired by MNIST, was recently introduced to advance research in biomedical imaging and includes DermaMNIST, a dataset for classifying pigmented lesions based on the HAM10000 dataset. This study assesses ResNet-50 and EfficientNetV2L models for multi-class classification using DermaMNIST, employing transfer learning and various layer configurations. One configuration achieves results that match or surpass existing methods. This study suggests that convolutional neural networks (CNNs) can drive progress in biomedical image analysis, significantly enhancing diagnostic accuracy. 
+
+**Abstract (ZH)**: 色素皮肤病变代表局部 melanin 增加的区域，并可能指示如恶性黑色素瘤等严重状况，恶性黑色素瘤是导致皮肤癌死亡的主要因素之一。MedMNIST v2 数据集受 MNIST 启发， recently introduced to推进生物医学成像领域的研究，其中包括 DermaMNIST，一个基于 HAM10000 数据集的用于分类色素皮肤病变的数据集。本研究评估了 ResNet-50 和 EfficientNetV2L 模型在 DermaMNIST 上的多类别分类性能，采用了迁移学习和多种层配置。一种配置达到了与现有方法相当或更优的结果。本研究建议卷积神经网络 (CNNs) 可以推动生物医学图像分析的进步，显著提高诊断准确性。 
+
+---
+# DMQ: Dissecting Outliers of Diffusion Models for Post-Training Quantization 
+
+**Title (ZH)**: DMQ: 解析扩散模型中的异常值以实现后训练量化 
+
+**Authors**: Dongyeun Lee, Jiwan Hur, Hyounguk Shon, Jae Young Lee, Junmo Kim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12933)  
+
+**Abstract**: Diffusion models have achieved remarkable success in image generation but come with significant computational costs, posing challenges for deployment in resource-constrained environments. Recent post-training quantization (PTQ) methods have attempted to mitigate this issue by focusing on the iterative nature of diffusion models. However, these approaches often overlook outliers, leading to degraded performance at low bit-widths. In this paper, we propose a DMQ which combines Learned Equivalent Scaling (LES) and channel-wise Power-of-Two Scaling (PTS) to effectively address these challenges. Learned Equivalent Scaling optimizes channel-wise scaling factors to redistribute quantization difficulty between weights and activations, reducing overall quantization error. Recognizing that early denoising steps, despite having small quantization errors, crucially impact the final output due to error accumulation, we incorporate an adaptive timestep weighting scheme to prioritize these critical steps during learning. Furthermore, identifying that layers such as skip connections exhibit high inter-channel variance, we introduce channel-wise Power-of-Two Scaling for activations. To ensure robust selection of PTS factors even with small calibration set, we introduce a voting algorithm that enhances reliability. Extensive experiments demonstrate that our method significantly outperforms existing works, especially at low bit-widths such as W4A6 (4-bit weight, 6-bit activation) and W4A8, maintaining high image generation quality and model stability. The code is available at this https URL. 
+
+**Abstract (ZH)**: 扩散模型在图像生成任务中取得了显著成功，但伴随较高的计算成本，这在资源受限环境中面临部署挑战。最近的后训练量化（PTQ）方法通过关注扩散模型的迭代性质来尝试缓解这一问题，但这些方法往往忽视了异常值的存在，导致在低位宽下性能下降。在本文中，我们提出了一种结合了学习等效缩放（LES）和通道 wise 二幂次缩放（PTS）的DMQ方法，有效应对这些挑战。学习等效缩放优化了通道 wise 缩放因子，以在权重和激活之间重新分配量化难度，减少总体量化误差。我们认识到，尽管早期降噪步骤的量化误差较小，但由于误差累积，这些步骤对最终输出至关重要，因此引入了自适应时间步长加权方案，在学习过程中优先处理这些关键步骤。进一步识别到跳过连接等层具有高通道间方差的特性，我们为激活引入了通道 wise 二幂次缩放。为了确保在小校准集下量化因子的稳健选择，我们引入了一种投票算法以增强可靠性。广泛的实验表明，我们的方法在低位宽场景（如W4A6和W4A8）下显著优于现有方法，同时保持了高图像生成质量和模型稳定性。代码可通过以下链接获取：this https URL。 
+
+---
+# SEMT: Static-Expansion-Mesh Transformer Network Architecture for Remote Sensing Image Captioning 
+
+**Title (ZH)**: SEMT：静态扩展网 Transformer 网络架构用于遥感图像captioning 
+
+**Authors**: Khang Truong, Lam Pham, Hieu Tang, Jasmin Lampert, Martin Boyer, Son Phan, Truong Nguyen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12845)  
+
+**Abstract**: Image captioning has emerged as a crucial task in the intersection of computer vision and natural language processing, enabling automated generation of descriptive text from visual content. In the context of remote sensing, image captioning plays a significant role in interpreting vast and complex satellite imagery, aiding applications such as environmental monitoring, disaster assessment, and urban planning. This motivates us, in this paper, to present a transformer based network architecture for remote sensing image captioning (RSIC) in which multiple techniques of Static Expansion, Memory-Augmented Self-Attention, Mesh Transformer are evaluated and integrated. We evaluate our proposed models using two benchmark remote sensing image datasets of UCM-Caption and NWPU-Caption. Our best model outperforms the state-of-the-art systems on most of evaluation metrics, which demonstrates potential to apply for real-life remote sensing image systems. 
+
+**Abstract (ZH)**: 基于变压器的遥感图像字幕网络架构研究 
+
+---
+# MVA 2025 Small Multi-Object Tracking for Spotting Birds Challenge: Dataset, Methods, and Results 
+
+**Title (ZH)**: MVA 2025小型多目标跟踪挑战——鸟类识别：数据集、方法和结果 
+
+**Authors**: Yuki Kondo, Norimichi Ukita, Riku Kanayama, Yuki Yoshida, Takayuki Yamaguchi, Xiang Yu, Guang Liang, Xinyao Liu, Guan-Zhang Wang, Wei-Ta Chu, Bing-Cheng Chuang, Jia-Hua Lee, Pin-Tseng Kuo, I-Hsuan Chu, Yi-Shein Hsiao, Cheng-Han Wu, Po-Yi Wu, Jui-Chien Tsou, Hsuan-Chi Liu, Chun-Yi Lee, Yuan-Fu Yang, Kosuke Shigematsu, Asuka Shin, Ba Tran  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12832)  
+
+**Abstract**: Small Multi-Object Tracking (SMOT) is particularly challenging when targets occupy only a few dozen pixels, rendering detection and appearance-based association unreliable. Building on the success of the MVA2023 SOD4SB challenge, this paper introduces the SMOT4SB challenge, which leverages temporal information to address limitations of single-frame detection. Our three main contributions are: (1) the SMOT4SB dataset, consisting of 211 UAV video sequences with 108,192 annotated frames under diverse real-world conditions, designed to capture motion entanglement where both camera and targets move freely in 3D; (2) SO-HOTA, a novel metric combining Dot Distance with HOTA to mitigate the sensitivity of IoU-based metrics to small displacements; and (3) a competitive MVA2025 challenge with 78 participants and 308 submissions, where the winning method achieved a 5.1x improvement over the baseline. This work lays a foundation for advancing SMOT in UAV scenarios with applications in bird strike avoidance, agriculture, fisheries, and ecological monitoring. 
+
+**Abstract (ZH)**: 小型多目标跟踪（SMOT）在目标仅占用几十个像素时特别具有挑战性，使得检测和基于外观的关联不可靠。在MVA2023 SOD4SB挑战取得成功的基础上，本文提出SMOT4SB挑战，该挑战利用时间信息解决单帧检测的限制。本文的主要贡献包括：（1）SMOT4SB数据集，包含211个无人机视频序列和108,192个标注框，涵盖多种真实世界条件，旨在捕捉自由移动的相机和目标在三维空间中的运动纠缠；（2）SO-HOTA，一种结合Dot Distance和HOTA的新指标，减少基于IoU的指标对小位移的敏感性；（3）MVA2025挑战，共有78名参与者和308份提交，获胜方法对比基线实现了5.1倍的改进。本文为推进无人机场景下的小型多目标跟踪奠定了基础，并应用于鸟类撞击避免、农业、渔业和生态监测等领域。 
+
+---
+# Feature-Enhanced TResNet for Fine-Grained Food Image Classification 
+
+**Title (ZH)**: 特征增强的TResNet在细粒度食品图像分类中的应用 
+
+**Authors**: Lulu Liu, Zhiyong Xiao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12828)  
+
+**Abstract**: Food is not only a core component of humans' daily diets, but also an important carrier of cultural heritage and emotional bonds. With the development of technology, the need for accurate classification of food images has grown, which is crucial for a variety of application scenarios. However, existing Convolutional Neural Networks (CNNs) face significant challenges when dealing with fine-grained food images that are similar in shape but subtle in detail. To address this challenge, this study presents an innovative method for classifying food images, named Feature-Enhanced TResNet (FE-TResNet), specifically designed to address fine-grained food images and accurately capture subtle features within them. The FE-TResNet method is based on the TResNet model and integrates Style-based Recalibration Module (StyleRM) and Deep Channel-wise Attention (DCA) technologies to enhance feature extraction capabilities. In experimental validation on Chinese food image datasets ChineseFoodNet and CNFOOD-241, the FE-TResNet method significantly improved classification accuracy, achieving rates of 81.37% and 80.29%, respectively, demonstrating its effectiveness and superiority in fine-grained food image classification. 
+
+**Abstract (ZH)**: 食物不仅是人类日常饮食的核心组成部分，也是文化传承和情感纽带的重要载体。随着技术的发展，准确分类食物图像的需求日益增长，这对于多种应用场景至关重要。然而，现有卷积神经网络（CNNs）在处理形状相似但细节细微的食物图像时面临显著挑战。为应对这一挑战，本研究提出了一种名为特征增强TResNet（FE-TResNet）的创新方法，专门针对细粒度食物图像并准确捕捉其中的细微特征。FE-TResNet方法基于TResNet模型，并结合了风格基于校准模块（StyleRM）和深层通道注意力（DCA）技术，以增强特征提取能力。在对中国食物图像数据集ChineseFoodNet和CNFOOD-241的实验验证中，FE-TResNet方法显著提高了分类准确性，分别达到81.37%和80.29%，展示了其在细粒度食物图像分类中的有效性和优越性。 
+
+---
+# A Semi-Supervised Learning Method for the Identification of Bad Exposures in Large Imaging Surveys 
+
+**Title (ZH)**: 半监督学习方法在大型成像调查中识别不良曝光的应用 
+
+**Authors**: Yufeng Luo, Adam D. Myers, Alex Drlica-Wagner, Dario Dematties, Salma Borchani, Frank Valdes, Arjun Dey, David Schlegel, Rongpu Zhou, DESI Legacy Imaging Surveys Team  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12784)  
+
+**Abstract**: As the data volume of astronomical imaging surveys rapidly increases, traditional methods for image anomaly detection, such as visual inspection by human experts, are becoming impractical. We introduce a machine-learning-based approach to detect poor-quality exposures in large imaging surveys, with a focus on the DECam Legacy Survey (DECaLS) in regions of low extinction (i.e., $E(B-V)<0.04$). Our semi-supervised pipeline integrates a vision transformer (ViT), trained via self-supervised learning (SSL), with a k-Nearest Neighbor (kNN) classifier. We train and validate our pipeline using a small set of labeled exposures observed by surveys with the Dark Energy Camera (DECam). A clustering-space analysis of where our pipeline places images labeled in ``good'' and ``bad'' categories suggests that our approach can efficiently and accurately determine the quality of exposures. Applied to new imaging being reduced for DECaLS Data Release 11, our pipeline identifies 780 problematic exposures, which we subsequently verify through visual inspection. Being highly efficient and adaptable, our method offers a scalable solution for quality control in other large imaging surveys. 
+
+**Abstract (ZH)**: 随着天文成像调查的数据量迅速增加，传统的图像异常检测方法，如依靠人力专家视觉检查，变得不再实用。我们介绍了一种基于机器学习的方法，用于在低消光区域（即$E(B-V)<0.04$）的DECam遗产调查（DECaLS）中检测低质量曝光。我们的半监督管道将通过自我监督学习（SSL）训练的视觉变换器（ViT）与k-最近邻（kNN）分类器结合在一起。我们使用Dark Energy Camera（DECam）进行调查观测的小规模标记曝光集训练和验证我们的管道。通过将图像在“良好”和“不良”类别中分类的空间聚类分析表明，我们的方法能够高效准确地确定曝光质量。针对即将发布的DECaLS数据释放11的新成像数据，我们的管道识别了780个有问题的曝光，并通过视觉检查进行了验证。由于其高效性和可适应性，我们的方法为其他大型成像调查的质量控制提供了可扩展的解决方案。 
+
+---
+# Local Representative Token Guided Merging for Text-to-Image Generation 
+
+**Title (ZH)**: 文本引导的局部代表性词元导向合并生成文本到图像 
+
+**Authors**: Min-Jeong Lee, Hee-Dong Kim, Seong-Whan Lee  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12771)  
+
+**Abstract**: Stable diffusion is an outstanding image generation model for text-to-image, but its time-consuming generation process remains a challenge due to the quadratic complexity of attention operations. Recent token merging methods improve efficiency by reducing the number of tokens during attention operations, but often overlook the characteristics of attention-based image generation models, limiting their effectiveness. In this paper, we propose local representative token guided merging (ReToM), a novel token merging strategy applicable to any attention mechanism in image generation. To merge tokens based on various contextual information, ReToM defines local boundaries as windows within attention inputs and adjusts window sizes. Furthermore, we introduce a representative token, which represents the most representative token per window by computing similarity at a specific timestep and selecting the token with the highest average similarity. This approach preserves the most salient local features while minimizing computational overhead. Experimental results show that ReToM achieves a 6.2% improvement in FID and higher CLIP scores compared to the baseline, while maintaining comparable inference time. We empirically demonstrate that ReToM is effective in balancing visual quality and computational efficiency. 
+
+**Abstract (ZH)**: 基于局部代表性令牌引导合并的高效图像生成模型 
+
+---
+# Unified Medical Image Segmentation with State Space Modeling Snake 
+
+**Title (ZH)**: 统一医疗影像分割方法：状态空间建模蛇皮算法 
+
+**Authors**: Ruicheng Zhang, Haowei Guo, Kanghui Tian, Jun Zhou, Mingliang Yan, Zeyu Zhang, Shen Zhao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12760)  
+
+**Abstract**: Unified Medical Image Segmentation (UMIS) is critical for comprehensive anatomical assessment but faces challenges due to multi-scale structural heterogeneity. Conventional pixel-based approaches, lacking object-level anatomical insight and inter-organ relational modeling, struggle with morphological complexity and feature conflicts, limiting their efficacy in UMIS. We propose Mamba Snake, a novel deep snake framework enhanced by state space modeling for UMIS. Mamba Snake frames multi-contour evolution as a hierarchical state space atlas, effectively modeling macroscopic inter-organ topological relationships and microscopic contour refinements. We introduce a snake-specific vision state space module, the Mamba Evolution Block (MEB), which leverages effective spatiotemporal information aggregation for adaptive refinement of complex morphologies. Energy map shape priors further ensure robust long-range contour evolution in heterogeneous data. Additionally, a dual-classification synergy mechanism is incorporated to concurrently optimize detection and segmentation, mitigating under-segmentation of microstructures in UMIS. Extensive evaluations across five clinical datasets reveal Mamba Snake's superior performance, with an average Dice improvement of 3\% over state-of-the-art methods. 
+
+**Abstract (ZH)**: 统一医学图像分割（UMIS）对于全面的解剖评估至关重要，但面对多尺度结构异质性挑战。传统的基于像素的方法由于缺乏对象级别的解剖学洞察和器官间关系建模，难以应对形态复杂性和特征冲突，限制了其在UMIS中的效果。我们提出了一种名为Mamba Snake的新型深度蛇形框架，该框架通过状态空间建模增强，用于UMIS。Mamba Snake将多轮廓演化视为分层状态空间大洲图，有效建模宏观器官间拓扑关系和微观轮廓细化。我们引入了一种专用于蛇形的状态空间模块——Mamba 进化块（MEB），该模块利用有效的时空信息聚合实现复杂形态的自适应细化。能量图形状先验进一步确保在异质数据中稳健的长距离轮廓演化。此外，还集成了一种双分类协同机制，以同时优化检测和分割，减轻UMIS中微结构的分割不足。在五个临床数据集上的广泛评估显示，Mamba Snake在Dice分数上平均提高了3%，优于现有最佳方法。 
+
+---
+# FORTRESS: Function-composition Optimized Real-Time Resilient Structural Segmentation via Kolmogorov-Arnold Enhanced Spatial Attention Networks 
+
+**Title (ZH)**: FORTRESS: 基于柯莫哥洛夫-阿诺德增强空间注意力网络的函数组合优化实时鲁棒结构分割 
+
+**Authors**: Christina Thrainer, Md Meftahul Ferdaus, Mahdi Abdelguerfi, Christian Guetl, Steven Sloan, Kendall N. Niles, Ken Pathak  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12675)  
+
+**Abstract**: Automated structural defect segmentation in civil infrastructure faces a critical challenge: achieving high accuracy while maintaining computational efficiency for real-time deployment. This paper presents FORTRESS (Function-composition Optimized Real-Time Resilient Structural Segmentation), a new architecture that balances accuracy and speed by using a special method that combines depthwise separable convolutions with adaptive Kolmogorov-Arnold Network integration. FORTRESS incorporates three key innovations: a systematic depthwise separable convolution framework achieving a 3.6x parameter reduction per layer, adaptive TiKAN integration that selectively applies function composition transformations only when computationally beneficial, and multi-scale attention fusion combining spatial, channel, and KAN-enhanced features across decoder levels. The architecture achieves remarkable efficiency gains with 91% parameter reduction (31M to 2.9M), 91% computational complexity reduction (13.7 to 1.17 GFLOPs), and 3x inference speed improvement while delivering superior segmentation performance. Evaluation on benchmark infrastructure datasets demonstrates state-of-the-art results with an F1- score of 0.771 and a mean IoU of 0.677, significantly outperforming existing methods including U-Net, SA-UNet, and U- KAN. The dual optimization strategy proves essential for optimal performance, establishing FORTRESS as a robust solution for practical structural defect segmentation in resource-constrained environments where both accuracy and computational efficiency are paramount. Comprehensive architectural specifications are provided in the Supplemental Material. Source code is available at URL: this https URL. 
+
+**Abstract (ZH)**: 自动结构缺陷分割在土木基础设施中的实现面临一项关键挑战：在保持实时部署的同时实现高精度和计算效率。本文提出了一种新的架构FORTRESS（函数合成优化实时弹性结构分割），该架构通过结合深度可分离卷积与自适应柯尔莫戈洛夫-阿诺德网络集成的特殊方法来平衡精度与速度。FORTRESS包含了三个关键创新：一种系统性的深度可分离卷积框架，每层参数减少了3.6倍，自适应TiKAN集成仅在计算上有益时选择性地应用函数合成变换，以及多尺度注意力融合，结合解码器级别的空间、通道和KAN增强特征。该架构实现了显著的效率提升，参数减少了91%（从31M降至2.9M），计算复杂度减少了91%（从13.7降至1.17 GFLOPs），推理速度提高了3倍，同时提供了卓越的分割性能。基准土木基础设施数据集上的评估显示，FORTRESS在F1分数为0.771和平均IoU为0.677的情况下达到领先效果，显著优于包括U-Net、SA-UNet和U-KAN在内的现有方法。双优化策略对于最佳性能至关重要，确立了FORTRESS在资源受限环境中同时追求准确性和计算效率的稳健解决方案。在补充材料中提供了全面的架构规范。源代码可在URL: this https URL获取。 
+
+---
+# MS-DGCNN++: A Multi-Scale Fusion Dynamic Graph Neural Network with Biological Knowledge Integration for LiDAR Tree Species Classification 
+
+**Title (ZH)**: MS-DGCNN++: 结合生物知识的多尺度融合动态图神经网络在LiDAR树木物种分类中的应用 
+
+**Authors**: Said Ohamouddou, Abdellatif El Afia, Hanaa El Afia, Raddouane Chiheb  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.12602)  
+
+**Abstract**: Tree species classification from terrestrial LiDAR point clouds is challenging because of the complex multi-scale geometric structures in forest environments. Existing approaches using multi-scale dynamic graph convolutional neural networks (MS-DGCNN) employ parallel multi-scale processing, which fails to capture the semantic relationships between the hierarchical levels of the tree architecture. We present MS-DGCNN++, a hierarchical multiscale fusion dynamic graph convolutional network that uses semantically meaningful feature extraction at local, branch, and canopy scales with cross-scale information propagation. Our method employs scale-specific feature engineering, including standard geometric features for the local scale, normalized relative vectors for the branch scale, and distance information for the canopy scale. This hierarchical approach replaces uniform parallel processing with semantically differentiated representations that are aligned with the natural tree structure. Under the same proposed tree species data augmentation strategy for all experiments, MS-DGCNN++ achieved an accuracy of 94.96 \% on STPCTLS, outperforming DGCNN, MS-DGCNN, and the state-of-the-art model PPT. On FOR-species20K, it achieves 67.25\% accuracy (6.1\% improvement compared to MS-DGCNN). For standard 3D object recognition, our method outperformed DGCNN and MS-DGCNN with overall accuracies of 93.15\% on ModelNet40 and 94.05\% on ModelNet10. With lower parameters and reduced complexity compared to state-of-the-art transformer approaches, our method is suitable for resource-constrained applications while maintaining a competitive accuracy. Beyond tree classification, the method generalizes to standard 3D object recognition, establishing it as a versatile solution for diverse point cloud processing applications. The implementation code is publicly available at this https URL. 
+
+**Abstract (ZH)**: 基于 terrestrial LiDAR 点云的树种分类因森林环境中的复杂多尺度几何结构而具挑战性。现有的使用多尺度动态图卷积神经网络（MS-DGCNN）的方法采用平行多尺度处理，无法捕获树架构层级间的语义关系。我们提出 MS-DGCNN++，一种层次化的多尺度融合动态图卷积网络，能够在局部、枝条和冠层尺度上提取语义上相关的特征，并进行跨尺度信息传播。该方法采用特定尺度的特征工程，包括局部尺度的标准几何特征、枝条尺度的归一化相对向量以及冠层尺度的距离信息。这种层次化方法用语义上差别的表示替代了均匀的并行处理，与自然树结构保持一致。在相同的树种数据增强策略下，MS-DGCNN++ 在 STPCTLS 上实现了 94.96% 的准确率，优于 DGCNN、MS-DGCNN 和最先进的模型 PPT。在 FOR-species20K 上，其准确率为 67.25%（相较于 MS-DGCNN 提高了 6.1%）。对于标准的 3D 对象识别，我们的方法在 ModelNet40 上的整体准确率为 93.15%，在 ModelNet10 上为 94.05%，均优于 DGCNN 和 MS-DGCNN。相比于最先进的变换器方法，我们的方法在资源受限的应用中具有较低的参数量和较低的复杂度，同时保持了较高的准确率。除了树种分类之外，该方法还适用于标准的 3D 对象识别，使其成为处理点云应用的通用解决方案。完整的实现代码可在以下链接获取。 
+
+---
