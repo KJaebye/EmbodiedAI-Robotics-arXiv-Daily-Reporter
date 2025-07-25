@@ -1,0 +1,274 @@
+# Experimental Comparison of Whole-Body Control Formulations for Humanoid Robots in Task Acceleration and Task Force Spaces 
+
+**Title (ZH)**: 全人体控制公式在任务加速空间和任务力空间中的实验比较 
+
+**Authors**: Sait Sovukluk, Grazia Zambella, Tobias Egle, Christian Ott  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18502)  
+
+**Abstract**: This paper studies the experimental comparison of two different whole-body control formulations for humanoid robots: inverse dynamics whole-body control (ID-WBC) and passivity-based whole-body control (PB-WBC). The two controllers fundamentally differ from each other as the first is formulated in task acceleration space and the latter is in task force space with passivity considerations. Even though both control methods predict stability under ideal conditions in closed-loop dynamics, their robustness against joint friction, sensor noise, unmodeled external disturbances, and non-perfect contact conditions is not evident. Therefore, we analyze and experimentally compare the two controllers on a humanoid robot platform through swing foot position and orientation control, squatting with and without unmodeled additional weights, and jumping. We also relate the observed performance and characteristic differences with the controller formulations and highlight each controller's advantages and disadvantages. 
+
+**Abstract (ZH)**: 本文研究了两种不同类型的整体身体控制算法在类人机器人上的实验比较：逆动力学整体身体控制（ID-WBC）和基于耗散性的整体身体控制（PB-WBC）。两种控制器的基础差异在于前者在任务加速度空间中进行建模，而后者在任务力空间中进行建模并考虑了耗散性。尽管这两种控制方法在闭环动力学条件下都能预测稳定性，但它们在关节摩擦、传感器噪声、未建模的外部干扰以及非理想的接触条件下的鲁棒性并不明显。因此，我们通过摆动脚的位置和方向控制、带和不带未建模附加重量的下蹲，以及跳跃实验，在类人机器人平台上分析并比较了这两种控制器。同时，我们将观察到的性能和特征差异与控制器形式进行关联，并强调每种控制器的优点和缺点。 
+
+---
+# A Novel Monte-Carlo Compressed Sensing and Dictionary Learning Method for the Efficient Path Planning of Remote Sensing Robots 
+
+**Title (ZH)**: 一种用于遥感机器人高效路径规划的新型蒙特卡洛压缩感知与字典学习方法 
+
+**Authors**: Alghalya Al-Hajri, Ejmen Al-Ubejdij, Aiman Erbad, Ali Safa  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18462)  
+
+**Abstract**: In recent years, Compressed Sensing (CS) has gained significant interest as a technique for acquiring high-resolution sensory data using fewer measurements than traditional Nyquist sampling requires. At the same time, autonomous robotic platforms such as drones and rovers have become increasingly popular tools for remote sensing and environmental monitoring tasks, including measurements of temperature, humidity, and air quality. Within this context, this paper presents, to the best of our knowledge, the first investigation into how the structure of CS measurement matrices can be exploited to design optimized sampling trajectories for robotic environmental data collection. We propose a novel Monte Carlo optimization framework that generates measurement matrices designed to minimize both the robot's traversal path length and the signal reconstruction error within the CS framework. Central to our approach is the application of Dictionary Learning (DL) to obtain a data-driven sparsifying transform, which enhances reconstruction accuracy while further reducing the number of samples that the robot needs to collect. We demonstrate the effectiveness of our method through experiments reconstructing $NO_2$ pollution maps over the Gulf region. The results indicate that our approach can reduce robot travel distance to less than $10\%$ of a full-coverage path, while improving reconstruction accuracy by over a factor of five compared to traditional CS methods based on DCT and polynomial dictionaries, as well as by a factor of two compared to previously-proposed Informative Path Planning (IPP) methods. 
+
+**Abstract (ZH)**: 近年来，压缩感知（CS）作为一种能够在少于传统奈奎斯特采样所需测量次数的情况下获取高分辨率传感器数据的技术，逐渐引起了广泛关注。与此同时，无人机和探测车等自主机器人平台因其在遥感和环境监测任务中的广泛应用（包括温度、湿度和空气质量的测量）而越来越流行。在此背景下，本文据我们所知，首次探讨了如何利用CS测量矩阵的结构来设计优化的机器人环境数据采集采样轨迹。我们提出了一种新颖的蒙特卡洛优化框架，用于生成既能最小化机器人行进路径长度又能最小化信号重构误差的测量矩阵。该方法的核心在于应用字典学习（DL）以获取数据驱动的稀疏化变换，从而提高重构准确性并进一步减少机器人需要采集的样本数量。通过在海湾地区重建$NO_2$污染图的实验，我们展示了该方法的有效性。结果表明，与基于DCT和多项式字典的传统CS方法相比，我们的方法可以将机器人行驶距离减少至全覆盖路径的不到10%，同时将重构准确性提高超过五倍，与先前提出的冗余路径规划（IPP）方法相比，重构准确性提高了一倍。 
+
+---
+# Evaluating the Pre-Dressing Step: Unfolding Medical Garments Via Imitation Learning 
+
+**Title (ZH)**: 评估预穿衣步骤：通过类比学习展开医疗garments 
+
+**Authors**: David Blanco-Mulero, Júlia Borràs, Carme Torras  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18436)  
+
+**Abstract**: Robotic-assisted dressing has the potential to significantly aid both patients as well as healthcare personnel, reducing the workload and improving the efficiency in clinical settings. While substantial progress has been made in robotic dressing assistance, prior works typically assume that garments are already unfolded and ready for use. However, in medical applications gowns and aprons are often stored in a folded configuration, requiring an additional unfolding step. In this paper, we introduce the pre-dressing step, the process of unfolding garments prior to assisted dressing. We leverage imitation learning for learning three manipulation primitives, including both high and low acceleration motions. In addition, we employ a visual classifier to categorise the garment state as closed, partly opened, and fully opened. We conduct an empirical evaluation of the learned manipulation primitives as well as their combinations. Our results show that highly dynamic motions are not effective for unfolding freshly unpacked garments, where the combination of motions can efficiently enhance the opening configuration. 
+
+**Abstract (ZH)**: 机器人辅助穿衣有潜力显著帮助患者和医疗人员，减少工作量并提高临床环境中的效率。虽然在机器人穿衣辅助方面取得了显著进展，但以往的研究通常假设衣物已经打开并准备好使用。然而，在医疗应用中，连衣袍和围裙 often 存储在折叠配置中，需要额外进行展开步骤。在本文中，我们引入了穿衣前的预处理步骤，即在辅助穿衣前展开衣物的过程。我们利用模仿学习学习三种操作基本单元，包括高加速和低加速运动。此外，我们采用视觉分类器将衣物状态分类为关闭、部分打开和完全打开。我们对学习的操作基本单元及其组合进行了实证评估。结果显示，对于刚取出的衣物，高度动态的运动并不有效，而运动的组合能有效地提升衣物的展开配置。 
+
+---
+# Residual Koopman Model Predictive Control for Enhanced Vehicle Dynamics with Small On-Track Data Input 
+
+**Title (ZH)**: 残差Koopman模型预测控制以增强车辆动力学性能的输入少量赛道数据方法 
+
+**Authors**: Yonghao Fu, Cheng Hu, Haokun Xiong, Zhangpeng Bao, Wenyuan Du, Edoardo Ghignone, Michele Magno, Lei Xie, Hongye Su  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18396)  
+
+**Abstract**: In vehicle trajectory tracking tasks, the simplest approach is the Pure Pursuit (PP) Control. However, this single-point preview tracking strategy fails to consider vehicle model constraints, compromising driving safety. Model Predictive Control (MPC) as a widely adopted control method, optimizes control actions by incorporating mechanistic models and physical constraints. While its control performance critically depends on the accuracy of vehicle modeling. Traditional vehicle modeling approaches face inherent trade-offs between capturing nonlinear dynamics and maintaining computational efficiency, often resulting in reduced control performance. To address these challenges, this paper proposes Residual Koopman Model Predictive Control (RKMPC) framework. This method uses two linear MPC architecture to calculate control inputs: a Linear Model Predictive Control (LMPC) computes the baseline control input based on the vehicle kinematic model, and a neural network-based RKMPC calculates the compensation input. The final control command is obtained by adding these two components. This design preserves the reliability and interpretability of traditional mechanistic model while achieving performance optimization through residual modeling. This method has been validated on the Carsim-Matlab joint simulation platform and a physical 1:10 scale F1TENTH racing car. Experimental results show that RKMPC requires only 20% of the training data needed by traditional Koopman Model Predictive Control (KMPC) while delivering superior tracking performance. Compared to traditional LMPC, RKMPC reduces lateral error by 11.7%-22.1%, decreases heading error by 8.9%-15.8%, and improves front-wheel steering stability by up to 27.6%. The implementation code is available at: this https URL Koopman. 
+
+**Abstract (ZH)**: 基于残差科寇曼模型预测控制的车辆轨迹跟踪方法 
+
+---
+# G2S-ICP SLAM: Geometry-aware Gaussian Splatting ICP SLAM 
+
+**Title (ZH)**: G2S-ICP SLAM：几何aware的高斯点云ICP SLAM 
+
+**Authors**: Gyuhyeon Pak, Hae Min Cho, Euntai Kim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18344)  
+
+**Abstract**: In this paper, we present a novel geometry-aware RGB-D Gaussian Splatting SLAM system, named G2S-ICP SLAM. The proposed method performs high-fidelity 3D reconstruction and robust camera pose tracking in real-time by representing each scene element using a Gaussian distribution constrained to the local tangent plane. This effectively models the local surface as a 2D Gaussian disk aligned with the underlying geometry, leading to more consistent depth interpretation across multiple viewpoints compared to conventional 3D ellipsoid-based representations with isotropic uncertainty. To integrate this representation into the SLAM pipeline, we embed the surface-aligned Gaussian disks into a Generalized ICP framework by introducing anisotropic covariance prior without altering the underlying registration formulation. Furthermore we propose a geometry-aware loss that supervises photometric, depth, and normal consistency. Our system achieves real-time operation while preserving both visual and geometric fidelity. Extensive experiments on the Replica and TUM-RGBD datasets demonstrate that G2S-ICP SLAM outperforms prior SLAM systems in terms of localization accuracy, reconstruction completeness, while maintaining the rendering quality. 
+
+**Abstract (ZH)**: 基于几何感知的RGB-D高斯点云SLAM系统：G2S-ICP SLAM 
+
+---
+# AF-RLIO: Adaptive Fusion of Radar-LiDAR-Inertial Information for Robust Odometry in Challenging Environments 
+
+**Title (ZH)**: 雷达-激光雷达-惯性信息自适应融合以在具有挑战性的环境中实现稳健定位 
+
+**Authors**: Chenglong Qian, Yang Xu, Xiufang Shi, Jiming Chen, Liang Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18317)  
+
+**Abstract**: In robotic navigation, maintaining precise pose estimation and navigation in complex and dynamic environments is crucial. However, environmental challenges such as smoke, tunnels, and adverse weather can significantly degrade the performance of single-sensor systems like LiDAR or GPS, compromising the overall stability and safety of autonomous robots. To address these challenges, we propose AF-RLIO: an adaptive fusion approach that integrates 4D millimeter-wave radar, LiDAR, inertial measurement unit (IMU), and GPS to leverage the complementary strengths of these sensors for robust odometry estimation in complex environments. Our method consists of three key modules. Firstly, the pre-processing module utilizes radar data to assist LiDAR in removing dynamic points and determining when environmental conditions are degraded for LiDAR. Secondly, the dynamic-aware multimodal odometry selects appropriate point cloud data for scan-to-map matching and tightly couples it with the IMU using the Iterative Error State Kalman Filter. Lastly, the factor graph optimization module balances weights between odometry and GPS data, constructing a pose graph for optimization. The proposed approach has been evaluated on datasets and tested in real-world robotic environments, demonstrating its effectiveness and advantages over existing methods in challenging conditions such as smoke and tunnels. 
+
+**Abstract (ZH)**: 机器人导航中，在复杂动态环境中保持精确的姿态估计和导航至关重要。然而，烟雾、隧道和恶劣天气等环境挑战会显著降低如激光雷达或GPS等单传感器系统的表现，从而影响自主机器人的整体稳定性和安全性。为应对这些挑战，我们提出AF-RLIO：一种自适应融合方法，将4D毫米波雷达、激光雷达、惯性测量单位（IMU）和GPS集成起来，利用这些传感器的互补优势，在复杂环境中实现稳健的里程计估计。该方法包括三个关键模块：首先，预处理模块利用雷达数据辅助激光雷达去除动态点，并判断环境条件是否恶化；其次，动态感知多模态里程计选择适当的点云数据进行扫描到地图匹配，并通过迭代误差状态卡尔曼滤波器与IMU紧密耦合；最后，因子图优化模块在里程计和GPS数据之间平衡权重，构建姿态图进行优化。所提出的方法已在数据集上进行了评估并在真实的机器人环境中进行了测试，展示了其在烟雾和隧道等挑战条件下相较于现有方法的有效性和优势。 
+
+---
+# Adaptive Articulated Object Manipulation On The Fly with Foundation Model Reasoning and Part Grounding 
+
+**Title (ZH)**: 基于基础模型推理与部分锚定的适应性刚体物体即时操作 
+
+**Authors**: Xiaojie Zhang, Yuanfei Wang, Ruihai Wu, Kunqi Xu, Yu Li, Liuyu Xiang, Hao Dong, Zhaofeng He  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18276)  
+
+**Abstract**: Articulated objects pose diverse manipulation challenges for robots. Since their internal structures are not directly observable, robots must adaptively explore and refine actions to generate successful manipulation trajectories. While existing works have attempted cross-category generalization in adaptive articulated object manipulation, two major challenges persist: (1) the geometric diversity of real-world articulated objects complicates visual perception and understanding, and (2) variations in object functions and mechanisms hinder the development of a unified adaptive manipulation strategy. To address these challenges, we propose AdaRPG, a novel framework that leverages foundation models to extract object parts, which exhibit greater local geometric similarity than entire objects, thereby enhancing visual affordance generalization for functional primitive skills. To support this, we construct a part-level affordance annotation dataset to train the affordance model. Additionally, AdaRPG utilizes the common knowledge embedded in foundation models to reason about complex mechanisms and generate high-level control codes that invoke primitive skill functions based on part affordance inference. Simulation and real-world experiments demonstrate AdaRPG's strong generalization ability across novel articulated object categories. 
+
+**Abstract (ZH)**: articulated物体的操控对机器人提出了多样化的挑战。由于它们的内部结构不可直接观察，机器人必须适应性地探索和优化动作以生成成功的操控轨迹。尽管现有工作在适应性操控articulated物体方面尝试了跨类别泛化，但仍存在两大挑战：(1) 现实世界中articulated物体的几何多样性使视觉感知和理解复杂化；(2) 对象功能和机制的变化阻碍了统一适应性操控策略的发展。为应对这些挑战，我们提出了AdaRPG，一种利用基础模型来提取表现出更高局部几何相似性的对象部件的新框架，从而增强功能基础技能的视觉可利用性泛化。为此，我们构建了一个部件级可利用性标注数据集来训练可利用性模型。此外，AdaRPG利用基础模型中嵌入的通用知识来推理复杂机制并生成基于部件可利用性推断的高阶控制代码，以调用基础技能功能。模拟和真实世界实验展示了AdaRPG在新颖articulated物体类别中的强大泛化能力。 
+
+---
+# ReSem3D: Refinable 3D Spatial Constraints via Fine-Grained Semantic Grounding for Generalizable Robotic Manipulation 
+
+**Title (ZH)**: ReSem3D: 通过细粒度语义定位可泛化的机器人 manipulation 中可调节的 3D 空间约束 
+
+**Authors**: Chenyu Su, Weiwei Shang, Chen Qian, Fei Zhang, Shuang Cong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18262)  
+
+**Abstract**: Semantics-driven 3D spatial constraints align highlevel semantic representations with low-level action spaces, facilitating the unification of task understanding and execution in robotic manipulation. The synergistic reasoning of Multimodal Large Language Models (MLLMs) and Vision Foundation Models (VFMs) enables cross-modal 3D spatial constraint construction. Nevertheless, existing methods have three key limitations: (1) coarse semantic granularity in constraint modeling, (2) lack of real-time closed-loop planning, (3) compromised robustness in semantically diverse environments. To address these challenges, we propose ReSem3D, a unified manipulation framework for semantically diverse environments, leveraging the synergy between VFMs and MLLMs to achieve fine-grained visual grounding and dynamically constructs hierarchical 3D spatial constraints for real-time manipulation. Specifically, the framework is driven by hierarchical recursive reasoning in MLLMs, which interact with VFMs to automatically construct 3D spatial constraints from natural language instructions and RGB-D observations in two stages: part-level extraction and region-level refinement. Subsequently, these constraints are encoded as real-time optimization objectives in joint space, enabling reactive behavior to dynamic disturbances. Extensive simulation and real-world experiments are conducted in semantically rich household and sparse chemical lab environments. The results demonstrate that ReSem3D performs diverse manipulation tasks under zero-shot conditions, exhibiting strong adaptability and generalization. Code and videos at this https URL. 
+
+**Abstract (ZH)**: 基于语义的3D空间约束驱动机器人操作任务的理解与执行统一，通过多模态大规模语言模型和视觉基础模型的协同推理实现跨模态3D空间约束构建。现有方法存在三个关键限制：（1）约束建模中的粗粒度语义粒度，（2）缺乏实时闭环规划，（3）在语义多变环境中表现的鲁棒性降低。为应对这些挑战，我们提出ReSem3D，一种利用视觉基础模型和多模态大规模语言模型协同作用，实现细粒度视觉定位与动态构建层次化3D空间约束的统一操作框架，从而支持实时操作。具体而言，框架通过多模态大规模语言模型中的层次递归推理驱动，并与视觉基础模型交互，自动从自然语言指令和RGB-D观察中分两个阶段提取部分级信息并精细调整区域级信息，进而构建3D空间约束，并将其编码为关节空间中的实时优化目标，以实现对动态干扰的反应行为。我们在语义丰富的人居环境和稀疏的化学实验室环境中进行了广泛的仿真与实际实验。结果表明，ReSem3D在零样本条件下能够执行多样化的操作任务，展现出强烈的适应性和泛化能力。代码和视频见此链接。 
+
+---
+# Evaluation of facial landmark localization performance in a surgical setting 
+
+**Title (ZH)**: 手术环境下面部特征点定位性能评估 
+
+**Authors**: Ines Frajtag, Marko Švaco, Filip Šuligoj  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18248)  
+
+**Abstract**: The use of robotics, computer vision, and their applications is becoming increasingly widespread in various fields, including medicine. Many face detection algorithms have found applications in neurosurgery, ophthalmology, and plastic surgery. A common challenge in using these algorithms is variable lighting conditions and the flexibility of detection positions to identify and precisely localize patients. The proposed experiment tests the MediaPipe algorithm for detecting facial landmarks in a controlled setting, using a robotic arm that automatically adjusts positions while the surgical light and the phantom remain in a fixed position. The results of this study demonstrate that the improved accuracy of facial landmark detection under surgical lighting significantly enhances the detection performance at larger yaw and pitch angles. The increase in standard deviation/dispersion occurs due to imprecise detection of selected facial landmarks. This analysis allows for a discussion on the potential integration of the MediaPipe algorithm into medical procedures. 
+
+**Abstract (ZH)**: 机器人、计算机视觉及其在各领域的应用，包括医学领域日益普及。许多面部检测算法在神经外科、眼科和整形外科中得到了應用。使用这些算法时的一个常见挑战是在不同光照条件下和检测位置的灵活性，以识别和精确定位患者。本实验旨在在受控环境中测试MediaPipe算法在面部特征点检测中的性能，利用机械臂自动调整位置，同时保持手术灯光和phantom（模拟人体器官的模型）固定。研究结果表明，手术照明下面部特征点检测精度的提升，显著改善了在较大偏航和俯仰角度下的检测性能。标准偏差/分散度的增加是由于选定面部特征点检测不够精确。这一分析为进一步探讨将MediaPipe算法集成到医疗程序中提供可能。 
+
+---
+# MoRPI-PINN: A Physics-Informed Framework for Mobile Robot Pure Inertial Navigation 
+
+**Title (ZH)**: MoRPI-PINN：一种移动机器人纯惯性导航的物理inform物理网络框架 
+
+**Authors**: Arup Kumar Sahoo, Itzik Klein  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18206)  
+
+**Abstract**: A fundamental requirement for full autonomy in mobile robots is accurate navigation even in situations where satellite navigation or cameras are unavailable. In such practical situations, relying only on inertial sensors will result in navigation solution drift due to the sensors' inherent noise and error terms. One of the emerging solutions to mitigate drift is to maneuver the robot in a snake-like slithering motion to increase the inertial signal-to-noise ratio, allowing the regression of the mobile robot position. In this work, we propose MoRPI-PINN as a physics-informed neural network framework for accurate inertial-based mobile robot navigation. By embedding physical laws and constraints into the training process, MoRPI-PINN is capable of providing an accurate and robust navigation solution. Using real-world experiments, we show accuracy improvements of over 85% compared to other approaches. MoRPI-PINN is a lightweight approach that can be implemented even on edge devices and used in any typical mobile robot application. 
+
+**Abstract (ZH)**: 全自主移动机器人中准确导航的基本要求是在卫星导航或摄像头不可用的情况下仍能实现精确导航。在这种实际情况下，仅依赖惯性传感器会导致由于传感器固有的噪声和误差而导致的导航解算漂移。减轻漂移的一种新兴解决方案是让机器人以蛇形滑行运动的姿态进行机动，以增加惯性信号噪声比，从而允许推算移动机器人的位置。在本工作中，我们提出了一种基于物理信息的神经网络框架MoRPI-PINN，用于精确的惯性导航。通过将物理规律和约束嵌入训练过程中，MoRPI-PINN能够提供准确且稳健的导航解算。通过实际实验，我们展示了与其它方法相比超过85%的精度改进。MoRPI-PINN是一种轻量级的方法，即使在边缘设备上也可以实现，并适用于任何典型的移动机器人应用。 
+
+---
+# Autonomous UAV Navigation for Search and Rescue Missions Using Computer Vision and Convolutional Neural Networks 
+
+**Title (ZH)**: 使用计算机视觉和卷积神经网络的自主无人机搜救导航 
+
+**Authors**: Luka Šiktar, Branimir Ćaran, Bojan Šekoranja, Marko Švaco  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18160)  
+
+**Abstract**: In this paper, we present a subsystem, using Unmanned Aerial Vehicles (UAV), for search and rescue missions, focusing on people detection, face recognition and tracking of identified individuals. The proposed solution integrates a UAV with ROS2 framework, that utilizes multiple convolutional neural networks (CNN) for search missions. System identification and PD controller deployment are performed for autonomous UAV navigation. The ROS2 environment utilizes the YOLOv11 and YOLOv11-pose CNNs for tracking purposes, and the dlib library CNN for face recognition. The system detects a specific individual, performs face recognition and starts tracking. If the individual is not yet known, the UAV operator can manually locate the person, save their facial image and immediately initiate the tracking process. The tracking process relies on specific keypoints identified on the human body using the YOLOv11-pose CNN model. These keypoints are used to track a specific individual and maintain a safe distance. To enhance accurate tracking, system identification is performed, based on measurement data from the UAVs IMU. The identified system parameters are used to design PD controllers that utilize YOLOv11-pose to estimate the distance between the UAVs camera and the identified individual. The initial experiments, conducted on 14 known individuals, demonstrated that the proposed subsystem can be successfully used in real time. The next step involves implementing the system on a large experimental UAV for field use and integrating autonomous navigation with GPS-guided control for rescue operations planning. 
+
+**Abstract (ZH)**: 基于无人机的搜索与救援子系统：人员检测、人脸识别与跟踪技术研发 
+
+---
+# A Modular Residual Learning Framework to Enhance Model-Based Approach for Robust Locomotion 
+
+**Title (ZH)**: 一种模块化残差学习框架以增强基于模型的方法以实现稳健的运动控制 
+
+**Authors**: Min-Gyu Kim, Dongyun Kang, Hajun Kim, Hae-Won Park  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18138)  
+
+**Abstract**: This paper presents a novel approach that combines the advantages of both model-based and learning-based frameworks to achieve robust locomotion. The residual modules are integrated with each corresponding part of the model-based framework, a footstep planner and dynamic model designed using heuristics, to complement performance degradation caused by a model mismatch. By utilizing a modular structure and selecting the appropriate learning-based method for each residual module, our framework demonstrates improved control performance in environments with high uncertainty, while also achieving higher learning efficiency compared to baseline methods. Moreover, we observed that our proposed methodology not only enhances control performance but also provides additional benefits, such as making nominal controllers more robust to parameter tuning. To investigate the feasibility of our framework, we demonstrated residual modules combined with model predictive control in a real quadrupedal robot. Despite uncertainties beyond the simulation, the robot successfully maintains balance and tracks the commanded velocity. 
+
+**Abstract (ZH)**: 本文提出了一种结合模型导向和学习导向框架优势的新方法，以实现稳健的运动控制。通过将残差模块与模型导向框架中的足步规划器和基于启发式的动态模型相结合，弥补由模型不匹配引起的表现退化。利用模块化结构并为每个残差模块选择合适的基于学习的方法，我们的框架在高不确定性环境中的控制性能得到提高，并且与基准方法相比具有更高的学习效率。此外，我们发现所提出的方法不仅提高了控制性能，还提供了额外的好处，如使名义控制器更 robust 至参数调整。为了验证框架的可行性，我们在实际四足机器人上展示了结合模型预测控制的残差模块。尽管存在模拟之外的不确定性，机器人仍能保持平衡并跟踪命令的速度。 
+
+---
+# Modular Robot and Landmark Localisation Using Relative Bearing Measurements 
+
+**Title (ZH)**: 模块化机器人和基于相对方位测量的目标定位 
+
+**Authors**: Behzad Zamani, Jochen Trumpf, Chris Manzie  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18070)  
+
+**Abstract**: In this paper we propose a modular nonlinear least squares filtering approach for systems composed of independent subsystems. The state and error covariance estimate of each subsystem is updated independently, even when a relative measurement simultaneously depends on the states of multiple subsystems. We integrate the Covariance Intersection (CI) algorithm as part of our solution in order to prevent double counting of information when subsystems share estimates with each other. An alternative derivation of the CI algorithm based on least squares estimation makes this integration possible. We particularise the proposed approach to the robot-landmark localization problem. In this problem, noisy measurements of the bearing angle to a stationary landmark position measured relative to the SE(2) pose of a moving robot couple the estimation problems for the robot pose and the landmark position. In a randomized simulation study, we benchmark the proposed modular method against a monolithic joint state filter to elucidate their respective trade-offs. In this study we also include variants of the proposed method that achieve a graceful degradation of performance with reduced communication and bandwidth requirements. 
+
+**Abstract (ZH)**: 模块化非线性最小二乘滤波方法及其在独立子系统组合系统中的应用：基于协方差融合的机器人地标定位问题及其性能评估 
+
+---
+# OpenNav: Open-World Navigation with Multimodal Large Language Models 
+
+**Title (ZH)**: 开放示教：基于多模态大规模语言模型的开放世界导航 
+
+**Authors**: Mingfeng Yuan, Letian Wang, Steven L. Waslander  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18033)  
+
+**Abstract**: Pre-trained large language models (LLMs) have demonstrated strong common-sense reasoning abilities, making them promising for robotic navigation and planning tasks. However, despite recent progress, bridging the gap between language descriptions and actual robot actions in the open-world, beyond merely invoking limited predefined motion primitives, remains an open challenge. In this work, we aim to enable robots to interpret and decompose complex language instructions, ultimately synthesizing a sequence of trajectory points to complete diverse navigation tasks given open-set instructions and open-set objects. We observe that multi-modal large language models (MLLMs) exhibit strong cross-modal understanding when processing free-form language instructions, demonstrating robust scene comprehension. More importantly, leveraging their code-generation capability, MLLMs can interact with vision-language perception models to generate compositional 2D bird-eye-view value maps, effectively integrating semantic knowledge from MLLMs with spatial information from maps to reinforce the robot's spatial understanding. To further validate our approach, we effectively leverage large-scale autonomous vehicle datasets (AVDs) to validate our proposed zero-shot vision-language navigation framework in outdoor navigation tasks, demonstrating its capability to execute a diverse range of free-form natural language navigation instructions while maintaining robustness against object detection errors and linguistic ambiguities. Furthermore, we validate our system on a Husky robot in both indoor and outdoor scenes, demonstrating its real-world robustness and applicability. Supplementary videos are available at this https URL 
+
+**Abstract (ZH)**: 预训练大型语言模型（LLMs）展示了强大的常识推理能力，使其在机器人导航和规划任务中具有潜力。然而，尽管取得了近期进展，如何在开放世界中弥合语言描述与实际机器人动作之间的差距，超越调用有限预定义的运动primitive，仍是一个开放的挑战。本工作中，我们旨在使机器人能够解析和分解复杂的语言指令，最终生成一系列轨迹点以完成具有开放集合指令和对象的多样化导航任务。我们观察到，多模态大型语言模型（MLLMs）在处理自由形式语言指令时表现出强烈的跨模态理解能力，展示了稳健的场景理解。更重要的是，利用它们的代码生成能力，MLLMs可以与视觉-语言感知模型交互以生成构成性的2D鸟瞰图价值图，有效地将MLLMs中的语义知识与地图中的空间信息整合，增强机器人的空间理解。为了进一步验证我们的方法，我们利用大规模自主车辆数据集（AVDs）在室外导航任务中验证了我们提出的零样本视觉-语言导航框架，展示了其执行多样化自然语言导航指令的能力，同时保持对物体检测错误和语言歧义的鲁棒性。此外，我们还在Husky机器人以及室内外场景中验证了我们的系统，展示了其实用性和鲁棒性。补充视频可在以下链接获取：这个 https URL 
+
+---
+# A Step-by-step Guide on Nonlinear Model Predictive Control for Safe Mobile Robot Navigation 
+
+**Title (ZH)**: 非线性模型预测控制的逐步指南：安全移动机器人导航 
+
+**Authors**: Dennis Benders, Laura Ferranti, Johannes Köhler  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.17856)  
+
+**Abstract**: Designing a Model Predictive Control (MPC) scheme that enables a mobile robot to safely navigate through an obstacle-filled environment is a complicated yet essential task in robotics. In this technical report, safety refers to ensuring that the robot respects state and input constraints while avoiding collisions with obstacles despite the presence of disturbances and measurement noise. This report offers a step-by-step approach to implementing Nonlinear Model Predictive Control (NMPC) schemes addressing these safety requirements. Numerous books and survey papers provide comprehensive overviews of linear MPC (LMPC) \cite{bemporad2007robust,kouvaritakis2016model}, NMPC \cite{rawlings2017model,allgower2004nonlinear,mayne2014model,grune2017nonlinear,saltik2018outlook}, and their applications in various domains, including robotics \cite{nascimento2018nonholonomic,nguyen2021model,shi2021advanced,wei2022mpc}. This report does not aim to replicate those exhaustive reviews. Instead, it focuses specifically on NMPC as a foundation for safe mobile robot navigation. The goal is to provide a practical and accessible path from theoretical concepts to mathematical proofs and implementation, emphasizing safety and performance guarantees. It is intended for researchers, robotics engineers, and practitioners seeking to bridge the gap between theoretical NMPC formulations and real-world robotic applications.
+This report is not necessarily meant to remain fixed over time. If someone finds an error in the presented theory, please reach out via the given email addresses. We are happy to update the document if necessary. 
+
+**Abstract (ZH)**: 设计一种非线性模型预测控制（NMPC）方案，使移动机器人能够安全地导航通过充满障碍物的环境是一项复杂但至关重要的任务。本技术报告中的安全性是指确保机器人在受到干扰和测量噪声影响的情况下，遵守状态和输入约束并避免与障碍物发生碰撞。本报告提供了实现非线性模型预测控制（NMPC）方案的逐步方法，以满足这些安全要求。 
+
+---
+# PinchBot: Long-Horizon Deformable Manipulation with Guided Diffusion Policy 
+
+**Title (ZH)**: PinchBot: 带引导扩散策略的长时变形操作 
+
+**Authors**: Alison Bartsch, Arvind Car, Amir Barati Farimani  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.17846)  
+
+**Abstract**: Pottery creation is a complicated art form that requires dexterous, precise and delicate actions to slowly morph a block of clay to a meaningful, and often useful 3D goal shape. In this work, we aim to create a robotic system that can create simple pottery goals with only pinch-based actions. This pinch pottery task allows us to explore the challenges of a highly multi-modal and long-horizon deformable manipulation task. To this end, we present PinchBot, a goal-conditioned diffusion policy model that when combined with pre-trained 3D point cloud embeddings, task progress prediction and collision-constrained action projection, is able to successfully create a variety of simple pottery goals. For experimental videos and access to the demonstration dataset, please visit our project website: this https URL. 
+
+**Abstract (ZH)**: 陶器制作是一项复杂的艺术形式，要求精细、精确且细腻的动作，逐渐将一团黏土转变为有意义且时常具有实用价值的3D目标形状。本文旨在创建一个仅依赖捏压动作即可实现简单陶器目标的机器人系统。捏压陶器任务使我们能够探索高度多模态和长期规划变形操作任务的挑战。为此，我们提出了PinchBot，这是一种基于目标的扩散策略模型，通过结合预先训练的3D点云嵌入、任务进展预测和碰撞约束动作投影，能够成功地创建多种简单的陶器目标。欲查看实验视频并访问演示数据集，请访问我们的项目网站: [此链接]。 
+
+---
+# DSFormer: A Dual-Scale Cross-Learning Transformer for Visual Place Recognition 
+
+**Title (ZH)**: DSFormer: 一种双尺度跨学习变换器用于视觉地点识别 
+
+**Authors**: Haiyang Jiang, Songhao Piao, Chao Gao, Lei Yu, Liguo Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18444)  
+
+**Abstract**: Visual Place Recognition (VPR) is crucial for robust mobile robot localization, yet it faces significant challenges in maintaining reliable performance under varying environmental conditions and viewpoints. To address this, we propose a novel framework that integrates Dual-Scale-Former (DSFormer), a Transformer-based cross-learning module, with an innovative block clustering strategy. DSFormer enhances feature representation by enabling bidirectional information transfer between dual-scale features extracted from the final two CNN layers, capturing both semantic richness and spatial details through self-attention for long-range dependencies within each scale and shared cross-attention for cross-scale learning. Complementing this, our block clustering strategy repartitions the widely used San Francisco eXtra Large (SF-XL) training dataset from multiple distinct perspectives, optimizing data organization to further bolster robustness against viewpoint variations. Together, these innovations not only yield a robust global embedding adaptable to environmental changes but also reduce the required training data volume by approximately 30\% compared to previous partitioning methods. Comprehensive experiments demonstrate that our approach achieves state-of-the-art performance across most benchmark datasets, surpassing advanced reranking methods like DELG, Patch-NetVLAD, TransVPR, and R2Former as a global retrieval solution using 512-dim global descriptors, while significantly improving computational efficiency. 
+
+**Abstract (ZH)**: 视觉地点识别（VPR）对于鲁棒的移动机器人定位至关重要，但其在不同环境条件和视角下保持可靠性能面临显著挑战。为此，我们提出了一种新型框架，该框架结合了Dual-Scale-Former（DSFormer）——一种基于Transformer的跨学习模块——以及创新的块聚类策略。DSFormer通过在最终两层CNN提取的双尺度特征之间实现双向信息传递，增强特征表示，并通过自注意力机制捕捉每尺度内的长期依赖关系，通过共享的跨注意力机制进行跨尺度学习，从而同时捕获语义丰富性和空间细节。此外，我们的块聚类策略多角度重新 partition 了广泛使用的San Francisco eXtra Large（SF-XL）训练数据集，优化数据组织以进一步增强对视角变化的鲁棒性。这些创新不仅提供了适应环境变化的鲁棒全局嵌入表示，还比之前的方法减少了约30%的训练数据量。全面的实验表明，在大多数基准数据集上，我们的方法达到了最先进的性能，超越了包括DELG、Patch-NetVLAD、TransVPR和R2Former在内的高级重排序方法，使用512维全局描述符时具有显著的计算效率提升。 
+
+---
+# Rapid Modeling Architecture for Lightweight Simulator to Accelerate and Improve Decision Making for Industrial Systems 
+
+**Title (ZH)**: 轻量化模拟器的快速建模架构以加速并改善工业系统的决策制定 
+
+**Authors**: Takumi Kato, Zhi Li Hu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.17990)  
+
+**Abstract**: Designing industrial systems, such as building, improving, and automating distribution centers and manufacturing plants, involves critical decision-making with limited information in the early phases. The lack of information leads to less accurate designs of the systems, which are often difficult to resolve later. It is effective to use simulators to model the designed system and find out the issues early. However, the modeling time required by conventional simulators is too long to allow for rapid model creation to meet decision-making demands. In this paper, we propose a Rapid Modeling Architecture (RMA) for a lightweight industrial simulator that mitigates the modeling burden while maintaining the essential details in order to accelerate and improve decision-making. We have prototyped a simulator based on the RMA and applied it to the actual factory layout design problem. We also compared the modeling time of our simulator to that of an existing simulator, and as a result, our simulator achieved a 78.3% reduction in modeling time compared to conventional simulators. 
+
+**Abstract (ZH)**: 基于快速建模架构的轻量级工业仿真器设计与应用 
+
+---
+# Automated Brake Onset Detection in Naturalistic Driving Data 
+
+**Title (ZH)**: 自然驾驶数据中自动刹车起始检测 
+
+**Authors**: Shu-Yuan Liu, Johan Engström, Gustav Markkula  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.17943)  
+
+**Abstract**: Response timing measures play a crucial role in the assessment of automated driving systems (ADS) in collision avoidance scenarios, including but not limited to establishing human benchmarks and comparing ADS to human driver response performance. For example, measuring the response time (of a human driver or ADS) to a conflict requires the determination of a stimulus onset and a response onset. In existing studies, response onset relies on manual annotation or vehicle control signals such as accelerator and brake pedal movements. These methods are not applicable when analyzing large scale data where vehicle control signals are not available. This holds in particular for the rapidly expanding sets of ADS log data where the behavior of surrounding road users is observed via onboard sensors. To advance evaluation techniques for ADS and enable measuring response timing when vehicle control signals are not available, we developed a simple and efficient algorithm, based on a piecewise linear acceleration model, to automatically estimate brake onset that can be applied to any type of driving data that includes vehicle longitudinal time series data. We also proposed a manual annotation method to identify brake onset and used it as ground truth for validation. R2 was used as a confidence metric to measure the accuracy of the algorithm, and its classification performance was analyzed using naturalistic collision avoidance data of both ADS and humans, where our method was validated against human manual annotation. Although our algorithm is subject to certain limitations, it is efficient, generalizable, applicable to any road user and scenario types, and is highly configurable. 
+
+**Abstract (ZH)**: 自动驾驶系统在碰撞避免场景中的响应时间评估在自动驾驶系统的评估中扮演着关键角色，包括但不限于建立人类基准和将自动驾驶系统与人类驾驶员的响应性能进行比较。例如，测量人类驾驶员或自动驾驶系统对冲突的响应时间需要确定刺激的开始和响应的开始。在现有研究中，响应的开始依赖于人工标注或车辆控制信号，如油门和刹车踏板的动作。当分析大规模数据且没有车辆控制信号可用时，这些方法并不适用。特别地，对于通过车载传感器观察周围道路使用者行为的快速扩增的自动驾驶日志数据集，这一点尤为成立。为了推进自动驾驶系统的评估技术并能够在没有车辆控制信号的情况下测量响应时间，我们基于分段线性加速度模型开发了一个简单且高效的算法，以自动估计刹车开始时间，并且该算法可以应用于包含车辆纵向时间序列数据的任何类型驾驶数据。我们还提出了一种人工标注方法来识别刹车开始时间，并将其作为验证的金标准。我们使用决定系数R²作为置信度指标来衡量算法的准确性，并使用自然驾驶环境中的碰撞避免数据（包括人类和自动驾驶系统的数据）来分析其分类性能，我们的方法与人类手动标注进行了验证。尽管我们的算法存在一定的局限性，但它具有高效性、通用性、适用于任何道路用户和场景类型，并且具有高度的可配置性。 
+
+---
+# FishDet-M: A Unified Large-Scale Benchmark for Robust Fish Detection and CLIP-Guided Model Selection in Diverse Aquatic Visual Domains 
+
+**Title (ZH)**: FishDet-M：统一的大规模基准，用于多样 aquatic 视觉域中鲁棒鱼类检测和 CLIP 引导模型选择。 
+
+**Authors**: Muayad Abujabal, Lyes Saad Saoud, Irfan Hussain  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.17859)  
+
+**Abstract**: Accurate fish detection in underwater imagery is essential for ecological monitoring, aquaculture automation, and robotic perception. However, practical deployment remains limited by fragmented datasets, heterogeneous imaging conditions, and inconsistent evaluation protocols. To address these gaps, we present \textit{FishDet-M}, the largest unified benchmark for fish detection, comprising 13 publicly available datasets spanning diverse aquatic environments including marine, brackish, occluded, and aquarium scenes. All data are harmonized using COCO-style annotations with both bounding boxes and segmentation masks, enabling consistent and scalable cross-domain evaluation. We systematically benchmark 28 contemporary object detection models, covering the YOLOv8 to YOLOv12 series, R-CNN based detectors, and DETR based models. Evaluations are conducted using standard metrics including mAP, mAP@50, and mAP@75, along with scale-specific analyses (AP$_S$, AP$_M$, AP$_L$) and inference profiling in terms of latency and parameter count. The results highlight the varying detection performance across models trained on FishDet-M, as well as the trade-off between accuracy and efficiency across models of different architectures. To support adaptive deployment, we introduce a CLIP-based model selection framework that leverages vision-language alignment to dynamically identify the most semantically appropriate detector for each input image. This zero-shot selection strategy achieves high performance without requiring ensemble computation, offering a scalable solution for real-time applications. FishDet-M establishes a standardized and reproducible platform for evaluating object detection in complex aquatic scenes. All datasets, pretrained models, and evaluation tools are publicly available to facilitate future research in underwater computer vision and intelligent marine systems. 
+
+**Abstract (ZH)**: 准确的水下图像鱼类检测对于生态监控、水产自动化和机器人感知至关重要。然而，实际部署受限于碎片化的数据集、异质的成像条件和不一致的评估协议。为了解决这些问题，我们提出了FishDet-M，这是目前最大的统一鱼类检测基准，包含13个公开数据集，涵盖了包括海洋、半咸水、遮挡和水族箱在内的多种水生环境。所有数据均使用COCO样式注释，包括边界框和分割掩模，以实现跨域一致和可扩展的评估。我们系统性地评估了28个当代目标检测模型，涵盖了从YOLOv8到YOLOv12系列、基于R-CNN的检测器和基于DETR的模型。评估使用标准指标包括mAP、mAP@50和mAP@75，以及针对不同尺度的分析（AP$_S$、AP$_M$、AP$_L$）和推理时间及参数量的评估。结果突出了在FishDet-M上训练的不同模型之间的检测性能差异，以及不同架构模型之间的准确性和效率之间的权衡。为了支持自适应部署，我们引入了一种基于CLIP的模型选择框架，利用视觉-语言对齐动态识别每个输入图像的最语义合适的检测器。这种零样本选择策略无需集成计算即可实现高性能，为实时应用提供了一种可扩展的解决方案。FishDet-M为评估复杂水生环境中的目标检测建立了标准化和可重复的平台。所有数据集、预训练模型和评估工具均公开，以促进水下计算机视觉和智能海洋系统领域的未来研究。标题：FishDet-M：最大的统一鱼类检测基准 
+
+---
+# ARBoids: Adaptive Residual Reinforcement Learning With Boids Model for Cooperative Multi-USV Target Defense 
+
+**Title (ZH)**: ARBoids：自适应剩余强化学习与Boids模型在协同多USV目标防御中的应用 
+
+**Authors**: Jiyue Tao, Tongsheng Shen, Dexin Zhao, Feitian Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2502.18549)  
+
+**Abstract**: The target defense problem (TDP) for unmanned surface vehicles (USVs) concerns intercepting an adversarial USV before it breaches a designated target region, using one or more defending USVs. A particularly challenging scenario arises when the attacker exhibits superior maneuverability compared to the defenders, significantly complicating effective interception. To tackle this challenge, this letter introduces ARBoids, a novel adaptive residual reinforcement learning framework that integrates deep reinforcement learning (DRL) with the biologically inspired, force-based Boids model. Within this framework, the Boids model serves as a computationally efficient baseline policy for multi-agent coordination, while DRL learns a residual policy to adaptively refine and optimize the defenders' actions. The proposed approach is validated in a high-fidelity Gazebo simulation environment, demonstrating superior performance over traditional interception strategies, including pure force-based approaches and vanilla DRL policies. Furthermore, the learned policy exhibits strong adaptability to attackers with diverse maneuverability profiles, highlighting its robustness and generalization capability. The code of ARBoids will be released upon acceptance of this letter. 
+
+**Abstract (ZH)**: 无人水面车辆的目标防御问题（TDP）涉及使用一个或多个防御型无人水面车辆在敌对无人水面车辆突破指定目标区域之前对其进行拦截。当攻击者具备优于防御者的机动性能时，这一挑战尤为严峻，极大地复杂化了有效的拦截过程。为应对这一挑战，本文引入了ARBoids，这是一种将深度强化学习（DRL）与受生物启发的力基Boids模型结合的新型自适应残差强化学习框架。该框架中的Boids模型作为多agent协调的高效基线策略，而DRL则学习一个残差策略以自适应地细化和优化防御者的行为。所提出的方法在高保真Gazebo仿真环境中得到了验证，并在传统拦截策略，包括基于纯粹力的方法和标准DRL策略中表现出更优性能。此外，学习到的策略对具有不同机动性能的攻击者表现出强大的适应性，突显了其鲁棒性和通用性能力。本文接受后将公开ARBoids的代码。 
+
+---
