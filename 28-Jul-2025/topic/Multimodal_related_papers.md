@@ -1,0 +1,65 @@
+# Towards Multimodal Social Conversations with Robots: Using Vision-Language Models 
+
+**Title (ZH)**: 面向多模态社交对话的机器人技术：使用视觉-语言模型 
+
+**Authors**: Ruben Janssens, Tony Belpaeme  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.19196)  
+
+**Abstract**: Large language models have given social robots the ability to autonomously engage in open-domain conversations. However, they are still missing a fundamental social skill: making use of the multiple modalities that carry social interactions. While previous work has focused on task-oriented interactions that require referencing the environment or specific phenomena in social interactions such as dialogue breakdowns, we outline the overall needs of a multimodal system for social conversations with robots. We then argue that vision-language models are able to process this wide range of visual information in a sufficiently general manner for autonomous social robots. We describe how to adapt them to this setting, which technical challenges remain, and briefly discuss evaluation practices. 
+
+**Abstract (ZH)**: 大规模语言模型为社会机器人提供了自主进行开放域对话的能力。然而，它们仍然缺乏一种基本的社会技能：利用承载社会互动的多种模态。尽管以往的研究主要集中在需要参考环境或社会互动中特定现象的任务导向性对话，如对话中断，我们概述了社会对话机器人所需的整体多模态系统需求。我们随后 argues 视觉语言模型能够以足够通用的方式处理这种广泛范围的视觉信息，以满足自主社会机器人的需求。我们描述了如何将它们适应这一设置，以及剩余的技术挑战，并简要讨论了评估实践。 
+
+---
+# PhysDrive: A Multimodal Remote Physiological Measurement Dataset for In-vehicle Driver Monitoring 
+
+**Title (ZH)**: PhysDrive：用于车内驾驶人监测的多模态远程生理测量数据集 
+
+**Authors**: Jiyao Wang, Xiao Yang, Qingyong Hu, Jiankai Tang, Can Liu, Dengbo He, Yuntao Wang, Yingcong Chen, Kaishun Wu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.19172)  
+
+**Abstract**: Robust and unobtrusive in-vehicle physiological monitoring is crucial for ensuring driving safety and user experience. While remote physiological measurement (RPM) offers a promising non-invasive solution, its translation to real-world driving scenarios is critically constrained by the scarcity of comprehensive datasets. Existing resources are often limited in scale, modality diversity, the breadth of biometric annotations, and the range of captured conditions, thereby omitting inherent real-world challenges in driving. Here, we present PhysDrive, the first large-scale multimodal dataset for contactless in-vehicle physiological sensing with dedicated consideration on various modality settings and driving factors. PhysDrive collects data from 48 drivers, including synchronized RGB, near-infrared camera, and raw mmWave radar data, accompanied with six synchronized ground truths (ECG, BVP, Respiration, HR, RR, and SpO2). It covers a wide spectrum of naturalistic driving conditions, including driver motions, dynamic natural light, vehicle types, and road conditions. We extensively evaluate both signal-processing and deep-learning methods on PhysDrive, establishing a comprehensive benchmark across all modalities, and release full open-source code with compatibility for mainstream public toolboxes. We envision PhysDrive will serve as a foundational resource and accelerate research on multimodal driver monitoring and smart-cockpit systems. 
+
+**Abstract (ZH)**: 鲁棒且不干扰的车内生理监测对于确保驾驶安全和用户体验至关重要。虽然远程生理测量(RPM)提供了一种前景广阔的非侵入性解决方案，但其在实际驾驶场景中的应用受到全面数据集稀缺性的严重限制。现有资源在规模、模态多样性、生物特征注释的广度以及捕捉条件的范围上常常有限，从而忽略了实际驾驶中的固有挑战。在这里，我们介绍了PhysDrive，首个用于无接触车内生理传感的大规模多模态数据集，并针对各种模态设置和驾驶因素进行了专门考虑。PhysDrive 从48 名驾驶员中收集了数据，包括同步的RGB、近红外相机和原始毫米波雷达数据，以及六种同步的地面真实值（ECG、BVP、呼吸、心率、呼吸频率和血氧饱和度）。它涵盖了广泛的自然驾驶条件，包括驾驶员动作、动态自然光、车辆类型和道路条件。我们在PhysDrive 上全面评估了信号处理和深度学习方法，建立了所有模态的综合基准，并公开了与主流公共工具箱兼容的完整开源代码。我们期望PhysDrive 将成为基础资源，加速多模态驾驶员监测和智能仪表板系统的研究。 
+
+---
+# Closing the Modality Gap for Mixed Modality Search 
+
+**Title (ZH)**: 跨模态搜索中的模态差距闭合 
+
+**Authors**: Binxu Li, Yuhui Zhang, Xiaohan Wang, Weixin Liang, Ludwig Schmidt, Serena Yeung-Levy  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.19054)  
+
+**Abstract**: Mixed modality search -- retrieving information across a heterogeneous corpus composed of images, texts, and multimodal documents -- is an important yet underexplored real-world application. In this work, we investigate how contrastive vision-language models, such as CLIP, perform on the mixed modality search task. Our analysis reveals a critical limitation: these models exhibit a pronounced modality gap in the embedding space, where image and text embeddings form distinct clusters, leading to intra-modal ranking bias and inter-modal fusion failure. To address this issue, we propose GR-CLIP, a lightweight post-hoc calibration method that removes the modality gap in CLIP's embedding space. Evaluated on MixBench -- the first benchmark specifically designed for mixed modality search -- GR-CLIP improves NDCG@10 by up to 26 percentage points over CLIP, surpasses recent vision-language generative embedding models by 4 percentage points, while using 75x less compute. 
+
+**Abstract (ZH)**: 混合模态搜索——在包含图像、文本和多模态文档的异构语料库中检索信息——是一项重要但尚未充分探索的实际应用。在本文中，我们研究了对比视觉-语言模型（如CLIP）在混合模态搜索任务中的表现。我们的分析揭示了一个关键局限：这些模型在嵌入空间中表现出显著的模态差距，图像嵌入和文本嵌入形成不同的簇，导致模内排名偏差和跨模态融合失败。为了解决这一问题，我们提出GR-CLIP，这是一种轻量级的后处理校准方法，用于消除CLIP嵌入空间中的模态差距。在专门为混合模态搜索设计的第一个基准MixBench上，GR-CLIP将NDCG@10提高多达26个百分点，优于最近的视觉-语言生成嵌入模型4个百分点，同时仅使用75倍少的计算资源。 
+
+---
+# MGHFT: Multi-Granularity Hierarchical Fusion Transformer for Cross-Modal Sticker Emotion Recognition 
+
+**Title (ZH)**: MGHFT：多粒度层次融合变换器在跨模态贴纸情感识别中的应用 
+
+**Authors**: Jian Chen, Yuxuan Hu, Haifeng Lu, Wei Wang, Min Yang, Chengming Li, Xiping Hu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18929)  
+
+**Abstract**: Although pre-trained visual models with text have demonstrated strong capabilities in visual feature extraction, sticker emotion understanding remains challenging due to its reliance on multi-view information, such as background knowledge and stylistic cues. To address this, we propose a novel multi-granularity hierarchical fusion transformer (MGHFT), with a multi-view sticker interpreter based on Multimodal Large Language Models. Specifically, inspired by the human ability to interpret sticker emotions from multiple views, we first use Multimodal Large Language Models to interpret stickers by providing rich textual context via multi-view descriptions. Then, we design a hierarchical fusion strategy to fuse the textual context into visual understanding, which builds upon a pyramid visual transformer to extract both global and local sticker features at multiple stages. Through contrastive learning and attention mechanisms, textual features are injected at different stages of the visual backbone, enhancing the fusion of global- and local-granularity visual semantics with textual guidance. Finally, we introduce a text-guided fusion attention mechanism to effectively integrate the overall multimodal features, enhancing semantic understanding. Extensive experiments on 2 public sticker emotion datasets demonstrate that MGHFT significantly outperforms existing sticker emotion recognition approaches, achieving higher accuracy and more fine-grained emotion recognition. Compared to the best pre-trained visual models, our MGHFT also obtains an obvious improvement, 5.4% on F1 and 4.0% on accuracy. The code is released at this https URL. 
+
+**Abstract (ZH)**: 尽管带有文本的预训练视觉模型已经在视觉特征提取方面展示了强大的能力，但由于贴纸情绪理解依赖于多视角信息，如背景知识和风格线索，因此仍然具有挑战性。为了解决这一问题，我们提出了一种新颖的多粒度层次融合Transformer（MGHFT），并基于多模态大型语言模型设计了多视角贴纸解析器。具体来说，受人类能够从多视角解析贴纸情绪的能力启发，我们首先使用多模态大型语言模型通过多视角描述提供丰富的文本上下文来解析贴纸。然后，我们设计了一种层次融合策略，将文本上下文融合到视觉理解中，基于金字塔视觉Transformer在多个阶段提取全局和局部贴纸特征。通过对比学习和注意力机制，在视觉骨干网的不同阶段注入文本特征，增强全局和局部粒度视觉语义与文本指导的融合。最后，我们引入了一种文本导向的融合注意力机制，以有效集成整体多模态特征，增强语义理解。广泛实验表明，MGHFT 在两个公开的贴纸情绪数据集上显著优于现有贴纸情绪识别方法，实现了更高的准确率和更细粒度的情绪识别。与最佳预训练视觉模型相比，我们的MGHFT 在F1分数和准确率上分别取得了5.4%和4.0%的明显提升。代码发布在该网址：https://。 
+
+---
+# Gen-AI Police Sketches with Stable Diffusion 
+
+**Title (ZH)**: 基于Gen-AI的警察画像生成：稳定扩散方法 
+
+**Authors**: Nicholas Fidalgo, Aaron Contreras, Katherine Harvey, Johnny Ni  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18667)  
+
+**Abstract**: This project investigates the use of multimodal AI-driven approaches to automate and enhance suspect sketching. Three pipelines were developed and evaluated: (1) baseline image-to-image Stable Diffusion model, (2) same model integrated with a pre-trained CLIP model for text-image alignment, and (3) novel approach incorporating LoRA fine-tuning of the CLIP model, applied to self-attention and cross-attention layers, and integrated with Stable Diffusion. An ablation study confirmed that fine-tuning both self- and cross-attention layers yielded the best alignment between text descriptions and sketches. Performance testing revealed that Model 1 achieved the highest structural similarity (SSIM) of 0.72 and a peak signal-to-noise ratio (PSNR) of 25 dB, outperforming Model 2 and Model 3. Iterative refinement enhanced perceptual similarity (LPIPS), with Model 3 showing improvement over Model 2 but still trailing Model 1. Qualitatively, sketches generated by Model 1 demonstrated the clearest facial features, highlighting its robustness as a baseline despite its simplicity. 
+
+**Abstract (ZH)**: 本项目探究了多模态AI驱动方法自动化并增强嫌犯画像的应用。三个工作流程被开发和评估：（1）基线图像到图像的Stable Diffusion模型；（2）该模型与预训练的CLIP模型集成以实现文本与图像对齐；（3）结合LoRA fine-tuning的CLIP模型应用于自注意力和跨注意力层，并与Stable Diffusion集成的新型方法。消融研究证实同时fine-tuning自注意力和跨注意力层在文本描述与画像对齐方面效果最佳。性能测试显示，模型1在结构相似性（SSIM）为0.72和峰值信噪比（PSNR）为25 dB方面表现最佳，优于模型2和模型3。迭代细化提升了感知相似性（LPIPS），模型3优于模型2但仍然落后于模型1。从定性的角度来看，模型1生成的画像面部特征最为清晰，尽管简单但表现出较高的稳健性。 
+
+---

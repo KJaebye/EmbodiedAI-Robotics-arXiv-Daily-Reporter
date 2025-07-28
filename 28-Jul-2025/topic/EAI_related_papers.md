@@ -1,0 +1,133 @@
+# How Age Influences the Interpretation of Emotional Body Language in Humanoid Robots -- long paper version 
+
+**Title (ZH)**: 年龄如何影响对类人机器人情感身体语言的解读——长论文版本 
+
+**Authors**: Ilaria Consoli, Claudio Mattutino, Cristina Gena, Berardina de Carolis, Giuseppe Palestra  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.19335)  
+
+**Abstract**: This paper presents an empirical study investigating how individuals across different age groups, children, young and older adults, interpret emotional body language expressed by the humanoid robot NAO. The aim is to offer insights into how users perceive and respond to emotional cues from robotic agents, through an empirical evaluation of the robot's effectiveness in conveying emotions to different groups of users. By analyzing data collected from elderly participants and comparing these findings with previously gathered data from young adults and children, the study highlights similarities and differences between the groups, with younger and older users more similar but different from young adults. 
+
+**Abstract (ZH)**: 本研究通过实证研究探讨不同年龄组（儿童、年轻人和老年人）的个体如何解读人形机器人NAO表达的情感身体语言，旨在通过对机器人在向不同用户群体传达情感方面的有效性进行实证评估，提供关于用户如何感知和响应机器人代理的情感线索的见解。通过对老年参与者数据的分析，并将这些发现与之前从年轻人和儿童收集的数据进行比较，研究突出了不同组间的相似性和差异性，其中年轻用户和老年用户更为相似，但与年轻人有所不同。 
+
+---
+# Foundation Model-Driven Grasping of Unknown Objects via Center of Gravity Estimation 
+
+**Title (ZH)**: 基于基础模型的未知物体抓取通过质心估计 
+
+**Authors**: Kang Xiangli, Yage He, Xianwu Gong, Zehan Liu, Yuru Bai  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.19242)  
+
+**Abstract**: This study presents a grasping method for objects with uneven mass distribution by leveraging diffusion models to localize the center of gravity (CoG) on unknown objects. In robotic grasping, CoG deviation often leads to postural instability, where existing keypoint-based or affordance-driven methods exhibit limitations. We constructed a dataset of 790 images featuring unevenly distributed objects with keypoint annotations for CoG localization. A vision-driven framework based on foundation models was developed to achieve CoG-aware grasping. Experimental evaluations across real-world scenarios demonstrate that our method achieves a 49\% higher success rate compared to conventional keypoint-based approaches and an 11\% improvement over state-of-the-art affordance-driven methods. The system exhibits strong generalization with a 76\% CoG localization accuracy on unseen objects, providing a novel solution for precise and stable grasping tasks. 
+
+**Abstract (ZH)**: 本研究通过利用扩散模型来定位未知物体的重心（CoG），提出了一种适用于非均匀质量分布物体的抓取方法。在机器人抓取中，重心偏差常常导致姿态不稳定，现有的基于关键点或功能驱动的方法在此方面存在局限性。我们构建了一个包含790张非均匀质量分布物体图像的数据集，并标注了这些图像的关键点以用于重心定位。基于基础模型的视觉驱动框架被开发出来以实现重心感知抓取。在实际应用场景中的实验评估表明，我们的方法与传统的基于关键点的方法相比，成功率为后者的149%，与最先进的功能驱动方法相比，提高了11%。该系统在未见过的物体上表现出强大的泛化能力，重心定位准确率为76%，为精确且稳定的抓取任务提供了新的解决方案。 
+
+---
+# Bot Appétit! Exploring how Robot Morphology Shapes Perceived Affordances via a Mise en Place Scenario in a VR Kitchen 
+
+**Title (ZH)**: 机器人美食！探究机器人形态如何通过虚拟现实厨房 mise en place 情景塑造感知可及性的方式 
+
+**Authors**: Rachel Ringe, Leandra Thiele, Mihai Pomarlan, Nima Zargham, Robin Nolte, Lars Hurrelbrink, Rainer Malaka  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.19082)  
+
+**Abstract**: This study explores which factors of the visual design of a robot may influence how humans would place it in a collaborative cooking scenario and how these features may influence task delegation. Human participants were placed in a Virtual Reality (VR) environment and asked to set up a kitchen for cooking alongside a robot companion while considering the robot's morphology. We collected multimodal data for the arrangements created by the participants, transcripts of their think-aloud as they were performing the task, and transcripts of their answers to structured post-task questionnaires. Based on analyzing this data, we formulate several hypotheses: humans prefer to collaborate with biomorphic robots; human beliefs about the sensory capabilities of robots are less influenced by the morphology of the robot than beliefs about action capabilities; and humans will implement fewer avoidance strategies when sharing space with gracile robots. We intend to verify these hypotheses in follow-up studies. 
+
+**Abstract (ZH)**: 本研究探索了机器人视觉设计的哪些因素可能会影响人类在协作烹饪场景中如何定位机器人，并探讨这些因素如何影响任务分配。研究将人类参与者置于虚拟现实（VR）环境中，要求他们在与机器人同伴协作烹饪时考虑机器人的形态。我们收集了参与者创建的布局的多模态数据、他们在执行任务时的自我思考记录以及他们在结构化后问卷中的回答记录。通过对这些数据的分析，我们提出了几个假设：人类更偏好与生物形态机器人合作；人类对机器人感知能力的信念不如对其动作能力的信念受机器人形态的影响大；当与苗条的机器人共享空间时，人类将采用更少的避让策略。我们计划在后续研究中验证这些假设。 
+
+---
+# GEAR: Gaze-Enabled Human-Robot Collaborative Assembly 
+
+**Title (ZH)**: GEAR: 注视辅助的人机协作装配 
+
+**Authors**: Asad Ali Shahid, Angelo Moroncelli, Drazen Brscic, Takayuki Kanda, Loris Roveda  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18947)  
+
+**Abstract**: Recent progress in robot autonomy and safety has significantly improved human-robot interactions, enabling robots to work alongside humans on various tasks. However, complex assembly tasks still present significant challenges due to inherent task variability and the need for precise operations. This work explores deploying robots in an assistive role for such tasks, where the robot assists by fetching parts while the skilled worker provides high-level guidance and performs the assembly. We introduce GEAR, a gaze-enabled system designed to enhance human-robot collaboration by allowing robots to respond to the user's gaze. We evaluate GEAR against a touch-based interface where users interact with the robot through a touchscreen. The experimental study involved 30 participants working on two distinct assembly scenarios of varying complexity. Results demonstrated that GEAR enabled participants to accomplish the assembly with reduced physical demand and effort compared to the touchscreen interface, especially for complex tasks, maintaining great performance, and receiving objects effectively. Participants also reported enhanced user experience while performing assembly tasks. Project page: this http URL 
+
+**Abstract (ZH)**: Recent进展在机器人自主性和安全性方面的显著提高已大幅改善了人机交互，使机器人能够在各种任务中与人类协同工作。然而，由于任务本身固有的变异性以及需要精确操作，复杂的组装任务仍然具有重大挑战。本研究探讨了在这些任务中将机器人部署为辅助角色的可能性，其中机器人通过取零件来协助，而熟练工人则提供高层次的指导并执行组装。我们引入了GEAR，一种基于目光系统的协作增强系统，使得机器人能够响应用户的目光。我们将GEAR与基于触摸的界面进行了对比，通过触摸屏进行人与机器人交互。实验研究涉及30名参与者在两个不同复杂度的组装场景中工作。结果表明，与触摸屏界面相比，GEAR使参与者在完成组装时减少了物理需求和努力，尤其是在复杂任务中保持了良好的性能并能有效接取物体。参与者在执行组装任务时还报告了增强的用户体验。项目页面：这个链接。 
+
+---
+# MetaMorph -- A Metamodelling Approach For Robot Morphology 
+
+**Title (ZH)**: MetaMorph —— 一种机器人形态建模方法 
+
+**Authors**: Rachel Ringe, Robin Nolte, Nima Zargham, Robert Porzel, Rainer Malaka  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18820)  
+
+**Abstract**: Robot appearance crucially shapes Human-Robot Interaction (HRI) but is typically described via broad categories like anthropomorphic, zoomorphic, or technical. More precise approaches focus almost exclusively on anthropomorphic features, which fail to classify robots across all types, limiting the ability to draw meaningful connections between robot design and its effect on interaction. In response, we present MetaMorph, a comprehensive framework for classifying robot morphology. Using a metamodeling approach, MetaMorph was synthesized from 222 robots in the IEEE Robots Guide, offering a structured method for comparing visual features. This model allows researchers to assess the visual distances between robot models and explore optimal design traits tailored to different tasks and contexts. 
+
+**Abstract (ZH)**: 机器人外观对人机交互（HRI）至关重要，但通常通过拟人化、zoomorphic或技术类等宽泛类别来描述。更精确的方法几乎完全集中在拟人化特征上，这无法对所有类型的机器人进行分类，限制了从机器人设计对其互动影响的有意义联系中得出结论的能力。为应对这一挑战，我们提出了MetaMorph，一个全面的机器人形态分类框架。通过元建模方法，MetaMorph 结合了IEEE机器人指南中的222个机器人，提供了一种结构化的视觉特征比较方法。该模型使研究人员能够评估机器人模型之间的视觉距离，并探索针对不同任务和场景的最佳设计特征。 
+
+---
+# Success in Humanoid Reinforcement Learning under Partial Observation 
+
+**Title (ZH)**: 部分观测下 humanoid 强化学习的成功 
+
+**Authors**: Wuhao Wang, Zhiyong Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18883)  
+
+**Abstract**: Reinforcement learning has been widely applied to robotic control, but effective policy learning under partial observability remains a major challenge, especially in high-dimensional tasks like humanoid locomotion. To date, no prior work has demonstrated stable training of humanoid policies with incomplete state information in the benchmark Gymnasium Humanoid-v4 environment. The objective in this environment is to walk forward as fast as possible without falling, with rewards provided for staying upright and moving forward, and penalties incurred for excessive actions and external contact forces. This research presents the first successful instance of learning under partial observability in this environment. The learned policy achieves performance comparable to state-of-the-art results with full state access, despite using only one-third to two-thirds of the original states. Moreover, the policy exhibits adaptability to robot properties, such as variations in body part masses. The key to this success is a novel history encoder that processes a fixed-length sequence of past observations in parallel. Integrated into a standard model-free algorithm, the encoder enables performance on par with fully observed baselines. We hypothesize that it reconstructs essential contextual information from recent observations, thereby enabling robust decision-making. 
+
+**Abstract (ZH)**: 强化学习在机器人控制中的应用已经十分广泛，但在不完全可观测性条件下获得有效的策略依然是一项重大挑战，特别是在高维度任务如类人步行控制中。迄今为止，在基准环境Gymnasium Humanoid-v4中，没有先有研究展示了能够稳定训练出使用不完整状态信息的类人策略。该环境的目标是在不摔倒的情况下尽可能快地向前行走，奖励基于站立稳定和向前移动，而过度动作和外部接触力则会受到惩罚。本研究在此环境中展示了首次成功实现不完全可观测性条件下的策略学习实例。所学习出的策略在使用原始状态信息的三分之一到三分之二的情况下，达到了与完全可观测性状态下顶尖结果相当的表现。此外，该策略还展示了对机器人属性的适应性，例如身体部分质量的变化。这一成功的关键在于一种新颖的历史编码器，该编码器能够并行处理固定长度的过去观察序列。将编码器整合到标准的模型自由算法中，能够实现与完全可观测性基准相当的性能。我们推测它能够从最近的观察中重建出关键的背景信息，从而支持稳健的决策制定。 
+
+---
+# Eyes Will Shut: A Vision-Based Next GPS Location Prediction Model by Reinforcement Learning from Visual Map Feed Back 
+
+**Title (ZH)**: 基于视觉地图反馈的强化学习视线关闭：一种视觉导向的下一位置预测模型 
+
+**Authors**: Ruixing Zhang, Yang Zhang, Tongyu Zhu, Leilei Sun, Weifeng Lv  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18661)  
+
+**Abstract**: Next Location Prediction is a fundamental task in the study of human mobility, with wide-ranging applications in transportation planning, urban governance, and epidemic forecasting. In practice, when humans attempt to predict the next location in a trajectory, they often visualize the trajectory on a map and reason based on road connectivity and movement trends. However, the vast majority of existing next-location prediction models do not reason over maps \textbf{in the way that humans do}. Fortunately, the recent development of Vision-Language Models (VLMs) has demonstrated strong capabilities in visual perception and even visual reasoning. This opens up a new possibility: by rendering both the road network and trajectory onto an image and leveraging the reasoning abilities of VLMs, we can enable models to perform trajectory inference in a human-like manner. To explore this idea, we first propose a method called Vision-Guided Location Search (VGLS), which evaluates whether a general-purpose VLM is capable of trajectory-based reasoning without modifying any of its internal parameters. Based on insights from the VGLS results, we further propose our main approach: VLMLocPredictor, which is composed of two stages: In the first stage, we design two Supervised Fine-Tuning (SFT) tasks that help the VLM understand road network and trajectory structures and acquire basic reasoning ability on such visual inputs. In the second stage, we introduce Reinforcement Learning from Visual Map Feedback, enabling the model to self-improve its next-location prediction ability through interaction with the environment. Experiments conducted on datasets from four different cities show that our method achieves state-of-the-art (SOTA) performance and exhibits superior cross-city generalization compared to other LLM-based approaches. 
+
+**Abstract (ZH)**: 基于视觉语言模型的轨迹预测方法：Vision-Guided Location Search与VLMLocPredictor 
+
+---
+# Hierarchical Deep Reinforcement Learning Framework for Multi-Year Asset Management Under Budget Constraints 
+
+**Title (ZH)**: 预算约束下的多年度资产管理工作层级深度强化学习框架 
+
+**Authors**: Amir Fard, Arnold X.-X. Yuan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.19458)  
+
+**Abstract**: Budget planning and maintenance optimization are crucial for infrastructure asset management, ensuring cost-effectiveness and sustainability. However, the complexity arising from combinatorial action spaces, diverse asset deterioration, stringent budget constraints, and environmental uncertainty significantly limits existing methods' scalability. This paper proposes a Hierarchical Deep Reinforcement Learning methodology specifically tailored to multi-year infrastructure planning. Our approach decomposes the problem into two hierarchical levels: a high-level Budget Planner allocating annual budgets within explicit feasibility bounds, and a low-level Maintenance Planner prioritizing assets within the allocated budget. By structurally separating macro-budget decisions from asset-level prioritization and integrating linear programming projection within a hierarchical Soft Actor-Critic framework, the method efficiently addresses exponential growth in the action space and ensures rigorous budget compliance. A case study evaluating sewer networks of varying sizes (10, 15, and 20 sewersheds) illustrates the effectiveness of the proposed approach. Compared to conventional Deep Q-Learning and enhanced genetic algorithms, our methodology converges more rapidly, scales effectively, and consistently delivers near-optimal solutions even as network size grows. 
+
+**Abstract (ZH)**: 基于多年度基础设施规划的分层深度强化学习方法 
+
+---
+# ReCoDe: Reinforcement Learning-based Dynamic Constraint Design for Multi-Agent Coordination 
+
+**Title (ZH)**: ReCoDe: 基于强化学习的多Agent协调动态约束设计 
+
+**Authors**: Michael Amir, Guang Yang, Zhan Gao, Keisuke Okumura, Heedo Woo, Amanda Prorok  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.19151)  
+
+**Abstract**: Constraint-based optimization is a cornerstone of robotics, enabling the design of controllers that reliably encode task and safety requirements such as collision avoidance or formation adherence. However, handcrafted constraints can fail in multi-agent settings that demand complex coordination. We introduce ReCoDe--Reinforcement-based Constraint Design--a decentralized, hybrid framework that merges the reliability of optimization-based controllers with the adaptability of multi-agent reinforcement learning. Rather than discarding expert controllers, ReCoDe improves them by learning additional, dynamic constraints that capture subtler behaviors, for example, by constraining agent movements to prevent congestion in cluttered scenarios. Through local communication, agents collectively constrain their allowed actions to coordinate more effectively under changing conditions. In this work, we focus on applications of ReCoDe to multi-agent navigation tasks requiring intricate, context-based movements and consensus, where we show that it outperforms purely handcrafted controllers, other hybrid approaches, and standard MARL baselines. We give empirical (real robot) and theoretical evidence that retaining a user-defined controller, even when it is imperfect, is more efficient than learning from scratch, especially because ReCoDe can dynamically change the degree to which it relies on this controller. 
+
+**Abstract (ZH)**: 基于强化学习的约束设计：ReCoDe在多机器人导航任务中的应用 
+
+---
+# Market Making Strategies with Reinforcement Learning 
+
+**Title (ZH)**: reinforcement learning驱动的做市策略 
+
+**Authors**: Óscar Fernández Vicente  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18680)  
+
+**Abstract**: This thesis presents the results of a comprehensive research project focused on applying Reinforcement Learning (RL) to the problem of market making in financial markets. Market makers (MMs) play a fundamental role in providing liquidity, yet face significant challenges arising from inventory risk, competition, and non-stationary market dynamics. This research explores how RL, particularly Deep Reinforcement Learning (DRL), can be employed to develop autonomous, adaptive, and profitable market making strategies.
+The study begins by formulating the MM task as a reinforcement learning problem, designing agents capable of operating in both single-agent and multi-agent settings within a simulated financial environment. It then addresses the complex issue of inventory management using two complementary approaches: reward engineering and Multi-Objective Reinforcement Learning (MORL). While the former uses dynamic reward shaping to guide behavior, the latter leverages Pareto front optimization to explicitly balance competing objectives.
+To address the problem of non-stationarity, the research introduces POW-dTS, a novel policy weighting algorithm based on Discounted Thompson Sampling. This method allows agents to dynamically select and combine pretrained policies, enabling continual adaptation to shifting market conditions.
+The experimental results demonstrate that the proposed RL-based approaches significantly outperform traditional and baseline algorithmic strategies across various performance metrics. Overall, this research thesis contributes new methodologies and insights for the design of robust, efficient, and adaptive market making agents, reinforcing the potential of RL to transform algorithmic trading in complex financial systems. 
+
+**Abstract (ZH)**: 本论文 Presents 一种基于强化学习（RL）的市场制作问题研究：将市场制作任务 formulized 为一个强化学习问题，设计能够在单智能体和多智能体设置中运行的智能体，并在模拟金融环境中进行研究。探讨了如何利用强化学习，特别是深度强化学习（DRL），开发自主适应且盈利的市场制作策略。研究通过库存管理问题的两种互补方法——奖励工程和多目标强化学习（MORL）——来应对复杂情况。前者使用动态奖励塑造引导行为，后者利用帕累托前沿优化显式平衡竞争目标。为应对非平稳性问题，研究引入了基于折扣汤普森采样的POW-dTS新策略权重算法，允许智能体动态选择和组合预训练策略，以适应变化的市场条件。实验结果表明，所提出的基于RL的方法在各种性能指标上显著优于传统的和基准算法。本文为设计稳健、高效且适应性强的市场制作智能体提供了新的方法和见解，强调了RL在复杂金融系统中改造算法交易的潜力。 
+
+---

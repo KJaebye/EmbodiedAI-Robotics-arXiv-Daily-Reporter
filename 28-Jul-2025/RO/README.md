@@ -1,0 +1,327 @@
+# How Age Influences the Interpretation of Emotional Body Language in Humanoid Robots -- long paper version 
+
+**Title (ZH)**: 年龄如何影响对类人机器人情感身体语言的解读——长论文版本 
+
+**Authors**: Ilaria Consoli, Claudio Mattutino, Cristina Gena, Berardina de Carolis, Giuseppe Palestra  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.19335)  
+
+**Abstract**: This paper presents an empirical study investigating how individuals across different age groups, children, young and older adults, interpret emotional body language expressed by the humanoid robot NAO. The aim is to offer insights into how users perceive and respond to emotional cues from robotic agents, through an empirical evaluation of the robot's effectiveness in conveying emotions to different groups of users. By analyzing data collected from elderly participants and comparing these findings with previously gathered data from young adults and children, the study highlights similarities and differences between the groups, with younger and older users more similar but different from young adults. 
+
+**Abstract (ZH)**: 本研究通过实证研究探讨不同年龄组（儿童、年轻人和老年人）的个体如何解读人形机器人NAO表达的情感身体语言，旨在通过对机器人在向不同用户群体传达情感方面的有效性进行实证评估，提供关于用户如何感知和响应机器人代理的情感线索的见解。通过对老年参与者数据的分析，并将这些发现与之前从年轻人和儿童收集的数据进行比较，研究突出了不同组间的相似性和差异性，其中年轻用户和老年用户更为相似，但与年轻人有所不同。 
+
+---
+# Foundation Model-Driven Grasping of Unknown Objects via Center of Gravity Estimation 
+
+**Title (ZH)**: 基于基础模型的未知物体抓取通过质心估计 
+
+**Authors**: Kang Xiangli, Yage He, Xianwu Gong, Zehan Liu, Yuru Bai  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.19242)  
+
+**Abstract**: This study presents a grasping method for objects with uneven mass distribution by leveraging diffusion models to localize the center of gravity (CoG) on unknown objects. In robotic grasping, CoG deviation often leads to postural instability, where existing keypoint-based or affordance-driven methods exhibit limitations. We constructed a dataset of 790 images featuring unevenly distributed objects with keypoint annotations for CoG localization. A vision-driven framework based on foundation models was developed to achieve CoG-aware grasping. Experimental evaluations across real-world scenarios demonstrate that our method achieves a 49\% higher success rate compared to conventional keypoint-based approaches and an 11\% improvement over state-of-the-art affordance-driven methods. The system exhibits strong generalization with a 76\% CoG localization accuracy on unseen objects, providing a novel solution for precise and stable grasping tasks. 
+
+**Abstract (ZH)**: 本研究通过利用扩散模型来定位未知物体的重心（CoG），提出了一种适用于非均匀质量分布物体的抓取方法。在机器人抓取中，重心偏差常常导致姿态不稳定，现有的基于关键点或功能驱动的方法在此方面存在局限性。我们构建了一个包含790张非均匀质量分布物体图像的数据集，并标注了这些图像的关键点以用于重心定位。基于基础模型的视觉驱动框架被开发出来以实现重心感知抓取。在实际应用场景中的实验评估表明，我们的方法与传统的基于关键点的方法相比，成功率为后者的149%，与最先进的功能驱动方法相比，提高了11%。该系统在未见过的物体上表现出强大的泛化能力，重心定位准确率为76%，为精确且稳定的抓取任务提供了新的解决方案。 
+
+---
+# Towards Multimodal Social Conversations with Robots: Using Vision-Language Models 
+
+**Title (ZH)**: 面向多模态社交对话的机器人技术：使用视觉-语言模型 
+
+**Authors**: Ruben Janssens, Tony Belpaeme  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.19196)  
+
+**Abstract**: Large language models have given social robots the ability to autonomously engage in open-domain conversations. However, they are still missing a fundamental social skill: making use of the multiple modalities that carry social interactions. While previous work has focused on task-oriented interactions that require referencing the environment or specific phenomena in social interactions such as dialogue breakdowns, we outline the overall needs of a multimodal system for social conversations with robots. We then argue that vision-language models are able to process this wide range of visual information in a sufficiently general manner for autonomous social robots. We describe how to adapt them to this setting, which technical challenges remain, and briefly discuss evaluation practices. 
+
+**Abstract (ZH)**: 大规模语言模型为社会机器人提供了自主进行开放域对话的能力。然而，它们仍然缺乏一种基本的社会技能：利用承载社会互动的多种模态。尽管以往的研究主要集中在需要参考环境或社会互动中特定现象的任务导向性对话，如对话中断，我们概述了社会对话机器人所需的整体多模态系统需求。我们随后 argues 视觉语言模型能够以足够通用的方式处理这种广泛范围的视觉信息，以满足自主社会机器人的需求。我们描述了如何将它们适应这一设置，以及剩余的技术挑战，并简要讨论了评估实践。 
+
+---
+# ReCoDe: Reinforcement Learning-based Dynamic Constraint Design for Multi-Agent Coordination 
+
+**Title (ZH)**: ReCoDe: 基于强化学习的多agent协调动态约束设计 
+
+**Authors**: Michael Amir, Guang Yang, Zhan Gao, Keisuke Okumura, Heedo Woo, Amanda Prorok  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.19151)  
+
+**Abstract**: Constraint-based optimization is a cornerstone of robotics, enabling the design of controllers that reliably encode task and safety requirements such as collision avoidance or formation adherence. However, handcrafted constraints can fail in multi-agent settings that demand complex coordination. We introduce ReCoDe--Reinforcement-based Constraint Design--a decentralized, hybrid framework that merges the reliability of optimization-based controllers with the adaptability of multi-agent reinforcement learning. Rather than discarding expert controllers, ReCoDe improves them by learning additional, dynamic constraints that capture subtler behaviors, for example, by constraining agent movements to prevent congestion in cluttered scenarios. Through local communication, agents collectively constrain their allowed actions to coordinate more effectively under changing conditions. In this work, we focus on applications of ReCoDe to multi-agent navigation tasks requiring intricate, context-based movements and consensus, where we show that it outperforms purely handcrafted controllers, other hybrid approaches, and standard MARL baselines. We give empirical (real robot) and theoretical evidence that retaining a user-defined controller, even when it is imperfect, is more efficient than learning from scratch, especially because ReCoDe can dynamically change the degree to which it relies on this controller. 
+
+**Abstract (ZH)**: 基于强化学习的约束设计：ReCoDe——一种去中心化的混合框架 
+
+---
+# Diverse and Adaptive Behavior Curriculum for Autonomous Driving: A Student-Teacher Framework with Multi-Agent RL 
+
+**Title (ZH)**: 自主驾驶的多样化和适应性行为课程：基于多Agent强化学习的学生-教师框架 
+
+**Authors**: Ahmed Abouelazm, Johannes Ratz, Philip Schörner, J. Marius Zöllner  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.19146)  
+
+**Abstract**: Autonomous driving faces challenges in navigating complex real-world traffic, requiring safe handling of both common and critical scenarios. Reinforcement learning (RL), a prominent method in end-to-end driving, enables agents to learn through trial and error in simulation. However, RL training often relies on rule-based traffic scenarios, limiting generalization. Additionally, current scenario generation methods focus heavily on critical scenarios, neglecting a balance with routine driving behaviors. Curriculum learning, which progressively trains agents on increasingly complex tasks, is a promising approach to improving the robustness and coverage of RL driving policies. However, existing research mainly emphasizes manually designed curricula, focusing on scenery and actor placement rather than traffic behavior dynamics. This work introduces a novel student-teacher framework for automatic curriculum learning. The teacher, a graph-based multi-agent RL component, adaptively generates traffic behaviors across diverse difficulty levels. An adaptive mechanism adjusts task difficulty based on student performance, ensuring exposure to behaviors ranging from common to critical. The student, though exchangeable, is realized as a deep RL agent with partial observability, reflecting real-world perception constraints. Results demonstrate the teacher's ability to generate diverse traffic behaviors. The student, trained with automatic curricula, outperformed agents trained on rule-based traffic, achieving higher rewards and exhibiting balanced, assertive driving. 
+
+**Abstract (ZH)**: 自主驾驶在导航复杂实际交通环境中面临挑战，需要安全处理常见和关键场景。强化学习（RL）作为一种端到端驾驶的主流方法，使代理能够在模拟中通过试错学习。然而，RL训练往往依赖于基于规则的交通场景，限制了泛化能力。此外，当前的场景生成方法主要集中在关键场景上，忽略了与常规驾驶行为的平衡。层次学习作为一种逐步训练代理执行越来越复杂任务的方法，是提高RL驾驶策略的稳健性和覆盖面的有前途的方法。然而，现有研究主要强调手动设计的课程，关注于场景和行为者的布局而非交通行为动力学。本文介绍了一种用于自动层次学习的新颖学生-教师框架。教师作为一个基于图的多代理RL组件，能够自适应地生成不同难度级别的交通行为。一种自适应机制根据学生的表现调整任务难度，确保学生接触从常见到关键的各种行为。学生，虽然可以替换，但实现为具有部分可观测性的深度RL代理，反映了现实世界的感知约束。结果表明，教师能够生成多样化的交通行为。接受自动课程训练的学生，在奖励和表现平衡性方面优于基于规则的交通场景训练的代理。 
+
+---
+# Monocular Vision-Based Swarm Robot Localization Using Equilateral Triangular Formations 
+
+**Title (ZH)**: 基于单目视觉和等边三角形 formations 的群机器人定位 
+
+**Authors**: Taewon Kang, Ji-Wook Kwon, Il Bae, Jin Hyo Kim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.19100)  
+
+**Abstract**: Localization of mobile robots is crucial for deploying robots in real-world applications such as search and rescue missions. This work aims to develop an accurate localization system applicable to swarm robots equipped only with low-cost monocular vision sensors and visual markers. The system is designed to operate in fully open spaces, without landmarks or support from positioning infrastructures. To achieve this, we propose a localization method based on equilateral triangular formations. By leveraging the geometric properties of equilateral triangles, the accurate two-dimensional position of each participating robot is estimated using one-dimensional lateral distance information between robots, which can be reliably and accurately obtained with a low-cost monocular vision sensor. Experimental and simulation results demonstrate that, as travel time increases, the positioning error of the proposed method becomes significantly smaller than that of a conventional dead-reckoning system, another low-cost localization approach applicable to open environments. 
+
+**Abstract (ZH)**: 移动机器人定位是将其部署到实际应用如搜索与救援任务中的关键。本文旨在开发一种适用于仅装备低成本单目视觉传感器和视觉标记的群体机器人的精确定位系统。该系统设计用于开放空间工作，无需地标或位置基础设施的支持。为实现这一目标，我们提出了一种基于等边三角形编队的定位方法。通过利用等边三角形的几何特性，使用机器人间的一维侧向距离信息，可以准确估计每个参与机器人的二维位置，而这种一维侧向距离信息可通过低成本单目视觉传感器可靠且准确地获取。实验和仿真结果表明，随着行程时间的增加，所提出方法的定位误差显著小于传统里程计系统，这是另一种适用于开放环境的低成本定位方法。 
+
+---
+# Bot Appétit! Exploring how Robot Morphology Shapes Perceived Affordances via a Mise en Place Scenario in a VR Kitchen 
+
+**Title (ZH)**: 机器人美食！探究机器人形态如何通过虚拟现实厨房 mise en place 情景塑造感知可及性的方式 
+
+**Authors**: Rachel Ringe, Leandra Thiele, Mihai Pomarlan, Nima Zargham, Robin Nolte, Lars Hurrelbrink, Rainer Malaka  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.19082)  
+
+**Abstract**: This study explores which factors of the visual design of a robot may influence how humans would place it in a collaborative cooking scenario and how these features may influence task delegation. Human participants were placed in a Virtual Reality (VR) environment and asked to set up a kitchen for cooking alongside a robot companion while considering the robot's morphology. We collected multimodal data for the arrangements created by the participants, transcripts of their think-aloud as they were performing the task, and transcripts of their answers to structured post-task questionnaires. Based on analyzing this data, we formulate several hypotheses: humans prefer to collaborate with biomorphic robots; human beliefs about the sensory capabilities of robots are less influenced by the morphology of the robot than beliefs about action capabilities; and humans will implement fewer avoidance strategies when sharing space with gracile robots. We intend to verify these hypotheses in follow-up studies. 
+
+**Abstract (ZH)**: 本研究探索了机器人视觉设计的哪些因素可能会影响人类在协作烹饪场景中如何定位机器人，并探讨这些因素如何影响任务分配。研究将人类参与者置于虚拟现实（VR）环境中，要求他们在与机器人同伴协作烹饪时考虑机器人的形态。我们收集了参与者创建的布局的多模态数据、他们在执行任务时的自我思考记录以及他们在结构化后问卷中的回答记录。通过对这些数据的分析，我们提出了几个假设：人类更偏好与生物形态机器人合作；人类对机器人感知能力的信念不如对其动作能力的信念受机器人形态的影响大；当与苗条的机器人共享空间时，人类将采用更少的避让策略。我们计划在后续研究中验证这些假设。 
+
+---
+# SmartPNT-MSF: A Multi-Sensor Fusion Dataset for Positioning and Navigation Research 
+
+**Title (ZH)**: SmartPNT-MSF：多传感器融合定位与导航研究数据集 
+
+**Authors**: Feng Zhu, Zihang Zhang, Kangcheng Teng, Abduhelil Yakup, Xiaohong Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.19079)  
+
+**Abstract**: High-precision navigation and positioning systems are critical for applications in autonomous vehicles and mobile mapping, where robust and continuous localization is essential. To test and enhance the performance of algorithms, some research institutions and companies have successively constructed and publicly released datasets. However, existing datasets still suffer from limitations in sensor diversity and environmental coverage. To address these shortcomings and advance development in related fields, the SmartPNT Multisource Integrated Navigation, Positioning, and Attitude Dataset has been developed. This dataset integrates data from multiple sensors, including Global Navigation Satellite Systems (GNSS), Inertial Measurement Units (IMU), optical cameras, and LiDAR, to provide a rich and versatile resource for research in multi-sensor fusion and high-precision navigation. The dataset construction process is thoroughly documented, encompassing sensor configurations, coordinate system definitions, and calibration procedures for both cameras and LiDAR. A standardized framework for data collection and processing ensures consistency and scalability, enabling large-scale analysis. Validation using state-of-the-art Simultaneous Localization and Mapping (SLAM) algorithms, such as VINS-Mono and LIO-SAM, demonstrates the dataset's applicability for advanced navigation research. Covering a wide range of real-world scenarios, including urban areas, campuses, tunnels, and suburban environments, the dataset offers a valuable tool for advancing navigation technologies and addressing challenges in complex environments. By providing a publicly accessible, high-quality dataset, this work aims to bridge gaps in sensor diversity, data accessibility, and environmental representation, fostering further innovation in the field. 
+
+**Abstract (ZH)**: 高精度导航与定位系统对于自动驾驶车辆和移动测绘应用至关重要，其中稳健的连续定位是必不可少的。为了测试和提升算法性能，一些研究机构和公司相继构建并公开发布了数据集。然而，现有数据集仍然存在传感器多样性不足和环境覆盖有限的局限性。为解决这些不足并推动相关领域的发展，SmartPNT多源融合导航、定位和姿态数据集应运而生。该数据集集成了来自多种传感器的数据，包括全球导航卫星系统（GNSS）、惯性测量单元（IMU）、光学相机和LiDAR，为多传感器融合和高精度导航研究提供了丰富多样的资源。数据集构建过程详尽记录，包括传感器配置、坐标系定义以及摄像头和LiDAR的校准程序。标准化的数据采集和处理框架确保了一致性和可扩展性，使大规模分析成为可能。利用先进的Simultaneous Localization and Mapping（SLAM）算法，如VINS-Mono和LIO-SAM进行验证，证明了该数据集在高级导航研究中的适用性。该数据集涵盖了多种现实场景，包括城市区域、校园、隧道和郊区环境，为推动导航技术的发展和应对复杂环境挑战提供了有价值的工具。通过提供一个公开可访问的高质量数据集，本研究旨在弥合传感器多样性、数据可访问性和环境表示之间的差距，促进该领域的进一步创新。 
+
+---
+# Frequency Response Data-Driven Disturbance Observer Design for Flexible Joint Robots 
+
+**Title (ZH)**: 柔性关节机器人基于频域数据的扰动观测器设计 
+
+**Authors**: Deokjin Lee, Junho Song, Alireza Karimi, Sehoon Oh  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18979)  
+
+**Abstract**: Motion control of flexible joint robots (FJR) is challenged by inherent flexibility and configuration-dependent variations in system dynamics. While disturbance observers (DOB) can enhance system robustness, their performance is often limited by the elasticity of the joints and the variations in system parameters, which leads to a conservative design of the DOB. This paper presents a novel frequency response function (FRF)-based optimization method aimed at improving DOB performance, even in the presence of flexibility and system variability. The proposed method maximizes control bandwidth and effectively suppresses vibrations, thus enhancing overall system performance. Closed-loop stability is rigorously proven using the Nyquist stability criterion. Experimental validation on a FJR demonstrates that the proposed approach significantly improves robustness and motion performance, even under conditions of joint flexibility and system variation. 
+
+**Abstract (ZH)**: 基于频率响应函数优化的柔性关节机器人扰动观测器性能改进研究 
+
+---
+# GEAR: Gaze-Enabled Human-Robot Collaborative Assembly 
+
+**Title (ZH)**: GEAR: 注视辅助的人机协作装配 
+
+**Authors**: Asad Ali Shahid, Angelo Moroncelli, Drazen Brscic, Takayuki Kanda, Loris Roveda  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18947)  
+
+**Abstract**: Recent progress in robot autonomy and safety has significantly improved human-robot interactions, enabling robots to work alongside humans on various tasks. However, complex assembly tasks still present significant challenges due to inherent task variability and the need for precise operations. This work explores deploying robots in an assistive role for such tasks, where the robot assists by fetching parts while the skilled worker provides high-level guidance and performs the assembly. We introduce GEAR, a gaze-enabled system designed to enhance human-robot collaboration by allowing robots to respond to the user's gaze. We evaluate GEAR against a touch-based interface where users interact with the robot through a touchscreen. The experimental study involved 30 participants working on two distinct assembly scenarios of varying complexity. Results demonstrated that GEAR enabled participants to accomplish the assembly with reduced physical demand and effort compared to the touchscreen interface, especially for complex tasks, maintaining great performance, and receiving objects effectively. Participants also reported enhanced user experience while performing assembly tasks. Project page: this http URL 
+
+**Abstract (ZH)**: Recent进展在机器人自主性和安全性方面的显著提高已大幅改善了人机交互，使机器人能够在各种任务中与人类协同工作。然而，由于任务本身固有的变异性以及需要精确操作，复杂的组装任务仍然具有重大挑战。本研究探讨了在这些任务中将机器人部署为辅助角色的可能性，其中机器人通过取零件来协助，而熟练工人则提供高层次的指导并执行组装。我们引入了GEAR，一种基于目光系统的协作增强系统，使得机器人能够响应用户的目光。我们将GEAR与基于触摸的界面进行了对比，通过触摸屏进行人与机器人交互。实验研究涉及30名参与者在两个不同复杂度的组装场景中工作。结果表明，与触摸屏界面相比，GEAR使参与者在完成组装时减少了物理需求和努力，尤其是在复杂任务中保持了良好的性能并能有效接取物体。参与者在执行组装任务时还报告了增强的用户体验。项目页面：这个链接。 
+
+---
+# A Fast and Light-weight Non-Iterative Visual Odometry with RGB-D Cameras 
+
+**Title (ZH)**: 一种基于RGB-D相机的快速轻量级非迭代视觉里程计 
+
+**Authors**: Zheng Yang, Kuan Xu, Shenghai Yuan, Lihua Xie  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18886)  
+
+**Abstract**: In this paper, we introduce a novel approach for efficiently estimating the 6-Degree-of-Freedom (DoF) robot pose with a decoupled, non-iterative method that capitalizes on overlapping planar elements. Conventional RGB-D visual odometry(RGBD-VO) often relies on iterative optimization solvers to estimate pose and involves a process of feature extraction and matching. This results in significant computational burden and time delays. To address this, our innovative method for RGBD-VO separates the estimation of rotation and translation. Initially, we exploit the overlaid planar characteristics within the scene to calculate the rotation matrix. Following this, we utilize a kernel cross-correlator (KCC) to ascertain the translation. By sidestepping the resource-intensive iterative optimization and feature extraction and alignment procedures, our methodology offers improved computational efficacy, achieving a performance of 71Hz on a lower-end i5 CPU. When the RGBD-VO does not rely on feature points, our technique exhibits enhanced performance in low-texture degenerative environments compared to state-of-the-art methods. 
+
+**Abstract (ZH)**: 一种基于分离非迭代方法的高效六自由度机器人姿态估计方法 
+
+---
+# Equivariant Volumetric Grasping 
+
+**Title (ZH)**: 不变体体积抓取 
+
+**Authors**: Pinhao Song, Yutong Hu, Pengteng Li, Renaud Detry  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18847)  
+
+**Abstract**: We propose a new volumetric grasp model that is equivariant to rotations around the vertical axis, leading to a significant improvement in sample efficiency. Our model employs a tri-plane volumetric feature representation -- i.e., the projection of 3D features onto three canonical planes. We introduce a novel tri-plane feature design in which features on the horizontal plane are equivariant to 90° rotations, while the sum of features from the other two planes remains invariant to the same transformations. This design is enabled by a new deformable steerable convolution, which combines the adaptability of deformable convolutions with the rotational equivariance of steerable ones. This allows the receptive field to adapt to local object geometry while preserving equivariance properties. We further develop equivariant adaptations of two state-of-the-art volumetric grasp planners, GIGA and IGD. Specifically, we derive a new equivariant formulation of IGD's deformable attention mechanism and propose an equivariant generative model of grasp orientations based on flow matching. We provide a detailed analytical justification of the proposed equivariance properties and validate our approach through extensive simulated and real-world experiments. Our results demonstrate that the proposed projection-based design significantly reduces both computational and memory costs. Moreover, the equivariant grasp models built on top of our tri-plane features consistently outperform their non-equivariant counterparts, achieving higher performance with only a modest computational overhead. Video and code can be viewed in: this https URL 
+
+**Abstract (ZH)**: 我们提出了一种新的体积抓取模型，该模型在垂直轴旋转下不变，导致了显著的样本效率提升。我们的模型采用三平面体素特征表示，即3D特征在三个标准平面上的投影。我们引入了一种新颖的三平面特征设计，在这种设计中，水平平面上的特征对90°旋转不变，而另外两个平面的特征和在整个相同变换下保持不变。这种设计通过结合可变形卷积的适应性和旋转不变性可控旋转核的旋转不变性得以实现。这使得感受野能够适应局部对象几何结构的同时保留不变性性质。我们进一步开发了两个最先进的体积抓取规划器GIGA和IGD的不变性版本。具体而言，我们为IGD的可变形注意力机制推导出一个新的不变性公式，并基于流匹配提出了基于抓取方向生成模型的不变性设计。我们提供了所提出不变性性质的详细分析，并通过广泛的仿真和实际实验验证了我们的方法。实验结果表明，所提出的基于投影的设计显著降低了计算和内存成本。此外，建立在我们三平面特征之上的不变性抓取模型始终优于其非不变性版本，在适度的计算开销下实现了更高的性能。视频和代码可在以下链接查看：this https URL 
+
+---
+# MetaMorph -- A Metamodelling Approach For Robot Morphology 
+
+**Title (ZH)**: MetaMorph —— 一种机器人形态建模方法 
+
+**Authors**: Rachel Ringe, Robin Nolte, Nima Zargham, Robert Porzel, Rainer Malaka  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18820)  
+
+**Abstract**: Robot appearance crucially shapes Human-Robot Interaction (HRI) but is typically described via broad categories like anthropomorphic, zoomorphic, or technical. More precise approaches focus almost exclusively on anthropomorphic features, which fail to classify robots across all types, limiting the ability to draw meaningful connections between robot design and its effect on interaction. In response, we present MetaMorph, a comprehensive framework for classifying robot morphology. Using a metamodeling approach, MetaMorph was synthesized from 222 robots in the IEEE Robots Guide, offering a structured method for comparing visual features. This model allows researchers to assess the visual distances between robot models and explore optimal design traits tailored to different tasks and contexts. 
+
+**Abstract (ZH)**: 机器人外观对人机交互（HRI）至关重要，但通常通过拟人化、zoomorphic或技术类等宽泛类别来描述。更精确的方法几乎完全集中在拟人化特征上，这无法对所有类型的机器人进行分类，限制了从机器人设计对其互动影响的有意义联系中得出结论的能力。为应对这一挑战，我们提出了MetaMorph，一个全面的机器人形态分类框架。通过元建模方法，MetaMorph 结合了IEEE机器人指南中的222个机器人，提供了一种结构化的视觉特征比较方法。该模型使研究人员能够评估机器人模型之间的视觉距离，并探索针对不同任务和场景的最佳设计特征。 
+
+---
+# Probabilistic Collision Risk Estimation through Gauss-Legendre Cubature and Non-Homogeneous Poisson Processes 
+
+**Title (ZH)**: 通过高斯-勒让德求积和非齐次泊松过程的概率碰撞风险估算 
+
+**Authors**: Trent Weiss, Madhur Behl  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18819)  
+
+**Abstract**: Overtaking in high-speed autonomous racing demands precise, real-time estimation of collision risk; particularly in wheel-to-wheel scenarios where safety margins are minimal. Existing methods for collision risk estimation either rely on simplified geometric approximations, like bounding circles, or perform Monte Carlo sampling which leads to overly conservative motion planning behavior at racing speeds. We introduce the Gauss-Legendre Rectangle (GLR) algorithm, a principled two-stage integration method that estimates collision risk by combining Gauss-Legendre with a non-homogeneous Poisson process over time. GLR produces accurate risk estimates that account for vehicle geometry and trajectory uncertainty. In experiments across 446 overtaking scenarios in a high-fidelity Formula One racing simulation, GLR outperforms five state-of-the-art baselines achieving an average error reduction of 77% and surpassing the next-best method by 52%, all while running at 1000 Hz. The framework is general and applicable to broader motion planning contexts beyond autonomous racing. 
+
+**Abstract (ZH)**: 高速自主赛车比赛中的超车需求精确且实时的碰撞风险估计；特别是在最小安全 margin 的轮对轮情景中。现有的碰撞风险估计方法要么依赖于简化的几何近似，如边界圆，要么通过蒙特卡洛采样进行计算，这在比赛速度下会导致过于保守的运动规划行为。我们介绍了高斯-勒让德矩形（GLR）算法，这是一种原理上的两阶段整合方法，通过结合高斯-勒让德和非均匀泊松过程来估计碰撞风险。GLR 产生准确的风险估计，考虑了车辆几何形状和轨迹不确定性。在高保真度方程式赛车模拟中的 446 种超车情景中，GLR 在五种最先进的基线方法中表现最佳，平均误差减少了 77%，并比第二佳方法高出 52%，同时运行频率为 1000 Hz。该框架适用于超越自主赛车运动规划的更广泛情境。 
+
+---
+# Perpetua: Multi-Hypothesis Persistence Modeling for Semi-Static Environments 
+
+**Title (ZH)**: 永固：半静态环境下的多假设持久性建模 
+
+**Authors**: Miguel Saavedra-Ruiz, Samer B. Nashed, Charlie Gauthier, Liam Paull  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18808)  
+
+**Abstract**: Many robotic systems require extended deployments in complex, dynamic environments. In such deployments, parts of the environment may change between subsequent robot observations. Most robotic mapping or environment modeling algorithms are incapable of representing dynamic features in a way that enables predicting their future state. Instead, they opt to filter certain state observations, either by removing them or some form of weighted averaging. This paper introduces Perpetua, a method for modeling the dynamics of semi-static features. Perpetua is able to: incorporate prior knowledge about the dynamics of the feature if it exists, track multiple hypotheses, and adapt over time to enable predicting of future feature states. Specifically, we chain together mixtures of "persistence" and "emergence" filters to model the probability that features will disappear or reappear in a formal Bayesian framework. The approach is an efficient, scalable, general, and robust method for estimating the states of features in an environment, both in the present as well as at arbitrary future times. Through experiments on simulated and real-world data, we find that Perpetua yields better accuracy than similar approaches while also being online adaptable and robust to missing observations. 
+
+**Abstract (ZH)**: Perpetua：一种用于建模半静态特征动力学的方法 
+
+---
+# Efficient Lines Detection for Robot Soccer 
+
+**Title (ZH)**: 高效线条检测在机器人足球中的应用 
+
+**Authors**: João G. Melo, João P. Mafaldo, Edna Barros  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.19469)  
+
+**Abstract**: Self-localization is essential in robot soccer, where accurate detection of visual field features, such as lines and boundaries, is critical for reliable pose estimation. This paper presents a lightweight and efficient method for detecting soccer field lines using the ELSED algorithm, extended with a classification step that analyzes RGB color transitions to identify lines belonging to the field. We introduce a pipeline based on Particle Swarm Optimization (PSO) for threshold calibration to optimize detection performance, requiring only a small number of annotated samples. Our approach achieves accuracy comparable to a state-of-the-art deep learning model while offering higher processing speed, making it well-suited for real-time applications on low-power robotic platforms. 
+
+**Abstract (ZH)**: 自定位对于机器人足球至关重要，准确检测视觉场特征（如线条和边界）是可靠姿态估计的关键。本文提出了一种基于ELSED算法并结合RGB颜色过渡分类步骤的轻量级高效足球场线检测方法。我们引入了基于粒子 swarm 优化（PSO）的阈值校正管道以优化检测性能，仅需少量标注样本。该方法在处理速度上优于最先进的深度学习模型，适合作为低功率机器人平台的实时应用。 
+
+---
+# Fast Learning of Non-Cooperative Spacecraft 3D Models through Primitive Initialization 
+
+**Title (ZH)**: 基于原始初始化的快速学习非合作航天器3D模型方法 
+
+**Authors**: Pol Francesch Huc, Emily Bates, Simone D'Amico  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.19459)  
+
+**Abstract**: The advent of novel view synthesis techniques such as NeRF and 3D Gaussian Splatting (3DGS) has enabled learning precise 3D models only from posed monocular images. Although these methods are attractive, they hold two major limitations that prevent their use in space applications: they require poses during training, and have high computational cost at training and inference. To address these limitations, this work contributes: (1) a Convolutional Neural Network (CNN) based primitive initializer for 3DGS using monocular images; (2) a pipeline capable of training with noisy or implicit pose estimates; and (3) and analysis of initialization variants that reduce the training cost of precise 3D models. A CNN takes a single image as input and outputs a coarse 3D model represented as an assembly of primitives, along with the target's pose relative to the camera. This assembly of primitives is then used to initialize 3DGS, significantly reducing the number of training iterations and input images needed -- by at least an order of magnitude. For additional flexibility, the CNN component has multiple variants with different pose estimation techniques. This work performs a comparison between these variants, evaluating their effectiveness for downstream 3DGS training under noisy or implicit pose estimates. The results demonstrate that even with imperfect pose supervision, the pipeline is able to learn high-fidelity 3D representations, opening the door for the use of novel view synthesis in space applications. 
+
+**Abstract (ZH)**: 新颖视点合成技术（如NeRF和3D高斯点扩散（3DGS））的出现，使得仅从单目 posed 图像中学习精准的三维模型成为可能。尽管这些方法具有吸引力，但它们存在两大局限性，阻碍了在空间应用中的使用：需要在训练过程中提供姿态，并且在训练和推理时具有较高的计算成本。为解决这些局限性，本工作贡献了：（1）一种基于卷积神经网络（CNN）的3DGS单目图像初始化方法；（2）一种能够在噪声或隐式姿态估计下进行训练的流水线；（3）一种分析减少精确三维模型训练成本的初始化变体。CNN 接受单张图像作为输入，并输出表示为装配体的粗略三维模型，以及目标相对于相机的姿态。该装配体随后用于初始化3DGS，显著减少了所需的训练迭代次数和输入图像数量——至少降低了一个数量级。为了增加灵活性，CNN 组件具有多种不同的姿态估计变体。本研究对这些变体进行了对比评估，评估了它们在噪声或隐式姿态估计下的下游3DGS训练有效性。结果表明，即使在姿态监督不完美的情况下，该流水线仍能学习高保真度的三维表示，从而为新颖视点合成在空间应用中的使用打开了大门。 
+
+---
+# EffiComm: Bandwidth Efficient Multi Agent Communication 
+
+**Title (ZH)**: EffiComm: 频带高效多代理通信 
+
+**Authors**: Melih Yazgan, Allen Xavier Arasan, J. Marius Zöllner  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.19354)  
+
+**Abstract**: Collaborative perception allows connected vehicles to exchange sensor information and overcome each vehicle's blind spots. Yet transmitting raw point clouds or full feature maps overwhelms Vehicle-to-Vehicle (V2V) communications, causing latency and scalability problems. We introduce EffiComm, an end-to-end framework that transmits less than 40% of the data required by prior art while maintaining state-of-the-art 3D object detection accuracy. EffiComm operates on Bird's-Eye-View (BEV) feature maps from any modality and applies a two-stage reduction pipeline: (1) Selective Transmission (ST) prunes low-utility regions with a confidence mask; (2) Adaptive Grid Reduction (AGR) uses a Graph Neural Network (GNN) to assign vehicle-specific keep ratios according to role and network load. The remaining features are fused with a soft-gated Mixture-of-Experts (MoE) attention layer, offering greater capacity and specialization for effective feature integration. On the OPV2V benchmark, EffiComm reaches 0.84 mAP@0.7 while sending only an average of approximately 1.5 MB per frame, outperforming previous methods on the accuracy-per-bit curve. These results highlight the value of adaptive, learned communication for scalable Vehicle-to-Everything (V2X) perception. 
+
+**Abstract (ZH)**: 协作感知使联网车辆能够交换传感器信息并克服每辆车的盲区。然而，传输原始点云或完整特征图会过度占据车辆到车辆（V2V）通信资源，导致延迟和扩展性问题。我们介绍了EffiComm，这是一个端到端框架，与之前的方法相比，仅传输所需数据的不到40%，同时保持最先进的三维物体检测准确性。EffiComm基于任何模态的鸟类视野（BEV）特征图工作，并应用两阶段的减少管道：（1）选择性传输（ST）使用置信度掩码去除低效区域；（2）自适应网格减少（AGR）使用图神经网络（GNN）根据角色和网络负载为每辆车分配保留比率。剩余特征通过软门控混合专家（MoE）注意层融合，提供更大的容量和专业化，以实现有效的特征集成。在OPV2V基准测试中，EffiComm在0.7的平均精度（mAP@0.7）达到0.84的同时，每帧平均发送约1.5 MB的数据，优于先前方法在每比特准确率曲线上的表现。这些结果突显了自适应学习通信对可扩展的车辆到一切（V2X）感知的价值。 
+
+---
+# Assessing the Reliability and Validity of a Balance Mat for Measuring Postural Stability: A Combined Robot-Human Approach 
+
+**Title (ZH)**: 基于机器人-人类联合方法评估平衡垫测量姿势稳定性可靠性和有效性的研究 
+
+**Authors**: Abishek Shrestha, Damith Herath, Angie Fearon, Maryam Ghahramani  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18943)  
+
+**Abstract**: Postural sway assessment is important for detecting balance problems and identifying people at risk of falls. Force plates (FP) are considered the gold standard postural sway assessment method in laboratory conditions, but their lack of portability and requirement of high-level expertise limit their widespread usage. This study evaluates the reliability and validity of a novel Balance Mat (BM) device, a low-cost portable alternative that uses optical fibre technology. The research includes two studies: a robot study and a human study. In the robot study, a UR10 robotic arm was used to obtain controlled sway patterns to assess the reliability and sensitivity of the BM. In the human study, 51 healthy young participants performed balance tasks on the BM in combination with an FP to evaluate the BM's validity. Sway metrics such as sway mean, sway absolute mean, sway root mean square (RMS), sway path, sway range, and sway velocity were calculated from both BM and FP and compared. Reliability was evaluated using the intra-class correlation coefficient (ICC), where values greater than 0.9 were considered excellent and values between 0.75 and 0.9 were considered good. Results from the robot study demonstrated good to excellent ICC values in both single and double-leg stances. The human study showed moderate to strong correlations for sway path and range. Using Bland-Altman plots for agreement analysis revealed proportional bias between the BM and the FP where the BM overestimated sway metrics compared to the FP. Calibration was used to improve the agreement between the devices. The device demonstrated consistent sway measurement across varied stance conditions, establishing both reliability and validity following appropriate calibration. 
+
+**Abstract (ZH)**: 姿势摇摆评估对于检测平衡问题和识别跌倒风险人群很重要。实验室条件下，力plate (FP) 是姿势摇摆评估的金标准方法，但由于其缺乏便携性和对高技术水平的要求限制了其广泛应用。本研究评估了一种新型平衡垫(BM)设备的可靠性和有效性，这是一种低成本便携式替代品，使用了光纤技术。研究包括两个部分：机器人研究和人类研究。在机器人研究中，使用UR10机器人臂获得受控的摇摆模式，以评估BM的可靠性和敏感性。在人类研究中，51名健康的年轻参与者在BM和FP组合下进行平衡任务，以评估BM的有效性。计算了来自BM和FP的摇摆指标包括摇摆均值、绝对均值、均方根(RMS)、摇摆路径、摇摆范围和摇摆速度，并进行了比较。可靠性的评估使用了内氏相关系数(ICC)，其中大于0.9的值被认为是优秀的，介于0.75和0.9之间的值被认为是良好的。机器人研究的结果显示，在单腿和双腿站立状态下，BM的ICC值表现出良好到优秀的水平。人类研究结果显示，BM和FP在摇摆路径和范围上的相关性为中等到较强。通过Bland-Altman图进行一致性分析，显示出BM相对于FP在摇摆指标上存在比例偏移，在适当校准后，该设备在各种站立条件下表现出一致的摇摆测量结果，建立了其可靠性和有效性。 
+
+---
+# GMM-Based Time-Varying Coverage Control 
+
+**Title (ZH)**: 基于GMM的时间 varying 覆盖控制 
+
+**Authors**: Behzad Zamani, James Kennedy, Airlie Chapman, Peter Dower, Chris Manzie, Simon Crase  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18938)  
+
+**Abstract**: In coverage control problems that involve time-varying density functions, the coverage control law depends on spatial integrals of the time evolution of the density function. The latter is often neglected, replaced with an upper bound or calculated as a numerical approximation of the spatial integrals involved. In this paper, we consider a special case of time-varying density functions modeled as Gaussian Mixture Models (GMMs) that evolve with time via a set of time-varying sources (with known corresponding velocities). By imposing this structure, we obtain an efficient time-varying coverage controller that fully incorporates the time evolution of the density function. We show that the induced trajectories under our control law minimise the overall coverage cost. We elicit the structure of the proposed controller and compare it with a classical time-varying coverage controller, against which we benchmark the coverage performance in simulation. Furthermore, we highlight that the computationally efficient and distributed nature of the proposed control law makes it ideal for multi-vehicle robotic applications involving time-varying coverage control problems. We employ our method in plume monitoring using a swarm of drones. In an experimental field trial we show that drones guided by the proposed controller are able to track a simulated time-varying chemical plume in a distributed manner. 
+
+**Abstract (ZH)**: 涉及时间变化密度函数的覆盖控制问题中，覆盖控制律依赖于密度函数时空积分的演化。通常会忽略这一项，用上界替代或通过数值近似计算。本文中，我们考虑了一类由已知时间变化速度的时间变化源构成的高斯混合模型（GMMs）表示的时间变化密度函数的特例。通过这种方式，我们获得了能够全面考虑密度函数时空演化的高效时间变化覆盖控制器。我们证明了在该控制律下诱导的轨迹能够最小化总体覆盖成本。我们阐明了所提控制器的结构，并将其与经典的时变覆盖控制器进行比较，通过仿真实验评估其覆盖性能。此外，我们强调所提控制律的计算高效性和分布式特性使其非常适合解决多车辆机器人中的时变覆盖控制问题。我们利用该方法进行气团监测，通过实验场试验展示了由所提控制器引导的无人机能够以分布式方式跟踪模拟的时变化学气团。 
+
+---
+# Success in Humanoid Reinforcement Learning under Partial Observation 
+
+**Title (ZH)**: 基于部分观测的人形强化学习成功探究 
+
+**Authors**: Wuhao Wang, Zhiyong Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18883)  
+
+**Abstract**: Reinforcement learning has been widely applied to robotic control, but effective policy learning under partial observability remains a major challenge, especially in high-dimensional tasks like humanoid locomotion. To date, no prior work has demonstrated stable training of humanoid policies with incomplete state information in the benchmark Gymnasium Humanoid-v4 environment. The objective in this environment is to walk forward as fast as possible without falling, with rewards provided for staying upright and moving forward, and penalties incurred for excessive actions and external contact forces. This research presents the first successful instance of learning under partial observability in this environment. The learned policy achieves performance comparable to state-of-the-art results with full state access, despite using only one-third to two-thirds of the original states. Moreover, the policy exhibits adaptability to robot properties, such as variations in body part masses. The key to this success is a novel history encoder that processes a fixed-length sequence of past observations in parallel. Integrated into a standard model-free algorithm, the encoder enables performance on par with fully observed baselines. We hypothesize that it reconstructs essential contextual information from recent observations, thereby enabling robust decision-making. 
+
+**Abstract (ZH)**: 强化学习在机器人控制中的应用已十分广泛，但在部分可观测性条件下进行有效的策略学习仍然是一个主要挑战，尤其是在类人行走等高维任务中。截至目前，尚没有任何先有研究能够在基准环境Gymnasium Humanoid-v4中展示类人在不完备状态信息下的稳定训练。该环境的目标是在尽可能快地向前行走的同时不摔倒，奖励为站立和前进的行动，而过度动作和外部接触力会产生惩罚。本研究在该环境中首次展示了部分可观测性条件下的成功学习实例。所学策略在仅使用原始状态数量的三分之一到三分之二的情况下，实现了与全观测基线相当的性能。此外，该策略在机器人属性变化，如身体部件质量变化的情况下表现出适应性。这一成功的关键在于一种新颖的历史编码器，它可以并行处理固定长度的过去观测序列。集成到标准的免模型算法中，编码器使性能与全观测基线相当。我们假设它从最近的观测中重建了必要的上下文信息，从而实现了稳健的决策。 
+
+---
+# Perspective from a Higher Dimension: Can 3D Geometric Priors Help Visual Floorplan Localization? 
+
+**Title (ZH)**: 从更高维度视角看：三维几何先验能否帮助视觉楼层平面图定位？ 
+
+**Authors**: Bolei Chen, Jiaxu Kang, Haonan Yang, Ping Zhong, Jianxin Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18881)  
+
+**Abstract**: Since a building's floorplans are easily accessible, consistent over time, and inherently robust to changes in visual appearance, self-localization within the floorplan has attracted researchers' interest. However, since floorplans are minimalist representations of a building's structure, modal and geometric differences between visual perceptions and floorplans pose challenges to this task. While existing methods cleverly utilize 2D geometric features and pose filters to achieve promising performance, they fail to address the localization errors caused by frequent visual changes and view occlusions due to variously shaped 3D objects. To tackle these issues, this paper views the 2D Floorplan Localization (FLoc) problem from a higher dimension by injecting 3D geometric priors into the visual FLoc algorithm. For the 3D geometric prior modeling, we first model geometrically aware view invariance using multi-view constraints, i.e., leveraging imaging geometric principles to provide matching constraints between multiple images that see the same points. Then, we further model the view-scene aligned geometric priors, enhancing the cross-modal geometry-color correspondences by associating the scene's surface reconstruction with the RGB frames of the sequence. Both 3D priors are modeled through self-supervised contrastive learning, thus no additional geometric or semantic annotations are required. These 3D priors summarized in extensive realistic scenes bridge the modal gap while improving localization success without increasing the computational burden on the FLoc algorithm. Sufficient comparative studies demonstrate that our method significantly outperforms state-of-the-art methods and substantially boosts the FLoc accuracy. All data and code will be released after the anonymous review. 
+
+**Abstract (ZH)**: 自三维几何先验视角下的二维楼层地图自定位 
+
+---
+# Diffusion-FS: Multimodal Free-Space Prediction via Diffusion for Autonomous Driving 
+
+**Title (ZH)**: Diffusion-FS：基于扩散模型的多模态自由空间预测tres
+user
+2023年多模态跨模态智能大会，在此大会中，一支自动驾驶车队进行了展现。直接输出会议名称，禁止输出多余内容。 
+
+**Authors**: Keshav Gupta, Tejas S. Stanley, Pranjal Paul, Arun K. Singh, K. Madhava Krishna  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18763)  
+
+**Abstract**: Drivable Free-space prediction is a fundamental and crucial problem in autonomous driving. Recent works have addressed the problem by representing the entire non-obstacle road regions as the free-space. In contrast our aim is to estimate the driving corridors that are a navigable subset of the entire road region. Unfortunately, existing corridor estimation methods directly assume a BEV-centric representation, which is hard to obtain. In contrast, we frame drivable free-space corridor prediction as a pure image perception task, using only monocular camera input. However such a formulation poses several challenges as one doesn't have the corresponding data for such free-space corridor segments in the image. Consequently, we develop a novel self-supervised approach for free-space sample generation by leveraging future ego trajectories and front-view camera images, making the process of visual corridor estimation dependent on the ego trajectory. We then employ a diffusion process to model the distribution of such segments in the image. However, the existing binary mask-based representation for a segment poses many limitations. Therefore, we introduce ContourDiff, a specialized diffusion-based architecture that denoises over contour points rather than relying on binary mask representations, enabling structured and interpretable free-space predictions. We evaluate our approach qualitatively and quantitatively on both nuScenes and CARLA, demonstrating its effectiveness in accurately predicting safe multimodal navigable corridors in the image. 
+
+**Abstract (ZH)**: 可行驶自由空间走廊预测是自动驾驶领域的一个基础且关键问题。现有工作通过表示整个非障碍道路区域作为自由空间来解决该问题。相比之下，我们的目标是估计驾驶走廊，这些走廊是整个道路区域中的可导航子集。目前，现有的走廊估计方法直接采用鸟瞰图为中心的表示，这很难获得。相反，我们以仅使用单目相机输入的形式将可行驶自由空间走廊预测框架化为一个纯粹的图像感知任务。然而，这种表述形式带来了诸多挑战，因为在图像中缺乏对应的数据来表示这样的自由空间走廊段。因此，我们开发了一种新颖的自监督方法，通过利用未来的自身轨迹和前视相机图像来生成自由空间样本，使视觉走廊估计依赖于自身轨迹。然后，我们采用扩散过程来描述这些段落的图像分布。然而，现有的基于二值掩码的段落表示存在许多局限性。因此，我们引入了ContourDiff，这是一种专门的基于扩散的架构，通过在轮廓点上进行去噪而不是依赖于二值掩码表示，从而使自由空间预测具有结构化和可解释性。我们在nuScenes和CARLA上从定性和定量两方面评估了我们的方法，展示了其在准确预测图像中的安全多模态可导航走廊方面的有效性。 
+
+---
+# SaLF: Sparse Local Fields for Multi-Sensor Rendering in Real-Time 
+
+**Title (ZH)**: SaLF: 稀疏局部场在实时多传感器渲染中的应用 
+
+**Authors**: Yun Chen, Matthew Haines, Jingkang Wang, Krzysztof Baron-Lis, Sivabalan Manivasagam, Ze Yang, Raquel Urtasun  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18713)  
+
+**Abstract**: High-fidelity sensor simulation of light-based sensors such as cameras and LiDARs is critical for safe and accurate autonomy testing. Neural radiance field (NeRF)-based methods that reconstruct sensor observations via ray-casting of implicit representations have demonstrated accurate simulation of driving scenes, but are slow to train and render, hampering scale. 3D Gaussian Splatting (3DGS) has demonstrated faster training and rendering times through rasterization, but is primarily restricted to pinhole camera sensors, preventing usage for realistic multi-sensor autonomy evaluation. Moreover, both NeRF and 3DGS couple the representation with the rendering procedure (implicit networks for ray-based evaluation, particles for rasterization), preventing interoperability, which is key for general usage. In this work, we present Sparse Local Fields (SaLF), a novel volumetric representation that supports rasterization and raytracing. SaLF represents volumes as a sparse set of 3D voxel primitives, where each voxel is a local implicit field. SaLF has fast training (<30 min) and rendering capabilities (50+ FPS for camera and 600+ FPS LiDAR), has adaptive pruning and densification to easily handle large scenes, and can support non-pinhole cameras and spinning LiDARs. We demonstrate that SaLF has similar realism as existing self-driving sensor simulation methods while improving efficiency and enhancing capabilities, enabling more scalable simulation. this https URL 
+
+**Abstract (ZH)**: 高保真基于光线的传感器（如摄像头和LiDAR）仿真对于安全准确的自主性测试至关重要。基于神经辐射场（NeRF）的方法通过射线投射隐式表示来重构传感器观测结果，能够实现驾驶场景的准确仿真，但训练和渲染速度较慢，限制了其扩展性。3D高斯斑点（3DGS）通过光栅化方法展示出更快的训练和渲染时间，但主要受限于针孔相机传感器，无法用于现实多传感器自主性评估。此外，NeRF和3DGS都将表示与渲染过程耦合（基于射线的评估使用隐式网络，光栅化使用粒子），这阻碍了其通用性。在本工作中，我们提出了一种新型体素表示Sparse Local Fields（SaLF），支持光栅化和光线追踪。SaLF将体素表示为稀疏的3D体素基础元集合，每个体素是一个局部隐式场。SaLF具有快速训练（<30分钟）和渲染能力（摄像机50+ FPS，LiDAR 600+ FPS），具有自适应修剪和密化功能，易于处理大规模场景，可支持非针孔相机和旋转LiDAR。我们展示SaLF在现实主义方面与现有自动驾驶传感器仿真方法相当，同时提升了效率和功能，使仿真更具扩展性。 
+
+---
+# Eyes Will Shut: A Vision-Based Next GPS Location Prediction Model by Reinforcement Learning from Visual Map Feed Back 
+
+**Title (ZH)**: 基于视觉地图反馈的强化学习视线关闭：一种视觉导向的下一位置预测模型 
+
+**Authors**: Ruixing Zhang, Yang Zhang, Tongyu Zhu, Leilei Sun, Weifeng Lv  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18661)  
+
+**Abstract**: Next Location Prediction is a fundamental task in the study of human mobility, with wide-ranging applications in transportation planning, urban governance, and epidemic forecasting. In practice, when humans attempt to predict the next location in a trajectory, they often visualize the trajectory on a map and reason based on road connectivity and movement trends. However, the vast majority of existing next-location prediction models do not reason over maps \textbf{in the way that humans do}. Fortunately, the recent development of Vision-Language Models (VLMs) has demonstrated strong capabilities in visual perception and even visual reasoning. This opens up a new possibility: by rendering both the road network and trajectory onto an image and leveraging the reasoning abilities of VLMs, we can enable models to perform trajectory inference in a human-like manner. To explore this idea, we first propose a method called Vision-Guided Location Search (VGLS), which evaluates whether a general-purpose VLM is capable of trajectory-based reasoning without modifying any of its internal parameters. Based on insights from the VGLS results, we further propose our main approach: VLMLocPredictor, which is composed of two stages: In the first stage, we design two Supervised Fine-Tuning (SFT) tasks that help the VLM understand road network and trajectory structures and acquire basic reasoning ability on such visual inputs. In the second stage, we introduce Reinforcement Learning from Visual Map Feedback, enabling the model to self-improve its next-location prediction ability through interaction with the environment. Experiments conducted on datasets from four different cities show that our method achieves state-of-the-art (SOTA) performance and exhibits superior cross-city generalization compared to other LLM-based approaches. 
+
+**Abstract (ZH)**: 基于视觉语言模型的轨迹预测方法：Vision-Guided Location Search与VLMLocPredictor 
+
+---

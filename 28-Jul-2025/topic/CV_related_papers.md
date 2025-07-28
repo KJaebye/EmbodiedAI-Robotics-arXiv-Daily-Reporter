@@ -1,0 +1,260 @@
+# SmartPNT-MSF: A Multi-Sensor Fusion Dataset for Positioning and Navigation Research 
+
+**Title (ZH)**: SmartPNT-MSF：多传感器融合定位与导航研究数据集 
+
+**Authors**: Feng Zhu, Zihang Zhang, Kangcheng Teng, Abduhelil Yakup, Xiaohong Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.19079)  
+
+**Abstract**: High-precision navigation and positioning systems are critical for applications in autonomous vehicles and mobile mapping, where robust and continuous localization is essential. To test and enhance the performance of algorithms, some research institutions and companies have successively constructed and publicly released datasets. However, existing datasets still suffer from limitations in sensor diversity and environmental coverage. To address these shortcomings and advance development in related fields, the SmartPNT Multisource Integrated Navigation, Positioning, and Attitude Dataset has been developed. This dataset integrates data from multiple sensors, including Global Navigation Satellite Systems (GNSS), Inertial Measurement Units (IMU), optical cameras, and LiDAR, to provide a rich and versatile resource for research in multi-sensor fusion and high-precision navigation. The dataset construction process is thoroughly documented, encompassing sensor configurations, coordinate system definitions, and calibration procedures for both cameras and LiDAR. A standardized framework for data collection and processing ensures consistency and scalability, enabling large-scale analysis. Validation using state-of-the-art Simultaneous Localization and Mapping (SLAM) algorithms, such as VINS-Mono and LIO-SAM, demonstrates the dataset's applicability for advanced navigation research. Covering a wide range of real-world scenarios, including urban areas, campuses, tunnels, and suburban environments, the dataset offers a valuable tool for advancing navigation technologies and addressing challenges in complex environments. By providing a publicly accessible, high-quality dataset, this work aims to bridge gaps in sensor diversity, data accessibility, and environmental representation, fostering further innovation in the field. 
+
+**Abstract (ZH)**: 高精度导航与定位系统对于自动驾驶车辆和移动测绘应用至关重要，其中稳健的连续定位是必不可少的。为了测试和提升算法性能，一些研究机构和公司相继构建并公开发布了数据集。然而，现有数据集仍然存在传感器多样性不足和环境覆盖有限的局限性。为解决这些不足并推动相关领域的发展，SmartPNT多源融合导航、定位和姿态数据集应运而生。该数据集集成了来自多种传感器的数据，包括全球导航卫星系统（GNSS）、惯性测量单元（IMU）、光学相机和LiDAR，为多传感器融合和高精度导航研究提供了丰富多样的资源。数据集构建过程详尽记录，包括传感器配置、坐标系定义以及摄像头和LiDAR的校准程序。标准化的数据采集和处理框架确保了一致性和可扩展性，使大规模分析成为可能。利用先进的Simultaneous Localization and Mapping（SLAM）算法，如VINS-Mono和LIO-SAM进行验证，证明了该数据集在高级导航研究中的适用性。该数据集涵盖了多种现实场景，包括城市区域、校园、隧道和郊区环境，为推动导航技术的发展和应对复杂环境挑战提供了有价值的工具。通过提供一个公开可访问的高质量数据集，本研究旨在弥合传感器多样性、数据可访问性和环境表示之间的差距，促进该领域的进一步创新。 
+
+---
+# A Fast and Light-weight Non-Iterative Visual Odometry with RGB-D Cameras 
+
+**Title (ZH)**: 一种基于RGB-D相机的快速轻量级非迭代视觉里程计 
+
+**Authors**: Zheng Yang, Kuan Xu, Shenghai Yuan, Lihua Xie  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18886)  
+
+**Abstract**: In this paper, we introduce a novel approach for efficiently estimating the 6-Degree-of-Freedom (DoF) robot pose with a decoupled, non-iterative method that capitalizes on overlapping planar elements. Conventional RGB-D visual odometry(RGBD-VO) often relies on iterative optimization solvers to estimate pose and involves a process of feature extraction and matching. This results in significant computational burden and time delays. To address this, our innovative method for RGBD-VO separates the estimation of rotation and translation. Initially, we exploit the overlaid planar characteristics within the scene to calculate the rotation matrix. Following this, we utilize a kernel cross-correlator (KCC) to ascertain the translation. By sidestepping the resource-intensive iterative optimization and feature extraction and alignment procedures, our methodology offers improved computational efficacy, achieving a performance of 71Hz on a lower-end i5 CPU. When the RGBD-VO does not rely on feature points, our technique exhibits enhanced performance in low-texture degenerative environments compared to state-of-the-art methods. 
+
+**Abstract (ZH)**: 一种基于分离非迭代方法的高效六自由度机器人姿态估计方法 
+
+---
+# Equivariant Volumetric Grasping 
+
+**Title (ZH)**: 等变体积抓取 
+
+**Authors**: Pinhao Song, Yutong Hu, Pengteng Li, Renaud Detry  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18847)  
+
+**Abstract**: We propose a new volumetric grasp model that is equivariant to rotations around the vertical axis, leading to a significant improvement in sample efficiency. Our model employs a tri-plane volumetric feature representation -- i.e., the projection of 3D features onto three canonical planes. We introduce a novel tri-plane feature design in which features on the horizontal plane are equivariant to 90° rotations, while the sum of features from the other two planes remains invariant to the same transformations. This design is enabled by a new deformable steerable convolution, which combines the adaptability of deformable convolutions with the rotational equivariance of steerable ones. This allows the receptive field to adapt to local object geometry while preserving equivariance properties. We further develop equivariant adaptations of two state-of-the-art volumetric grasp planners, GIGA and IGD. Specifically, we derive a new equivariant formulation of IGD's deformable attention mechanism and propose an equivariant generative model of grasp orientations based on flow matching. We provide a detailed analytical justification of the proposed equivariance properties and validate our approach through extensive simulated and real-world experiments. Our results demonstrate that the proposed projection-based design significantly reduces both computational and memory costs. Moreover, the equivariant grasp models built on top of our tri-plane features consistently outperform their non-equivariant counterparts, achieving higher performance with only a modest computational overhead. Video and code can be viewed in: this https URL 
+
+**Abstract (ZH)**: 一种equivariant于垂直轴旋转的新体素抓取模型：显著提高样本效率的设计与应用 
+
+---
+# Efficient Lines Detection for Robot Soccer 
+
+**Title (ZH)**: 高效线条检测在机器人足球中的应用 
+
+**Authors**: João G. Melo, João P. Mafaldo, Edna Barros  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.19469)  
+
+**Abstract**: Self-localization is essential in robot soccer, where accurate detection of visual field features, such as lines and boundaries, is critical for reliable pose estimation. This paper presents a lightweight and efficient method for detecting soccer field lines using the ELSED algorithm, extended with a classification step that analyzes RGB color transitions to identify lines belonging to the field. We introduce a pipeline based on Particle Swarm Optimization (PSO) for threshold calibration to optimize detection performance, requiring only a small number of annotated samples. Our approach achieves accuracy comparable to a state-of-the-art deep learning model while offering higher processing speed, making it well-suited for real-time applications on low-power robotic platforms. 
+
+**Abstract (ZH)**: 自定位对于机器人足球至关重要，准确检测视觉场特征（如线条和边界）是可靠姿态估计的关键。本文提出了一种基于ELSED算法并结合RGB颜色过渡分类步骤的轻量级高效足球场线检测方法。我们引入了基于粒子 swarm 优化（PSO）的阈值校正管道以优化检测性能，仅需少量标注样本。该方法在处理速度上优于最先进的深度学习模型，适合作为低功率机器人平台的实时应用。 
+
+---
+# Fast Learning of Non-Cooperative Spacecraft 3D Models through Primitive Initialization 
+
+**Title (ZH)**: 基于原始初始化的快速学习非合作航天器3D模型方法 
+
+**Authors**: Pol Francesch Huc, Emily Bates, Simone D'Amico  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.19459)  
+
+**Abstract**: The advent of novel view synthesis techniques such as NeRF and 3D Gaussian Splatting (3DGS) has enabled learning precise 3D models only from posed monocular images. Although these methods are attractive, they hold two major limitations that prevent their use in space applications: they require poses during training, and have high computational cost at training and inference. To address these limitations, this work contributes: (1) a Convolutional Neural Network (CNN) based primitive initializer for 3DGS using monocular images; (2) a pipeline capable of training with noisy or implicit pose estimates; and (3) and analysis of initialization variants that reduce the training cost of precise 3D models. A CNN takes a single image as input and outputs a coarse 3D model represented as an assembly of primitives, along with the target's pose relative to the camera. This assembly of primitives is then used to initialize 3DGS, significantly reducing the number of training iterations and input images needed -- by at least an order of magnitude. For additional flexibility, the CNN component has multiple variants with different pose estimation techniques. This work performs a comparison between these variants, evaluating their effectiveness for downstream 3DGS training under noisy or implicit pose estimates. The results demonstrate that even with imperfect pose supervision, the pipeline is able to learn high-fidelity 3D representations, opening the door for the use of novel view synthesis in space applications. 
+
+**Abstract (ZH)**: 新颖视点合成技术（如NeRF和3D高斯点扩散（3DGS））的出现，使得仅从单目 posed 图像中学习精准的三维模型成为可能。尽管这些方法具有吸引力，但它们存在两大局限性，阻碍了在空间应用中的使用：需要在训练过程中提供姿态，并且在训练和推理时具有较高的计算成本。为解决这些局限性，本工作贡献了：（1）一种基于卷积神经网络（CNN）的3DGS单目图像初始化方法；（2）一种能够在噪声或隐式姿态估计下进行训练的流水线；（3）一种分析减少精确三维模型训练成本的初始化变体。CNN 接受单张图像作为输入，并输出表示为装配体的粗略三维模型，以及目标相对于相机的姿态。该装配体随后用于初始化3DGS，显著减少了所需的训练迭代次数和输入图像数量——至少降低了一个数量级。为了增加灵活性，CNN 组件具有多种不同的姿态估计变体。本研究对这些变体进行了对比评估，评估了它们在噪声或隐式姿态估计下的下游3DGS训练有效性。结果表明，即使在姿态监督不完美的情况下，该流水线仍能学习高保真度的三维表示，从而为新颖视点合成在空间应用中的使用打开了大门。 
+
+---
+# Perspective from a Higher Dimension: Can 3D Geometric Priors Help Visual Floorplan Localization? 
+
+**Title (ZH)**: 从更高维度视角看：三维几何先验能否帮助视觉楼层平面图定位？ 
+
+**Authors**: Bolei Chen, Jiaxu Kang, Haonan Yang, Ping Zhong, Jianxin Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18881)  
+
+**Abstract**: Since a building's floorplans are easily accessible, consistent over time, and inherently robust to changes in visual appearance, self-localization within the floorplan has attracted researchers' interest. However, since floorplans are minimalist representations of a building's structure, modal and geometric differences between visual perceptions and floorplans pose challenges to this task. While existing methods cleverly utilize 2D geometric features and pose filters to achieve promising performance, they fail to address the localization errors caused by frequent visual changes and view occlusions due to variously shaped 3D objects. To tackle these issues, this paper views the 2D Floorplan Localization (FLoc) problem from a higher dimension by injecting 3D geometric priors into the visual FLoc algorithm. For the 3D geometric prior modeling, we first model geometrically aware view invariance using multi-view constraints, i.e., leveraging imaging geometric principles to provide matching constraints between multiple images that see the same points. Then, we further model the view-scene aligned geometric priors, enhancing the cross-modal geometry-color correspondences by associating the scene's surface reconstruction with the RGB frames of the sequence. Both 3D priors are modeled through self-supervised contrastive learning, thus no additional geometric or semantic annotations are required. These 3D priors summarized in extensive realistic scenes bridge the modal gap while improving localization success without increasing the computational burden on the FLoc algorithm. Sufficient comparative studies demonstrate that our method significantly outperforms state-of-the-art methods and substantially boosts the FLoc accuracy. All data and code will be released after the anonymous review. 
+
+**Abstract (ZH)**: 自三维几何先验视角下的二维楼层地图自定位 
+
+---
+# SaLF: Sparse Local Fields for Multi-Sensor Rendering in Real-Time 
+
+**Title (ZH)**: SaLF: 稀疏局部场在实时多传感器渲染中的应用 
+
+**Authors**: Yun Chen, Matthew Haines, Jingkang Wang, Krzysztof Baron-Lis, Sivabalan Manivasagam, Ze Yang, Raquel Urtasun  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18713)  
+
+**Abstract**: High-fidelity sensor simulation of light-based sensors such as cameras and LiDARs is critical for safe and accurate autonomy testing. Neural radiance field (NeRF)-based methods that reconstruct sensor observations via ray-casting of implicit representations have demonstrated accurate simulation of driving scenes, but are slow to train and render, hampering scale. 3D Gaussian Splatting (3DGS) has demonstrated faster training and rendering times through rasterization, but is primarily restricted to pinhole camera sensors, preventing usage for realistic multi-sensor autonomy evaluation. Moreover, both NeRF and 3DGS couple the representation with the rendering procedure (implicit networks for ray-based evaluation, particles for rasterization), preventing interoperability, which is key for general usage. In this work, we present Sparse Local Fields (SaLF), a novel volumetric representation that supports rasterization and raytracing. SaLF represents volumes as a sparse set of 3D voxel primitives, where each voxel is a local implicit field. SaLF has fast training (<30 min) and rendering capabilities (50+ FPS for camera and 600+ FPS LiDAR), has adaptive pruning and densification to easily handle large scenes, and can support non-pinhole cameras and spinning LiDARs. We demonstrate that SaLF has similar realism as existing self-driving sensor simulation methods while improving efficiency and enhancing capabilities, enabling more scalable simulation. this https URL 
+
+**Abstract (ZH)**: 高保真基于光线的传感器（如摄像头和LiDAR）仿真对于安全准确的自主性测试至关重要。基于神经辐射场（NeRF）的方法通过射线投射隐式表示来重构传感器观测结果，能够实现驾驶场景的准确仿真，但训练和渲染速度较慢，限制了其扩展性。3D高斯斑点（3DGS）通过光栅化方法展示出更快的训练和渲染时间，但主要受限于针孔相机传感器，无法用于现实多传感器自主性评估。此外，NeRF和3DGS都将表示与渲染过程耦合（基于射线的评估使用隐式网络，光栅化使用粒子），这阻碍了其通用性。在本工作中，我们提出了一种新型体素表示Sparse Local Fields（SaLF），支持光栅化和光线追踪。SaLF将体素表示为稀疏的3D体素基础元集合，每个体素是一个局部隐式场。SaLF具有快速训练（<30分钟）和渲染能力（摄像机50+ FPS，LiDAR 600+ FPS），具有自适应修剪和密化功能，易于处理大规模场景，可支持非针孔相机和旋转LiDAR。我们展示SaLF在现实主义方面与现有自动驾驶传感器仿真方法相当，同时提升了效率和功能，使仿真更具扩展性。 
+
+---
+# LOTUS: A Leaderboard for Detailed Image Captioning from Quality to Societal Bias and User Preferences 
+
+**Title (ZH)**: LOTUS：从质量到社会偏见和用户偏好的详细图像 captioning 领域排行榜 
+
+**Authors**: Yusuke Hirota, Boyi Li, Ryo Hachiuma, Yueh-Hua Wu, Boris Ivanovic, Yuta Nakashima, Marco Pavone, Yejin Choi, Yu-Chiang Frank Wang, Chao-Han Huck Yang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.19362)  
+
+**Abstract**: Large Vision-Language Models (LVLMs) have transformed image captioning, shifting from concise captions to detailed descriptions. We introduce LOTUS, a leaderboard for evaluating detailed captions, addressing three main gaps in existing evaluations: lack of standardized criteria, bias-aware assessments, and user preference considerations. LOTUS comprehensively evaluates various aspects, including caption quality (e.g., alignment, descriptiveness), risks (\eg, hallucination), and societal biases (e.g., gender bias) while enabling preference-oriented evaluations by tailoring criteria to diverse user preferences. Our analysis of recent LVLMs reveals no single model excels across all criteria, while correlations emerge between caption detail and bias risks. Preference-oriented evaluations demonstrate that optimal model selection depends on user priorities. 
+
+**Abstract (ZH)**: Large 视觉-语言 模型（LVLMs）已 transform 图像 编辑，从 简洁 的 描述 转向 详细 描述。我们 引入 LOTUS，一个 用于 评估 详细 描述 的 成绩榜，弥补 当前 评估 中 的 三大 缺陷： 缺乏 标准 化 的 标准、有 偏见 的 评估 和 用户 偏好 考虑。LOTUS 全面 评估 各种 方面，包括 描述 质量（如 准确性、 描述性）、风险（如 虚构内容）和社会 偏见（如 性别偏见），同时 通过 定制 标准 来 实现 偏好 导向 的 评估。我们 对 最新 的 LVLMs 的 分析 表明，没有 一种 模型 在 所有 标准 上 都 优越，而 是 描述 详细 程度 和 偏见 风险 之间 存在 联系。偏好 导向 的 评估 表明，最佳 模型 选择 取决于 用户 优先级。 
+
+---
+# Multistream Network for LiDAR and Camera-based 3D Object Detection in Outdoor Scenes 
+
+**Title (ZH)**: 基于 LiDAR 和摄像头的户外场景三维对象检测多流网络 
+
+**Authors**: Muhammad Ibrahim, Naveed Akhtar, Haitian Wang, Saeed Anwar, Ajmal Mian  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.19304)  
+
+**Abstract**: Fusion of LiDAR and RGB data has the potential to enhance outdoor 3D object detection accuracy. To address real-world challenges in outdoor 3D object detection, fusion of LiDAR and RGB input has started gaining traction. However, effective integration of these modalities for precise object detection task still remains a largely open problem. To address that, we propose a MultiStream Detection (MuStD) network, that meticulously extracts task-relevant information from both data modalities. The network follows a three-stream structure. Its LiDAR-PillarNet stream extracts sparse 2D pillar features from the LiDAR input while the LiDAR-Height Compression stream computes Bird's-Eye View features. An additional 3D Multimodal stream combines RGB and LiDAR features using UV mapping and polar coordinate indexing. Eventually, the features containing comprehensive spatial, textural and geometric information are carefully fused and fed to a detection head for 3D object detection. Our extensive evaluation on the challenging KITTI Object Detection Benchmark using public testing server at this https URL establishes the efficacy of our method by achieving new state-of-the-art or highly competitive results in different categories while remaining among the most efficient methods. Our code will be released through MuStD GitHub repository at this https URL 
+
+**Abstract (ZH)**: LiDAR和RGB数据融合在提高户外3D目标检测精度方面的潜力：MuStD网络及其应用 
+
+---
+# Joint Holistic and Lesion Controllable Mammogram Synthesis via Gated Conditional Diffusion Model 
+
+**Title (ZH)**: 基于门控条件性扩散模型的乳腺X线图像整体与病灶可控合成 
+
+**Authors**: Xin Li, Kaixiang Yang, Qiang Li, Zhiwei Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.19201)  
+
+**Abstract**: Mammography is the most commonly used imaging modality for breast cancer screening, driving an increasing demand for deep-learning techniques to support large-scale analysis. However, the development of accurate and robust methods is often limited by insufficient data availability and a lack of diversity in lesion characteristics. While generative models offer a promising solution for data synthesis, current approaches often fail to adequately emphasize lesion-specific features and their relationships with surrounding tissues. In this paper, we propose Gated Conditional Diffusion Model (GCDM), a novel framework designed to jointly synthesize holistic mammogram images and localized lesions. GCDM is built upon a latent denoising diffusion framework, where the noised latent image is concatenated with a soft mask embedding that represents breast, lesion, and their transitional regions, ensuring anatomical coherence between them during the denoising process. To further emphasize lesion-specific features, GCDM incorporates a gated conditioning branch that guides the denoising process by dynamically selecting and fusing the most relevant radiomic and geometric properties of lesions, effectively capturing their interplay. Experimental results demonstrate that GCDM achieves precise control over small lesion areas while enhancing the realism and diversity of synthesized mammograms. These advancements position GCDM as a promising tool for clinical applications in mammogram synthesis. Our code is available at this https URL 
+
+**Abstract (ZH)**: 基于门控条件扩散模型的全景乳腺X线图像及局部病灶合成方法 
+
+---
+# PatchTraj: Dynamic Patch Representation Learning for Time-Frequency Trajectory Prediction 
+
+**Title (ZH)**: PatchTraj：时间-频率轨迹预测的动态补丁表示学习 
+
+**Authors**: Yanghong Liu, Xingping Dong, Ming Li, Weixing Zhang, Yidong Lou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.19119)  
+
+**Abstract**: Pedestrian trajectory prediction is crucial for autonomous driving and robotics. While existing point-based and grid-based methods expose two key limitations: insufficiently modeling human motion dynamics, as they fail to balance local motion details with long-range spatiotemporal dependencies, and the time representation lacks interaction with the frequency domain in modeling trajectory sequences. To address these challenges, we propose PatchTraj, a dynamic patch-based trajectory prediction framework that unifies time-domain and frequency-domain representations. Specifically, we decompose the trajectory into raw time sequences and frequency components, employing dynamic patch partitioning for multi-scale trajectory segmentation to capture hierarchical motion patterns. Each patch is processed by an adaptive embedding layer with scale-aware feature extraction, followed by hierarchical feature aggregation to model both fine-grained and long-range dependencies. The outputs of two branches interact via cross-modal attention, enabling complementary fusion of temporal and spectral cues. Finally, a Transformer encoder-decoder integrates both modalities to autoregressively predict future trajectories. Extensive experiments on ETH-UCY, SDD, NBA, and JRDB datasets demonstrate that our method achieves state-of-the-art performance with high efficiency. 
+
+**Abstract (ZH)**: 行人轨迹预测对于自动驾驶和机器人技术至关重要。为了解决现有基于点和基于网格方法的两个关键限制，即无法有效地建模人类运动动力学，以及时间表示在建模轨迹序列时缺乏与频域的交互，我们提出了PatchTraj，这是一种统一时间域和频域表示的动力学斑块基轨迹预测框架。具体地，我们将轨迹分解为原始时间序列和频域分量，并通过动态斑块分割进行多尺度轨迹分割以捕捉层级运动模式。每个斑块通过一种尺度感知的特征提取的自适应嵌入层进行处理，随后通过层级特征聚合来建模精细粒度和长距离依赖性。来自两个分支的输出通过跨模态注意机制相互作用，使时间和频谱线索实现互补融合。最后，Transformer编码器-解码器整合这两种模态以自回归方式预测未来的轨迹。在ETH-UCY、SDD、NBA和JRDB数据集上的大量实验表明，我们的方法实现了最先进的性能，高效性高。 
+
+---
+# MedSymmFlow: Bridging Generative Modeling and Classification in Medical Imaging through Symmetrical Flow Matching 
+
+**Title (ZH)**: MedSymmFlow: 结合医学影像生成建模和分类的对称流匹配方法 
+
+**Authors**: Francisco Caetano, Lemar Abdi, Christiaan Viviers, Amaan Valiuddin, Fons van der Sommen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.19098)  
+
+**Abstract**: Reliable medical image classification requires accurate predictions and well-calibrated uncertainty estimates, especially in high-stakes clinical settings. This work presents MedSymmFlow, a generative-discriminative hybrid model built on Symmetrical Flow Matching, designed to unify classification, generation, and uncertainty quantification in medical imaging. MedSymmFlow leverages a latent-space formulation that scales to high-resolution inputs and introduces a semantic mask conditioning mechanism to enhance diagnostic relevance. Unlike standard discriminative models, it naturally estimates uncertainty through its generative sampling process. The model is evaluated on four MedMNIST datasets, covering a range of modalities and pathologies. The results show that MedSymmFlow matches or exceeds the performance of established baselines in classification accuracy and AUC, while also delivering reliable uncertainty estimates validated by performance improvements under selective prediction. 
+
+**Abstract (ZH)**: 可靠的医学图像分类需要准确的预测和良好的不确定性估计，特别是在高风险临床环境中。本文提出了基于对称流匹配的生成-判别混合模型MedSymmFlow，旨在统一医学成像中的分类、生成和不确定性量化。MedSymmFlow 利用一个可扩展到高分辨率输入的潜在空间表示，并引入语义掩码条件机制以增强诊断相关性。与标准判别模型不同，它通过生成采样过程自然地估计不确定性。该模型在四个MedMNIST数据集上进行评估，涵盖了多种成像模态和病理类型。结果显示，MedSymmFlow 在分类准确性和AUC方面与现有基准相当或超过基准，并且通过在选择性预测下性能改善提供了可靠的不确定性估计验证。 
+
+---
+# Dual Path Learning -- learning from noise and context for medical image denoising 
+
+**Title (ZH)**: 双重路径学习——从噪声和上下文中学习进行医学图像去噪 
+
+**Authors**: Jitindra Fartiyal, Pedro Freire, Yasmeen Whayeb, James S. Wolffsohn, Sergei K. Turitsyn, Sergei G. Sokolov  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.19035)  
+
+**Abstract**: Medical imaging plays a critical role in modern healthcare, enabling clinicians to accurately diagnose diseases and develop effective treatment plans. However, noise, often introduced by imaging devices, can degrade image quality, leading to misinterpretation and compromised clinical outcomes. Existing denoising approaches typically rely either on noise characteristics or on contextual information from the image. Moreover, they are commonly developed and evaluated for a single imaging modality and noise type. Motivated by Geng this http URL CNCL, which integrates both noise and context, this study introduces a Dual-Pathway Learning (DPL) model architecture that effectively denoises medical images by leveraging both sources of information and fusing them to generate the final output. DPL is evaluated across multiple imaging modalities and various types of noise, demonstrating its robustness and generalizability. DPL improves PSNR by 3.35% compared to the baseline UNet when evaluated on Gaussian noise and trained across all modalities. The code is available at https://doi.org/10.5281/zenodo.15836053. 
+
+**Abstract (ZH)**: 医学影像在现代医疗保健中发挥着关键作用，使临床医生能够准确诊断疾病并制定有效的治疗计划。然而，由成像设备引入的噪声会降低图像质量，导致误解释并损害临床效果。现有去噪方法通常依赖于噪声特性或图像中的上下文信息。此外，这些方法通常仅针对单一成像模态和噪声类型进行开发和评估。受Geng提出的CNCL的启发，本文引入了一种双路径学习(Dual-Pathway Learning, DPL)模型架构，通过利用这两种信息源并融合它们来生成最终输出，有效去噪医学图像。DPL在多种成像模态和噪声类型下进行评估，展示了其稳健性和通用性。当在高斯噪声下评估并与基线UNet相比时，DPL在所有模态上训练时提高了3.35%的PSNR。代码可在https://doi.org/10.5281/zenodo.15836053获得。 
+
+---
+# MedIQA: A Scalable Foundation Model for Prompt-Driven Medical Image Quality Assessment 
+
+**Title (ZH)**: MedIQA: 一种面向提示的可扩展医学图像质量评估基础模型 
+
+**Authors**: Siyi Xun, Yue Sun, Jingkun Chen, Zitong Yu, Tong Tong, Xiaohong Liu, Mingxiang Wu, Tao Tan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.19004)  
+
+**Abstract**: Rapid advances in medical imaging technology underscore the critical need for precise and automated image quality assessment (IQA) to ensure diagnostic accuracy. Existing medical IQA methods, however, struggle to generalize across diverse modalities and clinical scenarios. In response, we introduce MedIQA, the first comprehensive foundation model for medical IQA, designed to handle variability in image dimensions, modalities, anatomical regions, and types. We developed a large-scale multi-modality dataset with plentiful manually annotated quality scores to support this. Our model integrates a salient slice assessment module to focus on diagnostically relevant regions feature retrieval and employs an automatic prompt strategy that aligns upstream physical parameter pre-training with downstream expert annotation fine-tuning. Extensive experiments demonstrate that MedIQA significantly outperforms baselines in multiple downstream tasks, establishing a scalable framework for medical IQA and advancing diagnostic workflows and clinical decision-making. 
+
+**Abstract (ZH)**: 快速发展的医学图像技术强调了精确且自动化的图像质量评估（IQA）的重要性，以确保诊断准确性。现有的医学IQA方法难以在多种模态和临床场景下进行泛化。为应对这一挑战，我们提出了MedIQA，这是首个全面的基础模型，旨在处理图像尺寸、模态、解剖区域和类型的变异性。我们开发了一个大规模多模态数据集，包含丰富的手动注释质量分数，以支持这一目标。该模型集成了显著切片评估模块，专注于诊断相关的区域特征检索，并采用了一种自动提示策略，将上游物理参数预训练与下游专家注释微调对齐。广泛实验证明，MedIQA在多个下游任务中显著优于基线方法，建立了可扩展的医学IQA框架，并推动了诊断工作流程和临床决策的进展。 
+
+---
+# Underwater Waste Detection Using Deep Learning A Performance Comparison of YOLOv7 to 10 and Faster RCNN 
+
+**Title (ZH)**: 基于深度学习的水下废弃物检测：YOLOv7与Faster RCNN的性能对比 
+
+**Authors**: UMMPK Nawarathne, HMNS Kumari, HMLS Kumari  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18967)  
+
+**Abstract**: Underwater pollution is one of today's most significant environmental concerns, with vast volumes of garbage found in seas, rivers, and landscapes around the world. Accurate detection of these waste materials is crucial for successful waste management, environmental monitoring, and mitigation strategies. In this study, we investigated the performance of five cutting-edge object recognition algorithms, namely YOLO (You Only Look Once) models, including YOLOv7, YOLOv8, YOLOv9, YOLOv10, and Faster Region-Convolutional Neural Network (R-CNN), to identify which model was most effective at recognizing materials in underwater situations. The models were thoroughly trained and tested on a large dataset containing fifteen different classes under diverse conditions, such as low visibility and variable depths. From the above-mentioned models, YOLOv8 outperformed the others, with a mean Average Precision (mAP) of 80.9%, indicating a significant performance. This increased performance is attributed to YOLOv8's architecture, which incorporates advanced features such as improved anchor-free mechanisms and self-supervised learning, allowing for more precise and efficient recognition of items in a variety of settings. These findings highlight the YOLOv8 model's potential as an effective tool in the global fight against pollution, improving both the detection capabilities and scalability of underwater cleanup operations. 
+
+**Abstract (ZH)**: 水域污染是当今最重要的环境问题之一，全球各地的海洋、河流和landscape中发现了大量垃圾。准确识别这些废弃物对于成功的废物管理、环境监测和缓解策略至关重要。本研究探讨了五种先进的物体识别算法，即YOLO（You Only Look Once）模型，包括YOLOv7、YOLOv8、YOLOv9、YOLOv10和Faster Region-Convolutional Neural Network (R-CNN)，以确定哪种模型在水下环境中识别材料最有效。这些模型在包含十五个不同类别的大型数据集上进行了充分的训练和测试，数据集涵盖了不同的条件，如低能见度和不同深度。从上述模型中，YOLOv8的表现优于其他模型，其平均精确度（mAP）为80.9%，表明其具有显著性能。这种性能提升归因于YOLOv8的架构，该架构包含了改进的无锚机制和自我监督学习等高级功能，使其能够在各种环境中更精确和高效地识别物品。这些发现突显了YOLOv8模型在应对全球污染问题中的潜力，提高了水下清理操作的检测能力和可扩展性。 
+
+---
+# WiSE-OD: Benchmarking Robustness in Infrared Object Detection 
+
+**Title (ZH)**: WiSE-OD：红外目标检测的鲁棒性benchmark 
+
+**Authors**: Heitor R. Medeiros, Atif Belal, Masih Aminbeidokhti, Eric Granger, Marco Pedersoli  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18925)  
+
+**Abstract**: Object detection (OD) in infrared (IR) imagery is critical for low-light and nighttime applications. However, the scarcity of large-scale IR datasets forces models to rely on weights pre-trained on RGB images. While fine-tuning on IR improves accuracy, it often compromises robustness under distribution shifts due to the inherent modality gap between RGB and IR. To address this, we introduce LLVIP-C and FLIR-C, two cross-modality out-of-distribution (OOD) benchmarks built by applying corruption to standard IR datasets. Additionally, to fully leverage the complementary knowledge from RGB and infrared trained models, we propose WiSE-OD, a weight-space ensembling method with two variants: WiSE-OD$_{ZS}$, which combines RGB zero-shot and IR fine-tuned weights, and WiSE-OD$_{LP}$, which blends zero-shot and linear probing. Evaluated across three RGB-pretrained detectors and two robust baselines, WiSE-OD improves both cross-modality and corruption robustness without any additional training or inference cost. 
+
+**Abstract (ZH)**: 红外影像中的目标检测（OD）在低光和夜间应用中至关重要。然而，大规模红外数据集的稀缺性迫使模型依赖于在RGB图像上预训练的权重。尽管在红外数据上进行微调可以提高准确性，但往往会因为RGB和红外之间固有的模态差异而牺牲分布迁移下的稳健性。为了解决这个问题，我们引入了LLVIP-C和FLIR-C两种跨模态的 outlier of distribution (OOD) 基准，通过在标准红外数据集上应用干扰构建。此外，为了充分利用从RGB和红外训练模型中获得的互补知识，我们提出了WiSE-OD，一种权重空间集成方法，包含两种变体：WiSE-OD$_{ZS}$ 结合了RGB零样本和红外微调权重，WiSE-OD$_{LP}$ 结合了零样本和线性探针。在三种RGB预训练探测器和两种稳健基准上进行评估，WiSE-OD 在不增加额外训练或推理成本的情况下，提高了跨模态和干扰下的稳健性。 
+
+---
+# Flow Stochastic Segmentation Networks 
+
+**Title (ZH)**: 流动随机分割网络 
+
+**Authors**: Fabio De Sousa Ribeiro, Omar Todd, Charles Jones, Avinash Kori, Raghav Mehta, Ben Glocker  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18838)  
+
+**Abstract**: We introduce the Flow Stochastic Segmentation Network (Flow-SSN), a generative segmentation model family featuring discrete-time autoregressive and modern continuous-time flow variants. We prove fundamental limitations of the low-rank parameterisation of previous methods and show that Flow-SSNs can estimate arbitrarily high-rank pixel-wise covariances without assuming the rank or storing the distributional parameters. Flow-SSNs are also more efficient to sample from than standard diffusion-based segmentation models, thanks to most of the model capacity being allocated to learning the base distribution of the flow, constituting an expressive prior. We apply Flow-SSNs to challenging medical imaging benchmarks and achieve state-of-the-art results. Code available: this https URL. 
+
+**Abstract (ZH)**: 我们介绍了Flow Stochastic Segmentation Network (Flow-SSN) 模型家族，这是一种具有离散时间自回归和现代连续时间流态变体的生成分割模型。我们证明了先前方法中低秩参数化的基本局限性，并展示了Flow-SSNs 可以在不假设秩或存储分布参数的情况下估计任意高秩的像素协方差。Flow-SSNs 比标准基于扩散的分割模型更高效，因为模型的大部分容量被分配用于学习流的基础分布，构成一个表达性先验。我们将在挑战性的医学成像基准测试中应用Flow-SSNs，并取得最佳成果。代码可供下载：this https URL。 
+
+---
+# Tell Me What You See: An Iterative Deep Learning Framework for Image Captioning 
+
+**Title (ZH)**: 告诉我你看到的：一种迭代深度学习图像 captioning 框架 
+
+**Authors**: Hitesh Kumar Gupta  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18788)  
+
+**Abstract**: Image captioning, a task at the confluence of computer vision and natural language processing, requires a sophisticated understanding of both visual scenes and linguistic structure. While modern approaches are dominated by large-scale Transformer architectures, this paper documents a systematic, iterative development of foundational image captioning models, progressing from a simple CNN-LSTM encoder-decoder to a competitive attention-based system. We present a series of five models, beginning with Genesis and concluding with Nexus, an advanced model featuring an EfficientNetV2B3 backbone and a dynamic attention mechanism. Our experiments chart the impact of architectural enhancements and demonstrate a key finding within the classic CNN-LSTM paradigm: merely upgrading the visual backbone without a corresponding attention mechanism can degrade performance, as the single-vector bottleneck cannot transmit the richer visual detail. This insight validates the architectural shift to attention. Trained on the MS COCO 2017 dataset, our final model, Nexus, achieves a BLEU-4 score of 31.4, surpassing several foundational benchmarks and validating our iterative design process. This work provides a clear, replicable blueprint for understanding the core architectural principles that underpin modern vision-language tasks. 
+
+**Abstract (ZH)**: 图像描述生成，作为计算机视觉和自然语言处理交汇的任务，需要对视觉场景和语言结构有复杂的理解。尽管现代方法主要由大规模Transformer架构主导，本文记录了一种系统性、迭代性的发展过程，从简单的CNN-LSTM编码器-解码器逐步发展到基于注意力的竞争性系统。我们呈现了一系列五种模型，从Genesis开始，最终以一个采用EfficientNetV2B3骨干和动态注意力机制的高级模型Nexus结束。我们的实验追踪了架构改进的影响，并在一个经典的CNN-LSTM框架中展示了关键发现：仅升级视觉骨干而不相应的注意力机制会降低性能，因为单一向量瓶颈无法传递更丰富的视觉细节。这一见解验证了向注意力机制的架构转变。在MS COCO 2017数据集上训练，我们的最终模型Nexus实现了BLEU-4得分31.4，超过了多个基础基准，验证了我们迭代的设计过程。这项工作为理解支撑现代视觉语言任务的核心架构原则提供了清晰可复制的蓝图。 
+
+---
+# Towards Scalable Spatial Intelligence via 2D-to-3D Data Lifting 
+
+**Title (ZH)**: 面向可扩展的空间智能通过从2D到3D数据提升 
+
+**Authors**: Xingyu Miao, Haoran Duan, Quanhao Qian, Jiuniu Wang, Yang Long, Ling Shao, Deli Zhao, Ran Xu, Gongjie Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18678)  
+
+**Abstract**: Spatial intelligence is emerging as a transformative frontier in AI, yet it remains constrained by the scarcity of large-scale 3D datasets. Unlike the abundant 2D imagery, acquiring 3D data typically requires specialized sensors and laborious annotation. In this work, we present a scalable pipeline that converts single-view images into comprehensive, scale- and appearance-realistic 3D representations - including point clouds, camera poses, depth maps, and pseudo-RGBD - via integrated depth estimation, camera calibration, and scale calibration. Our method bridges the gap between the vast repository of imagery and the increasing demand for spatial scene understanding. By automatically generating authentic, scale-aware 3D data from images, we significantly reduce data collection costs and open new avenues for advancing spatial intelligence. We release two generated spatial datasets, i.e., COCO-3D and Objects365-v2-3D, and demonstrate through extensive experiments that our generated data can benefit various 3D tasks, ranging from fundamental perception to MLLM-based reasoning. These results validate our pipeline as an effective solution for developing AI systems capable of perceiving, understanding, and interacting with physical environments. 
+
+**Abstract (ZH)**: 空间智能正成为AI领域的一项变革性前沿技术，但其发展受限于大规模3D数据集的稀缺性。与丰富的2D图像相比，获取3D数据通常需要使用专门的传感器并进行繁琐的标注。在此研究中，我们提出了一种可扩展的管道，通过集成深度估计、相机标定和尺度标定将单视角图像转换为全面、尺度和外观真实的3D表示——包括点云、相机姿态、深度图和伪RGBD。我们的方法填补了大量图像存储备和对空间场景理解日益增长的需求之间的差距。通过自动从图像生成具有尺度意识的真实3D数据，我们大大降低了数据收集成本并开辟了推进空间智能的新途径。我们发布了两个生成的空间数据集，即COCO-3D和Objects365-v2-3D，并通过大量实验展示了我们的生成数据可以惠及从基础感知到基于MLLM的推理的各种3D任务。这些结果验证了我们的管道作为开发能够感知、理解和与物理环境交互的AI系统的有效解决方案。 
+
+---
+# Quantum-Cognitive Tunnelling Neural Networks for Military-Civilian Vehicle Classification and Sentiment Analysis 
+
+**Title (ZH)**: 量子认知隧道神经网络在军事民用车辆分类与情感分析中的应用 
+
+**Authors**: Milan Maksimovic, Anna Bohdanets, Immaculate Motsi-Omoijiade, Guido Governatori, Ivan S. Maksymov  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.18645)  
+
+**Abstract**: Prior work has demonstrated that incorporating well-known quantum tunnelling (QT) probability into neural network models effectively captures important nuances of human perception, particularly in the recognition of ambiguous objects and sentiment analysis. In this paper, we employ novel QT-based neural networks and assess their effectiveness in distinguishing customised CIFAR-format images of military and civilian vehicles, as well as sentiment, using a proprietary military-specific vocabulary. We suggest that QT-based models can enhance multimodal AI applications in battlefield scenarios, particularly within human-operated drone warfare contexts, imbuing AI with certain traits of human reasoning. 
+
+**Abstract (ZH)**: 已有研究表明，将广为人知的量子隧穿(QT)概率融入神经网络模型中，能有效地捕捉人类感知中的重要细微差异，特别是在识别模糊对象和情感分析方面。本文中，我们利用新颖的基于QT的神经网络，并评估其在区分特定军事和民用车辆的自定义CIFAR格式图像以及情感方面的有效性，同时使用专有的军事专用词汇。我们建议，基于QT的模型能够增强战场场景中的多模态AI应用，特别是在有人驾驶无人机作战背景下，使AI具备某些人类推理的特性。 
+
+---
