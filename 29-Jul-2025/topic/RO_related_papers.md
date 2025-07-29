@@ -1,0 +1,169 @@
+# LanternNet: A Novel Hub-and-Spoke System to Seek and Suppress Spotted Lanternfly Populations 
+
+**Title (ZH)**: LanternNet: 一种Seek and Suppressolib硫斑萤叶甲种群的新颖hub-and-spoke系统 
+
+**Authors**: Vinil Polepalli  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.20800)  
+
+**Abstract**: The invasive spotted lanternfly (SLF) poses a significant threat to agriculture and ecosystems, causing widespread damage. Current control methods, such as egg scraping, pesticides, and quarantines, prove labor-intensive, environmentally hazardous, and inadequate for long-term SLF suppression. This research introduces LanternNet, a novel autonomous robotic Hub-and-Spoke system designed for scalable detection and suppression of SLF populations. A central, tree-mimicking hub utilizes a YOLOv8 computer vision model for precise SLF identification. Three specialized robotic spokes perform targeted tasks: pest neutralization, environmental monitoring, and navigation/mapping. Field deployment across multiple infested sites over 5 weeks demonstrated LanternNet's efficacy. Quantitative analysis revealed significant reductions (p < 0.01, paired t-tests) in SLF populations and corresponding improvements in tree health indicators across the majority of test sites. Compared to conventional methods, LanternNet offers substantial cost advantages and improved scalability. Furthermore, the system's adaptability for enhanced autonomy and targeting of other invasive species presents significant potential for broader ecological impact. LanternNet demonstrates the transformative potential of integrating robotics and AI for advanced invasive species management and improved environmental outcomes. 
+
+**Abstract (ZH)**: 入侵的灯笼蝉（SLF）对农业和生态系统构成重大威胁，造成广泛损害。目前的控制方法，如人工剔除卵块、使用农药和检疫措施，证明劳动密集、环境危害大且无法长期有效抑制SLF种群。本研究介绍了一种新型自主机器人Hub-and-Spoke系统LanternNet，用于 scalable 检测和抑制SLF种群。中央树形模仿中心利用YOLOv8计算机视觉模型进行精确的SLF识别。三个专门设计的机器人辐条执行特定任务：害虫中和、环境监测和导航/制图。在多个受侵地区为期5周的实地部署显示了LanternNet的有效性。定量分析表明，在大多数测试地区，SLF种群显著减少（p < 0.01，配对t检验），同时树健康指标有所改善。与传统方法相比，LanternNet在成本优势和可扩展性方面具有显著优势。此外，该系统针对其他入侵物种的增强自主性和适应性表明了对更广泛生态影响的潜在重要性。LanternNet展示了将机器人技术和AI集成用于先进入侵物种管理和改善环境结果的变革潜力。 
+
+---
+# A Strawberry Harvesting Tool with Minimal Footprint 
+
+**Title (ZH)**: 一种占用空间最小的草莓采摘工具 
+
+**Authors**: Mohamed Sorour, Mohamed Heshmat, Khaled Elgeneidy, Pål Johan From  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.20784)  
+
+**Abstract**: In this paper, a novel prototype for harvesting table-top grown strawberries is presented, that is minimalist in its footprint interacting with the fruit. In our methodology, a smooth trapper manipulates the stem into a precise groove location at which a distant laser beam is focused. The tool reaches temperatures as high as 188° Celsius and as such killing germs and preventing the spread of local plant diseases. The burnt stem wound preserves water content and in turn the fruit shelf life. Cycle and cut times achieved are 5.56 and 2.88 seconds respectively in successful in-door harvesting demonstration. Extensive experiments are performed to optimize the laser spot diameter and lateral speed against the cutting time. 
+
+**Abstract (ZH)**: 本文提出了一种用于收获桌面种植草莓的简约型采集原型，通过平滑的捕捉装置将草莓茎引导至精确的沟槽位置，随后聚焦远处的激光束进行切割。该工具最高可达到188摄氏度的温度，从而杀死细菌并防止局部植物疾病传播。烧焦的茎伤口保留水分，进而延长果实保质期。室内收获演示中，切割周期和切割时间分别达到5.56秒和2.88秒。进行了大量实验以优化激光斑点直径和横向速度与切割时间的关系。 
+
+---
+# Model-Structured Neural Networks to Control the Steering Dynamics of Autonomous Race Cars 
+
+**Title (ZH)**: 基于模型结构的神经网络控制自主赛车转向动力学 
+
+**Authors**: Mattia Piccinini, Aniello Mungiello, Georg Jank, Gastone Pietro Rosati Papini, Francesco Biral, Johannes Betz  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.20427)  
+
+**Abstract**: Autonomous racing has gained increasing attention in recent years, as a safe environment to accelerate the development of motion planning and control methods for autonomous driving. Deep learning models, predominantly based on neural networks (NNs), have demonstrated significant potential in modeling the vehicle dynamics and in performing various tasks in autonomous driving. However, their black-box nature is critical in the context of autonomous racing, where safety and robustness demand a thorough understanding of the decision-making algorithms. To address this challenge, this paper proposes MS-NN-steer, a new Model-Structured Neural Network for vehicle steering control, integrating the prior knowledge of the nonlinear vehicle dynamics into the neural architecture. The proposed controller is validated using real-world data from the Abu Dhabi Autonomous Racing League (A2RL) competition, with full-scale autonomous race cars. In comparison with general-purpose NNs, MS-NN-steer is shown to achieve better accuracy and generalization with small training datasets, while being less sensitive to the weights' initialization. Also, MS-NN-steer outperforms the steering controller used by the A2RL winning team. Our implementation is available open-source in a GitHub repository. 
+
+**Abstract (ZH)**: 自主赛车在近年来获得了越来越多的关注，作为加速自主驾驶运动规划与控制方法发展的安全环境。基于神经网络（NNs）的深度学习模型在建模车辆动力学和执行各种自主驾驶任务方面展现了显著潜力。然而，在自主赛车的背景下，由于安全性与鲁棒性要求对决策算法有全面的理解，其黑盒性质成为关键问题。为应对这一挑战，本文提出MS-NN-steer，这是一种新的模型结构化神经网络，将非线性车辆动力学的先验知识集成到神经网络架构中。所提出的控制器使用阿联酋自主赛车联赛（A2RL）比赛中的全尺寸自主赛车进行验证，结果显示与通用神经网络相比，MS-NN-steer在小规模训练数据集上具有更好的准确性和泛化能力，并且对权重初始化的敏感性较低。此外，MS-NN-steer在性能上优于A2RL获胜团队使用的转向控制器。我们的实现已在GitHub仓库中开源。 
+
+---
+# Tactile-Guided Robotic Ultrasound: Mapping Preplanned Scan Paths for Intercostal Imaging 
+
+**Title (ZH)**: 触觉引导的机器人超声：胸间区域成像的预规划扫描路径映射 
+
+**Authors**: Yifan Zhang, Dianye Huang, Nassir Navab, Zhongliang Jiang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.20282)  
+
+**Abstract**: Medical ultrasound (US) imaging is widely used in clinical examinations due to its portability, real-time capability, and radiation-free nature. To address inter- and intra-operator variability, robotic ultrasound systems have gained increasing attention. However, their application in challenging intercostal imaging remains limited due to the lack of an effective scan path generation method within the constrained acoustic window. To overcome this challenge, we explore the potential of tactile cues for characterizing subcutaneous rib structures as an alternative signal for ultrasound segmentation-free bone surface point cloud extraction. Compared to 2D US images, 1D tactile-related signals offer higher processing efficiency and are less susceptible to acoustic noise and artifacts. By leveraging robotic tracking data, a sparse tactile point cloud is generated through a few scans along the rib, mimicking human palpation. To robustly map the scanning trajectory into the intercostal space, the sparse tactile bone location point cloud is first interpolated to form a denser representation. This refined point cloud is then registered to an image-based dense bone surface point cloud, enabling accurate scan path mapping for individual patients. Additionally, to ensure full coverage of the object of interest, we introduce an automated tilt angle adjustment method to visualize structures beneath the bone. To validate the proposed method, we conducted comprehensive experiments on four distinct phantoms. The final scanning waypoint mapping achieved Mean Nearest Neighbor Distance (MNND) and Hausdorff distance (HD) errors of 3.41 mm and 3.65 mm, respectively, while the reconstructed object beneath the bone had errors of 0.69 mm and 2.2 mm compared to the CT ground truth. 
+
+**Abstract (ZH)**: 基于触觉线索的肋骨结构表征在无创骨表面点云提取中的应用：一种用于胸间影像的新方法 
+
+---
+# A real-time full-chain wearable sensor-based musculoskeletal simulation: an OpenSim-ROS Integration 
+
+**Title (ZH)**: 基于穿戴传感器的实时全链条肌骨仿真：OpenSim-ROS集成 
+
+**Authors**: Frederico Belmonte Klein, Zhaoyuan Wan, Huawei Wang, Ruoli Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.20049)  
+
+**Abstract**: Musculoskeletal modeling and simulations enable the accurate description and analysis of the movement of biological systems with applications such as rehabilitation assessment, prosthesis, and exoskeleton design. However, the widespread usage of these techniques is limited by costly sensors, laboratory-based setups, computationally demanding processes, and the use of diverse software tools that often lack seamless integration. In this work, we address these limitations by proposing an integrated, real-time framework for musculoskeletal modeling and simulations that leverages OpenSimRT, the robotics operating system (ROS), and wearable sensors. As a proof-of-concept, we demonstrate that this framework can reasonably well describe inverse kinematics of both lower and upper body using either inertial measurement units or fiducial markers. Additionally, we show that it can effectively estimate inverse dynamics of the ankle joint and muscle activations of major lower limb muscles during daily activities, including walking, squatting and sit to stand, stand to sit when combined with pressure insoles. We believe this work lays the groundwork for further studies with more complex real-time and wearable sensor-based human movement analysis systems and holds potential to advance technologies in rehabilitation, robotics and exoskeleton designs. 
+
+**Abstract (ZH)**: 基于OpenSimRT、ROS和可穿戴传感器的集成实时肌骨建模与仿真框架及其应用 
+
+---
+# Digital and Robotic Twinning for Validation of Proximity Operations and Formation Flying 
+
+**Title (ZH)**: 数字孪生与机器人孪生验证近距离操作与编队飞行 
+
+**Authors**: Aviad Golan, Gregory Zin, Zahra Ahmed, Emily Bates, Toby Bell, Pol Francesch Huc, Samuel Y. W. Low, Juergen Bosse, Simone D'Amico  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.20034)  
+
+**Abstract**: In spacecraft Rendezvous, Proximity Operations (RPO), and Formation Flying (FF), the Guidance Navigation and Control (GNC) system is safety-critical and must meet strict performance requirements. However, validating such systems is challenging due to the complexity of the space environment, necessitating a verification and validation (V&V) process that bridges simulation and real-world behavior. The key contribution of this paper is a unified, end-to-end digital and robotic twinning framework that enables software- and hardware-in-the-loop testing for multi-modal GNC systems. The robotic twin includes three testbeds at Stanford's Space Rendezvous Laboratory (SLAB): the GNSS and Radiofrequency Autonomous Navigation Testbed for Distributed Space Systems (GRAND) to validate RF-based navigation techniques, and the Testbed for Rendezvous and Optical Navigation (TRON) and Optical Stimulator (OS) to validate vision-based methods. The test article for this work is an integrated multi-modal GNC software stack for RPO and FF developed at SLAB. This paper introduces the hybrid framework and summarizes calibration and error characterization for the robotic twin. Then, the GNC stack's performance and robustness is characterized using the integrated digital and robotic twinning pipeline for a full-range RPO mission scenario in Low-Earth Orbit (LEO). The results shown in the paper demonstrate consistency between digital and robotic twins, validating the hybrid twinning pipeline as a reliable framework for realistic assessment and verification of GNC systems. 
+
+**Abstract (ZH)**: 基于数字与机器人镜像的综合GNC系统验证与验证框架：低地球轨道 proximity 操作任务场景验证 
+
+---
+# SuperMag: Vision-based Tactile Data Guided High-resolution Tactile Shape Reconstruction for Magnetic Tactile Sensors 
+
+**Title (ZH)**: SuperMag：基于视觉的触觉数据指导的磁性触觉传感器高分辨率触觉形状重建 
+
+**Authors**: Peiyao Hou, Danning Sun, Meng Wang, Yuzhe Huang, Zeyu Zhang, Hangxin Liu, Wanlin Li, Ziyuan Jiao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.20002)  
+
+**Abstract**: Magnetic-based tactile sensors (MBTS) combine the advantages of compact design and high-frequency operation but suffer from limited spatial resolution due to their sparse taxel arrays. This paper proposes SuperMag, a tactile shape reconstruction method that addresses this limitation by leveraging high-resolution vision-based tactile sensor (VBTS) data to supervise MBTS super-resolution. Co-designed, open-source VBTS and MBTS with identical contact modules enable synchronized data collection of high-resolution shapes and magnetic signals via a symmetric calibration setup. We frame tactile shape reconstruction as a conditional generative problem, employing a conditional variational auto-encoder to infer high-resolution shapes from low-resolution MBTS inputs. The MBTS achieves a sampling frequency of 125 Hz, whereas the shape reconstruction sustains an inference time within 2.5 ms. This cross-modality synergy advances tactile perception of the MBTS, potentially unlocking its new capabilities in high-precision robotic tasks. 
+
+**Abstract (ZH)**: 基于磁性的触觉传感器（MBTS）结合了紧凑设计和高频操作的优势，但由于传感器单元稀疏排列导致空间分辨率受限。本文提出了一种名为SuperMag的触觉形状重建方法，通过利用高分辨率视觉导向的触觉传感器（VBTS）数据来监督MBTS的超分辨率，从而解决这一限制。设计一致的开源VBTS和MBTS配合对称标定设置，实现同步采集高分辨率形状和磁信号的数据。我们将触觉形状重建框架化为一个条件生成问题，采用条件变分自编码器从低分辨率MBTS输入中推断出高分辨率形状。MBTS实现了125 Hz的采样频率，而形状重建的推理时间保持在2.5 ms以内。这种跨模态协同作用提升了一体化触觉传感器的触觉感知能力，可能为其在高精度机器人任务中解锁新的能力。 
+
+---
+# Robot Excavation and Manipulation of Geometrically Cohesive Granular Media 
+
+**Title (ZH)**: 机器人挖掘与操纵几何结合性粒状介质 
+
+**Authors**: Laura Treers, Daniel Soto, Joonha Hwang, Michael A. D. Goodisman, Daniel I. Goldman  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.19999)  
+
+**Abstract**: Construction throughout history typically assumes that its blueprints and building blocks are pre-determined. However, recent work suggests that alternative approaches can enable new paradigms for structure formation. Aleatory architectures, or those which rely on the properties of their granular building blocks rather than pre-planned design or computation, have thus far relied on human intervention for their creation. We imagine that robotic swarms could be valuable to create such aleatory structures by manipulating and forming structures from entangled granular materials. To discover principles by which robotic systems can effectively manipulate soft matter, we develop a robophysical model for interaction with geometrically cohesive granular media composed of u-shape particles. This robotic platform uses environmental signals to autonomously coordinate excavation, transport, and deposition of material. We test the effect of substrate initial conditions by characterizing robot performance in two different material compaction states and observe as much as a 75% change in transported mass depending on initial substrate compressive loading. These discrepancies suggest the functional role that material properties such as packing and cohesion/entanglement play in excavation and construction. To better understand these material properties, we develop an apparatus for tensile testing of the geometrically cohesive substrates, which reveals how entangled material strength responds strongly to initial compressive loading. These results explain the variation observed in robotic performance and point to future directions for better understanding robotic interaction mechanics with entangled materials. 
+
+**Abstract (ZH)**: 历史上的建筑通常假设其Blueprints和Building Blocks是预先确定的。然而，近期的研究表明，替代方法可以为结构形成开辟新的范式。依赖于其颗粒构建块的性质而非预先计划的设计或计算的Aleatory架构，迄今为止仍需要人工干预来创建。我们设想，通过操纵和形成纠缠的颗粒材料，机器人 swarm 可以成为创建此类Aleatory结构的有价值的工具。为了发现机器人系统有效操纵软物质的原则，我们建立了一个与几何结合的颗粒介质相互作用的robophysical模型，这些介质由U形颗粒组成。这个机器人平台使用环境信号自主协调材料的挖掘、运输和沉积。通过表征机器人在两种不同的材料密实状态下的性能，我们观察到所运输的物质质量最多可变化75%，这表明初态基材压缩载荷在挖掘和建造中的功能作用。为了更好地理解这些材料性质，我们开发了一种几何结合基材的拉伸测试装置，揭示了纠缠材料强度对初态压缩载荷的强烈响应。这些结果解释了观察到的机器人性能变化，并指出了未来更好地理解机器人与纠缠材料相互作用力学的途径。 
+
+---
+# High-Speed Event Vision-Based Tactile Roller Sensor for Large Surface Measurements 
+
+**Title (ZH)**: 基于事件视觉的高速触觉滚轮传感器用于大型表面测量 
+
+**Authors**: Akram Khairi, Hussain Sajwani, Abdallah Mohammad Alkilany, Laith AbuAssi, Mohamad Halwani, Islam Mohamed Zaid, Ahmed Awadalla, Dewald Swart, Abdulla Ayyad, Yahya Zweiri  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.19914)  
+
+**Abstract**: Inspecting large-scale industrial surfaces like aircraft fuselages for quality control requires capturing their precise 3D surface geometry at high resolution. Vision-based tactile sensors (VBTSs) offer high local resolution but require slow 'press-and-lift' measurements stitched for large areas. Approaches with sliding or roller/belt VBTS designs provide measurements continuity. However, they face significant challenges respectively: sliding struggles with friction/wear and both approaches are speed-limited by conventional camera frame rates and motion blur, making large-area scanning time consuming. Thus, a rapid, continuous, high-resolution method is needed. We introduce a novel tactile sensor integrating a neuromorphic camera in a rolling mechanism to achieve this. Leveraging its high temporal resolution and robustness to motion blur, our system uses a modified event-based multi-view stereo approach for 3D reconstruction. We demonstrate state-of-the-art scanning speeds up to 0.5 m/s, achieving Mean Absolute Error below 100 microns -- 11 times faster than prior continuous tactile sensing methods. A multi-reference Bayesian fusion strategy enhances accuracy (reducing MAE by 25.2\% compared to EMVS) and mitigates curvature errors. We also validate high-speed feature recognition via Braille reading 2.6 times faster than previous approaches. 
+
+**Abstract (ZH)**: 大规模工业表面如飞机 fuselages 的质量控制需要捕获其高分辨率的精确 3D 表面几何。视觉基触觉传感器（VBTS）提供局部高分辨率，但需要缓慢的“压下并抬起”测量，并通过拼接来进行大面积测量。滑动或滚轮/皮带 VBTS 设计的方案可以提供连续测量，但分别面临显著挑战：滑动难以处理摩擦/磨损，两种方法均由于传统相机帧率和运动模糊速度受限，导致大面积扫描耗时。因此，需要一种快速、连续、高分辨率的方法。我们提出了一种结合神经形态相机的滚动机制触觉传感器，以实现这一目标。利用其高时间分辨率和对运动模糊的鲁棒性，我们的系统采用改进的事件驱动多视图立体匹配方法进行 3D 重建。我们展示了高达 0.5 m/s 的扫描速度，平均绝对误差低于 100 微米——比先前的连续触觉传感方法快 11 倍。多参考贝叶斯融合策略提高了准确性（将 MAE 减少 25.2% 相较于 EMVS），并减轻了曲率误差。我们还通过布莱叶盲文阅读验证了高速特征识别，速度比之前的方法快 2.6 倍。 
+
+---
+# Feeling the Force: A Nuanced Physics-based Traversability Sensor for Navigation in Unstructured Vegetation 
+
+**Title (ZH)**: 感知力：一种细腻的基于物理的可通行性传感器，用于不规则植被中的导航 
+
+**Authors**: Zaar Khizar, Johann Laconte, Roland Lenain, Romuald Aufrere  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.19831)  
+
+**Abstract**: In many applications, robots are increasingly deployed in unstructured and natural environments where they encounter various types of vegetation. Vegetation presents unique challenges as a traversable obstacle, where the mechanical properties of the plants can influence whether a robot can safely collide with and overcome the obstacle. A more nuanced approach is required to assess the safety and traversability of these obstacles, as collisions can sometimes be safe and necessary for navigating through dense or unavoidable vegetation. This paper introduces a novel sensor designed to directly measure the applied forces exerted by vegetation on a robot: by directly capturing the push-back forces, our sensor provides a detailed understanding of the interactions between the robot and its surroundings. We demonstrate the sensor's effectiveness through experimental validations, showcasing its ability to measure subtle force variations. This force-based approach provides a quantifiable metric that can inform navigation decisions and serve as a foundation for developing future learning algorithms. 
+
+**Abstract (ZH)**: 基于植被的推力测量的新型传感器及其应用：评估机器人穿越植被障碍的安全性和可行性 
+
+---
+# Extending Group Relative Policy Optimization to Continuous Control: A Theoretical Framework for Robotic Reinforcement Learning 
+
+**Title (ZH)**: 扩展组相对策略优化到连续控制：机器人强化学习的理论框架 
+
+**Authors**: Rajat Khanda, Mohammad Baqar, Sambuddha Chakrabarti, Satyasaran Changdar  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.19555)  
+
+**Abstract**: Group Relative Policy Optimization (GRPO) has shown promise in discrete action spaces by eliminating value function dependencies through group-based advantage estimation. However, its application to continuous control remains unexplored, limiting its utility in robotics where continuous actions are essential. This paper presents a theoretical framework extending GRPO to continuous control environments, addressing challenges in high-dimensional action spaces, sparse rewards, and temporal dynamics. Our approach introduces trajectory-based policy clustering, state-aware advantage estimation, and regularized policy updates designed for robotic applications. We provide theoretical analysis of convergence properties and computational complexity, establishing a foundation for future empirical validation in robotic systems including locomotion and manipulation tasks. 
+
+**Abstract (ZH)**: 基于群体的优势估计的分组相对策略优化（GRPO）在离散动作空间中通过消除价值函数依赖性展现出了潜力，但其在连续控制领域的应用尚待探索，限制了其在需要连续动作的机器人领域中的应用。本文提出了一种理论框架，将GRPO扩展到连续控制环境，解决了高维动作空间、稀疏奖励和时间动态性等挑战。我们的方法引入了基于轨迹的策略聚类、状态感知的优势估计以及专门针对机器人应用的设计正则化策略更新。我们提供了收敛性和计算复杂性理论分析，为未来在包括移动和操作任务的机器人系统中的实证验证奠定了基础。 
+
+---
+# Hypo-paradoxical Linkages: Linkages That Should Move-But Don't 
+
+**Title (ZH)**: 超悖论性链接：本应变动却未变动的链接 
+
+**Authors**: Nir Shvalb, Oded Medina  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.20371)  
+
+**Abstract**: While paradoxical linkages famously violate the Chebyshev-Grubler-Kutzbach criterion by exhibiting unexpected mobility, we identify an opposing phenomenon: a class of linkages that appear mobile according to the same criterion, yet are in fact rigid. We refer to these as hypo-paradoxical linkages, and proceed to analyze and illustrate their behavior. We use the same tools to further explain the unexpected positive mobility of Bennet mechanism. 
+
+**Abstract (ZH)**: 而悖论性连杆机构虽然违反了Chebyshev-Grubler-Kutzbach准则，表现出意想不到的自由度，我们发现一种 opposing 现象：一类连杆机构根据同一准则显示出 Mobility，但实际上是刚性的。我们将这些机构称为假设悖论性连杆机构，并进一步分析和说明其行为。我们使用相同的工具进一步解释Bennet机构的意想不到的正自由度。 
+
+---
+# Efficient Self-Supervised Neuro-Analytic Visual Servoing for Real-time Quadrotor Control 
+
+**Title (ZH)**: 高效自监督神经分析视觉伺服控制实时四旋翼飞行器控制 
+
+**Authors**: Sebastian Mocanu, Sebastian-Ion Nae, Mihai-Eugen Barbu, Marius Leordeanu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.19878)  
+
+**Abstract**: This work introduces a self-supervised neuro-analytical, cost efficient, model for visual-based quadrotor control in which a small 1.7M parameters student ConvNet learns automatically from an analytical teacher, an improved image-based visual servoing (IBVS) controller. Our IBVS system solves numerical instabilities by reducing the classical visual servoing equations and enabling efficient stable image feature detection. Through knowledge distillation, the student model achieves 11x faster inference compared to the teacher IBVS pipeline, while demonstrating similar control accuracy at a significantly lower computational and memory cost. Our vision-only self-supervised neuro-analytic control, enables quadrotor orientation and movement without requiring explicit geometric models or fiducial markers. The proposed methodology leverages simulation-to-reality transfer learning and is validated on a small drone platform in GPS-denied indoor environments. Our key contributions include: (1) an analytical IBVS teacher that solves numerical instabilities inherent in classical approaches, (2) a two-stage segmentation pipeline combining YOLOv11 with a U-Net-based mask splitter for robust anterior-posterior vehicle segmentation to correctly estimate the orientation of the target, and (3) an efficient knowledge distillation dual-path system, which transfers geometric visual servoing capabilities from the analytical IBVS teacher to a compact and small student neural network that outperforms the teacher, while being suitable for real-time onboard deployment. 
+
+**Abstract (ZH)**: 一种自监督的神经分析控制方法：基于视觉的四旋翼飞行器低成本控制模型 
+
+---
