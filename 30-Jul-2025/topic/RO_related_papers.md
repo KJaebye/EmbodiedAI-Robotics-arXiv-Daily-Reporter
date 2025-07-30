@@ -1,0 +1,146 @@
+# A Deep Learning-Driven Autonomous System for Retinal Vein Cannulation: Validation Using a Chicken Embryo Model 
+
+**Title (ZH)**: 基于深度学习的自主系统用于视网膜静脉穿刺：使用鸡胚胎模型进行验证 
+
+**Authors**: Yi Wang, Peiyao Zhang, Mojtaba Esfandiari, Peter Gehlbach, Iulian I. Iordachita  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.21965)  
+
+**Abstract**: Retinal vein cannulation (RVC) is a minimally invasive microsurgical procedure for treating retinal vein occlusion (RVO), a leading cause of vision impairment. However, the small size and fragility of retinal veins, coupled with the need for high-precision, tremor-free needle manipulation, create significant technical challenges. These limitations highlight the need for robotic assistance to improve accuracy and stability. This study presents an automated robotic system with a top-down microscope and B-scan optical coherence tomography (OCT) imaging for precise depth sensing. Deep learning-based models enable real-time needle navigation, contact detection, and vein puncture recognition, using a chicken embryo model as a surrogate for human retinal veins. The system autonomously detects needle position and puncture events with 85% accuracy. The experiments demonstrate notable reductions in navigation and puncture times compared to manual methods. Our results demonstrate the potential of integrating advanced imaging and deep learning to automate microsurgical tasks, providing a pathway for safer and more reliable RVC procedures with enhanced precision and reproducibility. 
+
+**Abstract (ZH)**: 视网膜静脉穿刺（RVC）是一种微创显微手术技术，用于治疗视网膜静脉阻塞（RVO），这是导致视力受损的主要原因之一。然而，视网膜静脉的小尺寸和脆弱性，以及高精度、无抖动针操作的需要，造成了显著的技术挑战。这些限制凸显了需要机器人辅助以提高准确性和稳定性的必要性。本研究提出了一种带有顶部显微镜和B扫光学相干断层扫描（OCT）成像的自动机器人系统，用于精确深度感知。基于深度学习的模型能够实现实时针操作导航、接触检测和静脉穿刺识别，使用鸡胚胎模型作为人类视网膜静脉的替代品。系统自主检测针位置和穿刺事件的准确率为85%。实验结果显示与手动方法相比，导航和穿刺时间显著减少。我们的结果表明，集成先进成像和深度学习以自动化显微手术任务的潜力，为提高RVC操作的安全性和可靠性提供了更为精确和可重复的方法。 
+
+---
+# A Systematic Robot Design Optimization Methodology with Application to Redundant Dual-Arm Manipulators 
+
+**Title (ZH)**: 一种系统的机器人设计优化方法及其在冗余双臂 manipulator 中的应用 
+
+**Authors**: Dominic Guri, George Kantor  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.21896)  
+
+**Abstract**: One major recurring challenge in deploying manipulation robots is determining the optimal placement of manipulators to maximize performance. This challenge is exacerbated in complex, cluttered agricultural environments of high-value crops, such as flowers, fruits, and vegetables, that could greatly benefit from robotic systems tailored to their specific requirements. However, the design of such systems remains a challenging, intuition-driven process, limiting the affordability and adoption of robotics-based automation by domain experts like farmers. To address this challenge, we propose a four-part design optimization methodology for automating the development of task-specific robotic systems. This framework includes (a) a robot design model, (b) task and environment representations for simulation, (c) task-specific performance metrics, and (d) optimization algorithms for refining configurations. We demonstrate our framework by optimizing a dual-arm robotic system for pepper harvesting using two off-the-shelf redundant manipulators. To enhance performance, we introduce novel task metrics that leverage self-motion manifolds to characterize manipulator redundancy comprehensively. Our results show that our framework achieves simultaneous improvements in reachability success rates and improvements in dexterity. Specifically, our approach improves reachability success by at least 14\% over baseline methods and achieves over 30\% improvement in dexterity based on our task-specific metric. 
+
+**Abstract (ZH)**: 部署操作机器人的一大反复出现的挑战是确定操作臂的最佳放置位置以最大化性能。这一挑战在高价值作物（如花卉、水果和蔬菜）复杂的杂乱农业环境中尤为突出，这些作物能够显著受益于定制化的需求的机器人系统。然而，设计此类系统仍然是一个具有挑战性的直觉驱动过程，限制了基于机器人自动化系统的成本效益及其在如农民等领域专家中的应用。为解决这一挑战，我们提出了一个四部分的设计优化方法论，用于自动化特定任务的机器人系统的开发。该框架包括（a）机器人设计模型，（b）用于仿真任务和环境的表示，（c）特定任务的性能指标，以及（d）用于完善配置的优化算法。我们通过优化用于甜椒收获的双臂机器人系统，基于现货冗余操作臂，展示了我们的框架。为了提高性能，我们引入了新的任务指标，利用自我运动流形全面表征操作臂的冗余性。结果显示，我们的框架在可达性成功率和灵巧度方面同时取得了改进。具体来说，我们的方法在可达性成功率方面至少比基线方法提高了14%，并且基于我们特定任务的指标，在灵巧度方面达到了30%以上的改进。 
+
+---
+# Evaluating Interactions between Automated Vehicles and Cyclists using a coupled In-the-Loop Test Environment 
+
+**Title (ZH)**: 评估自动驾驶车辆与自行车骑行者交互的耦合在环测试环境方法 
+
+**Authors**: Michael Kaiser, Clemens Groß, Lisa Marie Otto, Steffen Müller  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.21859)  
+
+**Abstract**: Testing and evaluating automated driving systems (ADS) in interactions with vulnerable road users (VRUs), such as cyclists, are essential for improving the safety of VRUs, but often lack realism. This paper presents and validates a coupled in-the-loop test environment that integrates a Cyclist-in-the Loop test bench with a Vehicle-in-the-Loop test bench via a virtual environment (VE) developed in Unreal Engine 5. The setup enables closed-loop, bidirectional interaction between a real human cyclist and a real automated vehicle under safe and controllable conditions. The automated vehicle reacts to cyclist gestures via stimulated camera input, while the cyclist, riding a stationary bicycle, perceives and reacts to the vehicle in the VE in real time. Validation experiments are conducted using a real automated shuttle bus with a track-and-follow function, performing three test maneuvers - straight-line driving with stop, circular track driving, and double lane change - on a proving ground and in the coupled in-the-loop test environment. The performance is evaluated by comparing the resulting vehicle trajectories in both environments. Additionally, the introduced latencies of individual components in the test setup are measured. The results demonstrate the feasibility of the approach and highlight its strengths and limitations for realistic ADS evaluation. 
+
+**Abstract (ZH)**: 测试和评估 Automated Driving Systems (ADS) 在与行人等弱势道路使用者 (VRUs) 互动中的现实性：一种通过虚拟环境将 Cyclist-in-the-Loop 测试台与 Vehicle-in-the-Loop 测试台耦合的在环测试环境验证方法 
+
+---
+# Interactive Adversarial Testing of Autonomous Vehicles with Adjustable Confrontation Intensity 
+
+**Title (ZH)**: 可调对抗强度的自主车辆互动对抗性测试 
+
+**Authors**: Yicheng Guo, Chengkai Xu, Jiaqi Liu, Hao Zhang, Peng Hang, Jian Sun  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.21814)  
+
+**Abstract**: Scientific testing techniques are essential for ensuring the safe operation of autonomous vehicles (AVs), with high-risk, highly interactive scenarios being a primary focus. To address the limitations of existing testing methods, such as their heavy reliance on high-quality test data, weak interaction capabilities, and low adversarial robustness, this paper proposes ExamPPO, an interactive adversarial testing framework that enables scenario-adaptive and intensity-controllable evaluation of autonomous vehicles. The framework models the Surrounding Vehicle (SV) as an intelligent examiner, equipped with a multi-head attention-enhanced policy network, enabling context-sensitive and sustained behavioral interventions. A scalar confrontation factor is introduced to modulate the intensity of adversarial behaviors, allowing continuous, fine-grained adjustment of test difficulty. Coupled with structured evaluation metrics, ExamPPO systematically probes AV's robustness across diverse scenarios and strategies. Extensive experiments across multiple scenarios and AV strategies demonstrate that ExamPPO can effectively modulate adversarial behavior, expose decision-making weaknesses in tested AVs, and generalize across heterogeneous environments, thereby offering a unified and reproducible solution for evaluating the safety and intelligence of autonomous decision-making systems. 
+
+**Abstract (ZH)**: 科学测试技术对于确保自动驾驶车辆的安全运行至关重要，高风险、高度交互的场景是主要关注点。为了应对现有测试方法的局限性，如对高质量测试数据的高度依赖、弱交互能力和低对抗鲁棒性等问题，本文提出了一种名为ExamPPO的交互式对抗测试框架，该框架能够实现场景自适应和强度可控的自动驾驶车辆评估。该框架将周围车辆（SV）建模为智能考官，并配备了多头注意机制增强的策略网络，能够实现上下文敏感和持续的行为干预。引入了一个标量对抗因子来调节对抗行为的强度，允许对测试难度进行连续的细微调整。结合结构化的评估指标，ExamPPO系统地探究了自动驾驶车辆在多种场景和策略下的鲁棒性。通过在多个场景和自动驾驶策略下的广泛实验，证明ExamPPO能够有效调节对抗行为，揭示测试自动驾驶车辆的决策弱点，并在异构环境中泛化，从而提供了一种统一且可再现的评估自动驾驶决策系统安全性和智能性的解决方案。标题：ExamPPO：一种交互式对抗测试框架 
+
+---
+# MoDeSuite: Robot Learning Task Suite for Benchmarking Mobile Manipulation with Deformable Objects 
+
+**Title (ZH)**: MoDeSuite: 用于柔体物体移动操作基准测试的机器人任务套件 
+
+**Authors**: Yuying Zhang, Kevin Sebastian Luck, Francesco Verdoja, Ville Kyrki, Joni Pajarinen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.21796)  
+
+**Abstract**: Mobile manipulation is a critical capability for robots operating in diverse, real-world environments. However, manipulating deformable objects and materials remains a major challenge for existing robot learning algorithms. While various benchmarks have been proposed to evaluate manipulation strategies with rigid objects, there is still a notable lack of standardized benchmarks that address mobile manipulation tasks involving deformable objects.
+To address this gap, we introduce MoDeSuite, the first Mobile Manipulation Deformable Object task suite, designed specifically for robot learning. MoDeSuite consists of eight distinct mobile manipulation tasks covering both elastic objects and deformable objects, each presenting a unique challenge inspired by real-world robot applications. Success in these tasks requires effective collaboration between the robot's base and manipulator, as well as the ability to exploit the deformability of the objects. To evaluate and demonstrate the use of the proposed benchmark, we train two state-of-the-art reinforcement learning algorithms and two imitation learning algorithms, highlighting the difficulties encountered and showing their performance in simulation. Furthermore, we demonstrate the practical relevance of the suite by deploying the trained policies directly into the real world with the Spot robot, showcasing the potential for sim-to-real transfer. We expect that MoDeSuite will open a novel research domain in mobile manipulation involving deformable objects. Find more details, code, and videos at this https URL. 
+
+**Abstract (ZH)**: 移动操作是机器人在多样化的真实环境中的关键能力。然而，操纵可变形物体和材料仍然是现有机器人学习算法的主要挑战。虽然已经提出了各种基准来评估使用刚体对象的操纵策略，但在涉及可变形物体的移动操纵任务方面仍缺乏标准化的基准。
+
+为了填补这一空白，我们引入了MoDeSuite——首个移动操纵可变形物体任务套件，专门设计用于机器人学习。MoDeSuite 包含八项不同的移动操纵任务，涵盖了弹性物体和可变形物体，每一项任务都以真实世界机器人应用为灵感，具有独特的挑战性。在这些任务中取得成功需要机器人基座和操作机构之间的有效协作，以及对物体可变形性的利用能力。为了评估和展示提议基准的使用，我们训练了两个最先进的强化学习算法和两个模仿学习算法，突显了遇到的困难并展示了它们在仿真中的性能。此外，我们通过直接将训练的策略部署到Spot机器人中，展示了套件的现实相关性，展示了仿真到现实过渡的潜力。我们期望MoDeSuite 将开启移动操纵领域中涉及可变形物体的全新研究方向。更多详情、代码和视频请访问：this https URL。 
+
+---
+# Multi-UAV Deployment in Obstacle-Cluttered Environments with LOS Connectivity 
+
+**Title (ZH)**: 多LOS连接条件下的障碍杂乱环境多无人机部署 
+
+**Authors**: Yuda Chen, Shuaikang Wang, Jie Li, Meng Guo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.21772)  
+
+**Abstract**: A reliable communication network is essential for multiple UAVs operating within obstacle-cluttered environments, where limited communication due to obstructions often occurs. A common solution is to deploy intermediate UAVs to relay information via a multi-hop network, which introduces two challenges: (i) how to design the structure of multihop networks; and (ii) how to maintain connectivity during collaborative motion. To this end, this work first proposes an efficient constrained search method based on the minimumedge RRT? algorithm, to find a spanning-tree topology that requires a less number of UAVs for the deployment task. Then, to achieve this deployment, a distributed model predictive control strategy is proposed for the online motion coordination. It explicitly incorporates not only the inter-UAV and UAVobstacle distance constraints, but also the line-of-sight (LOS) connectivity constraint. These constraints are well-known to be nonlinear and often tackled by various approximations. In contrast, this work provides a theoretical guarantee that all agent trajectories are ensured to be collision-free with a teamwise LOS connectivity at all time. Numerous simulations are performed in 3D valley-like environments, while hardware experiments validate its dynamic adaptation when the deployment position changes online. 
+
+**Abstract (ZH)**: 多障碍物环境下多个无人机协同作业所需的可靠通信网络至关重要，由于障碍物引起的有限通信经常发生。一种常见的解决方案是在多跳网络中部署中间无人机以转发信息，这引入了两个挑战：（i）如何设计多跳网络的结构；以及（ii）如何在协同运动过程中保持连接性。为此，本工作首先提出了一种基于最小边RRT?算法的有效约束搜索方法，以找到一种需要较少无人机部署的任务伸展树拓扑结构。然后，提出了一种分布式模型预测控制策略以实现该部署，该策略在线运动协调中明确地考虑了无人机间和无人机与障碍物的距离约束以及视线（LOS）连通性约束。这些约束是非线性的，通常通过各种近似方法来处理。相比之下，本工作提供了理论保证，即所有智能体轨迹在所有时间点都确保了团队级的视线连通性和无碰撞。在具有3D山谷特征的环境中进行了大量仿真实验，并通过硬件实验验证了其在线部署位置变化时的动态适应能力。 
+
+---
+# Multi-robot LiDAR SLAM: a practical case study in underground tunnel environments 
+
+**Title (ZH)**: 地下隧道环境中的多机器人LiDAR SLAM：一种实际案例研究 
+
+**Authors**: Federica Di Lauro, Domenico G. Sorrenti, Miguel Angel Sotelo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.21553)  
+
+**Abstract**: Multi-robot SLAM aims at localizing and building a map with multiple robots, interacting with each other. In the work described in this article, we analyze the pipeline of a decentralized LiDAR SLAM system to study the current limitations of the state of the art, and we discover a significant source of failures, i.e., that the loop detection is the source of too many false positives. We therefore develop and propose a new heuristic to overcome these limitations. The environment taken as reference in this work is the highly challenging case of underground tunnels. We also highlight potential new research areas still under-explored. 
+
+**Abstract (ZH)**: 多机器人SLAM旨在通过多个交互的机器人进行定位和建图。在本文描述的工作中，我们分析了去中心化激光SLAM系统的流程以研究当前最先进的技术的局限性，并发现一个显著的失败根源，即环检测产生了过多的虚假阳性。因此，我们开发并提出了一种新的启发式方法来克服这些局限性。本文参考的环境是极具挑战性的地下隧道场景。我们还指出了仍待探索的潜在新研究领域。 
+
+---
+# Decision Transformer-Based Drone Trajectory Planning with Dynamic Safety-Efficiency Trade-Offs 
+
+**Title (ZH)**: 基于决策变换器的无人机航迹规划与动态安全-效率权衡 
+
+**Authors**: Chang-Hun Ji, SiWoon Song, Youn-Hee Han, SungTae Moon  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.21506)  
+
+**Abstract**: A drone trajectory planner should be able to dynamically adjust the safety-efficiency trade-off according to varying mission requirements in unknown environments. Although traditional polynomial-based planners offer computational efficiency and smooth trajectory generation, they require expert knowledge to tune multiple parameters to adjust this trade-off. Moreover, even with careful tuning, the resulting adjustment may fail to achieve the desired trade-off. Similarly, although reinforcement learning-based planners are adaptable in unknown environments, they do not explicitly address the safety-efficiency trade-off. To overcome this limitation, we introduce a Decision Transformer-based trajectory planner that leverages a single parameter, Return-to-Go (RTG), as a \emph{temperature parameter} to dynamically adjust the safety-efficiency trade-off. In our framework, since RTG intuitively measures the safety and efficiency of a trajectory, RTG tuning does not require expert knowledge. We validate our approach using Gazebo simulations in both structured grid and unstructured random environments. The experimental results demonstrate that our planner can dynamically adjust the safety-efficiency trade-off by simply tuning the RTG parameter. Furthermore, our planner outperforms existing baseline methods across various RTG settings, generating safer trajectories when tuned for safety and more efficient trajectories when tuned for efficiency. Real-world experiments further confirm the reliability and practicality of our proposed planner. 
+
+**Abstract (ZH)**: 一种决策变换器基于的无人机轨迹规划器应能根据未知环境中的不同任务需求动态调整安全与效率权衡。 
+
+---
+# NMPCM: Nonlinear Model Predictive Control on Resource-Constrained Microcontrollers 
+
+**Title (ZH)**: NMPCM: 面向资源受限微控制器的非线性模型预测控制 
+
+**Authors**: Van Chung Nguyen, Pratik Walunj, Chuong Le, An Duy Nguyen, Hung Manh La  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.21259)  
+
+**Abstract**: Nonlinear Model Predictive Control (NMPC) is a powerful approach for controlling highly dynamic robotic systems, as it accounts for system dynamics and optimizes control inputs at each step. However, its high computational complexity makes implementation on resource-constrained microcontrollers impractical. While recent studies have demonstrated the feasibility of Model Predictive Control (MPC) with linearized dynamics on microcontrollers, applying full NMPC remains a significant challenge. This work presents an efficient solution for generating and deploying NMPC on microcontrollers (NMPCM) to control quadrotor UAVs. The proposed method optimizes computational efficiency while maintaining high control accuracy. Simulations in Gazebo/ROS and real-world experiments validate the effectiveness of the approach, demonstrating its capability to achieve high-frequency NMPC execution in real-time systems. The code is available at: this https URL. 
+
+**Abstract (ZH)**: 基于非线性模型预测控制的微控制器实现方法：用于四旋翼无人机的实时控制 
+
+---
+# Fluidically Innervated Lattices Make Versatile and Durable Tactile Sensors 
+
+**Title (ZH)**: 流体神经传导网络制成的多功能和耐用的触觉传感器 
+
+**Authors**: Annan Zhang, Miguel Flores-Acton, Andy Yu, Anshul Gupta, Maggie Yao, Daniela Rus  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.21225)  
+
+**Abstract**: Tactile sensing plays a fundamental role in enabling robots to navigate dynamic and unstructured environments, particularly in applications such as delicate object manipulation, surface exploration, and human-robot interaction. In this paper, we introduce a passive soft robotic fingertip with integrated tactile sensing, fabricated using a 3D-printed elastomer lattice with embedded air channels. This sensorization approach, termed fluidic innervation, transforms the lattice into a tactile sensor by detecting pressure changes within sealed air channels, providing a simple yet robust solution to tactile sensing in robotics. Unlike conventional methods that rely on complex materials or designs, fluidic innervation offers a simple, scalable, single-material fabrication process. We characterize the sensors' response, develop a geometric model to estimate tip displacement, and train a neural network to accurately predict contact location and contact force. Additionally, we integrate the fingertip with an admittance controller to emulate spring-like behavior, demonstrate its capability for environment exploration through tactile feedback, and validate its durability under high impact and cyclic loading conditions. This tactile sensing technique offers advantages in terms of simplicity, adaptability, and durability and opens up new opportunities for versatile robotic manipulation. 
+
+**Abstract (ZH)**: 触觉感知在使机器人能够导航动态和非结构化环境中的作用，特别是在精细物体操作、表面探索和人机交互等应用中至关重要。本文介绍了一种集成触觉感知的被动软体机器人指尖，采用具有嵌入式气道的3D打印弹性体格子制造。这种感知方法称为流体增殖，通过检测密封气道内的压力变化将格子转变为触觉传感器，提供了一种简单而 robust 的机器人触觉感知解决方案。与依赖于复杂材料或设计的常规方法不同，流体增殖提供了简单、可扩展、单材料的制造过程。我们表征了传感器的响应，建立了几何模型以估计指尖位移，并训练神经网络以准确预测接触位置和接触力。此外，我们将指尖与阻抗控制器集成，以模拟弹簧行为，通过触觉反馈展示其环境探索能力，并验证其在高冲击和循环加载条件下的耐久性。这种触觉感知技术在简单性、适应性和耐用性方面具有优势，并为多功能机器人操作开启了新的可能性。 
+
+---
+# Decentralized Modeling of Vehicular Maneuvers and Interactions at Urban Junctions 
+
+**Title (ZH)**: 城市交叉口车辆机动与相互作用的去中心化建模 
+
+**Authors**: Saeed Rahmani, Simeon C. Calvert, Bart van Arem  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.21547)  
+
+**Abstract**: Modeling and evaluation of automated vehicles (AVs) in mixed-autonomy traffic is essential prior to their safe and efficient deployment. This is especially important at urban junctions where complex multi-agent interactions occur. Current approaches for modeling vehicular maneuvers and interactions at urban junctions have limitations in formulating non-cooperative interactions and vehicle dynamics within a unified mathematical framework. Previous studies either assume predefined paths or rely on cooperation and central controllability, limiting their realism and applicability in mixed-autonomy traffic. This paper addresses these limitations by proposing a modeling framework for trajectory planning and decentralized vehicular control at urban junctions. The framework employs a bi-level structure where the upper level generates kinematically feasible reference trajectories using an efficient graph search algorithm with a custom heuristic function, while the lower level employs a predictive controller for trajectory tracking and optimization. Unlike existing approaches, our framework does not require central controllability or knowledge sharing among vehicles. The vehicle kinematics are explicitly incorporated at both levels, and acceleration and steering angle are used as control variables. This intuitive formulation facilitates analysis of traffic efficiency, environmental impacts, and motion comfort. The framework's decentralized structure accommodates operational and stochastic elements, such as vehicles' detection range, perception uncertainties, and reaction delay, making the model suitable for safety analysis. Numerical and simulation experiments across diverse scenarios demonstrate the framework's capability in modeling accurate and realistic vehicular maneuvers and interactions at various urban junctions, including unsignalized intersections and roundabouts. 
+
+**Abstract (ZH)**: 自动化车辆在混合自主交通中的建模与评估对于其安全高效部署至关重要。特别是在城市交叉路口，复杂的多代理交互尤为重要。现有针对城市交叉路口车辆 maneuvers 和交互的建模方法在统一数学框架下表述非合作交互和车辆动力学存在局限性。先前研究要么假设预定义路径，要么依赖合作和中心控制，限制了其在混合自主交通中的真实性和适用性。本文通过提出一种城市交叉路口路径规划和分散式车辆控制的建模框架来解决这些局限性。该框架采用双层结构，上层使用高效的图搜索算法结合自定义启发式函数生成动力学可行的参考轨迹，下层采用预测控制器进行轨迹跟踪和优化。与现有方法不同，我们的框架无需中心控制或车辆之间知识共享。在一、二层均明确考虑了车辆动力学，并将加速度和转向角作为控制变量。这种直观的表述形式便于分析交通效率、环境影响和运动舒适性。框架的分散结构能够容纳操作和随机因素，如车辆的检测范围、感知不确定性及反应延迟，使模型适用于安全性分析。跨不同场景的数值和仿真实验展示了该框架在城市交叉路口（包括无信号交叉口和环岛）中建模准确且具真实性的车辆 maneuvers 和交互的能力。 
+
+---
