@@ -1,0 +1,53 @@
+# Hydra-Bench: A Benchmark for Multi-Modal Leaf Wetness Sensing 
+
+**Title (ZH)**: Hydra-Bench：多模态叶片湿润ness感知基准测试 
+
+**Authors**: Yimeng Liu, Maolin Gan, Yidong Ren, Gen Li, Jingkai Lin, Younsuk Dong, Zhichao Cao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.22685)  
+
+**Abstract**: Leaf wetness detection is a crucial task in agricultural monitoring, as it directly impacts the prediction and protection of plant diseases. However, existing sensing systems suffer from limitations in robustness, accuracy, and environmental resilience when applied to natural leaves under dynamic real-world conditions. To address these challenges, we introduce a new multi-modal dataset specifically designed for evaluating and advancing machine learning algorithms in leaf wetness detection. Our dataset comprises synchronized mmWave raw data, Synthetic Aperture Radar (SAR) images, and RGB images collected over six months from five diverse plant species in both controlled and outdoor field environments. We provide detailed benchmarks using the Hydra model, including comparisons against single modality baselines and multiple fusion strategies, as well as performance under varying scan distances. Additionally, our dataset can serve as a benchmark for future SAR imaging algorithm optimization, enabling a systematic evaluation of detection accuracy under diverse conditions. 
+
+**Abstract (ZH)**: 叶片湿度检测是农业监测中的关键任务，直接影响植物病害的预测和保护。然而，现有的传感系统在应用于动态现实条件下自然叶片时，在稳健性、准确性及环境适应性方面存在局限性。为应对这些挑战，我们引入了一个新的多模态数据集，专门用于评估和推进叶片湿度检测中的机器学习算法。该数据集包含了在六个月内从五种不同植物物种的受控和户外环境中同步采集的毫米波原始数据、合成孔径雷达（SAR）图像和RGB图像。我们使用Hydra模型提供了详细的基准测试，包括与单一模态基线和多种融合策略的比较，以及在不同扫描距离下的性能表现。此外，该数据集还可作为未来SAR成像算法优化的基准，以系统地评估在不同条件下的检测准确性。 
+
+---
+# Spec-VLA: Speculative Decoding for Vision-Language-Action Models with Relaxed Acceptance 
+
+**Title (ZH)**: Spec-VLA: 推测性解码的视觉-语言-动作模型及其宽松接受策略 
+
+**Authors**: Songsheng Wang, Rucheng Yu, Zhihang Yuan, Chao Yu, Feng Gao, Yu Wang, Derek F. Wong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.22424)  
+
+**Abstract**: Vision-Language-Action (VLA) models have made substantial progress by leveraging the robust capabilities of Visual Language Models (VLMs). However, VLMs' significant parameter size and autoregressive (AR) decoding nature impose considerable computational demands on VLA models. While Speculative Decoding (SD) has shown efficacy in accelerating Large Language Models (LLMs) by incorporating efficient drafting and parallel verification, allowing multiple tokens to be generated in one forward pass, its application to VLA models remains unexplored. This work introduces Spec-VLA, an SD framework designed to accelerate VLA models. Due to the difficulty of the action prediction task and the greedy decoding mechanism of the VLA models, the direct application of the advanced SD framework to the VLA prediction task yields a minor speed improvement. To boost the generation speed, we propose an effective mechanism to relax acceptance utilizing the relative distances represented by the action tokens of the VLA model. Empirical results across diverse test scenarios affirm the effectiveness of the Spec-VLA framework, and further analysis substantiates the impact of our proposed strategies, which enhance the acceptance length by 44%, achieving 1.42 times speedup compared with the OpenVLA baseline, without compromising the success rate. The success of the Spec-VLA framework highlights the potential for broader application of speculative execution in VLA prediction scenarios. 
+
+**Abstract (ZH)**: Speculative Decoding for Vision-Language-Action Models 
+
+---
+# Multi-modal Relational Item Representation Learning for Inferring Substitutable and Complementary Items 
+
+**Title (ZH)**: 多模态关系项目表示学习及其在推断可替代和互补项目中的应用 
+
+**Authors**: Junting Wang, Chenghuan Guo, Jiao Yang, Yanhui Guo, Yan Gao, Hari Sundaram  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.22268)  
+
+**Abstract**: We introduce a novel self-supervised multi-modal relational item representation learning framework designed to infer substitutable and complementary items. Existing approaches primarily focus on modeling item-item associations deduced from user behaviors using graph neural networks (GNNs) or leveraging item content information. However, these methods often overlook critical challenges, such as noisy user behavior data and data sparsity due to the long-tailed distribution of these behaviors. In this paper, we propose MMSC, a self-supervised multi-modal relational item representation learning framework to address these challenges. Specifically, MMSC consists of three main components: (1) a multi-modal item representation learning module that leverages a multi-modal foundational model and learns from item metadata, (2) a self-supervised behavior-based representation learning module that denoises and learns from user behavior data, and (3) a hierarchical representation aggregation mechanism that integrates item representations at both the semantic and task levels. Additionally, we leverage LLMs to generate augmented training data, further enhancing the denoising process during training. We conduct extensive experiments on five real-world datasets, showing that MMSC outperforms existing baselines by 26.1% for substitutable recommendation and 39.2% for complementary recommendation. In addition, we empirically show that MMSC is effective in modeling cold-start items. 
+
+**Abstract (ZH)**: 一种自监督多模态关系商品表示学习框架：MMSC 
+
+---
+# SmartCLIP: Modular Vision-language Alignment with Identification Guarantees 
+
+**Title (ZH)**: SmartCLIP: 具有识别保证的模块化跨模态对齐 
+
+**Authors**: Shaoan Xie, Lingjing Kong, Yujia Zheng, Yu Yao, Zeyu Tang, Eric P. Xing, Guangyi Chen, Kun Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.22264)  
+
+**Abstract**: Contrastive Language-Image Pre-training (CLIP)~\citep{radford2021learning} has emerged as a pivotal model in computer vision and multimodal learning, achieving state-of-the-art performance at aligning visual and textual representations through contrastive learning. However, CLIP struggles with potential information misalignment in many image-text datasets and suffers from entangled representation. On the one hand, short captions for a single image in datasets like MSCOCO may describe disjoint regions in the image, leaving the model uncertain about which visual features to retain or disregard. On the other hand, directly aligning long captions with images can lead to the retention of entangled details, preventing the model from learning disentangled, atomic concepts -- ultimately limiting its generalization on certain downstream tasks involving short prompts.
+In this paper, we establish theoretical conditions that enable flexible alignment between textual and visual representations across varying levels of granularity. Specifically, our framework ensures that a model can not only \emph{preserve} cross-modal semantic information in its entirety but also \emph{disentangle} visual representations to capture fine-grained textual concepts. Building on this foundation, we introduce \ours, a novel approach that identifies and aligns the most relevant visual and textual representations in a modular manner. Superior performance across various tasks demonstrates its capability to handle information misalignment and supports our identification theory. The code is available at this https URL. 
+
+**Abstract (ZH)**: 对比语言-图像预训练（CLIP）~\citep{radford2021learning}已在计算机视觉和多模态学习领域 emerged 为一个关键模型，通过对比学习实现了视觉和文本表示的先进对齐性能。然而，CLIP 在许多图像-文本数据集中面临着潜在信息对齐问题，且受到缠绕表示的困扰。一方面，像 MSCOCO 这样的数据集中单张图像的简短描述可能描述图像中的不连续区域，使模型对于保留或忽略哪些视觉特征感到不确定。另一方面，直接将长描述与图像对齐可能导致缠绕细节的保留，从而妨碍模型学习独立的、原子的概念——最终限制其在涉及简短提示的一些下游任务上的泛化能力。在本文中，我们建立了使文本和视觉表示在不同粒度层次上灵活对齐的理论条件。具体而言，我们的框架保证模型不仅可以保留全部跨模态语义信息，还能解缠视觉表示以捕获细粒度的文本概念。在此基础上，我们引入了 \ours，一种新的方法，能够模块化地识别并对齐最相关的视觉和文本表示。在各种任务上的卓越性能证明了其处理信息对齐的能力并支持了我们的识别理论。代码可在该网址获取。 
+
+---

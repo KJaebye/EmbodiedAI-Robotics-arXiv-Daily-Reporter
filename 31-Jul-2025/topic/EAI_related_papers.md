@@ -1,0 +1,171 @@
+# UniLegs: Universal Multi-Legged Robot Control through Morphology-Agnostic Policy Distillation 
+
+**Title (ZH)**: UniLegs: 基于形态无关策略蒸馏的通用多足机器人控制 
+
+**Authors**: Weijie Xi, Zhanxiang Cao, Chenlin Ming, Jianying Zheng, Guyue Zhou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.22653)  
+
+**Abstract**: Developing controllers that generalize across diverse robot morphologies remains a significant challenge in legged locomotion. Traditional approaches either create specialized controllers for each morphology or compromise performance for generality. This paper introduces a two-stage teacher-student framework that bridges this gap through policy distillation. First, we train specialized teacher policies optimized for individual morphologies, capturing the unique optimal control strategies for each robot design. Then, we distill this specialized expertise into a single Transformer-based student policy capable of controlling robots with varying leg configurations. Our experiments across five distinct legged morphologies demonstrate that our approach preserves morphology-specific optimal behaviors, with the Transformer architecture achieving 94.47\% of teacher performance on training morphologies and 72.64\% on unseen robot designs. Comparative analysis reveals that Transformer-based architectures consistently outperform MLP baselines by leveraging attention mechanisms to effectively model joint relationships across different kinematic structures. We validate our approach through successful deployment on a physical quadruped robot, demonstrating the practical viability of our morphology-agnostic control framework. This work presents a scalable solution for developing universal legged robot controllers that maintain near-optimal performance while generalizing across diverse morphologies. 
+
+**Abstract (ZH)**: 跨多样机器人形态实现通用控制器的设计仍然是 legged 机器人类足运动控制中的一个重大挑战。传统的做法要么为每种形态设计专门的控制器，要么牺牲通用性以提升性能。本文提出了一种两阶段教师-学生框架，通过策略蒸馏弥合这一差距。首先，我们训练针对 individual 形态优化的专门教师策略，捕捉每种机器人设计的独特最优控制策略。然后，将这种专门化的专业知识蒸馏到一个能够控制具有不同腿部配置的机器人的 Transformer 基础学生策略中。我们在五种不同的腿足形态的实验中展示了该方法保留形态特有的最优行为，Transformer 架构在训练形态上的性能达到教师的 94.47%，在未见过的机器人设计上达到 72.64%。比较分析显示，基于 Transformer 的架构通过利用注意力机制有效建模不同运动学结构之间的关节关系，连续优于 MLP 基线。我们通过成功部署在物理四足机器人上验证了该方法，证明了我们的形态无关控制框架的实用性。本文展示了开发能够保持接近最优性能并在多样化形态中泛化的通用腿足机器人控制器的可扩展解决方案。 
+
+---
+# A Two-Stage Lightweight Framework for Efficient Land-Air Bimodal Robot Autonomous Navigation 
+
+**Title (ZH)**: 一种两阶段轻量级框架，实现高效地面-空中双模式机器人自主导航 
+
+**Authors**: Yongjie Li, Zhou Liu, Wenshuai Yu, Zhangji Lu, Chenyang Wang, Fei Yu, Qingquan Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.22473)  
+
+**Abstract**: Land-air bimodal robots (LABR) are gaining attention for autonomous navigation, combining high mobility from aerial vehicles with long endurance from ground vehicles. However, existing LABR navigation methods are limited by suboptimal trajectories from mapping-based approaches and the excessive computational demands of learning-based methods. To address this, we propose a two-stage lightweight framework that integrates global key points prediction with local trajectory refinement to generate efficient and reachable trajectories. In the first stage, the Global Key points Prediction Network (GKPN) was used to generate a hybrid land-air keypoint path. The GKPN includes a Sobel Perception Network (SPN) for improved obstacle detection and a Lightweight Attention Planning Network (LAPN) to improves predictive ability by capturing contextual information. In the second stage, the global path is segmented based on predicted key points and refined using a mapping-based planner to create smooth, collision-free trajectories. Experiments conducted on our LABR platform show that our framework reduces network parameters by 14\% and energy consumption during land-air transitions by 35\% compared to existing approaches. The framework achieves real-time navigation without GPU acceleration and enables zero-shot transfer from simulation to reality during 
+
+**Abstract (ZH)**: 陆空两用机器人（LABR）的双阶段轻量级导航框架：结合全局关键点预测与局部路径细化生成高效可达轨迹 
+
+---
+# Safety Evaluation of Motion Plans Using Trajectory Predictors as Forward Reachable Set Estimators 
+
+**Title (ZH)**: 使用轨迹预测器作为前方可达集估计器的运动计划安全性评估 
+
+**Authors**: Kaustav Chakraborty, Zeyuan Feng, Sushant Veer, Apoorva Sharma, Wenhao Ding, Sever Topan, Boris Ivanovic, Marco Pavone, Somil Bansal  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.22389)  
+
+**Abstract**: The advent of end-to-end autonomy stacks - often lacking interpretable intermediate modules - has placed an increased burden on ensuring that the final output, i.e., the motion plan, is safe in order to validate the safety of the entire stack. This requires a safety monitor that is both complete (able to detect all unsafe plans) and sound (does not flag safe plans). In this work, we propose a principled safety monitor that leverages modern multi-modal trajectory predictors to approximate forward reachable sets (FRS) of surrounding agents. By formulating a convex program, we efficiently extract these data-driven FRSs directly from the predicted state distributions, conditioned on scene context such as lane topology and agent history. To ensure completeness, we leverage conformal prediction to calibrate the FRS and guarantee coverage of ground-truth trajectories with high probability. To preserve soundness in out-of-distribution (OOD) scenarios or under predictor failure, we introduce a Bayesian filter that dynamically adjusts the FRS conservativeness based on the predictor's observed performance. We then assess the safety of the ego vehicle's motion plan by checking for intersections with these calibrated FRSs, ensuring the plan remains collision-free under plausible future behaviors of others. Extensive experiments on the nuScenes dataset show our approach significantly improves soundness while maintaining completeness, offering a practical and reliable safety monitor for learned autonomy stacks. 
+
+**Abstract (ZH)**: 端到端自主系统的发展 - 通常缺乏可解释的中间模块 - 已经增加了确保最终输出（即运动计划）的安全性以验证整个系统的安全性的负担。这需要一个既完备（能够检测所有不安全的计划）又sound（不标记安全的计划）的安全监控器。在本文中，我们提出了一种基于原理的安全监控器，利用现代多模态轨迹预测器来近似邻近代理的前方可达集（FRS）。通过形式化一个凸规划，我们可以直接从预测的状态分布中，根据场景上下文（如车道拓扑和代理历史）提取这些数据驱动的FRS。为了保证完备性，我们利用兼容预测来校准FRS，并以高概率保证真实轨迹的覆盖。为了在分布外（OOD）场景或预测器失效情况下保持soundness，我们引入了一个贝叶斯滤波器，根据预测器的观测性能动态调整FRS的保守性。然后，我们通过检查运动计划与这些校准后的FRS的交集来评估自主车辆的运动计划的安全性，从而确保在其他主体可能的未来行为下，计划保持无碰撞。在nuScenes数据集上的广泛实验表明，我们的方法在保持完备性的基础上显著提高了soundness，提供了一个实用且可靠的学习自主系统的安全监控器。 
+
+---
+# Recognizing Actions from Robotic View for Natural Human-Robot Interaction 
+
+**Title (ZH)**: 基于机器人视角的动作识别以实现自然的人机交互 
+
+**Authors**: Ziyi Wang, Peiming Li, Hong Liu, Zhichao Deng, Can Wang, Jun Liu, Junsong Yuan, Mengyuan Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.22522)  
+
+**Abstract**: Natural Human-Robot Interaction (N-HRI) requires robots to recognize human actions at varying distances and states, regardless of whether the robot itself is in motion or stationary. This setup is more flexible and practical than conventional human action recognition tasks. However, existing benchmarks designed for traditional action recognition fail to address the unique complexities in N-HRI due to limited data, modalities, task categories, and diversity of subjects and environments. To address these challenges, we introduce ACTIVE (Action from Robotic View), a large-scale dataset tailored specifically for perception-centric robotic views prevalent in mobile service robots. ACTIVE comprises 30 composite action categories, 80 participants, and 46,868 annotated video instances, covering both RGB and point cloud modalities. Participants performed various human actions in diverse environments at distances ranging from 3m to 50m, while the camera platform was also mobile, simulating real-world scenarios of robot perception with varying camera heights due to uneven ground. This comprehensive and challenging benchmark aims to advance action and attribute recognition research in N-HRI. Furthermore, we propose ACTIVE-PC, a method that accurately perceives human actions at long distances using Multilevel Neighborhood Sampling, Layered Recognizers, Elastic Ellipse Query, and precise decoupling of kinematic interference from human actions. Experimental results demonstrate the effectiveness of ACTIVE-PC. Our code is available at: this https URL. 
+
+**Abstract (ZH)**: 自然人类-机器人交互中的自然人类动作识别（Natural Human Actions Recognition in Natural Human-Robot Interaction）需要机器人能够在多种距离和状态识别人类动作，无论机器人自身是移动还是静止。这种设置比传统的动作识别任务更加灵活和实用。然而，现有的针对传统动作识别设计的标准数据集未能解决自然人类-机器人交互中独有的复杂性，这主要是由于数据的局限性、模态的局限性、任务类别的局限性和参与者的多样性的局限性。为了解决这些问题，我们引入了ACTIVE（行动从机器人视角），这是一个专为在移动服务机器人中常见的以感知为中心的机器人视角定制的大规模数据集。ACTIVE 包含 30 种复合动作类别、80 名参与者和 46,868 个标注视频实例，涵盖了 RGB 和点云模态。参与人员在多种环境中以从 3 米到 50 米的距离执行各种人类动作，同时摄像平台也为移动，模拟了由于地面不平而导致不同摄像高度的真实场景中的机器人感知。这个综合且具有挑战性的基准旨在推动自然人类-机器人交互中的动作和属性识别研究。此外，我们提出了ACTIVE-PC 方法，该方法使用多级邻域采样、分层识别器、弹性椭圆查询以及精确解耦动力学干扰来准确识别远距离的人类动作。实验结果表明了 ACTIVE-PC 的有效性。我们的代码可在以下链接获取：this https URL。 
+
+---
+# Temporally Consistent Unsupervised Segmentation for Mobile Robot Perception 
+
+**Title (ZH)**: 移动机器人感知中的时间一致无监督分割 
+
+**Authors**: Christian Ellis, Maggie Wigness, Craig Lennon, Lance Fiondella  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.22194)  
+
+**Abstract**: Rapid progress in terrain-aware autonomous ground navigation has been driven by advances in supervised semantic segmentation. However, these methods rely on costly data collection and labor-intensive ground truth labeling to train deep models. Furthermore, autonomous systems are increasingly deployed in unrehearsed, unstructured environments where no labeled data exists and semantic categories may be ambiguous or domain-specific. Recent zero-shot approaches to unsupervised segmentation have shown promise in such settings but typically operate on individual frames, lacking temporal consistency-a critical property for robust perception in unstructured environments. To address this gap we introduce Frontier-Seg, a method for temporally consistent unsupervised segmentation of terrain from mobile robot video streams. Frontier-Seg clusters superpixel-level features extracted from foundation model backbones-specifically DINOv2-and enforces temporal consistency across frames to identify persistent terrain boundaries or frontiers without human supervision. We evaluate Frontier-Seg on a diverse set of benchmark datasets-including RUGD and RELLIS-3D-demonstrating its ability to perform unsupervised segmentation across unstructured off-road environments. 
+
+**Abstract (ZH)**: 基于地形感知的自主地面导航快速进展得益于监督语义分割技术的进步。然而，这些方法依赖于昂贵的数据收集和劳动密集型的地面真实标签来进行模型训练。此外，自主系统 increasingly 部署于未预演的、结构化程度低的环境中，这些环境中不存在标记数据，且语义类别可能模糊或具有领域特定性。最近的零样本无监督分割方法在这些环境中展现了前景，但这些方法通常在单帧上运行，缺乏时间连贯性—在结构化环境中进行鲁棒感知的一个关键属性。为了填补这个缺口，我们引入了 Frontier-Seg 方法，这是一种基于移动机器人视频流的地形无监督分割方法，能够保持时间连贯性。Frontier-Seg 对基础模型主干提取的超像素级特征进行聚类，并在帧之间施加时间连贯性约束，以在无需人工监督的情况下识别持久的地形边界或前沿。我们在包括 RUGD 和 RELLIS-3D 在内的多样性基准数据集上评估了 Frontier-Seg，展示了其在非结构化离路环境中的无监督分割能力。 
+
+---
+# Emergent interactions lead to collective frustration in robotic matter 
+
+**Title (ZH)**: Emergent interactions导致机器人物质中的集体挫败感 
+
+**Authors**: Onurcan Bektas, Adolfo Alsina, Steffen Rulands  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.22148)  
+
+**Abstract**: Current artificial intelligence systems show near-human-level capabilities when deployed in isolation. Systems of a few collaborating intelligent agents are being engineered to perform tasks collectively. This raises the question of whether robotic matter, where many learning and intelligent agents interact, shows emergence of collective behaviour. And if so, which kind of phenomena would such systems exhibit? Here, we study a paradigmatic model for robotic matter: a stochastic many-particle system in which each particle is endowed with a deep neural network that predicts its transitions based on the particles' environments. For a one-dimensional model, we show that robotic matter exhibits complex emergent phenomena, including transitions between long-lived learning regimes, the emergence of particle species, and frustration. We also find a density-dependent phase transition with signatures of criticality. Using active matter theory, we show that this phase transition is a consequence of self-organisation mediated by emergent inter-particle interactions. Our simple model captures key features of more complex forms of robotic systems. 
+
+**Abstract (ZH)**: 当前孤立部署的人工智能系统展示了接近人类的水平能力。几个协作智能代理的系统正在被工程化以共同执行任务。这引发了关于在众多学习和智能代理相互作用的机器人物质中是否会出现集体行为的问题。如果出现，这样的系统将表现出哪些现象？在这里，我们研究了一个典型的机器人物质模型：一个随机的多粒子系统，其中每个粒子都配备了基于自身环境预测状态转换的深度神经网络。对于一维模型，我们显示机器人物质表现出复杂的涌现现象，包括长期学习模式之间的转换、粒子物种的涌现以及挫败感。我们还发现密度依赖的相转换，并且带有临界性的特征。利用活性物质理论，我们证明这一相转换是通过涌现的粒子间相互作用介导的自我组织的后果。我们的简单模型捕捉到了更复杂形式的机器人系统的关键特征。 
+
+---
+# RLVMR: Reinforcement Learning with Verifiable Meta-Reasoning Rewards for Robust Long-Horizon Agents 
+
+**Title (ZH)**: RLVMR：具有可验证元推理奖励的强化学习方法以实现稳健的长时 horizons 代理 
+
+**Authors**: Zijing Zhang, Ziyang Chen, Mingxiao Li, Zhaopeng Tu, Xiaolong Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.22844)  
+
+**Abstract**: The development of autonomous agents for complex, long-horizon tasks is a central goal in AI. However, dominant training paradigms face a critical limitation: reinforcement learning (RL) methods that optimize solely for final task success often reinforce flawed or inefficient reasoning paths, a problem we term inefficient exploration. This leads to agents that are brittle and fail to generalize, as they learn to find solutions without learning how to reason coherently. To address this, we introduce RLVMR, a novel framework that integrates dense, process-level supervision into end-to-end RL by rewarding verifiable, meta-reasoning behaviors. RLVMR equips an agent to explicitly tag its cognitive steps, such as planning, exploration, and reflection, and provides programmatic, rule-based rewards for actions that contribute to effective problem-solving. These process-centric rewards are combined with the final outcome signal and optimized using a critic-free policy gradient method. On the challenging ALFWorld and ScienceWorld benchmarks, RLVMR achieves new state-of-the-art results, with our 7B model reaching an 83.6% success rate on the most difficult unseen task split. Our analysis confirms these gains stem from improved reasoning quality, including significant reductions in redundant actions and enhanced error recovery, leading to more robust, efficient, and interpretable agents. 
+
+**Abstract (ZH)**: 自主代理在复杂、长周期任务中的发展是人工智能的核心目标。然而，主流的训练范式面临一个关键限制：仅优化最终任务成功的强化学习（RL）方法往往会强化不良或低效的推理路径，我们称之为低效探索。这导致了脆弱的代理，它们难以泛化，因为它们只是学习如何找到解决方案，而不是学习如何进行连贯的推理。为了解决这一问题，我们提出了RLVMR，这是一种新的框架，通过奖励可验证的、元推理行为将密集的过程级监督集成到端到端的RL中。RLVMR使代理能够明确标记其认知步骤，如规划、探索和反思，并为有助于有效解决问题的动作提供程序化的、基于规则的奖励。这些以过程为中心的奖励与最终结果信号结合，并使用无评论的策略梯度方法进行优化。在具有挑战性的ALFWorld和ScienceWorld基准测试中，RLVMR取得了新的最佳结果，我们的7B模型在最难的未见过的任务分割上达到了83.6%的成功率。我们的分析表明，这些改进源于推理质量的提高，包括冗余行动的显著减少和错误恢复能力的增强，从而产生了更稳健、更高效和更可解释的代理。 
+
+---
+# MoCHA: Advanced Vision-Language Reasoning with MoE Connector and Hierarchical Group Attention 
+
+**Title (ZH)**: MoCHA：基于MoE连接器和分层组注意力的高级视觉-语言推理 
+
+**Authors**: Yuqi Pang, Bowen Yang, Yun Cao, Fan Rong, Xiaoyu Li, Chen He  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.22805)  
+
+**Abstract**: Vision large language models (VLLMs) are focusing primarily on handling complex and fine-grained visual information by incorporating advanced vision encoders and scaling up visual models. However, these approaches face high training and inference costs, as well as challenges in extracting visual details, effectively bridging across modalities. In this work, we propose a novel visual framework, MoCHA, to address these issues. Our framework integrates four vision backbones (i.e., CLIP, SigLIP, DINOv2 and ConvNeXt) to extract complementary visual features and is equipped with a sparse Mixture of Experts Connectors (MoECs) module to dynamically select experts tailored to different visual dimensions. To mitigate redundant or insufficient use of the visual information encoded by the MoECs module, we further design a Hierarchical Group Attention (HGA) with intra- and inter-group operations and an adaptive gating strategy for encoded visual features. We train MoCHA on two mainstream LLMs (e.g., Phi2-2.7B and Vicuna-7B) and evaluate their performance across various benchmarks. Notably, MoCHA outperforms state-of-the-art open-weight models on various tasks. For example, compared to CuMo (Mistral-7B), our MoCHA (Phi2-2.7B) presents outstanding abilities to mitigate hallucination by showing improvements of 3.25% in POPE and to follow visual instructions by raising 153 points on MME. Finally, ablation studies further confirm the effectiveness and robustness of the proposed MoECs and HGA in improving the overall performance of MoCHA. 
+
+**Abstract (ZH)**: 基于视觉的大型语言模型（VLLMs）主要通过集成先进的视觉编码器和扩展视觉模型来处理复杂的细粒度视觉信息。然而，这些方法面临着高昂的训练和推理成本，以及跨模态提取视觉细节的挑战。本文提出了一种新的视觉框架MoCHA，以应对这些问题。该框架集成了四种视觉骨干（即CLIP、SigLIP、DINOv2和ConvNeXt）以提取互补的视觉特征，并配备了稀疏混合专家连接器（MoECs）模块，以动态选择适用于不同视觉维度的专家。为减轻MoECs模块编码的视觉信息的冗余或不足使用，我们进一步设计了具有 intra- 和 inter- 组操作的分层组注意（HGA）机制和自适应门控策略，用于编码的视觉特征。我们使用两种主流的大规模语言模型（例如，Phi2-2.7B和Vicuna-7B）训练MoCHA，并在各种基准上评估其性能。值得注意的是，MoCHA在各种任务中优于最先进的开源模型。例如，与CuMo（Mistral-7B）相比，我们的MoCHA（Phi2-2.7B）展示了在POPE上提高3.25%的能力以减轻幻觉，并在MME上提高153分的能力以更好地遵循视觉指令。最后，消融研究进一步证实了所提出的MoECs和HGA在提高MoCHA的整体性能方面的有效性和稳健性。 
+
+---
+# Of Good Demons and Bad Angels: Guaranteeing Safe Control under Finite Precision 
+
+**Title (ZH)**: 善魔与恶天使：在有限精度下确保安全控制 
+
+**Authors**: Samuel Teuber, Debasmita Lohar, Bernhard Beckert  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.22760)  
+
+**Abstract**: As neural networks (NNs) become increasingly prevalent in safety-critical neural network-controlled cyber-physical systems (NNCSs), formally guaranteeing their safety becomes crucial. For these systems, safety must be ensured throughout their entire operation, necessitating infinite-time horizon verification. To verify the infinite-time horizon safety of NNCSs, recent approaches leverage Differential Dynamic Logic (dL). However, these dL-based guarantees rely on idealized, real-valued NN semantics and fail to account for roundoff errors introduced by finite-precision implementations. This paper bridges the gap between theoretical guarantees and real-world implementations by incorporating robustness under finite-precision perturbations -- in sensing, actuation, and computation -- into the safety verification. We model the problem as a hybrid game between a good Demon, responsible for control actions, and a bad Angel, introducing perturbations. This formulation enables formal proofs of robustness w.r.t. a given (bounded) perturbation. Leveraging this bound, we employ state-of-the-art mixed-precision fixed-point tuners to synthesize sound and efficient implementations, thus providing a complete end-to-end solution. We evaluate our approach on case studies from the automotive and aeronautics domains, producing efficient NN implementations with rigorous infinite-time horizon safety guarantees. 
+
+**Abstract (ZH)**: 面向有限精度扰动的神经网络控制的 cyber-物理系统无限时间 horizon 安全性验证 
+
+---
+# RobEthiChor: Automated Context-aware Ethics-based Negotiation for Autonomous Robots 
+
+**Title (ZH)**: RobEthiChor：自主机器人基于伦理的上下文感知自动谈判技术 
+
+**Authors**: Mashal Afzal Memon, Gianluca Filippone, Gian Luca Scoccia, Marco Autili, Paola Inverardi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.22664)  
+
+**Abstract**: The presence of autonomous systems is growing at a fast pace and it is impacting many aspects of our lives. Designed to learn and act independently, these systems operate and perform decision-making without human intervention. However, they lack the ability to incorporate users' ethical preferences, which are unique for each individual in society and are required to personalize the decision-making processes. This reduces user trust and prevents autonomous systems from behaving according to the moral beliefs of their end-users. When multiple systems interact with differing ethical preferences, they must negotiate to reach an agreement that satisfies the ethical beliefs of all the parties involved and adjust their behavior consequently. To address this challenge, this paper proposes RobEthiChor, an approach that enables autonomous systems to incorporate user ethical preferences and contextual factors into their decision-making through ethics-based negotiation. RobEthiChor features a domain-agnostic reference architecture for designing autonomous systems capable of ethic-based negotiating. The paper also presents RobEthiChor-Ros, an implementation of RobEthiChor within the Robot Operating System (ROS), which can be deployed on robots to provide them with ethics-based negotiation capabilities. To evaluate our approach, we deployed RobEthiChor-Ros on real robots and ran scenarios where a pair of robots negotiate upon resource contention. Experimental results demonstrate the feasibility and effectiveness of the system in realizing ethics-based negotiation. RobEthiChor allowed robots to reach an agreement in more than 73\% of the scenarios with an acceptable negotiation time (0.67s on average). Experiments also demonstrate that the negotiation approach implemented in RobEthiChor is scalable. 
+
+**Abstract (ZH)**: 自主系统中超伦理偏好和情境因素的伦理谈判方法RobEthiChor及其在Robot Operating System (ROS)中的实现与评估 
+
+---
+# Safe Deployment of Offline Reinforcement Learning via Input Convex Action Correction 
+
+**Title (ZH)**: 基于输入凸动作修正的安全离线强化学习部署 
+
+**Authors**: Alex Durkin, Jasper Stolte, Matthew Jones, Raghuraman Pitchumani, Bei Li, Christian Michler, Mehmet Mercangöz  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.22640)  
+
+**Abstract**: Offline reinforcement learning (offline RL) offers a promising framework for developing control strategies in chemical process systems using historical data, without the risks or costs of online experimentation. This work investigates the application of offline RL to the safe and efficient control of an exothermic polymerisation continuous stirred-tank reactor. We introduce a Gymnasium-compatible simulation environment that captures the reactor's nonlinear dynamics, including reaction kinetics, energy balances, and operational constraints. The environment supports three industrially relevant scenarios: startup, grade change down, and grade change up. It also includes reproducible offline datasets generated from proportional-integral controllers with randomised tunings, providing a benchmark for evaluating offline RL algorithms in realistic process control tasks.
+We assess behaviour cloning and implicit Q-learning as baseline algorithms, highlighting the challenges offline agents face, including steady-state offsets and degraded performance near setpoints. To address these issues, we propose a novel deployment-time safety layer that performs gradient-based action correction using input convex neural networks (PICNNs) as learned cost models. The PICNN enables real-time, differentiable correction of policy actions by descending a convex, state-conditioned cost surface, without requiring retraining or environment interaction.
+Experimental results show that offline RL, particularly when combined with convex action correction, can outperform traditional control approaches and maintain stability across all scenarios. These findings demonstrate the feasibility of integrating offline RL with interpretable and safety-aware corrections for high-stakes chemical process control, and lay the groundwork for more reliable data-driven automation in industrial systems. 
+
+**Abstract (ZH)**: 离线强化学习（离线RL）为利用化工过程系统的历史数据开发控制策略提供了有前途的框架，而无需面临在线实验的风险或成本。本研究探讨了将离线RL应用于外热聚合连续搅拌罐反应器的安全和高效控制。我们引入了一个兼容Gymnasium的仿真环境，可以捕捉反应器的非线性动力学，包括反应动力学、能量平衡和操作约束。该环境支持三种业内相关场景：启动、等级下调和等级上调。此外，还包含由随机整定的比例积分控制器生成的可再现的离线数据集，为评估离线RL算法在实际过程控制任务中的性能提供了基准。 
+
+---
+# VL-Cogito: Progressive Curriculum Reinforcement Learning for Advanced Multimodal Reasoning 
+
+**Title (ZH)**: VL-Cogito: 逐步 Curriculum 强化学习方法及其在高级多模态推理中的应用 
+
+**Authors**: Ruifeng Yuan, Chenghao Xiao, Sicong Leng, Jianyu Wang, Long Li, Weiwen Xu, Hou Pong Chan, Deli Zhao, Tingyang Xu, Zhongyu Wei, Hao Zhang, Yu Rong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.22607)  
+
+**Abstract**: Reinforcement learning has proven its effectiveness in enhancing the reasoning capabilities of large language models. Recent research efforts have progressively extended this paradigm to multimodal reasoning tasks. Due to the inherent complexity and diversity of multimodal tasks, especially in semantic content and problem formulations, existing models often exhibit unstable performance across various domains and difficulty levels. To address these limitations, we propose VL-Cogito, an advanced multimodal reasoning model trained via a novel multi-stage Progressive Curriculum Reinforcement Learning (PCuRL) framework. PCuRL systematically guides the model through tasks of gradually increasing difficulty, substantially improving its reasoning abilities across diverse multimodal contexts. The framework introduces two key innovations: (1) an online difficulty soft weighting mechanism, dynamically adjusting training difficulty across successive RL training stages; and (2) a dynamic length reward mechanism, which encourages the model to adaptively regulate its reasoning path length according to task complexity, thus balancing reasoning efficiency with correctness. Experimental evaluations demonstrate that VL-Cogito consistently matches or surpasses existing reasoning-oriented models across mainstream multimodal benchmarks spanning mathematics, science, logic, and general understanding, validating the effectiveness of our approach. 
+
+**Abstract (ZH)**: 增强学习已在提升大语言模型的推理能力方面 proven其有效性。近年来的研究努力已逐步将这一范式扩展到多模态推理任务。由于多模态任务固有的复杂性和多样性，尤其是在语义内容和问题表述上，现有模型在不同领域和难度级别上经常表现出不稳定的性能。为应对这些局限性，我们提出 VL-Cogito，一种通过新颖的多阶段渐进 Curriculum 增强学习（PCuRL）框架训练的高级多模态推理模型。PCuRL 通过对模型进行逐渐增加难度的任务引导，显著提升了其在各种多模态上下文中的推理能力。该框架引入了两个关键创新：（1）在线难度软加权机制，动态调整 successive RL 训练阶段的训练难度；（2）动态长度奖励机制，鼓励模型根据任务复杂性自适应调节其推理路径长度，从而平衡推理效率与正确性。实验评估表明，VL-Cogito 在涵盖数学、科学、逻辑和一般理解的主流多模态基准测试中，一致地匹配或超越现有推理导向模型，验证了我们方法的有效性。 
+
+---
+# Towards Interpretable Renal Health Decline Forecasting via Multi-LMM Collaborative Reasoning Framework 
+
+**Title (ZH)**: 面向可解释的肾脏健康衰退预测的多LMM协作推理框架 
+
+**Authors**: Peng-Yi Wu, Pei-Cing Huang, Ting-Yu Chen, Chantung Ku, Ming-Yen Lin, Yihuang Kang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.22464)  
+
+**Abstract**: Accurate and interpretable prediction of estimated glomerular filtration rate (eGFR) is essential for managing chronic kidney disease (CKD) and supporting clinical decisions. Recent advances in Large Multimodal Models (LMMs) have shown strong potential in clinical prediction tasks due to their ability to process visual and textual information. However, challenges related to deployment cost, data privacy, and model reliability hinder their adoption. In this study, we propose a collaborative framework that enhances the performance of open-source LMMs for eGFR forecasting while generating clinically meaningful explanations. The framework incorporates visual knowledge transfer, abductive reasoning, and a short-term memory mechanism to enhance prediction accuracy and interpretability. Experimental results show that the proposed framework achieves predictive performance and interpretability comparable to proprietary models. It also provides plausible clinical reasoning processes behind each prediction. Our method sheds new light on building AI systems for healthcare that combine predictive accuracy with clinically grounded interpretability. 
+
+**Abstract (ZH)**: 准确可解释的估算肾小球滤过率（eGFR）预测对于管理慢性肾脏病（CKD）和支持临床决策至关重要。 largemultimodal模型（LMMs）的最新进展由于其处理视觉和文本信息的能力，在临床预测任务中显示出强大的潜力。然而，与部署成本、数据隐私和模型可靠性相关的挑战阻碍了其应用。本文提出了一种协作框架，以增强开源LMMs在eGFR预测中的性能同时生成有临床意义的解释。该框架结合了视觉知识转移、 abduction推理和短期记忆机制，以提高预测准确性和可解释性。实验结果表明，所提出框架的预测性能和可解释性与专有模型相当，并为每个预测提供合理的临床推理过程。我们的方法为结合预测准确性和临床基础可解释性的医疗保健AI系统构建提供了新的思路。 
+
+---

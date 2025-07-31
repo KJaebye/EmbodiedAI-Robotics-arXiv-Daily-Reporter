@@ -1,0 +1,52 @@
+# Improving Generalization Ability of Robotic Imitation Learning by Resolving Causal Confusion in Observations 
+
+**Title (ZH)**: 通过解决观测中的因果混淆提高机器人 imitation 学习的泛化能力 
+
+**Authors**: Yifei Chen, Yuzhe Zhang, Giovanni D'urso, Nicholas Lawrance, Brendan Tidd  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.22380)  
+
+**Abstract**: Recent developments in imitation learning have considerably advanced robotic manipulation. However, current techniques in imitation learning can suffer from poor generalization, limiting performance even under relatively minor domain shifts. In this work, we aim to enhance the generalization capabilities of complex imitation learning algorithms to handle unpredictable changes from the training environments to deployment environments. To avoid confusion caused by observations that are not relevant to the target task, we propose to explicitly learn the causal relationship between observation components and expert actions, employing a framework similar to [6], where a causal structural function is learned by intervention on the imitation learning policy. Disentangling the feature representation from image input as in [6] is hard to satisfy in complex imitation learning process in robotic manipulation, we theoretically clarify that this requirement is not necessary in causal relationship learning. Therefore, we propose a simple causal structure learning framework that can be easily embedded in recent imitation learning architectures, such as the Action Chunking Transformer [31]. We demonstrate our approach using a simulation of the ALOHA [31] bimanual robot arms in Mujoco, and show that the method can considerably mitigate the generalization problem of existing complex imitation learning algorithms. 
+
+**Abstract (ZH)**: 近期模仿学习的发展显著推进了机器人操作技术。然而，当前模仿学习技术在泛化能力方面存在局限，即使在相对较轻微的领域变化下也不例外。在此项工作中，我们旨在增强复杂模仿学习算法的泛化能力，以应对从训练环境到部署环境中的不可预测变化。为了避免无关观测信息对目标任务造成的混淆，我们提出明确学习观测组件与专家动作之间的因果关系，采用类似于[6]的框架，在模仿学习策略上进行干预以学习因果结构函数。尽管在复杂机器人操作的模仿学习过程中解缠特征表示与图像输入的要求很难实现，但理论上我们澄清了这一要求在因果关系学习中并非必要。因此，我们提出了一种简单的因果结构学习框架，该框架可以方便地嵌入到最近的模仿学习架构中，如Action Chunking Transformer [31]。我们使用Mujoco中的ALOHA [31] 双臂机器人模拟来展示该方法，并证明该方法可以在显著缓解现有复杂模仿学习算法的泛化问题方面发挥重要作用。 
+
+---
+# In-Situ Soil-Property Estimation and Bayesian Mapping with a Simulated Compact Track Loader 
+
+**Title (ZH)**: 基于模拟紧凑型轨道装载机的现场土壤性质估计与贝叶斯制图 
+
+**Authors**: W. Jacob Wagner, Ahmet Soylemezoglu, Katherine Driggs-Campbell  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.22356)  
+
+**Abstract**: Existing earthmoving autonomy is largely confined to highly controlled and well-characterized environments due to the complexity of vehicle-terrain interaction dynamics and the partial observability of the terrain resulting from unknown and spatially varying soil conditions. In this chapter, a a soil-property mapping system is proposed to extend the environmental state, in order to overcome these restrictions and facilitate development of more robust autonomous earthmoving. A GPU accelerated elevation mapping system is extended to incorporate a blind mapping component which traces the movement of the blade through the terrain to displace and erode intersected soil, enabling separately tracking undisturbed and disturbed soil. Each interaction is approximated as a flat blade moving through a locally homogeneous soil, enabling modeling of cutting forces using the fundamental equation of earthmoving (FEE). Building upon our prior work on in situ soil-property estimation, a method is devised to extract approximate geometric parameters of the model given the uneven terrain, and an improved physics infused neural network (PINN) model is developed to predict soil properties and uncertainties of these estimates. A simulation of a compact track loader (CTL) with a blade attachment is used to collect data to train the PINN model. Post-training, the model is leveraged online by the mapping system to track soil property estimates spatially as separate layers in the map, with updates being performed in a Bayesian manner. Initial experiments show that the system accurately highlights regions requiring higher relative interaction forces, indicating the promise of this approach in enabling soil-aware planning for autonomous terrain shaping. 
+
+**Abstract (ZH)**: 基于土壤特性映射的自主土方作业扩展环境状态研究 
+
+---
+# FLORES: A Reconfigured Wheel-Legged Robot for Enhanced Steering and Adaptability 
+
+**Title (ZH)**: FLORES：一种重构的轮腿机器人，以增强转向能力和适应性 
+
+**Authors**: Zhicheng Song, Jinglan Xu, Chunxin Zheng, Yulin Li, Zhihai Bi, Jun Ma  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.22345)  
+
+**Abstract**: Wheel-legged robots integrate the agility of legs for navigating rough terrains while harnessing the efficiency of wheels for smooth surfaces. However, most existing designs do not fully capitalize on the benefits of both legged and wheeled structures, which limits overall system flexibility and efficiency. We present FLORES (reconfigured wheel-legged robot for enhanced steering and adaptability), a novel wheel-legged robot design featuring a distinctive front-leg configuration that sets it beyond standard design approaches. Specifically, FLORES replaces the conventional hip-roll degree of freedom (DoF) of the front leg with hip-yaw DoFs, and this allows for efficient movement on flat surfaces while ensuring adaptability when navigating complex terrains. This innovative design facilitates seamless transitions between different locomotion modes (i.e., legged locomotion and wheeled locomotion) and optimizes the performance across varied environments. To fully exploit FLORES's mechanical capabilities, we develop a tailored reinforcement learning (RL) controller that adapts the Hybrid Internal Model (HIM) with a customized reward structure optimized for our unique mechanical configuration. This framework enables the generation of adaptive, multi-modal locomotion strategies that facilitate smooth transitions between wheeled and legged movements. Furthermore, our distinctive joint design enables the robot to exhibit novel and highly efficient locomotion gaits that capitalize on the synergistic advantages of both locomotion modes. Through comprehensive experiments, we demonstrate FLORES's enhanced steering capabilities, improved navigation efficiency, and versatile locomotion across various terrains. The open-source project can be found at this https URL. 
+
+**Abstract (ZH)**: 基于改进转向与适应性的可重构轮腿机器人FLORES 
+
+---
+# Deployment of Objects with a Soft Everting Robot 
+
+**Title (ZH)**: 软变形机器人中对象的部署 
+
+**Authors**: Ethan DeVries, Jack Ferlazzo, Mustafa Ugur, Laura H. Blumenschein  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.22188)  
+
+**Abstract**: Soft everting robots present significant advantages over traditional rigid robots, including enhanced dexterity, improved environmental interaction, and safe navigation in unpredictable environments. While soft everting robots have been widely demonstrated for exploration type tasks, their potential to move and deploy payloads in such tasks has been less investigated, with previous work focusing on sensors and tools for the robot. Leveraging the navigation capabilities, and deployed body, of the soft everting robot to deliver payloads in hazardous areas, e.g. carrying a water bottle to a person stuck under debris, would represent a significant capability in many applications. In this work, we present an analysis of how soft everting robots can be used to deploy larger, heavier payloads through the inside of the robot. We analyze both what objects can be deployed and what terrain features they can be carried through. Building on existing models, we present methods to quantify the effects of payloads on robot growth and self-support, and develop a model to predict payload slip. We then experimentally quantify payload transport using soft everting robot with a variety of payload shapes, sizes, and weights and though a series of tasks: steering, vertical transport, movement through holes, and movement across gaps. Overall, the results show that we can transport payloads in a variety of shapes and up to 1.5kg in weight and that we can move through circular apertures with as little as 0.01cm clearance around payloads, carry out discrete turns up to 135 degrees, and move across unsupported gaps of 1.15m in length. 
+
+**Abstract (ZH)**: 软胀出机器人在部署更大、更重载荷方面的应用分析 
+
+---
