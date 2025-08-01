@@ -1,0 +1,225 @@
+# Distributed AI Agents for Cognitive Underwater Robot Autonomy 
+
+**Title (ZH)**: 分布式人工智能代理的认知水下机器人自主控制 
+
+**Authors**: Markus Buchholz, Ignacio Carlucho, Michele Grimaldi, Yvan R. Petillot  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.23735)  
+
+**Abstract**: Achieving robust cognitive autonomy in robots navigating complex, unpredictable environments remains a fundamental challenge in robotics. This paper presents Underwater Robot Self-Organizing Autonomy (UROSA), a groundbreaking architecture leveraging distributed Large Language Model AI agents integrated within the Robot Operating System 2 (ROS 2) framework to enable advanced cognitive capabilities in Autonomous Underwater Vehicles. UROSA decentralises cognition into specialised AI agents responsible for multimodal perception, adaptive reasoning, dynamic mission planning, and real-time decision-making. Central innovations include flexible agents dynamically adapting their roles, retrieval-augmented generation utilising vector databases for efficient knowledge management, reinforcement learning-driven behavioural optimisation, and autonomous on-the-fly ROS 2 node generation for runtime functional extensibility. Extensive empirical validation demonstrates UROSA's promising adaptability and reliability through realistic underwater missions in simulation and real-world deployments, showing significant advantages over traditional rule-based architectures in handling unforeseen scenarios, environmental uncertainties, and novel mission objectives. This work not only advances underwater autonomy but also establishes a scalable, safe, and versatile cognitive robotics framework capable of generalising to a diverse array of real-world applications. 
+
+**Abstract (ZH)**: 在复杂不可预测环境中实现机器人鲁棒认知自主仍然是机器人领域的一项基本挑战。本文提出了基于机器人操作系统2（ROS 2）框架的自组织自主水下机器人（Underwater Robot Self-Organizing Autonomy，UROSA）架构，该架构结合了分布式大型语言模型AI代理，以在自主水下车辆中实现高级认知能力。UROSA将认知分散到专门的AI代理中，负责多模态感知、自适应推理、动态任务规划和实时决策。核心创新包括灵活的代理动态适应其角色、利用向量数据库进行高效知识管理的检索增强生成、基于强化学习的行为优化，以及运行时功能扩展的自主ROS 2节点生成。广泛的实证验证展示了UROSA在模拟和真实世界部署中的适应性和可靠性，证实其在处理未预见场景、环境不确定性以及新型任务目标方面较传统基于规则的架构具有显著优势。这项工作不仅推进了水下自主性，还建立了一个可扩展、安全且多功能的认知机器人框架，适用于多种实际应用。 
+
+---
+# Scalable Multi-Task Reinforcement Learning for Generalizable Spatial Intelligence in Visuomotor Agents 
+
+**Title (ZH)**: 可扩展的多任务强化学习以实现通用的空间智能在视觉运动代理中的应用 
+
+**Authors**: Shaofei Cai, Zhancun Mu, Haiwen Xia, Bowei Zhang, Anji Liu, Yitao Liang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.23698)  
+
+**Abstract**: While Reinforcement Learning (RL) has achieved remarkable success in language modeling, its triumph hasn't yet fully translated to visuomotor agents. A primary challenge in RL models is their tendency to overfit specific tasks or environments, thereby hindering the acquisition of generalizable behaviors across diverse settings. This paper provides a preliminary answer to this challenge by demonstrating that RL-finetuned visuomotor agents in Minecraft can achieve zero-shot generalization to unseen worlds. Specifically, we explore RL's potential to enhance generalizable spatial reasoning and interaction capabilities in 3D worlds. To address challenges in multi-task RL representation, we analyze and establish cross-view goal specification as a unified multi-task goal space for visuomotor policies. Furthermore, to overcome the significant bottleneck of manual task design, we propose automated task synthesis within the highly customizable Minecraft environment for large-scale multi-task RL training, and we construct an efficient distributed RL framework to support this. Experimental results show RL significantly boosts interaction success rates by $4\times$ and enables zero-shot generalization of spatial reasoning across diverse environments, including real-world settings. Our findings underscore the immense potential of RL training in 3D simulated environments, especially those amenable to large-scale task generation, for significantly advancing visuomotor agents' spatial reasoning. 
+
+**Abstract (ZH)**: 强化学习在视觉运动代理中的零样本泛化：以《我的世界》为例 
+
+---
+# villa-X: Enhancing Latent Action Modeling in Vision-Language-Action Models 
+
+**Title (ZH)**: villa-X: 提升视觉-语言-动作模型中的潜在动作建模能力 
+
+**Authors**: Xiaoyu Chen, Hangxing Wei, Pushi Zhang, Chuheng Zhang, Kaixin Wang, Yanjiang Guo, Rushuai Yang, Yucen Wang, Xinquan Xiao, Li Zhao, Jianyu Chen, Jiang Bian  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.23682)  
+
+**Abstract**: Visual-Language-Action (VLA) models have emerged as a popular paradigm for learning robot manipulation policies that can follow language instructions and generalize to novel scenarios. Recent work has begun to explore the incorporation of latent actions, an abstract representation of visual change between two frames, into VLA pre-training. In this paper, we introduce villa-X, a novel Visual-Language-Latent-Action (ViLLA) framework that advances latent action modeling for learning generalizable robot manipulation policies. Our approach improves both how latent actions are learned and how they are incorporated into VLA pre-training. Together, these contributions enable villa-X to achieve superior performance across simulated environments including SIMPLER and LIBERO, as well as on two real-world robot setups including gripper and dexterous hand manipulation. We believe the ViLLA paradigm holds significant promise, and that our villa-X provides a strong foundation for future research. 
+
+**Abstract (ZH)**: 视觉-语言-隐含动作（ViLLA）框架：一种用于学习可泛化机器人操作策略的新型隐含动作建模方法 
+
+---
+# DuLoc: Life-Long Dual-Layer Localization in Changing and Dynamic Expansive Scenarios 
+
+**Title (ZH)**: DuLoc: 在变化和动态扩展场景中的终身双层定位 
+
+**Authors**: Haoxuan Jiang, Peicong Qian, Yusen Xie, Xiaocong Li, Ming Liu, Jun Ma  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.23660)  
+
+**Abstract**: LiDAR-based localization serves as a critical component in autonomous systems, yet existing approaches face persistent challenges in balancing repeatability, accuracy, and environmental adaptability. Traditional point cloud registration methods relying solely on offline maps often exhibit limited robustness against long-term environmental changes, leading to localization drift and reliability degradation in dynamic real-world scenarios. To address these challenges, this paper proposes DuLoc, a robust and accurate localization method that tightly couples LiDAR-inertial odometry with offline map-based localization, incorporating a constant-velocity motion model to mitigate outlier noise in real-world scenarios. Specifically, we develop a LiDAR-based localization framework that seamlessly integrates a prior global map with dynamic real-time local maps, enabling robust localization in unbounded and changing environments. Extensive real-world experiments in ultra unbounded port that involve 2,856 hours of operational data across 32 Intelligent Guided Vehicles (IGVs) are conducted and reported in this study. The results attained demonstrate that our system outperforms other state-of-the-art LiDAR localization systems in large-scale changing outdoor environments. 
+
+**Abstract (ZH)**: 基于LiDAR的定位作为自主系统的关键组件，但现有方法在平衡重复性、准确性和环境适应性方面仍面临持续挑战。传统的依赖于离线地图的点云配准方法通常对长期环境变化的鲁棒性有限，导致在动态现实场景中出现定位漂移和可靠性下降。为了应对这些挑战，本文提出DuLoc，这是一种鲁棒且准确的定位方法，将LiDAR惯性 odometer与基于离线地图的定位紧密耦合，并采用恒速运动模型以缓解现实场景中的离群值噪声。具体而言，我们开发了一种基于LiDAR的定位框架，无缝集成先验全局地图和动态实时局部地图，从而在未定义且不断变化的环境中实现稳健的定位。本研究在超未定义的港口进行了广泛的实地实验，涉及32辆智能导引车（IGVs）共2856小时的操作数据。实验结果表明，我们的系统在大规模变化的室外环境中优于其他最先进的LiDAR定位系统。 
+
+---
+# Can LLM-Reasoning Models Replace Classical Planning? A Benchmark Study 
+
+**Title (ZH)**: 大规模语言模型推理模型能否替代经典规划？一项基准研究 
+
+**Authors**: Kai Goebel, Patrik Zips  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.23589)  
+
+**Abstract**: Recent advancements in Large Language Models have sparked interest in their potential for robotic task planning. While these models demonstrate strong generative capabilities, their effectiveness in producing structured and executable plans remains uncertain. This paper presents a systematic evaluation of a broad spectrum of current state of the art language models, each directly prompted using Planning Domain Definition Language domain and problem files, and compares their planning performance with the Fast Downward planner across a variety of benchmarks. In addition to measuring success rates, we assess how faithfully the generated plans translate into sequences of actions that can actually be executed, identifying both strengths and limitations of using these models in this setting. Our findings show that while the models perform well on simpler planning tasks, they continue to struggle with more complex scenarios that require precise resource management, consistent state tracking, and strict constraint compliance. These results underscore fundamental challenges in applying language models to robotic planning in real world environments. By outlining the gaps that emerge during execution, we aim to guide future research toward combined approaches that integrate language models with classical planners in order to enhance the reliability and scalability of planning in autonomous robotics. 
+
+**Abstract (ZH)**: Recent advancements in大型语言模型在机器人任务规划中的潜在应用引起了广泛关注。虽然这些模型展示了强大的生成能力，但它们在生成结构化和可执行计划方面的有效性仍不确定。本文系统评估了当前最先进的语言模型在使用规划领域定义语言领域和问题文件直接提示下的性能，并将其规划性能与Fast Downward规划器在多种基准上的表现进行比较。除了衡量成功率外，我们还评估了生成的计划如何忠实转化为可实际执行的动作序列，识别出这些模型在这种设置下使用的优势和局限性。研究发现，尽管模型在简单规划任务上表现良好，但在需要精确资源管理、一致状态跟踪和严格约束遵守的复杂场景中仍然面临挑战。这些结果突显了将语言模型应用于真实环境中机器人规划的基本挑战。通过指出执行过程中出现的差距，我们旨在引导未来研究朝着将语言模型与经典规划器结合的方向发展，以提高自主机器人规划的可靠性和可扩展性。 
+
+---
+# A Unified Perception-Language-Action Framework for Adaptive Autonomous Driving 
+
+**Title (ZH)**: 统一的感知-语言-行动框架以实现适应性自动驾驶 
+
+**Authors**: Yi Zhang, Erik Leo Haß, Kuo-Yi Chao, Nenad Petrovic, Yinglei Song, Chengdong Wu, Alois Knoll  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.23540)  
+
+**Abstract**: Autonomous driving systems face significant challenges in achieving human-like adaptability, robustness, and interpretability in complex, open-world environments. These challenges stem from fragmented architectures, limited generalization to novel scenarios, and insufficient semantic extraction from perception. To address these limitations, we propose a unified Perception-Language-Action (PLA) framework that integrates multi-sensor fusion (cameras, LiDAR, radar) with a large language model (LLM)-augmented Vision-Language-Action (VLA) architecture, specifically a GPT-4.1-powered reasoning core. This framework unifies low-level sensory processing with high-level contextual reasoning, tightly coupling perception with natural language-based semantic understanding and decision-making to enable context-aware, explainable, and safety-bounded autonomous driving. Evaluations on an urban intersection scenario with a construction zone demonstrate superior performance in trajectory tracking, speed prediction, and adaptive planning. The results highlight the potential of language-augmented cognitive frameworks for advancing the safety, interpretability, and scalability of autonomous driving systems. 
+
+**Abstract (ZH)**: 自主驾驶系统在实现人类级别的适应性、鲁棒性和可解释性方面面临重大挑战，尤其是在复杂、开放的环境中。这些挑战源自于分立的架构、对新型场景的有限泛化能力以及感知中语义提取的不足。为了解决这些限制，我们提出了一种统一的感知-语言-行动（PLA）框架，该框架集成了多传感器融合（摄像头、LiDAR、雷达）并与增强型视觉-语言-行动（VLA）架构相结合，特别是使用GPT-4.1增强的推理核心。该框架将低级感官处理与高级上下文推理统一起来，紧密耦合感知与基于自然语言的语义理解及决策制定，以实现情境感知、可解释且安全可靠的自主驾驶。在包含施工区的城镇交叉口场景上的评估表明，该框架在轨迹跟踪、速度预测和自适应规划方面表现出优越性能。研究结果突显了语言增强认知框架在提高自主驾驶系统安全性、可解释性和可扩展性方面的潜在价值。 
+
+---
+# H-RDT: Human Manipulation Enhanced Bimanual Robotic Manipulation 
+
+**Title (ZH)**: H-RDT：人类操控增强的双臂机器人 manipulation 
+
+**Authors**: Hongzhe Bi, Lingxuan Wu, Tianwei Lin, Hengkai Tan, Zhizhong Su, Hang Su, Jun Zhu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.23523)  
+
+**Abstract**: Imitation learning for robotic manipulation faces a fundamental challenge: the scarcity of large-scale, high-quality robot demonstration data. Recent robotic foundation models often pre-train on cross-embodiment robot datasets to increase data scale, while they face significant limitations as the diverse morphologies and action spaces across different robot embodiments make unified training challenging. In this paper, we present H-RDT (Human to Robotics Diffusion Transformer), a novel approach that leverages human manipulation data to enhance robot manipulation capabilities. Our key insight is that large-scale egocentric human manipulation videos with paired 3D hand pose annotations provide rich behavioral priors that capture natural manipulation strategies and can benefit robotic policy learning. We introduce a two-stage training paradigm: (1) pre-training on large-scale egocentric human manipulation data, and (2) cross-embodiment fine-tuning on robot-specific data with modular action encoders and decoders. Built on a diffusion transformer architecture with 2B parameters, H-RDT uses flow matching to model complex action distributions. Extensive evaluations encompassing both simulation and real-world experiments, single-task and multitask scenarios, as well as few-shot learning and robustness assessments, demonstrate that H-RDT outperforms training from scratch and existing state-of-the-art methods, including Pi0 and RDT, achieving significant improvements of 13.9% and 40.5% over training from scratch in simulation and real-world experiments, respectively. The results validate our core hypothesis that human manipulation data can serve as a powerful foundation for learning bimanual robotic manipulation policies. 
+
+**Abstract (ZH)**: 基于人类操作数据的机器人操作模仿学习：H-RDT（人类至机器人扩散变换器）方法 
+
+---
+# Quantifying and Visualizing Sim-to-Real Gaps: Physics-Guided Regularization for Reproducibility 
+
+**Title (ZH)**: 量化和可视化仿真实验与现实之间的差距：基于物理的正则化方法以提高可重复性 
+
+**Authors**: Yuta Kawachi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.23445)  
+
+**Abstract**: Simulation-to-real transfer using domain randomization for robot control often relies on low-gear-ratio, backdrivable actuators, but these approaches break down when the sim-to-real gap widens. Inspired by the traditional PID controller, we reinterpret its gains as surrogates for complex, unmodeled plant dynamics. We then introduce a physics-guided gain regularization scheme that measures a robot's effective proportional gains via simple real-world experiments. Then, we penalize any deviation of a neural controller's local input-output sensitivities from these values during training. To avoid the overly conservative bias of naive domain randomization, we also condition the controller on the current plant parameters. On an off-the-shelf two-wheeled balancing robot with a 110:1 gearbox, our gain-regularized, parameter-conditioned RNN achieves angular settling times in hardware that closely match simulation. At the same time, a purely domain-randomized policy exhibits persistent oscillations and a substantial sim-to-real gap. These results demonstrate a lightweight, reproducible framework for closing sim-to-real gaps on affordable robotic hardware. 
+
+**Abstract (ZH)**: 基于领域随机化和参数条件化的控制gain正则化方法在低成本机器人上的仿真到现实转移 
+
+---
+# Assessing the Alignment of Automated Vehicle Decisions with Human Reasons 
+
+**Title (ZH)**: 评估自动驾驶车辆决策与人类理由的一致性 
+
+**Authors**: Lucas Elbert Suryana, Saeed Rahmani, Simeon Craig Calvert, Arkady Zgonnikov, Bart van Arem  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.23324)  
+
+**Abstract**: A key challenge in deploying automated vehicles (AVs) is ensuring they make appropriate decisions in ethically challenging everyday driving situations. While much attention has been paid to rare, high-stakes dilemmas such as trolley problems, similar tensions also arise in routine scenarios, such as navigating empty intersections, where multiple human considerations, including legality and comfort, often conflict. Current AV planning systems typically rely on rigid rules, which struggle to balance these competing considerations and can lead to behaviour that misaligns with human expectations. This paper proposes a novel reasons-based trajectory evaluation framework that operationalises the tracking condition of Meaningful Human Control (MHC). The framework models the reasons of human agents, such as regulatory compliance, as quantifiable functions and evaluates how well candidate AV trajectories align with these reasons. By assigning adjustable weights to agent priorities and integrating a balance function to discourage the exclusion of any agent, the framework supports interpretable decision evaluation. Through a real-world-inspired overtaking scenario, we show how this approach reveals tensions, for instance between regulatory compliance, efficiency, and comfort. The framework functions as a modular evaluation layer over existing planning algorithms. It offers a transparent tool for assessing ethical alignment in everyday scenarios and provides a practical step toward implementing MHC in real-world AV deployment. 
+
+**Abstract (ZH)**: 部署自动驾驶车辆的关键挑战是确保它们在伦理挑战的日常驾驶情境中做出合适的决策。虽然对罕见的高风险困境（如电车悖论）给予了大量关注，但在常规情境中，如穿越空旷交叉口时，类似的紧张关系也会出现，其中涉及多种人类考量，包括合法性与舒适性等方面经常存在冲突。当前的自动驾驶规划系统通常依赖于固定规则，这些规则难以平衡这些相互冲突的考量，并可能导致行为与人类预期不符。本文提出了一个基于理由的轨迹评估框架，该框架实现有意义的人类控制（MHC）的跟踪条件。该框架将人类代理的理由，如合规性，建模为可量化函数，并评估候选自动驾驶车辆轨迹与这些理由的契合程度。通过为代理优先级分配可调整权重并整合平衡函数以抵制任何代理被排除的情况，该框架支持可解释的决策评估。通过一个受现实世界启发的超车情景，本文展示了该方法如何揭示矛盾，例如合规性、效率与舒适性之间的矛盾。该框架作为现有规划算法的模块化评估层。它提供了一个透明的工具，用于评估伦理一致性在日常情境中的匹配程度，并提供了一条实践途径，以在实际部署的自动驾驶车辆中实现MHC。 
+
+---
+# Benchmarking Massively Parallelized Multi-Task Reinforcement Learning for Robotics Tasks 
+
+**Title (ZH)**: 大规模并行化多任务强化学习在机器人任务中的基准测试 
+
+**Authors**: Vira Joshi, Zifan Xu, Bo Liu, Peter Stone, Amy Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.23172)  
+
+**Abstract**: Multi-task Reinforcement Learning (MTRL) has emerged as a critical training paradigm for applying reinforcement learning (RL) to a set of complex real-world robotic tasks, which demands a generalizable and robust policy. At the same time, \emph{massively parallelized training} has gained popularity, not only for significantly accelerating data collection through GPU-accelerated simulation but also for enabling diverse data collection across multiple tasks by simulating heterogeneous scenes in parallel. However, existing MTRL research has largely been limited to off-policy methods like SAC in the low-parallelization regime. MTRL could capitalize on the higher asymptotic performance of on-policy algorithms, whose batches require data from the current policy, and as a result, take advantage of massive parallelization offered by GPU-accelerated simulation. To bridge this gap, we introduce a massively parallelized $\textbf{M}$ulti-$\textbf{T}$ask $\textbf{Bench}$mark for robotics (MTBench), an open-sourced benchmark featuring a broad distribution of 50 manipulation tasks and 20 locomotion tasks, implemented using the GPU-accelerated simulator IsaacGym. MTBench also includes four base RL algorithms combined with seven state-of-the-art MTRL algorithms and architectures, providing a unified framework for evaluating their performance. Our extensive experiments highlight the superior speed of evaluating MTRL approaches using MTBench, while also uncovering unique challenges that arise from combining massive parallelism with MTRL. Code is available at $\href{this https URL}{ this https URL}$ 
+
+**Abstract (ZH)**: 多任务强化学习（MTRL）已成为将强化学习（RL）应用于一组复杂的现实世界机器人任务的关键训练范式，这需要一个具有通用性和鲁棒性的策略。同时，大规模并行训练得到了广泛青睐，不仅显著加速了通过GPU加速仿真收集数据的速度，还通过并行仿真异构场景实现了多任务的多样化数据收集。然而，现有的MTRL研究主要限于低并行化环境下如SAC等离策略方法。MTRL可以利用在当前策略数据上训练的较高渐近性能的在策略算法的优势，并得益于GPU加速仿真的大规模并行化而取得进步。为弥合这一差距，我们介绍了基于GPU加速仿真IsaacGym实现的广泛分布的50个操作任务和20个运动任务的多任务机器人基准（MTBench），并开源了包含四种基础RL算法和七种先进MTRL算法及架构的统一框架。我们的大量实验突出了使用MTBench评估MTRL方法的卓越速度，同时也揭示了大规模并行化与MTRL结合时出现的独特挑战。代码可从[this https URL]获得。 
+
+---
+# In-between Motion Generation Based Multi-Style Quadruped Robot Locomotion 
+
+**Title (ZH)**: 基于中间运动生成的多风格 quadruped 机器人运动学 
+
+**Authors**: Yuanhao Chen, Liu Zhao, Ji Ma, Peng Lu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.23053)  
+
+**Abstract**: Quadruped robots face persistent challenges in achieving versatile locomotion due to limitations in reference motion data diversity. To address these challenges, this approach introduces an in-between motion generation based multi-style quadruped robot locomotion framework, integrating synergistic advances in motion generation and imitation learning. Our approach establishes a unified pipeline addressing two fundamental aspects: First, we propose a CVAE based motion generator, synthesizing multi-style dynamically feasible locomotion sequences between arbitrary start and end states. By embedding physical constraints and leveraging joint poses based phase manifold continuity, this component produces physically plausible motions spanning multiple gait modalities while ensuring kinematic compatibility with robotic morphologies. Second, we adopt the adversarial motion priors algorithm. We validate the effectiveness of generated motion data in enhancing controller stability and improving velocity tracking performance. The proposed framework demonstrates significant improvements in velocity tracking and deployment stability. We successfully deploy the framework on a real-world quadruped robot, and the experimental validation confirms the framework's capability to generate and execute complex motion profiles, including gallop, tripod, trotting and pacing. 
+
+**Abstract (ZH)**: 基于中间姿态生成的多风格 quadruped 机器人运动框架：结合运动生成与模仿学习的协同进步 
+
+---
+# RAGNet: Large-scale Reasoning-based Affordance Segmentation Benchmark towards General Grasping 
+
+**Title (ZH)**: RAGNet：基于大规模推理的抓取通用性 affordance 分割基准 
+
+**Authors**: Dongming Wu, Yanping Fu, Saike Huang, Yingfei Liu, Fan Jia, Nian Liu, Feng Dai, Tiancai Wang, Rao Muhammad Anwer, Fahad Shahbaz Khan, Jianbing Shen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.23734)  
+
+**Abstract**: General robotic grasping systems require accurate object affordance perception in diverse open-world scenarios following human instructions. However, current studies suffer from the problem of lacking reasoning-based large-scale affordance prediction data, leading to considerable concern about open-world effectiveness. To address this limitation, we build a large-scale grasping-oriented affordance segmentation benchmark with human-like instructions, named RAGNet. It contains 273k images, 180 categories, and 26k reasoning instructions. The images cover diverse embodied data domains, such as wild, robot, ego-centric, and even simulation data. They are carefully annotated with an affordance map, while the difficulty of language instructions is largely increased by removing their category name and only providing functional descriptions. Furthermore, we propose a comprehensive affordance-based grasping framework, named AffordanceNet, which consists of a VLM pre-trained on our massive affordance data and a grasping network that conditions an affordance map to grasp the target. Extensive experiments on affordance segmentation benchmarks and real-robot manipulation tasks show that our model has a powerful open-world generalization ability. Our data and code is available at this https URL. 
+
+**Abstract (ZH)**: 广义的机器人抓取系统需要在遵循人类指令的多种开放世界场景中实现准确的对象可用性感知。然而，当前研究面临缺乏基于推理的大规模可用性预测数据的问题，这导致了对开放世界有效性的极大担忧。为解决这一局限，我们构建了一个面向抓取的人类-like指令导向的可用性分割基准，命名为RAGNet。该基准包含273k张图像、180个类别和26k推理指令。图像涵盖了多样化的体感能域数据领域，如野外、机器人、第一人称视角和模拟数据。这些图像经过精细标注，附带可用性地图，而语言指令的难度通过移除类别名称并仅提供功能性描述大幅增加。此外，我们还提出了一种全面的基于可用性的抓取框架，名为AffordanceNet，该框架包含一个在我们大量可用性数据上预训练的VLM（视觉语言模型）和一个条件生成抓取动作的可用性地图的抓取网络。在可用性分割基准和真实机器人操作任务上的广泛实验表明，我们的模型具有强大的开放世界泛化能力。我们的数据和代码可在如下链接获取：this https URL。 
+
+---
+# Policy Learning from Large Vision-Language Model Feedback without Reward Modeling 
+
+**Title (ZH)**: 大规模视觉-语言模型反馈下的政策学习无需奖赏建模 
+
+**Authors**: Tung M. Luu, Donghoon Lee, Younghwan Lee, Chang D. Yoo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.23391)  
+
+**Abstract**: Offline reinforcement learning (RL) provides a powerful framework for training robotic agents using pre-collected, suboptimal datasets, eliminating the need for costly, time-consuming, and potentially hazardous online interactions. This is particularly useful in safety-critical real-world applications, where online data collection is expensive and impractical. However, existing offline RL algorithms typically require reward labeled data, which introduces an additional bottleneck: reward function design is itself costly, labor-intensive, and requires significant domain expertise. In this paper, we introduce PLARE, a novel approach that leverages large vision-language models (VLMs) to provide guidance signals for agent training. Instead of relying on manually designed reward functions, PLARE queries a VLM for preference labels on pairs of visual trajectory segments based on a language task description. The policy is then trained directly from these preference labels using a supervised contrastive preference learning objective, bypassing the need to learn explicit reward models. Through extensive experiments on robotic manipulation tasks from the MetaWorld, PLARE achieves performance on par with or surpassing existing state-of-the-art VLM-based reward generation methods. Furthermore, we demonstrate the effectiveness of PLARE in real-world manipulation tasks with a physical robot, further validating its practical applicability. 
+
+**Abstract (ZH)**: 基于离线强化学习的PLARE方法：利用大规模视觉语言模型进行代理训练 
+
+---
+# Early Goal-Guided Multi-Scale Fusion for Real-Time Vision-Language Driving 
+
+**Title (ZH)**: 实时视觉-语言驾驶中的早期目标导向多尺度融合 
+
+**Authors**: Santosh Patapati, Trisanth Srinivasan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.23042)  
+
+**Abstract**: Autonomous vehicles must react in milliseconds while reasoning about road geometry and traffic intent to navigate complex situations. We introduce NovaDrive, a single-branch vision-language architecture that processes front-camera images, HD-map tiles, LiDAR depth, and textual waypoints in a single branch. A lightweight, two-stage cross-attention block first aligns waypoint tokens with the HD map, then refines attention over fine-grained image and depth patches. Coupled with a novel smoothness loss that discourages abrupt steering and speed changes, this design eliminates the need for recurrent memory. We fine-tune the top 15 layers of an 11B LLaMA-3.2 vision-language backbone, enabling real-time inference. On the nuScenes / Waymo subset of the MD-NEX Outdoor benchmark, NovaDrive raises success rate to 84% (+4%), boosts path-efficiency (SPL) to 0.66 (+0.11), and reduces collision frequency from 2.6% to 1.2% (-1.4%) relative to the previous state-of-the-art. Our ablations confirm that waypoint tokens, partial VLM fine-tuning, and the cross-attention fusion each contribute the most to these gains. Beyond safety, NovaDrive's shorter routes (resulting from the novel smoothness loss) translate to lower fuel or battery usage, pointing toward leaner, more easily updated driving stacks. NovaDrive can be extended to other embodied-AI domains as well. 
+
+**Abstract (ZH)**: 自主驾驶车辆必须在毫秒级时间内处理道路几何和交通意图以应对复杂情况。我们引入了NovaDrive，这是一种单分支视觉语言架构，能同时处理前方摄像头图像、高精度地图瓦片、LiDAR深度以及文本方式点信息。一个轻量级的两阶段交叉注意力模块首先将方式点标记与高精度地图对齐，然后对细微图像和深度补丁进行注意力精炼。结合一种新的平滑损失，这种设计消除了循环记忆的需要。我们对11B LLaMA-3.2视觉语言骨干网络的顶层15层进行了微调，实现实时推理。在MD-NEX Outdoor基准的nuScenes / Waymo子集上，NovaDrive的成功率提高到84%（+4%），路径效率（SPL）提升至0.66（+0.11），碰撞频率从2.6%降至1.2%（-1.4%），超过了之前的最佳水平。我们的消融实验表明，方式点标记、部分VLM微调和交叉注意力融合对这些提升贡献最大。除了安全性，NovaDrive的更短路径（得益于新颖的平滑损失）也意味着更低的燃油或电池消耗，这指向了更轻量、更易于更新的驾驶栈。NovaDrive还可以扩展到其他具身AI领域。 
+
+---
+# iLearnRobot: An Interactive Learning-Based Multi-Modal Robot with Continuous Improvement 
+
+**Title (ZH)**: iLearnRobot：一种基于交互学习的多模态机器人及其持续改进 
+
+**Authors**: Kohou Wang, ZhaoXiang Liu, Lin Bai, Kun Fan, Xiang Liu, Huan Hu, Kai Wang, Shiguo Lian  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.22896)  
+
+**Abstract**: It is crucial that robots' performance can be improved after deployment, as they are inherently likely to encounter novel scenarios never seen before. This paper presents an innovative solution: an interactive learning-based robot system powered by a Multi-modal Large Language Model(MLLM). A key feature of our system is its ability to learn from natural dialogues with non-expert users. We also propose chain of question to clarify the exact intent of the question before providing an answer and dual-modality retrieval modules to leverage these interaction events to avoid repeating same mistakes, ensuring a seamless user experience before model updates, which is in contrast to current mainstream MLLM-based robotic systems. Our system marks a novel approach in robotics by integrating interactive learning, paving the way for superior adaptability and performance in diverse environments. We demonstrate the effectiveness and improvement of our method through experiments, both quantitively and qualitatively. 
+
+**Abstract (ZH)**: 机器人部署后性能可提升的关键在于它们能够处理前所未见的新型场景。本文提出了一种创新解决方案：一种由多模态大语言模型（MLLM）驱动的交互式学习机器人系统。系统的关键技术在于能够从非专家用户的自然对话中学习。我们还提出了一套连贯的问题链以澄清问题的具体意图，并利用双模态检索模块来利用这些交互事件以避免重复错误，从而在模型更新之前提供无缝的用户体验，这与当前主流的基于MLLM的机器人系统形成对比。通过实验，从定量和定性的角度证明了该系统方法的有效性和改进。 
+
+---
+# XABPs: Towards eXplainable Autonomous Business Processes 
+
+**Title (ZH)**: XABPs: 向可解释的自主业务过程迈进 
+
+**Authors**: Peter Fettke, Fabiana Fournier, Lior Limonad, Andreas Metzger, Stefanie Rinderle-Ma, Barbara Weber  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.23269)  
+
+**Abstract**: Autonomous business processes (ABPs), i.e., self-executing workflows leveraging AI/ML, have the potential to improve operational efficiency, reduce errors, lower costs, improve response times, and free human workers for more strategic and creative work. However, ABPs may raise specific concerns including decreased stakeholder trust, difficulties in debugging, hindered accountability, risk of bias, and issues with regulatory compliance. We argue for eXplainable ABPs (XABPs) to address these concerns by enabling systems to articulate their rationale. The paper outlines a systematic approach to XABPs, characterizing their forms, structuring explainability, and identifying key BPM research challenges towards XABPs. 
+
+**Abstract (ZH)**: 自主业务流程（ABPs），即利用AI/ML自我执行的工作流，有潜力提高运营效率、减少错误、降低费用、缩短响应时间，并释放人力进行更具战略性和创造性的工作。然而，ABPs可能会引发特定的担忧，包括减少相关方信任、调试困难、责任缺失、偏见风险以及合规性问题。本文主张采用可解释的自主业务流程（XABPs）来应对这些担忧，通过使系统能够阐述其决策原因。论文概述了XABPs的系统性方法，描述了其形式、结构化解释性，并指出了通向XABPs的关键BPM研究挑战。 
+
+---
+# Vision-Language Fusion for Real-Time Autonomous Driving: Goal-Centered Cross-Attention of Camera, HD-Map, & Waypoints 
+
+**Title (ZH)**: 基于视觉-语言融合的实时自主驾驶：目标导向的相机、高精地图与航点跨注意力机制 
+
+**Authors**: Santosh Patapati, Trisanth Srinivasan, Murari Ambati  
+
+**Link**: [PDF](https://arxiv.org/pdf/2507.23064)  
+
+**Abstract**: Autonomous cars need geometric accuracy and semantic understanding to navigate complex environments, yet most stacks handle them separately. We present XYZ-Drive, a single vision-language model that reads a front-camera frame, a 25m $\times$ 25m overhead map, and the next waypoint, then outputs steering and speed. A lightweight goal-centered cross-attention layer lets waypoint tokens highlight relevant image and map patches, supporting both action and textual explanations, before the fused tokens enter a partially fine-tuned LLaMA-3.2 11B model.
+On the MD-NEX Outdoor-Driving benchmark XYZ-Drive attains 95% success and 0.80 Success weighted by Path Length (SPL), surpassing PhysNav-DG by 15%. and halving collisions, all while significantly improving efficiency by using only a single branch. Sixteen ablations explain the gains. Removing any modality (vision, waypoint, map) drops success by up to 11%, confirming their complementary roles and rich connections. Replacing goal-centered attention with simple concatenation cuts 3% in performance, showing query-based fusion injects map knowledge more effectively. Keeping the transformer frozen loses 5%, showing the importance of fine-tuning when applying VLMs for specific tasks such as autonomous driving. Coarsening map resolution from 10 cm to 40 cm blurs lane edges and raises crash rate.
+Overall, these results demonstrate that early, token-level fusion of intent and map layout enables accurate, transparent, real-time driving. 
+
+**Abstract (ZH)**: 自主驾驶汽车需要几何精确性和语义理解以导航复杂环境，然而大多数系统分别处理它们。我们提出XYZ-Drive，这是一种单一的视觉-语言模型，它读取前视摄像头帧、25m×25m的鸟瞰图地图以及下一个航点，然后输出方向盘控制和速度。轻量级的目标导向交叉注意力层使航点标记突出相关的图像和地图片段，支持动作和文本解释，之后融合的标记进入部分微调的LLaMA-3.2 11B模型。
+在MD-NEX户外驾驶基准测试中，XYZ-Drive 的成功率为95%，路径长度加权的成功率为0.80 SPL（成功加权路径长度），超过PhysNav-DG 15%，同时减少了碰撞次数，显著提高了效率，仅使用一个分支。六项消融实验解释了这些增益。去除任何模态（视觉、航点、地图）都会将成功率降低高达11%，证实了它们的互补作用和密切联系。用简单的串联替换目标导向注意力会降低3%的性能，表明基于查询的融合更有效地注入地图知识。冻结变换器会降低5%，表明在特定任务（如自动驾驶）中应用视觉语言模型时微调的重要性。降低地图分辨率从10厘米到40厘米会模糊车道边缘并增加事故发生率。
+总体而言，这些结果表明，早期、标记级别的意图和地图布局融合能够实现准确、透明的实时驾驶。 
+
+---
