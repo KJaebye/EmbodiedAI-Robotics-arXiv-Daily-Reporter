@@ -1,0 +1,208 @@
+# Achieving Precise and Reliable Locomotion with Differentiable Simulation-Based System Identification 
+
+**Title (ZH)**: 基于可微模拟的系统识别实现精确可靠的運動控制 
+
+**Authors**: Vyacheslav Kovalev, Ekaterina Chaikovskaia, Egor Davydenko, Roman Gorbachev  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.04696)  
+
+**Abstract**: Accurate system identification is crucial for reducing trajectory drift in bipedal locomotion, particularly in reinforcement learning and model-based control. In this paper, we present a novel control framework that integrates system identification into the reinforcement learning training loop using differentiable simulation. Unlike traditional approaches that rely on direct torque measurements, our method estimates system parameters using only trajectory data (positions, velocities) and control inputs. We leverage the differentiable simulator MuJoCo-XLA to optimize system parameters, ensuring that simulated robot behavior closely aligns with real-world motion. This framework enables scalable and flexible parameter optimization. Accurate system identification is crucial for reducing trajectory drift in bipedal locomotion, particularly in reinforcement learning and model-based control. In this paper, we present a novel control framework that integrates system identification into the reinforcement learning training loop using differentiable simulation. Unlike traditional approaches that rely on direct torque measurements, our method estimates system parameters using only trajectory data (positions, velocities) and control inputs. We leverage the differentiable simulator MuJoCo-XLA to optimize system parameters, ensuring that simulated robot behavior closely aligns with real-world motion. This framework enables scalable and flexible parameter optimization. It supports fundamental physical properties such as mass and inertia. Additionally, it handles complex system nonlinear behaviors, including advanced friction models, through neural network approximations. Experimental results show that our framework significantly improves trajectory following. 
+
+**Abstract (ZH)**: 准确的系统识别对于减少双足步行中的轨迹漂移，特别是在强化学习和模型导向控制中，至关重要。本文提出了一种新的控制框架，将系统识别集成到强化学习训练循环中，使用可微分仿真。与依赖直接扭矩测量的传统方法不同，我们的方法仅通过轨迹数据（位置、速度）和控制输入估计系统参数。我们利用可微分仿真器MuJoCo-XLA优化系统参数，确保模拟的机器人行为与现实世界运动紧密一致。该框架支持大规模和灵活的参数优化。准确的系统识别对于减少双足步行中的轨迹漂移，特别是在强化学习和模型导向控制中，至关重要。本文提出了一种新的控制框架，将系统识别集成到强化学习训练循环中，使用可微分仿真。与依赖直接扭矩测量的传统方法不同，我们的方法仅通过轨迹数据（位置、速度）和控制输入估计系统参数。我们利用可微分仿真器MuJoCo-XLA优化系统参数，确保模拟的机器人行为与现实世界运动紧密一致。该框架支持大规模和灵活的参数优化。 
+
+---
+# From MAS to MARS: Coordination Failures and Reasoning Trade-offs in Hierarchical Multi-Agent Robotic Systems within a Healthcare Scenario 
+
+**Title (ZH)**: 从MAS到MARS：医疗场景下分级多智能体机器人系统中的协调失败与推理权衡研究 
+
+**Authors**: Yuanchen Bai, Zijian Ding, Shaoyue Wen, Xiang Chang, Angelique Taylor  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.04691)  
+
+**Abstract**: Multi-agent robotic systems (MARS) build upon multi-agent systems by integrating physical and task-related constraints, increasing the complexity of action execution and agent coordination. However, despite the availability of advanced multi-agent frameworks, their real-world deployment on robots remains limited, hindering the advancement of MARS research in practice. To bridge this gap, we conducted two studies to investigate performance trade-offs of hierarchical multi-agent frameworks in a simulated real-world multi-robot healthcare scenario. In Study 1, using CrewAI, we iteratively refine the system's knowledge base, to systematically identify and categorize coordination failures (e.g., tool access violations, lack of timely handling of failure reports) not resolvable by providing contextual knowledge alone. In Study 2, using AutoGen, we evaluate a redesigned bidirectional communication structure and further measure the trade-offs between reasoning and non-reasoning models operating within the same robotic team setting. Drawing from our empirical findings, we emphasize the tension between autonomy and stability and the importance of edge-case testing to improve system reliability and safety for future real-world deployment. Supplementary materials, including codes, task agent setup, trace outputs, and annotated examples of coordination failures and reasoning behaviors, are available at: this https URL. 
+
+**Abstract (ZH)**: 多代理机器人系统（MARS）通过整合物理和任务相关的约束，增强了行动执行和代理协调的复杂性。尽管存在先进的多代理框架，但在机器人上的实际部署仍然有限，阻碍了MARS研究的实际进展。为弥补这一差距，我们进行了两项研究，以调查在模拟的真实多机器人医疗场景中分层多代理框架的性能权衡。在研究1中，我们使用CrewAI，逐步细化系统的知识库，系统地识别和分类不能仅通过提供上下文知识解决的协调失败（如工具访问违规、故障报告未能及时处理）。在研究2中，我们使用AutoGen评估改进后的双向通信结构，并进一步衡量在同一机器人团队设置中推理和非推理模型之间的权衡。从我们的实证发现中，我们强调自主性和稳定性之间的张力以及边缘案例测试的重要性，以提高未来实际部署时系统的可靠性和安全性。辅助材料，包括代码、任务代理设置、跟踪输出和协调失败及推理行为的注解示例，可在以下网址获取：this https URL。 
+
+---
+# Open Scene Graphs for Open-World Object-Goal Navigation 
+
+**Title (ZH)**: 开放世界场景图用于开放目标物体导航 
+
+**Authors**: Joel Loo, Zhanxin Wu, David Hsu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.04678)  
+
+**Abstract**: How can we build general-purpose robot systems for open-world semantic navigation, e.g., searching a novel environment for a target object specified in natural language? To tackle this challenge, we introduce OSG Navigator, a modular system composed of foundation models, for open-world Object-Goal Navigation (ObjectNav). Foundation models provide enormous semantic knowledge about the world, but struggle to organise and maintain spatial information effectively at scale. Key to OSG Navigator is the Open Scene Graph representation, which acts as spatial memory for OSG Navigator. It organises spatial information hierarchically using OSG schemas, which are templates, each describing the common structure of a class of environments. OSG schemas can be automatically generated from simple semantic labels of a given environment, e.g., "home" or "supermarket". They enable OSG Navigator to adapt zero-shot to new environment types. We conducted experiments using both Fetch and Spot robots in simulation and in the real world, showing that OSG Navigator achieves state-of-the-art performance on ObjectNav benchmarks and generalises zero-shot over diverse goals, environments, and robot embodiments. 
+
+**Abstract (ZH)**: 如何构建适用于开放世界语义导航的通用机器人系统，例如根据自然语言指定的目标对象在新型环境中进行搜索？为了应对这一挑战，我们介绍了OSG导航器，这是一个由基础模型组成的模块化系统，用于开放世界对象目标导航（ObjectNav）。基础模型提供了关于世界的大量语义知识，但在大规模组织和维护空间信息方面存在困难。OSG导航器的核心在于开放场景图表示，它作为OSG导航器的空间记忆。它通过OSG模式以层次结构组织空间信息，这些模式是模板，每个模板描述了一类环境的常见结构。OSG模式可以从给定环境的简单语义标签自动生成，例如“家庭”或“超市”。它们使OSG导航器能够零样本适应新的环境类型。我们在使用Fetch和Spot机器人进行的模拟和真实环境中实验表明，OSG导航器在对象导航基准测试中实现了最佳性能，并且能够在多样的目标、环境和机器人实体之间进行零样本泛化。 
+
+---
+# RoboTron-Sim: Improving Real-World Driving via Simulated Hard-Case 
+
+**Title (ZH)**: RoboTron-Sim: 通过模拟极端案例提高现实世界驾驶性能 
+
+**Authors**: Baihui Xiao, Chengjian Feng, Zhijian Huang, Feng yan, Yujie Zhong, Lin Ma  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.04642)  
+
+**Abstract**: Collecting real-world data for rare high-risk scenarios, long-tailed driving events, and complex interactions remains challenging, leading to poor performance of existing autonomous driving systems in these critical situations. In this paper, we propose RoboTron-Sim that improves real-world driving in critical situations by utilizing simulated hard cases. First, we develop a simulated dataset called Hard-case Augmented Synthetic Scenarios (HASS), which covers 13 high-risk edge-case categories, as well as balanced environmental conditions such as day/night and sunny/rainy. Second, we introduce Scenario-aware Prompt Engineering (SPE) and an Image-to-Ego Encoder (I2E Encoder) to enable multimodal large language models to effectively learn real-world challenging driving skills from HASS, via adapting to environmental deviations and hardware differences between real-world and simulated scenarios. Extensive experiments on nuScenes show that RoboTron-Sim improves driving performance in challenging scenarios by around 50%, achieving state-of-the-art results in real-world open-loop planning. Qualitative results further demonstrate the effectiveness of RoboTron-Sim in better managing rare high-risk driving scenarios. Project page: this https URL 
+
+**Abstract (ZH)**: 收集罕见高风险场景、长尾驾驶事件以及复杂交互的现实世界数据仍然具有挑战性，导致现有自动驾驶系统在这些关键情况下表现不佳。本文提出RoboTron-Sim，通过利用模拟的难案例来改进现实世界中的关键驾驶情况。首先，我们开发了一个称为难案例增强合成场景（HASS）的数据集，涵盖了13种高风险的边缘案例类别，并且平衡了昼夜和晴雨等环境条件。其次，我们引入了场景感知提示工程（SPE）和图像到自身编码器（I2E编码器），通过适应现实世界和模拟场景之间的环境差异和硬件差异，使多模态大型语言模型能够有效学习来自HASS的现实世界挑战性驾驶技能。在nuScenes上的广泛实验表明，RoboTron-Sim在挑战性场景中的驾驶性能提高了约50%，实现了在现实世界开环规划中的最先进成果。定性结果进一步证明了RoboTron-Sim在更好地管理罕见高风险驾驶场景方面的有效性。项目页面：this https URL。 
+
+---
+# $NavA^3$: Understanding Any Instruction, Navigating Anywhere, Finding Anything 
+
+**Title (ZH)**: $NavA^3$: 理解任何指令，前往任何地点，查找任何事物 
+
+**Authors**: Lingfeng Zhang, Xiaoshuai Hao, Yingbo Tang, Haoxiang Fu, Xinyu Zheng, Pengwei Wang, Zhongyuan Wang, Wenbo Ding, Shanghang Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.04598)  
+
+**Abstract**: Embodied navigation is a fundamental capability of embodied intelligence, enabling robots to move and interact within physical environments. However, existing navigation tasks primarily focus on predefined object navigation or instruction following, which significantly differs from human needs in real-world scenarios involving complex, open-ended scenes. To bridge this gap, we introduce a challenging long-horizon navigation task that requires understanding high-level human instructions and performing spatial-aware object navigation in real-world environments. Existing embodied navigation methods struggle with such tasks due to their limitations in comprehending high-level human instructions and localizing objects with an open vocabulary. In this paper, we propose $NavA^3$, a hierarchical framework divided into two stages: global and local policies. In the global policy, we leverage the reasoning capabilities of Reasoning-VLM to parse high-level human instructions and integrate them with global 3D scene views. This allows us to reason and navigate to regions most likely to contain the goal object. In the local policy, we have collected a dataset of 1.0 million samples of spatial-aware object affordances to train the NaviAfford model (PointingVLM), which provides robust open-vocabulary object localization and spatial awareness for precise goal identification and navigation in complex environments. Extensive experiments demonstrate that $NavA^3$ achieves SOTA results in navigation performance and can successfully complete longhorizon navigation tasks across different robot embodiments in real-world settings, paving the way for universal embodied navigation. The dataset and code will be made available. Project website: this https URL. 
+
+**Abstract (ZH)**: 具身导航是具身智能的基本能力，使机器人能够在物理环境中移动和交互。然而，现有的导航任务主要侧重于预定义的对象导航或指令跟随，这与真实世界场景中复杂、开放性场景下人类的需求存在显著差异。为弥补这一差距，我们引入了一个具有挑战性的长期导航任务，要求理解高层次的人类指令并在真实环境中的进行空间感知对象导航。现有的具身导航方法由于难以理解高层次的人类指令和定位具有开放词汇的对象而难以完成此类任务。在本文中，我们提出了一种分层框架$NavA^3$，分为两个阶段：全局策略和局部策略。在全局策略中，我们利用Reasoning-VLM的推理能力解析高层次的人类指令，并将其与全局3D场景视图相结合，从而能够推理和导航到最有可能包含目标对象的区域。在局部策略中，我们收集了100万样本的空间感知对象操作数据集来训练NaviAfford模型（PointingVLM），该模型提供了在复杂环境中的鲁棒的开放词汇对象定位和空间感知，以实现精确的目标识别和导航。广泛的实验表明，$NavA^3$在导航性能方面取得了SOTA结果，并且可以在不同机器人具身形态的真实环境中成功完成长期导航任务，为普遍适用的具身导航铺平了道路。数据集和代码将开源。项目网站：this https URL。 
+
+---
+# Behaviorally Adaptive Multi-Robot Hazard Localization in Failure-Prone, Communication-Denied Environments 
+
+**Title (ZH)**: 行为自适应多机器人危险定位在故障易发、通信受限环境中 
+
+**Authors**: Alkesh K. Srivastava, Aamodh Suresh, Carlos Nieto-Granda  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.04537)  
+
+**Abstract**: We address the challenge of multi-robot autonomous hazard mapping in high-risk, failure-prone, communication-denied environments such as post-disaster zones, underground mines, caves, and planetary surfaces. In these missions, robots must explore and map hazards while minimizing the risk of failure due to environmental threats or hardware limitations. We introduce a behavior-adaptive, information-theoretic planning framework for multi-robot teams grounded in the concept of Behavioral Entropy (BE), that generalizes Shannon entropy (SE) to capture diverse human-like uncertainty evaluations. Building on this formulation, we propose the Behavior-Adaptive Path Planning (BAPP) framework, which modulates information gathering strategies via a tunable risk-sensitivity parameter, and present two planning algorithms: BAPP-TID for intelligent triggering of high-fidelity robots, and BAPP-SIG for safe deployment under high risk. We provide theoretical insights on the informativeness of the proposed BAPP framework and validate its effectiveness through both single-robot and multi-robot simulations. Our results show that the BAPP stack consistently outperforms Shannon-based and random strategies: BAPP-TID accelerates entropy reduction, while BAPP-SIG improves robot survivability with minimal loss in information gain. In multi-agent deployments, BAPP scales effectively through spatial partitioning, mobile base relocation, and role-aware heterogeneity. These findings underscore the value of behavior-adaptive planning for robust, risk-sensitive exploration in complex, failure-prone environments. 
+
+**Abstract (ZH)**: 多机器人自主危险 mapping 在高风险、故障多发、通信受限环境中的挑战及解决方案：基于行为熵的行为自适应信息论规划框架 
+
+---
+# Tactile Comfort: Lowering Heart Rate Through Interactions 
+
+**Title (ZH)**: 触觉舒适：通过互动降低心率 
+
+**Authors**: Morten Roed Frederiksen, Kasper Støy, Maja Matarić  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.04372)  
+
+**Abstract**: Children diagnosed with anxiety disorders are taught a range of strategies to navigate situations of heightened anxiety. Techniques such as deep breathing and repetition of mantras are commonly employed, as they are known to be calming and reduce elevated heart rates. Although these strategies are often effective, their successful application relies on prior training of the children for successful use when faced with challenging situations. This paper investigates a pocket-sized companion robot designed to offer a relaxation technique requiring no prior training, with a focus on immediate impact on the user's heart rate. The robot utilizes a tactile game to divert the user's attention, thereby promoting relaxation. We conducted two studies with children who were not diagnosed with anxiety: a 14-day pilot study with two children (age 8) and a main study with 18 children (ages 7-8). Both studies employed a within-subjects design and focused on measuring heart rate during tactile interaction with the robot and during non-use. Interacting with the robot was found to significantly lower the study participants' heart rate (p$<$0.01) compared to the non-use condition, indicating a consistent calming effect across all participants. These results suggest that tactile companion robots have the potential to enhance the therapeutic value of relaxation techniques. 
+
+**Abstract (ZH)**: 患有焦虑障碍的儿童被教授多种策略以应对高度焦虑的情况。常见的技术包括深呼吸和重复咒语，因为它们具有安抚效果并能降低心率。尽管这些策略通常很有效，但在面对具有挑战性的情况时成功应用这些策略仍需要儿童事先接受训练。本文探讨了一款便携式伴侣型机器人，旨在提供一种无需事先训练即可使用的放松技巧，并重点考察其对用户心率的即时影响。该机器人利用触觉游戏转移用户的注意力，从而促进放松。我们对未被诊断为焦虑的儿童进行了两项研究：一项为期14天的初步研究，参与者为两名8岁儿童，一项主要研究，参与者为18名7至8岁儿童。两项研究均采用了被试内设计，并重点关注触觉与机器人互动期间和不使用期间心率的测量。结果发现，与不使用条件相比，与机器人互动显著降低了研究参与者的即时心率（p<0.01），表明所有参与者的镇静效果一致。这表明触觉伴侣型机器人有可能增强放松技巧的治疗价值。 
+
+---
+# Constraint-Preserving Data Generation for Visuomotor Policy Learning 
+
+**Title (ZH)**: 基于约束保持的数据生成的视知觉运动策略学习 
+
+**Authors**: Kevin Lin, Varun Ragunath, Andrew McAlinden, Aaditya Prasad, Jimmy Wu, Yuke Zhu, Jeannette Bohg  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.03944)  
+
+**Abstract**: Large-scale demonstration data has powered key breakthroughs in robot manipulation, but collecting that data remains costly and time-consuming. We present Constraint-Preserving Data Generation (CP-Gen), a method that uses a single expert trajectory to generate robot demonstrations containing novel object geometries and poses. These generated demonstrations are used to train closed-loop visuomotor policies that transfer zero-shot to the real world and generalize across variations in object geometries and poses. Similar to prior work using pose variations for data generation, CP-Gen first decomposes expert demonstrations into free-space motions and robot skills. But unlike those works, we achieve geometry-aware data generation by formulating robot skills as keypoint-trajectory constraints: keypoints on the robot or grasped object must track a reference trajectory defined relative to a task-relevant object. To generate a new demonstration, CP-Gen samples pose and geometry transforms for each task-relevant object, then applies these transforms to the object and its associated keypoints or keypoint trajectories. We optimize robot joint configurations so that the keypoints on the robot or grasped object track the transformed keypoint trajectory, and then motion plan a collision-free path to the first optimized joint configuration. Experiments on 16 simulation tasks and four real-world tasks, featuring multi-stage, non-prehensile and tight-tolerance manipulation, show that policies trained using CP-Gen achieve an average success rate of 77%, outperforming the best baseline that achieves an average of 50%. 
+
+**Abstract (ZH)**: 基于约束保持数据生成的大规模机器人 manipulation 技术支配下的关键突破：一种利用单个专家轨迹生成新颖物体几何和姿态的机器人演示方法及其应用 
+
+---
+# SEAgent: Self-Evolving Computer Use Agent with Autonomous Learning from Experience 
+
+**Title (ZH)**: SEAgent: 自我演化的计算机使用代理及自主学习能力 
+
+**Authors**: Zeyi Sun, Ziyu Liu, Yuhang Zang, Yuhang Cao, Xiaoyi Dong, Tong Wu, Dahua Lin, Jiaqi Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.04700)  
+
+**Abstract**: Repurposing large vision-language models (LVLMs) as computer use agents (CUAs) has led to substantial breakthroughs, primarily driven by human-labeled data. However, these models often struggle with novel and specialized software, particularly in scenarios lacking human annotations. To address this challenge, we propose SEAgent, an agentic self-evolving framework enabling CUAs to autonomously evolve through interactions with unfamiliar software. Specifically, SEAgent empowers computer-use agents to autonomously master novel software environments via experiential learning, where agents explore new software, learn through iterative trial-and-error, and progressively tackle auto-generated tasks organized from simple to complex. To achieve this goal, we design a World State Model for step-wise trajectory assessment, along with a Curriculum Generator that generates increasingly diverse and challenging tasks. The agent's policy is updated through experiential learning, comprised of adversarial imitation of failure actions and Group Relative Policy Optimization (GRPO) on successful ones. Furthermore, we introduce a specialist-to-generalist training strategy that integrates individual experiential insights from specialist agents, facilitating the development of a stronger generalist CUA capable of continuous autonomous evolution. This unified agent ultimately achieves performance surpassing ensembles of individual specialist agents on their specialized software. We validate the effectiveness of SEAgent across five novel software environments within OS-World. Our approach achieves a significant improvement of 23.2% in success rate, from 11.3% to 34.5%, over a competitive open-source CUA, i.e., UI-TARS. 
+
+**Abstract (ZH)**: 重塑大型视觉-语言模型（LVLMs）作为计算机使用代理（CUAs）已取得重大突破，主要依赖于人类标注数据。然而，这些模型在处理新颖和专门化的软件时常常表现不佳，尤其是在缺乏人类标注的情景中。为了解决这一挑战，我们提出了SEAgent，一个自主进化框架，使CUAs能够通过与不熟悉软件的互动自主进化。具体来说，SEAgent赋予计算机使用代理通过经验学习自主掌握新软件环境的能力，代理探索新软件、通过迭代的试错学习，并逐渐解决从简单到复杂的自动生成任务。为了实现这一目标，我们设计了一个世界状态模型，用于逐步轨迹评估，以及一个课程生成器，生成越来越多样化和富有挑战性的任务。代理的策略通过经验学习进行更新，包括对抗模仿失败行为以及成功行为的组相对策略优化（GRPO）。此外，我们引入了一种专家到通用的训练策略，将个体专家代理的经验洞察集成在一起，促进更强通用CUA的发展，使其能够实现持续的自主进化。最终统一代理在五个新型软件环境内的OS-World中实现了优于单一专家代理集成体的表现。我们在竞争开源CUA UI-TARS上验证了SEAgent的有效性，成功率达到34.5%，相较于11.3%有了显著提升，提高了23.2%。 
+
+---
+# LLM Collaboration With Multi-Agent Reinforcement Learning 
+
+**Title (ZH)**: LLM与多智能体强化学习的合作 
+
+**Authors**: Shuo Liu, Zeyu Liang, Xueguang Lyu, Christopher Amato  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.04652)  
+
+**Abstract**: A large amount of work has been done in Multi-Agent Systems (MAS) for modeling and solving problems with multiple interacting agents. However, most LLMs are pretrained independently and not specifically optimized for coordination. Existing LLM fine-tuning frameworks rely on individual rewards, which require complex reward designs for each agent to encourage collaboration. To address these challenges, we model LLM collaboration as a cooperative Multi-Agent Reinforcement Learning (MARL) problem. We develop a multi-agent, multi-turn algorithm, Multi-Agent Group Relative Policy Optimization (MAGRPO), to solve it, building on current RL approaches for LLMs as well as MARL techniques. Our experiments on LLM writing and coding collaboration demonstrate that fine-tuning MAS with MAGRPO enables agents to generate high-quality responses efficiently through effective cooperation. Our approach opens the door to using other MARL methods for LLMs and highlights the associated challenges. 
+
+**Abstract (ZH)**: 多Agent系统中大规模工作的迁移学习协作：将大型语言模型建模为合作多Agent强化学习问题 
+
+---
+# GuirlVG: Incentivize GUI Visual Grounding via Empirical Exploration on Reinforcement Learning 
+
+**Title (ZH)**: GuirlVG: 通过强化学习的经验探索激励GUI视觉接地 
+
+**Authors**: Weitai Kang, Bin Lei, Gaowen Liu, Caiwen Ding, Yan Yan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.04389)  
+
+**Abstract**: Graphical user interface visual grounding (GUI-VG), a core capability for GUI agents, has primarily relied on supervised fine-tuning (SFT) of multimodal large language models (MLLMs), which demands extensive data curation and significant training costs. However, as MLLMs continue to advance and even cover GUI domains during pretraining, the necessity of exhaustive SFT post-training becomes increasingly questionable. Meanwhile, recent successes of rule-based reinforcement fine-tuning (RFT) suggest a more efficient alternative. Despite this promise, the optimal manner of applying RFT for GUI-VG remains unexplored. To bridge this gap, we introduce GuirlVG, a reinforcement learning-based GUI-VG method built on a systematic empirical study and a novel stabilization technique. We find that naive application of RFT underperforms the SFT baseline, motivating a deeper exploration. First, we decompose RFT into its core components and analyze the optimal formulation of each. Second, we propose a novel Adversarial KL Factor that dynamically stabilizes training to mitigate reward over-optimization. Third, we further explore the training configurations of RFT to enhance effectiveness. Extensive experiments show that GuirlVG, with only 5.2K training samples, outperforms SFT methods trained on over 10M samples, achieving a 7.7% improvement on ScreenSpot, a 17.2% improvement on ScreenSpotPro, and 91.9% accuracy on ScreenSpotV2. 
+
+**Abstract (ZH)**: 基于强化学习的图形用户界面视觉定位（GuirlVG）：一种系统性经验研究和新颖稳定技术的强化学习导向GUI-VG方法 
+
+---
+# Galaxy: A Cognition-Centered Framework for Proactive, Privacy-Preserving, and Self-Evolving LLM Agents 
+
+**Title (ZH)**: 银河：以认知为中心的 proactive、隐私保护且自我演化的语言模型代理框架 
+
+**Authors**: Chongyu Bao, Ruimin Dai, Yangbo Shen, Runyang Jian, Jinghan Zhang, Xiaolan Liu, Kunpeng Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.03991)  
+
+**Abstract**: Intelligent personal assistants (IPAs) such as Siri and Google Assistant are designed to enhance human capabilities and perform tasks on behalf of users. The emergence of LLM agents brings new opportunities for the development of IPAs. While responsive capabilities have been widely studied, proactive behaviors remain underexplored. Designing an IPA that is proactive, privacy-preserving, and capable of self-evolution remains a significant challenge. Designing such IPAs relies on the cognitive architecture of LLM agents. This work proposes Cognition Forest, a semantic structure designed to align cognitive modeling with system-level design. We unify cognitive architecture and system design into a self-reinforcing loop instead of treating them separately. Based on this principle, we present Galaxy, a framework that supports multidimensional interactions and personalized capability generation. Two cooperative agents are implemented based on Galaxy: KoRa, a cognition-enhanced generative agent that supports both responsive and proactive skills; and Kernel, a meta-cognition-based meta-agent that enables Galaxy's self-evolution and privacy preservation. Experimental results show that Galaxy outperforms multiple state-of-the-art benchmarks. Ablation studies and real-world interaction cases validate the effectiveness of Galaxy. 
+
+**Abstract (ZH)**: 智能个人助理（IPAs）如Siri和Google Assistant旨在增强人类能力并代为执行任务。LLM代理的出现为IPAs的发展带来了新的机遇。虽然响应性能力已被广泛研究，但主动行为仍较少被探索。设计一种既能主动、又能保护隐私并能自我进化的IPA仍然是一个重大挑战。这样的IPA设计依赖于LLM代理的认知架构。本文提出Cognition Forest，这是一种语义结构，旨在将认知建模与系统级设计相结合。我们将认知架构和系统设计统一到一个相互强化的循环中，而非将其分开对待。在此基础上，我们提出Galaxy框架，支持多维度交互和个性化能力生成。基于Galaxy实现了两个协作代理：KoRa，一种增强认知的生成代理，支持响应性和主动性技能；Kernel，一种基于元认知的元代理，使Galaxy能够自我进化并保护隐私。实验结果显示，Galaxy优于多个最先进的基准。消融研究表明，Galaxy的实际交互案例验证了其有效性。 
+
+---
+# Evo-MARL: Co-Evolutionary Multi-Agent Reinforcement Learning for Internalized Safety 
+
+**Title (ZH)**: Evo-MARL: 内化安全的共生多智能体 reinforcement learning 
+
+**Authors**: Zhenyu Pan, Yiting Zhang, Yutong Zhang, Jianshu Zhang, Haozheng Luo, Yuwei Han, Dennis Wu, Hong-Yu Chen, Philip S. Yu, Manling Li, Han Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.03864)  
+
+**Abstract**: Multi-agent systems (MAS) built on multimodal large language models exhibit strong collaboration and performance. However, their growing openness and interaction complexity pose serious risks, notably jailbreak and adversarial attacks. Existing defenses typically rely on external guard modules, such as dedicated safety agents, to handle unsafe behaviors. Unfortunately, this paradigm faces two challenges: (1) standalone agents offer limited protection, and (2) their independence leads to single-point failure-if compromised, system-wide safety collapses. Naively increasing the number of guard agents further raises cost and complexity. To address these challenges, we propose Evo-MARL, a novel multi-agent reinforcement learning (MARL) framework that enables all task agents to jointly acquire defensive capabilities. Rather than relying on external safety modules, Evo-MARL trains each agent to simultaneously perform its primary function and resist adversarial threats, ensuring robustness without increasing system overhead or single-node failure. Furthermore, Evo-MARL integrates evolutionary search with parameter-sharing reinforcement learning to co-evolve attackers and defenders. This adversarial training paradigm internalizes safety mechanisms and continually enhances MAS performance under co-evolving threats. Experiments show that Evo-MARL reduces attack success rates by up to 22% while boosting accuracy by up to 5% on reasoning tasks-demonstrating that safety and utility can be jointly improved. 
+
+**Abstract (ZH)**: 基于多模态大语言模型的多智能体系统（MAS）展现出强大的协作和性能，然而它们日益开放的特性和复杂的交互也带来了严重风险，尤其是脱管和对抗攻击。现有防御措施通常依赖外部防护模块，如专门的安全代理，来处理不安全的行为。不幸的是，这一框架面临两个挑战：（1）独立的代理提供的保护有限，（2）它们的独立性导致单点故障——一旦被攻破，系统的整体安全性就会崩溃。简单地增加防护代理的数量进一步提高了成本和复杂性。为了解决这些挑战，我们提出了Evo-MARL，一种新的多智能体强化学习（MARL）框架，使所有任务代理能够共同获得防护能力。Evo-MARL 不依赖于外部安全模块，而是训练每个代理同时执行其主要功能并抵抗对抗威胁，从而确保系统的鲁棒性而不增加系统开销或单节点故障。此外，Evo-MARL 将进化搜索与参数共享的强化学习结合，共同进化攻击者和防御者。这种对抗训练框架内置了安全机制，并不断在共进化威胁下提升MAS的性能。实验结果显示，Evo-MARL 在推理任务中将攻击成功率降低多达22%，准确率提高多达5%，证明了安全性和实用性可以共同提升。 
+
+---
+# MI9 -- Agent Intelligence Protocol: Runtime Governance for Agentic AI Systems 
+
+**Title (ZH)**: MI9 -- 代理智能协议：代理型AI系统的运行时治理 
+
+**Authors**: Charles L. Wang, Trisha Singhal, Ameya Kelkar, Jason Tuo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.03858)  
+
+**Abstract**: Agentic AI systems capable of reasoning, planning, and executing actions present fundamentally distinct governance challenges compared to traditional AI models. Unlike conventional AI, these systems exhibit emergent and unexpected behaviors during runtime, introducing novel agent-related risks that cannot be fully anticipated through pre-deployment governance alone. To address this critical gap, we introduce MI9, the first fully integrated runtime governance framework designed specifically for safety and alignment of agentic AI systems. MI9 introduces real-time controls through six integrated components: agency-risk index, agent-semantic telemetry capture, continuous authorization monitoring, Finite-State-Machine (FSM)-based conformance engines, goal-conditioned drift detection, and graduated containment strategies. Operating transparently across heterogeneous agent architectures, MI9 enables the systematic, safe, and responsible deployment of agentic systems in production environments where conventional governance approaches fall short, providing the foundational infrastructure for safe agentic AI deployment at scale. Detailed analysis through a diverse set of scenarios demonstrates MI9's systematic coverage of governance challenges that existing approaches fail to address, establishing the technical foundation for comprehensive agentic AI oversight. 
+
+**Abstract (ZH)**: 具有推理、规划和执行动作能力的代理式AI系统在治理方面提出了与传统AI模型根本不同的挑战。MI9：首个专门用于代理式AI系统安全与对齐的全面运行时治理框架 
+
+---
+# Human-Centered Human-AI Interaction (HC-HAII): A Human-Centered AI Perspective 
+
+**Title (ZH)**: 以人为中心的人机互动（HC-HAII）：一个人本主义的AI视角 
+
+**Authors**: Wei Xu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.03969)  
+
+**Abstract**: This chapter systematically promotes an emerging interdisciplinary field of human-artificial intelligence interaction (human-AI interaction, HAII) from a human-centered AI (HCAI) perspective. It introduces a framework of human-centered HAII (HC-HAII). HC-HAII places humans at the core of HAII research and applications, emphasizing the importance of adopting a human-centered approach over a technology-centered one. The chapter presents the HC-HAII methodology, including human-centered methods, process, interdisciplinary teams, and multi-level design paradigms. It also highlights key research challenges and future directions. As the first chapter, this chapter also provides a structural overview of this book, which brings together contributions from an interdisciplinary community of researchers and practitioners to advance the theory, methodology, and applications of HCAI in diverse domains of HAII. The purpose of this chapter is to provide a fundamental framework for this book, centered on HAII research and applications based on the HCAI approach, which will pave the way for the content of subsequent chapters. 
+
+**Abstract (ZH)**: 本章从以人类为中心的人工智能（HCAI）视角系统地推动了一种新兴的跨学科领域——人类-人工智能交互（人机交互，HC-HAI），介绍了以人类为中心的HC-HAI框架。该框架将人类置于HAII研究和应用的核心地位，强调采用以人类为中心的方法比以技术为中心的方法更为重要。本章介绍了HC-HAI方法论，包括以人类为中心的方法、过程、跨学科团队和多层级设计范式。还突出了关键研究挑战和未来方向。作为本书的第一章，本章还提供了本书的整体结构概述，汇集了来自跨学科研究者和实践者的贡献，以促进HAII领域HCAI的理论、方法和应用。本章的目的是为本书提供一个基于HCAI方法的HAII研究和应用的基本框架，为后续章节的内容奠定基础。 
+
+---
+# CX-Mind: A Pioneering Multimodal Large Language Model for Interleaved Reasoning in Chest X-ray via Curriculum-Guided Reinforcement Learning 
+
+**Title (ZH)**: CX-Mind:一种基于课程指导强化学习的胸部X光交错推理多模态大型语言模型 
+
+**Authors**: Wenjie Li, Yujie Zhang, Haoran Sun, Yueqi Li, Fanrui Zhang, Mengzhe Xu, Victoria Borja Clausich, Sade Mellin, Renhao Yang, Chenrun Wang, Jethro Zih-Shuo Wang, Shiyi Yao, Gen Li, Yidong Xu, Hanyu Wang, Yilin Huang, Angela Lin Wang, Chen Shi, Yin Zhang, Jianan Guo, Luqi Yang, Renxuan Li, Yang Xu, Jiawei Liu, Yao Zhang, Lei Liu, Carlos Gutiérrez SanRomán, Lei Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.03733)  
+
+**Abstract**: Chest X-ray (CXR) imaging is one of the most widely used diagnostic modalities in clinical practice, encompassing a broad spectrum of diagnostic tasks. Recent advancements have seen the extensive application of reasoning-based multimodal large language models (MLLMs) in medical imaging to enhance diagnostic efficiency and interpretability. However, existing multimodal models predominantly rely on "one-time" diagnostic approaches, lacking verifiable supervision of the reasoning process. This leads to challenges in multi-task CXR diagnosis, including lengthy reasoning, sparse rewards, and frequent hallucinations. To address these issues, we propose CX-Mind, the first generative model to achieve interleaved "think-answer" reasoning for CXR tasks, driven by curriculum-based reinforcement learning and verifiable process rewards (CuRL-VPR). Specifically, we constructed an instruction-tuning dataset, CX-Set, comprising 708,473 images and 2,619,148 samples, and generated 42,828 high-quality interleaved reasoning data points supervised by clinical reports. Optimization was conducted in two stages under the Group Relative Policy Optimization framework: initially stabilizing basic reasoning with closed-domain tasks, followed by transfer to open-domain diagnostics, incorporating rule-based conditional process rewards to bypass the need for pretrained reward models. Extensive experimental results demonstrate that CX-Mind significantly outperforms existing medical and general-domain MLLMs in visual understanding, text generation, and spatiotemporal alignment, achieving an average performance improvement of 25.1% over comparable CXR-specific models. On real-world clinical dataset (Rui-CXR), CX-Mind achieves a mean recall@1 across 14 diseases that substantially surpasses the second-best results, with multi-center expert evaluations further confirming its clinical utility across multiple dimensions. 
+
+**Abstract (ZH)**: 基于推理的中山大学X光影像生成模型（CX-Mind）：基于课程强化学习和可验证过程奖励的交替“思考-回答”推理 
+
+---

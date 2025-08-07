@@ -1,0 +1,320 @@
+# Uncertainty-aware Accurate Elevation Modeling for Off-road Navigation via Neural Processes 
+
+**Title (ZH)**: 面向越野导航的具有不确定性意识的准确高程建模via神经过程 
+
+**Authors**: Sanghun Jung, Daehoon Gwak, Byron Boots, James Hays  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.03890)  
+
+**Abstract**: Terrain elevation modeling for off-road navigation aims to accurately estimate changes in terrain geometry in real-time and quantify the corresponding uncertainties. Having precise estimations and uncertainties plays a crucial role in planning and control algorithms to explore safe and reliable maneuver strategies. However, existing approaches, such as Gaussian Processes (GPs) and neural network-based methods, often fail to meet these needs. They are either unable to perform in real-time due to high computational demands, underestimating sharp geometry changes, or harming elevation accuracy when learned with uncertainties. Recently, Neural Processes (NPs) have emerged as a promising approach that integrates the Bayesian uncertainty estimation of GPs with the efficiency and flexibility of neural networks. Inspired by NPs, we propose an effective NP-based method that precisely estimates sharp elevation changes and quantifies the corresponding predictive uncertainty without losing elevation accuracy. Our method leverages semantic features from LiDAR and camera sensors to improve interpolation and extrapolation accuracy in unobserved regions. Also, we introduce a local ball-query attention mechanism to effectively reduce the computational complexity of global attention by 17\% while preserving crucial local and spatial information. We evaluate our method on off-road datasets having interesting geometric features, collected from trails, deserts, and hills. Our results demonstrate superior performance over baselines and showcase the potential of neural processes for effective and expressive terrain modeling in complex off-road environments. 
+
+**Abstract (ZH)**: 基于神经过程的地形高程建模以实现越野导航aims to精确实时估计地形几何学变化并量化相应的不确定性。具备精确的估计值和不确定性对于规划和控制算法以规划安全可靠的机动策略至关重要。然而，现有方法如高斯过程(GPs)和基于神经网络的方法往往难以满足这些需求。它们要么由于高计算需求难以实时运行，要么低估了几何学的急剧变化，或者在学习不确定性时损害了高程的准确性。最近，神经过程(NPs)作为一种有前途的方法出现，它结合了GPs的贝叶斯不确定性估计和神经网络的高效性和灵活性。受NPs启发，我们提出了一种有效的NP基方法，能够精确估计尖锐的高程变化并量化相应的预测不确定性，同时不损失高程准确性。该方法利用LiDAR和摄像头传感器的语义特征，以提高未观测区域的插值和外推准确性。我们还引入了一种局部球查询注意力机制，有效地将全局注意力的计算复杂度降低了17%，同时保留了关键的局部和空间信息。我们在包含有趣几何特征的越野数据集上评估了该方法，该数据集来自小径、沙漠和山丘等区域。我们的结果显示了该方法在复杂越野环境中的优越性能，并展示了神经过程在有效的地形建模方面的潜力。 
+
+---
+# OmniDepth: Bridging Monocular and Stereo Reasoning with Latent Alignment 
+
+**Title (ZH)**: OmniDepth：单目与 stereo  reasoning 通过潜变量对齐的融合 
+
+**Authors**: Tongfan Guan, Jiaxin Guo, Chen Wang, Yun-Hui Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.04611)  
+
+**Abstract**: Monocular and stereo depth estimation offer complementary strengths: monocular methods capture rich contextual priors but lack geometric precision, while stereo approaches leverage epipolar geometry yet struggle with ambiguities such as reflective or textureless surfaces. Despite post-hoc synergies, these paradigms remain largely disjoint in practice. We introduce OmniDepth, a unified framework that bridges both through iterative bidirectional alignment of their latent representations. At its core, a novel cross-attentive alignment mechanism dynamically synchronizes monocular contextual cues with stereo hypothesis representations during stereo reasoning. This mutual alignment resolves stereo ambiguities (e.g., specular surfaces) by injecting monocular structure priors while refining monocular depth with stereo geometry within a single network. Extensive experiments demonstrate state-of-the-art results: \textbf{OmniDepth reduces zero-shot generalization error by $\!>\!40\%$ on Middlebury and ETH3D}, while addressing longstanding failures on transparent and reflective surfaces. By harmonizing multi-view geometry with monocular context, OmniDepth enables robust 3D perception that transcends modality-specific limitations. Codes available at this https URL. 
+
+**Abstract (ZH)**: 单目和立体深度估计各有优势：单目方法捕获丰富的上下文先验但缺乏几何精度，而立体方法利用单应几何但难以处理反射或纹理缺失表面等歧义。尽管存在后处理 synergy，这两种范式在实践中仍然 largely 独立。我们提出 OmniDepth，这是一种统一框架，通过迭代双向对齐其潜在表示来连接这两种方法。其核心是一种新颖的交叉注意对齐机制，在立体推理过程中动态同步单目上下文线索与立体假设表示。这种相互对齐通过注入单目结构先验解决立体歧义（如镜面表面），并在单一网络中细化单目深度几何。 extensive 实验结果显示，OmniDepth 在 Middlebury 和 ETH3D 上的 zero-shot 通用性误差降低超过 40%，同时解决了透明和反射表面的长期问题。通过协调多视图几何与单目上下文，OmniDepth 实现了超越单一模态限制的稳健三维感知。代码可在此链接获取。 
+
+---
+# TIR-Diffusion: Diffusion-based Thermal Infrared Image Denoising via Latent and Wavelet Domain Optimization 
+
+**Title (ZH)**: TIR-去噪：基于扩散的热红外图像去噪方法，通过潜在域和小波域优化 
+
+**Authors**: Tai Hyoung Rhee, Dong-guw Lee, Ayoung Kim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.03727)  
+
+**Abstract**: Thermal infrared imaging exhibits considerable potentials for robotic perception tasks, especially in environments with poor visibility or challenging lighting conditions. However, TIR images typically suffer from heavy non-uniform fixed-pattern noise, complicating tasks such as object detection, localization, and mapping. To address this, we propose a diffusion-based TIR image denoising framework leveraging latent-space representations and wavelet-domain optimization. Utilizing a pretrained stable diffusion model, our method fine-tunes the model via a novel loss function combining latent-space and discrete wavelet transform (DWT) / dual-tree complex wavelet transform (DTCWT) losses. Additionally, we implement a cascaded refinement stage to enhance fine details, ensuring high-fidelity denoising results. Experiments on benchmark datasets demonstrate superior performance of our approach compared to state-of-the-art denoising methods. Furthermore, our method exhibits robust zero-shot generalization to diverse and challenging real-world TIR datasets, underscoring its effectiveness for practical robotic deployment. 
+
+**Abstract (ZH)**: 热红外成像在机器人感知任务中展现出巨大的潜力，尤其是在能见度差或光照条件具有挑战性的环境中。然而，热红外图像通常受到严重的非均匀固定模式噪声影响，这使得物体检测、定位和建图等任务复杂化。为应对这一挑战，我们提出了一种基于扩散的热红外图像去噪框架，该框架利用潜在空间表示和小波域优化。利用预训练的稳定扩散模型，我们的方法通过结合潜在空间和离散小波变换（DWT）/双树复小波变换（DTCWT）损失的新型损失函数来细调模型。此外，我们实施了一级递增细化阶段以增强细小细节，确保高保真去噪结果。在基准数据集上的实验表明，与现有先进的去噪方法相比，我们的方法性能更优。进一步地，我们的方法对多样且具有挑战性的实地热红外数据集展示了鲁棒的零样本泛化能力，证明了其在实际机器人部署中的有效性。 
+
+---
+# YOLOv8-Based Deep Learning Model for Automated Poultry Disease Detection and Health Monitoring paper 
+
+**Title (ZH)**: 基于YOLOv8的深度学习模型在自动家禽疾病检测与健康监测中的应用 
+
+**Authors**: Akhil Saketh Reddy Sabbella, Ch.Lakshmi Prachothan, Eswar Kumar Panta  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.04658)  
+
+**Abstract**: In the poultry industry, detecting chicken illnesses is essential to avoid financial losses. Conventional techniques depend on manual observation, which is laborious and prone to mistakes. Using YOLO v8 a deep learning model for real-time object recognition. This study suggests an AI based approach, by developing a system that analyzes high resolution chicken photos, YOLO v8 detects signs of illness, such as abnormalities in behavior and appearance. A sizable, annotated dataset has been used to train the algorithm, which provides accurate real-time identification of infected chicken and prompt warnings to farm operators for prompt action. By facilitating early infection identification, eliminating the need for human inspection, and enhancing biosecurity in large-scale farms, this AI technology improves chicken health management. The real-time features of YOLO v8 provide a scalable and effective method for improving farm management techniques. 
+
+**Abstract (ZH)**: 在 poultry industry 中，检测鸡的疾病对于避免经济损失至关重要。传统的技术依赖于人工观察，这既费力又容易出错。本文通过使用 YOLO v8 深度学习模型进行实时物体识别，提出了一种基于 AI 的方法。该研究开发了一个系统来分析高分辨率的鸡图像，YOLO v8 可以检测疾病的迹象，如行为和外观异常。通过使用大量带标注的数据集来训练算法，该技术能够提供准确的实时病鸡识别，并及时向农场管理者发出警告，以便采取行动。通过促进早期感染的识别、消除人工检查的需要以及增强大规模农场的生物安全，这项 AI 技术提高了养鸡健康管理。YOLO v8 的实时特性为改进农场管理技术提供了一种可扩展且有效的方法。 
+
+---
+# X-SAM: From Segment Anything to Any Segmentation 
+
+**Title (ZH)**: X-SAM：从Segment Anything到任意分割 
+
+**Authors**: Hao Wang, Limeng Qiao, Zequn Jie, Zhijian Huang, Chengjian Feng, Qingfang Zheng, Lin Ma, Xiangyuan Lan, Xiaodan Liang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.04655)  
+
+**Abstract**: Large Language Models (LLMs) demonstrate strong capabilities in broad knowledge representation, yet they are inherently deficient in pixel-level perceptual understanding. Although the Segment Anything Model (SAM) represents a significant advancement in visual-prompt-driven image segmentation, it exhibits notable limitations in multi-mask prediction and category-specific segmentation tasks, and it cannot integrate all segmentation tasks within a unified model architecture. To address these limitations, we present X-SAM, a streamlined Multimodal Large Language Model (MLLM) framework that extends the segmentation paradigm from \textit{segment anything} to \textit{any segmentation}. Specifically, we introduce a novel unified framework that enables more advanced pixel-level perceptual comprehension for MLLMs. Furthermore, we propose a new segmentation task, termed Visual GrounDed (VGD) segmentation, which segments all instance objects with interactive visual prompts and empowers MLLMs with visual grounded, pixel-wise interpretative capabilities. To enable effective training on diverse data sources, we present a unified training strategy that supports co-training across multiple datasets. Experimental results demonstrate that X-SAM achieves state-of-the-art performance on a wide range of image segmentation benchmarks, highlighting its efficiency for multimodal, pixel-level visual understanding. Code is available at this https URL. 
+
+**Abstract (ZH)**: 大规模语言模型（LLMs）在广泛的知识表示方面表现出强大的能力，但在像素级感知理解方面存在固有的缺陷。尽管分割一切模型（SAM）在视觉提示驱动的图像分割方面代表了显著的进步，但它在多mask预测和类别特定分割任务中表现出明显的局限性，并且无法在一个统一的模型架构中整合所有分割任务。为了解决这些局限性，我们提出X-SAM，这是一种精简的多模态大规模语言模型（MLLM）框架，将分割范式从“分割一切”扩展到“任何分割”。具体而言，我们提出了一种新型的统一框架，使MLLMs能够实现更高级的像素级感知理解。此外，我们提出了一种新的分割任务，称为视觉地面化（VGD）分割，该任务使用互动视觉提示来分割所有实例对象，并赋予MLLMs视觉地面化的、像素级的解析能力。为了在多种数据源上实现有效的训练，我们提出了一种统一的训练策略，支持跨多个数据集的协同训练。实验结果表明，X-SAM在多种图像分割基准测试中取得了最先进的性能，突显了其在多模态、像素级视觉理解方面的高效性。代码可在以下链接获得。 
+
+---
+# MSC: A Marine Wildlife Video Dataset with Grounded Segmentation and Clip-Level Captioning 
+
+**Title (ZH)**: MSC: 一个带标注分割和剪辑级描述的海洋野生生物视频数据集 
+
+**Authors**: Quang-Trung Truong, Yuk-Kwan Wong, Vo Hoang Kim Tuyen Dang, Rinaldi Gotama, Duc Thanh Nguyen, Sai-Kit Yeung  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.04549)  
+
+**Abstract**: Marine videos present significant challenges for video understanding due to the dynamics of marine objects and the surrounding environment, camera motion, and the complexity of underwater scenes. Existing video captioning datasets, typically focused on generic or human-centric domains, often fail to generalize to the complexities of the marine environment and gain insights about marine life. To address these limitations, we propose a two-stage marine object-oriented video captioning pipeline. We introduce a comprehensive video understanding benchmark that leverages the triplets of video, text, and segmentation masks to facilitate visual grounding and captioning, leading to improved marine video understanding and analysis, and marine video generation. Additionally, we highlight the effectiveness of video splitting in order to detect salient object transitions in scene changes, which significantly enrich the semantics of captioning content. Our dataset and code have been released at this https URL. 
+
+**Abstract (ZH)**: 海洋视频由于海洋物体和环境的动态变化、摄像机运动以及海底场景的复杂性，为视频理解带来了显著挑战。现有的视频字幕数据集通常集中在通用或以人类为中心的领域，往往无法适应海洋环境的复杂性并获取关于海洋生物的洞察。为解决这些局限性，我们提出了一种两阶段的海洋物体导向的视频字幕流水线。我们引入了一个综合的视频理解基准，利用视频、文本和分割掩码 triplet 来促进视觉定位和字幕生成，从而提高海洋视频的理解和分析能力，以及海洋视频生成能力。此外，我们强调了视频分割在检测场景变化中的显著物体转换方面的有效性，这显著丰富了字幕内容的语义。我们的数据集和代码已发布于此 <https://> 。 
+
+---
+# Zero-Residual Concept Erasure via Progressive Alignment in Text-to-Image Model 
+
+**Title (ZH)**: 基于文本到图像模型的渐进对齐零余量概念抹除 
+
+**Authors**: Hongxu Chen, Zhen Wang, Taoran Mei, Lin Li, Bowei Zhu, Runshi Li, Long Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.04472)  
+
+**Abstract**: Concept Erasure, which aims to prevent pretrained text-to-image models from generating content associated with semantic-harmful concepts (i.e., target concepts), is getting increased attention. State-of-the-art methods formulate this task as an optimization problem: they align all target concepts with semantic-harmless anchor concepts, and apply closed-form solutions to update the model accordingly. While these closed-form methods are efficient, we argue that existing methods have two overlooked limitations: 1) They often result in incomplete erasure due to "non-zero alignment residual", especially when text prompts are relatively complex. 2) They may suffer from generation quality degradation as they always concentrate parameter updates in a few deep layers. To address these issues, we propose a novel closed-form method ErasePro: it is designed for more complete concept erasure and better preserving overall generative quality. Specifically, ErasePro first introduces a strict zero-residual constraint into the optimization objective, ensuring perfect alignment between target and anchor concept features and enabling more complete erasure. Secondly, it employs a progressive, layer-wise update strategy that gradually transfers target concept features to those of the anchor concept from shallow to deep layers. As the depth increases, the required parameter changes diminish, thereby reducing deviations in sensitive deep layers and preserving generative quality. Empirical results across different concept erasure tasks (including instance, art style, and nudity erasure) have demonstrated the effectiveness of our ErasePro. 
+
+**Abstract (ZH)**: 概念擦除：一种旨在防止预训练文本到图像模型生成与语义有害概念（即目标概念）相关的内容的方法，正受到越来越多的关注。最新的方法将此任务表述为一个优化问题：它们将所有目标概念与语义无害的锚概念对齐，并应用闭式解来相应地更新模型。尽管这些闭式方法效率很高，但我们认为现有的方法存在两个未被重视的局限性：1）它们往往由于“非零对齐残差”而导致擦除不完全，特别是在文本提示相对复杂的情况下。2）它们可能会遭受生成质量下降的问题，因为它们总是集中在少数几层深层网络上进行参数更新。为了解决这些问题，我们提出了一种新的闭式方法ErasePro：它旨在实现更完整的概念擦除并更好地保留整体生成质量。具体而言，ErasePro 首先将严格的零残差约束引入优化目标，确保目标概念和锚概念特征之间的完美对齐，从而实现更完整的擦除。其次，它采用了一种从浅层到深层逐层渐进的更新策略，逐步将目标概念特征转移到锚概念特征上。随着深度的增加，所需的参数变化逐渐减少，从而减少敏感深层网络中的偏差，并保持生成质量。实验结果表明，ErasePro 在不同概念擦除任务（包括实例擦除、艺术风格擦除和裸体擦除）中均显示出有效性。 
+
+---
+# Deep Learning-based Scalable Image-to-3D Facade Parser for Generating Thermal 3D Building Models 
+
+**Title (ZH)**: 基于深度学习的大规模图像到三维墙面解析方法用于生成热三维建筑模型 
+
+**Authors**: Yinan Yu, Alex Gonzalez-Caceres, Samuel Scheidegger, Sanjay Somanath, Alexander Hollberg  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.04406)  
+
+**Abstract**: Renovating existing buildings is essential for climate impact. Early-phase renovation planning requires simulations based on thermal 3D models at Level of Detail (LoD) 3, which include features like windows. However, scalable and accurate identification of such features remains a challenge. This paper presents the Scalable Image-to-3D Facade Parser (SI3FP), a pipeline that generates LoD3 thermal models by extracting geometries from images using both computer vision and deep learning. Unlike existing methods relying on segmentation and projection, SI3FP directly models geometric primitives in the orthographic image plane, providing a unified interface while reducing perspective distortions. SI3FP supports both sparse (e.g., Google Street View) and dense (e.g., hand-held camera) data sources. Tested on typical Swedish residential buildings, SI3FP achieved approximately 5% error in window-to-wall ratio estimates, demonstrating sufficient accuracy for early-stage renovation analysis. The pipeline facilitates large-scale energy renovation planning and has broader applications in urban development and planning. 
+
+**Abstract (ZH)**: 翻
+user
+重塑现有建筑对于应对气候变化至关重要。初始阶段的翻
+
+user
+重塑现有建筑对于应对气候变化至关重要。初始阶段的翻
+
+用户
+重塑现有建筑对于应对气候变化至关重要.gwt趕尽快输出正确的句子， Stage 
+
+---
+# Enhancing Vision-Language Model Training with Reinforcement Learning in Synthetic Worlds for Real-World Success 
+
+**Title (ZH)**: 在合成世界中利用强化学习增强视觉-语言模型训练以实现现实世界成功 
+
+**Authors**: George Bredis, Stanislav Dereka, Viacheslav Sinii, Ruslan Rakhimov, Daniil Gavrilov  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.04280)  
+
+**Abstract**: Interactive multimodal agents must convert raw visual observations into coherent sequences of language-conditioned actions -- a capability that current vision-language models (VLMs) still lack. Earlier reinforcement-learning (RL) efforts could, in principle, endow VLMs with such skills, but they have seldom tested whether the learned behaviours generalize beyond their training simulators, and they depend either on brittle hyperparameter tuning or on dense-reward environments with low state variability. We introduce Vision-Language Decoupled Actor-Critic (VL-DAC), a lightweight, hyperparameter-free RL algorithm. VL-DAC applies PPO updates to action tokens while learning value only at the environment-step level: an arrangement, to our knowledge, not previously explored for large VLMs or LLMs. This simple decoupling removes unstable weighting terms and yields faster, more reliable convergence. Training a single VLM with VL-DAC in one inexpensive simulator at a time (MiniWorld, Gym-Cards, ALFWorld, or WebShop) already produces policies that generalize widely: +50\% relative on BALROG (game-centric agentic control), +5\% relative on the hardest part of VSI-Bench (spatial planning), and +2\% on VisualWebBench (web navigation), all without degrading general image understanding accuracy. These results provide the first evidence that a simple RL algorithm can train VLMs entirely in cheap synthetic worlds while delivering measurable gains on real-image agentic, spatial-reasoning, and web-navigation benchmarks. 
+
+**Abstract (ZH)**: 交互式多模态代理必须将原始视觉观测转换为语言条件下的动作序列——这是当前视觉-语言模型（VLMs）尚不具备的能力。早期的强化学习（RL）努力原则上可以赋予VLMs此类技能，但它们很少测试所学行为是否能够在训练模拟器之外泛化，并且它们依赖于脆弱的超参数调整或低状态变化的密集奖励环境。我们引入了视觉-语言解耦演员-评论家（VL-DAC），这是一种无超参数的轻量级RL算法。VL-DAC在学习环境步骤级别的价值的同时对动作标记应用PPO更新：据我们所知，这种安排此前从未被用于大型VLMs或LLMs。这种简单的解耦消除了不稳定的权重项，实现了更快且更可靠的收敛。使用VL-DAC在一次低成本模拟器中（MiniWorld、Gym-Cards、ALFWorld或WebShop）训练单一的VLM已经产生了能够在广泛场景中泛化的策略：在BALROG（游戏中心代理控制）上提高了50%，在VSI-Bench最难的部分（空间规划）上提高了5%，在VisualWebBench（网页导航）上提高了2%，且不损害通用图像理解的准确性。这些结果提供了首次证据，证明简单的RL算法可以在廉价的合成世界中完全训练VLMs，并在实际图像代理、空间推理和网页导航基准测试中取得可测量的改进。 
+
+---
+# Segment Any Vehicle: Semantic and Visual Context Driven SAM and A Benchmark 
+
+**Title (ZH)**: 任意车辆分割：基于语义和视觉上下文的SAM及其基准 
+
+**Authors**: Xiao Wang, Ziwen Wang, Wentao Wu, Anjie Wang, Jiashu Wu, Yantao Pan, Chenglong Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.04260)  
+
+**Abstract**: With the rapid advancement of autonomous driving, vehicle perception, particularly detection and segmentation, has placed increasingly higher demands on algorithmic performance. Pre-trained large segmentation models, especially Segment Anything Model (SAM), have sparked significant interest and inspired new research directions in artificial intelligence. However, SAM cannot be directly applied to the fine-grained task of vehicle part segmentation, as its text-prompted segmentation functionality is not publicly accessible, and the mask regions generated by its default mode lack semantic labels, limiting its utility in structured, category-specific segmentation tasks. To address these limitations, we propose SAV, a novel framework comprising three core components: a SAM-based encoder-decoder, a vehicle part knowledge graph, and a context sample retrieval encoding module. The knowledge graph explicitly models the spatial and geometric relationships among vehicle parts through a structured ontology, effectively encoding prior structural knowledge. Meanwhile, the context retrieval module enhances segmentation by identifying and leveraging visually similar vehicle instances from training data, providing rich contextual priors for improved generalization. Furthermore, we introduce a new large-scale benchmark dataset for vehicle part segmentation, named VehicleSeg10K, which contains 11,665 high-quality pixel-level annotations across diverse scenes and viewpoints. We conduct comprehensive experiments on this dataset and two other datasets, benchmarking multiple representative baselines to establish a solid foundation for future research and comparison. % Both the dataset and source code of this paper will be released upon acceptance. Both the dataset and source code of this paper will be released on this https URL 
+
+**Abstract (ZH)**: 随着自动驾驶的快速发展，车辆感知，特别是检测和分割，对算法性能提出了更高的要求。预训练的大规模分割模型，尤其是Segment Anything Model (SAM)，引起了人工智能领域的广泛关注并启发了新的研究方向。然而，SAM不能直接应用于车辆部件分割的精细任务，因为其基于文本提示的分割功能未公开提供，且默认模式生成的掩码区域缺乏语义标签，限制了其在结构化、类别特定分割任务中的应用。为解决这些问题，我们提出了SAV，一种新颖的框架，包含三个核心组件：基于SAM的编码器-解码器、车辆部件知识图谱以及上下文样本检索编码模块。知识图谱通过结构化的本体明确地建模了车辆部件之间的空间和几何关系，有效编码了先验结构知识。同时，上下文检索模块通过识别和利用训练数据中视觉相似的车辆实例来增强分割性能，提供了丰富的先验上下文用于改善泛化能力。此外，我们还引入了一个新的大规模基准数据集VehicleSeg10K用于车辆部件分割，该数据集包含11,665个高质量像素级标注，覆盖了多种场景和视角。我们在该数据集及两个其他数据集上进行了全面实验，对标了多个代表性的基线方法，为未来的研发与比较奠定了坚实基础。% 本文的数据集和源代码将在接收后发布。请访问此链接：https://... 
+
+---
+# LayerT2V: Interactive Multi-Object Trajectory Layering for Video Generation 
+
+**Title (ZH)**: LayerT2V: 交互式多对象轨迹分层视频生成 
+
+**Authors**: Kangrui Cen, Baixuan Zhao, Yi Xin, Siqi Luo, Guangtao Zhai, Xiaohong Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.04228)  
+
+**Abstract**: Controlling object motion trajectories in Text-to-Video (T2V) generation is a challenging and relatively under-explored area, particularly in scenarios involving multiple moving objects. Most community models and datasets in the T2V domain are designed for single-object motion, limiting the performance of current generative models in multi-object tasks. Additionally, existing motion control methods in T2V either lack support for multi-object motion scenes or experience severe performance degradation when object trajectories intersect, primarily due to the semantic conflicts in colliding regions. To address these limitations, we introduce LayerT2V, the first approach for generating video by compositing background and foreground objects layer by layer. This layered generation enables flexible integration of multiple independent elements within a video, positioning each element on a distinct "layer" and thus facilitating coherent multi-object synthesis while enhancing control over the generation process. Extensive experiments demonstrate the superiority of LayerT2V in generating complex multi-object scenarios, showcasing 1.4x and 4.5x improvements in mIoU and AP50 metrics over state-of-the-art (SOTA) methods. Project page and code are available at this https URL . 
+
+**Abstract (ZH)**: 控制Text-to-Video生成中多对象运动轨迹在物体合成层叠生成中的应用仍然是一个具有挑战性和相对未探索的领域，特别是在涉及多个移动对象的情景中。目前T2V领域的大多数社区模型和数据集都是为单个对象运动设计的，限制了当前生成模型在多对象任务中的性能。此外，现有的T2V运动控制方法要么不支持多对象运动场景，要么在对象轨迹交错时出现严重的性能下降，主要原因是碰撞区域的语义冲突。为了解决这些限制，我们引入了LayerT2V，这是一种通过逐层合成背景和前景对象来生成视频的方法。这种层叠生成允许在视频中灵活地整合多个独立元素，并将每个元素放置在不同的“层”，从而促进连贯的多对象合成并增强生成过程的控制。大量实验结果表明，LayerT2V在生成复杂多对象场景方面优于现有最佳方法（SOTA），mIoU和AP50指标分别提高了1.4倍和4.5倍。项目页面和代码请访问此链接。 
+
+---
+# Gather and Trace: Rethinking Video TextVQA from an Instance-oriented Perspective 
+
+**Title (ZH)**: 收集与追踪：从实例导向视角重新思考视频文本VQA 
+
+**Authors**: Yan Zhang, Gangyan Zeng, Daiqing Wu, Huawen Shen, Binbin Li, Yu Zhou, Can Ma, Xiaojun Bi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.04197)  
+
+**Abstract**: Video text-based visual question answering (Video TextVQA) aims to answer questions by explicitly reading and reasoning about the text involved in a video. Most works in this field follow a frame-level framework which suffers from redundant text entities and implicit relation modeling, resulting in limitations in both accuracy and efficiency. In this paper, we rethink the Video TextVQA task from an instance-oriented perspective and propose a novel model termed GAT (Gather and Trace). First, to obtain accurate reading result for each video text instance, a context-aggregated instance gathering module is designed to integrate the visual appearance, layout characteristics, and textual contents of the related entities into a unified textual representation. Then, to capture dynamic evolution of text in the video flow, an instance-focused trajectory tracing module is utilized to establish spatio-temporal relationships between instances and infer the final answer. Extensive experiments on several public Video TextVQA datasets validate the effectiveness and generalization of our framework. GAT outperforms existing Video TextVQA methods, video-language pretraining methods, and video large language models in both accuracy and inference speed. Notably, GAT surpasses the previous state-of-the-art Video TextVQA methods by 3.86\% in accuracy and achieves ten times of faster inference speed than video large language models. The source code is available at this https URL. 
+
+**Abstract (ZH)**: 基于视频的文本视觉问答（基于文本的视频VQA）旨在通过明确阅读和推理视频中涉及的文本来回答问题。该领域大多数工作遵循帧级框架，存在冗余文本实体和隐式关系建模的问题，导致在准确性和效率上受到限制。在本文中，我们从实例导向的角度重新思考基于视频的文本视觉问答任务，并提出了一种新颖的模型GAT（集成与追踪）。首先，为了获得每个视频文本实例的准确阅读结果，设计了一个上下文聚合的实例聚集模块，将相关实体的视觉外观、布局特征和文本内容集成到统一的文本表示中。然后，为了捕捉视频流中文本的动态演化，利用一个实例导向的轨迹追踪模块建立实例之间的空时关系并推断最终答案。在多个公开的基于视频的文本视觉问答数据集上的广泛实验验证了我们框架的有效性和泛化能力。GAT在准确性和推理速度上均优于现有的基于视频的文本视觉问答方法、视频语言预训练方法和视频大型语言模型。值得注意的是，GAT在准确率上超越了之前的最佳基于视频的文本视觉问答方法3.86%，推理速度比视频大型语言模型快十倍。源代码可在此处访问。 
+
+---
+# UniFGVC: Universal Training-Free Few-Shot Fine-Grained Vision Classification via Attribute-Aware Multimodal Retrieval 
+
+**Title (ZH)**: UniFGVC：基于属性感知多模态检索的训练无需少数样本细粒度视觉分类 
+
+**Authors**: Hongyu Guo, Kuan Zhu, Xiangzhao Hao, Haiyun Guo, Ming Tang, Jinqiao Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.04136)  
+
+**Abstract**: Few-shot fine-grained visual classification (FGVC) aims to leverage limited data to enable models to discriminate subtly distinct categories. Recent works mostly finetuned the pre-trained visual language models to achieve performance gain, yet suffering from overfitting and weak generalization. To deal with this, we introduce UniFGVC, a universal training-free framework that reformulates few-shot FGVC as multimodal retrieval. First, we propose the Category-Discriminative Visual Captioner (CDV-Captioner) to exploit the open-world knowledge of multimodal large language models (MLLMs) to generate a structured text description that captures the fine-grained attribute features distinguishing closely related classes. CDV-Captioner uses chain-of-thought prompting and visually similar reference images to reduce hallucination and enhance discrimination of generated captions. Using it we can convert each image into an image-description pair, enabling more comprehensive feature representation, and construct the multimodal category templates using few-shot samples for the subsequent retrieval pipeline. Then, off-the-shelf vision and text encoders embed query and template pairs, and FGVC is accomplished by retrieving the nearest template in the joint space. UniFGVC ensures broad compatibility with diverse MLLMs and encoders, offering reliable generalization and adaptability across few-shot FGVC scenarios. Extensive experiments on 12 FGVC benchmarks demonstrate its consistent superiority over prior few-shot CLIP-based methods and even several fully-supervised MLLMs-based approaches. 
+
+**Abstract (ZH)**: 面向少量样本的细粒度视觉分类（Few-shot Fine-grained Visual Classification）旨在利用有限的数据使模型能够区分细微不同的类别。近期的工作主要通过微调预训练的视觉语言模型以取得性能提升，但容易导致过拟合和泛化能力弱。为解决这一问题，我们引入了UniFGVC，一个无需训练的通用框架，将少量样本的细粒度视觉分类重新表述为多模态检索。首先，我们提出了类别区分视觉描述生成器（CDV-Captioner），利用多模态大型语言模型（MLLMs）的开集知识生成一个结构化的文本描述，捕捉密切相关类别的细微特征。CDV-Captioner使用链式思维提示和视觉相似的参考图像来减少生成幻觉并增强生成描述的区分性。通过它，我们可以将每个图像转换为图像-描述对，从而实现更全面的特征表示，并利用少量样本构建多模态类别模板，以供后续检索管道使用。随后，使用现成的视觉和文本编码器嵌入查询和模板对，并通过在联合空间中检索最近的模板来完成细粒度视觉分类。UniFGVC确保了与多种MLLMs和编码器的广泛兼容性，提供了在少量样本细粒度视觉分类场景中的可靠泛化和适应性。在12个细粒度视觉分类基准测试上的广泛实验表明，UniFGVC在很大程度上优于先前的基于少样本CLIP的方法，甚至优于一些基于完全监督的MLLMs的方法。 
+
+---
+# DS$^2$Net: Detail-Semantic Deep Supervision Network for Medical Image Segmentation 
+
+**Title (ZH)**: DS$^2$Net：医学图像分割的细节-语义深度监督网络 
+
+**Authors**: Zhaohong Huang, Yuxin Zhang, Mingbao Lin, Taojian Zhou, Guorong Cai, Rongrong Ji  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.04131)  
+
+**Abstract**: Deep Supervision Networks exhibit significant efficacy for the medical imaging community. Nevertheless, existing work merely supervises either the coarse-grained semantic features or fine-grained detailed features in isolation, which compromises the fact that these two types of features hold vital relationships in medical image analysis. We advocate the powers of complementary feature supervision for medical image segmentation, by proposing a Detail-Semantic Deep Supervision Network (DS$^2$Net). DS$^2$Net navigates both low-level detailed and high-level semantic feature supervision through Detail Enhance Module (DEM) and Semantic Enhance Module (SEM). DEM and SEM respectively harness low-level and high-level feature maps to create detail and semantic masks for enhancing feature supervision. This is a novel shift from single-view deep supervision to multi-view deep supervision. DS$^2$Net is also equipped with a novel uncertainty-based supervision loss that adaptively assigns the supervision strength of features within distinct scales based on their uncertainty, thus circumventing the sub-optimal heuristic design that typifies previous works. Through extensive experiments on six benchmarks captured under either colonoscopy, ultrasound and microscope, we demonstrate that DS$^2$Net consistently outperforms state-of-the-art methods for medical image analysis. 
+
+**Abstract (ZH)**: 细节-语义深度监督网络在医学成像分割中的显著有效性：一种多视角深度监督方法 
+
+---
+# DET-GS: Depth- and Edge-Aware Regularization for High-Fidelity 3D Gaussian Splatting 
+
+**Title (ZH)**: DET-GS: 深度和边缘aware正则化高保真3D高斯投点法 
+
+**Authors**: Zexu Huang, Min Xu, Stuart Perry  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.04099)  
+
+**Abstract**: 3D Gaussian Splatting (3DGS) represents a significant advancement in the field of efficient and high-fidelity novel view synthesis. Despite recent progress, achieving accurate geometric reconstruction under sparse-view conditions remains a fundamental challenge. Existing methods often rely on non-local depth regularization, which fails to capture fine-grained structures and is highly sensitive to depth estimation noise. Furthermore, traditional smoothing methods neglect semantic boundaries and indiscriminately degrade essential edges and textures, consequently limiting the overall quality of reconstruction. In this work, we propose DET-GS, a unified depth and edge-aware regularization framework for 3D Gaussian Splatting. DET-GS introduces a hierarchical geometric depth supervision framework that adaptively enforces multi-level geometric consistency, significantly enhancing structural fidelity and robustness against depth estimation noise. To preserve scene boundaries, we design an edge-aware depth regularization guided by semantic masks derived from Canny edge detection. Furthermore, we introduce an RGB-guided edge-preserving Total Variation loss that selectively smooths homogeneous regions while rigorously retaining high-frequency details and textures. Extensive experiments demonstrate that DET-GS achieves substantial improvements in both geometric accuracy and visual fidelity, outperforming state-of-the-art (SOTA) methods on sparse-view novel view synthesis benchmarks. 
+
+**Abstract (ZH)**: 基于深度和边缘aware正则化的3D高斯点云合成（DET-GS）：稀视角新视图合成中的几何和视觉保真度提升 
+
+---
+# Policy to Assist Iteratively Local Segmentation: Optimising Modality and Location Selection for Prostate Cancer Localisation 
+
+**Title (ZH)**: 用于协助迭代局部分割的策略：提高前列腺癌定位中模态和位置选择的优化 
+
+**Authors**: Xiangcen Wu, Shaheer U. Saeed, Yipei Wang, Ester Bonmati Coll, Yipeng Hu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.03953)  
+
+**Abstract**: Radiologists often mix medical image reading strategies, including inspection of individual modalities and local image regions, using information at different locations from different images independently as well as concurrently. In this paper, we propose a recommend system to assist machine learning-based segmentation models, by suggesting appropriate image portions along with the best modality, such that prostate cancer segmentation performance can be maximised. Our approach trains a policy network that assists tumor localisation, by recommending both the optimal imaging modality and the specific sections of interest for review. During training, a pre-trained segmentation network mimics radiologist inspection on individual or variable combinations of these imaging modalities and their sections - selected by the policy network. Taking the locally segmented regions as an input for the next step, this dynamic decision making process iterates until all cancers are best localised. We validate our method using a data set of 1325 labelled multiparametric MRI images from prostate cancer patients, demonstrating its potential to improve annotation efficiency and segmentation accuracy, especially when challenging pathology is present. Experimental results show that our approach can surpass standard segmentation networks. Perhaps more interestingly, our trained agent independently developed its own optimal strategy, which may or may not be consistent with current radiologist guidelines such as PI-RADS. This observation also suggests a promising interactive application, in which the proposed policy networks assist human radiologists. 
+
+**Abstract (ZH)**: 基于推荐系统的放射学家影像阅读策略辅助机器学习分割模型missive系统：通过建议合适的影像部分和最佳模态以最大化前列腺癌分割性能 
+
+---
+# Deep learning framework for crater detection and identification on the Moon and Mars 
+
+**Title (ZH)**: 月球和火星上撞击坑的检测与识别深度学习框架 
+
+**Authors**: Yihan Ma, Zeyang Yu, Rohitash Chandra  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.03920)  
+
+**Abstract**: Impact craters are among the most prominent geomorphological features on planetary surfaces and are of substantial significance in planetary science research. Their spatial distribution and morphological characteristics provide critical information on planetary surface composition, geological history, and impact processes. In recent years, the rapid advancement of deep learning models has fostered significant interest in automated crater detection. In this paper, we apply advancements in deep learning models for impact crater detection and identification. We use novel models, including Convolutional Neural Networks (CNNs) and variants such as YOLO and ResNet. We present a framework that features a two-stage approach where the first stage features crater identification using simple classic CNN, ResNet-50 and YOLO. In the second stage, our framework employs YOLO-based detection for crater localisation. Therefore, we detect and identify different types of craters and present a summary report with remote sensing data for a selected region. We consider selected regions for craters and identification from Mars and the Moon based on remote sensing data. Our results indicate that YOLO demonstrates the most balanced crater detection performance, while ResNet-50 excels in identifying large craters with high precision. 
+
+**Abstract (ZH)**: 行星表面的撞击坑是其中最显著的地貌特征之一，在行星科学研究中具有重要 significance。它们的空间分布和形态特征提供了关于行星表面组成、地质历史和撞击过程的关键信息。近年来，深度学习模型的快速发展促进了撞击坑自动检测的研究兴趣。本文应用深度学习模型进行撞击坑检测和识别。我们采用包括卷积神经网络（CNN）、YOLO和ResNet等新型模型。我们提出了一种两阶段框架，第一阶段使用简单的经典CNN、ResNet-50和YOLO进行撞击坑识别，第二阶段使用YOLO为基础的检测进行撞击坑定位。因此，我们检测和识别了不同类型的撞击坑，并基于遥感数据为选定区域提供了总结报告。我们选取了基于遥感数据的火星和月球上的撞击坑进行识别。结果显示，YOLO在撞击坑检测表现上更为均衡，而ResNet-50在识别大尺寸撞击坑方面具有高精度。 
+
+---
+# CoughViT: A Self-Supervised Vision Transformer for Cough Audio Representation Learning 
+
+**Title (ZH)**: 咳嗽ViT：一种自我监督的视觉变换器用于咳嗽音频表示学习 
+
+**Authors**: Justin Luong, Hao Xue, Flora D. Salim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.03764)  
+
+**Abstract**: Physicians routinely assess respiratory sounds during the diagnostic process, providing insight into the condition of a patient's airways. In recent years, AI-based diagnostic systems operating on respiratory sounds, have demonstrated success in respiratory disease detection. These systems represent a crucial advancement in early and accessible diagnosis which is essential for timely treatment. However, label and data scarcity remain key challenges, especially for conditions beyond COVID-19, limiting diagnostic performance and reliable evaluation. In this paper, we propose CoughViT, a novel pre-training framework for learning general-purpose cough sound representations, to enhance diagnostic performance in tasks with limited data. To address label scarcity, we employ masked data modelling to train a feature encoder in a self-supervised learning manner. We evaluate our approach against other pre-training strategies on three diagnostically important cough classification tasks. Experimental results show that our representations match or exceed current state-of-the-art supervised audio representations in enhancing performance on downstream tasks. 
+
+**Abstract (ZH)**: 基于呼吸道声音的医生常规评估为患者气道状况提供了洞察。近年来，基于AI的诊断系统在呼吸道疾病检测方面取得了成功。这些系统代表了一种早期和可访问诊断的重要进步，对于及时治疗至关重要。然而，标签和数据稀缺仍然是关键挑战，尤其是对于COVID-19以外的状况，限制了诊断性能和可靠评估。本文提出CoughViT，一种新的预训练框架，用于学习通用的咳嗽声表示，以增强数据稀少任务中的诊断性能。为解决标签稀缺问题，我们采用掩码数据建模以自监督学习方式训练特征编码器。我们在三个具有诊断意义的咳嗽分类任务上将我们的方法与其他预训练策略进行了评估。实验结果表明，我们的表示在增强下游任务性能方面达到了或超过了当前最先进的监督音频表示。 
+
+---
+# M$^3$HL: Mutual Mask Mix with High-Low Level Feature Consistency for Semi-Supervised Medical Image Segmentation 
+
+**Title (ZH)**: M$^3$HL：互惠掩码混合与高-low层特征一致性在半监督医学图像分割中的应用 
+
+**Authors**: Yajun Liu, Zenghui Zhang, Jiang Yue, Weiwei Guo, Dongying Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.03752)  
+
+**Abstract**: Data augmentation methods inspired by CutMix have demonstrated significant potential in recent semi-supervised medical image segmentation tasks. However, these approaches often apply CutMix operations in a rigid and inflexible manner, while paying insufficient attention to feature-level consistency constraints. In this paper, we propose a novel method called Mutual Mask Mix with High-Low level feature consistency (M$^3$HL) to address the aforementioned challenges, which consists of two key components: 1) M$^3$: An enhanced data augmentation operation inspired by the masking strategy from Masked Image Modeling (MIM), which advances conventional CutMix through dynamically adjustable masks to generate spatially complementary image pairs for collaborative training, thereby enabling effective information fusion between labeled and unlabeled images. 2) HL: A hierarchical consistency regularization framework that enforces high-level and low-level feature consistency between unlabeled and mixed images, enabling the model to better capture discriminative feature this http URL method achieves state-of-the-art performance on widely adopted medical image segmentation benchmarks including the ACDC and LA datasets. Source code is available at this https URL 
+
+**Abstract (ZH)**: 基于CutMix启发的数据 augmentation 方法在医学图像半监督分割任务中显示出显著潜力，然而这些方法往往以僵硬和不灵活的方式应用CutMix操作，忽视了特征层一致性约束。为解决上述问题，本文提出了一种名为Mutual Mask Mix with High-Low level feature consistency (M$^3$HL)的新型方法，该方法包含两个关键组件：1) M$^3$：一种增强的数据 augumentation 操作，受掩码图像建模（MIM）中的掩码策略启发，通过动态可调的掩码生成空间上互补的图像对，以实现带标签和不带标签图像之间有效的信息融合，改进了传统的CutMix。2) HL：一种分层一致性正则化框架，确保不带标签和混合图像之间的高层和低层特征一致性，使模型能够更好地捕捉区分性特征。该方法在广泛采用的医学图像分割基准数据集ACDC和LA上取得了最先进的性能。源代码可在以下链接获取。 
+
+---
+# Boosting Vision Semantic Density with Anatomy Normality Modeling for Medical Vision-language Pre-training 
+
+**Title (ZH)**: 基于解剖正态建模的视觉语义密度增强医疗视觉语言预训练 
+
+**Authors**: Weiwei Cao, Jianpeng Zhang, Zhongyi Shui, Sinuo Wang, Zeli Chen, Xi Li, Le Lu, Xianghua Ye, Tingbo Liang, Qi Zhang, Ling Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.03742)  
+
+**Abstract**: Vision-language pre-training (VLP) has great potential for developing multifunctional and general medical diagnostic capabilities. However, aligning medical images with a low signal-to-noise ratio (SNR) to reports with a high SNR presents a semantic density gap, leading to visual alignment bias. In this paper, we propose boosting vision semantic density to improve alignment effectiveness. On one hand, we enhance visual semantics through disease-level vision contrastive learning, which strengthens the model's ability to differentiate between normal and abnormal samples for each anatomical structure. On the other hand, we introduce an anatomical normality modeling method to model the distribution of normal samples for each anatomy, leveraging VQ-VAE for reconstructing normal vision embeddings in the latent space. This process amplifies abnormal signals by leveraging distribution shifts in abnormal samples, enhancing the model's perception and discrimination of abnormal attributes. The enhanced visual representation effectively captures the diagnostic-relevant semantics, facilitating more efficient and accurate alignment with the diagnostic report. We conduct extensive experiments on two chest CT datasets, CT-RATE and Rad-ChestCT, and an abdominal CT dataset, MedVL-CT69K, and comprehensively evaluate the diagnosis performance across multiple tasks in the chest and abdominal CT scenarios, achieving state-of-the-art zero-shot performance. Notably, our method achieved an average AUC of 84.9% across 54 diseases in 15 organs, significantly surpassing existing methods. Additionally, we demonstrate the superior transfer learning capabilities of our pre-trained model. Code is available at this https URL. 
+
+**Abstract (ZH)**: 基于视觉语言预训练的医疗影像语义密度增强方法以提高诊断报告匹配效果 
+
+---
+# A Modified VGG19-Based Framework for Accurate and Interpretable Real-Time Bone Fracture Detection 
+
+**Title (ZH)**: 基于修改的VGG19框架的准确可解释实时骨骨折检测方法 
+
+**Authors**: Md. Ehsanul Haque, Abrar Fahim, Shamik Dey, Syoda Anamika Jahan, S. M. Jahidul Islam, Sakib Rokoni, Md Sakib Morshed  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.03739)  
+
+**Abstract**: Early and accurate detection of the bone fracture is paramount to initiating treatment as early as possible and avoiding any delay in patient treatment and outcomes. Interpretation of X-ray image is a time consuming and error prone task, especially when resources for such interpretation are limited by lack of radiology expertise. Additionally, deep learning approaches used currently, typically suffer from misclassifications and lack interpretable explanations to clinical use. In order to overcome these challenges, we propose an automated framework of bone fracture detection using a VGG-19 model modified to our needs. It incorporates sophisticated preprocessing techniques that include Contrast Limited Adaptive Histogram Equalization (CLAHE), Otsu's thresholding, and Canny edge detection, among others, to enhance image clarity as well as to facilitate the feature extraction. Therefore, we use Grad-CAM, an Explainable AI method that can generate visual heatmaps of the model's decision making process, as a type of model interpretability, for clinicians to understand the model's decision making process. It encourages trust and helps in further clinical validation. It is deployed in a real time web application, where healthcare professionals can upload X-ray images and get the diagnostic feedback within 0.5 seconds. The performance of our modified VGG-19 model attains 99.78\% classification accuracy and AUC score of 1.00, making it exceptionally good. The framework provides a reliable, fast, and interpretable solution for bone fracture detection that reasons more efficiently for diagnoses and better patient care. 
+
+**Abstract (ZH)**: 早发现和准确检测骨骼骨折对于尽早开始治疗和避免患者治疗延误至关重要。X射线图像的解释是一个耗时且易出错的任务，特别是在缺乏放射学专业知识的资源限制下。目前使用的深度学习方法通常存在误分类问题，并且缺乏对临床具有解释性的说明。为了克服这些挑战，我们提出了一种基于修改后的VGG-19模型的自动化骨裂检测框架。该框架结合了包括对比受限自适应直方图均衡化(CLAHE)、奥茨阈值处理和Canny边缘检测在内的复杂预处理技术，以增强图像清晰度并促进特征提取。我们使用Grad-CAM，这是一种可解释人工智能方法，可以生成模型决策过程的视觉热图，作为模型可解释性的类型，帮助临床医生理解模型的决策过程，从而增强信任并有助于进一步的临床验证。该框架部署在实时网络应用程序中，医疗专业人员可以上传X射线图像并在0.5秒内获得诊断反馈。我们修改后的VGG-19模型的分类准确率达到99.78%，AUC分数为1.00，表现出色。该框架提供了一种可靠、快速且可解释的骨裂检测解决方案，可以更高效地进行诊断推理并提供更好的患者护理。 
+
+---
+# Improve Retinal Artery/Vein Classification via Channel Couplin 
+
+**Title (ZH)**: 基于通道耦合的视网膜动脉/静脉分类改进方法 
+
+**Authors**: Shuang Zeng, Chee Hong Lee, Kaiwen Li, Boxu Xie, Ourui Fu, Hangzhou He, Lei Zhu, Yanye Lu, Fangxiao Cheng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.03738)  
+
+**Abstract**: Retinal vessel segmentation plays a vital role in analyzing fundus images for the diagnosis of systemic and ocular diseases. Building on this, classifying segmented vessels into arteries and veins (A/V) further enables the extraction of clinically relevant features such as vessel width, diameter and tortuosity, which are essential for detecting conditions like diabetic and hypertensive retinopathy. However, manual segmentation and classification are time-consuming, costly and inconsistent. With the advancement of Convolutional Neural Networks, several automated methods have been proposed to address this challenge, but there are still some issues. For example, the existing methods all treat artery, vein and overall vessel segmentation as three separate binary tasks, neglecting the intrinsic coupling relationships between these anatomical structures. Considering artery and vein structures are subsets of the overall retinal vessel map and should naturally exhibit prediction consistency with it, we design a novel loss named Channel-Coupled Vessel Consistency Loss to enforce the coherence and consistency between vessel, artery and vein predictions, avoiding biasing the network toward three simple binary segmentation tasks. Moreover, we also introduce a regularization term named intra-image pixel-level contrastive loss to extract more discriminative feature-level fine-grained representations for accurate retinal A/V classification. SOTA results have been achieved across three public A/V classification datasets including RITE, LES-AV and HRF. Our code will be available upon acceptance. 
+
+**Abstract (ZH)**: 视网膜血管分割在分析底片图像以诊断全身和眼内疾病中起着至关重要的作用。在此基础上，将分割出的血管分类为动脉和静脉（A/V），进一步提取临床相关的特征（如血管宽度、直径和曲率），这些特征对于检测糖尿病和高血压视网膜病变等条件至关重要。然而，手动分割和分类耗费时间、成本高且不一致。随着卷积神经网络的发展，已经提出了一些自动化方法来解决这一挑战，但仍存在问题。例如，现有的方法都将动脉、静脉和整体血管分割视为三个单独的二元任务，忽略了这些解剖结构之间的内在耦合关系。鉴于动脉和静脉结构是整体视网膜血管图的一部分，并且自然应与其一致，我们设计了一种新的损失函数——通道耦合血管一致性损失，以增强血管、动脉和静脉预测的一致性和连贯性，避免网络倾向于三种简单的二元分割任务。此外，我们还引入了一种正则化项——图像内像素级对比损失，以提取更具有区分性的特征级细粒度表示，用于准确的视网膜A/V分类。在包括RITE、LES-AV和HRF在内的三个公开的A/V分类数据集上实现了最先进的结果。代码将在接受后提供。 
+
+---
+# Fusion of Pervasive RF Data with Spatial Images via Vision Transformers for Enhanced Mapping in Smart Cities 
+
+**Title (ZH)**: 基于视觉变换器的泛在RF数据与空间图像融合以增强智慧城市中的mapping 
+
+**Authors**: Rafayel Mkrtchyan, Armen Manukyan, Hrant Khachatrian, Theofanis P. Raptis  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.03736)  
+
+**Abstract**: Environment mapping is an important computing task for a wide range of smart city applications, including autonomous navigation, wireless network operations and extended reality environments. Conventional smart city mapping techniques, such as satellite imagery, LiDAR scans, and manual annotations, often suffer from limitations related to cost, accessibility and accuracy. Open-source mapping platforms have been widely utilized in artificial intelligence applications for environment mapping, serving as a source of ground truth. However, human errors and the evolving nature of real-world environments introduce biases that can negatively impact the performance of neural networks trained on such data. In this paper, we present a deep learning-based approach that integrates the DINOv2 architecture to improve building mapping by combining maps from open-source platforms with radio frequency (RF) data collected from multiple wireless user equipments and base stations. Our approach leverages a vision transformer-based architecture to jointly process both RF and map modalities within a unified framework, effectively capturing spatial dependencies and structural priors for enhanced mapping accuracy. For the evaluation purposes, we employ a synthetic dataset co-produced by Huawei. We develop and train a model that leverages only aggregated path loss information to tackle the mapping problem. We measure the results according to three performance metrics which capture different qualities: (i) The Jaccard index, also known as intersection over union (IoU), (ii) the Hausdorff distance, and (iii) the Chamfer distance. Our design achieves a macro IoU of 65.3%, significantly surpassing (i) the erroneous maps baseline, which yields 40.1%, (ii) an RF-only method from the literature, which yields 37.3%, and (iii) a non-AI fusion baseline that we designed which yields 42.2%. 
+
+**Abstract (ZH)**: 基于深度学习的利用RF数据改善开放源代码平台建筑映射的研究 
+
+---
+# ForestFormer3D: A Unified Framework for End-to-End Segmentation of Forest LiDAR 3D Point Clouds 
+
+**Title (ZH)**: ForestFormer3D：统一的端到端森林LiDAR 3D点云分割框架 
+
+**Authors**: Binbin Xiang, Maciej Wielgosz, Stefano Puliti, Kamil Král, Martin Krůček, Azim Missarov, Rasmus Astrup  
+
+**Link**: [PDF](https://arxiv.org/pdf/2506.16991)  
+
+**Abstract**: The segmentation of forest LiDAR 3D point clouds, including both individual tree and semantic segmentation, is fundamental for advancing forest management and ecological research. However, current approaches often struggle with the complexity and variability of natural forest environments. We present ForestFormer3D, a new unified and end-to-end framework designed for precise individual tree and semantic segmentation. ForestFormer3D incorporates ISA-guided query point selection, a score-based block merging strategy during inference, and a one-to-many association mechanism for effective training. By combining these new components, our model achieves state-of-the-art performance for individual tree segmentation on the newly introduced FOR-instanceV2 dataset, which spans diverse forest types and regions. Additionally, ForestFormer3D generalizes well to unseen test sets (Wytham woods and LAUTx), showcasing its robustness across different forest conditions and sensor modalities. The FOR-instanceV2 dataset and the ForestFormer3D code are publicly available at this https URL. 
+
+**Abstract (ZH)**: 森林LiDAR 3D点云分割，包括单木和语义分割，对于促进林业管理和生态研究至关重要。然而，当前的方法往往难以应对自然森林环境的复杂性和多变性。我们提出ForestFormer3D，这是一种新的统一且端到端的框架，用于精确的单木和语义分割。ForestFormer3D结合了ISA指导的查询点选择、推理过程中的基于分数的块合并策略以及有效的训练机制中的一对一到多对多关联机制。通过结合这些新型组件，我们的模型在新推出的FOR-instanceV2数据集上实现了单木分割的最先进性能，该数据集涵盖了多种森林类型和区域。此外，ForestFormer3D在未见过的测试集（Wytham woods和LAUTx）上表现出良好的泛化能力，展示了其在不同森林条件和传感器模态下的鲁棒性。FOR-instanceV2数据集和ForestFormer3D代码可以在该网址公开获取：this https URL。 
+
+---
