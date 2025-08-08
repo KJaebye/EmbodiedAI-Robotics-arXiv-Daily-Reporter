@@ -1,0 +1,106 @@
+# Robust adaptive fuzzy sliding mode control for trajectory tracking for of cylindrical manipulator 
+
+**Title (ZH)**: 基于圆柱型 manipulator 轨迹跟踪的鲁棒自适应模糊滑模控制 
+
+**Authors**: Van Cuong Pham, Minh Hai Tran, Phuc Anh Nguyen, Ngoc Son Vu, Nga Nguyen Thi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.05584)  
+
+**Abstract**: This research proposes a robust adaptive fuzzy sliding mode control (AFSMC) approach to enhance the trajectory tracking performance of cylindrical robotic manipulators, extensively utilized in applications such as CNC and 3D printing. The proposed approach integrates fuzzy logic with sliding mode control (SMC) to bolster adaptability and robustness, with fuzzy logic approximating the uncertain dynamics of the system, while SMC ensures strong performance. Simulation results in MATLAB/Simulink demonstrate that AFSMC significantly improves trajectory tracking accuracy, stability, and disturbance rejection compared to traditional methods. This research underscores the effectiveness of AFSMC in controlling robotic manipulators, contributing to enhanced precision in industrial robotic applications. 
+
+**Abstract (ZH)**: 一种增强圆柱型机器人 manipulator 轨迹跟踪性能的鲁棒自适应模糊滑模控制方法 
+
+---
+# Do Robots Really Need Anthropomorphic Hands? 
+
+**Title (ZH)**: 机器人真的需要类人手吗？ 
+
+**Authors**: Alexander Fabisch, Wadhah Zai El Amri, Chandandeep Singh, Nicolás Navarro-Guerrero  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.05415)  
+
+**Abstract**: Human manipulation skills represent a pinnacle of their voluntary motor functions, requiring the coordination of many degrees of freedom and processing of high-dimensional sensor input to achieve such a high level of dexterity. Thus, we set out to answer whether the human hand, with its associated biomechanical properties, sensors, and control mechanisms, is an ideal that we should strive for in robotics-do we really need anthropomorphic robotic hands?
+This survey can help practitioners to make the trade-off between hand complexity and potential manipulation skills. We provide an overview of the human hand, a comparison of commercially available robotic and prosthetic hands, and a systematic review of hand mechanisms and skills that they are capable of. This leads to follow-up questions. What is the minimum requirement for mechanisms and sensors to implement most skills that a robot needs? What is missing to reach human-level dexterity? Can we improve upon human dexterity?
+Although complex five-fingered hands are often used as the ultimate goal for robotic manipulators, they are not necessary for all tasks. We found that wrist flexibility and finger abduction/adduction are important for manipulation capabilities. On the contrary, increasing the number of fingers, actuators, or degrees of freedom is often not necessary. Three fingers are a good compromise between simplicity and dexterity. Non-anthropomorphic hand designs with two opposing pairs of fingers or human hands with six fingers can further increase dexterity, suggesting that the human hand may not be the optimum. 
+
+**Abstract (ZH)**: 人类操作技能代表了他们自愿运动功能的顶峰，需要协调多个自由度并处理高维传感器输入以达到如此高的灵巧性。因此，我们想了解人类手部，包括其生物力学特性、传感器和控制机制，是否是我们应该追求的机器人标准——我们真的需要类人手部吗？ 
+
+---
+# Computational Design and Fabrication of Modular Robots with Untethered Control 
+
+**Title (ZH)**: 无缆控制的模块化机器人计算设计与制造 
+
+**Authors**: Manas Bhargava, Takefumi Hiraki, Malina Strugaru, Michal Piovarci, Chiara Daraio, Daisuke Iwai, Bernd Bickel  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.05410)  
+
+**Abstract**: Natural organisms use distributed actuation via their musculoskeletal systems to adapt their gait for traversing diverse terrains or to morph their bodies to perform varied tasks. A longstanding challenge in the field of robotics is to mimic this extensive adaptability and range of motion. This has led humans to develop various soft robotic systems that emulate natural organisms. However, such systems are generally optimized for a single functionality, lack the ability to change form or function on demand, or are often tethered to bulky control systems. To address these challenges, we present our framework for designing and controlling robots that mimic nature's blueprint by utilizing distributed actuation. We propose a novel building block that combines 3D-printed bones with liquid crystal elastomer (LCE) muscles as lightweight actuators and enables the modular assembly of musculoskeletal robots. We developed LCE rods that contract in response to infrared radiation, thereby achieving local and untethered control over the distributed network of bones, which in turn results in global deformation of the robot. Furthermore, to capitalize on the extensive design space, we develop two computational tools: one to optimize the robot's skeletal graph, enabling multiple target deformations, and another to co-optimize the skeletal designs and control gaits to achieve target locomotion. We validate our system by building several robots that show complex shape morphing, varying control schemes, and adaptability to their environment. Our system integrates advances in modular material building, untethered and distributed control, and computational design to introduce a new generation of robots that brings us closer to the capabilities of living organisms. 
+
+**Abstract (ZH)**: 自然生物通过肌骨骼系统利用分布式驱动适应不同地形的步态，或通过变形身体执行不同任务。机器人领域长久以来的一个挑战是模仿这种广泛的适应性和运动范围。人类为此开发了各种仿生软体机器人，但这些系统通常优化单一功能，缺乏按需改变形态或功能的能力，或者常常依赖笨重的控制系统。为解决这些挑战，我们提出了一种设计和控制仿生机器人的框架，利用分布式驱动模拟自然的蓝图。我们提出了一种新型构建模块，将3D打印骨头与液晶弹性体(LCE)肌肉结合，作为轻量驱动器，实现模块化组装肌骨骼机器人。我们开发了响应红外辐射收缩的LCE杆，从而在分布式骨骼网络中实现局部且无绳的控制，进而导致机器人的整体变形。此外，为了充分利用广泛的设计空间，我们开发了两种计算工具：一种优化机器人的骨骼图，使机体能够实现多种目标变形，另一种协同优化骨骼设计和控制步态，以实现目标移动。我们通过构建多个展示复杂形状变形、不同控制方案及环境适应性的机器人，验证了我们的系统。我们的系统整合了模块化材料构建、无绳分布控制和计算设计的最新进展，引入了一代新的机器人，使其更加接近生物体的能力。 
+
+---
+# A Multi-view Landmark Representation Approach with Application to GNSS-Visual-Inertial Odometry 
+
+**Title (ZH)**: 多视角地标表示方法及其在GNSS-视觉-惯性里程计中的应用 
+
+**Authors**: Tong Hua, Jiale Han, Wei Ouyang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.05368)  
+
+**Abstract**: Invariant Extended Kalman Filter (IEKF) has been a significant technique in vision-aided sensor fusion. However, it usually suffers from high computational burden when jointly optimizing camera poses and the landmarks. To improve its efficiency and applicability for multi-sensor fusion, we present a multi-view pose-only estimation approach with its application to GNSS-Visual-Inertial Odometry (GVIO) in this paper. Our main contribution is deriving a visual measurement model which directly associates landmark representation with multiple camera poses and observations. Such a pose-only measurement is proven to be tightly-coupled between landmarks and poses, and maintain a perfect null space that is independent of estimated poses. Finally, we apply the proposed approach to a filter based GVIO with a novel feature management strategy. Both simulation tests and real-world experiments are conducted to demonstrate the superiority of the proposed method in terms of efficiency and accuracy. 
+
+**Abstract (ZH)**: Invariant 扩展卡尔曼滤波(INEKF)在视觉辅助传感器融合中是一项重要技术。然而，它在同时优化相机姿态和特征点时通常会面临较高的计算负担。为了提高其效率和多传感器融合的适用性，本文提出了一种多视图姿态-only估计方法，并将其应用于GNSS-视觉-惯性里程计(GVIO)。本文的主要贡献是推导出一种视觉测量模型，该模型直接将特征点表示与多个相机姿态和观测值关联起来。这种姿态-only测量模型被证明在特征点与姿态之间紧密耦合，并且保持一个与估计姿态无关的理想零空间。最后，我们将所提出的方法应用于一个基于滤波的新型特征管理策略的GNSS-视觉-惯性里程计系统。通过仿真测试和实际实验验证了所提出方法在效率和准确性方面的优越性。 
+
+---
+# From Canada to Japan: How 10,000 km Affect User Perception in Robot Teleoperation 
+
+**Title (ZH)**: 从加拿大到日本：10,000公里如何影响机器人远程操作的用户感知 
+
+**Authors**: Siméon Capy, Thomas M. Kwok, Kevin Joseph, Yuichiro Kawasumi, Koichi Nagashima, Tomoya Sasaki, Yue Hu, Eiichi Yoshida  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.05143)  
+
+**Abstract**: Robot teleoperation (RTo) has emerged as a viable alternative to local control, particularly when human intervention is still necessary. This research aims to study the distance effect on user perception in RTo, exploring the potential of teleoperated robots for older adult care. We propose an evaluation of non-expert users' perception of long-distance RTo, examining how their perception changes before and after interaction, as well as comparing it to that of locally operated robots. We have designed a specific protocol consisting of multiple questionnaires, along with a dedicated software architecture using the Robotics Operating System (ROS) and Unity. The results revealed no statistically significant differences between the local and remote robot conditions, suggesting that robots may be a viable alternative to traditional local control. 
+
+**Abstract (ZH)**: 远程操控（RTo）已成为本地控制的可行替代方案，特别是在人类干预仍然必要的时候。本研究旨在研究远程操控距离对用户体验的影响，探索远程操控机器人在老年人照护中的潜在价值。我们提出了一项评估非专业用户对远程操控长距离体验感知的研究，考察其在交互前后感知的变化，并将其与本地操作机器人的感知进行比较。我们设计了一项特定的协议，包括多个问卷调查，并采用Robotics Operating System (ROS) 和Unity构建了专用的软件架构。结果表明，本地和远程机器人之间没有统计学上的显著差异，这表明机器人可能是传统本地控制的可行替代方案。 
+
+---
+# A Vision-Based Collision Sensing Method for Stable Circular Object Grasping with A Soft Gripper System 
+
+**Title (ZH)**: 基于视觉的碰撞感知方法：用于软夹持系统稳定圆柱形物体抓取 
+
+**Authors**: Boyang Zhang, Jiahui Zuo, Zeyu Duan, Fumin Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.05040)  
+
+**Abstract**: External collisions to robot actuators typically pose risks to grasping circular objects. This work presents a vision-based sensing module capable of detecting collisions to maintain stable grasping with a soft gripper system. The system employs an eye-in-palm camera with a broad field of view to simultaneously monitor the motion of fingers and the grasped object. Furthermore, we have developed a collision-rich grasping strategy to ensure the stability and security of the entire dynamic grasping process. A physical soft gripper was manufactured and affixed to a collaborative robotic arm to evaluate the performance of the collision detection mechanism. An experiment regarding testing the response time of the mechanism confirmed the system has the capability to react to the collision instantaneously. A dodging test was conducted to demonstrate the gripper can detect the direction and scale of external collisions precisely. 
+
+**Abstract (ZH)**: 基于视觉的碰撞检测模块用于维持软 gripper 系统抓取圆柱形物体过程中的稳定抓取 
+
+---
+# Benchmarking Shortcutting Techniques for Multi-Robot-Arm Motion Planning 
+
+**Title (ZH)**: 多机器人臂运动规划中捷径技术的基准测试 
+
+**Authors**: Philip Huang, Yorai Shaoul, Jiaoyang Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.05027)  
+
+**Abstract**: Generating high-quality motion plans for multiple robot arms is challenging due to the high dimensionality of the system and the potential for inter-arm collisions. Traditional motion planning methods often produce motions that are suboptimal in terms of smoothness and execution time for multi-arm systems. Post-processing via shortcutting is a common approach to improve motion quality for efficient and smooth execution. However, in multi-arm scenarios, optimizing one arm's motion must not introduce collisions with other arms. Although existing multi-arm planning works often use some form of shortcutting techniques, their exact methodology and impact on performance are often vaguely described. In this work, we present a comprehensive study quantitatively comparing existing shortcutting methods for multi-arm trajectories across diverse simulated scenarios. We carefully analyze the pros and cons of each shortcutting method and propose two simple strategies for combining these methods to achieve the best performance-runtime tradeoff. Video, code, and dataset are available at this https URL. 
+
+**Abstract (ZH)**: 多臂机器人系统中生成高质量的运动规划是一项挑战，由于系统的高维度和潜在的臂间碰撞。传统的运动规划方法往往会产生在多臂系统中不理想的平滑度和执行时间。通过捷径化后处理来提高运动质量以实现高效和平滑的执行是一种常见的方法。然而，在多臂场景中，优化一个臂的运动必须不会导致与其他臂发生碰撞。尽管现有的多臂规划工作经常使用某种形式的捷径化技术，但它们的具体方法及其对性能的影响通常描述模糊。在本工作中，我们对现有捷径化方法在多种仿真场景下的多臂轨迹进行定量比较，详细分析了每种捷径化方法的优缺点，并提出两种简单的策略来实现最佳的性能-时间-tradeoff。视频、代码和数据集可在以下链接找到：this https URL。 
+
+---
+# Coarse-to-Fine Joint Registration of MR and Ultrasound Images via Imaging Style Transfer 
+
+**Title (ZH)**: 从粗到细的MR和超声图像联合配准及成像风格迁移 
+
+**Authors**: Junyi Wang, Xi Zhu, Yikun Guo, Zixi Wang, Haichuan Gao, Le Zhang, Fan Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.05240)  
+
+**Abstract**: We developed a pipeline for registering pre-surgery Magnetic Resonance (MR) images and post-resection Ultrasound (US) images. Our approach leverages unpaired style transfer using 3D CycleGAN to generate synthetic T1 images, thereby enhancing registration performance. Additionally, our registration process employs both affine and local deformable transformations for a coarse-to-fine registration. The results demonstrate that our approach improves the consistency between MR and US image pairs in most cases. 
+
+**Abstract (ZH)**: 我们开发了一种术前磁共振(MR)图像和术后超声(US)图像配准的管道。我们的方法利用3D CycleGAN进行未配对风格转换，生成合成的T1图像，从而提高配准性能。此外，我们的配准过程采用粗到细的方式，结合使用仿射变换和局部可变形变换。结果表明，在大多数情况下，我们的方法提高了MR和US图像配对的一致性。 
+
+---
