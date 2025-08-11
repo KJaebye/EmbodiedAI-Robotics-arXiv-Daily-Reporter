@@ -1,0 +1,307 @@
+# Shortcut Learning in Generalist Robot Policies: The Role of Dataset Diversity and Fragmentation 
+
+**Title (ZH)**: 通用机器人策略中的捷径学习：数据集多样性与碎片化的作用 
+
+**Authors**: Youguang Xing, Xu Luo, Junlin Xie, Lianli Gao, Hengtao Shen, Jingkuan Song  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.06426)  
+
+**Abstract**: Generalist robot policies trained on large-scale datasets such as Open X-Embodiment (OXE) demonstrate strong performance across a wide range of tasks. However, they often struggle to generalize beyond the distribution of their training data. In this paper, we investigate the underlying cause of this limited generalization capability. We identify shortcut learning -- the reliance on task-irrelevant features -- as a key impediment to generalization. Through comprehensive theoretical and empirical analysis, we uncover two primary contributors to shortcut learning: (1) limited diversity within individual sub-datasets, and (2) significant distributional disparities across sub-datasets, leading to dataset fragmentation. These issues arise from the inherent structure of large-scale datasets like OXE, which are typically composed of multiple sub-datasets collected independently across varied environments and embodiments. Our findings provide critical insights into dataset collection strategies that can reduce shortcut learning and enhance the generalization ability of generalist robot policies. Moreover, in scenarios where acquiring new large-scale data is impractical, we demonstrate that carefully selected robotic data augmentation strategies can effectively reduce shortcut learning in existing offline datasets, thereby improving generalization capabilities of generalist robot policies, e.g., $\pi_0$, in both simulation and real-world environments. More information at this https URL. 
+
+**Abstract (ZH)**: 大型数据集如Open X-Embodiment (OXE)训练的通用机器人策略在广泛的任务中表现出强劲性能，但往往难以超出训练数据分布进行泛化。本文探讨了这种有限泛化能力的根本原因。我们认定，依赖与任务无关特征的“捷径学习”是阻碍泛化的关键因素。通过全面的理论和实证分析，我们发现两种主要促成捷径学习的因素：（1）单个子数据集内部的有限多样性，以及（2）子数据集之间的显著分布差异，导致数据集碎片化。这些问题源于大型数据集如OXE的固有结构，这些数据集通常由在不同环境和实体下独立收集的多个子数据集组成。我们的发现为减少捷径学习并提升通用机器人策略泛化能力的采样策略提供了关键见解。此外，在获取新大规模数据不太实际的情况下，我们展示了精心选择的机器人数据扩增策略如何有效减少现有离线数据集中的捷径学习，从而提高通用机器人策略的泛化能力，例如$\pi_0$，在模拟和真实环境中的泛化能力。更多信息，请访问此链接。 
+
+---
+# Towards Balanced Behavior Cloning from Imbalanced Datasets 
+
+**Title (ZH)**: 不平衡数据集上的平衡行为克隆研究 
+
+**Authors**: Sagar Parekh, Heramb Nemlekar, Dylan P. Losey  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.06319)  
+
+**Abstract**: Robots should be able to learn complex behaviors from human demonstrations. In practice, these human-provided datasets are inevitably imbalanced: i.e., the human demonstrates some subtasks more frequently than others. State-of-the-art methods default to treating each element of the human's dataset as equally important. So if -- for instance -- the majority of the human's data focuses on reaching a goal, and only a few state-action pairs move to avoid an obstacle, the learning algorithm will place greater emphasis on goal reaching. More generally, misalignment between the relative amounts of data and the importance of that data causes fundamental problems for imitation learning approaches. In this paper we analyze and develop learning methods that automatically account for mixed datasets. We formally prove that imbalanced data leads to imbalanced policies when each state-action pair is weighted equally; these policies emulate the most represented behaviors, and not the human's complex, multi-task demonstrations. We next explore algorithms that rebalance offline datasets (i.e., reweight the importance of different state-action pairs) without human oversight. Reweighting the dataset can enhance the overall policy performance. However, there is no free lunch: each method for autonomously rebalancing brings its own pros and cons. We formulate these advantages and disadvantages, helping other researchers identify when each type of approach is most appropriate. We conclude by introducing a novel meta-gradient rebalancing algorithm that addresses the primary limitations behind existing approaches. Our experiments show that dataset rebalancing leads to better downstream learning, improving the performance of general imitation learning algorithms without requiring additional data collection. See our project website: this https URL. 
+
+**Abstract (ZH)**: 机器人应该能够从人类示范中学习复杂行为。实际上，这些由人类提供的数据集不可避免地存在不平衡：即人类对某些子任务的演示频率高于其他子任务。当前最先进的方法默认认为人类数据集中的每一个元素都是同样重要的。因此，如果——例如——大多数人类数据集中在目标导向行为上，而只有少数状态-动作对涉及避开障碍物，那么学习算法将更重视目标导向行为。更一般地说，数据量与数据重要性之间的不匹配会导致模仿学习方法出现根本性问题。在本文中，我们分析并开发了能够自动处理混合数据集的学习方法。我们正式证明，当每一个状态-动作对都被同等加权时，不平衡的数据会导致生成不平衡的策略；这些策略模拟的是最常出现的行为，并非人类复杂、多任务的示范。我们接下来探索算法，这些算法能够在无人监管的情况下重新平衡离线数据集（即重新加权不同状态-动作对的重要性）。重新加权数据集可以提升整体策略表现，但没有任何免费午餐：每种自动重新平衡的方法都有其优势和劣势。我们阐明了这些优缺点，帮助其他研究人员确定每种方法最合适的情形。我们最后介绍了一种新颖的元梯度重新平衡算法，以解决现有方法背后的主要局限性。我们的实验表明，数据集重新平衡能够提高下游学习效果，改进一般模仿学习算法的表现而无需额外的数据收集工作。更多信息请访问我们的项目网站：this https URL。 
+
+---
+# Evaluating Robot Program Performance with Power Consumption Driven Metrics in Lightweight Industrial Robots 
+
+**Title (ZH)**: 基于能耗驱动指标评估轻型工业机器人程序性能 
+
+**Authors**: Juan Heredia, Emil Stubbe Kolvig-Raun, Sune Lundo Sorensen, Mikkel Baun Kjaergaard  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.06295)  
+
+**Abstract**: The code performance of industrial robots is typically analyzed through CPU metrics, which overlook the physical impact of code on robot behavior. This study introduces a novel framework for assessing robot program performance from an embodiment perspective by analyzing the robot's electrical power profile. Our approach diverges from conventional CPU based evaluations and instead leverages a suite of normalized metrics, namely, the energy utilization coefficient, the energy conversion metric, and the reliability coefficient, to capture how efficiently and reliably energy is used during task execution. Complementing these metrics, the established robot wear metric provides further insight into long term reliability. Our approach is demonstrated through an experimental case study in machine tending, comparing four programs with diverse strategies using a UR5e robot. The proposed metrics directly compare and categorize different robot programs, regardless of the specific task, by linking code performance to its physical manifestation through power consumption patterns. Our results reveal the strengths and weaknesses of each strategy, offering actionable insights for optimizing robot programming practices. Enhancing energy efficiency and reliability through this embodiment centric approach not only improves individual robot performance but also supports broader industrial objectives such as sustainable manufacturing and cost reduction. 
+
+**Abstract (ZH)**: 基于实体视角的工业机器人程序性能评估框架：通过电气功率轮廓分析能量使用效率和可靠性 
+
+---
+# ADPro: a Test-time Adaptive Diffusion Policy for Robot Manipulation via Manifold and Initial Noise Constraints 
+
+**Title (ZH)**: ADPro：基于流形和起始噪声约束的运行时自适应扩散策略用于机器人操作 
+
+**Authors**: Zezeng Li, Rui Yang, Ruochen Chen, ZhongXuan Luo, Liming Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.06266)  
+
+**Abstract**: Diffusion policies have recently emerged as a powerful class of visuomotor controllers for robot manipulation, offering stable training and expressive multi-modal action modeling. However, existing approaches typically treat action generation as an unconstrained denoising process, ignoring valuable a priori knowledge about geometry and control structure. In this work, we propose the Adaptive Diffusion Policy (ADP), a test-time adaptation method that introduces two key inductive biases into the diffusion. First, we embed a geometric manifold constraint that aligns denoising updates with task-relevant subspaces, leveraging the fact that the relative pose between the end-effector and target scene provides a natural gradient direction, and guiding denoising along the geodesic path of the manipulation manifold. Then, to reduce unnecessary exploration and accelerate convergence, we propose an analytically guided initialization: rather than sampling from an uninformative prior, we compute a rough registration between the gripper and target scenes to propose a structured initial noisy action. ADP is compatible with pre-trained diffusion policies and requires no retraining, enabling test-time adaptation that tailors the policy to specific tasks, thereby enhancing generalization across novel tasks and environments. Experiments on RLBench, CALVIN, and real-world dataset show that ADPro, an implementation of ADP, improves success rates, generalization, and sampling efficiency, achieving up to 25% faster execution and 9% points over strong diffusion baselines. 
+
+**Abstract (ZH)**: 自适应扩散策略：一种适用于机器人操作的测试时自适应方法 
+
+---
+# REBot: Reflexive Evasion Robot for Instantaneous Dynamic Obstacle Avoidance 
+
+**Title (ZH)**: REBot: 具有即时动态障碍避让能力的反射性规避机器人 
+
+**Authors**: Zihao Xu, Ce Hao, Chunzheng Wang, Kuankuan Sima, Fan Shi, Jin Song Dong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.06229)  
+
+**Abstract**: Dynamic obstacle avoidance (DOA) is critical for quadrupedal robots operating in environments with moving obstacles or humans. Existing approaches typically rely on navigation-based trajectory replanning, which assumes sufficient reaction time and leading to fails when obstacles approach rapidly. In such scenarios, quadrupedal robots require reflexive evasion capabilities to perform instantaneous, low-latency maneuvers. This paper introduces Reflexive Evasion Robot (REBot), a control framework that enables quadrupedal robots to achieve real-time reflexive obstacle avoidance. REBot integrates an avoidance policy and a recovery policy within a finite-state machine. With carefully designed learning curricula and by incorporating regularization and adaptive rewards, REBot achieves robust evasion and rapid stabilization in instantaneous DOA tasks. We validate REBot through extensive simulations and real-world experiments, demonstrating notable improvements in avoidance success rates, energy efficiency, and robustness to fast-moving obstacles. Videos and appendix are available on this https URL. 
+
+**Abstract (ZH)**: 四足机器人动态障碍物回避：Reflexive Evasion Robot (REBot) 实时反应性障碍物回避控制框架 
+
+---
+# Affordance-R1: Reinforcement Learning for Generalizable Affordance Reasoning in Multimodal Large Language Model 
+
+**Title (ZH)**: 支撑性推理-R1：多模态大型语言模型中的可泛化支撑性学习推理 
+
+**Authors**: Hanqing Wang, Shaoyang Wang, Yiming Zhong, Zemin Yang, Jiamin Wang, Zhiqing Cui, Jiahao Yuan, Yifan Han, Mingyu Liu, Yuexin Ma  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.06206)  
+
+**Abstract**: Affordance grounding focuses on predicting the specific regions of objects that are associated with the actions to be performed by robots. It plays a vital role in the fields of human-robot interaction, human-object interaction, embodied manipulation, and embodied perception. Existing models often neglect the affordance shared among different objects because they lack the Chain-of-Thought(CoT) reasoning abilities, limiting their out-of-domain (OOD) generalization and explicit reasoning capabilities. To address these challenges, we propose Affordance-R1, the first unified affordance grounding framework that integrates cognitive CoT guided Group Relative Policy Optimization (GRPO) within a reinforcement learning paradigm. Specifically, we designed a sophisticated affordance function, which contains format, perception, and cognition rewards to effectively guide optimization directions. Furthermore, we constructed a high-quality affordance-centric reasoning dataset, ReasonAff, to support training. Trained exclusively via reinforcement learning with GRPO and without explicit reasoning data, Affordance-R1 achieves robust zero-shot generalization and exhibits emergent test-time reasoning capabilities. Comprehensive experiments demonstrate that our model outperforms well-established methods and exhibits open-world generalization. To the best of our knowledge, Affordance-R1 is the first to integrate GRPO-based RL with reasoning into affordance reasoning. The code of our method and our dataset is released on this https URL. 
+
+**Abstract (ZH)**: 面向物体的具体区域预测，以执行机器人所需动作，这种能力被称为效能接地。效能接地在人机交互、人机物交互、体现式操作和体现式感知等领域发挥着重要作用。现有的模型往往忽略了不同物体之间共享的效能，因为它们缺乏链式思考(CoT)推理能力，限制了它们的域外泛化能力和显式推理能力。为了解决这些问题，我们提出了Affordance-R1，这是首个将认知CoT引导下的组相对策略优化( GRPO)统一集成到强化学习框架中的效能接地框架。具体而言，我们设计了一种复杂的效能函数，包含格式、感知和认知奖励，以有效引导优化方向。此外，我们构建了一个高质量的以效能为中心的推理数据集ReasonAff，以支持训练。仅通过强化学习和GRPO训练，且未使用显式推理数据，Affordance-R1实现了稳健的零样本泛化，并表现出测试时的推理能力。全面的实验表明，我们的模型优于已建立的方法，并展现了开放世界的泛化能力。据我们所知，Affordance-R1是首个将基于GRPO的强化学习与推理结合到效能推理中的方法。我们的方法代码和数据集可在以下链接获取。 
+
+---
+# Beyond Constant Parameters: Hyper Prediction Models and HyperMPC 
+
+**Title (ZH)**: 超越恒定参数：超前预测模型与超前MPC 
+
+**Authors**: Jan Węgrzynowski, Piotr Kicki, Grzegorz Czechmanowski, Maciej Krupka, Krzysztof Walas  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.06181)  
+
+**Abstract**: Model Predictive Control (MPC) is among the most widely adopted and reliable methods for robot control, relying critically on an accurate dynamics model. However, existing dynamics models used in the gradient-based MPC are limited by computational complexity and state representation. To address this limitation, we propose the Hyper Prediction Model (HyperPM) - a novel approach in which we project the unmodeled dynamics onto a time-dependent dynamics model. This time-dependency is captured through time-varying model parameters, whose evolution over the MPC prediction horizon is learned using a neural network. Such formulation preserves the computational efficiency and robustness of the base model while equipping it with the capacity to anticipate previously unmodeled phenomena. We evaluated the proposed approach on several challenging systems, including real-world F1TENTH autonomous racing, and demonstrated that it significantly reduces long-horizon prediction errors. Moreover, when integrated within the MPC framework (HyperMPC), our method consistently outperforms existing state-of-the-art techniques. 
+
+**Abstract (ZH)**: 基于预测模型的控制（HyperPM）在机器人控制中的应用：一种通过时间依赖动态模型投影未建模动态的新方法 
+
+---
+# Bounding Distributional Shifts in World Modeling through Novelty Detection 
+
+**Title (ZH)**: 通过新颖性检测界定了世界建模中的分布变化。 
+
+**Authors**: Eric Jing, Abdeslam Boularias  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.06096)  
+
+**Abstract**: Recent work on visual world models shows significant promise in latent state dynamics obtained from pre-trained image backbones. However, most of the current approaches are sensitive to training quality, requiring near-complete coverage of the action and state space during training to prevent divergence during inference. To make a model-based planning algorithm more robust to the quality of the learned world model, we propose in this work to use a variational autoencoder as a novelty detector to ensure that proposed action trajectories during planning do not cause the learned model to deviate from the training data distribution. To evaluate the effectiveness of this approach, a series of experiments in challenging simulated robot environments was carried out, with the proposed method incorporated into a model-predictive control policy loop extending the DINO-WM architecture. The results clearly show that the proposed method improves over state-of-the-art solutions in terms of data efficiency. 
+
+**Abstract (ZH)**: 近期关于视觉世界模型的研究显示，从预训练图像骨干网络中获取的潜在状态动力学具有显著前景。然而，目前大多数方法对训练质量敏感，需要在训练过程中几乎完全覆盖动作和状态空间，以防止推理过程中出现发散。为了使基于模型的规划算法对所学习的世界模型的质量更加鲁棒，本文提出使用变分自编码器作为新颖性检测器，确保在规划过程中提出的动作轨迹不会使学习到的模型偏离训练数据分布。为了评估该方法的有效性，我们在具有挑战性的模拟机器人环境中进行了一系列实验，将所提出的方法整合到一个扩展DINO-WM架构的模型预测控制策略环中。实验结果明确显示，所提出的方法在数据效率方面优于现有解决方案。 
+
+---
+# Incremental Language Understanding for Online Motion Planning of Robot Manipulators 
+
+**Title (ZH)**: 基于增量语言理解的机器人 manipulator 在线运动规划 
+
+**Authors**: Mitchell Abrams, Thies Oelerich, Christian Hartl-Nesic, Andreas Kugi, Matthias Scheutz  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.06095)  
+
+**Abstract**: Human-robot interaction requires robots to process language incrementally, adapting their actions in real-time based on evolving speech input. Existing approaches to language-guided robot motion planning typically assume fully specified instructions, resulting in inefficient stop-and-replan behavior when corrections or clarifications occur. In this paper, we introduce a novel reasoning-based incremental parser which integrates an online motion planning algorithm within the cognitive architecture. Our approach enables continuous adaptation to dynamic linguistic input, allowing robots to update motion plans without restarting execution. The incremental parser maintains multiple candidate parses, leveraging reasoning mechanisms to resolve ambiguities and revise interpretations when needed. By combining symbolic reasoning with online motion planning, our system achieves greater flexibility in handling speech corrections and dynamically changing constraints. We evaluate our framework in real-world human-robot interaction scenarios, demonstrating online adaptions of goal poses, constraints, or task objectives. Our results highlight the advantages of integrating incremental language understanding with real-time motion planning for natural and fluid human-robot collaboration. The experiments are demonstrated in the accompanying video at this http URL. 
+
+**Abstract (ZH)**: 人类-机器人交互需要机器人基于不断演化的语音输入进行增量语言处理，并实时调整其行动。现有的基于语言的机器人运动规划方法通常假设完整的指令，这会导致在出现修正或澄清时产生不高效的暂停和重新规划行为。本文介绍了融合在线运动规划算法的认知架构中的一种新颖的基于推理的增量解析器。我们的方法使机器人能够对动态语言输入进行连续适应，无需重新启动即可更新运动计划。增量解析器维护多个候选解析，并利用推理机制在需要时解决歧义并修订解释。通过结合符号推理与在线运动规划，我们的系统在处理语音修正和动态变化的约束方面表现出更大的灵活性。我们在实际的人机交互场景中评估了我们的框架，展示了对目标姿态、约束或任务目标的在线适应。我们的结果突显了将增量语言理解和实时运动规划集成到自然流畅的人机协作中的优势。实验详细情况请参见附带的视频。 
+
+---
+# Social and Telepresence Robots for Accessibility and Inclusion in Small Museums 
+
+**Title (ZH)**: 社交机器人和远程存在机器人在小型博物馆中的可达性和包容性应用 
+
+**Authors**: Nello Balossino, Rossana Damiano, Cristina Gena, Alberto Lillo, Anna Maria Marras, Claudio Mattutino, Antonio Pizzo, Alessia Prin, Fabiana Vernero  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.05946)  
+
+**Abstract**: There are still many museums that present accessibility barriers, particularly regarding perceptual, cultural, and cognitive aspects. This is especially evident in low-density population areas. The aim of the ROBSO-PM project is to improve the accessibility of small museums through the use of social robots and social telepresence robots, focusing on three museums as case studies: the Museum of the Holy Shroud in Turin, a small but globally known institution, and two lesser known mountain museums: the Museum of the Champlas du Col Carnival and the Pragelato Museum of Alpine Peoples' Costumes and Traditions. The project explores two main applications for robots: as guides supporting inclusive visits for foreign or disabled visitors, and as telepresence tools allowing people with limited mobility to access museums remotely. From a research perspective, key topics include storytelling, robot personality, empathy, personalization, and, in the case of telepresence, collaboration between the robot and the person, with clearly defined roles and autonomy. 
+
+**Abstract (ZH)**: ROBSO-PM项目旨在通过使用社会机器人和社会远程存在机器人改善低密度人口区域小型博物馆的可达性，以Turin圣lös垂幕博物馆、Champlas du Col Carnival博物馆和Pragelato山地民族服饰与传统博物馆为案例进行研究。该项目探索了两类主要应用：作为导览机器人支持包容性参观，如为外国或残障游客服务；以及作为远程存在工具，使行动不便的人士能够远程访问博物馆。从研究视角来看，关键主题包括故事叙述、机器人个性、同理心、个性化，以及在远程存在的情况下机器人与人员之间的合作与明确分工。 
+
+---
+# Latent Policy Barrier: Learning Robust Visuomotor Policies by Staying In-Distribution 
+
+**Title (ZH)**: 潜在策略障碍：通过保持在分布内学习稳健的视觉运动策略 
+
+**Authors**: Zhanyi Sun, Shuran Song  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.05941)  
+
+**Abstract**: Visuomotor policies trained via behavior cloning are vulnerable to covariate shift, where small deviations from expert trajectories can compound into failure. Common strategies to mitigate this issue involve expanding the training distribution through human-in-the-loop corrections or synthetic data augmentation. However, these approaches are often labor-intensive, rely on strong task assumptions, or compromise the quality of imitation. We introduce Latent Policy Barrier, a framework for robust visuomotor policy learning. Inspired by Control Barrier Functions, LPB treats the latent embeddings of expert demonstrations as an implicit barrier separating safe, in-distribution states from unsafe, out-of-distribution (OOD) ones. Our approach decouples the role of precise expert imitation and OOD recovery into two separate modules: a base diffusion policy solely on expert data, and a dynamics model trained on both expert and suboptimal policy rollout data. At inference time, the dynamics model predicts future latent states and optimizes them to stay within the expert distribution. Both simulated and real-world experiments show that LPB improves both policy robustness and data efficiency, enabling reliable manipulation from limited expert data and without additional human correction or annotation. 
+
+**Abstract (ZH)**: 基于行为克隆训练的视觉运动策略易受 covariate shift 影响，细微的专家轨迹偏差可能导致失败。我们提出了一种名为潜策略障碍（Latent Policy Barrier, LPB）的框架，用于稳健的视觉运动策略学习。LPB 受控制障碍函数启发，将专家演示的潜在嵌入视为安全、同分布状态与不安全、异分布状态之间的隐式障碍。我们的方法将精确的专家模仿和异分布恢复的任务分解为两个独立模块：基于专家数据的基扩散策略和同时基于专家数据和次优策略滚动数据训练的动力学模型。在推理时，动力学模型预测未来潜在状态并优化它们以保持在专家分布内。实验结果表明，LPB 提高了策略的稳健性和数据效率，能够在有限的专家数据下实现可靠的操纵，无需额外的人工纠正或标注。 
+
+---
+# Integrating Vision Foundation Models with Reinforcement Learning for Enhanced Object Interaction 
+
+**Title (ZH)**: 将视觉基础模型与强化学习集成以增强物体交互 
+
+**Authors**: Ahmad Farooq, Kamran Iqbal  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.05838)  
+
+**Abstract**: This paper presents a novel approach that integrates vision foundation models with reinforcement learning to enhance object interaction capabilities in simulated environments. By combining the Segment Anything Model (SAM) and YOLOv5 with a Proximal Policy Optimization (PPO) agent operating in the AI2-THOR simulation environment, we enable the agent to perceive and interact with objects more effectively. Our comprehensive experiments, conducted across four diverse indoor kitchen settings, demonstrate significant improvements in object interaction success rates and navigation efficiency compared to a baseline agent without advanced perception. The results show a 68% increase in average cumulative reward, a 52.5% improvement in object interaction success rate, and a 33% increase in navigation efficiency. These findings highlight the potential of integrating foundation models with reinforcement learning for complex robotic tasks, paving the way for more sophisticated and capable autonomous agents. 
+
+**Abstract (ZH)**: 本文提出了一种将视觉基础模型与强化学习相结合的新方法，以增强模拟环境中物体交互能力。通过在AI2-THOR仿真环境中结合使用Segment Anything Model (SAM)、YOLOv5与 proximal policy optimization (PPO) 代理，使代理能够更有效地感知和交互物体。我们在四个不同的室内厨房场景中进行了全面实验，结果显示与没有高级感知的 baseline 代理相比，在物体交互成功率和导航效率方面均取得了显著改进。平均累积奖励提高了68%，物体交互成功率提高了52.5%，导航效率提高了33%。这些发现突显了将基础模型与强化学习相结合在复杂机器人任务中的潜力，为开发更复杂和能力强的自主代理铺平了道路。 
+
+---
+# GMF-Drive: Gated Mamba Fusion with Spatial-Aware BEV Representation for End-to-End Autonomous Driving 
+
+**Title (ZH)**: GMF-Drive：具有空间 Awareness 摄影机与激光雷达融合表示的端到端自主驾驶 
+
+**Authors**: Jian Wang, Chaokang Jiang, Haitao Xu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.06113)  
+
+**Abstract**: Diffusion-based models are redefining the state-of-the-art in end-to-end autonomous driving, yet their performance is increasingly hampered by a reliance on transformer-based fusion. These architectures face fundamental limitations: quadratic computational complexity restricts the use of high-resolution features, and a lack of spatial priors prevents them from effectively modeling the inherent structure of Bird's Eye View (BEV) representations. This paper introduces GMF-Drive (Gated Mamba Fusion for Driving), an end-to-end framework that overcomes these challenges through two principled innovations. First, we supersede the information-limited histogram-based LiDAR representation with a geometrically-augmented pillar format encoding shape descriptors and statistical features, preserving critical 3D geometric details. Second, we propose a novel hierarchical gated mamba fusion (GM-Fusion) architecture that substitutes an expensive transformer with a highly efficient, spatially-aware state-space model (SSM). Our core BEV-SSM leverages directional sequencing and adaptive fusion mechanisms to capture long-range dependencies with linear complexity, while explicitly respecting the unique spatial properties of the driving scene. Extensive experiments on the challenging NAVSIM benchmark demonstrate that GMF-Drive achieves a new state-of-the-art performance, significantly outperforming DiffusionDrive. Comprehensive ablation studies validate the efficacy of each component, demonstrating that task-specific SSMs can surpass a general-purpose transformer in both performance and efficiency for autonomous driving. 
+
+**Abstract (ZH)**: 基于扩散的模型正在重新定义端到端自动驾驶的技术前沿，但它们的性能越来越受到基于变换器的融合依赖性的阻碍。这些架构面临着根本性的局限性：二次计算复杂性限制了高分辨率特征的使用，缺乏空间先验使它们难以有效地建模鸟瞰图（BEV）表示的固有结构。本文介绍了一种端到端框架GMF-Drive（门控-pillar格式融合用于驾驶），通过两大原则性创新克服了这些挑战。首先，我们用几何增强的pillar格式取代了信息有限的历史柱状LiDAR表示，编码形状描述符和统计特征，保留了关键的三维几何细节。其次，我们提出了一种新颖的分层门控mamba融合（GM-Fusion）架构，用高效的空间感知状态空间模型（SSM）替代了昂贵的变换器。我们的核心BEV-SSM利用方向序列和自适应融合机制以线性复杂度捕捉长程依赖性，同时明确尊重驾驶场景的独特空间属性。在具有挑战性的NAVSIM基准上的广泛实验表明，GMF-Drive实现了新的技术前沿性能，显著优于DiffusionDrive。全面的消融研究验证了每个组件的有效性，证明了任务特定的SSM在性能和效率方面可以超越通用的变换器，适用于自动驾驶。 
+
+---
+# ME$^3$-BEV: Mamba-Enhanced Deep Reinforcement Learning for End-to-End Autonomous Driving with BEV-Perception 
+
+**Title (ZH)**: ME$^3$-BEV：Mamba增强的基于BE
+user
+ME$^3$-BEV：Mamba增强的端到端深度强化学习自动驾驶与BEV感知 
+
+**Authors**: Siyi Lu, Run Liu, Dongsheng Yang, Lei He  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.06074)  
+
+**Abstract**: Autonomous driving systems face significant challenges in perceiving complex environments and making real-time decisions. Traditional modular approaches, while offering interpretability, suffer from error propagation and coordination issues, whereas end-to-end learning systems can simplify the design but face computational bottlenecks. This paper presents a novel approach to autonomous driving using deep reinforcement learning (DRL) that integrates bird's-eye view (BEV) perception for enhanced real-time decision-making. We introduce the \texttt{Mamba-BEV} model, an efficient spatio-temporal feature extraction network that combines BEV-based perception with the Mamba framework for temporal feature modeling. This integration allows the system to encode vehicle surroundings and road features in a unified coordinate system and accurately model long-range dependencies. Building on this, we propose the \texttt{ME$^3$-BEV} framework, which utilizes the \texttt{Mamba-BEV} model as a feature input for end-to-end DRL, achieving superior performance in dynamic urban driving scenarios. We further enhance the interpretability of the model by visualizing high-dimensional features through semantic segmentation, providing insight into the learned representations. Extensive experiments on the CARLA simulator demonstrate that \texttt{ME$^3$-BEV} outperforms existing models across multiple metrics, including collision rate and trajectory accuracy, offering a promising solution for real-time autonomous driving. 
+
+**Abstract (ZH)**: 自主驾驶系统在感知复杂环境和进行实时决策方面面临重大挑战。传统的模块化方法虽然具有可解释性，但存在错误传播和协调问题，而端到端学习系统可以简化设计但面临计算瓶颈。本文提出了一种使用深度强化学习（DRL）的新型自主驾驶方法，该方法整合了鸟瞰视图（BEV）感知，以增强实时决策能力。我们引入了Mamba-BEV模型，这是一种高效的时空特征提取网络，将基于BEV的感知与Mamba框架结合用于时序特征建模。这一集成使得系统能够在一个统一的坐标系中编码车辆周围的环境和道路特征，并准确建模长程依赖关系。在此基础上，我们提出了ME$^3$-BEV框架，该框架利用Mamba-BEV模型作为端到端DRL的特征输入，在动态城市驾驶场景中实现了卓越的性能。为进一步提高模型的可解释性，我们通过语义分割可视化高维特征，提供对学习表示的理解。在CARLA模拟器上的大量实验表明，ME$^3$-BEV在多个指标上优于现有模型，包括碰撞率和轨迹精度，为实时自主驾驶提供了有前景的解决方案。 
+
+---
+# PASG: A Closed-Loop Framework for Automated Geometric Primitive Extraction and Semantic Anchoring in Robotic Manipulation 
+
+**Title (ZH)**: PASG：一种用于机器人操作中自动几何原族提取和语义锚定的闭环框架 
+
+**Authors**: Zhihao Zhu, Yifan Zheng, Siyu Pan, Yaohui Jin, Yao Mu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.05976)  
+
+**Abstract**: The fragmentation between high-level task semantics and low-level geometric features remains a persistent challenge in robotic manipulation. While vision-language models (VLMs) have shown promise in generating affordance-aware visual representations, the lack of semantic grounding in canonical spaces and reliance on manual annotations severely limit their ability to capture dynamic semantic-affordance relationships. To address these, we propose Primitive-Aware Semantic Grounding (PASG), a closed-loop framework that introduces: (1) Automatic primitive extraction through geometric feature aggregation, enabling cross-category detection of keypoints and axes; (2) VLM-driven semantic anchoring that dynamically couples geometric primitives with functional affordances and task-relevant description; (3) A spatial-semantic reasoning benchmark and a fine-tuned VLM (Qwen2.5VL-PA). We demonstrate PASG's effectiveness in practical robotic manipulation tasks across diverse scenarios, achieving performance comparable to manual annotations. PASG achieves a finer-grained semantic-affordance understanding of objects, establishing a unified paradigm for bridging geometric primitives with task semantics in robotic manipulation. 
+
+**Abstract (ZH)**: 高阶任务语义与低级几何特征之间的碎片化问题仍然是机器人操作中的一个持久挑战。虽然视觉-语言模型（VLMs）在生成知觉aware视觉表示方面展现了潜力，但语义 anchors 缺乏在标准空间中的定位和对动态语义-知觉关系的依赖于手动注释的限制严重限制了其能力。为了解决这些问题，我们提出了一种名为Primitive-Aware Semantic Grounding (PASG) 的闭环框架，该框架引入了：（1）通过几何特征聚合实现自动基本形态提取，跨类别检测关键点和轴线；（2）由VLM驱动的语义锚定，动态连接几何基本形态与功能知觉和任务相关描述；（3）一种空间-语义推理基准和微调后的VLM（Qwen2.5VL-PA）。我们在多种场景下的实际机器人操作任务中展示了PASG的有效性，其性能与手动注释相当。PASG实现了更精细的物体语义-知觉理解，建立了将几何基本形态与机器人操作任务语义相统一的范式。 
+
+---
+# Safety of Embodied Navigation: A Survey 
+
+**Title (ZH)**: 基于实体导航的安全性：一种综述 
+
+**Authors**: Zixia Wang, Jia Hu, Ronghui Mu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.05855)  
+
+**Abstract**: As large language models (LLMs) continue to advance and gain influence, the development of embodied AI has accelerated, drawing significant attention, particularly in navigation scenarios. Embodied navigation requires an agent to perceive, interact with, and adapt to its environment while moving toward a specified target in unfamiliar settings. However, the integration of embodied navigation into critical applications raises substantial safety concerns. Given their deployment in dynamic, real-world environments, ensuring the safety of such systems is critical. This survey provides a comprehensive analysis of safety in embodied navigation from multiple perspectives, encompassing attack strategies, defense mechanisms, and evaluation methodologies. Beyond conducting a comprehensive examination of existing safety challenges, mitigation technologies, and various datasets and metrics that assess effectiveness and robustness, we explore unresolved issues and future research directions in embodied navigation safety. These include potential attack methods, mitigation strategies, more reliable evaluation techniques, and the implementation of verification frameworks. By addressing these critical gaps, this survey aims to provide valuable insights that can guide future research toward the development of safer and more reliable embodied navigation systems. Furthermore, the findings of this study have broader implications for enhancing societal safety and increasing industrial efficiency. 
+
+**Abstract (ZH)**: 随着大型语言模型（LLMs）的不断进步和影响力增强，嵌入式AI的发展加速，并在导航场景中引起了广泛关注。嵌入式导航需要代理在移动到指定目标的过程中感知、交互并适应其环境，尤其是在不熟悉的环境中。然而，将嵌入式导航整合到关键应用中引发了重大的安全问题。鉴于其在动态的实际环境中的部署，确保这类系统的安全性至关重要。本文综述了从多个角度对嵌入式导航中的安全性进行全面分析，涵盖了攻击策略、防御机制和评价方法。除了对现有安全挑战、缓解技术以及评估有效性和鲁棒性的各种数据集和指标进行全面审视外，我们还探讨了嵌入式导航安全性中未解决的问题和未来的研究方向，包括潜在的攻击方法、缓解策略、更可靠的评价技术以及验证框架的实施。通过填补这些关键空白，本文旨在为未来的研究提供有价值的见解，以指导开发更安全和更可靠的嵌入式导航系统。此外，本研究的发现还对提高社会安全和增加工业效率具有更广泛的意义。 
+
+---
+# Towards Transparent Ethical AI: A Roadmap for Trustworthy Robotic Systems 
+
+**Title (ZH)**: 面向透明伦理AI：可信赖机器人系统的发展 roadmap 
+
+**Authors**: Ahmad Farooq, Kamran Iqbal  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.05846)  
+
+**Abstract**: As artificial intelligence (AI) and robotics increasingly permeate society, ensuring the ethical behavior of these systems has become paramount. This paper contends that transparency in AI decision-making processes is fundamental to developing trustworthy and ethically aligned robotic systems. We explore how transparency facilitates accountability, enables informed consent, and supports the debugging of ethical algorithms. The paper outlines technical, ethical, and practical challenges in implementing transparency and proposes novel approaches to enhance it, including standardized metrics, explainable AI techniques, and user-friendly interfaces. This paper introduces a framework that connects technical implementation with ethical considerations in robotic systems, focusing on the specific challenges of achieving transparency in dynamic, real-world contexts. We analyze how prioritizing transparency can impact public trust, regulatory policies, and avenues for future research. By positioning transparency as a fundamental element in ethical AI system design, we aim to add to the ongoing discussion on responsible AI and robotics, providing direction for future advancements in this vital field. 
+
+**Abstract (ZH)**: 随着人工智能和机器人技术日益渗透到社会中，确保这些系统的伦理行为已成为重中之重。本文认为，在机器人系统中实现AI决策过程的透明性是构建可信赖且伦理对齐的系统的基础。我们探讨了透明性如何促进问责制、实现知情同意，并支持伦理算法的调试。本文概述了实现透明性的技术和实际挑战，并提出了增强透明性的新颖方法，包括标准化指标、可解释的人工智能技术以及用户友好的界面。本文提出了一种框架，将技术实现与机器人系统的伦理考量联系起来，重点是实现透明性在动态、现实生活情境中的特定挑战。我们分析了优先考虑透明性如何影响公众信任、监管政策以及未来研究的途径。通过将透明性定位为伦理AI系统设计中的基本要素，我们旨在为持续进行的责任AI和机器人讨论做出贡献，并为这一关键领域未来的发展提供方向。 
+
+---
+# A Humanoid Social Robot as a Teaching Assistant in the Classroom 
+
+**Title (ZH)**: 课堂教学中的人形社会机器人助教 
+
+**Authors**: Thomas Sievers  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.05646)  
+
+**Abstract**: Although innovation and the support of new technologies are much needed to ease the burden on the education system, social robots in schools to help teachers with educational tasks are rare. Child-Robot Interaction (CRI) could support teachers and add an embodied social component to modern multi-modal and multi-sensory learning environments already in use. The social robot Pepper, connected to the Large Language Model (LLM) ChatGPT, was used in a high school classroom to teach new learning content to groups of students. I tested the technical possibilities with the robot on site and asked the students about their acceptance and perceived usefulness of teaching with the help of a social robot. All participants felt that the robot's presentation of the learning material was appropriate or at least partially appropriate and that its use made sense. 
+
+**Abstract (ZH)**: 尽管创新和支持新技术对于减轻教育系统的负担至关重要，但在学校中使用社会机器人帮助教师完成教学任务的情况却较少见。社会机器人交互（CRI）可以支持教师，并为现有的多模态和多感知学习环境增添实体化的社会要素。通过将社会机器人Pepper与大型语言模型ChatGPT连接，我在一所高中课堂中使用它来为学生群体教授新知识内容。我现场测试了机器人的技术可能性，并要求学生评估使用社会机器人辅助教学的接受度和 perceived 实用性。所有参与者都认为机器人呈现学习材料的方式是适当的或至少部分适当，并认为其使用是有意义的。 
+
+---
+# A "good regulator theorem" for embodied agents 
+
+**Title (ZH)**: 一个好的调节器定理对于具身代理 
+
+**Authors**: Nathaniel Virgo, Martin Biehl, Manuel Baltieri, Matteo Capucci  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.06326)  
+
+**Abstract**: In a classic paper, Conant and Ashby claimed that "every good regulator of a system must be a model of that system." Artificial Life has produced many examples of systems that perform tasks with apparently no model in sight; these suggest Conant and Ashby's theorem doesn't easily generalise beyond its restricted setup. Nevertheless, here we show that a similar intuition can be fleshed out in a different way: whenever an agent is able to perform a regulation task, it is possible for an observer to interpret it as having "beliefs" about its environment, which it "updates" in response to sensory input. This notion of belief updating provides a notion of model that is more sophisticated than Conant and Ashby's, as well as a theorem that is more broadly applicable. However, it necessitates a change in perspective, in that the observer plays an essential role in the theory: models are not a mere property of the system but are imposed on it from outside. Our theorem holds regardless of whether the system is regulating its environment in a classic control theory setup, or whether it's regulating its own internal state; the model is of its environment either way. The model might be trivial, however, and this is how the apparent counterexamples are resolved. 
+
+**Abstract (ZH)**: 当然， �万多进行翻译， 以下是学术规范符合和 � 方的翻译版本：
+
+在一篇 � classic一篇 李华和 和 阿希by 的论文 中，，要求 �中， 他们声称："每一个对 控制 � 一个系统的系统 的调节器必须是该 � 这个系统的系统的一个模型。。" 人工生命生成了许多似乎没有显式调节器的系统 的例子，这些系统能够完成 � �完成特定任务。 李华 on 和 阿希by 的定 � 的定n 定恩定的定定定为 in 这样一个结论 by 并且 that 这个定论并不 完全 on 不能被限定在特定情境况下。 但是 that 在 仍有一种方法要把这个直觉性化并 � 在 通过 让一个观察 �以某种方式way 来 **这 way 的调节器** 实现 成看待这些系统的信条。。** 李华 on 阿希by 通过这个离感experience 和更新机制 己提出了一个更精细的概念 � 这通常被理解和应用为一种相似度概念 也进一步发展了他们更广泛适用的前提定 从而改变了观察者在其理论中 作者的角色必不可少。on 不论论是在某个外部给定的情境下 on 还是内部给定的情境下 �_SZ定 无论是在形式化的调节器还是 还是内 它对成为观察者信念的一种方式 and 这个更新机制通过感觉方式。" 
+
+这一个概念 on 更新应 was 超出了原有的的概念 on 并且涵盖了一个更广泛的环境 on 观察者 plays an essential role in 那个理论中。on 不这一个理论无论是在外部给定的形式样式上有效的 on 还是在内部给定的行为方式下它都是有效的。 并且 这一个过程实际上是平凡的 on 但 on 也确是一种更新方式 on 幂通过感觉方式。 
+
+请注意, 这是一个详细的翻译版本 � � 在 每个术语和 同时 � t 不尽可能与 逐字 对应 但是 on 对 帐努学术准确性。 
+
+---
+# A Framework for Inherently Safer AGI through Language-Mediated Active Inference 
+
+**Title (ZH)**: 通过语言中介的主动推理实现固有安全AGI的框架 
+
+**Authors**: Bo Wen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.05766)  
+
+**Abstract**: This paper proposes a novel framework for developing safe Artificial General Intelligence (AGI) by combining Active Inference principles with Large Language Models (LLMs). We argue that traditional approaches to AI safety, focused on post-hoc interpretability and reward engineering, have fundamental limitations. We present an architecture where safety guarantees are integrated into the system's core design through transparent belief representations and hierarchical value alignment. Our framework leverages natural language as a medium for representing and manipulating beliefs, enabling direct human oversight while maintaining computational tractability. The architecture implements a multi-agent system where agents self-organize according to Active Inference principles, with preferences and safety constraints flowing through hierarchical Markov blankets. We outline specific mechanisms for ensuring safety, including: (1) explicit separation of beliefs and preferences in natural language, (2) bounded rationality through resource-aware free energy minimization, and (3) compositional safety through modular agent structures. The paper concludes with a research agenda centered on the Abstraction and Reasoning Corpus (ARC) benchmark, proposing experiments to validate our framework's safety properties. Our approach offers a path toward AGI development that is inherently safer, rather than retrofitted with safety measures. 
+
+**Abstract (ZH)**: 本文提出了一种将主动推断原则与大型语言模型相结合的新框架，以开发安全的人工通用智能（AGI）。我们argue传统的人工智能安全方法，侧重于事后解释和奖励工程，存在根本性的局限性。我们提出了一种架构，其中安全性保证通过透明的信念表示和分级价值对齐集成到系统的核心设计中。该框架利用自然语言作为表示和操作信念的媒介，同时确保计算上的可行性并提供直接的人类监督。该架构实现了一个基于主动推断原则自组织的多代理系统，其中偏好和安全约束通过分级马尔可夫毯流动。我们概述了确保安全的具体机制，包括：(1) 自然语言中信念与偏好的显式分离，(2) 通过资源感知的最小自由能原理实现的边界理性，以及(3) 通过模块化代理结构实现的安全性组合。本文最后围绕抽象和推理语料库（ARC）基准提出了一个研究议程，提议进行实验以验证我们框架的安全属性。我们的方法提供了一条从根本上更安全的AGI开发途径，而不是事后添加安全措施。 
+
+---
+# GCHR : Goal-Conditioned Hindsight Regularization for Sample-Efficient Reinforcement Learning 
+
+**Title (ZH)**: GCHR：目标条件化的前瞻正则化在样本高效强化学习中的应用 
+
+**Authors**: Xing Lei, Wenyan Yang, Kaiqiang Ke, Shentao Yang, Xuetao Zhang, Joni Pajarinen, Donglin Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.06108)  
+
+**Abstract**: Goal-conditioned reinforcement learning (GCRL) with sparse rewards remains a fundamental challenge in reinforcement learning. While hindsight experience replay (HER) has shown promise by relabeling collected trajectories with achieved goals, we argue that trajectory relabeling alone does not fully exploit the available experiences in off-policy GCRL methods, resulting in limited sample efficiency. In this paper, we propose Hindsight Goal-conditioned Regularization (HGR), a technique that generates action regularization priors based on hindsight goals. When combined with hindsight self-imitation regularization (HSR), our approach enables off-policy RL algorithms to maximize experience utilization. Compared to existing GCRL methods that employ HER and self-imitation techniques, our hindsight regularizations achieve substantially more efficient sample reuse and the best performances, which we empirically demonstrate on a suite of navigation and manipulation tasks. 
+
+**Abstract (ZH)**: 基于后视目标的条件化加强学习（HGR）：一种稀疏奖励下目标条件化强化学习的后视目标正则化技术 
+
+---
+# Can Large Models Fool the Eye? A New Turing Test for Biological Animation 
+
+**Title (ZH)**: 大型模型能否骗过人眼？一种新的生物动画图灵测试 
+
+**Authors**: Zijian Chen, Lirong Deng, Zhengyu Chen, Kaiwei Zhang, Qi Jia, Yuan Tian, Yucheng Zhu, Guangtao Zhai  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.06072)  
+
+**Abstract**: Evaluating the abilities of large models and manifesting their gaps are challenging. Current benchmarks adopt either ground-truth-based score-form evaluation on static datasets or indistinct textual chatbot-style human preferences collection, which may not provide users with immediate, intuitive, and perceptible feedback on performance differences. In this paper, we introduce BioMotion Arena, a novel framework for evaluating large language models (LLMs) and multimodal large language models (MLLMs) via visual animation. Our methodology draws inspiration from the inherent visual perception of motion patterns characteristic of living organisms that utilizes point-light source imaging to amplify the performance discrepancies between models. Specifically, we employ a pairwise comparison evaluation and collect more than 45k votes for 53 mainstream LLMs and MLLMs on 90 biological motion variants. Data analyses show that the crowd-sourced human votes are in good agreement with those of expert raters, demonstrating the superiority of our BioMotion Arena in offering discriminative feedback. We also find that over 90\% of evaluated models, including the cutting-edge open-source InternVL3 and proprietary Claude-4 series, fail to produce fundamental humanoid point-light groups, much less smooth and biologically plausible motions. This enables BioMotion Arena to serve as a challenging benchmark for performance visualization and a flexible evaluation framework without restrictions on ground-truth. 
+
+**Abstract (ZH)**: 评估大型模型的能力并展现其差距具有挑战性。当前基准要么采用基于真实值的评分形式评估静态数据集，要么收集模糊的文本聊天机器人风格的人类偏好，这可能无法为用户提供即时、直观和可感知的性能差异反馈。在本文中，我们引入了BioMotion Arena，这是一种通过视觉动画评估大型语言模型（LLMs）和多模态大型语言模型（MLLMs）的新型框架。我们的方法借鉴了利用点光源成像放大模型性能差异的生物运动固有的视觉感知。具体而言，我们采用一对一比较评估，并为53种主流LLM和MLLM在90种生物运动变体上收集了超过45,000票。数据分析显示，众包人类投票与专家评分高度一致，证明了BioMotion Arena在提供差异性反馈方面的优越性。我们还发现，超过90%的评估模型，包括前沿的开源InternVL3和专有Claude-4系列，无法生成基本的人形点光源组，更不用说平滑且生物学上可实现的运动。这使BioMotion Arena能够成为一个具有挑战性的基准，用于性能可视化，同时不受真实值限制的灵活评估框架。 
+
+---
+# Mildly Conservative Regularized Evaluation for Offline Reinforcement Learning 
+
+**Title (ZH)**: 轻度保守正则化离线强化学习评估 
+
+**Authors**: Haohui Chen, Zhiyong Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.05960)  
+
+**Abstract**: Offline reinforcement learning (RL) seeks to learn optimal policies from static datasets without further environment interaction. A key challenge is the distribution shift between the learned and behavior policies, leading to out-of-distribution (OOD) actions and overestimation. To prevent gross overestimation, the value function must remain conservative; however, excessive conservatism may hinder performance improvement. To address this, we propose the mildly conservative regularized evaluation (MCRE) framework, which balances conservatism and performance by combining temporal difference (TD) error with a behavior cloning term in the Bellman backup. Building on this, we develop the mildly conservative regularized Q-learning (MCRQ) algorithm, which integrates MCRE into an off-policy actor-critic framework. Experiments show that MCRQ outperforms strong baselines and state-of-the-art offline RL algorithms on benchmark datasets. 
+
+**Abstract (ZH)**: 离线强化学习（RL） seeks to learn optimal policies from static datasets without further environment interaction. 
+
+---
