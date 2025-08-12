@@ -1,0 +1,197 @@
+# Touch Speaks, Sound Feels: A Multimodal Approach to Affective and Social Touch from Robots to Humans 
+
+**Title (ZH)**: 触感诉说，声音感受：从机器人到人类的多模态情感与社会触觉研究 
+
+**Authors**: Qiaoqiao Ren, Tony Belpaeme  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.07839)  
+
+**Abstract**: Affective tactile interaction constitutes a fundamental component of human communication. In natural human-human encounters, touch is seldom experienced in isolation; rather, it is inherently multisensory. Individuals not only perceive the physical sensation of touch but also register the accompanying auditory cues generated through contact. The integration of haptic and auditory information forms a rich and nuanced channel for emotional expression. While extensive research has examined how robots convey emotions through facial expressions and speech, their capacity to communicate social gestures and emotions via touch remains largely underexplored. To address this gap, we developed a multimodal interaction system incorporating a 5*5 grid of 25 vibration motors synchronized with audio playback, enabling robots to deliver combined haptic-audio stimuli. In an experiment involving 32 Chinese participants, ten emotions and six social gestures were presented through vibration, sound, or their combination. Participants rated each stimulus on arousal and valence scales. The results revealed that (1) the combined haptic-audio modality significantly enhanced decoding accuracy compared to single modalities; (2) each individual channel-vibration or sound-effectively supported certain emotions recognition, with distinct advantages depending on the emotional expression; and (3) gestures alone were generally insufficient for conveying clearly distinguishable emotions. These findings underscore the importance of multisensory integration in affective human-robot interaction and highlight the complementary roles of haptic and auditory cues in enhancing emotional communication. 
+
+**Abstract (ZH)**: 情感触觉交互是人类交流的基本组成部分。在自然的人与人互动中，触觉体验通常是多感官综合的；不仅感知触觉的物理感受，还记录通过接触产生的伴随声学线索。触觉与声学信息的结合形成了丰富细腻的情感表达渠道。尽管大量研究已经探讨了机器人通过面部表情和言语传达情感的能力，但它们通过触觉传达社会手势和情感的能力仍很大程度上未被探索。为弥补这一差距，我们开发了一个多模态交互系统，包含一个5×5网格的25个振动马达，与音频播放同步，使机器人能够传递触觉-声学复合刺激。在一项涉及32名中国参与者的实验中，通过振动、声音或二者结合展示了十种情感和六种社会手势。参与者基于唤醒度和价值度对每个刺激进行了评价。结果表明：（1）触觉-声学复合模态显著提高了情感识别的准确度，相较于单一模态；（2）每个单独的通道——振动或声音——在某些情感识别上有效，不同的情感表达具有不同的优势；（3）单独的手势通常不足以清晰传达可分辨的情感。这些发现突显了多感官整合在情感人机交互中的重要性，并强调了触觉和声学线索在增强情感交流中的互补作用。 
+
+---
+# Multimodal Spiking Neural Network for Space Robotic Manipulation 
+
+**Title (ZH)**: 多模态脉冲神经网络在空间机器人Manipulation中的应用 
+
+**Authors**: Liwen Zhang, Dong Zhou, Shibo Shao, Zihao Su, Guanghui Sun  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.07287)  
+
+**Abstract**: This paper presents a multimodal control framework based on spiking neural networks (SNNs) for robotic arms aboard space stations. It is designed to cope with the constraints of limited onboard resources while enabling autonomous manipulation and material transfer in space operations. By combining geometric states with tactile and semantic information, the framework strengthens environmental awareness and contributes to more robust control strategies. To guide the learning process progressively, a dual-channel, three-stage curriculum reinforcement learning (CRL) scheme is further integrated into the system. The framework was tested across a range of tasks including target approach, object grasping, and stable lifting with wall-mounted robotic arms, demonstrating reliable performance throughout. Experimental evaluations demonstrate that the proposed method consistently outperforms baseline approaches in both task success rate and energy efficiency. These findings highlight its suitability for real-world aerospace applications. 
+
+**Abstract (ZH)**: 基于脉冲神经网络的多模态控制框架在空间站 robotic arms 中的应用：应对机载资源限制的自主操作与物质转移 
+
+---
+# A tutorial note on collecting simulated data for vision-language-action models 
+
+**Title (ZH)**: 视觉-语言-行动模型中模拟数据收集的教程注记 
+
+**Authors**: Heran Wu, Zirun Zhou, Jingfeng Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.06547)  
+
+**Abstract**: Traditional robotic systems typically decompose intelligence into independent modules for computer vision, natural language processing, and motion control. Vision-Language-Action (VLA) models fundamentally transform this approach by employing a single neural network that can simultaneously process visual observations, understand human instructions, and directly output robot actions -- all within a unified framework. However, these systems are highly dependent on high-quality training datasets that can capture the complex relationships between visual observations, language instructions, and robotic actions. This tutorial reviews three representative systems: the PyBullet simulation framework for flexible customized data generation, the LIBERO benchmark suite for standardized task definition and evaluation, and the RT-X dataset collection for large-scale multi-robot data acquisition. We demonstrated dataset generation approaches in PyBullet simulation and customized data collection within LIBERO, and provide an overview of the characteristics and roles of the RT-X dataset for large-scale multi-robot data acquisition. 
+
+**Abstract (ZH)**: 传统的机器人系统通常将智能分解为独立的模块，分别处理计算机视觉、自然语言处理和运动控制。Vision-Language-Action (VLA) 模型从根本上改变了这一方法，通过单一神经网络同时处理视觉观察、理解人类指令并直接输出机器人动作——这一切都在一个统一的框架内完成。然而，这些系统高度依赖高质量的训练数据集，能够捕捉视觉观察、语言指令和机器人动作之间的复杂关系。本文tutorial回顾了三个代表性系统：PyBullet仿真框架灵活生成定制化数据，LIBERO基准套件标准化任务定义与评估，以及RT-X数据集收集用于大规模多机器人数据获取。我们展示了在PyBullet仿真中的数据集生成方法以及在LIBERO中的定制化数据收集，并概述了RT-X数据集在大规模多机器人数据获取中的特性和角色。 
+
+---
+# Multimodal AI Systems for Enhanced Laying Hen Welfare Assessment and Productivity Optimization 
+
+**Title (ZH)**: 多模态人工智能系统以增强产蛋鸡福利评估与生产优化 
+
+**Authors**: Daniel Essien, Suresh Neethirajan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.07628)  
+
+**Abstract**: The future of poultry production depends on a paradigm shift replacing subjective, labor-intensive welfare checks with data-driven, intelligent monitoring ecosystems. Traditional welfare assessments-limited by human observation and single-sensor data-cannot fully capture the complex, multidimensional nature of laying hen welfare in modern farms. Multimodal Artificial Intelligence (AI) offers a breakthrough, integrating visual, acoustic, environmental, and physiological data streams to reveal deeper insights into avian welfare dynamics. This investigation highlights multimodal As transformative potential, showing that intermediate (feature-level) fusion strategies achieve the best balance between robustness and performance under real-world poultry conditions, and offer greater scalability than early or late fusion approaches. Key adoption barriers include sensor fragility in harsh farm environments, high deployment costs, inconsistent behavioral definitions, and limited cross-farm generalizability. To address these, we introduce two novel evaluation tools - the Domain Transfer Score (DTS) to measure model adaptability across diverse farm settings, and the Data Reliability Index (DRI) to assess sensor data quality under operational constraints. We also propose a modular, context-aware deployment framework designed for laying hen environments, enabling scalable and practical integration of multimodal sensing. This work lays the foundation for a transition from reactive, unimodal monitoring to proactive, precision-driven welfare systems that unite productivity with ethical, science based animal care. 
+
+**Abstract (ZH)**: 家禽生产的未来取决于从主观、劳动密集型的福利检查向数据驱动、智能化的监测生态系统转变。传统的福利评估受限于人类观察和单传感器数据，无法全面捕捉现代养殖场中产蛋鸡福利的复杂性和多维性。多模态人工智能（AI）提供了突破，通过整合视觉、声学、环境和生理数据流，揭示了更为深刻的家禽福利动态洞察。本研究强调了多模态系统的潜在转化能力，显示了在实际养禽条件下，中间（特征级）融合策略在鲁棒性和性能方面达到了最佳平衡，并且比早期或晚期融合方法更具可扩展性。关键采用障碍包括传感器在恶劣农场环境中的脆弱性、高昂的部署成本、不一致的行为定义以及有限的跨场普遍性。为解决这些问题，我们引入了两类新的评估工具——领域迁移得分（DTS）以衡量模型在不同农场环境中的一致适应性，以及数据可靠性指数（DRI）以评估受限操作条件下的传感器数据质量。我们还提出了一种模块化、情境感知的部署框架，适用于产蛋鸡环境，使得多模态感知的大规模和实践性整合成为可能。这项工作为从被动、单一模态监测向结合生产力与伦理、基于科学的精准福利系统转变奠定了基础。 
+
+---
+# MeteorPred: A Meteorological Multimodal Large Model and Dataset for Severe Weather Event Prediction 
+
+**Title (ZH)**: MeteorPred：一种气象多模态大型模型及数据集用于严重天气事件预测 
+
+**Authors**: Shuo Tang, Jian Xu, Jiadong Zhang, Yi Chen, Qizhao Jin, Lingdong Shen, Chenglin Liu, Shiming Xiang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.06859)  
+
+**Abstract**: Timely and accurate severe weather warnings are critical for disaster mitigation. However, current forecasting systems remain heavily reliant on manual expert interpretation, introducing subjectivity and significant operational burdens. With the rapid development of AI technologies, the end-to-end "AI weather station" is gradually emerging as a new trend in predicting severe weather events. Three core challenges impede the development of end-to-end AI severe weather system: (1) scarcity of severe weather event samples; (2) imperfect alignment between high-dimensional meteorological data and textual warnings; (3) existing multimodal language models are unable to handle high-dimensional meteorological data and struggle to fully capture the complex dependencies across temporal sequences, vertical pressure levels, and spatial dimensions. To address these challenges, we introduce MP-Bench, the first large-scale temporal multimodal dataset for severe weather events prediction, comprising 421,363 pairs of raw multi-year meteorological data and corresponding text caption, covering a wide range of severe weather scenarios across China. On top of this dataset, we develop a meteorology multimodal large model (MMLM) that directly ingests 4D meteorological inputs. In addition, it is designed to accommodate the unique characteristics of 4D meteorological data flow, incorporating three plug-and-play adaptive fusion modules that enable dynamic feature extraction and integration across temporal sequences, vertical pressure layers, and spatial dimensions. Extensive experiments on MP-Bench demonstrate that MMLM performs exceptionally well across multiple tasks, highlighting its effectiveness in severe weather understanding and marking a key step toward realizing automated, AI-driven weather forecasting systems. Our source code and dataset will be made publicly available. 
+
+**Abstract (ZH)**: 及时准确的严重天气预警对于灾害缓解至关重要。然而，当前的预报系统仍高度依赖手工专家解释，引入了主观性和显著的操作负担。随着人工智能技术的迅速发展，端到端的“AI气象站”正逐渐成为预测严重天气事件的新趋势。端到端的人工智能严重天气系统面临三大核心挑战：（1）严重天气事件样本稀缺；（2）高维气象数据与文字警报之间不完美的对齐；（3）现有的多模态语言模型无法处理高维气象数据，难以充分捕捉时间序列、垂直压力层和空间维度上的复杂依赖关系。为应对这些挑战，我们提出了MP-Bench，这是首个针对严重天气事件预测的大规模时序多模态数据集，包含421,363个多年气象数据与相应文本描述配对，涵盖中国广泛范围内的严重天气场景。在此数据集基础上，我们开发了一种气象多模态大型模型（MMLM），可以直接输入4D气象数据。此外，该模型设计用于适应4D气象数据流的独特特征，嵌入了三个即插即用的自适应融合模块，以实现时间序列、垂直压力层和空间维度上的动态特征提取和集成。在MP-Bench上的广泛实验表明，MMLM在多个任务中表现出色，凸显了其在严重天气理解方面的有效性，并为进一步实现自动化、AI驱动的天气预报系统奠定了关键步骤。我们的源代码和数据集将公开发布。 
+
+---
+# VGGSounder: Audio-Visual Evaluations for Foundation Models 
+
+**Title (ZH)**: VGGSounder: 视听基础模型评估 
+
+**Authors**: Daniil Zverev, Thaddäus Wiedemer, Ameya Prabhu, Matthias Bethge, Wieland Brendel, A. Sophia Koepke  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.08237)  
+
+**Abstract**: The emergence of audio-visual foundation models underscores the importance of reliably assessing their multi-modal understanding. The VGGSounder dataset is commonly used as a benchmark for evaluation audio-visual classification. However, our analysis identifies several limitations of VGGSounder, including incomplete labelling, partially overlapping classes, and misaligned modalities. These lead to distorted evaluations of auditory and visual capabilities. To address these limitations, we introduce VGGSounder, a comprehensively re-annotated, multi-label test set that extends VGGSound and is specifically designed to evaluate audio-visual foundation models. VGGSounder features detailed modality annotations, enabling precise analyses of modality-specific performance. Furthermore, we reveal model limitations by analysing performance degradation when adding another input modality with our new modality confusion metric. 
+
+**Abstract (ZH)**: 音频-视觉基础模型的出现凸显了可靠评估其多模态理解的重要性。VGGSounder数据集常用于评估音频-视觉分类。然而，我们的分析发现VGGSounder存在多项局限，包括标签不完整、部分类别重叠以及模态不一致。这些局限导致了对听觉和视觉能力评估的扭曲。为解决这些问题，我们提出了VGGSounder，这是一个全面重新注释的多标签测试集，扩展了VGGSound，专门用于评估音频-视觉基础模型。VGGSounder包含详细的模态注释，便于精确分析模态特定性能。此外，我们通过新的模态混淆度量分析了添加另一个输入模态时性能下降的情况，揭示了模型的局限性。 
+
+---
+# Multi-modal Adaptive Mixture of Experts for Cold-start Recommendation 
+
+**Title (ZH)**: 冷启动推荐的多模态自适应专家混合模型 
+
+**Authors**: Van-Khang Nguyen, Duc-Hoang Pham, Huy-Son Nguyen, Cam-Van Thi Nguyen, Hoang-Quynh Le, Duc-Trong Le  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.08042)  
+
+**Abstract**: Recommendation systems have faced significant challenges in cold-start scenarios, where new items with a limited history of interaction need to be effectively recommended to users. Though multimodal data (e.g., images, text, audio, etc.) offer rich information to address this issue, existing approaches often employ simplistic integration methods such as concatenation, average pooling, or fixed weighting schemes, which fail to capture the complex relationships between modalities. Our study proposes a novel Mixture of Experts (MoE) framework for multimodal cold-start recommendation, named MAMEX, which dynamically leverages latent representation from different modalities. MAMEX utilizes modality-specific expert networks and introduces a learnable gating mechanism that adaptively weights the contribution of each modality based on its content characteristics. This approach enables MAMEX to emphasize the most informative modalities for each item while maintaining robustness when certain modalities are less relevant or missing. Extensive experiments on benchmark datasets show that MAMEX outperforms state-of-the-art methods in cold-start scenarios, with superior accuracy and adaptability. For reproducibility, the code has been made available on Github this https URL. 
+
+**Abstract (ZH)**: 多模态冷启动推荐中的专家混合框架MAMEX：动态利用不同模态的潜在表示 
+
+---
+# UniSVG: A Unified Dataset for Vector Graphic Understanding and Generation with Multimodal Large Language Models 
+
+**Title (ZH)**: UniSVG：用于多模态大规模语言模型的矢量图形理解与生成统一数据集 
+
+**Authors**: Jinke Li, Jiarui Yu, Chenxing Wei, Hande Dong, Qiang Lin, Liangjing Yang, Zhicai Wang, Yanbin Hao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.07766)  
+
+**Abstract**: Unlike bitmap images, scalable vector graphics (SVG) maintain quality when scaled, frequently employed in computer vision and artistic design in the representation of SVG code. In this era of proliferating AI-powered systems, enabling AI to understand and generate SVG has become increasingly urgent. However, AI-driven SVG understanding and generation (U&G) remain significant challenges. SVG code, equivalent to a set of curves and lines controlled by floating-point parameters, demands high precision in SVG U&G. Besides, SVG generation operates under diverse conditional constraints, including textual prompts and visual references, which requires powerful multi-modal processing for condition-to-SVG transformation. Recently, the rapid growth of Multi-modal Large Language Models (MLLMs) have demonstrated capabilities to process multi-modal inputs and generate complex vector controlling parameters, suggesting the potential to address SVG U&G tasks within a unified model. To unlock MLLM's capabilities in the SVG area, we propose an SVG-centric dataset called UniSVG, comprising 525k data items, tailored for MLLM training and evaluation. To our best knowledge, it is the first comprehensive dataset designed for unified SVG generation (from textual prompts and images) and SVG understanding (color, category, usage, etc.). As expected, learning on the proposed dataset boosts open-source MLLMs' performance on various SVG U&G tasks, surpassing SOTA close-source MLLMs like GPT-4V. We release dataset, benchmark, weights, codes and experiment details on this https URL. 
+
+**Abstract (ZH)**: 不同于位图图像，可伸缩矢量图形（SVG）在缩放时保持质量，常用于计算机视觉和艺术设计中的SVG代码表示。在AI驱动系统普及的时代，使AI理解并生成SVG变得日益迫切。然而，基于AI的SVG理解和生成（U&G）仍然是重大挑战。SVG代码类似于由浮点参数控制的曲线和线条集，要求在SVG理解和生成中具有高精度。此外，SVG生成受到多种条件约束，包括文本提示和视觉参考，这需要强大的多模态处理来实现条件到SVG的转换。最近，多模态大型语言模型（MLLM）的迅速增长展示了处理多模态输入和生成复杂向量控制参数的能力，表明有可能在统一模型中解决SVG理解和生成任务。为了释放MLLM在SVG领域的潜力，我们提出了一种以SVG为中心的数据集UniSVG，包含525,000个数据项，适用于MLLM培训和评估。据我们所知，这是首个专为统一SVG生成（从文本提示和图像）和SVG理解（颜色、类别、用途等）设计的综合数据集。正如预期的那样，使用提出的数据集在各种SVG理解和生成任务上提升了开源MLLM的性能，超越了如GPT-4V等封闭源MLLM。我们在此URL上发布了数据集、基准测试、权重、代码和实验详情。 
+
+---
+# Freeze and Reveal: Exposing Modality Bias in Vision-Language Models 
+
+**Title (ZH)**: 冻结与揭示：揭露视觉-语言模型的模态偏见 
+
+**Authors**: Vivek Hruday Kavuri, Vysishtya Karanam, Venkata Jahnavi Venkamsetty, Kriti Madumadukala, Lakshmipathi Balaji Darur, Ponnurangam Kumaraguru  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.07432)  
+
+**Abstract**: Vision Language Models achieve impressive multi-modal performance but often inherit gender biases from their training data. This bias might be coming from both the vision and text modalities. In this work, we dissect the contributions of vision and text backbones to these biases by applying targeted debiasing using Counterfactual Data Augmentation and Task Vector methods. Inspired by data-efficient approaches in hate-speech classification, we introduce a novel metric, Degree of Stereotypicality and a corresponding debiasing method, Data Augmentation Using Degree of Stereotypicality - DAUDoS, to reduce bias with minimal computational cost. We curate a gender annotated dataset and evaluate all methods on VisoGender benchmark to quantify improvements and identify dominant source of bias. Our results show that CDA reduces the gender gap by 6% and DAUDoS by 3% but using only one-third of the data. Both methods also improve the model's ability to correctly identify gender in images by 3%, with DAUDoS achieving this improvement using only almost one-third of training data. From our experiment's, we observed that CLIP's vision encoder is more biased whereas PaliGemma2's text encoder is more biased. By identifying whether bias stems more from vision or text encoders, our work enables more targeted and effective bias mitigation strategies in future multi-modal systems. 
+
+**Abstract (ZH)**: 视觉语言模型在实现多模态性能的同时常常继承训练数据中的性别偏见。这种偏见可能源自于视觉和文本模态。本文通过应用目标化去偏见的反事实数据增强和任务向量方法，剖析视觉和文本骨干网络对这些偏见的贡献。受仇恨言论分类中高效数据利用方法的启发，我们引入了一个新的度量标准，即刻板印象程度，并提出一种相应的去偏见方法——基于刻板印象程度的数据增强（DAUDoS），以最少的计算成本减少偏见。我们收集了一个带有性别标注的数据集，并在VisoGender基准测试上评估所有方法，以量化改进并识别偏见的主要来源。我们的结果显示，CDA减少了6%的性别差距，而DAUDoS减少了3%的性别差距，但仅使用了数据的三分之一。两种方法还分别提高了模型在图像中正确识别性别的能力3%，而DAUDoS仅使用了几乎三分之一的训练数据就实现了这一改进。我们的实验发现，CLIP的视觉编码器更具偏见，而PaliGemma2的文本编码器更具偏见。通过确定偏见主要源自视觉编码器还是文本编码器，我们未来的工作能够为多模态系统提供更具针对性和有效的偏见缓解策略。 
+
+---
+# BASIC: Boosting Visual Alignment with Intrinsic Refined Embeddings in Multimodal Large Language Models 
+
+**Title (ZH)**: BASIC: 通过内在精炼嵌入提高多模态大语言模型的视觉对齐 
+
+**Authors**: Jianting Tang, Yubo Wang, Haoyu Cao, Linli Xu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.06895)  
+
+**Abstract**: Mainstream Multimodal Large Language Models (MLLMs) achieve visual understanding by using a vision projector to bridge well-pretrained vision encoders and large language models (LLMs). The inherent gap between visual and textual modalities makes the embeddings from the vision projector critical for visual comprehension. However, current alignment approaches treat visual embeddings as contextual cues and merely apply auto-regressive supervision to textual outputs, neglecting the necessity of introducing equivalent direct visual supervision, which hinders the potential finer alignment of visual embeddings. In this paper, based on our analysis of the refinement process of visual embeddings in the LLM's shallow layers, we propose BASIC, a method that utilizes refined visual embeddings within the LLM as supervision to directly guide the projector in generating initial visual embeddings. Specifically, the guidance is conducted from two perspectives: (i) optimizing embedding directions by reducing angles between initial and supervisory embeddings in semantic space; (ii) improving semantic matching by minimizing disparities between the logit distributions of both visual embeddings. Without additional supervisory models or artificial annotations, BASIC significantly improves the performance of MLLMs across a wide range of benchmarks, demonstrating the effectiveness of our introduced direct visual supervision. 
+
+**Abstract (ZH)**: 主流多模态大型语言模型（MLLMs）通过使用视觉投影器来连接预训练的视觉编码器和大型语言模型（LLMs）以实现视觉理解。视觉和文本模态之间的固有差异使得视觉投影器产生的嵌入对于视觉理解至关重要。然而，当前对齐方法将视觉嵌入视为上下文提示，并仅仅对文本输出应用自回归监督，忽略了引入等效直接视觉监督的必要性，这阻碍了视觉嵌入的潜在细粒度对齐。本文基于对LLM浅层层中视觉嵌入精炼过程的分析，提出了一种名为BASIC的方法，利用嵌入在LLM中的精炼视觉嵌入作为监督，直接引导投影器生成初始视觉嵌入。具体而言，引导从两个角度进行：（i）通过在语义空间中减少初始和监督嵌入之间的角度来优化嵌入方向；（ii）通过最小化两者视觉嵌入的逻辑分布差异来提高语义匹配。无需额外的监督模型或人工注释，BASIC在广泛的标准测试中显著提高了MLLMs的性能，证明了我们引入的直接视觉监督的有效性。 
+
+---
+# VSI: Visual Subtitle Integration for Keyframe Selection to enhance Long Video Understanding 
+
+**Title (ZH)**: 基于视觉字幕集成的关键帧选择以增强长视频理解 
+
+**Authors**: Jianxiang He, Shaoguang Wang, Weiyu Guo, Meisheng Hong, Jungang Li, Yijie Xu, Ziyang Chen, Hui Xiong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.06869)  
+
+**Abstract**: Long video understanding presents a significant challenge to multimodal large language models (MLLMs) primarily due to the immense data scale. A critical and widely adopted strategy for making this task computationally tractable is keyframe retrieval, which seeks to identify a sparse set of video frames that are most salient to a given textual query. However, the efficacy of this approach is hindered by weak multimodal alignment between textual queries and visual content and fails to capture the complex temporal semantic information required for precise reasoning. To address this, we propose Visual-Subtitle Integeration(VSI), a multimodal keyframe search method that integrates subtitles, timestamps, and scene boundaries into a unified multimodal search process. The proposed method captures the visual information of video frames as well as the complementary textual information through a dual-stream search mechanism by Video Search Stream as well as Subtitle Match Stream, respectively, and improves the keyframe search accuracy through the interaction of the two search streams. Experimental results show that VSI achieve 40.00% key frame localization accuracy on the text-relevant subset of LongVideoBench and 68.48% accuracy on downstream long Video-QA tasks, surpassing competitive baselines by 20.35% and 15.79%, respectively. Furthermore, on the LongVideoBench, VSI achieved state-of-the-art(SOTA) in medium-to-long video-QA tasks, demonstrating the robustness and generalizability of the proposed multimodal search strategy. 
+
+**Abstract (ZH)**: 长视频理解对多模态大规模语言模型构成重大挑战，主要是由于数据量巨大。为了使这一任务在计算上可处理，关键且广泛采用的策略是关键帧检索，该策略旨在识别出最能反映给定文本查询的稀疏视频帧集合。然而，这种做法的有效性受到文本查询与视觉内容之间弱的多模态对齐的阻碍，并且无法捕捉到进行精确推理所需的复杂时间语义信息。为解决这一问题，我们提出了一种名为Visual-Subtitle Integration (VSI)的多模态关键帧搜索方法，该方法将字幕、时间戳和场景边界整合到统一的多模态搜索过程中。所提出的方法通过视频搜索流和字幕匹配流的双流搜索机制捕获视频帧的视觉信息以及互补的文本信息，并通过两个搜索流的交互来提高关键帧搜索的准确性。实验结果显示，VSI在LongVideoBench的文本相关子集上实现了40.00%的关键帧定位准确率，并在下游长视频-QA任务上的准确率达到68.48%，分别超出竞争基线20.35%和15.79%。此外，在LongVideoBench上，VSI在中到长视频-QA任务中达到了最先进的性能，展示了所提出的多模态搜索策略的鲁棒性和泛化能力。 
+
+---
+# Hardness-Aware Dynamic Curriculum Learning for Robust Multimodal Emotion Recognition with Missing Modalities 
+
+**Title (ZH)**: 基于硬度感知的动态课程学习以实现鲁棒多模态情感识别，考虑缺失模态 
+
+**Authors**: Rui Liu, Haolin Zuo, Zheng Lian, Hongyu Yuan, Qi Fan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.06800)  
+
+**Abstract**: Missing modalities have recently emerged as a critical research direction in multimodal emotion recognition (MER). Conventional approaches typically address this issue through missing modality reconstruction. However, these methods fail to account for variations in reconstruction difficulty across different samples, consequently limiting the model's ability to handle hard samples effectively. To overcome this limitation, we propose a novel Hardness-Aware Dynamic Curriculum Learning framework, termed HARDY-MER. Our framework operates in two key stages: first, it estimates the hardness level of each sample, and second, it strategically emphasizes hard samples during training to enhance model performance on these challenging instances. Specifically, we first introduce a Multi-view Hardness Evaluation mechanism that quantifies reconstruction difficulty by considering both Direct Hardness (modality reconstruction errors) and Indirect Hardness (cross-modal mutual information). Meanwhile, we introduce a Retrieval-based Dynamic Curriculum Learning strategy that dynamically adjusts the training curriculum by retrieving samples with similar semantic information and balancing the learning focus between easy and hard instances. Extensive experiments on benchmark datasets demonstrate that HARDY-MER consistently outperforms existing methods in missing-modality scenarios. Our code will be made publicly available at this https URL. 
+
+**Abstract (ZH)**: 缺失模态 Recent Progresses in Multimodal Emotion Recognition: A Hardness-Aware Dynamic Curriculum Learning Framework (HARDY-MER) 
+
+---
+# SafePLUG: Empowering Multimodal LLMs with Pixel-Level Insight and Temporal Grounding for Traffic Accident Understanding 
+
+**Title (ZH)**: SafePLUG: 为交通事故理解赋能多模态LLM模型的像素级洞察与时空定位 
+
+**Authors**: Zihao Sheng, Zilin Huang, Yen-Jung Chen, Yansong Qu, Yuhao Luo, Yue Leng, Sikai Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.06763)  
+
+**Abstract**: Multimodal large language models (MLLMs) have achieved remarkable progress across a range of vision-language tasks and demonstrate strong potential for traffic accident understanding. However, existing MLLMs in this domain primarily focus on coarse-grained image-level or video-level comprehension and often struggle to handle fine-grained visual details or localized scene components, limiting their applicability in complex accident scenarios. To address these limitations, we propose SafePLUG, a novel framework that empowers MLLMs with both Pixel-Level Understanding and temporal Grounding for comprehensive traffic accident analysis. SafePLUG supports both arbitrary-shaped visual prompts for region-aware question answering and pixel-level segmentation based on language instructions, while also enabling the recognition of temporally anchored events in traffic accident scenarios. To advance the development of MLLMs for traffic accident understanding, we curate a new dataset containing multimodal question-answer pairs centered on diverse accident scenarios, with detailed pixel-level annotations and temporal event boundaries. Experimental results show that SafePLUG achieves strong performance on multiple tasks, including region-based question answering, pixel-level segmentation, temporal event localization, and accident event understanding. These capabilities lay a foundation for fine-grained understanding of complex traffic scenes, with the potential to improve driving safety and enhance situational awareness in smart transportation systems. The code, dataset, and model checkpoints will be made publicly available at: this https URL 
+
+**Abstract (ZH)**: 多
+user
+Multim modal large language models (MLLMs) achieved remarkable progress across a range of vision-language tasks and demonstrate strong potential for traffic accident understanding. 
+
+---
+# MMFformer: Multimodal Fusion Transformer Network for Depression Detection 
+
+**Title (ZH)**: /MMFformer：多模态融合变换器网络在抑郁检测中的应用 
+
+**Authors**: Md Rezwanul Haque, Md. Milon Islam, S M Taslim Uddin Raju, Hamdi Altaheri, Lobna Nassar, Fakhri Karray  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.06701)  
+
+**Abstract**: Depression is a serious mental health illness that significantly affects an individual's well-being and quality of life, making early detection crucial for adequate care and treatment. Detecting depression is often difficult, as it is based primarily on subjective evaluations during clinical interviews. Hence, the early diagnosis of depression, thanks to the content of social networks, has become a prominent research area. The extensive and diverse nature of user-generated information poses a significant challenge, limiting the accurate extraction of relevant temporal information and the effective fusion of data across multiple modalities. This paper introduces MMFformer, a multimodal depression detection network designed to retrieve depressive spatio-temporal high-level patterns from multimodal social media information. The transformer network with residual connections captures spatial features from videos, and a transformer encoder is exploited to design important temporal dynamics in audio. Moreover, the fusion architecture fused the extracted features through late and intermediate fusion strategies to find out the most relevant intermodal correlations among them. Finally, the proposed network is assessed on two large-scale depression detection datasets, and the results clearly reveal that it surpasses existing state-of-the-art approaches, improving the F1-Score by 13.92% for D-Vlog dataset and 7.74% for LMVD dataset. The code is made available publicly at this https URL. 
+
+**Abstract (ZH)**: 抑郁症是一种严重的精神健康疾病，显著影响个体的福祉和生活质量，因此早期检测对于获取适当的护理和治疗至关重要。检测抑郁症往往颇具挑战性，因为它主要基于临床访谈中的主观评估。因此，得益于社交媒体内容，早期诊断抑郁症已成为一个重要的研究领域。用户生成信息的广泛多样性质给准确提取相关时间信息和多模态数据的有效融合带来了重大挑战。本文介绍了一种名为MMFformer的多模态抑郁症检测网络，该网络旨在从多模态社交媒体信息中检索抑郁的时空高层模式。残差连接的变压器网络从视频中捕获空间特征，利用变压器编码器设计音频中的重要时间动态。此外，通过 late 和 intermediate 融合策略融合提取的特征，以发现它们之间的最相关跨模态关联。最终，所提出网络在两个大规模抑郁症检测数据集上进行了评估，结果清楚地表明，它超越了现有最先进的方法，F1-Score 提高了 13.92%（对于 D-Vlog 数据集）和 7.74%（对于 LMVD 数据集）。代码已公开发布在该网址。 
+
+---
+# Surformer v1: Transformer-Based Surface Classification Using Tactile and Vision Features 
+
+**Title (ZH)**: Surformer v1: 基于触觉和视觉特征的Transformer表面分类 
+
+**Authors**: Manish Kansana, Elias Hossain, Shahram Rahimi, Noorbakhsh Amiri Golilarz  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.06566)  
+
+**Abstract**: Surface material recognition is a key component in robotic perception and physical interaction, particularly when leveraging both tactile and visual sensory inputs. In this work, we propose Surformer v1, a transformer-based architecture designed for surface classification using structured tactile features and PCA-reduced visual embeddings extracted via ResNet-50. The model integrates modality-specific encoders with cross-modal attention layers, enabling rich interactions between vision and touch. Currently, state-of-the-art deep learning models for vision tasks have achieved remarkable performance. With this in mind, our first set of experiments focused exclusively on tactile-only surface classification. Using feature engineering, we trained and evaluated multiple machine learning models, assessing their accuracy and inference time. We then implemented an encoder-only Transformer model tailored for tactile features. This model not only achieved the highest accuracy but also demonstrated significantly faster inference time compared to other evaluated models, highlighting its potential for real-time applications. To extend this investigation, we introduced a multimodal fusion setup by combining vision and tactile inputs. We trained both Surformer v1 (using structured features) and Multimodal CNN (using raw images) to examine the impact of feature-based versus image-based multimodal learning on classification accuracy and computational efficiency. The results showed that Surformer v1 achieved 99.4% accuracy with an inference time of 0.77 ms, while the Multimodal CNN achieved slightly higher accuracy but required significantly more inference time. These findings suggest Surformer v1 offers a compelling balance between accuracy, efficiency, and computational cost for surface material recognition. 
+
+**Abstract (ZH)**: 表面材料识别是机器人感知和物理交互中的关键组成部分，特别是在利用触觉和视觉传感器输入时。本文提出了一种基于Transformer的Surformer v1架构，用于基于结构化触觉特征和通过ResNet-50提取的PCA降维视觉嵌入的表面分类。该模型结合了模态特定编码器和跨模态注意力层，实现了视觉和触觉之间的丰富交互。当前，用于视觉任务的最先进的深度学习模型已取得了突出的性能。因此，我们首先进行了一系列基于触觉的表面分类实验。通过特征工程，我们训练并评估了多个机器学习模型，检查它们的准确性和推理时间。随后，我们实现了一个专门针对触觉特征的编码器模型。该模型不仅实现了最高的准确率，还展示了比其他评估模型显著更快的推理时间，突显了其在实时应用中的潜力。为进一步研究，我们通过结合视觉和触觉输入引入了一种多模态融合架构。我们分别训练了Surformer v1（使用结构化特征）和Multimodal CNN（使用原始图像），以检查基于特征的多模态学习与基于图像的多模态学习对分类准确性和计算效率的影响。结果显示，Surformer v1实现了99.4%的准确率和0.77毫秒的推理时间，而Multimodal CNN虽然具有略高的准确率，但推理时间却显著更长。这些发现表明，Surformer v1在准确率、效率和计算成本之间提供了均衡的解决方案，适用于表面材料识别。 
+
+---
