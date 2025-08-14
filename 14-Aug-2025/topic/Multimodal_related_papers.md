@@ -1,0 +1,117 @@
+# WeatherPrompt: Multi-modality Representation Learning for All-Weather Drone Visual Geo-Localization 
+
+**Title (ZH)**: WeatherPrompt：全气象条件无人机视觉地理定位的多模态表示学习 
+
+**Authors**: Jiahao Wen, Hang Yu, Zhedong Zheng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.09560)  
+
+**Abstract**: Visual geo-localization for drones faces critical degradation under weather perturbations, \eg, rain and fog, where existing methods struggle with two inherent limitations: 1) Heavy reliance on limited weather categories that constrain generalization, and 2) Suboptimal disentanglement of entangled scene-weather features through pseudo weather categories. We present WeatherPrompt, a multi-modality learning paradigm that establishes weather-invariant representations through fusing the image embedding with the text context. Our framework introduces two key contributions: First, a Training-free Weather Reasoning mechanism that employs off-the-shelf large multi-modality models to synthesize multi-weather textual descriptions through human-like reasoning. It improves the scalability to unseen or complex weather, and could reflect different weather strength. Second, to better disentangle the scene and weather feature, we propose a multi-modality framework with the dynamic gating mechanism driven by the text embedding to adaptively reweight and fuse visual features across modalities. The framework is further optimized by the cross-modal objectives, including image-text contrastive learning and image-text matching, which maps the same scene with different weather conditions closer in the respresentation space. Extensive experiments validate that, under diverse weather conditions, our method achieves competitive recall rates compared to state-of-the-art drone geo-localization methods. Notably, it improves Recall@1 by +13.37\% under night conditions and by 18.69\% under fog and snow conditions. 
+
+**Abstract (ZH)**: 无人机在遭遇天气干扰（例如雨、雾）时，基于视觉的地理定位面临关键性能下降问题。现有方法面临两大固有限制：1）对有限天气类别过度依赖，限制了泛化能力；2）通过伪天气类别难以有效分离场景与天气特征。为此，我们提出了WeatherPrompt，这是一种多模态学习范式，通过将图像嵌入与文本上下文融合来建立天气不变的表示。该框架包含两个关键贡献：首先，一种无需训练的天气推理机制，利用现成的大规模多模态模型通过类人推理生成多天气文本描述，提高对未见或复杂天气的适应性，并能反映不同的天气强度。其次，为更好地分离场景和天气特征，我们提出了一种多模态框架，该框架通过文本嵌入驱动的动态门控机制自适应调整并融合跨模态视图特征，并通过跨模态目标优化，包括图像-文本对比学习和图像-文本匹配，将具有不同天气条件的同一场景在表示空间中更接近。大量的实验验证表明，在各种天气条件下，我们的方法在与最先进的无人机地理定位方法的召回率上具有竞争力。特别是在夜间条件下，召回率@1提高了13.37%，在雾雪条件下提高了18.69%。 
+
+---
+# January Food Benchmark (JFB): A Public Benchmark Dataset and Evaluation Suite for Multimodal Food Analysis 
+
+**Title (ZH)**: January 食物基准数据集 (JFB): 多模态食物分析的公共基准数据集及评估套件 
+
+**Authors**: Amir Hosseinian, Ashkan Dehghani Zahedani, Umer Mansoor, Noosheen Hashemi, Mark Woodward  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.09966)  
+
+**Abstract**: Progress in AI for automated nutritional analysis is critically hampered by the lack of standardized evaluation methodologies and high-quality, real-world benchmark datasets. To address this, we introduce three primary contributions. First, we present the January Food Benchmark (JFB), a publicly available collection of 1,000 food images with human-validated annotations. Second, we detail a comprehensive benchmarking framework, including robust metrics and a novel, application-oriented overall score designed to assess model performance holistically. Third, we provide baseline results from both general-purpose Vision-Language Models (VLMs) and our own specialized model, january/food-vision-v1. Our evaluation demonstrates that the specialized model achieves an Overall Score of 86.2, a 12.1-point improvement over the best-performing general-purpose configuration. This work offers the research community a valuable new evaluation dataset and a rigorous framework to guide and benchmark future developments in automated nutritional analysis. 
+
+**Abstract (ZH)**: 人工智能在自动营养分析领域的进展因缺乏标准化评估方法和高质量的实际基准数据集而受严重阻碍。为此，我们提出了三项主要贡献。首先，我们介绍了公开可用的January Food Benchmark (JFB)，包含1,000张带有手工验证标注的食品图像。其次，我们详细介绍了全面的基准测试框架，包括稳健的评估指标和面向应用的整体评分，旨在全面评估模型性能。第三，我们提供了通用视觉-语言模型（VLMs）和我们自己专门模型january/food-vision-v1的基线结果。评估结果显示，专门模型的整体评分为86.2，比表现最好的通用配置高出12.1分。本工作为研究界提供了 valuable 新的评估数据集和严格的框架，以指导和基准测试未来自动营养分析的发展。 
+
+---
+# Gen-AFFECT: Generation of Avatar Fine-grained Facial Expressions with Consistent identiTy 
+
+**Title (ZH)**: Gen-AFFECT: 生成具有一致身份的细粒度 avatar 面部表情 
+
+**Authors**: Hao Yu, Rupayan Mallick, Margrit Betke, Sarah Adel Bargal  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.09461)  
+
+**Abstract**: Different forms of customized 2D avatars are widely used in gaming applications, virtual communication, education, and content creation. However, existing approaches often fail to capture fine-grained facial expressions and struggle to preserve identity across different expressions. We propose GEN-AFFECT, a novel framework for personalized avatar generation that generates expressive and identity-consistent avatars with a diverse set of facial expressions. Our framework proposes conditioning a multimodal diffusion transformer on an extracted identity-expression representation. This enables identity preservation and representation of a wide range of facial expressions. GEN-AFFECT additionally employs consistent attention at inference for information sharing across the set of generated expressions, enabling the generation process to maintain identity consistency over the array of generated fine-grained expressions. GEN-AFFECT demonstrates superior performance compared to previous state-of-the-art methods on the basis of the accuracy of the generated expressions, the preservation of the identity and the consistency of the target identity across an array of fine-grained facial expressions. 
+
+**Abstract (ZH)**: 一种新颖的个性化 avatar 生成框架：GEN-AFFECT，用于生成具有多样化面部表达且身份一致的 avatar 
+
+---
+# FusionEnsemble-Net: An Attention-Based Ensemble of Spatiotemporal Networks for Multimodal Sign Language Recognition 
+
+**Title (ZH)**: 基于注意力机制的时空网络融合 ensemble 模型：多种模态手语识别 
+
+**Authors**: Md. Milon Islam, Md Rezwanul Haque, S M Taslim Uddin Raju, Fakhri Karray  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.09362)  
+
+**Abstract**: Accurate recognition of sign language in healthcare communication poses a significant challenge, requiring frameworks that can accurately interpret complex multimodal gestures. To deal with this, we propose FusionEnsemble-Net, a novel attention-based ensemble of spatiotemporal networks that dynamically fuses visual and motion data to enhance recognition accuracy. The proposed approach processes RGB video and range Doppler map radar modalities synchronously through four different spatiotemporal networks. For each network, features from both modalities are continuously fused using an attention-based fusion module before being fed into an ensemble of classifiers. Finally, the outputs of these four different fused channels are combined in an ensemble classification head, thereby enhancing the model's robustness. Experiments demonstrate that FusionEnsemble-Net outperforms state-of-the-art approaches with a test accuracy of 99.44% on the large-scale MultiMeDaLIS dataset for Italian Sign Language. Our findings indicate that an ensemble of diverse spatiotemporal networks, unified by attention-based fusion, yields a robust and accurate framework for complex, multimodal isolated gesture recognition tasks. The source code is available at: this https URL. 
+
+**Abstract (ZH)**: 基于 Attention 的时空网络融合体系结构在手语识别中的应用：一种增强准确性的新方法 
+
+---
+# AMRG: Extend Vision Language Models for Automatic Mammography Report Generation 
+
+**Title (ZH)**: AMRG: 扩展视觉语言模型以实现自动乳腺影像报告生成 
+
+**Authors**: Nak-Jun Sung, Donghyun Lee, Bo Hwa Choi, Chae Jung Park  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.09225)  
+
+**Abstract**: Mammography report generation is a critical yet underexplored task in medical AI, characterized by challenges such as multiview image reasoning, high-resolution visual cues, and unstructured radiologic language. In this work, we introduce AMRG (Automatic Mammography Report Generation), the first end-to-end framework for generating narrative mammography reports using large vision-language models (VLMs). Building upon MedGemma-4B-it-a domain-specialized, instruction-tuned VLM-we employ a parameter-efficient fine-tuning (PEFT) strategy via Low-Rank Adaptation (LoRA), enabling lightweight adaptation with minimal computational overhead. We train and evaluate AMRG on DMID, a publicly available dataset of paired high-resolution mammograms and diagnostic reports. This work establishes the first reproducible benchmark for mammography report generation, addressing a longstanding gap in multimodal clinical AI. We systematically explore LoRA hyperparameter configurations and conduct comparative experiments across multiple VLM backbones, including both domain-specific and general-purpose models under a unified tuning protocol. Our framework demonstrates strong performance across both language generation and clinical metrics, achieving a ROUGE-L score of 0.5691, METEOR of 0.6152, CIDEr of 0.5818, and BI-RADS accuracy of 0.5582. Qualitative analysis further highlights improved diagnostic consistency and reduced hallucinations. AMRG offers a scalable and adaptable foundation for radiology report generation and paves the way for future research in multimodal medical AI. 
+
+**Abstract (ZH)**: 自动乳腺影像报告生成是医疗AI中一个关键但未充分探索的任务，特征包括多视图图像推理、高分辨率视觉线索和非结构化放射语言挑战。在本文中，我们引入了AMRG（自动乳腺影像报告生成），这是首个使用大规模视觉-语言模型（VLM）生成叙述性乳腺影像报告的端到端框架。基于经过领域特化和指令调优的MedGemma-4B-i模型，我们采用低秩适应（LoRA）的参数高效微调（PEFT）策略，实现轻量化适配并减少计算开销。我们在DMID数据集上训练和评估了AMRG，该数据集包含配对的高分辨率乳腺影像和诊断报告。本工作建立了首个可再现的乳腺影像报告生成基准，填补了多模态临床AI领域的长期空白。我们系统地探索了LoRA超参数配置，并在包括领域特定和通用模型在内的统一调优协议下进行了跨多种VLM骨干网络的比较实验。我们的框架在语言生成和临床指标方面均表现出强大性能，ROUGE-L评分为0.5691，METEOR评分为0.6152，CIDEr评分为0.5818，BI-RADS准确率为0.5582。定性分析进一步强调了诊断一致性提高和幻觉减少。AMRG提供了一个可扩展和适应性强的基础框架，用于放射学报告生成，并为未来的多模态医疗AI研究铺平了道路。 
+
+---
+# impuTMAE: Multi-modal Transformer with Masked Pre-training for Missing Modalities Imputation in Cancer Survival Prediction 
+
+**Title (ZH)**: impuTMAE：用于癌症生存预测中多模态缺失模态填充的掩蔽预训练Transformer 
+
+**Authors**: Maria Boyko, Aleksandra Beliaeva, Dmitriy Kornilov, Alexander Bernstein, Maxim Sharaev  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.09195)  
+
+**Abstract**: The use of diverse modalities, such as omics, medical images, and clinical data can not only improve the performance of prognostic models but also deepen an understanding of disease mechanisms and facilitate the development of novel treatment approaches. However, medical data are complex, often incomplete, and contains missing modalities, making effective handling its crucial for training multimodal models. We introduce impuTMAE, a novel transformer-based end-to-end approach with an efficient multimodal pre-training strategy. It learns inter- and intra-modal interactions while simultaneously imputing missing modalities by reconstructing masked patches. Our model is pre-trained on heterogeneous, incomplete data and fine-tuned for glioma survival prediction using TCGA-GBM/LGG and BraTS datasets, integrating five modalities: genetic (DNAm, RNA-seq), imaging (MRI, WSI), and clinical data. By addressing missing data during pre-training and enabling efficient resource utilization, impuTMAE surpasses prior multimodal approaches, achieving state-of-the-art performance in glioma patient survival prediction. Our code is available at this https URL 
+
+**Abstract (ZH)**: 多种模态（如组学、医学图像和临床数据）的使用不仅可以提高预后模型的性能，还可以加深对疾病机制的理解，并促进新治疗方案的发展。然而，医疗数据复杂且经常不完整，包含缺失的模态，因此有效处理这些数据对于训练多模态模型至关重要。我们引入了impuTMAE，这是一种新颖的基于变压器的端到端方法，具有高效的多模态预训练策略。该方法在学习跨模态和同模态交互的同时，通过重建掩码片段来填补缺失的模态。我们的模型在异质且不完整的数据上进行预训练，并使用TCGA-GBM/LGG和BraTS数据集微调以预测胶质瘤患者的生存情况，整合了五种模态：遗传学（DNA甲基化、RNA-seq）、影像学（MRI、WSI）和临床数据。通过对预训练过程中缺失数据的处理以及高效资源利用，impuTMAE超越了之前的多模态方法，在胶质瘤患者生存预测方面实现了最先进的性能。我们的代码可在以下链接获取。 
+
+---
+# A Context-aware Attention and Graph Neural Network-based Multimodal Framework for Misogyny Detection 
+
+**Title (ZH)**: 基于上下文感知注意力和图神经网络的多模态误 ActionTypes检测框架 
+
+**Authors**: Mohammad Zia Ur Rehman, Sufyaan Zahoor, Areeb Manzoor, Musharaf Maqbool, Nagendra Kumar  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.09175)  
+
+**Abstract**: A substantial portion of offensive content on social media is directed towards women. Since the approaches for general offensive content detection face a challenge in detecting misogynistic content, it requires solutions tailored to address offensive content against women. To this end, we propose a novel multimodal framework for the detection of misogynistic and sexist content. The framework comprises three modules: the Multimodal Attention module (MANM), the Graph-based Feature Reconstruction Module (GFRM), and the Content-specific Features Learning Module (CFLM). The MANM employs adaptive gating-based multimodal context-aware attention, enabling the model to focus on relevant visual and textual information and generating contextually relevant features. The GFRM module utilizes graphs to refine features within individual modalities, while the CFLM focuses on learning text and image-specific features such as toxicity features and caption features. Additionally, we curate a set of misogynous lexicons to compute the misogyny-specific lexicon score from the text. We apply test-time augmentation in feature space to better generalize the predictions on diverse inputs. The performance of the proposed approach has been evaluated on two multimodal datasets, MAMI and MMHS150K, with 11,000 and 13,494 samples, respectively. The proposed method demonstrates an average improvement of 10.17% and 8.88% in macro-F1 over existing methods on the MAMI and MMHS150K datasets, respectively. 
+
+**Abstract (ZH)**: 社交媒体中针对女性的仇恨内容占据相当一部分。由于常规的仇恨内容检测方法在检测厌女内容方面面临挑战，需要专门针对针对女性的仇恨内容开发解决方案。基于此，我们提出了一种新颖的多模态框架，用于检测厌女和性别歧视内容。该框架包括三个模块：多模态注意力模块（MANM）、图-based 特征重构模块（GFRM）和内容特异性特征学习模块（CFLM）。MANM 使用自适应门控机制的多模态上下文感知注意力，使模型能够集中于相关视觉和文本信息，并生成上下文相关特征。GFRM 模块利用图来细化各个模态内的特征，而 CFLM 则专注于学习文本和图像特异性特征，如攻击性特征和描述特征。此外，我们收集了一组厌女词汇集，以从文本中计算出厌女特定的词汇分值。我们在特征空间应用测试时增强技术，以更好地泛化不同输入的预测。提出的办法在 MAMI 和 MMHS150K 两个多模态数据集上的性能进行了评估，分别包含 11,000 和 13,494 个样本。该方法在 MAMI 和 MMHS150K 数据集上分别在宏 F1 分数上比现有方法提高了 10.17% 和 8.88%。 
+
+---
+# Multimodal RAG Enhanced Visual Description 
+
+**Title (ZH)**: 多模态RAG增强视觉描述 
+
+**Authors**: Amit Kumar Jaiswal, Haiming Liu, Ingo Frommholz  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.09170)  
+
+**Abstract**: Textual descriptions for multimodal inputs entail recurrent refinement of queries to produce relevant output images. Despite efforts to address challenges such as scaling model size and data volume, the cost associated with pre-training and fine-tuning remains substantial. However, pre-trained large multimodal models (LMMs) encounter a modality gap, characterised by a misalignment between textual and visual representations within a common embedding space. Although fine-tuning can potentially mitigate this gap, it is typically expensive and impractical due to the requirement for extensive domain-driven data. To overcome this challenge, we propose a lightweight training-free approach utilising Retrieval-Augmented Generation (RAG) to extend across the modality using a linear mapping, which can be computed efficiently. During inference, this mapping is applied to images embedded by an LMM enabling retrieval of closest textual descriptions from the training set. These textual descriptions, in conjunction with an instruction, cater as an input prompt for the language model to generate new textual descriptions. In addition, we introduce an iterative technique for distilling the mapping by generating synthetic descriptions via the language model facilitating optimisation for standard utilised image description measures. Experimental results on two benchmark multimodal datasets demonstrate significant improvements. 
+
+**Abstract (ZH)**: 多模态输入的文字描述涉及对查询的递归 refinement 以生成相关输出图像。尽管在应对模型规模和数据量扩大的挑战方面做出了努力，但预训练和微调相关的成本仍然相当高。然而，预训练的大规模多模态模型（LMMs）遇到了模态差距的问题，即文本和视觉表示在共同嵌入空间中的不对齐。尽管微调可以潜在地缓解这一差距，但由于需要大量领域驱动的数据，通常代价高昂且 impractical。为克服这一挑战，我们提出了一种轻量级的无需训练的方法，利用检索增强生成（RAG）通过线性映射跨模态扩展，该映射可以高效计算。在推理时，该映射应用于由 LMM 编码的图像，以从训练集检索最近的文本描述。这些文本描述连同指令一起作为语言模型生成新文本描述的输入提示。此外，我们介绍了一种迭代技术，通过语言模型生成合成描述对映射进行蒸馏，以优化标准使用的图像描述度量。在两个基准多模态数据集上的实验结果显示出显著的改进。 
+
+---
+# A Rolling Stone Gathers No Moss: Adaptive Policy Optimization for Stable Self-Evaluation in Large Multimodal Models 
+
+**Title (ZH)**: 一块滚动的石头不会长苔藓：自适应策略优化以在大型多模态模型中实现稳定自评估 
+
+**Authors**: Wenkai Wang, Hongcan Guo, Zheqi Lv, Shengyu Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.09155)  
+
+**Abstract**: Self-evaluation, a model's ability to assess the correctness of its own output, is crucial for Large Multimodal Models (LMMs) to achieve self-improvement in multi-turn conversations, yet largely absent in foundation models. Recent work has employed reinforcement learning (RL) to enhance self-evaluation; however, its fixed reward mechanism suffers from reward hacking when optimizing multiple training objectives, leading to model collapse. In this paper we propose AdaPO, an online reinforcement learning framework capable of adaptively adjusting training objective in real time according to the current training state for each task. Specifically, to mitigate reward hacking , AdaPO introduces an Adaptive Reward Model (ARM) and a Reward Aware Dynamic KL Regularization mechanism. ARM assesses the task's training state from the distribution of model generated multi-turn trajectories' performance. Reward Aware Dynamic KL replaces a fixed penalty with dynamic coefficients which is modulated by the reward gap between different multi-turn situations. Notably, our method automatically and smoothly adjusts its learning focus based on sub-tasks' training progress without manual intervention. Extensive experiments over 8 benchmarks and various models show that our method significantly enhances both direct reasoning and self-evaluation capability. We will release our code to contribute to the community. 
+
+**Abstract (ZH)**: 自评估：一种大型多模态模型在多轮对话中实现自我改进的关键能力，但基础模型中普遍缺乏。近期工作利用强化学习增强自评估，但由于其固定奖励机制在优化多种训练目标时容易导致奖励 hacking，导致模型崩溃。本文提出 AdaPO，一种能够根据当前训练状态实时自适应调整训练目标的在线强化学习框架。具体而言，为了减轻奖励 hacking，AdaPO 引入了自适应奖励模型（ARM）和奖励感知动态 KL 正则化机制。ARM 通过对模型生成的多轮轨迹性能分布进行评估来判断任务的训练状态。奖励感知动态 KL 用动态系数替代固定惩罚，这些系数由不同多轮情境间的奖励差距调节。值得注意的是，我们的方法能够根据子任务的训练进度自动且平滑地调整其学习重点，无需手动干预。在 8 个基准和多种模型上的广泛实验表明，我们的方法显著提高了直接推理和自评估能力。我们将发布代码以贡献给社区。 
+
+---
