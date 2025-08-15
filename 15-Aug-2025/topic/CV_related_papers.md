@@ -1,0 +1,242 @@
+# SpaRC-AD: A Baseline for Radar-Camera Fusion in End-to-End Autonomous Driving 
+
+**Title (ZH)**: SpaRC-AD：端到端自主驾驶中雷达与摄像头融合的基线方法 
+
+**Authors**: Philipp Wolters, Johannes Gilg, Torben Teepe, Gerhard Rigoll  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.10567)  
+
+**Abstract**: End-to-end autonomous driving systems promise stronger performance through unified optimization of perception, motion forecasting, and planning. However, vision-based approaches face fundamental limitations in adverse weather conditions, partial occlusions, and precise velocity estimation - critical challenges in safety-sensitive scenarios where accurate motion understanding and long-horizon trajectory prediction are essential for collision avoidance. To address these limitations, we propose SpaRC-AD, a query-based end-to-end camera-radar fusion framework for planning-oriented autonomous driving. Through sparse 3D feature alignment, and doppler-based velocity estimation, we achieve strong 3D scene representations for refinement of agent anchors, map polylines and motion modelling. Our method achieves strong improvements over the state-of-the-art vision-only baselines across multiple autonomous driving tasks, including 3D detection (+4.8% mAP), multi-object tracking (+8.3% AMOTA), online mapping (+1.8% mAP), motion prediction (-4.0% mADE), and trajectory planning (-0.1m L2 and -9% TPC). We achieve both spatial coherence and temporal consistency on multiple challenging benchmarks, including real-world open-loop nuScenes, long-horizon T-nuScenes, and closed-loop simulator Bench2Drive. We show the effectiveness of radar-based fusion in safety-critical scenarios where accurate motion understanding and long-horizon trajectory prediction are essential for collision avoidance. The source code of all experiments is available at this https URL 
+
+**Abstract (ZH)**: 基于查询的端到端相机-雷达融合规划导向自动驾驶系统 
+
+---
+# PASS: Probabilistic Agentic Supernet Sampling for Interpretable and Adaptive Chest X-Ray Reasoning 
+
+**Title (ZH)**: PASS: 概率代理超网络采样方法实现可
+user
+PASS: Probabilistic Agentic Supernet Sampling for Interpretable and Adaptive Chest X-Ray Reasoning yab.getLogger()助手翻译错误，请重新翻译，要符合学术规范。 
+
+**Authors**: Yushi Feng, Junye Du, Yingying Hong, Qifan Wang, Lequan Yu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.10501)  
+
+**Abstract**: Existing tool-augmented agentic systems are limited in the real world by (i) black-box reasoning steps that undermine trust of decision-making and pose safety risks, (ii) poor multimodal integration, which is inherently critical for healthcare tasks, and (iii) rigid and computationally inefficient agentic pipelines. We introduce PASS (Probabilistic Agentic Supernet Sampling), the first multimodal framework to address these challenges in the context of Chest X-Ray (CXR) reasoning. PASS adaptively samples agentic workflows over a multi-tool graph, yielding decision paths annotated with interpretable probabilities. Given the complex CXR reasoning task with multimodal medical data, PASS leverages its learned task-conditioned distribution over the agentic supernet. Thus, it adaptively selects the most suitable tool at each supernet layer, offering probability-annotated trajectories for post-hoc audits and directly enhancing medical AI safety. PASS also continuously compresses salient findings into an evolving personalized memory, while dynamically deciding whether to deepen its reasoning path or invoke an early exit for efficiency. To optimize a Pareto frontier balancing performance and cost, we design a novel three-stage training procedure, including expert knowledge warm-up, contrastive path-ranking, and cost-aware reinforcement learning. To facilitate rigorous evaluation, we introduce CAB-E, a comprehensive benchmark for multi-step, safety-critical, free-form CXR reasoning. Experiments across various benchmarks validate that PASS significantly outperforms strong baselines in multiple metrics (e.g., accuracy, AUC, LLM-J.) while balancing computational costs, pushing a new paradigm shift towards interpretable, adaptive, and multimodal medical agentic systems. 
+
+**Abstract (ZH)**: PASS：面向胸部X光图像推理的概率代理超网络采样 
+
+---
+# ToonComposer: Streamlining Cartoon Production with Generative Post-Keyframing 
+
+**Title (ZH)**: ToonComposer: 生成式后关键帧优化的动画片生产简化方法 
+
+**Authors**: Lingen Li, Guangzhi Wang, Zhaoyang Zhang, Yaowei Li, Xiaoyu Li, Qi Dou, Jinwei Gu, Tianfan Xue, Ying Shan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.10881)  
+
+**Abstract**: Traditional cartoon and anime production involves keyframing, inbetweening, and colorization stages, which require intensive manual effort. Despite recent advances in AI, existing methods often handle these stages separately, leading to error accumulation and artifacts. For instance, inbetweening approaches struggle with large motions, while colorization methods require dense per-frame sketches. To address this, we introduce ToonComposer, a generative model that unifies inbetweening and colorization into a single post-keyframing stage. ToonComposer employs a sparse sketch injection mechanism to provide precise control using keyframe sketches. Additionally, it uses a cartoon adaptation method with the spatial low-rank adapter to tailor a modern video foundation model to the cartoon domain while keeping its temporal prior intact. Requiring as few as a single sketch and a colored reference frame, ToonComposer excels with sparse inputs, while also supporting multiple sketches at any temporal location for more precise motion control. This dual capability reduces manual workload and improves flexibility, empowering artists in real-world scenarios. To evaluate our model, we further created PKBench, a benchmark featuring human-drawn sketches that simulate real-world use cases. Our evaluation demonstrates that ToonComposer outperforms existing methods in visual quality, motion consistency, and production efficiency, offering a superior and more flexible solution for AI-assisted cartoon production. 
+
+**Abstract (ZH)**: 传统的动画片和动漫生产涉及关键帧设定、中间帧生成和着色阶段，这些阶段需要大量的手动工作。尽管最近的人工智能取得了进展，现有的方法通常分别处理这些阶段，导致错误累积和伪影。例如，中间帧生成方法难以处理大动作，而着色方法需要每帧密集的素描。为了解决这个问题，我们引入了ToonComposer，这是一个生成模型，将中间帧生成和着色统一到关键帧设定后的单个阶段。ToonComposer采用稀疏素描注入机制，通过关键帧素描提供精确控制。此外，它使用空间低秩适配器来调整现代视频基础模型以适应动漫领域，同时保持其时间先验不变。只需单个素描和着色参考帧，ToonComposer即可高效处理稀疏输入，并支持任何时间位置的多个素描以实现更精细的动作控制。这种双重能力减少了手动工作量并提高了灵活性，使艺术家在实际场景中受益。为了评估我们的模型，我们进一步创建了PKBench，这是一个包含人类绘制素描的基准，这些素描模拟了真实世界的应用场景。我们的评估表明，ToonComposer在视觉质量、动作一致性以及生产效率方面优于现有方法，提供了一种更优秀且更灵活的辅助动漫生产的解决方案。 
+
+---
+# Medico 2025: Visual Question Answering for Gastrointestinal Imaging 
+
+**Title (ZH)**: 医como 2025：消化道成像的视觉问答 
+
+**Authors**: Sushant Gautam, Vajira Thambawita, Michael Riegler, Pål Halvorsen, Steven Hicks  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.10869)  
+
+**Abstract**: The Medico 2025 challenge addresses Visual Question Answering (VQA) for Gastrointestinal (GI) imaging, organized as part of the MediaEval task series. The challenge focuses on developing Explainable Artificial Intelligence (XAI) models that answer clinically relevant questions based on GI endoscopy images while providing interpretable justifications aligned with medical reasoning. It introduces two subtasks: (1) answering diverse types of visual questions using the Kvasir-VQA-x1 dataset, and (2) generating multimodal explanations to support clinical decision-making. The Kvasir-VQA-x1 dataset, created from 6,500 images and 159,549 complex question-answer (QA) pairs, serves as the benchmark for the challenge. By combining quantitative performance metrics and expert-reviewed explainability assessments, this task aims to advance trustworthy Artificial Intelligence (AI) in medical image analysis. Instructions, data access, and an updated guide for participation are available in the official competition repository: this https URL 
+
+**Abstract (ZH)**: 2025医医挑战关注消化道成像的视觉问答（VQA），并通过MediaEval任务系列组织。该挑战旨在开发可解释的人工智能（XAI）模型，基于消化道内镜图像回答临床相关问题，并提供与医学推理相一致的可解释理由。该挑战引入了两个子任务：（1）使用Kvasir-VQA-x1数据集回答各种视觉问题，（2）生成支持临床决策的多模态解释。Kvasir-VQA-x1数据集包含6,500张图像和159,549个复杂问题-答案（QA）对，作为挑战的基准。通过结合定量性能指标和专家评审的可解释性评估，该任务旨在推动医疗图像分析中可信的人工智能（AI）的发展。官方竞赛 repository 提供了指南、数据访问和更新的参赛指南：this https URL。 
+
+---
+# Ultra-High-Definition Reference-Based Landmark Image Super-Resolution with Generative Diffusion Prior 
+
+**Title (ZH)**: 基于生成性扩散先验的 Ultra-HD 参考导向地标图像超分辨率 
+
+**Authors**: Zhenning Shi, Zizheng Yan, Yuhang Yu, Clara Xue, Jingyu Zhuang, Qi Zhang, Jinwei Chen, Tao Li, Qingnan Fan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.10779)  
+
+**Abstract**: Reference-based Image Super-Resolution (RefSR) aims to restore a low-resolution (LR) image by utilizing the semantic and texture information from an additional reference high-resolution (reference HR) image. Existing diffusion-based RefSR methods are typically built upon ControlNet, which struggles to effectively align the information between the LR image and the reference HR image. Moreover, current RefSR datasets suffer from limited resolution and poor image quality, resulting in the reference images lacking sufficient fine-grained details to support high-quality restoration. To overcome the limitations above, we propose TriFlowSR, a novel framework that explicitly achieves pattern matching between the LR image and the reference HR image. Meanwhile, we introduce Landmark-4K, the first RefSR dataset for Ultra-High-Definition (UHD) landmark scenarios. Considering the UHD scenarios with real-world degradation, in TriFlowSR, we design a Reference Matching Strategy to effectively match the LR image with the reference HR image. Experimental results show that our approach can better utilize the semantic and texture information of the reference HR image compared to previous methods. To the best of our knowledge, we propose the first diffusion-based RefSR pipeline for ultra-high definition landmark scenarios under real-world degradation. Our code and model will be available at this https URL. 
+
+**Abstract (ZH)**: 基于参考的图像超分辨率 (RefSR) 致力于通过利用附加参考高分辨率 (参考HR) 图像的语义和纹理信息来恢复低分辨率 (LR) 图像。现有的基于扩散的 RefSR 方法通常基于 ControlNet 构建，难以有效对齐 LR 图像和参考 HR 图像之间的信息。此外，当前的 RefSR 数据集分辨率有限且图像质量差，导致参考图像缺乏足够的细粒度细节以支持高质量的恢复。为克服上述限制，我们提出了 TriFlowSR，一个新框架，明确实现 LR 图像与参考 HR 图像之间的模式匹配。同时，我们引入了 Landmark-4K，首个适用于超高清 (UHD) 标志场景的 RefSR 数据集。考虑到具有真实世界降级的 UHD 场景，我们在 TriFlowSR 中设计了一种参考匹配策略，以有效匹配 LR 图像与参考 HR 图像。实验结果显示，与以往方法相比，我们的方法能够更好地利用参考 HR 图像的语义和纹理信息。据我们所知，我们提出了首个适用于具有真实世界降级的超高清标志场景的基于扩散的 RefSR 管线。我们的代码和模型将发布在上述网址。 
+
+---
+# Video-BLADE: Block-Sparse Attention Meets Step Distillation for Efficient Video Generation 
+
+**Title (ZH)**: 视频-BLADE: 块稀疏注意力与步进distillation相结合的高效视频生成 
+
+**Authors**: Youping Gu, Xiaolong Li, Yuhao Hu, Bohan Zhuang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.10774)  
+
+**Abstract**: Diffusion transformers currently lead the field in high-quality video generation, but their slow iterative denoising process and prohibitive quadratic attention costs for long sequences create significant inference bottlenecks. While both step distillation and sparse attention mechanisms have shown promise as independent acceleration strategies, effectively combining these approaches presents critical challenges -- training-free integration yields suboptimal results, while separately training sparse attention after step distillation requires prohibitively expensive high-quality video data. To overcome these limitations, we propose BLADE, an innovative data-free joint training framework that introduces: (1) an Adaptive Block-Sparse Attention (ASA) mechanism for dynamically generating content-aware sparsity masks to focus computation on salient spatiotemporal features, and (2) a sparsity-aware step distillation paradigm built upon Trajectory Distribution Matching (TDM) that directly incorporates sparsity into the distillation process rather than treating it as a separate compression step, with fast convergence. We validate BLADE on text-to-video models like CogVideoX-5B and Wan2.1-1.3B. Our framework demonstrates remarkable efficiency gains across different scales. On Wan2.1-1.3B, BLADE achieves a 14.10x end-to-end inference acceleration over a 50-step baseline. Moreover, on models such as CogVideoX-5B with short video sequence lengths, our framework delivers a robust 8.89x speedup. Crucially, the acceleration is accompanied by a consistent quality improvement. On the VBench-2.0 benchmark, BLADE boosts the score of CogVideoX-5B to 0.569 (from 0.534) and Wan2.1-1.3B to 0.570 (from 0.563), results that are further corroborated by superior ratings in human evaluations. Our code and model weights are publicly available at: this http URL. 
+
+**Abstract (ZH)**: 基于BLADE的数据驱动联合训练框架在高效率视频生成中的应用 
+
+---
+# AEGIS: Authenticity Evaluation Benchmark for AI-Generated Video Sequences 
+
+**Title (ZH)**: AEGIS: AI生成视频序列真实性评估基准 
+
+**Authors**: Jieyu Li, Xin Zhang, Joey Tianyi Zhou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.10771)  
+
+**Abstract**: Recent advances in AI-generated content have fueled the rise of highly realistic synthetic videos, posing severe risks to societal trust and digital integrity. Existing benchmarks for video authenticity detection typically suffer from limited realism, insufficient scale, and inadequate complexity, failing to effectively evaluate modern vision-language models against sophisticated forgeries. To address this critical gap, we introduce AEGIS, a novel large-scale benchmark explicitly targeting the detection of hyper-realistic and semantically nuanced AI-generated videos. AEGIS comprises over 10,000 rigorously curated real and synthetic videos generated by diverse, state-of-the-art generative models, including Stable Video Diffusion, CogVideoX-5B, KLing, and Sora, encompassing open-source and proprietary architectures. In particular, AEGIS features specially constructed challenging subsets enhanced with robustness evaluation. Furthermore, we provide multimodal annotations spanning Semantic-Authenticity Descriptions, Motion Features, and Low-level Visual Features, facilitating authenticity detection and supporting downstream tasks such as multimodal fusion and forgery localization. Extensive experiments using advanced vision-language models demonstrate limited detection capabilities on the most challenging subsets of AEGIS, highlighting the dataset's unique complexity and realism beyond the current generalization capabilities of existing models. In essence, AEGIS establishes an indispensable evaluation benchmark, fundamentally advancing research toward developing genuinely robust, reliable, broadly generalizable video authenticity detection methodologies capable of addressing real-world forgery threats. Our dataset is available on this https URL. 
+
+**Abstract (ZH)**: Recent Advances in AI-Generated Content Have Fuelled the Rise of Highly Realistic Synthetic Videos, Posing Severe Risks to Societal Trust and Digital Integrity: Introducing AEGIS, a Novel Large-Scale Benchmark for Detecting Hyper-Realistic and Semantically Nuanced AI-Generated Videos 
+
+---
+# Continuous Bangla Sign Language Translation: Mitigating the Expense of Gloss Annotation with the Assistance of Graph 
+
+**Title (ZH)**: 连续手势翻译：借助图辅助减轻高尔斯注释的开销 
+
+**Authors**: Safaeid Hossain Arib, Rabeya Akter, Sejuti Rahman  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.10687)  
+
+**Abstract**: Millions of individuals worldwide are affected by deafness and hearing impairment. Sign language serves as a sophisticated means of communication for the deaf and hard of hearing. However, in societies that prioritize spoken languages, sign language often faces underestimation, leading to communication barriers and social exclusion. The Continuous Bangla Sign Language Translation project aims to address this gap by enhancing translation methods. While recent approaches leverage transformer architecture for state-of-the-art results, our method integrates graph-based methods with the transformer architecture. This fusion, combining transformer and STGCN-LSTM architectures, proves more effective in gloss-free translation. Our contributions include architectural fusion, exploring various fusion strategies, and achieving a new state-of-the-art performance on diverse sign language datasets, namely RWTH-PHOENIX-2014T, CSL-Daily, How2Sign, and BornilDB v1.0. Our approach demonstrates superior performance compared to current translation outcomes across all datasets, showcasing notable improvements of BLEU-4 scores of 4.01, 2.07, and 0.5, surpassing those of GASLT, GASLT and slt_how2sign in RWTH-PHOENIX-2014T, CSL-Daily, and How2Sign, respectively. Also, we introduce benchmarking on the BornilDB v1.0 dataset for the first time. Our method sets a benchmark for future research, emphasizing the importance of gloss-free translation to improve communication accessibility for the deaf and hard of hearing. 
+
+**Abstract (ZH)**: 全球有数百万人受到聋哑和听力障碍的影响。手语是聋人和听力障碍者进行沟通的一种复杂方式。然而，在重视口语的社会中，手语往往被低估，导致沟通障碍和社会排斥。连续孟加拉手语翻译项目旨在通过改进翻译方法来填补这一空白。尽管近年来的方法利用变换器架构取得了最先进的结果，我们的方法将基于图的方法与变换器架构结合起来。这种结合，即变换器与STGCN-LSTM架构的融合，在无手语点翻译中表现更佳。我们的贡献包括架构融合、探索各种融合策略，并在多种手语数据集（如RWTH-PHOENIX-2014T、CSL-Daily、How2Sign和BornilDB v1.0）上取得了新的最先进的性能。我们的方法在所有数据集上的性能优于当前的翻译结果，展示了BLEU-4得分分别为4.01、2.07和0.5的显著改进，超过了GASLT、GASLT和slt_how2sign在RWTH-PHOENIX-2014T、CSL-Daily和How2Sign上的结果。此外，我们首次在BornilDB v1.0数据集上进行了基准测试。我们的方法为未来的研究设定了基准，并强调了无手语点翻译的重要性，以提高聋人和听力障碍者的沟通可访问性。 
+
+---
+# Hybrid Generative Fusion for Efficient and Privacy-Preserving Face Recognition Dataset Generation 
+
+**Title (ZH)**: 混合生成融合用于高效和隐私保护的面部识别数据集生成 
+
+**Authors**: Feiran Li, Qianqian Xu, Shilong Bao, Boyu Han, Zhiyong Yang, Qingming Huang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.10672)  
+
+**Abstract**: In this paper, we present our approach to the DataCV ICCV Challenge, which centers on building a high-quality face dataset to train a face recognition model. The constructed dataset must not contain identities overlapping with any existing public face datasets. To handle this challenge, we begin with a thorough cleaning of the baseline HSFace dataset, identifying and removing mislabeled or inconsistent identities through a Mixture-of-Experts (MoE) strategy combining face embedding clustering and GPT-4o-assisted verification. We retain the largest consistent identity cluster and apply data augmentation up to a fixed number of images per identity. To further diversify the dataset, we generate synthetic identities using Stable Diffusion with prompt engineering. As diffusion models are computationally intensive, we generate only one reference image per identity and efficiently expand it using Vec2Face, which rapidly produces 49 identity-consistent variants. This hybrid approach fuses GAN-based and diffusion-based samples, enabling efficient construction of a diverse and high-quality dataset. To address the high visual similarity among synthetic identities, we adopt a curriculum learning strategy by placing them early in the training schedule, allowing the model to progress from easier to harder samples. Our final dataset contains 50 images per identity, and all newly generated identities are checked with mainstream face datasets to ensure no identity leakage. Our method achieves \textbf{1st place} in the competition, and experimental results show that our dataset improves model performance across 10K, 20K, and 100K identity scales. Code is available at this https URL. 
+
+**Abstract (ZH)**: 在本次论文中，我们提出了针对DataCV ICCV挑战赛的方法，重点在于构建一个高质量的人脸数据集以训练人脸识别模型。所构建的数据集必须不包含与任何现有公开人脸数据集重叠的身份信息。为应对这一挑战，我们从基线HSFace数据集的彻底清洁开始，通过结合人脸嵌入聚类和GPT-4o辅助验证的专家混合（MoE）策略，识别并移除错误标记或不一致的身份信息。保留最大的一致身份集群，并对每个身份进行数据扩增，直至固定数量的图像。为进一步增加数据集的多样性，我们使用Stable Diffusion生成合成身份，并结合提示工程。由于扩散模型计算密集，我们为每个身份生成一个参考图像，并使用Vec2Face高效扩展，快速生成49个身份一致的变体。这种混合方法结合了基于GAN和扩散模型的样本，能够高效构建一个多样化和高质量的数据集。为了解决合成身份之间高视觉相似性的问题，我们采用了课堂学习策略，在训练计划早期放置它们，使模型能够从较易到较难的样本逐步进步。最终数据集包含每个身份50张图像，所有新生成的身份都与主流人脸数据集进行了检查，确保没有身份泄露。我们的方法在比赛中获得第一名，并且实验结果显示，我们的数据集在10K、20K和100K身份规模下均提高了模型性能。代码可在以下链接获取。 
+
+---
+# Fourier-Guided Attention Upsampling for Image Super-Resolution 
+
+**Title (ZH)**: Fourier引导注意力上采样用于图像超分辨率 
+
+**Authors**: Daejune Choi, Youchan No, Jinhyung Lee, Duksu Kim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.10616)  
+
+**Abstract**: We propose Frequency-Guided Attention (FGA), a lightweight upsampling module for single image super-resolution. Conventional upsamplers, such as Sub-Pixel Convolution, are efficient but frequently fail to reconstruct high-frequency details and introduce aliasing artifacts. FGA addresses these issues by integrating (1) a Fourier feature-based Multi-Layer Perceptron (MLP) for positional frequency encoding, (2) a cross-resolution Correlation Attention Layer for adaptive spatial alignment, and (3) a frequency-domain L1 loss for spectral fidelity supervision. Adding merely 0.3M parameters, FGA consistently enhances performance across five diverse super-resolution backbones in both lightweight and full-capacity scenarios. Experimental results demonstrate average PSNR gains of 0.12~0.14 dB and improved frequency-domain consistency by up to 29%, particularly evident on texture-rich datasets. Visual and spectral evaluations confirm FGA's effectiveness in reducing aliasing and preserving fine details, establishing it as a practical, scalable alternative to traditional upsampling methods. 
+
+**Abstract (ZH)**: 基于频率引导的注意力（FGA）：一种轻量级单图像超分辨率上采样模块 
+
+---
+# PTQAT: A Hybrid Parameter-Efficient Quantization Algorithm for 3D Perception Tasks 
+
+**Title (ZH)**: PTQAT：一种适用于3D感知任务的混合参数高效量化算法 
+
+**Authors**: Xinhao Wang, Zhiwei Lin, Zhongyu Xia, Yongtao Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.10557)  
+
+**Abstract**: Post-Training Quantization (PTQ) and Quantization-Aware Training (QAT) represent two mainstream model quantization approaches. However, PTQ often leads to unacceptable performance degradation in quantized models, while QAT imposes substantial GPU memory requirements and extended training time due to weight this http URL this paper, we propose PTQAT, a novel general hybrid quantization algorithm for the efficient deployment of 3D perception networks. To address the speed accuracy trade-off between PTQ and QAT, our method selects critical layers for QAT fine-tuning and performs PTQ on the remaining layers. Contrary to intuition, fine-tuning the layers with smaller output discrepancies before and after quantization, rather than those with larger discrepancies, actually leads to greater improvements in the model's quantization accuracy. This means we better compensate for quantization errors during their propagation, rather than addressing them at the point where they occur. The proposed PTQAT achieves similar performance to QAT with more efficiency by freezing nearly 50% of quantifiable layers. Additionally, PTQAT is a universal quantization method that supports various quantization bit widths (4 bits) as well as different model architectures, including CNNs and Transformers. The experimental results on nuScenes across diverse 3D perception tasks, including object detection, semantic segmentation, and occupancy prediction, show that our method consistently outperforms QAT-only baselines. Notably, it achieves 0.2%-0.9% NDS and 0.3%-1.0% mAP gains in object detection, 0.3%-2.0% mIoU gains in semantic segmentation and occupancy prediction while fine-tuning fewer weights. 
+
+**Abstract (ZH)**: Post-Training 量化 (PTQ) 和 知识蒸馏感知训练 (QAT) 代表两种主流的模型量化方法。然而，PTQ 经常导致量化模型性能不可接受的下降，而 QAT 由于权重敏感性问题导致显著的 GPU 内存需求和延长的训练时间。本文提出 PTQAT，一种新型的通用混合量化算法，用于高效部署 3D 感知网络。为了在 PTQ 和 QAT 之间解决速度与准确性的权衡问题，我们的方法选择关键层进行 QAT 微调，并对剩余层进行 PTQ。与直觉相反，量化前后输出差异较小的层微调实际上可以带来更大的模型量化精度提升。这表明我们更好地在误差传播过程中补偿量化误差，而不是在它们发生时解决。所提出的 PTQAT 通过冻结近 50% 的可量化层，以更高的效率达到与 QAT 相似的表现。此外，PTQAT 是一种通用量化方法，支持不同的量化位宽（4 位）以及包括 CNN 和 Transformer 在内的各种模型架构。 nuScenes 上跨多种 3D 感知任务（包括物体检测、语义分割和占用预测）的实验结果表明，我们的方法始终优于仅使用 QAT 的基线方法。值得注意的是，在物体检测中实现 0.2%-0.9% 的 NDS 和 0.3%-1.0% 的 mAP 提升，在语义分割和占用预测中分别实现 0.3%-2.0% 的 mIoU 提升，同时微调的权重更少。 
+
+---
+# Multi-Sample Anti-Aliasing and Constrained Optimization for 3D Gaussian Splatting 
+
+**Title (ZH)**: 多样本抗锯齿与约束优化在3D高斯斑点绘制中的应用 
+
+**Authors**: Zheng Zhou, Jia-Chen Zhang, Yu-Jie Xiong, Chun-Ming Xia  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.10507)  
+
+**Abstract**: Recent advances in 3D Gaussian splatting have significantly improved real-time novel view synthesis, yet insufficient geometric constraints during scene optimization often result in blurred reconstructions of fine-grained details, particularly in regions with high-frequency textures and sharp discontinuities. To address this, we propose a comprehensive optimization framework integrating multisample anti-aliasing (MSAA) with dual geometric constraints. Our system computes pixel colors through adaptive blending of quadruple subsamples, effectively reducing aliasing artifacts in high-frequency components. The framework introduces two constraints: (a) an adaptive weighting strategy that prioritizes under-reconstructed regions through dynamic gradient analysis, and (b) gradient differential constraints enforcing geometric regularization at object boundaries. This targeted optimization enables the model to allocate computational resources preferentially to critical regions requiring refinement while maintaining global consistency. Extensive experimental evaluations across multiple benchmarks demonstrate that our method achieves state-of-the-art performance in detail preservation, particularly in preserving high-frequency textures and sharp discontinuities, while maintaining real-time rendering efficiency. Quantitative metrics and perceptual studies confirm statistically significant improvements over baseline approaches in both structural similarity (SSIM) and perceptual quality (LPIPS). 
+
+**Abstract (ZH)**: Recent Advances in 3D Gaussian Splatting Integrating Multisample Anti-Aliasing with Dual Geometric Constraints for Detail Preservation in Real-Time Novel View Synthesis 
+
+---
+# X-Node: Self-Explanation is All We Need 
+
+**Title (ZH)**: X-Node: 自解释才是我们所需的一切 
+
+**Authors**: Prajit Sengupta, Islem Rekik  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.10461)  
+
+**Abstract**: Graph neural networks (GNNs) have achieved state-of-the-art results in computer vision and medical image classification tasks by capturing structural dependencies across data instances. However, their decision-making remains largely opaque, limiting their trustworthiness in high-stakes clinical applications where interpretability is essential. Existing explainability techniques for GNNs are typically post-hoc and global, offering limited insight into individual node decisions or local reasoning. We introduce X-Node, a self-explaining GNN framework in which each node generates its own explanation as part of the prediction process. For every node, we construct a structured context vector encoding interpretable cues such as degree, centrality, clustering, feature saliency, and label agreement within its local topology. A lightweight Reasoner module maps this context into a compact explanation vector, which serves three purposes: (1) reconstructing the node's latent embedding via a decoder to enforce faithfulness, (2) generating a natural language explanation using a pre-trained LLM (e.g., Grok or Gemini), and (3) guiding the GNN itself via a "text-injection" mechanism that feeds explanations back into the message-passing pipeline. We evaluate X-Node on two graph datasets derived from MedMNIST and MorphoMNIST, integrating it with GCN, GAT, and GIN backbones. Our results show that X-Node maintains competitive classification accuracy while producing faithful, per-node explanations. Repository: this https URL. 
+
+**Abstract (ZH)**: Graph神经网络(X-Node):一种自我解释的框架，其中每个节点在预测过程中生成自己的解释 
+
+---
+# Unlocking Robust Semantic Segmentation Performance via Label-only Elastic Deformations against Implicit Label Noise 
+
+**Title (ZH)**: 通过基于标签的弹性变形应对隐式标签噪声以解锁稳健的语义分割性能 
+
+**Authors**: Yechan Kim, Dongho Yoon, Younkwan Lee, Unse Fatima, Hong Kook Kim, Songjae Lee, Sanga Park, Jeong Ho Park, Seonjong Kang, Moongu Jeon  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.10383)  
+
+**Abstract**: While previous studies on image segmentation focus on handling severe (or explicit) label noise, real-world datasets also exhibit subtle (or implicit) label imperfections. These arise from inherent challenges, such as ambiguous object boundaries and annotator variability. Although not explicitly present, such mild and latent noise can still impair model performance. Typical data augmentation methods, which apply identical transformations to the image and its label, risk amplifying these subtle imperfections and limiting the model's generalization capacity. In this paper, we introduce NSegment+, a novel augmentation framework that decouples image and label transformations to address such realistic noise for semantic segmentation. By introducing controlled elastic deformations only to segmentation labels while preserving the original images, our method encourages models to focus on learning robust representations of object structures despite minor label inconsistencies. Extensive experiments demonstrate that NSegment+ consistently improves performance, achieving mIoU gains of up to +2.29, +2.38, +1.75, and +3.39 in average on Vaihingen, LoveDA, Cityscapes, and PASCAL VOC, respectively-even without bells and whistles, highlighting the importance of addressing implicit label noise. These gains can be further amplified when combined with other training tricks, including CutMix and Label Smoothing. 
+
+**Abstract (ZH)**: 尽管以往的图像分割研究主要关注处理严重的（或明确的）标签噪声，但现实世界的数据集也表现出轻微的（或隐含的）标签不完美现象。这些不完美现象源自固有的挑战，如模糊的对象边界和注释员的变异性。虽然这些轻微和潜在的噪声没有明确存在，但仍然可能损害模型的性能。典型的数据增强方法通过对图像和标签应用相同的变换，有放大这些轻微不完美现象的风险，从而限制模型的泛化能力。本文介绍了一种新颖的数据增强框架NSegment+，该框架将图像和标签的变换解耦，以应对语义分割中的现实噪声。通过仅对分割标签引入可控的弹性变形，同时保持原始图像不变，我们的方法鼓励模型在存在轻微标签不一致的情况下仍能学习鲁棒的对象结构表示。广泛的实验证明，NSegment+在魏玛根、LoveDA、城市景观和PASCAL VOC数据集上的一致性能提升，平均mIoU分别提高2.29%、2.38%、1.75%和3.39%，即使没有额外的技术，也突显了处理隐含标签噪声的重要性。当与CutMix和Label Smoothing等其他训练技巧结合使用时，这些增益可以进一步放大。 
+
+---
+# DINOMotion: advanced robust tissue motion tracking with DINOv2 in 2D-Cine MRI-guided radiotherapy 
+
+**Title (ZH)**: DINOMotion：基于DINOv2的高级robust 2D-Cine MRI引导放射治疗中的组织运动跟踪 
+
+**Authors**: Soorena Salari, Catherine Spino, Laurie-Anne Pharand, Fabienne Lathuiliere, Hassan Rivaz, Silvain Beriault, Yiming Xiao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.10260)  
+
+**Abstract**: Accurate tissue motion tracking is critical to ensure treatment outcome and safety in 2D-Cine MRI-guided radiotherapy. This is typically achieved by registration of sequential images, but existing methods often face challenges with large misalignments and lack of interpretability. In this paper, we introduce DINOMotion, a novel deep learning framework based on DINOv2 with Low-Rank Adaptation (LoRA) layers for robust, efficient, and interpretable motion tracking. DINOMotion automatically detects corresponding landmarks to derive optimal image registration, enhancing interpretability by providing explicit visual correspondences between sequential images. The integration of LoRA layers reduces trainable parameters, improving training efficiency, while DINOv2's powerful feature representations offer robustness against large misalignments. Unlike iterative optimization-based methods, DINOMotion directly computes image registration at test time. Our experiments on volunteer and patient datasets demonstrate its effectiveness in estimating both linear and nonlinear transformations, achieving Dice scores of 92.07% for the kidney, 90.90% for the liver, and 95.23% for the lung, with corresponding Hausdorff distances of 5.47 mm, 8.31 mm, and 6.72 mm, respectively. DINOMotion processes each scan in approximately 30ms and consistently outperforms state-of-the-art methods, particularly in handling large misalignments. These results highlight its potential as a robust and interpretable solution for real-time motion tracking in 2D-Cine MRI-guided radiotherapy. 
+
+**Abstract (ZH)**: 准确的组织运动跟踪对于确保2D-Cine MRI引导放射治疗的结果和安全性至关重要。本研究引入了基于DINOv2和低秩适应（LoRA）层的DINOMotion新型深度学习框架，实现稳健、高效和可解释的运动跟踪。DINOMotion通过自动检测对应的特征点来获取最优图像配准，通过提供显式的序列图像之间对应关系增强可解释性。LoRA层的集成减少了可训练参数，提高了训练效率，而DINOv2强大的特征表示提供了对大错位的鲁棒性。与基于迭代优化的方法不同，DINOMotion在测试时直接计算图像配准。我们在志愿者和患者数据集上的实验展示了其在估计线性和非线性变换方面的有效性，分别在肾脏、肝脏和肺部获得了Dice分数为92.07%、90.90%和95.23%，对应的Hausdorff距离分别为5.47 mm、8.31 mm和6.72 mm。DINOMotion每扫描处理速度约30ms，并且在处理大错位方面始终优于现有方法。这些结果突显了其在2D-Cine MRI引导放射治疗中实时运动跟踪中的稳健性和可解释性潜力。 
+
+---
+# Improving watermelon (Citrullus lanatus) disease classification with generative artificial intelligence (GenAI)-based synthetic and real-field images via a custom EfficientNetV2-L model 
+
+**Title (ZH)**: 基于生成人工智能（GenAI）的合成和实地图像改进西瓜（Citrullus lanatus）疾病分类——一种定制的EfficientNetV2-L模型 
+
+**Authors**: Nitin Rai, Nathan S. Boyd, Gary E. Vallad, Arnold W. Schumann  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.10156)  
+
+**Abstract**: The current advancements in generative artificial intelligence (GenAI) models have paved the way for new possibilities for generating high-resolution synthetic images, thereby offering a promising alternative to traditional image acquisition for training computer vision models in agriculture. In the context of crop disease diagnosis, GenAI models are being used to create synthetic images of various diseases, potentially facilitating model creation and reducing the dependency on resource-intensive in-field data collection. However, limited research has been conducted on evaluating the effectiveness of integrating real with synthetic images to improve disease classification performance. Therefore, this study aims to investigate whether combining a limited number of real images with synthetic images can enhance the prediction accuracy of an EfficientNetV2-L model for classifying watermelon \textit{(Citrullus lanatus)} diseases. The training dataset was divided into five treatments: H0 (only real images), H1 (only synthetic images), H2 (1:1 real-to-synthetic), H3 (1:10 real-to-synthetic), and H4 (H3 + random images to improve variability and model generalization). All treatments were trained using a custom EfficientNetV2-L architecture with enhanced fine-tuning and transfer learning techniques. Models trained on H2, H3, and H4 treatments demonstrated high precision, recall, and F1-score metrics. Additionally, the weighted F1-score increased from 0.65 (on H0) to 1.00 (on H3-H4) signifying that the addition of a small number of real images with a considerable volume of synthetic images improved model performance and generalizability. Overall, this validates the findings that synthetic images alone cannot adequately substitute for real images; instead, both must be used in a hybrid manner to maximize model performance for crop disease classification. 
+
+**Abstract (ZH)**: 当前生成型人工智能模型的进步为生成高分辨率合成图像提供了新的可能性，从而为农业中训练计算机视觉模型提供了传统图像采集的有前途的替代方案。在作物病害诊断的背景下，生成型人工智能模型被用于创建各种病害的合成图像，有可能促进模型的创建并减少对资源密集型田间数据采集的依赖。然而，将真实图像与合成图像结合以提高病害分类性能的有效性评估研究有限。因此，本研究旨在探讨将少量真实图像与合成图像结合是否能够提高基于EfficientNetV2-L模型的西瓜（Citrullus lanatus）病害分类的预测准确性。训练数据集被分为五个处理：H0（仅真实图像）、H1（仅合成图像）、H2（1:1真实图像与合成图像）、H3（1:10真实图像与合成图像），以及H4（H3+随机图像以提高变量性和模型泛化性）。所有处理均使用增强的微调和迁移学习技术定制的EfficientNetV2-L架构进行训练。在H2、H3和H4处理中训练的模型展示了高精度、召回率和F1分数指标。此外，加权F1分数从H0的0.65增加到H3-H4的1.00，表明少量真实图像与大量合成图像的结合提高了模型性能和泛化性。总体而言，这证明单独使用合成图像不足以替代真实图像；相反，两者须以混合的方式使用，以最大化作物病害分类模型的性能。 
+
+---
+# Exploring Content and Social Connections of Fake News with Explainable Text and Graph Learning 
+
+**Title (ZH)**: 探索可解释的文本和图学习在假新闻内容和社会连接分析中的应用 
+
+**Authors**: Vítor N. Lourenço, Aline Paes, and Tillman Weyde  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.10040)  
+
+**Abstract**: The global spread of misinformation and concerns about content trustworthiness have driven the development of automated fact-checking systems. Since false information often exploits social media dynamics such as "likes" and user networks to amplify its reach, effective solutions must go beyond content analysis to incorporate these factors. Moreover, simply labelling content as false can be ineffective or even reinforce biases such as automation and confirmation bias. This paper proposes an explainable framework that combines content, social media, and graph-based features to enhance fact-checking. It integrates a misinformation classifier with explainability techniques to deliver complete and interpretable insights supporting classification decisions. Experiments demonstrate that multimodal information improves performance over single modalities, with evaluations conducted on datasets in English, Spanish, and Portuguese. Additionally, the framework's explanations were assessed for interpretability, trustworthiness, and robustness with a novel protocol, showing that it effectively generates human-understandable justifications for its predictions. 
+
+**Abstract (ZH)**: 标题翻译如下：
+
+基于虚假信息在全球范围内的传播以及内容可信度的担忧，自动事实核查系统得到了快速发展。
+
+内容翻译如下：
+
+为了应对 虚假信息的全球范围传播以及对 内容可信度的担忧，自动事实核查系统得到了快速发展。 常利用社交媒体动态，例如 “点赞" 和 社交网络" 以增强虚假信息的传播。这类系统不仅限于 内容分析,还 会结合其他特征以提供更全面且可解释性的洞察支持支持决策。此外,简化的内容也可能会无效地强化自动化和确认偏差等本框架结合了基于内容、社交媒体和图谱特征以增强事实核查的效果。该框架集成了虚假信息分类器与内容可信度 性技术以提供全面且可解释性的洞察并支持决策。实验表明了多模态优于 仅单一模态的方法且在由 于 数据集 (英文、西班牙文和葡萄牙文) 上进行的评估表明了该框架在可释性性、可信 度和稳健性性方面的有效性且通过一个协议有效地评估了对预测的易为人理解的解释。 
+
+---
+# Jet Image Tagging Using Deep Learning: An Ensemble Model 
+
+**Title (ZH)**: 基于深度学习的喷流图像标签聚合模型 
+
+**Authors**: Juvenal Bassa, Vidya Manian, Sudhir Malik, Arghya Chattopadhyay  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.10034)  
+
+**Abstract**: Jet classification in high-energy particle physics is important for understanding fundamental interactions and probing phenomena beyond the Standard Model. Jets originate from the fragmentation and hadronization of quarks and gluons, and pose a challenge for identification due to their complex, multidimensional structure. Traditional classification methods often fall short in capturing these intricacies, necessitating advanced machine learning approaches. In this paper, we employ two neural networks simultaneously as an ensemble to tag various jet types. We convert the jet data to two-dimensional histograms instead of representing them as points in a higher-dimensional space. Specifically, this ensemble approach, hereafter referred to as Ensemble Model, is used to tag jets into classes from the JetNet dataset, corresponding to: Top Quarks, Light Quarks (up or down), and W and Z bosons. For the jet classes mentioned above, we show that the Ensemble Model can be used for both binary and multi-categorical classification. This ensemble approach learns jet features by leveraging the strengths of each constituent network achieving superior performance compared to either individual network. 
+
+**Abstract (ZH)**: 高能粒子物理中的喷流分类对于理解基本相互作用和探索标准模型之外的现象至关重要。本论文采用两个神经网络相结合的方法对各种喷流类型进行标记，并将喷流数据转换为二维直方图，而不是将其表示为高维空间中的点。具体而言，该组合方法（此后统称为集成模型）被用于对JetNet数据集中对应于顶夸克、轻夸克（上夸子或下夸子）以及W和Z玻色子的喷流类别进行分类。对于上述喷流类别，我们证明集成模型可用于二元和多元分类。该组合方法通过充分发挥各组成网络的优势，实现优于单一网络的性能。 
+
+---
