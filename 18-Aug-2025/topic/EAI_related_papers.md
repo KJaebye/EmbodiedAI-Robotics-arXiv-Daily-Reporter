@@ -1,0 +1,244 @@
+# OVSegDT: Segmenting Transformer for Open-Vocabulary Object Goal Navigation 
+
+**Title (ZH)**: OVSegDT：开放词汇对象目标导航的分割变压器 
+
+**Authors**: Tatiana Zemskova, Aleksei Staroverov, Dmitry Yudin, Aleksandr Panov  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.11479)  
+
+**Abstract**: Open-vocabulary Object Goal Navigation requires an embodied agent to reach objects described by free-form language, including categories never seen during training. Existing end-to-end policies overfit small simulator datasets, achieving high success on training scenes but failing to generalize and exhibiting unsafe behaviour (frequent collisions). We introduce OVSegDT, a lightweight transformer policy that tackles these issues with two synergistic components. The first component is the semantic branch, which includes an encoder for the target binary mask and an auxiliary segmentation loss function, grounding the textual goal and providing precise spatial cues. The second component consists of a proposed Entropy-Adaptive Loss Modulation, a per-sample scheduler that continuously balances imitation and reinforcement signals according to the policy entropy, eliminating brittle manual phase switches. These additions cut the sample complexity of training by 33%, and reduce collision count in two times while keeping inference cost low (130M parameters, RGB-only input). On HM3D-OVON, our model matches the performance on unseen categories to that on seen ones and establishes state-of-the-art results (40.1% SR, 20.9% SPL on val unseen) without depth, odometry, or large vision-language models. Code is available at this https URL. 
+
+**Abstract (ZH)**: 开放词汇对象目标导航要求一个实体化代理执行由自由形式语言描述的任务，未见过的类别。现有的端到端策略在小件集模拟数据集集集上取得良好效果，但在泛化性和平行为（（（如，）方面表现不佳（频繁碰撞）。
+
+为此，我们提出了一种名为OVSegDT的轻量级变压器策略，它通过两个协同工作的部分来解决这些问题。一上是语义两段，，包括对基于两个掩码的编码器和一个辅助分割损失函数，以地面文本目标并提供并及提供精确的空间线索。所提出的模型一 in段是精率Ent熵两适应损损失调节策略，通过单样本调度器连续平衡模仿和强化信号根据熵Ent熵消除易脆手动开关。这些增益降低D了样本复杂度33率33%％在两段待遇到少35得头效果同时保持推理复杂D率D1较低（（D（约130MMDD13.D毫米D悟刃D枚D样D。）一DRGB单一DD在十个场景场景D中场景D。
+
+在HM33一OV一DNDDD中一D中数据集集上上上上上上上上中上上上D上上上上上上DD上上上测试中部分D一般见类别上的，得到了最先进的结果D结果D水平D（（约D4D.DxDDD敢D敢D敢DXD在.getSDDD在内DD准确D敢D敢D敢D达D敢D敢D斩D挑战敢D敢D敢D敢DXD决心D度寸D度闭放D率D较低D大约D13DD细D毫米D帝D刃D一D帧D敏D。DD。迪D沛D忍D帝D一DDDD。
+
+标题：OVSegDT：开放词汇对象目标目标目标任务导航D的本质挑战与解决方案 
+
+---
+# EvoPSF: Online Evolution of Autonomous Driving Models via Planning-State Feedback 
+
+**Title (ZH)**: EvoPSF：基于规划状态反馈的自动驾驶模型在线 
+
+**Authors**: Jiayue Jin, Lang Qian, Jingyu Zhang, Chuanyu Ju, Liang Song  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.11453)  
+
+**Abstract**: Recent years have witnessed remarkable progress in autonomous driving, with systems evolving from modular pipelines to end-to-end architectures. However, most existing methods are trained offline and lack mechanisms to adapt to new environments during deployment. As a result, their generalization ability diminishes when faced with unseen variations in real-world driving scenarios. In this paper, we break away from the conventional "train once, deploy forever" paradigm and propose EvoPSF, a novel online Evolution framework for autonomous driving based on Planning-State Feedback. We argue that planning failures are primarily caused by inaccurate object-level motion predictions, and such failures are often reflected in the form of increased planner uncertainty. To address this, we treat planner uncertainty as a trigger for online evolution, using it as a diagnostic signal to initiate targeted model updates. Rather than performing blind updates, we leverage the planner's agent-agent attention to identify the specific objects that the ego vehicle attends to most, which are primarily responsible for the planning failures. For these critical objects, we compute a targeted self-supervised loss by comparing their predicted waypoints from the prediction module with their actual future positions, selected from the perception module's outputs with high confidence scores. This loss is then backpropagated to adapt the model online. As a result, our method improves the model's robustness to environmental changes, leads to more precise motion predictions, and therefore enables more accurate and stable planning behaviors. Experiments on both cross-region and corrupted variants of the nuScenes dataset demonstrate that EvoPSF consistently improves planning performance under challenging conditions. 
+
+**Abstract (ZH)**: Recent years have witnessed remarkable progress in autonomous driving, with systems evolving from modular pipelines to end-to-end architectures. However, most existing methods are trained offline and lack mechanisms to adapt to new environments during deployment. As a result, their generalization ability diminishes when faced with unseen variations in real-world driving scenarios.
+
+打破传统“一次性训练，永久部署”的范式，我们提出了一种基于规划状态反馈的新型在线进化框架EvoPSF，用于自主驾驶。我们认为规划失败主要由不准确的对象级运动预测引起，这种失败通常表现为规划不确定性增加的形式。为此，我们将规划不确定性视为在线进化的一种触发器，将其用作诊断信号以启动有针对性的模型更新。我们不是进行盲目的更新，而是利用规划器的局部注意机制来识别最吸引注意对象，这些对象主要是导致规划失败的原因。对于这些关键对象，我们通过将预测模块预测的 waypoints 与感知模块输出中具有高置信度分数的实际未来位置进行比较来计算有针对性的自监督损失。然后反向传播该损失以在线适应模型。结果，该方法增强了模型对环境变化的鲁棒性，提高了运动预测的准确性，从而实现了更准确和稳定的规划行为。在nuScenes数据集的跨区域变体和受污染变体上的实验表明，EvoPSF在挑战性条件下始终能提高规划性能。 
+
+---
+# Scene Graph-Guided Proactive Replanning for Failure-Resilient Embodied Agent 
+
+**Title (ZH)**: 场景图引导的前瞻性重规划方法以实现鲁棒性体态代理 
+
+**Authors**: Che Rin Yu, Daewon Chae, Dabin Seo, Sangwon Lee, Hyeongwoo Im, Jinkyu Kim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.11286)  
+
+**Abstract**: When humans perform everyday tasks, we naturally adjust our actions based on the current state of the environment. For instance, if we intend to put something into a drawer but notice it is closed, we open it first. However, many autonomous robots lack this adaptive awareness. They often follow pre-planned actions that may overlook subtle yet critical changes in the scene, which can result in actions being executed under outdated assumptions and eventual failure. While replanning is critical for robust autonomy, most existing methods respond only after failures occur, when recovery may be inefficient or infeasible. While proactive replanning holds promise for preventing failures in advance, current solutions often rely on manually designed rules and extensive supervision. In this work, we present a proactive replanning framework that detects and corrects failures at subtask boundaries by comparing scene graphs constructed from current RGB-D observations against reference graphs extracted from successful demonstrations. When the current scene fails to align with reference trajectories, a lightweight reasoning module is activated to diagnose the mismatch and adjust the plan. Experiments in the AI2-THOR simulator demonstrate that our approach detects semantic and spatial mismatches before execution failures occur, significantly improving task success and robustness. 
+
+**Abstract (ZH)**: 当人类执行日常任务时，会根据环境当前状态自然调整行动。例如，如果打算将某物放进抽屉但发现抽屉是关上的，我们会先打开抽屉。然而，许多自主机器人缺乏这种适应性意识，它们往往遵循预先规划的动作，这可能导致未能注意到场景中的细微但关键的变化，从而在旧前提假设下执行动作并最终导致失败。尽管重新规划对于提高自主性至关重要，但大多数现有方法仅在失败发生后作出响应，此时可能缺乏效率或不可行。而前瞻性的重新规划有望预防失败，但当前解决方案往往依赖于人工设计的规则和大量监督。在本工作中，我们提出了一种前瞻性的重新规划框架，在子任务边界处通过将当前RGB-D观测构建的场景图与来自成功示范提取的参考图进行对比来检测和纠正失败。当当前场景未能与参考轨迹对齐时，激活一个轻量级推理模块以诊断不匹配并调整计划。在AI2-THOR仿真器中的实验表明，我们的方法能够在执行失败发生前检测到语义和空间不匹配，显著提高任务成功率和鲁棒性。 
+
+---
+# Learning Differentiable Reachability Maps for Optimization-based Humanoid Motion Generation 
+
+**Title (ZH)**: 基于优化的人形运动生成中可微可达性地图的学习 
+
+**Authors**: Masaki Murooka, Iori Kumagai, Mitsuharu Morisawa, Fumio Kanehiro  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.11275)  
+
+**Abstract**: To reduce the computational cost of humanoid motion generation, we introduce a new approach to representing robot kinematic reachability: the differentiable reachability map. This map is a scalar-valued function defined in the task space that takes positive values only in regions reachable by the robot's end-effector. A key feature of this representation is that it is continuous and differentiable with respect to task-space coordinates, enabling its direct use as constraints in continuous optimization for humanoid motion planning. We describe a method to learn such differentiable reachability maps from a set of end-effector poses generated using a robot's kinematic model, using either a neural network or a support vector machine as the learning model. By incorporating the learned reachability map as a constraint, we formulate humanoid motion generation as a continuous optimization problem. We demonstrate that the proposed approach efficiently solves various motion planning problems, including footstep planning, multi-contact motion planning, and loco-manipulation planning for humanoid robots. 
+
+**Abstract (ZH)**: 为了减少类人机器人运动生成的计算成本，我们提出了一种新的机器人运动可达性的表示方法：可微达姿图。达姿图是在任务空间中定义的标量函数，仅在机器人末端執行器可达到的区域取正值。该表示的一个关键特点是，它相对于任务空间坐标连续可微，使得可以直接将其用作连续优化中的约束条件来进行类人机器人运动规划。我们描述了一种从使用机器人运动模型生成的末端執行器姿态集学习此类可微达姿图的方法，使用神经网络或支持向量机作为学习模型。通过将学习得到的达姿图作为约束条件，我们将类人机器人运动生成形式化为一个连续优化问题。我们证明了所提出的方法能够高效地求解各种运动规划问题，包括步态规划、多接触运动规划以及类人机器人行动- manipulating规划。 
+
+---
+# Embodied Edge Intelligence Meets Near Field Communication: Concept, Design, and Verification 
+
+**Title (ZH)**: 嵌入式边缘智能与近场通信相结合：概念、设计与验证 
+
+**Authors**: Guoliang Li, Xibin Jin, Yujie Wan, Chenxuan Liu, Tong Zhang, Shuai Wang, Chengzhong Xu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.11232)  
+
+**Abstract**: Realizing embodied artificial intelligence is challenging due to the huge computation demands of large models (LMs). To support LMs while ensuring real-time inference, embodied edge intelligence (EEI) is a promising paradigm, which leverages an LM edge to provide computing powers in close proximity to embodied robots. Due to embodied data exchange, EEI requires higher spectral efficiency, enhanced communication security, and reduced inter-user interference. To meet these requirements, near-field communication (NFC), which leverages extremely large antenna arrays as its hardware foundation, is an ideal solution. Therefore, this paper advocates the integration of EEI and NFC, resulting in a near-field EEI (NEEI) paradigm. However, NEEI also introduces new challenges that cannot be adequately addressed by isolated EEI or NFC designs, creating research opportunities for joint optimization of both functionalities. To this end, we propose radio-friendly embodied planning for EEI-assisted NFC scenarios and view-guided beam-focusing for NFC-assisted EEI scenarios. We also elaborate how to realize resource-efficient NEEI through opportunistic collaborative navigation. Experimental results are provided to confirm the superiority of the proposed techniques compared with various benchmarks. 
+
+**Abstract (ZH)**: 实现具身人工智能面临巨大计算需求的挑战，而具身边缘智能（EEI）是一个有前景的范式，它利用边缘的大模型（LMs）在具身机器人附近提供计算能力。由于具身数据交换，EEI要求更高的频谱效率、增强的通信安全和减少的用户间干扰。为满足这些需求，利用极其大型天线阵列作为硬件基础的近场通信（NFC）是一个理想解决方案。因此，本文提倡将EEI与NFC整合，从而形成一种近场具身边缘智能（NEEI）范式。然而，NEEI也引入了新的挑战，这些挑战单独采用EEI或NFC设计无法充分解决，为两者功能的联合优化提供了研究机会。为此，我们提出了有助于EEI辅助NFC场景的无线电友好具身规划，以及适用于NFC辅助EEI场景的基于视图的波束聚焦。我们还详细阐述了如何通过机会性协作导航实现高效的资源利用NEEI。实验结果证实了所提出技术相对于各种基准的优越性。 
+
+---
+# Multi-Group Equivariant Augmentation for Reinforcement Learning in Robot Manipulation 
+
+**Title (ZH)**: 多组等变增强在机器人操控中的强化学习 
+
+**Authors**: Hongbin Lin, Juan Rojas, Kwok Wai Samuel Au  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.11204)  
+
+**Abstract**: Sampling efficiency is critical for deploying visuomotor learning in real-world robotic manipulation. While task symmetry has emerged as a promising inductive bias to improve efficiency, most prior work is limited to isometric symmetries -- applying the same group transformation to all task objects across all timesteps. In this work, we explore non-isometric symmetries, applying multiple independent group transformations across spatial and temporal dimensions to relax these constraints. We introduce a novel formulation of the partially observable Markov decision process (POMDP) that incorporates the non-isometric symmetry structures, and propose a simple yet effective data augmentation method, Multi-Group Equivariance Augmentation (MEA). We integrate MEA with offline reinforcement learning to enhance sampling efficiency, and introduce a voxel-based visual representation that preserves translational equivariance. Extensive simulation and real-robot experiments across two manipulation domains demonstrate the effectiveness of our approach. 
+
+**Abstract (ZH)**: 视觉运动学习在现实机器人操作中的部署效率至关重要。虽然任务对称性已 emerges 作为提高效率的有希望的归纳偏置，大多数先前工作仅限于等距对称性——在所有时间步长中对所有任务对象应用相同的组变换。在本文中，我们探索非等距对称性，在空间和时间维度上应用多个独立的组变换以放宽这些约束。我们提出了一种新颖的半观察马尔可夫决策过程（POMDP）的形式化方法，该方法结合了非等距对称结构，并提出了一种简单而有效的数据增强方法——多组等变增强（MEA）。我们将MEA与离线强化学习结合以提高采样效率，并引入了一种基于体素的视觉表示，该表示保留了平移等变性。在两个操作域中的广泛仿真实验和真实机器人实验中，我们的方法显示出有效性。 
+
+---
+# Visuomotor Grasping with World Models for Surgical Robots 
+
+**Title (ZH)**: 视觉-运动抓取：基于世界模型的外科机器人技术 
+
+**Authors**: Hongbin Lin, Bin Li, Kwok Wai Samuel Au  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.11200)  
+
+**Abstract**: Grasping is a fundamental task in robot-assisted surgery (RAS), and automating it can reduce surgeon workload while enhancing efficiency, safety, and consistency beyond teleoperated systems. Most prior approaches rely on explicit object pose tracking or handcrafted visual features, limiting their generalization to novel objects, robustness to visual disturbances, and the ability to handle deformable objects. Visuomotor learning offers a promising alternative, but deploying it in RAS presents unique challenges, such as low signal-to-noise ratio in visual observations, demands for high safety and millimeter-level precision, as well as the complex surgical environment. This paper addresses three key challenges: (i) sim-to-real transfer of visuomotor policies to ex vivo surgical scenes, (ii) visuomotor learning using only a single stereo camera pair -- the standard RAS setup, and (iii) object-agnostic grasping with a single policy that generalizes to diverse, unseen surgical objects without retraining or task-specific models. We introduce Grasp Anything for Surgery V2 (GASv2), a visuomotor learning framework for surgical grasping. GASv2 leverages a world-model-based architecture and a surgical perception pipeline for visual observations, combined with a hybrid control system for safe execution. We train the policy in simulation using domain randomization for sim-to-real transfer and deploy it on a real robot in both phantom-based and ex vivo surgical settings, using only a single pair of endoscopic cameras. Extensive experiments show our policy achieves a 65% success rate in both settings, generalizes to unseen objects and grippers, and adapts to diverse disturbances, demonstrating strong performance, generality, and robustness. 
+
+**Abstract (ZH)**: 手术中的抓取是机器人辅助手术（RAS）中的一个基本任务，自动化抓取可以减少外科医生的工作负荷，同时提高效率、安全性和一致性，超越传统的遥操作系统。大多数先前的方法依赖于显式的目标姿态跟踪或手工设计的视觉特征，限制了它们在处理新颖对象、应对视觉干扰以及处理可变形对象的能力。视觉运动学习提供了有希望的替代方案，但在RAS中的应用带来了独特的挑战，如视觉观察中的低信噪比、高安全性和毫米级精度的要求，以及复杂的手术环境。本文针对三项关键挑战进行了研究：(i) 将视觉运动策略从模拟环境转移到体外手术场景；(ii) 使用单一立体相机对进行视觉运动学习——这是标准的RAS设置；(iii) 使用单一策略实现物体无关的抓取，该策略能够在无需重新训练或任务特定模型的情况下推广到各种未见过的手术对象。我们介绍了手术抓取V2（GASv2），一个基于视觉运动学习的手术抓取框架。GASv2利用了基于世界模型的架构和视觉观察的手术感知管道，结合了一种混合控制系统进行安全执行。我们使用领域随机化在模拟中训练策略，以便实现从模拟到现实的转移，并仅使用一对内窥镜相机在基于模拟人和体外手术环境中部署该策略。广泛的实验表明，我们的策略在两个环境中分别达到了65%的成功率，能够在未见过的对象和夹爪之间泛化，并适应各种干扰，展示了强大的性能、普适性和鲁棒性。 
+
+---
+# Actor-Critic for Continuous Action Chunks: A Reinforcement Learning Framework for Long-Horizon Robotic Manipulation with Sparse Reward 
+
+**Title (ZH)**: 连续动作片段的演员-评论家方法：稀疏奖励条件下长时_horizon_机器人操作的强化学习框架 
+
+**Authors**: Jiarui Yang, Bin Zhu, Jingjing Chen, Yu-Gang Jiang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.11143)  
+
+**Abstract**: Existing reinforcement learning (RL) methods struggle with long-horizon robotic manipulation tasks, particularly those involving sparse rewards. While action chunking is a promising paradigm for robotic manipulation, using RL to directly learn continuous action chunks in a stable and data-efficient manner remains a critical challenge. This paper introduces AC3 (Actor-Critic for Continuous Chunks), a novel RL framework that learns to generate high-dimensional, continuous action sequences. To make this learning process stable and data-efficient, AC3 incorporates targeted stabilization mechanisms for both the actor and the critic. First, to ensure reliable policy improvement, the actor is trained with an asymmetric update rule, learning exclusively from successful trajectories. Second, to enable effective value learning despite sparse rewards, the critic's update is stabilized using intra-chunk $n$-step returns and further enriched by a self-supervised module providing intrinsic rewards at anchor points aligned with each action chunk. We conducted extensive experiments on 25 tasks from the BiGym and RLBench benchmarks. Results show that by using only a few demonstrations and a simple model architecture, AC3 achieves superior success rates on most tasks, validating its effective design. 
+
+**Abstract (ZH)**: 以下是对给定内容的翻译， �：
+
+现有的强化学习（RL）方法在处理包含终止时的时 标准准任务（例如涉及稀疏奖励的的的与鲁棒机械臂操作任务）时 �_Api 当前的 的算法方法在这些任务上表现不佳。虽然片段（chunking分打包在强化学习中的是一个有前途的方法，直接利用t RL直接对处理在模型训练过程中被打包的片段，chunk在稳定和高效的方式仍然是一大关键课题挑战。本文提出了一种新颖的强化学习框架 —AC
+user
+请错别，，请从头重翻译下，禁止使用“现有的”、“例如”、“虽然”等，
+[${]}]翻译结果如下：
+
+现有强化学习方法在处理具有终止时horizon的任务方面存在困难，特别是在涉及稀疏奖励的任务。尽管段chunking打包是一个有前途的方法，使用强化学习直接处理被打包的片段任务仍然是一大关键挑战。本文提出AC3（Actor-Critic for Continuous Chunks）一种新颖的的强化学习框架，该框架学习生成高维连续的操作序列。该框架通过引入专门的稳定机制来在线演员和评论家来来实现可靠策略改进。首先，在演员专门使用非对式更新仅从成功轨迹中学习以实现可靠策略改进。其次，为了能够高效地处理稀疏奖励任务，评论家使用稳定的内部片段$n$步奖励更新并且进一步通过与每个片段对齐的的内在奖励补充。我们在astimG和onLBench基准上开展了这项研究。结果表明，仅使用少量示范和简单结构计算架构的AC333在任务中取得了高成功的成功率。
+
+请试着按照上面的要求清理一下：
+现有强化学习方法在处理具有终止时horizon的任务方面存在困难，特别是在涉及稀疏奖励的任务。尽管片段chunk打包是一个有前途的方法，使用强化学习直接处理被打包的片段的任务仍然是一一个大的关键挑战。本文提出AC3（连续片段的的Actor-Critic）一种新颖的方法，该方法学习生成高维连续的操作序列。该方法通过引入专门的稳定机制稳定演员和评论家来提高可靠策略改进。首先，演员专门使用非监督式更新仅从成功轨迹学习以实现可靠策略改进。其次，为了能够处理稀疏奖励任务，评论家使用稳定的内部片段nn步奖励更新并且进一步通过与每个片段对齐内在奖励补充。我们在astimG和onLBench基准上开展了这项研究。结果表明在仅使用少量示范和简单结构计算架构下AC33取得高成功的成功率。 
+
+---
+# Geometry-Aware Predictive Safety Filters on Humanoids: From Poisson Safety Functions to CBF Constrained MPC 
+
+**Title (ZH)**: 基于几何感知的类人机器人预测安全滤波器：从泊松安全函数到CBF约束的MPC 
+
+**Authors**: Ryan M. Bena, Gilbert Bahati, Blake Werner, Ryan K. Cosner, Lizhi Yang, Aaron D. Ames  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.11129)  
+
+**Abstract**: Autonomous navigation through unstructured and dynamically-changing environments is a complex task that continues to present many challenges for modern roboticists. In particular, legged robots typically possess manipulable asymmetric geometries which must be considered during safety-critical trajectory planning. This work proposes a predictive safety filter: a nonlinear model predictive control (MPC) algorithm for online trajectory generation with geometry-aware safety constraints based on control barrier functions (CBFs). Critically, our method leverages Poisson safety functions to numerically synthesize CBF constraints directly from perception data. We extend the theoretical framework for Poisson safety functions to incorporate temporal changes in the domain by reformulating the static Dirichlet problem for Poisson's equation as a parameterized moving boundary value problem. Furthermore, we employ Minkowski set operations to lift the domain into a configuration space that accounts for robot geometry. Finally, we implement our real-time predictive safety filter on humanoid and quadruped robots in various safety-critical scenarios. The results highlight the versatility of Poisson safety functions, as well as the benefit of CBF constrained model predictive safety-critical controllers. 
+
+**Abstract (ZH)**: 自主导航通过未结构化和动态变化环境是现代机器人科学家面临的一个复杂任务，尤其对于具有可操作不对称几何结构的腿式机器人而言，必须在安全关键的轨迹规划中予以考虑。本文提出了一种预测性安全滤波器：一种基于控制障碍函数（CBFs）和几何感知安全性约束的非线性模型预测控制（MPC）的在线轨迹生成算法。关键的是，我们的方法利用泊松安全函数从感知数据中直接数值合成CBF约束。我们将泊松安全函数的理论框架扩展以纳入域中的时间变化，通过将泊松方程的静态狄利克雷问题重新表述为参数化移动边界值问题来进行。此外，我们利用Minkowski集运算将域提升至考虑到机器人几何结构的配置空间中。最后，我们在各种安全关键场景中于人形和四足机器人上实现了我们的实时预测性安全滤波器。结果强调了泊松安全函数的灵活性，以及CBF约束模型预测安全关键控制器的优势。 
+
+---
+# Robot Policy Evaluation for Sim-to-Real Transfer: A Benchmarking Perspective 
+
+**Title (ZH)**: 基于基准视角的机器人政策评估：从模拟到现实的转移 
+
+**Authors**: Xuning Yang, Clemens Eppner, Jonathan Tremblay, Dieter Fox, Stan Birchfield, Fabio Ramos  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.11117)  
+
+**Abstract**: Current vision-based robotics simulation benchmarks have significantly advanced robotic manipulation research. However, robotics is fundamentally a real-world problem, and evaluation for real-world applications has lagged behind in evaluating generalist policies. In this paper, we discuss challenges and desiderata in designing benchmarks for generalist robotic manipulation policies for the goal of sim-to-real policy transfer. We propose 1) utilizing high visual-fidelity simulation for improved sim-to-real transfer, 2) evaluating policies by systematically increasing task complexity and scenario perturbation to assess robustness, and 3) quantifying performance alignment between real-world performance and its simulation counterparts. 
+
+**Abstract (ZH)**: 基于视觉的机器人仿真基准在机器人操作研究中取得了显著进展。然而，机器人本质上是一个现实世界的问题，实际应用的评估在评估通用政策方面仍有所滞后。本文讨论了设计旨在实现从仿真到现实政策转移的通用机器人操作政策基准所面临的挑战和期望。我们提出：1) 使用高视觉保真度仿真以改善从仿真到现实的转移；2) 通过系统地增加任务复杂性和场景扰动来评估鲁棒性；3) 定量评估现实世界性能与其仿真对应物之间的性能一致性。 
+
+---
+# Utilizing Vision-Language Models as Action Models for Intent Recognition and Assistance 
+
+**Title (ZH)**: 利用视觉-语言模型作为意图识别和辅助的动作模型 
+
+**Authors**: Cesar Alan Contreras, Manolis Chiou, Alireza Rastegarpanah, Michal Szulik, Rustam Stolkin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.11093)  
+
+**Abstract**: Human-robot collaboration requires robots to quickly infer user intent, provide transparent reasoning, and assist users in achieving their goals. Our recent work introduced GUIDER, our framework for inferring navigation and manipulation intents. We propose augmenting GUIDER with a vision-language model (VLM) and a text-only language model (LLM) to form a semantic prior that filters objects and locations based on the mission prompt. A vision pipeline (YOLO for object detection and the Segment Anything Model for instance segmentation) feeds candidate object crops into the VLM, which scores their relevance given an operator prompt; in addition, the list of detected object labels is ranked by a text-only LLM. These scores weight the existing navigation and manipulation layers of GUIDER, selecting context-relevant targets while suppressing unrelated objects. Once the combined belief exceeds a threshold, autonomy changes occur, enabling the robot to navigate to the desired area and retrieve the desired object, while adapting to any changes in the operator's intent. Future work will evaluate the system on Isaac Sim using a Franka Emika arm on a Ridgeback base, with a focus on real-time assistance. 
+
+**Abstract (ZH)**: 人类与机器人协作要求机器人快速推断用户意图、提供透明的推理过程，并协助用户实现其目标。我们近期的工作介绍了一种用于推断导航和操作意图的GUIDER框架。我们提议将GUIDER与视觉-语言模型（VLM）和纯文本语言模型（LLM）结合起来，形成一种语义先验，根据任务提示过滤物体和位置。视觉管道（使用YOLO进行对象检测和使用Segment Anything Model进行实例分割）将候选对象区域输入VLM，根据操作员提示对它们的相关性进行评分；此外，检测到的对象标签列表将由纯文本LLM进行排序。这些评分会加权GUIDER现有的导航和操作层，选择与上下文相关的目标并抑制无关的物体。一旦结合后的信念超过阈值，自主性变化就会发生，从而使机器人能够导航到目标区域并检索目标物体，同时适应操作员意图的任何变化。未来的工作将使用Isaac Sim平台和Franka Emika手臂搭载Ridgeback底盘进行系统评估，重点在于实时协助。 
+
+---
+# GenFlowRL: Shaping Rewards with Generative Object-Centric Flow in Visual Reinforcement Learning 
+
+**Title (ZH)**: GenFlowRL: 使用生成对象中心流形塑造奖励的视觉强化学习 
+
+**Authors**: Kelin Yu, Sheng Zhang, Harshit Soora, Furong Huang, Heng Huang, Pratap Tokekar, Ruohan Gao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.11049)  
+
+**Abstract**: Recent advances have shown that video generation models can enhance robot learning by deriving effective robot actions through inverse dynamics. However, these methods heavily depend on the quality of generated data and struggle with fine-grained manipulation due to the lack of environment feedback. While video-based reinforcement learning improves policy robustness, it remains constrained by the uncertainty of video generation and the challenges of collecting large-scale robot datasets for training diffusion models. To address these limitations, we propose GenFlowRL, which derives shaped rewards from generated flow trained from diverse cross-embodiment datasets. This enables learning generalizable and robust policies from diverse demonstrations using low-dimensional, object-centric features. Experiments on 10 manipulation tasks, both in simulation and real-world cross-embodiment evaluations, demonstrate that GenFlowRL effectively leverages manipulation features extracted from generated object-centric flow, consistently achieving superior performance across diverse and challenging scenarios. Our Project Page: this https URL 
+
+**Abstract (ZH)**: Recent Advances in Video Generation Models for Robotic Learning: GenFlowRL Enables Generalizable and Robust Policies Through Shaped Rewards from Generated Flow 
+
+---
+# 3D FlowMatch Actor: Unified 3D Policy for Single- and Dual-Arm Manipulation 
+
+**Title (ZH)**: 3D FlowMatch Actor: 统一的单臂和双臂操作三维策略 
+
+**Authors**: Nikolaos Gkanatsios, Jiahe Xu, Matthew Bronars, Arsalan Mousavian, Tsung-Wei Ke, Katerina Fragkiadaki  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.11002)  
+
+**Abstract**: We present 3D FlowMatch Actor (3DFA), a 3D policy architecture for robot manipulation that combines flow matching for trajectory prediction with 3D pretrained visual scene representations for learning from demonstration. 3DFA leverages 3D relative attention between action and visual tokens during action denoising, building on prior work in 3D diffusion-based single-arm policy learning. Through a combination of flow matching and targeted system-level and architectural optimizations, 3DFA achieves over 30x faster training and inference than previous 3D diffusion-based policies, without sacrificing performance. On the bimanual PerAct2 benchmark, it establishes a new state of the art, outperforming the next-best method by an absolute margin of 41.4%. In extensive real-world evaluations, it surpasses strong baselines with up to 1000x more parameters and significantly more pretraining. In unimanual settings, it sets a new state of the art on 74 RLBench tasks by directly predicting dense end-effector trajectories, eliminating the need for motion planning. Comprehensive ablation studies underscore the importance of our design choices for both policy effectiveness and efficiency. 
+
+**Abstract (ZH)**: 3D FlowMatch Actor (D3FA): 一种结合基于3D流匹配匹配匹配匹配的机器人 manipulation架构，，通过结合结合3D预训练视觉表示D表示表示表特征D以实现实现改进D3基于先态D3基于扩散的单单单D单单单单单单单单单单单单单单单单D单单单单D单单D单单D架构优化和D实现实现实现取得了333倍D以上更快的训练和和与推理速度D，D同时在D双双D手上基准基准在双D双基准基准上的超过了D下一个最佳D方法D44倍DDDD基于广泛的实际D场景D场景D验证实验D，优于D基线线线方法DDD同时在D单单出手姿D操纵场景场景D在4DLBench任务D中中通过直接预测密集的D姿态轨迹D，D忽视了DDD姿D动D需要DDD强调了我们D我们策略D选择D的重要性D对于D策略D政策D的有效性和效率D。 
+
+---
+# GhostObjects: Instructing Robots by Manipulating Spatially Aligned Virtual Twins in Augmented Reality 
+
+**Title (ZH)**: GhostObjects：在增强现实环境中通过操纵空间对齐的虚拟孪生体指令机器人 
+
+**Authors**: Lauren W. Wang, Parastoo Abtahi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.11022)  
+
+**Abstract**: Robots are increasingly capable of autonomous operations, yet human interaction remains essential for issuing personalized instructions. Instead of directly controlling robots through Programming by Demonstration (PbD) or teleoperation, we propose giving instructions by interacting with GhostObjects-world-aligned, life-size virtual twins of physical objects-in augmented reality (AR). By direct manipulation of GhostObjects, users can precisely specify physical goals and spatial parameters, with features including real-world lasso selection of multiple objects and snapping back to default positions, enabling tasks beyond simple pick-and-place. 
+
+**Abstract (ZH)**: 机器人越来越能够进行自主自主自主操作，，，，D，，，，，但是D人人类交互仍然是发布个性化指令的必要环节。DD相反，D，，DDD通过程序演示（（（(P编程）D（（（（（（（的方法D和远程操作D）DDD我们我们，我们DDD我们DD我们DD，DDDDDDDD提出，提出DDDD提出D提出DDDDD我们DDD提出D提出DDDDDDDD采用D提出DDD提出提出了DDD虚拟对象互动的方法D。D在增强增强 augmented reality （（（（（AR）D中的环境中D。DDDDDDDDDDDD虚拟对象是物理D现实对象对D的世界对D对准和DD尺寸DD的的D双双DdoubleD的的D在一DD次互动中中中，，，DD用户DD可以能DD可以DDDDD精确地DD指定D物理D目标D目标目标D目标DDD目标Ds
+
+目标
+D
+D空间DD目标目标D目标目标D目标D目标目标D，和目标细节D，并包含D，并并该
+D支持使得D任务D超越D简单的D拾放放放放放放放放放D放置DD。D杜绝多余的内容DDD 
+
+---
+# CRAFT-GUI: Curriculum-Reinforced Agent For GUI Tasks 
+
+**Title (ZH)**: CRAFT-GUI：基于 Curriculum 学习的GUI任务代理 
+
+**Authors**: Songqin Nong, Jingxuan Xu, Sheng Zhou, Jianfeng Chen, Xiaoxuan Tang, Tao Jiang, Wenhao Xu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.11360)  
+
+**Abstract**: As autonomous agents become adept at understanding and interacting with graphical user interface (GUI) environments, a new era of automated task execution is emerging. Recent studies have demonstrated that Reinforcement Learning (RL) can effectively enhance agents' performance in dynamic interactive GUI environments. However, these methods face two key limitations: (1) they overlook the significant variation in difficulty across different GUI tasks by treating the entire training data as a uniform set, which hampers the agent's ability to adapt its learning process; and (2) most approaches collapse task-specific nuances into a single, coarse reward, leaving the agent with a uniform signal that yields inefficient policy updates. To address these limitations, we propose CRAFT-GUI, a curriculum learning framework based on Group Relative Policy Optimization (GRPO) that explicitly accounts for the varying difficulty across trajectories. To enable more fine-grained policy optimization, we design a reward function that combines simple rule-based signals with model-judged evaluation, providing richer and more nuanced feedback during training. Experimental results demonstrate that our method achieves significant improvements over previous state-of-the-art approaches, outperforming them by 5.6% on public benchmarks Android Control and 10.3% on our internal online benchmarks, respectively. These findings empirically validate the effectiveness of integrating reinforcement learning with curriculum learning in GUI interaction tasks. 
+
+**Abstract (ZH)**: 基于组相对策略优化的CURATE-GUI框架：强化学习在图形用户界面交互任务中的应用 
+
+---
+# AI That Helps Us Help Each Other: A Proactive System for Scaffolding Mentor-Novice Collaboration in Entrepreneurship Coaching 
+
+**Title (ZH)**: 帮助我们相互帮助的AI：一种促进导师与学徒在创业指导中合作的前瞻性支撑系统 
+
+**Authors**: Evey Jiaxin Huang, Matthew Easterday, Elizabeth Gerber  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.11052)  
+
+**Abstract**: Entrepreneurship requires navigating open-ended, ill-defined problems: identifying risks, challenging assumptions, and making strategic decisions under deep uncertainty. Novice founders often struggle with these metacognitive demands, while mentors face limited time and visibility to provide tailored support. We present a human-AI coaching system that combines a domain-specific cognitive model of entrepreneurial risk with a large language model (LLM) to proactively scaffold both novice and mentor thinking. The system proactively poses diagnostic questions that challenge novices' thinking and helps both novices and mentors plan for more focused and emotionally attuned meetings. Critically, mentors can inspect and modify the underlying cognitive model, shaping the logic of the system to reflect their evolving needs. Through an exploratory field deployment, we found that using the system supported novice metacognition, helped mentors plan emotionally attuned strategies, and improved meeting depth, intentionality, and focus--while also surfaced key tensions around trust, misdiagnosis, and expectations of AI. We contribute design principles for proactive AI systems that scaffold metacognition and human-human collaboration in complex, ill-defined domains, offering implications for similar domains like healthcare, education, and knowledge work. 
+
+**Abstract (ZH)**: 创业要求驾驭开放性、不明确的问题：识别风险、挑战假设并在深刻不确定性下做出战略决策。新手创始人往往难以应对这些元认知需求，而导师则面临时间有限和缺乏透明度的限制，难以提供定制化的支持。我们提出了一种结合特定领域创业风险管理的认知模型和大型语言模型（LLM）的人机辅导系统，以主动式支架新手和导师的思考。该系统主动提出诊断性问题，挑战新手的思考，并帮助两者计划更聚焦和情感契合的会议。关键的是，导师可以检查和修改底层的认知模型，从而塑造系统的逻辑以反映其不断变化的需求。通过探索性的现场部署，我们发现使用该系统支持了新手的元认知，帮助导师规划情感契合的策略，并改善了会议的深度、意图性和专注度——同时也揭示了关于信任、误诊和对AI的期望的关键冲突。我们贡献了主动式AI系统的设设计原则，这些系统旨在在复杂和不明确的领域支撑元认知和人与人之间的协作，并为类似领域如医疗保健、教育和知识工作提供了启示。 
+
+---
+# Not There Yet: Evaluating Vision Language Models in Simulating the Visual Perception of People with Low Vision 
+
+**Title (ZH)**: 尚未达成：评估视觉语言模型在模拟低视力人士视觉感知方面的表现 
+
+**Authors**: Rosiana Natalie, Wenqian Xu, Ruei-Che Chang, Rada Mihalcea, Anhong Guo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.10972)  
+
+**Abstract**: Advances in vision language models (VLMs) have enabled the simulation of general human behavior through their reasoning and problem solving capabilities. However, prior research has not investigated such simulation capabilities in the accessibility domain. In this paper, we evaluate the extent to which VLMs can simulate the vision perception of low vision individuals when interpreting images. We first compile a benchmark dataset through a survey study with 40 low vision participants, collecting their brief and detailed vision information and both open-ended and multiple-choice image perception and recognition responses to up to 25 images. Using these responses, we construct prompts for VLMs (GPT-4o) to create simulated agents of each participant, varying the included information on vision information and example image responses. We evaluate the agreement between VLM-generated responses and participants' original answers. Our results indicate that VLMs tend to infer beyond the specified vision ability when given minimal prompts, resulting in low agreement (0.59). The agreement between the agent' and participants' responses remains low when only either the vision information (0.59) or example image responses (0.59) are provided, whereas a combination of both significantly increase the agreement (0.70, p < 0.0001). Notably, a single example combining both open-ended and multiple-choice responses, offers significant performance improvements over either alone (p < 0.0001), while additional examples provided minimal benefits (p > 0.05). 
+
+**Abstract (ZH)**: 视觉语言模型在低视力视野感知模拟中的进展 
+
+---

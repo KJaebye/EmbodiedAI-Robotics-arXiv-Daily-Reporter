@@ -1,0 +1,65 @@
+# MultiPark: Multimodal Parking Transformer with Next-Segment Prediction 
+
+**Title (ZH)**: 多模态停车变换器：基于下一段落预测的多模态停车模型 
+
+**Authors**: Han Zheng, Zikang Zhou, Guli Zhang, Zhepei Wang, Kaixuan Wang, Peiliang Li, Shaojie Shen, Ming Yang, Tong Qin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.11537)  
+
+**Abstract**: Parking accurately and safely in highly constrained spaces remains a critical challenge. Unlike structured driving environments, parking requires executing complex maneuvers such as frequent gear shifts and steering saturation. Recent attempts to employ imitation learning (IL) for parking have achieved promising results. However, existing works ignore the multimodal nature of parking behavior in lane-free open space, failing to derive multiple plausible solutions under the same situation. Notably, IL-based methods encompass inherent causal confusion, so enabling a neural network to generalize across diverse parking scenarios is particularly difficult. To address these challenges, we propose MultiPark, an autoregressive transformer for multimodal parking. To handle paths filled with abrupt turning points, we introduce a data-efficient next-segment prediction paradigm, enabling spatial generalization and temporal extrapolation. Furthermore, we design learnable parking queries factorized into gear, longitudinal, and lateral components, parallelly decoding diverse parking behaviors. To mitigate causal confusion in IL, our method employs target-centric pose and ego-centric collision as outcome-oriented loss across all modalities beyond pure imitation loss. Evaluations on real-world datasets demonstrate that MultiPark achieves state-of-the-art performance across various scenarios. We deploy MultiPark on a production vehicle, further confirming our approach's robustness in real-world parking environments. 
+
+**Abstract (ZH)**: 多模式泊车的自回归变压器：MultiPark 
+
+---
+# E-CaTCH: Event-Centric Cross-Modal Attention with Temporal Consistency and Class-Imbalance Handling for Misinformation Detection 
+
+**Title (ZH)**: 基于事件中心的跨模态注意力模型：考虑时间一致性与类别不平衡的 misinformation 检测 
+
+**Authors**: Ahmad Mousavi, Yeganeh Abdollahinejad, Roberto Corizzo, Nathalie Japkowicz, Zois Boukouvalas  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.11197)  
+
+**Abstract**: Detecting multimodal misinformation on social media remains challenging due to inconsistencies between modalities, changes in temporal patterns, and substantial class imbalance. Many existing methods treat posts independently and fail to capture the event-level structure that connects them across time and modality. We propose E-CaTCH, an interpretable and scalable framework for robustly detecting misinformation. If needed, E-CaTCH clusters posts into pseudo-events based on textual similarity and temporal proximity, then processes each event independently. Within each event, textual and visual features are extracted using pre-trained BERT and ResNet encoders, refined via intra-modal self-attention, and aligned through bidirectional cross-modal attention. A soft gating mechanism fuses these representations to form contextualized, content-aware embeddings of each post. To model temporal evolution, E-CaTCH segments events into overlapping time windows and uses a trend-aware LSTM, enhanced with semantic shift and momentum signals, to encode narrative progression over time. Classification is performed at the event level, enabling better alignment with real-world misinformation dynamics. To address class imbalance and promote stable learning, the model integrates adaptive class weighting, temporal consistency regularization, and hard-example mining. The total loss is aggregated across all events. Extensive experiments on Fakeddit, IND, and COVID-19 MISINFOGRAPH demonstrate that E-CaTCH consistently outperforms state-of-the-art baselines. Cross-dataset evaluations further demonstrate its robustness, generalizability, and practical applicability across diverse misinformation scenarios. 
+
+**Abstract (ZH)**: 基于事件检测的社交媒体多模态 misinformation 识别：一种可解释且可扩展的框架 
+
+---
+# A Cross-Modal Rumor Detection Scheme via Contrastive Learning by Exploring Text and Image internal Correlations 
+
+**Title (ZH)**: 跨模态 rumor 检测方案：通过探索文本和图像内部关联进行对比学习 
+
+**Authors**: Bin Ma, Yifei Zhang, Yongjin Xian, Qi Li, Linna Zhou, Gongxun Miao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.11141)  
+
+**Abstract**: Existing rumor detection methods often neglect the content within images as well as the inherent relationships between contexts and images across different visual scales, thereby resulting in the loss of critical information pertinent to rumor identification. To address these issues, this paper presents a novel cross-modal rumor detection scheme based on contrastive learning, namely the Multi-scale Image and Context Correlation exploration algorithm (MICC). Specifically, we design an SCLIP encoder to generate unified semantic embeddings for text and multi-scale image patches through contrastive pretraining, enabling their relevance to be measured via dot-product similarity. Building upon this, a Cross-Modal Multi-Scale Alignment module is introduced to identify image regions most relevant to the textual semantics, guided by mutual information maximization and the information bottleneck principle, through a Top-K selection strategy based on a cross-modal relevance matrix constructed between the text and multi-scale image patches. Moreover, a scale-aware fusion network is designed to integrate the highly correlated multi-scale image features with global text features by assigning adaptive weights to image regions based on their semantic importance and cross-modal relevance. The proposed methodology has been extensively evaluated on two real-world datasets. The experimental results demonstrate that it achieves a substantial performance improvement over existing state-of-the-art approaches in rumor detection, highlighting its effectiveness and potential for practical applications. 
+
+**Abstract (ZH)**: 现有的谣言检测方法往往忽视了图像内容及其与不同视觉尺度上下文之间的固有关系，导致与谣言识别相关的关键信息丢失。为了解决这些问题，本文提出了一种基于对比学习的新型跨模态谣言检测方案，即多尺度图像和上下文相关性探索算法（MICC）。具体地，我们设计了一个SCLIP编码器，通过对比预训练为文本和多尺度图像片段生成统一的语义嵌入，从而通过点积相似度来衡量它们的相关性。在此基础上，引入了一种跨模态多尺度对齐模块，通过最大化互信息和信息瓶颈原则，在构建文本与多尺度图像片段之间跨模态相关性矩阵的基础上，采用Top-K选择策略识别最相关的图像区域。此外，设计了一种尺度感知融合网络，通过为图像区域分配自适应权重，将高度相关的多尺度图像特征与全局文本特征进行集成，基于它们的语义重要性和跨模态相关性。所提方法已在两个真实世界数据集上进行了广泛评估，实验结果表明，它在谣言检测方面的性能显著优于现有最先进的方法，突显了其有效性和实际应用潜力。 
+
+---
+# Multimodal Quantitative Measures for Multiparty Behaviour Evaluation 
+
+**Title (ZH)**: 多模态定量指标用于多方行为评估 
+
+**Authors**: Ojas Shirekar, Wim Pouw, Chenxu Hao, Vrushank Phadnis, Thabo Beeler, Chirag Raman  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.10916)  
+
+**Abstract**: Digital humans are emerging as autonomous agents in multiparty interactions, yet existing evaluation metrics largely ignore contextual coordination dynamics. We introduce a unified, intervention-driven framework for objective assessment of multiparty social behaviour in skeletal motion data, spanning three complementary dimensions: (1) synchrony via Cross-Recurrence Quantification Analysis, (2) temporal alignment via Multiscale Empirical Mode Decompositionbased Beat Consistency, and (3) structural similarity via Soft Dynamic Time Warping. We validate metric sensitivity through three theory-driven perturbations -- gesture kinematic dampening, uniform speech-gesture delays, and prosodic pitch-variance reduction-applied to $\approx 145$ 30-second thin slices of group interactions from the DnD dataset. Mixed-effects analyses reveal predictable, joint-independent shifts: dampening increases CRQA determinism and reduces beat consistency, delays weaken cross-participant coupling, and pitch flattening elevates F0 Soft-DTW costs. A complementary perception study ($N=27$) compares judgments of full-video and skeleton-only renderings to quantify representation effects. Our three measures deliver orthogonal insights into spatial structure, timing alignment, and behavioural variability. Thereby forming a robust toolkit for evaluating and refining socially intelligent agents. Code available on \href{this https URL}{GitHub}. 
+
+**Abstract (ZH)**: 数字人类在多方互动中 emergence 为自主代理，现有评估指标大多忽视了背景协调动态。我们提出了一种统一的干预驱动框架，用于骨骼运动数据中多方社会行为的客观评估，涵盖三个互补维度：（1）同步性通过交叉复发量化分析，（2）时间对齐通过多尺度经验模式分解基于节奏一致性，（3）结构相似性通过软动态时间扭曲。通过三种理论驱动的扰动——手势运动阻尼、均匀的语音-手势延迟以及音调变异性减少——验证了指标的敏感性，应用于 DnD 数据集的约 145 个 30 秒的群体互动片段。混合效应分析揭示了可预测且独立于关节的转变：阻尼增加 CRQA 决定度并降低节奏一致性，延迟削弱跨参与者耦合，音调扁平化提高 F0 软动态时间扭曲成本。一项互补的感知研究（参与者数量为 27）比较了完整视频和仅骨架渲染的判断，以量化表现形式的影响。我们的三个测量指标提供了关于空间结构、时间对齐和行为变异性的独立见解。从而形成一个 robust 工具包，用于评估和优化社会智能代理。代码可在 GitHub 上获得。 
+
+---
+# FLUID: Flow-Latent Unified Integration via Token Distillation for Expert Specialization in Multimodal Learning 
+
+**Title (ZH)**: FLUID: 流-潜在统一集成 via 令牌精炼以实现多模态学习中的专家专业化 
+
+**Authors**: Van Duc Cuong, Ta Dinh Tam, Tran Duc Chinh, Nguyen Thi Hanh  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.07264)  
+
+**Abstract**: Multimodal classification requires robust integration of visual and textual signals, yet common fusion strategies are brittle and vulnerable to modality-specific noise. In this paper, we present \textsc{FLUID}-Flow-Latent Unified Integration via Token Distillation for Expert Specialization, a principled token-level pipeline that improves cross-modal robustness and scalability. \textsc{FLUID} contributes three core elements: (1) \emph{Q-transforms}, learnable query tokens that distill and retain salient token-level features from modality-specific backbones; (2) a two-stage fusion scheme that enforces cross-modal consistency via contrastive alignment and then performs adaptive, task-aware fusion through a gating mechanism and a \emph{Q-bottleneck} that selectively compresses information for downstream reasoning; and (3) a lightweight, load-balanced Mixture-of-Experts at prediction time that enables efficient specialization to diverse semantic patterns. Extensive experiments demonstrate that \textsc{FLUID} attains \(91\%\) accuracy on the GLAMI-1M benchmark, significantly outperforming prior baselines and exhibiting strong resilience to label noise, long-tail class imbalance, and semantic heterogeneity. Targeted ablation studies corroborate both the individual and synergistic benefits of the proposed components, positioning \textsc{FLUID} as a scalable, noise-resilient solution for multimodal product classification. 
+
+**Abstract (ZH)**: Multimodal分类要求视觉和文本信号的 robust 综合，但常见的融合策略对模态特定的噪声容易脆弱。本文提出了一种基于标记蒸馏的 \textsc{FLUID}-Flow-Latent 统一综合框架，这是一种原理上的标记级流程，提高了跨模态的稳健性和可扩展性。\textsc{FLUID} 贡献了三个核心元素：（1）\emph{Q-transforms}，可学习的查询标记，用于从模态特定骨干中提取并保留关键的标记级特征；（2）两阶段融合方案，通过对比对齐确保跨模态一致性，然后通过门控机制和\emph{Q-bottleneck}进行自适应、任务感知的融合，选择性地压缩信息以供下游推理；（3）预测时轻量级、负载平衡的 Experts Mixtures，使模型能够高效地针对多样化的语义模式进行专业化。广泛实验表明，\textsc{FLUID} 在 GLAMI-1M 基准上的准确率为 91%，显著优于先前baseline，并且对标签噪声、长尾类别不平衡和语义异质性表现出强大的抗噪性。针对性的消融研究证实了所提组件的个体和协同效益，将\textsc{FLUID} 定位为一种面向 multimodal 产品分类的大规模、抗噪解决方案。 
+
+---
