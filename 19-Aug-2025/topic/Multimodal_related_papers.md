@@ -1,0 +1,104 @@
+# A Language-Signal-Vision Multimodal Framework for Multitask Cardiac Analysis 
+
+**Title (ZH)**: 一种语言-信号-视觉多模态框架用于多任务心脏分析 
+
+**Authors**: Yuting Zhang, Tiantian Geng, Luoying Hao, Xinxing Cheng, Alexander Thorley, Xiaoxia Wang, Wenqi Lu, Sandeep S Hothi, Lei Wei, Zhaowen Qiu, Dipak Kotecha, Jinming Duan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.13072)  
+
+**Abstract**: Contemporary cardiovascular management involves complex consideration and integration of multimodal cardiac datasets, where each modality provides distinct but complementary physiological characteristics. While the effective integration of multiple modalities could yield a holistic clinical profile that accurately models the true clinical situation with respect to data modalities and their relatives weightings, current methodologies remain limited by: 1) the scarcity of patient- and time-aligned multimodal data; 2) reliance on isolated single-modality or rigid multimodal input combinations; 3) alignment strategies that prioritize cross-modal similarity over complementarity; and 4) a narrow single-task focus. In response to these limitations, a comprehensive multimodal dataset was curated for immediate application, integrating laboratory test results, electrocardiograms, and echocardiograms with clinical outcomes. Subsequently, a unified framework, Textual Guidance Multimodal fusion for Multiple cardiac tasks (TGMM), was proposed. TGMM incorporated three key components: 1) a MedFlexFusion module designed to capture the unique and complementary characteristics of medical modalities and dynamically integrate data from diverse cardiac sources and their combinations; 2) a textual guidance module to derive task-relevant representations tailored to diverse clinical objectives, including heart disease diagnosis, risk stratification and information retrieval; and 3) a response module to produce final decisions for all these tasks. Furthermore, this study systematically explored key features across multiple modalities and elucidated their synergistic contributions in clinical decision-making. Extensive experiments showed that TGMM outperformed state-of-the-art methods across multiple clinical tasks, with additional validation confirming its robustness on another public dataset. 
+
+**Abstract (ZH)**: 当前心血管管理涉及复杂的心脏多模态数据的综合考量与集成，每种模态提供独特的但互补的生理特征。虽然有效集成多种模态可以生成全面的临床概况，准确反映数据模态及其相对权重的真实临床情况，当前的方法仍受限于：1）患者和时间对齐的多模态数据稀缺；2）依赖孤立的单一模态或刚性多模态输入组合；3）对齐策略优先考虑模态间的相似性而非互补性；4）单一任务的窄聚焦。为应对这些限制，首次构建了全面的多模态数据集，结合了实验室检查结果、心电图和超声心动图，并与临床结果整合。紧接着，提出了一种统一框架——多心脏任务的文本指导多模态融合（TGMM）。TGMM 包含三个关键组件：1）MedFlexFusion 模块，用于捕捉医学模态的独特和互补特征，并动态集成来自多种心脏来源及其组合的数据；2）文本指导模块，用于提取与多种临床目标相关的表现形式；3）响应模块，最终为所有这些任务生成决策。此外，该研究系统地探索了多种模态的关键特征，并阐述了它们在临床决策中的协同贡献。广泛实验表明，TGMM 在多项临床任务上优于现有最佳方法，额外的验证进一步证实了其在另一个公开数据集上的稳健性。 
+
+---
+# MOVER: Multimodal Optimal Transport with Volume-based Embedding Regularization 
+
+**Title (ZH)**: MOVER：基于体素嵌入正则化的多模态最优传输 
+
+**Authors**: Haochen You, Baojing Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.12149)  
+
+**Abstract**: Recent advances in multimodal learning have largely relied on pairwise contrastive objectives to align different modalities, such as text, video, and audio, in a shared embedding space. While effective in bi-modal setups, these approaches struggle to generalize across multiple modalities and often lack semantic structure in high-dimensional spaces. In this paper, we propose MOVER, a novel framework that combines optimal transport-based soft alignment with volume-based geometric regularization to build semantically aligned and structured multimodal representations. By integrating a transport-guided matching mechanism with a geometric volume minimization objective (GAVE), MOVER encourages consistent alignment across all modalities in a modality-agnostic manner. Experiments on text-video-audio retrieval tasks demonstrate that MOVER significantly outperforms prior state-of-the-art methods in both zero-shot and finetuned settings. Additional analysis shows improved generalization to unseen modality combinations and stronger structural consistency in the learned embedding space. 
+
+**Abstract (ZH)**: 近期，多模态学习的进步主要依赖于成对对比目标在共享嵌入空间中对齐不同模态（如文本、视频和音频）的能力。虽然在双模态配置中有效，但这些方法在跨多种模态时难以泛化，并且在高维空间中往往缺乏语义结构。本文提出了一种名为MOVER的新框架，该框架结合了最优传输为基础的软对齐与基于体积的几何正则化，以构建语义对齐且结构化的多模态表示。通过集成运输引导的匹配机制与几何体积最小化目标（GAVE），MOVER以模态无关的方式促进了所有模态的一致对齐。在文本-视频-音频检索任务上的实验表明，MOVER在零样本和微调设置中均显著优于先前的最佳方法。进一步的分析显示，MOVER在未见过的模态组合泛化方面表现更好，并且在学习的嵌入空间中具有更强的结构一致性。 
+
+---
+# UniCast: A Unified Multimodal Prompting Framework for Time Series Forecasting 
+
+**Title (ZH)**: UniCast：统一的多模态提示框架用于时间序列预测 
+
+**Authors**: Sehyuk Park, Soyeon Caren Han, Eduard Hovy  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.11954)  
+
+**Abstract**: Time series forecasting is a foundational task across domains, such as finance, healthcare, and environmental monitoring. While recent advances in Time Series Foundation Models (TSFMs) have demonstrated strong generalisation through large-scale pretraining, existing models operate predominantly in a unimodal setting, ignoring the rich multimodal context, such as visual and textual signals, that often accompanies time series data in real-world scenarios. This paper introduces a novel parameter-efficient multimodal framework, UniCast, that extends TSFMs to jointly leverage time series, vision, and text modalities for enhanced forecasting performance. Our method integrates modality-specific embeddings from pretrained Vision and Text Encoders with a frozen TSFM via soft prompt tuning, enabling efficient adaptation with minimal parameter updates. This design not only preserves the generalisation strength of the foundation model but also enables effective cross-modal interaction. Extensive experiments across diverse time-series forecasting benchmarks demonstrate that UniCast consistently and significantly outperforms all existing TSFM baselines. The findings highlight the critical role of multimodal context in advancing the next generation of general-purpose time series forecasters. 
+
+**Abstract (ZH)**: 时间序列预测是金融、医疗和环境监测等领域中的基础任务。尽管近期的时间序列基础模型（TSFM）通过大规模预训练展示了强大的泛化能力，但现有模型主要在单模态设置中运行，忽视了现实场景中常伴随时间序列数据的丰富多模态上下文，如视觉和文本信号。本文介绍了一种新颖的参数高效多模态框架UniCast，它将TSFMs扩展到了联合利用时间序列、视觉和文本模态的增强预测性能。本文方法通过软提示调谐将预训练的视觉和文本编码器的模态特定嵌入与冻结的TSFM结合，实现高效适应和最少参数更新。这种设计不仅保留了基础模型的泛化能力，还能有效促进跨模态交互。在多种时间序列预测基准上的广泛实验表明，UniCast在所有现有的TSFM基线方法上表现始终且显著更优。研究结果强调了多模态上下文在推进新一代通用时间序列预测器中的关键作用。 
+
+---
+# Region-Level Context-Aware Multimodal Understanding 
+
+**Title (ZH)**: 区域级上下文感知多模态理解 
+
+**Authors**: Hongliang Wei, Xianqi Zhang, Xingtao Wang, Xiaopeng Fan, Debin Zhao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.12263)  
+
+**Abstract**: Despite significant progress, existing research on Multimodal Large Language Models (MLLMs) mainly focuses on general visual understanding, overlooking the ability to integrate textual context associated with objects for a more context-aware multimodal understanding -- an ability we refer to as Region-level Context-aware Multimodal Understanding (RCMU). To address this limitation, we first formulate the RCMU task, which requires models to respond to user instructions by integrating both image content and textual information of regions or objects. To equip MLLMs with RCMU capabilities, we propose Region-level Context-aware Visual Instruction Tuning (RCVIT), which incorporates object information into the model input and enables the model to utilize bounding box coordinates to effectively associate objects' visual content with their textual information. To address the lack of datasets, we introduce the RCMU dataset, a large-scale visual instruction tuning dataset that covers multiple RCMU tasks. We also propose RC\&P-Bench, a comprehensive benchmark that can evaluate the performance of MLLMs in RCMU and multimodal personalized understanding tasks. Additionally, we propose a reference-free evaluation metric to perform a comprehensive and fine-grained evaluation of the region-level context-aware image descriptions. By performing RCVIT on Qwen2-VL models with the RCMU dataset, we developed RC-Qwen2-VL models. Experimental results indicate that RC-Qwen2-VL models not only achieve outstanding performance on multiple RCMU tasks but also demonstrate successful applications in multimodal RAG and personalized conversation. Our data, model and benchmark are available at this https URL 
+
+**Abstract (ZH)**: 尽管已经取得显著进步，现有关于多模态大型语言模型（MLLMs）的研究主要集中在通用视觉理解上，忽视了将与对象相关的文本上下文整合以实现更具上下文感知的多模态理解的能力——我们将其称作区域级别上下文感知多模态理解（RCMU）。为解决这一限制，我们首先定义了RCMU任务，要求模型通过整合图像内容和区域或对象的文本信息来响应用户指令。为了使MLLMs具备RCMU能力，我们提出了区域级别上下文感知视觉指令调优（RCVIT）方法，该方法将对象信息融入模型输入，并使模型能够利用边界框坐标有效关联对象的视觉内容与文本信息。为解决数据集不足的问题，我们引入了RCMU数据集，这是一个涵盖多种RCMU任务的大规模视觉指令调优数据集。我们还提出了RC\&P-Bench，这是一个全面的基准，可以评估MLLMs在RCMU和多模态个性化理解任务中的性能。此外，我们还提出了一种无需参考的评估指标，以进行全面和细致的区域级别上下文感知图像描述评价。通过对Qwen2-VL模型进行RCVIT训练并使用RCMU数据集，我们开发了RC-Qwen2-VL模型。实验结果显示，RC-Qwen2-VL模型不仅在多种RCMU任务中表现出色，还在多模态RAG和个性化对话中实现了成功的应用。我们的数据、模型和基准可以在此网页获取。 
+
+---
+# Exploring Multimodal AI Reasoning for Meteorological Forecasting from Skew-T Diagrams 
+
+**Title (ZH)**: 探索 skew-T 图像中的多模态人工智能推理在气象预报中的应用 
+
+**Authors**: ChangJae Lee, Heecheol Yang, Jonghak Choi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.12198)  
+
+**Abstract**: Forecasting from atmospheric soundings is a fundamental task in operational meteorology, often requiring structured visual reasoning over Skew-T log-P diagrams by human forecasters. While recent advances in Vision-Language Models (VLMs) have shown promise in other scientific domains, their application to meteorological diagram interpretation remains largely unexplored. In this study, we present a lightweight AI assistant that interprets Skew-T diagrams using a small language model (LM) and a small VLM fine-tuned to emulate human forecasters. Using a curriculum learning framework, we first train the models to identify key atmospheric features from diagrams through visual question answering, followed by chain-of-thought reasoning tasks that estimate precipitation probability based on the derived visual groundings. Model inputs include either textual summaries or generated Skew-T diagrams derived from operational Numerical Weather Prediction (NWP) forecasts, paired with three-hour precipitation observations from South Korea's Auto Weather Stations network. Evaluation results demonstrate that the fine-tuned VLM achieves skill comparable to an operational NWP model, despite relying solely on static atmospheric profiles. Ablation studies reveal that visual grounding and reasoning supervision are critical for performance, while attention map analysis confirms that the model learns to focus on relevant meteorological features. These findings highlight the potential of compact, interpretable multimodal models to support weather forecasting tasks. The approach offers a computationally efficient alternative to large-scale systems, and future work could extend it to more complex applications. 
+
+**Abstract (ZH)**: 从大气探空数据预测是气象业务中的一个基本任务，通常需要人类预报员进行结构化的视觉推理以分析斜压-对数压力图。虽然近期的视觉-语言模型（VLMs）在其他科学领域显示出了潜力，但其在气象图表解释的应用仍鲜有探索。在本文中，我们提出了一种轻量级AI助手，用于通过小型语言模型（LM）和细调的小型VLM来解释斜压-对数压力图，后者被设计以模仿人类预报员的思维过程。通过采用渐进学习框架，我们首先训练模型通过视觉问答识别图表中的关键大气特征，随后在基于提取的视觉基础进行连续推理任务中，估算降水概率。模型输入包括从数值天气预报（NWP）中生成的文本摘要或斜压-对数压力图，以及韩国自动气象站网络的三小时降水量观测数据。评估结果显示，即使仅依赖静态的大气剖面，细调的VLM也达到了与操作型NWP模型相当的技能水平。消融研究显示，视觉基础和推理监督对于性能至关重要，而注意力图分析证实，模型学会了集中于相关的气象特征。这些发现突显了紧凑且可解释的多模态模型在支持气象预测任务方面的潜力。该方法提供了相对于大规模系统更具计算效率的替代方案，未来的工作可以将其扩展到更复杂的应用。 
+
+---
+# Simple o3: Towards Interleaved Vision-Language Reasoning 
+
+**Title (ZH)**: 简单O3：交错视觉-语言推理owards Interleaved Vision-Language Reasoning 
+
+**Authors**: Ye Wang, Qianglong Chen, Zejun Li, Siyuan Wang, Shijie Guo, Zhirui Zhang, Zhongyu Wei  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.12109)  
+
+**Abstract**: Multimodal Large Language Models (MLLMs) have shown impressive performance on vision-language tasks, but their long Chain-of-Thought (CoT) capabilities in multimodal scenarios remain underexplored. Inspired by OpenAI's o3 model, which emulates human-like ''thinking with image'' through iterative visual transformations and linguistic reasoning, we propose Simple o3, an end-to-end framework that integrates dynamic tool interactions (e.g., cropping, zooming, and reusing) into interleaved vision-language reasoning via supervised fine-tuning (SFT). Our approach features a scalable data synthesis pipeline that generates high-quality interleaved vision-language reasoning chains via an ''observe-reason-act'' cycle, complete with executable visual operations and rigorous verification, yielding the open-source TWI-Tools-146K dataset. Experimental results demonstrate Simple o3's superior performance on diverse benchmarks, outperforming existing approaches. By combining enhanced reasoning capabilities, Simple o3 establishes a powerful yet computationally affordable paradigm for advancing multimodal reasoning. Remarkably, we provide the first in-depth analysis of different interleaved reasoning strategies, offering insights into their impact on model performance. We found that by introducing additional visual tokens for interleaved vision-language reasoning, reusing and magnifying the original image significantly improves the model's visual reasoning and fine-grained perception, while image cropping based on precise visual grounding allows the model to effectively focus on key entities or regions, further enhancing its capabilities. 
+
+**Abstract (ZH)**: 多模态大型语言模型（MLLMs）在视觉-语言任务上表现出色，但在多模态场景下的长链推理能力尚未充分探索。受到OpenAI的o3模型启发，该模型通过迭代的视觉变换和语言推理模仿人类“看图思考”的过程，我们提出了一种端到端框架Simple o3，该框架通过监督微调（SFT）将动态工具交互（如裁剪、缩放和重用）集成到交错的视觉-语言推理中。我们的方法具备可扩展的数据合成管道，通过“观察-推理-行动”循环生成高质量的交错视觉-语言推理链，包含可执行的视觉操作和严格的验证，并产生开源的TWI-Tools-146K数据集。实验结果表明，Simple o3在多种基准测试中的表现优于现有方法。通过增强的推理能力，Simple o3建立了强大且计算成本低廉的多模态推理范式。值得一提的是，我们提供了第一个对不同交错推理策略的深入分析，揭示了它们对模型性能的影响。我们发现，通过为交错视觉-语言推理引入额外的视觉标记，重新使用和放大原始图像显著提高了模型的视觉推理能力和细粒度感知能力，基于精确视觉定位的图像裁剪使模型能够有效地聚焦于关键实体或区域，进一步提升了其能力。 
+
+---
+# Labels or Input? Rethinking Augmentation in Multimodal Hate Detection 
+
+**Title (ZH)**: 标签还是输入？重新思考多模态仇恨检测中的数据增强。 
+
+**Authors**: Sahajpreet Singh, Rongxin Ouyang, Subhayan Mukerjee, Kokil Jaidka  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.11808)  
+
+**Abstract**: The modern web is saturated with multimodal content, intensifying the challenge of detecting hateful memes, where harmful intent is often conveyed through subtle interactions between text and image under the guise of humor or satire. While recent advances in Vision-Language Models (VLMs) show promise, these models lack support for fine-grained supervision and remain susceptible to implicit hate speech. In this paper, we present a dual-pronged approach to improve multimodal hate detection. First, we propose a prompt optimization framework that systematically varies prompt structure, supervision granularity, and training modality. We show that prompt design and label scaling both influence performance, with structured prompts improving robustness even in small models, and InternVL2 achieving the best F1-scores across binary and scaled settings. Second, we introduce a multimodal data augmentation pipeline that generates 2,479 counterfactually neutral memes by isolating and rewriting the hateful modality. This pipeline, powered by a multi-agent LLM-VLM setup, successfully reduces spurious correlations and improves classifier generalization. Our approaches inspire new directions for building synthetic data to train robust and fair vision-language models. Our findings demonstrate that prompt structure and data composition are as critical as model size, and that targeted augmentation can support more trustworthy and context-sensitive hate detection. 
+
+**Abstract (ZH)**: 现代网络充斥着多模态内容，加剧了检测带有仇恨意图的 meme 的挑战，这些意图往往通过幽默或讽刺的形式在文本和图像之间的微妙互动中传达。尽管近期视觉-语言模型（VLMs）取得了一定进展，但这些模型缺乏细粒度监督，仍然容易受到隐含仇恨言论的影响。在本文中，我们提出了一种双管齐下的方法来改进多模态仇恨内容的检测。首先，我们提出了一种提示优化框架，系统地变化提示结构、监督细粒度和训练方式。结果显示，提示设计和标签缩放都影响性能，结构化的提示即使在小型模型中也能提高鲁棒性，而 InternVL2 在二分类和缩放设置中均获得最佳 F1 分数。其次，我们引入了一种多模态数据增强流水线，生成了 2,479 个事实中立的反事实 meme，通过分离和重写有害模态。该流水线由多代理大型语言模型-视觉语言模型（LLM-VLM）架构驱动，成功减少了虚假关联，提高了分类器的泛化能力。我们的方法启发了构建用于训练鲁棒和公平的视觉-语言模型的合成数据的新方向。我们的研究结果表明，提示结构和数据组成与模型规模同样重要，而有针对性的数据增强可以支持更具可信度和上下文敏感的仇恨内容检测。 
+
+---
+# Contrastive Regularization over LoRA for Multimodal Biomedical Image Incremental Learning 
+
+**Title (ZH)**: 基于LoRA的对比正则化在多模态生物医学图像增量学习中的应用 
+
+**Authors**: Haojie Zhang, Yixiong Liang, Hulin Kuang, Lihui Cen, Zhe Qu, Yigang Cen, Min Zeng, Shichao Kan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.11673)  
+
+**Abstract**: Multimodal Biomedical Image Incremental Learning (MBIIL) is essential for handling diverse tasks and modalities in the biomedical domain, as training separate models for each modality or task significantly increases inference costs. Existing incremental learning methods focus on task expansion within a single modality, whereas MBIIL seeks to train a unified model incrementally across modalities. The MBIIL faces two challenges: I) How to preserve previously learned knowledge during incremental updates? II) How to effectively leverage knowledge acquired from existing modalities to support new modalities? To address these challenges, we propose MSLoRA-CR, a method that fine-tunes Modality-Specific LoRA modules while incorporating Contrastive Regularization to enhance intra-modality knowledge sharing and promote inter-modality knowledge differentiation. Our approach builds upon a large vision-language model (LVLM), keeping the pretrained model frozen while incrementally adapting new LoRA modules for each modality or task. Experiments on the incremental learning of biomedical images demonstrate that MSLoRA-CR outperforms both the state-of-the-art (SOTA) approach of training separate models for each modality and the general incremental learning method (incrementally fine-tuning LoRA). Specifically, MSLoRA-CR achieves a 1.88% improvement in overall performance compared to unconstrained incremental learning methods while maintaining computational efficiency. Our code is publicly available at this https URL. 
+
+**Abstract (ZH)**: 多模态生物医学图像增量学习（MBIIL） 
+
+---

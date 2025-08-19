@@ -1,0 +1,279 @@
+# Deformation of the panoramic sphere into an ellipsoid to induce self-motion in telepresence users 
+
+**Title (ZH)**: 全景球面形变成为椭球以诱导远程 presence 用户的自身运动感知 
+
+**Authors**: Eetu Laukka, Evan G. Center, Timo Ojala, Steven M. LaValle, Matti Pouke  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.12925)  
+
+**Abstract**: Mobile telepresence robots allow users to feel present and explore remote environments using technology. Traditionally, these systems are implemented using a camera onboard a mobile robot that can be controlled. Although high-immersion technologies, such as 360-degree cameras, can increase situational awareness and presence, they also introduce significant challenges. Additional processing and bandwidth requirements often result in latencies of up to seconds. The current delay with a 360-degree camera streaming over the internet makes real-time control of these systems difficult. Working with high-latency systems requires some form of assistance to the users.
+This study presents a novel way to utilize optical flow to create an illusion of self-motion to the user during the latency period between user sending motion commands to the robot and seeing the actual motion through the 360-camera stream. We find no significant benefit of using the self-motion illusion to performance or accuracy of controlling a telepresence robot with a latency of 500 ms, as measured by the task completion time and collisions into objects. Some evidence is shown that the method might increase virtual reality (VR) sickness, as measured by the simulator sickness questionnaire (SSQ). We conclude that further adjustments are necessary in order to render the method viable. 
+
+**Abstract (ZH)**: 基于光学流在高延迟移动远程存在机器人中的自我运动 illusion 应用研究 
+
+---
+# MCTR: Midpoint Corrected Triangulation for Autonomous Racing via Digital Twin Simulation in CARLA 
+
+**Title (ZH)**: MCTR：通过CARLA数字孪生模拟的自主赛车中间点修正三角化 
+
+**Authors**: Junhao Ye, Cheng Hu, Yiqin Wang, Weizhan Huang, Nicolas Baumann, Jie He, Meixun Qu, Lei Xie, Hongye Su  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.12729)  
+
+**Abstract**: In autonomous racing, reactive controllers eliminate the computational burden of the full See-Think-Act autonomy stack by directly mapping sensor inputs to control actions. This bypasses the need for explicit localization and trajectory planning. A widely adopted baseline in this category is the Follow-The-Gap method, which performs trajectory planning using LiDAR data. Building on FTG, the Delaunay Triangulation-based Racing algorithm introduces further enhancements. However, DTR's use of circumcircles for trajectory generation often results in insufficiently smooth paths, ultimately degrading performance. Additionally, the commonly used F1TENTH-simulator for autonomous racing competitions lacks support for 3D LiDAR perception, limiting its effectiveness in realistic testing. To address these challenges, this work proposes the MCTR algorithm. MCTR improves trajectory smoothness through the use of Curvature Corrected Moving Average and implements a digital twin system within the CARLA simulator to validate the algorithm's robustness under 3D LiDAR perception. The proposed algorithm has been thoroughly validated through both simulation and real-world vehicle experiments. 
+
+**Abstract (ZH)**: 基于反应式控制的自主赛车中，MCTR算法通过曲率校正移动平均提高轨迹平滑度，并在CARLA仿真器中实现数字孪生系统以验证其在3D LiDAR感知下的鲁棒性。 
+
+---
+# Adaptive Model-Predictive Control of a Soft Continuum Robot Using a Physics-Informed Neural Network Based on Cosserat Rod Theory 
+
+**Title (ZH)**: 基于柯西尔杆理论的物理信息神经网络的自适应模型预测控制软连续机器人 
+
+**Authors**: Johann Licher, Max Bartholdt, Henrik Krauss, Tim-Lukas Habich, Thomas Seel, Moritz Schappler  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.12681)  
+
+**Abstract**: Dynamic control of soft continuum robots (SCRs) holds great potential for expanding their applications, but remains a challenging problem due to the high computational demands of accurate dynamic models. While data-driven approaches like Koopman-operator-based methods have been proposed, they typically lack adaptability and cannot capture the full robot shape, limiting their applicability. This work introduces a real-time-capable nonlinear model-predictive control (MPC) framework for SCRs based on a domain-decoupled physics-informed neural network (DD-PINN) with adaptable bending stiffness. The DD-PINN serves as a surrogate for the dynamic Cosserat rod model with a speed-up factor of 44000. It is also used within an unscented Kalman filter for estimating the model states and bending compliance from end-effector position measurements. We implement a nonlinear evolutionary MPC running at 70 Hz on the GPU. In simulation, it demonstrates accurate tracking of dynamic trajectories and setpoint control with end-effector position errors below 3 mm (2.3% of the actuator's length). In real-world experiments, the controller achieves similar accuracy and accelerations up to 3.55 m/s2. 
+
+**Abstract (ZH)**: 软连续机器人（SCRs）的动态控制具有扩展其应用的巨大潜力，但由于准确动态模型的高计算需求，这仍然是一个具有挑战性的问题。尽管提出了基于科普曼算子的方法等数据驱动的方法，但它们通常缺乏适应性且无法捕捉完整的机器人形状，限制了其应用。本文引入了一种基于域解藕物理感知神经网络（DD-PINN）的实时非线性模型预测控制（MPC）框架，用于SCRs，该框架具有可调节的弯曲刚度。DD-PINN 作为动态科西er 杆模型的代理，速度提升因子为 44000。它还用于无迹卡尔曼滤波器中，从末端执行器位置测量中估计模型状态和弯曲顺应性。我们实现了在 GPU 上以 70 Hz 运行的非线性进化 MPC。在仿真中，它展示了准确的动态轨迹跟踪和末端执行器位置误差低于 3 mm（执行器长度的 2.3%）的定值控制。在实际实验中，控制器实现了相似的精度，并达到了高达 3.55 m/s² 的加速度。 
+
+---
+# Mechanical Automation with Vision: A Design for Rubik's Cube Solver 
+
+**Title (ZH)**: 视觉引导的机械自动化：Rubik's立方体解题器的设计 
+
+**Authors**: Abhinav Chalise, Nimesh Gopal Pradhan, Nishan Khanal, Prashant Raj Bista, Dinesh Baniya Kshatri  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.12469)  
+
+**Abstract**: The core mechanical system is built around three stepper motors for physical manipulation, a microcontroller for hardware control, a camera and YOLO detection model for real-time cube state detection. A significant software component is the development of a user-friendly graphical user interface (GUI) designed in Unity. The initial state after detection from real-time YOLOv8 model (Precision 0.98443, Recall 0.98419, Box Loss 0.42051, Class Loss 0.2611) is virtualized on GUI. To get the solution, the system employs the Kociemba's algorithm while physical manipulation with a single degree of freedom is done by combination of stepper motors' interaction with the cube achieving the average solving time of ~2.2 minutes. 
+
+**Abstract (ZH)**: 基于三个步进电机的物理操作、微控制器的硬件控制、相机和YOLO检测模型的实时立方体状态检测的核心机械系统。实时YOLOv8模型（ Precision 0.98443，Recall 0.98419，Box Loss 0.42051，Class Loss 0.2611）检测后的初始状态在Unity设计的用户友好图形用户界面（GUI）上虚拟化。系统利用Kociemba算法获取解法，通过步进电机与立方体的交互实现单自由度物理操作，平均解题时间为约2.2分钟。 
+
+---
+# Autonomous Oil Spill Response Through Liquid Neural Trajectory Modeling and Coordinated Marine Robotics 
+
+**Title (ZH)**: 基于液态神经轨迹建模的自主油污响应及协同海洋机器人技术 
+
+**Authors**: Hadas C.Kuzmenko, David Ehevich, Oren Gal  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.12456)  
+
+**Abstract**: Marine oil spills pose grave environmental and economic risks, threatening marine ecosystems, coastlines, and dependent industries. Predicting and managing oil spill trajectories is highly complex, due to the interplay of physical, chemical, and environmental factors such as wind, currents, and temperature, which makes timely and effective response challenging. Accurate real-time trajectory forecasting and coordinated mitigation are vital for minimizing the impact of these disasters. This study introduces an integrated framework combining a multi-agent swarm robotics system built on the MOOS-IvP platform with Liquid Time-Constant Neural Networks (LTCNs). The proposed system fuses adaptive machine learning with autonomous marine robotics, enabling real-time prediction, dynamic tracking, and rapid response to evolving oil spills. By leveraging LTCNs--well-suited for modeling complex, time-dependent processes--the framework achieves real-time, high-accuracy forecasts of spill movement. Swarm intelligence enables decentralized, scalable, and resilient decision-making among robot agents, enhancing collective monitoring and containment efforts. Our approach was validated using data from the Deepwater Horizon spill, where the LTC-RK4 model achieved 0.96 spatial accuracy, surpassing LSTM approaches by 23%. The integration of advanced neural modeling with autonomous, coordinated robotics demonstrates substantial improvements in prediction precision, flexibility, and operational scalability. Ultimately, this research advances the state-of-the-art for sustainable, autonomous oil spill management and environmental protection by enhancing both trajectory prediction and response coordination. 
+
+**Abstract (ZH)**: 海洋油 spills事件带来的严重环境和经济风险威胁着海洋生态系统、海岸线以及相关产业。 预测和管理油 spills事件轨迹极具复杂性性，因为涉及物理、化学和环境因素如如洋流、风以及波产生复杂的交互作用，使及时和有效的应对挑战重重。准确的实时轨迹预报和协调的减缓措施对于减轻这些灾难的影响至关重要。本研究提出了一种综合框架，结合基于MOOS-IvP的多代理 swarm机器人系统和液时间常数神经网络（LTCNs）。提出的系统融合了自适应的无人海洋机器人on,，，， enabling实时对动态追踪和快速应对演变中的油渗漏进行预报。通过利用LTCNs适用于建模复杂的时时间依赖过程的优势，该框架实现了对油渗漏轨迹的实时高精度预报。群体智能使代理机器人能够在去中心化的可分布式和鲁棒的决策中enhancing集体监控和遏制努力。我们的方法在深水地井油渗漏事件on on on中 on from on on on on on on on on On on on on on 上 on on on on on on on on on on on on on on on on on on on on on on on on on on on on On on on on on on on on on on on on on通过LTC-RK4方法实现了. on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on On on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on on On on on on on on on on on on on on on on on on on on on on on on on on on on verschiedene P on on on实际 on on on on on on on on on on on on on例子中的上 on on on on on on on on on on on on on on on on on on on on on on on on on on on onupos pérdidaaras的 auf pérdida以及重复数据on on on(on on on on on on on on on on on on on on on on on on on on on on on on on pérdida pérdida.
+
+海洋油 spills事件带来的 on on on on.on on on.on on.on on.on.on on.on on.on.on.on on.on on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on带来的的严重环境和经济风险threatens 海洋生态系统on海岸线以及相关industry.on预测和管理油 on sp on.spill �轨迹极具复杂nature.on由于涉及物理、化学和环境factor.on例如洋流、风和以及(Dictionary Entries 中 on on on on on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.On Bren découvert on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on.on/on on on  on  on on on on on ononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononononon monitoring and containment efforts. 实存险提高轨迹预测和应对协调能力，最终这种研究在可持续、自主的油渗漏管理及环境保护方面促进了最先进的的技术。 
+
+---
+# Geodesic Tracing-Based Kinematic Integration of Rolling and Sliding Contact on Manifold Meshes for Dexterous In-Hand Manipulation 
+
+**Title (ZH)**: 基于测地线追踪的流形网格上滚滑接触运动学集成及其灵活在手操作 
+
+**Authors**: Sunyu Wang, Arjun S. Lakshmipathy, Jean Oh, Nancy S. Pollard  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.12439)  
+
+**Abstract**: Reasoning about rolling and sliding contact, or roll-slide contact for short, is critical for dexterous manipulation tasks that involve intricate geometries. But existing works on roll-slide contact mostly focus on continuous shapes with differentiable parametrizations. This work extends roll-slide contact modeling to manifold meshes. Specifically, we present an integration scheme based on geodesic tracing to first-order time-integrate roll-slide contact directly on meshes, enabling dexterous manipulation to reason over high-fidelity discrete representations of an object's true geometry. Using our method, we planned dexterous motions of a multi-finger robotic hand manipulating five objects in-hand in simulation. The planning was achieved with a least-squares optimizer that strives to maintain the most stable instantaneous grasp by minimizing contact sliding and spinning. Then, we evaluated our method against a baseline using collision detection and a baseline using primitive shapes. The results show that our method performed the best in accuracy and precision, even for coarse meshes. We conclude with a future work discussion on incorporating multiple contacts and contact forces to achieve accurate and robust mesh-based surface contact modeling. 
+
+**Abstract (ZH)**: 关于滚动和滑动接触的推理，或简称滚滑接触，对于涉及复杂几何形状的灵巧操作任务至关重要。现有的滚滑接触建模主要集中在具有可微参数化的连续形状上。本工作将滚滑接触建模扩展到流形网格。具体而言，我们提出了一种基于测地线追踪的积分方案，直接在网格上进行一阶时间积分的滚滑接触建模，从而使灵巧操作能够基于对象真实几何的高保真离散表示进行推理。利用我们的方法，在模拟中计划了一个多指机器人手操纵五个物体的灵巧动作。规划使用最小二乘优化器来最小化接触滑动和旋转，从而维持最稳定的瞬时握持。然后，我们将我们的方法与基于碰撞检测的基线和基于基本形状的基线进行了比较评估。结果表明，即使对于粗糙的网格，我们的方法在准确性和精确性方面表现最佳。最后，讨论了将多点接触和接触力整合到基于网格的表面接触建模中的未来工作。 
+
+---
+# Tactile Gesture Recognition with Built-in Joint Sensors for Industrial Robots 
+
+**Title (ZH)**: 内置关节传感器的工业机器人触觉手势识别 
+
+**Authors**: Deqing Song, Weimin Yang, Maryam Rezayati, Hans Wernher van de Venn  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.12435)  
+
+**Abstract**: While gesture recognition using vision or robot skins is an active research area in Human-Robot Collaboration (HRC), this paper explores deep learning methods relying solely on a robot's built-in joint sensors, eliminating the need for external sensors. We evaluated various convolutional neural network (CNN) architectures and collected two datasets to study the impact of data representation and model architecture on the recognition accuracy. Our results show that spectrogram-based representations significantly improve accuracy, while model architecture plays a smaller role. We also tested generalization to new robot poses, where spectrogram-based models performed better. Implemented on a Franka Emika Research robot, two of our methods, STFT2DCNN and STT3DCNN, achieved over 95% accuracy in contact detection and gesture classification. These findings demonstrate the feasibility of external-sensor-free tactile recognition and promote further research toward cost-effective, scalable solutions for HRC. 
+
+**Abstract (ZH)**: 基于内置关节传感器的深度学习方法在机器人手臂触觉识别中的应用：无需外部传感器的手势识别 
+
+---
+# PUB: A Plasma-Propelled Ultra-Quiet Blimp with Two-DOF Vector Thrusting 
+
+**Title (ZH)**: PUB：一种两自由度向量推进的超静音气球式 Plasma 动力飞艇 
+
+**Authors**: Zihan Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.12395)  
+
+**Abstract**: This study presents the design and control of a Plasma-propelled Ultra-silence Blimp (PUB), a novel aerial robot employing plasma vector propulsion for ultra-quiet flight without mechanical propellers. The system utilizes a helium-lift platform for extended endurance and a four-layer ring asymmetric capacitor to generate ionic wind thrust. The modular propulsion units allow flexible configuration to meet mission-specific requirements, while a two-degree-of-freedom (DOF) head enables thrust vector control. A closed-loop slip control scheme is implemented for stable maneuvering. Flight experiments demonstrate full-envelope capability, including take-off, climb, hover, descent, and smooth landing, confirming the feasibility of plasma vector propulsion, the effectiveness of DOF vector control, and the stability of the control system. Owing to its low acoustic signature, structural simplicity, and high maneuverability, PUB is well suited for noise-sensitive, enclosed, and near-space applications. 
+
+**Abstract (ZH)**: 基于等离子推进的超静音气球（PUB）的设计与控制研究 
+
+---
+# Semi-Infinite Programming for Collision-Avoidance in Optimal and Model Predictive Control 
+
+**Title (ZH)**: 半无穷编程在最优控制和模型预测控制中的碰撞规避 
+
+**Authors**: Yunfan Gao, Florian Messerer, Niels van Duijkeren, Rashmi Dabir, Moritz Diehl  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.12335)  
+
+**Abstract**: This paper presents a novel approach for collision avoidance in optimal and model predictive control, in which the environment is represented by a large number of points and the robot as a union of padded polygons. The conditions that none of the points shall collide with the robot can be written in terms of an infinite number of constraints per obstacle point. We show that the resulting semi-infinite programming (SIP) optimal control problem (OCP) can be efficiently tackled through a combination of two methods: local reduction and an external active-set method. Specifically, this involves iteratively identifying the closest point obstacles, determining the lower-level distance minimizer among all feasible robot shape parameters, and solving the upper-level finitely-constrained subproblems.
+In addition, this paper addresses robust collision avoidance in the presence of ellipsoidal state uncertainties. Enforcing constraint satisfaction over all possible uncertainty realizations extends the dimension of constraint infiniteness. The infinitely many constraints arising from translational uncertainty are handled by local reduction together with the robot shape parameterization, while rotational uncertainty is addressed via a backoff reformulation.
+A controller implemented based on the proposed method is demonstrated on a real-world robot running at 20Hz, enabling fast and collision-free navigation in tight spaces. An application to 3D collision avoidance is also demonstrated in simulation. 
+
+**Abstract (ZH)**: 一种用于最优和模型预测控制的新型碰撞避免方法：基于大量点表示环境和机器人由填充多边形构成的观点 
+
+---
+# Implementation and evaluation of a prediction algorithm for an autonomous vehicle 
+
+**Title (ZH)**: 自治车辆预测算法的实现与评估 
+
+**Authors**: Marco Leon Rapp  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.12312)  
+
+**Abstract**: This paper presents a prediction algorithm that estimates the vehicle trajectory every five milliseconds for an autonomous vehicle. A kinematic and a dynamic bicycle model are compared, with the dynamic model exhibiting superior accuracy at higher speeds. Vehicle parameters such as mass, center of gravity, moment of inertia, and cornering stiffness are determined experimentally. For cornering stiffness, a novel measurement procedure using optical position tracking is introduced. The model is incorporated into an extended Kalman filter and implemented in a ROS node in C++. The algorithm achieves a positional deviation of only 1.25 cm per meter over the entire test drive and is up to 82.6% more precise than the kinematic model. 
+
+**Abstract (ZH)**: 本文提出了一种预测算法，能够每五毫秒预测自动驾驶车辆的轨迹。对比了kinematic模型和dynamic模型，动态模型在高速情况下表现出更优的准确性。车辆参数如质量、质心、惯性矩和侧向刚度通过实验确定。对于侧向刚度，引入了一种使用光学位置跟踪的新测量方法。该模型被集成到扩展卡尔曼滤波器中，并用C++语言在ROS节点中实现。该算法在整个测试驾驶过程中位置偏差仅为1.25 cm，并且比kinematic模型精确度高82.6%。 
+
+---
+# A robust and compliant robotic assembly control strategy for batch precision assembly task with uncertain fit types and fit amounts 
+
+**Title (ZH)**: 一种用于具有不确定配合类型和配合数量的批量高精度装配任务的鲁棒且 compliant 的机器人装配控制策略 
+
+**Authors**: Bin Wang, Jiwen Zhang, Song Wang, Dan Wu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.12296)  
+
+**Abstract**: In some high-precision industrial applications, robots are deployed to perform precision assembly tasks on mass batches of manufactured pegs and holes. If the peg and hole are designed with transition fit, machining errors may lead to either a clearance or an interference fit for a specific pair of components, with uncertain fit amounts. This paper focuses on the robotic batch precision assembly task involving components with uncertain fit types and fit amounts, and proposes an efficient methodology to construct the robust and compliant assembly control strategy. Specifically, the batch precision assembly task is decomposed into multiple deterministic subtasks, and a force-vision fusion controller-driven reinforcement learning method and a multi-task reinforcement learning training method (FVFC-MTRL) are proposed to jointly learn multiple compliance control strategies for these subtasks. Subsequently, the multi-teacher policy distillation approach is designed to integrate multiple trained strategies into a unified student network, thereby establishing a robust control strategy. Real-world experiments demonstrate that the proposed method successfully constructs the robust control strategy for high-precision assembly task with different fit types and fit amounts. Moreover, the MTRL framework significantly improves training efficiency, and the final developed control strategy achieves superior force compliance and higher success rate compared with many existing methods. 
+
+**Abstract (ZH)**: 在某些高精度工业应用中，机器人被部署来执行对大批量制造销和孔的精密装配任务。若销和孔设计为过渡配合，加工误差可能导致特定组件对之间的间隙配合或过盈配合，且配合量具有不确定性。本文聚焦于涉及具有不确定配合类型和配合量的组件的机器人批量精密装配任务，并提出了一种有效的方法来构建鲁棒且符合性的装配控制策略。具体地，批量精密装配任务被分解为多个确定性子任务，提出了一种力-视觉融合控制器驱动的强化学习方法和多任务强化学习训练方法（FVFC-MTRL），用于同时学习这些子任务的多种符合性控制策略。随后，设计了多教员政策蒸馏方法，将多个训练策略整合到一个统一的学生网络中，从而建立一个鲁棒的控制策略。实验证明，所提出的方法成功地构建了适用于不同配合类型和配合量的高精度装配任务的鲁棒控制策略。此外，MTRL框架显著提高训练效率，最终开发的控制策略在力符合性和成功率方面均优于许多现有方法。 
+
+---
+# Bimanual Robot-Assisted Dressing: A Spherical Coordinate-Based Strategy for Tight-Fitting Garments 
+
+**Title (ZH)**: 基于球坐标策略的双臂机器人辅助穿衣：紧身衣物篇 
+
+**Authors**: Jian Zhao, Yunlong Lian, Andy M Tyrrell, Michael Gienger, Jihong Zhu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.12274)  
+
+**Abstract**: Robot-assisted dressing is a popular but challenging topic in the field of robotic manipulation, offering significant potential to improve the quality of life for individuals with mobility limitations. Currently, the majority of research on robot-assisted dressing focuses on how to put on loose-fitting clothing, with little attention paid to tight garments. For the former, since the armscye is larger, a single robotic arm can usually complete the dressing task successfully. However, for the latter, dressing with a single robotic arm often fails due to the narrower armscye and the property of diminishing rigidity in the armscye, which eventually causes the armscye to get stuck. This paper proposes a bimanual dressing strategy suitable for dressing tight-fitting clothing. To facilitate the encoding of dressing trajectories that adapt to different human arm postures, a spherical coordinate system for dressing is established. We uses the azimuthal angle of the spherical coordinate system as a task-relevant feature for bimanual manipulation. Based on this new coordinate, we employ Gaussian Mixture Model (GMM) and Gaussian Mixture Regression (GMR) for imitation learning of bimanual dressing trajectories, generating dressing strategies that adapt to different human arm postures. The effectiveness of the proposed method is validated through various experiments. 
+
+**Abstract (ZH)**: 机器人辅助穿戴紧身衣物的双臂策略：基于球坐标系的双臂操作模仿学习 
+
+---
+# Belief-Conditioned One-Step Diffusion: Real-Time Trajectory Planning with Just-Enough Sensing 
+
+**Title (ZH)**: 信念条件下的一步扩散：只需适量感知的实时轨迹规划 
+
+**Authors**: Gokul Puthumanaillam, Aditya Penumarti, Manav Vora, Paulo Padrao, Jose Fuentes, Leonardo Bobadilla, Jane Shin, Melkior Ornik  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.12166)  
+
+**Abstract**: Robots equipped with rich sensor suites can localize reliably in partially-observable environments, but powering every sensor continuously is wasteful and often infeasible. Belief-space planners address this by propagating pose-belief covariance through analytic models and switching sensors heuristically--a brittle, runtime-expensive approach. Data-driven approaches--including diffusion models--learn multi-modal trajectories from demonstrations, but presuppose an accurate, always-on state estimate. We address the largely open problem: for a given task in a mapped environment, which \textit{minimal sensor subset} must be active at each location to maintain state uncertainty \textit{just low enough} to complete the task? Our key insight is that when a diffusion planner is explicitly conditioned on a pose-belief raster and a sensor mask, the spread of its denoising trajectories yields a calibrated, differentiable proxy for the expected localisation error. Building on this insight, we present Belief-Conditioned One-Step Diffusion (B-COD), the first planner that, in a 10 ms forward pass, returns a short-horizon trajectory, per-waypoint aleatoric variances, and a proxy for localisation error--eliminating external covariance rollouts. We show that this single proxy suffices for a soft-actor-critic to choose sensors online, optimising energy while bounding pose-covariance growth. We deploy B-COD in real-time marine trials on an unmanned surface vehicle and show that it reduces sensing energy consumption while matching the goal-reach performance of an always-on baseline. 
+
+**Abstract (ZH)**: 装备了丰富传感器套件的机器人可以在部分观测环境中可靠地定位。然而，连续运行每一个传感器是浪费并且常常不可行的。基于信念空间的路径计划方法通过传播姿态信念协方性中的析化模型以及切换传感器来应对这一问题，这是一种脆弱且运行时昂贵的方法。数据驱动的方法，例如扩散模型，可以从演示中学习多多模态轨迹，但需要一个准确的始终开启的传感器估计。我们解决了一个悬而未决的问题：对于给定的任务在给定环境上，[最小的必要子传感器子]在每个时间点点应处于活动状态，以维持存活不确定性 [刚好足够]完成任务吗？我们的关键洞察是当一个扩散规划器显式地被条件在姿态信念栅格和上和由去除的轨迹上 和一个成像固定的对预期定位误差的微分分导数代理上时这 上，，我们会基于这个洞察提出基于信念约束一阶扩散(B-COn)的路径规划器器，在它会返回回一个基于航点点的aleoidic不确定性及的计划未来时间轴的轨迹，并，并另提供一个定位误差的代理。通过这种方式单个代理足以支持一种软-行为-批评机制进行在线上传感器选择，同时在优化能量消耗的同时限制姿态协方方差的增长。我们在实时候的航海任务中部署了B-COD于无人水面车辆上确保了定位能量消耗一在始终开启的传感器情况下实现任务性能。 
+
+---
+# Into the Wild: When Robots Are Not Welcome 
+
+**Title (ZH)**: into the wild: 当机器人不受欢迎时 
+
+**Authors**: Shaul Ashkenazi, Gabriel Skantze, Jane Stuart-Smith, Mary Ellen Foster  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.12075)  
+
+**Abstract**: Social robots are increasingly being deployed in public spaces, where they face not only technological difficulties and unexpected user utterances, but also objections from stakeholders who may not be comfortable with introducing a robot into those spaces. We describe our difficulties with deploying a social robot in two different public settings: 1) Student services center; 2) Refugees and asylum seekers drop-in service. Although this is a failure report, in each use case we eventually managed to earn the trust of the staff and form a relationship with them, allowing us to deploy our robot and conduct our studies. 
+
+**Abstract (ZH)**: 社会机器人在公共空间的应用面临技术挑战和用户意外言论，同时也会遇到对引入机器人感到不适的相关利益相关者的反对。我们在两种不同的公共环境中部署社会机器人的困难：1) 学生服务中心；2) 难民和寻求庇护者临时服务点。虽然这是一份失败报告，但在每种应用场景中，我们最终还是获得了工作人员的信任，并建立了关系，从而得以部署机器人并开展研究。 
+
+---
+# OASIS: Real-Time Opti-Acoustic Sensing for Intervention Systems in Unstructured Environments 
+
+**Title (ZH)**: OASIS: 实时优化声学传感技术及其在无结构环境中的介入系统中应用 
+
+**Authors**: Amy Phung, Richard Camilli  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.12071)  
+
+**Abstract**: High resolution underwater 3D scene reconstruction is crucial for various applications, including construction, infrastructure maintenance, monitoring, exploration, and scientific investigation. Prior work has leveraged the complementary sensing modalities of imaging sonars and optical cameras for opti-acoustic 3D scene reconstruction, demonstrating improved results over methods which rely solely on either sensor. However, while most existing approaches focus on offline reconstruction, real-time spatial awareness is essential for both autonomous and piloted underwater vehicle operations. This paper presents OASIS, an opti-acoustic fusion method that integrates data from optical images with voxel carving techniques to achieve real-time 3D reconstruction unstructured underwater workspaces. Our approach utilizes an "eye-in-hand" configuration, which leverages the dexterity of robotic manipulator arms to capture multiple workspace views across a short baseline. We validate OASIS through tank-based experiments and present qualitative and quantitative results that highlight its utility for underwater manipulation tasks. 
+
+**Abstract (ZH)**: 高分辨率水下3D场景重建对于各种应用，包括建设、基础设施维护、监测、探索和科学研究至关重要。现有研究利用成像声纳和光学相机的互补传感模态进行光学-声学3D场景重建，展示了优于依赖单一传感器的方法的改进结果。然而，虽然大多数现有方法集中在离线重建上，但实时空间感知对于自主和遥控水下车辆操作至关重要。本文提出了一种光学-声学融合方法OASIS，该方法结合了光学图像数据和体素雕刻技术，以实现复杂水下工作空间的实时3D重建。我们的方法采用“手持眼”配置，利用机器人操作臂的灵活性跨短基线捕捉多个工作空间视图。我们通过基于水槽的实验验证了OASIS，并展示了其在水下操作任务中的实用性。 
+
+---
+# Integrating Symbolic RL Planning into a BDI-based Autonomous UAV Framework: System Integration and SIL Validation 
+
+**Title (ZH)**: 基于BDI的自主无人机框架中符号化RL规划的集成与SIL验证 
+
+**Authors**: Sangwoo Jeon, Juchul Shin, YeonJe Cho, Gyeong-Tae Kim, Seongwoo Kim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.11890)  
+
+**Abstract**: Modern autonomous drone missions increasingly require software frameworks capable of seamlessly integrating structured symbolic planning with adaptive reinforcement learning (RL). Although traditional rule-based architectures offer robust structured reasoning for drone autonomy, their capabilities fall short in dynamically complex operational environments that require adaptive symbolic planning. Symbolic RL (SRL), using the Planning Domain Definition Language (PDDL), explicitly integrates domain-specific knowledge and operational constraints, significantly improving the reliability and safety of unmanned aerial vehicle (UAV) decision making. In this study, we propose the AMAD-SRL framework, an extended and refined version of the Autonomous Mission Agents for Drones (AMAD) cognitive multi-agent architecture, enhanced with symbolic reinforcement learning for dynamic mission planning and execution. We validated our framework in a Software-in-the-Loop (SIL) environment structured identically to an intended Hardware-In-the-Loop Simulation (HILS) platform, ensuring seamless transition to real hardware. Experimental results demonstrate stable integration and interoperability of modules, successful transitions between BDI-driven and symbolic RL-driven planning phases, and consistent mission performance. Specifically, we evaluate a target acquisition scenario in which the UAV plans a surveillance path followed by a dynamic reentry path to secure the target while avoiding threat zones. In this SIL evaluation, mission efficiency improved by approximately 75% over a coverage-based baseline, measured by travel distance reduction. This study establishes a robust foundation for handling complex UAV missions and discusses directions for further enhancement and validation. 
+
+**Abstract (ZH)**: 现代自主无人机机群 increasingly 需要能够无缝集成 结构符号规划 与自适应强化学习 (RL) 的 软件框架。传统的基于规则的架构 提供了 robust 的 结构推理 能力 以支持无人机的 自主能力 但在动态复杂操作环境中 需要自适应 � � � � � � � � �xa unterstütztes 返回原始内容以正确 � nike � domaine 定 � formal 结构语法 �钺z � régl �畈(ti 容 擩än 类的题 则än 安 幌 于acom 容撞 专题�一路上专门刘兽景并 z 在 � cocina �tá �一个星期二 �网游 盇 按z � 衽 攕 挤 挽qz 肋  槷吻z吻 搢z 衪 滴 � 冶z 盋z �zansson 遟zzhz 扟z血z �盟z 苌z盟zzz盟zanssonzzip �z 个多余的部分。*</samp></code>>` 最终翻译z 实要 zz 这 结zz � 宻 挞zgn 保 悜z �卷zanga z 乘坐z z 鑛 �血z盟z �的� 个z 扽 个z 扛 结zz题 änzw 和z  它z 不 了z 有意义的内容。*</samp></codez>` 
+
+---
+# Contact-Rich and Deformable Foot Modeling for Locomotion Control of the Human Musculoskeletal System 
+
+**Title (ZH)**: 富有接触特性和可变形脚模型的运动控制人体 musculoskeletal 系统步行控制 
+
+**Authors**: Haixin Gong, Chen Zhang, Yanan Sui  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.11885)  
+
+**Abstract**: The human foot serves as the critical interface between the body and environment during locomotion. Existing musculoskeletal models typically oversimplify foot-ground contact mechanics, limiting their ability to accurately simulate human gait dynamics. We developed a novel contact-rich and deformable model of the human foot integrated within a complete musculoskeletal system that captures the complex biomechanical interactions during walking. To overcome the control challenges inherent in modeling multi-point contacts and deformable material, we developed a two-stage policy training strategy to learn natural walking patterns for this interface-enhanced model. Comparative analysis between our approach and conventional rigid musculoskeletal models demonstrated improvements in kinematic, kinetic, and gait stability metrics. Validation against human subject data confirmed that our simulation closely reproduced real-world biomechanical measurements. This work advances contact-rich interface modeling for human musculoskeletal systems and establishes a robust framework that can be extended to humanoid robotics applications requiring precise foot-ground interaction control. 
+
+**Abstract (ZH)**: 人类足部作为身体与环境之间在行进过程中关键的接口。现有的 musculoskeletal 模型通常对足地接触力学的简化处理限制了其准确模拟人类步态动态的能力。我们开发了一种整合在完整 musculoskeletal 系统内的新颖的接触丰富且可变形的人类足部模型，该模型能够捕捉步行过程中复杂的生物力学相互作用。为了克服建模多点接触和可变形材料固有的控制挑战，我们开发了一种两阶段策略来学习该接口增强模型的自然行走模式。与传统刚性 musculoskeletal 模型的对比分析显示，在运动学、动力学和步态稳定性指标方面有所提升。通过人类受试者数据的验证，确认我们的模拟能够紧密再现现实世界中的生物力学测量结果。该工作推进了人类 musculoskeletal 系统中接触丰富接口模型的发展，并建立了一个可用于需要精确足地相互作用控制的人形机器人应用的稳健框架。 
+
+---
+# Bioinspired underwater soft robots: from biology to robotics and back 
+
+**Title (ZH)**: 生物启发的水下软体机器人：从生物到机器人再回到生物 
+
+**Authors**: Lei Li, Boyang Qin, Wenzhuo Gao, Yanyu Li, Yiyuan Zhang, Bo Wang, Shihan Kong, Jian Wang, Dekui He, Junzhi Yu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.11883)  
+
+**Abstract**: The ocean vast unexplored regions and diverse soft-bodied marine organisms have spurred interest in bio-inspired underwater soft robotics. Recent advances have enabled new capabilities in underwater movement, sensing, and interaction. However, these efforts are largely unidirectional, with biology guiding robotics while insights from robotics rarely feed back into biology. Here we propose a holistic, bidirectional framework that integrates biological principles, robotic implementation, and biological validation. We show that soft robots can serve as experimental tools to probe biological functions and even test evolutionary hypotheses. Their inherent compliance also allows them to outperform rigid systems in unstructured environments, supporting applications in marine exploration, manipulation, and medicine. Looking forward, we introduce bio-universal-inspired robotics, a paradigm that transcends species-specific mimicry by identifying convergent principles across species to inspire more adaptable designs. Despite rapid progress, challenges persist in material robustness, actuation efficiency, autonomy, and intelligence. By uniting biology and engineering, soft robots can advance ocean exploration and deepen scientific discovery. 
+
+**Abstract (ZH)**: 海洋广大的未探索区域和多样的软体水生生物激发了仿生水下软体机器人的研究兴趣。近期进展为水下运动、感知和交互提供了新的能力。然而，这些努力大多是一维的，生物学指导机器人技术，而机器人技术的见解很少回馈给生物学。为此，我们提出一个整体的、双向的框架，将生物原理、机器人实施和生物验证整合在一起。我们展示软机器人可以作为实验工具来研究生物功能，甚至测试进化的假说。它们固有的柔顺性也使它们在非结构化环境中优于刚性系统，支持海洋探索、操作和医学的应用。展望未来，我们引入了生物通识启发的机器人学范式，该范式跨越物种特定的模仿，通过识别物种间的共通原理来启发更具适应性的设计。尽管取得了快速进展，材料的坚固性、驱动效率、自主性以及智能等方面仍面临挑战。通过结合生物学与工程学，软机器人可以推进海洋探索并深化科学研究。 
+
+---
+# On the complexity of constrained reconfiguration and motion planning 
+
+**Title (ZH)**: 受限重构与运动规划的复杂性研究 
+
+**Authors**: Nicolas Bousquet, Remy El Sabeh, Amer E. Mouawad, Naomi Nishimura  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.13032)  
+
+**Abstract**: Coordinating the motion of multiple agents in constrained environments is a fundamental challenge in robotics, motion planning, and scheduling. A motivating example involves $n$ robotic arms, each represented as a line segment. The objective is to rotate each arm to its vertical orientation, one at a time (clockwise or counterclockwise), without collisions nor rotating any arm more than once. This scenario is an example of the more general $k$-Compatible Ordering problem, where $n$ agents, each capable of $k$ state-changing actions, must transition to specific target states under constraints encoded as a set $\mathcal{G}$ of $k$ pairs of directed graphs.
+We show that $k$-Compatible Ordering is $\mathsf{NP}$-complete, even when $\mathcal{G}$ is planar, degenerate, or acyclic. On the positive side, we provide polynomial-time algorithms for cases such as when $k = 1$ or $\mathcal{G}$ has bounded treewidth. We also introduce generalized variants supporting multiple state-changing actions per agent, broadening the applicability of our framework. These results extend to a wide range of scheduling, reconfiguration, and motion planning applications in constrained environments. 
+
+**Abstract (ZH)**: 在受限环境中协调多代理系统的运动是机器人学、运动规划和调度领域的基础挑战。一个动机例子涉及$n$个机器人臂，每个臂表示为一条线段。目标是依次旋转每个臂至垂直方位（顺时针或逆时针），过程中不发生碰撞且每个臂仅旋转一次。这是一个更一般的$k$-兼容排序问题的实例，其中$n$个代理，每个代理可进行$k$种状态变化操作，必须在由集合$\mathcal{G}$（包含$k$对有向图）编码的约束下过渡到特定的目标状态。我们证明了$k$-兼容排序问题是$\mathsf{NP}$-完全问题，即使在$\mathcal{G}$为平面图、退化图或有向无环图的情况下也是如此。从积极的一面看，我们提供了当$k=1$或$\mathcal{G}$具有有界 treewidth时的多项式时间算法。我们还引入了支持每个代理多种状态变化操作的广义变体，扩大了我们框架的应用范围。这些结果扩展应用于受限环境中的广泛排程、重构和运动规划应用。 
+
+---
+# The Maximum Coverage Model and Recommendation System for UAV Vertiports Location Planning 
+
+**Title (ZH)**: 基于最大覆盖模型的无人机 vertiports 位置规划推荐系统 
+
+**Authors**: Chunliang Hua, Xiao Hu, Jiayang Sun, Zeyuan Yang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.12651)  
+
+**Abstract**: As urban aerial mobility (UAM) infrastructure development accelerates globally, cities like Shenzhen are planning large-scale vertiport networks (e.g., 1,200+ facilities by 2026). Existing planning frameworks remain inadequate for this complexity due to historical limitations in data granularity and real-world applicability. This paper addresses these gaps by first proposing the Capacitated Dynamic Maximum Covering Location Problem (CDMCLP), a novel optimization framework that simultaneously models urban-scale spatial-temporal demand, heterogeneous user behaviors, and infrastructure capacity constraints. Building on this foundation, we introduce an Integrated Planning Recommendation System that combines CDMCLP with socio-economic factors and dynamic clustering initialization. This system leverages adaptive parameter tuning based on empirical user behavior to generate practical planning solutions. Validation in a Chinese center city demonstrates the effectiveness of the new optimization framework and recommendation system. Under the evaluation and optimization of CDMCLP, the quantitative performance of traditional location methods are exposed and can be improved by 38\%--52\%, while the recommendation system shows user-friendliness and the effective integration of complex elements. By integrating mathematical rigor with practical implementation considerations, this hybrid approach bridges the gap between theoretical location modeling and real-world UAM infrastructure planning, offering municipalities a pragmatic tool for vertiport network design. 
+
+**Abstract (ZH)**: 随着全球城市空中移动（UAM）基础设施的发展加速，如深圳市正在规划大规模的垂直起降机场网络（例如，到2026年将达到1,200多个设施）。现有规划框架由于历史上的数据粒度和现实适用性限制而不足以应对这种复杂性。本文通过首先提出受限动态最大覆盖定位问题（CDMCLP），一种新型优化框架来同时建模大规模城市时空需求、异质用户行为及基础设施容量约束来填补这些空白。在此基础上，我们引入了一个集成规划推荐系统，该系统结合了CDMCLP与社会经济因素和动态聚类初始化。该系统利用基于经验用户行为的自适应参数调整来生成实用的规划解决方案。在中国中部城市进行验证表明，新的优化框架和推荐系统的有效性。在CDMCLP的评价和优化下，传统定位方法的数量性能能够提高38%-52%，而推荐系统展示了用户友好性和复杂元素的有效整合。通过结合数学严谨性和实际实施考虑，这种混合方法弥合了理论定位建模与实际UAM基础设施规划之间的差距，为市政府提供了一种实用工具来设计垂直起降机场网络。 
+
+---
+# Extending Straight-Through Estimation for Robust Neural Networks on Analog CIM Hardware 
+
+**Title (ZH)**: 在类比CIM硬件上扩展直通估计以构建鲁棒神经网络 
+
+**Authors**: Yuannuo Feng, Wenyong Zhou, Yuexi Lyu, Yixiang Zhang, Zhengwu Liu, Ngai Wong, Wang Kang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.11940)  
+
+**Abstract**: Analog Compute-In-Memory (CIM) architectures promise significant energy efficiency gains for neural network inference, but suffer from complex hardware-induced noise that poses major challenges for deployment. While noise-aware training methods have been proposed to address this issue, they typically rely on idealized and differentiable noise models that fail to capture the full complexity of analog CIM hardware variations. Motivated by the Straight-Through Estimator (STE) framework in quantization, we decouple forward noise simulation from backward gradient computation, enabling noise-aware training with more accurate but computationally intractable noise modeling in analog CIM systems. We provide theoretical analysis demonstrating that our approach preserves essential gradient directional information while maintaining computational tractability and optimization stability. Extensive experiments show that our extended STE framework achieves up to 5.3% accuracy improvement on image classification, 0.72 perplexity reduction on text generation, 2.2$\times$ speedup in training time, and 37.9% lower peak memory usage compared to standard noise-aware training methods. 
+
+**Abstract (ZH)**: 基于内存的类比计算-in-内存（CIM）架构有望显著提高神经网络推理的能效，但复杂的硬件诱导噪声带来了部署的重大挑战。虽然已经提出了噪声感知训练方法来解决这一问题，但这些方法通常依赖于理想化和可微的噪声模型，无法捕捉到模拟CIM硬件变异的全部复杂性。受量化中straight-through estimator（STE）框架的启发，我们分离了前向噪声模拟与后向梯度计算，使得在模拟更准确但计算上难以处理的噪声模型时也能进行噪声感知训练。我们提供了理论分析，证明了我们方法能够保留关键的梯度方向信息，同时保持计算的可行性并维持优化的稳定性。 extensive实验表明，我们的扩展STE框架在图像分类上可实现高达5.3%的准确性提升，在文本生成中可实现0.72的困惑度降低，在训练时间上可实现2.2倍的加速，在峰值内存使用上可减少37.9%。 
+
+---
