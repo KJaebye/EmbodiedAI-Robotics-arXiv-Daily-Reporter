@@ -1,0 +1,104 @@
+# Augmenting cobots for sheet-metal SMEs with 3D object recognition and localisation 
+
+**Title (ZH)**: 基于3D物体识别与定位增强协作机器人在薄板中小型企业中的应用 
+
+**Authors**: Martijn Cramer, Yanming Wu, David De Schepper, Eric Demeester  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.13964)  
+
+**Abstract**: Due to high-mix-low-volume production, sheet-metal workshops today are challenged by small series and varying orders. As standard automation solutions tend to fall short, SMEs resort to repetitive manual labour impacting production costs and leading to tech-skilled workforces not being used to their full potential. The COOCK+ ROBUST project aims to transform cobots into mobile and reconfigurable production assistants by integrating existing technologies, including 3D object recognition and localisation. This article explores both the opportunities and challenges of enhancing cobotic systems with these technologies in an industrial setting, outlining the key steps involved in the process. Additionally, insights from a past project, carried out by the ACRO research unit in collaboration with an industrial partner, serves as a concrete implementation example throughout. 
+
+**Abstract (ZH)**: 由于高混低量生产，今天的片材车间面临着小批量和多变订单的挑战。由于标准自动化解决方案往往不尽如人意，中小企业转而依赖重复性手工劳动，这影响了生产成本，并导致技术熟练的劳动力未能充分发挥潜力。COOCK+ ROBUST项目旨在通过集成现有的技术，如3D物体识别和定位，将协作机器人转化为移动和可重构的生产助手。本文探讨了在工业环境中增强协作机器人系统的机会与挑战，并概述了该过程中的关键步骤。此外，ACRO研究单元与一家工业合作伙伴合作开展的过去项目提供了具体实施例。 
+
+---
+# Blast Hole Seeking and Dipping -- The Navigation and Perception Framework in a Mine Site Inspection Robot 
+
+**Title (ZH)**: 爆破孔搜索与倾斜测量——矿场检查机器人中的导航与感知框架 
+
+**Authors**: Liyang Liu, Ehsan Mihankhah, Nathan Wallace, Javier Martinez, Andrew J. Hill  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.13785)  
+
+**Abstract**: In open-pit mining, holes are drilled into the surface of the excavation site and detonated with explosives to facilitate digging. These blast holes need to be inspected internally for investigation of downhole material types and properties. Knowing these properties can lead to significant savings in material handling costs in downstream processes. Manual hole inspection is slow and expensive, with major limitations in revealing the geometric and geological properties of the holes and their contents. This has been the motivation for the development of our autonomous mine-site inspection robot - "DIPPeR". In this paper, the automation aspect of the project is explained. We present a robust blast hole seeking and detection framework that enables target-based navigation and accurate down-hole sensor positioning. The pipeline first processes point-cloud data collected by the on-board LiDAR sensors, extracting the cone-shaped volume of drill-waste above the ground. By projecting the 3D cone points into a virtual depth image, segmentation is achieved in the 2D domain, yielding a circular hole at the image centre and a collared cone face. We then identify the hole centre using a robust detection module while suppressing non-maximum candidates, ensuring precise sensor placement for down-hole inspection and avoiding collisions with the cavity wall. To enable autonomous hole-seeking, the pipeline automatically adjusts its projection parameters during robot navigation to account for variations in point sparsity and hole opening size, ensuring a consistent hole appearance in 2D images. This allows continuous tracking of the target hole as the robot approaches the goal point. We demonstrate the effectiveness of our navigation and perception system in both high-fidelity simulation environments and on-site field tests. A demonstration video is available at "this https URL. 
+
+**Abstract (ZH)**: 露天矿钻孔检测与自动化勘探机器人“DIPPeR”的研究：基于目标的导航与精确孔内传感器定位框架 
+
+---
+# Unified Hierarchical MPC in Task Executing for Modular Manipulators across Diverse Morphologies 
+
+**Title (ZH)**: 模块化 manipulator 跨越 diverse 形态执行任务时的统一分级 MPC 控制 
+
+**Authors**: Maolin Lei, Edoardo Romiti, Arturo Laurenzi, Cheng Zhou, Wanli Xing, Liang Lu, Nikos G. Tsagarakis  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.13513)  
+
+**Abstract**: This work proposes a unified Hierarchical Model Predictive Control (H-MPC) for modular manipulators across various morphologies, as the controller can adapt to different configurations to execute the given task without extensive parameter tuning in the controller. The H-MPC divides the control process into two levels: a high-level MPC and a low-level MPC. The high-level MPC predicts future states and provides trajectory information, while the low-level MPC refines control actions by updating the predictive model based on this high-level information. This hierarchical structure allows for the integration of kinematic constraints and ensures smooth joint-space trajectories, even near singular configurations. Moreover, the low-level MPC incorporates secondary linearization by leveraging predictive information from the high-level MPC, effectively capturing the second-order Taylor expansion information of the kinematic model while still maintaining a linearized model formulation. This approach not only preserves the simplicity of a linear control model but also enhances the accuracy of the kinematic representation, thereby improving overall control precision and reliability. To validate the effectiveness of the control policy, we conduct extensive evaluations across different manipulator morphologies and demonstrate the execution of pick-and-place tasks in real-world scenarios. 
+
+**Abstract (ZH)**: 一种统一层次模型预测控制（H-MPC）方法：针对不同形态模块化 manipulator 的通用控制策略 
+
+---
+# Multi-Robot Navigation in Social Mini-Games: Definitions, Taxonomy, and Algorithms 
+
+**Title (ZH)**: 多人机器人在社会迷你游戏中导航：定义、分类和算法 
+
+**Authors**: Rohan Chandra, Shubham Singh, Abhishek Jha, Dannon Andrade, Hriday Sainathuni, Katia Sycara  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.13459)  
+
+**Abstract**: The ``Last Mile Challenge'' has long been considered an important, yet unsolved, challenge for autonomous vehicles, public service robots, and delivery robots. A central issue in this challenge is the ability of robots to navigate constrained and cluttered environments (e.g., doorways, hallways, corridor intersections), often while competing for space with other robots and humans. We refer to these environments as ``Social Mini-Games'' (SMGs). SMGs are tightly coupled, high-agency interactions that arise within general multi-robot navigation (MRN) scenarios. They are identified through certain distinct characteristics and require specialized metrics to evaluate them. Traditional navigation approaches designed for MRN do not perform well in SMGs, which has led to focused research on dedicated SMG solvers (navigation methods specialized to navigate in SMGs), which has flourished in recent years. However, publications on SMG navigation research make different assumptions (on centralized versus decentralized, observability, communication, cooperation, etc.), and have different objective functions (safety versus liveness). These assumptions and objectives are sometimes implicitly assumed or described informally. This makes it difficult to establish appropriate baselines for comparison in research papers, as well as making it difficult for practitioners to find the papers relevant to their concrete application. Such ad-hoc representation of the field also presents a barrier to new researchers wanting to start research in this area. SMG navigation research requires its own taxonomy, definitions, and evaluation protocols to guide effective research moving forward. This survey is the first to catalog SMG solvers using a well-defined and unified taxonomy and to classify existing methods accordingly. 
+
+**Abstract (ZH)**: SMG导航研究的分类、定义与评估protocol：一种严格分类和统一 taxonomy 的综述 
+
+---
+# Modeling and Control of AWOISV: A Filtered Tube-Based MPC Approach for Simultaneous Tracking of Lateral Position and Heading Angle 
+
+**Title (ZH)**: 基于滤波管件的模型预测控制方法：AWOISV的横向位置和 方向角同时跟踪建模与控制 
+
+**Authors**: Xu Yang, Jun Ni, Hengyang Feng, Feiyu Wang, Tiezhen Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.13457)  
+
+**Abstract**: An all-wheel omni-directional independent steering vehicle (AWOISV) is a specialized all-wheel independent steering vehicle with each wheel capable of steering up to 90°, enabling unique maneuvers like yaw and diagonal movement. This paper introduces a theoretical steering radius angle and sideslip angle (\( \theta_R \)-\(\beta_R \)) representation, based on the position of the instantaneous center of rotation relative to the wheel rotation center, defining the motion modes and switching criteria for AWOISVs. A generalized \( v\)-\(\beta\)-\(r \) dynamic model is developed with forward velocity \(v\), sideslip angle \(\beta\), and yaw rate \(r\) as states, and \(\theta_R\) and \(\beta_R\) as control inputs. This model decouples longitudinal and lateral motions into forward and rotational motions, allowing seamless transitions across all motion modes under specific conditions. A filtered tube-based linear time-varying MPC (FT-LTVMPC) strategy is proposed, achieving simultaneous tracking of lateral position and arbitrary heading angles, with robustness to model inaccuracies and parameter uncertainties. Co-simulation and hardware-in-loop (HIL) experiments confirm that FT-LTVMPC enables high-precision control of both position and heading while ensuring excellent real-time performance. 
+
+**Abstract (ZH)**: 全轮全方位独立转向车辆（AWOISV）的理论转向半径角和侧滑角（\(\theta_R\)-\(\beta_R\））表示及其通用\(v\)-\(\beta\)-\(r\)动力学模型与过滤管基线时变模型预测控制（FT-LTVMPC）策略 
+
+---
+# A Surveillance Based Interactive Robot 
+
+**Title (ZH)**: 基于监视的交互式机器人 
+
+**Authors**: Kshitij Kavimandan, Pooja Mangal, Devanshi Mehta  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.13319)  
+
+**Abstract**: We build a mobile surveillance robot that streams video in real time and responds to speech so a user can monitor and steer it from a phone or browser. The system uses two Raspberry Pi 4 units: a front unit on a differential drive base with camera, mic, and speaker, and a central unit that serves the live feed and runs perception. Video is sent with FFmpeg. Objects in the scene are detected using YOLOv3 to support navigation and event awareness. For voice interaction, we use Python libraries for speech recognition, multilingual translation, and text-to-speech, so the robot can take spoken commands and read back responses in the requested language. A Kinect RGB-D sensor provides visual input and obstacle cues. In indoor tests the robot detects common objects at interactive frame rates on CPU, recognises commands reliably, and translates them to actions without manual control. The design relies on off-the-shelf hardware and open software, making it easy to reproduce. We discuss limits and practical extensions, including sensor fusion with ultrasonic range data, GPU acceleration, and adding face and text recognition. 
+
+**Abstract (ZH)**: 我们构建了一种移动 surveillance 机器人，能够实时传输视频并响应语音指令，以便用户通过手机或浏览器监控和操控。该系统使用了两台Raspberry Pi 4单板：一台装有差速驱动底盘、摄像头、麦克风和扬声器的前端单板，以及一台中央单板，用于提供实时视频流并运行感知模块。视频通过FFmpeg传输。使用YOLOv3检测场景中的物体以支持导航和事件感知。对于语音交互，我们使用了Python库进行语音识别、多语言翻译和文本转语音，使机器人能够接受语音指令并在请求的语言中朗读回应。Kinect RGB-D传感器提供了视觉输入和障碍物提示。在室内测试中，机器人能够在CPU上以交互帧率检测常见物体、可靠地识别命令并将它们转换为动作，无需手动控制。该设计依赖于现成的硬件和开源软件，使其易于复制。我们讨论了其局限性和实用扩展，包括与超声波距离数据融合、使用GPU加速以及增加人脸识别和文字识别功能。 
+
+---
+# MR6D: Benchmarking 6D Pose Estimation for Mobile Robots 
+
+**Title (ZH)**: MR6D: 手持机器人6D位姿估计基准测试 
+
+**Authors**: Anas Gouda, Shrutarv Awasthi, Christian Blesing, Lokeshwaran Manohar, Frank Hoffmann, Alice Kirchheim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.13775)  
+
+**Abstract**: Existing 6D pose estimation datasets primarily focus on small household objects typically handled by robot arm manipulators, limiting their relevance to mobile robotics. Mobile platforms often operate without manipulators, interact with larger objects, and face challenges such as long-range perception, heavy self-occlusion, and diverse camera perspectives. While recent models generalize well to unseen objects, evaluations remain confined to household-like settings that overlook these factors. We introduce MR6D, a dataset designed for 6D pose estimation for mobile robots in industrial environments. It includes 92 real-world scenes featuring 16 unique objects across static and dynamic interactions. MR6D captures the challenges specific to mobile platforms, including distant viewpoints, varied object configurations, larger object sizes, and complex occlusion/self-occlusion patterns. Initial experiments reveal that current 6D pipelines underperform in these settings, with 2D segmentation being another hurdle. MR6D establishes a foundation for developing and evaluating pose estimation methods tailored to the demands of mobile robotics. The dataset is available at this https URL. 
+
+**Abstract (ZH)**: 现有的6D姿态估计数据集主要关注由机器人臂操作的 Household 小型物体，限制了其在移动机器人领域的相关性。移动平台通常不配备操作器，与大型物体互动，并面临远程感知、严重的自遮挡以及多变的相机视角等挑战。尽管最近的模型在未见过的对象上表现良好，但评估仍然局限于类似的家居环境设置，而忽略了这些因素。我们介绍了 MR6D 数据集，旨在为工业环境中移动机器人提供6D姿态估计。该数据集包含92个真实场景，涵盖了16种不同物体在静态和动态互动中的表现。MR6D 捕捉了移动平台特有的挑战，包括远程视角、多样的物体配置、较大的物体尺寸以及复杂的遮挡/自遮挡模式。初步实验表明，当前的6D管道在这些场景中表现不佳，2D分割也是另一个障碍。MR6D 为开发和评估符合移动机器人需求的姿态估计方法奠定了基础。数据集可在以下链接获取：this https URL。 
+
+---
+# Diff-MSM: Differentiable MusculoSkeletal Model for Simultaneous Identification of Human Muscle and Bone Parameters 
+
+**Title (ZH)**: Diff-MSM: 可微肌骨模型同时识别人体肌肉和骨骼参数 
+
+**Authors**: Yingfan Zhou, Philip Sanderink, Sigurd Jager Lemming, Cheng Fang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.13303)  
+
+**Abstract**: High-fidelity personalized human musculoskeletal models are crucial for simulating realistic behavior of physically coupled human-robot interactive systems and verifying their safety-critical applications in simulations before actual deployment, such as human-robot co-transportation and rehabilitation through robotic exoskeletons. Identifying subject-specific Hill-type muscle model parameters and bone dynamic parameters is essential for a personalized musculoskeletal model, but very challenging due to the difficulty of measuring the internal biomechanical variables in vivo directly, especially the joint torques. In this paper, we propose using Differentiable MusculoSkeletal Model (Diff-MSM) to simultaneously identify its muscle and bone parameters with an end-to-end automatic differentiation technique differentiating from the measurable muscle activation, through the joint torque, to the resulting observable motion without the need to measure the internal joint torques. Through extensive comparative simulations, the results manifested that our proposed method significantly outperformed the state-of-the-art baseline methods, especially in terms of accurate estimation of the muscle parameters (i.e., initial guess sampled from a normal distribution with the mean being the ground truth and the standard deviation being 10% of the ground truth could end up with an average of the percentage errors of the estimated values as low as 0.05%). In addition to human musculoskeletal modeling and simulation, the new parameter identification technique with the Diff-MSM has great potential to enable new applications in muscle health monitoring, rehabilitation, and sports science. 
+
+**Abstract (ZH)**: 高保真个性化人体肌骨模型对于模拟物理耦合的人机交互系统的现实行为以及在实际部署前（如人类与机器人协同运输和通过机器人外骨骼进行康复）验证其关键安全应用至关重要。通过关节扭矩自始至终自动微分技术识别特定个体的希尔型肌肉模型参数和骨骼动力学参数对于个性化肌骨模型至关重要，但因直接测量活体内内部生物力学变量尤其关节扭矩的难度较大而极具挑战性。本文提出使用可微肌骨模型(Diff-MSM)同时通过可测量的肌肉激活间接自动识别其肌肉和骨骼参数，从关节扭矩推导到最终可观察的运动，无需直接测量关节扭矩。通过广泛的对比仿真，结果表明我们提出的方法在肌肉参数准确估计方面显著优于最先进的基准方法，尤其是在肌肉参数估计方面（初始猜测来自均值为真实值，标准差为真实值10%的正态分布的样本，最终估计值的平均百分比误差仅为0.05%）。除了人类肌骨建模和仿真外，Diff-MSM的新参数识别技术在肌肉健康监测、康复和体育科学等领域具有巨大应用潜力。 
+
+---
