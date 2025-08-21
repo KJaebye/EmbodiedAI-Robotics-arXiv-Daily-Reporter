@@ -1,0 +1,233 @@
+# Fusing Monocular RGB Images with AIS Data to Create a 6D Pose Estimation Dataset for Marine Vessels 
+
+**Title (ZH)**: 将单目RGB图像与AIS数据融合以创建用于海洋船只的6D姿态估计数据集 
+
+**Authors**: Fabian Holst, Emre Gülsoylu, Simone Frintrop  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.14767)  
+
+**Abstract**: The paper presents a novel technique for creating a 6D pose estimation dataset for marine vessels by fusing monocular RGB images with Automatic Identification System (AIS) data. The proposed technique addresses the limitations of relying purely on AIS for location information, caused by issues like equipment reliability, data manipulation, and transmission delays. By combining vessel detections from monocular RGB images, obtained using an object detection network (YOLOX-X), with AIS messages, the technique generates 3D bounding boxes that represent the vessels' 6D poses, i.e. spatial and rotational dimensions. The paper evaluates different object detection models to locate vessels in image space. We also compare two transformation methods (homography and Perspective-n-Point) for aligning AIS data with image coordinates. The results of our work demonstrate that the Perspective-n-Point (PnP) method achieves a significantly lower projection error compared to homography-based approaches used before, and the YOLOX-X model achieves a mean Average Precision (mAP) of 0.80 at an Intersection over Union (IoU) threshold of 0.5 for relevant vessel classes. We show indication that our approach allows the creation of a 6D pose estimation dataset without needing manual annotation. Additionally, we introduce the Boats on Nordelbe Kehrwieder (BONK-pose), a publicly available dataset comprising 3753 images with 3D bounding box annotations for pose estimation, created by our data fusion approach. This dataset can be used for training and evaluating 6D pose estimation networks. In addition we introduce a set of 1000 images with 2D bounding box annotations for ship detection from the same scene. 
+
+**Abstract (ZH)**: 一种将单目RGB图像与自动识别系统(AIS)数据融合以创建船舶6D姿态估计数据集的新技术及其应用 
+
+---
+# Making Pose Representations More Expressive and Disentangled via Residual Vector Quantization 
+
+**Title (ZH)**: 通过残差向量量化使姿态表示更加富有表现力和解耦 
+
+**Authors**: Sukhyun Jeong, Hong-Gi Shin, Yong-Hoon Choi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.14561)  
+
+**Abstract**: Recent progress in text-to-motion has advanced both 3D human motion generation and text-based motion control. Controllable motion generation (CoMo), which enables intuitive control, typically relies on pose code representations, but discrete pose codes alone cannot capture fine-grained motion details, limiting expressiveness. To overcome this, we propose a method that augments pose code-based latent representations with continuous motion features using residual vector quantization (RVQ). This design preserves the interpretability and manipulability of pose codes while effectively capturing subtle motion characteristics such as high-frequency details. Experiments on the HumanML3D dataset show that our model reduces Frechet inception distance (FID) from 0.041 to 0.015 and improves Top-1 R-Precision from 0.508 to 0.510. Qualitative analysis of pairwise direction similarity between pose codes further confirms the model's controllability for motion editing. 
+
+**Abstract (ZH)**: Recent进展在文本到运动转换中推动了3D人类运动生成和基于文本的运动控制。我们提出的方法通过残差向量量化(RVQ)增强基于姿态码的潜在表示以包含连续运动特征，从而克服了仅使用离散姿态码无法捕捉到精细运动细节的限制，提高了表达能力。实验结果表明，我们的模型将Frechet inception距离(FID)从0.041降低到0.015，Top-1 R-精确度从0.508提高到0.510。对姿态码的成对方向相似性分析进一步证实了模型在运动编辑中的可控性。 
+
+---
+# Learning Point Cloud Representations with Pose Continuity for Depth-Based Category-Level 6D Object Pose Estimation 
+
+**Title (ZH)**: 基于姿态连续性的点云表示学习用于深度导向的类别级6D物体姿态估计 
+
+**Authors**: Zhujun Li, Shuo Zhang, Ioannis Stamos  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.14358)  
+
+**Abstract**: Category-level object pose estimation aims to predict the 6D pose and 3D size of objects within given categories. Existing approaches for this task rely solely on 6D poses as supervisory signals without explicitly capturing the intrinsic continuity of poses, leading to inconsistencies in predictions and reduced generalization to unseen poses. To address this limitation, we propose HRC-Pose, a novel depth-only framework for category-level object pose estimation, which leverages contrastive learning to learn point cloud representations that preserve the continuity of 6D poses. HRC-Pose decouples object pose into rotation and translation components, which are separately encoded and leveraged throughout the network. Specifically, we introduce a contrastive learning strategy for multi-task, multi-category scenarios based on our 6D pose-aware hierarchical ranking scheme, which contrasts point clouds from multiple categories by considering rotational and translational differences as well as categorical information. We further design pose estimation modules that separately process the learned rotation-aware and translation-aware embeddings. Our experiments demonstrate that HRC-Pose successfully learns continuous feature spaces. Results on REAL275 and CAMERA25 benchmarks show that our method consistently outperforms existing depth-only state-of-the-art methods and runs in real-time, demonstrating its effectiveness and potential for real-world applications. Our code is at this https URL. 
+
+**Abstract (ZH)**: 类别级别物体姿态估计旨在预测给定类别内物体的6D姿态和3D尺寸。现有的方法仅依赖于6D姿态作为监督信号，而未明确捕捉姿态的内在连续性，导致预测不一致且对未见过的姿态泛化能力降低。为此，我们提出了一种新颖的仅深度框架HRC-Pose，该框架利用对比学习学习保留6D姿态连续性的点云表示。HRC-Pose将物体姿态分解为旋转和平移分量，并分别进行编码和利用。具体而言，我们基于六维姿态感知层次排名方案引入一种多任务、多类别场景下的对比学习策略，通过考虑旋转和平移差异以及类别信息对来自多个类别的点云进行对比。我们还设计了分别处理所学习的旋转感知和位移感知嵌入的姿态估计模块。我们的实验表明HRC-Pose成功学习了连续的特征空间。在REAL275和CAMERA25基准上的结果表明，我们的方法一致地优于现有的仅深度最先进的方法，并且能够实时运行，证明了其有效性和在实际应用中的潜力。代码参见此链接：https://github.com/alexisliujh/HRC-Pose。 
+
+---
+# TransLight: Image-Guided Customized Lighting Control with Generative Decoupling 
+
+**Title (ZH)**: TransLight: 基于图像引导的生成解耦定制照明控制 
+
+**Authors**: Zongming Li, Lianghui Zhu, Haocheng Shen, Longjin Ran, Wenyu Liu, Xinggang Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.14814)  
+
+**Abstract**: Most existing illumination-editing approaches fail to simultaneously provide customized control of light effects and preserve content integrity. This makes them less effective for practical lighting stylization requirements, especially in the challenging task of transferring complex light effects from a reference image to a user-specified target image. To address this problem, we propose TransLight, a novel framework that enables high-fidelity and high-freedom transfer of light effects. Extracting the light effect from the reference image is the most critical and challenging step in our method. The difficulty lies in the complex geometric structure features embedded in light effects that are highly coupled with content in real-world scenarios. To achieve this, we first present Generative Decoupling, where two fine-tuned diffusion models are used to accurately separate image content and light effects, generating a newly curated, million-scale dataset of image-content-light triplets. Then, we employ IC-Light as the generative model and train our model with our triplets, injecting the reference lighting image as an additional conditioning signal. The resulting TransLight model enables customized and natural transfer of diverse light effects. Notably, by thoroughly disentangling light effects from reference images, our generative decoupling strategy endows TransLight with highly flexible illumination control. Experimental results establish TransLight as the first method to successfully transfer light effects across disparate images, delivering more customized illumination control than existing techniques and charting new directions for research in illumination harmonization and editing. 
+
+**Abstract (ZH)**: TransLight：高保真高自由度的照明效果转移框架 
+
+---
+# DINOv3 with Test-Time Training for Medical Image Registration 
+
+**Title (ZH)**: DINOv3在测试时训练的医学图像配准 
+
+**Authors**: Shansong Wang, Mojtaba Safari, Mingzhe Hu, Qiang Li, Chih-Wei Chang, Richard LJ Qiu, Xiaofeng Yang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.14809)  
+
+**Abstract**: Prior medical image registration approaches, particularly learning-based methods, often require large amounts of training data, which constrains clinical adoption. To overcome this limitation, we propose a training-free pipeline that relies on a frozen DINOv3 encoder and test-time optimization of the deformation field in feature space. Across two representative benchmarks, the method is accurate and yields regular deformations. On Abdomen MR-CT, it attained the best mean Dice score (DSC) of 0.790 together with the lowest 95th percentile Hausdorff Distance (HD95) of 4.9+-5.0 and the lowest standard deviation of Log-Jacobian (SDLogJ) of 0.08+-0.02. On ACDC cardiac MRI, it improves mean DSC to 0.769 and reduces SDLogJ to 0.11 and HD95 to 4.8, a marked gain over the initial alignment. The results indicate that operating in a compact foundation feature space at test time offers a practical and general solution for clinical registration without additional training. 
+
+**Abstract (ZH)**: 无需额外训练的基于冻结DINOv3编码器和特征空间中的变形场测试时优化的无训练管道在医学图像注册中的应用 
+
+---
+# MF-LPR$^2$: Multi-Frame License Plate Image Restoration and Recognition using Optical Flow 
+
+**Title (ZH)**: MF-LPR$^2$: 多帧车牌图像恢复与识别利用光流技术 
+
+**Authors**: Kihyun Na, Junseok Oh, Youngkwan Cho, Bumjin Kim, Sungmin Cho, Jinyoung Choi, Injung Kim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.14797)  
+
+**Abstract**: License plate recognition (LPR) is important for traffic law enforcement, crime investigation, and surveillance. However, license plate areas in dash cam images often suffer from low resolution, motion blur, and glare, which make accurate recognition challenging. Existing generative models that rely on pretrained priors cannot reliably restore such poor-quality images, frequently introducing severe artifacts and distortions. To address this issue, we propose a novel multi-frame license plate restoration and recognition framework, MF-LPR$^2$, which addresses ambiguities in poor-quality images by aligning and aggregating neighboring frames instead of relying on pretrained knowledge. To achieve accurate frame alignment, we employ a state-of-the-art optical flow estimator in conjunction with carefully designed algorithms that detect and correct erroneous optical flow estimations by leveraging the spatio-temporal consistency inherent in license plate image sequences. Our approach enhances both image quality and recognition accuracy while preserving the evidential content of the input images. In addition, we constructed a novel Realistic LPR (RLPR) dataset to evaluate MF-LPR$^2$. The RLPR dataset contains 200 pairs of low-quality license plate image sequences and high-quality pseudo ground-truth images, reflecting the complexities of real-world scenarios. In experiments, MF-LPR$^2$ outperformed eight recent restoration models in terms of PSNR, SSIM, and LPIPS by significant margins. In recognition, MF-LPR$^2$ achieved an accuracy of 86.44%, outperforming both the best single-frame LPR (14.04%) and the multi-frame LPR (82.55%) among the eleven baseline models. The results of ablation studies confirm that our filtering and refinement algorithms significantly contribute to these improvements. 
+
+**Abstract (ZH)**: 基于多帧的 License Plate 修复与识别框架 (MF-LPR$^2$) 
+
+---
+# UST-SSM: Unified Spatio-Temporal State Space Models for Point Cloud Video Modeling 
+
+**Title (ZH)**: UST-SSM：统一时空状态空间模型及其在点云视频建模中的应用 
+
+**Authors**: Peiming Li, Ziyi Wang, Yulin Yuan, Hong Liu, Xiangming Meng, Junsong Yuan, Mengyuan Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.14604)  
+
+**Abstract**: Point cloud videos capture dynamic 3D motion while reducing the effects of lighting and viewpoint variations, making them highly effective for recognizing subtle and continuous human actions. Although Selective State Space Models (SSMs) have shown good performance in sequence modeling with linear complexity, the spatio-temporal disorder of point cloud videos hinders their unidirectional modeling when directly unfolding the point cloud video into a 1D sequence through temporally sequential scanning. To address this challenge, we propose the Unified Spatio-Temporal State Space Model (UST-SSM), which extends the latest advancements in SSMs to point cloud videos. Specifically, we introduce Spatial-Temporal Selection Scanning (STSS), which reorganizes unordered points into semantic-aware sequences through prompt-guided clustering, thereby enabling the effective utilization of points that are spatially and temporally distant yet similar within the sequence. For missing 4D geometric and motion details, Spatio-Temporal Structure Aggregation (STSA) aggregates spatio-temporal features and compensates. To improve temporal interaction within the sampled sequence, Temporal Interaction Sampling (TIS) enhances fine-grained temporal dependencies through non-anchor frame utilization and expanded receptive fields. Experimental results on the MSR-Action3D, NTU RGB+D, and Synthia 4D datasets validate the effectiveness of our method. Our code is available at this https URL. 
+
+**Abstract (ZH)**: 点云视频捕捉动态三维运动同时减少光照和视角变化的影响，使其适用于识别细微且连贯的人体动作。尽管选择性状态空间模型（SSMs）在序列建模中表现出良好的性能且具有线性复杂度，但点云视频的时空杂乱阻碍了其通过时间序扫描直接将点云视频展开为一维序列的一维建模。为解决这一挑战，我们提出了一体化时空状态空间模型（UST-SSM），该模型将最新的SSM进展扩展应用于点云视频。具体来说，我们引入了时空选择扫描（STSS），通过提示引导聚类重新组织无序点为语义感知序列，从而有效利用在序列中时空上相距但相似的点。对于缺失的4D几何和运动细节，时空结构聚合（STSA）聚合时空特征并进行补偿。为了改善采样序列内的时域交互，时域交互采样（TIS）通过利用非锚帧和扩展的感受野增强细粒度时域依赖性。在 MSR-Action3D、NTU RGB+D 和 Synthia 4D 数据集上的实验结果验证了我们方法的有效性。我们的代码可在以下网址获取：this https URL。 
+
+---
+# Inter-Class Relational Loss for Small Object Detection: A Case Study on License Plates 
+
+**Title (ZH)**: 类内关系损失在小目标检测中的应用：车牌检测案例研究 
+
+**Authors**: Dian Ning, Dong Seog Han  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.14343)  
+
+**Abstract**: In one-stage multi-object detection tasks, various intersection over union (IoU)-based solutions aim at smooth and stable convergence near the targets during training. However, IoU-based losses fail to correctly update the gradient of small objects due to an extremely flat gradient. During the update of multiple objects, the learning of small objects' gradients suffers more because of insufficient gradient updates. Therefore, we propose an inter-class relational loss to efficiently update the gradient of small objects while not sacrificing the learning efficiency of other objects based on the simple fact that an object has a spatial relationship to another object (e.g., a car plate is attached to a car in a similar position). When the predicted car plate's bounding box is not within its car, a loss punishment is added to guide the learning, which is inversely proportional to the overlapped area of the car's and predicted car plate's bounding box. By leveraging the spatial relationship at the inter-class level, the loss guides small object predictions using larger objects and enhances latent information in deeper feature maps. In this paper, we present twofold contributions using license plate detection as a case study: (1) a new small vehicle multi-license plate dataset (SVMLP), featuring diverse real-world scenarios with high-quality annotations; and (2) a novel inter-class relational loss function designed to promote effective detection performance. We highlight the proposed ICR loss penalty can be easily added to existing IoU-based losses and enhance the performance. These contributions improve the standard mean Average Precision (mAP) metric, achieving gains of 10.3% and 1.6% in mAP$^{\text{test}}_{50}$ for YOLOv12-T and UAV-DETR, respectively, without any additional hyperparameter tuning. Code and dataset will be available soon. 
+
+**Abstract (ZH)**: 在一阶段多对象检测任务中，各种基于交并比(IoU)的解决方案旨在在训练过程中使模型平滑稳定地收敛至目标。然而，基于IoU的损失函数由于梯度极其平坦而无法正确更新小对象的梯度。在更新多个对象时，小对象梯度的学习因梯度更新不足而受到更大影响。因此，我们提出了一种跨类别关系损失，旨在在不牺牲其他对象学习效率的前提下高效地更新小对象的梯度，基于这样一个简单事实：一个对象与另一个对象在空间上存在关联（例如，车牌通常位于汽车的相似位置）。当预测的车牌边界框不在汽车边界框内时，会增加损失惩罚以引导学习，该惩罚与汽车边界框和预测车牌边界框重叠区域的大小成反比。通过在跨类别层面利用空间关系，损失可以利用更大对象来引导小对象预测并增强深层特征图中的隐含信息。在本文中，我们以车牌检测为例介绍了两项贡献：（1）一个新的人车多车牌数据集（SVMLP），该数据集包含多种真实世界的场景和高质量标注；（2）一种新颖的跨类别关系损失函数，旨在促进有效的检测性能。我们强调，提出的ICR损失惩罚可以轻松集成到现有的基于IoU的损失函数中并提高性能。这些贡献在不进行任何额外超参数调整的情况下，分别提高了YOLOv12-T和UAV-DETR的标准平均精度（mAP）指标10.3%和1.6%。代码和数据集将在不久的将来公开。 
+
+---
+# Pixels to Play: A Foundation Model for 3D Gameplay 
+
+**Title (ZH)**: 从像素到游玩：三维游戏的基础模型 
+
+**Authors**: Yuguang Yue, Chris Green, Samuel Hunt, Irakli Salia, Wenzhe Shi, Jonathan J Hunt  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.14295)  
+
+**Abstract**: We introduce Pixels2Play-0.1 (P2P0.1), a foundation model that learns to play a wide range of 3D video games with recognizable human-like behavior. Motivated by emerging consumer and developer use cases - AI teammates, controllable NPCs, personalized live-streamers, assistive testers - we argue that an agent must rely on the same pixel stream available to players and generalize to new titles with minimal game-specific engineering. P2P0.1 is trained end-to-end with behavior cloning: labeled demonstrations collected from instrumented human game-play are complemented by unlabeled public videos, to which we impute actions via an inverse-dynamics model. A decoder-only transformer with auto-regressive action output handles the large action space while remaining latency-friendly on a single consumer GPU. We report qualitative results showing competent play across simple Roblox and classic MS-DOS titles, ablations on unlabeled data, and outline the scaling and evaluation steps required to reach expert-level, text-conditioned control. 
+
+**Abstract (ZH)**: Pixels2Play-0.1：一种学习广泛范围3D视频游戏并表现出可识别的人类行为的基础模型 
+
+---
+# OccluNet: Spatio-Temporal Deep Learning for Occlusion Detection on DSA 
+
+**Title (ZH)**: OccluNet：基于DSA的时空深度学习遮挡检测 
+
+**Authors**: Anushka A. Kore, Frank G. te Nijenhuis, Matthijs van der Sluijs, Wim van Zwam, Charles Majoie, Geert Lycklama à Nijeholt, Danny Ruijters, Frans Vos, Sandra Cornelissen, Ruisheng Su, Theo van Walsum  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.14286)  
+
+**Abstract**: Accurate detection of vascular occlusions during endovascular thrombectomy (EVT) is critical in acute ischemic stroke (AIS). Interpretation of digital subtraction angiography (DSA) sequences poses challenges due to anatomical complexity and time constraints. This work proposes OccluNet, a spatio-temporal deep learning model that integrates YOLOX, a single-stage object detector, with transformer-based temporal attention mechanisms to automate occlusion detection in DSA sequences. We compared OccluNet with a YOLOv11 baseline trained on either individual DSA frames or minimum intensity projections. Two spatio-temporal variants were explored for OccluNet: pure temporal attention and divided space-time attention. Evaluation on DSA images from the MR CLEAN Registry revealed the model's capability to capture temporally consistent features, achieving precision and recall of 89.02% and 74.87%, respectively. OccluNet significantly outperformed the baseline models, and both attention variants attained similar performance. Source code is available at this https URL 
+
+**Abstract (ZH)**: 准确检测内血管闭塞对于急性缺血性卒中的内血管溶栓(EVT)至关重要。由于解剖复杂性和时间限制，数字减影血管造影(DSA)序列的解释具有挑战性。本文提出OccluNet，这是一种时空深度学习模型，结合了单一阶段物体检测器YOLOX和基于变压器的时序注意机制，以自动在DSA序列中检测闭塞。我们将OccluNet与YOLOv1基准模型进行了比较，该基准模型是基于个体DSA帧或最小强度投影进行训练的。OccluNet探索了两种时空变体：纯时序注意和空间-时序分割注意。在MR CLEAN登记册的DSA图像上的评估显示，该模型能够捕捉到一致的时空特征，精确度和召回率分别为89.02%和74.87%。OccluNet显著优于基线模型，两种注意机制的性能相似。源代码可在以下网址获取。 
+
+---
+# Tooth-Diffusion: Guided 3D CBCT Synthesis with Fine-Grained Tooth Conditioning 
+
+**Title (ZH)**: 牙指导的细粒度牙科3D CBCT合成 
+
+**Authors**: Said Djafar Said, Torkan Gholamalizadeh, Mostafa Mehdipour Ghazi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.14276)  
+
+**Abstract**: Despite the growing importance of dental CBCT scans for diagnosis and treatment planning, generating anatomically realistic scans with fine-grained control remains a challenge in medical image synthesis. In this work, we propose a novel conditional diffusion framework for 3D dental volume generation, guided by tooth-level binary attributes that allow precise control over tooth presence and configuration. Our approach integrates wavelet-based denoising diffusion, FiLM conditioning, and masked loss functions to focus learning on relevant anatomical structures. We evaluate the model across diverse tasks, such as tooth addition, removal, and full dentition synthesis, using both paired and distributional similarity metrics. Results show strong fidelity and generalization with low FID scores, robust inpainting performance, and SSIM values above 0.91 even on unseen scans. By enabling realistic, localized modification of dentition without rescanning, this work opens opportunities for surgical planning, patient communication, and targeted data augmentation in dental AI workflows. The codes are available at: this https URL. 
+
+**Abstract (ZH)**: 尽管牙科CBCT扫描在诊断和治疗规划中的重要性日益增加，但在医学图像合成中生成具有精细控制的解剖学上逼真的扫描仍然具有挑战性。在这项工作中，我们提出了一种新的基于条件扩散的三维牙科体素生成框架，该框架由牙齿级二元属性引导，允许对牙齿的存在和配置进行精确控制。我们的方法结合了小波去噪扩散、FiLM条件和掩码损失函数，以专注于相关解剖结构的学习。我们在牙齿添加、移除以及全口牙齿合成等多种任务上评估了该模型，使用配对和分布相似性度量进行评估。结果显示高保真度和泛化能力，低FID得分，稳健的 inpainting 表现，以及在未见扫描上 SSIM 值高于 0.91。通过实现无需重新扫描即可对牙齿进行逼真的局部修改，本工作为手术规划、患者沟通和牙科AI工作流程中的针对性数据增强提供了机会。代码可在以下网址获取：this https URL。 
+
+---
+# A Survey on Video Anomaly Detection via Deep Learning: Human, Vehicle, and Environment 
+
+**Title (ZH)**: 深度学习视角下的视频异常检测综述：人类、车辆及环境 
+
+**Authors**: Ghazal Alinezhad Noghre, Armin Danesh Pazho, Hamed Tabkhi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.14203)  
+
+**Abstract**: Video Anomaly Detection (VAD) has emerged as a pivotal task in computer vision, with broad relevance across multiple fields. Recent advances in deep learning have driven significant progress in this area, yet the field remains fragmented across domains and learning paradigms. This survey offers a comprehensive perspective on VAD, systematically organizing the literature across various supervision levels, as well as adaptive learning methods such as online, active, and continual learning. We examine the state of VAD across three major application categories: human-centric, vehicle-centric, and environment-centric scenarios, each with distinct challenges and design considerations. In doing so, we identify fundamental contributions and limitations of current methodologies. By consolidating insights from subfields, we aim to provide the community with a structured foundation for advancing both theoretical understanding and real-world applicability of VAD systems. This survey aims to support researchers by providing a useful reference, while also drawing attention to the broader set of open challenges in anomaly detection, including both fundamental research questions and practical obstacles to real-world deployment. 
+
+**Abstract (ZH)**: 视频异常检测（VAD）已成为计算机视觉中的关键任务，广泛应用于多个领域。深度学习的 Recent 进展推动了该领域的显著进步，然而该领域仍然在不同领域和学习范式之间碎片化。本文综述为 VAD 提供了一个全面的视角，系统地整理了各种监督级别以及在线学习、主动学习和持续学习等自适应学习方法的文献。我们从三大主要应用类别——以人为核心的、以车辆为核心的和以环境为核心的场景——出发，审视了 VAD 的现状，每个场景都具有独特的挑战和设计考虑。通过识别当前方法论的基本贡献和局限性，我们旨在为社区提供一个结构化的基础，以促进对 VAD 系统的理论理解和实际应用。本文综述旨在为研究人员提供一个有用的参考，同时还将人们的注意力引向异常检测领域更广泛的一系列开放挑战，包括基础研究问题和实际部署中的障碍。 
+
+---
+# LENS: Learning to Segment Anything with Unified Reinforced Reasoning 
+
+**Title (ZH)**: LENS: 学习分割一切——统一强化推理方法 
+
+**Authors**: Lianghui Zhu, Bin Ouyang, Yuxuan Zhang, Tianheng Cheng, Rui Hu, Haocheng Shen, Longjin Ran, Xiaoxin Chen, Li Yu, Wenyu Liu, Xinggang Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.14153)  
+
+**Abstract**: Text-prompted image segmentation enables fine-grained visual understanding and is critical for applications such as human-computer interaction and robotics. However, existing supervised fine-tuning methods typically ignore explicit chain-of-thought (CoT) reasoning at test time, which limits their ability to generalize to unseen prompts and domains. To address this issue, we introduce LENS, a scalable reinforcement-learning framework that jointly optimizes the reasoning process and segmentation in an end-to-end manner. We propose unified reinforcement-learning rewards that span sentence-, box-, and segment-level cues, encouraging the model to generate informative CoT rationales while refining mask quality. Using a publicly available 3-billion-parameter vision-language model, i.e., Qwen2.5-VL-3B-Instruct, LENS achieves an average cIoU of 81.2% on the RefCOCO, RefCOCO+, and RefCOCOg benchmarks, outperforming the strong fine-tuned method, i.e., GLaMM, by up to 5.6%. These results demonstrate that RL-driven CoT reasoning serves as a robust prior for text-prompted segmentation and offers a practical path toward more generalizable Segment Anything models. Code is available at this https URL. 
+
+**Abstract (ZH)**: 文本提示的图像分割能够实现细粒度的视觉理解，并且对于人机交互和机器人等领域具有关键作用。然而，现有的监督微调方法通常在测试时忽略显式的链式思考（CoT）推理，这限制了它们对未见提示和领域进行泛化的能力。为了解决这一问题，我们引入了LENS，这是一种可扩展的强化学习框架，能够以端到端的方式同时优化推理过程和分割。我们提出了统一的强化学习奖励，涵盖了句子级、框级和区域级的线索，鼓励模型生成具有信息性的CoT推理并改进掩码质量。使用一个公开可用的30亿参数视觉语言模型，即Qwen2.5-VL-3B-Instruct，LENS在RefCOCO、RefCOCO+和RefCOCOg基准上的平均cIoU达到了81.2%，相比强微调方法GLaMM最高提升了5.6%。这些结果表明，基于RL的CoT推理为文本提示的分割提供了一个稳健的先验，并为更泛化的Segment Anything模型提供了一条实用的道路。相关代码可在以下链接获取。 
+
+---
+# A Systematic Study of Deep Learning Models and xAI Methods for Region-of-Interest Detection in MRI Scans 
+
+**Title (ZH)**: 深度学习模型和xAI方法在MRI扫描区域-of-兴趣检测中的系统性研究 
+
+**Authors**: Justin Yiu, Kushank Arora, Daniel Steinberg, Rohit Ghiya  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.14151)  
+
+**Abstract**: Magnetic Resonance Imaging (MRI) is an essential diagnostic tool for assessing knee injuries. However, manual interpretation of MRI slices remains time-consuming and prone to inter-observer variability. This study presents a systematic evaluation of various deep learning architectures combined with explainable AI (xAI) techniques for automated region of interest (ROI) detection in knee MRI scans. We investigate both supervised and self-supervised approaches, including ResNet50, InceptionV3, Vision Transformers (ViT), and multiple U-Net variants augmented with multi-layer perceptron (MLP) classifiers. To enhance interpretability and clinical relevance, we integrate xAI methods such as Grad-CAM and Saliency Maps. Model performance is assessed using AUC for classification and PSNR/SSIM for reconstruction quality, along with qualitative ROI visualizations. Our results demonstrate that ResNet50 consistently excels in classification and ROI identification, outperforming transformer-based models under the constraints of the MRNet dataset. While hybrid U-Net + MLP approaches show potential for leveraging spatial features in reconstruction and interpretability, their classification performance remains lower. Grad-CAM consistently provided the most clinically meaningful explanations across architectures. Overall, CNN-based transfer learning emerges as the most effective approach for this dataset, while future work with larger-scale pretraining may better unlock the potential of transformer models. 
+
+**Abstract (ZH)**: 磁共振成像（MRI）是评估膝关节损伤的重要诊断工具。然而，手动interpretation of MRI切片仍然耗时且容易产生观察者间差异。本研究系统评估了各种深度学习架构与可解释人工智能（xAI）技术相结合的方法，用于膝关节MRI扫描的自动感兴趣区域（ROI）检测。我们探讨了监督和半监督方法，包括ResNet50、InceptionV3、视觉变换器（ViT）以及多种带有深层感知机（MLP）分类器的U-Net变体。为了增强可解释性和临床相关性，我们整合了Grad-CAM和显著性图等xAI方法。模型性能通过分类的AUC和重建质量的PSNR/SSIM进行评估，并辅以质性的ROI可视化。研究结果表明，在MRNet数据集中，ResNet50在分类和ROI识别方面表现出色，优于基于变压器的模型。虽然混合U-Net + MLP方法在重建和解释性方面显示出潜力，但在分类性能上仍然较低。Grad-CAM在各架构中提供了最具有临床意义的解释。总体而言，基于CNN的迁移学习在该数据集中是最有效的，而未来使用更大规模预训练的工作可能会更好地释放变压器模型的潜力。 
+
+---
+# Automated surgical planning with nnU-Net: delineation of the anatomy in hepatobiliary phase MRI 
+
+**Title (ZH)**: 基于nnU-Net的自动手术规划：肝胆期MRI中的人体解剖轮廓化 
+
+**Authors**: Karin A. Olthof, Matteo Fusagli, Bianca Güttner, Tiziano Natali, Bram Westerink, Stefanie Speidel, Theo J.M. Ruers, Koert F.D. Kuhlmann, Andrey Zhylka  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.14133)  
+
+**Abstract**: Background: The aim of this study was to develop and evaluate a deep learning-based automated segmentation method for hepatic anatomy (i.e., parenchyma, tumors, portal vein, hepatic vein and biliary tree) from the hepatobiliary phase of gadoxetic acid-enhanced MRI. This method should ease the clinical workflow of preoperative planning.
+Methods: Manual segmentation was performed on hepatobiliary phase MRI scans from 90 consecutive patients who underwent liver surgery between January 2020 and October 2023. A deep learning network (nnU-Net v1) was trained on 72 patients with an extra focus on thin structures and topography preservation. Performance was evaluated on an 18-patient test set by comparing automated and manual segmentations using Dice similarity coefficient (DSC). Following clinical integration, 10 segmentations (assessment dataset) were generated using the network and manually refined for clinical use to quantify required adjustments using DSC.
+Results: In the test set, DSCs were 0.97+/-0.01 for liver parenchyma, 0.80+/-0.04 for hepatic vein, 0.79+/-0.07 for biliary tree, 0.77+/-0.17 for tumors, and 0.74+/-0.06 for portal vein. Average tumor detection rate was 76.6+/-24.1%, with a median of one false-positive per patient. The assessment dataset showed minor adjustments were required for clinical use of the 3D models, with high DSCs for parenchyma (1.00+/-0.00), portal vein (0.98+/-0.01) and hepatic vein (0.95+/-0.07). Tumor segmentation exhibited greater variability (DSC 0.80+/-0.27). During prospective clinical use, the model detected three additional tumors initially missed by radiologists.
+Conclusions: The proposed nnU-Net-based segmentation method enables accurate and automated delineation of hepatic anatomy. This enables 3D planning to be applied efficiently as a standard-of-care for every patient undergoing liver surgery. 
+
+**Abstract (ZH)**: 背景: 本研究旨在开发并评估一种基于深度学习的自动化分割方法，用于从钆贝酸二钠增强MRI的肝胆期扫描中分割肝脏解剖结构（即肝实质、肿瘤、门静脉、肝静脉和胆管树），以简化术前规划的临床工作流程。 
+
+---
+# Fracture Detection and Localisation in Wrist and Hand Radiographs using Detection Transformer Variants 
+
+**Title (ZH)**: 使用检测变换器变体在腕部和手部放射影像中进行骨折检测与定位 
+
+**Authors**: Aditya Bagri, Vasanthakumar Venugopal, Anandakumar D, Revathi Ezhumalai, Kalyan Sivasailam, Bargava Subramanian, VarshiniPriya, Meenakumari K S, Abi M, Renita S  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.14129)  
+
+**Abstract**: Background: Accurate diagnosis of wrist and hand fractures using radiographs is essential in emergency care, but manual interpretation is slow and prone to errors. Transformer-based models show promise in improving medical image analysis, but their application to extremity fractures is limited. This study addresses this gap by applying object detection transformers to wrist and hand X-rays.
+Methods: We fine-tuned the RT-DETR and Co-DETR models, pre-trained on COCO, using over 26,000 annotated X-rays from a proprietary clinical dataset. Each image was labeled for fracture presence with bounding boxes. A ResNet-50 classifier was trained on cropped regions to refine abnormality classification. Supervised contrastive learning was used to enhance embedding quality. Performance was evaluated using AP@50, precision, and recall metrics, with additional testing on real-world X-rays.
+Results: RT-DETR showed moderate results (AP@50 = 0.39), while Co-DETR outperformed it with an AP@50 of 0.615 and faster convergence. The integrated pipeline achieved 83.1% accuracy, 85.1% precision, and 96.4% recall on real-world X-rays, demonstrating strong generalization across 13 fracture types. Visual inspection confirmed accurate localization.
+Conclusion: Our Co-DETR-based pipeline demonstrated high accuracy and clinical relevance in wrist and hand fracture detection, offering reliable localization and differentiation of fracture types. It is scalable, efficient, and suitable for real-time deployment in hospital workflows, improving diagnostic speed and reliability in musculoskeletal radiology. 
+
+**Abstract (ZH)**: 背景：准确诊断腕部和手部骨折对于急诊护理至关重要，但手动解释影像资料速度慢且容易出错。基于 Transformer 的模型在改善医学影像分析方面展现出潜力，但在四肢骨折的应用方面有限。本研究通过将对象检测 Transformer 应用于腕部和手部 X 光片来填补这一空白。
+
+方法：我们使用超过 26,000 张带有注释的私有临床数据集中的 X 光片对 RT-DETR 和 Co-DETR 模型进行了微调，这些模型预先在 COCO 上进行了训练。每张图像都标注了骨折的存在情况，并用边界框进行标记。ResNet-50 分类器在裁剪区域上进行了训练以细化异常分类。使用监督对比学习来增强嵌入质量。使用 AP@50、精确度和召回率指标评估性能，并通过实际 X 光片进行了进一步测试。
+
+结果：RT-DETR 的表现为中等 (AP@50 = 0.39)，而 Co-DETR 在 AP@50 方面表现出色 (0.615)，收敛速度更快。集成管道在实际 X 光片上的准确率为 83.1%，精确率为 85.1%，召回率为 96.4%，展示了在 13 种骨折类型上的强大泛化能力。视觉检查证实了定位的准确性。
+
+结论：我们的基于 Co-DETR 的管道在腕部和手部骨折检测中展示了高精度和临床相关性，提供了可靠的位置检测和骨折类型的区分能力。该方案具有可扩展性、高效性，并适合实时部署在医院工作流程中，提高了骨科放射学诊断的速度和可靠性。 
+
+---
+# High-Throughput Low-Cost Segmentation of Brightfield Microscopy Live Cell Images 
+
+**Title (ZH)**: 高通量低成本的明场显微镜活细胞图像分割 
+
+**Authors**: Surajit Das, Gourav Roy, Pavel Zun  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.14106)  
+
+**Abstract**: Live cell culture is crucial in biomedical studies for analyzing cell properties and dynamics in vitro. This study focuses on segmenting unstained live cells imaged with bright-field microscopy. While many segmentation approaches exist for microscopic images, none consistently address the challenges of bright-field live-cell imaging with high throughput, where temporal phenotype changes, low contrast, noise, and motion-induced blur from cellular movement remain major obstacles. We developed a low-cost CNN-based pipeline incorporating comparative analysis of frozen encoders within a unified U-Net architecture enhanced with attention mechanisms, instance-aware systems, adaptive loss functions, hard instance retraining, dynamic learning rates, progressive mechanisms to mitigate overfitting, and an ensemble technique. The model was validated on a public dataset featuring diverse live cell variants, showing consistent competitiveness with state-of-the-art methods, achieving 93% test accuracy and an average F1-score of 89% (std. 0.07) on low-contrast, noisy, and blurry images. Notably, the model was trained primarily on bright-field images with limited exposure to phase-contrast microscopy (<10%), yet it generalized effectively to the phase-contrast LIVECell dataset, demonstrating modality, robustness and strong performance. This highlights its potential for real-world laboratory deployment across imaging conditions. The model requires minimal compute power and is adaptable using basic deep learning setups such as Google Colab, making it practical for training on other cell variants. Our pipeline outperforms existing methods in robustness and precision for bright-field microscopy segmentation. The code and dataset are available for reproducibility 
+
+**Abstract (ZH)**: 活细胞培养是生物医药研究中分析细胞特性与动力学的重要手段。本研究聚焦于通过明场显微镜成像的未染色活细胞分割。尽管存在多种针对显微镜图像的分割方法，但在高速处理、缺乏染色、对比度低、噪声干扰以及细胞运动导致的模糊等问题上，现有方法尚未能够一致解决。我们开发了一种低成本的基于卷积神经网络（CNN）的分割流水线，整合了在统一U-Net架构内的冻干编码器比较分析，并结合了注意力机制、实例感知系统、自适应损失函数、困难实例重训、动态学习率以及渐进机制以减轻过拟合，以及集成技术。该模型在公共数据集上进行了验证，该数据集包含多种活细胞变体，显示出与最新方法的一致竞争力，基于低对比度、噪声和模糊图像，测试准确率达到93%，平均F1分数为89%（标准差0.07）。值得注意的是，该模型主要基于明场图像进行训练，并且很少接触相差显微镜(<10%)，但它在相差显微镜LIVECell数据集上表现出良好的泛化能力，展示了其模态适应性、稳健性和出色表现。这突显了其在各种成像条件下实际实验室部署的潜力。该模型所需的计算能力较低，并可使用基本的深度学习设置如Google Colab进行调整，使之适用于其他细胞类型的训练。与现有方法相比，我们的流水线在明场显微镜分割的稳健性和精确性方面表现出色。代码和数据集可供复现使用。 
+
+---
