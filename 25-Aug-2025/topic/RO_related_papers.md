@@ -1,0 +1,78 @@
+# Hierarchical Decision-Making for Autonomous Navigation: Integrating Deep Reinforcement Learning and Fuzzy Logic in Four-Wheel Independent Steering and Driving Systems 
+
+**Title (ZH)**: 基于层次决策的自主导航：四轮独立转向与驱动系统中深度强化学习与模糊逻辑的集成 
+
+**Authors**: Yizhi Wang, Degang Xu, Yongfang Xie, Shuzhong Tan, Xianan Zhou, Peng Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.16574)  
+
+**Abstract**: This paper presents a hierarchical decision-making framework for autonomous navigation in four-wheel independent steering and driving (4WISD) systems. The proposed approach integrates deep reinforcement learning (DRL) for high-level navigation with fuzzy logic for low-level control to ensure both task performance and physical feasibility. The DRL agent generates global motion commands, while the fuzzy logic controller enforces kinematic constraints to prevent mechanical strain and wheel slippage. Simulation experiments demonstrate that the proposed framework outperforms traditional navigation methods, offering enhanced training efficiency and stability and mitigating erratic behaviors compared to purely DRL-based solutions. Real-world validations further confirm the framework's ability to navigate safely and effectively in dynamic industrial settings. Overall, this work provides a scalable and reliable solution for deploying 4WISD mobile robots in complex, real-world scenarios. 
+
+**Abstract (ZH)**: 本文提出了一种分层决策框架，用于四轮独立转向与驱动（4WISD）系统的自主导航。该提出的办法将深度强化学习（DRL）用于高层导航与模糊逻辑用于低层控制相结合，以确保任务性能和物理可行性。DRL代理生成全局运动指令，而模糊逻辑控制器则施加运动学约束，以防止机械应力和车轮打滑。仿真实验表明，所提出的框架优于传统的导航方法，提供了增强的训练效率和稳定性，并且比纯粹基于DRL的解决方案更有效地减轻了行为不确定性。实地验证进一步证实了该框架能够安全有效地在动态工业环境中导航。总体而言，本文为部署4WISD移动机器人到复杂的真实世界场景提供了可扩展且可靠的解决方案。 
+
+---
+# Comparative Analysis of UAV Path Planning Algorithms for Efficient Navigation in Urban 3D Environments 
+
+**Title (ZH)**: 基于高效的城市3D环境导航的无人机路径规划算法比较分析 
+
+**Authors**: Hichem Cheriet, Khellat Kihel Badra, Chouraqui Samira  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.16515)  
+
+**Abstract**: The most crucial challenges for UAVs are planning paths and avoiding obstacles in their way. In recent years, a wide variety of path-planning algorithms have been developed. These algorithms have successfully solved path-planning problems; however, they suffer from multiple challenges and limitations. To test the effectiveness and efficiency of three widely used algorithms, namely A*, RRT*, and Particle Swarm Optimization (PSO), this paper conducts extensive experiments in 3D urban city environments cluttered with obstacles. Three experiments were designed with two scenarios each to test the aforementioned algorithms. These experiments consider different city map sizes, different altitudes, and varying obstacle densities and sizes in the environment. According to the experimental results, the A* algorithm outperforms the others in both computation efficiency and path quality. PSO is especially suitable for tight turns and dense environments, and RRT* offers a balance and works well across all experiments due to its randomized approach to finding solutions. 
+
+**Abstract (ZH)**: 无人机面临的最关键挑战是规划路径和规避障碍物。近年来，开发出了多种路径规划算法。这些算法成功解决了路径规划问题，但仍然面临多种挑战和局限。为了测试三种广泛使用的算法——A*、RRT*和粒子群优化（PSO）的有效性和效率，本文在充满障碍物的3D城市环境中进行了广泛实验。设计了三项实验，每项实验包含两种场景，以测试上述算法。这些实验考虑了不同的城市地图规模、不同的飞行高度以及环境中的不同障碍密度和大小。根据实验结果，A*算法在计算效率和路径质量方面均优于其他算法。PSO特别适合于狭窄转弯和密集环境，而RRT*由于其随机化的解决方案寻找方法，在所有实验中表现均衡和出色。 
+
+---
+# On Kinodynamic Global Planning in a Simplicial Complex Environment: A Mixed Integer Approach 
+
+**Title (ZH)**: 在单纯复环境中基于混合整数规划的运动动力学全局路径规划 
+
+**Authors**: Otobong Jerome, Alexandr Klimchik, Alexander Maloletov, Geesara Kulathunga  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.16511)  
+
+**Abstract**: This work casts the kinodynamic planning problem for car-like vehicles as an optimization task to compute a minimum-time trajectory and its associated velocity profile, subject to boundary conditions on velocity, acceleration, and steering. The approach simultaneously optimizes both the spatial path and the sequence of acceleration and steering controls, ensuring continuous motion from a specified initial position and velocity to a target end position and this http URL method analyzes the admissible control space and terrain to avoid local minima. The proposed method operates efficiently in simplicial complex environments, a preferred terrain representation for capturing intricate 3D landscapes. The problem is initially posed as a mixed-integer fractional program with quadratic constraints, which is then reformulated into a mixed-integer bilinear objective through a variable transformation and subsequently relaxed to a mixed-integer linear program using McCormick envelopes. Comparative simulations against planners such as MPPI and log-MPPI demonstrate that the proposed approach generates solutions 104 times faster while strictly adhering to the specified constraints 
+
+**Abstract (ZH)**: 本文将汽车类车辆的运动规划问题 cast 为最优化任务，以计算最小时间轨迹及其相应的速度分布，并满足速度、加速度和转向的边界条件。该方法同时优化空间路径和加速度、转向控制序列，确保从指定的起始位置和速度连续运动到目标终点位置和速度。该方法分析可选控制空间和地形以避免局部最小值。所提方法高效地应用于单纯形复杂环境，这是捕捉复杂三维地形的首选地形表示。问题最初被表述为带二次约束的混合整数分式规划问题，然后通过变量变换重新表述为混合整数双线性目标问题，并通过 McCormick 包封进一步松弛为混合整数线性规划问题。与 MPPI 和 log-MPPI 等规划器的比较模拟表明，所提方法在严格遵守指定约束的情况下，生成解决方案的速度快了 104 倍。 
+
+---
+# Swarming Without an Anchor (SWA): Robot Swarms Adapt Better to Localization Dropouts Then a Single Robot 
+
+**Title (ZH)**: 无需锚点的群集算法：机器人 swarm 比单个机器人更能适应定位丢失的情况 
+
+**Authors**: Jiri Horyna, Roland Jung, Stephan Weiss, Eliseo Ferrante, Martin Saska  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.16460)  
+
+**Abstract**: In this paper, we present the Swarming Without an Anchor (SWA) approach to state estimation in swarms of Unmanned Aerial Vehicles (UAVs) experiencing ego-localization dropout, where individual agents are laterally stabilized using relative information only. We propose to fuse decentralized state estimation with robust mutual perception and onboard sensor data to maintain accurate state awareness despite intermittent localization failures. Thus, the relative information used to estimate the lateral state of UAVs enables the identification of the unambiguous state of UAVs with respect to the local constellation. The resulting behavior reaches velocity consensus, as this task can be referred to as the double integrator synchronization problem. All disturbances and performance degradations except a uniform translation drift of the swarm as a whole is attenuated which is enabling new opportunities in using tight cooperation for increasing reliability and resilience of multi-UAV systems. Simulations and real-world experiments validate the effectiveness of our approach, demonstrating its capability to sustain cohesive swarm behavior in challenging conditions of unreliable or unavailable primary localization. 
+
+**Abstract (ZH)**: 无锚点的群集状态估计方法（SWA）：无人机群在自我定位丢失情况下的横向稳定与状态估计 
+
+---
+# Self-Aligning EPM Connector: A Versatile Solution for Adaptive and Multi-Modal Interfaces 
+
+**Title (ZH)**: 自对齐EPM连接器：一种适应性和多模态接口的通用解决方案 
+
+**Authors**: Bingchao Wang, Adam A. Stokes  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.16008)  
+
+**Abstract**: This paper presents a multifunctional connector based on electro-permanent magnet (EPM) technology, integrating self-alignment, mechanical coupling, fluid transfer, and data communication within a compact SLA-3D printed structure. Experimental results demonstrate reliable self-alignment, efficient fluid transfer in single-loop and dual-channel modes, and robust data transmission via integrated electronic control. The connector exhibits high flexibility in accommodating axial, angular, and lateral misalignments while maintaining low energy consumption. These features make it highly suitable for modular robotics, electric vehicle charging, household robotic platforms, and aerospace docking applications. 
+
+**Abstract (ZH)**: 基于电永磁技术的多功能连接器及其在模块化机器人、电动汽车充电、家庭机器人平台和航空航天对接应用中的集成设计与实验研究 
+
+---
+# Active Prostate Phantom with Multiple Chambers 
+
+**Title (ZH)**: 多腔室活性前列腺模拟器 
+
+**Authors**: Sizhe Tian, Yinoussa Adagolodjo, Jeremie Dequidt  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.15873)  
+
+**Abstract**: Prostate cancer is a major global health concern, requiring advancements in robotic surgery and diagnostics to improve patient outcomes. A phantom is a specially designed object that simulates human tissues or organs. It can be used for calibrating and testing a medical process, as well as for training and research purposes. Existing prostate phantoms fail to simulate dynamic scenarios. This paper presents a pneumatically actuated prostate phantom with multiple independently controlled chambers, allowing for precise volumetric adjustments to replicate asymmetric and symmetric benign prostatic hyperplasia (BPH). The phantom is designed based on shape analysis of magnetic resonance imaging (MRI) datasets, modeled with finite element method (FEM), and validated through 3D reconstruction. The simulation results showed strong agreement with physical measurements, achieving average errors of 3.47% in forward modeling and 1.41% in inverse modeling. These results demonstrate the phantom's potential as a platform for validating robotic-assisted systems and for further development toward realistic simulation-based medical training. 
+
+**Abstract (ZH)**: 前列腺癌是全球重大健康问题，需要在机器人手术和诊断方面取得进展以改善患者预后。这是一个特别设计的对象，用于模拟人类组织或器官。它可以用于校准和测试医疗过程，以及培训和研究目的。现有的前列腺模拟器无法模拟动态场景。本文提出了一种由多个独立控制腔室驱动的气动前列腺模拟器，允许精确的体积调整以模拟不对称性和对称性良性前列腺增生（BPH）。该模拟器基于磁共振成像（MRI）数据集的形状分析设计，使用有限元法（FEM）建模，并通过3D重建进行验证。仿真结果与物理测量结果高度一致，前向建模平均误差为3.47%，逆向建模平均误差为1.41%。这些结果表明该模拟器有潜力作为验证辅助机器人系统和进一步发展基于仿真医学培训的现实模拟平台。 
+
+---
