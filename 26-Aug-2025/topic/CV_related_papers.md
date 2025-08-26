@@ -1,0 +1,443 @@
+# Integration of Computer Vision with Adaptive Control for Autonomous Driving Using ADORE 
+
+**Title (ZH)**: 基于ADORE的计算机视觉与自适应控制集成在自主驾驶中的应用 
+
+**Authors**: Abu Shad Ahammed, Md Shahi Amran Hossain, Sayeri Mukherjee, Roman Obermaisser, Md. Ziaur Rahman  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.17985)  
+
+**Abstract**: Ensuring safety in autonomous driving requires a seamless integration of perception and decision making under uncertain conditions. Although computer vision (CV) models such as YOLO achieve high accuracy in detecting traffic signs and obstacles, their performance degrades in drift scenarios caused by weather variations or unseen objects. This work presents a simulated autonomous driving system that combines a context aware CV model with adaptive control using the ADORE framework. The CARLA simulator was integrated with ADORE via the ROS bridge, allowing real-time communication between perception, decision, and control modules. A simulated test case was designed in both clear and drift weather conditions to demonstrate the robust detection performance of the perception model while ADORE successfully adapted vehicle behavior to speed limits and obstacles with low response latency. The findings highlight the potential of coupling deep learning-based perception with rule-based adaptive decision making to improve automotive safety critical system. 
+
+**Abstract (ZH)**: 确保自动驾驶安全需要在不确定条件下实现感知与决策的无缝集成。虽然YOLO等计算机视觉模型在检测交通标志和障碍物方面具有高精度，但在由天气变化或未见过的物体引起的漂移场景中，其性能会下降。本研究提出了一种结合基于上下文的计算机视觉模型和ADORE框架自适应控制的模拟自动驾驶系统。通过ROS桥将CARLA模拟器与ADORE集成，实现了感知、决策和控制模块之间的实时通信。在晴朗和漂移天气条件下设计了模拟测试案例，展示了感知模型的稳健检测性能，同时ADORE成功地适应了速度限制和障碍物，并具有低响应延迟。研究结果突显了将基于深度学习的感知与基于规则的自适应决策相结合以提高汽车安全关键系统性能的潜力。 
+
+---
+# Adaptive Output Steps: FlexiSteps Network for Dynamic Trajectory Prediction 
+
+**Title (ZH)**: 自适应输出步长：动态步长网络用于动态轨迹预测 
+
+**Authors**: Yunxiang Liu, Hongkuo Niu, Jianlin Zhu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.17797)  
+
+**Abstract**: Accurate trajectory prediction is vital for autonomous driving, robotics, and intelligent decision-making systems, yet traditional models typically rely on fixed-length output predictions, limiting their adaptability to dynamic real-world scenarios. In this paper, we introduce the FlexiSteps Network (FSN), a novel framework that dynamically adjusts prediction output time steps based on varying contextual conditions. Inspired by recent advancements addressing observation length discrepancies and dynamic feature extraction, FSN incorporates an pre-trained Adaptive Prediction Module (APM) to evaluate and adjust the output steps dynamically, ensuring optimal prediction accuracy and efficiency. To guarantee the plug-and-play of our FSN, we also design a Dynamic Decoder(DD). Additionally, to balance the prediction time steps and prediction accuracy, we design a scoring mechanism, which not only introduces the Fréchet distance to evaluate the geometric similarity between the predicted trajectories and the ground truth trajectories but the length of predicted steps is also considered. Extensive experiments conducted on benchmark datasets including Argoverse and INTERACTION demonstrate the effectiveness and flexibility of our proposed FSN framework. 
+
+**Abstract (ZH)**: 准确的轨迹预测对于自动驾驶、机器人技术和智能决策系统至关重要，然而传统模型通常依赖固定长度的预测输出，限制了其适应动态现实场景的能力。本文引入了FlexiSteps网络(FSN)，这是一种新型框架，可以根据变化的上下文条件动态调整预测输出时间步长。受解决观测长度差异和动态特征提取最新进展的启发，FSN结合了一个预训练的自适应预测模块(APM)，以动态评估和调整输出步骤，确保预测的最佳准确性和效率。为了保证FSN的即插即用功能，我们还设计了一个动态解码器(DD)。此外，为了平衡预测时间步长和预测准确性，我们设计了一个评分机制，不仅引入了Fréchet距离来评估预测轨迹与真实轨迹之间的几何相似性，还考虑了预测步长的长度。在Argoverse和INTERACTION基准数据集上的广泛实验验证了我们提出的FSN框架的有效性和灵活性。 
+
+---
+# Robust Point Cloud Registration via Geometric Overlapping Guided Rotation Search 
+
+**Title (ZH)**: 基于几何重叠引导旋转搜索的鲁棒点云注册 
+
+**Authors**: Zhao Zheng, Jingfan Fan, Long Shao, Hong Song, Danni Ai, Tianyu Fu, Deqiang Xiao, Yongtian Wang, Jian Yang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.17427)  
+
+**Abstract**: Point cloud registration based on correspondences computes the rigid transformation that maximizes the number of inliers constrained within the noise threshold. Current state-of-the-art (SOTA) methods employing spatial compatibility graphs or branch-and-bound (BnB) search mainly focus on registration under high outlier ratios. However, graph-based methods require at least quadratic space and time complexity for graph construction, while multi-stage BnB search methods often suffer from inaccuracy due to local optima between decomposed stages. This paper proposes a geometric maximum overlapping registration framework via rotation-only BnB search. The rigid transformation is decomposed using Chasles' theorem into a translation along rotation axis and a 2D rigid transformation. The optimal rotation axis and angle are searched via BnB, with residual parameters formulated as range maximum query (RMQ) problems. Firstly, the top-k candidate rotation axes are searched within a hemisphere parameterized by cube mapping, and the translation along each axis is estimated through interval stabbing of the correspondences projected onto that axis. Secondly, the 2D registration is relaxed to 1D rotation angle search with 2D RMQ of geometric overlapping for axis-aligned rectangles, which is solved deterministically in polynomial time using sweep line algorithm with segment tree. Experimental results on 3DMatch, 3DLoMatch, and KITTI datasets demonstrate superior accuracy and efficiency over SOTA methods, while the time complexity is polynomial and the space complexity increases linearly with the number of points, even in the worst case. 
+
+**Abstract (ZH)**: 基于对应点的点云注册通过旋转 Only  branch-and-bound 搜索实现几何最大重叠变换 
+
+---
+# DeltaFlow: An Efficient Multi-frame Scene Flow Estimation Method 
+
+**Title (ZH)**: DeltaFlow：一种高效的多帧场景流估计方法 
+
+**Authors**: Qingwen Zhang, Xiaomeng Zhu, Yushan Zhang, Yixi Cai, Olov Andersson, Patric Jensfelt  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.17054)  
+
+**Abstract**: Previous dominant methods for scene flow estimation focus mainly on input from two consecutive frames, neglecting valuable information in the temporal domain. While recent trends shift towards multi-frame reasoning, they suffer from rapidly escalating computational costs as the number of frames grows. To leverage temporal information more efficiently, we propose DeltaFlow ($\Delta$Flow), a lightweight 3D framework that captures motion cues via a $\Delta$ scheme, extracting temporal features with minimal computational cost, regardless of the number of frames. Additionally, scene flow estimation faces challenges such as imbalanced object class distributions and motion inconsistency. To tackle these issues, we introduce a Category-Balanced Loss to enhance learning across underrepresented classes and an Instance Consistency Loss to enforce coherent object motion, improving flow accuracy. Extensive evaluations on the Argoverse 2 and Waymo datasets show that $\Delta$Flow achieves state-of-the-art performance with up to 22% lower error and $2\times$ faster inference compared to the next-best multi-frame supervised method, while also demonstrating a strong cross-domain generalization ability. The code is open-sourced at this https URL along with trained model weights. 
+
+**Abstract (ZH)**: 基于多帧场景流估计的DeltaFlow：轻量级高效框架及优化策略 
+
+---
+# WebSight: A Vision-First Architecture for Robust Web Agents 
+
+**Title (ZH)**: WebSight: 以视觉为主的第一代架构稳健的Web代理 
+
+**Authors**: Tanvir Bhathal, Asanshay Gupta  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.16987)  
+
+**Abstract**: We introduce WebSight, a vision-based autonomous web agent, designed to interact with web environments purely through visual perception, eliminating dependence on HTML or DOM-based inputs. Central to our approach we introduce our new model, WebSight-7B, a fine-tuned vision-language model optimized for UI element interaction, trained using LoRA on a web-focused subset of the Wave-UI-25K dataset. WebSight integrates this model into a modular multi-agent architecture, comprising planning, reasoning, vision-action, and verification agents, coordinated through an episodic memory mechanism.
+WebSight-7B achieves a top-1 accuracy of 58.84% on the Showdown Clicks benchmark, outperforming several larger generalist models while maintaining lower latency. The full WebSight agent achieves a 68.0% success rate on the WebVoyager benchmark, surpassing systems from labs such as OpenAI (61.0%) and HCompany (Runner H, 67.0%). Among tasks completed, WebSight answers correctly 97.14% of the time, indicating high precision. Together, WebSight and WebSight-7B establish a new standard for interpretable, robust, and efficient visual web navigation. 
+
+**Abstract (ZH)**: 基于视觉的自主网络代理WebSight及其WebSight-7B模型：一种用于UI元素交互的精调视觉语言模型 
+
+---
+# RADAR: A Reasoning-Guided Attribution Framework for Explainable Visual Data Analysis 
+
+**Title (ZH)**: RADAR：一种基于推理的可解释视觉数据分析归因框架 
+
+**Authors**: Anku Rani, Aparna Garimella, Apoorv Saxena, Balaji Vasan Srinivasan, Paul Pu Liang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.16850)  
+
+**Abstract**: Data visualizations like charts are fundamental tools for quantitative analysis and decision-making across fields, requiring accurate interpretation and mathematical reasoning. The emergence of Multimodal Large Language Models (MLLMs) offers promising capabilities for automated visual data analysis, such as processing charts, answering questions, and generating summaries. However, they provide no visibility into which parts of the visual data informed their conclusions; this black-box nature poses significant challenges to real-world trust and adoption. In this paper, we take the first major step towards evaluating and enhancing the capabilities of MLLMs to attribute their reasoning process by highlighting the specific regions in charts and graphs that justify model answers. To this end, we contribute RADAR, a semi-automatic approach to obtain a benchmark dataset comprising 17,819 diverse samples with charts, questions, reasoning steps, and attribution annotations. We also introduce a method that provides attribution for chart-based mathematical reasoning. Experimental results demonstrate that our reasoning-guided approach improves attribution accuracy by 15% compared to baseline methods, and enhanced attribution capabilities translate to stronger answer generation, achieving an average BERTScore of $\sim$ 0.90, indicating high alignment with ground truth responses. This advancement represents a significant step toward more interpretable and trustworthy chart analysis systems, enabling users to verify and understand model decisions through reasoning and attribution. 
+
+**Abstract (ZH)**: 多模态大型语言模型在图表解释推理能力评估与提升的研究 
+
+---
+# Explain and Monitor Deep Learning Models for Computer Vision using Obz AI 
+
+**Title (ZH)**: 使用Obz AI解释和监控计算机视觉中的深度学习模型 
+
+**Authors**: Neo Christopher Chung, Jakub Binda  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.18188)  
+
+**Abstract**: Deep learning has transformed computer vision (CV), achieving outstanding performance in classification, segmentation, and related tasks. Such AI-based CV systems are becoming prevalent, with applications spanning from medical imaging to surveillance. State of the art models such as convolutional neural networks (CNNs) and vision transformers (ViTs) are often regarded as ``black boxes,'' offering limited transparency into their decision-making processes. Despite a recent advancement in explainable AI (XAI), explainability remains underutilized in practical CV deployments. A primary obstacle is the absence of integrated software solutions that connect XAI techniques with robust knowledge management and monitoring frameworks. To close this gap, we have developed Obz AI, a comprehensive software ecosystem designed to facilitate state-of-the-art explainability and observability for vision AI systems. Obz AI provides a seamless integration pipeline, from a Python client library to a full-stack analytics dashboard. With Obz AI, a machine learning engineer can easily incorporate advanced XAI methodologies, extract and analyze features for outlier detection, and continuously monitor AI models in real time. By making the decision-making mechanisms of deep models interpretable, Obz AI promotes observability and responsible deployment of computer vision systems. 
+
+**Abstract (ZH)**: 深度学习已 transforming 计算机视觉（CV），在分类、分割及相关任务中取得了卓越的性能。这类基于AI的CV系统日益普及，应用范围从医学成像到监控。最先进模型如卷积神经网络（CNNs）和视觉变换器（ViTs）通常被视为“黑盒”，提供有限的决策过程透明度。尽管可解释AI（XAI）领域取得了近期进展，但在实际CV部署中可解释性仍然未得到充分利用。主要障碍是缺乏将XAI技术与 robust 知识管理及监测框架集成的软件解决方案。为弥补这一差距，我们开发了Obz AI，一个全面的软件生态系统，旨在促进最先进的可解释性和可观测性以支持视觉AI系统。Obz AI 提供了从Python客户端库到全栈分析仪表盘的无缝集成管道。使用Obz AI，机器学习工程师可以轻松地整合高级XAI方法、提取和分析特征以进行异常检测，并在实时持续监控AI模型。通过使深度模型的决策机制可解释，Obz AI 推动了计算机视觉系统的可观测性和负责任部署。 
+
+---
+# BRAIN: Bias-Mitigation Continual Learning Approach to Vision-Brain Understanding 
+
+**Title (ZH)**: BRAIN: 偏见缓解持续学习方法及其在视觉脑认知理解中的应用 
+
+**Authors**: Xuan-Bac Nguyen, Thanh-Dat Truong, Pawan Sinha, Khoa Luu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.18187)  
+
+**Abstract**: Memory decay makes it harder for the human brain to recognize visual objects and retain details. Consequently, recorded brain signals become weaker, uncertain, and contain poor visual context over time. This paper presents one of the first vision-learning approaches to address this problem. First, we statistically and experimentally demonstrate the existence of inconsistency in brain signals and its impact on the Vision-Brain Understanding (VBU) model. Our findings show that brain signal representations shift over recording sessions, leading to compounding bias, which poses challenges for model learning and degrades performance. Then, we propose a new Bias-Mitigation Continual Learning (BRAIN) approach to address these limitations. In this approach, the model is trained in a continual learning setup and mitigates the growing bias from each learning step. A new loss function named De-bias Contrastive Learning is also introduced to address the bias problem. In addition, to prevent catastrophic forgetting, where the model loses knowledge from previous sessions, the new Angular-based Forgetting Mitigation approach is introduced to preserve learned knowledge in the model. Finally, the empirical experiments demonstrate that our approach achieves State-of-the-Art (SOTA) performance across various benchmarks, surpassing prior and non-continual learning methods. 
+
+**Abstract (ZH)**: 记忆衰退使人脑更难识别视觉物体并保留细节。这导致记录的大脑信号变得较弱、不确定且包含较差的视觉上下文。本文提出了第一个解决这一问题的视觉学习方法之一。首先，我们通过统计和实验展示了大脑信号中的一致性问题及其对视觉-大脑理解(VBU)模型的影响。我们的研究发现表明，大脑信号表示在录制会话中发生变化，导致累积偏差，这对模型学习构成挑战并降低性能。然后，我们提出了一种新的偏差缓解持续学习(BRAIN)方法来解决这些问题。在此方法中，模型在持续学习设置中进行训练，并从每个学习步骤中缓解增长的偏差。我们还引入了一种新的损失函数——去偏置对比学习，以解决偏差问题。此外，为了防止灾难性遗忘，即模型忘记先前会话的知识，我们提出了基于角度的遗忘缓解新方法，以保存模型中的学习知识。最后，实验证明，我们的方法在各种基准测试中达到了最佳性能，优于先前的方法和非持续学习方法。 
+
+---
+# See What You Need: Query-Aware Visual Intelligence through Reasoning-Perception Loops 
+
+**Title (ZH)**: 按需所见：基于查询-感知循环推理的查询意识视觉智能 
+
+**Authors**: Zixuan Dong, Baoyun Peng, Yufei Wang, Lin Liu, Xinxin Dong, Yunlong Cao, Xiaodong Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.17932)  
+
+**Abstract**: Human video comprehension demonstrates dynamic coordination between reasoning and visual attention, adaptively focusing on query-relevant details. However, current long-form video question answering systems employ rigid pipelines that decouple reasoning from perception, leading to either information loss through premature visual abstraction or computational inefficiency through exhaustive processing. The core limitation lies in the inability to adapt visual extraction to specific reasoning requirements, different queries demand fundamentally different visual evidence from the same video content. In this work, we present CAVIA, a training-free framework that revolutionizes video understanding through reasoning, perception coordination. Unlike conventional approaches where visual processing operates independently of reasoning, CAVIA creates a closed-loop system where reasoning continuously guides visual extraction based on identified information gaps. CAVIA introduces three innovations: (1) hierarchical reasoning, guided localization to precise frames; (2) cross-modal semantic bridging for targeted extraction; (3) confidence-driven iterative synthesis. CAVIA achieves state-of-the-art performance on challenging benchmarks: EgoSchema (65.7%, +5.3%), NExT-QA (76.1%, +2.6%), and IntentQA (73.8%, +6.9%), demonstrating that dynamic reasoning-perception coordination provides a scalable paradigm for video understanding. 
+
+**Abstract (ZH)**: 人类视频理解展示了推理与视觉注意力之间的动态协调，能够适应性地关注查询相关的细节。然而，当前的长视频问答系统采用僵化的管道，将推理与感知分离开来，导致通过过早的视觉抽象丢失信息，或者通过耗尽式处理导致计算效率低下。核心限制在于无法根据特定的推理需求适配视觉提取。不同的查询从相同的视频内容中需要完全不同类型的视觉证据。在本文中，我们提出了一种无需训练的框架CAVIA，通过推理与感知协调重塑视频理解。与传统的视觉处理独立于推理的流程不同，CAVIA构建了一个闭环系统，推理不断引导视觉提取，基于识别的信息缺口。CAVIA引入了三项创新：（1）层次推理，引导精确帧的定位；（2）跨模态语义桥梁用于目标提取；（3）基于置信度的迭代合成。CAVIA在具有挑战性的基准测试上取得了最先进的性能：EgoSchema（65.7%，+5.3%），NExT-QA（76.1%，+2.6%），IntentQA（73.8%，+6.9%），证明了动态推理-感知协调为视频理解提供了可扩展的范式。 
+
+---
+# Designing Practical Models for Isolated Word Visual Speech Recognition 
+
+**Title (ZH)**: 孤立词视觉语音识别的实用模型设计 
+
+**Authors**: Iason Ioannis Panagos, Giorgos Sfikas, Christophoros Nikou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.17894)  
+
+**Abstract**: Visual speech recognition (VSR) systems decode spoken words from an input sequence using only the video data. Practical applications of such systems include medical assistance as well as human-machine interactions. A VSR system is typically employed in a complementary role in cases where the audio is corrupt or not available. In order to accurately predict the spoken words, these architectures often rely on deep neural networks in order to extract meaningful representations from the input sequence. While deep architectures achieve impressive recognition performance, relying on such models incurs significant computation costs which translates into increased resource demands in terms of hardware requirements and results in limited applicability in real-world scenarios where resources might be constrained. This factor prevents wider adoption and deployment of speech recognition systems in more practical applications. In this work, we aim to alleviate this issue by developing architectures for VSR that have low hardware costs. Following the standard two-network design paradigm, where one network handles visual feature extraction and another one utilizes the extracted features to classify the entire sequence, we develop lightweight end-to-end architectures by first benchmarking efficient models from the image classification literature, and then adopting lightweight block designs in a temporal convolution network backbone. We create several unified models with low resource requirements but strong recognition performance. Experiments on the largest public database for English words demonstrate the effectiveness and practicality of our developed models. Code and trained models will be made publicly available. 
+
+**Abstract (ZH)**: 视觉语音识别（VSR）系统通过视频数据解码输入序列中的 spoken words。这类系统的实际应用包括医疗辅助以及人机交互。在音频受损或不可用的情况下，VSR 系统通常作为辅助工具使用。为了准确预测 spoken words，这些架构通常依赖于深度神经网络来从输入序列中提取有意义的表示。尽管深度架构实现了令人印象深刻的识别性能，但依赖于这些模型会导致显著的计算成本，进而增加了硬件需求，限制了此类模型在资源受限的实际场景中的应用。这一因素阻碍了语音识别系统的更广泛应用。在本文中，我们旨在通过开发具有低硬件成本的 VSR 架构来缓解这一问题。我们遵循标准的双网络设计范式，其中一个网络负责视觉特征提取，另一个网络利用提取的特征来分类整个序列。我们首先在图像分类文献中基准测试高效的模型，然后采用轻量级的模块设计在时间卷积神经网络骨干中加以应用，创建了具有低资源需求但强大识别性能的统一模型。在最大的公共英语单词数据库上的实验表明，我们开发的模型的有效性和实用性。代码和训练模型将公开发布。 
+
+---
+# Edge-Enhanced Vision Transformer Framework for Accurate AI-Generated Image Detection 
+
+**Title (ZH)**: 基于边缘增强的视觉变换器框架：用于准确检测AI生成图像的研究 
+
+**Authors**: Dabbrata Das, Mahshar Yahan, Md Tareq Zaman, Md Rishadul Bayesh  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.17877)  
+
+**Abstract**: The rapid advancement of generative models has led to a growing prevalence of highly realistic AI-generated images, posing significant challenges for digital forensics and content authentication. Conventional detection methods mainly rely on deep learning models that extract global features, which often overlook subtle structural inconsistencies and demand substantial computational resources. To address these limitations, we propose a hybrid detection framework that combines a fine-tuned Vision Transformer (ViT) with a novel edge-based image processing module. The edge-based module computes variance from edge-difference maps generated before and after smoothing, exploiting the observation that AI-generated images typically exhibit smoother textures, weaker edges, and reduced noise compared to real images. When applied as a post-processing step on ViT predictions, this module enhances sensitivity to fine-grained structural cues while maintaining computational efficiency. Extensive experiments on the CIFAKE, Artistic, and Custom Curated datasets demonstrate that the proposed framework achieves superior detection performance across all benchmarks, attaining 97.75% accuracy and a 97.77% F1-score on CIFAKE, surpassing widely adopted state-of-the-art models. These results establish the proposed method as a lightweight, interpretable, and effective solution for both still images and video frames, making it highly suitable for real-world applications in automated content verification and digital forensics. 
+
+**Abstract (ZH)**: 生成模型的快速进步导致了高度逼真的人工智能生成图像的普遍性增加，这对数字取证和内容认证提出了重大挑战。传统检测方法主要依赖于提取全局特征的深度学习模型，这些方法往往忽视了细微的结构不一致性，并需要大量的计算资源。为了解决这些问题，我们提出了一种结合微调的视觉变换器（ViT）和一种新型边缘导向图像处理模块的混合检测框架。边缘导向模块通过在平滑前后生成的边缘差异图像上计算方差，利用观察到的人工智能生成图像通常具有更平滑的纹理、更弱的边缘和减少的噪声这一事实。将此模块用作ViT预测后的处理步骤，可以增强对细粒度结构线索的敏感性，同时保持计算效率。在CIFAKE、Artistic和定制编目的数据集上的广泛实验表明，所提出的框架在所有基准测试中实现了卓越的检测性能，在CIFAKE数据集上取得了97.75%的准确率和97.77%的F1分数，超越了广泛采用的最先进的模型。这些结果确立了所提出的方法作为一种轻量级、可解释且有效的解决方案，适用于静态图像和视频帧，在自动化内容验证和数字取证的实际应用中具有很高的适用性。 
+
+---
+# Vocoder-Projected Feature Discriminator 
+
+**Title (ZH)**: 矢量器投影特征判别器 
+
+**Authors**: Takuhiro Kaneko, Hirokazu Kameoka, Kou Tanaka, Yuto Kondo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.17874)  
+
+**Abstract**: In text-to-speech (TTS) and voice conversion (VC), acoustic features, such as mel spectrograms, are typically used as synthesis or conversion targets owing to their compactness and ease of learning. However, because the ultimate goal is to generate high-quality waveforms, employing a vocoder to convert these features into waveforms and applying adversarial training in the time domain is reasonable. Nevertheless, upsampling the waveform introduces significant time and memory overheads. To address this issue, we propose a vocoder-projected feature discriminator (VPFD), which uses vocoder features for adversarial training. Experiments on diffusion-based VC distillation demonstrated that a pretrained and frozen vocoder feature extractor with a single upsampling step is necessary and sufficient to achieve a VC performance comparable to that of waveform discriminators while reducing the training time and memory consumption by 9.6 and 11.4 times, respectively. 
+
+**Abstract (ZH)**: 在文本到语音（TTS）和语音转换（VC）中，由于其紧凑性和易于学习的特性，通常采用梅尔频谱等声学特征作为合成或转换的目标。然而，由于最终目标是生成高质量的波形，使用 vocoder 将这些特征转换为波形并进行时域的对抗训练是合理的。尽管如此，上采样波形会引入显著的时间和内存开销。为了解决这个问题，我们提出了一种 vocoder 投影特征判别器（VPFD），该判别器使用 vocoder 特征进行对抗训练。基于扩散的 VC  distillation 实验表明，使用单步上采样的预训练和冻结的 vocoder 特征提取器是必要且足够的，可以在将训练时间减少9.6倍、内存消耗减少11.4倍的情况下，达到与波形判别器相当的性能。 
+
+---
+# MeshSplat: Generalizable Sparse-View Surface Reconstruction via Gaussian Splatting 
+
+**Title (ZH)**: MeshSplat: 基于高斯点渲染的可泛化的稀疏视图表面重建 
+
+**Authors**: Hanzhi Chang, Ruijie Zhu, Wenjie Chang, Mulin Yu, Yanzhe Liang, Jiahao Lu, Zhuoyuan Li, Tianzhu Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.17811)  
+
+**Abstract**: Surface reconstruction has been widely studied in computer vision and graphics. However, existing surface reconstruction works struggle to recover accurate scene geometry when the input views are extremely sparse. To address this issue, we propose MeshSplat, a generalizable sparse-view surface reconstruction framework via Gaussian Splatting. Our key idea is to leverage 2DGS as a bridge, which connects novel view synthesis to learned geometric priors and then transfers these priors to achieve surface reconstruction. Specifically, we incorporate a feed-forward network to predict per-view pixel-aligned 2DGS, which enables the network to synthesize novel view images and thus eliminates the need for direct 3D ground-truth supervision. To improve the accuracy of 2DGS position and orientation prediction, we propose a Weighted Chamfer Distance Loss to regularize the depth maps, especially in overlapping areas of input views, and also a normal prediction network to align the orientation of 2DGS with normal vectors predicted by a monocular normal estimator. Extensive experiments validate the effectiveness of our proposed improvement, demonstrating that our method achieves state-of-the-art performance in generalizable sparse-view mesh reconstruction tasks. Project Page: this https URL 
+
+**Abstract (ZH)**: 基于高斯统的通用稀疏视图表面重建框架 MeshSplat 
+
+---
+# Hierarchical Vision-Language Learning for Medical Out-of-Distribution Detection 
+
+**Title (ZH)**: 医疗领域异常分布检测的层次视觉-语言学习 
+
+**Authors**: Runhe Lai, Xinhua Lu, Kanghao Chen, Qichao Chen, Wei-Shi Zheng, Ruixuan Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.17667)  
+
+**Abstract**: In trustworthy medical diagnosis systems, integrating out-of-distribution (OOD) detection aims to identify unknown diseases in samples, thereby mitigating the risk of misdiagnosis. In this study, we propose a novel OOD detection framework based on vision-language models (VLMs), which integrates hierarchical visual information to cope with challenging unknown diseases that resemble known diseases. Specifically, a cross-scale visual fusion strategy is proposed to couple visual embeddings from multiple scales. This enriches the detailed representation of medical images and thus improves the discrimination of unknown diseases. Moreover, a cross-scale hard pseudo-OOD sample generation strategy is proposed to benefit OOD detection maximally. Experimental evaluations on three public medical datasets support that the proposed framework achieves superior OOD detection performance compared to existing methods. The source code is available at this https URL. 
+
+**Abstract (ZH)**: 在可信赖的医疗诊断系统中，结合离分布（OOD）检测旨在识别未知疾病，从而降低误诊风险。在此研究中，我们提出了一种基于视觉-语言模型（VLMs）的新型OOD检测框架，该框架通过分层视觉信息来应对具有挑战性的未知疾病，这些未知疾病类似于已知疾病。具体而言，我们提出了一种跨尺度视觉融合策略，以结合多尺度的视觉嵌入。这丰富了医学图像的详细表示，从而提高了未知疾病的区分能力。此外，我们提出了一种跨尺度难以伪OOD样本生成策略，以最大程度地提高OOD检测性能。在三个公开的医学数据集上的实验评估支持了所提出框架相比现有方法具有更优的OOD检测性能。源代码可在该网址获取。 
+
+---
+# Finding Outliers in a Haystack: Anomaly Detection for Large Pointcloud Scenes 
+
+**Title (ZH)**: 在万堆 haystack 中寻找异常值：大规模点云场景中的异常检测 
+
+**Authors**: Ryan Faulkner, Ian Reid, Simon Ratcliffe, Tat-Jun Chin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.17634)  
+
+**Abstract**: LiDAR scanning in outdoor scenes acquires accurate distance measurements over wide areas, producing large-scale point clouds. Application examples for this data include robotics, automotive vehicles, and land surveillance. During such applications, outlier objects from outside the training data will inevitably appear. Our research contributes a novel approach to open-set segmentation, leveraging the learnings of object defect-detection research. We also draw on the Mamba architecture's strong performance in utilising long-range dependencies and scalability to large data. Combining both, we create a reconstruction based approach for the task of outdoor scene open-set segmentation. We show that our approach improves performance not only when applied to our our own open-set segmentation method, but also when applied to existing methods. Furthermore we contribute a Mamba based architecture which is competitive with existing voxel-convolution based methods on challenging, large-scale pointclouds. 
+
+**Abstract (ZH)**: LiDAR 在室外场景中的扫描能够获取大面积内的准确距离测量，生成大规模点云。这种数据的应用例子包括机器人技术、自动驾驶车辆和土地监控。在这些应用中，不可避免地会出现训练数据之外的异常物体。我们的研究提出了一种用于开放集分割的新型方法，借鉴了物体缺陷检测研究的成果。我们还利用Mamba架构在利用长距离依赖性和处理大规模数据方面表现出的强大性能。结合这两种方法，我们提出了一个基于重建的方法，用于室外场景的开放集分割任务。我们展示了我们的方法不仅在我们的开放集分割方法上，而且在现有方法上都能提高性能。此外，我们还贡献了一个基于Mamba架构的模型，在具有挑战性的大规模点云上与基于体素卷积的方法具有竞争力。 
+
+---
+# ControlEchoSynth: Boosting Ejection Fraction Estimation Models via Controlled Video Diffusion 
+
+**Title (ZH)**: ControlEchoSynth: 通过受控视频扩散提升射血分数估算模型 
+
+**Authors**: Nima Kondori, Hanwen Liang, Hooman Vaseli, Bingyu Xie, Christina Luong, Purang Abolmaesumi, Teresa Tsang, Renjie Liao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.17631)  
+
+**Abstract**: Synthetic data generation represents a significant advancement in boosting the performance of machine learning (ML) models, particularly in fields where data acquisition is challenging, such as echocardiography. The acquisition and labeling of echocardiograms (echo) for heart assessment, crucial in point-of-care ultrasound (POCUS) settings, often encounter limitations due to the restricted number of echo views available, typically captured by operators with varying levels of experience. This study proposes a novel approach for enhancing clinical diagnosis accuracy by synthetically generating echo views. These views are conditioned on existing, real views of the heart, focusing specifically on the estimation of ejection fraction (EF), a critical parameter traditionally measured from biplane apical views. By integrating a conditional generative model, we demonstrate an improvement in EF estimation accuracy, providing a comparative analysis with traditional methods. Preliminary results indicate that our synthetic echoes, when used to augment existing datasets, not only enhance EF estimation but also show potential in advancing the development of more robust, accurate, and clinically relevant ML models. This approach is anticipated to catalyze further research in synthetic data applications, paving the way for innovative solutions in medical imaging diagnostics. 
+
+**Abstract (ZH)**: 合成数据生成代表了增强机器学习模型性能的一项重要进展，特别是在数据获取具有挑战性的领域，如心脏超声。通过提出一种新的方法，合成生成心脏超声视图以增强临床诊断准确性，在受限的心脏超声视图数量和不同经验水平操作者拍摄的心脏超声图像背景下，特别是在点对点心脏超声（POCUS）环境中，需要对射血分数（EF）进行精确估计。通过集成条件生成模型，我们展示了EF估计精度的提升，并与传统方法进行了比较分析。初步结果表明，将我们的合成心脏超声与现有的数据集相结合，不仅能提高EF估计精度，还有潜力促进更稳健、准确和临床相关的机器学习模型的发展。该方法有望推动合成数据应用领域的进一步研究，为医学成像诊断提供创新解决方案。 
+
+---
+# DinoTwins: Combining DINO and Barlow Twins for Robust, Label-Efficient Vision Transformers 
+
+**Title (ZH)**: DinoTwins：结合DINO和Barlow Twins的鲁棒高效视觉变换器 
+
+**Authors**: Michael Podsiadly, Brendon K Lay  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.17509)  
+
+**Abstract**: Training AI models to understand images without costly labeled data remains a challenge. We combine two techniques--DINO (teacher-student learning) and Barlow Twins (redundancy reduction)--to create a model that learns better with fewer labels and less compute. While both DINO and Barlow Twins have independently demonstrated strong performance in self-supervised learning, each comes with limitations--DINO may be sensitive to certain augmentations, and Barlow Twins often requires batch sizes too large to fit on consumer hardware. By combining the redundancy-reduction objective of Barlow Twins with the self-distillation strategy of DINO, we aim to leverage their complementary strengths. We train a hybrid model on the MS COCO dataset using only 10\% of labeled data for linear probing, and evaluate its performance against standalone DINO and Barlow Twins implementations. Preliminary results show that the combined approach achieves comparable loss and classification accuracy to DINO while maintaining strong feature representations. Attention visualizations further suggest improved semantic segmentation capability in the hybrid model. This combined method offers a scalable, label-efficient alternative for training ViTs in resource-constrained environments. 
+
+**Abstract (ZH)**: 不依赖昂贵标注数据训练AI模型以理解图像仍然是一个挑战。我们结合了两种技术——DINO（教师-学生学习）和Barlow Twins（冗余减少）——来创建一种在更少标签和更少计算资源下学习更好的模型。尽管DINO和Barlow Twins各自在无监督学习中表现出强大性能，但两者都存在局限性——DINO可能对某些增强操作敏感，而Barlow Twins通常需要批量大小过大以至于无法在消费级硬件上运行。通过将Barlow Twins的冗余减少目标与DINO的自我_distillation_策略相结合，我们旨在利用它们互补的优势。我们在MS COCO数据集上训练了一种混合模型，并仅使用10%的标注数据进行线性探针评估，将其性能与独立实现的DINO和Barlow Twins进行了比较。初步结果表明，组合方法在损失和分类准确性方面可与DINO媲美，同时保持强大的特征表示能力。注意力可视化进一步表明混合模型在语义分割方面表现出改进的能力。该结合方法为资源受限环境中训练ViTs提供了可扩展且标签高效的替代方案。 
+
+---
+# Bias Amplification in Stable Diffusion's Representation of Stigma Through Skin Tones and Their Homogeneity 
+
+**Title (ZH)**: 稳定扩散在肤色及其均一性中对污名的表征中的偏差放大 
+
+**Authors**: Kyra Wilson, Sourojit Ghosh, Aylin Caliskan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.17465)  
+
+**Abstract**: Text-to-image generators (T2Is) are liable to produce images that perpetuate social stereotypes, especially in regards to race or skin tone. We use a comprehensive set of 93 stigmatized identities to determine that three versions of Stable Diffusion (v1.5, v2.1, and XL) systematically associate stigmatized identities with certain skin tones in generated images. We find that SD XL produces skin tones that are 13.53% darker and 23.76% less red (both of which indicate higher likelihood of societal discrimination) than previous models and perpetuate societal stereotypes associating people of color with stigmatized identities. SD XL also shows approximately 30% less variability in skin tones when compared to previous models and 18.89-56.06% compared to human face datasets. Measuring variability through metrics which directly correspond to human perception suggest a similar pattern, where SD XL shows the least amount of variability in skin tones of people with stigmatized identities and depicts most (60.29%) stigmatized identities as being less diverse than non-stigmatized identities. Finally, SD shows more homogenization of skin tones of racial and ethnic identities compared to other stigmatized or non-stigmatized identities, reinforcing incorrect equivalence of biologically-determined skin tone and socially-constructed racial and ethnic identity. Because SD XL is the largest and most complex model and users prefer its generations compared to other models examined in this study, these findings have implications for the dynamics of bias amplification in T2Is, increasing representational harms and challenges generating diverse images depicting people with stigmatized identities. 
+
+**Abstract (ZH)**: 文本到图像生成器（T2Is）可能生成 perpetuate 社会刻板印象的图像，尤其是在种族或肤色方面。我们使用93种受 stigma 影响的身份来确定三个版本的 Stable Diffusion（v1.5、v2.1 和 XL）系统地将这些 stigma 身份与某些肤色联系起来。我们发现，SD XL 生成的肤色比之前模型暗 13.53%、红 23.76% 较少（这两种情况都表明社会歧视的可能性更大），从而延续了有色人种与 stigma 身份相关联的社会刻板印象。SD XL 在肤色变化方面也比之前模型大约少 30%，并比人类面部数据集少 18.89%-56.06%。通过直接与人类感知相关的指标来测量肤色变化表明，具有 stigma 身份的人的肤色变化最少，其中最典型的（60.29%）stigma 身份被描绘得比非 stigma 身份更不多样化。最后，SD 比其他 stigma 身份或非 stigma 身份更 homogenize 肤色，强化了生物决定的肤色与社会建构的种族和族裔身份之间的错误等同。由于 SD XL 是最大的和最复杂的模型，并且用户更偏好其生成结果，这些发现对于 T2Is 中偏差放大的动态、增加的表现性伤害以及生成多样化图像的挑战具有重要意义。 
+
+---
+# Condition Weaving Meets Expert Modulation: Towards Universal and Controllable Image Generation 
+
+**Title (ZH)**: 条件织造结合专家调制：通往普遍可控图像生成的道路 
+
+**Authors**: Guoqing Zhang, Xingtong Ge, Lu Shi, Xin Zhang, Muqing Xue, Wanru Xu, Yigang Cen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.17364)  
+
+**Abstract**: The image-to-image generation task aims to produce controllable images by leveraging conditional inputs and prompt instructions. However, existing methods often train separate control branches for each type of condition, leading to redundant model structures and inefficient use of computational resources. To address this, we propose a Unified image-to-image Generation (UniGen) framework that supports diverse conditional inputs while enhancing generation efficiency and expressiveness. Specifically, to tackle the widely existing parameter redundancy and computational inefficiency in controllable conditional generation architectures, we propose the Condition Modulated Expert (CoMoE) module. This module aggregates semantically similar patch features and assigns them to dedicated expert modules for visual representation and conditional modeling. By enabling independent modeling of foreground features under different conditions, CoMoE effectively mitigates feature entanglement and redundant computation in multi-condition scenarios. Furthermore, to bridge the information gap between the backbone and control branches, we propose WeaveNet, a dynamic, snake-like connection mechanism that enables effective interaction between global text-level control from the backbone and fine-grained control from conditional branches. Extensive experiments on the Subjects-200K and MultiGen-20M datasets across various conditional image generation tasks demonstrate that our method consistently achieves state-of-the-art performance, validating its advantages in both versatility and effectiveness. The code has been uploaded to this https URL. 
+
+**Abstract (ZH)**: 图像到图像生成任务旨在通过利用条件输入和提示指令产生可控的图像。然而，现有方法通常为每种类型的条件训练单独的控制分支，导致模型结构冗余和计算资源的低效利用。为此，我们提出了一种统一的图像到图像生成（UniGen）框架，该框架支持多种条件输入并提高生成效率和表现力。具体而言，为了解决可控条件生成架构中普遍存在的参数冗余和计算低效问题，我们提出了一种条件调制专家（CoMoE）模块。该模块聚合语义相似的patches特征，并将它们分配给专门的专家模块进行视觉表示和条件建模。通过在不同条件下独立建模前景特征，CoMoE有效减轻了多条件场景中的特征纠缠和冗余计算。为进一步解决主干与控制分支之间信息鸿沟的问题，我们提出了WeaveNet，一种动态、蛇形连接机制，能够有效地在主干的全局文本级控制和条件分支的精细控制之间建立交互。在各种条件图像生成任务的Subjects-200K和MultiGen-20M数据集上的广泛实验表明，我们的方法在一致性和有效性方面都取得了最先进的性能。代码已上传至https://github.com/Qwen-x/UniGen。 
+
+---
+# ResLink: A Novel Deep Learning Architecture for Brain Tumor Classification with Area Attention and Residual Connections 
+
+**Title (ZH)**: ResLink：一种基于区域注意力和残差连接的新型深度学习架构用于脑肿瘤分类 
+
+**Authors**: Sumedha Arya, Nirmal Gaud  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.17259)  
+
+**Abstract**: Brain tumors show significant health challenges due to their potential to cause critical neurological functions. Early and accurate diagnosis is crucial for effective treatment. In this research, we propose ResLink, a novel deep learning architecture for brain tumor classification using CT scan images. ResLink integrates novel area attention mechanisms with residual connections to enhance feature learning and spatial understanding for spatially rich image classification tasks. The model employs a multi-stage convolutional pipeline, incorporating dropout, regularization, and downsampling, followed by a final attention-based refinement for classification. Trained on a balanced dataset, ResLink achieves a high accuracy of 95% and demonstrates strong generalizability. This research demonstrates the potential of ResLink in improving brain tumor classification, offering a robust and efficient technique for medical imaging applications. 
+
+**Abstract (ZH)**: 基于CT扫描图像的脑肿瘤分类：ResLink新型深度学习架构在重要神经功能潜在威胁下的早期准确诊断中应用的研究 
+
+---
+# A biological vision inspired framework for machine perception of abutting grating illusory contours 
+
+**Title (ZH)**: 生物视觉启发的接触栅格错觉边缘机器感知框架 
+
+**Authors**: Xiao Zhang, Kai-Fu Yang, Xian-Shi Zhang, Hong-Zhi You, Hong-Mei Yan, Yong-Jie Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.17254)  
+
+**Abstract**: Higher levels of machine intelligence demand alignment with human perception and cognition. Deep neural networks (DNN) dominated machine intelligence have demonstrated exceptional performance across various real-world tasks. Nevertheless, recent evidence suggests that DNNs fail to perceive illusory contours like the abutting grating, a discrepancy that misaligns with human perception patterns. Departing from previous works, we propose a novel deep network called illusory contour perception network (ICPNet) inspired by the circuits of the visual cortex. In ICPNet, a multi-scale feature projection (MFP) module is designed to extract multi-scale representations. To boost the interaction between feedforward and feedback features, a feature interaction attention module (FIAM) is introduced. Moreover, drawing inspiration from the shape bias observed in human perception, an edge detection task conducted via the edge fusion module (EFM) injects shape constraints that guide the network to concentrate on the foreground. We assess our method on the existing AG-MNIST test set and the AG-Fashion-MNIST test sets constructed by this work. Comprehensive experimental results reveal that ICPNet is significantly more sensitive to abutting grating illusory contours than state-of-the-art models, with notable improvements in top-1 accuracy across various subsets. This work is expected to make a step towards human-level intelligence for DNN-based models. 
+
+**Abstract (ZH)**: 更高层次的机器智能需要与人类感知和认知相契合。受视皮层电路启发的幻觉边缘感知网络（ICPNet）在各种实际任务中表现出色的深度神经网络（DNN）近期显示出不能感知像邻接 gratings 这样的幻觉边缘，这一差异与人类感知模式不符。不同于以往的工作，我们提出了一种新的深度网络——幻觉边缘感知网络（ICPNet），以减轻这种不对齐。ICPNet 设计了一个多尺度特征投影（MFP）模块来提取多尺度表示。为了增强前向和反馈特征之间的交互，我们引入了一个特征交互注意模块（FIAM）。此外，受人类感知中观察到的形状偏见启发，通过边缘融合模块（EFM）执行边缘检测任务，该模块注入形状约束以引导网络关注前景。我们在现有的 AG-MNIST 测试集和由本文构建的 AG-Fashion-MNIST 测试集上评估了我们的方法。综合实验结果表明，ICPNet 在多种子集中，相比于最先进的模型具有显著更高的 top-1 准确率，对邻接 gratings 幻觉边缘的敏感性也明显更高。本工作有望为基于 DNN 的模型朝人类水平的智能迈出一步。 
+
+---
+# Beyond Play and Pause: Turning GPT-4o Spatial Weakness into a Strength for In-Depth Interactive Video Learning 
+
+**Title (ZH)**: 超越播放与暂停：将GPT-4o的空间劣势转化为深入互动视频学习的优势 
+
+**Authors**: Sajad Goudarzi, Samaneh Zamanifard  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.17160)  
+
+**Abstract**: Traditional video-based learning remains passive, offering limited opportunities for users to engage dynamically with content. While current AI-powered tools offer transcription and summarization, they lack real-time, region-specific interaction capabilities. This paper introduces Untwist, an AI-driven system that enables interactive video learning by allowing users to ask questions about the entire video or specific regions using a bounding box, receiving context-aware, multimodal responses. By integrating GPT APIs with Computer Vision techniques, Untwist extracts, processes, and structures video content to enhance comprehension. Our approach addresses GPT-4o spatial weakness by leveraging annotated frames instead of raw coordinate data, significantly improving accuracy in localizing and interpreting video content. This paper describes the system architecture, including video pre-processing and real-time interaction, and outlines how Untwist can transform passive video consumption into an interactive, AI-driven learning experience with the potential to enhance engagement and comprehension. 
+
+**Abstract (ZH)**: 传统基于视频的学习方式仍然被动，为用户动态参与内容的机会有限。尽管当前的AI辅助工具提供了转录和摘要功能，但它们缺乏实时的区域特定交互能力。本文介绍了一种基于AI的系统Untwist，该系统通过允许用户使用边界框提问整个视频或特定区域，从而实现互动式视频学习，获得上下文感知的多模态响应。通过将GPT API与计算机视觉技术结合，Untwist提取、处理和结构化视频内容以增强理解。我们的方法通过利用标注帧而不是原始坐标数据来克服GPT-4的空间弱点，显著提高了在定位和解释视频内容方面的准确性。本文描述了系统的架构，包括视频预处理和实时交互，并概述了Untwist如何将被动的视频消费转化为一种互动的、以AI驱动的学习体验，从而有可能增强参与度和理解度。 
+
+---
+# CE-RS-SBCIT A Novel Channel Enhanced Hybrid CNN Transformer with Residual, Spatial, and Boundary-Aware Learning for Brain Tumor MRI Analysis 
+
+**Title (ZH)**: CE-RS-SBCIT 基于残差、空间和边界aware学习的新型通道增强混合CNN变换器用于脑肿瘤MRI分析 
+
+**Authors**: Mirza Mumtaz Zahoor, Saddam Hussain Khan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.17128)  
+
+**Abstract**: Brain tumors remain among the most lethal human diseases, where early detection and accurate classification are critical for effective diagnosis and treatment planning. Although deep learning-based computer-aided diagnostic (CADx) systems have shown remarkable progress. However, conventional convolutional neural networks (CNNs) and Transformers face persistent challenges, including high computational cost, sensitivity to minor contrast variations, structural heterogeneity, and texture inconsistencies in MRI data. Therefore, a novel hybrid framework, CE-RS-SBCIT, is introduced, integrating residual and spatial learning-based CNNs with transformer-driven modules. The proposed framework exploits local fine-grained and global contextual cues through four core innovations: (i) a smoothing and boundary-based CNN-integrated Transformer (SBCIT), (ii) tailored residual and spatial learning CNNs, (iii) a channel enhancement (CE) strategy, and (iv) a novel spatial attention mechanism. The developed SBCIT employs stem convolution and contextual interaction transformer blocks with systematic smoothing and boundary operations, enabling efficient global feature modeling. Moreover, Residual and spatial CNNs, enhanced by auxiliary transfer-learned feature maps, enrich the representation space, while the CE module amplifies discriminative channels and mitigates redundancy. Furthermore, the spatial attention mechanism selectively emphasizes subtle contrast and textural variations across tumor classes. Extensive evaluation on challenging MRI datasets from Kaggle and Figshare, encompassing glioma, meningioma, pituitary tumors, and healthy controls, demonstrates superior performance, achieving 98.30% accuracy, 98.08% sensitivity, 98.25% F1-score, and 98.43% precision. 
+
+**Abstract (ZH)**: 基于脑肿瘤早期检测与准确分类的新型混合框架：CE-RS-SBCIT 
+
+---
+# Convolutional Neural Networks for Accurate Measurement of Train Speed 
+
+**Title (ZH)**: 基于卷积神经网络的列车速度准确测量 
+
+**Authors**: Haitao Tian, Argyrios Zolotas, Miguel Arana-Catania  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.17096)  
+
+**Abstract**: In this study, we explore the use of Convolutional Neural Networks for improving train speed estimation accuracy, addressing the complex challenges of modern railway systems. We investigate three CNN architectures - single-branch 2D, single-branch 1D, and multiple-branch models - and compare them with the Adaptive Kalman Filter. We analyse their performance using simulated train operation datasets with and without Wheel Slide Protection activation. Our results reveal that CNN-based approaches, especially the multiple-branch model, demonstrate superior accuracy and robustness compared to traditional methods, particularly under challenging operational conditions. These findings highlight the potential of deep learning techniques to enhance railway safety and operational efficiency by more effectively capturing intricate patterns in complex transportation datasets. 
+
+**Abstract (ZH)**: 本研究探索卷积神经网络在提高列车速度估计准确性方面的应用，以应对现代铁路系统所面临的复杂挑战。我们调查了三种CNN架构——单分支2D、单分支1D和多分支模型——并将它们与自适应卡尔曼滤波器进行比较。我们使用包含和不包含轮滑保护激活的模拟列车运行数据集来分析它们的性能。结果显示，基于CNN的方法，尤其是多分支模型，在准确性与鲁棒性方面优于传统方法，尤其是在复杂操作条件下。这些发现强调了深度学习技术在通过更有效地捕捉复杂运输数据集中的复杂模式来增强铁路安全和操作效率方面的潜力。 
+
+---
+# Proximal Vision Transformer: Enhancing Feature Representation through Two-Stage Manifold Geometry 
+
+**Title (ZH)**: proximal 视觉变换器：通过两阶段流形几何增强特征表示 
+
+**Authors**: Haoyu Yun, Hamid Krim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.17081)  
+
+**Abstract**: The Vision Transformer (ViT) architecture has become widely recognized in computer vision, leveraging its self-attention mechanism to achieve remarkable success across various tasks. Despite its strengths, ViT's optimization remains confined to modeling local relationships within individual images, limiting its ability to capture the global geometric relationships between data points. To address this limitation, this paper proposes a novel framework that integrates ViT with the proximal tools, enabling a unified geometric optimization approach to enhance feature representation and classification performance. In this framework, ViT constructs the tangent bundle of the manifold through its self-attention mechanism, where each attention head corresponds to a tangent space, offering geometric representations from diverse local perspectives. Proximal iterations are then introduced to define sections within the tangent bundle and project data from tangent spaces onto the base space, achieving global feature alignment and optimization. Experimental results confirm that the proposed method outperforms traditional ViT in terms of classification accuracy and data distribution. 
+
+**Abstract (ZH)**: 视觉变换器（ViT）架构在计算机视觉中已广受认可，通过其自注意力机制在各种任务中取得了显著成功。尽管ViT具有这些优势，但其优化仍局限于 modeling individual image 内部的局部关系，限制了其捕捉数据点之间全局几何关系的能力。为解决这一局限，本文提出了一种新型框架，将ViT与近端工具集成，以统一的几何优化方法增强特征表示和分类性能。在该框架中，ViT通过其自注意力机制构建流形的切丛，每个注意力头对应一个切空间，提供来自不同局部视角的几何表示。随后引入近端迭代来定义切丛内的截面，并将数据从切空间投影到基空间，实现全局特征对齐和优化。实验结果证实，所提出的方法在分类准确性和数据分布方面优于传统的ViT。 
+
+---
+# SSG-Dit: A Spatial Signal Guided Framework for Controllable Video Generation 
+
+**Title (ZH)**: 基于空间信号引导的可控制视频生成框架：SSG-Dit 
+
+**Authors**: Peng Hu, Yu Gu, Liang Luo, Fuji Ren  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.17062)  
+
+**Abstract**: Controllable video generation aims to synthesize video content that aligns precisely with user-provided conditions, such as text descriptions and initial images. However, a significant challenge persists in this domain: existing models often struggle to maintain strong semantic consistency, frequently generating videos that deviate from the nuanced details specified in the prompts. To address this issue, we propose SSG-DiT (Spatial Signal Guided Diffusion Transformer), a novel and efficient framework for high-fidelity controllable video generation. Our approach introduces a decoupled two-stage process. The first stage, Spatial Signal Prompting, generates a spatially aware visual prompt by leveraging the rich internal representations of a pre-trained multi-modal model. This prompt, combined with the original text, forms a joint condition that is then injected into a frozen video DiT backbone via our lightweight and parameter-efficient SSG-Adapter. This unique design, featuring a dual-branch attention mechanism, allows the model to simultaneously harness its powerful generative priors while being precisely steered by external spatial signals. Extensive experiments demonstrate that SSG-DiT achieves state-of-the-art performance, outperforming existing models on multiple key metrics in the VBench benchmark, particularly in spatial relationship control and overall consistency. 
+
+**Abstract (ZH)**: 可控视频生成旨在合成与用户提供的条件（如文本描述和初始图像）精确对齐的视频内容。然而，该领域仍面临一个重大挑战：现有模型往往难以保持较强的语义一致性，经常生成与提示中微妙细节不符的视频。为解决这一问题，我们提出了一种新颖且高效的高保真可控视频生成框架SSG-DiT（Spatial Signal Guided Diffusion Transformer）。我们的方法引入了一个解耦的两阶段过程。第一阶段，空间信号提示，通过利用预训练多模态模型的丰富内部表示生成空间意识的视觉提示。该提示与原始文本结合，形成一个联合条件，然后通过我们轻量级且参数高效的SSG-Adapter注入冻结的视频DiT主干中。这种独特设计，包含双分支注意力机制，使模型能够同时利用其强大的生成先验，并受到外部空间信号的精确引导。大量实验表明，SSG-DiT在VBench基准上的多个关键指标上实现了最先进的性能，特别是在空间关系控制和整体一致性方面优于现有模型。 
+
+---
+# An Efficient Dual-Line Decoder Network with Multi-Scale Convolutional Attention for Multi-organ Segmentation 
+
+**Title (ZH)**: 一种用于多器官分割的高效双线解码网络配多尺度卷积注意力机制 
+
+**Authors**: Riad Hassan, M. Rubaiyat Hossain Mondal, Sheikh Iqbal Ahamed, Fahad Mostafa, Md Mostafijur Rahman  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.17007)  
+
+**Abstract**: Proper segmentation of organs-at-risk is important for radiation therapy, surgical planning, and diagnostic decision-making in medical image analysis. While deep learning-based segmentation architectures have made significant progress, they often fail to balance segmentation accuracy with computational efficiency. Most of the current state-of-the-art methods either prioritize performance at the cost of high computational complexity or compromise accuracy for efficiency. This paper addresses this gap by introducing an efficient dual-line decoder segmentation network (EDLDNet). The proposed method features a noisy decoder, which learns to incorporate structured perturbation at training time for better model robustness, yet at inference time only the noise-free decoder is executed, leading to lower computational cost. Multi-Scale convolutional Attention Modules (MSCAMs), Attention Gates (AGs), and Up-Convolution Blocks (UCBs) are further utilized to optimize feature representation and boost segmentation performance. By leveraging multi-scale segmentation masks from both decoders, we also utilize a mutation-based loss function to enhance the model's generalization. Our approach outperforms SOTA segmentation architectures on four publicly available medical imaging datasets. EDLDNet achieves SOTA performance with an 84.00% Dice score on the Synapse dataset, surpassing baseline model like UNet by 13.89% in Dice score while significantly reducing Multiply-Accumulate Operations (MACs) by 89.7%. Compared to recent approaches like EMCAD, our EDLDNet not only achieves higher Dice score but also maintains comparable computational efficiency. The outstanding performance across diverse datasets establishes EDLDNet's strong generalization, computational efficiency, and robustness. The source code, pre-processed data, and pre-trained weights will be available at this https URL . 
+
+**Abstract (ZH)**: 适当的器官-at-风险分割对于放射治疗、手术规划和医学图像分析中的诊断决策至关重要。尽管基于深度学习的分割架构取得了显著进展，但它们往往难以同时平衡分割准确性与计算效率。目前大多数最先进的方法要么以高计算复杂度为代价优先考虑性能，要么牺牲准确性以提高效率。本文通过引入高效的双重解码器分割网络（EDLDNet）来解决这一问题。所提出的方法具有一个噪声解码器，该噪声解码器在训练时学习引入结构化的扰动以提高模型的鲁棒性，但在推断时仅执行无噪声解码器，从而降低了计算成本。此外，还利用多尺度卷积注意力模块（MSCAMs）、注意力门（AGs）和上采样卷积块（UCBs）来优化特征表示并提升分割性能。通过利用两个解码器的多尺度分割掩码，还利用基于突变的损失函数来增强模型的泛化能力。我们的方法在四个公开的医学成像数据集上优于当前最先进的分割架构。EDLDNet在Synapse数据集上的Dice得分为84.00%，Dice得分比Baseline模型如UNet高13.89%，同时显著减少了89.7%的乘积累加操作数（MACs）。与近期方法EMCAD相比，除了Dice得分更高外，EDLDNet还能保持相当的计算效率。跨不同数据集的出色性能验证了EDLDNet的强大泛化能力、计算效率和鲁棒性。源代码、预处理数据和预训练权重将在此处提供。 
+
+---
+# Combating Digitally Altered Images: Deepfake Detection 
+
+**Title (ZH)**: 对抗数字化篡改图像：深度伪造检测 
+
+**Authors**: Saksham Kumar, Rhythm Narang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.16975)  
+
+**Abstract**: The rise of Deepfake technology to generate hyper-realistic manipulated images and videos poses a significant challenge to the public and relevant authorities. This study presents a robust Deepfake detection based on a modified Vision Transformer(ViT) model, trained to distinguish between real and Deepfake images. The model has been trained on a subset of the OpenForensics Dataset with multiple augmentation techniques to increase robustness for diverse image manipulations. The class imbalance issues are handled by oversampling and a train-validation split of the dataset in a stratified manner. Performance is evaluated using the accuracy metric on the training and testing datasets, followed by a prediction score on a random image of people, irrespective of their realness. The model demonstrates state-of-the-art results on the test dataset to meticulously detect Deepfake images. 
+
+**Abstract (ZH)**: Deepfake技术的兴起对生成超现实 manipulated 图像和视频构成了重大挑战：一种基于修改后的视觉变换器（ViT）模型的稳健Deepfake检测方法 
+
+---
+# Gaussian Primitive Optimized Deformable Retinal Image Registration 
+
+**Title (ZH)**: 高斯原始优化可变形视网膜图像配准 
+
+**Authors**: Xin Tian, Jiazheng Wang, Yuxi Zhang, Xiang Chen, Renjiu Hu, Gaolei Li, Min Liu, Hang Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.16852)  
+
+**Abstract**: Deformable retinal image registration is notoriously difficult due to large homogeneous regions and sparse but critical vascular features, which cause limited gradient signals in standard learning-based frameworks. In this paper, we introduce Gaussian Primitive Optimization (GPO), a novel iterative framework that performs structured message passing to overcome these challenges. After an initial coarse alignment, we extract keypoints at salient anatomical structures (e.g., major vessels) to serve as a minimal set of descriptor-based control nodes (DCN). Each node is modelled as a Gaussian primitive with trainable position, displacement, and radius, thus adapting its spatial influence to local deformation scales. A K-Nearest Neighbors (KNN) Gaussian interpolation then blends and propagates displacement signals from these information-rich nodes to construct a globally coherent displacement field; focusing interpolation on the top (K) neighbors reduces computational overhead while preserving local detail. By strategically anchoring nodes in high-gradient regions, GPO ensures robust gradient flow, mitigating vanishing gradient signal in textureless areas. The framework is optimized end-to-end via a multi-term loss that enforces both keypoint consistency and intensity alignment. Experiments on the FIRE dataset show that GPO reduces the target registration error from 6.2\,px to ~2.4\,px and increases the AUC at 25\,px from 0.770 to 0.938, substantially outperforming existing methods. The source code can be accessed via this https URL. 
+
+**Abstract (ZH)**: 可变形视网膜图像配准由于存在大面积均匀区域和稀疏但关键的血管特征，导致在标准基于学习的框架中信号梯度有限，极具挑战性。本文引入了高斯原语优化（GPO），这是一种新颖的迭代框架，通过结构化的消息传递来克服这些挑战。在初步粗略对齐后，我们提取关键解剖结构（如主要血管）的特征点，作为基于描述子的控制节点（DCN）的最小节点集。每个节点被建模为一个可训练位置、位移和半径的高斯原语，从而使其空间影响适应局部变形尺度。通过K最近邻（KNN）高斯插值，这些信息丰富的节点的位移信号被融合和传播，构建全局一致的位移场；将插值集中在前（K）个邻居上，可以减少计算开销同时保留局部细节。通过在高梯度区域战略性地锚定节点，GPO确保了稳健的梯度流动，减轻了无纹理区域中的梯度消失信号。该框架通过多项损失函数进行端到端优化，以同时确保关键点一致性和强度对齐。在FIRE数据集上的实验表明，GPO将目标配准误差从6.2像素降低到约2.4像素，并且在25像素时的AUC从0.770提高到0.938，显著优于现有方法。源代码可通过以下链接访问：https://。 
+
+---
+# Improving Performance, Robustness, and Fairness of Radiographic AI Models with Finely-Controllable Synthetic Data 
+
+**Title (ZH)**: 基于细粒度可控的合成数据提高放射影像AI模型的性能、稳健性和公平性 
+
+**Authors**: Stefania L. Moroianu, Christian Bluethgen, Pierre Chambon, Mehdi Cherti, Jean-Benoit Delbrouck, Magdalini Paschali, Brandon Price, Judy Gichoya, Jenia Jitsev, Curtis P. Langlotz, Akshay S. Chaudhari  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.16783)  
+
+**Abstract**: Achieving robust performance and fairness across diverse patient populations remains a challenge in developing clinically deployable deep learning models for diagnostic imaging. Synthetic data generation has emerged as a promising strategy to address limitations in dataset scale and diversity. We introduce RoentGen-v2, a text-to-image diffusion model for chest radiographs that enables fine-grained control over both radiographic findings and patient demographic attributes, including sex, age, and race/ethnicity. RoentGen-v2 is the first model to generate clinically plausible images with demographic conditioning, facilitating the creation of a large, demographically balanced synthetic dataset comprising over 565,000 images. We use this large synthetic dataset to evaluate optimal training pipelines for downstream disease classification models. In contrast to prior work that combines real and synthetic data naively, we propose an improved training strategy that leverages synthetic data for supervised pretraining, followed by fine-tuning on real data. Through extensive evaluation on over 137,000 chest radiographs from five institutions, we demonstrate that synthetic pretraining consistently improves model performance, generalization to out-of-distribution settings, and fairness across demographic subgroups. Across datasets, synthetic pretraining led to a 6.5% accuracy increase in the performance of downstream classification models, compared to a modest 2.7% increase when naively combining real and synthetic data. We observe this performance improvement simultaneously with the reduction of the underdiagnosis fairness gap by 19.3%. These results highlight the potential of synthetic imaging to advance equitable and generalizable medical deep learning under real-world data constraints. We open source our code, trained models, and synthetic dataset at this https URL . 
+
+**Abstract (ZH)**: 在开发适用于临床诊断成像的深度学习模型时，实现跨多样化患者群体的稳健性能和公平性仍具挑战性。合成数据生成已成为解决数据集规模和多样性限制的一种有前景的策略。我们介绍了RoentGen-v2，这是一种用于胸部X光片的文本到图像扩散模型，该模型可对影像发现和患者人口统计学属性（包括性别、年龄和种族/族裔）进行精细控制。RoentGen-v2 是首款具备人口统计学调整能力以生成临床合理图像的模型，促进了包含超过565,000张图像的大规模、人口统计学平衡的合成数据集的创建。我们使用此大规模合成数据集来评估下游疾病分类模型的最佳训练管线。与直接将真实和合成数据组合的做法不同，我们提出了一种改进的训练策略，该策略利用合成数据进行监督预训练，然后在真实数据上进行微调。通过在五个机构的超过137,000张胸部X光片上进行广泛评估，我们证明了合成数据预训练可以一致地提高模型性能、泛化至分布外环境的能力以及不同人口子组的公平性。与直接结合真实和合成数据相比，合成数据预训练在各个数据集中导致下游分类模型性能提高6.5%，而后者仅提高了2.7%。我们同时观察到，在预训练过程中公平性差距（特别是在诊断不足方面）减少了19.3%。这些结果强调了在实际数据限制条件下，合成影像如何促进公平和泛化医疗深度学习的发展潜力。我们在此处提供我们的代码、训练模型和合成数据集。 
+
+---
+# COVID19 Prediction Based On CT Scans Of Lungs Using DenseNet Architecture 
+
+**Title (ZH)**: 基于肺部CT扫描的COVID-19预测：采用DenseNet架构 
+
+**Authors**: Deborup Sanyal  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.16670)  
+
+**Abstract**: COVID19 took the world by storm since December 2019. A highly infectious communicable disease, COVID19 is caused by the SARSCoV2 virus. By March 2020, the World Health Organization (WHO) declared COVID19 as a global pandemic. A pandemic in the 21st century after almost 100 years was something the world was not prepared for, which resulted in the deaths of around 1.6 million people worldwide. The most common symptoms of COVID19 were associated with the respiratory system and resembled a cold, flu, or pneumonia. After extensive research, doctors and scientists concluded that the main reason for lives being lost due to COVID19 was failure of the respiratory system. Patients were dying gasping for breath. Top healthcare systems of the world were failing badly as there was an acute shortage of hospital beds, oxygen cylinders, and ventilators. Many were dying without receiving any treatment at all. The aim of this project is to help doctors decide the severity of COVID19 by reading the patient's Computed Tomography (CT) scans of the lungs. Computer models are less prone to human error, and Machine Learning or Neural Network models tend to give better accuracy as training improves over time. We have decided to use a Convolutional Neural Network model. Given that a patient tests positive, our model will analyze the severity of COVID19 infection within one month of the positive test result. The severity of the infection may be promising or unfavorable (if it leads to intubation or death), based entirely on the CT scans in the dataset. 
+
+**Abstract (ZH)**: COVID-19自2019年12月席卷世界。COVID-19是由SARS-CoV-2病毒引起的一种高度传染性疾病。到2020年3月，世界卫生组织宣布COVID-19成为全球大流行病。这是自21世纪初近100年来首次出现的全球大流行病，导致全球约160万人死亡。COVID-19最常见的症状与呼吸系统有关，类似于普通感冒、流感或肺炎。通过广泛的研究，医生和科学家得出结论，由于COVID-19导致的死亡主要原因在于呼吸系统的失败。患者主要是因为缺氧而气喘吁吁。全球顶尖的医疗系统面临着严重的困境，因为医院床位、氧气罐和呼吸机极度短缺。许多人甚至没有接受任何治疗就死亡了。本项目旨在通过分析患者的肺部计算机断层扫描（CT）来帮助医生判断COVID-19的严重程度。计算机模型较少出现人为错误，而机器学习或神经网络模型随着时间的推移训练会提升准确性。我们决定使用卷积神经网络模型。给定患者测试呈阳性，我们的模型将在阳性检测结果一个月内分析COVID-19感染的严重程度。感染的严重程度可能是有希望的或不利的（如果导致气管插管或死亡），完全取决于数据集中的CT扫描结果。 
+
+---
+# The Loupe: A Plug-and-Play Attention Module for Amplifying Discriminative Features in Vision Transformers 
+
+**Title (ZH)**: The Loupe: 一种用于放大视觉变换器中鉴别性特征的即插即用注意力模块 
+
+**Authors**: Naren Sengodan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.16663)  
+
+**Abstract**: Fine-Grained Visual Classification (FGVC) is a critical and challenging area within computer vision, demanding the identification of highly subtle, localized visual cues. The importance of FGVC extends to critical applications such as biodiversity monitoring and medical diagnostics, where precision is paramount. While large-scale Vision Transformers have achieved state-of-the-art performance, their decision-making processes often lack the interpretability required for trust and verification in such domains. In this paper, we introduce The Loupe, a novel, lightweight, and plug-and-play attention module designed to be inserted into pre-trained backbones like the Swin Transformer. The Loupe is trained end-to-end with a composite loss function that implicitly guides the model to focus on the most discriminative object parts without requiring explicit part-level annotations. Our unique contribution lies in demonstrating that a simple, intrinsic attention mechanism can act as a powerful regularizer, significantly boosting performance while simultaneously providing clear visual explanations. Our experimental evaluation on the challenging CUB-200-2011 dataset shows that The Loupe improves the accuracy of a Swin-Base model from 85.40% to 88.06%, a significant gain of 2.66%. Crucially, our qualitative analysis of the learned attention maps reveals that The Loupe effectively localizes semantically meaningful features, providing a valuable tool for understanding and trusting the model's decision-making process. 
+
+**Abstract (ZH)**: 细粒度视觉分类（FGVC）是计算机视觉中的一个关键且具有挑战性的领域，要求识别高度微妙且局部化的视觉线索。细粒度视觉分类在生物多样性监测和医疗诊断等关键应用中具有重要意义，其中精确性至关重要。虽然大规模的视觉变换器已经实现了最先进的性能，但其决策过程往往缺乏在这些领域中所需的信任和验证的可解释性。在本文中，我们引入了《观琴》，这是一种新颖的、轻量级且即插即用的注意模块，旨在插入如Swin Transformer等预训练骨干网络中。《观琴》通过复合损失函数进行端到端训练，隐式地指导模型专注于最具判别性的对象部分，而不需要显式的部分级注释。我们的独特贡献在于展示了简单的内在注意机制作为一个强大的正则化器的作用，显著提升了性能同时提供了清晰的可视化解释。我们在具有挑战性的CUB-200-2011数据集上的实验评价显示，《观琴》将Swin-Base模型的准确性从85.40%提升到88.06%，显著提高了2.66%。至关重要的是，我们对学习到的注意图的定性分析表明，《观琴》有效地定位了语义上有意义的特征，提供了一个理解并信任模型决策过程的宝贵工具。 
+
+---
+# Optimizing Hyper parameters in CNN for Soil Classification using PSO and Whale Optimization Algorithm 
+
+**Title (ZH)**: 使用粒子群优化和鲸鱼优化算法在CNN中优化土壤分类的超参数 
+
+**Authors**: Yasir Nooruldeen Ibrahim, Fawziya Mahmood Ramo, Mahmood Siddeeq Qadir, Muna Jaffer Al-Shamdeen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.16660)  
+
+**Abstract**: Classifying soil images contributes to better land management, increased agricultural output, and practical solutions for environmental issues. The development of various disciplines, particularly agriculture, civil engineering, and natural resource management, is aided by understanding of soil quality since it helps with risk reduction, performance improvement, and sound decision-making . Artificial intelligence has recently been used in a number of different fields. In this study, an intelligent model was constructed using Convolutional Neural Networks to classify soil kinds, and machine learning algorithms were used to enhance the performance of soil classification . To achieve better implementation and performance of the Convolutional Neural Networks algorithm and obtain valuable results for the process of classifying soil type images, swarm algorithms were employed to obtain the best performance by choosing Hyper parameters for the Convolutional Neural Networks network using the Whale optimization algorithm and the Particle swarm optimization algorithm, and comparing the results of using the two algorithms in the process of multiple classification of soil types. The Accuracy and F1 measures were adopted to test the system, and the results of the proposed work were efficient result 
+
+**Abstract (ZH)**: 土壤图像分类有助于改善土地管理、提高农业生产率，并为环境问题提供实际解决方案。通过对土壤质量的理解促进各学科的发展，尤其是农业、土木工程和自然资源管理，有助于风险降低、性能提升和科学决策。人工智能最近在多个领域得到了应用。在本研究中，利用卷积神经网络构建了一个智能模型以分类土壤类型，并使用机器学习算法提高土壤分类性能。为了更好地实施卷积神经网络算法并获得土壤类型图像分类过程中的宝贵结果，使用鲸鱼优化算法和粒子群优化算法选择卷积神经网络的超参数以获取最佳性能，并比较两种算法在土壤类型多分类过程中的表现。采用准确率和F1度量测试系统，研究成果是有效的。 
+
+---
+# Predicting User Grasp Intentions in Virtual Reality 
+
+**Title (ZH)**: 预测虚拟现实中的用户抓取意图 
+
+**Authors**: Linghao Zeng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.16582)  
+
+**Abstract**: Predicting user intentions in virtual reality (VR) is crucial for creating immersive experiences, particularly in tasks involving complex grasping motions where accurate haptic feedback is essential. In this work, we leverage time-series data from hand movements to evaluate both classification and regression approaches across 810 trials with varied object types, sizes, and manipulations. Our findings reveal that classification models struggle to generalize across users, leading to inconsistent performance. In contrast, regression-based approaches, particularly those using Long Short Term Memory (LSTM) networks, demonstrate more robust performance, with timing errors within 0.25 seconds and distance errors around 5-20 cm in the critical two-second window before a grasp. Despite these improvements, predicting precise hand postures remains challenging. Through a comprehensive analysis of user variability and model interpretability, we explore why certain models fail and how regression models better accommodate the dynamic and complex nature of user behavior in VR. Our results underscore the potential of machine learning models to enhance VR interactions, particularly through adaptive haptic feedback, and lay the groundwork for future advancements in real-time prediction of user actions in VR. 
+
+**Abstract (ZH)**: 预测虚拟现实（VR）中的用户意图对于创造沉浸式体验至关重要，特别是在涉及复杂抓取动作的任务中，准确的触觉反馈尤为重要。本研究利用手部运动的时间序列数据，在810次涉及不同物体类型、大小和操控方式的试验中评估了分类和回归方法。研究发现，分类模型难以泛化到不同用户身上，导致性能不一致。相比之下，基于长短期记忆（LSTM）网络的回归方法则显示出更 robust 的性能，在抓取前的两秒关键窗口内，时间误差在0.25秒以内，距离误差在5-20厘米左右。尽管有这些改进，预测精确的手部姿态仍然具有挑战性。通过全面分析用户变异性与模型可解释性，我们探索了为何某些模型会失败，以及回归模型如何更好地适应VR中用户行为的动态和复杂性。研究结果突显了机器学习模型在增强VR交互方面，特别是在适应性触觉反馈方面的潜力，并为未来在VR中实时预测用户行动的进展奠定了基础。 
+
+---
