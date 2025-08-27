@@ -1,0 +1,65 @@
+# AgriChrono: A Multi-modal Dataset Capturing Crop Growth and Lighting Variability with a Field Robot 
+
+**Title (ZH)**: 农时 Chrono: 一种基于田间机器人的多模式数据集，捕捉作物生长和光照变化 
+
+**Authors**: Jaehwan Jeong, Tuan-Anh Vu, Mohammad Jony, Shahab Ahmad, Md. Mukhlesur Rahman, Sangpil Kim, M. Khalid Jawed  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.18694)  
+
+**Abstract**: Existing datasets for precision agriculture have primarily been collected in static or controlled environments such as indoor labs or greenhouses, often with limited sensor diversity and restricted temporal span. These conditions fail to reflect the dynamic nature of real farmland, including illumination changes, crop growth variation, and natural disturbances. As a result, models trained on such data often lack robustness and generalization when applied to real-world field scenarios. In this paper, we present AgriChrono, a novel robotic data collection platform and multi-modal dataset designed to capture the dynamic conditions of real-world agricultural environments. Our platform integrates multiple sensors and enables remote, time-synchronized acquisition of RGB, Depth, LiDAR, and IMU data, supporting efficient and repeatable long-term data collection across varying illumination and crop growth stages. We benchmark a range of state-of-the-art 3D reconstruction models on the AgriChrono dataset, highlighting the difficulty of reconstruction in real-world field environments and demonstrating its value as a research asset for advancing model generalization under dynamic conditions. The code and dataset are publicly available at: this https URL 
+
+**Abstract (ZH)**: 现有的农业数据集主要在静态或受控环境中收集，如室内实验室或温室，传感器多样性有限且时间跨度受限。这些条件未能反映实际农田的动态特性，包括光照变化、作物生长变异和自然干扰。因此，基于此类数据训练的模型在应用于实际田间场景时往往缺乏鲁棒性和泛化能力。本文介绍了一个新颖的农业数据采集平台AgriChrono及其多模态数据集，旨在捕捉实际农田环境的动态条件。该平台集成多种传感器，支持远程、同步采集RGB、深度、激光雷达和IMU数据，适用于在不同光照和作物生长阶段进行高效且可重复的长期数据采集。我们在AgriChrono数据集上对标了一系列最先进的三维重建模型，揭示了在实际田间环境进行重建的挑战，并展示了其作为研究资源的价值，特别是在动态条件下的模型泛化能力提升。相关代码和数据集公开获取于: this https URL。 
+
+---
+# Improving Noise Robust Audio-Visual Speech Recognition via Router-Gated Cross-Modal Feature Fusion 
+
+**Title (ZH)**: 通过路由门控跨模态特征融合提升噪声鲁棒音频-视觉语音识别 
+
+**Authors**: DongHoon Lim, YoungChae Kim, Dong-Hyun Kim, Da-Hee Yang, Joon-Hyuk Chang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.18734)  
+
+**Abstract**: Robust audio-visual speech recognition (AVSR) in noisy environments remains challenging, as existing systems struggle to estimate audio reliability and dynamically adjust modality reliance. We propose router-gated cross-modal feature fusion, a novel AVSR framework that adaptively reweights audio and visual features based on token-level acoustic corruption scores. Using an audio-visual feature fusion-based router, our method down-weights unreliable audio tokens and reinforces visual cues through gated cross-attention in each decoder layer. This enables the model to pivot toward the visual modality when audio quality deteriorates. Experiments on LRS3 demonstrate that our approach achieves an 16.51-42.67% relative reduction in word error rate compared to AV-HuBERT. Ablation studies confirm that both the router and gating mechanism contribute to improved robustness under real-world acoustic noise. 
+
+**Abstract (ZH)**: 鲁棒的噪声环境下的音频-视觉语音识别（AVSR）仍然具有挑战性，因为现有系统难以估计音频可靠性并动态调整模态依赖性。我们提出了一种新型的AVSR框架——路由器门控跨模态特征融合，该框架基于令牌级声学污染评分自适应重新加权音频和视觉特征。通过基于音频-视觉特征融合的路由器，我们的方法在每个解码器层中通过门控跨注意力机制降低不可靠的音频令牌并增强视觉提示。这使模型能够在音频质量下降时转向视觉模态。实验表明，与AV-HuBERT相比，我们的方法在LRS3数据集上的词错误率相对降低了16.51%至42.67%。消融研究证实，路由器和门控机制均有助于提高在实际声学噪声环境下的鲁棒性。 
+
+---
+# Tailored Teaching with Balanced Difficulty: Elevating Reasoning in Multimodal Chain-of-Thought via Prompt Curriculum 
+
+**Title (ZH)**: 定制化教学与平衡难度：通过提示课程提升多模态链式推理能力 
+
+**Authors**: Xinglong Yang, Quan Feng, Zhongying Pan, Xiang Chen, Yu Tian, Wentong Li, Shuofei Qiao, Yuxia Geng, Xingyu Zhao, Sheng-Jun Huang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.18673)  
+
+**Abstract**: The effectiveness of Multimodal Chain-of-Thought (MCoT) prompting is often limited by the use of randomly or manually selected examples. These examples fail to account for both model-specific knowledge distributions and the intrinsic complexity of the tasks, resulting in suboptimal and unstable model performance. To address this, we propose a novel framework inspired by the pedagogical principle of "tailored teaching with balanced difficulty". We reframe prompt selection as a prompt curriculum design problem: constructing a well ordered set of training examples that align with the model's current capabilities. Our approach integrates two complementary signals: (1) model-perceived difficulty, quantified through prediction disagreement in an active learning setup, capturing what the model itself finds challenging; and (2) intrinsic sample complexity, which measures the inherent difficulty of each question-image pair independently of any model. By jointly analyzing these signals, we develop a difficulty-balanced sampling strategy that ensures the selected prompt examples are diverse across both dimensions. Extensive experiments conducted on five challenging benchmarks and multiple popular Multimodal Large Language Models (MLLMs) demonstrate that our method yields substantial and consistent improvements and greatly reduces performance discrepancies caused by random sampling, providing a principled and robust approach for enhancing multimodal reasoning. 
+
+**Abstract (ZH)**: 基于“因材施教，难度均衡”原则的多模态链式思维提示框架 
+
+---
+# The Sound of Risk: A Multimodal Physics-Informed Acoustic Model for Forecasting Market Volatility and Enhancing Market Interpretability 
+
+**Title (ZH)**: 风险之声：一种多模态物理知情声学模型，用于预测市场波动性和增强市场可解释性 
+
+**Authors**: Xiaoliang Chen, Xin Yu, Le Chang, Teng Jing, Jiashuai He, Ze Wang, Yangjun Luo, Xingyu Chen, Jiayue Liang, Yuchen Wang, Jiaying Xie  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.18653)  
+
+**Abstract**: Information asymmetry in financial markets, often amplified by strategically crafted corporate narratives, undermines the effectiveness of conventional textual analysis. We propose a novel multimodal framework for financial risk assessment that integrates textual sentiment with paralinguistic cues derived from executive vocal tract dynamics in earnings calls. Central to this framework is the Physics-Informed Acoustic Model (PIAM), which applies nonlinear acoustics to robustly extract emotional signatures from raw teleconference sound subject to distortions such as signal clipping. Both acoustic and textual emotional states are projected onto an interpretable three-dimensional Affective State Label (ASL) space-Tension, Stability, and Arousal. Using a dataset of 1,795 earnings calls (approximately 1,800 hours), we construct features capturing dynamic shifts in executive affect between scripted presentation and spontaneous Q&A exchanges. Our key finding reveals a pronounced divergence in predictive capacity: while multimodal features do not forecast directional stock returns, they explain up to 43.8% of the out-of-sample variance in 30-day realized volatility. Importantly, volatility predictions are strongly driven by emotional dynamics during executive transitions from scripted to spontaneous speech, particularly reduced textual stability and heightened acoustic instability from CFOs, and significant arousal variability from CEOs. An ablation study confirms that our multimodal approach substantially outperforms a financials-only baseline, underscoring the complementary contributions of acoustic and textual modalities. By decoding latent markers of uncertainty from verifiable biometric signals, our methodology provides investors and regulators a powerful tool for enhancing market interpretability and identifying hidden corporate uncertainty. 
+
+**Abstract (ZH)**: 金融市场中的信息不对称，往往被精心构建的企业叙事放大，削弱了传统文本分析的有效性。我们提出了一种新颖的多模态框架，用于财务风险评估，该框架将文本情感与来自财报电话会议高管发音 tract 动态提取的副语言线索相结合。该框架的核心是物理启发声学模型（PIAM），该模型运用非线性声学从受信号削峰等失真影响的原始电话会议声音中稳健地提取情感特征。声学和文本情感状态均投影到可解释的三维情感状态标签（ASL）空间-Tension、Stability和Arousal。通过包含1,795场财报电话会议（约1,800小时）的数据集，我们构建了捕捉高管在剧本展示和即兴问答之间情感动态变化特征的指标。我们的主要发现揭示了预测能力上的显著差异：虽然多模态特征不能预测股票方向性回报，但它们可以解释多达43.8%的30天实际波动率的样本外方差。重要的是，波动率预测主要由高管从剧本到即兴讲话时的情感动态驱动，尤其是 CFO 的声学不稳定性增强、文本稳定性降低，以及 CEO 的显著唤醒变化。消融研究表明，我们的多模态方法明显优于仅基于财务数据的基线方法，突显了声学和文本模态的互补贡献。通过解读可验证生物信号中的隐含不确定性标记，我们的方法为投资者和监管机构提供了增强市场可解释性和识别隐藏企业不确定性的重要工具。 
+
+---
+# Structures Meet Semantics: Multimodal Fusion via Graph Contrastive Learning 
+
+**Title (ZH)**: 结构蕴含 semantics：基于图对比学习的多模态融合 
+
+**Authors**: Jiangfeng Sun, Sihao He, Zhonghong Ou, Meina Song  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.18322)  
+
+**Abstract**: Multimodal sentiment analysis (MSA) aims to infer emotional states by effectively integrating textual, acoustic, and visual modalities. Despite notable progress, existing multimodal fusion methods often neglect modality-specific structural dependencies and semantic misalignment, limiting their quality, interpretability, and robustness. To address these challenges, we propose a novel framework called the Structural-Semantic Unifier (SSU), which systematically integrates modality-specific structural information and cross-modal semantic grounding for enhanced multimodal representations. Specifically, SSU dynamically constructs modality-specific graphs by leveraging linguistic syntax for text and a lightweight, text-guided attention mechanism for acoustic and visual modalities, thus capturing detailed intra-modal relationships and semantic interactions. We further introduce a semantic anchor, derived from global textual semantics, that serves as a cross-modal alignment hub, effectively harmonizing heterogeneous semantic spaces across modalities. Additionally, we develop a multiview contrastive learning objective that promotes discriminability, semantic consistency, and structural coherence across intra- and inter-modal views. Extensive evaluations on two widely used benchmark datasets, CMU-MOSI and CMU-MOSEI, demonstrate that SSU consistently achieves state-of-the-art performance while significantly reducing computational overhead compared to prior methods. Comprehensive qualitative analyses further validate SSU's interpretability and its ability to capture nuanced emotional patterns through semantically grounded interactions. 
+
+**Abstract (ZH)**: 多模态情感分析（MSA）旨在通过有效融合文本、声学和视觉模态来推断情感状态。为了解决现有方法中存在的模态特定结构依赖关系和语义错位忽略问题，我们提出了一种名为结构性语义统一器（SSU）的新型框架，该框架系统地整合了模态特定的结构信息和跨模态语义 grounding，以增强多模态表示。具体而言，SSU 利用语言语法为文本模态动态构建模态特定的图形，并利用轻量级的文本引导注意力机制为声学和视觉模态构建图形，从而捕捉详细的模内关系和语义交互。此外，我们引入了一个源自全局文本语义的语义锚点，作为跨模态对齐枢纽，有效地协调不同模态的异构语义空间。我们还开发了一种多视角对比学习目标，以促进跨模内和模间视角的可区分性、语义一致性和结构一致性。在两个广泛使用的基准数据集 CMU-MOSI 和 CMU-MOSEI 上的广泛评估表明，SSU 一致地实现了最先进的性能，并且与先前方法相比显著降低了计算开销。全面的定性分析进一步验证了 SSU 的可解释性及其通过语义导向的交互捕捉细微情感模式的能力。 
+
+---

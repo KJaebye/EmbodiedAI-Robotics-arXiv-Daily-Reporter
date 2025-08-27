@@ -1,0 +1,130 @@
+# AutoRing: Imitation Learning--based Autonomous Intraocular Foreign Body Removal Manipulation with Eye Surgical Robot 
+
+**Title (ZH)**: AutoRing: 基于 imitation learning 的自主眼球内foreign body移除操作的眼科手术机器人 
+
+**Authors**: Yue Wang, Wenjie Deng, Haotian Xue, Di Cui, Yiqi Chen, Mingchuan Zhou, Haochao Ying, Jian Wu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.19191)  
+
+**Abstract**: Intraocular foreign body removal demands millimeter-level precision in confined intraocular spaces, yet existing robotic systems predominantly rely on manual teleoperation with steep learning curves. To address the challenges of autonomous manipulation (particularly kinematic uncertainties from variable motion scaling and variation of the Remote Center of Motion (RCM) point), we propose AutoRing, an imitation learning framework for autonomous intraocular foreign body ring manipulation. Our approach integrates dynamic RCM calibration to resolve coordinate-system inconsistencies caused by intraocular instrument variation and introduces the RCM-ACT architecture, which combines action-chunking transformers with real-time kinematic realignment. Trained solely on stereo visual data and instrument kinematics from expert demonstrations in a biomimetic eye model, AutoRing successfully completes ring grasping and positioning tasks without explicit depth sensing. Experimental validation demonstrates end-to-end autonomy under uncalibrated microscopy conditions. The results provide a viable framework for developing intelligent eye-surgical systems capable of complex intraocular procedures. 
+
+**Abstract (ZH)**: 基于模仿学习的自主眼内异物环 manip 框架 
+
+---
+# Real-Time Model Checking for Closed-Loop Robot Reactive Planning 
+
+**Title (ZH)**: 闭环机器人即时反应规划的实时模型检查 
+
+**Authors**: Christopher Chandler, Bernd Porr, Giulia Lafratta, Alice Miller  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.19186)  
+
+**Abstract**: We present a new application of model checking which achieves real-time multi-step planning and obstacle avoidance on a real autonomous robot. We have developed a small, purpose-built model checking algorithm which generates plans in situ based on "core" knowledge and attention as found in biological agents. This is achieved in real-time using no pre-computed data on a low-powered device. Our approach is based on chaining temporary control systems which are spawned to counteract disturbances in the local environment that disrupt an autonomous agent from its preferred action (or resting state). A novel discretization of 2D LiDAR data sensitive to bounded variations in the local environment is used. Multi-step planning using model checking by forward depth-first search is applied to cul-de-sac and playground scenarios. Both empirical results and informal proofs of two fundamental properties of our approach demonstrate that model checking can be used to create efficient multi-step plans for local obstacle avoidance, improving on the performance of a reactive agent which can only plan one step. Our approach is an instructional case study for the development of safe, reliable and explainable planning in the context of autonomous vehicles. 
+
+**Abstract (ZH)**: 我们提出了一种模型检查的新应用，实现了真实环境中自主机器人的一体化多步规划和避障。我们开发了一种小型且专用的模型检查算法，该算法基于生物实体所具备的核心知识和注意力，在现场生成规划。该算法在低功耗设备上实时运行，无需预先计算的数据。我们的方法基于链式临时控制系统的组合，这些系统用于对抗扰乱自主实体首选行为（或静止状态）的局部环境干扰。我们使用了对局部环境有限变化敏感的2D LiDAR数据的新颖离散化方法。通过向前深度优先搜索的模型检查方法，应用于死胡同和游乐场场景的多步规划。我们方法的实证结果和非形式证明显示，模型检查可用于创建高效的局部障碍避让多步规划，改进仅能规划一步的反应式代理的性能。我们的方法是关于自动驾驶车辆中安全、可靠和可解释规划发展的教学案例研究。 
+
+---
+# Uncertainty-Resilient Active Intention Recognition for Robotic Assistants 
+
+**Title (ZH)**: 具有抗不确定性的主动意图识别技术在机器人助手中的应用 
+
+**Authors**: Juan Carlos Saborío, Marc Vinci, Oscar Lima, Sebastian Stock, Lennart Niecksch, Martin Günther, Alexander Sung, Joachim Hertzberg, Martin Atzmüller  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.19150)  
+
+**Abstract**: Purposeful behavior in robotic assistants requires the integration of multiple components and technological advances. Often, the problem is reduced to recognizing explicit prompts, which limits autonomy, or is oversimplified through assumptions such as near-perfect information. We argue that a critical gap remains unaddressed -- specifically, the challenge of reasoning about the uncertain outcomes and perception errors inherent to human intention recognition. In response, we present a framework designed to be resilient to uncertainty and sensor noise, integrating real-time sensor data with a combination of planners. Centered around an intention-recognition POMDP, our approach addresses cooperative planning and acting under uncertainty. Our integrated framework has been successfully tested on a physical robot with promising results. 
+
+**Abstract (ZH)**: 具有目的性的机器人助手行为需要多个组件和技术的进步集成。通常，问题被简化为识别显式提示，这限制了自主性，或者通过近乎完美的信息假设来简化。我们认为，仍然存在一个关键的未解决问题，即人类意图识别中固有的不确定性结果和感知错误的推理挑战。为此，我们提出了一种框架，该框架能够抵抗不确定性并整合传感器噪声，将实时传感器数据与多种规划者相结合。围绕意图识别部分可观测马尔可夫决策过程（POMDP），我们的方法解决了在不确定性下的协同规划和执行问题。我们集成的框架在物理机器人上进行了成功的测试，取得了令人鼓舞的结果。 
+
+---
+# Enhanced UAV Path Planning Using the Tangent Intersection Guidance (TIG) Algorithm 
+
+**Title (ZH)**: 使用切线交点引导（TIG）算法增强的无人机路径规划 
+
+**Authors**: Hichem Cheriet, Khellat Kihel Badra, Chouraqui Samira  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.18967)  
+
+**Abstract**: Efficient and safe navigation of Unmanned Aerial Vehicles (UAVs) is critical for various applications, including combat support, package delivery and Search and Rescue Operations. This paper introduces the Tangent Intersection Guidance (TIG) algorithm, an advanced approach for UAV path planning in both static and dynamic environments. The algorithm uses the elliptic tangent intersection method to generate feasible paths. It generates two sub-paths for each threat, selects the optimal route based on a heuristic rule, and iteratively refines the path until the target is reached. Considering the UAV kinematic and dynamic constraints, a modified smoothing technique based on quadratic Bézier curves is adopted to generate a smooth and efficient route. Experimental results show that the TIG algorithm can generate the shortest path in less time, starting from 0.01 seconds, with fewer turning angles compared to A*, PRM, RRT*, Tangent Graph, and Static APPATT algorithms in static environments. Furthermore, in completely unknown and partially known environments, TIG demonstrates efficient real-time path planning capabilities for collision avoidance, outperforming APF and Dynamic APPATT algorithms. 
+
+**Abstract (ZH)**: 无人驾驶航空器（UAV）的高效和安全导航对于多种应用至关重要，包括战斗支持、包裹递送和搜救作业。本文介绍了切线交点引导（TIG）算法，这是一种适用于静态和动态环境的UAV路径规划的先进方法。该算法采用椭圆切线交点法生成可行路径，为每个威胁生成两条子路径，基于启发式规则选择最优路径，并迭代细化路径直至目标点。考虑到UAV运动和动力学约束，采用基于二次Bézier曲线的修改平滑技术生成平滑高效的路径。实验结果显示，TIG算法能够在更短的时间内生成更短路径，从0.01秒开始，并且与A*、PRM、RRT*、切线图和静态APPATT算法相比，转弯角度更少。此外，在完全未知和部分未知环境中，TIG展现了高效的实时路径规划能力，用于碰撞避免，优于APF和动态APPATT算法。 
+
+---
+# VisionSafeEnhanced VPC: Cautious Predictive Control with Visibility Constraints under Uncertainty for Autonomous Robotic Surgery 
+
+**Title (ZH)**: VisionSafe增强型VPC：在不确定性条件下具有可见性约束的谨慎预测控制在自主机器人手术中的应用 
+
+**Authors**: Wang Jiayin, Wei Yanran, Jiang Lei, Guo Xiaoyu, Zheng Ayong, Zhao Weidong, Li Zhongkui  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.18937)  
+
+**Abstract**: Autonomous control of the laparoscope in robot-assisted Minimally Invasive Surgery (MIS) has received considerable research interest due to its potential to improve surgical safety. Despite progress in pixel-level Image-Based Visual Servoing (IBVS) control, the requirement of continuous visibility and the existence of complex disturbances, such as parameterization error, measurement noise, and uncertainties of payloads, could degrade the surgeon's visual experience and compromise procedural safety. To address these limitations, this paper proposes VisionSafeEnhanced Visual Predictive Control (VPC), a robust and uncertainty-adaptive framework for autonomous laparoscope control that guarantees Field of View (FoV) safety under uncertainty. Firstly, Gaussian Process Regression (GPR) is utilized to perform hybrid (deterministic + stochastic) quantification of operational uncertainties including residual model uncertainties, stochastic uncertainties, and external disturbances. Based on uncertainty quantification, a novel safety aware trajectory optimization framework with probabilistic guarantees is proposed, where a uncertainty-adaptive safety Control Barrier Function (CBF) condition is given based on uncertainty propagation, and chance constraints are simultaneously formulated based on probabilistic approximation. This uncertainty aware formulation enables adaptive control effort allocation, minimizing unnecessary camera motion while maintaining robustness. The proposed method is validated through comparative simulations and experiments on a commercial surgical robot platform (MicroPort MedBot Toumai) performing a sequential multi-target lymph node dissection. Compared with baseline methods, the framework maintains near-perfect target visibility (>99.9%), reduces tracking e 
+
+**Abstract (ZH)**: 自主辅助内窥镜控制在机器人辅助微创手术中的视觉增强预测控制（VisionSafeEnhanced Visual Predictive Control）：一种稳健且适应不确定性的框架，保证视角安全 
+
+---
+# Integration of Robot and Scene Kinematics for Sequential Mobile Manipulation Planning 
+
+**Title (ZH)**: 机器人与场景运动学的集成在序列移动操作规划中的应用 
+
+**Authors**: Ziyuan Jiao, Yida Niu, Zeyu Zhang, Yangyang Wu, Yao Su, Yixin Zhu, Hangxin Liu, Song-Chun Zhu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.18627)  
+
+**Abstract**: We present a Sequential Mobile Manipulation Planning (SMMP) framework that can solve long-horizon multi-step mobile manipulation tasks with coordinated whole-body motion, even when interacting with articulated objects. By abstracting environmental structures as kinematic models and integrating them with the robot's kinematics, we construct an Augmented Configuration Apace (A-Space) that unifies the previously separate task constraints for navigation and manipulation, while accounting for the joint reachability of the robot base, arm, and manipulated objects. This integration facilitates efficient planning within a tri-level framework: a task planner generates symbolic action sequences to model the evolution of A-Space, an optimization-based motion planner computes continuous trajectories within A-Space to achieve desired configurations for both the robot and scene elements, and an intermediate plan refinement stage selects action goals that ensure long-horizon feasibility. Our simulation studies first confirm that planning in A-Space achieves an 84.6\% higher task success rate compared to baseline methods. Validation on real robotic systems demonstrates fluid mobile manipulation involving (i) seven types of rigid and articulated objects across 17 distinct contexts, and (ii) long-horizon tasks of up to 14 sequential steps. Our results highlight the significance of modeling scene kinematics into planning entities, rather than encoding task-specific constraints, offering a scalable and generalizable approach to complex robotic manipulation. 
+
+**Abstract (ZH)**: 基于协调全身运动的顺序移动操控规划框架 
+
+---
+# PneuGelSight: Soft Robotic Vision-Based Proprioception and Tactile Sensing 
+
+**Title (ZH)**: PneuGelSight：基于软体机器人视觉的姿态感知与触觉传感 
+
+**Authors**: Ruohan Zhang, Uksang Yoo, Yichen Li, Arpit Argawal, Wenzhen Yuan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.18443)  
+
+**Abstract**: Soft pneumatic robot manipulators are popular in industrial and human-interactive applications due to their compliance and flexibility. However, deploying them in real-world scenarios requires advanced sensing for tactile feedback and proprioception. Our work presents a novel vision-based approach for sensorizing soft robots. We demonstrate our approach on PneuGelSight, a pioneering pneumatic manipulator featuring high-resolution proprioception and tactile sensing via an embedded camera. To optimize the sensor's performance, we introduce a comprehensive pipeline that accurately simulates its optical and dynamic properties, facilitating a zero-shot knowledge transition from simulation to real-world applications. PneuGelSight and our sim-to-real pipeline provide a novel, easily implementable, and robust sensing methodology for soft robots, paving the way for the development of more advanced soft robots with enhanced sensory capabilities. 
+
+**Abstract (ZH)**: 基于视觉的软气动机器人传感器化方法 
+
+---
+# Efficient task and path planning for maintenance automation using a robot system 
+
+**Title (ZH)**: 基于机器人系统的维护自动化任务与路径规划高效方法 
+
+**Authors**: Christian Friedrich, Akos Csiszar, Armin Lechler, Alexander Verl  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.18400)  
+
+**Abstract**: The research and development of intelligent automation solutions is a ground-breaking point for the factory of the future. A promising and challenging mission is the use of autonomous robot systems to automate tasks in the field of maintenance. For this purpose, the robot system must be able to plan autonomously the different manipulation tasks and the corresponding paths. Basic requirements are the development of algorithms with a low computational complexity and the possibility to deal with environmental uncertainties. In this work, an approach is presented, which is especially suited to solve the problem of maintenance automation. For this purpose, offline data from CAD is combined with online data from an RGBD vision system via a probabilistic filter, to compensate uncertainties from offline data. For planning the different tasks, a method is explained, which use a symbolic description, founded on a novel sampling-based method to compute the disassembly space. For path planning we use global state-of-the art algorithms with a method that allows the adaption of the exploration stepsize in order to reduce the planning time. Every method is experimentally validated and discussed. 
+
+**Abstract (ZH)**: 未来工厂中智能自动化解决方案的研究与开发：基于自主机器人系统的维护任务自动化及其实现方法 
+
+---
+# Maintenance automation: methods for robotics manipulation planning and execution 
+
+**Title (ZH)**: 机器人操作中的维护自动化：机器人操作规划与执行的方法 
+
+**Authors**: Christian Friedrich, Ralf Gulde, Armin Lechler, Alexander Verl  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.18399)  
+
+**Abstract**: Automating complex tasks using robotic systems requires skills for planning, control and execution. This paper proposes a complete robotic system for maintenance automation, which can automate disassembly and assembly operations under environmental uncertainties (e.g. deviations between prior plan information). The cognition of the robotic system is based on a planning approach (using CAD and RGBD data) and includes a method to interpret a symbolic plan and transform it to a set of executable robot instructions. The complete system is experimentally evaluated using real-world applications. This work shows the first step to transfer these theoretical results into a practical robotic solution. 
+
+**Abstract (ZH)**: 使用机器人系统自动化复杂任务需要规划、控制和执行技能。本文提出了一种完整的机器人系统，可以在环境不确定性（如先验计划信息与实际情况之间的偏差）下自动化拆装操作的规划、控制和执行。该机器人的认知基于规划方法（使用CAD和RGBD数据），包括一种解释符号计划并将之转换为可执行机器人指令的方法。该完整系统通过实际应用进行了实验评估。本工作展示了将这些理论结果转化为实际机器人解决方案的第一步。 
+
+---
+# Safe Navigation under State Uncertainty: Online Adaptation for Robust Control Barrier Functions 
+
+**Title (ZH)**: 在状态不确定性下的安全导航：鲁棒控制屏障函数的在线适应 
+
+**Authors**: Ersin Das, Rahal Nanayakkara, Xiao Tan, Ryan M. Bena, Joel W. Burdick, Paulo Tabuada, Aaron D. Ames  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.19159)  
+
+**Abstract**: Measurements and state estimates are often imperfect in control practice, posing challenges for safety-critical applications, where safety guarantees rely on accurate state information. In the presence of estimation errors, several prior robust control barrier function (R-CBF) formulations have imposed strict conditions on the input. These methods can be overly conservative and can introduce issues such as infeasibility, high control effort, etc. This work proposes a systematic method to improve R-CBFs, and demonstrates its advantages on a tracked vehicle that navigates among multiple obstacles. A primary contribution is a new optimization-based online parameter adaptation scheme that reduces the conservativeness of existing R-CBFs. In order to reduce the complexity of the parameter optimization, we merge several safety constraints into one unified numerical CBF via Poisson's equation. We further address the dual relative degree issue that typically causes difficulty in vehicle tracking. Experimental trials demonstrate the overall performance improvement of our approach over existing formulations. 
+
+**Abstract (ZH)**: 基于测量和状态估计的 Imperfections 在控制实践中对安全关键应用构成挑战：鲁棒控制障碍函数在估计误差下的系统化改进及其在多障碍导航履带车辆上的优势 
+
+---
