@@ -1,0 +1,260 @@
+# Learning on the Fly: Rapid Policy Adaptation via Differentiable Simulation 
+
+**Title (ZH)**: 随需学习：通过可微模拟实现快速策略适应 
+
+**Authors**: Jiahe Pan, Jiaxu Xing, Rudolf Reiter, Yifan Zhai, Elie Aljalbout, Davide Scaramuzza  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.21065)  
+
+**Abstract**: Learning control policies in simulation enables rapid, safe, and cost-effective development of advanced robotic capabilities. However, transferring these policies to the real world remains difficult due to the sim-to-real gap, where unmodeled dynamics and environmental disturbances can degrade policy performance. Existing approaches, such as domain randomization and Real2Sim2Real pipelines, can improve policy robustness, but either struggle under out-of-distribution conditions or require costly offline retraining. In this work, we approach these problems from a different perspective. Instead of relying on diverse training conditions before deployment, we focus on rapidly adapting the learned policy in the real world in an online fashion. To achieve this, we propose a novel online adaptive learning framework that unifies residual dynamics learning with real-time policy adaptation inside a differentiable simulation. Starting from a simple dynamics model, our framework refines the model continuously with real-world data to capture unmodeled effects and disturbances such as payload changes and wind. The refined dynamics model is embedded in a differentiable simulation framework, enabling gradient backpropagation through the dynamics and thus rapid, sample-efficient policy updates beyond the reach of classical RL methods like PPO. All components of our system are designed for rapid adaptation, enabling the policy to adjust to unseen disturbances within 5 seconds of training. We validate the approach on agile quadrotor control under various disturbances in both simulation and the real world. Our framework reduces hovering error by up to 81% compared to L1-MPC and 55% compared to DATT, while also demonstrating robustness in vision-based control without explicit state estimation. 
+
+**Abstract (ZH)**: 在仿真中学习控制策略使得快速、安全且经济有效地开发先进机器人能力成为可能。然而，由于仿真实践与真实世界之间的差距，即未建模动态和环境扰动可能导致策略性能下降，将这些策略转移到现实世界仍然存在困难。现有的方法，如域随机化和Real2Sim2Real流水线，可以提高策略的鲁棒性，但在处理异常分布情况时可能表现不佳，或者需要昂贵的离线重新训练。在本工作中，我们从不同的角度解决这些问题。我们不依赖于部署前的多样化训练条件，而是专注于以在线方式快速适应在真实世界中学习到的策略。为此，我们提出了一种新颖的在线自适应学习框架，该框架将残差动力学学习与实时策略适应统一在可微分仿真中。从一个简单的动力学模型开始，我们的框架不断用现实世界的数据对模型进行细化，以捕捉未建模效应和干扰，如载荷变化和风。细化的动力学模型嵌入到一个可微分仿真框架中，从而可以在包含动力学梯度回传的情况下，实现超越传统RL方法（如PPO）的快速、样本高效策略更新。我们系统的各个组件都旨在实现快速适应，使策略在5秒的训练时间内即可调整以应对未见的干扰。我们在各种干扰下于仿真和真实世界中验证了该方法，我们的框架将悬停误差降低了81%（相对于L1-MPC）和55%（相对于DATT），同时在基于视觉的控制中也展示了无显式状态估计的鲁棒性。 
+
+---
+# HITTER: A HumanoId Table TEnnis Robot via Hierarchical Planning and Learning 
+
+**Title (ZH)**: HITTER：基于层次规划与学习的类人乒乓球机器人 
+
+**Authors**: Zhi Su, Bike Zhang, Nima Rahmanian, Yuman Gao, Qiayuan Liao, Caitlin Regan, Koushil Sreenath, S. Shankar Sastry  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.21043)  
+
+**Abstract**: Humanoid robots have recently achieved impressive progress in locomotion and whole-body control, yet they remain constrained in tasks that demand rapid interaction with dynamic environments through manipulation. Table tennis exemplifies such a challenge: with ball speeds exceeding 5 m/s, players must perceive, predict, and act within sub-second reaction times, requiring both agility and precision. To address this, we present a hierarchical framework for humanoid table tennis that integrates a model-based planner for ball trajectory prediction and racket target planning with a reinforcement learning-based whole-body controller. The planner determines striking position, velocity and timing, while the controller generates coordinated arm and leg motions that mimic human strikes and maintain stability and agility across consecutive rallies. Moreover, to encourage natural movements, human motion references are incorporated during training. We validate our system on a general-purpose humanoid robot, achieving up to 106 consecutive shots with a human opponent and sustained exchanges against another humanoid. These results demonstrate real-world humanoid table tennis with sub-second reactive control, marking a step toward agile and interactive humanoid behaviors. 
+
+**Abstract (ZH)**: 基于模型的轨迹预测和强化学习的全身控制器结合的类人乒乓球框架：实现实秒级反应控制的类人乒乓球行为 
+
+---
+# ActLoc: Learning to Localize on the Move via Active Viewpoint Selection 
+
+**Title (ZH)**: ActLoc: 在移动过程中通过主动视角选择进行 localization 
+
+**Authors**: Jiajie Li, Boyang Sun, Luca Di Giammarino, Hermann Blum, Marc Pollefeys  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.20981)  
+
+**Abstract**: Reliable localization is critical for robot navigation, yet most existing systems implicitly assume that all viewing directions at a location are equally informative. In practice, localization becomes unreliable when the robot observes unmapped, ambiguous, or uninformative regions. To address this, we present ActLoc, an active viewpoint-aware planning framework for enhancing localization accuracy for general robot navigation tasks. At its core, ActLoc employs a largescale trained attention-based model for viewpoint selection. The model encodes a metric map and the camera poses used during map construction, and predicts localization accuracy across yaw and pitch directions at arbitrary 3D locations. These per-point accuracy distributions are incorporated into a path planner, enabling the robot to actively select camera orientations that maximize localization robustness while respecting task and motion constraints. ActLoc achieves stateof-the-art results on single-viewpoint selection and generalizes effectively to fulltrajectory planning. Its modular design makes it readily applicable to diverse robot navigation and inspection tasks. 
+
+**Abstract (ZH)**: 可靠的定位对于机器人导航至关重要，然而现有的大多数系统隐含地假设位置的所有视向角度都具有相同的信息量。实际上，当机器人观察未映射、模棱两可或无信息的区域时，定位变得不可靠。为了解决这一问题，我们提出了ActLoc，一种主动视角感知规划框架，旨在提高通用机器人导航任务中的定位准确性。ActLoc的核心在于使用大型训练的基于注意力的模型进行视角选择。该模型编码了用于地图构建的度量地图和相机姿态，并预测在任意3D位置的偏航和俯仰方向上的定位准确性。这些点级别的准确性分布被整合到路径规划器中，从而使机器人能够主动选择最大化定位鲁棒性的相机姿态，同时遵守任务和运动约束。ActLoc在单视角选择任务上达到了最先进的性能，并且在全程路径规划中表现出有效的泛化能力。其模块化设计使其易于应用于各种机器人导航和检测任务。 
+
+---
+# Language-Enhanced Mobile Manipulation for Efficient Object Search in Indoor Environments 
+
+**Title (ZH)**: 基于语言增强的移动 manipulation 技术在室内环境中的高效物体搜寻 
+
+**Authors**: Liding Zhang, Zeqi Li, Kuanqi Cai, Qian Huang, Zhenshan Bing, Alois Knoll  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.20899)  
+
+**Abstract**: Enabling robots to efficiently search for and identify objects in complex, unstructured environments is critical for diverse applications ranging from household assistance to industrial automation. However, traditional scene representations typically capture only static semantics and lack interpretable contextual reasoning, limiting their ability to guide object search in completely unfamiliar settings. To address this challenge, we propose a language-enhanced hierarchical navigation framework that tightly integrates semantic perception and spatial reasoning. Our method, Goal-Oriented Dynamically Heuristic-Guided Hierarchical Search (GODHS), leverages large language models (LLMs) to infer scene semantics and guide the search process through a multi-level decision hierarchy. Reliability in reasoning is achieved through the use of structured prompts and logical constraints applied at each stage of the hierarchy. For the specific challenges of mobile manipulation, we introduce a heuristic-based motion planner that combines polar angle sorting with distance prioritization to efficiently generate exploration paths. Comprehensive evaluations in Isaac Sim demonstrate the feasibility of our framework, showing that GODHS can locate target objects with higher search efficiency compared to conventional, non-semantic search strategies. Website and Video are available at: this https URL 
+
+**Abstract (ZH)**: 提高机器人在复杂无结构环境中的物体搜索和识别效率对于从家庭辅助到工业自动化等多种应用至关重要。然而，传统的场景表示通常只能捕捉静态语义信息，并缺乏可解释的上下文推理能力，限制了其在完全陌生环境中的物体搜索引导能力。为应对这一挑战，我们提出了一种语言增强的分层导航框架，该框架紧密整合了语义感知和空间推理。我们的方法，目标导向动态启发式引导分层搜索（GODHS），利用大规模语言模型（LLMs）推断场景语义并通过多级决策层次引导搜索过程。通过在每一级层次中应用结构化提示和逻辑约束来实现推理的可靠性。针对移动操作的具体挑战，我们引入了一种基于启发式的运动规划器，结合极角排序和距离优先级，以高效生成探索路径。在Isaac Sim中的综合评估表明，我们的框架可行，GODHS相较于传统的非语义搜索策略，可以在更高的搜索效率下定位目标物体。更多信息请访问：this https URL 
+
+---
+# CoCoL: A Communication Efficient Decentralized Collaborative Method for Multi-Robot Systems 
+
+**Title (ZH)**: CoCoL: 多机器人系统中高效的去中心化协作方法 
+
+**Authors**: Jiaxi Huang, Yan Huang, Yixian Zhao, Wenchao Meng, Jinming Xu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.20898)  
+
+**Abstract**: Collaborative learning enhances the performance and adaptability of multi-robot systems in complex tasks but faces significant challenges due to high communication overhead and data heterogeneity inherent in multi-robot tasks. To this end, we propose CoCoL, a Communication efficient decentralized Collaborative Learning method tailored for multi-robot systems with heterogeneous local datasets. Leveraging a mirror descent framework, CoCoL achieves remarkable communication efficiency with approximate Newton-type updates by capturing the similarity between objective functions of robots, and reduces computational costs through inexact sub-problem solutions. Furthermore, the integration of a gradient tracking scheme ensures its robustness against data heterogeneity. Experimental results on three representative multi robot collaborative learning tasks show the superiority of the proposed CoCoL in significantly reducing both the number of communication rounds and total bandwidth consumption while maintaining state-of-the-art accuracy. These benefits are particularly evident in challenging scenarios involving non-IID (non-independent and identically distributed) data distribution, streaming data, and time-varying network topologies. 
+
+**Abstract (ZH)**: 协作学习提升了多机器人系统在复杂任务中的性能和适应性，但由于多机器人任务固有的高通信开销和数据异质性，面临显著挑战。为此，我们提出了一种通信高效的分布式协作学习方法CoCoL，该方法针对具有异质本地数据集的多机器人系统进行优化。利用镜像下降框架，CoCoL通过捕捉机器人目标函数之间的相似性实现了近似的牛顿型更新，从而实现高效的通信，并通过近似子问题求解降低计算成本。此外，梯度跟踪方案的集成确保了其在数据异质性下的鲁棒性。实验结果表明，CoCoL在保持先进准确度的同时，显著减少了通信轮次和总带宽消耗，特别是在涉及非IID数据分布、流式数据和时间varying网络拓扑的挑战性场景中表现尤为突出。 
+
+---
+# Genetic Informed Trees (GIT*): Path Planning via Reinforced Genetic Programming Heuristics 
+
+**Title (ZH)**: 遗传信息树（GIT*）：基于增强遗传编程启发式的路径规划 
+
+**Authors**: Liding Zhang, Kuanqi Cai, Zhenshan Bing, Chaoqun Wang, Alois Knoll  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.20871)  
+
+**Abstract**: Optimal path planning involves finding a feasible state sequence between a start and a goal that optimizes an objective. This process relies on heuristic functions to guide the search direction. While a robust function can improve search efficiency and solution quality, current methods often overlook available environmental data and simplify the function structure due to the complexity of information relationships. This study introduces Genetic Informed Trees (GIT*), which improves upon Effort Informed Trees (EIT*) by integrating a wider array of environmental data, such as repulsive forces from obstacles and the dynamic importance of vertices, to refine heuristic functions for better guidance. Furthermore, we integrated reinforced genetic programming (RGP), which combines genetic programming with reward system feedback to mutate genotype-generative heuristic functions for GIT*. RGP leverages a multitude of data types, thereby improving computational efficiency and solution quality within a set timeframe. Comparative analyses demonstrate that GIT* surpasses existing single-query, sampling-based planners in problems ranging from R^4 to R^16 and was tested on a real-world mobile manipulation task. A video showcasing our experimental results is available at this https URL 
+
+**Abstract (ZH)**: 基于遗传信息树的最优路径规划方法：集成广泛环境数据的探索优化 
+
+---
+# Learning Primitive Embodied World Models: Towards Scalable Robotic Learning 
+
+**Title (ZH)**: 学习基础的具身世界模型：通往可扩展的机器人学习的道路 
+
+**Authors**: Qiao Sun, Liujia Yang, Wei Tang, Wei Huang, Kaixin Xu, Yongchao Chen, Mingyu Liu, Jiange Yang, Haoyi Zhu, Yating Wang, Tong He, Yilun Chen, Xili Dai, Nanyang Ye, Qinying Gu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.20840)  
+
+**Abstract**: While video-generation-based embodied world models have gained increasing attention, their reliance on large-scale embodied interaction data remains a key bottleneck. The scarcity, difficulty of collection, and high dimensionality of embodied data fundamentally limit the alignment granularity between language and actions and exacerbate the challenge of long-horizon video generation--hindering generative models from achieving a "GPT moment" in the embodied domain. There is a naive observation: the diversity of embodied data far exceeds the relatively small space of possible primitive motions. Based on this insight, we propose a novel paradigm for world modeling--Primitive Embodied World Models (PEWM). By restricting video generation to fixed short horizons, our approach 1) enables fine-grained alignment between linguistic concepts and visual representations of robotic actions, 2) reduces learning complexity, 3) improves data efficiency in embodied data collection, and 4) decreases inference latency. By equipping with a modular Vision-Language Model (VLM) planner and a Start-Goal heatmap Guidance mechanism (SGG), PEWM further enables flexible closed-loop control and supports compositional generalization of primitive-level policies over extended, complex tasks. Our framework leverages the spatiotemporal vision priors in video models and the semantic awareness of VLMs to bridge the gap between fine-grained physical interaction and high-level reasoning, paving the way toward scalable, interpretable, and general-purpose embodied intelligence. 
+
+**Abstract (ZH)**: 基于视频生成的体态世界模型：一种新的体态数据稀疏性应对范式（Primitive Embodied World Models） 
+
+---
+# Uncertainty Aware-Predictive Control Barrier Functions: Safer Human Robot Interaction through Probabilistic Motion Forecasting 
+
+**Title (ZH)**: 不确定性意识预测控制屏障函数：通过概率性运动预测实现更安全的人机交互 
+
+**Authors**: Lorenzo Busellato, Federico Cunico, Diego Dall'Alba, Marco Emporio, Andrea Giachetti, Riccardo Muradore, Marco Cristani  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.20812)  
+
+**Abstract**: To enable flexible, high-throughput automation in settings where people and robots share workspaces, collaborative robotic cells must reconcile stringent safety guarantees with the need for responsive and effective behavior. A dynamic obstacle is the stochastic, task-dependent variability of human motion: when robots fall back on purely reactive or worst-case envelopes, they brake unnecessarily, stall task progress, and tamper with the fluidity that true Human-Robot Interaction demands. In recent years, learning-based human-motion prediction has rapidly advanced, although most approaches produce worst-case scenario forecasts that often do not treat prediction uncertainty in a well-structured way, resulting in over-conservative planning algorithms, limiting their flexibility. We introduce Uncertainty-Aware Predictive Control Barrier Functions (UA-PCBFs), a unified framework that fuses probabilistic human hand motion forecasting with the formal safety guarantees of Control Barrier Functions. In contrast to other variants, our framework allows for dynamic adjustment of the safety margin thanks to the human motion uncertainty estimation provided by a forecasting module. Thanks to uncertainty estimation, UA-PCBFs empower collaborative robots with a deeper understanding of future human states, facilitating more fluid and intelligent interactions through informed motion planning. We validate UA-PCBFs through comprehensive real-world experiments with an increasing level of realism, including automated setups (to perform exactly repeatable motions) with a robotic hand and direct human-robot interactions (to validate promptness, usability, and human confidence). Relative to state-of-the-art HRI architectures, UA-PCBFs show better performance in task-critical metrics, significantly reducing the number of violations of the robot's safe space during interaction with respect to the state-of-the-art. 
+
+**Abstract (ZH)**: 基于不确定性意识的预测控制屏障函数：一种融合概率性 humans 手部运动预测与控制屏障函数正式安全保证的统一框架 
+
+---
+# Non-expert to Expert Motion Translation Using Generative Adversarial Networks 
+
+**Title (ZH)**: 非专家到专家级运动转换的生成对抗网络方法 
+
+**Authors**: Yuki Tanaka, Seiichiro Katsura  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.20740)  
+
+**Abstract**: Decreasing skilled workers is a very serious problem in the world. To deal with this problem, the skill transfer from experts to robots has been researched. These methods which teach robots by human motion are called imitation learning. Experts' skills generally appear in not only position data, but also force data. Thus, position and force data need to be saved and reproduced. To realize this, a lot of research has been conducted in the framework of a motion-copying system. Recent research uses machine learning methods to generate motion commands. However, most of them could not change tasks by following human intention. Some of them can change tasks by conditional training, but the labels are limited. Thus, we propose the flexible motion translation method by using Generative Adversarial Networks. The proposed method enables users to teach robots tasks by inputting data, and skills by a trained model. We evaluated the proposed system with a 3-DOF calligraphy robot. 
+
+**Abstract (ZH)**: 熟练工人的减少是一个非常严重的世界性问题。为解决这一问题，专家技能向机器人转移的研究已经展开。通过人类动作来教导机器人的方法被称为模仿学习。专家的技能不仅体现在位置数据中，还体现在力数据中。因此，需要保存并再现位置和力数据。为实现这一目标，运动复制系统框架内的大量研究已经进行。最近的研究使用机器学习方法生成运动指令，但大多数方法无法根据人类意图改变任务。其中一些方法可以通过条件训练改变任务，但标签有限。因此，我们提出了使用生成对抗网络的灵活运动转换方法。该方法使用户能够通过输入数据和训练模型来教导机器人任务。我们使用一个3-DOF书法机器人评估了提出系统。 
+
+---
+# Task-Oriented Edge-Assisted Cross-System Design for Real-Time Human-Robot Interaction in Industrial Metaverse 
+
+**Title (ZH)**: 面向任务的边缘辅助跨系统设计：工业元宇宙中实时人机交互 
+
+**Authors**: Kan Chen, Zhen Meng, Xiangmin Xu, Jiaming Yang, Emma Li, Philip G. Zhao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.20664)  
+
+**Abstract**: Real-time human-device interaction in industrial Metaverse faces challenges such as high computational load, limited bandwidth, and strict latency. This paper proposes a task-oriented edge-assisted cross-system framework using digital twins (DTs) to enable responsive interactions. By predicting operator motions, the system supports: 1) proactive Metaverse rendering for visual feedback, and 2) preemptive control of remote devices. The DTs are decoupled into two virtual functions-visual display and robotic control-optimizing both performance and adaptability. To enhance generalizability, we introduce the Human-In-The-Loop Model-Agnostic Meta-Learning (HITL-MAML) algorithm, which dynamically adjusts prediction horizons. Evaluation on two tasks demonstrates the framework's effectiveness: in a Trajectory-Based Drawing Control task, it reduces weighted RMSE from 0.0712 m to 0.0101 m; in a real-time 3D scene representation task for nuclear decommissioning, it achieves a PSNR of 22.11, SSIM of 0.8729, and LPIPS of 0.1298. These results show the framework's capability to ensure spatial precision and visual fidelity in real-time, high-risk industrial environments. 
+
+**Abstract (ZH)**: 工业元宇宙中基于边缘协助的任务驱动数字孪生框架及其应用 
+
+---
+# Traversing the Narrow Path: A Two-Stage Reinforcement Learning Framework for Humanoid Beam Walking 
+
+**Title (ZH)**: 穿越狭窄路径：类人摆动走行的两阶段强化学习框架 
+
+**Authors**: TianChen Huang, Wei Gao, Runchen Xu, Shiwu Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.20661)  
+
+**Abstract**: Traversing narrow beams is challenging for humanoids due to sparse, safety-critical contacts and the fragility of purely learned policies. We propose a physically grounded, two-stage framework that couples an XCoM/LIPM footstep template with a lightweight residual planner and a simple low-level tracker. Stage-1 is trained on flat ground: the tracker learns to robustly follow footstep targets by adding small random perturbations to heuristic footsteps, without any hand-crafted centerline locking, so it acquires stable contact scheduling and strong target-tracking robustness. Stage-2 is trained in simulation on a beam: a high-level planner predicts a body-frame residual (Delta x, Delta y, Delta psi) for the swing foot only, refining the template step to prioritize safe, precise placement under narrow support while preserving interpretability. To ease deployment, sensing is kept minimal and consistent between simulation and hardware: the planner consumes compact, forward-facing elevation cues together with onboard IMU and joint signals. On a Unitree G1, our system reliably traverses a 0.2 m-wide, 3 m-long beam. Across simulation and real-world studies, residual refinement consistently outperforms template-only and monolithic baselines in success rate, centerline adherence, and safety margins, while the structured footstep interface enables transparent analysis and low-friction sim-to-real transfer. 
+
+**Abstract (ZH)**: 基于物理的双阶段框架实现人体形机器人跨窄_beam_行走的挑战与解决方案 
+
+---
+# CogVLA: Cognition-Aligned Vision-Language-Action Model via Instruction-Driven Routing & Sparsification 
+
+**Title (ZH)**: CogVLA：指令驱动的路由与稀疏化认知对齐的视觉-语言-行动模型 
+
+**Authors**: Wei Li, Renshan Zhang, Rui Shao, Jie He, Liqiang Nie  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.21046)  
+
+**Abstract**: Recent Vision-Language-Action (VLA) models built on pre-trained Vision-Language Models (VLMs) require extensive post-training, resulting in high computational overhead that limits scalability and this http URL propose CogVLA, a Cognition-Aligned Vision-Language-Action framework that leverages instruction-driven routing and sparsification to improve both efficiency and performance. CogVLA draws inspiration from human multimodal coordination and introduces a 3-stage progressive architecture. 1) Encoder-FiLM based Aggregation Routing (EFA-Routing) injects instruction information into the vision encoder to selectively aggregate and compress dual-stream visual tokens, forming a instruction-aware latent representation. 2) Building upon this compact visual encoding, LLM-FiLM based Pruning Routing (LFP-Routing) introduces action intent into the language model by pruning instruction-irrelevant visually grounded tokens, thereby achieving token-level sparsity. 3) To ensure that compressed perception inputs can still support accurate and coherent action generation, we introduce V-L-A Coupled Attention (CAtten), which combines causal vision-language attention with bidirectional action parallel decoding. Extensive experiments on the LIBERO benchmark and real-world robotic tasks demonstrate that CogVLA achieves state-of-the-art performance with success rates of 97.4% and 70.0%, respectively, while reducing training costs by 2.5-fold and decreasing inference latency by 2.8-fold compared to OpenVLA. CogVLA is open-sourced and publicly available at this https URL. 
+
+**Abstract (ZH)**: 基于预训练视觉语言模型的 Recent Vision-Language-Action (VLA) 模型在后训练过程中需要大量的计算，导致计算开销高并限制了其可扩展性，本文提出CogVLA：一种认知对齐的视觉语言行动框架，通过指令驱动的路由和稀疏化提高效率与性能 
+
+---
+# Single Agent Robust Deep Reinforcement Learning for Bus Fleet Control 
+
+**Title (ZH)**: 单智能体稳健深度 reinforcement 学习在公交车队控制中的应用 
+
+**Authors**: Yifan Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.20784)  
+
+**Abstract**: Bus bunching remains a challenge for urban transit due to stochastic traffic and passenger demand. Traditional solutions rely on multi-agent reinforcement learning (MARL) in loop-line settings, which overlook realistic operations characterized by heterogeneous routes, timetables, fluctuating demand, and varying fleet sizes. We propose a novel single-agent reinforcement learning (RL) framework for bus holding control that avoids the data imbalance and convergence issues of MARL under near-realistic simulation. A bidirectional timetabled network with dynamic passenger demand is constructed. The key innovation is reformulating the multi-agent problem into a single-agent one by augmenting the state space with categorical identifiers (vehicle ID, station ID, time period) in addition to numerical features (headway, occupancy, velocity). This high-dimensional encoding enables single-agent policies to capture inter-agent dependencies, analogous to projecting non-separable inputs into a higher-dimensional space. We further design a structured reward function aligned with operational goals: instead of exponential penalties on headway deviations, a ridge-shaped reward balances uniform headways and schedule adherence. Experiments show that our modified soft actor-critic (SAC) achieves more stable and superior performance than benchmarks, including MADDPG (e.g., -430k vs. -530k under stochastic conditions). These results demonstrate that single-agent deep RL, when enhanced with categorical structuring and schedule-aware rewards, can effectively manage bus holding in non-loop, real-world contexts. This paradigm offers a robust, scalable alternative to MARL frameworks, particularly where agent-specific experiences are imbalanced. 
+
+**Abstract (ZH)**: 基于单智能体强化学习的公交调度控制：面向非环线实际运营场景 
+
+---
+# Human-AI Collaborative Bot Detection in MMORPGs 
+
+**Title (ZH)**: MMORPG中的人工智能协作式bots检测 
+
+**Authors**: Jaeman Son, Hyunsoo Kim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.20578)  
+
+**Abstract**: In Massively Multiplayer Online Role-Playing Games (MMORPGs), auto-leveling bots exploit automated programs to level up characters at scale, undermining gameplay balance and fairness. Detecting such bots is challenging, not only because they mimic human behavior, but also because punitive actions require explainable justification to avoid legal and user experience issues. In this paper, we present a novel framework for detecting auto-leveling bots by leveraging contrastive representation learning and clustering techniques in a fully unsupervised manner to identify groups of characters with similar level-up patterns. To ensure reliable decisions, we incorporate a Large Language Model (LLM) as an auxiliary reviewer to validate the clustered groups, effectively mimicking a secondary human judgment. We also introduce a growth curve-based visualization to assist both the LLM and human moderators in assessing leveling behavior. This collaborative approach improves the efficiency of bot detection workflows while maintaining explainability, thereby supporting scalable and accountable bot regulation in MMORPGs. 
+
+**Abstract (ZH)**: 在大规模多人在线角色扮演游戏（MMORPGs）中，自升级机器人利用自动化程序大规模提升角色等级，破坏游戏平衡和公平性。检测这些机器人颇具挑战，不仅因为它们模仿人类行为，还因为惩罚措施需要可解释的依据以避免法律和用户体验问题。本文提出了一种新的无监督框架，通过利用对比表示学习和聚类技术来识别具有相似升级模式的角色组。为了确保决策的可靠性，我们引入了一个大型语言模型（LLM）作为辅助审查者来验证聚类组，有效地模拟了第二次人工审核。我们还引入了一种基于成长曲线的可视化方法，以帮助LLM和人类审查者评估升级行为。这种协作方法提高了机器人检测工作流的效率，同时保持了可解释性，从而支持MMORPG中的可扩展和负责任的机器人监管。 
+
+---
+# AWorld: Orchestrating the Training Recipe for Agentic AI 
+
+**Title (ZH)**: AWorld: 调度代理人工智能的训练配方 
+
+**Authors**: Chengyue Yu, Siyuan Lu, Chenyi Zhuang, Dong Wang, Qintong Wu, Zongyue Li, Runsheng Gan, Chunfeng Wang, Siqi Hou, Gaochi Huang, Wenlong Yan, Lifeng Hong, Aohui Xue, Yanfeng Wang, Jinjie Gu, David Tsai, Tao Lin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.20404)  
+
+**Abstract**: The learning from practice paradigm is crucial for developing capable Agentic AI systems, yet it is severely hampered by inefficient experience generation, a bottleneck especially pronounced in complex benchmarks like GAIA. To address this, we introduce AWorld, an open-source system engineered for large-scale agent-environment interaction. By distributing tasks across a cluster, AWorld accelerates experience collection by 14.6x compared to standard single-node, sequential execution. This critical speedup makes extensive reinforcement learning practical and scalable. Leveraging this capability, we trained a Qwen3-32B-based agent that significantly outperforms its base model, increasing its overall GAIA accuracy from 21.59% to 32.23%. On the benchmark's most challenging levels, our agent achieves a score of 16.33%, surpassing the performance of leading proprietary models. Our open-source system and resulting agent provide a practical blueprint for a complete agentic AI training pipeline, from efficient interaction to demonstrable model improvement. 
+
+**Abstract (ZH)**: 基于实践的学习范式对于发展有能力的代理人工智能系统至关重要，但由于经验生成效率低下这一瓶颈的严重阻碍，在如GAIA这样的复杂基准测试中尤为突出。为了解决这一问题，我们引入了AWorld，一个为大规模代理-环境交互设计的开源系统。通过在集群上分配任务，AWorld将经验收集速度提升14.6倍，相比于标准单节点顺序执行。这一关键的加速使得强化学习变得广泛且易于扩展。利用这一能力，我们训练了一个基于Qwen3-32B的代理，其表现显著超越基模型，使得GAIA的整体准确性从21.59%提高到32.23%。在基准测试的最具挑战性的级别上，我们的代理获得了16.33%的分数，超过了领先商业模型的表现。我们的开源系统及其生成的代理为从高效交互到可验证模型改进的完整代理人工智能训练流程提供了实用的蓝图。 
+
+---
+# Prompt-to-Product: Generative Assembly via Bimanual Manipulation 
+
+**Title (ZH)**: 指令到产品的生成性组装：双臂操控 
+
+**Authors**: Ruixuan Liu, Philip Huang, Ava Pun, Kangle Deng, Shobhit Aggarwal, Kevin Tang, Michelle Liu, Deva Ramanan, Jun-Yan Zhu, Jiaoyang Li, Changliu Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.21063)  
+
+**Abstract**: Creating assembly products demands significant manual effort and expert knowledge in 1) designing the assembly and 2) constructing the product. This paper introduces Prompt-to-Product, an automated pipeline that generates real-world assembly products from natural language prompts. Specifically, we leverage LEGO bricks as the assembly platform and automate the process of creating brick assembly structures. Given the user design requirements, Prompt-to-Product generates physically buildable brick designs, and then leverages a bimanual robotic system to construct the real assembly products, bringing user imaginations into the real world. We conduct a comprehensive user study, and the results demonstrate that Prompt-to-Product significantly lowers the barrier and reduces manual effort in creating assembly products from imaginative ideas. 
+
+**Abstract (ZH)**: 基于自然语言提示的自动装配产品生成 
+
+---
+# MobileCLIP2: Improving Multi-Modal Reinforced Training 
+
+**Title (ZH)**: MobileCLIP2：提高多模态强化训练性能 
+
+**Authors**: Fartash Faghri, Pavan Kumar Anasosalu Vasu, Cem Koc, Vaishaal Shankar, Alexander Toshev, Oncel Tuzel, Hadi Pouransari  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.20691)  
+
+**Abstract**: Foundation image-text models such as CLIP with zero-shot capabilities enable a wide array of applications. MobileCLIP is a recent family of image-text models at 3-15ms latency and 50-150M parameters with state-of-the-art zero-shot accuracy. The main ingredients in MobileCLIP were its low-latency and light architectures and a novel multi-modal reinforced training that made knowledge distillation from multiple caption-generators and CLIP teachers efficient, scalable, and reproducible. In this paper, we improve the multi-modal reinforced training of MobileCLIP through: 1) better CLIP teacher ensembles trained on the DFN dataset, 2) improved captioner teachers trained on the DFN dataset and fine-tuned on a diverse selection of high-quality image-caption datasets. We discover new insights through ablations such as the importance of temperature tuning in contrastive knowledge distillation, the effectiveness of caption-generator fine-tuning for caption diversity, and the additive improvement from combining synthetic captions generated by multiple models. We train a new family of models called MobileCLIP2 and achieve state-of-the-art ImageNet-1k zero-shot accuracies at low latencies. In particular, we observe 2.2% improvement in ImageNet-1k accuracy for MobileCLIP2-B compared with MobileCLIP-B architecture. Notably, MobileCLIP2-S4 matches the zero-shot accuracy of SigLIP-SO400M/14 on ImageNet-1k while being 2$\times$ smaller and improves on DFN ViT-L/14 at 2.5$\times$ lower latency. We release our pretrained models (this https URL) and the data generation code (this https URL). The data generation code makes it easy to create new reinforced datasets with arbitrary teachers using distributed scalable processing. 
+
+**Abstract (ZH)**: 基于CLIP等零样本能力的基础图像-文本模型 enables 大量应用：MobileCLIP通过3-15ms延迟和50-150M参数实现最先进的零样本准确性。通过改进MobileCLIP的多模态强化训练，我们发现新的见解并训练出MobileCLIP2，实现了低延迟下的ImageNet-1k零样本精度新记录。 
+
+---
+# Task Allocation for Autonomous Machines using Computational Intelligence and Deep Reinforcement Learning 
+
+**Title (ZH)**: 使用计算智能和深度强化学习的自主机器任务分配 
+
+**Authors**: Thanh Thi Nguyen, Quoc Viet Hung Nguyen, Jonathan Kua, Imran Razzak, Dung Nguyen, Saeid Nahavandi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.20688)  
+
+**Abstract**: Enabling multiple autonomous machines to perform reliably requires the development of efficient cooperative control algorithms. This paper presents a survey of algorithms that have been developed for controlling and coordinating autonomous machines in complex environments. We especially focus on task allocation methods using computational intelligence (CI) and deep reinforcement learning (RL). The advantages and disadvantages of the surveyed methods are analysed thoroughly. We also propose and discuss in detail various future research directions that shed light on how to improve existing algorithms or create new methods to enhance the employability and performance of autonomous machines in real-world applications. The findings indicate that CI and deep RL methods provide viable approaches to addressing complex task allocation problems in dynamic and uncertain environments. The recent development of deep RL has greatly contributed to the literature on controlling and coordinating autonomous machines, and it has become a growing trend in this area. It is envisaged that this paper will provide researchers and engineers with a comprehensive overview of progress in machine learning research related to autonomous machines. It also highlights underexplored areas, identifies emerging methodologies, and suggests new avenues for exploration in future research within this domain. 
+
+**Abstract (ZH)**: 高效协同控制算法的开发对于多个自主机器可靠地执行任务至关重要。本文综述了用于在复杂环境中控制和协调自主机器的算法，特别关注使用计算智能（CI）和深度强化学习（DRL）的任务分配方法。分析了所调研方法的优缺点，并提出了改进现有算法或创造新方法以提高自主机器在实际应用中适用性和性能的未来研究方向。研究发现，CI和深度DRL方法为解决动态和不确定环境中复杂任务分配问题提供了可行的途径。近年来深度DRL的发展极大地丰富了控制和协调自主机器的研究文献，并已成为该领域的研究趋势。本文旨在为研究人员和工程师提供机器学习研究进展的全面概述，同时强调未被充分开发的领域，识别新兴方法，并为未来研究提供新的探索方向。 
+
+---
+# Dynamics-Aligned Latent Imagination in Contextual World Models for Zero-Shot Generalization 
+
+**Title (ZH)**: 面向上下文世界模型的动态对齐潜想象在零样本泛化中的应用 
+
+**Authors**: Frank Röder, Jan Benad, Manfred Eppe, Pradeep Kr. Banerjee  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.20294)  
+
+**Abstract**: Real-world reinforcement learning demands adaptation to unseen environmental conditions without costly retraining. Contextual Markov Decision Processes (cMDP) model this challenge, but existing methods often require explicit context variables (e.g., friction, gravity), limiting their use when contexts are latent or hard to measure. We introduce Dynamics-Aligned Latent Imagination (DALI), a framework integrated within the Dreamer architecture that infers latent context representations from agent-environment interactions. By training a self-supervised encoder to predict forward dynamics, DALI generates actionable representations conditioning the world model and policy, bridging perception and control. We theoretically prove this encoder is essential for efficient context inference and robust generalization. DALI's latent space enables counterfactual consistency: Perturbing a gravity-encoding dimension alters imagined rollouts in physically plausible ways. On challenging cMDP benchmarks, DALI achieves significant gains over context-unaware baselines, often surpassing context-aware baselines in extrapolation tasks, enabling zero-shot generalization to unseen contextual variations. 
+
+**Abstract (ZH)**: 现实世界的强化学习要求在不进行昂贵的重新训练的情况下适应未见过的环境条件。动态对齐的潜在想象（DALI）框架结合在Dreamer架构中，从代理-环境交互中推断潜在的上下文表示。通过训练一个自监督编码器来预测动态前向模型，DALI生成可操作的表示以条件化世界模型和策略，实现感知与控制的结合。我们从理论上证明了该编码器对于高效上下文推断和稳健泛化是必不可少的。DALI的潜在空间支持反事实一致性：扰动重力编码维度以物理合理的方式改变想象的-rollouts。在具有挑战性的cMDP基准测试中，DALI在上下文无关基准上取得了显著的性能提升，通常在外推任务中超越了上下文感知基准，实现对未见过的上下文变体的零样本泛化。 
+
+---
+# Deep Reinforcement Learning for Optimal Asset Allocation Using DDPG with TiDE 
+
+**Title (ZH)**: 基于TiDE的DDPG深度强化学习在最优资产分配中的应用 
+
+**Authors**: Rongwei Liu, Jin Zheng, John Cartlidge  
+
+**Link**: [PDF](https://arxiv.org/pdf/2508.20103)  
+
+**Abstract**: The optimal asset allocation between risky and risk-free assets is a persistent challenge due to the inherent volatility in financial markets. Conventional methods rely on strict distributional assumptions or non-additive reward ratios, which limit their robustness and applicability to investment goals. To overcome these constraints, this study formulates the optimal two-asset allocation problem as a sequential decision-making task within a Markov Decision Process (MDP). This framework enables the application of reinforcement learning (RL) mechanisms to develop dynamic policies based on simulated financial scenarios, regardless of prerequisites. We use the Kelly criterion to balance immediate reward signals against long-term investment objectives, and we take the novel step of integrating the Time-series Dense Encoder (TiDE) into the Deep Deterministic Policy Gradient (DDPG) RL framework for continuous decision-making. We compare DDPG-TiDE with a simple discrete-action Q-learning RL framework and a passive buy-and-hold investment strategy. Empirical results show that DDPG-TiDE outperforms Q-learning and generates higher risk adjusted returns than buy-and-hold. These findings suggest that tackling the optimal asset allocation problem by integrating TiDE within a DDPG reinforcement learning framework is a fruitful avenue for further exploration. 
+
+**Abstract (ZH)**: 基于TiDE的DDPG reinforcement learning框架下最优资产配置问题的研究 
+
+---
