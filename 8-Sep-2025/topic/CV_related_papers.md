@@ -1,0 +1,247 @@
+# Pointing-Guided Target Estimation via Transformer-Based Attention 
+
+**Title (ZH)**: 基于变换器注意力的指针引导目标估计 
+
+**Authors**: Luca Müller, Hassan Ali, Philipp Allgeuer, Lukáš Gajdošech, Stefan Wermter  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.05031)  
+
+**Abstract**: Deictic gestures, like pointing, are a fundamental form of non-verbal communication, enabling humans to direct attention to specific objects or locations. This capability is essential in Human-Robot Interaction (HRI), where robots should be able to predict human intent and anticipate appropriate responses. In this work, we propose the Multi-Modality Inter-TransFormer (MM-ITF), a modular architecture to predict objects in a controlled tabletop scenario with the NICOL robot, where humans indicate targets through natural pointing gestures. Leveraging inter-modality attention, MM-ITF maps 2D pointing gestures to object locations, assigns a likelihood score to each, and identifies the most likely target. Our results demonstrate that the method can accurately predict the intended object using monocular RGB data, thus enabling intuitive and accessible human-robot collaboration. To evaluate the performance, we introduce a patch confusion matrix, providing insights into the model's predictions across candidate object locations. Code available at: this https URL. 
+
+**Abstract (ZH)**: 指示性手势，如指指点点，是基本的非言语交流形式，使人类能够将注意力集中在特定的对象或位置上。这种能力在人类-机器人交互（HRI）中至关重要，其中机器人应该能够预测人类意图并预判适当的响应。在本文中，我们提出了多模态互转Former（MM-ITF），这是一种模块化架构，用于通过NICOL机器人在受控桌面上预测物体，其中人类通过自然的指指点点手势指示目标。利用跨模态注意，MM-ITF 将2D指指点点手势映射到物体位置，为每个物体位置分配一个可能性分数，并确定最可能的目标。我们的结果显示，该方法可以使用单目RGB数据准确预测预期的目标，从而实现直观且易于访问的人机协作。为了评估性能，我们引入了补丁混淆矩阵，提供关于模型在候选物体位置上预测的见解。代码可用于此链接：this https URL。 
+
+---
+# Towards an Accurate and Effective Robot Vision (The Problem of Topological Localization for Mobile Robots) 
+
+**Title (ZH)**: 朝着准确有效的机器人视觉：移动机器人拓扑定位问题的研究 
+
+**Authors**: Emanuela Boros  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.04948)  
+
+**Abstract**: Topological localization is a fundamental problem in mobile robotics, since robots must be able to determine their position in order to accomplish tasks. Visual localization and place recognition are challenging due to perceptual ambiguity, sensor noise, and illumination variations. This work addresses topological localization in an office environment using only images acquired with a perspective color camera mounted on a robot platform, without relying on temporal continuity of image sequences. We evaluate state-of-the-art visual descriptors, including Color Histograms, SIFT, ASIFT, RGB-SIFT, and Bag-of-Visual-Words approaches inspired by text retrieval. Our contributions include a systematic, quantitative comparison of these features, distance measures, and classifiers. Performance was analyzed using standard evaluation metrics and visualizations, extending previous experiments. Results demonstrate the advantages of proper configurations of appearance descriptors, similarity measures, and classifiers. The quality of these configurations was further validated in the Robot Vision task of the ImageCLEF evaluation campaign, where the system identified the most likely location of novel image sequences. Future work will explore hierarchical models, ranking methods, and feature combinations to build more robust localization systems, reducing training and runtime while avoiding the curse of dimensionality. Ultimately, this aims toward integrated, real-time localization across varied illumination and longer routes. 
+
+**Abstract (ZH)**: 基于视角彩色摄像头的办公环境拓扑定位研究 
+
+---
+# Planning from Point Clouds over Continuous Actions for Multi-object Rearrangement 
+
+**Title (ZH)**: 基于连续动作的点云多对象重新排列规划 
+
+**Authors**: Kallol Saha, Amber Li, Angela Rodriguez-Izquierdo, Lifan Yu, Ben Eisner, Maxim Likhachev, David Held  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.04645)  
+
+**Abstract**: Long-horizon planning for robot manipulation is a challenging problem that requires reasoning about the effects of a sequence of actions on a physical 3D scene. While traditional task planning methods are shown to be effective for long-horizon manipulation, they require discretizing the continuous state and action space into symbolic descriptions of objects, object relationships, and actions. Instead, we propose a hybrid learning-and-planning approach that leverages learned models as domain-specific priors to guide search in high-dimensional continuous action spaces. We introduce SPOT: Search over Point cloud Object Transformations, which plans by searching for a sequence of transformations from an initial scene point cloud to a goal-satisfying point cloud. SPOT samples candidate actions from learned suggesters that operate on partially observed point clouds, eliminating the need to discretize actions or object relationships. We evaluate SPOT on multi-object rearrangement tasks, reporting task planning success and task execution success in both simulation and real-world environments. Our experiments show that SPOT generates successful plans and outperforms a policy-learning approach. We also perform ablations that highlight the importance of search-based planning. 
+
+**Abstract (ZH)**: 长时规划用于机器人操作是一个具有挑战性的问题，需要对一系列动作对物理3D场景的影响进行推理。虽然传统的任务规划方法在长时操作中显示出了有效性，但它们要求将连续的状态空间和动作空间离散化为物体、物体关系和动作的符号描述。相反，我们提出了一种结合学习和规划的方法，利用学习得到的模型作为领域特定的先验知识来引导高维连续动作空间中的搜索。我们引入了SPOT：基于点云物体变换的搜索方法，通过从部分观测的点云出发，寻找一个初始场景点云到目标满足点云的序列变换来进行规划。SPOT 从部分观测的点云上操作的学习建议器中采样候选动作，从而消除了动作或物体关系离散化的需要。我们分别在仿真和实际环境中评估了SPOT在多对象重新排列任务上的任务规划成功率和任务执行成功率。我们的实验结果表明，SPOT 生成了成功的规划并优于基于策略的学习方法。我们还进行了消融实验以突出搜索基规划的重要性。 
+
+---
+# Action Chunking with Transformers for Image-Based Spacecraft Guidance and Control 
+
+**Title (ZH)**: 基于图像的航天器导航与控制中的动作chunking变换器方法 
+
+**Authors**: Alejandro Posadas-Nava, Andrea Scorsoglio, Luca Ghilardi, Roberto Furfaro, Richard Linares  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.04628)  
+
+**Abstract**: We present an imitation learning approach for spacecraft guidance, navigation, and control(GNC) that achieves high performance from limited data. Using only 100 expert demonstrations, equivalent to 6,300 environment interactions, our method, which implements Action Chunking with Transformers (ACT), learns a control policy that maps visual and state observations to thrust and torque commands. ACT generates smoother, more consistent trajectories than a meta-reinforcement learning (meta-RL) baseline trained with 40 million interactions. We evaluate ACT on a rendezvous task: in-orbit docking with the International Space Station (ISS). We show that our approach achieves greater accuracy, smoother control, and greater sample efficiency. 
+
+**Abstract (ZH)**: 我们提出了一种基于模仿学习的航天器导航、制导与控制（GNC）方法，该方法能够在有限数据下实现高性能。使用仅100个专家演示（相当于6,300个环境交互），我们的方法——Action Chunking with Transformers (ACT)——学会将视觉和状态观察映射到推力和扭矩命令的控制策略。ACT在环境交互4000万次的元强化学习（meta-RL）基线之上生成更平滑、更一致的轨迹。我们在对接任务上评估了ACT：与国际空间站（ISS）进行在轨对接。我们展示了该方法的更高精度、更平滑的控制和更高的样本效率。 
+
+---
+# Enhancing 3D Point Cloud Classification with ModelNet-R and Point-SkipNet 
+
+**Title (ZH)**: 基于ModelNet-R和Point-SkipNet增强3D点云分类 
+
+**Authors**: Mohammad Saeid, Amir Salarpour, Pedram MohajerAnsari  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.05198)  
+
+**Abstract**: The classification of 3D point clouds is crucial for applications such as autonomous driving, robotics, and augmented reality. However, the commonly used ModelNet40 dataset suffers from limitations such as inconsistent labeling, 2D data, size mismatches, and inadequate class differentiation, which hinder model performance. This paper introduces ModelNet-R, a meticulously refined version of ModelNet40 designed to address these issues and serve as a more reliable benchmark. Additionally, this paper proposes Point-SkipNet, a lightweight graph-based neural network that leverages efficient sampling, neighborhood grouping, and skip connections to achieve high classification accuracy with reduced computational overhead. Extensive experiments demonstrate that models trained in ModelNet-R exhibit significant performance improvements. Notably, Point-SkipNet achieves state-of-the-art accuracy on ModelNet-R with a substantially lower parameter count compared to contemporary models. This research highlights the crucial role of dataset quality in optimizing model efficiency for 3D point cloud classification. For more details, see the code at: this https URL. 
+
+**Abstract (ZH)**: 三维点云分类对于自动驾驶、机器人技术和增强现实等应用至关重要。然而，常用的ModelNet40数据集存在标签不一致、二维数据、尺寸不匹配和类别区分不足等问题，这些都限制了模型性能。本文介绍了ModelNet-R，这是一个精心优化的ModelNet40版本，旨在解决这些问题并作为更可靠的基准。此外，本文提出了一种轻量级的基于图的神经网络Point-SkipNet，该网络利用高效的采样、邻域分组和跳接连接，实现了在减少计算开销的同时获得高分类准确率。 extensive 实验表明，使用 ModelNet-R 训练的模型表现出显著的性能提升。特别地，Point-SkipNet 在 ModelNet-R 上达到了最先进的准确率，参数量远低于当前模型。本研究强调了高质量数据集在优化三维点云分类模型效率中的关键作用。如需了解更多信息，请参见代码：this https URL。 
+
+---
+# Domain Adaptation for Different Sensor Configurations in 3D Object Detection 
+
+**Title (ZH)**: 不同传感器配置下三维物体检测的领域适应 
+
+**Authors**: Satoshi Tanaka, Kok Seang Tan, Isamu Yamashita  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.04711)  
+
+**Abstract**: Recent advances in autonomous driving have underscored the importance of accurate 3D object detection, with LiDAR playing a central role due to its robustness under diverse visibility conditions. However, different vehicle platforms often deploy distinct sensor configurations, causing performance degradation when models trained on one configuration are applied to another because of shifts in the point cloud distribution. Prior work on multi-dataset training and domain adaptation for 3D object detection has largely addressed environmental domain gaps and density variation within a single LiDAR; in contrast, the domain gap for different sensor configurations remains largely unexplored. In this work, we address domain adaptation across different sensor configurations in 3D object detection. We propose two techniques: Downstream Fine-tuning (dataset-specific fine-tuning after multi-dataset training) and Partial Layer Fine-tuning (updating only a subset of layers to improve cross-configuration generalization). Using paired datasets collected in the same geographic region with multiple sensor configurations, we show that joint training with Downstream Fine-tuning and Partial Layer Fine-tuning consistently outperforms naive joint training for each configuration. Our findings provide a practical and scalable solution for adapting 3D object detection models to the diverse vehicle platforms. 
+
+**Abstract (ZH)**: 最近自主驾驶领域的进展突显了准确的3D物体检测的重要性，由于LiDAR在各种能见度条件下的稳健性，使其在其中扮演了重要角色。然而，不同的车辆平台往往部署了不同的传感器配置，导致当使用一个配置训练的模型应用于另一个配置时会出现性能下降，这是因为点云分布发生了变化。先前关于多数据集训练和3D物体检测领域适应的研究主要集中在单个LiDAR的环境领域差异和密度变化；相比之下，不同传感器配置之间的领域差异尚未得到充分探索。在本文中，我们解决了3D物体检测中不同传感器配置之间的领域适应问题。我们提出了两种技术：下游微调（多数据集训练后的数据集特定微调）和部分层微调（仅更新一部分层以提高跨配置的一般化能力）。利用在同一地理区域收集且具有多种传感器配置的配对数据集，我们展示了结合下游微调和部分层微调的联合训练在每个配置上均优于简单的联合训练。我们的发现提供了一种实用且可扩展的方法，以适应多样的车辆平台的3D物体检测模型。 
+
+---
+# WinT3R: Window-Based Streaming Reconstruction with Camera Token Pool 
+
+**Title (ZH)**: WinT3R: 基于窗口的流式重构与相机标记池 
+
+**Authors**: Zizun Li, Jianjun Zhou, Yifan Wang, Haoyu Guo, Wenzheng Chang, Yang Zhou, Haoyi Zhu, Junyi Chen, Chunhua Shen, Tong He  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.05296)  
+
+**Abstract**: We present WinT3R, a feed-forward reconstruction model capable of online prediction of precise camera poses and high-quality point maps. Previous methods suffer from a trade-off between reconstruction quality and real-time performance. To address this, we first introduce a sliding window mechanism that ensures sufficient information exchange among frames within the window, thereby improving the quality of geometric predictions without large computation. In addition, we leverage a compact representation of cameras and maintain a global camera token pool, which enhances the reliability of camera pose estimation without sacrificing efficiency. These designs enable WinT3R to achieve state-of-the-art performance in terms of online reconstruction quality, camera pose estimation, and reconstruction speed, as validated by extensive experiments on diverse datasets. Code and model are publicly available at this https URL. 
+
+**Abstract (ZH)**: We呈现WinT3R，一种适用于在线预测精确相机姿态和高质量点云图的前馈重建模型。先前的方法在重建质量与实时性能之间存在权衡。为解决这一问题，我们首先引入了一种滑动窗口机制，确保窗口内帧之间的充分信息交换，从而在不进行大量计算的情况下提高几何预测的质量。此外，我们利用紧凑的相机表示并保持全局相机令牌池，这增强了相机姿态估计的可靠性，而不会牺牲效率。这些设计使WinT3R在在线重建质量、相机姿态估计和重建速度方面达到了最先进的性能，这在对多种数据集进行的广泛实验中得到了验证。代码和模型在以下网址公开：this https URL。 
+
+---
+# COGITAO: A Visual Reasoning Framework To Study Compositionality & Generalization 
+
+**Title (ZH)**: COGITAO: 一个视觉推理框架，用于研究组合性和泛化能力 
+
+**Authors**: Yassine Taoudi-Benchekroun, Klim Troyan, Pascal Sager, Stefan Gerber, Lukas Tuggener, Benjamin Grewe  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.05249)  
+
+**Abstract**: The ability to compose learned concepts and apply them in novel settings is key to human intelligence, but remains a persistent limitation in state-of-the-art machine learning models. To address this issue, we introduce COGITAO, a modular and extensible data generation framework and benchmark designed to systematically study compositionality and generalization in visual domains. Drawing inspiration from ARC-AGI's problem-setting, COGITAO constructs rule-based tasks which apply a set of transformations to objects in grid-like environments. It supports composition, at adjustable depth, over a set of 28 interoperable transformations, along with extensive control over grid parametrization and object properties. This flexibility enables the creation of millions of unique task rules -- surpassing concurrent datasets by several orders of magnitude -- across a wide range of difficulties, while allowing virtually unlimited sample generation per rule. We provide baseline experiments using state-of-the-art vision models, highlighting their consistent failures to generalize to novel combinations of familiar elements, despite strong in-domain performance. COGITAO is fully open-sourced, including all code and datasets, to support continued research in this field. 
+
+**Abstract (ZH)**: 具备将学习的概念组合并在新的环境中应用的能力是人类智能的关键，但这是当前最先进的机器学习模型的一个持久性限制。为解决这个问题，我们引入了COGITAO，一个模块化和可扩展的数据生成框架和基准，旨在系统性地研究视觉域中的组合性和泛化能力。COGITAO从ARC-AGI的问题设定中汲取灵感，构建基于规则的任务，对网格环境中的对象应用一组变换。它支持调整深度的组合，涉及28个可互操作的变换，并提供了对网格参数化和对象属性的广泛控制。这种灵活性使得能够创建数百万种独特的任务规则——量级远超现有数据集——涵盖广泛的难度级别，同时每种规则几乎可以无限生成样本。我们使用最先进的视觉模型提供了基线实验，强调尽管在领域内表现强劲，这些模型在泛化到熟悉的元素的新组合时仍表现出一致性的失败。COGITAO完全开源，包括所有代码和数据集，以支持对该领域的持续研究。 
+
+---
+# Uncertain but Useful: Leveraging CNN Variability into Data Augmentation 
+
+**Title (ZH)**: 不确定性亦有用：利用CNN变异进行数据增强 
+
+**Authors**: Inés Gonzalez-Pepe, Vinuyan Sivakolunthu, Yohan Chatelain, Tristan Glatard  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.05238)  
+
+**Abstract**: Deep learning (DL) is rapidly advancing neuroimaging by achieving state-of-the-art performance with reduced computation times. Yet the numerical stability of DL models -- particularly during training -- remains underexplored. While inference with DL is relatively stable, training introduces additional variability primarily through iterative stochastic optimization. We investigate this training-time variability using FastSurfer, a CNN-based whole-brain segmentation pipeline. Controlled perturbations are introduced via floating point perturbations and random seeds. We find that: (i) FastSurfer exhibits higher variability compared to that of a traditional neuroimaging pipeline, suggesting that DL inherits and is particularly susceptible to sources of instability present in its predecessors; (ii) ensembles generated with perturbations achieve performance similar to an unperturbed baseline; and (iii) variability effectively produces ensembles of numerical model families that can be repurposed for downstream applications. As a proof of concept, we demonstrate that numerical ensembles can be used as a data augmentation strategy for brain age regression. These findings position training-time variability not only as a reproducibility concern but also as a resource that can be harnessed to improve robustness and enable new applications in neuroimaging. 
+
+**Abstract (ZH)**: 深度学习（DL）正通过实现最佳性能并减少计算时间而迅速推动神经影像学的发展。然而，DL模型在训练过程中的数值稳定性仍较少被探索。尽管在推断过程中DL相对稳定，但训练过程引入了额外的变异性，主要通过迭代的随机优化。我们使用基于CNN的全脑分割管道FastSurfer探讨训练时的变异性。通过引入可控扰动（包括浮点数扰动和随机种子）进行研究，我们发现：（i）FastSurfer表现出比传统神经影像学管道更高的变异性，表明DL继承并特别容易受到其前身存在的不稳定源的影响；（ii）使用扰动生成的集成效果与未扰动的基线相当；（iii）变异性实际上产生了可以重新利用于下游应用的数值模型家族的集成。作为一种概念验证，我们证明数值集成可以作为一种用于脑龄回归的数据增强策略。这些发现不仅将训练时变异性定位为可重现性问题，还定位其为能够被利用以改善鲁棒性和在神经影像学中实现新应用的资源。 
+
+---
+# Towards Efficient Pixel Labeling for Industrial Anomaly Detection and Localization 
+
+**Title (ZH)**: 面向工业异常检测与定位的高效像素标签方法 
+
+**Authors**: Jingqi Wu, Hanxi Li, Lin Yuanbo Wu, Hao Chen, Deyin Liu, Peng Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.05034)  
+
+**Abstract**: Industrial product inspection is often performed using Anomaly Detection (AD) frameworks trained solely on non-defective samples. Although defective samples can be collected during production, leveraging them usually requires pixel-level annotations, limiting scalability. To address this, we propose ADClick, an Interactive Image Segmentation (IIS) algorithm for industrial anomaly detection. ADClick generates pixel-wise anomaly annotations from only a few user clicks and a brief textual description, enabling precise and efficient labeling that significantly improves AD model performance (e.g., AP = 96.1\% on MVTec AD). We further introduce ADClick-Seg, a cross-modal framework that aligns visual features and textual prompts via a prototype-based approach for anomaly detection and localization. By combining pixel-level priors with language-guided cues, ADClick-Seg achieves state-of-the-art results on the challenging ``Multi-class'' AD task (AP = 80.0\%, PRO = 97.5\%, Pixel-AUROC = 99.1\% on MVTec AD). 
+
+**Abstract (ZH)**: 工业产品检测常使用仅基于非缺陷样本训练的异常检测（AD）框架。尽管在生产过程中可以收集缺陷样本，但利用这些样本通常需要像素级标注，限制了其可扩展性。为此，我们提出ADClick，一种用于工业异常检测的交互式图像分割（IIS）算法。ADClick仅通过少量用户点击和简短的文字描述生成像素级异常标注，从而实现精确且高效的标注，显著提高AD模型性能（例如，MVTec AD上的AP = 96.1%）。我们进一步引入ADClick-Seg，这是一种跨模态框架，通过原型基方法对视觉特征和文本提示进行对齐，以实现异常检测和定位。通过结合像素级先验知识与语言导向的提示，ADClick-Seg在具有挑战性的“多类”AD任务上达到最先进的性能（MVTec AD上的AP = 80.0%，PRO = 97.5%，Pixel-AUROC = 99.1%）。 
+
+---
+# SpiderNets: Estimating Fear Ratings of Spider-Related Images with Vision Models 
+
+**Title (ZH)**: SpiderNets：使用视觉模型估算与蜘蛛相关图像的恐惧评分 
+
+**Authors**: Dominik Pegler, David Steyrl, Mengfan Zhang, Alexander Karner, Jozsef Arato, Frank Scharnowski, Filip Melinscak  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.04889)  
+
+**Abstract**: Advances in computer vision have opened new avenues for clinical applications, particularly in computerized exposure therapy where visual stimuli can be dynamically adjusted based on patient responses. As a critical step toward such adaptive systems, we investigated whether pretrained computer vision models can accurately predict fear levels from spider-related images. We adapted three diverse models using transfer learning to predict human fear ratings (on a 0-100 scale) from a standardized dataset of 313 images. The models were evaluated using cross-validation, achieving an average mean absolute error (MAE) between 10.1 and 11.0. Our learning curve analysis revealed that reducing the dataset size significantly harmed performance, though further increases yielded no substantial gains. Explainability assessments showed the models' predictions were based on spider-related features. A category-wise error analysis further identified visual conditions associated with higher errors (e.g., distant views and artificial/painted spiders). These findings demonstrate the potential of explainable computer vision models in predicting fear ratings, highlighting the importance of both model explainability and a sufficient dataset size for developing effective emotion-aware therapeutic technologies. 
+
+**Abstract (ZH)**: 计算机视觉的进步为临床应用开辟了新途径，特别是在计算机化暴露疗法中，可以根据患者反应动态调整视觉刺激。为了实现这样的自适应系统，我们探讨了预训练的计算机视觉模型是否能准确预测与蜘蛛相关的图像所引发的恐惧水平。我们采用了-transfer learning-方法对三种不同的模型进行适应，从包含313张标准化图像的数据集中预测人类恐惧评分（0-100量表）。模型使用交叉验证进行评估，平均绝对误差（MAE）在10.1到11.0之间。我们的学习曲线分析表明，减少数据集大小显著损害了性能，而进一步增加数据集大小并未带来显著的提升。可解释性评估显示，模型的预测主要基于与蜘蛛相关的特征。类别别错误分析进一步指出了与更高错误率相关的视觉条件（例如，远处视角和人工/绘制的蜘蛛）。这些发现表明可解释的计算机视觉模型在预测恐惧评分方面具有潜力，强调了模型可解释性和适当数据集大小在开发有效的情感感知治疗技术中的重要性。 
+
+---
+# PropVG: End-to-End Proposal-Driven Visual Grounding with Multi-Granularity Discrimination 
+
+**Title (ZH)**: PropVG: 全流程多粒度区分驱动的视觉 grounding 
+
+**Authors**: Ming Dai, Wenxuan Cheng, Jiedong Zhuang, Jiang-jiang Liu, Hongshen Zhao, Zhenhua Feng, Wankou Yang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.04833)  
+
+**Abstract**: Recent advances in visual grounding have largely shifted away from traditional proposal-based two-stage frameworks due to their inefficiency and high computational complexity, favoring end-to-end direct reference paradigms. However, these methods rely exclusively on the referred target for supervision, overlooking the potential benefits of prominent prospective targets. Moreover, existing approaches often fail to incorporate multi-granularity discrimination, which is crucial for robust object identification in complex scenarios. To address these limitations, we propose PropVG, an end-to-end proposal-based framework that, to the best of our knowledge, is the first to seamlessly integrate foreground object proposal generation with referential object comprehension without requiring additional detectors. Furthermore, we introduce a Contrastive-based Refer Scoring (CRS) module, which employs contrastive learning at both sentence and word levels to enhance the capability in understanding and distinguishing referred objects. Additionally, we design a Multi-granularity Target Discrimination (MTD) module that fuses object- and semantic-level information to improve the recognition of absent targets. Extensive experiments on gRefCOCO (GREC/GRES), Ref-ZOM, R-RefCOCO, and RefCOCO (REC/RES) benchmarks demonstrate the effectiveness of PropVG. The codes and models are available at this https URL. 
+
+**Abstract (ZH)**: Recent advances in visual grounding have largely shifted away from traditional proposal-based two-stage frameworks due to their inefficiency and high computational complexity, favoring end-to-end direct reference paradigms. However, these methods rely exclusively on the referred target for supervision, overlooking the potential benefits of prominent prospective targets. Moreover, existing approaches often fail to incorporate multi-granularity discrimination, which is crucial for robust object identification in complex scenarios. To address these limitations, we propose PropVG, an end-to-end proposal-based framework that, to the best of our knowledge, is the first to seamlessly integrate foreground object proposal generation with referential object comprehension without requiring additional detectors. Furthermore, we introduce a Contrastive-based Refer Scoring (CRS) module, which employs contrastive learning at both sentence and word levels to enhance the capability in understanding and distinguishing referred objects. Additionally, we design a Multi-granularity Target Discrimination (MTD) module that fuses object- and semantic-level information to improve the recognition of absent targets. Extensive experiments on gRefCOCO (GREC/GRES), Ref-ZOM, R-RefCOCO, and RefCOCO (REC/RES) benchmarks demonstrate the effectiveness of PropVG. The codes and models are available at this <https://github.com/your-repository>. 
+
+---
+# Exploring Non-Local Spatial-Angular Correlations with a Hybrid Mamba-Transformer Framework for Light Field Super-Resolution 
+
+**Title (ZH)**: 基于Hybrid Mamba-Transformer框架探索非局部空间-角度相关性以实现光场超分辨率 
+
+**Authors**: Haosong Liu, Xiancheng Zhu, Huanqiang Zeng, Jianqing Zhu, Jiuwen Cao, Junhui Hou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.04824)  
+
+**Abstract**: Recently, Mamba-based methods, with its advantage in long-range information modeling and linear complexity, have shown great potential in optimizing both computational cost and performance of light field image super-resolution (LFSR). However, current multi-directional scanning strategies lead to inefficient and redundant feature extraction when applied to complex LF data. To overcome this challenge, we propose a Subspace Simple Scanning (Sub-SS) strategy, based on which we design the Subspace Simple Mamba Block (SSMB) to achieve more efficient and precise feature extraction. Furthermore, we propose a dual-stage modeling strategy to address the limitation of state space in preserving spatial-angular and disparity information, thereby enabling a more comprehensive exploration of non-local spatial-angular correlations. Specifically, in stage I, we introduce the Spatial-Angular Residual Subspace Mamba Block (SA-RSMB) for shallow spatial-angular feature extraction; in stage II, we use a dual-branch parallel structure combining the Epipolar Plane Mamba Block (EPMB) and Epipolar Plane Transformer Block (EPTB) for deep epipolar feature refinement. Building upon meticulously designed modules and strategies, we introduce a hybrid Mamba-Transformer framework, termed LFMT. LFMT integrates the strengths of Mamba and Transformer models for LFSR, enabling comprehensive information exploration across spatial, angular, and epipolar-plane domains. Experimental results demonstrate that LFMT significantly outperforms current state-of-the-art methods in LFSR, achieving substantial improvements in performance while maintaining low computational complexity on both real-word and synthetic LF datasets. 
+
+**Abstract (ZH)**: 基于子空间简单扫描的轻场图像超分辨率Mamba-Transformer框架（LFMT） 
+
+---
+# Toward Accessible Dermatology: Skin Lesion Classification Using Deep Learning Models on Mobile-Acquired Images 
+
+**Title (ZH)**: 面向无障碍皮肤科：基于移动获取图像的深度学习模型皮肤病变分类 
+
+**Authors**: Asif Newaz, Masum Mushfiq Ishti, A Z M Ashraful Azam, Asif Ur Rahman Adib  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.04800)  
+
+**Abstract**: Skin diseases are among the most prevalent health concerns worldwide, yet conventional diagnostic methods are often costly, complex, and unavailable in low-resource settings. Automated classification using deep learning has emerged as a promising alternative, but existing studies are mostly limited to dermoscopic datasets and a narrow range of disease classes. In this work, we curate a large dataset of over 50 skin disease categories captured with mobile devices, making it more representative of real-world conditions. We evaluate multiple convolutional neural networks and Transformer-based architectures, demonstrating that Transformer models, particularly the Swin Transformer, achieve superior performance by effectively capturing global contextual features. To enhance interpretability, we incorporate Gradient-weighted Class Activation Mapping (Grad-CAM), which highlights clinically relevant regions and provides transparency in model predictions. Our results underscore the potential of Transformer-based approaches for mobile-acquired skin lesion classification, paving the way toward accessible AI-assisted dermatological screening and early diagnosis in resource-limited environments. 
+
+**Abstract (ZH)**: 使用移动设备采集的大量皮肤疾病类别数据集：基于Transformer的方法在移动获取皮肤病变分类中的应用 
+
+---
+# MCANet: A Multi-Scale Class-Specific Attention Network for Multi-Label Post-Hurricane Damage Assessment using UAV Imagery 
+
+**Title (ZH)**: MCANet：一种基于多尺度类别特定注意力机制的无人机图像多标签飓风灾后损害评估网络 
+
+**Authors**: Zhangding Liu, Neda Mohammadi, John E. Taylor  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.04757)  
+
+**Abstract**: Rapid and accurate post-hurricane damage assessment is vital for disaster response and recovery. Yet existing CNN-based methods struggle to capture multi-scale spatial features and to distinguish visually similar or co-occurring damage types. To address these issues, we propose MCANet, a multi-label classification framework that learns multi-scale representations and adaptively attends to spatially relevant regions for each damage category. MCANet employs a Res2Net-based hierarchical backbone to enrich spatial context across scales and a multi-head class-specific residual attention module to enhance discrimination. Each attention branch focuses on different spatial granularities, balancing local detail with global context. We evaluate MCANet on the RescueNet dataset of 4,494 UAV images collected after Hurricane Michael. MCANet achieves a mean average precision (mAP) of 91.75%, outperforming ResNet, Res2Net, VGG, MobileNet, EfficientNet, and ViT. With eight attention heads, performance further improves to 92.35%, boosting average precision for challenging classes such as Road Blocked by over 6%. Class activation mapping confirms MCANet's ability to localize damage-relevant regions, supporting interpretability. Outputs from MCANet can inform post-disaster risk mapping, emergency routing, and digital twin-based disaster response. Future work could integrate disaster-specific knowledge graphs and multimodal large language models to improve adaptability to unseen disasters and enrich semantic understanding for real-world decision-making. 
+
+**Abstract (ZH)**: 快速而精准的飓风灾后损害评估对于灾害应对和恢复至关重要。然而，现有的基于CNN的方法难以捕捉多尺度空间特征，也无法区分视觉上相似或同时出现的损害类型。为此，我们提出了一种名为MCANet的多标签分类框架，该框架能够学习多尺度表示并在每个损害类别中自适应地关注相关空间区域。MCANet采用基于Res2Net的分层骨干网络来丰富不同尺度的空间上下文，并采用多头类特异性残留注意力模块来提高区分能力。每个注意力分支关注不同的空间粒度，平衡局部细节与全局上下文。我们在飓风迈克尔灾后收集的4,494张无人机图像组成的RescueNet数据集上评估了MCANet。MCANet达到了91.75%的平均精确度（mAP），超过了ResNet、Res2Net、VGG、MobileNet、EfficientNet和ViT。通过使用八个注意力头，性能进一步提升至92.35%，特别是在“道路阻断”等具有挑战性的类别中，精确度提高了6%以上。激活图确认了MCANet在定位损害相关区域方面的能力，支持其可解释性。MCANet的输出可用于灾后风险映射、应急路线规划和基于数字孪生的灾害应对。未来的研究可以结合特定灾难的知识图谱和多模态大型语言模型，以提高对未知灾难的适应性，并丰富现实世界决策的语义理解。 
+
+---
+# Enhancing Self-Driving Segmentation in Adverse Weather Conditions: A Dual Uncertainty-Aware Training Approach to SAM Optimization 
+
+**Title (ZH)**: 在恶劣天气条件下的自动驾驶分割增强：一种面向SAM优化的双不确定性感知训练方法 
+
+**Authors**: Dharsan Ravindran, Kevin Wang, Zhuoyuan Cao, Saleh Abdelrahman, Jeffery Wu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.04735)  
+
+**Abstract**: Recent advances in vision foundation models, such as the Segment Anything Model (SAM) and its successor SAM2, have achieved state-of-the-art performance on general image segmentation benchmarks. However, these models struggle in adverse weather conditions where visual ambiguity is high, largely due to their lack of uncertainty quantification. Inspired by progress in medical imaging, where uncertainty-aware training has improved reliability in ambiguous cases, we investigate two approaches to enhance segmentation robustness for autonomous driving. First, we introduce a multi-step finetuning procedure for SAM2 that incorporates uncertainty metrics directly into the loss function, improving overall scene recognition. Second, we adapt the Uncertainty-Aware Adapter (UAT), originally designed for medical image segmentation, to driving contexts. We evaluate both methods on CamVid, BDD100K, and GTA driving datasets. Experiments show that UAT-SAM outperforms standard SAM in extreme weather, while SAM2 with uncertainty-aware loss achieves improved performance across diverse driving scenes. These findings underscore the value of explicit uncertainty modeling for safety-critical autonomous driving in challenging environments. 
+
+**Abstract (ZH)**: 近期，视觉基础模型的进展，如Segment Anything Model (SAM)及其继任者SAM2，在通用图像分割基准测试中取得了最先进的性能。然而，这些模型在高视觉模糊的恶劣天气条件下表现不佳，主要原因在于它们缺乏不确定性量化。受医学成像领域不确定性意识训练提高复杂情况下可靠性的进展启发，我们研究了两种方法以增强自动驾驶的分割鲁棒性。首先，我们引入了一种针对SAM2的多步微调程序，直接将不确定性指标纳入损失函数，以提高整体场景识别能力。其次，我们将最初为医学图像分割设计的不确定性意识适配器（UAT）调整为适应驾驶场景。我们在CamVid、BDD100K和GTA驾驶数据集上评估了这两种方法。实验结果显示，在极端天气条件下，UAT-SAM优于标准SAM，而SAM2结合不确定性意识损失函数在各种驾驶场景中均表现出更优的性能。这些发现强调了在挑战性环境中进行安全自动驾驶时明确的不确定性建模的价值。 
+
+---
+# VCMamba: Bridging Convolutions with Multi-Directional Mamba for Efficient Visual Representation 
+
+**Title (ZH)**: VCMamba：多方向Mamba与卷积的桥梁构建高效视觉表示 
+
+**Authors**: Mustafa Munir, Alex Zhang, Radu Marculescu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.04669)  
+
+**Abstract**: Recent advances in Vision Transformers (ViTs) and State Space Models (SSMs) have challenged the dominance of Convolutional Neural Networks (CNNs) in computer vision. ViTs excel at capturing global context, and SSMs like Mamba offer linear complexity for long sequences, yet they do not capture fine-grained local features as effectively as CNNs. Conversely, CNNs possess strong inductive biases for local features but lack the global reasoning capabilities of transformers and Mamba. To bridge this gap, we introduce \textit{VCMamba}, a novel vision backbone that integrates the strengths of CNNs and multi-directional Mamba SSMs. VCMamba employs a convolutional stem and a hierarchical structure with convolutional blocks in its early stages to extract rich local features. These convolutional blocks are then processed by later stages incorporating multi-directional Mamba blocks designed to efficiently model long-range dependencies and global context. This hybrid design allows for superior feature representation while maintaining linear complexity with respect to image resolution. We demonstrate VCMamba's effectiveness through extensive experiments on ImageNet-1K classification and ADE20K semantic segmentation. Our VCMamba-B achieves 82.6% top-1 accuracy on ImageNet-1K, surpassing PlainMamba-L3 by 0.3% with 37% fewer parameters, and outperforming Vision GNN-B by 0.3% with 64% fewer parameters. Furthermore, VCMamba-B obtains 47.1 mIoU on ADE20K, exceeding EfficientFormer-L7 by 2.0 mIoU while utilizing 62% fewer parameters. Code is available at this https URL. 
+
+**Abstract (ZH)**: Recent Advances in Vision Transformers (ViTs) and State Space Models (SSMs) Have Challenged the Dominance of Convolutional Neural Networks (CNNs) in Computer Vision. To Bridge the Gap Between Local Feature Extraction and Global Reasoning, We Introduce VCMamba, a Novel Vision Backbone Integrating CNNs and Multi-Directional Mamba SSMs. 
+
+---
+# Teacher-Student Model for Detecting and Classifying Mitosis in the MIDOG 2025 Challenge 
+
+**Title (ZH)**: 教师-学生模型在MIDOG 2025挑战中检测和分类有丝分裂 
+
+**Authors**: Seungho Choe, Xiaoli Qin, Abubakr Shafique, Amanda Dy, Susan Done, Dimitrios Androutsos, April Khademi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.03614)  
+
+**Abstract**: Counting mitotic figures is time-intensive for pathologists and leads to inter-observer variability. Artificial intelligence (AI) promises a solution by automatically detecting mitotic figures while maintaining decision consistency. However, AI tools are susceptible to domain shift, where a significant drop in performance can occur due to differences in the training and testing sets, including morphological diversity between organs, species, and variations in staining protocols. Furthermore, the number of mitoses is much less than the count of normal nuclei, which introduces severely imbalanced data for the detection task. In this work, we formulate mitosis detection as a pixel-level segmentation and propose a teacher-student model that simultaneously addresses mitosis detection (Track 1) and atypical mitosis classification (Track 2). Our method is based on a UNet segmentation backbone that integrates domain generalization modules, namely contrastive representation learning and domain-adversarial training. A teacher-student strategy is employed to generate pixel-level pseudo-masks not only for annotated mitoses and hard negatives but also for normal nuclei, thereby enhancing feature discrimination and improving robustness against domain shift. For the classification task, we introduce a multi-scale CNN classifier that leverages feature maps from the segmentation model within a multi-task learning paradigm. On the preliminary test set, the algorithm achieved an F1 score of 0.7660 in Track 1 and balanced accuracy of 0.8414 in Track 2, demonstrating the effectiveness of integrating segmentation-based detection and classification into a unified framework for robust mitosis analysis. 
+
+**Abstract (ZH)**: 基于像素级分割的教师-学生模型在分裂相检测和异常分裂相分类中的应用 
+
+---
+# MLP-SRGAN: A Single-Dimension Super Resolution GAN using MLP-Mixer 
+
+**Title (ZH)**: MLP-SRGAN: 一种使用MLP-Mixer的一维超级分辨率生成对抗网络 
+
+**Authors**: Samir Mitha, Seungho Choe, Pejman Jahbedar Maralani, Alan R. Moody, April Khademi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2303.06298)  
+
+**Abstract**: We propose a novel architecture called MLP-SRGAN, which is a single-dimension Super Resolution Generative Adversarial Network (SRGAN) that utilizes Multi-Layer Perceptron Mixers (MLP-Mixers) along with convolutional layers to upsample in the slice direction. MLP-SRGAN is trained and validated using high resolution (HR) FLAIR MRI from the MSSEG2 challenge dataset. The method was applied to three multicentre FLAIR datasets (CAIN, ADNI, CCNA) of images with low spatial resolution in the slice dimension to examine performance on held-out (unseen) clinical data. Upsampled results are compared to several state-of-the-art SR networks. For images with high resolution (HR) ground truths, peak-signal-to-noise-ratio (PSNR) and structural similarity index (SSIM) are used to measure upsampling performance. Several new structural, no-reference image quality metrics were proposed to quantify sharpness (edge strength), noise (entropy), and blurriness (low frequency information) in the absence of ground truths. Results show MLP-SRGAN results in sharper edges, less blurring, preserves more texture and fine-anatomical detail, with fewer parameters, faster training/evaluation time, and smaller model size than existing methods. Code for MLP-SRGAN training and inference, data generators, models and no-reference image quality metrics will be available at this https URL. 
+
+**Abstract (ZH)**: 我们提出了一种名为MLP-SRGAN的新架构，这是一种利用多层感知器混合器（MLP-Mixers）和卷积层在切片方向上进行上采样的单维度超分辨率生成对抗网络（SRGAN）。MLP-SRGAN使用MRI MSSEG2挑战数据集中的高分辨率（HR）FLAIR MRI进行训练和验证。该方法应用于三个多中心FLAIR数据集（CAIN、ADNI、CCNA），这些数据集中的图像在切片维度上的空间分辨率较低，以检查其在未见过的临床数据上的性能。上采样结果与几种最新的SR网络进行了比较。对于具有高分辨率（HR）ground truth的图像，峰值信噪比（PSNR）和结构相似性指数（SSIM）被用来衡量上采样性能。提出了几种新的无参考图像质量度量标准，以在没有ground truth的情况下量化锐度（边缘强度）、噪声（熵）和模糊度（低频信息）。结果表明，MLP-SRGAN在边缘更锐利、模糊更少、保留更多纹理和精细解剖细节、参数更少、训练/评估时间更快以及模型更小方面优于现有方法。MLP-SRGAN的训练和推理代码、数据生成器、模型和无参考图像质量度量标准将在此处提供。 
+
+---
