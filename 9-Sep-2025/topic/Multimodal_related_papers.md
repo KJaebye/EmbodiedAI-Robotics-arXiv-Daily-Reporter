@@ -1,0 +1,143 @@
+# Multi-Modal Camera-Based Detection of Vulnerable Road Users 
+
+**Title (ZH)**: 多模态摄像头检测脆弱道路使用者 
+
+**Authors**: Penelope Brown, Julie Stephany Berrio Perez, Mao Shan, Stewart Worrall  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.06333)  
+
+**Abstract**: Vulnerable road users (VRUs) such as pedestrians, cyclists, and motorcyclists represent more than half of global traffic deaths, yet their detection remains challenging in poor lighting, adverse weather, and unbalanced data sets. This paper presents a multimodal detection framework that integrates RGB and thermal infrared imaging with a fine-tuned YOLOv8 model. Training leveraged KITTI, BDD100K, and Teledyne FLIR datasets, with class re-weighting and light augmentations to improve minority-class performance and robustness, experiments show that 640-pixel resolution and partial backbone freezing optimise accuracy and efficiency, while class-weighted losses enhance recall for rare VRUs. Results highlight that thermal models achieve the highest precision, and RGB-to-thermal augmentation boosts recall, demonstrating the potential of multimodal detection to improve VRU safety at intersections. 
+
+**Abstract (ZH)**: 脆弱道路使用者（VRU）如行人、骑行者和摩托车手占全球道路交通死亡人数的超过一半，但在不良光照、恶劣天气和数据集不平衡的情况下，其检测仍然颇具挑战性。本文提出了一种多模态检测框架，结合了RGB和热红外成像，并使用微调后的YOLOv8模型。训练数据集包括KITTI、BDD100K和Teledyne FLIR数据集，通过类别重加权和光照增强以提高少数类别性能和鲁棒性。实验结果表明，640像素分辨率和部分主干网络冻结能优化准确性和效率，而类别加权损失能够提升罕见VRU的召回率。研究结果表明，热红外模型具有最高的精确度，并且RGB到热红外的增强能够提升召回率，这展示了多模态检测在交叉口提高VRU安全性的潜在能力。 
+
+---
+# OccVLA: Vision-Language-Action Model with Implicit 3D Occupancy Supervision 
+
+**Title (ZH)**: OccVLA：带有隐式3D占据监督的视觉-语言-动作模型 
+
+**Authors**: Ruixun Liu, Lingyu Kong, Derun Li, Hang Zhao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.05578)  
+
+**Abstract**: Multimodal large language models (MLLMs) have shown strong vision-language reasoning abilities but still lack robust 3D spatial understanding, which is critical for autonomous driving. This limitation stems from two key challenges: (1) the difficulty of constructing accessible yet effective 3D representations without expensive manual annotations, and (2) the loss of fine-grained spatial details in VLMs due to the absence of large-scale 3D vision-language pretraining. To address these challenges, we propose OccVLA, a novel framework that integrates 3D occupancy representations into a unified multimodal reasoning process. Unlike prior approaches that rely on explicit 3D inputs, OccVLA treats dense 3D occupancy as both a predictive output and a supervisory signal, enabling the model to learn fine-grained spatial structures directly from 2D visual inputs. The occupancy predictions are regarded as implicit reasoning processes and can be skipped during inference without performance degradation, thereby adding no extra computational overhead. OccVLA achieves state-of-the-art results on the nuScenes benchmark for trajectory planning and demonstrates superior performance on 3D visual question-answering tasks, offering a scalable, interpretable, and fully vision-based solution for autonomous driving. 
+
+**Abstract (ZH)**: 多模态大型语言模型（MLLMs）在视觉语言推理方面表现出色，但仍缺乏稳健的三维空间理解能力，这在自动驾驶中至关重要。这一限制源于两大关键挑战：（1）在没有昂贵的手动注释的情况下，难以构建可访问且有效的三维表示，以及（2）由于缺乏大规模三维视觉语言预训练，视觉语言模型中会丢失详细的空间细节。为解决这些问题，我们提出了一种新的框架OccVLA，该框架将三维占有率表示整合到统一的多模态推理过程中。与依赖显式三维输入的先前方法不同，OccVLA 将密集的三维占有率作为预测输出和监督信号来处理，使模型能够直接从二维视觉输入中学习精细的空间结构。占有率预测被视为隐式的推理过程，在推断过程中可以跳过而不会降低性能，从而不再增加额外的计算开销。OccVLA 在 nuScenes 轨迹规划基准上达到了最佳结果，并在三维视觉问答任务上表现出优越性能，提供了一种可扩展、可解析且完全基于视觉的自动驾驶解决方案。 
+
+---
+# OpenEgo: A Large-Scale Multimodal Egocentric Dataset for Dexterous Manipulation 
+
+**Title (ZH)**: OpenEgo: 一种大规模多模态第一人称数据集用于灵巧操作 
+
+**Authors**: Ahad Jawaid, Yu Xiang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.05513)  
+
+**Abstract**: Egocentric human videos provide scalable demonstrations for imitation learning, but existing corpora often lack either fine-grained, temporally localized action descriptions or dexterous hand annotations. We introduce OpenEgo, a multimodal egocentric manipulation dataset with standardized hand-pose annotations and intention-aligned action primitives. OpenEgo totals 1107 hours across six public datasets, covering 290 manipulation tasks in 600+ environments. We unify hand-pose layouts and provide descriptive, timestamped action primitives. To validate its utility, we train language-conditioned imitation-learning policies to predict dexterous hand trajectories. OpenEgo is designed to lower the barrier to learning dexterous manipulation from egocentric video and to support reproducible research in vision-language-action learning. All resources and instructions will be released at this http URL. 
+
+**Abstract (ZH)**: 第一人称人类视频提供了模仿学习的可扩展示例，但现有数据集往往缺乏精细的时间局部化动作描述或灵巧的手部标注。我们介绍了OpenEgo，一个包含标准化手部姿态标注和意图对齐动作基元的多模态第一人称操作数据集。OpenEgo总计包含1107小时的数据，涵盖600多种环境中的290种操作任务。我们统一了手部姿态布局并提供了描述性的时间戳标注动作基元。为验证其有效性，我们训练了基于语言的模仿学习策略来预测灵巧的手部轨迹。OpenEgo旨在降低从第一人称视频学习灵巧操作的门槛，并支持视觉-语言-动作学习中的可重复研究。所有资源和说明将在以下网址发布。 
+
+---
+# MVRS: The Multimodal Virtual Reality Stimuli-based Emotion Recognition Dataset 
+
+**Title (ZH)**: MVRS：基于多模态虚拟现实刺激的情绪识别数据集 
+
+**Authors**: Seyed Muhammad Hossein Mousavi, Atiye Ilanloo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.05330)  
+
+**Abstract**: Automatic emotion recognition has become increasingly important with the rise of AI, especially in fields like healthcare, education, and automotive systems. However, there is a lack of multimodal datasets, particularly involving body motion and physiological signals, which limits progress in the field. To address this, the MVRS dataset is introduced, featuring synchronized recordings from 13 participants aged 12 to 60 exposed to VR based emotional stimuli (relaxation, fear, stress, sadness, joy). Data were collected using eye tracking (via webcam in a VR headset), body motion (Kinect v2), and EMG and GSR signals (Arduino UNO), all timestamp aligned. Participants followed a unified protocol with consent and questionnaires. Features from each modality were extracted, fused using early and late fusion techniques, and evaluated with classifiers to confirm the datasets quality and emotion separability, making MVRS a valuable contribution to multimodal affective computing. 
+
+**Abstract (ZH)**: 自动情绪识别随着AI的兴起变得越来越重要，特别是在医疗保健、教育和汽车系统等领域。然而，缺乏多模态数据集，特别是涉及身体运动和生理信号的数据集，限制了该领域的发展。为了解决这一问题，引入了MVRS数据集，该数据集包含了12至60岁之间的13名参与者在基于VR的情绪刺激（放松、恐惧、压力、悲伤、快乐）下的同步记录。数据通过VR头盔内置 webcam的眼动追踪、Kinect v2的身体运动以及Arduino UNO的EMG和GSR信号采集，并且时间戳对齐。参与者遵循统一的协议并在参与前签署了知情同意书并填写了问卷。每个模态的特征被提取，并使用早期融合和晚期融合技术进行融合，然后通过分类器进行评估以确认数据集的质量和情绪可分性，使MVRS成为多模态情感计算的重要贡献。 
+
+---
+# Interleaving Reasoning for Better Text-to-Image Generation 
+
+**Title (ZH)**: 交错推理以提高文本到图像生成质量 
+
+**Authors**: Wenxuan Huang, Shuang Chen, Zheyong Xie, Shaosheng Cao, Shixiang Tang, Yufan Shen, Qingyu Yin, Wenbo Hu, Xiaoman Wang, Yuntian Tang, Junbo Qiao, Yue Guo, Yao Hu, Zhenfei Yin, Philip Torr, Yu Cheng, Wanli Ouyang, Shaohui Lin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.06945)  
+
+**Abstract**: Unified multimodal understanding and generation models recently have achieve significant improvement in image generation capability, yet a large gap remains in instruction following and detail preservation compared to systems that tightly couple comprehension with generation such as GPT-4o. Motivated by recent advances in interleaving reasoning, we explore whether such reasoning can further improve Text-to-Image (T2I) generation. We introduce Interleaving Reasoning Generation (IRG), a framework that alternates between text-based thinking and image synthesis: the model first produces a text-based thinking to guide an initial image, then reflects on the result to refine fine-grained details, visual quality, and aesthetics while preserving semantics. To train IRG effectively, we propose Interleaving Reasoning Generation Learning (IRGL), which targets two sub-goals: (1) strengthening the initial think-and-generate stage to establish core content and base quality, and (2) enabling high-quality textual reflection and faithful implementation of those refinements in a subsequent image. We curate IRGL-300K, a dataset organized into six decomposed learning modes that jointly cover learning text-based thinking, and full thinking-image trajectories. Starting from a unified foundation model that natively emits interleaved text-image outputs, our two-stage training first builds robust thinking and reflection, then efficiently tunes the IRG pipeline in the full thinking-image trajectory data. Extensive experiments show SoTA performance, yielding absolute gains of 5-10 points on GenEval, WISE, TIIF, GenAI-Bench, and OneIG-EN, alongside substantial improvements in visual quality and fine-grained fidelity. The code, model weights and datasets will be released in: this https URL . 
+
+**Abstract (ZH)**: 统一多模态理解和生成模型在图像生成能力方面取得了显著进步，但在指令遵循和细节保留方面仍与紧密耦合理解和生成的系统（如GPT-4o）存在较大差距。受交错推理最近进展的启发，我们探索此类推理是否能进一步改善文本到图像（T2I）生成。我们引入交错推理生成（IRG）框架，该框架交替进行基于文本的思考和图像合成：模型首先生成基于文本的思考以引导初始图像，然后反思结果，进一步细化图像的细节、视觉质量及美观性，同时保留语义。为了有效训练IRG，我们提出了交错推理生成学习（IRGL），该方法旨在实现两个子目标：（1）强化初始思考与生成阶段，以建立核心内容和基本质量；（2）在后续图像中实现高质量的文本反思及忠实的细节改进。我们精心策划了包含六种分解学习模式的IRGL-300K数据集，这些模式共同涵盖了基于文本的思考学习和完整的思考-图像轨迹。从一款原生输出交错文本-图像输出的统一基础模型出发，我们的两阶段训练首先构建稳健的思考与反思，然后高效地调整IRG管道在完整的思考-图像轨迹数据中。广泛实验表明，该方法在GenEval、WISE、TIIF、GenAI-Bench和OneIG-EN等基准测试中达到了最先进的性能，同时还显著提高了视觉质量和细节保真度。代码、模型权重和数据集将在以下链接发布：this https URL。 
+
+---
+# Integrating Spatial and Semantic Embeddings for Stereo Sound Event Localization in Videos 
+
+**Title (ZH)**: 将空间和语义嵌入集成应用于视频中的立体声事件定位 
+
+**Authors**: Davide Berghi, Philip J. B. Jackson  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.06598)  
+
+**Abstract**: In this study, we address the multimodal task of stereo sound event localization and detection with source distance estimation (3D SELD) in regular video content. 3D SELD is a complex task that combines temporal event classification with spatial localization, requiring reasoning across spatial, temporal, and semantic dimensions. The last is arguably the most challenging to model. Traditional SELD approaches typically rely on multichannel input, limiting their capacity to benefit from large-scale pre-training due to data constraints. To overcome this, we enhance a standard SELD architecture with semantic information by integrating pre-trained, contrastive language-aligned models: CLAP for audio and OWL-ViT for visual inputs. These embeddings are incorporated into a modified Conformer module tailored for multimodal fusion, which we refer to as the Cross-Modal Conformer. We perform an ablation study on the development set of the DCASE2025 Task3 Stereo SELD Dataset to assess the individual contributions of the language-aligned models and benchmark against the DCASE Task 3 baseline systems. Additionally, we detail the curation process of large synthetic audio and audio-visual datasets used for model pre-training. These datasets were further expanded through left-right channel swapping augmentation. Our approach, combining extensive pre-training, model ensembling, and visual post-processing, achieved second rank in the DCASE 2025 Challenge Task 3 (Track B), underscoring the effectiveness of our method. Future work will explore the modality-specific contributions and architectural refinements. 
+
+**Abstract (ZH)**: 本研究探讨了在常规视频内容中进行立体声声源事件定位与检测（3D SELD）的多模态任务，同时估计声源距离。3D SELD 是一个结合了时间事件分类与空间定位的复杂任务，需要在空间、时间和语义维度上进行推理。语义维度是最难建模的部分。传统 SELD 方法通常依赖多通道输入，由于数据限制，难以充分利用大规模预训练。为此，我们通过将预先训练的对比学习对齐语言模型（CLAP）应用于音频输入和 OWL-ViT 应用于视觉输入，增强了标准 SELD 架构，并将这些嵌入整合到一个针对多模态融合修改的 Conformer 模块中，称其为跨模态 Conformer。我们在 DCASE2025 任务3立体声 SELD 数据集的开发集上进行了消融研究，评估了语言对齐模型的个体贡献，并与 DCASE 任务3基线系统进行了基准测试。此外，我们详细介绍了用于模型预训练的巨大合成音频和视听数据集的制作过程，并通过左右通道交换增强进一步扩展了这些数据集。我们的方法结合了 extensive 预训练、模型集成和视觉后处理，在 DCASE 2025 挑战任务3（Track B）中取得了第二名，证明了该方法的有效性。未来的工作将探索模态特异性贡献和架构改进。 
+
+---
+# QualityFM: a Multimodal Physiological Signal Foundation Model with Self-Distillation for Signal Quality Challenges in Critically Ill Patients 
+
+**Title (ZH)**: QualityFM：一种用于重症患者信号质量挑战的多模态生理信号基础模型与自蒸馏方法 
+
+**Authors**: Zongheng Guo, Tao Chen, Manuela Ferrario  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.06516)  
+
+**Abstract**: Photoplethysmogram (PPG) and electrocardiogram (ECG) are commonly recorded in intesive care unit (ICU) and operating room (OR). However, the high incidence of poor, incomplete, and inconsistent signal quality, can lead to false alarms or diagnostic inaccuracies. The methods explored so far suffer from limited generalizability, reliance on extensive labeled data, and poor cross-task transferability. To overcome these challenges, we introduce QualityFM, a novel multimodal foundation model for these physiological signals, designed to acquire a general-purpose understanding of signal quality. Our model is pre-trained on an large-scale dataset comprising over 21 million 30-second waveforms and 179,757 hours of data. Our approach involves a dual-track architecture that processes paired physiological signals of differing quality, leveraging a self-distillation strategy where an encoder for high-quality signals is used to guide the training of an encoder for low-quality signals. To efficiently handle long sequential signals and capture essential local quasi-periodic patterns, we integrate a windowed sparse attention mechanism within our Transformer-based model. Furthermore, a composite loss function, which combines direct distillation loss on encoder outputs with indirect reconstruction loss based on power and phase spectra, ensures the preservation of frequency-domain characteristics of the signals. We pre-train three models with varying parameter counts (9.6 M to 319 M) and demonstrate their efficacy and practical value through transfer learning on three distinct clinical tasks: false alarm of ventricular tachycardia detection, the identification of atrial fibrillation and the estimation of arterial blood pressure (ABP) from PPG and ECG signals. 
+
+**Abstract (ZH)**: 光电容积描记信号（PPG）和心电图（ECG）在重症监护室（ICU）和手术室（OR）中常见记录。然而，信号质量差、不完整和不一致的高发性可能导致误报警或诊断错误。迄今为止探索的方法受限于泛化能力有限、对大量标注数据的依赖以及跨任务迁移性差等问题。为克服这些挑战，我们提出了一种名为QualityFM的新型多模态基础模型，旨在获取信号质量的通用理解。该模型在包含超过2100万个30秒波形和179757小时数据的大规模数据集上进行预训练。我们的方法涉及一种双轨架构，处理不同质量的配对生理信号，通过自蒸馏策略，高质量信号编码器用于指导低质量信号编码器的训练。为高效处理长序列信号并捕获重要局部准周期模式，我们在基于Transformer的模型中整合了窗口稀疏注意力机制。此外，结合直接蒸馏损失和基于功率谱和相位谱的间接重构损失的综合损失函数，确保信号频域特征的保留。我们分别以不同参数量（9.6 M至319 M）预训练三个模型，并通过在三种不同的临床任务中进行迁移学习，展示了其有效性及实用价值：心室颤动误报警检测、心房颤动识别以及从PPG和ECG信号估计动脉血压（ABP）。 
+
+---
+# MeanFlow-Accelerated Multimodal Video-to-Audio Synthesis via One-Step Generation 
+
+**Title (ZH)**: 基于MeanFlow加速的一步生成多模态视频到音频合成 
+
+**Authors**: Xiaoran Yang, Jianxuan Yang, Xinyue Guo, Haoyu Wang, Ningning Pan, Gongping Huang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.06389)  
+
+**Abstract**: A key challenge in synthesizing audios from silent videos is the inherent trade-off between synthesis quality and inference efficiency in existing methods. For instance, flow matching based models rely on modeling instantaneous velocity, inherently require an iterative sampling process, leading to slow inference speeds. To address this efficiency bottleneck, we introduce a MeanFlow-accelerated model that characterizes flow fields using average velocity, enabling one-step generation and thereby significantly accelerating multimodal video-to-audio (VTA) synthesis while preserving audio quality, semantic alignment, and temporal synchronization. Furthermore, a scalar rescaling mechanism is employed to balance conditional and unconditional predictions when classifier-free guidance (CFG) is applied, effectively mitigating CFG-induced distortions in one step generation. Since the audio synthesis network is jointly trained with multimodal conditions, we further evaluate it on text-to-audio (TTA) synthesis task. Experimental results demonstrate that incorporating MeanFlow into the network significantly improves inference speed without compromising perceptual quality on both VTA and TTA synthesis tasks. 
+
+**Abstract (ZH)**: 从静默视频合成音频的关键挑战在于现有方法中合成质量与推理效率之间的固有trade-off。为此，我们提出一种MeanFlow加速模型，采用平均速度表征流场，实现一步生成，从而显著加速多模态视频到音频（VTA）合成，同时保持音频质量、语义对齐和时间同步。此外，还引入了一种尺度缩放机制，在应用无条件引导（CFG）时平衡条件和非条件预测，有效地在一步生成中减轻CFG引起的失真。由于音频合成网络与多模态条件联合训练，进一步在文本到音频（TTA）合成任务上进行评估。实验结果表明，将MeanFlow纳入网络可显著提高推理速度，而不影响VTA和TTA合成任务上的感知质量。 
+
+---
+# Knowledge-Augmented Vision Language Models for Underwater Bioacoustic Spectrogram Analysis 
+
+**Title (ZH)**: 知识增强的视觉语言模型在水下生物声谱分析中的应用 
+
+**Authors**: Ragib Amin Nihal, Benjamin Yen, Takeshi Ashizawa, Kazuhiro Nakadai  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.05703)  
+
+**Abstract**: Marine mammal vocalization analysis depends on interpreting bioacoustic spectrograms. Vision Language Models (VLMs) are not trained on these domain-specific visualizations. We investigate whether VLMs can extract meaningful patterns from spectrograms visually. Our framework integrates VLM interpretation with LLM-based validation to build domain knowledge. This enables adaptation to acoustic data without manual annotation or model retraining. 
+
+**Abstract (ZH)**: marine哺乳动物声音分析依赖于bioacoustic声谱图的解释。视觉语言模型（VLMs）未在这些领域特定的可视化上进行训练。我们研究了VLMs是否可以从声谱图中视觉提取有意义的模式。我们的框架将VLM解析与基于LLM的验证相结合，构建领域知识，从而实现对声学数据的适应，无需手动标注或模型重新训练。 
+
+---
+# Causal Debiasing Medical Multimodal Representation Learning with Missing Modalities 
+
+**Title (ZH)**: 因果去偏见医学多模态表示学习中的缺失模态处理 
+
+**Authors**: Xiaoguang Zhu, Lianlong Sun, Yang Liu, Pengyi Jiang, Uma Srivatsa, Nipavan Chiamvimonvat, Vladimir Filkov  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.05615)  
+
+**Abstract**: Medical multimodal representation learning aims to integrate heterogeneous clinical data into unified patient representations to support predictive modeling, which remains an essential yet challenging task in the medical data mining community. However, real-world medical datasets often suffer from missing modalities due to cost, protocol, or patient-specific constraints. Existing methods primarily address this issue by learning from the available observations in either the raw data space or feature space, but typically neglect the underlying bias introduced by the data acquisition process itself. In this work, we identify two types of biases that hinder model generalization: missingness bias, which results from non-random patterns in modality availability, and distribution bias, which arises from latent confounders that influence both observed features and outcomes. To address these challenges, we perform a structural causal analysis of the data-generating process and propose a unified framework that is compatible with existing direct prediction-based multimodal learning methods. Our method consists of two key components: (1) a missingness deconfounding module that approximates causal intervention based on backdoor adjustment and (2) a dual-branch neural network that explicitly disentangles causal features from spurious correlations. We evaluated our method in real-world public and in-hospital datasets, demonstrating its effectiveness and causal insights. 
+
+**Abstract (ZH)**: 医学多模态表示学习旨在将异质临床数据整合为统一的患者表示，以支持预测建模，这在医学数据挖掘社区中仍然是一个关键但具有挑战性的任务。然而，现实世界的医疗数据集往往由于成本、协议或患者特异性限制等原因而导致模态缺失。现有方法主要通过学习可用数据在原始数据空间或特征空间中的观测值来应对这一问题，但通常忽视了数据采集过程本身引入的潜在偏差。在本文中，我们识别出两种妨碍模型泛化的偏差：缺失性偏差，源于模态可用性的非随机模式；分布性偏差，源于潜在混杂因素对观察特征和结果的影响。为应对这些挑战，我们对数据生成过程进行了结构因果分析，并提出了一种与现有直接预测为基础的多模态学习方法兼容的统一框架。该方法包含两个关键组件：（1）一个缺失性去混杂模块，基于后门调整近似因果干预；（2）一个双分支神经网络，明确区分因果特征和伪相关。我们在实际公开和医院数据集上评估了该方法，展示了其有效性和因果洞察。 
+
+---
+# A Dataset Generation Scheme Based on Video2EEG-SPGN-Diffusion for SEED-VD 
+
+**Title (ZH)**: 基于Video2EEG-SPGN-Diffusion的SEED-VD数据集生成方案 
+
+**Authors**: Yunfei Guo, Tao Zhang, Wu Huang, Yao Song  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.05321)  
+
+**Abstract**: This paper introduces an open-source framework, Video2EEG-SPGN-Diffusion, that leverages the SEED-VD dataset to generate a multimodal dataset of EEG signals conditioned on video stimuli. Additionally, we disclose an engineering pipeline for aligning video and EEG data pairs, facilitating the training of multimodal large models with EEG alignment capabilities. Personalized EEG signals are generated using a self-play graph network (SPGN) integrated with a diffusion model. As a major contribution, we release a new dataset comprising over 1000 samples of SEED-VD video stimuli paired with generated 62-channel EEG signals at 200 Hz and emotion labels, enabling video-EEG alignment and advancing multimodal research. This framework offers novel tools for emotion analysis, data augmentation, and brain-computer interface applications, with substantial research and engineering significance. 
+
+**Abstract (ZH)**: 本研究介绍了一个开源框架——Video2EEG-SPGN-Diffusion，该框架利用SEED-VD数据集生成基于视频刺激的多模态EEG信号数据集。此外，我们披露了一个视频和EEG数据对对齐的工程流程，从而促进具有EEG对齐能力的多模态大型模型的训练。通过将自玩游戏网络（SPGN）与扩散模型集成，生成个性化EEG信号。作为主要贡献，我们发布了一个新数据集，包含了超过1000个SEED-VD视频刺激样本，配以生成的62导程200 Hz的EEG信号和情绪标签，以实现视频-EEG对齐并推动多模态研究。该框架提供了用于情绪分析、数据增强和脑机接口应用的新工具，具有重要的科研和工程意义。 
+
+---
