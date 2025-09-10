@@ -1,0 +1,143 @@
+# Programmable Locking Cells (PLC) for Modular Robots with High Stiffness Tunability and Morphological Adaptability 
+
+**Title (ZH)**: 具有高刚度可调性和形态适应性的模块化机器人编程锁存单元（PLC） 
+
+**Authors**: Jianshu Zhou, Wei Chen, Junda Huang, Boyuan Liang, Yunhui Liu, Masayoshi Tomizuka  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07916)  
+
+**Abstract**: Robotic systems operating in unstructured environments require the ability to switch between compliant and rigid states to perform diverse tasks such as adaptive grasping, high-force manipulation, shape holding, and navigation in constrained spaces, among others. However, many existing variable stiffness solutions rely on complex actuation schemes, continuous input power, or monolithic designs, limiting their modularity and scalability. This paper presents the Programmable Locking Cell (PLC)-a modular, tendon-driven unit that achieves discrete stiffness modulation through mechanically interlocked joints actuated by cable tension. Each unit transitions between compliant and firm states via structural engagement, and the assembled system exhibits high stiffness variation-up to 950% per unit-without susceptibility to damage under high payload in the firm state. Multiple PLC units can be assembled into reconfigurable robotic structures with spatially programmable stiffness. We validate the design through two functional prototypes: (1) a variable-stiffness gripper capable of adaptive grasping, firm holding, and in-hand manipulation; and (2) a pipe-traversing robot composed of serial PLC units that achieves shape adaptability and stiffness control in confined environments. These results demonstrate the PLC as a scalable, structure-centric mechanism for programmable stiffness and motion, enabling robotic systems with reconfigurable morphology and task-adaptive interaction. 
+
+**Abstract (ZH)**: 可编程锁定单元：一种模块化的绳驱动单元，实现机械连锁关节的离散刚度调制 
+
+---
+# Unlocking Stopped-Rotor Flight: Development and Validation of SPERO, a Novel UAV Platform 
+
+**Title (ZH)**: 解码停止旋翼飞行：SPERO新型无人驾驶航空器平台的开发与验证 
+
+**Authors**: Kristan Hilby, Ian Hunter  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07812)  
+
+**Abstract**: Stop-rotor aircraft have long been proposed as the ideal vertical takeoff and landing (VTOL) aircraft for missions with equal time spent in both flight regimes, such as agricultural monitoring, search and rescue, and last-mile delivery. Featuring a central lifting surface that rotates in VTOL to generate vertical thrust and locks in forward flight to generate passive lift, the stop-rotor offers the potential for high efficiency across both modes. However, practical implementation has remained infeasible due to aerodynamic and stability conflicts between flight modes. In this work, we present SPERO (Stopped-Penta Rotor), a stop-rotor uncrewed aerial vehicle (UAV) featuring a flipping and latching wing, an active center of pressure mechanism, thrust vectored counterbalances, a five-rotor architecture, and an eleven-state machine flight controller coordinating geometric and controller reconfiguration. Furthermore, SPERO establishes a generalizable design and control framework for stopped-rotor UAVs. Together, these innovations overcome longstanding challenges in stop-rotor flight and enable the first stable, bidirectional transition between VTOL and forward flight. 
+
+**Abstract (ZH)**: 停旋翼无人机SPERO为进一步垂直起降和前飞模式之间的稳定双向过渡奠定了通用设计与控制框架。 
+
+---
+# Fault Tolerant Control of a Quadcopter using Reinforcement Learning 
+
+**Title (ZH)**: 基于强化学习的四旋翼无人机容错控制 
+
+**Authors**: Muzaffar Habib, Adnan Maqsood, Adnan Fayyaz ud Din  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07707)  
+
+**Abstract**: This study presents a novel reinforcement learning (RL)-based control framework aimed at enhancing the safety and robustness of the quadcopter, with a specific focus on resilience to in-flight one propeller failure. Addressing the critical need of a robust control strategy for maintaining a desired altitude for the quadcopter to safe the hardware and the payload in physical applications. The proposed framework investigates two RL methodologies Dynamic Programming (DP) and Deep Deterministic Policy Gradient (DDPG), to overcome the challenges posed by the rotor failure mechanism of the quadcopter. DP, a model-based approach, is leveraged for its convergence guarantees, despite high computational demands, whereas DDPG, a model-free technique, facilitates rapid computation but with constraints on solution duration. The research challenge arises from training RL algorithms on large dimensions and action domains. With modifications to the existing DP and DDPG algorithms, the controllers were trained not only to cater for large continuous state and action domain and also achieve a desired state after an inflight propeller failure. To verify the robustness of the proposed control framework, extensive simulations were conducted in a MATLAB environment across various initial conditions and underscoring its viability for mission-critical quadcopter applications. A comparative analysis was performed between both RL algorithms and their potential for applications in faulty aerial systems. 
+
+**Abstract (ZH)**: 基于强化学习的四旋翼飞行器抗飞行中单旋翼故障鲁棒控制框架研究 
+
+---
+# Robust Radar SLAM for Vehicle Parking Applications 
+
+**Title (ZH)**: 车辆停车应用的鲁棒雷达SLAM 
+
+**Authors**: Luis Diener, Jens Kalkkuhl, Markus Enzweiler  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07683)  
+
+**Abstract**: We address ego-motion estimation for automated parking, where centimeter-level accuracy is crucial due to tight spaces and nearby obstacles. Traditional methods using inertial-measurement units and wheel encoders require calibration, making them costly and time-consuming. To overcome this, we propose a radar-based simultaneous localization and mapping (SLAM) approach that leverages the robustness of radar to adverse weather and support for online calibration. Our robocentric formulation fuses feature positions and Doppler velocities for robust data association and filter convergence. Key contributions include a Doppler-augmented radar SLAM method, multi-radar support and an information-based feature-pruning strategy. Experiments demonstrate high-accuracy localization and improved robustness over state-of-the-art methods, meeting the demands of automated parking. 
+
+**Abstract (ZH)**: 基于雷达的自动泊车 ego-motion 估计：鲁棒 simultaneous localization and mapping 方法及多雷达支持 
+
+---
+# Flexible Morphing Aerial Robot with Inflatable Structure for Perching-based Human-Robot Interaction 
+
+**Title (ZH)**: 基于栖息交互的人机互动气动柔性变形机器人 
+
+**Authors**: Ayano Miyamichi, Moju Zhao, Kazuki Sugihara, Junichiro Sugihara, Masanori Konishi, Kunio Kojima, Kei Okada, Masayuki Inaba  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07496)  
+
+**Abstract**: Birds in nature perform perching not only for rest but also for interaction with human such as the relationship with falconers. Recently, researchers achieve perching-capable aerial robots as a way to save energy, and deformable structure demonstrate significant advantages in efficiency of perching and compactness of configuration. However, ensuring flight stability remains challenging for deformable aerial robots due to the difficulty of controlling flexible arms. Furthermore, perching for human interaction requires high compliance along with safety. Thus, this study aims to develop a deformable aerial robot capable of perching on humans with high flexibility and grasping ability. To overcome the challenges of stability of both flight and perching, we propose a hybrid morphing structure that combines a unilateral flexible arm and a pneumatic inflatable actuators. This design allows the robot's arms to remain rigid during flight and soft while perching for more effective grasping. We also develop a pneumatic control system that optimizes pressure regulation while integrating shock absorption and adjustable grasping forces, enhancing interaction capabilities and energy efficiency. Besides, we focus on the structural characteristics of the unilateral flexible arm and identify sufficient conditions under which standard quadrotor modeling and control remain effective in terms of flight stability. Finally, the developed prototype demonstrates the feasibility of compliant perching maneuvers on humans, as well as the robust recovery even after arm deformation caused by thrust reductions during flight. To the best of our knowledge, this work is the first to achieve an aerial robot capable of perching on humans for interaction. 
+
+**Abstract (ZH)**: 一种用于人类交互的可变形飞行机器人及其 compliant perching 技术 
+
+---
+# Safe and Non-Conservative Contingency Planning for Autonomous Vehicles via Online Learning-Based Reachable Set Barriers 
+
+**Title (ZH)**: 基于在线学习可达集屏障的自主车辆安全且非保守的应急规划 
+
+**Authors**: Rui Yang, Lei Zheng, Shuzhi Sam Ge, Jun Ma  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07464)  
+
+**Abstract**: Autonomous vehicles must navigate dynamically uncertain environments while balancing the safety and driving efficiency. This challenge is exacerbated by the unpredictable nature of surrounding human-driven vehicles (HVs) and perception inaccuracies, which require planners to adapt to evolving uncertainties while maintaining safe trajectories. Overly conservative planners degrade driving efficiency, while deterministic approaches may encounter serious issues and risks of failure when faced with sudden and unexpected maneuvers. To address these issues, we propose a real-time contingency trajectory optimization framework in this paper. By employing event-triggered online learning of HV control-intent sets, our method dynamically quantifies multi-modal HV uncertainties and refines the forward reachable set (FRS) incrementally. Crucially, we enforce invariant safety through FRS-based barrier constraints that ensure safety without reliance on accurate trajectory prediction of HVs. These constraints are embedded in contingency trajectory optimization and solved efficiently through consensus alternative direction method of multipliers (ADMM). The system continuously adapts to the uncertainties in HV behaviors, preserving feasibility and safety without resorting to excessive conservatism. High-fidelity simulations on highway and urban scenarios, as well as a series of real-world experiments demonstrate significant improvements in driving efficiency and passenger comfort while maintaining safety under uncertainty. The project page is available at this https URL. 
+
+**Abstract (ZH)**: 自主驾驶车辆必须在平衡安全性和驾驶效率的同时导航动态不确定性环境。由于周围人类驾驶车辆（HVs）的不可预测性和感知不准确性，这一挑战被进一步加剧，要求规划器在保持安全轨迹的同时适应不断变化的不确定性。过于保守的规划器会降低驾驶效率，而确定性方法在面对突发的不可预见操作时可能会遇到严重的问题和失败风险。为了解决这些问题，我们在本文中提出了一种实时应急轨迹优化框架。通过采用基于事件触发的在线学习方法学习HV控制意图集，我们的方法动态量化了多模态HV不确定性并逐步细化前向可达集（FRS）。关键在于，我们通过基于FRS的障碍约束确保安全性，而不依赖于准确的HV轨迹预测。这些约束被嵌入到应急轨迹优化中，并通过共识交替方向法（ADMM）高效求解。该系统能够持续适应HV行为的不确定性，确保可行性与安全性，而无需过度保守。在高速公路和城市场景下的高保真模拟以及一系列现实世界实验表明，在不确定性条件下，该方法能够显著提高驾驶效率和乘客舒适度，同时保持安全性。项目页面详见此[链接]。 
+
+---
+# Robust Docking Maneuvers for Autonomous Trolley Collection: An Optimization-Based Visual Servoing Scheme 
+
+**Title (ZH)**: 基于优化的视觉伺服方案的自主电车回收鲁棒对接机动策略 
+
+**Authors**: Yuhan Pang, Bingyi Xia, Zhe Zhang, Zhirui Sun, Peijia Xie, Bike Zhu, Wenjun Xu, Jiankun Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07413)  
+
+**Abstract**: Service robots have demonstrated significant potential for autonomous trolley collection and redistribution in public spaces like airports or warehouses to improve efficiency and reduce cost. Usually, a fully autonomous system for the collection and transportation of multiple trolleys is based on a Leader-Follower formation of mobile manipulators, where reliable docking maneuvers of the mobile base are essential to align trolleys into organized queues. However, developing a vision-based robotic docking system faces significant challenges: high precision requirements, environmental disturbances, and inherent robot constraints. To address these challenges, we propose an optimization-based Visual Servoing scheme that incorporates active infrared markers for robust feature extraction across diverse lighting conditions. This framework explicitly models nonholonomic kinematics and visibility constraints within the Hybrid Visual Servoing problem, augmented with an observer for disturbance rejection to ensure precise and stable docking. Experimental results across diverse environments demonstrate the robustness of this system, with quantitative evaluations confirming high docking accuracy. 
+
+**Abstract (ZH)**: 服务机器人在机场或仓库等公共空间中实现了自主手推车收集与重新分布的显著潜力，以提高效率并降低成本。通常，基于移动 manipulator 的领导者-跟随者 formations 的完全自主多手推车收集与运输系统依赖于移动基座的可靠对准操作，以将手推车排列成有序的队列。然而，开发基于视觉的机器人对准系统面临重大挑战：高精度要求、环境干扰以及固有的机器人约束。为应对这些挑战，我们提出了一种基于优化的视觉伺服方案，结合主动红外标记，以在多种光照条件下实现稳健的特征提取。该框架明确模型了非完整运动学和视域约束，并通过扰动拒绝观测器来增强混合视觉伺服问题，以确保精确且稳定的对准。在多种环境中的实验结果证明了该系统的鲁棒性，并通过定量评估确认了高对准精度。 
+
+---
+# Performance Characterization of a Point-Cloud-Based Path Planner in Off-Road Terrain 
+
+**Title (ZH)**: 基于点云的路径规划在非铺设地形上的性能 characterization 
+
+**Authors**: Casey D. Majhor, Jeremy P. Bos  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07321)  
+
+**Abstract**: We present a comprehensive evaluation of a point-cloud-based navigation stack, MUONS, for autonomous off-road navigation. Performance is characterized by analyzing the results of 30,000 planning and navigation trials in simulation and validated through field testing. Our simulation campaign considers three kinematically challenging terrain maps and twenty combinations of seven path-planning parameters. In simulation, our MUONS-equipped AGV achieved a 0.98 success rate and experienced no failures in the field. By statistical and correlation analysis we determined that the Bi-RRT expansion radius used in the initial planning stages is most correlated with performance in terms of planning time and traversed path length. Finally, we observed that the proportional variation due to changes in the tuning parameters is remarkably well correlated to performance in field testing. This finding supports the use of Monte-Carlo simulation campaigns for performance assessment and parameter tuning. 
+
+**Abstract (ZH)**: 基于点云的MUONS自主离线导航堆栈的全面评估 
+
+---
+# Safe Gap-based Planning in Dynamic Settings 
+
+**Title (ZH)**: 动态环境下的安全间隔基规划 
+
+**Authors**: Max Asselmeier, Abdel Zaro, Dhruv Ahuja, Ye Zhao, Patricio A. Vela  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07239)  
+
+**Abstract**: This chapter extends the family of perception-informed gap-based local planners to dynamic environments. Existing perception-informed local planners that operate in dynamic environments often rely on emergent or empirical robustness for collision avoidance as opposed to performing formal analysis of dynamic obstacles. This proposed planner, dynamic gap, explicitly addresses dynamic obstacles through several steps in the planning pipeline. First, polar regions of free space known as gaps are tracked and their dynamics are estimated in order to understand how the local environment evolves over time. Then, at planning time, gaps are propagated into the future through novel gap propagation algorithms to understand what regions are feasible for passage. Lastly, pursuit guidance theory is leveraged to generate local trajectories that are provably collision-free under ideal conditions. Additionally, obstacle-centric ungap processing is performed in situations where no gaps exist to robustify the overall planning framework. A set of gap-based planners are benchmarked against a series of classical and learned motion planners in dynamic environments, and dynamic gap is shown to outperform all other baselines in all environments. Furthermore, dynamic gap is deployed on a TurtleBot2 platform in several real-world experiments to validate collision avoidance behaviors. 
+
+**Abstract (ZH)**: 本章将感知导向的间隙基局部规划者家族扩展到动态环境。现有的在动态环境中运行的感知导向局部规划者通常依赖于碰撞避免的经验鲁棒性，而非对动态障碍物进行形式化分析。本文提出的一种动态间隙规划者通过规划管道中的几个步骤明确地解决了动态障碍物。首先，跟踪自由空间的极区（即间隙），并估计它们的动态，以理解局部环境随时间的变化。然后，在规划时，通过新颖的间隙传播算法将间隙传播到未来，以了解哪些区域适合通行。最后，利用追逐引导理论生成在理想条件下可证明无碰撞的局部轨迹。此外，在不存在间隙的情况下，还进行了基于障碍物的无间隙处理，以增强整体规划框架的鲁棒性。一系列基于间隙的规划者在动态环境中与一系列经典和学习到的运动规划者进行了基准测试，结果显示动态间隙在所有环境中均优于其他基准。此外，动态间隙还在TurtleBot2平台上进行了多项现实世界的实验，以验证其避碰行为。 
+
+---
+# First Plan Then Evaluate: Use a Vectorized Motion Planner for Grasping 
+
+**Title (ZH)**: 先规划后评估: 使用向量化运动规划进行抓取 
+
+**Authors**: Martin Matak, Mohanraj Devendran Ashanti, Karl Van Wyk, Tucker Hermans  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07162)  
+
+**Abstract**: Autonomous multi-finger grasping is a fundamental capability in robotic manipulation. Optimization-based approaches show strong performance, but tend to be sensitive to initialization and are potentially time-consuming. As an alternative, the generator-evaluator-planner framework has been proposed. A generator generates grasp candidates, an evaluator ranks the proposed grasps, and a motion planner plans a trajectory to the highest-ranked grasp. If the planner doesn't find a trajectory, a new trajectory optimization is started with the next-best grasp as the target and so on. However, executing lower-ranked grasps means a lower chance of grasp success, and multiple trajectory optimizations are time-consuming. Alternatively, relaxing the threshold for motion planning accuracy allows for easier computation of a successful trajectory but implies lower accuracy in estimating grasp success likelihood. It's a lose-lose proposition: either spend more time finding a successful trajectory or have a worse estimate of grasp success. We propose a framework that plans trajectories to a set of generated grasp targets in parallel, the evaluator estimates the grasp success likelihood of the resulting trajectories, and the robot executes the trajectory most likely to succeed. To plan trajectories to different targets efficiently, we propose the use of a vectorized motion planner. Our experiments show our approach improves over the traditional generator-evaluator-planner framework across different objects, generators, and motion planners, and successfully generalizes to novel environments in the real world, including different shelves and table heights. Project website this https URL 
+
+**Abstract (ZH)**: 自主多指抓取是机器人操作的基本能力。基于优化的方法表现出色，但往往对初始化敏感且可能耗时。作为替代方案，提出了生成器-评估器-规划器框架。生成器生成抓取候选，评估器对提出的抓取进行排名，规划器规划通往最高排名抓取的轨迹。如果规划器找不到轨迹，则重新以下一个最佳抓取为目标开始新的轨迹优化。然而，执行较低排名的抓取意味着抓取成功的可能性较低，且多次轨迹优化耗时。或者，放宽运动规划精度的阈值可以更容易计算成功的轨迹，但会导致较低的抓取成功概率估计准确性。这是一个两难局面：要么花费更多时间寻找成功的轨迹，要么获得较低的抓取成功概率估计。我们提出了一种框架，在并行规划通往生成器生成的目标的轨迹时，评估器评估结果轨迹的抓取成功概率，机器人执行最有可能成功的轨迹。为了高效地规划不同目标的轨迹，我们提出了使用向量化的运动规划器。我们的实验结果表明，我们的方法在不同物体、生成器和运动规划器的情况下，均优于传统的生成器-评估器-规划器框架，并成功地将该方法推广到真实世界的新型环境中，包括不同高度的货架和桌子。项目网站：this https URL。 
+
+---
+# DEPF: A UAV Multispectral Object Detector with Dual-Domain Enhancement and Priority-Guided Mamba Fusion 
+
+**Title (ZH)**: DEPF：一种基于双域增强和优先级导向Mamba融合的无人机多谱段对象检测器 
+
+**Authors**: Shucong Li, Zhenyu Liu, Zijie Hong, Zhiheng Zhou, Xianghai Cao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07327)  
+
+**Abstract**: Multispectral remote sensing object detection is one of the important application of unmanned aerial vehicle (UAV). However, it faces three challenges. Firstly, the low-light remote sensing images reduce the complementarity during multi-modality fusion. Secondly, the local small target modeling is interfered with redundant information in the fusion stage easily. Thirdly, due to the quadratic computational complexity, it is hard to apply the transformer-based methods on the UAV platform. To address these limitations, motivated by Mamba with linear complexity, a UAV multispectral object detector with dual-domain enhancement and priority-guided mamba fusion (DEPF) is proposed. Firstly, to enhance low-light remote sensing images, Dual-Domain Enhancement Module (DDE) is designed, which contains Cross-Scale Wavelet Mamba (CSWM) and Fourier Details Recovery block (FDR). CSWM applies cross-scale mamba scanning for the low-frequency components to enhance the global brightness of images, while FDR constructs spectrum recovery network to enhance the frequency spectra features for recovering the texture-details. Secondly, to enhance local target modeling and reduce the impact of redundant information during fusion, Priority-Guided Mamba Fusion Module (PGMF) is designed. PGMF introduces the concept of priority scanning, which starts from local targets features according to the priority scores obtained from modality difference. Experiments on DroneVehicle dataset and VEDAI dataset reports that, DEPF performs well on object detection, comparing with state-of-the-art methods. Our code is available in the supplementary material. 
+
+**Abstract (ZH)**: 基于双域增强和优先级引导Mamba融合的UAV多光谱目标检测 
+
+---

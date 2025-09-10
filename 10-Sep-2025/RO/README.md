@@ -1,0 +1,403 @@
+# TA-VLA: Elucidating the Design Space of Torque-aware Vision-Language-Action Models 
+
+**Title (ZH)**: TA-VLA: 研究扭矩感知视觉-语言-行动模型的设计空间 
+
+**Authors**: Zongzheng Zhang, Haobo Xu, Zhuo Yang, Chenghao Yue, Zehao Lin, Huan-ang Gao, Ziwei Wang, Hao Zhao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07962)  
+
+**Abstract**: Many robotic manipulation tasks require sensing and responding to force signals such as torque to assess whether the task has been successfully completed and to enable closed-loop control. However, current Vision-Language-Action (VLA) models lack the ability to integrate such subtle physical feedback. In this work, we explore Torque-aware VLA models, aiming to bridge this gap by systematically studying the design space for incorporating torque signals into existing VLA architectures. We identify and evaluate several strategies, leading to three key findings. First, introducing torque adapters into the decoder consistently outperforms inserting them into the this http URL, inspired by joint prediction and planning paradigms in autonomous driving, we propose predicting torque as an auxiliary output, which further improves performance. This strategy encourages the model to build a physically grounded internal representation of interaction dynamics. Extensive quantitative and qualitative experiments across contact-rich manipulation benchmarks validate our findings. 
+
+**Abstract (ZH)**: 许多机器人操作任务需要感知和响应如扭矩等力信号，以评估任务是否成功完成，并实现闭环控制。然而，当前的视觉-语言-动作（VLA）模型缺乏整合此类微妙物理反馈的能力。在本文中，我们探索了扭矩感知的VLA模型，旨在通过系统研究将扭矩信号整合到现有VLA架构中的设计空间来弥合这一差距。我们识别并评估了几种策略，得到了三个关键发现。首先，将扭矩适配器引入解码器始终优于将其插入编码器或其他位置。受自主驾驶中的联合预测和规划范式的启发，我们提出了预测扭矩作为辅助输出的策略，这进一步提高了性能。这种策略促使模型构建一个与物理相互作用动力学相联系的内部表示。在接触丰富的操作基准上的广泛定量和定性实验中验证了我们的发现。 
+
+---
+# Graph-Fused Vision-Language-Action for Policy Reasoning in Multi-Arm Robotic Manipulation 
+
+**Title (ZH)**: 基于图融合的视觉-语言-动作政策推理在多臂机器人操作中 
+
+**Authors**: Shunlei Li, Longsen Gao, Jiuwen Cao, Yingbai Hu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07957)  
+
+**Abstract**: Acquiring dexterous robotic skills from human video demonstrations remains a significant challenge, largely due to conventional reliance on low-level trajectory replication, which often fails to generalize across varying objects, spatial layouts, and manipulator configurations. To address this limitation, we introduce Graph-Fused Vision-Language-Action (GF-VLA), a unified framework that enables dual-arm robotic systems to perform task-level reasoning and execution directly from RGB-D human demonstrations. GF-VLA employs an information-theoretic approach to extract task-relevant cues, selectively highlighting critical hand-object and object-object interactions. These cues are structured into temporally ordered scene graphs, which are subsequently integrated with a language-conditioned transformer to produce hierarchical behavior trees and interpretable Cartesian motion primitives. To enhance efficiency in bimanual execution, we propose a cross-arm allocation strategy that autonomously determines gripper assignment without requiring explicit geometric modeling. We validate GF-VLA on four dual-arm block assembly benchmarks involving symbolic structure construction and spatial generalization. Empirical results demonstrate that the proposed representation achieves over 95% graph accuracy and 93% subtask segmentation, enabling the language-action planner to generate robust, interpretable task policies. When deployed on a dual-arm robot, these policies attain 94% grasp reliability, 89% placement accuracy, and 90% overall task success across stacking, letter-formation, and geometric reconfiguration tasks, evidencing strong generalization and robustness under diverse spatial and semantic variations. 
+
+**Abstract (ZH)**: 从人类视频示范中获取灵巧的机器人技能仍然是一个重大挑战，主要原因是传统上依赖于低级轨迹复制，这往往无法在不同对象、空间布局和操作器配置之间进行泛化。为了解决这一局限性，我们引入了图融合视觉-语言-动作（GF-VLA）统一框架，该框架使双臂机器人系统能够直接从RGB-D人类示范中进行任务级推理和执行。GF-VLA采用信息论方法提取与任务相关的信息，选择性地突出关键的手-物和物-物交互。这些信息被结构化为时间有序的场景图，随后与语言条件下的变换器结合，生成分层的行为树和可解释的笛卡尔运动基元。为了提高双臂执行的效率，我们提出了一种跨臂分配策略，该策略能够自主确定夹持器分配，而不需显式几何建模。我们在四个涉及符号结构构建和空间泛化的双臂积木装配基准中验证了GF-VLA。实验结果表明，所提出的表示方法在图准确度和子任务分割上分别达到了95%和93%，使语言-动作规划者能够生成稳健且可解释的任务策略。当部署在双臂机器人上时，这些策略在堆叠、字母形成和几何重构任务中分别实现了94%的抓取可靠性、89%的放置精度和90%的整体任务成功率，证明了其在多样空间和语义变化下的强泛化能力和鲁棒性。 
+
+---
+# RaC: Robot Learning for Long-Horizon Tasks by Scaling Recovery and Correction 
+
+**Title (ZH)**: RaC: 机器人学习在扩展恢复与修正能力下的长时_horizon_任务学习 
+
+**Authors**: Zheyuan Hu, Robyn Wu, Naveen Enock, Jasmine Li, Riya Kadakia, Zackory Erickson, Aviral Kumar  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07953)  
+
+**Abstract**: Modern paradigms for robot imitation train expressive policy architectures on large amounts of human demonstration data. Yet performance on contact-rich, deformable-object, and long-horizon tasks plateau far below perfect execution, even with thousands of expert demonstrations. This is due to the inefficiency of existing ``expert'' data collection procedures based on human teleoperation. To address this issue, we introduce RaC, a new phase of training on human-in-the-loop rollouts after imitation learning pre-training. In RaC, we fine-tune a robotic policy on human intervention trajectories that illustrate recovery and correction behaviors. Specifically, during a policy rollout, human operators intervene when failure appears imminent, first rewinding the robot back to a familiar, in-distribution state and then providing a corrective segment that completes the current sub-task. Training on this data composition expands the robotic skill repertoire to include retry and adaptation behaviors, which we show are crucial for boosting both efficiency and robustness on long-horizon tasks. Across three real-world bimanual control tasks: shirt hanging, airtight container lid sealing, takeout box packing, and a simulated assembly task, RaC outperforms the prior state-of-the-art using 10$\times$ less data collection time and samples. We also show that RaC enables test-time scaling: the performance of the trained RaC policy scales linearly in the number of recovery maneuvers it exhibits. Videos of the learned policy are available at this https URL. 
+
+**Abstract (ZH)**: 基于人类在环的回放训练：提升交互丰富、可变形物体处理及长时 horizon 任务的机器人模仿学习性能 
+
+---
+# Programmable Locking Cells (PLC) for Modular Robots with High Stiffness Tunability and Morphological Adaptability 
+
+**Title (ZH)**: 具有高刚度可调性和形态适应性的模块化机器人编程锁存单元（PLC） 
+
+**Authors**: Jianshu Zhou, Wei Chen, Junda Huang, Boyuan Liang, Yunhui Liu, Masayoshi Tomizuka  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07916)  
+
+**Abstract**: Robotic systems operating in unstructured environments require the ability to switch between compliant and rigid states to perform diverse tasks such as adaptive grasping, high-force manipulation, shape holding, and navigation in constrained spaces, among others. However, many existing variable stiffness solutions rely on complex actuation schemes, continuous input power, or monolithic designs, limiting their modularity and scalability. This paper presents the Programmable Locking Cell (PLC)-a modular, tendon-driven unit that achieves discrete stiffness modulation through mechanically interlocked joints actuated by cable tension. Each unit transitions between compliant and firm states via structural engagement, and the assembled system exhibits high stiffness variation-up to 950% per unit-without susceptibility to damage under high payload in the firm state. Multiple PLC units can be assembled into reconfigurable robotic structures with spatially programmable stiffness. We validate the design through two functional prototypes: (1) a variable-stiffness gripper capable of adaptive grasping, firm holding, and in-hand manipulation; and (2) a pipe-traversing robot composed of serial PLC units that achieves shape adaptability and stiffness control in confined environments. These results demonstrate the PLC as a scalable, structure-centric mechanism for programmable stiffness and motion, enabling robotic systems with reconfigurable morphology and task-adaptive interaction. 
+
+**Abstract (ZH)**: 可编程锁定单元：一种模块化的绳驱动单元，实现机械连锁关节的离散刚度调制 
+
+---
+# Unlocking Stopped-Rotor Flight: Development and Validation of SPERO, a Novel UAV Platform 
+
+**Title (ZH)**: 解码停止旋翼飞行：SPERO新型无人驾驶航空器平台的开发与验证 
+
+**Authors**: Kristan Hilby, Ian Hunter  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07812)  
+
+**Abstract**: Stop-rotor aircraft have long been proposed as the ideal vertical takeoff and landing (VTOL) aircraft for missions with equal time spent in both flight regimes, such as agricultural monitoring, search and rescue, and last-mile delivery. Featuring a central lifting surface that rotates in VTOL to generate vertical thrust and locks in forward flight to generate passive lift, the stop-rotor offers the potential for high efficiency across both modes. However, practical implementation has remained infeasible due to aerodynamic and stability conflicts between flight modes. In this work, we present SPERO (Stopped-Penta Rotor), a stop-rotor uncrewed aerial vehicle (UAV) featuring a flipping and latching wing, an active center of pressure mechanism, thrust vectored counterbalances, a five-rotor architecture, and an eleven-state machine flight controller coordinating geometric and controller reconfiguration. Furthermore, SPERO establishes a generalizable design and control framework for stopped-rotor UAVs. Together, these innovations overcome longstanding challenges in stop-rotor flight and enable the first stable, bidirectional transition between VTOL and forward flight. 
+
+**Abstract (ZH)**: 停旋翼无人机SPERO为进一步垂直起降和前飞模式之间的稳定双向过渡奠定了通用设计与控制框架。 
+
+---
+# Fault Tolerant Control of a Quadcopter using Reinforcement Learning 
+
+**Title (ZH)**: 基于强化学习的四旋翼无人机容错控制 
+
+**Authors**: Muzaffar Habib, Adnan Maqsood, Adnan Fayyaz ud Din  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07707)  
+
+**Abstract**: This study presents a novel reinforcement learning (RL)-based control framework aimed at enhancing the safety and robustness of the quadcopter, with a specific focus on resilience to in-flight one propeller failure. Addressing the critical need of a robust control strategy for maintaining a desired altitude for the quadcopter to safe the hardware and the payload in physical applications. The proposed framework investigates two RL methodologies Dynamic Programming (DP) and Deep Deterministic Policy Gradient (DDPG), to overcome the challenges posed by the rotor failure mechanism of the quadcopter. DP, a model-based approach, is leveraged for its convergence guarantees, despite high computational demands, whereas DDPG, a model-free technique, facilitates rapid computation but with constraints on solution duration. The research challenge arises from training RL algorithms on large dimensions and action domains. With modifications to the existing DP and DDPG algorithms, the controllers were trained not only to cater for large continuous state and action domain and also achieve a desired state after an inflight propeller failure. To verify the robustness of the proposed control framework, extensive simulations were conducted in a MATLAB environment across various initial conditions and underscoring its viability for mission-critical quadcopter applications. A comparative analysis was performed between both RL algorithms and their potential for applications in faulty aerial systems. 
+
+**Abstract (ZH)**: 基于强化学习的四旋翼飞行器抗飞行中单旋翼故障鲁棒控制框架研究 
+
+---
+# Robust Radar SLAM for Vehicle Parking Applications 
+
+**Title (ZH)**: 车辆停车应用的鲁棒雷达SLAM 
+
+**Authors**: Luis Diener, Jens Kalkkuhl, Markus Enzweiler  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07683)  
+
+**Abstract**: We address ego-motion estimation for automated parking, where centimeter-level accuracy is crucial due to tight spaces and nearby obstacles. Traditional methods using inertial-measurement units and wheel encoders require calibration, making them costly and time-consuming. To overcome this, we propose a radar-based simultaneous localization and mapping (SLAM) approach that leverages the robustness of radar to adverse weather and support for online calibration. Our robocentric formulation fuses feature positions and Doppler velocities for robust data association and filter convergence. Key contributions include a Doppler-augmented radar SLAM method, multi-radar support and an information-based feature-pruning strategy. Experiments demonstrate high-accuracy localization and improved robustness over state-of-the-art methods, meeting the demands of automated parking. 
+
+**Abstract (ZH)**: 基于雷达的自动泊车 ego-motion 估计：鲁棒 simultaneous localization and mapping 方法及多雷达支持 
+
+---
+# Temporal Counterfactual Explanations of Behaviour Tree Decisions 
+
+**Title (ZH)**: 行为树决策的时间因果解释 
+
+**Authors**: Tamlin Love, Antonio Andriella, Guillem Alenyà  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07674)  
+
+**Abstract**: Explainability is a critical tool in helping stakeholders understand robots. In particular, the ability for robots to explain why they have made a particular decision or behaved in a certain way is useful in this regard. Behaviour trees are a popular framework for controlling the decision-making of robots and other software systems, and thus a natural question to ask is whether or not a system driven by a behaviour tree is capable of answering "why" questions. While explainability for behaviour trees has seen some prior attention, no existing methods are capable of generating causal, counterfactual explanations which detail the reasons for robot decisions and behaviour. Therefore, in this work, we introduce a novel approach which automatically generates counterfactual explanations in response to contrastive "why" questions. Our method achieves this by first automatically building a causal model from the structure of the behaviour tree as well as domain knowledge about the state and individual behaviour tree nodes. The resultant causal model is then queried and searched to find a set of diverse counterfactual explanations. We demonstrate that our approach is able to correctly explain the behaviour of a wide range of behaviour tree structures and states. By being able to answer a wide range of causal queries, our approach represents a step towards more transparent, understandable and ultimately trustworthy robotic systems. 
+
+**Abstract (ZH)**: 可解释性是帮助利益相关者理解机器人的重要工具。特别是，机器人能够解释其为何作出特定决策或为何以某种方式行动的能力在这方面非常有用。行为树是一种流行的框架，用于控制机器人的决策和软件系统的决策，因此一个自然的问题是：由行为树驱动的系统是否能够回答“为什么”的问题。尽管已有研究表明行为树的可解释性，但现有的方法尚无法生成能详细说明机器人决策和行为原因的因果性反事实解释。因此，在本工作中，我们提出了一个新颖的方法来自动生成响应对比“为什么”问题的反事实解释。该方法首先从行为树的结构及其关于状态和个体行为树节点的领域知识中自动构建因果模型。然后查询和搜索该因果模型，以找到一组多样化的反事实解释。我们证明，我们的方法能够正确解释广泛类型的行为树结构和状态的行为。通过能够回答广泛的因果查询，我们的方法代表了向着更加透明、可理解且最终更可信赖的机器人系统迈出的一步。 
+
+---
+# Collaborative Exploration with a Marsupial Ground-Aerial Robot Team through Task-Driven Map Compression 
+
+**Title (ZH)**: 基于任务驱动的地图压缩的袋鼠地面-空中机器人团队协同探索 
+
+**Authors**: Angelos Zacharia, Mihir Dharmadhikari, Kostas Alexis  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07655)  
+
+**Abstract**: Efficient exploration of unknown environments is crucial for autonomous robots, especially in confined and large-scale scenarios with limited communication. To address this challenge, we propose a collaborative exploration framework for a marsupial ground-aerial robot team that leverages the complementary capabilities of both platforms. The framework employs a graph-based path planning algorithm to guide exploration and deploy the aerial robot in areas where its expected gain significantly exceeds that of the ground robot, such as large open spaces or regions inaccessible to the ground platform, thereby maximizing coverage and efficiency. To facilitate large-scale spatial information sharing, we introduce a bandwidth-efficient, task-driven map compression strategy. This method enables each robot to reconstruct resolution-specific volumetric maps while preserving exploration-critical details, even at high compression rates. By selectively compressing and sharing key data, communication overhead is minimized, ensuring effective map integration for collaborative path planning. Simulation and real-world experiments validate the proposed approach, demonstrating its effectiveness in improving exploration efficiency while significantly reducing data transmission. 
+
+**Abstract (ZH)**: 面向受限和大规模场景下自主机器人高效探索未知环境的协作探索框架 
+
+---
+# Decoding RobKiNet: Insights into Efficient Training of Robotic Kinematics Informed Neural Network 
+
+**Title (ZH)**: 解码 RobKiNet：机床运动学启发神经网络高效训练的见解 
+
+**Authors**: Yanlong Peng, Zhigang Wang, Ziwen He, Pengxu Chang, Chuangchuang Zhou, Yu Yan, Ming Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07646)  
+
+**Abstract**: In robots task and motion planning (TAMP), it is crucial to sample within the robot's configuration space to meet task-level global constraints and enhance the efficiency of subsequent motion planning. Due to the complexity of joint configuration sampling under multi-level constraints, traditional methods often lack efficiency. This paper introduces the principle of RobKiNet, a kinematics-informed neural network, for end-to-end sampling within the Continuous Feasible Set (CFS) under multiple constraints in configuration space, establishing its Optimization Expectation Model. Comparisons with traditional sampling and learning-based approaches reveal that RobKiNet's kinematic knowledge infusion enhances training efficiency by ensuring stable and accurate gradient this http URL and quantitative analyses in a 2-DOF space validate its theoretical efficiency, while its application on a 9-DOF autonomous mobile manipulator robot(AMMR) demonstrates superior whole-body and decoupled control, excelling in battery disassembly tasks. RobKiNet outperforms deep reinforcement learning with a training speed 74.29 times faster and a sampling accuracy of up to 99.25%, achieving a 97.33% task completion rate in real-world scenarios. 
+
+**Abstract (ZH)**: 基于运动学指导的神经网络在多约束连续可行集中的端到端采样及其在机器人任务与运动规划中的应用 
+
+---
+# Can SSD-Mamba2 Unlock Reinforcement Learning for End-to-End Motion Control? 
+
+**Title (ZH)**: SSD-Mamba2能否解锁端到端运动控制的强化学习？ 
+
+**Authors**: Gavin Tao, Yinuo Wang, Jinzhao Zhou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07593)  
+
+**Abstract**: End-to-end reinforcement learning for motion control promises unified perception-action policies that scale across embodiments and tasks, yet most deployed controllers are either blind (proprioception-only) or rely on fusion backbones with unfavorable compute-memory trade-offs. Recurrent controllers struggle with long-horizon credit assignment, and Transformer-based fusion incurs quadratic cost in token length, limiting temporal and spatial context. We present a vision-driven cross-modal RL framework built on SSD-Mamba2, a selective state-space backbone that applies state-space duality (SSD) to enable both recurrent and convolutional scanning with hardware-aware streaming and near-linear scaling. Proprioceptive states and exteroceptive observations (e.g., depth tokens) are encoded into compact tokens and fused by stacked SSD-Mamba2 layers. The selective state-space updates retain long-range dependencies with markedly lower latency and memory use than quadratic self-attention, enabling longer look-ahead, higher token resolution, and stable training under limited compute. Policies are trained end-to-end under curricula that randomize terrain and appearance and progressively increase scene complexity. A compact, state-centric reward balances task progress, energy efficiency, and safety. Across diverse motion-control scenarios, our approach consistently surpasses strong state-of-the-art baselines in return, safety (collisions and falls), and sample efficiency, while converging faster at the same compute budget. These results suggest that SSD-Mamba2 provides a practical fusion backbone for scalable, foresightful, and efficient end-to-end motion control. 
+
+**Abstract (ZH)**: 基于SSD-Mamba2的视觉驱动跨模态强化学习框架 
+
+---
+# Improving Machine Learning-Based Robot Self-Collision Checking with Input Positional Encoding 
+
+**Title (ZH)**: 基于输入 positional encoding 提升机器学习驱动的机器人自碰撞检测 
+
+**Authors**: Bartlomiej Kulecki, Dominik Belter  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07542)  
+
+**Abstract**: This manuscript investigates the integration of positional encoding -- a technique widely used in computer graphics -- into the input vector of a binary classification model for self-collision detection. The results demonstrate the benefits of incorporating positional encoding, which enhances classification accuracy by enabling the model to better capture high-frequency variations, leading to a more detailed and precise representation of complex collision patterns. The manuscript shows that machine learning-based techniques, such as lightweight multilayer perceptrons (MLPs) operating in a low-dimensional feature space, offer a faster alternative for collision checking than traditional methods that rely on geometric approaches, such as triangle-to-triangle intersection tests and Bounding Volume Hierarchies (BVH) for mesh-based models. 
+
+**Abstract (ZH)**: 这篇论文探讨了将广泛用于计算机图形学的 positional encoding 技术集成到二元分类模型的输入向量中，以提高自我碰撞检测的性能。结果表明，结合 positional encoding 能够提升分类精度，使模型更好地捕捉高频变化，从而更详细和精确地表示复杂的碰撞模式。论文显示，基于机器学习的技术，如在低维特征空间中工作的轻量级多层感知机（MLP），相比于依赖几何方法的传统技术（如三角形到三角形的相交测试和网格模型的包围体积层次结构 BVH），能提供一种更快的碰撞检测替代方案。 
+
+---
+# OmniMap: A General Mapping Framework Integrating Optics, Geometry, and Semantics 
+
+**Title (ZH)**: OmniMap：一种综合光学、几何与语义的一般映射框架 
+
+**Authors**: Yinan Deng, Yufeng Yue, Jianyu Dou, Jingyu Zhao, Jiahui Wang, Yujie Tang, Yi Yang, Mengyin Fu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07500)  
+
+**Abstract**: Robotic systems demand accurate and comprehensive 3D environment perception, requiring simultaneous capture of photo-realistic appearance (optical), precise layout shape (geometric), and open-vocabulary scene understanding (semantic). Existing methods typically achieve only partial fulfillment of these requirements while exhibiting optical blurring, geometric irregularities, and semantic ambiguities. To address these challenges, we propose OmniMap. Overall, OmniMap represents the first online mapping framework that simultaneously captures optical, geometric, and semantic scene attributes while maintaining real-time performance and model compactness. At the architectural level, OmniMap employs a tightly coupled 3DGS-Voxel hybrid representation that combines fine-grained modeling with structural stability. At the implementation level, OmniMap identifies key challenges across different modalities and introduces several innovations: adaptive camera modeling for motion blur and exposure compensation, hybrid incremental representation with normal constraints, and probabilistic fusion for robust instance-level understanding. Extensive experiments show OmniMap's superior performance in rendering fidelity, geometric accuracy, and zero-shot semantic segmentation compared to state-of-the-art methods across diverse scenes. The framework's versatility is further evidenced through a variety of downstream applications, including multi-domain scene Q&A, interactive editing, perception-guided manipulation, and map-assisted navigation. 
+
+**Abstract (ZH)**: 全方位映射：同时实现光学、几何和语义场景属性的实时紧凑映射 
+
+---
+# Flexible Morphing Aerial Robot with Inflatable Structure for Perching-based Human-Robot Interaction 
+
+**Title (ZH)**: 基于栖息交互的人机互动气动柔性变形机器人 
+
+**Authors**: Ayano Miyamichi, Moju Zhao, Kazuki Sugihara, Junichiro Sugihara, Masanori Konishi, Kunio Kojima, Kei Okada, Masayuki Inaba  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07496)  
+
+**Abstract**: Birds in nature perform perching not only for rest but also for interaction with human such as the relationship with falconers. Recently, researchers achieve perching-capable aerial robots as a way to save energy, and deformable structure demonstrate significant advantages in efficiency of perching and compactness of configuration. However, ensuring flight stability remains challenging for deformable aerial robots due to the difficulty of controlling flexible arms. Furthermore, perching for human interaction requires high compliance along with safety. Thus, this study aims to develop a deformable aerial robot capable of perching on humans with high flexibility and grasping ability. To overcome the challenges of stability of both flight and perching, we propose a hybrid morphing structure that combines a unilateral flexible arm and a pneumatic inflatable actuators. This design allows the robot's arms to remain rigid during flight and soft while perching for more effective grasping. We also develop a pneumatic control system that optimizes pressure regulation while integrating shock absorption and adjustable grasping forces, enhancing interaction capabilities and energy efficiency. Besides, we focus on the structural characteristics of the unilateral flexible arm and identify sufficient conditions under which standard quadrotor modeling and control remain effective in terms of flight stability. Finally, the developed prototype demonstrates the feasibility of compliant perching maneuvers on humans, as well as the robust recovery even after arm deformation caused by thrust reductions during flight. To the best of our knowledge, this work is the first to achieve an aerial robot capable of perching on humans for interaction. 
+
+**Abstract (ZH)**: 一种用于人类交互的可变形飞行机器人及其 compliant perching 技术 
+
+---
+# Safe and Non-Conservative Contingency Planning for Autonomous Vehicles via Online Learning-Based Reachable Set Barriers 
+
+**Title (ZH)**: 基于在线学习可达集屏障的自主车辆安全且非保守的应急规划 
+
+**Authors**: Rui Yang, Lei Zheng, Shuzhi Sam Ge, Jun Ma  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07464)  
+
+**Abstract**: Autonomous vehicles must navigate dynamically uncertain environments while balancing the safety and driving efficiency. This challenge is exacerbated by the unpredictable nature of surrounding human-driven vehicles (HVs) and perception inaccuracies, which require planners to adapt to evolving uncertainties while maintaining safe trajectories. Overly conservative planners degrade driving efficiency, while deterministic approaches may encounter serious issues and risks of failure when faced with sudden and unexpected maneuvers. To address these issues, we propose a real-time contingency trajectory optimization framework in this paper. By employing event-triggered online learning of HV control-intent sets, our method dynamically quantifies multi-modal HV uncertainties and refines the forward reachable set (FRS) incrementally. Crucially, we enforce invariant safety through FRS-based barrier constraints that ensure safety without reliance on accurate trajectory prediction of HVs. These constraints are embedded in contingency trajectory optimization and solved efficiently through consensus alternative direction method of multipliers (ADMM). The system continuously adapts to the uncertainties in HV behaviors, preserving feasibility and safety without resorting to excessive conservatism. High-fidelity simulations on highway and urban scenarios, as well as a series of real-world experiments demonstrate significant improvements in driving efficiency and passenger comfort while maintaining safety under uncertainty. The project page is available at this https URL. 
+
+**Abstract (ZH)**: 自主驾驶车辆必须在平衡安全性和驾驶效率的同时导航动态不确定性环境。由于周围人类驾驶车辆（HVs）的不可预测性和感知不准确性，这一挑战被进一步加剧，要求规划器在保持安全轨迹的同时适应不断变化的不确定性。过于保守的规划器会降低驾驶效率，而确定性方法在面对突发的不可预见操作时可能会遇到严重的问题和失败风险。为了解决这些问题，我们在本文中提出了一种实时应急轨迹优化框架。通过采用基于事件触发的在线学习方法学习HV控制意图集，我们的方法动态量化了多模态HV不确定性并逐步细化前向可达集（FRS）。关键在于，我们通过基于FRS的障碍约束确保安全性，而不依赖于准确的HV轨迹预测。这些约束被嵌入到应急轨迹优化中，并通过共识交替方向法（ADMM）高效求解。该系统能够持续适应HV行为的不确定性，确保可行性与安全性，而无需过度保守。在高速公路和城市场景下的高保真模拟以及一系列现实世界实验表明，在不确定性条件下，该方法能够显著提高驾驶效率和乘客舒适度，同时保持安全性。项目页面详见此[链接]。 
+
+---
+# DepthVision: Robust Vision-Language Understanding through GAN-Based LiDAR-to-RGB Synthesis 
+
+**Title (ZH)**: DepthVision：通过基于GAN的LiDAR-to-RGB合成实现稳健的视觉-语言理解 
+
+**Authors**: Sven Kirchner, Nils Purschke, Ross Greer, Alois C. Knoll  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07463)  
+
+**Abstract**: Ensuring reliable robot operation when visual input is degraded or insufficient remains a central challenge in robotics. This letter introduces DepthVision, a framework for multimodal scene understanding designed to address this problem. Unlike existing Vision-Language Models (VLMs), which use only camera-based visual input alongside language, DepthVision synthesizes RGB images from sparse LiDAR point clouds using a conditional generative adversarial network (GAN) with an integrated refiner network. These synthetic views are then combined with real RGB data using a Luminance-Aware Modality Adaptation (LAMA), which blends the two types of data dynamically based on ambient lighting conditions. This approach compensates for sensor degradation, such as darkness or motion blur, without requiring any fine-tuning of downstream vision-language models. We evaluate DepthVision on real and simulated datasets across various models and tasks, with particular attention to safety-critical tasks. The results demonstrate that our approach improves performance in low-light conditions, achieving substantial gains over RGB-only baselines while preserving compatibility with frozen VLMs. This work highlights the potential of LiDAR-guided RGB synthesis for achieving robust robot operation in real-world environments. 
+
+**Abstract (ZH)**: 确保视觉输入降级或不足时机器人可靠运行仍然是机器人技术中的一个核心挑战。本文介绍了DepthVision框架，这是一种用于多模态场景理解的设计，旨在解决这一问题。不同于现有的视觉-语言模型（VLMs）仅使用相机视觉输入和语言，DepthVision利用条件生成对抗网络（GAN）结合配套精炼网络从稀疏LiDAR点云中合成RGB图像。这些合成视图然后与真实RGB数据结合使用Luminance-Aware模态适应（LAMA），根据环境光照条件动态混合这两种类型的数据。该方法无需对下游视觉-语言模型进行任何微调即可补偿传感器降级，如黑暗或运动模糊。我们在各种模型和任务的真实和模拟数据集上评估了DepthVision，特别是关注安全关键任务。结果表明，我们的方法在低光条件下提高了性能，相对于仅基于RGB的基线实现了显著改进，同时保持与冻结的VLM兼容。这项工作突显了LiDAR引导的RGB合成在实现真实环境下稳健机器人操作方面的潜力。 
+
+---
+# Text2Touch: Tactile In-Hand Manipulation with LLM-Designed Reward Functions 
+
+**Title (ZH)**: Text2Touch: 基于LLM设计奖励函数的在手触觉操控 
+
+**Authors**: Harrison Field, Max Yang, Yijiong Lin, Efi Psomopoulou, David Barton, Nathan F. Lepora  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07445)  
+
+**Abstract**: Large language models (LLMs) are beginning to automate reward design for dexterous manipulation. However, no prior work has considered tactile sensing, which is known to be critical for human-like dexterity. We present Text2Touch, bringing LLM-crafted rewards to the challenging task of multi-axis in-hand object rotation with real-world vision based tactile sensing in palm-up and palm-down configurations. Our prompt engineering strategy scales to over 70 environment variables, and sim-to-real distillation enables successful policy transfer to a tactile-enabled fully actuated four-fingered dexterous robot hand. Text2Touch significantly outperforms a carefully tuned human-engineered baseline, demonstrating superior rotation speed and stability while relying on reward functions that are an order of magnitude shorter and simpler. These results illustrate how LLM-designed rewards can significantly reduce the time from concept to deployable dexterous tactile skills, supporting more rapid and scalable multimodal robot learning. Project website: this https URL 
+
+**Abstract (ZH)**: 大型语言模型（LLMs）开始自动设计精细操作的奖励函数。然而，先前工作中尚未考虑触觉感知，而触觉感知对于实现人类级别的灵巧性是至关重要的。我们提出了Text2Touch，将LLM设计的奖励应用于手掌向上和向下配置的多轴手持物体旋转的挑战性任务，并结合真实视觉感知的触觉感知。我们的提示工程策略可扩展到超过70个环境变量，而模拟到现实的训练使奖励函数能够成功地在触觉增强的四指灵巧机器人手中实现策略转移。Text2Touch在仔细调优的人工设计基准线中表现出显著的优越性，依赖于短一个数量级且结构更简单的奖励函数，展示了更快的旋转速度和更高的稳定性。这些结果表明，LLM设计的奖励函数可以显著缩短从概念到可部署的灵巧触觉技能的时间，支持更快速和可扩展的多模态机器人学习。项目网站: 这里 
+
+---
+# Timing the Message: Language-Based Notifications for Time-Critical Assistive Settings 
+
+**Title (ZH)**: Timing the Message: 基于语言的通知在时间敏感的辅助设置中 
+
+**Authors**: Ya-Chuan Hsu, Jonathan DeCastro, Andrew Silva, Guy Rosman  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07438)  
+
+**Abstract**: In time-critical settings such as assistive driving, assistants often rely on alerts or haptic signals to prompt rapid human attention, but these cues usually leave humans to interpret situations and decide responses independently, introducing potential delays or ambiguity in meaning. Language-based assistive systems can instead provide instructions backed by context, offering more informative guidance. However, current approaches (e.g., social assistive robots) largely prioritize content generation while overlooking critical timing factors such as verbal conveyance duration, human comprehension delays, and subsequent follow-through duration. These timing considerations are crucial in time-critical settings, where even minor delays can substantially affect outcomes. We aim to study this inherent trade-off between timeliness and informativeness by framing the challenge as a sequential decision-making problem using an augmented-state Markov Decision Process. We design a framework combining reinforcement learning and a generated offline taxonomy dataset, where we balance the trade-off while enabling a scalable taxonomy dataset generation pipeline. Empirical evaluation with synthetic humans shows our framework improves success rates by over 40% compared to methods that ignore time delays, while effectively balancing timeliness and informativeness. It also exposes an often-overlooked trade-off between these two factors, opening new directions for optimizing communication in time-critical human-AI assistance. 
+
+**Abstract (ZH)**: 在时间关键设置下基于语言的辅助系统的时间及时性和信息量权衡研究 
+
+---
+# Robust Docking Maneuvers for Autonomous Trolley Collection: An Optimization-Based Visual Servoing Scheme 
+
+**Title (ZH)**: 基于优化的视觉伺服方案的自主电车回收鲁棒对接机动策略 
+
+**Authors**: Yuhan Pang, Bingyi Xia, Zhe Zhang, Zhirui Sun, Peijia Xie, Bike Zhu, Wenjun Xu, Jiankun Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07413)  
+
+**Abstract**: Service robots have demonstrated significant potential for autonomous trolley collection and redistribution in public spaces like airports or warehouses to improve efficiency and reduce cost. Usually, a fully autonomous system for the collection and transportation of multiple trolleys is based on a Leader-Follower formation of mobile manipulators, where reliable docking maneuvers of the mobile base are essential to align trolleys into organized queues. However, developing a vision-based robotic docking system faces significant challenges: high precision requirements, environmental disturbances, and inherent robot constraints. To address these challenges, we propose an optimization-based Visual Servoing scheme that incorporates active infrared markers for robust feature extraction across diverse lighting conditions. This framework explicitly models nonholonomic kinematics and visibility constraints within the Hybrid Visual Servoing problem, augmented with an observer for disturbance rejection to ensure precise and stable docking. Experimental results across diverse environments demonstrate the robustness of this system, with quantitative evaluations confirming high docking accuracy. 
+
+**Abstract (ZH)**: 服务机器人在机场或仓库等公共空间中实现了自主手推车收集与重新分布的显著潜力，以提高效率并降低成本。通常，基于移动 manipulator 的领导者-跟随者 formations 的完全自主多手推车收集与运输系统依赖于移动基座的可靠对准操作，以将手推车排列成有序的队列。然而，开发基于视觉的机器人对准系统面临重大挑战：高精度要求、环境干扰以及固有的机器人约束。为应对这些挑战，我们提出了一种基于优化的视觉伺服方案，结合主动红外标记，以在多种光照条件下实现稳健的特征提取。该框架明确模型了非完整运动学和视域约束，并通过扰动拒绝观测器来增强混合视觉伺服问题，以确保精确且稳定的对准。在多种环境中的实验结果证明了该系统的鲁棒性，并通过定量评估确认了高对准精度。 
+
+---
+# Attention and Risk-Aware Decision Framework for Safe Autonomous Driving 
+
+**Title (ZH)**: 基于注意力和风险意识的决策框架以实现安全自主驾驶 
+
+**Authors**: Zhen Tian, Fujiang Yuan, Yangfan He, Qinghao Li, Changlin Chen, Huilin Chen, Tianxiang Xu, Jianyu Duan, Yanhong Peng, Zhihao Lin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07412)  
+
+**Abstract**: Autonomous driving has attracted great interest due to its potential capability in full-unsupervised driving. Model-based and learning-based methods are widely used in autonomous driving. Model-based methods rely on pre-defined models of the environment and may struggle with unforeseen events. Proximal policy optimization (PPO), an advanced learning-based method, can adapt to the above limits by learning from interactions with the environment. However, existing PPO faces challenges with poor training results, and low training efficiency in long sequences. Moreover, the poor training results are equivalent to collisions in driving tasks. To solve these issues, this paper develops an improved PPO by introducing the risk-aware mechanism, a risk-attention decision network, a balanced reward function, and a safety-assisted mechanism. The risk-aware mechanism focuses on highlighting areas with potential collisions, facilitating safe-driving learning of the PPO. The balanced reward function adjusts rewards based on the number of surrounding vehicles, promoting efficient exploration of the control strategy during training. Additionally, the risk-attention network enhances the PPO to hold channel and spatial attention for the high-risk areas of input images. Moreover, the safety-assisted mechanism supervises and prevents the actions with risks of collisions during the lane keeping and lane changing. Simulation results on a physical engine demonstrate that the proposed algorithm outperforms benchmark algorithms in collision avoidance, achieving higher peak reward with less training time, and shorter driving time remaining on the risky areas among multiple testing traffic flow scenarios. 
+
+**Abstract (ZH)**: 基于风险感知的改进PPO算法在自动驾驶中的应用 
+
+---
+# TransMPC: Transformer-based Explicit MPC with Variable Prediction Horizon 
+
+**Title (ZH)**: 基于变换器的显式模型预测控制及可变预测 horizons 方法 
+
+**Authors**: Sichao Wu, Jiang Wu, Xingyu Cao, Fawang Zhang, Guangyuan Yu, Junjie Zhao, Yue Qu, Fei Ma, Jingliang Duan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07381)  
+
+**Abstract**: Traditional online Model Predictive Control (MPC) methods often suffer from excessive computational complexity, limiting their practical deployment. Explicit MPC mitigates online computational load by pre-computing control policies offline; however, existing explicit MPC methods typically rely on simplified system dynamics and cost functions, restricting their accuracy for complex systems. This paper proposes TransMPC, a novel Transformer-based explicit MPC algorithm capable of generating highly accurate control sequences in real-time for complex dynamic systems. Specifically, we formulate the MPC policy as an encoder-only Transformer leveraging bidirectional self-attention, enabling simultaneous inference of entire control sequences in a single forward pass. This design inherently accommodates variable prediction horizons while ensuring low inference latency. Furthermore, we introduce a direct policy optimization framework that alternates between sampling and learning phases. Unlike imitation-based approaches dependent on precomputed optimal trajectories, TransMPC directly optimizes the true finite-horizon cost via automatic differentiation. Random horizon sampling combined with a replay buffer provides independent and identically distributed (i.i.d.) training samples, ensuring robust generalization across varying states and horizon lengths. Extensive simulations and real-world vehicle control experiments validate the effectiveness of TransMPC in terms of solution accuracy, adaptability to varying horizons, and computational efficiency. 
+
+**Abstract (ZH)**: 基于Transformer的实时复杂动态系统模型预测控制算法（TransMPC） 
+
+---
+# Aerial-ground Cross-modal Localization: Dataset, Ground-truth, and Benchmark 
+
+**Title (ZH)**: 空中-地面跨模态定位：数据集、 ground-truth 和基准 
+
+**Authors**: Yandi Yang, Jianping Li, Youqi Liao, Yuhao Li, Yizhe Zhang, Zhen Dong, Bisheng Yang, Naser El-Sheimy  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07362)  
+
+**Abstract**: Accurate visual localization in dense urban environments poses a fundamental task in photogrammetry, geospatial information science, and robotics. While imagery is a low-cost and widely accessible sensing modality, its effectiveness on visual odometry is often limited by textureless surfaces, severe viewpoint changes, and long-term drift. The growing public availability of airborne laser scanning (ALS) data opens new avenues for scalable and precise visual localization by leveraging ALS as a prior map. However, the potential of ALS-based localization remains underexplored due to three key limitations: (1) the lack of platform-diverse datasets, (2) the absence of reliable ground-truth generation methods applicable to large-scale urban environments, and (3) limited validation of existing Image-to-Point Cloud (I2P) algorithms under aerial-ground cross-platform settings. To overcome these challenges, we introduce a new large-scale dataset that integrates ground-level imagery from mobile mapping systems with ALS point clouds collected in Wuhan, Hong Kong, and San Francisco. 
+
+**Abstract (ZH)**: 准确的城市密集环境中视觉定位是摄影测量、地理空间信息科学和机器人技术中的基本任务。虽然图像是一种低成本且广泛可访问的传感模态，但其在视觉里程计中的有效性往往受限于纹理缺乏的表面、严重的视角变化和长期漂移。随着空中激光扫描（ALS）数据的日益公开，利用ALS作为先验地图来实现可扩展和精确的视觉定位开启了新的途径。然而，由于三个关键限制，ALS基于的定位潜力尚未得到充分探索：（1）缺乏平台多样化的数据集，（2）缺乏适用于大规模城市环境的可靠的地面真实生成方法，以及（3）现有图像到点云（I2P）算法在航空与地面跨平台设置下的验证不足。为克服这些挑战，我们引入了一个新的大规模数据集，该数据集将武汉、香港和旧金山等地的移动测绘系统获取的地面级图像与ALS点云相结合。 
+
+---
+# Performance Characterization of a Point-Cloud-Based Path Planner in Off-Road Terrain 
+
+**Title (ZH)**: 基于点云的路径规划在非铺设地形上的性能 characterization 
+
+**Authors**: Casey D. Majhor, Jeremy P. Bos  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07321)  
+
+**Abstract**: We present a comprehensive evaluation of a point-cloud-based navigation stack, MUONS, for autonomous off-road navigation. Performance is characterized by analyzing the results of 30,000 planning and navigation trials in simulation and validated through field testing. Our simulation campaign considers three kinematically challenging terrain maps and twenty combinations of seven path-planning parameters. In simulation, our MUONS-equipped AGV achieved a 0.98 success rate and experienced no failures in the field. By statistical and correlation analysis we determined that the Bi-RRT expansion radius used in the initial planning stages is most correlated with performance in terms of planning time and traversed path length. Finally, we observed that the proportional variation due to changes in the tuning parameters is remarkably well correlated to performance in field testing. This finding supports the use of Monte-Carlo simulation campaigns for performance assessment and parameter tuning. 
+
+**Abstract (ZH)**: 基于点云的MUONS自主离线导航堆栈的全面评估 
+
+---
+# Safe Gap-based Planning in Dynamic Settings 
+
+**Title (ZH)**: 动态环境下的安全间隔基规划 
+
+**Authors**: Max Asselmeier, Abdel Zaro, Dhruv Ahuja, Ye Zhao, Patricio A. Vela  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07239)  
+
+**Abstract**: This chapter extends the family of perception-informed gap-based local planners to dynamic environments. Existing perception-informed local planners that operate in dynamic environments often rely on emergent or empirical robustness for collision avoidance as opposed to performing formal analysis of dynamic obstacles. This proposed planner, dynamic gap, explicitly addresses dynamic obstacles through several steps in the planning pipeline. First, polar regions of free space known as gaps are tracked and their dynamics are estimated in order to understand how the local environment evolves over time. Then, at planning time, gaps are propagated into the future through novel gap propagation algorithms to understand what regions are feasible for passage. Lastly, pursuit guidance theory is leveraged to generate local trajectories that are provably collision-free under ideal conditions. Additionally, obstacle-centric ungap processing is performed in situations where no gaps exist to robustify the overall planning framework. A set of gap-based planners are benchmarked against a series of classical and learned motion planners in dynamic environments, and dynamic gap is shown to outperform all other baselines in all environments. Furthermore, dynamic gap is deployed on a TurtleBot2 platform in several real-world experiments to validate collision avoidance behaviors. 
+
+**Abstract (ZH)**: 本章将感知导向的间隙基局部规划者家族扩展到动态环境。现有的在动态环境中运行的感知导向局部规划者通常依赖于碰撞避免的经验鲁棒性，而非对动态障碍物进行形式化分析。本文提出的一种动态间隙规划者通过规划管道中的几个步骤明确地解决了动态障碍物。首先，跟踪自由空间的极区（即间隙），并估计它们的动态，以理解局部环境随时间的变化。然后，在规划时，通过新颖的间隙传播算法将间隙传播到未来，以了解哪些区域适合通行。最后，利用追逐引导理论生成在理想条件下可证明无碰撞的局部轨迹。此外，在不存在间隙的情况下，还进行了基于障碍物的无间隙处理，以增强整体规划框架的鲁棒性。一系列基于间隙的规划者在动态环境中与一系列经典和学习到的运动规划者进行了基准测试，结果显示动态间隙在所有环境中均优于其他基准。此外，动态间隙还在TurtleBot2平台上进行了多项现实世界的实验，以验证其避碰行为。 
+
+---
+# Quantum Machine Learning and Grover's Algorithm for Quantum Optimization of Robotic Manipulators 
+
+**Title (ZH)**: 量子机器学习与Grover算法在机器人 manipulator 优化中的量子优化 
+
+**Authors**: Hassen Nigatu, Shi Gaokun, Li Jituo, Wang Jin, Lu Guodong, Howard Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07216)  
+
+**Abstract**: Optimizing high-degree of freedom robotic manipulators requires searching complex, high-dimensional configuration spaces, a task that is computationally challenging for classical methods. This paper introduces a quantum native framework that integrates quantum machine learning with Grover's algorithm to solve kinematic optimization problems efficiently. A parameterized quantum circuit is trained to approximate the forward kinematics model, which then constructs an oracle to identify optimal configurations. Grover's algorithm leverages this oracle to provide a quadratic reduction in search complexity. Demonstrated on 1-DoF, 2-DoF, and dual-arm manipulator tasks, the method achieves significant speedups-up to 93x over classical optimizers like Nelder Mead as problem dimensionality increases. This work establishes a foundational, quantum-native framework for robot kinematic optimization, effectively bridging quantum computing and robotics problems. 
+
+**Abstract (ZH)**: 基于量子机器学习和Grover算法的高自由度机器人 manipulator运动优化的量子原生框架 
+
+---
+# First Plan Then Evaluate: Use a Vectorized Motion Planner for Grasping 
+
+**Title (ZH)**: 先规划后评估: 使用向量化运动规划进行抓取 
+
+**Authors**: Martin Matak, Mohanraj Devendran Ashanti, Karl Van Wyk, Tucker Hermans  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07162)  
+
+**Abstract**: Autonomous multi-finger grasping is a fundamental capability in robotic manipulation. Optimization-based approaches show strong performance, but tend to be sensitive to initialization and are potentially time-consuming. As an alternative, the generator-evaluator-planner framework has been proposed. A generator generates grasp candidates, an evaluator ranks the proposed grasps, and a motion planner plans a trajectory to the highest-ranked grasp. If the planner doesn't find a trajectory, a new trajectory optimization is started with the next-best grasp as the target and so on. However, executing lower-ranked grasps means a lower chance of grasp success, and multiple trajectory optimizations are time-consuming. Alternatively, relaxing the threshold for motion planning accuracy allows for easier computation of a successful trajectory but implies lower accuracy in estimating grasp success likelihood. It's a lose-lose proposition: either spend more time finding a successful trajectory or have a worse estimate of grasp success. We propose a framework that plans trajectories to a set of generated grasp targets in parallel, the evaluator estimates the grasp success likelihood of the resulting trajectories, and the robot executes the trajectory most likely to succeed. To plan trajectories to different targets efficiently, we propose the use of a vectorized motion planner. Our experiments show our approach improves over the traditional generator-evaluator-planner framework across different objects, generators, and motion planners, and successfully generalizes to novel environments in the real world, including different shelves and table heights. Project website this https URL 
+
+**Abstract (ZH)**: 自主多指抓取是机器人操作的基本能力。基于优化的方法表现出色，但往往对初始化敏感且可能耗时。作为替代方案，提出了生成器-评估器-规划器框架。生成器生成抓取候选，评估器对提出的抓取进行排名，规划器规划通往最高排名抓取的轨迹。如果规划器找不到轨迹，则重新以下一个最佳抓取为目标开始新的轨迹优化。然而，执行较低排名的抓取意味着抓取成功的可能性较低，且多次轨迹优化耗时。或者，放宽运动规划精度的阈值可以更容易计算成功的轨迹，但会导致较低的抓取成功概率估计准确性。这是一个两难局面：要么花费更多时间寻找成功的轨迹，要么获得较低的抓取成功概率估计。我们提出了一种框架，在并行规划通往生成器生成的目标的轨迹时，评估器评估结果轨迹的抓取成功概率，机器人执行最有可能成功的轨迹。为了高效地规划不同目标的轨迹，我们提出了使用向量化的运动规划器。我们的实验结果表明，我们的方法在不同物体、生成器和运动规划器的情况下，均优于传统的生成器-评估器-规划器框架，并成功地将该方法推广到真实世界的新型环境中，包括不同高度的货架和桌子。项目网站：this https URL。 
+
+---
+# Knowledge Isn't Power: The Ethics of Social Robots and the Difficulty of Informed Consent 
+
+**Title (ZH)**: 知识不是力量：社会机器人的伦理问题与知情同意的难度 
+
+**Authors**: James M. Berzuk, Lauren Corcoran, Brannen McKenzie-Lefurgey, Katie Szilagyi, James E. Young  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07942)  
+
+**Abstract**: Contemporary robots are increasingly mimicking human social behaviours to facilitate interaction, such as smiling to signal approachability, or hesitating before taking an action to allow people time to react. Such techniques can activate a person's entrenched social instincts, triggering emotional responses as though they are interacting with a fellow human, and can prompt them to treat a robot as if it truly possesses the underlying life-like processes it outwardly presents, raising significant ethical questions. We engage these issues through the lens of informed consent: drawing upon prevailing legal principles and ethics, we examine how social robots can influence user behaviour in novel ways, and whether under those circumstances users can be appropriately informed to consent to these heightened interactions. We explore the complex circumstances of human-robot interaction and highlight how it differs from more familiar interaction contexts, and we apply legal principles relating to informed consent to social robots in order to reconceptualize the current ethical debates surrounding the field. From this investigation, we synthesize design goals for robot developers to achieve more ethical and informed human-robot interaction. 
+
+**Abstract (ZH)**: 当代机器人越来越模仿人类社会行为以促进互动，例如微笑以表示亲和力，或在采取行动前犹豫以允许人们作出反应。这些技术可以激活人的根深蒂固的社会本能，引发情感反应，仿佛在与真人互动，并可能促使人们将机器人视为具有其外在呈现的生命过程的真实主体，从而引发重大的伦理问题。我们从知情同意的角度探讨这些议题：借鉴现有的法律规定和伦理原则，我们考察社会机器人如何以新颖的方式影响用户行为，并评估在这种情况下用户是否可以适当知情并同意进行这些增强的互动。我们探讨了人机互动的复杂情况，指出现有的互动情境有所不同，并将知情同意的法律原则应用于社会机器人，以重新构想该领域的当前伦理争端。基于这一调查，我们总结了机器人开发者的设计目标，以实现更为伦理和知情的人机互动。 
+
+---
+# A Robot That Listens: Enhancing Self-Disclosure and Engagement Through Sentiment-based Backchannels and Active Listening 
+
+**Title (ZH)**: 一个会倾听的机器人：基于情感的回应和主动倾听以增强自我披露和参与度 
+
+**Authors**: Hieu Tran, Go-Eum Cha, Sooyeon Jeong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07873)  
+
+**Abstract**: As social robots get more deeply integrated intoour everyday lives, they will be expected to engage in meaningful conversations and exhibit socio-emotionally intelligent listening behaviors when interacting with people. Active listening and backchanneling could be one way to enhance robots' communicative capabilities and enhance their effectiveness in eliciting deeper self-disclosure, providing a sense of empathy,and forming positive rapport and relationships with this http URL, we developed an LLM-powered social robot that can exhibit contextually appropriate sentiment-based backchannelingand active listening behaviors (active listening+backchanneling) and compared its efficacy in eliciting people's self-disclosurein comparison to robots that do not exhibit any of these listening behaviors (control) and a robot that only exhibitsbackchanneling behavior (backchanneling-only). Through ourexperimental study with sixty-five participants, we found theparticipants who conversed with the active listening robot per-ceived the interactions more positively, in which they exhibited the highest self-disclosures, and reported the strongest senseof being listened to. The results of our study suggest that the implementation of active listening behaviors in social robotshas the potential to improve human-robot communication andcould further contribute to the building of deeper human-robot relationships and rapport. 
+
+**Abstract (ZH)**: 随着社会机器人越来越多地融入我们的日常生活，它们将被期望与人们互动时进行有意义的对话，并表现出社交情感智能的倾听行为。积极倾听和插话可能是增强机器人沟通能力、促进更深入自我披露、提供共情感并建立积极关系的一种方式。基于此，我们开发了一种具备情感驱动插话和积极倾听行为的大型语言模型驱动的社会机器人，并将其与不表现出任何这些倾听行为的控制机器人和仅表现出插话行为的机器人进行了比较，以评估其在促进人们自我披露方面的有效性。通过与六十五名参与者进行的实验研究，我们发现与积极倾听机器人对话的参与者对互动的感受更为积极，自我披露最多，且报告的共情感最强。我们的研究表明，在社会机器人中实施积极倾听行为有可能改善人机沟通，并进一步促进更深入的人机关系和建立积极的互动。 
+
+---
+# Bio-inspired decision making in swarms under biases from stubborn robots, corrupted communication, and independent discovery 
+
+**Title (ZH)**: 受顽固机器人偏见、通信失真和独立发现影响的仿生群体决策 
+
+**Authors**: Raina Zakir, Timoteo Carletti, Marco Dorigo, Andreagiovanni Reina  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07561)  
+
+**Abstract**: Minimalistic robot swarms offer a scalable, robust, and cost-effective approach to performing complex tasks with the potential to transform applications in healthcare, disaster response, and environmental monitoring. However, coordinating such decentralised systems remains a fundamental challenge, particularly when robots are constrained in communication, computation, and memory. In our study, individual robots frequently make errors when sensing the environment, yet the swarm can rapidly and reliably reach consensus on the best among $n$ discrete options. We compare two canonical mechanisms of opinion dynamics -- direct-switch and cross-inhibition -- which are simple yet effective rules for collective information processing observed in biological systems across scales, from neural populations to insect colonies. We generalise the existing mean-field models by considering asocial biases influencing the opinion dynamics. While swarms using direct-switch reliably select the best option in absence of asocial dynamics, their performance deteriorates once such biases are introduced, often resulting in decision deadlocks. In contrast, bio-inspired cross-inhibition enables faster, more cohesive, accurate, robust, and scalable decisions across a wide range of biased conditions. Our findings provide theoretical and practical insights into the coordination of minimal swarms and offer insights that extend to a broad class of decentralised decision-making systems in biology and engineering. 
+
+**Abstract (ZH)**: 最小化的机器人 swarm 提供了一种可扩展、稳健且成本效益高的方法，用于执行复杂任务，并有潜力在医疗保健、灾难响应和环境监测等领域进行转型。然而，协调这样的分散系统仍然是一个基本挑战，尤其是在机器人在通信、计算和内存方面受到约束的情况下。在我们的研究中，个体机器人在感知环境时经常出现错误，但 swarm 可以迅速且可靠地就 $n$ 个离散选项中最好的一个达成一致。我们比较了两种经典的意见动态机制——直接切换和交叉抑制，这些机制是生物系统中从神经群体到昆虫社群不同尺度上观察到的集体信息处理的简单而有效的规则。我们通过考虑影响意见动态的无社会偏见，推广了现有的均场模型。尽管在没有无社会动力的情况下，使用直接切换的 swarm 可以可靠地选择最佳选项，但在引入这种偏见后，其性能会下降，通常会导致决策僵局。相比之下，受生物启发的交叉抑制能够在广泛偏见条件下实现更快、更协调、更准确、更稳健和更可扩展的决策。我们的研究成果为最小化 swarm 的协调提供了理论和实践见解，并为生物学和工程领域的广泛分散决策系统提供了见解。 
+
+---
+# Adaptive Evolutionary Framework for Safe, Efficient, and Cooperative Autonomous Vehicle Interactions 
+
+**Title (ZH)**: 适应性进化框架实现安全、高效与协作的自主车辆交互 
+
+**Authors**: Zhen Tian, Zhihao Lin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07411)  
+
+**Abstract**: Modern transportation systems face significant challenges in ensuring road safety, given serious injuries caused by road accidents. The rapid growth of autonomous vehicles (AVs) has prompted new traffic designs that aim to optimize interactions among AVs. However, effective interactions between AVs remains challenging due to the absence of centralized control. Besides, there is a need for balancing multiple factors, including passenger demands and overall traffic efficiency. Traditional rule-based, optimization-based, and game-theoretic approaches each have limitations in addressing these challenges. Rule-based methods struggle with adaptability and generalization in complex scenarios, while optimization-based methods often require high computational resources. Game-theoretic approaches, such as Stackelberg and Nash games, suffer from limited adaptability and potential inefficiencies in cooperative settings. This paper proposes an Evolutionary Game Theory (EGT)-based framework for AV interactions that overcomes these limitations by utilizing a decentralized and adaptive strategy evolution mechanism. A causal evaluation module (CEGT) is introduced to optimize the evolutionary rate, balancing mutation and evolution by learning from historical interactions. Simulation results demonstrate the proposed CEGT outperforms EGT and popular benchmark games in terms of lower collision rates, improved safety distances, higher speeds, and overall better performance compared to Nash and Stackelberg games across diverse scenarios and parameter settings. 
+
+**Abstract (ZH)**: 基于进化博弈论的自动驾驶车辆交互框架：通过去中心化和自适应策略进化机制克服传统方法的局限性 
+
+---
+# Efficient Multi-Agent Coordination via Dynamic Joint-State Graph Construction 
+
+**Title (ZH)**: 动态联合状态图构建下的高效多智能体协调 
+
+**Authors**: Yanlin Zhou, Manshi Limbu, Xuesu Xiao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07234)  
+
+**Abstract**: Multi-agent pathfinding (MAPF) traditionally focuses on collision avoidance, but many real-world applications require active coordination between agents to improve team performance. This paper introduces Team Coordination on Graphs with Risky Edges (TCGRE), where agents collaborate to reduce traversal costs on high-risk edges via support from teammates. We reformulate TCGRE as a 3D matching problem-mapping robot pairs, support pairs, and time steps-and rigorously prove its NP-hardness via reduction from Minimum 3D Matching. To address this complexity, (in the conference version) we proposed efficient decomposition methods, reducing the problem to tractable subproblems: Joint-State Graph (JSG): Encodes coordination as a single-agent shortest-path problem. Coordination-Exhaustive Search (CES): Optimizes support assignments via exhaustive pairing. Receding-Horizon Optimistic Cooperative A* (RHOCA*): Balances optimality and scalability via horizon-limited planning. Further in this extension, we introduce a dynamic graph construction method (Dynamic-HJSG), leveraging agent homogeneity to prune redundant states and reduce computational overhead by constructing the joint-state graph dynamically. Theoretical analysis shows Dynamic-HJSG preserves optimality while lowering complexity from exponential to polynomial in key cases. Empirical results validate scalability for large teams and graphs, with HJSG outperforming baselines greatly in runtime in different sizes and types of graphs. This work bridges combinatorial optimization and multi-agent planning, offering a principled framework for collaborative pathfinding with provable guarantees, and the key idea of the solution can be widely extended to many other collaborative optimization problems, such as MAPF. 
+
+**Abstract (ZH)**: 基于风险边的图上团队协调多智能体路径规划（Team Coordination on Graphs with Risky Edges for Multi-Agent Pathfinding） 
+
+---
