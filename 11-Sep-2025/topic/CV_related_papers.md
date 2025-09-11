@@ -1,0 +1,269 @@
+# Good Deep Features to Track: Self-Supervised Feature Extraction and Tracking in Visual Odometry 
+
+**Title (ZH)**: 好的深度特征追踪：视觉里程表中的自我监督特征提取与追踪 
+
+**Authors**: Sai Puneeth Reddy Gottam, Haoming Zhang, Eivydas Keras  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.08333)  
+
+**Abstract**: Visual-based localization has made significant progress, yet its performance often drops in large-scale, outdoor, and long-term settings due to factors like lighting changes, dynamic scenes, and low-texture areas. These challenges degrade feature extraction and tracking, which are critical for accurate motion estimation. While learning-based methods such as SuperPoint and SuperGlue show improved feature coverage and robustness, they still face generalization issues with out-of-distribution data. We address this by enhancing deep feature extraction and tracking through self-supervised learning with task specific feedback. Our method promotes stable and informative features, improving generalization and reliability in challenging environments. 
+
+**Abstract (ZH)**: 基于视觉的定位在大规模、户外和长期设置中由于光照变化、动态场景和低纹理区域等因素，其性能往往下降，这些挑战会恶化特征提取和跟踪，这对准确的运动估计至关重要。尽管基于学习的方法如SuperPoint和SuperGlue在特征覆盖和鲁棒性方面表现出改进，但仍存在分布外数据的一般化问题。我们通过特定任务的自监督学习增强深度特征提取和跟踪，促进稳定性和信息性特征，从而在具有挑战性的环境中提高一般化能力和可靠性。 
+
+---
+# Deep Visual Odometry for Stereo Event Cameras 
+
+**Title (ZH)**: 深度视觉里程计用于立体事件相机 
+
+**Authors**: Sheng Zhong, Junkai Niu, Yi Zhou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.08235)  
+
+**Abstract**: Event-based cameras are bio-inspired sensors with pixels that independently and asynchronously respond to brightness changes at microsecond resolution, offering the potential to handle state estimation tasks involving motion blur and high dynamic range (HDR) illumination conditions. However, the versatility of event-based visual odometry (VO) relying on handcrafted data association (either direct or indirect methods) is still unreliable, especially in field robot applications under low-light HDR conditions, where the dynamic range can be enormous and the signal-to-noise ratio is spatially-and-temporally varying. Leveraging deep neural networks offers new possibilities for overcoming these challenges. In this paper, we propose a learning-based stereo event visual odometry. Building upon Deep Event Visual Odometry (DEVO), our system (called Stereo-DEVO) introduces a novel and efficient static-stereo association strategy for sparse depth estimation with almost no additional computational burden. By integrating it into a tightly coupled bundle adjustment (BA) optimization scheme, and benefiting from the recurrent network's ability to perform accurate optical flow estimation through voxel-based event representations to establish reliable patch associations, our system achieves high-precision pose estimation in metric scale. In contrast to the offline performance of DEVO, our system can process event data of \zs{Video Graphics Array} (VGA) resolution in real time. Extensive evaluations on multiple public real-world datasets and self-collected data justify our system's versatility, demonstrating superior performance compared to state-of-the-art event-based VO methods. More importantly, our system achieves stable pose estimation even in large-scale nighttime HDR scenarios. 
+
+**Abstract (ZH)**: 基于事件的立体视觉里程计：学习驱动的事件视觉里程计 
+
+---
+# A Comprehensive Review of Reinforcement Learning for Autonomous Driving in the CARLA Simulator 
+
+**Title (ZH)**: CARLA模拟器中自主驾驶强化学习的综述 
+
+**Authors**: Elahe Delavari, Feeza Khan Khanzada, Jaerock Kwon  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.08221)  
+
+**Abstract**: Autonomous-driving research has recently embraced deep Reinforcement Learning (RL) as a promising framework for data-driven decision making, yet a clear picture of how these algorithms are currently employed, benchmarked and evaluated is still missing. This survey fills that gap by systematically analysing around 100 peer-reviewed papers that train, test or validate RL policies inside the open-source CARLA simulator. We first categorize the literature by algorithmic family model-free, model-based, hierarchical, and hybrid and quantify their prevalence, highlighting that more than 80% of existing studies still rely on model-free methods such as DQN, PPO and SAC. Next, we explain the diverse state, action and reward formulations adopted across works, illustrating how choices of sensor modality (RGB, LiDAR, BEV, semantic maps, and carla kinematics states), control abstraction (discrete vs. continuous) and reward shaping are used across various literature. We also consolidate the evaluation landscape by listing the most common metrics (success rate, collision rate, lane deviation, driving score) and the towns, scenarios and traffic configurations used in CARLA benchmarks. Persistent challenges including sparse rewards, sim-to-real transfer, safety guarantees and limited behaviour diversity are distilled into a set of open research questions, and promising directions such as model-based RL, meta-learning and richer multi-agent simulations are outlined. By providing a unified taxonomy, quantitative statistics and a critical discussion of limitations, this review aims to serve both as a reference for newcomers and as a roadmap for advancing RL-based autonomous driving toward real-world deployment. 
+
+**Abstract (ZH)**: 自主驾驶研究近年来将深度强化学习（RL）视为一种有前途的数据驱动决策框架，然而关于这些算法目前的应用、基准测试和评估的清晰图景仍不清楚。本文综述通过系统分析约100篇已在开源CARLA模拟器中训练、测试或验证RL策略的同行评议论文，填补了这一空白。首先，按算法家族将其分类为模型自由型、模型依赖型、层次型和混合型，并量化其分布情况，强调超过80%的现有研究仍依赖于DQN、PPO和SAC等模型自由方法。接着，解释了各篇论文中采用的多样状态、动作和奖励形式，展示了传感器模态（RGB、LiDAR、BEV、语义地图和CARLA运动状态）、控制抽象（离散 vs. 连续）以及奖励塑造在不同文献中的应用情况。还通过列出最常见的评估指标（成功率、碰撞率、车道偏离、驾驶评分）以及CARLA基准中使用的城镇、场景和交通配置，汇总了评估格局。提炼出持续存在的挑战，如稀疏奖励、模拟到现实的转移、安全性保证和行为多样性的局限性，并提出了模型依赖式RL、元学习和更丰富的多智能体模拟等有前景的方向。通过提供统一的分类体系、定量统计和对局限性的批判性讨论，本文综述旨在为新入学者提供参考，并为基于RL的自主驾驶向实际部署推进提供方向图。 
+
+---
+# Zero-Shot Metric Depth Estimation via Monocular Visual-Inertial Rescaling for Autonomous Aerial Navigation 
+
+**Title (ZH)**: 单目视觉-惯性缩放的零样本度量深度估计及其在自主无人机导航中的应用 
+
+**Authors**: Steven Yang, Xiaoyu Tian, Kshitij Goel, Wennie Tabib  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.08159)  
+
+**Abstract**: This paper presents a methodology to predict metric depth from monocular RGB images and an inertial measurement unit (IMU). To enable collision avoidance during autonomous flight, prior works either leverage heavy sensors (e.g., LiDARs or stereo cameras) or data-intensive and domain-specific fine-tuning of monocular metric depth estimation methods. In contrast, we propose several lightweight zero-shot rescaling strategies to obtain metric depth from relative depth estimates via the sparse 3D feature map created using a visual-inertial navigation system. These strategies are compared for their accuracy in diverse simulation environments. The best performing approach, which leverages monotonic spline fitting, is deployed in the real-world on a compute-constrained quadrotor. We obtain on-board metric depth estimates at 15 Hz and demonstrate successful collision avoidance after integrating the proposed method with a motion primitives-based planner. 
+
+**Abstract (ZH)**: 本文提出了一种从单目RGB图像和惯性测量单元(IMU)预测度量深度的方法，并在此基础上实现了自主飞行中的碰撞避免。不同于先前工作依赖重传感器（如LiDAR或立体相机）或基于大量数据和领域特定微调的单目度量深度估计方法，我们提出了一种轻量级的零样本缩放策略，通过视觉-惯性导航系统创建的稀疏三维特征图从相对深度估计中获得度量深度。这些策略在多种仿真环境中进行准确性对比。性能最优的方法采用单调样条拟合策略，在计算资源受限的四旋翼无人机上进行了实际部署，取得了每秒15帧的机载度量深度估计，并通过与基于运动模块的规划器相结合，成功实现了碰撞避免。 
+
+---
+# An End-to-End Deep Learning Framework for Arsenicosis Diagnosis Using Mobile-Captured Skin Images 
+
+**Title (ZH)**: 基于移动设备拍摄皮肤图像的端到端深度学习框架用于砷中毒诊断 
+
+**Authors**: Asif Newaz, Asif Ur Rahman Adib, Rajit Sahil, Mashfique Mehzad  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.08780)  
+
+**Abstract**: Background: Arsenicosis is a serious public health concern in South and Southeast Asia, primarily caused by long-term consumption of arsenic-contaminated water. Its early cutaneous manifestations are clinically significant but often underdiagnosed, particularly in rural areas with limited access to dermatologists. Automated, image-based diagnostic solutions can support early detection and timely interventions.
+Methods: In this study, we propose an end-to-end framework for arsenicosis diagnosis using mobile phone-captured skin images. A dataset comprising 20 classes and over 11000 images of arsenic-induced and other dermatological conditions was curated. Multiple deep learning architectures, including convolutional neural networks (CNNs) and Transformer-based models, were benchmarked for arsenicosis detection. Model interpretability was integrated via LIME and Grad-CAM, while deployment feasibility was demonstrated through a web-based diagnostic tool.
+Results: Transformer-based models significantly outperformed CNNs, with the Swin Transformer achieving the best results (86\\% accuracy). LIME and Grad-CAM visualizations confirmed that the models attended to lesion-relevant regions, increasing clinical transparency and aiding in error analysis. The framework also demonstrated strong performance on external validation samples, confirming its ability to generalize beyond the curated dataset.
+Conclusion: The proposed framework demonstrates the potential of deep learning for non-invasive, accessible, and explainable diagnosis of arsenicosis from mobile-acquired images. By enabling reliable image-based screening, it can serve as a practical diagnostic aid in rural and resource-limited communities, where access to dermatologists is scarce, thereby supporting early detection and timely intervention. 
+
+**Abstract (ZH)**: 背景：砷中毒是南亚和东南亚地区的一个严重公共健康问题，主要由长期摄入含砷地下水引起。其早期皮肤表现具有临床意义但往往被误诊，尤其是在缺乏皮肤科医生的农村地区。基于图像的自动化诊断解决方案可以支持早期检测和及时干预。
+
+方法：本研究提出了一种端到端框架，利用手机拍摄的皮肤图像进行砷中毒诊断。构建了一个包含20个类别和超过11000张由砷引发和其他皮肤病情况组成的数据集。对比了多种深度学习架构，包括卷积神经网络（CNNs）和Transformer基模型，以评估其在砷中毒检测方面的性能。通过LIME和Grad-CAM集成模型可解释性，并通过基于Web的诊断工具展示了其部署可行性。
+
+结果：基于Transformer的模型显著优于CNNs，其中Swin Transformer达到最佳结果（准确率86%）。LIME和Grad-CAM可视化显示模型关注于病灶相关区域，增加了临床透明度并有助于错误分析。该框架在外部验证样本上也表现出强烈性能，证实了其超越所构建数据集的能力。
+
+结论：所提出的框架展示了深度学习在利用移动收购图像进行非侵入性、可访问性和可解释性砷中毒诊断方面的潜力。通过实现可靠的基于图像的筛查，它可以在缺乏皮肤科医生的农村和资源有限的社区中作为实用的诊断辅助工具，从而支持早期检测和及时干预。 
+
+---
+# DEQuify your force field: More efficient simulations using deep equilibrium models 
+
+**Title (ZH)**: 使用深平衡模型提高force field模拟效率 
+
+**Authors**: Andreas Burger, Luca Thiede, Alán Aspuru-Guzik, Nandita Vijaykumar  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.08734)  
+
+**Abstract**: Machine learning force fields show great promise in enabling more accurate molecular dynamics simulations compared to manually derived ones. Much of the progress in recent years was driven by exploiting prior knowledge about physical systems, in particular symmetries under rotation, translation, and reflections. In this paper, we argue that there is another important piece of prior information that, thus fa,r hasn't been explored: Simulating a molecular system is necessarily continuous, and successive states are therefore extremely similar. Our contribution is to show that we can exploit this information by recasting a state-of-the-art equivariant base model as a deep equilibrium model. This allows us to recycle intermediate neural network features from previous time steps, enabling us to improve both accuracy and speed by $10\%-20\%$ on the MD17, MD22, and OC20 200k datasets, compared to the non-DEQ base model. The training is also much more memory efficient, allowing us to train more expressive models on larger systems. 
+
+**Abstract (ZH)**: 机器学习力场通过将最先进的对称性基模型重新表述为深层平衡模型，展示了相较于手动构建的模型在进行更准确的分子动力学模拟方面的巨大潜力。这一信息尚未成系统地利用，即分子系统模拟必然是连续的，因此相继状态极其相似。我们的贡献是通过利用这一信息，我们展示了如何将最先进的对称性基模型重新表述为深层平衡模型。这使我们能够回收之前时间步的中间神经网络特征，从而在MD17、MD22和OC20 200k数据集上将准确性和速度分别提高10%-20%，并且训练更加内存高效，允许我们在更大系统上训练更具表现力的模型。 
+
+---
+# Skeleton-based sign language recognition using a dual-stream spatio-temporal dynamic graph convolutional network 
+
+**Title (ZH)**: 基于骨架的 signer 语言识别：一种双流时空动态图卷积网络方法 
+
+**Authors**: Liangjin Liu, Haoyang Zheng, Pei Zhou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.08661)  
+
+**Abstract**: Isolated Sign Language Recognition (ISLR) is challenged by gestures that are morphologically similar yet semantically distinct, a problem rooted in the complex interplay between hand shape and motion trajectory. Existing methods, often relying on a single reference frame, struggle to resolve this geometric ambiguity. This paper introduces Dual-SignLanguageNet (DSLNet), a dual-reference, dual-stream architecture that decouples and models gesture morphology and trajectory in separate, complementary coordinate systems. Our approach utilizes a wrist-centric frame for view-invariant shape analysis and a facial-centric frame for context-aware trajectory modeling. These streams are processed by specialized networks-a topology-aware graph convolution for shape and a Finsler geometry-based encoder for trajectory-and are integrated via a geometry-driven optimal transport fusion mechanism. DSLNet sets a new state-of-the-art, achieving 93.70%, 89.97% and 99.79% accuracy on the challenging WLASL-100, WLASL-300 and LSA64 datasets, respectively, with significantly fewer parameters than competing models. 
+
+**Abstract (ZH)**: 孤立手语识别中的手语手势在形态上相似而语义上不同，这一问题源于手形和运动轨迹之间复杂的交互作用。现有方法通常依赖于单一参考框架，难以解决这种几何上的不确定性。本文提出了一种双参考框架、双流网络Dual-SignLanguageNet (DSLNet)，该网络将手势形态和轨迹分别建模在互补的坐标系统中。该方法利用腕关节为中心的框架进行视点不变的手形分析，并利用面部为中心的框架进行语境感知的轨迹建模。这些流分别由一种拓扑感知的图卷积网络和基于芬斯ler几何编码器处理，并通过基于几何的最优传输融合机制进行整合。DSLNet 在具有挑战性的 WLASL-100、WLASL-300 和 LSA64 数据集上分别达到了 93.70%、89.97% 和 99.79% 的准确率，参数显著少于 competing 模型。 
+
+---
+# RoentMod: A Synthetic Chest X-Ray Modification Model to Identify and Correct Image Interpretation Model Shortcuts 
+
+**Title (ZH)**: RoentMod: 一种用于识别和纠正图像解读模型捷径的合成胸部X光修改模型 
+
+**Authors**: Lauren H. Cooke, Matthias Jung, Jan M. Brendel, Nora M. Kerkovits, Borek Foldyna, Michael T. Lu, Vineet K. Raghu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.08640)  
+
+**Abstract**: Chest radiographs (CXRs) are among the most common tests in medicine. Automated image interpretation may reduce radiologists\' workload and expand access to diagnostic expertise. Deep learning multi-task and foundation models have shown strong performance for CXR interpretation but are vulnerable to shortcut learning, where models rely on spurious and off-target correlations rather than clinically relevant features to make decisions. We introduce RoentMod, a counterfactual image editing framework that generates anatomically realistic CXRs with user-specified, synthetic pathology while preserving unrelated anatomical features of the original scan. RoentMod combines an open-source medical image generator (RoentGen) with an image-to-image modification model without requiring retraining. In reader studies with board-certified radiologists and radiology residents, RoentMod-produced images appeared realistic in 93\% of cases, correctly incorporated the specified finding in 89-99\% of cases, and preserved native anatomy comparable to real follow-up CXRs. Using RoentMod, we demonstrate that state-of-the-art multi-task and foundation models frequently exploit off-target pathology as shortcuts, limiting their specificity. Incorporating RoentMod-generated counterfactual images during training mitigated this vulnerability, improving model discrimination across multiple pathologies by 3-19\% AUC in internal validation and by 1-11\% for 5 out of 6 tested pathologies in external testing. These findings establish RoentMod as a broadly applicable tool for probing and correcting shortcut learning in medical AI. By enabling controlled counterfactual interventions, RoentMod enhances the robustness and interpretability of CXR interpretation models and provides a generalizable strategy for improving foundation models in medical imaging. 
+
+**Abstract (ZH)**: 胸部X光片（CXR）是医学中应用最广泛的检查之一。自动图像解释可能减轻放射科医生的工作负担并扩大诊断专科知识的 accessibility。深度学习多任务和基础模型在CXR解释中表现出色，但容易发生捷径学习，即模型依赖于与临床相关特征无关的虚假和偏离目标的关联来做决策。我们引入了RoentMod，这是一种生成对抗框架，可以生成具有用户指定的合成病理学的解剖学上现实的CXR，同时保留原始扫描中无关的解剖学特征。RoentMod将一个开源的医学图像生成器（RoentGen）与无需重新训练的图像到图像修改模型相结合。在执业认证的放射科医生和放射学住院医师的读者研究中，RoentMod生成的图像中有93%的情况看起来是真实的，89-99%的情况正确地纳入了指定的发现，并且保留了与真实随访CXR相当的原始解剖结构。使用RoentMod，我们证明了最先进的多任务和基础模型经常利用偏离目标的病理学作为捷径，限制了它们的特异性。在训练中加入RoentMod生成的反事实图像减轻了这种脆弱性，在内部验证中提高了多种病理学模型区分度的3-19% AUC，在外部测试中提高了5种测试病理中的4种病理学的1-11% AUC。这些发现确立了RoentMod作为一种广泛适用的工具，用于探究和纠正医学AI中的捷径学习。通过使可控的反事实干预成为可能，RoentMod增强了CXR解释模型的稳健性和可解释性，并提供了一种改进医学成像中基础模型的通用策略。 
+
+---
+# Classification of 24-hour movement behaviors from wrist-worn accelerometer data: from handcrafted features to deep learning techniques 
+
+**Title (ZH)**: 基于手戴加速度计数据的24小时运动行为分类：从手工特征到深度学习技术 
+
+**Authors**: Alireza Sameh, Mehrdad Rostami, Mourad Oussalah, Vahid Farrahi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.08606)  
+
+**Abstract**: Purpose: We compared the performance of deep learning (DL) and classical machine learning (ML) algorithms for the classification of 24-hour movement behavior into sleep, sedentary, light intensity physical activity (LPA), and moderate-to-vigorous intensity physical activity (MVPA). Methods: Open-access data from 151 adults wearing a wrist-worn accelerometer (Axivity-AX3) was used. Participants were randomly divided into training, validation, and test sets (121, 15, and 15 participants each). Raw acceleration signals were segmented into non-overlapping 10-second windows, and then a total of 104 handcrafted features were extracted. Four DL algorithms-Long Short-Term Memory (LSTM), Bidirectional Long Short-Term Memory (BiLSTM), Gated Recurrent Units (GRU), and One-Dimensional Convolutional Neural Network (1D-CNN)-were trained using raw acceleration signals and with handcrafted features extracted from these signals to predict 24-hour movement behavior categories. The handcrafted features were also used to train classical ML algorithms, namely Random Forest (RF), Support Vector Machine (SVM), Extreme Gradient Boosting (XGBoost), Logistic Regression (LR), Artificial Neural Network (ANN), and Decision Tree (DT) for classifying 24-hour movement behavior intensities. Results: LSTM, BiLSTM, and GRU showed an overall accuracy of approximately 85% when trained with raw acceleration signals, and 1D-CNN an overall accuracy of approximately 80%. When trained on handcrafted features, the overall accuracy for both DL and classical ML algorithms ranged from 70% to 81%. Overall, there was a higher confusion in classification of MVPA and LPA, compared to sleep and sedentary categories. Conclusion: DL methods with raw acceleration signals had only slightly better performance in predicting 24-hour movement behavior intensities, compared to when DL and classical ML were trained with handcrafted features. 
+
+**Abstract (ZH)**: 目的：我们将深度学习（DL）和经典机器学习（ML）算法的性能进行了比较，用于将24小时运动行为分类为睡眠、久坐、轻强度身体活动（LPA）和中等至剧烈强度身体活动（MVPA）。方法：使用151名佩戴手腕加速计（Axivity-AX3）的成年人的公开数据。参与者被随机分为训练集、验证集和测试集（每组分别为121、15和15人）。原始加速度信号被分割成不重叠的10秒窗口，并提取了总共104个手工设计的特征。四种DL算法—长短期记忆（LSTM）、双向长短期记忆（BiLSTM）、门控递归单元（GRU）和一维卷积神经网络（1D-CNN）—使用原始加速度信号及其所提取的手工设计特征来预测24小时运动行为类别。手工设计的特征也被用于训练经典ML算法，包括随机森林（RF）、支持向量机（SVM）、超梯度增强（XGBoost）、逻辑回归（LR）、人工神经网络（ANN）和决策树（DT），以分类24小时运动行为强度。结果：当使用原始加速度信号训练时，LSTM、BiLSTM和GRU的整体准确度约为85%，1D-CNN的整体准确度约为80%。当使用手工设计的特征训练时，DL和经典ML算法的整体准确度范围从70%到81%。总体而言，与睡眠和久坐类别相比，在分类MVPA和LPA类别时存在更高的分类混淆。结论：与使用手工设计特征训练的DL和经典ML相比，使用原始加速度信号的DL方法在预测24小时运动行为强度方面仅稍微表现出更好的性能。 
+
+---
+# MESH -- Understanding Videos Like Human: Measuring Hallucinations in Large Video Models 
+
+**Title (ZH)**: MESH -- 如人类理解视频：测量大型视频模型的幻觉 
+
+**Authors**: Garry Yang, Zizhe Chen, Man Hon Wong, Haoyu Lei, Yongqiang Chen, Zhenguo Li, Kaiwen Zhou, James Cheng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.08538)  
+
+**Abstract**: Large Video Models (LVMs) build on the semantic capabilities of Large Language Models (LLMs) and vision modules by integrating temporal information to better understand dynamic video content. Despite their progress, LVMs are prone to hallucinations-producing inaccurate or irrelevant descriptions. Current benchmarks for video hallucination depend heavily on manual categorization of video content, neglecting the perception-based processes through which humans naturally interpret videos. We introduce MESH, a benchmark designed to evaluate hallucinations in LVMs systematically. MESH uses a Question-Answering framework with binary and multi-choice formats incorporating target and trap instances. It follows a bottom-up approach, evaluating basic objects, coarse-to-fine subject features, and subject-action pairs, aligning with human video understanding. We demonstrate that MESH offers an effective and comprehensive approach for identifying hallucinations in videos. Our evaluations show that while LVMs excel at recognizing basic objects and features, their susceptibility to hallucinations increases markedly when handling fine details or aligning multiple actions involving various subjects in longer videos. 
+
+**Abstract (ZH)**: 大型视频模型（LVMs）通过整合时间信息，基于大型语言模型（LLMs）的语义能力和视觉模块，更好地理解动态视频内容。尽管取得了进展，LVMs仍然容易产生幻觉，生成不准确或不相关描述。当前的视频幻觉基准主要依赖于手动视频内容分类，忽视了人类自然解读视频的过程。我们介绍了MESH基准，旨在系统地评估LVMs中的幻觉。MESH采用问答框架，包含二选一和多选格式，并包含目标和陷阱实例。它采用自底向上的方法，评估基本对象、从粗到细的主题特征以及主题-动作对，与人类视频理解相一致。我们的评估表明，LVMs在识别基本对象和特征方面表现出色，但在处理细部特征或在较长视频中对多个主题涉及的动作进行对准时，其产生幻觉的倾向显著增加。 
+
+---
+# A Structured Review of Underwater Object Detection Challenges and Solutions: From Traditional to Large Vision Language Models 
+
+**Title (ZH)**: 基于结构化的水下目标检测挑战与解决方案的综述：从传统方法到大规模视觉语言模型 
+
+**Authors**: Edwine Nabahirwa, Wei Song, Minghua Zhang, Yi Fang, Zhou Ni  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.08490)  
+
+**Abstract**: Underwater object detection (UOD) is vital to diverse marine applications, including oceanographic research, underwater robotics, and marine conservation. However, UOD faces numerous challenges that compromise its performance. Over the years, various methods have been proposed to address these issues, but they often fail to fully capture the complexities of underwater environments. This review systematically categorizes UOD challenges into five key areas: Image quality degradation, target-related issues, data-related challenges, computational and processing constraints, and limitations in detection methodologies. To address these challenges, we analyze the progression from traditional image processing and object detection techniques to modern approaches. Additionally, we explore the potential of large vision-language models (LVLMs) in UOD, leveraging their multi-modal capabilities demonstrated in other domains. We also present case studies, including synthetic dataset generation using DALL-E 3 and fine-tuning Florence-2 LVLM for UOD. This review identifies three key insights: (i) Current UOD methods are insufficient to fully address challenges like image degradation and small object detection in dynamic underwater environments. (ii) Synthetic data generation using LVLMs shows potential for augmenting datasets but requires further refinement to ensure realism and applicability. (iii) LVLMs hold significant promise for UOD, but their real-time application remains under-explored, requiring further research on optimization techniques. 
+
+**Abstract (ZH)**: 水下物体检测（UOD）在海洋研究、水下机器人技术以及海洋 conservation 等多种海洋应用中至关重要。然而，UOD 面臨眾多挑戰，這些挑戰影響其性能。隨著時間的推移，提出了各種方法來解決這些問題，但這些方法往往無法完全捕捉水下環境的複雜性。本文系統地將 UOD 挑戰分類為五個主要領域：圖像質量退化、目標相關問題、數據相關挑戰、計算和處理限制，以及檢測方法論的限制。為了應對這些挑戰，本文分析了從傳統圖像處理和目標檢測技術到現代方法的進展過程。同時，本文探索了大型視覺-語言模型（LVLM）在 UOD 中的潛力，利用其在其他領域展示出的多模態能力。本文還 ♥現了案例研究，包括使用 DALL-E 3 生成合成數據集和 Fine-tuning Florence-2 LVLM 以應用於 UOD。本文識別了三個關鍵洞見：(i) 現有的 UOD 方法對於處理動態水下環境中的圖像退化和小目標檢測尚不夠;(ii) 使用 LVLM 生成合成數據集顯示出擴大數據集的潛力，但需要進一步完善以確保真實性和適用性;(iii) LVLM 在 UOD 方面潛力巨大，但其在線應用尚未得到充分探索，需要進一步研究以實現優化技術。 
+
+---
+# Sparse BEV Fusion with Self-View Consistency for Multi-View Detection and Tracking 
+
+**Title (ZH)**: 基于自我视角一致性的稀疏BEV融合多视图检测与跟踪 
+
+**Authors**: Keisuke Toida, Taigo Sakai, Naoki Kato, Kazutoyo Yokota, Takeshi Nakamura, Kazuhiro Hotta  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.08421)  
+
+**Abstract**: Multi-View Multi-Object Tracking (MVMOT) is essential for applications such as surveillance, autonomous driving, and sports analytics. However, maintaining consistent object identities across multiple cameras remains challenging due to viewpoint changes, lighting variations, and occlusions, which often lead to tracking this http URL methods project features from multiple cameras into a unified Bird's-Eye-View (BEV) space to improve robustness against occlusion. However, this projection introduces feature distortion and non-uniform density caused by variations in object scale with distance. These issues degrade the quality of the fused representation and reduce detection and tracking this http URL address these problems, we propose SCFusion, a framework that combines three techniques to improve multi-view feature integration. First, it applies a sparse transformation to avoid unnatural interpolation during projection. Next, it performs density-aware weighting to adaptively fuse features based on spatial confidence and camera distance. Finally, it introduces a multi-view consistency loss that encourages each camera to learn discriminative features independently before this http URL show that SCFusion achieves state-of-the-art performance, reaching an IDF1 score of 95.9% on WildTrack and a MODP of 89.2% on MultiviewX, outperforming the baseline method TrackTacular. These results demonstrate that SCFusion effectively mitigates the limitations of conventional BEV projection and provides a robust and accurate solution for multi-view object detection and tracking. 
+
+**Abstract (ZH)**: 多视图多目标跟踪（MVMOT）对于监控、自动驾驶和运动分析等应用至关重要。然而，由于视角变化、光照差异和遮挡，保持多摄像头之间的一致目标身份仍然具有挑战性，这往往导致跟踪不准确。方法将来自多个摄像头的特征投影到统一的鸟瞰视图（BEV）空间，以提高对遮挡的鲁棒性。然而，这种投影引入了由物体规模随距离变化引起的特征失真和非均匀密度。这些问题降低了融合表示的质量，并降低了检测和跟踪的准确性。为了解决这些问题，我们提出了SCFusion框架，该框架结合了三种技术来改进多视图特征集成。首先，它应用稀疏变换以避免投影过程中不自然的插值。其次，它执行密度感知加权，根据空间置信度和摄像头距离自适应融合特征。最后，它引入了多视图一致性损失，鼓励每个摄像头独立学习区分性特征。结果显示，SCFusion达到了最先进的性能，在WildTrack上实现了95.9%的IDF1分数，在MultiviewX上实现了89.2%的MODP分数，超过了基线方法TrackTacular。这些结果表明，SCFusion有效地缓解了传统BEV投影的局限性，并为多视图目标检测和跟踪提供了稳健且准确的解决方案。 
+
+---
+# Semantic Causality-Aware Vision-Based 3D Occupancy Prediction 
+
+**Title (ZH)**: 基于语义因果关系的视觉驱动三维占位预测 
+
+**Authors**: Dubing Chen, Huan Zheng, Yucheng Zhou, Xianfei Li, Wenlong Liao, Tao He, Pai Peng, Jianbing Shen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.08388)  
+
+**Abstract**: Vision-based 3D semantic occupancy prediction is a critical task in 3D vision that integrates volumetric 3D reconstruction with semantic understanding. Existing methods, however, often rely on modular pipelines. These modules are typically optimized independently or use pre-configured inputs, leading to cascading errors. In this paper, we address this limitation by designing a novel causal loss that enables holistic, end-to-end supervision of the modular 2D-to-3D transformation pipeline. Grounded in the principle of 2D-to-3D semantic causality, this loss regulates the gradient flow from 3D voxel representations back to the 2D features. Consequently, it renders the entire pipeline differentiable, unifying the learning process and making previously non-trainable components fully learnable. Building on this principle, we propose the Semantic Causality-Aware 2D-to-3D Transformation, which comprises three components guided by our causal loss: Channel-Grouped Lifting for adaptive semantic mapping, Learnable Camera Offsets for enhanced robustness against camera perturbations, and Normalized Convolution for effective feature propagation. Extensive experiments demonstrate that our method achieves state-of-the-art performance on the Occ3D benchmark, demonstrating significant robustness to camera perturbations and improved 2D-to-3D semantic consistency. 
+
+**Abstract (ZH)**: 基于视觉的三维语义 occupancy 预测是三维视觉中的关键任务，涉及体素化三维重建与语义理解的整合。现有方法通常依赖于模块化管道，这些模块常常独立优化或使用预配置输入，导致级联错误。本文通过设计一种新颖的因果损失，解决了这一局限性，使整个模块化二维到三维转换管道实现整体、端到端的监督。基于二维到三维语义因果性的原则，该损失调节三维体素表示到二维特征的梯度流动，从而使整个管道可微分，统一学习过程，并使以前无法训练的组件变为可训练。基于这一原则，我们提出了语义因果意识的二维到三维转换，包含三个由我们因果损失引导的组件：通道分组提升实现自适应语义映射、可学习的相机偏移提高对相机扰动的鲁棒性以及归一化卷积实现有效的特征传递。大量实验表明，我们的方法在 Occ3D 基准上实现了最先进的性能，展示了对相机扰动的显著鲁棒性和增强的二维到三维语义一致性。 
+
+---
+# Segment Transformer: AI-Generated Music Detection via Music Structural Analysis 
+
+**Title (ZH)**: 音乐结构分析驱动的AI生成音乐检测：Segment Transformer 
+
+**Authors**: Yumin Kim, Seonghyeon Go  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.08283)  
+
+**Abstract**: Audio and music generation systems have been remarkably developed in the music information retrieval (MIR) research field. The advancement of these technologies raises copyright concerns, as ownership and authorship of AI-generated music (AIGM) remain unclear. Also, it can be difficult to determine whether a piece was generated by AI or composed by humans clearly. To address these challenges, we aim to improve the accuracy of AIGM detection by analyzing the structural patterns of music segments. Specifically, to extract musical features from short audio clips, we integrated various pre-trained models, including self-supervised learning (SSL) models or an audio effect encoder, each within our suggested transformer-based framework. Furthermore, for long audio, we developed a segment transformer that divides music into segments and learns inter-segment relationships. We used the FakeMusicCaps and SONICS datasets, achieving high accuracy in both the short-audio and full-audio detection experiments. These findings suggest that integrating segment-level musical features into long-range temporal analysis can effectively enhance both the performance and robustness of AIGM detection systems. 
+
+**Abstract (ZH)**: 音频和音乐生成系统的开发在音乐信息检索研究领域取得了显著进展。然而，这些技术的进步引发了版权问题，因为人工智能生成音乐（AIGM）的所有权和作者身份仍然不明晰。此外，区分由AI生成的作品和由人类创作的作品也存在困难。为应对这些挑战，我们旨在通过分析音乐片段的结构模式来提高AIGM检测的准确性。具体而言，为了从短音频片段中提取音乐特征，我们整合了多种预训练模型，包括自我监督学习（SSL）模型或音频效果编码器，每个模型都嵌入在我们建议的基于变压器的框架中。进一步地，对于长音频，我们开发了一种片段变压器，将其划分为片段并学习片段间的关联性。我们使用了FakeMusicCaps和SONICS数据集，在短音频和完整音频检测实验中实现了高精度。这些发现表明，将片段级别的音乐特征整合到长时序分析中，可以有效提升AIGM检测系统的性能和鲁棒性。 
+
+---
+# Interpretable Physics Reasoning and Performance Taxonomy in Vision-Language Models 
+
+**Title (ZH)**: 可解释的物理推理与性能分类在视觉-语言模型中 
+
+**Authors**: Pranav Pawar, Kavish Shah, Akshat Bhalani, Komal Kasat, Dev Mittal, Hadi Gala, Deepali Patil, Nikita Raichada, Monali Deshmukh  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.08270)  
+
+**Abstract**: As Vision-Language Models (VLMs) grow in sophistication, their ability to perform reasoning is coming under increasing supervision. While they excel at many tasks, their grasp of fundamental scientific principles, such as physics, remains an underexplored frontier. To reflect the advancements in these capabilities, we introduce a novel and accessible framework designed to rigorously evaluate VLMs on their understanding of 2D physics. Our framework features a pragmatic scenario generator that creates a diverse testbed of over 400 problems across four core domains: Projectile Motion, Collision Dynamics, Mechanics, and Fluid Dynamics. Through comprehensive evaluation of four state-of-the-art VLMs, we demonstrate a strong correlation between model scale and reasoning ability, with our top-performing model, Qwen2.5-VL-7B, achieving an overall score of 0.815. We find that while models excel at formulaic problems, they struggle significantly with domains requiring abstract spatial reasoning. By designing this framework, we aim to democratize the study of scientific reasoning in VLMs and foster deeper insights into their capabilities and limitations. 
+
+**Abstract (ZH)**: 随着视觉语言模型（VLMs）日益复杂，其推理能力正受到越来越多的关注。尽管它们在许多任务中表现出色，但在物理学等基本科学原理的理解上仍存在未开发的领域。为了反映这些能力的进步，我们介绍了一个新颖且易于访问的框架，用于严格评估VLMs在二维物理理解上的表现。该框架包括一个实用的场景生成器，能够生成涵盖四大核心领域超过400个问题的多样化测试集：弹道运动、碰撞动力学、力学和流体力学。通过全面评估四种最先进的VLMs，我们证明了模型规模与推理能力之间存在较强的关联，我们的性能最好的模型Qwen2.5-VL-7B获得了总体评分为0.815。我们发现，虽然模型在公式化问题上表现出色，但在需要抽象空间推理的领域却表现不佳。通过设计此框架，我们旨在使VLMs中的科学推理研究民主化，并促进对其能力和局限性的更深入理解。 
+
+---
+# APML: Adaptive Probabilistic Matching Loss for Robust 3D Point Cloud Reconstruction 
+
+**Title (ZH)**: 自适应概率匹配损失方法用于稳健的3D点云重建 
+
+**Authors**: Sasan Sharifipour, Constantino Álvarez Casado, Mohammad Sabokrou, Miguel Bordallo López  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.08104)  
+
+**Abstract**: Training deep learning models for point cloud prediction tasks such as shape completion and generation depends critically on loss functions that measure discrepancies between predicted and ground-truth point sets. Commonly used functions such as Chamfer Distance (CD), HyperCD, and InfoCD rely on nearest-neighbor assignments, which often induce many-to-one correspondences, leading to point congestion in dense regions and poor coverage in sparse regions. These losses also involve non-differentiable operations due to index selection, which may affect gradient-based optimization. Earth Mover Distance (EMD) enforces one-to-one correspondences and captures structural similarity more effectively, but its cubic computational complexity limits its practical use. We propose the Adaptive Probabilistic Matching Loss (APML), a fully differentiable approximation of one-to-one matching that leverages Sinkhorn iterations on a temperature-scaled similarity matrix derived from pairwise distances. We analytically compute the temperature to guarantee a minimum assignment probability, eliminating manual tuning. APML achieves near-quadratic runtime, comparable to Chamfer-based losses, and avoids non-differentiable operations. When integrated into state-of-the-art architectures (PoinTr, PCN, FoldingNet) on ShapeNet benchmarks and on a spatiotemporal Transformer (CSI2PC) that generates 3D human point clouds from WiFi CSI measurements, APM loss yields faster convergence, superior spatial distribution, especially in low-density regions, and improved or on-par quantitative performance without additional hyperparameter search. The code is available at: this https URL. 
+
+**Abstract (ZH)**: 点云预测任务中深学习模型的训练依赖于能够衡量预测点集与真实点集差异的损失函数。常用的距离如Chamfer距离、HyperCD和InfoCD依赖于最近邻分配，这通常会导致多对一的对应关系，在密集区域引起点拥堵，在稀疏区域覆盖不足。这些损失函数还由于索引选择包含非差分操作，可能影响基于梯度的优化。地球搬运距离（EMD）能够强制一对一对应，并更有效地捕捉结构相似性，但其计算复杂度为三次方，限制了其实际应用。我们提出自适应概率匹配损失（APML），这是一种基于温度调整相似矩阵的顺序重巫迭代的一对一匹配的可完全微分近似，无需手动调参。APML实现了接近二次的时间复杂度，与基于Chamfer的损失相当，并避免了非差分操作。在ShapeNet基准和利用WiFi CSI测量生成三维人体点云的时空Transformer（CSI2PC）中，APM损失实现了更快的收敛、更优的空间分布，特别是低密度区域，并在无额外超参数调整的情况下提供或接近相当的定量性能。代码见：this https URL。 
+
+---
+# Two-Stage Swarm Intelligence Ensemble Deep Transfer Learning (SI-EDTL) for Vehicle Detection Using Unmanned Aerial Vehicles 
+
+**Title (ZH)**: 基于无人机的车辆检测用两阶段蜂群智能集成深度转移学习(SI-EDTL) 
+
+**Authors**: Zeinab Ghasemi Darehnaei, Mohammad Shokouhifar, Hossein Yazdanjouei, S.M.J. Rastegar Fatemi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.08026)  
+
+**Abstract**: This paper introduces SI-EDTL, a two-stage swarm intelligence ensemble deep transfer learning model for detecting multiple vehicles in UAV images. It combines three pre-trained Faster R-CNN feature extractor models (InceptionV3, ResNet50, GoogLeNet) with five transfer classifiers (KNN, SVM, MLP, C4.5, Naïve Bayes), resulting in 15 different base learners. These are aggregated via weighted averaging to classify regions as Car, Van, Truck, Bus, or background. Hyperparameters are optimized with the whale optimization algorithm to balance accuracy, precision, and recall. Implemented in MATLAB R2020b with parallel processing, SI-EDTL outperforms existing methods on the AU-AIR UAV dataset. 
+
+**Abstract (ZH)**: 基于 swarm intelligence 的两阶段深转移学习模型 SI-EDTL 用于 UAV 图像中的多车辆检测 
+
+---
+# CardioComposer: Flexible and Compositional Anatomical Structure Generation with Disentangled Geometric Guidance 
+
+**Title (ZH)**: 心血管生成器：解耦几何指导下的灵活可组合解剖结构生成 
+
+**Authors**: Karim Kadry, Shoaib Goraya, Ajay Manicka, Abdalla Abdelwahed, Farhad Nezami, Elazer Edelman  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.08015)  
+
+**Abstract**: Generative models of 3D anatomy, when integrated with biophysical simulators, enable the study of structure-function relationships for clinical research and medical device design. However, current models face a trade-off between controllability and anatomical realism. We propose a programmable and compositional framework for guiding unconditional diffusion models of human anatomy using interpretable ellipsoidal primitives embedded in 3D space. Our method involves the selection of certain tissues within multi-tissue segmentation maps, upon which we apply geometric moment losses to guide the reverse diffusion process. This framework supports the independent control over size, shape, and position, as well as the composition of multi-component constraints during inference. 
+
+**Abstract (ZH)**: 基于解释性椭球原始体的可编程和组合框架：指导人体解剖无条件扩散模型的研究 
+
+---
+# Evaluating and comparing gender bias across four text-to-image models 
+
+**Title (ZH)**: 评估并比较四款文本-to-图像模型中的性别偏见 
+
+**Authors**: Zoya Hammad, Nii Longdon Sowah  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.08004)  
+
+**Abstract**: As we increasingly use Artificial Intelligence (AI) in decision-making for industries like healthcare, finance, e-commerce, and even entertainment, it is crucial to also reflect on the ethical aspects of AI, for example the inclusivity and fairness of the information it provides. In this work, we aimed to evaluate different text-to-image AI models and compare the degree of gender bias they present. The evaluated models were Stable Diffusion XL (SDXL), Stable Diffusion Cascade (SC), DALL-E and Emu. We hypothesized that DALL-E and Stable Diffusion, which are comparatively older models, would exhibit a noticeable degree of gender bias towards men, while Emu, which was recently released by Meta AI, would have more balanced results. As hypothesized, we found that both Stable Diffusion models exhibit a noticeable degree of gender bias while Emu demonstrated more balanced results (i.e. less gender bias). However, interestingly, Open AI's DALL-E exhibited almost opposite results, such that the ratio of women to men was significantly higher in most cases tested. Here, although we still observed a bias, the bias favored females over males. This bias may be explained by the fact that OpenAI changed the prompts at its backend, as observed during our experiment. We also observed that Emu from Meta AI utilized user information while generating images via WhatsApp. We also proposed some potential solutions to avoid such biases, including ensuring diversity across AI research teams and having diverse datasets. 
+
+**Abstract (ZH)**: 随着我们在医疗、金融、电子商务乃至娱乐等行业中越来越多地使用人工智能（AI）进行决策，反思AI的伦理方面，例如它提供的信息的包容性和公平性变得至关重要。在本工作中，我们旨在评估不同的文本到图像AI模型，并比较它们呈现的性别偏见程度。我们评估的模型包括Stable Diffusion XL (SDXL)、Stable Diffusion Cascade (SC)、DALL-E和Emu。我们假设，相对而言较老的Stable Diffusion模型会表现出明显的男性偏向，而Meta AI最近发布的Emu将有更平衡的结果。正如我们所假设的那样，我们发现Stable Diffusion模型确实表现出明显的性别偏见，而Emu则表现出更平衡的结果（即较少的性别偏见）。值得注意的是，Open AI的DALL-E则表现出几乎相反的结果，即在大多数测试案例中，女性与男性之比显著更高。尽管我们仍然观察到一定程度的偏见，但这偏向于女性而非男性。这种偏见可能解释为OpenAI在其后端更改了提示，就像我们在实验中观察到的那样。我们还发现，Meta AI的Emu在生成图像时利用了用户的WhatsApp信息。我们还提出了一些潜在的解决方案，以避免此类偏见，包括确保AI研究团队的多样性以及使用多样化的数据集。 
+
+---
+# Signals vs. Videos: Advancing Motion Intention Recognition for Human-Robot Collaboration in Construction 
+
+**Title (ZH)**: 信号 vs. 视频：提高建筑领域人机合作中运动意图识别水平 
+
+**Authors**: Charan Gajjala Chenchu, Kinam Kim, Gao Lu, Zia Ud Din  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07990)  
+
+**Abstract**: Human-robot collaboration (HRC) in the construction industry depends on precise and prompt recognition of human motion intentions and actions by robots to maximize safety and workflow efficiency. There is a research gap in comparing data modalities, specifically signals and videos, for motion intention recognition. To address this, the study leverages deep learning to assess two different modalities in recognizing workers' motion intention at the early stage of movement in drywall installation tasks. The Convolutional Neural Network - Long Short-Term Memory (CNN-LSTM) model utilizing surface electromyography (sEMG) data achieved an accuracy of around 87% with an average time of 0.04 seconds to perform prediction on a sample input. Meanwhile, the pre-trained Video Swin Transformer combined with transfer learning harnessed video sequences as input to recognize motion intention and attained an accuracy of 94% but with a longer average time of 0.15 seconds for a similar prediction. This study emphasizes the unique strengths and trade-offs of both data formats, directing their systematic deployments to enhance HRC in real-world construction projects. 
+
+**Abstract (ZH)**: 建筑行业的人机协作（HRC）依赖于机器人对人类运动意图和行为的精确和及时识别，以最大化安全性和工作流程效率。关于运动意图识别的数据模态（特别是信号和视频）比较研究存在研究空白。为解决这一问题，本研究采用深度学习方法评估了在干墙安装任务早期运动阶段识别工人运动意图的两种不同模态。利用表面肌电图（sEMG）数据的卷积神经网络-长短期记忆（CNN-LSTM）模型在样本输入上实现了约87%的准确率，并且平均预测时间为0.04秒。预训练的Video Swin Transformer结合迁移学习利用视频序列作为输入识别运动意图，并获得了约94%的准确率，但平均预测时间为0.15秒。本研究强调了两种数据格式的独特优势和权衡，并指导其系统部署以提升实际建筑项目中的人机协作。 
+
+---

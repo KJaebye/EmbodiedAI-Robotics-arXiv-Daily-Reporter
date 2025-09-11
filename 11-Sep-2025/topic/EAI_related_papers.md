@@ -1,0 +1,221 @@
+# RoboChemist: Long-Horizon and Safety-Compliant Robotic Chemical Experimentation 
+
+**Title (ZH)**: RoboChemist: 长期规划与安全合规的机器人化学实验 
+
+**Authors**: Zongzheng Zhang, Chenghao Yue, Haobo Xu, Minwen Liao, Xianglin Qi, Huan-ang Gao, Ziwei Wang, Hao Zhao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.08820)  
+
+**Abstract**: Robotic chemists promise to both liberate human experts from repetitive tasks and accelerate scientific discovery, yet remain in their infancy. Chemical experiments involve long-horizon procedures over hazardous and deformable substances, where success requires not only task completion but also strict compliance with experimental norms. To address these challenges, we propose \textit{RoboChemist}, a dual-loop framework that integrates Vision-Language Models (VLMs) with Vision-Language-Action (VLA) models. Unlike prior VLM-based systems (e.g., VoxPoser, ReKep) that rely on depth perception and struggle with transparent labware, and existing VLA systems (e.g., RDT, pi0) that lack semantic-level feedback for complex tasks, our method leverages a VLM to serve as (1) a planner to decompose tasks into primitive actions, (2) a visual prompt generator to guide VLA models, and (3) a monitor to assess task success and regulatory compliance. Notably, we introduce a VLA interface that accepts image-based visual targets from the VLM, enabling precise, goal-conditioned control. Our system successfully executes both primitive actions and complete multi-step chemistry protocols. Results show 23.57% higher average success rate and a 0.298 average increase in compliance rate over state-of-the-art VLA baselines, while also demonstrating strong generalization to objects and tasks. 
+
+**Abstract (ZH)**: 机器人化学家有望解放人类专家从事重复性工作并加速科学发现，但目前仍处于初级阶段。化学实验涉及长周期 procedure 操作危险且变形的物质，成功不仅需要完成任务，还需要严格遵守实验规范。为应对这些挑战，我们提出 RoboChemist 双环框架，将视觉语言模型（VLM）与视觉语言动作（VLA）模型集成。不同于依赖深度感知但在透明器皿处理上挣扎的 prior VLM 系统（如 VoxPoser、ReKep），以及缺乏复杂任务语义级反馈的现有 VLA 系统（如 RDT、pi0），我们的方法利用 VLM 作为（1）计划者，将任务分解为原始动作；（2）视觉提示生成器，引导 VLA 模型；（3）监控器，评估任务成功和监管合规性。特别地，我们引入了一种 VLA 接口，接受来自 VLM 的基于图像的视觉目标，实现精确的、目标导向的控制。我们的系统成功执行了原始动作和完整的多步化学协议。结果显示，与最先进的 VLA 基准相比，平均成功率提高了 23.57%，平均合规性提高了 0.298，并且还展示了对物体和任务的强烈泛化能力。 
+
+---
+# Calib3R: A 3D Foundation Model for Multi-Camera to Robot Calibration and 3D Metric-Scaled Scene Reconstruction 
+
+**Title (ZH)**: Calib3R：多相机到机器人标定及3D度量缩放场景重建的三维基础模型 
+
+**Authors**: Davide Allegro, Matteo Terreran, Stefano Ghidoni  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.08813)  
+
+**Abstract**: Robots often rely on RGB images for tasks like manipulation and navigation. However, reliable interaction typically requires a 3D scene representation that is metric-scaled and aligned with the robot reference frame. This depends on accurate camera-to-robot calibration and dense 3D reconstruction, tasks usually treated separately, despite both relying on geometric correspondences from RGB data. Traditional calibration needs patterns, while RGB-based reconstruction yields geometry with an unknown scale in an arbitrary frame. Multi-camera setups add further complexity, as data must be expressed in a shared reference frame. We present Calib3R, a patternless method that jointly performs camera-to-robot calibration and metric-scaled 3D reconstruction via unified optimization. Calib3R handles single- and multi-camera setups on robot arms or mobile robots. It builds on the 3D foundation model MASt3R to extract pointmaps from RGB images, which are combined with robot poses to reconstruct a scaled 3D scene aligned with the robot. Experiments on diverse datasets show that Calib3R achieves accurate calibration with less than 10 images, outperforming target-less and marker-based methods. 
+
+**Abstract (ZH)**: 无图案方法Calib3R：通过统一优化实现相机到机器人标定和米尺度3D重建 
+
+---
+# Joint Model-based Model-free Diffusion for Planning with Constraints 
+
+**Title (ZH)**: 基于模型的模型自由扩散规划约束下的联合建模 
+
+**Authors**: Wonsuhk Jung, Utkarsh A. Mishra, Nadun Ranawaka Arachchige, Yongxin Chen, Danfei Xu, Shreyas Kousik  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.08775)  
+
+**Abstract**: Model-free diffusion planners have shown great promise for robot motion planning, but practical robotic systems often require combining them with model-based optimization modules to enforce constraints, such as safety. Naively integrating these modules presents compatibility challenges when diffusion's multi-modal outputs behave adversarially to optimization-based modules. To address this, we introduce Joint Model-based Model-free Diffusion (JM2D), a novel generative modeling framework. JM2D formulates module integration as a joint sampling problem to maximize compatibility via an interaction potential, without additional training. Using importance sampling, JM2D guides modules outputs based only on evaluations of the interaction potential, thus handling non-differentiable objectives commonly arising from non-convex optimization modules. We evaluate JM2D via application to aligning diffusion planners with safety modules on offline RL and robot manipulation. JM2D significantly improves task performance compared to conventional safety filters without sacrificing safety. Further, we show that conditional generation is a special case of JM2D and elucidate key design choices by comparing with SOTA gradient-based and projection-based diffusion planners. More details at: this https URL. 
+
+**Abstract (ZH)**: 无模型扩散规划器在机器人运动规划中展现了巨大的潜力，但实际的机器人系统通常需要将它们与基于模型的优化模块相结合以满足约束需求，如安全性约束。简单地整合这些模块会在扩散的多模态输出与基于优化的模块发生冲突时带来兼容性挑战。为了解决这个问题，我们引入了联合基于模型的无模型扩散（JM2D），这是一种新颖的生成建模框架。JM2D 将模块集成问题表述为联合采样问题，通过交互势能最大化兼容性，而不需要额外的训练。利用重要性采样，JM2D 仅基于交互势能的评估结果来引导模块输出，从而处理来自非凸优化模块的常见非区分性目标。我们通过在离线 RL 和机器人操作中使扩散规划器与安全模块对齐来评估 JM2D。相比传统的安全过滤器，JM2D 显著提高了任务性能且不牺牲安全性。此外，我们展示了条件生成是 JM2D 的一个特例，并通过与最先进的梯度基和投影基扩散规划器的比较来阐明关键设计选择。更多细节请参见：[这里](this https URL)。 
+
+---
+# SocialNav-SUB: Benchmarking VLMs for Scene Understanding in Social Robot Navigation 
+
+**Title (ZH)**: SocialNav-SUB: 社交机器人导航中场景理解的VLMs基准测试 
+
+**Authors**: Michael J. Munje, Chen Tang, Shuijing Liu, Zichao Hu, Yifeng Zhu, Jiaxun Cui, Garrett Warnell, Joydeep Biswas, Peter Stone  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.08757)  
+
+**Abstract**: Robot navigation in dynamic, human-centered environments requires socially-compliant decisions grounded in robust scene understanding. Recent Vision-Language Models (VLMs) exhibit promising capabilities such as object recognition, common-sense reasoning, and contextual understanding-capabilities that align with the nuanced requirements of social robot navigation. However, it remains unclear whether VLMs can accurately understand complex social navigation scenes (e.g., inferring the spatial-temporal relations among agents and human intentions), which is essential for safe and socially compliant robot navigation. While some recent works have explored the use of VLMs in social robot navigation, no existing work systematically evaluates their ability to meet these necessary conditions. In this paper, we introduce the Social Navigation Scene Understanding Benchmark (SocialNav-SUB), a Visual Question Answering (VQA) dataset and benchmark designed to evaluate VLMs for scene understanding in real-world social robot navigation scenarios. SocialNav-SUB provides a unified framework for evaluating VLMs against human and rule-based baselines across VQA tasks requiring spatial, spatiotemporal, and social reasoning in social robot navigation. Through experiments with state-of-the-art VLMs, we find that while the best-performing VLM achieves an encouraging probability of agreeing with human answers, it still underperforms simpler rule-based approach and human consensus baselines, indicating critical gaps in social scene understanding of current VLMs. Our benchmark sets the stage for further research on foundation models for social robot navigation, offering a framework to explore how VLMs can be tailored to meet real-world social robot navigation needs. An overview of this paper along with the code and data can be found at this https URL . 
+
+**Abstract (ZH)**: 动态、以人为核心环境中服务机器人的导航决策需要基于稳固场景理解的社会合规性选择。视觉-语言模型（VLMs）展现出诸如物体识别、常识推理和情境理解等有前景的能力，这些能力与服务机器人社会导航的细微需求相契合。然而，尚不清楚VLMs是否能够准确理解复杂的社会导航场景（例如，推断智能体间的空间-时间关系及人类意图），这对于安全和社会合规的机器人导航是必不可少的。虽然已有部分研究探索了在社会机器人导航中使用VLMs的应用，但尚未有研究系统评估其是否能够满足这些必要条件。本文介绍了社会导航场景理解基准（SocialNav-SUB），这是一个视觉问答（VQA）数据集和基准，旨在评估VLMs在真实世界社会机器人导航场景中的场景理解能力。SocialNav-SUB提供了一个统一框架，用于评估VLMs在涉及社会机器人导航中所需的空间、空间-时间和社会推理的VQA任务中相对于基于视觉问答的基准（包括基于视觉问答的人类和规则为基础的基准）的表现。通过使用最先进的VLMs进行实验，我们发现，尽管性能最好的VLM在与人类答案一致的概率上取得令人鼓舞的结果，但它仍然未能超越简单的规则为基础的方法和人类共识基准，表明当前VLMs在社会场景理解方面的关键差距。该基准为进一步研究基础模型在社会机器人导航中的应用奠定了基础，提供了一个框架以研究如何使VLMs适应现实世界的社会机器人导航需求。本文概要、代码和数据可访问此链接：this https URL。 
+
+---
+# PegasusFlow: Parallel Rolling-Denoising Score Sampling for Robot Diffusion Planner Flow Matching 
+
+**Title (ZH)**: PegasusFlow：并行滚动去噪评分采样用于机器人扩散规划流匹配 
+
+**Authors**: Lei Ye, Haibo Gao, Peng Xu, Zhelin Zhang, Junqi Shan, Ao Zhang, Wei Zhang, Ruyi Zhou, Zongquan Deng, Liang Ding  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.08435)  
+
+**Abstract**: Diffusion models offer powerful generative capabilities for robot trajectory planning, yet their practical deployment on robots is hindered by a critical bottleneck: a reliance on imitation learning from expert demonstrations. This paradigm is often impractical for specialized robots where data is scarce and creates an inefficient, theoretically suboptimal training pipeline. To overcome this, we introduce PegasusFlow, a hierarchical rolling-denoising framework that enables direct and parallel sampling of trajectory score gradients from environmental interaction, completely bypassing the need for expert data. Our core innovation is a novel sampling algorithm, Weighted Basis Function Optimization (WBFO), which leverages spline basis representations to achieve superior sample efficiency and faster convergence compared to traditional methods like MPPI. The framework is embedded within a scalable, asynchronous parallel simulation architecture that supports massively parallel rollouts for efficient data collection. Extensive experiments on trajectory optimization and robotic navigation tasks demonstrate that our approach, particularly Action-Value WBFO (AVWBFO) combined with a reinforcement learning warm-start, significantly outperforms baselines. In a challenging barrier-crossing task, our method achieved a 100% success rate and was 18% faster than the next-best method, validating its effectiveness for complex terrain locomotion planning. this https URL 
+
+**Abstract (ZH)**: 基于扩散模型的机器人轨迹规划：突破依赖专家演示的瓶颈——引入PegasusFlow 
+
+---
+# Grasp Like Humans: Learning Generalizable Multi-Fingered Grasping from Human Proprioceptive Sensorimotor Integration 
+
+**Title (ZH)**: 如人类般抓取：基于人类本体感受觉运动整合的学习通用多指抓取 
+
+**Authors**: Ce Guo, Xieyuanli Chen, Zhiwen Zeng, Zirui Guo, Yihong Li, Haoran Xiao, Dewen Hu, Huimin Lu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.08354)  
+
+**Abstract**: Tactile and kinesthetic perceptions are crucial for human dexterous manipulation, enabling reliable grasping of objects via proprioceptive sensorimotor integration. For robotic hands, even though acquiring such tactile and kinesthetic feedback is feasible, establishing a direct mapping from this sensory feedback to motor actions remains challenging. In this paper, we propose a novel glove-mediated tactile-kinematic perception-prediction framework for grasp skill transfer from human intuitive and natural operation to robotic execution based on imitation learning, and its effectiveness is validated through generalized grasping tasks, including those involving deformable objects. Firstly, we integrate a data glove to capture tactile and kinesthetic data at the joint level. The glove is adaptable for both human and robotic hands, allowing data collection from natural human hand demonstrations across different scenarios. It ensures consistency in the raw data format, enabling evaluation of grasping for both human and robotic hands. Secondly, we establish a unified representation of multi-modal inputs based on graph structures with polar coordinates. We explicitly integrate the morphological differences into the designed representation, enhancing the compatibility across different demonstrators and robotic hands. Furthermore, we introduce the Tactile-Kinesthetic Spatio-Temporal Graph Networks (TK-STGN), which leverage multidimensional subgraph convolutions and attention-based LSTM layers to extract spatio-temporal features from graph inputs to predict node-based states for each hand joint. These predictions are then mapped to final commands through a force-position hybrid mapping. 
+
+**Abstract (ZH)**: 触觉和本体感觉感知对于人类灵巧操作至关重要，使得通过本体感觉传感器运动整合可靠地抓取物体成为可能。对于机器人手，尽管获取这种触觉和本体感觉反馈是可行的，但将这种感觉反馈直接映射到运动动作仍然颇具挑战性。本文提出了一种基于模仿学习的手套介导的触觉-运动感知-预测框架，将人类直观自然的操作技能转移到机器人的执行中，并通过包括涉及可变形物体的通用抓取任务验证了其有效性。首先，我们整合了一个数据手套以在关节级别捕捉触觉和本体感觉数据。该手套既适合人类手也适合机器人手，可从不同场景下的自然手部演示中收集数据。它确保了原始数据格式的一致性，使对手部和机器人手的抓取评估成为可能。其次，我们基于极坐标结构建立了多模态输入的统一表示。我们显式地将形态差异融入设计的表示中，增强了不同示范者和机器人手之间的兼容性。此外，我们引入了触觉-本体感觉时空图网络（TK-STGN），该网络利用多维子图卷积和基于注意力的LSTM层从图输入中提取时空特征，以预测每个手关节的节点状态。然后，这些预测通过力-位置混合映射映射到最终命令。 
+
+---
+# Foundation Models for Autonomous Driving Perception: A Survey Through Core Capabilities 
+
+**Title (ZH)**: 自主驾驶感知中的基础模型：核心能力综述 
+
+**Authors**: Rajendramayavan Sathyam, Yueqi Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.08302)  
+
+**Abstract**: Foundation models are revolutionizing autonomous driving perception, transitioning the field from narrow, task-specific deep learning models to versatile, general-purpose architectures trained on vast, diverse datasets. This survey examines how these models address critical challenges in autonomous perception, including limitations in generalization, scalability, and robustness to distributional shifts. The survey introduces a novel taxonomy structured around four essential capabilities for robust performance in dynamic driving environments: generalized knowledge, spatial understanding, multi-sensor robustness, and temporal reasoning. For each capability, the survey elucidates its significance and comprehensively reviews cutting-edge approaches. Diverging from traditional method-centric surveys, our unique framework prioritizes conceptual design principles, providing a capability-driven guide for model development and clearer insights into foundational aspects. We conclude by discussing key challenges, particularly those associated with the integration of these capabilities into real-time, scalable systems, and broader deployment challenges related to computational demands and ensuring model reliability against issues like hallucinations and out-of-distribution failures. The survey also outlines crucial future research directions to enable the safe and effective deployment of foundation models in autonomous driving systems. 
+
+**Abstract (ZH)**: 基础模型正在革命性地改变自动驾驶感知领域，从狭窄的任务特定深度学习模型过渡到基于广泛多样数据集训练的多功能通用架构。本文综述了这些模型如何应对自动驾驶感知中的关键挑战，包括泛化能力、可扩展性和分布偏移下的稳健性。本文综述引入了一种新的分类法，围绕在动态驾驶环境中实现稳健性能的四种核心能力：通用知识、空间理解、多传感器稳健性以及时间推理。对于每种能力，本文综述了其重要性，并全面回顾了最新的方法。不同于传统的以方法为中心的综述，我们独特的框架更注重概念设计原则，为模型开发提供能力驱动的指导，并更清晰地揭示基础方面的要点。文末讨论了关键挑战，特别是将这些能力整合到实时可扩展系统中以及更广泛的与计算需求和确保模型在幻觉和分布外失败等问题方面的可靠性相关部署挑战，并概述了未来研究的关键方向，以实现基础模型在自动驾驶系统中的安全有效部署。 
+
+---
+# Sample-Efficient Online Control Policy Learning with Real-Time Recursive Model Updates 
+
+**Title (ZH)**: 实时递归模型更新的高效在线控制策略学习 
+
+**Authors**: Zixin Zhang, James Avtges, Todd D. Murphey  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.08241)  
+
+**Abstract**: Data-driven control methods need to be sample-efficient and lightweight, especially when data acquisition and computational resources are limited -- such as during learning on hardware. Most modern data-driven methods require large datasets and struggle with real-time updates of models, limiting their performance in dynamic environments. Koopman theory formally represents nonlinear systems as linear models over observables, and Koopman representations can be determined from data in an optimization-friendly setting with potentially rapid model updates. In this paper, we present a highly sample-efficient, Koopman-based learning pipeline: Recursive Koopman Learning (RKL). We identify sufficient conditions for model convergence and provide formal algorithmic analysis supporting our claim that RKL is lightweight and fast, with complexity independent of dataset size. We validate our method on a simulated planar two-link arm and a hybrid nonlinear hardware system with soft actuators, showing that real-time recursive Koopman model updates improve the sample efficiency and stability of data-driven controller synthesis -- requiring only <10% of the data compared to benchmarks. The high-performance C++ codebase is open-sourced. Website: this https URL. 
+
+**Abstract (ZH)**: 基于Koopman的高效递归学习方法：实时Koopman模型更新在动态环境下的数据驱动控制器合成中提升样本效率和稳定性 
+
+---
+# Quadrotor Navigation using Reinforcement Learning with Privileged Information 
+
+**Title (ZH)**: 基于特权信息的四旋翼导航强化学习方法 
+
+**Authors**: Jonathan Lee, Abhishek Rathod, Kshitij Goel, John Stecklein, Wennie Tabib  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.08177)  
+
+**Abstract**: This paper presents a reinforcement learning-based quadrotor navigation method that leverages efficient differentiable simulation, novel loss functions, and privileged information to navigate around large obstacles. Prior learning-based methods perform well in scenes that exhibit narrow obstacles, but struggle when the goal location is blocked by large walls or terrain. In contrast, the proposed method utilizes time-of-arrival (ToA) maps as privileged information and a yaw alignment loss to guide the robot around large obstacles. The policy is evaluated in photo-realistic simulation environments containing large obstacles, sharp corners, and dead-ends. Our approach achieves an 86% success rate and outperforms baseline strategies by 34%. We deploy the policy onboard a custom quadrotor in outdoor cluttered environments both during the day and night. The policy is validated across 20 flights, covering 589 meters without collisions at speeds up to 4 m/s. 
+
+**Abstract (ZH)**: 基于强化学习的四旋翼导航方法：利用高效可微模拟、新型损失函数和优先信息绕过大型障碍物 
+
+---
+# Risk-Bounded Multi-Agent Visual Navigation via Dynamic Budget Allocation 
+
+**Title (ZH)**: 基于动态预算分配的Risk-Bounded多智能体视觉导航 
+
+**Authors**: Viraj Parimi, Brian C. Williams  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.08157)  
+
+**Abstract**: Safe navigation is essential for autonomous systems operating in hazardous environments, especially when multiple agents must coordinate using just visual inputs over extended time horizons. Traditional planning methods excel at solving long-horizon tasks but rely on predefined distance metrics, while safe Reinforcement Learning (RL) can learn complex behaviors using high-dimensional inputs yet struggles with multi-agent, goal-conditioned scenarios. Recent work combined these paradigms by leveraging goal-conditioned RL (GCRL) to build an intermediate graph from replay buffer states, pruning unsafe edges, and using Conflict-Based Search (CBS) for multi-agent path planning. Although effective, this graph-pruning approach can be overly conservative, limiting mission efficiency by precluding missions that must traverse high-risk regions. To address this limitation, we propose RB-CBS, a novel extension to CBS that dynamically allocates and adjusts user-specified risk bound ($\Delta$) across agents to flexibly trade off safety and speed. Our improved planner ensures that each agent receives a local risk budget ($\delta$) enabling more efficient navigation while still respecting overall safety constraints. Experimental results demonstrate that this iterative risk-allocation framework yields superior performance in complex environments, allowing multiple agents to find collision-free paths within the user-specified $\Delta$. 
+
+**Abstract (ZH)**: 基于风险动态分配的冲突_based搜索（RB-CBS）算法在复杂环境中的安全高效导航 
+
+---
+# Attribute-based Object Grounding and Robot Grasp Detection with Spatial Reasoning 
+
+**Title (ZH)**: 基于属性的对象定位与空间推理的机器人抓取检测 
+
+**Authors**: Houjian Yu, Zheming Zhou, Min Sun, Omid Ghasemalizadeh, Yuyin Sun, Cheng-Hao Kuo, Arnie Sen, Changhyun Choi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.08126)  
+
+**Abstract**: Enabling robots to grasp objects specified through natural language is essential for effective human-robot interaction, yet it remains a significant challenge. Existing approaches often struggle with open-form language expressions and typically assume unambiguous target objects without duplicates. Moreover, they frequently rely on costly, dense pixel-wise annotations for both object grounding and grasp configuration. We present Attribute-based Object Grounding and Robotic Grasping (OGRG), a novel framework that interprets open-form language expressions and performs spatial reasoning to ground target objects and predict planar grasp poses, even in scenes containing duplicated object instances. We investigate OGRG in two settings: (1) Referring Grasp Synthesis (RGS) under pixel-wise full supervision, and (2) Referring Grasp Affordance (RGA) using weakly supervised learning with only single-pixel grasp annotations. Key contributions include a bi-directional vision-language fusion module and the integration of depth information to enhance geometric reasoning, improving both grounding and grasping performance. Experiment results show that OGRG outperforms strong baselines in tabletop scenes with diverse spatial language instructions. In RGS, it operates at 17.59 FPS on a single NVIDIA RTX 2080 Ti GPU, enabling potential use in closed-loop or multi-object sequential grasping, while delivering superior grounding and grasp prediction accuracy compared to all the baselines considered. Under the weakly supervised RGA setting, OGRG also surpasses baseline grasp-success rates in both simulation and real-robot trials, underscoring the effectiveness of its spatial reasoning design. Project page: this https URL 
+
+**Abstract (ZH)**: 基于属性的物体语义接地与机器人抓取（OGRG）：通过自然语言表达实现灵活的物体抓取 
+
+---
+# SVN-ICP: Uncertainty Estimation of ICP-based LiDAR Odometry using Stein Variational Newton 
+
+**Title (ZH)**: SVN-ICP：基于Stein Variational Newton的ICP里程计不确定性估计 
+
+**Authors**: Shiping Ma, Haoming Zhang, Marc Toussaint  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.08069)  
+
+**Abstract**: This letter introduces SVN-ICP, a novel Iterative Closest Point (ICP) algorithm with uncertainty estimation that leverages Stein Variational Newton (SVN) on manifold. Designed specifically for fusing LiDAR odometry in multisensor systems, the proposed method ensures accurate pose estimation and consistent noise parameter inference, even in LiDAR-degraded environments. By approximating the posterior distribution using particles within the Stein Variational Inference framework, SVN-ICP eliminates the need for explicit noise modeling or manual parameter tuning. To evaluate its effectiveness, we integrate SVN-ICP into a simple error-state Kalman filter alongside an IMU and test it across multiple datasets spanning diverse environments and robot types. Extensive experimental results demonstrate that our approach outperforms best-in-class methods on challenging scenarios while providing reliable uncertainty estimates. 
+
+**Abstract (ZH)**: SVN-ICP：一种基于流形上的Stein Variational Newton的新型ICP算法及其不确定性估计 
+
+---
+# 3D and 4D World Modeling: A Survey 
+
+**Title (ZH)**: 三维和四维世界建模：一个综述 
+
+**Authors**: Lingdong Kong, Wesley Yang, Jianbiao Mei, Youquan Liu, Ao Liang, Dekai Zhu, Dongyue Lu, Wei Yin, Xiaotao Hu, Mingkai Jia, Junyuan Deng, Kaiwen Zhang, Yang Wu, Tianyi Yan, Shenyuan Gao, Song Wang, Linfeng Li, Liang Pan, Yong Liu, Jianke Zhu, Wei Tsang Ooi, Steven C.H. Hoi, Ziwei Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.07996)  
+
+**Abstract**: World modeling has become a cornerstone in AI research, enabling agents to understand, represent, and predict the dynamic environments they inhabit. While prior work largely emphasizes generative methods for 2D image and video data, they overlook the rapidly growing body of work that leverages native 3D and 4D representations such as RGB-D imagery, occupancy grids, and LiDAR point clouds for large-scale scene modeling. At the same time, the absence of a standardized definition and taxonomy for ``world models'' has led to fragmented and sometimes inconsistent claims in the literature. This survey addresses these gaps by presenting the first comprehensive review explicitly dedicated to 3D and 4D world modeling and generation. We establish precise definitions, introduce a structured taxonomy spanning video-based (VideoGen), occupancy-based (OccGen), and LiDAR-based (LiDARGen) approaches, and systematically summarize datasets and evaluation metrics tailored to 3D/4D settings. We further discuss practical applications, identify open challenges, and highlight promising research directions, aiming to provide a coherent and foundational reference for advancing the field. A systematic summary of existing literature is available at this https URL 
+
+**Abstract (ZH)**: 3D和4D世界建模与生成综述 
+
+---
+# Narrative-Guided Reinforcement Learning: A Platform for Studying Language Model Influence on Decision Making 
+
+**Title (ZH)**: 基于叙述引导的强化学习：研究语言模型对决策影响的平台 
+
+**Authors**: Anup Tuladhar, Araz Minhas, Adam Kirton, Eli Kinney-Lang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.08785)  
+
+**Abstract**: We present a preliminary experimental platform that explores how narrative elements might shape AI decision-making by combining reinforcement learning (RL) with language model reasoning. While AI systems can now both make decisions and engage in narrative reasoning, these capabilities have mostly been studied separately. Our platform attempts to bridge this gap using a dual-system architecture to examine how narrative frameworks could influence reward-based learning. The system comprises a reinforcement learning policy that suggests actions based on past experience, and a language model that processes these suggestions through different narrative frameworks to guide decisions. This setup enables initial experimentation with narrative elements while maintaining consistent environment and reward structures. We implement this architecture in a configurable gridworld environment, where agents receive both policy suggestions and information about their surroundings. The platform's modular design facilitates controlled testing of environmental complexity, narrative parameters, and the interaction between reinforcement learning and narrative-based decisions. Our logging system captures basic decision metrics, from RL policy values to language model reasoning to action selection patterns. While preliminary, this implementation provides a foundation for studying how different narrative frameworks might affect reward-based decisions and exploring potential interactions between optimization-based learning and symbolic reasoning in AI systems. 
+
+**Abstract (ZH)**: 我们提出一个初步的实验平台，通过结合强化学习（RL）与语言模型推理来探索叙事元素如何塑造AI决策。该平台旨在结合双系统架构，研究叙事框架如何影响基于奖励的学习。系统包括一个基于强化学习的策略，根据过往经验建议行动，以及一个语言模型，通过不同的叙事框架处理这些建议以引导决策。该配置允许初步探索叙事元素，同时保持稳定环境和奖励结构。我们在此配置中使用可配置的网格世界环境实现该架构，其中代理既接收策略建议也获取周围环境的信息。平台的模块化设计便于控制测试环境复杂性、叙事参数，以及强化学习与基于叙事的决策之间的相互作用。日志系统记录基本决策指标，从强化学习策略值到语言模型推理再到行动选择模式。尽管初步，但该实现为研究不同叙事框架可能如何影响基于奖励的决策提供了基础，并探索优化学习与符号推理之间潜在的交互作用。 
+
+---
+# TCPO: Thought-Centric Preference Optimization for Effective Embodied Decision-making 
+
+**Title (ZH)**: TCPO: 思维中心的偏好优化以实现有效的具身决策 
+
+**Authors**: Kechen Jiao, Zhirui Fang, Jiahao Liu, Bei Li, Qifan Wang, Xinyu Liu, Junhao Ruan, Zhongjian Qiao, Yifan Zhu, Yaxin Xu, Jingang Wang, Xiu Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.08500)  
+
+**Abstract**: Using effective generalization capabilities of vision language models (VLMs) in context-specific dynamic tasks for embodied artificial intelligence remains a significant challenge. Although supervised fine-tuned models can better align with the real physical world, they still exhibit sluggish responses and hallucination issues in dynamically changing environments, necessitating further alignment. Existing post-SFT methods, reliant on reinforcement learning and chain-of-thought (CoT) approaches, are constrained by sparse rewards and action-only optimization, resulting in low sample efficiency, poor consistency, and model degradation. To address these issues, this paper proposes Thought-Centric Preference Optimization (TCPO) for effective embodied decision-making. Specifically, TCPO introduces a stepwise preference-based optimization approach, transforming sparse reward signals into richer step sample pairs. It emphasizes the alignment of the model's intermediate reasoning process, mitigating the problem of model degradation. Moreover, by incorporating Action Policy Consistency Constraint (APC), it further imposes consistency constraints on the model output. Experiments in the ALFWorld environment demonstrate an average success rate of 26.67%, achieving a 6% improvement over RL4VLM and validating the effectiveness of our approach in mitigating model degradation after fine-tuning. These results highlight the potential of integrating preference-based learning techniques with CoT processes to enhance the decision-making capabilities of vision-language models in embodied agents. 
+
+**Abstract (ZH)**: 使用视觉语言模型的有效泛化能力在特定上下文动态任务中实现本体人工智能仍是一项重大挑战。 
+
+---
+# Exploratory Retrieval-Augmented Planning For Continual Embodied Instruction Following 
+
+**Title (ZH)**: 探索性检索增强规划在持续体态指令跟随中的应用 
+
+**Authors**: Minjong Yoo, Jinwoo Jang, Wei-jin Park, Honguk Woo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.08222)  
+
+**Abstract**: This study presents an Exploratory Retrieval-Augmented Planning (ExRAP) framework, designed to tackle continual instruction following tasks of embodied agents in dynamic, non-stationary environments. The framework enhances Large Language Models' (LLMs) embodied reasoning capabilities by efficiently exploring the physical environment and establishing the environmental context memory, thereby effectively grounding the task planning process in time-varying environment contexts. In ExRAP, given multiple continual instruction following tasks, each instruction is decomposed into queries on the environmental context memory and task executions conditioned on the query results. To efficiently handle these multiple tasks that are performed continuously and simultaneously, we implement an exploration-integrated task planning scheme by incorporating the {information-based exploration} into the LLM-based planning process. Combined with memory-augmented query evaluation, this integrated scheme not only allows for a better balance between the validity of the environmental context memory and the load of environment exploration, but also improves overall task performance. Furthermore, we devise a {temporal consistency refinement} scheme for query evaluation to address the inherent decay of knowledge in the memory. Through experiments with VirtualHome, ALFRED, and CARLA, our approach demonstrates robustness against a variety of embodied instruction following scenarios involving different instruction scales and types, and non-stationarity degrees, and it consistently outperforms other state-of-the-art LLM-based task planning approaches in terms of both goal success rate and execution efficiency. 
+
+**Abstract (ZH)**: This study presents一个探索性检索增强规划（ExRAP）框架：针对动态非平稳环境中的持续指令跟随任务进行 embodied 理论推理能力的提升 
+
+---
+# EnvX: Agentize Everything with Agentic AI 
+
+**Title (ZH)**: EnvX: 用代理型AI实现万物智能化 
+
+**Authors**: Linyao Chen, Zimian Peng, Yingxuan Yang, Yikun Wang, Wenzheng Tom Tang, Hiroki H. Kobayashi, Weinan Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.08088)  
+
+**Abstract**: The widespread availability of open-source repositories has led to a vast collection of reusable software components, yet their utilization remains manual, error-prone, and disconnected. Developers must navigate documentation, understand APIs, and write integration code, creating significant barriers to efficient software reuse. To address this, we present EnvX, a framework that leverages Agentic AI to agentize GitHub repositories, transforming them into intelligent, autonomous agents capable of natural language interaction and inter-agent collaboration. Unlike existing approaches that treat repositories as static code resources, EnvX reimagines them as active agents through a three-phase process: (1) TODO-guided environment initialization, which sets up the necessary dependencies, data, and validation datasets; (2) human-aligned agentic automation, allowing repository-specific agents to autonomously perform real-world tasks; and (3) Agent-to-Agent (A2A) protocol, enabling multiple agents to collaborate. By combining large language model capabilities with structured tool integration, EnvX automates not just code generation, but the entire process of understanding, initializing, and operationalizing repository functionality. We evaluate EnvX on the GitTaskBench benchmark, using 18 repositories across domains such as image processing, speech recognition, document analysis, and video manipulation. Our results show that EnvX achieves a 74.07% execution completion rate and 51.85% task pass rate, outperforming existing frameworks. Case studies further demonstrate EnvX's ability to enable multi-repository collaboration via the A2A protocol. This work marks a shift from treating repositories as passive code resources to intelligent, interactive agents, fostering greater accessibility and collaboration within the open-source ecosystem. 
+
+**Abstract (ZH)**: 开源仓库的广泛可用性导致了大量的可重用软件组件，然而其利用仍然手动、易出错且缺乏连接。开发人员必须导航文档、理解API并编写集成代码，这为高效软件重用设置了重大障碍。为解决这一问题，我们提出了EnvX框架，该框架利用Agentic AI技术将GitHub仓库转化为智能自主代理，能够进行自然语言交互和跨代理协作。与现有方法将仓库视为静态代码资源不同，EnvX通过三阶段过程重新定义了它们为活跃的代理：（1）基于TODO引导的环境初始化，设置必要的依赖、数据和验证集；（2）与人类一致的自主自动化，允许仓库特定的代理自动执行真实世界的任务；（3）代理到代理（A2A）协议，使多个代理能够协同工作。通过结合大型语言模型能力和结构化工具集成，EnvX不仅自动化了代码生成，还自动化了理解、初始化和运营仓库功能的整个过程。我们在GitTaskBench基准测试上评估了EnvX，使用了18个跨图像处理、语音识别、文档分析和视频操作等领域的仓库。结果显示，EnvX的执行完成率为74.07%，任务通过率为51.85%，优于现有框架。案例研究进一步证明了EnvX通过A2A协议实现多仓库协作的能力。这项工作标志着从将仓库视为被动代码资源到智能交互代理的转变，促进了开源生态系统中的更大访问性和协作。 
+
+---
