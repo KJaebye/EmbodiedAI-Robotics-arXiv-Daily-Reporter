@@ -1,0 +1,104 @@
+# A Neuromorphic Incipient Slip Detection System using Papillae Morphology 
+
+**Title (ZH)**: 基于乳头形态的神经形态早期打滑检测系统 
+
+**Authors**: Yanhui Lu, Zeyu Deng, Stephen J. Redmond, Efi Psomopoulou, Benjamin Ward-Cherrier  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.09546)  
+
+**Abstract**: Detecting incipient slip enables early intervention to prevent object slippage and enhance robotic manipulation safety. However, deploying such systems on edge platforms remains challenging, particularly due to energy constraints. This work presents a neuromorphic tactile sensing system based on the NeuroTac sensor with an extruding papillae-based skin and a spiking convolutional neural network (SCNN) for slip-state classification. The SCNN model achieves 94.33% classification accuracy across three classes (no slip, incipient slip, and gross slip) in slip conditions induced by sensor motion. Under the dynamic gravity-induced slip validation conditions, after temporal smoothing of the SCNN's final-layer spike counts, the system detects incipient slip at least 360 ms prior to gross slip across all trials, consistently identifying incipient slip before gross slip occurs. These results demonstrate that this neuromorphic system has stable and responsive incipient slip detection capability. 
+
+**Abstract (ZH)**: 基于NeuroTac传感器的神经形态触觉传感系统及其在滑动状态分类中的应用：边缘平台上的早期滑动检测以增强机器人操作安全 
+
+---
+# BagIt! An Adaptive Dual-Arm Manipulation of Fabric Bags for Object Bagging 
+
+**Title (ZH)**: BagIt！一种适应性双臂 manipulator 对织物袋中物体封装的操控方法 
+
+**Authors**: Peng Zhou, Jiaming Qi, Hongmin Wu, Chen Wang, Yizhou Chen, Zeqing Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.09484)  
+
+**Abstract**: Bagging tasks, commonly found in industrial scenarios, are challenging considering deformable bags' complicated and unpredictable nature. This paper presents an automated bagging system from the proposed adaptive Structure-of-Interest (SOI) manipulation strategy for dual robot arms. The system dynamically adjusts its actions based on real-time visual feedback, removing the need for pre-existing knowledge of bag properties. Our framework incorporates Gaussian Mixture Models (GMM) for estimating SOI states, optimization techniques for SOI generation, motion planning via Constrained Bidirectional Rapidly-exploring Random Tree (CBiRRT), and dual-arm coordination using Model Predictive Control (MPC). Extensive experiments validate the capability of our system to perform precise and robust bagging across various objects, showcasing its adaptability. This work offers a new solution for robotic deformable object manipulation (DOM), particularly in automated bagging tasks. Video of this work is available at this https URL. 
+
+**Abstract (ZH)**: 工业场景中常见的袋装任务因其可变形袋子的复杂和不可预测性而具有挑战性。本文提出了一种基于可适应的兴趣结构（SOI） manipulation 策略的自动袋装系统，适用于双臂机器人。系统根据实时视觉反馈动态调整其操作，无需预先了解袋子的性质。我们的框架包括使用高斯混合模型（GMM）估计 SOI 状态、使用优化技术生成 SOI、使用约束双向快速扩展随机树（CBiRRT）进行运动规划，以及使用模型预测控制（MPC）进行双臂协调。广泛实验验证了该系统在各种物体上执行精确和稳健袋装的能力，展示了其适应性。本文为机器人可变形物体操纵（DOM），特别是在自动化袋装任务中提供了一种新的解决方案。相关视频可通过以下链接查看：this https URL。 
+
+---
+# A Hybrid Hinge-Beam Continuum Robot with Passive Safety Capping for Real-Time Fatigue Awareness 
+
+**Title (ZH)**: 一种带有被动安全封顶装置的混合铰接梁连续体机器人及其实时疲劳感知技术 
+
+**Authors**: Tongshun Chen, Zezhou Sun, Yanhan Sun, Yuhao Wang, Dezhen Song, Ke Wu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.09404)  
+
+**Abstract**: Cable-driven continuum robots offer high flexibility and lightweight design, making them well-suited for tasks in constrained and unstructured environments. However, prolonged use can induce mechanical fatigue from plastic deformation and material degradation, compromising performance and risking structural failure. In the state of the art, fatigue estimation of continuum robots remains underexplored, limiting long-term operation. To address this, we propose a fatigue-aware continuum robot with three key innovations: (1) a Hybrid Hinge-Beam structure where TwistBeam and BendBeam decouple torsion and bending: passive revolute joints in the BendBeam mitigate stress concentration, while TwistBeam's limited torsional deformation reduces BendBeam stress magnitude, enhancing durability; (2) a Passive Stopper that safely constrains motion via mechanical constraints and employs motor torque sensing to detect corresponding limit torque, ensuring safety and enabling data collection; and (3) a real-time fatigue-awareness method that estimates stiffness from motor torque at the limit pose, enabling online fatigue estimation without additional sensors. Experiments show that the proposed design reduces fatigue accumulation by about 49% compared with a conventional design, while passive mechanical limiting combined with motor-side sensing allows accurate estimation of structural fatigue and damage. These results confirm the effectiveness of the proposed architecture for safe and reliable long-term operation. 
+
+**Abstract (ZH)**: 基于缆驱动的连续体机器人提供了高柔性和轻量化设计，使其适用于受限和未结构化的环境。然而，长期使用会导致由塑性变形和材料老化引起的机械疲劳，这会损害性能并可能导致结构失效。当前技术中，连续体机器人的疲劳估算研究相对不足，限制了其长期运行能力。为应对这一挑战，我们提出了一种具有三个关键创新的设计：（1）一种混合铰链-梁结构，其中TwistBeam和BendBeam解耦扭转和弯曲：BendBeam中的被动回转关节缓解了应力集中，而TwistBeam的有限扭转变形减少了BendBeam的应力幅度，增强了耐用性；（2）一种安全的运动约束器，通过机械约束确保安全，并利用电机扭矩传感检测相应的极限扭矩，确保安全并实现数据收集；（3）一种实时疲劳感知方法，能够从极限姿态的电机扭矩中估算刚度，无需额外传感器即可实现在线疲劳估算。实验结果显示，与传统设计相比，所提出的设计疲劳累积减少了约49%，而结合机械约束和电机侧感知可以准确估计结构疲劳和损伤。这些结果证实了所提出架构在安全可靠的长期运行中的有效性。 
+
+---
+# Occupancy-aware Trajectory Planning for Autonomous Valet Parking in Uncertain Dynamic Environments 
+
+**Title (ZH)**: occupancy-aware 自动代客泊车中不确定动态环境下的路径规划 
+
+**Authors**: Farhad Nawaz, Faizan M. Tariq, Sangjae Bae, David Isele, Avinash Singh, Nadia Figueroa, Nikolai Matni, Jovin D'sa  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.09206)  
+
+**Abstract**: Accurately reasoning about future parking spot availability and integrated planning is critical for enabling safe and efficient autonomous valet parking in dynamic, uncertain environments. Unlike existing methods that rely solely on instantaneous observations or static assumptions, we present an approach that predicts future parking spot occupancy by explicitly distinguishing between initially vacant and occupied spots, and by leveraging the predicted motion of dynamic agents. We introduce a probabilistic spot occupancy estimator that incorporates partial and noisy observations within a limited Field-of-View (FoV) model and accounts for the evolving uncertainty of unobserved regions. Coupled with this, we design a strategy planner that adaptively balances goal-directed parking maneuvers with exploratory navigation based on information gain, and intelligently incorporates wait-and-go behaviors at promising spots. Through randomized simulations emulating large parking lots, we demonstrate that our framework significantly improves parking efficiency, safety margins, and trajectory smoothness compared to existing approaches. 
+
+**Abstract (ZH)**: 准确推理未来停车位可用性并进行集成规划对于在动态和不确定环境中实现安全高效的自主代客泊车至关重要。我们提出了一种方法，通过明确区分初始空闲和占用的停车位，并利用动态代理的预测运动来预测未来停车位占用情况。我们引入了一种概率性停车位占用估计器，该估计器在一个有限视场（FoV）模型中整合了部分和噪声观察数据，并考虑了未观察区域的不断变化的不确定性。结合这一点，我们设计了一种策略规划器，该规划器根据信息增益自适应地平衡目标导向的泊车操作和探索性导航，并在有希望的停车位上智能地采用等待和继续的行为。通过模拟大型停车场的随机仿真，我们展示了与现有方法相比，我们的框架显著提高了泊车效率、安全余量和轨迹平滑度。 
+
+---
+# AEOS: Active Environment-aware Optimal Scanning Control for UAV LiDAR-Inertial Odometry in Complex Scenes 
+
+**Title (ZH)**: AEOS: 主动环境aware最优扫描控制for UAV LiDAR-惯性里程计在复杂场景中 
+
+**Authors**: Jianping Li, Xinhang Xu, Zhongyuan Liu, Shenghai Yuan, Muqing Cao, Lihua Xie  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.09141)  
+
+**Abstract**: LiDAR-based 3D perception and localization on unmanned aerial vehicles (UAVs) are fundamentally limited by the narrow field of view (FoV) of compact LiDAR sensors and the payload constraints that preclude multi-sensor configurations. Traditional motorized scanning systems with fixed-speed rotations lack scene awareness and task-level adaptability, leading to degraded odometry and mapping performance in complex, occluded environments. Inspired by the active sensing behavior of owls, we propose AEOS (Active Environment-aware Optimal Scanning), a biologically inspired and computationally efficient framework for adaptive LiDAR control in UAV-based LiDAR-Inertial Odometry (LIO). AEOS combines model predictive control (MPC) and reinforcement learning (RL) in a hybrid architecture: an analytical uncertainty model predicts future pose observability for exploitation, while a lightweight neural network learns an implicit cost map from panoramic depth representations to guide exploration. To support scalable training and generalization, we develop a point cloud-based simulation environment with real-world LiDAR maps across diverse scenes, enabling sim-to-real transfer. Extensive experiments in both simulation and real-world environments demonstrate that AEOS significantly improves odometry accuracy compared to fixed-rate, optimization-only, and fully learned baselines, while maintaining real-time performance under onboard computational constraints. The project page can be found at this https URL. 
+
+**Abstract (ZH)**: 基于LiDAR的无人机（UAV）三维感知与定位受到紧凑LiDAR传感器狭窄视野和载荷限制的制约，无法配置多传感器系统。传统具有固定旋转速度的电动扫描系统缺乏场景意识和任务级适应性，在复杂遮挡环境中导致里程计和建图性能下降。受猫头鹰主动感测行为的启发，我们提出了AEOS（Active Environment-aware Optimal Scanning），一种生物启发且计算高效的框架，用于基于无人机的LiDAR-惯性里程计（LIO）的自适应LiDAR控制。AEOS结合了模型预测控制（MPC）和强化学习（RL）：通过分析不确定性模型预测未来姿态可观测性，而轻量级神经网络则从全景深度图中学习隐式成本地图以引导探索。为支持可扩展的训练和泛化，我们开发了一个基于点云的模拟环境，包含不同场景的真实LiDAR地图，实现模拟到现实的转移。在仿真和实际环境中的 extensive 实验表明，AEOS 相较于固定速率、仅优化和完全学习基准显著提高了里程计准确性，同时在机载计算约束下保持实时性能。项目页面可访问此网址。 
+
+---
+# Kinetostatics and Particle-Swarm Optimization of Vehicle-Mounted Underactuated Metamorphic Loading Manipulators 
+
+**Title (ZH)**: 车载欠驱动 metamorphic 负载 manipulator 的运动静力学与粒子群优化 
+
+**Authors**: Nan Mao, Guanglu Jia, Junpeng Chen, Emmanouil Spyrakos-Papastavridis, Jian S. Dai  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.09093)  
+
+**Abstract**: Fixed degree-of-freedom (DoF) loading mechanisms often suffer from excessive actuators, complex control, and limited adaptability to dynamic tasks. This study proposes an innovative mechanism of underactuated metamorphic loading manipulators (UMLM), integrating a metamorphic arm with a passively adaptive gripper. The metamorphic arm exploits geometric constraints, enabling the topology reconfiguration and flexible motion trajectories without additional actuators. The adaptive gripper, driven entirely by the arm, conforms to diverse objects through passive compliance. A structural model is developed, and a kinetostatics analysis is conducted to investigate isomorphic grasping configurations. To optimize performance, Particle-Swarm Optimization (PSO) is utilized to refine the gripper's dimensional parameters, ensuring robust adaptability across various applications. Simulation results validate the UMLM's easily implemented control strategy, operational versatility, and effectiveness in grasping diverse objects in dynamic environments. This work underscores the practical potential of underactuated metamorphic mechanisms in applications requiring efficient and adaptable loading solutions. Beyond the specific design, this generalized modeling and optimization framework extends to a broader class of manipulators, offering a scalable approach to the development of robotic systems that require efficiency, flexibility, and robust performance. 
+
+**Abstract (ZH)**: 一种少自由度 metamorphic 加载 manipulator 的创新机制：具有被动自适应 Gripper 的少自由度 metamorphic 加载 manipulator（UMLM） 
+
+---
+# Rapid Manufacturing of Lightweight Drone Frames Using Single-Tow Architected Composites 
+
+**Title (ZH)**: 使用单丝架构复合材料快速制造轻质无人机框架 
+
+**Authors**: Md Habib Ullah Khan, Kaiyue Deng, Ismail Mujtaba Khan, Kelvin Fu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.09024)  
+
+**Abstract**: The demand for lightweight and high-strength composite structures is rapidly growing in aerospace and robotics, particularly for optimized drone frames. However, conventional composite manufacturing methods struggle to achieve complex 3D architectures for weight savings and rely on assembling separate components, which introduce weak points at the joints. Additionally, maintaining continuous fiber reinforcement remains challenging, limiting structural efficiency. In this study, we demonstrate the lightweight Face Centered Cubic (FFC) lattice structured conceptualization of drone frames for weight reduction and complex topology fabrication through 3D Fiber Tethering (3DFiT) using continuous single tow fiber ensuring precise fiber alignment, eliminating weak points associated with traditional composite assembly. Mechanical testing demonstrates that the fabricated drone frame exhibits a high specific strength of around four to eight times the metal and thermoplastic, outperforming other conventional 3D printing methods. The drone frame weighs only 260 g, making it 10% lighter than the commercial DJI F450 frame, enhancing structural integrity and contributing to an extended flight time of three minutes, while flight testing confirms its stability and durability under operational conditions. The findings demonstrate the potential of single tow lattice truss-based drone frames, with 3DFiT serving as a scalable and efficient manufacturing method. 
+
+**Abstract (ZH)**: 轻质高强复合结构在 aerospace 和机器人领域的需求迅速增长，特别是在优化无人机框架方面。然而，传统的复合材料制造方法难以实现复杂的三维架构以减轻重量，并且依赖于组装独立部件，这会在接头处引入弱点。此外，保持连续纤维增强仍然是一个挑战，限制了结构效率。在本研究中，我们通过3D纤维约束（3DFiT）技术，利用连续单束纤维确保精确的纤维对齐，展示了基于体心立方（FFC）格子结构概念的无人机框架，实现重量减轻和复杂拓扑结构的制造。机械测试表明，制造的无人机框架具有约四到八倍于金属和热塑性材料的高比强度，超越了其他传统的3D打印方法。该无人机框架仅重260克，比商用DJI F450框架轻10%，提高了结构完整性并延长了飞行时间至三分钟，而飞行测试验证了其在运行条件下的稳定性和耐用性。研究结果展示了基于单束纤维格子桁架无人机框架的潜力，而3DFiT作为可规模化和高效的制造方法具有重要意义。 
+
+---
+# Multi Robot Coordination in Highly Dynamic Environments: Tackling Asymmetric Obstacles and Limited Communication 
+
+**Title (ZH)**: 高度动态环境中多机器人协调：应对非对称障碍和有限通信 
+
+**Authors**: Vincenzo Suriani, Daniele Affinita, Domenico D. Bloisi, Daniele Nardi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.08859)  
+
+**Abstract**: Coordinating a fully distributed multi-agent system (MAS) can be challenging when the communication channel has very limited capabilities in terms of sending rate and packet payload. When the MAS has to deal with active obstacles in a highly partially observable environment, the communication channel acquires considerable relevance. In this paper, we present an approach to deal with task assignments in extremely active scenarios, where tasks need to be frequently reallocated among the agents participating in the coordination process. Inspired by market-based task assignments, we introduce a novel distributed coordination method to orchestrate autonomous agents' actions efficiently in low communication scenarios. In particular, our algorithm takes into account asymmetric obstacles. While in the real world, the majority of obstacles are asymmetric, they are usually treated as symmetric ones, thus limiting the applicability of existing methods. To summarize, the presented architecture is designed to tackle scenarios where the obstacles are active and asymmetric, the communication channel is poor and the environment is partially observable. Our approach has been validated in simulation and in the real world, using a team of NAO robots during official RoboCup competitions. Experimental results show a notable reduction in task overlaps in limited communication settings, with a decrease of 52% in the most frequent reallocated task. 
+
+**Abstract (ZH)**: 协调具有极低通信能力的多代理系统在高度部分可观测环境下处理频繁重新分配任务的挑战：一种应对主动非对称障碍的新型分布式协调方法及其验证 
+
+---
