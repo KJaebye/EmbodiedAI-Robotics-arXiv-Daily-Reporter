@@ -1,0 +1,182 @@
+# GC-VLN: Instruction as Graph Constraints for Training-free Vision-and-Language Navigation 
+
+**Title (ZH)**: GC-VLN: 将指令作为图约束的无需训练的视觉-语言导航 
+
+**Authors**: Hang Yin, Haoyu Wei, Xiuwei Xu, Wenxuan Guo, Jie Zhou, Jiwen Lu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.10454)  
+
+**Abstract**: In this paper, we propose a training-free framework for vision-and-language navigation (VLN). Existing zero-shot VLN methods are mainly designed for discrete environments or involve unsupervised training in continuous simulator environments, which makes it challenging to generalize and deploy them in real-world scenarios. To achieve a training-free framework in continuous environments, our framework formulates navigation guidance as graph constraint optimization by decomposing instructions into explicit spatial constraints. The constraint-driven paradigm decodes spatial semantics through constraint solving, enabling zero-shot adaptation to unseen environments. Specifically, we construct a spatial constraint library covering all types of spatial relationship mentioned in VLN instructions. The human instruction is decomposed into a directed acyclic graph, with waypoint nodes, object nodes and edges, which are used as queries to retrieve the library to build the graph constraints. The graph constraint optimization is solved by the constraint solver to determine the positions of waypoints, obtaining the robot's navigation path and final goal. To handle cases of no solution or multiple solutions, we construct a navigation tree and the backtracking mechanism. Extensive experiments on standard benchmarks demonstrate significant improvements in success rate and navigation efficiency compared to state-of-the-art zero-shot VLN methods. We further conduct real-world experiments to show that our framework can effectively generalize to new environments and instruction sets, paving the way for a more robust and autonomous navigation framework. 
+
+**Abstract (ZH)**: 一种基于图约束优化的无训练框架用于视觉-语言导航 
+
+---
+# Efficient and Accurate Downfacing Visual Inertial Odometry 
+
+**Title (ZH)**: 面向下的高效准确视觉惯性里程计 
+
+**Authors**: Jonas Kühne, Christian Vogt, Michele Magno, Luca Benini  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.10021)  
+
+**Abstract**: Visual Inertial Odometry (VIO) is a widely used computer vision method that determines an agent's movement through a camera and an IMU sensor. This paper presents an efficient and accurate VIO pipeline optimized for applications on micro- and nano-UAVs. The proposed design incorporates state-of-the-art feature detection and tracking methods (SuperPoint, PX4FLOW, ORB), all optimized and quantized for emerging RISC-V-based ultra-low-power parallel systems on chips (SoCs). Furthermore, by employing a rigid body motion model, the pipeline reduces estimation errors and achieves improved accuracy in planar motion scenarios. The pipeline's suitability for real-time VIO is assessed on an ultra-low-power SoC in terms of compute requirements and tracking accuracy after quantization. The pipeline, including the three feature tracking methods, was implemented on the SoC for real-world validation. This design bridges the gap between high-accuracy VIO pipelines that are traditionally run on computationally powerful systems and lightweight implementations suitable for microcontrollers. The optimized pipeline on the GAP9 low-power SoC demonstrates an average reduction in RMSE of up to a factor of 3.65x over the baseline pipeline when using the ORB feature tracker. The analysis of the computational complexity of the feature trackers further shows that PX4FLOW achieves on-par tracking accuracy with ORB at a lower runtime for movement speeds below 24 pixels/frame. 
+
+**Abstract (ZH)**: 视觉惯性里程计（VIO）是一种广泛使用的计算机视觉方法，通过相机和IMU传感器确定代理的运动。本文提出了一种针对微型和纳米无人机应用优化的高效且准确的VIO管道。所提出的架构结合了最新的特征检测和跟踪方法（SuperPoint、PX4FLOW、ORB），这些方法都已针对新兴的基于RISC-V的超低功耗并行系统-on-芯片（SoC）进行了优化和量化。此外，通过采用刚体运动模型，管道减少了估计误差，并在平面运动场景中提高了精度。该管道在超低功耗SoC上进行了实时VIO适用性的评估，考虑了量化后的计算需求和跟踪精度。该管道，包括三种特征跟踪方法，已在SoC上实现以进行现实世界的验证。该设计在高性能系统上运行的传统高精度VIO管道和适用于微控制器的轻量级实现之间建立了桥梁。在低功耗SoC（GAP9）上优化后的管道，在使用ORB特征跟踪器时，平均RMSE降低了3.65倍。特征跟踪器的计算复杂性分析还表明，在运动速度低于24像素/帧时，PX4FLOW的跟踪准确性与ORB相当，但运行时间更短。 
+
+---
+# DGFusion: Depth-Guided Sensor Fusion for Robust Semantic Perception 
+
+**Title (ZH)**: DGFusion: Depth-Guided传感器融合以实现稳健的语义感知 
+
+**Authors**: Tim Broedermannn, Christos Sakaridis, Luigi Piccinelli, Wim Abbeloos, Luc Van Gool  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.09828)  
+
+**Abstract**: Robust semantic perception for autonomous vehicles relies on effectively combining multiple sensors with complementary strengths and weaknesses. State-of-the-art sensor fusion approaches to semantic perception often treat sensor data uniformly across the spatial extent of the input, which hinders performance when faced with challenging conditions. By contrast, we propose a novel depth-guided multimodal fusion method that upgrades condition-aware fusion by integrating depth information. Our network, DGFusion, poses multimodal segmentation as a multi-task problem, utilizing the lidar measurements, which are typically available in outdoor sensor suites, both as one of the model's inputs and as ground truth for learning depth. Our corresponding auxiliary depth head helps to learn depth-aware features, which are encoded into spatially varying local depth tokens that condition our attentive cross-modal fusion. Together with a global condition token, these local depth tokens dynamically adapt sensor fusion to the spatially varying reliability of each sensor across the scene, which largely depends on depth. In addition, we propose a robust loss for our depth, which is essential for learning from lidar inputs that are typically sparse and noisy in adverse conditions. Our method achieves state-of-the-art panoptic and semantic segmentation performance on the challenging MUSES and DELIVER datasets. Code and models will be available at this https URL 
+
+**Abstract (ZH)**: 鲁棒语义感知的自驾车技术依赖于有效结合具有互补优势和劣势的多种传感器。为了克服现有传感器融合方法在处理具有挑战性条件时的局限性，我们提出了一种新颖的深度导向多模态融合方法，通过整合深度信息升级条件感知融合。我们的网络DGFusion将多模态分割作为多任务问题，利用通常在户外传感器套件中可用的激光雷达测量数据，作为模型的输入和学习深度的ground truth。相应的辅助深度头有助于学习深度感知特征，这些特征编码成在空间上变化的局部深度 token，条件驱动我们注意式的跨模态融合。结合全局条件 token，这些局部深度 token 动态适应场景中每个传感器的空间变化可靠性，这在很大程度上取决于深度。此外，我们提出了一种鲁棒的深度损失，这对于从通常在恶劣条件下稀疏且噪声较大的激光雷达输入中学习至关重要。该方法在具有挑战性的MUSES和DELIVER数据集上实现了最先进的泛光和语义分割性能。代码和模型将在以下链接处提供。 
+
+---
+# Australian Supermarket Object Set (ASOS): A Benchmark Dataset of Physical Objects and 3D Models for Robotics and Computer Vision 
+
+**Title (ZH)**: 澳大利亚超市物体集（ASOS）：用于机器人技术与计算机视觉的物理物体及3D模型基准数据集 
+
+**Authors**: Akansel Cosgun, Lachlan Chumbley, Benjamin J. Meyer  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.09720)  
+
+**Abstract**: This paper introduces the Australian Supermarket Object Set (ASOS), a comprehensive dataset comprising 50 readily available supermarket items with high-quality 3D textured meshes designed for benchmarking in robotics and computer vision applications. Unlike existing datasets that rely on synthetic models or specialized objects with limited accessibility, ASOS provides a cost-effective collection of common household items that can be sourced from a major Australian supermarket chain. The dataset spans 10 distinct categories with diverse shapes, sizes, and weights. 3D meshes are acquired by a structure-from-motion techniques with high-resolution imaging to generate watertight meshes. The dataset's emphasis on accessibility and real-world applicability makes it valuable for benchmarking object detection, pose estimation, and robotics applications. 
+
+**Abstract (ZH)**: 澳大利亚超市对象集合（ASOS）：一种用于机器人技术和计算机视觉应用基准测试的高质量3D纹理网格综合数据集 
+
+---
+# Multimodal SAM-adapter for Semantic Segmentation 
+
+**Title (ZH)**: 多模态SAM适配器用于语义分割 
+
+**Authors**: Iacopo Curti, Pierluigi Zama Ramirez, Alioscia Petrelli, Luigi Di Stefano  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.10408)  
+
+**Abstract**: Semantic segmentation, a key task in computer vision with broad applications in autonomous driving, medical imaging, and robotics, has advanced substantially with deep learning. Nevertheless, current approaches remain vulnerable to challenging conditions such as poor lighting, occlusions, and adverse weather. To address these limitations, multimodal methods that integrate auxiliary sensor data (e.g., LiDAR, infrared) have recently emerged, providing complementary information that enhances robustness. In this work, we present MM SAM-adapter, a novel framework that extends the capabilities of the Segment Anything Model (SAM) for multimodal semantic segmentation. The proposed method employs an adapter network that injects fused multimodal features into SAM's rich RGB features. This design enables the model to retain the strong generalization ability of RGB features while selectively incorporating auxiliary modalities only when they contribute additional cues. As a result, MM SAM-adapter achieves a balanced and efficient use of multimodal information. We evaluate our approach on three challenging benchmarks, DeLiVER, FMB, and MUSES, where MM SAM-adapter delivers state-of-the-art performance. To further analyze modality contributions, we partition DeLiVER and FMB into RGB-easy and RGB-hard subsets. Results consistently demonstrate that our framework outperforms competing methods in both favorable and adverse conditions, highlighting the effectiveness of multimodal adaptation for robust scene understanding. The code is available at the following link: this https URL. 
+
+**Abstract (ZH)**: 多模态Semantic分割适应器：一种扩展Segment Anything Model (SAM) 的多模态语义分割框架 
+
+---
+# GLAM: Geometry-Guided Local Alignment for Multi-View VLP in Mammography 
+
+**Title (ZH)**: GLAM: 几何引导的局部对齐方法用于乳腺X线摄影的多视图三维重建 
+
+**Authors**: Yuexi Du, Lihui Chen, Nicha C. Dvornek  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.10344)  
+
+**Abstract**: Mammography screening is an essential tool for early detection of breast cancer. The speed and accuracy of mammography interpretation have the potential to be improved with deep learning methods. However, the development of a foundation visual language model (VLM) is hindered by limited data and domain differences between natural and medical images. Existing mammography VLMs, adapted from natural images, often ignore domain-specific characteristics, such as multi-view relationships in mammography. Unlike radiologists who analyze both views together to process ipsilateral correspondence, current methods treat them as independent images or do not properly model the multi-view correspondence learning, losing critical geometric context and resulting in suboptimal prediction. We propose GLAM: Global and Local Alignment for Multi-view mammography for VLM pretraining using geometry guidance. By leveraging the prior knowledge about the multi-view imaging process of mammograms, our model learns local cross-view alignments and fine-grained local features through joint global and local, visual-visual, and visual-language contrastive learning. Pretrained on EMBED [14], one of the largest open mammography datasets, our model outperforms baselines across multiple datasets under different settings. 
+
+**Abstract (ZH)**: 多视角乳腺X光筛查的全局和局部对齐预训练视觉语言模型 
+
+---
+# I-Segmenter: Integer-Only Vision Transformer for Efficient Semantic Segmentation 
+
+**Title (ZH)**: I-Segmenter：仅整数视觉变换器用于高效语义分割 
+
+**Authors**: Jordan Sassoon, Michal Szczepanski, Martyna Poreba  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.10334)  
+
+**Abstract**: Vision Transformers (ViTs) have recently achieved strong results in semantic segmentation, yet their deployment on resource-constrained devices remains limited due to their high memory footprint and computational cost. Quantization offers an effective strategy to improve efficiency, but ViT-based segmentation models are notoriously fragile under low precision, as quantization errors accumulate across deep encoder-decoder pipelines. We introduce I-Segmenter, the first fully integer-only ViT segmentation framework. Building on the Segmenter architecture, I-Segmenter systematically replaces floating-point operations with integer-only counterparts. To further stabilize both training and inference, we propose $\lambda$-ShiftGELU, a novel activation function that mitigates the limitations of uniform quantization in handling long-tailed activation distributions. In addition, we remove the L2 normalization layer and replace bilinear interpolation in the decoder with nearest neighbor upsampling, ensuring integer-only execution throughout the computational graph. Extensive experiments show that I-Segmenter achieves accuracy within a reasonable margin of its FP32 baseline (5.1 % on average), while reducing model size by up to 3.8x and enabling up to 1.2x faster inference with optimized runtimes. Notably, even in one-shot PTQ with a single calibration image, I-Segmenter delivers competitive accuracy, underscoring its practicality for real-world deployment. 
+
+**Abstract (ZH)**: 完全整数化ViT分割框架I-Segmenter 
+
+---
+# Realism Control One-step Diffusion for Real-World Image Super-Resolution 
+
+**Title (ZH)**: 现实主义控制一步扩散用于真实世界图像超分辨率 
+
+**Authors**: Zongliang Wu, Siming Zheng, Peng-Tao Jiang, Xin Yuan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.10122)  
+
+**Abstract**: Pre-trained diffusion models have shown great potential in real-world image super-resolution (Real-ISR) tasks by enabling high-resolution reconstructions. While one-step diffusion (OSD) methods significantly improve efficiency compared to traditional multi-step approaches, they still have limitations in balancing fidelity and realism across diverse scenarios. Since the OSDs for SR are usually trained or distilled by a single timestep, they lack flexible control mechanisms to adaptively prioritize these competing objectives, which are inherently manageable in multi-step methods through adjusting sampling steps. To address this challenge, we propose a Realism Controlled One-step Diffusion (RCOD) framework for Real-ISR. RCOD provides a latent domain grouping strategy that enables explicit control over fidelity-realism trade-offs during the noise prediction phase with minimal training paradigm modifications and original training data. A degradation-aware sampling strategy is also introduced to align distillation regularization with the grouping strategy and enhance the controlling of trade-offs. Moreover, a visual prompt injection module is used to replace conventional text prompts with degradation-aware visual tokens, enhancing both restoration accuracy and semantic consistency. Our method achieves superior fidelity and perceptual quality while maintaining computational efficiency. Extensive experiments demonstrate that RCOD outperforms state-of-the-art OSD methods in both quantitative metrics and visual qualities, with flexible realism control capabilities in the inference stage. The code will be released. 
+
+**Abstract (ZH)**: 预训练扩散模型在真实场景超分辨率任务中展示了巨大的潜力，通过实现高分辨率重构。虽然一阶扩散（OSD）方法在效率上显著优于传统的多步骤方法，但在不同场景中平衡保真度和真实感方面仍有局限性。由于SR的OSD通常由单一时间步训练或蒸馏，缺乏灵活的控制机制来适应性地优先考虑这些相互竞争的目标，而这些目标在多步骤方法中通过调整采样步骤是可管理的。为解决这一挑战，我们提出了一种用于真实场景超分辨率的现实控制一阶扩散（RCOD）框架。RCOD提供了一种潜在领域分组策略，在噪声预测阶段能显式控制保真度-真实感权衡，同时最小化训练范式修改和使用原始训练数据。引入了一种退化感知采样策略来使蒸馏正则化与分组策略对齐，并增强权衡控制。此外，使用视觉提示注入模块，用退化感知视觉标记替代传统文本提示，提高恢复准确性和语义一致性。我们的方法在保持计算效率的同时实现了更优的保真度和感知质量。大量实验表明，RCOD在定量指标和视觉质量上均优于最先进的OSD方法，在推断阶段具有灵活的现实控制能力。代码将开源。 
+
+---
+# Multimodal Mathematical Reasoning Embedded in Aerial Vehicle Imagery: Benchmarking, Analysis, and Exploration 
+
+**Title (ZH)**: 基于航拍图像的多模态数学推理：基准测试、分析与探索 
+
+**Authors**: Yue Zhou, Litong Feng, Mengcheng Lan, Xue Yang, Qingyun Li, Yiping Ke, Xue Jiang, Wayne Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.10059)  
+
+**Abstract**: Mathematical reasoning is critical for tasks such as precise distance and area computations, trajectory estimations, and spatial analysis in unmanned aerial vehicle (UAV) based remote sensing, yet current vision-language models (VLMs) have not been adequately tested in this domain. To address this gap, we introduce AVI-Math, the first benchmark to rigorously evaluate multimodal mathematical reasoning in aerial vehicle imagery, moving beyond simple counting tasks to include domain-specific knowledge in areas such as geometry, logic, and algebra. The dataset comprises 3,773 high-quality vehicle-related questions captured from UAV views, covering 6 mathematical subjects and 20 topics. The data, collected at varying altitudes and from multiple UAV angles, reflects real-world UAV scenarios, ensuring the diversity and complexity of the constructed mathematical problems. In this paper, we benchmark 14 prominent VLMs through a comprehensive evaluation and demonstrate that, despite their success on previous multimodal benchmarks, these models struggle with the reasoning tasks in AVI-Math. Our detailed analysis highlights significant limitations in the mathematical reasoning capabilities of current VLMs and suggests avenues for future research. Furthermore, we explore the use of Chain-of-Thought prompting and fine-tuning techniques, which show promise in addressing the reasoning challenges in AVI-Math. Our findings not only expose the limitations of VLMs in mathematical reasoning but also offer valuable insights for advancing UAV-based trustworthy VLMs in real-world applications. The code, and datasets will be released at this https URL 
+
+**Abstract (ZH)**: 数学推理对于无人驾驶航空车辆（UAV）远程 sensing 中的精确距离和面积计算、轨迹估算以及空间分析至关重要，然而当前的视觉-语言模型（VLMs）在这个领域中尚未得到充分测试。为解决这一差距，我们引入了 AVI-Math，这是首个严格评估空中车辆图像中多模态数学推理的标准，超越了简单的计数任务，包括几何学、逻辑学和代数等领域的专业知识。数据集包含3,773个高质量的与车辆相关的问题，覆盖6个数学主题和20个领域。数据在不同高度和多个无人机视角下收集，反映出真实的无人机场景，确保了构建的数学问题的多样性和复杂性。在本文中，我们通过全面的评估对比了14个著名的VLMs，并展示了尽管这些模型在之前的多模态基准测试中表现出色，但在AVI-Math中的推理任务中却面临挑战。我们详细的分析突显了当前VLMs在数学推理能力方面的重大局限性，并提出了未来研究的方向。此外，我们探讨了利用思维链提示和微调技术，这些技术有望解决AVI-Math中的推理挑战。我们的发现不仅揭示了VLMs在数学推理方面的局限性，还为在实际应用中推进基于无人机的信任VLMs提供了有价值的见解。代码和数据集将在此链接中发布：this https URL。 
+
+---
+# Drone-Based Multispectral Imaging and Deep Learning for Timely Detection of Branched Broomrape in Tomato Farms 
+
+**Title (ZH)**: 基于无人机多光谱成像和深度学习的及时检测番茄田间枝状雀麦方法 
+
+**Authors**: Mohammadreza Narimani, Alireza Pourreza, Ali Moghimi, Mohsen Mesgaran, Parastoo Farajpoor, Hamid Jafarbiglu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.09972)  
+
+**Abstract**: This study addresses the escalating threat of branched broomrape (Phelipanche ramosa) to California's tomato industry, which supplies over 90 percent of U.S. processing tomatoes. The parasite's largely underground life cycle makes early detection difficult, while conventional chemical controls are costly, environmentally harmful, and often ineffective. To address this, we combined drone-based multispectral imagery with Long Short-Term Memory (LSTM) deep learning networks, using the Synthetic Minority Over-sampling Technique (SMOTE) to handle class imbalance. Research was conducted on a known broomrape-infested tomato farm in Woodland, Yolo County, CA, across five key growth stages determined by growing degree days (GDD). Multispectral images were processed to isolate tomato canopy reflectance. At 897 GDD, broomrape could be detected with 79.09 percent overall accuracy and 70.36 percent recall without integrating later stages. Incorporating sequential growth stages with LSTM improved detection substantially. The best-performing scenario, which integrated all growth stages with SMOTE augmentation, achieved 88.37 percent overall accuracy and 95.37 percent recall. These results demonstrate the strong potential of temporal multispectral analysis and LSTM networks for early broomrape detection. While further real-world data collection is needed for practical deployment, this study shows that UAV-based multispectral sensing coupled with deep learning could provide a powerful precision agriculture tool to reduce losses and improve sustainability in tomato production. 
+
+**Abstract (ZH)**: 基于无人机多谱段成像和LSTM网络的加州番茄Industry髯草早期检测研究 
+
+---
+# Zero-Shot Referring Expression Comprehension via Visual-Language True/False Verification 
+
+**Title (ZH)**: 零样本引用表达理解通过视觉-语言真伪验证 
+
+**Authors**: Jeffrey Liu, Rongbin Hu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.09958)  
+
+**Abstract**: Referring Expression Comprehension (REC) is usually addressed with task-trained grounding models. We show that a zero-shot workflow, without any REC-specific training, can achieve competitive or superior performance. Our approach reformulates REC as box-wise visual-language verification: given proposals from a COCO-clean generic detector (YOLO-World), a general-purpose VLM independently answers True/False queries for each region. This simple procedure reduces cross-box interference, supports abstention and multiple matches, and requires no fine-tuning. On RefCOCO, RefCOCO+, and RefCOCOg, our method not only surpasses a zero-shot GroundingDINO baseline but also exceeds reported results for GroundingDINO trained on REC and GroundingDINO+CRG. Controlled studies with identical proposals confirm that verification significantly outperforms selection-based prompting, and results hold with open VLMs. Overall, we show that workflow design, rather than task-specific pretraining, drives strong zero-shot REC performance. 
+
+**Abstract (ZH)**: 参考表达理解（REC）通常通过任务训练的 grounding 模型来解决。我们表明，在没有任何 REC 特异性训练的情况下，一种零样本工作流能够达到竞争性或更优的性能。我们的方法将 REC 重新表述为框级别的视觉-语言验证：给定 COCO-clean 通用检测器（YOLO-World）的建议框，一个通用的 VLM 独立地对每个区域进行 True/False 查询的回答。这一简单的过程减少了跨框干扰，支持弃权和多匹配，并不需要微调。在 RefCOCO、RefCOCO+ 和 RefCOCOg 上，我们的方法不仅超越了零样本 GroundingDINO 基线，还超过了在 REC 上训练的 GroundingDINO 和 GroundingDINO+CRG 的报告结果。通过使用相同的建议框进行的控制实验确认了验证显著优于基于选择的提示，且结果适用于开放的 VLM。总体而言，我们表明，工作流设计而非任务特异性预训练驱动了强大的零样本 REC 表现。 
+
+---
+# An Autoencoder and Vision Transformer-based Interpretability Analysis of the Differences in Automated Staging of Second and Third Molars 
+
+**Title (ZH)**: 基于自动编码器和视觉变换器的第二和第三磨牙自动化分期差异可解释性分析 
+
+**Authors**: Barkin Buyukcakir, Jannick De Tobel, Patrick Thevissen, Dirk Vandermeulen, Peter Claes  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.09911)  
+
+**Abstract**: The practical adoption of deep learning in high-stakes forensic applications, such as dental age estimation, is often limited by the 'black box' nature of the models. This study introduces a framework designed to enhance both performance and transparency in this context. We use a notable performance disparity in the automated staging of mandibular second (tooth 37) and third (tooth 38) molars as a case study. The proposed framework, which combines a convolutional autoencoder (AE) with a Vision Transformer (ViT), improves classification accuracy for both teeth over a baseline ViT, increasing from 0.712 to 0.815 for tooth 37 and from 0.462 to 0.543 for tooth 38. Beyond improving performance, the framework provides multi-faceted diagnostic insights. Analysis of the AE's latent space metrics and image reconstructions indicates that the remaining performance gap is data-centric, suggesting high intra-class morphological variability in the tooth 38 dataset is a primary limiting factor. This work highlights the insufficiency of relying on a single mode of interpretability, such as attention maps, which can appear anatomically plausible yet fail to identify underlying data issues. By offering a methodology that both enhances accuracy and provides evidence for why a model may be uncertain, this framework serves as a more robust tool to support expert decision-making in forensic age estimation. 
+
+**Abstract (ZH)**: 高风险法医应用（如牙龄估计）中深度学习的实际应用往往受限于模型的“黑盒”性质。本文提出了一种框架以提高性能和透明度。我们以下颔第二前磨牙（牙号37）和第三前磨牙（牙号38）的自动分期为例，展示了该框架的优势。提出的框架结合了卷积自编码器（AE）和视觉变换器（ViT），在牙号37和牙号38的分类准确率上均超过了基线ViT，分别从0.712提高到0.815和从0.462提高到0.543。除了提高性能，该框架还提供了多方面的诊断洞察。分析自编码器的潜在空间度量和图像重构表明，剩余的性能差距主要来源于数据问题，暗示牙号38的数据集中存在较高的类内形态变异是主要限制因素。本研究强调单靠一种解释性模式（如注意图）是不足的，因为这类模式虽然在解剖学上看似合理，却未能识别潜在的数据问题。通过提供既能提高准确性又能解释模型不确定性的方法，该框架为法医年龄估计中的专家决策提供了更为 robust 的支持工具。 
+
+---
+# Surrogate Supervision for Robust and Generalizable Deformable Image Registration 
+
+**Title (ZH)**: 代理监督学习以实现鲁棒且可泛化的变形图像配准 
+
+**Authors**: Yihao Liu, Junyu Chen, Lianrui Zuo, Shuwen Wei, Brian D. Boyd, Carmen Andreescu, Olusola Ajilore, Warren D. Taylor, Aaron Carass, Bennett A. Landman  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.09869)  
+
+**Abstract**: Objective: Deep learning-based deformable image registration has achieved strong accuracy, but remains sensitive to variations in input image characteristics such as artifacts, field-of-view mismatch, or modality difference. We aim to develop a general training paradigm that improves the robustness and generalizability of registration networks. Methods: We introduce surrogate supervision, which decouples the input domain from the supervision domain by applying estimated spatial transformations to surrogate images. This allows training on heterogeneous inputs while ensuring supervision is computed in domains where similarity is well defined. We evaluate the framework through three representative applications: artifact-robust brain MR registration, mask-agnostic lung CT registration, and multi-modal MR registration. Results: Across tasks, surrogate supervision demonstrated strong resilience to input variations including inhomogeneity field, inconsistent field-of-view, and modality differences, while maintaining high performance on well-curated data. Conclusions: Surrogate supervision provides a principled framework for training robust and generalizable deep learning-based registration models without increasing complexity. Significance: Surrogate supervision offers a practical pathway to more robust and generalizable medical image registration, enabling broader applicability in diverse biomedical imaging scenarios. 
+
+**Abstract (ZH)**: 基于深度学习的可变形图像配准稳健性和普适性提高的通用训练范式：通过替代监督实现 
+
+---
+# A Co-Training Semi-Supervised Framework Using Faster R-CNN and YOLO Networks for Object Detection in Densely Packed Retail Images 
+
+**Title (ZH)**: 基于Faster R-CNN和YOLO网络的co-training半监督框架在密集零售图像目标检测中的应用 
+
+**Authors**: Hossein Yazdanjouei, Arash Mansouri, Mohammad Shokouhifar  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.09750)  
+
+**Abstract**: This study proposes a semi-supervised co-training framework for object detection in densely packed retail environments, where limited labeled data and complex conditions pose major challenges. The framework combines Faster R-CNN (utilizing a ResNet backbone) for precise localization with YOLO (employing a Darknet backbone) for global context, enabling mutual pseudo-label exchange that improves accuracy in scenes with occlusion and overlapping objects. To strengthen classification, it employs an ensemble of XGBoost, Random Forest, and SVM, utilizing diverse feature representations for higher robustness. Hyperparameters are optimized using a metaheuristic-driven algorithm, enhancing precision and efficiency across models. By minimizing reliance on manual labeling, the approach reduces annotation costs and adapts effectively to frequent product and layout changes common in retail. Experiments on the SKU-110k dataset demonstrate strong performance, highlighting the scalability and practicality of the proposed framework for real-world retail applications such as automated inventory tracking, product monitoring, and checkout systems. 
+
+**Abstract (ZH)**: 本研究提出了一种半监督协同训练框架，用于密集零售环境中物体检测，该框架在有限标注数据和复杂条件下面临重大挑战。该框架结合使用ResNet主干的Faster R-CNN进行精确定位，和使用Darknet主干的YOLO捕捉全局上下文，实现伪标签的相互交换，提高遮挡和重叠物体场景的准确性。为增强分类，采用XGBoost、随机森林和SVM的集成方法，利用多种特征表示提高鲁棒性。通过元启发式算法优化超参数，增强模型的精确性和效率。通过减少对人工标注的依赖，该方法降低了标注成本，并能够有效适应零售环境中常见的产品和布局频繁变化。实验在SKU-110k数据集上展示了强大性能，突显了所提框架在自动库存跟踪、产品监控和结账系统等真实零售应用中的可扩展性和实用性。 
+
+---
