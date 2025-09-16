@@ -1,0 +1,274 @@
+# Gesture-Based Robot Control Integrating Mm-wave Radar and Behavior Trees 
+
+**Title (ZH)**: 基于行为树集成毫米波雷达的手势控制机器人 
+
+**Authors**: Yuqing Song, Cesare Tonola, Stefano Savazzi, Sanaz Kianoush, Nicola Pedrocchi, Stephan Sigg  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.12008)  
+
+**Abstract**: As robots become increasingly prevalent in both homes and industrial settings, the demand for intuitive and efficient human-machine interaction continues to rise. Gesture recognition offers an intuitive control method that does not require physical contact with devices and can be implemented using various sensing technologies. Wireless solutions are particularly flexible and minimally invasive. While camera-based vision systems are commonly used, they often raise privacy concerns and can struggle in complex or poorly lit environments. In contrast, radar sensing preserves privacy, is robust to occlusions and lighting, and provides rich spatial data such as distance, relative velocity, and angle. We present a gesture-controlled robotic arm using mm-wave radar for reliable, contactless motion recognition. Nine gestures are recognized and mapped to real-time commands with precision. Case studies are conducted to demonstrate the system practicality, performance and reliability for gesture-based robotic manipulation. Unlike prior work that treats gesture recognition and robotic control separately, our system unifies both into a real-time pipeline for seamless, contactless human-robot interaction. 
+
+**Abstract (ZH)**: 随着机器人在家庭和工业环境中的应用日益广泛，对直观高效的人机交互需求不断增加。手势识别提供了一种无需物理接触设备的直观控制方法，可以利用各种传感技术实现。无线解决方案尤其灵活且微创。尽管基于摄像头的视觉系统被广泛使用，但它们往往引发隐私问题，并且在复杂或照明不良的环境中表现不佳。相比之下，雷达传感可以保护隐私，对遮挡和照明具有鲁棒性，并能提供丰富的空间数据，如距离、相对速度和角度。我们提出了一种使用毫米波雷达的手势控制机械臂，以实现可靠的无接触运动识别。该系统可以识别九种手势，并将它们精确映射到实时命令。我们进行了案例研究，以展示该系统在基于手势的机器人操作中的实用性、性能和可靠性。与以往单独处理手势识别和机器人控制的工作不同，我们的系统将两者统一到一个实时管道中，实现无缝的无接触人机交互。 
+
+---
+# Augmented Reality-Enhanced Robot Teleoperation for Collecting User Demonstrations 
+
+**Title (ZH)**: 增强现实辅助的机器人远程操作以收集用户示范 
+
+**Authors**: Shiqi Gong, Sebastian Zudaire, Chi Zhang, Zhen Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.11783)  
+
+**Abstract**: Traditional industrial robot programming is often complex and time-consuming, typically requiring weeks or even months of effort from expert programmers. Although Programming by Demonstration (PbD) offers a more accessible alternative, intuitive interfaces for robot control and demonstration collection remain challenging. To address this, we propose an Augmented Reality (AR)-enhanced robot teleoperation system that integrates AR-based control with spatial point cloud rendering, enabling intuitive, contact-free demonstrations. This approach allows operators to control robots remotely without entering the workspace or using conventional tools like the teach pendant. The proposed system is generally applicable and has been demonstrated on ABB robot platforms, specifically validated with the IRB 1200 industrial robot and the GoFa 5 collaborative robot. A user study evaluates the impact of real-time environmental perception, specifically with and without point cloud rendering, on task completion accuracy, efficiency, and user confidence. Results indicate that enhanced perception significantly improves task performance by 28% and enhances user experience, as reflected by a 12% increase in the System Usability Scale (SUS) score. This work contributes to the advancement of intuitive robot teleoperation, AR interface design, environmental perception, and teleoperation safety mechanisms in industrial settings for demonstration collection. The collected demonstrations may serve as valuable training data for machine learning applications. 
+
+**Abstract (ZH)**: 一种增强现实增强的机器人远程操作系统：基于空间点云渲染的直观无接触示教 
+
+---
+# Adaptive Motorized LiDAR Scanning Control for Robust Localization with OpenStreetMap 
+
+**Title (ZH)**: 基于OpenStreetMap的鲁棒定位的自适应电机化LiDAR扫描控制 
+
+**Authors**: Jianping Li, Kaisong Zhu, Zhongyuan Liu, Rui Jin, Xinhang Xu, Pengfei Wan, Lihua Xie  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.11742)  
+
+**Abstract**: LiDAR-to-OpenStreetMap (OSM) localization has gained increasing attention, as OSM provides lightweight global priors such as building footprints. These priors enhance global consistency for robot navigation, but OSM is often incomplete or outdated, limiting its reliability in real-world deployment. Meanwhile, LiDAR itself suffers from a limited field of view (FoV), where motorized rotation is commonly used to achieve panoramic coverage. Existing motorized LiDAR systems, however, typically employ constant-speed scanning that disregards both scene structure and map priors, leading to wasted effort in feature-sparse regions and degraded localization accuracy. To address these challenges, we propose Adaptive LiDAR Scanning with OSM guidance, a framework that integrates global priors with local observability prediction to improve localization robustness. Specifically, we augment uncertainty-aware model predictive control with an OSM-aware term that adaptively allocates scanning effort according to both scene-dependent observability and the spatial distribution of OSM features. The method is implemented in ROS with a motorized LiDAR odometry backend and evaluated in both simulation and real-world experiments. Results on campus roads, indoor corridors, and urban environments demonstrate significant reductions in trajectory error compared to constant-speed baselines, while maintaining scan completeness. These findings highlight the potential of coupling open-source maps with adaptive LiDAR scanning to achieve robust and efficient localization in complex environments. 
+
+**Abstract (ZH)**: LiDAR到OpenStreetMap (OSM)定位正逐渐获得关注，OSM提供了如建筑足迹等轻量级全局先验信息，这些先验信息增强了机器人导航的全局一致性，但OSM往往不完整或过时，限制了其在实际部署中的可靠性。同时，LiDAR自身存在有限的视野（FOV），通常通过电机驱动旋转来实现全景覆盖。然而，现有的电机驱动LiDAR系统通常采用恒定速度扫描，忽视了场景结构和地图先验，导致在特征稀疏区域浪费了扫描努力，并降低了定位准确性。为解决这些问题，我们提出了一种基于OSM指导的自适应LiDAR扫描框架，该框架将全局先验与局部可观测性预测相结合，以提高定位鲁棒性。具体而言，我们采用了不确定性感知的模型预测控制，并添加了一个OSM意识项，根据场景依赖的可观测性和OSM特征的空间分布自适应分配扫描努力。该方法在ROS中实现，并结合电机驱动LiDAR里程计后端，在仿真和实际实验中进行了评估。结果表明，在校园区道路、室内走廊和城市环境中，与恒定速度基线相比，轨迹误差显著减少，同时保持了扫描完整性。这些发现突显了将开源地图与自适应LiDAR扫描结合使用以在复杂环境中实现鲁棒且高效的定位的潜力。 
+
+---
+# GBPP: Grasp-Aware Base Placement Prediction for Robots via Two-Stage Learning 
+
+**Title (ZH)**: GBPP: 基于两阶段学习的抓取导向基座放置预测gorithm 
+
+**Authors**: Jizhuo Chen, Diwen Liu, Jiaming Wang, Harold Soh  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.11594)  
+
+**Abstract**: GBPP is a fast learning based scorer that selects a robot base pose for grasping from a single RGB-D snapshot. The method uses a two stage curriculum: (1) a simple distance-visibility rule auto-labels a large dataset at low cost; and (2) a smaller set of high fidelity simulation trials refines the model to match true grasp outcomes. A PointNet++ style point cloud encoder with an MLP scores dense grids of candidate poses, enabling rapid online selection without full task-and-motion optimization. In simulation and on a real mobile manipulator, GBPP outperforms proximity and geometry only baselines, choosing safer and more reachable stances and degrading gracefully when wrong. The results offer a practical recipe for data efficient, geometry aware base placement: use inexpensive heuristics for coverage, then calibrate with targeted simulation. 
+
+**Abstract (ZH)**: GBPP是一种基于快速学习的评分器，可以从单个RGB-D快照中选择用于抓取的机器人基座姿态。该方法采用两阶段递进式课程：（1）简单的距离-可见性规则自动标注大量数据集以降低成本；（2）较小数量的高保真模拟试验进一步调整模型以匹配真实抓取结果。该方法使用类似PointNet++风格的点云编码器和MLP对候选姿态进行评分，从而实现快速在线选择而无需进行全面的任务和运动优化。在模拟和实际移动操作器上，GBPP优于仅基于距离和几何的基线方法，选择更安全且更容易到达的姿态，并在错误时逐步退化。结果提供了一种实用的配方，用于高效的数据收集和几何感知基座放置：使用经济高效的启发式方法进行覆盖，然后通过目标化模拟进行校准。 
+
+---
+# Design and Development of a Remotely Wire-Driven Walking Robot 
+
+**Title (ZH)**: 远程线控制步行机器人设计与开发 
+
+**Authors**: Takahiro Hattori, Kento Kawaharazuka, Kei Okada  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.11506)  
+
+**Abstract**: Operating in environments too harsh or inaccessible for humans is one of the critical roles expected of robots. However, such environments often pose risks to electronic components as well. To overcome this, various approaches have been developed, including autonomous mobile robots without electronics, hydraulic remotely actuated mobile robots, and long-reach robot arms driven by wires. Among these, electronics-free autonomous robots cannot make complex decisions, while hydraulically actuated mobile robots and wire-driven robot arms are used in harsh environments such as nuclear power plants. Mobile robots offer greater reach and obstacle avoidance than robot arms, and wire mechanisms offer broader environmental applicability than hydraulics. However, wire-driven systems have not been used for remote actuation of mobile robots. In this study, we propose a novel mechanism called Remote Wire Drive that enables remote actuation of mobile robots via wires. This mechanism is a series connection of decoupled joints, a mechanism used in wire-driven robot arms, adapted for power transmission. We experimentally validated its feasibility by actuating a wire-driven quadruped robot, which we also developed in this study, through Remote Wire Drive. 
+
+**Abstract (ZH)**: 基于电线远程驱动的移动机器人新型远程驱动机制研究 
+
+---
+# RAPTOR: A Foundation Policy for Quadrotor Control 
+
+**Title (ZH)**: RAPTOR：四旋翼飞行器控制的基础策略 
+
+**Authors**: Jonas Eschmann, Dario Albani, Giuseppe Loianno  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.11481)  
+
+**Abstract**: Humans are remarkably data-efficient when adapting to new unseen conditions, like driving a new car. In contrast, modern robotic control systems, like neural network policies trained using Reinforcement Learning (RL), are highly specialized for single environments. Because of this overfitting, they are known to break down even under small differences like the Simulation-to-Reality (Sim2Real) gap and require system identification and retraining for even minimal changes to the system. In this work, we present RAPTOR, a method for training a highly adaptive foundation policy for quadrotor control. Our method enables training a single, end-to-end neural-network policy to control a wide variety of quadrotors. We test 10 different real quadrotors from 32 g to 2.4 kg that also differ in motor type (brushed vs. brushless), frame type (soft vs. rigid), propeller type (2/3/4-blade), and flight controller (PX4/Betaflight/Crazyflie/M5StampFly). We find that a tiny, three-layer policy with only 2084 parameters is sufficient for zero-shot adaptation to a wide variety of platforms. The adaptation through In-Context Learning is made possible by using a recurrence in the hidden layer. The policy is trained through a novel Meta-Imitation Learning algorithm, where we sample 1000 quadrotors and train a teacher policy for each of them using Reinforcement Learning. Subsequently, the 1000 teachers are distilled into a single, adaptive student policy. We find that within milliseconds, the resulting foundation policy adapts zero-shot to unseen quadrotors. We extensively test the capabilities of the foundation policy under numerous conditions (trajectory tracking, indoor/outdoor, wind disturbance, poking, different propellers). 
+
+**Abstract (ZH)**: 人类在适应新未见条件时表现出惊人的数据效率，比如驾驶新车型。相比之下，现代机器人控制系统，如使用强化学习（RL）训练的神经网络策略，高度专门化于单一环境。由于这种过拟合，它们在小差异如仿真到现实（Sim2Real）缺口的情况下容易失效，并且即使是对系统的最小更改也需要系统辨识和重新训练。在本工作中，我们提出了一种名为RAPTOR的方法，用于训练四旋翼飞行器控制的高适应性基础策略。该方法使得能够训练一个端到端的神经网络策略，控制多种不同类型的四旋翼飞行器。我们测试了32克到2.4千克、不同电机类型（有刷 vs 无刷）、不同机架类型（柔体 vs 刚体）、不同螺旋桨类型（2/3/4片桨）以及不同飞控系统（PX4/Betaflight/Crazyflie/M5StampFly）的10种不同四旋翼飞行器。我们发现，仅含有2084参数的三层小型策略足以实现对各种平台的零样本适应。通过在隐藏层使用循环的方法，使得上下文学习成为可能。该策略通过一种新型的元模仿学习算法进行训练，其中我们采样了1000种四旋翼飞行器，并为每种飞行器训练一个教师策略，然后将这1000个教师策略提炼成一个适应性强的学生策略。我们发现，毫秒级内，基础策略能够在未见过的四旋翼飞行器上实现零样本适应。我们在多种条件下（轨迹跟踪、室内外环境、风扰、触碰、不同螺旋桨）对基础策略的能力进行了广泛的测试。 
+
+---
+# CORB-Planner: Corridor as Observations for RL Planning in High-Speed Flight 
+
+**Title (ZH)**: CORB-Planner: 航道作为观测的高速飞行路径规划方法 
+
+**Authors**: Yechen Zhang, Bin Gao, Gang Wang, Jian Sun, Zhuo Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.11240)  
+
+**Abstract**: Reinforcement learning (RL) has shown promise in a large number of robotic control tasks. Nevertheless, its deployment on unmanned aerial vehicles (UAVs) remains challenging, mainly because of reliance on accurate dynamic models and platform-specific sensing, which hinders cross-platform transfer. This paper presents the CORB-Planner (Corridor-as-Observations for RL B-spline planner), a real-time, RL-based trajectory planning framework for high-speed autonomous UAV flight across heterogeneous platforms. The key idea is to combine B-spline trajectory generation with the RL policy producing successive control points with a compact safe flight corridor (SFC) representation obtained via heuristic search. The SFC abstracts obstacle information in a low-dimensional form, mitigating overfitting to platform-specific details and reducing sensitivity to model inaccuracies. To narrow the sim-to-real gap, we adopt an easy-to-hard progressive training pipeline in simulation. A value-based soft decomposed-critic Q (SDCQ) algorithm is used to learn effective policies within approximately ten minutes of training. Benchmarks in simulation and real-world tests demonstrate real-time planning on lightweight onboard hardware and support maximum flight speeds up to 8.2m/s in dense, cluttered environments without external positioning. Compatibility with various UAV configurations (quadrotors, hexarotors) and modest onboard compute underlines the generality and robustness of CORB-Planner for practical deployment. 
+
+**Abstract (ZH)**: 基于走廊观测的强化学习B样条规划器（CORB-Planner）：一种适用于异构平台高速自主 UAV 飞行的实时轨迹规划框架 
+
+---
+# SAMP: Spatial Anchor-based Motion Policy for Collision-Aware Robotic Manipulators 
+
+**Title (ZH)**: 基于空间锚点的碰撞意识运动策略SAMP 
+
+**Authors**: Kai Chen, Zhihai Bi, Guoyang Zhao, Chunxin Zheng, Yulin Li, Hang Zhao, Jun Ma  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.11185)  
+
+**Abstract**: Neural-based motion planning methods have achieved remarkable progress for robotic manipulators, yet a fundamental challenge lies in simultaneously accounting for both the robot's physical shape and the surrounding environment when generating safe and feasible motions. Moreover, existing approaches often rely on simplified robot models or focus primarily on obstacle representation, which can lead to incomplete collision detection and degraded performance in cluttered scenes. To address these limitations, we propose spatial anchor-based motion policy (SAMP), a unified framework that simultaneously encodes the environment and the manipulator using signed distance field (SDF) anchored on a shared spatial grid. SAMP incorporates a dedicated robot SDF network that captures the manipulator's precise geometry, enabling collision-aware reasoning beyond coarse link approximations. These representations are fused on spatial anchors and used to train a neural motion policy that generates smooth, collision-free trajectories in the proposed efficient feature alignment strategy. Experiments conducted in both simulated and real-world environments consistently show that SAMP outperforms existing methods, delivering an 11% increase in success rate and a 7% reduction in collision rate. These results highlight the benefits of jointly modelling robot and environment geometry, demonstrating its practical value in challenging real-world environments. 
+
+**Abstract (ZH)**: 基于神经网络的运动规划方法在机器人 manipulator 中取得了显著进展，但在生成安全可行的运动时，一项基本挑战在于同时考虑机器人的物理形状和周围环境。此外，现有方法往往依赖于简化的机器人模型或主要集中在障碍物表示上，这可能导致碰撞检测不完整并在杂乱场景中表现出较差的性能。为了克服这些限制，我们提出了一种基于空间锚的运动策略（SAMP），这是一种统一框架，可以同时使用带有共享空间网格的空间锚签量距离场（SDF）编码环境和 manipulator。SAMP 结合了一个专用的机器人 SDF 网络，该网络捕获 manipulator 的精确几何形状，从而实现超越粗略链接近似的碰撞感知推理。这些表示在空间锚上融合，并用于训练神经运动策略，以在提出的高效特征对齐策略中生成平滑且无障碍的轨迹。在模拟和真实环境中的实验结果一致显示，SAMP 比现有方法性能更优，成功率提高了 11%，碰撞率降低了 7%。这些结果突显了同时建模机器人和环境几何形状的益处，展示了其在具有挑战性的现实环境中的实际价值。 
+
+---
+# RoVerFly: Robust and Versatile Learning-based Control of Quadrotor Across Payload Configurations 
+
+**Title (ZH)**: RoVerFly：适用于不同载荷配置的四旋翼无人机稳健且多功能的学习控制 
+
+**Authors**: Mintae Kim, Jiaze Cai, Koushil Sreenath  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.11149)  
+
+**Abstract**: Designing robust controllers for precise, arbitrary trajectory tracking with quadrotors is challenging due to nonlinear dynamics and underactuation, and becomes harder with flexible cable-suspended payloads that introduce extra degrees of freedom and hybridness. Classical model-based methods offer stability guarantees but require extensive tuning and often do not adapt when the configuration changes, such as when a payload is added or removed, or when the payload mass or cable length varies. We present RoVerFly, a unified learning-based control framework in which a reinforcement learning (RL) policy serves as a robust and versatile tracking controller for standard quadrotors and for cable-suspended payload systems across a range of configurations. Trained with task and domain randomization, the controller is resilient to disturbances and varying dynamics. It achieves strong zero-shot generalization across payload settings, including no payload as well as varying mass and cable length, without controller switching or re-tuning, while retaining the interpretability and structure of a feedback tracking controller. Code and supplementary materials are available at this https URL 
+
+**Abstract (ZH)**: 基于强化学习的设计用于鲁棒精确和任意轨迹跟踪的旋翼无人机及其柔性电缆悬挂载荷控制框架 
+
+---
+# Multi-objective task allocation for electric harvesting robots: a hierarchical route reconstruction approach 
+
+**Title (ZH)**: 基于分层路径重构的多目标任务分配方法：适用于电动收割机器人的任务分配 
+
+**Authors**: Peng Chen, Jing Liang, Hui Song, Kang-Jia Qiao, Cai-Tong Yue, Kun-Jie Yu, Ponnuthurai Nagaratnam Suganthan, Witold Pedrycz  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.11025)  
+
+**Abstract**: The increasing labor costs in agriculture have accelerated the adoption of multi-robot systems for orchard harvesting. However, efficiently coordinating these systems is challenging due to the complex interplay between makespan and energy consumption, particularly under practical constraints like load-dependent speed variations and battery limitations. This paper defines the multi-objective agricultural multi-electrical-robot task allocation (AMERTA) problem, which systematically incorporates these often-overlooked real-world constraints. To address this problem, we propose a hybrid hierarchical route reconstruction algorithm (HRRA) that integrates several innovative mechanisms, including a hierarchical encoding structure, a dual-phase initialization method, task sequence optimizers, and specialized route reconstruction operators. Extensive experiments on 45 test instances demonstrate HRRA's superior performance against seven state-of-the-art algorithms. Statistical analysis, including the Wilcoxon signed-rank and Friedman tests, empirically validates HRRA's competitiveness and its unique ability to explore previously inaccessible regions of the solution space. In general, this research contributes to the theoretical understanding of multi-robot coordination by offering a novel problem formulation and an effective algorithm, thereby also providing practical insights for agricultural automation. 
+
+**Abstract (ZH)**: 农业多电气机器人任务分配（AMERTA）问题及其混合分层路径重构算法的研究 
+
+---
+# Autonomous Close-Proximity Photovoltaic Panel Coating Using a Quadcopter 
+
+**Title (ZH)**: 自主近距光伏面板涂层四旋翼无人机系统 
+
+**Authors**: Dimitri Jacquemont, Carlo Bosio, Teaya Yang, Ruiqi Zhang, Ozgur Orun, Shuai Li, Reza Alam, Thomas M. Schutzius, Simo A. Makiharju, Mark W. Mueller  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.10979)  
+
+**Abstract**: Photovoltaic (PV) panels are becoming increasingly widespread in the domain of renewable energy, and thus, small efficiency gains can have massive effects. Anti-reflective and self-cleaning coatings enhance panel performance but degrade over time, requiring periodic reapplication. Uncrewed Aerial Vehicles (UAVs) offer a flexible and autonomous way to apply protective coatings more often and at lower cost compared to traditional manual coating methods. In this letter, we propose a quadcopter-based system, equipped with a liquid dispersion mechanism, designed to automate such tasks. The localization stack only uses onboard sensors, relying on visual-inertial odometry and the relative position of the PV panel detected with respect to the quadcopter. The control relies on a model-based controller that accounts for the ground effect and the mass decrease of the quadcopter during liquid dispersion. We validate the autonomy capabilities of our system through extensive indoor and outdoor experiments. 
+
+**Abstract (ZH)**: 基于四旋翼无人机的自动涂覆系统在光伏面板上的应用研究 
+
+---
+# Design of scalable orthogonal digital encoding architecture for large-area flexible tactile sensing in robotics 
+
+**Title (ZH)**: 面向机器人领域的大面积柔性触觉感知可扩展正交数字编码架构设计 
+
+**Authors**: Weijie Liu, Ziyi Qiu, Shihang Wang, Deqing Mei, Yancheng Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.10888)  
+
+**Abstract**: Human-like embodied tactile perception is crucial for the next-generation intelligent robotics. Achieving large-area, full-body soft coverage with high sensitivity and rapid response, akin to human skin, remains a formidable challenge due to critical bottlenecks in encoding efficiency and wiring complexity in existing flexible tactile sensors, thus significantly hinder the scalability and real-time performance required for human skin-level tactile perception. Herein, we present a new architecture employing code division multiple access-inspired orthogonal digital encoding to overcome these challenges. Our decentralized encoding strategy transforms conventional serial signal transmission by enabling parallel superposition of energy-orthogonal base codes from distributed sensing nodes, drastically reducing wiring requirements and increasing data throughput. We implemented and validated this strategy with off-the-shelf 16-node sensing array to reconstruct the pressure distribution, achieving a temporal resolution of 12.8 ms using only a single transmission wire. Crucially, the architecture can maintain sub-20ms latency across orders-of-magnitude variations in node number (to thousands of nodes). By fundamentally redefining signal encoding paradigms in soft electronics, this work opens new frontiers in developing scalable embodied intelligent systems with human-like sensory capabilities. 
+
+**Abstract (ZH)**: 类人的身体触觉感知对于下一代智能机器人至关重要。克服现有柔性触觉传感器在编码效率和布线复杂性方面的瓶颈，以实现大面积、全身软覆盖的高灵敏度和快速响应能力，如同人类皮肤依然是一项艰巨的挑战，这严重影响了达到人类皮肤级触觉感知所需的扩展性和实时性能。在此，我们提出一种新的架构，采用基于码分多址的正交数字编码策略来克服这些挑战。我们的去中心化编码策略通过使分布式传感节点能够并行叠加能量正交的基础编码，从而大幅减少布线需求并提高数据吞吐量，重构压力分布。我们使用商用的16节点传感阵列实施并验证了这一策略，仅使用一根传输线就实现了12.8毫秒的时间分辨率。 crucial地，该架构能够保持低于20毫秒的延迟，在节点数量从数百到数千的数量级变化时依然有效。通过从根本上重新定义软电子器件中的信号编码 paradigms，本项工作为开发具有类人感知能力的可扩展体域智能系统开辟了新的前沿。 
+
+---
+# A Universal Wire Testing Machine for Enhancing the Performance of Wire-Driven Robots 
+
+**Title (ZH)**: 用于增强 wire-driven 机器人性能的通用导线测试机 
+
+**Authors**: Temma Suzuki, Kento Kawaharazuka, Kei Okada  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.10862)  
+
+**Abstract**: Compared with gears and linkages, wires constitute a lightweight, low-friction transmission mechanism. However, because wires are flexible materials, they tend to introduce large modeling errors, and their adoption in industrial and research robots remains this http URL this study, we built a Universal Wire Testing Machine that enables measurement and adjustment of wire characteristics to improve the performance of wire-driven mechanisms. Using this testing machine, we carried out removal of initial wire stretch, measurement of tension transmission efficiency for eight different diameters of passive pulleys, and measurement of the dynamic behavior of variable-length wires. Finally, we applied the data obtained from this testing machine to the force control of an actual wire-driven robot, reducing the end-effector force error. 
+
+**Abstract (ZH)**: 与齿轮和连杆相比， wires 构成了一种轻量级、低摩擦的传动机制。然而，由于 wires 是一种柔性材料，它们容易引入较大的建模误差，其在工业和研究机器人中的应用尚存在局限。本研究中，我们构建了一台通用的 wire 测试机，用于测量和调整 wire 特性以提高 wire 驱动机制的性能。使用该测试机，我们进行了初始 wire 拉伸的去除、不同直径被动滑轮的张力传递效率测量以及可变长度 wire 的动态行为测量。最后，我们将该测试机所获取的数据应用于实际的 wire 驱动机器人中的力控制，减少了末端执行器力的误差。 
+
+---
+# Follow-Bench: A Unified Motion Planning Benchmark for Socially-Aware Robot Person Following 
+
+**Title (ZH)**: Follow-Bench: 一种面向社交aware机器人行人跟随的统一运动规划基准测试 
+
+**Authors**: Hanjing Ye, Weixi Situ, Jianwei Peng, Yu Zhan, Bingyi Xia, Kuanqi Cai, Hong Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.10796)  
+
+**Abstract**: Robot person following (RPF) -- mobile robots that follow and assist a specific person -- has emerging applications in personal assistance, security patrols, eldercare, and logistics. To be effective, such robots must follow the target while ensuring safety and comfort for both the target and surrounding people. In this work, we present the first end-to-end study of RPF, which (i) surveys representative scenarios, motion-planning methods, and evaluation metrics with a focus on safety and comfort; (ii) introduces Follow-Bench, a unified benchmark simulating diverse scenarios, including various target trajectory patterns, dynamic-crowd flows, and environmental layouts; and (iii) re-implements six popular RPF planners, ensuring that both safety and comfort are systematically considered. Moreover, we evaluate the two highest-performing planners from our benchmark on a differential-drive robot to provide insights into real-world deployment. Extensive simulation and real-world experiments provide quantitative insights into the safety-comfort trade-offs of existing planners, while revealing open challenges and future research directions. 
+
+**Abstract (ZH)**: 机器人人群跟随（RPF）——能够跟随并协助特定人的移动机器人——在个人辅助、安全巡逻、养老服务和物流等领域具有新兴应用。为了有效工作，这类机器人必须在确保目标人物和周围人员的安全与舒适的同时跟随目标。在本项工作中，我们提出了第一个端到端的RPF研究，包括（i）回顾代表性场景、运动规划方法以及以安全和舒适为重点的评估指标；（ii）介绍Follow-Bench，一个统一基准，模拟各种场景，包括多种目标轨迹模式、动态人群流动和环境布局；（iii）重新实现六种流行的RPF规划器，确保在所有情况下都系统地考虑安全和舒适性。此外，我们在差速驱动机器人上评估了基准中最出色的两个规划器，以提供实际部署的见解。广泛的模拟和实地实验提供了有关现有规划器的安全-舒适权衡的定量见解，同时揭示了开放挑战和未来的研究方向。 
+
+---
+# RSL-RL: A Learning Library for Robotics Research 
+
+**Title (ZH)**: RSL-RL：机器人研究的学习库 
+
+**Authors**: Clemens Schwarke, Mayank Mittal, Nikita Rudin, David Hoeller, Marco Hutter  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.10771)  
+
+**Abstract**: RSL-RL is an open-source Reinforcement Learning library tailored to the specific needs of the robotics community. Unlike broad general-purpose frameworks, its design philosophy prioritizes a compact and easily modifiable codebase, allowing researchers to adapt and extend algorithms with minimal overhead. The library focuses on algorithms most widely adopted in robotics, together with auxiliary techniques that address robotics-specific challenges. Optimized for GPU-only training, RSL-RL achieves high-throughput performance in large-scale simulation environments. Its effectiveness has been validated in both simulation benchmarks and in real-world robotic experiments, demonstrating its utility as a lightweight, extensible, and practical framework to develop learning-based robotic controllers. The library is open-sourced at: this https URL. 
+
+**Abstract (ZH)**: RSL-RL是一个针对机器人社区特定需求的开源强化学习库。 
+
+---
+# Analytical Design and Development of a Modular and Intuitive Framework for Robotizing and Enhancing the Existing Endoscopic Procedures 
+
+**Title (ZH)**: 模块化和直观框架的分析设计与开发：用于现有内镜手术的机器人化与增强 
+
+**Authors**: Mohammad Rafiee Javazm, Yash Kulkarni, Jiaqi Xue, Naruhiko Ikoma, Farshid Alambeigi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.10735)  
+
+**Abstract**: Despite the widespread adoption of endoscopic devices for several cancer screening procedures, manual control of these devices still remains challenging for clinicians, leading to several critical issues such as increased workload, fatigue, and distractions. To address these issues, in this paper, we introduce the design and development of an intuitive, modular, and easily installable mechatronic framework. This framework includes (i) a novel nested collet-chuck gripping mechanism that can readily be integrated and assembled with the existing endoscopic devices and control their bending degrees-of-freedom (DoFs); (ii) a feeder mechanism that can control the insertion/retraction DoF of a colonoscope, and (iii) a complementary and intuitive user interface that enables simultaneous control of all DoFs during the procedure. To analyze the design of the proposed mechanisms, we also introduce a mathematical modeling approach and a design space for optimal selection of the parameters involved in the design of gripping and feeder mechanisms. Our simulation and experimental studies thoroughly demonstrate the performance of the proposed mathematical modeling and robotic framework. 
+
+**Abstract (ZH)**: 尽管内窥镜设备在多种癌症筛查程序中的广泛应用，临床医生对手动控制这些设备仍然面临挑战，导致诸如工作量增加、疲劳和分心等一系列关键问题。为解决这些问题，本文介绍了直观、模块化、易于安装的机电一体化框架的设计与开发。该框架包括（i）一种新颖的嵌套卡盘夹持机制，可以轻松与现有的内窥镜设备集成和组装，并控制其弯曲自由度（DoF）；（ii）一种可控制结肠镜插入/撤出自由度的供料机制；以及（iii）一种互补的直观用户界面，使操作者能够在操作过程中同时控制所有自由度。为了分析所提议机制的设计，我们还引入了数学建模方法和一个设计空间，用于优化夹持和供料机制参数的选择。我们的模拟和实验研究充分展示了所提数学建模和机器人框架的性能。 
+
+---
+# A Survey on LiDAR-based Autonomous Aerial Vehicles 
+
+**Title (ZH)**: 基于LiDAR的自主无人机综述 
+
+**Authors**: Yunfan Ren, Yixi Cai, Haotian Li, Nan Chen, Fangcheng Zhu, Longji Yin, Fanze Kong, Rundong Li, Fu Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.10730)  
+
+**Abstract**: This survey offers a comprehensive overview of recent advancements in LiDAR-based autonomous Unmanned Aerial Vehicles (UAVs), covering their design, perception, planning, and control strategies. Over the past decade, LiDAR technology has become a crucial enabler for high-speed, agile, and reliable UAV navigation, especially in GPS-denied environments. The paper begins by examining the evolution of LiDAR sensors, emphasizing their unique advantages such as high accuracy, long-range depth measurements, and robust performance under various lighting conditions, making them particularly well-suited for UAV applications. The integration of LiDAR with UAVs has significantly enhanced their autonomy, enabling complex missions in diverse and challenging environments. Subsequently, we explore essential software components, including perception technologies for state estimation and mapping, as well as trajectory planning and control methodologies, and discuss their adoption in LiDAR-based UAVs. Additionally, we analyze various practical applications of the LiDAR-based UAVs, ranging from industrial operations to supporting different aerial platforms and UAV swarm deployments. The survey concludes by discussing existing challenges and proposing future research directions to advance LiDAR-based UAVs and enhance multi-UAV collaboration. By synthesizing recent developments, this paper aims to provide a valuable resource for researchers and practitioners working to push the boundaries of LiDAR-based UAV systems. 
+
+**Abstract (ZH)**: LiDAR为基础的自主无人机Recent进展综述 
+
+---
+# STL-Based Motion Planning and Uncertainty-Aware Risk Analysis for Human-Robot Collaboration with a Multi-Rotor Aerial Vehicle 
+
+**Title (ZH)**: 基于STL的运动规划及多旋翼飞行器人机协作中不确定性 Aware 风险分析 
+
+**Authors**: Giuseppe Silano, Amr Afifi, Martin Saska, Antonio Franchi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.10692)  
+
+**Abstract**: This paper presents a novel approach to motion planning and risk analysis for enhancing human-robot collaboration using a Multi-Rotor Aerial Vehicle (MRAV). The proposed method uses Signal Temporal Logic (STL) to encode key mission objectives, such as safety, timing, and human preferences, with a strong focus on ergonomics and comfort. An optimization framework generates dynamically feasible trajectories while considering the MRAV's physical constraints. Given the nonlinear and non-convex nature of the problem, smooth approximations and gradient-based techniques assist in handling the problem's computational complexity. Additionally, an uncertainty-aware risk analysis is incorporated to assess potential deviations from the mission specifications, providing insights into the likelihood of mission success under uncertain conditions. Further, an event-triggered replanning strategy is implemented to respond to unforeseen events and external disturbances. The approach is validated through MATLAB and Gazebo simulations, using an object handover task in a mock-up environment inspired by power line maintenance scenarios. The results highlight the method's effectiveness in achieving safe, efficient, and resilient human-robot collaboration. 
+
+**Abstract (ZH)**: 基于多旋翼无人机的运动规划与风险分析新方法：提升人机协作安全性与舒适性 
+
+---
+# SafeDiver: Cooperative AUV-USV Assisted Diver Communication via Multi-agent Reinforcement Learning Approach 
+
+**Title (ZH)**: SafeDiver: 多智能体强化学习辅助的AUV-USV协同潜水员通信 
+
+**Authors**: Tinglong Deng, Hang Tao, Xinxiang Wang, Yinyan Wang, Hanjiang Luo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.11508)  
+
+**Abstract**: As underwater human activities are increasing, the demand for underwater communication service presents a significant challenge. Existing underwater diver communication methods face hurdles due to inherent disadvantages and complex underwater environments. To address this issue, we propose a scheme that utilizes maritime unmanned systems to assist divers with reliable and high-speed communication. Multiple AUVs are equipped with optical and acoustic multimodal communication devices as relay nodes, providing adaptive communication services based on changes in the diver's activity area. By using a multi-agent reinforcement learning (MARL) approach to control the cooperative movement of AUVs, high-speed and reliable data transmission between divers can be achieved. At the same time, utilizing the advantages of on-demand deployment and wide coverage of unmanned surface vehicles (USVs) as surface relay nodes to coordinate and forward information from AUVs, and controlling AUVs to adaptively select relay USV nodes for data transmission, high-quality communication between divers and surface platform can be achieved. Through simulation verification, the proposed scheme can effectively achieve reliable and high-speed communication for divers. 
+
+**Abstract (ZH)**: 随着水下人类活动的增加，对水下通信服务的需求呈现出显著的挑战。现有水下潜水员通信方法因固有的缺点和复杂的水下环境而面临挑战。为此，我们提出了一种利用 maritime unmanned systems 来协助潜水员进行可靠和高速通信的方案。多个 AUV 装备有光学和声学多模通信设备作为中继节点，基于潜水员活动区域的变化提供适应性通信服务。通过使用多智能体强化学习（MARL）方法来控制 AUV 的协同运动，可以实现潜水员之间的高速和可靠数据传输。同时，利用无人驾驶水面车辆（USVs）的按需部署和广泛覆盖作为表面中继节点的优势，协调和转发 AUV 的信息，并控制 AUV 适配性地选择中继 USV 节点进行数据传输，从而实现潜水员与表面平台之间的高质量通信。通过仿真验证，所提出的方案可以有效实现潜水员的可靠和高速通信。 
+
+---
+# Asynchronous Gathering of Opaque Robots with Mobility Faults 
+
+**Title (ZH)**: 具有移动故障的不透明机器人异步聚集 
+
+**Authors**: Subhajit Pramanick, Saswata Jana, Partha Sarathi Mandal, Gokarna Sharma  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.10711)  
+
+**Abstract**: We consider the fundamental benchmarking problem of gathering in an $(N,f)$-fault system consisting of $N$ robots, of which at most $f$ might fail at any execution, under asynchrony. Two seminal results established impossibility of a solution in the oblivious robot (OBLOT) model in a $(2,0)$-fault system under semi-synchrony and in a $(3,1)$-Byzantine fault system under asynchrony. Recently, a breakthrough result circumvented the first impossibility result by giving a deterministic algorithm in a $(2,0)$-fault system under asynchrony in the luminous robot (LUMI) model using 2-colored lights. However, a breakthrough result established impossibility of gathering in a $(2,1)$-crash system in the LUMI model under semi-synchrony. In this paper, we consider a {\em mobility fault} model in which a robot crash only impacts it mobility but not the operation of the light.
+We establish four results under asynchrony in LUMI with the mobility fault model. We show that it is impossible to solve gathering in a $(2,1)$-mobility fault system using 2-colored lights, and then give a solution using 3-colored lights, which is optimal w.r.t. the number of colors. We then consider an $(N,f)$-mobility fault system, $f<N$, both $N,f$ not known, and give two deterministic algorithms that exhibit a nice time-color trade-off: The first with time $O(N)$ using 7-colored lights and the second with time $O(\max\{\ell,f\})$ using 26-colored lights, where $\ell< N$ is the number of distinct convex layers of robot positions in the initial configuration. Interestingly, for $l, f = O(1)$, our result is optimal. Our algorithms for an $(N,f)$-mobility fault system are the first to be analysed time complexity, can withstand obstructed visibility (opaque robot model) and asynchronous scheduling. 
+
+**Abstract (ZH)**: 在具有移动故障模型的异步系统中关于$(N,f)$故障机器人的聚集团体问题 
+
+---
+# Control Analysis and Design for Autonomous Vehicles Subject to Imperfect AI-Based Perception 
+
+**Title (ZH)**: 基于不完美AI感知的自主车辆控制分析与设计 
+
+**Authors**: Tao Yan, Zheyu Zhang, Jingjing Jiang, Wen-Hua Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.12137)  
+
+**Abstract**: Safety is a critical concern in autonomous vehicle (AV) systems, especially when AI-based sensing and perception modules are involved. However, due to the black box nature of AI algorithms, it makes closed-loop analysis and synthesis particularly challenging, for example, establishing closed-loop stability and ensuring performance, while they are fundamental to AV safety. To approach this difficulty, this paper aims to develop new modeling, analysis, and synthesis tools for AI-based AVs. Inspired by recent developments in perception error models (PEMs), the focus is shifted from directly modeling AI-based perception processes to characterizing the perception errors they produce. Two key classes of AI-induced perception errors are considered: misdetection and measurement noise. These error patterns are modeled using continuous-time Markov chains and Wiener processes, respectively. By means of that, a PEM-augmented driving model is proposed, with which we are able to establish the closed-loop stability for a class of AI-driven AV systems via stochastic calculus. Furthermore, a performance-guaranteed output feedback control synthesis method is presented, which ensures both stability and satisfactory performance. The method is formulated as a convex optimization problem, allowing for efficient numerical solutions. The results are then applied to an adaptive cruise control (ACC) scenario, demonstrating their effectiveness and robustness despite the corrupted and misleading perception. 
+
+**Abstract (ZH)**: 基于AI的自动驾驶系统安全性是一项关键问题，特别是在涉及基于AI的感知和感知模块时。然而，由于AI算法的黑盒性质，使得闭环分析和综合尤为具有挑战性，例如，建立闭环稳定性并确保性能，这些都是自动驾驶安全性的基础。为了应对这一挑战，本文旨在为基于AI的自动驾驶系统开发新的建模、分析和综合工具。受到近期感知误差模型（PEMs）发展的启发，研究的重点从直接建模AI基于的感知过程转向表征它们产生的感知误差。考虑了两种关键的AI诱导感知误差类别：误检和测量噪声。这些误差模式分别通过连续时间马尔可夫链和维纳过程建模。通过这种方式，提出了一种增强的驾驶模型，借助随机微积分，我们能够确立一类由AI驱动的自动驾驶系统的闭环稳定性。此外，提出了一种保证性能的输出反馈控制综合方法，该方法确保了系统的稳定性和良好的性能。该方法被表述为一个凸优化问题，允许高效的数值求解。最后，将这些结果应用于自适应巡航控制（ACC）场景，证明了它们在感知受污染和误导情况下的有效性和鲁棒性。 
+
+---
