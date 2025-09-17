@@ -1,0 +1,78 @@
+# AsyMoE: Leveraging Modal Asymmetry for Enhanced Expert Specialization in Large Vision-Language Models 
+
+**Title (ZH)**: AsyMoE: 利用模态不对称性增强大型视觉语言模型专家专业化水平 
+
+**Authors**: Heng Zhang, Haichuan Hu, Yaomin Shen, Weihao Yu, Yilei Yuan, Haochen You, Guo Cheng, Zijian Zhang, Lubin Gan, Huihui Wei, Hao Zhang, Jin Huang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.12715)  
+
+**Abstract**: Large Vision-Language Models (LVLMs) have demonstrated impressive performance on multimodal tasks through scaled architectures and extensive training. However, existing Mixture of Experts (MoE) approaches face challenges due to the asymmetry between visual and linguistic processing. Visual information is spatially complete, while language requires maintaining sequential context. As a result, MoE models struggle to balance modality-specific features and cross-modal interactions. Through systematic analysis, we observe that language experts in deeper layers progressively lose contextual grounding and rely more on parametric knowledge rather than utilizing the provided visual and linguistic information. To address this, we propose AsyMoE, a novel architecture that models this asymmetry using three specialized expert groups. We design intra-modality experts for modality-specific processing, hyperbolic inter-modality experts for hierarchical cross-modal interactions, and evidence-priority language experts to suppress parametric biases and maintain contextual grounding. Extensive experiments demonstrate that AsyMoE achieves 26.58% and 15.45% accuracy improvements over vanilla MoE and modality-specific MoE respectively, with 25.45% fewer activated parameters than dense models. 
+
+**Abstract (ZH)**: 大型多模态语言视觉模型（Large Vision-Language Models）通过扩展架构和大量的训练在多模态任务中表现出色。然而，现有的专家混合（Mixture of Experts, MoE）方法由于视觉处理和语言处理之间的不对称性而面临挑战。视觉信息是空间完备的，而语言需要保持序列上下文。因此，MoE模型难以平衡模态特异性特征和跨模态交互。通过系统分析，我们观察到更深layer的语言专家逐步失去上下文依托，更多依赖于参数性知识，而不是利用提供的视觉和语言信息。为此，我们提出了AsyMoE，这是一种新的架构，使用三个专门的专家组来建模这种不对称性。我们设计了跨模态专家进行模态特异性处理，超曲面跨模态专家进行分层的跨模态交互，以及证据优先级语言专家来抑制参数性偏见并保持上下文依托。 extensive实验表明，与vanilla MoE和模态特异性MoE相比，AsyMoE分别实现了26.58%和15.45%的准确率提升，且与稠密模型相比激活参数减少了25.45%。 
+
+---
+# InPhyRe Discovers: Large Multimodal Models Struggle in Inductive Physical Reasoning 
+
+**Title (ZH)**: InPhyRe 发现：大型多模态模型在归纳物理推理方面存在困难 
+
+**Authors**: Gautam Sreekumar, Vishnu Naresh Boddeti  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.12263)  
+
+**Abstract**: Large multimodal models (LMMs) encode universal physical laws observed during training, such as momentum conservation, as parametric knowledge. It allows LMMs to answer physical reasoning queries, such as the outcome of a potential collision event from visual input. However, since parametric knowledge includes only the physical laws seen during training, it is insufficient for reasoning when the inference scenario violates these physical laws. In contrast, humans possess the skill to adapt their physical reasoning to unseen physical environments from a few visual examples. This ability, which we refer to as inductive physical reasoning, is indispensable for LMMs if they are to replace human agents in safety-critical applications. Despite its importance, existing visual benchmarks evaluate only the parametric knowledge in LMMs, and not inductive physical reasoning. To this end, we propose InPhyRe, the first visual question answering benchmark to measure inductive physical reasoning in LMMs. InPhyRe evaluates LMMs on their ability to predict the outcome of collision events in algorithmically generated synthetic collision videos. By inspecting 13 LMMs, InPhyRe informs us that (1) LMMs struggle to apply their limited parametric knowledge about universal physical laws to reasoning, (2) inductive physical reasoning in LMMs is weak when demonstration samples violate universal physical laws, and (3) inductive physical reasoning in LMMs suffers from language bias and largely ignores the visual inputs, questioning the trustworthiness of LMMs regarding visual inputs. 
+
+**Abstract (ZH)**: 基于视觉问答的LMM的归纳物理推理基准（InPhyRe） 
+
+---
+# TFANet: Three-Stage Image-Text Feature Alignment Network for Robust Referring Image Segmentation 
+
+**Title (ZH)**: TFANet：三层图像-文本特征对齐网络，用于稳健的目标图像分割 
+
+**Authors**: Qianqi Lu, Yuxiang Xie, Jing Zhang, Shiwei Zou, Yan Chen, Xidao Luan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.13070)  
+
+**Abstract**: Referring Image Segmentation (RIS) is a task that segments image regions based on language expressions, requiring fine-grained alignment between two modalities. However, existing methods often struggle with multimodal misalignment and language semantic loss, especially in complex scenes containing multiple visually similar objects, where uniquely described targets are frequently mislocalized or incompletely segmented. To tackle these challenges, this paper proposes TFANet, a Three-stage Image-Text Feature Alignment Network that systematically enhances multimodal alignment through a hierarchical framework comprising three stages: Knowledge Plus Stage (KPS), Knowledge Fusion Stage (KFS), and Knowledge Intensification Stage (KIS). In the first stage, we design the Multiscale Linear Cross-Attention Module (MLAM), which facilitates bidirectional semantic exchange between visual features and textual representations across multiple scales. This establishes rich and efficient alignment between image regions and different granularities of linguistic descriptions. Subsequently, the KFS further strengthens feature alignment through the Cross-modal Feature Scanning Module (CFSM), which applies multimodal selective scanning to capture long-range dependencies and construct a unified multimodal representation. This is essential for modeling long-range cross-modal dependencies and enhancing alignment accuracy in complex scenes. Finally, in the KIS, we propose the Word-level Linguistic Feature-guided Semantic Deepening Module (WFDM) to compensate for semantic degradation introduced in earlier stages. 
+
+**Abstract (ZH)**: 基于语言描述的图像区域分割（Referring Image Segmentation）是一项根据语言表达分割图像区域的任务，需要精细化的跨模态对齐。然而，现有方法常常难以应对多模态对齐偏差和语言语义损失，特别是在包含多个视觉相似对象的复杂场景中，目标经常被误定位或分割不完整。为解决这些挑战，本文提出了一种三级图像-文本特征对齐网络TFANet，通过一个包含三级的分层框架系统性地增强多模态对齐：知识增强阶段（Knowledge Plus Stage, KPS）、知识融合阶段（Knowledge Fusion Stage, KFS）和知识强化阶段（Knowledge Intensification Stage, KIS）。在第一阶段，我们设计了多尺度线性跨注意力模块（Multiscale Linear Cross-Attention Module, MLAM），促进跨多个尺度的视觉特征与文本表示之间的双向语义交换，从而建立丰富且高效的图像区域与不同粒度语言描述之间的对齐。随后，KFS进一步通过跨模态特征扫描模块（Cross-modal Feature Scanning Module, CFSM）增强特征对齐，利用多模态选择性扫描捕获长程依赖关系并构建统一的多模态表示，这对于建模复杂场景中的长程跨模态依赖关系和提高对齐准确性至关重要。最后，在KIS中，我们提出词级语言特征引导的语义加深模块（Word-level Linguistic Feature-guided Semantic Deepening Module, WFDM）来补偿早期阶段引入的语义退化。 
+
+---
+# Cross-Layer Vision Smoothing: Enhancing Visual Understanding via Sustained Focus on Key Objects in Large Vision-Language Models 
+
+**Title (ZH)**: 跨层视觉平滑：通过在大型视觉-语言模型中持续关注关键对象来增强视觉理解 
+
+**Authors**: Jianfei Zhao, Feng Zhang, Xin Sun, Lingxing Kong, Zhixing Tan, Chong Feng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.12897)  
+
+**Abstract**: Large Vision-Language Models (LVLMs) can accurately locate key objects in images, yet their attention to these objects tends to be very brief. Motivated by the hypothesis that sustained focus on key objects can improve LVLMs' visual capabilities, we propose Cross-Layer Vision Smoothing (CLVS). The core idea of CLVS is to incorporate a vision memory that smooths the attention distribution across layers. Specifically, we initialize this vision memory with position-unbiased visual attention in the first layer. In subsequent layers, the model's visual attention jointly considers the vision memory from previous layers, while the memory is updated iteratively, thereby maintaining smooth attention on key objects. Given that visual understanding primarily occurs in the early and middle layers of the model, we use uncertainty as an indicator of completed visual understanding and terminate the smoothing process accordingly. Experiments on four benchmarks across three LVLMs confirm the effectiveness and generalizability of our method. CLVS achieves state-of-the-art performance on a variety of visual understanding tasks, with particularly significant improvements in relation and attribute understanding. 
+
+**Abstract (ZH)**: 跨层视觉平滑（CLVS）：通过持续关注关键对象提升大型vision-language模型的视觉能力 
+
+---
+# Beyond Artificial Misalignment: Detecting and Grounding Semantic-Coordinated Multimodal Manipulations 
+
+**Title (ZH)**: 超越人工不对齐：检测和 grounding 语义协调的多模态操纵 
+
+**Authors**: Jinjie Shen, Yaxiong Wang, Lechao Cheng, Nan Pu, Zhun Zhong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.12653)  
+
+**Abstract**: The detection and grounding of manipulated content in multimodal data has emerged as a critical challenge in media forensics. While existing benchmarks demonstrate technical progress, they suffer from misalignment artifacts that poorly reflect real-world manipulation patterns: practical attacks typically maintain semantic consistency across modalities, whereas current datasets artificially disrupt cross-modal alignment, creating easily detectable anomalies. To bridge this gap, we pioneer the detection of semantically-coordinated manipulations where visual edits are systematically paired with semantically consistent textual descriptions. Our approach begins with constructing the first Semantic-Aligned Multimodal Manipulation (SAMM) dataset, generated through a two-stage pipeline: 1) applying state-of-the-art image manipulations, followed by 2) generation of contextually-plausible textual narratives that reinforce the visual deception. Building on this foundation, we propose a Retrieval-Augmented Manipulation Detection and Grounding (RamDG) framework. RamDG commences by harnessing external knowledge repositories to retrieve contextual evidence, which serves as the auxiliary texts and encoded together with the inputs through our image forgery grounding and deep manipulation detection modules to trace all manipulations. Extensive experiments demonstrate our framework significantly outperforms existing methods, achieving 2.06\% higher detection accuracy on SAMM compared to state-of-the-art approaches. The dataset and code are publicly available at this https URL. 
+
+**Abstract (ZH)**: 多模态数据中操纵内容的检测与 grounding 已成为媒体取证中的关键挑战。尽管现有基准展示了技术进步，但它们存在错位的伪影，不能很好地反映现实中的操纵模式：实际攻击通常在模态间保持语义一致性，而当前的数据集则人为地破坏跨模态对齐，创造出易于检测的异常。为弥补这一差距，我们开创了语义对齐多模态操纵（SAMM）数据集，该数据集通过两阶段流水线生成：1）应用最先进的图像操纵，2）生成与视觉欺骗相一致且上下文合理的文本叙述。基于这一基础，我们提出了检索增强的操纵检测与 grounding （RamDG）框架。RamDG 起始阶段利用外部知识库检索上下文证据，作为辅助文本，并与输入通过我们的图像伪造定位和深度操纵检测模块一起编码，以追踪所有操纵。广泛实验表明，我们的框架显著优于现有方法，在 SAMM 上实现了 2.06% 的更高检测准确性。数据集和代码可在此处公开访问。 
+
+---
+# Learning to Route: Per-Sample Adaptive Routing for Multimodal Multitask Prediction 
+
+**Title (ZH)**: 基于样本自适应路由的学习：多模态多任务预测中的自适应路由学习 
+
+**Authors**: Marzieh Ajirak, Oded Bein, Ellen Rose Bowen, Dora Kanellopoulos, Avital Falk, Faith M. Gunning, Nili Solomonov, Logan Grosenick  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.12227)  
+
+**Abstract**: We propose a unified framework for adaptive routing in multitask, multimodal prediction settings where data heterogeneity and task interactions vary across samples. Motivated by applications in psychotherapy where structured assessments and unstructured clinician notes coexist with partially missing data and correlated outcomes, we introduce a routing-based architecture that dynamically selects modality processing pathways and task-sharing strategies on a per-sample basis. Our model defines multiple modality paths, including raw and fused representations of text and numeric features and learns to route each input through the most informative expert combination. Task-specific predictions are produced by shared or independent heads depending on the routing decision, and the entire system is trained end-to-end. We evaluate the model on both synthetic data and real-world psychotherapy notes predicting depression and anxiety outcomes. Our experiments show that our method consistently outperforms fixed multitask or single-task baselines, and that the learned routing policy provides interpretable insights into modality relevance and task structure. This addresses critical challenges in personalized healthcare by enabling per-subject adaptive information processing that accounts for data heterogeneity and task correlations. Applied to psychotherapy, this framework could improve mental health outcomes, enhance treatment assignment precision, and increase clinical cost-effectiveness through personalized intervention strategies. 
+
+**Abstract (ZH)**: 一种适用于多任务多模态预测设置的自适应路由统一框架 
+
+---
