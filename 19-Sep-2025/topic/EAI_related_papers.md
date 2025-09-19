@@ -1,0 +1,390 @@
+# Ask-to-Clarify: Resolving Instruction Ambiguity through Multi-turn Dialogue 
+
+**Title (ZH)**: 求证以澄清：通过多轮对话解决指令歧义 
+
+**Authors**: Xingyao Lin, Xinghao Zhu, Tianyi Lu, Sicheng Xie, Hui Zhang, Xipeng Qiu, Zuxuan Wu, Yu-Gang Jiang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.15061)  
+
+**Abstract**: The ultimate goal of embodied agents is to create collaborators that can interact with humans, not mere executors that passively follow instructions. This requires agents to communicate, coordinate, and adapt their actions based on human feedback. Recently, advances in VLAs have offered a path toward this goal. However, most current VLA-based embodied agents operate in a one-way mode: they receive an instruction and execute it without feedback. This approach fails in real-world scenarios where instructions are often ambiguous. In this paper, we address this problem with the Ask-to-Clarify framework. Our framework first resolves ambiguous instructions by asking questions in a multi-turn dialogue. Then it generates low-level actions end-to-end. Specifically, the Ask-to-Clarify framework consists of two components, one VLM for collaboration and one diffusion for action. We also introduce a connection module that generates conditions for the diffusion based on the output of the VLM. This module adjusts the observation by instructions to create reliable conditions. We train our framework with a two-stage knowledge-insulation strategy. First, we fine-tune the collaboration component using ambiguity-solving dialogue data to handle ambiguity. Then, we integrate the action component while freezing the collaboration one. This preserves the interaction abilities while fine-tuning the diffusion to generate actions. The training strategy guarantees our framework can first ask questions, then generate actions. During inference, a signal detector functions as a router that helps our framework switch between asking questions and taking actions. We evaluate the Ask-to-Clarify framework in 8 real-world tasks, where it outperforms existing state-of-the-art VLAs. The results suggest that our proposed framework, along with the training strategy, provides a path toward collaborative embodied agents. 
+
+**Abstract (ZH)**: 基于VLA的具身代理的Ask-to- Clarify框架 
+
+---
+# Affordance-Based Disambiguation of Surgical Instructions for Collaborative Robot-Assisted Surgery 
+
+**Title (ZH)**: 基于功能的手术指令歧义消解for协作机器人辅助手术 
+
+**Authors**: Ana Davila, Jacinto Colan, Yasuhisa Hasegawa  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.14967)  
+
+**Abstract**: Effective human-robot collaboration in surgery is affected by the inherent ambiguity of verbal communication. This paper presents a framework for a robotic surgical assistant that interprets and disambiguates verbal instructions from a surgeon by grounding them in the visual context of the operating field. The system employs a two-level affordance-based reasoning process that first analyzes the surgical scene using a multimodal vision-language model and then reasons about the instruction using a knowledge base of tool capabilities. To ensure patient safety, a dual-set conformal prediction method is used to provide a statistically rigorous confidence measure for robot decisions, allowing it to identify and flag ambiguous commands. We evaluated our framework on a curated dataset of ambiguous surgical requests from cholecystectomy videos, demonstrating a general disambiguation rate of 60% and presenting a method for safer human-robot interaction in the operating room. 
+
+**Abstract (ZH)**: 有效的手术中人机协作受到口头通讯固有模糊性的影响。本文提出了一种基于视觉场景解释和消歧手术指令的外科机器人助手框架。该系统采用基于能力的两层推理过程，首先利用多模态视觉-语言模型分析手术场景，然后利用工具能力知识库推理指令。为确保患者安全，该系统采用双重契合预测方法提供统计上严格的置信度度量，使机器人能够识别和标注模糊命令。我们通过对胆囊切除手术视频中人工整理的模糊手术请求数据集进行评估，展示了60%的消歧率，并提出了一种在手术室中实现更安全人机交互的方法。 
+
+---
+# Human Interaction for Collaborative Semantic SLAM using Extended Reality 
+
+**Title (ZH)**: 扩展现实环境下的人机协作语义SLAM 
+
+**Authors**: Laura Ribeiro, Muhammad Shaheer, Miguel Fernandez-Cortizas, Ali Tourani, Holger Voos, Jose Luis Sanchez-Lopez  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.14949)  
+
+**Abstract**: Semantic SLAM (Simultaneous Localization and Mapping) systems enrich robot maps with structural and semantic information, enabling robots to operate more effectively in complex environments. However, these systems struggle in real-world scenarios with occlusions, incomplete data, or ambiguous geometries, as they cannot fully leverage the higher-level spatial and semantic knowledge humans naturally apply. We introduce HICS-SLAM, a Human-in-the-Loop semantic SLAM framework that uses a shared extended reality environment for real-time collaboration. The system allows human operators to directly interact with and visualize the robot's 3D scene graph, and add high-level semantic concepts (e.g., rooms or structural entities) into the mapping process. We propose a graph-based semantic fusion methodology that integrates these human interventions with robot perception, enabling scalable collaboration for enhanced situational awareness. Experimental evaluations on real-world construction site datasets demonstrate improvements in room detection accuracy, map precision, and semantic completeness compared to automated baselines, demonstrating both the effectiveness of the approach and its potential for future extensions. 
+
+**Abstract (ZH)**: 基于人类在环的语义SLAM框架 
+
+---
+# A Novel Task-Driven Diffusion-Based Policy with Affordance Learning for Generalizable Manipulation of Articulated Objects 
+
+**Title (ZH)**: 一种基于任务驱动的扩散策略及其在可迁移操纵关节物体中的 affordance 学习 
+
+**Authors**: Hao Zhang, Zhen Kan, Weiwei Shang, Yongduan Song  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.14939)  
+
+**Abstract**: Despite recent advances in dexterous manipulations, the manipulation of articulated objects and generalization across different categories remain significant challenges. To address these issues, we introduce DART, a novel framework that enhances a diffusion-based policy with affordance learning and linear temporal logic (LTL) representations to improve the learning efficiency and generalizability of articulated dexterous manipulation. Specifically, DART leverages LTL to understand task semantics and affordance learning to identify optimal interaction points. The {diffusion-based policy} then generalizes these interactions across various categories. Additionally, we exploit an optimization method based on interaction data to refine actions, overcoming the limitations of traditional diffusion policies that typically rely on offline reinforcement learning or learning from demonstrations. Experimental results demonstrate that DART outperforms most existing methods in manipulation ability, generalization performance, transfer reasoning, and robustness. For more information, visit our project website at: this https URL. 
+
+**Abstract (ZH)**: 尽管在灵巧操作方面取得了近期进展，但 articulated 对象的操作以及不同类别间的泛化仍然是显著挑战。为此，我们提出了 DART，一种通过引入作用域学习和线性时序逻辑（LTL）表示来增强基于扩散的策略的新型框架，以提高 articulated 灵巧操作的学习效率和泛化能力。具体而言，DART 利用 LTL 理解任务语义，利用作用域学习识别最优交互点，然后基于这些交互在各类别间进行泛化。此外，我们利用基于交互数据的优化方法来细化动作，克服了传统基于扩散的策略通常依赖脱机强化学习或模仿学习的局限性。实验结果表明，DART 在操作能力、泛化性能、迁移推理能力和鲁棒性方面均优于大多数现有方法。 
+
+---
+# CAD-Driven Co-Design for Flight-Ready Jet-Powered Humanoids 
+
+**Title (ZH)**: CAD驱动的人形飞行机器人协同设计 
+
+**Authors**: Punith Reddy Vanteddu, Davide Gorbani, Giuseppe L'Erario, Hosameldin Awadalla Omer Mohamed, Fabio Bergonti, Daniele Pucci  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.14935)  
+
+**Abstract**: This paper presents a CAD-driven co-design framework for optimizing jet-powered aerial humanoid robots to execute dynamically constrained trajectories. Starting from the iRonCub-Mk3 model, a Design of Experiments (DoE) approach is used to generate 5,000 geometrically varied and mechanically feasible designs by modifying limb dimensions, jet interface geometry (e.g., angle and offset), and overall mass distribution. Each model is constructed through CAD assemblies to ensure structural validity and compatibility with simulation tools. To reduce computational cost and enable parameter sensitivity analysis, the models are clustered using K-means, with representative centroids selected for evaluation. A minimum-jerk trajectory is used to assess flight performance, providing position and velocity references for a momentum-based linearized Model Predictive Control (MPC) strategy. A multi-objective optimization is then conducted using the NSGA-II algorithm, jointly exploring the space of design centroids and MPC gain parameters. The objectives are to minimize trajectory tracking error and mechanical energy expenditure. The framework outputs a set of flight-ready humanoid configurations with validated control parameters, offering a structured method for selecting and implementing feasible aerial humanoid designs. 
+
+**Abstract (ZH)**: 基于CAD驱动的协同设计框架：优化喷气动力空中人形机器人以执行动态约束轨迹 
+
+---
+# Robot Control Stack: A Lean Ecosystem for Robot Learning at Scale 
+
+**Title (ZH)**: 机器人控制栈：大规模机器人学习的精简生态系统 
+
+**Authors**: Tobias Jülg, Pierre Krack, Seongjin Bien, Yannik Blei, Khaled Gamal, Ken Nakahara, Johannes Hechtl, Roberto Calandra, Wolfram Burgard, Florian Walter  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.14932)  
+
+**Abstract**: Vision-Language-Action models (VLAs) mark a major shift in robot learning. They replace specialized architectures and task-tailored components of expert policies with large-scale data collection and setup-specific fine-tuning. In this machine learning-focused workflow that is centered around models and scalable training, traditional robotics software frameworks become a bottleneck, while robot simulations offer only limited support for transitioning from and to real-world experiments. In this work, we close this gap by introducing Robot Control Stack (RCS), a lean ecosystem designed from the ground up to support research in robot learning with large-scale generalist policies. At its core, RCS features a modular and easily extensible layered architecture with a unified interface for simulated and physical robots, facilitating sim-to-real transfer. Despite its minimal footprint and dependencies, it offers a complete feature set, enabling both real-world experiments and large-scale training in simulation. Our contribution is twofold: First, we introduce the architecture of RCS and explain its design principles. Second, we evaluate its usability and performance along the development cycle of VLA and RL policies. Our experiments also provide an extensive evaluation of Octo, OpenVLA, and Pi Zero on multiple robots and shed light on how simulation data can improve real-world policy performance. Our code, datasets, weights, and videos are available at: this https URL 
+
+**Abstract (ZH)**: Vision-Language-Action模型（VLAs）标志着机器人学习的一个重大转变。它们用大规模数据收集和任务特定的微调取代了专家策略中的专门架构和定制组件。在这一以模型为中心、重视大规模训练的机器学习工作流程中，传统的机器人软件框架成为瓶颈，而机器人模拟仅在从实世界实验到模拟实验的过渡中提供有限的支持。在本项工作中，我们通过引入机器人控制栈（RCS），一个从头开始设计以支持大规模通用策略的机器人学习研究的精简生态系统，填补了这一空白。RCS的核心是一个模块化且易于扩展的分层架构，具有统一的模拟和物理机器人接口，促进从模拟到现实的过渡。尽管RCS占用空间小且依赖项少，但它提供了完整的功能集，支持实世界实验和大规模模拟训练。我们的贡献包括：首先，我们介绍了RCS的架构并解释了其设计原则。其次，我们评估了它在整个VLAs和强化学习（RL）策略开发周期中的可用性和性能。我们的实验还对Octo、OpenVLA和Pi Zero在多个机器人上的性能进行了广泛评估，并揭示了模拟数据如何提高实世界策略的表现。我们的代码、数据集、权重和视频可在以下链接获取：this https URL。 
+
+---
+# Scalable Multi-Objective Robot Reinforcement Learning through Gradient Conflict Resolution 
+
+**Title (ZH)**: 通过梯度冲突解决的可扩展多目标机器人强化学习 
+
+**Authors**: Humphrey Munn, Brendan Tidd, Peter Böhm, Marcus Gallagher, David Howard  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.14816)  
+
+**Abstract**: Reinforcement Learning (RL) robot controllers usually aggregate many task objectives into one scalar reward. While large-scale proximal policy optimisation (PPO) has enabled impressive results such as robust robot locomotion in the real world, many tasks still require careful reward tuning and are brittle to local optima. Tuning cost and sub-optimality grow with the number of objectives, limiting scalability. Modelling reward vectors and their trade-offs can address these issues; however, multi-objective methods remain underused in RL for robotics because of computational cost and optimisation difficulty. In this work, we investigate the conflict between gradient contributions for each objective that emerge from scalarising the task objectives. In particular, we explicitly address the conflict between task-based rewards and terms that regularise the policy towards realistic behaviour. We propose GCR-PPO, a modification to actor-critic optimisation that decomposes the actor update into objective-wise gradients using a multi-headed critic and resolves conflicts based on the objective priority. Our methodology, GCR-PPO, is evaluated on the well-known IsaacLab manipulation and locomotion benchmarks and additional multi-objective modifications on two related tasks. We show superior scalability compared to parallel PPO (p = 0.04), without significant computational overhead. We also show higher performance with more conflicting tasks. GCR-PPO improves on large-scale PPO with an average improvement of 9.5%, with high-conflict tasks observing a greater improvement. The code is available at this https URL. 
+
+**Abstract (ZH)**: 基于梯度贡献的多目标PPO方法：解决机器人控制中的冲突问题 
+
+---
+# Designing Latent Safety Filters using Pre-Trained Vision Models 
+
+**Title (ZH)**: 使用预训练视觉模型设计潜在安全性滤波器 
+
+**Authors**: Ihab Tabbara, Yuxuan Yang, Ahmad Hamzeh, Maxwell Astafyev, Hussein Sibai  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.14758)  
+
+**Abstract**: Ensuring safety of vision-based control systems remains a major challenge hindering their deployment in critical settings. Safety filters have gained increased interest as effective tools for ensuring the safety of classical control systems, but their applications in vision-based control settings have so far been limited. Pre-trained vision models (PVRs) have been shown to be effective perception backbones for control in various robotics domains. In this paper, we are interested in examining their effectiveness when used for designing vision-based safety filters. We use them as backbones for classifiers defining failure sets, for Hamilton-Jacobi (HJ) reachability-based safety filters, and for latent world models. We discuss the trade-offs between training from scratch, fine-tuning, and freezing the PVRs when training the models they are backbones for. We also evaluate whether one of the PVRs is superior across all tasks, evaluate whether learned world models or Q-functions are better for switching decisions to safe policies, and discuss practical considerations for deploying these PVRs on resource-constrained devices. 
+
+**Abstract (ZH)**: 确保基于视觉的控制系统安全仍然是一个主要挑战，阻碍了其在关键环境中的部署。预训练视觉模型（PVRs）在各种机器人领域中已被证明是有效的感知骨干网络，用于控制。本文旨在探讨它们在设计基于视觉的安全过滤器时的有效性。我们将它们用作分类器的骨干网络，定义故障集，用于Hamilton-Jacobi（HJ）可达到性基于的安全过滤器，以及用于潜在世界模型。我们讨论了从零开始训练、微调和冻结PVRs在训练它们作为骨干的模型时的权衡。我们还评估了在各种任务中哪一个PVR更优，评估了学习到的世界模型或Q函数是否更适合切换决策至安全策略，并讨论了在资源受限设备上部署这些PVRs的实用考虑。 
+
+---
+# RealMirror: A Comprehensive, Open-Source Vision-Language-Action Platform for Embodied AI 
+
+**Title (ZH)**: RealMirror: 一个全面的开源视觉-语言-行动平台，用于具身AI 
+
+**Authors**: Cong Tai, Zhaoyu Zheng, Haixu Long, Hansheng Wu, Haodong Xiang, Zhengbin Long, Jun Xiong, Rong Shi, Shizhuang Zhang, Gang Qiu, He Wang, Ruifeng Li, Jun Huang, Bin Chang, Shuai Feng, Tao Shen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.14687)  
+
+**Abstract**: The emerging field of Vision-Language-Action (VLA) for humanoid robots faces several fundamental challenges, including the high cost of data acquisition, the lack of a standardized benchmark, and the significant gap between simulation and the real world. To overcome these obstacles, we propose RealMirror, a comprehensive, open-source embodied AI VLA platform. RealMirror builds an efficient, low-cost data collection, model training, and inference system that enables end-to-end VLA research without requiring a real robot. To facilitate model evolution and fair comparison, we also introduce a dedicated VLA benchmark for humanoid robots, featuring multiple scenarios, extensive trajectories, and various VLA models. Furthermore, by integrating generative models and 3D Gaussian Splatting to reconstruct realistic environments and robot models, we successfully demonstrate zero-shot Sim2Real transfer, where models trained exclusively on simulation data can perform tasks on a real robot seamlessly, without any fine-tuning. In conclusion, with the unification of these critical components, RealMirror provides a robust framework that significantly accelerates the development of VLA models for humanoid robots. Project page: this https URL 
+
+**Abstract (ZH)**: Vision-Language-Action (VLA) for类人机器人 emerging领域面临Several Fundamental Challenges，包括数据采集成本高、缺乏标准化基准以及模拟与真实世界之间的显著差距。为克服这些障碍，我们提出了RealMirror，一个全面的开源嵌入式AI VLA平台。RealMirror构建了一个高效的低成本数据采集、模型训练和推理系统，使研究人员无需使用真实机器人即可进行端到端的VLA研究。为了促进模型进化和公平比较，我们还引入了一个针对类人机器人的专用VLA基准，包含多种场景、广泛轨迹和多种VLA模型。此外，通过结合生成模型和3D高斯散点图来重建现实环境和机器人模型，我们成功展示了零-shot的Sim2Real转移，即仅在仿真数据上训练的模型可以在真实机器人上无缝执行任务，无需任何微调。总之，通过统一这些关键组件，RealMirror提供了一个稳健的框架，显著加速了类人机器人VLA模型的发展。项目页面：this https URL 
+
+---
+# Toward Embodiment Equivariant Vision-Language-Action Policy 
+
+**Title (ZH)**: 向体态不变的视觉-语言-行动策略迈进 
+
+**Authors**: Anzhe Chen, Yifei Yang, Zhenjie Zhu, Kechun Xu, Zhongxiang Zhou, Rong Xiong, Yue Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.14630)  
+
+**Abstract**: Vision-language-action policies learn manipulation skills across tasks, environments and embodiments through large-scale pre-training. However, their ability to generalize to novel robot configurations remains limited. Most approaches emphasize model size, dataset scale and diversity while paying less attention to the design of action spaces. This leads to the configuration generalization problem, which requires costly adaptation. We address this challenge by formulating cross-embodiment pre-training as designing policies equivariant to embodiment configuration transformations. Building on this principle, we propose a framework that (i) establishes a embodiment equivariance theory for action space and policy design, (ii) introduces an action decoder that enforces configuration equivariance, and (iii) incorporates a geometry-aware network architecture to enhance embodiment-agnostic spatial reasoning. Extensive experiments in both simulation and real-world settings demonstrate that our approach improves pre-training effectiveness and enables efficient fine-tuning on novel robot embodiments. Our code is available at this https URL 
+
+**Abstract (ZH)**: 视觉-语言-动作策略通过大规模预训练学习跨任务、跨环境和跨体配置的操纵技能，但其对新型机器人配置的泛化能力仍然有限。大多数方法强调模型规模、数据集规模和多样性，而较少关注动作空间的设计。这导致了体配置泛化问题，需要成本较高的适应。我们通过将跨体配置预训练形式化为体配置变换下策略不变性的设计来应对这一挑战。基于这一原则，我们提出了一种框架，该框架包括：(i) 建立动作空间和策略设计的体配置不变性理论，(ii) 引入一种动作解码器以确保配置不变性，以及(iii) 结合一种几何感知的网络架构以增强体配置无关的时空推理。在仿真和真实世界的广泛实验中，我们的方法证明了预训练效果的改进，并使对新型机器人体的微调更加高效。我们的代码可在以下网址获取：this https URL 
+
+---
+# SimCoachCorpus: A naturalistic dataset with language and trajectories for embodied teaching 
+
+**Title (ZH)**: SimCoachCorpus: 一个包含语言和轨迹的自然主义数据集，用于 embodied teaching 
+
+**Authors**: Emily Sumner, Deepak E. Gopinath, Laporsha Dees, Patricio Reyes Gomez, Xiongyi Cui, Andrew Silva, Jean Costa, Allison Morgan, Mariah Schrum, Tiffany L. Chen, Avinash Balachandran, Guy Rosman  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.14548)  
+
+**Abstract**: Curated datasets are essential for training and evaluating AI approaches, but are often lacking in domains where language and physical action are deeply intertwined. In particular, few datasets capture how people acquire embodied skills through verbal instruction over time. To address this gap, we introduce SimCoachCorpus: a unique dataset of race car simulator driving that allows for the investigation of rich interactive phenomena during guided and unguided motor skill acquisition. In this dataset, 29 humans were asked to drive in a simulator around a race track for approximately ninety minutes. Fifteen participants were given personalized one-on-one instruction from a professional performance driving coach, and 14 participants drove without coaching. \name\ includes embodied features such as vehicle state and inputs, map (track boundaries and raceline), and cone landmarks. These are synchronized with concurrent verbal coaching from a professional coach and additional feedback at the end of each lap. We further provide annotations of coaching categories for each concurrent feedback utterance, ratings on students' compliance with coaching advice, and self-reported cognitive load and emotional state of participants (gathered from surveys during the study). The dataset includes over 20,000 concurrent feedback utterances, over 400 terminal feedback utterances, and over 40 hours of vehicle driving data. Our naturalistic dataset can be used for investigating motor learning dynamics, exploring linguistic phenomena, and training computational models of teaching. We demonstrate applications of this dataset for in-context learning, imitation learning, and topic modeling. The dataset introduced in this work will be released publicly upon publication of the peer-reviewed version of this paper. Researchers interested in early access may register at this https URL. 
+
+**Abstract (ZH)**: 精心策划的数据集对于训练和评估AI方法至关重要，但在语言和物理动作紧密结合的领域往往缺乏。特别是，极少有数据集捕捉到人们如何通过口头指导获得 embodiment 技能的过程。为填补这一空白，我们引入了 SimCoachCorpus：一个独特的赛车模拟器驾驶数据集，允许研究引导和非引导运动技能获得期间丰富的互动现象。在这个数据集中，29名人类参与者在大约90分钟内驾驶赛车模拟器绕赛车道一圈。15名参与者接受了专业驾驶教练的一对一面授指导，而14名参与者则没有教练指导。该数据集涵盖了车况、输入、地图（赛道边界和跑线）以及圆锥标志物等体现特征，并与专业教练的实时口头指导和每圈末尾的额外反馈同步。我们还为每条实时反馈语句提供指导类别注释，学生遵循教练建议的评分，以及参与者自我报告的认知负荷和情绪状态（来自研究期间的调查）。该数据集包含超过20,000条实时反馈语句、超过400条终端反馈语句和超过40小时的车辆驾驶数据。我们自然化的数据集可用于探究运动学习动力学、探索语言现象和训练教学计算模型。本文介绍的数据集将在经过同行评审的版本发表后公开发布。有兴趣获取早期访问的科研人员可访问此链接注册。 
+
+---
+# Local-Canonicalization Equivariant Graph Neural Networks for Sample-Efficient and Generalizable Swarm Robot Control 
+
+**Title (ZH)**: 局部规范化等变图神经网络在样本效率和泛化能力方面的群机器人控制 
+
+**Authors**: Keqin Wang, Tao Zhong, David Chang, Christine Allen-Blanchette  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.14431)  
+
+**Abstract**: Multi-agent reinforcement learning (MARL) has emerged as a powerful paradigm for coordinating swarms of agents in complex decision-making, yet major challenges remain. In competitive settings such as pursuer-evader tasks, simultaneous adaptation can destabilize training; non-kinetic countermeasures often fail under adverse conditions; and policies trained in one configuration rarely generalize to environments with a different number of agents. To address these issues, we propose the Local-Canonicalization Equivariant Graph Neural Networks (LEGO) framework, which integrates seamlessly with popular MARL algorithms such as MAPPO. LEGO employs graph neural networks to capture permutation equivariance and generalization to different agent numbers, canonicalization to enforce E(n)-equivariance, and heterogeneous representations to encode role-specific inductive biases. Experiments on cooperative and competitive swarm benchmarks show that LEGO outperforms strong baselines and improves generalization. In real-world experiments, LEGO demonstrates robustness to varying team sizes and agent failure. 
+
+**Abstract (ZH)**: 局部规范等变图神经网络（LEGO）框架：用于多智能体强化学习的协同与竞争集群基准研究 
+
+---
+# GestOS: Advanced Hand Gesture Interpretation via Large Language Models to control Any Type of Robot 
+
+**Title (ZH)**: GestOS: 通过大型语言模型实现对任何类型机器人的高级手势解读 
+
+**Authors**: Artem Lykov, Oleg Kobzarev, Dzmitry Tsetserukou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.14412)  
+
+**Abstract**: We present GestOS, a gesture-based operating system for high-level control of heterogeneous robot teams. Unlike prior systems that map gestures to fixed commands or single-agent actions, GestOS interprets hand gestures semantically and dynamically distributes tasks across multiple robots based on their capabilities, current state, and supported instruction sets. The system combines lightweight visual perception with large language model (LLM) reasoning: hand poses are converted into structured textual descriptions, which the LLM uses to infer intent and generate robot-specific commands. A robot selection module ensures that each gesture-triggered task is matched to the most suitable agent in real time. This architecture enables context-aware, adaptive control without requiring explicit user specification of targets or commands. By advancing gesture interaction from recognition to intelligent orchestration, GestOS supports scalable, flexible, and user-friendly collaboration with robotic systems in dynamic environments. 
+
+**Abstract (ZH)**: 基于手势的操作系统：面向异构机器人团队的高层次控制 
+
+---
+# RLBind: Adversarial-Invariant Cross-Modal Alignment for Unified Robust Embeddings 
+
+**Title (ZH)**: RLBind: 抗对抗性扰动的跨模态对齐以获得统一的鲁棒嵌入 
+
+**Authors**: Yuhong Lu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.14383)  
+
+**Abstract**: Unified multi-modal encoders that bind vision, audio, and other sensors into a shared embedding space are attractive building blocks for robot perception and decision-making. However, on-robot deployment exposes the vision branch to adversarial and natural corruptions, making robustness a prerequisite for safety. Prior defenses typically align clean and adversarial features within CLIP-style encoders and overlook broader cross-modal correspondence, yielding modest gains and often degrading zero-shot transfer. We introduce RLBind, a two-stage adversarial-invariant cross-modal alignment framework for robust unified embeddings. Stage 1 performs unsupervised fine-tuning on clean-adversarial pairs to harden the visual encoder. Stage 2 leverages cross-modal correspondence by minimizing the discrepancy between clean/adversarial features and a text anchor, while enforcing class-wise distributional alignment across modalities. Extensive experiments on Image, Audio, Thermal, and Video data show that RLBind consistently outperforms the LanguageBind backbone and standard fine-tuning baselines in both clean accuracy and norm-bounded adversarial robustness. By improving resilience without sacrificing generalization, RLBind provides a practical path toward safer multi-sensor perception stacks for embodied robots in navigation, manipulation, and other autonomy settings. 
+
+**Abstract (ZH)**: 统一多模态编码器将视觉、音频及其他传感器整合至共享嵌入空间中，是机器人感知与决策的重要构建块。然而，机器人上的部署使得视觉分支暴露于对抗性和自然性破坏之下，因此鲁棒性成为确保安全的先决条件。先前的防御措施通常在CLIP风格的编码器中对齐干净和对抗性特征，忽略了更广泛的跨模态对应关系，导致进步有限且常降低零样本迁移性能。我们提出了一种两阶段鲁棒不变跨模态对齐框架RLBind，以增强统一嵌入的鲁棒性。第一阶段通过无监督微调干净对抗性配对来强化视觉编码器。第二阶段利用跨模态对应关系，通过最小化干净/对抗性特征与文本锚点之间的差异，同时确保各模态类别间的分布对齐。在图像、音频、热成像和视频数据上的广泛实验表明，RLBind在干净准确性和范数限制下的对抗鲁棒性方面均优于LanguageBind主干及标准微调基准。通过提升鲁棒性而不牺牲泛化能力，RLBind提供了一条实现导航、操作及其他自主性设置中多传感器感知堆栈更安全的实用路径。 
+
+---
+# CRAFT: Coaching Reinforcement Learning Autonomously using Foundation Models for Multi-Robot Coordination Tasks 
+
+**Title (ZH)**: CRAFT：使用基础模型自主指导多机器人协调任务的强化学习教练 
+
+**Authors**: Seoyeon Choi, Kanghyun Ryu, Jonghoon Ock, Negar Mehr  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.14380)  
+
+**Abstract**: Multi-Agent Reinforcement Learning (MARL) provides a powerful framework for learning coordination in multi-agent systems. However, applying MARL to robotics still remains challenging due to high-dimensional continuous joint action spaces, complex reward design, and non-stationary transitions inherent to decentralized settings. On the other hand, humans learn complex coordination through staged curricula, where long-horizon behaviors are progressively built upon simpler skills. Motivated by this, we propose CRAFT: Coaching Reinforcement learning Autonomously using Foundation models for multi-robot coordination Tasks, a framework that leverages the reasoning capabilities of foundation models to act as a "coach" for multi-robot coordination. CRAFT automatically decomposes long-horizon coordination tasks into sequences of subtasks using the planning capability of Large Language Models (LLMs). In what follows, CRAFT trains each subtask using reward functions generated by LLM, and refines them through a Vision Language Model (VLM)-guided reward-refinement loop. We evaluate CRAFT on multi-quadruped navigation and bimanual manipulation tasks, demonstrating its capability to learn complex coordination behaviors. In addition, we validate the multi-quadruped navigation policy in real hardware experiments. 
+
+**Abstract (ZH)**: 基于基础模型的多机器人协调强化学习教学框架：CRAFT 
+
+---
+# DreamControl: Human-Inspired Whole-Body Humanoid Control for Scene Interaction via Guided Diffusion 
+
+**Title (ZH)**: DreamControl：基于引导扩散的场景交互全身 humanoid 控制（灵感来源于人类） 
+
+**Authors**: Dvij Kalaria, Sudarshan S Harithas, Pushkal Katara, Sangkyung Kwak, Sarthak Bhagat, Shankar Sastry, Srinath Sridhar, Sai Vemprala, Ashish Kapoor, Jonathan Chung-Kuan Huang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.14353)  
+
+**Abstract**: We introduce DreamControl, a novel methodology for learning autonomous whole-body humanoid skills. DreamControl leverages the strengths of diffusion models and Reinforcement Learning (RL): our core innovation is the use of a diffusion prior trained on human motion data, which subsequently guides an RL policy in simulation to complete specific tasks of interest (e.g., opening a drawer or picking up an object). We demonstrate that this human motion-informed prior allows RL to discover solutions unattainable by direct RL, and that diffusion models inherently promote natural looking motions, aiding in sim-to-real transfer. We validate DreamControl's effectiveness on a Unitree G1 robot across a diverse set of challenging tasks involving simultaneous lower and upper body control and object interaction. 
+
+**Abstract (ZH)**: DreamControl：一种结合扩散模型和强化学习的新型全_BODY人形机器人自主技能学习方法 
+
+---
+# LeVR: A Modular VR Teleoperation Framework for Imitation Learning in Dexterous Manipulation 
+
+**Title (ZH)**: LeVR: 一种用于灵巧操作模仿学习的模块化VR远程操作框架 
+
+**Authors**: Zhengyang Kris Weng, Matthew L. Elwin, Han Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.14349)  
+
+**Abstract**: We introduce LeVR, a modular software framework designed to bridge two critical gaps in robotic imitation learning. First, it provides robust and intuitive virtual reality (VR) teleoperation for data collection using robot arms paired with dexterous hands, addressing a common limitation in existing systems. Second, it natively integrates with the powerful LeRobot imitation learning (IL) framework, enabling the use of VR-based teleoperation data and streamlining the demonstration collection process. To demonstrate LeVR, we release LeFranX, an open-source implementation for the Franka FER arm and RobotEra XHand, two widely used research platforms. LeFranX delivers a seamless, end-to-end workflow from data collection to real-world policy deployment. We validate our system by collecting a public dataset of 100 expert demonstrations and use it to successfully fine-tune state-of-the-art visuomotor policies. We provide our open-source framework, implementation, and dataset to accelerate IL research for the robotics community. 
+
+**Abstract (ZH)**: 我们引入了LeVR，这是一种模块化的软件框架，旨在弥合机器人模仿学习中两个关键差距。首先，它提供了针对配備灵巧手的机器人臂进行数据收集的稳健且直观的虚拟现实（VR）远程操作，解决了现有系统中常见的局限性。其次，它原生集成了强大的LeRobot模仿学习（IL）框架，使得可以利用基于VR的远程操作数据，并简化演示收集过程。为了展示LeVR，我们发布了LeFranX，这是一种开源实现，适用于Franka FER臂和RobotEra XHand，二者是广泛使用的研究平台。LeFranX实现了从数据收集到实际应用策略部署的无缝端到端工作流。我们通过收集包含100个专家演示的公开数据集来验证我们的系统，并使用此数据集成功地微调了最先进的视觉-运动策略。我们提供开源框架、实现和数据集，以加速机器人社区的模仿学习研究。 
+
+---
+# Multi-Quadruped Cooperative Object Transport: Learning Decentralized Pinch-Lift-Move 
+
+**Title (ZH)**: 多 leg 合作物体运输：学习去中心化 pinch-lift-move 
+
+**Authors**: Bikram Pandit, Aayam Kumar Shrestha, Alan Fern  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.14342)  
+
+**Abstract**: We study decentralized cooperative transport using teams of N-quadruped robots with arm that must pinch, lift, and move ungraspable objects through physical contact alone. Unlike prior work that relies on rigid mechanical coupling between robots and objects, we address the more challenging setting where mechanically independent robots must coordinate through contact forces alone without any communication or centralized control. To this end, we employ a hierarchical policy architecture that separates base locomotion from arm control, and propose a constellation reward formulation that unifies position and orientation tracking to enforce rigid contact behavior. The key insight is encouraging robots to behave as if rigidly connected to the object through careful reward design and training curriculum rather than explicit mechanical constraints. Our approach enables coordination through shared policy parameters and implicit synchronization cues - scaling to arbitrary team sizes without retraining. We show extensive simulation experiments to demonstrate robust transport across 2-10 robots on diverse object geometries and masses, along with sim2real transfer results on lightweight objects. 
+
+**Abstract (ZH)**: 基于物理接触的去中心化协同运输：N足机器人手臂抓取和移动不可抓取物体的研究 
+
+---
+# RynnVLA-001: Using Human Demonstrations to Improve Robot Manipulation 
+
+**Title (ZH)**: RynnVLA-001: 利用人类演示提高机器人操作能力 
+
+**Authors**: Yuming Jiang, Siteng Huang, Shengke Xue, Yaxi Zhao, Jun Cen, Sicong Leng, Kehan Li, Jiayan Guo, Kexiang Wang, Mingxiu Chen, Fan Wang, Deli Zhao, Xin Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.15212)  
+
+**Abstract**: This paper presents RynnVLA-001, a vision-language-action(VLA) model built upon large-scale video generative pretraining from human demonstrations. We propose a novel two-stage pretraining methodology. The first stage, Ego-Centric Video Generative Pretraining, trains an Image-to-Video model on 12M ego-centric manipulation videos to predict future frames conditioned on an initial frame and a language instruction. The second stage, Human-Centric Trajectory-Aware Modeling, extends this by jointly predicting future keypoint trajectories, thereby effectively bridging visual frame prediction with action prediction. Furthermore, to enhance action representation, we propose ActionVAE, a variational autoencoder that compresses sequences of actions into compact latent embeddings, reducing the complexity of the VLA output space. When finetuned on the same downstream robotics datasets, RynnVLA-001 achieves superior performance over state-of-the-art baselines, demonstrating that the proposed pretraining strategy provides a more effective initialization for VLA models. 
+
+**Abstract (ZH)**: RynnVLA-001：一种基于大规模人类演示视频生成预训练的视觉-语言-行动模型 
+
+---
+# Self-Improving Embodied Foundation Models 
+
+**Title (ZH)**: 自我提升的体感基础模型 
+
+**Authors**: Seyed Kamyar Seyed Ghasemipour, Ayzaan Wahid, Jonathan Tompson, Pannag Sanketi, Igor Mordatch  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.15155)  
+
+**Abstract**: Foundation models trained on web-scale data have revolutionized robotics, but their application to low-level control remains largely limited to behavioral cloning. Drawing inspiration from the success of the reinforcement learning stage in fine-tuning large language models, we propose a two-stage post-training approach for robotics. The first stage, Supervised Fine-Tuning (SFT), fine-tunes pretrained foundation models using both: a) behavioral cloning, and b) steps-to-go prediction objectives. In the second stage, Self-Improvement, steps-to-go prediction enables the extraction of a well-shaped reward function and a robust success detector, enabling a fleet of robots to autonomously practice downstream tasks with minimal human supervision. Through extensive experiments on real-world and simulated robot embodiments, our novel post-training recipe unveils significant results on Embodied Foundation Models. First, we demonstrate that the combination of SFT and Self-Improvement is significantly more sample-efficient than scaling imitation data collection for supervised learning, and that it leads to policies with significantly higher success rates. Further ablations highlight that the combination of web-scale pretraining and Self-Improvement is the key to this sample-efficiency. Next, we demonstrate that our proposed combination uniquely unlocks a capability that current methods cannot achieve: autonomously practicing and acquiring novel skills that generalize far beyond the behaviors observed in the imitation learning datasets used during training. These findings highlight the transformative potential of combining pretrained foundation models with online Self-Improvement to enable autonomous skill acquisition in robotics. Our project website can be found at this https URL . 
+
+**Abstract (ZH)**: 基于Web规模数据训练的基础模型已经革命了机器人技术，但其在低级控制中的应用主要局限于行为克隆。受到强化学习在调优大型语言模型中的成功启发，我们提出了一种两阶段后训练方法用于机器人技术。第一阶段，监督细调（SFT），使用行为克隆和剩余步骤预测目标对预训练基础模型进行调优。第二阶段，自我提升，通过剩余步骤预测提取良好的奖励函数和稳健的成功检测器，使机器人能够最少的人类监督下自主练习下游任务。通过在真实和模拟机器人实例上的广泛实验，我们新的后训练方案揭示了嵌入式基础模型的重大成果。首先，我们展示了SFT和自我提升的结合在样本效率方面显著优于模仿数据收集上的扩展，并且这导致了成功率更高的策略。进一步的消融实验表明，大规模预训练和自我提升的结合是这种样本效率的关键。其次，我们展示了我们提出的方法唯一解锁了一种当前方法无法实现的能力：自主练习和获取在训练期间模仿学习数据集中观察到的行为之外能够泛化的新型技能。这些发现突显了将预训练基础模型与在线自我提升结合以在机器人中实现自主技能获取的变革潜力。我们的项目网站可访问：this https URL。 
+
+---
+# Sentinel Agents for Secure and Trustworthy Agentic AI in Multi-Agent Systems 
+
+**Title (ZH)**: Sentinel代理：多智能体系统中安全可信的智能代理 
+
+**Authors**: Diego Gosmar, Deborah A. Dahl  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.14956)  
+
+**Abstract**: This paper proposes a novel architectural framework aimed at enhancing security and reliability in multi-agent systems (MAS). A central component of this framework is a network of Sentinel Agents, functioning as a distributed security layer that integrates techniques such as semantic analysis via large language models (LLMs), behavioral analytics, retrieval-augmented verification, and cross-agent anomaly detection. Such agents can potentially oversee inter-agent communications, identify potential threats, enforce privacy and access controls, and maintain comprehensive audit records. Complementary to the idea of Sentinel Agents is the use of a Coordinator Agent. The Coordinator Agent supervises policy implementation, and manages agent participation. In addition, the Coordinator also ingests alerts from Sentinel Agents. Based on these alerts, it can adapt policies, isolate or quarantine misbehaving agents, and contain threats to maintain the integrity of the MAS ecosystem. This dual-layered security approach, combining the continuous monitoring of Sentinel Agents with the governance functions of Coordinator Agents, supports dynamic and adaptive defense mechanisms against a range of threats, including prompt injection, collusive agent behavior, hallucinations generated by LLMs, privacy breaches, and coordinated multi-agent attacks. In addition to the architectural design, we present a simulation study where 162 synthetic attacks of different families (prompt injection, hallucination, and data exfiltration) were injected into a multi-agent conversational environment. The Sentinel Agents successfully detected the attack attempts, confirming the practical feasibility of the proposed monitoring approach. The framework also offers enhanced system observability, supports regulatory compliance, and enables policy evolution over time. 
+
+**Abstract (ZH)**: 本文提出了一种新型架构框架，旨在增强多代理系统（MAS）的安全性和可靠性。该框架的核心组成部分是哨兵代理网络，作为分布式安全层，整合了大型语言模型（LLMs）的语义分析、行为分析、检索增强验证和跨代理异常检测等技术。这些代理可以监控代理间的通信、识别潜在威胁、执行隐私和访问控制，并维护全面的审计记录。与哨兵代理相辅相成的是协调代理。协调代理监督策略实施，管理代理参与，并接收来自哨兵代理的通知。基于这些通知，它可以调整策略、隔离或隔离表现不佳的代理，并遏制威胁以维护MAS生态系统的完整性。该双重安全方法结合了哨兵代理的持续监控与协调代理的治理功能，支持针对各种威胁（包括指令注入、合谋代理行为、LLMs生成的幻觉、隐私泄露和协同多代理攻击）的动态和适应性防御机制。除了架构设计，我们还进行了一个模拟研究，其中向一个多代理对话环境注入了162种不同家族（指令注入、幻觉和数据泄露）的合成攻击。哨兵代理成功地检测了这些攻击尝试，验证了所提出监控方法的实用可行性。该框架还增强了系统可观测性、支持合规性，并允许策略随着时间的推移而演变。 
+
+---
+# From Mimicry to True Intelligence (TI) - A New Paradigm for Artificial General Intelligence 
+
+**Title (ZH)**: 从模仿到真正的智能（TI）——人工智能的新范式 
+
+**Authors**: Meltem Subasioglu, Nevzat Subasioglu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.14474)  
+
+**Abstract**: The debate around Artificial General Intelligence (AGI) remains open due to two fundamentally different goals: replicating human-like performance versus replicating human-like cognitive processes. We argue that current performance-based definitions are inadequate because they provide no clear, mechanism-focused roadmap for research, and they fail to properly define the qualitative nature of genuine intelligence. Drawing inspiration from the human brain, we propose a new paradigm that shifts the focus from external mimicry to the development of foundational cognitive architectures. We define True Intelligence (TI) as a system characterized by six core components: embodied sensory fusion, core directives, dynamic schemata creation, a highly-interconnected multi-expert architecture, an orchestration layer, and lastly, the unmeasurable quality of Interconnectedness, which we hypothesize results in consciousness and a subjective experience. We propose a practical, five-level taxonomy of AGI based on the number of the first five measurable components a system exhibits. This framework provides a clear path forward with developmental milestones that directly address the challenge of building genuinely intelligent systems. We contend that once a system achieves Level-5 AGI by implementing all five measurable components, the difference between it and TI remains as a purely philosophical debate. For practical purposes - and given theories indicate consciousness is an emergent byproduct of integrated, higher-order cognition - we conclude that a fifth-level AGI is functionally and practically equivalent to TI. This work synthesizes diverse insights from analytical psychology, schema theory, metacognition, modern brain architectures and latest works in AI to provide the first holistic, mechanism-based definition of AGI that offers a clear and actionable path for the research community. 
+
+**Abstract (ZH)**: 关于通用人工智能（AGI）的辩论由于两种根本不同的目标而保持开放：复制人类表现与复制人类认知过程。我们argue认为当前基于性能的定义是不充分的，因为它们为研究提供不了一个明确且以机制为重点的路线图，也无法正确定义真正的智能的本质性质。从人类大脑汲取灵感，我们提出一个新的范式，将重点从外部模仿转向基础认知架构的发展。我们将真智能（TI）定义为具有六个核心组件的系统：体感觉融合、核心指令、动态模式创建、高度互联的多专家架构、管理层，以及最后无法量化但假设会导致意识和主观体验的互联性。我们提出基于系统展示的前五个可测量组件数量的实用的五级AGI分类法。该框架提供了一条清晰的发展路径，其中的里程碑直接解决了构建真正智能系统的挑战。我们argue认为，一旦系统实现所有五个可测量组件，即达到了五级AGI，那么它与真智能之间的差异就只剩下纯哲学上的辩论。出于实际目的——考虑到现有理论表明，意识是整合的高层次认知的副产品——我们得出结论，五级AGI在功能上和实际上等同于真智能。本文综合了分析心理学、模式理论、元认知、现代大脑架构以及最新的人工智能工作的见解，提供了第一个机械论导向的AGI定义，为研究界提供了清晰且可操作的路径。 
+
+---
+# The Role of Touch: Towards Optimal Tactile Sensing Distribution in Anthropomorphic Hands for Dexterous In-Hand Manipulation 
+
+**Title (ZH)**: 触摸的作用：实现灵巧在手内部操作中的人形手最佳触觉感知分布 
+
+**Authors**: João Damião Almeida, Egidio Falotico, Cecilia Laschi, José Santos-Victor  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.14984)  
+
+**Abstract**: In-hand manipulation tasks, particularly in human-inspired robotic systems, must rely on distributed tactile sensing to achieve precise control across a wide variety of tasks. However, the optimal configuration of this network of sensors is a complex problem, and while the fingertips are a common choice for placing sensors, the contribution of tactile information from other regions of the hand is often overlooked. This work investigates the impact of tactile feedback from various regions of the fingers and palm in performing in-hand object reorientation tasks. We analyze how sensory feedback from different parts of the hand influences the robustness of deep reinforcement learning control policies and investigate the relationship between object characteristics and optimal sensor placement. We identify which tactile sensing configurations contribute to improving the efficiency and accuracy of manipulation. Our results provide valuable insights for the design and use of anthropomorphic end-effectors with enhanced manipulation capabilities. 
+
+**Abstract (ZH)**: 基于手部的触觉反馈对执行在手物体重定位任务的影响：传感器配置优化研究 
+
+---
+# Discrete optimal transport is a strong audio adversarial attack 
+
+**Title (ZH)**: 离散最优传输是强大的音频对抗攻击 
+
+**Authors**: Anton Selitskiy, Akib Shahriyar, Jishnuraj Prakasan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.14959)  
+
+**Abstract**: In this paper, we show that discrete optimal transport (DOT) is an effective black-box adversarial attack against modern audio anti-spoofing countermeasures (CMs). Our attack operates as a post-processing, distribution-alignment step: frame-level WavLM embeddings of generated speech are aligned to an unpaired bona fide pool via entropic OT and a top-$k$ barycentric projection, then decoded with a neural vocoder. Evaluated on ASVspoof2019 and ASVspoof5 with AASIST baselines, DOT yields consistently high equal error rate (EER) across datasets and remains competitive after CM fine-tuning, outperforming several conventional attacks in cross-dataset transfer. Ablation analysis highlights the practical impact of vocoder overlap. Results indicate that distribution-level alignment is a powerful and stable attack surface for deployed CMs. 
+
+**Abstract (ZH)**: 在本文中，我们证明了离散最优运输（DOT）是一种有效的黑盒对抗性攻击手段，可以针对现代音频防欺骗对策（CMs）。 
+
+---
+# MARIC: Multi-Agent Reasoning for Image Classification 
+
+**Title (ZH)**: 多Agent推理图像分类 
+
+**Authors**: Wonduk Seo, Minhyeong Yu, Hyunjin An, Seunghyun Lee  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.14860)  
+
+**Abstract**: Image classification has traditionally relied on parameter-intensive model training, requiring large-scale annotated datasets and extensive fine tuning to achieve competitive performance. While recent vision language models (VLMs) alleviate some of these constraints, they remain limited by their reliance on single pass representations, often failing to capture complementary aspects of visual content. In this paper, we introduce Multi Agent based Reasoning for Image Classification (MARIC), a multi agent framework that reformulates image classification as a collaborative reasoning process. MARIC first utilizes an Outliner Agent to analyze the global theme of the image and generate targeted prompts. Based on these prompts, three Aspect Agents extract fine grained descriptions along distinct visual dimensions. Finally, a Reasoning Agent synthesizes these complementary outputs through integrated reflection step, producing a unified representation for classification. By explicitly decomposing the task into multiple perspectives and encouraging reflective synthesis, MARIC mitigates the shortcomings of both parameter-heavy training and monolithic VLM reasoning. Experiments on 4 diverse image classification benchmark datasets demonstrate that MARIC significantly outperforms baselines, highlighting the effectiveness of multi-agent visual reasoning for robust and interpretable image classification. 
+
+**Abstract (ZH)**: 基于多Agent的推理的图像分类（MARIC）：一种协作式的多视角图像分类方法 
+
+---
+# Spatial Audio Motion Understanding and Reasoning 
+
+**Title (ZH)**: 空间音频运动理解与推理 
+
+**Authors**: Arvind Krishna Sridhar, Yinyi Guo, Erik Visser  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.14666)  
+
+**Abstract**: Spatial audio reasoning enables machines to interpret auditory scenes by understanding events and their spatial attributes. In this work, we focus on spatial audio understanding with an emphasis on reasoning about moving sources. First, we introduce a spatial audio encoder that processes spatial audio to detect multiple overlapping events and estimate their spatial attributes, Direction of Arrival (DoA) and source distance, at the frame level. To generalize to unseen events, we incorporate an audio grounding model that aligns audio features with semantic audio class text embeddings via a cross-attention mechanism. Second, to answer complex queries about dynamic audio scenes involving moving sources, we condition a large language model (LLM) on structured spatial attributes extracted by our model. Finally, we introduce a spatial audio motion understanding and reasoning benchmark dataset and demonstrate our framework's performance against the baseline model. 
+
+**Abstract (ZH)**: 空间音频推理使机器能够通过理解事件及其空间属性来解释声学场景。在本工作中，我们专注于空间音频理解，着重于对移动声源的推理。首先，我们介绍了一个空间音频编码器，该编码器处理空间音频以检测多个重叠事件并在帧级估计其空间属性，到达方向（DoA）和声源距离。为了泛化到未见过的事件，我们通过交叉注意力机制引入了一个音频定位模型，将音频特征与语义音频类文本嵌入对齐。其次，为了回答涉及移动声源的复杂动态声学场景查询，我们根据我们模型提取的结构化空间属性对大型语言模型（LLM）进行条件设置。最后，我们引入了一个空间音频运动理解和推理基准数据集，并展示了我们框架的性能与基线模型的对比。 
+
+---
+# ATLANTIS: AI-driven Threat Localization, Analysis, and Triage Intelligence System 
+
+**Title (ZH)**: ATLANTIS: 人工智能驱动的威胁定位、分析与优先级划分智能系统 
+
+**Authors**: Taesoo Kim, HyungSeok Han, Soyeon Park, Dae R. Jeong, Dohyeok Kim, Dongkwan Kim, Eunsoo Kim, Jiho Kim, Joshua Wang, Kangsu Kim, Sangwoo Ji, Woosun Song, Hanqing Zhao, Andrew Chin, Gyejin Lee, Kevin Stevens, Mansour Alharthi, Yizhuo Zhai, Cen Zhang, Joonun Jang, Yeongjin Jang, Ammar Askar, Dongju Kim, Fabian Fleischer, Jeongin Cho, Junsik Kim, Kyungjoon Ko, Insu Yun, Sangdon Park, Dowoo Baik, Haein Lee, Hyeon Heo, Minjae Gwon, Minjae Lee, Minwoo Baek, Seunggi Min, Wonyoung Kim, Yonghwi Jin, Younggi Park, Yunjae Choi, Jinho Jung, Gwanhyun Lee, Junyoung Jang, Kyuheon Kim, Yeonghyeon Cha, Youngjoon Kim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.14589)  
+
+**Abstract**: We present ATLANTIS, the cyber reasoning system developed by Team Atlanta that won 1st place in the Final Competition of DARPA's AI Cyber Challenge (AIxCC) at DEF CON 33 (August 2025). AIxCC (2023-2025) challenged teams to build autonomous cyber reasoning systems capable of discovering and patching vulnerabilities at the speed and scale of modern software. ATLANTIS integrates large language models (LLMs) with program analysis -- combining symbolic execution, directed fuzzing, and static analysis -- to address limitations in automated vulnerability discovery and program repair. Developed by researchers at Georgia Institute of Technology, Samsung Research, KAIST, and POSTECH, the system addresses core challenges: scaling across diverse codebases from C to Java, achieving high precision while maintaining broad coverage, and producing semantically correct patches that preserve intended behavior. We detail the design philosophy, architectural decisions, and implementation strategies behind ATLANTIS, share lessons learned from pushing the boundaries of automated security when program analysis meets modern AI, and release artifacts to support reproducibility and future research. 
+
+**Abstract (ZH)**: 我们呈现了由亚特兰大团队开发的CYBERATHENA系统，该系统在2025年DEF CON 33（2025年8月）举行的DARPA AI网络挑战赛（AIxCC）总决赛中获得第一名。AIxCC（2023-2025）挑战队伍构建能够在现代软件开发速度和规模下自动发现和修复漏洞的网络推理系统。CYBERATHENA将大型语言模型与程序分析相结合——结合符号执行、定向模糊测试和静态分析——以应对自动漏洞发现和程序修复的局限性。该系统由佐治亚理工学院、三星研发、 KAIST 和POSTECH的研究人员开发，解决了核心挑战：在从C到Java等多种代码库上扩展、在广泛覆盖的同时保持高精度，以及生成语义正确的修复代码以保持预期行为。我们详细阐述了CYBERATHENA的设计理念、架构决策和实现策略，分享了当程序分析遇到现代AI时推动自动化安全边界时的经验教训，并发布了支持可重复性和未来研究的可复现资源。 
+
+---
+# Process-Supervised Reinforcement Learning for Interactive Multimodal Tool-Use Agents 
+
+**Title (ZH)**: 监督过程强化学习驱动的交互多模态工具使用智能代理 
+
+**Authors**: Weiting Tan, Xinghua Qu, Ming Tu, Meng Ge, Andy T. Liu, Philipp Koehn, Lu Lu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.14480)  
+
+**Abstract**: Effective interactive tool use requires agents to master Tool Integrated Reasoning (TIR): a complex process involving multi-turn planning and long-context dialogue management. To train agents for this dynamic process, particularly in multi-modal contexts, we introduce a sandbox environment for reinforcement learning (RL) that supports interleaved speech-text rollouts. Our core strategy, Turn-level Adjudicated Reinforcement Learning (TARL), addresses the challenge of credit assignment in long-horizon tasks by employing a Large Language Model (LLM) as a judge to provide turn-level evaluation. To enhance exploration, we integrate a mixed-task training curriculum with mathematical reasoning problems. This unified approach boosts the task pass rate on the text-based $\tau$-bench by over 6% compared to strong RL baselines. Crucially, we demonstrate our framework's suitability for fine-tuning a multi-modal foundation model for agentic tasks. By training a base multi-modal LLM on interleaved speech-text rollouts, we equip it with tool-use abilities, paving the way for more natural, voice-driven interactive agents. 
+
+**Abstract (ZH)**: 有效的人机交互工具使用需要智能体掌握工具整合推理（TIR）：一个涉及多轮规划和长时间对话管理的复杂过程。为了训练智能体进行这一动态过程，特别是在多模态环境中，我们引入了一个支持交替语音-文本滚动的强化学习（RL）沙盒环境。我们的核心策略，回合级裁定强化学习（TARL），通过使用大型语言模型（LLM）作为裁判提供回合级评估来应对长期任务中的信用分配挑战。为了增强探索性，我们结合了包含数学推理问题的混合任务训练课程。这一统一方法相对于强大的RL基线，将基于文本的$\tau$-bench任务通过率提升了超过6%。至关重要的是，我们证明了我们的框架适合微调多模态基础模型以应对智能任务。通过对交替语音-文本滚动进行训练，我们将基础多模态LLM装备上工具使用能力，为更具自然性和语音驱动的交互式智能体铺平了道路。 
+
+---
+# eIQ Neutron: Redefining Edge-AI Inference with Integrated NPU and Compiler Innovations 
+
+**Title (ZH)**: eIQ 神经元：通过集成NPU和编译器创新重定义边缘AI推理 
+
+**Authors**: Lennart Bamberg, Filippo Minnella, Roberto Bosio, Fabrizio Ottati, Yuebin Wang, Jongmin Lee, Luciano Lavagno, Adam Fuks  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.14388)  
+
+**Abstract**: Neural Processing Units (NPUs) are key to enabling efficient AI inference in resource-constrained edge environments. While peak tera operations per second (TOPS) is often used to gauge performance, it poorly reflects real-world performance and typically rather correlates with higher silicon cost. To address this, architects must focus on maximizing compute utilization, without sacrificing flexibility. This paper presents the eIQ Neutron efficient-NPU, integrated into a commercial flagship MPU, alongside co-designed compiler algorithms. The architecture employs a flexible, data-driven design, while the compiler uses a constrained programming approach to optimize compute and data movement based on workload characteristics. Compared to the leading embedded NPU and compiler stack, our solution achieves an average speedup of 1.8x (4x peak) at equal TOPS and memory resources across standard AI-benchmarks. Even against NPUs with double the compute and memory resources, Neutron delivers up to 3.3x higher performance. 
+
+**Abstract (ZH)**: 基于神经处理器单元（NPUs）在资源受限的边缘环境高效AI推断中的关键作用，本文介绍了集成在商用旗舰MPU中的eIQ Neutron高效NPU及其协同设计的编译器算法。该架构采用灵活的数据驱动设计，而编译器采用受限编程方法，根据工作负载特性优化计算和数据移动。与领先的嵌入式NPU和编译器栈相比，在相同TOPS和内存资源的情况下，我们的解决方案在标准AI基准测试中平均加速1.8倍（峰值4倍），甚至在计算和内存资源翻倍的NPU面前，Neutron仍可提供最高3.3倍的性能提升。 
+
+---
+# Embodied sensorimotor control: computational modeling of the neural control of movement 
+
+**Title (ZH)**: embodied 辅感运动控制：运动的神经控制的计算建模 
+
+**Authors**: Muhammad Noman Almani, John Lazzari, Jeff Walker, Shreya Saxena  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.14360)  
+
+**Abstract**: We review how sensorimotor control is dictated by interacting neural populations, optimal feedback mechanisms, and the biomechanics of bodies. First, we outline the distributed anatomical loops that shuttle sensorimotor signals between cortex, subcortical regions, and spinal cord. We then summarize evidence that neural population activity occupies low-dimensional, dynamically evolving manifolds during planning and execution of movements. Next, we summarize literature explaining motor behavior through the lens of optimal control theory, which clarifies the role of internal models and feedback during motor control. Finally, recent studies on embodied sensorimotor control address gaps within each framework by aiming to elucidate neural population activity through the explicit control of musculoskeletal dynamics. We close by discussing open problems and opportunities: multi-tasking and cognitively rich behavior, multi-regional circuit models, and the level of anatomical detail needed in body and network models. Together, this review and recent advances point towards reaching an integrative account of the neural control of movement. 
+
+**Abstract (ZH)**: 我们回顾了感觉运动控制如何由相互作用的神经群体、最优反馈机制以及生物力学特性所决定。首先，我们概述了分布在皮层、次皮层区域和脊髓之间的解剖环路，这些环路传递感觉运动信号。随后，我们总结了在运动规划和执行过程中，神经群体活动占据低维、动态演变流形的证据。接着，我们通过最优控制理论的角度概述了运动行为的文献，阐明了内部模型和反馈在运动控制中的作用。最后，近期关于具有本体感的感觉运动控制的研究通过明确控制骨骼肌肉动力学来解决每个框架内的缺口，旨在阐明神经群体活动。我们总结了有待解决的问题和机遇：多任务处理和认知丰富的行为、多区域电路模型以及身体和网络模型所需的解剖细节水平。综上所述，本文回顾和近期进展表明，我们正在接近对神经调控运动的一个综合理解。 
+
+---
