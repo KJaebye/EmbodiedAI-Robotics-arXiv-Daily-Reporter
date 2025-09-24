@@ -1,0 +1,91 @@
+# MMCD: Multi-Modal Collaborative Decision-Making for Connected Autonomy with Knowledge Distillation 
+
+**Title (ZH)**: MMCD：面向连接自治的多模态协作决策知识蒸馏 
+
+**Authors**: Rui Liu, Zikang Wang, Peng Gao, Yu Shen, Pratap Tokekar, Ming Lin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.18198)  
+
+**Abstract**: Autonomous systems have advanced significantly, but challenges persist in accident-prone environments where robust decision-making is crucial. A single vehicle's limited sensor range and obstructed views increase the likelihood of accidents. Multi-vehicle connected systems and multi-modal approaches, leveraging RGB images and LiDAR point clouds, have emerged as promising solutions. However, existing methods often assume the availability of all data modalities and connected vehicles during both training and testing, which is impractical due to potential sensor failures or missing connected vehicles. To address these challenges, we introduce a novel framework MMCD (Multi-Modal Collaborative Decision-making) for connected autonomy. Our framework fuses multi-modal observations from ego and collaborative vehicles to enhance decision-making under challenging conditions. To ensure robust performance when certain data modalities are unavailable during testing, we propose an approach based on cross-modal knowledge distillation with a teacher-student model structure. The teacher model is trained with multiple data modalities, while the student model is designed to operate effectively with reduced modalities. In experiments on $\textit{connected autonomous driving with ground vehicles}$ and $\textit{aerial-ground vehicles collaboration}$, our method improves driving safety by up to ${\it 20.7}\%$, surpassing the best-existing baseline in detecting potential accidents and making safe driving decisions. More information can be found on our website this https URL. 
+
+**Abstract (ZH)**: 自主系统取得了显著进展，但在事故高发环境中，稳健的决策制定仍然面临挑战。单辆车辆有限的传感器范围和受阻的视野增加了事故发生的风险。利用多辆连接车辆和多模态方法，结合RGB图像和LiDAR点云，多模态协同决策（MMCD）框架成为有前景的解决方案。然而，现有方法往往假设训练和测试过程中所有数据模态和连接车辆均可用，这由于传感器故障或连接车辆缺失的原因在实际中难以实现。为应对这些挑战，我们提出了一种名为MMCD的新型框架，该框架融合了自我和协作车辆的多模态观测，以在挑战性条件下增强决策能力。为确保在测试过程中某些数据模态不可用时仍能保持稳健性能，我们提出了基于跨模态知识蒸馏的教师-学生模型结构。教师模型在多种数据模态上进行训练，而学生模型则被设计成能够在减少模态的情况下有效运行。在基于地面车辆的连接自主驾驶和空地协同驾驶实验中，我们的方法将驾驶安全性提高至最高20.7%，在检测潜在事故和做出安全驾驶决策方面超越了现有最佳基线方法。更多信息请参见我们的网站：this https URL。 
+
+---
+# Memory-QA: Answering Recall Questions Based on Multimodal Memories 
+
+**Title (ZH)**: 基于多模态记忆的Memory-QA：回答回忆型问题 
+
+**Authors**: Hongda Jiang, Xinyuan Zhang, Siddhant Garg, Rishab Arora, Shiun-Zu Kuo, Jiayang Xu, Christopher Brossman, Yue Liu, Aaron Colak, Ahmed Aly, Anuj Kumar, Xin Luna Dong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.18436)  
+
+**Abstract**: We introduce Memory-QA, a novel real-world task that involves answering recall questions about visual content from previously stored multimodal memories. This task poses unique challenges, including the creation of task-oriented memories, the effective utilization of temporal and location information within memories, and the ability to draw upon multiple memories to answer a recall question. To address these challenges, we propose a comprehensive pipeline, Pensieve, integrating memory-specific augmentation, time- and location-aware multi-signal retrieval, and multi-memory QA fine-tuning. We created a multimodal benchmark to illustrate various real challenges in this task, and show the superior performance of Pensieve over state-of-the-art solutions (up to 14% on QA accuracy). 
+
+**Abstract (ZH)**: Memory-QA：一种涉及从先前存储的多模态记忆中回答关于视觉内容的回忆问题的新颖现实世界任务 
+
+---
+# NaviSense: A Multimodal Assistive Mobile application for Object Retrieval by Persons with Visual Impairment 
+
+**Title (ZH)**: NaviSense：用于视觉障碍人士对象检索的多模态辅助移动应用 
+
+**Authors**: Ajay Narayanan Sridhar, Fuli Qiao, Nelson Daniel Troncoso Aldas, Yanpei Shi, Mehrdad Mahdavi, Laurent Itti, Vijaykrishnan Narayanan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.18672)  
+
+**Abstract**: People with visual impairments often face significant challenges in locating and retrieving objects in their surroundings. Existing assistive technologies present a trade-off: systems that offer precise guidance typically require pre-scanning or support only fixed object categories, while those with open-world object recognition lack spatial feedback for reaching the object. To address this gap, we introduce 'NaviSense', a mobile assistive system that combines conversational AI, vision-language models, augmented reality (AR), and LiDAR to support open-world object detection with real-time audio-haptic guidance. Users specify objects via natural language and receive continuous spatial feedback to navigate toward the target without needing prior setup. Designed with insights from a formative study and evaluated with 12 blind and low-vision participants, NaviSense significantly reduced object retrieval time and was preferred over existing tools, demonstrating the value of integrating open-world perception with precise, accessible guidance. 
+
+**Abstract (ZH)**: 视觉受损人士在识别和获取周围环境中的物体时常常面临显著挑战。现有的辅助技术存在权衡：提供精确导航的系统通常需要预先扫描或仅支持固定类别的物体识别，而具有开放世界物体识别能力的系统缺乏空间反馈功能，用户难以找到目标物体。为解决这一问题，我们引入了“NaviSense”移动辅助系统，该系统结合了对话式AI、视觉语言模型、增强现实（AR）和LiDAR技术，支持实时语音-触觉导航指导下的开放世界物体检测。用户可以通过自然语言指定物体，并接收连续的空间反馈，无需前期设置即可导航至目标物体。NaviSense 通过初步研究的见解设计，并经12名盲人和视力受损人士评估，显示出整合开放世界感知与精确、可访问导航的优点，显著减少了物体检索时间，并优于现有工具。 
+
+---
+# Check Field Detection Agent (CFD-Agent) using Multimodal Large Language and Vision Language Models 
+
+**Title (ZH)**: 使用多模态大型语言和视觉语言模型检验领域检测代理(CFD-Agent) 
+
+**Authors**: Sourav Halder, Jinjun Tong, Xinyu Wu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.18405)  
+
+**Abstract**: Checks remain a foundational instrument in the financial ecosystem, facilitating substantial transaction volumes across institutions. However, their continued use also renders them a persistent target for fraud, underscoring the importance of robust check fraud detection mechanisms. At the core of such systems lies the accurate identification and localization of critical fields, such as the signature, magnetic ink character recognition (MICR) line, courtesy amount, legal amount, payee, and payer, which are essential for subsequent verification against reference checks belonging to the same customer. This field-level detection is traditionally dependent on object detection models trained on large, diverse, and meticulously labeled datasets, a resource that is scarce due to proprietary and privacy concerns. In this paper, we introduce a novel, training-free framework for automated check field detection, leveraging the power of a vision language model (VLM) in conjunction with a multimodal large language model (MLLM). Our approach enables zero-shot detection of check components, significantly lowering the barrier to deployment in real-world financial settings. Quantitative evaluation of our model on a hand-curated dataset of 110 checks spanning multiple formats and layouts demonstrates strong performance and generalization capability. Furthermore, this framework can serve as a bootstrap mechanism for generating high-quality labeled datasets, enabling the development of specialized real-time object detection models tailored to institutional needs. 
+
+**Abstract (ZH)**: 一种基于视觉语言模型的无训练框架用于自动支票字段检测 
+
+---
+# Qianfan-VL: Domain-Enhanced Universal Vision-Language Models 
+
+**Title (ZH)**: 千帆-VL：领域增强的通用视觉-语言模型 
+
+**Authors**: Daxiang Dong, Mingming Zheng, Dong Xu, Bairong Zhuang, Wenyu Zhang, Chunhua Luo, Haoran Wang, Zijian Zhao, Jie Li, Yuxuan Li, Hanjun Zhong, Mengyue Liu, Jieting Chen, Shupeng Li, Lun Tian, Yaping Feng, Xin Li, Donggang Jiang, Yong Chen, Yehua Xu, Duohao Qin, Chen Feng, Dan Wang, Henghua Zhang, Jingjing Ha, Jinhui He, Yanfeng Zhai, Chengxin Zheng, Jiayi Mao, Jiacheng Chen, Ruchang Yao, Ziye Yuan, Jianmin Wu, Guangjun Xie, Dou Shen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.18189)  
+
+**Abstract**: We present Qianfan-VL, a series of multimodal large language models ranging from 3B to 70B parameters, achieving state-of-the-art performance through innovative domain enhancement techniques. Our approach employs multi-stage progressive training and high-precision data synthesis pipelines, which prove to be critical technologies for enhancing domain-specific capabilities while maintaining strong general performance. Qianfan-VL achieves comparable results to leading open-source models on general benchmarks, with state-of-the-art performance on benchmarks such as CCBench, SEEDBench IMG, ScienceQA, and MMStar. The domain enhancement strategy delivers significant advantages in OCR and document understanding, validated on both public benchmarks (OCRBench 873, DocVQA 94.75%) and in-house evaluations. Notably, Qianfan-VL-8B and 70B variants incorporate long chain-of-thought capabilities, demonstrating superior performance on mathematical reasoning (MathVista 78.6%) and logical inference tasks. All models are trained entirely on Baidu's Kunlun P800 chips, validating the capability of large-scale AI infrastructure to train SOTA-level multimodal models with over 90% scaling efficiency on 5000 chips for a single task. This work establishes an effective methodology for developing domain-enhanced multimodal models suitable for diverse enterprise deployment scenarios. 
+
+**Abstract (ZH)**: Qianfan-VL：通过创新领域增强技术的多模态大型语言模型系列 
+
+---
+# V-SenseDrive: A Privacy-Preserving Road Video and In-Vehicle Sensor Fusion Framework for Road Safety & Driver Behaviour Modelling 
+
+**Title (ZH)**: V-SenseDrive：一种保护隐私的道路上视频与车内传感器融合框架，用于道路安全与驾驶员行为建模 
+
+**Authors**: Muhammad Naveed, Nazia Perwaiz, Sidra Sultana, Mohaira Ahmad, Muhammad Moazam Fraz  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.18187)  
+
+**Abstract**: Road traffic accidents remain a major public health challenge, particularly in countries with heterogeneous road conditions, mixed traffic flow, and variable driving discipline, such as Pakistan. Reliable detection of unsafe driving behaviours is a prerequisite for improving road safety, enabling advanced driver assistance systems (ADAS), and supporting data driven decisions in insurance and fleet management. Most of existing datasets originate from the developed countries with limited representation of the behavioural diversity observed in emerging economies and the driver's face recording voilates the privacy preservation. We present V-SenseDrive, the first privacy-preserving multimodal driver behaviour dataset collected entirely within the Pakistani driving environment. V-SenseDrive combines smartphone based inertial and GPS sensor data with synchronized road facing video to record three target driving behaviours (normal, aggressive, and risky) on multiple types of roads, including urban arterials, secondary roads, and motorways. Data was gathered using a custom Android application designed to capture high frequency accelerometer, gyroscope, and GPS streams alongside continuous video, with all sources precisely time aligned to enable multimodal analysis. The focus of this work is on the data acquisition process, covering participant selection, driving scenarios, environmental considerations, and sensor video synchronization techniques. The dataset is structured into raw, processed, and semantic layers, ensuring adaptability for future research in driver behaviour classification, traffic safety analysis, and ADAS development. By representing real world driving in Pakistan, V-SenseDrive fills a critical gap in the global landscape of driver behaviour datasets and lays the groundwork for context aware intelligent transportation solutions. 
+
+**Abstract (ZH)**: 隐私保护的多模态司机行为数据集V-SenseDrive 
+
+---
+# The Describe-Then-Generate Bottleneck: How VLM Descriptions Alter Image Generation Outcomes 
+
+**Title (ZH)**: 描述然后生成的瓶颈：VLM描述如何改变图像生成的结果 
+
+**Authors**: Sai Varun Kodathala, Rakesh Vunnam  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.18179)  
+
+**Abstract**: With the increasing integration of multimodal AI systems in creative workflows, understanding information loss in vision-language-vision pipelines has become important for evaluating system limitations. However, the degradation that occurs when visual content passes through textual intermediation remains poorly quantified. In this work, we provide empirical analysis of the describe-then-generate bottleneck, where natural language serves as an intermediate representation for visual information. We generated 150 image pairs through the describe-then-generate pipeline and applied existing metrics (LPIPS, SSIM, and color distance) to measure information preservation across perceptual, structural, and chromatic dimensions. Our evaluation reveals that 99.3% of samples exhibit substantial perceptual degradation and 91.5% demonstrate significant structural information loss, providing empirical evidence that the describe-then-generate bottleneck represents a measurable and consistent limitation in contemporary multimodal systems. 
+
+**Abstract (ZH)**: 随着多模态人工智能系统在创意工作流程中的集成日益增加，理解视觉-语言-视觉管道中的信息损失对于评估系统限制变得重要。然而，视觉内容通过文本中介传递时发生的降级现象仍缺乏量化。在本工作中，我们对“描述-生成”瓶颈进行了实证分析，其中自然语言作为视觉信息的中间表示。我们生成了150个图像对，并应用现有的度量标准（LPIPS、SSIM和色彩距离）来衡量感知、结构和色调维度上的信息保存情况。我们的评估表明，99.3%的样本表现出显著的感知降级，91.5%的样本显示出明显的结构信息损失，这提供了实证证据，表明“描述-生成”瓶颈是当前多模态系统中可测量且一致的限制。 
+
+---
