@@ -1,0 +1,91 @@
+# Multimodal Representation-disentangled Information Bottleneck for Multimodal Recommendation 
+
+**Title (ZH)**: 多模态 Representation 分离的信息瓶颈多模态推荐 
+
+**Authors**: Hui Wang, Jinghui Qin, Wushao Wen, Qingling Li, Shanshan Zhong, Zhongzhan Huang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.20225)  
+
+**Abstract**: Multimodal data has significantly advanced recommendation systems by integrating diverse information sources to model user preferences and item characteristics. However, these systems often struggle with redundant and irrelevant information, which can degrade performance. Most existing methods either fuse multimodal information directly or use rigid architectural separation for disentanglement, failing to adequately filter noise and model the complex interplay between modalities. To address these challenges, we propose a novel framework, the Multimodal Representation-disentangled Information Bottleneck (MRdIB). Concretely, we first employ a Multimodal Information Bottleneck to compress the input representations, effectively filtering out task-irrelevant noise while preserving rich semantic information. Then, we decompose the information based on its relationship with the recommendation target into unique, redundant, and synergistic components. We achieve this decomposition with a series of constraints: a unique information learning objective to preserve modality-unique signals, a redundant information learning objective to minimize overlap, and a synergistic information learning objective to capture emergent information. By optimizing these objectives, MRdIB guides a model to learn more powerful and disentangled representations. Extensive experiments on several competitive models and three benchmark datasets demonstrate the effectiveness and versatility of our MRdIB in enhancing multimodal recommendation. 
+
+**Abstract (ZH)**: 多模态表示解缠信息瓶颈（MRdIB）在增强多模态推荐中的应用 
+
+---
+# When Words Can't Capture It All: Towards Video-Based User Complaint Text Generation with Multimodal Video Complaint Dataset 
+
+**Title (ZH)**: 当文字无法表达一切：面向多模态视频投诉数据集的视频基用户投诉文本生成研究 
+
+**Authors**: Sarmistha Das, R E Zera Marveen Lyngkhoi, Kirtan Jain, Vinayak Goyal, Sriparna Saha, Manish Gupta  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.19952)  
+
+**Abstract**: While there exists a lot of work on explainable complaint mining, articulating user concerns through text or video remains a significant challenge, often leaving issues unresolved. Users frequently struggle to express their complaints clearly in text but can easily upload videos depicting product defects (e.g., vague text such as `worst product' paired with a 5-second video depicting a broken headphone with the right earcup). This paper formulates a new task in the field of complaint mining to aid the common users' need to write an expressive complaint, which is Complaint Description from Videos (CoD-V) (e.g., to help the above user articulate her complaint about the defective right earcup). To this end, we introduce ComVID, a video complaint dataset containing 1,175 complaint videos and the corresponding descriptions, also annotated with the emotional state of the complainer. Additionally, we present a new complaint retention (CR) evaluation metric that discriminates the proposed (CoD-V) task against standard video summary generation and description tasks. To strengthen this initiative, we introduce a multimodal Retrieval-Augmented Generation (RAG) embedded VideoLLaMA2-7b model, designed to generate complaints while accounting for the user's emotional state. We conduct a comprehensive evaluation of several Video Language Models on several tasks (pre-trained and fine-tuned versions) with a range of established evaluation metrics, including METEOR, perplexity, and the Coleman-Liau readability score, among others. Our study lays the foundation for a new research direction to provide a platform for users to express complaints through video. Dataset and resources are available at: this https URL. 
+
+**Abstract (ZH)**: 基于视频的投诉描述任务（CoD-V）：一种新的可解释投诉挖掘任务 
+
+---
+# Adaptive Guidance Semantically Enhanced via Multimodal LLM for Edge-Cloud Object Detection 
+
+**Title (ZH)**: 基于多模态大语言模型的语义增强自适应引导边缘-云对象检测 
+
+**Authors**: Yunqing Hu, Zheming Yang, Chang Zhao, Wen Ji  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.19875)  
+
+**Abstract**: Traditional object detection methods face performance degradation challenges in complex scenarios such as low-light conditions and heavy occlusions due to a lack of high-level semantic understanding. To address this, this paper proposes an adaptive guidance-based semantic enhancement edge-cloud collaborative object detection method leveraging Multimodal Large Language Models (MLLM), achieving an effective balance between accuracy and efficiency. Specifically, the method first employs instruction fine-tuning to enable the MLLM to generate structured scene descriptions. It then designs an adaptive mapping mechanism that dynamically converts semantic information into parameter adjustment signals for edge detectors, achieving real-time semantic enhancement. Within an edge-cloud collaborative inference framework, the system automatically selects between invoking cloud-based semantic guidance or directly outputting edge detection results based on confidence scores. Experiments demonstrate that the proposed method effectively enhances detection accuracy and efficiency in complex scenes. Specifically, it can reduce latency by over 79% and computational cost by 70% in low-light and highly occluded scenes while maintaining accuracy. 
+
+**Abstract (ZH)**: 传统的目标检测方法在低光照条件和密集遮挡等复杂场景中由于缺乏高阶语义理解而面临着性能下降的挑战。为了解决这一问题，本文提出了一种利用多模态大型语言模型（MLLM）的自适应引导式语义增强边缘-云协作目标检测方法，实现了精度和效率的有效平衡。具体而言，该方法首先通过指令微调使MLLM生成结构化的场景描述。然后设计了一种自适应映射机制，动态地将语义信息转换为边缘检测器的参数调整信号，实现即时的语义增强。在边缘-云协作推理框架中，系统基于置信分数自动选择调用云端语义指导或直接输出边缘检测结果。实验结果表明，所提出的方法在复杂场景中有效提升了检测精度和效率，特别是在低光照和高度遮挡场景中，可以将延迟降低超过79%，计算成本降低70%的同时保持了准确性。 
+
+---
+# PPGFlowECG: Latent Rectified Flow with Cross-Modal Encoding for PPG-Guided ECG Generation and Cardiovascular Disease Detection 
+
+**Title (ZH)**: PPGFlowECG：跨模态编码引导的潜空间修正流及其在心电图生成与心血管疾病检测中的应用 
+
+**Authors**: Xiaocheng Fang, Jiarui Jin, Haoyu Wang, Che Liu, Jieyi Cai, Guangkun Nie, Jun Li, Hongyan Li, Shenda Hong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.19774)  
+
+**Abstract**: In clinical practice, electrocardiography (ECG) remains the gold standard for cardiac monitoring, providing crucial insights for diagnosing a wide range of cardiovascular diseases (CVDs). However, its reliance on specialized equipment and trained personnel limits feasibility for continuous routine monitoring. Photoplethysmography (PPG) offers accessible, continuous monitoring but lacks definitive electrophysiological information, preventing conclusive diagnosis. Generative models present a promising approach to translate PPG into clinically valuable ECG signals, yet current methods face substantial challenges, including the misalignment of physiological semantics in generative models and the complexity of modeling in high-dimensional signals. To this end, we propose PPGFlowECG, a two-stage framework that aligns PPG and ECG in a shared latent space via the CardioAlign Encoder and employs latent rectified flow to generate ECGs with high fidelity and interpretability. To the best of our knowledge, this is the first study to experiment on MCMED, a newly released clinical-grade dataset comprising over 10 million paired PPG-ECG samples from more than 118,000 emergency department visits with expert-labeled cardiovascular disease annotations. Results demonstrate the effectiveness of our method for PPG-to-ECG translation and cardiovascular disease detection. Moreover, cardiologist-led evaluations confirm that the synthesized ECGs achieve high fidelity and improve diagnostic reliability, underscoring our method's potential for real-world cardiovascular screening. 
+
+**Abstract (ZH)**: 基于PPGFlowECG的两阶段框架在共享潜空间中对齐PPG和ECG并生成高质量可解释的ECG信号，以实现心血管疾病检测 
+
+---
+# TriSPrompt: A Hierarchical Soft Prompt Model for Multimodal Rumor Detection with Incomplete Modalities 
+
+**Title (ZH)**: TriSPrompt：一种用于多模态谣言检测的多层次软提示模型（缺失模态情况下） 
+
+**Authors**: Jiajun Chen, Yangyang Wu, Xiaoye Miao, Mengying Zhu, Meng Xi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.19352)  
+
+**Abstract**: The widespread presence of incomplete modalities in multimodal data poses a significant challenge to achieving accurate rumor detection. Existing multimodal rumor detection methods primarily focus on learning joint modality representations from \emph{complete} multimodal training data, rendering them ineffective in addressing the common occurrence of \emph{missing modalities} in real-world scenarios. In this paper, we propose a hierarchical soft prompt model \textsf{TriSPrompt}, which integrates three types of prompts, \textit{i.e.}, \emph{modality-aware} (MA) prompt, \emph{modality-missing} (MM) prompt, and \emph{mutual-views} (MV) prompt, to effectively detect rumors in incomplete multimodal data. The MA prompt captures both heterogeneous information from specific modalities and homogeneous features from available data, aiding in modality recovery. The MM prompt models missing states in incomplete data, enhancing the model's adaptability to missing information. The MV prompt learns relationships between subjective (\textit{i.e.}, text and image) and objective (\textit{i.e.}, comments) perspectives, effectively detecting rumors. Extensive experiments on three real-world benchmarks demonstrate that \textsf{TriSPrompt} achieves an accuracy gain of over 13\% compared to state-of-the-art methods. The codes and datasets are available at https: //anonymous.this http URL. 
+
+**Abstract (ZH)**: 广泛存在的不完整模态在多模态数据中的普遍存在对实现准确的谣言检测构成了重大挑战。现有的多模态谣言检测方法主要侧重于从完整的多模态训练数据中学习联合模态表示，这使得它们难以应对现实场景中常见的缺失模态问题。在本文中，我们提出了一种层次软提示模型TriSPrompt，该模型整合了三种类型的提示，即模态感知（MA）提示、模态缺失（MM）提示和互视（MV）提示，以有效检测不完整多模态数据中的谣言。MA提示捕捉特定模态的异质信息和可用数据的同质特征，有助于模态恢复。MM提示模型不完整数据中的缺失状态，增强模型对缺失信息的适应性。MV提示学习主观（如文本和图像）和客观（如评论）视角之间的关系，有效检测谣言。在三个真实世界的基准上的 extensive 实验表明，TriSPrompt 在准确率上相对于最先进的方法提高了超过 13%。代码和数据集可从 https://anonymous.this http URL 获取。 
+
+---
+# LibEMER: A novel benchmark and algorithms library for EEG-based Multimodal Emotion Recognition 
+
+**Title (ZH)**: LibEMER: 一种基于EEG的多模态情绪识别新型基准库和算法库 
+
+**Authors**: Zejun Liu, Yunshan Chen, Chengxi Xie, Huan Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.19330)  
+
+**Abstract**: EEG-based multimodal emotion recognition(EMER) has gained significant attention and witnessed notable advancements, the inherent complexity of human neural systems has motivated substantial efforts toward multimodal approaches. However, this field currently suffers from three critical limitations: (i) the absence of open-source implementations. (ii) the lack of standardized and transparent benchmarks for fair performance analysis. (iii) in-depth discussion regarding main challenges and promising research directions is a notable scarcity. To address these challenges, we introduce LibEMER, a unified evaluation framework that provides fully reproducible PyTorch implementations of curated deep learning methods alongside standardized protocols for data preprocessing, model realization, and experimental setups. This framework enables unbiased performance assessment on three widely-used public datasets across two learning tasks. The open-source library is publicly accessible at: this https URL 
+
+**Abstract (ZH)**: 基于EEG的多模态情绪识别（EEG-based Multimodal Emotion Recognition, EMER）已获得显著关注并取得了明显进步，人类神经系统的固有复杂性推动了多模态方法的发展。然而，该领域目前存在三个关键限制：(i) 缺乏开源实现；(ii) 缺少标准化和透明的基准测试以进行公平的性能分析；(iii) 关于主要挑战和有前途的研究方向的深入讨论较为稀缺。为解决这些挑战，我们引入了LibEMER，这是一个统一的评估框架，提供了经过精心挑选的深度学习方法的完全可再现的PyTorch实现，以及标准化的数据预处理、模型构建和实验设置协议。该框架能够在两个学习任务上对三个广泛使用的公开数据集进行公平的性能评估。开源库可在以下地址访问：this https URL。 
+
+---
+# Advancing Few-Shot Pediatric Arrhythmia Classification with a Novel Contrastive Loss and Multimodal Learning 
+
+**Title (ZH)**: 基于新型对比损失和多模态学习的少量样本儿童心律失常分类改进研究 
+
+**Authors**: Yiqiao Chen, Zijian Huang, Zhenghui Feng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.19315)  
+
+**Abstract**: Pediatric arrhythmias are a major risk factor for disability and sudden cardiac death, yet their automated classification remains challenging due to class imbalance, few-shot categories, and complex signal characteristics, which severely limit the efficiency and reliability of early screening and clinical intervention. To address this problem, we propose a multimodal end-to-end deep learning framework that combines dual-branch convolutional encoders for ECG and IEGM, semantic attention for cross-modal feature alignment, and a lightweight Transformer encoder for global dependency modeling. In addition, we introduce a new contrastive loss fucntion named Adaptive Global Class-Aware Contrastive Loss (AGCACL) to enhance intra-class compactness and inter-class separability through class prototypes and a global similarity matrix. To the best of our knowledge, this is the first systematic study based on the Leipzig Heart Center pediatric/congenital ECG+IEGM dataset, for which we also provide a complete and reproducible preprocessing pipeline. Experimental results demonstrate that the proposed method achieves the overall best performance on this dataset, including 97.76\% Top-1 Accuracy, 94.08\% Macro Precision, 91.97\% Macro Recall, 92.97\% Macro F1, and 92.36\% Macro F2, with improvements of +13.64, +15.96, +19.82, and +19.44 percentage points over the strongest baseline in Macro Precision/Recall/F1/F2, respectively. These findings indicate that the framework significantly improves the detectability and robustness for minority arrhythmia classes, offering potential clinical value for rhythm screening, pre-procedural assessment, and postoperative follow-up in pediatric and congenital heart disease populations. 
+
+**Abstract (ZH)**: 儿童心律失常是导致残疾和突发心脏死亡的主要风险因素，但由于类样本不平衡、少样本类别以及复杂信号特征的影响，其自动化分类仍然具有挑战性，这严重限制了早期筛查和临床干预的效率和可靠性。为了解决这一问题，我们提出了一种结合双支路卷积编码器进行心电图（ECG）和体表心电图（IEGM）处理、语义注意力进行跨模态特征对齐以及轻量级Transformer编码器进行全局依赖建模的多模态端到端深度学习框架。此外，我们引入了一种新的对比损失函数——自适应全局类感知对比损失（AGCACL），通过类别原型和全局相似性矩阵增强类内凝聚性和类间区分性。据我们所知，这是基于莱比锡心脏中心儿童/先天性心脏病ECG+IEGM数据集的第一个系统性研究，我们还提供了一个完整的可复现实验预处理管道。实验结果表明，所提方法在该数据集上的总体性能最佳，包括97.76%的Top-1准确率、94.08%的宏精度、91.97%的宏召回率、92.97%的宏F1值和92.36%的宏F2值，分别提高了13.64、15.96、19.82和19.44个百分点，对比最强基线。这些发现表明，该框架显著提高了对少数心律失常类别的检测能力和鲁棒性，为儿童和先天性心脏病患者的节律筛查、术前评估和术后随访提供潜在的临床价值。 
+
+---

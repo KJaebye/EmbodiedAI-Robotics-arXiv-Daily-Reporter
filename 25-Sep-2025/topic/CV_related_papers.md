@@ -1,0 +1,195 @@
+# DB-TSDF: Directional Bitmask-based Truncated Signed Distance Fields for Efficient Volumetric Mapping 
+
+**Title (ZH)**: DB-TSDF：基于方向位掩码的截断-signed距离场 volumetric 映射方法 
+
+**Authors**: Jose E. Maese, Luis Merino, Fernando Caballero  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.20081)  
+
+**Abstract**: This paper presents a high-efficiency, CPU-only volumetric mapping framework based on a Truncated Signed Distance Field (TSDF). The system incrementally fuses raw LiDAR point-cloud data into a voxel grid using a directional bitmask-based integration scheme, producing dense and consistent TSDF representations suitable for real-time 3D reconstruction. A key feature of the approach is that the processing time per point-cloud remains constant, regardless of the voxel grid resolution, enabling high resolution mapping without sacrificing runtime performance. In contrast to most recent TSDF/ESDF methods that rely on GPU acceleration, our method operates entirely on CPU, achieving competitive results in speed. Experiments on real-world open datasets demonstrate that the generated maps attain accuracy on par with contemporary mapping techniques. 
+
+**Abstract (ZH)**: 基于截断符号距离场的高效CPU_ONLY体积映射框架：实时3D重建中的高分辨率mapping 
+
+---
+# Beyond Human Demonstrations: Diffusion-Based Reinforcement Learning to Generate Data for VLA Training 
+
+**Title (ZH)**: 超越人类示范：基于扩散的强化学习生成VLA训练数据 
+
+**Authors**: Rushuai Yang, Hangxing Wei, Ran Zhang, Zhiyuan Feng, Xiaoyu Chen, Tong Li, Chuheng Zhang, Li Zhao, Jiang Bian, Xiu Su, Yi Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.19752)  
+
+**Abstract**: Vision-language-action (VLA) models have shown strong generalization across tasks and embodiments; however, their reliance on large-scale human demonstrations limits their scalability owing to the cost and effort of manual data collection. Reinforcement learning (RL) offers a potential alternative to generate demonstrations autonomously, yet conventional RL algorithms often struggle on long-horizon manipulation tasks with sparse rewards. In this paper, we propose a modified diffusion policy optimization algorithm to generate high-quality and low-variance trajectories, which contributes to a diffusion RL-powered VLA training pipeline. Our algorithm benefits from not only the high expressiveness of diffusion models to explore complex and diverse behaviors but also the implicit regularization of the iterative denoising process to yield smooth and consistent demonstrations. We evaluate our approach on the LIBERO benchmark, which includes 130 long-horizon manipulation tasks, and show that the generated trajectories are smoother and more consistent than both human demonstrations and those from standard Gaussian RL policies. Further, training a VLA model exclusively on the diffusion RL-generated data achieves an average success rate of 81.9%, which outperforms the model trained on human data by +5.3% and that on Gaussian RL-generated data by +12.6%. The results highlight our diffusion RL as an effective alternative for generating abundant, high-quality, and low-variance demonstrations for VLA models. 
+
+**Abstract (ZH)**: 视觉-语言-行动（VLA）模型在跨任务和实体的泛化能力上表现出色，但由于大规模人工演示数据收集的成本和努力限制了其可扩展性，基于强化学习（RL）的方法提供了自主生成演示的潜在替代方案，然而，传统的RL算法在具有稀疏奖励的长时效应操作任务上往往表现不佳。本文提出了一种改进的扩散策略优化算法，以生成高质量和低方差的轨迹，这促进了基于扩散RL的VLA训练管道的发展。我们的算法不仅受益于扩散模型的高度表现力，可以探索复杂多样的行为，还受益于迭代去噪过程中的隐式正则化，以产生平滑一致的演示。我们使用包含130个长时效应操作任务的LIBERO基准对我们的方法进行了评估，结果显示生成的轨迹比人工演示和标准高斯RL策略生成的轨迹更平滑、更一致。进一步地，仅使用扩散RL生成的数据训练VLA模型，其平均成功率为81.9%，分别比使用人工数据训练的模型高出5.3%和比使用高斯RL生成数据训练的模型高出12.6%。结果表明，我们的扩散RL是一种有效的方法，可以为VLA模型生成丰富的、高质量的和低方差的演示。 
+
+---
+# Terra: Hierarchical Terrain-Aware 3D Scene Graph for Task-Agnostic Outdoor Mapping 
+
+**Title (ZH)**: Terra：层次地形感知3D场景图实现任务无关室外mapping 
+
+**Authors**: Chad R. Samuelson, Abigail Austin, Seth Knoop, Blake Romrell, Gabriel R. Slade, Timothy W. McLain, Joshua G. Mangelson  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.19579)  
+
+**Abstract**: Outdoor intelligent autonomous robotic operation relies on a sufficiently expressive map of the environment. Classical geometric mapping methods retain essential structural environment information, but lack a semantic understanding and organization to allow high-level robotic reasoning. 3D scene graphs (3DSGs) address this limitation by integrating geometric, topological, and semantic relationships into a multi-level graph-based map. Outdoor autonomous operations commonly rely on terrain information either due to task-dependence or the traversability of the robotic platform. We propose a novel approach that combines indoor 3DSG techniques with standard outdoor geometric mapping and terrain-aware reasoning, producing terrain-aware place nodes and hierarchically organized regions for outdoor environments. Our method generates a task-agnostic metric-semantic sparse map and constructs a 3DSG from this map for downstream planning tasks, all while remaining lightweight for autonomous robotic operation. Our thorough evaluation demonstrates our 3DSG method performs on par with state-of-the-art camera-based 3DSG methods in object retrieval and surpasses them in region classification while remaining memory efficient. We demonstrate its effectiveness in diverse robotic tasks of object retrieval and region monitoring in both simulation and real-world environments. 
+
+**Abstract (ZH)**: 室外智能自主机器人操作依赖于环境的充分表达地图。古典几何制图方法保留了环境的基本结构信息，但缺乏语义理解与组织，无法支持高层次的机器人推理。三维场景图（3Dscene graphs，3DSGs）通过将几何学、拓扑学和语义关系整合到多级图基地图中来解决这一局限。室外自主操作通常依赖于地形信息，要么出于任务相关性，要么由于机器人平台的通达性。我们提出了一种新的方法，将室内3DSG技术与标准室外几何制图和地形感知推理相结合，生成terrain-aware的地点节点和层次组织的区域，以支持室外环境。我们的方法生成了一种任务无关的度量语义稀疏地图，并从该地图构建三维场景图以支持下游规划任务，同时保持轻量级以适应自主机器人操作。我们的详尽评估表明，我们的3DSG方法在物体检索方面的性能与最新的基于相机的3DSG方法相当，在区域分类方面更为出色，并且保持了内存效率。我们展示了其在模拟和真实环境中的物体检索和区域监控等各种机器人任务中的有效性。 
+
+---
+# Video models are zero-shot learners and reasoners 
+
+**Title (ZH)**: 视频模型是零样本学习者和推理器 
+
+**Authors**: Thaddäus Wiedemer, Yuxuan Li, Paul Vicol, Shixiang Shane Gu, Nick Matarese, Kevin Swersky, Been Kim, Priyank Jaini, Robert Geirhos  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.20328)  
+
+**Abstract**: The remarkable zero-shot capabilities of Large Language Models (LLMs) have propelled natural language processing from task-specific models to unified, generalist foundation models. This transformation emerged from simple primitives: large, generative models trained on web-scale data. Curiously, the same primitives apply to today's generative video models. Could video models be on a trajectory towards general-purpose vision understanding, much like LLMs developed general-purpose language understanding? We demonstrate that Veo 3 can solve a broad variety of tasks it wasn't explicitly trained for: segmenting objects, detecting edges, editing images, understanding physical properties, recognizing object affordances, simulating tool use, and more. These abilities to perceive, model, and manipulate the visual world enable early forms of visual reasoning like maze and symmetry solving. Veo's emergent zero-shot capabilities indicate that video models are on a path to becoming unified, generalist vision foundation models. 
+
+**Abstract (ZH)**: 大型语言模型的卓越零样本能力已将自然语言处理从任务特定模型转变为统一的通用基础模型。这一转变源自简单的基础：在Web规模数据上训练的大规模生成模型。有趣的是，这些基础同样适用于今天生成视频的模型。视频模型是否正在朝向通用视觉理解发展，就像大型语言模型发展出通用语言理解能力一样？我们证明，Veo 3能够解决它未明确训练的任务：物体分割、边缘检测、图像编辑、理解物理属性、识别物体功能、模拟工具使用等。这些感知、建模和操控视觉世界的能力使视频模型能够进行早期形式的视觉推理，如迷宫和对称性解决。Veo的涌现零样本能力表明，视频模型正在通向统一的通用视觉基础模型的道路。 
+
+---
+# Hyperspectral Adapter for Semantic Segmentation with Vision Foundation Models 
+
+**Title (ZH)**: 视觉基础模型下的高光谱适配器用于语义分割 
+
+**Authors**: JuanaJuana Valeria Hurtado, Rohit Mohan, Abhinav Valada  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.20107)  
+
+**Abstract**: Hyperspectral imaging (HSI) captures spatial information along with dense spectral measurements across numerous narrow wavelength bands. This rich spectral content has the potential to facilitate robust robotic perception, particularly in environments with complex material compositions, varying illumination, or other visually challenging conditions. However, current HSI semantic segmentation methods underperform due to their reliance on architectures and learning frameworks optimized for RGB inputs. In this work, we propose a novel hyperspectral adapter that leverages pretrained vision foundation models to effectively learn from hyperspectral data. Our architecture incorporates a spectral transformer and a spectrum-aware spatial prior module to extract rich spatial-spectral features. Additionally, we introduce a modality-aware interaction block that facilitates effective integration of hyperspectral representations and frozen vision Transformer features through dedicated extraction and injection mechanisms. Extensive evaluations on three benchmark autonomous driving datasets demonstrate that our architecture achieves state-of-the-art semantic segmentation performance while directly using HSI inputs, outperforming both vision-based and hyperspectral segmentation methods. We make the code available at this https URL. 
+
+**Abstract (ZH)**: 高光谱成像（HSI）能够捕获空间信息以及在众多窄波长 band 上的密集光谱测量值。这些丰富的光谱内容有潜力在复杂材料组成、不同照明条件或其它视觉挑战性环境中促进稳健的机器人感知。然而，现有的HSI语义分割方法由于依赖于优化用于RGB输入的架构和学习框架而表现不佳。在本工作中，我们提出了一种新颖的高光谱适配器，利用预训练的视觉基础模型有效学习高光谱数据。我们的架构包含一个光谱变换器和一种光谱感知的空间先验模块，以提取丰富的空间-光谱特征。此外，我们引入了一种模态感知交互块，通过专用的提取和注入机制，促进高光谱表示与冻结的视觉Transformer特征的有效集成。在三个基准自主驾驶数据集上的广泛评估表明，我们的架构能够直接使用HSI输入实现最先进的语义分割性能，优于基于视觉和高光谱分割方法。我们已在以下链接提供代码：this https URL。 
+
+---
+# VIMD: Monocular Visual-Inertial Motion and Depth Estimation 
+
+**Title (ZH)**: 单目视觉惯性运动及深度估计（VIMD） 
+
+**Authors**: Saimouli Katragadda, Guoquan Huang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.19713)  
+
+**Abstract**: Accurate and efficient dense metric depth estimation is crucial for 3D visual perception in robotics and XR. In this paper, we develop a monocular visual-inertial motion and depth (VIMD) learning framework to estimate dense metric depth by leveraging accurate and efficient MSCKF-based monocular visual-inertial motion tracking. At the core the proposed VIMD is to exploit multi-view information to iteratively refine per-pixel scale, instead of globally fitting an invariant affine model as in the prior work. The VIMD framework is highly modular, making it compatible with a variety of existing depth estimation backbones. We conduct extensive evaluations on the TartanAir and VOID datasets and demonstrate its zero-shot generalization capabilities on the AR Table dataset. Our results show that VIMD achieves exceptional accuracy and robustness, even with extremely sparse points as few as 10-20 metric depth points per image. This makes the proposed VIMD a practical solution for deployment in resource constrained settings, while its robust performance and strong generalization capabilities offer significant potential across a wide range of scenarios. 
+
+**Abstract (ZH)**: 单目视觉惯性运动与深度（VIMD）学习框架：基于准确高效的MSCKF单目视觉惯性运动跟踪的密集度规深度估计 
+
+---
+# The Impact of 2D Segmentation Backbones on Point Cloud Predictions Using 4D Radar 
+
+**Title (ZH)**: 二维分割骨干对使用四维雷达预测点云的影响 
+
+**Authors**: William L. Muckelroy III, Mohammed Alsakabi, John M. Dolan, Ozan K. Tonguz  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.19644)  
+
+**Abstract**: LiDAR's dense, sharp point cloud (PC) representations of the surrounding environment enable accurate perception and significantly improve road safety by offering greater scene awareness and understanding. However, LiDAR's high cost continues to restrict the broad adoption of high-level Autonomous Driving (AD) systems in commercially available vehicles. Prior research has shown progress towards circumventing the need for LiDAR by training a neural network, using LiDAR point clouds as ground truth (GT), to produce LiDAR-like 3D point clouds using only 4D Radars. One of the best examples is a neural network created to train a more efficient radar target detector with a modular 2D convolutional neural network (CNN) backbone and a temporal coherence network at its core that uses the RaDelft dataset for training (see arXiv:2406.04723). In this work, we investigate the impact of higher-capacity segmentation backbones on the quality of the produced point clouds. Our results show that while very high-capacity models may actually hurt performance, an optimal segmentation backbone can provide a 23.7% improvement over the state-of-the-art (SOTA). 
+
+**Abstract (ZH)**: LiDAR的密集精确点云表示使周围环境的准确感知成为可能，显著提高了道路安全，通过提供更大的场景意识和理解。然而，LiDAR的高成本继续限制了高级自动驾驶（AD）系统在商用车辆中的广泛应用。先前的研究表明，通过训练神经网络并使用LiDAR点云作为ground truth（GT），可以使用仅4D雷达生成类似于LiDAR的3D点云，从而规避对LiDAR的需求。一个典型的例子是使用模块化的2D卷积神经网络（CNN）骨干和核心采用时间一致网络的方法训练更高效的雷达目标检测器（见arXiv:2406.04723）。在本项研究中，我们探讨了更高容量的分割骨干网络对生成点云质量的影响。我们的结果显示，尽管非常高容量的模型可能会损害性能，但最优的分割骨干网络仍能比现有的最先进（SOTA）方法提高23.7%。 
+
+---
+# AnchDrive: Bootstrapping Diffusion Policies with Hybrid Trajectory Anchors for End-to-End Driving 
+
+**Title (ZH)**: AnchDrive: 通过混合轨迹锚点 bootstrap 驱动策略实现端到端驾驶 
+
+**Authors**: Jinhao Chai, Anqing Jiang, Hao Jiang, Shiyi Mu, Zichong Gu, Shugong Xu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.20253)  
+
+**Abstract**: End-to-end multi-modal planning has become a transformative paradigm in autonomous driving, effectively addressing behavioral multi-modality and the generalization challenge in long-tail scenarios. We propose AnchDrive, a framework for end-to-end driving that effectively bootstraps a diffusion policy to mitigate the high computational cost of traditional generative models. Rather than denoising from pure noise, AnchDrive initializes its planner with a rich set of hybrid trajectory anchors. These anchors are derived from two complementary sources: a static vocabulary of general driving priors and a set of dynamic, context-aware trajectories. The dynamic trajectories are decoded in real-time by a Transformer that processes dense and sparse perceptual features. The diffusion model then learns to refine these anchors by predicting a distribution of trajectory offsets, enabling fine-grained refinement. This anchor-based bootstrapping design allows for efficient generation of diverse, high-quality trajectories. Experiments on the NAVSIM benchmark confirm that AnchDrive sets a new state-of-the-art and shows strong gen?eralizability 
+
+**Abstract (ZH)**: 端到端多模态规划已成为自主驾驶领域的变革性范式，有效应对了长尾场景中的行为多模态性和泛化挑战。我们提出AnchDrive框架，一种有效引导扩散策略的框架，以降低传统生成模型的高计算成本。AnchDrive 不是从纯噪声中去噪，而是用丰富的混合轨迹锚点初始化其规划器。这些锚点来源于两种互补的来源：一个静态的一般驾驶先验词汇表和一组动态的、上下文感知的轨迹。动态轨迹由Transformer实时解码，处理密集和稀疏的感知特征。然后，扩散模型通过预测路径偏移的分布来学习精炼这些锚点，实现精细的精炼。基于锚点的引导设计允许高效生成多样且高质量的轨迹。实验表明，AnchDrive 在 NAVSIM 基准测试中达到了新的最先进水平，并展示了强大的泛化能力。 
+
+---
+# ImageNet-trained CNNs are not biased towards texture: Revisiting feature reliance through controlled suppression 
+
+**Title (ZH)**: ImageNet训练的CNNs并不偏向纹理：通过可控抑制重新审视特征依赖 
+
+**Authors**: Tom Burgert, Oliver Stoll, Paolo Rota, Begüm Demir  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.20234)  
+
+**Abstract**: The hypothesis that Convolutional Neural Networks (CNNs) are inherently texture-biased has shaped much of the discourse on feature use in deep learning. We revisit this hypothesis by examining limitations in the cue-conflict experiment by Geirhos et al. To address these limitations, we propose a domain-agnostic framework that quantifies feature reliance through systematic suppression of shape, texture, and color cues, avoiding the confounds of forced-choice conflicts. By evaluating humans and neural networks under controlled suppression conditions, we find that CNNs are not inherently texture-biased but predominantly rely on local shape features. Nonetheless, this reliance can be substantially mitigated through modern training strategies or architectures (ConvNeXt, ViTs). We further extend the analysis across computer vision, medical imaging, and remote sensing, revealing that reliance patterns differ systematically: computer vision models prioritize shape, medical imaging models emphasize color, and remote sensing models exhibit a stronger reliance towards texture. Code is available at this https URL. 
+
+**Abstract (ZH)**: 卷积神经网络对纹理的偏置并非固有的：一种去噪框架及其在计算机视觉、医学成像和遥感中的应用 
+
+---
+# U-Mamba2-SSL for Semi-Supervised Tooth and Pulp Segmentation in CBCT 
+
+**Title (ZH)**: U-Mamba2-SSL在CBCT中的半监督牙齿和牙髓分割 
+
+**Authors**: Zhi Qin Tan, Xiatian Zhu, Owen Addison, Yunpeng Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.20154)  
+
+**Abstract**: Accurate segmentation of teeth and pulp in Cone-Beam Computed Tomography (CBCT) is vital for clinical applications like treatment planning and diagnosis. However, this process requires extensive expertise and is exceptionally time-consuming, highlighting the critical need for automated algorithms that can effectively utilize unlabeled data. In this paper, we propose U-Mamba2-SSL, a novel semi-supervised learning framework that builds on the U-Mamba2 model and employs a multi-stage training strategy. The framework first pre-trains U-Mamba2 in a self-supervised manner using a disruptive autoencoder. It then leverages unlabeled data through consistency regularization, where we introduce input and feature perturbations to ensure stable model outputs. Finally, a pseudo-labeling strategy is implemented with a reduced loss weighting to minimize the impact of potential errors. U-Mamba2-SSL achieved an average score of 0.872 and a DSC of 0.969 on the validation dataset, demonstrating the superior performance of our approach. The code is available at this https URL. 
+
+**Abstract (ZH)**: Cone-Beam 计算机断层扫描中牙齿和牙髓的准确分割对于治疗计划和诊断等临床应用至关重要。然而，这一过程需要大量专业知识且极为耗时，突显了开发高效利用未标记数据的自动化算法的迫切需求。本文提出了一种新颖的半监督学习框架 U-Mamba2-SSL，该框架基于 U-Mamba2 模型，并采用多阶段训练策略。框架首先使用破坏性自动编码器以自监督方式预训练 U-Mamba2，然后通过一致性正则化利用未标记数据，通过引入输入和特征扰动确保稳定的模型输出，最后采用带有减少损失权重的伪标签策略以减少潜在错误的影响。U-Mamba2-SSL 在验证数据集上的平均得分为 0.872，DSC 为 0.969，证明了该方法的优越性能。代码可在以下链接获取。 
+
+---
+# KSDiff: Keyframe-Augmented Speech-Aware Dual-Path Diffusion for Facial Animation 
+
+**Title (ZH)**: KSDiff: 增强关键帧的语音感知双路径扩散 Facial 动画 
+
+**Authors**: Tianle Lyu, Junchuan Zhao, Ye Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.20128)  
+
+**Abstract**: Audio-driven facial animation has made significant progress in multimedia applications, with diffusion models showing strong potential for talking-face synthesis. However, most existing works treat speech features as a monolithic representation and fail to capture their fine-grained roles in driving different facial motions, while also overlooking the importance of modeling keyframes with intense dynamics. To address these limitations, we propose KSDiff, a Keyframe-Augmented Speech-Aware Dual-Path Diffusion framework. Specifically, the raw audio and transcript are processed by a Dual-Path Speech Encoder (DPSE) to disentangle expression-related and head-pose-related features, while an autoregressive Keyframe Establishment Learning (KEL) module predicts the most salient motion frames. These components are integrated into a Dual-path Motion generator to synthesize coherent and realistic facial motions. Extensive experiments on HDTF and VoxCeleb demonstrate that KSDiff achieves state-of-the-art performance, with improvements in both lip synchronization accuracy and head-pose naturalness. Our results highlight the effectiveness of combining speech disentanglement with keyframe-aware diffusion for talking-head generation. 
+
+**Abstract (ZH)**: 基于音频的面部动画在多媒体应用中取得了显著进展，扩散模型在对话面部合成方面显示出强大的潜力。然而，大多数现有工作将语音特征视为整体表示，未能捕捉其在驱动不同面部动作中的细微作用，同时忽视了建模具有强烈动力学的关键帧的重要性。为解决这些问题，我们提出了一种关键帧增强的语音意识双路径扩散框架KSDiff。具体而言，原始音频和转录文本由双路径语音编码器（DPSE）处理，以分离表情相关和头部姿态相关特征，而自回归关键帧建立学习（KEL）模块预测最具显著性的运动帧。这些组件被整合到双路径运动生成器中，以合成连贯且真实的面部动作。在HDTF和VoxCeleb上的广泛实验表明，KSDiff达到了最先进的性能，both在唇同步准确性和头部姿态自然度上有所改进。我们的结果突显了结合语音分离与关键帧意识扩散对生成对话头部的有效性。 
+
+---
+# SDE-DET: A Precision Network for Shatian Pomelo Detection in Complex Orchard Environments 
+
+**Title (ZH)**: SDE-DET：复杂果园环境中的沙田柚精准检测网络 
+
+**Authors**: Yihao Hu, Pan Wang, Xiaodong Bai, Shijie Cai, Hang Wang, Huazhong Liu, Aiping Yang, Xiangxiang Li, Meiping Ding, Hongyan Liu, Jianguo Yao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.19990)  
+
+**Abstract**: Pomelo detection is an essential process for their localization, automated robotic harvesting, and maturity analysis. However, detecting Shatian pomelo in complex orchard environments poses significant challenges, including multi-scale issues, obstructions from trunks and leaves, small object detection, etc. To address these issues, this study constructs a custom dataset STP-AgriData and proposes the SDE-DET model for Shatian pomelo detection. SDE-DET first utilizes the Star Block to effectively acquire high-dimensional information without increasing the computational overhead. Furthermore, the presented model adopts Deformable Attention in its backbone, to enhance its ability to detect pomelos under occluded conditions. Finally, multiple Efficient Multi-Scale Attention mechanisms are integrated into our model to reduce the computational overhead and extract deep visual representations, thereby improving the capacity for small object detection. In the experiment, we compared SDE-DET with the Yolo series and other mainstream detection models in Shatian pomelo detection. The presented SDE-DET model achieved scores of 0.883, 0.771, 0.838, 0.497, and 0.823 in Precision, Recall, mAP@0.5, mAP@0.5:0.95 and F1-score, respectively. SDE-DET has achieved state-of-the-art performance on the STP-AgriData dataset. Experiments indicate that the SDE-DET provides a reliable method for Shatian pomelo detection, laying the foundation for the further development of automatic harvest robots. 
+
+**Abstract (ZH)**: Shatian柚检测：STP-AgriData数据集与SDE-DET模型的研究 
+
+---
+# AJAHR: Amputated Joint Aware 3D Human Mesh Recovery 
+
+**Title (ZH)**: AJAHR: 截断关节意识的3D人体网格恢复 
+
+**Authors**: Hyunjin Cho, Giyun Choi, Jongwon Choi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.19939)  
+
+**Abstract**: Existing human mesh recovery methods assume a standard human body structure, overlooking diverse anatomical conditions such as limb loss. This assumption introduces bias when applied to individuals with amputations - a limitation further exacerbated by the scarcity of suitable datasets. To address this gap, we propose Amputated Joint Aware 3D Human Mesh Recovery (AJAHR), which is an adaptive pose estimation framework that improves mesh reconstruction for individuals with limb loss. Our model integrates a body-part amputation classifier, jointly trained with the mesh recovery network, to detect potential amputations. We also introduce Amputee 3D (A3D), which is a synthetic dataset offering a wide range of amputee poses for robust training. While maintaining competitive performance on non-amputees, our approach achieves state-of-the-art results for amputated individuals. Additional materials can be found at the project webpage. 
+
+**Abstract (ZH)**: 已有的人体网格恢复方法假设标准的人体结构，忽视了诸如肢体缺失等多样化的解剖条件。这种假设在应用于四肢缺失者时引入了偏差——这一局限进一步加剧了可用数据集的稀缺性。为解决这一问题，我们提出了关节感知的肢体缺失人体三维网格恢复方法（AJAHR），这是一种适应性姿态估计框架，能够改善四肢缺失者的网格重建。我们的模型结合了肢体缺失分类器，与网格恢复网络联合训练，以检测潜在的缺失情况。我们还引入了Amputee 3D（A3D）数据集，提供了广泛的人体缺失姿态，以实现稳健的训练。尽管在非缺失者上保持了竞争力，但我们的方法在缺失肢体者上达到了最先进的性能。更多材料可在项目网页上找到。 
+
+---
+# Holographic Transformers for Complex-Valued Signal Processing: Integrating Phase Interference into Self-Attention 
+
+**Title (ZH)**: 全息变换器在复值信号处理中的应用：将相位干扰融入自我注意力 
+
+**Authors**: Enhao Huang, Zhiyu Zhang, Tianxiang Xu, Chunshu Xia, Kaichun Hu, Yuchen Yang, Tongtong Pan, Dong Dong, Zhan Qin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.19331)  
+
+**Abstract**: Complex-valued signals encode both amplitude and phase, yet most deep models treat attention as real-valued correlation, overlooking interference effects. We introduce the Holographic Transformer, a physics-inspired architecture that incorporates wave interference principles into self-attention. Holographic attention modulates interactions by relative phase and coherently superimposes values, ensuring consistency between amplitude and phase. A dual-headed decoder simultaneously reconstructs the input and predicts task outputs, preventing phase collapse when losses prioritize magnitude over phase. We demonstrate that holographic attention implements a discrete interference operator and maintains phase consistency under linear mixing. Experiments on PolSAR image classification and wireless channel prediction show strong performance, achieving high classification accuracy and F1 scores, low regression error, and increased robustness to phase perturbations. These results highlight that enforcing physical consistency in attention leads to generalizable improvements in complex-valued learning and provides a unified, physics-based framework for coherent signal modeling. The code is available at this https URL. 
+
+**Abstract (ZH)**: 复值信号同时编码振幅和相位，而大多数深度模型将注意力视为实值相关性，忽略了干涉效应。我们提出了受物理启发的 holographic transformer 架构，将波干涉原理融入自注意力机制中。holographic 注意力通过相对相位调制交互，并以相干方式叠加值，确保振幅和相位之间的一致性。双头解码器同时重建输入并预测任务输出，防止在损失函数优先考虑幅度而非相位时发生相位坍塌。实验证明 holographic 注意力实现了离散的干涉运算符，并在线性混合下保持相位一致性。在极化雷达图像分类和无线信道预测实验中表现出色，获得高分类准确率和 F1 分数、低回归误差，并增加了对相位扰动的鲁棒性。这些结果表明，在注意力中强制物理一致性可以带来复杂值学习的泛化改进，并提供了一个统一的、基于物理的相干信号建模框架。代码已发布在该网址。 
+
+---
+# Wavelet Fourier Diffuser: Frequency-Aware Diffusion Model for Reinforcement Learning 
+
+**Title (ZH)**: 小波傅里叶散逸器：基于频率的强化学习扩散模型 
+
+**Authors**: Yifu Luo, Yongzhe Chang, Xueqian Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.19305)  
+
+**Abstract**: Diffusion probability models have shown significant promise in offline reinforcement learning by directly modeling trajectory sequences. However, existing approaches primarily focus on time-domain features while overlooking frequency-domain features, leading to frequency shift and degraded performance according to our observation. In this paper, we investigate the RL problem from a new perspective of the frequency domain. We first observe that time-domain-only approaches inadvertently introduce shifts in the low-frequency components of the frequency domain, which results in trajectory instability and degraded performance. To address this issue, we propose Wavelet Fourier Diffuser (WFDiffuser), a novel diffusion-based RL framework that integrates Discrete Wavelet Transform to decompose trajectories into low- and high-frequency components. To further enhance diffusion modeling for each component, WFDiffuser employs Short-Time Fourier Transform and cross attention mechanisms to extract frequency-domain features and facilitate cross-frequency interaction. Extensive experiment results on the D4RL benchmark demonstrate that WFDiffuser effectively mitigates frequency shift, leading to smoother, more stable trajectories and improved decision-making performance over existing methods. 
+
+**Abstract (ZH)**: 频域视角下的扩散概率模型在离线强化学习中的应用：Wavelet Fourier Diffuser (WFDiffuser) 的提出 
+
+---
