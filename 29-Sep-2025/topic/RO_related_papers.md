@@ -1,0 +1,182 @@
+# An Ontology for Unified Modeling of Tasks, Actions, Environments, and Capabilities in Personal Service Robotics 
+
+**Title (ZH)**: 统一建模任务、行动、环境与能力的本体理论 
+
+**Authors**: Margherita Martorana, Francesca Urgese, Ilaria Tiddi, Stefan Schlobach  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.22434)  
+
+**Abstract**: Personal service robots are increasingly used in domestic settings to assist older adults and people requiring support. Effective operation involves not only physical interaction but also the ability to interpret dynamic environments, understand tasks, and choose appropriate actions based on context. This requires integrating both hardware components (e.g. sensors, actuators) and software systems capable of reasoning about tasks, environments, and robot capabilities. Frameworks such as the Robot Operating System (ROS) provide open-source tools that help connect low-level hardware with higher-level functionalities. However, real-world deployments remain tightly coupled to specific platforms. As a result, solutions are often isolated and hard-coded, limiting interoperability, reusability, and knowledge sharing. Ontologies and knowledge graphs offer a structured way to represent tasks, environments, and robot capabilities. Existing ontologies, such as the Socio-physical Model of Activities (SOMA) and the Descriptive Ontology for Linguistic and Cognitive Engineering (DOLCE), provide models for activities, spatial relationships, and reasoning structures. However, they often focus on specific domains and do not fully capture the connection between environment, action, robot capabilities, and system-level integration. In this work, we propose the Ontology for roBOts and acTions (OntoBOT), which extends existing ontologies to provide a unified representation of tasks, actions, environments, and capabilities. Our contributions are twofold: (1) we unify these aspects into a cohesive ontology to support formal reasoning about task execution, and (2) we demonstrate its generalizability by evaluating competency questions across four embodied agents - TIAGo, HSR, UR3, and Stretch - showing how OntoBOT enables context-aware reasoning, task-oriented execution, and knowledge sharing in service robotics. 
+
+**Abstract (ZH)**: 基于机器人和动作的本体（OntoBOT）：统一任务、动作、环境和能力的本体表示及其在服务机器人中的应用 
+
+---
+# Learning-Based Collaborative Control for Bi-Manual Tactile-Reactive Grasping 
+
+**Title (ZH)**: 基于学习的协作控制在双臂触觉反应式抓取中 
+
+**Authors**: Leonel Giacobbe, Jingdao Chen, Chuangchuang Sun  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.22421)  
+
+**Abstract**: Grasping is a core task in robotics with various applications. However, most current implementations are primarily designed for rigid items, and their performance drops considerably when handling fragile or deformable materials that require real-time feedback. Meanwhile, tactile-reactive grasping focuses on a single agent, which limits their ability to grasp and manipulate large, heavy objects. To overcome this, we propose a learning-based, tactile-reactive multi-agent Model Predictive Controller (MPC) for grasping a wide range of objects with different softness and shapes, beyond the capabilities of preexisting single-agent implementations. Our system uses two Gelsight Mini tactile sensors [1] to extract real-time information on object texture and stiffness. This rich tactile feedback is used to estimate contact dynamics and object compliance in real time, enabling the system to adapt its control policy to diverse object geometries and stiffness profiles. The learned controller operates in a closed loop, leveraging tactile encoding to predict grasp stability and adjust force and position accordingly. Our key technical contributions include a multi-agent MPC formulation trained on real contact interactions, a tactile-data driven method for inferring grasping states, and a coordination strategy that enables collaborative control. By combining tactile sensing and a learning-based multi-agent MPC, our method offers a robust, intelligent solution for collaborative grasping in complex environments, significantly advancing the capabilities of multi-agent systems. Our approach is validated through extensive experiments against independent PD and MPC baselines. Our pipeline outperforms the baselines regarding success rates in achieving and maintaining stable grasps across objects of varying sizes and stiffness. 
+
+**Abstract (ZH)**: 基于触觉反应的多代理模型预测控制 grasping：超越单代理能力的广泛对象抓取 
+
+---
+# DemoGrasp: Universal Dexterous Grasping from a Single Demonstration 
+
+**Title (ZH)**: DemoGrasp: 从单次演示学习通用灵巧抓取 
+
+**Authors**: Haoqi Yuan, Ziye Huang, Ye Wang, Chuan Mao, Chaoyi Xu, Zongqing Lu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.22149)  
+
+**Abstract**: Universal grasping with multi-fingered dexterous hands is a fundamental challenge in robotic manipulation. While recent approaches successfully learn closed-loop grasping policies using reinforcement learning (RL), the inherent difficulty of high-dimensional, long-horizon exploration necessitates complex reward and curriculum design, often resulting in suboptimal solutions across diverse objects. We propose DemoGrasp, a simple yet effective method for learning universal dexterous grasping. We start from a single successful demonstration trajectory of grasping a specific object and adapt to novel objects and poses by editing the robot actions in this trajectory: changing the wrist pose determines where to grasp, and changing the hand joint angles determines how to grasp. We formulate this trajectory editing as a single-step Markov Decision Process (MDP) and use RL to optimize a universal policy across hundreds of objects in parallel in simulation, with a simple reward consisting of a binary success term and a robot-table collision penalty. In simulation, DemoGrasp achieves a 95% success rate on DexGraspNet objects using the Shadow Hand, outperforming previous state-of-the-art methods. It also shows strong transferability, achieving an average success rate of 84.6% across diverse dexterous hand embodiments on six unseen object datasets, while being trained on only 175 objects. Through vision-based imitation learning, our policy successfully grasps 110 unseen real-world objects, including small, thin items. It generalizes to spatial, background, and lighting changes, supports both RGB and depth inputs, and extends to language-guided grasping in cluttered scenes. 
+
+**Abstract (ZH)**: 通用多指灵巧手抓取的学习是一项根本性的挑战，存在于机器人操作中。虽然最近的方法利用强化学习（RL）成功学习闭合环路的抓取策略，但高维度、长时域的探索固有难度需要复杂的奖励和课程设计，通常导致在多种物体上达到次优解。我们提出了一种简单的有效方法——DemoGrasp，用于学习通用灵巧抓取。我们从单一成功的抓取特定物体的示演示轨迹出发，并通过编辑这一轨迹中的机器人动作来适应新的物体和姿态：改变腕关节姿态决定抓取的位置，改变手关节角度决定抓取的方式。我们将这一轨迹编辑形式化为单一步骤的马尔可夫决策过程（MDP），并使用强化学习在仿真中并行优化数百种物体上的通用策略，奖励由二元成功项和机器人-桌面碰撞惩罚项构成。在仿真中，DemoGrasp在使用Shadow Hand时于DexGraspNet对象上达到了95%的成功率，超过了先前的最先进方法。此外，它也表现出强大的迁移性，在仅训练175个物体的情况下，对六组未见过的不同灵巧手模型，在多样物体数据集上达到了平均84.6%的成功率。通过基于视觉的模仿学习，我们的策略成功地抓取了110个未见过的真实世界物体，包括小型和细长物品。它能够适应空间、背景和光照变化，支持RGB和深度输入，并扩展到杂乱环境中基于语言引导的抓取。 
+
+---
+# Multi-stage robust nonlinear model predictive control of a lower-limb exoskeleton robot 
+
+**Title (ZH)**: 多阶段鲁棒非线性模型预测控制下肢外骨骼机器人 
+
+**Authors**: Alireza Aliyari, Gholamreza Vossoughi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.22120)  
+
+**Abstract**: The use of exoskeleton robots is increasing due to the rising number of musculoskeletal injuries. However, their effectiveness depends heavily on the design of control systems. Designing robust controllers is challenging because of uncertainties in human-robot systems. Among various control strategies, Model Predictive Control (MPC) is a powerful approach due to its ability to handle constraints and optimize performance. Previous studies have used linearization-based methods to implement robust MPC on exoskeletons, but these can degrade performance due to nonlinearities in the robot's dynamics. To address this gap, this paper proposes a Robust Nonlinear Model Predictive Control (RNMPC) method, called multi-stage NMPC, to control a two-degree-of-freedom exoskeleton by solving a nonlinear optimization problem. This method uses multiple scenarios to represent system uncertainties. The study focuses on minimizing human-robot interaction forces during the swing phase, particularly when the robot carries unknown loads. Simulations and experimental tests show that the proposed method significantly improves robustness, outperforming non-robust NMPC. It achieves lower tracking errors and interaction forces under various uncertainties. For instance, when a 2 kg unknown payload is combined with external disturbances, the RMS values of thigh and shank interaction forces for multi-stage NMPC are reduced by 77 and 94 percent, respectively, compared to non-robust NMPC. 
+
+**Abstract (ZH)**: 随着肌肉骨骼损伤数量的增加，外骨骼机器人的使用正在增加。然而，其有效性高度依赖于控制系统的设计。由于人类-机器人系统中的不确定性，设计稳健的控制器具有挑战性。在各种控制策略中，模型预测控制（MPC）因其能够处理约束和优化性能而成为一种强大的方法。先前的研究使用线性化方法在外骨骼上实现稳健的MPC，但这些方法因机器人动力学中的非线性而可能削弱性能。为此，本文提出了一种称为分阶段NMPC的稳健非线性模型预测控制方法，通过求解非线性优化问题来控制两自由度外骨骼。该方法使用多个场景来表示系统不确定性。研究重点是在摆动阶段尽量减少人机交互力，特别是在机器人携带未知载荷的情况下。仿真和实验测试表明，所提出的方法显著提高了鲁棒性，优于非稳健NMPC。它在各种不确定性下实现了更低的跟踪误差和交互力。例如，当2kg未知载荷与外部干扰结合时，分阶段NMPC的股部和小腿交互力的均方根值分别比非稳健NMPC降低了77%和94%。 
+
+---
+# An Adaptive ICP LiDAR Odometry Based on Reliable Initial Pose 
+
+**Title (ZH)**: 基于可靠初始姿态的自适应ICP激光雷达里程计 
+
+**Authors**: Qifeng Wang, Weigang Li, Lei Nie, Xin Xu, Wenping Liu, Zhe Xu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.22058)  
+
+**Abstract**: As a key technology for autonomous navigation and positioning in mobile robots, light detection and ranging (LiDAR) odometry is widely used in autonomous driving applications. The Iterative Closest Point (ICP)-based methods have become the core technique in LiDAR odometry due to their efficient and accurate point cloud registration capability. However, some existing ICP-based methods do not consider the reliability of the initial pose, which may cause the method to converge to a local optimum. Furthermore, the absence of an adaptive mechanism hinders the effective handling of complex dynamic environments, resulting in a significant degradation of registration accuracy. To address these issues, this paper proposes an adaptive ICP-based LiDAR odometry method that relies on a reliable initial pose. First, distributed coarse registration based on density filtering is employed to obtain the initial pose estimation. The reliable initial pose is then selected by comparing it with the motion prediction pose, reducing the initial error between the source and target point clouds. Subsequently, by combining the current and historical errors, the adaptive threshold is dynamically adjusted to accommodate the real-time changes in the dynamic environment. Finally, based on the reliable initial pose and the adaptive threshold, point-to-plane adaptive ICP registration is performed from the current frame to the local map, achieving high-precision alignment of the source and target point clouds. Extensive experiments on the public KITTI dataset demonstrate that the proposed method outperforms existing approaches and significantly enhances the accuracy of LiDAR odometry. 
+
+**Abstract (ZH)**: 基于可靠初值的自适应ICP激光雷达里程ometry方法及其应用 
+
+---
+# One-DoF Robotic Design of Overconstrained Limbs with Energy-Efficient, Self-Collision-Free Motion 
+
+**Title (ZH)**: 具有能量效率高且自碰撞-free运动的一自由度超约束四肢机器人设计 
+
+**Authors**: Yuping Gu, Bangchao Huang, Haoran Sun, Ronghan Xu, Jiayi Yin, Wei Zhang, Fang Wan, Jia Pan, Chaoyang Song  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.22002)  
+
+**Abstract**: While it is expected to build robotic limbs with multiple degrees of freedom (DoF) inspired by nature, a single DoF design remains fundamental, providing benefits that include, but are not limited to, simplicity, robustness, cost-effectiveness, and efficiency. Mechanisms, especially those with multiple links and revolute joints connected in closed loops, play an enabling factor in introducing motion diversity for 1-DoF systems, which are usually constrained by self-collision during a full-cycle range of motion. This study presents a novel computational approach to designing one-degree-of-freedom (1-DoF) overconstrained robotic limbs for a desired spatial trajectory, while achieving energy-efficient, self-collision-free motion in full-cycle rotations. Firstly, we present the geometric optimization problem of linkage-based robotic limbs in a generalized formulation for self-collision-free design. Next, we formulate the spatial trajectory generation problem with the overconstrained linkages by optimizing the similarity and dynamic-related metrics. We further optimize the geometric shape of the overconstrained linkage to ensure smooth and collision-free motion driven by a single actuator. We validated our proposed method through various experiments, including personalized automata and bio-inspired hexapod robots. The resulting hexapod robot, featuring overconstrained robotic limbs, demonstrated outstanding energy efficiency during forward walking. 
+
+**Abstract (ZH)**: 基于多约束的单自由度冗余机械臂设计及其全周期自碰撞自由运动研究 
+
+---
+# WAVE: Worm Gear-based Adaptive Variable Elasticity for Decoupling Actuators from External Forces 
+
+**Title (ZH)**: WAVE：基于蜗轮的自适应变弹性装置实现执行器与外部力解耦 
+
+**Authors**: Moses Gladson Selvamuthu, Tomoya Takahashi, Riichiro Tadakuma, Kazutoshi Tanaka  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.21878)  
+
+**Abstract**: Robotic manipulators capable of regulating both compliance and stiffness offer enhanced operational safety and versatility. Here, we introduce Worm Gear-based Adaptive Variable Elasticity (WAVE), a variable stiffness actuator (VSA) that integrates a non-backdrivable worm gear. By decoupling the driving motor from external forces using this gear, WAVE enables precise force transmission to the joint, while absorbing positional discrepancies through compliance. WAVE is protected from excessive loads by converting impact forces into elastic energy stored in a spring. In addition, the actuator achieves continuous joint stiffness modulation by changing the spring's precompression length. We demonstrate these capabilities, experimentally validate the proposed stiffness model, show that motor loads approach zero at rest--even under external loading--and present applications using a manipulator with WAVE. This outcome showcases the successful decoupling of external forces. The protective attributes of this actuator allow for extended operation in contact-intensive tasks, and for robust robotic applications in challenging environments. 
+
+**Abstract (ZH)**: 基于蜗杆的自适应可变弹性（WAVE）变量刚度执行器及其应用 
+
+---
+# Autonomous UAV-Quadruped Docking in Complex Terrains via Active Posture Alignment and Constraint-Aware Control 
+
+**Title (ZH)**: 自主无人机-四足机器人在复杂地形下的主动姿态对齐与约束感知控制 docking 
+
+**Authors**: HaoZhe Xu, Cheng Cheng, HongRui Sang, Zhipeng Wang, Qiyong He, Xiuxian Li, Bin He  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.21571)  
+
+**Abstract**: Autonomous docking between Unmanned Aerial Vehicles (UAVs) and ground robots is essential for heterogeneous systems, yet most existing approaches target wheeled platforms whose limited mobility constrains exploration in complex terrains. Quadruped robots offer superior adaptability but undergo frequent posture variations, making it difficult to provide a stable landing surface for UAVs. To address these challenges, we propose an autonomous UAV-quadruped docking framework for GPS-denied environments. On the quadruped side, a Hybrid Internal Model with Horizontal Alignment (HIM-HA), learned via deep reinforcement learning, actively stabilizes the torso to provide a level platform. On the UAV side, a three-phase strategy is adopted, consisting of long-range acquisition with a median-filtered YOLOv8 detector, close-range tracking with a constraint-aware controller that integrates a Nonsingular Fast Terminal Sliding Mode Controller (NFTSMC) and a logarithmic Barrier Function (BF) to guarantee finite-time error convergence under field-of-view (FOV) constraints, and terminal descent guided by a Safety Period (SP) mechanism that jointly verifies tracking accuracy and platform stability. The proposed framework is validated in both simulation and real-world scenarios, successfully achieving docking on outdoor staircases higher than 17 cm and rough slopes steeper than 30 degrees. Supplementary materials and videos are available at: this https URL. 
+
+**Abstract (ZH)**: GPS受限环境下自主无人机-四足机器人对接框架 
+
+---
+# PL-VIWO2: A Lightweight, Fast and Robust Visual-Inertial-Wheel Odometry Using Points and Lines 
+
+**Title (ZH)**: PL-VIWO2: 一种基于点与直线的轻量、快速且 robust 的视觉-惯性-陀螺仪里程计 
+
+**Authors**: Zhixin Zhang, Liang Zhao, Pawel Ladosz  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.21563)  
+
+**Abstract**: Vision-based odometry has been widely adopted in autonomous driving owing to its low cost and lightweight setup; however, its performance often degrades in complex outdoor urban environments. To address these challenges, we propose PL-VIWO2, a filter-based visual-inertial-wheel odometry system that integrates an IMU, wheel encoder, and camera (supporting both monocular and stereo) for long-term robust state estimation. The main contributions are: (i) a novel line feature processing framework that exploits the geometric relationship between 2D feature points and lines, enabling fast and robust line tracking and triangulation while ensuring real-time performance; (ii) an SE(2)-constrained SE(3) wheel pre-integration method that leverages the planar motion characteristics of ground vehicles for accurate wheel updates; and (iii) an efficient motion consistency check (MCC) that filters out dynamic features by jointly using IMU and wheel measurements. Extensive experiments on Monte Carlo simulations and public autonomous driving datasets demonstrate that PL-VIWO2 outperforms state-of-the-art methods in terms of accuracy, efficiency, and robustness. 
+
+**Abstract (ZH)**: 基于视觉的里程计在自动驾驶中因其低成本和轻量级配置而被广泛应用；然而，在复杂的户外城市环境中，其性能往往下降。为了解决这些问题，我们提出了PL-VIWO2，一个融合IMU、轮码盘和摄像头（支持单目和立体）的滤波器基视觉-惯性-轮里程计系统，用于长期鲁棒的状态估计。主要贡献包括：（i）一种新颖的线特征处理框架，利用二维特征点与直线之间的几何关系，实现快速和鲁棒的线跟踪和三角化，同时确保实时性能；（ii）一种SE(2)约束下的SE(3)轮预积分方法，利用地面车辆的平面运动特性以精确更新轮子状态；（iii）一种有效的运动一致性检查(MCC)，通过联合使用IMU和轮子测量来滤除动态特征。Monte Carlo仿真实验和公开的自动驾驶数据集上的大量实验表明，PL-VIWO2在精度、效率和鲁棒性方面优于现有方法。 
+
+---
+# DroneFL: Federated Learning for Multi-UAV Visual Target Tracking 
+
+**Title (ZH)**: 无人机联邦学习：多无人机视觉目标跟踪 
+
+**Authors**: Xiaofan Yu, Yuwei Wu, Katherine Mao, Ye Tian, Vijay Kumar, Tajana Rosing  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.21523)  
+
+**Abstract**: Multi-robot target tracking is a fundamental problem that requires coordinated monitoring of dynamic entities in applications such as precision agriculture, environmental monitoring, disaster response, and security surveillance. While Federated Learning (FL) has the potential to enhance learning across multiple robots without centralized data aggregation, its use in multi-Unmanned Aerial Vehicle (UAV) target tracking remains largely underexplored. Key challenges include limited onboard computational resources, significant data heterogeneity in FL due to varying targets and the fields of view, and the need for tight coupling between trajectory prediction and multi-robot planning. In this paper, we introduce DroneFL, the first federated learning framework specifically designed for efficient multi-UAV target tracking. We design a lightweight local model to predict target trajectories from sensor inputs, using a frozen YOLO backbone and a shallow transformer for efficient onboard training. The updated models are periodically aggregated in the cloud for global knowledge sharing. To alleviate the data heterogeneity that hinders FL convergence, DroneFL introduces a position-invariant model architecture with altitude-based adaptive instance normalization. Finally, we fuse predictions from multiple UAVs in the cloud and generate optimal trajectories that balance target prediction accuracy and overall tracking performance. Our results show that DroneFL reduces prediction error by 6%-83% and tracking distance by 0.4%-4.6% compared to a distributed non-FL framework. In terms of efficiency, DroneFL runs in real time on a Raspberry Pi 5 and has on average just 1.56 KBps data rate to the cloud. 
+
+**Abstract (ZH)**: 多无人机目标跟踪的联邦学习框架 
+
+---
+# Wall Inspector: Quadrotor Control in Wall-proximity Through Model Compensation 
+
+**Title (ZH)**: 墙检测器：基于模型补偿的接近墙体的四旋翼控制 
+
+**Authors**: Peiwen Yang, Weisong Wen, Runqiu Yang, Yingming Chen, Cheuk Chi Tsang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.21496)  
+
+**Abstract**: The safe operation of quadrotors in near-wall urban or indoor environments (e.g., inspection and search-and-rescue missions) is challenged by unmodeled aerodynamic effects arising from wall-proximity. It generates complex vortices that induce destabilizing suction forces, potentially leading to hazardous vibrations or collisions. This paper presents a comprehensive solution featuring (1) a physics-based suction force model that explicitly characterizes the dependency on both rotor speed and wall distance, and (2) a suction-compensated model predictive control (SC-MPC) framework designed to ensure accurate and stable trajectory tracking during wall-proximity operations. The proposed SC-MPC framework incorporates an enhanced dynamics model that accounts for suction force effects, formulated as a factor graph optimization problem integrating system dynamics constraints, trajectory tracking objectives, control input smoothness requirements, and actuator physical limitations. The suction force model parameters are systematically identified through extensive experimental measurements across varying operational conditions. Experimental validation demonstrates SC-MPC's superior performance, achieving 2.1 cm root mean squared error (RMSE) in X-axis and 2.0 cm RMSE in Y-axis position control - representing 74% and 79% improvements over cascaded proportional-integral-derivative (PID) control, and 60% and 53% improvements over standard MPC respectively. The corresponding mean absolute error (MAE) metrics (1.2 cm X-axis, 1.4 cm Y-axis) similarly outperform both baselines. The evaluation platform employs a ducted quadrotor design that provides collision protection while maintaining aerodynamic efficiency. To facilitate reproducibility and community adoption, we have open-sourced our complete implementation, available at this https URL. 
+
+**Abstract (ZH)**: 四旋翼无人机在近墙城区或室内环境中的安全操作受到墙缘引起的未建模气动效应的挑战，这些效应会产生复杂的涡流，引发不利的吸力力，可能导致振动或碰撞。本文提出了一种全面的解决方案，包括（1）一个基于物理的吸力力模型，明确表征旋翼速度和墙体距离的依赖关系，以及（2）一种吸力补偿的模型预测控制（SC-MPC）框架，旨在确保在墙缘操作期间准确稳定的轨迹跟踪。所提出的SC-MPC框架结合了动态模型的增强形式，将其作为因子图优化问题，整合系统动力学约束、轨迹跟踪目标、控制输入平滑要求以及执行器物理限制。通过广泛的实验测量系统地识别吸力力模型参数。实验验证表明，SC-MPC表现出色，在X轴位置控制中实现了2.1 cm的均方根误差（RMSE），在Y轴位置控制中实现了2.0 cm的RMSE——分别比级联比例-积分-微分（PID）控制提高了74%和79%，比标准MPC分别提高了60%和53%。相应的绝对平均误差（MAE）指标（1.2 cm X轴，1.4 cm Y轴）也优于两种基线。评价平台采用带有碰撞保护的涵道四旋翼设计，保持了空气动力学效率。为了促进可重复性和社区应用，我们开源了完整的实现，地址为[this url]。 
+
+---
+# Developing a Mono-Actuated Compliant GeoGami Robot 
+
+**Title (ZH)**: 开发一种单驱机动 compliant GeoGami 机器人 
+
+**Authors**: Archie Webster, Lee Skull, Seyed Amir Tafrishi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.21445)  
+
+**Abstract**: This paper presents the design of a new soft-rigid robotic platform, "GeoGami". We leverage origami surface capabilities to achieve shape contraction and to support locomotion with underactuated forms. A key challenge is that origami surfaces have high degrees of freedom and typically require many actuators; we address repeatability by integrating surface compliance. We propose a mono-actuated GeoGami mobile platform that combines origami surface compliance with a geometric compliant skeleton, enabling the robot to transform and locomote using a single actuator. We demonstrate the robot, develop a stiffness model, and describe the central gearbox mechanism. We also analyze alternative cable-driven actuation methods for the skeleton to enable surface transformation. Finally, we evaluate the GeoGami platform for capabilities, including shape transformation and rolling. This platform opens new capabilities for robots that change shape to access different environments and that use shape transformation for locomotion. 
+
+**Abstract (ZH)**: GeoGami：一种新颖的软-刚性机器人平台及其设计 
+
+---
+# Object Identification Under Known Dynamics: A PIRNN Approach for UAV Classification 
+
+**Title (ZH)**: 已知动力学下的物体识别：一种用于无人机分类的PIRNN方法 
+
+**Authors**: Nyi Nyi Aung, Neil Muralles, Adrian Stein  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.21405)  
+
+**Abstract**: This work addresses object identification under known dynamics in unmanned aerial vehicle applications, where learning and classification are combined through a physics-informed residual neural network. The proposed framework leverages physics-informed learning for state mapping and state-derivative prediction, while a softmax layer enables multi-class confidence estimation. Quadcopter, fixed-wing, and helicopter aerial vehicles are considered as case studies. The results demonstrate high classification accuracy with reduced training time, offering a promising solution for system identification problems in domains where the underlying dynamics are well understood. 
+
+**Abstract (ZH)**: 本研究探讨了在无人驾驶飞行器应用中已知动力学下的目标识别问题，通过物理信息残差神经网络结合学习与分类。所提出的方法利用物理信息学习进行状态映射和状态导数预测，同时softmax层实现多类别置信度估计。四旋翼机、固定翼机和直升机被用作案例研究。结果表明，该方法具有较高的分类准确性并减少了训练时间，为动力学规律明确领域的系统识别问题提供了有前景的解决方案。 
+
+---
+# Automatic Discovery of One Parameter Subgroups of $SO(n)$ 
+
+**Title (ZH)**: 自动发现$SO(n)$的一参数子组 
+
+**Authors**: Pavan Karjol, Vivek V Kashyap, Rohan Kashyap, Prathosh A P  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.22219)  
+
+**Abstract**: We introduce a novel framework for the automatic discovery of one-parameter subgroups ($H_{\gamma}$) of $SO(3)$ and, more generally, $SO(n)$. One-parameter subgroups of $SO(n)$ are crucial in a wide range of applications, including robotics, quantum mechanics, and molecular structure analysis. Our method utilizes the standard Jordan form of skew-symmetric matrices, which define the Lie algebra of $SO(n)$, to establish a canonical form for orbits under the action of $H_{\gamma}$. This canonical form is then employed to derive a standardized representation for $H_{\gamma}$-invariant functions. By learning the appropriate parameters, the framework uncovers the underlying one-parameter subgroup $H_{\gamma}$. The effectiveness of the proposed approach is demonstrated through tasks such as double pendulum modeling, moment of inertia prediction, top quark tagging and invariant polynomial regression, where it successfully recovers meaningful subgroup structure and produces interpretable, symmetry-aware representations. 
+
+**Abstract (ZH)**: 我们提出了一种新的框架，用于自动发现$SO(3)$的一参数子群（$H_{\gamma}$），更一般地讲，是$SO(n)$的一参数子群。$SO(n)$的一参数子群在机器人学、量子力学和分子结构分析等多种应用中至关重要。该方法利用$SO(n)$的李代数由反对称矩阵的标准Jordan形式来建立$H_{\gamma}$作用下轨道的标准形式。该标准形式随后被用来推导$H_{\gamma}$不变函数的标准表示。通过学习适当的参数，该框架揭示了潜在的一参数子群$H_{\gamma}$。通过双摆建模、转动惯量预测、顶夸克标记和不变多项式回归等任务，证明了所提出方法的有效性，该方法成功地恢复了有意义的子群结构并产生了可解释的、意识到了对称性的表示。 
+
+---
