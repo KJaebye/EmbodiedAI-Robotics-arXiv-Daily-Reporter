@@ -1,0 +1,430 @@
+# Crop Spirals: Re-thinking the field layout for future robotic agriculture 
+
+**Title (ZH)**: 作物螺旋布局：重新思考未来的机器人农业田间布局 
+
+**Authors**: Lakshan Lavan, Lanojithan Thiyagarasa, Udara Muthugala, Rajitha de Silva  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.25091)  
+
+**Abstract**: Conventional linear crop layouts, optimised for tractors, hinder robotic navigation with tight turns, long travel distances, and perceptual aliasing. We propose a robot-centric square spiral layout with a central tramline, enabling simpler motion and more efficient coverage. To exploit this geometry, we develop a navigation stack combining DH-ResNet18 waypoint regression, pixel-to-odometry mapping, A* planning, and model predictive control (MPC). In simulations, the spiral layout yields up to 28% shorter paths and about 25% faster execution for waypoint-based tasks across 500 waypoints than linear layouts, while full-field coverage performance is comparable to an optimised linear U-turn strategy. Multi-robot studies demonstrate efficient coordination on the spirals rule-constrained graph, with a greedy allocator achieving 33-37% lower batch completion times than a Hungarian assignment under our setup. These results highlight the potential of redesigning field geometry to better suit autonomous agriculture. 
+
+**Abstract (ZH)**: 传统的以拖拉机为导向的线性作物布局妨碍了机器人的导航，尤其是转弯紧、行距长和感知 aliasing 的情况。我们提出了一种以机器人为中心的方形螺旋布局，具有中央 tramline，这种布局简化了运动并提高了覆盖效率。为利用这一几何结构，我们开发了一套导航栈，结合了 DH-ResNet18 路点回归、像素到里程计映射、A* 规划和模型预测控制 (MPC)。模拟结果显示，与线性布局相比，螺旋布局在500个路点的任务中可缩短高达28%的路径，并加快约25%的任务执行速度，同时全田覆盖性能与优化的线性U形转弯策略相当。多机器人研究展示了在螺旋规则约束图上的高效协调，我们设定下的贪婪分配器在批处理完成时间上比匈牙利分配实现了33-37%的降低。这些结果突显了重新设计田地几何结构以更好地适应自主农业的潜力。 
+
+---
+# AgriCruiser: An Open Source Agriculture Robot for Over-the-row Navigation 
+
+**Title (ZH)**: AgriCruiser: 一种开源的行间农业机器人 
+
+**Authors**: Kenny Truong, Yongkyu Lee, Jason Irie, Shivam Kumar Panda, Shahab Ahmad, Md. Mukhlesur Rahman, M. Khalid Jawed  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.25056)  
+
+**Abstract**: We present the AgriCruiser, an open-source over-the-row agricultural robot developed for low-cost deployment and rapid adaptation across diverse crops and row layouts. The chassis provides an adjustable track width of 1.42 m to 1.57 m, along with a ground clearance of 0.94 m. The AgriCruiser achieves compact pivot turns with radii of 0.71 m to 0.79 m, enabling efficient headland maneuvers. The platform is designed for the integration of the other subsystems, and in this study, a precision spraying system was implemented to assess its effectiveness in weed management. In twelve flax plots, a single robotic spray pass reduced total weed populations (pigweed and Venice mallow) by 24- to 42-fold compared to manual weeding in four flax plots, while also causing less crop damage. Mobility experiments conducted on concrete, asphalt, gravel, grass, and both wet and dry soil confirmed reliable traversal consistent with torque sizing. The complete chassis can be constructed from commodity T-slot extrusion with minimal machining, resulting in a bill of materials costing approximately $5,000 - $6,000, which enables replication and customization. The mentioned results demonstrate that low-cost, reconfigurable over-the-row robots can achieve effective weed management with reduced crop damage and labor requirements, while providing a versatile foundation for phenotyping, sensing, and other agriculture applications. Design files and implementation details are released to accelerate research and adoption of modular agricultural robotics. 
+
+**Abstract (ZH)**: 基于行种植作物的开源低成本自动驾驶机器人：AgriCruiser及其杂草管理效果研究 
+
+---
+# CineWild: Balancing Art and Robotics for Ethical Wildlife Documentary Filmmaking 
+
+**Title (ZH)**: CineWild: 在伦理野生纪录片制作中平衡艺术与机器人技术 
+
+**Authors**: Pablo Pueyo, Fernando Caballero, Ana Cristina Murillo, Eduardo Montijano  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.24921)  
+
+**Abstract**: Drones, or unmanned aerial vehicles (UAVs), have become powerful tools across domains-from industry to the arts. In documentary filmmaking, they offer dynamic, otherwise unreachable perspectives, transforming how stories are told. Wildlife documentaries especially benefit, yet drones also raise ethical concerns: the risk of disturbing the animals they aim to capture. This paper introduces CineWild, an autonomous UAV framework that combines robotics, cinematography, and ethics. Built on model predictive control, CineWild dynamically adjusts flight paths and camera settings to balance cinematic quality with animal welfare. Key features include adaptive zoom for filming from acoustic and visual safe distances, path-planning that avoids an animal's field of view, and smooth, low-noise maneuvers. CineWild exemplifies interdisciplinary innovation-bridging engineering, visual storytelling, and environmental ethics. We validate the system through simulation studies and will release the code upon acceptance. 
+
+**Abstract (ZH)**: 无人机，或无人驾驶航空车辆(UAVs)，已在多个领域成为强大的工具，从工业到艺术。在纪录片制作中，它们提供了动态的、不可达及的新视角，改变了故事讲述的方式。野生动物纪录片尤其受益，但无人机也引发了伦理问题：捕获动物时对其的潜在干扰风险。本文介绍了CineWild，这是一种结合了机器人技术、电影制作和伦理学的自主无人机框架。基于模型预测控制，CineWild动态调整飞行路径和相机设置，以平衡电影品质与动物福利。关键功能包括根据声学和视觉安全距离进行的自适应变焦、避开动物视野的航线规划以及平稳、低噪音的操作。CineWild展示了跨学科创新，融合了工程学、视觉叙事和环境伦理学。通过仿真研究验证了系统，并将在录用后发布代码。 
+
+---
+# Finding an Initial Probe Pose in Teleoperated Robotic Echocardiography via 2D LiDAR-Based 3D Reconstruction 
+
+**Title (ZH)**: 基于2D LiDAR的3D重建在遥操作机器人心脏超声检查中寻找初始探头姿态 
+
+**Authors**: Mariadas Capsran Roshan, Edgar M Hidalgo, Mats Isaksson, Michelle Dunn, Jagannatha Charjee Pyaraka  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.24867)  
+
+**Abstract**: Echocardiography is a key imaging modality for cardiac assessment but remains highly operator-dependent, and access to trained sonographers is limited in underserved settings. Teleoperated robotic echocardiography has been proposed as a solution; however, clinical studies report longer examination times than manual procedures, increasing diagnostic delays and operator workload. Automating non-expert tasks, such as automatically moving the probe to an ideal starting pose, offers a pathway to reduce this burden. Prior vision- and depth-based approaches to estimate an initial probe pose are sensitive to lighting, texture, and anatomical variability. We propose a robot-mounted 2D LiDAR-based approach that reconstructs the chest surface in 3D and estimates the initial probe pose automatically. To the best of our knowledge, this is the first demonstration of robot-mounted 2D LiDAR used for 3D reconstruction of a human body surface. Through plane-based extrinsic calibration, the transformation between the LiDAR and robot base frames was estimated with an overall root mean square (RMS) residual of 1.8 mm and rotational uncertainty below 0.2°. The chest front surface, reconstructed from two linear LiDAR sweeps, was aligned with non-rigid templates to identify an initial probe pose. A mannequin-based study assessing reconstruction accuracy showed mean surface errors of 2.78 +/- 0.21 mm. Human trials (N=5) evaluating the proposed approach found probe initial points typically 20-30 mm from the clinically defined initial point, while the variation across repeated trials on the same subject was less than 4 mm. 
+
+**Abstract (ZH)**: 基于2D LiDAR的机器人辅助心脏超声成像初步研究 
+
+---
+# Towards Modular and Accessible AUV Systems 
+
+**Title (ZH)**: 面向模块化和无障碍AUV系统的研究 
+
+**Authors**: Mingxi Zhou, Farhang Naderi, Yuewei Fu, Tony Jacob, Lin Zhao, Manavi Panjnani, Chengzhi Yuan, William McConnell, Emir Cem Gezer  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.24864)  
+
+**Abstract**: This paper reports the development of a new open- access modular framework, called Marine Vehicle Packages (MVP), for Autonomous Underwater Vehicles. The framework consists of both software and hardware designs allowing easy construction of AUV for research with increased customizability and sufficient payload capacity. This paper will present the scalable hardware system design and the modular software design architecture. New features, such as articulated thruster integra- tion and high-level Graphic User Interface will be discussed. Both simulation and field experiments results are shown to highlight the performance and compatibility of the MVP. 
+
+**Abstract (ZH)**: 本论文报道了一种新的开源模块化框架Marine Vehicle Packages (MVP) 的开发，该框架用于自主水下 vehicle。该框架包括软件和硬件设计，便于进行研究用途的自主水下 vehicle (AUV) 的轻松构建，且具有高度的定制化能力和充足的载荷能力。本文将介绍可扩展的硬件系统设计和模块化的软件设计架构。还将讨论新功能，例如可articulated 推力器集成和高级图形用户界面。通过仿真和现场实验结果来突出MVP的性能和兼容性。 
+
+---
+# Fidelity-Aware Data Composition for Robust Robot Generalization 
+
+**Title (ZH)**: fidelity-意识的数据组合以实现稳健的机器人泛化 
+
+**Authors**: Zizhao Tong, Di Chen, Sicheng Hu, Hongwei Fan, Liliang Chen, Guanghui Ren, Hao Tang, Hao Dong, Ling Shao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.24797)  
+
+**Abstract**: Generalist robot policies trained on large-scale, visually homogeneous datasets can be susceptible to shortcut learning, which impairs their out-of-distribution (OOD) generalization. While generative data augmentation is a common approach to introduce diversity, it presents a subtle challenge: data composition. Naively mixing real and synthetic data can corrupt the learning signal, as this process often prioritizes visual diversity at the expense of information fidelity. This paper suggests that robust generalization depends on principled, fidelity-aware data composition. We introduce Coherent Information Fidelity Tuning (CIFT), a framework that treats data composition as an optimization problem. CIFT uses a practical proxy for Information Fidelity based on the feature-space geometry of a dataset. This enables the identification of a phase transition, termed the Decoherence Point, where training stability degrades. The framework includes a generative engine, Multi-View Video Augmentation (MVAug), to synthesize a causally disentangled data spectrum for this tuning process. Applying CIFT to policy architectures such as $\pi_0$ and Diffusion Policy improves OOD success rates by over 54\%. These results indicate that fidelity-aware composition, beyond data synthesis alone, is an important component for developing robust, general-purpose robots. 
+
+**Abstract (ZH)**: 通用机器人策略在大规模视觉同质化数据集上训练时，可能会遭受捷径学习的影响，这会损害其分布外（OOD）泛化能力。尽管生成数据增强是引入多样性的一种常见方法，但它提出了一个微妙的挑战：数据组合。简单地混合真实数据和合成数据可能会破坏学习信号，因为这个过程往往优先考虑视觉多样性而牺牲信息 fidelity。本文建议，稳健的泛化依赖于基于信息 fidelity 的原则性数据组合。我们介绍了相干信息 fidelity 调整（CIFT）框架，该框架将数据组合视为一个优化问题。CIFT 使用数据集特征空间几何结构的实用代理来衡量信息 fidelity。这使得能够在训练稳定性下降的临界点——称为去相干点——处识别出这一相变。该框架包括一个生成引擎，多视点视频增强（MVAug），以合成因果解纠缠的数据频谱，用于这一调整过程。将 CIFT 应用于策略架构如 $\pi_0$ 和扩散策略，可以将分布外成功率提高超过 54%。这些结果表明，除了数据合成外，基于 fidelity 的组合是开发稳健的通用机器人的重要组成部分。 
+
+---
+# Contextual Neural Moving Horizon Estimation for Robust Quadrotor Control in Varying Conditions 
+
+**Title (ZH)**: 变条件下鲁棒旋翼无人机控制的上下文神经移动_horizon估计算法 
+
+**Authors**: Kasra Torshizi, Chak Lam Shek, Khuzema Habib, Guangyao Shi, Pratap Tokekar, Troi Williams  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.24281)  
+
+**Abstract**: Adaptive controllers on quadrotors typically rely on estimation of disturbances to ensure robust trajectory tracking. Estimating disturbances across diverse environmental contexts is challenging due to the inherent variability and uncertainty in the real world. Such estimators require extensive fine-tuning for a specific scenario, which makes them inflexible and brittle to changing conditions. Machine-learning approaches, such as training a neural network to tune the estimator's parameters, are promising. However, collecting data across all possible environmental contexts is impossible. It is also inefficient as the same estimator parameters could work for "nearby" contexts. In this paper, we present a sequential decision making strategy that decides which environmental contexts, using Bayesian Optimization with a Gaussian Process, to collect data from in order to ensure robust performance across a wide range of contexts. Our method, Contextual NeuroMHE, eliminates the need for exhaustive training across all environments while maintaining robust performance under different conditions. By enabling the neural network to adapt its parameters dynamically, our method improves both efficiency and generalization. Experimental results in various real-world settings demonstrate that our approach outperforms the prior work by 20.3\% in terms of maximum absolute position error and can capture the variations in the environment with a few carefully chosen contexts. 
+
+**Abstract (ZH)**: 基于上下文的神经MHE在旋翼无人机中的顺序决策方法：通过贝叶斯优化实现广泛环境条件下的鲁棒性能 
+
+---
+# Very High Frequency Interpolation for Direct Torque Control 
+
+**Title (ZH)**: 非常高速插值在直接转矩控制中的应用 
+
+**Authors**: Rafael Kourdis, Maciej Stępień, Jérôme Manhes, Nicolas Mansard, Steve Tonneau, Philippe Souères, Thomas Flayols  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.24175)  
+
+**Abstract**: Torque control enables agile and robust robot motion, but deployment is often hindered by instability and hardware limits. Here, we present a novel solution to execute whole-body linear feedback at up to 40 kHz on open-source hardware. We use this to interpolate non-linear schemes during real-world execution, such as inverse dynamics and learned torque policies. Our results show that by stabilizing torque controllers, high-frequency linear feedback could be an effective route towards unlocking the potential of torque-controlled robotics. 
+
+**Abstract (ZH)**: 扭矩控制使机器人运动更加敏捷和 robust，但往往会因为不稳定性及硬件限制而难以部署。在此，我们提出了一种 novel 解决方案，可在开源硬件上以最高 40 kHz 的频率执行全身线性反馈。我们使用这种方法在实际执行过程中插值非线性方案，如逆动力学和学习到的扭矩策略。我们的结果表明，通过稳定扭矩控制器，高频线性反馈可能是解锁扭矩控制机器人潜力的有效途径。 
+
+---
+# A Novel Model for 3D Motion Planning for a Generalized Dubins Vehicle with Pitch and Yaw Rate Constraints 
+
+**Title (ZH)**: 一种具有滚转和偏航率约束的一般化杜宾车三维运动规划的新模型 
+
+**Authors**: Deepak Prakash Kumar, Swaroop Darbha, Satyanarayana Gupta Manyam, David Casbeer  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.24143)  
+
+**Abstract**: In this paper, we propose a new modeling approach and a fast algorithm for 3D motion planning, applicable for fixed-wing unmanned aerial vehicles. The goal is to construct the shortest path connecting given initial and final configurations subject to motion constraints. Our work differs from existing literature in two ways. First, we consider full vehicle orientation using a body-attached frame, which includes roll, pitch, and yaw angles. However, existing work uses only pitch and/or heading angle, which is insufficient to uniquely determine orientation. Second, we use two control inputs to represent bounded pitch and yaw rates, reflecting control by two separate actuators. In contrast, most previous methods rely on a single input, such as path curvature, which is insufficient for accurately modeling the vehicle's kinematics in 3D. We use a rotation minimizing frame to describe the vehicle's configuration and its evolution, and construct paths by concatenating optimal Dubins paths on spherical, cylindrical, or planar surfaces. Numerical simulations show our approach generates feasible paths within 10 seconds on average and yields shorter paths than existing methods in most cases. 
+
+**Abstract (ZH)**: 本文提出了一种新的建模方法和快速算法，用于固定翼无人机的3D运动规划。目标是在运动约束条件下，构造给定初始和最终配置之间的最短路径。与现有文献相比，我们的工作主要在两个方面有所不同。首先，我们使用关联于机体的坐标系考虑全机姿态，包括滚转、俯仰和偏航角。而现有工作仅使用俯仰角和/或航向角，不足以唯一确定姿态。其次，我们使用两个控制输入来表示有界俯仰和偏航角速率，反映了由两个独立作动器控制的特点。相比之下，大多数先前方法依赖单一输入，如路径曲率，这在准确建模3D运动学时是不足的。我们使用旋转最小化框架描述无人机的姿态及其演变，并通过在球面、圆柱面或平面表面上连接最优杜宾斯路径来构建路径。数值仿真显示，我们的方法平均在10秒内生成可行路径，并在大多数情况下生成的路径比现有方法更短。 
+
+---
+# Certifiably Optimal State Estimation and Robot Calibration Using Trace-Constrained SDP 
+
+**Title (ZH)**: 使用约束迹SDP的可验证最优状态估算与机器人校准 
+
+**Authors**: Liangting Wu, Roberto Tron  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.23656)  
+
+**Abstract**: Many nonconvex problems in robotics can be relaxed into convex formulations via semidefinite programming (SDP), which offers the advantage of global optimality. The practical quality of these solutions, however, critically depends on achieving rank-1 matrices, a condition that typically requires additional tightening. In this work, we focus on trace-constrained SDPs, where the decision variables are positive semidefinite (PSD) matrices with fixed trace values. These additional constraints not only capture important structural properties but also facilitate first-order methods for recovering rank-1 solutions. We introduce customized fixed-trace variables and constraints to represent common robotic quantities such as rotations and translations, which can be exactly recovered when the corresponding variables are rank-1. To further improve practical performance, we develop a gradient-based refinement procedure that projects relaxed SDP solutions toward rank-1, low-cost candidates, which can then be certified for global optimality via the dual problem. We demonstrate that many robotics tasks can be expressed within this trace-constrained SDP framework, and showcase its effectiveness through simulations in perspective-n-point (PnP) estimation, hand-eye calibration, and dual-robot system calibration. To support broader use, we also introduce a modular ``virtual robot'' abstraction that simplifies modeling across different problem settings. 
+
+**Abstract (ZH)**: 基于迹约束半定规划的机器人非凸问题求解 
+
+---
+# Encoding Material Safety using Control Barrier Functions for Soft Actuator Control 
+
+**Title (ZH)**: 使用控制障碍函数对软执行器进行材料安全性编码控制 
+
+**Authors**: Nicholas Pagliocca, Behrad Koohbor, Mitja Trkov  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.23623)  
+
+**Abstract**: Until recently, the concept of soft robot safety was an informal notion, often attributed solely to the fact that soft robots are less likely to damage their operating environment than rigid robots. As the field moves toward feedback control for practical applications, it becomes increasingly important to define what safety means and to characterize how soft robots can become unsafe. The unifying theme of soft robotics is to achieve useful functionality through deformation. Consequently, limitations in constitutive model accuracy and risks of material failure are inherent to all soft robots and pose a key challenge in designing provably safe controllers. This work introduces a formal definition of material safety based on strain energy functions and provides a controller that enforces it. We characterize safe and unsafe sets of an incompressible hyperelastic material and demonstrate that safety can be enforced using a high-order control barrier function (HOCBF) with quadratic program-based feedback control. As a case study, we consider a pressurized hyperelastic tube with inertial effects, first-order viscous effects, and full-state feedback. Simulation results verify that the proposed methodology can enforce the material safety specification. 
+
+**Abstract (ZH)**: 直到最近，软机器人安全的概念还是一个非正式的概念，通常被认为软机器人比刚性机器人更不可能损坏其操作环境。随着该领域向实际应用的反馈控制迈进，明确安全的含义并刻画软机器人如何变得不安全变得越来越重要。软机器人的一贯主题是通过变形实现有用的功能。因此，构成模型的准确性限制和材料失效的风险是所有软机器人都固有的问题，构成了设计可证明安全控制器的关键挑战。本工作基于应变能函数提出了一个材料安全的正式定义，并提供了一个能实现这一定义的控制器。我们刻画了不可压缩超弹性和安全及不安全的集合，并演示了如何使用高阶控制障碍函数（HOCBF）和基于二次规划的反馈控制来实现安全性。作为案例研究，我们考虑了一个具有惯性效应、一阶黏性效应和全状态反馈的加压超弹性管。仿真结果验证了所提出的方法可以实现材料安全规范。 
+
+---
+# GES-UniGrasp: A Two-Stage Dexterous Grasping Strategy With Geometry-Based Expert Selection 
+
+**Title (ZH)**: GES-UniGrasp: 一种基于几何专家选择的两阶段灵巧抓取策略 
+
+**Authors**: Fangting Xu, Jilin Zhu, Xiaoming Gu, Jianzhong Tang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.23567)  
+
+**Abstract**: Robust and human-like dexterous grasping of general objects is a critical capability for advancing intelligent robotic manipulation in real-world scenarios. However, existing reinforcement learning methods guided by grasp priors often result in unnatural behaviors. In this work, we present \textit{ContactGrasp}, a robotic dexterous pre-grasp and grasp dataset that explicitly accounts for task-relevant wrist orientation and thumb-index pinching coordination. The dataset covers 773 objects in 82 categories, providing a rich foundation for training human-like grasp strategies. Building upon this dataset, we perform geometry-based clustering to group objects by shape, enabling a two-stage Geometry-based Expert Selection (GES) framework that selects among specialized experts for grasping diverse object geometries, thereby enhancing adaptability to diverse shapes and generalization across categories. Our approach demonstrates natural grasp postures and achieves high success rates of 99.4\% and 96.3\% on the train and test sets, respectively, showcasing strong generalization and high-quality grasp execution. 
+
+**Abstract (ZH)**: Robust和人性化的通用物体操作是提升实际应用场景中智能机器人 manipulation 关键能力。然而，现有的由抓取先验指导的强化学习方法常常导致不自然的行为。在本文中，我们提出了 ContactGrasp，这是一个考虑任务相关手腕姿态和拇指-食指夹持协调的机器人灵巧预抓取和抓取数据集。该数据集涵盖了 82 个类别中的 773 个物体，为训练类人抓取策略提供了丰富的基础。在此数据集的基础上，我们进行了基于几何的聚类，按形状对物体进行分组，从而建立了一种基于几何的专家选择（GES）的两阶段框架，能够在不同形状的物体抓取上选择专门的专家，从而增强对不同形状的适应性和类别的泛化能力。我们的方法展示了自然的抓取姿态，在训练集和测试集上分别实现了 99.4% 和 96.3% 的高成功率，彰显了强大的泛化能力和高质量的抓取执行。 
+
+---
+# High Torque Density PCB Axial Flux Permanent Magnet Motor for Micro Robots 
+
+**Title (ZH)**: 高扭矩密度印制电路板轴向磁 Flux 永磁电机用于微机器人 
+
+**Authors**: Jianren Wang, Jie Han, Abhinav Gupta, Deepak Pathak, Yang Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.23561)  
+
+**Abstract**: Quasi-direct-drive (QDD) actuation is transforming legged and manipulator robots by eliminating high-ratio gearboxes, yet it demands motors that deliver very high torque at low speed within a thin, disc-shaped joint envelope. Axial-flux permanent-magnet (AFPM) machines meet these geometric and torque requirements, but scaling them below a 20mm outer diameter is hampered by poor copper fill in conventional wound stators, inflating resistance and throttling continuous torque. This paper introduces a micro-scale AFPM motor that overcomes these limitations through printed-circuit-board (PCB) windings fabricated with advanced IC-substrate high-density interconnect (HDI) technology. The resulting 48-layer stator-formed by stacking four 12-layer HDI modules-achieves a record 45\% copper fill in a package only 5mm thick and 19mm in diameter. We perform comprehensive electromagnetic and thermal analyses to inform the motor design, then fabricate a prototype whose performance characteristics are experimentally verified. 
+
+**Abstract (ZH)**: 基于轴向磁通永磁机的准直接驱动微型电机：通过高密度互连技术实现紧凑高效的设计 
+
+---
+# Zero-shot Whole-Body Manipulation with a Large-Scale Soft Robotic Torso via Guided Reinforcement Learning 
+
+**Title (ZH)**: 基于引导强化学习的大型软体躯干的零样本全身 manipulation 
+
+**Authors**: Curtis C. Johnson, Carlo Alessi, Egidio Falotico, Marc D. Killpack  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.23556)  
+
+**Abstract**: Whole-body manipulation is a powerful yet underexplored approach that enables robots to interact with large, heavy, or awkward objects using more than just their end-effectors. Soft robots, with their inherent passive compliance, are particularly well-suited for such contact-rich manipulation tasks, but their uncertainties in kinematics and dynamics pose significant challenges for simulation and control. In this work, we address this challenge with a simulation that can run up to 350x real time on a single thread in MuJoCo and provide a detailed analysis of the critical tradeoffs between speed and accuracy for this simulation. Using this framework, we demonstrate a successful zero-shot sim-to-real transfer of a learned whole-body manipulation policy, achieving an 88% success rate on the Baloo hardware platform. We show that guiding RL with a simple motion primitive is critical to this success where standard reward shaping methods struggled to produce a stable and successful policy for whole-body manipulation. Furthermore, our analysis reveals that the learned policy does not simply mimic the motion primitive. It exhibits beneficial reactive behavior, such as re-grasping and perturbation recovery. We analyze and contrast this learned policy against an open-loop baseline to show that the policy can also exhibit aggressive over-corrections under perturbation. To our knowledge, this is the first demonstration of forceful, six-DoF whole-body manipulation using two continuum soft arms on a large-scale platform (10 kg payloads), with zero-shot policy transfer. 
+
+**Abstract (ZH)**: 全身 manipulation 是一种强大但尚未充分探索的方法，能够使机器人使用末端执行器以外的部分与大型、沉重或笨重的对象进行交互。具有内在被动顺应性的软机器人特别适合此类接触密集型 manipulation 任务，但其运动学和动力学的不确定性为仿真和控制带来了重大挑战。在本研究中，我们通过在 MuJoCo 上实现单线程高达 350 倍实时运行速度的仿真，并详细分析了速度与准确性的关键权衡。利用这一框架，我们展示了零样本仿真到现实转换的成功，该策略在 Baloo 硬件平台上实现了 88% 的成功率。我们证明，用简单的运动原型引导强化学习对于这一成功至关重要，而标准的奖励塑形方法难以为全身 manipulation 生成稳定且成功的行为策略。此外，我们的分析显示，学习到的策略不仅仅模仿运动原型，还表现出有益的反应行为，如重新抓取和扰动恢复。我们将这一学习策略与开环基线进行分析和对比，展示了策略在扰动下也可能表现出激进的过矫正行为。据我们所知，这是首次在大型平台上（10 kg 有效载荷）使用两个连续柔臂实现六自由度强力全身 manipulation 并实现零样本策略转换的示范。 
+
+---
+# Robust Orientation Estimation with TRIAD-aided Manifold EKF 
+
+**Title (ZH)**: TRIAD辅助流形EKF的鲁棒姿态估计 
+
+**Authors**: Arjun Sadananda, Ravi Banavar, Kavi Arya  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.23456)  
+
+**Abstract**: The manifold extended Kalman filter (Manifold EKF) has found extensive application for attitude determination. Magnetometers employed as sensors for such attitude determination are easily prone to disturbances by their sensitivity to calibration and external magnetic fields. The TRIAD (Tri-Axial Attitude Determination) algorithm is well known as a sub-optimal attitude estimator. In this article, we incorporate this sub-optimal feature of the TRIAD in mitigating the influence of the magnetometer reading in the pitch and roll axis determination in the Manifold EKF algorithm. We substantiate our results with experiments. 
+
+**Abstract (ZH)**: 流形扩展卡尔曼滤波器（Manifold EKF）在姿态确定中得到了广泛应用。作为姿态确定传感器的磁强计容易受到校准敏感性及外部磁场的影响而产生干扰。TRIAD（三轴姿态确定）算法作为次优姿态估计算法而广为人知。本文将TRIAD的次优特性应用于流形扩展卡尔曼滤波器算法中，以减轻磁强计读数对俯仰和滚转轴姿态确定的影响。实验结果证明了我们的方法。 
+
+---
+# Space Robotics Bench: Robot Learning Beyond Earth 
+
+**Title (ZH)**: 空间机器人平台：超越地球的机器人学习 
+
+**Authors**: Andrej Orsula, Matthieu Geist, Miguel Olivares-Mendez, Carol Martinez  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.23328)  
+
+**Abstract**: The growing ambition for space exploration demands robust autonomous systems that can operate in unstructured environments under extreme extraterrestrial conditions. The adoption of robot learning in this domain is severely hindered by the prohibitive cost of technology demonstrations and the limited availability of data. To bridge this gap, we introduce the Space Robotics Bench, an open-source simulation framework for robot learning in space. It offers a modular architecture that integrates on-demand procedural generation with massively parallel simulation environments to support the creation of vast and diverse training distributions for learning-based agents. To ground research and enable direct comparison, the framework includes a comprehensive suite of benchmark tasks that span a wide range of mission-relevant scenarios. We establish performance baselines using standard reinforcement learning algorithms and present a series of experimental case studies that investigate key challenges in generalization, end-to-end learning, adaptive control, and sim-to-real transfer. Our results reveal insights into the limitations of current methods and demonstrate the utility of the framework in producing policies capable of real-world operation. These contributions establish the Space Robotics Bench as a valuable resource for developing, benchmarking, and deploying the robust autonomous systems required for the final frontier. 
+
+**Abstract (ZH)**: 空间机器人台架：一种用于空间机器人学习的开源仿真框架 
+
+---
+# GUARD: Toward a Compromise between Traditional Control and Learning for Safe Robot Systems 
+
+**Title (ZH)**: GUARD: 传统控制与学习之间安全机器人系统中的权衡研究 
+
+**Authors**: Johannes A. Gaus, Junheon Yoon, Woo-Jeong Baek, Seungwon Choi, Suhan Park, Jaeheung Park  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.23312)  
+
+**Abstract**: This paper presents the framework \textbf{GUARD} (\textbf{G}uided robot control via \textbf{U}ncertainty attribution and prob\textbf{A}bilistic kernel optimization for \textbf{R}isk-aware \textbf{D}ecision making) that combines traditional control with an uncertainty-aware perception technique using active learning with real-time capability for safe robot collision avoidance. By doing so, this manuscript addresses the central challenge in robotics of finding a reasonable compromise between traditional methods and learning algorithms to foster the development of safe, yet efficient and flexible applications. By unifying a reactive model predictive countouring control (RMPCC) with an Iterative Closest Point (ICP) algorithm that enables the attribution of uncertainty sources online using active learning with real-time capability via a probabilistic kernel optimization technique, \emph{GUARD} inherently handles the existing ambiguity of the term \textit{safety} that exists in robotics literature. Experimental studies indicate the high performance of \emph{GUARD}, thereby highlighting the relevance and need to broaden its applicability in future. 
+
+**Abstract (ZH)**: GUARD：基于不确定性归因和概率内核优化的风险感知决策引导机器人控制框架 
+
+---
+# A Novel Narrow Region Detector for Sampling-Based Planners' Efficiency: Match Based Passage Identifier 
+
+**Title (ZH)**: 基于匹配的通道识别器：一种用于采样基于规划器效率的窄区域检测器 
+
+**Authors**: Yafes Enes Şahiner, Esat Yusuf Gündoğdu, Volkan Sezer  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.23288)  
+
+**Abstract**: Autonomous technology, which has become widespread today, appears in many different configurations such as mobile robots, manipulators, and drones. One of the most important tasks of these vehicles during autonomous operations is path planning. In the literature, path planners are generally divided into two categories: probabilistic and deterministic methods. In the analysis of probabilistic methods, the common problem of almost all methods is observed in narrow passage environments. In this paper, a novel sampler is proposed that deterministically identifies narrow passage environments using occupancy grid maps and accordingly increases the amount of sampling in these regions. The codes of the algorithm is provided as open source. To evaluate the performance of the algorithm, benchmark studies are conducted in three distinct categories: specific and random simulation environments, and a real-world environment. As a result, it is observed that our algorithm provides higher performance in planning time and number of milestones compared to the baseline samplers. 
+
+**Abstract (ZH)**: 自主技术已广泛应用于多种配置的设备中，如移动机器人、 manipulator 和无人机。这些自主操作的车辆在运行过程中主要任务之一是路径规划。文献中，路径规划方法通常被分为两类：概率性和确定性方法。在对概率性方法的分析中，几乎所有方法在狭窄通道环境下的共同问题得到了观察。本文提出了一种新的采样器，能够确定性地识别狭窄通道环境，并相应地在这些区域增加采样量。该算法的代码已开源。为了评估算法性能，我们在三种不同的类别环境进行了基准研究：特定模拟环境、随机模拟环境和真实环境。结果显示，与基线采样器相比，我们的算法在规划时间和里程碑数量上均表现出更高的性能。 
+
+---
+# Simulated Annealing for Multi-Robot Ergodic Information Acquisition Using Graph-Based Discretization 
+
+**Title (ZH)**: 基于图基 discretization 的多机器人遍历信息获取模拟退火方法 
+
+**Authors**: Benjamin Wong, Aaron Weber, Mohamed M. Safwat, Santosh Devasia, Ashis G. Banerjee  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.23214)  
+
+**Abstract**: One of the goals of active information acquisition using multi-robot teams is to keep the relative uncertainty in each region at the same level to maintain identical acquisition quality (e.g., consistent target detection) in all the regions. To achieve this goal, ergodic coverage can be used to assign the number of samples according to the quality of observation, i.e., sampling noise levels. However, the noise levels are unknown to the robots. Although this noise can be estimated from samples, the estimates are unreliable at first and can generate fluctuating values. The main contribution of this paper is to use simulated annealing to generate the target sampling distribution, starting from uniform and gradually shifting to an estimated optimal distribution, by varying the coldness parameter of a Boltzmann distribution with the estimated sampling entropy as energy. Simulation results show a substantial improvement of both transient and asymptotic entropy compared to both uniform and direct-ergodic searches. Finally, a demonstration is performed with a TurtleBot swarm system to validate the physical applicability of the algorithm. 
+
+**Abstract (ZH)**: 多机器人团队主动信息获取中的遍历覆盖及其目标采样分布生成 
+
+---
+# EKF-Based Fusion of Wi-Fi/LiDAR/IMU for Indoor Localization and Navigation 
+
+**Title (ZH)**: 基于EKF的 Wi-Fi/LiDAR/IMU 内部定位与导航融合技术 
+
+**Authors**: Zeyi Li, Zhe Tang, Kyeong Soo Kim, Sihao Li, Jeremy S. Smith  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.23118)  
+
+**Abstract**: Conventional Wi-Fi received signal strength indicator (RSSI) fingerprinting cannot meet the growing demand for accurate indoor localization and navigation due to its lower accuracy, while solutions based on light detection and ranging (LiDAR) can provide better localization performance but is limited by their higher deployment cost and complexity. To address these issues, we propose a novel indoor localization and navigation framework integrating Wi-Fi RSSI fingerprinting, LiDAR-based simultaneous localization and mapping (SLAM), and inertial measurement unit (IMU) navigation based on an extended Kalman filter (EKF). Specifically, coarse localization by deep neural network (DNN)-based Wi-Fi RSSI fingerprinting is refined by IMU-based dynamic positioning using a Gmapping-based SLAM to generate an occupancy grid map and output high-frequency attitude estimates, which is followed by EKF prediction-update integrating sensor information while effectively suppressing Wi-Fi-induced noise and IMU drift errors. Multi-group real-world experiments conducted on the IR building at Xi'an Jiaotong-Liverpool University demonstrates that the proposed multi-sensor fusion framework suppresses the instability caused by individual approaches and thereby provides stable accuracy across all path configurations with mean two-dimensional (2D) errors ranging from 0.2449 m to 0.3781 m. In contrast, the mean 2D errors of Wi-Fi RSSI fingerprinting reach up to 1.3404 m in areas with severe signal interference, and those of LiDAR/IMU localization are between 0.6233 m and 2.8803 m due to cumulative drift. 
+
+**Abstract (ZH)**: 基于Wi-Fi RSSI特征指纹、LiDARSLAM和IMU的扩展卡尔曼滤波集成的室内定位与导航框架 
+
+---
+# Liaohe-CobotMagic-PnP: an Imitation Learning Dataset of Intelligent Robot for Industrial Applications 
+
+**Title (ZH)**: 辽河-CobotMagic-PnP：面向工业应用的智能机器人 imitation 学习数据集 
+
+**Authors**: Chen Yizhe, Wang Qi, Hu Dongxiao, Jingzhe Fang, Liu Sichao, Zixin An, Hongliang Niu, Haoran Liu, Li Dong, Chuanfen Feng, Lan Dapeng, Liu Yu, Zhibo Pang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.23111)  
+
+**Abstract**: In Industry 4.0 applications, dynamic environmental interference induces highly nonlinear and strongly coupled interactions between the environmental state and robotic behavior. Effectively representing dynamic environmental states through multimodal sensor data fusion remains a critical challenge in current robotic datasets. To address this, an industrial-grade multimodal interference dataset is presented, designed for robotic perception and control under complex conditions. The dataset integrates multi-dimensional interference features including size, color, and lighting variations, and employs high-precision sensors to synchronously collect visual, torque, and joint-state measurements. Scenarios with geometric similarity exceeding 85\% and standardized lighting gradients are included to ensure real-world representativeness. Microsecond-level time-synchronization and vibration-resistant data acquisition protocols, implemented via the Robot Operating System (ROS), guarantee temporal and operational fidelity. Experimental results demonstrate that the dataset enhances model validation robustness and improves robotic operational stability in dynamic, interference-rich environments. The dataset is publicly available at:this https URL. 
+
+**Abstract (ZH)**: 在工业4.0应用中，动态环境干扰引起环境状态与机器人行为之间的高度非线性和强耦合交互。通过多模传感器数据融合有效表示动态环境状态仍然是当前机器人数据集中的关键挑战。为应对这一挑战，提出了一种工业级多模干扰数据集，旨在在复杂条件下用于机器人感知与控制。该数据集整合了大小、颜色和光照变化等多种干扰特征，并采用高精度传感器同步收集视觉、扭矩和关节状态测量数据。包含几何相似度超过85%的场景和标准化的光照梯度，以确保实际环境的代表性和真实性。通过机器人操作系统（ROS）实现微妙级的时间同步和抗振动数据采集协议，确保时间和操作的准确性。实验结果表明，该数据集增强了模型验证的稳健性，并提高了机器人在动态、干扰丰富的环境中的操作稳定性。该数据集已公开 accessible at this https URL。 
+
+---
+# RAISE: A Robot-Assisted Selective Disassembly and Sorting System for End-of-Life Phones 
+
+**Title (ZH)**: RAISE：一种机器人辅助选择性拆解和分类的废旧手机处理系统 
+
+**Authors**: Chang Liu, Badrinath Balasubramaniam, Neal Yancey, Michael Severson, Adam Shine, Philip Bove, Beiwen Li, Xiao Liang, Minghui Zheng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.23048)  
+
+**Abstract**: End-of-Life (EoL) phones significantly exacerbate global e-waste challenges due to their high production volumes and short lifecycles. Disassembly is among the most critical processes in EoL phone recycling. However, it relies heavily on human labor due to product variability. Consequently, the manual process is both labor-intensive and time-consuming. In this paper, we propose a low-cost, easily deployable automated and selective disassembly and sorting system for EoL phones, consisting of three subsystems: an adaptive cutting system, a vision-based robotic sorting system, and a battery removal system. The system can process over 120 phones per hour with an average disassembly success rate of 98.9%, efficiently delivering selected high-value components to downstream processing. It provides a reliable and scalable automated solution to the pressing challenge of EoL phone disassembly. Additionally, the automated system can enhance disassembly economics, converting a previously unprofitable process into one that yields a net profit per unit weight of EoL phones. 
+
+**Abstract (ZH)**: End-of-Life 手机的低成本易部署自动选择性拆解与分类系统显著缓解电子废弃物挑战 
+
+---
+# Safe Task Space Synchronization with Time-Delayed Information 
+
+**Title (ZH)**: 带有时延信息的安全任务空间同步 
+
+**Authors**: Rounak Bhattacharya, Vrithik R. Guthikonda, Ashwin P. Dani  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.22976)  
+
+**Abstract**: In this paper, an adaptive controller is designed for the synchronization of the trajectory of a robot with unknown kinematics and dynamics to that of the current human trajectory in the task space using the delayed human trajectory information. The communication time delay may be a result of various factors that arise in human-robot collaboration tasks, such as sensor processing or fusion to estimate trajectory/intent, network delays, or computational limitations. The developed adaptive controller uses Barrier Lyapunov Function (BLF) to constrain the Cartesian coordinates of the robot to ensure safety, an ICL-based adaptive law to account for the unknown kinematics, and a gradient-based adaptive law to estimate unknown dynamics. Barrier Lyapunov-Krasovskii (LK) functionals are used for the stability analysis to show that the synchronization and parameter estimation errors remain semi-globally uniformly ultimately bounded (SGUUB). The simulation results based on a human-robot synchronization scenario with time delay are provided to demonstrate the effectiveness of the designed synchronization controller with safety constraints. 
+
+**Abstract (ZH)**: 一种基于延迟人类轨迹信息的未知kinematics和dynamics的机器人轨迹同步自适应控制器设计 
+
+---
+# Hierarchical Control Design for Space Robots with Application to In-Orbit Servicing Missions 
+
+**Title (ZH)**: 空间机器人在轨服务任务的分层控制设计 
+
+**Authors**: Pietro Bruschi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.22955)  
+
+**Abstract**: In-Orbit Servicing and Active Debris Removal require advanced robotic capabilities for capturing and detumbling uncooperative targets. This work presents a hierarchical control framework for autonomous robotic capture of tumbling objects in space. A simulation environment is developed, incorporating sloshing dynamics of the chaser, a rarely studied effect in space robotics. The proposed controller combines an inner Lyapunov-based robust control loop for multi-body dynamics with an outer loop addressing an extended inverse kinematics problem. Simulation results show improved robustness and adaptability compared to existing control schemes. 
+
+**Abstract (ZH)**: 在轨服务与主动碎片清除需要先进的机器人技术来捕捉和定姿不合作目标。本文提出了一种分层控制框架，以实现空间中自由旋转物体的自主机器人捕捉。开发了一个仿真环境，包含追逐器的晃动动力学，这是空间机器人学中鲜有研究的效果。所提出的控制器结合了一个基于Lyapunov的内部鲁棒控制环，用于多体动力学，以及一个外部环解决扩展的逆运动学问题。仿真结果表明，与现有控制方案相比，该控制器具有更好的鲁棒性和适应性。 
+
+---
+# ARMimic: Learning Robotic Manipulation from Passive Human Demonstrations in Augmented Reality 
+
+**Title (ZH)**: ARMimic: 从增强现实中的被动人类示范学习机器人操作 
+
+**Authors**: Rohan Walia, Yusheng Wang, Ralf Römer, Masahiro Nishio, Angela P. Schoellig, Jun Ota  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.22914)  
+
+**Abstract**: Imitation learning is a powerful paradigm for robot skill acquisition, yet conventional demonstration methods--such as kinesthetic teaching and teleoperation--are cumbersome, hardware-heavy, and disruptive to workflows. Recently, passive observation using extended reality (XR) headsets has shown promise for egocentric demonstration collection, yet current approaches require additional hardware, complex calibration, or constrained recording conditions that limit scalability and usability. We present ARMimic, a novel framework that overcomes these limitations with a lightweight and hardware-minimal setup for scalable, robot-free data collection using only a consumer XR headset and a stationary workplace camera. ARMimic integrates egocentric hand tracking, augmented reality (AR) robot overlays, and real-time depth sensing to ensure collision-aware, kinematically feasible demonstrations. A unified imitation learning pipeline is at the core of our method, treating both human and virtual robot trajectories as interchangeable, which enables policies that generalize across different embodiments and environments. We validate ARMimic on two manipulation tasks, including challenging long-horizon bowl stacking. In our experiments, ARMimic reduces demonstration time by 50% compared to teleoperation and improves task success by 11% over ACT, a state-of-the-art baseline trained on teleoperated data. Our results demonstrate that ARMimic enables safe, seamless, and in-the-wild data collection, offering great potential for scalable robot learning in diverse real-world settings. 
+
+**Abstract (ZH)**: 基于XR头显的轻量级自主数据采集框架ARMimic 
+
+---
+# Empart: Interactive Convex Decomposition for Converting Meshes to Parts 
+
+**Title (ZH)**: Empart: 交互式凸分解 mesh 拆分至部件 
+
+**Authors**: Brandon Vu, Shameek Ganguly, Pushkar Joshi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.22847)  
+
+**Abstract**: Simplifying complex 3D meshes is a crucial step in robotics applications to enable efficient motion planning and physics simulation. Common methods, such as approximate convex decomposition, represent a mesh as a collection of simple parts, which are computationally inexpensive to simulate. However, existing approaches apply a uniform error tolerance across the entire mesh, which can result in a sub-optimal trade-off between accuracy and performance. For instance, a robot grasping an object needs high-fidelity geometry in the vicinity of the contact surfaces but can tolerate a coarser simplification elsewhere. A uniform tolerance can lead to excessive detail in non-critical areas or insufficient detail where it's needed most.
+To address this limitation, we introduce Empart, an interactive tool that allows users to specify different simplification tolerances for selected regions of a mesh. Our method leverages existing convex decomposition algorithms as a sub-routine but uses a novel, parallelized framework to handle region-specific constraints efficiently. Empart provides a user-friendly interface with visual feedback on approximation error and simulation performance, enabling designers to iteratively refine their decomposition. We demonstrate that our approach significantly reduces the number of convex parts compared to a state-of-the-art method (V-HACD) at a fixed error threshold, leading to substantial speedups in simulation performance. For a robotic pick-and-place task, Empart-generated collision meshes reduced the overall simulation time by 69% compared to a uniform decomposition, highlighting the value of interactive, region-specific simplification for performant robotics applications. 
+
+**Abstract (ZH)**: 简化复杂3D网格是机器人应用中实现高效运动规划和物理模拟的关键步骤。Empart：一种交互式区域自适应简化工具 
+
+---
+# Dynamic Buffers: Cost-Efficient Planning for Tabletop Rearrangement with Stacking 
+
+**Title (ZH)**: 动态缓冲区：基于堆叠的餐桌 rearrangement 成本-effective 规划 
+
+**Authors**: Arman Barghi, Hamed Hosseini, Seraj Ghasemi, Mehdi Tale Masouleh, Ahmad Kalhor  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.22828)  
+
+**Abstract**: Rearranging objects in cluttered tabletop environments remains a long-standing challenge in robotics. Classical planners often generate inefficient, high-cost plans by shuffling objects individually and using fixed buffers--temporary spaces such as empty table regions or static stacks--to resolve conflicts. When only free table locations are used as buffers, dense scenes become inefficient, since placing an object can restrict others from reaching their goals and complicate planning. Allowing stacking provides extra buffer capacity, but conventional stacking is static: once an object supports another, the base cannot be moved, which limits efficiency. To overcome these issues, a novel planning primitive called the Dynamic Buffer is introduced. Inspired by human grouping strategies, it enables robots to form temporary, movable stacks that can be transported as a unit. This improves both feasibility and efficiency in dense layouts, and it also reduces travel in large-scale settings where space is abundant. Compared with a state-of-the-art rearrangement planner, the approach reduces manipulator travel cost by 11.89% in dense scenarios with a stationary robot and by 5.69% in large, low-density settings with a mobile manipulator. Practicality is validated through experiments on a Delta parallel robot with a two-finger gripper. These findings establish dynamic buffering as a key primitive for cost-efficient and robust rearrangement planning. 
+
+**Abstract (ZH)**: 动态缓冲在拥挤桌面环境中的对象重新布置仍是一个长期的机器人技术挑战。 
+
+---
+# Towards Developing Standards and Guidelines for Robot Grasping and Manipulation Pipelines in the COMPARE Ecosystem 
+
+**Title (ZH)**: 向imulator-based Robot Arms for Manufacturing and Parsing Ecosystem (COMPARE)生态体系中机器人抓取与操作流程标准和指南的发展迈进 
+
+**Authors**: Huajing Zhao, Brian Flynn, Adam Norton, Holly Yanco  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.22801)  
+
+**Abstract**: The COMPARE Ecosystem aims to improve the compatibility and benchmarking of open-source products for robot manipulation through a series of activities. One such activity is the development of standards and guidelines to specify modularization practices at the component-level for individual modules (e.g., perception, grasp planning, motion planning) and integrations of components that form robot manipulation capabilities at the pipeline-level. This paper briefly reviews our work-in-progress to date to (1) build repositories of open-source products to identify common characteristics of each component in the pipeline, (2) investigate existing modular pipelines to glean best practices, and (3) develop new modular pipelines that advance prior work while abiding by the proposed standards and guidelines. 
+
+**Abstract (ZH)**: COMPARE生态系统的构建旨在通过一系列活动提高开源产品在机器人操作领域的兼容性和基准测试。该生态系统的活动之一是制定标准和指南，以在组件级（如感知、抓取规划、运动规划）和流水线级（包含形成机器人操作能力的组件集成）规定模块化实践。本文简要回顾了至今为止的工作，包括（1）构建开源产品仓库以识别流水线中各个组件的共同特征，（2）调查现有模块化流水线以汲取最佳实践，以及（3）开发新的模块化流水线，这些流水线在遵循提议的标准和指南的同时超越了先前的工作。 
+
+---
+# ReSeFlow: Rectifying SE(3)-Equivariant Policy Learning Flows 
+
+**Title (ZH)**: ReSeFlow: 修正SE(3)-等变策略学习流 
+
+**Authors**: Zhitao Wang, Yanke Wang, Jiangtao Wen, Roberto Horowitz, Yuxing Han  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.22695)  
+
+**Abstract**: Robotic manipulation in unstructured environments requires the generation of robust and long-horizon trajectory-level policy with conditions of perceptual observations and benefits from the advantages of SE(3)-equivariant diffusion models that are data-efficient. However, these models suffer from the inference time costs. Inspired by the inference efficiency of rectified flows, we introduce the rectification to the SE(3)-diffusion models and propose the ReSeFlow, i.e., Rectifying SE(3)-Equivariant Policy Learning Flows, providing fast, geodesic-consistent, least-computational policy generation. Crucially, both components employ SE(3)-equivariant networks to preserve rotational and translational symmetry, enabling robust generalization under rigid-body motions. With the verification on the simulated benchmarks, we find that the proposed ReSeFlow with only one inference step can achieve better performance with lower geodesic distance than the baseline methods, achieving up to a 48.5% error reduction on the painting task and a 21.9% reduction on the rotating triangle task compared to the baseline's 100-step inference. This method takes advantages of both SE(3) equivariance and rectified flow and puts it forward for the real-world application of generative policy learning models with the data and inference efficiency. 
+
+**Abstract (ZH)**: 基于SE(3)-_equivariant扩散模型的快速轨迹级策略学习方法：ReSeFlow及其在刚体运动下的鲁棒泛化 
+
+---
+# Nonlinear Model Predictive Control with Single-Shooting Method for Autonomous Personal Mobility Vehicle 
+
+**Title (ZH)**: 基于单步射击方法的自主个人移动车辆的非线性模型预测控制 
+
+**Authors**: Rakha Rahmadani Pratama, Catur Hilman A.H.B. Baskoro, Joga Dharma Setiawan, Dyah Kusuma Dewi, P Paryanto, Mochammad Ariyanto, Roni Permana Saputra  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.22694)  
+
+**Abstract**: This paper introduces a proposed control method for autonomous personal mobility vehicles, specifically the Single-passenger Electric Autonomous Transporter (SEATER), using Nonlinear Model Predictive Control (NMPC). The proposed method leverages a single-shooting approach to solve the optimal control problem (OCP) via non-linear programming (NLP). The proposed NMPC is implemented to a non-holonomic vehicle with a differential drive system, using odometry data as localization feedback to guide the vehicle towards its target pose while achieving objectives and adhering to constraints, such as obstacle avoidance. To evaluate the performance of the proposed method, a number of simulations have been conducted in both obstacle-free and static obstacle environments. The SEATER model and testing environment have been developed in the Gazebo Simulation and the NMPC are implemented within the Robot Operating System (ROS) framework. The simulation results demonstrate that the NMPC-based approach successfully controls the vehicle to reach the desired target location while satisfying the imposed constraints. Furthermore, this study highlights the robustness and real-time effectiveness of NMPC with a single-shooting approach for autonomous vehicle control in the evaluated scenarios. 
+
+**Abstract (ZH)**: 本文提出了一种用于自主个人机动车辆（单乘客电自主运输器SEATER）的控制方法，采用非线性模型预测控制（NMPC）。所提方法利用单次射击方法通过非线性规划（NLP）解决最优控制问题（OCP）。该所提NMPC被应用于具有差速驱动系统的非完整车辆上，并使用里程计数据作为定位反馈来引导车辆达到目标姿态，同时实现目标并遵守约束条件，例如障碍物回避。为了评估所提方法的性能，在无障碍和静态障碍环境中进行了多项仿真实验。SEATER模型和测试环境在Gazebo仿真中开发，NMPC在Robot Operating System（ROS）框架内实现。仿真实验结果表明，基于NMPC的方法成功地控制了车辆达到期望的目标位置，同时满足了施加的约束条件。此外，本研究强调了采用单次射击方法的NMPC在评估情景中的鲁棒性和实时效果对于自主车辆控制的有效性。 
+
+---
+# Mobile Robot Localization via Indoor Positioning System and Odometry Fusion 
+
+**Title (ZH)**: 基于室内定位系统和里程计融合的移动机器人定位 
+
+**Authors**: Muhammad Hafil Nugraha, Fauzi Abdul, Lastiko Bramantyo, Estiko Rijanto, Roni Permana Saputra, Oka Mahendra  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.22693)  
+
+**Abstract**: Accurate localization is crucial for effectively operating mobile robots in indoor environments. This paper presents a comprehensive approach to mobile robot localization by integrating an ultrasound-based indoor positioning system (IPS) with wheel odometry data via sensor fusion techniques. The fusion methodology leverages the strengths of both IPS and wheel odometry, compensating for the individual limitations of each method. The Extended Kalman Filter (EKF) fusion method combines the data from the IPS sensors and the robot's wheel odometry, providing a robust and reliable localization solution. Extensive experiments in a controlled indoor environment reveal that the fusion-based localization system significantly enhances accuracy and precision compared to standalone systems. The results demonstrate significant improvements in trajectory tracking, with the EKF-based approach reducing errors associated with wheel slippage and sensor noise. 
+
+**Abstract (ZH)**: 准确的定位是有效操作室内移动机器人的重要基础。本文提出了一种将超声波基于的室内定位系统（IPS）与轮式里程计数据通过传感器融合技术结合的综合方法进行移动机器人定位的方案。融合方法利用了IPS和轮式里程计各自的优势，弥补了每种方法的局限性。扩展卡尔曼滤波器（EKF）融合方法结合了IPS传感器和机器人轮式里程计的数据，提供了稳健且可靠的定位解决方案。在受控的室内环境中进行的大量实验表明，基于融合的定位系统在准确性和精度方面显著优于独立系统。结果展示了轨迹跟踪方面的显著改进，基于EKF的方法减少了由车轮打滑和传感器噪声引起的误差。 
+
+---
+# BridgeDrive: Diffusion Bridge Policy for Closed-Loop Trajectory Planning in Autonomous Driving 
+
+**Title (ZH)**: BridgeDrive: 闭路轨迹规划的扩散桥策略 
+
+**Authors**: Shu Liu, Wenlin Chen, Weihao Li, Zheng Wang, Lijin Yang, Jianing Huang, Yipin Zhang, Zhongzhan Huang, Ze Cheng, Hao Yang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.23589)  
+
+**Abstract**: Diffusion-based planners have shown great promise for autonomous driving due to their ability to capture multi-modal driving behaviors. However, guiding these models effectively in reactive, closed-loop environments remains a significant challenge. Simple conditioning often fails to provide sufficient guidance in complex and dynamic driving scenarios. Recent work attempts to use typical expert driving behaviors (i.e., anchors) to guide diffusion models but relies on a truncated schedule, which introduces theoretical inconsistencies and can compromise performance. To address this, we introduce BridgeDrive, a novel anchor-guided diffusion bridge policy for closed-loop trajectory planning. Our approach provides a principled diffusion framework that effectively translates anchors into fine-grained trajectory plans, appropriately responding to varying traffic conditions. Our planner is compatible with efficient ODE solvers, a critical factor for real-time autonomous driving deployment. We achieve state-of-the-art performance on the Bench2Drive benchmark, improving the success rate by 5% over prior arts. 
+
+**Abstract (ZH)**: 基于扩散的规划器在自主驾驶中显示出巨大的潜力，因为它们能够捕捉多模态驾驶行为。然而，在反应性和闭环环境中有效地引导这些模型仍然是一个重大挑战。简单的条件化往往在复杂和动态的驾驶场景中不能提供足够的指导。最近的工作尝试使用典型的专家驾驶行为（即锚点）来引导扩散模型，但依赖于截断的时间表，这引入了理论不一致性并可能损害性能。为了解决这个问题，我们提出了BridgeDrive，一种新颖的锚点引导扩散桥梁策略，用于闭环轨迹规划。我们的方法提供了一个原则上的扩散框架，有效地将锚点转化为细粒度的轨迹计划，并适当地响应不断变化的交通条件。我们的规划器与高效的ODE求解器兼容，这是实时自主驾驶部署的关键因素。我们在Bench2Drive基准测试中实现了最先进的性能，将成功率达到比先前方法高出5%。 
+
+---
+# SafeFlowMatcher: Safe and Fast Planning using Flow Matching with Control Barrier Functions 
+
+**Title (ZH)**: SafeFlowMatcher：基于流匹配与控制屏障函数的安全快速规划 
+
+**Authors**: Jeongyong Yang, Seunghwan Jang, Soojean Han  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.24243)  
+
+**Abstract**: Generative planners based on flow matching (FM) can produce high-quality paths in one or a few ODE steps, but their sampling dynamics offer no formal safety guarantees and can yield incomplete paths near constraints. We present SafeFlowMatcher, a planning framework that couples FM with control barrier functions (CBFs) to achieve both real-time efficiency and certified safety. SafeFlowMatcher uses a two-phase prediction-correction (PC) integrator: (i) a prediction phase integrates the learned FM once (or a few steps) to obtain a candidate path without intervention; (ii) a correction phase refines this path with a vanishing time-scaled vector field and a CBF-based quadratic program that minimally perturbs the vector field. We prove a barrier certificate for the resulting flow system, establishing forward invariance of a robust safe set and finite-time convergence to the safe set. By enforcing safety only on the executed path (rather than on all intermediate latent paths), SafeFlowMatcher avoids distributional drift and mitigates local trap problems. Across maze navigation and locomotion benchmarks, SafeFlowMatcher attains faster, smoother, and safer paths than diffusion- and FM-based baselines. Extensive ablations corroborate the contributions of the PC integrator and the barrier certificate. 
+
+**Abstract (ZH)**: 基于流匹配的生成式规划器结合控制障碍函数的安全流匹配 
+
+---
