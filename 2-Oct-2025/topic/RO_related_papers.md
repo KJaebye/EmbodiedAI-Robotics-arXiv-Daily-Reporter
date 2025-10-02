@@ -1,0 +1,156 @@
+# Real-Time Trajectory Generation and Hybrid Lyapunov-Based Control for Hopping Robots 
+
+**Title (ZH)**: 实时轨迹生成与跳跃机器人基于混合李雅普诺夫的控制方法 
+
+**Authors**: Matthew Woodward  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.01138)  
+
+**Abstract**: The advent of rotor-based hopping robots has created very capable hopping platforms with high agility and efficiency, and similar controllability, as compared to their purely flying quadrotor counterparts. Advances in robot performance have increased the hopping height to greater than 4 meters and opened up the possibility for more complex aerial trajectories (i.e., behaviors). However, currently hopping robots do not directly control their aerial trajectory or transition to flight, eliminating the efficiency benefits of a hopping system. Here we show a real-time, computationally efficiency, non-linear drag compensated, trajectory generation methodology and accompanying Lyapunov-based controller. The combined system can create and follow complex aerial trajectories from liftoff to touchdown on horizontal and vertical surfaces, while maintaining strick control over the orientation at touchdown. The computational efficiency provides broad applicability across all size scales of hopping robots while maintaining applicability to quadrotors in general. 
+
+**Abstract (ZH)**: 基于转子的跳行机器人的发展创造了一类极具敏捷性和效率的跳行平台，其可控性与纯飞行四旋翼机器人相当。机器人性能的进步使得跳跃高度超过4米，并为更复杂的空中轨迹（即行为）提供了可能性。然而，当前的跳行机器人并未直接控制其空中轨迹或过渡到飞行状态，从而消除了跳行系统的效率优势。我们展示了实时的、计算效率高的、基于非线性阻力补偿的轨迹生成方法及其配套的李雅普诺夫基于的控制器。该联合系统能够在水平和垂直表面从离地到着陆的过程中生成并遵循复杂的空中轨迹，同时严格控制着陆姿态。计算效率使得该方法适用于所有规模的跳行机器人，并普遍适用于四旋翼机器人。 
+
+---
+# ROSplane 2.0: A Fixed-Wing Autopilot for Research 
+
+**Title (ZH)**: ROSplane 2.0：一种用于研究的固定翼自动驾驶仪 
+
+**Authors**: Ian Reid, Joseph Ritchie, Jacob Moore, Brandon Sutherland, Gabe Snow, Phillip Tokumaru, Tim McLain  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.01041)  
+
+**Abstract**: Unmanned aerial vehicle (UAV) research requires the integration of cutting-edge technology into existing autopilot frameworks. This process can be arduous, requiring extensive resources, time, and detailed knowledge of the existing system. ROSplane is a lean, open-source fixed-wing autonomy stack built by researchers for researchers. It is designed to accelerate research by providing clearly defined interfaces with an easily modifiable framework. Powered by ROS 2, ROSplane allows for rapid integration of low or high-level control, path planning, or estimation algorithms. A focus on lean, easily understood code and extensive documentation lowers the barrier to entry for researchers. Recent developments to ROSplane improve its capacity to accelerate UAV research, including the transition from ROS 1 to ROS 2, enhanced estimation and control algorithms, increased modularity, and an improved aerodynamic modeling pipeline. This aerodynamic modeling pipeline significantly reduces the effort of transitioning from simulation to real-world testing without requiring expensive system identification or computational fluid dynamics tools. ROSplane's architecture reduces the effort required to integrate new research tools and methods, expediting hardware experimentation. 
+
+**Abstract (ZH)**: 无人航空器（UAV）研究需要将前沿技术整合到现有的自主飞行框架中。这一过程可能极为繁琐，需要大量的资源、时间和对现有系统详细的了解。ROSplane是由研究者为研究者设计的轻量级、开源固定翼自主飞行堆栈。它旨在通过提供明确定义的接口和易于修改的框架加速研究。基于ROS 2，ROSplane允许快速集成低层或高层控制、路径规划或估计算法。简洁易懂的代码焦点和详尽的文档降低了研究者的入门门槛。ROSplane的最新发展使其加速无人航空器研究的能力得到了提高，包括从ROS 1过渡到ROS 2、增强的估计算法和控制算法、增加的模块化程度以及改进的气动建模流程。这一气动建模流程显著减少了从仿真过渡到实际测试所需的努力，而无需依赖昂贵的系统辨识或计算流体动力学工具。ROSplane的架构降低了集成新研究工具和方法所需的努力，加速了硬件实验。 
+
+---
+# ROSflight 2.0: Lean ROS 2-Based Autopilot for Unmanned Aerial Vehicles 
+
+**Title (ZH)**: ROSflight 2.0: 基于ROS 2的轻量级无人驾驶飞行器自主飞行控制系统 
+
+**Authors**: Jacob Moore, Phil Tokumaru, Ian Reid, Brandon Sutherland, Joseph Ritchie, Gabe Snow, Tim McLain  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00995)  
+
+**Abstract**: ROSflight is a lean, open-source autopilot ecosystem for unmanned aerial vehicles (UAVs). Designed by researchers for researchers, it is built to lower the barrier to entry to UAV research and accelerate the transition from simulation to hardware experiments by maintaining a lean (not full-featured), well-documented, and modular codebase. This publication builds on previous treatments and describes significant additions to the architecture that improve the modularity and usability of ROSflight, including the transition from ROS 1 to ROS 2, supported hardware, low-level actuator mixing, and the simulation environment. We believe that these changes improve the usability of ROSflight and enable ROSflight to accelerate research in areas like advanced-air mobility. Hardware results are provided, showing that ROSflight is able to control a multirotor over a serial connection at 400 Hz while closing all control loops on the companion computer. 
+
+**Abstract (ZH)**: ROSflight是面向无人飞行器（UAV）的一种精简的开源自主飞行生态系统。该系统由研究人员为研究目的设计，旨在通过提供精简（非全功能）、文档齐全且模块化的代码库来降低无人飞行器研究的门槛，并加速从仿真到硬件实验的过渡。本研究在此前研究的基础上，描述了对ROSflight架构的重大改进，这些改进增强了模块化和易用性，包括从ROS 1过渡到ROS 2、支持的硬件、低级执行器混合以及仿真环境。我们相信这些变化提高了ROSflight的易用性，并使ROSflight能够加速诸如高级空中移动性等领域的研究。试验结果表明，ROSflight能够在串行连接下以400 Hz的频率控制多旋翼，并在伴侣计算机上闭合所有控制回路。 
+
+---
+# RTFF: Random-to-Target Fabric Flattening Policy using Dual-Arm Manipulator 
+
+**Title (ZH)**: RTFF: 基于双臂 manipulator 的随机目标fabric展平策略 
+
+**Authors**: Kai Tang, Dipankar Bhattacharya, Hang Xu, Fuyuki Tokuda, Norman C. Tien, Kazuhiro Kosuge  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00814)  
+
+**Abstract**: Robotic fabric manipulation in garment production for sewing, cutting, and ironing requires reliable flattening and alignment, yet remains challenging due to fabric deformability, effectively infinite degrees of freedom, and frequent occlusions from wrinkles, folds, and the manipulator's End-Effector (EE) and arm. To address these issues, this paper proposes the first Random-to-Target Fabric Flattening (RTFF) policy, which aligns a random wrinkled fabric state to an arbitrary wrinkle-free target state. The proposed policy adopts a hybrid Imitation Learning-Visual Servoing (IL-VS) framework, where IL learns with explicit fabric models for coarse alignment of the wrinkled fabric toward a wrinkle-free state near the target, and VS ensures fine alignment to the target. Central to this framework is a template-based mesh that offers precise target state representation, wrinkle-aware geometry prediction, and consistent vertex correspondence across RTFF manipulation steps, enabling robust manipulation and seamless IL-VS switching. Leveraging the power of mesh, a novel IL solution for RTFF-Mesh Action Chunking Transformer (MACT)-is then proposed by conditioning the mesh information into a Transformer-based policy. The RTFF policy is validated on a real dual-arm tele-operation system, showing zero-shot alignment to different targets, high accuracy, and strong generalization across fabrics and scales. Project website: this https URL 
+
+**Abstract (ZH)**: 基于缝制、裁剪和熨烫的服装生产中，机器人织物操作需要可靠的平铺和对齐，但由于织物变形性、无限的自由度以及频繁的褶皱、折痕和末端执行器（EE）和手臂的遮挡，这一任务仍然具有挑战性。为此，本文提出了第一个随机目标织物平铺（RTFF）策略，该策略将随机褶皱的织物状态对齐到任意无褶皱的目标状态。所提出的方法采用了一种混合的模仿学习-视觉伺服（IL-VS）框架，其中IL使用显式的织物模型粗略对齐褶皱织物向接近目标的无褶皱状态，而VS确保细粒度对齐到目标。该框架的核心是一个基于模板的网格，它提供了精确的目标状态表示、褶皱意识的几何预测，并在RTFF操作步骤中保持一致的顶点对应，从而实现鲁棒的操作并无缝地切换IL-VS。通过利用网格的强大功能，提出了一种基于Transformer的新型IL解决方案——RTFF-Mesh动作分割变换器（MACT），通过将其网格信息条件化到策略中。所提出的RTFF策略在实际的双臂远程操作系统上得到了验证，展示了针对不同目标的零样本对齐、高精度以及在不同织物和尺度上的强大泛化能力。项目网页：this https URL。 
+
+---
+# Tele-rehabilitation with online skill transfer and adaptation in $\mathbb{R}^3 \times \mathit{S}^3$ 
+
+**Title (ZH)**: 三维空间中的远程康复：在线技能转移与适应在$\mathbb{R}^3 \times S^3$中 
+
+**Authors**: Tianle Ni, Xiao Chen, Hamid Sadeghian, Sami Haddadin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00770)  
+
+**Abstract**: This paper proposes a tele-teaching framework for the domain of robot-assisted tele-rehabilitation. The system connects two robotic manipulators on therapist and patient side via bilateral teleoperation, enabling a therapist to remotely demonstrate rehabilitation exercises that are executed by the patient-side robot. A 6-DoF Dynamical Movement Primitives formulation is employed to jointly encode translational and rotational motions in $\mathbb{R}^3 \times \mathit{S}^3$ space, ensuring accurate trajectory reproduction. The framework supports smooth transitions between therapist-led guidance and patient passive training, while allowing adaptive adjustment of motion. Experiments with 7-DoF manipulators demonstrate the feasibility of the approach, highlighting its potential for personalized and remotely supervised rehabilitation. 
+
+**Abstract (ZH)**: 机器人辅助远程康复领域的远程教学框架 
+
+---
+# Enabling High-Frequency Cross-Modality Visual Positioning Service for Accurate Drone Landing 
+
+**Title (ZH)**: 高频跨模态视觉定位服务 Enables 准确无人机降落 
+
+**Authors**: Haoyang Wang, Xinyu Luo, Wenhua Ding, Jingao Xu, Xuecheng Chen, Ruiyang Duan, Jialong Chen, Haitao Zhang, Yunhao Liu, Xinlei Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00646)  
+
+**Abstract**: After years of growth, drone-based delivery is transforming logistics. At its core, real-time 6-DoF drone pose tracking enables precise flight control and accurate drone landing. With the widespread availability of urban 3D maps, the Visual Positioning Service (VPS), a mobile pose estimation system, has been adapted to enhance drone pose tracking during the landing phase, as conventional systems like GPS are unreliable in urban environments due to signal attenuation and multi-path propagation. However, deploying the current VPS on drones faces limitations in both estimation accuracy and efficiency. In this work, we redesign drone-oriented VPS with the event camera and introduce EV-Pose to enable accurate, high-frequency 6-DoF pose tracking for accurate drone landing. EV-Pose introduces a spatio-temporal feature-instructed pose estimation module that extracts a temporal distance field to enable 3D point map matching for pose estimation; and a motion-aware hierarchical fusion and optimization scheme to enhance the above estimation in accuracy and efficiency, by utilizing drone motion in the \textit{early stage} of event filtering and the \textit{later stage} of pose optimization. Evaluation shows that EV-Pose achieves a rotation accuracy of 1.34$\degree$ and a translation accuracy of 6.9$mm$ with a tracking latency of 10.08$ms$, outperforming baselines by $>$50\%, \tmcrevise{thus enabling accurate drone landings.} Demo: this https URL 
+
+**Abstract (ZH)**: 基于事件摄像头的6-DoF无人机姿态估计EV-Pose：实现高精度高效无人机精准降落 
+
+---
+# Trajectory Based Observer Design: A Framework for Lightweight Sensor Fusion 
+
+**Title (ZH)**: 基于轨迹的观察者设计：轻量级传感器融合的框架 
+
+**Authors**: Federico Oliva, Tom Shaked, Daniele Carnevale, Amir Degani  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00630)  
+
+**Abstract**: Efficient observer design and accurate sensor fusion are key in state estimation. This work proposes an optimization-based methodology, termed Trajectory Based Optimization Design (TBOD), allowing the user to easily design observers for general nonlinear systems and multi-sensor setups. Starting from parametrized observer dynamics, the proposed method considers a finite set of pre-recorded measurement trajectories from the nominal plant and exploits them to tune the observer parameters through numerical optimization. This research hinges on the classic observer's theory and Moving Horizon Estimators methodology. Optimization is exploited to ease the observer's design, providing the user with a lightweight, general-purpose sensor fusion methodology. TBOD's main characteristics are the capability to handle general sensors efficiently and in a modular way and, most importantly, its straightforward tuning procedure. The TBOD's performance is tested on a terrestrial rover localization problem, combining IMU and ranging sensors provided by Ultra Wide Band antennas, and validated through a motion-capture system. Comparison with an Extended Kalman Filter is also provided, matching its position estimation accuracy and significantly improving in the orientation. 
+
+**Abstract (ZH)**: 基于轨迹优化的设计方法（Trajectory Based Optimization Design，TBOD）及其在状态估计中的应用 
+
+---
+# BC-MPPI: A Probabilistic Constraint Layer for Safe Model-Predictive Path-Integral Control 
+
+**Title (ZH)**: BC-MPPI: 一种用于安全模型预测路径积分控制的概率约束层 
+
+**Authors**: Odichimnma Ezeji, Michael Ziegltrum, Giulio Turrisi, Tommaso Belvedere, Valerio Modugno  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00272)  
+
+**Abstract**: Model Predictive Path Integral (MPPI) control has recently emerged as a fast, gradient-free alternative to model-predictive control in highly non-linear robotic tasks, yet it offers no hard guarantees on constraint satisfaction. We introduce Bayesian-Constraints MPPI (BC-MPPI), a lightweight safety layer that attaches a probabilistic surrogate to every state and input constraint. At each re-planning step the surrogate returns the probability that a candidate trajectory is feasible; this joint probability scales the weight given to a candidate, automatically down-weighting rollouts likely to collide or exceed limits and pushing the sampling distribution toward the safe subset; no hand-tuned penalty costs or explicit sample rejection required. We train the surrogate from 1000 offline simulations and deploy the controller on a quadrotor in MuJoCo with both static and moving obstacles. Across K in [100,1500] rollouts BC-MPPI preserves safety margins while satisfying the prescribed probability of violation. Because the surrogate is a stand-alone, version-controlled artefact and the runtime safety score is a single scalar, the approach integrates naturally with verification-and-validation pipelines for certifiable autonomous systems. 
+
+**Abstract (ZH)**: 贝叶斯约束MPPI（BC-MPPI）：一种轻量级的安全层 
+
+---
+# A Novel Robust Control Method Combining DNN-Based NMPC Approximation and PI Control: Application to Exoskeleton Squat Movements 
+
+**Title (ZH)**: 一种结合基于DNN的NMPC逼近和PI控制的新型鲁棒控制方法：应用于外骨骼深蹲运动 
+
+**Authors**: Alireza Aliyari, Gholamreza Vossoughi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00188)  
+
+**Abstract**: Nonlinear Model Predictive Control (NMPC) is a precise controller, but its heavy computational load often prevents application in robotic systems. Some studies have attempted to approximate NMPC using deep neural networks (NMPC-DNN). However, in the presence of unexpected disturbances or when operating conditions differ from training data, this approach lacks robustness, leading to large tracking errors. To address this issue, for the first time, the NMPC-DNN output is combined with a PI controller (Hybrid NMPC-DNN-PI). The proposed controller is validated by applying it to an exoskeleton robot during squat movement, which has a complex dynamic model and has received limited attention regarding robust nonlinear control design. A human-robot dynamic model with three active joints (ankle, knee, hip) is developed, and more than 5.3 million training samples are used to train the DNN. The results show that, under unseen conditions for the DNN, the tracking error in Hybrid NMPC-DNN-PI is significantly lower compared to NMPC-DNN. Moreover, human joint torques are greatly reduced with the use of the exoskeleton, with RMS values for the studied case reduced by 30.9%, 41.8%, and 29.7% at the ankle, knee, and hip, respectively. In addition, the computational cost of Hybrid NMPC-DNN-PI is 99.93% lower than that of NMPC. 
+
+**Abstract (ZH)**: 基于NMPC-DNN与PI控制器的混合控制策略及其在下蹲运动exo机器人中的应用 
+
+---
+# RoboPilot: Generalizable Dynamic Robotic Manipulation with Dual-thinking Modes 
+
+**Title (ZH)**: RoboPilot: 双模式通用动态机器人 manipulation 
+
+**Authors**: Xinyi Liu, Mohammadreza Fani Sani, Zewei Zhou, Julius Wirbel, Bahram Zarrin, Roberto Galeazzi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00154)  
+
+**Abstract**: Despite rapid progress in autonomous robotics, executing complex or long-horizon tasks remains a fundamental challenge. Most current approaches follow an open-loop paradigm with limited reasoning and no feedback, resulting in poor robustness to environmental changes and severe error accumulation. We present RoboPilot, a dual-thinking closed-loop framework for robotic manipulation that supports adaptive reasoning for complex tasks in real-world dynamic environments. RoboPilot leverages primitive actions for structured task planning and flexible action generation, while introducing feedback to enable replanning from dynamic changes and execution errors. Chain-of-Thought reasoning further enhances high-level task planning and guides low-level action generation. The system dynamically switches between fast and slow thinking to balance efficiency and accuracy. To systematically evaluate the robustness of RoboPilot in diverse robot manipulation scenarios, we introduce RoboPilot-Bench, a benchmark spanning 21 tasks across 10 categories, including infeasible-task recognition and failure recovery. Experiments show that RoboPilot outperforms state-of-the-art baselines by 25.9\% in task success rate, and the real-world deployment on an industrial robot further demonstrates its robustness in real-world settings. 
+
+**Abstract (ZH)**: 尽管自主机器人领域取得了快速进展，但在执行复杂或长时序任务方面仍面临基本挑战。大多数现有方法遵循开环范式，缺乏推断和反馈机制，导致整体鲁棒性较差且易累积严重误差。我们提出了RoboPilot，一种用于机器人操作的双重思考闭环框架，支持在动态环境中执行复杂任务的自适应推理。RoboPilot 利用基础操作进行结构化任务规划和灵活的操作生成，并引入反馈以应对动态变化和执行错误。通过链式推理进一步增强高层任务规划，并引导低层操作生成。系统动态切换快速和慢速思考以平衡效率和准确性。为了系统性地评估RoboPilot在多种机器人操作场景中的鲁棒性，我们引入了RoboPilot-Bench，一个涵盖21项任务的基准，涉及10个类别，包括不可行任务识别和故障恢复。实验结果显示，RoboPilot 在任务成功率方面比最先进的基线方法高出25.9%，实际工业机器人部署进一步证明了其在实际环境中的鲁棒性。 
+
+---
+# Robust Attitude Control of Nonlinear Multi-Rotor Dynamics with LFT Models and $\mathcal{H}_\infty$ Performance 
+
+**Title (ZH)**: 基于LFT模型和$\mathcal{H}_\infty$性能的非线性多旋翼动力学鲁棒姿态控制 
+
+**Authors**: Tanay Kumar, Raktim Bhattacharya  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00208)  
+
+**Abstract**: Attitude stabilization of unmanned aerial vehicles in uncertain environments presents significant challenges due to nonlinear dynamics, parameter variations, and sensor limitations. This paper presents a comparative study of $\mathcal{H}_\infty$ and classical PID controllers for multi-rotor attitude regulation in the presence of wind disturbances and gyroscope noise. The flight dynamics are modeled using a linear parameter-varying (LPV) framework, where nonlinearities and parameter variations are systematically represented as structured uncertainties within a linear fractional transformation formulation. A robust controller based on $\mathcal{H}_\infty$ formulation is designed using only gyroscope measurements to ensure guaranteed performance bounds. Nonlinear simulation results demonstrate the effectiveness of the robust controllers compared to classical PID control, showing significant improvement in attitude regulation under severe wind disturbances. 
+
+**Abstract (ZH)**: 不确定环境中多旋翼无人机姿态稳定控制面对非线性动力学、参数变化和传感器限制的挑战。本文对风干扰和陀螺仪噪声下多旋翼姿态调节的$\mathcal{H}_\infty$和经典PID控制器进行了比较研究。飞行动力学采用线性参数变异（LPV）框架建模，其中非线性和参数变化系统地表示为线性分数变换形式中的结构不确定性。基于$\mathcal{H}_\infty$公式设计了一个仅使用陀螺仪测量的鲁棒控制器，以确保性能边界。非线性仿真结果表明，鲁棒控制器在严重风干扰下的姿态调节效果优于经典PID控制。 
+
+---
+# A Hierarchical Agentic Framework for Autonomous Drone-Based Visual Inspection 
+
+**Title (ZH)**: 基于自主无人机的视觉检测分层代理框架 
+
+**Authors**: Ethan Herron, Xian Yeow Lee, Gregory Sin, Teresa Gonzalez Diaz, Ahmed Farahat, Chetan Gupta  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00259)  
+
+**Abstract**: Autonomous inspection systems are essential for ensuring the performance and longevity of industrial assets. Recently, agentic frameworks have demonstrated significant potential for automating inspection workflows but have been limited to digital tasks. Their application to physical assets in real-world environments, however, remains underexplored. In this work, our contributions are two-fold: first, we propose a hierarchical agentic framework for autonomous drone control, and second, a reasoning methodology for individual function executions which we refer to as ReActEval. Our framework focuses on visual inspection tasks in indoor industrial settings, such as interpreting industrial readouts or inspecting equipment. It employs a multi-agent system comprising a head agent and multiple worker agents, each controlling a single drone. The head agent performs high-level planning and evaluates outcomes, while worker agents implement ReActEval to reason over and execute low-level actions. Operating entirely in natural language, ReActEval follows a plan, reason, act, evaluate cycle, enabling drones to handle tasks ranging from simple navigation (e.g., flying forward 10 meters and land) to complex high-level tasks (e.g., locating and reading a pressure gauge). The evaluation phase serves as a feedback and/or replanning stage, ensuring actions align with user objectives while preventing undesirable outcomes. We evaluate the framework in a simulated environment with two worker agents, assessing performance qualitatively and quantitatively based on task completion across varying complexity levels and workflow efficiency. By leveraging natural language processing for agent communication, our approach offers a novel, flexible, and user-accessible alternative to traditional drone-based solutions, enabling autonomous problem-solving for industrial inspection without extensive user intervention. 
+
+**Abstract (ZH)**: 自主巡检系统对于确保工业资产的性能和寿命至关重要。近年来，代理框架在自动化巡检流程方面展现了巨大潜力，但主要局限于数字任务。然而，将其应用于真实环境中的实物资产仍然未被充分探索。本研究的贡献主要有两点：首先，我们提出了一种分层代理框架以实现自主无人机控制；其次，我们提出了一种用于个体功能执行的推理方法，称为ReActEval。该框架专注于室内工业环境中的视觉巡检任务，如解读工业读数或检查设备。它采用一个多代理系统，包括一个头部代理和多个工作代理，每个工作代理控制一架无人机。头部代理进行高层次规划并评估结果，而工作代理则实施ReActEval以推理和执行低层次动作。整个系统完全采用自然语言操作，遵循计划、推理、执行、评估的循环周期，使无人机能够处理从简单导航（例如，向前飞行10米并降落）到复杂高层次任务（例如，定位并读取压力表）的各种任务。评估阶段作为反馈和/或重新规划阶段，确保行动与用户目标一致，同时避免不良结果。我们在模拟环境中评估该框架，使用两个工作代理，从任务完成度和工作流程效率等不同复杂度级别进行定性和定量评估。通过利用自然语言处理实现代理间的通信，我们的方法为传统的基于无人机的解决方案提供了新颖、灵活且用户友好的替代方案，无需大量用户干预即可实现工业巡检的自主问题解决。 
+
+---

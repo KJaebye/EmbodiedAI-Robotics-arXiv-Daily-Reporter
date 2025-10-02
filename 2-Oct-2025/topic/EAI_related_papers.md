@@ -1,0 +1,418 @@
+# Compose Your Policies! Improving Diffusion-based or Flow-based Robot Policies via Test-time Distribution-level Composition 
+
+**Title (ZH)**: 生成您的策略！通过测试时分布级组合改进基于扩散或流的机器人策略 
+
+**Authors**: Jiahang Cao, Yize Huang, Hanzhong Guo, Rui Zhang, Mu Nan, Weijian Mai, Jiaxu Wang, Hao Cheng, Jingkai Sun, Gang Han, Wen Zhao, Qiang Zhang, Yijie Guo, Qihao Zheng, Chunfeng Song, Xiao Li, Ping Luo, Andrew F. Luo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.01068)  
+
+**Abstract**: Diffusion-based models for robotic control, including vision-language-action (VLA) and vision-action (VA) policies, have demonstrated significant capabilities. Yet their advancement is constrained by the high cost of acquiring large-scale interaction datasets. This work introduces an alternative paradigm for enhancing policy performance without additional model training. Perhaps surprisingly, we demonstrate that the composed policies can exceed the performance of either parent policy. Our contribution is threefold. First, we establish a theoretical foundation showing that the convex composition of distributional scores from multiple diffusion models can yield a superior one-step functional objective compared to any individual score. A Grönwall-type bound is then used to show that this single-step improvement propagates through entire generation trajectories, leading to systemic performance gains. Second, motivated by these results, we propose General Policy Composition (GPC), a training-free method that enhances performance by combining the distributional scores of multiple pre-trained policies via a convex combination and test-time search. GPC is versatile, allowing for the plug-and-play composition of heterogeneous policies, including VA and VLA models, as well as those based on diffusion or flow-matching, irrespective of their input visual modalities. Third, we provide extensive empirical validation. Experiments on Robomimic, PushT, and RoboTwin benchmarks, alongside real-world robotic evaluations, confirm that GPC consistently improves performance and adaptability across a diverse set of tasks. Further analysis of alternative composition operators and weighting strategies offers insights into the mechanisms underlying the success of GPC. These results establish GPC as a simple yet effective method for improving control performance by leveraging existing policies. 
+
+**Abstract (ZH)**: 基于扩散的机器人控制模型，包括视觉-语言-动作（VLA）和视觉-动作（VA）策略，已经显示出显著的能力。然而，它们的发展受到大规模交互数据集获取成本高的限制。本文介绍了一种无需额外模型训练即可提高策略性能的替代范式。令人大吃一惊的是，我们证明组合策略的性能可以超过任何一个父策略的性能。我们的贡献有三个方面。首先，我们建立了理论基础，证明从多个扩散模型中得出的分布分数的凸组合可以提供优于任何单一分数的一步功能性目标。然后使用Grönwall型界来证明这种一步改进在整个生成轨迹中传播，从而导致系统性能提升。其次，受这些结果的启发，我们提出了通用策略组合（GPC），这是一种无需训练的方法，通过凸组合多个预训练策略的分布分数并在测试时进行搜索来提升性能。GPC非常灵活，允许异构策略，包括VA和VLA模型，以及基于扩散或流匹配的模型，无论它们的视觉输入模态如何。第三，我们进行了广泛的实证验证。在Robomimic、PushT和RoboTwin基准测试以及真实的机器人评估中，实验结果证实GPC在各种任务中一致地提高了性能和适应性。进一步分析不同的组合操作符和权重策略提供了关于GPC成功机制的见解。这些结果确立了GPC是一种通过利用现有策略来提高控制性能的简单而有效的方法。 
+
+---
+# Prometheus: Universal, Open-Source Mocap-Based Teleoperation System with Force Feedback for Dataset Collection in Robot Learning 
+
+**Title (ZH)**: 普罗米修斯：基于运动捕捉的开放式源码力反馈遥操作系统及其在机器人学习数据集收集中的应用 
+
+**Authors**: S. Satsevich, A. Bazhenov, S. Egorov, A. Erkhov, M. Gromakov, A. Fedoseev, D. Tsetserukou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.01023)  
+
+**Abstract**: This paper presents a novel teleoperation system with force feedback, utilizing consumer-grade HTC Vive Track- ers 2.0. The system integrates a custom-built controller, a UR3 robotic arm, and a Robotiq gripper equipped with custom- designed fingers to ensure uniform pressure distribution on an embedded force sensor. Real-time compression force data is transmitted to the controller, enabling operators to perceive the gripping force applied to objects. Experimental results demonstrate that the system enhances task success rates and provides a low-cost solution for large-scale imitation learning data collection without compromising affordability. 
+
+**Abstract (ZH)**: 基于HTC Vive Tracker 2.0的新型力反馈远程操控系统及其在大规模模仿学习数据收集中的应用 
+
+---
+# Non-submodular Visual Attention for Robot Navigation 
+
+**Title (ZH)**: 非子模态视觉注意力用于机器人导航 
+
+**Authors**: Reza Vafaee, Kian Behzad, Milad Siami, Luca Carlone, Ali Jadbabaie  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00942)  
+
+**Abstract**: This paper presents a task-oriented computational framework to enhance Visual-Inertial Navigation (VIN) in robots, addressing challenges such as limited time and energy resources. The framework strategically selects visual features using a Mean Squared Error (MSE)-based, non-submodular objective function and a simplified dynamic anticipation model. To address the NP-hardness of this problem, we introduce four polynomial-time approximation algorithms: a classic greedy method with constant-factor guarantees; a low-rank greedy variant that significantly reduces computational complexity; a randomized greedy sampler that balances efficiency and solution quality; and a linearization-based selector based on a first-order Taylor expansion for near-constant-time execution. We establish rigorous performance bounds by leveraging submodularity ratios, curvature, and element-wise curvature analyses. Extensive experiments on both standardized benchmarks and a custom control-aware platform validate our theoretical results, demonstrating that these methods achieve strong approximation guarantees while enabling real-time deployment. 
+
+**Abstract (ZH)**: 本文提出一种任务导向的计算框架，以增强机器人的视觉-惯性导航（VIN），应对时间与能量资源有限的挑战。该框架使用基于均方误差（MSE）的非子模函数和简化动态预估模型策略性地选择视觉特征。为解决该问题的NP难性，我们引入了四种多项式时间近似算法：经典具有常数因子保证的贪婪方法；一种低秩贪婪变体，显著降低计算复杂度；一种随机贪婪采样器，平衡效率与解的质量；以及基于一阶泰勒展开的线性化选择器，实现接近常数时间执行。通过利用子模比、曲率及元素曲率分析，我们严格建立了性能界。在标准化基准和自定义控制感知平台上的广泛实验验证了理论结果，表明这些方法不仅能获得强近似保证，还能实现实时部署。 
+
+---
+# CroSTAta: Cross-State Transition Attention Transformer for Robotic Manipulation 
+
+**Title (ZH)**: 跨状态转换注意变换器：用于机器人操作的跨状态转换注意力变换器 
+
+**Authors**: Giovanni Minelli, Giulio Turrisi, Victor Barasuol, Claudio Semini  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00726)  
+
+**Abstract**: Learning robotic manipulation policies through supervised learning from demonstrations remains challenging when policies encounter execution variations not explicitly covered during training. While incorporating historical context through attention mechanisms can improve robustness, standard approaches process all past states in a sequence without explicitly modeling the temporal structure that demonstrations may include, such as failure and recovery patterns. We propose a Cross-State Transition Attention Transformer that employs a novel State Transition Attention (STA) mechanism to modulate standard attention weights based on learned state evolution patterns, enabling policies to better adapt their behavior based on execution history. Our approach combines this structured attention with temporal masking during training, where visual information is randomly removed from recent timesteps to encourage temporal reasoning from historical context. Evaluation in simulation shows that STA consistently outperforms standard cross-attention and temporal modeling approaches like TCN and LSTM networks across all tasks, achieving more than 2x improvement over cross-attention on precision-critical tasks. 
+
+**Abstract (ZH)**: 通过监督学习从演示中学习机器人操作策略，在政策遇到未在训练中明确涵盖的执行变异性时仍然具有挑战性。虽然通过注意力机制融入历史上下文可以提高鲁棒性，但标准方法会在序列中处理所有过去的状态，而不明确建模演示中可能包含的时间结构，例如故障和恢复模式。我们提出了一种跨状态转换注意力变换器（Cross-State Transition Attention Transformer），采用了一种新的状态转换注意力（STA）机制，根据学习到的状态演变模式调整标准注意力权重，从而使策略能够更好地根据执行历史适应其行为。我们的方法在训练中结合了这种结构化注意力和时间掩码，其中随机从最近的时间步去除视觉信息，以促进从历史上下文中进行时间推理。在模拟中的评估表明，STA在所有任务中始终优于标准交叉注意力和时间建模方法（如TCN和LSTM网络），在关键精度任务上取得了超过2倍的性能提升。 
+
+---
+# HAMLET: Switch your Vision-Language-Action Model into a History-Aware Policy 
+
+**Title (ZH)**: HAMLET: 将你的视觉-语言-动作模型转换为历史感知策略 
+
+**Authors**: Myungkyu Koo, Daewon Choi, Taeyoung Kim, Kyungmin Lee, Changyeon Kim, Youngyo Seo, Jinwoo Shin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00695)  
+
+**Abstract**: Inherently, robotic manipulation tasks are history-dependent: leveraging past context could be beneficial. However, most existing Vision-Language-Action models (VLAs) have been designed without considering this aspect, i.e., they rely solely on the current observation, ignoring preceding context. In this paper, we propose HAMLET, a scalable framework to adapt VLAs to attend to the historical context during action prediction. Specifically, we introduce moment tokens that compactly encode perceptual information at each timestep. Their representations are initialized with time-contrastive learning, allowing them to better capture temporally distinctive aspects. Next, we employ a lightweight memory module that integrates the moment tokens across past timesteps into memory features, which are then leveraged for action prediction. Through empirical evaluation, we show that HAMLET successfully transforms a state-of-the-art VLA into a history-aware policy, especially demonstrating significant improvements on long-horizon tasks that require historical context. In particular, on top of GR00T N1.5, HAMLET achieves an average success rate of 76.4% on history-dependent real-world tasks, surpassing the baseline performance by 47.2%. Furthermore, HAMLET pushes prior art performance from 64.1% to 66.4% on RoboCasa Kitchen (100-demo setup) and from 95.6% to 97.7% on LIBERO, highlighting its effectiveness even under generic robot-manipulation benchmarks. 
+
+**Abstract (ZH)**: 内在地，机器人操作任务具有历史依赖性：利用过去的上下文可能是有益的。然而，现有的大多数Vision-Language-Action模型（VLAs）在设计时并未考虑这一方面，即它们仅依赖当前观察，忽略了之前的上下文。在本文中，我们提出了一种可扩展的框架HAMLET，以使VLAs能够关注操作预测中的历史上下文。具体而言，我们引入了时刻标记来紧凑地编码每个时间步的感知信息。这些表示通过时间对比学习进行初始化，使其能够更好地捕捉时间上的区别特征。随后，我们采用一个轻量级的内存模块，将过去的时刻标记整合到记忆特征中，这些特征随后被用于操作预测。通过实证评估，我们展示了HAMLET成功将最先进的VLAs转换为历史感知策略，特别是在需要历史上下文的长时序任务中表现出显著改进。特别地，基于GR00T N1.5，HAMLET在依赖历史的现实任务中平均成功率为76.4%，超过了基线性能47.2%。此外，HAMLET在RoboCasa Kitchen（100-demo设置）和LIBERO上的性能分别从64.1%提高到66.4%和从95.6%提高到97.7%，突显了其在通用机器人操作基准下的有效性。 
+
+---
+# Shared Object Manipulation with a Team of Collaborative Quadrupeds 
+
+**Title (ZH)**: 协作四足机器人团队的共享物体操作 
+
+**Authors**: Shengzhi Wang, Niels Dehio, Xuanqi Zeng, Xian Yang, Lingwei Zhang, Yun-Hui Liu, K. W. Samuel Au  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00682)  
+
+**Abstract**: Utilizing teams of multiple robots is advantageous for handling bulky objects. Many related works focus on multi-manipulator systems, which are limited by workspace constraints. In this paper, we extend a classical hybrid motion-force controller to a team of legged manipulator systems, enabling collaborative loco-manipulation of rigid objects with a force-closed grasp. Our novel approach allows the robots to flexibly coordinate their movements, achieving efficient and stable object co-manipulation and transport, validated through extensive simulations and real-world experiments. 
+
+**Abstract (ZH)**: 利用多个机器人团队处理 bulky 物体具有优势。本论文将经典的混合运动-力控制器扩展到由腿式 manipulator 系统组成的团队，使机器人能够通过力闭合抓取协作进行刚性物体的 co-manipulation 和运输。该新颖方法允许机器人灵活协调其运动，通过广泛的仿真和真实世界实验验证实现了高效且稳定的物体 co-manipulation 和运输。 
+
+---
+# Hybrid Training for Vision-Language-Action Models 
+
+**Title (ZH)**: 视觉-语言-动作模型的混合训练 
+
+**Authors**: Pietro Mazzaglia, Cansu Sancaktar, Markus Peschl, Daniel Dijkman  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00600)  
+
+**Abstract**: Using Large Language Models to produce intermediate thoughts, a.k.a. Chain-of-thought (CoT), before providing an answer has been a successful recipe for solving complex language tasks. In robotics, similar embodied CoT strategies, generating thoughts before actions, have also been shown to lead to improved performance when using Vision-Language-Action models (VLAs). As these techniques increase the length of the model's generated outputs to include the thoughts, the inference time is negatively affected. Delaying an agent's actions in real-world executions, as in robotic manipulation settings, strongly affects the usability of a method, as tasks require long sequences of actions. However, is the generation of long chains-of-thought a strong prerequisite for achieving performance improvements? In this work, we explore the idea of Hybrid Training (HyT), a framework that enables VLAs to learn from thoughts and benefit from the associated performance gains, while enabling the possibility to leave out CoT generation during inference. Furthermore, by learning to conditionally predict a diverse set of outputs, HyT supports flexibility at inference time, enabling the model to either predict actions directly, generate thoughts or follow instructions. We evaluate the proposed method in a series of simulated benchmarks and real-world experiments. 
+
+**Abstract (ZH)**: 使用大型语言模型在提供答案之前生成中间思考（即链式思考CoT），已被证明是解决复杂语言任务的有效方法。在机器人学中，类似的具身CoT策略，在采取行动之前生成思考，也已被证明能够提高使用视觉-语言-行动模型（VLAs）时的表现。随着这些技术增加模型生成输出的长度以包含思考，推理时间会受到负面影响。在机器人操作等现实世界执行中延迟代理的操作，强烈影响方法的可用性，因为任务需要一系列长时间序列的操作。然而，长时间链式思考的生成是否是实现性能提升的必要条件？在本工作中，我们探索了混合训练（HyT）框架，该框架使VLAs能够从思考中学习并受益于关联的表现提升，同时使在推理过程中省略CoT生成成为可能。此外，通过学习有条件地预测一组多样化的输出，HyT在推理时支持灵活性，使模型能够在预测动作、生成思考或遵循指令之间进行选择。我们通过一系列模拟基准测试和真实世界实验评估了所提出的方法。 
+
+---
+# GRITS: A Spillage-Aware Guided Diffusion Policy for Robot Food Scooping Tasks 
+
+**Title (ZH)**: GRITS: 一种考虑溢出的机器人食物舀取任务引导扩散策略 
+
+**Authors**: Yen-Ling Tai, Yi-Ru Yang, Kuan-Ting Yu, Yu-Wei Chao, Yi-Ting Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00573)  
+
+**Abstract**: Robotic food scooping is a critical manipulation skill for food preparation and service robots. However, existing robot learning algorithms, especially learn-from-demonstration methods, still struggle to handle diverse and dynamic food states, which often results in spillage and reduced reliability. In this work, we introduce GRITS: A Spillage-Aware Guided Diffusion Policy for Robot Food Scooping Tasks. This framework leverages guided diffusion policy to minimize food spillage during scooping and to ensure reliable transfer of food items from the initial to the target location. Specifically, we design a spillage predictor that estimates the probability of spillage given current observation and action rollout. The predictor is trained on a simulated dataset with food spillage scenarios, constructed from four primitive shapes (spheres, cubes, cones, and cylinders) with varied physical properties such as mass, friction, and particle size. At inference time, the predictor serves as a differentiable guidance signal, steering the diffusion sampling process toward safer trajectories while preserving task success. We validate GRITS on a real-world robotic food scooping platform. GRITS is trained on six food categories and evaluated on ten unseen categories with different shapes and quantities. GRITS achieves an 82% task success rate and a 4% spillage rate, reducing spillage by over 40% compared to baselines without guidance, thereby demonstrating its effectiveness. 
+
+**Abstract (ZH)**: Spillage-Aware Guided Diffusion Policy for Robot Food Scooping Tasks 
+
+---
+# From Human Hands to Robot Arms: Manipulation Skills Transfer via Trajectory Alignment 
+
+**Title (ZH)**: 从人力操作到机器人手臂：通过轨迹对齐实现操作技能转移 
+
+**Authors**: Han Zhou, Jinjin Cao, Liyuan Ma, Xueji Fang, Guo-jun Qi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00491)  
+
+**Abstract**: Learning diverse manipulation skills for real-world robots is severely bottlenecked by the reliance on costly and hard-to-scale teleoperated demonstrations. While human videos offer a scalable alternative, effectively transferring manipulation knowledge is fundamentally hindered by the significant morphological gap between human and robotic embodiments. To address this challenge and facilitate skill transfer from human to robot, we introduce Traj2Action,a novel framework that bridges this embodiment gap by using the 3D trajectory of the operational endpoint as a unified intermediate representation, and then transfers the manipulation knowledge embedded in this trajectory to the robot's actions. Our policy first learns to generate a coarse trajectory, which forms an high-level motion plan by leveraging both human and robot data. This plan then conditions the synthesis of precise, robot-specific actions (e.g., orientation and gripper state) within a co-denoising framework. Extensive real-world experiments on a Franka robot demonstrate that Traj2Action boosts the performance by up to 27% and 22.25% over $\pi_0$ baseline on short- and long-horizon real-world tasks, and achieves significant gains as human data scales in robot policy learning. Our project website, featuring code and video demonstrations, is available at this https URL. 
+
+**Abstract (ZH)**: 基于3D操作末端轨迹的技能转移框架Traj2Action：从人类到机器人技能转移的有效途径 
+
+---
+# Integrating Offline Pre-Training with Online Fine-Tuning: A Reinforcement Learning Approach for Robot Social Navigation 
+
+**Title (ZH)**: 将离线预训练与在线微调相结合：基于强化学习的机器人社会导航方法 
+
+**Authors**: Run Su, Hao Fu, Shuai Zhou, Yingao Fu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00466)  
+
+**Abstract**: Offline reinforcement learning (RL) has emerged as a promising framework for addressing robot social navigation challenges. However, inherent uncertainties in pedestrian behavior and limited environmental interaction during training often lead to suboptimal exploration and distributional shifts between offline training and online deployment. To overcome these limitations, this paper proposes a novel offline-to-online fine-tuning RL algorithm for robot social navigation by integrating Return-to-Go (RTG) prediction into a causal Transformer architecture. Our algorithm features a spatiotem-poral fusion model designed to precisely estimate RTG values in real-time by jointly encoding temporal pedestrian motion patterns and spatial crowd dynamics. This RTG prediction framework mitigates distribution shift by aligning offline policy training with online environmental interactions. Furthermore, a hybrid offline-online experience sampling mechanism is built to stabilize policy updates during fine-tuning, ensuring balanced integration of pre-trained knowledge and real-time adaptation. Extensive experiments in simulated social navigation environments demonstrate that our method achieves a higher success rate and lower collision rate compared to state-of-the-art baselines. These results underscore the efficacy of our algorithm in enhancing navigation policy robustness and adaptability. This work paves the way for more reliable and adaptive robotic navigation systems in real-world applications. 
+
+**Abstract (ZH)**: 基于Return-to-Go预测的离线到在线强化学习算法在机器人社会导航中的应用 
+
+---
+# Seeing through Uncertainty: Robust Task-Oriented Optimization in Visual Navigation 
+
+**Title (ZH)**: 透过不确定性：视觉导航中稳健的任务导向优化 
+
+**Authors**: Yiyuan Pan, Yunzhe Xu, Zhe Liu, Hesheng Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00441)  
+
+**Abstract**: Visual navigation is a fundamental problem in embodied AI, yet practical deployments demand long-horizon planning capabilities to address multi-objective tasks. A major bottleneck is data scarcity: policies learned from limited data often overfit and fail to generalize OOD. Existing neural network-based agents typically increase architectural complexity that paradoxically become counterproductive in the small-sample regime. This paper introduce NeuRO, a integrated learning-to-optimize framework that tightly couples perception networks with downstream task-level robust optimization. Specifically, NeuRO addresses core difficulties in this integration: (i) it transforms noisy visual predictions under data scarcity into convex uncertainty sets using Partially Input Convex Neural Networks (PICNNs) with conformal calibration, which directly parameterize the optimization constraints; and (ii) it reformulates planning under partial observability as a robust optimization problem, enabling uncertainty-aware policies that transfer across environments. Extensive experiments on both unordered and sequential multi-object navigation tasks demonstrate that NeuRO establishes SoTA performance, particularly in generalization to unseen environments. Our work thus presents a significant advancement for developing robust, generalizable autonomous agents. 
+
+**Abstract (ZH)**: 视觉导航是本体人工智能中的一个基础问题，但在实际部署中需要具备长期规划能力以应对多目标任务。一个主要瓶颈是数据稀缺性：从有限数据中学到的策略往往会发生过拟合，并且无法在OOD场景下泛化。基于神经网络的代理通常会增加架构的复杂性，但在小样本情况下这却适得其反。本文提出NeuRO，这是一个将感知网络与下游任务级别的鲁棒优化紧密耦合的集成学习-优化框架。具体而言，NeuRO解决了该集成中的核心困难：（i）它通过使用与校准一致的Partially Input Convex Neural Networks (PICNNs)将稀数据下的 noisy 视觉预测转化为凸不确定性集，并直接参数化优化约束；（ii）它将部分可观测性的规划重新表述为鲁棒优化问题，使得能够实现对不确定性的感知，并且能够在不同环境中进行策略迁移。在无序和序列多目标导航任务上的广泛实验表明，NeuRO在性能上达到最新技术水平，尤其是在对未见过环境的泛化能力上。因此，我们的工作对开发鲁棒且可泛化的自主代理系统提出了重要进展。 
+
+---
+# VLA-RFT: Vision-Language-Action Reinforcement Fine-tuning with Verified Rewards in World Simulators 
+
+**Title (ZH)**: 带有验证奖励的视觉-语言-动作强化微调：在世界模拟器中的应用 
+
+**Authors**: Hengtao Li, Pengxiang Ding, Runze Suo, Yihao Wang, Zirui Ge, Dongyuan Zang, Kexian Yu, Mingyang Sun, Hongyin Zhang, Donglin Wang, Weihua Su  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00406)  
+
+**Abstract**: Vision-Language-Action (VLA) models enable embodied decision-making but rely heavily on imitation learning, leading to compounding errors and poor robustness under distribution shift. Reinforcement learning (RL) can mitigate these issues yet typically demands costly real-world interactions or suffers from sim-to-real gaps. We introduce VLA-RFT, a reinforcement fine-tuning framework that leverages a data-driven world model as a controllable simulator. Trained from real interaction data, the simulator predicts future visual observations conditioned on actions, allowing policy rollouts with dense, trajectory-level rewards derived from goal-achieving references. This design delivers an efficient and action-aligned learning signal, drastically lowering sample requirements. With fewer than 400 fine-tuning steps, VLA-RFT surpasses strong supervised baselines and achieves greater efficiency than simulator-based RL. Moreover, it exhibits strong robustness under perturbed conditions, sustaining stable task execution. Our results establish world-model-based RFT as a practical post-training paradigm to enhance the generalization and robustness of VLA models. For more details, please refer to this https URL. 
+
+**Abstract (ZH)**: Vision-Language-Action (VLA)模型实现了基于身体的决策，但过度依赖于模仿学习，导致累积错误和在分布偏移下的较差鲁棒性。强化学习（RL）可以缓解这些问题，但通常需要昂贵的实物交互或面临从仿真到实物的差距。我们引入了VLA-RFT，这是一种利用数据驱动的世界模型作为可控模拟器的强化学习微调框架。该模拟器从实物交互数据中训练，可以根据动作预测未来的视觉观察，允许以从目标实现参考中获得的密集轨迹级奖励来执行策略部署。这一设计提供了高效且与动作对齐的学习信号，大幅降低了采样需求。通过不到400步的微调步骤，VLA-RFT超越了强大的监督基准，并实现了比基于模拟器的RL更高效的性能。此外，它在扰动条件下表现出较强的鲁棒性，能够维持稳定的任务执行。我们的结果证明了基于世界模型的RL微调作为增强VLA模型泛化能力和鲁棒性的实用后训练范式的可行性。更多信息请参见此链接。 
+
+---
+# DiSA-IQL: Offline Reinforcement Learning for Robust Soft Robot Control under Distribution Shifts 
+
+**Title (ZH)**: DiSA-IQL：分布偏移下的离线强化学习软体机器人控制 
+
+**Authors**: Linjin He, Xinda Qi, Dong Chen, Zhaojian Li, Xiaobo Tan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00358)  
+
+**Abstract**: Soft snake robots offer remarkable flexibility and adaptability in complex environments, yet their control remains challenging due to highly nonlinear dynamics. Existing model-based and bio-inspired controllers rely on simplified assumptions that limit performance. Deep reinforcement learning (DRL) has recently emerged as a promising alternative, but online training is often impractical because of costly and potentially damaging real-world interactions. Offline RL provides a safer option by leveraging pre-collected datasets, but it suffers from distribution shift, which degrades generalization to unseen scenarios. To overcome this challenge, we propose DiSA-IQL (Distribution-Shift-Aware Implicit Q-Learning), an extension of IQL that incorporates robustness modulation by penalizing unreliable state-action pairs to mitigate distribution shift. We evaluate DiSA-IQL on goal-reaching tasks across two settings: in-distribution and out-of-distribution evaluation. Simulation results show that DiSA-IQL consistently outperforms baseline models, including Behavior Cloning (BC), Conservative Q-Learning (CQL), and vanilla IQL, achieving higher success rates, smoother trajectories, and improved robustness. The codes are open-sourced to support reproducibility and to facilitate further research in offline RL for soft robot control. 
+
+**Abstract (ZH)**: 基于分布迁移 Awareness 的隐式 Q 学习 (DiSA-IQL) 用于软蛇形机器人的控制 
+
+---
+# Learning Human Reaching Optimality Principles from Minimal Observation Inverse Reinforcement Learning 
+
+**Title (ZH)**: 从最少观测中学习人类伸手最优原则的逆强化学习 
+
+**Authors**: Sarmad Mehrdad, Maxime Sabbah, Vincent Bonnet, Ludovic Righetti  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00329)  
+
+**Abstract**: This paper investigates the application of Minimal Observation Inverse Reinforcement Learning (MO-IRL) to model and predict human arm-reaching movements with time-varying cost weights. Using a planar two-link biomechanical model and high-resolution motion-capture data from subjects performing a pointing task, we segment each trajectory into multiple phases and learn phase-specific combinations of seven candidate cost functions. MO-IRL iteratively refines cost weights by scaling observed and generated trajectories in the maximum entropy IRL formulation, greatly reducing the number of required demonstrations and convergence time compared to classical IRL approaches. Training on ten trials per posture yields average joint-angle Root Mean Squared Errors (RMSE) of 6.4 deg and 5.6 deg for six- and eight-segment weight divisions, respectively, versus 10.4 deg using a single static weight. Cross-validation on remaining trials and, for the first time, inter-subject validation on an unseen subject's 20 trials, demonstrates comparable predictive accuracy, around 8 deg RMSE, indicating robust generalization. Learned weights emphasize joint acceleration minimization during movement onset and termination, aligning with smoothness principles observed in biological motion. These results suggest that MO-IRL can efficiently uncover dynamic, subject-independent cost structures underlying human motor control, with potential applications for humanoid robots. 
+
+**Abstract (ZH)**: 本文研究了最小观察逆强化学习（MO-IRL）在使用时间变化的成本权重建模和预测人类手臂伸展运动的应用。使用平面双关节生物力学模型和受试者执行指针任务的高分辨率动作捕捉数据，将每个轨迹分割为多个阶段，并学习七种候选成本函数的阶段特定组合。MO-IRL 通过在最大熵逆强化学习公式中缩放观察到的和生成的轨迹来迭代细化成本权重，相比经典的逆强化学习方法，极大地减少了所需的演示次数和收敛时间。在每种姿态上训练十次试验，分别得到六段和八段权重划分的平均关节角度均方根误差（RMSE）为6.4°和5.6°，而使用单一静态权重时为10.4°。交叉验证剩余试验，并首次在未见过的受试者20次试验上进行跨个体验证，显示出相近的预测准确性，约8°的RMSE，表明具有稳健的泛化能力。学习到的成本权重在运动开始和终止时强调关节加速度的最小化，与生物运动中观察到的平滑性原则一致。这些结果表明，MO-IRL 可以高效地揭示人类运动控制背后的动态、个体间一致的成本结构，具有应用于类人机器人的潜力。 
+
+---
+# Strategic Fusion of Vision Language Models: Shapley-Credited Context-Aware Dawid-Skene for Multi-Label Tasks in Autonomous Driving 
+
+**Title (ZH)**: 视觉语言模型的战略融合：基于Shapley值的上下文aware Dawid-Skene模型在自主驾驶多标签任务中的应用 
+
+**Authors**: Yuxiang Feng, Keyang Zhang, Hassane Ouchouid, Ashwil Kaniamparambil, Ioannis Souflas, Panagiotis Angeloudis  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.01126)  
+
+**Abstract**: Large vision-language models (VLMs) are increasingly used in autonomous-vehicle (AV) stacks, but hallucination limits their reliability in safety-critical pipelines. We present Shapley-credited Context-Aware Dawid-Skene with Agreement, a game-theoretic fusion method for multi-label understanding of ego-view dashcam video. It learns per-model, per-label, context-conditioned reliabilities from labelled history and, at inference, converts each model's report into an agreement-guardrailed log-likelihood ratio that is combined with a contextual prior and a public reputation state updated via Shapley-based team credit. The result is calibrated, thresholdable posteriors that (i) amplify agreement among reliable models, (ii) preserve uniquely correct single-model signals, and (iii) adapt to drift. To specialise general VLMs, we curate 1,000 real-world dashcam clips with structured annotations (scene description, manoeuvre recommendation, rationale) via an automatic pipeline that fuses HDD ground truth, vehicle kinematics, and YOLOv11 + BoT-SORT tracking, guided by a three-step chain-of-thought prompt; three heterogeneous VLMs are then fine-tuned with LoRA. We evaluate with Hamming distance, Micro-Macro-F1, and average per-video latency. Empirically, the proposed method achieves a 23% reduction in Hamming distance, 55% improvement in Macro-F1, and 47% improvement in Micro-F1 when comparing with the best single model, supporting VLM fusion as a calibrated, interpretable, and robust decision-support component for AV pipelines. 
+
+**Abstract (ZH)**: 基于Shapley值的适应性Dawid-Skene融合方法：用于自主车辆堆栈中的自我视角行车记录仪视频多标签理解 
+
+---
+# EgoTraj-Bench: Towards Robust Trajectory Prediction Under Ego-view Noisy Observations 
+
+**Title (ZH)**: EgoTraj-Bench: 在自视图噪声观测下的稳健轨迹预测评测框架 
+
+**Authors**: Jiayi Liu, Jiaming Zhou, Ke Ye, Kun-Yu Lin, Allan Wang, Junwei Liang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00405)  
+
+**Abstract**: Reliable trajectory prediction from an ego-centric perspective is crucial for robotic navigation in human-centric environments. However, existing methods typically assume idealized observation histories, failing to account for the perceptual artifacts inherent in first-person vision, such as occlusions, ID switches, and tracking drift. This discrepancy between training assumptions and deployment reality severely limits model robustness. To bridge this gap, we introduce EgoTraj-Bench, the first real-world benchmark that grounds noisy, first-person visual histories in clean, bird's-eye-view future trajectories, enabling robust learning under realistic perceptual constraints. Building on this benchmark, we propose BiFlow, a dual-stream flow matching model that concurrently denoises historical observations and forecasts future motion by leveraging a shared latent representation. To better model agent intent, BiFlow incorporates our EgoAnchor mechanism, which conditions the prediction decoder on distilled historical features via feature modulation. Extensive experiments show that BiFlow achieves state-of-the-art performance, reducing minADE and minFDE by 10-15% on average and demonstrating superior robustness. We anticipate that our benchmark and model will provide a critical foundation for developing trajectory forecasting systems truly resilient to the challenges of real-world, ego-centric perception. 
+
+**Abstract (ZH)**: 从自视点视角进行可靠轨迹预测对于人类中心环境中的机器人导航至关重要。然而，现有方法通常假设理想化的观测历史，未能考虑到第一人称视见固有的知觉 artifact，例如遮挡、ID交换和跟踪漂移。训练假设与部署现实之间的这种差距严重限制了模型的鲁棒性。为弥补这一差距，我们引入了EgoTraj-Bench，这是首个将嘈杂的第一人称视觉历史与干净的鸟瞰未来轨迹联系起来的真实世界基准，从而在现实知觉约束下实现鲁棒学习。在此基准之上，我们提出了BiFlow，一种双流流动匹配模型，通过共享潜在表示同时对历史观察进行去噪并预测未来运动。为了更好地建模代理意图，BiFlow 引入了我们的 EgoAnchor 机制，该机制通过对特征进行调节来条件化预测解码器上直馏历史特征。广泛的经验表明，BiFlow 达到了最先进的性能，平均将 minADE 和 minFDE 减少 10-15%，并且表现出更出色的鲁棒性。我们预计，我们的基准和模型将为开发真正能够抵御真实世界自视点感知挑战的轨迹预测系统奠定关键基础。 
+
+---
+# A Hierarchical Agentic Framework for Autonomous Drone-Based Visual Inspection 
+
+**Title (ZH)**: 基于自主无人机的可视化检测分层代理框架 
+
+**Authors**: Ethan Herron, Xian Yeow Lee, Gregory Sin, Teresa Gonzalez Diaz, Ahmed Farahat, Chetan Gupta  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00259)  
+
+**Abstract**: Autonomous inspection systems are essential for ensuring the performance and longevity of industrial assets. Recently, agentic frameworks have demonstrated significant potential for automating inspection workflows but have been limited to digital tasks. Their application to physical assets in real-world environments, however, remains underexplored. In this work, our contributions are two-fold: first, we propose a hierarchical agentic framework for autonomous drone control, and second, a reasoning methodology for individual function executions which we refer to as ReActEval. Our framework focuses on visual inspection tasks in indoor industrial settings, such as interpreting industrial readouts or inspecting equipment. It employs a multi-agent system comprising a head agent and multiple worker agents, each controlling a single drone. The head agent performs high-level planning and evaluates outcomes, while worker agents implement ReActEval to reason over and execute low-level actions. Operating entirely in natural language, ReActEval follows a plan, reason, act, evaluate cycle, enabling drones to handle tasks ranging from simple navigation (e.g., flying forward 10 meters and land) to complex high-level tasks (e.g., locating and reading a pressure gauge). The evaluation phase serves as a feedback and/or replanning stage, ensuring actions align with user objectives while preventing undesirable outcomes. We evaluate the framework in a simulated environment with two worker agents, assessing performance qualitatively and quantitatively based on task completion across varying complexity levels and workflow efficiency. By leveraging natural language processing for agent communication, our approach offers a novel, flexible, and user-accessible alternative to traditional drone-based solutions, enabling autonomous problem-solving for industrial inspection without extensive user intervention. 
+
+**Abstract (ZH)**: 自主检查系统对于确保工业资产的性能和 longevity 至关重要。近期，代理框架展示了在自动化检查流程方面的重要潜力，但仅限于数字任务。然而，将其应用于真实环境中物理资产的使用仍相对少见。在此工作中，我们的贡献主要有两项：首先，我们提出了一种分层的代理框架，用于自主无人机控制；其次，提出了一种针对单个功能执行的推理方法，我们称之为 ReActEval。该框架专注于室内工业环境中的视觉检查任务，如解释工业读数或检查设备。该框架采用多功能代理系统，包括一个主代理和多个工人代理，每个工人代理控制一架单无人机。主代理进行高层次规划并评估结果，而工人代理则执行 ReActEval，通过推理和执行低级动作来实现任务目标。整个过程完全基于自然语言，ReActEval 遵循计划、推理、执行、评估的循环，使得无人机能够处理从简单导航（如向前飞行 10 米并降落）到复杂高层次任务（如定位并读取压力表）的任务。评估阶段作为反馈和/或重新规划的阶段，确保行动符合用户目标并防止不利结果。我们通过使用两个工人代理的模拟环境来评估该框架，基于任务完成程度和复杂度以及工作流程效率进行定性和定量评估。通过利用自然语言处理进行代理之间的通信，我们的方法提供了一种新颖、灵活且用户友好的替代传统无人机解决方案，使工业检查能够实现自主问题解决，而无需大量用户干预。 
+
+---
+# Drones that Think on their Feet: Sudden Landing Decisions with Embodied AI 
+
+**Title (ZH)**: 能够在瞬间做出着陆决定的无人机：基于身体化AI的突发着陆决策 
+
+**Authors**: Diego Ortiz Barbosa, Mohit Agrawal, Yash Malegaonkar, Luis Burbano, Axel Andersson, György Dán, Henrik Sandberg, Alvaro A. Cardenas  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00167)  
+
+**Abstract**: Autonomous drones must often respond to sudden events, such as alarms, faults, or unexpected changes in their environment, that require immediate and adaptive decision-making. Traditional approaches rely on safety engineers hand-coding large sets of recovery rules, but this strategy cannot anticipate the vast range of real-world contingencies and quickly becomes incomplete. Recent advances in embodied AI, powered by large visual language models, provide commonsense reasoning to assess context and generate appropriate actions in real time. We demonstrate this capability in a simulated urban benchmark in the Unreal Engine, where drones dynamically interpret their surroundings and decide on sudden maneuvers for safe landings. Our results show that embodied AI makes possible a new class of adaptive recovery and decision-making pipelines that were previously infeasible to design by hand, advancing resilience and safety in autonomous aerial systems. 
+
+**Abstract (ZH)**: 自主无人机必须经常应对警报、故障或环境中的意外变化等突然事件，这些事件要求即时且适应性的决策。传统方法依靠安全工程师手工编码大量恢复规则，但这种方法无法预见各种实际 contingency 并且很快就会变得不完整。近期以大规模视觉语言模型为动力的嵌入式人工智能进展提供了常识推理能力，能够在实时环境中评估情境并生成适当的动作。我们在 Unreal Engine 中的一个模拟城市基准测试中展示了这种能力，无人机动态解读其周围环境并决定突然的机动以确保安全着陆。我们的结果表明，嵌入式人工智能使设计以往通过手工方式无法实现的新类别的自适应恢复和决策流水线成为可能，从而推动自主空中系统的鲁棒性和安全性发展。 
+
+---
+# Expandable Decision-Making States for Multi-Agent Deep Reinforcement Learning in Soccer Tactical Analysis 
+
+**Title (ZH)**: 扩展决策状态的多Agent深度强化学习在足球战术分析中的应用 
+
+**Authors**: Kenjiro Ide, Taiga Someya, Kohei Kawaguchi, Keisuke Fujii  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00480)  
+
+**Abstract**: Invasion team sports such as soccer produce a high-dimensional, strongly coupled state space as many players continuously interact on a shared field, challenging quantitative tactical analysis. Traditional rule-based analyses are intuitive, while modern predictive machine learning models often perform pattern-matching without explicit agent representations. The problem we address is how to build player-level agent models from data, whose learned values and policies are both tactically interpretable and robust across heterogeneous data sources. Here, we propose Expandable Decision-Making States (EDMS), a semantically enriched state representation that augments raw positions and velocities with relational variables (e.g., scoring of space, pass, and score), combined with an action-masking scheme that gives on-ball and off-ball agents distinct decision sets. Compared to prior work, EDMS maps learned value functions and action policies to human-interpretable tactical concepts (e.g., marking pressure, passing lanes, ball accessibility) instead of raw coordinate features, and aligns agent choices with the rules of play. In the experiments, EDMS with action masking consistently reduced both action-prediction loss and temporal-difference (TD) error compared to the baseline. Qualitative case studies and Q-value visualizations further indicate that EDMS highlights high-risk, high-reward tactical patterns (e.g., fast counterattacks and defensive breakthroughs). We also integrated our approach into an open-source library and demonstrated compatibility with multiple commercial and open datasets, enabling cross-provider evaluation and reproducible experiments. 
+
+**Abstract (ZH)**: 可扩展决策状态表示（EDMS）在足球等侵入性团队运动中的战术分析应用 
+
+---
+# Towards Self-Evolving Benchmarks: Synthesizing Agent Trajectories via Test-Time Exploration under Validate-by-Reproduce Paradigm 
+
+**Title (ZH)**: 基于验证再现 paradigm 下的代理轨迹合成：迈向自主进化的基准测试 
+
+**Authors**: Dadi Guo, Tianyi Zhou, Dongrui Liu, Chen Qian, Qihan Ren, Shuai Shao, Zhiyuan Fan, Yi R. Fung, Kun Wang, Linfeng Zhang, Jing Shao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00415)  
+
+**Abstract**: Recent advances in large language models (LLMs) and agent system designs have empowered agents with unprecedented levels of capability. However, existing agent benchmarks are showing a trend of rapid ceiling-hitting by newly developed agents, making it difficult to meet the demands for evaluating agent abilities. To address this problem, we propose the Trajectory-based Validated-by-Reproducing Agent-benchmark Complexity Evolution (TRACE) framework. This framework takes an original task from an existing benchmark and encourages agents to freely explore and evolve it into a new task with higher difficulty while recording validatable agent trajectories. The framework proceeds in three stages: (1) evolutionary proposal mining, which provides task evolution proposals through preliminary exploration and divergent thinking; (2) problem formation and free exploration, where proposals are conceptualized into feasible problem candidates and the agents then explore them freely while recording their execution trajectories; and (3) multi-level validation, which ensures that the evolved tasks are accompanied by validatable and reproducible trajectories. Experiments on the GAIA benchmark demonstrate that the TRACE framework consistently enhances task complexity while improving the reliability of correctness through validatable execution trajectories. This work marks a paradigm shift from static, manually curated benchmarks to dynamic, self-evolving evaluation systems, providing a sustainable and challenging runway for agent development. 
+
+**Abstract (ZH)**: 基于轨迹验证的代理评估复杂性演变框架（TRACE） 
+
+---
+# Learning to Lead Themselves: Agentic AI in MAS using MARL 
+
+**Title (ZH)**: 自我驱动：使用多智能体强化学习的自主智能代理 
+
+**Authors**: Ansh Kamthan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00022)  
+
+**Abstract**: As autonomous systems move from prototypes to real deployments, the ability of multiple agents to make decentralized, cooperative decisions becomes a core requirement. This paper examines how agentic artificial intelligence, agents that act independently, adaptively and proactively can improve task allocation and coordination in multi-agent systems, with primary emphasis on drone delivery and secondary relevance to warehouse automation. We formulate the problem in a cooperative multi-agent reinforcement learning setting and implement a lightweight multi-agent Proximal Policy Optimization, called IPPO, approach in PyTorch under a centralized-training, decentralized-execution paradigm. Experiments are conducted in PettingZoo environment, where multiple homogeneous drones or agents must self-organize to cover distinct targets without explicit communication. 
+
+**Abstract (ZH)**: 自主系统从原型走向实际部署时，多个代理进行去中心化、合作决策的能力成为关键要求。本文探讨了自主人工智能代理，即独立、适应性和主动地行动的代理，如何在多代理系统中改善任务分配和协调，主要集中在无人机交付领域，次级相关性在于仓库自动化。我们将问题形式化为合作多代理强化学习环境，并在集中训练、去中心化执行的框架下，使用轻量级多代理 proximal 策略优化方法（称作IPPO）进行实施。实验在PettingZoo环境中进行，多个同质无人机或代理需要自我组织覆盖不同的目标而无需显式通信。 
+
+---
+# A Practitioner's Guide to Multi-turn Agentic Reinforcement Learning 
+
+**Title (ZH)**: 一个从业者指南：多轮自主强化学习 
+
+**Authors**: Ruiyi Wang, Prithviraj Ammanabrolu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.01132)  
+
+**Abstract**: We study what actually works and what doesn't for training large language models as agents via multi-turn reinforcement learning. Despite rapid progress, existing frameworks and definitions are fragmented, and there is no systematic formulation or analysis of which design choices matter across tasks. We address this gap by first breaking down the design space into three inter-related pillars -- environment, reward, and policy -- and empirically derive a recipe for training LLM agents in situated textual domains. In particular, we test TextWorld and ALFWorld, popular domains for testing situated embodied reasoning, as well as SWE-Gym for more software engineering style tasks. (i) For the environment, we analyze the impacts of task complexity in terms of sizes of the state and action spaces as well as optimal solution length, finding that even simple environments within a domain can provide signal on how well an agent can generalize to more complex tasks. (ii) For the reward, we ablate relative reward sparsity, observing that while dense turn-level rewards accelerate training, performance and stability is highly dependent on the choice of RL algorithm. (iii) And for the agent's policy, we explore the interplay between reward sparsity and biased (PPO, GRPO) and unbiased (RLOO) policy gradient methods in addition to showing how to find the optimal Supervised Fine-tuning (SFT) to RL training ratio given a fixed budget. We distill these findings into a training recipe that guides co-design across the three pillars, facilitating research and practical efforts in multi-turn agentic RL. Code: this https URL 
+
+**Abstract (ZH)**: 我们研究通过多轮强化学习训练大规模语言模型作为代理的有效性和无效方法。尽管进展迅速，现有框架和定义仍然支离破碎，且缺乏对不同任务中哪些设计选择重要的系统化公式和分析。我们首先将设计空间分解为三个相互关联的支柱——环境、奖励和策略，并通过实证方法推导出在基于文本的情境领域训练LLM代理的配方。特别是，我们测试了TextWorld和ALFWorld，这两个流行的领域用于测试情境化体态推理，以及SWE-Gym，用于更符合软件工程风格的任务。(i) 对于环境，我们分析了状态空间和动作空间大小以及最优解长度的任务复杂性的影响，发现即使在一个领域内的简单环境中也能够提供代理能否泛化到更复杂任务的信号。(ii) 对于奖励，我们剥离相对稀疏的奖励，发现虽然密集的轮次级奖励可以加速训练，但性能和稳定性高度依赖于所选的RL算法。(iii) 对于代理的策略，我们探索了稀疏奖励与有偏（PPO、GRPO）和无偏（RLOO）策略梯度方法之间的相互作用，并展示了如何在固定预算下找到监督微调（SFT）与RL训练的最佳比例。我们将这些发现总结成一个训练配方，以指导三个支柱之间的协同设计，促进多轮代理强化学习的研究和实践。代码：这个 https:// эта ссылка 
+
+---
+# Can World Models Benefit VLMs for World Dynamics? 
+
+**Title (ZH)**: 世界模型能为世界动力学提供益处吗？ 
+
+**Authors**: Kevin Zhang, Kuangzhi Ge, Xiaowei Chi, Renrui Zhang, Shaojun Shi, Zhen Dong, Sirui Han, Shanghang Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00855)  
+
+**Abstract**: Trained on internet-scale video data, generative world models are increasingly recognized as powerful world simulators that can generate consistent and plausible dynamics over structure, motion, and physics. This raises a natural question: with the advent of strong video foundational models, might they supplant conventional vision encoder paradigms for general-purpose multimodal understanding? While recent studies have begun to explore the potential of world models on common vision tasks, these explorations typically lack a systematic investigation of generic, multimodal tasks. In this work, we strive to investigate the capabilities when world model priors are transferred into Vision-Language Models: we re-purpose a video diffusion model as a generative encoder to perform a single denoising step and treat the resulting latents as a set of visual embedding. We empirically investigate this class of models, which we refer to as World-Language Models (WorldLMs), and we find that generative encoders can capture latents useful for downstream understanding that show distinctions from conventional encoders. Naming our best-performing variant Dynamic Vision Aligner (DyVA), we further discover that this method significantly enhances spatial reasoning abilities and enables single-image models to perform multi-frame reasoning. Through the curation of a suite of visual reasoning tasks, we find DyVA to surpass both open-source and proprietary baselines, achieving state-of-the-art or comparable performance. We attribute these gains to WorldLM's inherited motion-consistency internalization from video pre-training. Finally, we systematically explore extensive model designs to highlight promising directions for future work. We hope our study can pave the way for a new family of VLMs that leverage priors from world models and are on a promising path towards generalist vision learners. 
+
+**Abstract (ZH)**: 基于互联网规模视频数据训练的生成世界模型被越来越多地视为强大的世界模拟器，能够生成一致且合理的结构、运动和物理的动力学。这引发了一个自然的问题：随着强大的视频基础模型的出现，它们是否会取代通用多模态理解中的传统视觉编码范式？虽然近年来的研究开始探索世界模型在通用视觉任务上的潜力，但这些探索通常缺乏对通用多模态任务的系统性研究。在本项工作中，我们致力于研究当世界模型先验知识转移到视觉语言模型中的能力：我们重新利用一个视频扩散模型作为生成编码器进行单步去噪，并将得到的潜在变量视为一组视觉嵌入。我们实证研究了这类模型，称之为世界语言模型（WorldLMs），并发现生成编码器可以捕捉到对下游理解有用的潜在变量，这些潜在变量与传统编码器存在区别。我们将其性能最佳的版本命名为动态视觉对齐器（DyVA），进一步发现这种方法显著增强了空间推理能力，并使单帧模型能够进行多帧推理。通过精心设计一组视觉推理任务，我们发现DyVA超越了开源和专有基准模型，实现了最先进的或可比的性能。我们将这些收益归因于世界语言模型继承的视频预训练中运动一致性的内在化。最后，我们系统地探索了广泛的模型设计，指出了未来工作的有希望的方向。我们希望我们的研究能够为利用世界模型先验知识的新型视觉语言模型铺平道路，并且这些模型正朝着通用视觉学习者的方向前进。 
+
+---
+# Reasoning-Aware Prompt Orchestration: A Foundation Model for Multi-Agent Language Model Coordination 
+
+**Title (ZH)**: 基于推理的提示管弦乐：多代理语言模型协调的础模型 
+
+**Authors**: Hassen Dhrif  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00326)  
+
+**Abstract**: The emergence of large language models has enabled sophisticated multi-agent systems, yet coordinating their reasoning capabilities through prompt engineering remains challenging. We present a theoretically-grounded framework for dynamic prompt orchestration that enhances reasoning across multiple specialized agents. This framework addresses three core challenges: logical consistency preservation during agent transitions, reasoning-aware prompt adaptation, and scalable coordination of distributed inference.
+Our approach formalizes agent states using prompt templates, reasoning context vectors, and capability matrices. We prove system convergence to stable coordination patterns when step sizes satisfy $\alpha < \frac{1}{2L}$ where $L$ is the Lipschitz constant of the state transition function. We implement this through a distributed architecture that dynamically routes reasoning tasks while maintaining semantic coherence.
+Experimental results on 1,000 synthetic multi-agent conversations demonstrate a 42% reduction in reasoning latency, a 23% improvement in logical consistency measured by ROUGE-L score, and an 89% success rate for task completion without context loss across agent transitions. Ablation studies identify the consensus mechanism as the primary performance driver, while revealing limitations: performance degrades beyond 10 agent transitions, and the system requires 76.5GB memory for 1,000 concurrent agents. These findings establish a new paradigm for scalable reasoning in multi-agent systems, providing theoretical foundations for understanding reasoning emergence across coordinated language models. 
+
+**Abstract (ZH)**: 大型语言模型的出现使得复杂的多代理系统成为可能，但通过提示工程协调其推理能力仍然具有挑战性。我们提出了一种理论依据框架，以增强多个专业化代理之间的推理能力。该框架解决了三个核心挑战：代理过渡期间的逻辑一致性保持、推理意识提示适应以及分布式推断的可扩展协调。 
+
+---
+# o-MEGA: Optimized Methods for Explanation Generation and Analysis 
+
+**Title (ZH)**: O-MEGA: 优化的解释生成与分析方法 
+
+**Authors**: Ľuboš Kriš, Jaroslav Kopčan, Qiwei Peng, Andrej Ridzik, Marcel Veselý, Martin Tamajka  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00288)  
+
+**Abstract**: The proliferation of transformer-based language models has revolutionized NLP domain while simultaneously introduced significant challenges regarding model transparency and trustworthiness. The complexity of achieving explainable systems in this domain is evidenced by the extensive array of explanation methods and evaluation metrics developed by researchers. To address the challenge of selecting optimal explainability approaches, we present \textbf{\texttt{o-mega}}, a hyperparameter optimization tool designed to automatically identify the most effective explainable AI methods and their configurations within the semantic matching domain. We evaluate o-mega on a post-claim matching pipeline using a curated dataset of social media posts paired with refuting claims. Our tool systematically explores different explainable methods and their hyperparameters, demonstrating improved transparency in automated fact-checking systems. As a result, such automated optimization of explanation methods can significantly enhance the interpretability of claim-matching models in critical applications such as misinformation detection, contributing to more trustworthy and transparent AI systems. 
+
+**Abstract (ZH)**: 基于变压器的语言模型的 proliferations 已经 revolutionized NLP 领域，同时引入了关于模型透明性和可信度的重要挑战。在这一领域实现可解释系统的复杂性通过研究人员开发的广泛解释方法和评估指标得到了证明。为了应对选择最优可解释性方法的挑战，我们提出 \textbf{\texttt{o-mega}}，这是一种 hyperparameter 演优化工具，旨在自动识别语义匹配领域中最有效的可解释 AI 方法及其配置。我们在一个使用社交媒体帖子及其反驳声明构建的定制数据集上的 post-claim 匹配管道上对 o-mega 进行了评估。该工具系统地探索了不同的可解释方法及其 hyperparameters，证明了在自动事实核查系统中的透明度提升。因此，这种自动优化可解释方法可以显著增强关键应用（如 misinformation 检测）中的声明匹配模型的可解释性，从而促进更可信和透明的 AI 系统。 
+
+---
+# TGPO: Temporal Grounded Policy Optimization for Signal Temporal Logic Tasks 
+
+**Title (ZH)**: TGPO：时间导向的信号时序逻辑策略优化 
+
+**Authors**: Yue Meng, Fei Chen, Chuchu Fan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00225)  
+
+**Abstract**: Learning control policies for complex, long-horizon tasks is a central challenge in robotics and autonomous systems. Signal Temporal Logic (STL) offers a powerful and expressive language for specifying such tasks, but its non-Markovian nature and inherent sparse reward make it difficult to be solved via standard Reinforcement Learning (RL) algorithms. Prior RL approaches focus only on limited STL fragments or use STL robustness scores as sparse terminal rewards. In this paper, we propose TGPO, Temporal Grounded Policy Optimization, to solve general STL tasks. TGPO decomposes STL into timed subgoals and invariant constraints and provides a hierarchical framework to tackle the problem. The high-level component of TGPO proposes concrete time allocations for these subgoals, and the low-level time-conditioned policy learns to achieve the sequenced subgoals using a dense, stage-wise reward signal. During inference, we sample various time allocations and select the most promising assignment for the policy network to rollout the solution trajectory. To foster efficient policy learning for complex STL with multiple subgoals, we leverage the learned critic to guide the high-level temporal search via Metropolis-Hastings sampling, focusing exploration on temporally feasible solutions. We conduct experiments on five environments, ranging from low-dimensional navigation to manipulation, drone, and quadrupedal locomotion. Under a wide range of STL tasks, TGPO significantly outperforms state-of-the-art baselines (especially for high-dimensional and long-horizon cases), with an average of 31.6% improvement in task success rate compared to the best baseline. The code will be available at this https URL 
+
+**Abstract (ZH)**: Temporal Grounded Policy Optimization for Learning Control Policies for Complex, Long-Horizon Signal Temporal Logic Tasks 
+
+---
+# CHAI: Command Hijacking against embodied AI 
+
+**Title (ZH)**: CHAI: 向 embodied AI 发动命令劫持攻击 
+
+**Authors**: Luis Burbano, Diego Ortiz, Qi Sun, Siwei Yang, Haoqin Tu, Cihang Xie, Yinzhi Cao, Alvaro A Cardenas  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00181)  
+
+**Abstract**: Embodied Artificial Intelligence (AI) promises to handle edge cases in robotic vehicle systems where data is scarce by using common-sense reasoning grounded in perception and action to generalize beyond training distributions and adapt to novel real-world situations. These capabilities, however, also create new security risks. In this paper, we introduce CHAI (Command Hijacking against embodied AI), a new class of prompt-based attacks that exploit the multimodal language interpretation abilities of Large Visual-Language Models (LVLMs). CHAI embeds deceptive natural language instructions, such as misleading signs, in visual input, systematically searches the token space, builds a dictionary of prompts, and guides an attacker model to generate Visual Attack Prompts. We evaluate CHAI on four LVLM agents; drone emergency landing, autonomous driving, and aerial object tracking, and on a real robotic vehicle. Our experiments show that CHAI consistently outperforms state-of-the-art attacks. By exploiting the semantic and multimodal reasoning strengths of next-generation embodied AI systems, CHAI underscores the urgent need for defenses that extend beyond traditional adversarial robustness. 
+
+**Abstract (ZH)**: 面向感知与行动的嵌入式人工智能中的命令 hijacking 攻击（CHAI） 
+
+---
+# Adaptive and Resource-efficient Agentic AI Systems for Mobile and Embedded Devices: A Survey 
+
+**Title (ZH)**: 适配性和资源高效的人工智能代理系统：面向移动和嵌入式设备的综述 
+
+**Authors**: Sicong Liu, Weiye Wu, Xiangrui Xu, Teng Li, Bowen Pang, Bin Guo, Zhiwen Yu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00078)  
+
+**Abstract**: Foundation models have reshaped AI by unifying fragmented architectures into scalable backbones with multimodal reasoning and contextual adaptation. In parallel, the long-standing notion of AI agents, defined by the sensing-decision-action loop, is entering a new paradigm: with FMs as their cognitive core, agents transcend rule-based behaviors to achieve autonomy, generalization, and self-reflection. This dual shift is reinforced by real-world demands such as autonomous driving, robotics, virtual assistants, and GUI agents, as well as ecosystem advances in embedded hardware, edge computing, mobile deployment platforms, and communication protocols that together enable large-scale deployment. Yet this convergence collides with reality: while applications demand long-term adaptability and real-time interaction, mobile and edge deployments remain constrained by memory, energy, bandwidth, and latency. This creates a fundamental tension between the growing complexity of FMs and the limited resources of deployment environments. This survey provides the first systematic characterization of adaptive, resource-efficient agentic AI systems. We summarize enabling techniques into elastic inference, test-time adaptation, dynamic multimodal integration, and agentic AI applications, and identify open challenges in balancing accuracy-latency-communication trade-offs and sustaining robustness under distribution shifts. We further highlight future opportunities in algorithm-system co-design, cognitive adaptation, and collaborative edge deployment. By mapping FM structures, cognition, and hardware resources, this work establishes a unified perspective toward scalable, adaptive, and resource-efficient agentic AI. We believe this survey can help readers to understand the connections between enabling technologies while promoting further discussions on the fusion of agentic intelligence and intelligent agents. 
+
+**Abstract (ZH)**: 基础模型通过将多模态推理和上下文适应统一看作可扩展骨干，重塑了AI，重新整合了碎片化的架构。与此同时，长期存在的基于感知-决策-行动循环的AI代理概念正进入新的范式：借助基础模型作为认知核心，代理超越基于规则的行为，实现自主性、泛化能力和自我反思。这种双重转变在自动驾驶、机器人技术、虚拟助手和GUI代理等实际需求，以及嵌入式硬件、边缘计算、移动部署平台和通信协议的生态系统进步的支持下得以强化，共同促成了大规模部署。然而，这一交汇也面临着现实的挑战：尽管应用程序需要长期适应性和实时交互性，但移动和边缘部署仍然受限于内存、能源、带宽和延迟。这在基础模型日益复杂的趋势与部署环境有限的资源之间造成了根本性的紧张关系。本文综述提供了首个系统化的自适应、资源高效代理AI系统的特征。我们总结了使能技术为弹性推理、测试时适应、动态多模态集成和代理AI应用，并识别了平衡精确度-延迟-通信权衡以及在分布变化下维持鲁棒性的开放挑战。我们还突出了算法-系统协同设计、认知适应和协作边缘部署的未来机遇。通过映射基础模型结构、认知和硬件资源，本文建立了对未来扩展、自适应和资源高效的代理AI的统一视角。我们认为，本文综述有助于读者理解使能技术之间的联系，并促进代理智能与智能代理融合的进一步讨论。 
+
+---
+# Uncovering Intrinsic Capabilities: A Paradigm for Data Curation in Vision-Language Models 
+
+**Title (ZH)**: 揭示内在能力：视觉-语言模型中数据整理的范式 
+
+**Authors**: Junjie Li, Ziao Wang, Jianghong Ma, Xiaofeng Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00040)  
+
+**Abstract**: Large vision-language models (VLMs) achieve strong benchmark performance, but controlling their behavior through instruction tuning remains difficult. Reducing the budget of instruction tuning dataset often causes regressions, as heuristic strategies treat models as black boxes and overlook the latent capabilities that govern learning. We introduce Capability-Attributed Data Curation (CADC), a framework that shifts curation from task-specific heuristics to intrinsic capability analysis. CADC discovers intrinsic capabilities in an unsupervised manner from gradient-based learning trajectories, attributes training data to these capabilities via influence estimation, and curates capability-aware curricula through balanced selection and staged sequencing. This transforms black-box instruction tuning into a controllable, capability-driven process. With as little as 5% of the original data, CADC surpasses full-data training on multimodal benchmarks. These results validate intrinsic capabilities as the fundamental building blocks of model learning and establish CADC as a principle paradigm for instruction data curation. 
+
+**Abstract (ZH)**: 大规模多模态视觉-语言模型在基准测试中表现出色，但通过指令调优控制其行为仍具挑战性。减少指令调优数据集的预算往往会引发性能倒退，因为启发式策略将模型视为黑盒并忽视了控制学习的潜在能力。我们提出了能力归因数据收集框架（CADC），该框架将数据收集从特定任务的启发式策略转移到内在能力分析。CADC通过梯度导向的学习轨迹以无监督方式发现内在能力，通过影响估计将训练数据归因于这些能力，并通过平衡选择和分阶段排序制定能力意识的教学计划，从而将黑盒指令调优转化为可控的能力驱动过程。仅使用原始数据的5%，CADC在多模态基准测试中超过了全数据训练。这些结果验证了内在能力是模型学习的基本构建块，并确立了CADC作为指令数据收集基本原则框架的地位。 
+
+---
+# WaveMind: Towards a Conversational EEG Foundation Model Aligned to Textual and Visual Modalities 
+
+**Title (ZH)**: WaveMind: 朝着文本和视觉模态对齐的对话EEG基础模型的进步 
+
+**Authors**: Ziyi Zeng, Zhenyang Cai, Yixi Cai, Xidong Wang, Junying Chen, Rongsheng Wang, Yipeng Liu, Siqi Cai, Benyou Wang, Zhiguo Zhang, Haizhou Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00032)  
+
+**Abstract**: Electroencephalography (EEG) interpretation using multimodal large language models (MLLMs) offers a novel approach for analyzing brain signals. However, the complex nature of brain activity introduces critical challenges: EEG signals simultaneously encode both cognitive processes and intrinsic neural states, creating a mismatch in EEG paired-data modality that hinders effective cross-modal representation learning. Through a pivot investigation, we uncover complementary relationships between these modalities. Leveraging this insight, we propose mapping EEG signals and their corresponding modalities into a unified semantic space to achieve generalized interpretation. To fully enable conversational capabilities, we further introduce WaveMind-Instruct-338k, the first cross-task EEG dataset for instruction tuning. The resulting model demonstrates robust classification accuracy while supporting flexible, open-ended conversations across four downstream tasks, thereby offering valuable insights for both neuroscience research and the development of general-purpose EEG models. 
+
+**Abstract (ZH)**: 利用多模态大型语言模型解读脑电信号（EEG）为分析脑信号提供了新方法。然而，脑活动的复杂性引入了关键挑战：EEG信号同时编码认知过程和内在神经状态，造成配对数据模态之间的不匹配，阻碍了有效的跨模态表示学习。通过一项关键调查，我们揭示了这些模态之间的互补关系。基于此洞察，我们提出将EEG信号及其对应的模态映射到一个统一的语义空间，以实现通用解释。为进一步增强对话能力，我们引入了WaveMind-Instruct-338k，这是首个用于指令微调的跨任务EEG数据集。该模型的分类准确性表现出色，并支持在四项下游任务中进行灵活、开放的对话，从而为神经科学领域的研究和通用EEG模型的发展提供了宝贵见解。 
+
+---
+# Autonomous Multi-Robot Infrastructure for AI-Enabled Healthcare Delivery and Diagnostics 
+
+**Title (ZH)**: 自主多机器人基础设施以实现AI赋能的健康 care 交付与诊断 
+
+**Authors**: Nakhul Kalaivanan, Senthil Arumugam Muthukumaraswamy, Girish Balasubramanian  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.26106)  
+
+**Abstract**: This research presents a multi-robot system for inpatient care, designed using swarm intelligence principles and incorporating wearable health sensors, RF-based communication, and AI-driven decision support. Within a simulated hospital environment, the system adopts a leader-follower swarm configuration to perform patient monitoring, medicine delivery, and emergency assistance. Due to ethical constraints, live patient trials were not conducted; instead, validation was carried out through controlled self-testing with wearable sensors. The Leader Robot acquires key physiological parameters, including temperature, SpO2, heart rate, and fall detection, and coordinates other robots when required. The Assistant Robot patrols corridors for medicine delivery, while a robotic arm provides direct drug administration. The swarm-inspired leader-follower strategy enhanced communication reliability and ensured continuous monitoring, including automated email alerts to healthcare staff. The system hardware was implemented using Arduino, Raspberry Pi, NRF24L01 RF modules, and a HuskyLens AI camera. Experimental evaluation showed an overall sensor accuracy above 94%, a 92% task-level success rate, and a 96% communication reliability rate, demonstrating system robustness. Furthermore, the AI-enabled decision support was able to provide early warnings of abnormal health conditions, highlighting the potential of the system as a cost-effective solution for hospital automation and patient safety. 
+
+**Abstract (ZH)**: 基于 swarm 智能原则的设计的多机器人系统：应用于病房护理中的穿戴式健康传感器、RF通信和AI驱动决策支持的领导-跟随者配置 
+
+---
+# EVO-LRP: Evolutionary Optimization of LRP for Interpretable Model Explanations 
+
+**Title (ZH)**: EVO-LRP：可解释模型解释中的LRP进化优化 
+
+**Authors**: Emerald Zhang, Julian Weaver, Samantha R Santacruz, Edward Castillo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2509.23585)  
+
+**Abstract**: Explainable AI (XAI) methods help identify which image regions influence a model's prediction, but often face a trade-off between detail and interpretability. Layer-wise Relevance Propagation (LRP) offers a model-aware alternative. However, LRP implementations commonly rely on heuristic rule sets that are not optimized for clarity or alignment with model behavior. We introduce EVO-LRP, a method that applies Covariance Matrix Adaptation Evolution Strategy (CMA-ES) to tune LRP hyperparameters based on quantitative interpretability metrics, such as faithfulness or sparseness. EVO-LRP outperforms traditional XAI approaches in both interpretability metric performance and visual coherence, with strong sensitivity to class-specific features. These findings demonstrate that attribution quality can be systematically improved through principled, task-specific optimization. 
+
+**Abstract (ZH)**: 可解释人工智能（XAI）方法有助于识别哪幅图像区域影响模型预测，但通常面临详细性和可解释性之间的权衡。层wise相关性传播（LRP）提供了一种基于模型的替代方案。然而，LRP实现通常依赖于非优化的启发式规则集，不利于清晰度或与模型行为的一致性。我们引入了EVO-LRP方法，该方法利用Covariance Matrix Adaptation Evolution Strategy（CMA-ES）根据忠实度或稀疏性等定量可解释性指标调整LRP超参数。EVO-LRP在可解释性指标性能和视觉一致性方面均优于传统XAI方法，并且对类别特定特征表现出强烈的敏感性。这些发现证明，通过原理明确且针对任务的优化，可以系统地提高归因质量。 
+
+---
