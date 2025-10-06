@@ -1,0 +1,78 @@
+# Team Xiaomi EV-AD VLA: Caption-Guided Retrieval System for Cross-Modal Drone Navigation - Technical Report for IROS 2025 RoboSense Challenge Track 4 
+
+**Title (ZH)**: 小米团队EV-AD VLA：基于Caption引导的跨模态无人机导航检索系统 - IROS 2025 RoboSense挑战赛赛道4技术报告 
+
+**Authors**: Lingfeng Zhang, Erjia Xiao, Yuchen Zhang, Haoxiang Fu, Ruibin Hu, Yanbiao Ma, Wenbo Ding, Long Chen, Hangjun Ye, Xiaoshuai Hao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.02728)  
+
+**Abstract**: Cross-modal drone navigation remains a challenging task in robotics, requiring efficient retrieval of relevant images from large-scale databases based on natural language descriptions. The RoboSense 2025 Track 4 challenge addresses this challenge, focusing on robust, natural language-guided cross-view image retrieval across multiple platforms (drones, satellites, and ground cameras). Current baseline methods, while effective for initial retrieval, often struggle to achieve fine-grained semantic matching between text queries and visual content, especially in complex aerial scenes. To address this challenge, we propose a two-stage retrieval refinement method: Caption-Guided Retrieval System (CGRS) that enhances the baseline coarse ranking through intelligent reranking. Our method first leverages a baseline model to obtain an initial coarse ranking of the top 20 most relevant images for each query. We then use Vision-Language-Model (VLM) to generate detailed captions for these candidate images, capturing rich semantic descriptions of their visual content. These generated captions are then used in a multimodal similarity computation framework to perform fine-grained reranking of the original text query, effectively building a semantic bridge between the visual content and natural language descriptions. Our approach significantly improves upon the baseline, achieving a consistent 5\% improvement across all key metrics (Recall@1, Recall@5, and Recall@10). Our approach win TOP-2 in the challenge, demonstrating the practical value of our semantic refinement strategy in real-world robotic navigation scenarios. 
+
+**Abstract (ZH)**: RoboSense 2025Track 4挑战：基于自然语言引导的多平台跨视图图像检索 
+
+---
+# Mitigating Modal Imbalance in Multimodal Reasoning 
+
+**Title (ZH)**: 缓解多模态推理中的模态不平衡 
+
+**Authors**: Chen Henry Wu, Neil Kale, Aditi Raghunathan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.02608)  
+
+**Abstract**: Foundation models (FMs) deployed in real-world tasks such as computer-use agents must integrate diverse modalities. How good are FMs at performing joint reasoning, simultaneously reasoning over multiple modalities, especially when the modalities interact and relate to each other to form cross-modal context? To better understand this problem, we study FMs on cross-modal conflicts: scenarios where conflicting evidence is presented across modalities. This allows us to examine whether FMs prioritize one modality over another or reason jointly to reconcile the conflict. Our experiments reveal that FMs can recognize conflicts in unimodal contexts, composed of a single modality, 90% of the time, but the ratio falls as low as 3% when evidence is split across modalities -- similar observations hold in cross-lingual contexts, composed of multiple languages. We trace this failure to cross-modal attention imbalance, showing that FMs exhibit extreme asymmetry in attention scores, disproportionately prioritizing certain modalities. We show that cross-modal attention imbalance does not go away by simply scaling up multimodal or multilingual datasets blindly, since they lack training examples that explicitly require cross-modal reasoning. We demonstrate that even a simple and scalable method of explicitly combining multiple modalities within each training instance significantly reduces attention imbalance. Reduced attention imbalance directly translates to improved downstream performance on several vision-language benchmarks. Our findings underscore the importance of systematically addressing cross-modal contexts to build reliable foundation models. 
+
+**Abstract (ZH)**: 基础模型在现实任务中的跨模态冲突处理能力：基于联合推理的研究 
+
+---
+# Multimodal Function Vectors for Spatial Relations 
+
+**Title (ZH)**: 多模态空间关系向量 
+
+**Authors**: Shuhao Fu, Esther Goldberg, Ying Nian Wu, Hongjing Lu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.02528)  
+
+**Abstract**: Large Multimodal Models (LMMs) demonstrate impressive in-context learning abilities from limited multimodal demonstrations, yet the internal mechanisms supporting such task learning remain opaque. Building on prior work of large language models, we show that a small subset of attention heads in the vision-language model OpenFlamingo-4B is responsible for transmitting representations of spatial relations. The activations of these attention heads, termed function vectors, can be extracted and manipulated to alter an LMM's performance on relational tasks. First, using both synthetic and real image datasets, we apply causal mediation analysis to identify attention heads that strongly influence relational predictions, and extract multimodal function vectors that improve zero-shot accuracy at inference time. We further demonstrate that these multimodal function vectors can be fine-tuned with a modest amount of training data, while keeping LMM parameters frozen, to significantly outperform in-context learning baselines. Finally, we show that relation-specific function vectors can be linearly combined to solve analogy problems involving novel and untrained spatial relations, highlighting the strong generalization ability of this approach. Our results show that LMMs encode spatial relational knowledge within localized internal structures, which can be systematically extracted and optimized, thereby advancing our understanding of model modularity and enhancing control over relational reasoning in LMMs. 
+
+**Abstract (ZH)**: Large Multimodal Models中的小部分注意力头在传输空间关系表示中起作用：通过因果中介分析识别对关系预测有强烈影响的注意力头，并提取多模态功能向量以提高零-shot准确性，这些功能向量在微调后表现出色，揭示了大型多模态模型在空间关系知识编码中的模块化结构及其优化潜力。 
+
+---
+# Multimodal Carotid Risk Stratification with Large Vision-Language Models: Benchmarking, Fine-Tuning, and Clinical Insights 
+
+**Title (ZH)**: 基于大型视觉-语言模型的多模态颈动脉风险分层：基准测试、微调与临床见解 
+
+**Authors**: Daphne Tsolissou, Theofanis Ganitidis, Konstantinos Mitsis, Stergios CHristodoulidis, Maria Vakalopoulou, Konstantina Nikita  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.02922)  
+
+**Abstract**: Reliable risk assessment for carotid atheromatous disease remains a major clinical challenge, as it requires integrating diverse clinical and imaging information in a manner that is transparent and interpretable to clinicians. This study investigates the potential of state-of-the-art and recent large vision-language models (LVLMs) for multimodal carotid plaque assessment by integrating ultrasound imaging (USI) with structured clinical, demographic, laboratory, and protein biomarker data. A framework that simulates realistic diagnostic scenarios through interview-style question sequences is proposed, comparing a range of open-source LVLMs, including both general-purpose and medically tuned models. Zero-shot experiments reveal that even if they are very powerful, not all LVLMs can accurately identify imaging modality and anatomy, while all of them perform poorly in accurate risk classification. To address this limitation, LLaVa-NeXT-Vicuna is adapted to the ultrasound domain using low-rank adaptation (LoRA), resulting in substantial improvements in stroke risk stratification. The integration of multimodal tabular data in the form of text further enhances specificity and balanced accuracy, yielding competitive performance compared to prior convolutional neural network (CNN) baselines trained on the same dataset. Our findings highlight both the promise and limitations of LVLMs in ultrasound-based cardiovascular risk prediction, underscoring the importance of multimodal integration, model calibration, and domain adaptation for clinical translation. 
+
+**Abstract (ZH)**: 基于最新视觉-语言模型的颈动脉斑块评估：一种结合超声成像与结构化临床、人口统计、实验室和蛋白质生物标志物数据的方法 
+
+---
+# Align Your Query: Representation Alignment for Multimodality Medical Object Detection 
+
+**Title (ZH)**: 对齐你的查询：多模态医疗目标检测的表示对齐 
+
+**Authors**: Ara Seo, Bryan Sangwoo Kim, Hyungjin Chung, Jong Chul Ye  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.02789)  
+
+**Abstract**: Medical object detection suffers when a single detector is trained on mixed medical modalities (e.g., CXR, CT, MRI) due to heterogeneous statistics and disjoint representation spaces. To address this challenge, we turn to representation alignment, an approach that has proven effective for bringing features from different sources into a shared space. Specifically, we target the representations of DETR-style object queries and propose a simple, detector-agnostic framework to align them with modality context. First, we define modality tokens: compact, text-derived embeddings encoding imaging modality that are lightweight and require no extra annotations. We integrate the modality tokens into the detection process via Multimodality Context Attention (MoCA), mixing object-query representations via self-attention to propagate modality context within the query set. This preserves DETR-style architectures and adds negligible latency while injecting modality cues into object queries. We further introduce QueryREPA, a short pretraining stage that aligns query representations to their modality tokens using a task-specific contrastive objective with modality-balanced batches. Together, MoCA and QueryREPA produce modality-aware, class-faithful queries that transfer effectively to downstream training. Across diverse modalities trained altogether, the proposed approach consistently improves AP with minimal overhead and no architectural modifications, offering a practical path toward robust multimodality medical object detection. Project page: this https URL. 
+
+**Abstract (ZH)**: 医疗物体检测在使用混合医学模态（例如，X射线、CT、MRI）训练单个检测器时由于异质统计和分离的表示空间而受到影响。为了解决这一挑战，我们转向了表示对齐的方法，这种方法已被证明能够将不同来源的特征带入共享空间。具体地，我们针对DETRE-style物体查询的表示，并提出了一种简单且与检测器无关的框架来将其与模态上下文对齐。首先，我们定义了模态令牌：紧凑的、文本衍生的嵌入，编码成像模态，轻量级且无需额外注释。我们通过多模态上下文注意力（MoCA）将模态令牌集成到检测过程中，利用自注意力机制混合物体查询表示，在查询集中传递模态上下文。这种方法保持了DETRE-style架构并在几乎不增加延迟的情况下将模态线索注入物体查询中。我们进一步引入了QueryREPA，这是一种简短的预训练阶段，使用特定任务对比目标并以模态平衡的批次对查询表示进行模态令牌对齐。结合MoCA和QueryREPA，生成模态意识、类别忠实的查询，有效地转移至下游训练。在整个多种模态共同训练中，所提出的方法在几乎没有额外开销和不修改架构的情况下一致提高了AP，提供了一条走向稳健多模态医疗物体检测的实用路径。项目页面：this https URL。 
+
+---
+# Representation Learning for Compressed Video Action Recognition via Attentive Cross-modal Interaction with Motion Enhancement 
+
+**Title (ZH)**: 基于注意跨模态交互与运动增强的压缩视频动作识别表示学习 
+
+**Authors**: Bing Li, Jiaxin Chen, Dongming Zhang, Xiuguo Bao, Di Huang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2205.03569)  
+
+**Abstract**: Compressed video action recognition has recently drawn growing attention, since it remarkably reduces the storage and computational cost via replacing raw videos by sparsely sampled RGB frames and compressed motion cues (e.g., motion vectors and residuals). However, this task severely suffers from the coarse and noisy dynamics and the insufficient fusion of the heterogeneous RGB and motion modalities. To address the two issues above, this paper proposes a novel framework, namely Attentive Cross-modal Interaction Network with Motion Enhancement (MEACI-Net). It follows the two-stream architecture, i.e. one for the RGB modality and the other for the motion modality. Particularly, the motion stream employs a multi-scale block embedded with a denoising module to enhance representation learning. The interaction between the two streams is then strengthened by introducing the Selective Motion Complement (SMC) and Cross-Modality Augment (CMA) modules, where SMC complements the RGB modality with spatio-temporally attentive local motion features and CMA further combines the two modalities with selective feature augmentation. Extensive experiments on the UCF-101, HMDB-51 and Kinetics-400 benchmarks demonstrate the effectiveness and efficiency of MEACI-Net. 
+
+**Abstract (ZH)**: 压缩视频动作识别 recently 引起了越来越多的关注，通过用稀疏采样的RGB帧和压缩的运动线索（例如运动矢量和残差）替代原始视频，它显著地降低了存储和计算成本。然而，该任务严重受到粗糙和嘈杂的动力学以及RGB和运动模态不足的融合的影响。为了解决上述两个问题，本文提出了一种新型框架，即带运动增强的注意跨模态交互网络（MEACI-Net）。该框架遵循两流架构，分别为RGB模态和运动模态设计。特别是，运动流中嵌入了多尺度块并包含去噪模块，以增强表示学习。然后通过引入选择性运动补充（SMC）模块和跨模态增强（CMA）模块加强两流之间的交互，其中SMC使用时序注意局部运动特征补充RGB模态，而CMA进一步通过选择性特征增强将两个模态结合起来。在UCF-101、HMDB-51和Kinetics-400基准上的 extensive 实验演示了MEACI-Net 的有效性和效率。 
+
+---
