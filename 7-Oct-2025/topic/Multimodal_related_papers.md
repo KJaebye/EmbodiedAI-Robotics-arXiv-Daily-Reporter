@@ -1,0 +1,182 @@
+# Think Then Embed: Generative Context Improves Multimodal Embedding 
+
+**Title (ZH)**: 深思而后嵌入：生成性上下文提升多模态嵌入 
+
+**Authors**: Xuanming Cui, Jianpeng Cheng, Hong-you Chen, Satya Narayan Shukla, Abhijeet Awasthi, Xichen Pan, Chaitanya Ahuja, Shlok Kumar Mishra, Qi Guo, Ser-Nam Lim, Aashu Singh, Xiangjun Fan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.05014)  
+
+**Abstract**: There is a growing interest in Universal Multimodal Embeddings (UME), where models are required to generate task-specific representations. While recent studies show that Multimodal Large Language Models (MLLMs) perform well on such tasks, they treat MLLMs solely as encoders, overlooking their generative capacity. However, such an encoding paradigm becomes less effective as instructions become more complex and require compositional reasoning. Inspired by the proven effectiveness of chain-of-thought reasoning, we propose a general Think-Then-Embed (TTE) framework for UME, composed of a reasoner and an embedder. The reasoner MLLM first generates reasoning traces that explain complex queries, followed by an embedder that produces representations conditioned on both the original query and the intermediate reasoning. This explicit reasoning step enables more nuanced understanding of complex multimodal instructions. Our contributions are threefold. First, by leveraging a powerful MLLM reasoner, we achieve state-of-the-art performance on the MMEB-V2 benchmark, surpassing proprietary models trained on massive in-house datasets. Second, to reduce the dependency on large MLLM reasoners, we finetune a smaller MLLM reasoner using high-quality embedding-centric reasoning traces, achieving the best performance among open-source models with a 7% absolute gain over recently proposed models. Third, we investigate strategies for integrating the reasoner and embedder into a unified model for improved efficiency without sacrificing performance. 
+
+**Abstract (ZH)**: Growing Interest in Universal Multimodal Embeddings with a Think-Then-Embed Framework 
+
+---
+# Improving Multimodal Brain Encoding Model with Dynamic Subject-awareness Routing 
+
+**Title (ZH)**: 基于动态主体意识路由的多模态大脑编码模型改进 
+
+**Authors**: Xuanhua Yin, Runkai Zhao, Weidong Cai  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.04670)  
+
+**Abstract**: Naturalistic fMRI encoding must handle multimodal inputs, shifting fusion styles, and pronounced inter-subject variability. We introduce AFIRE (Agnostic Framework for Multimodal fMRI Response Encoding), an agnostic interface that standardizes time-aligned post-fusion tokens from varied encoders, and MIND, a plug-and-play Mixture-of-Experts decoder with a subject-aware dynamic gating. Trained end-to-end for whole-brain prediction, AFIRE decouples the decoder from upstream fusion, while MIND combines token-dependent Top-K sparse routing with a subject prior to personalize expert usage without sacrificing generality. Experiments across multiple multimodal backbones and subjects show consistent improvements over strong baselines, enhanced cross-subject generalization, and interpretable expert patterns that correlate with content type. The framework offers a simple attachment point for new encoders and datasets, enabling robust, plug-and-improve performance for naturalistic neuroimaging studies. 
+
+**Abstract (ZH)**: 自然场景fMRI编码必须处理多模态输入、变化的融合风格及显著的跨被试变异。我们引入AFIRE（无偏多模态fMRI响应编码框架），这是一种无偏的接口，标准化来自不同编码器的时间对齐后融合标记，并引入MIND（可插拔的专家混合解码器），带有被试感知的动态门控。AFIRE通过端到端训练进行全脑预测，解码器与上游融合分离，而MIND结合标记依赖的Top-K稀疏路由与被试先验，个性化专家使用而不牺牲通用性。跨多个多模态基础模型和被试的实验显示优于强劲基线的一致性改进、增强的跨被试泛化能力和可解释的专家模式，这些模式与内容类型相关。该框架提供了为新编码器和数据集添加简单挂接点的途径，以实现自然场景神经成像研究的稳健和插拔优化性能。 
+
+---
+# ContextNav: Towards Agentic Multimodal In-Context Learning 
+
+**Title (ZH)**: ContextNav: 朝向能动的多模态在环学习 
+
+**Authors**: Honghao Fu, Yuan Ouyang, Kai-Wei Chang, Yiwei Wang, Zi Huang, Yujun Cai  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.04560)  
+
+**Abstract**: Recent advances demonstrate that multimodal large language models (MLLMs) exhibit strong multimodal in-context learning (ICL) capabilities, enabling them to adapt to novel vision-language tasks from a few contextual examples. However, existing ICL approaches face challenges in reconciling scalability with robustness across diverse tasks and noisy contextual examples: manually selecting examples produces clean contexts but is labor-intensive and task-specific, while similarity-based retrieval improves scalability but could introduce irrelevant or structurally inconsistent samples that degrade ICL performance. To address these limitations, we propose ContextNav, the first agentic framework that integrates the scalability of automated retrieval with the quality and adaptiveness of human-like curation, enabling noise-robust and dynamically optimized contextualization for multimodal ICL. ContextNav unifies context management and noise-robust contextualization within a closed-loop workflow driven by graph-based orchestration. Specifically, it builds a resource-aware multimodal embedding pipeline, maintains a retrievable vector database, and applies agentic retrieval and structural alignment to construct noise-resilient contexts. An Operational Grammar Graph (OGG) further supports adaptive workflow planning and optimization, enabling the agent to refine its operational strategies based on downstream ICL feedback. Experimental results demonstrate that ContextNav achieves state-of-the-art performance across various datasets, underscoring the promise of agentic workflows for advancing scalable and robust contextualization in multimodal ICL. 
+
+**Abstract (ZH)**: 最近的研究表明，多模态大型语言模型（MLLMs）表现出强大的多模态上下文学习（ICL）能力，使它们能够从少量上下文示例中适应新型的视觉-语言任务。然而，现有的ICL方法在跨多样任务和嘈杂上下文示例的情况下平衡可扩展性和稳健性方面面临挑战：人工选择示例可以产生清洁的上下文，但人力密集且任务特定，而基于相似性的检索可以提高可扩展性，但可能会引入无关或结构不一致的样本，从而降低ICL性能。为了解决这些局限性，我们提出了ContextNav，这是首个结合自动检索的可扩展性和人类般策展的高质量与适应性的框架，使多模态ICL能够在嘈杂的环境中实现稳健且动态优化的上下文化。ContextNav在一个基于图的闭环工作流程中统一了上下文管理与稳健的上下文化。具体而言，它构建了一个资源感知的多模态嵌入流水线，维护一个可检索的向量数据库，并应用代理检索和结构对齐来构建抗噪的上下文。进一步地，操作语法图（OGG）支持适应性工作流程规划与优化，使代理能够根据下游ICL反馈优化其操作策略。实验结果表明，ContextNav在多种数据集上实现了最先进的性能，突显了代理式工作流程在推动多模态ICL的可扩展和稳健上下文化方面的潜力。 
+
+---
+# ChartAgent: A Multimodal Agent for Visually Grounded Reasoning in Complex Chart Question Answering 
+
+**Title (ZH)**: ChartAgent：用于复杂图表问答的多模态 grounding 推理智能体 
+
+**Authors**: Rachneet Kaur, Nishan Srishankar, Zhen Zeng, Sumitra Ganesh, Manuela Veloso  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.04514)  
+
+**Abstract**: Recent multimodal LLMs have shown promise in chart-based visual question answering, but their performance declines sharply on unannotated charts, those requiring precise visual interpretation rather than relying on textual shortcuts. To address this, we introduce ChartAgent, a novel agentic framework that explicitly performs visual reasoning directly within the chart's spatial domain. Unlike textual chain-of-thought reasoning, ChartAgent iteratively decomposes queries into visual subtasks and actively manipulates and interacts with chart images through specialized actions such as drawing annotations, cropping regions (e.g., segmenting pie slices, isolating bars), and localizing axes, using a library of chart-specific vision tools to fulfill each subtask. This iterative reasoning process closely mirrors human cognitive strategies for chart comprehension. ChartAgent achieves state-of-the-art accuracy on the ChartBench and ChartX benchmarks, surpassing prior methods by up to 16.07% absolute gain overall and 17.31% on unannotated, numerically intensive queries. Furthermore, our analyses show that ChartAgent is (a) effective across diverse chart types, (b) achieve the highest scores across varying visual and reasoning complexity levels, and (c) serves as a plug-and-play framework that boosts performance across diverse underlying LLMs. Our work is among the first to demonstrate visually grounded reasoning for chart understanding using tool-augmented multimodal agents. 
+
+**Abstract (ZH)**: 基于图表的视觉推理的新型代理框架：ChartAgent 
+
+---
+# The Artificial Intelligence Cognitive Examination: A Survey on the Evolution of Multimodal Evaluation from Recognition to Reasoning 
+
+**Title (ZH)**: 人工智能认知评估：从识别到推理的多模态评价演进综述 
+
+**Authors**: Mayank Ravishankara, Varindra V. Persad Maharaj  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.04141)  
+
+**Abstract**: This survey paper chronicles the evolution of evaluation in multimodal artificial intelligence (AI), framing it as a progression of increasingly sophisticated "cognitive examinations." We argue that the field is undergoing a paradigm shift, moving from simple recognition tasks that test "what" a model sees, to complex reasoning benchmarks that probe "why" and "how" it understands. This evolution is driven by the saturation of older benchmarks, where high performance often masks fundamental weaknesses. We chart the journey from the foundational "knowledge tests" of the ImageNet era to the "applied logic and comprehension" exams such as GQA and Visual Commonsense Reasoning (VCR), which were designed specifically to diagnose systemic flaws such as shortcut learning and failures in compositional generalization. We then survey the current frontier of "expert-level integration" benchmarks (e.g., MMBench, SEED-Bench, MMMU) designed for today's powerful multimodal large language models (MLLMs), which increasingly evaluate the reasoning process itself. Finally, we explore the uncharted territories of evaluating abstract, creative, and social intelligence. We conclude that the narrative of AI evaluation is not merely a history of datasets, but a continuous, adversarial process of designing better examinations that, in turn, redefine our goals for creating truly intelligent systems. 
+
+**Abstract (ZH)**: 这篇综述论文记载了多模态人工智能评估的发展，将其视为逐渐复杂的“认知检测”进化的历程。我们认为该领域正经历范式的转变，从测试模型“看到什么”的简单识别任务，转向探究模型“为何”和“如何”理解的复杂推理基准。这种进化是由老旧基准的饱和推动的，高性能往往掩盖了根本性的弱点。我们从ImageNet时代的“知识测试”过渡到GQA和视觉常识推理（VCR）等旨在诊断系统性缺陷（如捷径学习和合成泛化失败）的“应用逻辑与理解”测试。接着，我们综述了当前前沿的“专家级集成”基准（如MM Bench、SEED-Bench、MMMU），这些基准用于评估当今强大的多模态大型语言模型（MLLMs）的推理过程本身。最后，我们探索了评估抽象、创造性和社交智能的未开发领域。我们得出结论，人工智能评估的叙事不仅是一部数据集的历史，而是一个持续且对抗性的过程，即设计更好的检测手段，随之重新定义我们创造真正智能系统的目标。 
+
+---
+# Rare Text Semantics Were Always There in Your Diffusion Transformer 
+
+**Title (ZH)**: 稀有文本语义一直都存在于你的扩散变换器中 
+
+**Authors**: Seil Kang, Woojung Han, Dayun Ju, Seong Jae Hwang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.03886)  
+
+**Abstract**: Starting from flow- and diffusion-based transformers, Multi-modal Diffusion Transformers (MM-DiTs) have reshaped text-to-vision generation, gaining acclaim for exceptional visual fidelity. As these models advance, users continually push the boundary with imaginative or rare prompts, which advanced models still falter in generating, since their concepts are often too scarce to leave a strong imprint during pre-training. In this paper, we propose a simple yet effective intervention that surfaces rare semantics inside MM-DiTs without additional training steps, data, denoising-time optimization, or reliance on external modules (e.g., large language models). In particular, the joint-attention mechanism intrinsic to MM-DiT sequentially updates text embeddings alongside image embeddings throughout transformer blocks. We find that by mathematically expanding representational basins around text token embeddings via variance scale-up before the joint-attention blocks, rare semantics clearly emerge in MM-DiT's outputs. Furthermore, our results generalize effectively across text-to-vision tasks, including text-to-image, text-to-video, and text-driven image editing. Our work invites generative models to reveal the semantics that users intend, once hidden yet ready to surface. 
+
+**Abstract (ZH)**: 多模态扩散变换器中罕见语义的揭示：无需额外训练步骤的数据驱动视觉生成方法 
+
+---
+# Cross-Modal Content Optimization for Steering Web Agent Preferences 
+
+**Title (ZH)**: 跨模态内容优化以引导网络代理偏好 
+
+**Authors**: Tanqiu Jiang, Min Bai, Nikolaos Pappas, Yanjun Qi, Sandesh Swamy  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.03612)  
+
+**Abstract**: Vision-language model (VLM)-based web agents increasingly power high-stakes selection tasks like content recommendation or product ranking by combining multimodal perception with preference reasoning. Recent studies reveal that these agents are vulnerable against attackers who can bias selection outcomes through preference manipulations using adversarial pop-ups, image perturbations, or content tweaks. Existing work, however, either assumes strong white-box access, with limited single-modal perturbations, or uses impractical settings. In this paper, we demonstrate, for the first time, that joint exploitation of visual and textual channels yields significantly more powerful preference manipulations under realistic attacker capabilities. We introduce Cross-Modal Preference Steering (CPS) that jointly optimizes imperceptible modifications to an item's visual and natural language descriptions, exploiting CLIP-transferable image perturbations and RLHF-induced linguistic biases to steer agent decisions. In contrast to prior studies that assume gradient access, or control over webpages, or agent memory, we adopt a realistic black-box threat setup: a non-privileged adversary can edit only their own listing's images and textual metadata, with no insight into the agent's model internals. We evaluate CPS on agents powered by state-of-the-art proprietary and open source VLMs including GPT-4.1, Qwen-2.5VL and Pixtral-Large on both movie selection and e-commerce tasks. Our results show that CPS is significantly more effective than leading baseline methods. For instance, our results show that CPS consistently outperforms baselines across all models while maintaining 70% lower detection rates, demonstrating both effectiveness and stealth. These findings highlight an urgent need for robust defenses as agentic systems play an increasingly consequential role in society. 
+
+**Abstract (ZH)**: 基于视觉-语言模型的网页代理在结合多模态感知与偏好推理以执行高 stakes 选择任务（如内容推荐或产品排名）方面日益发挥作用。近期研究揭示，这些代理可能被攻击者操控，通过使用对抗弹窗、图像扭曲或内容调整来进行偏好操纵，从而偏转选择结果。现有工作要么假设强白盒访问权限，要么使用不切实际的设置。本文首次证明，在实际攻击者能力范围内，联合利用视觉与文本通道能产生更强大的偏好操纵效果。我们引入了跨模态偏好引导 (CPS)，通过联合优化项目视觉和自然语言描述的不可感知修改，利用 CLIP 可转移的图像扭曲和 RLHF 引导的语言偏见来引导代理决策。与此前假设梯度访问、或控制网页、或代理记忆的研究不同，本文采用了一个现实中的黑盒威胁模型：非特权的攻击者只能编辑自己的列表图片和文本元数据，而无法了解代理模型的内部机制。我们在电影选择和电商任务中，使用先进的专有和开源视觉-语言模型（包括 GPT-4.1、Qwen-2.5VL 和 Pixtral-Large）评估 CPS。实验结果表明，CPS 显著优于现有基线方法。例如，我们的结果表明，CPS 在所有模型中的表现均优于基线方法，同时检测率降低了 70%，显示了其效果和隐蔽性。这些发现凸显了在代理系统日益发挥关键作用的社会背景下，迫切需要强大的防御措施。 
+
+---
+# OneFlow: Concurrent Mixed-Modal and Interleaved Generation with Edit Flows 
+
+**Title (ZH)**: OneFlow: 共享内存下的混合模态并行生成与编辑流交错生成 
+
+**Authors**: John Nguyen, Marton Havasi, Tariq Berrada, Luke Zettlemoyer, Ricky T. Q. Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.03506)  
+
+**Abstract**: We present OneFlow, the first non-autoregressive multimodal model that enables variable-length and concurrent mixed-modal generation. Unlike autoregressive models that enforce rigid causal ordering between text and image generation, OneFlow combines an insertion-based Edit Flow for discrete text tokens with Flow Matching for image latents. OneFlow enables concurrent text-image synthesis with hierarchical sampling that prioritizes content over grammar. Through controlled experiments across model sizes from 1B to 8B, we demonstrate that OneFlow outperforms autoregressive baselines on both generation and understanding tasks while using up to 50% fewer training FLOPs. OneFlow surpasses both autoregressive and diffusion-based approaches while unlocking new capabilities for concurrent generation, iterative refinement, and natural reasoning-like generation. 
+
+**Abstract (ZH)**: OneFlow：首个非自回归多模态模型，实现变长并发异模态生成 
+
+---
+# MetaFind: Scene-Aware 3D Asset Retrieval for Coherent Metaverse Scene Generation 
+
+**Title (ZH)**: MetaFind: 场景 aware 的 3D 资产检索以生成连贯的元宇宙场景 
+
+**Authors**: Zhenyu Pan, Yucheng Lu, Han Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.04057)  
+
+**Abstract**: We present MetaFind, a scene-aware tri-modal compositional retrieval framework designed to enhance scene generation in the metaverse by retrieving 3D assets from large-scale repositories. MetaFind addresses two core challenges: (i) inconsistent asset retrieval that overlooks spatial, semantic, and stylistic constraints, and (ii) the absence of a standardized retrieval paradigm specifically tailored for 3D asset retrieval, as existing approaches mainly rely on general-purpose 3D shape representation models. Our key innovation is a flexible retrieval mechanism that supports arbitrary combinations of text, image, and 3D modalities as queries, enhancing spatial reasoning and style consistency by jointly modeling object-level features (including appearance) and scene-level layout structures. Methodologically, MetaFind introduces a plug-and-play equivariant layout encoder ESSGNN that captures spatial relationships and object appearance features, ensuring retrieved 3D assets are contextually and stylistically coherent with the existing scene, regardless of coordinate frame transformations. The framework supports iterative scene construction by continuously adapting retrieval results to current scene updates. Empirical evaluations demonstrate the improved spatial and stylistic consistency of MetaFind in various retrieval tasks compared to baseline methods. 
+
+**Abstract (ZH)**: MetaFind：一种场景感知的多模态组合检索框架，用于增强元宇宙中的场景生成 
+
+---
+# Multi-Modal Oral Cancer Detection Using Weighted Ensemble Convolutional Neural Networks 
+
+**Title (ZH)**: 基于加权集成卷积神经网络的多模态口腔癌检测 
+
+**Authors**: Ajo Babu George, Sreehari J R Ajo Babu George, Sreehari J R Ajo Babu George, Sreehari J R  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.03878)  
+
+**Abstract**: Aims Late diagnosis of Oral Squamous Cell Carcinoma (OSCC) contributes significantly to its high global mortality rate, with over 50\% of cases detected at advanced stages and a 5-year survival rate below 50\% according to WHO statistics. This study aims to improve early detection of OSCC by developing a multimodal deep learning framework that integrates clinical, radiological, and histopathological images using a weighted ensemble of DenseNet-121 convolutional neural networks (CNNs). Material and Methods A retrospective study was conducted using publicly available datasets representing three distinct medical imaging modalities. Each modality-specific dataset was used to train a DenseNet-121 CNN via transfer learning. Augmentation and modality-specific preprocessing were applied to increase robustness. Predictions were fused using a validation-weighted ensemble strategy. Evaluation was performed using accuracy, precision, recall, F1-score. Results High validation accuracy was achieved for radiological (100\%) and histopathological (95.12\%) modalities, with clinical images performing lower (63.10\%) due to visual heterogeneity. The ensemble model demonstrated improved diagnostic robustness with an overall accuracy of 84.58\% on a multimodal validation dataset of 55 samples. Conclusion The multimodal ensemble framework bridges gaps in the current diagnostic workflow by offering a non-invasive, AI-assisted triage tool that enhances early identification of high-risk lesions. It supports clinicians in decision-making, aligning with global oncology guidelines to reduce diagnostic delays and improve patient outcomes. 
+
+**Abstract (ZH)**: 多模态深度学习框架在颌面部鳞状细胞癌早期检测中的应用：一种集成 DenseNet-121 卷积神经网络的加权集成方法 
+
+---
+# MonitorVLM:A Vision Language Framework for Safety Violation Detection in Mining Operations 
+
+**Title (ZH)**: MonitorVLM：用于采矿作业安全违规检测的视觉语言框架 
+
+**Authors**: Jiang Wu, Sichao Wu, Yinsong Ma, Guangyuan Yu, Haoyuan Xu, Lifang Zheng, Jingliang Duan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.03666)  
+
+**Abstract**: Industrial accidents, particularly in high-risk domains such as surface and underground mining, are frequently caused by unsafe worker behaviors. Traditional manual inspection remains labor-intensive, error-prone, and insufficient for large-scale, dynamic environments, highlighting the urgent need for intelligent and automated safety monitoring. In this paper, we present MonitorVLM, a novel vision--language framework designed to detect safety violations directly from surveillance video streams. MonitorVLM introduces three key innovations: (1) a domain-specific violation dataset comprising 9,000 vision--question--answer (VQA) samples across 40 high-frequency mining regulations, enriched with augmentation and auxiliary detection cues; (2) a clause filter (CF) module that dynamically selects the Top-$K$ most relevant clauses, reducing inference latency by 13.56\% while maintaining accuracy; and (3) a behavior magnifier (BM) module that enhances worker regions to improve fine-grained action recognition, yielding additional gains of 3.45% in precision and 8.62% in recall. Experimental results demonstrate that MonitorVLM significantly outperforms baseline vision--language models, achieving improvements of 22.01% in precision, 34.22\% in recall, and 28.37% in F1 score over the 72B unfine-tuned baseline. A lightweight web-based interface further integrates MonitorVLM into practical workflows, enabling automatic violation reporting with video timestamping. This study highlights the potential of multimodal large models to enhance occupational safety monitoring in mining and beyond. 
+
+**Abstract (ZH)**: 基于视觉-语言框架的工业事故监测系统：MonitorVLM在采矿领域的应用研究 
+
+---
+# Spatial-ViLT: Enhancing Visual Spatial Reasoning through Multi-Task Learning 
+
+**Title (ZH)**: 基于多任务学习增强视觉空间推理：Spatial-ViLT 
+
+**Authors**: Chashi Mahiul Islam, Oteo Mamo, Samuel Jacob Chacko, Xiuwen Liu, Weikuan Yu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.03441)  
+
+**Abstract**: Vision-language models (VLMs) have advanced multimodal reasoning but still face challenges in spatial reasoning for 3D scenes and complex object configurations. To address this, we introduce SpatialViLT, an enhanced VLM that integrates spatial features like depth maps, 3D coordinates, and edge maps through a multi-task learning framework. This approach enriches multimodal embeddings with spatial understanding. We propose two variants: SpatialViLT and MaskedSpatialViLT, focusing on full and masked object regions, respectively. Additionally, SpatialEnsemble combines both approaches, achieving state-of-the-art accuracy. Our models excel in spatial reasoning categories such as directional, topological, and proximity relations, as demonstrated on the challenging Visual Spatial Reasoning (VSR) dataset. This work represents a significant step in enhancing the spatial intelligence of AI systems, crucial for advanced multimodal understanding and real-world applications. 
+
+**Abstract (ZH)**: 视觉-语言模型（VLMs）在多模态推理方面取得了进步，但仍面临3D场景和复杂对象配置的空间推理挑战。为解决这一问题，我们引入了SpatialViLT，这是一种通过多任务学习框架整合深度图、3D坐标和边缘图等空间特征的增强VLM。该方法通过增加空间理解来丰富多模态嵌入。我们提出了两种变体：SpatialViLT和MaskedSpatialViLT，分别侧重于完整对象区域和遮罩对象区域。此外，SpatialEnsemble结合了这两种方法，实现了最先进的准确率。我们的模型在方向性、拓扑关系和接近关系等空间推理类别方面表现出色，如在具有挑战性的Visual Spatial Reasoning (VSR) 数据集上所展示的。这项工作代表了增强AI系统空间智能的重要步骤，对于高级多模态理解和现实世界应用至关重要。 
+
+---
+# Decrypt Modality Gap in Multimodal Contrastive Learning: From Convergent Representation to Pair Alignment 
+
+**Title (ZH)**: 解构多模态对比学习中的模态差距：从收敛表示到配对对齐 
+
+**Authors**: Lingjie Yi, Raphael Douady, Chao Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.03268)  
+
+**Abstract**: Multimodal contrastive learning (MCL) aims to embed data from different modalities in a shared embedding space. However, empirical evidence shows that representations from different modalities occupy completely separate regions of embedding space, a phenomenon referred to as the modality gap. Moreover, experimental findings on how the size of the modality gap influences downstream performance are inconsistent. These observations raise two key questions: (1) What causes the modality gap? (2) How does it affect downstream tasks? To address these questions, this paper introduces the first theoretical framework for analyzing the convergent optimal representations of MCL and the modality alignment when training is optimized. Specifically, we prove that without any constraint or under the cone constraint, the modality gap converges to zero. Under the subspace constraint (i.e., representations of two modalities fall into two distinct hyperplanes due to dimension collapse), the modality gap converges to the smallest angle between the two hyperplanes. This result identifies \emph{dimension collapse} as the fundamental origin of the modality gap. Furthermore, our theorems demonstrate that paired samples cannot be perfectly aligned under the subspace constraint. The modality gap influences downstream performance by affecting the alignment between sample pairs. We prove that, in this case, perfect alignment between two modalities can still be achieved via two ways: hyperplane rotation and shared space projection. 
+
+**Abstract (ZH)**: 多模态对比学习中模态差距的理论分析及其对下游任务的影响 
+
+---
+# Towards Multimodal Active Learning: Efficient Learning with Limited Paired Data 
+
+**Title (ZH)**: 面向多模态主动学习：在有限配对数据情况下高效学习 
+
+**Authors**: Jiancheng Zhang, Yinglun Zhu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.03247)  
+
+**Abstract**: Active learning (AL) is a principled strategy to reduce annotation cost in data-hungry deep learning. However, existing AL algorithms focus almost exclusively on unimodal data, overlooking the substantial annotation burden in multimodal learning. We introduce the first framework for multimodal active learning with unaligned data, where the learner must actively acquire cross-modal alignments rather than labels on pre-aligned pairs. This setting captures the practical bottleneck in modern multimodal pipelines such as CLIP and SigLIP, where unimodal features are easy to obtain but high-quality alignment is costly. We develop a new algorithm that combines uncertainty and diversity principles in a modality-aware design, achieves linear-time acquisition, and applies seamlessly to both pool-based and streaming-based settings. Extensive experiments on benchmark datasets demonstrate that our approach consistently reduces multimodal annotation cost while preserving performance; for instance, on the ColorSwap dataset it cuts annotation requirements by up to $40\%$ without loss in accuracy. 
+
+**Abstract (ZH)**: 多模态未对齐数据的主动学习框架 
+
+---

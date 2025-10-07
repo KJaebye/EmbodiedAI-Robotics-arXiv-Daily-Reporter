@@ -1,0 +1,299 @@
+# Performance-guided Task-specific Optimization for Multirotor Design 
+
+**Title (ZH)**: 基于性能导向的任务特定优化的多旋翼设计 
+
+**Authors**: Etor Arza, Welf Rehberg, Philipp Weiss, Mihir Kulkarni, Kostas Alexis  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.04724)  
+
+**Abstract**: This paper introduces a methodology for task-specific design optimization of multirotor Micro Aerial Vehicles. By leveraging reinforcement learning, Bayesian optimization, and covariance matrix adaptation evolution strategy, we optimize aerial robot designs guided exclusively by their closed-loop performance in a considered task. Our approach systematically explores the design space of motor pose configurations while ensuring manufacturability constraints and minimal aerodynamic interference. Results demonstrate that optimized designs achieve superior performance compared to conventional multirotor configurations in agile waypoint navigation tasks, including against fully actuated designs from the literature. We build and test one of the optimized designs in the real world to validate the sim2real transferability of our approach. 
+
+**Abstract (ZH)**: 本文介绍了一种多旋翼微空中车辆任务特定设计优化的方法。通过利用强化学习、贝叶斯优化和协方差矩阵自适应进化策略，我们以考虑任务的闭环性能为唯一依据优化空中机器人设计。该方法系统地探索了电机姿态配置的设计空间，同时确保制造约束条件并尽量减少气动干扰。结果表明，优化设计在敏捷航点导航任务中性能优于传统多旋翼配置，包括文献中完全可驱动的设计。我们构建并测试了一个优化设计的实际模型，以验证我们方法的仿真实验转移性。 
+
+---
+# Bio-Inspired Robotic Houbara: From Development to Field Deployment for Behavioral Studies 
+
+**Title (ZH)**: 生物启发的 Houbara 机器人：从开发到实地部署进行行为研究 
+
+**Authors**: Lyes Saad Saoud, Irfan Hussain  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.04692)  
+
+**Abstract**: Biomimetic intelligence and robotics are transforming field ecology by enabling lifelike robotic surrogates that interact naturally with animals under real world conditions. Studying avian behavior in the wild remains challenging due to the need for highly realistic morphology, durable outdoor operation, and intelligent perception that can adapt to uncontrolled environments. We present a next generation bio inspired robotic platform that replicates the morphology and visual appearance of the female Houbara bustard to support controlled ethological studies and conservation oriented field research. The system introduces a fully digitally replicable fabrication workflow that combines high resolution structured light 3D scanning, parametric CAD modelling, articulated 3D printing, and photorealistic UV textured vinyl finishing to achieve anatomically accurate and durable robotic surrogates. A six wheeled rocker bogie chassis ensures stable mobility on sand and irregular terrain, while an embedded NVIDIA Jetson module enables real time RGB and thermal perception, lightweight YOLO based detection, and an autonomous visual servoing loop that aligns the robot's head toward detected targets without human intervention. A lightweight thermal visible fusion module enhances perception in low light conditions. Field trials in desert aviaries demonstrated reliable real time operation at 15 to 22 FPS with latency under 100 ms and confirmed that the platform elicits natural recognition and interactive responses from live Houbara bustards under harsh outdoor conditions. This integrated framework advances biomimetic field robotics by uniting reproducible digital fabrication, embodied visual intelligence, and ecological validation, providing a transferable blueprint for animal robot interaction research, conservation robotics, and public engagement. 
+
+**Abstract (ZH)**: 仿生智能与机器人技术正在通过启用在现实世界条件下能自然交互的拟真机器人代理来transform自然生态学研究。由于需要高度逼真的形态、户外耐久性操作和能适应未受控环境的智能感知，研究野生鸟类行为仍具有挑战性。我们提出了一种新一代仿生机器人平台，该平台依据黄头隼雌鸟的形态和视觉外观，以支持受控的生态学研究和以保护为目标的实地研究。该系统引入了一种完全数字化可复制的制造工作流，结合了高分辨率结构光3D扫描、参数化CAD建模、可动3D打印和照片级真实感UV纹理聚氨酯加工，以实现解剖学准确且耐用的机器人代理。六轮摇臂车 chassis 确保其在沙地和不规则地形上的稳定移动，而嵌入的NVIDIA Jetson模块则实现了实时RGB和热成像感知、轻量级YOLO基检测以及无需人工介入的自主视觉伺服环，使机器人头部对准检测到的目标。轻量级热视融合模块在低光照条件下增强了感知能力。在沙漠鸟舍的实地试验中，该平台在15至22 FPS下以低于100 ms的延迟实现了可靠的实时操作，并确认了在恶劣户外条件下能从活的黄头隼那里引发自然的识别和互动反应。此综合框架通过将可重复的数字化制造、体现式视觉智能和生态学验证相结合，推动了仿生野外机器人技术的发展，并为动物机器人互动研究、保护机器人技术和公众参与提供了可移植的蓝图。 
+
+---
+# Everything-Grasping (EG) Gripper: A Universal Gripper with Synergistic Suction-Grasping Capabilities for Cross-Scale and Cross-State Manipulation 
+
+**Title (ZH)**: Everything-抓取（EG）夹持器：一种具备协同吸抓能力的通用跨尺度跨状态操作夹持器 
+
+**Authors**: Jianshu Zhou, Jing Shu, Tianle Pan, Puchen Zhu, Jiajun An, Huayu Zhang, Junda Huang, Upinder Kaur, Xin Ma, Masayoshi Tomizuka  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.04585)  
+
+**Abstract**: Grasping objects across vastly different sizes and physical states-including both solids and liquids-with a single robotic gripper remains a fundamental challenge in soft robotics. We present the Everything-Grasping (EG) Gripper, a soft end-effector that synergistically integrates distributed surface suction with internal granular jamming, enabling cross-scale and cross-state manipulation without requiring airtight sealing at the contact interface with target objects. The EG Gripper can handle objects with surface areas ranging from sub-millimeter scale 0.2 mm2 (glass bead) to over 62,000 mm2 (A4 sized paper and woven bag), enabling manipulation of objects nearly 3,500X smaller and 88X larger than its own contact area (approximated at 707 mm2 for a 30 mm-diameter base). We further introduce a tactile sensing framework that combines liquid detection and pressure-based suction feedback, enabling real-time differentiation between solid and liquid targets. Guided by the actile-Inferred Grasping Mode Selection (TIGMS) algorithm, the gripper autonomously selects grasping modes based on distributed pressure and voltage signals. Experiments across diverse tasks-including underwater grasping, fragile object handling, and liquid capture-demonstrate robust and repeatable performance. To our knowledge, this is the first soft gripper to reliably grasp both solid and liquid objects across scales using a unified compliant architecture. 
+
+**Abstract (ZH)**: Everything-Grasping (EG) 柔性夹持器：跨越不同尺寸和物理状态抓取固体和液体物体 
+
+---
+# Velocity-Form Data-Enabled Predictive Control of Soft Robots under Unknown External Payloads 
+
+**Title (ZH)**: 未知外部载荷下基于速度形式数据驱动的软机器人预测控制 
+
+**Authors**: Huanqing Wang, Kaixiang Zhang, Kyungjoon Lee, Yu Mei, Vaibhav Srivastava, Jun Sheng, Ziyou Song, Zhaojian Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.04509)  
+
+**Abstract**: Data-driven control methods such as data-enabled predictive control (DeePC) have shown strong potential in efficient control of soft robots without explicit parametric models. However, in object manipulation tasks, unknown external payloads and disturbances can significantly alter the system dynamics and behavior, leading to offset error and degraded control performance. In this paper, we present a novel velocity-form DeePC framework that achieves robust and optimal control of soft robots under unknown payloads. The proposed framework leverages input-output data in an incremental representation to mitigate performance degradation induced by unknown payloads, eliminating the need for weighted datasets or disturbance estimators. We validate the method experimentally on a planar soft robot and demonstrate its superior performance compared to standard DeePC in scenarios involving unknown payloads. 
+
+**Abstract (ZH)**: 数据驱动的控制方法，如数据启用的预测控制（DeePC），在无需显式参数模型的情况下有效地控制软机器人方面展示了强大的潜力。然而，在物体操作任务中，未知的外部载荷和干扰可以显著改变系统动力学和行为，导致偏移误差和控制性能下降。本文提出了一种新的基于速度形式的DeePC框架，能够在未知载荷下实现软机器人的鲁棒和最优控制。所提出的方法利用增量表示的输入-输出数据来减轻由未知载荷引起的性能下降，消除了对加权数据集或干扰估计器的需求。我们通过平面软机器人的实验验证了该方法，并在涉及未知载荷的场景中展示了其优于标准DeePC的性能。 
+
+---
+# Integrated Planning and Control on Manifolds: Factor Graph Representation and Toolkit 
+
+**Title (ZH)**: 流形上的集成规划与控制：因子图表示与工具包 
+
+**Authors**: Peiwen Yang, Weisong Wen, Runqiu Yang, Yuanyuan Zhang, Jiahao Hu, Yingming Chen, Naigui Xiao, Jiaqi Zhao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.04278)  
+
+**Abstract**: Model predictive control (MPC) faces significant limitations when applied to systems evolving on nonlinear manifolds, such as robotic attitude dynamics and constrained motion planning, where traditional Euclidean formulations struggle with singularities, over-parameterization, and poor convergence. To overcome these challenges, this paper introduces FactorMPC, a factor-graph based MPC toolkit that unifies system dynamics, constraints, and objectives into a modular, user-friendly, and efficient optimization structure. Our approach natively supports manifold-valued states with Gaussian uncertainties modeled in tangent spaces. By exploiting the sparsity and probabilistic structure of factor graphs, the toolkit achieves real-time performance even for high-dimensional systems with complex constraints. The velocity-extended on-manifold control barrier function (CBF)-based obstacle avoidance factors are designed for safety-critical applications. By bridging graphical models with safety-critical MPC, our work offers a scalable and geometrically consistent framework for integrated planning and control. The simulations and experimental results on the quadrotor demonstrate superior trajectory tracking and obstacle avoidance performance compared to baseline methods. To foster research reproducibility, we have provided open-source implementation offering plug-and-play factors. 
+
+**Abstract (ZH)**: 基于因子图的模型预测控制（FactorMPC）：统一流动态、约束和目标的模块化优化结构 
+
+---
+# Using Robotics to Improve Transcatheter Edge-to-Edge Repair of the Mitral Valve 
+
+**Title (ZH)**: 使用机器人技术提高经导管二尖瓣边缘对边修复效果 
+
+**Authors**: Léa Pistorius, Namrata U. Nayar, Phillip Tran, Sammy Elmariah, Pierre E. Dupont  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.04178)  
+
+**Abstract**: Transcatheter valve repair presents significant challenges due to the mechanical limitations and steep learning curve associated with manual catheter systems. This paper investigates the use of robotics to facilitate transcatheter procedures in the context of mitral valve edge-to-edge repair. The complex handle-based control of a clinical repair device is replaced by intuitive robotic joint-based control via a game controller. Manual versus robotic performance is analyzed by decomposing the overall device delivery task into motion-specific steps and comparing capabilities on a step-by-step basis in a phantom model of the heart and vasculature. Metrics include procedure duration and clip placement accuracy. Results demonstrate that the robotic system can reduce procedural time and motion errors while also improving accuracy of clip placement. These findings suggest that robotic assistance can address key limitations of manual systems, offering a more reliable and user-friendly platform for complex transcatheter procedures. 
+
+**Abstract (ZH)**: 经导管瓣膜修复因手动导管系统存在的机械限制和陡峭的学习曲线而面临重大挑战。本论文探讨了使用机器人技术来辅助经导管Mitral瓣环对合修复手术。基于复杂手柄控制的临床修复设备被通过游戏控制器实现的直观机器人关节控制所取代。通过在心脏和血管的人体模型中逐步比较手动与机器人操作的性能，分析了整体设备递送任务。评价指标包括手术时间及夹子放置精度。结果表明，机器人系统能够减少手术时间并降低运动误差，同时提高夹子放置的准确性。这些发现表明，机器人辅助可以解决手动系统的关键限制，提供一个更可靠且用户友好的平台，以进行复杂的经导管手术。 
+
+---
+# VBM-NET: Visual Base Pose Learning for Mobile Manipulation using Equivariant TransporterNet and GNNs 
+
+**Title (ZH)**: VBM-NET：基于_equivariant_传输器网络和图神经网络的视觉基准姿态学习方法_用于移动操作 
+
+**Authors**: Lakshadeep Naik, Adam Fischer, Daniel Duberg, Danica Kragic  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.04171)  
+
+**Abstract**: In Mobile Manipulation, selecting an optimal mobile base pose is essential for successful object grasping. Previous works have addressed this problem either through classical planning methods or by learning state-based policies. They assume access to reliable state information, such as the precise object poses and environment models. In this work, we study base pose planning directly from top-down orthographic projections of the scene, which provide a global overview of the scene while preserving spatial structure. We propose VBM-NET, a learning-based method for base pose selection using such top-down orthographic projections. We use equivariant TransporterNet to exploit spatial symmetries and efficiently learn candidate base poses for grasping. Further, we use graph neural networks to represent a varying number of candidate base poses and use Reinforcement Learning to determine the optimal base pose among them. We show that VBM-NET can produce comparable solutions to the classical methods in significantly less computation time. Furthermore, we validate sim-to-real transfer by successfully deploying a policy trained in simulation to real-world mobile manipulation. 
+
+**Abstract (ZH)**: 移动 manipulations 中，选择最优移动基座姿态对于成功抓取物体至关重要。以往工作通过经典规划方法或基于状态的策略学习来解决该问题，它们假设可以获得可靠的环境信息，如精确的物体姿态和环境模型。在本工作中，我们直接从场景的上方正交投影中研究基座姿态规划，这些投影提供了场景的全局概览同时保留了空间结构。我们提出了 VBM-NET，一种基于学习的基座姿态选择方法，使用此类上方正交投影。我们利用不变 TransporterNet 利用空间对称性并高效地学习候选基座姿态。进一步地，我们使用图神经网络表示不同数量的候选基座姿态，并使用强化学习确定这些候选基座姿态中的最优姿态。我们展示了 VBM-NET 在显著减少计算时间的情况下可以产生与经典方法相当的解决方案。此外，我们通过成功将仿真中训练的策略部署到实际移动 manipulation 中验证了从仿真到现实的迁移能力。 
+
+---
+# Learning to Capture Rocks using an Excavator: A Reinforcement Learning Approach with Guiding Reward Formulation 
+
+**Title (ZH)**: 使用铲斗学习挖掘岩石：一种带有引导奖励形式的强化学习方法 
+
+**Authors**: Amirmasoud Molaei, Reza Ghabcheloo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.04168)  
+
+**Abstract**: Rock capturing with standard excavator buckets is a challenging task typically requiring the expertise of skilled operators. Unlike soil digging, it involves manipulating large, irregular rocks in unstructured environments where complex contact interactions with granular material make model-based control impractical. Existing autonomous excavation methods focus mainly on continuous media or rely on specialized grippers, limiting their applicability to real-world construction sites. This paper introduces a fully data-driven control framework for rock capturing that eliminates the need for explicit modeling of rock or soil properties. A model-free reinforcement learning agent is trained in the AGX Dynamics simulator using the Proximal Policy Optimization (PPO) algorithm and a guiding reward formulation. The learned policy outputs joint velocity commands directly to the boom, arm, and bucket of a CAT365 excavator model. Robustness is enhanced through extensive domain randomization of rock geometry, density, and mass, as well as the initial configurations of the bucket, rock, and goal position. To the best of our knowledge, this is the first study to develop and evaluate an RL-based controller for the rock capturing task. Experimental results show that the policy generalizes well to unseen rocks and varying soil conditions, achieving high success rates comparable to those of human participants while maintaining machine stability. These findings demonstrate the feasibility of learning-based excavation strategies for discrete object manipulation without requiring specialized hardware or detailed material models. 
+
+**Abstract (ZH)**: 基于标准挖掘桶的岩石捕捉是一项具有挑战性的任务，通常需要熟练操作员的 expertise。与土壤挖掘不同，它涉及在结构不规则环境中操纵大尺寸、形状不规则的岩石，复杂的颗粒物质接触相互作用使得基于模型的控制不切实际。现有的自主挖掘方法主要集中在连续介质上，或者依赖于专门的夹持器，限制了它们在实际建筑工地的应用。本文提出了一种完全基于数据的控制框架，用于岩石捕捉，该框架消除了对岩石或土壤性质显式建模的需求。一种无模型的强化学习代理使用Proximal Policy Optimization（PPO）算法在AGX Dynamics模拟器中进行训练，并采用引导奖励公式。所学习的策略直接输出关节速度命令到CAT365挖掘机的臂、铲斗。通过广泛的利益领域随机化岩石几何形状、密度和质量以及铲斗、岩石和目标位置的初始配置，提高了鲁棒性。据我们所知，这是首次研究和发展基于强化学习的控制器用于岩石捕捉任务的研究。实验结果表明，该策略在未见过的岩石和不同土壤条件下的泛化能力很好，成功率达到与人类参与者相当的水平，同时保持机器的稳定性。这些发现证明了在不需要专门硬件或详细材料模型的情况下，学习导向的挖掘策略对于离散物体操作的可行性。 
+
+---
+# A Real-Time Framework for Intermediate Map Construction and Kinematically Feasible Off-Road Planning Without OSM 
+
+**Title (ZH)**: 一种实时的Intermediate地图构建框架及基于OSM无道路规划的运动学可行路径规划 
+
+**Authors**: Otobong Jerome, Geesara Prathap Kulathunga, Devitt Dmitry, Eugene Murawjow, Alexandr Klimchik  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.03948)  
+
+**Abstract**: Off-road environments present unique challenges for autonomous navigation due to their complex and unstructured nature. Traditional global path-planning methods, which typically aim to minimize path length and travel time, perform poorly on large-scale maps and fail to account for critical factors such as real-time performance, kinematic feasibility, and memory efficiency. This paper introduces a novel global path-planning method specifically designed for off-road environments, addressing these essential factors. The method begins by constructing an intermediate map within the pixel coordinate system, incorporating geographical features like off-road trails, waterways, restricted and passable areas, and trees. The planning problem is then divided into three sub-problems: graph-based path planning, kinematic feasibility checking, and path smoothing. This approach effectively meets real-time performance requirements while ensuring kinematic feasibility and efficient memory use. The method was tested in various off-road environments with large-scale maps up to several square kilometers in size, successfully identifying feasible paths in an average of 1.5 seconds and utilizing approximately 1.5GB of memory under extreme conditions. The proposed framework is versatile and applicable to a wide range of off-road autonomous navigation tasks, including search and rescue missions and agricultural operations. 
+
+**Abstract (ZH)**: 越野环境下的自主导航提出了独特挑战，由于其复杂且未结构化的特性。传统的全局路径规划方法通常旨在最小化路径长度和出行时间，在大规模地图上的表现不佳，未能考虑实时性能、运动学可行性和内存效率等关键因素。本文提出了一种专门为越野环境设计的新型全局路径规划方法，以解决这些关键因素。该方法首先在像素坐标系中构建一个中间地图，包括越野路线、水道、受限制和可通行区域以及树木等地理特征。然后将规划问题分为三个子问题：基于图的路径规划、运动学可行性检查和路径平滑。该方法有效满足了实时性能要求，同时确保了运动学可行性和高效的内存使用。该方法在包含几平方公里的大规模地图的各种越野环境中进行了测试，在极端条件下平均1.5秒内即可成功识别可行路径，并且内存使用量约为1.5GB。所提出的框架具有广泛的适用性，适用于多种越野自主导航任务，包括搜索救援任务和农业作业。 
+
+---
+# COVER:COverage-VErified Roadmaps for Fixed-time Motion Planning in Continuous Semi-Static Environments 
+
+**Title (ZH)**: COVER：Coverage-Verified 路径规划用于连续半静态环境下的固定时间运动规划 
+
+**Authors**: Niranjan Kumar Ilampooranan, Constantinos Chamzas  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.03875)  
+
+**Abstract**: Having the ability to answer motion-planning queries within a fixed time budget is critical for the widespread deployment of robotic systems. Semi-static environments, where most obstacles remain static but a limited set can vary across queries, exhibit structured variability that can be systematically exploited to provide stronger guarantees than in general motion-planning problems. However, prior approaches in this setting either lack formal guarantees or rely on restrictive discretizations of obstacle configurations, limiting their applicability in realistic domains. This paper introduces COVER, a novel framework that incrementally constructs a coverage-verified roadmap in semi-static environments. By partitioning the obstacle configuration space and solving for feasible paths within each partition, COVER systematically verifies feasibility of the roadmap in each partition and guarantees fixed-time motion planning queries within the verified regions. We validate COVER with a 7-DOF simulated Panda robot performing table and shelf tasks, demonstrating that COVER achieves broader coverage with higher query success rates than prior works. 
+
+**Abstract (ZH)**: 能够在固定时间预算内回答运动规划查询的能力对于机器人系统的广泛部署至关重要。在大多数障碍物保持静止而少量障碍物可以在不同查询中变化的半静态环境中，结构化的多样性可以系统地加以利用，从而提供更多强于一般运动规划问题的保证。然而，当前在这个环境中的方法要么缺乏形式保证，要么依赖于障碍物配置的限制离散化，限制了它们在实际领域的应用。本文提出了一种新的框架COVER，该框架逐步构建半静态环境中的覆盖验证路网。通过分区障碍物配置空间并在每个分区中求解可行路径，COVER系统地验证每个分区中路网的可行性，并保证在验证区域内完成固定时间的运动规划查询。我们通过一个7-DOF模拟的Panda机器人执行桌子和架子任务来验证COVER，结果显示COVER在更大范围内实现了更高的查询成功率，优于以前的方法。 
+
+---
+# Model-Based Adaptive Precision Control for Tabletop Planar Pushing Under Uncertain Dynamics 
+
+**Title (ZH)**: 基于模型的自适应精度控制在不确定动力学下的桌面平面推物 manipulotion 
+
+**Authors**: Aydin Ahmadi, Baris Akgun  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.03768)  
+
+**Abstract**: Data-driven planar pushing methods have recently gained attention as they reduce manual engineering effort and improve generalization compared to analytical approaches. However, most prior work targets narrow capabilities (e.g., side switching, precision, or single-task training), limiting broader applicability. We present a model-based framework for non-prehensile tabletop pushing that uses a single learned model to address multiple tasks without retraining. Our approach employs a recurrent GRU-based architecture with additional non-linear layers to capture object-environment dynamics while ensuring stability. A tailored state-action representation enables the model to generalize across uncertain dynamics, variable push lengths, and diverse tasks. For control, we integrate the learned dynamics with a sampling-based Model Predictive Path Integral (MPPI) controller, which generates adaptive, task-oriented actions. This framework supports side switching, variable-length pushes, and objectives such as precise positioning, trajectory following, and obstacle avoidance. Training is performed in simulation with domain randomization to support sim-to-real transfer. We first evaluate the architecture through ablation studies, showing improved prediction accuracy and stable rollouts. We then validate the full system in simulation and real-world experiments using a Franka Panda robot with markerless tracking. Results demonstrate high success rates in precise positioning under strict thresholds and strong performance in trajectory tracking and obstacle avoidance. Moreover, multiple tasks are solved simply by changing the controller's objective function, without retraining. While our current focus is on a single object type, we extend the framework by training on wider push lengths and designing a balanced controller that reduces the number of steps for longer-horizon goals. 
+
+**Abstract (ZH)**: 基于数据驱动的平面推动物理方法最近引起了关注，因为它们减少了手动工程努力并相较于分析方法提高了泛化能力。然而，大多数先前工作针对狭窄的能力（例如，侧向切换、精确度或单任务训练），限制了更广泛的应用。我们提出了一种基于模型的无抓取桌面推动物理框架，利用单一学习模型解决多个任务而无需重新训练。我们的方法采用基于递归GRU的架构，并附加非线性层以捕获物体-环境动力学并确保稳定性。量身定制的状态-动作表示使模型能够在不确定的动力学、可变的推力长度以及多样化的任务中泛化。在控制方面，我们将学习的动力学与基于采样的模型预测路径积分（MPPI）控制器结合使用，从而生成适应性强、面向任务的动作。该框架支持侧向切换、可变长度的推力以及精确定位、轨迹跟随和障碍物避让等目标。训练在具有领域随机化的模拟中进行，以支持从模拟到现实的应用。我们首先通过消融研究评估了该架构，结果显示预测准确性提高且 rollout 稳定。然后，我们在使用 Franka Panda 机器人和无标记跟踪的模拟和真实世界实验中验证了整个系统。结果表明，在严格阈值下精确定位的成功率很高，并且在轨迹跟踪和障碍物避让方面表现出色。此外，通过改变控制器的目标函数，可以轻松解决多个任务，而无需重新训练。虽然当前的重点是单一物体类型，我们通过在更广泛的推力长度上进行训练并设计平衡控制器来减少长期目标所需步数，扩展了该框架。 
+
+---
+# An Amphibious Untethered Inchworm Soft Robot for Fast Crawling Locomotion 
+
+**Title (ZH)**: 一种用于快速爬行运动的 Amphibious Untethered Inchworm 软机器人 
+
+**Authors**: Mohammadjavad Javadi, Charlie Wadds, Robin Chhabra  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.03660)  
+
+**Abstract**: Untethered soft robots are essential for advancing the real-world deployment of soft robotic systems in diverse and multitasking environments. Inspired by soft-bodied inchworm, we present a fully untethered soft robot with a curved, flexible structure actuated by magnetic forces. The robot has a total mass of 102.63 g and demonstrates multimodal locomotion, achieving a maximum walking speed of 3.74 cm/s and a swimming speed of 0.82 cm/s. A compact and lightweight onboard control circuit enables wireless command transmission, while an integrated camera provides environmental perception. Through structural optimization and system-level integration, the robot successfully performs walking, steering, swimming, and payload transport without reliance on external infrastructure. The robot's dynamic performance and locomotion capabilities are systematically validated through experimental characterization. 
+
+**Abstract (ZH)**: 脱离束缚的软机器人对于推动软机器人系统在多样化的多任务环境中的实际应用至关重要。受软体 Inchworm 启发，我们呈现了一种完全脱离束缚的软机器人，该机器人具有曲线柔性结构，并通过磁力驱动。该机器人总质量为 102.63 克，展示了多种运动模式，实现最大行走速度 3.74 cm/s 和游泳速度 0.82 cm/s。紧凑轻量的机载控制电路实现了无线指令传输，而集成摄像头提供了环境感知。通过结构优化和系统级集成，该机器人在无需外部基础设施的条件下成功实现了行走、转向、游泳和负载运输。通过实验特性化，系统验证了该机器人的动态性能和运动能力。 
+
+---
+# Geometrically Exact Hard Magneto-Elastic Cosserat Shells: Static Formulation for Shape Morphing 
+
+**Title (ZH)**: 几何精确刚硬磁弹Cosserat shell模型：形状变形的静力公式 
+
+**Authors**: Mohammadjavad Javadi, Robin Chhabra  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.03644)  
+
+**Abstract**: Cosserat rod theory is the popular approach to modeling ferromagnetic soft robots as 1-Dimensional (1D) slender structures in most applications, such as biomedical. However, recent soft robots designed for locomotion and manipulation often exhibit a large width-to-length ratio that categorizes them as 2D shells. For analysis and shape-morphing control purposes, we develop an efficient coordinate-free static model of hard-magnetic shells found in soft magnetic grippers and walking soft robots. The approach is based on a novel formulation of Cosserat shell theory on the Special Euclidean group ($\mathbf{SE}(3)$). The shell is assumed to be a 2D manifold of material points with six degrees of freedom (position & rotation) suitable for capturing the behavior of a uniformly distributed array of spheroidal hard magnetic particles embedded in the rheological elastomer. The shell's configuration manifold is the space of all smooth embeddings $\mathbb{R}^2\rightarrow\mathbf{SE}(3)$. According to a novel definition of local deformation gradient based on the Lie group structure of $\mathbf{SE}(3)$, we derive the strong and weak forms of equilibrium equations, following the principle of virtual work. We extract the linearized version of the weak form for numerical implementations. The resulting finite element approach can avoid well-known challenges such as singularity and locking phenomenon in modeling shell structures. The proposed model is analytically and experimentally validated through a series of test cases that demonstrate its superior efficacy, particularly when the shell undergoes severe rotations and displacements. 
+
+**Abstract (ZH)**: Cosserat杆理论是 modelling 磁性软机器人作为大多数生物医学等应用中的一维纤细结构的流行方法，然而，最近设计用于运动和操作的软机器人通常具有较大的宽长比，归类为二维壳体。为了分析和形状变形控制的目的，我们发展了一种硬磁壳的高效的无坐标静力学模型，这种硬磁壳存在于软磁夹持器和walking软机器人中。该方法基于$SE(3)$特殊欧几里得群上的新型Cosserat壳理 论形式。壳体假定为具有六自由度（位置与旋转）的2D流形材料点，适用于捕捉均匀分布的嵌入在粘弹性橡 胶中的磁性球粒体的行为。壳体的配置流形是$\mathbb{R}^2\rightarrow SE(3)$的所有平滑嵌入的空间。根据基于$SE(3)$李群结构的新型局部变形梯度定义，我们遵循虚功原理推导出平衡方程的强形式和弱形式。我们提取弱形式的线性化版本进行数值实现。所得到的有限元方法可以避免建模壳体结构时遇到的奇异性和锁定现象。通过一系列测试案例，我们对所提出的模型进行了理论和实验验证，表明其优越性，尤其是在壳体经历严重旋转和位移时。 
+
+---
+# Safety-Oriented Dynamic Path Planning for Automated Vehicles 
+
+**Title (ZH)**: 面向安全的动态路径规划方法研究（应用于自动车辆） 
+
+**Authors**: Mostafa Emam, Matthias Gerdts  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.03640)  
+
+**Abstract**: Ensuring safety in autonomous vehicles necessitates advanced path planning and obstacle avoidance capabilities, particularly in dynamic environments. This paper introduces a bi-level control framework that efficiently augments road boundaries by incorporating time-dependent grid projections of obstacle movements, thus enabling precise and adaptive path planning. The main control loop utilizes Nonlinear Model Predictive Control (NMPC) for real-time path optimization, wherein homotopy-based constraint relaxation is employed to improve the solvability of the optimal control problem (OCP). Furthermore, an independent backup loop runs concurrently to provide safe fallback trajectories when an optimal trajectory cannot be computed by the main loop within a critical time frame, thus enhancing safety and real-time performance. Our evaluation showcases the benefits of the proposed methods in various driving scenarios, highlighting the real-time applicability and robustness of our approach. Overall, the framework represents a significant step towards safer and more reliable autonomous driving in complex and dynamic environments. 
+
+**Abstract (ZH)**: 确保自主车辆安全需要先进的路径规划和障碍物规避能力，特别是在动态环境中。本文引入了一种多层次控制框架，通过结合障碍物运动的时间依赖网格投影高效扩充道路边界，从而实现精确和适应性的路径规划。主要控制环路采用非线性模型预测控制(NMPC)进行实时路径优化，并利用同调约束松弛方法提高最优控制问题(OCP)的求解性。此外，一个独立的备用环路同时运行，以在主要环路在关键时间框架内无法计算最优轨迹时提供安全的备用轨迹，从而提高安全性和实时性能。我们的评估展示了所提出方法在各种驾驶场景下的优势，突显了我们方法的实时适用性和鲁棒性。总体而言，该框架代表了在复杂和动态环境中实现更安全、更可靠自主驾驶的重要一步。 
+
+---
+# Shape-Space Graphs: Fast and Collision-Free Path Planning for Soft Robots 
+
+**Title (ZH)**: 形变空间图：软机器人快速无碰撞路径规划 
+
+**Authors**: Carina Veil, Moritz Flaschel, Ellen Kuhl  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.03547)  
+
+**Abstract**: Soft robots, inspired by elephant trunks or octopus arms, offer extraordinary flexibility to bend, twist, and elongate in ways that rigid robots cannot. However, their motion planning remains a challenge, especially in cluttered environments with obstacles, due to their highly nonlinear and infinite-dimensional kinematics. Here, we present a graph-based path planning tool for an elephant-trunk-inspired soft robotic arm designed with three artificial muscle fibers that allow for multimodal continuous deformation through contraction. Using a biomechanical model inspired by morphoelasticity and active filament theory, we precompute a shape library and construct a $k$-nearest neighbor graph in \emph{shape space}, ensuring that each node corresponds to a mechanically accurate and physically valid robot shape. For the graph, we use signed distance functions to prune nodes and edges colliding with obstacles, and define multi-objective edge costs based on geometric distance and actuation effort, enabling energy-efficient planning with collision avoidance. We demonstrate that our algorithm reliably avoids obstacles and generates feasible paths within milliseconds from precomputed graphs using Dijkstra's algorithm. We show that including energy costs can drastically reduce the actuation effort compared to geometry-only planning, at the expense of longer tip trajectories. Our results highlight the potential of shape-space graph search for fast and reliable path planning in the field of soft robotics, paving the way for real-time applications in surgical, industrial, and assistive settings. 
+
+**Abstract (ZH)**: 基于图形路径规划的受象鼻启发的软体机器人手臂设计及运动规划 
+
+---
+# Efficient Surgical Robotic Instrument Pose Reconstruction in Real World Conditions Using Unified Feature Detection 
+
+**Title (ZH)**: 在实际条件下使用统一特征检测高效手术机器人器械姿态重构 
+
+**Authors**: Zekai Liang, Kazuya Miyata, Xiao Liang, Florian Richter, Michael C. Yip  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.03532)  
+
+**Abstract**: Accurate camera-to-robot calibration is essential for any vision-based robotic control system and especially critical in minimally invasive surgical robots, where instruments conduct precise micro-manipulations. However, MIS robots have long kinematic chains and partial visibility of their degrees of freedom in the camera, which introduces challenges for conventional camera-to-robot calibration methods that assume stiff robots with good visibility. Previous works have investigated both keypoint-based and rendering-based approaches to address this challenge in real-world conditions; however, they often struggle with consistent feature detection or have long inference times, neither of which are ideal for online robot control. In this work, we propose a novel framework that unifies the detection of geometric primitives (keypoints and shaft edges) through a shared encoding, enabling efficient pose estimation via projection geometry. This architecture detects both keypoints and edges in a single inference and is trained on large-scale synthetic data with projective labeling. This method is evaluated across both feature detection and pose estimation, with qualitative and quantitative results demonstrating fast performance and state-of-the-art accuracy in challenging surgical environments. 
+
+**Abstract (ZH)**: 准确的相机到机器人校准对于任何基于视觉的机器人控制系统至关重要，尤其是在微创手术机器人中尤其重要，因为器械执行精确的微操作。然而，微创手术机器人具有长的运动链和部分可见的自由度，这为假设刚性机器人且具有良好视野的传统相机到机器人校准方法带来了挑战。以往的工作已经研究了基于关键点和基于渲染的方法来解决这一挑战；然而，这些方法往往在一致的关键点检测或长推理时间方面存在问题，这两种情况都不适合在线机器人控制。在本文中，我们提出了一种新颖的框架，通过共享编码同时检测几何原语（关键点和轴边），从而通过投影几何实现高效的姿态估计。该架构在一次推理中同时检测关键点和边，并在带有投影标注的大规模合成数据上进行训练。该方法在特征检测和姿态估计两方面进行了评估，定性和定量结果表明，其在挑战性的手术环境中具有快速性能和最先进的准确性。 
+
+---
+# Distributed Connectivity Maintenance and Recovery for Quadrotor Motion Planning 
+
+**Title (ZH)**: 四旋翼飞行器运动规划中的分布式连通性维护与恢复 
+
+**Authors**: Yutong Wang, Yichun Qu, Tengxiang Wang, Lishuo Pan, Nora Ayanian  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.03504)  
+
+**Abstract**: Maintaining connectivity is crucial in many multi-robot applications, yet fragile to obstacles and visual occlusions. We present a real-time distributed framework for multi-robot navigation certified by high-order control barrier functions (HOCBFs) that controls inter-robot proximity to maintain connectivity while avoiding collisions. We incorporate control Lyapunov functions to enable connectivity recovery from initial disconnected configurations and temporary losses, providing robust connectivity during navigation in obstacle-rich environments. Our trajectory generation framework concurrently produces planning and control through a Bezier-parameterized trajectory, which naturally provides smooth curves with arbitrary degree of derivatives. The main contribution is the unified MPC-CLF-CBF framework, a continuous-time trajectory generation and control method for connectivity maintenance and recovery of multi-robot systems. We validate the framework through extensive simulations and a physical experiment with 4 Crazyflie nano-quadrotors. 
+
+**Abstract (ZH)**: 保持连通性在许多多机器人应用中至关重要，但容易受障碍物和视觉遮挡的影响。我们提出了一种基于高阶控制屏障函数（HOCBFs）的实时分布式多机器人导航框架，该框架通过控制机器人之间的相对距离来维持连通性并避免碰撞。我们结合使用控制李雅普诺夫函数以使多机器人系统从初始断连配置和临时断连中恢复连通性，并在障碍物丰富的环境中提供鲁棒的连通性。我们的轨迹生成框架通过贝塞尔参数化轨迹同时实现规划与控制，自然地提供具有任意阶导数的光滑曲线。主要贡献是一种统一的MPC-CLF-CBF框架，这是一种用于多机器人系统连通性维护与恢复的连续时间轨迹生成与控制方法。我们通过广泛的仿真实验和4个 Crazyflie 纳米四旋翼的实际实验验证了该框架。 
+
+---
+# Digital-Twin Evaluation for Proactive Human-Robot Collision Avoidance via Prediction-Guided A-RRT* 
+
+**Title (ZH)**: 基于预测引导A-RRT*的前瞻性人机碰撞规避数字 Twin 评估 
+
+**Authors**: Vadivelan Murugesan, Rajasundaram Mathiazhagan, Sanjana Joshi, Aliasghar Arab  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.03496)  
+
+**Abstract**: Human-robot collaboration requires precise prediction of human motion over extended horizons to enable proactive collision avoidance. Unlike existing planners that rely solely on kinodynamic models, we present a prediction-driven safe planning framework that leverages granular, joint-by-joint human motion forecasting validated in a physics-based digital twin. A capsule-based artificial potential field (APF) converts these granular predictions into collision risk metrics, triggering an Adaptive RRT* (A-RRT*) planner when thresholds are exceeded. The depth camera is used to extract 3D skeletal poses and a convolutional neural network-bidirectional long short-term memory (CNN-BiLSTM) model to predict individual joint trajectories ahead of time. A digital twin model integrates real-time human posture prediction placed in front of a simulated robot to evaluate motions and physical contacts. The proposed method enables validation of planned trajectories ahead of time and bridging potential latency gaps in updating planned trajectories in real-time. In 50 trials, our method achieved 100% proactive avoidance with > 250 mm clearance and sub-2 s replanning, demonstrating superior precision and reliability compared to existing kinematic-only planners through the integration of predictive human modeling with digital twin validation. 
+
+**Abstract (ZH)**: 人类与机器人协作需要精确预测长时间尺度的人类运动以实现主动避障。我们的工作提出了一种预测驱动的安全规划框架，该框架利用基于物理的数字孪生验证的粒度化、关节级的人运动预测。基于胶囊的人工势场将这些粒度化预测转换为碰撞风险度量，并在阈值被超过时触发自适应RRT* (A-RRT*) 规划器。深度相机用于提取3D骨骼姿态，而卷积神经网络双向长短期记忆（CNN-BiLSTM）模型用于提前预测各关节轨迹。数字孪生模型将实时人类姿态预测置于模拟机器人之前，以评估运动和物理接触。所提出的方法能够提前验证规划轨迹并弥补实时更新规划轨迹时潜在的时延缺口。在50次试验中，我们的方法实现了超过250毫米的安全距离和亚2秒的重规划，通过将预测的人类建模与数字孪生验证集成，其精度和可靠性优于现有仅依赖kinematic模型的规划器。 
+
+---
+# Destination-to-Chutes Task Mapping Optimization for Multi-Robot Coordination in Robotic Sorting Systems 
+
+**Title (ZH)**: 多机器人协调在机器人分拣系统中的目标到漏斗任务映射优化 
+
+**Authors**: Yulun Zhang, Alexandre O. G. Barbosa, Federico Pecora, Jiaoyang Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.03472)  
+
+**Abstract**: We study optimizing a destination-to-chutes task mapping to improve throughput in Robotic Sorting Systems (RSS), where a team of robots sort packages on a sortation floor by transporting them from induct workstations to eject chutes based on their shipping destinations (e.g. Los Angeles or Pittsburgh). The destination-to-chutes task mapping is used to determine which chutes a robot can drop its package. Finding a high-quality task mapping is challenging because of the complexity of a real-world RSS. First, optimizing task mapping is interdependent with robot target assignment and path planning. Second, chutes will be CLOSED for a period of time once they receive sufficient packages to allow for downstream processing. Third, task mapping quality directly impacts the downstream processing, as scattered chutes for the same destination increase package handling time. In this paper, we first formally define task mappings and the problem of Task Mapping Optimization (TMO). We then present a simulator of RSS to evaluate task mappings. We then present a simple TMO method based on the Evolutionary Algorithm and Mixed Integer Linear Programming, demonstrating the advantage of our optimized task mappings over the greedily generated ones in various RSS setups with different map sizes, numbers of chutes, and destinations. Finally, we use Quality Diversity algorithms to analyze the throughput of a diverse set of task mappings. Our code is available online at this https URL. 
+
+**Abstract (ZH)**: 我们研究优化目的地到滑槽的任务映射以提高机器人分拣系统(RSS) throughput，其中机器人团队根据包裹的发往目的地（如洛杉矶或匹兹堡）将包裹从接收工作站运输到对应的滑槽。目的地到滑槽的任务映射用于确定机器人可以将包裹投放到哪个滑槽。由于实际-world RSS的复杂性，找到高质量的任务映射具有挑战性。首先，任务映射的优化与机器人目标分配和路径规划相互依赖。其次，滑槽在接收足够多的包裹以允许下游处理后会关闭一段时间。第三，任务映射的质量直接影响下游处理，因为相同目的地的分散滑槽会增加包裹处理时间。在本文中，我们首先正式定义任务映射和任务映射优化问题(TMO)。然后，我们提供了一个RSS仿真器来评估任务映射。接着，基于进化算法和混合整数线性规划提出了一个简单的TMO方法，展示了我们在不同地图规模、滑槽数量和目的地数量的多种RSS设置中，优化的任务映射相较于贪婪生成的任务映射的优势。最后，我们使用质量多样性算法分析多种任务映射的 throughput。我们的代码可在以下链接中在线获得。 
+
+---
+# A Simulation Evaluation Suite for Robust Adaptive Quadcopter Control 
+
+**Title (ZH)**: 鲁棒自适应 quadcopter 控制的仿真评估套件 
+
+**Authors**: Dingqi Zhang, Ran Tao, Sheng Cheng, Naira Hovakimyan, Mark W. Mueller  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.03471)  
+
+**Abstract**: Robust adaptive control methods are essential for maintaining quadcopter performance under external disturbances and model uncertainties. However, fragmented evaluations across tasks, simulators, and implementations hinder systematic comparison of these methods. This paper introduces an easy-to-deploy, modular simulation testbed for quadcopter control, built on RotorPy, that enables evaluation under a wide range of disturbances such as wind, payload shifts, rotor faults, and control latency. The framework includes a library of representative adaptive and non-adaptive controllers and provides task-relevant metrics to assess tracking accuracy and robustness. The unified modular environment enables reproducible evaluation across control methods and eliminates redundant reimplementation of components such as disturbance models, trajectory generators, and analysis tools. We illustrate the testbed's versatility through examples spanning multiple disturbance scenarios and trajectory types, including automated stress testing, to demonstrate its utility for systematic analysis. Code is available at this https URL. 
+
+**Abstract (ZH)**: 鲁棒自适应控制方法对于在外部干扰和模型不确定性环境下保持四旋翼飞行器性能至关重要。然而，任务、模拟器和实现之间的碎片化评估阻碍了这些方法的系统比较。本文介绍了一个基于RotorPy的易于部署且模块化的四旋翼飞行器控制仿真测试床，能够在广泛的干扰条件下（如风、载荷变化、旋翼故障和控制延迟）进行评估。该框架包含一组代表性的自适应和非自适应控制器库，并提供了与任务相关的评估指标，以评估跟踪精度和鲁棒性。统一的模块化环境使得不同控制方法的可重复评估成为可能，并消除了干扰模型、轨迹生成器和分析工具等组件的冗余重新实现。通过涵盖多种干扰场景和轨迹类型的示例，本文展示了测试床的多功能性，并通过自动化压力测试来证明其在系统分析中的实用性。代码可在以下链接获取：this https URL。 
+
+---
+# Optimal swimming with body compliance in an overdamped medium 
+
+**Title (ZH)**: 具有身体顺应性的最优游泳在过阻尼介质中 
+
+**Authors**: Jianfeng Lin, Tianyu Wang, Baxi Chong, Matthew Fernandez, Zhaochen Xu, Daniel I. Goldman  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.03457)  
+
+**Abstract**: Elongate animals and robots use undulatory body waves to locomote through diverse environments. Geometric mechanics provides a framework to model and optimize such systems in highly damped environments, connecting a prescribed shape change pattern (gait) with locomotion displacement. However, existing approaches assume precise execution of prescribed gaits, whereas in practice environmental interactions with compliant bodies of animals or robots frequently perturb the realized trajectories. In this work, we extend geometric mechanics to predict locomotor performance and search for optimal swimming strategy of compliant undulators. We introduce a compliant extension of Purcell's three-link swimmer by incorporating series-connected springs at the joints. Body dynamics are derived with resistive force theory. Geometric mechanics is incorporated into movement prediction and into an optimization framework that identifies strategies for controlling compliant swimmers to achieve maximal displacement. We validate our framework on a physical cable-driven three-link limbless robot, and demonstrate accurate prediction and optimization of locomotor performance under varied programmed, state-dependent compliance in a granular medium. Our results establish a systematic physics-based approach for modeling and controlling compliant swimming locomotion, highlighting compliance as a design feature that can be exploited for robust movement in homogeneous and heterogeneous environments. 
+
+**Abstract (ZH)**: 延展形动物和机器人通过运用波状身体波动在多变环境中移动。几何力学提供了一种框架来模拟和优化此类系统在高度阻尼环境中的性能，将预设的形状变化模式（步态）与移动位移联系起来。然而，现有的方法假设预设步态的精确执行，而在实际中，环境与动物或机器人柔体的交互会频繁地扰动实现轨迹。本文扩展了几何力学，以预测柔体波动器的运动性能并寻找最优游动策略。我们通过在关节处引入串联弹簧，提出了一种Purcell三连杆泳者柔性的扩展版本。机体动力学通过阻力力理论推导得出。几何力学被纳入运动预测和一个优化框架中，该框架能够识别控制柔韧性游动器以实现最大位移的策略。我们通过一个物理驱动的三连杆无肢机器人验证了我们的框架，并在不同的程序化、状态依赖性柔顺性下在颗粒介质中展示了准确的运动性能预测和优化。我们的结果建立了一种系统的基础物理学方法，用于模拟和控制柔韧性游动运动，强调柔顺性作为可以在均质和非均质环境中实现稳健运动的一种设计特征。 
+
+---
+# SketchPlan: Diffusion Based Drone Planning From Human Sketches 
+
+**Title (ZH)**: SketchPlan: 基于扩散模型的无人机规划方法来自人的草图 
+
+**Authors**: Sixten Norelius, Aaron O. Feldman, Mac Schwager  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.03545)  
+
+**Abstract**: We propose SketchPlan, a diffusion-based planner that interprets 2D hand-drawn sketches over depth images to generate 3D flight paths for drone navigation. SketchPlan comprises two components: a SketchAdapter that learns to map the human sketches to projected 2D paths, and DiffPath, a diffusion model that infers 3D trajectories from 2D projections and a first person view depth image. Our model achieves zero-shot sim-to-real transfer, generating accurate and safe flight paths in previously unseen real-world environments. To train the model, we build a synthetic dataset of 32k flight paths using a diverse set of photorealistic 3D Gaussian Splatting scenes. We automatically label the data by computing 2D projections of the 3D flight paths onto the camera plane, and use this to train the DiffPath diffusion model. However, since real human 2D sketches differ significantly from ideal 2D projections, we additionally label 872 of the 3D flight paths with real human sketches and use this to train the SketchAdapter to infer the 2D projection from the human sketch. We demonstrate SketchPlan's effectiveness in both simulated and real-world experiments, and show through ablations that training on a mix of human labeled and auto-labeled data together with a modular design significantly boosts its capabilities to correctly interpret human intent and infer 3D paths. In real-world drone tests, SketchPlan achieved 100\% success in low/medium clutter and 40\% in unseen high-clutter environments, outperforming key ablations by 20-60\% in task completion. 
+
+**Abstract (ZH)**: 基于扩散模型的草图规划器SketchPlan：从深度图像中的手绘草图生成无人机导航的3D飞行路径 
+
+---
+# Viability-Preserving Passive Torque Control 
+
+**Title (ZH)**: 保 viability 的被动扭矩控制 
+
+**Authors**: Zizhe Zhang, Yicong Wang, Zhiquan Zhang, Tianyu Li, Nadia Figueroa  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.03367)  
+
+**Abstract**: Conventional passivity-based torque controllers for manipulators are typically unconstrained, which can lead to safety violations under external perturbations. In this paper, we employ viability theory to pre-compute safe sets in the state-space of joint positions and velocities. These viable sets, constructed via data-driven and analytical methods for self-collision avoidance, external object collision avoidance and joint-position and joint-velocity limits, provide constraints on joint accelerations and thus joint torques via the robot dynamics. A quadratic programming-based control framework enforces these constraints on a passive controller tracking a dynamical system, ensuring the robot states remain within the safe set in an infinite time horizon. We validate the proposed approach through simulations and hardware experiments on a 7-DoF Franka Emika manipulator. In comparison to a baseline constrained passive controller, our method operates at higher control-loop rates and yields smoother trajectories. 
+
+**Abstract (ZH)**: 基于 viability 理论的 manipulator 动力学约束扭矩控制器 
+
+---
