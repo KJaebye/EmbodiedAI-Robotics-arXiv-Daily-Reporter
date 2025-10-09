@@ -1,0 +1,143 @@
+# COMPAct: Computational Optimization and Automated Modular design of Planetary Actuators 
+
+**Title (ZH)**: COMPAct: 计算优化与行星执行器自动化模块化设计 
+
+**Authors**: Aman Singh, Deepak Kapa, Suryank Joshi, Shishir Kolathaya  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.07197)  
+
+**Abstract**: The optimal design of robotic actuators is a critical area of research, yet limited attention has been given to optimizing gearbox parameters and automating actuator CAD. This paper introduces COMPAct: Computational Optimization and Automated Modular Design of Planetary Actuators, a framework that systematically identifies optimal gearbox parameters for a given motor across four gearbox types, single-stage planetary gearbox (SSPG), compound planetary gearbox (CPG), Wolfrom planetary gearbox (WPG), and double-stage planetary gearbox (DSPG). The framework minimizes mass and actuator width while maximizing efficiency, and further automates actuator CAD generation to enable direct 3D printing without manual redesign. Using this framework, optimal gearbox designs are explored over a wide range of gear ratios, providing insights into the suitability of different gearbox types across various gear ratio ranges. In addition, the framework is used to generate CAD models of all four gearbox types with varying gear ratios and motors. Two actuator types are fabricated and experimentally evaluated through power efficiency, no-load backlash, and transmission stiffness tests. Experimental results indicate that the SSPG actuator achieves a mechanical efficiency of 60-80 %, a no-load backlash of 0.59 deg, and a transmission stiffness of 242.7 Nm/rad, while the CPG actuator demonstrates 60 % efficiency, 2.6 deg backlash, and a stiffness of 201.6 Nm/rad. Code available at: this https URL Video: this https URL 
+
+**Abstract (ZH)**: 基于计算优化和自动模块化设计的行星_actuator参数优化框架：COMPAct 
+
+---
+# A Narwhal-Inspired Sensing-to-Control Framework for Small Fixed-Wing Aircraft 
+
+**Title (ZH)**: 受独角鲸启发的感测到控制框架：小型固定翼飞行器 
+
+**Authors**: Fengze Xie, Xiaozhou Fan, Jacob Schuster, Yisong Yue, Morteza Gharib  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.07160)  
+
+**Abstract**: Fixed-wing unmanned aerial vehicles (UAVs) offer endurance and efficiency but lack low-speed agility due to highly coupled dynamics. We present an end-to-end sensing-to-control pipeline that combines bio-inspired hardware, physics-informed dynamics learning, and convex control allocation. Measuring airflow on a small airframe is difficult because near-body aerodynamics, propeller slipstream, control-surface actuation, and ambient gusts distort pressure signals. Inspired by the narwhal's protruding tusk, we mount in-house multi-hole probes far upstream and complement them with sparse, carefully placed wing pressure sensors for local flow measurement. A data-driven calibration maps probe pressures to airspeed and flow angles. We then learn a control-affine dynamics model using the estimated airspeed/angles and sparse sensors. A soft left/right symmetry regularizer improves identifiability under partial observability and limits confounding between wing pressures and flaperon inputs. Desired wrenches (forces and moments) are realized by a regularized least-squares allocator that yields smooth, trimmed actuation. Wind-tunnel studies across a wide operating range show that adding wing pressures reduces force-estimation error by 25-30%, the proposed model degrades less under distribution shift (about 12% versus 44% for an unstructured baseline), and force tracking improves with smoother inputs, including a 27% reduction in normal-force RMSE versus a plain affine model and 34% versus an unstructured baseline. 
+
+**Abstract (ZH)**: 基于生物启发硬件、物理知情动力学习和凸控制分配的固定翼无人机端到端传感到控制管道 
+
+---
+# Sampling Strategies for Robust Universal Quadrupedal Locomotion Policies 
+
+**Title (ZH)**: 稳健通用四足运动策略的采样策略 
+
+**Authors**: David Rytz, Kim Tien Ly, Ioannis Havoutis  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.07094)  
+
+**Abstract**: This work focuses on sampling strategies of configuration variations for generating robust universal locomotion policies for quadrupedal robots. We investigate the effects of sampling physical robot parameters and joint proportional-derivative gains to enable training a single reinforcement learning policy that generalizes to multiple parameter configurations. Three fundamental joint gain sampling strategies are compared: parameter sampling with (1) linear and polynomial function mappings of mass-to-gains, (2) performance-based adaptive filtering, and (3) uniform random sampling. We improve the robustness of the policy by biasing the configurations using nominal priors and reference models. All training was conducted on RaiSim, tested in simulation on a range of diverse quadrupeds, and zero-shot deployed onto hardware using the ANYmal quadruped robot. Compared to multiple baseline implementations, our results demonstrate the need for significant joint controller gains randomization for robust closing of the sim-to-real gap. 
+
+**Abstract (ZH)**: 本文集中在配置变异的采样策略上，以生成四足机器人的稳健通用行走策略。我们调查了采样物理机器人参数和关节比例-微分增益的影响，以使训练单个强化学习策略能够泛化到多种参数配置。三种基本的关节增益采样策略进行了比较：参数采样具有（1）质量到增益的线性和多项式函数映射，（2）基于性能的自适应过滤，以及（3）均匀随机采样。通过使用先验知识和参考模型对配置进行偏差调整，以提高策略的稳健性。研究在RaiSim上进行训练，在多种多样的四足机器人仿真中进行测试，并使用ANYmal四足机器人进行零样本部署。与多个基线实施相比，我们的结果表明，为了稳健地缩小仿真到现实的差距，关节控制器增益的显著随机化是必需的。 
+
+---
+# Tailoring materials into kirigami robots 
+
+**Title (ZH)**: 将材料裁剪成 kirigami 机器人 
+
+**Authors**: Saravana Prashanth Murali Babu, Aida Parvaresh, Ahmad Rafsanjani  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.07027)  
+
+**Abstract**: Kirigami, the traditional paper-cutting craft, holds immense potential for revolutionizing robotics by providing multifunctional, lightweight, and adaptable solutions. Kirigami structures, characterized by their bending-dominated deformation, offer resilience to tensile forces and facilitate shape morphing under small actuation forces. Kirigami components such as actuators, sensors, batteries, controllers, and body structures can be tailored to specific robotic applications by optimizing cut patterns. Actuators based on kirigami principles exhibit complex motions programmable through various energy sources, while kirigami sensors bridge the gap between electrical conductivity and compliance. Kirigami-integrated batteries enable energy storage directly within robot structures, enhancing flexibility and compactness. Kirigami-controlled mechanisms mimic mechanical computations, enabling advanced functionalities such as shape morphing and memory functions. Applications of kirigami-enabled robots include grasping, locomotion, and wearables, showcasing their adaptability to diverse environments and tasks. Despite promising opportunities, challenges remain in the design of cut patterns for a given function and streamlining fabrication techniques. 
+
+**Abstract (ZH)**: kirigami在传统纸切割工艺的基础上为机器人技术带来了巨大的潜力，提供了多功能、轻量化和适应性强的解决方案。kirigami结构以其弯曲主导的变形特性，对拉力具有良好的适应性，并且在小驱动力作用下能够实现形状变化。kirigami组件，如执行器、传感器、电池、控制器和机体结构，可以通过优化切割模式来针对特定的机器人应用进行定制。基于kirigami原理的执行器能够通过多种能量源编程实现复杂的运动，而kirigami传感器则在电导性和顺应性之间建立了桥梁。通过kirigami整合的电池可以直接在机器人结构内部实现能量存储，提高灵活性和紧凑性。kirigami控制机制模拟机械计算，使机器人具备形状变化和记忆功能等高级功能。 kirigami使能的机器人应用包括抓取、移动和穿戴设备，展示了其在多种环境和任务中的适应性。尽管前景广阔，但在给定功能下设计切割模式以及简化制造技术方面仍存在挑战。 
+
+---
+# Distributed 3D Source Seeking via SO(3) Geometric Control of Robot Swarms 
+
+**Title (ZH)**: 基于SO(3)几何控制的分布式三维源搜索机器人 swarm 控制方法 
+
+**Authors**: Jesús Bautista, Héctor García de Marina  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.06836)  
+
+**Abstract**: This paper presents a geometric control framework on the Lie group SO(3) for 3D source-seeking by robots with first-order attitude dynamics and constant translational speed. By working directly on SO(3), the approach avoids Euler-angle singularities and quaternion ambiguities, providing a unique, intrinsic representation of orientation. We design a proportional feed-forward controller that ensures exponential alignment of each agent to an estimated ascending direction toward a 3D scalar field source. The controller adapts to bounded unknown variations and preserves well-posed swarm formations. Numerical simulations demonstrate the effectiveness of the method, with all code provided open source for reproducibility. 
+
+**Abstract (ZH)**: 基于Lie群SO(3)的几何控制框架：具有一阶姿态动力学和恒定平移速度的机器人三维源寻觅控制 
+
+---
+# RAISE: A self-driving laboratory for interfacial property formulation discovery 
+
+**Title (ZH)**: RAISE：一种自驾驶实验室，用于界面性质表征发现 
+
+**Authors**: Mohammad Nazeri, Sheldon Mei, Jeffrey Watchorn, Alex Zhang, Erin Ng, Tao Wen, Abhijoy Mandal, Kevin Golovin, Alan Aspuru-Guzik, Frank Gu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.06546)  
+
+**Abstract**: Surface wettability is a critical design parameter for biomedical devices, coatings, and textiles. Contact angle measurements quantify liquid-surface interactions, which depend strongly on liquid formulation. Herein, we present the Robotic Autonomous Imaging Surface Evaluator (RAISE), a closed-loop, self-driving laboratory that is capable of linking liquid formulation optimization with surface wettability assessment. RAISE comprises a full experimental orchestrator with the ability of mixing liquid ingredients to create varying formulation cocktails, transferring droplets of prepared formulations to a high-throughput stage, and using a pick-and-place camera tool for automated droplet image capture. The system also includes an automated image processing pipeline to measure contact angles. This closed loop experiment orchestrator is integrated with a Bayesian Optimization (BO) client, which enables iterative exploration of new formulations based on previous contact angle measurements to meet user-defined objectives. The system operates in a high-throughput manner and can achieve a measurement rate of approximately 1 contact angle measurement per minute. Here we demonstrate RAISE can be used to explore surfactant wettability and how surfactant combinations create tunable formulations that compensate for purity-related variations. Furthermore, multi-objective BO demonstrates how precise and optimal formulations can be reached based on application-specific goals. The optimization is guided by a desirability score, which prioritizes formulations that are within target contact angle ranges, minimize surfactant usage and reduce cost. This work demonstrates the capabilities of RAISE to autonomously link liquid formulations to contact angle measurements in a closed-loop system, using multi-objective BO to efficiently identify optimal formulations aligned with researcher-defined criteria. 
+
+**Abstract (ZH)**: 表面润湿性是生物医学设备、涂层和纺织品设计中的关键参数。接触角测量量化了液体-表面的相互作用，这取决于液体的配方。在此，我们介绍了一种名为自主成像表面评估器（RAISE）的闭环、自动驾驶实验室，它能够将液体配方优化与表面润湿性评估联系起来。RAISE包括一个完整的实验调度器，能够混合液体成分以创建不同的配方混合物，将准备好的配方滴转移到高通量平台上，并使用拣放相机工具实现自动液滴图像捕获。系统还包含一个自动图像处理流水线来测量接触角。该闭环实验调度器与贝叶斯优化（BO）客户端集成，可以根据之前的接触角测量结果进行迭代探索，以满足用户定义的目标。系统以高通量方式运行，每分钟可以完成约一次接触角测量。我们演示了RAISE可以用于探索表面活性剂的润湿性及其组合如何创建可调配方以补偿纯度相关变化。此外，多目标BO展示了如何基于应用特定目标精确并优化配方，优化由可实现性评分指导，优先考虑目标接触角范围内的配方、减少表面活性剂使用并降低成本。本研究证明了RAISE在闭环系统中自主地将液体配方与接触角测量关联起来的能力，并使用多目标BO高效识别符合研究人员定义标准的最优配方。 
+
+---
+# Real-Time Glass Detection and Reprojection using Sensor Fusion Onboard Aerial Robots 
+
+**Title (ZH)**: 基于机载机器人传感器融合的实时玻璃检测与重塑投影 
+
+**Authors**: Malakhi Hopkins, Varun Murali, Vijay Kumar, Camillo J Taylor  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.06518)  
+
+**Abstract**: Autonomous aerial robots are increasingly being deployed in real-world scenarios, where transparent obstacles present significant challenges to reliable navigation and mapping. These materials pose a unique problem for traditional perception systems because they lack discernible features and can cause conventional depth sensors to fail, leading to inaccurate maps and potential collisions. To ensure safe navigation, robots must be able to accurately detect and map these transparent obstacles. Existing methods often rely on large, expensive sensors or algorithms that impose high computational burdens, making them unsuitable for low Size, Weight, and Power (SWaP) robots. In this work, we propose a novel and computationally efficient framework for detecting and mapping transparent obstacles onboard a sub-300g quadrotor. Our method fuses data from a Time-of-Flight (ToF) camera and an ultrasonic sensor with a custom, lightweight 2D convolution model. This specialized approach accurately detects specular reflections and propagates their depth into corresponding empty regions of the depth map, effectively rendering transparent obstacles visible. The entire pipeline operates in real-time, utilizing only a small fraction of a CPU core on an embedded processor. We validate our system through a series of experiments in both controlled and real-world environments, demonstrating the utility of our method through experiments where the robot maps indoor environments containing glass. Our work is, to our knowledge, the first of its kind to demonstrate a real-time, onboard transparent obstacle mapping system on a low-SWaP quadrotor using only the CPU. 
+
+**Abstract (ZH)**: 自主飞行机器人在实际应用场景中越来越多，透明障碍物对可靠的导航和建图构成了显著挑战。这些材料给传统的感知系统带来了独特的问题，因为它们缺乏可区分的特征，并可能导致传统的深度传感器失效，从而产生不准确的地图并引发潜在碰撞。为了确保安全导航，机器人必须能够准确检测和测绘这些透明障碍物。现有方法通常依赖于大型、昂贵的传感器或计算负担高的算法，这使得它们不适合尺寸、重量和功率（SWaP）小巧的机器人。在这项工作中，我们提出了一种新颖且计算高效的框架，在一个重量小于300克的四旋翼飞行器上检测和测绘透明障碍物。该方法结合了飞行时间（ToF）相机数据和超声波传感器数据，并利用一种定制的轻量级二维卷积模型。这种专业方法准确检测镜面反射，并将它们的深度传播到深度图中的相应空白区域，有效使透明障碍物变得可见。整个管道实时运行，仅使用嵌入式处理器上的一小部分CPU核心。我们通过在受控和实际环境中的系列实验验证了我们的系统，展示了该方法在机器人测绘包含玻璃的室内环境中的实用性。据我们所知，这项工作是首次在低-SWaP四旋翼飞行器上仅使用CPU实现实时、机载透明障碍物测绘系统的案例。 
+
+---
+# A Formal gatekeeper Framework for Safe Dual Control with Active Exploration 
+
+**Title (ZH)**: 一种正式的守门人框架，用于安全的双回路控制并伴随主动探索 
+
+**Authors**: Kaleb Ben Naveed, Devansh R. Agrawal, Dimitra Panagou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.06351)  
+
+**Abstract**: Planning safe trajectories under model uncertainty is a fundamental challenge. Robust planning ensures safety by considering worst-case realizations, yet ignores uncertainty reduction and leads to overly conservative behavior. Actively reducing uncertainty on-the-fly during a nominal mission defines the dual control problem. Most approaches address this by adding a weighted exploration term to the cost, tuned to trade off the nominal objective and uncertainty reduction, but without formal consideration of when exploration is beneficial. Moreover, safety is enforced in some methods but not in others. We propose a framework that integrates robust planning with active exploration under formal guarantees as follows: The key innovation and contribution is that exploration is pursued only when it provides a verifiable improvement without compromising safety. To achieve this, we utilize our earlier work on gatekeeper as an architecture for safety verification, and extend it so that it generates both safe and informative trajectories that reduce uncertainty and the cost of the mission, or keep it within a user-defined budget. The methodology is evaluated via simulation case studies on the online dual control of a quadrotor under parametric uncertainty. 
+
+**Abstract (ZH)**: 在模型不确定性下的安全轨迹规划是基本挑战。通过鲁棒规划确保安全性需要考虑最坏情况的实现，但忽略了不确定性减少，导致行为过于保守。在名义任务中实时减少不确定性定义了双重控制问题。大多数方法通过添加加权探索项到成本中来解决这一问题，以平衡名义目标和不确定性减少，但没有正式考虑探索何时有益。此外，某些方法确保安全性，而其他方法则不确保。我们提出了一种框架，将鲁棒规划与在形式保证下的主动探索结合起来，如下：关键创新和贡献在于，仅在探索提供可验证的改进且不牺牲安全性时才进行探索。为了实现这一点，我们利用我们之前的工作作为安全性验证的架构，并将其扩展为生成既能保证安全又能提供信息的轨迹，这些轨迹可以减少不确定性并降低任务成本，或在用户定义的预算范围内。该方法通过模拟案例研究评估了四旋翼在参数不确定性下的在线双重控制。 
+
+---
+# Three-dimensional Integrated Guidance and Control for Leader-Follower Flexible Formation of Fixed Wing UAVs 
+
+**Title (ZH)**: 固定翼无人机领导者-跟随者柔性编队的三维集成指导与控制 
+
+**Authors**: Praveen Kumar Ranjan, Abhinav Sinha, Yongcan Cao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.06394)  
+
+**Abstract**: This paper presents a nonlinear integrated guidance and control (IGC) approach for flexible leader-follower formation flight of fixed-wing unmanned aerial vehicles (UAVs) while accounting for high-fidelity aerodynamics and thrust dynamics. Unlike conventional leader-follower schemes that fix the follower's position relative to the leader, the follower is steered to maintain range and bearing angles (which is the angle between its velocity vector and its line-of-sight (LOS) with respect to the leader) arbitrarily close to the prescribed values, enabling the follower to maintain formation on a hemispherical region behind the leader. The proposed IGC framework directly maps leader-follower relative range dynamics to throttle commands, and the follower's velocity orientation relative to the LOS to aerodynamic control surface deflections. This enables synergism between guidance and control subsystems. The control design uses a dynamic surface control-based backstepping approach to achieve convergence to the desired formation set, where Lyapunov barrier functions are incorporated to ensure the follower's bearing angle is constrained within specified bounds. Rigorous stability analysis guarantees uniform ultimate boundedness of all error states and strict constraint satisfaction in the presence of aerodynamic nonlinearities. The proposed flexible formation scheme allows the follower to have an orientation mismatch relative to the leader to execute anticipatory reconfiguration by transitioning between the relative positions in the admissible formation set when the leader aggressively maneuvers. The proposed IGC law relies only on relative information and onboard sensors without the information about the leader's maneuver, making it suitable for GPS-denied or non-cooperative scenarios. Finally, we present simulation results to vindicate the effectiveness and robustness of our approach. 
+
+**Abstract (ZH)**: 本文提出了一种考虑高保真气动和推力动力学的柔性 líder-follower编队飞行非线性集成导航与控制方法，实现了固定翼无人机编队飞行中跟随器相对于领导者任意接近预定距离和航向角的维持，使得跟随器可以保持在领导者后方的半球区域内飞行。该提出的集成导航与控制框架直接将领导者-跟随者相对距离动力学映射到油门命令，将跟随器相对于视线方向的速度方向映射到气动控制面偏转，实现了导航与控制子系统之间的协同作用。控制设计采用基于动态表面控制的回步方法，将跟随器收敛到期望编队状态，通过Lypunov屏障函数确保跟随器的航向角在指定范围内。严格稳定性分析保证了所有误差状态的统一最终有界性，并在气动非线性存在的情况下满足严格约束。提出的柔性编队方案允许跟随器相对于领导者具有方向不匹配，以便通过在可接受编队集中切换相对位置来执行前瞻性重构，当领导者剧烈机动时。所提出的集成导航与控制法则仅依赖于相对信息和机载传感器，而不依赖于领导者机动信息，使其适用于GPS受限或非合作场景。最后，我们提供了仿真结果以验证我们方法的有效性和鲁棒性。 
+
+---
+# TiltXter: CNN-based Electro-tactile Rendering of Tilt Angle for Telemanipulation of Pasteur Pipettes 
+
+**Title (ZH)**: TiltXter: 基于CNN的 Pasteur 管倾斜角度电触觉渲染技术研发 
+
+**Authors**: Miguel Altamirano Cabrera, Jonathan Tirado, Aleksey Fedoseev, Oleg Sautenkov, Vladimir Poliakov, Pavel Kopanev, Dzmitry Tsetserukou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2409.15838)  
+
+**Abstract**: The shape of deformable objects can change drastically during grasping by robotic grippers, causing an ambiguous perception of their alignment and hence resulting in errors in robot positioning and telemanipulation. Rendering clear tactile patterns is fundamental to increasing users' precision and dexterity through tactile haptic feedback during telemanipulation. Therefore, different methods have to be studied to decode the sensors' data into haptic stimuli. This work presents a telemanipulation system for plastic pipettes that consists of a Force Dimension Omega.7 haptic interface endowed with two electro-stimulation arrays and two tactile sensor arrays embedded in the 2-finger Robotiq gripper. We propose a novel approach based on convolutional neural networks (CNN) to detect the tilt of deformable objects. The CNN generates a tactile pattern based on recognized tilt data to render further electro-tactile stimuli provided to the user during the telemanipulation. The study has shown that using the CNN algorithm, tilt recognition by users increased from 23.13\% with the downsized data to 57.9%, and the success rate during teleoperation increased from 53.12% using the downsized data to 92.18% using the tactile patterns generated by the CNN. 
+
+**Abstract (ZH)**: 可变形物体在机器人夹爪抓取过程中形状会急剧变化，导致其对齐感知模糊，从而影响机器人定位和遥操作的准确性。清晰的触觉模式呈现对于通过触觉力反馈增加用户精确度和灵巧性至关重要。因此，需要研究不同的方法将传感器数据解码为触觉刺激。本文提出了一种用于塑料移液管的遥操作系统，该系统包括一个配备有两个电刺激阵列和两个触觉传感器阵列的Force Dimension Omega.7 力觉接口，嵌入在2指Robotiq夹爪中。我们提出了一种基于卷积神经网络（CNN）的新方法来检测可变形物体的倾斜角度。CNN根据识别到的倾斜数据生成触觉模式，以便在遥操作系统中提供进一步的电触觉刺激给用户。研究表明，使用CNN算法后，用户倾斜角度识别率从数据缩小前的23.13%提高到57.9%，遥操作系统中的成功率从使用数据缩小后的53.12%提高到使用CNN生成的触觉模式后的92.18%。 
+
+---
+# DeepXPalm: Tilt and Position Rendering using Palm-worn Haptic Display and CNN-based Tactile Pattern Recognition 
+
+**Title (ZH)**: DeepXPalm: 倾斜和位置渲染使用掌戴触觉显示和基于CNN的触觉模式识别 
+
+**Authors**: Altamirano Cabrera Miguel, Sautenkov Oleg, Tirado Jonathan, Fedoseev Aleksey, Kopanev Pavel, Kajimoto Hiroyuki, Tsetserukou Dzmitry  
+
+**Link**: [PDF](https://arxiv.org/pdf/2204.03521)  
+
+**Abstract**: Telemanipulation of deformable objects requires high precision and dexterity from the users, which can be increased by kinesthetic and tactile feedback. However, the object shape can change dynamically, causing ambiguous perception of its alignment and hence errors in the robot positioning. Therefore, the tilt angle and position classification problem has to be solved to present a clear tactile pattern to the user. This work presents a telemanipulation system for plastic pipettes consisting of a multi-contact haptic device LinkGlide to deliver haptic feedback at the users' palm and two tactile sensors array embedded in the 2-finger Robotiq gripper. We propose a novel approach based on Convolutional Neural Networks (CNN) to detect the tilt and position while grasping deformable objects. The CNN generates a mask based on recognized tilt and position data to render further multi-contact tactile stimuli provided to the user during the telemanipulation. The study has shown that using the CNN algorithm and the preset mask, tilt, and position recognition by users is increased from 9.67% using the direct data to 82.5%. 
+
+**Abstract (ZH)**: 软体物体的远程操作需要用户具备高精度和灵巧性，可以通过提供动能和触觉反馈来提高。然而，物体形状会动态变化，可能导致其对齐感知的模糊，从而影响机器人定位的准确性。因此，必须解决倾斜角度和位置分类问题，以向用户提供清晰的触觉模式。本文提出了一种基于塑料吸管的远程操作系统，该系统包括一个多接触力反馈设备LinkGlide和一个嵌入在两指Robotiq夹爪中的触觉传感器阵列。我们提出了一种基于卷积神经网络（CNN）的新方法来检测抓取软体物体时的倾斜和位置。CNN根据识别到的倾斜和位置数据生成一个遮罩，以渲染远程操作过程中提供给用户的多接触触觉刺激。研究结果显示，使用CNN算法和预设遮罩后，用户对倾斜和位置的识别准确率从9.67%提高到了82.5%。 
+
+---
