@@ -1,0 +1,104 @@
+# Generative Universal Verifier as Multimodal Meta-Reasoner 
+
+**Title (ZH)**: 生成式通用验证器作为多模态元推理器 
+
+**Authors**: Xinchen Zhang, Xiaoying Zhang, Youbin Wu, Yanbin Cao, Renrui Zhang, Ruihang Chu, Ling Yang, Yujiu Yang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.13804)  
+
+**Abstract**: We introduce Generative Universal Verifier, a novel concept and plugin designed for next-generation multimodal reasoning in vision-language models and unified multimodal models, providing the fundamental capability of reflection and refinement on visual outcomes during the reasoning and generation process. This work makes three main contributions: (1) We build ViVerBench, a comprehensive benchmark spanning 16 categories of critical tasks for evaluating visual outcomes in multimodal reasoning. Results show that existing VLMs consistently underperform across these tasks, underscoring a substantial gap from human-level capability in reliable visual verification. (2) We design two automated pipelines to construct large-scale visual verification data and train OmniVerifier-7B, the first omni-capable generative verifier trained for universal visual verification and achieves notable gains on ViVerBench(+8.3). Through training, we identify three atomic capabilities in visual verification and demonstrate how they generalize and interact synergistically. (3) We propose OmniVerifier-TTS, a sequential test-time scaling paradigm that leverages the universal verifier to bridge image generation and editing within unified models, enhancing the upper bound of generative ability through iterative fine-grained optimization. Beyond generation, we extend universal verifier to broader world-modeling interleaved reasoning scenarios. Empirically, OmniVerifier-TTS achieves improvements on T2I-ReasonBench(+3.7), and GenEval++(+4.3), outperforming existing parallel test-time scaling methods, such as Best-of-N. By endowing multimodal reasoning with reliable visual verification, OmniVerifier advances both reliable reflection during generation and scalable test-time refinement, marking a step toward more trustworthy and controllable next-generation reasoning systems. 
+
+**Abstract (ZH)**: 生成式通用验证器：下一代多模态推理在视觉语言模型和统一多模态模型中的新概念与插件 
+
+---
+# RECODE: Reasoning Through Code Generation for Visual Question Answering 
+
+**Title (ZH)**: RECODE: 通过代码生成进行视觉问答的推理 
+
+**Authors**: Junhong Shen, Mu Cai, Bo Hu, Ameet Talwalkar, David A Ross, Cordelia Schmid, Alireza Fathi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.13756)  
+
+**Abstract**: Multimodal Large Language Models (MLLMs) struggle with precise reasoning for structured visuals like charts and diagrams, as pixel-based perception lacks a mechanism for verification. To address this, we propose to leverage derendering -- the process of reverse-engineering visuals into executable code -- as a new modality for verifiable visual reasoning. Specifically, we propose RECODE, an agentic framework that first generates multiple candidate programs to reproduce the input image. It then uses a critic to select the most faithful reconstruction and iteratively refines the code. This process not only transforms an ambiguous perceptual task into a verifiable, symbolic problem, but also enables precise calculations and logical inferences later on. On various visual reasoning benchmarks such as CharXiv, ChartQA, and Geometry3K, RECODE significantly outperforms methods that do not leverage code or only use code for drawing auxiliary lines or cropping. Our work demonstrates that grounding visual perception in executable code provides a new path toward more accurate and verifiable multimodal reasoning. 
+
+**Abstract (ZH)**: 多模态大语言模型（MLLMs）在处理图表和图表等结构化视觉内容的精确推理方面存在困难，基于像素的感知缺乏验证机制。为解决这一问题，我们提出利用反渲染——将视觉内容逆向工程化为可执行代码的过程——作为一种新的验证性视觉推理模态。具体地，我们提出了RECODE，一种代理框架，首先生成多个候选程序以再现输入图像，然后使用批评家选择最忠实的重建，并迭代完善代码。这一过程不仅将含糊的感知任务转化为可验证的符号问题，还使得后续的精确计算和逻辑推理成为可能。在诸如CharXiv、ChartQA和Geometry3K等视觉推理基准测试中，RECODE显著优于未利用代码或仅使用代码绘制辅助线或裁剪的方法。我们的工作证明，将视觉感知 grounding 在可执行代码上为实现更准确和可验证的多模态推理开辟了新途径。 
+
+---
+# NExT-OMNI: Towards Any-to-Any Omnimodal Foundation Models with Discrete Flow Matching 
+
+**Title (ZH)**: NExT-OMNI: 向任意模态到任意模态的全能基础模型进发，基于离散流匹配 
+
+**Authors**: Run Luo, Xiaobo Xia, Lu Wang, Longze Chen, Renke Shan, Jing Luo, Min Yang, Tat-Seng Chua  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.13721)  
+
+**Abstract**: Next-generation multimodal foundation models capable of any-to-any cross-modal generation and multi-turn interaction will serve as core components of artificial general intelligence systems, playing a pivotal role in human-machine interaction. However, most existing multimodal models remain constrained by autoregressive architectures, whose inherent limitations prevent a balanced integration of understanding and generation capabilities. Although hybrid and decoupling strategies have been explored to address these tasks within unified frameworks separately, their redundant, non-integrated designs limit their applicability to broader scenarios, such as cross-modal this http URL this work, we introduce NExT-OMNI, an open-source omnimodal foundation model that achieves unified modeling through discrete flow paradigms. By leveraging metric-induced probability paths and kinetic optimal velocities, NExT-OMNI natively supports any-to-any understanding and generation with enhanced response efficiency, while enabling broader application scenarios through concise unified representations rather than task-decoupled designs. Trained on large-scale interleaved text, image, video, and audio data, NExT-OMNI delivers competitive performance on multimodal generation and understanding benchmarks, while outperforming prior unified models in multi-turn multimodal interaction and cross-modal retrieval, highlighting its architectural advantages as a next-generation multimodal foundation model. To advance further research, we release training details, data protocols, and open-source both the code and model checkpoints. 
+
+**Abstract (ZH)**: 下一代多模态基础模型：通过离散流 paradigms 实现统一建模的 NExT-OMNI 
+
+---
+# MVCustom: Multi-View Customized Diffusion via Geometric Latent Rendering and Completion 
+
+**Title (ZH)**: MVCustom: 多视图定制扩散通过几何潜在渲染和完成 
+
+**Authors**: Minjung Shin, Hyunin Cho, Sooyeon Go, Jin-Hwa Kim, Youngjung Uh  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.13702)  
+
+**Abstract**: Multi-view generation with camera pose control and prompt-based customization are both essential elements for achieving controllable generative models. However, existing multi-view generation models do not support customization with geometric consistency, whereas customization models lack explicit viewpoint control, making them challenging to unify. Motivated by these gaps, we introduce a novel task, multi-view customization, which aims to jointly achieve multi-view camera pose control and customization. Due to the scarcity of training data in customization, existing multi-view generation models, which inherently rely on large-scale datasets, struggle to generalize to diverse prompts. To address this, we propose MVCustom, a novel diffusion-based framework explicitly designed to achieve both multi-view consistency and customization fidelity. In the training stage, MVCustom learns the subject's identity and geometry using a feature-field representation, incorporating the text-to-video diffusion backbone enhanced with dense spatio-temporal attention, which leverages temporal coherence for multi-view consistency. In the inference stage, we introduce two novel techniques: depth-aware feature rendering explicitly enforces geometric consistency, and consistent-aware latent completion ensures accurate perspective alignment of the customized subject and surrounding backgrounds. Extensive experiments demonstrate that MVCustom is the only framework that simultaneously achieves faithful multi-view generation and customization. 
+
+**Abstract (ZH)**: 多视角定制生成：兼具多视角相机姿态控制和基于提示的定制的新型任务与框架 
+
+---
+# DistilCLIP-EEG: Enhancing Epileptic Seizure Detection Through Multi-modal Learning and Knowledge Distillation 
+
+**Title (ZH)**: DistilCLIP-EEG：通过多模态学习和知识蒸馏增强癫痫发作检测 
+
+**Authors**: Zexin Wang, Lin Shi, Haoyu Wu, Junru Luo, Xiangzeng Kong, Jun Qi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.13497)  
+
+**Abstract**: Epilepsy is a prevalent neurological disorder marked by sudden, brief episodes of excessive neuronal activity caused by abnormal electrical discharges, which may lead to some mental disorders. Most existing deep learning methods for epilepsy detection rely solely on unimodal EEG signals, neglecting the potential benefits of multimodal information. To address this, we propose a novel multimodal model, DistilCLIP-EEG, based on the CLIP framework, which integrates both EEG signals and text descriptions to capture comprehensive features of epileptic seizures. The model involves an EEG encoder based on the Conformer architecture as a text encoder, the proposed Learnable BERT (BERT-LP) as prompt learning within the encoders. Both operate in a shared latent space for effective cross-modal representation learning. To enhance efficiency and adaptability, we introduce a knowledge distillation method where the trained DistilCLIP-EEG serves as a teacher to guide a more compact student model to reduce training complexity and time. On the TUSZ, AUBMC, and CHB-MIT datasets, both the teacher and student models achieved accuracy rates exceeding 97%. Across all datasets, the F1-scores were consistently above 0.94, demonstrating the robustness and reliability of the proposed framework. Moreover, the student model's parameter count and model size are approximately 58.1% of those of the teacher model, significantly reducing model complexity and storage requirements while maintaining high performance. These results highlight the potential of our proposed model for EEG-based epilepsy detection and establish a solid foundation for deploying lightweight models in resource-constrained settings. 
+
+**Abstract (ZH)**: 癫痫是一种常见的神经性疾病，由异常电活动引起突发短暂的神经元过度放电导致，可能导致一些精神障碍。现有的大多数深度学习方法仅依赖单模EEG信号进行癫痫检测，忽略了多模信息的优势。为了解决这个问题，我们提出了一种基于CLIP框架的新型多模态模型DistilCLIP-EEG，该模型结合EEG信号和文本描述以捕捉癫痫发作的综合特征。该模型采用基于Conformer架构的EEG编码器作为文本编码器，并提出一种可学习的BERT (BERT-LP) 进行编码器内的提示学习，两者共同作用于共享的潜在空间进行有效的跨模态表示学习。为了提高效率和适应性，我们引入了一种知识蒸馏方法，其中训练好的DistilCLIP-EEG作为教师模型指导一个更紧凑的学生模型以减少训练复杂性和时间。在TUSZ、AUBMC和CHB-MIT数据集上，教师模型和学生模型均实现了超过97%的准确率。各数据集上的一致性F1分数均高于0.94，证明了所提框架的稳健性和可靠性。此外，学生模型的参数量和模型大小约为教师模型的58.1%，显著降低了模型复杂性和存储要求，同时保持了高性能。这些结果突显了我们所提模型在基于EEG的癫痫检测中的潜力，并为在资源受限环境下部署轻量级模型奠定了坚实基础。 
+
+---
+# Self-Augmented Visual Contrastive Decoding 
+
+**Title (ZH)**: 自我增强视觉对比解码 
+
+**Authors**: Eun Woo Im, Muhammad Kashif Ali, Vivek Gupta  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.13315)  
+
+**Abstract**: Large Vision-Language Models (LVLMs) have demonstrated remarkable multimodal capabilities, but they inherit the tendency to hallucinate from their underlying language models. While visual contrastive decoding has been proposed to mitigate this issue, existing methods often apply generic visual augmentations that disregard the specific context provided by the text query, limiting their effectiveness. This study introduces a novel training-free decoding strategy that addresses these limitations, featuring two key contributions. First, a self-augmentation prompting strategy that leverages the intrinsic knowledge of the model to dynamically align semantics between the query and the visual augmentation. Second, an adaptive thresholding algorithm that adaptively adjusts next token candidate size based on the output sparsity, utilizing full information from the logit distribution. Extensive experiments across four LVLMs and seven benchmarks demonstrate that the proposed decoding significantly enhances factual consistency compared to state-of-the-art decoding methods. This work highlights the importance of integrating query-dependent augmentation and entropy-aware decoding for improving effective generation of LVLMs. 
+
+**Abstract (ZH)**: Large Vision-Language Models (LVLMs)展示了显著的跨模态能力，但它们继承了底层语言模型的虚构倾向。虽然已经提出了视觉对比解码来缓解这一问题，但现有方法往往使用不考虑文本查询提供特定上下文的通用视觉增强，限制了其有效性。本研究介绍了一种新的无需训练的解码策略，以解决这些局限性，主要包括两大贡献。首先，一种自增强提示策略，利用模型的内在知识动态对齐查询和视觉增强之间的语义。其次，一种自适应阈值算法，根据输出稀疏性自适应调整候选下一个词的大小，利用logit分布中的全部信息。在四个LVLM和七个基准上的广泛实验表明，所提出的解码显著提高了事实一致性，优于当前最先进的解码方法。本工作强调了结合查询依赖增强和熵思维解码对于提高LVLM有效生成的重要性。 
+
+---
+# A Multimodal XAI Framework for Trustworthy CNNs and Bias Detection in Deep Representation Learning 
+
+**Title (ZH)**: 多模态XAI框架在深度表示学习中的可信赖CNNs和偏见检测 
+
+**Authors**: Noor Islam S. Mohammad  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.12957)  
+
+**Abstract**: Standard benchmark datasets, such as MNIST, often fail to expose latent biases and multimodal feature complexities, limiting the trustworthiness of deep neural networks in high-stakes applications. We propose a novel multimodal Explainable AI (XAI) framework that unifies attention-augmented feature fusion, Grad-CAM++-based local explanations, and a Reveal-to-Revise feedback loop for bias detection and mitigation. Evaluated on multimodal extensions of MNIST, our approach achieves 93.2% classification accuracy, 91.6% F1-score, and 78.1% explanation fidelity (IoU-XAI), outperforming unimodal and non-explainable baselines. Ablation studies demonstrate that integrating interpretability with bias-aware learning enhances robustness and human alignment. Our work bridges the gap between performance, transparency, and fairness, highlighting a practical pathway for trustworthy AI in sensitive domains. 
+
+**Abstract (ZH)**: 标准基准数据集，如MNIST，经常无法揭示潜在偏见和多模态特征的复杂性，限制了深度神经网络在高风险应用中的可信度。我们提出了一种新颖的多模态可解释AI（XAI）框架，该框架统一了注意力增强特征融合、基于Grad-CAM++的地方解释，以及一个揭示-修正反馈循环，用于偏见检测和缓解。在MNIST的多模态扩展上评估，我们的方法实现了93.2%的分类准确率、91.6%的F1分数和78.1%的解释保真度（IoU-XAI），优于单一模态和非解释性基线。消融研究显示，将可解释性与意识偏见学习集成可以提高鲁棒性和人类一致性。我们的工作在性能、透明度和公平性之间架起了桥梁，突显了敏感领域可信AI的实际路径。 
+
+---
+# Gelina: Unified Speech and Gesture Synthesis via Interleaved Token Prediction 
+
+**Title (ZH)**: Gelina: 统一的语音和手势合成通过交错词元预测 
+
+**Authors**: Téo Guichoux, Théodor Lemerle, Shivam Mehta, Jonas Beskow, Gustave Eje Henter, Laure Soulier, Catherine Pelachaud, Nicolas Obin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.12834)  
+
+**Abstract**: Human communication is multimodal, with speech and gestures tightly coupled, yet most computational methods for generating speech and gestures synthesize them sequentially, weakening synchrony and prosody alignment. We introduce Gelina, a unified framework that jointly synthesizes speech and co-speech gestures from text using interleaved token sequences in a discrete autoregressive backbone, with modality-specific decoders. Gelina supports multi-speaker and multi-style cloning and enables gesture-only synthesis from speech inputs. Subjective and objective evaluations demonstrate competitive speech quality and improved gesture generation over unimodal baselines. 
+
+**Abstract (ZH)**: 人类沟通是多模态的，语音和手势紧密耦合，然而现有的用于生成语音和手势的大多数计算方法是序列化地合成，这减弱了同步性和韵律对齐。我们引入了Gelina，这是一个统一框架，它使用交错的标记序列在离散自回归主干中联合从文本生成语音和共时手势，并配有模态特定解码器。Gelina 支持多说话人和多风格克隆，并能够从语音输入中生成手势。主观和客观评估显示，Gelina 的语音质量竞争力强，手势生成效果优于单模态基线。 
+
+---
