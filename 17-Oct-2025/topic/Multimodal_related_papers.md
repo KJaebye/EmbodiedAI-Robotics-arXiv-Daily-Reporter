@@ -1,0 +1,118 @@
+# QDepth-VLA: Quantized Depth Prediction as Auxiliary Supervision for Vision-Language-Action Models 
+
+**Title (ZH)**: QDepth-VLA：量化深度预测作为视觉-语言-动作模型的辅助监督 
+
+**Authors**: Yixuan Li, Yuhui Chen, Mingcai Zhou, Haoran Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.14836)  
+
+**Abstract**: Spatial perception and reasoning are crucial for Vision-Language-Action (VLA) models to accomplish fine-grained manipulation tasks. However, existing approaches often lack the ability to understand and reason over the essential 3D structures necessary for precise control. To address this limitation, we propose QDepth-VLA, a general framework that augments VLA models with an auxiliary depth prediction task. A dedicated depth expert is designed to predict quantized latent tokens of depth maps obtained from a VQ-VAE encoder, enabling the model to learn depth-aware representations that capture critical geometric cues. Experimental results on the simulation benchmarks and real-world tasks demonstrate that QDepth-VLA yields strong spatial reasoning and competitive performance on manipulation tasks. 
+
+**Abstract (ZH)**: 空间知觉与推理对于视觉-语言-行动（VLA）模型完成精细操作任务至关重要。然而，现有方法往往缺乏理解并推理关键3D结构的能力，以实现精确控制。为解决这一限制，我们提出QDepth-VLA，这是一种通用框架，通过辅助深度预测任务增强VLA模型。专门设计的深度专家预测由VQ-VAE编码器获得的深度图的量化潜在令牌，使模型能够学习深度感知的表示，捕捉关键的几何线索。实验结果表明，QDepth-VLA在模拟基准和真实世界任务上表现出强大的空间推理能力和竞争力的操作性能。 
+
+---
+# TRI-DEP: A Trimodal Comparative Study for Depression Detection Using Speech, Text, and EEG 
+
+**Title (ZH)**: 三模态对比研究：基于语音、文本和EEG的抑郁检测 
+
+**Authors**: Annisaa Fitri Nurfidausi, Eleonora Mancini, Paolo Torroni  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.14922)  
+
+**Abstract**: Depression is a widespread mental health disorder, yet its automatic detection remains challenging. Prior work has explored unimodal and multimodal approaches, with multimodal systems showing promise by leveraging complementary signals. However, existing studies are limited in scope, lack systematic comparisons of features, and suffer from inconsistent evaluation protocols. We address these gaps by systematically exploring feature representations and modelling strategies across EEG, together with speech and text. We evaluate handcrafted features versus pre-trained embeddings, assess the effectiveness of different neural encoders, compare unimodal, bimodal, and trimodal configurations, and analyse fusion strategies with attention to the role of EEG. Consistent subject-independent splits are applied to ensure robust, reproducible benchmarking. Our results show that (i) the combination of EEG, speech and text modalities enhances multimodal detection, (ii) pretrained embeddings outperform handcrafted features, and (iii) carefully designed trimodal models achieve state-of-the-art performance. Our work lays the groundwork for future research in multimodal depression detection. 
+
+**Abstract (ZH)**: 抑郁症是一种常见的精神健康疾病，但其自动检测仍然具有挑战性。现有的研究主要探索了一模态和多模态方法，多模态系统通过利用互补信号表现出潜力。然而，现有研究在范围上有限，缺乏对特征的系统比较，并且在评估协议上缺乏一致性。我们通过系统地探索EEG、语音和文本跨模态的特征表示和建模策略来弥补这些差距。我们评估了手工设计特征与预训练嵌入表示的效果，评估了不同的神经编码器的有效性，比较了一模态、二模态和三模态配置，并分析了关注EEG作用的融合策略。采用一致的被试独立分割确保了稳健和可重复的基准测试。我们的结果显示，(i) EEG、语音和文本模态的结合增强了多模态检测，(ii) 预训练嵌入表示优于手工设计特征，(iii) 仔细设计的三模态模型达到了现有最佳性能。我们的工作为进一步研究多模态抑郁症检测奠定了基础。 
+
+---
+# A Multimodal Approach to Heritage Preservation in the Context of Climate Change 
+
+**Title (ZH)**: 气候变化背景下多模态文化遗产保护方法 
+
+**Authors**: David Roqui, Adèle Cormier, nistor Grozavu, Ann Bourges  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.14136)  
+
+**Abstract**: Cultural heritage sites face accelerating degradation due to climate change, yet tradi- tional monitoring relies on unimodal analysis (visual inspection or environmental sen- sors alone) that fails to capture the complex interplay between environmental stres- sors and material deterioration. We propose a lightweight multimodal architecture that fuses sensor data (temperature, humidity) with visual imagery to predict degradation severity at heritage sites. Our approach adapts PerceiverIO with two key innovations: (1) simplified encoders (64D latent space) that prevent overfitting on small datasets (n=37 training samples), and (2) Adaptive Barlow Twins loss that encourages modality complementarity rather than redundancy. On data from Strasbourg Cathedral, our model achieves 76.9% accu- racy, a 43% improvement over standard multimodal architectures (VisualBERT, Trans- former) and 25% over vanilla PerceiverIO. Ablation studies reveal that sensor-only achieves 61.5% while image-only reaches 46.2%, confirming successful multimodal synergy. A systematic hyperparameter study identifies an optimal moderate correlation target ({\tau} =0.3) that balances align- ment and complementarity, achieving 69.2% accuracy compared to other {\tau} values ({\tau} =0.1/0.5/0.7: 53.8%, {\tau} =0.9: 61.5%). This work demonstrates that architectural sim- plicity combined with contrastive regularization enables effective multimodal learning in data-scarce heritage monitoring contexts, providing a foundation for AI-driven con- servation decision support systems. 
+
+**Abstract (ZH)**: 文化遗址由于气候变化加速退化，传统的单模态监测（仅视觉检查或环境传感器）未能捕捉到环境应力与材料退化之间的复杂相互作用。我们提出了一种轻量级的多模态架构，将传感器数据（温度、湿度）与视觉图像融合，以预测文化遗址的退化程度。我们的方法通过两种关键创新适应PerceiverIO：（1）简化编码器（64D潜在空间），防止在小数据集（n=37训练样本）上过拟合；（2）自适应Barlow Twins损失，鼓励模态互补而非冗余。在斯特拉斯堡大教堂的数据上，我们的模型准确率为76.9%，分别比标准多模态架构（VisualBERT、Transformer）和vanilla PerceiverIO高出43%和25%。消融研究表明，仅传感器准确率为61.5%，仅图像准确率为46.2%，证实了多模态协同的成功。系统性的超参数研究发现，最佳适度相关目标（τ=0.3）在对齐和互补之间取得平衡，准确率为69.2%，而其他τ值（τ=0.1/0.5/0.7：53.8%，τ=0.9：61.5%）的准确率较低。这项工作证明，在数据稀缺的文化遗址监测环境中，结合架构简化和对比正则化可以使多模态学习有效，为基于AI的保护决策支持系统奠定了基础。 
+
+---
+# Do Slides Help? Multi-modal Context for Automatic Transcription of Conference Talks 
+
+**Title (ZH)**: 幻灯片有帮助吗？多模态上下文下的会议演讲自动转录 
+
+**Authors**: Supriti Sinhamahapatra, Jan Niehues  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.13979)  
+
+**Abstract**: State-of-the-art (SOTA) Automatic Speech Recognition (ASR) systems primarily rely on acoustic information while disregarding additional multi-modal context. However, visual information are essential in disambiguation and adaptation. While most work focus on speaker images to handle noise conditions, this work also focuses on integrating presentation slides for the use cases of scientific presentation.
+In a first step, we create a benchmark for multi-modal presentation including an automatic analysis of transcribing domain-specific terminology. Next, we explore methods for augmenting speech models with multi-modal information. We mitigate the lack of datasets with accompanying slides by a suitable approach of data augmentation. Finally, we train a model using the augmented dataset, resulting in a relative reduction in word error rate of approximately 34%, across all words and 35%, for domain-specific terms compared to the baseline model. 
+
+**Abstract (ZH)**: 当前最先进的自动语音识别（ASR）系统主要依赖声学信息，忽视了额外的多模态上下文。然而，视觉信息在消歧和适应中是必不可少的。尽管大多数研究侧重于利用演讲者图像处理噪声条件，本研究还专注于集成演示幻灯片以适用于科学演示场景。首先，我们创建了一个多模态演示的基准，包括对领域特定术语自动转录的分析。接着，我们探索了将多模态信息集成到语音模型中的方法。通过适当的数据增强方法缓解了缺乏配有幻灯片的数据集问题。最后，我们使用增强后的数据集训练模型，结果表明，相较于基线模型，整体单词错误率降低了约34%，领域特定术语单词错误率降低了约35%。 
+
+---
+# Benchmarking Multimodal Large Language Models for Face Recognition 
+
+**Title (ZH)**: 多模态大规模语言模型在人脸识别中的基准测试 
+
+**Authors**: Hatef Otroshi Shahreza, Sébastien Marcel  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.14866)  
+
+**Abstract**: Multimodal large language models (MLLMs) have achieved remarkable performance across diverse vision-and-language tasks. However, their potential in face recognition remains underexplored. In particular, the performance of open-source MLLMs needs to be evaluated and compared with existing face recognition models on standard benchmarks with similar protocol. In this work, we present a systematic benchmark of state-of-the-art MLLMs for face recognition on several face recognition datasets, including LFW, CALFW, CPLFW, CFP, AgeDB and RFW. Experimental results reveal that while MLLMs capture rich semantic cues useful for face-related tasks, they lag behind specialized models in high-precision recognition scenarios in zero-shot applications. This benchmark provides a foundation for advancing MLLM-based face recognition, offering insights for the design of next-generation models with higher accuracy and generalization. The source code of our benchmark is publicly available in the project page. 
+
+**Abstract (ZH)**: 多模态大型语言模型（MLLMs）在多种视觉与语言任务中取得了显著性能。然而，它们在人脸识别领域的潜力尚待探索。特别是，开源MLLMs的性能需要在标准基准上与现有的人脸识别模型进行评估和比较。在此项工作中，我们系统地在多个人脸识别数据集上评估了最先进的MLLMs的性能，包括LFW、CALFW、CPLFW、CFP、AgeDB和RFW。实验结果显示，虽然MLLMs能捕捉到对人脸识别任务有用丰富的语义线索，但在零样本应用中的高精度识别场景中，它们仍落后于专门模型。该基准提供了一个推进基于MLLM的人脸识别的基础，为设计更高准确性和泛化能力的下一代模型提供了见解。我们的基准代码已在项目页面上公开。 
+
+---
+# Knowledge-based Visual Question Answer with Multimodal Processing, Retrieval and Filtering 
+
+**Title (ZH)**: 基于知识的多模态视觉问题解答与检索过滤 
+
+**Authors**: Yuyang Hong, Jiaqi Gu, Qi Yang, Lubin Fan, Yue Wu, Ying Wang, Kun Ding, Shiming Xiang, Jieping Ye  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.14605)  
+
+**Abstract**: Knowledge-based visual question answering (KB-VQA) requires visual language models (VLMs) to integrate visual understanding with external knowledge retrieval. Although retrieval-augmented generation (RAG) achieves significant advances in this task by combining knowledge-base querying, it still struggles with the quality of multimodal queries and the relevance of retrieved results. To overcome these challenges, we propose a novel three-stage method, termed Wiki-PRF, including Processing, Retrieval and Filtering stages. The processing stage dynamically invokes visual tools to extract precise multimodal information for retrieval. The retrieval stage integrates visual and text features to achieve multimodal knowledge retrieval. The filtering stage performs relevance filtering and concentration on retrieval results. To this end, we introduce a visual language model trained with answer accuracy and format consistency as reward signals via a reinforcement learning manner. This enhances the model's reasoning, tool invocation for accurate queries, and filtering of irrelevant content. Experiments on benchmark datasets (E-VQA and InfoSeek) show significant improvements~(36.0 and 42.8) in answer quality, achieving state-of-the-art performance. Code is available at this https URL 
+
+**Abstract (ZH)**: 基于知识的视觉问答（KB-VQA）要求视觉语言模型（VLMs）将视觉理解与外部知识检索结合。尽管检索增强生成（RAG）通过结合知识库查询在这一任务中取得了显著进展，但仍然在多模态查询的质量和检索结果的相关性方面存在挑战。为解决这些挑战，我们提出了一种新颖的三阶段方法，称为Wiki-PRF，包括处理、检索和筛选阶段。处理阶段动态调用视觉工具以提取用于检索的精确多模态信息。检索阶段结合视觉和文本特征以实现多模态知识检索。筛选阶段执行相关性筛选并集中关注检索结果。为此，我们通过强化学习的方式引入了一种视觉语言模型，该模型以答案准确性与格式一致性作为奖励信号进行训练。这提升了模型的推理能力、准确查询的工具调用以及无关内容的筛选。在基准数据集（E-VQA和InfoSeek）上的实验显示，答案质量有了显著提高（分别提高了36.0和42.8个百分点），达到了最佳性能。代码已发布于此网址。 
+
+---
+# A Density-Informed Multimodal Artificial Intelligence Framework for Improving Breast Cancer Detection Across All Breast Densities 
+
+**Title (ZH)**: 一种基于密度的信息多模态人工智能框架，用于提高乳腺癌检测效果，涵盖所有乳腺密度类型 
+
+**Authors**: Siva Teja Kakileti, Bharath Govindaraju, Sudhakar Sampangi, Geetha Manjunath  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.14340)  
+
+**Abstract**: Mammography, the current standard for breast cancer screening, has reduced sensitivity in women with dense breast tissue, contributing to missed or delayed diagnoses. Thermalytix, an AI-based thermal imaging modality, captures functional vascular and metabolic cues that may complement mammographic structural data. This study investigates whether a breast density-informed multi-modal AI framework can improve cancer detection by dynamically selecting the appropriate imaging modality based on breast tissue composition. A total of 324 women underwent both mammography and thermal imaging. Mammography images were analyzed using a multi-view deep learning model, while Thermalytix assessed thermal images through vascular and thermal radiomics. The proposed framework utilized Mammography AI for fatty breasts and Thermalytix AI for dense breasts, optimizing predictions based on tissue type. This multi-modal AI framework achieved a sensitivity of 94.55% (95% CI: 88.54-100) and specificity of 79.93% (95% CI: 75.14-84.71), outperforming standalone mammography AI (sensitivity 81.82%, specificity 86.25%) and Thermalytix AI (sensitivity 92.73%, specificity 75.46%). Importantly, the sensitivity of Mammography dropped significantly in dense breasts (67.86%) versus fatty breasts (96.30%), whereas Thermalytix AI maintained high and consistent sensitivity in both (92.59% and 92.86%, respectively). This demonstrates that a density-informed multi-modal AI framework can overcome key limitations of unimodal screening and deliver high performance across diverse breast compositions. The proposed framework is interpretable, low-cost, and easily deployable, offering a practical path to improving breast cancer screening outcomes in both high-resource and resource-limited settings. 
+
+**Abstract (ZH)**: 基于乳腺密度的多模态AI框架在乳腺癌检测中的应用研究 
+
+---
+# MERLIN: A Testbed for Multilingual Multimodal Entity Recognition and Linking 
+
+**Title (ZH)**: MERLIN：多模态多语言实体识别与链接的实验平台 
+
+**Authors**: Sathyanarayanan Ramamoorthy, Vishwa Shah, Simran Khanuja, Zaid Sheikh, Shan Jie, Ann Chia, Shearman Chua, Graham Neubig  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.14307)  
+
+**Abstract**: This paper introduces MERLIN, a novel testbed system for the task of Multilingual Multimodal Entity Linking. The created dataset includes BBC news article titles, paired with corresponding images, in five languages: Hindi, Japanese, Indonesian, Vietnamese, and Tamil, featuring over 7,000 named entity mentions linked to 2,500 unique Wikidata entities. We also include several benchmarks using multilingual and multimodal entity linking methods exploring different language models like LLaMa-2 and Aya-23. Our findings indicate that incorporating visual data improves the accuracy of entity linking, especially for entities where the textual context is ambiguous or insufficient, and particularly for models that do not have strong multilingual abilities. For the work, the dataset, methods are available here at this https URL 
+
+**Abstract (ZH)**: 本文介绍了MERLIN，一种用于多语言多模态实体链接的新颖试验系统。该创建的数据集包括五种语言（ Hindi、Japanese、Indonesian、Vietnamese 和 Tamil）的BBC新闻文章标题及其对应的图片，涉及超过7,000个命名实体提及，链接到2,500个唯一的Wikidata实体。我们还提供了使用多语言和多模态实体链接方法进行实验的基准，涉及像LLaMa-2和Aya-23这样的不同语言模型。我们的研究结果表明，结合视觉数据可以提高实体链接的准确性，特别是在文本上下文模糊或不足的情况下，尤其对于不具备强大多语言能力的模型。相关数据集和方法可从以下链接获取：https://this-url.com 
+
+---
+# Do Joint Language-Audio Embeddings Encode Perceptual Timbre Semantics? 
+
+**Title (ZH)**: 联合语言-音频嵌入是否编码感知音色语义？ 
+
+**Authors**: Qixin Deng, Bryan Pardo, Thrasyvoulos N Pappas  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.14249)  
+
+**Abstract**: Understanding and modeling the relationship between language and sound is critical for applications such as music information retrieval,text-guided music generation, and audio captioning. Central to these tasks is the use of joint language-audio embedding spaces, which map textual descriptions and auditory content into a shared embedding space. While multimodal embedding models such as MS-CLAP, LAION-CLAP, and MuQ-MuLan have shown strong performance in aligning language and audio, their correspondence to human perception of timbre, a multifaceted attribute encompassing qualities such as brightness, roughness, and warmth, remains underexplored. In this paper, we evaluate the above three joint language-audio embedding models on their ability to capture perceptual dimensions of timbre. Our findings show that LAION-CLAP consistently provides the most reliable alignment with human-perceived timbre semantics across both instrumental sounds and audio effects. 
+
+**Abstract (ZH)**: 理解语言与声音之间的关系对于音乐信息检索、基于文本的音乐生成和音频描述等应用至关重要。这些任务的核心在于使用联合语言-音频嵌入空间，将文本描述和听觉内容映射到共享嵌入空间。虽然MS-CLAP、LAION-CLAP和MuQ-MuLan等多模态嵌入模型在语言和音频对齐方面表现出色，但它们与人类感知的音色这一多维度属性之间的对应关系，包括亮度、粗糙度和温暖度等品质，仍待进一步探讨。在本文中，我们评估了上述三种联合语言-音频嵌入模型在捕捉音色感知维度方面的能力。我们的研究发现，LAION-CLAP在乐器声音和音频效果两种情况下都提供了最可靠的人类感知音色语义对齐。 
+
+---
