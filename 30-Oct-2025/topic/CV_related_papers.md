@@ -1,0 +1,260 @@
+# Hybrid Vision Servoing with Depp Alignment and GRU-Based Occlusion Recovery 
+
+**Title (ZH)**: 基于深度对齐和GRU基遮挡恢复的混合视觉伺服技术 
+
+**Authors**: Jee Won Lee, Hansol Lim, Sooyeun Yang, Jongseong Brad Choi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.25233)  
+
+**Abstract**: Vision-based control systems, such as image-based visual servoing (IBVS), have been extensively explored for precise robot manipulation. A persistent challenge, however, is maintaining robust target tracking under partial or full occlusions. Classical methods like Lucas-Kanade (LK) offer lightweight tracking but are fragile to occlusion and drift, while deep learning-based approaches often require continuous visibility and intensive computation. To address these gaps, we propose a hybrid visual tracking framework that bridges advanced perception with real-time servo control. First, a fast global template matcher constrains the pose search region; next, a deep-feature Lucas-Kanade module operating on early VGG layers refines alignment to sub-pixel accuracy (<2px); then, a lightweight residual regressor corrects local misalignments caused by texture degradation or partial occlusion. When visual confidence falls below a threshold, a GRU-based predictor seamlessly extrapolates pose updates from recent motion history. Crucially, the pipeline's final outputs-translation, rotation, and scale deltas-are packaged as direct control signals for 30Hz image-based servo loops. Evaluated on handheld video sequences with up to 90% occlusion, our system sustains under 2px tracking error, demonstrating the robustness and low-latency precision essential for reliable real-world robot vision applications. 
+
+**Abstract (ZH)**: 基于视觉的控制系统，如图像导向的视觉伺服（IBVS），已在精确机器人操作中得到广泛研究。然而，持续的挑战是在部分或完全遮挡下保持稳健的目标跟踪。传统的鲁棒性较低的方法如Lucas-Kanade（LK）提供轻量级的跟踪，但对遮挡和漂移敏感，而基于深度学习的方法通常需要持续的可见性和大量的计算。为了解决这些差距，我们提出了一种结合高级感知与实时伺服控制的混合视觉跟踪框架。首先，一个快速的全局模板匹配器限制了姿态搜索区域；其次，一个作用于早期VGG层的深度特征Lucas-Kanade模块对齐到亚像素精度（<2px）；然后，一个轻量级的残差回归器纠正由纹理退化或部分遮挡引起的局部对齐误差。当视觉置信度低于阈值时，一个基于GRU的预测器无缝地从最近的运动历史中外推姿态更新。最关键的是，流水线的最终输出——平移、旋转和缩放增量，被打包成30Hz图像伺服环中的直接控制信号。在具有高达90%遮挡的手持视频序列上评估，我们的系统维持了低于2px的跟踪误差，展示了在可靠的实际机器人视觉应用中所需的高度鲁棒性和低延迟精度。 
+
+---
+# SPADE: Sparsity Adaptive Depth Estimator for Zero-Shot, Real-Time, Monocular Depth Estimation in Underwater Environments 
+
+**Title (ZH)**: SPADE: 适应稀疏性的深度估计器，适用于海洋环境中的零样本、实时单目深度估计 
+
+**Authors**: Hongjie Zhang, Gideon Billings, Stefan B. Williams  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.25463)  
+
+**Abstract**: Underwater infrastructure requires frequent inspection and maintenance due to harsh marine conditions. Current reliance on human divers or remotely operated vehicles is limited by perceptual and operational challenges, especially around complex structures or in turbid water. Enhancing the spatial awareness of underwater vehicles is key to reducing piloting risks and enabling greater autonomy. To address these challenges, we present SPADE: SParsity Adaptive Depth Estimator, a monocular depth estimation pipeline that combines pre-trained relative depth estimator with sparse depth priors to produce dense, metric scale depth maps. Our two-stage approach first scales the relative depth map with the sparse depth points, then refines the final metric prediction with our proposed Cascade Conv-Deformable Transformer blocks. Our approach achieves improved accuracy and generalisation over state-of-the-art baselines and runs efficiently at over 15 FPS on embedded hardware, promising to support practical underwater inspection and intervention. This work has been submitted to IEEE Journal of Oceanic Engineering Special Issue of AUV 2026. 
+
+**Abstract (ZH)**: 水下基础设施由于恶劣的海洋条件需要经常进行检查和维护。目前依赖于潜水员或遥控水下机器人受限于感知和操作挑战，尤其是在复杂结构周围或浑浊水域中。增强水下车辆的空间意识是减少操作风险和实现更高自主性的关键。为解决这些挑战，我们提出SPADE：稀疏自适应深度估计器，这是一种结合预训练的相对深度估计器和稀疏深度先验的单目深度估计流水线，生成稠密的、以米为尺度的深度图。我们的两阶段方法首先使用稀疏深度点缩放相对深度图，然后使用我们提出的级联Conv-变形变压器块 refine 最终的米级预测。我们的方法在嵌入式硬件上以每秒超过15帧的速度运行，提高了准确性和泛化能力，有望支持实用的水下检查和干预。该工作已提交给IEEE海洋工程期刊2026年自主水下机器人特刊。 
+
+---
+# Seeing Clearly and Deeply: An RGBD Imaging Approach with a Bio-inspired Monocentric Design 
+
+**Title (ZH)**: 清晰而深刻地 Seeing 一种生物启发的一元中心设计的 RGBD 成像方法 
+
+**Authors**: Zongxi Yu, Xiaolong Qian, Shaohua Gao, Qi Jiang, Yao Gao, Kailun Yang, Kaiwei Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.25314)  
+
+**Abstract**: Achieving high-fidelity, compact RGBD imaging presents a dual challenge: conventional compact optics struggle with RGB sharpness across the entire depth-of-field, while software-only Monocular Depth Estimation (MDE) is an ill-posed problem reliant on unreliable semantic priors. While deep optics with elements like DOEs can encode depth, they introduce trade-offs in fabrication complexity and chromatic aberrations, compromising simplicity. To address this, we first introduce a novel bio-inspired all-spherical monocentric lens, around which we build the Bionic Monocentric Imaging (BMI) framework, a holistic co-design. This optical design naturally encodes depth into its depth-varying Point Spread Functions (PSFs) without requiring complex diffractive or freeform elements. We establish a rigorous physically-based forward model to generate a synthetic dataset by precisely simulating the optical degradation process. This simulation pipeline is co-designed with a dual-head, multi-scale reconstruction network that employs a shared encoder to jointly recover a high-fidelity All-in-Focus (AiF) image and a precise depth map from a single coded capture. Extensive experiments validate the state-of-the-art performance of the proposed framework. In depth estimation, the method attains an Abs Rel of 0.026 and an RMSE of 0.130, markedly outperforming leading software-only approaches and other deep optics systems. For image restoration, the system achieves an SSIM of 0.960 and a perceptual LPIPS score of 0.082, thereby confirming a superior balance between image fidelity and depth accuracy. This study illustrates that the integration of bio-inspired, fully spherical optics with a joint reconstruction algorithm constitutes an effective strategy for addressing the intrinsic challenges in high-performance compact RGBD imaging. Source code will be publicly available at this https URL. 
+
+**Abstract (ZH)**: 实现高保真度、紧凑型RGBD成像面临双重挑战：传统紧凑型光学元件在整景深范围内难以实现RGB清晰度，而仅依靠软件的单目深度估计方法则依赖不可靠的语义先验，是一个病态问题。虽然有使用DOE等元件的深度光学技术可以编码深度信息，但它们引入了制造复杂性和色差的权衡，牺牲了简单性。为解决这一问题，我们首先提出了一种新颖的生物启发全球心单中心透镜，并构建了仿生单中心成像（BMI）框架，这是一种整体协同设计。这种光学设计天然地通过其随深度变化的点扩展函数（PSFs）编码深度信息，无需复杂衍射或自由形式元件。我们建立了一个严格的基于物理的前向模型，通过精确模拟光学退化过程来生成合成数据集。该模拟管道与一个采用共享编码器的双头多尺度重建网络协同设计，可以共同从单次编码捕获中恢复高保真全焦图像和精确的深度图。大量的实验验证了所提出框架的先进性能。在深度估计中，该方法取得了Abs Rel为0.026和RMSE为0.130的结果，明显优于领先的纯软件方法和其他深度光学系统。对于图像恢复，系统获得了SSIM为0.960和感知LPIPS分数为0.082的结果，从而证实了图像保真度和深度准确性之间的优越平衡。这项研究展示了将生物启发的全球心光学与联合重建算法相结合是解决高性能紧凑型RGBD成像固有挑战的有效策略。源代码将在此网址公开。 
+
+---
+# Point-level Uncertainty Evaluation of Mobile Laser Scanning Point Clouds 
+
+**Title (ZH)**: 移动激光扫描点云的点级不确定性评估 
+
+**Authors**: Ziyang Xu, Olaf Wysocki, Christoph Holst  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.24773)  
+
+**Abstract**: Reliable quantification of uncertainty in Mobile Laser Scanning (MLS) point clouds is essential for ensuring the accuracy and credibility of downstream applications such as 3D mapping, modeling, and change analysis. Traditional backward uncertainty modeling heavily rely on high-precision reference data, which are often costly or infeasible to obtain at large scales. To address this issue, this study proposes a machine learning-based framework for point-level uncertainty evaluation that learns the relationship between local geometric features and point-level errors. The framework is implemented using two ensemble learning models, Random Forest (RF) and XGBoost, which are trained and validated on a spatially partitioned real-world dataset to avoid data leakage. Experimental results demonstrate that both models can effectively capture the nonlinear relationships between geometric characteristics and uncertainty, achieving mean ROC-AUC values above 0.87. The analysis further reveals that geometric features describing elevation variation, point density, and local structural complexity play a dominant role in predicting uncertainty. The proposed framework offers a data-driven perspective of uncertainty evaluation, providing a scalable and adaptable foundation for future quality control and error analysis of large-scale point clouds. 
+
+**Abstract (ZH)**: 移动激光扫描（MLS）点云中不确定性可靠的量化对于确保其在三维制图、建模和变化分析等下游应用中的准确性和可信度至关重要。传统基于后向模型的不确定性量化依赖于高精度参考数据，但在大规模应用中往往成本高昂或不可行。为解决这一问题，本研究提出了一种基于机器学习的点级不确定性评估框架，该框架通过学习局部几何特征与点级误差之间的关系来进行不确定性评估。该框架使用随机森林（RF）和XGBoost两种集成学习模型实现，并通过空间分区的真实数据集进行训练和验证，以避免数据泄露。实验结果表明，两种模型都能有效捕捉几何特征与不确定性之间的非线性关系，均达到平均ROC-AUC值高于0.87。进一步的分析显示，描述高程变化、点密度和局部结构复杂性的几何特征在预测不确定性方面发挥着主导作用。所提出的框架提供了基于数据的不确定性评估视角，为大规模点云的质量控制和误差分析提供了可扩展和适应性强的基础。 
+
+---
+# DrivingScene: A Multi-Task Online Feed-Forward 3D Gaussian Splatting Method for Dynamic Driving Scenes 
+
+**Title (ZH)**: DrivingScene: 一种用于动态驾驶场景的多任务在线前馈3D高斯点方法 
+
+**Authors**: Qirui Hou, Wenzhang Sun, Chang Zeng, Chunfeng Wang, Hao Li, Jianxun Cui  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.24734)  
+
+**Abstract**: Real-time, high-fidelity reconstruction of dynamic driving scenes is challenged by complex dynamics and sparse views, with prior methods struggling to balance quality and efficiency. We propose DrivingScene, an online, feed-forward framework that reconstructs 4D dynamic scenes from only two consecutive surround-view images. Our key innovation is a lightweight residual flow network that predicts the non-rigid motion of dynamic objects per camera on top of a learned static scene prior, explicitly modeling dynamics via scene flow. We also introduce a coarse-to-fine training paradigm that circumvents the instabilities common to end-to-end approaches. Experiments on nuScenes dataset show our image-only method simultaneously generates high-quality depth, scene flow, and 3D Gaussian point clouds online, significantly outperforming state-of-the-art methods in both dynamic reconstruction and novel view synthesis. 
+
+**Abstract (ZH)**: 实时高保真动态驾驶场景重建受到复杂动力学和稀疏视图的挑战，先前方法难以在质量和效率之间取得平衡。我们提出DrivingScene，这是一种在线前馈框架，仅从连续的两个全景图像中重建4D动态场景。我们的核心创新是一种轻量级残差流网络，该网络在学到的静止场景先验之上预测每个摄像头的非刚性动态物体运动，并通过场景流显式建模动态。我们还引入了一种粗到细的训练范式，避免了端到端方法中常见的不稳定性。在nuScenes数据集上的实验显示，我们的图像-only方法能够在线生成高质量的深度、场景流和3D高斯点云，显著优于现有最佳方法在动态重建和新颖视图合成方面的效果。 
+
+---
+# ALDEN: Reinforcement Learning for Active Navigation and Evidence Gathering in Long Documents 
+
+**Title (ZH)**: ALDEN：在长文档中主动导航和证据收集的强化学习方法 
+
+**Authors**: Tianyu Yang, Terry Ruas, Yijun Tian, Jan Philip Wahle, Daniel Kurzawe, Bela Gipp  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.25668)  
+
+**Abstract**: Vision-language models (VLMs) excel at interpreting text-rich images but struggle with long, visually complex documents that demand analysis and integration of information spread across multiple pages. Existing approaches typically rely on fixed reasoning templates or rigid pipelines, which force VLMs into a passive role and hinder both efficiency and generalization. We present Active Long-DocumEnt Navigation (ALDEN), a multi-turn reinforcement learning framework that fine-tunes VLMs as interactive agents capable of actively navigating long, visually rich documents. ALDEN introduces a novel fetch action that directly accesses the page by index, complementing the classic search action and better exploiting document structure. For dense process supervision and efficient training, we propose a rule-based cross-level reward that provides both turn- and token-level signals. To address the empirically observed training instability caused by numerous visual tokens from long documents, we further propose a visual-semantic anchoring mechanism that applies a dual-path KL-divergence constraint to stabilize visual and textual representations separately during training. Trained on a corpus constructed from three open-source datasets, ALDEN achieves state-of-the-art performance on five long-document benchmarks. Overall, ALDEN marks a step beyond passive document reading toward agents that autonomously navigate and reason across long, visually rich documents, offering a robust path to more accurate and efficient long-document understanding. 
+
+**Abstract (ZH)**: 活跃长文档导航（ALDEN）：面向长时间丰富文档的强化学习框架 
+
+---
+# Physics-Guided Conditional Diffusion Networks for Microwave Image Reconstruction 
+
+**Title (ZH)**: 基于物理引导的条件扩散网络在微波图像重构中的应用 
+
+**Authors**: Shirin Chehelgami, Joe LoVetri, Vahab Khoshdel  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.25729)  
+
+**Abstract**: A conditional latent-diffusion based framework for solving the electromagnetic inverse scattering problem associated with microwave imaging is introduced. This generative machine-learning model explicitly mirrors the non-uniqueness of the ill-posed inverse problem. Unlike existing inverse solvers utilizing deterministic machine learning techniques that produce a single reconstruction, the proposed latent-diffusion model generates multiple plausible permittivity maps conditioned on measured scattered-field data, thereby generating several potential instances in the range-space of the non-unique inverse mapping. A forward electromagnetic solver is integrated into the reconstruction pipeline as a physics-based evaluation mechanism. The space of candidate reconstructions form a distribution of possibilities consistent with the conditioning data and the member of this space yielding the lowest scattered-field data discrepancy between the predicted and measured scattered fields is reported as the final solution. Synthetic and experimental labeled datasets are used for training and evaluation of the model. An innovative labeled synthetic dataset is created that exemplifies a varied set of scattering features. Training of the model using this new dataset produces high quality permittivity reconstructions achieving improved generalization with excellent fidelity to shape recognition. The results highlight the potential of hybrid generative physics frameworks as a promising direction for robust, data-driven microwave imaging. 
+
+**Abstract (ZH)**: 基于条件潜扩散的电磁逆散射问题框架：用于微波成像的生成机器学习模型 
+
+---
+# Don't Blind Your VLA: Aligning Visual Representations for OOD Generalization 
+
+**Title (ZH)**: 不要盲目调整VLA：对异常分布外泛化的视觉表征对齐 
+
+**Authors**: Nikita Kachaev, Mikhail Kolosov, Daniil Zelezetsky, Alexey K. Kovalev, Aleksandr I. Panov  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.25616)  
+
+**Abstract**: The growing success of Vision-Language-Action (VLA) models stems from the promise that pretrained Vision-Language Models (VLMs) can endow agents with transferable world knowledge and vision-language (VL) grounding, laying a foundation for action models with broader generalization. Yet when these VLMs are adapted to the action modality, it remains unclear to what extent their original VL representations and knowledge are preserved. In this work, we conduct a systematic study of representation retention during VLA fine-tuning, showing that naive action fine-tuning leads to degradation of visual representations. To characterize and measure these effects, we probe VLA's hidden representations and analyze attention maps, further, we design a set of targeted tasks and methods that contrast VLA models with their counterpart VLMs, isolating changes in VL capabilities induced by action fine-tuning. We further evaluate a range of strategies for aligning visual representations and introduce a simple yet effective method that mitigates degradation and yields improved generalization to out-of-distribution (OOD) scenarios. Taken together, our analysis clarifies the trade-off between action fine-tuning and the degradation of VL representations and highlights practical approaches to recover inherited VL capabilities. Code is publicly available: this https URL 
+
+**Abstract (ZH)**: 视觉-语言-动作（VLA）模型不断增长的成功源于预训练视觉-语言模型（VLMs）能够赋予代理可转移的世界知识和视觉-语言（VL）语义关联，为具有更广泛泛化的动作模型奠定基础。然而，当将这些VLMs适应到动作模态时，仍不清楚它们的原始VL表示和知识在多大程度上得以保留。在本文中，我们系统研究了VLA微调过程中表示保留问题，发现直观的动作微调会导致视觉表示性能下降。为了表征和量化这些影响，我们探查了VLA的隐藏表示，分析了注意力图，并设计了一组针对任务和方法，将VLA模型与其对应的VLMs进行对比，以隔离由动作微调引起的VL能力变化。我们进一步评估了多种视觉表示对齐策略，并引入了一种简单而有效的缓解方法，以减轻性能下降并提高在分布外（OOD）场景下的泛化能力。我们的分析澄清了动作微调与VL表示退化之间的权衡，并强调了恢复继承的VL能力的实际方法。代码已公开：this https URL 
+
+---
+# BOLT-GAN: Bayes-Optimal Loss for Stable GAN Training 
+
+**Title (ZH)**: BOLT-GAN：贝叶斯最优损失函数下的GAN稳定训练 
+
+**Authors**: Mohammadreza Tavasoli Naeini, Ali Bereyhi, Morteza Noshad, Ben Liang, Alfred O. Hero III  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.25609)  
+
+**Abstract**: We introduce BOLT-GAN, a simple yet effective modification of the WGAN framework inspired by the Bayes Optimal Learning Threshold (BOLT). We show that with a Lipschitz continuous discriminator, BOLT-GAN implicitly minimizes a different metric distance than the Earth Mover (Wasserstein) distance and achieves better training stability. Empirical evaluations on four standard image generation benchmarks (CIFAR-10, CelebA-64, LSUN Bedroom-64, and LSUN Church-64) show that BOLT-GAN consistently outperforms WGAN, achieving 10-60% lower Frechet Inception Distance (FID). Our results suggest that BOLT is a broadly applicable principle for enhancing GAN training. 
+
+**Abstract (ZH)**: BOLT-GAN：受Bayes Optimal Learning Threshold启发的WGAN框架简单有效改进方法 
+
+---
+# RegionE: Adaptive Region-Aware Generation for Efficient Image Editing 
+
+**Title (ZH)**: RegionE：自适应区域意识生成以实现高效的图像编辑 
+
+**Authors**: Pengtao Chen, Xianfang Zeng, Maosen Zhao, Mingzhu Shen, Peng Ye, Bangyin Xiang, Zhibo Wang, Wei Cheng, Gang Yu, Tao Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.25590)  
+
+**Abstract**: Recently, instruction-based image editing (IIE) has received widespread attention. In practice, IIE often modifies only specific regions of an image, while the remaining areas largely remain unchanged. Although these two types of regions differ significantly in generation difficulty and computational redundancy, existing IIE models do not account for this distinction, instead applying a uniform generation process across the entire image. This motivates us to propose RegionE, an adaptive, region-aware generation framework that accelerates IIE tasks without additional training. Specifically, the RegionE framework consists of three main components: 1) Adaptive Region Partition. We observed that the trajectory of unedited regions is straight, allowing for multi-step denoised predictions to be inferred in a single step. Therefore, in the early denoising stages, we partition the image into edited and unedited regions based on the difference between the final estimated result and the reference image. 2) Region-Aware Generation. After distinguishing the regions, we replace multi-step denoising with one-step prediction for unedited areas. For edited regions, the trajectory is curved, requiring local iterative denoising. To improve the efficiency and quality of local iterative generation, we propose the Region-Instruction KV Cache, which reduces computational cost while incorporating global information. 3) Adaptive Velocity Decay Cache. Observing that adjacent timesteps in edited regions exhibit strong velocity similarity, we further propose an adaptive velocity decay cache to accelerate the local denoising process. We applied RegionE to state-of-the-art IIE base models, including Step1X-Edit, FLUX.1 Kontext, and Qwen-Image-Edit. RegionE achieved acceleration factors of 2.57, 2.41, and 2.06. Evaluations by GPT-4o confirmed that semantic and perceptual fidelity were well preserved. 
+
+**Abstract (ZH)**: 基于指令的图像编辑中适应性区域生成框架：RegionE 
+
+---
+# Comparative Study of UNet-based Architectures for Liver Tumor Segmentation in Multi-Phase Contrast-Enhanced Computed Tomography 
+
+**Title (ZH)**: 基于UNet架构的多期相对比增强计算机断层扫描肝脏肿瘤分割比较研究 
+
+**Authors**: Doan-Van-Anh Ly, Thi-Thu-Hien Pham, Thanh-Hai Le  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.25522)  
+
+**Abstract**: Segmentation of liver structures in multi-phase contrast-enhanced computed tomography (CECT) plays a crucial role in computer-aided diagnosis and treatment planning for liver diseases, including tumor detection. In this study, we investigate the performance of UNet-based architectures for liver tumor segmentation, starting from the original UNet and extending to UNet3+ with various backbone networks. We evaluate ResNet, Transformer-based, and State-space (Mamba) backbones, all initialized with pretrained weights. Surprisingly, despite the advances in modern architecture, ResNet-based models consistently outperform Transformer- and Mamba-based alternatives across multiple evaluation metrics. To further improve segmentation quality, we introduce attention mechanisms into the backbone and observe that incorporating the Convolutional Block Attention Module (CBAM) yields the best performance. ResNetUNet3+ with CBAM module not only produced the best overlap metrics with a Dice score of 0.755 and IoU of 0.662, but also achieved the most precise boundary delineation, evidenced by the lowest HD95 distance of 77.911. The model's superiority was further cemented by its leading overall accuracy of 0.925 and specificity of 0.926, showcasing its robust capability in accurately identifying both lesion and healthy tissue. To further enhance interpretability, Grad-CAM visualizations were employed to highlight the region's most influential predictions, providing insights into its decision-making process. These findings demonstrate that classical ResNet architecture, when combined with modern attention modules, remain highly competitive for medical image segmentation tasks, offering a promising direction for liver tumor detection in clinical practice. 
+
+**Abstract (ZH)**: 多期相对比增强计算机断层扫描（CECT）肝脏结构分割在肝病计算机辅助诊断及治疗规划中的作用至关重要，包括肿瘤检测。本研究探讨了基于UNet的架构在肝脏肿瘤分割中的性能，从原始UNet扩展到UNet3+，并使用各种骨干网络。我们评估了ResNet、基于Transformer和State-space（Mamba）的骨干网络，所有模型均使用预训练权重初始化。尽管现代架构取得了进展，但基于ResNet的模型在多个评估指标上始终优于基于Transformer和Mamba的替代模型。为进一步提高分割质量，我们在骨干中引入了注意力机制，并观察到采用Convolutional Block Attention Module (CBAM) 的模型性能最佳。ResNetUNet3+结合CBAM模块不仅产生了最佳的重叠度指标，Dice得分为0.755，IoU为0.662，还实现了最精确的边界勾勒，HD95距离为77.911。该模型的整体准确率和特异性分别为0.925和0.926，展示了其在准确识别病灶和健康组织方面的强大能力。为进一步增强可解释性，我们使用Grad-CAM可视化方法突出显示了最具影响力的预测区域，提供了其决策过程的见解。这些发现表明，结合现代注意力模块的古典ResNet架构在医学图像分割任务中仍然极具竞争力，为临床实践中肝肿瘤检测提供了有前途的方向。 
+
+---
+# Improving Temporal Consistency and Fidelity at Inference-time in Perceptual Video Restoration by Zero-shot Image-based Diffusion Models 
+
+**Title (ZH)**: 零样本图像驱动扩散模型在感知视频恢复中提高推理时的时空一致性与保真度 
+
+**Authors**: Nasrin Rahimi, A. Murat Tekalp  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.25420)  
+
+**Abstract**: Diffusion models have emerged as powerful priors for single-image restoration, but their application to zero-shot video restoration suffers from temporal inconsistencies due to the stochastic nature of sampling and complexity of incorporating explicit temporal modeling. In this work, we address the challenge of improving temporal coherence in video restoration using zero-shot image-based diffusion models without retraining or modifying their architecture. We propose two complementary inference-time strategies: (1) Perceptual Straightening Guidance (PSG) based on the neuroscience-inspired perceptual straightening hypothesis, which steers the diffusion denoising process towards smoother temporal evolution by incorporating a curvature penalty in a perceptual space to improve temporal perceptual scores, such as Fréchet Video Distance (FVD) and perceptual straightness; and (2) Multi-Path Ensemble Sampling (MPES), which aims at reducing stochastic variation by ensembling multiple diffusion trajectories to improve fidelity (distortion) scores, such as PSNR and SSIM, without sacrificing sharpness. Together, these training-free techniques provide a practical path toward temporally stable high-fidelity perceptual video restoration using large pretrained diffusion models. We performed extensive experiments over multiple datasets and degradation types, systematically evaluating each strategy to understand their strengths and limitations. Our results show that while PSG enhances temporal naturalness, particularly in case of temporal blur, MPES consistently improves fidelity and spatio-temporal perception--distortion trade-off across all tasks. 
+
+**Abstract (ZH)**: 基于零样本单图像扩散模型的视频恢复中提高时间一致性的方法 
+
+---
+# Learning Disentangled Speech- and Expression-Driven Blendshapes for 3D Talking Face Animation 
+
+**Title (ZH)**: 学习解耦的语音驱动和表情驱动混合形状以实现3D说话人脸动画 
+
+**Authors**: Yuxiang Mao, Zhijie Zhang, Zhiheng Zhang, Jiawei Liu, Chen Zeng, Shihong Xia  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.25234)  
+
+**Abstract**: Expressions are fundamental to conveying human emotions. With the rapid advancement of AI-generated content (AIGC), realistic and expressive 3D facial animation has become increasingly crucial. Despite recent progress in speech-driven lip-sync for talking-face animation, generating emotionally expressive talking faces remains underexplored. A major obstacle is the scarcity of real emotional 3D talking-face datasets due to the high cost of data capture. To address this, we model facial animation driven by both speech and emotion as a linear additive problem. Leveraging a 3D talking-face dataset with neutral expressions (VOCAset) and a dataset of 3D expression sequences (Florence4D), we jointly learn a set of blendshapes driven by speech and emotion. We introduce a sparsity constraint loss to encourage disentanglement between the two types of blendshapes while allowing the model to capture inherent secondary cross-domain deformations present in the training data. The learned blendshapes can be further mapped to the expression and jaw pose parameters of the FLAME model, enabling the animation of 3D Gaussian avatars. Qualitative and quantitative experiments demonstrate that our method naturally generates talking faces with specified expressions while maintaining accurate lip synchronization. Perceptual studies further show that our approach achieves superior emotional expressivity compared to existing methods, without compromising lip-sync quality. 
+
+**Abstract (ZH)**: 基于语音和情绪的3D面部动画表达建模 
+
+---
+# Efficient License Plate Recognition via Pseudo-Labeled Supervision with Grounding DINO and YOLOv8 
+
+**Title (ZH)**: 通过Grounding DINO和YOLOv8的伪标签监督实现高效的车牌识别 
+
+**Authors**: Zahra Ebrahimi Vargoorani, Amir Mohammad Ghoreyshi, Ching Yee Suen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.25032)  
+
+**Abstract**: Developing a highly accurate automatic license plate recognition system (ALPR) is challenging due to environmental factors such as lighting, rain, and dust. Additional difficulties include high vehicle speeds, varying camera angles, and low-quality or low-resolution images. ALPR is vital in traffic control, parking, vehicle tracking, toll collection, and law enforcement applications. This paper proposes a deep learning strategy using YOLOv8 for license plate detection and recognition tasks. This method seeks to enhance the performance of the model using datasets from Ontario, Quebec, California, and New York State. It achieved an impressive recall rate of 94% on the dataset from the Center for Pattern Recognition and Machine Intelligence (CENPARMI) and 91% on the UFPR-ALPR dataset. In addition, our method follows a semi-supervised learning framework, combining a small set of manually labeled data with pseudo-labels generated by Grounding DINO to train our detection model. Grounding DINO, a powerful vision-language model, automatically annotates many images with bounding boxes for license plates, thereby minimizing the reliance on labor-intensive manual labeling. By integrating human-verified and model-generated annotations, we can scale our dataset efficiently while maintaining label quality, which significantly enhances the training process and overall model performance. Furthermore, it reports character error rates for both datasets, providing additional insight into system performance. 
+
+**Abstract (ZH)**: 开发一种高度准确的自动车牌识别系统（ALPR）面临挑战，这主要是由于光照、雨、灰尘等环境因素的影响。另外，高速行驶的车辆、不同的摄像头角度以及低质量或低分辨率的图像也会增加难度。ALPR在交通控制、停车场管理、车辆跟踪、收费和执法等应用中至关重要。本文提出了一种使用YOLOv8的深度学习策略，用于车牌检测和识别任务。该方法使用来自安大略省、魁北克省、加利福尼亚州和纽约州的数据集，以提高模型性能。在中心模式识别与机器智能中心（CENPARMI）的数据集上，该方法实现了94%的召回率，在UFPR-ALPR数据集上实现了91%的召回率。此外，该方法采用半监督学习框架，结合少量的手动标注数据和由Grounding DINO生成的伪标注来训练检测模型。Grounding DINO是一个强大的视觉语言模型，能够自动为大量图像标注车牌的边界框，从而减少对劳动密集型手动标注的依赖。通过结合人工验证和模型生成的标注，可以在保持高质量标签的同时有效地扩展数据集规模，从而显著提高训练过程和整体模型性能。此外，该方法还报告了两个数据集的字符错误率，提供了系统性能的额外见解。 
+
+---
+# Understanding Multi-View Transformers 
+
+**Title (ZH)**: 多视角变换器理解 
+
+**Authors**: Michal Stary, Julien Gaubil, Ayush Tewari, Vincent Sitzmann  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.24907)  
+
+**Abstract**: Multi-view transformers such as DUSt3R are revolutionizing 3D vision by solving 3D tasks in a feed-forward manner. However, contrary to previous optimization-based pipelines, the inner mechanisms of multi-view transformers are unclear. Their black-box nature makes further improvements beyond data scaling challenging and complicates usage in safety- and reliability-critical applications. Here, we present an approach for probing and visualizing 3D representations from the residual connections of the multi-view transformers' layers. In this manner, we investigate a variant of the DUSt3R model, shedding light on the development of its latent state across blocks, the role of the individual layers, and suggest how it differs from methods with stronger inductive biases of explicit global pose. Finally, we show that the investigated variant of DUSt3R estimates correspondences that are refined with reconstructed geometry. The code used for the analysis is available at this https URL . 
+
+**Abstract (ZH)**: 多视图变换器如DUSt3R正以端到端的方式解决3D任务， revolutionizing 3D视觉。然而，与之前的优化管道不同，多视图变换器的内部机制尚不明确。它们的黑盒性质使得在数据量扩展之外的进一步改进变得具有挑战性，并且在安全性和可靠性关键应用中复杂化了其使用。在此，我们提出一种方法来探测和可视化多视图变换器层的残差连接中的3D表示。通过这种方式，我们探讨了DUSt3R模型的一种变体，揭示了其潜在状态在块间的发展、各层的作用，并建议它与具有更强显式全局姿态归纳偏置的方法之间的差异。最后，我们表明，所研究的DUSt3R变体估计的对应关系是通过重建几何形状进行细化的。用于分析的代码可在以下网址获得：this https URL。 
+
+---
+# Deep Feature Optimization for Enhanced Fish Freshness Assessment 
+
+**Title (ZH)**: 深度特征优化以增强鱼 freshness 评估 
+
+**Authors**: Phi-Hung Hoang, Nam-Thuan Trinh, Van-Manh Tran, Thi-Thu-Hong Phan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.24814)  
+
+**Abstract**: Assessing fish freshness is vital for ensuring food safety and minimizing economic losses in the seafood industry. However, traditional sensory evaluation remains subjective, time-consuming, and inconsistent. Although recent advances in deep learning have automated visual freshness prediction, challenges related to accuracy and feature transparency persist. This study introduces a unified three-stage framework that refines and leverages deep visual representations for reliable fish freshness assessment. First, five state-of-the-art vision architectures - ResNet-50, DenseNet-121, EfficientNet-B0, ConvNeXt-Base, and Swin-Tiny - are fine-tuned to establish a strong baseline. Next, multi-level deep features extracted from these backbones are used to train seven classical machine learning classifiers, integrating deep and traditional decision mechanisms. Finally, feature selection methods based on Light Gradient Boosting Machine (LGBM), Random Forest, and Lasso identify a compact and informative subset of features. Experiments on the Freshness of the Fish Eyes (FFE) dataset demonstrate that the best configuration combining Swin-Tiny features, an Extra Trees classifier, and LGBM-based feature selection achieves an accuracy of 85.99%, outperforming recent studies on the same dataset by 8.69-22.78%. These findings confirm the effectiveness and generalizability of the proposed framework for visual quality evaluation tasks. 
+
+**Abstract (ZH)**: 评估鱼类新鲜度对于确保食品安全和减少海鲜行业经济损失至关重要。然而，传统的感官评估仍然具有主观性、耗时和不一致性。尽管深度学习在视觉新鲜度预测方面实现了自动化，但准确性与特征透明度方面的问题仍然存在。本研究提出了一种统一的三阶段框架，用于细化和利用深度视觉表示以实现可靠的新鲜度评估。首先，五种最先进的视觉架构——ResNet-50、DenseNet-121、EfficientNet-B0、ConvNeXt-Base 和 Swin-Tiny——经过微调以建立强大的基线。其次，从这些骨干网络中提取的多层深度特征用于训练七种经典机器学习分类器，结合了深度和传统决策机制。最后，基于Light Gradient Boosting Machine (LGBM)、Random Forest 和 Lasso 的特征选择方法识别出一个紧凑且信息丰富的特征子集。在Freshness of the Fish Eyes (FFE) 数据集上的实验表明，使用Swin-Tiny特征、Extra Trees分类器以及基于LGBM的特征选择的最佳配置实现了85.99%的准确率，优于同一数据集上最近研究的8.69-22.78%。这些发现证实了所提出的框架在视觉质量评估任务中的有效性和泛化能力。 
+
+---
+# DualCap: Enhancing Lightweight Image Captioning via Dual Retrieval with Similar Scenes Visual Prompts 
+
+**Title (ZH)**: DualCap: 通过相似场景视觉提示的双检索增强轻量级图像字幕生成 
+
+**Authors**: Binbin Li, Guimiao Yang, Zisen Qi, Haiping Wang, Yu Ding  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.24813)  
+
+**Abstract**: Recent lightweight retrieval-augmented image caption models often utilize retrieved data solely as text prompts, thereby creating a semantic gap by leaving the original visual features unenhanced, particularly for object details or complex scenes. To address this limitation, we propose $DualCap$, a novel approach that enriches the visual representation by generating a visual prompt from retrieved similar images. Our model employs a dual retrieval mechanism, using standard image-to-text retrieval for text prompts and a novel image-to-image retrieval to source visually analogous scenes. Specifically, salient keywords and phrases are derived from the captions of visually similar scenes to capture key objects and similar details. These textual features are then encoded and integrated with the original image features through a lightweight, trainable feature fusion network. Extensive experiments demonstrate that our method achieves competitive performance while requiring fewer trainable parameters compared to previous visual-prompting captioning approaches. 
+
+**Abstract (ZH)**: 近期的轻量级检索增强图像描述模型通常仅将检索到的数据用作文本提示，从而在原始视觉特征尤其是对象细节或复杂场景的增强方面留下了语义缺口。为解决这一局限，我们提出了一种新颖的方法 $DualCap$，该方法通过从检索到的相似图像生成视觉提示来丰富视觉表示。我们的模型采用双重检索机制，使用标准的图像到文本检索生成文本提示，同时引入一种新颖的图像到图像检索以获取视觉上相似的场景。具体而言，通过从视觉相似场景的描述中提取关键词和短语来捕捉关键对象和相似细节。这些文本特征通过一个轻量级、可训练的特征融合网络与原始图像特征进行编码和整合。大量的实验表明，我们的方法在保持竞争力的同时，所需的可训练参数数量比之前的视觉提示描述方法更少。 
+
+---
+# The Underappreciated Power of Vision Models for Graph Structural Understanding 
+
+**Title (ZH)**: 被低估的视觉模型在图结构理解中的力量 
+
+**Authors**: Xinjian Zhao, Wei Pang, Zhongkai Xue, Xiangru Jian, Lei Zhang, Yaoyao Xu, Xiaozhuang Song, Shu Wu, Tianshu Yu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.24788)  
+
+**Abstract**: Graph Neural Networks operate through bottom-up message-passing, fundamentally differing from human visual perception, which intuitively captures global structures first. We investigate the underappreciated potential of vision models for graph understanding, finding they achieve performance comparable to GNNs on established benchmarks while exhibiting distinctly different learning patterns. These divergent behaviors, combined with limitations of existing benchmarks that conflate domain features with topological understanding, motivate our introduction of GraphAbstract. This benchmark evaluates models' ability to perceive global graph properties as humans do: recognizing organizational archetypes, detecting symmetry, sensing connectivity strength, and identifying critical elements. Our results reveal that vision models significantly outperform GNNs on tasks requiring holistic structural understanding and maintain generalizability across varying graph scales, while GNNs struggle with global pattern abstraction and degrade with increasing graph size. This work demonstrates that vision models possess remarkable yet underutilized capabilities for graph structural understanding, particularly for problems requiring global topological awareness and scale-invariant reasoning. These findings open new avenues to leverage this underappreciated potential for developing more effective graph foundation models for tasks dominated by holistic pattern recognition. 
+
+**Abstract (ZH)**: 视觉模型在图理解中的潜力超越图神经网络：GraphAbstract基准的提出 
+
+---
+# Towards Fine-Grained Human Motion Video Captioning 
+
+**Title (ZH)**: 细粒度人体运动视频描述 
+
+**Authors**: Guorui Song, Guocun Wang, Zhe Huang, Jing Lin, Xuefei Zhe, Jian Li, Haoqian Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.24767)  
+
+**Abstract**: Generating accurate descriptions of human actions in videos remains a challenging task for video captioning models. Existing approaches often struggle to capture fine-grained motion details, resulting in vague or semantically inconsistent captions. In this work, we introduce the Motion-Augmented Caption Model (M-ACM), a novel generative framework that enhances caption quality by incorporating motion-aware decoding. At its core, M-ACM leverages motion representations derived from human mesh recovery to explicitly highlight human body dynamics, thereby reducing hallucinations and improving both semantic fidelity and spatial alignment in the generated captions. To support research in this area, we present the Human Motion Insight (HMI) Dataset, comprising 115K video-description pairs focused on human movement, along with HMI-Bench, a dedicated benchmark for evaluating motion-focused video captioning. Experimental results demonstrate that M-ACM significantly outperforms previous methods in accurately describing complex human motions and subtle temporal variations, setting a new standard for motion-centric video captioning. 
+
+**Abstract (ZH)**: 生成视频中人类动作的准确描述仍然是视频字幕模型面临的一项具有挑战性的任务。现有的方法往往难以捕捉到细微的动作细节，导致生成的字幕模糊或语义不一致。在本工作中，我们提出了运动增强字幕模型（M-ACM），这是一种通过引入运动感知解码来提升字幕质量的新型生成框架。M-ACM 通过利用从人体网格恢复中获得的运动表示，明确突出人类身体的动力学，从而减少幻觉并提高生成字幕的语义真实性和空间对齐。为了支持该领域的研究，我们提出了包含115K个视频描述配对的Human Motion Insight (HMI) 数据集，专注于人类运动，并提供了专门用于评估以运动为重点的视频字幕的HMI-Bench。实验结果表明，M-ACM 在准确描述复杂的人类动作和微妙的时间变化方面显著优于先前的方法，为以运动为中心的视频字幕设定了新的标准。 
+
+---
+# Flows, straight but not so fast: Exploring the design space of Rectified Flows in Protein Design 
+
+**Title (ZH)**: 流动的路径，直而并非疾行：探索蛋白质设计中修正流动的设计空间 
+
+**Authors**: Junhua Chen, Simon Mathis, Charles Harris, Kieran Didi, Pietro Lio  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.24732)  
+
+**Abstract**: Generative modeling techniques such as Diffusion and Flow Matching have achieved significant successes in generating designable and diverse protein backbones. However, many current models are computationally expensive, requiring hundreds or even thousands of function evaluations (NFEs) to yield samples of acceptable quality, which can become a bottleneck in practical design campaigns that often generate $10^4\ -\ 10^6$ designs per target. In image generation, Rectified Flows (ReFlow) can significantly reduce the required NFEs for a given target quality, but their application in protein backbone generation has been less studied. We apply ReFlow to improve the low NFE performance of pretrained SE(3) flow matching models for protein backbone generation and systematically study ReFlow design choices in the context of protein generation in data curation, training and inference time settings. In particular, we (1) show that ReFlow in the protein domain is particularly sensitive to the choice of coupling generation and annealing, (2) demonstrate how useful design choices for ReFlow in the image domain do not directly translate to better performance on proteins, and (3) make improvements to ReFlow methodology for proteins. 
+
+**Abstract (ZH)**: 生成模型技术如扩散和流动匹配在生成可设计和多样的蛋白质骨架方面取得了显著成果。然而，许多当前模型在计算上非常昂贵，需要数百甚至数千次函数评估（NFEs）才能生成质量可接受的样本，这在通常生成$10^4 - 10^6$个设计的目标设计活动中可能成为瓶颈。在图像生成中，修正流动（ReFlow）可以显著减少达到给定目标质量所需的NFEs，但其在蛋白质骨架生成中的应用研究较少。我们将ReFlow应用于提高预训练SE(3)流动匹配模型在蛋白质骨架生成中的低NFE性能，并在数据整理、训练和推理时间设置的蛋白质生成背景下系统研究ReFlow的设计选择。具体来说，我们（1）展示了蛋白质领域中的ReFlow特别敏感于耦合生成和退火的选择，（2）证明了图像领域中对ReFlow有用的 design choices 并不能直接转化为蛋白质上的更好性能，并（3）对蛋白质中的ReFlow方法进行了改进。 
+
+---

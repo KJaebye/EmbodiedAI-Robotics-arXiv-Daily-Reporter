@@ -1,0 +1,130 @@
+# RoadSens-4M: A Multimodal Smartphone & Camera Dataset for Holistic Road-way Analysis 
+
+**Title (ZH)**: RoadSens-4M：一种用于整体道路分析的多模态智能手机与相机数据集 
+
+**Authors**: Amith Khandakar, David Michelson, Shaikh Golam Rabbani, Fariya Bintay Shafi, Md. Faysal Ahamed, Khondokar Radwanur Rahman, Md Abidur Rahman, Md. Fahmidun Nabi, Mohamed Arselene Ayari, Khaled Khan, Ponnuthurai Nagaratnam Suganthan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.25211)  
+
+**Abstract**: It's important to monitor road issues such as bumps and potholes to enhance safety and improve road conditions. Smartphones are equipped with various built-in sensors that offer a cost-effective and straightforward way to assess road quality. However, progress in this area has been slow due to the lack of high-quality, standardized datasets. This paper discusses a new dataset created by a mobile app that collects sensor data from devices like GPS, accelerometers, gyroscopes, magnetometers, gravity sensors, and orientation sensors. This dataset is one of the few that integrates Geographic Information System (GIS) data with weather information and video footage of road conditions, providing a comprehensive understanding of road issues with geographic context. The dataset allows for a clearer analysis of road conditions by compiling essential data, including vehicle speed, acceleration, rotation rates, and magnetic field intensity, along with the visual and spatial context provided by GIS, weather, and video data. Its goal is to provide funding for initiatives that enhance traffic management, infrastructure development, road safety, and urban planning. Additionally, the dataset will be publicly accessible to promote further research and innovation in smart transportation systems. 
+
+**Abstract (ZH)**: 基于移动应用的综合地理信息与路面状况数据集：促进交通安全与智能交通系统发展 
+
+---
+# MMEdge: Accelerating On-device Multimodal Inference via Pipelined Sensing and Encoding 
+
+**Title (ZH)**: MMEdge: 通过管道化感知与编码加速本地多模态推理 
+
+**Authors**: Runxi Huang, Mingxuan Yu, Mingyu Tsoi, Xiaomin Ouyang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.25327)  
+
+**Abstract**: Real-time multimodal inference on resource-constrained edge devices is essential for applications such as autonomous driving, human-computer interaction, and mobile health. However, prior work often overlooks the tight coupling between sensing dynamics and model execution, as well as the complex inter-modality dependencies. In this paper, we propose MMEdge, an new on-device multi-modal inference framework based on pipelined sensing and encoding. Instead of waiting for complete sensor inputs, MMEdge decomposes the entire inference process into a sequence of fine-grained sensing and encoding units, allowing computation to proceed incrementally as data arrive. MMEdge also introduces a lightweight but effective temporal aggregation module that captures rich temporal dynamics across different pipelined units to maintain accuracy performance. Such pipelined design also opens up opportunities for fine-grained cross-modal optimization and early decision-making during inference. To further enhance system performance under resource variability and input data complexity, MMEdge incorporates an adaptive multimodal configuration optimizer that dynamically selects optimal sensing and model configurations for each modality under latency constraints, and a cross-modal speculative skipping mechanism that bypasses future units of slower modalities when early predictions reach sufficient confidence. We evaluate MMEdge using two public multimodal datasets and deploy it on a real-world unmanned aerial vehicle (UAV)-based multimodal testbed. The results show that MMEdge significantly reduces end-to-end latency while maintaining high task accuracy across various system and data dynamics. 
+
+**Abstract (ZH)**: 基于流水线感知与编码的实时多模态推理框架MMEdge 
+
+---
+# Transformers in Medicine: Improving Vision-Language Alignment for Medical Image Captioning 
+
+**Title (ZH)**: 医学中的变压器：提高医疗图像描述中的 vision-language 对齐 
+
+**Authors**: Yogesh Thakku Suresh, Vishwajeet Shivaji Hogale, Luca-Alexandru Zamfira, Anandavardhana Hegde  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.25164)  
+
+**Abstract**: We present a transformer-based multimodal framework for generating clinically relevant captions for MRI scans. Our system combines a DEiT-Small vision transformer as an image encoder, MediCareBERT for caption embedding, and a custom LSTM-based decoder. The architecture is designed to semantically align image and textual embeddings, using hybrid cosine-MSE loss and contrastive inference via vector similarity. We benchmark our method on the MultiCaRe dataset, comparing performance on filtered brain-only MRIs versus general MRI images against state-of-the-art medical image captioning methods including BLIP, R2GenGPT, and recent transformer-based approaches. Results show that focusing on domain-specific data improves caption accuracy and semantic alignment. Our work proposes a scalable, interpretable solution for automated medical image reporting. 
+
+**Abstract (ZH)**: 基于变压器的多模态框架：生成与MRI扫描临床相关的描述 
+
+---
+# Finding Culture-Sensitive Neurons in Vision-Language Models 
+
+**Title (ZH)**: 寻找视觉-语言模型中的文化敏感神经元 
+
+**Authors**: Xiutian Zhao, Rochelle Choenni, Rohit Saxena, Ivan Titov  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.24942)  
+
+**Abstract**: Despite their impressive performance, vision-language models (VLMs) still struggle on culturally situated inputs. To understand how VLMs process culturally grounded information, we study the presence of culture-sensitive neurons, i.e. neurons whose activations show preferential sensitivity to inputs associated with particular cultural contexts. We examine whether such neurons are important for culturally diverse visual question answering and where they are located. Using the CVQA benchmark, we identify neurons of culture selectivity and perform causal tests by deactivating the neurons flagged by different identification methods. Experiments on three VLMs across 25 cultural groups demonstrate the existence of neurons whose ablation disproportionately harms performance on questions about the corresponding cultures, while having minimal effects on others. Moreover, we propose a new margin-based selector - Contrastive Activation Selection (CAS), and show that it outperforms existing probability- and entropy-based methods in identifying culture-sensitive neurons. Finally, our layer-wise analyses reveals that such neurons tend to cluster in certain decoder layers. Overall, our findings shed new light on the internal organization of multimodal representations. 
+
+**Abstract (ZH)**: 尽管视觉语言模型在性能上表现出色，但它们仍然难以处理文化特定的输入。为了理解视觉语言模型如何处理文化接地的信息，我们研究了文化敏感神经元的存在，即对特定文化背景相关输入显示出偏好性敏感性的神经元。我们研究这类神经元是否对文化多样性的视觉问答任务至关重要，以及它们的位置。利用CVQA基准，我们识别出了文化选择性的神经元，并通过不同识别方法标记的神经元进行因果测试。在三种视觉语言模型上的实验跨越25个文化群体，证明了存在一类神经元，其缺失会对相应文化问题的解答性能产生不成比例的负面影响，而对其他问题影响较小。此外，我们提出了一个新的基于边距的选择器—对比激活选择（CAS），并证明它在识别文化敏感神经元方面优于现有的基于概率和熵的方法。最后，我们逐层分析表明，这类神经元倾向于在某些解码层中聚集。总体而言，我们的发现为多模态表示的内部组织提供了一种新的见解。 
+
+---
+# Ming-Flash-Omni: A Sparse, Unified Architecture for Multimodal Perception and Generation 
+
+**Title (ZH)**: 明闪通感：一种稀疏的统一多模态感知与生成架构 
+
+**Authors**: Inclusion AI, Bowen Ma, Cheng Zou, Canxiang Yan, Chunxiang Jin, Chunjie Shen, Dandan Zheng, Fudong Wang, Furong Xu, GuangMing Yao, Jun Zhou, Jingdong Chen, Jianing Li, Jianxin Sun, Jiajia Liu, Jianjiang Zhu, Jianping Jiang, Jun Peng, Kaixiang Ji, Kaimeng Ren, Libin Wang, Lixiang Ru, Longhua Tan, Lan Wang, Mochen Bai, Ning Gao, Qingpei Guo, Qinglong Zhang, Qiang Xu, Rui Liu, Ruijie Xiong, Ruobing Zheng, Sirui Gao, Tianqi Li, Tinghao Liu, Weilong Chai, Xinyu Xiao, Xiaomei Wang, Xiaolong Wang, Xiao Lu, Xiaoyu Li, Xingning Dong, Xuzheng Yu, Yi Yuan, Yuting Gao, Yuting Xiao, Yunxiao Sun, Yipeng Chen, Yifan Mao, Yifei Wu, Yongjie Lyu, Ziping Ma, Zhiqiang Fang, Zhihao Qiu, Ziyuan Huang, Zizheng Yang, Zhengyu He  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.24821)  
+
+**Abstract**: We propose Ming-Flash-Omni, an upgraded version of Ming-Omni, built upon a sparser Mixture-of-Experts (MoE) variant of Ling-Flash-2.0 with 100 billion total parameters, of which only 6.1 billion are active per token. This architecture enables highly efficient scaling (dramatically improving computational efficiency while significantly expanding model capacity) and empowers stronger unified multimodal intelligence across vision, speech, and language, representing a key step toward Artificial General Intelligence (AGI). Compared to its predecessor, the upgraded version exhibits substantial improvements across multimodal understanding and generation. We significantly advance speech recognition capabilities, achieving state-of-the-art performance in contextual ASR and highly competitive results in dialect-aware ASR. In image generation, Ming-Flash-Omni introduces high-fidelity text rendering and demonstrates marked gains in scene consistency and identity preservation during image editing. Furthermore, Ming-Flash-Omni introduces generative segmentation, a capability that not only achieves strong standalone segmentation performance but also enhances spatial control in image generation and improves editing consistency. Notably, Ming-Flash-Omni achieves state-of-the-art results in text-to-image generation and generative segmentation, and sets new records on all 12 contextual ASR benchmarks, all within a single unified architecture. 
+
+**Abstract (ZH)**: Ming-Flash-Omni: 升级版Ming-Omni，一种基于稀疏Mixture-of-Experts变体的高效统一多模态智能架构 
+
+---
+# Perception, Understanding and Reasoning, A Multimodal Benchmark for Video Fake News Detection 
+
+**Title (ZH)**: 感知、理解与推理：视频假新闻检测的多模态基准 
+
+**Authors**: Cui Yakun, Fushuo Huo, Weijie Shi, Juntao Dai, Hang Du, Zhenghao Zhu, Sirui Han, Yike Guo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.24816)  
+
+**Abstract**: The advent of multi-modal large language models (MLLMs) has greatly advanced research into applications for Video fake news detection (VFND) tasks. Traditional video-based FND benchmarks typically focus on the accuracy of the final decision, often failing to provide fine-grained assessments for the entire detection process, making the detection process a black box. Therefore, we introduce the MVFNDB (Multi-modal Video Fake News Detection Benchmark) based on the empirical analysis, which provides foundation for tasks definition. The benchmark comprises 10 tasks and is meticulously crafted to probe MLLMs' perception, understanding, and reasoning capacities during detection, featuring 9730 human-annotated video-related questions based on a carefully constructed taxonomy ability of VFND. To validate the impact of combining multiple features on the final results, we design a novel framework named MVFND-CoT, which incorporates both creator-added content and original shooting footage reasoning. Building upon the benchmark, we conduct an in-depth analysis of the deeper factors influencing accuracy, including video processing strategies and the alignment between video features and model capabilities. We believe this benchmark will lay a solid foundation for future evaluations and advancements of MLLMs in the domain of video fake news detection. 
+
+**Abstract (ZH)**: 多模态大型语言模型的出现极大地推动了视频假新闻检测任务的研究。传统的基于视频的假新闻检测基准通常侧重于最终决策的准确性，往往无法对整个检测过程提供细致的评估，使检测过程成为一个黑箱。因此，我们基于实证分析介绍了MVFNDB（多模态视频假新闻检测基准），为任务定义提供了基础。该基准包含10项任务，精心设计以探索检测过程中多模态大语言模型的感知、理解和推理能力，基于精心构建的视频假新闻检测能力分类，包含9730个人工标注的视频相关问题。为了验证结合多种特征对最终结果的影响，我们设计了一个名为MVFND-CoT的新型框架，结合了创作者添加的内容和原始拍摄素材推理。基于该基准，我们深入分析了影响准确性的深层次因素，包括视频处理策略和视频特征与模型能力之间的对齐。我们相信该基准将为未来多模态大语言模型在视频假新闻检测领域的评估和进步奠定坚实基础。 
+
+---
+# PISA-Bench: The PISA Index as a Multilingual and Multimodal Metric for the Evaluation of Vision-Language Models 
+
+**Title (ZH)**: PISA-Bench: PISA指标作为多语言和多模态评价视知觉语言模型的标准 
+
+**Authors**: Patrick Haller, Fabio Barth, Jonas Golde, Georg Rehm, Alan Akbik  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.24792)  
+
+**Abstract**: Vision-language models (VLMs) have demonstrated remarkable progress in multimodal reasoning. However, existing benchmarks remain limited in terms of high-quality, human-verified examples. Many current datasets rely on synthetically generated content by large language models (LLMs). Furthermore, most datasets are limited to English, as manual quality assurance of translated samples is time-consuming and costly. To fill this gap, we introduce PISA-Bench, a multilingual benchmark derived from English examples of the expert-created PISA tests, a unified framework for the assessment of student competencies in over eighty countries. Each example consists of human-extracted instructions, questions, answer options, and images, enriched with question type categories, and has been translated from English into five additional languages (Spanish, German, Chinese, French, and Italian), resulting in a fully parallel corpus covering six languages. We evaluate state-of-the-art vision-language models on PISA-Bench and find that especially small models (<20B parameters) fail to achieve high test scores. We further find substantial performance degradation on non-English splits as well as high error-rates when models are tasked with spatial and geometric reasoning. By releasing the dataset and evaluation framework, we provide a resource for advancing research on multilingual multimodal reasoning. 
+
+**Abstract (ZH)**: 基于视觉-语言模型的多模态推理的多语言基准PISA-Bench 
+
+---
+# Cross-Enhanced Multimodal Fusion of Eye-Tracking and Facial Features for Alzheimer's Disease Diagnosis 
+
+**Title (ZH)**: 基于瞳孔跟踪和面部特征跨增强多模态融合的阿尔茨海默病诊断 
+
+**Authors**: Yujie Nie, Jianzhang Ni, Yonglong Ye, Yuan-Ting Zhang, Yun Kwok Wing, Xiangqing Xu, Xin Ma, Lizhou Fan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.24777)  
+
+**Abstract**: Accurate diagnosis of Alzheimer's disease (AD) is essential for enabling timely intervention and slowing disease progression. Multimodal diagnostic approaches offer considerable promise by integrating complementary information across behavioral and perceptual domains. Eye-tracking and facial features, in particular, are important indicators of cognitive function, reflecting attentional distribution and neurocognitive state. However, few studies have explored their joint integration for auxiliary AD diagnosis. In this study, we propose a multimodal cross-enhanced fusion framework that synergistically leverages eye-tracking and facial features for AD detection. The framework incorporates two key modules: (a) a Cross-Enhanced Fusion Attention Module (CEFAM), which models inter-modal interactions through cross-attention and global enhancement, and (b) a Direction-Aware Convolution Module (DACM), which captures fine-grained directional facial features via horizontal-vertical receptive fields. Together, these modules enable adaptive and discriminative multimodal representation learning. To support this work, we constructed a synchronized multimodal dataset, including 25 patients with AD and 25 healthy controls (HC), by recording aligned facial video and eye-tracking sequences during a visual memory-search paradigm, providing an ecologically valid resource for evaluating integration strategies. Extensive experiments on this dataset demonstrate that our framework outperforms traditional late fusion and feature concatenation methods, achieving a classification accuracy of 95.11% in distinguishing AD from HC, highlighting superior robustness and diagnostic performance by explicitly modeling inter-modal dependencies and modality-specific contributions. 
+
+**Abstract (ZH)**: 准确诊断阿尔茨海默病（AD）对于实现及时干预并减缓疾病进展至关重要。多模态诊断方法通过整合行为和感知域的互补信息，显示出巨大潜力。特别是眼动追踪和面部特征，是认知功能的重要指标，反映注意力分布和神经认知状态。然而，很少有研究探索其联合集成以辅助AD诊断。在本研究中，我们提出了一种多模态跨增强融合框架，协同利用眼动追踪和面部特征进行AD检测。该框架包含两个关键模块：(a) 跨增强融合注意力模块（CEFAM），通过跨注意力和全局增强建模跨模态交互，(b) 方向感知卷积模块（DACM），通过水平-垂直感受野捕获细微的方向性面部特征。这些模块共同实现了自适应且具有辨别力的多模态表示学习。为支持这项工作，我们构建了一个同步多模态数据集，包括25名AD患者和25名健康对照（HC），通过在视觉记忆搜索范式期间记录对齐的面部视频和眼动追踪序列，提供了一个生态有效的资源，用于评估集成策略。在该数据集上进行的大量实验表明，我们的框架优于传统的后融合和特征拼接方法，在区分AD与HC方面达到了95.11%的分类准确率，凸显了通过明确建模跨模态依赖性和模态特定贡献而展现出的更优异的鲁棒性和诊断性能。 
+
+---
+# DMVFC: Deep Learning Based Functionally Consistent Tractography Fiber Clustering Using Multimodal Diffusion MRI and Functional MRI 
+
+**Title (ZH)**: DMVFC：基于多模态弥散磁共振成像和功能磁共振成像的功能一致性纤维束聚类深度学习方法 
+
+**Authors**: Bocheng Guo, Jin Wang, Yijie Li, Junyi Wang, Mingyu Gao, Puming Feng, Yuqian Chen, Jarrett Rushmore, Nikos Makris, Yogesh Rathi, Lauren J O'Donnell, Fan Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.24770)  
+
+**Abstract**: Tractography fiber clustering using diffusion MRI (dMRI) is a crucial method for white matter (WM) parcellation to enable analysis of brains structural connectivity in health and disease. Current fiber clustering strategies primarily use the fiber geometric characteristics (i.e., the spatial trajectories) to group similar fibers into clusters, while neglecting the functional and microstructural information of the fiber tracts. There is increasing evidence that neural activity in the WM can be measured using functional MRI (fMRI), providing potentially valuable multimodal information for fiber clustering to enhance its functional coherence. Furthermore, microstructural features such as fractional anisotropy (FA) can be computed from dMRI as additional information to ensure the anatomical coherence of the clusters. In this paper, we develop a novel deep learning fiber clustering framework, namely Deep Multi-view Fiber Clustering (DMVFC), which uses joint multi-modal dMRI and fMRI data to enable functionally consistent WM parcellation. DMVFC can effectively integrate the geometric and microstructural characteristics of the WM fibers with the fMRI BOLD signals along the fiber tracts. DMVFC includes two major components: (1) a multi-view pretraining module to compute embedding features from each source of information separately, including fiber geometry, microstructure measures, and functional signals, and (2) a collaborative fine-tuning module to simultaneously refine the differences of embeddings. In the experiments, we compare DMVFC with two state-of-the-art fiber clustering methods and demonstrate superior performance in achieving functionally meaningful and consistent WM parcellation results. 
+
+**Abstract (ZH)**: 弥散磁共振成像（dMRI）和功能性磁共振成像（fMRI）的多视图纤维聚类方法：增强白质纤维束的空间结构和功能一致性parcelization 
+
+---
+# Modelling the Interplay of Eye-Tracking Temporal Dynamics and Personality for Emotion Detection in Face-to-Face Settings 
+
+**Title (ZH)**: 建模眼动时间动态与个性在面对面情感检测中的相互作用 
+
+**Authors**: Meisam J. Seikavandi, Jostein Fimland, Fabricio Batista Narcizo, Maria Barrett, Ted Vucurevich, Jesper Bünsow Boldt, Andrew Burke Dittberner, Paolo Burelli  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.24720)  
+
+**Abstract**: Accurate recognition of human emotions is critical for adaptive human-computer interaction, yet remains challenging in dynamic, conversation-like settings. This work presents a personality-aware multimodal framework that integrates eye-tracking sequences, Big Five personality traits, and contextual stimulus cues to predict both perceived and felt emotions. Seventy-three participants viewed speech-containing clips from the CREMA-D dataset while providing eye-tracking signals, personality assessments, and emotion ratings. Our neural models captured temporal gaze dynamics and fused them with trait and stimulus information, yielding consistent gains over SVM and literature baselines. Results show that (i) stimulus cues strongly enhance perceived-emotion predictions (macro F1 up to 0.77), while (ii) personality traits provide the largest improvements for felt emotion recognition (macro F1 up to 0.58). These findings highlight the benefit of combining physiological, trait-level, and contextual information to address the inherent subjectivity of emotion. By distinguishing between perceived and felt responses, our approach advances multimodal affective computing and points toward more personalized and ecologically valid emotion-aware systems. 
+
+**Abstract (ZH)**: 准确识别人类情绪对于自适应人机交互至关重要，但在动态、对话-like 的环境中依然具有挑战性。本研究提出了一种基于人格的多模态框架，该框架结合了注视追踪序列、五大人格特质和情境刺激线索，以预测感知和体验情绪。七十名参与者观看了包含言语的CREMA-D数据集片段，提供了注视追踪信号、人格评估和情绪评分。我们的神经网络模型捕捉到了时间上的注视动态，并将这些信息与特质和刺激信息融合，相较于SVM和文献基线实现了显著改进。研究结果表明：(i) 刺激线索显著增强感知情绪预测（宏F1值达到0.77），而(ii) 人格特质在体验情绪识别方面提供了最大的改进（宏F1值达到0.58）。这些发现强调了将生理、特质水平和情境信息结合以应对情绪固有的主观性的重要性。通过区分感知和体验反应，我们的方法推进了多模态情感计算，并指出了更个性化和生态有效的感知系统的发展方向。 
+
+---
