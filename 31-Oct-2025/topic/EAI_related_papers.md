@@ -1,0 +1,260 @@
+# Hybrid Consistency Policy: Decoupling Multi-Modal Diversity and Real-Time Efficiency in Robotic Manipulation 
+
+**Title (ZH)**: 混合一致性策略：解耦多模态多样性和实时效率在机器人 manipulation 中的应用 
+
+**Authors**: Qianyou Zhao, Yuliang Shen, Xuanran Zhai, Ce Hao, Duidi Wu, Jin Qi, Jie Hu, Qiaojun Yu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26670)  
+
+**Abstract**: In visuomotor policy learning, diffusion-based imitation learning has become widely adopted for its ability to capture diverse behaviors. However, approaches built on ordinary and stochastic denoising processes struggle to jointly achieve fast sampling and strong multi-modality. To address these challenges, we propose the Hybrid Consistency Policy (HCP). HCP runs a short stochastic prefix up to an adaptive switch time, and then applies a one-step consistency jump to produce the final action. To align this one-jump generation, HCP performs time-varying consistency distillation that combines a trajectory-consistency objective to keep neighboring predictions coherent and a denoising-matching objective to improve local fidelity. In both simulation and on a real robot, HCP with 25 SDE steps plus one jump approaches the 80-step DDPM teacher in accuracy and mode coverage while significantly reducing latency. These results show that multi-modality does not require slow inference, and a switch time decouples mode retention from speed. It yields a practical accuracy efficiency trade-off for robot policies. 
+
+**Abstract (ZH)**: 基于扩散的视觉运动策略学习中，我们提出了一种混合一致性策略（HCP）以实现快速采样和强多模态性。 
+
+---
+# Heuristic Adaptation of Potentially Misspecified Domain Support for Likelihood-Free Inference in Stochastic Dynamical Systems 
+
+**Title (ZH)**: 无约束条件下动态系统中似然免费推断的启发式自适应领域支持调整 
+
+**Authors**: Georgios Kamaras, Craig Innes, Subramanian Ramamoorthy  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26656)  
+
+**Abstract**: In robotics, likelihood-free inference (LFI) can provide the domain distribution that adapts a learnt agent in a parametric set of deployment conditions. LFI assumes an arbitrary support for sampling, which remains constant as the initial generic prior is iteratively refined to more descriptive posteriors. However, a potentially misspecified support can lead to suboptimal, yet falsely certain, posteriors. To address this issue, we propose three heuristic LFI variants: EDGE, MODE, and CENTRE. Each interprets the posterior mode shift over inference steps in its own way and, when integrated into an LFI step, adapts the support alongside posterior inference. We first expose the support misspecification issue and evaluate our heuristics using stochastic dynamical benchmarks. We then evaluate the impact of heuristic support adaptation on parameter inference and policy learning for a dynamic deformable linear object (DLO) manipulation task. Inference results in a finer length and stiffness classification for a parametric set of DLOs. When the resulting posteriors are used as domain distributions for sim-based policy learning, they lead to more robust object-centric agent performance. 
+
+**Abstract (ZH)**: 机器人领域，无似然推理（LFI）可以提供适应学习代理在参数设定部署条件下的领域分布。LFI 假设采样的任意支持，并在迭代细化初始通用先验到更具描述性的后验过程中保持不变。然而，潜在的错指定支持可能导致次优但虚假确定的后验。为解决这一问题，我们提出了三种启发式 LFI 变体：EDGE、MODE 和 CENTRE。每种变体以自己独特的方式解释后验模式在推理步骤中的转变，并在 LFI 步骤中将支持的适应与后验推断相结合。我们首先揭示支持错指定问题，并使用随机动力学基准评估我们的启发式方法。然后，我们评估启发式支持适应对动态可变形线性物体 (DLO) 操作任务中参数推断和策略学习的影响。对于参数设定的 DLO 集合，推断结果显示了更细的长度和刚度分类。当由此产生的后验用于基于仿真的策略学习领域的分布时，它们会导致更稳健的对象中心代理性能。 
+
+---
+# Hybrid DQN-TD3 Reinforcement Learning for Autonomous Navigation in Dynamic Environments 
+
+**Title (ZH)**: 混合DQN-TD3 强化学习在动态环境中的自主导航 
+
+**Authors**: Xiaoyi He, Danggui Chen, Zhenshuo Zhang, Zimeng Bai  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26646)  
+
+**Abstract**: This paper presents a hierarchical path-planning and control framework that combines a high-level Deep Q-Network (DQN) for discrete sub-goal selection with a low-level Twin Delayed Deep Deterministic Policy Gradient (TD3) controller for continuous actuation. The high-level module selects behaviors and sub-goals; the low-level module executes smooth velocity commands. We design a practical reward shaping scheme (direction, distance, obstacle avoidance, action smoothness, collision penalty, time penalty, and progress), together with a LiDAR-based safety gate that prevents unsafe motions. The system is implemented in ROS + Gazebo (TurtleBot3) and evaluated with PathBench metrics, including success rate, collision rate, path efficiency, and re-planning efficiency, in dynamic and partially observable environments. Experiments show improved success rate and sample efficiency over single-algorithm baselines (DQN or TD3 alone) and rule-based planners, with better generalization to unseen obstacle configurations and reduced abrupt control changes. Code and evaluation scripts are available at the project repository. 
+
+**Abstract (ZH)**: 本文提出了一种层次化的路径规划与控制框架，该框架结合了高层的深度强化学习（Deep Q-Network，DQN）进行离散子目标选择和低层的双延迟深度确定性策略梯度（Twin Delayed Deep Deterministic Policy Gradient，TD3）控制器进行连续动作执行。高层模块选择行为和子目标；低层模块执行平滑的速度指令。我们设计了一种实用的奖励塑造方案（方向、距离、障碍物规避、动作平滑性、碰撞惩罚、时间惩罚和路径效率），并使用基于LiDAR的安全门来防止不安全的运动。该系统在ROS + Gazebo（TurtleBot3）平台上实现，并使用PathBench指标在动态和部分可观察环境中进行了评估，包括成功率、碰撞率、路径效率和重新规划效率。实验结果显示，该框架在单一算法基线（仅DQN或仅TD3）和基于规则的规划器上具有更高的成功率和样本效率，并且在未见过的障碍配置下具有更好的泛化能力，减少了突然的控制变化。代码和评估脚本可在项目库中获取。 
+
+---
+# Human-in-the-loop Online Rejection Sampling for Robotic Manipulation 
+
+**Title (ZH)**: 带有人类在环的在线拒绝采样用于机器人操作 
+
+**Authors**: Guanxing Lu, Rui Zhao, Haitao Lin, He Zhang, Yansong Tang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26406)  
+
+**Abstract**: Reinforcement learning (RL) is widely used to produce robust robotic manipulation policies, but fine-tuning vision-language-action (VLA) models with RL can be unstable due to inaccurate value estimates and sparse supervision at intermediate steps. In contrast, imitation learning (IL) is easy to train but often underperforms due to its offline nature. In this paper, we propose Hi-ORS, a simple yet effective post-training method that utilizes rejection sampling to achieve both training stability and high robustness. Hi-ORS stabilizes value estimation by filtering out negatively rewarded samples during online fine-tuning, and adopts a reward-weighted supervised training objective to provide dense intermediate-step supervision. For systematic study, we develop an asynchronous inference-training framework that supports flexible online human-in-the-loop corrections, which serve as explicit guidance for learning error-recovery behaviors. Across three real-world tasks and two embodiments, Hi-ORS fine-tunes a pi-base policy to master contact-rich manipulation in just 1.5 hours of real-world training, outperforming RL and IL baselines by a substantial margin in both effectiveness and efficiency. Notably, the fine-tuned policy exhibits strong test-time scalability by reliably executing complex error-recovery behaviors to achieve better performance. 
+
+**Abstract (ZH)**: 基于拒绝采样的稳健后训练方法Hi-ORS：实现稳定性和鲁棒性的平衡 
+
+---
+# Towards Reinforcement Learning Based Log Loading Automation 
+
+**Title (ZH)**: 基于强化学习的日志加载自动化 
+
+**Authors**: Ilya Kurinov, Miroslav Ivanov, Grzegorz Orzechowski, Aki Mikkola  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26363)  
+
+**Abstract**: Forestry forwarders play a central role in mechanized timber harvesting by picking up and moving logs from the felling site to a processing area or a secondary transport vehicle. Forwarder operation is challenging and physically and mentally exhausting for the operator who must control the machine in remote areas for prolonged periods of time. Therefore, even partial automation of the process may reduce stress on the operator. This study focuses on continuing previous research efforts in application of reinforcement learning agents in automating log handling process, extending the task from grasping which was studied in previous research to full log loading operation. The resulting agent will be capable to automate a full loading procedure from locating and grappling to transporting and delivering the log to a forestry forwarder bed. To train the agent, a trailer type forestry forwarder simulation model in NVIDIA's Isaac Gym and a virtual environment for a typical log loading scenario were developed. With reinforcement learning agents and a curriculum learning approach, the trained agent may be a stepping stone towards application of reinforcement learning agents in automation of the forestry forwarder. The agent learnt grasping a log in a random position from grapple's random position and transport it to the bed with 94% success rate of the best performing agent. 
+
+**Abstract (ZH)**: 林业集卡在机械化木材采伐中扮演着核心角色，负责将倒木从采伐现场搬运到处理区域或次级运输车辆。集卡操作对操作员极具挑战性，要求操作员在一个遥远且长时间的环境中控制机器，因此，即使部分自动化过程也可能减轻操作员的压力。本研究继续致力于应用强化学习代理自动化木材处理过程的研究，在前人研究 grasping 操作的基础上，扩展任务至完整的木材装载操作。所得到的代理将能够从定位和抓取到运输和交付木材至林业集卡的床垫全程自动化。为了训练代理，开发了 NVIDIA 的 Isaac Gym 中的拖车类型林业集卡模拟模型以及一个典型的木材装载场景的虚拟环境。通过使用强化学习代理和逐级学习方法，训练好的代理可能是将强化学习代理应用于林业集卡自动化的一个重要步骤。该代理在随机位置抓取木材并运输到床垫的成功率达到了 94%，与表现最佳的代理一致。 
+
+---
+# Thor: Towards Human-Level Whole-Body Reactions for Intense Contact-Rich Environments 
+
+**Title (ZH)**: Thor：面向高强度接触丰富环境的人类水平全身反应 
+
+**Authors**: Gangyang Li, Qing Shi, Youhao Hu, Jincheng Hu, Zhongyuan Wang, Xinlong Wang, Shaqi Luo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26280)  
+
+**Abstract**: Humanoids hold great potential for service, industrial, and rescue applications, in which robots must sustain whole-body stability while performing intense, contact-rich interactions with the environment. However, enabling humanoids to generate human-like, adaptive responses under such conditions remains a major challenge. To address this, we propose Thor, a humanoid framework for human-level whole-body reactions in contact-rich environments. Based on the robot's force analysis, we design a force-adaptive torso-tilt (FAT2) reward function to encourage humanoids to exhibit human-like responses during force-interaction tasks. To mitigate the high-dimensional challenges of humanoid control, Thor introduces a reinforcement learning architecture that decouples the upper body, waist, and lower body. Each component shares global observations of the whole body and jointly updates its parameters. Finally, we deploy Thor on the Unitree G1, and it substantially outperforms baselines in force-interaction tasks. Specifically, the robot achieves a peak pulling force of 167.7 N (approximately 48% of the G1's body weight) when moving backward and 145.5 N when moving forward, representing improvements of 68.9% and 74.7%, respectively, compared with the best-performing baseline. Moreover, Thor is capable of pulling a loaded rack (130 N) and opening a fire door with one hand (60 N). These results highlight Thor's effectiveness in enhancing humanoid force-interaction capabilities. 
+
+**Abstract (ZH)**: 类人机器人在服务、工业和救援应用中具有巨大的潜力，在这种应用中，机器人必须在与环境进行频繁接触的交互时维持全身稳定性。然而，在这种条件下使类人机器人产生类似于人类的适应性反应仍然是一个重大挑战。为了解决这一问题，我们提出了Thor，一种用于接触密集环境中类人水平全身反应的框架。基于机器人力分析，我们设计了一种力自适应躯干倾斜（FAT2）奖励函数，以鼓励类人在力交互任务中表现出类似人类的反应。为了解决类人控制的高维挑战，Thor 引入了一种强化学习架构，将上半身、腰部和下半身解耦。每个组件共享全身的全局观察并共同更新其参数。最后，我们在Unitree G1上部署了Thor，它在力交互任务中的表现明显优于基线方法。具体而言，当向后移动时，机器人达到了167.7 N（约G1体重的48%）的最大拉力，向前移动时达到了145.5 N，分别比最佳基线提高了68.9%和74.7%。此外，Thor还能拉着装有重物的架子（130 N）并用一只手打开防火门（60 N）。这些结果突显了Thor在增强类人机器人力交互能力方面的有效性。 
+
+---
+# PHUMA: Physically-Grounded Humanoid Locomotion Dataset 
+
+**Title (ZH)**: PHUMA: 物理驱动的人形机器人行走数据集 
+
+**Authors**: Kyungmin Lee, Sibeen Kim, Minho Park, Hyunseung Kim, Dongyoon Hwang, Hojoon Lee, Jaegul Choo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26236)  
+
+**Abstract**: Motion imitation is a promising approach for humanoid locomotion, enabling agents to acquire humanlike behaviors. Existing methods typically rely on high-quality motion capture datasets such as AMASS, but these are scarce and expensive, limiting scalability and diversity. Recent studies attempt to scale data collection by converting large-scale internet videos, exemplified by Humanoid-X. However, they often introduce physical artifacts such as floating, penetration, and foot skating, which hinder stable imitation. In response, we introduce PHUMA, a Physically-grounded HUMAnoid locomotion dataset that leverages human video at scale, while addressing physical artifacts through careful data curation and physics-constrained retargeting. PHUMA enforces joint limits, ensures ground contact, and eliminates foot skating, producing motions that are both large-scale and physically reliable. We evaluated PHUMA in two sets of conditions: (i) imitation of unseen motion from self-recorded test videos and (ii) path following with pelvis-only guidance. In both cases, PHUMA-trained policies outperform Humanoid-X and AMASS, achieving significant gains in imitating diverse motions. The code is available at this https URL. 
+
+**Abstract (ZH)**: 基于物理约束的类人行走动作数据集PHUMA：大规模人体视频的稳定模仿 
+
+---
+# Kinodynamic Task and Motion Planning using VLM-guided and Interleaved Sampling 
+
+**Title (ZH)**: 基于VLM引导和交错采样的 kinetics运动规划与任务规划 
+
+**Authors**: Minseo Kwon, Young J. Kim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26139)  
+
+**Abstract**: Task and Motion Planning (TAMP) integrates high-level task planning with low-level motion feasibility, but existing methods are costly in long-horizon problems due to excessive motion sampling. While LLMs provide commonsense priors, they lack 3D spatial reasoning and cannot ensure geometric or dynamic feasibility. We propose a kinodynamic TAMP framework based on a hybrid state tree that uniformly represents symbolic and numeric states during planning, enabling task and motion decisions to be jointly decided. Kinodynamic constraints embedded in the TAMP problem are verified by an off-the-shelf motion planner and physics simulator, and a VLM guides exploring a TAMP solution and backtracks the search based on visual rendering of the states. Experiments on the simulated domains and in the real world show 32.14% - 1166.67% increased average success rates compared to traditional and LLM-based TAMP planners and reduced planning time on complex problems, with ablations further highlighting the benefits of VLM guidance. 
+
+**Abstract (ZH)**: 基于混合状态树的运动动力学任务与运动规划框架 
+
+---
+# Embodied Intelligence for Advanced Bioinspired Microrobotics: Examples and Insights 
+
+**Title (ZH)**: 仿生微机器人领域中嵌入式智能的研究与启示 
+
+**Authors**: Nestor O. Perez-Arancibia  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26132)  
+
+**Abstract**: The term embodied intelligence (EI) conveys the notion that body morphology, material properties, interaction with the environment, and control strategies can be purposefully integrated into the process of robotic design to generate intelligent behavior; in particular, locomotion and navigation. In this paper, we discuss EI as a design principle for advanced microrobotics, with a particular focus on co-design -- the simultaneous and interdependent development of physical structure and behavioral function. To illustrate the contrast between EI-inspired systems and traditional architectures that decouple sensing, computation, and actuation, we present and discuss a collection of robots developed by the author and his team at the Autonomous Microrobotic Systems Laboratory (AMSL). These robots exhibit intelligent behavior that emerges from their structural dynamics and the physical interaction between their components and with the environment. Platforms such as the Bee++, RoBeetle, SMALLBug, SMARTI, WaterStrider, VLEIBot+, and FRISSHBot exemplify how feedback loops, decision logics, sensing mechanisms, and smart actuation strategies can be embedded into the physical properties of the robotic system itself. Along these lines, we contend that co-design is not only a method for empirical optimization under constraints, but also an enabler of EI, offering a scalable and robust alternative to classical control for robotics at the mm-to-cm-scale. 
+
+**Abstract (ZH)**: 体态智能作为一种设计原则：微纳米机器人中的同步协同设计 
+
+---
+# Beyond the Uncanny Valley: A Mixed-Method Investigation of Anthropomorphism in Protective Responses to Robot Abuse 
+
+**Title (ZH)**: 超越毛骨悚然谷：关于机器人虐待时拟人类回应的混合方法研究 
+
+**Authors**: Fan Yang, Lingyao Li, Yaxin Hu, Michael Rodgers, Renkai Ma  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26082)  
+
+**Abstract**: Robots with anthropomorphic features are increasingly shaping how humans perceive and morally engage with them. Our research investigates how different levels of anthropomorphism influence protective responses to robot abuse, extending the Computers as Social Actors (CASA) and uncanny valley theories into a moral domain. In an experiment, we invite 201 participants to view videos depicting abuse toward a robot with low (Spider), moderate (Two-Foot), or high (Humanoid) anthropomorphism. To provide a comprehensive analysis, we triangulate three modalities: self-report surveys measuring emotions and uncanniness, physiological data from automated facial expression analysis, and qualitative reflections. Findings indicate that protective responses are not linear. The moderately anthropomorphic Two-Foot robot, rated highest in eeriness and "spine-tingling" sensations consistent with the uncanny valley, elicited the strongest physiological anger expressions. Self-reported anger and guilt are significantly higher for both the Two-Foot and Humanoid robots compared to the Spider. Qualitative findings further reveal that as anthropomorphism increases, moral reasoning shifts from technical assessments of property damage to condemnation of the abuser's character, while governance proposals expand from property law to calls for quasi-animal rights and broader societal responsibility. These results suggest that the uncanny valley does not dampen moral concern but paradoxically heightens protective impulses, offering critical implications for robot design, policy, and future legal frameworks. 
+
+**Abstract (ZH)**: 具有类人特征的机器人日益影响人类对其的认识和道德互动。我们的研究探讨不同类人程度如何影响对机器人虐待的保护性反应，将计算机作为社会行为者（CASA）理论和逆蠕动谷理论扩展至道德领域。在一项实验中，我们邀请201名参与者观看描绘低（蜘蛛型）、中（两足型）和高（拟人型）类人程度的机器人受虐待的视频，并通过自我报告调查问卷、自动面部表情分析的生理数据以及定性反思三个维度进行综合分析。研究发现，保护性反应并非线性。中等类人程度的两足型机器人，因其怪异感和“令人脊背发凉”的感觉而被评为最高，引发了最强烈的生理愤怒反应。自我报告的愤怒和内疚感在两足型和拟人型机器人中均显著高于蜘蛛型机器人。定性发现进一步表明，随着类人程度的增加，道德推理从对财物损坏的技术评估转向对施暴者人格的谴责，而治理建议则从财产法扩展到对准动物权利和更广泛的社会责任的呼吁。这些结果显示，逆蠕动谷并不减弱道德关切，反而意外地增强了保护冲动，对机器人设计、政策和未来法律框架具有重要启示意义。 
+
+---
+# Morphology-Aware Graph Reinforcement Learning for Tensegrity Robot Locomotion 
+
+**Title (ZH)**: 面向 tensegrity 机器人运动的形态感知图强化学习 
+
+**Authors**: Chi Zhang, Mingrui Li, Wenzhe Tong, Xiaonan Huang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26067)  
+
+**Abstract**: Tensegrity robots combine rigid rods and elastic cables, offering high resilience and deployability but posing major challenges for locomotion control due to their underactuated and highly coupled dynamics. This paper introduces a morphology-aware reinforcement learning framework that integrates a graph neural network (GNN) into the Soft Actor-Critic (SAC) algorithm. By representing the robot's physical topology as a graph, the proposed GNN-based policy captures coupling among components, enabling faster and more stable learning than conventional multilayer perceptron (MLP) policies. The method is validated on a physical 3-bar tensegrity robot across three locomotion primitives, including straight-line tracking and bidirectional turning. It shows superior sample efficiency, robustness to noise and stiffness variations, and improved trajectory accuracy. Notably, the learned policies transfer directly from simulation to hardware without fine-tuning, achieving stable real-world locomotion. These results demonstrate the advantages of incorporating structural priors into reinforcement learning for tensegrity robot control. 
+
+**Abstract (ZH)**: tensegrity 机器人结合刚性杆和弹性缆线，提供高韧性与展布性，但由于其欠驱动且高度耦合的动力学特性，运动控制面临重大挑战。本文介绍了一种形态意识增强学习框架，将图神经网络（GNN）集成到Soft Actor-Critic（SAC）算法中。通过将机器人的物理拓扑表示为图，提出的基于GNN的策略能够捕捉组件间的耦合关系，从而比传统多层感知机（MLP）策略实现更快更稳定的训练。该方法已在包括直线跟踪和双向转向在内的三种运动原型的物理3杆 tensegrity 机器人上进行验证，展示了更高的样本效率、对噪声和刚度变化的更强鲁棒性以及改善的轨迹精度。值得注意的是，学习到的策略可以直接从模拟直接迁移到硬件，无需微调即可实现稳定的现实世界运动。这些结果证明了将结构先验融入 tensegrity 机器人控制的增强学习中的优势。 
+
+---
+# Accelerating Real-World Overtaking in F1TENTH Racing Employing Reinforcement Learning Methods 
+
+**Title (ZH)**: 利用强化学习方法加速F1TENTH赛车在真实世界中的超车动作 
+
+**Authors**: Emily Steiner, Daniel van der Spuy, Futian Zhou, Afereti Pama, Minas Liarokapis, Henry Williams  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26040)  
+
+**Abstract**: While autonomous racing performance in Time-Trial scenarios has seen significant progress and development, autonomous wheel-to-wheel racing and overtaking are still severely limited. These limitations are particularly apparent in real-life driving scenarios where state-of-the-art algorithms struggle to safely or reliably complete overtaking manoeuvres. This is important, as reliable navigation around other vehicles is vital for safe autonomous wheel-to-wheel racing. The F1Tenth Competition provides a useful opportunity for developing wheel-to-wheel racing algorithms on a standardised physical platform. The competition format makes it possible to evaluate overtaking and wheel-to-wheel racing algorithms against the state-of-the-art. This research presents a novel racing and overtaking agent capable of learning to reliably navigate a track and overtake opponents in both simulation and reality. The agent was deployed on an F1Tenth vehicle and competed against opponents running varying competitive algorithms in the real world. The results demonstrate that the agent's training against opponents enables deliberate overtaking behaviours with an overtaking rate of 87% compared 56% for an agent trained just to race. 
+
+**Abstract (ZH)**: 尽管在时间试验场景中的自主赛车性能取得了显著进步和发展，但在车对车自主赛车和超车方面仍然受到严重限制。这些限制在现实驾驶场景中尤为明显，在这些场景中，最先进的算法在安全或可靠地完成超车动作方面面临挑战。这对于自主车对车赛车来说至关重要，因为其他车辆的可靠导航是确保安全自主赛车的关键。F1Tenth竞赛为在标准化物理平台上开发车对车赛车算法提供了有用的机会。竞赛格式使得可以将超车和车对车赛车算法与最先进的技术进行比较评估。本研究提出了一种新颖的赛车和超车代理，能够在仿真和现实环境中学习可靠地导航赛道并超越对手。该代理被部署在F1Tenth车辆上，并在现实世界中与运行不同竞争算法的对手进行了比赛。结果表明，对手训练使代理能够有意图地实施超车行为，超车率为87%，而仅训练赛车的代理为56%。 
+
+---
+# Risk-Aware Safety Filters with Poisson Safety Functions and Laplace Guidance Fields 
+
+**Title (ZH)**: 带泊松安全函数和拉普lace引导场的风险意识安全过滤器 
+
+**Authors**: Gilbert Bahati, Ryan M. Bena, Meg Wilkinson, Pol Mestres, Ryan K. Cosner, Aaron D. Ames  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.25913)  
+
+**Abstract**: Robotic systems navigating in real-world settings require a semantic understanding of their environment to properly determine safe actions. This work aims to develop the mathematical underpinnings of such a representation--specifically, the goal is to develop safety filters that are risk-aware. To this end, we take a two step approach: encoding an understanding of the environment via Poisson's equation, and associated risk via Laplace guidance fields. That is, we first solve a Dirichlet problem for Poisson's equation to generate a safety function that encodes system safety as its 0-superlevel set. We then separately solve a Dirichlet problem for Laplace's equation to synthesize a safe \textit{guidance field} that encodes variable levels of caution around obstacles -- by enforcing a tunable flux boundary condition. The safety function and guidance fields are then combined to define a safety constraint and used to synthesize a risk-aware safety filter which, given a semantic understanding of an environment with associated risk levels of environmental features, guarantees safety while prioritizing avoidance of higher risk obstacles. We demonstrate this method in simulation and discuss how \textit{a priori} understandings of obstacle risk can be directly incorporated into the safety filter to generate safe behaviors that are risk-aware. 
+
+**Abstract (ZH)**: 真实环境中的机器人系统需要对其环境进行语义理解，以便正确确定安全动作。本文旨在发展这种表示的数学基础——具体来说，目标是开发风险意识的安全过滤器。为此，我们采取两步 approach：通过泊松方程编码环境理解，并通过拉普拉斯引导场关联风险。即，我们首先通过泊松方程的狄利克雷问题求解生成一个安全函数，将其系统的安全性编码为其0-上水平集。然后，通过拉普拉斯方程的狄利克雷问题分别合成一个安全的引导场，该引导场编码障碍物周围的不同谨慎程度——通过施加可调通量边界条件。安全函数和引导场随后结合定义一个安全约束，并用于合成一个风险意识的安全过滤器，在给定具有相关风险水平的环境语义理解的情况下，该过滤器保证安全并优先避免高风险障碍物。我们在此方法在仿真中进行了演示，并讨论了如何直接将障碍风险的先验理解整合到安全过滤器中以生成风险意识的安全行为。 
+
+---
+# Debate2Create: Robot Co-design via Large Language Model Debates 
+
+**Title (ZH)**: Debate2Create: 机器人协同设计通过大型语言模型辩论 
+
+**Authors**: Kevin Qiu, Marek Cygan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.25850)  
+
+**Abstract**: Automating the co-design of a robot's morphology and control is a long-standing challenge due to the vast design space and the tight coupling between body and behavior. We introduce Debate2Create (D2C), a framework in which large language model (LLM) agents engage in a structured dialectical debate to jointly optimize a robot's design and its reward function. In each round, a design agent proposes targeted morphological modifications, and a control agent devises a reward function tailored to exploit the new design. A panel of pluralistic judges then evaluates the design-control pair in simulation and provides feedback that guides the next round of debate. Through iterative debates, the agents progressively refine their proposals, producing increasingly effective robot designs. Notably, D2C yields diverse and specialized morphologies despite no explicit diversity objective. On a quadruped locomotion benchmark, D2C discovers designs that travel 73% farther than the default, demonstrating that structured LLM-based debate can serve as a powerful mechanism for emergent robot co-design. Our results suggest that multi-agent debate, when coupled with physics-grounded feedback, is a promising new paradigm for automated robot design. 
+
+**Abstract (ZH)**: automating 机器人形态和控制的联合设计由于设计空间 vast 和机体与行为间的紧密耦合一直是长期挑战。我们引入 Debate2Create (D2C)，一种框架，在该框架中，大规模语言模型代理通过结构化的辩证辩论共同优化机器人的设计及其奖励函数。在每轮辩论中，设计代理提出针对性的形态学修改，而控制代理则设计一个奖励函数以充分利用新的设计。随后，一组多样化的评委在模拟环境中评估设计-控制配对并提供反馈，指导接下来的辩论。通过迭代辩论，代理逐步细化其提案，产生越来越有效的机器人设计。值得注意的是，尽管没有明确的多样性目标，D2C 仍能产生多样化的专门化形态。在四足运动基准测试中，D2C 发现的design 可以比默认设计远行 73%，这表明结构化的基于大语言模型的辩论可以作为促进机器人涌现式联合设计的强大机制。我们的结果表明，结合物理基础反馈的多代理辩论是一种有潜力的新范式，可用于自动化机器人设计。 
+
+---
+# Clone Deterministic 3D Worlds with Geometrically-Regularized World Models 
+
+**Title (ZH)**: 克隆确定性3D世界：带有几何正则化的世界模型 
+
+**Authors**: Zaishuo Xia, Yukuan Lu, Xinyi Li, Yifan Xu, Yubei Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26782)  
+
+**Abstract**: A world model is an internal model that simulates how the world evolves. Given past observations and actions, it predicts the future of both the embodied agent and its environment. Accurate world models are essential for enabling agents to think, plan, and reason effectively in complex, dynamic settings. Despite rapid progress, current world models remain brittle and degrade over long horizons. We argue that a central cause is representation quality: exteroceptive inputs (e.g., images) are high-dimensional, and lossy or entangled latents make dynamics learning unnecessarily hard. We therefore ask whether improving representation learning alone can substantially improve world-model performance. In this work, we take a step toward building a truly accurate world model by addressing a fundamental yet open problem: constructing a model that can fully clone and overfit to a deterministic 3D world. We propose Geometrically-Regularized World Models (GRWM), which enforces that consecutive points along a natural sensory trajectory remain close in latent representation space. This approach yields significantly improved latent representations that align closely with the true topology of the environment. GRWM is plug-and-play, requires only minimal architectural modification, scales with trajectory length, and is compatible with diverse latent generative backbones. Across deterministic 3D settings and long-horizon prediction tasks, GRWM significantly increases rollout fidelity and stability. Analyses show that its benefits stem from learning a latent manifold with superior geometric structure. These findings support a clear takeaway: improving representation learning is a direct and useful path to robust world models, delivering reliable long-horizon predictions without enlarging the dynamics module. 
+
+**Abstract (ZH)**: 几何正则化世界模型：构建真正准确的世界模型 
+
+---
+# Reinforcement Learning for Pollution Detection in a Randomized, Sparse and Nonstationary Environment with an Autonomous Underwater Vehicle 
+
+**Title (ZH)**: 自主水下车辆在随机、稀疏且非稳定环境中的污染检测强化学习 
+
+**Authors**: Sebastian Zieglmeier, Niklas Erdmann, Narada D. Warakagoda  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26347)  
+
+**Abstract**: Reinforcement learning (RL) algorithms are designed to optimize problem-solving by learning actions that maximize rewards, a task that becomes particularly challenging in random and nonstationary environments. Even advanced RL algorithms are often limited in their ability to solve problems in these conditions. In applications such as searching for underwater pollution clouds with autonomous underwater vehicles (AUVs), RL algorithms must navigate reward-sparse environments, where actions frequently result in a zero reward. This paper aims to address these challenges by revisiting and modifying classical RL approaches to efficiently operate in sparse, randomized, and nonstationary environments. We systematically study a large number of modifications, including hierarchical algorithm changes, multigoal learning, and the integration of a location memory as an external output filter to prevent state revisits. Our results demonstrate that a modified Monte Carlo-based approach significantly outperforms traditional Q-learning and two exhaustive search patterns, illustrating its potential in adapting RL to complex environments. These findings suggest that reinforcement learning approaches can be effectively adapted for use in random, nonstationary, and reward-sparse environments. 
+
+**Abstract (ZH)**: 强化学习（RL）算法旨在通过学习最大化回报的动作来优化问题解决，在随机和非平稳环境下这一任务变得尤为挑战。即使是最先进的RL算法，在这些条件下也往往难以解决问题。在使用自主水下车辆（AUVs）搜索水下污染云这样的应用中，RL算法必须在回报稀疏的环境中导航，其中频繁执行的动作导致零回报。本文旨在通过重新审视和修改经典RL方法，以更有效地在稀疏、随机和非平稳环境中操作。我们系统地研究了大量修改方法，包括层次算法的改变、多目标学习以及将位置记忆作为外部输出滤波器集成以防止状态重访。我们的结果表明，修改后的基于蒙特卡洛的方法显著优于传统的Q学习和两种详尽搜索模式，展示了其适应复杂环境的潜力。这些发现表明，强化学习方法可以有效适应随机、非平稳和回报稀疏的环境。 
+
+---
+# EgoExo-Con: Exploring View-Invariant Video Temporal Understanding 
+
+**Title (ZH)**: egoExo-Con: 探索视角不变的视频时间理解 
+
+**Authors**: Minjoon Jung, Junbin Xiao, Junghyun Kim, Byoung-Tak Zhang, Angela Yao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26113)  
+
+**Abstract**: Can Video-LLMs achieve consistent temporal understanding when videos capture the same event from different viewpoints? To study this, we introduce EgoExo-Con (Consistency), a benchmark of comprehensively synchronized egocentric and exocentric video pairs with human-refined queries in natural language. EgoExo-Con emphasizes two temporal understanding tasks: Temporal Verification and Temporal Grounding. It evaluates not only correctness but consistency across viewpoints. Our analysis reveals two critical limitations of existing Video-LLMs: (1) models often fail to maintain consistency, with results far worse than their single-view performances. (2) When naively finetuned with synchronized videos of both viewpoints, the models show improved consistency but often underperform those trained on a single view. For improvements, we propose View-GRPO, a novel reinforcement learning framework that effectively strengthens view-specific temporal reasoning while encouraging consistent comprehension across viewpoints. Our method demonstrates its superiority over naive SFT and GRPO, especially for improving cross-view consistency. All resources will be made publicly available. 
+
+**Abstract (ZH)**: 视频LLMs在捕捉相同事件不同视角的视频时能否实现一致的时间理解？为研究这一问题，我们引入了EgoExo-Con（一致度），这是一个全面同步的第一人称和第三人称视频对基准，包含人类精炼的自然语言查询。EgoExo-Con 强调两项时间理解任务：时间验证和时间定位。它不仅评估正确性，还评估不同视角之间的一致性。我们的分析揭示了现有视频LLMs的两个关键局限性：(1) 模型往往无法保持一致性，其结果远逊于单视角的性能。(2) 当使用同步视角的视频进行简单的微调时，模型的一致性有所提高，但通常在跨视角一致性上逊于仅在一个视角上训练的模型。为改进这些问题，我们提出了View-GRPO，一个新颖的强化学习框架，能够在增强特定视角的时间推理的同时促进跨视角的一致理解。我们的方法在改善跨视角一致性方面优于简单的SFT和GRPO。所有资源将公开提供。 
+
+---
+# WaveVerif: Acoustic Side-Channel based Verification of Robotic Workflows 
+
+**Title (ZH)**: WaveVerif：基于声学侧信道的机器人工作流程验证 
+
+**Authors**: Zeynep Yasemin Erdogan, Shishir Nagaraja, Chuadhry Mujeeb Ahmed, Ryan Shah  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.25960)  
+
+**Abstract**: In this paper, we present a framework that uses acoustic side- channel analysis (ASCA) to monitor and verify whether a robot correctly executes its intended commands. We develop and evaluate a machine-learning-based workflow verification system that uses acoustic emissions generated by robotic movements. The system can determine whether real-time behavior is consistent with expected commands. The evaluation takes into account movement speed, direction, and microphone distance. The results show that individual robot movements can be validated with over 80% accuracy under baseline conditions using four different classifiers: Support Vector Machine (SVM), Deep Neural Network (DNN), Recurrent Neural Network (RNN), and Convolutional Neural Network (CNN). Additionally, workflows such as pick-and-place and packing could be identified with similarly high confidence. Our findings demonstrate that acoustic signals can support real-time, low-cost, passive verification in sensitive robotic environments without requiring hardware modifications. 
+
+**Abstract (ZH)**: 本文提出了一种利用声学侧通道分析（ASCA）框架，监测和验证机器人是否正确执行其预期命令的方法。该文开发并评估了一种基于机器学习的工作流验证系统，该系统利用机器人运动产生的声学发射信号。该系统能够确定实时行为是否与预期命令一致。评估考虑了运动速度、方向和麦克风距离等因素。结果表明，在基线条件下，使用四种不同的分类器（支持向量机（SVM）、深度神经网络（DNN）、递归神经网络（RNN）和卷积神经网络（CNN）），单一机器人动作的验证准确率超过80%。此外，诸如拿起放下和打包等工作流程也能够以高置信度被识别。研究发现表明，声学信号可以在不需硬件修改的情况下，支持敏感机器人环境中实时、低成本的被动验证。 
+
+---
+# Metis-SPECS: Decoupling Multimodal Learning via Self-distilled Preference-based Cold Start 
+
+**Title (ZH)**: Metis-SPECS: 通过自distilled偏好引导的冷启动解耦多模态学习 
+
+**Authors**: Kun Chen, Peng Shi, Haibo Qiu, Zhixiong Zeng, Siqi Yang, Wenji Mao, Lin Ma  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.25801)  
+
+**Abstract**: Reinforcement learning (RL) with verifiable rewards has recently catalyzed a wave of "MLLM-r1" approaches that bring RL to vision language models. Most representative paradigms begin with a cold start, typically employing supervised fine-tuning (SFT), to initialize the policy before RL. However, SFT-based cold start adopts the reasoning paradigm intertwined with task solution and output format, which may induce instruction-style overfitting, weakens out-of-distribution generalization, and ultimately affects downstream RL. We revisit the cold start along two views, its training method and data construction, and introduce the Generalization Factor (GF) coefficient to quantify the generalization capability under different methods. Our empirical study finds that preference-based training methods (e.g. DPO) generalizes better than SFT-based methods in cold start. Motivated by this, we propose SPECS-a Self-distilled, Preference-based Cold Start framework that decouples multimodal learning: (1) generates introspective preference data pairs via self-distillation, avoiding reliance on larger teachers or manual annotation; (2) performs preference-based training to learn, focusing on shallow, transferable surface-form criteria (format, structure, style) rather than memorizing content; and (3) hands off to RL with verifiable rewards for deep reasoning results. Experimental results across multiple multimodal benchmarks show that our decoupling learning framework yields consistent performance gains over strong baselines, improving MEGA-Bench by 4.1% and MathVista by 12.2%. Additional experiments indicate that SPECS contributes to reducing in-distribution "stuckness," improving exploration, stabilizing training, and raising the performance ceiling. 
+
+**Abstract (ZH)**: 可验证奖励的强化学习与视觉语言模型的“MLLM-r1”方法recently催化了一波新的 approaches，使RL应用到视觉语言模型中。大多数最具代表性的范式从冷启动开始，通常使用监督微调（SFT）来初始化策略，然后进行RL。然而，基于SFT的冷启动结合了解题推理与输出格式，可能导致指令式过拟合，减弱离分布的泛化能力，最终影响下游的RL任务。我们从训练方法和数据构造两个视角重新审视冷启动，并引入了泛化因子（GF）系数来量化不同方法下的泛化能力。我们的实证研究表明，基于偏好训练的方法（例如DPO）在冷启动时的泛化能力优于基于SFT的方法。受此启发，我们提出了一种自我蒸馏、基于偏好的冷启动框架SPECS，以解耦多模态学习：(1) 通过自我蒸馏生成反思偏好数据对，避免依赖于更大的教师模型或手动标注；(2) 进行基于偏好的训练，专注于浅层、可迁移的表象形式标准（格式、结构、风格），而不是记忆内容；(3) 将可验证奖励的RL与之结合，用于深入推理结果。跨多个多模态基准的实验结果表明，我们的解耦学习框架在强基线之上表现出一致的性能提升，分别在MEGA-Bench和MathVista上提高了4.1%和12.2%。额外的实验表明，SPECS有助于减少分布内“停滞”，提高探索性，稳定训练，并提高性能上限。 
+
+---
+# MemEIC: A Step Toward Continual and Compositional Knowledge Editing 
+
+**Title (ZH)**: MemEIC：走向持续且组合式知识编辑 
+
+**Authors**: Jin Seong, Jiyun Park, Wencke Liermann, Hongseok Choi, Yoonji Nam, Hyun Kim, Soojong Lim, Namhoon Lee  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.25798)  
+
+**Abstract**: The dynamic nature of information necessitates continuously updating large vision-language models (LVLMs). While recent knowledge editing techniques hint at promising directions, they often focus on editing a single modality (vision or language) in isolation. This prevalent practice neglects the inherent multimodality of LVLMs and the continuous nature of knowledge updates, potentially leading to suboptimal editing outcomes when considering the interplay between modalities and the need for ongoing knowledge refinement. To address these limitations, we propose MemEIC, a novel method for Continual and Compositional Knowledge Editing (CCKE) in LVLMs. MemEIC enables compositional editing of both visual and textual knowledge sequentially. Our approach employs a hybrid external-internal editor featuring a dual external memory for cross-modal evidence retrieval and dual LoRA adapters that facilitate disentangled parameter updates for each modality. A key component is a brain-inspired knowledge connector, activated selectively for compositional reasoning, that integrates information across different modalities. Experiments demonstrate that MemEIC significantly improves performance on complex multimodal questions and effectively preserves prior edits, setting a new benchmark for CCKE in LVLMs. 
+
+**Abstract (ZH)**: MemEIC：视觉语言大模型中连续与组成性知识编辑的新方法 
+
+---

@@ -1,0 +1,39 @@
+# On Robustness of Vision-Language-Action Model against Multi-Modal Perturbations 
+
+**Title (ZH)**: 视觉-语言-行动模型在多模态扰动下的稳健性研究 
+
+**Authors**: Jianing Guo, Zhenhong Wu, Chang Tu, Yiyao Ma, Xiangqi Kong, Zhiqian Liu, Jiaming Ji, Shuning Zhang, Yuanpei Chen, Kai Chen, Qi Dou, Yaodong Yang, Xianglong Liu, Huijie Zhao, Weifeng Lv, Simin Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.00037)  
+
+**Abstract**: In Vision-Language-Action (VLA) models, robustness to real-world perturbations is critical for deployment. Existing methods target simple visual disturbances, overlooking the broader multi-modal perturbations that arise in actions, instructions, environments, and observations. Here, we first evaluate the robustness of mainstream VLAs under 17 perturbations across four modalities. We find (1) actions as the most fragile modality, (2) Existing visual-robust VLA do not gain robustness in other modality, and (3) pi0 demonstrates superior robustness with a diffusion-based action head. To build multi-modal robust VLAs, we propose RobustVLA against perturbations in VLA inputs and outputs. For output robustness, we perform offline robust optimization against worst-case action noise that maximizes mismatch in flow matching objective. This can be seen as adversarial training, label smoothing, and outlier penalization. For input robustness, we enforce consistent actions across input variations that preserve task semantics. To account for multiple perturbations, we formulate robustness as a multi-armed bandit problem and apply an upper confidence bound algorithm to automatically identify the most harmful noise. Experiments on LIBERO demonstrate our RobustVLA delivers absolute gains over baselines of 12.6% on the pi0 backbone and 10.4% on the OpenVLA backbone across all 17 perturbations, achieving 50.6x faster inference than existing visual-robust VLAs, and a 10.4% gain under mixed perturbations. Our RobustVLA is particularly effective on real-world FR5 robot with limited demonstrations, showing absolute gains by 65.6% under perturbations of four modalities. 
+
+**Abstract (ZH)**: 多模态视觉-语言-行动（VLA）模型在实际场景扰动下的鲁棒性研究与提升 
+
+---
+# Understanding Hardness of Vision-Language Compositionality from A Token-level Causal Lens 
+
+**Title (ZH)**: 从token层面因果视角理解视觉-语言组合性的难度 
+
+**Authors**: Ziliang Chen, Tianang Xiao, Jusheng Zhang, Yongsen Zheng, Xipeng Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26302)  
+
+**Abstract**: Contrastive Language-Image Pre-training (CLIP) delivers strong cross modal generalization by aligning images and texts in a shared embedding space, yet it persistently fails at compositional reasoning over objects, attributes, and relations often behaving like a bag-of-words matcher. Prior causal accounts typically model text as a single vector, obscuring token-level structure and leaving core phenomena-such as prompt sensitivity and failures on hard negatives unexplained. We address this gap with a token-aware causal representation learning (CRL) framework grounded in a sequential, language-token SCM. Our theory extends block identifiability to tokenized text, proving that CLIP's contrastive objective can recover the modal-invariant latent variable under both sentence-level and token-level SCMs. Crucially, token granularity yields the first principled explanation of CLIP's compositional brittleness: composition nonidentifiability. We show the existence of pseudo-optimal text encoders that achieve perfect modal-invariant alignment yet are provably insensitive to SWAP, REPLACE, and ADD operations over atomic concepts, thereby failing to distinguish correct captions from hard negatives despite optimizing the same training objective as true-optimal encoders. The analysis further links language-side nonidentifiability to visual-side failures via the modality gap and shows how iterated composition operators compound hardness, motivating improved negative mining strategies. 
+
+**Abstract (ZH)**: 基于因果表示学习的.token感知对比预训练 
+
+---
+# Security Risk of Misalignment between Text and Image in Multi-modal Model 
+
+**Title (ZH)**: 多模态模型中文本与图像不一致的security风险 
+
+**Authors**: Xiaosen Wang, Zhijin Ge, Shaokang Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26105)  
+
+**Abstract**: Despite the notable advancements and versatility of multi-modal diffusion models, such as text-to-image models, their susceptibility to adversarial inputs remains underexplored. Contrary to expectations, our investigations reveal that the alignment between textual and Image modalities in existing diffusion models is inadequate. This misalignment presents significant risks, especially in the generation of inappropriate or Not-Safe-For-Work (NSFW) content. To this end, we propose a novel attack called Prompt-Restricted Multi-modal Attack (PReMA) to manipulate the generated content by modifying the input image in conjunction with any specified prompt, without altering the prompt itself. PReMA is the first attack that manipulates model outputs by solely creating adversarial images, distinguishing itself from prior methods that primarily generate adversarial prompts to produce NSFW content. Consequently, PReMA poses a novel threat to the integrity of multi-modal diffusion models, particularly in image-editing applications that operate with fixed prompts. Comprehensive evaluations conducted on image inpainting and style transfer tasks across various models confirm the potent efficacy of PReMA. 
+
+**Abstract (ZH)**: 尽管多模态扩散模型，如文本到图像模型，在进展和灵活性方面取得了显著成就，但这些模型对对抗输入的敏感性依然研究不足。与预期相反，我们的研究表明，现有扩散模型中文本模态和图像模态之间的对齐是不充分的。这种不对齐在生成不适当或不适合工作（NSFW）内容时带来了重大风险。为此，我们提出了一种名为Prompt-Restricted Multi-modal Attack（PReMA）的新型攻击方法，通过修改输入图像并与任何指定的提示相结合来操纵生成的内容，而不改变提示本身。PReMA是第一个仅通过创建对抗图像来操纵模型输出的攻击方法，区别于先前主要生成对抗提示的方法。因此，PReMA对使用固定提示的图像编辑应用程序中的多模态扩散模型完整性构成了新的威胁。在各种模型上进行的图像填补和风格迁移任务中的全面评估证实了PReMA的强大效果。 
+
+---

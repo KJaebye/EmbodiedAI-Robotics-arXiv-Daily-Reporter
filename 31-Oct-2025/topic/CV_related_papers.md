@@ -1,0 +1,208 @@
+# Running VLAs at Real-time Speed 
+
+**Title (ZH)**: 运行VLAs以实时速度 
+
+**Authors**: Yunchao Ma, Yizhuang Zhou, Yunhuan Yang, Tiancai Wang, Haoqiang Fan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26742)  
+
+**Abstract**: In this paper, we show how to run pi0-level multi-view VLA at 30Hz frame rate and at most 480Hz trajectory frequency using a single consumer GPU. This enables dynamic and real-time tasks that were previously believed to be unattainable by large VLA models. To achieve it, we introduce a bag of strategies to eliminate the overheads in model inference. The real-world experiment shows that the pi0 policy with our strategy achieves a 100% success rate in grasping a falling pen task. Based on the results, we further propose a full streaming inference framework for real-time robot control of VLA. Code is available at this https URL. 
+
+**Abstract (ZH)**: 本文展示了如何使用单个消费级GPU在30Hz帧率和最多480Hz轨迹频率下运行pi0级多视图VLA。这使得以前被认为无法实现的动态和实时任务成为可能。为实现这一目标，我们提出了一套策略以消除模型推理的开销。实验结果表明，结合我们策略的pi0策略在抓取掉落的钢笔任务中实现了100%的成功率。基于这些结果，我们进一步提出了一个完整的流式推理框架，用于实时控制VLA。代码可从以下链接获取：this https URL。 
+
+---
+# AgriGS-SLAM: Orchard Mapping Across Seasons via Multi-View Gaussian Splatting SLAM 
+
+**Title (ZH)**: AgriGS-SLAM：多视图高斯点云SLAM在跨季节果园制图中的应用 
+
+**Authors**: Mirko Usuelli, David Rapado-Rincon, Gert Kootstra, Matteo Matteucci  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26358)  
+
+**Abstract**: Autonomous robots in orchards require real-time 3D scene understanding despite repetitive row geometry, seasonal appearance changes, and wind-driven foliage motion. We present AgriGS-SLAM, a Visual--LiDAR SLAM framework that couples direct LiDAR odometry and loop closures with multi-camera 3D Gaussian Splatting (3DGS) rendering. Batch rasterization across complementary viewpoints recovers orchard structure under occlusions, while a unified gradient-driven map lifecycle executed between keyframes preserves fine details and bounds memory. Pose refinement is guided by a probabilistic LiDAR-based depth consistency term, back-propagated through the camera projection to tighten geometry-appearance coupling. We deploy the system on a field platform in apple and pear orchards across dormancy, flowering, and harvesting, using a standardized trajectory protocol that evaluates both training-view and novel-view synthesis to reduce 3DGS overfitting in evaluation. Across seasons and sites, AgriGS-SLAM delivers sharper, more stable reconstructions and steadier trajectories than recent state-of-the-art 3DGS-SLAM baselines while maintaining real-time performance on-tractor. While demonstrated in orchard monitoring, the approach can be applied to other outdoor domains requiring robust multimodal perception. 
+
+**Abstract (ZH)**: 自主机器人在果园中需要在重复的行几何、季节性外观变化和风驱动的叶片运动下进行实时3D场景理解。我们提出AgriGS-SLAM，这是一种结合直接LiDAR里程计、环视闭合与多相机3D高斯点云渲染的视觉-LiDAR SLAM框架。跨互补视点的批处理光栅化恢复遮挡下的果园结构，而统一的梯度驱动地图生命周期在关键帧之间执行，保留了细部并限制了内存使用。姿态优化由通过相机投影反向传播的概率LiDAR深度一致性项指导，从而紧化几何与外观的耦合。我们在苹果园和梨园中部署系统，跨越休眠期、花期和收获期，使用标准的轨迹协议评估训练视图和新颖视图合成，以减少3DGS过拟合。无论是在季节还是不同地点，AgriGS-SLAM 都能提供更清晰、更稳定的重建以及更稳定的轨迹，同时保持在拖拉机上的实时性能。虽然该方法在果园监控中演示，但其可用于其他需要稳健多模态感知的户外领域。 
+
+---
+# Self-localization on a 3D map by fusing global and local features from a monocular camera 
+
+**Title (ZH)**: 基于单目摄像头全局和局部特征融合的三维地图自定位 
+
+**Authors**: Satoshi Kikuch, Masaya Kato, Tsuyoshi Tasaki  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26170)  
+
+**Abstract**: Self-localization on a 3D map by using an inexpensive monocular camera is required to realize autonomous driving. Self-localization based on a camera often uses a convolutional neural network (CNN) that can extract local features that are calculated by nearby pixels. However, when dynamic obstacles, such as people, are present, CNN does not work well. This study proposes a new method combining CNN with Vision Transformer, which excels at extracting global features that show the relationship of patches on whole image. Experimental results showed that, compared to the state-of-the-art method (SOTA), the accuracy improvement rate in a CG dataset with dynamic obstacles is 1.5 times higher than that without dynamic obstacles. Moreover, the self-localization error of our method is 20.1% smaller than that of SOTA on public datasets. Additionally, our robot using our method can localize itself with 7.51cm error on average, which is more accurate than SOTA. 
+
+**Abstract (ZH)**: 使用廉价单目相机在3D地图上实现自我定位对于自动驾驶是必要的。基于相机的自我定位常常利用卷积神经网络（CNN）提取由附近像素计算出的局部特征。然而，在存在动态障碍物（如行人）的情况下，CNN的效果较差。本研究提出了一种将CNN与Vision Transformer结合的新方法，Vision Transformer擅长提取显示整个图像上patches间关系的全局特征。实验结果表明，与最先进的方法（SOTA）相比，在含有动态障碍物的CG数据集中，有动态障碍物情况下的准确性提高率是无动态障碍物情况下的1.5倍。此外，我们的方法在公共数据集上的自我定位误差比SOTA小20.1%。此外，使用我们方法的机器人平均自我定位误差为7.51厘米，比SOTA更准确。 
+
+---
+# Spiking Patches: Asynchronous, Sparse, and Efficient Tokens for Event Cameras 
+
+**Title (ZH)**: 脉冲补丁：事件相机的异步、稀疏和高效标记 
+
+**Authors**: Christoffer Koo Øhrstrøm, Ronja Güldenring, Lazaros Nalpantidis  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26614)  
+
+**Abstract**: We propose tokenization of events and present a tokenizer, Spiking Patches, specifically designed for event cameras. Given a stream of asynchronous and spatially sparse events, our goal is to discover an event representation that preserves these properties. Prior works have represented events as frames or as voxels. However, while these representations yield high accuracy, both frames and voxels are synchronous and decrease the spatial sparsity. Spiking Patches gives the means to preserve the unique properties of event cameras and we show in our experiments that this comes without sacrificing accuracy. We evaluate our tokenizer using a GNN, PCN, and a Transformer on gesture recognition and object detection. Tokens from Spiking Patches yield inference times that are up to 3.4x faster than voxel-based tokens and up to 10.4x faster than frames. We achieve this while matching their accuracy and even surpassing in some cases with absolute improvements up to 3.8 for gesture recognition and up to 1.4 for object detection. Thus, tokenization constitutes a novel direction in event-based vision and marks a step towards methods that preserve the properties of event cameras. 
+
+**Abstract (ZH)**: 我们提出事件的分词方法并呈现一种专门针对事件相机的分词器——Spiking Patches。给定一串异步且空间上稀疏的事件流，我们的目标是发现一种能保留这些特性的事件表示。先前的工作将事件表示为帧或体素。然而，这两种表示虽然精度很高，但帧和体素是同步的，会降低空间上的稀疏性。Spiking Patches 提供了一种方法来保留事件相机的独特特性，并且我们在实验中展示了这种方法在保持精度的同时并未牺牲准确性。我们使用图神经网络、PCN 和 Transformer 对手势识别和物体检测进行了评价。Spiking Patches 的分词在推理时间上比基于体素的分词快多达 3.4 倍，比帧快多达 10.4 倍。同时，我们在准确性上与其匹配，并在某些情况下超过它们，绝对改进分别高达 3.8 倍的手势识别和 1.4 倍的物体检测。因此，分词为事件驱动视觉提供了一种新的方向，并标志着朝着保留事件相机特性的方法迈出的一步。 
+
+---
+# Exploring Object-Aware Attention Guided Frame Association for RGB-D SLAM 
+
+**Title (ZH)**: 探索基于对象感知注意力引导的RGB-D SLAM帧关联方法 
+
+**Authors**: Ali Caglayan, Nevrez Imamoglu, Oguzhan Guclu, Ali Osman Serhatoglu, Ahmet Burak Can, Ryosuke Nakamura  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26131)  
+
+**Abstract**: Attention models have recently emerged as a powerful approach, demonstrating significant progress in various fields. Visualization techniques, such as class activation mapping, provide visual insights into the reasoning of convolutional neural networks (CNNs). Using network gradients, it is possible to identify regions where the network pays attention during image recognition tasks. Furthermore, these gradients can be combined with CNN features to localize more generalizable, task-specific attentive (salient) regions within scenes. However, explicit use of this gradient-based attention information integrated directly into CNN representations for semantic object understanding remains limited. Such integration is particularly beneficial for visual tasks like simultaneous localization and mapping (SLAM), where CNN representations enriched with spatially attentive object locations can enhance performance. In this work, we propose utilizing task-specific network attention for RGB-D indoor SLAM. Specifically, we integrate layer-wise attention information derived from network gradients with CNN feature representations to improve frame association performance. Experimental results indicate improved performance compared to baseline methods, particularly for large environments. 
+
+**Abstract (ZH)**: 注意力模型 recently emerged as a强大方法，在多个领域取得了显著进展。可视化技术，如类激活映射，提供了对卷积神经网络（CNNs）推理过程的视觉洞察。通过网络梯度，可以识别网络在图像识别任务中关注的区域。进一步地，这些梯度可以与CNN特征结合，定位场景中更具有泛化能力和任务特定的注意（显著）区域。然而，直接将基于梯度的注意力信息整合到CNN表示中以实现语义对象理解的应用仍然有限。这种整合对于同时定位与地图构建（SLAM）等视觉任务特别有益，通过增强具有空间注意对象位置的CNN表示，可以提高性能。在本工作中，我们提出了利用任务特定的网络注意力进行RGB-D室内SLAM。具体而言，我们将从网络梯度中提取的逐层注意力信息与CNN特征表示相结合，以提高帧关联性能。实验结果表明，与基线方法相比，特别是在大型环境中，性能得到了提升。 
+
+---
+# BikeScenes: Online LiDAR Semantic Segmentation for Bicycles 
+
+**Title (ZH)**: BikeScenes: 在线LiDAR语义分割自行车 
+
+**Authors**: Denniz Goren, Holger Caesar  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.25901)  
+
+**Abstract**: The vulnerability of cyclists, exacerbated by the rising popularity of faster e-bikes, motivates adapting automotive perception technologies for bicycle safety. We use our multi-sensor 'SenseBike' research platform to develop and evaluate a 3D LiDAR segmentation approach tailored to bicycles. To bridge the automotive-to-bicycle domain gap, we introduce the novel BikeScenes-lidarseg Dataset, comprising 3021 consecutive LiDAR scans around the university campus of the TU Delft, semantically annotated for 29 dynamic and static classes. By evaluating model performance, we demonstrate that fine-tuning on our BikeScenes dataset achieves a mean Intersection-over-Union (mIoU) of 63.6%, significantly outperforming the 13.8% obtained with SemanticKITTI pre-training alone. This result underscores the necessity and effectiveness of domain-specific training. We highlight key challenges specific to bicycle-mounted, hardware-constrained perception systems and contribute the BikeScenes dataset as a resource for advancing research in cyclist-centric LiDAR segmentation. 
+
+**Abstract (ZH)**: 电动助力自行车 popularity 的增长加剧了骑车人的脆弱性，促使我们适应汽车感知技术以提高自行车安全。我们利用多传感器 'SenseBike' 研究平台开发和评估了针对自行车的 3D LiDAR 分割方法。为弥合汽车到自行车领域的差距，我们引入了新颖的 BikeScenes-lidarseg 数据集，包含 3021 个连续的 LiDAR 扫描，覆盖代尔夫特大学校园，并对 29 个动态和静态类进行了语义标注。通过评估模型性能，我们证明，在我们的 BikeScenes 数据集上进行微调可实现 63.6% 的平均交并比 (mIoU)，显著优于仅使用 SemanticKITTI 预训练的 13.8%。该结果强调了领域特定训练的必要性和有效性。我们指出了自行车搭载、硬件受限感知系统的关键挑战，并贡献了 BikeScenes 数据集作为促进以骑车人为中心的 LiDAR 分割研究的资源。 
+
+---
+# Enhancing Underwater Object Detection through Spatio-Temporal Analysis and Spatial Attention Networks 
+
+**Title (ZH)**: 通过空时分析与空域注意力网络增强水下目标检测 
+
+**Authors**: Sai Likhith Karri, Ansh Saxena  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.25797)  
+
+**Abstract**: This study examines the effectiveness of spatio-temporal modeling and the integration of spatial attention mechanisms in deep learning models for underwater object detection. Specifically, in the first phase, the performance of temporal-enhanced YOLOv5 variant T-YOLOv5 is evaluated, in comparison with the standard YOLOv5. For the second phase, an augmented version of T-YOLOv5 is developed, through the addition of a Convolutional Block Attention Module (CBAM). By examining the effectiveness of the already pre-existing YOLOv5 and T-YOLOv5 models and of the newly developed T-YOLOv5 with CBAM. With CBAM, the research highlights how temporal modeling improves detection accuracy in dynamic marine environments, particularly under conditions of sudden movements, partial occlusions, and gradual motion. The testing results showed that YOLOv5 achieved a mAP@50-95 of 0.563, while T-YOLOv5 and T-YOLOv5 with CBAM outperformed with mAP@50-95 scores of 0.813 and 0.811, respectively, highlighting their superior accuracy and generalization in detecting complex objects. The findings demonstrate that T-YOLOv5 significantly enhances detection reliability compared to the standard model, while T-YOLOv5 with CBAM further improves performance in challenging scenarios, although there is a loss of accuracy when it comes to simpler scenarios. 
+
+**Abstract (ZH)**: 本研究探讨了时空建模及其在水下物体检测深度学习模型中的时空注意力机制集成的有效性。具体而言，在第一阶段，评估了增强时序YOLOv5变体T-YOLOv5的性能，与标准YOLOv5进行比较。在第二阶段，通过添加卷积块注意力模块（CBAM）开发了T-YOLOv5的增强版本。通过研究现有YOLOv5、T-YOLOv5模型以及新开发的结合CBAM的T-YOLOv5的有效性，研究表明，CBAM如何通过时空建模在动态海洋环境中提高检测准确性，特别是在突然移动、部分遮挡和渐进运动等条件下。测试结果显示，YOLOv5的mAP@50-95为0.563，而T-YOLOv5和结合CBAM的T-YOLOv5分别获得了0.813和0.811的mAP@50-95，突显了它们在检测复杂对象方面的更高准确性和泛化能力。研究结果表明，与标准模型相比，T-YOLOv5显著提高了检测可靠性，而结合CBAM的T-YOLOv5在复杂场景中进一步提高了性能，但在简单场景中准确度略有下降。 
+
+---
+# Are Video Models Ready as Zero-Shot Reasoners? An Empirical Study with the MME-CoF Benchmark 
+
+**Title (ZH)**: 视频模型准备好作为零样本推理器了吗？基于MME-CoF基准的实证研究 
+
+**Authors**: Ziyu Guo, Xinyan Chen, Renrui Zhang, Ruichuan An, Yu Qi, Dongzhi Jiang, Xiangtai Li, Manyuan Zhang, Hongsheng Li, Pheng-Ann Heng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26802)  
+
+**Abstract**: Recent video generation models can produce high-fidelity, temporally coherent videos, indicating that they may encode substantial world knowledge. Beyond realistic synthesis, they also exhibit emerging behaviors indicative of visual perception, modeling, and manipulation. Yet, an important question still remains: Are video models ready to serve as zero-shot reasoners in challenging visual reasoning scenarios? In this work, we conduct an empirical study to comprehensively investigate this question, focusing on the leading and popular Veo-3. We evaluate its reasoning behavior across 12 dimensions, including spatial, geometric, physical, temporal, and embodied logic, systematically characterizing both its strengths and failure modes. To standardize this study, we curate the evaluation data into MME-CoF, a compact benchmark that enables in-depth and thorough assessment of Chain-of-Frame (CoF) reasoning. Our findings reveal that while current video models demonstrate promising reasoning patterns on short-horizon spatial coherence, fine-grained grounding, and locally consistent dynamics, they remain limited in long-horizon causal reasoning, strict geometric constraints, and abstract logic. Overall, they are not yet reliable as standalone zero-shot reasoners, but exhibit encouraging signs as complementary visual engines alongside dedicated reasoning models. Project page: this https URL 
+
+**Abstract (ZH)**: 最近的视频生成模型可以生成高保真、时序上一致的视频，表明它们可能编码了大量的世界知识。除了现实合成之外，它们还表现出一些视觉感知、建模和操作的新兴行为。然而，一个重要的问题仍然存在：视频模型是否准备好在具有挑战性的视觉推理场景中作为零-shot推理引擎使用？在本文中，我们进行了一项实证研究，全面探讨这一问题，重点关注领先的流行模型Veо-3。我们从12个维度评估其推理行为，包括空间、几何、物理、时间和实体逻辑，系统地刻画其优势和失败模式。为了标准化这一研究，我们将评估数据整理成MME-CoF，这是一个紧凑的基准测试，能够深入和全面评估Chain-of-Frame（CoF）推理。我们的发现表明，尽管当前的视频模型在短时效空间一致性、精细的空间相关性和局部一致的动力学方面表现出有希望的推理模式，但在长时效因果推理、严格的几何约束和抽象逻辑方面依然有限。总体而言，它们尚未可靠地作为独立的零-shot推理引擎使用，但作为与专门推理模型互补的视觉引擎时展现出令人鼓舞的迹象。 
+
+---
+# Process Integrated Computer Vision for Real-Time Failure Prediction in Steel Rolling Mill 
+
+**Title (ZH)**: 实时预测钢铁轧制厂故障的工艺集成计算机视觉技术 
+
+**Authors**: Vaibhav Kurrey, Sivakalyan Pujari, Gagan Raj Gupta  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26684)  
+
+**Abstract**: We present a long-term deployment study of a machine vision-based anomaly detection system for failure prediction in a steel rolling mill. The system integrates industrial cameras to monitor equipment operation, alignment, and hot bar motion in real time along the process line. Live video streams are processed on a centralized video server using deep learning models, enabling early prediction of equipment failures and process interruptions, thereby reducing unplanned breakdown costs. Server-based inference minimizes the computational load on industrial process control systems (PLCs), supporting scalable deployment across production lines with minimal additional resources. By jointly analyzing sensor data from data acquisition systems and visual inputs, the system identifies the location and probable root causes of failures, providing actionable insights for proactive maintenance. This integrated approach enhances operational reliability, productivity, and profitability in industrial manufacturing environments. 
+
+**Abstract (ZH)**: 基于机器视觉的钢轧机故障预测异常检测系统长周期部署研究 
+
+---
+# ResMatching: Noise-Resilient Computational Super-Resolution via Guided Conditional Flow Matching 
+
+**Title (ZH)**: ResMatching: 噪声鲁棒的指导条件流匹配计算超分辨率 
+
+**Authors**: Anirban Ray, Vera Galinova, Florian Jug  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26601)  
+
+**Abstract**: Computational Super-Resolution (CSR) in fluorescence microscopy has, despite being an ill-posed problem, a long history. At its very core, CSR is about finding a prior that can be used to extrapolate frequencies in a micrograph that have never been imaged by the image-generating microscope. It stands to reason that, with the advent of better data-driven machine learning techniques, stronger prior can be learned and hence CSR can lead to better results. Here, we present ResMatching, a novel CSR method that uses guided conditional flow matching to learn such improved data-priors. We evaluate ResMatching on 4 diverse biological structures from the BioSR dataset and compare its results against 7 baselines. ResMatching consistently achieves competitive results, demonstrating in all cases the best trade-off between data fidelity and perceptual realism. We observe that CSR using ResMatching is particularly effective in cases where a strong prior is hard to learn, e.g. when the given low-resolution images contain a lot of noise. Additionally, we show that ResMatching can be used to sample from an implicitly learned posterior distribution and that this distribution is calibrated for all tested use-cases, enabling our method to deliver a pixel-wise data-uncertainty term that can guide future users to reject uncertain predictions. 
+
+**Abstract (ZH)**: 荧光显微镜中超分辨率计算（Computational Super-Resolution in Fluorescence Microscopy: A Long History Despite Being an Ill-Posed Problem） 
+
+---
+# SPG-CDENet: Spatial Prior-Guided Cross Dual Encoder Network for Multi-Organ Segmentation 
+
+**Title (ZH)**: SPG-CDENet：空间先验引导的跨模态双编码器网络用于多器官分割 
+
+**Authors**: Xizhi Tian, Changjun Zhou, Yulin. Yang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26390)  
+
+**Abstract**: Multi-organ segmentation is a critical task in computer-aided diagnosis. While recent deep learning methods have achieved remarkable success in image segmentation, huge variations in organ size and shape challenge their effectiveness in multi-organ segmentation. To address these challenges, we propose a Spatial Prior-Guided Cross Dual Encoder Network (SPG-CDENet), a novel two-stage segmentation paradigm designed to improve multi-organ segmentation accuracy. Our SPG-CDENet consists of two key components: a spatial prior network and a cross dual encoder network. The prior network generates coarse localization maps that delineate the approximate ROI, serving as spatial guidance for the dual encoder network. The cross dual encoder network comprises four essential components: a global encoder, a local encoder, a symmetric cross-attention module, and a flow-based decoder. The global encoder captures global semantic features from the entire image, while the local encoder focuses on features from the prior network. To enhance the interaction between the global and local encoders, a symmetric cross-attention module is proposed across all layers of the encoders to fuse and refine features. Furthermore, the flow-based decoder directly propagates high-level semantic features from the final encoder layer to all decoder layers, maximizing feature preservation and utilization. Extensive qualitative and quantitative experiments on two public datasets demonstrate the superior performance of SPG-CDENet compared to existing segmentation methods. Furthermore, ablation studies further validate the effectiveness of the proposed modules in improving segmentation accuracy. 
+
+**Abstract (ZH)**: 多器官分割是计算机辅助诊断中的关键任务。尽管近年来深度学习方法在图像分割方面取得了显著成功，但器官大小和形状的巨大变化挑战了其在多器官分割中的有效性。为了解决这些挑战，我们提出了一种空间先验引导交叉双编码器网络（SPG-CDENet），这是一种新颖的两阶段分割范式，旨在提高多器官分割的准确性。 
+
+---
+# GLYPH-SR: Can We Achieve Both High-Quality Image Super-Resolution and High-Fidelity Text Recovery via VLM-guided Latent Diffusion Model? 
+
+**Title (ZH)**: GLYPH-SR：通过VLM引导的潜在扩散模型，我们能否同时实现高质量图像超分辨和高保真文本恢复？ 
+
+**Authors**: Mingyu Sung, Seungjae Ham, Kangwoo Kim, Yeokyoung Yoon, Sangseok Yun, Il-Min Kim, Jae-Mo Kang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26339)  
+
+**Abstract**: Image super-resolution(SR) is fundamental to many vision system-from surveillance and autonomy to document analysis and retail analytics-because recovering high-frequency details, especially scene-text, enables reliable downstream perception. Scene-text, i.e., text embedded in natural images such as signs, product labels, and storefronts, often carries the most actionable information; when characters are blurred or hallucinated, optical character recognition(OCR) and subsequent decisions fail even if the rest of the image appears sharp. Yet previous SR research has often been tuned to distortion (PSNR/SSIM) or learned perceptual metrics (LIPIS, MANIQA, CLIP-IQA, MUSIQ) that are largely insensitive to character-level errors. Furthermore, studies that do address text SR often focus on simplified benchmarks with isolated characters, overlooking the challenges of text within complex natural scenes. As a result, scene-text is effectively treated as generic texture. For SR to be effective in practical deployments, it is therefore essential to explicitly optimize for both text legibility and perceptual quality. We present GLYPH-SR, a vision-language-guided diffusion framework that aims to achieve both objectives jointly. GLYPH-SR utilizes a Text-SR Fusion ControlNet(TS-ControlNet) guided by OCR data, and a ping-pong scheduler that alternates between text- and scene-centric guidance. To enable targeted text restoration, we train these components on a synthetic corpus while keeping the main SR branch frozen. Across SVT, SCUT-CTW1500, and CUTE80 at x4, and x8, GLYPH-SR improves OCR F1 by up to +15.18 percentage points over diffusion/GAN baseline (SVT x8, OpenOCR) while maintaining competitive MANIQA, CLIP-IQA, and MUSIQ. GLYPH-SR is designed to satisfy both objectives simultaneously-high readability and high visual realism-delivering SR that looks right and reds right. 
+
+**Abstract (ZH)**: 基于视觉语言指导的扩散框架：同时提升场景文本可读性和视觉真实感 
+
+---
+# MV-MLM: Bridging Multi-View Mammography and Language for Breast Cancer Diagnosis and Risk Prediction 
+
+**Title (ZH)**: MV-MLM：桥梁多视图乳腺X线影像与语言在乳腺癌诊断和风险预测中的应用 
+
+**Authors**: Shunjie-Fabian Zheng, Hyeonjun Lee, Thijs Kooi, Ali Diba  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26151)  
+
+**Abstract**: Large annotated datasets are essential for training robust Computer-Aided Diagnosis (CAD) models for breast cancer detection or risk prediction. However, acquiring such datasets with fine-detailed annotation is both costly and time-consuming. Vision-Language Models (VLMs), such as CLIP, which are pre-trained on large image-text pairs, offer a promising solution by enhancing robustness and data efficiency in medical imaging tasks. This paper introduces a novel Multi-View Mammography and Language Model for breast cancer classification and risk prediction, trained on a dataset of paired mammogram images and synthetic radiology reports. Our MV-MLM leverages multi-view supervision to learn rich representations from extensive radiology data by employing cross-modal self-supervision across image-text pairs. This includes multiple views and the corresponding pseudo-radiology reports. We propose a novel joint visual-textual learning strategy to enhance generalization and accuracy performance over different data types and tasks to distinguish breast tissues or cancer characteristics(calcification, mass) and utilize these patterns to understand mammography images and predict cancer risk. We evaluated our method on both private and publicly available datasets, demonstrating that the proposed model achieves state-of-the-art performance in three classification tasks: (1) malignancy classification, (2) subtype classification, and (3) image-based cancer risk prediction. Furthermore, the model exhibits strong data efficiency, outperforming existing fully supervised or VLM baselines while trained on synthetic text reports and without the need for actual radiology reports. 
+
+**Abstract (ZH)**: 大型注释数据集是训练用于乳腺癌检测或风险预测的鲁棒计算机辅助诊断(CAD)模型的关键。然而，获取具有细致注释的数据集既昂贵又耗时。视觉-语言模型(VLMs)，如CLIP，这些模型是在大规模图像-文本对上预训练的，通过在医学成像任务中增强鲁棒性和数据效率提供了有希望的解决方案。本文介绍了一种用于乳腺癌分类和风险预测的新型多视图乳腺X线摄影和语言模型，该模型基于配对的乳腺X线摄影图像和合成放射学报告数据集进行训练。我们的MV-MLM利用多视图监督，通过在图像-文本对之间进行跨模态自监督学习来从大量放射学数据中学习丰富的表示，包括多个视图和相应的伪放射学报告。我们提出了一种新的联合视觉-文本学习策略，以增强在不同数据类型和任务上的泛化能力和准确性能，区分乳腺组织或癌症特征（钙化、肿块），利用这些模式来理解乳腺X线摄影图像并预测癌症风险。我们在私人和公开可用的两个数据集上评估了该方法，结果表明所提模型在三项分类任务中达到了最先进的性能：(1) 恶性程度分类，(2) 亚型分类，(3) 图像基癌症风险预测。此外，该模型表现出强大的数据效率，在使用合成文本报告进行训练而无需实际放射学报告的情况下，优于现有完全监督或VLM基线模型。 
+
+---
+# WOD-E2E: Waymo Open Dataset for End-to-End Driving in Challenging Long-tail Scenarios 
+
+**Title (ZH)**: Waymo 开放数据集：面向具有挑战性的长尾场景的端到端驾驶 
+
+**Authors**: Runsheng Xu, Hubert Lin, Wonseok Jeon, Hao Feng, Yuliang Zou, Liting Sun, John Gorman, Kate Tolstaya, Sarah Tang, Brandyn White, Ben Sapp, Mingxing Tan, Jyh-Jing Hwang, Drago Anguelov  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26125)  
+
+**Abstract**: Vision-based end-to-end (E2E) driving has garnered significant interest in the research community due to its scalability and synergy with multimodal large language models (MLLMs). However, current E2E driving benchmarks primarily feature nominal scenarios, failing to adequately test the true potential of these systems. Furthermore, existing open-loop evaluation metrics often fall short in capturing the multi-modal nature of driving or effectively evaluating performance in long-tail scenarios. To address these gaps, we introduce the Waymo Open Dataset for End-to-End Driving (WOD-E2E). WOD-E2E contains 4,021 driving segments (approximately 12 hours), specifically curated for challenging long-tail scenarios that that are rare in daily life with an occurring frequency of less than 0.03%. Concretely, each segment in WOD-E2E includes the high-level routing information, ego states, and 360-degree camera views from 8 surrounding cameras. To evaluate the E2E driving performance on these long-tail situations, we propose a novel open-loop evaluation metric: Rater Feedback Score (RFS). Unlike conventional metrics that measure the distance between predicted way points and the logs, RFS measures how closely the predicted trajectory matches rater-annotated trajectory preference labels. We have released rater preference labels for all WOD-E2E validation set segments, while the held out test set labels have been used for the 2025 WOD-E2E Challenge. Through our work, we aim to foster state of the art research into generalizable, robust, and safe end-to-end autonomous driving agents capable of handling complex real-world situations. 
+
+**Abstract (ZH)**: 基于视觉的端到端驾驶因其实现的 scalability 和与多模态大语言模型的协同效应而在研究界引起了广泛关注。然而，当前的端到端驾驶基准主要包含常规场景，未能充分测试这些系统的真正潜力。此外，现有的开环评估指标往往无法捕捉驾驶的多模态本质或有效评估长尾场景中的性能。为解决这些问题，我们介绍了Waymo 开放数据集用于端到端驾驶 (WOD-E2E)。WOD-E2E 包含 4,021 个驾驶段（约 12 小时），特别为日常生活中罕见的、发生频率低于 0.03% 的挑战性长尾场景精心策划。具体而言，每个WOD-E2E 的段落包括高级路线信息、ego 状态以及来自 8 个周围摄像头的全景视图。为评估这些长尾情况下的端到端驾驶性能，我们提出了一种新的开环评估指标：评分反馈评分 (RFS)。不同于传统的衡量预测路径点与日志之间距离的指标，RFS 通过预测轨迹与评分标注的路径偏好标签的吻合程度来衡量。我们为所有 WOD-E2E 验证集段落提供了评分偏好标签，而被保留的测试集标签则用于 2025 年 WOD-E2E 挑战赛。通过我们的工作，我们旨在促进对通用、鲁棒和安全的端到端自主驾驶代理的研究，这些代理能够处理复杂的现实世界情况。 
+
+---
+# ScaleDiff: Higher-Resolution Image Synthesis via Efficient and Model-Agnostic Diffusion 
+
+**Title (ZH)**: ScaleDiff: 通过高效且模型无关的扩散实现高分辨率图像合成 
+
+**Authors**: Sungho Koh, SeungJu Cha, Hyunwoo Oh, Kwanyoung Lee, Dong-Jin Kim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.25818)  
+
+**Abstract**: Text-to-image diffusion models often exhibit degraded performance when generating images beyond their training resolution. Recent training-free methods can mitigate this limitation, but they often require substantial computation or are incompatible with recent Diffusion Transformer models. In this paper, we propose ScaleDiff, a model-agnostic and highly efficient framework for extending the resolution of pretrained diffusion models without any additional training. A core component of our framework is Neighborhood Patch Attention (NPA), an efficient mechanism that reduces computational redundancy in the self-attention layer with non-overlapping patches. We integrate NPA into an SDEdit pipeline and introduce Latent Frequency Mixing (LFM) to better generate fine details. Furthermore, we apply Structure Guidance to enhance global structure during the denoising process. Experimental results demonstrate that ScaleDiff achieves state-of-the-art performance among training-free methods in terms of both image quality and inference speed on both U-Net and Diffusion Transformer architectures. 
+
+**Abstract (ZH)**: 无训练扩展：一种适用于预训练扩散模型的模型agnostic且高效的框架 
+
+---
+# DINO-YOLO: Self-Supervised Pre-training for Data-Efficient Object Detection in Civil Engineering Applications 
+
+**Title (ZH)**: DINO-YOLO：基于自我监督预训练的高效数据物体检测在土木工程应用中 
+
+**Authors**: Malaisree P, Youwai S, Kitkobsin T, Janrungautai S, Amorndechaphon D, Rojanavasu P  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.25140)  
+
+**Abstract**: Object detection in civil engineering applications is constrained by limited annotated data in specialized domains. We introduce DINO-YOLO, a hybrid architecture combining YOLOv12 with DINOv3 self-supervised vision transformers for data-efficient detection. DINOv3 features are strategically integrated at two locations: input preprocessing (P0) and mid-backbone enhancement (P3). Experimental validation demonstrates substantial improvements: Tunnel Segment Crack detection (648 images) achieves 12.4% improvement, Construction PPE (1K images) gains 13.7%, and KITTI (7K images) shows 88.6% improvement, while maintaining real-time inference (30-47 FPS). Systematic ablation across five YOLO scales and nine DINOv3 variants reveals that Medium-scale architectures achieve optimal performance with DualP0P3 integration (55.77% mAP@0.5), while Small-scale requires Triple Integration (53.63%). The 2-4x inference overhead (21-33ms versus 8-16ms baseline) remains acceptable for field deployment on NVIDIA RTX 5090. DINO-YOLO establishes state-of-the-art performance for civil engineering datasets (<10K images) while preserving computational efficiency, providing practical solutions for construction safety monitoring and infrastructure inspection in data-constrained environments. 
+
+**Abstract (ZH)**: 在特殊领域中基于有限标注数据的 civil engineering 应用中的物体检测受到限制。我们引入了 DINO-YOLO，这是一种将 YOLOv12 与 DINOv3 自监督视觉变换器结合的混合架构，用于高效数据检测。DINOv3 特征在输入预处理（P0）和中间骨干增强（P3）两个位置战略性集成。实验验证显示了显著改进：隧道段裂缝检测（648 张图像）提高了 12.4%，建筑工程个人防护装备（1000 张图像）提高了 13.7%，KITTI（7000 张图像）提高了 88.6%，同时保持实时推断（30-47 FPS）。系统性消融研究覆盖五个 YOLO 模型尺度和九种 DINOv3 变体，表明中等规模架构通过 DualP0P3 集成实现最佳性能（55.77% mAP@0.5），而小型架构需要三重集成（53.63%）。2-4 倍的推断开销（21-33ms 对比 8-16ms 基线）在 NVIDIA RTX 5090 的现场部署中是可以接受的。DINO-YOLO 为包含少于 10000 张图像的 civil engineering 数据集设定了最先进的性能，同时保持了计算效率，为数据受限环境中的建筑安全监测和基础设施检查提供了实用解决方案。 
+
+---
