@@ -1,0 +1,260 @@
+# WildfireX-SLAM: A Large-scale Low-altitude RGB-D Dataset for Wildfire SLAM and Beyond 
+
+**Title (ZH)**: WildfireX-SLAM：一种用于wildfire SLAM及其相关领域的大规模低-altitude RGB-D数据集 
+
+**Authors**: Zhicong Sun, Jacqueline Lo, Jinxing Hu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.27133)  
+
+**Abstract**: 3D Gaussian splatting (3DGS) and its subsequent variants have led to remarkable progress in simultaneous localization and mapping (SLAM). While most recent 3DGS-based SLAM works focus on small-scale indoor scenes, developing 3DGS-based SLAM methods for large-scale forest scenes holds great potential for many real-world applications, especially for wildfire emergency response and forest management. However, this line of research is impeded by the absence of a comprehensive and high-quality dataset, and collecting such a dataset over real-world scenes is costly and technically infeasible. To this end, we have built a large-scale, comprehensive, and high-quality synthetic dataset for SLAM in wildfire and forest environments. Leveraging the Unreal Engine 5 Electric Dreams Environment Sample Project, we developed a pipeline to easily collect aerial and ground views, including ground-truth camera poses and a range of additional data modalities from unmanned aerial vehicle. Our pipeline also provides flexible controls on environmental factors such as light, weather, and types and conditions of wildfire, supporting the need for various tasks covering forest mapping, wildfire emergency response, and beyond. The resulting pilot dataset, WildfireX-SLAM, contains 5.5k low-altitude RGB-D aerial images from a large-scale forest map with a total size of 16 km2. On top of WildfireX-SLAM, a thorough benchmark is also conducted, which not only reveals the unique challenges of 3DGS-based SLAM in the forest but also highlights potential improvements for future works. The dataset and code will be publicly available. Project page: this https URL. 
+
+**Abstract (ZH)**: 3D高斯点了拟及其后续变体在同时定位与映射中的进展及其在大规模森林场景中的应用潜力：构建适用于野火和森林环境的大型、全面和高质量合成数据集 
+
+---
+# Information-Theoretic Greedy Layer-wise Training for Traffic Sign Recognition 
+
+**Title (ZH)**: 基于信息论的贪婪逐层训练在交通标志识别中的应用 
+
+**Authors**: Shuyan Lyu, Zhanzimo Wu, Junliang Du  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.27651)  
+
+**Abstract**: Modern deep neural networks (DNNs) are typically trained with a global cross-entropy loss in a supervised end-to-end manner: neurons need to store their outgoing weights; training alternates between a forward pass (computation) and a top-down backward pass (learning) which is biologically implausible. Alternatively, greedy layer-wise training eliminates the need for cross-entropy loss and backpropagation. By avoiding the computation of intermediate gradients and the storage of intermediate outputs, it reduces memory usage and helps mitigate issues such as vanishing or exploding gradients. However, most existing layer-wise training approaches have been evaluated only on relatively small datasets with simple deep architectures. In this paper, we first systematically analyze the training dynamics of popular convolutional neural networks (CNNs) trained by stochastic gradient descent (SGD) through an information-theoretic lens. Our findings reveal that networks converge layer-by-layer from bottom to top and that the flow of information adheres to a Markov information bottleneck principle. Building on these observations, we propose a novel layer-wise training approach based on the recently developed deterministic information bottleneck (DIB) and the matrix-based Rényi's $\alpha$-order entropy functional. Specifically, each layer is trained jointly with an auxiliary classifier that connects directly to the output layer, enabling the learning of minimal sufficient task-relevant representations. We empirically validate the effectiveness of our training procedure on CIFAR-10 and CIFAR-100 using modern deep CNNs and further demonstrate its applicability to a practical task involving traffic sign recognition. Our approach not only outperforms existing layer-wise training baselines but also achieves performance comparable to SGD. 
+
+**Abstract (ZH)**: 现代深度神经网络（DNNs）通常以监督端到端的方式使用全局交叉熵损失进行训练：神经元需要存储其权重；训练交替进行前向传播（计算）和自上而下的反向传播（学习），这在生物学上是不可行的。 alternatively，贪婪分层训练消除了交叉熵损失和反向传播的需要。通过避免中间梯度的计算和中间输出的存储，它减少了内存使用，并有助于缓解梯度消失或爆炸等问题。然而，现有的大多数分层训练方法仅在相对较小的数据集和简单的深度架构上进行了评估。在本文中，我们首先从信息论的视角系统地分析了通过随机梯度下降（SGD）训练的流行卷积神经网络（CNNs）的训练动态。我们的发现揭示了网络自下而上逐层收敛，并且信息流遵循马尔可夫信息瓶颈原则。基于这些观察，我们提出了一个新的分层训练方法，该方法基于最近开发的确定性信息瓶颈（DIB）和基于矩阵的Rényi’s α阶熵函數。具体地，每个层与直接连接到输出层的辅助分类器联合训练，使学习最小充分的任务相关表示成为可能。我们在CIFAR-10和CIFAR-100上使用现代深度CNNs实验证明了我们训练过程的有效性，并进一步证明了其在涉及交通标志识别的实际任务中的适用性。我们的方法不仅优于现有的分层训练基线，而且在性能上与SGD相当。 
+
+---
+# VessShape: Few-shot 2D blood vessel segmentation by leveraging shape priors from synthetic images 
+
+**Title (ZH)**: VessShape: 通过利用合成图像中的形状先验实现少量样本的二维血 vessels分割 
+
+**Authors**: Cesar H. Comin, Wesley N. Galvão  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.27646)  
+
+**Abstract**: Semantic segmentation of blood vessels is an important task in medical image analysis, but its progress is often hindered by the scarcity of large annotated datasets and the poor generalization of models across different imaging modalities. A key aspect is the tendency of Convolutional Neural Networks (CNNs) to learn texture-based features, which limits their performance when applied to new domains with different visual characteristics. We hypothesize that leveraging geometric priors of vessel shapes, such as their tubular and branching nature, can lead to more robust and data-efficient models. To investigate this, we introduce VessShape, a methodology for generating large-scale 2D synthetic datasets designed to instill a shape bias in segmentation models. VessShape images contain procedurally generated tubular geometries combined with a wide variety of foreground and background textures, encouraging models to learn shape cues rather than textures. We demonstrate that a model pre-trained on VessShape images achieves strong few-shot segmentation performance on two real-world datasets from different domains, requiring only four to ten samples for fine-tuning. Furthermore, the model exhibits notable zero-shot capabilities, effectively segmenting vessels in unseen domains without any target-specific training. Our results indicate that pre-training with a strong shape bias can be an effective strategy to overcome data scarcity and improve model generalization in blood vessel segmentation. 
+
+**Abstract (ZH)**: 基于几何先验的血管语义分割：一种克服数据稀缺性和提高模型泛化能力的新方法 
+
+---
+# InertialAR: Autoregressive 3D Molecule Generation with Inertial Frames 
+
+**Title (ZH)**: 基于惯性参考系的自回归三维分子生成 
+
+**Authors**: Haorui Li, Weitao Du, Yuqiang Li, Hongyu Guo, Shengchao Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.27497)  
+
+**Abstract**: Transformer-based autoregressive models have emerged as a unifying paradigm across modalities such as text and images, but their extension to 3D molecule generation remains underexplored. The gap stems from two fundamental challenges: (1) tokenizing molecules into a canonical 1D sequence of tokens that is invariant to both SE(3) transformations and atom index permutations, and (2) designing an architecture capable of modeling hybrid atom-based tokens that couple discrete atom types with continuous 3D coordinates. To address these challenges, we introduce InertialAR. InertialAR devises a canonical tokenization that aligns molecules to their inertial frames and reorders atoms to ensure SE(3) and permutation invariance. Moreover, InertialAR equips the attention mechanism with geometric awareness via geometric rotary positional encoding (GeoRoPE). In addition, it utilizes a hierarchical autoregressive paradigm to predict the next atom-based token, predicting the atom type first and then its 3D coordinates via Diffusion loss. Experimentally, InertialAR achieves state-of-the-art performance on 7 of the 10 evaluation metrics for unconditional molecule generation across QM9, GEOM-Drugs, and B3LYP. Moreover, it significantly outperforms strong baselines in controllable generation for targeted chemical functionality, attaining state-of-the-art results across all 5 metrics. 
+
+**Abstract (ZH)**: 基于Transformer的自回归模型在文本和图像等多种模态中脱颖而出，但将其扩展到3D分子生成领域仍鲜有探索。InertialAR：基于惯性框架的3D分子自回归生成模型 
+
+---
+# CoMViT: An Efficient Vision Backbone for Supervised Classification in Medical Imaging 
+
+**Title (ZH)**: CoMViT：一种用于医学影像监督分类的高效视觉骨干网络 
+
+**Authors**: Aon Safdar, Mohamed Saadeldin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.27442)  
+
+**Abstract**: Vision Transformers (ViTs) have demonstrated strong potential in medical imaging; however, their high computational demands and tendency to overfit on small datasets limit their applicability in real-world clinical scenarios. In this paper, we present CoMViT, a compact and generalizable Vision Transformer architecture optimized for resource-constrained medical image analysis. CoMViT integrates a convolutional tokenizer, diagonal masking, dynamic temperature scaling, and pooling-based sequence aggregation to improve performance and generalization. Through systematic architectural optimization, CoMViT achieves robust performance across twelve MedMNIST datasets while maintaining a lightweight design with only ~4.5M parameters. It matches or outperforms deeper CNN and ViT variants, offering up to 5-20x parameter reduction without sacrificing accuracy. Qualitative Grad-CAM analyses show that CoMViT consistently attends to clinically relevant regions despite its compact size. These results highlight the potential of principled ViT redesign for developing efficient and interpretable models in low-resource medical imaging settings. 
+
+**Abstract (ZH)**: Vision Transformers (ViTs)在医疗成像领域展现出了强大的潜力；然而，它们的高计算需求和对小数据集的过拟合倾向限制了其在实际临床场景中的应用。本文提出了一种名为CoMViT的紧凑且通用的Vision Transformer架构，该架构旨在针对资源受限的医疗图像分析进行优化。CoMViT结合了卷积分词器、对角掩码、动态温度缩放以及基于池化的序列聚合，以提高性能和泛化能力。通过系统性的架构优化，CoMViT在十二个MedMNIST数据集上实现了稳健的性能，同时保持了轻量级的设计，仅包含约450万参数。CoMViT在参数量上较深层的卷积神经网络（CNN）和ViT变体最多可减少5-20倍，而不牺牲准确性。定性的Grad-CAM分析结果显示，尽管尺寸紧凑，CoMViT仍一致地关注临床相关的区域。这些结果突显了在资源受限的医疗成像环境中设计原理明确的ViT的重要性，以开发有效的可解释模型。 
+
+---
+# Mitigating Semantic Collapse in Partially Relevant Video Retrieval 
+
+**Title (ZH)**: 缓解部分相关视频检索中的语义坍塌 
+
+**Authors**: WonJun Moon, MinSeok Jung, Gilhan Park, Tae-Young Kim, Cheol-Ho Cho, Woojin Jun, Jae-Pil Heo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.27432)  
+
+**Abstract**: Partially Relevant Video Retrieval (PRVR) seeks videos where only part of the content matches a text query. Existing methods treat every annotated text-video pair as a positive and all others as negatives, ignoring the rich semantic variation both within a single video and across different videos. Consequently, embeddings of both queries and their corresponding video-clip segments for distinct events within the same video collapse together, while embeddings of semantically similar queries and segments from different videos are driven apart. This limits retrieval performance when videos contain multiple, diverse events. This paper addresses the aforementioned problems, termed as semantic collapse, in both the text and video embedding spaces. We first introduce Text Correlation Preservation Learning, which preserves the semantic relationships encoded by the foundation model across text queries. To address collapse in video embeddings, we propose Cross-Branch Video Alignment (CBVA), a contrastive alignment method that disentangles hierarchical video representations across temporal scales. Subsequently, we introduce order-preserving token merging and adaptive CBVA to enhance alignment by producing video segments that are internally coherent yet mutually distinctive. Extensive experiments on PRVR benchmarks demonstrate that our framework effectively prevents semantic collapse and substantially improves retrieval accuracy. 
+
+**Abstract (ZH)**: 部分相关视频检索中的语义坍塌及解决方法 
+
+---
+# Fine-Tuning Open Video Generators for Cinematic Scene Synthesis: A Small-Data Pipeline with LoRA and Wan2.1 I2V 
+
+**Title (ZH)**: 基于LoRA和Wan2.1 I2V的小数据量微调管线优化开放视频生成器以实现电影级场景合成 
+
+**Authors**: Meftun Akarsu, Kerem Catay, Sedat Bin Vedat, Enes Kutay Yarkan, Ilke Senturk, Arda Sar, Dafne Eksioglu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.27364)  
+
+**Abstract**: We present a practical pipeline for fine-tuning open-source video diffusion transformers to synthesize cinematic scenes for television and film production from small datasets. The proposed two-stage process decouples visual style learning from motion generation. In the first stage, Low-Rank Adaptation (LoRA) modules are integrated into the cross-attention layers of the Wan2.1 I2V-14B model to adapt its visual representations using a compact dataset of short clips from Ay Yapim's historical television film El Turco. This enables efficient domain transfer within hours on a single GPU. In the second stage, the fine-tuned model produces stylistically consistent keyframes that preserve costume, lighting, and color grading, which are then temporally expanded into coherent 720p sequences through the model's video decoder. We further apply lightweight parallelization and sequence partitioning strategies to accelerate inference without quality degradation. Quantitative and qualitative evaluations using FVD, CLIP-SIM, and LPIPS metrics, supported by a small expert user study, demonstrate measurable improvements in cinematic fidelity and temporal stability over the base model. The complete training and inference pipeline is released to support reproducibility and adaptation across cinematic domains. 
+
+**Abstract (ZH)**: 我们提出了一种实用的流水线，用于从小型数据集 fine-tune 开源视频扩散变换器，以合成电视和电影制作中的电影级场景。提出的两阶段过程将视觉风格学习与运动生成解耦。在第一阶段，将低秩适应（LoRA）模块整合到 Wan2.1 I2V-14B 模型的交叉注意力层中，使用来自 Ay Yapim 历史电视电影《埃尔图克》的短片段紧凑数据集来适应其视觉表示。这使得在单个 GPU 上几小时内高效地实现领域迁移成为可能。在第二阶段，fine-tuned 模型生成风格一致的关键帧，保留服装、照明和色调，然后通过模型的视频解码器按时间扩展为连续的 720p 序列。我们进一步应用轻量级并行化和序列分割策略以在不降质的情况下加速推理。使用 FVD、CLIP-SIM 和 LPIPS 度量，并辅以小型专家用户研究进行定量和定性评估，证明了与基模型相比在电影保真度和时间稳定性方面的可测量改进。完整的训练和推理流水线被发布以支持重现性和跨电影领域调整。 
+
+---
+# Generative Semantic Coding for Ultra-Low Bitrate Visual Communication and Analysis 
+
+**Title (ZH)**: 超低比特率视觉通信与分析的生成式语义编码 
+
+**Authors**: Weiming Chen, Yijia Wang, Zhihan Zhu, Zhihai He  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.27324)  
+
+**Abstract**: We consider the problem of ultra-low bit rate visual communication for remote vision analysis, human interactions and control in challenging scenarios with very low communication bandwidth, such as deep space exploration, battlefield intelligence, and robot navigation in complex environments. In this paper, we ask the following important question: can we accurately reconstruct the visual scene using only a very small portion of the bit rate in existing coding methods while not sacrificing the accuracy of vision analysis and performance of human interactions? Existing text-to-image generation models offer a new approach for ultra-low bitrate image description. However, they can only achieve a semantic-level approximation of the visual scene, which is far insufficient for the purpose of visual communication and remote vision analysis and human interactions. To address this important issue, we propose to seamlessly integrate image generation with deep image compression, using joint text and coding latent to guide the rectified flow models for precise generation of the visual scene. The semantic text description and coding latent are both encoded and transmitted to the decoder at a very small bit rate. Experimental results demonstrate that our method can achieve the same image reconstruction quality and vision analysis accuracy as existing methods while using much less bandwidth. The code will be released upon paper acceptance. 
+
+**Abstract (ZH)**: 超低比特率视觉通信中挑战场景下视觉场景的准确重构：将图像生成与深度图像压缩无缝集成以实现精确的视觉场景生成 
+
+---
+# CASR-Net: An Image Processing-focused Deep Learning-based Coronary Artery Segmentation and Refinement Network for X-ray Coronary Angiogram 
+
+**Title (ZH)**: CASR-Net：一种基于深度学习的心脏冠状动脉成像聚焦分割与精修网络 
+
+**Authors**: Alvee Hassan, Rusab Sarmun, Muhammad E. H. Chowdhury, M. Murugappan, Md. Sakib Abrar Hossain, Sakib Mahmud, Abdulrahman Alqahtani, Sohaib Bassam Zoghoul, Amith Khandakar, Susu M. Zughaier, Somaya Al-Maadeed, Anwarul Hasan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.27315)  
+
+**Abstract**: Early detection of coronary artery disease (CAD) is critical for reducing mortality and improving patient treatment planning. While angiographic image analysis from X-rays is a common and cost-effective method for identifying cardiac abnormalities, including stenotic coronary arteries, poor image quality can significantly impede clinical diagnosis. We present the Coronary Artery Segmentation and Refinement Network (CASR-Net), a three-stage pipeline comprising image preprocessing, segmentation, and refinement. A novel multichannel preprocessing strategy combining CLAHE and an improved Ben Graham method provides incremental gains, increasing Dice Score Coefficient (DSC) by 0.31-0.89% and Intersection over Union (IoU) by 0.40-1.16% compared with using the techniques individually. The core innovation is a segmentation network built on a UNet with a DenseNet121 encoder and a Self-organized Operational Neural Network (Self-ONN) based decoder, which preserves the continuity of narrow and stenotic vessel branches. A final contour refinement module further suppresses false positives. Evaluated with 5-fold cross-validation on a combination of two public datasets that contain both healthy and stenotic arteries, CASR-Net outperformed several state-of-the-art models, achieving an IoU of 61.43%, a DSC of 76.10%, and clDice of 79.36%. These results highlight a robust approach to automated coronary artery segmentation, offering a valuable tool to support clinicians in diagnosis and treatment planning. 
+
+**Abstract (ZH)**: 早期冠状动脉疾病(CAD)的检测对于减少 mortality 和改善患者治疗规划至关重要。虽然从 X 射线图像中进行冠状动脉造影图像分析是一种常见且经济有效的方法，用于识别心脏异常，包括狭窄的冠状动脉，但图像质量差会显著阻碍临床诊断。我们提出了冠状动脉分割和细化网络（CASR-Net），这是一个由图像预处理、分割和细化三个阶段组成的管道。一种新颖的多通道预处理策略结合了 CLAHE 和改进的 Ben Graham 方法，提供了增量收益，与单独使用这些技术相比，Dice 斐比特系数 (DSC) 提高了 0.31-0.89%，交并比 (IoU) 提高了 0.40-1.16%。核心创新在于一个基于 DenseNet121 编码器和 Self-组织操作神经网络 (Self-ONN) 基解码器的分割网络，该网络保留了狭窄和狭窄血管分支的连续性。最终的轮廓细化模块进一步抑制了假阳性。在两个公共数据集的组合上进行 5 折交叉验证，CASR-Net 在 IoU、DSC 和 clDice 上分别达到了 61.43%、76.10% 和 79.36%，展示了自动冠状动脉分割的稳健方法，为临床诊断和治疗规划提供了有价值的工具。 
+
+---
+# Dual-level Progressive Hardness-Aware Reweighting for Cross-View Geo-Localization 
+
+**Title (ZH)**: 双层面渐进式难度感知加权用于跨视图地理定位 
+
+**Authors**: Guozheng Zheng, Jian Guan, Mingjie Xie, Xuanjia Zhao, Congyi Fan, Shiheng Zhang, Pengming Feng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.27181)  
+
+**Abstract**: Cross-view geo-localization (CVGL) between drone and satellite imagery remains challenging due to severe viewpoint gaps and the presence of hard negatives, which are visually similar but geographically mismatched samples. Existing mining or reweighting strategies often use static weighting, which is sensitive to distribution shifts and prone to overemphasizing difficult samples too early, leading to noisy gradients and unstable convergence. In this paper, we present a Dual-level Progressive Hardness-aware Reweighting (DPHR) strategy. At the sample level, a Ratio-based Difficulty-Aware (RDA) module evaluates relative difficulty and assigns fine-grained weights to negatives. At the batch level, a Progressive Adaptive Loss Weighting (PALW) mechanism exploits a training-progress signal to attenuate noisy gradients during early optimization and progressively enhance hard-negative mining as training matures. Experiments on the University-1652 and SUES-200 benchmarks demonstrate the effectiveness and robustness of the proposed DPHR, achieving consistent improvements over state-of-the-art methods. 
+
+**Abstract (ZH)**: 无人机和卫星影像之间的跨视角地理定位（CVGL）由于严重的视角差距和难以处理的负样本（地理上不匹配但视觉上相似的样本）存在挑战。现有的挖掘或重权重策略通常使用静态权重，这种权重对分布偏移敏感，容易过早强调困难样本，导致梯度噪声和不稳定收敛。在本文中，我们提出了一种双层渐进难度感知重权重（DPHR）策略。在样本层面，一种基于比例的难度感知（RDA）模块评估相对难度并为负样本分配细粒度权重。在批次层面，一种渐进自适应损失权重（PALW）机制利用训练进度信号在早期优化过程中减弱噪声梯度，并随着训练成熟逐步增强难以处理的负样本挖掘。在University-1652和SUES-200基准上的实验展示了所提出的DPHR的有效性和鲁棒性，实现了对现有最佳方法的一致改进。 
+
+---
+# Generating Accurate and Detailed Captions for High-Resolution Images 
+
+**Title (ZH)**: 生成准确详细的高分辨率图像描述词 
+
+**Authors**: Hankyeol Lee, Gawon Seo, Kyounggyu Lee, Dogun Kim, Kyungwoo Song, Jiyoung Jung  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.27164)  
+
+**Abstract**: Vision-language models (VLMs) often struggle to generate accurate and detailed captions for high-resolution images since they are typically pre-trained on low-resolution inputs (e.g., 224x224 or 336x336 pixels). Downscaling high-resolution images to these dimensions may result in the loss of visual details and the omission of important objects. To address this limitation, we propose a novel pipeline that integrates vision-language models, large language models (LLMs), and object detection systems to enhance caption quality. Our proposed pipeline refines captions through a novel, multi-stage process. Given a high-resolution image, an initial caption is first generated using a VLM, and key objects in the image are then identified by an LLM. The LLM predicts additional objects likely to co-occur with the identified key objects, and these predictions are verified by object detection systems. Newly detected objects not mentioned in the initial caption undergo focused, region-specific captioning to ensure they are incorporated. This process enriches caption detail while reducing hallucinations by removing references to undetected objects. We evaluate the enhanced captions using pairwise comparison and quantitative scoring from large multimodal models, along with a benchmark for hallucination detection. Experiments on a curated dataset of high-resolution images demonstrate that our pipeline produces more detailed and reliable image captions while effectively minimizing hallucinations. 
+
+**Abstract (ZH)**: Vision-language模型（VLMs）通常难以生成高分辨率图像的准确和详细描述，因为它们通常在低分辨率输入（如224x224或336x336像素）上进行预训练。将高分辨率图像缩小到这些尺寸可能会导致视觉细节损失以及重要对象的遗漏。为了解决这一限制，我们提出了一种新颖的流程，该流程通过集成视觉-语言模型、大型语言模型（LLMs）和物体检测系统来提高描述质量。我们提出的方法通过一个新颖的多阶段过程来细化描述。给定高分辨率图像，首先使用VLM生成初始描述，然后由LLM识别图像中的关键物体。LLM预测与识别的关键物体共生的可能性较大的其他物体，并由物体检测系统验证这些预测。未在初始描述中提及的新检测到的物体将进行聚焦于特定区域的描述，以确保它们被纳入。这一过程通过去除未检测到物体的引用来丰富描述细节并减少幻觉。我们使用两两比较和大型多模态模型的定量得分，以及幻觉检测基准来评估增强的描述。针对高分辨率图像精心策划的数据集的实验表明，我们的流程可以生成更详细和可靠的图像描述，同时有效减少幻觉。 
+
+---
+# ZEBRA: Towards Zero-Shot Cross-Subject Generalization for Universal Brain Visual Decoding 
+
+**Title (ZH)**: ZEBRA: 向零样本跨受试者泛化的通用脑视觉解码 
+
+**Authors**: Haonan Wang, Jingyu Lu, Hongrui Li, Xiaomeng Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.27128)  
+
+**Abstract**: Recent advances in neural decoding have enabled the reconstruction of visual experiences from brain activity, positioning fMRI-to-image reconstruction as a promising bridge between neuroscience and computer vision. However, current methods predominantly rely on subject-specific models or require subject-specific fine-tuning, limiting their scalability and real-world applicability. In this work, we introduce ZEBRA, the first zero-shot brain visual decoding framework that eliminates the need for subject-specific adaptation. ZEBRA is built on the key insight that fMRI representations can be decomposed into subject-related and semantic-related components. By leveraging adversarial training, our method explicitly disentangles these components to isolate subject-invariant, semantic-specific representations. This disentanglement allows ZEBRA to generalize to unseen subjects without any additional fMRI data or retraining. Extensive experiments show that ZEBRA significantly outperforms zero-shot baselines and achieves performance comparable to fully finetuned models on several metrics. Our work represents a scalable and practical step toward universal neural decoding. Code and model weights are available at: this https URL. 
+
+**Abstract (ZH)**: 近期神经解码的进展使得从大脑活动重建视觉体验成为可能，定位fMRI到图像重建为神经科学与计算机视觉之间的桥梁开辟了前景。然而，当前方法主要依赖于个体化的模型或需要进行个体化的微调，这限制了它们的可扩展性和实际应用性。在本文中，我们介绍了ZEBRA，这是一个首个零样本脑视觉解码框架，消除了个体化调整的需要。ZEBRA基于一个关键见解，即fMRI表示可以分解为个体相关的和语义相关的部分。通过利用对抗训练，我们的方法显式地分离这些部分，以隔离个体不变、语义特定的表示。这种分离允许ZEBRA在没有任何额外的fMRI数据或重新训练的情况下泛化到未见过的个体。广泛的经验表明，ZEBRA在多个指标上显著优于零样本基线，并且实现了与完全微调模型相当的性能。我们的工作代表了大规模和实用的通用神经解码步骤。代码和模型权重可在以下链接获取：this https URL。 
+
+---
+# Using Salient Object Detection to Identify Manipulative Cookie Banners that Circumvent GDPR 
+
+**Title (ZH)**: 使用显著目标检测识别绕过GDPR的操纵性Cookie弹窗 
+
+**Authors**: Riley Grossman, Michael Smith, Cristian Borcea, Yi Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26967)  
+
+**Abstract**: The main goal of this paper is to study how often cookie banners that comply with the General Data Protection Regulation (GDPR) contain aesthetic manipulation, a design tactic to draw users' attention to the button that permits personal data sharing. As a byproduct of this goal, we also evaluate how frequently the banners comply with GDPR and the recommendations of national data protection authorities regarding banner designs. We visited 2,579 websites and identified the type of cookie banner implemented. Although 45% of the relevant websites have fully compliant banners, we found aesthetic manipulation on 38% of the compliant banners. Unlike prior studies of aesthetic manipulation, we use a computer vision model for salient object detection to measure how salient (i.e., attention-drawing) each banner element is. This enables the discovery of new types of aesthetic manipulation (e.g., button placement), and leads us to conclude that aesthetic manipulation is more common than previously reported (38% vs 27% of banners). To study the effects of user and/or website location on cookie banner design, we include websites within the European Union (EU), where privacy regulation enforcement is more stringent, and websites outside the EU. We visited websites from IP addresses in the EU and from IP addresses in the United States (US). We find that 13.9% of EU websites change their banner design when the user is from the US, and EU websites are roughly 48.3% more likely to use aesthetic manipulation than non-EU websites, highlighting their innovative responses to privacy regulation. 
+
+**Abstract (ZH)**: 本文的主要目标是研究哪些符合《通用数据保护条例》（GDPR）的cookie弹窗中包含多少美学操控，这是一种设计手法，旨在吸引用户注意允许分享个人数据的按钮。作为这一目标的副产品，我们还评估了合规的cookie弹窗及其设计是否符合GDPR和国家数据保护机构的建议。我们访问了2,579个网站并确定了实施的cookie弹窗类型。尽管45%的相关网站拥有完全合规的弹窗，但我们发现38%的合规弹窗包含美学操控。不同于先前对美学操控的研究，我们使用计算机视觉模型进行显著对象检测，衡量每个弹窗元素的显著性（即，注意吸引程度），这使得我们能够发现新的美学操控类型（例如，按钮位置），并得出美学操控比之前报道的更为常见的结论（38% vs 27%的弹窗）。为了研究用户和/或网站位置对cookie弹窗设计的影响，我们包含了位于欧盟（EU）内的网站，这些网站的隐私法规执行更为严格，以及位于欧盟之外的网站。我们访问了来自欧盟IP地址和来自美国IP地址的网站。我们发现13.9%的欧盟网站会在用户来自美国时更改其弹窗设计，并且欧盟网站比非欧盟网站约高出48.3%使用美学操控的可能性，这突显了其对隐私法规的创新回应。 
+
+---
+# Scale-Aware Curriculum Learning for Ddata-Efficient Lung Nodule Detection with YOLOv11 
+
+**Title (ZH)**: 面向数据高效肺结节检测的尺度aware课程学习方法-YOLOv11 
+
+**Authors**: Yi Luo, Yike Guo, Hamed Hooshangnejad, Kai Ding  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26923)  
+
+**Abstract**: Lung nodule detection in chest CT is crucial for early lung cancer diagnosis, yet existing deep learning approaches face challenges when deployed in clinical settings with limited annotated data. While curriculum learning has shown promise in improving model training, traditional static curriculum strategies fail in data-scarce scenarios. We propose Scale Adaptive Curriculum Learning (SACL), a novel training strategy that dynamically adjusts curriculum design based on available data scale. SACL introduces three key mechanisms:(1) adaptive epoch scheduling, (2) hard sample injection, and (3) scale-aware optimization. We evaluate SACL on the LUNA25 dataset using YOLOv11 as the base detector. Experimental results demonstrate that while SACL achieves comparable performance to static curriculum learning on the full dataset in mAP50, it shows significant advantages under data-limited conditions with 4.6%, 3.5%, and 2.0% improvements over baseline at 10%, 20%, and 50% of training data respectively. By enabling robust training across varying data scales without architectural modifications, SACL provides a practical solution for healthcare institutions to develop effective lung nodule detection systems despite limited annotation resources. 
+
+**Abstract (ZH)**: 胸部CT中肺结节检测对于早期肺癌诊断至关重要，然而现有深度学习方法在临床应用中受限于标注数据匮乏。尽管 curriculum 学习在提高模型训练性能方面显示出潜力，传统静态 curriculum 战略在数据稀缺场景中表现不佳。我们提出了一种新的训练策略——适应性缩放 curriculum 学习 (SACL)，它能够根据可用数据量动态调整 curriculum 设计。SACL 引入了三种关键机制：(1) 自适应epoch调度，(2) 困难样本注入，(3) 缩放感知优化。我们使用YOLOv11作为基检测器在LUNA25数据集上评估SACL。实验结果表明，尽管在mAP50度量上SACL与静态curriculum学习的性能相当，但在数据受限条件下（分别在训练数据的10%、20%和50%时），SACL分别显示出4.6%、3.5%和2.0%的性能提升。通过在不修改架构的情况下实现跨不同数据规模的稳健训练，SACL为医疗保健机构提供了在标注资源有限的情况下开发有效肺结节检测系统的可行解决方案。 
+
+---
+# BI-DCGAN: A Theoretically Grounded Bayesian Framework for Efficient and Diverse GANs 
+
+**Title (ZH)**: BI-DCGAN：一个理论支持的贝叶斯框架，用于高效的多样化生成对抗网络 
+
+**Authors**: Mahsa Valizadeh, Rui Tuo, James Caverlee  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26892)  
+
+**Abstract**: Generative Adversarial Networks (GANs) are proficient at generating synthetic data but continue to suffer from mode collapse, where the generator produces a narrow range of outputs that fool the discriminator but fail to capture the full data distribution. This limitation is particularly problematic, as generative models are increasingly deployed in real-world applications that demand both diversity and uncertainty awareness. In response, we introduce BI-DCGAN, a Bayesian extension of DCGAN that incorporates model uncertainty into the generative process while maintaining computational efficiency. BI-DCGAN integrates Bayes by Backprop to learn a distribution over network weights and employs mean-field variational inference to efficiently approximate the posterior distribution during GAN training. We establishes the first theoretical proof, based on covariance matrix analysis, that Bayesian modeling enhances sample diversity in GANs. We validate this theoretical result through extensive experiments on standard generative benchmarks, demonstrating that BI-DCGAN produces more diverse and robust outputs than conventional DCGANs, while maintaining training efficiency. These findings position BI-DCGAN as a scalable and timely solution for applications where both diversity and uncertainty are critical, and where modern alternatives like diffusion models remain too resource-intensive. 
+
+**Abstract (ZH)**: 生成对抗网络（GANs）在生成合成数据方面表现出色，但仍然遭受模式崩溃的问题，即生成器产生的输出范围狭窄，能够欺骗判别器，但却未能捕捉到完整的数据分布。这一局限性尤其成问题，因为生成模型在现实世界应用中越来越受到多样化和不确定性意识的需求挑战。为应对这一挑战，我们介绍了BI-DCGAN，这是一种基于DCGAN的贝叶斯扩展，它在保持计算效率的同时将模型不确定性融入生成过程。BI-DCGAN结合了Bayes by Backprop来学习网络权重的分布，并采用均场变分推断来在GAN训练过程中高效地近似后验分布。我们首次基于协方差矩阵分析建立了理论证明，表明贝叶斯模型可以增强GAN中的样本多样性。通过在标准生成基准上的广泛实验验证了这一理论结果，表明BI-DCGAN能够生成比传统DCGAN更具多样性和鲁棒性的输出，同时保持训练效率。这些发现使BI-DCGAN成为在需要多样化和不确定性的应用中可扩展且及时的解决方案，而现代替代方案如扩散模型仍然过于资源密集。 
+
+---
+# Do Vision-Language Models Measure Up? Benchmarking Visual Measurement Reading with MeasureBench 
+
+**Title (ZH)**: 视觉-语言模型达标了吗？使用MeasureBench评估视觉测量阅读能力 
+
+**Authors**: Fenfen Lin, Yesheng Liu, Haiyu Xu, Chen Yue, Zheqi He, Mingxuan Zhao, Miguel Hu Chen, Jiakang Liu, JG Yao, Xi Yang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26865)  
+
+**Abstract**: Reading measurement instruments is effortless for humans and requires relatively little domain expertise, yet it remains surprisingly challenging for current vision-language models (VLMs) as we find in preliminary evaluation. In this work, we introduce MeasureBench, a benchmark on visual measurement reading covering both real-world and synthesized images of various types of measurements, along with an extensible pipeline for data synthesis. Our pipeline procedurally generates a specified type of gauge with controllable visual appearance, enabling scalable variation in key details such as pointers, scales, fonts, lighting, and clutter. Evaluation on popular proprietary and open-weight VLMs shows that even the strongest frontier VLMs struggle measurement reading in general. A consistent failure mode is indicator localization: models can read digits or labels but misidentify the key positions of pointers or alignments, leading to big numeric errors despite plausible textual reasoning. We have also conducted preliminary experiments with reinforcement learning over synthetic data, and find encouraging results on in-domain synthetic subset but less promising for real-world images. Our analysis highlights a fundamental limitation of current VLMs in fine-grained spatial grounding. We hope this resource can help future advances on visually grounded numeracy and precise spatial perception of VLMs, bridging the gap between recognizing numbers and measuring the world. 
+
+**Abstract (ZH)**: 视觉测量阅读对于人类来说是容易的，只需要少量的领域专业知识，然而当前的视觉-语言模型（VLMs）在这一任务上仍然面临挑战。在本工作中，我们介绍了MeasureBench，一个涵盖各类测量的真实和合成图像的基准测试，以及一个扩展的数据合成流水线。我们的流水线程序化地生成指定类型的测量表盘，并控制其视觉外观，从而实现关键细节，如指针、刻度、字体、照明和杂乱环境的可扩展变化。对流行且开放的视觉-语言模型的评估显示，即使是最先进的视觉-语言模型在视觉测量阅读上也表现不佳。常见的失败模式是指示器定位：模型能够读取数字或标签，但错误识别指针的关键位置或对齐方式，即使进行合理的文本推理，也会导致较大的数值错误。我们还进行了初步的强化学习实验，使用合成数据，发现对领域内合成子集结果令人鼓舞，但在真实世界图像上表现不佳。我们的分析突显了当前视觉-语言模型在精细空间定位上的基本局限性。我们希望这一资源能帮助未来在视觉引导下的数字能力和精确的空间感知方面取得进展，弥合识别数字和测量世界之间的差距。 
+
+---
+# Diffusion-Driven Generation of Minimally Preprocessed Brain MRI 
+
+**Title (ZH)**: 最小预处理脑MRI的扩散驱动生成 
+
+**Authors**: Samuel W. Remedios, Aaron Carass, Jerry L. Prince, Blake E. Dewey  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26834)  
+
+**Abstract**: The purpose of this study is to present and compare three denoising diffusion probabilistic models (DDPMs) that generate 3D $T_1$-weighted MRI human brain images. Three DDPMs were trained using 80,675 image volumes from 42,406 subjects spanning 38 publicly available brain MRI datasets. These images had approximately 1 mm isotropic resolution and were manually inspected by three human experts to exclude those with poor quality, field-of-view issues, and excessive pathology. The images were minimally preprocessed to preserve the visual variability of the data. Furthermore, to enable the DDPMs to produce images with natural orientation variations and inhomogeneity, the images were neither registered to a common coordinate system nor bias field corrected. Evaluations included segmentation, Frechet Inception Distance (FID), and qualitative inspection. Regarding results, all three DDPMs generated coherent MR brain volumes. The velocity and flow prediction models achieved lower FIDs than the sample prediction model. However, all three models had higher FIDs compared to real images across multiple cohorts. In a permutation experiment, the generated brain regional volume distributions differed statistically from real data. However, the velocity and flow prediction models had fewer statistically different volume distributions in the thalamus and putamen. In conclusion this work presents and releases the first 3D non-latent diffusion model for brain data without skullstripping or registration. Despite the negative results in statistical testing, the presented DDPMs are capable of generating high-resolution 3D $T_1$-weighted brain images. All model weights and corresponding inference code are publicly available at this https URL . 
+
+**Abstract (ZH)**: 本研究的目的是呈现并比较三种生成3D $T_1$加权MRI人类大脑图像的去噪扩散概率模型（DDPMs）。三种DDPMs使用来自42,406个受试者的80,675个图像体素进行了训练，这些图像体素来自38个公开的大脑MRI数据集。这些图像具有约1 mm等向分辨率，并由三位专家手工检查，排除了质量差、视野问题和病理情况过多的图像。图像进行了最少的预处理，以保留数据的视觉变异性。此外，为了使DDPMs能够生成具有自然方向变化和不均匀性的图像，这些图像既未注册到共同坐标系统，也没有进行偏差场校正。评估包括分割、弗雷谢特入渗距离（FID）和定性检查。关于结果，三种DDPMs均生成了连贯的MR大脑体积。速度和流预测模型的FID低于样本预测模型。然而，与真实图像相比，所有三种模型在多个队列中具有较高的FID。在替换实验中，生成的大脑区域体积分布与真实数据存在统计学差异。然而，速度和流预测模型在丘脑和壳核中具有较少的统计学差异的体积分布。总之，本工作呈现并发布了首个不进行颅骨剥离或注册的3D非潜藏扩散模型用于大脑数据。尽管统计测试结果为负，但所呈现的DDPMs能够生成高分辨率的3D $T_1$加权大脑图像。所有模型权重和相应的推理代码均可在该网址公开获取。 
+
+---
+# VISAT: Benchmarking Adversarial and Distribution Shift Robustness in Traffic Sign Recognition with Visual Attributes 
+
+**Title (ZH)**: VISAT: 依据视觉属性在交通标志识别中评估对抗性和分布偏移 robustness 的基准测试 
+
+**Authors**: Simon Yu, Peilin Yu, Hongbo Zheng, Huajie Shao, Han Zhao, Lui Sha  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26833)  
+
+**Abstract**: We present VISAT, a novel open dataset and benchmarking suite for evaluating model robustness in the task of traffic sign recognition with the presence of visual attributes. Built upon the Mapillary Traffic Sign Dataset (MTSD), our dataset introduces two benchmarks that respectively emphasize robustness against adversarial attacks and distribution shifts. For our adversarial attack benchmark, we employ the state-of-the-art Projected Gradient Descent (PGD) method to generate adversarial inputs and evaluate their impact on popular models. Additionally, we investigate the effect of adversarial attacks on attribute-specific multi-task learning (MTL) networks, revealing spurious correlations among MTL tasks. The MTL networks leverage visual attributes (color, shape, symbol, and text) that we have created for each traffic sign in our dataset. For our distribution shift benchmark, we utilize ImageNet-C's realistic data corruption and natural variation techniques to perform evaluations on the robustness of both base and MTL models. Moreover, we further explore spurious correlations among MTL tasks through synthetic alterations of traffic sign colors using color quantization techniques. Our experiments focus on two major backbones, ResNet-152 and ViT-B/32, and compare the performance between base and MTL models. The VISAT dataset and benchmarking framework contribute to the understanding of model robustness for traffic sign recognition, shedding light on the challenges posed by adversarial attacks and distribution shifts. We believe this work will facilitate advancements in developing more robust models for real-world applications in autonomous driving and cyber-physical systems. 
+
+**Abstract (ZH)**: VISAT：一种面向具有视觉属性交通标志识别任务的新型开源数据集和基准测试套件 
+
+---
+# See the Speaker: Crafting High-Resolution Talking Faces from Speech with Prior Guidance and Region Refinement 
+
+**Title (ZH)**: 基于先验引导和区域精炼的高分辨率说话人脸生成 
+
+**Authors**: Jinting Wang, Jun Wang, Hei Victor Cheng, Li Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26819)  
+
+**Abstract**: Unlike existing methods that rely on source images as appearance references and use source speech to generate motion, this work proposes a novel approach that directly extracts information from the speech, addressing key challenges in speech-to-talking face. Specifically, we first employ a speech-to-face portrait generation stage, utilizing a speech-conditioned diffusion model combined with statistical facial prior and a sample-adaptive weighting module to achieve high-quality portrait generation. In the subsequent speech-driven talking face generation stage, we embed expressive dynamics such as lip movement, facial expressions, and eye movements into the latent space of the diffusion model and further optimize lip synchronization using a region-enhancement module. To generate high-resolution outputs, we integrate a pre-trained Transformer-based discrete codebook with an image rendering network, enhancing video frame details in an end-to-end manner. Experimental results demonstrate that our method outperforms existing approaches on the HDTF, VoxCeleb, and AVSpeech datasets. Notably, this is the first method capable of generating high-resolution, high-quality talking face videos exclusively from a single speech input. 
+
+**Abstract (ZH)**: 不同于现有的方法依赖源图像作为外观参考并使用源语音生成运动，本工作提出了一种新颖的方法，直接从语音中提取信息，以解决语音到 talking face 的关键挑战。具体而言，我们首先采用语音到人脸肖像生成阶段，利用语音条件下的扩散模型结合统计面部先验和样本自适应加权模块，实现高质量肖像生成。在后续的语音驱动 talking face 生成阶段，我们将表达性动态（如唇动、面部表情和眼动）嵌入到扩散模型的潜在空间中，并进一步使用区域增强模块优化唇部同步。为了生成高分辨率输出，我们结合了预训练的基于 Transformer 的离散码本和图像渲染网络，以端到端的方式增强视频帧细节。实验结果表明，与 HDTF、VoxCeleb 和 AVSpeech 数据集上的现有方法相比，本方法表现更优。特别地，这是首个仅从单个语音输入生成高分辨率、高质量 talking face 视频的方法。 
+
+---
+# GACA-DiT: Diffusion-based Dance-to-Music Generation with Genre-Adaptive Rhythm and Context-Aware Alignment 
+
+**Title (ZH)**: 基于扩散的跨风格节奏适应与上下文感知对齐的舞蹈音乐生成方法：GACA-DiT 
+
+**Authors**: Jinting Wang, Chenxing Li, Li Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2510.26818)  
+
+**Abstract**: Dance-to-music (D2M) generation aims to automatically compose music that is rhythmically and temporally aligned with dance movements. Existing methods typically rely on coarse rhythm embeddings, such as global motion features or binarized joint-based rhythm values, which discard fine-grained motion cues and result in weak rhythmic alignment. Moreover, temporal mismatches introduced by feature downsampling further hinder precise synchronization between dance and music. To address these problems, we propose \textbf{GACA-DiT}, a diffusion transformer-based framework with two novel modules for rhythmically consistent and temporally aligned music generation. First, a \textbf{genre-adaptive rhythm extraction} module combines multi-scale temporal wavelet analysis and spatial phase histograms with adaptive joint weighting to capture fine-grained, genre-specific rhythm patterns. Second, a \textbf{context-aware temporal alignment} module resolves temporal mismatches using learnable context queries to align music latents with relevant dance rhythm features. Extensive experiments on the AIST++ and TikTok datasets demonstrate that GACA-DiT outperforms state-of-the-art methods in both objective metrics and human evaluation. Project page: this https URL. 
+
+**Abstract (ZH)**: 舞蹈伴随音乐（D2M）生成旨在自动生成与舞蹈动作在节奏和时间上匹配的音乐。现有的方法通常依赖粗粒度的节奏嵌入，如全局运动特征或基于关节的二值化节奏值，这些方法忽略了细粒度的运动线索并导致节奏对齐较弱。此外，特征下采样引入的时间不匹配进一步阻碍了舞蹈和音乐的精确同步。为了解决这些问题，我们提出了基于扩散变换器的GACA-DiT框架，该框架包含两个新型模块以实现节奏一致性和时间对齐的音乐生成。首先，一个自适应节奏提取模块结合多尺度时域小波分析和自适应关节加权以及空间相位直方图，以捕获细粒度、特定于曲风的节奏模式。其次，一个上下文感知的时间对齐模块使用可学习的上下文查询来解决时间不匹配问题，将音乐潜在特征与相关的舞蹈节奏特征对齐。在AIST++和TikTok数据集上的广泛实验表明，GACA-DiT在客观指标和人工评估方面均优于现有方法。项目页面: this https URL。 
+
+---
