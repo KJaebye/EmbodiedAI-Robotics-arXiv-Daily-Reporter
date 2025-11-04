@@ -1,0 +1,354 @@
+# Hybrid Neural Network-Based Indoor Localisation System for Mobile Robots Using CSI Data in a Robotics Simulator 
+
+**Title (ZH)**: 基于CSI数据的混合神经网络室内定位系统在机器人模拟器中的应用 
+
+**Authors**: Javier Ballesteros-Jerez, Jesus Martínez-Gómez, Ismael García-Varea, Luis Orozco-Barbosa, Manuel Castillo-Cara  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.01797)  
+
+**Abstract**: We present a hybrid neural network model for inferring the position of mobile robots using Channel State Information (CSI) data from a Massive MIMO system. By leveraging an existing CSI dataset, our approach integrates a Convolutional Neural Network (CNN) with a Multilayer Perceptron (MLP) to form a Hybrid Neural Network (HyNN) that estimates 2D robot positions. CSI readings are converted into synthetic images using the TINTO tool. The localisation solution is integrated with a robotics simulator, and the Robot Operating System (ROS), which facilitates its evaluation through heterogeneous test cases, and the adoption of state estimators like Kalman filters. Our contributions illustrate the potential of our HyNN model in achieving precise indoor localisation and navigation for mobile robots in complex environments. The study follows, and proposes, a generalisable procedure applicable beyond the specific use case studied, making it adaptable to different scenarios and datasets. 
+
+**Abstract (ZH)**: 基于大规模MIMO系统的信道状态信息的混合神经网络模型：移动机器人定位 inference using Channel State Information (CSI) data from a Massive MIMO system with a hybrid neural network model 
+
+---
+# Phy-Tac: Toward Human-Like Grasping via Physics-Conditioned Tactile Goals 
+
+**Title (ZH)**: Phy-Tac: 基于物理条件化的触觉目标实现人类般的抓取 
+
+**Authors**: Shipeng Lyu, Lijie Sheng, Fangyuan Wang, Wenyao Zhang, Weiwei Lin, Zhenzhong Jia, David Navarro-Alarcon, Guodong Guo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.01520)  
+
+**Abstract**: Humans naturally grasp objects with minimal level required force for stability, whereas robots often rely on rigid, over-squeezing control. To narrow this gap, we propose a human-inspired physics-conditioned tactile method (Phy-Tac) for force-optimal stable grasping (FOSG) that unifies pose selection, tactile prediction, and force regulation. A physics-based pose selector first identifies feasible contact regions with optimal force distribution based on surface geometry. Then, a physics-conditioned latent diffusion model (Phy-LDM) predicts the tactile imprint under FOSG target. Last, a latent-space LQR controller drives the gripper toward this tactile imprint with minimal actuation, preventing unnecessary compression. Trained on a physics-conditioned tactile dataset covering diverse objects and contact conditions, the proposed Phy-LDM achieves superior tactile prediction accuracy, while the Phy-Tac outperforms fixed-force and GraspNet-based baselines in grasp stability and force efficiency. Experiments on classical robotic platforms demonstrate force-efficient and adaptive manipulation that bridges the gap between robotic and human grasping. 
+
+**Abstract (ZH)**: 基于物理条件的触觉方法（Phy-Tac）实现力最优稳定抓取（FOSG） 
+
+---
+# MO-SeGMan: Rearrangement Planning Framework for Multi Objective Sequential and Guided Manipulation in Constrained Environments 
+
+**Title (ZH)**: MO-SeGMan: 多目标顺序引导操作在受限环境中的排列规划框架 
+
+**Authors**: Cankut Bora Tuncer, Marc Toussaint, Ozgur S. Oguz  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.01476)  
+
+**Abstract**: In this work, we introduce MO-SeGMan, a Multi-Objective Sequential and Guided Manipulation planner for highly constrained rearrangement problems. MO-SeGMan generates object placement sequences that minimize both replanning per object and robot travel distance while preserving critical dependency structures with a lazy evaluation method. To address highly cluttered, non-monotone scenarios, we propose a Selective Guided Forward Search (SGFS) that efficiently relocates only critical obstacles and to feasible relocation points. Furthermore, we adopt a refinement method for adaptive subgoal selection to eliminate unnecessary pick-and-place actions, thereby improving overall solution quality. Extensive evaluations on nine benchmark rearrangement tasks demonstrate that MO-SeGMan generates feasible motion plans in all cases, consistently achieving faster solution times and superior solution quality compared to the baselines. These results highlight the robustness and scalability of the proposed framework for complex rearrangement planning problems. 
+
+**Abstract (ZH)**: 本项工作介绍了一种多目标顺序引导操作规划器MO-SeGMan，用于高度受限的重组问题。MO-SeGMan使用懒惰评估方法生成对象放置序列，同时最小化每次操作的重新规划次数和机器人行驶距离，保持关键依赖结构。为应对高度拥挤且非单调的场景，我们提出了一种选择性引导前向搜索（SGFS）方法，仅重新定位关键障碍物并移至可行的位置。此外，我们采用适应性子目标选择的细化方法来消除不必要的取放操作，从而提高整体解的质量。在九个基准重组任务上的广泛评估表明，MO-SeGMan在所有情况下都能生成可行的动作规划，并且一致地实现更快的解决方案时间和更优的解决方案质量，优于基线方法。这些结果突显了所提出框架在复杂重组规划问题中的稳健性和可扩展性。 
+
+---
+# Designing for Distributed Heterogeneous Modularity: On Software Architecture and Deployment of MoonBots 
+
+**Title (ZH)**: 设计分布式异构模块化系统：关于 MoonBots 的软件架构与部署研究 
+
+**Authors**: Elian Neppel, Shamistan Karimov, Ashutosh Mishra, Gustavo Hernan Diaz Huenupan, Hazal Gozbasi, Kentaro Uno, Shreya Santra, Kazuya Yoshida  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.01437)  
+
+**Abstract**: This paper presents the software architecture and deployment strategy behind the MoonBot platform: a modular space robotic system composed of heterogeneous components distributed across multiple computers, networks and ultimately celestial bodies. We introduce a principled approach to distributed, heterogeneous modularity, extending modular robotics beyond physical reconfiguration to software, communication and orchestration. We detail the architecture of our system that integrates component-based design, a data-oriented communication model using ROS2 and Zenoh, and a deployment orchestrator capable of managing complex multi-module assemblies. These abstractions enable dynamic reconfiguration, decentralized control, and seamless collaboration between numerous operators and modules. At the heart of this system lies our open-source Motion Stack software, validated by months of field deployment with self-assembling robots, inter-robot cooperation, and remote operation. Our architecture tackles the significant hurdles of modular robotics by significantly reducing integration and maintenance overhead, while remaining scalable and robust. Although tested with space in mind, we propose generalizable patterns for designing robotic systems that must scale across time, hardware, teams and operational environments. 
+
+**Abstract (ZH)**: 本文介绍了MoonBot平台背后的软件架构和部署策略：一个由异构组件组成，并分布于多台计算机、网络乃至天体上的模块化太空机器人系统。我们提出了一种分层异构模块化的方法，将模块化机器人扩展到软件、通信和编排领域。我们详细介绍了将基于组件的设计、使用ROS2和Zenoh的数据面向通信模型以及能够管理复杂多模块组装的部署编排器集成到系统架构中的方法。这些抽象化手段实现了动态配置、分散控制以及多个操作者和模块之间的无缝协作。该系统的核心是我们的开源Motion Stack软件，该软件已经通过数月的现场部署，包括自组装机器人、机器人之间的协作以及远程操作得到了验证。该架构通过显著减少集成和维护开销，解决了模块化机器人面临的重大挑战，同时保持了可扩展性和稳健性。尽管最初为太空应用而设计，但我们提出的模式对于那些必须跨越时间、硬件、团队和操作环境进行扩展的机器人系统具有广泛的适用性。 
+
+---
+# CM-LIUW-Odometry: Robust and High-Precision LiDAR-Inertial-UWB-Wheel Odometry for Extreme Degradation Coal Mine Tunnels 
+
+**Title (ZH)**: CM-LIUW-里程计：极端退化煤矿隧道的鲁棒高精度激光雷达-惯性-UWB-轮毂里程计 
+
+**Authors**: Kun Hu, Menggang Li, Zhiwen Jin, Chaoquan Tang, Eryi Hu, Gongbo Zhou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.01379)  
+
+**Abstract**: Simultaneous Localization and Mapping (SLAM) in large-scale, complex, and GPS-denied underground coal mine environments presents significant challenges. Sensors must contend with abnormal operating conditions: GPS unavailability impedes scene reconstruction and absolute geographic referencing, uneven or slippery terrain degrades wheel odometer accuracy, and long, feature-poor tunnels reduce LiDAR effectiveness. To address these issues, we propose CoalMine-LiDAR-IMU-UWB-Wheel-Odometry (CM-LIUW-Odometry), a multimodal SLAM framework based on the Iterated Error-State Kalman Filter (IESKF). First, LiDAR-inertial odometry is tightly fused with UWB absolute positioning constraints to align the SLAM system with a global coordinate. Next, wheel odometer is integrated through tight coupling, enhanced by nonholonomic constraints (NHC) and vehicle lever arm compensation, to address performance degradation in areas beyond UWB measurement range. Finally, an adaptive motion mode switching mechanism dynamically adjusts the robot's motion mode based on UWB measurement range and environmental degradation levels. Experimental results validate that our method achieves superior accuracy and robustness in real-world underground coal mine scenarios, outperforming state-of-the-art approaches. We open source our code of this work on Github to benefit the robotics community. 
+
+**Abstract (ZH)**: 大规模复杂GPS受限地下煤矿环境中的同时定位与建图（SLAM）面临重大挑战：传感器需应对异常工况，GPS不可用妨碍场景重建和绝对地理定位，不平或湿滑地形降低车轮里程计准确性，长且特征稀少的隧道降低LiDAR效用。为此，我们提出CoalMine-LiDAR-IMU-UWB-Wheel-Odometry（CM-LIUW-Odometry）多模态SLAM框架，基于迭代误差状态卡尔曼滤波（IESKF）。首先，LiDAR惯性里程计与UWB绝对定位约束紧密融合，实现SLAM系统与全球坐标系的对齐。其次，通过非holonomic约束（NHC）和车辆杠杆臂补偿增强车轮里程计的集成，以解决超出UWB测量范围区域的性能下降问题。最后，根据UWB测量范围和环境退化程度动态调整机器人运动模式。实验结果表明，本方法在实际地下煤矿场景中实现优于现有先进方法的更高精度和鲁棒性。我们已在Github上开源本文代码，以期惠及机器人学社区。 
+
+---
+# Lateral Velocity Model for Vehicle Parking Applications 
+
+**Title (ZH)**: 车道横向速度模型在车辆泊车应用中的研究 
+
+**Authors**: Luis Diener, Jens Kalkkuhl, Markus Enzweiler  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.01369)  
+
+**Abstract**: Automated parking requires accurate localization for quick and precise maneuvering in tight spaces. While the longitudinal velocity can be measured using wheel encoders, the estimation of the lateral velocity remains a key challenge due to the absence of dedicated sensors in consumer-grade vehicles. Existing approaches often rely on simplified vehicle models, such as the zero-slip model, which assumes no lateral velocity at the rear axle. It is well established that this assumption does not hold during low-speed driving and researchers thus introduce additional heuristics to account for differences. In this work, we analyze real-world data from parking scenarios and identify a systematic deviation from the zero-slip assumption. We provide explanations for the observed effects and then propose a lateral velocity model that better captures the lateral dynamics of the vehicle during parking. The model improves estimation accuracy, while relying on only two parameters, making it well-suited for integration into consumer-grade applications. 
+
+**Abstract (ZH)**: 自动泊车需要准确的定位以在狭小空间内进行快速精确的操作。虽然 longitudinal 速度可以通过车轮编码器测量，但由于消费级车辆缺乏专用传感器，横向速度的估计仍然是一个关键挑战。现有方法往往依赖于简化的车辆模型，如零侧滑模型，该模型假设后轴无横向速度。研究已证实，这一假设在低速驾驶时并不成立，因此研究人员引入了额外的启发式方法来弥补差异。在本工作中，我们分析了泊车场景下的实际数据，并发现零侧滑假设存在系统偏差。我们解释了观察到的效果，然后提出了一种更好的横向速度模型，该模型在泊车过程中更好地捕捉了车辆的横向动态。该模型仅依赖于两个参数，从而使其非常适合集成到消费级应用中。 
+
+---
+# Model to Model: Understanding the Venus Flytrap Snapping Mechanism and Transferring it to a 3D-printed Bistable Soft Robotic Demonstrator 
+
+**Title (ZH)**: 从模型到模型：理解捕蝇草捕虫机制并将其转移至3D打印双稳态软机器人示例 
+
+**Authors**: Maartje H. M. Wermelink, Renate Sachse, Sebastian Kruppert, Thomas Speck, Falk J. Tauber  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.01350)  
+
+**Abstract**: The Venus flytrap (Dionaea muscipula) does not only serve as the textbook model for a carnivorous plant, but also has long intrigued both botanists and engineers with its rapidly closing leaf trap. The trap closure is triggered by two consecutive touches of a potential prey, after which the lobes rapidly switch from their concave open-state to their convex close-state and catch the prey within 100-500 ms after being triggered. This transformation from concave to convex is initiated by changes in turgor pressure and the release of stored elastic energy from prestresses in the concave state, which accelerate this movement, leading to inversion of the lobes bi-axial curvature. Possessing two low-energy states, the leaves can be characterized as bistable systems. With our research, we seek to deepen the understanding of Venus flytrap motion mechanics and apply its principles to the design of an artificial bistable lobe actuator. We identified geometrical characteristics, such as dimensional ratios and the thickness gradient in the lobe, and transferred these to two 3D-printed bistable actuator models. One actuator parallels the simulated geometry of a Venus flytrap leaf, the other is a lobe model designed with CAD. Both models display concave-convex bi-stability and snap close. These demonstrators are the first step in the development of an artificial Venus flytrap that mimics the mechanical behavior of the biological model and can be used as a soft fast gripper. 
+
+**Abstract (ZH)**: Venus 凤梨的运动机械学及其人工双稳态叶片 actuactor 设计研究 
+
+---
+# Design and development of an electronics-free earthworm robot 
+
+**Title (ZH)**: 无电子元件地球worm机器人设计与开发 
+
+**Authors**: Riddhi Das, Joscha Teichmann, Thomas Speck, Falk J. Tauber  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.01347)  
+
+**Abstract**: Soft robotic systems have gained widespread attention due to their inherent flexibility, adaptability, and safety, making them well-suited for varied applications. Among bioinspired designs, earthworm locomotion has been extensively studied for its efficient peristaltic motion, enabling movement in confined and unstructured environments. Existing earthworm-inspired robots primarily utilize pneumatic actuation due to its high force-to-weight ratio and ease of implementation. However, these systems often rely on bulky, power-intensive electronic control units, limiting their practicality. In this work, we present an electronics-free, earthworm-inspired pneumatic robot utilizing a modified Pneumatic Logic Gate (PLG) design. By integrating preconfigured PLG units with bellow actuators, we achieved a plug-and-play style modular system capable of peristaltic locomotion without external electronic components. The proposed design reduces system complexity while maintaining efficient actuation. We characterize the bellow actuators under different operating conditions and evaluate the robots locomotion performance. Our findings demonstrate that the modified PLG-based control system effectively generates peristaltic wave propagation, achieving autonomous motion with minimal deviation. This study serves as a proof of concept for the development of electronics-free, peristaltic soft robots. The proposed system has potential for applications in hazardous environments, where untethered, adaptable locomotion is critical. Future work will focus on further optimizing the robot design and exploring untethered operation using onboard compressed air sources. 
+
+**Abstract (ZH)**: 无需外部电子控制单元的基于蚯蚓灵感的气动软机器人系统 
+
+---
+# Thermo-responsive closing and reopening artificial Venus Flytrap utilizing shape memory elastomers 
+
+**Title (ZH)**: 基于形状记忆弹性体的热响应闭合与重新开启人造 Venus 飞публиль 
+
+**Authors**: Shun Yoshida, Qingchuan Song, Bastian E. Rapp, Thomas Speck, Falk J. Tauber  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.01346)  
+
+**Abstract**: Despite their often perceived static and slow nature, some plants can move faster than the blink of an eye. The rapid snap closure motion of the Venus flytrap (Dionaea muscipula) has long captivated the interest of researchers and engineers alike, serving as a model for plant-inspired soft machines and robots. The translation of the fast snapping closure has inspired the development of various artificial Venus flytrap (AVF) systems. However, translating both the closing and reopening motion of D. muscipula into an autonomous plant inspired soft machine has yet to be achieved. In this study, we present an AVF that autonomously closes and reopens, utilizing novel thermo-responsive UV-curable shape memory materials for soft robotic systems. The life-sized thermo-responsive AVF exhibits closing and reopening motions triggered in a naturally occurring temperature range. The doubly curved trap lobes, built from shape memory polymers, close at 38°C, while reopening initiates around 45°C, employing shape memory elastomer strips as antagonistic actuators to facilitate lobe reopening. This work represents the first demonstration of thermo-responsive closing and reopening in an AVF with programmed sequential motion in response to increasing temperature. This approach marks the next step toward autonomously bidirectional moving soft machines/robots. 
+
+**Abstract (ZH)**: 基于温度响应形状记忆材料的自主开合人工捕蝇植物 
+
+---
+# A High-Speed Capable Spherical Robot 
+
+**Title (ZH)**: 高速 capable 球面机器人 
+
+**Authors**: Bixuan Zhang, Fengqi Zhang, Haojie Chen, You Wang, Jie Hao, Zhiyuan Luo, Guang Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.01288)  
+
+**Abstract**: This paper designs a new spherical robot structure capable of supporting high-speed motion at up to 10 m/s. Building upon a single-pendulum-driven spherical robot, the design incorporates a momentum wheel with an axis aligned with the secondary pendulum, creating a novel spherical robot structure. Practical experiments with the physical prototype have demonstrated that this new spherical robot can achieve stable high-speed motion through simple decoupled control, which was unattainable with the original structure. The spherical robot designed for high-speed motion not only increases speed but also significantly enhances obstacle-crossing performance and terrain robustness. 
+
+**Abstract (ZH)**: 这种论文设计了一种新的球形机器人结构，能够支持最高达10 m/s的高速运动。基于单摆驱动的球形机器人设计，该结构整合了一个动量轮，其轴与次级摆动轴对齐，从而创建了一种新颖的球形机器人结构。通过简单的解耦控制，物理原型的实际实验表明，这种新的球形机器人能够实现稳定的高速运动，这是原始结构无法达成的。设计用于高速运动的球形机器人不仅提高了速度，还显著增强了越障性能和地形适应性。 
+
+---
+# Design and Fabrication of Origami-Inspired Knitted Fabrics for Soft Robotics 
+
+**Title (ZH)**: 基于 Origami 设计的针织软机器人面料的设计与制造 
+
+**Authors**: Sehui Jeong, Magaly C. Aviles, Athena X. Naylor, Cynthia Sung, Allison M. Okamura  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.01272)  
+
+**Abstract**: Soft robots employing compliant materials and deformable structures offer great potential for wearable devices that are comfortable and safe for human interaction. However, achieving both structural integrity and compliance for comfort remains a significant challenge. In this study, we present a novel fabrication and design method that combines the advantages of origami structures with the material programmability and wearability of knitted fabrics. We introduce a general design method that translates origami patterns into knit designs by programming both stitch and material patterns. The method creates folds in preferred directions while suppressing unintended buckling and bending by selectively incorporating heat fusible yarn to create rigid panels around compliant creases. We experimentally quantify folding moments and show that stitch patterning enhances folding directionality while the heat fusible yarn (1) keeps geometry consistent by reducing edge curl and (2) prevents out-of-plane deformations by stiffening panels. We demonstrate the framework through the successful reproduction of complex origami tessellations, including Miura-ori, Yoshimura, and Kresling patterns, and present a wearable knitted Kaleidocycle robot capable of locomotion. The combination of structural reconfigurability, material programmability, and potential for manufacturing scalability highlights knitted origami as a promising platform for next-generation wearable robotics. 
+
+**Abstract (ZH)**: 采用 Origami 结构与编织面料的编程性和可穿戴性相结合的方法实现兼具结构完整性和柔顺性的软机器人：复杂折纸图案的编织实现及其在可穿戴机器人中的应用 
+
+---
+# Improving Needle Penetration via Precise Rotational Insertion Using Iterative Learning Control 
+
+**Title (ZH)**: 基于迭代学习控制的精确旋转插入以提高针刺穿透性 
+
+**Authors**: Yasamin Foroutani, Yasamin Mousavi-Motlagh, Aya Barzelay, Tsu-Chin Tsao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.01256)  
+
+**Abstract**: Achieving precise control of robotic tool paths is often challenged by inherent system misalignments, unmodeled dynamics, and actuation inaccuracies. This work introduces an Iterative Learning Control (ILC) strategy to enable precise rotational insertion of a tool during robotic surgery, improving penetration efficacy and safety compared to straight insertion tested in subretinal injection. A 4 degree of freedom (DOF) robot manipulator is used, where misalignment of the fourth joint complicates the simple application of needle rotation, motivating an ILC approach that iteratively adjusts joint commands based on positional feedback. The process begins with calibrating the forward kinematics for the chosen surgical tool to achieve higher accuracy, followed by successive ILC iterations guided by Optical Coherence Tomography (OCT) volume scans to measure the error and refine control inputs. Experimental results, tested on subretinal injection tasks on ex vivo pig eyes, show that the optimized trajectory resulted in higher success rates in tissue penetration and subretinal injection compared to straight insertion, demonstrating the effectiveness of ILC in overcoming misalignment challenges. This approach offers potential applications for other high precision robot tasks requiring controlled insertions as well. 
+
+**Abstract (ZH)**: 通过迭代学习控制实现机器人手术工具精确旋转插入的研究：克服对齐偏差和提升穿透效果与安全性 
+
+---
+# High-Precision Surgical Robotic System for Intraocular Procedures 
+
+**Title (ZH)**: 高精度眼科手术机器人系统 
+
+**Authors**: Yu-Ting Lai, Jacob Rosen, Yasamin Foroutani, Ji Ma, Wen-Cheng Wu, Jean-Pierre Hubschman, Tsu-Chin Tsao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.01232)  
+
+**Abstract**: Despite the extensive demonstration of robotic systems for both cataract and vitreoretinal procedures, existing technologies or mechanisms still possess insufficient accuracy, precision, and degrees of freedom for instrument manipulation or potentially automated tool exchange during surgical procedures. A new robotic system that focuses on improving tooltip accuracy, tracking performance, and smooth instrument exchange mechanism is therefore designed and manufactured. Its tooltip accuracy, precision, and mechanical capability of maintaining small incision through remote center of motion were externally evaluated using an optical coherence tomography (OCT) system. Through robot calibration and precise coordinate registration, the accuracy of tooltip positioning was measured to be 0.053$\pm$0.031 mm, and the overall performance was demonstrated on an OCT-guided automated cataract lens extraction procedure with deep learning-based pre-operative anatomical modeling and real-time supervision. 
+
+**Abstract (ZH)**: 尽管机器人系统在白内障和玻璃体视网膜手术中得到了广泛演示，现有技术或机制在仪器操作或手术过程中潜在的自动工具交换方面仍然缺乏足够的精度、准确性和操作自由度。因此设计并制造了一个新的机器人系统，专注于提高提示点精度、跟踪性能以及平滑的仪器交换机制。该系统的提示点精度、精度及其通过远程中心运动保持小切口的机械能力通过光学相干断层扫描(OCT)系统进行了外部评估。通过机器人校准和精确的坐标注册，提示点定位的准确性被测量为0.053±0.031 mm，并在基于深度学习的术前解剖建模和实时监督的OCT引导自动白内障晶状体提取过程中展示了整体性能。 
+
+---
+# Tackling the Kidnapped Robot Problem via Sparse Feasible Hypothesis Sampling and Reliable Batched Multi-Stage Inference 
+
+**Title (ZH)**: 基于稀疏可行假设采样和可靠批次多阶段推断解决绑架机器人问题 
+
+**Authors**: Muhua Zhang, Lei Ma, Ying Wu, Kai Shen, Deqing Huang, Henry Leung  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.01219)  
+
+**Abstract**: This paper addresses the Kidnapped Robot Problem (KRP), a core localization challenge of relocalizing a robot in a known map without prior pose estimate when localization loss or at SLAM initialization. For this purpose, a passive 2-D global relocalization framework is proposed. It estimates the global pose efficiently and reliably from a single LiDAR scan and an occupancy grid map while the robot remains stationary, thereby enhancing the long-term autonomy of mobile robots. The proposed framework casts global relocalization as a non-convex problem and solves it via the multi-hypothesis scheme with batched multi-stage inference and early termination, balancing completeness and efficiency. The Rapidly-exploring Random Tree (RRT), under traversability constraints, asymptotically covers the reachable space to generate sparse, uniformly distributed feasible positional hypotheses, fundamentally reducing the sampling space. The hypotheses are preliminarily ordered by the proposed Scan Mean Absolute Difference (SMAD), a coarse beam-error level metric that facilitates the early termination by prioritizing high-likelihood candidates. The SMAD computation is optimized for non-panoramic scans. And the Translation-Affinity Scan-to-Map Alignment Metric (TAM) is proposed for reliable orientation selection at hypothesized positions and accurate final pose evaluation to mitigate degradation in conventional likelihood-field metrics under translational uncertainty induced by sparse hypotheses, as well as non-panoramic LiDAR scan and environmental changes. Real-world experiments on a resource-constrained mobile robot with non-panoramic LiDAR scan demonstrate that the proposed framework outperforms existing methods in both global relocalization success rate and computational efficiency. 
+
+**Abstract (ZH)**: 基于LiDAR单扫描的自适应鲁棒全局重定位框架 
+
+---
+# Closed-loop Control of Steerable Balloon Endoscopes for Robot-assisted Transcatheter Intracardiac Procedures 
+
+**Title (ZH)**: 可操控气囊内镜的闭环控制方法及其在机器人辅助经皮心脏程序中的应用 
+
+**Authors**: Max McCandless, Jonathan Hamid, Sammy Elmariah, Nathaniel Langer, Pierre E. Dupont  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.01199)  
+
+**Abstract**: To move away from open-heart surgery towards safer transcatheter procedures, there is a growing need for improved imaging techniques and robotic solutions to enable simple, accurate tool navigation. Common imaging modalities, such as fluoroscopy and ultrasound, have limitations that can be overcome using cardioscopy, i.e., direct optical visualization inside the beating heart. We present a cardioscope designed as a steerable balloon. As a balloon, it can be collapsed to pass through the vasculature and subsequently inflated inside the heart for visualization and tool delivery through an integrated working channel. Through careful design of balloon wall thickness, a single input, balloon inflation pressure, is used to independently control two outputs, balloon diameter (corresponding to field of view diameter) and balloon bending angle (enabling precise working channel positioning). This balloon technology can be tuned to produce cardioscopes designed for a range of intracardiac tasks. To illustrate this approach, a balloon design is presented for the specific task of aortic leaflet laceration. Image-based closed-loop control of bending angle is also demonstrated as a means of enabling stable orientation control during tool insertion and removal. 
+
+**Abstract (ZH)**: 为了远离开胸手术，转向更安全的经导管程序，需要改进的成像技术和机器人解决方案以实现简单、准确的工具导航越来越重要。常见的成像方式，如血管造影和超声波，可以通过心脏内直接光学可视化，即卡迪斯科（cardioscopy），来克服其局限性。我们提出了一种作为可定向气球设计的卡迪斯cope。作为一种气球，它可以折叠以通过血管并通过心脏充气进行可视化和通过内置工作通道输送工具。通过仔细设计气球壁厚，使用单个输入和气球充气压力，可以独立控制两个输出：气球直径（对应视野直径）和气球弯曲角度（实现工作通道精确定位）。这种气球技术可以调整以生产适用于一系列心脏内任务的卡迪斯cope。为了说明这种方法，我们提出了一种专为主动脉瓣裂伤设计的气球设计。还展示了基于图像的闭环控制弯曲角度的方法，以实现工具插入和移除过程中的稳定方向控制。 
+
+---
+# An Enhanced Proprioceptive Method for Soft Robots Integrating Bend Sensors and IMUs 
+
+**Title (ZH)**: 集成弯传感器和IMUs的增强型本体感受方法研究 
+
+**Authors**: Dong Heon Han, Mayank Mehta, Runze Zuo, Zachary Wanger, Daniel Bruder  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.01165)  
+
+**Abstract**: This study presents an enhanced proprioceptive method for accurate shape estimation of soft robots using only off-the-shelf sensors, ensuring cost-effectiveness and easy applicability. By integrating inertial measurement units (IMUs) with complementary bend sensors, IMU drift is mitigated, enabling reliable long-term proprioception. A Kalman filter fuses segment tip orientations from both sensors in a mutually compensatory manner, improving shape estimation over single-sensor methods. A piecewise constant curvature model estimates the tip location from the fused orientation data and reconstructs the robot's deformation. Experiments under no loading, external forces, and passive obstacle interactions during 45 minutes of continuous operation showed a root mean square error of 16.96 mm (2.91% of total length), a 56% reduction compared to IMU-only benchmarks. These results demonstrate that our approach not only enables long-duration proprioception in soft robots but also maintains high accuracy and robustness across these diverse conditions. 
+
+**Abstract (ZH)**: 本研究提出了一种增强型本体感受方法，仅使用市售传感器即可精确估计软机器人形状，确保成本效益和易于应用。通过将惯性测量单元（IMU）与互补弯曲传感器结合，减轻了IMU漂移，实现了可靠且长时间的本体感受。卡尔曼滤波器以互补方式融合了两个传感器的段端方向，改进了单传感器方法的形状估计。 piecewise常曲率模型从融合的方向数据中估计段端位置并重构机器人的变形。在45分钟连续运行状态下，无负载、外部力以及被动障碍物交互条件下的实验结果显示均方根误差为16.96 mm（总长度的2.91%），与仅使用IMU的基准相比降低了56%。这些结果表明，本研究的方法不仅能够在软机器人中实现长时间的本体感受，而且在这些不同的条件下保持了高精度和鲁棒性。 
+
+---
+# Deployable Vision-driven UAV River Navigation via Human-in-the-loop Preference Alignment 
+
+**Title (ZH)**: 基于人类在环偏好对准的可展开视觉驱动无人机河流导航 
+
+**Authors**: Zihan Wang, Jianwen Li, Li-Fan Wu, Nina Mahmoudian  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.01083)  
+
+**Abstract**: Rivers are critical corridors for environmental monitoring and disaster response, where Unmanned Aerial Vehicles (UAVs) guided by vision-driven policies can provide fast, low-cost coverage. However, deployment exposes simulation-trained policies with distribution shift and safety risks and requires efficient adaptation from limited human interventions. We study human-in-the-loop (HITL) learning with a conservative overseer who vetoes unsafe or inefficient actions and provides statewise preferences by comparing the agent's proposal with a corrective override. We introduce Statewise Hybrid Preference Alignment for Robotics (SPAR-H), which fuses direct preference optimization on policy logits with a reward-based pathway that trains an immediate-reward estimator from the same preferences and updates the policy using a trust-region surrogate. With five HITL rollouts collected from a fixed novice policy, SPAR-H achieves the highest final episodic reward and the lowest variance across initial conditions among tested methods. The learned reward model aligns with human-preferred actions and elevates nearby non-intervened choices, supporting stable propagation of improvements. We benchmark SPAR-H against imitation learning (IL), direct preference variants, and evaluative reinforcement learning (RL) in the HITL setting, and demonstrate real-world feasibility of continual preference alignment for UAV river following. Overall, dual statewise preferences empirically provide a practical route to data-efficient online adaptation in riverine navigation. 
+
+**Abstract (ZH)**: 无人机引导的视觉驱动政策在河流监控和灾害响应中的关键走廊作用及其稳健的人机闭环学习 
+
+---
+# AquaROM: shape optimization pipeline for soft swimmers using parametric reduced order models 
+
+**Title (ZH)**: AquaROM：使用参数化降阶模型的软游动体形状优化流程 
+
+**Authors**: Mathieu Dubied, Paolo Tiso, Robert K. Katzschmann  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.01031)  
+
+**Abstract**: The efficient optimization of actuated soft structures, particularly under complex nonlinear forces, remains a critical challenge in advancing robotics. Simulations of nonlinear structures, such as soft-bodied robots modeled using the finite element method (FEM), often demand substantial computational resources, especially during optimization. To address this challenge, we propose a novel optimization algorithm based on a tensorial parametric reduced order model (PROM). Our algorithm leverages dimensionality reduction and solution approximation techniques to facilitate efficient solving of nonlinear constrained optimization problems. The well-structured tensorial approach enables the use of analytical gradients within a specifically chosen reduced order basis (ROB), significantly enhancing computational efficiency. To showcase the performance of our method, we apply it to optimizing soft robotic swimmer shapes. These actuated soft robots experience hydrodynamic forces, subjecting them to both internal and external nonlinear forces, which are incorporated into our optimization process using a data-free ROB for fast and accurate computations. This approach not only reduces computational complexity but also unlocks new opportunities to optimize complex nonlinear systems in soft robotics, paving the way for more efficient design and control. 
+
+**Abstract (ZH)**: 基于张量参数化降阶模型的软结构高效优化 
+
+---
+# Breaking the Latency Barrier: Synergistic Perception and Control for High-Frequency 3D Ultrasound Servoing 
+
+**Title (ZH)**: 打破延迟壁垒：协同感知与控制在高频3D超声伺服中的应用 
+
+**Authors**: Yizhao Qian, Yujie Zhu, Jiayuan Luo, Li Liu, Yixuan Yuan, Guochen Ning, Hongen Liao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.00983)  
+
+**Abstract**: Real-time tracking of dynamic targets amidst large-scale, high-frequency disturbances remains a critical unsolved challenge in Robotic Ultrasound Systems (RUSS), primarily due to the end-to-end latency of existing systems. This paper argues that breaking this latency barrier requires a fundamental shift towards the synergistic co-design of perception and control. We realize it in a novel framework with two tightly-coupled contributions: (1) a Decoupled Dual-Stream Perception Network that robustly estimates 3D translational state from 2D images at high frequency, and (2) a Single-Step Flow Policy that generates entire action sequences in one inference pass, bypassing the iterative bottleneck of conventional policies. This synergy enables a closed-loop control frequency exceeding 60Hz. On a dynamic phantom, our system not only tracks complex 3D trajectories with a mean error below 6.5mm but also demonstrates robust re-acquisition from over 170mm displacement. Furthermore, it can track targets at speeds of 102mm/s, achieving a terminal error below 1.7mm. Moreover, in-vivo experiments on a human volunteer validate the framework's effectiveness and robustness in a realistic clinical setting. Our work presents a RUSS holistically architected to unify high-bandwidth tracking with large-scale repositioning, a critical step towards robust autonomy in dynamic clinical environments. 
+
+**Abstract (ZH)**: 实时跟踪大规模高频干扰中的动态目标仍然是Robotic Ultrasound Systems (RUSS) 中的关键未解决挑战，主要归因于现有系统的端到端延迟。本文认为打破这一延迟障碍需要朝着感知与控制的协同共设计进行根本性转变。我们通过一个新颖的框架实现这一目标，该框架包含两个紧密耦合的贡献：（1）解耦双流感知网络，该网络在高频下从二维图像中稳健估计三维平移状态；（2）单步流策略，该策略在一个推理过程中生成完整的动作序列，绕过了传统策略的迭代瓶颈。这种协同作用使得闭环控制频率超过60Hz。在动态 Phantom 上，我们的系统不仅以低于6.5毫米的均值误差跟踪复杂的3D轨迹，还能从超过170毫米的位移中稳健重新获取目标。此外，该系统能够在每秒102毫米的速度下跟踪目标，终端误差低于1.7毫米。此外，在人类志愿者的体内实验中，该框架在现实临床环境中显示出有效性和鲁棒性。我们所作的工作是设计了一个综合架构的RUSS，统一了高带宽跟踪与大规模重新定位，这对于动态临床环境中的稳健自主性来说是一个关键步骤。 
+
+---
+# Real-Time Learning of Predictive Dynamic Obstacle Models for Robotic Motion Planning 
+
+**Title (ZH)**: 实时学习预测动力学障碍模型的机器人运动规划 
+
+**Authors**: Stella Kombo, Masih Haseli, Skylar Wei, Joel W. Burdick  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.00814)  
+
+**Abstract**: Autonomous systems often must predict the motions of nearby agents from partial and noisy data. This paper asks and answers the question: "can we learn, in real-time, a nonlinear predictive model of another agent's motions?" Our online framework denoises and forecasts such dynamics using a modified sliding-window Hankel Dynamic Mode Decomposition (Hankel-DMD). Partial noisy measurements are embedded into a Hankel matrix, while an associated Page matrix enables singular-value hard thresholding (SVHT) to estimate the effective rank. A Cadzow projection enforces structured low-rank consistency, yielding a denoised trajectory and local noise variance estimates. From this representation, a time-varying Hankel-DMD lifted linear predictor is constructed for multi-step forecasts. The residual analysis provides variance-tracking signals that can support downstream estimators and risk-aware planning. We validate the approach in simulation under Gaussian and heavy-tailed noise, and experimentally on a dynamic crane testbed. Results show that the method achieves stable variance-aware denoising and short-horizon prediction suitable for integration into real-time control frameworks. 
+
+**Abstract (ZH)**: 自主系统often必须从部分且噪声数据中预测附近代理的运动。本文询问并回答了以下问题：“我们能否在线学习另一个代理运动的非线性预测模型？”我们的在线框架使用修改后的滑动窗口Hankel动态模式分解（Hankel-DMD）来去噪和预测此类动力学。部分噪声测量值被嵌入Hankel矩阵中，而相关的Page矩阵使奇异值硬截断（SVHT）估算有效秩成为可能。Cadzow投影强制结构化低秩一致性，从而生成去噪轨迹和局部噪声方差估计。从这种表示出发，构建了多步预测的时变Hankel-DMD提升线性预测器。残差分析提供了方差跟踪信号，可支持下游估计器和风险意识规划。我们在具有高斯噪声和重尾噪声的仿真中验证了该方法，并在动态起重机试验台上进行了实验。结果显示，该方法实现了稳定方差意识去噪和适合集成到实时控制框架中的短时间窗预测。 
+
+---
+# Adaptive and Multi-object Grasping via Deformable Origami Modules 
+
+**Title (ZH)**: 基于可变形 origami 模块的自适应多目标抓取 
+
+**Authors**: Peiyi Wang, Paul A. M. Lefeuvre, Shangwei Zou, Zhenwei Ni, Daniela Rus, Cecilia Laschi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.00516)  
+
+**Abstract**: Soft robotics gripper have shown great promise in handling fragile and geometrically complex objects. However, most existing solutions rely on bulky actuators, complex control strategies, or advanced tactile sensing to achieve stable and reliable grasping performance. In this work, we present a multi-finger hybrid gripper featuring passively deformable origami modules that generate constant force and torque output. Each finger composed of parallel origami modules is driven by a 1-DoF actuator mechanism, enabling passive shape adaptability and stable grasping force without active sensing or feedback control. More importantly, we demonstrate an interesting capability in simultaneous multi-object grasping, which allows stacked objects of varied shape and size to be picked, transported and placed independently at different states, significantly improving manipulation efficiency compared to single-object grasping. These results highlight the potential of origami-based compliant structures as scalable modules for adaptive, stable and efficient multi-object manipulation in domestic and industrial pick-and-place scenarios. 
+
+**Abstract (ZH)**: 基于 origami 模块的多指混合吸持器在处理易碎和几何形状复杂的物体方面表现出巨大潜力。然而，现有大多数解决方案依赖于笨重的致动器、复杂的控制策略或高级触觉感知以实现稳定的抓取性能。在这项工作中，我们提出了一种多指混合吸持器，其特点是采用可被动变形的 origami 模块来产生恒定的力和扭矩输出。每个手指由多个并联的 origami 模块组成，通过1-DoF致动器机制驱动，实现被动形状适应性和稳定的抓取力，无需主动传感或反馈控制。更重要的是，我们展示了同时多物体抓取的独特能力，允许将不同形状和大小的堆叠物体独立地拾取、运输和放置，显著提高了与单一物体抓取相比的操纵效率。这些结果突显了基于 origami 的可形变结构作为可扩展模块，在家庭和工业捡取和放置场景中实现适应性、稳定性和高效多物体操纵的潜力。 
+
+---
+# Design and Development of a Modular Bucket Drum Excavator for Lunar ISRU 
+
+**Title (ZH)**: 月球就地资源利用用模块化桶式鼓锤挖掘机的设计与开发 
+
+**Authors**: Simon Giel, James Hurrell, Shreya Santra, Ashutosh Mishra, Kentaro Uno, Kazuya Yoshida  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.00492)  
+
+**Abstract**: In-Situ Resource Utilization (ISRU) is one of the key technologies for enabling sustainable access to the Moon. The ability to excavate lunar regolith is the first step in making lunar resources accessible and usable. This work presents the development of a bucket drum for the modular robotic system MoonBot, as part of the Japanese Moonshot program. A 3D-printed prototype made of PLA was manufactured to evaluate its efficiency through a series of sandbox tests. The resulting tool weighs 4.8 kg and has a volume of 14.06 L. It is capable of continuous excavation at a rate of 777.54 kg/h with a normalized energy consumption of 0.022 Wh/kg. In batch operation, the excavation rate is 172.02 kg/h with a normalized energy consumption of 0.86 Wh per kilogram of excavated material. The obtained results demonstrate the successful implementation of the concept. A key advantage of the developed tool is its compatibility with the modular MoonBot robotic platform, which enables flexible and efficient mission planning. Further improvements may include the integration of sensors and an autonomous control system to enhance the excavation process. 
+
+**Abstract (ZH)**: 月球原位资源利用（ISRU）是实现可持续月球访问的关键技术之一。挖掘月壤是使月球资源可获取和利用的第一步。本研究介绍了日本月球计划项目中为模块化机器人系统月球号开发的铲斗滚筒的开发情况。通过一系列沙箱测试，评估了该3D打印的PLA原型的效率，该工具重4.8公斤，体积为14.06升，连续挖掘速率为777.54公斤/小时，单位质量能耗为0.022 Wh/公斤。在批量操作中，挖掘速率为172.02公斤/小时，单位质量能耗为0.86 Wh/公斤被挖掘的物料。获得的结果证明了概念的成功实现。该工具的一个关键优势是其与模块化月球号机器人平台的兼容性，这使得任务规划更加灵活和高效。进一步的改进可能包括集成传感器和自主控制系统以提高挖掘过程。 
+
+---
+# Tailored robotic training improves hand function and proprioceptive processing in stroke survivors with proprioceptive deficits: A randomized controlled trial 
+
+**Title (ZH)**: 针对本体感觉缺陷的中风幸存者定制化机器人训练改善手功能和本体感觉处理：一项随机对照试验 
+
+**Authors**: Andria J. Farrens, Luis Garcia-Fernandez, Raymond Diaz Rojas, Jillian Obeso Estrada, Dylan Reinsdorf, Vicky Chan, Disha Gupta, Joel Perry, Eric Wolbrecht, An Do, Steven C. Cramer, David J. Reinkensmeyer  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.00259)  
+
+**Abstract**: Precision rehabilitation aims to tailor movement training to improve outcomes. We tested whether proprioceptively-tailored robotic training improves hand function and neural processing in stroke survivors. Using a robotic finger exoskeleton, we tested two proprioceptively-tailored approaches: Propriopixel Training, which uses robot-facilitated, gamified movements to enhance proprioceptive processing, and Virtual Assistance Training, which reduces robotic aid to increase reliance on self-generated feedback. In a randomized controlled trial, forty-six chronic stroke survivors completed nine 2-hour sessions of Standard, Propriopixel or Virtual training. Among participants with proprioceptive deficits, Propriopixel ((Box and Block Test: 7 +/- 4.2, p=0.002) and Virtual Assistance (4.5 +/- 4.4 , p=0.068) yielded greater gains in hand function (Standard: 0.8 +/- 2.3 blocks). Proprioceptive gains correlated with improvements in hand function. Tailored training enhanced neural sensitivity to proprioceptive cues, evidenced by a novel EEG biomarker, the proprioceptive Contingent Negative Variation. These findings support proprioceptively-tailored training as a pathway to precision neurorehabilitation. 
+
+**Abstract (ZH)**: 精确康复旨在定制运动训练以改善康复效果。我们测试了本体感受定制的机器人训练是否能改善中风幸存者的手功能和神经处理。使用机器人手指外骨骼，我们测试了两种本体感受定制的方法：Propriopixel训练，该方法利用机器人辅助的游戏化运动来增强本体感受处理；以及虚拟辅助训练，该方法减少机器人辅助以增加对自主反馈的依赖。在随机对照试验中，46例慢性中风幸存者完成了九次2小时的标准化、Propriopixel或虚拟辅助训练。在具有本体感受缺陷的参与者中，Propriopixel（箱和块测试：7 ± 4.2，p=0.002）和虚拟辅助训练（4.5 ± 4.4，p=0.068）在手功能方面表现出更大的改善，而标准化训练（0.8 ± 2.3块）则没有明显改善。本体感受的提高与手功能的改善相关。定制化的训练增强了对本体感受提示的神经敏感性，这通过一种新的EEG生物标志物，即本体感受相关的负变jab（Contingent Negative Variation）得以体现。这些发现支持本体感受定制的训练作为精准神经康复的途径。 
+
+---
+# Reducing Robotic Upper-Limb Assessment Time While Maintaining Precision: A Time Series Foundation Model Approach 
+
+**Title (ZH)**: 减少上肢机器人评估时间的同时保持精度：一种时间序列基础模型方法 
+
+**Authors**: Faranak Akbarifar, Nooshin Maghsoodi, Sean P Dukelow, Stephen Scott, Parvin Mousavi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.00193)  
+
+**Abstract**: Purpose: Visually Guided Reaching (VGR) on the Kinarm robot yields sensitive kinematic biomarkers but requires 40-64 reaches, imposing time and fatigue burdens. We evaluate whether time-series foundation models can replace unrecorded trials from an early subset of reaches while preserving the reliability of standard Kinarm parameters.
+Methods: We analyzed VGR speed signals from 461 stroke and 599 control participants across 4- and 8-target reaching protocols. We withheld all but the first 8 or 16 reaching trials and used ARIMA, MOMENT, and Chronos models, fine-tuned on 70 percent of subjects, to forecast synthetic trials. We recomputed four kinematic features of reaching (reaction time, movement time, posture speed, maximum speed) on combined recorded plus forecasted trials and compared them to full-length references using ICC(2,1).
+Results: Chronos forecasts restored ICC >= 0.90 for all parameters with only 8 recorded trials plus forecasts, matching the reliability of 24-28 recorded reaches (Delta ICC <= 0.07). MOMENT yielded intermediate gains, while ARIMA improvements were minimal. Across cohorts and protocols, synthetic trials replaced reaches without materially compromising feature reliability.
+Conclusion: Foundation-model forecasting can greatly shorten Kinarm VGR assessment time. For the most impaired stroke survivors, sessions drop from 4-5 minutes to about 1 minute while preserving kinematic precision. This forecast-augmented paradigm promises efficient robotic evaluations for assessing motor impairments following stroke. 
+
+**Abstract (ZH)**: 目的: 使用Kinarm机器人进行视觉引导抓取（VGR）测试可以获取敏感的动力学生物标记，但需要40-64次抓取，这会带来时间上的负担和疲劳。我们评估时间序列基础模型是否可以在保留标准Kinarm参数可靠性的前提下，替代早期抓取子集中的未记录试验。 
+
+---
+# Model-free source seeking of exponentially convergent unicycle: theoretical and robotic experimental results 
+
+**Title (ZH)**: 无需收敛指数的单轮移动机器人源寻求：理论与机器人实验结果 
+
+**Authors**: Rohan Palanikumar, Ahmed A. Elgohary, Victoria Grushkovskaya, Sameh A. Eisa  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.00752)  
+
+**Abstract**: This paper introduces a novel model-free, real-time unicycle-based source seeking design. This design steers autonomously the unicycle dynamic system towards the extremum point of an objective function or physical/scaler signal that is unknown expression-wise, but accessible via measurements. A key contribution of this paper is that the introduced design converges exponentially to the extremum point of objective functions (or scaler signals) that behave locally like a higher-degree power functions (e.g., fourth degree polynomial function) as opposed to locally quadratic objective functions, the usual case in literature. We provide theoretical and simulation results to support out theoretical results. Also, for the first time in the literature, we provide experimental robotic results that demonstrate the effectiveness of the proposed design and its exponential convergence ability. 
+
+**Abstract (ZH)**: 本文介绍了一种新型无模型、实时轮式унicycle源寻找设计。该设计通过测量数据自主引导轮式унicycle动力系统趋近于未知表达形式但可通过测量获得的目标函数或标量信号的极值点。本文的一个关键贡献在于，引入的设计以指数方式趋近于局部行为类似于高次幂函数（如四次多项式函数）的目标函数（或标量信号）的极值点，而不同于文献中通常假设的局部二次目标函数。我们提供了理论和仿真结果来支持我们的理论成果。此外，本文首次在文献中提供了实验机器人结果，证明了所提设计的有效性和指数趋近能力。 
+
+---
+# Supply Chain Exploitation of Secure ROS 2 Systems: A Proof-of-Concept on Autonomous Platform Compromise via Keystore Exfiltration 
+
+**Title (ZH)**: 基于密钥库泄露的自主平台 compromize 以证明安全 ROS 2 系统供应链利用的概念验证 
+
+**Authors**: Tahmid Hasan Sakib, Yago Romano Martinez, Carter Brady, Syed Rafay Hasan, Terry N. Guo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.00140)  
+
+**Abstract**: This paper presents a proof-of-concept supply chain attack against the Secure ROS 2 (SROS 2) framework, demonstrated on a Quanser QCar2 autonomous vehicle platform. A Trojan-infected Debian package modifies core ROS 2 security commands to exfiltrate newly generated keystore credentials via DNS in base64-encoded chunks to an attacker-controlled nameserver. Possession of these credentials enables the attacker to rejoin the SROS 2 network as an authenticated participant and publish spoofed control or perception messages without triggering authentication failures. We evaluate this capability on a secure ROS 2 Humble testbed configured for a four-stop-sign navigation routine using an Intel RealSense camera for perception. Experimental results show that control-topic injections can cause forced braking, sustained high-speed acceleration, and continuous turning loops, while perception-topic spoofing can induce phantom stop signs or suppress real detections. The attack generalizes to any data distribution service (DDS)-based robotic system using SROS 2, highlighting the need for both supply chain integrity controls and runtime semantic validation to safeguard autonomous systems against insider and impersonation threats. 
+
+**Abstract (ZH)**: 本文针对安全ROS 2 (SROS 2) 框架提出了一种概念验证供应链攻击，并在Quanser QCar2自主车辆平台上进行演示。受感染的Debian包修改了核心ROS 2安全命令，以将新生成的keystore凭据以base64编码的块形式通过DNS exfiltrate至由攻击者控制的域名服务器。这些凭据的拥有权使攻击者能够作为认证参与者重新加入SROS 2网络，并发布伪造的控制或感知消息而不触发认证故障。在配置了四盏停止标志导航例行程序且使用Intel RealSense相机进行感知的安全ROS 2 Humble测试床中，实验结果表明，控制主题注入可导致强制制动、持续高速加速和连续转弯循环，而感知主题伪造可能导致虚幻的停止标志或抑制真实检测。该攻击可以应用于使用SROS 2的任何基于数据分布服务(DDS)的机器人系统，突显了需要同时具备供应链完整性控制和运行时语义验证以保护自主系统免受内部人员和冒名顶替威胁的重要性。 
+
+---
+# AeroResQ: Edge-Accelerated UAV Framework for Scalable, Resilient and Collaborative Escape Route Planning in Wildfire Scenarios 
+
+**Title (ZH)**: AeroResQ：加速边缘计算的无人驾驶飞行器框架，用于 wildfires 情境下可扩展、稳健且协作的撤离路线规划 
+
+**Authors**: Suman Raj, Radhika Mittal, Rajiv Mayani, Pawel Zuk, Anirban Mandal, Michael Zink, Yogesh Simmhan, Ewa Deelman  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.00038)  
+
+**Abstract**: Drone fleets equipped with onboard cameras, computer vision, and Deep Neural Network (DNN) models present a powerful paradigm for real-time spatio-temporal decision-making. In wildfire response, such drones play a pivotal role in monitoring fire dynamics, supporting firefighter coordination, and facilitating safe evacuation. In this paper, we introduce AeroResQ, an edge-accelerated UAV framework designed for scalable, resilient, and collaborative escape route planning during wildfire scenarios. AeroResQ adopts a multi-layer orchestration architecture comprising service drones (SDs) and coordinator drones (CDs), each performing specialized roles. SDs survey fire-affected areas, detect stranded individuals using onboard edge accelerators running fire detection and human pose identification DNN models, and issue requests for assistance. CDs, equipped with lightweight data stores such as Apache IoTDB, dynamically generate optimal ground escape routes and monitor firefighter movements along these routes. The framework proposes a collaborative path-planning approach based on a weighted A* search algorithm, where CDs compute context-aware escape paths. AeroResQ further incorporates intelligent load-balancing and resilience mechanisms: CD failures trigger automated data redistribution across IoTDB replicas, while SD failures initiate geo-fenced re-partitioning and reassignment of spatial workloads to operational SDs. We evaluate AeroResQ using realistic wildfire emulated setup modeled on recent Southern California wildfires. Experimental results demonstrate that AeroResQ achieves a nominal end-to-end latency of <=500ms, much below the 2s request interval, while maintaining over 98% successful task reassignment and completion, underscoring its feasibility for real-time, on-field deployment in emergency response and firefighter safety operations. 
+
+**Abstract (ZH)**: 基于边缘加速的AeroResQ无人机框架： wildfire场景下的 scalable、resilient 和协作逃逸路线规划 
+
+---

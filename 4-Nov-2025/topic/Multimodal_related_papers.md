@@ -1,0 +1,247 @@
+# LiDAR-VGGT: Cross-Modal Coarse-to-Fine Fusion for Globally Consistent and Metric-Scale Dense Mapping 
+
+**Title (ZH)**: LiDAR-VGGT：跨模态从粗到细融合用于全局一致的米尺级稠密 mapping 
+
+**Authors**: Lijie Wang, Lianjie Guo, Ziyi Xu, Qianhao Wang, Fei Gao, Xieyuanli Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.01186)  
+
+**Abstract**: Reconstructing large-scale colored point clouds is an important task in robotics, supporting perception, navigation, and scene understanding. Despite advances in LiDAR inertial visual odometry (LIVO), its performance remains highly sensitive to extrinsic calibration. Meanwhile, 3D vision foundation models, such as VGGT, suffer from limited scalability in large environments and inherently lack metric scale. To overcome these limitations, we propose LiDAR-VGGT, a novel framework that tightly couples LiDAR inertial odometry with the state-of-the-art VGGT model through a two-stage coarse- to-fine fusion pipeline: First, a pre-fusion module with robust initialization refinement efficiently estimates VGGT poses and point clouds with coarse metric scale within each session. Then, a post-fusion module enhances cross-modal 3D similarity transformation, using bounding-box-based regularization to reduce scale distortions caused by inconsistent FOVs between LiDAR and camera sensors. Extensive experiments across multiple datasets demonstrate that LiDAR-VGGT achieves dense, globally consistent colored point clouds and outperforms both VGGT-based methods and LIVO baselines. The implementation of our proposed novel color point cloud evaluation toolkit will be released as open source. 
+
+**Abstract (ZH)**: 大规模彩色点云重建是机器人技术中的一个重要任务，支持感知、导航和场景理解。尽管在LiDAR惯性视觉里程计（LIVO）方面取得了进展，其性能仍然高度依赖于外在标定。同时，3D视觉基础模型如VGGT在大型环境中的可扩展性有限，并且本质上缺乏度量尺度。为克服这些限制，我们提出了一种名为LiDAR-VGGT的新框架，该框架通过两阶段粗到细融合管道紧密耦合LiDAR惯性里程计和最先进的VGGT模型：首先，一个前融合模块通过稳健的初始化精化在每次会话中高效估计具有粗度量尺度的VGGT姿态和点云。然后，一个后融合模块增强了跨模态3D相似变换，使用基于边界框的正则化来减少由LiDAR和摄像机传感器不一致的视场造成的尺度失真。在多个数据集上的广泛实验表明，LiDAR-VGGT实现了密集且全局一致的彩色点云，并在基于VGGT的方法和LIVO基线上表现出色。我们提出的新型彩色点云评估工具箱的实现将作为开源发布。 
+
+---
+# Fast-SmartWay: Panoramic-Free End-to-End Zero-Shot Vision-and-Language Navigation 
+
+**Title (ZH)**: Fast-SmartWay: 全景-free 从端到端零样本视觉-语言导航 
+
+**Authors**: Xiangyu Shi, Zerui Li, Yanyuan Qiao, Qi Wu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.00933)  
+
+**Abstract**: Recent advances in Vision-and-Language Navigation in Continuous Environments (VLN-CE) have leveraged multimodal large language models (MLLMs) to achieve zero-shot navigation. However, existing methods often rely on panoramic observations and two-stage pipelines involving waypoint predictors, which introduce significant latency and limit real-world applicability. In this work, we propose Fast-SmartWay, an end-to-end zero-shot VLN-CE framework that eliminates the need for panoramic views and waypoint predictors. Our approach uses only three frontal RGB-D images combined with natural language instructions, enabling MLLMs to directly predict actions. To enhance decision robustness, we introduce an Uncertainty-Aware Reasoning module that integrates (i) a Disambiguation Module for avoiding local optima, and (ii) a Future-Past Bidirectional Reasoning mechanism for globally coherent planning. Experiments on both simulated and real-robot environments demonstrate that our method significantly reduces per-step latency while achieving competitive or superior performance compared to panoramic-view baselines. These results demonstrate the practicality and effectiveness of Fast-SmartWay for real-world zero-shot embodied navigation. 
+
+**Abstract (ZH)**: Recent Advances in Vision-and-Language Navigation in Continuous Environments (VLN-CE): Fast-SmartWay, an End-to-End Zero-Shot Framework Without Panoramic Views and Waypoint Predictors 
+
+---
+# PixelVLA: Advancing Pixel-level Understanding in Vision-Language-Action Model 
+
+**Title (ZH)**: PixelVLA：提升视觉-语言-行动模型的像素级理解 
+
+**Authors**: Wenqi Liang, Gan Sun, Yao He, Jiahua Dong, Suyan Dai, Ivan Laptev, Salman Khan, Yang Cong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.01571)  
+
+**Abstract**: Vision-Language-Action models (VLAs) are emerging as powerful tools for learning generalizable visuomotor control policies. However, current VLAs are mostly trained on large-scale image-text-action data and remain limited in two key ways: (i) they struggle with pixel-level scene understanding, and (ii) they rely heavily on textual prompts, which reduces their flexibility in real-world settings. To address these challenges, we introduce PixelVLA, the first VLA model designed to support both pixel-level reasoning and multimodal prompting with text and visual inputs. Our approach is built on a new visuomotor instruction tuning framework that integrates a multiscale pixel-aware encoder with a visual prompting encoder. To train PixelVLA effectively, we further propose a two-stage automated annotation pipeline that generates Pixel-160K, a large-scale dataset with pixel-level annotations derived from existing robot data. Experiments on three standard VLA benchmarks and two VLA model variants show that PixelVLA improves manipulation success rates by 10.1%-17.8% over OpenVLA, while requiring only 1.5% of its pretraining cost. These results demonstrate that PixelVLA can be integrated into existing VLAs to enable more accurate, efficient, and versatile robot control in complex environments. The dataset and code will be released as open source. 
+
+**Abstract (ZH)**: 基于像素级别的Vision-Language-Action模型（PixelVLA）：支持多模态提示的视觉-语言-动作模型 
+
+---
+# Robust Multimodal Sentiment Analysis via Double Information Bottleneck 
+
+**Title (ZH)**: 通过双信息瓶颈实现的鲁棒多模态情感分析 
+
+**Authors**: Huiting Huang, Tieliang Gong, Kai He, Jialun Wu, Erik Cambria, Mengling Feng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.01444)  
+
+**Abstract**: Multimodal sentiment analysis has received significant attention across diverse research domains. Despite advancements in algorithm design, existing approaches suffer from two critical limitations: insufficient learning of noise-contaminated unimodal data, leading to corrupted cross-modal interactions, and inadequate fusion of multimodal representations, resulting in discarding discriminative unimodal information while retaining multimodal redundant information. To address these challenges, this paper proposes a Double Information Bottleneck (DIB) strategy to obtain a powerful, unified compact multimodal representation. Implemented within the framework of low-rank Renyi's entropy functional, DIB offers enhanced robustness against diverse noise sources and computational tractability for high-dimensional data, as compared to the conventional Shannon entropy-based methods. The DIB comprises two key modules: 1) learning a sufficient and compressed representation of individual unimodal data by maximizing the task-relevant information and discarding the superfluous information, and 2) ensuring the discriminative ability of multimodal representation through a novel attention bottleneck fusion mechanism. Consequently, DIB yields a multimodal representation that effectively filters out noisy information from unimodal data while capturing inter-modal complementarity. Extensive experiments on CMU-MOSI, CMU-MOSEI, CH-SIMS, and MVSA-Single validate the effectiveness of our method. The model achieves 47.4% accuracy under the Acc-7 metric on CMU-MOSI and 81.63% F1-score on CH-SIMS, outperforming the second-best baseline by 1.19%. Under noise, it shows only 0.36% and 0.29% performance degradation on CMU-MOSI and CMU-MOSEI respectively. 
+
+**Abstract (ZH)**: 多模态情感分析在多个研究领域引起了广泛关注。虽然在算法设计上取得了进步，现有方法仍面临两大关键限制：无法充分学习受噪声污染的单模态数据，导致跨模态交互被破坏，以及无法有效融合多模态表示，从而丢弃具有判别性的单模态信息而保留多模态冗余信息。为解决这些挑战，本文提出了一种双信息瓶颈（Double Information Bottleneck，DIB）策略，以获取强大的统一紧凑多模态表示。DIB基于低秩Renyi熵泛函框架实现，相比传统的基于香农熵的方法，提供了更强的针对多种噪声源的鲁棒性和高效计算能力。DIB包含两个关键模块：1）通过最大化与任务相关的信息并丢弃多余信息，学习足够且压缩的单模态数据表示；2）通过一种新颖的注意力瓶颈融合机制，确保多模态表示的判别能力。因此，DIB生成的多模态表示能够有效地过滤单模态数据中的噪声信息并捕捉跨模态互补性。在CMU-MOSI、CMU-MOSEI、CH-SIMS和MVSA-Single数据集上的广泛实验验证了该方法的有效性。该模型在CMU-MOSI数据集上的Acc-7精度达到了47.4%，在CH-SIMS数据集上取得了81.63%的F1分数，优于第二最佳基线1.19%。在噪声条件下，CMU-MOSI和CMU-MOSEI数据集上的性能下降分别仅为0.36%和0.29%。 
+
+---
+# OmniFuser: Adaptive Multimodal Fusion for Service-Oriented Predictive Maintenance 
+
+**Title (ZH)**: 全知融合：面向服务的自适应多模态融合预测性维护 
+
+**Authors**: Ziqi Wang, Hailiang Zhao, Yuhao Yang, Daojiang Hu, Cheng Bao, Mingyi Liu, Kai Di, Schahram Dustdar, Zhongjie Wang, Shuiguang Deng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.01320)  
+
+**Abstract**: Accurate and timely prediction of tool conditions is critical for intelligent manufacturing systems, where unplanned tool failures can lead to quality degradation and production downtime. In modern industrial environments, predictive maintenance is increasingly implemented as an intelligent service that integrates sensing, analysis, and decision support across production processes. To meet the demand for reliable and service-oriented operation, we present OmniFuser, a multimodal learning framework for predictive maintenance of milling tools that leverages both visual and sensor data. It performs parallel feature extraction from high-resolution tool images and cutting-force signals, capturing complementary spatiotemporal patterns across modalities. To effectively integrate heterogeneous features, OmniFuser employs a contamination-free cross-modal fusion mechanism that disentangles shared and modality-specific components, allowing for efficient cross-modal interaction. Furthermore, a recursive refinement pathway functions as an anchor mechanism, consistently retaining residual information to stabilize fusion dynamics. The learned representations can be encapsulated as reusable maintenance service modules, supporting both tool-state classification (e.g., Sharp, Used, Dulled) and multi-step force signal forecasting. Experiments on real-world milling datasets demonstrate that OmniFuser consistently outperforms state-of-the-art baselines, providing a dependable foundation for building intelligent industrial maintenance services. 
+
+**Abstract (ZH)**: 基于视觉和传感器数据的多模态学习框架OmniFuser及其在铣刀预测性维护中的应用 
+
+---
+# A Multimodal Framework for Depression Detection during Covid-19 via Harvesting Social Media: A Novel Dataset and Method 
+
+**Title (ZH)**: 基于社交媒体信息采集的新冠疫情期间抑郁检测多模态框架：一个新型数据集与方法 
+
+**Authors**: Ashutosh Anshul, Gumpili Sai Pranav, Mohammad Zia Ur Rehman, Nagendra Kumar  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.00424)  
+
+**Abstract**: The recent coronavirus disease (Covid-19) has become a pandemic and has affected the entire globe. During the pandemic, we have observed a spike in cases related to mental health, such as anxiety, stress, and depression. Depression significantly influences most diseases worldwide, making it difficult to detect mental health conditions in people due to unawareness and unwillingness to consult a doctor. However, nowadays, people extensively use online social media platforms to express their emotions and thoughts. Hence, social media platforms are now becoming a large data source that can be utilized for detecting depression and mental illness. However, existing approaches often overlook data sparsity in tweets and the multimodal aspects of social media. In this paper, we propose a novel multimodal framework that combines textual, user-specific, and image analysis to detect depression among social media users. To provide enough context about the user's emotional state, we propose (i) an extrinsic feature by harnessing the URLs present in tweets and (ii) extracting textual content present in images posted in tweets. We also extract five sets of features belonging to different modalities to describe a user. Additionally, we introduce a Deep Learning model, the Visual Neural Network (VNN), to generate embeddings of user-posted images, which are used to create the visual feature vector for prediction. We contribute a curated Covid-19 dataset of depressed and non-depressed users for research purposes and demonstrate the effectiveness of our model in detecting depression during the Covid-19 outbreak. Our model outperforms existing state-of-the-art methods over a benchmark dataset by 2%-8% and produces promising results on the Covid-19 dataset. Our analysis highlights the impact of each modality and provides valuable insights into users' mental and emotional states. 
+
+**Abstract (ZH)**: 最近的新型冠状病毒疾病（COVID-19）已成为全球大流行，并影响了整个地球。在大流行期间，我们观察到与心理健康相关的病例激增，如焦虑、压力和抑郁。抑郁症在全球大多数疾病中都具有显著影响，使得人们由于缺乏意识和不愿意咨询医生而在检测心理健康状况时面临困难。然而，如今人们广泛使用在线社交媒体平台来表达自己的情绪和思想。因此，社交媒体平台现在成为了一个重要的数据来源，可用于检测抑郁症和其他精神疾病。然而，现有的方法往往忽略了推文中数据稀疏性和社交媒体的多模态特性。在本文中，我们提出了一种新颖的多模态框架，结合文本、用户特定信息和图像分析，以检测社交媒体用户中的抑郁症。为了提供足够的上下文描述用户的情绪状态，我们提出了一种外部特征，通过利用推文中包含的URL，并提取出现在推文中发布的图像中的文本内容。我们还提取了五个不同模态的特征集，以描述用户。此外，我们引入了深度学习模型，视觉神经网络（VNN），用于生成用户发布图像的嵌入表示，这些嵌入用于创建视觉特征向量进行预测。我们为研究目的贡献了一个 curated 的 COVID-19 抑郁和非抑郁用户数据集，并证明了我们的模型在 COVID-19 爆发期间检测抑郁症的有效性。我们的模型在基准数据集上优于现有最先进的方法 2%-8%，并在 COVID-19 数据集上产生了令人鼓舞的结果。我们的分析突显了每个模态的影响，并提供了有关用户心理和情绪状态的宝贵见解。 
+
+---
+# Multimodal Detection of Fake Reviews using BERT and ResNet-50 
+
+**Title (ZH)**: 使用BERT和ResNet-50的多模态假评论检测 
+
+**Authors**: Suhasnadh Reddy Veluru, Sai Teja Erukude, Viswa Chaitanya Marella  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.00020)  
+
+**Abstract**: In the current digital commerce landscape, user-generated reviews play a critical role in shaping consumer behavior, product reputation, and platform credibility. However, the proliferation of fake or misleading reviews often generated by bots, paid agents, or AI models poses a significant threat to trust and transparency within review ecosystems. Existing detection models primarily rely on unimodal, typically textual, data and therefore fail to capture semantic inconsistencies across different modalities. To address this gap, a robust multimodal fake review detection framework is proposed, integrating textual features encoded with BERT and visual features extracted using ResNet-50. These representations are fused through a classification head to jointly predict review authenticity. To support this approach, a curated dataset comprising 21,142 user-uploaded images across food delivery, hospitality, and e-commerce domains was utilized. Experimental results indicate that the multimodal model outperforms unimodal baselines, achieving an F1-score of 0.934 on the test set. Additionally, the confusion matrix and qualitative analysis highlight the model's ability to detect subtle inconsistencies, such as exaggerated textual praise paired with unrelated or low-quality images, commonly found in deceptive content. This study demonstrates the critical role of multimodal learning in safeguarding digital trust and offers a scalable solution for content moderation across various online platforms. 
+
+**Abstract (ZH)**: 当前数字商务环境下，用户生成的评论在塑造消费者行为、产品声誉和平台可信度方面发挥着关键作用。然而，由机器人、付费代理或AI模型生成的虚假或误导性评论往往对评论生态系统中的信任和透明度构成重大威胁。现有的检测模型主要依赖单一模态，通常是文本数据，因此无法捕捉不同模态之间的语义不一致。为弥补这一不足，提出了一种鲁棒的多模态虚假评论检测框架，该框架结合了使用BERT编码的文本特征和使用ResNet-50提取的视觉特征，并通过分类头将这些表示融合起来，共同预测评论的真实性。为此，利用了一个包含21,142张用户上传图片的数据集，涉及食品配送、住宿和服务电商领域。实验结果表明，多模态模型在测试集上的F1分数为0.934，优于单一模态基线。此外，混淆矩阵和定性分析表明，该模型能够检测到细微的不一致性，如夸大其词的文本赞美配以无关或低质量图片，这些特征常见于欺骗性内容。本研究展示了多模态学习在保护数字信任方面的重要作用，并提供了在各种在线平台上进行内容审核的可扩展解决方案。 
+
+---
+# UniSOT: A Unified Framework for Multi-Modality Single Object Tracking 
+
+**Title (ZH)**: UniSOT：多模态单目标跟踪统一框架 
+
+**Authors**: Yinchao Ma, Yuyang Tang, Wenfei Yang, Tianzhu Zhang, Xu Zhou, Feng Wu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.01427)  
+
+**Abstract**: Single object tracking aims to localize target object with specific reference modalities (bounding box, natural language or both) in a sequence of specific video modalities (RGB, RGB+Depth, RGB+Thermal or RGB+Event.). Different reference modalities enable various human-machine interactions, and different video modalities are demanded in complex scenarios to enhance tracking robustness. Existing trackers are designed for single or several video modalities with single or several reference modalities, which leads to separate model designs and limits practical applications. Practically, a unified tracker is needed to handle various requirements. To the best of our knowledge, there is still no tracker that can perform tracking with these above reference modalities across these video modalities simultaneously. Thus, in this paper, we present a unified tracker, UniSOT, for different combinations of three reference modalities and four video modalities with uniform parameters. Extensive experimental results on 18 visual tracking, vision-language tracking and RGB+X tracking benchmarks demonstrate that UniSOT shows superior performance against modality-specific counterparts. Notably, UniSOT outperforms previous counterparts by over 3.0\% AUC on TNL2K across all three reference modalities and outperforms Un-Track by over 2.0\% main metric across all three RGB+X video modalities. 
+
+**Abstract (ZH)**: 面向多种参考模态和视频模态的统一单目标跟踪器 UniSOT 
+
+---
+# SEPS: Semantic-enhanced Patch Slimming Framework for fine-grained cross-modal alignment 
+
+**Title (ZH)**: SEPS：增强语义的补丁瘦身框架用于细粒度跨模态对齐 
+
+**Authors**: Xinyu Mao, Junsi Li, Haoji Zhang, Yu Liang, Ming Sun  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.01390)  
+
+**Abstract**: Fine-grained cross-modal alignment aims to establish precise local correspondences between vision and language, forming a cornerstone for visual question answering and related multimodal applications. Current approaches face challenges in addressing patch redundancy and ambiguity, which arise from the inherent information density disparities across modalities. Recently, Multimodal Large Language Models (MLLMs) have emerged as promising solutions to bridge this gap through their robust semantic generation capabilities. However, the dense textual outputs from MLLMs may introduce conflicts with the original sparse captions. Furthermore, accurately quantifying semantic relevance between rich visual patches and concise textual descriptions remains a core challenge. To overcome these limitations, we introduce the Semantic-Enhanced Patch Slimming (SEPS) framework, which systematically addresses patch redundancy and ambiguity. Our approach employs a two-stage mechanism to integrate unified semantics from both dense and sparse texts, enabling the identification of salient visual patches. Additionally, it leverages relevance-aware selection with mean value computation to highlight crucial patch-word correspondences, thereby improving cross-modal similarity assessment. Comprehensive experiments on Flickr30K and MS-COCO datasets validate that SEPS achieves superior performance, surpassing existing approaches by 23\%-86\% in rSum across diverse model architectures, with notable enhancements in text-to-image retrieval scenarios. Our implementation is available at this https URL. 
+
+**Abstract (ZH)**: 细粒度跨模态对齐旨在建立精确的视觉和语言局部对应关系，为视觉问答及相关多模态应用奠定基础。现有方法在处理由信息密度差异导致的补丁冗余性和模态间歧义性方面面临挑战。最近，多模态大规模语言模型（MLLMs）因其 robust 的语义生成能力成为弥合这一差距的有希望的解决方案。然而，MLLMs 密集的文本输出可能与原始稀疏标注发生冲突。此外，准确量化丰富视觉补丁与简洁文本描述之间的语义相关性仍然是一个核心挑战。为克服这些局限性，我们引入了语义增强补丁瘦身（SEPS）框架，系统地解决补丁冗余性和歧义性问题。我们的方法采用两阶段机制整合稠密和稀疏文本的统一语义，以识别显著的视觉补丁。此外，SEPS 还利用关联感知的选择和均值计算来突出关键的补丁-词对应关系，从而提高跨模态相似性评估。在 Flickr30K 和 MS-COCO 数据集上的全面实验验证了 SEPS 的优越性能，在多种模型架构下，其 rSum 表现超过现有方法 23%-86%，尤其在文本到图像检索场景中表现突出。我们的实现可在以下链接获取：this https URL。 
+
+---
+# CMI-MTL: Cross-Mamba interaction based multi-task learning for medical visual question answering 
+
+**Title (ZH)**: CMI-MTL：基于跨Mamba交互的多任务学习在医疗视觉问答中的应用 
+
+**Authors**: Qiangguo Jin, Xianyao Zheng, Hui Cui, Changming Sun, Yuqi Fang, Cong Cong, Ran Su, Leyi Wei, Ping Xuan, Junbo Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.01357)  
+
+**Abstract**: Medical visual question answering (Med-VQA) is a crucial multimodal task in clinical decision support and telemedicine. Recent self-attention based methods struggle to effectively handle cross-modal semantic alignments between vision and language. Moreover, classification-based methods rely on predefined answer sets. Treating this task as a simple classification problem may make it unable to adapt to the diversity of free-form answers and overlook the detailed semantic information of free-form answers. In order to tackle these challenges, we introduce a Cross-Mamba Interaction based Multi-Task Learning (CMI-MTL) framework that learns cross-modal feature representations from images and texts. CMI-MTL comprises three key modules: fine-grained visual-text feature alignment (FVTA), cross-modal interleaved feature representation (CIFR), and free-form answer-enhanced multi-task learning (FFAE). FVTA extracts the most relevant regions in image-text pairs through fine-grained visual-text feature alignment. CIFR captures cross-modal sequential interactions via cross-modal interleaved feature representation. FFAE leverages auxiliary knowledge from open-ended questions through free-form answer-enhanced multi-task learning, improving the model's capability for open-ended Med-VQA. Experimental results show that CMI-MTL outperforms the existing state-of-the-art methods on three Med-VQA datasets: VQA-RAD, SLAKE, and OVQA. Furthermore, we conduct more interpretability experiments to prove the effectiveness. The code is publicly available at this https URL. 
+
+**Abstract (ZH)**: 基于Cross-Mamba交互的多任务学习框架（CMI-MTL）：用于医学视觉问答的跨模态特征表示 
+
+---
+# Few-Shot Multimodal Medical Imaging: A Theoretical Framework 
+
+**Title (ZH)**: 少样本多模态医学成像：一个理论框架 
+
+**Authors**: Md Talha Mohsin, Ismail Abdulrashid  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.01140)  
+
+**Abstract**: Medical imaging relies heavily on large, labeled datasets. But, unfortunately, they are not always easily accessible in clinical settings. Additionally, many practitioners often face various structural obstacles like limited data availability, fragmented data systems, and unbalanced datasets. These barriers often lead to the increased diagnostic uncertainty, underrepresentation of certain conditions, reduced model robustness, and biased diagnostic decisions. In response to these challenges, approaches such as transfer learning, meta-learning, and multimodal fusion have made great strides. However, they still need a solid theoretical justification for why they succeed or fail in situations where data is scarce. To address this gap, we propose a unified theoretical framework that characterizes learning and inference under low-resource medical imaging conditions. We first formalize the learning objective under few-shot conditions and compute sample complexity constraints to estimate the smallest quantity of data needed to achieve clinically reliable accuracy. Then based on ideas from PAC-learning and PAC-Bayesian theory, we explain how multimodal integration encourages generalization and quantifies uncertainty under sparse supervision. We further propose a formal metric for explanation stability, offering interpretability guarantees under low-data conditions. Taken together, the proposed framework establishes a principled foundation for constructing dependable, data-efficient diagnostic systems by jointly characterizing sample efficiency, uncertainty quantification, and interpretability in a unified theoretical setting. 
+
+**Abstract (ZH)**: 一种统一的理论框架：在低资源医疗影像条件下学习与推理的理论基础 
+
+---
+# Leveraging Hierarchical Image-Text Misalignment for Universal Fake Image Detection 
+
+**Title (ZH)**: 利用层次化的图像-文本错位检测通用虚假图像 
+
+**Authors**: Daichi Zhang, Tong Zhang, Jianmin Bao, Shiming Ge, Sabine Süsstrunk  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.00427)  
+
+**Abstract**: With the rapid development of generative models, detecting generated fake images to prevent their malicious use has become a critical issue recently. Existing methods frame this challenge as a naive binary image classification task. However, such methods focus only on visual clues, yielding trained detectors susceptible to overfitting specific image patterns and incapable of generalizing to unseen models. In this paper, we address this issue from a multi-modal perspective and find that fake images cannot be properly aligned with corresponding captions compared to real images. Upon this observation, we propose a simple yet effective detector termed ITEM by leveraging the image-text misalignment in a joint visual-language space as discriminative clues. Specifically, we first measure the misalignment of the images and captions in pre-trained CLIP's space, and then tune a MLP head to perform the usual detection task. Furthermore, we propose a hierarchical misalignment scheme that first focuses on the whole image and then each semantic object described in the caption, which can explore both global and fine-grained local semantic misalignment as clues. Extensive experiments demonstrate the superiority of our method against other state-of-the-art competitors with impressive generalization and robustness on various recent generative models. 
+
+**Abstract (ZH)**: 随着生成模型的迅速发展，检测生成的假图以防止其恶意使用已成为一个critical问题。现有方法将这一挑战框定为一个简单的二元图像分类任务。然而，此类方法仅关注视觉线索，导致训练好的检测器容易过度拟合特定图像模式，无法泛化到未见过的模型。在本文中，我们从多模态角度出发，发现假图与相应的Caption不匹配，而真实图像是匹配的。基于这一观察，我们提出了一种名为ITEM的简单而有效的检测器，通过在联合视觉-语言空间中利用图像-文本不匹配作为判别线索。具体而言，我们首先在预训练CLIP的空间中度量图像和Caption的不匹配程度，然后调整一个MLP头以执行常规的检测任务。此外，我们提出了一种分层不匹配方案，首先关注整个图像，然后关注Caption中描述的每个语义对象，这可以探索全局和细粒度的局部语义不匹配作为线索。广泛的实验表明，我们的方法在各种近期生成模型上具有出色的泛化能力和鲁棒性，优于其他最先进的竞争对手。 
+
+---
+# LongCat-Flash-Omni Technical Report 
+
+**Title (ZH)**: 长猫-闪光-全能技术报告 
+
+**Authors**: Meituan LongCat Team, Bairui Wang, Bayan, Bin Xiao, Bo Zhang, Bolin Rong, Borun Chen, Chang Wan, Chao Zhang, Chen Huang, Chen Chen, Chen Chen, Chengxu Yang, Chengzuo Yang, Cong Han, Dandan Peng, Delian Ruan, Detai Xin, Disong Wang, Dongchao Yang, Fanfan Liu, Fengjiao Chen, Fengyu Yang, Gan Dong, Gang Huang, Gang Xu, Guanglu Wan, Guoqiang Tan, Guoqiao Yu, Haibo Qiu, Hao Lu, Hongbo Liu, Hongyu Xiang, Jiaheng Wu, Jian Yang, Jiaxing Liu, Jing Huang, Jingang Wang, Jinrui Ding, Juchao Jiang, Jun Kuang, Jun Wang, Junhui Mei, Ke Ding, Kefeng Zhang, Lei Chen, Liang Shi, Limeng Qiao, Liming Zheng, Lin Ma, Liuyang Guo, Liya Ma, Luying Sun, Man Gao, Mengshen Zhu, Miao Cao, Minliang Lin, Nuo Xu, Peng Shi, Qi Zhang, Qian Fang, Qian Wang, Qian Yang, Quanxiu Wang, Rongxiang Weng, Rongxin Guo, Ruoxuan Liang, Senbin Yang, Shanbo Xu, Shanglin Lei, Shengze Ye, Shimin Chen, Shuaiqi Chen, Shujie Hu, Shuo Li, Siqi Yang, Siyu Xu, Siyu Ren, Song Li, Songxiang Liu, Tianhao Bai, Tianye Dai, Wei Hong, Wei Wang, Weixiao Zhao, Wengang Cao, Wenlong Zhu, Wenlong He, Xi Su, Xi Nan, Xiaohan Zhao, Xiaohao Wang, Xiaoyu Zhao, Xiaoyu Wang, Xiaoyu Li, Xin Pan, Xin Chen, Xiusong Sun, Xu Xiang, Xudong Xing  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.00279)  
+
+**Abstract**: We introduce LongCat-Flash-Omni, a state-of-the-art open-source omni-modal model with 560 billion parameters, excelling at real-time audio-visual interaction. By adopting a curriculum-inspired progressive training strategy that transitions from simpler to increasingly complex modality sequence modeling tasks, LongCat-Flash-Omni attains comprehensive multimodal capabilities while maintaining strong unimodal capability. Building upon LongCat-Flash, which adopts a high-performance Shortcut-connected Mixture-of-Experts (MoE) architecture with zero-computation experts, LongCat-Flash-Omni integrates efficient multimodal perception and speech reconstruction modules. Despite its immense size of 560B parameters (with 27B activated), LongCat-Flash-Omni achieves low-latency real-time audio-visual interaction. For training infrastructure, we developed a modality-decoupled parallelism scheme specifically designed to manage the data and model heterogeneity inherent in large-scale multimodal training. This innovative approach demonstrates exceptional efficiency by sustaining over 90% of the throughput achieved by text-only training. Extensive evaluations show that LongCat-Flash-Omni achieves state-of-the-art performance on omni-modal benchmarks among open-source models. Furthermore, it delivers highly competitive results across a wide range of modality-specific tasks, including text, image, and video understanding, as well as audio understanding and generation. We provide a comprehensive overview of the model architecture design, training procedures, and data strategies, and open-source the model to foster future research and development in the community. 
+
+**Abstract (ZH)**: LongCat-Flash-Omni：一种具有560亿参数的大规模开源多模态模型，擅长实时音视频交互 
+
+---
+# A Retrospect to Multi-prompt Learning across Vision and Language 
+
+**Title (ZH)**: 视觉与语言跨模态多提示学习的历史展望 
+
+**Authors**: Ziliang Chen, Xin Huang, Quanlong Guan, Liang Lin, Weiqi Luo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.00191)  
+
+**Abstract**: The vision community is undergoing the unprecedented progress with the emergence of Vision-Language Pretraining Models (VLMs). Prompt learning plays as the holy grail of accessing VLMs since it enables their fast adaptation to downstream tasks with limited resources. Whereas existing researches milling around single-prompt paradigms, rarely investigate the technical potential behind their multi-prompt learning counterparts. This paper aims to provide a principled retrospect for vision-language multi-prompt learning. We extend the recent constant modality gap phenomenon to learnable prompts and then, justify the superiority of vision-language transfer with multi-prompt augmentation, empirically and theoretically. In terms of this observation, we propose an Energy-based Multi-prompt Learning (EMPL) to generate multiple prompt embeddings by drawing instances from an energy-based distribution, which is implicitly defined by VLMs. So our EMPL is not only parameter-efficient but also rigorously lead to the balance between in-domain and out-of-domain open-vocabulary generalization. Comprehensive experiments have been conducted to justify our claims and the excellence of EMPL. 
+
+**Abstract (ZH)**: 视觉语言多提示学习的原理回顾：基于能量的多提示学习 
+
+---
+# AI Powered High Quality Text to Video Generation with Enhanced Temporal Consistency 
+
+**Title (ZH)**: AI驱动的高质量文本到视频生成，增强时序一致性 
+
+**Authors**: Piyushkumar Patel  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.00107)  
+
+**Abstract**: Text to video generation has emerged as a critical frontier in generative artificial intelligence, yet existing approaches struggle with maintaining temporal consistency, compositional understanding, and fine grained control over visual narratives. We present MOVAI (Multimodal Original Video AI), a novel hierarchical framework that integrates compositional scene understanding with temporal aware diffusion models for high fidelity text to video synthesis. Our approach introduces three key innovations: (1) a Compositional Scene Parser (CSP) that decomposes textual descriptions into hierarchical scene graphs with temporal annotations, (2) a Temporal-Spatial Attention Mechanism (TSAM) that ensures coherent motion dynamics across frames while preserving spatial details, and (3) a Progressive Video Refinement (PVR) module that iteratively enhances video quality through multi-scale temporal reasoning. Extensive experiments on standard benchmarks demonstrate that MOVAI achieves state-of-the-art performance, improving video quality metrics by 15.3% in LPIPS, 12.7% in FVD, and 18.9% in user preference studies compared to existing methods. Our framework shows particular strength in generating complex multi-object scenes with realistic temporal dynamics and fine-grained semantic control. 
+
+**Abstract (ZH)**: 多模态原创视频AI：一种结合时空感知扩散模型的分层框架以实现高保真文本到视频合成 
+
+---
+# FreeSliders: Training-Free, Modality-Agnostic Concept Sliders for Fine-Grained Diffusion Control in Images, Audio, and Video 
+
+**Title (ZH)**: FreeSliders: 无需训练、跨模态的概念滑块用于图像、音频和视频的精细控制扩散 
+
+**Authors**: Rotem Ezra, Hedi Zisling, Nimrod Berman, Ilan Naiman, Alexey Gorkor, Liran Nochumsohn, Eliya Nachmani, Omri Azencot  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.00103)  
+
+**Abstract**: Diffusion models have become state-of-the-art generative models for images, audio, and video, yet enabling fine-grained controllable generation, i.e., continuously steering specific concepts without disturbing unrelated content, remains challenging. Concept Sliders (CS) offer a promising direction by discovering semantic directions through textual contrasts, but they require per-concept training and architecture-specific fine-tuning (e.g., LoRA), limiting scalability to new modalities. In this work we introduce FreeSliders, a simple yet effective approach that is fully training-free and modality-agnostic, achieved by partially estimating the CS formula during inference. To support modality-agnostic evaluation, we extend the CS benchmark to include both video and audio, establishing the first suite for fine-grained concept generation control with multiple modalities. We further propose three evaluation properties along with new metrics to improve evaluation quality. Finally, we identify an open problem of scale selection and non-linear traversals and introduce a two-stage procedure that automatically detects saturation points and reparameterizes traversal for perceptually uniform, semantically meaningful edits. Extensive experiments demonstrate that our method enables plug-and-play, training-free concept control across modalities, improves over existing baselines, and establishes new tools for principled controllable generation. An interactive presentation of our benchmark and method is available at: this https URL 
+
+**Abstract (ZH)**: 差分模型已成为图像、音频和视频的最先进的生成模型，然而实现细粒度可控生成，即在不干扰无关内容的情况下连续引导特定概念，仍然具有挑战性。概念滑块（CS）通过文本对比发现语义方向，展现出有前景的方向，但需要针对每个概念训练和特定架构的微调（如LoRA），这限制了其对新模态的可扩展性。本文提出了一种简单而有效的FreeSliders方法，该方法完全不需要训练且模态无关，通过在推理过程中部分估计CS公式实现。为支持模态无关的评估，我们将CS基准扩展到包括视频和音频，建立了第一个多模态细粒度概念生成控制套件。我们进一步提出了三种评估属性和新的评估指标，以提高评估质量。最后，我们识别了一个规模选择和非线性遍历的开放问题，并引入了两阶段过程，自动检测饱和点并重新参数化遍历，以实现感知均匀、语义相关的编辑。大量实验证明，我们的方法使得在不同模态下实现即插即用、无需训练的概念控制成为可能，并改进了现有的基线方法，建立了新的原则性可控生成工具。我们的基准和方法的互动演示可访问：this https URL。 
+
+---
+# SpinalSAM-R1: A Vision-Language Multimodal Interactive System for Spine CT Segmentation 
+
+**Title (ZH)**: 脊柱SAM-R1：一种用于脊柱CT分割的视觉-语言多模态交互系统 
+
+**Authors**: Jiaming Liu, Dingwei Fan, Junyong Zhao, Chunlin Li, Haipeng Si, Liang Sun  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.00095)  
+
+**Abstract**: The anatomical structure segmentation of the spine and adjacent structures from computed tomography (CT) images is a key step for spinal disease diagnosis and treatment. However, the segmentation of CT images is impeded by low contrast and complex vertebral boundaries. Although advanced models such as the Segment Anything Model (SAM) have shown promise in various segmentation tasks, their performance in spinal CT imaging is limited by high annotation requirements and poor domain adaptability. To address these limitations, we propose SpinalSAM-R1, a multimodal vision-language interactive system that integrates a fine-tuned SAM with DeepSeek-R1, for spine CT image segmentation. Specifically, our SpinalSAM-R1 introduces an anatomy-guided attention mechanism to improve spine segmentation performance, and a semantics-driven interaction protocol powered by DeepSeek-R1, enabling natural language-guided refinement. The SpinalSAM-R1 is fine-tuned using Low-Rank Adaptation (LoRA) for efficient adaptation. We validate our SpinalSAM-R1 on the spine anatomical structure with CT images. Experimental results suggest that our method achieves superior segmentation performance. Meanwhile, we develop a PyQt5-based interactive software, which supports point, box, and text-based prompts. The system supports 11 clinical operations with 94.3\% parsing accuracy and sub-800 ms response times. The software is released on this https URL. 
+
+**Abstract (ZH)**: 脊椎及相邻结构从计算机断层扫描（CT）图像的解剖结构分割是脊柱疾病诊断和治疗中的关键步骤。然而，CT图像分割受低对比度和复杂的椎体边界限制。尽管Segment Anything Model (SAM) 等先进模型在各种分割任务中表现出潜力，但在脊柱CT成像中的性能受限于高标注要求和差的领域适应性。为解决这些限制，我们提出了一种多模态视觉-语言交互系统SpinalSAM-R1，该系统将fine-tuned SAM与DeepSeek-R1结合，用于脊柱CT图像分割。具体来说，我们的SpinalSAM-R1引入了一种基于解剖学的注意力机制以提高脊柱分割性能，并通过DeepSeek-R1驱动的语义驱动交互协议，实现基于自然语言的精化。SpinalSAM-R1通过低秩适应（LoRA）进行精细调优，以实现高效的适应性。我们在CT图像上的脊柱解剖结构上验证了SpinalSAM-R1。实验结果表明，该方法实现了优越的分割性能。同时，我们开发了一款基于PyQt5的交互软件，支持点、框和文本提示。该系统支持94.3%的解析准确率和小于800毫秒的响应时间。软件已发布在以下链接：https://www.example.com。 
+
+---
+# Aligning Brain Signals with Multimodal Speech and Vision Embeddings 
+
+**Title (ZH)**: 将脑信号与多模态语音和视觉嵌入对齐 
+
+**Authors**: Kateryna Shapovalenko, Quentin Auster  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.00065)  
+
+**Abstract**: When we hear the word "house", we don't just process sound, we imagine walls, doors, memories. The brain builds meaning through layers, moving from raw acoustics to rich, multimodal associations. Inspired by this, we build on recent work from Meta that aligned EEG signals with averaged wav2vec2 speech embeddings, and ask a deeper question: which layers of pre-trained models best reflect this layered processing in the brain? We compare embeddings from two models: wav2vec2, which encodes sound into language, and CLIP, which maps words to images. Using EEG recorded during natural speech perception, we evaluate how these embeddings align with brain activity using ridge regression and contrastive decoding. We test three strategies: individual layers, progressive concatenation, and progressive summation. The findings suggest that combining multimodal, layer-aware representations may bring us closer to decoding how the brain understands language, not just as sound, but as experience. 
+
+**Abstract (ZH)**: 当我们听到“房屋”这个词时，我们不仅处理声音，还会想象墙壁、门窗和记忆。大脑通过多层次的方式构建意义，从原始的声学信息过渡到丰富的多模态关联。受此启发，我们在Meta近期将EEG信号与wav2vec2语音嵌入平均值对齐的研究基础上，提出一个更深层的问题：哪些预训练模型的层次最能反映大脑的这种多层次处理过程？我们比较了两种模型的嵌入：wav2vec2，它将声音编码成语言，以及CLIP，它将单词映射成图像。利用自然言语感知过程中记录的EEG数据，我们使用岭回归和对比解码评估这些嵌入与大脑活动的对齐情况。我们测试了三种策略：单个层次、逐步拼接和逐步求和。研究结果表明，结合多模态、层次感知的表示方法，可能更接近于解码大脑如何将语言理解为体验，而不仅仅是声音。 
+
+---
+# Multimodal Learning with Augmentation Techniques for Natural Disaster Assessment 
+
+**Title (ZH)**: 使用增强技术的多模态学习在自然灾害评估中的应用 
+
+**Authors**: Adrian-Dinu Urse, Dumitru-Clementin Cercel, Florin Pop  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.00004)  
+
+**Abstract**: Natural disaster assessment relies on accurate and rapid access to information, with social media emerging as a valuable real-time source. However, existing datasets suffer from class imbalance and limited samples, making effective model development a challenging task. This paper explores augmentation techniques to address these issues on the CrisisMMD multimodal dataset. For visual data, we apply diffusion-based methods, namely Real Guidance and DiffuseMix. For text data, we explore back-translation, paraphrasing with transformers, and image caption-based augmentation. We evaluated these across unimodal, multimodal, and multi-view learning setups. Results show that selected augmentations improve classification performance, particularly for underrepresented classes, while multi-view learning introduces potential but requires further refinement. This study highlights effective augmentation strategies for building more robust disaster assessment systems. 
+
+**Abstract (ZH)**: 自然灾害评估依赖于准确且快速获取信息的能力，社会媒体作为有价值的实时信息源正逐渐兴起。然而，现有的数据集存在类别不平衡和样本量有限的问题，使得有效的模型开发面临挑战。本文探讨了在CrisisMMD多模态数据集上使用数据增强技术来解决这些问题。对于视觉数据，我们应用了基于扩散的方法，即Real Guidance和DiffuseMix。对于文本数据，我们探索了反向翻译、使用变换器的重述以及基于图像描述的增强方法。我们在单模态、多模态和多视图学习设置下评估了这些方法。结果表明，所选的数据增强方法可以提高分类性能，特别是在欠代表类别方面表现尤为明显，而多视图学习具有潜力但需要进一步优化。本研究强调了构建更稳健的灾害评估系统的有效增强策略。 
+
+---
