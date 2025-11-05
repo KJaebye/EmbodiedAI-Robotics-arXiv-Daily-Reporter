@@ -1,0 +1,39 @@
+# When One Modality Sabotages the Others: A Diagnostic Lens on Multimodal Reasoning 
+
+**Title (ZH)**: 一种诊断视角下的多模态推理：当一种模态损害其他模态时 
+
+**Authors**: Chenyu Zhang, Minsol Kim, Shohreh Ghorbani, Jingyao Wu, Rosalind Picard, Patricia Maes, Paul Pu Liang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.02794)  
+
+**Abstract**: Despite rapid growth in multimodal large language models (MLLMs), their reasoning traces remain opaque: it is often unclear which modality drives a prediction, how conflicts are resolved, or when one stream dominates. In this paper, we introduce modality sabotage, a diagnostic failure mode in which a high-confidence unimodal error overrides other evidence and misleads the fused result. To analyze such dynamics, we propose a lightweight, model-agnostic evaluation layer that treats each modality as an agent, producing candidate labels and a brief self-assessment used for auditing. A simple fusion mechanism aggregates these outputs, exposing contributors (modalities supporting correct outcomes) and saboteurs (modalities that mislead). Applying our diagnostic layer in a case study on multimodal emotion recognition benchmarks with foundation models revealed systematic reliability profiles, providing insight into whether failures may arise from dataset artifacts or model limitations. More broadly, our framework offers a diagnostic scaffold for multimodal reasoning, supporting principled auditing of fusion dynamics and informing possible interventions. 
+
+**Abstract (ZH)**: 尽管多模态大型语言模型（MLLMs）迅速增长，但其推理过程仍然不透明：往往是不清楚哪种模态驱动预测、冲突如何解决，或哪种模态占主导地位。本文引入了模态破坏这一诊断失效模式，其中高置信度的单模态错误覆盖其他证据，误导融合结果。为分析这种动态，我们提出了一个轻量级、模型无关的评估层，将每个模态视为代理，生成候选标签和简短的自我评估，用于审计。简单的融合机制汇总这些输出，揭示贡献者（支持正确结果的模态）和破坏者（误导模态）。在基础模型上对多模态情绪识别基准进行案例研究，揭示了系统性的可靠性概况，为是否源于数据集缺陷或模型限制提供了见解。更广泛而言，我们的框架为多模态推理提供了一种诊断支撑结构，支持融合动态的原理性审计，并指导可能的干预措施。 
+
+---
+# Let Multimodal Embedders Learn When to Augment Query via Adaptive Query Augmentation 
+
+**Title (ZH)**: 让多模态嵌入器通过自适应查询增强学习何时进行查询增强 
+
+**Authors**: Wongyu Kim, Hochang Lee, Sanghak Lee, Yoonsung Kim, Jaehyun Park  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.02358)  
+
+**Abstract**: Query augmentation makes queries more meaningful by appending further information to the queries to find relevant documents. Current studies have proposed Large Language Model (LLM)-based embedders, which learn representation for embedding and generation for query augmentation in a multi-task manner by leveraging the generative capabilities of LLM. During inference, these jointly trained embedders have conducted query augmentation followed by embedding, showing effective results. However, augmenting every query leads to substantial embedding latency and query augmentation can be detrimental to performance for some queries. Also, previous methods have not been explored in multimodal environments. To tackle these problems, we propose M-Solomon, a universal multimodal embedder that can adaptively determine when to augment queries. Our approach first divides the queries of the training datasets into two groups at the dataset level. One includes queries that require augmentation and the other includes queries that do not. Then, we introduces a synthesis process that generates appropriate augmentations for queries that require them by leveraging a powerful Multimodal LLM (MLLM). Next, we present adaptive query augmentation. Through this step, M-Solomon can conduct query augmentation only when necessary by learning to generate synthetic augmentations with the prefix /augment for queries that demand them and to generate the simple string /embed for others. Experimental results showed that M-Solomon not only surpassed the baseline without augmentation by a large margin but also outperformed the baseline that always used augmentation, providing much faster embedding latency. 
+
+**Abstract (ZH)**: 多模态查询增强的适应性嵌入器：M-Solomon 
+
+---
+# Text-VQA Aug: Pipelined Harnessing of Large Multimodal Models for Automated Synthesis 
+
+**Title (ZH)**: Text-VQA 增强：流水线集成大规模多模态模型进行自动化合成 
+
+**Authors**: Soham Joshi, Shwet Kamal Mishra, Viswanath Gopalakrishnan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.02046)  
+
+**Abstract**: Creation of large-scale databases for Visual Question Answering tasks pertaining to the text data in a scene (text-VQA) involves skilful human annotation, which is tedious and challenging. With the advent of foundation models that handle vision and language modalities, and with the maturity of OCR systems, it is the need of the hour to establish an end-to-end pipeline that can synthesize Question-Answer (QA) pairs based on scene-text from a given image. We propose a pipeline for automated synthesis for text-VQA dataset that can produce faithful QA pairs, and which scales up with the availability of scene text data. Our proposed method harnesses the capabilities of multiple models and algorithms involving OCR detection and recognition (text spotting), region of interest (ROI) detection, caption generation, and question generation. These components are streamlined into a cohesive pipeline to automate the synthesis and validation of QA pairs. To the best of our knowledge, this is the first pipeline proposed to automatically synthesize and validate a large-scale text-VQA dataset comprising around 72K QA pairs based on around 44K images. 
+
+**Abstract (ZH)**: 基于场景文本的视觉问答任务（text-VQA）的大规模数据库创建涉及细致的人工标注，这既繁琐又具有挑战性。随着能够处理视觉和语言模态的基础模型的出现，以及光学字符识别（OCR）系统的发展成熟，建立一个能够基于给定图像的场景文本自动生成问题-答案（QA）对的端到端管道迫在眉睫。我们提出了一种自动合成pipeline，用于生成忠实的QA对，并且随着场景文本数据的增加而扩展。我们提出的方法利用了OCR检测和识别（文本检测）、兴趣区域（ROI）检测、Caption生成和问题生成等多种模型和算法的能力。这些组件被整合成一个协调的pipeline，以自动化QA对的合成和验证。据我们所知，这是首次提出一个自动合成和验证基于约44K图像生成约72K QA对的大规模text-VQA数据集的pipeline。 
+
+---

@@ -1,0 +1,248 @@
+# TWIST2: Scalable, Portable, and Holistic Humanoid Data Collection System 
+
+**Title (ZH)**: TWIST2: 可扩展、便携且全面的人形数据采集系统 
+
+**Authors**: Yanjie Ze, Siheng Zhao, Weizhuo Wang, Angjoo Kanazawa, Rocky Duan, Pieter Abbeel, Guanya Shi, Jiajun Wu, C. Karen Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.02832)  
+
+**Abstract**: Large-scale data has driven breakthroughs in robotics, from language models to vision-language-action models in bimanual manipulation. However, humanoid robotics lacks equally effective data collection frameworks. Existing humanoid teleoperation systems either use decoupled control or depend on expensive motion capture setups. We introduce TWIST2, a portable, mocap-free humanoid teleoperation and data collection system that preserves full whole-body control while advancing scalability. Our system leverages PICO4U VR for obtaining real-time whole-body human motions, with a custom 2-DoF robot neck (cost around $250) for egocentric vision, enabling holistic human-to-humanoid control. We demonstrate long-horizon dexterous and mobile humanoid skills and we can collect 100 demonstrations in 15 minutes with an almost 100% success rate. Building on this pipeline, we propose a hierarchical visuomotor policy framework that autonomously controls the full humanoid body based on egocentric vision. Our visuomotor policy successfully demonstrates whole-body dexterous manipulation and dynamic kicking tasks. The entire system is fully reproducible and open-sourced at this https URL . Our collected dataset is also open-sourced at this https URL . 
+
+**Abstract (ZH)**: 大规模数据推动了机器人学的进步，从语言模型到双臂操控的视觉-语言-动作模型。然而，类人机器人缺乏同样有效的数据采集框架。现有的类人机器人远程操控系统要么采用解耦控制，要么依赖昂贵的运动捕捉设备。我们提出TWIST2，这是一种便携且无需运动捕捉的类人机器人远程操控和数据采集系统，保持全身控制的同时提高了可扩展性。该系统利用PICO4U VR获取实时全身人类动作，并配备一个自定义的2-DoF机器人颈部（成本约为250美元），以实现以第一人称视角的全方位人类到类人机器人操控。我们展示了长时程灵巧且移动的类人机器人技能，并在15分钟内收集了100个演示，成功率接近100%。在此基础上，我们提出了一种基于以第一人称视角的层次视觉-运动策略框架，能够自主控制整体现人机器人身体。我们的视觉-运动策略成功展示了全身灵巧操控和动态踢球任务。整个系统完全可再现并开源于https://this.url/。我们的收集数据集也开源于https://this.url/。 
+
+---
+# XR-1: Towards Versatile Vision-Language-Action Models via Learning Unified Vision-Motion Representations 
+
+**Title (ZH)**: XR-1: 向通用视觉-语言-行动模型方向探索统一视觉-运动表示的学习方法 
+
+**Authors**: Shichao Fan, Kun Wu, Zhengping Che, Xinhua Wang, Di Wu, Fei Liao, Ning Liu, Yixue Zhang, Zhen Zhao, Zhiyuan Xu, Meng Li, Qingjie Liu, Shanghang Zhang, Min Wan, Jian Tang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.02776)  
+
+**Abstract**: Recent progress in large-scale robotic datasets and vision-language models (VLMs) has advanced research on vision-language-action (VLA) models. However, existing VLA models still face two fundamental challenges: (i) producing precise low-level actions from high-dimensional observations, (ii) bridging domain gaps across heterogeneous data sources, including diverse robot embodiments and human demonstrations. Existing methods often encode latent variables from either visual dynamics or robotic actions to guide policy learning, but they fail to fully exploit the complementary multi-modal knowledge present in large-scale, heterogeneous datasets. In this work, we present X Robotic Model 1 (XR-1), a novel framework for versatile and scalable VLA learning across diverse robots, tasks, and environments. XR-1 introduces the \emph{Unified Vision-Motion Codes (UVMC)}, a discrete latent representation learned via a dual-branch VQ-VAE that jointly encodes visual dynamics and robotic motion. UVMC addresses these challenges by (i) serving as an intermediate representation between the observations and actions, and (ii) aligning multimodal dynamic information from heterogeneous data sources to capture complementary knowledge. To effectively exploit UVMC, we propose a three-stage training paradigm: (i) self-supervised UVMC learning, (ii) UVMC-guided pretraining on large-scale cross-embodiment robotic datasets, and (iii) task-specific post-training. We validate XR-1 through extensive real-world experiments with more than 14,000 rollouts on six different robot embodiments, spanning over 120 diverse manipulation tasks. XR-1 consistently outperforms state-of-the-art baselines such as $\pi_{0.5}$, $\pi_0$, RDT, UniVLA, and GR00T-N1.5 while demonstrating strong generalization to novel objects, background variations, distractors, and illumination changes. Our project is at this https URL. 
+
+**Abstract (ZH)**: 近年来，大规模机器人数据集和视觉-语言模型的进展推动了视觉-语言-动作（VLA）模型的研究。然而，现有的VLA模型仍然面临两大基本挑战：（i）从高维观察中生成精确的低级动作，（ii）弥合异构数据源之间的领域差距，包括多种机器人形态和人类示范之间的差距。现有方法通常通过编码视觉动态或机器人动作的潜在变量来引导策略学习，但这些方法未能充分利用大规模异构数据集中存在的互补多模态知识。在这项工作中，我们提出了XR-1机器人模型，一种用于跨多种机器人、任务和环境的多样性和可扩展性视觉-语言-动作学习的新框架。XR-1引入了统一的视觉-运动编码（UVMC），这是一种通过双分支VQ-VAE联合编码视觉动态和机器人运动的学习离散潜在表示。UVMC通过（i）作为观察和动作之间的中间表示，以及（ii）将来自异构数据源的多模态动态信息对齐以捕获互补知识来解决这些挑战。为了有效利用UVMC，我们提出了一种三阶段训练范式：（i）自我监督的UVMC学习，（ii）在大规模跨形态机器人数据集上的UVMC引导预训练，以及（iii）任务特定的后训练。我们通过在六个不同机器人形态上的超过14,000个卷积实验进行了广泛的实际验证，涵盖了超过120种多样化的操作任务。XR-1在$\pi_{0.5}$、$\pi_0$、RDT、UniVLA和GR00T-N1.5等最先进的基线模型上表现出色，并且在新型物体、背景变化、干扰和光照变化的泛化能力方面表现出色。我们的项目网页链接为：this https URL。 
+
+---
+# Dexterous Robotic Piano Playing at Scale 
+
+**Title (ZH)**: 大规模灵巧机器人钢琴演奏 
+
+**Authors**: Le Chen, Yi Zhao, Jan Schneider, Quankai Gao, Simon Guist, Cheng Qian, Juho Kannala, Bernhard Schölkopf, Joni Pajarinen, Dieter Büchler  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.02504)  
+
+**Abstract**: Endowing robot hands with human-level dexterity has been a long-standing goal in robotics. Bimanual robotic piano playing represents a particularly challenging task: it is high-dimensional, contact-rich, and requires fast, precise control. We present OmniPianist, the first agent capable of performing nearly one thousand music pieces via scalable, human-demonstration-free learning. Our approach is built on three core components. First, we introduce an automatic fingering strategy based on Optimal Transport (OT), allowing the agent to autonomously discover efficient piano-playing strategies from scratch without demonstrations. Second, we conduct large-scale Reinforcement Learning (RL) by training more than 2,000 agents, each specialized in distinct music pieces, and aggregate their experience into a dataset named RP1M++, consisting of over one million trajectories for robotic piano playing. Finally, we employ a Flow Matching Transformer to leverage RP1M++ through large-scale imitation learning, resulting in the OmniPianist agent capable of performing a wide range of musical pieces. Extensive experiments and ablation studies highlight the effectiveness and scalability of our approach, advancing dexterous robotic piano playing at scale. 
+
+**Abstract (ZH)**: 赋予机器人手部人类级别的灵巧性一直是机器人学中的长期目标。双臂机器人钢琴演奏是一项特别具有挑战性的任务：它具有高维度、丰富的接触交互，并要求快速精确的控制。我们介绍了OmniPianist，这是首个无需人类示范即可通过可扩展学习执行近一千首乐曲的智能体。我们的方法基于三个核心组件。首先，我们引入了一种基于最优传输（OT）的自动指法策略，使智能体能够从零开始自主发现高效的钢琴演奏策略。第二，我们通过训练超过2000个专精于不同乐曲的智能体进行了大规模强化学习，并将它们的经验聚合成一个名为RP1M++的数据集，包含超过一百万个机器人钢琴演奏的轨迹。最后，我们使用流动匹配变换器利用RP1M++通过大规模模仿学习，从而生成能够演奏多种音乐作品的OmniPianist智能体。广泛的经验和消融实验突显了我们方法的有效性和可扩展性，推动了大规模灵巧机器人钢琴演奏的发展。 
+
+---
+# LACY: A Vision-Language Model-based Language-Action Cycle for Self-Improving Robotic Manipulation 
+
+**Title (ZH)**: LACY：一种基于视觉-语言模型的语言行动循环 cycle用于自我提高的机器人 manipulation 
+
+**Authors**: Youngjin Hong, Houjian Yu, Mingen Li, Changhyun Choi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.02239)  
+
+**Abstract**: Learning generalizable policies for robotic manipulation increasingly relies on large-scale models that map language instructions to actions (L2A). However, this one-way paradigm often produces policies that execute tasks without deeper contextual understanding, limiting their ability to generalize or explain their behavior. We argue that the complementary skill of mapping actions back to language (A2L) is essential for developing more holistic grounding. An agent capable of both acting and explaining its actions can form richer internal representations and unlock new paradigms for self-supervised learning. We introduce LACY (Language-Action Cycle), a unified framework that learns such bidirectional mappings within a single vision-language model. LACY is jointly trained on three synergistic tasks: generating parameterized actions from language (L2A), explaining observed actions in language (A2L), and verifying semantic consistency between two language descriptions (L2C). This enables a self-improving cycle that autonomously generates and filters new training data through an active augmentation strategy targeting low-confidence cases, thereby improving the model without additional human labels. Experiments on pick-and-place tasks in both simulation and the real world show that LACY improves task success rates by 56.46% on average and yields more robust language-action grounding for robotic manipulation. Project page: this https URL 
+
+**Abstract (ZH)**: 基于语言-动作循环的学习框架：提升机器人操作中的语言动作映射能力 
+
+---
+# A Quantitative Comparison of Centralised and Distributed Reinforcement Learning-Based Control for Soft Robotic Arms 
+
+**Title (ZH)**: 集中式与分布式基于强化学习的软 robotic � manipulator 控制方法的定量比较 
+
+**Authors**: Linxin Hou, Qirui Wu, Zhihang Qin, Neil Banerjee, Yongxin Guo, Cecilia Laschi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.02192)  
+
+**Abstract**: This paper presents a quantitative comparison between centralised and distributed multi-agent reinforcement learning (MARL) architectures for controlling a soft robotic arm modelled as a Cosserat rod in simulation. Using PyElastica and the OpenAI Gym interface, we train both a global Proximal Policy Optimisation (PPO) controller and a Multi-Agent PPO (MAPPO) under identical budgets. Both approaches are based on the arm having $n$ number of controlled sections. The study systematically varies $n$ and evaluates the performance of the arm to reach a fixed target in three scenarios: default baseline condition, recovery from external disturbance, and adaptation to actuator failure. Quantitative metrics used for the evaluation are mean action magnitude, mean final distance, mean episode length, and success rate. The results show that there are no significant benefits of the distributed policy when the number of controlled sections $n\le4$. In very simple systems, when $n\le2$, the centralised policy outperforms the distributed one. When $n$ increases to $4< n\le 12$, the distributed policy shows a high sample efficiency. In these systems, distributed policy promotes a stronger success rate, resilience, and robustness under local observability and yields faster convergence given the same sample size. However, centralised policies achieve much higher time efficiency during training as it takes much less time to train the same size of samples. These findings highlight the trade-offs between centralised and distributed policy in reinforcement learning-based control for soft robotic systems and provide actionable design guidance for future sim-to-real transfer in soft rod-like manipulators. 
+
+**Abstract (ZH)**: 集中式与分布式多智能体强化学习架构在软体机器人臂模拟控制中的定量比较：基于科西西模型的分析 
+
+---
+# Text to Robotic Assembly of Multi Component Objects using 3D Generative AI and Vision Language Models 
+
+**Title (ZH)**: 使用3D生成AI和视觉语言模型的文本到机器人多组件物体装配 
+
+**Authors**: Alexander Htet Kyaw, Richa Gupta, Dhruv Shah, Anoop Sinha, Kory Mathewson, Stefanie Pender, Sachin Chitta, Yotto Koga, Faez Ahmed, Lawrence Sass, Randall Davis  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.02162)  
+
+**Abstract**: Advances in 3D generative AI have enabled the creation of physical objects from text prompts, but challenges remain in creating objects involving multiple component types. We present a pipeline that integrates 3D generative AI with vision-language models (VLMs) to enable the robotic assembly of multi-component objects from natural language. Our method leverages VLMs for zero-shot, multi-modal reasoning about geometry and functionality to decompose AI-generated meshes into multi-component 3D models using predefined structural and panel components. We demonstrate that a VLM is capable of determining which mesh regions need panel components in addition to structural components, based on object functionality. Evaluation across test objects shows that users preferred the VLM-generated assignments 90.6% of the time, compared to 59.4% for rule-based and 2.5% for random assignment. Lastly, the system allows users to refine component assignments through conversational feedback, enabling greater human control and agency in making physical objects with generative AI and robotics. 
+
+**Abstract (ZH)**: 基于视觉语言模型的3D生成AI在自然语言驱动的多组件物体机器人装配中的应用 
+
+---
+# A Step Toward World Models: A Survey on Robotic Manipulation 
+
+**Title (ZH)**: 迈向世界模型的一步：机器人操控综述 
+
+**Authors**: Peng-Fei Zhang, Ying Cheng, Xiaofan Sun, Shijie Wang, Lei Zhu, Heng Tao Shen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.02097)  
+
+**Abstract**: Autonomous agents are increasingly expected to operate in complex, dynamic, and uncertain environments, performing tasks such as manipulation, navigation, and decision-making. Achieving these capabilities requires agents to understand the underlying mechanisms and dynamics of the world, moving beyond purely reactive control or simple replication of observed states. This motivates the development of world models as internal representations that encode environmental states, capture dynamics, and enable prediction, planning, and reasoning. Despite growing interest, the definition, scope, architectures, and essential capabilities of world models remain ambiguous. In this survey, rather than directly imposing a fixed definition and limiting our scope to methods explicitly labeled as world models, we examine approaches that exhibit the core capabilities of world models through a review of methods in robotic manipulation. We analyze their roles across perception, prediction, and control, identify key challenges and solutions, and distill the core components, capabilities, and functions that a real world model should possess. Building on this analysis, we aim to outline a roadmap for developing generalizable and practical world models for robotics. 
+
+**Abstract (ZH)**: 自主代理日益被期望在复杂、动态和不确定性环境中执行任务，如操作、导航和决策。实现这些能力要求代理理解世界的内在机制和动态，超越纯粹的反应控制或简单的状态复制。这激发了世界模型的开发，作为一种内部表示，能够编码环境状态、捕捉动态并支持预测、规划和推理。尽管兴趣日益增长，但世界模型的定义、范围、架构和基本能力仍不清楚。在本文综述中，我们不直接施加固定定义，也不将范围局限于明确标记为世界模型的方法，而是通过机器人操作方法的回顾来探讨展示世界模型核心能力的途径。我们分析这些方法在感知、预测和控制中的作用，识别关键挑战和解决方案，并提炼一个真实世界模型应具备的核心组件、能力和功能。基于这一分析，我们旨在为机器人开发可扩展和实用的世界模型制定路线图。 
+
+---
+# TRACE: Textual Reasoning for Affordance Coordinate Extraction 
+
+**Title (ZH)**: 轨迹：基于文本的推理以提取功能坐标 
+
+**Authors**: Sangyun Park, Jin Kim, Yuchen Cui, Matthew S. Brown  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.01999)  
+
+**Abstract**: Vision-Language Models (VLMs) struggle to translate high-level instructions into the precise spatial affordances required for robotic manipulation. While visual Chain-of-Thought (CoT) methods exist, they are often computationally intensive. In this work, we introduce TRACE (Textual Reasoning for Affordance Coordinate Extraction), a novel methodology that integrates a textual Chain of Reasoning (CoR) into the affordance prediction process. We use this methodology to create the TRACE dataset, a large-scale collection created via an autonomous pipeline that pairs instructions with explicit textual rationales. By fine-tuning a VLM on this data, our model learns to externalize its spatial reasoning before acting. Our experiments show that our TRACE-tuned model achieves state-of-the-art performance, reaching 48.1% accuracy on the primary Where2Place (W2P) benchmark (a 9.6% relative improvement) and 55.0% on the more challenging W2P(h) subset. Crucially, an ablation study demonstrates that performance scales directly with the amount of reasoning data used, confirming the CoR's effectiveness. Furthermore, analysis of the model's attention maps reveals an interpretable reasoning process where focus shifts dynamically across reasoning steps. This work shows that training VLMs to generate a textual CoR is an effective and robust strategy for enhancing the precision, reliability, and interpretability of VLM-based robot control. Our dataset and code are available at this https URL 
+
+**Abstract (ZH)**: Vision-Language模型在将高层次指令转化为精确的空间操作能力方面存在挑战。虽然视觉链式思考方法已存在，但它们通常计算成本高。在本工作中，我们引入了TRACE（文本推理以提取操作坐标），这是一种将文本链式推理（CoR）整合到操作预测过程中的新型方法。我们通过此方法创建了TRACE数据集，这是一个大型集合，通过自主管道将指令与显式的文本推理关联起来。通过对这些数据进行微调，我们的模型学会了在行动前外部化其空间推理。我们的实验表明，我们的TRACE微调模型达到了最先进的性能，主Where2Place（W2P）基准上的准确率为48.1%（相对提高9.6%），更具有挑战性的W2P(h)子集上为55.0%。关键的是，消融研究证明性能直接与所使用的推理数据量相关，验证了链式推理的有效性。进一步分析模型的注意力图展示了可解释的推理过程，其中注意力在推理步骤之间动态转移。本研究展示了训练Vision-Language模型生成文本链式推理是一个有效且稳健的策略，以增强基于Vision-Language模型的机器人控制的精确性、可靠性和可解释性。我们的数据集和代码可在以下网址获得。 
+
+---
+# Keeping it Local, Tiny and Real: Automated Report Generation on Edge Computing Devices for Mechatronic-Based Cognitive Systems 
+
+**Title (ZH)**: 保持局部性、小型化和真实性：基于边缘计算设备的机电认知系统自动化报告生成 
+
+**Authors**: Nicolas Schuler, Lea Dewald, Jürgen Graf  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.02507)  
+
+**Abstract**: Recent advancements in Deep Learning enable hardware-based cognitive systems, that is, mechatronic systems in general and robotics in particular with integrated Artificial Intelligence, to interact with dynamic and unstructured environments. While the results are impressive, the application of such systems to critical tasks like autonomous driving as well as service and care robotics necessitate the evaluation of large amount of heterogeneous data. Automated report generation for Mobile Robotics can play a crucial role in facilitating the evaluation and acceptance of such systems in various domains. In this paper, we propose a pipeline for generating automated reports in natural language utilizing various multi-modal sensors that solely relies on local models capable of being deployed on edge computing devices, thus preserving the privacy of all actors involved and eliminating the need for external services. In particular, we evaluate our implementation on a diverse dataset spanning multiple domains including indoor, outdoor and urban environments, providing quantitative as well as qualitative evaluation results. Various generated example reports and other supplementary materials are available via a public repository. 
+
+**Abstract (ZH)**: Recent advancements in深度学习使基于硬件的认知系统，即一般而言的机电系统和特别而言的机器人技术，能够集成人工智能与动态且非结构化的环境进行交互。尽管成果令人印象深刻，但在自动驾驶等关键任务以及服务和护理机器人领域的应用要求对大量异构数据进行评估。移动机器人自动生成报告在促进此类系统在各个领域的评估与接受中扮演着关键角色。在本文中，我们提出了一种管道，利用多种多模态传感器生成自然语言报告，该管道仅依赖于可在边缘计算设备上部署的本地模型，从而保护所有参与者的隐私并消除对外部服务的依赖。特别地，我们在涵盖多个领域的多样性数据集上评估了我们的实现，包括室内、室外和城市环境，提供了定量和定性评估结果。生成的各种示例报告及其他补充材料通过公共库提供。 
+
+---
+# iFlyBot-VLA Technical Report 
+
+**Title (ZH)**: iFlyBot-VLA 技术报告 
+
+**Authors**: Yuan Zhang, Chenyu Xue, Wenjie Xu, Chao Ji, Jiajia wu, Jia Pan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.01914)  
+
+**Abstract**: We introduce iFlyBot-VLA, a large-scale Vision-Language-Action (VLA) model trained under a novel framework. The main contributions are listed as follows: (1) a latent action model thoroughly trained on large-scale human and robotic manipulation videos; (2) a dual-level action representation framework that jointly supervises both the Vision-Language Model (VLM) and the action expert during training; (3) a mixed training strategy that combines robot trajectory data with general QA and spatial QA datasets, effectively enhancing the 3D perceptual and reasoning capabilities of the VLM backbone. Specifically, the VLM is trained to predict two complementary forms of actions: latent actions, derived from our latent action model pretrained on cross-embodiment manipulation data, which capture implicit high-level intentions; and structured discrete action tokens, obtained through frequency-domain transformations of continuous control signals, which encode explicit low-level dynamics. This dual supervision aligns the representation spaces of language, vision, and action, enabling the VLM to directly contribute to action generation. Experimental results on the LIBERO Franka benchmark demonstrate the superiority of our frame-work, while real-world evaluations further show that iFlyBot-VLA achieves competitive success rates across diverse and challenging manipulation tasks. Furthermore, we plan to open-source a portion of our self-constructed dataset to support future research in the community 
+
+**Abstract (ZH)**: 我们介绍了一种新型框架下的大规模视觉-语言-动作（VLA）模型iFlyBot-VLA。主要贡献如下：(1) 一种在大规模人类和机器人操作视频上充分训练的潜在动作模型；(2) 一种双层动作表示框架，在训练过程中同时监督视觉语言模型（VLM）和动作专家；(3) 一种结合机器人轨迹数据和通用问答及空间问答数据的混合训练策略，有效增强VLM主干网络的3D感知和推理能力。具体而言，VLM被训练预测两种互补形式的动作：从跨主体操作数据预训练的潜在动作模型中提取的潜在动作，捕捉隐含的高层意图；以及通过连续控制信号的频域变换获得的结构离散动作标记，编码显式的低层动态。这种双监督使语言、视觉和动作的表示空间对齐，从而使VLM能够直接参与到动作生成中。在LIBERO Franka基准上的实验结果证明了我们框架的优势，而现实世界的评估进一步表明，iFlyBot-VLA在各种具有挑战性的操作任务中取得了竞争力的表现。此外，我们将开放部分自主构建的数据集以支持社区的未来研究。 
+
+---
+# Agent-Omni: Test-Time Multimodal Reasoning via Model Coordination for Understanding Anything 
+
+**Title (ZH)**: Agent-Omni: 测试时跨模态推理的理解通用模型协调方法 
+
+**Authors**: Huawei Lin, Yunzhi Shi, Tong Geng, Weijie Zhao, Wei Wang, Ravender Pal Singh  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.02834)  
+
+**Abstract**: Multimodal large language models (MLLMs) have shown strong capabilities but remain limited to fixed modality pairs and require costly fine-tuning with large aligned datasets. Building fully omni-capable models that can integrate text, images, audio, and video remains impractical and lacks robust reasoning support. In this paper, we propose an Agent-Omni framework that coordinates existing foundation models through a master-agent system, enabling flexible multimodal reasoning without retraining. The master agent interprets user intent, delegates subtasks to modality-specific agents, and integrates their outputs into coherent responses. Extensive experiments across text, image, audio, video, and omni benchmarks show that Agent-Omni consistently achieves state-of-the-art performance, particularly on tasks requiring complex cross-modal reasoning. Its agent-based design enables seamless integration of specialized foundation models, ensuring adaptability to diverse inputs while maintaining transparency and interpretability. In addition, the framework is modular and easily extensible, allowing future improvements as stronger models become available. %We release an open-source implementation to support continued research on scalable and reliable omni-modal reasoning. 
+
+**Abstract (ZH)**: 多模态大型语言模型（MLLMs）展现出了强大的能力，但仍局限于固定的模态对，并且需要昂贵的调整与大规模对齐的数据集。构建能够整合文本、图像、音频和视频的全能模型仍然不切实际且缺乏 robust 的推理支持。本文提出了一种 Agent-Omni 框架，通过主代理系统协调现有的基础模型，使多模态推理能够在无需重新训练的情况下变得灵活。主代理解释用户意图，将子任务委托给特定于模态的代理，并将它们的输出整合为连贯的响应。在跨文本、图像、音频、视频和全能基准上的广泛实验表明，Agent-Omni 在需要复杂跨模态推理的任务中始终能够实现最先进的性能。其基于代理的设计使得能够无缝集成专门的基础模型，确保对不同输入的适应性同时保持透明性和可解释性。此外，该框架是模块化的且易于扩展，可以让未来的改进随着更强的模型变得可用而进行。我们开源了实现，以支持对可扩展和可靠的全能推理的持续研究。 
+
+---
+# Kosmos: An AI Scientist for Autonomous Discovery 
+
+**Title (ZH)**: Kosmos: 人工科学家实现自主发现 
+
+**Authors**: Ludovico Mitchener, Angela Yiu, Benjamin Chang, Mathieu Bourdenx, Tyler Nadolski, Arvis Sulovari, Eric C. Landsness, Daniel L. Barabasi, Siddharth Narayanan, Nicky Evans, Shriya Reddy, Martha Foiani, Aizad Kamal, Leah P. Shriver, Fang Cao, Asmamaw T. Wassie, Jon M. Laurent, Edwin Melville-Green, Mayk Caldas, Albert Bou, Kaleigh F. Roberts, Sladjana Zagorac, Timothy C. Orr, Miranda E. Orr, Kevin J. Zwezdaryk, Ali E. Ghareeb, Laurie McCoy, Bruna Gomes, Euan A. Ashley, Karen E. Duff, Tonio Buonassisi, Tom Rainforth, Randall J. Bateman, Michael Skarlinski, Samuel G. Rodriques, Michaela M. Hinks, Andrew D. White  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.02824)  
+
+**Abstract**: Data-driven scientific discovery requires iterative cycles of literature search, hypothesis generation, and data analysis. Substantial progress has been made towards AI agents that can automate scientific research, but all such agents remain limited in the number of actions they can take before losing coherence, thus limiting the depth of their findings. Here we present Kosmos, an AI scientist that automates data-driven discovery. Given an open-ended objective and a dataset, Kosmos runs for up to 12 hours performing cycles of parallel data analysis, literature search, and hypothesis generation before synthesizing discoveries into scientific reports. Unlike prior systems, Kosmos uses a structured world model to share information between a data analysis agent and a literature search agent. The world model enables Kosmos to coherently pursue the specified objective over 200 agent rollouts, collectively executing an average of 42,000 lines of code and reading 1,500 papers per run. Kosmos cites all statements in its reports with code or primary literature, ensuring its reasoning is traceable. Independent scientists found 79.4% of statements in Kosmos reports to be accurate, and collaborators reported that a single 20-cycle Kosmos run performed the equivalent of 6 months of their own research time on average. Furthermore, collaborators reported that the number of valuable scientific findings generated scales linearly with Kosmos cycles (tested up to 20 cycles). We highlight seven discoveries made by Kosmos that span metabolomics, materials science, neuroscience, and statistical genetics. Three discoveries independently reproduce findings from preprinted or unpublished manuscripts that were not accessed by Kosmos at runtime, while four make novel contributions to the scientific literature. 
+
+**Abstract (ZH)**: 数据驱动的科学发现需要迭代循环的文献搜索、假设生成和数据分析。尽管已经取得进展，能够自动进行科学研究的AI代理仍受限于在失去连贯性前能执行的动作数量，从而限制了其发现的深度。我们介绍了Kosmos，一种自动进行数据驱动发现的AI科学家。给定一个开放性的目标和一个数据集，Kosmos运行最多12小时，执行数据分析、文献搜索和假设生成的循环，然后将发现综合成科学报告。与先前的系统不同，Kosmos使用结构化的世界模型在数据处理代理和文献搜索代理之间共享信息。世界模型使Kosmos能够在200次代理演练中连贯地追求指定的目标，合计执行平均42,000行代码，并在每次运行中阅读1,500篇论文。Kosmos在报告中的所有声明均引用代码或原始文献，确保其推理可追踪。独立科学家发现Kosmos报告中的79.4%的陈述是准确的，合作者报告说每次20循环的Kosmos运行相当于他们的6个月研究时间。此外，合作者报告说，有价值的科学发现的数量与Kosmos的循环次数呈线性增长（测试到20次循环）。我们强调了Kosmos在代谢组学、材料科学、神经科学和统计遗传学等领域做出的七个发现。其中三个发现独立重现了预打印或未发表手稿中的发现，而另外四个为科学文献做出了新颖的贡献。 
+
+---
+# Agentic AI for Mobile Network RAN Management and Optimization 
+
+**Title (ZH)**: 移动网络RAN管理与优化中的自主AI 
+
+**Authors**: Jorge Pellejero, Luis A. Hernández Gómez, Luis Mendo Tomás, Zoraida Frias Barroso  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.02532)  
+
+**Abstract**: Agentic AI represents a new paradigm for automating complex systems by using Large AI Models (LAMs) to provide human-level cognitive abilities with multimodal perception, planning, memory, and reasoning capabilities. This will lead to a new generation of AI systems that autonomously decompose goals, retain context over time, learn continuously, operate across tools and environments, and adapt dynamically. The complexity of 5G and upcoming 6G networks renders manual optimization ineffective, pointing to Agentic AI as a method for automating decisions in dynamic RAN environments. However, despite its rapid advances, there is no established framework outlining the foundational components and operational principles of Agentic AI systems nor a universally accepted definition.
+This paper contributes to ongoing research on Agentic AI in 5G and 6G networks by outlining its core concepts and then proposing a practical use case that applies Agentic principles to RAN optimization. We first introduce Agentic AI, tracing its evolution from classical agents and discussing the progress from workflows and simple AI agents to Agentic AI. Core design patterns-reflection, planning, tool use, and multi-agent collaboration-are then described to illustrate how intelligent behaviors are orchestrated. These theorical concepts are grounded in the context of mobile networks, with a focus on RAN management and optimization. A practical 5G RAN case study shows how time-series analytics and LAM-driven agents collaborate for KPI-based autonomous decision-making. 
+
+**Abstract (ZH)**: 代理AI代表了一种新的范式，通过使用大规模人工智能模型（LAMs）提供具有多模感知、规划、记忆和推理能力的人类级认知能力来自动化复杂系统。这将导致一种新一代的AI系统，能够自主分解目标、长时间保留上下文、持续学习、跨工具和环境操作，并动态适应。5G及其即将到来的6G网络的复杂性使得手动优化无效，指出代理AI是自动化动态RAN环境决策的方法。然而，尽管代理AI取得了 rapid 进展，但尚未建立描述其基础组件和操作原理的框架，也缺乏普遍认可的定义。本文通过对5G和6G网络中代理AI核心概念的概述，以及提出将代理原理应用于RAN优化的实际案例，为代理AI的研究做出了贡献。首先介绍了代理AI，追溯其从经典代理的发展历程，并讨论从工作流到简单AI代理到代理AI的进步。然后描述了核心设计模式——反思、规划、工具使用和多代理协作，以说明智能行为是如何协调的。这些理论概念在移动网络的背景下得到了阐述，重点关注RAN管理和优化。通过一个实际的5G RAN案例研究，展示了时间序列分析和LAM驱动的代理如何协作进行基于KPI的自主决策。 
+
+---
+# Optimal-Agent-Selection: State-Aware Routing Framework for Efficient Multi-Agent Collaboration 
+
+**Title (ZH)**: 基于状态感知的最佳代理选择：高效多代理协作的路由框架 
+
+**Authors**: Jingbo Wang, Sendong Zhao, Haochun Wang, Yuzheng Fan, Lizhe Zhang, Yan Liu, Ting Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.02200)  
+
+**Abstract**: The emergence of multi-agent systems powered by large language models (LLMs) has unlocked new frontiers in complex task-solving, enabling diverse agents to integrate unique expertise, collaborate flexibly, and address challenges unattainable for individual models. However, the full potential of such systems is hindered by rigid agent scheduling and inefficient coordination strategies that fail to adapt to evolving task requirements. In this paper, we propose STRMAC, a state-aware routing framework designed for efficient collaboration in multi-agent systems. Our method separately encodes interaction history and agent knowledge to power the router, which adaptively selects the most suitable single agent at each step for efficient and effective collaboration. Furthermore, we introduce a self-evolving data generation approach that accelerates the collection of high-quality execution paths for efficient system training. Experiments on challenging collaborative reasoning benchmarks demonstrate that our method achieves state-of-the-art performance, achieving up to 23.8% improvement over baselines and reducing data collection overhead by up to 90.1% compared to exhaustive search. 
+
+**Abstract (ZH)**: 大规模语言模型（LLMs）驱动的多代理系统 emergence 为复杂任务解决开启了新的前沿，使多样化的代理能够整合独特的专业知识，灵活协作，并解决单个模型无法达成的挑战。然而，这类系统的全部潜力受限于僵化的代理调度和低效的协调策略，这些策略无法适应不断变化的任务需求。在本文中，我们提出 STRMAC，一种状态感知路由框架，旨在多代理系统中实现高效协作。我们的方法分别编码交互历史和代理知识，以增强路由器的功能，使其能够适应性地选择在每一步最合适的单个代理，以实现高效有效的协作。此外，我们引入了一种自我进化的数据生成方法，以加速高质量执行路径的收集，从而提高系统训练效率。在具有挑战性的协作推理基准测试上的实验表明，我们的方法达到了最先进的性能，相比基线方法提高了23.8%，并且与穷尽搜索相比，数据收集开销减少了90.1%。 
+
+---
+# Automated Reward Design for Gran Turismo 
+
+**Title (ZH)**: Gran Turismo 的自动奖励设计 
+
+**Authors**: Michel Ma, Takuma Seno, Kaushik Subramanian, Peter R. Wurman, Peter Stone, Craig Sherstan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.02094)  
+
+**Abstract**: When designing reinforcement learning (RL) agents, a designer communicates the desired agent behavior through the definition of reward functions - numerical feedback given to the agent as reward or punishment for its actions. However, mapping desired behaviors to reward functions can be a difficult process, especially in complex environments such as autonomous racing. In this paper, we demonstrate how current foundation models can effectively search over a space of reward functions to produce desirable RL agents for the Gran Turismo 7 racing game, given only text-based instructions. Through a combination of LLM-based reward generation, VLM preference-based evaluation, and human feedback we demonstrate how our system can be used to produce racing agents competitive with GT Sophy, a champion-level RL racing agent, as well as generate novel behaviors, paving the way for practical automated reward design in real world applications. 
+
+**Abstract (ZH)**: 基于当前基础模型的奖励函数搜索方法在 Gran Turismo 7 拉力赛中的应用：从文本指令生成竞争力强且具新颖行为的 RL 代理 
+
+---
+# Human-AI Co-Embodied Intelligence for Scientific Experimentation and Manufacturing 
+
+**Title (ZH)**: 人机共融智能在科学研究与制造中的应用 
+
+**Authors**: Xinyi Lin, Yuyang Zhang, Yuanhang Gan, Juntao Chen, Hao Shen, Yichun He, Lijun Li, Ze Yuan, Shuang Wang, Chaohao Wang, Rui Zhang, Na Li, Jia Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.02071)  
+
+**Abstract**: Scientific experiment and manufacture rely on complex, multi-step procedures that demand continuous human expertise for precise execution and decision-making. Despite advances in machine learning and automation, conventional models remain confined to virtual domains, while real-world experiment and manufacture still rely on human supervision and expertise. This gap between machine intelligence and physical execution limits reproducibility, scalability, and accessibility across scientific and manufacture workflows. Here, we introduce human-AI co-embodied intelligence, a new form of physical AI that unites human users, agentic AI, and wearable hardware into an integrated system for real-world experiment and intelligent manufacture. In this paradigm, humans provide precise execution and control, while agentic AI contributes memory, contextual reasoning, adaptive planning, and real-time feedback. The wearable interface continuously captures the experimental and manufacture processes, facilitates seamless communication between humans and AI for corrective guidance and interpretable collaboration. As a demonstration, we present Agentic-Physical Experimentation (APEX) system, coupling agentic reasoning with physical execution through mixed-reality. APEX observes and interprets human actions, aligns them with standard operating procedures, provides 3D visual guidance, and analyzes every step. Implemented in a cleanroom for flexible electronics fabrication, APEX system achieves context-aware reasoning with accuracy exceeding general multimodal large language models, corrects errors in real time, and transfers expertise to beginners. These results establish a new class of agentic-physical-human intelligence that extends agentic reasoning beyond computation into the physical domain, transforming scientific research and manufacturing into autonomous, traceable, interpretable, and scalable processes. 
+
+**Abstract (ZH)**: 人机共融智能：一种将人类用户、自主AI和可穿戴硬件集成到现实世界实验和智能制造中的物理AI新形式 
+
+---
+# Adaptive Neighborhood-Constrained Q Learning for Offline Reinforcement Learning 
+
+**Title (ZH)**: 自适应邻域约束Q学习在 Offline 强化学习中的应用 
+
+**Authors**: Yixiu Mao, Yun Qu, Qi Wang, Xiangyang Ji  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.02567)  
+
+**Abstract**: Offline reinforcement learning (RL) suffers from extrapolation errors induced by out-of-distribution (OOD) actions. To address this, offline RL algorithms typically impose constraints on action selection, which can be systematically categorized into density, support, and sample constraints. However, we show that each category has inherent limitations: density and sample constraints tend to be overly conservative in many scenarios, while the support constraint, though least restrictive, faces challenges in accurately modeling the behavior policy. To overcome these limitations, we propose a new neighborhood constraint that restricts action selection in the Bellman target to the union of neighborhoods of dataset actions. Theoretically, the constraint not only bounds extrapolation errors and distribution shift under certain conditions, but also approximates the support constraint without requiring behavior policy modeling. Moreover, it retains substantial flexibility and enables pointwise conservatism by adapting the neighborhood radius for each data point. In practice, we employ data quality as the adaptation criterion and design an adaptive neighborhood constraint. Building on an efficient bilevel optimization framework, we develop a simple yet effective algorithm, Adaptive Neighborhood-constrained Q learning (ANQ), to perform Q learning with target actions satisfying this constraint. Empirically, ANQ achieves state-of-the-art performance on standard offline RL benchmarks and exhibits strong robustness in scenarios with noisy or limited data. 
+
+**Abstract (ZH)**: 离线强化学习（RL）受分布外（OOD）动作引起的外推误差影响。为解决这一问题，离线RL算法通常对动作选择施加约束，这些约束可以系统地分为密度约束、支持约束和样本约束。然而，我们证明了每一类都有固有的局限性：密度约束和样本约束在许多场景中过于保守，而支持约束尽管是最不严格的，但在准确 modeling 行为策略方面仍面临挑战。为克服这些局限性，我们提出了一种新的邻域约束，限制贝尔曼目标中的动作选择为数据集中动作邻域的并集。理论上，约束不仅在某些条件下限制了外推误差和分布偏移，而且无需建模行为策略即可近似支持约束。此外，它保持了相当大的灵活性，并通过为每个数据点适应邻域半径实现点态保守。在实践中，我们采用数据质量作为适应准则，并设计了一种自适应邻域约束。基于高效的双层优化框架，我们开发了一种简单而有效的算法——自适应邻域约束Q学习（ANQ），用于满足该约束的目标动作进行Q学习。实验中，ANQ在标准离线RL基准测试中取得了最先进的性能，并在噪声或数据有限的情景下表现出强大的鲁棒性。 
+
+---
+# Human-Machine Ritual: Synergic Performance through Real-Time Motion Recognition 
+
+**Title (ZH)**: 人机仪式：实时运动识别下的协同表演 
+
+**Authors**: Zhuodi Cai, Ziyu Xu, Juan Pampin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.02351)  
+
+**Abstract**: We introduce a lightweight, real-time motion recognition system that enables synergic human-machine performance through wearable IMU sensor data, MiniRocket time-series classification, and responsive multimedia control. By mapping dancer-specific movement to sound through somatic memory and association, we propose an alternative approach to human-machine collaboration, one that preserves the expressive depth of the performing body while leveraging machine learning for attentive observation and responsiveness. We demonstrate that this human-centered design reliably supports high accuracy classification (<50 ms latency), offering a replicable framework to integrate dance-literate machines into creative, educational, and live performance contexts. 
+
+**Abstract (ZH)**: 一种基于可穿戴IMU传感器数据、MiniRocket时间序列分类和响应式多媒体控制的轻量级实时动作识别系统：一种保留表演身体表达深度的人机协作新方法 
+
+---
+# Natural Building Blocks for Structured World Models: Theory, Evidence, and Scaling 
+
+**Title (ZH)**: 结构化世界模型的自然构建块：理论、证据与扩展 
+
+**Authors**: Lancelot Da Costa, Sanjeev Namjoshi, Mohammed Abbas Ansari, Bernhard Schölkopf  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.02091)  
+
+**Abstract**: The field of world modeling is fragmented, with researchers developing bespoke architectures that rarely build upon each other. We propose a framework that specifies the natural building blocks for structured world models based on the fundamental stochastic processes that any world model must capture: discrete processes (logic, symbols) and continuous processes (physics, dynamics); the world model is then defined by the hierarchical composition of these building blocks. We examine Hidden Markov Models (HMMs) and switching linear dynamical systems (sLDS) as natural building blocks for discrete and continuous modeling--which become partially-observable Markov decision processes (POMDPs) and controlled sLDS when augmented with actions. This modular approach supports both passive modeling (generation, forecasting) and active control (planning, decision-making) within the same architecture. We avoid the combinatorial explosion of traditional structure learning by largely fixing the causal architecture and searching over only four depth parameters. We review practical expressiveness through multimodal generative modeling (passive) and planning from pixels (active), with performance competitive to neural approaches while maintaining interpretability. The core outstanding challenge is scalable joint structure-parameter learning; current methods finesse this by cleverly growing structure and parameters incrementally, but are limited in their scalability. If solved, these natural building blocks could provide foundational infrastructure for world modeling, analogous to how standardized layers enabled progress in deep learning. 
+
+**Abstract (ZH)**: 世界建模领域支离破碎，研究人员开发的专用架构很少互相借鉴。我们提出了一种框架，基于任何世界模型必须捕获的基本随机过程——离散过程（逻辑、符号）和连续过程（物理、动力学）——来规定结构化世界模型的自然构建块。然后，世界模型通过这些构建块的分层组合来定义。我们研究隐藏马尔可夫模型（HMMs）和切换线性动态系统（sLDS）作为离散和连续建模的自然构建块——当增加动作时，它们成为部分可观测马尔可夫决策过程（POMDPs）和受控sLDS。这种模块化方法同时支持被动建模（生成、预测）和主动控制（规划、决策）。我们通过多模态生成建模（被动）和从像素进行规划（主动）来避免传统结构学习中的组合爆炸，通过主要固定因果结构并在仅四个深度参数上进行搜索来实现。我们通过实用的表达能力验证了这一点，表现可与神经方法相当且保持可解释性。核心挑战是可扩展的联合结构参数学习；现有方法通过巧妙地逐步增长结构和参数来处理这一挑战，但在可扩展性方面受到限制。如果得到解决，这些自然构建块可以为世界建模提供基础结构，类似于标准化层如何推动深度学习的进步。 
+
+---
