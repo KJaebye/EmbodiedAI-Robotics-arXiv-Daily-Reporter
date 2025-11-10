@@ -1,0 +1,209 @@
+# Stable and Robust SLIP Model Control via Energy Conservation-Based Feedback Cancellation for Quadrupedal Applications 
+
+**Title (ZH)**: 基于能量守恒反馈抵消的四足机器人稳定可靠SLIP模型控制 
+
+**Authors**: Muhammad Saud Ul Hassan, Derek Vasquez, Hamza Asif, Christian Hubicki  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.05402)  
+
+**Abstract**: In this paper, we present an energy-conservation based control architecture for stable dynamic motion in quadruped robots. We model the robot as a Spring-loaded Inverted Pendulum (SLIP), a model well-suited to represent the bouncing motion characteristic of running gaits observed in various biological quadrupeds and bio-inspired robotic systems. The model permits leg-orientation control during flight and leg-length control during stance, a design choice inspired by natural quadruped behaviors and prevalent in robotic quadruped systems. Our control algorithm uses the reduced-order SLIP dynamics of the quadruped to track a stable parabolic spline during stance, which is calculated using the principle of energy conservation. Through simulations based on the design specifications of an actual quadruped robot, Ghost Robotics Minitaur, we demonstrate that our control algorithm generates stable bouncing gaits. Additionally, we illustrate the robustness of our controller by showcasing its ability to maintain stable bouncing even when faced with up to a 10% error in sensor measurements. 
+
+**Abstract (ZH)**: 基于能量守恒的四足机器人稳定动态运动控制架构 
+
+---
+# EveryDayVLA: A Vision-Language-Action Model for Affordable Robotic Manipulation 
+
+**Title (ZH)**: EveryDayVLA: 一种用于经济实惠的机器人操作的视觉-语言-行动模型 
+
+**Authors**: Samarth Chopra, Alex McMoil, Ben Carnovale, Evan Sokolson, Rajkumar Kubendran, Samuel Dickerson  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.05397)  
+
+**Abstract**: While Vision-Language-Action (VLA) models map visual inputs and language instructions directly to robot actions, they often rely on costly hardware and struggle in novel or cluttered scenes. We introduce EverydayVLA, a 6-DOF manipulator that can be assembled for under $300, capable of modest payloads and workspace. A single unified model jointly outputs discrete and continuous actions, and our adaptive-horizon ensemble monitors motion uncertainty to trigger on-the-fly re-planning for safe, reliable operation. On LIBERO, EverydayVLA matches state-of-the-art success rates, and in real-world tests it outperforms prior methods by 49% in-distribution and 34.9% out-of-distribution. By combining a state-of-the-art VLA with cost-effective hardware, EverydayVLA democratizes access to a robotic foundation model and paves the way for economical use in homes and research labs alike. Experiment videos and details: this https URL 
+
+**Abstract (ZH)**: 日常场景中的Vision-Language-Action (VLA)：低成本6自由度操纵器及其在机器人行动中的应用 
+
+---
+# TwinVLA: Data-Efficient Bimanual Manipulation with Twin Single-Arm Vision-Language-Action Models 
+
+**Title (ZH)**: TwinVLA：基于双单臂视觉语言行动模型的高效双臂操作 
+
+**Authors**: Hokyun Im, Euijin Jeong, Jianlong Fu, Andrey Kolobov, Youngwoon Lee  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.05275)  
+
+**Abstract**: Vision-language-action models (VLAs) trained on large-scale robotic datasets have demonstrated strong performance on manipulation tasks, including bimanual tasks. However, because most public datasets focus on single-arm demonstrations, adapting VLAs for bimanual tasks typically requires substantial additional bimanual data and fine-tuning. To address this challenge, we introduce TwinVLA, a modular framework that composes two copies of a pretrained single-arm VLA into a coordinated bimanual VLA. Unlike monolithic cross-embodiment models trained on mixtures of single-arm and bimanual data, TwinVLA improves both data efficiency and performance by composing pretrained single-arm policies. Across diverse bimanual tasks in real-world and simulation settings, TwinVLA outperforms a comparably-sized monolithic RDT-1B model without requiring any bimanual pretraining. Furthermore, it narrows the gap to state-of-the-art model, $\pi_0$ which rely on extensive proprietary bimanual data and compute cost. These results establish our modular composition approach as a data-efficient and scalable path toward high-performance bimanual manipulation, leveraging public single-arm data. 
+
+**Abstract (ZH)**: 基于预训练单臂视觉-语言-动作模型的模块化双臂视觉-语言-动作框架 
+
+---
+# Beyond Master and Apprentice: Grounding Foundation Models for Symbiotic Interactive Learning in a Shared Latent Space 
+
+**Title (ZH)**: 超越师徒关系：在共享潜在空间中实现共生互动学习的基礎模型嵌入 
+
+**Authors**: Linus Nwankwo, Björn Ellensohn, Christian Rauch, Elmar Rueckert  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.05203)  
+
+**Abstract**: Today's autonomous agents can understand free-form natural language instructions and execute long-horizon tasks in a manner akin to human-level reasoning. These capabilities are mostly driven by large-scale pre-trained foundation models (FMs). However, the approaches with which these models are grounded for human-robot interaction (HRI) perpetuate a master-apprentice model, where the apprentice (embodied agent) passively receives and executes the master's (human's) commands without reciprocal learning. This reactive interaction approach does not capture the co-adaptive dynamics inherent in everyday multi-turn human-human interactions. To address this, we propose a Symbiotic Interactive Learning (SIL) approach that enables both the master and the apprentice to co-adapt through mutual, bidirectional interactions. We formalised SIL as a co-adaptation process within a shared latent task space, where the agent and human maintain joint belief states that evolve based on interaction history. This enables the agent to move beyond reactive execution to proactive clarification, adaptive suggestions, and shared plan refinement. To realise these novel behaviours, we leveraged pre-trained FMs for spatial perception and reasoning, alongside a lightweight latent encoder that grounds the models' outputs into task-specific representations. Furthermore, to ensure stability as the tasks evolve, we augment SIL with a memory architecture that prevents the forgetting of learned task-space representations. We validate SIL on both simulated and real-world embodied tasks, including instruction following, information retrieval, query-oriented reasoning, and interactive dialogues. Demos and resources are public at:~\href{this https URL}{this https URL}. 
+
+**Abstract (ZH)**: 当今自主代理能够理解免费形式的自然语言指令，并以类人的推理方式执行长期任务。这些能力主要由大规模预训练基础模型（FMs）驱动。然而，这些模型在人类机器人互动（HRI）中被锚定的方式延续了一种师父徒弟模式，其中徒弟（具身代理）被动地接收并执行师父（人类）的命令，而不进行相互学习。这种反应式交互方法未能捕捉到日常多轮人类互动中固有的共适应动态。为了解决这一问题，我们提出了一种共生互动学习（SIL）方法，使师父和徒弟能够通过双向互动共同适应。我们将SIL形式化为共享潜在任务空间中的共适应过程，在这个过程中，代理和人类维护基于互动历史演变的共同信念状态。这使代理能够超越被动执行，进行主动澄清、适应性建议和共享计划细化。为了实现这些新颖行为，我们利用了预训练的FMs进行空间感知和推理，并结合了一个轻量级的潜在编码器，将模型的输出转化为任务特定的表示。此外，为了确保随着任务的发展保持稳定性，我们通过在SIL中增加一个记忆架构，防止已学任务空间表示的遗忘。我们已在模拟和真实世界的具身任务中验证了SIL，包括指令跟随、信息检索、查询导向的推理以及交互对话。演示和资源可在：\href{this https URL}{this https URL}。 
+
+---
+# Let Me Show You: Learning by Retrieving from Egocentric Video for Robotic Manipulation 
+
+**Title (ZH)**: 让我展示给你看：基于第一人称视频检索的学习方法在机器人操作中的应用 
+
+**Authors**: Yichen Zhu, Feifei Feng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.05199)  
+
+**Abstract**: Robots operating in complex and uncertain environments face considerable challenges. Advanced robotic systems often rely on extensive datasets to learn manipulation tasks. In contrast, when humans are faced with unfamiliar tasks, such as assembling a chair, a common approach is to learn by watching video demonstrations. In this paper, we propose a novel method for learning robot policies by Retrieving-from-Video (RfV), using analogies from human demonstrations to address manipulation tasks. Our system constructs a video bank comprising recordings of humans performing diverse daily tasks. To enrich the knowledge from these videos, we extract mid-level information, such as object affordance masks and hand motion trajectories, which serve as additional inputs to enhance the robot model's learning and generalization capabilities. We further feature a dual-component system: a video retriever that taps into an external video bank to fetch task-relevant video based on task specification, and a policy generator that integrates this retrieved knowledge into the learning cycle. This approach enables robots to craft adaptive responses to various scenarios and generalize to tasks beyond those in the training data. Through rigorous testing in multiple simulated and real-world settings, our system demonstrates a marked improvement in performance over conventional robotic systems, showcasing a significant breakthrough in the field of robotics. 
+
+**Abstract (ZH)**: 复杂和不确定环境中的机器人操作面临着巨大挑战。与人类在面对陌生任务时通过观看视频示范来学习类似，先进的机器人系统通常依赖大量数据集来学习操作任务。本文提出了一种名为Retrieving-from-Video (RfV)的新方法，通过人类示范中的类比来解决操作任务，构建了一个包含人类执行各种日常任务的视频库。通过提取中层次信息，如物体可用性掩模和手部运动轨迹，这些信息作为额外输入增强机器人模型的学习和泛化能力。该系统还配备了双组件系统：一个视频检索器，根据任务规范从外部视频库中检索相关视频，以及一个策略生成器，将检索到的知识整合到学习周期中。这种方法使机器人能够根据不同场景生成适应性响应，并泛化到训练数据之外的任务。通过在多种模拟和真实世界设置下的严格测试，我们的系统在性能上显著优于传统机器人系统，展示了机器人领域的重要突破。 
+
+---
+# Follow-Me in Micro-Mobility with End-to-End Imitation Learning 
+
+**Title (ZH)**: 微移动中基于端到端模仿学习的随我行技术 
+
+**Authors**: Sahar Salimpour, Iacopo Catalano, Tomi Westerlund, Mohsen Falahi, Jorge Peña Queralta  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.05158)  
+
+**Abstract**: Autonomous micro-mobility platforms face challenges from the perspective of the typical deployment environment: large indoor spaces or urban areas that are potentially crowded and highly dynamic. While social navigation algorithms have progressed significantly, optimizing user comfort and overall user experience over other typical metrics in robotics (e.g., time or distance traveled) is understudied. Specifically, these metrics are critical in commercial applications. In this paper, we show how imitation learning delivers smoother and overall better controllers, versus previously used manually-tuned controllers. We demonstrate how DAAV's autonomous wheelchair achieves state-of-the-art comfort in follow-me mode, in which it follows a human operator assisting persons with reduced mobility (PRM). This paper analyzes different neural network architectures for end-to-end control and demonstrates their usability in real-world production-level deployments. 
+
+**Abstract (ZH)**: 自主微型移动平台在典型的部署环境中面临着挑战：如大型室内空间或潜在拥挤且高度动态的城市区域。尽管社交导航算法取得了显著进展，但优化用户体验（而非传统机器人指标，如时间或行驶距离）的研究仍然不足，特别是在商业应用中这些指标至关重要。本文展示了模仿学习如何提供更平滑且整体更好的控制器，优于之前手动调优的控制器。我们展示了DAAV的自主轮椅在跟随模式下实现了最佳舒适度，该模式下它跟随辅助行动不便人员的人类操作者。本文分析了不同的神经网络架构，展示了它们在实际生产部署中的适用性。 
+
+---
+# Decomposed Object Manipulation via Dual-Actor Policy 
+
+**Title (ZH)**: 双actor策略的分解对象操纵 
+
+**Authors**: Bin Fan, Jianjian Jiang, Zhuohao Li, Yixiang He, Xiaoming Wu, Yihan Yang, Shengbang Liu, Weishi Zheng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.05129)  
+
+**Abstract**: Object manipulation, which focuses on learning to perform tasks on similar parts across different types of objects, can be divided into an approaching stage and a manipulation stage. However, previous works often ignore this characteristic of the task and rely on a single policy to directly learn the whole process of object manipulation. To address this problem, we propose a novel Dual-Actor Policy, termed DAP, which explicitly considers different stages and leverages heterogeneous visual priors to enhance each stage. Specifically, we introduce an affordance-based actor to locate the functional part in the manipulation task, thereby improving the approaching process. Following this, we propose a motion flow-based actor to capture the movement of the component, facilitating the manipulation process. Finally, we introduce a decision maker to determine the current stage of DAP and select the corresponding actor. Moreover, existing object manipulation datasets contain few objects and lack the visual priors needed to support training. To address this, we construct a simulated dataset, the Dual-Prior Object Manipulation Dataset, which combines the two visual priors and includes seven tasks, including two challenging long-term, multi-stage tasks. Experimental results on our dataset, the RoboTwin benchmark and real-world scenarios illustrate that our method consistently outperforms the SOTA method by 5.55%, 14.7% and 10.4% on average respectively. 
+
+**Abstract (ZH)**: 基于双执行器策略的物体操作方法：考虑不同阶段并利用异构视觉先验 
+
+---
+# MoE-DP: An MoE-Enhanced Diffusion Policy for Robust Long-Horizon Robotic Manipulation with Skill Decomposition and Failure Recovery 
+
+**Title (ZH)**: MoE-DP: 一种基于MoE增强的扩散策略，实现具有技能分解和故障恢复的稳健长期 horizon 机器人操作 
+
+**Authors**: Baiye Cheng, Tianhai Liang, Suning Huang, Maanping Shao, Feihong Zhang, Botian Xu, Zhengrong Xue, Huazhe Xu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.05007)  
+
+**Abstract**: Diffusion policies have emerged as a powerful framework for robotic visuomotor control, yet they often lack the robustness to recover from subtask failures in long-horizon, multi-stage tasks and their learned representations of observations are often difficult to interpret. In this work, we propose the Mixture of Experts-Enhanced Diffusion Policy (MoE-DP), where the core idea is to insert a Mixture of Experts (MoE) layer between the visual encoder and the diffusion model. This layer decomposes the policy's knowledge into a set of specialized experts, which are dynamically activated to handle different phases of a task. We demonstrate through extensive experiments that MoE-DP exhibits a strong capability to recover from disturbances, significantly outperforming standard baselines in robustness. On a suite of 6 long-horizon simulation tasks, this leads to a 36% average relative improvement in success rate under disturbed conditions. This enhanced robustness is further validated in the real world, where MoE-DP also shows significant performance gains. We further show that MoE-DP learns an interpretable skill decomposition, where distinct experts correspond to semantic task primitives (e.g., approaching, grasping). This learned structure can be leveraged for inference-time control, allowing for the rearrangement of subtasks without any this http URL video and code are available at the this https URL. 
+
+**Abstract (ZH)**: MoE-增强的扩散策略：一种强健的机器人视觉运动控制框架 
+
+---
+# iFlyBot-VLM Technical Report 
+
+**Title (ZH)**: iFlyBot-VLM 技术报告 
+
+**Authors**: Xin Nie, Zhiyuan Cheng, Yuan Zhang, Chao Ji, Jiajia Wu, Yuhan Zhang, Jia Pan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.04976)  
+
+**Abstract**: We introduce iFlyBot-VLM, a general-purpose Vision-Language Model (VLM) used to improve the domain of Embodied Intelligence. The central objective of iFlyBot-VLM is to bridge the cross-modal semantic gap between high-dimensional environmental perception and low-level robotic motion control. To this end, the model abstracts complex visual and spatial information into a body-agnostic and transferable Operational Language, thereby enabling seamless perception-action closed-loop coordination across diverse robotic platforms. The architecture of iFlyBot-VLM is systematically designed to realize four key functional capabilities essential for embodied intelligence: 1) Spatial Understanding and Metric Reasoning; 2) Interactive Target Grounding; 3) Action Abstraction and Control Parameter Generation; 4) Task Planning and Skill Sequencing. We envision iFlyBot-VLM as a scalable and generalizable foundation model for embodied AI, facilitating the progression from specialized task-oriented systems toward generalist, cognitively capable agents. We conducted evaluations on 10 current mainstream embodied intelligence-related VLM benchmark datasets, such as Blink and Where2Place, and achieved optimal performance while preserving the model's general capabilities. We will publicly release both the training data and model weights to foster further research and development in the field of Embodied Intelligence. 
+
+**Abstract (ZH)**: 我们介绍了适用于增强体域智能领域的一般目的视觉-语言模型iFlyBot-VLM。iFlyBot-VLM的核心目标是弥合高维环境感知与低级机器人运动控制之间的跨模态语义差距。为实现这一目标，该模型将复杂的空间和视觉信息抽象为一种体域无关且可迁移的操作语言，从而在多种机器人平台上实现无缝的感知-行动闭环协调。iFlyBot-VLM的架构系统性地设计以实现体域智能四个关键功能能力：1）空间理解与度量推理；2）交互式目标接地；3）动作抽象与控制参数生成；4）任务规划与技能序列化。我们设想iFlyBot-VLM将成为体域人工智能的可扩展且可泛化的基础模型，促进从专门任务导向系统向通用、认知能力强的代理的发展。我们在Blink和Where2Place等10个当前主流的体域智能相关视觉-语言模型基准数据集上进行了评估，实现了最优性能同时保持模型的通用能力，并将公开训练数据和模型权重以促进体域智能领域的进一步研究与开发。 
+
+---
+# Isaac Lab: A GPU-Accelerated Simulation Framework for Multi-Modal Robot Learning 
+
+**Title (ZH)**: Isaac Lab：一种加速多模态机器人学习的GPU并行模拟框架 
+
+**Authors**: NVIDIA, Mayank Mittal, Pascal Roth, James Tigue, Antoine Richard, Octi Zhang, Peter Du, Antonio Serrano-Muñoz, Xinjie Yao, René Zurbrügg, Nikita Rudin, Lukasz Wawrzyniak, Milad Rakhsha, Alain Denzler, Eric Heiden, Ales Borovicka, Ossama Ahmed, Iretiayo Akinola, Abrar Anwar, Mark T. Carlson, Ji Yuan Feng, Animesh Garg, Renato Gasoto, Lionel Gulich, Yijie Guo, M. Gussert, Alex Hansen, Mihir Kulkarni, Chenran Li, Wei Liu, Viktor Makoviychuk, Grzegorz Malczyk, Hammad Mazhar, Masoud Moghani, Adithyavairavan Murali, Michael Noseworthy, Alexander Poddubny, Nathan Ratliff, Welf Rehberg, Clemens Schwarke, Ritvik Singh, James Latham Smith, Bingjie Tang, Ruchik Thaker, Matthew Trepte, Karl Van Wyk, Fangzhou Yu, Alex Millane, Vikram Ramasamy, Remo Steiner, Sangeeta Subramanian, Clemens Volk, CY Chen, Neel Jawale, Ashwin Varghese Kuruttukulam, Michael A. Lin, Ajay Mandlekar, Karsten Patzwaldt, John Welsh, Huihua Zhao, Fatima Anes, Jean-Francois Lafleche, Nicolas Moënne-Loccoz, Soowan Park, Rob Stepinski, Dirk Van Gelder, Chris Amevor, Jan Carius, Jumyung Chang, Anka He Chen, Pablo de Heras Ciechomski, Gilles Daviet, Mohammad Mohajerani, Julia von Muralt, Viktor Reutskyy, Michael Sauter, Simon Schirm, Eric L. Shi, Pierre Terdiman, Kenny Vilella, Tobias Widmer, Gordon Yeoman, Tiffany Chen, Sergey Grizan, Cathy Li, Lotus Li, Connor Smith, Rafael Wiltz, Kostas Alexis, Yan Chang, David Chu, Linxi "Jim" Fan, Farbod Farshidian, Ankur Handa, Spencer Huang, Marco Hutter, Yashraj Narang, Soha Pouya, Shiwei Sheng, Yuke Zhu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.04831)  
+
+**Abstract**: We present Isaac Lab, the natural successor to Isaac Gym, which extends the paradigm of GPU-native robotics simulation into the era of large-scale multi-modal learning. Isaac Lab combines high-fidelity GPU parallel physics, photorealistic rendering, and a modular, composable architecture for designing environments and training robot policies. Beyond physics and rendering, the framework integrates actuator models, multi-frequency sensor simulation, data collection pipelines, and domain randomization tools, unifying best practices for reinforcement and imitation learning at scale within a single extensible platform. We highlight its application to a diverse set of challenges, including whole-body control, cross-embodiment mobility, contact-rich and dexterous manipulation, and the integration of human demonstrations for skill acquisition. Finally, we discuss upcoming integration with the differentiable, GPU-accelerated Newton physics engine, which promises new opportunities for scalable, data-efficient, and gradient-based approaches to robot learning. We believe Isaac Lab's combination of advanced simulation capabilities, rich sensing, and data-center scale execution will help unlock the next generation of breakthroughs in robotics research. 
+
+**Abstract (ZH)**: 我们介绍Isaac Lab，它是Isaac Gym的自然继任者，将基于GPU的机器人模拟 paradigm 扩展到大规模多模态学习的时代。Isaac Lab 结合了高保真 GPU 并行物理、逼真的渲染以及用于设计环境和训练机器人策略的模块化可组合架构。除了物理和渲染，该框架还集成了执行器模型、多频传感器模拟、数据采集管道和领域随机化工具，统一了大规模强化学习和模仿学习的最佳实践，使其成为单个可扩展平台。我们展示了其在全身控制、跨实体移动、接触丰富和灵巧操作以及人类演示技能获取方面的应用。最后，我们讨论了与可微分的基于 GPU 加速的 Newton 物理引擎的即将集成，这为机器人学习提供了可扩展、数据高效和基于梯度的方法的新机会。我们相信，结合高级模拟能力、丰富的感知能力和数据中心规模执行，Isaac Lab 将有助于解锁机器人研究的下一代突破。 
+
+---
+# ReGen: Generative Robot Simulation via Inverse Design 
+
+**Title (ZH)**: ReGen: 通过逆向设计的生成机器人仿真 
+
+**Authors**: Phat Nguyen, Tsun-Hsuan Wang, Zhang-Wei Hong, Erfan Aasi, Andrew Silva, Guy Rosman, Sertac Karaman, Daniela Rus  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.04769)  
+
+**Abstract**: Simulation plays a key role in scaling robot learning and validating policies, but constructing simulations remains a labor-intensive process. This paper introduces ReGen, a generative simulation framework that automates simulation design via inverse design. Given a robot's behavior -- such as a motion trajectory or an objective function -- and its textual description, ReGen infers plausible scenarios and environments that could have caused the behavior. ReGen leverages large language models to synthesize scenarios by expanding a directed graph that encodes cause-and-effect relationships, relevant entities, and their properties. This structured graph is then translated into a symbolic program, which configures and executes a robot simulation environment. Our framework supports (i) augmenting simulations based on ego-agent behaviors, (ii) controllable, counterfactual scenario generation, (iii) reasoning about agent cognition and mental states, and (iv) reasoning with distinct sensing modalities, such as braking due to faulty GPS signals. We demonstrate ReGen in autonomous driving and robot manipulation tasks, generating more diverse, complex simulated environments compared to existing simulations with high success rates, and enabling controllable generation for corner cases. This approach enhances the validation of robot policies and supports data or simulation augmentation, advancing scalable robot learning for improved generalization and robustness. We provide code and example videos at: this https URL 
+
+**Abstract (ZH)**: 再生：通过逆向设计自动化模拟的生成框架 
+
+---
+# Reasoning Is All You Need for Urban Planning AI 
+
+**Title (ZH)**: 你需要的只有推理：面向城市规划的AI 
+
+**Authors**: Sijie Yang, Jiatong Li, Filip Biljecki  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.05375)  
+
+**Abstract**: AI has proven highly successful at urban planning analysis -- learning patterns from data to predict future conditions. The next frontier is AI-assisted decision-making: agents that recommend sites, allocate resources, and evaluate trade-offs while reasoning transparently about constraints and stakeholder values. Recent breakthroughs in reasoning AI -- CoT prompting, ReAct, and multi-agent collaboration frameworks -- now make this vision achievable.
+This position paper presents the Agentic Urban Planning AI Framework for reasoning-capable planning agents that integrates three cognitive layers (Perception, Foundation, Reasoning) with six logic components (Analysis, Generation, Verification, Evaluation, Collaboration, Decision) through a multi-agents collaboration framework. We demonstrate why planning decisions require explicit reasoning capabilities that are value-based (applying normative principles), rule-grounded (guaranteeing constraint satisfaction), and explainable (generating transparent justifications) -- requirements that statistical learning alone cannot fulfill. We compare reasoning agents with statistical learning, present a comprehensive architecture with benchmark evaluation metrics, and outline critical research challenges. This framework shows how AI agents can augment human planners by systematically exploring solution spaces, verifying regulatory compliance, and deliberating over trade-offs transparently -- not replacing human judgment but amplifying it with computational reasoning capabilities. 
+
+**Abstract (ZH)**: 基于推理的智能城市规划AI框架：具备推理能力的规划代理集成认知层与逻辑组件并通过多代理协作框架实现 
+
+---
+# Real-Time Reasoning Agents in Evolving Environments 
+
+**Title (ZH)**: 实时推理代理在演变环境中 
+
+**Authors**: Yule Wen, Yixin Ye, Yanzhe Zhang, Diyi Yang, Hao Zhu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.04898)  
+
+**Abstract**: Agents in the real world must make not only logical but also timely judgments. This requires continuous awareness of the dynamic environment: hazards emerge, opportunities arise, and other agents act, while the agent's reasoning is still unfolding. Despite advances in language model reasoning, existing approaches fail to account for this dynamic nature. We introduce real-time reasoning as a new problem formulation for agents in evolving environments and build Real-Time Reasoning Gym to demonstrate it. We study two paradigms for deploying language models in agents: (1) reactive agents, which employ language models with bounded reasoning computation for rapid responses, and (2) planning agents, which allow extended reasoning computation for complex problems. Our experiments show that even state-of-the-art models struggle with making logical and timely judgments in either paradigm. To address this limitation, we propose AgileThinker, which simultaneously engages both reasoning paradigms. AgileThinker consistently outperforms agents engaging only one reasoning paradigm as the task difficulty and time pressure rise, effectively balancing reasoning depth and response latency. Our work establishes real-time reasoning as a critical testbed for developing practical agents and provides a foundation for research in temporally constrained AI systems, highlighting a path toward real-time capable agents. 
+
+**Abstract (ZH)**: 实时推理：动态环境中的及时判断与逻辑推理 
+
+---
+# An End-to-End Deep Reinforcement Learning Approach for Solving the Traveling Salesman Problem with Drones 
+
+**Title (ZH)**: 基于无人机的旅行商问题的端到端深度强化学习方法 
+
+**Authors**: Taihelong Zeng, Yun Lin, Yuhe Shi, Yan Li, Zhiqing Wei, Xuanru Ji  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.05265)  
+
+**Abstract**: The emergence of truck-drone collaborative systems in last-mile logistics has positioned the Traveling Salesman Problem with Drones (TSP-D) as a pivotal extension of classical routing optimization, where synchronized vehicle coordination promises substantial operational efficiency and reduced environmental impact, yet introduces NP-hard combinatorial complexity beyond the reach of conventional optimization paradigms. Deep reinforcement learning offers a theoretically grounded framework to address TSP-D's inherent challenges through self-supervised policy learning and adaptive decision-making. This study proposes a hierarchical Actor-Critic deep reinforcement learning framework for solving the TSP-D problem. The architecture consists of two primary components: a Transformer-inspired encoder and an efficient Minimal Gated Unit decoder. The encoder incorporates a novel, optimized k-nearest neighbors sparse attention mechanism specifically for focusing on relevant spatial relationships, further enhanced by the integration of global node features. The Minimal Gated Unit decoder processes these encoded representations to efficiently generate solution sequences. The entire framework operates within an asynchronous advantage actor-critic paradigm. Experimental results show that, on benchmark TSP-D instances of various scales (N=10 to 100), the proposed model can obtain competitive or even superior solutions in shorter average computation times compared to high-performance heuristic algorithms and existing reinforcement learning methods. Moreover, compared to advanced reinforcement learning algorithm benchmarks, the proposed framework significantly reduces the total training time required while achieving superior final performance, highlighting its notable advantage in training efficiency. 
+
+**Abstract (ZH)**: 基于卡车-无人机协作系统的最后一公里物流中，飞行员问题与无人机（TSP-D）成为经典路径优化问题的重要扩展，同步车辆协调有望显著提高操作效率并减少环境影响，但同时也引入了超越传统优化范式的NP难组合复杂性。深度强化学习提供了一种理论上可靠的方法来解决TSP-D固有的挑战，通过自监督策略学习和适应性决策。本研究提出了一种分层演员-评论家深度强化学习框架来解决TSP-D问题。该框架由两个主要组成部分构成：受变压器启发的编码器和高效的最小门控单元解码器。编码器嵌入了一种新型的优化k最近邻稀疏注意力机制，专门用于聚焦于相关空间关系，并通过融合全局节点特征得以增强。最小门控单元解码器处理这些编码表示，以高效生成解决方案序列。整个框架运行于异步优势演员-评论家模式下。实验结果表明，针对不同规模（N=10至100）的标准TSP-D实例，所提出模型能够在较短时间内获得竞争力甚至更优的解决方案，相较于高性能启发式算法和现有强化学习方法。此外，与先进的强化学习算法基准相比，所提出的框架显著减少了所需的总训练时间，同时实现了更优异的最终性能，凸显了其在训练效率方面的显著优势。 
+
+---
+# You Need Reasoning to Learn Reasoning: The Limitations of Label-Free RL in Weak Base Models 
+
+**Title (ZH)**: 你需要通过推理来学习推理：弱基模型中无标签RL的局限性 
+
+**Authors**: Shuvendu Roy, Hossein Hajimirsadeghi, Mengyao Zhai, Golnoosh Samei  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.04902)  
+
+**Abstract**: Recent advances in large language models have demonstrated the promise of unsupervised reinforcement learning (RL) methods for enhancing reasoning capabilities without external supervision. However, the generalizability of these label-free RL approaches to smaller base models with limited reasoning capabilities remains unexplored. In this work, we systematically investigate the performance of label-free RL methods across different model sizes and reasoning strengths, from 0.5B to 7B parameters. Our empirical analysis reveals critical limitations: label-free RL is highly dependent on the base model's pre-existing reasoning capability, with performance often degrading below baseline levels for weaker models. We find that smaller models fail to generate sufficiently long or diverse chain-of-thought reasoning to enable effective self-reflection, and that training data difficulty plays a crucial role in determining success. To address these challenges, we propose a simple yet effective method for label-free RL that utilizes curriculum learning to progressively introduce harder problems during training and mask no-majority rollouts during training. Additionally, we introduce a data curation pipeline to generate samples with predefined difficulty. Our approach demonstrates consistent improvements across all model sizes and reasoning capabilities, providing a path toward more robust unsupervised RL that can bootstrap reasoning abilities in resource-constrained models. We make our code available at this https URL 
+
+**Abstract (ZH)**: 近期大型语言模型的发展展示了无监督强化学习方法在增强推理能力方面的潜力，无需外部监督。然而，这些无标签的强化学习方法对于小型基础模型的泛化能力，这些基础模型具有有限的推理能力，尚未被探索。在这项工作中，我们系统地研究了无标签RL方法在不同模型规模和推理能力下的性能，从0.5B到7B参数。我们的实证分析揭示了关键的局限性：无标签RL高度依赖于基础模型预先存在的推理能力，较弱模型的表现通常会低于基线水平。我们发现，较小的模型无法生成足够长或多样化的推理链，以实现有效的自我反思，而训练数据难度在决定成功方面发挥着关键作用。为了应对这些挑战，我们提出了一种简单而有效的方法来增强无标签RL，利用课程学习在训练过程中逐步引入更难的问题，并在训练过程中屏蔽非主要推演。此外，我们引入了一种数据整理流水线来生成预定义难度的样本。我们的方法在所有模型规模和推理能力下均表现出一致性改进，为更稳健的无监督RL提供了途径，该途径可以为资源受限的模型提供推理能力的自我提升。我们的代码可在此网站获得。 
+
+---
+# Learning to reason about rare diseases through retrieval-augmented agents 
+
+**Title (ZH)**: 通过检索增强代理学习推理解罕见疾病 
+
+**Authors**: Ha Young Kim, Jun Li, Ana Beatriz Solana, Carolin M. Pirkl, Benedikt Wiestler, Julia A. Schnabel, Cosmin I. Bercea  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.04720)  
+
+**Abstract**: Rare diseases represent the long tail of medical imaging, where AI models often fail due to the scarcity of representative training data. In clinical workflows, radiologists frequently consult case reports and literature when confronted with unfamiliar findings. Following this line of reasoning, we introduce RADAR, Retrieval Augmented Diagnostic Reasoning Agents, an agentic system for rare disease detection in brain MRI. Our approach uses AI agents with access to external medical knowledge by embedding both case reports and literature using sentence transformers and indexing them with FAISS to enable efficient similarity search. The agent retrieves clinically relevant evidence to guide diagnostic decision making on unseen diseases, without the need of additional training. Designed as a model-agnostic reasoning module, RADAR can be seamlessly integrated with diverse large language models, consistently improving their rare pathology recognition and interpretability. On the NOVA dataset comprising 280 distinct rare diseases, RADAR achieves up to a 10.2% performance gain, with the strongest improvements observed for open source models such as DeepSeek. Beyond accuracy, the retrieved examples provide interpretable, literature grounded explanations, highlighting retrieval-augmented reasoning as a powerful paradigm for low-prevalence conditions in medical imaging. 
+
+**Abstract (ZH)**: 稀有疾病代表医学影像领域的长尾部分，由于训练数据代表性不足，AI模型在此经常失效。在临床工作流程中，放射科医生在遇到不熟悉的表现时经常查阅病例报告和文献。基于这一思路，我们引入了RADAR（ Retrieval Augmented Diagnostic Reasoning Agents），一种用于脑MRI中稀有疾病检测的智能代理系统。该方法通过使用句向量变换器将病例报告和文献嵌入，并使用FAISS进行索引，以实现高效相似度检索。代理检索相关临床证据，以指导对未见过疾病的诊断决策，无需额外训练。作为模型无关的推理模块，RADAR可以无缝集成到各种大型语言模型中，一致地提高它们对稀有病理的识别能力和可解释性。在包含280种独特稀有疾病的NOVA数据集上，RADAR实现了最高10.2%的性能提升，对于如DeepSeek等开源模型，提升效果最为显著。除了准确性提升，检索到的实例还提供了基于文献的可解释性解释，突显了检索增强推理作为低频病患医学影像中强大范式的潜力。 
+
+---

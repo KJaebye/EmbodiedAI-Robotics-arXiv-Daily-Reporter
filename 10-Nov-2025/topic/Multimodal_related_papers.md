@@ -1,0 +1,65 @@
+# Unified Multimodal Diffusion Forcing for Forceful Manipulation 
+
+**Title (ZH)**: 统一多模态扩散强迫用于强制操作 
+
+**Authors**: Zixuan Huang, Huaidian Hou, Dmitry Berenson  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.04812)  
+
+**Abstract**: Given a dataset of expert trajectories, standard imitation learning approaches typically learn a direct mapping from observations (e.g., RGB images) to actions. However, such methods often overlook the rich interplay between different modalities, i.e., sensory inputs, actions, and rewards, which is crucial for modeling robot behavior and understanding task outcomes. In this work, we propose Multimodal Diffusion Forcing, a unified framework for learning from multimodal robot trajectories that extends beyond action generation. Rather than modeling a fixed distribution, MDF applies random partial masking and trains a diffusion model to reconstruct the trajectory. This training objective encourages the model to learn temporal and cross-modal dependencies, such as predicting the effects of actions on force signals or inferring states from partial observations. We evaluate MDF on contact-rich, forceful manipulation tasks in simulated and real-world environments. Our results show that MDF not only delivers versatile functionalities, but also achieves strong performance, and robustness under noisy observations. More visualizations can be found on our website this https URL 
+
+**Abstract (ZH)**: 基于专家轨迹的多模态扩散强制学习框架 
+
+---
+# Multi-modal Loop Closure Detection with Foundation Models in Severely Unstructured Environments 
+
+**Title (ZH)**: 严重无序环境中基于多模态基础模型的回环检测 
+
+**Authors**: Laura Alejandra Encinar Gonzalez, John Folkesson, Rudolph Triebel, Riccardo Giubilato  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.05404)  
+
+**Abstract**: Robust loop closure detection is a critical component of Simultaneous Localization and Mapping (SLAM) algorithms in GNSS-denied environments, such as in the context of planetary exploration. In these settings, visual place recognition often fails due to aliasing and weak textures, while LiDAR-based methods suffer from sparsity and ambiguity. This paper presents MPRF, a multimodal pipeline that leverages transformer-based foundation models for both vision and LiDAR modalities to achieve robust loop closure in severely unstructured environments. Unlike prior work limited to retrieval, MPRF integrates a two-stage visual retrieval strategy with explicit 6-DoF pose estimation, combining DINOv2 features with SALAD aggregation for efficient candidate screening and SONATA-based LiDAR descriptors for geometric verification. Experiments on the S3LI dataset and S3LI Vulcano dataset show that MPRF outperforms state-of-the-art retrieval methods in precision while enhancing pose estimation robustness in low-texture regions. By providing interpretable correspondences suitable for SLAM back-ends, MPRF achieves a favorable trade-off between accuracy, efficiency, and reliability, demonstrating the potential of foundation models to unify place recognition and pose estimation. Code and models will be released at this http URL. 
+
+**Abstract (ZH)**: GNSS受限环境下鲁棒环回闭合检测在行星探测中同步定位与建图算法中的关键作用：多模态管道MPRF及其应用 
+
+---
+# A multimodal multiplex of the mental lexicon for multilingual individuals 
+
+**Title (ZH)**: 多模态多重语境中的心理词典构建研究：面向多语言个体 
+
+**Authors**: Maria Huynh, Wilder C. Rodrigues  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.05361)  
+
+**Abstract**: Historically, bilingualism was often perceived as an additional cognitive load that could hinder linguistic and intellectual development. However, over the last three decades, this view has changed considerably. Numerous studies have aimed to model and understand the architecture of the bilingual word recognition system Dijkstra and van Heuven (2002), investigating how parallel activation operates in the brain and how one language influences another Kroll et al. (2015). Increasingly, evidence suggests that multilinguals, individuals who speak three or more languages, can perform better than monolinguals in various linguistic and cognitive tasks, such as learning an additional language Abu-Rabia and Sanitsky (2010). This research proposal focuses on the study of the mental lexicon and how it may be structured in individuals who speak multiple languages. Building on the work of Stella et al. (2018), who investigated explosive learning in humans using a multiplex model of the mental lexicon, and the Bilingual Interactive Activation (BIA+) framework proposed by Dijkstra and van Heuven (2002), the present study applies the same multilayer network principles introduced by Kivela et al. (2014). Our experimental design extends previous research by incorporating multimodality into the multiplex model, introducing an additional layer that connects visual inputs to their corresponding lexical representations across the multilingual layers of the mental lexicon. In this research, we aim to explore how a heritage language influences the acquisition of another language. Specifically, we ask: Does the presence of visual input in a translation task influence participants' proficiency and accuracy compared to text-only conditions? 
+
+**Abstract (ZH)**: 历史上传统认为双语会增加认知负担，从而阻碍语言和智力发展。然而，在过去的三十年里，这一观点已经发生了显著变化。众多研究致力于模式化和理解双语词汇识别系统的架构Dijkstra和van Heuven（2002），探究并行激活在大脑中的运作方式以及一种语言如何影响另一种语言Kroll等（2015）。越来越多的证据表明，掌握三种或以上语言的多语者在各种语言和认知任务上表现优于单一语言者，例如学习额外的语言Abu-Rabia和Sanitsky（2010）。本研究提案专注于多语言者心理词典的研究及其可能的结构。基于Stella等（2018）利用多复层模型研究人类爆炸性学习的工作，以及Dijkstra和van Heuven（2002）提出的双语交互激活（BIA+）框架，并借鉴Kivela等（2014）提出的多层网络原理，本研究将多模态引入复层模型中，增加了一层将视觉输入连接到多语言心理词典相应词汇表征的机制。本研究旨在探讨母语如何影响另一种语言的习得。具体而言，我们的问题是：翻译任务中的视觉输入是否会增加参与者的表现水平和准确度，与仅使用文本的条件相比？ 
+
+---
+# DeepEyesV2: Toward Agentic Multimodal Model 
+
+**Title (ZH)**: DeepEyesV2: 向自主多模态模型迈进 
+
+**Authors**: Jack Hong, Chenxiao Zhao, ChengLin Zhu, Weiheng Lu, Guohai Xu, Xing Yu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.05271)  
+
+**Abstract**: Agentic multimodal models should not only comprehend text and images, but also actively invoke external tools, such as code execution environments and web search, and integrate these operations into reasoning. In this work, we introduce DeepEyesV2 and explore how to build an agentic multimodal model from the perspectives of data construction, training methods, and model evaluation. We observe that direct reinforcement learning alone fails to induce robust tool-use behavior. This phenomenon motivates a two-stage training pipeline: a cold-start stage to establish tool-use patterns, and reinforcement learning stage to further refine tool invocation. We curate a diverse, moderately challenging training dataset, specifically including examples where tool use is beneficial. We further introduce RealX-Bench, a comprehensive benchmark designed to evaluate real-world multimodal reasoning, which inherently requires the integration of multiple capabilities, including perception, search, and reasoning. We evaluate DeepEyesV2 on RealX-Bench and other representative benchmarks, demonstrating its effectiveness across real-world understanding, mathematical reasoning, and search-intensive tasks. Moreover, DeepEyesV2 exhibits task-adaptive tool invocation, tending to use image operations for perception tasks and numerical computations for reasoning tasks. Reinforcement learning further enables complex tool combinations and allows model to selectively invoke tools based on context. We hope our study can provide guidance for community in developing agentic multimodal models. 
+
+**Abstract (ZH)**: 代理多模态模型不仅应理解文本和图像，还应主动调用外部工具，如代码执行环境和网络搜索，并将这些操作整合到推理中。在本文中，我们介绍了DeepEyesV2，并从数据构建、训练方法和模型评估的角度探讨了如何构建代理多模态模型。我们观察到单独的强化学习直接调用工具行为效果不佳。这一现象促使我们提出两阶段的训练pipeline：冷启动阶段建立工具使用模式，强化学习阶段进一步细化工具调用。我们构建了一个多样化的、具有适度挑战性的训练数据集，特别包括了工具使用有益的例子。我们进一步引入了RealX-Bench，这是一个全面的基准测试，旨在评估多模态推理能力，涵盖了感知、搜索和推理等多个能力的综合应用。在RealX-Bench和其它代表性基准上评估DeepEyesV2，展示了其在现实理解、数学推理和检索密集任务中的有效性。此外，DeepEyesV2表现出任务适应性的工具调用，倾向于在感知任务中使用图像操作，在推理任务中使用数值计算。强化学习进一步促进了复杂工具组合，并使模型能够根据上下文选择性地调用工具。我们希望我们的研究能为代理多模态模型的开发提供指导。 
+
+---
+# A benchmark multimodal oro-dental dataset for large vision-language models 
+
+**Title (ZH)**: 面向大规模视觉-语言模型的基准多模态口腔数据集 
+
+**Authors**: Haoxin Lv, Ijazul Haq, Jin Du, Jiaxin Ma, Binnian Zhu, Xiaobing Dang, Chaoan Liang, Ruxu Du, Yingjie Zhang, Muhammad Saqib  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.04948)  
+
+**Abstract**: The advancement of artificial intelligence in oral healthcare relies on the availability of large-scale multimodal datasets that capture the complexity of clinical practice. In this paper, we present a comprehensive multimodal dataset, comprising 8775 dental checkups from 4800 patients collected over eight years (2018-2025), with patients ranging from 10 to 90 years of age. The dataset includes 50000 intraoral images, 8056 radiographs, and detailed textual records, including diagnoses, treatment plans, and follow-up notes. The data were collected under standard ethical guidelines and annotated for benchmarking. To demonstrate its utility, we fine-tuned state-of-the-art large vision-language models, Qwen-VL 3B and 7B, and evaluated them on two tasks: classification of six oro-dental anomalies and generation of complete diagnostic reports from multimodal inputs. We compared the fine-tuned models with their base counterparts and GPT-4o. The fine-tuned models achieved substantial gains over these baselines, validating the dataset and underscoring its effectiveness in advancing AI-driven oro-dental healthcare solutions. The dataset is publicly available, providing an essential resource for future research in AI dentistry. 
+
+**Abstract (ZH)**: 人工智能在口腔健康管理中的进步依赖于大规模多模态数据集的可用性，以捕捉临床实践的复杂性。本文介绍了一个全面的多模态数据集，包含从2018年至2025年八年间4800名患者累积的8775次牙科检查，患者年龄从10岁至90岁不等。数据集包括50000张口内图像、8056张牙片以及详细的文本记录，包括诊断、治疗计划和随访笔记。数据收集遵循标准的伦理准则并用于基准标注。为了展示其应用价值，我们对最新的大型视觉-语言模型Qwen-VL 3B和7B进行了微调，并在两个任务上进行了评估：六种口腔异常的分类和从多模态输入生成完整的诊断报告。微调后的模型与基线模型和GPT-4o进行了比较，结果显示微调模型取得了显著提升，验证了该数据集的有效性，突显了其在推动基于AI的口腔健康管理解决方案方面的成效。该数据集公开可用，为未来AI牙科研究提供了重要资源。 
+
+---

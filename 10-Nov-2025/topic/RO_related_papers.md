@@ -1,0 +1,104 @@
+# Bioinspired Soft Quadrotors Jointly Unlock Agility, Squeezability, and Collision Resilience 
+
+**Title (ZH)**: 生物启发的软四旋翼无人机联合解锁敏捷性、可压缩性和碰撞韧性 
+
+**Authors**: Luca Girardi, Gabriel Maquignaz, Stefano Mintchev  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.05426)  
+
+**Abstract**: Natural flyers use soft wings to seamlessly enable a wide range of flight behaviours, including agile manoeuvres, squeezing through narrow passageways, and withstanding collisions. In contrast, conventional quadrotor designs rely on rigid frames that support agile flight but inherently limit collision resilience and squeezability, thereby constraining flight capabilities in cluttered environments. Inspired by the anisotropic stiffness and distributed mass-energy structures observed in biological organisms, we introduce FlexiQuad, a soft-frame quadrotor design approach that limits this trade-off. We demonstrate a 405-gram FlexiQuad prototype, three orders of magnitude more compliant than conventional quadrotors, yet capable of acrobatic manoeuvres with peak speeds above 80 km/h and linear and angular accelerations exceeding 3 g and 300 rad/s$^2$, respectively. Analysis demonstrates it can replicate accelerations of rigid counterparts up to a thrust-to-weight ratio of 8. Simultaneously, FlexiQuad exhibits fourfold higher collision resilience, surviving frontal impacts at 5 m/s without damage and reducing destabilising forces in glancing collisions by a factor of 39. Its frame can fully compress, enabling flight through gaps as narrow as 70% of its nominal width. Our analysis identifies an optimal structural softness range, from 0.006 to 0.77 N/mm, comparable to that of natural flyers' wings, whereby agility, squeezability, and collision resilience are jointly achieved for FlexiQuad models from 20 to 3000 grams. FlexiQuad expands hovering drone capabilities in complex environments, enabling robust physical interactions without compromising flight performance. 
+
+**Abstract (ZH)**: 基于柔体框架的四旋翼无人机FlexiQuad：实现敏捷性、可挤压性和抗撞击性的统一 
+
+---
+# ETHOS: A Robotic Encountered-Type Haptic Display for Social Interaction in Virtual Reality 
+
+**Title (ZH)**: ETHOS：一种用于虚拟现实社交互动的接触型触觉显示机器人 
+
+**Authors**: Eric Godden, Jacquie Groenewegen, Matthew K.X.J. Pan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.05379)  
+
+**Abstract**: We present ETHOS (Encountered-Type Haptics for On-demand Social Interaction), a dynamic encountered-type haptic display (ETHD) that enables natural physical contact in virtual reality (VR) during social interactions such as handovers, fist bumps, and high-fives. The system integrates a torque-controlled robotic manipulator with interchangeable passive props (silicone hand replicas and a baton), marker-based physical-virtual registration via a ChArUco board, and a safety monitor that gates motion based on the user's head and hand pose. We introduce two control strategies: (i) a static mode that presents a stationary prop aligned with its virtual counterpart, consistent with prior ETHD baselines, and (ii) a dynamic mode that continuously updates prop position by exponentially blending an initial mid-point trajectory with real-time hand tracking, generating a unique contact point for each interaction. Bench tests show static colocation accuracy of 5.09 +/- 0.94 mm, while user interactions achieved temporal alignment with an average contact latency of 28.53 +/- 31.21 ms across all interaction and control conditions. These results demonstrate the feasibility of recreating socially meaningful haptics in VR. By incorporating essential safety and control mechanisms, ETHOS establishes a practical foundation for high-fidelity, dynamic interpersonal interactions in virtual environments. 
+
+**Abstract (ZH)**: ETHOS：遇时触感交互系统，实现虚拟现实社交互动中的自然物理接触 
+
+---
+# Force-Safe Environment Maps and Real-Time Detection for Soft Robot Manipulators 
+
+**Title (ZH)**: 具有力安全环境映射和实时检测的软机器人 manipulator 环境模型 
+
+**Authors**: Akua K. Dickson, Juan C. Pacheco Garcia, Andrew P. Sabelhaus  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.05307)  
+
+**Abstract**: Soft robot manipulators have the potential for deployment in delicate environments to perform complex manipulation tasks. However, existing obstacle detection and avoidance methods do not consider limits on the forces that manipulators may exert upon contact with delicate obstacles. This work introduces a framework that maps force safety criteria from task space (i.e. positions along the robot's body) to configuration space (i.e. the robot's joint angles) and enables real-time force safety detection. We incorporate limits on allowable environmental contact forces for given task-space obstacles, and map them into configuration space (C-space) through the manipulator's forward kinematics. This formulation ensures that configurations classified as safe are provably below the maximum force thresholds, thereby allowing us to determine force-safe configurations of the soft robot manipulator in real-time. We validate our approach in simulation and hardware experiments on a two-segment pneumatic soft robot manipulator. Results demonstrate that the proposed method accurately detects force safety during interactions with deformable obstacles, thereby laying the foundation for real-time safe planning of soft manipulators in delicate, cluttered environments. 
+
+**Abstract (ZH)**: 软体机器人 manipulators 在敏感环境中执行复杂操作任务具有潜力。然而，现有的障碍检测与规避方法未考虑软体机器人在接触敏感障碍物时可施加的力的限制。本工作介绍了一种框架，将力的安全标准从任务空间（即机器人身体上的位置）映射到配置空间（即机器人的关节角度），并实现实时力安全检测。我们结合了给定任务空间障碍物的允许环境接触力限制，并通过机器人的正向运动学将其映射到配置空间（C空间）。该形式化表示保证被分类为安全的配置是可证明地低于最大力阈值，从而允许我们实时确定软体机器人在安全状态下的配置。我们在仿真和硬件实验中对一个两段气动软体机器人 manipulators 进行了验证。结果表明，所提出的方法能够准确检测与可变形障碍物交互过程中的力安全，为软体操作器在复杂、拥挤的敏感环境中的实时安全规划奠定了基础。 
+
+---
+# TAPOM: Task-Space Topology-Guided Motion Planning for Manipulating Elongated Object in Cluttered Environments 
+
+**Title (ZH)**: TAPOM: 任务空间拓扑引导的操纵elongated物体的集群环境运动规划 
+
+**Authors**: Zihao Li, Yiming Zhu, Zhe Zhong, Qinyuan Ren, Yijiang Huang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.05052)  
+
+**Abstract**: Robotic manipulation in complex, constrained spaces is vital for widespread applications but challenging, particularly when navigating narrow passages with elongated objects. Existing planning methods often fail in these low-clearance scenarios due to the sampling difficulties or the local minima. This work proposes Topology-Aware Planning for Object Manipulation (TAPOM), which explicitly incorporates task-space topological analysis to enable efficient planning. TAPOM uses a high-level analysis to identify critical pathways and generate guiding keyframes, which are utilized in a low-level planner to find feasible configuration space trajectories. Experimental validation demonstrates significantly high success rates and improved efficiency over state-of-the-art methods on low-clearance manipulation tasks. This approach offers broad implications for enhancing manipulation capabilities of robots in complex real-world environments. 
+
+**Abstract (ZH)**: 拓扑感知物体操作规划（TAPOM）：在复杂受限空间中的高效操作规划 
+
+---
+# Epically Powerful: An open-source software and mechatronics infrastructure for wearable robotic systems 
+
+**Title (ZH)**: epically 强大：一种开源软件与机电一体化基础设施，用于穿戴式机器人系统 
+
+**Authors**: Jennifer K. Leestma, Siddharth R. Nathella, Christoph P. O. Nuesslein, Snehil Mathur, Gregory S. Sawicki, Aaron J. Young  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.05033)  
+
+**Abstract**: Epically Powerful is an open-source robotics infrastructure that streamlines the underlying framework of wearable robotic systems - managing communication protocols, clocking, actuator commands, visualization, sensor data acquisition, data logging, and more - while also providing comprehensive guides for hardware selection, system assembly, and controller implementation. Epically Powerful contains a code base enabling simplified user implementation via Python that seamlessly interfaces with various commercial state-of-the-art quasi-direct drive (QDD) actuators, single-board computers, and common sensors, provides example controllers, and enables real-time visualization. To further support device development, the package also includes a recommended parts list and compatibility guide and detailed documentation on hardware and software implementation. The goal of Epically Powerful is to lower the barrier to developing and deploying custom wearable robotic systems without a pre-specified form factor, enabling researchers to go from raw hardware to modular, robust devices quickly and effectively. Though originally designed with wearable robotics in mind, Epically Powerful is broadly applicable to other robotic domains that utilize QDD actuators, single-board computers, and sensors for closed-loop control. 
+
+**Abstract (ZH)**: Epically Powerful是一款开源的机器人基础设施，简化可穿戴机器人系统的底层框架管理，包括通信协议、时钟、执行器命令、可视化、传感器数据采集、数据记录等功能，同时提供硬件选择、系统组装和控制器实现的全面指南。Epically Powerful包含一个通过Python简化用户实现的代码库，无缝接口多种商业先进的准直接驱动（QDD）执行器、单板计算机和常见传感器，提供示例控制器，并支持实时可视化。为了进一步支持设备开发，该软件包还包括推荐的零部件清单和兼容性指南，以及详细的硬件和软件实施文档。Epically Powerful的目标是降低开发和部署自定义可穿戴机器人系统的障碍，使研究人员能够快速有效地从原始硬件过渡到模块化、可靠的设备。虽然最初是为可穿戴机器人设计的，但Epically Powerful在利用QDD执行器、单板计算机和传感器进行闭 loop控制的其他机器人领域也具有广泛应用潜力。 
+
+---
+# Encoding Biomechanical Energy Margin into Passivity-based Synchronization for Networked Telerobotic Systems 
+
+**Title (ZH)**: 基于耗散性同步的网络化遥操作系统中的生物力学能量裕度编码 
+
+**Authors**: Xingyuan Zhou, Peter Paik, S. Farokh Atashzar  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.04994)  
+
+**Abstract**: Maintaining system stability and accurate position tracking is imperative in networked robotic systems, particularly for haptics-enabled human-robot interaction. Recent literature has integrated human biomechanics into the stabilizers implemented for teleoperation, enhancing force preservation while guaranteeing convergence and safety. However, position desynchronization due to imperfect communication and non-passive behaviors remains a challenge. This paper proposes a two-port biomechanics-aware passivity-based synchronizer and stabilizer, referred to as TBPS2. This stabilizer optimizes position synchronization by leveraging human biomechanics while reducing the stabilizer's conservatism in its activation. We provide the mathematical design synthesis of the stabilizer and the proof of stability. We also conducted a series of grid simulations and systematic experiments, comparing their performance with that of state-of-the-art solutions under varying time delays and environmental conditions. 
+
+**Abstract (ZH)**: 维持系统稳定性和精确的位置跟踪在网络化机器人系统中至关重要，特别是在具有触觉增强的人机交互中。近期文献已经将人类生物力学纳入远程操作中实现稳定性的设计中，增强了力的保存能力并确保了收敛性和安全性。然而，由于通信不完美和非被动行为导致的位置同步问题仍然是一个挑战。本文提出了一种基于生物力学的两端口.passivityベース同步器和稳定器，称为TBPS2。该稳定器通过利用人类生物力学来优化位置同步，同时减少了稳定器在激活时的保守性。我们提供了稳定器的数学设计合成，并证明了其稳定性。我们还进行了网格仿真和系统实验，比较了在不同时间延迟和环境条件下其性能与最先进的解决方案的性能。 
+
+---
+# A semi-analytical approach for computing the largest singularity-free spheres of a class of 6-6 Stewart-Gough platforms for specified orientation workspaces 
+
+**Title (ZH)**: 一类6-6 Stewart-Gough 平台指定 orientations 工作空间中计算最大无奇点球面的一种半解析方法 
+
+**Authors**: Bibekananda Patra, Sandipan Bandyopadhyay  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.04992)  
+
+**Abstract**: This article presents a method for computing the largest singularity-free sphere (SFS) of a 6-6 Stewart-Gough platform manipulator (SGPM) over a specified orientation workspace. For a fixed orientation of the moving platform, the SFS is computed analytically. This process is repeated over a set of samples generated within the orientation workspace, and the smallest among them is designated as the desired SFS for the given orientation workspace. Numerical experiments are performed on four distinct architectures of the SGPM to understand their relative performances w.r.t. SFS volumes over the same orientation workspace. This study demonstrates the potential utility of the proposed computational method both in analysis and design of SGPMs. 
+
+**Abstract (ZH)**: 本文提出了一种计算6-6斯坦福-戈斯平台 manipulator (SGPM) 在指定姿态工作空间内最大无奇点球面 (SFS) 的方法。对于固定姿态的运动平台，SFS 可通过解析方法计算。该过程在工作空间内的样本集上重复进行，并将其中最小者指定为目标 SFS。在相同的姿态工作空间上对 SGPM 的四种不同结构进行数值实验，以了解其在 SFS 体积方面的相对性能。本文展示了所提出计算方法在 SGPM 的分析和设计中的潜在用途。 
+
+---
+# Design Exploration for Protection and Cleaning of Solar Panels with Case Studies for Space Missions 
+
+**Title (ZH)**: 太空任务中太阳能板的保护与清洁设计探索及案例研究 
+
+**Authors**: Cameron Robinson, Ganghee Jang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.04837)  
+
+**Abstract**: Solar energy is used for many mission-critical applications including space exploration, sensor systems to monitor wildfires, etc. Their operation can be limited or even terminated if solar panels are covered with dust or hit by space debris. To address this issue, we designed panel cleaning mechanisms and tested protective materials. For cleaning mechanisms, we designed and compared a wiper system and a rail system. For protective materials, we found through collision tests that polycarbonate was very promising, though the most important factor was layering a soft material between the panel's surface and a hard material. In the cleaning system comparisons, the wiper-based system was more efficient than the rail-based system in terms of cost, cleaning speed, and total power consumption. 
+
+**Abstract (ZH)**: 太阳能在空间探索和监控野火的传感器系统等关键任务应用中被广泛使用。如果太阳能板被灰尘覆盖或受到空间碎片的撞击，其运行可能会受到限制甚至停止。为解决这一问题，我们设计了清洁机制并测试了保护材料。在清洁机制方面，我们设计并比较了刮水器系统和滑轨系统。在保护材料方面，通过碰撞测试发现聚碳酸酯非常有潜力，但最关键的因素是在面板表面和硬材料之间铺设一层软材料。在清洁系统的比较中，基于刮水器的系统在成本、清洁速度和总能耗方面比基于滑轨的系统更高效。 
+
+---
