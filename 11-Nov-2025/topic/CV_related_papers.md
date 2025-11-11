@@ -1,0 +1,620 @@
+# HDCNet: A Hybrid Depth Completion Network for Grasping Transparent and Reflective Objects 
+
+**Title (ZH)**: HDCNet：一种用于抓取透明和反射物体的混合深度完成网络 
+
+**Authors**: Guanghu Xie, Mingxu Li, Songwei Wu, Yang Liu, Zongwu Xie, Baoshi Cao, Hong Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.07081)  
+
+**Abstract**: Depth perception of transparent and reflective objects has long been a critical challenge in robotic this http URL depth sensors often fail to provide reliable measurements on such surfaces, limiting the performance of robots in perception and grasping tasks. To address this issue, we propose a novel depth completion network,HDCNet,which integrates the complementary strengths of Transformer,CNN and Mamba this http URL,the encoder is designed as a dual-branch Transformer-CNN framework to extract modality-specific features. At the shallow layers of the encoder, we introduce a lightweight multimodal fusion module to effectively integrate low-level features. At the network bottleneck,a Transformer-Mamba hybrid fusion module is developed to achieve deep integration of high-level semantic and global contextual information, significantly enhancing depth completion accuracy and robustness. Extensive evaluations on multiple public datasets demonstrate that HDCNet achieves state-of-the-art(SOTA) performance in depth completion this http URL,robotic grasping experiments show that HDCNet substantially improves grasp success rates for transparent and reflective objects,achieving up to a 60% increase. 
+
+**Abstract (ZH)**: 透明和反射物体的深度感知一直是机器人领域的关键技术挑战。传统深度传感器在这些表面上往往无法提供可靠的测量结果，限制了机器人在感知和抓取任务中的性能。为了解决这一问题，我们提出了一种新的深度完成网络——HDCNet，该网络整合了Transformer、CNN和Mamba的优势。编码器设计为双分支Transformer-CNN框架，用于提取模态特异性特征。在编码器的浅层，引入了一种轻量级的多模态融合模块，以有效整合低层特征。在网络瓶颈处，开发了一种Transformer-Mamba混合融合模块，以实现高层语义和全局上下文信息的深度整合，显著提高深度完成的准确性和鲁棒性。在多个公开数据集上的广泛评估表明，HDCNet在深度完成方面达到了目前的先进水平，机器人抓取实验表明，HDCNet显著提高了透明和反射物体的成功抓取率，成功率提高了60%。 
+
+---
+# Integration of Visual SLAM into Consumer-Grade Automotive Localization 
+
+**Title (ZH)**: 将视觉SLAM集成到消费级汽车定位中 
+
+**Authors**: Luis Diener, Jens Kalkkuhl, Markus Enzweiler  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.06919)  
+
+**Abstract**: Accurate ego-motion estimation in consumer-grade vehicles currently relies on proprioceptive sensors, i.e. wheel odometry and IMUs, whose performance is limited by systematic errors and calibration. While visual-inertial SLAM has become a standard in robotics, its integration into automotive ego-motion estimation remains largely unexplored. This paper investigates how visual SLAM can be integrated into consumer-grade vehicle localization systems to improve performance. We propose a framework that fuses visual SLAM with a lateral vehicle dynamics model to achieve online gyroscope calibration under realistic driving conditions. Experimental results demonstrate that vision-based integration significantly improves gyroscope calibration accuracy and thus enhances overall localization performance, highlighting a promising path toward higher automotive localization accuracy. We provide results on both proprietary and public datasets, showing improved performance and superior localization accuracy on a public benchmark compared to state-of-the-art methods. 
+
+**Abstract (ZH)**: 基于消费级车辆的准确自我运动估计目前依赖于本体感觉传感器，如车轮里程计和IMU，其性能受限于系统误差和校准。尽管视觉-惯性SLAM已成为机器人领域的标准技术，但在汽车自我运动估计中的集成仍较少被探索。本文探讨了如何将视觉SLAM集成到消费级车辆定位系统中以提高性能。我们提出了一种框架，将视觉SLAM与横向车辆动力学模型融合，在实际驾驶条件下实现在线陀螺仪校准。实验结果表明，基于视觉的集成显著提高了陀螺仪的校准精度，从而增强了整体定位性能，突显了一条提高汽车定位精度的有希望的道路。我们提供了在专有和公开数据集上的结果，与最先进的方法相比，在公开基准上展示了更好的定位准确性和优越的定位性能。 
+
+---
+# Real-Time LiDAR Super-Resolution via Frequency-Aware Multi-Scale Fusion 
+
+**Title (ZH)**: 基于频率意识多尺度融合的实时LiDAR超分辨率 
+
+**Authors**: June Moh Goo, Zichao Zeng, Jan Boehm  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.07377)  
+
+**Abstract**: LiDAR super-resolution addresses the challenge of achieving high-quality 3D perception from cost-effective, low-resolution sensors. While recent transformer-based approaches like TULIP show promise, they remain limited to spatial-domain processing with restricted receptive fields. We introduce FLASH (Frequency-aware LiDAR Adaptive Super-resolution with Hierarchical fusion), a novel framework that overcomes these limitations through dual-domain processing. FLASH integrates two key innovations: (i) Frequency-Aware Window Attention that combines local spatial attention with global frequency-domain analysis via FFT, capturing both fine-grained geometry and periodic scanning patterns at log-linear complexity. (ii) Adaptive Multi-Scale Fusion that replaces conventional skip connections with learned position-specific feature aggregation, enhanced by CBAM attention for dynamic feature selection. Extensive experiments on KITTI demonstrate that FLASH achieves state-of-the-art performance across all evaluation metrics, surpassing even uncertainty-enhanced baselines that require multiple forward passes. Notably, FLASH outperforms TULIP with Monte Carlo Dropout while maintaining single-pass efficiency, which enables real-time deployment. The consistent superiority across all distance ranges validates that our dual-domain approach effectively handles uncertainty through architectural design rather than computationally expensive stochastic inference, making it practical for autonomous systems. 
+
+**Abstract (ZH)**: LiDAR超分辨率解决低成本低分辨率传感器实现高品质3D感知的挑战：FLASH（频域意识LiDAR自适应超分辨率与分层融合）框架 
+
+---
+# Aerial Image Stitching Using IMU Data from a UAV 
+
+**Title (ZH)**: 基于无人机IMU数据的航空图像拼接 
+
+**Authors**: Selim Ahmet Iz, Mustafa Unel  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.06841)  
+
+**Abstract**: Unmanned Aerial Vehicles (UAVs) are widely used for aerial photography and remote sensing applications. One of the main challenges is to stitch together multiple images into a single high-resolution image that covers a large area. Featurebased image stitching algorithms are commonly used but can suffer from errors and ambiguities in feature detection and matching. To address this, several approaches have been proposed, including using bundle adjustment techniques or direct image alignment. In this paper, we present a novel method that uses a combination of IMU data and computer vision techniques for stitching images captured by a UAV. Our method involves several steps such as estimating the displacement and rotation of the UAV between consecutive images, correcting for perspective distortion, and computing a homography matrix. We then use a standard image stitching algorithm to align and blend the images together. Our proposed method leverages the additional information provided by the IMU data, corrects for various sources of distortion, and can be easily integrated into existing UAV workflows. Our experiments demonstrate the effectiveness and robustness of our method, outperforming some of the existing feature-based image stitching algorithms in terms of accuracy and reliability, particularly in challenging scenarios such as large displacements, rotations, and variations in camera pose. 
+
+**Abstract (ZH)**: 无人飞行器（UAV）广泛应用于航空摄影和遥感应用。主要挑战之一是将多张图像拼接成一张高分辨率的涵盖大面积的单张图像。基于特征的图像拼接算法常用但会在特征检测和匹配中遇到错误和歧义。为解决这一问题，提出了多种方法，包括使用Bundle Adjustment技术或直接图像对齐。在本文中，我们提出了一种新颖的方法，该方法结合IMU数据和计算机视觉技术来拼接UAV捕获的图像。该方法包括估计UAV在连续图像之间的位移和旋转、纠正透视失真和计算homography矩阵等步骤。随后，我们使用标准的图像拼接算法来对齐和融合图像。我们提出的方法利用了IMU数据提供的额外信息，纠正了各种失真源，并且可以轻松集成到现有的UAV工作流程中。实验结果表明，该方法的有效性和鲁棒性，特别是在大位移、大旋转和相机姿态变化等具有挑战性的场景中，其准确性与可靠性优于某些现有的基于特征的图像拼接算法。 
+
+---
+# On Accurate and Robust Estimation of 3D and 2D Circular Center: Method and Application to Camera-Lidar Calibration 
+
+**Title (ZH)**: 关于3D和2D圆心准确且 robust 的估计：方法及在相机-激光雷达标定中的应用 
+
+**Authors**: Jiajun Jiang, Xiao Hu, Wancheng Liu, Wei Jiang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.06611)  
+
+**Abstract**: Circular targets are widely used in LiDAR-camera extrinsic calibration due to their geometric consistency and ease of detection. However, achieving accurate 3D-2D circular center correspondence remains challenging. Existing methods often fail due to decoupled 3D fitting and erroneous 2D ellipse-center estimation. To address this, we propose a geometrically principled framework featuring two innovations: (i) a robust 3D circle center estimator based on conformal geometric algebra and RANSAC; and (ii) a chord-length variance minimization method to recover the true 2D projected center, resolving its dual-minima ambi- guity via homography validation or a quasi-RANSAC fallback. Evaluated on synthetic and real-world datasets, our framework significantly outperforms state-of-the-art approaches. It reduces extrinsic estimation error and enables robust calibration across diverse sensors and target types, including natural circular objects. Our code will be publicly released for reproducibility. 
+
+**Abstract (ZH)**: 圆目标因其几何一致性和易于检测而在LiDAR-相机外参标定中广泛应用。然而，准确建立3D-2D圆心对应关系仍然是一个挑战。现有方法往往因为3D拟合和2D椭圆中心估计的解耦而导致精度不高。为解决这一问题，我们提出一种基于一致几何代数和RANSAC的稳健3D圆心估算器及一种基于弦长方差最小化的二维投影中心恢复方法。该方法通过同态验证或拟RANSAC回退来解决双重最小值的歧义性。实验结果表明，该框架显著优于当前最先进的方法，提高了外参估计的准确性，并且能够在不同类型的传感器和目标上实现稳健的标定，包括自然圆目标。我们的代码将公开发布以确保可再现性。 
+
+---
+# Scalable Verification of Neural Control Barrier Functions Using Linear Bound Propagation 
+
+**Title (ZH)**: 基于线性边界传播的大规模验证神经控制屏障函数 
+
+**Authors**: Nikolaus Vertovec, Frederik Baymler Mathiesen, Thom Badings, Luca Laurenti, Alessandro Abate  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.06341)  
+
+**Abstract**: Control barrier functions (CBFs) are a popular tool for safety certification of nonlinear dynamical control systems. Recently, CBFs represented as neural networks have shown great promise due to their expressiveness and applicability to a broad class of dynamics and safety constraints. However, verifying that a trained neural network is indeed a valid CBF is a computational bottleneck that limits the size of the networks that can be used. To overcome this limitation, we present a novel framework for verifying neural CBFs based on piecewise linear upper and lower bounds on the conditions required for a neural network to be a CBF. Our approach is rooted in linear bound propagation (LBP) for neural networks, which we extend to compute bounds on the gradients of the network. Combined with McCormick relaxation, we derive linear upper and lower bounds on the CBF conditions, thereby eliminating the need for computationally expensive verification procedures. Our approach applies to arbitrary control-affine systems and a broad range of nonlinear activation functions. To reduce conservatism, we develop a parallelizable refinement strategy that adaptively refines the regions over which these bounds are computed. Our approach scales to larger neural networks than state-of-the-art verification procedures for CBFs, as demonstrated by our numerical experiments. 
+
+**Abstract (ZH)**: 基于分段线性上下界的神经网络控制障碍函数验证方法 
+
+---
+# EndoIR: Degradation-Agnostic All-in-One Endoscopic Image Restoration via Noise-Aware Routing Diffusion 
+
+**Title (ZH)**: EndoIR：基于噪声意识路由扩散的泛化端oscopic图像恢复 
+
+**Authors**: Tong Chen, Xinyu Ma, Long Bai, Wenyang Wang, Sun Yue, Luping Zhou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.05873)  
+
+**Abstract**: Endoscopic images often suffer from diverse and co-occurring degradations such as low lighting, smoke, and bleeding, which obscure critical clinical details. Existing restoration methods are typically task-specific and often require prior knowledge of the degradation type, limiting their robustness in real-world clinical use. We propose EndoIR, an all-in-one, degradation-agnostic diffusion-based framework that restores multiple degradation types using a single model. EndoIR introduces a Dual-Domain Prompter that extracts joint spatial-frequency features, coupled with an adaptive embedding that encodes both shared and task-specific cues as conditioning for denoising. To mitigate feature confusion in conventional concatenation-based conditioning, we design a Dual-Stream Diffusion architecture that processes clean and degraded inputs separately, with a Rectified Fusion Block integrating them in a structured, degradation-aware manner. Furthermore, Noise-Aware Routing Block improves efficiency by dynamically selecting only noise-relevant features during denoising. Experiments on SegSTRONG-C and CEC datasets demonstrate that EndoIR achieves state-of-the-art performance across multiple degradation scenarios while using fewer parameters than strong baselines, and downstream segmentation experiments confirm its clinical utility. 
+
+**Abstract (ZH)**: 一种泛化能力更强的端到端降噪框架：EndoIR 
+
+---
+# Improving Region Representation Learning from Urban Imagery with Noisy Long-Caption Supervision 
+
+**Title (ZH)**: 基于嘈杂长描述监督的城市遥感图像区域表示学习改进 
+
+**Authors**: Yimei Zhang, Guojiang Shen, Kaili Ning, Tongwei Ren, Xuebo Qiu, Mengmeng Wang, Xiangjie Kong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.07062)  
+
+**Abstract**: Region representation learning plays a pivotal role in urban computing by extracting meaningful features from unlabeled urban data. Analogous to how perceived facial age reflects an individual's health, the visual appearance of a city serves as its ``portrait", encapsulating latent socio-economic and environmental characteristics. Recent studies have explored leveraging Large Language Models (LLMs) to incorporate textual knowledge into imagery-based urban region representation learning. However, two major challenges remain: i)~difficulty in aligning fine-grained visual features with long captions, and ii) suboptimal knowledge incorporation due to noise in LLM-generated captions. To address these issues, we propose a novel pre-training framework called UrbanLN that improves Urban region representation learning through Long-text awareness and Noise suppression. Specifically, we introduce an information-preserved stretching interpolation strategy that aligns long captions with fine-grained visual semantics in complex urban scenes. To effectively mine knowledge from LLM-generated captions and filter out noise, we propose a dual-level optimization strategy. At the data level, a multi-model collaboration pipeline automatically generates diverse and reliable captions without human intervention. At the model level, we employ a momentum-based self-distillation mechanism to generate stable pseudo-targets, facilitating robust cross-modal learning under noisy conditions. Extensive experiments across four real-world cities and various downstream tasks demonstrate the superior performance of our UrbanLN. 
+
+**Abstract (ZH)**: 区域表示学习在城市计算中扮演着至关重要的角色，通过从未标记的城市数据中提取有意义的特征。类比于感知的面部年龄反映个体的健康状况，城市的视觉外观作为其“肖像”，蕴含着潜在的社会经济和环境特征。近期研究探索了利用大型语言模型（LLMs）将文本知识融入基于图像的城市区域表示学习中。然而，仍存在两大挑战：i) 细粒度视觉特征与长 Caption 的对齐困难，ii) 由于 LLM 生成的 Caption 中的噪声，导致知识整合的次优性。为解决这些问题，我们提出了一种名为 UrbanLN 的新型预训练框架，通过长文本感知和噪声抑制提高城市区域表示学习。具体来说，我们提出了保留信息的拉伸插值策略，以在复杂的城市场景中对齐长 Caption 和细粒度的视觉语义。为了从 LLM 生成的 Caption 中有效提取知识并过滤噪声，我们提出了一种双层优化策略。在数据层面上，一个多模型协作流水线自动生成多样且可靠的 Caption，无需人工干预。在模型层面上，我们采用了动量自蒸馏机制生成稳定的伪标签，促进在噪声条件下的稳健跨模态学习。跨四个真实城市的广泛实验和各种下游任务表明，我们的 UrbanLN 具有优越的性能。 
+
+---
+# Inference-Time Scaling of Diffusion Models for Infrared Data Generation 
+
+**Title (ZH)**: 红外数据生成的推断时缩放扩散模型 
+
+**Authors**: Kai A. Horstmann, Maxim Clouser, Kia Khezeli  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.07362)  
+
+**Abstract**: Infrared imagery enables temperature-based scene understanding using passive sensors, particularly under conditions of low visibility where traditional RGB imaging fails. Yet, developing downstream vision models for infrared applications is hindered by the scarcity of high-quality annotated data, due to the specialized expertise required for infrared annotation. While synthetic infrared image generation has the potential to accelerate model development by providing large-scale, diverse training data, training foundation-level generative diffusion models in the infrared domain has remained elusive due to limited datasets. In light of such data constraints, we explore an inference-time scaling approach using a domain-adapted CLIP-based verifier for enhanced infrared image generation quality. We adapt FLUX.1-dev, a state-of-the-art text-to-image diffusion model, to the infrared domain by finetuning it on a small sample of infrared images using parameter-efficient techniques. The trained verifier is then employed during inference to guide the diffusion sampling process toward higher quality infrared generations that better align with input text prompts. Empirically, we find that our approach leads to consistent improvements in generation quality, reducing FID scores on the KAIST Multispectral Pedestrian Detection Benchmark dataset by 10% compared to unguided baseline samples. Our results suggest that inference-time guidance offers a promising direction for bridging the domain gap in low-data infrared settings. 
+
+**Abstract (ZH)**: 红外成像利用被动传感器实现基于温度的场景理解，特别是在低能见度条件下，传统RGB成像失效的情况。然而，由于需要专门的红外标注 expertise，开发针对红外应用的下游视觉模型受到了高质量标注数据稀缺的阻碍。尽管合成红外图像生成有可能通过提供大规模、多样化的训练数据来加速模型开发，但在红外领域的基础生成扩散模型训练仍因数据集有限而难以实现。鉴于数据约束，我们探索了一种推理时缩放方法，利用一个领域适应的CLIP基验真器来提高红外图像生成质量。我们通过参数效率技术对FLUX.1-dev这一最先进的文本到图像扩散模型进行微调，使其适用于红外领域。训练后的验真器随后在推理过程中用于引导扩散采样过程，产生与输入文本提示更好地对齐的高质量红外生成结果。实验结果显示，我们的方法在生成质量上持续改善，与未指导基线样本相比，将KAIST多光谱行人检测基准数据集上的FID分数降低了10%。我们的结果表明，在低数据红外设置中，推理时的指导为弥合领域差距提供了有前景的方向。 
+
+---
+# Beyond Boundaries: Leveraging Vision Foundation Models for Source-Free Object Detection 
+
+**Title (ZH)**: 超越界限：利用视觉基础模型进行无源目标检测 
+
+**Authors**: Huizai Yao, Sicheng Zhao, Pengteng Li, Yi Cui, Shuo Lu, Weiyu Guo, Yunfan Lu, Yijie Xu, Hui Xiong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.07301)  
+
+**Abstract**: Source-Free Object Detection (SFOD) aims to adapt a source-pretrained object detector to a target domain without access to source data. However, existing SFOD methods predominantly rely on internal knowledge from the source model, which limits their capacity to generalize across domains and often results in biased pseudo-labels, thereby hindering both transferability and discriminability. In contrast, Vision Foundation Models (VFMs), pretrained on massive and diverse data, exhibit strong perception capabilities and broad generalization, yet their potential remains largely untapped in the SFOD setting. In this paper, we propose a novel SFOD framework that leverages VFMs as external knowledge sources to jointly enhance feature alignment and label quality. Specifically, we design three VFM-based modules: (1) Patch-weighted Global Feature Alignment (PGFA) distills global features from VFMs using patch-similarity-based weighting to enhance global feature transferability; (2) Prototype-based Instance Feature Alignment (PIFA) performs instance-level contrastive learning guided by momentum-updated VFM prototypes; and (3) Dual-source Enhanced Pseudo-label Fusion (DEPF) fuses predictions from detection VFMs and teacher models via an entropy-aware strategy to yield more reliable supervision. Extensive experiments on six benchmarks demonstrate that our method achieves state-of-the-art SFOD performance, validating the effectiveness of integrating VFMs to simultaneously improve transferability and discriminability. 
+
+**Abstract (ZH)**: 无源域对象检测（Source-Free Object Detection, SFOD）旨在不访问源数据的情况下，将源自预训练的对象检测器适应目标域。然而，现有的SFOD方法主要依赖源模型内部的知识，这限制了其跨域泛化能力，并往往导致有偏的伪标签，从而阻碍了其可迁移性和可判别性。相比之下，视觉基础模型（Visual Foundation Models, VFMs）在大量多样化的数据上进行预训练，展示了强大的感知能力及广泛的泛化能力，但在SFOD场景中的潜力尚未充分利用。在本文中，我们提出了一种新的SFOD框架，利用VFMs作为外部知识源，共同增强特征对齐和标签质量。具体地，我们设计了三个基于VFMs的模块：（1）基于块相似性的全局特征对齐（Patch-weighted Global Feature Alignment, PGFA）通过块相似性加权提取全局特征，增强全球特征的可迁移性；（2）基于原型的实例特征对齐（Prototype-based Instance Feature Alignment, PIFA）通过由动量更新的VFM原型指导的实例级对比学习进行特征对齐；（3）双源增强伪标签融合（Dual-source Enhanced Pseudo-label Fusion, DEPF）通过一种熵感知策略融合检测VFMs和教师模型的预测，以生成更可靠监督。在六个基准上的广泛实验表明，我们的方法在SFOD性能上达到了最先进的水平，证明了集成VFMs以同时改善可迁移性和可判别性的有效性。 
+
+---
+# Glioma C6: A Novel Dataset for Training and Benchmarking Cell Segmentation 
+
+**Title (ZH)**: 胶质瘤C6：一种用于细胞分割训练和基准测试的新数据集 
+
+**Authors**: Roman Malashin, Svetlana Pashkevich, Daniil Ilyukhin, Arseniy Volkov, Valeria Yachnaya, Andrey Denisov, Maria Mikhalkova  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.07286)  
+
+**Abstract**: We present Glioma C6, a new open dataset for instance segmentation of glioma C6 cells, designed as both a benchmark and a training resource for deep learning models. The dataset comprises 75 high-resolution phase-contrast microscopy images with over 12,000 annotated cells, providing a realistic testbed for biomedical image analysis. It includes soma annotations and morphological cell categorization provided by biologists. Additional categorization of cells, based on morphology, aims to enhance the utilization of image data for cancer cell research. Glioma C6 consists of two parts: the first is curated with controlled parameters for benchmarking, while the second supports generalization testing under varying conditions. We evaluate the performance of several generalist segmentation models, highlighting their limitations on our dataset. Our experiments demonstrate that training on Glioma C6 significantly enhances segmentation performance, reinforcing its value for developing robust and generalizable models. The dataset is publicly available for researchers. 
+
+**Abstract (ZH)**: Glioma C6：用于胶质瘤C6细胞实例分割的新开源数据集及训练资源 
+
+---
+# Leveraging Text-Driven Semantic Variation for Robust OOD Segmentation 
+
+**Title (ZH)**: 基于文本驱动的语义变化实现稳健的OOD分割 
+
+**Authors**: Seungheon Song, Jaekoo Lee  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.07238)  
+
+**Abstract**: In autonomous driving and robotics, ensuring road safety and reliable decision-making critically depends on out-of-distribution (OOD) segmentation. While numerous methods have been proposed to detect anomalous objects on the road, leveraging the vision-language space-which provides rich linguistic knowledge-remains an underexplored field. We hypothesize that incorporating these linguistic cues can be especially beneficial in the complex contexts found in real-world autonomous driving scenarios.
+To this end, we present a novel approach that trains a Text-Driven OOD Segmentation model to learn a semantically diverse set of objects in the vision-language space. Concretely, our approach combines a vision-language model's encoder with a transformer decoder, employs Distance-Based OOD prompts located at varying semantic distances from in-distribution (ID) classes, and utilizes OOD Semantic Augmentation for OOD representations. By aligning visual and textual information, our approach effectively generalizes to unseen objects and provides robust OOD segmentation in diverse driving environments.
+We conduct extensive experiments on publicly available OOD segmentation datasets such as Fishyscapes, Segment-Me-If-You-Can, and Road Anomaly datasets, demonstrating that our approach achieves state-of-the-art performance across both pixel-level and object-level evaluations. This result underscores the potential of vision-language-based OOD segmentation to bolster the safety and reliability of future autonomous driving systems. 
+
+**Abstract (ZH)**: 在自主驾驶与机器人领域，确保道路安全和可靠的决策制定关键依赖于离分布（OOD）分割。虽然已提出了许多方法来检测道路上的异常物体，但利用视觉-语言空间——提供了丰富的语言知识——这一领域仍被严重忽视。我们假设，在现实世界自主驾驶场景中发现的复杂环境中，整合这些语言线索可以特别有益。
+
+为此，我们提出了一种新的方法，通过训练文本驱动的OOD分割模型，在视觉-语言空间中学习语义多样的对象。具体而言，我们的方法将视觉-语言模型的编码器与变压器解码器相结合，使用基于距离的OOD提示，这些提示位于与分布（ID）类别不同语义距离的位置，并利用OOD语义增强来获取OOD表示。通过对视觉和文本信息进行对齐，我们的方法能够有效泛化到未见过的对象，并在多种驾驶环境中提供稳健的OOD分割。
+
+我们在Fishyscapes、Segment-Me-If-You-Can和Road Anomaly等公开的数据集上进行了广泛的实验，证明我们的方法在像素级和对象级评估中均达到了最先进的性能。这一结果突显了基于视觉-语言的OOD分割在未来自主驾驶系统中的潜力。 
+
+---
+# Federated Learning for Video Violence Detection: Complementary Roles of Lightweight CNNs and Vision-Language Models for Energy-Efficient Use 
+
+**Title (ZH)**: 基于 federated learning 的视频暴力检测：轻量级CNN和视觉语言模型在能量高效利用中的互补作用 
+
+**Authors**: Sébastien Thuau, Siba Haidar, Rachid Chelouah  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.07171)  
+
+**Abstract**: Deep learning-based video surveillance increasingly demands privacy-preserving architectures with low computational and environmental overhead. Federated learning preserves privacy but deploying large vision-language models (VLMs) introduces major energy and sustainability challenges. We compare three strategies for federated violence detection under realistic non-IID splits on the RWF-2000 and RLVS datasets: zero-shot inference with pretrained VLMs, LoRA-based fine-tuning of LLaVA-NeXT-Video-7B, and personalized federated learning of a 65.8M-parameter 3D CNN. All methods exceed 90% accuracy in binary violence detection. The 3D CNN achieves superior calibration (ROC AUC 92.59%) at roughly half the energy cost (240 Wh vs. 570 Wh) of federated LoRA, while VLMs provide richer multimodal reasoning. Hierarchical category grouping (based on semantic similarity and class exclusion) boosts VLM multiclass accuracy from 65.31% to 81% on the UCF-Crime dataset. To our knowledge, this is the first comparative simulation study of LoRA-tuned VLMs and personalized CNNs for federated violence detection, with explicit energy and CO2e quantification. Our results inform hybrid deployment strategies that default to efficient CNNs for routine inference and selectively engage VLMs for complex contextual reasoning. 
+
+**Abstract (ZH)**: 基于深度学习的视频监控越来越需求低计算和环境负载的隐私保护架构。联邦学习可保护隐私，但部署大型视觉-语言模型（VLMs）引入了重大能源和可持续性挑战。我们在RWF-2000和RLVS数据集上比较了联邦暴力检测的三种策略：零样本推理与预训练VLMs、基于LoRA的LLaVA-NeXT-Video-7B微调以及65.8M参数的个性化3D CNN联邦学习。所有方法在二分类暴力检测中的准确率均超过90%。3D CNN在约一半的能耗（240 Wh vs. 570 Wh）下实现了更好的校准（ROC AUC 92.59%），而VLMs提供了更丰富的跨模态推理。基于语义相似性和类别排除的分层类别分组在UCF-Crime数据集上的VLM多分类准确率从65.31%提升到81%。据我们所知，这是首次对LoRA调优的VLMs和个性化CNNs进行的联邦暴力检测比较模拟研究，明确量化了能耗和CO2e排放。我们的结果提供了混合部署策略的指导，对于常规推理默认使用高效CNNs，并在需要复杂上下文推理时选择性地使用VLMs。 
+
+---
+# How Bias Binds: Measuring Hidden Associations for Bias Control in Text-to-Image Compositions 
+
+**Title (ZH)**: 偏差如何关联：测量隐藏关联以控制文本到图像合成中的偏差 
+
+**Authors**: Jeng-Lin Li, Ming-Ching Chang, Wei-Chao Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.07091)  
+
+**Abstract**: Text-to-image generative models often exhibit bias related to sensitive attributes. However, current research tends to focus narrowly on single-object prompts with limited contextual diversity. In reality, each object or attribute within a prompt can contribute to bias. For example, the prompt "an assistant wearing a pink hat" may reflect female-inclined biases associated with a pink hat. The neglected joint effects of the semantic binding in the prompts cause significant failures in current debiasing approaches. This work initiates a preliminary investigation on how bias manifests under semantic binding, where contextual associations between objects and attributes influence generative outcomes. We demonstrate that the underlying bias distribution can be amplified based on these associations. Therefore, we introduce a bias adherence score that quantifies how specific object-attribute bindings activate bias. To delve deeper, we develop a training-free context-bias control framework to explore how token decoupling can facilitate the debiasing of semantic bindings. This framework achieves over 10% debiasing improvement in compositional generation tasks. Our analysis of bias scores across various attribute-object bindings and token decorrelation highlights a fundamental challenge: reducing bias without disrupting essential semantic relationships. These findings expose critical limitations in current debiasing approaches when applied to semantically bound contexts, underscoring the need to reassess prevailing bias mitigation strategies. 
+
+**Abstract (ZH)**: 基于文本生成图像的模型常常表现出与敏感属性相关的偏差。然而，当前研究倾向于狭隘地关注单一对象提示，缺乏上下文多样性。实际上，提示中的每个对象或属性都可以导致偏差。例如，提示“戴着粉色帽子的助手”可能反映了与粉色帽子相关的女性倾向偏差。被忽视的提示中语义绑定的联合效应导致当前去偏方法的显著失败。本文初步探讨了语义绑定下偏差的表现，其中对象和属性之间的上下文关联影响生成结果。我们证明了基于这些关联，潜在的偏差分布可能会放大。因此，我们提出了一个偏差遵从度评分，以量化特定对象-属性绑定激活偏差的程度。为进一步探索，我们开发了一种无需训练的上下文偏差控制框架，以探讨词元解耦如何促进语义绑定的去偏性。该框架在组合生成任务中的去偏性改进超过10%。我们对不同属性-对象绑定和词元解耦的偏评分分析揭示了一个基本的挑战：在不破坏关键语义关系的情况下减少偏差。这些发现表明，当应用于语义绑定上下文时，当前的去偏方法存在重要的局限性，强调了重新评估现有偏差缓解策略的必要性。 
+
+---
+# Pandar128 dataset for lane line detection 
+
+**Title (ZH)**: Pandar128数据集用于车道线检测 
+
+**Authors**: Filip Beránek, Václav Diviš, Ivan Gruber  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.07084)  
+
+**Abstract**: We present Pandar128, the largest public dataset for lane line detection using a 128-beam LiDAR. It contains over 52,000 camera frames and 34,000 LiDAR scans, captured in diverse real-world conditions in Germany. The dataset includes full sensor calibration (intrinsics, extrinsics) and synchronized odometry, supporting tasks such as projection, fusion, and temporal modeling.
+To complement the dataset, we also introduce SimpleLidarLane, a light-weight baseline method for lane line reconstruction that combines BEV segmentation, clustering, and polyline fitting. Despite its simplicity, our method achieves strong performance under challenging various conditions (e.g., rain, sparse returns), showing that modular pipelines paired with high-quality data and principled evaluation can compete with more complex approaches.
+Furthermore, to address the lack of standardized evaluation, we propose a novel polyline-based metric - Interpolation-Aware Matching F1 (IAM-F1) - that employs interpolation-aware lateral matching in BEV space.
+All data and code are publicly released to support reproducibility in LiDAR-based lane detection. 
+
+**Abstract (ZH)**: 我们介绍了Pandar128，这是用于车道线检测的最大公共数据集，基于一个具有128束激光的LiDAR。该数据集包含超过52,000帧相机图像和34,000个LiDAR扫描数据，这些数据在德国多种真实-world条件下采集。数据集包括完整的传感器校准（内参、外参）和同步的里程计信息，支持投影、融合和时间建模等任务。
+
+为补充该数据集，我们还引入了SimpleLidarLane，这是一种轻量级的车道线重建基线方法，结合了BEV分割、聚类和多段线拟合。尽管方法简单，但在多种挑战性条件下（如雨天、稀疏返回点）仍能表现出色，显示出模块化流程与高质量数据和原则性评估相结合可以与更复杂的方法竞争。
+
+此外，为解决标准评估缺乏的问题，我们提出了一种新的基于多段线的评估指标——插值感知匹配F1（IAM-F1），该指标在BEV空间中采用插值感知横向匹配。
+
+所有数据和代码均已公开发布，以支持基于LiDAR的车道检测的可重复性。 
+
+---
+# TauFlow: Dynamic Causal Constraint for Complexity-Adaptive Lightweight Segmentation 
+
+**Title (ZH)**: TauFlow：动态因果约束下的复杂性自适应轻量级分割 
+
+**Authors**: Zidong Chen, Fadratul Hafinaz Hassan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.07057)  
+
+**Abstract**: Deploying lightweight medical image segmentation models on edge devices presents two major challenges: 1) efficiently handling the stark contrast between lesion boundaries and background regions, and 2) the sharp drop in accuracy that occurs when pursuing extremely lightweight designs (e.g., <0.5M parameters). To address these problems, this paper proposes TauFlow, a novel lightweight segmentation model. The core of TauFlow is a dynamic feature response strategy inspired by brain-like mechanisms. This is achieved through two key innovations: the Convolutional Long-Time Constant Cell (ConvLTC), which dynamically regulates the feature update rate to "slowly" process low-frequency backgrounds and "quickly" respond to high-frequency boundaries; and the STDP Self-Organizing Module, which significantly mitigates feature conflicts between the encoder and decoder, reducing the conflict rate from approximately 35%-40% to 8%-10%. 
+
+**Abstract (ZH)**: 在边缘设备上部署轻量级医疗图像分割模型面临两大挑战：1) 有效处理病灶边界与背景区域之间的强烈对比；2) 追求极为轻量级设计（例如，参数少于0.5M）时准确率急剧下降。为解决这些问题，本文提出TauFlow，一种新颖的轻量级分割模型。TauFlow的核心是一种受脑类机制启发的动态特征响应策略，通过两个关键创新实现：卷积长时常数细胞（ConvLTC），动态调节特征更新速率以“缓慢”处理低频背景并“快速”响应高频边界；以及STDP自我组织模块，显著缓解编码器与解码器之间的特征冲突，将冲突率从约35%-40%降低至8%-10%。 
+
+---
+# TrueCity: Real and Simulated Urban Data for Cross-Domain 3D Scene Understanding 
+
+**Title (ZH)**: TrueCity: 真实与模拟城市数据在跨域3D场景理解中的应用 
+
+**Authors**: Duc Nguyen, Yan-Ling Lai, Qilin Zhang, Prabin Gyawali, Benedikt Schwab, Olaf Wysocki, Thomas H. Kolbe  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.07007)  
+
+**Abstract**: 3D semantic scene understanding remains a long-standing challenge in the 3D computer vision community. One of the key issues pertains to limited real-world annotated data to facilitate generalizable models. The common practice to tackle this issue is to simulate new data. Although synthetic datasets offer scalability and perfect labels, their designer-crafted scenes fail to capture real-world complexity and sensor noise, resulting in a synthetic-to-real domain gap. Moreover, no benchmark provides synchronized real and simulated point clouds for segmentation-oriented domain shift analysis. We introduce TrueCity, the first urban semantic segmentation benchmark with cm-accurate annotated real-world point clouds, semantic 3D city models, and annotated simulated point clouds representing the same city. TrueCity proposes segmentation classes aligned with international 3D city modeling standards, enabling consistent evaluation of synthetic-to-real gap. Our extensive experiments on common baselines quantify domain shift and highlight strategies for exploiting synthetic data to enhance real-world 3D scene understanding. We are convinced that the TrueCity dataset will foster further development of sim-to-real gap quantification and enable generalizable data-driven models. The data, code, and 3D models are available online: this https URL 
+
+**Abstract (ZH)**: 三维语义场景理解仍然是3D计算机视觉领域长期存在的挑战。其中一个关键问题是如何获取足够的标注数据以促进泛化模型的建立。常见的解决方法是模拟新的数据。尽管合成数据集具有可扩展性和完美的标签，但其设计者构思的场景无法捕捉真实世界场景的复杂性和传感器噪声，导致合成到真实场景的领域差异。此外，没有基准提供同步的真实和模拟点云数据，用于分割导向的领域转移分析。我们引入了TrueCity，这是首个具有厘米级精确标注的真实世界点云的城市语义分割基准，包含语义3D城市模型和代表同一城市的标注模拟点云。TrueCity提出了与国际3D城市建模标准对齐的分割类别，使得合成到真实场景差异的评估更加一致。我们在常见基准上的大量实验量化了领域转移，并突显了利用合成数据以增强真实世界3D场景理解的策略。我们坚信TrueCity数据集将促进合成到现实差距量化的发展，并促进泛化数据驱动模型的进一步发展。数据、代码和3D模型已在线发布：this https URL。 
+
+---
+# FoCLIP: A Feature-Space Misalignment Framework for CLIP-Based Image Manipulation and Detection 
+
+**Title (ZH)**: FoCLIP：一种基于特征空间错配的CLIP驱动图像处理与检测框架 
+
+**Authors**: Yulin Chen, Zeyuan Wang, Tianyuan Yu, Yingmei Wei, Liang Bai  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.06947)  
+
+**Abstract**: The well-aligned attribute of CLIP-based models enables its effective application like CLIPscore as a widely adopted image quality assessment metric. However, such a CLIP-based metric is vulnerable for its delicate multimodal alignment. In this work, we propose \textbf{FoCLIP}, a feature-space misalignment framework for fooling CLIP-based image quality metric. Based on the stochastic gradient descent technique, FoCLIP integrates three key components to construct fooling examples: feature alignment as the core module to reduce image-text modality gaps, the score distribution balance module and pixel-guard regularization, which collectively optimize multimodal output equilibrium between CLIPscore performance and image quality. Such a design can be engineered to maximize the CLIPscore predictions across diverse input prompts, despite exhibiting either visual unrecognizability or semantic incongruence with the corresponding adversarial prompts from human perceptual perspectives. Experiments on ten artistic masterpiece prompts and ImageNet subsets demonstrate that optimized images can achieve significant improvement in CLIPscore while preserving high visual fidelity. In addition, we found that grayscale conversion induces significant feature degradation in fooling images, exhibiting noticeable CLIPscore reduction while preserving statistical consistency with original images. Inspired by this phenomenon, we propose a color channel sensitivity-driven tampering detection mechanism that achieves 91% accuracy on standard benchmarks. In conclusion, this work establishes a practical pathway for feature misalignment in CLIP-based multimodal systems and the corresponding defense method. 
+
+**Abstract (ZH)**: 基于CLIP的特征空间错配框架FoCLIP：欺骗CLIP图像质量评估指标 
+
+---
+# From Attribution to Action: Jointly ALIGNing Predictions and Explanations 
+
+**Title (ZH)**: 从归因到行动：联合优化预测与解释 
+
+**Authors**: Dongsheng Hong, Chao Chen, Yanhui Chen, Shanshan Lin, Zhihao Chen, Xiangwen Liao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.06944)  
+
+**Abstract**: Explanation-guided learning (EGL) has shown promise in aligning model predictions with interpretable reasoning, particularly in computer vision tasks. However, most approaches rely on external annotations or heuristic-based segmentation to supervise model explanations, which can be noisy, imprecise and difficult to scale. In this work, we provide both empirical and theoretical evidence that low-quality supervision signals can degrade model performance rather than improve it. In response, we propose ALIGN, a novel framework that jointly trains a classifier and a masker in an iterative manner. The masker learns to produce soft, task-relevant masks that highlight informative regions, while the classifier is optimized for both prediction accuracy and alignment between its saliency maps and the learned masks. By leveraging high-quality masks as guidance, ALIGN improves both interpretability and generalizability, showing its superiority across various settings. Experiments on the two domain generalization benchmarks, VLCS and Terra Incognita, show that ALIGN consistently outperforms six strong baselines in both in-distribution and out-of-distribution settings. Besides, ALIGN also yields superior explanation quality concerning sufficiency and comprehensiveness, highlighting its effectiveness in producing accurate and interpretable models. 
+
+**Abstract (ZH)**: 基于解释指导的学习（EGL）在使模型预测与可解释的推理相一致方面显示出潜力，特别是在计算机视觉任务中。然而，大多数方法依赖于外部注释或基于启发式的分割来监督模型解释，这可能导致监督信号质量低下，不精确且难以扩展。在此工作中，我们提供了实证和理论证据，表明低质量的监督信号会损害模型性能，而非提升其性能。为此，我们提出了一种新颖的框架ALIGN，该框架以迭代方式联合训练分类器和掩码器。掩码器学习生成与任务相关、软化的掩码以突出显示信息区域，同时分类器被优化以最大化预测准确性和其显著图与学到的掩码之间的对齐性。通过利用高质量的掩码作为指导，ALIGN提高了可解释性和泛化能力，展示了其在各种环境中的优越性。在两个领域泛化基准VLCS和Terra Incognita上的实验表明，ALIGN在分布内和分布外设置中均优于六个强大的基线模型。此外，ALIGN在解释的充分性和全面性方面也表现出更优的质量，突出了其在生成准确且可解释模型方面的有效性。 
+
+---
+# Deep learning EPI-TIRF cross-modality enables background subtraction and axial super-resolution for widefield fluorescence microscopy 
+
+**Title (ZH)**: 深度学习EPI-TIRF跨模态技术实现宽场荧光显微镜的背景消除和轴向超分辨 
+
+**Authors**: Qiushi Li, Celi Lou, Yanfang Cheng, Bilang Gong, Xinlin Chen, Hao Chen, Baowan Li, Jieli Wang, Yulin Wang, Sipeng Yang, Yunqing Tang, Luru Dai  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.06853)  
+
+**Abstract**: The resolving ability of wide-field fluorescence microscopy is fundamentally limited by out-of-focus background owing to its low axial resolution, particularly for densely labeled biological samples. To address this, we developed ET2dNet, a deep learning-based EPI-TIRF cross-modality network that achieves TIRF-comparable background subtraction and axial super-resolution from a single wide-field image without requiring hardware modifications. The model employs a physics-informed hybrid architecture, synergizing supervised learning with registered EPI-TIRF image pairs and self-supervised physical modeling via convolution with the point spread function. This framework ensures exceptional generalization across microscope objectives, enabling few-shot adaptation to new imaging setups. Rigorous validation on cellular and tissue samples confirms ET2dNet's superiority in background suppression and axial resolution enhancement, while maintaining compatibility with deconvolution techniques for lateral resolution improvement. Furthermore, by extending this paradigm through knowledge distillation, we developed ET3dNet, a dedicated three-dimensional reconstruction network that produces artifact-reduced volumetric results. ET3dNet effectively removes out-of-focus background signals even when the input image stack lacks the source of background. This framework makes axial super-resolution imaging more accessible by providing an easy-to-deploy algorithm that avoids additional hardware costs and complexity, showing great potential for live cell studies and clinical histopathology. 
+
+**Abstract (ZH)**: 基于深度学习的EPI-TIRF跨模态网络ET2dNet：单张宽场图像的三维背景减除与轴向超分辨 
+
+---
+# TiS-TSL: Image-Label Supervised Surgical Video Stereo Matching via Time-Switchable Teacher-Student Learning 
+
+**Title (ZH)**: TiS-TSL：基于时间可切换教师-学生学习的图像标签监督手术视频立体匹配 
+
+**Authors**: Rui Wang, Ying Zhou, Hao Wang, Wenwei Zhang, Qiang Li, Zhiwei Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.06817)  
+
+**Abstract**: Stereo matching in minimally invasive surgery (MIS) is essential for next-generation navigation and augmented reality. Yet, dense disparity supervision is nearly impossible due to anatomical constraints, typically limiting annotations to only a few image-level labels acquired before the endoscope enters deep body cavities. Teacher-Student Learning (TSL) offers a promising solution by leveraging a teacher trained on sparse labels to generate pseudo labels and associated confidence maps from abundant unlabeled surgical videos. However, existing TSL methods are confined to image-level supervision, providing only spatial confidence and lacking temporal consistency estimation. This absence of spatio-temporal reliability results in unstable disparity predictions and severe flickering artifacts across video frames. To overcome these challenges, we propose TiS-TSL, a novel time-switchable teacher-student learning framework for video stereo matching under minimal supervision. At its core is a unified model that operates in three distinct modes: Image-Prediction (IP), Forward Video-Prediction (FVP), and Backward Video-Prediction (BVP), enabling flexible temporal modeling within a single architecture. Enabled by this unified model, TiS-TSL adopts a two-stage learning strategy. The Image-to-Video (I2V) stage transfers sparse image-level knowledge to initialize temporal modeling. The subsequent Video-to-Video (V2V) stage refines temporal disparity predictions by comparing forward and backward predictions to calculate bidirectional spatio-temporal consistency. This consistency identifies unreliable regions across frames, filters noisy video-level pseudo labels, and enforces temporal coherence. Experimental results on two public datasets demonstrate that TiS-TSL exceeds other image-based state-of-the-arts by improving TEPE and EPE by at least 2.11% and 4.54%, respectively.. 
+
+**Abstract (ZH)**: 最小侵入手术（MIS）中的立体匹配对于下一代导航和增强现实至关重要。然而，由于解剖限制，密集的视差监督几乎是不可能的，通常仅限于内窥镜进入深部腔体前获取的少量图像级标签。通过利用在稀疏标签上训练的教师生成伪标签及其相应的置信图，教师-学生学习（TSL）提供了一种有前景的解决方案，可以从大量未标记的手术视频中获取。然而，现有的TSL方法局限于图像级监督，只能提供空间置信度，缺乏时间一致性估计。这种时空可靠性缺失导致了不稳定的视差预测和严重的视频帧间闪烁伪影。为克服这些挑战，我们提出了TiS-TSL，一种针对最少监督下的视频立体匹配的新型时间切换教师-学生学习框架。其核心是一个统一模型，在三种不同模式下运行：图像预测（IP）、前向视频预测（FVP）和后向视频预测（BVP），在单一架构中实现灵活的时间建模。基于这一统一模型，TiS-TSL采用了两阶段学习策略。图像到视频（I2V）阶段将稀疏的图像级知识转移以初始化时间建模。随后的视频到视频（V2V）阶段通过比较前向和后向预测来计算双向时空一致性，从而细化时间视差预测。这种一致性识别了帧间不可靠区域，过滤掉噪声的视频级伪标签，并强制执行时间一致性和连贯性。在两个公开数据集上的实验结果表明，TiS-TSL在提高TEPE和EPE方面超过了其他基于图像的状态-of-the-arts方法，分别提高了至少2.11%和4.54%。 
+
+---
+# Diagnosing and Breaking Amplitude Suppression in Seismic Phase Picking Through Adversarial Shape Learning 
+
+**Title (ZH)**: 通过对抗形状学习诊断与打破地震相拾波中的振幅抑制 
+
+**Authors**: Chun-Ming Huang, Li-Heng Chang, I-Hsin Chang, An-Sheng Lee, Hao Kuo-Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.06731)  
+
+**Abstract**: Deep learning has revolutionized seismic phase picking, yet a paradox persists: high signal-to-noise S-wave predictions consistently fail to cross detection thresholds, oscillating at suppressed amplitudes. We identify this previously unexplained phenomenon as amplitude suppression, which we diagnose through analyzing training histories and loss landscapes. Three interacting factors emerge: S-wave onsets exhibit high temporal uncertainty relative to high-amplitude boundaries; CNN's bias toward sharp amplitude changes anchors predictions to these boundaries rather than subtle onsets; and point-wise Binary Cross-Entropy (BCE) loss lacks lateral corrective forces, providing only vertical gradients that suppress amplitude while temporal gaps persist. This geometric trap points to a shape-then-align solution where stable geometric templates must precede temporal alignment. We implement this through a conditional GAN framework by augmenting conventional BCE training with a discriminator that enforces shape constraints. Training for 10,000 steps, this achieves a 64% increase in effective S-phase detections. Our framework autonomously discovers target geometry without a priori assumptions, offering a generalizable solution for segmentation tasks requiring precise alignment of subtle features near dominant structures. 
+
+**Abstract (ZH)**: 深度学习已 revolutionized 地震相 Arrival 识别，却存在一个悖论：高信噪比 S 波预测常未能越过检测阈值，以抑制振幅 oscillating。我们通过分析训练历史和损失景观识别出这一先前未解释的现象为振幅抑制。三个相互作用的因素浮现：S 波起始表现出与高振幅边界相比的高时域不确定性；CNN 对尖锐振幅变化的偏好将预测锚定在这些边界而不是微小起始处；以及点对点二元交叉熵 (BCE) 损失缺乏横向校正力，仅提供垂直梯度以抑制振幅同时时域间断持续存在。这种几何陷阱指向一种 shape-then-align 解决方案，其中稳定几何模板必须先于时域对齐。我们通过在常规 BCE 训练中加入一个约束形状的判别器实现此目的，框架在 10,000 步训练后实现了有效 S 相检测 64% 的提升。我们的框架无需先验假设即可自主发现目标几何形态，提供了一种适用于需要精确对齐近主导结构的细微特征的分割任务的通用解决方案。 
+
+---
+# MirrorMamba: Towards Scalable and Robust Mirror Detection in Videos 
+
+**Title (ZH)**: 镜像飞虫：面向视频中可扩展且 robust 的镜像检测 
+
+**Authors**: Rui Song, Jiaying Lin, Rynson W.H. Lau  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.06716)  
+
+**Abstract**: Video mirror detection has received significant research attention, yet existing methods suffer from limited performance and robustness. These approaches often over-rely on single, unreliable dynamic features, and are typically built on CNNs with limited receptive fields or Transformers with quadratic computational complexity. To address these limitations, we propose a new effective and scalable video mirror detection method, called MirrorMamba. Our approach leverages multiple cues to adapt to diverse conditions, incorporating perceived depth, correspondence and optical. We also introduce an innovative Mamba-based Multidirection Correspondence Extractor, which benefits from the global receptive field and linear complexity of the emerging Mamba spatial state model to effectively capture correspondence properties. Additionally, we design a Mamba-based layer-wise boundary enforcement decoder to resolve the unclear boundary caused by the blurred depth map. Notably, this work marks the first successful application of the Mamba-based architecture in the field of mirror detection. Extensive experiments demonstrate that our method outperforms existing state-of-the-art approaches for video mirror detection on the benchmark datasets. Furthermore, on the most challenging and representative image-based mirror detection dataset, our approach achieves state-of-the-art performance, proving its robustness and generalizability. 
+
+**Abstract (ZH)**: 基于Mamba的视频镜像检测方法 
+
+---
+# Zooming into Comics: Region-Aware RL Improves Fine-Grained Comic Understanding in Vision-Language Models 
+
+**Title (ZH)**: 聚焦漫画：区域aware的RL提高视觉语言模型对漫画的细粒度理解 
+
+**Authors**: Yule Chen, Yufan Ren, Sabine Süsstrunk  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.06490)  
+
+**Abstract**: Complex visual narratives, such as comics, present a significant challenge to Vision-Language Models (VLMs). Despite excelling on natural images, VLMs often struggle with stylized line art, onomatopoeia, and densely packed multi-panel layouts. To address this gap, we introduce AI4VA-FG, the first fine-grained and comprehensive benchmark for VLM-based comic understanding. It spans tasks from foundational recognition and detection to high-level character reasoning and narrative construction, supported by dense annotations for characters, poses, and depth. Beyond that, we evaluate state-of-the-art proprietary models, including GPT-4o and Gemini-2.5, and open-source models such as Qwen2.5-VL, revealing substantial performance deficits across core tasks of our benchmarks and underscoring that comic understanding remains an unsolved challenge. To enhance VLMs' capabilities in this domain, we systematically investigate post-training strategies, including supervised fine-tuning on solutions (SFT-S), supervised fine-tuning on reasoning trajectories (SFT-R), and reinforcement learning (RL). Beyond that, inspired by the emerging "Thinking with Images" paradigm, we propose Region-Aware Reinforcement Learning (RARL) for VLMs, which trains models to dynamically attend to relevant regions through zoom-in operations. We observe that when applied to the Qwen2.5-VL model, RL and RARL yield significant gains in low-level entity recognition and high-level storyline ordering, paving the way for more accurate and efficient VLM applications in the comics domain. 
+
+**Abstract (ZH)**: 复杂的视觉叙事，如漫画，给视觉语言模型（VLMs）带来了重大挑战。尽管在自然图像上表现出色，VLMs在处理风格化线稿、拟声词和密集的多面板布局时经常遇到困难。为了解决这一差距，我们引入了AI4VA-FG，这是首个针对基于VLM的漫画理解的细粒度和综合基准。它涵盖了从基础识别和检测到高级角色推理和叙事构建的任务，配有密集的注释，包括角色、姿态和深度信息。此外，我们评估了最先进的私有模型（包括GPT-4o和Gemini-2.5）和开源模型（如Qwen2.5-VL），揭示了在我们基准的核心任务上存在显著性能缺陷，突显了漫画理解仍然是一个未解之谜。为了增强VLMs在此领域的功能，我们系统地探讨了后训练策略，包括基于解决方案的监督微调（SFT-S）、基于推理轨迹的监督微调（SFT-R）和强化学习（RL）。此外，受到新兴的“图像思维”范式的启发，我们为VLMs提出了区域意识强化学习（RARL）方法，通过缩放操作使模型能够动态关注相关区域。我们发现，当应用于Qwen2.5-VL模型时，RL和RARL在低级实体识别和高级故事情节排序方面取得了显著进步，为在漫画领域实现更准确和高效的VLM应用铺平了道路。 
+
+---
+# On Modality Incomplete Infrared-Visible Object Detection: An Architecture Compatibility Perspective 
+
+**Title (ZH)**: 红外-可见光物体检测中模态不完整问题：从架构兼容性视角探讨 
+
+**Authors**: Shuo Yang, Yinghui Xing, Shizhou Zhang, Zhilong Niu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.06406)  
+
+**Abstract**: Infrared and visible object detection (IVOD) is essential for numerous around-the-clock applications. Despite notable advancements, current IVOD models exhibit notable performance declines when confronted with incomplete modality data, particularly if the dominant modality is missing. In this paper, we take a thorough investigation on modality incomplete IVOD problem from an architecture compatibility perspective. Specifically, we propose a plug-and-play Scarf Neck module for DETR variants, which introduces a modality-agnostic deformable attention mechanism to enable the IVOD detector to flexibly adapt to any single or double modalities during training and inference. When training Scarf-DETR, we design a pseudo modality dropout strategy to fully utilize the multi-modality information, making the detector compatible and robust to both working modes of single and double modalities. Moreover, we introduce a comprehensive benchmark for the modality-incomplete IVOD task aimed at thoroughly assessing situations where the absent modality is either dominant or secondary. Our proposed Scarf-DETR not only performs excellently in missing modality scenarios but also achieves superior performances on the standard IVOD modality complete benchmarks. Our code will be available at this https URL. 
+
+**Abstract (ZH)**: 红外与可见光物体检测（IVOD）对于众多全天候应用至关重要。尽管取得了显著进展，但目前的IVOD模型在面对不完整模态数据时表现出明显的性能下降，尤其是在主要模态缺失的情况下。在本文中，我们从架构兼容性的角度对不完整模态IVOD问题进行了彻底的研究。具体地，我们为DETR变体提出了一个即插即用的Scarf Neck模块，该模块引入了一种模态无关的可变形注意力机制，使IVOD检测器能够在训练和推断过程中灵活适应单一或双模态数据。在训练Scarf-DETR时，我们设计了一种伪模态dropout策略，充分利用多模态信息，使检测器能够兼容并 robust 于单一和双模态工作模式。此外，我们引入了一个全面的基准测试，用于彻底评估主要模态缺失或次要模态缺失的情况。我们的Scarf-DETR不仅在模态缺失场景中表现出色，还在标准IVOD完整模态基准测试中取得了优异性能。我们的代码将在此网址获取：this https URL。 
+
+---
+# GazeVLM: A Vision-Language Model for Multi-Task Gaze Understanding 
+
+**Title (ZH)**: GazeVLM：多任务目光理解的视觉-语言模型 
+
+**Authors**: Athul M. Mathew, Haithem Hermassi, Thariq Khalid, Arshad Ali Khan, Riad Souissi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.06348)  
+
+**Abstract**: Gaze understanding unifies the detection of people, their gaze targets, and objects of interest into a single framework, offering critical insight into visual attention and intent estimation. Although prior research has modelled gaze cues in visual scenes, a unified system is still needed for gaze understanding using both visual and language prompts. This paper introduces GazeVLM, a novel Vision-Language Model (VLM) for multi-task gaze understanding in images, addressing person detection, gaze target detection, and gaze object identification. While other transformer-based methods exist for gaze analysis, GazeVLM represents, to our knowledge, the first application of a VLM to these combined tasks, allowing for selective execution of each task. Through the integration of visual (RGB and depth) and textual modalities, our ablation study on visual input combinations revealed that a fusion of RGB images with HHA-encoded depth maps, guided by text prompts, yields superior performance. We also introduce an object-level gaze detection metric for gaze object identification ($AP_{ob}$). Through experiments, GazeVLM demonstrates significant improvements, notably achieving state-of-the-art evaluation scores on GazeFollow and VideoAttentionTarget datasets. 
+
+**Abstract (ZH)**: 凝视理解将人员检测、凝视目标检测和兴趣对象识别统一于单一框架，为视觉注意力和意图估计提供了关键洞察。尽管 prior research 已对视觉场景中的凝视线索进行了建模，但仍然需要综合利用视觉和语言提示的统一系统来进行凝视理解。本文介绍了一种新型的视觉-语言模型 (VLM)——GazeVLM，用于图像中的多任务凝视理解，包括人员检测、凝视目标检测和凝视对象识别。尽管存在其他基于变压器的方法来进行凝视分析，但据我们所知，GazeVLM 是首次将 VLM 应用于这些综合任务，允许针对每个任务进行选择性执行。通过结合视觉（RGB 和深度）和文本模态，我们的消融研究发现了 RGB 图像与由文本提示引导的 HHA 编码深度图融合在视觉输入组合中的优异性能。我们还引入了一种基于对象级别的凝视检测度量（$AP_{ob}$）用于凝视对象识别。通过实验，GazeVLM 在 GazeFollow 和 VideoAttentionTarget 数据集上取得了显著改善，并达到了最先进的评估分数。 
+
+---
+# CINEMAE: Leveraging Frozen Masked Autoencoders for Cross-Generator AI Image Detection 
+
+**Title (ZH)**: CINEMAE：利用冻结的遮蔽自编码器进行跨生成器AI图像检测 
+
+**Authors**: Minsuk Jang, Hyeonseo Jeong, Minseok Son, Changick Kim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.06325)  
+
+**Abstract**: While context-based detectors have achieved strong generalization for AI-generated text by measuring distributional inconsistencies, image-based detectors still struggle with overfitting to generator-specific artifacts. We introduce CINEMAE, a novel paradigm for AIGC image detection that adapts the core principles of text detection methods to the visual domain. Our key insight is that Masked AutoEncoder (MAE), trained to reconstruct masked patches conditioned on visible context, naturally encodes semantic consistency expectations. We formalize this reconstruction process probabilistically, computing conditional Negative Log-Likelihood (NLL, p(masked | visible)) to quantify local semantic anomalies. By aggregating these patch-level statistics with global MAE features through learned fusion, CINEMAE achieves strong cross-generator generalization. Trained exclusively on Stable Diffusion v1.4, our method achieves over 95% accuracy on all eight unseen generators in the GenImage benchmark, substantially outperforming state-of-the-art detectors. This demonstrates that context-conditional reconstruction uncertainty provides a robust, transferable signal for AIGC detection. 
+
+**Abstract (ZH)**: 基于上下文的检测器通过衡量分布不一致性已在AI生成文本领域实现了强大的泛化能力，而基于图像的检测器仍然难以克服对生成器特定_artifacts_的过拟合问题。我们提出了CINEMA-E，一种将文本检测方法的核心原则适应视觉域的新范式。我们的关键洞察是，经过训练以在可见上下文中重建遮罩补丁的Masked AutoEncoder（MAE）自然地编码了语义一致性期望。我们将这一重建过程形式化为概率计算，通过计算条件负对数似然（NLL，p(遮罩 | 可见)）来量化局部语义异常。通过学习融合局部MAE特征与全局特征，CINEMA-E实现了强大的跨生成器泛化能力。仅在Stable Diffusion v1.4上训练，我们的方法在GenImage基准测试中的所有八个未见过的生成器上取得了超过95%的准确率，显著优于最先进的检测器。这表明，上下文条件重建不确定性为AI生成内容检测提供了一种稳健且可转移的信号。 
+
+---
+# LaneDiffusion: Improving Centerline Graph Learning via Prior Injected BEV Feature Generation 
+
+**Title (ZH)**: LaneDiffusion: 通过先验注入BEV特征生成提高中心线图学习 
+
+**Authors**: Zijie Wang, Weiming Zhang, Wei Zhang, Xiao Tan, Hongxing Liu, Yaowei Wang, Guanbin Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.06272)  
+
+**Abstract**: Centerline graphs, crucial for path planning in autonomous driving, are traditionally learned using deterministic methods. However, these methods often lack spatial reasoning and struggle with occluded or invisible centerlines. Generative approaches, despite their potential, remain underexplored in this domain. We introduce LaneDiffusion, a novel generative paradigm for centerline graph learning. LaneDiffusion innovatively employs diffusion models to generate lane centerline priors at the Bird's Eye View (BEV) feature level, instead of directly predicting vectorized centerlines. Our method integrates a Lane Prior Injection Module (LPIM) and a Lane Prior Diffusion Module (LPDM) to effectively construct diffusion targets and manage the diffusion process. Furthermore, vectorized centerlines and topologies are then decoded from these prior-injected BEV features. Extensive evaluations on the nuScenes and Argoverse2 datasets demonstrate that LaneDiffusion significantly outperforms existing methods, achieving improvements of 4.2%, 4.6%, 4.7%, 6.4% and 1.8% on fine-grained point-level metrics (GEO F1, TOPO F1, JTOPO F1, APLS and SDA) and 2.3%, 6.4%, 6.8% and 2.1% on segment-level metrics (IoU, mAP_cf, DET_l and TOP_ll). These results establish state-of-the-art performance in centerline graph learning, offering new insights into generative models for this task. 
+
+**Abstract (ZH)**: LaneDiffusion：Bird's Eye View特征级别的扩散模型用于车道中心线图的学习 
+
+---
+# MambaOVSR: Multiscale Fusion with Global Motion Modeling for Chinese Opera Video Super-Resolution 
+
+**Title (ZH)**: MambaOVSR：融合多尺度全局运动建模的中国戏曲视频超分辨率技术 
+
+**Authors**: Hua Chang, Xin Xu, Wei Liu, Wei Wang, Xin Yuan, Kui Jiang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.06172)  
+
+**Abstract**: Chinese opera is celebrated for preserving classical art. However, early filming equipment limitations have degraded videos of last-century performances by renowned artists (e.g., low frame rates and resolution), hindering archival efforts. Although space-time video super-resolution (STVSR) has advanced significantly, applying it directly to opera videos remains challenging. The scarcity of datasets impedes the recovery of high frequency details, and existing STVSR methods lack global modeling capabilities, compromising visual quality when handling opera's characteristic large motions. To address these challenges, we pioneer a large scale Chinese Opera Video Clip (COVC) dataset and propose the Mamba-based multiscale fusion network for space-time Opera Video Super-Resolution (MambaOVSR). Specifically, MambaOVSR involves three novel components: the Global Fusion Module (GFM) for motion modeling through a multiscale alternating scanning mechanism, and the Multiscale Synergistic Mamba Module (MSMM) for alignment across different sequence lengths. Additionally, our MambaVR block resolves feature artifacts and positional information loss during alignment. Experimental results on the COVC dataset show that MambaOVSR significantly outperforms the SOTA STVSR method by an average of 1.86 dB in terms of PSNR. Dataset and Code will be publicly released. 
+
+**Abstract (ZH)**: 中国戏曲：大规模中国戏曲视频剪辑数据集及Mamba基多尺度融合网络的空间时间超级分辨率（MambaOVSR） 
+
+---
+# Referring Expressions as a Lens into Spatial Language Grounding in Vision-Language Models 
+
+**Title (ZH)**: 引用表达作为空间语言 grounding 在多模态语言视觉模型中的一个视角 
+
+**Authors**: Akshar Tumu, Varad Shinde, Parisa Kordjamshidi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.06146)  
+
+**Abstract**: Spatial Reasoning is an important component of human cognition and is an area in which the latest Vision-language models (VLMs) show signs of difficulty. The current analysis works use image captioning tasks and visual question answering. In this work, we propose using the Referring Expression Comprehension task instead as a platform for the evaluation of spatial reasoning by VLMs. This platform provides the opportunity for a deeper analysis of spatial comprehension and grounding abilities when there is 1) ambiguity in object detection, 2) complex spatial expressions with a longer sentence structure and multiple spatial relations, and 3) expressions with negation ('not'). In our analysis, we use task-specific architectures as well as large VLMs and highlight their strengths and weaknesses in dealing with these specific situations. While all these models face challenges with the task at hand, the relative behaviors depend on the underlying models and the specific categories of spatial semantics (topological, directional, proximal, etc.). Our results highlight these challenges and behaviors and provide insight into research gaps and future directions. 
+
+**Abstract (ZH)**: 空间推理是人类认知的重要组成部分，是最新视觉-语言模型（VLMs）表现出困难的领域。当前的研究主要使用图像 captioning 任务和视觉问答。在本项工作中，我们提议使用引用表达理解任务作为评估 VLMs 空间推理能力的平台。该平台提供了在以下情况对空间理解与定位能力进行更深入分析的机会：1）物体检测的歧义性，2）复杂的空间表达和较长的句结构以及多种空间关系，3）带有否定词（not）的表达。在我们的分析中，我们使用了任务特定的架构和大规模的 VLMs，并强调了它们在这些特定情况下的优势和不足。虽然所有这些模型在处理该任务时都面临挑战，但它们的相对行为取决于底层模型和特定的空间语义类别（拓扑性的、方向性的、近距离的等）。我们研究的结果突显了这些挑战和行为，并为未来的研究提供了一定的见解和方向。 
+
+---
+# Hybrid CNN-ViT Framework for Motion-Blurred Scene Text Restoration 
+
+**Title (ZH)**: Hybrid CNN-ViT框架在运动模糊场景文本恢复中的应用 
+
+**Authors**: Umar Rashid, Muhammad Arslan Arshad, Ghulam Ahmad, Muhammad Zeeshan Anjum, Rizwan Khan, Muhammad Akmal  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.06087)  
+
+**Abstract**: Motion blur in scene text images severely impairs readability and hinders the reliability of computer vision tasks, including autonomous driving, document digitization, and visual information retrieval. Conventional deblurring approaches are often inadequate in handling spatially varying blur and typically fall short in modeling the long-range dependencies necessary for restoring textual clarity. To overcome these limitations, we introduce a hybrid deep learning framework that combines convolutional neural networks (CNNs) with vision transformers (ViTs), thereby leveraging both local feature extraction and global contextual reasoning. The architecture employs a CNN-based encoder-decoder to preserve structural details, while a transformer module enhances global awareness through self-attention. Training is conducted on a curated dataset derived from TextOCR, where sharp scene-text samples are paired with synthetically blurred versions generated using realistic motion-blur kernels of multiple sizes and orientations. Model optimization is guided by a composite loss that incorporates mean absolute error (MAE), squared error (MSE), perceptual similarity, and structural similarity (SSIM). Quantitative eval- uations show that the proposed method attains 32.20 dB in PSNR and 0.934 in SSIM, while remaining lightweight with 2.83 million parameters and an average inference time of 61 ms. These results highlight the effectiveness and computational efficiency of the CNN-ViT hybrid design, establishing its practicality for real-world motion-blurred scene-text restoration. 
+
+**Abstract (ZH)**: 场景文本图像中的运动模糊严重削弱了可读性，并妨碍了自动驾驶、文档数字化和视觉信息检索等计算机视觉任务的可靠性。为克服这些限制，我们提出了一种结合卷积神经网络（CNN）和视觉变换器（ViT）的混合深度学习框架，从而利用局部特征提取和全局上下文推理。该架构采用基于CNN的编码-解码器保留结构细节，而变换器模块通过自注意力增强全局意识。模型在从TextOCR derivated数据集中训练，该数据集包含与多种大小和方向的真实运动模糊内核生成的合成模糊版本配对的清晰场景文本样本。模型优化由综合损失引导，该损失包括均绝对误差（MAE）、平方误差（MSE）、感知相似性和结构相似性（SSIM）。定量评估显示，所提出的方法在PSNR上达到32.20 dB，在SSIM上达到0.934，同时保持轻量化，参数量为283万，平均推断时间为61 ms。这些结果突显了CNN-ViT混合设计的有效性和计算效率，证明了其在现实世界运动模糊场景文本恢复中的实用性。 
+
+---
+# S2ML: Spatio-Spectral Mutual Learning for Depth Completion 
+
+**Title (ZH)**: S2ML：空谱互学习的深度完成 
+
+**Authors**: Zihui Zhao, Yifei Zhang, Zheng Wang, Yang Li, Kui Jiang, Zihan Geng, Chia-Wen Lin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.06033)  
+
+**Abstract**: The raw depth images captured by RGB-D cameras using Time-of-Flight (TOF) or structured light often suffer from incomplete depth values due to weak reflections, boundary shadows, and artifacts, which limit their applications in downstream vision tasks. Existing methods address this problem through depth completion in the image domain, but they overlook the physical characteristics of raw depth images. It has been observed that the presence of invalid depth areas alters the frequency distribution pattern. In this work, we propose a Spatio-Spectral Mutual Learning framework (S2ML) to harmonize the advantages of both spatial and frequency domains for depth completion. Specifically, we consider the distinct properties of amplitude and phase spectra and devise a dedicated spectral fusion module. Meanwhile, the local and global correlations between spatial-domain and frequency-domain features are calculated in a unified embedding space. The gradual mutual representation and refinement encourage the network to fully explore complementary physical characteristics and priors for more accurate depth completion. Extensive experiments demonstrate the effectiveness of our proposed S2ML method, outperforming the state-of-the-art method CFormer by 0.828 dB and 0.834 dB on the NYU-Depth V2 and SUN RGB-D datasets, respectively. 
+
+**Abstract (ZH)**: 基于时空谱互学的深度补全框架（S2ML）： harmonic融合时空域优势实现深度补全 
+
+---
+# MiVID: Multi-Strategic Self-Supervision for Video Frame Interpolation using Diffusion Model 
+
+**Title (ZH)**: MiVID：多策略自监督方法在扩散模型下的视频帧插值 
+
+**Authors**: Priyansh Srivastava, Romit Chatterjee, Abir Sen, Aradhana Behura, Ratnakar Dash  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.06019)  
+
+**Abstract**: Video Frame Interpolation (VFI) remains a cornerstone in video enhancement, enabling temporal upscaling for tasks like slow-motion rendering, frame rate conversion, and video restoration. While classical methods rely on optical flow and learning-based models assume access to dense ground-truth, both struggle with occlusions, domain shifts, and ambiguous motion. This article introduces MiVID, a lightweight, self-supervised, diffusion-based framework for video interpolation. Our model eliminates the need for explicit motion estimation by combining a 3D U-Net backbone with transformer-style temporal attention, trained under a hybrid masking regime that simulates occlusions and motion uncertainty. The use of cosine-based progressive masking and adaptive loss scheduling allows our network to learn robust spatiotemporal representations without any high-frame-rate supervision. Our framework is evaluated on UCF101-7 and DAVIS-7 datasets. MiVID is trained entirely on CPU using the datasets and 9-frame video segments, making it a low-resource yet highly effective pipeline. Despite these constraints, our model achieves optimal results at just 50 epochs, competitive with several supervised this http URL work demonstrates the power of self-supervised diffusion priors for temporally coherent frame synthesis and provides a scalable path toward accessible and generalizable VFI systems. 
+
+**Abstract (ZH)**: 视频帧插值（VFI）仍然是视频增强的核心技术，能够在慢动作渲染、帧率转换和视频恢复等任务中实现时间上的放大。尽管经典方法依赖于光流法，基于学习的模型假定可获得密集的_ground-truth_，两者都难以处理遮挡、领域漂移和模糊运动。本文介绍了MiVID，一种轻量级、自监督、基于扩散的视频插值框架。我们的模型通过结合3D U-Net主干和类似变压器的时域注意力机制，采用模拟遮挡和运动不确定性的混合遮挡训练方式，消除了显式运动估计的需要。基于余弦分布的渐进式遮挡和自适应损失调度使网络能够在无需高帧率监督的情况下学习稳健的时空表示。本文在UCF101-7和DAVIS-7数据集上评估了该框架。MiVID完全在CPU上使用这些数据集和9帧视频片段进行训练，成为一个低资源但高效的流水线。尽管存在这些限制，我们的模型在仅仅50个epoch后就达到了最优结果，与多种监督学习方法具有竞争力。该工作展示了自监督扩散先验在时空一致帧合成中的强大能力，并提供了一条通往可访问和通用的视频帧插值系统的可扩展路径。 
+
+---
+# Adaptive Agent Selection and Interaction Network for Image-to-point cloud Registration 
+
+**Title (ZH)**: 自适应代理选择与交互网络在图像到点云注册中的应用 
+
+**Authors**: Zhixin Cheng, Xiaotian Yin, Jiacheng Deng, Bohao Liao, Yujia Chen, Xu Zhou, Baoqun Yin, Tianzhu Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.05965)  
+
+**Abstract**: Typical detection-free methods for image-to-point cloud registration leverage transformer-based architectures to aggregate cross-modal features and establish correspondences. However, they often struggle under challenging conditions, where noise disrupts similarity computation and leads to incorrect correspondences. Moreover, without dedicated designs, it remains difficult to effectively select informative and correlated representations across modalities, thereby limiting the robustness and accuracy of registration. To address these challenges, we propose a novel cross-modal registration framework composed of two key modules: the Iterative Agents Selection (IAS) module and the Reliable Agents Interaction (RAI) module. IAS enhances structural feature awareness with phase maps and employs reinforcement learning principles to efficiently select reliable agents. RAI then leverages these selected agents to guide cross-modal interactions, effectively reducing mismatches and improving overall robustness. Extensive experiments on the RGB-D Scenes v2 and 7-Scenes benchmarks demonstrate that our method consistently achieves state-of-the-art performance. 
+
+**Abstract (ZH)**: 典型的无需检测的方法通过基于变换器的架构聚合跨模态特征并建立对应关系来进行图像到点云注册。然而，这些方法在噪声干扰相似性计算并导致对应关系错误的具有挑战性的条件下往往表现不佳。此外，在没有专门设计的情况下，难以有效选择具有信息性和关联性的跨模态表示，从而限制了注册的鲁棒性和准确性。为应对这些挑战，我们提出了一种新的跨模态注册框架，包含两个关键模块：迭代代理选择（IAS）模块和可靠代理交互（RAI）模块。IAS通过使用相位图增强结构特征感知，并利用强化学习原则高效地选择可靠的代理。RAI随后利用这些选定的代理引导跨模态交互，有效减少不匹配并提高总体鲁棒性。在RGB-D Scenes v2和7-Scenes基准上的广泛实验表明，我们的方法能够一致地达到最先进的性能。 
+
+---
+# A PDE Perspective on Generative Diffusion Models 
+
+**Title (ZH)**: 生成扩散模型的偏微分方程视角 
+
+**Authors**: Kang Liu, Enrique Zuazua  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.05940)  
+
+**Abstract**: Score-based diffusion models have emerged as a powerful class of generative methods, achieving state-of-the-art performance across diverse domains. Despite their empirical success, the mathematical foundations of those models remain only partially understood, particularly regarding the stability and consistency of the underlying stochastic and partial differential equations governing their dynamics.
+In this work, we develop a rigorous partial differential equation (PDE) framework for score-based diffusion processes. Building on the Li--Yau differential inequality for the heat flow, we prove well-posedness and derive sharp $L^p$-stability estimates for the associated score-based Fokker--Planck dynamics, providing a mathematically consistent description of their temporal evolution. Through entropy stability methods, we further show that the reverse-time dynamics of diffusion models concentrate on the data manifold for compactly supported data distributions and a broad class of initialization schemes, with a concentration rate of order $\sqrt{t}$ as $t \to 0$.
+These results yield a theoretical guarantee that, under exact score guidance, diffusion trajectories return to the data manifold while preserving imitation fidelity. Our findings also provide practical insights for designing diffusion models, including principled criteria for score-function construction, loss formulation, and stopping-time selection. Altogether, this framework provides a quantitative understanding of the trade-off between generative capacity and imitation fidelity, bridging rigorous analysis and model design within a unified mathematical perspective. 
+
+**Abstract (ZH)**: 基于分数的扩散模型 telah发展成为一种强大的生成方法，在多个领域取得了最先进的性能。尽管这些模型在实践中取得了成功，但其背后的数学基础仍只部分被理解，尤其是在关于指导其动态的随机和偏微分方程的稳定性和一致性方面。
+
+在本文中，我们构建了一个严格的偏微分方程（PDE）框架来描述基于分数的扩散过程。基于Li-Yau热流的微分不等式，我们证明了相关分数驱动的Fokker-Planck动力学的适定性，并推导出尖锐的$L^p$稳定性估计，提供了一个从数学上一致地描述其时间演化的方法。通过熵稳定性方法，我们进一步证明，在紧支数据分布和广泛类别的初始化方案下，反向时间动力学将扩散模型聚集在数据流形上，聚集速率为$\sqrt{t}$当$t \to 0$。
+
+这些结果为在准确分数引导下，扩散轨迹返回数据流形并保持仿真是提供了理论保障。我们的发现还为设计扩散模型提供了实用见解，包括分数函数构建、损失函数形式化和停止时间选择的准则。总体而言，这一框架为生成能力和仿真的权衡提供了定量理解，统一了严谨分析和模型设计的数学视角。 
+
+---
+# CoMA: Complementary Masking and Hierarchical Dynamic Multi-Window Self-Attention in a Unified Pre-training Framework 
+
+**Title (ZH)**: CoMA: 统一预训练框架下的互补遮掩与分层动态多窗口自注意力机制 
+
+**Authors**: Jiaxuan Li, Qing Xu, Xiangjian He, Ziyu Liu, Chang Xing, Zhen Chen, Daokun Zhang, Rong Qu, Chang Wen Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.05929)  
+
+**Abstract**: Masked Autoencoders (MAE) achieve self-supervised learning of image representations by randomly removing a portion of visual tokens and reconstructing the original image as a pretext task, thereby significantly enhancing pretraining efficiency and yielding excellent adaptability across downstream tasks. However, MAE and other MAE-style paradigms that adopt random masking generally require more pre-training epochs to maintain adaptability. Meanwhile, ViT in MAE suffers from inefficient parameter use due to fixed spatial resolution across layers. To overcome these limitations, we propose the Complementary Masked Autoencoders (CoMA), which employ a complementary masking strategy to ensure uniform sampling across all pixels, thereby improving effective learning of all features and enhancing the model's adaptability. Furthermore, we introduce DyViT, a hierarchical vision transformer that employs a Dynamic Multi-Window Self-Attention (DM-MSA), significantly reducing the parameters and FLOPs while improving fine-grained feature learning. Pre-trained on ImageNet-1K with CoMA, DyViT matches the downstream performance of MAE using only 12% of the pre-training epochs, demonstrating more effective learning. It also attains a 10% reduction in pre-training time per epoch, further underscoring its superior pre-training efficiency. 
+
+**Abstract (ZH)**: 互补掩蔽自编码器（CoMA）通过采用互补掩蔽策略确保均匀采样所有像素，从而提高所有特征的有效学习并增强模型的适应性。进一步引入动态多窗口自注意力（DM-MSA）的层级视觉变换器（DyViT），显著减少参数量和FLOPs，同时提高细粒度特征学习能力。使用CoMA预训练在ImageNet-1K上的DyViT，仅需MAE 12%的预训练 epoch 即能达到相同的下游任务性能，展示出更有效的学习效果，并将每 epoch 的预训练时间减少10%，进一步证明了其优异的预训练效率。 
+
+---
+# Enhancing Diffusion Model Guidance through Calibration and Regularization 
+
+**Title (ZH)**: 通过校准和正则化增强扩散模型指导 
+
+**Authors**: Seyed Alireza Javid, Amirhossein Bagheri, Nuria González-Prelcic  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.05844)  
+
+**Abstract**: Classifier-guided diffusion models have emerged as a powerful approach for conditional image generation, but they suffer from overconfident predictions during early denoising steps, causing the guidance gradient to vanish. This paper introduces two complementary contributions to address this issue. First, we propose a differentiable calibration objective based on the Smooth Expected Calibration Error (Smooth ECE), which improves classifier calibration with minimal fine-tuning and yields measurable improvements in Frechet Inception Distance (FID). Second, we develop enhanced sampling guidance methods that operate on off-the-shelf classifiers without requiring retraining. These include tilted sampling with batch-level reweighting, adaptive entropy-regularized sampling to preserve diversity, and a novel f-divergence-based sampling strategy that strengthens class-consistent guidance while maintaining mode coverage. Experiments on ImageNet 128x128 demonstrate that our divergence-regularized guidance achieves an FID of 2.13 using a ResNet-101 classifier, improving upon existing classifier-guided diffusion methods while requiring no diffusion model retraining. The results show that principled calibration and divergence-aware sampling provide practical and effective improvements for classifier-guided diffusion. 
+
+**Abstract (ZH)**: 基于分类器指导的动力学模型差分方法在条件图像生成中展现出强大的能力，但它们在早期去噪步骤中会产生过于自信的预测，导致指导梯度消失。本文提出了两种互补的贡献以解决这一问题。首先，我们提出了一种基于平滑期望校准误差（Smooth ECE）的可微校准目标，该目标在最少微调的情况下改善分类器校准，并在弗雷切尔 inception 距离（FID）上取得可测量的改进。其次，我们开发了增强的采样指导方法，这些方法不需要重新训练即可应用于现成的分类器。这些方法包括带有批次级重权的倾斜采样、适应性熵正则化采样以保持多样性，以及一种新的基于 f-散度的采样策略，该策略增强了类内一致的指导并保持模式覆盖。ImageNet 128x128 上的实验显示，我们的散度正则化指导在使用 ResNet-101 分类器时达到了 2.13 的 FID，优于现有的分类器指导动力学方法，且无需重新训练生成模型。结果表明，合理的校准和散度意识采样为分类器指导动力学提供了实用且有效的改进。 
+
+---
+# Understanding Cross Task Generalization in Handwriting-Based Alzheimer's Screening via Vision Language Adaptation 
+
+**Title (ZH)**: 基于手写的手semantic记忆衰退跨任务泛化理解 via 视知觉语言适应 
+
+**Authors**: Changqing Gong, Huafeng Qin, Mounim A. El-Yacoubi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.05841)  
+
+**Abstract**: Alzheimer's disease is a prevalent neurodegenerative disorder for which early detection is critical. Handwriting-often disrupted in prodromal AD-provides a non-invasive and cost-effective window into subtle motor and cognitive decline. Existing handwriting-based AD studies, mostly relying on online trajectories and hand-crafted features, have not systematically examined how task type influences diagnostic performance and cross-task generalization. Meanwhile, large-scale vision language models have demonstrated remarkable zero or few-shot anomaly detection in natural images and strong adaptability across medical modalities such as chest X-ray and brain MRI. However, handwriting-based disease detection remains largely unexplored within this paradigm. To close this gap, we introduce a lightweight Cross-Layer Fusion Adapter framework that repurposes CLIP for handwriting-based AD screening. CLFA implants multi-level fusion adapters within the visual encoder to progressively align representations toward handwriting-specific medical cues, enabling prompt-free and efficient zero-shot inference. Using this framework, we systematically investigate cross-task generalization-training on a specific handwriting task and evaluating on unseen ones-to reveal which task types and writing patterns most effectively discriminate AD. Extensive analyses further highlight characteristic stroke patterns and task-level factors that contribute to early AD identification, offering both diagnostic insights and a benchmark for handwriting-based cognitive assessment. 
+
+**Abstract (ZH)**: 阿尔茨海默病是一种常见的神经退行性疾病，早期检测至关重要。书写能力—在轻度认知障碍前期常受到影响—提供了一种无创且成本效益高的途径，用于洞察细微的运动和认知衰退。现有的基于书写行为的阿尔茨海默病研究主要依赖于在线轨迹和手工设计的特征，尚未系统地探讨任务类型对诊断性能和跨任务泛化的影响。同时，大规模的视觉语言模型在自然图像的零样本或少样本异常检测中取得了显著成果，并在胸部X光和脑MRI等医学成像领域展现了强大的适应能力。然而，基于书写行为的疾病检测在这个范式下仍很少被探索。为弥补这一空白，我们提出了一种轻量级的跨层融合适配器框架，重新利用CLIP进行基于书写的阿尔茨海默病筛查。CLFA在视觉编码器中植入多层融合适配器，逐步使表示向书写特定的医学线索对齐，从而实现无提示的高效零样本推理。利用这一框架，我们系统地研究了跨任务泛化能力—在特定的书写任务上训练并在未见过的任务上评估—以揭示哪些任务类型和书写模式最有效地鉴别阿尔茨海默病。详尽的分析进一步突显了有助于早期阿尔茨海默病识别的典型笔画模式和任务层面的因素，为基于书写的认知评估提供了诊断洞察和基准。 
+
+---
+# Sign language recognition from skeletal data using graph and recurrent neural networks 
+
+**Title (ZH)**: 基于图形和循环神经网络的骨架数据手语识别 
+
+**Authors**: B. Mederos, J. Mejía, A. Medina-Reyes, Y. Espinosa-Almeyda, J. D. Díaz-Roman, I. Rodríguez-Mederos, M. Mejía-Carreon, F. Gonzalez-Lopez  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.05772)  
+
+**Abstract**: This work presents an approach for recognizing isolated sign language gestures using skeleton-based pose data extracted from video sequences. A Graph-GRU temporal network is proposed to model both spatial and temporal dependencies between frames, enabling accurate classification. The model is trained and evaluated on the AUTSL (Ankara university Turkish sign language) dataset, achieving high accuracy. Experimental results demonstrate the effectiveness of integrating graph-based spatial representations with temporal modeling, providing a scalable framework for sign language recognition. The results of this approach highlight the potential of pose-driven methods for sign language understanding. 
+
+**Abstract (ZH)**: 基于骨架数据的孤立手语手势识别方法：结合图GRU的时间网络在土耳其手语识别中的应用 
+
+---
+# Personalized Image Editing in Text-to-Image Diffusion Models via Collaborative Direct Preference Optimization 
+
+**Title (ZH)**: 基于协作直接偏好优化的个性化图像编辑在文本到图像扩散模型中 
+
+**Authors**: Connor Dunlop, Matthew Zheng, Kavana Venkatesh, Pinar Yanardag  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.05616)  
+
+**Abstract**: Text-to-image (T2I) diffusion models have made remarkable strides in generating and editing high-fidelity images from text. Yet, these models remain fundamentally generic, failing to adapt to the nuanced aesthetic preferences of individual users. In this work, we present the first framework for personalized image editing in diffusion models, introducing Collaborative Direct Preference Optimization (C-DPO), a novel method that aligns image edits with user-specific preferences while leveraging collaborative signals from like-minded individuals. Our approach encodes each user as a node in a dynamic preference graph and learns embeddings via a lightweight graph neural network, enabling information sharing across users with overlapping visual tastes. We enhance a diffusion model's editing capabilities by integrating these personalized embeddings into a novel DPO objective, which jointly optimizes for individual alignment and neighborhood coherence. Comprehensive experiments, including user studies and quantitative benchmarks, demonstrate that our method consistently outperforms baselines in generating edits that are aligned with user preferences. 
+
+**Abstract (ZH)**: 面向用户的文本到图像扩散模型个性化图像编辑框架：协作直接偏好优化(C-DPO) 
+
+---
+# Walking the Schrödinger Bridge: A Direct Trajectory for Text-to-3D Generation 
+
+**Title (ZH)**: 薛定谔桥上的行走：文本到3D生成的直接轨迹 
+
+**Authors**: Ziying Li, Xuequan Lu, Xinkui Zhao, Guanjie Cheng, Shuiguang Deng, Jianwei Yin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.05609)  
+
+**Abstract**: Recent advancements in optimization-based text-to-3D generation heavily rely on distilling knowledge from pre-trained text-to-image diffusion models using techniques like Score Distillation Sampling (SDS), which often introduce artifacts such as over-saturation and over-smoothing into the generated 3D assets. In this paper, we address this essential problem by formulating the generation process as learning an optimal, direct transport trajectory between the distribution of the current rendering and the desired target distribution, thereby enabling high-quality generation with smaller Classifier-free Guidance (CFG) values. At first, we theoretically establish SDS as a simplified instance of the Schrödinger Bridge framework. We prove that SDS employs the reverse process of an Schrödinger Bridge, which, under specific conditions (e.g., a Gaussian noise as one end), collapses to SDS's score function of the pre-trained diffusion model. Based upon this, we introduce Trajectory-Centric Distillation (TraCe), a novel text-to-3D generation framework, which reformulates the mathematically trackable framework of Schrödinger Bridge to explicitly construct a diffusion bridge from the current rendering to its text-conditioned, denoised target, and trains a LoRA-adapted model on this trajectory's score dynamics for robust 3D optimization. Comprehensive experiments demonstrate that TraCe consistently achieves superior quality and fidelity to state-of-the-art techniques. 
+
+**Abstract (ZH)**: 基于优化的文本到3D生成最近进展很大程度上依赖于通过Score Distillation Sampling (SDS)等技术从预训练的文本到图像扩散模型中提炼知识，这通常会在生成的3D资产中引入过度饱和和过度平滑等_artifacts_。本文通过将生成过程建模为在当前渲染分布与期望目标分布之间学习最优的直接传输轨迹，从而解决了这一关键问题，进而能够使用较小的Classifier-free Guidance (CFG)值实现高质量生成。首先，我们从理论上将SDS确立为Schrödinger Bridge框架的一个简化实例。我们证明了SDS实际上是Schrödinger Bridge的逆过程，在特定条件下（例如，高斯噪声作为一端）会退化为预训练扩散模型的SDS分数函数。基于此，我们引入了Trajectory-Centric Distillation (TraCe)，一种新型文本到3D生成框架，通过重新构建可数学跟踪的Schrödinger Bridge框架，明确构建从当前渲染到其文本条件下的去噪目标的扩散桥梁，并在该轨迹的得分动力学上训练一个LoRA调整模型，实现稳健的3D优化。综合实验表明，TraCe在质量与保真度方面明显优于现有最先进的技术。 
+
+---
+# Google-MedGemma Based Abnormality Detection in Musculoskeletal radiographs 
+
+**Title (ZH)**: 基于Google-MedGemma的肌骨放射影像异常检测 
+
+**Authors**: Soumyajit Maity, Pranjal Kamboj, Sneha Maity, Rajat Singh, Sankhadeep Chatterjee  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.05600)  
+
+**Abstract**: This paper proposes a MedGemma-based framework for automatic abnormality detection in musculoskeletal radiographs. Departing from conventional autoencoder and neural network pipelines, the proposed method leverages the MedGemma foundation model, incorporating a SigLIP-derived vision encoder pretrained on diverse medical imaging modalities. Preprocessed X-ray images are encoded into high-dimensional embeddings using the MedGemma vision backbone, which are subsequently passed through a lightweight multilayer perceptron for binary classification. Experimental assessment reveals that the MedGemma-driven classifier exhibits strong performance, exceeding conventional convolutional and autoencoder-based metrics. Additionally, the model leverages MedGemma's transfer learning capabilities, enhancing generalization and optimizing feature engineering. The integration of a modern medical foundation model not only enhances representation learning but also facilitates modular training strategies such as selective encoder block unfreezing for efficient domain adaptation. The findings suggest that MedGemma-powered classification systems can advance clinical radiograph triage by providing scalable and accurate abnormality detection, with potential for broader applications in automated medical image analysis.
+Keywords: Google MedGemma, MURA, Medical Image, Classification. 
+
+**Abstract (ZH)**: 基于MedGemma的框架在骨肌肉放射影像中自动检测异常的研究 
+
+---
+# Video Text Preservation with Synthetic Text-Rich Videos 
+
+**Title (ZH)**: 视频中合成富文本信息的文本保留 
+
+**Authors**: Ziyang Liu, Kevin Valencia, Justin Cui  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.05573)  
+
+**Abstract**: While Text-To-Video (T2V) models have advanced rapidly, they continue to struggle with generating legible and coherent text within videos. In particular, existing models often fail to render correctly even short phrases or words and previous attempts to address this problem are computationally expensive and not suitable for video generation. In this work, we investigate a lightweight approach to improve T2V diffusion models using synthetic supervision. We first generate text-rich images using a text-to-image (T2I) diffusion model, then animate them into short videos using a text-agnostic image-to-video (I2v) model. These synthetic video-prompt pairs are used to fine-tune Wan2.1, a pre-trained T2V model, without any architectural changes. Our results show improvement in short-text legibility and temporal consistency with emerging structural priors for longer text. These findings suggest that curated synthetic data and weak supervision offer a practical path toward improving textual fidelity in T2V generation. 
+
+**Abstract (ZH)**: 虽然文本到视频（T2V）模型取得了 rapid 进展，但它们继续在生成视频中的可读性和连贯性文本方面挣扎。特别是在现有模型经常无法正确渲染甚至短语或单词的情况下，以前尝试解决这一问题的方法计算成本高且不适合视频生成。在本文中，我们研究了一种轻量级方法，通过合成监督来提高 T2V 扩散模型的表现。我们首先使用文本到图像（T2I）扩散模型生成富含文本的图像，然后使用文本无关的图像到视频（I2v）模型将它们转换成短视频。这些合成的视频提示对具有预训练 T2V 模型（Wan2.1）进行微调，无需任何架构改动。实验结果表明，在生成较长时间文本时，短文本的可读性和时间一致性有所提高，并且出现了新兴的结构先验。这些发现表明，经过精心设计的合成数据和弱监督提供了一种可行的路径，以提高 T2V 生成中的文本保真度。 
+
+---
+# In-Context Adaptation of VLMs for Few-Shot Cell Detection in Optical Microscopy 
+
+**Title (ZH)**: 基于上下文的VLMs少量标注细胞检测自适应优化在光学显微镜中的应用 
+
+**Authors**: Shreyan Ganguly, Angona Biswas, Jaydeep Rade, Md Hasibul Hasan Hasib, Nabila Masud, Nitish Singla, Abhipsa Dash, Ushashi Bhattacharjee, Aditya Balu, Anwesha Sarkar, Adarsh Krishnamurthy, Soumik Sarkar  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.05565)  
+
+**Abstract**: Foundation vision-language models (VLMs) excel on natural images, but their utility for biomedical microscopy remains underexplored. In this paper, we investigate how in-context learning enables state-of-the-art VLMs to perform few-shot object detection when large annotated datasets are unavailable, as is often the case with microscopic images. We introduce the Micro-OD benchmark, a curated collection of 252 images specifically curated for in-context learning, with bounding-box annotations spanning 11 cell types across four sources, including two in-lab expert-annotated sets. We systematically evaluate eight VLMs under few-shot conditions and compare variants with and without implicit test-time reasoning tokens. We further implement a hybrid Few-Shot Object Detection (FSOD) pipeline that combines a detection head with a VLM-based few-shot classifier, which enhances the few-shot performance of recent VLMs on our benchmark. Across datasets, we observe that zero-shot performance is weak due to the domain gap; however, few-shot support consistently improves detection, with marginal gains achieved after six shots. We observe that models with reasoning tokens are more effective for end-to-end localization, whereas simpler variants are more suitable for classifying pre-localized crops. Our results highlight in-context adaptation as a practical path for microscopy, and our benchmark provides a reproducible testbed for advancing open-vocabulary detection in biomedical imaging. 
+
+**Abstract (ZH)**: 基础视觉-语言模型（VLMs）在自然图像上表现出色，但其在生物医学显微镜成像中的应用尚未充分探索。在本文中，我们研究了上下文学习如何使最先进的VLMs在大型标注数据集不可用时，能够进行少样本对象检测。我们引入了Micro-OD基准，这是一个专门为上下文学习设计的252张图像集合，其中包含跨越四个数据源的11种细胞类型的边界框标注，包括两个实验室专家标注的数据集。我们在少样本条件下系统评估了八种VLMs，并比较了含隐式测试时推理标记和不含的变体。我们还实现了一个结合检测头部与VLM基少样本分类器的混合少样本对象检测（FSOD）管道，该管道增强了我们在基准上的最近VLMs的少样本性能。在不同数据集上，我们观察到零样本性能较弱，主要是由于领域缺口；然而，少样本支持始终提高了检测性能，六次样本后获得边际提高。我们观察到具有推理标记的模型在端到端定位方面更有效，而更简单的变体更适合分类预定位裁剪。我们的研究结果强调了上下文适应在显微镜中的实用路径，并且我们的基准提供了一个可重复的测试平台，用于促进生物医学影像中的开放词汇检测研究。 
+
+---
+# Selective Diabetic Retinopathy Screening with Accuracy-Weighted Deep Ensembles and Entropy-Guided Abstention 
+
+**Title (ZH)**: 准确度加权深度集成与熵引导的避决策在选择性糖尿病视网膜病变筛查中的应用 
+
+**Authors**: Jophy Lin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.05529)  
+
+**Abstract**: Diabetic retinopathy (DR), a microvascular complication of diabetes and a leading cause of preventable blindness, is projected to affect more than 130 million individuals worldwide by 2030. Early identification is essential to reduce irreversible vision loss, yet current diagnostic workflows rely on methods such as fundus photography and expert review, which remain costly and resource-intensive. This, combined with DR's asymptomatic nature, results in its underdiagnosis rate of approximately 25 percent. Although convolutional neural networks (CNNs) have demonstrated strong performance in medical imaging tasks, limited interpretability and the absence of uncertainty quantification restrict clinical reliability. Therefore, in this study, a deep ensemble learning framework integrated with uncertainty estimation is introduced to improve robustness, transparency, and scalability in DR detection. The ensemble incorporates seven CNN architectures-ResNet-50, DenseNet-121, MobileNetV3 (Small and Large), and EfficientNet (B0, B2, B3)- whose outputs are fused through an accuracy-weighted majority voting strategy. A probability-weighted entropy metric quantifies prediction uncertainty, enabling low-confidence samples to be excluded or flagged for additional review. Training and validation on 35,000 EyePACS retinal fundus images produced an unfiltered accuracy of 93.70 percent (F1 = 0.9376). Uncertainty-filtering later was conducted to remove unconfident samples, resulting in maximum-accuracy of 99.44 percent (F1 = 0.9932). The framework shows that uncertainty-aware, accuracy-weighted ensembling improves reliability without hindering performance. With confidence-calibrated outputs and a tunable accuracy-coverage trade-off, it offers a generalizable paradigm for deploying trustworthy AI diagnostics in high-risk care. 
+
+**Abstract (ZH)**: 糖尿病视网膜病变（DR）：糖尿病的一种微血管并发症，也是可预防失明的主要原因，预计到2030年将影响全球超过1.3亿人。早期识别对于减少不可逆视力丧失至关重要，但当前的诊断工作流程依赖于眼底摄影和专家审查等方法，这些方法仍然成本高且资源密集。结合DR无症状的特点，其未诊断率约为25%。尽管卷积神经网络（CNNs）在医学影像任务中表现出强烈性能，但由于解释性的限制和不确定性量化缺失，限制了临床可靠性。因此，在这项研究中，引入了一种结合不确定性估计的深度集成学习框架，以提高DR检测的鲁棒性、透明性和可扩展性。该集成结合了ResNet-50、DenseNet-121、MobileNetV3（Small和Large）、EfficientNet（B0、B2、B3）等七种CNN架构，并通过准确率加权多数投票策略融合输出。通过概率加权熵度量量化预测不确定性，使低置信度样本能够被排除或标记以进行额外审查。在35,000张EyePACS眼底图像上进行训练和验证，未经筛选的准确率为93.70%（F1 = 0.9376）。后续进行不确定性筛选，去除不自信样本，最终准确率为99.44%（F1 = 0.9932）。该框架表明，具有不确定性意识的准确率加权集成可以提高可靠性而不牺牲性能，同时也提供了一种通过校准输出和调节准确性和覆盖范围之间的权衡来部署可信赖AI诊断的一般化范式。 
+
+---
+# Randomized-MLP Regularization Improves Domain Adaptation and Interpretability in DINOv2 
+
+**Title (ZH)**: 随机化MLP正则化提高DINOv2的域适应性和可解释性 
+
+**Authors**: Joel Valdivia Ortega, Lorenz Lamm, Franziska Eckardt, Benedikt Schworm, Marion Jasnin, Tingying Peng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.05509)  
+
+**Abstract**: Vision Transformers (ViTs), such as DINOv2, achieve strong performance across domains but often repurpose low-informative patch tokens in ways that reduce the interpretability of attention and feature maps. This challenge is especially evident in medical imaging, where domain shifts can degrade both performance and transparency. In this paper, we introduce Randomized-MLP (RMLP) regularization, a contrastive learning-based method that encourages more semantically aligned representations. We use RMLPs when fine-tuning DINOv2 to both medical and natural image modalities, showing that it improves or maintains downstream performance while producing more interpretable attention maps. We also provide a mathematical analysis of RMLPs, offering insights into its role in enhancing ViT-based models and advancing our understanding of contrastive learning. 
+
+**Abstract (ZH)**: Vision Transformers (ViTs)，如DINOv2，在多个领域中取得了强劲的表现，但经常会重新利用低信息量的patches，从而降低注意力和特征图的可解释性。这种挑战在医学成像中尤为明显，因为领域变换可能导致性能和透明度下降。本文介绍了一种基于对比学习的正则化方法——随机MLP（RMLP）正则化，该方法鼓励更具语义对齐的表示。我们使用RMLPs对DINOv2进行微调，以适应医学和自然图像模态，结果显示其提高了或保持了下游性能，同时生成了更具可解释性的注意力图。我们还提供了RMLPs的数学分析，探讨了其在增强ViT基础模型方面的作用，并促进了我们对对比学习的理解。 
+
+---

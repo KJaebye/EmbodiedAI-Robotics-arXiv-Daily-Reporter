@@ -1,0 +1,78 @@
+# MVU-Eval: Towards Multi-Video Understanding Evaluation for Multimodal LLMs 
+
+**Title (ZH)**: MVU-Eval: 向多视频理解评估 multimodal LLMs 迈进 
+
+**Authors**: Tianhao Peng, Haochen Wang, Yuanxing Zhang, Zekun Wang, Zili Wang, Ge Zhang, Jian Yang, Shihao Li, Yanghai Wang, Xintao Wang, Houyi Li, Wei Ji, Pengfei Wan, Wenhao Huang, Zhaoxiang Zhang, Jiaheng Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.07250)  
+
+**Abstract**: The advent of Multimodal Large Language Models (MLLMs) has expanded AI capabilities to visual modalities, yet existing evaluation benchmarks remain limited to single-video understanding, overlooking the critical need for multi-video understanding in real-world scenarios (e.g., sports analytics and autonomous driving). To address this significant gap, we introduce MVU-Eval, the first comprehensive benchmark for evaluating Multi-Video Understanding for MLLMs. Specifically, our MVU-Eval mainly assesses eight core competencies through 1,824 meticulously curated question-answer pairs spanning 4,959 videos from diverse domains, addressing both fundamental perception tasks and high-order reasoning tasks. These capabilities are rigorously aligned with real-world applications such as multi-sensor synthesis in autonomous systems and cross-angle sports analytics. Through extensive evaluation of state-of-the-art open-source and closed-source models, we reveal significant performance discrepancies and limitations in current MLLMs' ability to perform understanding across multiple videos. The benchmark will be made publicly available to foster future research. 
+
+**Abstract (ZH)**: Multimodal Large Language Models的出现扩展了AI的能力至视觉模态，现有评估基准仍然局限于单视频理解，忽视了在实际场景中多视频理解的迫切需求（例如，体育分析和自动驾驶）。为解决这一重大缺口，我们介绍了MVU-Eval，这是首个全面评估MLLMs多视频理解能力的基准。具体而言，我们的MVU-Eval通过1,824个精心策划的问题-答案对评估了来自不同领域的4,959个视频的信息，涵盖了从基本感知任务到高层次推理任务的核心能力。这些能力严格对应于多传感器融合在自主系统中的实际应用以及跨视角体育分析。通过广泛评估最先进的开源和闭源模型，我们揭示了当前MLLMs在多视频理解方面表现的显著差异和局限性。该基准将公开发布，以促进未来的研究。 
+
+---
+# PlantTraitNet: An Uncertainty-Aware Multimodal Framework for Global-Scale Plant Trait Inference from Citizen Science Data 
+
+**Title (ZH)**: PlantTraitNet：一种面向公民科学数据的全球尺度植物性状推断的不确定性意识多模态框架 
+
+**Authors**: Ayushi Sharma, Johanna Trost, Daniel Lusk, Johannes Dollinger, Julian Schrader, Christian Rossi, Javier Lopatin, Etienne Laliberté, Simon Haberstroh, Jana Eichel, Daniel Mederer, Jose Miguel Cerda-Paredes, Shyam S. Phartyal, Lisa-Maricia Schwarz, Anja Linstädter, Maria Conceição Caldeira, Teja Kattenborn  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.06943)  
+
+**Abstract**: Global plant maps of plant traits, such as leaf nitrogen or plant height, are essential for understanding ecosystem processes, including the carbon and energy cycles of the Earth system. However, existing trait maps remain limited by the high cost and sparse geographic coverage of field-based measurements. Citizen science initiatives offer a largely untapped resource to overcome these limitations, with over 50 million geotagged plant photographs worldwide capturing valuable visual information on plant morphology and physiology. In this study, we introduce PlantTraitNet, a multi-modal, multi-task uncertainty-aware deep learning framework that predictsfour key plant traits (plant height, leaf area, specific leaf area, and nitrogen content) from citizen science photos using weak supervision. By aggregating individual trait predictions across space, we generate global maps of trait distributions. We validate these maps against independent vegetation survey data (sPlotOpen) and benchmark them against leading global trait products. Our results show that PlantTraitNet consistently outperforms existing trait maps across all evaluated traits, demonstrating that citizen science imagery, when integrated with computer vision and geospatial AI, enables not only scalable but also more accurate global trait mapping. This approach offers a powerful new pathway for ecological research and Earth system modeling. 
+
+**Abstract (ZH)**: 全球植物性状图谱：通过公民科学照片预测关键植物性状以理解地球系统过程 
+
+---
+# Sim4Seg: Boosting Multimodal Multi-disease Medical Diagnosis Segmentation with Region-Aware Vision-Language Similarity Masks 
+
+**Title (ZH)**: Sim4Seg: 基于区域意识视觉-语言相似性掩码提升多模态多疾病医疗诊断分割 
+
+**Authors**: Lingran Song, Yucheng Zhou, Jianbing Shen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.06665)  
+
+**Abstract**: Despite significant progress in pixel-level medical image analysis, existing medical image segmentation models rarely explore medical segmentation and diagnosis tasks jointly. However, it is crucial for patients that models can provide explainable diagnoses along with medical segmentation results. In this paper, we introduce a medical vision-language task named Medical Diagnosis Segmentation (MDS), which aims to understand clinical queries for medical images and generate the corresponding segmentation masks as well as diagnostic results. To facilitate this task, we first present the Multimodal Multi-disease Medical Diagnosis Segmentation (M3DS) dataset, containing diverse multimodal multi-disease medical images paired with their corresponding segmentation masks and diagnosis chain-of-thought, created via an automated diagnosis chain-of-thought generation pipeline. Moreover, we propose Sim4Seg, a novel framework that improves the performance of diagnosis segmentation by taking advantage of the Region-Aware Vision-Language Similarity to Mask (RVLS2M) module. To improve overall performance, we investigate a test-time scaling strategy for MDS tasks. Experimental results demonstrate that our method outperforms the baselines in both segmentation and diagnosis. 
+
+**Abstract (ZH)**: 尽管在像素级医疗图像分析方面取得了显著进展，现有的医疗图像分割模型 rarely 探索医疗分割和诊断任务的联合实现。然而，对于患者而言，模型能够提供可解释的诊断结果与医疗分割结果一同输出至关重要。在本文中，我们引入了一个名为 Medical Diagnosis Segmentation (MDS) 的医疗视觉语言任务，旨在理解临床查询并生成相应的分割掩码以及诊断结果。为了促进这一任务，我们首先提出了 Multimodal Multi-disease Medical Diagnosis Segmentation (M3DS) 数据集，包含多模态多疾病医疗图像及其对应的分割掩码和自动生成的诊断推理链。此外，我们提出了一种名为 Sim4Seg 的新型框架，通过利用 Region-Aware Vision-Language Similarity to Mask (RVLS2M) 模块来改进诊断分割性能。为了提高整体性能，我们还研究了 MDS 任务的测试时缩放策略。实验结果表明，我们的方法在分割和诊断方面均优于基线方法。 
+
+---
+# A Remarkably Efficient Paradigm to Multimodal Large Language Models for Sequential Recommendation 
+
+**Title (ZH)**: 一种高效的多模态大型语言模型序列推荐范式 
+
+**Authors**: Qiyong Zhong, Jiajie Su, Ming Yang, Yunshan Ma, Xiaolin Zheng, Chaochao Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.05885)  
+
+**Abstract**: In this paper, we proposed Speeder, a remarkably efficient paradigm to multimodal large language models for sequential recommendation. Speeder introduces 3 key components: (1) Multimodal Representation Compression (MRC), which efficiently reduces redundancy in item descriptions; (2) Sequential Position Awareness Enhancement (SPAE), which strengthens the model's ability to capture complex sequential dependencies; (3) Modality-aware Progressive Optimization (MPO), which progressively integrates different modalities to improve the model's understanding and reduce cognitive biases. Through extensive experiments, Speeder demonstrates superior performance over baselines in terms of VHR@1 and computational efficiency. Specifically, Speeder achieved 250% of the training speed and 400% of the inference speed compared to the state-of-the-art MLLM-based SR models. Future work could focus on incorporating real-time feedback from real-world systems. 
+
+**Abstract (ZH)**: 本文提出了Speeder，一种用于序列推荐的高效多模态大语言模型范式。Speeder引入了3个关键组件：(1) 多模态表示压缩(MRC)，有效减少项目描述中的冗余；(2) 顺序位置意识增强(SPAE)，增强模型捕捉复杂顺序依赖性的能力；(3) 模态意识逐步优化(MPO)，逐步整合不同模态以提高模型的理解能力和降低认知偏见。通过广泛的实验，Speeder在VHR@1和计算效率方面均优于基线模型。具体来说，Speeder的训练速度是最新MLLM基序列推荐模型的250%，推理速度是其400%。未来的工作可以侧重于将实时反馈整合到实际系统中。 
+
+---
+# Long Grounded Thoughts: Distilling Compositional Visual Reasoning Chains at Scale 
+
+**Title (ZH)**: 长接地思考：大规模提炼组合视觉推理链 
+
+**Authors**: David Acuna, Chao-Han Huck Yang, Yuntian Deng, Jaehun Jung, Ximing Lu, Prithviraj Ammanabrolu, Hyunwoo Kim, Yuan-Hong Liao, Yejin Choi  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.05705)  
+
+**Abstract**: Recent progress in multimodal reasoning has been driven largely by undisclosed datasets and proprietary data synthesis recipes, leaving open questions about how to systematically build large-scale, vision-centric reasoning datasets, particularly for tasks that go beyond visual math. In this work, we introduce a new reasoning data generation framework spanning diverse skills and levels of complexity with over 1M high-quality synthetic vision-centric questions. The dataset also includes preference data and instruction prompts supporting both offline and online RL. Our synthesis framework proceeds in two stages: (1) scale; and (2) complexity. Reasoning traces are then synthesized through a two-stage process that leverages VLMs and reasoning LLMs, producing CoT traces for VLMs that capture the richness and diverse cognitive behaviors found in frontier reasoning models. Remarkably, we show that finetuning Qwen2.5-VL-7B on our data outperforms all open-data baselines across all evaluated vision-centric benchmarks, and even surpasses strong closed-data models such as MiMo-VL-7B-RL on V* Bench, CV-Bench and MMStar-V. Perhaps most surprising, despite being entirely vision-centric, our data transfers positively to text-only reasoning (MMLU-Pro) and audio reasoning (MMAU), demonstrating its effectiveness. Similarly, despite not containing videos or embodied visual data, we observe notable gains when evaluating on a single-evidence embodied QA benchmark (NiEH). Finally, we use our data to analyze the entire VLM post-training pipeline. Our empirical analysis highlights that (i) SFT on high-quality data with non-linear reasoning traces is essential for effective online RL, (ii) staged offline RL matches online RL's performance while reducing compute demands, and (iii) careful SFT on high quality data can substantially improve out-of-domain, cross-modality transfer. 
+
+**Abstract (ZH)**: 近期多模态推理的进展主要得益于未披露的数据集和专有数据合成方法，对于如何系统地构建大规模、以视觉为中心的推理数据集，特别是对于超越视觉数学的任务，仍存在诸多开放问题。本文介绍了一种涵盖多种技能和复杂度层次的新推理数据生成框架，包含超过100万条高质量合成的以视觉为中心的问题。该数据集还包括支持离线和在线强化学习的偏好数据和指令提示。我们的合成框架分为两个阶段：(1) 规模；(2) 复杂性。推理轨迹通过一个两阶段过程进行合成，该过程利用了VLM和推理LLM，为VLM生成了捕捉前沿推理模型中丰富性和多样化认知行为的CoT轨迹。值得注意的是，我们将Qwen2.5-VL-7B微调后与我们的数据相比，表现优于所有公开数据基准，在V* Bench、CV-Bench和MMStar-V上甚至超过了强大的封闭数据模型MiMo-VL-7B-RL。更令人惊讶的是，尽管完全是视觉中心的，我们的数据在文本-only推理（MMLU-Pro）和音频推理（MMAU）上仍有积极的转移效果，证明了其有效性。尽管数据中未包含视频或嵌入式视觉数据，我们发现在单一证据嵌入式QA基准（NiEH）上的评估中仍观察到了显著的改进。最后，我们使用我们的数据来分析整个VLM后训练管道。我们的实证分析强调了以下几点：(i) 使用高质量数据和非线性推理轨迹的SFT对于有效的在线RL至关重要；(ii) 阶段化离线RL与在线RL性能相当，但降低了计算需求；(iii) 谨慎对高质量数据进行SFT可以显著提高跨域、跨模态的转移效果。 
+
+---
+# Fine-Tuning Vision-Language Models for Multimodal Polymer Property Prediction 
+
+**Title (ZH)**: 基于视觉-语言模型的多模态聚合物性质预测微调 
+
+**Authors**: An Vuong, Minh-Hao Van, Prateek Verma, Chen Zhao, Xintao Wu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.05577)  
+
+**Abstract**: Vision-Language Models (VLMs) have shown strong performance in tasks like visual question answering and multimodal text generation, but their effectiveness in scientific domains such as materials science remains limited. While some machine learning methods have addressed specific challenges in this field, there is still a lack of foundation models designed for broad tasks like polymer property prediction using multimodal data. In this work, we present a multimodal polymer dataset to fine-tune VLMs through instruction-tuning pairs and assess the impact of multimodality on prediction performance. Our fine-tuned models, using LoRA, outperform unimodal and baseline approaches, demonstrating the benefits of multimodal learning. Additionally, this approach reduces the need to train separate models for different properties, lowering deployment and maintenance costs. 
+
+**Abstract (ZH)**: Vision-Language Models在材料科学领域的科学域中表现出强大的性能，但在聚合物性质预测等任务上仍有限制。尽管一些机器学习方法已经解决了该领域的特定挑战，但对于使用多模态数据进行聚合物性质预测的应用，仍缺乏针对广泛任务的基座模型。在本工作中，我们提出一个多模态聚合物数据集，通过指令调优对视觉语言模型进行微调，并评估多模态性对预测性能的影响。使用LoRA微调后的模型优于单模态和基线方法，展示了多模态学习的优势。此外，该方法减少了为不同性质训练独立模型的需求，降低了部署和维护成本。 
+
+---
