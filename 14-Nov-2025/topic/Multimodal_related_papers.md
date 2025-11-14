@@ -1,0 +1,65 @@
+# Audio-VLA: Adding Contact Audio Perception to Vision-Language-Action Model for Robotic Manipulation 
+
+**Title (ZH)**: 音频-视觉行动模型中加入接触音频感知的研究：针对机器人操作的任务 
+
+**Authors**: Xiangyi Wei, Haotian Zhang, Xinyi Cao, Siyu Xie, Weifeng Ge, Yang Li, Changbo Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.09958)  
+
+**Abstract**: The Vision-Language-Action models (VLA) have achieved significant advances in robotic manipulation recently. However, vision-only VLA models create fundamental limitations, particularly in perceiving interactive and manipulation dynamic processes. This paper proposes Audio-VLA, a multimodal manipulation policy that leverages contact audio to perceive contact events and dynamic process feedback. Audio-VLA overcomes the vision-only constraints of VLA models. Additionally, this paper introduces the Task Completion Rate (TCR) metric to systematically evaluate dynamic operational processes. Audio-VLA employs pre-trained DINOv2 and SigLIP as visual encoders, AudioCLIP as the audio encoder, and Llama2 as the large language model backbone. We apply LoRA fine-tuning to these pre-trained modules to achieve robust cross-modal understanding of both visual and acoustic inputs. A multimodal projection layer aligns features from different modalities into the same feature space. Moreover RLBench and LIBERO simulation environments are enhanced by adding collision-based audio generation to provide realistic sound feedback during object interactions. Since current robotic manipulation evaluations focus on final outcomes rather than providing systematic assessment of dynamic operational processes, the proposed TCR metric measures how well robots perceive dynamic processes during manipulation, creating a more comprehensive evaluation metric. Extensive experiments on LIBERO, RLBench, and two real-world tasks demonstrate Audio-VLA's superior performance over vision-only comparative methods, while the TCR metric effectively quantifies dynamic process perception capabilities. 
+
+**Abstract (ZH)**: 基于音频的视觉语言动作模型（Audio-VLA）及其动态操作过程评价方法 
+
+---
+# MTP: Exploring Multimodal Urban Traffic Profiling with Modality Augmentation and Spectrum Fusion 
+
+**Title (ZH)**: MTP：通过模态增强和频谱融合探索多模态城市交通 profiling 
+
+**Authors**: Haolong Xiang, Peisi Wang, Xiaolong Xu, Kun Yi, Xuyun Zhang, Quanzheng Sheng, Amin Beheshti, Wei Fan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.10218)  
+
+**Abstract**: With rapid urbanization in the modern era, traffic signals from various sensors have been playing a significant role in monitoring the states of cities, which provides a strong foundation in ensuring safe travel, reducing traffic congestion and optimizing urban mobility. Most existing methods for traffic signal modeling often rely on the original data modality, i.e., numerical direct readings from the sensors in cities. However, this unimodal approach overlooks the semantic information existing in multimodal heterogeneous urban data in different perspectives, which hinders a comprehensive understanding of traffic signals and limits the accurate prediction of complex traffic dynamics. To address this problem, we propose a novel \textit{M}ultimodal framework, \textit{MTP}, for urban \textit{T}raffic \textit{P}rofiling, which learns multimodal features through numeric, visual, and textual perspectives. The three branches drive for a multimodal perspective of urban traffic signal learning in the frequency domain, while the frequency learning strategies delicately refine the information for extraction. Specifically, we first conduct the visual augmentation for the traffic signals, which transforms the original modality into frequency images and periodicity images for visual learning. Also, we augment descriptive texts for the traffic signals based on the specific topic, background information and item description for textual learning. To complement the numeric information, we utilize frequency multilayer perceptrons for learning on the original modality. We design a hierarchical contrastive learning on the three branches to fuse the spectrum of three modalities. Finally, extensive experiments on six real-world datasets demonstrate superior performance compared with the state-of-the-art approaches. 
+
+**Abstract (ZH)**: 现代快速城市化背景下，来自多种传感器的交通信号在监控城市状态中发挥着重要作用，为确保交通安全、减少交通拥堵和优化城市出行提供了坚实基础。现有的大多数交通信号建模方法往往依赖于原始数据模态，即城市的传感器直接数值读数。然而，这种单一模态方法忽视了不同视角下多模态异构城市数据中的语义信息，阻碍了对交通信号的全面理解，并限制了复杂交通动力学的准确预测。为解决这一问题，我们提出了一种新型的多模态框架MTP（Multimodal Traffic Profiling），该框架通过数值、视觉和文本视角学习多模态特征。三个分支在频域中为城市交通信号的学习提供多模态视角，而频率学习策略细致地提炼了信息提取方式。具体来说，我们首先进行交通信号的视觉增强，将原始模态转换为频谱图像和周期性图像以供视觉学习；其次，基于特定主题、背景信息和项目描述为交通信号增加描述性文本以供文本学习。为补充数值信息，我们使用频率多层感知机在原始模态上进行学习。我们为三个分支设计了分层对比学习以融合三种模态的频谱。最终，在六个真实世界数据集上的广泛实验表明，该方法在性能上优于现有最先进的方法。 
+
+---
+# OIDA-QA: A Multimodal Benchmark for Analyzing the Opioid Industry Documents Archive 
+
+**Title (ZH)**: OIDA-QA：分析鸦片类药物行业文件档案的多模态基准 
+
+**Authors**: Xuan Shen, Brian Wingenroth, Zichao Wang, Jason Kuen, Wanrong Zhu, Ruiyi Zhang, Yiwei Wang, Lichun Ma, Anqi Liu, Hongfu Liu, Tong Sun, Kevin S. Hawkins, Kate Tasker, G. Caleb Alexander, Jiuxiang Gu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.09914)  
+
+**Abstract**: The opioid crisis represents a significant moment in public health that reveals systemic shortcomings across regulatory systems, healthcare practices, corporate governance, and public policy. Analyzing how these interconnected systems simultaneously failed to protect public health requires innovative analytic approaches for exploring the vast amounts of data and documents disclosed in the UCSF-JHU Opioid Industry Documents Archive (OIDA). The complexity, multimodal nature, and specialized characteristics of these healthcare-related legal and corporate documents necessitate more advanced methods and models tailored to specific data types and detailed annotations, ensuring the precision and professionalism in the analysis. In this paper, we tackle this challenge by organizing the original dataset according to document attributes and constructing a benchmark with 400k training documents and 10k for testing. From each document, we extract rich multimodal information-including textual content, visual elements, and layout structures-to capture a comprehensive range of features. Using multiple AI models, we then generate a large-scale dataset comprising 360k training QA pairs and 10k testing QA pairs. Building on this foundation, we develop domain-specific multimodal Large Language Models (LLMs) and explore the impact of multimodal inputs on task performance. To further enhance response accuracy, we incorporate historical QA pairs as contextual grounding for answering current queries. Additionally, we incorporate page references within the answers and introduce an importance-based page classifier, further improving the precision and relevance of the information provided. Preliminary results indicate the improvements with our AI assistant in document information extraction and question-answering tasks. The dataset and models are publicly available at: this https URL 
+
+**Abstract (ZH)**: opioids 危机代表公共卫生中的一个关键时刻，揭示了监管系统、医疗实践、公司治理和公共政策中的系统缺陷。分析这些相互关联的系统是如何同时未能保护公共健康需要创新的分析方法来探索 UCSF-JHU �统计数据与文件存档 (OIDA) 中披露的大量数据和文件。这些与健康相关的法律和公司文件的复杂性、多模态性质和专门特性需要适应特定数据类型并进行详细标注的更高级的方法和模型，确保分析的精准性和专业性。本文通过根据文档属性组织原始数据集并构建包含 40 万训练文件和 1 万测试文件的基准数据集来应对这一挑战。从每个文档中提取丰富的多模态信息，包括文本内容、视觉元素和布局结构，以捕捉广泛的特征。然后使用多种 AI 模型生成包含 36 万训练 QA 对和 1 万测试 QA 对的大规模数据集。在此基础上，我们开发了特定领域的多模态大型语言模型 (LLMs)，并探索了多模态输入对任务性能的影响。为了进一步提高响应准确性，我们引入了历史 QA 对作为当前查询的上下文依据，并在答案中引入了页面引用和基于重要性的页面分类器，进一步提高了所提供信息的精确性和相关性。初步结果显示，我们的 AI 辅助在文档信息提取和问答任务方面有所改进。数据集和模型可在以下网址获取：this https URL。 
+
+---
+# EgoEMS: A High-Fidelity Multimodal Egocentric Dataset for Cognitive Assistance in Emergency Medical Services 
+
+**Title (ZH)**: EgoEMS：一种高保真多模态第一人称数据集，用于应急医疗服务中的认知辅助 
+
+**Authors**: Keshara Weerasinghe, Xueren Ge, Tessa Heick, Lahiru Nuwan Wijayasingha, Anthony Cortez, Abhishek Satpathy, John Stankovic, Homa Alemzadeh  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.09894)  
+
+**Abstract**: Emergency Medical Services (EMS) are critical to patient survival in emergencies, but first responders often face intense cognitive demands in high-stakes situations. AI cognitive assistants, acting as virtual partners, have the potential to ease this burden by supporting real-time data collection and decision making. In pursuit of this vision, we introduce EgoEMS, the first end-to-end, high-fidelity, multimodal, multiperson dataset capturing over 20 hours of realistic, procedural EMS activities from an egocentric view in 233 simulated emergency scenarios performed by 62 participants, including 46 EMS professionals. Developed in collaboration with EMS experts and aligned with national standards, EgoEMS is captured using an open-source, low-cost, and replicable data collection system and is annotated with keysteps, timestamped audio transcripts with speaker diarization, action quality metrics, and bounding boxes with segmentation masks. Emphasizing realism, the dataset includes responder-patient interactions reflecting real-world emergency dynamics. We also present a suite of benchmarks for real-time multimodal keystep recognition and action quality estimation, essential for developing AI support tools for EMS. We hope EgoEMS inspires the research community to push the boundaries of intelligent EMS systems and ultimately contribute to improved patient outcomes. 
+
+**Abstract (ZH)**: 应急医疗服务(Emergency Medical Services, EMS)在紧急情况下对患者生存至关重要，但第一响应者在高压力情况下往往面临巨大的认知负担。作为虚拟伙伴的AI认知助手有可能通过支持实时数据收集和决策制定来减轻这一负担。为实现这一愿景，我们引入了EgoEMS——首个端到端、高保真、多模态、多人的应急医疗服务数据集，该数据集从233个模拟紧急场景的265名参与者（包括46名应急医疗服务专业人员）的第一人称视角捕获了超过20小时的现实程序化EMS活动。EgoEMS与应急医疗服务专家协作开发，并符合国家标准，使用开源、低成本且可复制的数据采集系统，并附带标注的关健步骤、带说话人聚类的时间戳语音转录、动作质量指标以及带有分割掩码的边界框。为了强调真实性，数据集包括反映实际紧急情况动态的救援人员-患者互动。我们还提供了一组实时多模态关健步骤识别和动作质量估计的基准，这对于开发支持应急医疗服务的AI工具至关重要。我们希望EgoEMS能够激励研究社区推动智能应急医疗服务系统的边界，并最终促进改善患者结果。 
+
+---
+# GEA: Generation-Enhanced Alignment for Text-to-Image Person Retrieval 
+
+**Title (ZH)**: GEA: 生成增强对齐方法用于文本到图像的人像检索 
+
+**Authors**: Hao Zou, Runqing Zhang, Xue Zhou, Jianxiao Zou  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.10154)  
+
+**Abstract**: Text-to-Image Person Retrieval (TIPR) aims to retrieve person images based on natural language descriptions. Although many TIPR methods have achieved promising results, sometimes textual queries cannot accurately and comprehensively reflect the content of the image, leading to poor cross-modal alignment and overfitting to limited datasets. Moreover, the inherent modality gap between text and image further amplifies these issues, making accurate cross-modal retrieval even more challenging. To address these limitations, we propose the Generation-Enhanced Alignment (GEA) from a generative perspective. GEA contains two parallel modules: (1) Text-Guided Token Enhancement (TGTE), which introduces diffusion-generated images as intermediate semantic representations to bridge the gap between text and visual patterns. These generated images enrich the semantic representation of text and facilitate cross-modal alignment. (2) Generative Intermediate Fusion (GIF), which combines cross-attention between generated images, original images, and text features to generate a unified representation optimized by triplet alignment loss. We conduct extensive experiments on three public TIPR datasets, CUHK-PEDES, RSTPReid, and ICFG-PEDES, to evaluate the performance of GEA. The results justify the effectiveness of our method. More implementation details and extended results are available at this https URL. 
+
+**Abstract (ZH)**: 基于文本的图像人员检索（TIPR）旨在根据自然语言描述检索人员图像。尽管许多TIPR方法取得了令人鼓舞的结果，但有时文本查询无法准确且全面地反映图像内容，导致跨模态对齐效果差，并且容易过度拟合有限的数据集。此外，文本与图像之间的固有模态差距进一步加剧了这些问题，使准确的跨模态检索更加具有挑战性。为了解决这些限制，我们从生成的角度提出了生成增强对齐（GEA）。GEA 包含两个并行模块：(1) 文本引导的令牌增强（TGTE），通过引入扩散生成的图像作为中间语义表示，从而弥合文本与视觉模式之间的差距。这些生成的图像丰富了文本的语义表示，促进了跨模态对齐。(2) 生成中间融合（GIF），该模块通过生成图像、原始图像和文本特征之间的跨注意力机制生成由三元组对齐损失优化的统一表示。我们在 CUHK-PEDES、RSTPReid 和 ICFG-PEDES 三个公开的 TIPR 数据集上进行了广泛的实验，以评估 GEA 的性能。实验结果证明了我们方法的有效性。更多实现细节和扩展结果可在以下链接获取：this https URL。 
+
+---
