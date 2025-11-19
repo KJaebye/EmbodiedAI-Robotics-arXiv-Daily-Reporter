@@ -1,0 +1,104 @@
+# FlexiCup: Wireless Multimodal Suction Cup with Dual-Zone Vision-Tactile Sensing 
+
+**Title (ZH)**: FlexiCup：具有双区视觉触觉感知的无线多模式吸杯 
+
+**Authors**: Junhao Gong, Shoujie Li, Kit-Wa Sou, Changqing Guo, Hourong Huang, Tong Wu, Yifan Xie, Chenxin Liang, Chuqiao Lyu, Xiaojun Liang, Wenbo Ding  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.14139)  
+
+**Abstract**: Conventional suction cups lack sensing capabilities for contact-aware manipulation in unstructured environments. This paper presents FlexiCup, a fully wireless multimodal suction cup that integrates dual-zone vision-tactile sensing. The central zone dynamically switches between vision and tactile modalities via illumination control for contact detection, while the peripheral zone provides continuous spatial awareness for approach planning. FlexiCup supports both vacuum and Bernoulli suction modes through modular mechanical configurations, achieving complete wireless autonomy with onboard computation and power. We validate hardware versatility through dual control paradigms. Modular perception-driven grasping across structured surfaces with varying obstacle densities demonstrates comparable performance between vacuum (90.0% mean success) and Bernoulli (86.7% mean success) modes. Diffusion-based end-to-end learning achieves 73.3% success on inclined transport and 66.7% on orange extraction tasks. Ablation studies confirm that multi-head attention coordinating dual-zone observations provides 13% improvements for contact-aware manipulation. Hardware designs and firmware are available at this https URL. 
+
+**Abstract (ZH)**: 传统的吸盘缺乏在未结构化环境中进行接触感知操作的能力。本文介绍了一种名为FlexiCup的全无线多模式吸盘，集成了双区视觉触觉感知。中央区域通过照明控制动态切换视觉和触觉模态进行接触检测，而外围区域提供连续的空间感知以供接近规划。FlexiCup通过模块化机械配置支持真空和伯努利吸取模式，实现搭载计算和电源的完全无线自主操作。我们通过双控制范式验证了硬件的灵活性。在不同障碍密度的结构化表面上进行模块化感知驱动的抓取展示了真空模式（平均成功率90.0%）与伯努利模式（平均成功率86.7%）之间的相似性能。基于扩散的端到端学习在倾斜运输任务中实现了73.3%的成功率，在橙子提取任务中实现了66.7%的成功率。消融研究证实，协调双区观察的多头注意力机制可提高接触感知操作13%。硬件设计和固件可在以下链接获取：this https URL。 
+
+---
+# CCSD: Cross-Modal Compositional Self-Distillation for Robust Brain Tumor Segmentation with Missing Modalities 
+
+**Title (ZH)**: CCSD：跨模态组成自蒸馏在缺失模态下实现稳健的大脑肿瘤分割 
+
+**Authors**: Dongqing Xie, Yonghuang Wu, Zisheng Ai, Jun Min, Zhencun Jiang, Shaojin Geng, Lei Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.14599)  
+
+**Abstract**: The accurate segmentation of brain tumors from multi-modal MRI is critical for clinical diagnosis and treatment planning. While integrating complementary information from various MRI sequences is a common practice, the frequent absence of one or more modalities in real-world clinical settings poses a significant challenge, severely compromising the performance and generalizability of deep learning-based segmentation models. To address this challenge, we propose a novel Cross-Modal Compositional Self-Distillation (CCSD) framework that can flexibly handle arbitrary combinations of input modalities. CCSD adopts a shared-specific encoder-decoder architecture and incorporates two self-distillation strategies: (i) a hierarchical modality self-distillation mechanism that transfers knowledge across modality hierarchies to reduce semantic discrepancies, and (ii) a progressive modality combination distillation approach that enhances robustness to missing modalities by simulating gradual modality dropout during training. Extensive experiments on public brain tumor segmentation benchmarks demonstrate that CCSD achieves state-of-the-art performance across various missing-modality scenarios, with strong generalization and stability. 
+
+**Abstract (ZH)**: 多模态MRI脑肿瘤准确分割对于临床诊断和治疗规划至关重要。由于实际临床环境中经常缺失一种或多种模态，基于深度学习的分割模型的性能和泛化能力受到显著影响。为应对这一挑战，我们提出了一种新型的跨模态组成自蒸馏（CCSD）框架，可以灵活处理任意输入模态的组合。CCSD采用共享特定编码-解码架构，并结合了两种自蒸馏策略：（i）层次模态自蒸馏机制，通过跨模态层次传递知识以减小程序语义差异；（ii）渐进模态组合蒸馏方法，在训练过程中模拟模态逐步缺失以提高模型对缺失模态的鲁棒性。在公开的脑肿瘤分割基准数据集上的广泛实验表明，CCSD在多种缺失模态场景下取得了最先进的性能，具有较强的泛化能力和稳定性。 
+
+---
+# Orion: A Unified Visual Agent for Multimodal Perception, Advanced Visual Reasoning and Execution 
+
+**Title (ZH)**: 猎户座：统一的多模态视觉代理，高级视觉推理与执行 
+
+**Authors**: N Dinesh Reddy, Sudeep Pillai  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.14210)  
+
+**Abstract**: We introduce Orion, a visual agent framework that can take in any modality and generate any modality. Using an agentic framework with multiple tool-calling capabilities, Orion is designed for visual AI tasks and achieves state-of-the-art results. Unlike traditional vision-language models that produce descriptive outputs, Orion orchestrates a suite of specialized computer vision tools, including object detection, keypoint localization, panoptic segmentation, Optical Character Recognition, and geometric analysis, to execute complex multi-step visual workflows. The system achieves competitive performance on MMMU, MMBench, DocVQA, and MMLongBench while extending monolithic vision-language models to production-grade visual intelligence. By combining neural perception with symbolic execution, Orion enables autonomous visual reasoning, marking a transition from passive visual understanding to active, tool-driven visual intelligence. 
+
+**Abstract (ZH)**: Orion：一种多模态生成的视觉代理框架 
+
+---
+# SMART: Shot-Aware Multimodal Video Moment Retrieval with Audio-Enhanced MLLM 
+
+**Title (ZH)**: SMART：基于音频增强多模态LLM的射程aware视频关键moment检索 
+
+**Authors**: An Yu, Weiheng Lu, Jian Li, Zhenfei Zhang, Yunhang Shen, Felix X.-F. Ye, Ming-Ching Chang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.14143)  
+
+**Abstract**: Video Moment Retrieval is a task in video understanding that aims to localize a specific temporal segment in an untrimmed video based on a natural language query. Despite recent progress in moment retrieval from videos using both traditional techniques and Multimodal Large Language Models (MLLM), most existing methods still rely on coarse temporal understanding and a single visual modality, limiting performance on complex videos. To address this, we introduce \textit{S}hot-aware \textit{M}ultimodal \textit{A}udio-enhanced \textit{R}etrieval of \textit{T}emporal \textit{S}egments (SMART), an MLLM-based framework that integrates audio cues and leverages shot-level temporal structure. SMART enriches multimodal representations by combining audio and visual features while applying \textbf{Shot-aware Token Compression}, which selectively retains high-information tokens within each shot to reduce redundancy and preserve fine-grained temporal details. We also refine prompt design to better utilize audio-visual cues. Evaluations on Charades-STA and QVHighlights show that SMART achieves significant improvements over state-of-the-art methods, including a 1.61\% increase in R1@0.5 and 2.59\% gain in R1@0.7 on Charades-STA. 
+
+**Abstract (ZH)**: 基于自然语言查询在未剪辑视频中定位特定时序段的视频关键 moment检索是一种视频理解任务，旨在基于自然语言查询在未剪辑视频中定位特定时序段。尽管在使用传统技术及多模态大型语言模型（MLLM）从视频中检索关键 moment方面取得了进展，但现有方法仍然依赖粗粒度的时间理解及单一的视觉模态，限制了在复杂视频上的性能。为解决这一问题，我们引入了基于多模态大型语言模型的Shot-aware Multimodal Audio-enhanced Retrieval of Temporal Segments（SMART）框架，该框架整合了音频线索并利用镜头级别的时间结构。SMART通过结合音频和视觉特征并应用Shot-aware Token Compression（镜头感知 token 压缩），选择性地在每个镜头内保留高信息量的 token，从而减少冗余并保留精细的时间细节。同时，我们改进了提示设计以更好地利用视听线索。在Charades-STA和QVHighlights上的评估结果显示，SMART在最先进的方法上取得了显著的提升，包括在Charades-STA上R1@0.5提高了1.61%和R1@0.7提高了2.59%。 
+
+---
+# Multi-view Phase-aware Pedestrian-Vehicle Incident Reasoning Framework with Vision-Language Models 
+
+**Title (ZH)**: 多视角相位感知行人-车辆事件推理框架：基于视觉-语言模型 
+
+**Authors**: Hao Zhen, Yunxiang Yang, Jidong J. Yang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.14120)  
+
+**Abstract**: Pedestrian-vehicle incidents remain a critical urban safety challenge, with pedestrians accounting for over 20% of global traffic fatalities. Although existing video-based systems can detect when incidents occur, they provide little insight into how these events unfold across the distinct cognitive phases of pedestrian behavior. Recent vision-language models (VLMs) have shown strong potential for video understanding, but they remain limited in that they typically process videos in isolation, without explicit temporal structuring or multi-view integration. This paper introduces Multi-view Phase-aware Pedestrian-Vehicle Incident Reasoning (MP-PVIR), a unified framework that systematically processes multi-view video streams into structured diagnostic reports through four stages: (1) event-triggered multi-view video acquisition, (2) pedestrian behavior phase segmentation, (3) phase-specific multi-view reasoning, and (4) hierarchical synthesis and diagnostic reasoning. The framework operationalizes behavioral theory by automatically segmenting incidents into cognitive phases, performing synchronized multi-view analysis within each phase, and synthesizing results into causal chains with targeted prevention strategies. Particularly, two specialized VLMs underpin the MP-PVIR pipeline: TG-VLM for behavioral phase segmentation (mIoU = 0.4881) and PhaVR-VLM for phase-aware multi-view analysis, achieving a captioning score of 33.063 and up to 64.70% accuracy on question answering. Finally, a designated large language model is used to generate comprehensive reports detailing scene understanding, behavior interpretation, causal reasoning, and prevention recommendations. Evaluation on the Woven Traffic Safety dataset shows that MP-PVIR effectively translates multi-view video data into actionable insights, advancing AI-driven traffic safety analytics for vehicle-infrastructure cooperative systems. 
+
+**Abstract (ZH)**: 多视图认知阶段aware行人-车辆事故推理（MP-PVIR） 
+
+---
+# A Machine Learning-Based Multimodal Framework for Wearable Sensor-Based Archery Action Recognition and Stress Estimation 
+
+**Title (ZH)**: 基于机器学习的多模态框架：可穿戴传感器指导的射箭动作识别与压力估计 
+
+**Authors**: Xianghe Liu, Jiajia Liu, Chuxian Xu, Minghan Wang, Hongbo Peng, Tao Sun, Jiaqi Xu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.14057)  
+
+**Abstract**: In precision sports such as archery, athletes' performance depends on both biomechanical stability and psychological resilience. Traditional motion analysis systems are often expensive and intrusive, limiting their use in natural training environments. To address this limitation, we propose a machine learning-based multimodal framework that integrates wearable sensor data for simultaneous action recognition and stress estimation. Using a self-developed wrist-worn device equipped with an accelerometer and photoplethysmography (PPG) sensor, we collected synchronized motion and physiological data during real archery sessions. For motion recognition, we introduce a novel feature--Smoothed Differential Acceleration (SmoothDiff)--and employ a Long Short-Term Memory (LSTM) model to identify motion phases, achieving 96.8% accuracy and 95.9% F1-score. For stress estimation, we extract heart rate variability (HRV) features from PPG signals and apply a Multi-Layer Perceptron (MLP) classifier, achieving 80% accuracy in distinguishing high- and low-stress levels. The proposed framework demonstrates that integrating motion and physiological sensing can provide meaningful insights into athletes' technical and mental states. This approach offers a foundation for developing intelligent, real-time feedback systems for training optimization in archery and other precision sports. 
+
+**Abstract (ZH)**: 基于机器学习的多模态框架：将穿戴传感器数据集成以同时识别动作和估计压力 
+
+---
+# FusionFM: All-in-One Multi-Modal Image Fusion with Flow Matching 
+
+**Title (ZH)**: FusionFM：全方位多模态图像融合与流匹配 
+
+**Authors**: Huayi Zhu, Xiu Shu, Youqiang Xiong, Qiao Liu, Rui Chen, Di Yuan, Xiaojun Chang, Zhenyu He  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.13794)  
+
+**Abstract**: Current multi-modal image fusion methods typically rely on task-specific models, leading to high training costs and limited scalability. While generative methods provide a unified modeling perspective, they often suffer from slow inference due to the complex sampling trajectories from noise to image. To address this, we formulate image fusion as a direct probabilistic transport from source modalities to the fused image distribution, leveraging the flow matching paradigm to improve sampling efficiency and structural consistency. To mitigate the lack of high-quality fused images for supervision, we collect fusion results from multiple state-of-the-art models as priors, and employ a task-aware selection function to select the most reliable pseudo-labels for each task. We further introduce a Fusion Refiner module that employs a divide-and-conquer strategy to systematically identify, decompose, and enhance degraded components in selected pseudo-labels. For multi-task scenarios, we integrate elastic weight consolidation and experience replay mechanisms to preserve cross-task performance and enhance continual learning ability from both parameter stability and memory retention perspectives. Our approach achieves competitive performance across diverse fusion tasks, while significantly improving sampling efficiency and maintaining a lightweight model design. The code will be available at: this https URL. 
+
+**Abstract (ZH)**: 当前的多模态图像融合方法通常依赖于特定任务的模型，导致高昂的训练成本和有限的可扩展性。虽然生成方法提供了一种统一的建模视角，但往往因从噪声到图像的复杂采样路径而牺牲推理速度。为解决这一问题，我们将图像融合表述为从源模态直接概率传输到融合图像分布的过程，利用流匹配范式提高采样效率和结构一致性。为缓解监督数据中缺乏高质量融合图像的问题，我们收集了多种最新模型的融合结果作为先验知识，并采用一种任务感知的选择函数为每项任务选择最可靠的伪标签。我们还引入了一个融合精炼模块，采用分而治之策略系统地识别、分解和增强选定伪标签中的退化成分。在多任务场景中，我们结合弹性权重 consolidation 和经验重放机制，从参数稳定性和记忆保留的角度提高跨任务性能和持续学习能力。我们的方法在多种融合任务中表现出竞争力，同时显著提高了采样效率并保持了轻量级模型设计。代码将在以下链接处提供：this https URL。 
+
+---
+# Adaptive Redundancy Regulation for Balanced Multimodal Information Refinement 
+
+**Title (ZH)**: 自适应冗余调节以实现平衡的多模态信息精炼 
+
+**Authors**: Zhe Yang, Wenrui Li, Hongtao Chen, Penghong Wang, Ruiqin Xiong, Xiaopeng Fan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.13755)  
+
+**Abstract**: Multimodal learning aims to improve performance by leveraging data from multiple sources. During joint multimodal training, due to modality bias, the advantaged modality often dominates backpropagation, leading to imbalanced optimization. Existing methods still face two problems: First, the long-term dominance of the dominant modality weakens representation-output coupling in the late stages of training, resulting in the accumulation of redundant information. Second, previous methods often directly and uniformly adjust the gradients of the advantaged modality, ignoring the semantics and directionality between modalities. To address these limitations, we propose Adaptive Redundancy Regulation for Balanced Multimodal Information Refinement (RedReg), which is inspired by information bottleneck principle. Specifically, we construct a redundancy phase monitor that uses a joint criterion of effective gain growth rate and redundancy to trigger intervention only when redundancy is high. Furthermore, we design a co-information gating mechanism to estimate the contribution of the current dominant modality based on cross-modal semantics. When the task primarily relies on a single modality, the suppression term is automatically disabled to preserve modality-specific information. Finally, we project the gradient of the dominant modality onto the orthogonal complement of the joint multimodal gradient subspace and suppress the gradient according to redundancy. Experiments show that our method demonstrates superiority among current major methods in most scenarios. Ablation experiments verify the effectiveness of our method. The code is available at this https URL 
+
+**Abstract (ZH)**: 适配冗余调节以实现平衡的多模态信息精炼（RedReg） 
+
+---
