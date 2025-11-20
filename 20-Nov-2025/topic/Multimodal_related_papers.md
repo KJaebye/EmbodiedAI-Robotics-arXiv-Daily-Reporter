@@ -37,19 +37,6 @@
 **Abstract (ZH)**: 基于多频图卷积网络的抑郁检测多模态多频谱框架 
 
 ---
-# VisPlay: Self-Evolving Vision-Language Models from Images 
-
-**Title (ZH)**: VisPlay: 自适应进化视觉-语言模型 
-
-**Authors**: Yicheng He, Chengsong Huang, Zongxia Li, Jiaxin Huang, Yonghui Yang  
-
-**Link**: [PDF](https://arxiv.org/pdf/2511.15661)  
-
-**Abstract**: Reinforcement learning (RL) provides a principled framework for improving Vision-Language Models (VLMs) on complex reasoning tasks. However, existing RL approaches often rely on human-annotated labels or task-specific heuristics to define verifiable rewards, both of which are costly and difficult to scale. We introduce VisPlay, a self-evolving RL framework that enables VLMs to autonomously improve their reasoning abilities using large amounts of unlabeled image data. Starting from a single base VLM, VisPlay assigns the model into two interacting roles: an Image-Conditioned Questioner that formulates challenging yet answerable visual questions, and a Multimodal Reasoner that generates silver responses. These roles are jointly trained with Group Relative Policy Optimization (GRPO), which incorporates diversity and difficulty rewards to balance the complexity of generated questions with the quality of the silver answers. VisPlay scales efficiently across two model families. When trained on Qwen2.5-VL and MiMo-VL, VisPlay achieves consistent improvements in visual reasoning, compositional generalization, and hallucination reduction across eight benchmarks, including MM-Vet and MMMU, demonstrating a scalable path toward self-evolving multimodal intelligence. The project page is available at this https URL 
-
-**Abstract (ZH)**: 强化学习（RL）为通过复杂推理任务提高视觉语言模型（VLMs）提供了原则性的框架。然而，现有的RL方法通常依赖于人工标注的标签或特定任务的启发式方法来定义可验证的奖励，这两种方法都成本高昂且难以扩展。我们提出了一种自进化的RL框架VisPlay，该框架使VLMs能够自主利用大量未标注的图像数据提高其推理能力。VisPlay从一个基础的VLM开始，将其分配为两种交互的角色：一种是基于图像的问题提出者，提出具有挑战性但可回答的视觉问题；另一种是跨模态推理器，生成银级回答。这些角色通过联合训练和组相对策略优化（GRPO）进行训练，这种方法整合了多样性和难度奖励，以平衡生成问题的复杂性和银级回答的质量。VisPlay在两种模型家族中高效扩展。当在Qwen2.5-VL和MiMo-VL上训练时，VisPlay在八个基准测试中，包括MM-Vet和MMMU，在视觉推理、组合泛化和幻觉减少方面取得一致改进，展示了自进化的跨模态智能的可扩展路径。项目的页面可通过该链接访问。 
-
----
 # HV-Attack: Hierarchical Visual Attack for Multimodal Retrieval Augmented Generation 
 
 **Title (ZH)**: HV-攻击：多模态检索增强生成的分层视觉攻击 
@@ -113,18 +100,5 @@
 **Abstract**: This paper addresses data quality issues in multimodal emotion recognition in conversation (MERC) through systematic quality control and multi-stage transfer learning. We implement a quality control pipeline for MELD and IEMOCAP datasets that validates speaker identity, audio-text alignment, and face detection. We leverage transfer learning from speaker and face recognition, assuming that identity-discriminative embeddings capture not only stable acoustic and Facial traits but also person-specific patterns of emotional expression. We employ RecoMadeEasy(R) engines for extracting 512-dimensional speaker and face embeddings, fine-tune MPNet-v2 for emotion-aware text representations, and adapt these features through emotion-specific MLPs trained on unimodal datasets. MAMBA-based trimodal fusion achieves 64.8% accuracy on MELD and 74.3% on IEMOCAP. These results show that combining identity-based audio and visual embeddings with emotion-tuned text representations on a quality-controlled subset of data yields consistent competitive performance for multimodal emotion recognition in conversation and provides a basis for further improvement on challenging, low-frequency emotion classes. 
 
 **Abstract (ZH)**: 本文通过系统性质量控制和多阶段迁移学习解决多模态情绪识别对话（MERC）中的数据质量问题。我们为MELD和IEMOCAP数据集实施了一套质量控制流水线，验证说话人身份、音频-文本对齐和面部检测。我们利用说话人和面部识别的迁移学习，假设身份区分嵌入不仅捕捉稳定的声学和面部特征，还捕捉个体特定的情绪表达模式。我们使用RecoMadeEasy(R)引擎提取512维说话人和面部嵌入，微调MPNet-v2以获得情感意识的文本表示，并通过情感特定的MLP在单模态数据集上适应这些特征。基于MAMBA的三模态融合在MELD上达到64.8%的准确率，在IEMOCAP上达到74.3%。这些结果表明，结合基于身份的音频和视觉嵌入与情感调整的文本表示，可以在高质量控制的数据子集上获得一致的竞争性能，并为在具有挑战性的、低频率的情绪类别上进一步改进奠定了基础。 
-
----
-# Causally-Informed Reinforcement Learning for Adaptive Emotion-Aware Social Media Recommendation 
-
-**Title (ZH)**: 因果驱动的强化学习在自适应情绪感知社交媒体推荐中应用 
-
-**Authors**: Bhavika Jain, Robert Pitsko, Ananya Drishti, Mahfuza Farooque  
-
-**Link**: [PDF](https://arxiv.org/pdf/2511.14768)  
-
-**Abstract**: Social media recommendation systems play a central role in shaping users' emotional experiences. However, most systems are optimized solely for engagement metrics, such as click rate, viewing time, or scrolling, without accounting for users' emotional states. Repeated exposure to emotionally charged content has been shown to negatively affect users' emotional well-being over time. We propose an Emotion-aware Social Media Recommendation (ESMR) framework that personalizes content based on users' evolving emotional trajectories. ESMR integrates a Transformer-based emotion predictor with a hybrid recommendation policy: a LightGBM model for engagement during stable periods and a reinforcement learning agent with causally informed rewards when negative emotional states persist. Through behaviorally grounded evaluation over 30-day interaction traces, ESMR demonstrates improved emotional recovery, reduced volatility, and strong engagement retention. ESMR offers a path toward emotionally aware recommendations without compromising engagement performance. 
-
-**Abstract (ZH)**: 基于情感意识的社会媒体推荐框架（ESMR）在塑造用户情感体验中的作用与其优化研究 
 
 ---

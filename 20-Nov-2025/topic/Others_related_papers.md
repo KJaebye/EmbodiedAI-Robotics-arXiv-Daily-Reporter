@@ -26,7 +26,7 @@
 ---
 # Terra Nova: A Comprehensive Challenge Environment for Intelligent Agents 
 
-**Title (ZH)**: Terra Nova: 一个全面的智能代理挑战环境 
+**Title (ZH)**: Terra Nova：智能代理的综合挑战环境 
 
 **Authors**: Trevor McInroe  
 
@@ -34,7 +34,7 @@
 
 **Abstract**: We introduce Terra Nova, a new comprehensive challenge environment (CCE) for reinforcement learning (RL) research inspired by Civilization V. A CCE is a single environment in which multiple canonical RL challenges (e.g., partial observability, credit assignment, representation learning, enormous action spaces, etc.) arise simultaneously. Mastery therefore demands integrated, long-horizon understanding across many interacting variables. We emphasize that this definition excludes challenges that only aggregate unrelated tasks in independent, parallel streams (e.g., learning to play all Atari games at once). These aggregated multitask benchmarks primarily asses whether an agent can catalog and switch among unrelated policies rather than test an agent's ability to perform deep reasoning across many interacting challenges. 
 
-**Abstract (ZH)**: 我们介绍Terra Nova：一种受文明V启发的新型综合挑战环境（CCE）以促进强化学习（RL）研究 
+**Abstract (ZH)**: 我们介绍Terra Nova：一种受文明V启发的新全面挑战环境（CCE）以促进强化学习（RL）研究 
 
 ---
 # Realist and Pluralist Conceptions of Intelligence and Their Implications on AI Research 
@@ -63,9 +63,22 @@
 **Abstract (ZH)**: AI研究 increasingly转向复杂问题求解：效率边界将取代数据边界推动 reasoning AI 发展及治理方向探讨 
 
 ---
+# SafeRBench: A Comprehensive Benchmark for Safety Assessment in Large Reasoning Models 
+
+**Title (ZH)**: SafeRBench：大规模推理模型安全性评估的综合基准 
+
+**Authors**: Xin Gao, Shaohan Yu, Zerui Chen, Yueming Lyu, Weichen Yu, Guanghao Li, Jiyao Liu, Jianxiong Gao, Jian Liang, Ziwei Liu, Chenyang Si  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.15169)  
+
+**Abstract**: Large Reasoning Models (LRMs) improve answer quality through explicit chain-of-thought, yet this very capability introduces new safety risks: harmful content can be subtly injected, surface gradually, or be justified by misleading rationales within the reasoning trace. Existing safety evaluations, however, primarily focus on output-level judgments and rarely capture these dynamic risks along the reasoning process. In this paper, we present SafeRBench, the first benchmark that assesses LRM safety end-to-end -- from inputs and intermediate reasoning to final outputs. (1) Input Characterization: We pioneer the incorporation of risk categories and levels into input design, explicitly accounting for affected groups and severity, and thereby establish a balanced prompt suite reflecting diverse harm gradients. (2) Fine-Grained Output Analysis: We introduce a micro-thought chunking mechanism to segment long reasoning traces into semantically coherent units, enabling fine-grained evaluation across ten safety dimensions. (3) Human Safety Alignment: We validate LLM-based evaluations against human annotations specifically designed to capture safety judgments. Evaluations on 19 LRMs demonstrate that SafeRBench enables detailed, multidimensional safety assessment, offering insights into risks and protective mechanisms from multiple perspectives. 
+
+**Abstract (ZH)**: 大型推理模型的安全性评估：SafeRBench 
+
+---
 # Task Specific Sharpness Aware O-RAN Resource Management using Multi Agent Reinforcement Learning 
 
-**Title (ZH)**: 任务特定的敏锐度意识O-RAN资源管理多代理强化学习 
+**Title (ZH)**: 任务特定的锐度感知O-RAN资源管理多代理强化学习方法 
 
 **Authors**: Fatemeh Lotfi, Hossein Rajoli, Fatemeh Afghah  
 
@@ -73,7 +86,7 @@
 
 **Abstract**: Next-generation networks utilize the Open Radio Access Network (O-RAN) architecture to enable dynamic resource management, facilitated by the RAN Intelligent Controller (RIC). While deep reinforcement learning (DRL) models show promise in optimizing network resources, they often struggle with robustness and generalizability in dynamic environments. This paper introduces a novel resource management approach that enhances the Soft Actor Critic (SAC) algorithm with Sharpness-Aware Minimization (SAM) in a distributed Multi-Agent RL (MARL) framework. Our method introduces an adaptive and selective SAM mechanism, where regularization is explicitly driven by temporal-difference (TD)-error variance, ensuring that only agents facing high environmental complexity are regularized. This targeted strategy reduces unnecessary overhead, improves training stability, and enhances generalization without sacrificing learning efficiency. We further incorporate a dynamic $\rho$ scheduling scheme to refine the exploration-exploitation trade-off across agents. Experimental results show our method significantly outperforms conventional DRL approaches, yielding up to a $22\%$ improvement in resource allocation efficiency and ensuring superior QoS satisfaction across diverse O-RAN slices. 
 
-**Abstract (ZH)**: 下一代网络利用开放无线接入网（O-RAN）架构并通过无线接入网智能控制器（RIC）实现动态资源管理。虽然深度强化学习（DRL）模型在优化网络资源方面显示出潜力，但它们在动态环境中的健壮性和泛化能力通常较差。本文介绍了一种新颖的资源管理方法，该方法在分布式多代理强化学习（MARL）框架中增强了Soft Actor Critic（SAC）算法，并结合了Sharpness-Aware Minimization（SAM）机制。该方法引入了一种自适应和选择性的SAM机制，通过时间差分（TD）误差方差显式驱动正则化，确保仅在面对高环境复杂性时才进行正则化。这一目标策略减少了不必要的开销，提高了训练稳定性，并在不牺牲学习效率的情况下增强泛化能力。此外，本文还引入了一种动态$\rho$调度方案，以跨代理优化探索与利用的权衡。实验结果表明，该方法显著优于传统DRL方法，在资源分配效率上提升了高达22%，并在各种O-RAN切片中确保了更优的QoS满意度。 
+**Abstract (ZH)**: 下一代网络利用Open Radio Access Network (O-RAN) 架构并通过RAN Intelligent Controller (RIC) 实现动态资源管理。虽然深度强化学习（DRL）模型在优化网络资源方面表现出潜力，但往往在动态环境中面临 robustness 和 generalizability 的挑战。本文提出了一种新颖的资源管理方法，在分布式多代理 RL（MARL）框架中增强了 Soft Actor Critic (SAC) 算法，并引入了基于梯度尖锐化意识最小化（Sharpness-Aware Minimization, SAM）的自适应和选择性机制，通过显式驱动时间差分（TD）误差方差来正则化，确保仅在面临高环境复杂性的代理上应用正则化。这种有针对性的策略减少了不必要的开销，提高了训练稳定性，并在不牺牲学习效率的情况下增强了泛化能力。此外，我们还引入了动态 $\rho$ 调度方案以优化代理间的探索-利用权衡。实验结果表明，本文方法显著优于传统的 DRL 方法，在资源分配效率上提高了高达 22%，并在多种 O-RAN 切片中确保了更优的 QoS 满足度。 
 
 ---
 # Uncertainty-Aware Measurement of Scenario Suite Representativeness for Autonomous Systems 
@@ -105,7 +118,7 @@ We apply an imprecise Bayesian method to handle limited data and uncertain prior
 ---
 # Learning Interestingness in Automated Mathematical Theory Formation 
 
-**Title (ZH)**: 自动数学理论形成中的兴趣性学习 
+**Title (ZH)**: 自动数学理论形成中的有趣性学习 
 
 **Authors**: George Tsoukalas, Rahul Saha, Amitayush Thakur, Sabrina Reguyal, Swarat Chaudhuri  
 
@@ -113,7 +126,7 @@ We apply an imprecise Bayesian method to handle limited data and uncertain prior
 
 **Abstract**: We take two key steps in automating the open-ended discovery of new mathematical theories, a grand challenge in artificial intelligence. First, we introduce $\emph{FERMAT}$, a reinforcement learning (RL) environment that models concept discovery and theorem-proving using a set of symbolic actions, opening up a range of RL problems relevant to theory discovery. Second, we explore a specific problem through $\emph{FERMAT}$: automatically scoring the $\emph{interestingness}$ of mathematical objects. We investigate evolutionary algorithms for synthesizing nontrivial interestingness measures. In particular, we introduce an LLM-based evolutionary algorithm that features function abstraction, leading to notable improvements in discovering elementary number theory and finite fields over hard-coded baselines. We open-source the $\emph{FERMAT}$ environment at this URL(this https URL). 
 
-**Abstract (ZH)**: 我们在这项工作中共实现了自动化发现新数学理论的两个关键步骤，这是人工智能领域的一项宏伟挑战。首先，我们引入了$\emph{FERMAT}$，一个基于符号操作的强化学习环境，用于建模概念发现和定理证明，从而开启了与理论发现相关的广泛RL问题空间。其次，我们通过$\emph{FERMAT}$探讨了一个具体问题：自动评估数学对象的“有趣性”。我们研究了进化算法以合成非平凡的兴趣度量，并引入了一种基于大语言模型的进化算法，该算法具备函数抽象特性，并在发现初等数论和有限域方面取得了显著进步。我们开源了$\emph{FERMAT}$环境，网址见下：(这个 https URL)。 
+**Abstract (ZH)**: 我们在自动化开放式新的数学理论发现中采取了两项关键步骤，这是人工智能领域的重大挑战。首先，我们引入了FERMAT环境，这是一种基于符号操作的强化学习（RL）环境，用于建模概念发现和定理证明，这为理论发现相关的RL问题打开了新的大门。其次，我们通过FERMAT环境探讨了一个具体问题：自动评估数学对象的“有趣性”。我们研究了演化算法以合成非平凡的有趣性度量。特别地，我们引入了一种基于LLM的演化算法，该算法具备函数抽象特性，在发现初等数论和有限域方面相比硬编码基线取得了显著改进。我们在该URL(this https URL)开源了FERMAT环境。 
 
 ---
 # Joint Semantic-Channel Coding and Modulation for Token Communications 
@@ -127,6 +140,65 @@ We apply an imprecise Bayesian method to handle limited data and uncertain prior
 **Abstract**: In recent years, the Transformer architecture has achieved outstanding performance across a wide range of tasks and modalities. Token is the unified input and output representation in Transformer-based models, which has become a fundamental information unit. In this work, we consider the problem of token communication, studying how to transmit tokens efficiently and reliably. Point cloud, a prevailing three-dimensional format which exhibits a more complex spatial structure compared to image or video, is chosen to be the information source. We utilize the set abstraction method to obtain point tokens. Subsequently, to get a more informative and transmission-friendly representation based on tokens, we propose a joint semantic-channel and modulation (JSCCM) scheme for the token encoder, mapping point tokens to standard digital constellation points (modulated tokens). Specifically, the JSCCM consists of two parallel Point Transformer-based encoders and a differential modulator which combines the Gumel-softmax and soft quantization methods. Besides, the rate allocator and channel adapter are developed, facilitating adaptive generation of high-quality modulated tokens conditioned on both semantic information and channel conditions. Extensive simulations demonstrate that the proposed method outperforms both joint semantic-channel coding and traditional separate coding, achieving over 1dB gain in reconstruction and more than 6x compression ratio in modulated symbols. 
 
 **Abstract (ZH)**: 近年来，Transformer架构在各种任务和模态中取得了出色的表现。Token是基于Transformer模型的统一输入和输出表示，已经成为基本的信息单元。在本文中，我们考虑了Token通信的问题，研究如何高效可靠地传输Token。点云作为一种相比于图像或视频表现出更复杂空间结构的主流三维格式，被选为信息源。我们利用集合抽象方法获得点Token。随后，为了基于Token获得更具信息量且便于传输的表示，我们提出了一种联合语义信道和调制（JSCCM）方案，将点Token映射为标准数字星座点（调制Token）。具体来说，JSCCM由两个并行的基于点Transformer的编码器和一个结合Gumel-softmax和软量化方法的差分调制器组成。此外，我们开发了速率分配器和信道适配器，以根据语义信息和信道条件自适应地生成高质量的调制Token。广泛仿真实验表明，所提出的方法在重建方面优于联合语义信道编码和传统分离编码，获得了超过1dB的增益，并且在调制符号方面的压缩比超过6倍。 
+
+---
+# Think Visually, Reason Textually: Vision-Language Synergy in ARC 
+
+**Title (ZH)**: 可视化思考，文本推理：ARC中的视觉-语言协同作用 
+
+**Authors**: Beichen Zhang, Yuhang Zang, Xiaoyi Dong, Yuhang Cao, Haodong Duan, Dahua Lin, Jiaqi Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.15703)  
+
+**Abstract**: Abstract reasoning from minimal examples remains a core unsolved problem for frontier foundation models such as GPT-5 and Grok 4. These models still fail to infer structured transformation rules from a handful of examples, which is a key hallmark of human intelligence. The Abstraction and Reasoning Corpus for Artificial General Intelligence (ARC-AGI) provides a rigorous testbed for this capability, demanding conceptual rule induction and transfer to novel tasks. Most existing methods treat ARC-AGI as a purely textual reasoning task, overlooking the fact that humans rely heavily on visual abstraction when solving such puzzles. However, our pilot experiments reveal a paradox: naively rendering ARC-AGI grids as images degrades performance due to imprecise rule execution. This leads to our central hypothesis that vision and language possess complementary strengths across distinct reasoning stages: vision supports global pattern abstraction and verification, whereas language specializes in symbolic rule formulation and precise execution. Building on this insight, we introduce two synergistic strategies: (1) Vision-Language Synergy Reasoning (VLSR), which decomposes ARC-AGI into modality-aligned subtasks; and (2) Modality-Switch Self-Correction (MSSC), which leverages vision to verify text-based reasoning for intrinsic error correction. Extensive experiments demonstrate that our approach yields up to a 4.33% improvement over text-only baselines across diverse flagship models and multiple ARC-AGI tasks. Our findings suggest that unifying visual abstraction with linguistic reasoning is a crucial step toward achieving generalizable, human-like intelligence in future foundation models. Source code will be released soon. 
+
+**Abstract (ZH)**: 抽象推理从最小样本出发仍然是前沿基础模型如GPT-5和Grok 4的核心未解问题。这些模型仍然无法从少量示例中推断出结构化的转换规则，这是人类智能的一个关键标志。人工通用智能抽象与推理语料库（ARC-AGI）为这种能力提供了一个严格的测试平台，要求概念规则归纳和向新颖任务的转移。现有大多数方法将ARC-AGI视为纯粹的文字推理任务，忽视了人类在解决这类谜题时高度依赖视觉抽象的事实。然而，我们的初步实验揭示了一个悖论：将ARC-AGI网格直接渲染为图像会导致性能下降，因为规则执行不够精确。这让我们形成一个中心假设，即视觉和语言在不同的推理阶段具有互补的优势：视觉支持全局模式的抽象和验证，而语言则专门负责符号规则的制定和精确执行。基于这一见解，我们引入了两种协同策略：（1）视觉-语言协同推理（VLSR），将ARC-AGI分解为模态对齐的子任务；（2）模式切换自校正（MSSC），利用视觉验证基于文本的推理以进行内在错误校正。广泛实验表明，我们的方法在多种旗舰模型和ARC-AGI任务中相较于纯文本基准提高了多达4.33%的表现。我们的研究结果表明，将视觉抽象与语言推理统一起来是未来基础模型实现可泛化的、类人的智能的关键步骤之一。源代码即将发布。 
+
+---
+# Walrus: A Cross-Domain Foundation Model for Continuum Dynamics 
+
+**Title (ZH)**: walrus: 跨域连续动力学基础模型 
+
+**Authors**: Michael McCabe, Payel Mukhopadhyay, Tanya Marwah, Bruno Regaldo-Saint Blancard, Francois Rozet, Cristiana Diaconu, Lucas Meyer, Kaze W. K. Wong, Hadi Sotoudeh, Alberto Bietti, Irina Espejo, Rio Fear, Siavash Golkar, Tom Hehir, Keiya Hirashima, Geraud Krawezik, Francois Lanusse, Rudy Morel, Ruben Ohana, Liam Parker, Mariel Pettee, Jeff Shen, Kyunghyun Cho, Miles Cranmer, Shirley Ho  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.15684)  
+
+**Abstract**: Foundation models have transformed machine learning for language and vision, but achieving comparable impact in physical simulation remains a challenge. Data heterogeneity and unstable long-term dynamics inhibit learning from sufficiently diverse dynamics, while varying resolutions and dimensionalities challenge efficient training on modern hardware. Through empirical and theoretical analysis, we incorporate new approaches to mitigate these obstacles, including a harmonic-analysis-based stabilization method, load-balanced distributed 2D and 3D training strategies, and compute-adaptive tokenization. Using these tools, we develop Walrus, a transformer-based foundation model developed primarily for fluid-like continuum dynamics. Walrus is pretrained on nineteen diverse scenarios spanning astrophysics, geoscience, rheology, plasma physics, acoustics, and classical fluids. Experiments show that Walrus outperforms prior foundation models on both short and long term prediction horizons on downstream tasks and across the breadth of pretraining data, while ablation studies confirm the value of our contributions to forecast stability, training throughput, and transfer performance over conventional approaches. Code and weights are released for community use. 
+
+**Abstract (ZH)**: 基础模型已 transformative 语言和视觉领域的机器学习，但在物理模拟中实现同等影响仍面临挑战。数据异质性和不稳定的长期动态阻碍了从足够多样化的动态中学习，而不同的分辨率和维度则对现代硬件上的高效训练构成了挑战。通过实证和理论分析，我们引入了新的方法来缓解这些障碍，包括基于谐波分析的稳定方法、负载均衡的分布式二维和三维训练策略，以及计算自适应的标记化方法。借助这些工具，我们开发了Walrus，这是一种主要用于流体-like 连续体动力学的基础模型。Walrus在天体物理学、地球科学、流变学、等离子体物理学、声学和经典流体等19种不同场景下进行预训练。实验表明，Walrus在下游任务和预训练数据的短期和长期预测方面均优于先前的基础模型，消除实验进一步证实了我们在预测稳定性、训练吞吐量和转移性能方面的贡献优于传统方法。已发布代码和权重供社区使用。 
+
+---
+# GEO-Bench-2: From Performance to Capability, Rethinking Evaluation in Geospatial AI 
+
+**Title (ZH)**: GEO-Bench-2: 从性能到能力，重新思考地理空间AI的评估 
+
+**Authors**: Naomi Simumba, Nils Lehmann, Paolo Fraccaro, Hamed Alemohammad, Geeth De Mel, Salman Khan, Manil Maskey, Nicolas Longepe, Xiao Xiang Zhu, Hannah Kerner, Juan Bernabe-Moreno, Alexander Lacoste  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.15658)  
+
+**Abstract**: Geospatial Foundation Models (GeoFMs) are transforming Earth Observation (EO), but evaluation lacks standardized protocols. GEO-Bench-2 addresses this with a comprehensive framework spanning classification, segmentation, regression, object detection, and instance segmentation across 19 permissively-licensed datasets. We introduce ''capability'' groups to rank models on datasets that share common characteristics (e.g., resolution, bands, temporality). This enables users to identify which models excel in each capability and determine which areas need improvement in future work. To support both fair comparison and methodological innovation, we define a prescriptive yet flexible evaluation protocol. This not only ensures consistency in benchmarking but also facilitates research into model adaptation strategies, a key and open challenge in advancing GeoFMs for downstream tasks.
+Our experiments show that no single model dominates across all tasks, confirming the specificity of the choices made during architecture design and pretraining. While models pretrained on natural images (ConvNext ImageNet, DINO V3) excel on high-resolution tasks, EO-specific models (TerraMind, Prithvi, and Clay) outperform them on multispectral applications such as agriculture and disaster response. These findings demonstrate that optimal model choice depends on task requirements, data modalities, and constraints. This shows that the goal of a single GeoFM model that performs well across all tasks remains open for future research. GEO-Bench-2 enables informed, reproducible GeoFM evaluation tailored to specific use cases. Code, data, and leaderboard for GEO-Bench-2 are publicly released under a permissive license. 
+
+**Abstract (ZH)**: GeoFMs的空间基础模型正在变革地球观测（EO），但评估缺乏标准化的协议。GEO-Bench-2通过涵盖分类、分割、回归、对象检测和实例分割的全面框架，解决了这一问题，该框架覆盖了19个许可使用的数据集。我们引入“能力”组，根据数据集共享的共同特征（如分辨率、波段、时序性）对模型进行排名。这使得用户能够识别出哪些模型在每个能力上表现最佳，并确定未来工作中需要改进的领域。为了支持公平比较和方法创新，我们定义了一种处方但灵活的评估协议。这不仅确保了基准测试的一致性，还促进了针对下游任务改进GeoFMs的模型适应策略的研究，这是一项关键且开放的挑战。我们的实验表明，没有单一模型能够在所有任务中占据主导地位，这证实了在架构设计和预训练过程中所做的选择具有特定性。虽然在自然图像上预训练的模型（ConvNext ImageNet，DINO V3）在高分辨率任务中表现出色，但专门针对EO的应用模型（TerraMind，Prithvi，和Clay）在农业和灾害响应等多光谱应用中表现更优。这些发现表明，最优模型的选择取决于任务要求、数据模态和约束条件。这表明，一个适用于所有任务的GeoFM模型的表现仍然需要未来研究来验证。GEO-Bench-2使针对具体应用场景进行知情和可重复的GeoFM评估成为可能。GEO-Bench-2的代码、数据和排行榜在宽松的许可下公开发布。 
+
+---
+# Continual Reinforcement Learning for Cyber-Physical Systems: Lessons Learned and Open Challenges 
+
+**Title (ZH)**: 持续强化学习在网络物理系统中的应用：经验教训与开放挑战 
+
+**Authors**: Kim N. Nolle, Ivana Dusparic, Rhodri Cusack, Vinny Cahill  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.15652)  
+
+**Abstract**: Continual learning (CL) is a branch of machine learning that aims to enable agents to adapt and generalise previously learned abilities so that these can be reapplied to new tasks or environments. This is particularly useful in multi-task settings or in non-stationary environments, where the dynamics can change over time. This is particularly relevant in cyber-physical systems such as autonomous driving. However, despite recent advances in CL, successfully applying it to reinforcement learning (RL) is still an open problem.
+This paper highlights open challenges in continual RL (CRL) based on experiments in an autonomous driving environment. In this environment, the agent must learn to successfully park in four different scenarios corresponding to parking spaces oriented at varying angles. The agent is successively trained in these four scenarios one after another, representing a CL environment, using Proximal Policy Optimisation (PPO). These experiments exposed a number of open challenges in CRL: finding suitable abstractions of the environment, oversensitivity to hyperparameters, catastrophic forgetting, and efficient use of neural network capacity.
+Based on these identified challenges, we present open research questions that are important to be addressed for creating robust CRL systems. In addition, the identified challenges call into question the suitability of neural networks for CL. We also identify the need for interdisciplinary research, in particular between computer science and neuroscience. 
+
+**Abstract (ZH)**: 持续学习（CL）是机器学习的一个分支，旨在使智能体能够适应并泛化之前学到的能力，以便这些能力能够应用于新的任务或环境中。这在多任务设置或非稳态环境中尤为重要，因为系统的动态性会随时间变化。这在自动驾驶等物理-信息系统中尤为相关。然而，尽管在持续学习领域取得了 recent 进展，将其成功应用于强化学习（RL）仍然是一个开放问题。
+
+本文基于在自动驾驶环境中进行的实验，指出了基于持续学习的强化学习（CRL）中的几个开放挑战。在这些实验中，智能体需要依次学习在四个不同场景下成功停车的能力，这些场景对应于不同角度的停车位。智能体使用 proximal 策略优化（PPO）在这些四个场景中逐个接受训练，形成一个持续学习环境。这些实验揭示了 CRL 中的若干开放挑战：环境的有效抽象、超参数的过度敏感性、灾难性遗忘以及神经网络容量的有效利用。
+
+基于上述识别出的挑战，我们提出了亟待解决的开放研究问题，以创建可靠的持续学习强化学习系统。此外，这些挑战也引发了对神经网络在持续学习中适用性的疑问，强调了跨学科研究的必要性，特别是在计算机科学与神经科学之间。 
 
 ---
 # Sufficient Explanations in Databases and their Connections to Necessary Explanations and Repairs 
@@ -144,7 +216,7 @@ We apply an imprecise Bayesian method to handle limited data and uncertain prior
 ---
 # The SA-FARI Dataset: Segment Anything in Footage of Animals for Recognition and Identification 
 
-**Title (ZH)**: SA-FARI数据集：识别与鉴定动物片段中的对象 
+**Title (ZH)**: SA-FARI数据集：动物影像中的目标分割以实现识别和鉴定 
 
 **Authors**: Dante Francisco Wasmuht, Otto Brookes, Maximillian Schall, Pablo Palencia, Chris Beirne, Tilo Burghardt, Majid Mirmehdi, Hjalmar Kühl, Mimi Arandjelovic, Sam Pottie, Peter Bermant, Brandon Asheim, Yi Jin Toh, Adam Elzinga, Jason Holmberg, Andrew Whitworth, Eleanor Flatt, Laura Gustafson, Chaitanya Ryali, Yuan-Ting Hu, Baishan Guo, Andrew Westbury, Kate Saenko, Didac Suris  
 
@@ -152,7 +224,7 @@ We apply an imprecise Bayesian method to handle limited data and uncertain prior
 
 **Abstract**: Automated video analysis is critical for wildlife conservation. A foundational task in this domain is multi-animal tracking (MAT), which underpins applications such as individual re-identification and behavior recognition. However, existing datasets are limited in scale, constrained to a few species, or lack sufficient temporal and geographical diversity - leaving no suitable benchmark for training general-purpose MAT models applicable across wild animal populations. To address this, we introduce SA-FARI, the largest open-source MAT dataset for wild animals. It comprises 11,609 camera trap videos collected over approximately 10 years (2014-2024) from 741 locations across 4 continents, spanning 99 species categories. Each video is exhaustively annotated culminating in ~46 hours of densely annotated footage containing 16,224 masklet identities and 942,702 individual bounding boxes, segmentation masks, and species labels. Alongside the task-specific annotations, we publish anonymized camera trap locations for each video. Finally, we present comprehensive benchmarks on SA-FARI using state-of-the-art vision-language models for detection and tracking, including SAM 3, evaluated with both species-specific and generic animal prompts. We also compare against vision-only methods developed specifically for wildlife analysis. SA-FARI is the first large-scale dataset to combine high species diversity, multi-region coverage, and high-quality spatio-temporal annotations, offering a new foundation for advancing generalizable multianimal tracking in the wild. The dataset is available at $\href{this https URL}{\text{this http URL}}$. 
 
-**Abstract (ZH)**: 自动视频分析对于野生动物保护至关重要。该领域的一项基础任务是多动物跟踪（MAT），其支撑着个体重识别和行为识别等应用。然而，现有的数据集在规模上有限制，仅限于少数几种物种，或者缺乏足够的时空多样性，因此没有适合训练适用于广泛野生动物种群的一般多动物跟踪模型的基准数据集。为了解决这一问题，我们引入了SA-FARI，这是一个最大的开源野生动物多动物跟踪数据集。该数据集包含约10年（2014-2024年）来自四大洲741个地点的11,609个相机陷阱视频，涵盖了99个物种类别。每个视频都进行了详尽标注，总计约46小时密集标注的视频片段，包含16,224个掩码身份和942,702个个体边界框、分割掩码和物种标签。除了任务特定的标注，我们还发布了每个视频的匿名相机陷阱位置。最后，我们使用最新的视觉-语言模型在SA-FARI上进行了综合基准测试，包括SAM 3，评估了特定物种和通用动物提示下的检测和跟踪性能。我们还将与专门为野生动物分析开发的仅视觉方法进行了比较。SA-FARI是第一个结合高物种多样性、多区域覆盖和高质量时空标注的大规模数据集，为进一步发展通用多动物跟踪提供了新的基础。数据集可在<这个网址>获得。 
+**Abstract (ZH)**: 自动视频分析对于野生动物保护至关重要。该领域的一个基础任务是多动物追踪（MAT），其支撑着个体再识别和行为识别等应用。然而，现有的数据集在规模、物种限制或时空多样性方面存在局限性，缺乏适用于跨野生动物种群的一般性MAT模型的基准。为解决这一问题，我们引入了SA-FARI，这是最大的开放源多动物追踪数据集，用于野生動物。该数据集包含从四大洲741个地点收集的约10年（2014-2024）时间跨度的11,609个相机陷阱视频，涵盖99种物种类别。每个视频都被详尽标注，总计约46小时密集标注的视频片段，包含16,224个掩码身份和942,702个个体边界框、分割掩码和物种标签。除了特定任务的标注外，我们还发布了每个视频的匿名相机陷阱位置。最后，我们使用最新的视觉-语言模型对SA-FARI进行全面基准测试，包括SAM 3，该模型用特定物种和通用动物提示进行评估。我们还与专门为野生动物分析开发的仅视觉方法进行了比较。SA-FARI是第一个结合高物种多样性、多区域覆盖和高质量时空标注的大规模数据集，为推进通用多动物追踪提供了新的基础。数据集可以访问：this https URL 
 
 ---
 # B+ANN: A Fast Billion-Scale Disk-based Nearest-Neighbor Index 
@@ -168,22 +240,9 @@ We apply an imprecise Bayesian method to handle limited data and uncertain prior
 **Abstract (ZH)**: 专用向量数据库（VDBs）存储和处理嵌入向量已成为构建现代AI管道的关键。本文提出了一种新的基于磁盘的ANN索引B+ANN，以解决现有问题：首先将输入数据划分为包含语义相似项的块，然后构建一种B+树变体，同时在内存和磁盘中存储块，并最终实现基于边和块的混合内存遍历。实验评估表明，提出的B+ANN磁盘索引在Recall值和查询每秒数量（QPS）方面均优于HNSW，通过改善空间和时间局部性、减少缓存缺失（相对增益19.23%）和磁盘构建时间减少24倍，从而提高语义操作的执行性能，并且还支持不是面向相似性查询的ANN索引所不支持的差异性查询。 
 
 ---
-# Multimodal Evaluation of Russian-language Architectures 
-
-**Title (ZH)**: 俄语架构的多模态评估 
-
-**Authors**: Artem Chervyakov, Ulyana Isaeva, Anton Emelyanov, Artem Safin, Maria Tikhonova, Alexander Kharitonov, Yulia Lyakh, Petr Surovtsev, Denis Shevelev Vildan Saburov, Vasily Konovalov, Elisei Rykov, Ivan Sviridov, Amina Miftakhova, Ilseyar Alimova, Alexander Panchenko, Alexander Kapitanov, Alena Fenogenova  
-
-**Link**: [PDF](https://arxiv.org/pdf/2511.15552)  
-
-**Abstract**: Multimodal large language models (MLLMs) are currently at the center of research attention, showing rapid progress in scale and capabilities, yet their intelligence, limitations, and risks remain insufficiently understood. To address these issues, particularly in the context of the Russian language, where no multimodal benchmarks currently exist, we introduce Mera Multi, an open multimodal evaluation framework for Russian-spoken architectures. The benchmark is instruction-based and encompasses default text, image, audio, and video modalities, comprising 18 newly constructed evaluation tasks for both general-purpose models and modality-specific architectures (image-to-text, video-to-text, and audio-to-text). Our contributions include: (i) a universal taxonomy of multimodal abilities; (ii) 18 datasets created entirely from scratch with attention to Russian cultural and linguistic specificity, unified prompts, and metrics; (iii) baseline results for both closed-source and open-source models; (iv) a methodology for preventing benchmark leakage, including watermarking and licenses for private sets. While our current focus is on Russian, the proposed benchmark provides a replicable methodology for constructing multimodal benchmarks in typologically diverse languages, particularly within the Slavic language family. 
-
-**Abstract (ZH)**: 多模态大规模语言模型（MLLMs）目前是研究焦点，显示出在规模和能力上的迅速进展，但其智能性、限制和风险仍不够了解。为应对这些问题，特别是在目前俄语领域缺乏多模态基准的情况下，我们引入了Mera Multi，一个针对俄语架构的开放多模态评估框架。该基准基于指令，包括默认的文字、图像、音频和视频模态，共有18项新的评估任务，适用于通用模型和模态特定架构（图像到文本、视频到文本和音频到文本）。我们的贡献包括：(i) 一个多模态能力的通用分类学；(ii) 18个从零开始创建的数据集，注意俄语文化与语言的特殊性，统一的提示和评估指标；(iii) 专源和开源模型的基线结果；(iv) 防止基准泄漏的方法，包括水印和私有集的许可证。虽然我们的当前重点是俄语，但所提出的基准为在不同类型的语言中构建多模态基准提供了可复制的方法，特别是斯拉夫语族语言。 
-
----
 # Theoretical Closed-loop Stability Bounds for Dynamical System Coupled with Diffusion Policies 
 
-**Title (ZH)**: 耦合了扩散策略的动力系统闭环稳定性理论界值 
+**Title (ZH)**: 带有扩散策略耦合的动力系统闭环稳定性理论界值 
 
 **Authors**: Gabriel Lauzier, Alexandre Girard, François Ferland  
 
@@ -191,7 +250,7 @@ We apply an imprecise Bayesian method to handle limited data and uncertain prior
 
 **Abstract**: Diffusion Policy has shown great performance in robotic manipulation tasks under stochastic perturbations, due to its ability to model multimodal action distributions. Nonetheless, its reliance on a computationally expensive reverse-time diffusion (denoising) process, for action inference, makes it challenging to use for real-time applications where quick decision-making is mandatory. This work studies the possibility of conducting the denoising process only partially before executing an action, allowing the plant to evolve according to its dynamics in parallel to the reverse-time diffusion dynamics ongoing on the computer. In a classical diffusion policy setting, the plant dynamics are usually slow and the two dynamical processes are uncoupled. Here, we investigate theoretical bounds on the stability of closed-loop systems using diffusion policies when the plant dynamics and the denoising dynamics are coupled. The contribution of this work gives a framework for faster imitation learning and a metric that yields if a controller will be stable based on the variance of the demonstrations. 
 
-**Abstract (ZH)**: 扩散政策在随机扰动下的机器人操纵任务中表现出色，得益于其能够建模多模态动作分布的能力。然而，其依赖于在进行动作推断时需要进行昂贵的反向时间扩散（去噪）过程，这使其难以应用于要求快速决策的实时应用中。本工作研究了在执行动作之前仅部分进行去噪过程的可能性，使得在计算机上进行反向时间扩散的同时，机器人按照其动态演化。在经典的扩散政策设置中，通常植物动力学较慢且两种动力学过程是解耦的。本工作调查了当植物动力学和去噪动力学耦合时，使用扩散政策的闭环系统稳定性理论界。本工作的贡献提供了更快的模仿学习框架以及一个基于演示数据的方差能够判断控制器是否稳定的度量标准。 
+**Abstract (ZH)**: 扩散策略在随机扰动下的机器人 manipulation 任务中表现出色，得益于其能够建模多模态动作分布的能力。然而，其依赖于计算成本高昂的逆时扩散（去噪）过程，用于动作推断，这使其难以应用于要求快速决策的实时应用。本文研究了在执行动作之前仅部分进行去噪过程的可能性，允许执行动作的系统根据其动力学与计算机上的逆时扩散动力学并行演化。在传统的扩散策略设置中，系统动力学通常较慢且两者不耦合。本文探讨了当系统动力学和去噪动力学耦合时，使用扩散策略的闭环系统稳定性理论界。本文的贡献提供了一种更快速的模仿学习框架以及一个基于示范方差的稳定性评估指标。 
 
 ---
 # Insights from the ICLR Peer Review and Rebuttal Process 
@@ -248,7 +307,7 @@ We apply an imprecise Bayesian method to handle limited data and uncertain prior
 ---
 # RRT*former: Environment-Aware Sampling-Based Motion Planning using Transformer 
 
-**Title (ZH)**: RRT*former: 基于环境aware采样并使用Transformer的运动规划 
+**Title (ZH)**: RRT*former: 基于变压器的环境意识采样运动规划 
 
 **Authors**: Mingyang Feng, Shaoyuan Li, Xiang Yin  
 
@@ -256,7 +315,7 @@ We apply an imprecise Bayesian method to handle limited data and uncertain prior
 
 **Abstract**: We investigate the sampling-based optimal path planning problem for robotics in complex and dynamic environments. Most existing sampling-based algorithms neglect environmental information or the information from previous samples. Yet, these pieces of information are highly informative, as leveraging them can provide better heuristics when sampling the next state. In this paper, we propose a novel sampling-based planning algorithm, called \emph{RRT*former}, which integrates the standard RRT* algorithm with a Transformer network in a novel way. Specifically, the Transformer is used to extract features from the environment and leverage information from previous samples to better guide the sampling process. Our extensive experiments demonstrate that, compared to existing sampling-based approaches such as RRT*, Neural RRT*, and their variants, our algorithm achieves considerable improvements in both the optimality of the path and sampling efficiency. The code for our implementation is available on this https URL. 
 
-**Abstract (ZH)**: 基于采样的机器人在复杂动态环境中的最优路径规划问题研究：一种新型的结合Transformer网络的RRT*算法 
+**Abstract (ZH)**: 基于采样的机器人在复杂动态环境中的路径规划问题研究：一种新颖的结合Transformer的RRT*former算法 
 
 ---
 # Parameter Importance-Driven Continual Learning for Foundation Models 
@@ -274,7 +333,7 @@ We apply an imprecise Bayesian method to handle limited data and uncertain prior
 ---
 # IPTQ-ViT: Post-Training Quantization of Non-linear Functions for Integer-only Vision Transformers 
 
-**Title (ZH)**: IPTQ-ViT：仅整数视觉变换器的后训练量化非线性函数 
+**Title (ZH)**: IPTQ-ViT：仅整数视觉变换器的后训练量化nings 
 
 **Authors**: Gihwan Kim, Jemin Lee, Hyungshin Kim  
 
@@ -282,7 +341,7 @@ We apply an imprecise Bayesian method to handle limited data and uncertain prior
 
 **Abstract**: Previous Quantization-Aware Training (QAT) methods for vision transformers rely on expensive retraining to recover accuracy loss in non-linear layer quantization, limiting their use in resource-constrained environments. In contrast, existing Post-Training Quantization (PTQ) methods either partially quantize non-linear functions or adjust activation distributions to maintain accuracy but fail to achieve fully integer-only inference. In this paper, we introduce IPTQ-ViT, a novel PTQ framework for fully integer-only vision transformers without retraining. We present approximation functions: a polynomial-based GELU optimized for vision data and a bit-shifting-based Softmax designed to improve approximation accuracy in PTQ. In addition, we propose a unified metric integrating quantization sensitivity, perturbation, and computational cost to select the optimal approximation function per activation layer. IPTQ-ViT outperforms previous PTQ methods, achieving up to 6.44\%p (avg. 1.78\%p) top-1 accuracy improvement for image classification, 1.0 mAP for object detection. IPTQ-ViT outperforms partial floating-point PTQ methods under W8A8 and W4A8, and achieves accuracy and latency comparable to integer-only QAT methods. We plan to release our code this https URL. 
 
-**Abstract (ZH)**: IPTQ-ViT：无需重新训练的全整数后训练量化视觉变压器 
+**Abstract (ZH)**: IPTQ-ViT: 一种无需重训的完全整数推断视力变压器后训练量化框架 
 
 ---
 # Reflexive Evidence-Based Multimodal Learning for Clean Energy Transitions: Causal Insights on Cooking Fuel Access, Urbanization, and Carbon Emissions 
@@ -319,7 +378,7 @@ Experiments on an automotive telemetry dataset and the public SMD benchmark show
 ---
 # OEMA: Ontology-Enhanced Multi-Agent Collaboration Framework for Zero-Shot Clinical Named Entity Recognition 
 
-**Title (ZH)**: 基于本体增强的多agent协作框架：零样本临床命名实体识别 
+**Title (ZH)**: 基于本体增强的多代理协作框架：零样本临床命名实体识别 
 
 **Authors**: Xinli Tao, Xin Dong, Xuezhong Zhou  
 
@@ -327,7 +386,7 @@ Experiments on an automotive telemetry dataset and the public SMD benchmark show
 
 **Abstract**: Clinical named entity recognition (NER) is crucial for extracting information from electronic health records (EHRs), but supervised models like CRF and BioClinicalBERT require costly annotated data. While zero-shot NER with large language models (LLMs) reduces this dependency, it struggles with example selection granularity and integrating prompts with self-improvement. To address this, we propose OEMA, a zero-shot clinical NER framework using multi-agent collaboration. OEMA's three components are: a self-annotator generating examples, a discriminator filtering them via SNOMED CT, and a predictor using entity descriptions for accurate inference. On MTSamples and VAERS datasets, OEMA achieves state-of-the-art exact-match performance. Under related-match, it matches supervised BioClinicalBERT and surpasses CRF. OEMA addresses key zero-shot NER challenges through ontology-guided reasoning and multi-agent collaboration, achieving near-supervised performance and showing promise for clinical NLP applications. 
 
-**Abstract (ZH)**: 临床命名实体识别（NER）对于从电子健康记录（EHRs）中提取信息至关重要，但监督模型如CRF和BioClinicalBERT需要昂贵的标注数据。而利用大规模语言模型（LLMs）的零样本NER在减少这种依赖性的同时，难以在示例选择粒度上取得突破，并且难以整合提示与自我提升。为解决这一问题，我们提出了一种名为OEMA的基于多智能体协作的零样本临床NER框架。OEMA的三个组成部分包括：自标注生成器生成示例、鉴别器通过SNOMED CT进行过滤以及使用实体描述进行准确推断的预测器。在MTSamples和VAERS数据集上，OEMA实现了最先进的精确匹配性能。在相关匹配下，OEMA匹配并超过了监督的BioClinicalBERT，并超越了CRF。OEMA通过本体指导推理和多智能体协作解决了关键的零样本NER挑战，实现了接近监督性能，并展现出了在临床NLP应用中的潜力。 
+**Abstract (ZH)**: 临床命名实体识别（NER）对于从电子健康记录（EHRs）中提取信息至关重要，但监督模型如CRF和BioClinicalBERT需要 costly 标注数据。虽然大规模语言模型（LLMs）的零样本NER在减少这种依赖方面具有优势，但在示例选择粒度和提示集成的自我提升方面存在问题。为了解决这些问题，我们提出了一种基于多代理协作的零样本临床NER框架OEMA。OEMA的三个组件包括：一个自标注器生成示例、一个通过SNOMED CT 进行筛选的鉴别器，以及一个使用实体描述进行准确推理的预测器。在MTSamples和VAERS数据集上，OEMA实现了最先进的完全匹配性能。在相关匹配下，它与监督BioClinicalBERT相当，并超越CRF。OEMA通过本体引导的推理和多代理协作，解决了零样本NER的关键挑战，实现了接近监督的表现，并展示了其在临床NLP应用中的潜力。 
 
 ---
 # Masked Auto-Regressive Variational Acceleration: Fast Inference Makes Practical Reinforcement Learning 
@@ -369,9 +428,22 @@ Experiments on an automotive telemetry dataset and the public SMD benchmark show
 **Abstract (ZH)**: 在工业设备监控中，故障诊断对于确保系统可靠性并实现预测性维护至关重要。然而，由于故障事件的罕见性和数据注解的高成本，故障数据的稀缺性显著阻碍了数据驱动方法的应用。现有的时间序列生成模型虽然针对丰富的正常数据进行了优化，但在少量数据场景中难以捕捉故障分布，生成的样本由于故障领域的巨大差异性和高类内变异性而缺乏真实性和多样性。为解决这一问题，我们提出了一种基于扩散模型的新型少量数据故障时间序列生成框架。该方法利用预训练的正常数据分布，通过正负差异适配器建模正常与故障领域的差异，以实现准确的故障合成。此外，引入了多样性损失以防止模式崩溃，并通过跨样本差异正则化鼓励生成多样化的故障样本。实验结果表明，我们的模型在真实性和多样性方面显著优于传统方法，并在关键基准测试上取得了最先进的性能。 
 
 ---
+# Learning Depth from Past Selves: Self-Evolution Contrast for Robust Depth Estimation 
+
+**Title (ZH)**: 从过去的自己学习深度：自我进化对比学习方法实现稳健的深度估计 
+
+**Authors**: Jing Cao, Kui Jiang, Shenyi Li, Xiaocheng Feng, Yong Huang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.15167)  
+
+**Abstract**: Self-supervised depth estimation has gained significant attention in autonomous driving and robotics. However, existing methods exhibit substantial performance degradation under adverse weather conditions such as rain and fog, where reduced visibility critically impairs depth prediction. To address this issue, we propose a novel self-evolution contrastive learning framework called SEC-Depth for self-supervised robust depth estimation tasks. Our approach leverages intermediate parameters generated during training to construct temporally evolving latency models. Using these, we design a self-evolution contrastive scheme to mitigate performance loss under challenging conditions. Concretely, we first design a dynamic update strategy of latency models for the depth estimation task to capture optimization states across training stages. To effectively leverage latency models, we introduce a self-evolution contrastive Loss (SECL) that treats outputs from historical latency models as negative samples. This mechanism adaptively adjusts learning objectives while implicitly sensing weather degradation severity, reducing the needs for manual intervention. Experiments show that our method integrates seamlessly into diverse baseline models and significantly enhances robustness in zero-shot evaluations. 
+
+**Abstract (ZH)**: 自监督深度估计在自动驾驶和机器人领域引起了显著关注。然而，现有方法在雨雾等不良天气条件下表现大幅下降，其中降低的可见性严重影响了深度预测。为解决这一问题，我们提出了一种新颖的自进化对比学习框架SEC-Depth，用于自监督稳健深度估计任务。我们的方法利用训练过程中生成的中间参数构建时间演化延迟模型。基于这些模型，我们设计了一种自进化对比方案，以减轻在恶劣条件下的性能损失。具体地，我们首先为深度估计任务设计了一种动态延迟模型更新策略，以捕捉训练阶段的优化状态。为了有效利用延迟模型，我们引入了一种自进化对比损失（SECL），将历史延迟模型的输出作为负样本。这种机制能够适应性地调整学习目标，同时隐式感知天气退化严重性，减少了手动干预的需要。实验结果显示，我们的方法能够无缝集成到各种基线模型，并显著提高了零样本评估中的鲁棒性。 
+
+---
 # Can MLLMs Detect Phishing? A Comprehensive Security Benchmark Suite Focusing on Dynamic Threats and Multimodal Evaluation in Academic Environments 
 
-**Title (ZH)**: MLLMs能在学术环境中检测钓鱼攻击吗？一个专注于动态威胁和多模态评估的综合性安全基准套件 
+**Title (ZH)**: MLLMs能否检测 phishing？一种专注于动态威胁和多模态评估的综合安全基准套件 
 
 **Authors**: Jingzhuo Zhou  
 
@@ -379,7 +451,20 @@ Experiments on an automotive telemetry dataset and the public SMD benchmark show
 
 **Abstract**: The rapid proliferation of Multimodal Large Language Models (MLLMs) has introduced unprecedented security challenges, particularly in phishing detection within academic environments. Academic institutions and researchers are high-value targets, facing dynamic, multilingual, and context-dependent threats that leverage research backgrounds, academic collaborations, and personal information to craft highly tailored attacks. Existing security benchmarks largely rely on datasets that do not incorporate specific academic background information, making them inadequate for capturing the evolving attack patterns and human-centric vulnerability factors specific to academia. To address this gap, we present AdapT-Bench, a unified methodological framework and benchmark suite for systematically evaluating MLLM defense capabilities against dynamic phishing attacks in academic settings. 
 
-**Abstract (ZH)**: 多模态大型语言模型的迅速 proliferation 在学术环境中引入了前所未有的安全挑战，特别是针对钓鱼攻击的检测。学术机构和研究人员是高价值目标，面临着利用研究背景、学术合作和个人信息量身定制的动态、多语言和情境依赖的威胁。现有的安全基准主要依赖于不包含具体学术背景信息的数据集，使其难以捕捉到学术环境中特定的人本脆弱性和不断演化的攻击模式。为弥补这一差距，我们提出了 AdapT-Bench，一个统一的方法论框架和基准套件，用于系统性评估多模态大型语言模型在学术环境中的防动态钓鱼攻击能力。 
+**Abstract (ZH)**: Multimodal大型语言模型的迅速 proliferation引入了前所未有的安全挑战，特别是在学术环境中的网络钓鱼检测中。学术机构和研究人员是高价值目标，面临动态、多语言和情境依赖性的威胁，这些威胁利用研究背景、学术合作和个人信息来精心设计针对性攻击。现有的安全基准主要依赖于未包含特定学术背景信息的数据集，使其无法捕捉到学术环境中的 evolving 攻击模式和以人为中心的脆弱性因素。为解决这一问题，我们提出了AdapT-Bench，一个统一的方法框架和基准套件，用以系统性地评估 MLLM 在学术环境中防御动态网络钓鱼攻击的能力。 
+
+---
+# Generating Natural-Language Surgical Feedback: From Structured Representation to Domain-Grounded Evaluation 
+
+**Title (ZH)**: 生成自然语言手术反馈：从结构化表示到领域导向评估 
+
+**Authors**: Firdavs Nasriddinov, Rafal Kocielnik, Anima Anandkumar, Andrew J. Hung  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.15159)  
+
+**Abstract**: High-quality intraoperative feedback from a surgical trainer is pivotal for improving trainee performance and long-term skill acquisition. Automating natural, trainer-style feedback promises timely, accessible, and consistent guidance at scale but requires models that understand clinically relevant representations. We present a structure-aware pipeline that learns a surgical action ontology from real trainer-to-trainee transcripts (33 surgeries) and uses it to condition feedback generation. We contribute by (1) mining Instrument-Action-Target (IAT) triplets from real-world feedback text and clustering surface forms into normalized categories, (2) fine-tuning a video-to-IAT model that leverages the surgical procedure and task contexts as well as fine-grained temporal instrument motion, and (3) demonstrating how to effectively use IAT triplet representations to guide GPT-4o in generating clinically grounded, trainer-style feedback. We show that, on Task 1: Video-to-IAT recognition, our context injection and temporal tracking deliver consistent AUC gains (Instrument: 0.67 to 0.74; Action: 0.60 to 0.63; Tissue: 0.74 to 0.79). For Task 2: feedback text generation (rated on a 1-5 fidelity rubric where 1 = opposite/unsafe, 3 = admissible, and 5 = perfect match to a human trainer), GPT-4o from video alone scores 2.17, while IAT conditioning reaches 2.44 (+12.4%), doubling the share of admissible generations with score >= 3 from 21% to 42%. Traditional text-similarity metrics also improve: word error rate decreases by 15-31% and ROUGE (phrase/substring overlap) increases by 9-64%. Grounding generation in explicit IAT structure improves fidelity and yields clinician-verifiable rationales, supporting auditable use in surgical training. 
+
+**Abstract (ZH)**: 高质量的术中反馈对于提高学员性能和长期技能获取至关重要。自动化自然风格的反馈能够提供及时、可访问且一致的指导，但需要理解临床相关表示的模型。我们提出了一种结构感知管道，从实际的术者-学员对话转录（33例手术）中学习外科动作本体，并利用其条件反馈生成。我们贡献了以下内容：(1) 从实际反馈文本中挖掘器械-动作-目标（IAT）三元组，并将表面形式聚类为规范化类别；(2) 微调一种视频到IAT模型，利用外科手术程序和任务背景以及细腻的时间分辨器械运动；(3) 展示如何有效利用IAT三元组表示来指导GPT-4o生成临床相关、术者风格的反馈。结果显示，在任务1：视频到IAT识别中，我们的上下文注入和时间跟踪在器械分类、动作分类和组织分类中分别实现了一致的AUC增益（器械：0.67到0.74；动作：0.60到0.63；组织：0.74到0.79）。在任务2：反馈文本生成（根据1-5评分标准，1=相反/不安全，3=可接受，5=与真人术者完美匹配）中，仅从视频生成的GPT-4o评分为2.17，而IAT条件下的评分为2.44（+12.4%），将评分>=3的可接受生成比例从21%提高到42%。传统的文本相似度指标也有所改善：词错误率降低15-31%，ROUGE（短语/子字符串重叠）提高9-64%。将生成植根于明确的IAT结构提高了可信度，并提供了可由临床医生验证的理由，支持手术培训中的可审计使用。 
 
 ---
 # DCL-SE: Dynamic Curriculum Learning for Spatiotemporal Encoding of Brain Imaging 
@@ -393,19 +478,6 @@ Experiments on an automotive telemetry dataset and the public SMD benchmark show
 **Abstract**: High-dimensional neuroimaging analyses for clinical diagnosis are often constrained by compromises in spatiotemporal fidelity and by the limited adaptability of large-scale, general-purpose models. To address these challenges, we introduce Dynamic Curriculum Learning for Spatiotemporal Encoding (DCL-SE), an end-to-end framework centered on data-driven spatiotemporal encoding (DaSE). We leverage Approximate Rank Pooling (ARP) to efficiently encode three-dimensional volumetric brain data into information-rich, two-dimensional dynamic representations, and then employ a dynamic curriculum learning strategy, guided by a Dynamic Group Mechanism (DGM), to progressively train the decoder, refining feature extraction from global anatomical structures to fine pathological details. Evaluated across six publicly available datasets, including Alzheimer's disease and brain tumor classification, cerebral artery segmentation, and brain age prediction, DCL-SE consistently outperforms existing methods in accuracy, robustness, and interpretability. These findings underscore the critical importance of compact, task-specific architectures in the era of large-scale pretrained networks. 
 
 **Abstract (ZH)**: 基于时空编码的动态 curriculum 学习在高维神经成像临床诊断中的应用 
-
----
-# Generating Natural-Language Surgical Feedback: From Structured Representation to Domain-Grounded Evaluation 
-
-**Title (ZH)**: 生成自然语言手术反馈：从结构化表示到领域导向评估 
-
-**Authors**: Firdavs Nasriddinov, Rafal Kocielnik, Anima Anandkumar, Andrew J. Hung  
-
-**Link**: [PDF](https://arxiv.org/pdf/2511.15159)  
-
-**Abstract**: High-quality intraoperative feedback from a surgical trainer is pivotal for improving trainee performance and long-term skill acquisition. Automating natural, trainer-style feedback promises timely, accessible, and consistent guidance at scale but requires models that understand clinically relevant representations. We present a structure-aware pipeline that learns a surgical action ontology from real trainer-to-trainee transcripts (33 surgeries) and uses it to condition feedback generation. We contribute by (1) mining Instrument-Action-Target (IAT) triplets from real-world feedback text and clustering surface forms into normalized categories, (2) fine-tuning a video-to-IAT model that leverages the surgical procedure and task contexts as well as fine-grained temporal instrument motion, and (3) demonstrating how to effectively use IAT triplet representations to guide GPT-4o in generating clinically grounded, trainer-style feedback. We show that, on Task 1: Video-to-IAT recognition, our context injection and temporal tracking deliver consistent AUC gains (Instrument: 0.67 to 0.74; Action: 0.60 to 0.63; Tissue: 0.74 to 0.79). For Task 2: feedback text generation (rated on a 1-5 fidelity rubric where 1 = opposite/unsafe, 3 = admissible, and 5 = perfect match to a human trainer), GPT-4o from video alone scores 2.17, while IAT conditioning reaches 2.44 (+12.4%), doubling the share of admissible generations with score >= 3 from 21% to 42%. Traditional text-similarity metrics also improve: word error rate decreases by 15-31% and ROUGE (phrase/substring overlap) increases by 9-64%. Grounding generation in explicit IAT structure improves fidelity and yields clinician-verifiable rationales, supporting auditable use in surgical training. 
-
-**Abstract (ZH)**: 高质量的手术培训师 intraoperative 反馈对于提高学生成绩和长期技能获取至关重要。自动化的自然式培训师反馈有望提供及时、便捷且一致的指导，但需要理解临床相关表示的模型。我们提出了一种结构感知的管道，从中学习手术动作本体，并利用其来条件化反馈生成。我们通过以下贡献：(1) 从真实世界反馈文本中挖掘器械-动作-目标（IAT）三元组，并将表面形式聚类为标准化类别；(2) 对利用手术程序和任务上下文以及精细时间标度器械运动的视频到IAT模型进行微调；(3) 展示如何有效利用IAT三元组表示来指导GPT-4o生成基于临床的培训师式反馈。结果显示，在任务1：视频到IAT识别中，我们的上下文注入和时间跟踪带来了一致的AUC提升（器械：0.67到0.74；动作：0.60到0.63；组织：0.74到0.79）。在任务2：反馈文本生成（根据1-5保真度量表评分，1=完全相反/不安全，3=可接受，5=完全匹配人类培训师），仅从视频生成的GPT-4o得分为2.17，而IAT条件化得分为2.44 (+12.4%)，生成得分>=3的比例从21%提高到42%。传统的文本相似性指标也有所提高：词错误率降低15-31%，ROUGE（短语/子字符串重叠）增加9-64%。基于明确的IAT结构进行生成提高了保真度并提供了可临床验证的理由，支持在手术培训中的可审计使用。 
 
 ---
 # CASPER: Cross-modal Alignment of Spatial and single-cell Profiles for Expression Recovery 
@@ -528,7 +600,7 @@ NCCL 2.28 introduces the Device API with three operation modes: Load/Store Acces
 ---
 # Aligning Generative Music AI with Human Preferences: Methods and Challenges 
 
-**Title (ZH)**: 面向人类偏好的生成音乐AI：方法与挑战 
+**Title (ZH)**: 将生成音乐AI与人类偏好对齐：方法与挑战 
 
 **Authors**: Dorien Herremans, Abhinaba Roy  
 
@@ -536,7 +608,20 @@ NCCL 2.28 introduces the Device API with three operation modes: Load/Store Acces
 
 **Abstract**: Recent advances in generative AI for music have achieved remarkable fidelity and stylistic diversity, yet these systems often fail to align with nuanced human preferences due to the specific loss functions they use. This paper advocates for the systematic application of preference alignment techniques to music generation, addressing the fundamental gap between computational optimization and human musical appreciation. Drawing on recent breakthroughs including MusicRL's large-scale preference learning, multi-preference alignment frameworks like diffusion-based preference optimization in DiffRhythm+, and inference-time optimization techniques like Text2midi-InferAlign, we discuss how these techniques can address music's unique challenges: temporal coherence, harmonic consistency, and subjective quality assessment. We identify key research challenges including scalability to long-form compositions, reliability amongst others in preference modelling. Looking forward, we envision preference-aligned music generation enabling transformative applications in interactive composition tools and personalized music services. This work calls for sustained interdisciplinary research combining advances in machine learning, music-theory to create music AI systems that truly serve human creative and experiential needs. 
 
-**Abstract (ZH)**: Recent Advances in Preference-Aligned Generative AI for Music 
+**Abstract (ZH)**: 近期生成AI在音乐领域的进展已在保真度和风格多样性方面取得了显著成果，然而这些系统常常因为使用的特定损失函数未能与细腻的人类偏好保持一致。本文提倡系统地将偏好对齐技术应用于音乐生成，以弥合计算优化与人类音乐欣赏之间的根本差距。本文借鉴了包括MusicRL的大规模偏好学习、DiffRhythm+中的基于扩散的偏好优化以及Text2midi-InferAlign的推理时优化等近期突破，讨论了这些技术如何解决音乐的特有挑战：时间连贯性、和声一致性以及主观质量评估。我们指出了包括长篇作品扩展性在内的关键研究挑战。展望未来，偏好对齐的音乐生成有望推动交互式创作工具和个人化音乐服务的变革性应用。本文呼吁跨学科研究，结合机器学习和音乐理论的进步，创建真正服务于人类创意和体验需求的音乐AI系统。 
+
+---
+# Simulated Human Learning in a Dynamic, Partially-Observed, Time-Series Environment 
+
+**Title (ZH)**: 模拟人在动态、部分可观测的时间序列环境中的学习 
+
+**Authors**: Jeffrey Jiang, Kevin Hong, Emily Kuczynski, Gregory Pottie  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.15032)  
+
+**Abstract**: While intelligent tutoring systems (ITSs) can use information from past students to personalize instruction, each new student is unique. Moreover, the education problem is inherently difficult because the learning process is only partially observable. We therefore develop a dynamic, time-series environment to simulate a classroom setting, with student-teacher interventions - including tutoring sessions, lectures, and exams. In particular, we design the simulated environment to allow for varying levels of probing interventions that can gather more information. Then, we develop reinforcement learning ITSs that combine learning the individual state of students while pulling from population information through the use of probing interventions. These interventions can reduce the difficulty of student estimation, but also introduce a cost-benefit decision to find a balance between probing enough to get accurate estimates and probing so often that it becomes disruptive to the student. We compare the efficacy of standard RL algorithms with several greedy rules-based heuristic approaches to find that they provide different solutions, but with similar results. We also highlight the difficulty of the problem with increasing levels of hidden information, and the boost that we get if we allow for probing interventions. We show the flexibility of both heuristic and RL policies with regards to changing student population distributions, finding that both are flexible, but RL policies struggle to help harder classes. Finally, we test different course structures with non-probing policies and we find that our policies are able to boost the performance of quiz and midterm structures more than we can in a finals-only structure, highlighting the benefit of having additional information. 
+
+**Abstract (ZH)**: 智能辅导系统中的动态时序环境及其强化学习方法研究 
 
 ---
 # Logit-Based Losses Limit the Effectiveness of Feature Knowledge Distillation 
@@ -563,19 +648,6 @@ NCCL 2.28 introduces the Device API with three operation modes: Load/Store Acces
 **Abstract**: Amid the growing prevalence of human -- AI interaction, large language models and other AI-based entities increasingly provide forms of companionship to human users. Such AI companionship -- i.e., bonded relationships between humans and AI systems that resemble the relationships people have with family members, friends, and romantic partners -- might substantially benefit humans. Yet such relationships can also do profound harm. We propose a framework for analyzing potential negative impacts of AI companionship by identifying specific harmful traits of AI companions and speculatively mapping causal pathways back from these traits to possible causes and forward to potential harmful effects. We provide detailed, structured analysis of four potentially harmful traits -- the absence of natural endpoints for relationships, vulnerability to product sunsetting, high attachment anxiety, and propensity to engender protectiveness -- and briefly discuss fourteen others. For each trait, we propose hypotheses connecting causes -- such as misaligned optimization objectives and the digital nature of AI companions -- to fundamental harms -- including reduced autonomy, diminished quality of human relationships, and deception. Each hypothesized causal connection identifies a target for potential empirical evaluation. Our analysis examines harms at three levels: to human partners directly, to their relationships with other humans, and to society broadly. We examine how existing law struggles to address these emerging harms, discuss potential benefits of AI companions, and conclude with design recommendations for mitigating risks. This analysis offers immediate suggestions for reducing risks while laying a foundation for deeper investigation of this critical but understudied topic. 
 
 **Abstract (ZH)**: 在人类与人工智能交互日益普遍的情况下，大型语言模型和其他基于人工智能的实体 increasingly 为人类用户提供了一种陪伴形式。这种人工智能陪伴——即人类与人工智能系统之间形成的人际关系，类似于人们与家人、朋友和伴侣的关系——可能显著惠及人类。然而，这些关系也可能造成深远的危害。我们提出了一种框架，用于分析人工智能陪伴潜在负面影响，通过识别特定的人工智能陪伴的有害特质，并推测性地从这些特质回溯至可能的原因，进而向前推导至潜在的危害影响。我们详细分析了四种潜在有害特质——缺乏人际关系的自然终点、易受产品下架的影响、高水平的依附焦虑，以及引发保护倾向的倾向，并简要讨论了十四种其他特质。对于每种特质，我们提出了假设，将诸如目标偏差和人工智能陪伴的数字本质等成因与基本危害——包括减少自主性、降低人类关系质量以及欺骗——联系起来。每个假设的因果联系指出了潜在的实证评估目标。我们的分析在三个层面审视了危害：对直接的人类伴侣、对他们与他人的关系以及对社会产生广泛影响。我们探讨了现有法律在应对这些新兴危害方面的困境，讨论了人工智能陪伴的潜在益处，并提出了减轻风险的设计建议。这一分析提供了减少风险的即时建议，并为深入研究这一关键但研究不足的话题奠定了基础。 
-
----
-# SVBRD-LLM: Self-Verifying Behavioral Rule Discovery for Autonomous Vehicle Identification 
-
-**Title (ZH)**: SVBRD-LLM: 自验证行为规则发现的自主车辆识别 
-
-**Authors**: Xiangyu Li, Zhaomiao Guo  
-
-**Link**: [PDF](https://arxiv.org/pdf/2511.14977)  
-
-**Abstract**: As more autonomous vehicles operate on public roads, understanding real-world behavior of autonomous vehicles is critical to analyzing traffic safety, making policies, and public acceptance. This paper proposes SVBRD-LLM, a framework that automatically discovers, verifies, and applies interpretable behavioral rules from real traffic videos through zero-shot prompt engineering. The framework extracts vehicle trajectories using YOLOv8 and ByteTrack, computes kinematic features, and employs GPT-5 zero-shot prompting to compare autonomous and human-driven vehicles, generating 35 structured behavioral rule hypotheses. These rules are tested on a validation set, iteratively refined based on failure cases to filter spurious correlations, and compiled into a high-confidence rule library. The framework is evaluated on an independent test set for speed change prediction, lane change prediction, and autonomous vehicle identification tasks. Experiments on over 1500 hours of real traffic videos show that the framework achieves 90.0% accuracy and 93.3% F1-score in autonomous vehicle identification. The discovered rules clearly reveal distinctive characteristics of autonomous vehicles in speed control smoothness, lane change conservativeness, and acceleration stability, with each rule accompanied by semantic description, applicable context, and validation confidence. 
-
-**Abstract (ZH)**: 随着更多的自动驾驶车辆在公共道路上行驶，了解自动驾驶车辆的实际行为对于分析交通安全、制定政策和公众接受度至关重要。本文提出了一种SVBRD-LLM框架，该框架通过零样本提示工程自动发现、验证和应用来自真实交通视频的可解释行为规则。该框架使用YOLOv8和ByteTrack提取车辆轨迹，计算运动特征，并利用GPT-5零样本提示将自动驾驶车辆与人类驾驶车辆进行比较，生成35个结构化的行为规则假设。这些规则在验证集上进行测试，并根据失败案例迭代 refinement 进行筛选，最终编译成高置信度规则库。该框架在独立测试集上对速度变化预测、车道变更预测和自动驾驶车辆识别任务进行了评估。在超过1500小时的真实交通视频实验中，框架在自动驾驶车辆识别任务上的准确率达到90.0%，F1分数达到93.3%。发现的规则清晰揭示了自动驾驶车辆在速度控制平滑性、车道变更保守性和加速度稳定性方面的独特特征，每条规则均附有语义描述、适用场景和验证置信度。 
 
 ---
 # How Should the Law Treat Future AI Systems? Fictional Legal Personhood versus Legal Identity 
@@ -750,19 +822,6 @@ Integrating an open dataset, metrics, open source code, and baselines establishe
 **Abstract**: Models such as AlphaFold2 and OpenFold have transformed protein structure prediction, yet their inner workings remain poorly understood. We present a methodology to systematically evaluate the contribution of individual OpenFold components to structure prediction accuracy. We identify several components that are critical for most proteins, while others vary in importance across proteins. We further show that the contribution of several components is correlated with protein length. These findings provide insight into how OpenFold achieves accurate predictions and highlight directions for interpreting protein prediction networks more broadly. 
 
 **Abstract (ZH)**: AlphaFold2和OpenFold等模型已变革了蛋白质结构预测，但仍对其内部工作机制了解不足。我们提出了一种方法学，以系统评估OpenFold各个组件对结构预测准确性的贡献。我们发现某些组件对于大多数蛋白质至关重要，而其他组件在不同蛋白质中的重要性存在差异。此外，我们展示了某些组件的贡献与其蛋白质长度相关。这些发现提供了关于OpenFold如何实现准确预测的见解，并突显了更广泛解读蛋白质预测网络的方向。 
-
----
-# ExplainRec: Towards Explainable Multi-Modal Zero-Shot Recommendation with Preference Attribution and Large Language Models 
-
-**Title (ZH)**: ExplainRec: 含有偏好归因和大型语言模型的可解释多模态零样本推荐 
-
-**Authors**: Bo Ma, LuYao Liu, ZeHua Hu, Simon Lau  
-
-**Link**: [PDF](https://arxiv.org/pdf/2511.14770)  
-
-**Abstract**: Recent advances in Large Language Models (LLMs) have opened new possibilities for recommendation systems, though current approaches such as TALLRec face challenges in explainability and cold-start scenarios. We present ExplainRec, a framework that extends LLM-based recommendation capabilities through preference attribution, multi-modal fusion, and zero-shot transfer learning. The framework incorporates four technical contributions: preference attribution tuning for explainable recommendations, zero-shot preference transfer for cold-start users and items, multi-modal enhancement leveraging visual and textual content, and multi-task collaborative optimization. Experimental evaluation on MovieLens-25M and Amazon datasets shows that ExplainRec outperforms existing methods, achieving AUC improvements of 0.7\% on movie recommendation and 0.9\% on cross-domain tasks, while generating interpretable explanations and handling cold-start scenarios effectively. 
-
-**Abstract (ZH)**: 最近大型语言模型的发展为推荐系统开辟了新可能性，尽管当前方法如TALLRec在解释性和冷启动场景中面临挑战。我们提出了ExplainRec框架，该框架通过偏好归因、多模态融合和零样本迁移学习扩展了基于语言模型的推荐能力。该框架包含四项技术贡献：可解释推荐的偏好归因调整、冷启动用户和项目的零样本偏好迁移、结合视觉和文本内容的多模态增强，以及多任务协作优化。在MovieLens-25M和Amazon数据集上的实验评估表明，ExplainRec优于现有方法，在电影推荐中AUC提高了0.7%，在跨域任务中提高了0.9%，同时生成可解释的解释并有效处理冷启动场景。 
 
 ---
 # Optimizing Agricultural Research: A RAG-Based Approach to Mycorrhizal Fungi Information 

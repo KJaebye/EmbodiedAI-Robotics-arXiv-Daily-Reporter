@@ -1,3 +1,29 @@
+# RRT*former: Environment-Aware Sampling-Based Motion Planning using Transformer 
+
+**Title (ZH)**: RRT*former: 基于注意力机制的环境感知运动规划 
+
+**Authors**: Mingyang Feng, Shaoyuan Li, Xiang Yin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.15414)  
+
+**Abstract**: We investigate the sampling-based optimal path planning problem for robotics in complex and dynamic environments. Most existing sampling-based algorithms neglect environmental information or the information from previous samples. Yet, these pieces of information are highly informative, as leveraging them can provide better heuristics when sampling the next state. In this paper, we propose a novel sampling-based planning algorithm, called \emph{RRT*former}, which integrates the standard RRT* algorithm with a Transformer network in a novel way. Specifically, the Transformer is used to extract features from the environment and leverage information from previous samples to better guide the sampling process. Our extensive experiments demonstrate that, compared to existing sampling-based approaches such as RRT*, Neural RRT*, and their variants, our algorithm achieves considerable improvements in both the optimality of the path and sampling efficiency. The code for our implementation is available on this https URL. 
+
+**Abstract (ZH)**: 我们研究了在复杂和动态环境中基于采样的最优路径规划问题。大多数现有的基于采样的算法忽略了环境信息或先前采样的信息。然而，这些信息非常重要，利用它们可以更好地在采样下一个状态时提供启发式方法。在本文中，我们提出了一种新颖的基于采样的规划算法，称为\emph{RRT*former}，该算法以新颖的方式将标准的RRT*算法与Transformer网络结合。具体来说，Transformer用于从环境中提取特征并利用先前采样的信息更有效地指导采样过程。我们的广泛实验表明，与现有的基于采样的方法（如RRT*、Neural RRT*及其变种）相比，我们的算法在路径的最优性和采样效率方面均取得了显著改进。我们的实现代码可在此处访问：this https URL。 
+
+---
+# Behavior Trees vs Executable Ontologies: a Comparative Analysis of Robot Control Paradigms 
+
+**Title (ZH)**: 行为树 vs 可执行本体：机器人控制范式的比较分析 
+
+**Authors**: Alexander Boldachev  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.15274)  
+
+**Abstract**: This paper compares two distinct approaches to modeling robotic behavior: imperative Behavior Trees (BTs) and declarative Executable Ontologies (EO), implemented through the boldsea framework. BTs structure behavior hierarchically using control-flow, whereas EO represents the domain as a temporal, event-based semantic graph driven by dataflow rules. We demonstrate that EO achieves comparable reactivity and modularity to BTs through a fundamentally different architecture: replacing polling-based tick execution with event-driven state propagation. We propose that EO offers an alternative framework, moving from procedural programming to semantic domain modeling, to address the semantic-process gap in traditional robotic control. EO supports runtime model modification, full temporal traceability, and a unified representation of data, logic, and interface - features that are difficult or sometimes impossible to achieve with BTs, although BTs excel in established, predictable scenarios. The comparison is grounded in a practical mobile manipulation task. This comparison highlights the respective operational strengths of each approach in dynamic, evolving robotic systems. 
+
+**Abstract (ZH)**: 本文比较了两种不同的机器人行为建模方法：命令式行为树（BT）和声明式可执行本体（EO），并通过boldsea框架实现。行为树使用控制流来层次结构化行为，而可执行本体通过数据流规则表示领域，作为基于事件的时序语义图。我们通过根本不同的架构展示，EO 在实现类似于 BT 的反应性和模块性方面具有竞争力：用基于事件的状态传播替代了轮询驱动的时钟执行。我们提出，EO 提供了一种替代框架，从过程性编程转向语义领域建模，以解决传统机器人控制中的语义-过程差距。可执行本体支持运行时模型修改、完整的时序可追溯性和数据、逻辑和接口的统一表示 - 这些特性在行为树中难以实现，尽管行为树在既定和可预测的场景中表现出色。比较是在一个实际的移动操作任务中进行的。本文比较突显了每种方法在动态、演变的机器人系统中的各自操作优势。 
+
+---
 # Eq.Bot: Enhance Robotic Manipulation Learning via Group Equivariant Canonicalization 
 
 **Title (ZH)**: Eq.Bot: 通过群不变量标准化增强机器人操作学习 

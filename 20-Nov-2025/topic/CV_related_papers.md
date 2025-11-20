@@ -25,19 +25,6 @@ Our experiments show that no single model dominates across all tasks, confirming
 **Abstract (ZH)**: GeoFMs的地理空间基础模型正在_transforming地球观测(EO)，但评估缺乏标准化协议。GEO-Bench-2通过涵盖分类、分割、回归、对象检测和实例分割的全面框架，跨越了19个许可使用的数据集，解决了这一问题。我们引入“能力”组，按共享共同特征（例如，分辨率、波段、时间性）的数据集对模型进行排名。这使用户能够确定哪些模型在每个能力方面表现最佳，并确定未来工作需要改进的领域。为了支持公平比较和方法创新，我们定义了一种规范但灵活的评估协议。这不仅确保了基准测试的一致性，还促进了对模型适应策略的研究，这是推进GeoFMs用于下游任务的一个重要且开放的挑战。 
 
 ---
-# The SA-FARI Dataset: Segment Anything in Footage of Animals for Recognition and Identification 
-
-**Title (ZH)**: SA-FARI数据集：动物影像中的目标分割以实现识别和鉴定 
-
-**Authors**: Dante Francisco Wasmuht, Otto Brookes, Maximillian Schall, Pablo Palencia, Chris Beirne, Tilo Burghardt, Majid Mirmehdi, Hjalmar Kühl, Mimi Arandjelovic, Sam Pottie, Peter Bermant, Brandon Asheim, Yi Jin Toh, Adam Elzinga, Jason Holmberg, Andrew Whitworth, Eleanor Flatt, Laura Gustafson, Chaitanya Ryali, Yuan-Ting Hu, Baishan Guo, Andrew Westbury, Kate Saenko, Didac Suris  
-
-**Link**: [PDF](https://arxiv.org/pdf/2511.15622)  
-
-**Abstract**: Automated video analysis is critical for wildlife conservation. A foundational task in this domain is multi-animal tracking (MAT), which underpins applications such as individual re-identification and behavior recognition. However, existing datasets are limited in scale, constrained to a few species, or lack sufficient temporal and geographical diversity - leaving no suitable benchmark for training general-purpose MAT models applicable across wild animal populations. To address this, we introduce SA-FARI, the largest open-source MAT dataset for wild animals. It comprises 11,609 camera trap videos collected over approximately 10 years (2014-2024) from 741 locations across 4 continents, spanning 99 species categories. Each video is exhaustively annotated culminating in ~46 hours of densely annotated footage containing 16,224 masklet identities and 942,702 individual bounding boxes, segmentation masks, and species labels. Alongside the task-specific annotations, we publish anonymized camera trap locations for each video. Finally, we present comprehensive benchmarks on SA-FARI using state-of-the-art vision-language models for detection and tracking, including SAM 3, evaluated with both species-specific and generic animal prompts. We also compare against vision-only methods developed specifically for wildlife analysis. SA-FARI is the first large-scale dataset to combine high species diversity, multi-region coverage, and high-quality spatio-temporal annotations, offering a new foundation for advancing generalizable multianimal tracking in the wild. The dataset is available at $\href{this https URL}{\text{this http URL}}$. 
-
-**Abstract (ZH)**: 自动视频分析对于野生动物保护至关重要。该领域的一个基础任务是多动物追踪（MAT），其支撑着个体再识别和行为识别等应用。然而，现有的数据集在规模、物种限制或时空多样性方面存在局限性，缺乏适用于跨野生动物种群的一般性MAT模型的基准。为解决这一问题，我们引入了SA-FARI，这是最大的开放源多动物追踪数据集，用于野生動物。该数据集包含从四大洲741个地点收集的约10年（2014-2024）时间跨度的11,609个相机陷阱视频，涵盖99种物种类别。每个视频都被详尽标注，总计约46小时密集标注的视频片段，包含16,224个掩码身份和942,702个个体边界框、分割掩码和物种标签。除了特定任务的标注外，我们还发布了每个视频的匿名相机陷阱位置。最后，我们使用最新的视觉-语言模型对SA-FARI进行全面基准测试，包括SAM 3，该模型用特定物种和通用动物提示进行评估。我们还与专门为野生动物分析开发的仅视觉方法进行了比较。SA-FARI是第一个结合高物种多样性、多区域覆盖和高质量时空标注的大规模数据集，为推进通用多动物追踪提供了新的基础。数据集可以访问：this https URL 
-
----
 # CompTrack: Information Bottleneck-Guided Low-Rank Dynamic Token Compression for Point Cloud Tracking 
 
 **Title (ZH)**: CompTrack: 信息瓶颈引导的低秩动态令牌压缩用于点云跟踪 
@@ -75,19 +62,6 @@ Our experiments show that no single model dominates across all tasks, confirming
 **Abstract**: This work proposes a hybrid deep learning approach, namely Residual and Spatial Learning based Channel Augmented Integrated CNN-Transformer architecture, that leverages the strengths of CNN and Transformer towards enhanced MPox detection. The proposed RS-CA-HSICT framework is composed of an HSICT block, a residual CNN module, a spatial CNN block, and a CA, which enhances the diverse feature space, detailed lesion information, and long-range dependencies. The new HSICT module first integrates an abstract representation of the stem CNN and customized ICT blocks for efficient multihead attention and structured CNN layers with homogeneous (H) and structural (S) operations. The customized ICT blocks learn global contextual interactions and local texture extraction. Additionally, H and S layers learn spatial homogeneity and fine structural details by reducing noise and modeling complex morphological variations. Moreover, inverse residual learning enhances vanishing gradient, and stage-wise resolution reduction ensures scale invariance. Furthermore, the RS-CA-HSICT framework augments the learned HSICT channels with the TL-driven Residual and Spatial CNN maps for enhanced multiscale feature space capturing global and localized structural cues, subtle texture, and contrast variations. These channels, preceding augmentation, are refined through the Channel-Fusion-and-Attention block, which preserves discriminative channels while suppressing redundant ones, thereby enabling efficient computation. Finally, the spatial attention mechanism refines pixel selection to detect subtle patterns and intra-class contrast variations in Mpox. Experimental results on both the Kaggle benchmark and a diverse MPox dataset reported classification accuracy as high as 98.30% and an F1-score of 98.13%, which outperforms the existing CNNs and ViTs. 
 
 **Abstract (ZH)**: 基于残差和空间学习的通道增强集成CNN-Transformer架构：Residual and Spatial Learning Based Channel Augmented Integrated CNN-Transformer Architecture for Enhanced MPox检测 
-
----
-# IPTQ-ViT: Post-Training Quantization of Non-linear Functions for Integer-only Vision Transformers 
-
-**Title (ZH)**: IPTQ-ViT：仅整数视觉变换器的后训练量化nings 
-
-**Authors**: Gihwan Kim, Jemin Lee, Hyungshin Kim  
-
-**Link**: [PDF](https://arxiv.org/pdf/2511.15369)  
-
-**Abstract**: Previous Quantization-Aware Training (QAT) methods for vision transformers rely on expensive retraining to recover accuracy loss in non-linear layer quantization, limiting their use in resource-constrained environments. In contrast, existing Post-Training Quantization (PTQ) methods either partially quantize non-linear functions or adjust activation distributions to maintain accuracy but fail to achieve fully integer-only inference. In this paper, we introduce IPTQ-ViT, a novel PTQ framework for fully integer-only vision transformers without retraining. We present approximation functions: a polynomial-based GELU optimized for vision data and a bit-shifting-based Softmax designed to improve approximation accuracy in PTQ. In addition, we propose a unified metric integrating quantization sensitivity, perturbation, and computational cost to select the optimal approximation function per activation layer. IPTQ-ViT outperforms previous PTQ methods, achieving up to 6.44\%p (avg. 1.78\%p) top-1 accuracy improvement for image classification, 1.0 mAP for object detection. IPTQ-ViT outperforms partial floating-point PTQ methods under W8A8 and W4A8, and achieves accuracy and latency comparable to integer-only QAT methods. We plan to release our code this https URL. 
-
-**Abstract (ZH)**: IPTQ-ViT: 一种无需重训的完全整数推断视力变压器后训练量化框架 
 
 ---
 # Reasoning via Video: The First Evaluation of Video Models' Reasoning Abilities through Maze-Solving Tasks 
@@ -144,7 +118,7 @@ Our experiments show that no single model dominates across all tasks, confirming
 ---
 # Skin-R1: Toward Trustworthy Clinical Reasoning for Dermatological Diagnosis 
 
-**Title (ZH)**: Skin-R1: 向皮肤科诊断可信临床推理迈进 
+**Title (ZH)**: Skin-R1: 朝着皮肤科诊断可信任临床推理的探索 
 
 **Authors**: Zehao Liu, Wejieying Ren, Jipeng Zhang, Tianxiang Zhao, Jingxi Zhu, Xiaoting Li, Vasant G. Honavar  
 
@@ -153,7 +127,9 @@ Our experiments show that no single model dominates across all tasks, confirming
 **Abstract**: The emergence of vision-language models (VLMs) has opened new possibilities for clinical reasoning and has shown promising performance in dermatological diagnosis. However, their trustworthiness and clinical utility are often limited by three major factors: (1) Data heterogeneity, where diverse datasets lack consistent diagnostic labels and clinical concept annotations; (2) Absence of grounded diagnostic rationales, leading to a scarcity of reliable reasoning supervision; and (3) Limited scalability and generalization, as models trained on small, densely annotated datasets struggle to transfer nuanced reasoning to large, sparsely-annotated ones.
 To address these limitations, we propose SkinR1, a novel dermatological VLM that combines deep, textbook-based reasoning with the broad generalization capabilities of reinforcement learning (RL). SkinR1 systematically resolves the key challenges through a unified, end-to-end framework. First, we design a textbook-based reasoning generator that synthesizes high-fidelity, hierarchy-aware, and differential-diagnosis (DDx)-informed trajectories, providing reliable expert-level supervision. Second, we leverage the constructed trajectories for supervised fine-tuning (SFT) empowering the model with grounded reasoning ability. Third, we develop a novel RL paradigm that, by incorporating the hierarchical structure of diseases, effectively transfers these grounded reasoning patterns to large-scale, sparse data. Extensive experiments on multiple dermatology datasets demonstrate that SkinR1 achieves superior diagnostic accuracy. The ablation study demonstrates the importance of the reasoning foundation instilled by SFT. 
 
-**Abstract (ZH)**: 视觉语言模型(VLMs)的出现为临床推理开辟了新的可能性，并在皮肤科诊断中展现了令人鼓舞的性能。然而，它们的安全性和临床实用性常受到三大因素的限制：(1) 数据异质性，多种数据集缺乏一致的诊断标签和临床概念注释；(2) 缺乏基于证据的诊断推理，导致可靠推理监督的匮乏；(3) 有限的可扩展性和泛化能力，模型在小规模、高注释数据集上训练时难以将复杂的推理应用到大规模、低注释数据集中。为解决这些问题，我们提出了一种名为SkinR1的新颖皮肤科VLM，它结合了深厚的专业推理能力和强化学习(RL)的广泛泛化能力。SkinR1通过统一的端到端框架系统地解决了关键挑战。首先，我们设计了一种基于课本的推理生成器，合成了高保真、层次感知、差异诊断(DDx)导向的轨迹，提供了可靠的专家级监督。其次，我们利用合成的轨迹进行监督微调(SFT)，赋予模型基于证据的推理能力。第三，我们开发了一种新颖的RL范式，通过引入疾病的层次结构，有效地将这些基于证据的推理模式转移到大规模稀疏数据中。在多个皮肤科数据集上的广泛实验表明，SkinR1实现了优越的诊断准确性。消融研究进一步证明了SFT提供的推理基础的重要性。 
+**Abstract (ZH)**: 视知觉语言模型（VLMs）的出现为临床推理带来了新的可能性，并在皮肤科诊断中表现出令人鼓舞的性能。然而，它们的信任度和临床实用性往往受限于三大因素：（1）数据异质性，不同数据集缺乏一致的诊断标签和临床概念标注；（2）缺乏基于事实的诊断推理，导致可靠的推理监督稀缺；（3）有限的可扩展性和泛化能力，训练于小规模、密集标注数据集的模型难以将细微的推理能力转移到大规模、稀疏标注的数据集中。
+
+为了解决这些局限性，我们提出了SkinR1，一种新型的皮肤科VLM，它结合了基于深部教科书的推理与强化学习（RL）的强大泛化能力。SkinR1通过统一的端到端框架系统地解决了关键挑战。首先，我们设计了一种基于教科书的推理生成器，生成高保真、有层次意识且基于鉴别诊断的轨迹，提供可靠的专家级监督。其次，我们利用构建的轨迹进行监督微调（SFT），赋予模型基于事实的推理能力。第三，我们开发了一种新的RL范式，通过引入疾病的层次结构，有效地将这些基于事实的推理模式转移到大规模、稀疏数据中。在多个皮肤科数据集上的广泛实验表明，SkinR1实现了卓越的诊断准确性。消融研究表明，SFT灌输的推理基础的重要性。 
 
 ---
 # When CNNs Outperform Transformers and Mambas: Revisiting Deep Architectures for Dental Caries Segmentation 
@@ -195,22 +171,22 @@ To address these limitations, we propose SkinR1, a novel dermatological VLM that
 **Abstract (ZH)**: 基于光纤斑纹图传感器的变压器架构在温度监测中的应用：解释性AI技术的集成研究 
 
 ---
-# Causally-Informed Reinforcement Learning for Adaptive Emotion-Aware Social Media Recommendation 
+# TacEleven: generative tactic discovery for football open play 
 
-**Title (ZH)**: 基于因果关系的适应性情绪感知社交媒体推荐强化学习 
+**Title (ZH)**: TacEleven: 生成性战术发现用于足球开放进攻 
 
-**Authors**: Bhavika Jain, Robert Pitsko, Ananya Drishti, Mahfuza Farooque  
+**Authors**: Siyao Zhao, Hao Ma, Zhiqiang Pu, Jingjing Huang, Yi Pan, Shijie Wang, Zhi Ming  
 
-**Link**: [PDF](https://arxiv.org/pdf/2511.14768)  
+**Link**: [PDF](https://arxiv.org/pdf/2511.13326)  
 
-**Abstract**: Social media recommendation systems play a central role in shaping users' emotional experiences. However, most systems are optimized solely for engagement metrics, such as click rate, viewing time, or scrolling, without accounting for users' emotional states. Repeated exposure to emotionally charged content has been shown to negatively affect users' emotional well-being over time. We propose an Emotion-aware Social Media Recommendation (ESMR) framework that personalizes content based on users' evolving emotional trajectories. ESMR integrates a Transformer-based emotion predictor with a hybrid recommendation policy: a LightGBM model for engagement during stable periods and a reinforcement learning agent with causally informed rewards when negative emotional states persist. Through behaviorally grounded evaluation over 30-day interaction traces, ESMR demonstrates improved emotional recovery, reduced volatility, and strong engagement retention. ESMR offers a path toward emotionally aware recommendations without compromising engagement performance. 
+**Abstract**: Creating offensive advantages during open play is fundamental to football success. However, due to the highly dynamic and long-sequence nature of open play, the potential tactic space grows exponentially as the sequence progresses, making automated tactic discovery extremely challenging. To address this, we propose TacEleven, a generative framework for football open-play tactic discovery developed in close collaboration with domain experts from AJ Auxerre, designed to assist coaches and analysts in tactical decision-making. TacEleven consists of two core components: a language-controlled tactical generator that produces diverse tactical proposals, and a multimodal large language model-based tactical critic that selects the optimal proposal aligned with a high-level stylistic tactical instruction. The two components enables rapid exploration of tactical proposals and discovery of alternative open-play offensive tactics. We evaluate TacEleven across three tasks with progressive tactical complexity: counterfactual exploration, single-step discovery, and multi-step discovery, through both quantitative metrics and a questionnaire-based qualitative assessment. The results show that the TacEleven-discovered tactics exhibit strong realism and tactical creativity, with 52.50% of the multi-step tactical alternatives rated adoptable in real-world elite football scenarios, highlighting the framework's ability to rapidly generate numerous high-quality tactics for complex long-sequence open-play situations. TacEleven demonstrates the potential of creatively leveraging domain data and generative models to advance tactical analysis in sports. 
 
-**Abstract (ZH)**: 基于情绪感知的社会媒体推荐框架（ESMR）：提升情绪恢复、降低情绪波动并保持高 engagement 留存 
+**Abstract (ZH)**: 基于生成模型的足球开放play战术发现：TacEleven框架 
 
 ---
 # ESA: Energy-Based Shot Assembly Optimization for Automatic Video Editing 
 
-**Title (ZH)**: ESA：基于能量的镜头组装优化以实现自动视频编辑 
+**Title (ZH)**: ESA：基于能量的镜头组装优化自动视频编辑 
 
 **Authors**: Yaosen Chen, Wei Wang, Tianheng Zheng, Xuming Wen, Han Yang, Yanru Zhang  
 
@@ -218,6 +194,6 @@ To address these limitations, we propose SkinR1, a novel dermatological VLM that
 
 **Abstract**: Shot assembly is a crucial step in film production and video editing, involving the sequencing and arrangement of shots to construct a narrative, convey information, or evoke emotions. Traditionally, this process has been manually executed by experienced editors. While current intelligent video editing technologies can handle some automated video editing tasks, they often fail to capture the creator's unique artistic expression in shot assembly. To address this challenge, we propose an energy-based optimization method for video shot assembly. Specifically, we first perform visual-semantic matching between the script generated by a large language model and a video library to obtain subsets of candidate shots aligned with the script semantics. Next, we segment and label the shots from reference videos, extracting attributes such as shot size, camera motion, and semantics. We then employ energy-based models to learn from these attributes, scoring candidate shot sequences based on their alignment with reference styles. Finally, we achieve shot assembly optimization by combining multiple syntax rules, producing videos that align with the assembly style of the reference videos. Our method not only automates the arrangement and combination of independent shots according to specific logic, narrative requirements, or artistic styles but also learns the assembly style of reference videos, creating a coherent visual sequence or holistic visual expression. With our system, even users with no prior video editing experience can create visually compelling videos. Project page: this https URL 
 
-**Abstract (ZH)**: 镜头组装是电影制作和视频编辑中的一个 crucial 步骤，涉及将镜头进行排序和排列以构建叙事、传达信息或唤起情感。传统上，这一过程由有经验的编辑手动完成。尽管当前的智能视频编辑技术可以处理一些自动视频编辑任务，但在镜头组装过程中往往无法捕捉创作者的独特艺术表达。为了解决这一挑战，我们提出了一种基于能量优化的视频镜头组装方法。具体而言，我们首先通过大型语言模型生成的剧本与视频库进行视觉语义匹配，以获得与剧本语义相匹配的候选镜头子集。然后，我们从参考视频中分割和标注镜头，提取诸如镜头大小、摄像机运动和语义等属性。接着，我们采用基于能量的模型从这些属性中进行学习，根据候选镜头序列与参考风格的匹配程度进行评分。最后，我们通过结合多种语法规则实现镜头组装优化，生成与参考视频组装风格一致的视频。我们的方法不仅能够根据特定逻辑、叙事要求或艺术风格自动化地排列和组合独立镜头，还能学习参考视频的组装风格，从而创建连贯的视觉序列或整体视觉表达。借助我们的系统，即使是没有任何视频编辑经验的用户也能创建令人信服的视觉视频。项目页面：this https URL 
+**Abstract (ZH)**: 镜头装配是电影制作和视频编辑中的关键步骤，涉及镜头的排序和排列以构建叙事、传达信息或引起情感反应。传统上，这一过程由经验丰富的编辑手动执行。尽管当前的智能视频编辑技术可以处理一些自动视频编辑任务，但它们往往无法捕捉创作者在镜头装配中的独特艺术表达。为了解决这一挑战，我们提出了一种基于能量的优化方法，用于视频镜头装配。具体而言，我们首先在剧本生成器（大型语言模型）生成的剧本与视频库之间进行视觉语义匹配，以获取与剧本语义相匹配的候选镜头子集。接着，我们对参考视频中的镜头进行分割和标记，提取诸如镜头大小、摄像机运动和语义等属性。然后，我们使用基于能量的模型从这些属性中学习，根据参考风格对候选镜头序列进行评分。最后，通过结合多个语法规则实现镜头装配优化，生成与参考视频装配风格一致的视频。我们的方法不仅可以根据特定逻辑、叙事需求或艺术风格自动排列和组合独立镜头，还能学习参考视频的装配风格，创造一个连贯的视觉序列或整体的视觉表达。借助我们的系统，即使是没有任何视频编辑经验的用户也可以创作出令人视觉印象深刻的视频。项目页面：this https URL 
 
 ---
