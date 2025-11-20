@@ -24,6 +24,19 @@
 **Abstract (ZH)**: AI代理在科学研究中的应用：人类与AI的合作探讨 
 
 ---
+# Terra Nova: A Comprehensive Challenge Environment for Intelligent Agents 
+
+**Title (ZH)**: Terra Nova: 一个全面的智能代理挑战环境 
+
+**Authors**: Trevor McInroe  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.15378)  
+
+**Abstract**: We introduce Terra Nova, a new comprehensive challenge environment (CCE) for reinforcement learning (RL) research inspired by Civilization V. A CCE is a single environment in which multiple canonical RL challenges (e.g., partial observability, credit assignment, representation learning, enormous action spaces, etc.) arise simultaneously. Mastery therefore demands integrated, long-horizon understanding across many interacting variables. We emphasize that this definition excludes challenges that only aggregate unrelated tasks in independent, parallel streams (e.g., learning to play all Atari games at once). These aggregated multitask benchmarks primarily asses whether an agent can catalog and switch among unrelated policies rather than test an agent's ability to perform deep reasoning across many interacting challenges. 
+
+**Abstract (ZH)**: 我们介绍Terra Nova：一种受文明V启发的新型综合挑战环境（CCE）以促进强化学习（RL）研究 
+
+---
 # Realist and Pluralist Conceptions of Intelligence and Their Implications on AI Research 
 
 **Title (ZH)**: 现实主义与多元主义的智能观念及其对AI研究的影响 
@@ -48,19 +61,6 @@
 **Abstract**: AI research is increasingly moving toward complex problem solving, where models are optimized not only for pattern recognition but for multi-step reasoning. Historically, computing's global energy footprint has been stabilized by sustained efficiency gains and natural saturation thresholds in demand. But as efficiency improvements are approaching physical limits, emerging reasoning AI lacks comparable saturation points: performance is no longer limited by the amount of available training data but continues to scale with exponential compute investments in both training and inference. This paper argues that efficiency alone will not lead to sustainable reasoning AI and discusses research and policy directions to embed explicit limits into the optimization and governance of such systems. 
 
 **Abstract (ZH)**: AI研究 increasingly转向复杂问题求解：效率边界将取代数据边界推动 reasoning AI 发展及治理方向探讨 
-
----
-# SafeRBench: A Comprehensive Benchmark for Safety Assessment in Large Reasoning Models 
-
-**Title (ZH)**: SafeRBench：大规模推理模型安全性评估的综合基准 
-
-**Authors**: Xin Gao, Shaohan Yu, Zerui Chen, Yueming Lyu, Weichen Yu, Guanghao Li, Jiyao Liu, Jianxiong Gao, Jian Liang, Ziwei Liu, Chenyang Si  
-
-**Link**: [PDF](https://arxiv.org/pdf/2511.15169)  
-
-**Abstract**: Large Reasoning Models (LRMs) improve answer quality through explicit chain-of-thought, yet this very capability introduces new safety risks: harmful content can be subtly injected, surface gradually, or be justified by misleading rationales within the reasoning trace. Existing safety evaluations, however, primarily focus on output-level judgments and rarely capture these dynamic risks along the reasoning process. In this paper, we present SafeRBench, the first benchmark that assesses LRM safety end-to-end -- from inputs and intermediate reasoning to final outputs. (1) Input Characterization: We pioneer the incorporation of risk categories and levels into input design, explicitly accounting for affected groups and severity, and thereby establish a balanced prompt suite reflecting diverse harm gradients. (2) Fine-Grained Output Analysis: We introduce a micro-thought chunking mechanism to segment long reasoning traces into semantically coherent units, enabling fine-grained evaluation across ten safety dimensions. (3) Human Safety Alignment: We validate LLM-based evaluations against human annotations specifically designed to capture safety judgments. Evaluations on 19 LRMs demonstrate that SafeRBench enables detailed, multidimensional safety assessment, offering insights into risks and protective mechanisms from multiple perspectives. 
-
-**Abstract (ZH)**: 大型推理模型的安全性评估：SafeRBench 
 
 ---
 # Task Specific Sharpness Aware O-RAN Resource Management using Multi Agent Reinforcement Learning 
@@ -129,52 +129,6 @@ We apply an imprecise Bayesian method to handle limited data and uncertain prior
 **Abstract (ZH)**: 近年来，Transformer架构在各种任务和模态中取得了出色的表现。Token是基于Transformer模型的统一输入和输出表示，已经成为基本的信息单元。在本文中，我们考虑了Token通信的问题，研究如何高效可靠地传输Token。点云作为一种相比于图像或视频表现出更复杂空间结构的主流三维格式，被选为信息源。我们利用集合抽象方法获得点Token。随后，为了基于Token获得更具信息量且便于传输的表示，我们提出了一种联合语义信道和调制（JSCCM）方案，将点Token映射为标准数字星座点（调制Token）。具体来说，JSCCM由两个并行的基于点Transformer的编码器和一个结合Gumel-softmax和软量化方法的差分调制器组成。此外，我们开发了速率分配器和信道适配器，以根据语义信息和信道条件自适应地生成高质量的调制Token。广泛仿真实验表明，所提出的方法在重建方面优于联合语义信道编码和传统分离编码，获得了超过1dB的增益，并且在调制符号方面的压缩比超过6倍。 
 
 ---
-# Walrus: A Cross-Domain Foundation Model for Continuum Dynamics 
-
-**Title (ZH)**: walrus: 跨域连续动力学基础模型 
-
-**Authors**: Michael McCabe, Payel Mukhopadhyay, Tanya Marwah, Bruno Regaldo-Saint Blancard, Francois Rozet, Cristiana Diaconu, Lucas Meyer, Kaze W. K. Wong, Hadi Sotoudeh, Alberto Bietti, Irina Espejo, Rio Fear, Siavash Golkar, Tom Hehir, Keiya Hirashima, Geraud Krawezik, Francois Lanusse, Rudy Morel, Ruben Ohana, Liam Parker, Mariel Pettee, Jeff Shen, Kyunghyun Cho, Miles Cranmer, Shirley Ho  
-
-**Link**: [PDF](https://arxiv.org/pdf/2511.15684)  
-
-**Abstract**: Foundation models have transformed machine learning for language and vision, but achieving comparable impact in physical simulation remains a challenge. Data heterogeneity and unstable long-term dynamics inhibit learning from sufficiently diverse dynamics, while varying resolutions and dimensionalities challenge efficient training on modern hardware. Through empirical and theoretical analysis, we incorporate new approaches to mitigate these obstacles, including a harmonic-analysis-based stabilization method, load-balanced distributed 2D and 3D training strategies, and compute-adaptive tokenization. Using these tools, we develop Walrus, a transformer-based foundation model developed primarily for fluid-like continuum dynamics. Walrus is pretrained on nineteen diverse scenarios spanning astrophysics, geoscience, rheology, plasma physics, acoustics, and classical fluids. Experiments show that Walrus outperforms prior foundation models on both short and long term prediction horizons on downstream tasks and across the breadth of pretraining data, while ablation studies confirm the value of our contributions to forecast stability, training throughput, and transfer performance over conventional approaches. Code and weights are released for community use. 
-
-**Abstract (ZH)**: 基础模型已 transformative 语言和视觉领域的机器学习，但在物理模拟中实现同等影响仍面临挑战。数据异质性和不稳定的长期动态阻碍了从足够多样化的动态中学习，而不同的分辨率和维度则对现代硬件上的高效训练构成了挑战。通过实证和理论分析，我们引入了新的方法来缓解这些障碍，包括基于谐波分析的稳定方法、负载均衡的分布式二维和三维训练策略，以及计算自适应的标记化方法。借助这些工具，我们开发了Walrus，这是一种主要用于流体-like 连续体动力学的基础模型。Walrus在天体物理学、地球科学、流变学、等离子体物理学、声学和经典流体等19种不同场景下进行预训练。实验表明，Walrus在下游任务和预训练数据的短期和长期预测方面均优于先前的基础模型，消除实验进一步证实了我们在预测稳定性、训练吞吐量和转移性能方面的贡献优于传统方法。已发布代码和权重供社区使用。 
-
----
-# GEO-Bench-2: From Performance to Capability, Rethinking Evaluation in Geospatial AI 
-
-**Title (ZH)**: GEO-Bench-2: 从性能到能力，重新思考地理空间AI的评估 
-
-**Authors**: Naomi Simumba, Nils Lehmann, Paolo Fraccaro, Hamed Alemohammad, Geeth De Mel, Salman Khan, Manil Maskey, Nicolas Longepe, Xiao Xiang Zhu, Hannah Kerner, Juan Bernabe-Moreno, Alexander Lacoste  
-
-**Link**: [PDF](https://arxiv.org/pdf/2511.15658)  
-
-**Abstract**: Geospatial Foundation Models (GeoFMs) are transforming Earth Observation (EO), but evaluation lacks standardized protocols. GEO-Bench-2 addresses this with a comprehensive framework spanning classification, segmentation, regression, object detection, and instance segmentation across 19 permissively-licensed datasets. We introduce ''capability'' groups to rank models on datasets that share common characteristics (e.g., resolution, bands, temporality). This enables users to identify which models excel in each capability and determine which areas need improvement in future work. To support both fair comparison and methodological innovation, we define a prescriptive yet flexible evaluation protocol. This not only ensures consistency in benchmarking but also facilitates research into model adaptation strategies, a key and open challenge in advancing GeoFMs for downstream tasks.
-Our experiments show that no single model dominates across all tasks, confirming the specificity of the choices made during architecture design and pretraining. While models pretrained on natural images (ConvNext ImageNet, DINO V3) excel on high-resolution tasks, EO-specific models (TerraMind, Prithvi, and Clay) outperform them on multispectral applications such as agriculture and disaster response. These findings demonstrate that optimal model choice depends on task requirements, data modalities, and constraints. This shows that the goal of a single GeoFM model that performs well across all tasks remains open for future research. GEO-Bench-2 enables informed, reproducible GeoFM evaluation tailored to specific use cases. Code, data, and leaderboard for GEO-Bench-2 are publicly released under a permissive license. 
-
-**Abstract (ZH)**: GeoFMs的空间基础模型正在变革地球观测（EO），但评估缺乏标准化的协议。GEO-Bench-2通过涵盖分类、分割、回归、对象检测和实例分割的全面框架，解决了这一问题，该框架覆盖了19个许可使用的数据集。我们引入“能力”组，根据数据集共享的共同特征（如分辨率、波段、时序性）对模型进行排名。这使得用户能够识别出哪些模型在每个能力上表现最佳，并确定未来工作中需要改进的领域。为了支持公平比较和方法创新，我们定义了一种处方但灵活的评估协议。这不仅确保了基准测试的一致性，还促进了针对下游任务改进GeoFMs的模型适应策略的研究，这是一项关键且开放的挑战。我们的实验表明，没有单一模型能够在所有任务中占据主导地位，这证实了在架构设计和预训练过程中所做的选择具有特定性。虽然在自然图像上预训练的模型（ConvNext ImageNet，DINO V3）在高分辨率任务中表现出色，但专门针对EO的应用模型（TerraMind，Prithvi，和Clay）在农业和灾害响应等多光谱应用中表现更优。这些发现表明，最优模型的选择取决于任务要求、数据模态和约束条件。这表明，一个适用于所有任务的GeoFM模型的表现仍然需要未来研究来验证。GEO-Bench-2使针对具体应用场景进行知情和可重复的GeoFM评估成为可能。GEO-Bench-2的代码、数据和排行榜在宽松的许可下公开发布。 
-
----
-# Continual Reinforcement Learning for Cyber-Physical Systems: Lessons Learned and Open Challenges 
-
-**Title (ZH)**: 持续强化学习在网络物理系统中的应用：经验教训与开放挑战 
-
-**Authors**: Kim N. Nolle, Ivana Dusparic, Rhodri Cusack, Vinny Cahill  
-
-**Link**: [PDF](https://arxiv.org/pdf/2511.15652)  
-
-**Abstract**: Continual learning (CL) is a branch of machine learning that aims to enable agents to adapt and generalise previously learned abilities so that these can be reapplied to new tasks or environments. This is particularly useful in multi-task settings or in non-stationary environments, where the dynamics can change over time. This is particularly relevant in cyber-physical systems such as autonomous driving. However, despite recent advances in CL, successfully applying it to reinforcement learning (RL) is still an open problem.
-This paper highlights open challenges in continual RL (CRL) based on experiments in an autonomous driving environment. In this environment, the agent must learn to successfully park in four different scenarios corresponding to parking spaces oriented at varying angles. The agent is successively trained in these four scenarios one after another, representing a CL environment, using Proximal Policy Optimisation (PPO). These experiments exposed a number of open challenges in CRL: finding suitable abstractions of the environment, oversensitivity to hyperparameters, catastrophic forgetting, and efficient use of neural network capacity.
-Based on these identified challenges, we present open research questions that are important to be addressed for creating robust CRL systems. In addition, the identified challenges call into question the suitability of neural networks for CL. We also identify the need for interdisciplinary research, in particular between computer science and neuroscience. 
-
-**Abstract (ZH)**: 持续学习（CL）是机器学习的一个分支，旨在使智能体能够适应并泛化之前学到的能力，以便这些能力能够应用于新的任务或环境中。这在多任务设置或非稳态环境中尤为重要，因为系统的动态性会随时间变化。这在自动驾驶等物理-信息系统中尤为相关。然而，尽管在持续学习领域取得了 recent 进展，将其成功应用于强化学习（RL）仍然是一个开放问题。
-
-本文基于在自动驾驶环境中进行的实验，指出了基于持续学习的强化学习（CRL）中的几个开放挑战。在这些实验中，智能体需要依次学习在四个不同场景下成功停车的能力，这些场景对应于不同角度的停车位。智能体使用 proximal 策略优化（PPO）在这些四个场景中逐个接受训练，形成一个持续学习环境。这些实验揭示了 CRL 中的若干开放挑战：环境的有效抽象、超参数的过度敏感性、灾难性遗忘以及神经网络容量的有效利用。
-
-基于上述识别出的挑战，我们提出了亟待解决的开放研究问题，以创建可靠的持续学习强化学习系统。此外，这些挑战也引发了对神经网络在持续学习中适用性的疑问，强调了跨学科研究的必要性，特别是在计算机科学与神经科学之间。 
-
----
 # Sufficient Explanations in Databases and their Connections to Necessary Explanations and Repairs 
 
 **Title (ZH)**: 数据库中的充分解释及其与必要解释和修复的关系 
@@ -224,7 +178,7 @@ Based on these identified challenges, we present open research questions that ar
 
 **Abstract**: Multimodal large language models (MLLMs) are currently at the center of research attention, showing rapid progress in scale and capabilities, yet their intelligence, limitations, and risks remain insufficiently understood. To address these issues, particularly in the context of the Russian language, where no multimodal benchmarks currently exist, we introduce Mera Multi, an open multimodal evaluation framework for Russian-spoken architectures. The benchmark is instruction-based and encompasses default text, image, audio, and video modalities, comprising 18 newly constructed evaluation tasks for both general-purpose models and modality-specific architectures (image-to-text, video-to-text, and audio-to-text). Our contributions include: (i) a universal taxonomy of multimodal abilities; (ii) 18 datasets created entirely from scratch with attention to Russian cultural and linguistic specificity, unified prompts, and metrics; (iii) baseline results for both closed-source and open-source models; (iv) a methodology for preventing benchmark leakage, including watermarking and licenses for private sets. While our current focus is on Russian, the proposed benchmark provides a replicable methodology for constructing multimodal benchmarks in typologically diverse languages, particularly within the Slavic language family. 
 
-**Abstract (ZH)**: 多模态大型语言模型（MLLMs）目前是研究的中心，展示了在规模和能力上的快速进步，但它们的智能、局限性和风险仍不够了解。为此，特别是在目前俄语缺乏多模态基准的情况下，我们引入了Mera Multi，一个用于俄语架构的开放多模态评估框架。该基准以指令为基础，涵盖了默认的文字、图像、音频和视频模态，包括18项新的评估任务，适用于通用模型和模态特定架构（图像到文本、视频到文本和音频到文本）。我们的贡献包括：(i) 多模态能力的通用分类；(ii) 18个全新的数据集，确保考虑了俄语文化与语言的特定性、统一的提示和指标；(iii) 闭源和开源模型的基线结果；(iv) 防止基准泄露的方法论，包括水印和私有集合的许可证。尽管我们目前的关注点是俄语，但提出的基准提供了一种可复制的方法论，用于构建类型多样的语言的多模态基准，特别是在斯拉夫语族中。 
+**Abstract (ZH)**: 多模态大规模语言模型（MLLMs）目前是研究焦点，显示出在规模和能力上的迅速进展，但其智能性、限制和风险仍不够了解。为应对这些问题，特别是在目前俄语领域缺乏多模态基准的情况下，我们引入了Mera Multi，一个针对俄语架构的开放多模态评估框架。该基准基于指令，包括默认的文字、图像、音频和视频模态，共有18项新的评估任务，适用于通用模型和模态特定架构（图像到文本、视频到文本和音频到文本）。我们的贡献包括：(i) 一个多模态能力的通用分类学；(ii) 18个从零开始创建的数据集，注意俄语文化与语言的特殊性，统一的提示和评估指标；(iii) 专源和开源模型的基线结果；(iv) 防止基准泄漏的方法，包括水印和私有集的许可证。虽然我们的当前重点是俄语，但所提出的基准为在不同类型的语言中构建多模态基准提供了可复制的方法，特别是斯拉夫语族语言。 
 
 ---
 # Theoretical Closed-loop Stability Bounds for Dynamical System Coupled with Diffusion Policies 
@@ -294,7 +248,7 @@ Based on these identified challenges, we present open research questions that ar
 ---
 # RRT*former: Environment-Aware Sampling-Based Motion Planning using Transformer 
 
-**Title (ZH)**: RRT*former: 基于变压器的环境意识采样运动规划 
+**Title (ZH)**: RRT*former: 基于环境aware采样并使用Transformer的运动规划 
 
 **Authors**: Mingyang Feng, Shaoyuan Li, Xiang Yin  
 
@@ -302,7 +256,7 @@ Based on these identified challenges, we present open research questions that ar
 
 **Abstract**: We investigate the sampling-based optimal path planning problem for robotics in complex and dynamic environments. Most existing sampling-based algorithms neglect environmental information or the information from previous samples. Yet, these pieces of information are highly informative, as leveraging them can provide better heuristics when sampling the next state. In this paper, we propose a novel sampling-based planning algorithm, called \emph{RRT*former}, which integrates the standard RRT* algorithm with a Transformer network in a novel way. Specifically, the Transformer is used to extract features from the environment and leverage information from previous samples to better guide the sampling process. Our extensive experiments demonstrate that, compared to existing sampling-based approaches such as RRT*, Neural RRT*, and their variants, our algorithm achieves considerable improvements in both the optimality of the path and sampling efficiency. The code for our implementation is available on this https URL. 
 
-**Abstract (ZH)**: 基于采样的机器人在复杂动态环境中的路径规划问题研究：一种新颖的结合Transformer的RRT*former算法 
+**Abstract (ZH)**: 基于采样的机器人在复杂动态环境中的最优路径规划问题研究：一种新型的结合Transformer网络的RRT*算法 
 
 ---
 # Parameter Importance-Driven Continual Learning for Foundation Models 
@@ -320,7 +274,7 @@ Based on these identified challenges, we present open research questions that ar
 ---
 # IPTQ-ViT: Post-Training Quantization of Non-linear Functions for Integer-only Vision Transformers 
 
-**Title (ZH)**: IPTQ-ViT：仅整数视觉变换器的后训练量化nings 
+**Title (ZH)**: IPTQ-ViT：仅整数视觉变换器的后训练量化非线性函数 
 
 **Authors**: Gihwan Kim, Jemin Lee, Hyungshin Kim  
 
@@ -328,7 +282,7 @@ Based on these identified challenges, we present open research questions that ar
 
 **Abstract**: Previous Quantization-Aware Training (QAT) methods for vision transformers rely on expensive retraining to recover accuracy loss in non-linear layer quantization, limiting their use in resource-constrained environments. In contrast, existing Post-Training Quantization (PTQ) methods either partially quantize non-linear functions or adjust activation distributions to maintain accuracy but fail to achieve fully integer-only inference. In this paper, we introduce IPTQ-ViT, a novel PTQ framework for fully integer-only vision transformers without retraining. We present approximation functions: a polynomial-based GELU optimized for vision data and a bit-shifting-based Softmax designed to improve approximation accuracy in PTQ. In addition, we propose a unified metric integrating quantization sensitivity, perturbation, and computational cost to select the optimal approximation function per activation layer. IPTQ-ViT outperforms previous PTQ methods, achieving up to 6.44\%p (avg. 1.78\%p) top-1 accuracy improvement for image classification, 1.0 mAP for object detection. IPTQ-ViT outperforms partial floating-point PTQ methods under W8A8 and W4A8, and achieves accuracy and latency comparable to integer-only QAT methods. We plan to release our code this https URL. 
 
-**Abstract (ZH)**: IPTQ-ViT: 一种无需重训的完全整数推断视力变压器后训练量化框架 
+**Abstract (ZH)**: IPTQ-ViT：无需重新训练的全整数后训练量化视觉变压器 
 
 ---
 # Reflexive Evidence-Based Multimodal Learning for Clean Energy Transitions: Causal Insights on Cooking Fuel Access, Urbanization, and Carbon Emissions 
@@ -363,22 +317,9 @@ Experiments on an automotive telemetry dataset and the public SMD benchmark show
 实验结果表明，在汽车遥测数据集和公开的SMD基准上，明确分离漂移和突变动态相比强大的预测、注意力、图和VAE基线能够提高鲁棒性。 
 
 ---
-# Path Planning through Multi-Agent Reinforcement Learning in Dynamic Environments 
-
-**Title (ZH)**: 动态环境中文多Agent强化学习路径规划 
-
-**Authors**: Jonas De Maeyer, Hossein Yarahmadi, Moharram Challenger  
-
-**Link**: [PDF](https://arxiv.org/pdf/2511.15284)  
-
-**Abstract**: Path planning in dynamic environments is a fundamental challenge in intelligent transportation and robotics, where obstacles and conditions change over time, introducing uncertainty and requiring continuous adaptation. While existing approaches often assume complete environmental unpredictability or rely on global planners, these assumptions limit scalability and practical deployment in real-world settings. In this paper, we propose a scalable, region-aware reinforcement learning (RL) framework for path planning in dynamic environments. Our method builds on the observation that environmental changes, although dynamic, are often localized within bounded regions. To exploit this, we introduce a hierarchical decomposition of the environment and deploy distributed RL agents that adapt to changes locally. We further propose a retraining mechanism based on sub-environment success rates to determine when policy updates are necessary. Two training paradigms are explored: single-agent Q-learning and multi-agent federated Q-learning, where local Q-tables are aggregated periodically to accelerate the learning process. Unlike prior work, we evaluate our methods in more realistic settings, where multiple simultaneous obstacle changes and increasing difficulty levels are present. Results show that the federated variants consistently outperform their single-agent counterparts and closely approach the performance of A* Oracle while maintaining shorter adaptation times and robust scalability. Although initial training remains time-consuming in large environments, our decentralized framework eliminates the need for a global planner and lays the groundwork for future improvements using deep RL and flexible environment decomposition. 
-
-**Abstract (ZH)**: 在动态环境中的路径规划是智能交通和机器人技术中的一项基本挑战，其中障碍物和条件会随时间变化，引入不确定性并要求持续适应。现有方法常假设环境完全不可预测或依赖全局规划器，这些假设限制了在实际场景中的可扩展性和实用性。本文提出了一种适用于动态环境的层次化区域感知强化学习（RL）框架，用于路径规划。我们的方法基于观察到的环境变化虽然动态，但通常局限于有限的区域内。为此，我们提出了环境的层次化分解，并部署了能够局部适应变化的分布式RL代理。进一步提出了基于子环境成功率的重训练机制，以确定何时需要更新策略。探讨了两种训练范式：单代理Q学习和多代理联邦Q学习，其中局部Q表会定期聚合以加速学习过程。与先前工作不同，我们是在包含多个同时障碍变化和提高难度级别的更现实场景中评估我们的方法。结果表明，联邦变体始终优于单代理变体，并且在保持更短的适应时间和稳健可扩展性的同时接近A* Oracle的性能。尽管在大型环境中初始训练仍耗时较长，但我们的去中心化框架消除了对全局规划器的需求，并为未来使用深度RL和灵活环境分解的改进奠定了基础。 
-
----
 # OEMA: Ontology-Enhanced Multi-Agent Collaboration Framework for Zero-Shot Clinical Named Entity Recognition 
 
-**Title (ZH)**: 基于本体增强的多代理协作框架：零样本临床命名实体识别 
+**Title (ZH)**: 基于本体增强的多agent协作框架：零样本临床命名实体识别 
 
 **Authors**: Xinli Tao, Xin Dong, Xuezhong Zhou  
 
@@ -386,7 +327,7 @@ Experiments on an automotive telemetry dataset and the public SMD benchmark show
 
 **Abstract**: Clinical named entity recognition (NER) is crucial for extracting information from electronic health records (EHRs), but supervised models like CRF and BioClinicalBERT require costly annotated data. While zero-shot NER with large language models (LLMs) reduces this dependency, it struggles with example selection granularity and integrating prompts with self-improvement. To address this, we propose OEMA, a zero-shot clinical NER framework using multi-agent collaboration. OEMA's three components are: a self-annotator generating examples, a discriminator filtering them via SNOMED CT, and a predictor using entity descriptions for accurate inference. On MTSamples and VAERS datasets, OEMA achieves state-of-the-art exact-match performance. Under related-match, it matches supervised BioClinicalBERT and surpasses CRF. OEMA addresses key zero-shot NER challenges through ontology-guided reasoning and multi-agent collaboration, achieving near-supervised performance and showing promise for clinical NLP applications. 
 
-**Abstract (ZH)**: 临床命名实体识别（NER）对于从电子健康记录（EHRs）中提取信息至关重要，但监督模型如CRF和BioClinicalBERT需要 costly 标注数据。虽然大规模语言模型（LLMs）的零样本NER在减少这种依赖方面具有优势，但在示例选择粒度和提示集成的自我提升方面存在问题。为了解决这些问题，我们提出了一种基于多代理协作的零样本临床NER框架OEMA。OEMA的三个组件包括：一个自标注器生成示例、一个通过SNOMED CT 进行筛选的鉴别器，以及一个使用实体描述进行准确推理的预测器。在MTSamples和VAERS数据集上，OEMA实现了最先进的完全匹配性能。在相关匹配下，它与监督BioClinicalBERT相当，并超越CRF。OEMA通过本体引导的推理和多代理协作，解决了零样本NER的关键挑战，实现了接近监督的表现，并展示了其在临床NLP应用中的潜力。 
+**Abstract (ZH)**: 临床命名实体识别（NER）对于从电子健康记录（EHRs）中提取信息至关重要，但监督模型如CRF和BioClinicalBERT需要昂贵的标注数据。而利用大规模语言模型（LLMs）的零样本NER在减少这种依赖性的同时，难以在示例选择粒度上取得突破，并且难以整合提示与自我提升。为解决这一问题，我们提出了一种名为OEMA的基于多智能体协作的零样本临床NER框架。OEMA的三个组成部分包括：自标注生成器生成示例、鉴别器通过SNOMED CT进行过滤以及使用实体描述进行准确推断的预测器。在MTSamples和VAERS数据集上，OEMA实现了最先进的精确匹配性能。在相关匹配下，OEMA匹配并超过了监督的BioClinicalBERT，并超越了CRF。OEMA通过本体指导推理和多智能体协作解决了关键的零样本NER挑战，实现了接近监督性能，并展现出了在临床NLP应用中的潜力。 
 
 ---
 # Masked Auto-Regressive Variational Acceleration: Fast Inference Makes Practical Reinforcement Learning 
@@ -428,22 +369,9 @@ Experiments on an automotive telemetry dataset and the public SMD benchmark show
 **Abstract (ZH)**: 在工业设备监控中，故障诊断对于确保系统可靠性并实现预测性维护至关重要。然而，由于故障事件的罕见性和数据注解的高成本，故障数据的稀缺性显著阻碍了数据驱动方法的应用。现有的时间序列生成模型虽然针对丰富的正常数据进行了优化，但在少量数据场景中难以捕捉故障分布，生成的样本由于故障领域的巨大差异性和高类内变异性而缺乏真实性和多样性。为解决这一问题，我们提出了一种基于扩散模型的新型少量数据故障时间序列生成框架。该方法利用预训练的正常数据分布，通过正负差异适配器建模正常与故障领域的差异，以实现准确的故障合成。此外，引入了多样性损失以防止模式崩溃，并通过跨样本差异正则化鼓励生成多样化的故障样本。实验结果表明，我们的模型在真实性和多样性方面显著优于传统方法，并在关键基准测试上取得了最先进的性能。 
 
 ---
-# Learning Depth from Past Selves: Self-Evolution Contrast for Robust Depth Estimation 
-
-**Title (ZH)**: 从过去的自己学习深度：自我进化对比学习方法实现稳健的深度估计 
-
-**Authors**: Jing Cao, Kui Jiang, Shenyi Li, Xiaocheng Feng, Yong Huang  
-
-**Link**: [PDF](https://arxiv.org/pdf/2511.15167)  
-
-**Abstract**: Self-supervised depth estimation has gained significant attention in autonomous driving and robotics. However, existing methods exhibit substantial performance degradation under adverse weather conditions such as rain and fog, where reduced visibility critically impairs depth prediction. To address this issue, we propose a novel self-evolution contrastive learning framework called SEC-Depth for self-supervised robust depth estimation tasks. Our approach leverages intermediate parameters generated during training to construct temporally evolving latency models. Using these, we design a self-evolution contrastive scheme to mitigate performance loss under challenging conditions. Concretely, we first design a dynamic update strategy of latency models for the depth estimation task to capture optimization states across training stages. To effectively leverage latency models, we introduce a self-evolution contrastive Loss (SECL) that treats outputs from historical latency models as negative samples. This mechanism adaptively adjusts learning objectives while implicitly sensing weather degradation severity, reducing the needs for manual intervention. Experiments show that our method integrates seamlessly into diverse baseline models and significantly enhances robustness in zero-shot evaluations. 
-
-**Abstract (ZH)**: 自监督深度估计在自动驾驶和机器人领域引起了显著关注。然而，现有方法在雨雾等不良天气条件下表现大幅下降，其中降低的可见性严重影响了深度预测。为解决这一问题，我们提出了一种新颖的自进化对比学习框架SEC-Depth，用于自监督稳健深度估计任务。我们的方法利用训练过程中生成的中间参数构建时间演化延迟模型。基于这些模型，我们设计了一种自进化对比方案，以减轻在恶劣条件下的性能损失。具体地，我们首先为深度估计任务设计了一种动态延迟模型更新策略，以捕捉训练阶段的优化状态。为了有效利用延迟模型，我们引入了一种自进化对比损失（SECL），将历史延迟模型的输出作为负样本。这种机制能够适应性地调整学习目标，同时隐式感知天气退化严重性，减少了手动干预的需要。实验结果显示，我们的方法能够无缝集成到各种基线模型，并显著提高了零样本评估中的鲁棒性。 
-
----
 # Can MLLMs Detect Phishing? A Comprehensive Security Benchmark Suite Focusing on Dynamic Threats and Multimodal Evaluation in Academic Environments 
 
-**Title (ZH)**: MLLMs在学术环境中的动态威胁检测及多模态评估综合安全基准套件：针对钓鱼攻击的能力探究 
+**Title (ZH)**: MLLMs能在学术环境中检测钓鱼攻击吗？一个专注于动态威胁和多模态评估的综合性安全基准套件 
 
 **Authors**: Jingzhuo Zhou  
 
@@ -451,20 +379,7 @@ Experiments on an automotive telemetry dataset and the public SMD benchmark show
 
 **Abstract**: The rapid proliferation of Multimodal Large Language Models (MLLMs) has introduced unprecedented security challenges, particularly in phishing detection within academic environments. Academic institutions and researchers are high-value targets, facing dynamic, multilingual, and context-dependent threats that leverage research backgrounds, academic collaborations, and personal information to craft highly tailored attacks. Existing security benchmarks largely rely on datasets that do not incorporate specific academic background information, making them inadequate for capturing the evolving attack patterns and human-centric vulnerability factors specific to academia. To address this gap, we present AdapT-Bench, a unified methodological framework and benchmark suite for systematically evaluating MLLM defense capabilities against dynamic phishing attacks in academic settings. 
 
-**Abstract (ZH)**: Multimodal Large Language Models安全性挑战及其在学术环境中的鱼叉攻击检测：AdapT-Bench统一方法框架与基准测试套件 
-
----
-# Generating Natural-Language Surgical Feedback: From Structured Representation to Domain-Grounded Evaluation 
-
-**Title (ZH)**: 生成自然语言手术反馈：从结构化表示到领域导向评估 
-
-**Authors**: Firdavs Nasriddinov, Rafal Kocielnik, Anima Anandkumar, Andrew J. Hung  
-
-**Link**: [PDF](https://arxiv.org/pdf/2511.15159)  
-
-**Abstract**: High-quality intraoperative feedback from a surgical trainer is pivotal for improving trainee performance and long-term skill acquisition. Automating natural, trainer-style feedback promises timely, accessible, and consistent guidance at scale but requires models that understand clinically relevant representations. We present a structure-aware pipeline that learns a surgical action ontology from real trainer-to-trainee transcripts (33 surgeries) and uses it to condition feedback generation. We contribute by (1) mining Instrument-Action-Target (IAT) triplets from real-world feedback text and clustering surface forms into normalized categories, (2) fine-tuning a video-to-IAT model that leverages the surgical procedure and task contexts as well as fine-grained temporal instrument motion, and (3) demonstrating how to effectively use IAT triplet representations to guide GPT-4o in generating clinically grounded, trainer-style feedback. We show that, on Task 1: Video-to-IAT recognition, our context injection and temporal tracking deliver consistent AUC gains (Instrument: 0.67 to 0.74; Action: 0.60 to 0.63; Tissue: 0.74 to 0.79). For Task 2: feedback text generation (rated on a 1-5 fidelity rubric where 1 = opposite/unsafe, 3 = admissible, and 5 = perfect match to a human trainer), GPT-4o from video alone scores 2.17, while IAT conditioning reaches 2.44 (+12.4%), doubling the share of admissible generations with score >= 3 from 21% to 42%. Traditional text-similarity metrics also improve: word error rate decreases by 15-31% and ROUGE (phrase/substring overlap) increases by 9-64%. Grounding generation in explicit IAT structure improves fidelity and yields clinician-verifiable rationales, supporting auditable use in surgical training. 
-
-**Abstract (ZH)**: 高质量的术中反馈对于提高受训者性能和长期技能获取至关重要。自动化自然风格的反馈有望提供及时、便捷且一致的指导，但需要理解临床相关表示的模型。我们提出了一种结构感知管道，从真实训练者-受训者对话记录（33次手术）中学习手术动作本体，并利用其条件反馈生成。我们 contributions 包括：(1) 从真实反馈文本中挖掘器械-动作-目标（IAT）三元组，并将其表面形式归类为规范化类别；(2) 微调一种视频到IAT模型，该模型利用手术程序和任务上下文以及精细的时间仪器运动；(3) 展示如何有效使用IAT三元组表示引导GPT-4o生成临床相关的训练风格反馈。我们展示了，对于任务1：视频到IAT识别，我们的上下文注入和时间跟踪在仪器（0.67到0.74）、动作（0.60到0.63）和组织（0.74到0.79）方面提供了一致的AUC提升。对于任务2：反馈文本生成（按1-5的保真度标准评分，1=相反/不安全，3=允许，5=完美匹配真人训练者），仅从视频生成的GPT-4o评分为2.17，而IAT条件下的评分为2.44（+12.4%），使评分>=3的生成比例从21%翻倍至42%。传统文本相似度指标也有所改善：单词错误率下降15-31%，ROUGE（短语/子字符串重叠）增加9-64%。将生成根植于明确的IAT结构提高了保真度并提供了可验证的合理解释，支持手术培训中的可审计使用。 
+**Abstract (ZH)**: 多模态大型语言模型的迅速 proliferation 在学术环境中引入了前所未有的安全挑战，特别是针对钓鱼攻击的检测。学术机构和研究人员是高价值目标，面临着利用研究背景、学术合作和个人信息量身定制的动态、多语言和情境依赖的威胁。现有的安全基准主要依赖于不包含具体学术背景信息的数据集，使其难以捕捉到学术环境中特定的人本脆弱性和不断演化的攻击模式。为弥补这一差距，我们提出了 AdapT-Bench，一个统一的方法论框架和基准套件，用于系统性评估多模态大型语言模型在学术环境中的防动态钓鱼攻击能力。 
 
 ---
 # DCL-SE: Dynamic Curriculum Learning for Spatiotemporal Encoding of Brain Imaging 
@@ -478,6 +393,19 @@ Experiments on an automotive telemetry dataset and the public SMD benchmark show
 **Abstract**: High-dimensional neuroimaging analyses for clinical diagnosis are often constrained by compromises in spatiotemporal fidelity and by the limited adaptability of large-scale, general-purpose models. To address these challenges, we introduce Dynamic Curriculum Learning for Spatiotemporal Encoding (DCL-SE), an end-to-end framework centered on data-driven spatiotemporal encoding (DaSE). We leverage Approximate Rank Pooling (ARP) to efficiently encode three-dimensional volumetric brain data into information-rich, two-dimensional dynamic representations, and then employ a dynamic curriculum learning strategy, guided by a Dynamic Group Mechanism (DGM), to progressively train the decoder, refining feature extraction from global anatomical structures to fine pathological details. Evaluated across six publicly available datasets, including Alzheimer's disease and brain tumor classification, cerebral artery segmentation, and brain age prediction, DCL-SE consistently outperforms existing methods in accuracy, robustness, and interpretability. These findings underscore the critical importance of compact, task-specific architectures in the era of large-scale pretrained networks. 
 
 **Abstract (ZH)**: 基于时空编码的动态 curriculum 学习在高维神经成像临床诊断中的应用 
+
+---
+# Generating Natural-Language Surgical Feedback: From Structured Representation to Domain-Grounded Evaluation 
+
+**Title (ZH)**: 生成自然语言手术反馈：从结构化表示到领域导向评估 
+
+**Authors**: Firdavs Nasriddinov, Rafal Kocielnik, Anima Anandkumar, Andrew J. Hung  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.15159)  
+
+**Abstract**: High-quality intraoperative feedback from a surgical trainer is pivotal for improving trainee performance and long-term skill acquisition. Automating natural, trainer-style feedback promises timely, accessible, and consistent guidance at scale but requires models that understand clinically relevant representations. We present a structure-aware pipeline that learns a surgical action ontology from real trainer-to-trainee transcripts (33 surgeries) and uses it to condition feedback generation. We contribute by (1) mining Instrument-Action-Target (IAT) triplets from real-world feedback text and clustering surface forms into normalized categories, (2) fine-tuning a video-to-IAT model that leverages the surgical procedure and task contexts as well as fine-grained temporal instrument motion, and (3) demonstrating how to effectively use IAT triplet representations to guide GPT-4o in generating clinically grounded, trainer-style feedback. We show that, on Task 1: Video-to-IAT recognition, our context injection and temporal tracking deliver consistent AUC gains (Instrument: 0.67 to 0.74; Action: 0.60 to 0.63; Tissue: 0.74 to 0.79). For Task 2: feedback text generation (rated on a 1-5 fidelity rubric where 1 = opposite/unsafe, 3 = admissible, and 5 = perfect match to a human trainer), GPT-4o from video alone scores 2.17, while IAT conditioning reaches 2.44 (+12.4%), doubling the share of admissible generations with score >= 3 from 21% to 42%. Traditional text-similarity metrics also improve: word error rate decreases by 15-31% and ROUGE (phrase/substring overlap) increases by 9-64%. Grounding generation in explicit IAT structure improves fidelity and yields clinician-verifiable rationales, supporting auditable use in surgical training. 
+
+**Abstract (ZH)**: 高质量的手术培训师 intraoperative 反馈对于提高学生成绩和长期技能获取至关重要。自动化的自然式培训师反馈有望提供及时、便捷且一致的指导，但需要理解临床相关表示的模型。我们提出了一种结构感知的管道，从中学习手术动作本体，并利用其来条件化反馈生成。我们通过以下贡献：(1) 从真实世界反馈文本中挖掘器械-动作-目标（IAT）三元组，并将表面形式聚类为标准化类别；(2) 对利用手术程序和任务上下文以及精细时间标度器械运动的视频到IAT模型进行微调；(3) 展示如何有效利用IAT三元组表示来指导GPT-4o生成基于临床的培训师式反馈。结果显示，在任务1：视频到IAT识别中，我们的上下文注入和时间跟踪带来了一致的AUC提升（器械：0.67到0.74；动作：0.60到0.63；组织：0.74到0.79）。在任务2：反馈文本生成（根据1-5保真度量表评分，1=完全相反/不安全，3=可接受，5=完全匹配人类培训师），仅从视频生成的GPT-4o得分为2.17，而IAT条件化得分为2.44 (+12.4%)，生成得分>=3的比例从21%提高到42%。传统的文本相似性指标也有所提高：词错误率降低15-31%，ROUGE（短语/子字符串重叠）增加9-64%。基于明确的IAT结构进行生成提高了保真度并提供了可临床验证的理由，支持在手术培训中的可审计使用。 
 
 ---
 # CASPER: Cross-modal Alignment of Spatial and single-cell Profiles for Expression Recovery 
@@ -635,6 +563,19 @@ NCCL 2.28 introduces the Device API with three operation modes: Load/Store Acces
 **Abstract**: Amid the growing prevalence of human -- AI interaction, large language models and other AI-based entities increasingly provide forms of companionship to human users. Such AI companionship -- i.e., bonded relationships between humans and AI systems that resemble the relationships people have with family members, friends, and romantic partners -- might substantially benefit humans. Yet such relationships can also do profound harm. We propose a framework for analyzing potential negative impacts of AI companionship by identifying specific harmful traits of AI companions and speculatively mapping causal pathways back from these traits to possible causes and forward to potential harmful effects. We provide detailed, structured analysis of four potentially harmful traits -- the absence of natural endpoints for relationships, vulnerability to product sunsetting, high attachment anxiety, and propensity to engender protectiveness -- and briefly discuss fourteen others. For each trait, we propose hypotheses connecting causes -- such as misaligned optimization objectives and the digital nature of AI companions -- to fundamental harms -- including reduced autonomy, diminished quality of human relationships, and deception. Each hypothesized causal connection identifies a target for potential empirical evaluation. Our analysis examines harms at three levels: to human partners directly, to their relationships with other humans, and to society broadly. We examine how existing law struggles to address these emerging harms, discuss potential benefits of AI companions, and conclude with design recommendations for mitigating risks. This analysis offers immediate suggestions for reducing risks while laying a foundation for deeper investigation of this critical but understudied topic. 
 
 **Abstract (ZH)**: 在人类与人工智能交互日益普遍的情况下，大型语言模型和其他基于人工智能的实体 increasingly 为人类用户提供了一种陪伴形式。这种人工智能陪伴——即人类与人工智能系统之间形成的人际关系，类似于人们与家人、朋友和伴侣的关系——可能显著惠及人类。然而，这些关系也可能造成深远的危害。我们提出了一种框架，用于分析人工智能陪伴潜在负面影响，通过识别特定的人工智能陪伴的有害特质，并推测性地从这些特质回溯至可能的原因，进而向前推导至潜在的危害影响。我们详细分析了四种潜在有害特质——缺乏人际关系的自然终点、易受产品下架的影响、高水平的依附焦虑，以及引发保护倾向的倾向，并简要讨论了十四种其他特质。对于每种特质，我们提出了假设，将诸如目标偏差和人工智能陪伴的数字本质等成因与基本危害——包括减少自主性、降低人类关系质量以及欺骗——联系起来。每个假设的因果联系指出了潜在的实证评估目标。我们的分析在三个层面审视了危害：对直接的人类伴侣、对他们与他人的关系以及对社会产生广泛影响。我们探讨了现有法律在应对这些新兴危害方面的困境，讨论了人工智能陪伴的潜在益处，并提出了减轻风险的设计建议。这一分析提供了减少风险的即时建议，并为深入研究这一关键但研究不足的话题奠定了基础。 
+
+---
+# SVBRD-LLM: Self-Verifying Behavioral Rule Discovery for Autonomous Vehicle Identification 
+
+**Title (ZH)**: SVBRD-LLM: 自验证行为规则发现的自主车辆识别 
+
+**Authors**: Xiangyu Li, Zhaomiao Guo  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.14977)  
+
+**Abstract**: As more autonomous vehicles operate on public roads, understanding real-world behavior of autonomous vehicles is critical to analyzing traffic safety, making policies, and public acceptance. This paper proposes SVBRD-LLM, a framework that automatically discovers, verifies, and applies interpretable behavioral rules from real traffic videos through zero-shot prompt engineering. The framework extracts vehicle trajectories using YOLOv8 and ByteTrack, computes kinematic features, and employs GPT-5 zero-shot prompting to compare autonomous and human-driven vehicles, generating 35 structured behavioral rule hypotheses. These rules are tested on a validation set, iteratively refined based on failure cases to filter spurious correlations, and compiled into a high-confidence rule library. The framework is evaluated on an independent test set for speed change prediction, lane change prediction, and autonomous vehicle identification tasks. Experiments on over 1500 hours of real traffic videos show that the framework achieves 90.0% accuracy and 93.3% F1-score in autonomous vehicle identification. The discovered rules clearly reveal distinctive characteristics of autonomous vehicles in speed control smoothness, lane change conservativeness, and acceleration stability, with each rule accompanied by semantic description, applicable context, and validation confidence. 
+
+**Abstract (ZH)**: 随着更多的自动驾驶车辆在公共道路上行驶，了解自动驾驶车辆的实际行为对于分析交通安全、制定政策和公众接受度至关重要。本文提出了一种SVBRD-LLM框架，该框架通过零样本提示工程自动发现、验证和应用来自真实交通视频的可解释行为规则。该框架使用YOLOv8和ByteTrack提取车辆轨迹，计算运动特征，并利用GPT-5零样本提示将自动驾驶车辆与人类驾驶车辆进行比较，生成35个结构化的行为规则假设。这些规则在验证集上进行测试，并根据失败案例迭代 refinement 进行筛选，最终编译成高置信度规则库。该框架在独立测试集上对速度变化预测、车道变更预测和自动驾驶车辆识别任务进行了评估。在超过1500小时的真实交通视频实验中，框架在自动驾驶车辆识别任务上的准确率达到90.0%，F1分数达到93.3%。发现的规则清晰揭示了自动驾驶车辆在速度控制平滑性、车道变更保守性和加速度稳定性方面的独特特征，每条规则均附有语义描述、适用场景和验证置信度。 
 
 ---
 # How Should the Law Treat Future AI Systems? Fictional Legal Personhood versus Legal Identity 
@@ -824,6 +765,19 @@ Integrating an open dataset, metrics, open source code, and baselines establishe
 **Abstract (ZH)**: 最近大型语言模型的发展为推荐系统开辟了新可能性，尽管当前方法如TALLRec在解释性和冷启动场景中面临挑战。我们提出了ExplainRec框架，该框架通过偏好归因、多模态融合和零样本迁移学习扩展了基于语言模型的推荐能力。该框架包含四项技术贡献：可解释推荐的偏好归因调整、冷启动用户和项目的零样本偏好迁移、结合视觉和文本内容的多模态增强，以及多任务协作优化。在MovieLens-25M和Amazon数据集上的实验评估表明，ExplainRec优于现有方法，在电影推荐中AUC提高了0.7%，在跨域任务中提高了0.9%，同时生成可解释的解释并有效处理冷启动场景。 
 
 ---
+# Optimizing Agricultural Research: A RAG-Based Approach to Mycorrhizal Fungi Information 
+
+**Title (ZH)**: 基于RAG的方法优化农业研究：关于菌根 fungi 的信息优化 
+
+**Authors**: Mohammad Usman Altam, Md Imtiaz Habib, Tuan Hoang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.14765)  
+
+**Abstract**: Retrieval-Augmented Generation (RAG) represents a transformative approach within natural language processing (NLP), combining neural information retrieval with generative language modeling to enhance both contextual accuracy and factual reliability of responses. Unlike conventional Large Language Models (LLMs), which are constrained by static training corpora, RAG-powered systems dynamically integrate domain-specific external knowledge sources, thereby overcoming temporal and disciplinary limitations. In this study, we present the design and evaluation of a RAG-enabled system tailored for Mycophyto, with a focus on advancing agricultural applications related to arbuscular mycorrhizal fungi (AMF). These fungi play a critical role in sustainable agriculture by enhancing nutrient acquisition, improving plant resilience under abiotic and biotic stresses, and contributing to soil health. Our system operationalizes a dual-layered strategy: (i) semantic retrieval and augmentation of domain-specific content from agronomy and biotechnology corpora using vector embeddings, and (ii) structured data extraction to capture predefined experimental metadata such as inoculation methods, spore densities, soil parameters, and yield outcomes. This hybrid approach ensures that generated responses are not only semantically aligned but also supported by structured experimental evidence. To support scalability, embeddings are stored in a high-performance vector database, allowing near real-time retrieval from an evolving literature base. Empirical evaluation demonstrates that the proposed pipeline retrieves and synthesizes highly relevant information regarding AMF interactions with crop systems, such as tomato (Solanum lycopersicum). The framework underscores the potential of AI-driven knowledge discovery to accelerate agroecological innovation and enhance decision-making in sustainable farming systems. 
+
+**Abstract (ZH)**: Retrieval-Augmented Generation (RAG)在自然语言处理中的革命性方法：结合神经检索与生成语言模型以增强响应的上下文准确性和事实可靠性 
+
+---
 # Causally-Informed Reinforcement Learning for Adaptive Emotion-Aware Social Media Recommendation 
 
 **Title (ZH)**: 因果驱动的强化学习在自适应情绪感知社交媒体推荐中的应用 
@@ -837,22 +791,9 @@ Integrating an open dataset, metrics, open source code, and baselines establishe
 **Abstract (ZH)**: 情感感知社交媒体推荐框架：基于用户情感轨迹的内容个性化 
 
 ---
-# Optimizing Agricultural Research: A RAG-Based Approach to Mycorrhizal Fungi Information 
-
-**Title (ZH)**: 优化农业研究：一种基于RAG的方法用于菌根真菌信息 
-
-**Authors**: Mohammad Usman Altam, Md Imtiaz Habib, Tuan Hoang  
-
-**Link**: [PDF](https://arxiv.org/pdf/2511.14765)  
-
-**Abstract**: Retrieval-Augmented Generation (RAG) represents a transformative approach within natural language processing (NLP), combining neural information retrieval with generative language modeling to enhance both contextual accuracy and factual reliability of responses. Unlike conventional Large Language Models (LLMs), which are constrained by static training corpora, RAG-powered systems dynamically integrate domain-specific external knowledge sources, thereby overcoming temporal and disciplinary limitations. In this study, we present the design and evaluation of a RAG-enabled system tailored for Mycophyto, with a focus on advancing agricultural applications related to arbuscular mycorrhizal fungi (AMF). These fungi play a critical role in sustainable agriculture by enhancing nutrient acquisition, improving plant resilience under abiotic and biotic stresses, and contributing to soil health. Our system operationalizes a dual-layered strategy: (i) semantic retrieval and augmentation of domain-specific content from agronomy and biotechnology corpora using vector embeddings, and (ii) structured data extraction to capture predefined experimental metadata such as inoculation methods, spore densities, soil parameters, and yield outcomes. This hybrid approach ensures that generated responses are not only semantically aligned but also supported by structured experimental evidence. To support scalability, embeddings are stored in a high-performance vector database, allowing near real-time retrieval from an evolving literature base. Empirical evaluation demonstrates that the proposed pipeline retrieves and synthesizes highly relevant information regarding AMF interactions with crop systems, such as tomato (Solanum lycopersicum). The framework underscores the potential of AI-driven knowledge discovery to accelerate agroecological innovation and enhance decision-making in sustainable farming systems. 
-
-**Abstract (ZH)**: 检索增强生成（RAG）代表了自然语言处理（NLP）领域的一种变革性方法，结合了神经信息检索与生成语言建模，以提高响应的上下文准确性和事实可靠性。与受限于静态训练语料库的大型语言模型（LLMs）不同，RAG驱动的系统能够动态集成特定领域的外部知识源，从而克服了时间和学科的限制。在本研究中，我们介绍了为Mycophyto设计并评估的RAG赋能系统的相关设计与评估，重点关注根际微生物固氮菌（AMF）相关的农业应用。这些真菌通过增强养分获取、改善植物在非生物和生物胁迫下的抗逆性以及促进土壤健康等方面，在可持续农业中发挥了重要作用。该系统采用了双重策略：（i）使用向量嵌入从农业和生物技术语料库中检索和增强特定领域的内容；（ii）结构化数据提取以捕获诸如接种方法、孢子密度、土壤参数和产量结果等预定义的实验元数据。这种混合方法确保生成的响应不仅在语义上保持一致，而且也由结构化的实验证据支持。为支持可扩展性，嵌入在高性能向量数据库中存储，允许从不断更新的文献数据库中近乎实时地检索信息。实证评价表明，所提出的流水线能够检索和综合与AMF与作物系统相互作用高度相关的信息，如番茄（Solanum lycopersicum）。该框架强调了基于AI的知识发现潜力，可以促进农业生态创新并增强可持续农业系统的决策过程。 
-
----
 # TacEleven: generative tactic discovery for football open play 
 
-**Title (ZH)**: TacEleven: 生成性战术发现用于足球开放进攻 
+**Title (ZH)**: TacEleven: 生成性战术发现用于足球开放配合 
 
 **Authors**: Siyao Zhao, Hao Ma, Zhiqiang Pu, Jingjing Huang, Yi Pan, Shijie Wang, Zhi Ming  
 
@@ -860,6 +801,6 @@ Integrating an open dataset, metrics, open source code, and baselines establishe
 
 **Abstract**: Creating offensive advantages during open play is fundamental to football success. However, due to the highly dynamic and long-sequence nature of open play, the potential tactic space grows exponentially as the sequence progresses, making automated tactic discovery extremely challenging. To address this, we propose TacEleven, a generative framework for football open-play tactic discovery developed in close collaboration with domain experts from AJ Auxerre, designed to assist coaches and analysts in tactical decision-making. TacEleven consists of two core components: a language-controlled tactical generator that produces diverse tactical proposals, and a multimodal large language model-based tactical critic that selects the optimal proposal aligned with a high-level stylistic tactical instruction. The two components enables rapid exploration of tactical proposals and discovery of alternative open-play offensive tactics. We evaluate TacEleven across three tasks with progressive tactical complexity: counterfactual exploration, single-step discovery, and multi-step discovery, through both quantitative metrics and a questionnaire-based qualitative assessment. The results show that the TacEleven-discovered tactics exhibit strong realism and tactical creativity, with 52.50% of the multi-step tactical alternatives rated adoptable in real-world elite football scenarios, highlighting the framework's ability to rapidly generate numerous high-quality tactics for complex long-sequence open-play situations. TacEleven demonstrates the potential of creatively leveraging domain data and generative models to advance tactical analysis in sports. 
 
-**Abstract (ZH)**: 基于生成模型的足球开放play战术发现：TacEleven框架 
+**Abstract (ZH)**: 在开放比赛状态下创造进攻优势是足球成功的基础。然而，由于开放比赛的高度动态性和长序列性质，潜在的战术空间会随着序列的推进呈指数级增长，使得自动化战术发现极具挑战性。为解决这一问题，我们提出TacEleven，这是一种与AJ Auxerre领域专家密切合作开发的生成框架，旨在辅助教练和分析人员进行战术决策。TacEleven包括两个核心组件：一种语言控制的战术生成器，能够生成多样的战术提案；以及一种基于多模态大型语言模型的战术批判者，能够根据高层次风格化的战术指令选择最优提案。这两个组件使得能够快速探索战术提案，并发现替代的开放比赛进攻战术。通过定量指标和问卷调查进行的定性评估，我们分别在三个具有不同战术复杂度的任务：反事实探索、单步发现和多步发现中对TacEleven进行了评估。结果显示，TacEleven发现的战术表现出强烈的真实性和战术创新性，其中52.50%的多步战术替代方案在实际精英足球场景中被认为具有可采纳性，突显了该框架能够快速生成大量高质量战术以应对复杂的长序列开放比赛情境的能力。TacEleven展示了创造性利用领域数据和生成模型推进体育战术分析的潜力。 
 
 ---

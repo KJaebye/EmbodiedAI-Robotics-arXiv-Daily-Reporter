@@ -1,14 +1,14 @@
-# Think Visually, Reason Textually: Vision-Language Synergy in ARC 
+# Walrus: A Cross-Domain Foundation Model for Continuum Dynamics 
 
-**Title (ZH)**: 可视化思考，文本推理：ARC中的视觉-语言协同作用 
+**Title (ZH)**: Walrus: 一种用于连续动力学的跨域基础模型 
 
-**Authors**: Beichen Zhang, Yuhang Zang, Xiaoyi Dong, Yuhang Cao, Haodong Duan, Dahua Lin, Jiaqi Wang  
+**Authors**: Michael McCabe, Payel Mukhopadhyay, Tanya Marwah, Bruno Regaldo-Saint Blancard, Francois Rozet, Cristiana Diaconu, Lucas Meyer, Kaze W. K. Wong, Hadi Sotoudeh, Alberto Bietti, Irina Espejo, Rio Fear, Siavash Golkar, Tom Hehir, Keiya Hirashima, Geraud Krawezik, Francois Lanusse, Rudy Morel, Ruben Ohana, Liam Parker, Mariel Pettee, Jeff Shen, Kyunghyun Cho, Miles Cranmer, Shirley Ho  
 
-**Link**: [PDF](https://arxiv.org/pdf/2511.15703)  
+**Link**: [PDF](https://arxiv.org/pdf/2511.15684)  
 
-**Abstract**: Abstract reasoning from minimal examples remains a core unsolved problem for frontier foundation models such as GPT-5 and Grok 4. These models still fail to infer structured transformation rules from a handful of examples, which is a key hallmark of human intelligence. The Abstraction and Reasoning Corpus for Artificial General Intelligence (ARC-AGI) provides a rigorous testbed for this capability, demanding conceptual rule induction and transfer to novel tasks. Most existing methods treat ARC-AGI as a purely textual reasoning task, overlooking the fact that humans rely heavily on visual abstraction when solving such puzzles. However, our pilot experiments reveal a paradox: naively rendering ARC-AGI grids as images degrades performance due to imprecise rule execution. This leads to our central hypothesis that vision and language possess complementary strengths across distinct reasoning stages: vision supports global pattern abstraction and verification, whereas language specializes in symbolic rule formulation and precise execution. Building on this insight, we introduce two synergistic strategies: (1) Vision-Language Synergy Reasoning (VLSR), which decomposes ARC-AGI into modality-aligned subtasks; and (2) Modality-Switch Self-Correction (MSSC), which leverages vision to verify text-based reasoning for intrinsic error correction. Extensive experiments demonstrate that our approach yields up to a 4.33% improvement over text-only baselines across diverse flagship models and multiple ARC-AGI tasks. Our findings suggest that unifying visual abstraction with linguistic reasoning is a crucial step toward achieving generalizable, human-like intelligence in future foundation models. Source code will be released soon. 
+**Abstract**: Foundation models have transformed machine learning for language and vision, but achieving comparable impact in physical simulation remains a challenge. Data heterogeneity and unstable long-term dynamics inhibit learning from sufficiently diverse dynamics, while varying resolutions and dimensionalities challenge efficient training on modern hardware. Through empirical and theoretical analysis, we incorporate new approaches to mitigate these obstacles, including a harmonic-analysis-based stabilization method, load-balanced distributed 2D and 3D training strategies, and compute-adaptive tokenization. Using these tools, we develop Walrus, a transformer-based foundation model developed primarily for fluid-like continuum dynamics. Walrus is pretrained on nineteen diverse scenarios spanning astrophysics, geoscience, rheology, plasma physics, acoustics, and classical fluids. Experiments show that Walrus outperforms prior foundation models on both short and long term prediction horizons on downstream tasks and across the breadth of pretraining data, while ablation studies confirm the value of our contributions to forecast stability, training throughput, and transfer performance over conventional approaches. Code and weights are released for community use. 
 
-**Abstract (ZH)**: 抽象推理从最小样本出发仍然是前沿基础模型如GPT-5和Grok 4的核心未解问题。这些模型仍然无法从少量示例中推断出结构化的转换规则，这是人类智能的一个关键标志。人工通用智能抽象与推理语料库（ARC-AGI）为这种能力提供了一个严格的测试平台，要求概念规则归纳和向新颖任务的转移。现有大多数方法将ARC-AGI视为纯粹的文字推理任务，忽视了人类在解决这类谜题时高度依赖视觉抽象的事实。然而，我们的初步实验揭示了一个悖论：将ARC-AGI网格直接渲染为图像会导致性能下降，因为规则执行不够精确。这让我们形成一个中心假设，即视觉和语言在不同的推理阶段具有互补的优势：视觉支持全局模式的抽象和验证，而语言则专门负责符号规则的制定和精确执行。基于这一见解，我们引入了两种协同策略：（1）视觉-语言协同推理（VLSR），将ARC-AGI分解为模态对齐的子任务；（2）模式切换自校正（MSSC），利用视觉验证基于文本的推理以进行内在错误校正。广泛实验表明，我们的方法在多种旗舰模型和ARC-AGI任务中相较于纯文本基准提高了多达4.33%的表现。我们的研究结果表明，将视觉抽象与语言推理统一起来是未来基础模型实现可泛化的、类人的智能的关键步骤之一。源代码即将发布。 
+**Abstract (ZH)**: 基础模型已转型语言和视觉领域的机器学习，但在物理模拟中的应用仍面临挑战。数据异质性和不稳定的长期动力学阻碍了对足够多样动力学的学习，而不同的分辨率和维度性给现代硬件上的高效训练带来了挑战。通过实证和理论分析，我们引入了新的方法来缓解这些障碍，包括基于谐波分析的稳定化方法、负载均衡的分布式2D和3D训练策略以及计算自适应的分词方法。利用这些工具，我们开发了Walrus，一种主要用于流体-like连续动力学的变压器基础模型。Walrus在天体物理学、地球科学、流变学、等离子体物理、声学和经典流体等十九个不同场景下进行预训练。实验表明，Walrus在短时间和长时间预测窗口以及预训练数据跨度上均优于先前的基础模型，且消融研究表明我们的贡献对预测稳定性、训练吞吐量和迁移性能具有重要价值。社区可以获取代码和权重。 
 
 ---
 # GEO-Bench-2: From Performance to Capability, Rethinking Evaluation in Geospatial AI 
@@ -79,7 +79,7 @@ Our experiments show that no single model dominates across all tasks, confirming
 ---
 # IPTQ-ViT: Post-Training Quantization of Non-linear Functions for Integer-only Vision Transformers 
 
-**Title (ZH)**: IPTQ-ViT：仅整数视觉变换器的后训练量化非线性函数 
+**Title (ZH)**: IPTQ-ViT：仅整数视觉变换器的后训练量化nings 
 
 **Authors**: Gihwan Kim, Jemin Lee, Hyungshin Kim  
 
@@ -87,7 +87,7 @@ Our experiments show that no single model dominates across all tasks, confirming
 
 **Abstract**: Previous Quantization-Aware Training (QAT) methods for vision transformers rely on expensive retraining to recover accuracy loss in non-linear layer quantization, limiting their use in resource-constrained environments. In contrast, existing Post-Training Quantization (PTQ) methods either partially quantize non-linear functions or adjust activation distributions to maintain accuracy but fail to achieve fully integer-only inference. In this paper, we introduce IPTQ-ViT, a novel PTQ framework for fully integer-only vision transformers without retraining. We present approximation functions: a polynomial-based GELU optimized for vision data and a bit-shifting-based Softmax designed to improve approximation accuracy in PTQ. In addition, we propose a unified metric integrating quantization sensitivity, perturbation, and computational cost to select the optimal approximation function per activation layer. IPTQ-ViT outperforms previous PTQ methods, achieving up to 6.44\%p (avg. 1.78\%p) top-1 accuracy improvement for image classification, 1.0 mAP for object detection. IPTQ-ViT outperforms partial floating-point PTQ methods under W8A8 and W4A8, and achieves accuracy and latency comparable to integer-only QAT methods. We plan to release our code this https URL. 
 
-**Abstract (ZH)**: IPTQ-ViT：无需重新训练的全整数后训练量化视觉变压器 
+**Abstract (ZH)**: IPTQ-ViT: 一种无需重训的完全整数推断视力变压器后训练量化框架 
 
 ---
 # Reasoning via Video: The First Evaluation of Video Models' Reasoning Abilities through Maze-Solving Tasks 
@@ -103,6 +103,19 @@ Our experiments show that no single model dominates across all tasks, confirming
 **Abstract (ZH)**: 视频模型在一致运动动态下实现了高保真视频生成的显著成功。类似于语言模型从文本生成发展到基于文本的推理，视频模型的发展促使我们提出一个问题：视频模型能否通过视频生成来进行推理？与离散的文本语料库相比，视频立足于明确的空间布局和时间连续性，这为空间推理提供了一个理想的基底。在本工作中，我们探索基于视频的推理范式，并介绍VR-Bench——一个全面的基准，旨在系统性地评估视频模型的推理能力。基于固有要求空间规划和多步推理的迷宫求解任务，VR-Bench包含7,920个 procedurally生成的视频，涵盖了五种迷宫类型和多样的视觉风格。我们的实证分析表明，SFT能够有效地激发视频模型的推理能力。视频模型在推理过程中表现出更强的空间感知能力，优于最先进的多模态视觉语言模型，并且能够很好地泛化到各种场景、任务和复杂度级别。我们还发现了一种推理时的扩展效应，即推断过程中多样性的采样可以提高推理可靠性10-20%。这些发现突显了基于视频进行空间推理的独特潜力和扩展性。 
 
 ---
+# UniHOI: Unified Human-Object Interaction Understanding via Unified Token Space 
+
+**Title (ZH)**: UniHOI: 统一人类-对象交互理解 via 统一令牌空间 
+
+**Authors**: Panqi Yang, Haodong Jing, Nanning Zheng, Yongqiang Ma  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.15046)  
+
+**Abstract**: In the field of human-object interaction (HOI), detection and generation are two dual tasks that have traditionally been addressed separately, hindering the development of comprehensive interaction understanding. To address this, we propose UniHOI, which jointly models HOI detection and generation via a unified token space, thereby effectively promoting knowledge sharing and enhancing generalization. Specifically, we introduce a symmetric interaction-aware attention module and a unified semi-supervised learning paradigm, enabling effective bidirectional mapping between images and interaction semantics even under limited annotations. Extensive experiments demonstrate that UniHOI achieves state-of-the-art performance in both HOI detection and generation. Specifically, UniHOI improves accuracy by 4.9% on long-tailed HOI detection and boosts interaction metrics by 42.0% on open-vocabulary generation tasks. 
+
+**Abstract (ZH)**: 人类对象交互领域的检测与生成：UniHOI及其在知识共享和泛化中的联合建模 
+
+---
 # Kandinsky 5.0: A Family of Foundation Models for Image and Video Generation 
 
 **Title (ZH)**: 康定斯基5.0：图像和视频生成的foundation模型家族 
@@ -116,19 +129,6 @@ Our experiments show that no single model dominates across all tasks, confirming
 **Abstract (ZH)**: Kandinsky 5.0：一种高分辨率图像和10秒视频合成的先进基础模型家族 
 
 ---
-# SVBRD-LLM: Self-Verifying Behavioral Rule Discovery for Autonomous Vehicle Identification 
-
-**Title (ZH)**: SVBRD-LLM: 自验证行为规则发现的自主车辆识别 
-
-**Authors**: Xiangyu Li, Zhaomiao Guo  
-
-**Link**: [PDF](https://arxiv.org/pdf/2511.14977)  
-
-**Abstract**: As more autonomous vehicles operate on public roads, understanding real-world behavior of autonomous vehicles is critical to analyzing traffic safety, making policies, and public acceptance. This paper proposes SVBRD-LLM, a framework that automatically discovers, verifies, and applies interpretable behavioral rules from real traffic videos through zero-shot prompt engineering. The framework extracts vehicle trajectories using YOLOv8 and ByteTrack, computes kinematic features, and employs GPT-5 zero-shot prompting to compare autonomous and human-driven vehicles, generating 35 structured behavioral rule hypotheses. These rules are tested on a validation set, iteratively refined based on failure cases to filter spurious correlations, and compiled into a high-confidence rule library. The framework is evaluated on an independent test set for speed change prediction, lane change prediction, and autonomous vehicle identification tasks. Experiments on over 1500 hours of real traffic videos show that the framework achieves 90.0% accuracy and 93.3% F1-score in autonomous vehicle identification. The discovered rules clearly reveal distinctive characteristics of autonomous vehicles in speed control smoothness, lane change conservativeness, and acceleration stability, with each rule accompanied by semantic description, applicable context, and validation confidence. 
-
-**Abstract (ZH)**: 随着更多的自动驾驶车辆在公共道路上行驶，了解自动驾驶车辆的实际行为对于分析交通安全、制定政策和公众接受度至关重要。本文提出了一种SVBRD-LLM框架，该框架通过零样本提示工程自动发现、验证和应用来自真实交通视频的可解释行为规则。该框架使用YOLOv8和ByteTrack提取车辆轨迹，计算运动特征，并利用GPT-5零样本提示将自动驾驶车辆与人类驾驶车辆进行比较，生成35个结构化的行为规则假设。这些规则在验证集上进行测试，并根据失败案例迭代 refinement 进行筛选，最终编译成高置信度规则库。该框架在独立测试集上对速度变化预测、车道变更预测和自动驾驶车辆识别任务进行了评估。在超过1500小时的真实交通视频实验中，框架在自动驾驶车辆识别任务上的准确率达到90.0%，F1分数达到93.3%。发现的规则清晰揭示了自动驾驶车辆在速度控制平滑性、车道变更保守性和加速度稳定性方面的独特特征，每条规则均附有语义描述、适用场景和验证置信度。 
-
----
 # EGSA-PT:Edge-Guided Spatial Attention with Progressive Training for Monocular Depth Estimation and Segmentation of Transparent Objects 
 
 **Title (ZH)**: 基于边缘指导的空间注意力与渐进训练的单目透明物体深度估算与分割方法：EGSA-PT 
@@ -140,6 +140,20 @@ Our experiments show that no single model dominates across all tasks, confirming
 **Abstract**: Transparent object perception remains a major challenge in computer vision research, as transparency confounds both depth estimation and semantic segmentation. Recent work has explored multi-task learning frameworks to improve robustness, yet negative cross-task interactions often hinder performance. In this work, we introduce Edge-Guided Spatial Attention (EGSA), a fusion mechanism designed to mitigate destructive interactions by incorporating boundary information into the fusion between semantic and geometric features. On both Syn-TODD and ClearPose benchmarks, EGSA consistently improved depth accuracy over the current state of the art method (MODEST), while preserving competitive segmentation performance, with the largest improvements appearing in transparent regions. Besides our fusion design, our second contribution is a multi-modal progressive training strategy, where learning transitions from edges derived from RGB images to edges derived from predicted depth images. This approach allows the system to bootstrap learning from the rich textures contained in RGB images, and then switch to more relevant geometric content in depth maps, while it eliminates the need for ground-truth depth at training time. Together, these contributions highlight edge-guided fusion as a robust approach capable of improving transparent object perception. 
 
 **Abstract (ZH)**: 透明对象感知仍然是计算机视觉研究中的一个主要挑战，因为透明性会混淆深度估计和语义分割。最近的工作探索了多任务学习框架以提高鲁棒性，但跨任务的负交互作用往往阻碍性能。在本工作中，我们引入了边缘引导空间注意力（EGSA）机制，通过将边界信息融入语义和几何特征的融合中以减轻破坏性交互作用。在Syn-TODD和ClearPose基准上，EGSA在不牺牲竞争力的分割性能的情况下，一致地提高了深度精度，尤其是在透明区域，表现最为显著。除了我们的融合设计，我们的第二个贡献是一种多模态渐进训练策略，其中学习从RGB图像派生的边缘过渡到从预测深度图像派生的边缘。这种做法允许系统从RGB图像中丰富的纹理启动学习，然后切换到深度图中的更有 relevancy 的几何内容，从而在训练时消除了真正的深度数据的需求。这些贡献共同凸显了边缘引导融合作为一种稳健的方法，能够提升透明对象感知。 
+
+---
+# Skin-R1: Toward Trustworthy Clinical Reasoning for Dermatological Diagnosis 
+
+**Title (ZH)**: Skin-R1: 向皮肤科诊断可信临床推理迈进 
+
+**Authors**: Zehao Liu, Wejieying Ren, Jipeng Zhang, Tianxiang Zhao, Jingxi Zhu, Xiaoting Li, Vasant G. Honavar  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.14900)  
+
+**Abstract**: The emergence of vision-language models (VLMs) has opened new possibilities for clinical reasoning and has shown promising performance in dermatological diagnosis. However, their trustworthiness and clinical utility are often limited by three major factors: (1) Data heterogeneity, where diverse datasets lack consistent diagnostic labels and clinical concept annotations; (2) Absence of grounded diagnostic rationales, leading to a scarcity of reliable reasoning supervision; and (3) Limited scalability and generalization, as models trained on small, densely annotated datasets struggle to transfer nuanced reasoning to large, sparsely-annotated ones.
+To address these limitations, we propose SkinR1, a novel dermatological VLM that combines deep, textbook-based reasoning with the broad generalization capabilities of reinforcement learning (RL). SkinR1 systematically resolves the key challenges through a unified, end-to-end framework. First, we design a textbook-based reasoning generator that synthesizes high-fidelity, hierarchy-aware, and differential-diagnosis (DDx)-informed trajectories, providing reliable expert-level supervision. Second, we leverage the constructed trajectories for supervised fine-tuning (SFT) empowering the model with grounded reasoning ability. Third, we develop a novel RL paradigm that, by incorporating the hierarchical structure of diseases, effectively transfers these grounded reasoning patterns to large-scale, sparse data. Extensive experiments on multiple dermatology datasets demonstrate that SkinR1 achieves superior diagnostic accuracy. The ablation study demonstrates the importance of the reasoning foundation instilled by SFT. 
+
+**Abstract (ZH)**: 视觉语言模型(VLMs)的出现为临床推理开辟了新的可能性，并在皮肤科诊断中展现了令人鼓舞的性能。然而，它们的安全性和临床实用性常受到三大因素的限制：(1) 数据异质性，多种数据集缺乏一致的诊断标签和临床概念注释；(2) 缺乏基于证据的诊断推理，导致可靠推理监督的匮乏；(3) 有限的可扩展性和泛化能力，模型在小规模、高注释数据集上训练时难以将复杂的推理应用到大规模、低注释数据集中。为解决这些问题，我们提出了一种名为SkinR1的新颖皮肤科VLM，它结合了深厚的专业推理能力和强化学习(RL)的广泛泛化能力。SkinR1通过统一的端到端框架系统地解决了关键挑战。首先，我们设计了一种基于课本的推理生成器，合成了高保真、层次感知、差异诊断(DDx)导向的轨迹，提供了可靠的专家级监督。其次，我们利用合成的轨迹进行监督微调(SFT)，赋予模型基于证据的推理能力。第三，我们开发了一种新颖的RL范式，通过引入疾病的层次结构，有效地将这些基于证据的推理模式转移到大规模稀疏数据中。在多个皮肤科数据集上的广泛实验表明，SkinR1实现了优越的诊断准确性。消融研究进一步证明了SFT提供的推理基础的重要性。 
 
 ---
 # When CNNs Outperform Transformers and Mambas: Revisiting Deep Architectures for Dental Caries Segmentation 
@@ -181,9 +195,22 @@ Our experiments show that no single model dominates across all tasks, confirming
 **Abstract (ZH)**: 基于光纤斑纹图传感器的变压器架构在温度监测中的应用：解释性AI技术的集成研究 
 
 ---
+# Causally-Informed Reinforcement Learning for Adaptive Emotion-Aware Social Media Recommendation 
+
+**Title (ZH)**: 基于因果关系的适应性情绪感知社交媒体推荐强化学习 
+
+**Authors**: Bhavika Jain, Robert Pitsko, Ananya Drishti, Mahfuza Farooque  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.14768)  
+
+**Abstract**: Social media recommendation systems play a central role in shaping users' emotional experiences. However, most systems are optimized solely for engagement metrics, such as click rate, viewing time, or scrolling, without accounting for users' emotional states. Repeated exposure to emotionally charged content has been shown to negatively affect users' emotional well-being over time. We propose an Emotion-aware Social Media Recommendation (ESMR) framework that personalizes content based on users' evolving emotional trajectories. ESMR integrates a Transformer-based emotion predictor with a hybrid recommendation policy: a LightGBM model for engagement during stable periods and a reinforcement learning agent with causally informed rewards when negative emotional states persist. Through behaviorally grounded evaluation over 30-day interaction traces, ESMR demonstrates improved emotional recovery, reduced volatility, and strong engagement retention. ESMR offers a path toward emotionally aware recommendations without compromising engagement performance. 
+
+**Abstract (ZH)**: 基于情绪感知的社会媒体推荐框架（ESMR）：提升情绪恢复、降低情绪波动并保持高 engagement 留存 
+
+---
 # ESA: Energy-Based Shot Assembly Optimization for Automatic Video Editing 
 
-**Title (ZH)**: ESA：基于能量的镜头组装优化自动视频编辑 
+**Title (ZH)**: ESA：基于能量的镜头组装优化以实现自动视频编辑 
 
 **Authors**: Yaosen Chen, Wei Wang, Tianheng Zheng, Xuming Wen, Han Yang, Yanru Zhang  
 
@@ -191,6 +218,6 @@ Our experiments show that no single model dominates across all tasks, confirming
 
 **Abstract**: Shot assembly is a crucial step in film production and video editing, involving the sequencing and arrangement of shots to construct a narrative, convey information, or evoke emotions. Traditionally, this process has been manually executed by experienced editors. While current intelligent video editing technologies can handle some automated video editing tasks, they often fail to capture the creator's unique artistic expression in shot assembly. To address this challenge, we propose an energy-based optimization method for video shot assembly. Specifically, we first perform visual-semantic matching between the script generated by a large language model and a video library to obtain subsets of candidate shots aligned with the script semantics. Next, we segment and label the shots from reference videos, extracting attributes such as shot size, camera motion, and semantics. We then employ energy-based models to learn from these attributes, scoring candidate shot sequences based on their alignment with reference styles. Finally, we achieve shot assembly optimization by combining multiple syntax rules, producing videos that align with the assembly style of the reference videos. Our method not only automates the arrangement and combination of independent shots according to specific logic, narrative requirements, or artistic styles but also learns the assembly style of reference videos, creating a coherent visual sequence or holistic visual expression. With our system, even users with no prior video editing experience can create visually compelling videos. Project page: this https URL 
 
-**Abstract (ZH)**: 帧组装是电影制作和视频编辑中的一个关键步骤，涉及将帧按顺序排列以构建叙述、传达信息或唤起情感。传统上，这一过程由经验丰富的编辑手动执行。尽管当前的智能视频编辑技术可以处理一些自动视频编辑任务，但它们往往无法捕捉创作者在帧组装中的独特艺术表达。为了解决这一挑战，我们提出了一种基于能量的优化方法用于视频帧组装。具体来说，我们首先通过大型语言模型生成的剧本与视频库进行视觉语义匹配，以获取与剧本语义相匹配的候选镜头集。然后，我们对参考视频进行分段和标注，提取诸如镜头大小、摄像机运动和语义等属性。接着，我们利用基于能量的模型从这些属性中学习，并根据参考样式的匹配度对候选镜头序列进行评分。最后，我们通过结合多种语法规则实现镜头组装优化，生成与参考视频组装风格一致的视频。我们的方法不仅能够根据特定逻辑、叙述要求或艺术风格自动化独立镜头的排列与组合，还能学习参考视频的组装风格，从而创建一个连贯的视觉序列或整体视觉表现。借助我们的系统，即使是没有任何视频编辑经验的用户也能制作出视觉上引人注目的视频。项目页面：this https URL。 
+**Abstract (ZH)**: 镜头组装是电影制作和视频编辑中的一个 crucial 步骤，涉及将镜头进行排序和排列以构建叙事、传达信息或唤起情感。传统上，这一过程由有经验的编辑手动完成。尽管当前的智能视频编辑技术可以处理一些自动视频编辑任务，但在镜头组装过程中往往无法捕捉创作者的独特艺术表达。为了解决这一挑战，我们提出了一种基于能量优化的视频镜头组装方法。具体而言，我们首先通过大型语言模型生成的剧本与视频库进行视觉语义匹配，以获得与剧本语义相匹配的候选镜头子集。然后，我们从参考视频中分割和标注镜头，提取诸如镜头大小、摄像机运动和语义等属性。接着，我们采用基于能量的模型从这些属性中进行学习，根据候选镜头序列与参考风格的匹配程度进行评分。最后，我们通过结合多种语法规则实现镜头组装优化，生成与参考视频组装风格一致的视频。我们的方法不仅能够根据特定逻辑、叙事要求或艺术风格自动化地排列和组合独立镜头，还能学习参考视频的组装风格，从而创建连贯的视觉序列或整体视觉表达。借助我们的系统，即使是没有任何视频编辑经验的用户也能创建令人信服的视觉视频。项目页面：this https URL 
 
 ---

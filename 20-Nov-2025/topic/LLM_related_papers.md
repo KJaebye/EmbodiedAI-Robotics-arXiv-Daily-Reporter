@@ -146,19 +146,6 @@ OpenBioLLM matches or outperforms GeneGPT on over 90% of the benchmark tasks, ac
 **Abstract (ZH)**: 大型语言模型在作为推理问题的任务中取得了显著成果，但其真正执行程序推理的能力，即执行多步规则驱动计算的能力仍然不清楚。与可以确定性执行长时间符号程序的算法系统不同，大型语言模型在扩展的推理链中往往会表现不佳，但没有可控且可解释的基准来隔离和量度这种表现下降。我们引入有限状态机（FSM）执行作为评估大型语言模型程序推理容量的最小化、完全可解释框架。在我们的设置中，模型获得一个明确的FSM定义，并且必须在给定输入动作的情况下，逐步执行它，保持多次轮次中的状态一致性。该任务不需要世界知识，只需要忠实地应用确定性转换规则，使其成为对模型内部程序准确性的直接检测。我们测量轮次准确性和任务准确性以分离即时计算和累积状态维护。实证结果揭示了随着任务视距或分支复杂性的增加呈现出系统性的下降。当规则检索涉及高分支因子时，模型的表现显著较差，而在记忆跨度较长时则表现较好。较大的模型在局部准确性方面有所提高，但在多步推理中仍然脆弱，除非明确提示其外部化中间步骤。基于有限状态机的评估提供了一个透明且具有复杂度控制的检测工具，用于诊断这种失败模式并指导能够真正实现长期程序能力的归纳偏差的设计。通过将推理基于可量化的执行保真度而非表面正确性，这项工作有助于建立理解并改进大型语言模型算法可靠性的严谨实验基础。 
 
 ---
-# Walrus: A Cross-Domain Foundation Model for Continuum Dynamics 
-
-**Title (ZH)**: Walrus: 一种用于连续动力学的跨域基础模型 
-
-**Authors**: Michael McCabe, Payel Mukhopadhyay, Tanya Marwah, Bruno Regaldo-Saint Blancard, Francois Rozet, Cristiana Diaconu, Lucas Meyer, Kaze W. K. Wong, Hadi Sotoudeh, Alberto Bietti, Irina Espejo, Rio Fear, Siavash Golkar, Tom Hehir, Keiya Hirashima, Geraud Krawezik, Francois Lanusse, Rudy Morel, Ruben Ohana, Liam Parker, Mariel Pettee, Jeff Shen, Kyunghyun Cho, Miles Cranmer, Shirley Ho  
-
-**Link**: [PDF](https://arxiv.org/pdf/2511.15684)  
-
-**Abstract**: Foundation models have transformed machine learning for language and vision, but achieving comparable impact in physical simulation remains a challenge. Data heterogeneity and unstable long-term dynamics inhibit learning from sufficiently diverse dynamics, while varying resolutions and dimensionalities challenge efficient training on modern hardware. Through empirical and theoretical analysis, we incorporate new approaches to mitigate these obstacles, including a harmonic-analysis-based stabilization method, load-balanced distributed 2D and 3D training strategies, and compute-adaptive tokenization. Using these tools, we develop Walrus, a transformer-based foundation model developed primarily for fluid-like continuum dynamics. Walrus is pretrained on nineteen diverse scenarios spanning astrophysics, geoscience, rheology, plasma physics, acoustics, and classical fluids. Experiments show that Walrus outperforms prior foundation models on both short and long term prediction horizons on downstream tasks and across the breadth of pretraining data, while ablation studies confirm the value of our contributions to forecast stability, training throughput, and transfer performance over conventional approaches. Code and weights are released for community use. 
-
-**Abstract (ZH)**: 基础模型已转型语言和视觉领域的机器学习，但在物理模拟中的应用仍面临挑战。数据异质性和不稳定的长期动力学阻碍了对足够多样动力学的学习，而不同的分辨率和维度性给现代硬件上的高效训练带来了挑战。通过实证和理论分析，我们引入了新的方法来缓解这些障碍，包括基于谐波分析的稳定化方法、负载均衡的分布式2D和3D训练策略以及计算自适应的分词方法。利用这些工具，我们开发了Walrus，一种主要用于流体-like连续动力学的变压器基础模型。Walrus在天体物理学、地球科学、流变学、等离子体物理、声学和经典流体等十九个不同场景下进行预训练。实验表明，Walrus在短时间和长时间预测窗口以及预训练数据跨度上均优于先前的基础模型，且消融研究表明我们的贡献对预测稳定性、训练吞吐量和迁移性能具有重要价值。社区可以获取代码和权重。 
-
----
 # VisPlay: Self-Evolving Vision-Language Models from Images 
 
 **Title (ZH)**: VisPlay: 自我进化 vision-Language 模型从图像演变而来 
@@ -187,7 +174,7 @@ OpenBioLLM matches or outperforms GeneGPT on over 90% of the benchmark tasks, ac
 ---
 # Multimodal Evaluation of Russian-language Architectures 
 
-**Title (ZH)**: 俄语架构的多模态评估 
+**Title (ZH)**: 俄语语言架构的多模态评估 
 
 **Authors**: Artem Chervyakov, Ulyana Isaeva, Anton Emelyanov, Artem Safin, Maria Tikhonova, Alexander Kharitonov, Yulia Lyakh, Petr Surovtsev, Denis Shevelev Vildan Saburov, Vasily Konovalov, Elisei Rykov, Ivan Sviridov, Amina Miftakhova, Ilseyar Alimova, Alexander Panchenko, Alexander Kapitanov, Alena Fenogenova  
 
@@ -195,7 +182,7 @@ OpenBioLLM matches or outperforms GeneGPT on over 90% of the benchmark tasks, ac
 
 **Abstract**: Multimodal large language models (MLLMs) are currently at the center of research attention, showing rapid progress in scale and capabilities, yet their intelligence, limitations, and risks remain insufficiently understood. To address these issues, particularly in the context of the Russian language, where no multimodal benchmarks currently exist, we introduce Mera Multi, an open multimodal evaluation framework for Russian-spoken architectures. The benchmark is instruction-based and encompasses default text, image, audio, and video modalities, comprising 18 newly constructed evaluation tasks for both general-purpose models and modality-specific architectures (image-to-text, video-to-text, and audio-to-text). Our contributions include: (i) a universal taxonomy of multimodal abilities; (ii) 18 datasets created entirely from scratch with attention to Russian cultural and linguistic specificity, unified prompts, and metrics; (iii) baseline results for both closed-source and open-source models; (iv) a methodology for preventing benchmark leakage, including watermarking and licenses for private sets. While our current focus is on Russian, the proposed benchmark provides a replicable methodology for constructing multimodal benchmarks in typologically diverse languages, particularly within the Slavic language family. 
 
-**Abstract (ZH)**: 多模态大规模语言模型（MLLMs）目前是研究焦点，显示出在规模和能力上的迅速进展，但其智能性、限制和风险仍不够了解。为应对这些问题，特别是在目前俄语领域缺乏多模态基准的情况下，我们引入了Mera Multi，一个针对俄语架构的开放多模态评估框架。该基准基于指令，包括默认的文字、图像、音频和视频模态，共有18项新的评估任务，适用于通用模型和模态特定架构（图像到文本、视频到文本和音频到文本）。我们的贡献包括：(i) 一个多模态能力的通用分类学；(ii) 18个从零开始创建的数据集，注意俄语文化与语言的特殊性，统一的提示和评估指标；(iii) 专源和开源模型的基线结果；(iv) 防止基准泄漏的方法，包括水印和私有集的许可证。虽然我们的当前重点是俄语，但所提出的基准为在不同类型的语言中构建多模态基准提供了可复制的方法，特别是斯拉夫语族语言。 
+**Abstract (ZH)**: 多模态大型语言模型（MLLMs）目前是研究的中心，尽管在规模和能力上取得了快速进展，但其智能、局限性和风险仍不够了解。为了解决这些问题，特别是在目前俄语环境中缺乏多模态基准的情况下，我们引入了Mera Multi，一个针对俄语架构的开放多模态评估框架。该基准基于指令，涵盖了文本、图像、音频和视频模态，包含18个全新的评估任务，适用于通用模型和模态专用架构（图像到文本、视频到文本和音频到文本）。我们的贡献包括：（i）一种通用的多模态能力分类法；（ii）18个从头创建的数据集，关注俄罗斯文化与语言的特定性、统一的提示和指标；（iii）闭源和开源模型的基线结果；（iv）防止基准泄露的方法论，包括水印和私有集的许可证。虽然我们当前的重点是俄语，但所提出的基准提供了在类型多样的语言中构建多模态基准的可复制方法论，特别是在斯拉夫语家族语言中。 
 
 ---
 # Small Language Models for Phishing Website Detection: Cost, Performance, and Privacy Trade-Offs 
@@ -287,19 +274,6 @@ OpenBioLLM matches or outperforms GeneGPT on over 90% of the benchmark tasks, ac
 **Abstract**: Long-term training of large language models (LLMs) requires maintaining stable exploration to prevent the model from collapsing into sub-optimal behaviors. Entropy is crucial in this context, as it controls exploration and helps avoid premature convergence to sub-optimal solutions. However, existing reinforcement learning methods struggle to maintain an appropriate level of entropy, as the training process involves a mix of positive and negative samples, each affecting entropy in different ways across steps. To address this, we propose Entropy stablilization via Proportional-Integral Control (EntroPIC), a novel method that adaptively adjusts the influence of positive and negative samples by dynamically tuning their loss coefficients. This approach stabilizes entropy throughout training, ensuring efficient exploration and steady progress. We provide a comprehensive theoretical analysis for both on-policy and off-policy learning settings, demonstrating that EntroPIC is effective at controlling entropy in large-scale LLM training. Experimental results show that our method successfully maintains desired entropy levels, enabling stable and optimal RL training for LLMs. 
 
 **Abstract (ZH)**: 长周期训练大规模语言模型（LLMs）需要保持稳定的探索以防止模型陷入亚最优行为。熵在这个过程中至关重要，因为它控制探索并帮助避免过早收敛到亚最优解。然而，现有的强化学习方法难以维持适当的熵水平，因为训练过程涉及正样本和负样本的混合，它们在不同步骤中以不同的方式影响熵。为了解决这一问题，我们提出了一种新的方法——基于比例积分控制的熵稳定化（EntroPIC），该方法通过动态调整正样本和负样本的损失系数来适应性地调整它们的影响。这种方法在整个训练过程中稳定熵，确保高效的探索并实现稳步进展。我们提供了针对在线策略和离线策略学习环境的全面理论分析，证明了EntroPIC在大规模LLM训练中有效控制熵的能力。实验结果表明，我们的方法能够成功维持所需的熵水平，从而实现LLMs的稳定和最优的RL训练。 
-
----
-# OEMA: Ontology-Enhanced Multi-Agent Collaboration Framework for Zero-Shot Clinical Named Entity Recognition 
-
-**Title (ZH)**: 基于本体增强的多agent协作框架：零样本临床命名实体识别 
-
-**Authors**: Xinli Tao, Xin Dong, Xuezhong Zhou  
-
-**Link**: [PDF](https://arxiv.org/pdf/2511.15211)  
-
-**Abstract**: Clinical named entity recognition (NER) is crucial for extracting information from electronic health records (EHRs), but supervised models like CRF and BioClinicalBERT require costly annotated data. While zero-shot NER with large language models (LLMs) reduces this dependency, it struggles with example selection granularity and integrating prompts with self-improvement. To address this, we propose OEMA, a zero-shot clinical NER framework using multi-agent collaboration. OEMA's three components are: a self-annotator generating examples, a discriminator filtering them via SNOMED CT, and a predictor using entity descriptions for accurate inference. On MTSamples and VAERS datasets, OEMA achieves state-of-the-art exact-match performance. Under related-match, it matches supervised BioClinicalBERT and surpasses CRF. OEMA addresses key zero-shot NER challenges through ontology-guided reasoning and multi-agent collaboration, achieving near-supervised performance and showing promise for clinical NLP applications. 
-
-**Abstract (ZH)**: 临床命名实体识别（NER）对于从电子健康记录（EHRs）中提取信息至关重要，但监督模型如CRF和BioClinicalBERT需要昂贵的标注数据。而利用大规模语言模型（LLMs）的零样本NER在减少这种依赖性的同时，难以在示例选择粒度上取得突破，并且难以整合提示与自我提升。为解决这一问题，我们提出了一种名为OEMA的基于多智能体协作的零样本临床NER框架。OEMA的三个组成部分包括：自标注生成器生成示例、鉴别器通过SNOMED CT进行过滤以及使用实体描述进行准确推断的预测器。在MTSamples和VAERS数据集上，OEMA实现了最先进的精确匹配性能。在相关匹配下，OEMA匹配并超过了监督的BioClinicalBERT，并超越了CRF。OEMA通过本体指导推理和多智能体协作解决了关键的零样本NER挑战，实现了接近监督性能，并展现出了在临床NLP应用中的潜力。 
 
 ---
 # Unveiling Intrinsic Dimension of Texts: from Academic Abstract to Creative Story 
@@ -409,7 +383,7 @@ Across Qwen3-30B and Qwen3-80B MoE models and six representative benchmarks, Dyn
 ---
 # SVBRD-LLM: Self-Verifying Behavioral Rule Discovery for Autonomous Vehicle Identification 
 
-**Title (ZH)**: SVBRD-LLM：自主车辆识别的自我验证行为规则发现 
+**Title (ZH)**: SVBRD-LLM: 自验证行为规则发现的自主车辆识别 
 
 **Authors**: Xiangyu Li, Zhaomiao Guo  
 
@@ -417,7 +391,7 @@ Across Qwen3-30B and Qwen3-80B MoE models and six representative benchmarks, Dyn
 
 **Abstract**: As more autonomous vehicles operate on public roads, understanding real-world behavior of autonomous vehicles is critical to analyzing traffic safety, making policies, and public acceptance. This paper proposes SVBRD-LLM, a framework that automatically discovers, verifies, and applies interpretable behavioral rules from real traffic videos through zero-shot prompt engineering. The framework extracts vehicle trajectories using YOLOv8 and ByteTrack, computes kinematic features, and employs GPT-5 zero-shot prompting to compare autonomous and human-driven vehicles, generating 35 structured behavioral rule hypotheses. These rules are tested on a validation set, iteratively refined based on failure cases to filter spurious correlations, and compiled into a high-confidence rule library. The framework is evaluated on an independent test set for speed change prediction, lane change prediction, and autonomous vehicle identification tasks. Experiments on over 1500 hours of real traffic videos show that the framework achieves 90.0% accuracy and 93.3% F1-score in autonomous vehicle identification. The discovered rules clearly reveal distinctive characteristics of autonomous vehicles in speed control smoothness, lane change conservativeness, and acceleration stability, with each rule accompanied by semantic description, applicable context, and validation confidence. 
 
-**Abstract (ZH)**: 随着越来越多的自动驾驶车辆在公路上行驶，理解自动驾驶车辆的实际道路行为对于分析交通安全、制定政策和提高公众接受度至关重要。本文提出了一种名为SVBRD-LLM的框架，该框架通过零样本提示工程自动发现、验证和应用来自真实交通视频的可解释行为规则。该框架使用YOLOv8和ByteTrack提取车辆轨迹，计算运动学特征，并利用GPT-5零样本提示比较自动驾驶车辆和人工驾驶车辆，生成35个结构化的行为规则假设。这些规则在验证集上进行测试，基于失败案例迭代优化以筛选虚假相关性，并编译成高置信度规则库。该框架在独立测试集上对速度变化预测、变道预测和自动驾驶车辆识别任务进行了评估。实验结果显示，在超过1500小时的真实交通视频上，框架在自动驾驶车辆识别任务中达到了90.0%的准确率和93.3%的F1分数。发现的规则清楚地揭示了自动驾驶车辆在速度控制平滑度、变道保守性和加速度稳定性方面的独特特征，每个规则都附有语义描述、适用上下文和验证置信度。 
+**Abstract (ZH)**: 随着越来越多的自动驾驶车辆在公共道路上行驶，理解自动驾驶车辆的实际行为对于分析交通安全、制定政策和提升公众接受度至关重要。本文提出了一种SVBRD-LLM框架，该框架通过零样本提示工程自动发现、验证和应用来自真实交通视频的可解释行为规则。该框架使用YOLOv8和ByteTrack提取车辆轨迹，计算动力学特征，并使用GPT-5零样本提示比较自动驾驶车辆和人工驾驶车辆，生成35个结构化行为规则假设。这些规则在验证集上进行测试，根据失败案例迭代优化以过滤掉虚假相关性，并编译成高置信度规则库。该框架在独立测试集上评估了速度变化预测、变道预测和自动驾驶车辆识别任务。对超过1500小时的实录交通视频的实验表明，该框架在自动驾驶车辆识别任务中达到了90.0%的准确率和93.3%的F1分数。发现的规则清楚地揭示了自动驾驶车辆在速度控制平滑性、变道保守性和加速度稳定性等方面的独特特征，每条规则附带语义描述、适用场景和验证置信度。 
 
 ---
 # MermaidSeqBench: An Evaluation Benchmark for LLM-to-Mermaid Sequence Diagram Generation 
@@ -545,7 +519,7 @@ Initial findings suggest that while the Direct approach is faster and straightfo
 ---
 # ExplainRec: Towards Explainable Multi-Modal Zero-Shot Recommendation with Preference Attribution and Large Language Models 
 
-**Title (ZH)**: ExplainRec: 面向可解释的多模态零样本推荐及偏好归因的大语言模型 
+**Title (ZH)**: ExplainRec: 基于偏好归因和大规模语言模型的可解释多模态零样本推荐 
 
 **Authors**: Bo Ma, LuYao Liu, ZeHua Hu, Simon Lau  
 
@@ -553,7 +527,7 @@ Initial findings suggest that while the Direct approach is faster and straightfo
 
 **Abstract**: Recent advances in Large Language Models (LLMs) have opened new possibilities for recommendation systems, though current approaches such as TALLRec face challenges in explainability and cold-start scenarios. We present ExplainRec, a framework that extends LLM-based recommendation capabilities through preference attribution, multi-modal fusion, and zero-shot transfer learning. The framework incorporates four technical contributions: preference attribution tuning for explainable recommendations, zero-shot preference transfer for cold-start users and items, multi-modal enhancement leveraging visual and textual content, and multi-task collaborative optimization. Experimental evaluation on MovieLens-25M and Amazon datasets shows that ExplainRec outperforms existing methods, achieving AUC improvements of 0.7\% on movie recommendation and 0.9\% on cross-domain tasks, while generating interpretable explanations and handling cold-start scenarios effectively. 
 
-**Abstract (ZH)**: Recent Advances in Large Language Models for Recommendation Systems: ExplainRec Framework通过偏好归因、多模态融合和零-shot迁移学习扩展基于LLM的推荐能力 
+**Abstract (ZH)**: Recent Advances in Large Language Models for Recommendation Systems: ExplainRec Framework Through Preference Attribution, Multi-Modal Fusion, and Zero-Shot Transfer Learning 
 
 ---
 # An LLM-Powered Agent for Real-Time Analysis of the Vietnamese IT Job Market 
@@ -584,7 +558,7 @@ Initial findings suggest that while the Direct approach is faster and straightfo
 ---
 # Optimizing Agricultural Research: A RAG-Based Approach to Mycorrhizal Fungi Information 
 
-**Title (ZH)**: 基于RAG的方法优化农业研究：关于菌根 fungi 的信息优化 
+**Title (ZH)**: 基于RAG的方法优化农业研究：菌根真菌信息优化 
 
 **Authors**: Mohammad Usman Altam, Md Imtiaz Habib, Tuan Hoang  
 
@@ -592,12 +566,12 @@ Initial findings suggest that while the Direct approach is faster and straightfo
 
 **Abstract**: Retrieval-Augmented Generation (RAG) represents a transformative approach within natural language processing (NLP), combining neural information retrieval with generative language modeling to enhance both contextual accuracy and factual reliability of responses. Unlike conventional Large Language Models (LLMs), which are constrained by static training corpora, RAG-powered systems dynamically integrate domain-specific external knowledge sources, thereby overcoming temporal and disciplinary limitations. In this study, we present the design and evaluation of a RAG-enabled system tailored for Mycophyto, with a focus on advancing agricultural applications related to arbuscular mycorrhizal fungi (AMF). These fungi play a critical role in sustainable agriculture by enhancing nutrient acquisition, improving plant resilience under abiotic and biotic stresses, and contributing to soil health. Our system operationalizes a dual-layered strategy: (i) semantic retrieval and augmentation of domain-specific content from agronomy and biotechnology corpora using vector embeddings, and (ii) structured data extraction to capture predefined experimental metadata such as inoculation methods, spore densities, soil parameters, and yield outcomes. This hybrid approach ensures that generated responses are not only semantically aligned but also supported by structured experimental evidence. To support scalability, embeddings are stored in a high-performance vector database, allowing near real-time retrieval from an evolving literature base. Empirical evaluation demonstrates that the proposed pipeline retrieves and synthesizes highly relevant information regarding AMF interactions with crop systems, such as tomato (Solanum lycopersicum). The framework underscores the potential of AI-driven knowledge discovery to accelerate agroecological innovation and enhance decision-making in sustainable farming systems. 
 
-**Abstract (ZH)**: Retrieval-Augmented Generation (RAG)在自然语言处理中的革命性方法：结合神经检索与生成语言模型以增强响应的上下文准确性和事实可靠性 
+**Abstract (ZH)**: 检索增强生成（RAG）代表了自然语言处理（NLP）领域的一种变革性方法，结合了神经信息检索与生成语言模型，以增强响应的上下文准确性和事实可靠性。与受静态训练语料库限制的大型语言模型（LLMs）不同，RAG驱动的系统动态集成领域特定的外部知识来源，从而克服了时间和学科的限制。在本研究中，我们介绍了为Mycophyto设计并评估的一种RAG系统，重点在于推进与内生菌根真菌（AMF）相关的农业应用。这些真菌通过增强养分获取、提高植物在非生物和生物胁迫下的抗性和改善土壤健康，在可持续农业中发挥着关键作用。该系统采用了双层策略：(i) 使用向量嵌入从农学和生物技术语料库检索和增强领域特定内容，(ii) 结构化数据提取以捕捉预定义的实验元数据，如接种方法、孢子密度、土壤参数和产量结果。这种混合方法确保生成的响应不仅在语义上一致，而且受到结构化实验证据的支持。为支持可扩展性，将嵌入存储在高性能向量数据库中，允许从不断发展的文献库中进行接近实时检索。实证评估表明，提出的管道检索并综合了关于AMF与作物系统相互作用的相关信息，例如番茄（Solanum lycopersicum）。该框架突显了基于AI的知识发现潜力，可以加速农业生态创新并增强可持续农业生产系统的决策制定。 
 
 ---
 # Membership Inference Attack against Large Language Model-based Recommendation Systems: A New Distillation-based Paradigm 
 
-**Title (ZH)**: 面向基于大型语言模型的推荐系统的成员推断攻击：一种新的知识蒸馏范式 
+**Title (ZH)**: 针对基于大型语言模型的推荐系统的目标推理攻击：一种新的蒸馏基于范式 
 
 **Authors**: Li Cuihong, Huang Xiaowen, Yin Chuanhuan, Sang Jitao  
 
@@ -605,6 +579,6 @@ Initial findings suggest that while the Direct approach is faster and straightfo
 
 **Abstract**: Membership Inference Attack (MIA) aims to determine if a data sample is used in the training dataset of a target model. Traditional MIA obtains feature of target model via shadow models and uses the feature to train attack model, but the scale and complexity of training or fine-tuning data for large language model (LLM)-based recommendation systems make shadow models difficult to construct. Knowledge distillation as a method for extracting knowledge contributes to construct a stronger reference model. Knowledge distillation enables separate distillation for member and non-member data during the distillation process, enhancing the model's discriminative capability between the two in MIA. This paper propose a knowledge distillation-based MIA paradigm to improve the performance of membership inference attacks on LLM-based recommendation systems. Our paradigm introduces knowledge distillation to obtain a reference model, which enhances the reference model's ability to distinguish between member and non-member data. We obtain individual features from the reference model and train our attack model with fused feature. Our paradigm improves the attack performance of MIA compared to shadow model-based attack. 
 
-**Abstract (ZH)**: 基于知识蒸馏的大型语言模型推荐系统成员推理攻击范式 
+**Abstract (ZH)**: 基于知识蒸馏的会员推理攻击范式 
 
 ---
