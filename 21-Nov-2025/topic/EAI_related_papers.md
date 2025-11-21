@@ -1,0 +1,170 @@
+# Bridging VLMs and Embodied Intelligence with Deliberate Practice Policy Optimization 
+
+**Title (ZH)**: 通过刻意练习政策优化连接大模型和嵌入式智能 
+
+**Authors**: Yi Zhang, Che Liu, Xiancong Ren, Hanchu Ni, Yingji Zhang, Shuai Zhang, Zeyuan Ding, Jiayu Hu, Haozhe Shan, Junbo Qi, Yan Bai, Dengjie Li, Jiachen Luo, Yidong Wang, Yong Dai, Zenglin Xu, Bin Shen, Qifan Wang, Jian Tang, Xiaozhu Ju  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.16602)  
+
+**Abstract**: Developing a universal and versatile embodied intelligence system presents two primary challenges: the critical embodied data bottleneck, where real-world data is scarce and expensive, and the algorithmic inefficiency of existing methods, which are resource-prohibitive. To address these limitations, we introduce Deliberate Practice Policy Optimization (DPPO), a metacognitive ``Metaloop'' training framework that dynamically alternates between supervised fine-tuning (competence expansion) and reinforcement learning (skill refinement). This enables automatic weakness identification and targeted resource allocation, specifically designed to maximize learning efficiency from sparse, finite data. Theoretically, DPPO can be formalised as a unified preference-learning framework. Empirically, training a vision-language embodied model with DPPO, referred to as Pelican-VL 1.0, yields a 20.3% performance improvement over the base model and surpasses open-source models at the 100B-parameter scale by 10.6%. We are open-sourcing both the models and code, providing the first systematic framework that alleviates the data and resource bottleneck and enables the community to build versatile embodied agents efficiently. 
+
+**Abstract (ZH)**: 开发通用且多功能的物质智能系统面临两大主要挑战：现实世界数据的瓶颈，即数据稀缺且昂贵，以及现有方法的算法低效性，这些方法在资源利用上具有限制性。为了解决这些限制，我们引入了审慎实践策略优化（DPPO）元认知“元循环”训练框架，该框架动态交替进行监督微调（能力扩展）和强化学习（技能精炼）。这使自动识别弱点和目标资源分配成为可能，特别设计用于从稀疏有限的数据中最大化学习效率。理论上，DPPO可以形式化为统一的偏好学习框架。实验上，使用DPPO训练的视觉-语言物质智能模型Pelican-VL 1.0，在基模型上取得了20.3%的性能提升，并在100B参数规模上超出开源模型10.6%。我们开源了模型和代码，提供了首个系统框架，解决了数据和资源瓶颈，使科研界能够高效地构建多功能的物质代理。 
+
+---
+# From Performance to Understanding: A Vision for Explainable Automated Algorithm Design 
+
+**Title (ZH)**: 从性能到理解：可解释自动化算法设计的愿景 
+
+**Authors**: Niki van Stein, Anna V. Kononova, Thomas Bäck  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.16201)  
+
+**Abstract**: Automated algorithm design is entering a new phase: Large Language Models can now generate full optimisation (meta)heuristics, explore vast design spaces and adapt through iterative feedback. Yet this rapid progress is largely performance-driven and opaque. Current LLM-based approaches rarely reveal why a generated algorithm works, which components matter or how design choices relate to underlying problem structures. This paper argues that the next breakthrough will come not from more automation, but from coupling automation with understanding from systematic benchmarking. We outline a vision for explainable automated algorithm design, built on three pillars: (i) LLM-driven discovery of algorithmic variants, (ii) explainable benchmarking that attributes performance to components and hyperparameters and (iii) problem-class descriptors that connect algorithm behaviour to landscape structure. Together, these elements form a closed knowledge loop in which discovery, explanation and generalisation reinforce each other. We argue that this integration will shift the field from blind search to interpretable, class-specific algorithm design, accelerating progress while producing reusable scientific insight into when and why optimisation strategies succeed. 
+
+**Abstract (ZH)**: 自动化算法设计正进入新阶段：大型语言模型现在可以生成完整的优化（元）启发式算法、探索广阔的设计空间并通过对迭代反馈进行适应。然而，这种 rapid 进步主要是基于性能且不透明。当前基于大型语言模型的方法很少解释生成的算法为何有效、哪些组件重要或设计选择如何与基础问题结构相关。本文认为，下一突破将不是来自于更多的自动化，而是来自于将自动化与系统基准测试所获得的理解相结合。我们提出了可解释的自动化算法设计愿景，基于三个支柱：（i）由大型语言模型驱动的算法变体发现，（ii）可解释的基准测试，能够将性能归因于组件和超参数，以及（iii）问题类别描述符，将算法行为与景观结构连接起来。这些要素共同形成一个闭环知识循环，在此循环中，发现、解释和概括相互强化。我们认为，这种整合将使该领域从盲搜索转变为可解释的、类别特定的算法设计，加速进展并产生可重复的科学见解，说明何时及为何优化策略能成功。 
+
+---
+# Spatial Reasoning in Multimodal Large Language Models: A Survey of Tasks, Benchmarks and Methods 
+
+**Title (ZH)**: 多模态大型语言模型中的空间推理：任务、基准和方法综述 
+
+**Authors**: Weichen Liu, Qiyao Xue, Haoming Wang, Xiangyu Yin, Boyuan Yang, Wei Gao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.15722)  
+
+**Abstract**: Spatial reasoning, which requires ability to perceive and manipulate spatial relationships in the 3D world, is a fundamental aspect of human intelligence, yet remains a persistent challenge for Multimodal large language models (MLLMs). While existing surveys often categorize recent progress based on input modality (e.g., text, image, video, or 3D), we argue that spatial ability is not solely determined by the input format. Instead, our survey introduces a taxonomy that organizes spatial intelligence from cognitive aspect and divides tasks in terms of reasoning complexity, linking them to several cognitive functions. We map existing benchmarks across text only, vision language, and embodied settings onto this taxonomy, and review evaluation metrics and methodologies for assessing spatial reasoning ability. This cognitive perspective enables more principled cross-task comparisons and reveals critical gaps between current model capabilities and human-like reasoning. In addition, we analyze methods for improving spatial ability, spanning both training-based and reasoning-based approaches. This dual perspective analysis clarifies their respective strengths, uncovers complementary mechanisms. By surveying tasks, benchmarks, and recent advances, we aim to provide new researchers with a comprehensive understanding of the field and actionable directions for future research. 
+
+**Abstract (ZH)**: 空间推理，这是指在三维世界中感知和操作空间关系的能力，是人类智能的一个基本方面，但仍然是多模态大规模语言模型（MLLMs）面临的持久挑战。虽然现有的综述通常根据输入模态（例如，文本、图像、视频或3D）来分类近期的进步，我们认为空间能力不仅仅由输入格式决定。相反，我们的综述引入了一种分类法，从认知方面组织空间智能，并根据推理复杂度将任务划分为不同的类别，将其与几种认知功能联系起来。我们将现有的仅限文本、视觉语言和嵌入式设置的基准映射到这一分类法，并回顾评估空间推理能力的指标和方法学。这种认知视角使跨任务比较更加原则化，并揭示了现有模型能力与人类推理之间的关键差距。此外，我们分析提高空间能力的方法，涵盖基于训练和基于推理的方法。这种双重视角分析澄清了它们各自的优点，并发现了互补机制。通过调查任务、基准和近期进展，我们的目标是为新研究人员提供对该领域的全面理解，并为未来研究提供可操作的方向。 
+
+---
+# Dexterity from Smart Lenses: Multi-Fingered Robot Manipulation with In-the-Wild Human Demonstrations 
+
+**Title (ZH)**: 智能眼镜带来的灵巧性：基于野生环境下人类演示的多指机器人 manipulation 
+
+**Authors**: Irmak Guzey, Haozhi Qi, Julen Urain, Changhao Wang, Jessica Yin, Krishna Bodduluri, Mike Lambeta, Lerrel Pinto, Akshara Rai, Jitendra Malik, Tingfan Wu, Akash Sharma, Homanga Bharadhwaj  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.16661)  
+
+**Abstract**: Learning multi-fingered robot policies from humans performing daily tasks in natural environments has long been a grand goal in the robotics community. Achieving this would mark significant progress toward generalizable robot manipulation in human environments, as it would reduce the reliance on labor-intensive robot data collection. Despite substantial efforts, progress toward this goal has been bottle-necked by the embodiment gap between humans and robots, as well as by difficulties in extracting relevant contextual and motion cues that enable learning of autonomous policies from in-the-wild human videos. We claim that with simple yet sufficiently powerful hardware for obtaining human data and our proposed framework AINA, we are now one significant step closer to achieving this dream. AINA enables learning multi-fingered policies from data collected by anyone, anywhere, and in any environment using Aria Gen 2 glasses. These glasses are lightweight and portable, feature a high-resolution RGB camera, provide accurate on-board 3D head and hand poses, and offer a wide stereo view that can be leveraged for depth estimation of the scene. This setup enables the learning of 3D point-based policies for multi-fingered hands that are robust to background changes and can be deployed directly without requiring any robot data (including online corrections, reinforcement learning, or simulation). We compare our framework against prior human-to-robot policy learning approaches, ablate our design choices, and demonstrate results across nine everyday manipulation tasks. Robot rollouts are best viewed on our website: this https URL. 
+
+**Abstract (ZH)**: 从自然环境下执行日常任务的人类操作学习多手指机器人策略一直是机器人领域的宏伟目标。随着我们的简单而强大的硬件AINA框架，我们现在更接近这个梦想一步。AINA能够利用任何人随时随地收集的数据，在任意环境中学习多手指策略。Aria Gen 2眼镜轻便便携，配备高分辨率RGB相机，提供精准的3D头部和手部姿态，并具有宽广的立体视图，可用于场景深度估计。该设置使我们能够学习对背景变化具有鲁棒性的3D点基策略，并可以直接部署而无需任何机器人数据（包括在线修正、强化学习或模拟）。我们将我们的框架与先前的人类到机器人策略学习方法进行比较，分析我们的设计选择，并展示了九种日常操作任务的结果。机器人演示最佳查看网址：this https URL。 
+
+---
+# Correlation-Aware Feature Attribution Based Explainable AI 
+
+**Title (ZH)**: 基于相关性意识的特征归因可解释人工智能 
+
+**Authors**: Poushali Sengupta, Yan Zhang, Frank Eliassen, Sabita Maharjan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.16482)  
+
+**Abstract**: Explainable AI (XAI) is increasingly essential as modern models become more complex and high-stakes applications demand transparency, trust, and regulatory compliance. Existing global attribution methods often incur high computational costs, lack stability under correlated inputs, and fail to scale efficiently to large or heterogeneous datasets. We address these gaps with \emph{ExCIR} (Explainability through Correlation Impact Ratio), a correlation-aware attribution score equipped with a lightweight transfer protocol that reproduces full-model rankings using only a fraction of the data. ExCIR quantifies sign-aligned co-movement between features and model outputs after \emph{robust centering} (subtracting a robust location estimate, e.g., median or mid-mean, from features and outputs). We further introduce \textsc{BlockCIR}, a \emph{groupwise} extension of ExCIR that scores \emph{sets} of correlated features as a single unit. By aggregating the same signed-co-movement numerators and magnitudes over predefined or data-driven groups, \textsc{BlockCIR} mitigates double-counting in collinear clusters (e.g., synonyms or duplicated sensors) and yields smoother, more stable rankings when strong dependencies are present. Across diverse text, tabular, signal, and image datasets, ExCIR shows trustworthy agreement with established global baselines and the full model, delivers consistent top-$k$ rankings across settings, and reduces runtime via lightweight evaluation on a subset of rows. Overall, ExCIR provides \emph{computationally efficient}, \emph{consistent}, and \emph{scalable} explainability for real-world deployment. 
+
+**Abstract (ZH)**: 可解释人工智能 (XAI) 随着现代模型变得越来越复杂，以及高风险应用对透明度、信任和监管合规性要求的不断增加而变得愈发重要。现有的全局归因方法通常计算成本高、在相关输入下缺乏稳定性，并且无法有效地扩展到大型或异质数据集。我们通过提出ExCIR（基于相关影响比的可解释性）来弥补这些差距，ExCIR是一种带有轻量级传输协议的相关性意识归因评分，仅使用数据的 fraction 即可复现全模型的排名。ExCIR在进行鲁棒中心化（从特征和输出中减去一个鲁棒位置估计，例如中位数或中位均值）之后，量化特征与模型输出的符号一致的共同变动。我们进一步引入BlockCIR，这是一种ExCIR的分组扩展，将相关特征集作为一个整体打分。通过在预定义或数据驱动的分组中聚合相同的带符号共同变动的分子和幅度，BlockCIR 在共线簇（例如同义词或重复传感器）中减轻了重复计数，并在强依赖性存在时提供了更平滑、更稳定的结果。在多种文本、表格、信号和图像数据集上，ExCIR 与现有的全局基准和全模型展示了可信赖的一致性，并在不同场景中提供了稳定且前k高的排名，同时通过在子集上进行轻量级评估来减少运行时间。总体而言，ExCIR 提供了计算高效、一致和可扩展的可解释性，适用于实际部署。 
+
+---
+# VLA-Pruner: Temporal-Aware Dual-Level Visual Token Pruning for Efficient Vision-Language-Action Inference 
+
+**Title (ZH)**: VLA-精简器：面向时间的双层视觉令牌精简以实现高效的视觉-语言-动作推理 
+
+**Authors**: Ziyan Liu, Yeqiu Chen, Hongyi Cai, Tao Lin, Shuo Yang, Zheng Liu, Bo Zhao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.16449)  
+
+**Abstract**: Vision-Language-Action (VLA) models have shown great promise for embodied AI, yet the heavy computational cost of processing continuous visual streams severely limits their real-time deployment. Token pruning (keeping salient visual tokens and dropping redundant ones) has emerged as an effective approach for accelerating Vision-Language Models (VLMs), offering a solution for efficient VLA. However, these VLM-specific token pruning methods select tokens based solely on semantic salience metrics (e.g., prefill attention), while overlooking the VLA's intrinsic dual-system nature of high-level semantic understanding and low-level action execution. Consequently, these methods bias token retention toward semantic cues, discard critical information for action generation, and significantly degrade VLA performance. To bridge this gap, we propose VLA-Pruner, a versatile plug-and-play VLA-specific token prune method that aligns with the dual-system nature of VLA models and exploits the temporal continuity in robot manipulation. Specifically, VLA-Pruner adopts a dual-level importance criterion for visual token retention: vision-language prefill attention for semantic-level relevance and action decode attention, estimated via temporal smoothing, for action-level importance. Based on this criterion, VLA-Pruner proposes a novel dual-level token selection strategy that adaptively preserves a compact, informative set of visual tokens for both semantic understanding and action execution under given compute budget. Experiments show that VLA-Pruner achieves state-of-the-art performance across multiple VLA architectures and diverse robotic tasks. 
+
+**Abstract (ZH)**: VLA-Pruner: 一种适应Vision-Language-Action模型双系统特性的插件式视觉标记裁剪方法 
+
+---
+# Robot Metacognition: Decision Making with Confidence for Tool Invention 
+
+**Title (ZH)**: 机器人元认知：具有信心的工具发明决策 
+
+**Authors**: Ajith Anil Meera, Poppy Collis, Polina Arbuzova, Abián Torres, Paul F Kinghorn, Ricardo Sanz, Pablo Lanillos  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.16390)  
+
+**Abstract**: Robots today often miss a key ingredient of truly intelligent behavior: the ability to reflect on their own cognitive processes and decisions. In humans, this self-monitoring or metacognition is crucial for learning, decision making and problem solving. For instance, they can evaluate how confident they are in performing a task, thus regulating their own behavior and allocating proper resources. Taking inspiration from neuroscience, we propose a robot metacognition architecture centered on confidence (a second-order judgment on decisions) and we demonstrate it on the use case of autonomous tool invention. We propose the use of confidence as a metacognitive measure within the robot decision making scheme. Confidence-informed robots can evaluate the reliability of their decisions, improving their robustness during real-world physical deployment. This form of robotic metacognition emphasizes embodied action monitoring as a means to achieve better informed decisions. We also highlight potential applications and research directions for robot metacognition. 
+
+**Abstract (ZH)**: 当前的机器人常常缺乏真正智能行为的关键成分：自我监控或元认知的能力。在人类中，这种自我监控或元认知对于学习、决策和问题解决至关重要。例如，他们可以评估自己完成任务的信心，从而调节自己的行为并分配适当的资源。受到神经科学的启发，我们提出了一种以信心（决策的二阶判断）为中心的机器人元认知架构，并在自主工具发明的应用场景中进行了演示。我们建议在机器人的决策机制中使用信心作为元认知指标。基于信心的机器人可以评估其决策的可靠性，提高其实体世界部署过程中的稳健性。这种形式的机器人元认知强调了通过体验动作监控以实现更明智决策的重要性。我们还强调了机器人元认知的潜在应用和研究方向。 
+
+---
+# Mantis: A Versatile Vision-Language-Action Model with Disentangled Visual Foresight 
+
+**Title (ZH)**: 螳螂：一种解耦视觉前瞻的多功能视觉-语言-行动模型 
+
+**Authors**: Yi Yang, Xueqi Li, Yiyang Chen, Jin Song, Yihan Wang, Zipeng Xiao, Jiadi Su, You Qiaoben, Pengfei Liu, Zhijie Deng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.16175)  
+
+**Abstract**: Recent advances in Vision-Language-Action (VLA) models demonstrate that visual signals can effectively complement sparse action supervisions. However, letting VLA directly predict high-dimensional visual states can distribute model capacity and incur prohibitive training cost, while compressing visual states into more compact supervisory signals inevitably incurs information bottlenecks. Moreover, existing methods often suffer from poor comprehension and reasoning capabilities due to the neglect of language supervision. This paper introduces Mantis, a novel framework featuring a Disentangled Visual Foresight (DVF) to tackle these issues. Specifically, Mantis decouples visual foresight prediction from the backbone with the combination of meta queries and a diffusion Transformer (DiT) head. With the current visual state provided to the DiT via a residual connection, a simple next-state prediction objective enables the meta queries to automatically capture the latent actions that delineate the visual trajectory, and hence boost the learning of explicit actions. The disentanglement reduces the burden of the VLA backbone, enabling it to maintain comprehension and reasoning capabilities through language supervision. Empirically, pretrained on human manipulation videos, robot demonstrations, and image-text pairs, Mantis achieves a 96.7% success rate on LIBERO benchmark after fine-tuning, surpassing powerful baselines while exhibiting high convergence speed. Real-world evaluations show that Mantis outperforms $\pi_{0.5}$, a leading open-source VLA model, particularly in instruction-following capability, generalization to unseen instructions, and reasoning ability. Code and weights are released to support the open-source community. 
+
+**Abstract (ZH)**: Recent Advances in Vision-Language-Action (VLA) Models Require Disentangled Visual Foresight for Effective Action Learning 
+
+---
+# Semantic Glitch: Agency and Artistry in an Autonomous Pixel Cloud 
+
+**Title (ZH)**: 语义缺陷：自主像素云中的代理与艺术创造力 
+
+**Authors**: Qing Zhang, Jing Huang, Mingyang Xu, Jun Rekimoto  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.16048)  
+
+**Abstract**: While mainstream robotics pursues metric precision and flawless performance, this paper explores the creative potential of a deliberately "lo-fi" approach. We present the "Semantic Glitch," a soft flying robotic art installation whose physical form, a 3D pixel style cloud, is a "physical glitch" derived from digital archaeology. We detail a novel autonomous pipeline that rejects conventional sensors like LiDAR and SLAM, relying solely on the qualitative, semantic understanding of a Multimodal Large Language Model to navigate. By authoring a bio-inspired personality for the robot through a natural language prompt, we create a "narrative mind" that complements the "weak," historically, loaded body. Our analysis begins with a 13-minute autonomous flight log, and a follow-up study statistically validates the framework's robustness for authoring quantifiably distinct personas. The combined analysis reveals emergent behaviors, from landmark-based navigation to a compelling "plan to execution" gap, and a character whose unpredictable, plausible behavior stems from a lack of precise proprioception. This demonstrates a lo-fi framework for creating imperfect companions whose success is measured in character over efficiency. 
+
+**Abstract (ZH)**: 尽管主流机器人追求精确度和无瑕疵的性能，本文探讨了一种故意采用“低分辨率”方法的创作潜力。我们介绍了“语义错觉”这一软体飞行机器人艺术装置，其物理形态是一个以3D像素风格呈现的云状结构，是一种源自数字考古学的“物理错觉”。我们详细阐述了一种新的自主处理流程，该流程拒绝使用如激光雷达和SLAM等传统传感器，仅依靠多模态大型语言模型的定性、语义理解来进行导航。通过使用自然语言提示为机器人编撰一种生物启发式个性，我们创造了一个“叙事心灵”，以补充其历史上充满负载的“虚弱”身体。我们的分析始于一个13分钟的自主飞行日志，并随后进行的研究统计上验证了该框架在编撰可量化差异的人格方面的鲁棒性。综合分析揭示了 Emergent 行为，从基于地标导航到具有说服力的“计划到执行”差距，以及一个行为不可预测、合乎情理的字符，其根源在于精确的位置感知缺失。这展示了用于创建不完美伴侣的低分辨率框架，其成功之处在于特色而非效率。 
+
+---
+# Physically Realistic Sequence-Level Adversarial Clothing for Robust Human-Detection Evasion 
+
+**Title (ZH)**: 物理现实性的序列级 adversarial 衣服以实现稳健的人体检测规避 
+
+**Authors**: Dingkun Zhou, Patrick P. K. Chan, Hengxu Wu, Shikang Zheng, Ruiqi Huang, Yuanjie Zhao  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.16020)  
+
+**Abstract**: Deep neural networks used for human detection are highly vulnerable to adversarial manipulation, creating safety and privacy risks in real surveillance environments. Wearable attacks offer a realistic threat model, yet existing approaches usually optimize textures frame by frame and therefore fail to maintain concealment across long video sequences with motion, pose changes, and garment deformation. In this work, a sequence-level optimization framework is introduced to generate natural, printable adversarial textures for shirts, trousers, and hats that remain effective throughout entire walking videos in both digital and physical settings. Product images are first mapped to UV space and converted into a compact palette and control-point parameterization, with ICC locking to keep all colors printable. A physically based human-garment pipeline is then employed to simulate motion, multi-angle camera viewpoints, cloth dynamics, and illumination variation. An expectation-over-transformation objective with temporal weighting is used to optimize the control points so that detection confidence is minimized across whole sequences. Extensive experiments demonstrate strong and stable concealment, high robustness to viewpoint changes, and superior cross-model transferability. Physical garments produced with sublimation printing achieve reliable suppression under indoor and outdoor recordings, confirming real-world feasibility. 
+
+**Abstract (ZH)**: 深度神经网络用于人体检测的高度易受对抗性操纵攻击的影响在实际监控环境中创造了安全和隐私风险。穿戴式攻击提供了真实的安全威胁模型，但现有方法通常逐帧优化纹理，因此在包含动作、姿态变化和衣物变形的长时间视频序列中难以保持隐蔽性。本文提出了一种序列级优化框架，以生成适用于衬衫、裤子和帽子并在整个行走视频中保持有效性的自然可打印对抗性纹理，适用于数字和物理环境。首先将产品图片映射到UV空间并转换为紧凑调色板和控制点参数化，并使用ICC锁定以保持所有颜色可打印。随后采用基于物理的人衣模拟管道来模拟动作、多角度摄像头视角、织物力学特性和光照变化。使用带时间加权的期望过变换目标来优化控制点，以最小化整个序列中的检测置信度。实验结果表明，具有高度稳定隐蔽性、对视角变化高鲁棒性和跨模型优越传输性的性能。通过升华打印制作的物理衣物在室内和室外录制中实现了可靠的抑制，确认了其实用性。 
+
+---
+# AquaSentinel: Next-Generation AI System Integrating Sensor Networks for Urban Underground Water Pipeline Anomaly Detection via Collaborative MoE-LLM Agent Architecture 
+
+**Title (ZH)**: AquaSentinel: 结合协作.moE-LLM 代理架构的下一代AI系统，用于城市地下水管异常检测，集成传感器网络 
+
+**Authors**: Qiming Guo, Bishal Khatri, Wenbo Sun, Jinwen Tang, Hua Zhang, Wenlu Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.15870)  
+
+**Abstract**: Underground pipeline leaks and infiltrations pose significant threats to water security and environmental safety. Traditional manual inspection methods provide limited coverage and delayed response, often missing critical anomalies. This paper proposes AquaSentinel, a novel physics-informed AI system for real-time anomaly detection in urban underground water pipeline networks. We introduce four key innovations: (1) strategic sparse sensor deployment at high-centrality nodes combined with physics-based state augmentation to achieve network-wide observability from minimal infrastructure; (2) the RTCA (Real-Time Cumulative Anomaly) detection algorithm, which employs dual-threshold monitoring with adaptive statistics to distinguish transient fluctuations from genuine anomalies; (3) a Mixture of Experts (MoE) ensemble of spatiotemporal graph neural networks that provides robust predictions by dynamically weighting model contributions; (4) causal flow-based leak localization that traces anomalies upstream to identify source nodes and affected pipe segments. Our system strategically deploys sensors at critical network junctions and leverages physics-based modeling to propagate measurements to unmonitored nodes, creating virtual sensors that enhance data availability across the entire network. Experimental evaluation using 110 leak scenarios demonstrates that AquaSentinel achieves 100% detection accuracy. This work advances pipeline monitoring by demonstrating that physics-informed sparse sensing can match the performance of dense deployments at a fraction of the cost, providing a practical solution for aging urban infrastructure. 
+
+**Abstract (ZH)**: 地下输水管线泄漏和渗透对水资源安全和环境安全构成重大威胁。传统的人工检查方法提供有限的覆盖率并导致延迟响应，经常遗漏关键异常。本文提出了一种名为AquaSentinel的新型物理知情人工智能系统，用于城市地下供水管线网络的实时异常检测。我们引入了四项核心创新：(1) 在高中心节点上实施战略性稀疏传感器部署，结合基于物理的状态增强，以最小基础设施实现网络全范围可观测性；(2) RTCA（实时累积异常）检测算法，该算法采用双重阈值监控和自适应统计来区分瞬态波动和真实异常；(3) 时空图神经网络专家混合模型，通过动态加权模型贡献提供稳健的预测；(4) 基于因果流量的泄漏定位方法，追溯上游异常以识别源头节点和受影响的管段。该系统战略性地部署传感器在关键网络节点，并利用基于物理的建模将测量数据传播到未监测节点，创建虚拟传感器以在整个网络中增强数据可用性。实验结果在110种泄漏场景中证明AquaSentinel达到了100%的检测准确性。本工作通过证明物理知情的稀疏感知可以以极低的成本匹配密集部署的性能，为城市老化基础设施提供了一种实用的监测解决方案。 
+
+---
+# Sovereign AI: Rethinking Autonomy in the Age of Global Interdependence 
+
+**Title (ZH)**: 主权AI：在全球相互依赖时代重思自主性 
+
+**Authors**: Shalabh Kumar Singh, Shubhashis Sengupta  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.15734)  
+
+**Abstract**: Artificial intelligence (AI) is emerging as a foundational general-purpose technology, raising new dilemmas of sovereignty in an interconnected world. While governments seek greater control over it, the very foundations of AI--global data pipelines, semiconductor supply chains, open-source ecosystems, and international standards--resist enclosure. This paper develops a conceptual and formal framework for understanding sovereign AI as a continuum rather than a binary condition, balancing autonomy with interdependence. Drawing on classical theories, historical analogies, and contemporary debates on networked autonomy, we present a planner's model that identifies two policy heuristics: equalizing marginal returns across the four sovereignty pillars and setting openness where global benefits equal exposure risks.
+We apply the model to India, highlighting sovereign footholds in data, compute, and norms but weaker model autonomy. The near-term challenge is integration via coupled Data x Compute investment, lifecycle governance (ModelOps), and safeguarded procurement. We then apply the model to the Middle East (Saudi Arabia and the UAE), where large public investment in Arabic-first models and sovereign cloud implies high sovereignty weights, lower effective fiscal constraints, and strong Data x Compute complementarities. An interior openness setting with guardrails emerges as optimal. Across contexts, the lesson is that sovereignty in AI needs managed interdependence, not isolation. 
+
+**Abstract (ZH)**: 人工智能（AI）作为基础性通用技术正在兴起，在互联互通的世界中引发了新的主权难题。尽管政府谋求加强对AI的控制，但AI的四大基石——全球数据管道、半导体供应链、开源生态系统和国际标准——却抵制封闭。本文发展了一个概念性和形式化的框架，将主权AI视为连续体而非二元条件，平衡自主与相互依赖。借鉴古典理论、历史类比和网络自主性的当代辩论，我们提出了一个规划者模型，识别出两个政策启发式：在四大主权支柱间均衡边际回报，并在全球利益等于暴露风险时设定开放性。我们应用该模型分析印度，强调其在数据、计算和规范方面的主权立足点，但模型自主性较弱。短期内的挑战是通过数据×计算投资的耦合、生命周期治理（ModelOps）和受保护的采购进行整合。接着，我们应用该模型分析中东（沙特阿拉伯和阿联酋），在这一地区，大规模公共投资于阿拉伯语优先模型和主权云意味着高主权权重、较低的有效财政约束和数据×计算互补性较强。在有护栏的开放性环境下，内部开放性被认为是最佳选择。在全球不同背景下，一个教训是，AI领域的主权需要管理中的相互依赖，而不是孤立。 
+
+---
+# Secure Autonomous Agent Payments: Verifying Authenticity and Intent in a Trustless Environment 
+
+**Title (ZH)**: 信任缺失环境中安全自主代理支付：验证真实性和意图 
+
+**Authors**: Vivek Acharya  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.15712)  
+
+**Abstract**: Artificial intelligence (AI) agents are increasingly capable of initiating financial transactions on behalf of users or other agents. This evolution introduces a fundamental challenge: verifying both the authenticity of an autonomous agent and the true intent behind its transactions in a decentralized, trustless environment. Traditional payment systems assume human authorization, but autonomous, agent-led payments remove that safeguard. This paper presents a blockchain-based framework that cryptographically authenticates and verifies the intent of every AI-initiated transaction. The proposed system leverages decentralized identity (DID) standards and verifiable credentials to establish agent identities, on-chain intent proofs to record user authorization, and zero-knowledge proofs (ZKPs) to preserve privacy while ensuring policy compliance. Additionally, secure execution environments (TEE-based attestations) guarantee the integrity of agent reasoning and execution. The hybrid on-chain/off-chain architecture provides an immutable audit trail linking user intent to payment outcome. Through qualitative analysis, the framework demonstrates strong resistance to impersonation, unauthorized transactions, and misalignment of intent. This work lays the foundation for secure, auditable, and intent-aware autonomous economic agents, enabling a future of verifiable trust and accountability in AI-driven financial ecosystems. 
+
+**Abstract (ZH)**: 人工智能（AI）代理日益具备代表用户或其它代理方发起金融服务交易的能力。这一演变引入了一个根本性的挑战：在去中心化的、无需信任的环境中验证AI代理的真实身份及其交易意图。传统支付系统假定有人类授权，但由自主代理驱动的支付移除了这一保障。本文提出了一种基于区块链的框架，用于通过加密手段验证和核实每项由AI发起的交易的真实意图。所提出的系统利用分布式身份（DID）标准和可验证凭据来建立代理身份，通过链上意图证明记录用户授权，并利用零知识证明（ZKPs）在保障隐私的同时确保合规性。此外，安全执行环境（基于TEE的认证）保证了代理推理和执行的完整性。混合链上/链下架构提供了一个不可变的审计轨迹，将用户意图与支付结果链接起来。通过定性分析，该框架展示了对冒充、未经授权交易及意图偏差的强大抵抗力。此项工作为安全、可审计和意图感知的自主经济代理奠定了基础，使未来在AI驱动的金融服务生态系统中实现可验证的信任和问责制成为可能。 
+
+---

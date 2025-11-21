@@ -1,0 +1,143 @@
+# TOFA: Training-Free One-Shot Federated Adaptation for Vision-Language Models 
+
+**Title (ZH)**: TOFA：无需训练的一次性联邦适应Visio-Lang模型 
+
+**Authors**: Li Zhang, Zhongxuan Han, XiaoHua Feng, Jiaming Zhang, Yuyuan Li, Linbo Jiang, Jianan Lin, Chaochao Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.16423)  
+
+**Abstract**: Efficient and lightweight adaptation of pre-trained Vision-Language Models (VLMs) to downstream tasks through collaborative interactions between local clients and a central server is a rapidly emerging research topic in federated learning. Existing adaptation algorithms are typically trained iteratively, which incur significant communication costs and increase the susceptibility to potential attacks. Motivated by the one-shot federated training techniques that reduce client-server exchanges to a single round, developing a lightweight one-shot federated VLM adaptation method to alleviate these issues is particularly attractive. However, current one-shot approaches face certain challenges in adapting VLMs within federated settings: (1) insufficient exploitation of the rich multimodal information inherent in VLMs; (2) lack of specialized adaptation strategies to systematically handle the severe data heterogeneity; and (3) requiring additional training resource of clients or server. To bridge these gaps, we propose a novel Training-free One-shot Federated Adaptation framework for VLMs, named TOFA. To fully leverage the generalizable multimodal features in pre-trained VLMs, TOFA employs both visual and textual pipelines to extract task-relevant representations. In the visual pipeline, a hierarchical Bayesian model learns personalized, class-specific prototype distributions. For the textual pipeline, TOFA evaluates and globally aligns the generated local text prompts for robustness. An adaptive weight calibration mechanism is also introduced to combine predictions from both modalities, balancing personalization and robustness to handle data heterogeneity. Our method is training-free, not relying on additional training resources on either the client or server side. Extensive experiments across 9 datasets in various federated settings demonstrate the effectiveness of the proposed TOFA method. 
+
+**Abstract (ZH)**: 无需训练的联邦 adaptation 体系结构：TOFAmissive 
+
+---
+# Pharos-ESG: A Framework for Multimodal Parsing, Contextual Narration, and Hierarchical Labeling of ESG Report 
+
+**Title (ZH)**: Pharos-ESG：一种多模态解析、上下文叙事和层级标注的ESG报告框架 
+
+**Authors**: Yan Chen, Yu Zou, Jialei Zeng, Haoran You, Xiaorui Zhou, Aixi Zhong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.16417)  
+
+**Abstract**: Environmental, Social, and Governance (ESG) principles are reshaping the foundations of global financial gover- nance, transforming capital allocation architectures, regu- latory frameworks, and systemic risk coordination mecha- nisms. However, as the core medium for assessing corpo- rate ESG performance, the ESG reports present significant challenges for large-scale understanding, due to chaotic read- ing order from slide-like irregular layouts and implicit hier- archies arising from lengthy, weakly structured content. To address these challenges, we propose Pharos-ESG, a uni- fied framework that transforms ESG reports into structured representations through multimodal parsing, contextual nar- ration, and hierarchical labeling. It integrates a reading-order modeling module based on layout flow, hierarchy-aware seg- mentation guided by table-of-contents anchors, and a multi- modal aggregation pipeline that contextually transforms vi- sual elements into coherent natural language. The framework further enriches its outputs with ESG, GRI, and sentiment labels, yielding annotations aligned with the analytical de- mands of financial research. Extensive experiments on anno- tated benchmarks demonstrate that Pharos-ESG consistently outperforms both dedicated document parsing systems and general-purpose multimodal models. In addition, we release Aurora-ESG, the first large-scale public dataset of ESG re- ports, spanning Mainland China, Hong Kong, and U.S. mar- kets, featuring unified structured representations of multi- modal content, enriched with fine-grained layout and seman- tic annotations to better support ESG integration in financial governance and decision-making. 
+
+**Abstract (ZH)**: 环境、社会与治理（ESG）原则正在重塑全球金融治理的基础，转变资本分配架构、监管框架和系统性风险协调机制。然而，作为评估企业ESG绩效的核心工具，ESG报告在大规模理解上面临显著挑战，由于幻灯片式不规则布局造成的混乱阅读顺序以及来自冗长、结构松散内容的隐含层级关系。为解决这些挑战，我们提出Pharos-ESG，这是一种统一框架，通过多模态解析、上下文叙述和层级标注将ESG报告转换为结构化的表示。该框架整合了基于布局流的阅读顺序建模模块、由目录锚点指导的层级感知段落分割，以及一个能够上下文化地将视觉元素转换为连贯自然语言的多模态聚合管道。进一步地，该框架增添了ESG、GRI和情感标签，确保其输出能够满足金融研究的分析需求。在标注基准上的广泛实验表明，Pharos-ESG 一致优于专门的文档解析系统和通用多模态模型。此外，我们发布了Aurora-ESG，这是首个大规模公开的ESG报告数据集，涵盖中国大陆、香港和美国市场，提供统一的多模态内容结构表示，并配备了精细的布局和语义标注，更好地支持ESG在金融治理和决策中的集成。 
+
+---
+# OpenMMReasoner: Pushing the Frontiers for Multimodal Reasoning with an Open and General Recipe 
+
+**Title (ZH)**: OpenMMReasoner: 推动多模态推理前沿的开放通用方法 
+
+**Authors**: Kaichen Zhang, Keming Wu, Zuhao Yang, Kairui Hu, Bin Wang, Ziwei Liu, Xingxuan Li, Lidong Bing  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.16334)  
+
+**Abstract**: Recent advancements in large reasoning models have fueled growing interest in extending such capabilities to multimodal domains. However, despite notable progress in visual reasoning, the lack of transparent and reproducible data curation and training strategies remains a major barrier to scalable research. In this work, we introduce OpenMMReasoner, a fully transparent two-stage recipe for multimodal reasoning spanning supervised fine-tuning (SFT) and reinforcement learning (RL). In the SFT stage, we construct an 874K-sample cold-start dataset with rigorous step-by-step validation, providing a strong foundation for reasoning capabilities. The subsequent RL stage leverages a 74K-sample dataset across diverse domains to further sharpen and stabilize these abilities, resulting in a more robust and efficient learning process. Extensive evaluations demonstrate that our training recipe not only surpasses strong baselines but also highlights the critical role of data quality and training design in shaping multimodal reasoning performance. Notably, our method achieves a 11.6% improvement over the Qwen2.5-VL-7B-Instruct baseline across nine multimodal reasoning benchmarks, establishing a solid empirical foundation for future large-scale multimodal reasoning research. We open-sourced all our codes, pipeline, and data at this https URL. 
+
+**Abstract (ZH)**: Recent advancements in large reasoning models have fueled growing interest in extending such capabilities to multimodal domains.然而，尽管在视觉推理方面取得了显著进展，但 lack of transparent and reproducible data curation and training strategies 仍是一大障碍，阻碍了可扩展的研究。在这项工作中，我们介绍了 OpenMMReasoner，这是一个全面透明的两阶段多模态推理配方，涵盖了监督微调（SFT）和强化学习（RL）。在SFT阶段，我们构建了一个经过严格一步步验证的87.4万样本冷启动数据集，为推理能力奠定了坚实基础。随后的RL阶段利用了跨多个领域的7.4万样本数据集，进一步强化并稳定了这些能力，从而实现了更 robust 和高效的训练过程。广泛的评估表明，我们的训练配方不仅超越了强大的基线模型，还强调了数据质量和训练设计在塑造多模态推理性能中的关键作用。值得注意的是，我们的方法在九个多模态推理基准中比 Qwen2.5-VL-7B-Instruct 基线模型实现了11.6%的改进，并为未来大规模多模态推理研究奠定了坚实的经验基础。我们已开源了所有代码、流水线和数据。 
+
+---
+# ChemLabs on ChemO: A Multi-Agent System for Multimodal Reasoning on IChO 2025 
+
+**Title (ZH)**: ChemLabs on ChemO：适用于2025年国际化学奥林匹克多模态推理的多代理系统 
+
+**Authors**: Xu Qiang, Shengyuan Bai, Leqing Chen, Zijing Liu, Yu Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.16205)  
+
+**Abstract**: Olympiad-level benchmarks in mathematics and physics are crucial testbeds for advanced AI reasoning, but chemistry, with its unique multimodal symbolic language, has remained an open challenge. We introduce ChemO, a new benchmark built from the International Chemistry Olympiad (IChO) 2025. ChemO features two key innovations for automated assessment: Assessment-Equivalent Reformulation (AER), which converts problems requiring visual outputs (e.g., drawing molecules) into computationally tractable formats, and Structured Visual Enhancement (SVE), a diagnostic mechanism to disentangle a model's visual perception capabilities from its core chemical reasoning. To tackle this benchmark, we propose ChemLabs, a hierarchical multi-agent framework that mimics human expert collaboration through specialized agents for problem decomposition, perception, reasoning, and auditing. Experiments on state-of-the-art multimodal models demonstrate that combining SVE with our multi-agent system yields dramatic performance gains. Our top configuration achieves a score of 93.6 out of 100, surpassing an estimated human gold medal threshold and establishing a new state-of-the-art in automated chemical problem-solving. ChemO Dataset: this https URL 
+
+**Abstract (ZH)**: 奥林匹克级别的化学和物理基准对于高级AI推理至关重要，但具有独特多模态符号语言的化学领域仍是一个开放的挑战。我们介绍了ChemO，一个基于2025年国际化学奥林匹克(IChO)的新基准。ChemO包含两项自动评估的关键创新：评估等效重述(AER)，将需要视觉输出的问题（例如，绘制分子）转换为计算上可处理的格式；结构化视觉增强(SVE)，一种诊断机制，用于分离模型的视觉感知能力与其核心化学推理能力。为应对这一基准，我们提出了ChemLabs，一种模拟人类专家合作的分层多Agent框架，通过专门的Agent进行问题分解、感知、推理和审核。在最先进的多模态模型上的实验表明，将SVE与我们的多Agent系统结合使用可取得显著的性能提升。我们的最佳配置的得分为93.6/100，超过了一个估计的人类金牌阈值，并建立了自动化学问题解决的新最先进的水平。ChemO数据集：this https URL。 
+
+---
+# FOOTPASS: A Multi-Modal Multi-Agent Tactical Context Dataset for Play-by-Play Action Spotting in Soccer Broadcast Videos 
+
+**Title (ZH)**: FOOTPASS：一个用于足球广播视频实时描述动作识别的多模态多agent战术上下文数据集 
+
+**Authors**: Jeremie Ochin, Raphael Chekroun, Bogdan Stanciulescu, Sotiris Manitsaris  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.16183)  
+
+**Abstract**: Soccer video understanding has motivated the creation of datasets for tasks such as temporal action localization, spatiotemporal action detection (STAD), or multiobject tracking (MOT). The annotation of structured sequences of events (who does what, when, and where) used for soccer analytics requires a holistic approach that integrates both STAD and MOT. However, current action recognition methods remain insufficient for constructing reliable play-by-play data and are typically used to assist rather than fully automate annotation. Parallel research has advanced tactical modeling, trajectory forecasting, and performance analysis, all grounded in game-state and play-by-play data. This motivates leveraging tactical knowledge as a prior to support computer-vision-based predictions, enabling more automated and reliable extraction of play-by-play data. We introduce Footovision Play-by-Play Action Spotting in Soccer Dataset (FOOTPASS), the first benchmark for play-by-play action spotting over entire soccer matches in a multi-modal, multi-agent tactical context. It enables the development of methods for player-centric action spotting that exploit both outputs from computer-vision tasks (e.g., tracking, identification) and prior knowledge of soccer, including its tactical regularities over long time horizons, to generate reliable play-by-play data streams. These streams form an essential input for data-driven sports analytics. 
+
+**Abstract (ZH)**: 足球视频理解促进了针对时间动作定位、空间时间动作检测（STAD）或多目标跟踪（MOT）等任务的数据集的创建。Footovision Play-by-Play Action Spotting in Soccer Dataset (FOOTPASS)：足球比赛中全方位多模态多agent战术背景下行踪动作识别基准。 
+
+---
+# Sensorium Arc: AI Agent System for Oceanic Data Exploration and Interactive Eco-Art 
+
+**Title (ZH)**: Sensorium Arc：海洋数据探索与互动生态艺术的AI代理系统 
+
+**Authors**: Noah Bissell, Ethan Paley, Joshua Harrison, Juliano Calil, Myungin Lee  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.15997)  
+
+**Abstract**: Sensorium Arc (AI reflects on climate) is a real-time multimodal interactive AI agent system that personifies the ocean as a poetic speaker and guides users through immersive explorations of complex marine data. Built on a modular multi-agent system and retrieval-augmented large language model (LLM) framework, Sensorium enables natural spoken conversations with AI agents that embodies the ocean's perspective, generating responses that blend scientific insight with ecological poetics. Through keyword detection and semantic parsing, the system dynamically triggers data visualizations and audiovisual playback based on time, location, and thematic cues drawn from the dialogue. Developed in collaboration with the Center for the Study of the Force Majeure and inspired by the eco-aesthetic philosophy of Newton Harrison, Sensorium Arc reimagines ocean data not as an abstract dataset but as a living narrative. The project demonstrates the potential of conversational AI agents to mediate affective, intuitive access to high-dimensional environmental data and proposes a new paradigm for human-machine-ecosystem. 
+
+**Abstract (ZH)**: Sensorium Arc (AI reflects on climate) 是一个实时多模态交互 AI 代理系统，将其视为诗意的演讲者，以海洋为中心，引导用户进行沉浸式探索复杂的海洋数据。该系统基于模块化的多代理系统和检索增强的大语言模型框架构建，使用户能够与包含海洋视角的 AI 代理进行自然对话，生成融合科学洞察与生态诗学的回应。通过关键词检测和语义解析，系统能够根据对话中的时间、地点和主题提示，动态触发数据可视化和音视频播放。该项目由研究中心力不可测研究所合作开发，并受到Newton Harrison的生态美学理念的启发，重新诠释海洋数据，将其视为一个活生生的叙述，而非抽象的数据集。该项目展示了对话式 AI 代理在提供情感化的、直觉化的高维环境数据访问方面的潜力，并提出了一种人机生态系统的新范式。 
+
+---
+# Uncertainty-Resilient Multimodal Learning via Consistency-Guided Cross-Modal Transfer 
+
+**Title (ZH)**: 面向一致性和跨模态转移的不确定性鲁棒多模态学习 
+
+**Authors**: Hyo-Jeong Jang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.15741)  
+
+**Abstract**: Multimodal learning systems often face substantial uncertainty due to noisy data, low-quality labels, and heterogeneous modality characteristics. These issues become especially critical in human-computer interaction settings, where data quality, semantic reliability, and annotation consistency vary across users and recording conditions. This thesis tackles these challenges by exploring uncertainty-resilient multimodal learning through consistency-guided cross-modal transfer. The central idea is to use cross-modal semantic consistency as a basis for robust representation learning. By projecting heterogeneous modalities into a shared latent space, the proposed framework mitigates modality gaps and uncovers structural relations that support uncertainty estimation and stable feature learning. Building on this foundation, the thesis investigates strategies to enhance semantic robustness, improve data efficiency, and reduce the impact of noise and imperfect supervision without relying on large, high-quality annotations. Experiments on multimodal affect-recognition benchmarks demonstrate that consistency-guided cross-modal transfer significantly improves model stability, discriminative ability, and robustness to noisy or incomplete supervision. Latent space analyses further show that the framework captures reliable cross-modal structure even under challenging conditions. Overall, this thesis offers a unified perspective on resilient multimodal learning by integrating uncertainty modeling, semantic alignment, and data-efficient supervision, providing practical insights for developing reliable and adaptive brain-computer interface systems. 
+
+**Abstract (ZH)**: 多模态学习系统经常面临由于噪声数据、低质量标签和异质模态特性带来的大量不确定性。这些问题在人机交互设置中尤为关键，其中数据质量、语义可靠性和标注一致性因用户和记录条件的不同而异。本论文通过探索基于一致性引导的跨模态迁移来应对这些挑战，核心思想是利用跨模态语义一致性作为鲁棒表示学习的基础。通过将异质模态投影到共享的潜在空间，所提出的框架减少了模态差距，并揭示了支持不确定性估计和稳定特征学习的结构关系。在此基础上，论文研究了增强语义鲁棒性、提高数据效率以及减少噪声和不完善监督影响的策略，而不依赖于大规模和高质量的标注数据。多模态情感识别基准上的实验表明，基于一致性的跨模态迁移显著提高了模型的稳定性、判别能力和对噪声或不完整监督的鲁棒性。潜在空间分析进一步表明，框架即使在挑战性条件下也能捕获可靠的跨模态结构。总体而言，本论文通过集成不确定性建模、语义对齐和数据高效监督，提供了一种统一的鲁棒多模态学习视角，为开发可靠和适应性强的脑机接口系统提供了实用见解。 
+
+---
+# Automated Hazard Detection in Construction Sites Using Large Language and Vision-Language Models 
+
+**Title (ZH)**: 使用大型语言和视觉语言模型在建筑工地自动检测安全隐患 
+
+**Authors**: Islem Sahraoui  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.15720)  
+
+**Abstract**: This thesis explores a multimodal AI framework for enhancing construction safety through the combined analysis of textual and visual data. In safety-critical environments such as construction sites, accident data often exists in multiple formats, such as written reports, inspection records, and site imagery, making it challenging to synthesize hazards using traditional approaches. To address this, this thesis proposed a multimodal AI framework that combines text and image analysis to assist in identifying safety hazards on construction sites. Two case studies were consucted to evaluate the capabilities of large language models (LLMs) and vision-language models (VLMs) for automated hazard this http URL first case study introduces a hybrid pipeline that utilizes GPT 4o and GPT 4o mini to extract structured insights from a dataset of 28,000 OSHA accident reports (2000-2025). The second case study extends this investigation using Molmo 7B and Qwen2 VL 2B, lightweight, open-source VLMs. Using the public ConstructionSite10k dataset, the performance of the two models was evaluated on rule-level safety violation detection using natural language prompts. This experiment served as a cost-aware benchmark against proprietary models and allowed testing at scale with ground-truth labels. Despite their smaller size, Molmo 7B and Quen2 VL 2B showed competitive performance in certain prompt configurations, reinforcing the feasibility of low-resource multimodal systems for rule-aware safety monitoring. 
+
+**Abstract (ZH)**: 一种通过文本和视觉数据联合作业增强建筑安全的多模态AI框架 
+
+---
+# Thinking-while-Generating: Interleaving Textual Reasoning throughout Visual Generation 
+
+**Title (ZH)**: 生成思考：在整个视觉生成过程中交替进行文本推理 
+
+**Authors**: Ziyu Guo, Renrui Zhang, Hongyu Li, Manyuan Zhang, Xinyan Chen, Sifan Wang, Yan Feng, Peng Pei, Pheng-Ann Heng  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.16671)  
+
+**Abstract**: Recent advances in visual generation have increasingly explored the integration of reasoning capabilities. They incorporate textual reasoning, i.e., think, either before (as pre-planning) or after (as post-refinement) the generation process, yet they lack on-the-fly multimodal interaction during the generation itself. In this preliminary study, we introduce Thinking-while-Generating (TwiG), the first interleaved framework that enables co-evolving textual reasoning throughout the visual generation process. As visual content is progressively generating, textual reasoning is interleaved to both guide upcoming local regions and reflect on previously synthesized ones. This dynamic interplay produces more context-aware and semantically rich visual outputs. To unveil the potential of this framework, we investigate three candidate strategies, zero-shot prompting, supervised fine-tuning (SFT) on our curated TwiG-50K dataset, and reinforcement learning (RL) via a customized TwiG-GRPO strategy, each offering unique insights into the dynamics of interleaved reasoning. We hope this work inspires further research into interleaving textual reasoning for enhanced visual generation. Code will be released at: this https URL. 
+
+**Abstract (ZH)**: Recent Advances in Visual Generation: Integrating On-the-fly Multimodal Interaction through Thinking-while-Generating 
+
+---
+# TimeViper: A Hybrid Mamba-Transformer Vision-Language Model for Efficient Long Video Understanding 
+
+**Title (ZH)**: TimeViper：一种高效长视频理解的混合Mamba-Transformer视觉语言模型 
+
+**Authors**: Boshen Xu, Zihan Xiao, Jiaze Li, Jianzhong Ju, Zhenbo Luo, Jian Luan, Qin Jin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.16595)  
+
+**Abstract**: We introduce TimeViper, a hybrid vision-language model designed to tackle challenges of long video understanding. Processing long videos demands both an efficient model architecture and an effective mechanism for handling extended temporal contexts. To this end, TimeViper adopts a hybrid Mamba-Transformer backbone that combines the efficiency of state-space models with the expressivity of attention mechanisms. Through this hybrid design, we reveal the vision-to-text information aggregation phenomenon, where information progressively flows from vision tokens to text tokens across increasing LLM depth, resulting in severe vision token redundancy. Motivated by this observation, we propose TransV, a token information transfer module that transfers and compresses vision tokens into instruction tokens while maintaining multimodal understanding capabilities. This design enables TimeViper to process hour-long videos exceeding 10,000 frames. Extensive experiments across multiple benchmarks demonstrate that TimeViper competes with state-of-the-art models while extending frame numbers. We further analyze attention behaviors of both Mamba and Transformer layers, offering new insights into hybrid model interpretability. This work represents an initial step towards developing, interpreting, and compressing hybrid Mamba-Transformer architectures. 
+
+**Abstract (ZH)**: TimeViper：一种用于长视频理解的混合视觉-语言模型 
+
+---
+# When Alignment Fails: Multimodal Adversarial Attacks on Vision-Language-Action Models 
+
+**Title (ZH)**: 当对齐失效：针对视觉-语言-动作模型的多模态对抗攻击 
+
+**Authors**: Yuping Yan, Yuhan Xie, Yinxin Zhang, Lingjuan Lyu, Yaochu Jin  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.16203)  
+
+**Abstract**: Vision-Language-Action models (VLAs) have recently demonstrated remarkable progress in embodied environments, enabling robots to perceive, reason, and act through unified multimodal understanding. Despite their impressive capabilities, the adversarial robustness of these systems remains largely unexplored, especially under realistic multimodal and black-box conditions. Existing studies mainly focus on single-modality perturbations and overlook the cross-modal misalignment that fundamentally affects embodied reasoning and decision-making. In this paper, we introduce VLA-Fool, a comprehensive study of multimodal adversarial robustness in embodied VLA models under both white-box and black-box settings. VLA-Fool unifies three levels of multimodal adversarial attacks: (1) textual perturbations through gradient-based and prompt-based manipulations, (2) visual perturbations via patch and noise distortions, and (3) cross-modal misalignment attacks that intentionally disrupt the semantic correspondence between perception and instruction. We further incorporate a VLA-aware semantic space into linguistic prompts, developing the first automatically crafted and semantically guided prompting framework. Experiments on the LIBERO benchmark using a fine-tuned OpenVLA model reveal that even minor multimodal perturbations can cause significant behavioral deviations, demonstrating the fragility of embodied multimodal alignment. 
+
+**Abstract (ZH)**: Vision-Language-Action模型（VLAs）在体感环境中的多模态对抗鲁棒性研究：从白盒到黑盒设置 
+
+---
