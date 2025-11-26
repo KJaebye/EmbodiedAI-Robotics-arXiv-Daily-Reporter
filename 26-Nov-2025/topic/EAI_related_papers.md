@@ -1,0 +1,196 @@
+# CostNav: A Navigation Benchmark for Cost-Aware Evaluation of Embodied Agents 
+
+**Title (ZH)**: CostNav: 一种面向成本意识评估体态智能体的导航基准 
+
+**Authors**: Haebin Seong, Sungmin Kim, Minchan Kim, Yongjun Cho, Myunchul Joe, Suhwan Choi, Jaeyoon Jung, Jiyong Youn, Yoonshik Kim, Samwoo Seong, Yubeen Park, Youngjae Yu, Yunsung Lee  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.20216)  
+
+**Abstract**: Existing navigation benchmarks focus on task success metrics while overlooking economic viability -- critical for commercial deployment of autonomous delivery robots. We introduce \emph{CostNav}, a \textbf{Micro-Navigation Economic Testbed} that evaluates embodied agents through comprehensive cost-revenue analysis aligned with real-world business operations. CostNav models the complete economic lifecycle including hardware, training, energy, maintenance costs, and delivery revenue with service-level agreements, using industry-derived parameters. \textbf{To our knowledge, CostNav is the first work to quantitatively expose the gap between navigation research metrics and commercial viability}, revealing that optimizing for task success fundamentally differs from optimizing for economic deployment. Our cost model uses parameters derived from industry data sources (energy rates, delivery service pricing), and we project from a reduced-scale simulation to realistic deliveries. Under this projection, the baseline achieves 43.0\% SLA compliance but is \emph{not} commercially viable: yielding a loss of \$30.009 per run with no finite break-even point, because operating costs are dominated by collision-induced maintenance, which accounts for 99.7\% of per-run costs and highlights collision avoidance as a key optimization target. We demonstrate a learning-based on-device navigation baseline and establish a foundation for evaluating rule-based navigation, imitation learning, and cost-aware RL training. CostNav bridges the gap between navigation research and commercial deployment, enabling data-driven decisions about economic trade-offs across navigation paradigms. 
+
+**Abstract (ZH)**: CostNav：一种面向经济可行性的微导航测试平台 
+
+---
+# VICoT-Agent: A Vision-Interleaved Chain-of-Thought Framework for Interpretable Multimodal Reasoning and Scalable Remote Sensing Analysis 
+
+**Title (ZH)**: VICoT-Agent: 一种视觉交织链式思考的可解释多模态推理与可扩展遥感分析框架 
+
+**Authors**: Chujie Wang, Zhiyuan Luo, Ruiqi Liu, Can Ran, Shenghua Fan, Xi Chen, Chu He  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.20085)  
+
+**Abstract**: The current remote sensing image analysis task is increasingly evolving from traditional object recognition to complex intelligence reasoning, which places higher requirements on the model's reasoning ability and the flexibility of tool invocation. To this end, we propose a new multimodal agent framework, Vision-Interleaved Chain-of-Thought Framework (VICoT), which implements explicit multi-round reasoning by dynamically incorporating visual tools into the chain of thought. Through a stack-based reasoning structure and a modular MCP-compatible tool suite, VICoT enables LLMs to efficiently perform multi-round, interleaved vision-language reasoning tasks with strong generalization and this http URL also propose the Reasoning Stack distillation method to migrate complex Agent behaviors to small, lightweight models, which ensures the reasoning capability while significantly reducing complexity. Experiments on multiple remote sensing benchmarks demonstrate that VICoT significantly outperforms existing SOTA frameworks in reasoning transparency, execution efficiency, and generation quality. 
+
+**Abstract (ZH)**: 基于视觉插件的多轮chain-of-thought框架（VICoT）：提高遥感图像分析中的推理能力和模型灵活性 
+
+---
+# M$^3$Prune: Hierarchical Communication Graph Pruning for Efficient Multi-Modal Multi-Agent Retrieval-Augmented Generation 
+
+**Title (ZH)**: M$^3$剪枝：高效的多模态多agent检索增强生成中的分层通信图剪枝 
+
+**Authors**: Weizi Shao, Taolin Zhang, Zijie Zhou, Chen Chen, Chengyu Wang, Xiaofeng He  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.19969)  
+
+**Abstract**: Recent advancements in multi-modal retrieval-augmented generation (mRAG), which enhance multi-modal large language models (MLLMs) with external knowledge, have demonstrated that the collective intelligence of multiple agents can significantly outperform a single model through effective communication. Despite impressive performance, existing multi-agent systems inherently incur substantial token overhead and increased computational costs, posing challenges for large-scale deployment. To address these issues, we propose a novel Multi-Modal Multi-agent hierarchical communication graph PRUNING framework, termed M$^3$Prune. Our framework eliminates redundant edges across different modalities, achieving an optimal balance between task performance and token overhead. Specifically, M$^3$Prune first applies intra-modal graph sparsification to textual and visual modalities, identifying the edges most critical for solving the task. Subsequently, we construct a dynamic communication topology using these key edges for inter-modal graph sparsification. Finally, we progressively prune redundant edges to obtain a more efficient and hierarchical topology. Extensive experiments on both general and domain-specific mRAG benchmarks demonstrate that our method consistently outperforms both single-agent and robust multi-agent mRAG systems while significantly reducing token consumption. 
+
+**Abstract (ZH)**: 近期在多模态检索增强生成（mRAG）领域的进展，通过使用外部知识来增强多模态大型语言模型（MLLMs），显示了多代理集体智能可通过有效通信显著优于单一模型。尽管现有系统的性能令人印象深刻，但它们本质上会带来大量的标记开销和增加的计算成本，这对大规模部署构成挑战。为解决这些问题，我们提出了一种新颖的多模态多代理分层通信图裁剪框架，称为M$^3$Prune。该框架在不同模态之间消除冗余边，实现了任务性能与标记开销之间的最优平衡。具体来说，M$^3$Prune首先对文本和视觉模态应用图稀疏化，识别对于解决问题最关键的边。随后，我们使用这些关键边构建动态通信拓扑以进行跨模态图稀疏化。最后，我们逐步剪枝冗余边以获得更高效和分层的拓扑结构。在通用和特定领域mRAG基准测试上的 extensive 实验表明，我们的方法在显著减少标记消耗的同时，始终优于单代理和鲁棒多代理mRAG系统。 
+
+---
+# Agentic AI-Empowered Conversational Embodied Intelligence Networks in 6G 
+
+**Title (ZH)**: 6G中赋能代理人工智能的对话性躯体智能网络 
+
+**Authors**: Mingkai Chen, Zijie Feng, Lei Wang, Yaser Khamayseh  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.19865)  
+
+**Abstract**: In the 6G era, semantic collaboration among multiple embodied intelligent devices (MEIDs) becomes crucial for complex task execution. However, existing systems face challenges in multimodal information fusion, adaptive communication, and decision interpretability. To address these limitations, we propose a collaborative Conversational Embodied Intelligence Network (CC-EIN) integrating multimodal feature fusion, adaptive semantic communication, task coordination, and interpretability. PerceptiNet performs cross-modal fusion of image and radar data to generate unified semantic representations. An adaptive semantic communication strategy dynamically adjusts coding schemes and transmission power according to task urgency and channel quality. A semantic-driven collaboration mechanism further supports task decomposition and conflict-free coordination among heterogeneous devices. Finally, the InDec module enhances decision transparency through Grad-CAM visualization. Simulation results in post-earthquake rescue scenarios demonstrate that CC-EIN achieves 95.4% task completion rate and 95% transmission efficiency while maintaining strong semantic consistency and energy efficiency. 
+
+**Abstract (ZH)**: 在6G时代，多实体智能设备的语义协作对于复杂任务执行变得至关重要。现有系统在多模信息融合、自适应通信和决策可解释性方面面临挑战。为解决这些限制，我们提出了一种集成多模特征融合、自适应语义通信、任务协调和可解释性的协作对话式嵌入智能网络（CC-EIN）。PerceptiNet实现跨模态的图像和雷达数据融合，生成统一的语义表示。一种自适应语义通信策略会根据任务紧急性和信道质量动态调整编码方案和传输功率。语义驱动的协作机制进一步支持异构设备之间的任务分解和无冲突协调。最后，InDec模块通过Grad-CAM可视化增强决策透明度。地震救援场景下的仿真结果显示，CC-EIN实现了95.4%的任务完成率和95%的传输效率，同时保持了强大的语义一致性与能效。 
+
+---
+# Reinforcement Learning with $ω$-Regular Objectives and Constraints 
+
+**Title (ZH)**: 带有$\omega$-正规目标和约束的强化学习 
+
+**Authors**: Dominik Wagner, Leon Witzman, Luke Ong  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.19849)  
+
+**Abstract**: Reinforcement learning (RL) commonly relies on scalar rewards with limited ability to express temporal, conditional, or safety-critical goals, and can lead to reward hacking. Temporal logic expressible via the more general class of $\omega$-regular objectives addresses this by precisely specifying rich behavioural properties. Even still, measuring performance by a single scalar (be it reward or satisfaction probability) masks safety-performance trade-offs that arise in settings with a tolerable level of risk.
+We address both limitations simultaneously by combining $\omega$-regular objectives with explicit constraints, allowing safety requirements and optimisation targets to be treated separately. We develop a model-based RL algorithm based on linear programming, which in the limit produces a policy maximising the probability of satisfying an $\omega$-regular objective while also adhering to $\omega$-regular constraints within specified thresholds. Furthermore, we establish a translation to constrained limit-average problems with optimality-preserving guarantees. 
+
+**Abstract (ZH)**: ω-正规目标与显式约束结合的强化学习方法 
+
+---
+# KOM: A Multi-Agent Artificial Intelligence System for Precision Management of Knee Osteoarthritis (KOA) 
+
+**Title (ZH)**: KOM：一种用于膝骨关节炎精准管理的多智能体人工智能系统 
+
+**Authors**: Weizhi Liu, Xi Chen, Zekun Jiang, Liang Zhao, Kunyuan Jiang, Ruisi Tang, Li Wang, Mingke You, Hanyu Zhou, Hongyu Chen, Qiankun Xiong, Yong Nie, Kang Li, Jian Li  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.19798)  
+
+**Abstract**: Knee osteoarthritis (KOA) affects more than 600 million individuals globally and is associated with significant pain, functional impairment, and disability. While personalized multidisciplinary interventions have the potential to slow disease progression and enhance quality of life, they typically require substantial medical resources and expertise, making them difficult to implement in resource-limited settings. To address this challenge, we developed KOM, a multi-agent system designed to automate KOA evaluation, risk prediction, and treatment prescription. This system assists clinicians in performing essential tasks across the KOA care pathway and supports the generation of tailored management plans based on individual patient profiles, disease status, risk factors, and contraindications. In benchmark experiments, KOM demonstrated superior performance compared to several general-purpose large language models in imaging analysis and prescription generation. A randomized three-arm simulation study further revealed that collaboration between KOM and clinicians reduced total diagnostic and planning time by 38.5% and resulted in improved treatment quality compared to each approach used independently. These findings indicate that KOM could help facilitate automated KOA management and, when integrated into clinical workflows, has the potential to enhance care efficiency. The modular architecture of KOM may also offer valuable insights for developing AI-assisted management systems for other chronic conditions. 
+
+**Abstract (ZH)**: 膝关节骨关节炎(KOA)影响全球超过6亿人，与显著的疼痛、功能障碍和残疾相关。虽然个性化的多学科干预有可能减缓疾病进展并提升生活质量，但这些干预通常需要大量的医疗资源和专业知识，难以在资源有限的环境中实施。为应对这一挑战，我们开发了KOM，一个多功能代理系统，旨在自动完成KOA评估、风险预测和治疗处方。该系统协助临床医生完成KOA照护路径中的关键任务，并根据患者的个体特征、疾病状况、风险因素和禁忌症生成个性化的管理方案。在基准实验中，KOM在影像分析和处方生成方面的性能优于多个通用大语言模型。随机三组模拟研究进一步表明，KOM与临床医生的合作将诊断和规划时间减少38.5%，并且相比于单独使用这些方法具有更好的治疗质量。这些发现表明，KOM有助于自动化KOA管理，并集成到临床工作流程中后，有望提高护理效率。KOM的模块化架构也可能为其他慢性疾病的AI辅助管理系统的开发提供有价值的见解。 
+
+---
+# Scaling Agentic Reinforcement Learning for Tool-Integrated Reasoning in VLMs 
+
+**Title (ZH)**: 面向VLM中工具集成推理的代理强化学习扩展研究 
+
+**Authors**: Meng Lu, Ran Xu, Yi Fang, Wenxuan Zhang, Yue Yu, Gaurav Srivastava, Yuchen Zhuang, Mohamed Elhoseiny, Charles Fleming, Carl Yang, Zhengzhong Tu, Yang Xie, Guanghua Xiao, Hanrui Wang, Di Jin, Wenqi Shi, Xuan Wang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.19773)  
+
+**Abstract**: While recent vision-language models (VLMs) demonstrate strong image understanding, their ability to "think with images", i.e., to reason through multi-step visual interactions, remains limited. We introduce VISTA-Gym, a scalable training environment for incentivizing tool-integrated visual reasoning capabilities in VLMs. VISTA-Gym unifies diverse real-world multimodal reasoning tasks (7 tasks from 13 datasets in total) with a standardized interface for visual tools (e.g., grounding, parsing), executable interaction loops, verifiable feedback signals, and efficient trajectory logging, enabling visual agentic reinforcement learning at scale. While recent VLMs exhibit strong text-only reasoning, both proprietary and open-source models still struggle with tool selection, invocation, and coordination. With VISTA-Gym, we train VISTA-R1 to interleave tool-use with agentic reasoning via multi-turn trajectory sampling and end-to-end reinforcement learning. Extensive experiments across 11 public reasoning-intensive VQA benchmarks show that VISTA-R1-8B outperforms state-of-the-art baselines with similar sizes by 9.51%-18.72%, demonstrating VISTA-Gym as an effective training ground to unlock the tool-integrated reasoning capabilities for VLMs. 
+
+**Abstract (ZH)**: 虽然最近的视觉-语言模型(VLMs)在图像理解方面表现出色，但它们通过多步视觉交互进行“图像思考”的能力仍然有限。我们引入了VISTA-Gym，这是一种可扩展的训练环境，用于激励VLMs中的工具集成视觉推理能力。VISTA-Gym通过标准化的视觉工具接口（例如，空间定位、解析）、可执行的互动循环、可验证的反馈信号以及高效的轨迹记录，将13个数据集中总共7项不同的现实世界多模态推理任务统一起来，使大规模的视觉自主强化学习成为可能。尽管最近的VLMs在仅文本推理方面表现出色，但无论是专有模型还是开源模型，在工具选择、调用和协调方面仍然存在挑战。通过VISTA-Gym，我们训练VISTA-R1通过多轮轨迹采样和端到端的强化学习，在工具使用和自主推理之间交替进行。在11个公开的推理密集型VQA基准测试中的广泛实验表明，VISTA-R1-8B在与类似规模的基线相比时，能够提高9.51%-18.72%的表现，展示了VISTA-Gym作为有效训练环境，以解锁VLMs中的工具集成推理能力。 
+
+---
+# MIMIC-MJX: Neuromechanical Emulation of Animal Behavior 
+
+**Title (ZH)**: MIMIC-MJX: 动物体征的神经机械模拟 
+
+**Authors**: Charles Y. Zhang, Yuanjia Yang, Aidan Sirbu, Elliott T.T. Abe, Emil Wärnberg, Eric J. Leonardis, Diego E. Aldarondo, Adam Lee, Aaditya Prasad, Jason Foat, Kaiwen Bian, Joshua Park, Rusham Bhatt, Hutton Saunders, Akira Nagamori, Ayesha R. Thanawalla, Kee Wui Huang, Fabian Plum, Hendrik K. Beck, Steven W. Flavell, David Labonte, Blake A. Richards, Bingni W. Brunton, Eiman Azim, Bence P. Ölveczky, Talmo D. Pereira  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.20532)  
+
+**Abstract**: The primary output of the nervous system is movement and behavior. While recent advances have democratized pose tracking during complex behavior, kinematic trajectories alone provide only indirect access to the underlying control processes. Here we present MIMIC-MJX, a framework for learning biologically-plausible neural control policies from kinematics. MIMIC-MJX models the generative process of motor control by training neural controllers that learn to actuate biomechanically-realistic body models in physics simulation to reproduce real kinematic trajectories. We demonstrate that our implementation is accurate, fast, data-efficient, and generalizable to diverse animal body models. Policies trained with MIMIC-MJX can be utilized to both analyze neural control strategies and simulate behavioral experiments, illustrating its potential as an integrative modeling framework for neuroscience. 
+
+**Abstract (ZH)**: 生物合乎情理的神经控制策略学习框架：MIMIC-MJX 
+
+---
+# Leveraging weights signals - Predicting and improving generalizability in reinforcement learning 
+
+**Title (ZH)**: 利用权重信号 - 预测和提高强化学习的泛化能力 
+
+**Authors**: Olivier Moulin, Vincent Francois-lavet, Paul Elbers, Mark Hoogendoorn  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.20234)  
+
+**Abstract**: Generalizability of Reinforcement Learning (RL) agents (ability to perform on environments different from the ones they have been trained on) is a key problem as agents have the tendency to overfit to their training environments. In order to address this problem and offer a solution to increase the generalizability of RL agents, we introduce a new methodology to predict the generalizability score of RL agents based on the internal weights of the agent's neural networks. Using this prediction capability, we propose some changes in the Proximal Policy Optimization (PPO) loss function to boost the generalization score of the agents trained with this upgraded version. Experimental results demonstrate that our improved PPO algorithm yields agents with stronger generalizability compared to the original version. 
+
+**Abstract (ZH)**: 基于代理神经网络内部权重预测强化学习代理泛化能力的新方法及改进的Proximal Policy Optimization算法研究 
+
+---
+# Energy Costs and Neural Complexity Evolution in Changing Environments 
+
+**Title (ZH)**: 能量成本与神经复杂性在变化环境中的演化 
+
+**Authors**: Sian Heesom-Green, Jonathan Shock, Geoff Nitschke  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.20018)  
+
+**Abstract**: The Cognitive Buffer Hypothesis (CBH) posits that larger brains evolved to enhance survival in changing conditions. However, larger brains also carry higher energy demands, imposing additional metabolic burdens. Alongside brain size, brain organization plays a key role in cognitive ability and, with suitable architectures, may help mitigate energy challenges. This study evolves Artificial Neural Networks (ANNs) used by Reinforcement Learning (RL) agents to investigate how environmental variability and energy costs influence the evolution of neural complexity, defined in terms of ANN size and structure. Results indicate that under energy constraints, increasing seasonality led to smaller ANNs. This challenges CBH and supports the Expensive Brain Hypothesis (EBH), as highly seasonal environments reduced net energy intake and thereby constrained brain size. ANN structural complexity primarily emerged as a byproduct of size, where energy costs promoted the evolution of more efficient networks. These results highlight the role of energy constraints in shaping neural complexity, offering in silico support for biological theory and energy-efficient robotic design. 
+
+**Abstract (ZH)**: 认知缓冲假说（CBH）认为，更大的大脑进化以增强在多变环境中的生存能力。然而，更大的大脑也伴随着更高的能量需求，带来额外的代谢负担。除了大脑大小外，大脑组织在认知能力中起着关键作用，适当的架构可能有助于缓解能量挑战。本研究通过强化学习（RL）代理使用的人工神经网络（ANNs）来探讨环境多变性和能量成本如何影响神经复杂性的进化，神经复杂性以ANN大小和结构定义。结果表明，在能量限制下，增加的季节性导致ANN尺寸减小。这挑战了CBH，并支持了昂贵的大脑假说（EBH），即高度季节性的环境减少了净能量摄入，从而限制了大脑尺寸。ANN结构复杂性主要作为尺寸的副产品出现，其中能量成本促进了更高效网络的进化。这些结果突显了能量限制在塑造神经复杂性中的作用，为生物学理论和能效机器人设计提供了在体支持。 
+
+---
+# EmoFeedback2: Reinforcement of Continuous Emotional Image Generation via LVLM-based Reward and Textual Feedback 
+
+**Title (ZH)**: EmoFeedback2：基于LVLM的奖励与文本反馈连续情绪图像生成强化方法 
+
+**Authors**: Jingyang Jia, Kai Shu, Gang Yang, Long Xing, Xun Chen, Aiping Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.19982)  
+
+**Abstract**: Continuous emotional image generation (C-EICG) is emerging rapidly due to its ability to produce images aligned with both user descriptions and continuous emotional values. However, existing approaches lack emotional feedback from generated images, limiting the control of emotional continuity. Additionally, their simple alignment between emotions and naively generated texts fails to adaptively adjust emotional prompts according to image content, leading to insufficient emotional fidelity. To address these concerns, we propose a novel generation-understanding-feedback reinforcement paradigm (EmoFeedback2) for C-EICG, which exploits the reasoning capability of the fine-tuned large vision-language model (LVLM) to provide reward and textual feedback for generating high-quality images with continuous emotions. Specifically, we introduce an emotion-aware reward feedback strategy, where the LVLM evaluates the emotional values of generated images and computes the reward against target emotions, guiding the reinforcement fine-tuning of the generative model and enhancing the emotional continuity of images. Furthermore, we design a self-promotion textual feedback framework, in which the LVLM iteratively analyzes the emotional content of generated images and adaptively produces refinement suggestions for the next-round prompt, improving the emotional fidelity with fine-grained content. Extensive experimental results demonstrate that our approach effectively generates high-quality images with the desired emotions, outperforming existing state-of-the-art methods in our custom dataset. The code and dataset will be released soon. 
+
+**Abstract (ZH)**: 基于情感反馈的连续情感图像生成（C-EICG）：EmoFeedback2范式 
+
+---
+# MAPS: Preserving Vision-Language Representations via Module-Wise Proximity Scheduling for Better Vision-Language-Action Generalization 
+
+**Title (ZH)**: MAPS：通过模块级近邻调度preserve视觉-语言表示以实现更好的视觉-语言-动作泛化 
+
+**Authors**: Chengyue Huang, Mellon M. Zhang, Robert Azarcon, Glen Chou, Zsolt Kira  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.19878)  
+
+**Abstract**: Vision-Language-Action (VLA) models inherit strong priors from pretrained Vision-Language Models (VLMs), but naive fine-tuning often disrupts these representations and harms generalization. Existing fixes -- freezing modules or applying uniform regularization -- either overconstrain adaptation or ignore the differing roles of VLA components. We present MAPS (Module-Wise Proximity Scheduling), the first robust fine-tuning framework for VLAs. Through systematic analysis, we uncover an empirical order in which proximity constraints should be relaxed to balance stability and flexibility. MAPS linearly schedules this relaxation, enabling visual encoders to stay close to their pretrained priors while action-oriented language layers adapt more freely. MAPS introduces no additional parameters or data, and can be seamlessly integrated into existing VLAs. Across MiniVLA-VQ, MiniVLA-OFT, OpenVLA-OFT, and challenging benchmarks such as SimplerEnv, CALVIN, LIBERO, as well as real-world evaluations on the Franka Emika Panda platform, MAPS consistently boosts both in-distribution and out-of-distribution performance (up to +30%). Our findings highlight empirically guided proximity to pretrained VLMs as a simple yet powerful principle for preserving broad generalization in VLM-to-VLA transfer. 
+
+**Abstract (ZH)**: 基于视觉-语言-动作的模型的模块级临近调度调整框架：一种稳健的微调方法 
+
+---
+# Prune-Then-Plan: Step-Level Calibration for Stable Frontier Exploration in Embodied Question Answering 
+
+**Title (ZH)**: 剪枝然后规划：基于步骤的校准以实现体感问答中稳定前沿探索 
+
+**Authors**: Noah Frahm, Prakrut Patel, Yue Zhang, Shoubin Yu, Mohit Bansal, Roni Sengupta  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.19768)  
+
+**Abstract**: Large vision-language models (VLMs) have improved embodied question answering (EQA) agents by providing strong semantic priors for open-vocabulary reasoning. However, when used directly for step-level exploration, VLMs often exhibit frontier oscillations, unstable back-and-forth movements caused by overconfidence and miscalibration, leading to inefficient navigation and degraded answer quality. We propose Prune-Then-Plan, a simple and effective framework that stabilizes exploration through step-level calibration. Instead of trusting raw VLM scores, our method prunes implausible frontier choices using a Holm-Bonferroni inspired pruning procedure and then delegates final decisions to a coverage-based planner. This separation converts overconfident predictions into conservative, interpretable actions by relying on human-level judgments to calibrate the step-level behavior of VLMs. Integrated into the 3D-Mem EQA framework, our approach achieves relative improvements of up to 49% and 33% in visually grounded SPL and LLM-Match metrics respectively over baselines. Overall, our method achieves better scene coverage under equal exploration budgets on both OpenEQA and EXPRESS-Bench datasets. 
+
+**Abstract (ZH)**: 基于视觉-语言模型的步级规划稳定化框架：改善开放词汇推理下的体化问题回答 
+
+---
+# Robot-Powered Data Flywheels: Deploying Robots in the Wild for Continual Data Collection and Foundation Model Adaptation 
+
+**Title (ZH)**: 机器人驱动的数据飞轮：在野外部署机器人进行持续数据采集和基础模型适应 
+
+**Authors**: Jennifer Grannen, Michelle Pan, Kenneth Llontop, Cherie Ho, Mark Zolotas, Jeannette Bohg, Dorsa Sadigh  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.19647)  
+
+**Abstract**: Foundation models (FM) have unlocked powerful zero-shot capabilities in vision and language, yet their reliance on internet pretraining data leaves them brittle in unstructured, real-world settings. The messy, real-world data encountered during deployment (e.g. occluded or multilingual text) remains massively underrepresented in existing corpora. Robots, as embodied agents, are uniquely positioned to close this gap: they can act in physical environments to collect large-scale, real-world data that enriches FM training with precisely the examples current models lack. We introduce the Robot-Powered Data Flywheel, a framework that transforms robots from FM consumers into data generators. By deploying robots equipped with FMs in the wild, we enable a virtuous cycle: robots perform useful tasks while collecting real-world data that improves both domain-specific adaptation and domain-adjacent generalization. We instantiate this framework with Scanford, a mobile manipulator deployed in the East Asia Library for 2 weeks. Scanford autonomously scans shelves, identifies books using a vision-language model (VLM), and leverages the library catalog to label images without human annotation. This deployment both aids librarians and produces a dataset to finetune the underlying VLM, improving performance on the domain-specific in-the-wild library setting and on domain-adjacent multilingual OCR benchmarks. Using data collected from 2103 shelves, Scanford improves VLM performance on book identification from 32.0% to 71.8% and boosts domain-adjacent multilingual OCR from 24.8% to 46.6% (English) and 30.8% to 38.0% (Chinese), while saving an ~18.7 hrs of human time. These results highlight how robot-powered data flywheels can both reduce human effort in real deployments and unlock new pathways for continually adapting FMs to the messiness of reality. More details are at: this https URL 
+
+**Abstract (ZH)**: 基于机器人的数据飞轮：Foundation Models的现实世界适应与扩展 
+
+---
+# Discover, Learn, and Reinforce: Scaling Vision-Language-Action Pretraining with Diverse RL-Generated Trajectories 
+
+**Title (ZH)**: 发现、学习与强化：通过多样化RL生成轨迹扩展视觉-语言-动作前训练 
+
+**Authors**: Rushuai Yang, Zhiyuan Feng, Tianxiang Zhang, Kaixin Wang, Chuheng Zhang, Li Zhao, Xiu Su, Yi Chen, Jiang Bian  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.19528)  
+
+**Abstract**: Scaling vision-language-action (VLA) model pre-training requires large volumes of diverse, high-quality manipulation trajectories. Most current data is obtained via human teleoperation, which is expensive and difficult to scale. Reinforcement learning (RL) methods learn useful skills through autonomous exploration, making them a viable approach for generating data. However, standard RL training collapses to a narrow execution pattern, limiting its utility for large-scale pre-training. We propose Discover, Lea rn and Reinforce (DLR), an information-theoretic pattern discovery framework that generates multiple distinct, high-success behavioral patterns for VLA pretraining. Empirically, DLR generates a markedly more diverse trajectory corpus on LIBERO. Specifically, it learns multiple distinct, high-success strategies for the same task where standard RL discovers only one, and hence it covers substantially broader regions of the state-action space. When adapted to unseen downstream task suites, VLA models pretrained on our diverse RL data surpass counterparts trained on equal-sized standard RL datasets. Moreover, DLR exhibits positive data-scaling behavior that single-pattern RL lacks. These results position multi-pattern RL as a practical, scalable data engine for embodied foundation models. 
+
+**Abstract (ZH)**: Discover, Learn and Reinforce: 一种信息论模式发现框架用于生成用于视觉-语言-动作预训练的多样化高成功率行为模式 
+
+---

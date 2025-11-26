@@ -1,0 +1,338 @@
+# "Are We Done Yet?": A Vision-Based Judge for Autonomous Task Completion of Computer Use Agents 
+
+**Title (ZH)**: “任务完成了吗？”：一种基于视觉的自主计算机使用代理任务完成判断器 
+
+**Authors**: Marta Sumyk, Oleksandr Kosovan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.20067)  
+
+**Abstract**: Computer Use Agents (CUAs) are designed to autonomously operate digital interfaces, yet they often fail to reliably determine whether a given task has been completed. We present an autonomous evaluation and feedback framework that uses vision-language models to assess task completion directly from screenshots and task descriptions. Our dataset covers 42 built-in macOS applications and 1,260 human-labeled tasks across a wide range of scenarios. Our framework achieves up to 73 percent accuracy in task success detection and yields an average relative improvement of 27 percent in overall task success when evaluator feedback is applied. These results show that vision-based evaluation can serve as an effective feedback mechanism that improves the reliability and self-correction of autonomous computer-use agents. 
+
+**Abstract (ZH)**: 基于视觉语言模型的自主评估与反馈框架：提高自主计算机使用代理的任务完成可靠性与自我修正能力 
+
+---
+# MedROV: Towards Real-Time Open-Vocabulary Detection Across Diverse Medical Imaging Modalities 
+
+**Title (ZH)**: MedROV: 面向多元医学成像模态的实时开放词汇检测 
+
+**Authors**: Tooba Tehreem Sheikh, Jean Lahoud, Rao Muhammad Anwer, Fahad Shahbaz Khan, Salman Khan, Hisham Cholakkal  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.20650)  
+
+**Abstract**: Traditional object detection models in medical imaging operate within a closed-set paradigm, limiting their ability to detect objects of novel labels. Open-vocabulary object detection (OVOD) addresses this limitation but remains underexplored in medical imaging due to dataset scarcity and weak text-image alignment. To bridge this gap, we introduce MedROV, the first Real-time Open Vocabulary detection model for medical imaging. To enable open-vocabulary learning, we curate a large-scale dataset, Omnis, with 600K detection samples across nine imaging modalities and introduce a pseudo-labeling strategy to handle missing annotations from multi-source datasets. Additionally, we enhance generalization by incorporating knowledge from a large pre-trained foundation model. By leveraging contrastive learning and cross-modal representations, MedROV effectively detects both known and novel structures. Experimental results demonstrate that MedROV outperforms the previous state-of-the-art foundation model for medical image detection with an average absolute improvement of 40 mAP50, and surpasses closed-set detectors by more than 3 mAP50, while running at 70 FPS, setting a new benchmark in medical detection. Our source code, dataset, and trained model are available at this https URL. 
+
+**Abstract (ZH)**: 实时开放式词汇检测模型MedROV在医疗影像中的应用 
+
+---
+# MotionV2V: Editing Motion in a Video 
+
+**Title (ZH)**: MotionV2V: 在视频中编辑动作 
+
+**Authors**: Ryan Burgert, Charles Herrmann, Forrester Cole, Michael S Ryoo, Neal Wadhwa, Andrey Voynov, Nataniel Ruiz  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.20640)  
+
+**Abstract**: While generative video models have achieved remarkable fidelity and consistency, applying these capabilities to video editing remains a complex challenge. Recent research has explored motion controllability as a means to enhance text-to-video generation or image animation; however, we identify precise motion control as a promising yet under-explored paradigm for editing existing videos. In this work, we propose modifying video motion by directly editing sparse trajectories extracted from the input. We term the deviation between input and output trajectories a "motion edit" and demonstrate that this representation, when coupled with a generative backbone, enables powerful video editing capabilities. To achieve this, we introduce a pipeline for generating "motion counterfactuals", video pairs that share identical content but distinct motion, and we fine-tune a motion-conditioned video diffusion architecture on this dataset. Our approach allows for edits that start at any timestamp and propagate naturally. In a four-way head-to-head user study, our model achieves over 65 percent preference against prior work. Please see our project page: this https URL 
+
+**Abstract (ZH)**: 尽管生成视频模型在保真度和一致性方面取得了显著进展，但将这些能力应用于视频编辑仍然是一个复杂的挑战。最近的研究探索了通过增强文本到视频生成或图像动画中的运动可控性来提高其性能，然而，我们发现精确的运动控制是一种有潜力但尚未充分探索的视频编辑范式。在本研究中，我们提出直接编辑输入中提取的稀疏运动轨迹来修改视频运动。我们将输入和输出轨迹之间的偏差称为“运动编辑”，并证明在生成主干网络的辅助下，这种表示可以实现强大的视频编辑功能。为了实现这一目标，我们引入了一种生成“运动反事实”的管道，这些视频对的内容相同但运动不同，并在该数据集上细调了一种基于运动条件的视频扩散架构。我们的方法允许从任意时间戳开始进行自然传播的编辑。在一项四组对战的人类用户研究中，我们的模型在偏好度上优于先前的工作超过65%。请参见我们的项目页面：this https URL 
+
+---
+# Evaluating the Performance of Deep Learning Models in Whole-body Dynamic 3D Posture Prediction During Load-reaching Activities 
+
+**Title (ZH)**: 评价深度学习模型在负载搬运活动中全身动态三维姿态预测性能的研究 
+
+**Authors**: Seyede Niloofar Hosseini, Ali Mojibi, Mahdi Mohseni, Navid Arjmand, Alireza Taheri  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.20615)  
+
+**Abstract**: This study aimed to explore the application of deep neural networks for whole-body human posture prediction during dynamic load-reaching activities. Two time-series models were trained using bidirectional long short-term memory (BLSTM) and transformer architectures. The dataset consisted of 3D full-body plug-in gait dynamic coordinates from 20 normal-weight healthy male individuals each performing 204 load-reaching tasks from different load positions while adapting various lifting and handling techniques. The model inputs consisted of the 3D position of the hand-load position, lifting (stoop, full-squat and semi-squat) and handling (one- and two-handed) techniques, body weight and height, and the 3D coordinate data of the body posture from the first 25% of the task duration. These inputs were used by the models to predict body coordinates during the remaining 75% of the task period. Moreover, a novel method was proposed to improve the accuracy of the previous and present posture prediction networks by enforcing constant body segment lengths through the optimization of a new cost function. The results indicated that the new cost function decreased the prediction error of the models by approximately 8% and 21% for the arm and leg models, respectively. We indicated that utilizing the transformer architecture, with a root-mean-square-error of 47.0 mm, exhibited ~58% more accurate long-term performance than the BLSTM-based model. This study merits the use of neural networks that capture time series dependencies in 3D motion frames, providing a unique approach for understanding and predict motion dynamics during manual material handling activities. 
+
+**Abstract (ZH)**: 本研究旨在探索深度神经网络在动态负重搬运活动中全身人体姿态预测中的应用。两个时间序列模型使用双向长短期记忆(BLSTM)和变压器架构进行训练。数据集包含20名正常体重的健康男性在执行不同负重位置下的204次搬运任务时获取的全身3D动态姿态坐标数据。模型输入包括手-负重重心的3D位置、不同的搬运技术（弯腰、全蹲和半蹲）和处理技术（单手和双手）、体重和身高，以及任务开始前25%时间内的3D姿态坐标数据。这些输入用于预测任务剩余75%时间内的身体坐标。此外，提出了一种新颖的方法，通过优化新的成本函数来约束身体段长度，从而提高先前和当前姿态预测网络的准确性。结果显示，新的成本函数分别将手臂和腿部模型的预测误差降低了约8%和21%。使用变压器架构，均方根误差为47.0毫米，展示了比基于BLSTM的模型约58%更准确的长期性能。本研究强调了在3D运动框架中捕捉时间序列依赖性的神经网络的应用，提供了理解并预测手动物料搬运活动中运动动态的独特方法。 
+
+---
+# Flash-DMD: Towards High-Fidelity Few-Step Image Generation with Efficient Distillation and Joint Reinforcement Learning 
+
+**Title (ZH)**: 快速DMD：通过高效蒸馏和联合强化学习实现高保真 few-shot 图像生成 
+
+**Authors**: Guanjie Chen, Shirui Huang, Kai Liu, Jianchen Zhu, Xiaoye Qu, Peng Chen, Yu Cheng, Yifu Sun  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.20549)  
+
+**Abstract**: Diffusion Models have emerged as a leading class of generative models, yet their iterative sampling process remains computationally expensive. Timestep distillation is a promising technique to accelerate generation, but it often requires extensive training and leads to image quality degradation. Furthermore, fine-tuning these distilled models for specific objectives, such as aesthetic appeal or user preference, using Reinforcement Learning (RL) is notoriously unstable and easily falls into reward hacking. In this work, we introduce Flash-DMD, a novel framework that enables fast convergence with distillation and joint RL-based refinement. Specifically, we first propose an efficient timestep-aware distillation strategy that significantly reduces training cost with enhanced realism, outperforming DMD2 with only $2.1\%$ its training cost. Second, we introduce a joint training scheme where the model is fine-tuned with an RL objective while the timestep distillation training continues simultaneously. We demonstrate that the stable, well-defined loss from the ongoing distillation acts as a powerful regularizer, effectively stabilizing the RL training process and preventing policy collapse. Extensive experiments on score-based and flow matching models show that our proposed Flash-DMD not only converges significantly faster but also achieves state-of-the-art generation quality in the few-step sampling regime, outperforming existing methods in visual quality, human preference, and text-image alignment metrics. Our work presents an effective paradigm for training efficient, high-fidelity, and stable generative models. Codes are coming soon. 
+
+**Abstract (ZH)**: Flash-DMD：高效的分布式自监督细化和联合强化学习优化框架 
+
+---
+# Automated Monitoring of Cultural Heritage Artifacts Using Semantic Segmentation 
+
+**Title (ZH)**: 使用语义分割进行文化遗产艺术品的自动监控 
+
+**Authors**: Andrea Ranieri, Giorgio Palmieri, Silvia Biasotti  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.20541)  
+
+**Abstract**: This paper addresses the critical need for automated crack detection in the preservation of cultural heritage through semantic segmentation. We present a comparative study of U-Net architectures, using various convolutional neural network (CNN) encoders, for pixel-level crack identification on statues and monuments. A comparative quantitative evaluation is performed on the test set of the OmniCrack30k dataset [1] using popular segmentation metrics including Mean Intersection over Union (mIoU), Dice coefficient, and Jaccard index. This is complemented by an out-of-distribution qualitative evaluation on an unlabeled test set of real-world cracked statues and monuments. Our findings provide valuable insights into the capabilities of different CNN- based encoders for fine-grained crack segmentation. We show that the models exhibit promising generalization capabilities to unseen cultural heritage contexts, despite never having been explicitly trained on images of statues or monuments. 
+
+**Abstract (ZH)**: 这篇论文通过语义分割解决了文化 heritage 保护中自动裂缝检测的迫切需求。我们对使用各种卷积神经网络（CNN）编码器的 U-Net 架构进行了比较研究，用于石雕和纪念碑像素级裂缝识别。我们使用流行的距离衡量标准，包括 Mean Intersection over Union (mIoU)、Dice 系数和 Jaccard 索引，在 OmniCrack30k 数据集 [1] 的测试集上进行了定量比较评估。此外，我们还对现实世界裂缝石雕和纪念碑的未标记测试集进行了离群量评估。我们的研究结果提供了不同基于 CNN 的编码器在细粒度裂缝分割方面能力的重要见解。我们展示了尽管从未明确使用石雕或纪念碑图像进行训练，但这些模型在未见过的文化 heritage 上表现出令人鼓舞的一般化能力。 
+
+---
+# Object-Centric Vision Token Pruning for Vision Language Models 
+
+**Title (ZH)**: 面向对象的视觉.token.裁剪：用于视觉语言模型 
+
+**Authors**: Guangyuan Li, Rongzhen Zhao, Jinhong Deng, Yanbo Wang, Joni Pajarinen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.20439)  
+
+**Abstract**: In Vision Language Models (VLMs), vision tokens are quantity-heavy yet information-dispersed compared with language tokens, thus consume too much unnecessary computation. Pruning redundant vision tokens for high VLM inference efficiency has been continuously studied but all existing methods resort to indirect and non-guaranteed ways. We propose OC-VTP, a direct and guaranteed approach to select the most representative vision tokens for high-efficiency yet accuracy-preserving VLM inference. Our OC-VTP requires merely light-weight pre-training of a small object-centric vision token pruner, which can then be inserted into existing VLMs, without fine-tuning of any models on any datasets. It is gauranteed that the most representative vision tokens are kept by minimizing the error in reconstructing the original unpruned tokens from the selected ones. Across any vision pruning ratios, i.e., inference efficiency, our OC-VTP consistently helps mainstream VLMs to preserve the highest inference accuracy. Our pruning also demonstrates interesting interpretability. Our codes are available at this https URL. 
+
+**Abstract (ZH)**: 视觉语言模型中的OC-VTP：一种直接且有保证的方法选择最具代表性的视觉tokens以提高推理效率并保持准确性 
+
+---
+# Block Cascading: Training Free Acceleration of Block-Causal Video Models 
+
+**Title (ZH)**: 块级加速：无需训练的块因性视频模型加速方法 
+
+**Authors**: Hmrishav Bandyopadhyay, Nikhil Pinnaparaju, Rahim Entezari, Jim Scott, Yi-Zhe Song, Varun Jampani  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.20426)  
+
+**Abstract**: Block-causal video generation faces a stark speed-quality trade-off: small 1.3B models manage only 16 FPS while large 14B models crawl at 4.5 FPS, forcing users to choose between responsiveness and quality. Block Cascading significantly mitigates this trade-off through training-free parallelization. Our key insight: future video blocks do not need fully denoised current blocks to begin generation. By starting block generation with partially denoised context from predecessors, we transform sequential pipelines into parallel cascades where multiple blocks denoise simultaneously. With 5 GPUs exploiting temporal parallelism, we achieve ~2x acceleration across all model scales: 1.3B models accelerate from 16 to 30 FPS, 14B models from 4.5 to 12.5 FPS. Beyond inference speed, Block Cascading eliminates overhead from KV-recaching (of ~200ms) during context switches for interactive generation. Extensive evaluations validated against multiple block-causal pipelines demonstrate no significant loss in generation quality when switching from block-causal to Block Cascading pipelines for inference. Project Page: this https URL 
+
+**Abstract (ZH)**: 块因果视频生成面临速度与质量的显著权衡：小型1.3B模型仅能以16 FPS运行，而大型14B模型则以4.5 FPS运行，迫使用户在响应性和质量之间做出选择。块级级联显著通过训练-free并行化的方式来缓解这种权衡。我们的关键见解是，未来视频块无需完全去噪当前块即可开始生成。通过使用前身部分去噪的上下文开始块生成，我们将顺序流水线转换为并行级联，在多个块同时去噪的情况下进行并行化。利用5块GPU发挥时间并行性，我们实现了所有模型规模上的约2倍加速：1.3B模型从16 FPS加速到30 FPS，14B模型从4.5 FPS加速到12.5 FPS。除了推理速度之外，块级联消除了在交互生成过程中上下文切换时的KV缓存开销（约200ms）。广泛的评估与多个块因果流水线相比显示，从块因果到块级联流水线进行推理时，生成质量没有显著损失。项目页面：这个 https URL。 
+
+---
+# StableTrack: Stabilizing Multi-Object Tracking on Low-Frequency Detections 
+
+**Title (ZH)**: StableTrack: 稳定低频检测下的多目标跟踪 
+
+**Authors**: Matvei Shelukhan, Timur Mamedov, Karina Kvanchiani  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.20418)  
+
+**Abstract**: Multi-object tracking (MOT) is one of the most challenging tasks in computer vision, where it is important to correctly detect objects and associate these detections across frames. Current approaches mainly focus on tracking objects in each frame of a video stream, making it almost impossible to run the model under conditions of limited computing resources. To address this issue, we propose StableTrack, a novel approach that stabilizes the quality of tracking on low-frequency detections. Our method introduces a new two-stage matching strategy to improve the cross-frame association between low-frequency detections. We propose a novel Bbox-Based Distance instead of the conventional Mahalanobis distance, which allows us to effectively match objects using the Re-ID model. Furthermore, we integrate visual tracking into the Kalman Filter and the overall tracking pipeline. Our method outperforms current state-of-the-art trackers in the case of low-frequency detections, achieving $\textit{11.6%}$ HOTA improvement at $\textit{1}$ Hz on MOT17-val, while keeping up with the best approaches on the standard MOT17, MOT20, and DanceTrack benchmarks with full-frequency detections. 
+
+**Abstract (ZH)**: 低频检测下的一种新颖跟踪方法：StableTrack 
+
+---
+# From Passive Perception to Active Memory: A Weakly Supervised Image Manipulation Localization Framework Driven by Coarse-Grained Annotations 
+
+**Title (ZH)**: 从被动感知到主动记忆：一种由粗粒度标注驱动的弱监督图像操纵定位框架 
+
+**Authors**: Zhiqing Guo, Dongdong Xi, Songlin Li, Gaobo Yang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.20359)  
+
+**Abstract**: Image manipulation localization (IML) faces a fundamental trade-off between minimizing annotation cost and achieving fine-grained localization accuracy. Existing fully-supervised IML methods depend heavily on dense pixel-level mask annotations, which limits scalability to large datasets or real-world this http URL contrast, the majority of existing weakly-supervised IML approaches are based on image-level labels, which greatly reduce annotation effort but typically lack precise spatial localization. To address this dilemma, we propose BoxPromptIML, a novel weakly-supervised IML framework that effectively balances annotation cost and localization performance. Specifically, we propose a coarse region annotation strategy, which can generate relatively accurate manipulation masks at lower cost. To improve model efficiency and facilitate deployment, we further design an efficient lightweight student model, which learns to perform fine-grained localization through knowledge distillation from a fixed teacher model based on the Segment Anything Model (SAM). Moreover, inspired by the human subconscious memory mechanism, our feature fusion module employs a dual-guidance strategy that actively contextualizes recalled prototypical patterns with real-time observational cues derived from the input. Instead of passive feature extraction, this strategy enables a dynamic process of knowledge recollection, where long-term memory is adapted to the specific context of the current image, significantly enhancing localization accuracy and robustness. Extensive experiments across both in-distribution and out-of-distribution datasets show that BoxPromptIML outperforms or rivals fully-supervised models, while maintaining strong generalization, low annotation cost, and efficient deployment characteristics. 
+
+**Abstract (ZH)**: 图像操纵定位（IML）在最小化标注成本和实现精细粒度定位准确性之间面临基本权衡。现有完全监督的IML方法高度依赖于密集的像素级掩码标注，这限制了其在大规模数据集或现实世界中的可扩展性。相比之下，现有的大多数弱监督IML方法基于图像级标签，大大减少了标注努力，但通常缺乏精确的时空定位。为了解决这一困境，我们提出了一种新的弱监督IML框架BoxPromptIML，有效地平衡了标注成本和定位性能。具体而言，我们提出了一种粗粒度区域标注策略，可以在较低成本下生成相对准确的操纵掩码。为了提高模型效率并促进部署，我们进一步设计了一个高效的轻量级学生模型，该模型通过固定教师模型基于Segment Anything Model (SAM) 的知识蒸馏来学习进行精细粒度定位。此外，受到人类潜意识记忆机制的启发，我们的特征融合模块采用了一种双重引导策略，该策略能够积极地将召回的原型模式与输入的实时观察线索相结合。与被动特征抽取不同，该策略实现了知识回忆的动态过程，其中长期记忆适应当前图像的具体上下文，显著提高了定位准确性和鲁棒性。在多种分布内和分布外数据集上的广泛实验表明，BoxPromptIML 在保持强泛化能力、低标注成本和高效部署特性的同时，优于或可与完全监督模型媲美。 
+
+---
+# 3D Motion Perception of Binocular Vision Target with PID-CNN 
+
+**Title (ZH)**: 双目视觉目标的3D运动感知PID-CNN方法 
+
+**Authors**: Shi Jiazhao, Pan Pan, Shi Haotian  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.20332)  
+
+**Abstract**: This article trained a network for perceiving three-dimensional motion information of binocular vision target, which can provide real-time three-dimensional coordinate, velocity, and acceleration, and has a basic spatiotemporal perception capability. Understood the ability of neural networks to fit nonlinear problems from the perspective of PID. Considered a single-layer neural network as using a second-order difference equation and a nonlinearity to describe a local problem. Multilayer networks gradually transform the raw representation to the desired representation through multiple such combinations. Analysed some reference principles for designing neural networks. Designed a relatively small PID convolutional neural network, with a total of 17 layers and 413 thousand parameters. Implemented a simple but practical feature reuse method by concatenation and pooling. The network was trained and tested using the simulated randomly moving ball datasets, and the experimental results showed that the prediction accuracy was close to the upper limit that the input image resolution can represent. Analysed the experimental results and errors, as well as the existing shortcomings and possible directions for improvement. Finally, discussed the advantages of high-dimensional convolution in improving computational efficiency and feature space utilization. As well as the potential advantages of using PID information to implement memory and attention mechanisms. 
+
+**Abstract (ZH)**: 本文训练了一个用于感知双眼视觉目标三维运动信息的网络，可以提供实时的三维坐标、速度和加速度，并具备基本的空间时间感知能力。从PID的角度理解神经网络拟合非线性问题的能力。将单层神经网络视为使用二阶差分方程和非线性来描述局部问题。多层网络通过多次这样的组合逐步将原始表示转化为所需表示。设计了一些参考原则来设计神经网络。设计了一个相对较小的PID卷积神经网络，共有17层和41.3万个参数。通过拼接和池化实现了一个简单但实用的特征重用方法。网络使用模拟随机移动球数据集进行训练和测试，实验结果表明预测精度接近输入图像分辨率所能表示的上限。分析了实验结果、误差以及现有的不足之处和改进方向。最后讨论了高维卷积在提高计算效率和特征空间利用率方面的优点，以及使用PID信息实现记忆和注意力机制的潜在优势。 
+
+---
+# XiCAD: Camera Activation Detection in the Da Vinci Xi User Interface 
+
+**Title (ZH)**: XiCAD: Da Vinci Xi用户界面中的摄像头激活检测 
+
+**Authors**: Alexander C. Jenke, Gregor Just, Claas de Boer, Martin Wagner, Sebastian Bodenstedt, Stefanie Speidel  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.20254)  
+
+**Abstract**: Purpose: Robot-assisted minimally invasive surgery relies on endoscopic video as the sole intraoperative visual feedback. The DaVinci Xi system overlays a graphical user interface (UI) that indicates the state of each robotic arm, including the activation of the endoscope arm. Detecting this activation provides valuable metadata such as camera movement information, which can support downstream surgical data science tasks including tool tracking, skill assessment, or camera control automation.
+Methods: We developed a lightweight pipeline based on a ResNet18 convolutional neural network to automatically identify the position of the camera tile and its activation state within the DaVinci Xi UI. The model was fine-tuned on manually annotated data from the SurgToolLoc dataset and evaluated across three public datasets comprising over 70,000 frames.
+Results: The model achieved F1-scores between 0.993 and 1.000 for the binary detection of active cameras and correctly localized the camera tile in all cases without false multiple-camera detections.
+Conclusion: The proposed pipeline enables reliable, real-time extraction of camera activation metadata from surgical videos, facilitating automated preprocessing and analysis for diverse downstream applications. All code, trained models, and annotations are publicly available. 
+
+**Abstract (ZH)**: 目的：机器人辅助微创手术依赖内窥镜视频作为唯一的术中视觉反馈。达芬奇Xi系统在其图形用户界面（UI）上叠加了每个机械臂的状态，包括内窥镜臂的激活。检测这种激活提供了有价值元数据，如摄像头运动信息，可支持下游手术数据科学任务，包括器械跟踪、技能评估或摄像头控制自动化。
+
+方法：我们基于ResNet18卷积神经网络开发了一个轻量级管道，以自动识别达芬奇Xi UI中摄像头瓦片的位置及其激活状态。该模型在SurgToolLoc数据集的手动标注数据上进行了微调，并在包含超过70,000帧的三个公开数据集上进行了评估。
+
+结果：模型在二分类检测活跃摄像头方面取得了0.993至1.000的F1分数，并且在所有情况下准确地定位了摄像头瓦片，没有检测到假的多摄像头。
+
+结论：所提出的管道能够从手术视频中可靠地提取摄像头激活元数据，便于下游应用的自动化预处理和分析。所有代码、训练模型和标注数据均已公开。 
+
+---
+# Uplifting Table Tennis: A Robust, Real-World Application for 3D Trajectory and Spin Estimation 
+
+**Title (ZH)**: 提升乒乓球水平：一种稳健的现实世界应用，用于3D轨迹和旋转估计 
+
+**Authors**: Daniel Kienzle, Katja Ludwig, Julian Lorenz, Shin'ichi Satoh, Rainer Lienhart  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.20250)  
+
+**Abstract**: Obtaining the precise 3D motion of a table tennis ball from standard monocular videos is a challenging problem, as existing methods trained on synthetic data struggle to generalize to the noisy, imperfect ball and table detections of the real world. This is primarily due to the inherent lack of 3D ground truth trajectories and spin annotations for real-world video. To overcome this, we propose a novel two-stage pipeline that divides the problem into a front-end perception task and a back-end 2D-to-3D uplifting task. This separation allows us to train the front-end components with abundant 2D supervision from our newly created TTHQ dataset, while the back-end uplifting network is trained exclusively on physically-correct synthetic data. We specifically re-engineer the uplifting model to be robust to common real-world artifacts, such as missing detections and varying frame rates. By integrating a ball detector and a table keypoint detector, our approach transforms a proof-of-concept uplifting method into a practical, robust, and high-performing end-to-end application for 3D table tennis trajectory and spin analysis. 
+
+**Abstract (ZH)**: 从标准单目视频中获取乒乓球的精确三维运动是一个具有挑战性的问题，现有方法在合成数据上训练，难以适应真实世界中球和台面检测的噪声和不完美性。这主要归因于真实世界视频中缺乏三维地面真实轨迹和旋转标注。为了解决这一问题，我们提出了一种新颖的两阶段管道，将问题分为前端感知任务和后端二维到三维提升任务。这种分离使我们能够使用我们新创建的TTHQ数据集中的丰富二维监督来训练前端组件，并且仅使用物理正确的合成数据来训练后端提升网络。我们特别重新设计了提升模型，使其对于常见的现实世界伪影（如检测缺失和帧率变化）具有鲁棒性。通过结合球体检测器和台面关键点检测器，我们的方法将一种概念验证提升方法转变为一种实用、鲁棒且高性能的端到端应用，用于三维乒乓球轨迹和旋转分析。 
+
+---
+# OmniAlpha: A Sequence-to-Sequence Framework for Unified Multi-Task RGBA Generation 
+
+**Title (ZH)**: OmniAlpha：统一多任务RGBA生成的序列到序列框架 
+
+**Authors**: Hao Yu, Jiabo Zhan, Zile Wang, Jinglin Wang, Huaisong Zhang, Hongyu Li, Xinrui Chen, Yongxian Wei, Chun Yuan  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.20211)  
+
+**Abstract**: Generative models have excelled in RGB synthesis, but real-world applications require RGBA manipulation. This has led to a fragmented landscape: specialized, single-task models handle alpha but lack versatility, while unified multi-task frameworks are confined to the RGB domain. To bridge this critical gap, we propose OmniAlpha, the first unified, multi-task generative framework for sequence-to-sequence RGBA image generation and editing. Its architecture features MSRoPE-BiL, a novel RoPE method with a bi-directionally extendable layer axis for its Diffusion Transformer (DiT) backbone, enabling the concurrent processing of multiple input and target RGBA layers. To power this framework, we introduce AlphaLayers, a new dataset of 1,000 high-quality, multi-layer triplets, built via a novel automated synthesis and filter pipeline. Jointly training OmniAlpha on this dataset across a comprehensive suite of 21 diverse tasks, extensive experiments demonstrate that our unified approach consistently outperforms strong, specialized baselines. Most notably, OmniAlpha achieves a dramatic 84.8% relative reduction in SAD for mask-free matting on AIM-500 and wins over 90% of human preferences in layer-conditioned completion. Our work proves that a unified, multi-task model can learn a superior shared representation for RGBA, paving the way for more powerful, layer-aware generative systems. 
+
+**Abstract (ZH)**: 统一多任务生成框架OmniAlpha：序列到序列的RGBA图像生成与编辑 
+
+---
+# Explainable Visual Anomaly Detection via Concept Bottleneck Models 
+
+**Title (ZH)**: 可解释的视觉异常检测via概念瓶颈模型 
+
+**Authors**: Arianna Stropeni, Valentina Zaccaria, Francesco Borsatti, Davide Dalle Pezze, Manuel Barusco, Gian Antonio Susto  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.20088)  
+
+**Abstract**: In recent years, Visual Anomaly Detection (VAD) has gained significant attention due to its ability to identify anomalous images using only normal images during training. Many VAD models work without supervision but are still able to provide visual explanations by highlighting the anomalous regions within an image. However, although these visual explanations can be helpful, they lack a direct and semantically meaningful interpretation for users. To address this limitation, we propose extending Concept Bottleneck Models (CBMs) to the VAD setting. By learning meaningful concepts, the network can provide human-interpretable descriptions of anomalies, offering a novel and more insightful way to explain them. Our contributions are threefold: (i) we develop a Concept Dataset to support research on CBMs for VAD; (ii) we improve the CBM architecture to generate both concept-based and visual explanations, bridging semantic and localization interpretability; and (iii) we introduce a pipeline for synthesizing artificial anomalies, preserving the VAD paradigm of minimizing dependence on rare anomalous samples. Our approach, Concept-Aware Visual Anomaly Detection (CONVAD), achieves performance comparable to classic VAD methods while providing richer, concept-driven explanations that enhance interpretability and trust in VAD systems. 
+
+**Abstract (ZH)**: 概念导向的视觉异常检测（Concept-Aware Visual Anomaly Detection, CONVAD） 
+
+---
+# MFM-point: Multi-scale Flow Matching for Point Cloud Generation 
+
+**Title (ZH)**: 多尺度流匹配生成点云：MFM-point 
+
+**Authors**: Petr Molodyk, Jaemoo Choi, David W. Romero, Ming-Yu Liu, Yongxin Chen  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.20041)  
+
+**Abstract**: In recent years, point cloud generation has gained significant attention in 3D generative modeling. Among existing approaches, point-based methods directly generate point clouds without relying on other representations such as latent features, meshes, or voxels. These methods offer low training cost and algorithmic simplicity, but often underperform compared to representation-based approaches. In this paper, we propose MFM-Point, a multi-scale Flow Matching framework for point cloud generation that substantially improves the scalability and performance of point-based methods while preserving their simplicity and efficiency. Our multi-scale generation algorithm adopts a coarse-to-fine generation paradigm, enhancing generation quality and scalability without incurring additional training or inference overhead. A key challenge in developing such a multi-scale framework lies in preserving the geometric structure of unordered point clouds while ensuring smooth and consistent distributional transitions across resolutions. To address this, we introduce a structured downsampling and upsampling strategy that preserves geometry and maintains alignment between coarse and fine resolutions. Our experimental results demonstrate that MFM-Point achieves best-in-class performance among point-based methods and challenges the best representation-based methods. In particular, MFM-point demonstrates strong results in multi-category and high-resolution generation tasks. 
+
+**Abstract (ZH)**: 多尺度流匹配框架：MFM-Point在点云生成中的应用 
+
+---
+# Multi-Context Fusion Transformer for Pedestrian Crossing Intention Prediction in Urban Environments 
+
+**Title (ZH)**: 城市环境中行人过街意图预测的多上下文融合变压器模型 
+
+**Authors**: Yuanzhe Li, Hang Zhong, Steffen Müller  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.20011)  
+
+**Abstract**: Pedestrian crossing intention prediction is essential for autonomous vehicles to improve pedestrian safety and reduce traffic accidents. However, accurate pedestrian intention prediction in urban environments remains challenging due to the multitude of factors affecting pedestrian behavior. In this paper, we propose a multi-context fusion Transformer (MFT) that leverages diverse numerical contextual attributes across four key dimensions, encompassing pedestrian behavior context, environmental context, pedestrian localization context and vehicle motion context, to enable accurate pedestrian intention prediction. MFT employs a progressive fusion strategy, where mutual intra-context attention enables reciprocal interactions within each context, thereby facilitating feature sequence fusion and yielding a context token as a context-specific representation. This is followed by mutual cross-context attention, which integrates features across contexts with a global CLS token serving as a compact multi-context representation. Finally, guided intra-context attention refines context tokens within each context through directed interactions, while guided cross-context attention strengthens the global CLS token to promote multi-context fusion via guided information propagation, yielding deeper and more efficient integration. Experimental results validate the superiority of MFT over state-of-the-art methods, achieving accuracy rates of 73%, 93%, and 90% on the JAADbeh, JAADall, and PIE datasets, respectively. Extensive ablation studies are further conducted to investigate the effectiveness of the network architecture and contribution of different input context. Our code is open-source: this https URL. 
+
+**Abstract (ZH)**: 行人过街意图预测对于提高自主车辆的行人安全和减少交通事故至关重要。然而，在城市环境中实现准确的行人意图预测仍然具有挑战性，因为受到多种因素的影响。本文提出了一种多上下文融合变换器（MFT），利用涵盖行人行为上下文、环境上下文、行人定位上下文和车辆运动上下文的四个关键维度中的多样化数值上下文属性，以实现准确的行人意图预测。MFT 使用一种渐进式融合策略，其中相互的同域注意力使各上下文内部发生相互作用，从而促进特征序列融合并生成上下文特定表示。接着是相互跨上下文注意力，它将特征融合到全局 CLS 令牌形成的紧凑多上下文表示中。最后，引导的同域注意力通过定向交互在每个上下文内细化上下文令牌，而引导的跨上下文注意力通过引导信息传播加强全局 CLS 令牌，促进多上下文融合，从而实现更深且更高效的集成。实验结果验证了 MFT 在与现有最佳方法相比的优势，在 JAADbeh、JAADall 和 PIE 数据集上的准确率分别为 73%、93% 和 90%。进行了广泛的消融研究以探讨网络架构的有效性以及不同输入上下文的贡献。我们的代码开源：this https URL。 
+
+---
+# MambaEye: A Size-Agnostic Visual Encoder with Causal Sequential Processing 
+
+**Title (ZH)**: MambaEye：一种无尺寸依赖的因果序列处理视觉编码器 
+
+**Authors**: Changho Choi, Minho Kim, Jinkyu Kim  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.19963)  
+
+**Abstract**: Despite decades of progress, a truly input-size agnostic visual encoder-a fundamental characteristic of human vision-has remained elusive. We address this limitation by proposing \textbf{MambaEye}, a novel, causal sequential encoder that leverages the low complexity and causal-process based pure Mamba2 backbone. Unlike previous Mamba-based vision encoders that often employ bidirectional processing, our strictly unidirectional approach preserves the inherent causality of State Space Models, enabling the model to generate a prediction at any point in its input sequence. A core innovation is our use of relative move embedding, which encodes the spatial shift between consecutive patches, providing a strong inductive bias for translation invariance and making the model inherently adaptable to arbitrary image resolutions and scanning patterns. To achieve this, we introduce a novel diffusion-inspired loss function that provides dense, step-wise supervision, training the model to build confidence as it gathers more visual evidence. We demonstrate that MambaEye exhibits robust performance across a wide range of image resolutions, especially at higher resolutions such as $1536^2$ on the ImageNet-1K classification task. This feat is achieved while maintaining linear time and memory complexity relative to the number of patches. 
+
+**Abstract (ZH)**: 尽管经历了数十年的发展，真正意义上的输入规模无关视觉编码器——这一人类视觉的基本特性——仍未实现。我们通过提出\textbf{MambaEye}——一种新颖的因果顺序编码器，利用低复杂度和基于因果过程的纯Mamba2骨干网络——来解决这一局限性。与以往基于Mamba的视觉编码器通常采用双向处理不同，我们严格的一维处理方法保留了状态空间模型的内在因果性，使模型能够在输入序列中的任意点生成预测。核心创新在于我们使用了相对移动嵌入，它编码了连续补丁之间的空间位移，为平移不变性和模型对任意图像分辨率和扫描模式的天然适应性提供了强烈的诱导偏差。为实现这一点，我们引入了一种新颖的受扩散机制启发的损失函数，提供了密集的、分步的监督，训练模型随着获取更多视觉证据而建立信心。我们证明，MambaEye在广泛的图像分辨率范围内表现出稳健的性能，特别是在ImageNet-1K分类任务中，$1536^2$分辨率上尤为突出。同时，该方法保持了与补丁数量线性的时间和内存复杂度。 
+
+---
+# Rectified SpaAttn: Revisiting Attention Sparsity for Efficient Video Generation 
+
+**Title (ZH)**: 修正的SpaAttn：重访注意力稀疏性以实现高效视频生成 
+
+**Authors**: Xuewen Liu, Zhikai Li, Jing Zhang, Mengjuan Chen, Qingyi Gu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.19835)  
+
+**Abstract**: Diffusion Transformers dominate video generation, but the quadratic complexity of attention computation introduces substantial latency. Attention sparsity reduces computational costs by focusing on critical tokens while ignoring non-critical tokens. However, existing methods suffer from severe performance degradation. In this paper, we revisit attention sparsity and reveal that existing methods induce systematic biases in attention allocation: (1) excessive focus on critical tokens amplifies their attention weights; (2) complete neglect of non-critical tokens causes the loss of relevant attention weights. To address these issues, we propose Rectified SpaAttn, which rectifies attention allocation with implicit full attention reference, thereby enhancing the alignment between sparse and full attention maps. Specifically: (1) for critical tokens, we show that their bias is proportional to the sparse attention weights, with the ratio governed by the amplified weights. Accordingly, we propose Isolated-Pooling Attention Reallocation, which calculates accurate rectification factors by reallocating multimodal pooled weights. (2) for non-critical tokens, recovering attention weights from the pooled query-key yields attention gains but also introduces pooling errors. Therefore, we propose Gain-Aware Pooling Rectification, which ensures that the rectified gain consistently surpasses the induced error. Moreover, we customize and integrate the Rectified SpaAttn kernel using Triton, achieving up to 3.33 and 2.08 times speedups on HunyuanVideo and Wan 2.1, respectively, while maintaining high generation quality. We release Rectified SpaAttn as open-source at this https URL . 
+
+**Abstract (ZH)**: Diffusion Transformers在视频生成中占据主导地位，但注意力计算的二次复杂性引入了显著的延迟。注意力稀疏化通过关注关键tokens的同时忽略非关键tokens来减少计算成本。然而，现有方法遭受了严重的性能下降。在本文中，我们重新审视了注意力稀疏化，并揭示了现有方法在注意力分配中引起了系统性偏差：（1）过度关注关键tokens放大了它们的注意力权重；（2）完全忽略非关键tokens导致相关注意力权重的丢失。为了应对这些问题，我们提出了Rectified SpaAttn，通过隐式全注意力参考纠正注意力分配，从而增强稀疏与全注意力图之间的对齐。具体而言：（1）对于关键tokens，我们发现它们的偏差与稀疏注意力权重成正比，比例由放大权重决定。于是，我们提出了Isolated-Pooling Attention Reallocation，通过重新分配多模态池化权重来计算准确的校正因子。（2）对于非关键tokens，从池化查询-键中恢复注意力权重可以带来注意力增益，但也引入了池化误差。因此，我们提出了Gain-Aware Pooling Rectification，确保校正后的增益始终超过引入的误差。此外，我们使用Triton定制并整合了Rectified SpaAttn内核，在HunyuanVideo和Wan 2.1上分别实现了3.33倍和2.08倍的速度提升，同时保持了高质量生成。我们在此公开发布了Rectified SpaAttn：这个 https URL 。 
+
+---
+# CropVLM: Learning to Zoom for Fine-Grained Vision-Language Perception 
+
+**Title (ZH)**: CropVLM：学习缩放以实现细粒度视觉-语言感知 
+
+**Authors**: Miguel Carvalho, Helder Dias, Bruno Martins  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.19820)  
+
+**Abstract**: Vision-Language Models (VLMs) often struggle with tasks that require fine-grained image understanding, such as scene-text recognition or document analysis, due to perception limitations and visual fragmentation. To address these challenges, we introduce CropVLM as an external low-cost method for boosting performance, enabling VLMs to dynamically ''zoom in'' on relevant image regions, enhancing their ability to capture fine details. CropVLM is trained using reinforcement learning, without using human-labeled bounding boxes as a supervision signal, and without expensive synthetic evaluations. The model is trained once and can be paired with both open-source and proprietary VLMs to improve their performance. Our approach delivers significant improvements on tasks that require high-resolution image understanding, notably for benchmarks that are out-of-domain for the target VLM, without modifying or fine-tuning the VLM, thus avoiding catastrophic forgetting. 
+
+**Abstract (ZH)**: Vision-Language 模型 (VLMs) 通常在需要精细图像理解的任务（如场景文本识别或文档分析）中表现不佳，这是因为感知限制和视觉碎片化的问题。为应对这些挑战，我们提出了 CropVLM 作为一种外部低成本方法，以提升性能，使 VLMs 能够动态地“放大”相关图像区域，增强其捕捉细节点的能力。CropVLM 是通过强化学习训练的，无需使用人工标注的边界框作为监督信号，也无需昂贵的合成评估。该模型只需训练一次，即可与开源和专有 VLMs 结合使用以提高其性能。我们的方法在需要高分辨率图像理解的任务中取得了显著改进，尤其是在目标 VLM 未涵盖的基准测试中，无需修改或微调 VLM，从而避免了灾难性遗忘。 
+
+---
+# Terminal Velocity Matching 
+
+**Title (ZH)**: 终端速度匹配 
+
+**Authors**: Linqi Zhou, Mathias Parger, Ayaan Haque, Jiaming Song  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.19797)  
+
+**Abstract**: We propose Terminal Velocity Matching (TVM), a generalization of flow matching that enables high-fidelity one- and few-step generative modeling. TVM models the transition between any two diffusion timesteps and regularizes its behavior at its terminal time rather than at the initial time. We prove that TVM provides an upper bound on the $2$-Wasserstein distance between data and model distributions when the model is Lipschitz continuous. However, since Diffusion Transformers lack this property, we introduce minimal architectural changes that achieve stable, single-stage training. To make TVM efficient in practice, we develop a fused attention kernel that supports backward passes on Jacobian-Vector Products, which scale well with transformer architectures. On ImageNet-256x256, TVM achieves 3.29 FID with a single function evaluation (NFE) and 1.99 FID with 4 NFEs. It similarly achieves 4.32 1-NFE FID and 2.94 4-NFE FID on ImageNet-512x512, representing state-of-the-art performance for one/few-step models from scratch. 
+
+**Abstract (ZH)**: 终端速度匹配：一种通用流匹配方法，实现高保真度的一步或多步生成建模 
+
+---
+# On the Utility of Foundation Models for Fast MRI: Vision-Language-Guided Image Reconstruction 
+
+**Title (ZH)**: 基于视觉-语言引导的图像重建：预训练模型在快速MRI中的应用价值 
+
+**Authors**: Ruimin Feng, Xingxin He, Ronald Mercer, Zachary Stewart, Fang Liu  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.19641)  
+
+**Abstract**: Purpose: To investigate whether a vision-language foundation model can enhance undersampled MRI reconstruction by providing high-level contextual information beyond conventional priors. Methods: We proposed a semantic distribution-guided reconstruction framework that uses a pre-trained vision-language foundation model to encode both the reconstructed image and auxiliary information into high-level semantic features. A contrastive objective aligns the reconstructed representation with the target semantic distribution, ensuring consistency with high-level perceptual cues. The proposed objective works with various deep learning-based reconstruction methods and can flexibly incorporate semantic priors from multimodal sources. To test the effectiveness of these semantic priors, we evaluated reconstruction results guided by priors derived from either image-only or image-language auxiliary information. Results: Experiments on knee and brain datasets demonstrate that semantic priors from images preserve fine anatomical structures and achieve superior perceptual quality, as reflected in lower LPIPS values, higher Tenengrad scores, and improved scores in the reader study, compared with conventional regularization. The image-language information further expands the semantic distribution and enables high-level control over reconstruction attributes. Across all evaluations, the contrastive objective consistently guided the reconstructed features toward the desired semantic distributions while maintaining data fidelity, demonstrating the effectiveness of the proposed optimization framework. Conclusion: The study highlights that vision-language foundation models can improve undersampled MRI reconstruction through semantic-space optimization. 
+
+**Abstract (ZH)**: 目的：探究预训练的视觉-语言基础模型是否能够通过提供超越传统先验的高级上下文信息来增强欠采样MRI重建。方法：提出了一种语义分布导向的重建框架，利用预训练的视觉-语言基础模型将重建图像和辅助信息编码为高级语义特征。对比目标将重建表示与目标语义分布对齐，确保与高级感知线索的一致性。所提出的目标可以与各种基于深度学习的重建方法结合使用，并能够灵活地从多模态来源中引入语义先验。为了测试这些语义先验的有效性，我们评估了由仅图像或图像-语言辅助信息导出的先验引导的重建结果。结果：在膝盖和大脑数据集上的实验表明，仅图像语义先验保留了精细的解剖结构，并在LPIPS值较低、Tenengrad分数较高以及读者研究中得分更高，相比传统正则化方法实现了更优的感知质量。图像-语言信息进一步扩展了语义分布并使高级控制成为可能。在所有评估中，对比目标始终引导重建特征向期望的语义分布发展，同时保持数据保真度，展示了所提出优化框架的有效性。结论：研究突出了视觉-语言基础模型通过语义空间优化提升欠采样MRI重建的效果。 
+
+---
+# HunyuanOCR Technical Report 
+
+**Title (ZH)**: 鸿云OCR技术报告 
+
+**Authors**: Hunyuan Vision Team, Pengyuan Lyu, Xingyu Wan, Gengluo Li, Shangpin Peng, Weinong Wang, Liang Wu, Huawen Shen, Yu Zhou, Canhui Tang, Qi Yang, Qiming Peng, Bin Luo, Hower Yang, Houwen Peng, Hongming Yang, Senhao Xie, Binghong Wu, Mana Yang, Sergey Wang, Raccoon Liu, Dick Zhu, Jie Jiang, Linus, Han Hu, Chengquan Zhang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.19575)  
+
+**Abstract**: This paper presents HunyuanOCR, a commercial-grade, open-source, and lightweight (1B parameters) Vision-Language Model (VLM) dedicated to OCR tasks. The architecture comprises a Native Vision Transformer (ViT) and a lightweight LLM connected via an MLP adapter. HunyuanOCR demonstrates superior performance, outperforming commercial APIs, traditional pipelines, and larger models (e.g., Qwen3-VL-4B). Specifically, it surpasses current public solutions in perception tasks (Text Spotting, Parsing) and excels in semantic tasks (IE, Text Image Translation), securing first place in the ICDAR 2025 DIMT Challenge (Small Model Track). Furthermore, it achieves state-of-the-art (SOTA) results on OCRBench among VLMs with fewer than 3B parameters.
+HunyuanOCR achieves breakthroughs in three key aspects: 1) Unifying Versatility and Efficiency: We implement comprehensive support for core capabilities including spotting, parsing, IE, VQA, and translation within a lightweight framework. This addresses the limitations of narrow "OCR expert models" and inefficient "General VLMs". 2) Streamlined End-to-End Architecture: Adopting a pure end-to-end paradigm eliminates dependencies on pre-processing modules (e.g., layout analysis). This fundamentally resolves error propagation common in traditional pipelines and simplifies system deployment. 3) Data-Driven and RL Strategies: We confirm the critical role of high-quality data and, for the first time in the industry, demonstrate that Reinforcement Learning (RL) strategies yield significant performance gains in OCR tasks.
+HunyuanOCR is officially open-sourced on HuggingFace. We also provide a high-performance deployment solution based on vLLM, placing its production efficiency in the top tier. We hope this model will advance frontier research and provide a solid foundation for industrial applications. 
+
+**Abstract (ZH)**: HunyuanOCR：商用级开源轻量级视觉语言模型及其在OCR任务中的应用 
+
+---
+# Pistachio: Towards Synthetic, Balanced, and Long-Form Video Anomaly Benchmarks 
+
+**Title (ZH)**: Pistachio: 向合成、平衡和长形视频异常基准迈进 
+
+**Authors**: Jie Li, Hongyi Cai, Mingkang Dong, Muxin Pu, Shan You, Fei Wang, Tao Huang  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.19474)  
+
+**Abstract**: Automatically detecting abnormal events in videos is crucial for modern autonomous systems, yet existing Video Anomaly Detection (VAD) benchmarks lack the scene diversity, balanced anomaly coverage, and temporal complexity needed to reliably assess real-world performance. Meanwhile, the community is increasingly moving toward Video Anomaly Understanding (VAU), which requires deeper semantic and causal reasoning but remains difficult to benchmark due to the heavy manual annotation effort it demands. In this paper, we introduce Pistachio, a new VAD/VAU benchmark constructed entirely through a controlled, generation-based pipeline. By leveraging recent advances in video generation models, Pistachio provides precise control over scenes, anomaly types, and temporal narratives, effectively eliminating the biases and limitations of Internet-collected datasets. Our pipeline integrates scene-conditioned anomaly assignment, multi-step storyline generation, and a temporally consistent long-form synthesis strategy that produces coherent 41-second videos with minimal human intervention. Extensive experiments demonstrate the scale, diversity, and complexity of Pistachio, revealing new challenges for existing methods and motivating future research on dynamic and multi-event anomaly understanding. 
+
+**Abstract (ZH)**: 自动检测视频中的异常事件对于现代自主系统至关重要，但现有的视频异常检测（VAD）基准数据集缺乏所需的场景多样性、异常覆盖平衡和时间复杂性，难以可靠地评估实际性能。同时，社区正越来越转向视频异常理解（VAU），这需要更深层次的语义和因果推理，但由于需要大量的手动标注工作，使其难以进行基准测试。在本文中，我们介绍了Pistachio，这是一个全新的VAD/VAU基准数据集，完全通过受控的生成管道构建而成。通过利用近期视频生成模型的进步，Pistachio对场景、异常类型和时间叙事提供了精确控制，有效消除了互联网收集数据集的偏见和局限性。我们的管道集成了场景条件下的异常分配、多步故事情节生成以及具有时间一致性的长形式合成策略，能够产生长达41秒的连贯视频，且所需的人工干预最少。广泛的实验展示了Pistachio的规模、多样性和复杂性，揭示了现有方法的新挑战，并促使未来在动态和多事件异常理解方面的研究。 
+
+---
+# Not Quite Anything: Overcoming SAMs Limitations for 3D Medical Imaging 
+
+**Title (ZH)**: 不尽然是什么：克服3D医学成像中SAMs的局限性 
+
+**Authors**: Keith Moore  
+
+**Link**: [PDF](https://arxiv.org/pdf/2511.19471)  
+
+**Abstract**: Foundation segmentation models such as SAM and SAM-2 perform well on natural images but struggle with brain MRIs where structures like the caudate and thalamus lack sharp boundaries and have low contrast. Rather than fine tune these models (for example MedSAM), we propose a compositional alternative where the foundation model output is treated as an additional input channel and passed alongside the MRI to highlight regions of interest.
+We generate SAM-2 prompts by using a lightweight 3D U-Net that was previously trained on MRI segmentation. The U-Net may have been trained on a different dataset, so its guesses are often imprecise but usually in the correct region. The edges of the resulting foundation model guesses are smoothed to improve alignment with the MRI. We also test prompt free segmentation using DINO attention maps in the same framework.
+This has-a architecture avoids modifying foundation weights and adapts to domain shift without retraining the foundation model. It reaches about 96 percent volume accuracy on basal ganglia segmentation, which is sufficient for our study of longitudinal volume change. The approach is fast, label efficient, and robust to out of distribution scans. We apply it to study inflammation linked changes in sudden onset pediatric OCD. 
+
+**Abstract (ZH)**: 基于SAM和SAM-2在自然图像上的优异表现，但在处理脑MRI时遇到结构如豆状核和丘脑缺乏清晰边界和对比度的问题，我们提出了一种组合式替代方案，即将基础模型的输出作为额外的输入通道与MRI一同传递，以突出显示感兴趣区域。 
+
+---
